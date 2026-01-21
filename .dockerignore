@@ -1,0 +1,53 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Build outputs
+dist
+**/dist
+.next
+**/.next
+out
+**/out
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs
+
+# Test files
+coverage
+**/*.test.ts
+**/*.spec.ts
+__tests__
+
+# Mobile app (not needed for Docker)
+apps/mobile
+
+# Documentation
+*.md
+!README.md
+
+# Misc
+.turbo
+.cache
+.eslintcache
+*.tsbuildinfo

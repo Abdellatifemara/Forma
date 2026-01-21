@@ -1,0 +1,152 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  # Deploy to staging (automatic on main push)
+  deploy-staging:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.environment == 'staging')
+    environment:
+      name: staging
+      url: https://staging.forma.app
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build packages
+        run: npm run build:packages
+
+      - name: Build API
+        run: npm run build --workspace=apps/api
+
+      - name: Build Web
+        run: npm run build --workspace=apps/web
+        env:
+          NEXT_PUBLIC_API_URL: ${{ secrets.STAGING_API_URL }}
+          NEXT_PUBLIC_APP_URL: ${{ secrets.STAGING_APP_URL }}
+
+      - name: Deploy API to staging
+        run: |
+          echo "Deploying API to staging..."
+          # Add your deployment commands here
+          # Example for Railway, Render, or custom server:
+          # curl -X POST ${{ secrets.STAGING_DEPLOY_HOOK_API }}
+
+      - name: Deploy Web to staging
+        run: |
+          echo "Deploying Web to staging..."
+          # Add your deployment commands here
+          # Example for Vercel:
+          # npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Run database migrations
+        run: |
+          echo "Running database migrations..."
+          # npx prisma migrate deploy
+        working-directory: apps/api
+        env:
+          DATABASE_URL: ${{ secrets.STAGING_DATABASE_URL }}
+
+      - name: Notify deployment
+        if: always()
+        run: |
+          echo "Staging deployment completed with status: ${{ job.status }}"
+
+  # Deploy to production (manual trigger only)
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' && inputs.environment == 'production'
+    environment:
+      name: production
+      url: https://forma.app
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build packages
+        run: npm run build:packages
+
+      - name: Build API
+        run: npm run build --workspace=apps/api
+
+      - name: Build Web
+        run: npm run build --workspace=apps/web
+        env:
+          NEXT_PUBLIC_API_URL: ${{ secrets.PRODUCTION_API_URL }}
+          NEXT_PUBLIC_APP_URL: ${{ secrets.PRODUCTION_APP_URL }}
+
+      - name: Create Sentry release
+        run: |
+          echo "Creating Sentry release..."
+          # npx @sentry/cli releases new ${{ github.sha }}
+          # npx @sentry/cli releases set-commits ${{ github.sha }} --auto
+        env:
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: forma
+          SENTRY_PROJECT: forma-api
+
+      - name: Deploy API to production
+        run: |
+          echo "Deploying API to production..."
+          # Add your production deployment commands here
+
+      - name: Deploy Web to production
+        run: |
+          echo "Deploying Web to production..."
+          # Add your production deployment commands here
+
+      - name: Run database migrations
+        run: |
+          echo "Running database migrations..."
+          # npx prisma migrate deploy
+        working-directory: apps/api
+        env:
+          DATABASE_URL: ${{ secrets.PRODUCTION_DATABASE_URL }}
+
+      - name: Finalize Sentry release
+        run: |
+          echo "Finalizing Sentry release..."
+          # npx @sentry/cli releases finalize ${{ github.sha }}
+          # npx @sentry/cli releases deploys ${{ github.sha }} new -e production
+
+      - name: Notify deployment
+        if: always()
+        run: |
+          echo "Production deployment completed with status: ${{ job.status }}"
+          # Add Slack/Discord notification here

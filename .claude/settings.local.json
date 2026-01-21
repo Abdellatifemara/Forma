@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:apps.apple.com)",
+      "Bash(del \"C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\FitApp_Product_Specification.html\" \"C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\FitApp_Features.html\" \"C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\FitApp_Features_Modified.html\" \"C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\FitApp_Product_Specification_Modified.html\")",
+      "WebFetch(domain:logmeal.com)",
+      "WebFetch(domain:docs.logmeal.com)",
+      "WebFetch(domain:powerusers.ai)",
+      "WebFetch(domain:platform.fatsecret.com)",
+      "Bash(cmd /c type \"C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\Chatgptresponse.md\")",
+      "Bash(cmd /c \"for %f in \\(C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\docs\\\\research\\\\*.md\\) do @echo %~nxf: %~zf bytes\")",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\docs\\\\research\\\\*.md'' | Select-Object Name, Length | Format-Table -AutoSize\")",
+      "Bash(powershell:*)",
+      "Bash(dir /s \"C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\docs\\\\research\\\\*.md\")",
+      "Bash(cmd /c \"dir C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\\\\docs\\\\research\\\\*.md\")",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:exrx.net)",
+      "WebFetch(domain:www.instashop.com)",
+      "WebFetch(domain:www.who.int)",
+      "WebFetch(domain:www.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:pmc.ncbi.nlm.nih.gov)",
+      "WebFetch(domain:data.worldobesity.org)",
+      "WebFetch(domain:ods.od.nih.gov)",
+      "WebFetch(domain:www.breadfast.com)",
+      "WebFetch(domain:vreader.substack.com)",
+      "WebFetch(domain:www.faydety.com)",
+      "WebFetch(domain:egyptianstreets.com)",
+      "WebFetch(domain:www.cairo360.com)",
+      "Bash(dir \"C:\\\\Users\\\\pc\\\\Desktop\\\\G\\\\FitApp\" /b /ad)",
+      "Bash(dir:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

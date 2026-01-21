@@ -1,0 +1,12 @@
+# FitApp Scraper Requirements
+
+# Core
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# For JS-rendered sites (optional but recommended)
+playwright>=1.40.0
+
+# Utilities
+python-dateutil>=2.8.0

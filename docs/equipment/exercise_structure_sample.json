@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ex_001",
+    "name_en": "Barbell Bench Press",
+    "name_ar": "بنش بريس بالبار",
+    "muscle_group": "chest",
+    "equipment": ["barbell", "bench"],
+    "difficulty": "intermediate",
+    "video_url": "https://cdn.fitapp.eg/videos/bench_press.mp4",
+    "instructions_ar": [
+      "نام على البنش وعينك تحت البار",
+      "امسك البار أوسع من كتفك",
+      "نزل البار لحد نص صدرك"
+    ],
+    "common_mistakes_ar": [
+      "رفع الظهر عن البنش",
+      "نزول البار بسرعة"
+    ],
+    "search_tags": ["chest", "push", "strength", "صدر", "بنش"]
+  },
+  {
+    "id": "ex_002",
+    "name_en": "Push Up",
+    "name_ar": "ضغط",
+    "muscle_group": "chest",
+    "equipment": ["bodyweight"],
+    "difficulty": "beginner",
+    "video_url": "https://cdn.fitapp.eg/videos/pushup.mp4",
+    "instructions_ar": [
+      "ايدك على الأرض أوسع من كتفك",
+      "جسمك مفرود",
+      "انزل بصدرك للأرض"
+    ],
+    "search_tags": ["home", "bodyweight", "push", "ضغط", "منزلي"]
+  }
+]
