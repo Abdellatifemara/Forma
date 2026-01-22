@@ -68,7 +68,7 @@ export class WorkoutsService {
 
   // Today's Workout
   async getTodaysWorkout(userId: string) {
-    const activePlan = await this.getActivePlan(userId);
+    const activePlan = await this.getActivePlan(userId) as (WorkoutPlan & { workouts: Workout[] }) | null;
 
     if (!activePlan || !activePlan.startDate) {
       return null;
@@ -90,7 +90,7 @@ export class WorkoutsService {
 
     // Find today's workout
     const todayWorkout = activePlan.workouts.find(
-      (w) => w.weekNumber === weekNumber && w.dayOfWeek === dayOfWeek,
+      (w: Workout) => w.weekNumber === weekNumber && w.dayOfWeek === dayOfWeek,
     );
 
     if (!todayWorkout) {

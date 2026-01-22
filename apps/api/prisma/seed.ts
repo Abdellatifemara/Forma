@@ -133,50 +133,67 @@ interface FoodData {
   tags?: string[];
 }
 
+// Recursively find all JSON files in a directory
+function findJsonFiles(dir: string): string[] {
+  const files: string[] = [];
+
+  if (!fs.existsSync(dir)) return files;
+
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...findJsonFiles(fullPath));
+    } else if (entry.name.endsWith('.json')) {
+      files.push(fullPath);
+    }
+  }
+
+  return files;
+}
+
 async function loadExercises() {
   console.log('🏋️ Loading exercises...');
 
   const exercisesDir = path.join(__dirname, '../../../docs/exercises');
-  const muscleGroups = [
-    'chest', 'back', 'shoulders', 'biceps', 'triceps', 'forearms',
-    'abs', 'lower-back', 'glutes', 'quadriceps', 'hamstrings', 'calves',
-    'full-body', 'cardio'
-  ];
+
+  // Find all JSON files recursively
+  const jsonFiles = findJsonFiles(exercisesDir);
+  console.log(`  Found ${jsonFiles.length} JSON files`);
 
   let totalExercises = 0;
+  let errors = 0;
 
-  for (const muscle of muscleGroups) {
-    const muscleDir = path.join(exercisesDir, muscle);
+  for (const filePath of jsonFiles) {
+    const relativePath = path.relative(exercisesDir, filePath);
 
-    if (!fs.existsSync(muscleDir)) {
-      console.log(`  ⚠️ Directory not found: ${muscle}`);
-      continue;
-    }
+    try {
+      const content = fs.readFileSync(filePath, 'utf-8');
+      const data = JSON.parse(content);
 
-    const files = fs.readdirSync(muscleDir).filter(f => f.endsWith('.json'));
+      // Handle both array and object formats
+      const exercises: ExerciseData[] = Array.isArray(data) ? data : [data];
 
-    for (const file of files) {
-      try {
-        const filePath = path.join(muscleDir, file);
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const data = JSON.parse(content);
+      for (const ex of exercises) {
+        // Skip invalid entries
+        if (!ex.id || !ex.name_en) {
+          continue;
+        }
 
-        // Handle both array and object formats
-        const exercises: ExerciseData[] = Array.isArray(data) ? data : [data];
-
-        for (const ex of exercises) {
+        try {
           await prisma.exercise.upsert({
             where: { externalId: ex.id },
             update: {
               nameEn: ex.name_en,
-              nameAr: ex.name_ar,
+              nameAr: ex.name_ar || ex.name_en,
               descriptionEn: ex.description_en,
               descriptionAr: ex.description_ar,
               category: mapCategory(ex.category || 'strength'),
-              primaryMuscle: mapMuscle(ex.primary_muscle),
+              primaryMuscle: mapMuscle(ex.primary_muscle || 'full body'),
               secondaryMuscles: (ex.secondary_muscles || []).map(mapMuscle),
               equipment: (ex.equipment || ['bodyweight']).map(mapEquipment),
-              difficulty: mapDifficulty(ex.difficulty),
+              difficulty: mapDifficulty(ex.difficulty || 'beginner'),
               instructionsEn: ex.instructions_en || [],
               instructionsAr: ex.instructions_ar || [],
               tipsEn: ex.tips_en || [],
@@ -191,14 +208,14 @@ async function loadExercises() {
             create: {
               externalId: ex.id,
               nameEn: ex.name_en,
-              nameAr: ex.name_ar,
+              nameAr: ex.name_ar || ex.name_en,
               descriptionEn: ex.description_en,
               descriptionAr: ex.description_ar,
               category: mapCategory(ex.category || 'strength'),
-              primaryMuscle: mapMuscle(ex.primary_muscle),
+              primaryMuscle: mapMuscle(ex.primary_muscle || 'full body'),
               secondaryMuscles: (ex.secondary_muscles || []).map(mapMuscle),
               equipment: (ex.equipment || ['bodyweight']).map(mapEquipment),
-              difficulty: mapDifficulty(ex.difficulty),
+              difficulty: mapDifficulty(ex.difficulty || 'beginner'),
               instructionsEn: ex.instructions_en || [],
               instructionsAr: ex.instructions_ar || [],
               tipsEn: ex.tips_en || [],
@@ -212,16 +229,18 @@ async function loadExercises() {
             },
           });
           totalExercises++;
+        } catch (err) {
+          errors++;
         }
-      } catch (error) {
-        console.error(`  ❌ Error loading ${file}:`, error);
       }
-    }
 
-    console.log(`  ✅ Loaded exercises from ${muscle}`);
+      console.log(`  ✅ ${relativePath}`);
+    } catch (error) {
+      console.error(`  ❌ Error loading ${relativePath}:`, error);
+    }
   }
 
-  console.log(`🏋️ Total exercises loaded: ${totalExercises}`);
+  console.log(`🏋️ Total exercises loaded: ${totalExercises} (${errors} skipped)`);
 }
 
 async function loadFoods() {

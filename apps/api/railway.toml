@@ -1,0 +1,7 @@
+[build]
+buildCommand = "npm install && npx prisma generate && npm run build"
+
+[deploy]
+startCommand = "node dist/src/main.js"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300

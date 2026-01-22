@@ -9,6 +9,7 @@ generator client {
 datasource db {
   provider   = "postgresql"
   url        = env("DATABASE_URL")
+  directUrl  = env("DIRECT_URL")
   extensions = [vector]
 }
 
@@ -100,6 +101,17 @@ enum ExerciseCategory {
   YOGA
   PILATES
   MOBILITY
+}
+
+enum VideoCategory {
+  YOGA
+  CALISTHENICS
+  HIIT
+  STRETCHING
+  MEDITATION
+  STRENGTH
+  CARDIO
+  TUTORIAL
 }
 
 enum WorkoutStatus {
@@ -528,6 +540,7 @@ model Food {
 
   // Relations
   mealFoods       MealFood[]
+  plannedMealFoods PlannedMealFood[]
 
   @@index([category])
   @@index([isEgyptian])
@@ -1005,4 +1018,42 @@ model Streak {
 
   @@unique([userId, type])
   @@index([userId])
+}
+
+// ============================================
+// VIDEOS (YouTube Integration)
+// ============================================
+
+model Video {
+  id              String          @id @default(cuid())
+
+  // YouTube
+  youtubeId       String          @unique
+
+  // Info
+  title           String
+  titleAr         String?
+  description     String?         @db.Text
+  descriptionAr   String?         @db.Text
+
+  // Categorization
+  category        VideoCategory
+  tags            String[]
+
+  // Metadata
+  durationSeconds Int?
+  thumbnailUrl    String?
+
+  // Search (pre-processed vector data)
+  vectorData      Json?           // Store pre-computed embeddings as JSON
+
+  // Status
+  isActive        Boolean         @default(true)
+
+  // Timestamps
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  @@index([category])
+  @@index([isActive])
 }

@@ -1,4 +1,5 @@
-import { Controller, Get, Param, Query, UseGuards, CacheKey, CacheTTL } from '@nestjs/common';
+import { Controller, Get, Param, Query, UseGuards } from '@nestjs/common';
+import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiParam } from '@nestjs/swagger';
 import { ExercisesService } from './exercises.service';
 import { SearchExercisesDto } from './dto/search-exercises.dto';

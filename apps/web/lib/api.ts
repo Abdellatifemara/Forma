@@ -23,13 +23,13 @@ class ApiClient {
       url += `?${searchParams.toString()}`;
     }
 
-    const headers: HeadersInit = {
+    const headers: Record<string, string> = {
       'Content-Type': 'application/json',
-      ...init.headers,
+      ...(init.headers as Record<string, string>),
     };
 
     const { data: { session } } = await supabase.auth.getSession();
-    const accessToken = session?.access_token
+    const accessToken = session?.access_token;
 
     if (accessToken) {
       headers['Authorization'] = `Bearer ${accessToken}`;

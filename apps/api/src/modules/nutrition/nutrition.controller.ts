@@ -1,4 +1,5 @@
-import { Controller, Get, Post, Delete, Param, Query, Body, UseGuards, CacheKey, CacheTTL } from '@nestjs/common';
+import { Controller, Get, Post, Delete, Param, Query, Body, UseGuards } from '@nestjs/common';
+import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { NutritionService } from './nutrition.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';

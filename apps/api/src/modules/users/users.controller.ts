@@ -1,4 +1,5 @@
-import { Controller, Get, Put, Delete, Body, UseGuards, HttpCode, HttpStatus, CacheKey, CacheTTL } from '@nestjs/common';
+import { Controller, Get, Put, Delete, Body, UseGuards, HttpCode, HttpStatus } from '@nestjs/common';
+import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { UsersService } from './users.service';
 import { UpdateUserDto } from './dto/update-user.dto';

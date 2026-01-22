@@ -11,13 +11,42 @@ async function bootstrap() {
 
   // Security
   app.use(helmet());
+
+  // CORS - Allow Vercel, Expo, and local development
+  const allowedOrigins = configService.get('CORS_ORIGINS')?.split(',') || [];
   app.enableCors({
-    origin: configService.get('CORS_ORIGINS')?.split(',') || [
-      'http://localhost:3000',
-      'http://localhost:3001',
-      'https://formaeg.com',
-    ],
+    origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
+      // Allow requests with no origin (mobile apps, Postman, etc.)
+      if (!origin) {
+        return callback(null, true);
+      }
+
+      // Check explicit allowed origins
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      // Allow all Vercel preview deployments
+      if (origin.endsWith('.vercel.app')) {
+        return callback(null, true);
+      }
+
+      // Allow localhost for development
+      if (origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:')) {
+        return callback(null, true);
+      }
+
+      // Allow Expo dev client
+      if (origin.startsWith('exp://')) {
+        return callback(null, true);
+      }
+
+      // Reject others
+      callback(new Error('Not allowed by CORS'));
+    },
     credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
   });
 
   // Validation

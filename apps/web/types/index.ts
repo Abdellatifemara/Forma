@@ -1,3 +1,6 @@
+// Import types we need to use locally
+import type { Workout, Exercise, Food, Client } from '@/lib/api';
+
 // Re-export API types
 export type {
   User,

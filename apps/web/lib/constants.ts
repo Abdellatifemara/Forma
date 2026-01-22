@@ -161,15 +161,15 @@ export const DATE_FORMATS = {
 
 // Validation Limits
 export const LIMITS = {
-  minWeight: 30, // kg
-  maxWeight: 300, // kg
+  minWeight: 30, // kg (body weight)
+  maxWeight: 300, // kg (body weight)
   minHeight: 100, // cm
   maxHeight: 250, // cm
   minAge: 13,
   maxAge: 100,
   maxSets: 10,
   maxReps: 100,
-  maxWeight: 500, // kg for exercises
+  maxExerciseWeight: 500, // kg for exercises
   maxDuration: 300, // minutes
 } as const;
 

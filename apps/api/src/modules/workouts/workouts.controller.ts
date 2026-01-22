@@ -1,4 +1,5 @@
-import { Controller, Get, Post, Put, Param, Body, Query, UseGuards, CacheKey, CacheTTL } from '@nestjs/common';
+import { Controller, Get, Post, Put, Param, Body, Query, UseGuards } from '@nestjs/common';
+import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { WorkoutsService } from './workouts.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';

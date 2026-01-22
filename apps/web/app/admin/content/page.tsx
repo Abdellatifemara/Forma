@@ -52,7 +52,7 @@ const foods = [
 ];
 
 const articles = [
-  { id: '1', title: 'Beginner's Guide to Strength Training', author: 'Admin', status: 'published', views: 2340 },
+  { id: '1', title: "Beginner's Guide to Strength Training", author: 'Admin', status: 'published', views: 2340 },
   { id: '2', title: 'Egyptian Diet for Muscle Building', author: 'Admin', status: 'published', views: 1890 },
   { id: '3', title: 'How to Calculate Your Macros', author: 'Coach Ahmed', status: 'draft', views: 0 },
 ];
