@@ -51,8 +51,7 @@ export function Header({ onMenuClick }: HeaderProps) {
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="relative h-8 w-8 rounded-full">
               <Avatar className="h-8 w-8">
-                <AvatarImage src="/placeholder-avatar.jpg" alt="User" />
-                <AvatarFallback>AH</AvatarFallback>
+                <AvatarFallback className="bg-forma-teal text-white">U</AvatarFallback>
               </Avatar>
             </Button>
           </DropdownMenuTrigger>

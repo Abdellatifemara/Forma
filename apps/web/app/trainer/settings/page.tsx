@@ -114,8 +114,7 @@ export default function TrainerSettingsPage() {
             </CardHeader>
             <CardContent className="flex items-center gap-6">
               <Avatar className="h-24 w-24">
-                <AvatarImage src="/placeholder-avatar.jpg" />
-                <AvatarFallback className="text-2xl">AH</AvatarFallback>
+                <AvatarFallback className="text-2xl bg-forma-teal text-white">U</AvatarFallback>
               </Avatar>
               <div className="space-y-2">
                 <Button variant="outline">Change Photo</Button>

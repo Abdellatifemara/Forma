@@ -59,8 +59,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               <span className="absolute right-1 top-1 h-2 w-2 rounded-full bg-forma-teal" />
             </Button>
             <Avatar className="h-8 w-8">
-              <AvatarImage src="/placeholder-avatar.jpg" />
-              <AvatarFallback>AM</AvatarFallback>
+              <AvatarFallback className="bg-forma-teal text-white">U</AvatarFallback>
             </Avatar>
           </div>
         </div>
