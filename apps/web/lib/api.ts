@@ -1,7 +1,19 @@
-import { useAuth } from '@/hooks/use-auth';
-import { supabase } from './supabase';
-
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+
+// Cookie utilities for auth
+export function setAuthCookie(token: string, maxAge: number = 7 * 24 * 60 * 60) {
+  document.cookie = `forma-token=${token}; path=/; max-age=${maxAge}; SameSite=Lax`;
+}
+
+export function removeAuthCookie() {
+  document.cookie = 'forma-token=; path=/; max-age=0';
+}
+
+export function getAuthCookie(): string | null {
+  if (typeof document === 'undefined') return null;
+  const match = document.cookie.match(/(?:^|; )forma-token=([^;]*)/);
+  return match ? match[1] : null;
+}
 
 interface RequestConfig extends RequestInit {
   params?: Record<string, string>;
@@ -28,11 +40,10 @@ class ApiClient {
       ...(init.headers as Record<string, string>),
     };
 
-    const { data: { session } } = await supabase.auth.getSession();
-    const accessToken = session?.access_token;
-
-    if (accessToken) {
-      headers['Authorization'] = `Bearer ${accessToken}`;
+    // Get token from cookie
+    const token = getAuthCookie();
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
     }
 
     const response = await fetch(url, {
@@ -79,6 +90,55 @@ class ApiClient {
 }
 
 export const api = new ApiClient(API_BASE_URL);
+
+// Auth API (public endpoints - no token required)
+export const authApi = {
+  register: async (data: RegisterData): Promise<AuthResponse> => {
+    const response = await fetch(`${API_BASE_URL}/auth/register`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: 'Registration failed' }));
+      throw new Error(error.message || `HTTP error! status: ${response.status}`);
+    }
+
+    return response.json();
+  },
+
+  login: async (data: LoginData): Promise<AuthResponse> => {
+    const response = await fetch(`${API_BASE_URL}/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: 'Invalid credentials' }));
+      throw new Error(error.message || `HTTP error! status: ${response.status}`);
+    }
+
+    return response.json();
+  },
+
+  refreshToken: async (refreshToken: string): Promise<AuthResponse> => {
+    const response = await fetch(`${API_BASE_URL}/auth/refresh`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ refreshToken }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Token refresh failed');
+    }
+
+    return response.json();
+  },
+
+  getMe: () => api.get<{ user: User }>('/auth/me'),
+};
 
 // Users API
 export const usersApi = {
@@ -444,6 +504,26 @@ interface PaginatedResponse<T> {
   };
 }
 
+// Auth types
+interface RegisterData {
+  email: string;
+  password: string;
+  firstName: string;
+  lastName: string;
+  phone?: string;
+}
+
+interface LoginData {
+  email: string;
+  password: string;
+}
+
+interface AuthResponse {
+  accessToken: string;
+  refreshToken: string;
+  user: User;
+}
+
 export type {
   User,
   OnboardingData,
@@ -475,4 +555,7 @@ export type {
   EarningsData,
   Transaction,
   PaginatedResponse,
+  RegisterData,
+  LoginData,
+  AuthResponse,
 };

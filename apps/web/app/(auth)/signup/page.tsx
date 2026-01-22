@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Eye, EyeOff, Loader2, Check } from 'lucide-react';
+import { Eye, EyeOff, Loader2, Check, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -15,6 +15,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { authApi, setAuthCookie } from '@/lib/api';
 
 const passwordRequirements = [
   { label: 'At least 8 characters', test: (p: string) => p.length >= 8 },
@@ -23,31 +24,87 @@ const passwordRequirements = [
   { label: 'One number', test: (p: string) => /[0-9]/.test(p) },
 ];
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
 export default function SignupPage() {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [step, setStep] = useState(1);
+  const [error, setError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
     password: '',
     goal: '',
     experience: '',
   });
 
+  const isPasswordValid = passwordRequirements.every((req) => req.test(formData.password));
+  const isEmailValid = emailRegex.test(formData.email);
+
+  const validateStep1 = () => {
+    if (!formData.firstName.trim() || formData.firstName.trim().length < 2) {
+      setError('First name must be at least 2 characters');
+      return false;
+    }
+    if (!formData.lastName.trim() || formData.lastName.trim().length < 2) {
+      setError('Last name must be at least 2 characters');
+      return false;
+    }
+    if (!isEmailValid) {
+      setError('Please enter a valid email address');
+      return false;
+    }
+    if (!isPasswordValid) {
+      setError('Password does not meet requirements');
+      return false;
+    }
+    return true;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError(null);
 
     if (step === 1) {
-      setStep(2);
+      if (validateStep1()) {
+        setStep(2);
+      }
+      return;
+    }
+
+    if (!formData.goal || !formData.experience) {
+      setError('Please select your goal and experience level');
       return;
     }
 
     setIsLoading(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    router.push('/app/onboarding');
-    setIsLoading(false);
+
+    try {
+      const response = await authApi.register({
+        email: formData.email.toLowerCase().trim(),
+        password: formData.password,
+        firstName: formData.firstName.trim(),
+        lastName: formData.lastName.trim(),
+      });
+
+      // Store the token in cookie
+      setAuthCookie(response.accessToken);
+
+      // Store onboarding data in localStorage for the onboarding page
+      localStorage.setItem('onboarding-data', JSON.stringify({
+        goal: formData.goal,
+        experience: formData.experience,
+      }));
+
+      router.push('/app/onboarding');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Registration failed. Please try again.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -69,22 +126,52 @@ export default function SignupPage() {
           <div className={`h-1 flex-1 rounded-full ${step >= 2 ? 'bg-forma-teal' : 'bg-white/20'}`} />
         </div>
 
+        {/* Error message */}
+        {error && (
+          <div className="mb-4 flex items-center gap-2 rounded-md bg-red-500/10 p-3 text-sm text-red-400">
+            <AlertCircle className="h-4 w-4 flex-shrink-0" />
+            <span>{error}</span>
+          </div>
+        )}
+
         <form onSubmit={handleSubmit} className="space-y-4">
           {step === 1 ? (
             <>
-              <div className="space-y-2">
-                <Label htmlFor="name" className="text-white/80">
-                  Full Name
-                </Label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="Ahmed Mohamed"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="border-white/20 bg-white/10 text-white placeholder:text-white/40"
-                  required
-                />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <Label htmlFor="firstName" className="text-white/80">
+                    First Name
+                  </Label>
+                  <Input
+                    id="firstName"
+                    type="text"
+                    placeholder="Ahmed"
+                    value={formData.firstName}
+                    onChange={(e) => {
+                      setFormData({ ...formData, firstName: e.target.value });
+                      setError(null);
+                    }}
+                    className="border-white/20 bg-white/10 text-white placeholder:text-white/40"
+                    required
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="lastName" className="text-white/80">
+                    Last Name
+                  </Label>
+                  <Input
+                    id="lastName"
+                    type="text"
+                    placeholder="Mohamed"
+                    value={formData.lastName}
+                    onChange={(e) => {
+                      setFormData({ ...formData, lastName: e.target.value });
+                      setError(null);
+                    }}
+                    className="border-white/20 bg-white/10 text-white placeholder:text-white/40"
+                    required
+                  />
+                </div>
               </div>
 
               <div className="space-y-2">
@@ -96,10 +183,18 @@ export default function SignupPage() {
                   type="email"
                   placeholder="you@example.com"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="border-white/20 bg-white/10 text-white placeholder:text-white/40"
+                  onChange={(e) => {
+                    setFormData({ ...formData, email: e.target.value });
+                    setError(null);
+                  }}
+                  className={`border-white/20 bg-white/10 text-white placeholder:text-white/40 ${
+                    formData.email && !isEmailValid ? 'border-red-500' : ''
+                  }`}
                   required
                 />
+                {formData.email && !isEmailValid && (
+                  <p className="text-xs text-red-400">Please enter a valid email address</p>
+                )}
               </div>
 
               <div className="space-y-2">
@@ -110,9 +205,12 @@ export default function SignupPage() {
                   <Input
                     id="password"
                     type={showPassword ? 'text' : 'password'}
-                    placeholder="••••••••"
+                    placeholder="Create a strong password"
                     value={formData.password}
-                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                    onChange={(e) => {
+                      setFormData({ ...formData, password: e.target.value });
+                      setError(null);
+                    }}
                     className="border-white/20 bg-white/10 pr-10 text-white placeholder:text-white/40"
                     required
                   />
@@ -154,11 +252,14 @@ export default function SignupPage() {
             <>
               <div className="space-y-2">
                 <Label htmlFor="goal" className="text-white/80">
-                  What's your main fitness goal?
+                  What is your main fitness goal?
                 </Label>
                 <Select
                   value={formData.goal}
-                  onValueChange={(value) => setFormData({ ...formData, goal: value })}
+                  onValueChange={(value) => {
+                    setFormData({ ...formData, goal: value });
+                    setError(null);
+                  }}
                 >
                   <SelectTrigger className="border-white/20 bg-white/10 text-white">
                     <SelectValue placeholder="Select your goal" />
@@ -175,11 +276,14 @@ export default function SignupPage() {
 
               <div className="space-y-2">
                 <Label htmlFor="experience" className="text-white/80">
-                  What's your fitness experience level?
+                  What is your fitness experience level?
                 </Label>
                 <Select
                   value={formData.experience}
-                  onValueChange={(value) => setFormData({ ...formData, experience: value })}
+                  onValueChange={(value) => {
+                    setFormData({ ...formData, experience: value });
+                    setError(null);
+                  }}
                 >
                   <SelectTrigger className="border-white/20 bg-white/10 text-white">
                     <SelectValue placeholder="Select your level" />
@@ -198,7 +302,7 @@ export default function SignupPage() {
             type="submit"
             className="w-full"
             variant="forma"
-            disabled={isLoading}
+            disabled={isLoading || (step === 1 && (!formData.firstName || !formData.lastName || !formData.email || !isPasswordValid))}
           >
             {isLoading ? (
               <>
@@ -236,7 +340,7 @@ export default function SignupPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10">
+              <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10" disabled>
                 <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
@@ -257,7 +361,7 @@ export default function SignupPage() {
                 </svg>
                 Google
               </Button>
-              <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10">
+              <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10" disabled>
                 <svg className="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
                 </svg>
