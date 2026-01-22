@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Param, Query, UseGuards, CacheKey, CacheTTL } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiParam } from '@nestjs/swagger';
 import { ExercisesService } from './exercises.service';
 import { SearchExercisesDto } from './dto/search-exercises.dto';
@@ -16,6 +16,8 @@ export class ExercisesController {
   @Get()
   @ApiOperation({ summary: 'Search and filter exercises' })
   @ApiResponse({ status: 200, description: 'Returns paginated exercise list' })
+  @CacheKey('search_exercises')
+  @CacheTTL(300)
   async search(@Query() searchDto: SearchExercisesDto) {
     return this.exercisesService.search(searchDto);
   }
@@ -24,6 +26,8 @@ export class ExercisesController {
   @Get('muscles')
   @ApiOperation({ summary: 'Get exercise counts by muscle group' })
   @ApiResponse({ status: 200, description: 'Returns muscle groups with counts' })
+  @CacheKey('get_muscle_group_counts')
+  @CacheTTL(3600)
   async getMuscleGroupCounts() {
     return this.exercisesService.getMuscleGroupCounts();
   }
@@ -33,6 +37,8 @@ export class ExercisesController {
   @ApiOperation({ summary: 'Get exercises by muscle group' })
   @ApiParam({ name: 'muscle', enum: MuscleGroup })
   @ApiResponse({ status: 200, description: 'Returns exercises for muscle group' })
+  @CacheKey('get_exercises_by_muscle_')
+  @CacheTTL(3600)
   async getByMuscleGroup(@Param('muscle') muscle: MuscleGroup) {
     return this.exercisesService.getByMuscleGroup(muscle);
   }

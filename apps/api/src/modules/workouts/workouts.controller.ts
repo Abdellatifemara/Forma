@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Put, Param, Body, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Put, Param, Body, Query, UseGuards, CacheKey, CacheTTL } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { WorkoutsService } from './workouts.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
@@ -15,6 +15,8 @@ export class WorkoutsController {
   @Get('plans')
   @ApiOperation({ summary: 'Get all workout plans for current user' })
   @ApiResponse({ status: 200, description: 'Returns user workout plans' })
+  @CacheKey('get_plans_')
+  @CacheTTL(300)
   async getPlans(@CurrentUser() user: User) {
     return this.workoutsService.getUserPlans(user.id);
   }
@@ -22,6 +24,8 @@ export class WorkoutsController {
   @Get('plans/active')
   @ApiOperation({ summary: 'Get active workout plan' })
   @ApiResponse({ status: 200, description: 'Returns active plan or null' })
+  @CacheKey('get_active_plan_')
+  @CacheTTL(300)
   async getActivePlan(@CurrentUser() user: User) {
     return this.workoutsService.getActivePlan(user.id);
   }
@@ -29,6 +33,8 @@ export class WorkoutsController {
   @Get('plans/:id')
   @ApiOperation({ summary: 'Get workout plan by ID' })
   @ApiResponse({ status: 200, description: 'Returns plan details' })
+  @CacheKey('get_plan_')
+  @CacheTTL(300)
   async getPlan(@CurrentUser() user: User, @Param('id') id: string) {
     return this.workoutsService.getPlanById(id, user.id);
   }
@@ -36,6 +42,8 @@ export class WorkoutsController {
   @Get('today')
   @ApiOperation({ summary: 'Get todays workout based on active plan' })
   @ApiResponse({ status: 200, description: 'Returns todays workout or rest day info' })
+  @CacheKey('get_todays_workout_')
+  @CacheTTL(300)
   async getTodaysWorkout(@CurrentUser() user: User) {
     return this.workoutsService.getTodaysWorkout(user.id);
   }

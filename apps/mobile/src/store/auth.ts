@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Session } from '@supabase/supabase-js';
 
 export interface User {
   id: string;
@@ -26,15 +27,14 @@ export interface UserProfile {
 
 interface AuthState {
   user: User | null;
-  accessToken: string | null;
-  refreshToken: string | null;
+  session: Session | null;
   isAuthenticated: boolean;
   isLoading: boolean;
   isHydrated: boolean;
 
   // Actions
   setUser: (user: User | null) => void;
-  setTokens: (accessToken: string, refreshToken?: string) => void;
+  setSession: (session: Session | null) => void;
   login: (user: User, accessToken: string, refreshToken?: string) => void;
   logout: () => void;
   updateProfile: (profile: Partial<UserProfile>) => void;
@@ -46,8 +46,7 @@ export const useAuthStore = create<AuthState>()(
   persist(
     (set, get) => ({
       user: null,
-      accessToken: null,
-      refreshToken: null,
+      session: null,
       isAuthenticated: false,
       isLoading: false,
       isHydrated: false,
@@ -56,15 +55,15 @@ export const useAuthStore = create<AuthState>()(
         set({ user, isAuthenticated: !!user });
       },
 
-      setTokens: (accessToken, refreshToken) => {
-        set({ accessToken, refreshToken });
+      setSession: (session) => {
+        set({ session, isAuthenticated: !!session });
       },
 
       login: (user, accessToken, refreshToken) => {
+        const session = get().session;
         set({
           user,
-          accessToken,
-          refreshToken,
+          session: session,
           isAuthenticated: true,
           isLoading: false,
         });
@@ -73,8 +72,7 @@ export const useAuthStore = create<AuthState>()(
       logout: () => {
         set({
           user: null,
-          accessToken: null,
-          refreshToken: null,
+          session: null,
           isAuthenticated: false,
         });
       },
@@ -111,8 +109,7 @@ export const useAuthStore = create<AuthState>()(
       },
       partialize: (state) => ({
         user: state.user,
-        accessToken: state.accessToken,
-        refreshToken: state.refreshToken,
+        session: state.session,
         isAuthenticated: state.isAuthenticated,
       }),
     }
@@ -122,6 +119,6 @@ export const useAuthStore = create<AuthState>()(
 // Selectors
 export const selectUser = (state: AuthState) => state.user;
 export const selectIsAuthenticated = (state: AuthState) => state.isAuthenticated;
-export const selectAccessToken = (state: AuthState) => state.accessToken;
+export const selectAccessToken = (state: AuthState) => state.session?.access_token;
 export const selectIsLoading = (state: AuthState) => state.isLoading;
 export const selectProfile = (state: AuthState) => state.user?.profile;

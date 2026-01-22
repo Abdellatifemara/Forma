@@ -1,0 +1,4706 @@
+[
+  {
+    "id": "QD001",
+    "name_en": "Back Squat - High Bar",
+    "name_ar": "Back Squat - High Bar (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "HAMSTRINGS",
+      "ABS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD002",
+    "name_en": "Back Squat - Low Bar",
+    "name_ar": "Back Squat - Low Bar (AR)",
+    "description_en": "A legs exercise focusing on the Glutes, Quads.",
+    "description_ar": "تمرين legs يركز على Glutes, Quads.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "HAMSTRINGS",
+      "ABS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD003",
+    "name_en": "Back Squat - Wide Stance",
+    "name_ar": "Back Squat - Wide Stance (AR)",
+    "description_en": "A legs exercise focusing on the Glutes, Adductors.",
+    "description_ar": "تمرين legs يركز على Glutes, Adductors.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD004",
+    "name_en": "Back Squat - Narrow Stance",
+    "name_ar": "Back Squat - Narrow Stance (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD005",
+    "name_en": "Back Squat - Pause Rep",
+    "name_ar": "Back Squat - Pause Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD006",
+    "name_en": "Back Squat - Tempo 3-1-2",
+    "name_ar": "Back Squat - Tempo 3-1-2 (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD007",
+    "name_en": "Back Squat - 1.5 Rep",
+    "name_ar": "Back Squat - 1.5 Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD008",
+    "name_en": "Back Squat - Box Squat",
+    "name_ar": "Back Squat - Box Squat (AR)",
+    "description_en": "A legs exercise focusing on the Glutes, Quads.",
+    "description_ar": "تمرين legs يركز على Glutes, Quads.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "HAMSTRINGS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-box"
+    ]
+  },
+  {
+    "id": "QD009",
+    "name_en": "Front Squat",
+    "name_ar": "Front Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD010",
+    "name_en": "Front Squat - Crossed Arms",
+    "name_ar": "Front Squat - Crossed Arms (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD011",
+    "name_en": "Front Squat - Pause Rep",
+    "name_ar": "Front Squat - Pause Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD012",
+    "name_en": "Zercher Squat",
+    "name_ar": "Zercher Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Core.",
+    "description_ar": "تمرين legs يركز على Quads, Core.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell"
+    ]
+  },
+  {
+    "id": "QD013",
+    "name_en": "Anderson Squat (from pins)",
+    "name_ar": "Anderson Squat (from pins) (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-rack"
+    ]
+  },
+  {
+    "id": "QD014",
+    "name_en": "Safety Bar Squat",
+    "name_ar": "Safety Bar Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "safety-squat-bar"
+    ]
+  },
+  {
+    "id": "QD015",
+    "name_en": "Frankenstein Squat",
+    "name_ar": "Frankenstein Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Core.",
+    "description_ar": "تمرين legs يركز على Quads, Core.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell"
+    ]
+  },
+  {
+    "id": "QD016",
+    "name_en": "Overhead Squat",
+    "name_ar": "Overhead Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Core.",
+    "description_ar": "تمرين legs يركز على Quads, Core.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell"
+    ]
+  },
+  {
+    "id": "QD017",
+    "name_en": "Squat - Heels Elevated",
+    "name_ar": "Squat - Heels Elevated (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell-+-plates"
+    ]
+  },
+  {
+    "id": "QD018",
+    "name_en": "1¼ Squat",
+    "name_ar": "1¼ Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell"
+    ]
+  },
+  {
+    "id": "QD019",
+    "name_en": "Goblet Squat",
+    "name_ar": "Goblet Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "DUMBBELLS",
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db",
+      "kb"
+    ]
+  },
+  {
+    "id": "QD020",
+    "name_en": "Goblet Squat - Pause Rep",
+    "name_ar": "Goblet Squat - Pause Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "DUMBBELLS",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db",
+      "kb"
+    ]
+  },
+  {
+    "id": "QD021",
+    "name_en": "Goblet Squat - Heels Elevated",
+    "name_ar": "Goblet Squat - Heels Elevated (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "DUMBBELLS",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db",
+      "kb-+-plates"
+    ]
+  },
+  {
+    "id": "QD022",
+    "name_en": "Goblet Squat - Wide Stance",
+    "name_ar": "Goblet Squat - Wide Stance (AR)",
+    "description_en": "A legs exercise focusing on the Glutes, Adductors.",
+    "description_ar": "تمرين legs يركز على Glutes, Adductors.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS",
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db",
+      "kb"
+    ]
+  },
+  {
+    "id": "QD023",
+    "name_en": "DB Front Squat",
+    "name_ar": "DB Front Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "QD024",
+    "name_en": "DB Squat - Suitcase Hold",
+    "name_ar": "DB Squat - Suitcase Hold (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Core.",
+    "description_ar": "تمرين legs يركز على Quads, Core.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "QD025",
+    "name_en": "Bulgarian Split Squat",
+    "name_ar": "Bulgarian Split Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db-+-bench"
+    ]
+  },
+  {
+    "id": "QD026",
+    "name_en": "Bulgarian Split Squat - Front Foot Elevated",
+    "name_ar": "Bulgarian Split Squat - Front Foot Elevated (AR)",
+    "description_en": "A legs exercise focusing on the Quads (ROM).",
+    "description_ar": "تمرين legs يركز على Quads (ROM).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db-+-2-platforms"
+    ]
+  },
+  {
+    "id": "QD027",
+    "name_en": "Bulgarian Split Squat - Goblet",
+    "name_ar": "Bulgarian Split Squat - Goblet (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Core.",
+    "description_ar": "تمرين legs يركز على Quads, Core.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "kb-+-bench"
+    ]
+  },
+  {
+    "id": "QD028",
+    "name_en": "Reverse Lunge",
+    "name_ar": "Reverse Lunge (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "QD029",
+    "name_en": "Reverse Lunge - Deficit",
+    "name_ar": "Reverse Lunge - Deficit (AR)",
+    "description_en": "A legs exercise focusing on the Quads (ROM).",
+    "description_ar": "تمرين legs يركز على Quads (ROM).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db-+-platform"
+    ]
+  },
+  {
+    "id": "QD030",
+    "name_en": "Forward Lunge",
+    "name_ar": "Forward Lunge (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "QD031",
+    "name_en": "Walking Lunge",
+    "name_ar": "Walking Lunge (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "CARDIO"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "QD032",
+    "name_en": "Lateral Lunge",
+    "name_ar": "Lateral Lunge (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Adductors.",
+    "description_ar": "تمرين legs يركز على Quads, Adductors.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "QD033",
+    "name_en": "Curtsy Lunge",
+    "name_ar": "Curtsy Lunge (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glute Med.",
+    "description_ar": "تمرين legs يركز على Quads, Glute Med.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "QD034",
+    "name_en": "Step-Up",
+    "name_ar": "Step-Up (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db-+-box"
+    ]
+  },
+  {
+    "id": "QD035",
+    "name_en": "Step-Up - Lateral",
+    "name_ar": "Step-Up - Lateral (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Abductors.",
+    "description_ar": "تمرين legs يركز على Quads, Abductors.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db-+-box"
+    ]
+  },
+  {
+    "id": "QD036",
+    "name_en": "Step-Up - Crossover",
+    "name_ar": "Step-Up - Crossover (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Adductors.",
+    "description_ar": "تمرين legs يركز على Quads, Adductors.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "db-+-box"
+    ]
+  },
+  {
+    "id": "QD037",
+    "name_en": "KB Swing (quad emphasis stance)",
+    "name_ar": "KB Swing (quad emphasis stance) (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Hips.",
+    "description_ar": "تمرين legs يركز على Quads, Hips.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES",
+      "ABS"
+    ],
+    "equipment": [
+      "KETTLEBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "QD038",
+    "name_en": "DB Split Squat",
+    "name_ar": "DB Split Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "QD039",
+    "name_en": "Leg Press - Standard",
+    "name_ar": "Leg Press - Standard (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "HAMSTRINGS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "QD040",
+    "name_en": "Leg Press - Narrow Stance",
+    "name_ar": "Leg Press - Narrow Stance (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "QD041",
+    "name_en": "Leg Press - Wide Stance",
+    "name_ar": "Leg Press - Wide Stance (AR)",
+    "description_en": "A legs exercise focusing on the Glutes, Adductors.",
+    "description_ar": "تمرين legs يركز على Glutes, Adductors.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "QD042",
+    "name_en": "Leg Press - Single Leg",
+    "name_ar": "Leg Press - Single Leg (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "QD043",
+    "name_en": "Leg Press - Feet Low",
+    "name_ar": "Leg Press - Feet Low (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "QD044",
+    "name_en": "Leg Press - Feet High",
+    "name_ar": "Leg Press - Feet High (AR)",
+    "description_en": "A legs exercise focusing on the Glutes, Hamstrings.",
+    "description_ar": "تمرين legs يركز على Glutes, Hamstrings.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "QD045",
+    "name_en": "Leg Press - 1.5 Rep",
+    "name_ar": "Leg Press - 1.5 Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "QD046",
+    "name_en": "Leg Press - Pause Rep",
+    "name_ar": "Leg Press - Pause Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "HAMSTRINGS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-press"
+    ]
+  },
+  {
+    "id": "QD047",
+    "name_en": "Hack Squat",
+    "name_ar": "Hack Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "hack-squat-machine"
+    ]
+  },
+  {
+    "id": "QD048",
+    "name_en": "Hack Squat - Narrow Stance",
+    "name_ar": "Hack Squat - Narrow Stance (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "hack-squat"
+    ]
+  },
+  {
+    "id": "QD049",
+    "name_en": "Hack Squat - Reverse",
+    "name_ar": "Hack Squat - Reverse (AR)",
+    "description_en": "A legs exercise focusing on the Glutes, Quads.",
+    "description_ar": "تمرين legs يركز على Glutes, Quads.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "HAMSTRINGS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "hack-squat"
+    ]
+  },
+  {
+    "id": "QD050",
+    "name_en": "V-Squat Machine",
+    "name_ar": "V-Squat Machine (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "v-squat"
+    ]
+  },
+  {
+    "id": "QD051",
+    "name_en": "Pendulum Squat",
+    "name_ar": "Pendulum Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "pendulum-machine"
+    ]
+  },
+  {
+    "id": "QD052",
+    "name_en": "Smith Machine Squat",
+    "name_ar": "Smith Machine Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "smith-machine"
+    ]
+  },
+  {
+    "id": "QD053",
+    "name_en": "Smith Squat - Feet Forward",
+    "name_ar": "Smith Squat - Feet Forward (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "smith-machine"
+    ]
+  },
+  {
+    "id": "QD054",
+    "name_en": "Smith Split Squat",
+    "name_ar": "Smith Split Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "smith-machine"
+    ]
+  },
+  {
+    "id": "QD055",
+    "name_en": "Leg Extension",
+    "name_ar": "Leg Extension (AR)",
+    "description_en": "A legs exercise focusing on the Quads (isolation).",
+    "description_ar": "تمرين legs يركز على Quads (isolation).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-extension"
+    ]
+  },
+  {
+    "id": "QD056",
+    "name_en": "Leg Extension - Single Leg",
+    "name_ar": "Leg Extension - Single Leg (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-extension"
+    ]
+  },
+  {
+    "id": "QD057",
+    "name_en": "Leg Extension - Pause Rep",
+    "name_ar": "Leg Extension - Pause Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-extension"
+    ]
+  },
+  {
+    "id": "QD058",
+    "name_en": "Leg Extension - 21s",
+    "name_ar": "Leg Extension - 21s (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "leg-extension"
+    ]
+  },
+  {
+    "id": "QD059",
+    "name_en": "Bodyweight Squat",
+    "name_ar": "Bodyweight Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD060",
+    "name_en": "BW Squat - Narrow Stance",
+    "name_ar": "BW Squat - Narrow Stance (AR)",
+    "description_en": "A legs exercise focusing on the Quads (emphasis).",
+    "description_ar": "تمرين legs يركز على Quads (emphasis).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD061",
+    "name_en": "BW Squat - Pause Rep",
+    "name_ar": "BW Squat - Pause Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD062",
+    "name_en": "BW Squat - Tempo 3-1-2",
+    "name_ar": "BW Squat - Tempo 3-1-2 (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD063",
+    "name_en": "BW Squat - Pulse at Bottom",
+    "name_ar": "BW Squat - Pulse at Bottom (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD064",
+    "name_en": "BW Squat - 1.5 Rep",
+    "name_ar": "BW Squat - 1.5 Rep (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD065",
+    "name_en": "Sissy Squat",
+    "name_ar": "Sissy Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads (isolation).",
+    "description_ar": "تمرين legs يركز على Quads (isolation).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "support-optional"
+    ]
+  },
+  {
+    "id": "QD066",
+    "name_en": "Sissy Squat - Assisted",
+    "name_ar": "Sissy Squat - Assisted (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "support"
+    ]
+  },
+  {
+    "id": "QD067",
+    "name_en": "Pistol Squat",
+    "name_ar": "Pistol Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD068",
+    "name_en": "Pistol Squat - Assisted",
+    "name_ar": "Pistol Squat - Assisted (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "TRX",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "trx",
+      "support"
+    ]
+  },
+  {
+    "id": "QD069",
+    "name_en": "Pistol Squat - Box",
+    "name_ar": "Pistol Squat - Box (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "box"
+    ]
+  },
+  {
+    "id": "QD070",
+    "name_en": "Shrimp Squat",
+    "name_ar": "Shrimp Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES",
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD071",
+    "name_en": "Shrimp Squat - Assisted",
+    "name_ar": "Shrimp Squat - Assisted (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "support"
+    ]
+  },
+  {
+    "id": "QD072",
+    "name_en": "Wall Sit",
+    "name_ar": "Wall Sit (AR)",
+    "description_en": "A legs exercise focusing on the Quads (isometric).",
+    "description_ar": "تمرين legs يركز على Quads (isometric).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "wall"
+    ]
+  },
+  {
+    "id": "QD073",
+    "name_en": "Wall Sit - Single Leg",
+    "name_ar": "Wall Sit - Single Leg (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "ABS",
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "wall"
+    ]
+  },
+  {
+    "id": "QD074",
+    "name_en": "BW Split Squat",
+    "name_ar": "BW Split Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD075",
+    "name_en": "BW Reverse Lunge",
+    "name_ar": "BW Reverse Lunge (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD076",
+    "name_en": "BW Forward Lunge",
+    "name_ar": "BW Forward Lunge (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD077",
+    "name_en": "BW Walking Lunge",
+    "name_ar": "BW Walking Lunge (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "CARDIO"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD078",
+    "name_en": "Jump Squat",
+    "name_ar": "Jump Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD079",
+    "name_en": "Squat Jump - Tuck",
+    "name_ar": "Squat Jump - Tuck (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD080",
+    "name_en": "BW Step-Up",
+    "name_ar": "BW Step-Up (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE",
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "box",
+      "stair"
+    ]
+  },
+  {
+    "id": "QD081",
+    "name_en": "Cable Squat",
+    "name_ar": "Cable Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "low-pulley"
+    ]
+  },
+  {
+    "id": "QD082",
+    "name_en": "Cable Split Squat",
+    "name_ar": "Cable Split Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "low-pulley"
+    ]
+  },
+  {
+    "id": "QD083",
+    "name_en": "Cable Step-Up",
+    "name_ar": "Cable Step-Up (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "low-pulley"
+    ]
+  },
+  {
+    "id": "QD084",
+    "name_en": "Band Squat",
+    "name_ar": "Band Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "loop-band"
+    ]
+  },
+  {
+    "id": "QD085",
+    "name_en": "Band Goblet Squat",
+    "name_ar": "Band Goblet Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "band"
+    ]
+  },
+  {
+    "id": "QD086",
+    "name_en": "Band Bulgarian Split Squat",
+    "name_ar": "Band Bulgarian Split Squat (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "band"
+    ]
+  },
+  {
+    "id": "QD087",
+    "name_en": "Band Terminal Knee Extension",
+    "name_ar": "Band Terminal Knee Extension (AR)",
+    "description_en": "A legs exercise focusing on the VMO (quad).",
+    "description_ar": "تمرين legs يركز على VMO (quad).",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "band"
+    ]
+  },
+  {
+    "id": "QD088",
+    "name_en": "Band Leg Extension (seated)",
+    "name_ar": "Band Leg Extension (seated) (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "band"
+    ]
+  },
+  {
+    "id": "QD089",
+    "name_en": "Banded Squat Walk",
+    "name_ar": "Banded Squat Walk (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Abductors.",
+    "description_ar": "تمرين legs يركز على Quads, Abductors.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "loop-band"
+    ]
+  },
+  {
+    "id": "QD090",
+    "name_en": "Band Step-Up",
+    "name_ar": "Band Step-Up (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "band"
+    ]
+  },
+  {
+    "id": "QD091",
+    "name_en": "Box Jump",
+    "name_ar": "Box Jump (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "box"
+    ]
+  },
+  {
+    "id": "QD092",
+    "name_en": "Box Jump - Single Leg",
+    "name_ar": "Box Jump - Single Leg (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "box"
+    ]
+  },
+  {
+    "id": "QD093",
+    "name_en": "Depth Jump",
+    "name_ar": "Depth Jump (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "box"
+    ]
+  },
+  {
+    "id": "QD094",
+    "name_en": "Broad Jump",
+    "name_ar": "Broad Jump (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD095",
+    "name_en": "Split Squat Jump",
+    "name_ar": "Split Squat Jump (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD096",
+    "name_en": "Skater Jump",
+    "name_ar": "Skater Jump (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Abductors.",
+    "description_ar": "تمرين legs يركز على Quads, Abductors.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD097",
+    "name_en": "Lunge Jump",
+    "name_ar": "Lunge Jump (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD098",
+    "name_en": "Squat Jump - Continuous",
+    "name_ar": "Squat Jump - Continuous (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "CARDIO"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD099",
+    "name_en": "Pogos (ankle bounces)",
+    "name_ar": "Pogos (ankle bounces) (AR)",
+    "description_en": "A legs exercise focusing on the Calves, Quads.",
+    "description_ar": "تمرين legs يركز على Calves, Quads.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD100",
+    "name_en": "Hurdle Hop",
+    "name_ar": "Hurdle Hop (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Power.",
+    "description_ar": "تمرين legs يركز على Quads, Power.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "hurdles"
+    ]
+  },
+  {
+    "id": "QD101",
+    "name_en": "Wall Sit Hold",
+    "name_ar": "Wall Sit Hold (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "wall"
+    ]
+  },
+  {
+    "id": "QD102",
+    "name_en": "Squat Hold (parallel)",
+    "name_ar": "Squat Hold (parallel) (AR)",
+    "description_en": "A legs exercise focusing on the Quads, Glutes.",
+    "description_ar": "تمرين legs يركز على Quads, Glutes.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD103",
+    "name_en": "Split Squat Hold",
+    "name_ar": "Split Squat Hold (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "none"
+    ]
+  },
+  {
+    "id": "QD104",
+    "name_en": "Leg Extension Hold",
+    "name_ar": "Leg Extension Hold (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "machine"
+    ]
+  },
+  {
+    "id": "QD105",
+    "name_en": "Spanish Squat Hold",
+    "name_ar": "Spanish Squat Hold (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "band"
+    ]
+  },
+  {
+    "id": "QD106",
+    "name_en": "Single Leg Wall Sit",
+    "name_ar": "Single Leg Wall Sit (AR)",
+    "description_en": "A legs exercise focusing on the Quads.",
+    "description_ar": "تمرين legs يركز على Quads.",
+    "category": "LEGS",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "wall"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "DUMBBELLS",
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "dumbbells",
+      "kb"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "barbell"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "machines"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bands"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A legs exercise focusing on the muscles.",
+    "description_ar": "تمرين legs يركز على muscles.",
+    "category": "LEGS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "legs",
+      "bodyweight"
+    ]
+  }
+]

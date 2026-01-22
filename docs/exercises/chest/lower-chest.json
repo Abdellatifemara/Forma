@@ -1,0 +1,3716 @@
+[
+  {
+    "id": "LC001",
+    "name_en": "Decline Barbell Bench Press",
+    "name_ar": "Decline Barbell Bench Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC002",
+    "name_en": "Decline Press - Close Grip",
+    "name_ar": "Decline Press - Close Grip (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, triceps.",
+    "description_ar": "تمرين chest يركز على Lower pec, triceps.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC003",
+    "name_en": "Decline Press - Wide Grip",
+    "name_ar": "Decline Press - Wide Grip (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec (outer).",
+    "description_ar": "تمرين chest يركز على Lower pec (outer).",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC004",
+    "name_en": "Decline Press - Pause Rep",
+    "name_ar": "Decline Press - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC005",
+    "name_en": "Decline Press - Tempo 3-1-2",
+    "name_ar": "Decline Press - Tempo 3-1-2 (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC006",
+    "name_en": "Decline Press - Reverse Grip",
+    "name_ar": "Decline Press - Reverse Grip (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC007",
+    "name_en": "Decline Floor Press (hips elevated)",
+    "name_ar": "Decline Floor Press (hips elevated) (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, triceps.",
+    "description_ar": "تمرين chest يركز على Lower pec, triceps.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell"
+    ]
+  },
+  {
+    "id": "LC008",
+    "name_en": "Guillotine Press (neck press)",
+    "name_ar": "Guillotine Press (neck press) (AR)",
+    "description_en": "A chest exercise focusing on the Lower/sternal pec.",
+    "description_ar": "تمرين chest يركز على Lower/sternal pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-flat-bench"
+    ]
+  },
+  {
+    "id": "LC009",
+    "name_en": "Decline Press - 1.5 Rep",
+    "name_ar": "Decline Press - 1.5 Rep (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC010",
+    "name_en": "Decline Press - Chains",
+    "name_ar": "Decline Press - Chains (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-+-chains"
+    ]
+  },
+  {
+    "id": "LC011",
+    "name_en": "Decline Press - Bands",
+    "name_ar": "Decline Press - Bands (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-+-bands"
+    ]
+  },
+  {
+    "id": "LC012",
+    "name_en": "Decline Press - Dead Stop (pins)",
+    "name_ar": "Decline Press - Dead Stop (pins) (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-decline-+-pins"
+    ]
+  },
+  {
+    "id": "LC013",
+    "name_en": "Decline Dumbbell Press",
+    "name_ar": "Decline Dumbbell Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC014",
+    "name_en": "Decline DB Press - Neutral Grip",
+    "name_ar": "Decline DB Press - Neutral Grip (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC015",
+    "name_en": "Decline DB Press - Single Arm",
+    "name_ar": "Decline DB Press - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, core.",
+    "description_ar": "تمرين chest يركز على Lower pec, core.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC016",
+    "name_en": "Decline DB Press - Alternating",
+    "name_ar": "Decline DB Press - Alternating (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC017",
+    "name_en": "Decline DB Press - Pause Rep",
+    "name_ar": "Decline DB Press - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC018",
+    "name_en": "Decline DB Press - Tempo 3-1-2",
+    "name_ar": "Decline DB Press - Tempo 3-1-2 (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC019",
+    "name_en": "Decline DB Press - Squeeze Press",
+    "name_ar": "Decline DB Press - Squeeze Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec (inner).",
+    "description_ar": "تمرين chest يركز على Lower pec (inner).",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC020",
+    "name_en": "Decline Dumbbell Fly",
+    "name_ar": "Decline Dumbbell Fly (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC021",
+    "name_en": "Decline DB Fly - Pause at Stretch",
+    "name_ar": "Decline DB Fly - Pause at Stretch (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC022",
+    "name_en": "Decline DB Fly to Press Combo",
+    "name_ar": "Decline DB Fly to Press Combo (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC023",
+    "name_en": "Decline DB Pullover",
+    "name_ar": "Decline DB Pullover (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, lats.",
+    "description_ar": "تمرين chest يركز على Lower pec, lats.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC024",
+    "name_en": "Hip Bridge DB Press",
+    "name_ar": "Hip Bridge DB Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, glutes.",
+    "description_ar": "تمرين chest يركز على Lower pec, glutes.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db"
+    ]
+  },
+  {
+    "id": "LC025",
+    "name_en": "DB Hex Press - Decline",
+    "name_ar": "DB Hex Press - Decline (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec (inner).",
+    "description_ar": "تمرين chest يركز على Lower pec (inner).",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline"
+    ]
+  },
+  {
+    "id": "LC026",
+    "name_en": "Decline DB Press - Twist",
+    "name_ar": "Decline DB Press - Twist (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-decline"
+    ]
+  },
+  {
+    "id": "LC027",
+    "name_en": "High-to-Low Cable Fly",
+    "name_ar": "High-to-Low Cable Fly (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC028",
+    "name_en": "High-to-Low Cable Fly - Single Arm",
+    "name_ar": "High-to-Low Cable Fly - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC029",
+    "name_en": "High Cable Crossover",
+    "name_ar": "High Cable Crossover (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC030",
+    "name_en": "Cable Crossover - Hands Down",
+    "name_ar": "Cable Crossover - Hands Down (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC031",
+    "name_en": "High Cable Press - Standing",
+    "name_ar": "High Cable Press - Standing (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC032",
+    "name_en": "High Cable Press - Single Arm",
+    "name_ar": "High Cable Press - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, core.",
+    "description_ar": "تمرين chest يركز على Lower pec, core.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC033",
+    "name_en": "Decline Cable Press",
+    "name_ar": "Decline Cable Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "cable-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC034",
+    "name_en": "Decline Cable Fly",
+    "name_ar": "Decline Cable Fly (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "cable-+-decline-bench"
+    ]
+  },
+  {
+    "id": "LC035",
+    "name_en": "High-to-Low Cable Fly - Pause Rep",
+    "name_ar": "High-to-Low Cable Fly - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC036",
+    "name_en": "High-to-Low Cable Fly - 21s",
+    "name_ar": "High-to-Low Cable Fly - 21s (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC037",
+    "name_en": "High Cable Crossover - Drop Set",
+    "name_ar": "High Cable Crossover - Drop Set (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC038",
+    "name_en": "Cable Dip (downward press)",
+    "name_ar": "Cable Dip (downward press) (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC039",
+    "name_en": "Decline Machine Press",
+    "name_ar": "Decline Machine Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "decline-press-machine"
+    ]
+  },
+  {
+    "id": "LC040",
+    "name_en": "Decline Machine Press - Single Arm",
+    "name_ar": "Decline Machine Press - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machine"
+    ]
+  },
+  {
+    "id": "LC041",
+    "name_en": "Hammer Strength Decline Press",
+    "name_ar": "Hammer Strength Decline Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "plate-loaded"
+    ]
+  },
+  {
+    "id": "LC042",
+    "name_en": "Hammer Decline - Single Arm",
+    "name_ar": "Hammer Decline - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "plate-loaded"
+    ]
+  },
+  {
+    "id": "LC043",
+    "name_en": "Smith Machine Decline Press",
+    "name_ar": "Smith Machine Decline Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "smith-+-decline"
+    ]
+  },
+  {
+    "id": "LC044",
+    "name_en": "Pec Deck - Leaning Forward",
+    "name_ar": "Pec Deck - Leaning Forward (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "pec-deck"
+    ]
+  },
+  {
+    "id": "LC045",
+    "name_en": "Decline Cable Machine Press",
+    "name_ar": "Decline Cable Machine Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "cable-machine"
+    ]
+  },
+  {
+    "id": "LC046",
+    "name_en": "Seated Dip Machine",
+    "name_ar": "Seated Dip Machine (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "dip-machine"
+    ]
+  },
+  {
+    "id": "LC047",
+    "name_en": "Chest Dip - Standard",
+    "name_ar": "Chest Dip - Standard (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "parallel-bars"
+    ]
+  },
+  {
+    "id": "LC048",
+    "name_en": "Chest Dip - Wide Grip",
+    "name_ar": "Chest Dip - Wide Grip (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec (outer).",
+    "description_ar": "تمرين chest يركز على Lower pec (outer).",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "wide-dip-bars"
+    ]
+  },
+  {
+    "id": "LC049",
+    "name_en": "Chest Dip - Weighted",
+    "name_ar": "Chest Dip - Weighted (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "parallel-bars-+-weight"
+    ]
+  },
+  {
+    "id": "LC050",
+    "name_en": "Chest Dip - Pause Rep",
+    "name_ar": "Chest Dip - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "parallel-bars"
+    ]
+  },
+  {
+    "id": "LC051",
+    "name_en": "Chest Dip - Tempo 3-1-2",
+    "name_ar": "Chest Dip - Tempo 3-1-2 (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "parallel-bars"
+    ]
+  },
+  {
+    "id": "LC052",
+    "name_en": "Chest Dip - Negative Only",
+    "name_ar": "Chest Dip - Negative Only (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "parallel-bars"
+    ]
+  },
+  {
+    "id": "LC053",
+    "name_en": "Ring Dip - Chest Focus",
+    "name_ar": "Ring Dip - Chest Focus (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, stability.",
+    "description_ar": "تمرين chest يركز على Lower pec, stability.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "TRX"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "rings"
+    ]
+  },
+  {
+    "id": "LC054",
+    "name_en": "Bench Dip - Feet Elevated",
+    "name_ar": "Bench Dip - Feet Elevated (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, triceps.",
+    "description_ar": "تمرين chest يركز على Lower pec, triceps.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench"
+    ]
+  },
+  {
+    "id": "LC055",
+    "name_en": "Machine Assisted Dip",
+    "name_ar": "Machine Assisted Dip (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "assisted-dip-machine"
+    ]
+  },
+  {
+    "id": "LC056",
+    "name_en": "Korean Dip (behind back)",
+    "name_ar": "Korean Dip (behind back) (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS",
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "parallel-bars"
+    ]
+  },
+  {
+    "id": "LC057",
+    "name_en": "Decline Push-Up (feet elevated)",
+    "name_ar": "Decline Push-Up (feet elevated) (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "elevated-surface"
+    ]
+  },
+  {
+    "id": "LC058",
+    "name_en": "Decline Push-Up - Wide",
+    "name_ar": "Decline Push-Up - Wide (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec (outer).",
+    "description_ar": "تمرين chest يركز على Lower pec (outer).",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "elevated-surface"
+    ]
+  },
+  {
+    "id": "LC059",
+    "name_en": "Decline Push-Up - Diamond",
+    "name_ar": "Decline Push-Up - Diamond (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec (inner), triceps.",
+    "description_ar": "تمرين chest يركز على Lower pec (inner), triceps.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "elevated-surface"
+    ]
+  },
+  {
+    "id": "LC060",
+    "name_en": "Decline Push-Up - Pause Rep",
+    "name_ar": "Decline Push-Up - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "elevated-surface"
+    ]
+  },
+  {
+    "id": "LC061",
+    "name_en": "Decline Push-Up - Explosive",
+    "name_ar": "Decline Push-Up - Explosive (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, power.",
+    "description_ar": "تمرين chest يركز على Lower pec, power.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "elevated-surface"
+    ]
+  },
+  {
+    "id": "LC062",
+    "name_en": "Pseudo Planche Push-Up",
+    "name_ar": "Pseudo Planche Push-Up (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "none"
+    ]
+  },
+  {
+    "id": "LC063",
+    "name_en": "Pike Push-Up (partial)",
+    "name_ar": "Pike Push-Up (partial) (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, anterior delt.",
+    "description_ar": "تمرين chest يركز على Lower pec, anterior delt.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "none"
+    ]
+  },
+  {
+    "id": "LC064",
+    "name_en": "Hindu Push-Up (dive bomber)",
+    "name_ar": "Hindu Push-Up (dive bomber) (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec, full pec.",
+    "description_ar": "تمرين chest يركز على Lower pec, full pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "none"
+    ]
+  },
+  {
+    "id": "LC065",
+    "name_en": "Band High-to-Low Fly",
+    "name_ar": "Band High-to-Low Fly (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-high-anchor"
+    ]
+  },
+  {
+    "id": "LC066",
+    "name_en": "Band High-to-Low Fly - Single Arm",
+    "name_ar": "Band High-to-Low Fly - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-high-anchor"
+    ]
+  },
+  {
+    "id": "LC067",
+    "name_en": "Band Decline Press",
+    "name_ar": "Band Decline Press (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-low-anchor"
+    ]
+  },
+  {
+    "id": "LC068",
+    "name_en": "Band Dip",
+    "name_ar": "Band Dip (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band"
+    ]
+  },
+  {
+    "id": "LC069",
+    "name_en": "Band Crossover - Downward",
+    "name_ar": "Band Crossover - Downward (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-high-anchor"
+    ]
+  },
+  {
+    "id": "LC070",
+    "name_en": "Dip Hold (bottom position)",
+    "name_ar": "Dip Hold (bottom position) (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "parallel-bars"
+    ]
+  },
+  {
+    "id": "LC071",
+    "name_en": "Decline Push-Up Hold",
+    "name_ar": "Decline Push-Up Hold (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "elevated-surface"
+    ]
+  },
+  {
+    "id": "LC072",
+    "name_en": "High Cable Fly Hold",
+    "name_ar": "High Cable Fly Hold (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "LC073",
+    "name_en": "Decline Press Hold",
+    "name_ar": "Decline Press Hold (AR)",
+    "description_en": "A chest exercise focusing on the Lower pec.",
+    "description_ar": "تمرين chest يركز على Lower pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "DUMBBELLS",
+      "BENCH"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db",
+      "bb-+-decline"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "cables"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machines"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bands"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  }
+]

@@ -1,0 +1,1846 @@
+[
+  {
+    "id": "PF001",
+    "name_en": "Basic Kegel - Quick Flicks",
+    "name_ar": "Basic Kegel - Quick Flicks (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF002",
+    "name_en": "Basic Kegel - Sustained Hold",
+    "name_ar": "Basic Kegel - Sustained Hold (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF003",
+    "name_en": "Kegel - Lying Down",
+    "name_ar": "Kegel - Lying Down (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF004",
+    "name_en": "Kegel - Seated",
+    "name_ar": "Kegel - Seated (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF005",
+    "name_en": "Kegel - Standing",
+    "name_ar": "Kegel - Standing (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF006",
+    "name_en": "Kegel - Elevator (Progressive)",
+    "name_ar": "Kegel - Elevator (Progressive) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF007",
+    "name_en": "Kegel - Staircase (10 levels)",
+    "name_ar": "Kegel - Staircase (10 levels) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF008",
+    "name_en": "Kegel - Pulse & Hold Combo",
+    "name_ar": "Kegel - Pulse & Hold Combo (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF009",
+    "name_en": "Kegel - Breath Synchronized",
+    "name_ar": "Kegel - Breath Synchronized (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF010",
+    "name_en": "Reverse Kegel (Relaxation)",
+    "name_ar": "Reverse Kegel (Relaxation) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF011",
+    "name_en": "Dead Bug with Kegel",
+    "name_ar": "Dead Bug with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Core + PF.",
+    "description_ar": "تمرين core يركز على Core + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "LEGS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF012",
+    "name_en": "Bird Dog with Kegel",
+    "name_ar": "Bird Dog with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Core + PF.",
+    "description_ar": "تمرين core يركز على Core + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF013",
+    "name_en": "Bridge with Kegel",
+    "name_ar": "Bridge with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Glutes + PF.",
+    "description_ar": "تمرين core يركز على Glutes + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "HAMSTRINGS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF014",
+    "name_en": "Clamshell with Kegel",
+    "name_ar": "Clamshell with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Hip + PF.",
+    "description_ar": "تمرين core يركز على Hip + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF015",
+    "name_en": "Squat with Kegel (exhale up)",
+    "name_ar": "Squat with Kegel (exhale up) (AR)",
+    "description_en": "A core exercise focusing on the Legs + PF.",
+    "description_ar": "تمرين core يركز على Legs + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF016",
+    "name_en": "Diaphragmatic Breathing + Kegel",
+    "name_ar": "Diaphragmatic Breathing + Kegel (AR)",
+    "description_en": "A core exercise focusing on the Breathing + PF.",
+    "description_ar": "تمرين core يركز على Breathing + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF017",
+    "name_en": "Happy Baby with Kegel",
+    "name_ar": "Happy Baby with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Hip opener + PF.",
+    "description_ar": "تمرين core يركز على Hip opener + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF018",
+    "name_en": "Cat-Cow with Kegel",
+    "name_ar": "Cat-Cow with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Spine + PF.",
+    "description_ar": "تمرين core يركز على Spine + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF019",
+    "name_en": "Wall Sit with Kegel",
+    "name_ar": "Wall Sit with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Quads + PF.",
+    "description_ar": "تمرين core يركز على Quads + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF020",
+    "name_en": "Heel Slides with Kegel",
+    "name_ar": "Heel Slides with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Core + PF.",
+    "description_ar": "تمرين core يركز على Core + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "LEGS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF021",
+    "name_en": "Toe Taps with Kegel",
+    "name_ar": "Toe Taps with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Core + PF.",
+    "description_ar": "تمرين core يركز على Core + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "LEGS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF022",
+    "name_en": "Side-Lying Leg Lift with Kegel",
+    "name_ar": "Side-Lying Leg Lift with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Hip + PF.",
+    "description_ar": "تمرين core يركز على Hip + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF023",
+    "name_en": "Plank with Kegel",
+    "name_ar": "Plank with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Full core + PF.",
+    "description_ar": "تمرين core يركز على Full core + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF024",
+    "name_en": "Single Leg Bridge + Kegel",
+    "name_ar": "Single Leg Bridge + Kegel (AR)",
+    "description_en": "A core exercise focusing on the Glutes + PF.",
+    "description_ar": "تمرين core يركز على Glutes + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF025",
+    "name_en": "Deep Squat Hold + Kegel",
+    "name_ar": "Deep Squat Hold + Kegel (AR)",
+    "description_en": "A core exercise focusing on the Full body + PF.",
+    "description_ar": "تمرين core يركز على Full body + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF026",
+    "name_en": "Lunge with Kegel (exhale up)",
+    "name_ar": "Lunge with Kegel (exhale up) (AR)",
+    "description_en": "A core exercise focusing on the Legs + PF.",
+    "description_ar": "تمرين core يركز على Legs + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF027",
+    "name_en": "Side Plank with Kegel",
+    "name_ar": "Side Plank with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Obliques + PF.",
+    "description_ar": "تمرين core يركز على Obliques + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF028",
+    "name_en": "Pallof Press + Kegel",
+    "name_ar": "Pallof Press + Kegel (AR)",
+    "description_en": "A core exercise focusing on the Anti-rotation + PF.",
+    "description_ar": "تمرين core يركز على Anti-rotation + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF029",
+    "name_en": "Romanian Deadlift + Kegel",
+    "name_ar": "Romanian Deadlift + Kegel (AR)",
+    "description_en": "A core exercise focusing on the Posterior chain + PF.",
+    "description_ar": "تمرين core يركز على Posterior chain + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF030",
+    "name_en": "Step-Up with Kegel",
+    "name_ar": "Step-Up with Kegel (AR)",
+    "description_en": "A core exercise focusing on the Legs + PF.",
+    "description_ar": "تمرين core يركز على Legs + PF.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF031",
+    "name_en": "Deep Squat Stretch",
+    "name_ar": "Deep Squat Stretch (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF032",
+    "name_en": "Happy Baby Pose",
+    "name_ar": "Happy Baby Pose (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF033",
+    "name_en": "Child's Pose with Wide Knees",
+    "name_ar": "Child's Pose with Wide Knees (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF034",
+    "name_en": "Butterfly Stretch",
+    "name_ar": "Butterfly Stretch (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "PF035",
+    "name_en": "Diaphragmatic Breathing (belly)",
+    "name_ar": "Diaphragmatic Breathing (belly) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF003 (Lying Kegel)",
+    "name_ar": "PF003 (Lying Kegel) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF009 (Breath Sync)",
+    "name_ar": "PF009 (Breath Sync) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF013 (Bridge + Kegel)",
+    "name_ar": "PF013 (Bridge + Kegel) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF006 (Elevator)",
+    "name_ar": "PF006 (Elevator) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF005 (Standing)",
+    "name_ar": "PF005 (Standing) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF011 (Dead Bug)",
+    "name_ar": "PF011 (Dead Bug) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF015 (Squat)",
+    "name_ar": "PF015 (Squat) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF007 (Staircase)",
+    "name_ar": "PF007 (Staircase) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF023 (Plank)",
+    "name_ar": "PF023 (Plank) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF024 (Single Leg Bridge)",
+    "name_ar": "PF024 (Single Leg Bridge) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF026 (Lunge)",
+    "name_ar": "PF026 (Lunge) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "PF035 (Relaxation)",
+    "name_ar": "PF035 (Relaxation) (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A core exercise focusing on the muscles.",
+    "description_ar": "تمرين core يركز على muscles.",
+    "category": "CORE",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "bodyweight"
+    ]
+  }
+]

@@ -1,3 +1,6 @@
+import { useAuth } from '@/hooks/use-auth';
+import { supabase } from './supabase';
+
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
 
 interface RequestConfig extends RequestInit {
@@ -6,14 +9,9 @@ interface RequestConfig extends RequestInit {
 
 class ApiClient {
   private baseUrl: string;
-  private token: string | null = null;
 
   constructor(baseUrl: string) {
     this.baseUrl = baseUrl;
-  }
-
-  setToken(token: string | null) {
-    this.token = token;
   }
 
   private async request<T>(endpoint: string, config: RequestConfig = {}): Promise<T> {
@@ -30,8 +28,11 @@ class ApiClient {
       ...init.headers,
     };
 
-    if (this.token) {
-      headers['Authorization'] = `Bearer ${this.token}`;
+    const { data: { session } } = await supabase.auth.getSession();
+    const accessToken = session?.access_token
+
+    if (accessToken) {
+      headers['Authorization'] = `Bearer ${accessToken}`;
     }
 
     const response = await fetch(url, {
@@ -78,25 +79,6 @@ class ApiClient {
 }
 
 export const api = new ApiClient(API_BASE_URL);
-
-// Auth API
-export const authApi = {
-  login: (data: { email: string; password: string }) =>
-    api.post<{ accessToken: string; user: User }>('/auth/login', data),
-
-  register: (data: { name: string; email: string; password: string }) =>
-    api.post<{ accessToken: string; user: User }>('/auth/register', data),
-
-  logout: () => api.post('/auth/logout'),
-
-  me: () => api.get<User>('/auth/me'),
-
-  forgotPassword: (email: string) =>
-    api.post('/auth/forgot-password', { email }),
-
-  resetPassword: (data: { token: string; password: string }) =>
-    api.post('/auth/reset-password', data),
-};
 
 // Users API
 export const usersApi = {
@@ -457,7 +439,7 @@ interface PaginatedResponse<T> {
   meta: {
     total: number;
     page: number;
-    limit: number;
+    limit?: number;
     totalPages: number;
   };
 }

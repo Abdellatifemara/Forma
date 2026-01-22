@@ -1,0 +1,4063 @@
+[
+  {
+    "id": "UB001",
+    "name_en": "Barbell Shrug",
+    "name_ar": "Barbell Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB002",
+    "name_en": "Barbell Shrug - Behind Back",
+    "name_ar": "Barbell Shrug - Behind Back (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB003",
+    "name_en": "Barbell Shrug - Pause Rep",
+    "name_ar": "Barbell Shrug - Pause Rep (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB004",
+    "name_en": "Dumbbell Shrug",
+    "name_ar": "Dumbbell Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "UB005",
+    "name_en": "DB Shrug - Pause Rep",
+    "name_ar": "DB Shrug - Pause Rep (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "UB006",
+    "name_en": "DB Shrug - Single Arm",
+    "name_ar": "DB Shrug - Single Arm (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "dumbbell"
+    ]
+  },
+  {
+    "id": "UB007",
+    "name_en": "DB Shrug - Incline (chest supported)",
+    "name_ar": "DB Shrug - Incline (chest supported) (AR)",
+    "description_en": "A back exercise focusing on the Upper/mid traps.",
+    "description_ar": "تمرين back يركز على Upper/mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UB008",
+    "name_en": "Trap Bar Shrug",
+    "name_ar": "Trap Bar Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "trap-bar"
+    ]
+  },
+  {
+    "id": "UB009",
+    "name_en": "Smith Machine Shrug",
+    "name_ar": "Smith Machine Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "smith-machine"
+    ]
+  },
+  {
+    "id": "UB010",
+    "name_en": "Cable Shrug",
+    "name_ar": "Cable Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "low-cable"
+    ]
+  },
+  {
+    "id": "UB011",
+    "name_en": "Cable Shrug - Single Arm",
+    "name_ar": "Cable Shrug - Single Arm (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "low-cable"
+    ]
+  },
+  {
+    "id": "UB012",
+    "name_en": "Machine Shrug",
+    "name_ar": "Machine Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "shrug-machine"
+    ]
+  },
+  {
+    "id": "UB013",
+    "name_en": "Overhead Shrug",
+    "name_ar": "Overhead Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell-(overhead)"
+    ]
+  },
+  {
+    "id": "UB014",
+    "name_en": "Farmer's Walk Shrug",
+    "name_ar": "Farmer's Walk Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS",
+      "ABS"
+    ],
+    "equipment": [
+      "DUMBBELLS",
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "heavy-dbs",
+      "trap-bar"
+    ]
+  },
+  {
+    "id": "UB015",
+    "name_en": "Upright Row - Barbell (wide)",
+    "name_ar": "Upright Row - Barbell (wide) (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, side delts.",
+    "description_ar": "تمرين back يركز على Upper traps, side delts.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB016",
+    "name_en": "Upright Row - EZ Bar",
+    "name_ar": "Upright Row - EZ Bar (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, side delts.",
+    "description_ar": "تمرين back يركز على Upper traps, side delts.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "ez-bar"
+    ]
+  },
+  {
+    "id": "UB017",
+    "name_en": "Upright Row - Dumbbell",
+    "name_ar": "Upright Row - Dumbbell (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, side delts.",
+    "description_ar": "تمرين back يركز على Upper traps, side delts.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "UB018",
+    "name_en": "Upright Row - Single Arm DB",
+    "name_ar": "Upright Row - Single Arm DB (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "dumbbell"
+    ]
+  },
+  {
+    "id": "UB019",
+    "name_en": "Upright Row - Cable",
+    "name_ar": "Upright Row - Cable (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, side delts.",
+    "description_ar": "تمرين back يركز على Upper traps, side delts.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "low-cable"
+    ]
+  },
+  {
+    "id": "UB020",
+    "name_en": "Upright Row - Rope",
+    "name_ar": "Upright Row - Rope (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, side delts.",
+    "description_ar": "تمرين back يركز على Upper traps, side delts.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "low-cable-+-rope"
+    ]
+  },
+  {
+    "id": "UB021",
+    "name_en": "Upright Row - Smith Machine",
+    "name_ar": "Upright Row - Smith Machine (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, side delts.",
+    "description_ar": "تمرين back يركز على Upper traps, side delts.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "smith-machine"
+    ]
+  },
+  {
+    "id": "UB022",
+    "name_en": "High Pull",
+    "name_ar": "High Pull (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, power.",
+    "description_ar": "تمرين back يركز على Upper traps, power.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB023",
+    "name_en": "Snatch Grip High Pull",
+    "name_ar": "Snatch Grip High Pull (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, power.",
+    "description_ar": "تمرين back يركز على Upper traps, power.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB024",
+    "name_en": "Muscle Snatch",
+    "name_ar": "Muscle Snatch (AR)",
+    "description_en": "A back exercise focusing on the Upper traps, shoulders.",
+    "description_ar": "تمرين back يركز على Upper traps, shoulders.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB025",
+    "name_en": "Face Pull - Rope",
+    "name_ar": "Face Pull - Rope (AR)",
+    "description_en": "A back exercise focusing on the Mid/lower traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid/lower traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "high-cable-+-rope"
+    ]
+  },
+  {
+    "id": "UB026",
+    "name_en": "Face Pull - Single Arm",
+    "name_ar": "Face Pull - Single Arm (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "UB027",
+    "name_en": "Face Pull - Pause Rep",
+    "name_ar": "Face Pull - Pause Rep (AR)",
+    "description_en": "A back exercise focusing on the Mid/lower traps.",
+    "description_ar": "تمرين back يركز على Mid/lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "high-cable-+-rope"
+    ]
+  },
+  {
+    "id": "UB028",
+    "name_en": "Face Pull - Low to High",
+    "name_ar": "Face Pull - Low to High (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "low-cable-+-rope"
+    ]
+  },
+  {
+    "id": "UB029",
+    "name_en": "Face Pull - Band",
+    "name_ar": "Face Pull - Band (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band"
+    ]
+  },
+  {
+    "id": "UB030",
+    "name_en": "Face Pull - Band (single arm)",
+    "name_ar": "Face Pull - Band (single arm) (AR)",
+    "description_en": "A back exercise focusing on the Mid traps.",
+    "description_ar": "تمرين back يركز على Mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band"
+    ]
+  },
+  {
+    "id": "UB031",
+    "name_en": "Face Pull to External Rotation",
+    "name_ar": "Face Pull to External Rotation (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rotator cuff.",
+    "description_ar": "تمرين back يركز على Mid traps, rotator cuff.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "high-cable-+-rope"
+    ]
+  },
+  {
+    "id": "UB032",
+    "name_en": "Prone Y Raise",
+    "name_ar": "Prone Y Raise (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bench-(prone)"
+    ]
+  },
+  {
+    "id": "UB033",
+    "name_en": "Prone T Raise",
+    "name_ar": "Prone T Raise (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bench-(prone)"
+    ]
+  },
+  {
+    "id": "UB034",
+    "name_en": "Prone W Raise",
+    "name_ar": "Prone W Raise (AR)",
+    "description_en": "A back exercise focusing on the Mid/lower traps.",
+    "description_ar": "تمرين back يركز على Mid/lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bench-(prone)"
+    ]
+  },
+  {
+    "id": "UB035",
+    "name_en": "Y-T-W Complex",
+    "name_ar": "Y-T-W Complex (AR)",
+    "description_en": "A back exercise focusing on the All traps.",
+    "description_ar": "تمرين back يركز على All traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bench-(prone)"
+    ]
+  },
+  {
+    "id": "UB036",
+    "name_en": "Prone I Raise",
+    "name_ar": "Prone I Raise (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bench-(prone)"
+    ]
+  },
+  {
+    "id": "UB037",
+    "name_en": "Bent-Over Row - Wide Grip",
+    "name_ar": "Bent-Over Row - Wide Grip (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB038",
+    "name_en": "DB Row - Elbow Out",
+    "name_ar": "DB Row - Elbow Out (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "db-+-bench"
+    ]
+  },
+  {
+    "id": "UB039",
+    "name_en": "Seated Cable Row - Wide",
+    "name_ar": "Seated Cable Row - Wide (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "cable-+-wide-bar"
+    ]
+  },
+  {
+    "id": "UB040",
+    "name_en": "Seated Cable Row - Face Pull Grip",
+    "name_ar": "Seated Cable Row - Face Pull Grip (AR)",
+    "description_en": "A back exercise focusing on the Mid traps.",
+    "description_ar": "تمرين back يركز على Mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "cable-+-rope"
+    ]
+  },
+  {
+    "id": "UB041",
+    "name_en": "Chest-Supported Row - Wide",
+    "name_ar": "Chest-Supported Row - Wide (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "db-+-incline"
+    ]
+  },
+  {
+    "id": "UB042",
+    "name_en": "TRX Row - Wide Grip",
+    "name_ar": "TRX Row - Wide Grip (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "TRX"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "trx"
+    ]
+  },
+  {
+    "id": "UB043",
+    "name_en": "Inverted Row - Wide Grip",
+    "name_ar": "Inverted Row - Wide Grip (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bar"
+    ]
+  },
+  {
+    "id": "UB044",
+    "name_en": "Meadows Row (trap focus)",
+    "name_ar": "Meadows Row (trap focus) (AR)",
+    "description_en": "A back exercise focusing on the Mid traps.",
+    "description_ar": "تمرين back يركز على Mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "landmine"
+    ]
+  },
+  {
+    "id": "UB045",
+    "name_en": "Trap Bar Row",
+    "name_ar": "Trap Bar Row (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "trap-bar"
+    ]
+  },
+  {
+    "id": "UB046",
+    "name_en": "Chest-Supported T-Bar Row",
+    "name_ar": "Chest-Supported T-Bar Row (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machine"
+    ]
+  },
+  {
+    "id": "UB047",
+    "name_en": "Machine Row - Wide Grip",
+    "name_ar": "Machine Row - Wide Grip (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machine"
+    ]
+  },
+  {
+    "id": "UB048",
+    "name_en": "Barbell Row - Pause at Top",
+    "name_ar": "Barbell Row - Pause at Top (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB049",
+    "name_en": "Snatch Grip Row",
+    "name_ar": "Snatch Grip Row (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "UB050",
+    "name_en": "Meadows Shrug Row",
+    "name_ar": "Meadows Shrug Row (AR)",
+    "description_en": "A back exercise focusing on the Upper/mid traps.",
+    "description_ar": "تمرين back يركز على Upper/mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "landmine"
+    ]
+  },
+  {
+    "id": "UB051",
+    "name_en": "Scapular Pull-Up",
+    "name_ar": "Scapular Pull-Up (AR)",
+    "description_en": "A back exercise focusing on the Lower traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Lower traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "PULL_UP_BAR"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "pull-up-bar"
+    ]
+  },
+  {
+    "id": "UB052",
+    "name_en": "Wide Grip Pull-Up (upper back focus)",
+    "name_ar": "Wide Grip Pull-Up (upper back focus) (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids, mid traps.",
+    "description_ar": "تمرين back يركز على Rhomboids, mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "PULL_UP_BAR"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "pull-up-bar"
+    ]
+  },
+  {
+    "id": "UB053",
+    "name_en": "Behind Neck Pull-Up",
+    "name_ar": "Behind Neck Pull-Up (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "PULL_UP_BAR"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "pull-up-bar"
+    ]
+  },
+  {
+    "id": "UB054",
+    "name_en": "Lat Pulldown - Behind Neck",
+    "name_ar": "Lat Pulldown - Behind Neck (AR)",
+    "description_en": "A back exercise focusing on the Mid traps.",
+    "description_ar": "تمرين back يركز على Mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "cable"
+    ]
+  },
+  {
+    "id": "UB055",
+    "name_en": "Lat Pulldown - Wide (squeeze)",
+    "name_ar": "Lat Pulldown - Wide (squeeze) (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids, mid traps.",
+    "description_ar": "تمرين back يركز على Rhomboids, mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "cable"
+    ]
+  },
+  {
+    "id": "UB056",
+    "name_en": "Straight Arm Pulldown (scapular focus)",
+    "name_ar": "Straight Arm Pulldown (scapular focus) (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "UB057",
+    "name_en": "Pull-Up - Scapular Squeeze",
+    "name_ar": "Pull-Up - Scapular Squeeze (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids.",
+    "description_ar": "تمرين back يركز على Rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "PULL_UP_BAR"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "pull-up-bar"
+    ]
+  },
+  {
+    "id": "UB058",
+    "name_en": "Cable Pullover - Squeeze",
+    "name_ar": "Cable Pullover - Squeeze (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "high-cable"
+    ]
+  },
+  {
+    "id": "UB059",
+    "name_en": "Lat Pulldown - Pause at Bottom",
+    "name_ar": "Lat Pulldown - Pause at Bottom (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids, traps.",
+    "description_ar": "تمرين back يركز على Rhomboids, traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "cable"
+    ]
+  },
+  {
+    "id": "UB060",
+    "name_en": "Archer Pull-Up",
+    "name_ar": "Archer Pull-Up (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids.",
+    "description_ar": "تمرين back يركز على Rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [
+      "BACK",
+      "BICEPS"
+    ],
+    "equipment": [
+      "PULL_UP_BAR"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "pull-up-bar"
+    ]
+  },
+  {
+    "id": "UB061",
+    "name_en": "Machine Shrug",
+    "name_ar": "Machine Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "shrug-machine"
+    ]
+  },
+  {
+    "id": "UB062",
+    "name_en": "Machine Shrug - Single Arm",
+    "name_ar": "Machine Shrug - Single Arm (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machine"
+    ]
+  },
+  {
+    "id": "UB063",
+    "name_en": "Hammer Strength Shrug",
+    "name_ar": "Hammer Strength Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "plate-loaded"
+    ]
+  },
+  {
+    "id": "UB064",
+    "name_en": "Rear Delt Machine",
+    "name_ar": "Rear Delt Machine (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids, rear delts.",
+    "description_ar": "تمرين back يركز على Rhomboids, rear delts.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "pec-deck-(reverse)"
+    ]
+  },
+  {
+    "id": "UB065",
+    "name_en": "Rear Delt Machine - Pause Rep",
+    "name_ar": "Rear Delt Machine - Pause Rep (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids.",
+    "description_ar": "تمرين back يركز على Rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machine"
+    ]
+  },
+  {
+    "id": "UB066",
+    "name_en": "Machine Row - High Position",
+    "name_ar": "Machine Row - High Position (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machine"
+    ]
+  },
+  {
+    "id": "UB067",
+    "name_en": "Cable Face Pull Machine",
+    "name_ar": "Cable Face Pull Machine (AR)",
+    "description_en": "A back exercise focusing on the Mid traps.",
+    "description_ar": "تمرين back يركز على Mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machine"
+    ]
+  },
+  {
+    "id": "UB068",
+    "name_en": "Iso-Lateral Shrug",
+    "name_ar": "Iso-Lateral Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machine"
+    ]
+  },
+  {
+    "id": "UB069",
+    "name_en": "Smith Machine Shrug - Pause",
+    "name_ar": "Smith Machine Shrug - Pause (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "smith-machine"
+    ]
+  },
+  {
+    "id": "UB070",
+    "name_en": "Seated Shrug Machine",
+    "name_ar": "Seated Shrug Machine (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machine"
+    ]
+  },
+  {
+    "id": "UB071",
+    "name_en": "Scapular Push-Up",
+    "name_ar": "Scapular Push-Up (AR)",
+    "description_en": "A back exercise focusing on the Lower traps, serratus.",
+    "description_ar": "تمرين back يركز على Lower traps, serratus.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "none"
+    ]
+  },
+  {
+    "id": "UB072",
+    "name_en": "Prone Y Raise (floor)",
+    "name_ar": "Prone Y Raise (floor) (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "none"
+    ]
+  },
+  {
+    "id": "UB073",
+    "name_en": "Prone T Raise (floor)",
+    "name_ar": "Prone T Raise (floor) (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "none"
+    ]
+  },
+  {
+    "id": "UB074",
+    "name_en": "Prone W Raise (floor)",
+    "name_ar": "Prone W Raise (floor) (AR)",
+    "description_en": "A back exercise focusing on the Mid/lower traps.",
+    "description_ar": "تمرين back يركز على Mid/lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "none"
+    ]
+  },
+  {
+    "id": "UB075",
+    "name_en": "Superman - Arms in Y",
+    "name_ar": "Superman - Arms in Y (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "none"
+    ]
+  },
+  {
+    "id": "UB076",
+    "name_en": "Prone Cobra",
+    "name_ar": "Prone Cobra (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "none"
+    ]
+  },
+  {
+    "id": "UB077",
+    "name_en": "Wall Slide",
+    "name_ar": "Wall Slide (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "wall"
+    ]
+  },
+  {
+    "id": "UB078",
+    "name_en": "TRX Y-T-W",
+    "name_ar": "TRX Y-T-W (AR)",
+    "description_en": "A back exercise focusing on the All traps.",
+    "description_ar": "تمرين back يركز على All traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "TRX"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "trx"
+    ]
+  },
+  {
+    "id": "UB079",
+    "name_en": "Band Face Pull",
+    "name_ar": "Band Face Pull (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band"
+    ]
+  },
+  {
+    "id": "UB080",
+    "name_en": "Band Pull-Apart",
+    "name_ar": "Band Pull-Apart (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids, mid traps.",
+    "description_ar": "تمرين back يركز على Rhomboids, mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band"
+    ]
+  },
+  {
+    "id": "UB081",
+    "name_en": "Band Pull-Apart - High",
+    "name_ar": "Band Pull-Apart - High (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band-(overhead)"
+    ]
+  },
+  {
+    "id": "UB082",
+    "name_en": "Band Shrug",
+    "name_ar": "Band Shrug (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band"
+    ]
+  },
+  {
+    "id": "UB083",
+    "name_en": "Band Y Raise",
+    "name_ar": "Band Y Raise (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band"
+    ]
+  },
+  {
+    "id": "UB084",
+    "name_en": "Band Row - High",
+    "name_ar": "Band Row - High (AR)",
+    "description_en": "A back exercise focusing on the Mid traps, rhomboids.",
+    "description_ar": "تمرين back يركز على Mid traps, rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band-(high-anchor)"
+    ]
+  },
+  {
+    "id": "UB085",
+    "name_en": "Shrug Hold (top)",
+    "name_ar": "Shrug Hold (top) (AR)",
+    "description_en": "A back exercise focusing on the Upper traps.",
+    "description_ar": "تمرين back يركز على Upper traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BARBELL",
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell",
+      "db"
+    ]
+  },
+  {
+    "id": "UB086",
+    "name_en": "Face Pull Hold",
+    "name_ar": "Face Pull Hold (AR)",
+    "description_en": "A back exercise focusing on the Mid traps.",
+    "description_ar": "تمرين back يركز على Mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "cable"
+    ]
+  },
+  {
+    "id": "UB087",
+    "name_en": "Prone Y Hold",
+    "name_ar": "Prone Y Hold (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "floor"
+    ]
+  },
+  {
+    "id": "UB088",
+    "name_en": "Band Pull-Apart Hold",
+    "name_ar": "Band Pull-Apart Hold (AR)",
+    "description_en": "A back exercise focusing on the Rhomboids.",
+    "description_ar": "تمرين back يركز على Rhomboids.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "band"
+    ]
+  },
+  {
+    "id": "UB089",
+    "name_en": "Row Hold (contracted)",
+    "name_ar": "Row Hold (contracted) (AR)",
+    "description_en": "A back exercise focusing on the Mid traps.",
+    "description_ar": "تمرين back يركز على Mid traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "CABLES",
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "cable",
+      "db"
+    ]
+  },
+  {
+    "id": "UB090",
+    "name_en": "Wall Angel (arms up)",
+    "name_ar": "Wall Angel (arms up) (AR)",
+    "description_en": "A back exercise focusing on the Lower traps.",
+    "description_ar": "تمرين back يركز على Lower traps.",
+    "category": "BACK",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "wall"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "dumbbells"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "barbell"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "cables"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "machines"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bands"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A back exercise focusing on the muscles.",
+    "description_ar": "تمرين back يركز على muscles.",
+    "category": "BACK",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "back",
+      "bodyweight"
+    ]
+  }
+]

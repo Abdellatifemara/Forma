@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Param, Query, Body, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Param, Query, Body, UseGuards, CacheKey, CacheTTL } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { TrainersService } from './trainers.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
@@ -18,6 +18,8 @@ export class TrainersController {
   @ApiQuery({ name: 'specialization', required: false })
   @ApiQuery({ name: 'minRating', required: false, type: Number })
   @ApiQuery({ name: 'maxPrice', required: false, type: Number })
+  @CacheKey('search_trainers')
+  @CacheTTL(300)
   async searchTrainers(
     @Query('query') query?: string,
     @Query('specialization') specialization?: string,
@@ -39,6 +41,8 @@ export class TrainersController {
   @Public()
   @Get(':id')
   @ApiOperation({ summary: 'Get trainer profile by ID' })
+  @CacheKey('get_trainer_')
+  @CacheTTL(300)
   async getTrainer(@Param('id') id: string) {
     return this.trainersService.getTrainerById(id);
   }

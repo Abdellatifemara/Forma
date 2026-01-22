@@ -1,4 +1,4 @@
-import { Controller, Get, Put, Delete, Body, UseGuards, HttpCode, HttpStatus } from '@nestjs/common';
+import { Controller, Get, Put, Delete, Body, UseGuards, HttpCode, HttpStatus, CacheKey, CacheTTL } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { UsersService } from './users.service';
 import { UpdateUserDto } from './dto/update-user.dto';
@@ -17,6 +17,8 @@ export class UsersController {
   @Get('me')
   @ApiOperation({ summary: 'Get current user profile' })
   @ApiResponse({ status: 200, description: 'Returns user profile' })
+  @CacheKey('get_profile_')
+  @CacheTTL(300)
   async getProfile(@CurrentUser() user: User) {
     const fullUser = await this.usersService.findById(user.id);
     const { passwordHash, ...result } = fullUser!;
@@ -50,6 +52,8 @@ export class UsersController {
   @Get('me/stats')
   @ApiOperation({ summary: 'Get user statistics summary' })
   @ApiResponse({ status: 200, description: 'Returns user stats' })
+  @CacheKey('get_stats_')
+  @CacheTTL(300)
   async getStats(@CurrentUser() user: User) {
     return this.usersService.getStats(user.id);
   }

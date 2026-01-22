@@ -1,4 +1,5 @@
 import { useAuthStore } from '../store/auth';
+import { supabase } from './supabase';
 
 const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:3001/api';
 
@@ -26,7 +27,8 @@ class ApiClient {
 
     // Add auth token if available and not skipped
     if (!skipAuth) {
-      const accessToken = useAuthStore.getState().accessToken;
+      const { data: { session } } = await supabase.auth.getSession();
+      const accessToken = session?.access_token
       if (accessToken) {
         headers['Authorization'] = `Bearer ${accessToken}`;
       }
@@ -39,23 +41,6 @@ class ApiClient {
         ...fetchOptions,
         headers,
       });
-
-      // Handle 401 - Unauthorized
-      if (response.status === 401) {
-        // Try to refresh token
-        const refreshed = await this.refreshToken();
-        if (refreshed) {
-          // Retry request with new token
-          const newAccessToken = useAuthStore.getState().accessToken;
-          headers['Authorization'] = `Bearer ${newAccessToken}`;
-          const retryResponse = await fetch(url, { ...fetchOptions, headers });
-          return this.handleResponse<T>(retryResponse);
-        } else {
-          // Logout if refresh failed
-          useAuthStore.getState().logout();
-          throw new ApiError('Session expired', 401);
-        }
-      }
 
       return this.handleResponse<T>(response);
     } catch (error) {
@@ -78,28 +63,6 @@ class ApiClient {
     }
 
     return data;
-  }
-
-  private async refreshToken(): Promise<boolean> {
-    const refreshToken = useAuthStore.getState().refreshToken;
-    if (!refreshToken) return false;
-
-    try {
-      const response = await fetch(`${this.baseUrl}/auth/refresh`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ refreshToken }),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        useAuthStore.getState().setTokens(data.accessToken, data.refreshToken);
-        return true;
-      }
-      return false;
-    } catch {
-      return false;
-    }
   }
 
   // HTTP methods
@@ -152,30 +115,6 @@ export class ApiError extends Error {
 // Create API client instance
 export const api = new ApiClient(API_BASE_URL);
 
-// ============================================
-// Auth API
-// ============================================
-
-export const authApi = {
-  login: (data: { email: string; password: string }) =>
-    api.post('/auth/login', data, { skipAuth: true }),
-
-  register: (data: { email: string; password: string; name: string }) =>
-    api.post('/auth/register', data, { skipAuth: true }),
-
-  logout: () => api.post('/auth/logout'),
-
-  me: () => api.get('/auth/me'),
-
-  forgotPassword: (email: string) =>
-    api.post('/auth/forgot-password', { email }, { skipAuth: true }),
-
-  resetPassword: (token: string, password: string) =>
-    api.post('/auth/reset-password', { token, password }, { skipAuth: true }),
-
-  updateProfile: (data: Record<string, unknown>) =>
-    api.patch('/auth/profile', data),
-};
 
 // ============================================
 // Workouts API

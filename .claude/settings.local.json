@@ -31,7 +31,19 @@
       "Bash(dir:*)",
       "Bash(git init:*)",
       "Bash(git remote add:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Forma fitness app - Full implementation\n\nFeatures:\n- Mobile App \\(React Native/Expo\\) with auth, onboarding, workouts, nutrition, trainers\n- Web App \\(Next.js\\) with user dashboard, trainer dashboard, admin dashboard\n- Backend API \\(NestJS + Prisma + PostgreSQL\\)\n- Shared packages \\(TypeScript types, utilities\\)\n- Docker configuration with nginx reverse proxy\n- CI/CD workflows for GitHub Actions\n- Comprehensive testing setup\n\nDesign System:\n- Primary Color: Forma Teal \\(#00D4AA\\)\n- Font: Cairo \\(Arabic support\\)\n- Theme: Dark mode first\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git config:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Gemini CLI GitHub Action workflow\n\nEnables @gemini-cli mentions in issues and PRs to trigger AI code editing\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)",
+      "Bash(gh repo invite:*)",
+      "Bash(where:*)",
+      "Bash(gcloud auth:*)",
+      "Bash(start:*)",
+      "Bash(cmd /c \"dir %APPDATA%\\\\gcloud\"\")",
+      "Bash(python:*)"
     ]
   }
 }

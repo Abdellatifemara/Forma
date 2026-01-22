@@ -1,0 +1,3476 @@
+[
+  {
+    "id": "UC001",
+    "name_en": "Incline Barbell Bench Press",
+    "name_ar": "Incline Barbell Bench Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC002",
+    "name_en": "Incline Barbell Press - Wide Grip",
+    "name_ar": "Incline Barbell Press - Wide Grip (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC003",
+    "name_en": "Incline Barbell Press - Close Grip",
+    "name_ar": "Incline Barbell Press - Close Grip (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, triceps.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, triceps.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC004",
+    "name_en": "Incline Barbell Press - Pause Rep",
+    "name_ar": "Incline Barbell Press - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC005",
+    "name_en": "Incline Barbell Press - Tempo 3-1-2",
+    "name_ar": "Incline Barbell Press - Tempo 3-1-2 (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC006",
+    "name_en": "Incline Barbell Press - 1.5 Rep",
+    "name_ar": "Incline Barbell Press - 1.5 Rep (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC007",
+    "name_en": "Reverse Grip Incline Press",
+    "name_ar": "Reverse Grip Incline Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC008",
+    "name_en": "Incline Smith Machine Press",
+    "name_ar": "Incline Smith Machine Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "smith-machine"
+    ]
+  },
+  {
+    "id": "UC009",
+    "name_en": "Incline Smith Press - Wide Grip",
+    "name_ar": "Incline Smith Press - Wide Grip (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "smith-machine"
+    ]
+  },
+  {
+    "id": "UC010",
+    "name_en": "Landmine Press - Standing",
+    "name_ar": "Landmine Press - Standing (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-landmine"
+    ]
+  },
+  {
+    "id": "UC011",
+    "name_en": "Landmine Press - Kneeling",
+    "name_ar": "Landmine Press - Kneeling (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS",
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-landmine"
+    ]
+  },
+  {
+    "id": "UC012",
+    "name_en": "Landmine Press - Single Arm",
+    "name_ar": "Landmine Press - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS",
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "barbell-landmine"
+    ]
+  },
+  {
+    "id": "UC013",
+    "name_en": "Incline Dumbbell Press",
+    "name_ar": "Incline Dumbbell Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC014",
+    "name_en": "Incline DB Press - Neutral Grip",
+    "name_ar": "Incline DB Press - Neutral Grip (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC015",
+    "name_en": "Incline DB Press - Pronated Grip",
+    "name_ar": "Incline DB Press - Pronated Grip (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC016",
+    "name_en": "Incline DB Press - Alternating",
+    "name_ar": "Incline DB Press - Alternating (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC017",
+    "name_en": "Incline DB Press - Single Arm",
+    "name_ar": "Incline DB Press - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS",
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC018",
+    "name_en": "Incline DB Press - Twist (Rotation)",
+    "name_ar": "Incline DB Press - Twist (Rotation) (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC019",
+    "name_en": "Incline DB Press - Squeeze at Top",
+    "name_ar": "Incline DB Press - Squeeze at Top (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC020",
+    "name_en": "Incline DB Press - Pause Rep",
+    "name_ar": "Incline DB Press - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC021",
+    "name_en": "Incline DB Press - Floor Press",
+    "name_ar": "Incline DB Press - Floor Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db"
+    ]
+  },
+  {
+    "id": "UC022",
+    "name_en": "Incline Dumbbell Fly",
+    "name_ar": "Incline Dumbbell Fly (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC023",
+    "name_en": "Incline DB Fly - Pause at Stretch",
+    "name_ar": "Incline DB Fly - Pause at Stretch (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC024",
+    "name_en": "Incline DB Fly - Partial (Top Half)",
+    "name_ar": "Incline DB Fly - Partial (Top Half) (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC025",
+    "name_en": "Incline Squeeze Press",
+    "name_ar": "Incline Squeeze Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, inner chest.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, inner chest.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC026",
+    "name_en": "Incline DB Pullover",
+    "name_ar": "Incline DB Pullover (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, serratus.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, serratus.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC027",
+    "name_en": "Incline Hex Press",
+    "name_ar": "Incline Hex Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, inner chest.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, inner chest.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC028",
+    "name_en": "Svend Press - Incline",
+    "name_ar": "Svend Press - Incline (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, inner chest.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, inner chest.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "weight-plate"
+    ]
+  },
+  {
+    "id": "UC029",
+    "name_en": "Incline Around the Worlds",
+    "name_ar": "Incline Around the Worlds (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "light-db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC030",
+    "name_en": "Incline DB Fly to Press",
+    "name_ar": "Incline DB Fly to Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db-+-incline-bench"
+    ]
+  },
+  {
+    "id": "UC031",
+    "name_en": "Low-to-High Cable Fly",
+    "name_ar": "Low-to-High Cable Fly (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulleys"
+    ]
+  },
+  {
+    "id": "UC032",
+    "name_en": "Low-to-High Cable Fly - Single Arm",
+    "name_ar": "Low-to-High Cable Fly - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulley"
+    ]
+  },
+  {
+    "id": "UC033",
+    "name_en": "Low-to-High Cable Fly - Pause Rep",
+    "name_ar": "Low-to-High Cable Fly - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulleys"
+    ]
+  },
+  {
+    "id": "UC034",
+    "name_en": "Low-to-High Cable Fly - 21s",
+    "name_ar": "Low-to-High Cable Fly - 21s (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulleys"
+    ]
+  },
+  {
+    "id": "UC035",
+    "name_en": "Incline Cable Press",
+    "name_ar": "Incline Cable Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulleys-+-bench"
+    ]
+  },
+  {
+    "id": "UC036",
+    "name_en": "Incline Cable Press - Single Arm",
+    "name_ar": "Incline Cable Press - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulley-+-bench"
+    ]
+  },
+  {
+    "id": "UC037",
+    "name_en": "Standing Incline Cable Press",
+    "name_ar": "Standing Incline Cable Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS",
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulleys"
+    ]
+  },
+  {
+    "id": "UC038",
+    "name_en": "Cable Crossover - Low-to-High",
+    "name_ar": "Cable Crossover - Low-to-High (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "pulleys"
+    ]
+  },
+  {
+    "id": "UC039",
+    "name_en": "Incline Cable Squeeze Press",
+    "name_ar": "Incline Cable Squeeze Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BENCH"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "pulleys-+-bench"
+    ]
+  },
+  {
+    "id": "UC040",
+    "name_en": "Low Cable Fly - Kneeling",
+    "name_ar": "Low Cable Fly - Kneeling (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulleys"
+    ]
+  },
+  {
+    "id": "UC041",
+    "name_en": "Incline Cable Pullover",
+    "name_ar": "Incline Cable Pullover (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, serratus.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, serratus.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "BACK"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "high-pulley-+-bench"
+    ]
+  },
+  {
+    "id": "UC042",
+    "name_en": "Cable Upward Punch",
+    "name_ar": "Cable Upward Punch (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "low-pulley"
+    ]
+  },
+  {
+    "id": "UC043",
+    "name_en": "Incline Chest Press Machine",
+    "name_ar": "Incline Chest Press Machine (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machine"
+    ]
+  },
+  {
+    "id": "UC044",
+    "name_en": "Incline Chest Press - Single Arm",
+    "name_ar": "Incline Chest Press - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machine"
+    ]
+  },
+  {
+    "id": "UC045",
+    "name_en": "Incline Chest Press - Pause Rep",
+    "name_ar": "Incline Chest Press - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machine"
+    ]
+  },
+  {
+    "id": "UC046",
+    "name_en": "Incline Chest Press - Drop Set",
+    "name_ar": "Incline Chest Press - Drop Set (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machine"
+    ]
+  },
+  {
+    "id": "UC047",
+    "name_en": "Incline Pec Deck",
+    "name_ar": "Incline Pec Deck (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machine"
+    ]
+  },
+  {
+    "id": "UC048",
+    "name_en": "Hammer Strength Incline Press",
+    "name_ar": "Hammer Strength Incline Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "hammer-machine"
+    ]
+  },
+  {
+    "id": "UC049",
+    "name_en": "Converging Incline Press Machine",
+    "name_ar": "Converging Incline Press Machine (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, inner chest.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, inner chest.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machine"
+    ]
+  },
+  {
+    "id": "UC050",
+    "name_en": "Incline Chest Fly Machine",
+    "name_ar": "Incline Chest Fly Machine (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "MACHINES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "machine"
+    ]
+  },
+  {
+    "id": "UC051",
+    "name_en": "Decline Push-Up (feet elevated)",
+    "name_ar": "Decline Push-Up (feet elevated) (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC052",
+    "name_en": "Decline Push-Up - Wide",
+    "name_ar": "Decline Push-Up - Wide (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC053",
+    "name_en": "Decline Push-Up - Close/Diamond",
+    "name_ar": "Decline Push-Up - Close/Diamond (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, triceps.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, triceps.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC054",
+    "name_en": "Decline Push-Up - Staggered Hands",
+    "name_ar": "Decline Push-Up - Staggered Hands (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC055",
+    "name_en": "Decline Push-Up - Single Leg",
+    "name_ar": "Decline Push-Up - Single Leg (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC056",
+    "name_en": "Decline Push-Up - Pause Rep",
+    "name_ar": "Decline Push-Up - Pause Rep (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC057",
+    "name_en": "Decline Push-Up - Tempo 3-1-2",
+    "name_ar": "Decline Push-Up - Tempo 3-1-2 (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC058",
+    "name_en": "Decline Pike Push-Up",
+    "name_ar": "Decline Pike Push-Up (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, anterior delt.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, anterior delt.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC059",
+    "name_en": "Decline Plyometric Push-Up",
+    "name_ar": "Decline Plyometric Push-Up (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC060",
+    "name_en": "Decline Push-Up - Archer",
+    "name_ar": "Decline Push-Up - Archer (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC061",
+    "name_en": "Incline Wall Push-Up",
+    "name_ar": "Incline Wall Push-Up (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "wall"
+    ]
+  },
+  {
+    "id": "UC062",
+    "name_en": "Decline Ring Push-Up",
+    "name_ar": "Decline Ring Push-Up (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "TRX"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "rings-+-elevation"
+    ]
+  },
+  {
+    "id": "UC063",
+    "name_en": "Decline Push-Up Plus",
+    "name_ar": "Decline Push-Up Plus (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec, serratus.",
+    "description_ar": "تمرين chest يركز على Clavicular pec, serratus.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC064",
+    "name_en": "Decline Spiderman Push-Up",
+    "name_ar": "Decline Spiderman Push-Up (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS",
+      "LEGS"
+    ],
+    "equipment": [
+      "BENCH",
+      "NONE"
+    ],
+    "difficulty": "ADVANCED",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bench",
+      "box"
+    ]
+  },
+  {
+    "id": "UC065",
+    "name_en": "Band Low-to-High Fly",
+    "name_ar": "Band Low-to-High Fly (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-anchor"
+    ]
+  },
+  {
+    "id": "UC066",
+    "name_en": "Incline Band Press",
+    "name_ar": "Incline Band Press (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-anchor"
+    ]
+  },
+  {
+    "id": "UC067",
+    "name_en": "Band Incline Press - Single Arm",
+    "name_ar": "Band Incline Press - Single Arm (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-anchor"
+    ]
+  },
+  {
+    "id": "UC068",
+    "name_en": "Band Decline Push-Up (added resistance)",
+    "name_ar": "Band Decline Push-Up (added resistance) (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band"
+    ]
+  },
+  {
+    "id": "UC069",
+    "name_en": "Band Crossover - Low-to-High",
+    "name_ar": "Band Crossover - Low-to-High (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-anchor"
+    ]
+  },
+  {
+    "id": "UC070",
+    "name_en": "Band Upward Punch",
+    "name_ar": "Band Upward Punch (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "FULL_BODY"
+    ],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "band-+-anchor"
+    ]
+  },
+  {
+    "id": "UC071",
+    "name_en": "Incline Press - Bottom Hold",
+    "name_ar": "Incline Press - Bottom Hold (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "DUMBBELLS",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db",
+      "bb"
+    ]
+  },
+  {
+    "id": "UC072",
+    "name_en": "Incline Press - Mid Hold",
+    "name_ar": "Incline Press - Mid Hold (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "DUMBBELLS",
+      "NONE"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "db",
+      "bb"
+    ]
+  },
+  {
+    "id": "UC073",
+    "name_en": "Incline Fly - Stretch Hold",
+    "name_ar": "Incline Fly - Stretch Hold (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "light-db"
+    ]
+  },
+  {
+    "id": "UC074",
+    "name_en": "Low Cable Fly - Peak Contraction Hold",
+    "name_ar": "Low Cable Fly - Peak Contraction Hold (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "cables"
+    ]
+  },
+  {
+    "id": "UC075",
+    "name_en": "Decline Push-Up Hold (bottom)",
+    "name_ar": "Decline Push-Up Hold (bottom) (AR)",
+    "description_en": "A chest exercise focusing on the Clavicular pec.",
+    "description_ar": "تمرين chest يركز على Clavicular pec.",
+    "category": "CHEST",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight-only"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "DUMBBELLS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "dumbbells-only"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "CABLES"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "cables"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "RESISTANCE_BANDS"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bands-only"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "NONE"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "full-gym"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "",
+    "name_en": "Unknown Exercise",
+    "name_ar": "Unknown (AR)",
+    "description_en": "A chest exercise focusing on the muscles.",
+    "description_ar": "تمرين chest يركز على muscles.",
+    "category": "CHEST",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "chest",
+      "bodyweight"
+    ]
+  }
+]

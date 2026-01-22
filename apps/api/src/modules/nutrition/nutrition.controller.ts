@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Delete, Param, Query, Body, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Delete, Param, Query, Body, UseGuards, CacheKey, CacheTTL } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { NutritionService } from './nutrition.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
@@ -20,6 +20,8 @@ export class NutritionController {
   @ApiQuery({ name: 'isEgyptian', required: false, type: Boolean })
   @ApiQuery({ name: 'page', required: false, type: Number })
   @ApiQuery({ name: 'pageSize', required: false, type: Number })
+  @CacheKey('search_foods')
+  @CacheTTL(300)
   async searchFoods(
     @Query('query') query?: string,
     @Query('category') category?: string,
@@ -39,6 +41,8 @@ export class NutritionController {
   @Public()
   @Get('foods/categories')
   @ApiOperation({ summary: 'Get food categories with counts' })
+  @CacheKey('get_food_categories')
+  @CacheTTL(3600)
   async getCategories() {
     return this.nutritionService.getCategories();
   }
@@ -46,6 +50,8 @@ export class NutritionController {
   @Public()
   @Get('foods/:id')
   @ApiOperation({ summary: 'Get food by ID' })
+  @CacheKey('get_food_by_id_')
+  @CacheTTL(3600)
   async getFoodById(@Param('id') id: string) {
     return this.nutritionService.getFoodById(id);
   }
@@ -53,6 +59,8 @@ export class NutritionController {
   @Public()
   @Get('foods/barcode/:barcode')
   @ApiOperation({ summary: 'Get food by barcode' })
+  @CacheKey('get_food_by_barcode_')
+  @CacheTTL(3600)
   async getFoodByBarcode(@Param('barcode') barcode: string) {
     return this.nutritionService.getFoodByBarcode(barcode);
   }
