@@ -257,4 +257,108 @@ export class NutritionService {
 
     await this.prisma.mealLog.delete({ where: { id: logId } });
   }
+
+  // Get daily log in the format frontend expects
+  async getDailyLog(userId: string, date: Date) {
+    const startOfDay = new Date(date);
+    startOfDay.setHours(0, 0, 0, 0);
+    const endOfDay = new Date(date);
+    endOfDay.setHours(23, 59, 59, 999);
+
+    const meals = await this.prisma.mealLog.findMany({
+      where: {
+        userId,
+        loggedAt: {
+          gte: startOfDay,
+          lte: endOfDay,
+        },
+      },
+      include: {
+        foods: {
+          include: { food: true },
+        },
+      },
+      orderBy: { loggedAt: 'asc' },
+    });
+
+    const totals = meals.reduce(
+      (acc, meal) => ({
+        calories: acc.calories + (meal.totalCalories || 0),
+        protein: acc.protein + (meal.totalProteinG || 0),
+        carbs: acc.carbs + (meal.totalCarbsG || 0),
+        fat: acc.fat + (meal.totalFatG || 0),
+      }),
+      { calories: 0, protein: 0, carbs: 0, fat: 0 },
+    );
+
+    // Get user targets
+    const user = await this.prisma.user.findUnique({
+      where: { id: userId },
+    });
+
+    // Calculate default targets based on user data
+    const bmr = user?.currentWeightKg
+      ? user.gender === 'MALE'
+        ? 10 * user.currentWeightKg + 6.25 * (user.heightCm || 170) - 5 * 30 + 5
+        : 10 * user.currentWeightKg + 6.25 * (user.heightCm || 160) - 5 * 30 - 161
+      : 2000;
+
+    const activityMultiplier = {
+      SEDENTARY: 1.2,
+      LIGHTLY_ACTIVE: 1.375,
+      MODERATELY_ACTIVE: 1.55,
+      VERY_ACTIVE: 1.725,
+      EXTREMELY_ACTIVE: 1.9,
+    };
+
+    const tdee = bmr * (activityMultiplier[user?.activityLevel || 'MODERATELY_ACTIVE'] || 1.55);
+
+    let targetCalories = tdee;
+    if (user?.fitnessGoal === 'LOSE_WEIGHT') {
+      targetCalories = tdee - 500;
+    } else if (user?.fitnessGoal === 'BUILD_MUSCLE') {
+      targetCalories = tdee + 300;
+    }
+
+    const targetProtein = Math.round(user?.currentWeightKg ? user.currentWeightKg * 2 : 150);
+    const targetFat = Math.round(targetCalories * 0.25 / 9);
+    const targetCarbs = Math.round((targetCalories - targetProtein * 4 - targetFat * 9) / 4);
+
+    // Transform meals to match frontend MealLog type
+    const transformedMeals = meals.map(meal => ({
+      id: meal.id,
+      mealType: meal.mealType,
+      loggedAt: meal.loggedAt.toISOString(),
+      foods: meal.foods.map(f => ({
+        id: f.id,
+        name: f.food.nameEn,
+        servings: f.servings,
+        calories: f.food.calories * f.servings,
+        protein: f.food.proteinG * f.servings,
+        carbs: f.food.carbsG * f.servings,
+        fat: f.food.fatG * f.servings,
+      })),
+      totalCalories: meal.totalCalories || 0,
+      totalProtein: meal.totalProteinG || 0,
+      totalCarbs: meal.totalCarbsG || 0,
+      totalFat: meal.totalFatG || 0,
+    }));
+
+    return {
+      date: date.toISOString().split('T')[0],
+      meals: transformedMeals,
+      totals: {
+        calories: Math.round(totals.calories),
+        protein: Math.round(totals.protein),
+        carbs: Math.round(totals.carbs),
+        fat: Math.round(totals.fat),
+      },
+      goals: {
+        calories: Math.round(targetCalories),
+        protein: targetProtein,
+        carbs: targetCarbs,
+        fat: targetFat,
+      },
+    };
+  }
 }

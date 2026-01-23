@@ -1,6 +1,8 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { WorkoutPlan, Workout, WorkoutLog, WorkoutStatus, Prisma } from '@prisma/client';
+import { CreateWorkoutPlanDto } from './dto/create-workout-plan.dto';
+import { LogWorkoutDto } from './dto/log-workout.dto';
 
 @Injectable()
 export class WorkoutsService {
@@ -301,6 +303,140 @@ export class WorkoutsService {
       },
       orderBy: { completedAt: 'desc' },
       take: limit,
+    });
+  }
+
+  // Create Workout Plan
+  async createPlan(userId: string, dto: CreateWorkoutPlanDto) {
+    // Deactivate existing active plans
+    await this.prisma.workoutPlan.updateMany({
+      where: { userId, isActive: true },
+      data: { isActive: false },
+    });
+
+    // Create the plan with nested workouts and exercises
+    const plan = await this.prisma.workoutPlan.create({
+      data: {
+        userId,
+        nameEn: dto.name,
+        nameAr: dto.name,
+        descriptionEn: dto.description,
+        descriptionAr: dto.description,
+        difficulty: dto.difficulty || 'INTERMEDIATE',
+        goal: dto.goal || 'BUILD_MUSCLE',
+        durationWeeks: 4,
+        daysPerWeek: dto.workouts.length,
+        isActive: true,
+        startDate: new Date(),
+        workouts: {
+          create: dto.workouts.map((workout, dayIndex) => ({
+            weekNumber: 1,
+            dayOfWeek: dayIndex + 1,
+            nameEn: workout.name,
+            nameAr: workout.name,
+            focusMuscles: [],
+            exercises: {
+              create: workout.exercises.map((ex, order) => ({
+                exerciseId: ex.exerciseId,
+                order: order + 1,
+                sets: ex.sets.length,
+                reps: parseInt(ex.sets[0]?.reps) || 10,
+                restSeconds: 60,
+              })),
+            },
+          })),
+        },
+      },
+      include: {
+        workouts: {
+          include: {
+            exercises: {
+              include: { exercise: true },
+              orderBy: { order: 'asc' },
+            },
+          },
+        },
+      },
+    });
+
+    return plan;
+  }
+
+  // Log Manual Workout
+  async logManualWorkout(userId: string, dto: LogWorkoutDto) {
+    const now = new Date();
+    const startTime = new Date(now.getTime() - dto.durationMinutes * 60 * 1000);
+
+    // Create the workout log
+    const log = await this.prisma.workoutLog.create({
+      data: {
+        userId,
+        workoutId: null,
+        manualName: dto.name,
+        scheduledDate: now,
+        startedAt: startTime,
+        completedAt: now,
+        status: 'COMPLETED',
+        durationMinutes: dto.durationMinutes,
+        notes: dto.notes,
+      },
+    });
+
+    // Log each exercise
+    let totalVolume = 0;
+
+    for (const exercise of dto.exercises) {
+      // Try to find exercise by ID or name
+      let exerciseRecord = null;
+
+      if (exercise.exerciseId) {
+        exerciseRecord = await this.prisma.exercise.findUnique({
+          where: { id: exercise.exerciseId },
+        });
+      }
+
+      if (!exerciseRecord && exercise.name) {
+        exerciseRecord = await this.prisma.exercise.findFirst({
+          where: { nameEn: { contains: exercise.name, mode: 'insensitive' } },
+        });
+      }
+
+      if (exerciseRecord) {
+        const exerciseLog = await this.prisma.exerciseLog.create({
+          data: {
+            workoutLogId: log.id,
+            exerciseId: exerciseRecord.id,
+          },
+        });
+
+        // Log each set
+        for (let i = 0; i < exercise.sets.length; i++) {
+          const set = exercise.sets[i];
+          await this.prisma.setLog.create({
+            data: {
+              exerciseLogId: exerciseLog.id,
+              setNumber: i + 1,
+              reps: set.reps,
+              weightKg: set.weightKg,
+            },
+          });
+          totalVolume += (set.weightKg || 0) * set.reps;
+        }
+      }
+    }
+
+    // Update total volume and calories
+    return this.prisma.workoutLog.update({
+      where: { id: log.id },
+      data: {
+        totalVolume,
+        caloriesBurned: dto.durationMinutes * 5,
+      },
+      include: {
+        exerciseLogs: {
+          include: { exercise: true, sets: true },
+        },
+      },
     });
   }
 }

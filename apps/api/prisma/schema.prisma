@@ -416,7 +416,10 @@ model WorkoutExercise {
 model WorkoutLog {
   id              String        @id @default(cuid())
   userId          String
-  workoutId       String
+  workoutId       String?       // Optional for manual workout logging
+
+  // Manual workout name (when no workout plan is used)
+  manualName      String?
 
   // Timing
   scheduledDate   DateTime
@@ -437,7 +440,7 @@ model WorkoutLog {
 
   // Relations
   user            User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  workout         Workout       @relation(fields: [workoutId], references: [id])
+  workout         Workout?      @relation(fields: [workoutId], references: [id])
   exerciseLogs    ExerciseLog[]
 
   @@index([userId])

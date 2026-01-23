@@ -144,7 +144,7 @@ export default function TrainerDetailPage() {
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       {/* Back Button */}
       <Button variant="ghost" size="sm" asChild>
-        <Link href="/app/trainers">
+        <Link href="/trainers">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Trainers
         </Link>

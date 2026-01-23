@@ -110,6 +110,19 @@ export class NutritionController {
   }
 
   @UseGuards(JwtAuthGuard)
+  @Get('daily')
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Get daily nutrition log with meals' })
+  @ApiQuery({ name: 'date', required: false, description: 'Date in YYYY-MM-DD format' })
+  async getDailyLog(
+    @CurrentUser() user: User,
+    @Query('date') dateStr?: string,
+  ) {
+    const date = dateStr ? new Date(dateStr) : new Date();
+    return this.nutritionService.getDailyLog(user.id, date);
+  }
+
+  @UseGuards(JwtAuthGuard)
   @Delete('meals/:id')
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Delete a meal log' })

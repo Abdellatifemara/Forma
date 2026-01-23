@@ -158,9 +158,12 @@ export const workoutsApi = {
 
   getPlan: (id: string) => api.get<WorkoutPlan>(`/workouts/plans/${id}`),
 
+  createPlan: (data: CreateWorkoutPlanData) =>
+    api.post<WorkoutPlan>('/workouts/plans', data),
+
   getTodayWorkout: () => api.get<Workout>('/workouts/today'),
 
-  logWorkout: (data: WorkoutLogData) =>
+  logWorkout: (data: ManualWorkoutLogData) =>
     api.post<WorkoutLog>('/workouts/log', data),
 
   getHistory: (params?: { page?: number; limit?: number }) =>
@@ -230,7 +233,25 @@ export const trainersApi = {
   getClients: () => api.get<Client[]>('/trainers/me/clients'),
 
   getEarnings: (params?: { month?: string }) =>
-    api.get<EarningsData>('/trainers/me/earnings', params),
+    api.get<EarningsData>('/trainers/me/earnings', params as Record<string, string>),
+    
+  getDashboardStats: () => api.get<TrainerDashboardStats>('/trainers/me/dashboard-stats'),
+  
+  getUpcomingSessions: () => api.get<TrainerSession[]>('/trainers/me/sessions/upcoming'),
+  
+  getRecentMessages: () => api.get<TrainerMessage[]>('/trainers/me/messages/recent'),
+};
+
+// Admin API
+export const adminApi = {
+  getDashboardStats: () => api.get<AdminDashboardStats>('/admin/stats'),
+  getRecentActivity: () => api.get<AdminActivity[]>('/admin/activity'),
+  getPendingApprovals: () => api.get<AdminApproval[]>('/admin/approvals'),
+  getSystemHealth: () => api.get<SystemHealthMetric[]>('/admin/health'),
+  getUsers: (params?: { page?: number; limit?: number; query?: string }) =>
+    api.get<PaginatedResponse<User>>('/admin/users', params as Record<string, string>),
+  updateUser: (userId: string, data: Partial<User>) =>
+    api.patch<User>(`/admin/users/${userId}`, data),
 };
 
 // Types
@@ -301,6 +322,33 @@ interface SetLogData {
   rpe?: number;
 }
 
+// Create Workout Plan types
+interface CreateWorkoutPlanData {
+  name: string;
+  description?: string;
+  difficulty?: 'BEGINNER' | 'INTERMEDIATE' | 'ADVANCED' | 'EXPERT';
+  goal?: 'LOSE_WEIGHT' | 'BUILD_MUSCLE' | 'MAINTAIN' | 'IMPROVE_HEALTH' | 'INCREASE_STRENGTH' | 'IMPROVE_ENDURANCE';
+  workouts: {
+    name: string;
+    exercises: {
+      exerciseId: string;
+      sets: { reps: string; weight?: string }[];
+    }[];
+  }[];
+}
+
+// Manual Workout Log types
+interface ManualWorkoutLogData {
+  name: string;
+  durationMinutes: number;
+  exercises: {
+    name: string;
+    exerciseId?: string;
+    sets: { reps: number; weightKg?: number }[];
+  }[];
+  notes?: string;
+}
+
 interface WorkoutLog {
   id: string;
   workoutId: string;
@@ -319,6 +367,7 @@ interface Exercise {
   equipment: string;
   difficulty: string;
   instructions: string[];
+  tips?: string[];
   videoUrl?: string;
   imageUrl?: string;
 }
@@ -353,7 +402,7 @@ interface MealLogData {
 }
 
 interface MealLog {
-  id: string;
+  id:string;
   mealType: string;
   foods: { food: Food; servings: number }[];
   totalCalories: number;
@@ -494,6 +543,57 @@ interface Transaction {
   status: string;
 }
 
+interface TrainerDashboardStats {
+  activeClients: { value: number; change: number };
+  monthlyRevenue: { value: number; change: number };
+  sessionCompletionRate: { value: number; change: number };
+  averageRating: { value: number; reviewCount: number };
+}
+
+interface TrainerSession {
+  id: string;
+  clientName: string;
+  time: string;
+  type: 'Video Call' | 'Check-in' | 'Form Review';
+}
+
+interface TrainerMessage {
+  id: string;
+  from: string;
+  message: string;
+  time: string;
+}
+
+interface AdminDashboardStats {
+  totalUsers: { value: number; change: number };
+  activeTrainers: { value: number; change: number };
+  monthlyRevenue: { value: number; change: number };
+  activeSessions: { value: number; };
+}
+
+interface AdminActivity {
+  id: string;
+  action: string;
+  user: string;
+  target?: string;
+  createdAt: string;
+  type: 'user' | 'trainer' | 'payment' | 'content' | 'system';
+}
+
+interface AdminApproval {
+  id: string;
+  name: string;
+  type: 'Trainer Application' | 'Content Review';
+  submittedAt: string;
+}
+
+interface SystemHealthMetric {
+  name: string;
+  value: number;
+  unit: string;
+  status: 'healthy' | 'warning' | 'critical';
+}
+
 interface PaginatedResponse<T> {
   data: T[];
   meta: {
@@ -503,6 +603,7 @@ interface PaginatedResponse<T> {
     totalPages: number;
   };
 }
+
 
 // Auth types
 interface RegisterData {
@@ -558,4 +659,10 @@ export type {
   RegisterData,
   LoginData,
   AuthResponse,
+  CreateWorkoutPlanData,
+  ManualWorkoutLogData,
+  AdminDashboardStats,
+  AdminActivity,
+  AdminApproval,
+  SystemHealthMetric,
 };

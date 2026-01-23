@@ -2,10 +2,25 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 // Routes that require authentication
-const protectedRoutes = ['/app', '/trainer', '/admin'];
+const protectedRoutes = [
+  '/dashboard',
+  '/workouts',
+  '/nutrition',
+  '/progress',
+  '/profile',
+  '/chat',
+  '/settings',
+  '/exercises',
+  '/trainers',
+  '/become-trainer',
+  '/achievements',
+  '/onboarding',
+  '/trainer',
+  '/admin',
+];
 
 // Routes that should redirect to dashboard if authenticated
-const authRoutes = ['/login', '/signup', '/forgot-password'];
+const authRoutes = ['/login', '/signup', '/forgot-password', '/'];
 
 // Role-based route protection
 const roleRoutes = {
@@ -24,8 +39,10 @@ export function middleware(request: NextRequest) {
     pathname.startsWith(route)
   );
 
-  // Check if route is an auth route
-  const isAuthRoute = authRoutes.some((route) => pathname.startsWith(route));
+  // Check if route is an auth route (exact match for '/', prefix match for others)
+  const isAuthRoute = authRoutes.some((route) =>
+    route === '/' ? pathname === '/' : pathname.startsWith(route)
+  );
 
   // Redirect to login if accessing protected route without token
   if (isProtectedRoute && !token) {
@@ -36,7 +53,7 @@ export function middleware(request: NextRequest) {
 
   // Redirect to dashboard if accessing auth route with token
   if (isAuthRoute && token) {
-    return NextResponse.redirect(new URL('/app/dashboard', request.url));
+    return NextResponse.redirect(new URL('/dashboard', request.url));
   }
 
   // For role-based routes, we'll handle this client-side

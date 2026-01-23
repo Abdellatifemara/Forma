@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone',
   images: {
     domains: ['cdn.formaeg.com', 'localhost'],
     formats: ['image/avif', 'image/webp'],
@@ -30,7 +31,7 @@ const nextConfig = {
     return [
       {
         source: '/app',
-        destination: '/app/workouts',
+        destination: '/workouts',
         permanent: false,
       },
       {

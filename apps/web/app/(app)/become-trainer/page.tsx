@@ -140,7 +140,7 @@ export default function BecomeTrainerPage() {
 
   const handleSubmit = () => {
     console.log('Submitting application:', formData);
-    router.push('/app/become-trainer/success');
+    router.push('/become-trainer/success');
   };
 
   const progress = ((currentStep + 1) / (steps.length + 1)) * 100;

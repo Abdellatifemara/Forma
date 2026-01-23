@@ -45,10 +45,10 @@ export default function TrainerApplicationSuccessPage() {
 
           <div className="mt-8 space-y-3">
             <Button variant="forma" className="w-full" asChild>
-              <Link href="/app/dashboard">Return to Dashboard</Link>
+              <Link href="/dashboard">Return to Dashboard</Link>
             </Button>
             <Button variant="outline" className="w-full" asChild>
-              <Link href="/app/profile">View Your Profile</Link>
+              <Link href="/profile">View Your Profile</Link>
             </Button>
           </div>
         </CardContent>

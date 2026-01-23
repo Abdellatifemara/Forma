@@ -1,7 +1,7 @@
 'use client';
 
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { workoutsApi, type WorkoutLogData } from '@/lib/api';
+import { workoutsApi, type ManualWorkoutLogData } from '@/lib/api';
 
 export const workoutKeys = {
   all: ['workouts'] as const,
@@ -45,7 +45,7 @@ export function useLogWorkout() {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: (data: WorkoutLogData) => workoutsApi.logWorkout(data),
+    mutationFn: (data: ManualWorkoutLogData) => workoutsApi.logWorkout(data),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: workoutKeys.all });
     },

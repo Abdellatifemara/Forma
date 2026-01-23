@@ -19,11 +19,11 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const navLinks = [
-  { href: '/app/dashboard', icon: Home, label: 'Home' },
-  { href: '/app/workouts', icon: Dumbbell, label: 'Workouts' },
-  { href: '/app/nutrition', icon: Utensils, label: 'Nutrition' },
-  { href: '/app/progress', icon: TrendingUp, label: 'Progress' },
-  { href: '/app/profile', icon: User, label: 'Profile' },
+  { href: '/dashboard', icon: Home, label: 'Home' },
+  { href: '/workouts', icon: Dumbbell, label: 'Workouts' },
+  { href: '/nutrition', icon: Utensils, label: 'Nutrition' },
+  { href: '/progress', icon: TrendingUp, label: 'Progress' },
+  { href: '/profile', icon: User, label: 'Profile' },
 ];
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
@@ -42,7 +42,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             >
               {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
-            <Link href="/app/dashboard" className="flex items-center space-x-2">
+            <Link href="/dashboard" className="flex items-center space-x-2">
               <div className="h-7 w-7 rounded-lg bg-gradient-to-br from-forma-teal to-forma-teal-light" />
               <span className="font-bold">Forma</span>
             </Link>
@@ -50,7 +50,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 
           <div className="flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild>
-              <Link href="/app/chat">
+              <Link href="/chat">
                 <MessageCircle className="h-5 w-5" />
               </Link>
             </Button>

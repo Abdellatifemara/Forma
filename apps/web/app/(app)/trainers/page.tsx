@@ -345,7 +345,7 @@ export default function TrainersMarketplacePage() {
                     </div>
                   </div>
                   <Button variant="forma" className="mt-4 w-full" asChild>
-                    <Link href={`/app/trainers/${trainer.id}`}>
+                    <Link href={`/trainers/${trainer.id}`}>
                       View Profile
                       <ChevronRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -418,7 +418,7 @@ export default function TrainersMarketplacePage() {
                         ))}
                       </div>
                       <Button variant="outline" size="sm" asChild>
-                        <Link href={`/app/trainers/${trainer.id}`}>
+                        <Link href={`/trainers/${trainer.id}`}>
                           View Profile
                         </Link>
                       </Button>

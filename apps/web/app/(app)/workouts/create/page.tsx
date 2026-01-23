@@ -3,10 +3,11 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Plus, Trash2, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { Plus, Trash2, X, Loader2 } from 'lucide-react';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { ExerciseSearchDialog } from './ExerciseSearchDialog';
-import { type Exercise } from '@/lib/api';
+import { workoutsApi, type Exercise } from '@/lib/api';
 
 // New types for better structure
 interface WorkoutSet {
@@ -29,8 +30,11 @@ interface WorkoutDay {
 
 
 export default function CreateWorkoutPlanPage() {
+  const router = useRouter();
   const [planName, setPlanName] = useState('');
   const [workouts, setWorkouts] = useState<WorkoutDay[]>([{ id: 1, name: 'Day 1', exercises: [] }]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const addWorkoutDay = () => {
     setWorkouts([...workouts, { id: Date.now(), name: `Day ${workouts.length + 1}`, exercises: [] }]);
@@ -117,12 +121,40 @@ export default function CreateWorkoutPlanPage() {
     ));
   };
 
-  const handleSavePlan = () => {
-    // TODO: Implement API call to save the plan
-    // const planData = { name: planName, workouts };
-    // await workoutsApi.createPlan(planData);
-    console.log('Saving plan:', { name: planName, workouts });
-    // Maybe show a toast notification on success
+  const handleSavePlan = async () => {
+    if (!planName.trim()) {
+      setError('Please enter a plan name');
+      return;
+    }
+
+    if (workouts.length === 0) {
+      setError('Please add at least one workout day');
+      return;
+    }
+
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const planData = {
+        name: planName,
+        workouts: workouts.map(w => ({
+          name: w.name,
+          exercises: w.exercises.map(ex => ({
+            exerciseId: ex.exercise.id,
+            sets: ex.sets.map(s => ({ reps: s.reps, weight: s.weight || undefined })),
+          })),
+        })),
+      };
+
+      await workoutsApi.createPlan(planData);
+      router.push('/workouts');
+    } catch (err) {
+      console.error('Failed to save plan:', err);
+      setError(err instanceof Error ? err.message : 'Failed to save plan. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -214,8 +246,28 @@ export default function CreateWorkoutPlanPage() {
           <Button variant="outline" onClick={addWorkoutDay}>
             <Plus className="mr-2 h-4 w-4" /> Add Day / Workout
           </Button>
-          
-          <Button size="lg" className="w-full" onClick={handleSavePlan}>Save Plan</Button>
+
+          {error && (
+            <div className="rounded-md bg-red-50 p-3 text-sm text-red-600">
+              {error}
+            </div>
+          )}
+
+          <Button
+            size="lg"
+            className="w-full"
+            onClick={handleSavePlan}
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Saving...
+              </>
+            ) : (
+              'Save Plan'
+            )}
+          </Button>
         </CardContent>
       </Card>
     </div>

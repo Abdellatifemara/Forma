@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function TrainerApplyRedirect() {
-  redirect('/app/become-trainer');
+  redirect('/become-trainer');
 }

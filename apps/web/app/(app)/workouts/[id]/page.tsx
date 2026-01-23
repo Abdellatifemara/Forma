@@ -296,7 +296,7 @@ export default function ActiveWorkoutPage() {
       duration: elapsedTime,
       totalVolume,
     });
-    router.push('/app/workouts');
+    router.push('/workouts');
   };
 
   return (
@@ -576,7 +576,7 @@ export default function ActiveWorkoutPage() {
             </Button>
             <Button
               variant="destructive"
-              onClick={() => router.push('/app/workouts')}
+              onClick={() => router.push('/workouts')}
             >
               Exit Without Saving
             </Button>

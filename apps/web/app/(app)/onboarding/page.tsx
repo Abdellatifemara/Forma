@@ -79,7 +79,7 @@ export default function OnboardingPage() {
     setIsLoading(true);
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    router.push('/app/dashboard');
+    router.push('/dashboard');
   };
 
   const canProceed = () => {

@@ -33,17 +33,17 @@ const menuItems = [
   {
     section: 'Account',
     items: [
-      { icon: User, label: 'Edit Profile', href: '/app/profile/edit' },
-      { icon: CreditCard, label: 'Subscription', href: '/app/profile/subscription', badge: 'Pro' },
-      { icon: Lock, label: 'Privacy & Security', href: '/app/profile/security' },
-      { icon: Bell, label: 'Notifications', href: '/app/profile/notifications' },
+      { icon: User, label: 'Edit Profile', href: '/profile/edit' },
+      { icon: CreditCard, label: 'Subscription', href: '/profile/subscription', badge: 'Pro' },
+      { icon: Lock, label: 'Privacy & Security', href: '/profile/security' },
+      { icon: Bell, label: 'Notifications', href: '/profile/notifications' },
     ],
   },
   {
     section: 'Preferences',
     items: [
-      { icon: Settings, label: 'App Settings', href: '/app/profile/settings' },
-      { icon: Dumbbell, label: 'Workout Preferences', href: '/app/profile/workout-preferences' },
+      { icon: Settings, label: 'App Settings', href: '/profile/settings' },
+      { icon: Dumbbell, label: 'Workout Preferences', href: '/profile/workout-preferences' },
     ],
   },
   {
@@ -81,7 +81,7 @@ export default function ProfilePage() {
               <p className="mt-1 text-sm text-muted-foreground">Member since March 2024</p>
             </div>
             <Button variant="outline" asChild>
-              <Link href="/app/profile/edit">Edit</Link>
+              <Link href="/profile/edit">Edit</Link>
             </Button>
           </div>
 
@@ -113,7 +113,7 @@ export default function ProfilePage() {
         <CardHeader className="flex flex-row items-center justify-between pb-2">
           <CardTitle className="text-base font-semibold">Achievements</CardTitle>
           <Button variant="ghost" size="sm" asChild>
-            <Link href="/app/achievements">
+            <Link href="/achievements">
               View All
               <ChevronRight className="ml-1 h-4 w-4" />
             </Link>

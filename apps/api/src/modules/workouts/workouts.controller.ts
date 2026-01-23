@@ -5,6 +5,8 @@ import { WorkoutsService } from './workouts.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
+import { CreateWorkoutPlanDto } from './dto/create-workout-plan.dto';
+import { LogWorkoutDto } from './dto/log-workout.dto';
 
 @ApiTags('workouts')
 @ApiBearerAuth()
@@ -20,6 +22,16 @@ export class WorkoutsController {
   @CacheTTL(300)
   async getPlans(@CurrentUser() user: User) {
     return this.workoutsService.getUserPlans(user.id);
+  }
+
+  @Post('plans')
+  @ApiOperation({ summary: 'Create a new workout plan' })
+  @ApiResponse({ status: 201, description: 'Plan created successfully' })
+  async createPlan(
+    @CurrentUser() user: User,
+    @Body() createPlanDto: CreateWorkoutPlanDto,
+  ) {
+    return this.workoutsService.createPlan(user.id, createPlanDto);
   }
 
   @Get('plans/active')
@@ -107,5 +119,15 @@ export class WorkoutsController {
     @Query('limit') limit?: number,
   ) {
     return this.workoutsService.getWorkoutHistory(user.id, limit || 20);
+  }
+
+  @Post('log')
+  @ApiOperation({ summary: 'Log a manual workout session' })
+  @ApiResponse({ status: 201, description: 'Workout logged successfully' })
+  async logManualWorkout(
+    @CurrentUser() user: User,
+    @Body() logWorkoutDto: LogWorkoutDto,
+  ) {
+    return this.workoutsService.logManualWorkout(user.id, logWorkoutDto);
   }
 }

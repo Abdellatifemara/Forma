@@ -27,14 +27,14 @@ export default function EditProfilePage() {
     // TODO: Implement profile update API call
     await new Promise((resolve) => setTimeout(resolve, 1000));
     setIsLoading(false);
-    router.push('/app/profile');
+    router.push('/profile');
   };
 
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       <div className="flex items-center gap-4">
         <Button variant="ghost" size="icon" asChild>
-          <Link href="/app/profile">
+          <Link href="/profile">
             <ArrowLeft className="h-5 w-5" />
           </Link>
         </Button>
@@ -123,7 +123,7 @@ export default function EditProfilePage() {
                 )}
               </Button>
               <Button type="button" variant="outline" asChild>
-                <Link href="/app/profile">Cancel</Link>
+                <Link href="/profile">Cancel</Link>
               </Button>
             </div>
           </form>

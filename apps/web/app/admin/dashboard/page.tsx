@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import {
   Activity,
   DollarSign,
@@ -8,6 +9,7 @@ import {
   UserCheck,
   Dumbbell,
   AlertCircle,
+  Loader2,
 } from 'lucide-react';
 import { StatCard } from '@/components/dashboard/stat-card';
 import {
@@ -20,29 +22,53 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
+import { adminApi, type AdminDashboardStats, type AdminActivity, type AdminApproval, type SystemHealthMetric } from '@/lib/api';
 
-const recentActivity = [
-  { action: 'New user signup', user: 'Ahmed Mohamed', time: '2 minutes ago', type: 'user' },
-  { action: 'Trainer application', user: 'Fatma Ali', time: '15 minutes ago', type: 'trainer' },
-  { action: 'Subscription upgrade', user: 'Omar Hassan', time: '1 hour ago', type: 'payment' },
-  { action: 'Content report', user: 'System', time: '2 hours ago', type: 'alert' },
-  { action: 'New trainer approved', user: 'Admin', time: '3 hours ago', type: 'trainer' },
-];
-
-const pendingApprovals = [
-  { name: 'Fatma Ali', type: 'Trainer Application', submitted: '2 days ago' },
-  { name: 'Karim Ahmed', type: 'Trainer Application', submitted: '3 days ago' },
-  { name: 'Layla Mahmoud', type: 'Content Review', submitted: '1 day ago' },
-];
-
-const systemHealth = [
-  { name: 'API Response Time', value: 45, unit: 'ms', status: 'healthy' },
-  { name: 'Database Load', value: 23, unit: '%', status: 'healthy' },
-  { name: 'Storage Used', value: 67, unit: '%', status: 'warning' },
-  { name: 'Active Sessions', value: 1247, unit: '', status: 'healthy' },
-];
 
 export default function AdminDashboardPage() {
+  const [stats, setStats] = useState<AdminDashboardStats | null>(null);
+  const [activity, setActivity] = useState<AdminActivity[]>([]);
+  const [approvals, setApprovals] = useState<AdminApproval[]>([]);
+  const [health, setHealth] = useState<SystemHealthMetric[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchAdminData() {
+      setIsLoading(true);
+      try {
+        // These will fail for now, until the backend is implemented
+        const [statsRes, activityRes, approvalsRes, healthRes] = await Promise.all([
+          adminApi.getDashboardStats(),
+          adminApi.getRecentActivity(),
+          adminApi.getPendingApprovals(),
+          adminApi.getSystemHealth(),
+        ]);
+        setStats(statsRes);
+        setActivity(activityRes);
+        setApprovals(approvalsRes);
+        setHealth(healthRes);
+      } catch (error) {
+        console.error("Could not fetch admin data, API endpoints likely need to be implemented.", error);
+        // In a real app, you'd show an error message. For now, we'll show an empty state.
+        setStats(null);
+        setActivity([]);
+        setApprovals([]);
+        setHealth([]);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchAdminData();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex h-[50vh] items-center justify-center">
+        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+      </div>
+    );
+  }
+  
   return (
     <div className="space-y-6">
       {/* Page Header */}
@@ -57,28 +83,28 @@ export default function AdminDashboardPage() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <StatCard
           title="Total Users"
-          value="12,847"
-          change="+523 this month"
-          changeType="positive"
+          value={stats ? stats.totalUsers.value.toLocaleString() : 'N/A'}
+          change={stats ? `${stats.totalUsers.change >= 0 ? '+' : ''}${stats.totalUsers.change} this month` : ''}
+          changeType={stats && stats.totalUsers.change >= 0 ? 'positive' : 'negative'}
           icon={Users}
         />
         <StatCard
           title="Active Trainers"
-          value="156"
-          change="+12 this month"
-          changeType="positive"
+          value={stats ? stats.activeTrainers.value.toLocaleString() : 'N/A'}
+          change={stats ? `${stats.activeTrainers.change >= 0 ? '+' : ''}${stats.activeTrainers.change} this month` : ''}
+          changeType={stats && stats.activeTrainers.change >= 0 ? 'positive' : 'negative'}
           icon={UserCheck}
         />
         <StatCard
           title="Monthly Revenue"
-          value="1.2M EGP"
-          change="+18% vs last month"
-          changeType="positive"
+          value={stats ? `${(stats.monthlyRevenue.value / 1000000).toFixed(1)}M EGP` : 'N/A'}
+          change={stats ? `${stats.monthlyRevenue.change >= 0 ? '+' : ''}${stats.monthlyRevenue.change}% vs last month` : ''}
+          changeType={stats && stats.monthlyRevenue.change >= 0 ? 'positive' : 'negative'}
           icon={DollarSign}
         />
         <StatCard
           title="Active Sessions"
-          value="1,247"
+          value={stats ? stats.activeSessions.value.toLocaleString() : 'N/A'}
           change="Real-time"
           changeType="neutral"
           icon={Activity}
@@ -95,36 +121,42 @@ export default function AdminDashboardPage() {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {recentActivity.map((activity, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between rounded-lg border p-4"
-                >
-                  <div className="flex items-center gap-4">
-                    <div
-                      className={`rounded-full p-2 ${
-                        activity.type === 'user'
-                          ? 'bg-blue-500/10 text-blue-500'
-                          : activity.type === 'trainer'
-                          ? 'bg-forma-teal/10 text-forma-teal'
-                          : activity.type === 'payment'
-                          ? 'bg-green-500/10 text-green-500'
-                          : 'bg-yellow-500/10 text-yellow-500'
-                      }`}
-                    >
-                      {activity.type === 'user' && <Users className="h-4 w-4" />}
-                      {activity.type === 'trainer' && <Dumbbell className="h-4 w-4" />}
-                      {activity.type === 'payment' && <DollarSign className="h-4 w-4" />}
-                      {activity.type === 'alert' && <AlertCircle className="h-4 w-4" />}
+              {activity.length > 0 ? (
+                activity.map((activityItem) => (
+                  <div
+                    key={activityItem.id}
+                    className="flex items-center justify-between rounded-lg border p-4"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div
+                        className={`rounded-full p-2 ${
+                          activityItem.type === 'user'
+                            ? 'bg-blue-500/10 text-blue-500'
+                            : activityItem.type === 'trainer'
+                            ? 'bg-forma-teal/10 text-forma-teal'
+                            : activityItem.type === 'payment'
+                            ? 'bg-green-500/10 text-green-500'
+                            : 'bg-yellow-500/10 text-yellow-500'
+                        }`}
+                      >
+                        {activityItem.type === 'user' && <Users className="h-4 w-4" />}
+                        {activityItem.type === 'trainer' && <Dumbbell className="h-4 w-4" />}
+                        {activityItem.type === 'payment' && <DollarSign className="h-4 w-4" />}
+                        {activityItem.type === 'system' && <AlertCircle className="h-4 w-4" />}
+                      </div>
+                      <div>
+                        <p className="font-medium">{activityItem.action}</p>
+                        <p className="text-sm text-muted-foreground">{activityItem.user}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-medium">{activity.action}</p>
-                      <p className="text-sm text-muted-foreground">{activity.user}</p>
-                    </div>
+                    <span className="text-sm text-muted-foreground">{new Date(activityItem.createdAt).toLocaleTimeString()}</span>
                   </div>
-                  <span className="text-sm text-muted-foreground">{activity.time}</span>
+                ))
+              ) : (
+                <div className="py-8 text-center text-muted-foreground">
+                  <p>No recent activity found.</p>
                 </div>
-              ))}
+              )}
             </div>
           </CardContent>
         </Card>
@@ -133,29 +165,37 @@ export default function AdminDashboardPage() {
         <Card>
           <CardHeader>
             <CardTitle>Pending Approvals</CardTitle>
-            <CardDescription>{pendingApprovals.length} items need review</CardDescription>
+            <CardDescription>
+              {approvals.length > 0 ? `${approvals.length} items need review` : 'No items to review'}
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {pendingApprovals.map((item, index) => (
-                <div
-                  key={index}
-                  className="rounded-lg border p-4"
-                >
-                  <div className="flex items-center justify-between">
-                    <p className="font-medium">{item.name}</p>
-                    <Badge variant="warning">{item.type}</Badge>
+              {approvals.length > 0 ? (
+                approvals.map((item) => (
+                  <div
+                    key={item.id}
+                    className="rounded-lg border p-4"
+                  >
+                    <div className="flex items-center justify-between">
+                      <p className="font-medium">{item.name}</p>
+                      <Badge variant="warning">{item.type}</Badge>
+                    </div>
+                    <p className="mt-1 text-sm text-muted-foreground">
+                      Submitted {new Date(item.submittedAt).toLocaleDateString()}
+                    </p>
+                    <div className="mt-3 flex gap-2">
+                      <Button size="sm" variant="forma">
+                        Review
+                      </Button>
+                    </div>
                   </div>
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    Submitted {item.submitted}
-                  </p>
-                  <div className="mt-3 flex gap-2">
-                    <Button size="sm" variant="forma">
-                      Review
-                    </Button>
-                  </div>
+                ))
+              ) : (
+                <div className="py-8 text-center text-muted-foreground">
+                  <p>The approval queue is empty.</p>
                 </div>
-              ))}
+              )}
             </div>
           </CardContent>
         </Card>
@@ -167,35 +207,41 @@ export default function AdminDashboardPage() {
             <CardDescription>Infrastructure monitoring</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {systemHealth.map((metric) => (
-                <div
-                  key={metric.name}
-                  className="rounded-lg border p-4"
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-medium">{metric.name}</span>
-                    <Badge
-                      variant={metric.status === 'healthy' ? 'forma' : 'warning'}
-                    >
-                      {metric.status}
-                    </Badge>
+            {health.length > 0 ? (
+              <div className="grid gap-4 sm:grid-cols-2">
+                {health.map((metric) => (
+                  <div
+                    key={metric.name}
+                    className="rounded-lg border p-4"
+                  >
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm font-medium">{metric.name}</span>
+                      <Badge
+                        variant={metric.status === 'healthy' ? 'forma' : 'warning'}
+                      >
+                        {metric.status}
+                      </Badge>
+                    </div>
+                    <p className="mt-2 text-2xl font-bold">
+                      {metric.value}
+                      <span className="text-sm font-normal text-muted-foreground">
+                        {' '}{metric.unit}
+                      </span>
+                    </p>
+                    {metric.unit === '%' && (
+                      <Progress
+                        value={metric.value}
+                        className="mt-2"
+                      />
+                    )}
                   </div>
-                  <p className="mt-2 text-2xl font-bold">
-                    {metric.value}
-                    <span className="text-sm font-normal text-muted-foreground">
-                      {' '}{metric.unit}
-                    </span>
-                  </p>
-                  {metric.unit === '%' && (
-                    <Progress
-                      value={metric.value}
-                      className="mt-2"
-                    />
-                  )}
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            ) : (
+              <div className="py-8 text-center text-muted-foreground">
+                <p>System health data is not available.</p>
+              </div>
+            )}
           </CardContent>
         </Card>
 

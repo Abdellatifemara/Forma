@@ -8,8 +8,9 @@ export class StatsService {
 
   // Weekly summary for dashboard
   async getWeeklySummary(userId: string) {
-    const now = new Date();
-    const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+    try {
+      const now = new Date();
+      const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
 
     // Get workout stats
     const workouts = await this.prisma.workoutLog.findMany({
@@ -84,10 +85,11 @@ export class StatsService {
       select: { weightKg: true },
     });
 
-    // Get streak
-    const streak = await this.prisma.streak.findUnique({
+    // Get streak (use findFirst to avoid errors if record doesn't exist)
+    const streak = await this.prisma.streak.findFirst({
       where: {
-        userId_type: { userId, type: 'workout' },
+        userId,
+        type: 'workout',
       },
     });
 
@@ -104,38 +106,44 @@ export class StatsService {
 
     const workoutsTarget = user?.workoutPlans[0]?.daysPerWeek || 4;
 
+    // Return in the format the frontend expects
     return {
-      workouts: {
-        completed: workouts.length,
-        target: workoutsTarget,
-        completionRate: Math.round((workouts.length / workoutsTarget) * 100),
-      },
-      volume: {
-        total: Math.round(totalVolume),
-        byMuscle: volumeByMuscle,
-        unit: 'kg',
-      },
-      nutrition: {
-        averageCalories: daysWithMeals > 0 ? Math.round(nutritionTotals.calories / daysWithMeals) : 0,
-        averageProtein: daysWithMeals > 0 ? Math.round(nutritionTotals.protein / daysWithMeals) : 0,
-        averageCarbs: daysWithMeals > 0 ? Math.round(nutritionTotals.carbs / daysWithMeals) : 0,
-        averageFat: daysWithMeals > 0 ? Math.round(nutritionTotals.fat / daysWithMeals) : 0,
-        daysLogged: daysWithMeals,
-      },
-      weight: {
-        current: latestWeight?.weightKg || null,
-        change: latestWeight?.weightKg && weekAgoWeight?.weightKg
-          ? Math.round((latestWeight.weightKg - weekAgoWeight.weightKg) * 10) / 10
-          : null,
-        trend: latestWeight?.weightKg && weekAgoWeight?.weightKg
-          ? latestWeight.weightKg < weekAgoWeight.weightKg ? 'down' : 'up'
-          : null,
-      },
-      streak: {
-        current: streak?.currentCount || 0,
-        longest: streak?.longestCount || 0,
+      workoutsCompleted: workouts.length,
+      totalVolume: Math.round(totalVolume),
+      caloriesAvg: daysWithMeals > 0 ? Math.round(nutritionTotals.calories / daysWithMeals) : 0,
+      proteinAvg: daysWithMeals > 0 ? Math.round(nutritionTotals.protein / daysWithMeals) : 0,
+      weightChange: latestWeight?.weightKg && weekAgoWeight?.weightKg
+        ? Math.round((latestWeight.weightKg - weekAgoWeight.weightKg) * 10) / 10
+        : 0,
+      streakDays: streak?.currentCount || 0,
+      // Include additional data for future use
+      _extended: {
+        workoutsTarget,
+        volumeByMuscle,
+        currentWeight: latestWeight?.weightKg || null,
+        longestStreak: streak?.longestCount || 0,
+        daysWithMeals,
       },
     };
+    } catch (error) {
+      console.error('Error getting weekly summary:', error);
+      // Return default values if there's an error
+      return {
+        workoutsCompleted: 0,
+        totalVolume: 0,
+        caloriesAvg: 0,
+        proteinAvg: 0,
+        weightChange: 0,
+        streakDays: 0,
+        _extended: {
+          workoutsTarget: 4,
+          volumeByMuscle: {},
+          currentWeight: null,
+          longestStreak: 0,
+          daysWithMeals: 0,
+        },
+      };
+    }
   }
 
   // Weight trend for charts

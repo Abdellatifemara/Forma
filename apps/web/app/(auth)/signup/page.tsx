@@ -99,7 +99,7 @@ export default function SignupPage() {
         experience: formData.experience,
       }));
 
-      router.push('/app/onboarding');
+      router.push('/onboarding');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Registration failed. Please try again.');
     } finally {

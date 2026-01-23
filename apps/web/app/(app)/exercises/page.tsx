@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import {
@@ -10,6 +10,7 @@ import {
   Play,
   ChevronRight,
   X,
+  Loader2,
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -56,7 +57,7 @@ const equipmentTypes = [
 
 const difficultyLevels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
 
-export default function ExercisesPage() {
+function ExercisesPageContent() {
   const searchParams = useSearchParams();
   const initialMuscle = searchParams.get('muscle');
 
@@ -415,5 +416,21 @@ export default function ExercisesPage() {
         </DialogContent>
       </Dialog>
     </div>
+  );
+}
+
+function ExercisesPageFallback() {
+  return (
+    <div className="flex h-[50vh] items-center justify-center pb-20 lg:ml-64 lg:pb-6">
+      <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+    </div>
+  );
+}
+
+export default function ExercisesPage() {
+  return (
+    <Suspense fallback={<ExercisesPageFallback />}>
+      <ExercisesPageContent />
+    </Suspense>
   );
 }
