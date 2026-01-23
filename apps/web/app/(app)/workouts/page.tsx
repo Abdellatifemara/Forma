@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Link from 'next/link';
 import {
   Calendar,
   ChevronLeft,
@@ -25,11 +26,18 @@ export default function WorkoutsPage() {
   const [plans, setPlans] = useState<WorkoutPlan[]>([]);
   const [history, setHistory] = useState<WorkoutLog[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [activePlanId, setActivePlanId] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchData() {
       setIsLoading(true);
       try {
+        // TODO: In the future, fetch the user's active plan ID here
+        // const profile = await usersApi.getProfile();
+        // if (profile.activePlanId) {
+        //   setActivePlanId(profile.activePlanId);
+        // }
+
         const [plansResponse, historyResponse] = await Promise.all([
           workoutsApi.getPlans(),
           workoutsApi.getHistory(),
@@ -45,6 +53,12 @@ export default function WorkoutsPage() {
     fetchData();
   }, []);
 
+  const handleStartPlan = async (planId: string) => {
+    // TODO: Call API to set active plan, e.g., usersApi.updateProfile({ activePlanId: planId })
+    // For now, just update the local state to give user feedback
+    setActivePlanId(planId);
+  };
+
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       {/* Header */}
@@ -53,10 +67,12 @@ export default function WorkoutsPage() {
           <h1 className="text-2xl font-bold">Workouts</h1>
           <p className="text-muted-foreground">Track and plan your training</p>
         </div>
-        <Button variant="forma">
-          <Plus className="mr-2 h-4 w-4" />
-          Log Workout
-        </Button>
+        <Link href="/workouts/log">
+          <Button variant="forma">
+            <Plus className="mr-2 h-4 w-4" />
+            Log Workout
+          </Button>
+        </Link>
       </div>
 
       <Tabs defaultValue="plans">
@@ -68,12 +84,13 @@ export default function WorkoutsPage() {
 
         <TabsContent value="plans" className="space-y-4">
           {plans.map((plan) => (
-            <Card key={plan.id}>
+            <Card key={plan.id} className={activePlanId === plan.id ? 'border-forma-teal' : ''}>
               <CardContent className="p-6">
                 <div className="flex items-start justify-between">
                   <div>
                     <div className="flex items-center gap-2">
                       <h3 className="font-semibold">{plan.name}</h3>
+                      {activePlanId === plan.id && <Badge variant="forma">Active</Badge>}
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">
                       {plan.description}
@@ -89,8 +106,11 @@ export default function WorkoutsPage() {
                       </span>
                     </div>
                   </div>
-                  <Button variant={'default'}>
-                    Start Plan
+                  <Button 
+                    variant={activePlanId === plan.id ? 'outline' : 'default'}
+                    onClick={() => activePlanId !== plan.id && handleStartPlan(plan.id)}
+                  >
+                    {activePlanId === plan.id ? 'View Plan' : 'Start Plan'}
                   </Button>
                 </div>
               </CardContent>
@@ -106,9 +126,11 @@ export default function WorkoutsPage() {
               <p className="mt-1 text-sm text-muted-foreground">
                 Build your own workout program from scratch
               </p>
-              <Button className="mt-4" variant="outline">
-                Create Plan
-              </Button>
+              <Link href="/workouts/create">
+                <Button className="mt-4" variant="outline">
+                  Create Plan
+                </Button>
+              </Link>
             </CardContent>
           </Card>
         </TabsContent>

@@ -41,10 +41,18 @@ User reported the web app is full of 404s and UI elements are not connected to t
     *   **Debounced Search:** Implemented a 300ms debounce on the search input to prevent excessive API calls while the user is typing.
     *   **URL-based Filtering:** The page now correctly uses the `muscle` URL query parameter to set the initial muscle group filter, making the links from the `/workouts` page functional.
 
+5.  **Implemented Placeholder Pages:**
+    *   **Workouts Page (`/workouts`):**
+        *   Made the "Start Plan" button interactive on the client-side to provide user feedback.
+        *   Created a new placeholder page for "Log Workout" at `/workouts/log` and linked the corresponding button.
+        *   Created a new placeholder page for "Create Plan" at `/workouts/create` and linked the corresponding button.
+    *   These changes make the workouts page more interactive and provide a clear structure for future feature development.
+
 ### Next Steps
-- Implement the functionality for the buttons on the `/workouts` and `/exercises` pages (Start Plan, View, Add to Workout, etc.).
+- Implement the backend logic for setting an active workout plan.
+- Implement the form submission logic for the "Log Workout" page.
+- Build out the full feature for creating a custom workout plan.
 - Re-implement the "This Week" schedule component on the `/workouts` page with data from the backend.
-- Continue checking other pages for similar issues.
 
 ### TODO for Claude
 - The backend API does not currently provide data for "Steps" or "Active Minutes". This functionality may need to be added to the backend or integrated from a third-party service (e.g., Google Fit, Apple Health).
@@ -53,3 +61,4 @@ User reported the web app is full of 404s and UI elements are not connected to t
 - The `workoutsApi.getHistory()` endpoint should include the `workoutName` in the response to avoid N+1 queries on the client.
 - An endpoint is needed to fetch the user's weekly workout schedule to populate the "This Week" component on the `/workouts` page.
 - An API to get exercise counts per muscle group would be useful for the `/workouts` page.
+- The `User` object in the backend should have a field for `activePlanId` to allow setting a workout plan as active.
