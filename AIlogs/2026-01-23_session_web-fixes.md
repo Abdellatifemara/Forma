@@ -1,58 +1,55 @@
-# Session: Web App Fixes - 2026-01-23
+# 2026-01-23 Session: Web Fixes
 
-## Summary
-Fixed multiple 404 errors and broken links on the Forma web app deployed to Vercel.
+## Objective
+User reported the web app is full of 404s and UI elements are not connected to the database. The goal is to make the UI/UX solid, fix broken links, and implement missing functionality where possible. If not possible, document for Claude.
 
-## Commits Made
+## Gemini Session Log
 
-### Commit 1: `5375af3` - Fix authentication, validation, and add missing pages
-- Added `/terms`, `/privacy`, `/cookies` pages
-- Fixed signup: real API integration, proper email validation, split name to firstName/lastName
-- Fixed login: real API integration, proper validation, token storage
-- Added auth API methods to `api.ts` with cookie-based token management
-- Updated dashboard with proper empty states (no more fake data)
-- Added Suspense boundary for login page useSearchParams
-- Added custom 404 and 500 error pages
+### Actions Taken
 
-### Commit 2: `6df149a` - Add favicon
-- Created `apps/web/app/icon.tsx` (dynamic favicon)
-- Created `apps/web/public/favicon.svg`
+1.  **Routing Fix:**
+    *   Identified that core application routes were incorrectly placed in `apps/web/app/app`, causing them to be prefixed with `/app`.
+    *   Moved all contents from `apps/web/app/app` to `apps/web/app/(app)` to correct the routing and remove the `/app` prefix from URLs.
+    *   This fixed a major source of potential 404 errors throughout the application.
 
-### Commit 3: `6e6d41e` - Add missing pages and fix broken links
-- Added `/demo` page
-- Added `/app/achievements` page
-- Added `/app/profile/edit` page
-- Added `/trainer/apply` redirect to `/app/become-trainer`
-- Removed broken `placeholder-avatar.jpg` references (use AvatarFallback instead)
+2.  **Dashboard Page (`/dashboard`):**
+    *   **Fixed Broken Links:** Updated all internal links on the dashboard (to workouts, nutrition, etc.) to reflect the corrected routing structure.
+    *   **Connected to Backend:** Implemented data fetching for:
+        *   User information (`authApi.getMe`)
+        *   Today's workout (`workoutsApi.getTodayWorkout`)
+        *   Daily nutrition log (`nutritionApi.getDailyLog`)
+        *   Weekly statistics (`statsApi.getWeeklySummary`)
+    *   **Dynamic UI:** Replaced hardcoded "empty state" components with dynamic ones that display the fetched data:
+        *   **Today's Workout:** Now shows the scheduled workout and a "Start Workout" button.
+        *   **Nutrition Summary:** Displays current calorie and macro-nutrient progress.
+        *   **Quick Stats:** Shows average calories and workout streak. (Note: Steps and Active Minutes data not available from API).
+        *   **Weekly Goals:** Displays progress towards the weekly workout goal.
 
-## Files Created
-- `apps/web/app/(marketing)/terms/page.tsx`
-- `apps/web/app/(marketing)/privacy/page.tsx`
-- `apps/web/app/(marketing)/cookies/page.tsx`
-- `apps/web/app/(marketing)/demo/page.tsx`
-- `apps/web/app/(auth)/login/login-form.tsx`
-- `apps/web/app/app/achievements/page.tsx`
-- `apps/web/app/app/profile/edit/page.tsx`
-- `apps/web/app/trainer/apply/page.tsx`
-- `apps/web/app/error.tsx`
-- `apps/web/app/not-found.tsx`
-- `apps/web/app/icon.tsx`
-- `apps/web/public/favicon.svg`
+3.  **Workouts Page (`/workouts`):**
+    *   **Connected to Backend:** Implemented data fetching for:
+        *   Workout plans (`workoutsApi.getPlans`)
+        *   Workout history (`workoutsApi.getHistory`)
+    *   **Dynamic UI:** Replaced hardcoded data with dynamic components:
+        *   **My Plans Tab:** Now lists workout plans fetched from the API.
+        *   **History Tab:** Now lists past workouts from the API. (Note: API currently missing workout names).
+        *   **Exercises Tab:** Categories now link to a filtered search page.
+    *   **Removed Broken Component:** Temporarily removed the "This Week" schedule component, which was based on static data and causing the page to crash.
 
-## Files Modified
-- `apps/web/lib/api.ts` - Added authApi, cookie helpers
-- `apps/web/app/(auth)/signup/page.tsx` - Real API integration
-- `apps/web/app/(auth)/login/page.tsx` - Suspense wrapper
-- `apps/web/app/app/dashboard/page.tsx` - Empty states
-- `apps/web/app/app/layout.tsx` - Fixed avatar
-- `apps/web/app/app/profile/page.tsx` - Fixed avatar
-- `apps/web/app/trainer/settings/page.tsx` - Fixed avatar
-- `apps/web/components/dashboard/header.tsx` - Fixed avatar
+4.  **Exercises Page (`/exercises`):**
+    *   **Connected to Backend:** Replaced the static, client-side filtered list of exercises with a dynamic search powered by the `exercisesApi.search` endpoint.
+    *   **Dynamic Filtering:** The page now fetches data from the API whenever the search query or filters are changed.
+    *   **Debounced Search:** Implemented a 300ms debounce on the search input to prevent excessive API calls while the user is typing.
+    *   **URL-based Filtering:** The page now correctly uses the `muscle` URL query parameter to set the initial muscle group filter, making the links from the `/workouts` page functional.
 
-## Deployment
-- **Vercel URL**: https://web-fawn-phi-62.vercel.app
-- **Railway API**: https://forma-api-production.up.railway.app
+### Next Steps
+- Implement the functionality for the buttons on the `/workouts` and `/exercises` pages (Start Plan, View, Add to Workout, etc.).
+- Re-implement the "This Week" schedule component on the `/workouts` page with data from the backend.
+- Continue checking other pages for similar issues.
 
-## Pending Issues
-- Some avatar images still 404 (`/avatars/1.jpg` etc) but they have fallbacks so it's cosmetic
-- Auth flow needs API to be fully functional for real registration/login
+### TODO for Claude
+- The backend API does not currently provide data for "Steps" or "Active Minutes". This functionality may need to be added to the backend or integrated from a third-party service (e.g., Google Fit, Apple Health).
+- The concept of "Achievements" is present in the UI, but there is no corresponding API. This feature needs to be designed and implemented in the backend.
+- The weekly goal for workouts is hardcoded to 5. This should probably be a user-configurable setting.
+- The `workoutsApi.getHistory()` endpoint should include the `workoutName` in the response to avoid N+1 queries on the client.
+- An endpoint is needed to fetch the user's weekly workout schedule to populate the "This Week" component on the `/workouts` page.
+- An API to get exercise counts per muscle group would be useful for the `/workouts` page.
