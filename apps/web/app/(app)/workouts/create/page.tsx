@@ -3,28 +3,34 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Plus, Trash2, Search, X } from 'lucide-react';
-import { useState } from 'react';
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
+import { Plus, Trash2, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { ExerciseSearchDialog } from './ExerciseSearchDialog';
+import { type Exercise } from '@/lib/api';
 
-// Dummy exercises for the sake of the placeholder
-const allExercises = [
-  { id: '1', name: 'Bench Press' },
-  { id: '2', name: 'Deadlift' },
-  { id: '3', name: 'Squat' },
-  { id: '4', name: 'Pull-ups' },
-  { id: '5', name: 'Shoulder Press' },
-];
+// New types for better structure
+interface WorkoutSet {
+  id: number;
+  reps: string;
+  weight: string;
+}
+
+interface WorkoutExercise {
+  id: number;
+  exercise: Exercise;
+  sets: WorkoutSet[];
+}
+
+interface WorkoutDay {
+  id: number;
+  name: string;
+  exercises: WorkoutExercise[];
+}
+
 
 export default function CreateWorkoutPlanPage() {
   const [planName, setPlanName] = useState('');
-  const [workouts, setWorkouts] = useState([{ id: 1, name: 'Day 1', exercises: [] }]);
+  const [workouts, setWorkouts] = useState<WorkoutDay[]>([{ id: 1, name: 'Day 1', exercises: [] }]);
 
   const addWorkoutDay = () => {
     setWorkouts([...workouts, { id: Date.now(), name: `Day ${workouts.length + 1}`, exercises: [] }]);
@@ -33,16 +39,91 @@ export default function CreateWorkoutPlanPage() {
   const removeWorkoutDay = (id: number) => {
     setWorkouts(workouts.filter(w => w.id !== id));
   };
+
+  const updateWorkoutDayName = (id: number, name: string) => {
+    setWorkouts(workouts.map(w => w.id === id ? { ...w, name } : w));
+  };
   
-  const addExerciseToWorkout = (workoutId, exercise) => {
-      const newWorkouts = workouts.map(w => {
-          if (w.id === workoutId) {
-              return {...w, exercises: [...w.exercises, exercise]};
+  const addExerciseToWorkout = (workoutId: number, exercise: Exercise) => {
+    const newExercise: WorkoutExercise = {
+      id: Date.now(),
+      exercise,
+      sets: [{ id: Date.now(), reps: '10', weight: '' }],
+    };
+
+    setWorkouts(workouts.map(w => 
+      w.id === workoutId 
+        ? { ...w, exercises: [...w.exercises, newExercise] } 
+        : w
+    ));
+  };
+
+  const removeExerciseFromWorkout = (workoutId: number, exerciseId: number) => {
+    setWorkouts(workouts.map(w =>
+      w.id === workoutId
+        ? { ...w, exercises: w.exercises.filter(ex => ex.id !== exerciseId) }
+        : w
+    ));
+  };
+
+  const addSetToExercise = (workoutId: number, exerciseId: number) => {
+    const newSet: WorkoutSet = { id: Date.now(), reps: '10', weight: '' };
+    setWorkouts(workouts.map(w =>
+      w.id === workoutId
+        ? {
+            ...w,
+            exercises: w.exercises.map(ex =>
+              ex.id === exerciseId
+                ? { ...ex, sets: [...ex.sets, newSet] }
+                : ex
+            ),
           }
-          return w;
-      });
-      setWorkouts(newWorkouts);
-  }
+        : w
+    ));
+  };
+
+  const updateSetValue = (workoutId: number, exerciseId: number, setId: number, field: 'reps' | 'weight', value: string) => {
+     setWorkouts(workouts.map(w =>
+      w.id === workoutId
+        ? {
+            ...w,
+            exercises: w.exercises.map(ex =>
+              ex.id === exerciseId
+                ? {
+                    ...ex,
+                    sets: ex.sets.map(s =>
+                      s.id === setId ? { ...s, [field]: value } : s
+                    ),
+                  }
+                : ex
+            ),
+          }
+        : w
+    ));
+  };
+
+  const removeSetFromExercise = (workoutId: number, exerciseId: number, setId: number) => {
+    setWorkouts(workouts.map(w =>
+      w.id === workoutId
+        ? {
+            ...w,
+            exercises: w.exercises.map(ex =>
+              ex.id === exerciseId
+                ? { ...ex, sets: ex.sets.filter(s => s.id !== setId) }
+                : ex
+            ),
+          }
+        : w
+    ));
+  };
+
+  const handleSavePlan = () => {
+    // TODO: Implement API call to save the plan
+    // const planData = { name: planName, workouts };
+    // await workoutsApi.createPlan(planData);
+    console.log('Saving plan:', { name: planName, workouts });
+    // Maybe show a toast notification on success
+  };
 
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
@@ -57,57 +138,75 @@ export default function CreateWorkoutPlanPage() {
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="space-y-2">
-            <label>Plan Name</label>
+            <label htmlFor="planName" className="font-medium">Plan Name</label>
             <Input 
+              id="planName"
               placeholder="e.g., My Awesome Strength Plan" 
               value={planName}
               onChange={(e) => setPlanName(e.target.value)}
             />
           </div>
 
-          {workouts.map((workout, wIndex) => (
+          {workouts.map((workout) => (
             <Card key={workout.id} className="bg-muted/50">
-              <CardHeader className="flex-row items-center justify-between">
-                <CardTitle className="text-lg">
-                  <Input 
-                    value={workout.name} 
-                    className="border-none bg-transparent text-lg font-semibold p-0"
-                  />
-                </CardTitle>
+              <CardHeader className="flex-row items-center justify-between py-4">
+                <Input 
+                  value={workout.name} 
+                  onChange={(e) => updateWorkoutDayName(workout.id, e.target.value)}
+                  className="border-none bg-transparent text-lg font-semibold p-0 focus-visible:ring-0"
+                />
                 <Button variant="ghost" size="icon" onClick={() => removeWorkoutDay(workout.id)}>
-                  <Trash2 className="h-4 w-4" />
+                  <Trash2 className="h-4 w-4 text-muted-foreground" />
                 </Button>
               </CardHeader>
-              <CardContent className="space-y-2">
-                {workout.exercises.map((ex, exIndex) => (
-                    <div key={exIndex} className="flex items-center justify-between rounded-md border bg-background p-2">
-                        <span>{ex.name}</span>
-                        <Button variant="ghost" size="icon"><X className="h-4 w-4" /></Button>
+              <CardContent className="space-y-4 pt-0">
+                {workout.exercises.map((ex) => (
+                  <div key={ex.id} className="space-y-2 rounded-md border bg-background p-3">
+                    <div className="flex items-center justify-between">
+                      <h4 className="font-semibold">{ex.exercise.name}</h4>
+                      <Button variant="ghost" size="icon" onClick={() => removeExerciseFromWorkout(workout.id, ex.id)}>
+                        <X className="h-4 w-4 text-muted-foreground" />
+                      </Button>
                     </div>
+                    
+                    <div className="space-y-2">
+                      <div className="grid grid-cols-[1fr_1fr_auto] gap-2 items-center text-sm font-medium text-muted-foreground px-2">
+                        <span>Reps</span>
+                        <span>Weight (kg)</span>
+                        <span></span>
+                      </div>
+                      {ex.sets.map((set, setIndex) => (
+                        <div key={set.id} className="grid grid-cols-[1fr_1fr_auto] gap-2 items-center">
+                          <Input 
+                            type="text" 
+                            placeholder="e.g., 8-12" 
+                            value={set.reps}
+                            onChange={(e) => updateSetValue(workout.id, ex.id, set.id, 'reps', e.target.value)}
+                          />
+                          <Input 
+                            type="number" 
+                            placeholder="e.g., 50" 
+                             value={set.weight}
+                            onChange={(e) => updateSetValue(workout.id, ex.id, set.id, 'weight', e.target.value)}
+                          />
+                          <Button variant="ghost" size="icon" onClick={() => removeSetFromExercise(workout.id, ex.id, set.id)}>
+                             <X className="h-4 w-4 text-muted-foreground" />
+                          </Button>
+                        </div>
+                      ))}
+                    </div>
+
+                    <Button variant="outline" size="sm" onClick={() => addSetToExercise(workout.id, ex.id)}>
+                      <Plus className="mr-2 h-4 w-4" /> Add Set
+                    </Button>
+                  </div>
                 ))}
                 
-                <Dialog>
-                    <DialogTrigger asChild>
-                        <Button variant="outline" className="w-full border-dashed">
-                          <Plus className="mr-2 h-4 w-4" /> Add Exercise
-                        </Button>
-                    </DialogTrigger>
-                    <DialogContent>
-                        <DialogHeader>
-                            <DialogTitle>Add Exercise to {workout.name}</DialogTitle>
-                        </DialogHeader>
-                        <div className="space-y-4">
-                           {/* A real implementation would have a searchable list here */}
-                           {allExercises.map(ex => (
-                               <div key={ex.id} className="flex items-center justify-between">
-                                   <span>{ex.name}</span>
-                                   <Button size="sm" onClick={() => addExerciseToWorkout(workout.id, ex)}>Add</Button>
-                               </div>
-                           ))}
-                        </div>
-                    </DialogContent>
-                </Dialog>
-
+                <ExerciseSearchDialog onAddExercise={(exercise) => addExerciseToWorkout(workout.id, exercise)}>
+                  <Button variant="outline" className="w-full border-dashed">
+                    <Plus className="mr-2 h-4 w-4" /> Add Exercise
+                  </Button>
+                </ExerciseSearchDialog>
               </CardContent>
             </Card>
           ))}
@@ -116,7 +215,7 @@ export default function CreateWorkoutPlanPage() {
             <Plus className="mr-2 h-4 w-4" /> Add Day / Workout
           </Button>
           
-          <Button size="lg" className="w-full">Save Plan</Button>
+          <Button size="lg" className="w-full" onClick={handleSavePlan}>Save Plan</Button>
         </CardContent>
       </Card>
     </div>

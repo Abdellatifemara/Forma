@@ -48,10 +48,20 @@ User reported the web app is full of 404s and UI elements are not connected to t
         *   Created a new placeholder page for "Create Plan" at `/workouts/create` and linked the corresponding button.
     *   These changes make the workouts page more interactive and provide a clear structure for future feature development.
 
+6.  **Built Interactive "Create Workout Plan" Page:**
+    *   Overhauled the `/workouts/create` page from a static placeholder to a fully interactive, client-side feature.
+    *   **Detailed State Management:** Implemented a robust state structure to manage a workout plan composed of multiple days, with each day containing multiple exercises, and each exercise having multiple sets (reps and weight).
+    *   **Interactive UI:** Users can now:
+        - Name the overall plan.
+        - Add, remove, and rename individual workout days.
+        - Add exercises to each day via a real-time search dialog that queries the backend.
+        - Add, edit, and remove sets for each exercise.
+    *   **API Simulation:** A `handleSavePlan` function is in place to collect the final plan data, logging it to the console and serving as a clear integration point for a future backend endpoint.
+    *   **Component-Based Design:** Created a reusable `ExerciseSearchDialog` component for adding exercises to a workout.
+
 ### Next Steps
-- Implement the backend logic for setting an active workout plan.
+- Implement the backend logic and API endpoint for saving a custom workout plan.
 - Implement the form submission logic for the "Log Workout" page.
-- Build out the full feature for creating a custom workout plan.
 - Re-implement the "This Week" schedule component on the `/workouts` page with data from the backend.
 
 ### TODO for Claude
@@ -62,3 +72,4 @@ User reported the web app is full of 404s and UI elements are not connected to t
 - An endpoint is needed to fetch the user's weekly workout schedule to populate the "This Week" component on the `/workouts` page.
 - An API to get exercise counts per muscle group would be useful for the `/workouts` page.
 - The `User` object in the backend should have a field for `activePlanId` to allow setting a workout plan as active.
+- **NEW:** A new API endpoint `POST /workouts/plans` is needed to save a custom workout plan created by the user. The endpoint should accept a data structure similar to: `{ name: string, workouts: WorkoutDay[] }`.
