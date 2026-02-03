@@ -1,0 +1,368 @@
+{
+  "gymChains": [
+    {
+      "id": "golds-gym",
+      "name": {
+        "en": "Gold's Gym Egypt",
+        "ar": "جولدز جيم مصر"
+      },
+      "logo": "https://goldsgymegypt.com/wp-content/uploads/2023/01/golds-gym-logo.png",
+      "website": "https://goldsgymegypt.com/",
+      "phone": "16565",
+      "description": {
+        "en": "International fitness chain with premium facilities across Cairo. Known for comprehensive equipment and professional trainers.",
+        "ar": "سلسلة لياقة دولية بمرافق متميزة في القاهرة. معروفة بالمعدات الشاملة والمدربين المحترفين."
+      },
+      "tier": "premium",
+      "branches": [
+        {
+          "name": { "en": "Maadi", "ar": "المعادي" },
+          "address": { "en": "Maadi, Cairo", "ar": "المعادي، القاهرة" },
+          "features": ["Spacious training area", "Diverse equipment", "Group classes"]
+        },
+        {
+          "name": { "en": "Heliopolis", "ar": "مصر الجديدة" },
+          "address": { "en": "Heliopolis, Cairo", "ar": "مصر الجديدة، القاهرة" },
+          "features": ["Swimming pool", "Separate men's and women's facilities", "State-of-the-art equipment"]
+        },
+        {
+          "name": { "en": "New Cairo", "ar": "القاهرة الجديدة" },
+          "address": { "en": "New Cairo", "ar": "القاهرة الجديدة" },
+          "features": ["Modern facility", "Diverse equipment", "Group classes"]
+        },
+        {
+          "name": { "en": "Fifth Settlement", "ar": "التجمع الخامس" },
+          "address": { "en": "Fifth Settlement, New Cairo", "ar": "التجمع الخامس" },
+          "features": ["Kids' club", "Family-friendly", "Full facilities"]
+        },
+        {
+          "name": { "en": "Sheikh Zayed", "ar": "الشيخ زايد" },
+          "address": { "en": "Sheikh Zayed City", "ar": "مدينة الشيخ زايد" },
+          "features": ["Top-notch equipment", "Modern facility"]
+        },
+        {
+          "name": { "en": "Katameya Heights (Elite)", "ar": "قطامية هايتس (إيليت)" },
+          "address": { "en": "Katameya Heights Compound", "ar": "كمبوند قطامية هايتس" },
+          "features": ["Luxury facility", "Premium service", "Exclusive amenities"]
+        }
+      ],
+      "amenities": {
+        "en": ["Weight room", "Cardio area", "Group fitness classes", "Personal training", "Locker rooms", "Showers"],
+        "ar": ["صالة أوزان", "منطقة كارديو", "فصول لياقة جماعية", "تدريب شخصي", "خزانات", "دشات"]
+      },
+      "pricing": {
+        "note": { "en": "Contact for current pricing", "ar": "تواصل للأسعار الحالية" },
+        "estimatedMonthly": "2,500-4,500 EGP",
+        "estimatedYearly": "18,000-35,000 EGP"
+      }
+    },
+    {
+      "id": "samia-allouba",
+      "name": {
+        "en": "Samia Allouba Gym",
+        "ar": "جيم ساميه علوبة"
+      },
+      "logo": null,
+      "website": "https://samiaallouba.com/",
+      "phone": "01212444180",
+      "description": {
+        "en": "Pioneer in Egyptian fitness industry. Well-established chain known for comprehensive wellness programs and female-friendly environment.",
+        "ar": "رائدة في صناعة اللياقة المصرية. سلسلة راسخة معروفة ببرامج الصحة الشاملة والبيئة الودية للسيدات."
+      },
+      "tier": "premium",
+      "branches": [
+        {
+          "name": { "en": "Mohandeseen (Original)", "ar": "المهندسين (الأصلي)" },
+          "address": { "en": "Mohandeseen, Giza", "ar": "المهندسين، الجيزة" },
+          "phone": "02-33035555",
+          "features": ["Full facilities", "Swimming pool", "Original branch"]
+        },
+        {
+          "name": { "en": "Maadi", "ar": "المعادي" },
+          "address": { "en": "Street 254, Maadi", "ar": "شارع 254، المعادي" },
+          "phone": "01227480201",
+          "features": ["Full facilities", "Women-focused"]
+        },
+        {
+          "name": { "en": "6th of October", "ar": "السادس من أكتوبر" },
+          "address": { "en": "6th of October City", "ar": "مدينة السادس من أكتوبر" },
+          "features": ["Modern facility"]
+        },
+        {
+          "name": { "en": "Heliopolis", "ar": "مصر الجديدة" },
+          "address": { "en": "Heliopolis, Cairo", "ar": "مصر الجديدة، القاهرة" },
+          "features": ["Full facilities"]
+        },
+        {
+          "name": { "en": "Sheikh Zayed (Americana Plaza)", "ar": "الشيخ زايد (أمريكانا بلازا)" },
+          "address": { "en": "Americana Plaza, Sheikh Zayed", "ar": "أمريكانا بلازا، الشيخ زايد" },
+          "phone": "01212444180",
+          "features": ["Mall location", "Convenient access"]
+        }
+      ],
+      "amenities": {
+        "en": ["Aerobic classes", "Zumba", "Yoga", "Pilates", "Swimming pool", "Sauna", "Jacuzzi", "Personal training", "Nutrition counseling", "Aqua aerobics"],
+        "ar": ["فصول إيروبك", "زومبا", "يوجا", "بيلاتيس", "حمام سباحة", "ساونا", "جاكوزي", "تدريب شخصي", "استشارات تغذية", "إيروبكس مائي"]
+      },
+      "pricing": {
+        "note": { "en": "Contact for current pricing", "ar": "تواصل للأسعار الحالية" },
+        "estimatedMonthly": "2,000-3,500 EGP",
+        "estimatedYearly": "15,000-28,000 EGP"
+      }
+    },
+    {
+      "id": "befit-360",
+      "name": {
+        "en": "BeFit 360",
+        "ar": "بيفت 360"
+      },
+      "logo": null,
+      "website": "https://befit360.com/",
+      "phone": null,
+      "description": {
+        "en": "Leading Egyptian fitness chain with branches across Cairo, Alexandria, Ain Sokhna, and North Coast. Caters to all fitness levels.",
+        "ar": "سلسلة لياقة مصرية رائدة بفروع في القاهرة والإسكندرية وعين السخنة والساحل الشمالي. تخدم جميع مستويات اللياقة."
+      },
+      "tier": "mid-range",
+      "branches": [
+        {
+          "name": { "en": "Multiple Cairo Locations", "ar": "فروع متعددة في القاهرة" },
+          "address": { "en": "Various locations in Cairo", "ar": "مواقع متعددة في القاهرة" },
+          "features": ["Standard gym facilities"]
+        },
+        {
+          "name": { "en": "Alexandria", "ar": "الإسكندرية" },
+          "address": { "en": "Alexandria", "ar": "الإسكندرية" },
+          "features": ["Full facilities"]
+        },
+        {
+          "name": { "en": "Ain Sokhna", "ar": "عين السخنة" },
+          "address": { "en": "Ain Sokhna", "ar": "عين السخنة" },
+          "features": ["Resort area location"]
+        },
+        {
+          "name": { "en": "North Coast", "ar": "الساحل الشمالي" },
+          "address": { "en": "North Coast", "ar": "الساحل الشمالي" },
+          "features": ["Seasonal branch"]
+        }
+      ],
+      "amenities": {
+        "en": ["Weight room", "Cardio equipment", "Group classes", "Personal training"],
+        "ar": ["صالة أوزان", "معدات كارديو", "فصول جماعية", "تدريب شخصي"]
+      },
+      "pricing": {
+        "note": { "en": "Contact for current pricing", "ar": "تواصل للأسعار الحالية" },
+        "estimatedMonthly": "1,500-2,500 EGP",
+        "estimatedYearly": "12,000-22,000 EGP"
+      }
+    },
+    {
+      "id": "ufc-gym",
+      "name": {
+        "en": "UFC Gym Egypt",
+        "ar": "يو إف سي جيم مصر"
+      },
+      "logo": null,
+      "website": "https://ufcgym.com/",
+      "phone": null,
+      "description": {
+        "en": "International MMA-inspired fitness chain. Recently opened in Egypt with focus on combat sports and functional training.",
+        "ar": "سلسلة لياقة دولية مستوحاة من الـ MMA. افتتحت مؤخراً في مصر مع التركيز على رياضات القتال والتدريب الوظيفي."
+      },
+      "tier": "premium",
+      "branches": [
+        {
+          "name": { "en": "Cairo", "ar": "القاهرة" },
+          "address": { "en": "Cairo", "ar": "القاهرة" },
+          "features": ["MMA training", "Boxing", "Kickboxing", "Functional training"]
+        }
+      ],
+      "amenities": {
+        "en": ["MMA cage", "Boxing ring", "Weight room", "Cardio", "Group classes", "Personal training"],
+        "ar": ["قفص MMA", "رينج ملاكمة", "صالة أوزان", "كارديو", "فصول جماعية", "تدريب شخصي"]
+      },
+      "pricing": {
+        "note": { "en": "Premium pricing", "ar": "أسعار متميزة" },
+        "estimatedYearly": "25,000-40,000 EGP"
+      }
+    },
+    {
+      "id": "fitness-first",
+      "name": {
+        "en": "Fitness First Egypt",
+        "ar": "فيتنس فيرست مصر"
+      },
+      "logo": null,
+      "website": "https://www.fitnessfirst.com/",
+      "phone": null,
+      "description": {
+        "en": "Global UK-based fitness chain known for holistic approach to health and wellness with premium facilities.",
+        "ar": "سلسلة لياقة عالمية من بريطانيا معروفة بالنهج الشامل للصحة واللياقة بمرافق متميزة."
+      },
+      "tier": "premium",
+      "branches": [
+        {
+          "name": { "en": "Cairo Locations", "ar": "فروع القاهرة" },
+          "address": { "en": "Various in Cairo", "ar": "متعددة في القاهرة" },
+          "features": ["International standards", "Modern equipment"]
+        }
+      ],
+      "amenities": {
+        "en": ["Weight room", "Cardio area", "Swimming pool (select locations)", "Group classes", "Personal training", "Spa services"],
+        "ar": ["صالة أوزان", "منطقة كارديو", "حمام سباحة (فروع مختارة)", "فصول جماعية", "تدريب شخصي", "خدمات سبا"]
+      },
+      "pricing": {
+        "note": { "en": "Contact for current pricing", "ar": "تواصل للأسعار الحالية" },
+        "estimatedMonthly": "3,000-5,000 EGP",
+        "estimatedYearly": "25,000-45,000 EGP"
+      }
+    }
+  ],
+  "budgetGyms": [
+    {
+      "id": "local-gyms",
+      "name": {
+        "en": "Local/Neighborhood Gyms",
+        "ar": "الجيمات المحلية/الحي"
+      },
+      "description": {
+        "en": "Local gyms are available in most neighborhoods. They typically have basic equipment at affordable prices.",
+        "ar": "الجيمات المحلية متوفرة في معظم الأحياء. عادة بيكون فيها معدات أساسية بأسعار مقبولة."
+      },
+      "tier": "budget",
+      "typicalPricing": {
+        "monthly": "500-1,500 EGP",
+        "yearly": "4,000-12,000 EGP"
+      },
+      "whatToExpect": {
+        "en": [
+          "Basic weight equipment",
+          "Some cardio machines",
+          "Limited or no classes",
+          "Basic locker facilities",
+          "May be crowded during peak hours"
+        ],
+        "ar": [
+          "معدات أوزان أساسية",
+          "بعض أجهزة الكارديو",
+          "فصول محدودة أو معدومة",
+          "مرافق خزانات أساسية",
+          "ممكن يكون مزدحم في أوقات الذروة"
+        ]
+      }
+    }
+  ],
+  "choosingGuide": {
+    "factors": {
+      "en": [
+        {
+          "factor": "Location",
+          "importance": "high",
+          "tip": "Choose a gym close to home or work - you're more likely to go consistently"
+        },
+        {
+          "factor": "Equipment",
+          "importance": "high",
+          "tip": "Visit during peak hours to see if it's too crowded for your needs"
+        },
+        {
+          "factor": "Hours",
+          "importance": "medium",
+          "tip": "Make sure the gym is open when you can train"
+        },
+        {
+          "factor": "Price",
+          "importance": "medium",
+          "tip": "Consider annual memberships for savings, but try monthly first"
+        },
+        {
+          "factor": "Amenities",
+          "importance": "low",
+          "tip": "Focus on what you'll actually use - pools and saunas are nice but not essential"
+        }
+      ],
+      "ar": [
+        {
+          "factor": "الموقع",
+          "importance": "عالي",
+          "tip": "اختار جيم قريب من بيتك أو شغلك - هتروح بانتظام أكتر"
+        },
+        {
+          "factor": "المعدات",
+          "importance": "عالي",
+          "tip": "زور الجيم في أوقات الذروة عشان تشوف لو مزدحم أوي لاحتياجاتك"
+        },
+        {
+          "factor": "المواعيد",
+          "importance": "متوسط",
+          "tip": "اتأكد إن الجيم مفتوح في الوقت اللي تقدر تتدرب فيه"
+        },
+        {
+          "factor": "السعر",
+          "importance": "متوسط",
+          "tip": "فكر في الاشتراكات السنوية للتوفير، بس جرب الشهري الأول"
+        },
+        {
+          "factor": "المرافق",
+          "importance": "منخفض",
+          "tip": "ركز على اللي هتستخدمه فعلاً - الحمامات والساونا حلوة بس مش أساسية"
+        }
+      ]
+    },
+    "questions": {
+      "en": [
+        "Can I get a free trial or day pass?",
+        "What are the peak hours?",
+        "Is there a joining fee?",
+        "What's the cancellation policy?",
+        "Are personal trainers certified?",
+        "Is the equipment well-maintained?"
+      ],
+      "ar": [
+        "ممكن أخد تجربة مجانية أو يوم مجاني؟",
+        "إيه أوقات الذروة؟",
+        "فيه رسوم تسجيل؟",
+        "إيه سياسة الإلغاء؟",
+        "المدربين الشخصيين معتمدين؟",
+        "المعدات متصانة كويس؟"
+      ]
+    }
+  },
+  "homeGymAlternative": {
+    "title": {
+      "en": "Home Gym Alternative",
+      "ar": "بديل الجيم المنزلي"
+    },
+    "description": {
+      "en": "Building a home gym can be cost-effective long-term, especially in Egypt where gym memberships are getting expensive.",
+      "ar": "بناء جيم منزلي ممكن يكون فعال من حيث التكلفة على المدى الطويل، خاصة في مصر حيث اشتراكات الجيم بتغلى."
+    },
+    "essentialEquipment": {
+      "en": [
+        {"item": "Adjustable dumbbells", "priority": 1, "priceRange": "3,000-8,000 EGP"},
+        {"item": "Pull-up bar", "priority": 2, "priceRange": "500-1,500 EGP"},
+        {"item": "Resistance bands", "priority": 3, "priceRange": "200-800 EGP"},
+        {"item": "Yoga mat", "priority": 4, "priceRange": "200-500 EGP"},
+        {"item": "Adjustable bench", "priority": 5, "priceRange": "2,000-5,000 EGP"},
+        {"item": "Barbell set", "priority": 6, "priceRange": "5,000-15,000 EGP"}
+      ],
+      "ar": [
+        {"item": "دمبل قابل للتعديل", "priority": 1, "priceRange": "3,000-8,000 ج.م"},
+        {"item": "بار العقلة", "priority": 2, "priceRange": "500-1,500 ج.م"},
+        {"item": "باندات المقاومة", "priority": 3, "priceRange": "200-800 ج.م"},
+        {"item": "سجادة يوجا", "priority": 4, "priceRange": "200-500 ج.م"},
+        {"item": "بنش قابل للتعديل", "priority": 5, "priceRange": "2,000-5,000 ج.م"},
+        {"item": "طقم بار", "priority": 6, "priceRange": "5,000-15,000 ج.م"}
+      ]
+    },
+    "whereToBy": {
+      "en": ["Jumia", "Amazon Egypt", "Decathlon Egypt", "Local sports equipment stores"],
+      "ar": ["جوميا", "أمازون مصر", "ديكاتلون مصر", "محلات المعدات الرياضية المحلية"]
+    }
+  },
+  "lastUpdated": "2024-01",
+  "disclaimer": {
+    "en": "Prices are estimates and may vary. Contact gyms directly for current pricing. All prices in Egyptian Pounds (EGP).",
+    "ar": "الأسعار تقديرية وممكن تختلف. تواصل مع الجيمات مباشرة للأسعار الحالية. كل الأسعار بالجنيه المصري."
+  }
+}
