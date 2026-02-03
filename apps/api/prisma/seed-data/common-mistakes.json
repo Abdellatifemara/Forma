@@ -1,0 +1,583 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "introduction": {
+    "title": {
+      "en": "Common Gym Mistakes (and How to Fix Them)",
+      "ar": "أخطاء الجيم الشائعة (وإزاي تصلحها)"
+    },
+    "description": {
+      "en": "Everyone makes mistakes when they start training. The key is recognizing them and correcting course. Here are the most common mistakes across training, nutrition, and recovery.",
+      "ar": "كل واحد بيغلط لما بيبدأ يتدرب. المفتاح هو إنك تعرفها وتصحح المسار. دي أكتر الأخطاء شيوعاً في التدريب والتغذية والاستشفاء."
+    }
+  },
+  "trainingMistakes": {
+    "title": {
+      "en": "Training Mistakes",
+      "ar": "أخطاء التدريب"
+    },
+    "mistakes": [
+      {
+        "id": 1,
+        "mistake": {
+          "en": "Skipping the Warm-up",
+          "ar": "تخطي التسخين"
+        },
+        "why": {
+          "en": "Cold muscles are more prone to injury. Performance suffers without proper warm-up.",
+          "ar": "العضلات الباردة أكتر عرضة للإصابة. الأداء بيتأثر من غير تسخين مناسب."
+        },
+        "fix": {
+          "en": "5-10 minutes of light cardio + dynamic stretches + warm-up sets before heavy lifting.",
+          "ar": "5-10 دقايق كارديو خفيف + استريتش ديناميكي + مجموعات تسخين قبل الرفع التقيل."
+        },
+        "severity": "high"
+      },
+      {
+        "id": 2,
+        "mistake": {
+          "en": "Ego Lifting (Too Heavy, Bad Form)",
+          "ar": "الرفع بالإيجو (تقيل أوي، فورم وحش)"
+        },
+        "why": {
+          "en": "Lifting more than you can handle with proper form leads to injury and actually works muscles less effectively.",
+          "ar": "رفع أكتر مما تقدر تتحكم فيه بفورم صح بيؤدي لإصابات وفعلاً بيشغل العضلات بشكل أقل فعالية."
+        },
+        "fix": {
+          "en": "Check your ego at the door. Reduce weight, perfect form, then gradually increase. Video yourself to check form.",
+          "ar": "سيب إيجوك بره. قلل الوزن، كمل الفورم، وبعدين زود تدريجياً. صور نفسك فيديو عشان تتأكد من الفورم."
+        },
+        "severity": "high"
+      },
+      {
+        "id": 3,
+        "mistake": {
+          "en": "No Structured Program",
+          "ar": "مفيش برنامج منظم"
+        },
+        "why": {
+          "en": "Randomly doing whatever machines are free leads to imbalanced development and poor progress.",
+          "ar": "عمل أي ماكينة فاضية بشكل عشوائي بيؤدي لتطور غير متوازن وتقدم ضعيف."
+        },
+        "fix": {
+          "en": "Follow a proven program (PPL, Upper/Lower, Full Body). Track your workouts in an app like Forma.",
+          "ar": "اتبع برنامج مثبت (PPL، علوي/سفلي، جسم كامل). سجل تمريناتك في تطبيق زي Forma."
+        },
+        "severity": "high"
+      },
+      {
+        "id": 4,
+        "mistake": {
+          "en": "Skipping Leg Day",
+          "ar": "تخطي يوم الرجل"
+        },
+        "why": {
+          "en": "Legs are 50% of your body. Chicken legs look ridiculous. Plus, leg training boosts testosterone and overall muscle growth.",
+          "ar": "الرجل 50% من جسمك. رجل الفرخة شكلها مضحك. كمان، تدريب الرجل بيعزز التستوستيرون ونمو العضلات عموماً."
+        },
+        "fix": {
+          "en": "Train legs at least 1-2x per week. Squats, deadlifts, lunges - embrace them.",
+          "ar": "درب الرجل على الأقل 1-2 مرة في الأسبوع. سكوات، ديدليفت، لانجز - اتقبلهم."
+        },
+        "severity": "medium"
+      },
+      {
+        "id": 5,
+        "mistake": {
+          "en": "Too Much Cardio, Not Enough Weights",
+          "ar": "كارديو كتير، أوزان قليلة"
+        },
+        "why": {
+          "en": "Excessive cardio without resistance training leads to a 'skinny fat' physique - low muscle, soft look.",
+          "ar": "كارديو زيادة من غير تدريب مقاومة بيؤدي لجسم 'نحيف دهني' - عضلات قليلة، شكل لين."
+        },
+        "fix": {
+          "en": "Prioritize weight training 3-4x per week. Add cardio strategically (2-3x per week max for most goals).",
+          "ar": "الأولوية لتدريب الأوزان 3-4 مرات في الأسبوع. ضيف كارديو استراتيجياً (2-3 مرات في الأسبوع ماكس لمعظم الأهداف)."
+        },
+        "severity": "medium"
+      },
+      {
+        "id": 6,
+        "mistake": {
+          "en": "Only Training 'Mirror Muscles'",
+          "ar": "تدريب 'عضلات المراية' بس"
+        },
+        "why": {
+          "en": "Training only chest, biceps, and abs while neglecting back, rear delts, and hamstrings creates imbalances and injury risk.",
+          "ar": "تدريب الصدر والباي والبطن بس مع تجاهل الظهر والكتف الخلفي والهامسترينج بيخلق عدم توازن وخطر إصابة."
+        },
+        "fix": {
+          "en": "Follow a balanced program. For every push movement, do a pull movement. Train what you can't see.",
+          "ar": "اتبع برنامج متوازن. لكل حركة دفع، اعمل حركة سحب. درب اللي مش بتشوفه."
+        },
+        "severity": "medium"
+      },
+      {
+        "id": 7,
+        "mistake": {
+          "en": "Same Workout Forever",
+          "ar": "نفس التمرين للأبد"
+        },
+        "why": {
+          "en": "Your body adapts to the same stimulus. Progress stalls when you don't progressively overload.",
+          "ar": "جسمك بيتكيف مع نفس التحفيز. التقدم بيقف لما متزودش الحمل تدريجياً."
+        },
+        "fix": {
+          "en": "Progressively overload: increase weight, reps, sets, or change exercises every 4-8 weeks.",
+          "ar": "زود الحمل تدريجياً: زود الوزن أو التكرارات أو المجموعات، أو غير التمارين كل 4-8 أسابيع."
+        },
+        "severity": "medium"
+      },
+      {
+        "id": 8,
+        "mistake": {
+          "en": "Half Reps",
+          "ar": "نص تكرارات"
+        },
+        "why": {
+          "en": "Partial range of motion limits muscle activation and growth. You're only cheating yourself.",
+          "ar": "نطاق حركة جزئي بيحد من تنشيط العضلات والنمو. إنت بتغش نفسك بس."
+        },
+        "fix": {
+          "en": "Use full range of motion. Reduce weight if needed. Full reps beat half reps with more weight.",
+          "ar": "استخدم نطاق حركة كامل. قلل الوزن لو محتاج. تكرارات كاملة بتغلب نص تكرارات بوزن أكتر."
+        },
+        "severity": "medium"
+      },
+      {
+        "id": 9,
+        "mistake": {
+          "en": "Training to Failure Every Set",
+          "ar": "التدريب للفشل كل مجموعة"
+        },
+        "why": {
+          "en": "Training to absolute failure every set accumulates fatigue, impairs recovery, and increases injury risk.",
+          "ar": "التدريب للفشل المطلق كل مجموعة بيراكم التعب، بيعوق الاستشفاء، وبيزود خطر الإصابة."
+        },
+        "fix": {
+          "en": "Keep 1-2 reps in reserve (RIR) on most sets. Go to failure occasionally on last sets of isolation exercises.",
+          "ar": "خلي 1-2 تكرار احتياطي (RIR) في معظم المجموعات. روح للفشل أحياناً في آخر مجموعات تمارين العزل."
+        },
+        "severity": "medium"
+      },
+      {
+        "id": 10,
+        "mistake": {
+          "en": "Resting Too Long/Short Between Sets",
+          "ar": "راحة طويلة/قصيرة أوي بين المجموعات"
+        },
+        "why": {
+          "en": "Too short = not recovered enough for next set. Too long = muscles cool down, workout takes forever.",
+          "ar": "قصيرة أوي = مش مستريح كفاية للمجموعة الجاية. طويلة أوي = العضلات بتبرد، التمرين بياخد الأبد."
+        },
+        "fix": {
+          "en": "Compound lifts: 2-3 min. Isolation exercises: 60-90 sec. Hypertrophy work: 90 sec - 2 min.",
+          "ar": "رفعات مركبة: 2-3 دقيقة. تمارين عزل: 60-90 ثانية. شغل تضخيم: 90 ثانية - 2 دقيقة."
+        },
+        "severity": "low"
+      }
+    ]
+  },
+  "formMistakes": {
+    "title": {
+      "en": "Common Form Mistakes by Exercise",
+      "ar": "أخطاء الفورم الشائعة حسب التمرين"
+    },
+    "exercises": [
+      {
+        "exercise": { "en": "Squats", "ar": "سكوات" },
+        "mistakes": [
+          {
+            "mistake": { "en": "Knees caving inward", "ar": "الركب بتدخل جوا" },
+            "fix": { "en": "Push knees out over toes, strengthen glutes", "ar": "ادفع الركب لبرا فوق الأصابع، قوي الجلوت" }
+          },
+          {
+            "mistake": { "en": "Heels rising", "ar": "الكعب بيرتفع" },
+            "fix": { "en": "Work on ankle mobility, try wider stance or elevated heels", "ar": "اشتغل على حركية الكاحل، جرب وقفة أوسع أو كعب مرتفع" }
+          },
+          {
+            "mistake": { "en": "Rounding lower back", "ar": "تقويس أسفل الظهر" },
+            "fix": { "en": "Brace core, maintain neutral spine, don't go deeper than form allows", "ar": "شد الكور، حافظ على عمود فقري محايد، متنزلش أعمق مما الفورم بيسمح" }
+          }
+        ]
+      },
+      {
+        "exercise": { "en": "Deadlift", "ar": "ديدليفت" },
+        "mistakes": [
+          {
+            "mistake": { "en": "Rounding back", "ar": "تقويس الظهر" },
+            "fix": { "en": "Keep chest up, lats engaged, neutral spine throughout", "ar": "خلي الصدر فوق، اللاتس مشدودة، عمود فقري محايد طول الوقت" }
+          },
+          {
+            "mistake": { "en": "Bar drifting away from body", "ar": "البار بيبعد عن الجسم" },
+            "fix": { "en": "Keep bar dragging up your legs, close to body entire lift", "ar": "خلي البار بيسحب على رجلك، قريب من الجسم طول الرفعة" }
+          },
+          {
+            "mistake": { "en": "Hyperextending at top", "ar": "فرد زيادة في الأعلى" },
+            "fix": { "en": "Stand tall, squeeze glutes - don't lean back excessively", "ar": "اقف طويل، اقبض الجلوت - متتكيش لورا زيادة" }
+          }
+        ]
+      },
+      {
+        "exercise": { "en": "Bench Press", "ar": "بنش بريس" },
+        "mistakes": [
+          {
+            "mistake": { "en": "Elbows flared 90°", "ar": "الكوع مفتوح 90°" },
+            "fix": { "en": "Keep elbows at 45-75° angle to protect shoulders", "ar": "خلي الكوع بزاوية 45-75° عشان تحمي الكتف" }
+          },
+          {
+            "mistake": { "en": "Bouncing bar off chest", "ar": "ارتداد البار من الصدر" },
+            "fix": { "en": "Control the descent, brief pause at chest, then press", "ar": "تحكم في النزول، توقف قصير على الصدر، وبعدين ادفع" }
+          },
+          {
+            "mistake": { "en": "Feet not planted", "ar": "الرجل مش ثابتة" },
+            "fix": { "en": "Plant feet firmly on floor, create leg drive", "ar": "ثبت الرجل بقوة على الأرض، اعمل دفع من الرجل" }
+          }
+        ]
+      },
+      {
+        "exercise": { "en": "Barbell Row", "ar": "رو بالبار" },
+        "mistakes": [
+          {
+            "mistake": { "en": "Using momentum/swinging", "ar": "استخدام الزخم/التأرجح" },
+            "fix": { "en": "Keep torso still, pull with back not momentum", "ar": "خلي الجذع ثابت، اسحب بالظهر مش بالزخم" }
+          },
+          {
+            "mistake": { "en": "Pulling to wrong position", "ar": "السحب لوضع غلط" },
+            "fix": { "en": "Pull to lower chest/upper abs, not to neck", "ar": "اسحب لأسفل الصدر/أعلى البطن، مش للرقبة" }
+          }
+        ]
+      },
+      {
+        "exercise": { "en": "Bicep Curl", "ar": "باي كيرل" },
+        "mistakes": [
+          {
+            "mistake": { "en": "Swinging body", "ar": "تأرجح الجسم" },
+            "fix": { "en": "Keep elbows pinned, only forearms move, reduce weight", "ar": "ثبت الكوع، الساعد بس يتحرك، قلل الوزن" }
+          },
+          {
+            "mistake": { "en": "Not full extension", "ar": "مش فرد كامل" },
+            "fix": { "en": "Fully extend at bottom, fully contract at top", "ar": "افرد بالكامل في الأسفل، اقبض بالكامل في الأعلى" }
+          }
+        ]
+      },
+      {
+        "exercise": { "en": "Lateral Raises", "ar": "رفرفة جانبية" },
+        "mistakes": [
+          {
+            "mistake": { "en": "Raising above shoulder height", "ar": "الرفع فوق مستوى الكتف" },
+            "fix": { "en": "Stop at shoulder height to target delts, not traps", "ar": "وقف عند مستوى الكتف عشان تستهدف الدلت، مش الترابيز" }
+          },
+          {
+            "mistake": { "en": "Thumbs up grip", "ar": "قبضة الإبهام لفوق" },
+            "fix": { "en": "Slight internal rotation (pour water from a jug) hits side delts better", "ar": "دوران داخلي خفيف (زي ما بتصب ميه من إبريق) بيضرب الدلت الجانبي أحسن" }
+          }
+        ]
+      }
+    ]
+  },
+  "nutritionMistakes": {
+    "title": {
+      "en": "Nutrition Mistakes",
+      "ar": "أخطاء التغذية"
+    },
+    "mistakes": [
+      {
+        "mistake": {
+          "en": "Not Eating Enough Protein",
+          "ar": "مش بتاكل بروتين كفاية"
+        },
+        "why": {
+          "en": "Protein is essential for muscle repair and growth. Without enough, your hard training goes to waste.",
+          "ar": "البروتين ضروري لإصلاح ونمو العضلات. من غير كفاية، التدريب الجامد بتاعك بيروح هدر."
+        },
+        "fix": {
+          "en": "Aim for 1.6-2.2g protein per kg bodyweight. Track for a week to see your actual intake.",
+          "ar": "استهدف 1.6-2.2 جرام بروتين لكل كيلو من وزن الجسم. سجل لمدة أسبوع عشان تشوف استهلاكك الفعلي."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Eating Too Little (Crash Dieting)",
+          "ar": "أكل قليل أوي (دايت قاسي)"
+        },
+        "why": {
+          "en": "Extreme calorie restriction slows metabolism, causes muscle loss, and leads to binging.",
+          "ar": "تقييد السعرات الشديد بيبطئ الأيض، بيسبب خسارة عضلات، وبيؤدي للأكل الشره."
+        },
+        "fix": {
+          "en": "Moderate deficit (300-500 calories) is sustainable. Lose 0.5-1% bodyweight per week max.",
+          "ar": "عجز معتدل (300-500 سعرة) مستدام. اخس 0.5-1% من وزن الجسم في الأسبوع ماكس."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Thinking 'Healthy' Foods Can't Make You Fat",
+          "ar": "التفكير إن الأكل 'الصحي' مش ممكن يتخنك"
+        },
+        "why": {
+          "en": "Calories from healthy foods still count. You can gain weight eating only avocados, nuts, and olive oil.",
+          "ar": "السعرات من الأكل الصحي برضو بتحتسب. ممكن تتخن وإنت بتاكل أفوكادو ومكسرات وزيت زيتون بس."
+        },
+        "fix": {
+          "en": "Total calories determine weight change. Track portions even of healthy foods.",
+          "ar": "السعرات الكلية بتحدد تغير الوزن. سجل الكميات حتى من الأكل الصحي."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Skipping Meals Then Overeating",
+          "ar": "تخطي الوجبات وبعدين أكل زيادة"
+        },
+        "why": {
+          "en": "Skipping meals leads to excessive hunger and poor food choices later. Blood sugar crashes affect energy and mood.",
+          "ar": "تخطي الوجبات بيؤدي لجوع شديد واختيارات أكل وحشة بعدها. انهيار سكر الدم بيأثر على الطاقة والمزاج."
+        },
+        "fix": {
+          "en": "Eat regular meals. If intermittent fasting, plan it properly.",
+          "ar": "كل وجبات منتظمة. لو صيام متقطع، خططه صح."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Drinking Calories",
+          "ar": "شرب السعرات"
+        },
+        "why": {
+          "en": "Sodas, juices, fancy coffee drinks add hundreds of calories without filling you up.",
+          "ar": "المشروبات الغازية والعصاير والقهوة الفاخرة بتضيف مئات السعرات من غير ما تشبعك."
+        },
+        "fix": {
+          "en": "Drink water, black coffee, or tea. Save liquid calories for protein shakes.",
+          "ar": "اشرب ميه أو قهوة سادة أو شاي. خلي السعرات السائلة لشيكات البروتين."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Not Eating Around Workouts",
+          "ar": "مش بتاكل حوالين التمارين"
+        },
+        "why": {
+          "en": "Training fasted with no post-workout nutrition may impair performance and recovery.",
+          "ar": "التدريب على معدة فاضية من غير تغذية بعد التمرين ممكن يضر الأداء والاستشفاء."
+        },
+        "fix": {
+          "en": "Eat carbs + protein 2-3 hours before and within 2 hours after training.",
+          "ar": "كل كربوهيدرات + بروتين 2-3 ساعات قبل وخلال ساعتين بعد التدريب."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Relying on Supplements Over Food",
+          "ar": "الاعتماد على المكملات بدل الأكل"
+        },
+        "why": {
+          "en": "Supplements supplement a good diet - they don't replace it. Food has nutrients supplements don't.",
+          "ar": "المكملات بتكمل دايت كويس - مش بتبدله. الأكل فيه مغذيات المكملات مفيهاش."
+        },
+        "fix": {
+          "en": "Focus on whole foods first. Use supplements to fill gaps, not as foundation.",
+          "ar": "ركز على الأكل الكامل الأول. استخدم المكملات لسد الفجوات، مش كأساس."
+        }
+      }
+    ]
+  },
+  "recoveryMistakes": {
+    "title": {
+      "en": "Recovery Mistakes",
+      "ar": "أخطاء الاستشفاء"
+    },
+    "mistakes": [
+      {
+        "mistake": {
+          "en": "Not Sleeping Enough",
+          "ar": "مش بتنام كفاية"
+        },
+        "why": {
+          "en": "Sleep is when muscle repair and growth hormone release peak. Poor sleep = poor gains.",
+          "ar": "النوم هو وقت ذروة إصلاح العضلات وإفراز هرمون النمو. نوم سيء = مكاسب سيئة."
+        },
+        "fix": {
+          "en": "Aim for 7-9 hours. Consistent sleep schedule matters more than occasional long sleeps.",
+          "ar": "استهدف 7-9 ساعات. جدول نوم ثابت أهم من نومات طويلة متقطعة."
+        },
+        "severity": "high"
+      },
+      {
+        "mistake": {
+          "en": "Training the Same Muscle Daily",
+          "ar": "تدريب نفس العضلة يومياً"
+        },
+        "why": {
+          "en": "Muscles need 48-72 hours to recover and grow. Training them again too soon impairs growth.",
+          "ar": "العضلات محتاجة 48-72 ساعة عشان تستشفي وتكبر. تدريبها تاني بدري أوي بيعوق النمو."
+        },
+        "fix": {
+          "en": "Don't train the same muscle two days in a row. Follow a proper split.",
+          "ar": "متدربش نفس العضلة يومين ورا بعض. اتبع تقسيم مناسب."
+        },
+        "severity": "high"
+      },
+      {
+        "mistake": {
+          "en": "No Rest Days",
+          "ar": "مفيش أيام راحة"
+        },
+        "why": {
+          "en": "Your body builds muscle during rest, not during training. Overtraining leads to injury and burnout.",
+          "ar": "جسمك بيبني العضلات أثناء الراحة، مش أثناء التدريب. التدريب الزايد بيؤدي لإصابات وإرهاق."
+        },
+        "fix": {
+          "en": "Take at least 1-2 complete rest days per week. Active recovery (walking) is fine.",
+          "ar": "خد على الأقل 1-2 يوم راحة كاملة في الأسبوع. الاستشفاء النشط (المشي) كويس."
+        },
+        "severity": "high"
+      },
+      {
+        "mistake": {
+          "en": "Ignoring Deload Weeks",
+          "ar": "تجاهل أسابيع الديلود"
+        },
+        "why": {
+          "en": "Accumulated fatigue eventually causes plateaus and increases injury risk.",
+          "ar": "التعب المتراكم في النهاية بيسبب ثبات وبيزود خطر الإصابة."
+        },
+        "fix": {
+          "en": "Every 4-8 weeks, reduce intensity or volume by 40-50% for a week.",
+          "ar": "كل 4-8 أسابيع، قلل الشدة أو الفوليوم بـ 40-50% لمدة أسبوع."
+        },
+        "severity": "medium"
+      },
+      {
+        "mistake": {
+          "en": "Not Managing Stress",
+          "ar": "مش بتدير التوتر"
+        },
+        "why": {
+          "en": "Life stress is physical stress to your body. High stress + hard training = poor recovery.",
+          "ar": "ضغط الحياة هو ضغط جسدي لجسمك. ضغط عالي + تدريب جامد = استشفاء سيء."
+        },
+        "fix": {
+          "en": "During stressful periods, reduce training intensity. Add stress management practices.",
+          "ar": "أثناء فترات الضغط، قلل شدة التدريب. ضيف ممارسات إدارة التوتر."
+        },
+        "severity": "medium"
+      },
+      {
+        "mistake": {
+          "en": "Skipping Stretching and Mobility",
+          "ar": "تخطي الاستريتش والحركية"
+        },
+        "why": {
+          "en": "Tight muscles and poor mobility limit your range of motion and increase injury risk.",
+          "ar": "العضلات المشدودة والحركية الضعيفة بتحد من نطاق حركتك وبتزود خطر الإصابة."
+        },
+        "fix": {
+          "en": "5-10 minutes of stretching after workouts. Regular mobility work on off days.",
+          "ar": "5-10 دقايق استريتش بعد التمارين. شغل حركية منتظم في أيام الراحة."
+        },
+        "severity": "medium"
+      }
+    ]
+  },
+  "mindsetMistakes": {
+    "title": {
+      "en": "Mindset Mistakes",
+      "ar": "أخطاء العقلية"
+    },
+    "mistakes": [
+      {
+        "mistake": {
+          "en": "Expecting Quick Results",
+          "ar": "توقع نتايج سريعة"
+        },
+        "fix": {
+          "en": "Real, visible change takes 3-6 months. Building a great physique takes years. Be patient.",
+          "ar": "التغيير الحقيقي المرئي بياخد 3-6 شهور. بناء جسم رائع بياخد سنين. اصبر."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Comparing to Others",
+          "ar": "المقارنة بالآخرين"
+        },
+        "fix": {
+          "en": "Compare to your past self only. Others have different genetics, experience, and circumstances.",
+          "ar": "قارن بنفسك القديمة بس. الآخرين عندهم جينات وخبرة وظروف مختلفة."
+        }
+      },
+      {
+        "mistake": {
+          "en": "All-or-Nothing Thinking",
+          "ar": "تفكير الكل أو لا شيء"
+        },
+        "fix": {
+          "en": "A bad day doesn't ruin everything. One missed workout doesn't matter in the long run.",
+          "ar": "يوم وحش مش بيدمر كل حاجة. تمرين واحد فاتك مش مهم على المدى الطويل."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Program Hopping",
+          "ar": "القفز بين البرامج"
+        },
+        "fix": {
+          "en": "Stick with a program for at least 8-12 weeks before switching. Results take time.",
+          "ar": "التزم ببرنامج على الأقل 8-12 أسبوع قبل ما تغير. النتايج بتاخد وقت."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Focusing Only on Scale Weight",
+          "ar": "التركيز على وزن الميزان بس"
+        },
+        "fix": {
+          "en": "Take progress photos, measurements, and track strength. Muscle gain + fat loss = scale stays same but you look better.",
+          "ar": "خد صور تقدم ومقاسات وتتبع القوة. اكتساب عضلات + خسارة دهون = الميزان ثابت بس شكلك أحسن."
+        }
+      }
+    ]
+  },
+  "summaryChecklist": {
+    "title": {
+      "en": "Quick Checklist: Are You Making These Mistakes?",
+      "ar": "قائمة تحقق سريعة: بتعمل الأخطاء دي؟"
+    },
+    "checklist": [
+      {
+        "item": { "en": "I warm up before every workout", "ar": "بسخن قبل كل تمرين" }
+      },
+      {
+        "item": { "en": "I follow a structured program", "ar": "بتبع برنامج منظم" }
+      },
+      {
+        "item": { "en": "I use proper form (video yourself to check)", "ar": "بستخدم فورم صح (صور نفسك عشان تتأكد)" }
+      },
+      {
+        "item": { "en": "I train all muscle groups, including legs", "ar": "بدرب كل المجموعات العضلية، بما فيها الرجل" }
+      },
+      {
+        "item": { "en": "I eat enough protein (1.6-2.2g/kg)", "ar": "باكل بروتين كفاية (1.6-2.2 جرام/كيلو)" }
+      },
+      {
+        "item": { "en": "I get 7-9 hours of sleep", "ar": "بنام 7-9 ساعات" }
+      },
+      {
+        "item": { "en": "I take rest days", "ar": "باخد أيام راحة" }
+      },
+      {
+        "item": { "en": "I track my workouts and progress", "ar": "بسجل تمريناتي وتقدمي" }
+      },
+      {
+        "item": { "en": "I progressively increase weight or reps", "ar": "بزود الوزن أو التكرارات تدريجياً" }
+      },
+      {
+        "item": { "en": "I'm patient and consistent", "ar": "صبور ومستمر" }
+      }
+    ]
+  }
+}
