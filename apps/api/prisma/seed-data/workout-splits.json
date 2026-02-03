@@ -1,0 +1,1453 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "workoutSplits": [
+    {
+      "id": "full-body",
+      "name": {
+        "en": "Full Body Split",
+        "ar": "تمرين الجسم الكامل"
+      },
+      "description": {
+        "en": "Train your entire body in each workout session, typically 3 times per week with rest days in between.",
+        "ar": "تمرن جسمك كله في كل جلسة تدريب، عادة 3 مرات في الأسبوع مع أيام راحة بينهم."
+      },
+      "frequency": "3 days/week",
+      "bestFor": {
+        "en": ["Beginners", "Those with limited time", "General fitness", "Strength building"],
+        "ar": ["المبتدئين", "اللي وقتهم محدود", "اللياقة العامة", "بناء القوة"]
+      },
+      "pros": {
+        "en": [
+          "Hit each muscle 3x per week for optimal growth",
+          "Flexible scheduling - miss a day, still trained everything",
+          "Great for beginners to learn movements",
+          "Burns more calories per session",
+          "Better recovery between sessions"
+        ],
+        "ar": [
+          "بتمرن كل عضلة 3 مرات في الأسبوع للنمو الأمثل",
+          "جدول مرن - لو فاتك يوم، برضو مرنت كل حاجة",
+          "ممتاز للمبتدئين يتعلموا الحركات",
+          "بتحرق سعرات أكتر في كل جلسة",
+          "استشفاء أحسن بين الجلسات"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Sessions can be long (60-90 minutes)",
+          "Hard to focus on weak points",
+          "Can be tiring by end of workout",
+          "Less volume per muscle per session"
+        ],
+        "ar": [
+          "الجلسات ممكن تكون طويلة (60-90 دقيقة)",
+          "صعب تركز على النقط الضعيفة",
+          "ممكن تتعب آخر التمرين",
+          "فوليوم أقل لكل عضلة في الجلسة"
+        ]
+      },
+      "sampleSchedule": {
+        "en": {
+          "Monday": "Full Body A",
+          "Tuesday": "Rest",
+          "Wednesday": "Full Body B",
+          "Thursday": "Rest",
+          "Friday": "Full Body C",
+          "Saturday": "Rest/Cardio",
+          "Sunday": "Rest"
+        },
+        "ar": {
+          "الاثنين": "جسم كامل أ",
+          "الثلاثاء": "راحة",
+          "الأربعاء": "جسم كامل ب",
+          "الخميس": "راحة",
+          "الجمعة": "جسم كامل ج",
+          "السبت": "راحة/كارديو",
+          "الأحد": "راحة"
+        }
+      },
+      "sampleWorkout": {
+        "dayA": {
+          "name": {
+            "en": "Full Body A - Strength Focus",
+            "ar": "جسم كامل أ - تركيز على القوة"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Barbell Squat", "ar": "سكوات بالبار" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Bench Press", "ar": "بنش بريس" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Barbell Row", "ar": "رو بالبار" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Overhead Press", "ar": "ضغط علوي" },
+              "sets": 3,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" },
+              "sets": 3,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Plank", "ar": "بلانك" },
+              "sets": 3,
+              "reps": "30-60 sec",
+              "rest": "1 min"
+            }
+          ]
+        },
+        "dayB": {
+          "name": {
+            "en": "Full Body B - Hypertrophy Focus",
+            "ar": "جسم كامل ب - تركيز على التضخيم"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Leg Press", "ar": "ليج بريس" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Incline Dumbbell Press", "ar": "بنش عالي دمبل" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Lat Pulldown", "ar": "سحب علوي" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Lateral Raises", "ar": "رفرفة جانبية" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Leg Curl", "ar": "ليج كيرل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Bicep Curls", "ar": "باي كيرل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Tricep Pushdown", "ar": "تراي بوش داون" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "dayC": {
+          "name": {
+            "en": "Full Body C - Power & Conditioning",
+            "ar": "جسم كامل ج - قوة ولياقة"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Deadlift", "ar": "ديدليفت" },
+              "sets": 4,
+              "reps": "5",
+              "rest": "3 min"
+            },
+            {
+              "name": { "en": "Dumbbell Bench Press", "ar": "بنش دمبل" },
+              "sets": 3,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Cable Row", "ar": "كيبل رو" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Bulgarian Split Squat", "ar": "سبليت سكوات بلغاري" },
+              "sets": 3,
+              "reps": "10 each leg",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Face Pulls", "ar": "فيس بولز" },
+              "sets": 3,
+              "reps": "15-20",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Hanging Leg Raises", "ar": "رفع رجل معلق" },
+              "sets": 3,
+              "reps": "10-15",
+              "rest": "60 sec"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "upper-lower",
+      "name": {
+        "en": "Upper/Lower Split",
+        "ar": "تقسيم علوي/سفلي"
+      },
+      "description": {
+        "en": "Alternate between upper body and lower body workouts, typically 4 days per week.",
+        "ar": "تبديل بين تمارين الجزء العلوي والسفلي، عادة 4 أيام في الأسبوع."
+      },
+      "frequency": "4 days/week",
+      "bestFor": {
+        "en": ["Intermediate lifters", "Those who want balance", "Strength and size goals", "Athletes"],
+        "ar": ["المتدربين المتوسطين", "اللي عايزين توازن", "أهداف القوة والحجم", "الرياضيين"]
+      },
+      "pros": {
+        "en": [
+          "Good balance of frequency and volume",
+          "Each muscle trained 2x per week",
+          "Allows adequate recovery",
+          "More focus per session",
+          "Flexible - can do 3 or 4 days"
+        ],
+        "ar": [
+          "توازن جيد بين التكرار والفوليوم",
+          "كل عضلة بتتمرن مرتين في الأسبوع",
+          "بيسمح باستشفاء كافي",
+          "تركيز أكتر في كل جلسة",
+          "مرن - ممكن 3 أو 4 أيام"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Lower body days can be brutal",
+          "Upper days can get long",
+          "Less flexibility than full body",
+          "Need 4 days commitment"
+        ],
+        "ar": [
+          "أيام الجزء السفلي ممكن تكون قاسية",
+          "أيام العلوي ممكن تطول",
+          "مرونة أقل من الجسم الكامل",
+          "محتاج التزام 4 أيام"
+        ]
+      },
+      "sampleSchedule": {
+        "en": {
+          "Monday": "Upper Body A",
+          "Tuesday": "Lower Body A",
+          "Wednesday": "Rest",
+          "Thursday": "Upper Body B",
+          "Friday": "Lower Body B",
+          "Saturday": "Rest/Cardio",
+          "Sunday": "Rest"
+        },
+        "ar": {
+          "الاثنين": "جزء علوي أ",
+          "الثلاثاء": "جزء سفلي أ",
+          "الأربعاء": "راحة",
+          "الخميس": "جزء علوي ب",
+          "الجمعة": "جزء سفلي ب",
+          "السبت": "راحة/كارديو",
+          "الأحد": "راحة"
+        }
+      },
+      "sampleWorkout": {
+        "upperA": {
+          "name": {
+            "en": "Upper A - Horizontal Push/Pull Focus",
+            "ar": "علوي أ - تركيز على الدفع/السحب الأفقي"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Bench Press", "ar": "بنش بريس" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Barbell Row", "ar": "رو بالبار" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Incline Dumbbell Press", "ar": "بنش عالي دمبل" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Cable Row", "ar": "كيبل رو" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Lateral Raises", "ar": "رفرفة جانبية" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Tricep Pushdown", "ar": "تراي بوش داون" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Hammer Curls", "ar": "هامر كيرل" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "lowerA": {
+          "name": {
+            "en": "Lower A - Quad Focus",
+            "ar": "سفلي أ - تركيز على الفخذ الأمامي"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Barbell Squat", "ar": "سكوات بالبار" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "3 min"
+            },
+            {
+              "name": { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" },
+              "sets": 3,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Leg Press", "ar": "ليج بريس" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Leg Curl", "ar": "ليج كيرل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Calf Raises", "ar": "رفع السمانة" },
+              "sets": 4,
+              "reps": "15-20",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Plank", "ar": "بلانك" },
+              "sets": 3,
+              "reps": "45-60 sec",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "upperB": {
+          "name": {
+            "en": "Upper B - Vertical Push/Pull Focus",
+            "ar": "علوي ب - تركيز على الدفع/السحب العمودي"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Overhead Press", "ar": "ضغط علوي" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Pull-ups/Lat Pulldown", "ar": "عقلة/سحب علوي" },
+              "sets": 4,
+              "reps": "6-10",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Dumbbell Shoulder Press", "ar": "ضغط كتف دمبل" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Chest Supported Row", "ar": "رو بسند الصدر" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Face Pulls", "ar": "فيس بولز" },
+              "sets": 3,
+              "reps": "15-20",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Overhead Tricep Extension", "ar": "تراي علوي" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Barbell Curl", "ar": "باي بالبار" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "lowerB": {
+          "name": {
+            "en": "Lower B - Hamstring/Glute Focus",
+            "ar": "سفلي ب - تركيز على الفخذ الخلفي والمؤخرة"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Deadlift", "ar": "ديدليفت" },
+              "sets": 4,
+              "reps": "5-6",
+              "rest": "3 min"
+            },
+            {
+              "name": { "en": "Front Squat/Goblet Squat", "ar": "فرونت سكوات/جوبلت سكوات" },
+              "sets": 3,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Hip Thrust", "ar": "هيب ثراست" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Leg Extension", "ar": "ليج اكستنشن" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Seated Calf Raises", "ar": "رفع سمانة جالس" },
+              "sets": 4,
+              "reps": "15-20",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Cable Crunches", "ar": "كرانش بالكيبل" },
+              "sets": 3,
+              "reps": "15-20",
+              "rest": "60 sec"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "push-pull-legs",
+      "name": {
+        "en": "Push/Pull/Legs (PPL)",
+        "ar": "دفع/سحب/رجل"
+      },
+      "description": {
+        "en": "Divide workouts into pushing movements, pulling movements, and leg exercises. Can be run 3 or 6 days per week.",
+        "ar": "قسم التمارين لحركات دفع، حركات سحب، وتمارين رجل. ممكن تشغلها 3 أو 6 أيام في الأسبوع."
+      },
+      "frequency": "3 or 6 days/week",
+      "bestFor": {
+        "en": ["Intermediate to advanced", "Bodybuilding focus", "Those with time to train 6 days", "Maximum muscle growth"],
+        "ar": ["المتوسطين للمتقدمين", "تركيز بودي بيلدينج", "اللي عندهم وقت 6 أيام", "أقصى نمو عضلي"]
+      },
+      "pros": {
+        "en": [
+          "High frequency when run 2x (6 days)",
+          "Logical muscle groupings",
+          "Easy to customize volume",
+          "Great for hypertrophy",
+          "Popular and well-researched"
+        ],
+        "ar": [
+          "تكرار عالي لما تشغلها مرتين (6 أيام)",
+          "تجميع عضلي منطقي",
+          "سهل تظبط الفوليوم",
+          "ممتاز للتضخيم",
+          "مشهور ومبحوث عنه كتير"
+        ]
+      },
+      "cons": {
+        "en": [
+          "6 days commitment is a lot",
+          "Can be hard to recover from",
+          "Leg day only 1-2x per week",
+          "Pull day can be very long"
+        ],
+        "ar": [
+          "التزام 6 أيام كتير",
+          "ممكن يكون صعب تستشفي منه",
+          "يوم الرجل مرة أو مرتين بس في الأسبوع",
+          "يوم السحب ممكن يطول جدا"
+        ]
+      },
+      "sampleSchedule": {
+        "sixDay": {
+          "en": {
+            "Monday": "Push",
+            "Tuesday": "Pull",
+            "Wednesday": "Legs",
+            "Thursday": "Push",
+            "Friday": "Pull",
+            "Saturday": "Legs",
+            "Sunday": "Rest"
+          },
+          "ar": {
+            "الاثنين": "دفع",
+            "الثلاثاء": "سحب",
+            "الأربعاء": "رجل",
+            "الخميس": "دفع",
+            "الجمعة": "سحب",
+            "السبت": "رجل",
+            "الأحد": "راحة"
+          }
+        },
+        "threeDay": {
+          "en": {
+            "Monday": "Push",
+            "Tuesday": "Rest",
+            "Wednesday": "Pull",
+            "Thursday": "Rest",
+            "Friday": "Legs",
+            "Saturday": "Rest",
+            "Sunday": "Rest"
+          },
+          "ar": {
+            "الاثنين": "دفع",
+            "الثلاثاء": "راحة",
+            "الأربعاء": "سحب",
+            "الخميس": "راحة",
+            "الجمعة": "رجل",
+            "السبت": "راحة",
+            "الأحد": "راحة"
+          }
+        }
+      },
+      "sampleWorkout": {
+        "push": {
+          "name": {
+            "en": "Push Day - Chest, Shoulders, Triceps",
+            "ar": "يوم الدفع - صدر، كتف، تراي"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Bench Press", "ar": "بنش بريس" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Overhead Press", "ar": "ضغط علوي" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Incline Dumbbell Press", "ar": "بنش عالي دمبل" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Cable Flyes", "ar": "فلاي بالكيبل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Lateral Raises", "ar": "رفرفة جانبية" },
+              "sets": 4,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Tricep Dips", "ar": "ديبس تراي" },
+              "sets": 3,
+              "reps": "8-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Overhead Tricep Extension", "ar": "تراي علوي" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "pull": {
+          "name": {
+            "en": "Pull Day - Back, Rear Delts, Biceps",
+            "ar": "يوم السحب - ظهر، كتف خلفي، باي"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Deadlift/Barbell Row", "ar": "ديدليفت/رو بالبار" },
+              "sets": 4,
+              "reps": "5-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Pull-ups/Lat Pulldown", "ar": "عقلة/سحب علوي" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Cable Row", "ar": "كيبل رو" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Face Pulls", "ar": "فيس بولز" },
+              "sets": 4,
+              "reps": "15-20",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Reverse Flyes", "ar": "فلاي خلفي" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Barbell Curl", "ar": "باي بالبار" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Hammer Curls", "ar": "هامر كيرل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "legs": {
+          "name": {
+            "en": "Leg Day - Quads, Hamstrings, Glutes, Calves",
+            "ar": "يوم الرجل - فخذ أمامي، فخذ خلفي، مؤخرة، سمانة"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Barbell Squat", "ar": "سكوات بالبار" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "3 min"
+            },
+            {
+              "name": { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Leg Press", "ar": "ليج بريس" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Leg Curl", "ar": "ليج كيرل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Leg Extension", "ar": "ليج اكستنشن" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Hip Thrust", "ar": "هيب ثراست" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Calf Raises", "ar": "رفع السمانة" },
+              "sets": 4,
+              "reps": "15-20",
+              "rest": "60 sec"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bro-split",
+      "name": {
+        "en": "Bro Split (Body Part Split)",
+        "ar": "برو سبليت (تقسيم الأجزاء)"
+      },
+      "description": {
+        "en": "Train one major muscle group per day, typically 5 days per week. Each muscle gets maximum volume once per week.",
+        "ar": "تمرن عضلة رئيسية واحدة في اليوم، عادة 5 أيام في الأسبوع. كل عضلة بتاخد أقصى فوليوم مرة في الأسبوع."
+      },
+      "frequency": "5 days/week",
+      "bestFor": {
+        "en": ["Advanced lifters", "Bodybuilders", "Those who enjoy long focused sessions", "Muscle specialization"],
+        "ar": ["المتدربين المتقدمين", "لاعبي كمال الأجسام", "اللي بيحبوا جلسات طويلة ومركزة", "التخصص العضلي"]
+      },
+      "pros": {
+        "en": [
+          "Maximum focus on each muscle",
+          "High volume per session",
+          "Psychologically satisfying pump",
+          "Easy to program weak point training",
+          "Good for advanced lifters"
+        ],
+        "ar": [
+          "أقصى تركيز على كل عضلة",
+          "فوليوم عالي في كل جلسة",
+          "الضخ مرضي نفسياً",
+          "سهل تبرمج تدريب النقط الضعيفة",
+          "كويس للمتدربين المتقدمين"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Only hit each muscle 1x per week",
+          "Not optimal for beginners",
+          "Miss a day = miss a muscle for 2 weeks",
+          "Research shows 2x frequency is better",
+          "Long recovery between sessions"
+        ],
+        "ar": [
+          "بتمرن كل عضلة مرة واحدة بس في الأسبوع",
+          "مش مثالي للمبتدئين",
+          "لو فاتك يوم = فاتتك عضلة لمدة أسبوعين",
+          "الأبحاث بتقول التكرار مرتين أحسن",
+          "استشفاء طويل بين الجلسات"
+        ]
+      },
+      "sampleSchedule": {
+        "en": {
+          "Monday": "Chest",
+          "Tuesday": "Back",
+          "Wednesday": "Shoulders",
+          "Thursday": "Legs",
+          "Friday": "Arms",
+          "Saturday": "Rest",
+          "Sunday": "Rest"
+        },
+        "ar": {
+          "الاثنين": "صدر",
+          "الثلاثاء": "ظهر",
+          "الأربعاء": "كتف",
+          "الخميس": "رجل",
+          "الجمعة": "دراعات",
+          "السبت": "راحة",
+          "الأحد": "راحة"
+        }
+      },
+      "sampleWorkout": {
+        "chest": {
+          "name": {
+            "en": "Chest Day",
+            "ar": "يوم الصدر"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Barbell Bench Press", "ar": "بنش بريس بالبار" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Incline Dumbbell Press", "ar": "بنش عالي دمبل" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Decline Press", "ar": "بنش سفلي" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Dumbbell Flyes", "ar": "فلاي دمبل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Cable Crossover", "ar": "كروس أوفر" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Chest Dips", "ar": "ديبس صدر" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            }
+          ]
+        },
+        "back": {
+          "name": {
+            "en": "Back Day",
+            "ar": "يوم الظهر"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Deadlift", "ar": "ديدليفت" },
+              "sets": 4,
+              "reps": "5-6",
+              "rest": "3 min"
+            },
+            {
+              "name": { "en": "Pull-ups", "ar": "عقلة" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Barbell Row", "ar": "رو بالبار" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Lat Pulldown", "ar": "سحب علوي" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Seated Cable Row", "ar": "كيبل رو جالس" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Single Arm Dumbbell Row", "ar": "رو دمبل بإيد واحدة" },
+              "sets": 3,
+              "reps": "10-12 each",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "shoulders": {
+          "name": {
+            "en": "Shoulder Day",
+            "ar": "يوم الكتف"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Overhead Press", "ar": "ضغط علوي" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Dumbbell Shoulder Press", "ar": "ضغط كتف دمبل" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Lateral Raises", "ar": "رفرفة جانبية" },
+              "sets": 4,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Front Raises", "ar": "رفرفة أمامية" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Reverse Flyes", "ar": "فلاي خلفي" },
+              "sets": 4,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Face Pulls", "ar": "فيس بولز" },
+              "sets": 3,
+              "reps": "15-20",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Shrugs", "ar": "شراجز" },
+              "sets": 4,
+              "reps": "12-15",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "legs": {
+          "name": {
+            "en": "Leg Day",
+            "ar": "يوم الرجل"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Barbell Squat", "ar": "سكوات بالبار" },
+              "sets": 4,
+              "reps": "6-8",
+              "rest": "3 min"
+            },
+            {
+              "name": { "en": "Leg Press", "ar": "ليج بريس" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Leg Extension", "ar": "ليج اكستنشن" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Leg Curl", "ar": "ليج كيرل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Walking Lunges", "ar": "لانجز ماشي" },
+              "sets": 3,
+              "reps": "12 each leg",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Calf Raises", "ar": "رفع السمانة" },
+              "sets": 5,
+              "reps": "15-20",
+              "rest": "60 sec"
+            }
+          ]
+        },
+        "arms": {
+          "name": {
+            "en": "Arms Day",
+            "ar": "يوم الدراعات"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Barbell Curl", "ar": "باي بالبار" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Skull Crushers", "ar": "سكال كراشرز" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Hammer Curls", "ar": "هامر كيرل" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Tricep Pushdown", "ar": "تراي بوش داون" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Preacher Curls", "ar": "بريتشر كيرل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Overhead Tricep Extension", "ar": "تراي علوي" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Concentration Curls", "ar": "كونسنتريشن كيرل" },
+              "sets": 2,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Tricep Dips", "ar": "ديبس تراي" },
+              "sets": 2,
+              "reps": "10-15",
+              "rest": "60 sec"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "arnold-split",
+      "name": {
+        "en": "Arnold Split",
+        "ar": "تقسيم أرنولد"
+      },
+      "description": {
+        "en": "Made famous by Arnold Schwarzenegger. Pairs chest/back, shoulders/arms, and legs. High volume, 6 days per week.",
+        "ar": "اشتهر بيه أرنولد شوارزنيجر. بيجمع صدر/ظهر، كتف/دراعات، ورجل. فوليوم عالي، 6 أيام في الأسبوع."
+      },
+      "frequency": "6 days/week",
+      "bestFor": {
+        "en": ["Advanced lifters", "High work capacity", "Classic bodybuilding", "Those who love training"],
+        "ar": ["المتدربين المتقدمين", "قدرة عمل عالية", "كمال أجسام كلاسيكي", "اللي بيحبوا التدريب"]
+      },
+      "pros": {
+        "en": [
+          "Train antagonist muscles together (great pump)",
+          "Hit each muscle 2x per week",
+          "Time-efficient pairing",
+          "Proven by one of the greatest",
+          "Good for supersets"
+        ],
+        "ar": [
+          "تمرن العضلات المتضادة مع بعض (ضخ ممتاز)",
+          "بتمرن كل عضلة مرتين في الأسبوع",
+          "تجميع موفر للوقت",
+          "مثبت من واحد من الأعظم",
+          "كويس للسوبر سيتس"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Very high volume",
+          "Requires 6 days",
+          "Long sessions (90+ minutes)",
+          "Not for beginners",
+          "Recovery can be challenging"
+        ],
+        "ar": [
+          "فوليوم عالي جداً",
+          "محتاج 6 أيام",
+          "جلسات طويلة (90+ دقيقة)",
+          "مش للمبتدئين",
+          "الاستشفاء ممكن يكون صعب"
+        ]
+      },
+      "sampleSchedule": {
+        "en": {
+          "Monday": "Chest & Back",
+          "Tuesday": "Shoulders & Arms",
+          "Wednesday": "Legs",
+          "Thursday": "Chest & Back",
+          "Friday": "Shoulders & Arms",
+          "Saturday": "Legs",
+          "Sunday": "Rest"
+        },
+        "ar": {
+          "الاثنين": "صدر وظهر",
+          "الثلاثاء": "كتف ودراعات",
+          "الأربعاء": "رجل",
+          "الخميس": "صدر وظهر",
+          "الجمعة": "كتف ودراعات",
+          "السبت": "رجل",
+          "الأحد": "راحة"
+        }
+      },
+      "sampleWorkout": {
+        "chestBack": {
+          "name": {
+            "en": "Chest & Back",
+            "ar": "صدر وظهر"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Bench Press", "ar": "بنش بريس" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "90 sec",
+              "superset": true
+            },
+            {
+              "name": { "en": "Pull-ups", "ar": "عقلة" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "90 sec",
+              "superset": true
+            },
+            {
+              "name": { "en": "Incline Press", "ar": "بنش عالي" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "90 sec",
+              "superset": true
+            },
+            {
+              "name": { "en": "Barbell Row", "ar": "رو بالبار" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "90 sec",
+              "superset": true
+            },
+            {
+              "name": { "en": "Dumbbell Flyes", "ar": "فلاي دمبل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec",
+              "superset": true
+            },
+            {
+              "name": { "en": "Lat Pulldown", "ar": "سحب علوي" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec",
+              "superset": true
+            }
+          ]
+        },
+        "shouldersArms": {
+          "name": {
+            "en": "Shoulders & Arms",
+            "ar": "كتف ودراعات"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Overhead Press", "ar": "ضغط علوي" },
+              "sets": 4,
+              "reps": "8-10",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Lateral Raises", "ar": "رفرفة جانبية" },
+              "sets": 4,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Reverse Flyes", "ar": "فلاي خلفي" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Barbell Curl", "ar": "باي بالبار" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "60 sec",
+              "superset": true
+            },
+            {
+              "name": { "en": "Skull Crushers", "ar": "سكال كراشرز" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "60 sec",
+              "superset": true
+            },
+            {
+              "name": { "en": "Hammer Curls", "ar": "هامر كيرل" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec",
+              "superset": true
+            },
+            {
+              "name": { "en": "Tricep Pushdown", "ar": "تراي بوش داون" },
+              "sets": 3,
+              "reps": "12-15",
+              "rest": "60 sec",
+              "superset": true
+            }
+          ]
+        },
+        "legs": {
+          "name": {
+            "en": "Legs",
+            "ar": "رجل"
+          },
+          "exercises": [
+            {
+              "name": { "en": "Barbell Squat", "ar": "سكوات بالبار" },
+              "sets": 5,
+              "reps": "8-10",
+              "rest": "2-3 min"
+            },
+            {
+              "name": { "en": "Leg Press", "ar": "ليج بريس" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Leg Curl", "ar": "ليج كيرل" },
+              "sets": 4,
+              "reps": "10-12",
+              "rest": "90 sec"
+            },
+            {
+              "name": { "en": "Leg Extension", "ar": "ليج اكستنشن" },
+              "sets": 4,
+              "reps": "12-15",
+              "rest": "60 sec"
+            },
+            {
+              "name": { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" },
+              "sets": 3,
+              "reps": "10-12",
+              "rest": "2 min"
+            },
+            {
+              "name": { "en": "Calf Raises", "ar": "رفع السمانة" },
+              "sets": 5,
+              "reps": "15-20",
+              "rest": "60 sec"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "choosingSplit": {
+    "title": {
+      "en": "How to Choose the Right Split for You",
+      "ar": "إزاي تختار التقسيم المناسب ليك"
+    },
+    "factors": [
+      {
+        "factor": {
+          "en": "Training Experience",
+          "ar": "خبرة التدريب"
+        },
+        "recommendations": {
+          "en": {
+            "beginner": "Full Body 3x/week",
+            "intermediate": "Upper/Lower or PPL",
+            "advanced": "Any split based on goals"
+          },
+          "ar": {
+            "مبتدئ": "جسم كامل 3 مرات/أسبوع",
+            "متوسط": "علوي/سفلي أو PPL",
+            "متقدم": "أي تقسيم حسب الأهداف"
+          }
+        }
+      },
+      {
+        "factor": {
+          "en": "Days Available",
+          "ar": "الأيام المتاحة"
+        },
+        "recommendations": {
+          "en": {
+            "2-3 days": "Full Body",
+            "4 days": "Upper/Lower",
+            "5 days": "PPL or Bro Split",
+            "6 days": "PPL 2x or Arnold"
+          },
+          "ar": {
+            "2-3 أيام": "جسم كامل",
+            "4 أيام": "علوي/سفلي",
+            "5 أيام": "PPL أو برو سبليت",
+            "6 أيام": "PPL مرتين أو أرنولد"
+          }
+        }
+      },
+      {
+        "factor": {
+          "en": "Primary Goal",
+          "ar": "الهدف الأساسي"
+        },
+        "recommendations": {
+          "en": {
+            "strength": "Full Body or Upper/Lower",
+            "muscle": "PPL or Bro Split",
+            "athleticism": "Full Body or Upper/Lower",
+            "general fitness": "Full Body"
+          },
+          "ar": {
+            "قوة": "جسم كامل أو علوي/سفلي",
+            "عضلات": "PPL أو برو سبليت",
+            "رياضية": "جسم كامل أو علوي/سفلي",
+            "لياقة عامة": "جسم كامل"
+          }
+        }
+      },
+      {
+        "factor": {
+          "en": "Recovery Capacity",
+          "ar": "قدرة الاستشفاء"
+        },
+        "recommendations": {
+          "en": {
+            "limited": "Full Body with more rest days",
+            "average": "Upper/Lower",
+            "excellent": "PPL 2x or Arnold"
+          },
+          "ar": {
+            "محدودة": "جسم كامل مع أيام راحة أكتر",
+            "متوسطة": "علوي/سفلي",
+            "ممتازة": "PPL مرتين أو أرنولد"
+          }
+        }
+      }
+    ]
+  },
+  "progressionTips": {
+    "title": {
+      "en": "Progression Tips for Any Split",
+      "ar": "نصائح التقدم لأي تقسيم"
+    },
+    "tips": [
+      {
+        "tip": {
+          "en": "Progressive Overload",
+          "ar": "الحمل التدريجي"
+        },
+        "details": {
+          "en": "Add weight, reps, or sets over time. Even small increases add up.",
+          "ar": "زود الوزن أو التكرارات أو المجموعات مع الوقت. حتى الزيادات الصغيرة بتفرق."
+        }
+      },
+      {
+        "tip": {
+          "en": "Track Your Workouts",
+          "ar": "سجل تمريناتك"
+        },
+        "details": {
+          "en": "Keep a log of weights, reps, and how you felt. This helps you know when to progress.",
+          "ar": "اكتب الأوزان والتكرارات وإحساسك إزاي. ده بيساعدك تعرف امتى تتقدم."
+        }
+      },
+      {
+        "tip": {
+          "en": "Deload Every 4-8 Weeks",
+          "ar": "ديلود كل 4-8 أسابيع"
+        },
+        "details": {
+          "en": "Reduce intensity/volume for a week to let your body recover and come back stronger.",
+          "ar": "قلل الشدة/الفوليوم لمدة أسبوع عشان جسمك يستريح ويرجع أقوى."
+        }
+      },
+      {
+        "tip": {
+          "en": "Prioritize Sleep",
+          "ar": "اهتم بالنوم"
+        },
+        "details": {
+          "en": "7-9 hours of quality sleep is when your muscles actually grow.",
+          "ar": "7-9 ساعات نوم جيد هو وقت نمو العضلات الفعلي."
+        }
+      },
+      {
+        "tip": {
+          "en": "Nutrition Supports Training",
+          "ar": "التغذية بتدعم التدريب"
+        },
+        "details": {
+          "en": "Eat enough protein (1.6-2.2g/kg) and calories to support your goals.",
+          "ar": "كل بروتين كافي (1.6-2.2 جرام/كيلو) وسعرات تدعم أهدافك."
+        }
+      },
+      {
+        "tip": {
+          "en": "Don't Change Too Often",
+          "ar": "متغيرش كتير"
+        },
+        "details": {
+          "en": "Stick with a program for at least 8-12 weeks before switching.",
+          "ar": "التزم ببرنامج على الأقل 8-12 أسبوع قبل ما تغير."
+        }
+      }
+    ]
+  },
+  "commonMistakes": {
+    "title": {
+      "en": "Common Programming Mistakes",
+      "ar": "أخطاء البرمجة الشائعة"
+    },
+    "mistakes": [
+      {
+        "mistake": {
+          "en": "Program Hopping",
+          "ar": "القفز بين البرامج"
+        },
+        "solution": {
+          "en": "Commit to one program for at least 2-3 months before evaluating results.",
+          "ar": "التزم ببرنامج واحد على الأقل 2-3 شهور قبل ما تقيم النتائج."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Skipping Leg Day",
+          "ar": "تخطي يوم الرجل"
+        },
+        "solution": {
+          "en": "Legs are 50% of your body. Train them with the same intensity as upper body.",
+          "ar": "الرجل 50% من جسمك. مرنها بنفس شدة الجزء العلوي."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Too Much Volume",
+          "ar": "فوليوم زيادة"
+        },
+        "solution": {
+          "en": "More isn't always better. Quality over quantity. 10-20 sets per muscle per week is plenty.",
+          "ar": "الأكتر مش دايماً أحسن. الجودة أهم من الكمية. 10-20 مجموعة لكل عضلة في الأسبوع كفاية."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Ignoring Compound Movements",
+          "ar": "تجاهل التمارين المركبة"
+        },
+        "solution": {
+          "en": "Squats, deadlifts, bench, rows, and overhead press should be the foundation of any program.",
+          "ar": "السكوات، الديدليفت، البنش، الرو، والضغط العلوي لازم يكونوا أساس أي برنامج."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Not Resting Enough",
+          "ar": "راحة مش كافية"
+        },
+        "solution": {
+          "en": "Rest days are when you grow. Don't train through pain or fatigue.",
+          "ar": "أيام الراحة هي وقت النمو. متتمرنش وإنت تعبان أو عندك ألم."
+        }
+      }
+    ]
+  }
+}
