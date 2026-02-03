@@ -1,0 +1,759 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "introduction": {
+    "title": {
+      "en": "Progressive Overload: The Key to Muscle Growth",
+      "ar": "الحمل التدريجي: مفتاح نمو العضلات"
+    },
+    "definition": {
+      "en": "Progressive overload is the gradual increase of stress placed on the body during exercise. It's the single most important principle for building muscle and strength. Without it, your body has no reason to adapt and grow.",
+      "ar": "الحمل التدريجي هو الزيادة التدريجية في الضغط على الجسم أثناء التمرين. ده أهم مبدأ لبناء العضلات والقوة. من غيره، جسمك مفيش سبب يتكيف ويكبر."
+    },
+    "whyItWorks": {
+      "en": "Your muscles grow in response to being challenged. When you lift heavier weights or do more reps than before, your body adapts by building more muscle tissue. If you do the same workout forever, your body has no reason to change.",
+      "ar": "عضلاتك بتكبر كرد فعل للتحدي. لما بترفع أوزان أتقل أو بتعمل تكرارات أكتر من قبل، جسمك بيتكيف ببناء أنسجة عضلية أكتر. لو بتعمل نفس التمرين على طول، جسمك مفيش سبب يتغير."
+    }
+  },
+  "methods": {
+    "title": {
+      "en": "Methods of Progressive Overload",
+      "ar": "طرق الحمل التدريجي"
+    },
+    "list": [
+      {
+        "id": "increase-weight",
+        "name": {
+          "en": "Increase Weight",
+          "ar": "زيادة الوزن"
+        },
+        "description": {
+          "en": "The most common form. Add more weight to the bar or use heavier dumbbells.",
+          "ar": "الشكل الأكثر شيوعاً. زود وزن على البار أو استخدم دمبل أتقل."
+        },
+        "howTo": {
+          "en": [
+            "Start with a weight you can do for your target rep range with good form",
+            "Once you can complete all sets at the top of your rep range, increase weight",
+            "For compound lifts: add 2.5-5kg (5-10lbs)",
+            "For isolation exercises: add 1-2.5kg (2-5lbs)",
+            "Be patient - small increases add up"
+          ],
+          "ar": [
+            "ابدأ بوزن تقدر تعمله في نطاق التكرارات المستهدف بفورم كويس",
+            "لما تقدر تكمل كل المجموعات في أعلى نطاق التكرارات، زود الوزن",
+            "للتمارين المركبة: زود 2.5-5 كيلو",
+            "للتمارين العزل: زود 1-2.5 كيلو",
+            "اصبر - الزيادات الصغيرة بتفرق مع الوقت"
+          ]
+        },
+        "example": {
+          "en": "Week 1: Bench Press 60kg x 8 reps → Week 4: Bench Press 62.5kg x 8 reps",
+          "ar": "الأسبوع 1: بنش بريس 60 كيلو × 8 تكرارات → الأسبوع 4: بنش بريس 62.5 كيلو × 8 تكرارات"
+        },
+        "priority": 1
+      },
+      {
+        "id": "increase-reps",
+        "name": {
+          "en": "Increase Reps",
+          "ar": "زيادة التكرارات"
+        },
+        "description": {
+          "en": "Do more repetitions with the same weight before increasing weight.",
+          "ar": "اعمل تكرارات أكتر بنفس الوزن قبل ما تزود الوزن."
+        },
+        "howTo": {
+          "en": [
+            "Choose a rep range (e.g., 8-12 reps)",
+            "Start at the bottom of the range",
+            "Add 1-2 reps per workout when possible",
+            "Once you hit the top of the range on all sets, increase weight",
+            "Go back to the bottom of the rep range with new weight"
+          ],
+          "ar": [
+            "اختار نطاق تكرارات (مثلاً 8-12 تكرار)",
+            "ابدأ من أسفل النطاق",
+            "زود 1-2 تكرار كل تمرين لما تقدر",
+            "لما توصل لأعلى النطاق في كل المجموعات، زود الوزن",
+            "ارجع لأسفل نطاق التكرارات بالوزن الجديد"
+          ]
+        },
+        "example": {
+          "en": "Week 1: 50kg x 8 reps → Week 2: 50kg x 9 reps → Week 3: 50kg x 10 reps → Week 4: 52.5kg x 8 reps",
+          "ar": "الأسبوع 1: 50 كيلو × 8 → الأسبوع 2: 50 كيلو × 9 → الأسبوع 3: 50 كيلو × 10 → الأسبوع 4: 52.5 كيلو × 8"
+        },
+        "priority": 2
+      },
+      {
+        "id": "increase-sets",
+        "name": {
+          "en": "Increase Sets",
+          "ar": "زيادة المجموعات"
+        },
+        "description": {
+          "en": "Add more working sets to increase total volume.",
+          "ar": "زود مجموعات شغل أكتر عشان تزود الفوليوم الكلي."
+        },
+        "howTo": {
+          "en": [
+            "Start with 2-3 sets per exercise",
+            "Add 1 set every 1-2 weeks",
+            "Max out at 4-5 sets per exercise",
+            "Once you hit max sets, focus on other progression methods",
+            "Be careful of excessive volume"
+          ],
+          "ar": [
+            "ابدأ بـ 2-3 مجموعات لكل تمرين",
+            "زود مجموعة كل أسبوع أو اتنين",
+            "الماكس 4-5 مجموعات لكل تمرين",
+            "لما توصل للماكس، ركز على طرق تقدم تانية",
+            "خلي بالك من الفوليوم الزيادة"
+          ]
+        },
+        "example": {
+          "en": "Week 1: 3 sets of squats → Week 4: 4 sets of squats → Week 8: 5 sets of squats",
+          "ar": "الأسبوع 1: 3 مجموعات سكوات → الأسبوع 4: 4 مجموعات سكوات → الأسبوع 8: 5 مجموعات سكوات"
+        },
+        "priority": 3
+      },
+      {
+        "id": "increase-frequency",
+        "name": {
+          "en": "Increase Training Frequency",
+          "ar": "زيادة عدد مرات التدريب"
+        },
+        "description": {
+          "en": "Train each muscle more often per week.",
+          "ar": "درب كل عضلة مرات أكتر في الأسبوع."
+        },
+        "howTo": {
+          "en": [
+            "Move from training each muscle 1x/week to 2x/week",
+            "Split your volume across more sessions",
+            "Example: Instead of 16 sets on Monday, do 8 sets Monday + 8 sets Thursday",
+            "This allows better recovery and performance",
+            "Research shows 2x/week is optimal for most people"
+          ],
+          "ar": [
+            "غير من تدريب كل عضلة مرة/أسبوع لمرتين/أسبوع",
+            "قسم الفوليوم على جلسات أكتر",
+            "مثال: بدل 16 مجموعة الاثنين، اعمل 8 الاثنين + 8 الخميس",
+            "ده بيسمح باستشفاء وأداء أحسن",
+            "الأبحاث بتقول مرتين/أسبوع مثالي لمعظم الناس"
+          ]
+        },
+        "example": {
+          "en": "Switch from Bro Split (chest 1x/week) to PPL (chest 2x/week)",
+          "ar": "غير من برو سبليت (صدر مرة/أسبوع) لـ PPL (صدر مرتين/أسبوع)"
+        },
+        "priority": 4
+      },
+      {
+        "id": "improve-form",
+        "name": {
+          "en": "Improve Range of Motion & Form",
+          "ar": "تحسين نطاق الحركة والفورم"
+        },
+        "description": {
+          "en": "Use fuller range of motion and better technique to increase muscle tension.",
+          "ar": "استخدم نطاق حركة أكمل وتكنيك أحسن عشان تزود الشد العضلي."
+        },
+        "howTo": {
+          "en": [
+            "Focus on controlled eccentrics (lowering phase)",
+            "Pause at the stretched position",
+            "Use full range of motion",
+            "Better form = more muscle activation = more growth",
+            "Sometimes reducing weight to improve form is progression"
+          ],
+          "ar": [
+            "ركز على النزول المتحكم (مرحلة الإنزال)",
+            "توقف في وضع الاستطالة",
+            "استخدم نطاق حركة كامل",
+            "فورم أحسن = تنشيط عضلي أكتر = نمو أكتر",
+            "أحياناً تقليل الوزن لتحسين الفورم يعتبر تقدم"
+          ]
+        },
+        "example": {
+          "en": "Half squats → Full depth squats (even with less weight)",
+          "ar": "نص سكوات → سكوات بعمق كامل (حتى بوزن أقل)"
+        },
+        "priority": 5
+      },
+      {
+        "id": "decrease-rest",
+        "name": {
+          "en": "Decrease Rest Time",
+          "ar": "تقليل وقت الراحة"
+        },
+        "description": {
+          "en": "Reduce rest periods between sets to increase density and metabolic stress.",
+          "ar": "قلل فترات الراحة بين المجموعات عشان تزود الكثافة والضغط الأيضي."
+        },
+        "howTo": {
+          "en": [
+            "Track your rest periods (use a timer)",
+            "Gradually reduce by 10-15 seconds per week",
+            "For hypertrophy: aim for 60-90 seconds",
+            "For strength: keep rest at 2-3 minutes",
+            "Don't sacrifice form for shorter rest"
+          ],
+          "ar": [
+            "سجل فترات الراحة (استخدم تايمر)",
+            "قلل تدريجياً 10-15 ثانية كل أسبوع",
+            "للتضخيم: استهدف 60-90 ثانية",
+            "للقوة: خلي الراحة 2-3 دقايق",
+            "متضحيش بالفورم عشان راحة أقصر"
+          ]
+        },
+        "example": {
+          "en": "Week 1: 90 sec rest → Week 4: 75 sec rest → Week 8: 60 sec rest",
+          "ar": "الأسبوع 1: 90 ثانية راحة → الأسبوع 4: 75 ثانية راحة → الأسبوع 8: 60 ثانية راحة"
+        },
+        "priority": 6
+      },
+      {
+        "id": "tempo-manipulation",
+        "name": {
+          "en": "Tempo Manipulation",
+          "ar": "التحكم في السرعة"
+        },
+        "description": {
+          "en": "Control the speed of each rep to increase time under tension.",
+          "ar": "تحكم في سرعة كل تكرار عشان تزود وقت الشد."
+        },
+        "howTo": {
+          "en": [
+            "Use tempo notation: 3-1-2-0 (eccentric-pause-concentric-pause)",
+            "Slow down the eccentric (lowering) phase",
+            "Add pauses at stretched or contracted positions",
+            "This increases time under tension without adding weight",
+            "Great for breaking plateaus"
+          ],
+          "ar": [
+            "استخدم تدوين السرعة: 3-1-2-0 (نزول-توقف-صعود-توقف)",
+            "بطئ مرحلة النزول",
+            "زود توقفات في وضع الاستطالة أو الانقباض",
+            "ده بيزود وقت الشد من غير زيادة وزن",
+            "ممتاز لكسر الثبات"
+          ]
+        },
+        "example": {
+          "en": "Normal tempo squats → 4 second descent, 1 second pause, explode up",
+          "ar": "سكوات بسرعة عادية → نزول 4 ثواني، توقف ثانية، اصعد بقوة"
+        },
+        "priority": 7
+      }
+    ]
+  },
+  "trackingProgress": {
+    "title": {
+      "en": "How to Track Your Progress",
+      "ar": "إزاي تتابع تقدمك"
+    },
+    "importance": {
+      "en": "If you're not tracking, you're guessing. You can't improve what you don't measure.",
+      "ar": "لو مش بتسجل، إنت بتخمن. مش هتقدر تحسن حاجة مش بتقيسها."
+    },
+    "whatToTrack": [
+      {
+        "item": {
+          "en": "Exercise name",
+          "ar": "اسم التمرين"
+        }
+      },
+      {
+        "item": {
+          "en": "Weight used",
+          "ar": "الوزن المستخدم"
+        }
+      },
+      {
+        "item": {
+          "en": "Sets and reps completed",
+          "ar": "المجموعات والتكرارات المكتملة"
+        }
+      },
+      {
+        "item": {
+          "en": "Rest periods",
+          "ar": "فترات الراحة"
+        }
+      },
+      {
+        "item": {
+          "en": "How you felt (RPE/energy)",
+          "ar": "إحساسك إزاي (RPE/طاقة)"
+        }
+      },
+      {
+        "item": {
+          "en": "Any notes (form issues, soreness, etc.)",
+          "ar": "أي ملاحظات (مشاكل فورم، ألم، إلخ)"
+        }
+      }
+    ],
+    "methods": [
+      {
+        "method": {
+          "en": "Workout App (Recommended)",
+          "ar": "تطبيق تمرين (موصى به)"
+        },
+        "description": {
+          "en": "Use Forma or similar apps to log workouts, track progress charts, and get reminders.",
+          "ar": "استخدم Forma أو تطبيقات مشابهة لتسجيل التمارين وتتبع الرسوم البيانية والحصول على تذكيرات."
+        }
+      },
+      {
+        "method": {
+          "en": "Spreadsheet",
+          "ar": "جدول إكسل"
+        },
+        "description": {
+          "en": "Create a simple spreadsheet with date, exercise, weight, sets, reps columns.",
+          "ar": "اعمل جدول بسيط بأعمدة التاريخ، التمرين، الوزن، المجموعات، التكرارات."
+        }
+      },
+      {
+        "method": {
+          "en": "Notebook",
+          "ar": "مفكرة"
+        },
+        "description": {
+          "en": "Old school but effective. Write down everything after each workout.",
+          "ar": "طريقة قديمة بس فعالة. اكتب كل حاجة بعد كل تمرين."
+        }
+      }
+    ]
+  },
+  "plateaus": {
+    "title": {
+      "en": "Breaking Through Plateaus",
+      "ar": "كسر الثبات"
+    },
+    "definition": {
+      "en": "A plateau is when you stop making progress despite training consistently. It happens to everyone.",
+      "ar": "الثبات هو لما توقف عن التقدم رغم التمرين المستمر. بيحصل لكل الناس."
+    },
+    "causes": [
+      {
+        "cause": {
+          "en": "Not eating enough",
+          "ar": "مش بتاكل كفاية"
+        },
+        "solution": {
+          "en": "Increase calories by 200-300 per day",
+          "ar": "زود السعرات 200-300 في اليوم"
+        }
+      },
+      {
+        "cause": {
+          "en": "Not sleeping enough",
+          "ar": "مش بتنام كفاية"
+        },
+        "solution": {
+          "en": "Aim for 7-9 hours of quality sleep",
+          "ar": "استهدف 7-9 ساعات نوم جيد"
+        }
+      },
+      {
+        "cause": {
+          "en": "Too much volume",
+          "ar": "فوليوم زيادة"
+        },
+        "solution": {
+          "en": "Take a deload week, then reduce volume",
+          "ar": "خد أسبوع ديلود، وبعدين قلل الفوليوم"
+        }
+      },
+      {
+        "cause": {
+          "en": "Not enough volume",
+          "ar": "فوليوم مش كافي"
+        },
+        "solution": {
+          "en": "Gradually add sets or training days",
+          "ar": "زود مجموعات أو أيام تدريب تدريجياً"
+        }
+      },
+      {
+        "cause": {
+          "en": "Same routine too long",
+          "ar": "نفس الروتين لفترة طويلة"
+        },
+        "solution": {
+          "en": "Change exercises, rep ranges, or split",
+          "ar": "غير التمارين أو نطاق التكرارات أو التقسيم"
+        }
+      },
+      {
+        "cause": {
+          "en": "Life stress",
+          "ar": "ضغط الحياة"
+        },
+        "solution": {
+          "en": "Reduce training intensity temporarily",
+          "ar": "قلل شدة التدريب مؤقتاً"
+        }
+      }
+    ],
+    "strategies": [
+      {
+        "strategy": {
+          "en": "Deload Week",
+          "ar": "أسبوع ديلود"
+        },
+        "howTo": {
+          "en": "Reduce weight by 40-50% and volume by 50% for one week. Let your body fully recover.",
+          "ar": "قلل الوزن 40-50% والفوليوم 50% لمدة أسبوع. سيب جسمك يستريح بالكامل."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Change Rep Range",
+          "ar": "غير نطاق التكرارات"
+        },
+        "howTo": {
+          "en": "If you've been doing 8-12 reps, try 4-6 reps with heavier weight for a few weeks.",
+          "ar": "لو بتعمل 8-12 تكرار، جرب 4-6 تكرار بوزن أتقل لكام أسبوع."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Exercise Variation",
+          "ar": "تنويع التمارين"
+        },
+        "howTo": {
+          "en": "Swap barbell bench for dumbbell bench, or back squat for front squat. Same movement pattern, different stimulus.",
+          "ar": "بدل بنش البار ببنش الدمبل، أو السكوات الخلفي بالسكوات الأمامي. نفس نمط الحركة، تحفيز مختلف."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Intensification Techniques",
+          "ar": "تقنيات التكثيف"
+        },
+        "howTo": {
+          "en": "Add drop sets, rest-pause sets, or supersets to increase intensity without adding weight.",
+          "ar": "زود دروب سيتس أو ريست-باوز أو سوبر سيتس عشان تزود الشدة من غير ما تزود وزن."
+        }
+      }
+    ]
+  },
+  "deloading": {
+    "title": {
+      "en": "The Importance of Deloading",
+      "ar": "أهمية الديلود"
+    },
+    "what": {
+      "en": "A deload is a planned period of reduced training intensity and/or volume to allow recovery.",
+      "ar": "الديلود هو فترة مخططة من تقليل شدة و/أو فوليوم التدريب للسماح بالاستشفاء."
+    },
+    "when": {
+      "en": [
+        "Every 4-8 weeks of hard training",
+        "When you feel constantly fatigued",
+        "When strength starts declining",
+        "When joints feel beat up",
+        "After a competition or max effort day"
+      ],
+      "ar": [
+        "كل 4-8 أسابيع من التدريب الشديد",
+        "لما تحس بإرهاق مستمر",
+        "لما القوة تبدأ تقل",
+        "لما المفاصل تحس إنها متعبة",
+        "بعد مسابقة أو يوم مجهود أقصى"
+      ]
+    },
+    "howTo": {
+      "title": {
+        "en": "How to Deload",
+        "ar": "إزاي تعمل ديلود"
+      },
+      "options": [
+        {
+          "option": {
+            "en": "Volume Deload",
+            "ar": "ديلود فوليوم"
+          },
+          "description": {
+            "en": "Keep intensity (weight) the same, but reduce sets by 50%",
+            "ar": "خلي الشدة (الوزن) زي ما هي، بس قلل المجموعات 50%"
+          }
+        },
+        {
+          "option": {
+            "en": "Intensity Deload",
+            "ar": "ديلود شدة"
+          },
+          "description": {
+            "en": "Keep volume (sets/reps) the same, but reduce weight by 40-50%",
+            "ar": "خلي الفوليوم (مجموعات/تكرارات) زي ما هو، بس قلل الوزن 40-50%"
+          }
+        },
+        {
+          "option": {
+            "en": "Full Rest",
+            "ar": "راحة كاملة"
+          },
+          "description": {
+            "en": "Take a week off from the gym entirely. Do light activity like walking.",
+            "ar": "خد أسبوع أجازة من الجيم تماماً. اعمل نشاط خفيف زي المشي."
+          }
+        }
+      ]
+    }
+  },
+  "rpe": {
+    "title": {
+      "en": "Understanding RPE (Rate of Perceived Exertion)",
+      "ar": "فهم RPE (معدل الجهد المدرك)"
+    },
+    "explanation": {
+      "en": "RPE is a scale from 1-10 that measures how hard a set felt. It helps autoregulate your training based on daily readiness.",
+      "ar": "RPE هو مقياس من 1-10 بيقيس صعوبة المجموعة. بيساعدك تنظم تدريبك تلقائياً بناءً على جاهزيتك اليومية."
+    },
+    "scale": [
+      {
+        "rpe": 10,
+        "description": {
+          "en": "Maximum effort - couldn't do another rep",
+          "ar": "أقصى مجهود - مش هتقدر تعمل تكرار تاني"
+        },
+        "rirsEquivalent": "0 RIR"
+      },
+      {
+        "rpe": 9,
+        "description": {
+          "en": "Could maybe do 1 more rep",
+          "ar": "ممكن تعمل تكرار واحد كمان"
+        },
+        "rirsEquivalent": "1 RIR"
+      },
+      {
+        "rpe": 8,
+        "description": {
+          "en": "Could do 2 more reps",
+          "ar": "ممكن تعمل 2 تكرار كمان"
+        },
+        "rirsEquivalent": "2 RIR"
+      },
+      {
+        "rpe": 7,
+        "description": {
+          "en": "Could do 3 more reps - good working weight",
+          "ar": "ممكن تعمل 3 تكرارات كمان - وزن شغل كويس"
+        },
+        "rirsEquivalent": "3 RIR"
+      },
+      {
+        "rpe": 6,
+        "description": {
+          "en": "Could do 4+ more reps - warm-up weight",
+          "ar": "ممكن تعمل 4+ تكرارات كمان - وزن تسخين"
+        },
+        "rirsEquivalent": "4+ RIR"
+      },
+      {
+        "rpe": 5,
+        "description": {
+          "en": "Light effort - warm-up or recovery",
+          "ar": "مجهود خفيف - تسخين أو استشفاء"
+        },
+        "rirsEquivalent": "5+ RIR"
+      }
+    ],
+    "usage": {
+      "en": [
+        "For hypertrophy: Train most sets at RPE 7-9",
+        "For strength: Train heavy sets at RPE 8-9",
+        "During deload: Stay at RPE 5-6",
+        "Beginners should stay at RPE 7-8 to learn form",
+        "Adjust weight based on daily readiness"
+      ],
+      "ar": [
+        "للتضخيم: درب معظم المجموعات عند RPE 7-9",
+        "للقوة: درب المجموعات الثقيلة عند RPE 8-9",
+        "أثناء الديلود: خليك عند RPE 5-6",
+        "المبتدئين يخلوا عند RPE 7-8 عشان يتعلموا الفورم",
+        "ظبط الوزن بناءً على جاهزيتك اليومية"
+      ]
+    }
+  },
+  "sampleProgression": {
+    "title": {
+      "en": "Sample 8-Week Progression",
+      "ar": "نموذج تقدم 8 أسابيع"
+    },
+    "exercise": {
+      "en": "Barbell Bench Press",
+      "ar": "بنش بريس بالبار"
+    },
+    "weeks": [
+      {
+        "week": 1,
+        "weight": "60kg",
+        "sets": 3,
+        "reps": 8,
+        "rpe": 7,
+        "notes": {
+          "en": "Starting point - focus on form",
+          "ar": "نقطة البداية - ركز على الفورم"
+        }
+      },
+      {
+        "week": 2,
+        "weight": "60kg",
+        "sets": 3,
+        "reps": 10,
+        "rpe": 8,
+        "notes": {
+          "en": "Added 2 reps per set",
+          "ar": "زودت 2 تكرار لكل مجموعة"
+        }
+      },
+      {
+        "week": 3,
+        "weight": "62.5kg",
+        "sets": 3,
+        "reps": 8,
+        "rpe": 8,
+        "notes": {
+          "en": "Increased weight, dropped reps",
+          "ar": "زودت الوزن، قللت التكرارات"
+        }
+      },
+      {
+        "week": 4,
+        "weight": "62.5kg",
+        "sets": 4,
+        "reps": 8,
+        "rpe": 8,
+        "notes": {
+          "en": "Added a set for more volume",
+          "ar": "زودت مجموعة لفوليوم أكتر"
+        }
+      },
+      {
+        "week": 5,
+        "weight": "55kg",
+        "sets": 2,
+        "reps": 8,
+        "rpe": 5,
+        "notes": {
+          "en": "DELOAD WEEK - reduced intensity",
+          "ar": "أسبوع ديلود - قللت الشدة"
+        }
+      },
+      {
+        "week": 6,
+        "weight": "65kg",
+        "sets": 4,
+        "reps": 6,
+        "rpe": 8,
+        "notes": {
+          "en": "Post-deload - new PR weight",
+          "ar": "بعد الديلود - وزن رقم قياسي جديد"
+        }
+      },
+      {
+        "week": 7,
+        "weight": "65kg",
+        "sets": 4,
+        "reps": 8,
+        "rpe": 9,
+        "notes": {
+          "en": "Added reps at new weight",
+          "ar": "زودت تكرارات بالوزن الجديد"
+        }
+      },
+      {
+        "week": 8,
+        "weight": "67.5kg",
+        "sets": 4,
+        "reps": 6,
+        "rpe": 9,
+        "notes": {
+          "en": "Another weight increase!",
+          "ar": "زيادة وزن تانية!"
+        }
+      }
+    ],
+    "summary": {
+      "en": "In 8 weeks: Weight increased from 60kg to 67.5kg (12.5% increase), sets from 3 to 4. Total progress!",
+      "ar": "في 8 أسابيع: الوزن زاد من 60 لـ 67.5 كيلو (زيادة 12.5%)، المجموعات من 3 لـ 4. تقدم ممتاز!"
+    }
+  },
+  "tips": {
+    "title": {
+      "en": "Final Tips for Progressive Overload",
+      "ar": "نصائح نهائية للحمل التدريجي"
+    },
+    "list": [
+      {
+        "tip": {
+          "en": "Be Patient",
+          "ar": "اصبر"
+        },
+        "details": {
+          "en": "Progress takes time. Adding 2.5kg per month = 30kg per year. That's huge!",
+          "ar": "التقدم بياخد وقت. زيادة 2.5 كيلو في الشهر = 30 كيلو في السنة. ده ضخم!"
+        }
+      },
+      {
+        "tip": {
+          "en": "Form First",
+          "ar": "الفورم الأول"
+        },
+        "details": {
+          "en": "Never sacrifice form for more weight. Bad form = injury = no progress.",
+          "ar": "متضحيش بالفورم عشان وزن أكتر. فورم وحش = إصابة = مفيش تقدم."
+        }
+      },
+      {
+        "tip": {
+          "en": "Small Plates Are Your Friend",
+          "ar": "الأقراص الصغيرة صحابك"
+        },
+        "details": {
+          "en": "Get 1.25kg plates. Going from 60kg to 65kg is a big jump. 60kg to 62.5kg is manageable.",
+          "ar": "جيب أقراص 1.25 كيلو. من 60 لـ 65 كيلو قفزة كبيرة. من 60 لـ 62.5 كيلو ممكنة."
+        }
+      },
+      {
+        "tip": {
+          "en": "Prioritize Compounds",
+          "ar": "الأولوية للمركبات"
+        },
+        "details": {
+          "en": "Focus on progressing the big lifts (squat, bench, deadlift, row, press). Isolation exercises matter less.",
+          "ar": "ركز على التقدم في الرفعات الكبيرة (سكوات، بنش، ديدليفت، رو، بريس). تمارين العزل أقل أهمية."
+        }
+      },
+      {
+        "tip": {
+          "en": "Don't Chase PRs Every Session",
+          "ar": "متطاردش الأرقام القياسية كل جلسة"
+        },
+        "details": {
+          "en": "Progress is not linear. Some days you'll be weaker. That's normal. Trust the process.",
+          "ar": "التقدم مش خطي. بعض الأيام هتكون أضعف. ده طبيعي. ثق في العملية."
+        }
+      },
+      {
+        "tip": {
+          "en": "Recovery Is Part of Progress",
+          "ar": "الاستشفاء جزء من التقدم"
+        },
+        "details": {
+          "en": "Sleep, nutrition, and stress management are as important as the workout itself.",
+          "ar": "النوم والتغذية وإدارة الضغط بنفس أهمية التمرين نفسه."
+        }
+      }
+    ]
+  }
+}
