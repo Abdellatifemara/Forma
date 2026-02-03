@@ -1,0 +1,385 @@
+{
+  "mealPrepPlans": [
+    {
+      "id": "muscle-gain",
+      "name": {
+        "en": "Muscle Gain Meal Prep",
+        "ar": "وجبات بناء العضلات"
+      },
+      "goal": "muscle_gain",
+      "dailyTargets": {
+        "calories": "2800-3200",
+        "protein": "160-180g",
+        "carbs": "350-400g",
+        "fat": "80-100g"
+      },
+      "description": {
+        "en": "High protein, high carb meal prep for muscle building. Calorie surplus with clean foods.",
+        "ar": "وجبات عالية البروتين والكارب لبناء العضلات. فائض سعرات بأطعمة نظيفة."
+      },
+      "weeklyPlan": {
+        "breakfast": {
+          "options": [
+            {
+              "name": { "en": "Egyptian Foul with Eggs", "ar": "فول بالبيض" },
+              "ingredients": {
+                "en": ["200g foul medames", "3 whole eggs", "2 tbsp olive oil", "whole wheat baladi bread (2 pieces)"],
+                "ar": ["200 جرام فول مدمس", "3 بيضات كاملة", "2 ملعقة زيت زيتون", "2 رغيف بلدي"]
+              },
+              "macros": { "calories": 750, "protein": 35, "carbs": 70, "fat": 35 }
+            },
+            {
+              "name": { "en": "Oatmeal with Eggs", "ar": "شوفان مع بيض" },
+              "ingredients": {
+                "en": ["100g oats", "300ml milk", "3 eggs scrambled", "1 banana", "honey"],
+                "ar": ["100 جرام شوفان", "300 مل لبن", "3 بيض مقلي", "موزة", "عسل"]
+              },
+              "macros": { "calories": 800, "protein": 40, "carbs": 95, "fat": 28 }
+            }
+          ]
+        },
+        "lunch": {
+          "options": [
+            {
+              "name": { "en": "Grilled Chicken with Rice", "ar": "فراخ مشوية مع أرز" },
+              "ingredients": {
+                "en": ["250g chicken breast", "300g cooked white rice", "mixed vegetables", "tahini sauce"],
+                "ar": ["250 جرام صدور فراخ", "300 جرام أرز مطبوخ", "خضار مشكل", "طحينة"]
+              },
+              "macros": { "calories": 850, "protein": 65, "carbs": 90, "fat": 20 }
+            },
+            {
+              "name": { "en": "Kofta with Pasta", "ar": "كفتة مع مكرونة" },
+              "ingredients": {
+                "en": ["200g beef kofta", "250g cooked pasta", "tomato sauce", "vegetables"],
+                "ar": ["200 جرام كفتة لحم", "250 جرام مكرونة مطبوخة", "صوص طماطم", "خضار"]
+              },
+              "macros": { "calories": 900, "protein": 55, "carbs": 100, "fat": 30 }
+            }
+          ]
+        },
+        "dinner": {
+          "options": [
+            {
+              "name": { "en": "Grilled Fish with Sweet Potato", "ar": "سمك مشوي مع بطاطا" },
+              "ingredients": {
+                "en": ["300g grilled fish (tilapia/bouri)", "250g sweet potato", "green salad"],
+                "ar": ["300 جرام سمك مشوي (بلطي/بوري)", "250 جرام بطاطا حلوة", "سلطة خضرا"]
+              },
+              "macros": { "calories": 700, "protein": 55, "carbs": 65, "fat": 20 }
+            },
+            {
+              "name": { "en": "Liver with Rice", "ar": "كبدة مع أرز" },
+              "ingredients": {
+                "en": ["200g chicken/beef liver", "250g rice", "onions", "green pepper"],
+                "ar": ["200 جرام كبدة فراخ/لحم", "250 جرام أرز", "بصل", "فلفل أخضر"]
+              },
+              "macros": { "calories": 750, "protein": 50, "carbs": 80, "fat": 25 }
+            }
+          ]
+        },
+        "snacks": [
+          {
+            "name": { "en": "Greek Yogurt with Nuts", "ar": "زبادي يوناني مع مكسرات" },
+            "macros": { "calories": 300, "protein": 20, "carbs": 15, "fat": 18 }
+          },
+          {
+            "name": { "en": "Protein Shake with Banana", "ar": "شيك بروتين مع موز" },
+            "macros": { "calories": 350, "protein": 30, "carbs": 40, "fat": 8 }
+          },
+          {
+            "name": { "en": "Peanut Butter Sandwich", "ar": "ساندويتش زبدة فول سوداني" },
+            "macros": { "calories": 400, "protein": 15, "carbs": 35, "fat": 22 }
+          }
+        ]
+      },
+      "shoppingList": {
+        "proteins": {
+          "en": ["Chicken breast (2kg)", "Beef kofta (1kg)", "Fish (1kg)", "Eggs (30)", "Foul medames (1kg)"],
+          "ar": ["صدور فراخ (2 كيلو)", "كفتة لحم (1 كيلو)", "سمك (1 كيلو)", "بيض (30)", "فول مدمس (1 كيلو)"]
+        },
+        "carbs": {
+          "en": ["White rice (2kg)", "Pasta (1kg)", "Oats (500g)", "Sweet potatoes (2kg)", "Baladi bread", "Bananas"],
+          "ar": ["أرز أبيض (2 كيلو)", "مكرونة (1 كيلو)", "شوفان (500 جرام)", "بطاطا حلوة (2 كيلو)", "عيش بلدي", "موز"]
+        },
+        "vegetables": {
+          "en": ["Mixed vegetables", "Tomatoes", "Cucumbers", "Lettuce", "Onions", "Green peppers"],
+          "ar": ["خضار مشكل", "طماطم", "خيار", "خس", "بصل", "فلفل أخضر"]
+        },
+        "fats": {
+          "en": ["Olive oil", "Tahini", "Peanut butter", "Mixed nuts"],
+          "ar": ["زيت زيتون", "طحينة", "زبدة فول سوداني", "مكسرات مشكلة"]
+        },
+        "dairy": {
+          "en": ["Full fat milk (2L)", "Greek yogurt (1kg)"],
+          "ar": ["لبن كامل الدسم (2 لتر)", "زبادي يوناني (1 كيلو)"]
+        }
+      }
+    },
+    {
+      "id": "fat-loss",
+      "name": {
+        "en": "Fat Loss Meal Prep",
+        "ar": "وجبات حرق الدهون"
+      },
+      "goal": "fat_loss",
+      "dailyTargets": {
+        "calories": "1800-2200",
+        "protein": "150-180g",
+        "carbs": "150-200g",
+        "fat": "50-70g"
+      },
+      "description": {
+        "en": "High protein, moderate carb meal prep for fat loss while preserving muscle.",
+        "ar": "وجبات عالية البروتين ومعتدلة الكارب لحرق الدهون مع الحفاظ على العضلات."
+      },
+      "weeklyPlan": {
+        "breakfast": {
+          "options": [
+            {
+              "name": { "en": "Egg White Omelette", "ar": "أومليت بياض البيض" },
+              "ingredients": {
+                "en": ["5 egg whites + 1 whole egg", "vegetables", "1 slice whole wheat bread"],
+                "ar": ["5 بياض بيض + 1 بيضة كاملة", "خضار", "شريحة توست أسمر"]
+              },
+              "macros": { "calories": 350, "protein": 30, "carbs": 20, "fat": 15 }
+            },
+            {
+              "name": { "en": "Cottage Cheese with Fruit", "ar": "جبنة قريش مع فاكهة" },
+              "ingredients": {
+                "en": ["200g cottage cheese (gareesh)", "1 cup mixed berries", "cinnamon"],
+                "ar": ["200 جرام جبنة قريش", "كوب توت مشكل", "قرفة"]
+              },
+              "macros": { "calories": 280, "protein": 25, "carbs": 25, "fat": 8 }
+            }
+          ]
+        },
+        "lunch": {
+          "options": [
+            {
+              "name": { "en": "Grilled Chicken Salad", "ar": "سلطة فراخ مشوية" },
+              "ingredients": {
+                "en": ["200g grilled chicken", "mixed greens", "tomatoes", "cucumbers", "lemon dressing"],
+                "ar": ["200 جرام فراخ مشوية", "خضار ورقية", "طماطم", "خيار", "صوص ليمون"]
+              },
+              "macros": { "calories": 400, "protein": 45, "carbs": 15, "fat": 18 }
+            },
+            {
+              "name": { "en": "Grilled Fish with Vegetables", "ar": "سمك مشوي مع خضار" },
+              "ingredients": {
+                "en": ["250g grilled fish", "steamed broccoli", "cauliflower", "lemon"],
+                "ar": ["250 جرام سمك مشوي", "بروكلي مسلوق", "قرنبيط", "ليمون"]
+              },
+              "macros": { "calories": 380, "protein": 50, "carbs": 15, "fat": 14 }
+            }
+          ]
+        },
+        "dinner": {
+          "options": [
+            {
+              "name": { "en": "Lean Beef Steak with Veggies", "ar": "ستيك لحم قليل الدسم مع خضار" },
+              "ingredients": {
+                "en": ["200g lean beef steak", "grilled zucchini", "mushrooms", "green beans"],
+                "ar": ["200 جرام ستيك لحم قليل الدسم", "كوسة مشوية", "مشروم", "فاصوليا خضرا"]
+              },
+              "macros": { "calories": 450, "protein": 50, "carbs": 20, "fat": 20 }
+            },
+            {
+              "name": { "en": "Turkey Kofta with Salad", "ar": "كفتة ديك رومي مع سلطة" },
+              "ingredients": {
+                "en": ["200g turkey kofta", "large mixed salad", "yogurt dressing"],
+                "ar": ["200 جرام كفتة ديك رومي", "سلطة مشكلة كبيرة", "صوص زبادي"]
+              },
+              "macros": { "calories": 380, "protein": 45, "carbs": 15, "fat": 16 }
+            }
+          ]
+        },
+        "snacks": [
+          {
+            "name": { "en": "Greek Yogurt (0% fat)", "ar": "زبادي يوناني (0% دسم)" },
+            "macros": { "calories": 130, "protein": 20, "carbs": 8, "fat": 0 }
+          },
+          {
+            "name": { "en": "Boiled Eggs (2)", "ar": "2 بيضة مسلوقة" },
+            "macros": { "calories": 150, "protein": 12, "carbs": 1, "fat": 10 }
+          },
+          {
+            "name": { "en": "Cucumber with Hummus", "ar": "خيار مع حمص" },
+            "macros": { "calories": 120, "protein": 4, "carbs": 12, "fat": 6 }
+          }
+        ]
+      },
+      "shoppingList": {
+        "proteins": {
+          "en": ["Chicken breast (2kg)", "Fish (1.5kg)", "Lean beef (1kg)", "Turkey (500g)", "Eggs (30)", "Cottage cheese (1kg)"],
+          "ar": ["صدور فراخ (2 كيلو)", "سمك (1.5 كيلو)", "لحم قليل الدسم (1 كيلو)", "ديك رومي (500 جرام)", "بيض (30)", "جبنة قريش (1 كيلو)"]
+        },
+        "carbs": {
+          "en": ["Whole wheat bread (1 pack)", "Oats (500g)", "Berries (500g)"],
+          "ar": ["عيش أسمر (1 كيس)", "شوفان (500 جرام)", "توت (500 جرام)"]
+        },
+        "vegetables": {
+          "en": ["Broccoli (1kg)", "Zucchini (1kg)", "Cucumbers (1kg)", "Tomatoes (1kg)", "Mixed greens", "Green beans", "Mushrooms"],
+          "ar": ["بروكلي (1 كيلو)", "كوسة (1 كيلو)", "خيار (1 كيلو)", "طماطم (1 كيلو)", "خضار ورقية", "فاصوليا خضرا", "مشروم"]
+        },
+        "fats": {
+          "en": ["Olive oil (small)", "Hummus (500g)"],
+          "ar": ["زيت زيتون (صغير)", "حمص (500 جرام)"]
+        },
+        "dairy": {
+          "en": ["Greek yogurt 0% (1kg)", "Low fat milk (1L)"],
+          "ar": ["زبادي يوناني 0% (1 كيلو)", "لبن قليل الدسم (1 لتر)"]
+        }
+      }
+    },
+    {
+      "id": "maintenance",
+      "name": {
+        "en": "Maintenance Meal Prep",
+        "ar": "وجبات الحفاظ على الوزن"
+      },
+      "goal": "maintenance",
+      "dailyTargets": {
+        "calories": "2200-2600",
+        "protein": "130-150g",
+        "carbs": "250-300g",
+        "fat": "70-90g"
+      },
+      "description": {
+        "en": "Balanced meal prep for maintaining current weight and fitness level.",
+        "ar": "وجبات متوازنة للحفاظ على الوزن ومستوى اللياقة الحالي."
+      },
+      "weeklyPlan": {
+        "breakfast": {
+          "options": [
+            {
+              "name": { "en": "Foul with Baladi Bread", "ar": "فول بالعيش البلدي" },
+              "ingredients": {
+                "en": ["150g foul medames", "2 eggs", "olive oil", "2 baladi bread"],
+                "ar": ["150 جرام فول مدمس", "2 بيضة", "زيت زيتون", "2 رغيف بلدي"]
+              },
+              "macros": { "calories": 600, "protein": 28, "carbs": 65, "fat": 25 }
+            },
+            {
+              "name": { "en": "Scrambled Eggs with Toast", "ar": "بيض مقلي مع توست" },
+              "ingredients": {
+                "en": ["3 eggs", "2 slices whole wheat toast", "butter", "cheese"],
+                "ar": ["3 بيضات", "2 شريحة توست أسمر", "زبدة", "جبنة"]
+              },
+              "macros": { "calories": 550, "protein": 25, "carbs": 40, "fat": 32 }
+            }
+          ]
+        },
+        "lunch": {
+          "options": [
+            {
+              "name": { "en": "Koshari (Egyptian Style)", "ar": "كشري مصري" },
+              "ingredients": {
+                "en": ["Rice", "pasta", "lentils", "chickpeas", "tomato sauce", "fried onions"],
+                "ar": ["أرز", "مكرونة", "عدس", "حمص", "صوص طماطم", "بصل محمر"]
+              },
+              "macros": { "calories": 700, "protein": 22, "carbs": 120, "fat": 15 },
+              "note": { "en": "Add grilled chicken for more protein", "ar": "أضف فراخ مشوية لبروتين أكتر" }
+            },
+            {
+              "name": { "en": "Chicken Shawarma Plate", "ar": "طبق شاورما فراخ" },
+              "ingredients": {
+                "en": ["200g chicken shawarma", "rice", "tahini", "salad"],
+                "ar": ["200 جرام شاورما فراخ", "أرز", "طحينة", "سلطة"]
+              },
+              "macros": { "calories": 750, "protein": 45, "carbs": 70, "fat": 30 }
+            }
+          ]
+        },
+        "dinner": {
+          "options": [
+            {
+              "name": { "en": "Molokhia with Chicken", "ar": "ملوخية مع فراخ" },
+              "ingredients": {
+                "en": ["Molokhia soup", "200g chicken", "rice", "baladi bread"],
+                "ar": ["شوربة ملوخية", "200 جرام فراخ", "أرز", "عيش بلدي"]
+              },
+              "macros": { "calories": 650, "protein": 40, "carbs": 70, "fat": 22 }
+            },
+            {
+              "name": { "en": "Grilled Meat with Vegetables", "ar": "لحم مشوي مع خضار" },
+              "ingredients": {
+                "en": ["200g grilled beef", "grilled vegetables", "small portion rice"],
+                "ar": ["200 جرام لحم مشوي", "خضار مشوية", "حصة صغيرة أرز"]
+              },
+              "macros": { "calories": 600, "protein": 45, "carbs": 40, "fat": 28 }
+            }
+          ]
+        },
+        "snacks": [
+          {
+            "name": { "en": "Fresh Fruit", "ar": "فاكهة طازجة" },
+            "macros": { "calories": 100, "protein": 1, "carbs": 25, "fat": 0 }
+          },
+          {
+            "name": { "en": "Cheese with Bread", "ar": "جبنة مع عيش" },
+            "macros": { "calories": 200, "protein": 10, "carbs": 20, "fat": 10 }
+          }
+        ]
+      },
+      "shoppingList": {
+        "proteins": {
+          "en": ["Chicken (2kg)", "Beef (1kg)", "Eggs (24)", "Foul (1kg)", "Lentils (500g)"],
+          "ar": ["فراخ (2 كيلو)", "لحم (1 كيلو)", "بيض (24)", "فول (1 كيلو)", "عدس (500 جرام)"]
+        },
+        "carbs": {
+          "en": ["Rice (2kg)", "Pasta (1kg)", "Baladi bread", "Whole wheat bread"],
+          "ar": ["أرز (2 كيلو)", "مكرونة (1 كيلو)", "عيش بلدي", "عيش أسمر"]
+        },
+        "vegetables": {
+          "en": ["Molokhia (frozen or fresh)", "Mixed vegetables", "Tomatoes", "Onions", "Garlic"],
+          "ar": ["ملوخية (مجمدة أو طازجة)", "خضار مشكل", "طماطم", "بصل", "ثوم"]
+        },
+        "fats": {
+          "en": ["Olive oil", "Butter", "Tahini"],
+          "ar": ["زيت زيتون", "زبدة", "طحينة"]
+        },
+        "dairy": {
+          "en": ["Cheese (feta/white)", "Milk (2L)", "Yogurt"],
+          "ar": ["جبنة (فيتا/بيضا)", "لبن (2 لتر)", "زبادي"]
+        }
+      }
+    }
+  ],
+  "mealPrepTips": {
+    "en": [
+      "Cook proteins in bulk on Sunday - grill chicken, cook kofta, boil eggs",
+      "Pre-portion rice and pasta into containers",
+      "Wash and cut vegetables in advance",
+      "Use glass containers for reheating",
+      "Most meal preps last 4-5 days refrigerated",
+      "Freeze extra portions for later in the week",
+      "Always label containers with date and contents"
+    ],
+    "ar": [
+      "اطبخ البروتينات بكميات في يوم الأحد - شوي فراخ، اطبخ كفتة، اسلق بيض",
+      "قسم الأرز والمكرونة في علب مسبقاً",
+      "اغسل وقطع الخضار مسبقاً",
+      "استخدم علب زجاج للتسخين",
+      "معظم الوجبات تفضل 4-5 أيام في الثلاجة",
+      "جمد الحصص الزيادة لباقي الأسبوع",
+      "دايماً سمي العلب بالتاريخ والمحتويات"
+    ]
+  },
+  "cookingTips": {
+    "en": [
+      "Marinate chicken overnight for better flavor",
+      "Use a food scale for accurate portions",
+      "Invest in good quality containers",
+      "Cook rice with chicken broth for extra flavor",
+      "Grill vegetables at high heat for caramelization"
+    ],
+    "ar": [
+      "تبّل الفراخ طول الليل لنكهة أحسن",
+      "استخدم ميزان أكل للحصص الدقيقة",
+      "استثمر في علب جودة كويسة",
+      "اطبخ الأرز بمرق الفراخ لنكهة زيادة",
+      "شوي الخضار على نار عالية للكرملة"
+    ]
+  }
+}
