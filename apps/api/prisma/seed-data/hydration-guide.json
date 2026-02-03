@@ -1,0 +1,685 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "introduction": {
+    "title": {
+      "en": "Complete Hydration Guide for Athletes",
+      "ar": "دليل الترطيب الشامل للرياضيين"
+    },
+    "importance": {
+      "en": "Water makes up 60% of your body. Even mild dehydration (2%) can significantly decrease performance, strength, and mental focus.",
+      "ar": "الميه بتشكل 60% من جسمك. حتى الجفاف الخفيف (2%) ممكن يقلل الأداء والقوة والتركيز الذهني بشكل كبير."
+    },
+    "egyptContext": {
+      "en": "In Egypt's hot climate, hydration is even more critical. You can lose 1-2 liters of sweat per hour in summer workouts.",
+      "ar": "في جو مصر الحار، الترطيب أهم كمان. ممكن تخسر 1-2 لتر عرق في الساعة في تمارين الصيف."
+    }
+  },
+  "dailyNeeds": {
+    "title": {
+      "en": "How Much Water Do You Need?",
+      "ar": "قد إيه محتاج ميه؟"
+    },
+    "general": {
+      "en": "The \"8 glasses\" rule is oversimplified. Your needs depend on body size, activity level, and climate.",
+      "ar": "قاعدة \"8 كوبايات\" مبسطة أوي. احتياجاتك بتعتمد على حجم جسمك ومستوى نشاطك والجو."
+    },
+    "calculation": {
+      "title": {
+        "en": "How to Calculate Your Needs",
+        "ar": "إزاي تحسب احتياجاتك"
+      },
+      "method": {
+        "en": "Baseline: 30-40ml per kg of bodyweight. Add 500-1000ml for every hour of exercise.",
+        "ar": "الأساس: 30-40 مل لكل كيلو من وزن الجسم. ضيف 500-1000 مل لكل ساعة تمرين."
+      },
+      "examples": [
+        {
+          "weight": "70kg",
+          "baseline": "2.1-2.8L",
+          "withExercise": "2.6-3.8L"
+        },
+        {
+          "weight": "85kg",
+          "baseline": "2.5-3.4L",
+          "withExercise": "3.0-4.4L"
+        },
+        {
+          "weight": "100kg",
+          "baseline": "3.0-4.0L",
+          "withExercise": "3.5-5.0L"
+        }
+      ]
+    },
+    "adjustments": {
+      "title": {
+        "en": "When to Drink More",
+        "ar": "امتى تشرب أكتر"
+      },
+      "factors": [
+        {
+          "factor": { "en": "Hot weather (Egyptian summer)", "ar": "جو حار (صيف مصر)" },
+          "adjustment": { "en": "+20-50%", "ar": "+20-50%" }
+        },
+        {
+          "factor": { "en": "High humidity", "ar": "رطوبة عالية" },
+          "adjustment": { "en": "+10-20%", "ar": "+10-20%" }
+        },
+        {
+          "factor": { "en": "Air conditioning (dehydrating)", "ar": "تكييف (بيسبب جفاف)" },
+          "adjustment": { "en": "+10%", "ar": "+10%" }
+        },
+        {
+          "factor": { "en": "High protein diet", "ar": "دايت عالي البروتين" },
+          "adjustment": { "en": "+10-20%", "ar": "+10-20%" }
+        },
+        {
+          "factor": { "en": "Creatine supplementation", "ar": "مكملات كرياتين" },
+          "adjustment": { "en": "+500ml daily", "ar": "+500 مل يومياً" }
+        },
+        {
+          "factor": { "en": "Caffeine intake", "ar": "استهلاك كافيين" },
+          "adjustment": { "en": "+100ml per coffee", "ar": "+100 مل لكل قهوة" }
+        }
+      ]
+    }
+  },
+  "hydrationTiming": {
+    "title": {
+      "en": "When to Drink Water",
+      "ar": "امتى تشرب ميه"
+    },
+    "schedule": [
+      {
+        "time": { "en": "Upon Waking", "ar": "لما تصحى" },
+        "amount": "300-500ml",
+        "reason": {
+          "en": "You're dehydrated after 6-8 hours without water. Jump-starts metabolism.",
+          "ar": "جسمك جاف بعد 6-8 ساعات من غير ميه. بيبدأ الأيض."
+        }
+      },
+      {
+        "time": { "en": "Throughout the Day", "ar": "طول اليوم" },
+        "amount": "200-300ml every 2-3 hours",
+        "reason": {
+          "en": "Sipping consistently is better than chugging large amounts at once.",
+          "ar": "الشرب المستمر أحسن من شرب كميات كبيرة مرة واحدة."
+        }
+      },
+      {
+        "time": { "en": "Before Meals", "ar": "قبل الأكل" },
+        "amount": "200-300ml",
+        "reason": {
+          "en": "Aids digestion and may help with portion control.",
+          "ar": "بيساعد الهضم وممكن يساعد في التحكم في الكميات."
+        }
+      },
+      {
+        "time": { "en": "Pre-Workout (2 hours before)", "ar": "قبل التمرين (ساعتين قبل)" },
+        "amount": "400-600ml",
+        "reason": {
+          "en": "Ensures you start hydrated without feeling bloated.",
+          "ar": "بيضمن تبدأ مرتوي من غير ما تحس بانتفاخ."
+        }
+      },
+      {
+        "time": { "en": "During Workout", "ar": "أثناء التمرين" },
+        "amount": "150-250ml every 15-20 min",
+        "reason": {
+          "en": "Replace fluid as you sweat. Don't wait until thirsty.",
+          "ar": "بدل السوائل كل ما بتعرق. متستناش لحد ما تعطش."
+        }
+      },
+      {
+        "time": { "en": "Post-Workout", "ar": "بعد التمرين" },
+        "amount": "500-1000ml within 2 hours",
+        "reason": {
+          "en": "Replace what you lost. Weigh yourself before/after to calculate loss.",
+          "ar": "بدل اللي خسرته. اتوزن قبل/بعد عشان تحسب الخسارة."
+        }
+      },
+      {
+        "time": { "en": "Before Bed", "ar": "قبل النوم" },
+        "amount": "200-300ml (not too much)",
+        "reason": {
+          "en": "Prevents dehydration overnight. Not so much that you wake to urinate.",
+          "ar": "بيمنع الجفاف بالليل. مش كتير عشان متصحاش تروح الحمام."
+        }
+      }
+    ]
+  },
+  "dehydrationSigns": {
+    "title": {
+      "en": "Signs of Dehydration",
+      "ar": "علامات الجفاف"
+    },
+    "mildSigns": {
+      "title": {
+        "en": "Mild Dehydration (1-2% body weight loss)",
+        "ar": "جفاف خفيف (خسارة 1-2% من وزن الجسم)"
+      },
+      "signs": {
+        "en": [
+          "Thirst (already dehydrated when you feel it)",
+          "Dry mouth and lips",
+          "Dark yellow urine",
+          "Slight headache",
+          "Decreased concentration",
+          "Mild fatigue"
+        ],
+        "ar": [
+          "العطش (أنت جاف فعلاً لما تحس بيه)",
+          "فم وشفايف جافة",
+          "بول أصفر غامق",
+          "صداع خفيف",
+          "تركيز قليل",
+          "تعب خفيف"
+        ]
+      },
+      "performanceImpact": {
+        "en": "5-10% decrease in performance",
+        "ar": "انخفاض 5-10% في الأداء"
+      }
+    },
+    "moderateSigns": {
+      "title": {
+        "en": "Moderate Dehydration (3-5% body weight loss)",
+        "ar": "جفاف متوسط (خسارة 3-5% من وزن الجسم)"
+      },
+      "signs": {
+        "en": [
+          "Strong thirst",
+          "Very dark urine or infrequent urination",
+          "Headache",
+          "Dizziness",
+          "Rapid heartbeat",
+          "Muscle cramps",
+          "Decreased sweat"
+        ],
+        "ar": [
+          "عطش شديد",
+          "بول غامق جداً أو تبول قليل",
+          "صداع",
+          "دوخة",
+          "نبض قلب سريع",
+          "تقلصات عضلية",
+          "عرق قليل"
+        ]
+      },
+      "performanceImpact": {
+        "en": "20-30% decrease in performance",
+        "ar": "انخفاض 20-30% في الأداء"
+      }
+    },
+    "severeSigns": {
+      "title": {
+        "en": "Severe Dehydration (MEDICAL EMERGENCY)",
+        "ar": "جفاف شديد (حالة طوارئ طبية)"
+      },
+      "signs": {
+        "en": [
+          "No urination",
+          "Confusion",
+          "Rapid breathing",
+          "Fainting",
+          "No sweating even when hot"
+        ],
+        "ar": [
+          "مفيش تبول",
+          "ارتباك",
+          "تنفس سريع",
+          "إغماء",
+          "مفيش عرق حتى لما يكون حر"
+        ]
+      },
+      "action": {
+        "en": "Seek medical attention immediately",
+        "ar": "اطلب عناية طبية فوراً"
+      }
+    },
+    "urineChart": {
+      "title": {
+        "en": "Urine Color Chart",
+        "ar": "مخطط لون البول"
+      },
+      "colors": [
+        {
+          "color": { "en": "Clear/Pale Yellow", "ar": "صافي/أصفر فاتح" },
+          "status": { "en": "Well hydrated", "ar": "مرتوي كويس" }
+        },
+        {
+          "color": { "en": "Light Yellow", "ar": "أصفر فاتح" },
+          "status": { "en": "Good hydration", "ar": "ترطيب كويس" }
+        },
+        {
+          "color": { "en": "Yellow", "ar": "أصفر" },
+          "status": { "en": "Drink some water soon", "ar": "اشرب ميه قريب" }
+        },
+        {
+          "color": { "en": "Dark Yellow", "ar": "أصفر غامق" },
+          "status": { "en": "Dehydrated - drink now", "ar": "جاف - اشرب دلوقتي" }
+        },
+        {
+          "color": { "en": "Amber/Brown", "ar": "كهرماني/بني" },
+          "status": { "en": "Severely dehydrated", "ar": "جفاف شديد" }
+        }
+      ]
+    }
+  },
+  "electrolytes": {
+    "title": {
+      "en": "Understanding Electrolytes",
+      "ar": "فهم الإلكتروليتات"
+    },
+    "what": {
+      "en": "Electrolytes are minerals that conduct electricity in your body. They regulate nerve and muscle function, hydration, and pH balance.",
+      "ar": "الإلكتروليتات هي معادن بتوصل الكهرباء في جسمك. بتنظم وظيفة الأعصاب والعضلات والترطيب وتوازن pH."
+    },
+    "mainElectrolytes": [
+      {
+        "name": { "en": "Sodium", "ar": "صوديوم" },
+        "function": {
+          "en": "Fluid balance, nerve function, muscle contraction",
+          "ar": "توازن السوائل، وظيفة الأعصاب، انقباض العضلات"
+        },
+        "lostInSweat": "High",
+        "dailyNeed": "2300mg (less if inactive, more if athletic)",
+        "sources": {
+          "en": ["Table salt", "Sports drinks", "Pickles", "Cheese"],
+          "ar": ["ملح الطعام", "مشروبات رياضية", "مخللات", "جبنة"]
+        },
+        "deficiencySymptoms": {
+          "en": ["Muscle cramps", "Headache", "Nausea", "Confusion"],
+          "ar": ["تقلصات عضلية", "صداع", "غثيان", "ارتباك"]
+        }
+      },
+      {
+        "name": { "en": "Potassium", "ar": "بوتاسيوم" },
+        "function": {
+          "en": "Heart rhythm, muscle function, nerve signals",
+          "ar": "إيقاع القلب، وظيفة العضلات، إشارات الأعصاب"
+        },
+        "lostInSweat": "Moderate",
+        "dailyNeed": "3500-4700mg",
+        "sources": {
+          "en": ["Bananas", "Potatoes", "Spinach", "Coconut water"],
+          "ar": ["موز", "بطاطس", "سبانخ", "ميه جوز الهند"]
+        },
+        "deficiencySymptoms": {
+          "en": ["Weakness", "Fatigue", "Muscle cramps", "Irregular heartbeat"],
+          "ar": ["ضعف", "إرهاق", "تقلصات عضلية", "نبض غير منتظم"]
+        }
+      },
+      {
+        "name": { "en": "Magnesium", "ar": "ماغنسيوم" },
+        "function": {
+          "en": "Muscle relaxation, energy production, sleep quality",
+          "ar": "استرخاء العضلات، إنتاج الطاقة، جودة النوم"
+        },
+        "lostInSweat": "Low-Moderate",
+        "dailyNeed": "400-420mg (men), 310-320mg (women)",
+        "sources": {
+          "en": ["Nuts", "Seeds", "Dark chocolate", "Leafy greens"],
+          "ar": ["مكسرات", "بذور", "شوكولاتة غامقة", "خضروات ورقية"]
+        },
+        "deficiencySymptoms": {
+          "en": ["Muscle twitches/cramps", "Poor sleep", "Fatigue", "Anxiety"],
+          "ar": ["ارتعاش/تقلصات عضلية", "نوم سيء", "إرهاق", "قلق"]
+        }
+      },
+      {
+        "name": { "en": "Calcium", "ar": "كالسيوم" },
+        "function": {
+          "en": "Bone health, muscle contraction, nerve signaling",
+          "ar": "صحة العظام، انقباض العضلات، إشارات الأعصاب"
+        },
+        "lostInSweat": "Low",
+        "dailyNeed": "1000-1200mg",
+        "sources": {
+          "en": ["Dairy", "Fortified milk alternatives", "Sardines", "Broccoli"],
+          "ar": ["ألبان", "بدائل الحليب المدعمة", "سردين", "بروكلي"]
+        },
+        "deficiencySymptoms": {
+          "en": ["Muscle cramps", "Numbness", "Brittle bones", "Fatigue"],
+          "ar": ["تقلصات عضلية", "تنميل", "هشاشة العظام", "إرهاق"]
+        }
+      }
+    ],
+    "whenToSupplement": {
+      "title": {
+        "en": "When Do You Need Electrolyte Supplements?",
+        "ar": "امتى تحتاج مكملات إلكتروليتات؟"
+      },
+      "scenarios": [
+        {
+          "scenario": {
+            "en": "Workout under 60 minutes (moderate intensity)",
+            "ar": "تمرين أقل من 60 دقيقة (شدة معتدلة)"
+          },
+          "recommendation": {
+            "en": "Water is enough",
+            "ar": "الميه كفاية"
+          }
+        },
+        {
+          "scenario": {
+            "en": "Workout 60-90 minutes (high intensity)",
+            "ar": "تمرين 60-90 دقيقة (شدة عالية)"
+          },
+          "recommendation": {
+            "en": "Consider adding electrolytes, especially if sweating heavily",
+            "ar": "فكر في إضافة إلكتروليتات، خصوصاً لو بتعرق كتير"
+          }
+        },
+        {
+          "scenario": {
+            "en": "Workout over 90 minutes",
+            "ar": "تمرين أكتر من 90 دقيقة"
+          },
+          "recommendation": {
+            "en": "Electrolytes recommended",
+            "ar": "الإلكتروليتات موصى بيها"
+          }
+        },
+        {
+          "scenario": {
+            "en": "Outdoor training in Egyptian summer",
+            "ar": "تدريب بره في صيف مصر"
+          },
+          "recommendation": {
+            "en": "Electrolytes strongly recommended",
+            "ar": "الإلكتروليتات موصى بيها بشدة"
+          }
+        },
+        {
+          "scenario": {
+            "en": "You're a heavy sweater",
+            "ar": "إنت بتعرق كتير"
+          },
+          "recommendation": {
+            "en": "Always include electrolytes for workouts over 45 min",
+            "ar": "دايماً ضم إلكتروليتات للتمارين أكتر من 45 دقيقة"
+          }
+        }
+      ]
+    }
+  },
+  "electrolyteSources": {
+    "title": {
+      "en": "Electrolyte Sources: Natural vs Supplements",
+      "ar": "مصادر الإلكتروليتات: طبيعية vs مكملات"
+    },
+    "natural": {
+      "title": {
+        "en": "Natural Sources",
+        "ar": "مصادر طبيعية"
+      },
+      "options": [
+        {
+          "name": { "en": "Coconut Water", "ar": "ميه جوز الهند" },
+          "benefits": { "en": "Natural potassium, low sugar, hydrating", "ar": "بوتاسيوم طبيعي، سكر قليل، مرطب" },
+          "notes": { "en": "Good post-workout option", "ar": "اختيار كويس بعد التمرين" }
+        },
+        {
+          "name": { "en": "Banana", "ar": "موز" },
+          "benefits": { "en": "High potassium, carbs for energy", "ar": "بوتاسيوم عالي، كربوهيدرات للطاقة" },
+          "notes": { "en": "Great pre or post workout snack", "ar": "سناك ممتاز قبل أو بعد التمرين" }
+        },
+        {
+          "name": { "en": "Salt + Lemon Water", "ar": "ملح + ميه بليمون" },
+          "benefits": { "en": "Cheap, effective sodium replenishment", "ar": "رخيص، تعويض صوديوم فعال" },
+          "notes": { "en": "Add pinch of salt + lemon to water during long workouts", "ar": "ضيف رشة ملح + ليمون للميه أثناء التمارين الطويلة" }
+        },
+        {
+          "name": { "en": "Pickle Juice", "ar": "ميه المخلل" },
+          "benefits": { "en": "High sodium, may help cramps", "ar": "صوديوم عالي، ممكن يساعد التقلصات" },
+          "notes": { "en": "Some athletes swear by it", "ar": "بعض الرياضيين بيقسموا بيه" }
+        }
+      ]
+    },
+    "supplements": {
+      "title": {
+        "en": "Electrolyte Supplements",
+        "ar": "مكملات الإلكتروليتات"
+      },
+      "options": [
+        {
+          "type": { "en": "Electrolyte Tablets/Powders", "ar": "أقراص/بودرة إلكتروليتات" },
+          "pros": { "en": "Precise dosing, convenient, no sugar", "ar": "جرعة دقيقة، مريح، مفيش سكر" },
+          "cons": { "en": "Cost", "ar": "التكلفة" },
+          "brands": ["LMNT", "Nuun", "Hydralyte"]
+        },
+        {
+          "type": { "en": "Sports Drinks (Gatorade, etc.)", "ar": "مشروبات رياضية (جاتوريد، إلخ)" },
+          "pros": { "en": "Widely available, contains carbs for energy", "ar": "متوفر بكثرة، فيه كربوهيدرات للطاقة" },
+          "cons": { "en": "High sugar, artificial ingredients", "ar": "سكر عالي، مكونات صناعية" },
+          "notes": { "en": "Dilute with water to reduce sugar", "ar": "خففه بالميه عشان تقلل السكر" }
+        },
+        {
+          "type": { "en": "DIY Electrolyte Drink", "ar": "مشروب إلكتروليتات محلي الصنع" },
+          "recipe": {
+            "ingredients": {
+              "en": ["1L water", "1/4 tsp salt", "1/4 tsp baking soda (optional)", "2 tbsp honey or sugar", "Juice of 1 lemon or lime"],
+              "ar": ["1 لتر ميه", "1/4 ملعقة ملح", "1/4 ملعقة بيكنج صودا (اختياري)", "2 ملعقة عسل أو سكر", "عصير ليمونة"]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "egyptSpecific": {
+    "title": {
+      "en": "Hydration Tips for Egyptian Climate",
+      "ar": "نصائح الترطيب لجو مصر"
+    },
+    "tips": [
+      {
+        "tip": {
+          "en": "Train During Cooler Hours",
+          "ar": "اتدرب في ساعات أبرد"
+        },
+        "details": {
+          "en": "In summer, train early morning (before 8am) or evening (after 6pm) to reduce fluid loss.",
+          "ar": "في الصيف، اتدرب الصبح بدري (قبل 8 صباحاً) أو المسا (بعد 6 مساءً) عشان تقلل خسارة السوائل."
+        }
+      },
+      {
+        "tip": {
+          "en": "Pre-hydrate Before Going Out",
+          "ar": "اشرب قبل ما تخرج"
+        },
+        "details": {
+          "en": "Drink 500ml before heading to outdoor training. Start hydrated.",
+          "ar": "اشرب 500 مل قبل ما تروح تتدرب بره. ابدأ مرتوي."
+        }
+      },
+      {
+        "tip": {
+          "en": "Carry Water Everywhere",
+          "ar": "خد ميه معاك في كل مكان"
+        },
+        "details": {
+          "en": "Always have a water bottle. Don't rely on finding water when thirsty.",
+          "ar": "دايماً خد زجاجة ميه. متعتمدش على إنك تلاقي ميه لما تعطش."
+        }
+      },
+      {
+        "tip": {
+          "en": "AC Dehydrates Too",
+          "ar": "التكييف بيجفف كمان"
+        },
+        "details": {
+          "en": "Air conditioning removes moisture from air and skin. Drink more when in AC environments.",
+          "ar": "التكييف بيشيل الرطوبة من الهوا والجلد. اشرب أكتر لما تكون في جو مكيف."
+        }
+      },
+      {
+        "tip": {
+          "en": "Ramadan Hydration",
+          "ar": "ترطيب رمضان"
+        },
+        "details": {
+          "en": "During Ramadan, maximize hydration between Iftar and Suhoor. Avoid salty foods that increase thirst. Consider lighter training.",
+          "ar": "في رمضان، كتر الترطيب بين الإفطار والسحور. تجنب الأكل المملح اللي بيزود العطش. فكر في تدريب أخف."
+        }
+      },
+      {
+        "tip": {
+          "en": "Watch for Salt Rings",
+          "ar": "خلي بالك من حلقات الملح"
+        },
+        "details": {
+          "en": "White salt stains on your clothes after sweating = you're losing a lot of sodium. Add electrolytes.",
+          "ar": "بقع ملح بيضا على هدومك بعد العرق = بتخسر صوديوم كتير. ضيف إلكتروليتات."
+        }
+      }
+    ]
+  },
+  "overhydration": {
+    "title": {
+      "en": "Can You Drink Too Much Water?",
+      "ar": "ممكن تشرب ميه زيادة؟"
+    },
+    "answer": {
+      "en": "Yes. Hyponatremia (low blood sodium from over-drinking) is rare but serious. It's more common in endurance events.",
+      "ar": "أيوه. Hyponatremia (صوديوم دم منخفض من الشرب الزيادة) نادر بس خطير. أكثر شيوعاً في فعاليات التحمل."
+    },
+    "signs": {
+      "en": ["Nausea and vomiting", "Headache", "Confusion", "Muscle weakness", "Seizures (severe)"],
+      "ar": ["غثيان وقيء", "صداع", "ارتباك", "ضعف عضلي", "تشنجات (في الحالات الشديدة)"]
+    },
+    "prevention": {
+      "en": [
+        "Don't force excessive water intake",
+        "Include electrolytes in long workouts",
+        "Listen to thirst - don't override it completely",
+        "For workouts over 2 hours, match fluid intake to sweat loss"
+      ],
+      "ar": [
+        "متجبرش نفسك تشرب ميه زيادة",
+        "ضم إلكتروليتات في التمارين الطويلة",
+        "اسمع للعطش - متتجاهلوش تماماً",
+        "للتمارين أكتر من ساعتين، طابق شرب السوائل مع خسارة العرق"
+      ]
+    }
+  },
+  "hydrationMyths": {
+    "title": {
+      "en": "Common Hydration Myths",
+      "ar": "خرافات الترطيب الشائعة"
+    },
+    "myths": [
+      {
+        "myth": {
+          "en": "Coffee dehydrates you",
+          "ar": "القهوة بتجففك"
+        },
+        "truth": {
+          "en": "Caffeine is a mild diuretic, but coffee still contributes to hydration. The water in coffee outweighs the diuretic effect.",
+          "ar": "الكافيين مدر للبول خفيف، بس القهوة برضو بتساهم في الترطيب. الميه في القهوة بتتفوق على تأثير الإدرار."
+        }
+      },
+      {
+        "myth": {
+          "en": "Clear urine means perfect hydration",
+          "ar": "البول الصافي معناه ترطيب مثالي"
+        },
+        "truth": {
+          "en": "Completely clear urine might mean you're drinking too much. Light yellow is ideal.",
+          "ar": "البول الصافي تماماً ممكن يعني بتشرب زيادة. الأصفر الفاتح مثالي."
+        }
+      },
+      {
+        "myth": {
+          "en": "You need 8 glasses of water per day",
+          "ar": "محتاج 8 كوبايات ميه في اليوم"
+        },
+        "truth": {
+          "en": "Needs vary by body size, activity, and climate. Some need more, some less.",
+          "ar": "الاحتياجات بتختلف حسب حجم الجسم والنشاط والجو. البعض محتاج أكتر، البعض أقل."
+        }
+      },
+      {
+        "myth": {
+          "en": "Sports drinks are always better than water",
+          "ar": "المشروبات الرياضية دايماً أحسن من الميه"
+        },
+        "truth": {
+          "en": "For most workouts under 60 minutes, water is fine. Sports drinks add unnecessary sugar and calories.",
+          "ar": "لمعظم التمارين أقل من 60 دقيقة، الميه كافية. المشروبات الرياضية بتضيف سكر وسعرات مش محتاجها."
+        }
+      },
+      {
+        "myth": {
+          "en": "Thirst is a reliable indicator",
+          "ar": "العطش مؤشر موثوق"
+        },
+        "truth": {
+          "en": "By the time you feel thirsty, you're already mildly dehydrated. Drink proactively.",
+          "ar": "بالوقت اللي بتحس فيه بالعطش، أنت فعلاً جاف شوية. اشرب بشكل استباقي."
+        }
+      }
+    ]
+  },
+  "tips": {
+    "title": {
+      "en": "Practical Hydration Tips",
+      "ar": "نصائح ترطيب عملية"
+    },
+    "list": [
+      {
+        "tip": {
+          "en": "Get a Large Water Bottle",
+          "ar": "جيب زجاجة ميه كبيرة"
+        },
+        "details": {
+          "en": "A 1-2L bottle makes it easy to track intake. Finish it twice = 2-4L done.",
+          "ar": "زجاجة 1-2 لتر بتسهل تتبع الكمية. خلصها مرتين = 2-4 لتر خلصوا."
+        }
+      },
+      {
+        "tip": {
+          "en": "Set Reminders",
+          "ar": "حط تذكيرات"
+        },
+        "details": {
+          "en": "Use phone reminders to drink every 2 hours until it becomes habit.",
+          "ar": "استخدم تذكيرات الموبايل عشان تشرب كل ساعتين لحد ما تبقى عادة."
+        }
+      },
+      {
+        "tip": {
+          "en": "Flavor Your Water",
+          "ar": "طعم الميه بتاعتك"
+        },
+        "details": {
+          "en": "Add lemon, cucumber, or mint if plain water is boring. Avoid sugary drinks.",
+          "ar": "ضيف ليمون أو خيار أو نعناع لو الميه السادة مملة. تجنب المشروبات السكرية."
+        }
+      },
+      {
+        "tip": {
+          "en": "Drink Before You're Thirsty",
+          "ar": "اشرب قبل ما تعطش"
+        },
+        "details": {
+          "en": "Make drinking water a habit, not a response to thirst.",
+          "ar": "خلي شرب الميه عادة، مش رد فعل للعطش."
+        }
+      },
+      {
+        "tip": {
+          "en": "Weigh Yourself Before/After Workouts",
+          "ar": "اتوزن قبل/بعد التمارين"
+        },
+        "details": {
+          "en": "Weight lost during workout = water lost. Drink 1.5L for every 1kg lost.",
+          "ar": "الوزن المفقود أثناء التمرين = ميه مفقودة. اشرب 1.5 لتر لكل كيلو فقدته."
+        }
+      }
+    ]
+  }
+}
