@@ -1,0 +1,443 @@
+{
+  "sleepOptimization": {
+    "title": {
+      "en": "Sleep Optimization",
+      "ar": "تحسين النوم"
+    },
+    "importance": {
+      "en": "Sleep is when your body repairs muscle tissue and releases growth hormone. Poor sleep = poor gains.",
+      "ar": "النوم هو لما جسمك بيصلح أنسجة العضلات وبيفرز هرمون النمو. نوم وحش = مكاسب وحشة."
+    },
+    "recommendations": {
+      "duration": {
+        "en": "7-9 hours per night for optimal recovery",
+        "ar": "7-9 ساعات في الليل للاستشفاء المثالي"
+      },
+      "tips": {
+        "en": [
+          "Go to bed and wake up at the same time daily",
+          "Keep your room cool (18-22°C / 65-72°F)",
+          "Avoid screens 1 hour before bed (blue light blocks melatonin)",
+          "Don't eat large meals within 2-3 hours of bed",
+          "Limit caffeine after 2pm",
+          "Create a dark sleeping environment",
+          "Consider magnesium supplementation (helps relaxation)"
+        ],
+        "ar": [
+          "نام واصحى في نفس الوقت يومياً",
+          "خلّي أوضتك باردة (18-22 درجة مئوية)",
+          "تجنب الشاشات ساعة قبل النوم (الضوء الأزرق يمنع الميلاتونين)",
+          "ما تاكلش وجبات كبيرة قبل النوم بـ 2-3 ساعات",
+          "قلل الكافيين بعد الساعة 2 الظهر",
+          "اعمل بيئة نوم مظلمة",
+          "فكر في مكمل ماغنسيوم (يساعد على الاسترخاء)"
+        ]
+      }
+    },
+    "sleepTracking": {
+      "en": "Consider using a sleep tracking app or smartwatch to monitor sleep quality",
+      "ar": "فكر في استخدام تطبيق تتبع النوم أو ساعة ذكية لمراقبة جودة النوم"
+    }
+  },
+  "activeRecovery": {
+    "title": {
+      "en": "Active Recovery",
+      "ar": "الاستشفاء النشط"
+    },
+    "description": {
+      "en": "Light activity on rest days increases blood flow to muscles, speeding recovery without adding stress.",
+      "ar": "النشاط الخفيف في أيام الراحة يزيد تدفق الدم للعضلات، ويسرع الاستشفاء من غير إضافة ضغط."
+    },
+    "activities": {
+      "en": [
+        {"activity": "Walking (20-30 minutes)", "benefit": "Improves circulation without stress"},
+        {"activity": "Light cycling", "benefit": "Low impact cardio"},
+        {"activity": "Swimming (easy pace)", "benefit": "Full body, zero impact"},
+        {"activity": "Yoga", "benefit": "Flexibility and mobility"},
+        {"activity": "Stretching", "benefit": "Reduces muscle tension"},
+        {"activity": "Foam rolling", "benefit": "Releases muscle knots"}
+      ],
+      "ar": [
+        {"activity": "المشي (20-30 دقيقة)", "benefit": "يحسن الدورة الدموية من غير ضغط"},
+        {"activity": "ركوب الدراجة الخفيف", "benefit": "كارديو منخفض التأثير"},
+        {"activity": "السباحة (سرعة سهلة)", "benefit": "جسم كامل، صفر تأثير"},
+        {"activity": "اليوجا", "benefit": "المرونة والتنقل"},
+        {"activity": "التمديد", "benefit": "يقلل شد العضلات"},
+        {"activity": "الفوم رولر", "benefit": "يفك عقد العضلات"}
+      ]
+    },
+    "whatToAvoid": {
+      "en": [
+        "High intensity activities",
+        "Heavy lifting",
+        "Anything that makes you very sore",
+        "Activities that stress the same muscles you just trained"
+      ],
+      "ar": [
+        "الأنشطة عالية الشدة",
+        "الرفع التقيل",
+        "أي حاجة تخليك تتعب أوي",
+        "الأنشطة اللي تجهد نفس العضلات اللي درّبتها"
+      ]
+    }
+  },
+  "foamRolling": {
+    "title": {
+      "en": "Foam Rolling Guide",
+      "ar": "دليل الفوم رولر"
+    },
+    "benefits": {
+      "en": [
+        "Releases muscle tightness (myofascial release)",
+        "Increases blood flow to muscles",
+        "Reduces muscle soreness",
+        "Improves range of motion",
+        "Helps with mobility issues"
+      ],
+      "ar": [
+        "يفك شد العضلات (تحرير اللفافة العضلية)",
+        "يزيد تدفق الدم للعضلات",
+        "يقلل ألم العضلات",
+        "يحسن مدى الحركة",
+        "يساعد في مشاكل التنقل"
+      ]
+    },
+    "techniques": [
+      {
+        "muscle": { "en": "Quads", "ar": "الفخذ الأمامي" },
+        "method": {
+          "en": "Face down, roll from hip to just above knee. Pause on tender spots for 30-60 seconds.",
+          "ar": "وجهك لتحت، دحرج من الورك لفوق الركبة. توقف على المناطق المؤلمة 30-60 ثانية."
+        }
+      },
+      {
+        "muscle": { "en": "IT Band (Outer Thigh)", "ar": "الشريط الحرقفي (الفخذ الخارجي)" },
+        "method": {
+          "en": "Lie on side, roll from hip to knee. Very tender area - go slow.",
+          "ar": "استلقِ على جنبك، دحرج من الورك للركبة. منطقة مؤلمة جداً - روح ببطء."
+        }
+      },
+      {
+        "muscle": { "en": "Glutes", "ar": "المؤخرة" },
+        "method": {
+          "en": "Sit on roller, cross one ankle over opposite knee, lean toward the crossed leg side.",
+          "ar": "اقعد على الرولر، ضع كاحل واحد فوق الركبة المقابلة، ميّل ناحية جهة الرجل المتقاطعة."
+        }
+      },
+      {
+        "muscle": { "en": "Upper Back", "ar": "الظهر العلوي" },
+        "method": {
+          "en": "Roller under shoulder blades, hug yourself, roll from mid-back to upper back.",
+          "ar": "الرولر تحت لوحتي الكتف، حضن نفسك، دحرج من وسط الظهر للظهر العلوي."
+        }
+      },
+      {
+        "muscle": { "en": "Lats", "ar": "اللاتس" },
+        "method": {
+          "en": "Lie on side with arm extended overhead, roll from armpit to mid-ribcage.",
+          "ar": "استلقِ على جنبك وذراعك ممتد فوق راسك، دحرج من الإبط لمنتصف القفص الصدري."
+        }
+      },
+      {
+        "muscle": { "en": "Calves", "ar": "السمانة" },
+        "method": {
+          "en": "Sit with roller under calves, lift hips and roll from ankle to knee.",
+          "ar": "اقعد والرولر تحت سمانتك، ارفع وركك ودحرج من الكاحل للركبة."
+        }
+      }
+    ],
+    "guidelines": {
+      "en": [
+        "Roll each muscle for 60-120 seconds",
+        "Pause on tender spots for 30-60 seconds",
+        "Use moderate pressure - it shouldn't be excruciating",
+        "Breathe deeply throughout",
+        "Avoid rolling directly on joints or bones"
+      ],
+      "ar": [
+        "دحرج كل عضلة لـ 60-120 ثانية",
+        "توقف على المناطق المؤلمة لـ 30-60 ثانية",
+        "استخدم ضغط معتدل - مش لازم يكون مؤلم جداً",
+        "اتنفس بعمق طول الوقت",
+        "تجنب الدحرجة مباشرة على المفاصل أو العظام"
+      ]
+    }
+  },
+  "nutrition": {
+    "title": {
+      "en": "Recovery Nutrition",
+      "ar": "تغذية الاستشفاء"
+    },
+    "postWorkout": {
+      "en": {
+        "timing": "Within 2 hours of training",
+        "protein": "20-40g protein to support muscle repair",
+        "carbs": "Simple carbs to replenish glycogen (fruits, rice, bread)",
+        "examples": ["Chicken and rice", "Protein shake with banana", "Greek yogurt with honey"]
+      },
+      "ar": {
+        "timing": "خلال ساعتين من التدريب",
+        "protein": "20-40 جرام بروتين لدعم إصلاح العضلات",
+        "carbs": "كاربوهيدرات بسيطة لتعويض الجليكوجين (فواكه، أرز، عيش)",
+        "examples": ["فراخ وأرز", "شيك بروتين مع موز", "زبادي يوناني بالعسل"]
+      }
+    },
+    "hydration": {
+      "en": "Drink 500ml water for every pound lost during exercise. Add electrolytes for sessions over 1 hour.",
+      "ar": "اشرب 500 مل ماء لكل نص كيلو فقدته أثناء التمرين. أضف إلكتروليتات للجلسات أكتر من ساعة."
+    },
+    "antiInflammatory": {
+      "en": [
+        "Omega-3 rich foods (fish, walnuts, flaxseed)",
+        "Berries and cherries",
+        "Leafy greens",
+        "Turmeric",
+        "Ginger"
+      ],
+      "ar": [
+        "أطعمة غنية بالأوميجا-3 (سمك، عين جمل، بذر كتان)",
+        "التوت والكرز",
+        "الخضروات الورقية",
+        "الكركم",
+        "الزنجبيل"
+      ]
+    }
+  },
+  "restDayActivities": {
+    "title": {
+      "en": "Rest Day Activities",
+      "ar": "أنشطة يوم الراحة"
+    },
+    "recommendations": {
+      "en": [
+        {
+          "activity": "Meal prep for the week",
+          "benefit": "Sets you up for nutrition success"
+        },
+        {
+          "activity": "Gentle walk outdoors",
+          "benefit": "Fresh air, vitamin D, light movement"
+        },
+        {
+          "activity": "Mobility/stretching routine (15-20 min)",
+          "benefit": "Improves flexibility and reduces soreness"
+        },
+        {
+          "activity": "Meditation or breathing exercises",
+          "benefit": "Reduces cortisol, aids recovery"
+        },
+        {
+          "activity": "Light swimming or water activities",
+          "benefit": "Zero impact, full body circulation"
+        },
+        {
+          "activity": "Read or study fitness/nutrition",
+          "benefit": "Mental engagement without physical stress"
+        },
+        {
+          "activity": "Spa/sauna if available",
+          "benefit": "Relaxation and circulation"
+        }
+      ],
+      "ar": [
+        {
+          "activity": "تحضير وجبات الأسبوع",
+          "benefit": "يجهزك لنجاح التغذية"
+        },
+        {
+          "activity": "مشي لطيف في الخارج",
+          "benefit": "هواء نقي، فيتامين د، حركة خفيفة"
+        },
+        {
+          "activity": "روتين مرونة/تمديد (15-20 دقيقة)",
+          "benefit": "يحسن المرونة ويقلل الألم"
+        },
+        {
+          "activity": "تأمل أو تمارين تنفس",
+          "benefit": "يقلل الكورتيزول، يساعد الاستشفاء"
+        },
+        {
+          "activity": "سباحة خفيفة أو أنشطة مائية",
+          "benefit": "صفر تأثير، دورة دموية لكل الجسم"
+        },
+        {
+          "activity": "قراءة أو دراسة اللياقة/التغذية",
+          "benefit": "انخراط ذهني من غير ضغط جسدي"
+        },
+        {
+          "activity": "سبا/ساونا لو متاح",
+          "benefit": "استرخاء ودورة دموية"
+        }
+      ]
+    }
+  },
+  "recoveryMethods": {
+    "title": {
+      "en": "Recovery Methods",
+      "ar": "طرق الاستشفاء"
+    },
+    "methods": [
+      {
+        "method": { "en": "Cold Therapy (Ice Bath)", "ar": "العلاج بالبرودة (حمام ثلج)" },
+        "description": {
+          "en": "Cold water immersion for 10-15 minutes reduces inflammation and soreness",
+          "ar": "الغمر في ماء بارد لـ 10-15 دقيقة يقلل الالتهاب والألم"
+        },
+        "when": { "en": "After intense training or competition", "ar": "بعد تدريب مكثف أو مسابقة" },
+        "caution": { "en": "May reduce muscle adaptation if done too frequently", "ar": "ممكن يقلل تكيف العضلات لو اتعمل كتير" }
+      },
+      {
+        "method": { "en": "Heat Therapy (Hot Bath/Sauna)", "ar": "العلاج بالحرارة (حمام ساخن/ساونا)" },
+        "description": {
+          "en": "Heat increases blood flow and helps muscles relax",
+          "ar": "الحرارة تزيد تدفق الدم وتساعد العضلات تسترخي"
+        },
+        "when": { "en": "Tight muscles, general soreness", "ar": "عضلات مشدودة، ألم عام" },
+        "caution": { "en": "Stay hydrated, limit sessions to 15-20 minutes", "ar": "خلّيك مترطب، حدد الجلسات بـ 15-20 دقيقة" }
+      },
+      {
+        "method": { "en": "Massage", "ar": "المساج" },
+        "description": {
+          "en": "Professional massage or self-massage releases muscle tension",
+          "ar": "مساج احترافي أو ذاتي يفك شد العضلات"
+        },
+        "when": { "en": "Weekly or bi-weekly for active individuals", "ar": "أسبوعياً أو كل أسبوعين للأشخاص النشطين" },
+        "caution": { "en": "Avoid deep tissue massage on very sore muscles", "ar": "تجنب المساج العميق على عضلات مؤلمة جداً" }
+      },
+      {
+        "method": { "en": "Compression Gear", "ar": "ملابس الضغط" },
+        "description": {
+          "en": "Compression clothing may help reduce swelling and improve circulation",
+          "ar": "ملابس الضغط ممكن تساعد في تقليل التورم وتحسين الدورة الدموية"
+        },
+        "when": { "en": "During travel or after leg-heavy workouts", "ar": "أثناء السفر أو بعد تمارين الأرجل الثقيلة" },
+        "caution": { "en": "Evidence is mixed - use if it helps you", "ar": "الأدلة مختلطة - استخدمها لو بتساعدك" }
+      },
+      {
+        "method": { "en": "Contrast Therapy", "ar": "العلاج المتناقض" },
+        "description": {
+          "en": "Alternating between hot and cold - 3 min hot, 1 min cold, repeat",
+          "ar": "التبديل بين الساخن والبارد - 3 دقائق ساخن، 1 دقيقة بارد، كرر"
+        },
+        "when": { "en": "After intense training for enhanced circulation", "ar": "بعد تدريب مكثف لتحسين الدورة الدموية" },
+        "caution": { "en": "End on cold for inflammation reduction", "ar": "اختم بالبارد لتقليل الالتهاب" }
+      }
+    ]
+  },
+  "deloadWeek": {
+    "title": {
+      "en": "Deload Week Guide",
+      "ar": "دليل أسبوع التخفيف"
+    },
+    "definition": {
+      "en": "A planned reduction in training intensity/volume to allow full recovery",
+      "ar": "تخفيض مخطط في شدة/حجم التدريب للسماح بالاستشفاء الكامل"
+    },
+    "when": {
+      "en": "Every 4-8 weeks, or when showing signs of overtraining",
+      "ar": "كل 4-8 أسابيع، أو لما تظهر علامات التدريب الزائد"
+    },
+    "signsYouNeedDeload": {
+      "en": [
+        "Strength plateauing or declining",
+        "Constant fatigue",
+        "Poor sleep",
+        "Loss of motivation",
+        "Nagging aches and pains",
+        "Getting sick frequently"
+      ],
+      "ar": [
+        "القوة ثابتة أو بتنزل",
+        "إرهاق مستمر",
+        "نوم وحش",
+        "فقدان الحافز",
+        "آلام مزعجة",
+        "المرض بشكل متكرر"
+      ]
+    },
+    "howToDeload": {
+      "en": [
+        "Option 1: Reduce weight to 50-60% of normal",
+        "Option 2: Reduce volume (sets/reps) by 50%",
+        "Option 3: Reduce both weight and volume by 30-40%",
+        "Option 4: Take the week off completely (if very fatigued)"
+      ],
+      "ar": [
+        "الخيار 1: قلل الوزن لـ 50-60% من المعتاد",
+        "الخيار 2: قلل الحجم (مجموعات/تكرارات) بـ 50%",
+        "الخيار 3: قلل الوزن والحجم بـ 30-40%",
+        "الخيار 4: خد الأسبوع راحة كامل (لو مرهق جداً)"
+      ]
+    },
+    "duringDeload": {
+      "en": [
+        "Maintain protein intake",
+        "Focus on sleep and recovery",
+        "Use the extra energy for mobility work",
+        "Don't feel guilty - recovery is part of training"
+      ],
+      "ar": [
+        "حافظ على تناول البروتين",
+        "ركز على النوم والاستشفاء",
+        "استخدم الطاقة الزيادة لشغل المرونة",
+        "ما تحسش بالذنب - الاستشفاء جزء من التدريب"
+      ]
+    }
+  },
+  "mentalRecovery": {
+    "title": {
+      "en": "Mental Recovery",
+      "ar": "الاستشفاء الذهني"
+    },
+    "importance": {
+      "en": "Physical training is stress. Mental recovery helps manage cortisol and keeps you motivated long-term.",
+      "ar": "التدريب البدني ضغط. الاستشفاء الذهني يساعد في إدارة الكورتيزول ويخليك متحفز على المدى الطويل."
+    },
+    "techniques": {
+      "en": [
+        {
+          "technique": "Meditation",
+          "description": "10-15 minutes of mindfulness reduces stress hormones"
+        },
+        {
+          "technique": "Breathing exercises",
+          "description": "Box breathing (4-4-4-4) activates rest-and-digest mode"
+        },
+        {
+          "technique": "Journaling",
+          "description": "Write about training progress and gratitude"
+        },
+        {
+          "technique": "Social time",
+          "description": "Spend time with friends/family - social connection aids recovery"
+        },
+        {
+          "technique": "Nature time",
+          "description": "Time outdoors reduces cortisol and improves mood"
+        }
+      ],
+      "ar": [
+        {
+          "technique": "التأمل",
+          "description": "10-15 دقيقة من اليقظة تقلل هرمونات التوتر"
+        },
+        {
+          "technique": "تمارين التنفس",
+          "description": "تنفس الصندوق (4-4-4-4) يفعّل وضع الراحة والهضم"
+        },
+        {
+          "technique": "كتابة اليوميات",
+          "description": "اكتب عن تقدم التدريب والامتنان"
+        },
+        {
+          "technique": "وقت اجتماعي",
+          "description": "اقضِ وقت مع الأصحاب/العيلة - التواصل الاجتماعي يساعد الاستشفاء"
+        },
+        {
+          "technique": "وقت في الطبيعة",
+          "description": "الوقت في الخارج يقلل الكورتيزول ويحسن المزاج"
+        }
+      ]
+    }
+  }
+}
