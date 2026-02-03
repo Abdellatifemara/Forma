@@ -64,6 +64,76 @@
       "description_en": "Healthy restaurant on Talabat with calorie-counted meals.",
       "description_ar": "مطعم صحي على طلبات مع وجبات محسوبة السعرات.",
       "specialties": ["High Protein", "Healthy Sandwiches", "Quick Delivery"]
+    },
+    {
+      "name_en": "Go Fit Healthy Food",
+      "name_ar": "جو فيت للأكل الصحي",
+      "website": "https://www.instagram.com/gofit_healthyfood",
+      "delivery_areas": ["Cairo", "Giza"],
+      "description_en": "Variety of healthy meals and desserts tailored for fitness diets. Fresh daily preparation.",
+      "description_ar": "تشكيلة من الوجبات الصحية والحلويات المخصصة لأنظمة اللياقة. تحضير طازج يومياً.",
+      "specialties": ["Healthy Desserts", "Fitness Meals", "Protein Bowls"]
+    },
+    {
+      "name_en": "NutriTribe",
+      "name_ar": "نوتري ترايب",
+      "website": "https://nutritribe.com",
+      "delivery_areas": ["Cairo", "Giza", "New Cairo"],
+      "description_en": "Tailor-made nutrition packages with 6-week meal plans. Includes WhatsApp support and consultations.",
+      "description_ar": "حزم تغذية مخصصة مع خطط وجبات لـ 6 أسابيع. تشمل دعم واتساب واستشارات.",
+      "specialties": ["Personalized Plans", "Consultation", "6-Week Programs"],
+      "features": ["Weekly Q&A", "Online Consultations", "Custom Recipes"]
+    },
+    {
+      "name_en": "Fit Food Egypt",
+      "name_ar": "فيت فود مصر",
+      "website": "https://www.instagram.com/fitfoodegypt",
+      "delivery_areas": ["Cairo", "Giza"],
+      "description_en": "Specialized in Lacto, Lacto-ovo, Vegan, and Keto diets. 14 and 28 day packages.",
+      "description_ar": "متخصص في أنظمة لاكتو، لاكتو-أوفو، فيجان، وكيتو. حزم 14 و 28 يوم.",
+      "specialties": ["Vegan", "Keto", "Lacto-ovo", "Vegetarian"],
+      "packages": ["14 days", "28 days"]
+    },
+    {
+      "name_en": "AntiFat Egypt",
+      "name_ar": "أنتي فات مصر",
+      "website": "https://www.antifat-egypt.com",
+      "phone": "01000550055",
+      "delivery_areas": ["Cairo", "Giza", "6th October", "New Cairo"],
+      "description_en": "Specialized tailored programs that adapt to your dietary needs. Focus on eating right, not strict dieting.",
+      "description_ar": "برامج مخصصة تتكيف مع احتياجاتك الغذائية. التركيز على الأكل الصحيح، مش الدايت القاسي.",
+      "specialties": ["Weight Loss", "Sustainable Eating", "No Strict Diets"]
+    },
+    {
+      "name_en": "Body Blocks",
+      "name_ar": "بودي بلوكس",
+      "website": "https://bodyblocksegypt.com",
+      "delivery_areas": ["Cairo", "Giza"],
+      "description_en": "Individual diet plans with face-to-face or phone consultations. Lifestyle-focused approach.",
+      "description_ar": "خطط غذائية فردية مع استشارات وجهاً لوجه أو بالتليفون. نهج يركز على أسلوب الحياة.",
+      "specialties": ["Personal Consultation", "Lifestyle Plans", "Individual Diets"],
+      "features": ["Free Phone Consultation", "Face-to-Face Option"]
+    },
+    {
+      "name_en": "Diet Hub Egypt",
+      "name_ar": "دايت هب مصر",
+      "website": "https://diethubegypt.com",
+      "delivery_areas": ["Cairo", "Giza", "New Cairo", "Sheikh Zayed"],
+      "description_en": "Mobile app-based healthy meal delivery. Natural, fresh ingredients tailored to health goals.",
+      "description_ar": "توصيل وجبات صحية عبر تطبيق الموبايل. مكونات طبيعية وطازجة مخصصة لأهدافك الصحية.",
+      "specialties": ["App-Based Ordering", "Natural Ingredients", "Goal-Oriented"],
+      "features": ["Mobile App", "Fresh Daily", "Scheduled Delivery"]
+    },
+    {
+      "name_en": "Butcherista",
+      "name_ar": "بتشريستا",
+      "website": "https://butcherista.com",
+      "phone": "19595",
+      "delivery_areas": ["Cairo", "Giza", "New Cairo", "6th October", "Sheikh Zayed"],
+      "description_en": "Premium butcher & healthy meals. High-quality proteins with macro tracking. Fresh cuts and ready meals.",
+      "description_ar": "جزار فاخر ووجبات صحية. بروتينات عالية الجودة مع تتبع الماكروز. قطع طازجة ووجبات جاهزة.",
+      "specialties": ["Premium Proteins", "Fresh Cuts", "Macro-Tracked Meals", "Bulk Protein"],
+      "features": ["Premium Quality", "Vacuum Packed", "Portion Controlled"]
     }
   ],
   "ready_meals": [
