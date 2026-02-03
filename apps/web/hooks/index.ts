@@ -1,4 +1,5 @@
 export * from './use-auth';
+export * from './use-user';
 export * from './use-workouts';
 export * from './use-nutrition';
 export * from './use-progress';

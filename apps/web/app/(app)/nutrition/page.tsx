@@ -7,15 +7,14 @@ import {
   Camera,
   Barcode,
   ChevronRight,
-  Flame,
   Droplet,
   Apple,
+  Loader2,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Progress } from '@/components/ui/progress';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Dialog,
   DialogContent,
@@ -23,65 +22,68 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import { useDailyNutrition, useFoodSearch } from '@/hooks/use-nutrition';
 
-const dailyGoals = {
-  calories: { current: 1847, target: 2200 },
-  protein: { current: 145, target: 180 },
-  carbs: { current: 180, target: 250 },
-  fat: { current: 65, target: 75 },
-  water: { current: 6, target: 8 },
+// Default goals if none set
+const defaultGoals = {
+  calories: 2200,
+  protein: 180,
+  carbs: 250,
+  fat: 75,
+  water: 8,
 };
 
-const meals = [
-  {
-    name: 'Breakfast',
-    time: '8:30 AM',
-    calories: 450,
-    foods: [
-      { name: 'Foul Medames', calories: 250, protein: 15, carbs: 35, fat: 5 },
-      { name: 'Egyptian Bread (Aish Baladi)', calories: 120, protein: 4, carbs: 25, fat: 1 },
-      { name: 'Boiled Eggs (2)', calories: 80, protein: 12, carbs: 0, fat: 5 },
-    ],
-  },
-  {
-    name: 'Lunch',
-    time: '1:00 PM',
-    calories: 650,
-    foods: [
-      { name: 'Grilled Chicken Breast', calories: 280, protein: 52, carbs: 0, fat: 6 },
-      { name: 'Rice', calories: 220, protein: 4, carbs: 45, fat: 1 },
-      { name: 'Mixed Vegetables', calories: 80, protein: 3, carbs: 15, fat: 1 },
-      { name: 'Tahini Salad', calories: 70, protein: 2, carbs: 5, fat: 5 },
-    ],
-  },
-  {
-    name: 'Snack',
-    time: '4:00 PM',
-    calories: 200,
-    foods: [
-      { name: 'Greek Yogurt', calories: 120, protein: 15, carbs: 8, fat: 3 },
-      { name: 'Almonds (handful)', calories: 80, protein: 3, carbs: 3, fat: 7 },
-    ],
-  },
-  {
-    name: 'Dinner',
-    time: '7:30 PM',
-    calories: 0,
-    foods: [],
-    notLogged: true,
-  },
-];
-
+// Sample recent foods for quick access
 const recentFoods = [
-  { name: 'Foul Medames', calories: 250 },
-  { name: 'Grilled Chicken', calories: 280 },
-  { name: 'Greek Yogurt', calories: 120 },
-  { name: 'Koshary', calories: 450 },
-  { name: 'Protein Shake', calories: 180 },
+  { name: 'Foul Medames', calories: 280 },
+  { name: 'Grilled Chicken', calories: 240 },
+  { name: 'Greek Yogurt', calories: 100 },
+  { name: 'Koshari', calories: 758 },
+  { name: 'Protein Shake', calories: 120 },
 ];
 
 export default function NutritionPage() {
   const [searchQuery, setSearchQuery] = useState('');
+  const { data: dailyData, isLoading: dailyLoading, error: dailyError } = useDailyNutrition();
+  const { data: searchResults, isLoading: searchLoading } = useFoodSearch(searchQuery);
+
+  // Calculate daily totals from API data or use defaults
+  const totals = dailyData?.totals || { calories: 0, protein: 0, carbs: 0, fat: 0 };
+  const goals = dailyData?.goals || defaultGoals;
+  const meals = dailyData?.meals || [];
+
+  // Group meals by type
+  const mealTypes = ['BREAKFAST', 'LUNCH', 'DINNER', 'SNACK'];
+  const mealLabels: Record<string, { label: string; time: string }> = {
+    BREAKFAST: { label: 'Breakfast', time: '8:00 AM' },
+    LUNCH: { label: 'Lunch', time: '1:00 PM' },
+    DINNER: { label: 'Dinner', time: '7:00 PM' },
+    SNACK: { label: 'Snack', time: '4:00 PM' },
+  };
+
+  const organizedMeals = mealTypes.map((type) => {
+    const meal = meals.find((m) => m.mealType?.toUpperCase() === type);
+    const info = mealLabels[type];
+    return {
+      type,
+      name: info.label,
+      time: info.time,
+      calories: meal?.totalCalories || 0,
+      foods: meal?.foods || [],
+      notLogged: !meal,
+    };
+  });
+
+  // Water tracking (simulated for now)
+  const waterGlasses = 6;
+
+  if (dailyLoading) {
+    return (
+      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
+        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
@@ -112,6 +114,44 @@ export default function NutritionPage() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
+
+              {/* Search Results */}
+              {searchQuery.length >= 2 && (
+                <div>
+                  <p className="mb-2 text-sm font-medium">Search Results</p>
+                  {searchLoading ? (
+                    <div className="flex items-center justify-center py-4">
+                      <Loader2 className="h-5 w-5 animate-spin" />
+                    </div>
+                  ) : searchResults && searchResults.length > 0 ? (
+                    <div className="max-h-48 space-y-2 overflow-y-auto">
+                      {searchResults.map((food) => (
+                        <div
+                          key={food.id}
+                          className="flex cursor-pointer items-center justify-between rounded-lg border p-3 hover:bg-muted"
+                        >
+                          <div>
+                            <span className="font-medium">{food.name}</span>
+                            {food.brand && (
+                              <span className="ml-2 text-xs text-muted-foreground">
+                                ({food.brand})
+                              </span>
+                            )}
+                          </div>
+                          <span className="text-sm text-muted-foreground">
+                            {food.calories} kcal
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="py-4 text-center text-sm text-muted-foreground">
+                      No foods found
+                    </p>
+                  )}
+                </div>
+              )}
+
               <div className="grid grid-cols-2 gap-2">
                 <Button variant="outline" className="h-auto flex-col py-4">
                   <Camera className="mb-2 h-5 w-5" />
@@ -122,26 +162,40 @@ export default function NutritionPage() {
                   <span className="text-xs">Scan Barcode</span>
                 </Button>
               </div>
-              <div>
-                <p className="mb-2 text-sm font-medium">Recent Foods</p>
-                <div className="space-y-2">
-                  {recentFoods.map((food) => (
-                    <div
-                      key={food.name}
-                      className="flex cursor-pointer items-center justify-between rounded-lg border p-3 hover:bg-muted"
-                    >
-                      <span>{food.name}</span>
-                      <span className="text-sm text-muted-foreground">
-                        {food.calories} kcal
-                      </span>
-                    </div>
-                  ))}
+
+              {searchQuery.length < 2 && (
+                <div>
+                  <p className="mb-2 text-sm font-medium">Recent Foods</p>
+                  <div className="space-y-2">
+                    {recentFoods.map((food) => (
+                      <div
+                        key={food.name}
+                        className="flex cursor-pointer items-center justify-between rounded-lg border p-3 hover:bg-muted"
+                      >
+                        <span>{food.name}</span>
+                        <span className="text-sm text-muted-foreground">
+                          {food.calories} kcal
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </DialogContent>
         </Dialog>
       </div>
+
+      {/* Error Message */}
+      {dailyError && (
+        <Card className="border-yellow-500/50 bg-yellow-500/10">
+          <CardContent className="p-4">
+            <p className="text-sm text-yellow-600">
+              Could not load nutrition data. Showing default goals.
+            </p>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Daily Summary */}
       <div className="grid gap-4 md:grid-cols-2">
@@ -167,33 +221,29 @@ export default function NutritionPage() {
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="8"
-                    strokeDasharray={`${(dailyGoals.calories.current / dailyGoals.calories.target) * 251} 251`}
+                    strokeDasharray={`${Math.min((totals.calories / goals.calories) * 251, 251)} 251`}
                     strokeLinecap="round"
                     className="text-forma-teal"
                   />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="text-2xl font-bold">{dailyGoals.calories.current}</span>
+                  <span className="text-2xl font-bold">{Math.round(totals.calories)}</span>
                   <span className="text-xs text-muted-foreground">kcal</span>
                 </div>
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold">Calories</h3>
                 <p className="text-sm text-muted-foreground">
-                  {dailyGoals.calories.target - dailyGoals.calories.current} kcal remaining
+                  {Math.max(0, Math.round(goals.calories - totals.calories))} kcal remaining
                 </p>
                 <div className="mt-4 space-y-2">
                   <div className="flex justify-between text-sm">
                     <span>Goal</span>
-                    <span>{dailyGoals.calories.target} kcal</span>
+                    <span>{goals.calories} kcal</span>
                   </div>
                   <div className="flex justify-between text-sm">
                     <span>Food</span>
-                    <span>+{dailyGoals.calories.current} kcal</span>
-                  </div>
-                  <div className="flex justify-between text-sm text-forma-teal">
-                    <span>Exercise</span>
-                    <span>-320 kcal</span>
+                    <span>+{Math.round(totals.calories)} kcal</span>
                   </div>
                 </div>
               </div>
@@ -210,60 +260,60 @@ export default function NutritionPage() {
             <div>
               <div className="flex items-center justify-between text-sm">
                 <span className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-chart-protein" />
+                  <div className="h-3 w-3 rounded-full bg-red-500" />
                   Protein
                 </span>
                 <span>
-                  {dailyGoals.protein.current}g / {dailyGoals.protein.target}g
+                  {Math.round(totals.protein)}g / {goals.protein}g
                 </span>
               </div>
               <Progress
-                value={(dailyGoals.protein.current / dailyGoals.protein.target) * 100}
+                value={Math.min((totals.protein / goals.protein) * 100, 100)}
                 className="mt-2"
               />
             </div>
             <div>
               <div className="flex items-center justify-between text-sm">
                 <span className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-chart-carbs" />
+                  <div className="h-3 w-3 rounded-full bg-yellow-500" />
                   Carbs
                 </span>
                 <span>
-                  {dailyGoals.carbs.current}g / {dailyGoals.carbs.target}g
+                  {Math.round(totals.carbs)}g / {goals.carbs}g
                 </span>
               </div>
               <Progress
-                value={(dailyGoals.carbs.current / dailyGoals.carbs.target) * 100}
+                value={Math.min((totals.carbs / goals.carbs) * 100, 100)}
                 className="mt-2"
               />
             </div>
             <div>
               <div className="flex items-center justify-between text-sm">
                 <span className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-chart-fat" />
+                  <div className="h-3 w-3 rounded-full bg-blue-500" />
                   Fat
                 </span>
                 <span>
-                  {dailyGoals.fat.current}g / {dailyGoals.fat.target}g
+                  {Math.round(totals.fat)}g / {goals.fat}g
                 </span>
               </div>
               <Progress
-                value={(dailyGoals.fat.current / dailyGoals.fat.target) * 100}
+                value={Math.min((totals.fat / goals.fat) * 100, 100)}
                 className="mt-2"
               />
             </div>
             <div>
               <div className="flex items-center justify-between text-sm">
                 <span className="flex items-center gap-2">
-                  <Droplet className="h-3 w-3 text-blue-500" />
+                  <Droplet className="h-3 w-3 text-cyan-500" />
                   Water
                 </span>
                 <span>
-                  {dailyGoals.water.current} / {dailyGoals.water.target} glasses
+                  {waterGlasses} / {defaultGoals.water} glasses
                 </span>
               </div>
               <Progress
-                value={(dailyGoals.water.current / dailyGoals.water.target) * 100}
+                value={(waterGlasses / defaultGoals.water) * 100}
                 className="mt-2"
               />
             </div>
@@ -273,9 +323,9 @@ export default function NutritionPage() {
 
       {/* Meals */}
       <div className="space-y-4">
-        <h2 className="text-lg font-semibold">Today's Meals</h2>
-        {meals.map((meal) => (
-          <Card key={meal.name}>
+        <h2 className="text-lg font-semibold">Today&apos;s Meals</h2>
+        {organizedMeals.map((meal) => (
+          <Card key={meal.type}>
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -296,7 +346,7 @@ export default function NutritionPage() {
                   ) : (
                     <>
                       <div className="text-right">
-                        <p className="font-semibold">{meal.calories} kcal</p>
+                        <p className="font-semibold">{Math.round(meal.calories)} kcal</p>
                         <p className="text-xs text-muted-foreground">
                           {meal.foods.length} items
                         </p>
@@ -309,13 +359,15 @@ export default function NutritionPage() {
 
               {meal.foods.length > 0 && (
                 <div className="mt-4 space-y-2 border-t pt-4">
-                  {meal.foods.map((food, index) => (
+                  {meal.foods.map((foodItem, index) => (
                     <div
                       key={index}
                       className="flex items-center justify-between text-sm"
                     >
-                      <span>{food.name}</span>
-                      <span className="text-muted-foreground">{food.calories} kcal</span>
+                      <span>{foodItem.food?.name || 'Food'}</span>
+                      <span className="text-muted-foreground">
+                        {Math.round((foodItem.food?.calories || 0) * (foodItem.servings || 1))} kcal
+                      </span>
                     </div>
                   ))}
                 </div>

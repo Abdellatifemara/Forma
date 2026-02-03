@@ -1,0 +1,321 @@
+{
+  "meal_delivery_services": [
+    {
+      "name_en": "Protein Box Egypt",
+      "name_ar": "بروتين بوكس مصر",
+      "website": "https://www.proteinbox-egypt.com",
+      "phone": "01200347777",
+      "delivery_areas": ["Cairo", "Giza", "New Cairo", "6th October"],
+      "description_en": "Healthy meals precisely divided by calories, protein, fat, and carbs. Fresh daily preparation with no preservatives.",
+      "description_ar": "وجبات صحية محسوبة السعرات الحرارية والبروتين والدهون والكربوهيدرات. طازجة يوميا بدون مواد حافظة.",
+      "specialties": ["High Protein", "Keto", "Weight Loss", "Muscle Gain"],
+      "pricing_egp": {
+        "3_meals_package": 600,
+        "weekly_package": 1800
+      }
+    },
+    {
+      "name_en": "Diet to Door Egypt",
+      "name_ar": "دايت تو دور مصر",
+      "website": "https://diettodoor.com",
+      "phone": "01020725111",
+      "delivery_areas": ["Cairo", "Giza", "Alexandria"],
+      "description_en": "Egypt's #1 diet food delivery. 8 different programs with 500+ meals. Daily box includes 6 meals.",
+      "description_ar": "رقم 1 في توصيل الأكل الصحي في مصر. 8 برامج مختلفة مع 500+ وجبة.",
+      "specialties": ["Weight Loss", "Diabetes Management", "Maintenance"],
+      "calorie_plans": [1200, 1600, 1800, 2000],
+      "pricing_egp": {
+        "daily_box_1200kcal": 385
+      }
+    },
+    {
+      "name_en": "Treats Egypt",
+      "name_ar": "تريتس مصر",
+      "website": "https://www.treatsegypt.com",
+      "delivery_areas": ["Cairo (except Sheikh Zayed & 6th October)"],
+      "description_en": "450+ customizable meals. Match your exact calorie needs with 50-kcal tolerance.",
+      "description_ar": "أكثر من 450 وجبة قابلة للتخصيص. طابق احتياجاتك من السعرات.",
+      "specialties": ["Customizable", "Vegan Options", "Egyptian Dishes"],
+      "delivery_days": "Daily except Fridays"
+    },
+    {
+      "name_en": "StayFit Egypt",
+      "name_ar": "ستاي فيت مصر",
+      "website": "http://www.stayfitegypt.com",
+      "delivery_areas": ["Cairo", "Giza"],
+      "description_en": "Nutritionally balanced dishes low on calories. Meal planning via app.",
+      "description_ar": "وجبات متوازنة غذائياً قليلة السعرات. تخطيط الوجبات عبر التطبيق.",
+      "specialties": ["Low Calorie", "Balanced Nutrition", "App-based"]
+    },
+    {
+      "name_en": "Nourish & Co",
+      "name_ar": "نوريش أند كو",
+      "website": "https://www.nourishandco.online",
+      "delivery_areas": ["Cairo"],
+      "description_en": "Premium healthy meal prep for busy professionals. High protein, keto & balanced meal plans.",
+      "description_ar": "وجبات صحية فاخرة للمحترفين. خطط بروتين عالي وكيتو.",
+      "specialties": ["High Protein", "Keto", "Balanced", "Premium"]
+    },
+    {
+      "name_en": "Calories Restaurant",
+      "name_ar": "مطعم كالوريز",
+      "website": "https://www.talabat.com/egypt/calories1",
+      "delivery_areas": ["AlMaza Airport", "Almazah", "Ard El Golf", "Heliopolis"],
+      "description_en": "Healthy restaurant on Talabat with calorie-counted meals.",
+      "description_ar": "مطعم صحي على طلبات مع وجبات محسوبة السعرات.",
+      "specialties": ["High Protein", "Healthy Sandwiches", "Quick Delivery"]
+    }
+  ],
+  "ready_meals": [
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Chicken Fajita with Basmati Rice",
+      "name_ar": "فاهيتا دجاج مع أرز بسمتي",
+      "calories": 470,
+      "protein_g": 41,
+      "carbs_g": 50,
+      "fat_g": 10,
+      "category": "Chicken"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Chicken Shish Taouk with Basmati Rice",
+      "name_ar": "شيش طاووق دجاج مع أرز بسمتي",
+      "calories": 570,
+      "protein_g": 45,
+      "carbs_g": 66,
+      "fat_g": 10,
+      "category": "Chicken"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Chicken Alfredo with Pasta",
+      "name_ar": "دجاج ألفريدو مع باستا",
+      "calories": 653,
+      "protein_g": 49,
+      "carbs_g": 69,
+      "fat_g": 16,
+      "category": "Chicken"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Stuffed Grilled Chicken",
+      "name_ar": "دجاج مشوي محشي",
+      "calories": 642,
+      "protein_g": 55,
+      "carbs_g": 60,
+      "fat_g": 16,
+      "category": "Chicken"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Hawaiian Chicken",
+      "name_ar": "دجاج هاوايان",
+      "calories": 487,
+      "protein_g": 49,
+      "carbs_g": 62,
+      "fat_g": 5,
+      "category": "Chicken"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Almond Teriyaki Chicken",
+      "name_ar": "دجاج ترياكي باللوز",
+      "calories": 499,
+      "protein_g": 46,
+      "carbs_g": 59,
+      "fat_g": 9,
+      "category": "Chicken"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Chicken Blackened",
+      "name_ar": "دجاج بلاكند",
+      "calories": 480,
+      "protein_g": 49,
+      "carbs_g": 56,
+      "fat_g": 4,
+      "category": "Chicken"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Shrimp and Crab with Basmati Rice",
+      "name_ar": "جمبري وسلطعون مع أرز بسمتي",
+      "calories": 475,
+      "protein_g": 40,
+      "carbs_g": 64,
+      "fat_g": 3,
+      "category": "Seafood"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Mix Seafood",
+      "name_ar": "سي فود مشكل",
+      "calories": 438,
+      "protein_g": 32,
+      "carbs_g": 63,
+      "fat_g": 3,
+      "category": "Seafood"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Red Chilli Shrimp",
+      "name_ar": "جمبري بالشطة الحمراء",
+      "calories": 444,
+      "protein_g": 30,
+      "carbs_g": 75,
+      "fat_g": 2,
+      "category": "Seafood"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Beef and Vegetables with Basmati Rice",
+      "name_ar": "لحم بالخضار مع أرز بسمتي",
+      "calories": 608,
+      "protein_g": 41,
+      "carbs_g": 58,
+      "fat_g": 19,
+      "category": "Beef"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Shish Kabab",
+      "name_ar": "شيش كباب",
+      "calories": 638,
+      "protein_g": 42,
+      "carbs_g": 55,
+      "fat_g": 19,
+      "category": "Beef"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Oriental Kofta",
+      "name_ar": "كفتة شرقي",
+      "calories": 610,
+      "protein_g": 42,
+      "carbs_g": 58,
+      "fat_g": 20,
+      "category": "Beef"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Mix Grilled",
+      "name_ar": "مشويات مشكلة",
+      "calories": 639,
+      "protein_g": 49,
+      "carbs_g": 58,
+      "fat_g": 19,
+      "category": "Mixed"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Beef Stroganoff",
+      "name_ar": "ستروجانوف لحم",
+      "calories": 625,
+      "protein_g": 41,
+      "carbs_g": 60,
+      "fat_g": 24,
+      "category": "Beef"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Beef Steak with Mexican Rice",
+      "name_ar": "ستيك لحم مع أرز مكسيكي",
+      "calories": 628,
+      "protein_g": 50,
+      "carbs_g": 25,
+      "fat_g": 23,
+      "category": "Beef"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Protein Box Signature (Shrimp, Beef, Chicken)",
+      "name_ar": "بروتين بوكس سيجنتشر",
+      "calories": 717,
+      "protein_g": 55,
+      "carbs_g": 72,
+      "fat_g": 19,
+      "category": "Signature"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Protein Mix Platter",
+      "name_ar": "طبق بروتين مشكل",
+      "calories": 755,
+      "protein_g": 56,
+      "carbs_g": 71,
+      "fat_g": 23,
+      "category": "Signature"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Mexican Chicken High Protein",
+      "name_ar": "دجاج مكسيكي عالي البروتين",
+      "calories": 472,
+      "protein_g": 62,
+      "carbs_g": 35,
+      "fat_g": 10,
+      "category": "High Protein"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Stuffed Chicken High Protein",
+      "name_ar": "دجاج محشي عالي البروتين",
+      "calories": 454,
+      "protein_g": 68,
+      "carbs_g": 25,
+      "fat_g": 10,
+      "category": "High Protein"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Mix Seafood High Protein",
+      "name_ar": "سي فود مشكل عالي البروتين",
+      "calories": 409,
+      "protein_g": 41,
+      "carbs_g": 36,
+      "fat_g": 9,
+      "category": "High Protein"
+    },
+    {
+      "service": "Protein Box Egypt",
+      "name_en": "Chicken Shawarma High Protein",
+      "name_ar": "شاورما دجاج عالي البروتين",
+      "calories": 478,
+      "protein_g": 62,
+      "carbs_g": 34,
+      "fat_g": 10,
+      "category": "High Protein"
+    },
+    {
+      "service": "Calories Restaurant",
+      "name_en": "High Protein Double Grilled Chicken Meal",
+      "name_ar": "وجبة دجاج مشوي مزدوج عالي البروتين",
+      "calories": 583,
+      "protein_g": 55,
+      "carbs_g": 45,
+      "fat_g": 12,
+      "category": "High Protein"
+    },
+    {
+      "service": "Calories Restaurant",
+      "name_en": "Pasta Chicken BBQ",
+      "name_ar": "باستا دجاج باربكيو",
+      "calories": 368,
+      "protein_g": 28,
+      "carbs_g": 42,
+      "fat_g": 8,
+      "category": "Pasta"
+    },
+    {
+      "service": "Calories Restaurant",
+      "name_en": "Chicken Mushroom Meal",
+      "name_ar": "وجبة دجاج بالمشروم",
+      "calories": 599,
+      "protein_g": 48,
+      "carbs_g": 52,
+      "fat_g": 15,
+      "category": "Chicken"
+    }
+  ]
+}

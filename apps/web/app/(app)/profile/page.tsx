@@ -16,20 +16,15 @@ import {
   User,
   Dumbbell,
   Trophy,
+  Loader2,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
 import { Switch } from '@/components/ui/switch';
 import { removeAuthCookie } from '@/lib/api';
-
-const userStats = [
-  { label: 'Workouts', value: '47' },
-  { label: 'Streak', value: '12 days' },
-  { label: 'Total Volume', value: '156K kg' },
-];
+import { useUser, useUserStats } from '@/hooks/use-user';
 
 const menuItems = [
   {
@@ -64,13 +59,59 @@ const achievements = [
   { title: '100 Workouts', description: 'Completed 100 workouts', icon: Star },
 ];
 
+function formatVolume(kg: number): string {
+  if (kg >= 1000000) {
+    return `${(kg / 1000000).toFixed(1)}M kg`;
+  } else if (kg >= 1000) {
+    return `${(kg / 1000).toFixed(0)}K kg`;
+  }
+  return `${kg} kg`;
+}
+
 export default function ProfilePage() {
   const router = useRouter();
+  const { data: userData, isLoading: userLoading } = useUser();
+  const { data: statsData, isLoading: statsLoading } = useUserStats();
 
   const handleLogout = () => {
     removeAuthCookie();
     router.push('/login');
   };
+
+  const user = userData?.user;
+  const isLoading = userLoading;
+
+  // Format stats
+  const userStats = [
+    { label: 'Workouts', value: statsData?.totalWorkouts?.toString() || '0' },
+    { label: 'Streak', value: statsData?.currentStreak ? `${statsData.currentStreak} days` : '0 days' },
+    { label: 'Total Volume', value: statsData?.totalVolume ? formatVolume(statsData.totalVolume) : '0 kg' },
+  ];
+
+  // Get user initials
+  const getInitials = () => {
+    if (!user?.name) return 'U';
+    const names = user.name.split(' ');
+    if (names.length >= 2) {
+      return `${names[0][0]}${names[1][0]}`.toUpperCase();
+    }
+    return user.name[0]?.toUpperCase() || 'U';
+  };
+
+  // Format date
+  const formatMemberSince = () => {
+    if (!user?.createdAt) return '';
+    const date = new Date(user.createdAt);
+    return `Member since ${date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`;
+  };
+
+  if (isLoading) {
+    return (
+      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
+        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
@@ -79,15 +120,20 @@ export default function ProfilePage() {
         <CardContent className="p-6">
           <div className="flex items-center gap-4">
             <Avatar className="h-20 w-20">
-              <AvatarFallback className="text-2xl bg-forma-teal text-white">U</AvatarFallback>
+              {user?.avatar && <AvatarImage src={user.avatar} alt={user.name || 'User'} />}
+              <AvatarFallback className="text-2xl bg-forma-teal text-white">
+                {getInitials()}
+              </AvatarFallback>
             </Avatar>
             <div className="flex-1">
               <div className="flex items-center gap-2">
-                <h1 className="text-xl font-bold">Ahmed Mohamed</h1>
-                <Badge variant="forma">Pro</Badge>
+                <h1 className="text-xl font-bold">{user?.name || 'User'}</h1>
+                {user?.subscription && user.subscription !== 'free' && (
+                  <Badge variant="forma">{user.subscription === 'pro' ? 'Pro' : 'Elite'}</Badge>
+                )}
               </div>
-              <p className="text-muted-foreground">ahmed@example.com</p>
-              <p className="mt-1 text-sm text-muted-foreground">Member since March 2024</p>
+              <p className="text-muted-foreground">{user?.email || ''}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{formatMemberSince()}</p>
             </div>
             <Button variant="outline" asChild>
               <Link href="/profile/edit">Edit</Link>
@@ -98,7 +144,9 @@ export default function ProfilePage() {
           <div className="mt-6 grid grid-cols-3 gap-4 border-t pt-6">
             {userStats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-2xl font-bold">{stat.value}</p>
+                <p className="text-2xl font-bold">
+                  {statsLoading ? <Loader2 className="mx-auto h-6 w-6 animate-spin" /> : stat.value}
+                </p>
                 <p className="text-sm text-muted-foreground">{stat.label}</p>
               </div>
             ))}
@@ -154,7 +202,7 @@ export default function ProfilePage() {
             </CardTitle>
           </CardHeader>
           <CardContent className="p-0">
-            {section.items.map((item, index) => (
+            {section.items.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
