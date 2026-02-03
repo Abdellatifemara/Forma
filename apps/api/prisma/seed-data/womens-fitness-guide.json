@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "introduction": {
+    "title": {
+      "en": "Women's Fitness Guide: Train Smart, Get Strong",
+      "ar": "دليل لياقة المرأة: تدربي بذكاء، ابقي قوية"
+    },
+    "description": {
+      "en": "Women can and should train with weights. This guide addresses myths, provides training guidelines, and covers women-specific considerations for optimal results.",
+      "ar": "الستات تقدر ولازم تتدرب بالأوزان. الدليل ده بيعالج الخرافات، بيقدم إرشادات التدريب، وبيغطي الاعتبارات الخاصة بالستات لنتائج مثالية."
+    }
+  },
+  "mythsBusted": {
+    "title": {
+      "en": "Common Myths About Women and Fitness",
+      "ar": "خرافات شائعة عن المرأة واللياقة"
+    },
+    "myths": [
+      {
+        "myth": {
+          "en": "Lifting weights will make women bulky",
+          "ar": "رفع الأوزان هيخلي الستات ضخمة"
+        },
+        "truth": {
+          "en": "Women have 15-20 times less testosterone than men. Building significant muscle requires years of dedicated training, specific nutrition, and often supplements. Weight training creates a toned, lean appearance - not bulk.",
+          "ar": "الستات عندهم تستوستيرون أقل 15-20 مرة من الرجالة. بناء عضلات كبيرة محتاج سنين من التدريب المخصص والتغذية المحددة وغالباً مكملات. تدريب الأوزان بيعمل مظهر متناسق ورشيق - مش ضخم."
+        }
+      },
+      {
+        "myth": {
+          "en": "Women should only use light weights with high reps",
+          "ar": "الستات لازم تستخدم أوزان خفيفة بس بتكرارات عالية"
+        },
+        "truth": {
+          "en": "Women can and should lift heavy relative to their strength. Heavy lifting builds strength, burns more calories, and creates better muscle tone. The rep range depends on goals, not gender.",
+          "ar": "الستات تقدر ولازم ترفع تقيل بالنسبة لقوتها. الرفع التقيل بيبني قوة، بيحرق سعرات أكتر، وبيعمل تناسق عضلي أحسن. نطاق التكرارات بيعتمد على الأهداف، مش الجنس."
+        }
+      },
+      {
+        "myth": {
+          "en": "Cardio is enough for women to get fit",
+          "ar": "الكارديو كفاية للستات عشان تبقى فت"
+        },
+        "truth": {
+          "en": "While cardio is great for heart health, resistance training is essential for building muscle, boosting metabolism, improving bone density, and achieving a toned look.",
+          "ar": "بينما الكارديو ممتاز لصحة القلب، تدريب المقاومة ضروري لبناء العضلات، وتعزيز الأيض، وتحسين كثافة العظام، وتحقيق مظهر متناسق."
+        }
+      },
+      {
+        "myth": {
+          "en": "Women shouldn't train during their period",
+          "ar": "الستات ملازمش تتدرب أثناء الدورة"
+        },
+        "truth": {
+          "en": "Most women can train during their period. Exercise can actually help reduce cramps and improve mood. Listen to your body - modify intensity if needed, but movement is usually beneficial.",
+          "ar": "معظم الستات تقدر تتدرب أثناء الدورة. التمرين فعلاً بيساعد يقلل التقلصات ويحسن المزاج. اسمعي لجسمك - عدلي الشدة لو محتاجة، بس الحركة عادة مفيدة."
+        }
+      },
+      {
+        "myth": {
+          "en": "Spot reduction works (train abs to lose belly fat)",
+          "ar": "تقليل الدهون الموضعي بيشتغل (مرني البطن عشان تخسي من البطن)"
+        },
+        "truth": {
+          "en": "You cannot choose where your body loses fat. Fat loss happens overall through caloric deficit. Genetics determine where fat is stored and lost first.",
+          "ar": "مش هتقدري تختاري جسمك يخس منين. خسارة الدهون بتحصل كلياً من خلال عجز السعرات. الجينات بتحدد فين الدهون بتتخزن وتخس الأول."
+        }
+      },
+      {
+        "myth": {
+          "en": "Protein supplements are only for men",
+          "ar": "مكملات البروتين للرجالة بس"
+        },
+        "truth": {
+          "en": "Protein is essential for everyone. Women often don't eat enough protein. Protein powder is just food - convenient, not masculine.",
+          "ar": "البروتين ضروري لكل الناس. الستات غالباً مش بتاكل بروتين كفاية. بودرة البروتين أكل بس - مريح، مش ذكوري."
+        }
+      }
+    ]
+  },
+  "trainingGuidelines": {
+    "title": {
+      "en": "Training Guidelines for Women",
+      "ar": "إرشادات التدريب للستات"
+    },
+    "keyPrinciples": [
+      {
+        "principle": {
+          "en": "Train Like You Mean It",
+          "ar": "اتدربي بجدية"
+        },
+        "explanation": {
+          "en": "Don't be afraid to push yourself. Women can handle high training volumes and often recover faster than men. Challenge yourself with heavy weights.",
+          "ar": "متخافيش تضغطي على نفسك. الستات تقدر تتحمل فوليوم تدريب عالي وغالباً بتستشفي أسرع من الرجالة. تحدي نفسك بأوزان تقيلة."
+        }
+      },
+      {
+        "principle": {
+          "en": "Focus on Compound Movements",
+          "ar": "ركزي على الحركات المركبة"
+        },
+        "explanation": {
+          "en": "Squats, deadlifts, hip thrusts, rows, presses - these build the strong, shapely physique most women want.",
+          "ar": "السكوات، الديدليفت، الهيب ثراست، الرو، الضغط - دول بيبنوا الجسم القوي المتناسق اللي معظم الستات عايزاه."
+        }
+      },
+      {
+        "principle": {
+          "en": "Don't Skip Lower Body",
+          "ar": "متفوتيش الجزء السفلي"
+        },
+        "explanation": {
+          "en": "Many women want glute and leg development. Train lower body 2-3 times per week with compound and isolation exercises.",
+          "ar": "كتير من الستات عايزين تطوير الجلوت والرجل. دربي الجزء السفلي 2-3 مرات في الأسبوع بتمارين مركبة وعزل."
+        }
+      },
+      {
+        "principle": {
+          "en": "Train Upper Body Too",
+          "ar": "دربي الجزء العلوي كمان"
+        },
+        "explanation": {
+          "en": "A balanced physique requires upper body work. Strong back improves posture. Toned arms look great.",
+          "ar": "الجسم المتوازن محتاج شغل جزء علوي. الظهر القوي بيحسن الوضعية. الدراعات المتناسقة شكلها حلو."
+        }
+      },
+      {
+        "principle": {
+          "en": "Progressive Overload Applies to Everyone",
+          "ar": "الحمل التدريجي بيتطبق على كل الناس"
+        },
+        "explanation": {
+          "en": "To see results, you must gradually increase weight, reps, or volume over time. Track your workouts.",
+          "ar": "عشان تشوفي نتائج، لازم تزودي الوزن أو التكرارات أو الفوليوم تدريجياً مع الوقت. سجلي تمريناتك."
+        }
+      }
+    ],
+    "sampleSplit": {
+      "name": {
+        "en": "Sample 4-Day Women's Split",
+        "ar": "نموذج تقسيم 4 أيام للستات"
+      },
+      "schedule": {
+        "day1": {
+          "name": { "en": "Lower Body (Glute Focus)", "ar": "جزء سفلي (تركيز جلوت)" },
+          "exercises": [
+            { "name": { "en": "Hip Thrust", "ar": "هيب ثراست" }, "sets": "4", "reps": "10-12" },
+            { "name": { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" }, "sets": "4", "reps": "8-10" },
+            { "name": { "en": "Bulgarian Split Squats", "ar": "سكوات بلغاري" }, "sets": "3", "reps": "10 each" },
+            { "name": { "en": "Cable Kickbacks", "ar": "كيكباكس بالكيبل" }, "sets": "3", "reps": "12-15 each" },
+            { "name": { "en": "Lying Leg Curl", "ar": "ليج كيرل" }, "sets": "3", "reps": "12-15" },
+            { "name": { "en": "Abductor Machine", "ar": "ماكينة أبدكتور" }, "sets": "3", "reps": "15-20" }
+          ]
+        },
+        "day2": {
+          "name": { "en": "Upper Body (Push Focus)", "ar": "جزء علوي (تركيز دفع)" },
+          "exercises": [
+            { "name": { "en": "Dumbbell Bench Press", "ar": "بنش دمبل" }, "sets": "4", "reps": "8-10" },
+            { "name": { "en": "Incline Dumbbell Press", "ar": "بنش عالي دمبل" }, "sets": "3", "reps": "10-12" },
+            { "name": { "en": "Shoulder Press", "ar": "ضغط كتف" }, "sets": "3", "reps": "10-12" },
+            { "name": { "en": "Lateral Raises", "ar": "رفرفة جانبية" }, "sets": "3", "reps": "12-15" },
+            { "name": { "en": "Tricep Pushdown", "ar": "تراي بوش داون" }, "sets": "3", "reps": "12-15" },
+            { "name": { "en": "Overhead Tricep Extension", "ar": "تراي علوي" }, "sets": "3", "reps": "12-15" }
+          ]
+        },
+        "day3": {
+          "name": { "en": "Lower Body (Quad Focus)", "ar": "جزء سفلي (تركيز كواد)" },
+          "exercises": [
+            { "name": { "en": "Barbell Squat", "ar": "سكوات بالبار" }, "sets": "4", "reps": "8-10" },
+            { "name": { "en": "Leg Press", "ar": "ليج بريس" }, "sets": "4", "reps": "10-12" },
+            { "name": { "en": "Walking Lunges", "ar": "لانجز ماشي" }, "sets": "3", "reps": "12 each" },
+            { "name": { "en": "Leg Extension", "ar": "ليج اكستنشن" }, "sets": "3", "reps": "12-15" },
+            { "name": { "en": "Hip Thrust", "ar": "هيب ثراست" }, "sets": "3", "reps": "12-15" },
+            { "name": { "en": "Calf Raises", "ar": "رفع السمانة" }, "sets": "4", "reps": "15-20" }
+          ]
+        },
+        "day4": {
+          "name": { "en": "Upper Body (Pull Focus)", "ar": "جزء علوي (تركيز سحب)" },
+          "exercises": [
+            { "name": { "en": "Lat Pulldown", "ar": "سحب علوي" }, "sets": "4", "reps": "10-12" },
+            { "name": { "en": "Cable Row", "ar": "كيبل رو" }, "sets": "4", "reps": "10-12" },
+            { "name": { "en": "Face Pulls", "ar": "فيس بولز" }, "sets": "3", "reps": "15-20" },
+            { "name": { "en": "Reverse Flyes", "ar": "فلاي خلفي" }, "sets": "3", "reps": "12-15" },
+            { "name": { "en": "Bicep Curls", "ar": "باي كيرل" }, "sets": "3", "reps": "12-15" },
+            { "name": { "en": "Hammer Curls", "ar": "هامر كيرل" }, "sets": "3", "reps": "12-15" }
+          ]
+        }
+      },
+      "notes": {
+        "en": [
+          "Rest days between workouts as needed",
+          "Add 10-15 min cardio post-workout",
+          "Include core work 2-3x per week"
+        ],
+        "ar": [
+          "أيام راحة بين التمارين حسب الحاجة",
+          "ضيفي 10-15 دقيقة كارديو بعد التمرين",
+          "ضمني شغل كور 2-3 مرات في الأسبوع"
+        ]
+      }
+    }
+  },
+  "menstrualCycle": {
+    "title": {
+      "en": "Training Around Your Menstrual Cycle",
+      "ar": "التدريب مع دورتك الشهرية"
+    },
+    "introduction": {
+      "en": "Your cycle affects energy, strength, and recovery. Understanding these phases can help optimize your training.",
+      "ar": "دورتك بتأثر على الطاقة والقوة والاستشفاء. فهم المراحل دي بيساعد تحسني تدريبك."
+    },
+    "phases": [
+      {
+        "phase": {
+          "en": "Menstrual Phase (Days 1-5)",
+          "ar": "مرحلة الحيض (أيام 1-5)"
+        },
+        "hormones": {
+          "en": "Estrogen and progesterone are low",
+          "ar": "الإستروجين والبروجسترون منخفضين"
+        },
+        "howYouMayFeel": {
+          "en": ["Lower energy", "Cramps or discomfort", "Some feel fine and train normally"],
+          "ar": ["طاقة أقل", "تقلصات أو عدم راحة", "بعض الستات بتحس كويس وبتتدرب عادي"]
+        },
+        "trainingRecommendations": {
+          "en": [
+            "Listen to your body - it's okay to reduce intensity",
+            "Light to moderate training is fine",
+            "Focus on movements that feel good",
+            "Yoga, walking, and stretching are great options",
+            "Some women hit PRs during this phase - don't assume weakness"
+          ],
+          "ar": [
+            "اسمعي لجسمك - عادي تقللي الشدة",
+            "تدريب خفيف لمعتدل كويس",
+            "ركزي على الحركات اللي بتريحك",
+            "اليوجا والمشي والاستريتش اختيارات ممتازة",
+            "بعض الستات بتعمل أرقام قياسية في الفترة دي - متفترضيش الضعف"
+          ]
+        }
+      },
+      {
+        "phase": {
+          "en": "Follicular Phase (Days 6-14)",
+          "ar": "المرحلة الجرابية (أيام 6-14)"
+        },
+        "hormones": {
+          "en": "Estrogen rises, testosterone slightly elevated",
+          "ar": "الإستروجين بيرتفع، التستوستيرون مرتفع شوية"
+        },
+        "howYouMayFeel": {
+          "en": ["Increased energy", "Better mood", "Stronger and more motivated"],
+          "ar": ["طاقة زيادة", "مزاج أحسن", "أقوى وأكتر تحفيز"]
+        },
+        "trainingRecommendations": {
+          "en": [
+            "Great time to push hard",
+            "Focus on heavy lifting and PRs",
+            "High-intensity training",
+            "Try new exercises or challenges",
+            "Your body recovers well during this phase"
+          ],
+          "ar": [
+            "وقت ممتاز تضغطي جامد",
+            "ركزي على الرفع التقيل والأرقام القياسية",
+            "تدريب عالي الشدة",
+            "جربي تمارين أو تحديات جديدة",
+            "جسمك بيستشفي كويس في الفترة دي"
+          ]
+        }
+      },
+      {
+        "phase": {
+          "en": "Ovulation (Around Day 14)",
+          "ar": "التبويض (حوالين اليوم 14)"
+        },
+        "hormones": {
+          "en": "Estrogen peaks, LH surge",
+          "ar": "الإستروجين في ذروته، ارتفاع LH"
+        },
+        "howYouMayFeel": {
+          "en": ["Peak energy and strength", "May feel more confident", "Higher pain tolerance"],
+          "ar": ["ذروة الطاقة والقوة", "ممكن تحسي بثقة أكتر", "تحمل ألم أعلى"]
+        },
+        "trainingRecommendations": {
+          "en": [
+            "Best time to attempt max lifts",
+            "High-intensity training is well tolerated",
+            "Note: Some studies show higher injury risk (ligament laxity)",
+            "Warm up thoroughly and focus on form"
+          ],
+          "ar": [
+            "أحسن وقت تحاولي رفعات ماكس",
+            "التدريب عالي الشدة بتتحمليه كويس",
+            "ملاحظة: بعض الدراسات بتقول خطر إصابة أعلى (ارتخاء الأربطة)",
+            "سخني كويس وركزي على الفورم"
+          ]
+        }
+      },
+      {
+        "phase": {
+          "en": "Luteal Phase (Days 15-28)",
+          "ar": "المرحلة الأصفرية (أيام 15-28)"
+        },
+        "hormones": {
+          "en": "Progesterone rises, then both hormones drop before period",
+          "ar": "البروجسترون بيرتفع، وبعدين الاتنين بينزلوا قبل الدورة"
+        },
+        "howYouMayFeel": {
+          "en": ["May feel slower or weaker", "PMS symptoms possible", "Higher body temperature", "May retain water"],
+          "ar": ["ممكن تحسي بطء أو ضعف", "أعراض PMS ممكنة", "حرارة جسم أعلى", "ممكن تحبسي ميه"]
+        },
+        "trainingRecommendations": {
+          "en": [
+            "Moderate intensity training",
+            "Focus on maintenance rather than PRs",
+            "Stay hydrated (increased fluid loss)",
+            "Don't stress about the scale - water weight fluctuates",
+            "Prioritize sleep and recovery",
+            "LISS cardio can help with mood"
+          ],
+          "ar": [
+            "تدريب شدة معتدلة",
+            "ركزي على الحفاظ مش الأرقام القياسية",
+            "خليكي رطبة (فقدان سوائل زيادة)",
+            "متقلقيش من الميزان - وزن الميه بيتغير",
+            "الأولوية للنوم والاستشفاء",
+            "كارديو LISS ممكن يساعد مع المزاج"
+          ]
+        }
+      }
+    ],
+    "importantNote": {
+      "en": "Every woman is different. Track your cycle and energy levels to find what works for you. Don't use your cycle as an excuse to skip training - adjust intensity, not commitment.",
+      "ar": "كل ست مختلفة. تتبعي دورتك ومستويات طاقتك عشان تلاقي اللي بيشتغل معاكي. متستخدميش دورتك كحجة تفوتي التدريب - عدلي الشدة، مش الالتزام."
+    }
+  },
+  "nutritionForWomen": {
+    "title": {
+      "en": "Nutrition Considerations for Women",
+      "ar": "اعتبارات التغذية للستات"
+    },
+    "keyPoints": [
+      {
+        "point": {
+          "en": "Calorie Needs Are Individual",
+          "ar": "احتياجات السعرات فردية"
+        },
+        "details": {
+          "en": "Most active women need 1600-2200 calories. Don't go too low - under 1200 can cause metabolic damage.",
+          "ar": "معظم الستات النشيطة محتاجين 1600-2200 سعرة. متنزليش كتير - أقل من 1200 ممكن يسبب ضرر أيضي."
+        }
+      },
+      {
+        "point": {
+          "en": "Eat Enough Protein",
+          "ar": "كلي بروتين كفاية"
+        },
+        "details": {
+          "en": "Aim for 1.6-2.2g per kg of bodyweight. Most women don't eat enough protein.",
+          "ar": "استهدفي 1.6-2.2 جرام لكل كيلو من وزن الجسم. معظم الستات مش بتاكل بروتين كفاية."
+        }
+      },
+      {
+        "point": {
+          "en": "Iron Is Important",
+          "ar": "الحديد مهم"
+        },
+        "details": {
+          "en": "Women lose iron during menstruation. Eat iron-rich foods (red meat, spinach, beans) or consider supplementation.",
+          "ar": "الستات بتفقد حديد أثناء الدورة. كلي أكل غني بالحديد (لحمة حمرا، سبانخ، فول) أو فكري في المكملات."
+        }
+      },
+      {
+        "point": {
+          "en": "Don't Fear Carbs",
+          "ar": "متخافيش من الكربوهيدرات"
+        },
+        "details": {
+          "en": "Carbs fuel your workouts and support hormonal health. Cut carbs too low and your period may stop.",
+          "ar": "الكربوهيدرات بتوقد تمريناتك وبتدعم صحة الهرمونات. قللي الكربوهيدرات كتير ودورتك ممكن توقف."
+        }
+      },
+      {
+        "point": {
+          "en": "Calcium and Vitamin D",
+          "ar": "الكالسيوم وفيتامين د"
+        },
+        "details": {
+          "en": "Women are at higher risk for osteoporosis. Ensure adequate calcium (dairy, fortified foods) and vitamin D (sunlight, supplements).",
+          "ar": "الستات عرضة أكتر لهشاشة العظام. تأكدي من كالسيوم كافي (ألبان، أطعمة مدعمة) وفيتامين د (شمس، مكملات)."
+        }
+      },
+      {
+        "point": {
+          "en": "Don't Obsess Over the Scale",
+          "ar": "متهوسيش بالميزان"
+        },
+        "details": {
+          "en": "Weight fluctuates 1-3kg due to water retention, especially around your period. Use measurements and photos, not just scale weight.",
+          "ar": "الوزن بيتغير 1-3 كيلو بسبب احتباس الميه، خصوصاً حوالين الدورة. استخدمي القياسات والصور، مش الميزان بس."
+        }
+      }
+    ],
+    "sampleMacros": {
+      "title": {
+        "en": "Sample Macro Ranges",
+        "ar": "نطاقات ماكرو نموذجية"
+      },
+      "scenarios": [
+        {
+          "goal": { "en": "Fat Loss", "ar": "خسارة الدهون" },
+          "calories": "1400-1800",
+          "protein": "130-150g",
+          "carbs": "100-150g",
+          "fats": "45-60g"
+        },
+        {
+          "goal": { "en": "Maintenance/Recomp", "ar": "الحفاظ/إعادة التكوين" },
+          "calories": "1800-2200",
+          "protein": "120-140g",
+          "carbs": "150-200g",
+          "fats": "55-70g"
+        },
+        {
+          "goal": { "en": "Muscle Gain", "ar": "اكتساب العضلات" },
+          "calories": "2000-2500",
+          "protein": "130-150g",
+          "carbs": "200-300g",
+          "fats": "60-80g"
+        }
+      ],
+      "note": {
+        "en": "These are estimates for a 60-70kg moderately active woman. Adjust based on your results.",
+        "ar": "دي تقديرات لست 60-70 كيلو نشيطة بشكل معتدل. عدلي بناءً على نتائجك."
+      }
+    }
+  },
+  "commonQuestions": {
+    "title": {
+      "en": "Common Questions from Women",
+      "ar": "أسئلة شائعة من الستات"
+    },
+    "questions": [
+      {
+        "question": {
+          "en": "Will lifting heavy make my legs/thighs bigger?",
+          "ar": "الرفع التقيل هيكبر رجلي/فخادي؟"
+        },
+        "answer": {
+          "en": "It depends on your genetics and calorie intake. If you're in a calorie deficit, you'll likely lose fat and build some muscle, creating a more toned look. In a surplus, yes, muscles will grow. Most women underestimate how good strong legs look.",
+          "ar": "بيعتمد على جيناتك وكمية السعرات. لو في عجز سعرات، غالباً هتخسي دهون وتبني شوية عضلات، وده هيعمل مظهر أكتر تناسق. في فائض، أيوه، العضلات هتكبر. معظم الستات بتقلل من شكل الرجل القوية الحلو."
+        }
+      },
+      {
+        "question": {
+          "en": "How do I get a flat stomach?",
+          "ar": "إزاي أخلي بطني مسطحة؟"
+        },
+        "answer": {
+          "en": "You cannot spot reduce. A flat stomach requires low body fat percentage (achieved through diet), combined with core strength training. Genetics determine where you lose fat first - some women lose belly fat last.",
+          "ar": "مش هتقدري تخسي من مكان معين. البطن المسطحة محتاجة نسبة دهون جسم منخفضة (بتتحقق من خلال الدايت)، مع تدريب قوة الكور. الجينات بتحدد فين بتخسي دهون الأول - بعض الستات بتخس دهون البطن آخر حاجة."
+        }
+      },
+      {
+        "question": {
+          "en": "How do I grow my glutes?",
+          "ar": "إزاي أكبر الجلوت بتاعي؟"
+        },
+        "answer": {
+          "en": "Hip thrusts, Romanian deadlifts, Bulgarian split squats, cable kickbacks, and squats are key. Train glutes 2-3x per week with progressive overload. Eat enough protein and be in a slight calorie surplus or at maintenance.",
+          "ar": "هيب ثراست، رومانيان ديدليفت، سكوات بلغاري، كيكباكس بالكيبل، والسكوات هم المفتاح. دربي الجلوت 2-3 مرات في الأسبوع مع حمل تدريجي. كلي بروتين كفاية وخليكي في فائض سعرات خفيف أو على الحفاظ."
+        }
+      },
+      {
+        "question": {
+          "en": "Should I do cardio every day?",
+          "ar": "لازم أعمل كارديو كل يوم؟"
+        },
+        "answer": {
+          "en": "No. For most women, 2-4 cardio sessions per week is plenty. Too much cardio can interfere with muscle building and recovery. Focus on resistance training and add cardio strategically.",
+          "ar": "لأ. لمعظم الستات، 2-4 جلسات كارديو في الأسبوع كفاية. كارديو كتير ممكن يعوق بناء العضلات والاستشفاء. ركزي على تدريب المقاومة وضيفي كارديو استراتيجياً."
+        }
+      },
+      {
+        "question": {
+          "en": "Can I train while pregnant?",
+          "ar": "أقدر أتدرب وأنا حامل؟"
+        },
+        "answer": {
+          "en": "Many women can continue training during pregnancy with modifications. Always consult your doctor first. Generally: avoid lying flat on back after first trimester, reduce intensity, stay hydrated, and listen to your body.",
+          "ar": "كتير من الستات تقدر تكمل تدريب أثناء الحمل مع تعديلات. استشيري دكتورك الأول دايماً. عموماً: تجنبي الرقاد على ظهرك بعد التلات شهور الأولى، قللي الشدة، خليكي رطبة، واسمعي لجسمك."
+        }
+      },
+      {
+        "question": {
+          "en": "Why am I not losing weight even though I'm eating healthy?",
+          "ar": "ليه مش بخس رغم إني باكل صحي؟"
+        },
+        "answer": {
+          "en": "Healthy food still has calories. You can gain weight eating salads if portions are large. Track calories accurately for a week. Also consider: building muscle while losing fat (scale stays same), water retention, or underestimating portions.",
+          "ar": "الأكل الصحي برضو فيه سعرات. ممكن تتخني وإنتي بتاكلي سلطات لو الكميات كبيرة. سجلي السعرات بدقة لمدة أسبوع. كمان خدي بالك من: بناء عضلات وخسارة دهون في نفس الوقت (الميزان بيفضل ثابت)، احتباس الميه، أو تقليل الكميات."
+        }
+      }
+    ]
+  },
+  "motivationalTips": {
+    "title": {
+      "en": "Tips for Staying Motivated",
+      "ar": "نصائح للبقاء متحفزة"
+    },
+    "tips": [
+      {
+        "tip": {
+          "en": "Focus on Strength, Not Just Aesthetics",
+          "ar": "ركزي على القوة، مش الشكل بس"
+        },
+        "details": {
+          "en": "Celebrate getting stronger. Being able to lift more, do more reps, or hold a plank longer are real achievements.",
+          "ar": "احتفلي إنك بتقوي. القدرة على رفع أكتر، عمل تكرارات أكتر، أو تمسكي بلانك أطول دي إنجازات حقيقية."
+        }
+      },
+      {
+        "tip": {
+          "en": "Find a Community",
+          "ar": "لاقي مجتمع"
+        },
+        "details": {
+          "en": "Train with friends, join fitness classes, or find online communities. Support makes a huge difference.",
+          "ar": "اتدربي مع صحابك، انضمي لكلاسات لياقة، أو لاقي مجتمعات أونلاين. الدعم بيفرق كتير."
+        }
+      },
+      {
+        "tip": {
+          "en": "Progress Photos Over Scale",
+          "ar": "صور التقدم أحسن من الميزان"
+        },
+        "details": {
+          "en": "Take monthly photos in the same lighting and clothes. You'll see changes the scale doesn't show.",
+          "ar": "خدي صور شهرية بنفس الإضاءة والهدوم. هتشوفي تغييرات الميزان مش بيبينها."
+        }
+      },
+      {
+        "tip": {
+          "en": "Be Patient",
+          "ar": "اصبري"
+        },
+        "details": {
+          "en": "Real, lasting change takes months and years, not weeks. Trust the process.",
+          "ar": "التغيير الحقيقي المستمر بياخد شهور وسنين، مش أسابيع. ثقي في العملية."
+        }
+      },
+      {
+        "tip": {
+          "en": "Don't Compare to Instagram",
+          "ar": "متقارنيش بإنستجرام"
+        },
+        "details": {
+          "en": "Most fitness photos are posed, edited, with perfect lighting. Focus on your own journey.",
+          "ar": "معظم صور اللياقة متصورة بطريقة معينة، متعدلة، بإضاءة مثالية. ركزي على رحلتك."
+        }
+      }
+    ]
+  }
+}
