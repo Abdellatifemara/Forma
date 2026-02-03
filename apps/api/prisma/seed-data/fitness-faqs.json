@@ -1,0 +1,359 @@
+{
+  "categories": [
+    {
+      "id": "nutrition",
+      "name": { "en": "Nutrition", "ar": "التغذية" }
+    },
+    {
+      "id": "training",
+      "name": { "en": "Training", "ar": "التدريب" }
+    },
+    {
+      "id": "supplements",
+      "name": { "en": "Supplements", "ar": "المكملات" }
+    },
+    {
+      "id": "recovery",
+      "name": { "en": "Recovery", "ar": "الاستشفاء" }
+    },
+    {
+      "id": "weight-loss",
+      "name": { "en": "Weight Loss", "ar": "فقدان الوزن" }
+    },
+    {
+      "id": "muscle-building",
+      "name": { "en": "Muscle Building", "ar": "بناء العضلات" }
+    },
+    {
+      "id": "beginners",
+      "name": { "en": "Beginners", "ar": "المبتدئين" }
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "category": "nutrition",
+      "question": {
+        "en": "How much protein do I need per day?",
+        "ar": "محتاج كام بروتين في اليوم؟"
+      },
+      "answer": {
+        "en": "For muscle building, aim for 1.6-2.2g of protein per kg of bodyweight. For example, a 70kg person should eat 112-154g of protein daily. Space it across 3-5 meals for optimal absorption.",
+        "ar": "لبناء العضلات، استهدف 1.6-2.2 جرام بروتين لكل كيلو من وزن جسمك. مثلاً، شخص وزنه 70 كيلو لازم ياكل 112-154 جرام بروتين يومياً. وزعه على 3-5 وجبات لامتصاص أفضل."
+      },
+      "popular": true
+    },
+    {
+      "id": 2,
+      "category": "training",
+      "question": {
+        "en": "Should I train if I'm still sore from the last workout?",
+        "ar": "أتمرن لو لسه حاسس بألم من التمرين اللي فات؟"
+      },
+      "answer": {
+        "en": "Mild soreness is okay - you can train, especially a different muscle group. However, if you're very sore (can't perform daily tasks), rest or do light activity. Soreness doesn't mean growth, and training through severe soreness can lead to injury.",
+        "ar": "الألم الخفيف عادي - ممكن تتمرن، خصوصاً مجموعة عضلية مختلفة. بس لو حاسس بألم شديد (مش قادر تعمل حاجات يومية)، استريح أو اعمل نشاط خفيف. الألم مش معناه نمو، والتدريب مع ألم شديد ممكن يؤدي لإصابة."
+      },
+      "popular": true
+    },
+    {
+      "id": 3,
+      "category": "nutrition",
+      "question": {
+        "en": "Do I need to eat immediately after training?",
+        "ar": "لازم آكل فوراً بعد التمرين؟"
+      },
+      "answer": {
+        "en": "The 'anabolic window' is overhyped. You have 2-3 hours post-workout to eat. More important is your total daily protein intake. That said, a post-workout meal with protein and carbs is still a good practice.",
+        "ar": "الـ 'نافذة الأنابوليك' مبالغ فيها. عندك 2-3 ساعات بعد التمرين تاكل. الأهم هو إجمالي البروتين اليومي. بس برضو وجبة بعد التمرين ببروتين وكارب ممارسة كويسة."
+      },
+      "popular": true
+    },
+    {
+      "id": 4,
+      "category": "weight-loss",
+      "question": {
+        "en": "What's the best diet for losing weight?",
+        "ar": "إيه أحسن دايت لخسارة الوزن؟"
+      },
+      "answer": {
+        "en": "The best diet is one you can stick to. All diets work through calorie deficit. Whether it's keto, intermittent fasting, or simple calorie counting - the key is eating fewer calories than you burn. Aim for 500 calorie deficit for safe, sustainable fat loss.",
+        "ar": "أحسن دايت هو اللي تقدر تكمل عليه. كل الأنظمة بتشتغل من خلال عجز السعرات. سواء كيتو، صيام متقطع، أو حساب سعرات بسيط - المفتاح هو أكل سعرات أقل مما بتحرق. استهدف عجز 500 سعر لخسارة دهون آمنة ومستدامة."
+      },
+      "popular": true
+    },
+    {
+      "id": 5,
+      "category": "supplements",
+      "question": {
+        "en": "Do I need supplements to build muscle?",
+        "ar": "محتاج مكملات عشان أبني عضلات؟"
+      },
+      "answer": {
+        "en": "No, supplements are optional. Real food always comes first. However, some supplements can help: protein powder (convenience), creatine (proven effective), and vitamin D (if deficient). Don't waste money on fancy 'muscle builders'.",
+        "ar": "لأ، المكملات اختيارية. الأكل الحقيقي دايماً الأول. بس بعض المكملات ممكن تساعد: بودر البروتين (للراحة)، كرياتين (مثبت فعاليته)، وفيتامين د (لو ناقص). ما تضيعش فلوس على 'بناة عضلات' فانسي."
+      },
+      "popular": true
+    },
+    {
+      "id": 6,
+      "category": "training",
+      "question": {
+        "en": "How many days per week should I train?",
+        "ar": "أتمرن كام يوم في الأسبوع؟"
+      },
+      "answer": {
+        "en": "3-5 days per week works for most people. Beginners: 3 full-body sessions. Intermediate: 4-5 days (upper/lower or PPL). What matters is consistency over time, not training every day.",
+        "ar": "3-5 أيام في الأسبوع مناسب لمعظم الناس. المبتدئين: 3 جلسات جسم كامل. المتوسط: 4-5 أيام (علوي/سفلي أو PPL). المهم هو الاستمرارية مع الوقت، مش التدريب كل يوم."
+      },
+      "popular": true
+    },
+    {
+      "id": 7,
+      "category": "muscle-building",
+      "question": {
+        "en": "How long does it take to see muscle growth?",
+        "ar": "كام وقت عشان أشوف نمو عضلات؟"
+      },
+      "answer": {
+        "en": "Beginners can see noticeable changes in 8-12 weeks with consistent training and proper nutrition. First year 'newbie gains' are the fastest. After that, expect 0.5-1kg of muscle per month with perfect training and nutrition.",
+        "ar": "المبتدئين ممكن يشوفوا تغييرات ملحوظة في 8-12 أسبوع مع تدريب منتظم وتغذية صحيحة. 'مكاسب المبتدئين' في السنة الأولى أسرع. بعد كده، توقع 0.5-1 كيلو عضلات في الشهر مع تدريب وتغذية مثالية."
+      },
+      "popular": true
+    },
+    {
+      "id": 8,
+      "category": "weight-loss",
+      "question": {
+        "en": "Can I lose fat and build muscle at the same time?",
+        "ar": "ممكن أخس دهون وأبني عضلات في نفس الوقت؟"
+      },
+      "answer": {
+        "en": "Yes, but it's slower than focusing on one goal. 'Body recomposition' works best for beginners, overweight individuals, and those returning after a break. For advanced lifters, it's more efficient to bulk and cut separately.",
+        "ar": "أيوه، بس أبطأ من التركيز على هدف واحد. 'إعادة تركيب الجسم' بتشتغل أحسن للمبتدئين، الناس اللي وزنها زيادة، واللي راجعين بعد انقطاع. للرافعين المتقدمين، أكتر كفاءة تضخم وتنشف منفصلين."
+      },
+      "popular": true
+    },
+    {
+      "id": 9,
+      "category": "training",
+      "question": {
+        "en": "Is cardio necessary? Will it kill my gains?",
+        "ar": "الكارديو ضروري؟ هيضيع مكاسبي؟"
+      },
+      "answer": {
+        "en": "Cardio is great for heart health and doesn't 'kill gains' unless excessive. 2-3 sessions of 20-30 minutes per week is fine. For muscle building, don't do hours of cardio. For fat loss, diet matters more than cardio.",
+        "ar": "الكارديو ممتاز لصحة القلب ومش بيضيع المكاسب إلا لو زيادة أوي. 2-3 جلسات من 20-30 دقيقة في الأسبوع تمام. لبناء العضلات، ما تعملش ساعات كارديو. لخسارة الدهون، الدايت أهم من الكارديو."
+      },
+      "popular": true
+    },
+    {
+      "id": 10,
+      "category": "recovery",
+      "question": {
+        "en": "How much sleep do I need for muscle growth?",
+        "ar": "محتاج كام ساعة نوم لنمو العضلات؟"
+      },
+      "answer": {
+        "en": "7-9 hours is ideal. During sleep, your body releases growth hormone and repairs muscle tissue. Poor sleep = poor gains. It also increases hunger hormones, making fat loss harder.",
+        "ar": "7-9 ساعات مثالي. أثناء النوم، جسمك بيفرز هرمون النمو وبيصلح أنسجة العضلات. نوم وحش = مكاسب وحشة. كمان بيزود هرمونات الجوع، مما يخلي خسارة الدهون أصعب."
+      },
+      "popular": true
+    },
+    {
+      "id": 11,
+      "category": "beginners",
+      "question": {
+        "en": "Should I use machines or free weights?",
+        "ar": "أستخدم أجهزة ولا أوزان حرة؟"
+      },
+      "answer": {
+        "en": "Both are effective. Machines are safer for beginners and isolate muscles well. Free weights build more functional strength and work stabilizer muscles. Ideally, use a mix of both in your program.",
+        "ar": "الاتنين فعالين. الأجهزة أأمن للمبتدئين وبتعزل العضلات كويس. الأوزان الحرة بتبني قوة وظيفية أكتر وبتشغل عضلات التثبيت. المثالي، استخدم خليط من الاتنين في برنامجك."
+      },
+      "popular": true
+    },
+    {
+      "id": 12,
+      "category": "training",
+      "question": {
+        "en": "How heavy should I lift?",
+        "ar": "أرفع وزن تقيل أد إيه؟"
+      },
+      "answer": {
+        "en": "Use a weight you can lift with good form for your target reps. For strength: 1-5 reps (heavier). For muscle growth: 6-12 reps (moderate). For endurance: 12-20 reps (lighter). The last 2-3 reps should be challenging.",
+        "ar": "استخدم وزن تقدر ترفعه بشكل صحيح لعدد التكرارات المستهدف. للقوة: 1-5 تكرارات (أتقل). لنمو العضلات: 6-12 تكرارات (متوسط). للتحمل: 12-20 تكرارات (أخف). آخر 2-3 تكرارات لازم تكون صعبة."
+      },
+      "popular": true
+    },
+    {
+      "id": 13,
+      "category": "nutrition",
+      "question": {
+        "en": "Are carbs bad for you? Should I avoid them?",
+        "ar": "الكارب وحش؟ لازم أتجنبه؟"
+      },
+      "answer": {
+        "en": "Carbs are not bad - they're your body's preferred energy source, especially for training. Don't fear carbs. For muscle building, eat plenty. For fat loss, you can reduce them, but they're not the enemy. Quality matters: prefer whole grains, rice, oats, fruits.",
+        "ar": "الكارب مش وحش - هو مصدر الطاقة المفضل لجسمك، خصوصاً للتدريب. ما تخافش من الكارب. لبناء العضلات، كل كتير. لخسارة الدهون، ممكن تقلله، بس مش العدو. الجودة مهمة: فضّل الحبوب الكاملة، الأرز، الشوفان، الفاكهة."
+      },
+      "popular": true
+    },
+    {
+      "id": 14,
+      "category": "supplements",
+      "question": {
+        "en": "Does creatine work? Is it safe?",
+        "ar": "الكرياتين بيشتغل؟ هو آمن؟"
+      },
+      "answer": {
+        "en": "Creatine is the most researched and proven supplement. It increases strength, power, and muscle size. It's safe for long-term use. Take 3-5g daily, no need for 'loading phase'. It may cause slight water retention, which is normal.",
+        "ar": "الكرياتين أكتر مكمل مبحوث ومثبت. بيزود القوة والباور وحجم العضلات. آمن للاستخدام طويل المدى. خد 3-5 جرام يومياً، مش محتاج 'مرحلة تحميل'. ممكن يسبب احتباس ماء خفيف، وده طبيعي."
+      },
+      "popular": true
+    },
+    {
+      "id": 15,
+      "category": "weight-loss",
+      "question": {
+        "en": "Why am I not losing weight despite exercising?",
+        "ar": "ليه مش بخس رغم التمرين؟"
+      },
+      "answer": {
+        "en": "Exercise alone rarely causes weight loss. The main driver is diet. Common issues: eating more than you think (track calories accurately), underestimating calories in drinks/snacks, expecting too fast results, or you're actually losing fat but gaining muscle (check measurements, not just weight).",
+        "ar": "التمرين لوحده نادراً بيسبب خسارة وزن. المحرك الرئيسي هو الدايت. مشاكل شائعة: بتاكل أكتر مما تفتكر (تتبع السعرات بدقة)، بتقلل من سعرات المشروبات/السناكس، بتتوقع نتائج سريعة أوي، أو فعلاً بتخس دهون بس بتكسب عضلات (اتشيك على المقاسات، مش الوزن بس)."
+      },
+      "popular": true
+    },
+    {
+      "id": 16,
+      "category": "training",
+      "question": {
+        "en": "Should I train to failure every set?",
+        "ar": "لازم أتمرن للفشل كل مجموعة؟"
+      },
+      "answer": {
+        "en": "No. Training to failure is fatiguing and can hurt recovery. Stop 1-3 reps before failure (RPE 7-9) for most sets. Occasionally going to failure on the last set is fine, but don't make it every set.",
+        "ar": "لأ. التدريب للفشل مرهق وممكن يأثر على الاستشفاء. وقف قبل الفشل بـ 1-3 تكرارات (RPE 7-9) لمعظم المجموعات. أحياناً الوصول للفشل في آخر مجموعة تمام، بس ما تخليهاش كل مجموعة."
+      },
+      "popular": false
+    },
+    {
+      "id": 17,
+      "category": "nutrition",
+      "question": {
+        "en": "Is breakfast the most important meal?",
+        "ar": "الفطار أهم وجبة؟"
+      },
+      "answer": {
+        "en": "Not necessarily. Meal timing is less important than total daily intake. If you're not hungry in the morning, you can skip breakfast. What matters is total protein and calories throughout the day, not specific meal timing.",
+        "ar": "مش بالضرورة. توقيت الوجبات أقل أهمية من الإجمالي اليومي. لو مش جعان الصبح، ممكن تتخطى الفطار. المهم هو إجمالي البروتين والسعرات طول اليوم، مش توقيت وجبات محدد."
+      },
+      "popular": false
+    },
+    {
+      "id": 18,
+      "category": "muscle-building",
+      "question": {
+        "en": "Do I need to 'confuse' my muscles?",
+        "ar": "محتاج 'أخدع' عضلاتي؟"
+      },
+      "answer": {
+        "en": "'Muscle confusion' is a myth. Progressive overload (gradually increasing weight/reps) is what builds muscle. Stick to the same exercises and get stronger at them. Change exercises only every 4-8 weeks if needed.",
+        "ar": "'خداع العضلات' خرافة. الحمل التدريجي (زيادة الوزن/التكرارات تدريجياً) هو اللي بيبني العضلات. التزم بنفس التمارين وابقى أقوى فيها. غيّر التمارين بس كل 4-8 أسابيع لو محتاج."
+      },
+      "popular": false
+    },
+    {
+      "id": 19,
+      "category": "beginners",
+      "question": {
+        "en": "What should I eat before a workout?",
+        "ar": "آكل إيه قبل التمرين؟"
+      },
+      "answer": {
+        "en": "Eat a balanced meal with protein and carbs 2-3 hours before training. If eating closer to workout (1 hour), have something light like a banana or protein shake. Some people train fasted and feel fine - experiment to see what works for you.",
+        "ar": "كل وجبة متوازنة ببروتين وكارب قبل التدريب بـ 2-3 ساعات. لو بتاكل أقرب للتمرين (ساعة)، كل حاجة خفيفة زي موزة أو شيك بروتين. بعض الناس بتتمرن صايمين وحاسين كويس - جرّب عشان تشوف إيه يناسبك."
+      },
+      "popular": true
+    },
+    {
+      "id": 20,
+      "category": "recovery",
+      "question": {
+        "en": "How do I know if I'm overtraining?",
+        "ar": "إزاي أعرف لو بتدرب زيادة؟"
+      },
+      "answer": {
+        "en": "Signs of overtraining: strength going down, constant fatigue, poor sleep, loss of motivation, frequent illness, nagging injuries, mood changes. Solution: take a deload week (reduce weight/volume by 50%) every 4-6 weeks.",
+        "ar": "علامات التدريب الزائد: القوة بتنزل، إرهاق مستمر، نوم وحش، فقدان الحافز، مرض متكرر، إصابات مزعجة، تغيرات في المزاج. الحل: خد أسبوع ديلود (قلل الوزن/الحجم 50%) كل 4-6 أسابيع."
+      },
+      "popular": false
+    },
+    {
+      "id": 21,
+      "category": "weight-loss",
+      "question": {
+        "en": "Can I target fat loss in specific areas (spot reduction)?",
+        "ar": "ممكن أستهدف خسارة دهون من مناطق محددة؟"
+      },
+      "answer": {
+        "en": "No, spot reduction is a myth. Your body decides where fat comes off based on genetics. Doing 1000 crunches won't give you abs if you have belly fat. Fat loss happens through overall calorie deficit.",
+        "ar": "لأ، خسارة الدهون الموضعية خرافة. جسمك بيقرر الدهون تروح منين بناءً على الجينات. عمل 1000 كرانش مش هيديك بطن لو عندك دهون في البطن. خسارة الدهون بتحصل من خلال عجز سعرات كلي."
+      },
+      "popular": true
+    },
+    {
+      "id": 22,
+      "category": "supplements",
+      "question": {
+        "en": "Should I take pre-workout supplements?",
+        "ar": "لازم آخد بري وورك أوت؟"
+      },
+      "answer": {
+        "en": "Pre-workouts aren't necessary. Their main active ingredient is caffeine. A cup of coffee works similarly. If you do use them, check the ingredients, don't exceed recommended doses, and don't take too late (can disrupt sleep).",
+        "ar": "البري وورك أوت مش ضروري. مادتها الفعالة الرئيسية الكافيين. فنجان قهوة بيشتغل بشكل مشابه. لو بتستخدمها، اتشيك على المكونات، ما تتعداش الجرعة الموصى بيها، وما تاخدهاش متأخر (ممكن تأثر على النوم)."
+      },
+      "popular": false
+    },
+    {
+      "id": 23,
+      "category": "training",
+      "question": {
+        "en": "How long should I rest between sets?",
+        "ar": "أستريح قد إيه بين المجموعات؟"
+      },
+      "answer": {
+        "en": "It depends on your goal. Strength training (heavy weight, low reps): 3-5 minutes. Hypertrophy (moderate weight): 1-2 minutes. Endurance/fat loss (light weight, high reps): 30-60 seconds. Rest long enough to complete your next set with good form.",
+        "ar": "يعتمد على هدفك. تدريب القوة (وزن تقيل، تكرارات قليلة): 3-5 دقائق. التضخم (وزن متوسط): 1-2 دقيقة. التحمل/حرق الدهون (وزن خفيف، تكرارات عالية): 30-60 ثانية. استريح كفاية عشان تكمل المجموعة الجاية بشكل صحيح."
+      },
+      "popular": false
+    },
+    {
+      "id": 24,
+      "category": "nutrition",
+      "question": {
+        "en": "Can I drink alcohol while trying to get fit?",
+        "ar": "ممكن أشرب كحول وأنا بحاول أكون فت؟"
+      },
+      "answer": {
+        "en": "Alcohol has 7 calories per gram (almost as much as fat) and impairs recovery, sleep, and muscle protein synthesis. Occasional drinking won't ruin progress, but regular drinking will slow it. If you drink, moderate it and account for the calories.",
+        "ar": "الكحول فيه 7 سعرات في الجرام (تقريباً زي الدهون) وبيأثر على الاستشفاء والنوم وتخليق بروتين العضلات. الشرب أحياناً مش هيدمر تقدمك، بس الشرب المنتظم هيبطئه. لو بتشرب، اعتدل واحسب السعرات."
+      },
+      "popular": false
+    },
+    {
+      "id": 25,
+      "category": "beginners",
+      "question": {
+        "en": "I'm scared of getting 'too bulky'. Will lifting make me huge?",
+        "ar": "خايف أكون 'ضخم أوي'. الرفع هيخليني ضخم؟"
+      },
+      "answer": {
+        "en": "Building muscle is extremely difficult and takes years of dedicated training and eating. You won't accidentally become 'too muscular'. Most people struggle to add muscle, not the opposite. Lifting will make you look toned and fit, not bulky.",
+        "ar": "بناء العضلات صعب جداً ومحتاج سنين من التدريب والأكل المكثف. مش هتبقى 'عضلات زيادة' بالصدفة. معظم الناس بتعاني عشان تضيف عضلات، مش العكس. الرفع هيخليك تبان تونِد وفت، مش ضخم."
+      },
+      "popular": true
+    }
+  ]
+}
