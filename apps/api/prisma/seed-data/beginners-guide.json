@@ -1,0 +1,369 @@
+{
+  "introduction": {
+    "title": {
+      "en": "Beginner's Complete Guide to the Gym",
+      "ar": "دليل المبتدئين الشامل للجيم"
+    },
+    "welcome": {
+      "en": "Welcome to fitness! Starting your gym journey can feel intimidating, but everyone was a beginner once. This guide will help you start with confidence.",
+      "ar": "أهلاً في عالم اللياقة! بداية رحلة الجيم ممكن تحسسك بالتوتر، بس كل واحد كان مبتدئ في يوم. الدليل ده هيساعدك تبدأ بثقة."
+    }
+  },
+  "gymEtiquette": {
+    "title": {
+      "en": "Gym Etiquette",
+      "ar": "آداب الجيم"
+    },
+    "rules": {
+      "en": [
+        {
+          "rule": "Wipe down equipment after use",
+          "explanation": "Use the provided towels/spray to clean machines and benches. It's hygienic and respectful."
+        },
+        {
+          "rule": "Re-rack your weights",
+          "explanation": "Put dumbbells and plates back where you found them. Don't leave weights on the floor or machines."
+        },
+        {
+          "rule": "Don't hog equipment",
+          "explanation": "During busy hours, limit your time on popular machines. Let others 'work in' between your sets."
+        },
+        {
+          "rule": "Keep phone calls outside",
+          "explanation": "If you need to take a call, step outside. Don't have loud conversations in the gym."
+        },
+        {
+          "rule": "Respect personal space",
+          "explanation": "Don't stand right next to someone when the gym is empty. Give people room."
+        },
+        {
+          "rule": "Don't give unsolicited advice",
+          "explanation": "Unless someone asks or is about to hurt themselves, let people train."
+        },
+        {
+          "rule": "Use headphones",
+          "explanation": "Play your music through headphones, not your phone speaker."
+        },
+        {
+          "rule": "Be mindful of time",
+          "explanation": "If you're resting between sets and someone's waiting, offer to let them work in."
+        }
+      ],
+      "ar": [
+        {
+          "rule": "امسح المعدات بعد الاستخدام",
+          "explanation": "استخدم الفوط/السبراي المتوفر لتنظيف الأجهزة والبنشات. ده نظافة واحترام."
+        },
+        {
+          "rule": "رجّع الأوزان مكانها",
+          "explanation": "رجّع الدمبلز والأقراص مكانها. ما تسيبش الأوزان على الأرض أو الأجهزة."
+        },
+        {
+          "rule": "ما تحتكرش المعدات",
+          "explanation": "في الأوقات المزدحمة، قلل وقتك على الأجهزة الشائعة. سيب الناس تشتغل بين مجموعاتك."
+        },
+        {
+          "rule": "خلّي المكالمات برة",
+          "explanation": "لو محتاج ترد على مكالمة، اطلع برة. ما تعملش محادثات صوتية عالية في الجيم."
+        },
+        {
+          "rule": "احترم المساحة الشخصية",
+          "explanation": "ما تقفش جنب حد مباشرة لما الجيم فاضي. ادي الناس مساحة."
+        },
+        {
+          "rule": "ما تديش نصائح من غير ما حد يطلب",
+          "explanation": "إلا لو حد سأل أو على وشك يأذي نفسه، سيب الناس تتمرن."
+        },
+        {
+          "rule": "استخدم سماعات",
+          "explanation": "شغّل موسيقاك من السماعات، مش سبيكر الموبايل."
+        },
+        {
+          "rule": "كن واعي بالوقت",
+          "explanation": "لو بترتاح بين المجموعات وحد مستني، اعرض يشتغل معاك."
+        }
+      ]
+    }
+  },
+  "equipmentBasics": {
+    "title": {
+      "en": "Equipment Basics",
+      "ar": "أساسيات المعدات"
+    },
+    "machines": [
+      {
+        "name": { "en": "Treadmill", "ar": "المشاية" },
+        "use": { "en": "Walking/running cardio", "ar": "كارديو مشي/جري" },
+        "tips": { "en": "Start slow, hold rails when getting on/off", "ar": "ابدأ ببطء، امسك الجنبين لما تطلع/تنزل" }
+      },
+      {
+        "name": { "en": "Cable Machine", "ar": "جهاز الكيبل" },
+        "use": { "en": "Many exercises - rows, pushdowns, curls", "ar": "تمارين كتير - تجديف، بوش داون، كيرل" },
+        "tips": { "en": "Adjust the pulley height for different exercises", "ar": "اظبط ارتفاع البكرة للتمارين المختلفة" }
+      },
+      {
+        "name": { "en": "Lat Pulldown", "ar": "السحب العلوي" },
+        "use": { "en": "Back/lat training", "ar": "تدريب الظهر/اللاتس" },
+        "tips": { "en": "Sit with thighs under pads, pull to chest", "ar": "اقعد وفخذيك تحت الوسادات، اسحب لصدرك" }
+      },
+      {
+        "name": { "en": "Leg Press", "ar": "ضغط الأرجل" },
+        "use": { "en": "Leg training (quads, glutes)", "ar": "تدريب الأرجل (كوادز، مؤخرة)" },
+        "tips": { "en": "Don't lock knees, keep lower back on pad", "ar": "ما تقفلش ركبتيك، خلّي أسفل ظهرك على الوسادة" }
+      },
+      {
+        "name": { "en": "Chest Press Machine", "ar": "جهاز ضغط الصدر" },
+        "use": { "en": "Chest training", "ar": "تدريب الصدر" },
+        "tips": { "en": "Handles at chest height, feet flat on floor", "ar": "المقابض عند ارتفاع الصدر، القدمين مسطحة على الأرض" }
+      },
+      {
+        "name": { "en": "Smith Machine", "ar": "جهاز سميث" },
+        "use": { "en": "Squats, bench press, rows with guided bar", "ar": "سكوات، بنش برس، تجديف مع بار موجه" },
+        "tips": { "en": "Good for beginners, bar moves on fixed path", "ar": "كويس للمبتدئين، البار بيتحرك في مسار ثابت" }
+      }
+    ],
+    "freeWeights": [
+      {
+        "name": { "en": "Barbell", "ar": "البار" },
+        "weight": "20kg standard Olympic bar",
+        "use": { "en": "Bench press, squat, deadlift, rows, overhead press", "ar": "بنش برس، سكوات، ديدليفت، تجديف، ضغط علوي" }
+      },
+      {
+        "name": { "en": "Dumbbells", "ar": "الدمبلز" },
+        "weight": "Various (1kg - 50kg+)",
+        "use": { "en": "Most exercises - curls, presses, rows, lunges", "ar": "معظم التمارين - كيرل، ضغط، تجديف، لانج" }
+      },
+      {
+        "name": { "en": "EZ Bar", "ar": "EZ بار" },
+        "weight": "~10kg",
+        "use": { "en": "Bicep curls, skull crushers - easier on wrists", "ar": "باي كيرل، سكل كراشر - أسهل على المعصمين" }
+      },
+      {
+        "name": { "en": "Kettlebell", "ar": "الكيتل بيل" },
+        "weight": "Various (4kg - 32kg+)",
+        "use": { "en": "Swings, goblet squats, carries", "ar": "سوينج، جوبلت سكوات، كاريز" }
+      },
+      {
+        "name": { "en": "Weight Plates", "ar": "أقراص الأوزان" },
+        "weight": "1.25kg, 2.5kg, 5kg, 10kg, 20kg",
+        "use": { "en": "Add to barbells, or use alone for raises", "ar": "أضفها للبار، أو استخدمها لوحدها للرفع" }
+      }
+    ]
+  },
+  "firstWeekProgram": {
+    "title": {
+      "en": "Your First Week Program",
+      "ar": "برنامج أول أسبوع"
+    },
+    "overview": {
+      "en": "Start with 3 full-body workouts per week, with rest days in between. Focus on learning movement patterns, not lifting heavy.",
+      "ar": "ابدأ بـ 3 تمرينات جسم كامل في الأسبوع، مع أيام راحة بينهم. ركز على تعلم أنماط الحركة، مش رفع تقيل."
+    },
+    "schedule": {
+      "en": "Monday, Wednesday, Friday (or any 3 non-consecutive days)",
+      "ar": "الاتنين، الأربعاء، الجمعة (أو أي 3 أيام غير متتالية)"
+    },
+    "workoutA": {
+      "name": { "en": "Workout A", "ar": "تمرين A" },
+      "exercises": [
+        { "exercise": "Treadmill walk", "sets": 1, "reps": "5 min", "notes": { "en": "Warm up", "ar": "إحماء" } },
+        { "exercise": "Leg Press", "sets": 3, "reps": "12", "notes": { "en": "Feet shoulder width", "ar": "القدمين بعرض الكتفين" } },
+        { "exercise": "Chest Press Machine", "sets": 3, "reps": "12", "notes": { "en": "Control the weight", "ar": "تحكم في الوزن" } },
+        { "exercise": "Lat Pulldown", "sets": 3, "reps": "12", "notes": { "en": "Pull to chest", "ar": "اسحب لصدرك" } },
+        { "exercise": "Shoulder Press Machine", "sets": 3, "reps": "12", "notes": { "en": "Don't lock elbows", "ar": "ما تقفلش مرفقيك" } },
+        { "exercise": "Plank", "sets": 3, "reps": "20 sec", "notes": { "en": "Build up time gradually", "ar": "زوّد الوقت تدريجياً" } }
+      ]
+    },
+    "workoutB": {
+      "name": { "en": "Workout B", "ar": "تمرين B" },
+      "exercises": [
+        { "exercise": "Bike", "sets": 1, "reps": "5 min", "notes": { "en": "Warm up", "ar": "إحماء" } },
+        { "exercise": "Goblet Squat (dumbbell)", "sets": 3, "reps": "12", "notes": { "en": "Hold dumbbell at chest", "ar": "امسك الدمبل عند صدرك" } },
+        { "exercise": "Dumbbell Bench Press", "sets": 3, "reps": "12", "notes": { "en": "Control lowering phase", "ar": "تحكم في مرحلة النزول" } },
+        { "exercise": "Seated Cable Row", "sets": 3, "reps": "12", "notes": { "en": "Squeeze shoulder blades", "ar": "اشد كتفيك مع بعض" } },
+        { "exercise": "Dumbbell Lateral Raise", "sets": 3, "reps": "12", "notes": { "en": "Light weight", "ar": "وزن خفيف" } },
+        { "exercise": "Dead Bug", "sets": 3, "reps": "10 each side", "notes": { "en": "Core stability", "ar": "ثبات الجذع" } }
+      ]
+    },
+    "progression": {
+      "en": "Alternate between Workout A and B. When you can complete all sets/reps easily, increase weight slightly (2.5kg).",
+      "ar": "بدّل بين تمرين A و B. لما تقدر تكمل كل المجموعات/التكرارات بسهولة، زوّد الوزن شوية (2.5 كيلو)."
+    }
+  },
+  "commonMistakes": {
+    "title": {
+      "en": "Common Beginner Mistakes",
+      "ar": "أخطاء المبتدئين الشائعة"
+    },
+    "mistakes": {
+      "en": [
+        {
+          "mistake": "Starting too heavy",
+          "fix": "Use light weights to learn form first. Your ego can wait."
+        },
+        {
+          "mistake": "Skipping warm-up",
+          "fix": "Always warm up for 5-10 minutes. It prevents injury and improves performance."
+        },
+        {
+          "mistake": "Copying others without understanding",
+          "fix": "Ask staff for help or watch tutorial videos. Don't guess."
+        },
+        {
+          "mistake": "Training too much, too soon",
+          "fix": "Start with 3 days per week. Your body needs time to adapt."
+        },
+        {
+          "mistake": "Ignoring nutrition",
+          "fix": "Exercise alone doesn't build muscle or burn fat. Diet is crucial."
+        },
+        {
+          "mistake": "Expecting instant results",
+          "fix": "Real change takes months. Focus on consistency, not speed."
+        },
+        {
+          "mistake": "Only doing cardio",
+          "fix": "Weight training is essential for health, metabolism, and body composition."
+        },
+        {
+          "mistake": "Comparing yourself to others",
+          "fix": "Everyone started somewhere. Focus on your own progress."
+        }
+      ],
+      "ar": [
+        {
+          "mistake": "البدء بأوزان تقيلة أوي",
+          "fix": "استخدم أوزان خفيفة عشان تتعلم الفورم الأول. إيجوك يستنى."
+        },
+        {
+          "mistake": "تخطي الإحماء",
+          "fix": "دايماً سخّن لـ 5-10 دقايق. بيمنع الإصابة ويحسن الأداء."
+        },
+        {
+          "mistake": "تقليد الناس من غير فهم",
+          "fix": "اسأل الموظفين للمساعدة أو شوف فيديوهات تعليمية. ما تخمنش."
+        },
+        {
+          "mistake": "التدريب كتير بدري أوي",
+          "fix": "ابدأ بـ 3 أيام في الأسبوع. جسمك محتاج وقت يتكيف."
+        },
+        {
+          "mistake": "تجاهل التغذية",
+          "fix": "التمرين لوحده مش بيبني عضلات أو يحرق دهون. الدايت أساسي."
+        },
+        {
+          "mistake": "توقع نتائج فورية",
+          "fix": "التغيير الحقيقي بياخد شهور. ركز على الاستمرارية، مش السرعة."
+        },
+        {
+          "mistake": "عمل كارديو بس",
+          "fix": "تدريب الأوزان أساسي للصحة والأيض وتركيب الجسم."
+        },
+        {
+          "mistake": "مقارنة نفسك بالتانيين",
+          "fix": "كل واحد بدأ من حتة. ركز على تقدمك أنت."
+        }
+      ]
+    }
+  },
+  "whatToBring": {
+    "title": {
+      "en": "What to Bring to the Gym",
+      "ar": "إيه تجيبه معاك للجيم"
+    },
+    "essentials": {
+      "en": [
+        "Water bottle",
+        "Towel (small)",
+        "Comfortable workout clothes",
+        "Athletic shoes (flat sole for lifting)",
+        "Lock for locker",
+        "Headphones",
+        "Phone (for music/tracking)"
+      ],
+      "ar": [
+        "زجاجة ماء",
+        "فوطة (صغيرة)",
+        "ملابس رياضية مريحة",
+        "حذاء رياضي (نعل مسطح للرفع)",
+        "قفل للخزانة",
+        "سماعات",
+        "موبايل (للموسيقى/التتبع)"
+      ]
+    },
+    "optional": {
+      "en": [
+        "Lifting gloves (if you want)",
+        "Resistance bands",
+        "Post-workout snack",
+        "Notebook for tracking"
+      ],
+      "ar": [
+        "جوانتي رفع (لو عايز)",
+        "باندات مقاومة",
+        "سناك بعد التمرين",
+        "نوتة للتتبع"
+      ]
+    }
+  },
+  "askingForHelp": {
+    "title": {
+      "en": "Don't Be Afraid to Ask for Help",
+      "ar": "ما تخافش تطلب مساعدة"
+    },
+    "tips": {
+      "en": [
+        "Gym staff are there to help - ask them to show you equipment",
+        "Most experienced lifters are happy to help beginners",
+        "If you're unsure about an exercise, ask for a demonstration",
+        "Consider a few personal training sessions to learn the basics",
+        "Watch form videos before trying new exercises"
+      ],
+      "ar": [
+        "موظفين الجيم موجودين للمساعدة - اطلب منهم يوروك المعدات",
+        "معظم الرافعين المتمرسين مبسوطين يساعدوا المبتدئين",
+        "لو مش متأكد من تمرين، اطلب توضيح",
+        "فكر في جلسات تدريب شخصي قليلة عشان تتعلم الأساسيات",
+        "شوف فيديوهات الفورم قبل ما تجرب تمارين جديدة"
+      ]
+    }
+  },
+  "settingGoals": {
+    "title": {
+      "en": "Setting Realistic Goals",
+      "ar": "وضع أهداف واقعية"
+    },
+    "smartGoals": {
+      "en": {
+        "specific": "Not 'get fit' but 'attend gym 3x per week'",
+        "measurable": "Track something - weight lifted, body measurements, consistency",
+        "achievable": "Start small - don't aim for 6 days a week from day one",
+        "relevant": "Choose goals that matter to you personally",
+        "timebound": "Set a 4-week, 8-week, or 12-week checkpoint"
+      },
+      "ar": {
+        "specific": "مش 'أكون فت' بس 'أروح الجيم 3 مرات في الأسبوع'",
+        "measurable": "تتبع حاجة - الوزن المرفوع، مقاسات الجسم، الاستمرارية",
+        "achievable": "ابدأ صغير - ما تستهدفش 6 أيام في الأسبوع من أول يوم",
+        "relevant": "اختار أهداف مهمة ليك شخصياً",
+        "timebound": "حط نقطة فحص 4 أسابيع، 8 أسابيع، أو 12 أسبوع"
+      }
+    },
+    "exampleGoals": {
+      "en": [
+        "Go to the gym 3 times per week for 8 weeks",
+        "Learn proper form for 5 basic exercises",
+        "Drink 2 liters of water daily",
+        "Sleep 7+ hours per night",
+        "Track food intake for 30 days"
+      ],
+      "ar": [
+        "روح الجيم 3 مرات في الأسبوع لـ 8 أسابيع",
+        "اتعلم الفورم الصحيح لـ 5 تمارين أساسية",
+        "اشرب 2 لتر ماء يومياً",
+        "نام 7+ ساعات في الليلة",
+        "تتبع الأكل لـ 30 يوم"
+      ]
+    }
+  }
+}
