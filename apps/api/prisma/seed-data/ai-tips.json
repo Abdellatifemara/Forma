@@ -1,0 +1,366 @@
+{
+  "motivational_tips": [
+    {
+      "id": "mot_1",
+      "category": "motivation",
+      "textEn": "Consistency beats intensity. A light workout every day is better than one intense session a week.",
+      "textAr": "الاستمرارية تتفوق على الشدة. تمرين خفيف يومياً أفضل من جلسة مكثفة أسبوعياً."
+    },
+    {
+      "id": "mot_2",
+      "category": "motivation",
+      "textEn": "Your only competition is who you were yesterday. Focus on your own progress.",
+      "textAr": "منافستك الوحيدة هي مع نفسك بالأمس. ركز على تقدمك الشخصي."
+    },
+    {
+      "id": "mot_3",
+      "category": "motivation",
+      "textEn": "The gym doesn't care about your mood. Show up anyway.",
+      "textAr": "الجيم لا يهتم بمزاجك. اذهب على أي حال."
+    },
+    {
+      "id": "mot_4",
+      "category": "motivation",
+      "textEn": "Small progress is still progress. Celebrate every win.",
+      "textAr": "التقدم الصغير لا يزال تقدماً. احتفل بكل انتصار."
+    },
+    {
+      "id": "mot_5",
+      "category": "motivation",
+      "textEn": "The hardest part is starting. Once you begin, momentum takes over.",
+      "textAr": "أصعب جزء هو البداية. بمجرد أن تبدأ، الزخم يتولى الأمر."
+    },
+    {
+      "id": "mot_6",
+      "category": "motivation",
+      "textEn": "Your body can stand almost anything. It's your mind you have to convince.",
+      "textAr": "جسمك يمكنه تحمل أي شيء تقريباً. عقلك هو ما تحتاج لإقناعه."
+    },
+    {
+      "id": "mot_7",
+      "category": "motivation",
+      "textEn": "Don't wish for a good body, work for it.",
+      "textAr": "لا تتمنى جسماً جيداً، اعمل من أجله."
+    },
+    {
+      "id": "mot_8",
+      "category": "motivation",
+      "textEn": "Success is the sum of small efforts repeated day in and day out.",
+      "textAr": "النجاح هو مجموع الجهود الصغيرة المتكررة يوماً بعد يوم."
+    }
+  ],
+  "workout_tips": [
+    {
+      "id": "wrk_1",
+      "category": "workout",
+      "textEn": "Always warm up for 5-10 minutes before lifting. Cold muscles are more prone to injury.",
+      "textAr": "قم بالإحماء دائماً لمدة 5-10 دقائق قبل رفع الأوزان. العضلات الباردة أكثر عرضة للإصابة."
+    },
+    {
+      "id": "wrk_2",
+      "category": "workout",
+      "textEn": "Control the weight, don't let it control you. Slow negatives build more muscle.",
+      "textAr": "تحكم بالوزن، لا تدعه يتحكم بك. الحركة البطيئة للأسفل تبني عضلات أكثر."
+    },
+    {
+      "id": "wrk_3",
+      "category": "workout",
+      "textEn": "Rest between sets is important. 60-90 seconds for hypertrophy, 3-5 minutes for strength.",
+      "textAr": "الراحة بين المجموعات مهمة. 60-90 ثانية للتضخيم، 3-5 دقائق للقوة."
+    },
+    {
+      "id": "wrk_4",
+      "category": "workout",
+      "textEn": "Compound exercises like squats and deadlifts give you the most bang for your buck.",
+      "textAr": "التمارين المركبة مثل السكوات والديدليفت تعطيك أفضل نتائج بأقل وقت."
+    },
+    {
+      "id": "wrk_5",
+      "category": "workout",
+      "textEn": "Mind-muscle connection is real. Focus on the muscle you're working.",
+      "textAr": "الاتصال بين العقل والعضلة حقيقي. ركز على العضلة التي تمرنها."
+    },
+    {
+      "id": "wrk_6",
+      "category": "workout",
+      "textEn": "Progressive overload is key. Try to increase weight or reps each week.",
+      "textAr": "الحمل التدريجي هو المفتاح. حاول زيادة الوزن أو التكرارات كل أسبوع."
+    },
+    {
+      "id": "wrk_7",
+      "category": "workout",
+      "textEn": "Form first, weight second. Perfect your technique before going heavy.",
+      "textAr": "الأداء أولاً، الوزن ثانياً. أتقن تقنيتك قبل رفع أوزان ثقيلة."
+    },
+    {
+      "id": "wrk_8",
+      "category": "workout",
+      "textEn": "Don't skip leg day. Lower body training boosts testosterone and overall strength.",
+      "textAr": "لا تتخطى يوم الأرجل. تدريب الجزء السفلي يعزز التستوستيرون والقوة الكلية."
+    },
+    {
+      "id": "wrk_9",
+      "category": "workout",
+      "textEn": "Include both pushing and pulling movements for balanced development.",
+      "textAr": "أضف تمارين الدفع والسحب معاً للتطور المتوازن."
+    },
+    {
+      "id": "wrk_10",
+      "category": "workout",
+      "textEn": "Breathing matters. Exhale during exertion, inhale during the eccentric phase.",
+      "textAr": "التنفس مهم. ازفر أثناء المجهود، واستنشق أثناء المرحلة السلبية."
+    }
+  ],
+  "nutrition_tips": [
+    {
+      "id": "nut_1",
+      "category": "nutrition",
+      "textEn": "Protein is king for muscle building. Aim for 1.6-2.2g per kg of body weight.",
+      "textAr": "البروتين ملك بناء العضلات. استهدف 1.6-2.2 جرام لكل كيلو من وزن الجسم."
+    },
+    {
+      "id": "nut_2",
+      "category": "nutrition",
+      "textEn": "Don't fear carbs. They fuel your workouts and recovery.",
+      "textAr": "لا تخف من الكربوهيدرات. إنها تغذي تمارينك واستشفائك."
+    },
+    {
+      "id": "nut_3",
+      "category": "nutrition",
+      "textEn": "Eat your biggest meal after training when your body needs nutrients most.",
+      "textAr": "تناول أكبر وجبة بعد التمرين عندما يحتاج جسمك للعناصر الغذائية أكثر."
+    },
+    {
+      "id": "nut_4",
+      "category": "nutrition",
+      "textEn": "Hydration affects performance. Drink at least 3 liters of water daily.",
+      "textAr": "الترطيب يؤثر على الأداء. اشرب على الأقل 3 لترات من الماء يومياً."
+    },
+    {
+      "id": "nut_5",
+      "category": "nutrition",
+      "textEn": "Foul (Egyptian fava beans) is an excellent protein source. A great breakfast for lifters!",
+      "textAr": "الفول مصدر ممتاز للبروتين. فطور رائع للرياضيين!"
+    },
+    {
+      "id": "nut_6",
+      "category": "nutrition",
+      "textEn": "Eggs are nature's perfect protein. Don't throw away the yolks!",
+      "textAr": "البيض هو بروتين الطبيعة المثالي. لا ترمي الصفار!"
+    },
+    {
+      "id": "nut_7",
+      "category": "nutrition",
+      "textEn": "Meal timing matters less than total daily intake. Focus on hitting your macros.",
+      "textAr": "توقيت الوجبات أقل أهمية من المدخول اليومي الكلي. ركز على تحقيق ماكروزك."
+    },
+    {
+      "id": "nut_8",
+      "category": "nutrition",
+      "textEn": "Sleep 7-9 hours. That's when muscle repair and growth hormone release peak.",
+      "textAr": "نم 7-9 ساعات. هذا وقت ذروة إصلاح العضلات وإفراز هرمون النمو."
+    },
+    {
+      "id": "nut_9",
+      "category": "nutrition",
+      "textEn": "Koshary is a great post-workout meal - carbs for recovery, protein from lentils.",
+      "textAr": "الكشري وجبة رائعة بعد التمرين - كربوهيدرات للاستشفاء وبروتين من العدس."
+    },
+    {
+      "id": "nut_10",
+      "category": "nutrition",
+      "textEn": "Track your calories for at least 2 weeks to understand your eating patterns.",
+      "textAr": "تتبع سعراتك لمدة أسبوعين على الأقل لفهم أنماط أكلك."
+    }
+  ],
+  "recovery_tips": [
+    {
+      "id": "rec_1",
+      "category": "recovery",
+      "textEn": "Muscles grow during rest, not during training. Recovery is part of the process.",
+      "textAr": "العضلات تنمو أثناء الراحة، ليس أثناء التدريب. الاستشفاء جزء من العملية."
+    },
+    {
+      "id": "rec_2",
+      "category": "recovery",
+      "textEn": "Stretch or foam roll after workouts to reduce soreness and improve mobility.",
+      "textAr": "تمدد أو استخدم الفوم رولر بعد التمرين لتقليل الألم وتحسين المرونة."
+    },
+    {
+      "id": "rec_3",
+      "category": "recovery",
+      "textEn": "Listen to your body. If you're very sore, take an extra rest day.",
+      "textAr": "استمع لجسمك. إذا كنت متألماً جداً، خذ يوم راحة إضافي."
+    },
+    {
+      "id": "rec_4",
+      "category": "recovery",
+      "textEn": "Active recovery (light walking, swimming) can help reduce muscle soreness.",
+      "textAr": "الاستشفاء النشط (المشي الخفيف، السباحة) يمكن أن يساعد في تقليل ألم العضلات."
+    },
+    {
+      "id": "rec_5",
+      "category": "recovery",
+      "textEn": "Stress kills gains. High cortisol levels impair muscle growth and recovery.",
+      "textAr": "التوتر يقتل المكاسب. مستويات الكورتيزول العالية تضعف نمو العضلات والاستشفاء."
+    },
+    {
+      "id": "rec_6",
+      "category": "recovery",
+      "textEn": "Cold showers can reduce inflammation and speed up recovery.",
+      "textAr": "الدش البارد يمكن أن يقلل الالتهاب ويسرع الاستشفاء."
+    }
+  ],
+  "beginner_tips": [
+    {
+      "id": "beg_1",
+      "category": "beginner",
+      "textEn": "Start with machines before free weights. They guide your movement and reduce injury risk.",
+      "textAr": "ابدأ بالأجهزة قبل الأوزان الحرة. إنها توجه حركتك وتقلل مخاطر الإصابة."
+    },
+    {
+      "id": "beg_2",
+      "category": "beginner",
+      "textEn": "Don't compare yourself to gym veterans. Everyone started somewhere.",
+      "textAr": "لا تقارن نفسك بقدامى الجيم. الجميع بدأوا من مكان ما."
+    },
+    {
+      "id": "beg_3",
+      "category": "beginner",
+      "textEn": "Ask for help. Most gym-goers are happy to show you how to use equipment.",
+      "textAr": "اطلب المساعدة. معظم رواد الجيم سعداء بإظهار كيفية استخدام الأجهزة."
+    },
+    {
+      "id": "beg_4",
+      "category": "beginner",
+      "textEn": "Start with 2-3 workouts per week. Your body needs time to adapt.",
+      "textAr": "ابدأ بـ 2-3 تمارين أسبوعياً. جسمك يحتاج وقتاً للتكيف."
+    },
+    {
+      "id": "beg_5",
+      "category": "beginner",
+      "textEn": "Track your workouts. What gets measured gets improved.",
+      "textAr": "تتبع تمارينك. ما يتم قياسه يتم تحسينه."
+    },
+    {
+      "id": "beg_6",
+      "category": "beginner",
+      "textEn": "Full body workouts are best for beginners. Hit each muscle group 2-3x per week.",
+      "textAr": "تمارين الجسم الكامل أفضل للمبتدئين. استهدف كل مجموعة عضلية 2-3 مرات أسبوعياً."
+    }
+  ],
+  "fat_loss_tips": [
+    {
+      "id": "fat_1",
+      "category": "fat_loss",
+      "textEn": "Fat loss is 80% diet. You can't out-train a bad diet.",
+      "textAr": "خسارة الدهون 80% نظام غذائي. لا يمكنك التغلب على نظام غذائي سيء بالتمارين."
+    },
+    {
+      "id": "fat_2",
+      "category": "fat_loss",
+      "textEn": "A 500 calorie deficit per day equals roughly 0.5kg fat loss per week.",
+      "textAr": "عجز 500 سعرة يومياً يعادل تقريباً نصف كيلو دهون أسبوعياً."
+    },
+    {
+      "id": "fat_3",
+      "category": "fat_loss",
+      "textEn": "Build muscle to boost metabolism. Muscle burns more calories at rest.",
+      "textAr": "ابنِ العضلات لتعزيز الأيض. العضلات تحرق سعرات أكثر أثناء الراحة."
+    },
+    {
+      "id": "fat_4",
+      "category": "fat_loss",
+      "textEn": "HIIT (High Intensity Interval Training) burns more fat in less time.",
+      "textAr": "تدريب HIIT يحرق دهون أكثر في وقت أقل."
+    },
+    {
+      "id": "fat_5",
+      "category": "fat_loss",
+      "textEn": "Walk 10,000 steps daily. It adds up to significant calorie burn.",
+      "textAr": "امشِ 10,000 خطوة يومياً. إنها تضيف حرق سعرات كبير."
+    },
+    {
+      "id": "fat_6",
+      "category": "fat_loss",
+      "textEn": "Eat protein with every meal. It keeps you full and preserves muscle.",
+      "textAr": "تناول البروتين مع كل وجبة. إنه يبقيك ممتلئاً ويحافظ على العضلات."
+    }
+  ],
+  "muscle_building_tips": [
+    {
+      "id": "mus_1",
+      "category": "muscle_building",
+      "textEn": "Eat in a slight calorie surplus (200-300 calories) to build muscle.",
+      "textAr": "تناول فائض بسيط من السعرات (200-300 سعرة) لبناء العضلات."
+    },
+    {
+      "id": "mus_2",
+      "category": "muscle_building",
+      "textEn": "Train each muscle group 2x per week for optimal growth.",
+      "textAr": "درب كل مجموعة عضلية مرتين أسبوعياً للنمو الأمثل."
+    },
+    {
+      "id": "mus_3",
+      "category": "muscle_building",
+      "textEn": "Volume is key. Aim for 10-20 working sets per muscle group per week.",
+      "textAr": "الحجم هو المفتاح. استهدف 10-20 مجموعة عمل لكل مجموعة عضلية أسبوعياً."
+    },
+    {
+      "id": "mus_4",
+      "category": "muscle_building",
+      "textEn": "Time under tension matters. Don't rush your reps.",
+      "textAr": "الوقت تحت التوتر مهم. لا تستعجل تكراراتك."
+    },
+    {
+      "id": "mus_5",
+      "category": "muscle_building",
+      "textEn": "Focus on compound lifts first, then isolation exercises.",
+      "textAr": "ركز على الرفعات المركبة أولاً، ثم تمارين العزل."
+    },
+    {
+      "id": "mus_6",
+      "category": "muscle_building",
+      "textEn": "Keep a workout log. Progressive overload requires tracking.",
+      "textAr": "احتفظ بسجل تمارين. الحمل التدريجي يتطلب التتبع."
+    }
+  ],
+  "supplement_tips": [
+    {
+      "id": "sup_1",
+      "category": "supplements",
+      "textEn": "Creatine is the most researched and effective supplement. 5g daily is all you need.",
+      "textAr": "الكرياتين أكثر المكملات بحثاً وفعالية. 5 جرام يومياً كل ما تحتاجه."
+    },
+    {
+      "id": "sup_2",
+      "category": "supplements",
+      "textEn": "Whey protein is convenient, but whole foods are always better.",
+      "textAr": "بروتين الواي مريح، لكن الأطعمة الكاملة دائماً أفضل."
+    },
+    {
+      "id": "sup_3",
+      "category": "supplements",
+      "textEn": "Most pre-workouts are overpriced caffeine. Coffee works just as well.",
+      "textAr": "معظم البري وركاوت كافيين مبالغ في سعره. القهوة تعمل بنفس الفعالية."
+    },
+    {
+      "id": "sup_4",
+      "category": "supplements",
+      "textEn": "Vitamin D is essential if you don't get enough sunlight.",
+      "textAr": "فيتامين D ضروري إذا لم تحصل على ضوء شمس كافٍ."
+    },
+    {
+      "id": "sup_5",
+      "category": "supplements",
+      "textEn": "Omega-3s reduce inflammation and support joint health.",
+      "textAr": "أوميغا-3 يقلل الالتهاب ويدعم صحة المفاصل."
+    },
+    {
+      "id": "sup_6",
+      "category": "supplements",
+      "textEn": "Don't waste money on BCAAs if you eat enough protein.",
+      "textAr": "لا تضيع المال على BCAAs إذا كنت تأكل بروتين كافٍ."
+    }
+  ]
+}
