@@ -1,0 +1,709 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "introduction": {
+    "title": {
+      "en": "Complete Cardio Training Guide",
+      "ar": "دليل تدريب الكارديو الشامل"
+    },
+    "description": {
+      "en": "Cardio (cardiovascular exercise) improves heart health, burns calories, and supports recovery. Understanding different types helps you choose the right approach for your goals.",
+      "ar": "الكارديو (تمارين القلب والأوعية الدموية) بيحسن صحة القلب، بيحرق سعرات، وبيدعم الاستشفاء. فهم الأنواع المختلفة بيساعدك تختار النهج الصح لأهدافك."
+    }
+  },
+  "cardioTypes": {
+    "title": {
+      "en": "Types of Cardio Training",
+      "ar": "أنواع تدريب الكارديو"
+    },
+    "types": [
+      {
+        "id": "liss",
+        "name": {
+          "en": "LISS (Low-Intensity Steady State)",
+          "ar": "LISS (منخفض الشدة ثابت)"
+        },
+        "description": {
+          "en": "Long duration, low intensity cardio. You should be able to hold a conversation.",
+          "ar": "كارديو طويل المدة، منخفض الشدة. لازم تقدر تتكلم عادي."
+        },
+        "heartRateZone": "50-65% max HR",
+        "duration": "30-60 minutes",
+        "examples": {
+          "en": ["Walking", "Light cycling", "Swimming (easy pace)", "Elliptical (low resistance)"],
+          "ar": ["المشي", "عجلة خفيفة", "سباحة (سرعة سهلة)", "إليبتيكال (مقاومة خفيفة)"]
+        },
+        "benefits": {
+          "en": [
+            "Burns fat while preserving muscle",
+            "Good for recovery days",
+            "Low stress on joints and CNS",
+            "Easy to do while watching TV or reading",
+            "Great for beginners"
+          ],
+          "ar": [
+            "بيحرق دهون مع الحفاظ على العضلات",
+            "كويس لأيام الاستشفاء",
+            "ضغط قليل على المفاصل والجهاز العصبي",
+            "سهل تعمله وإنت بتتفرج على التلفزيون أو بتقرأ",
+            "ممتاز للمبتدئين"
+          ]
+        },
+        "drawbacks": {
+          "en": [
+            "Takes more time",
+            "Can be boring",
+            "Less effective for conditioning"
+          ],
+          "ar": [
+            "بياخد وقت أكتر",
+            "ممكن يكون ممل",
+            "أقل فعالية للياقة"
+          ]
+        },
+        "bestFor": {
+          "en": ["Fat loss while preserving muscle", "Active recovery", "Beginners", "Those with joint issues"],
+          "ar": ["خسارة الدهون مع الحفاظ على العضلات", "الاستشفاء النشط", "المبتدئين", "اللي عندهم مشاكل في المفاصل"]
+        }
+      },
+      {
+        "id": "miss",
+        "name": {
+          "en": "MISS (Moderate-Intensity Steady State)",
+          "ar": "MISS (متوسط الشدة ثابت)"
+        },
+        "description": {
+          "en": "Medium intensity where talking becomes difficult. Faster than walking, slower than sprinting.",
+          "ar": "شدة متوسطة لما الكلام بيبقى صعب. أسرع من المشي، أبطأ من الجري السريع."
+        },
+        "heartRateZone": "65-75% max HR",
+        "duration": "20-45 minutes",
+        "examples": {
+          "en": ["Jogging", "Moderate cycling", "Rowing", "Stair climber"],
+          "ar": ["جري خفيف", "عجلة متوسطة", "تجديف", "درج"]
+        },
+        "benefits": {
+          "en": [
+            "Good calorie burn in shorter time than LISS",
+            "Improves aerobic capacity",
+            "Balance between fat burning and conditioning"
+          ],
+          "ar": [
+            "حرق سعرات كويس في وقت أقصر من LISS",
+            "بيحسن القدرة الهوائية",
+            "توازن بين حرق الدهون واللياقة"
+          ]
+        },
+        "drawbacks": {
+          "en": [
+            "More demanding than LISS",
+            "Not as efficient for conditioning as HIIT"
+          ],
+          "ar": [
+            "أصعب من LISS",
+            "مش فعال زي HIIT للياقة"
+          ]
+        },
+        "bestFor": {
+          "en": ["General fitness", "Moderate fat loss", "Building aerobic base"],
+          "ar": ["اللياقة العامة", "خسارة دهون معتدلة", "بناء قاعدة هوائية"]
+        }
+      },
+      {
+        "id": "hiit",
+        "name": {
+          "en": "HIIT (High-Intensity Interval Training)",
+          "ar": "HIIT (تدريب متقطع عالي الشدة)"
+        },
+        "description": {
+          "en": "Short bursts of all-out effort followed by rest periods. Very demanding but very effective.",
+          "ar": "دفعات قصيرة من المجهود الأقصى متبوعة بفترات راحة. متطلب جداً بس فعال جداً."
+        },
+        "heartRateZone": "80-95% max HR during work",
+        "duration": "15-25 minutes total",
+        "examples": {
+          "en": ["Sprints", "Battle ropes", "Bike sprints", "Burpees", "Box jumps"],
+          "ar": ["جري سريع", "حبال المعركة", "سبرنتات عجلة", "بيربيز", "قفز على الصندوق"]
+        },
+        "benefits": {
+          "en": [
+            "Maximum calorie burn in minimum time",
+            "EPOC (afterburn effect) - burn calories for hours after",
+            "Improves both aerobic and anaerobic capacity",
+            "Increases metabolism",
+            "Time efficient"
+          ],
+          "ar": [
+            "أقصى حرق سعرات في أقل وقت",
+            "EPOC (تأثير ما بعد الحرق) - بتحرق سعرات لساعات بعدها",
+            "بيحسن القدرة الهوائية واللاهوائية",
+            "بيزود الأيض",
+            "موفر للوقت"
+          ]
+        },
+        "drawbacks": {
+          "en": [
+            "Very demanding - hard to recover from",
+            "Can interfere with muscle gains if overdone",
+            "Requires good fitness base",
+            "Higher injury risk",
+            "Not for every day"
+          ],
+          "ar": [
+            "متطلب جداً - صعب تستشفي منه",
+            "ممكن يأثر على اكتساب العضلات لو زودته",
+            "محتاج قاعدة لياقة كويسة",
+            "خطر إصابة أعلى",
+            "مش لكل يوم"
+          ]
+        },
+        "bestFor": {
+          "en": ["Busy people", "Advanced trainees", "Maximizing conditioning", "Breaking plateaus"],
+          "ar": ["الناس المشغولة", "المتدربين المتقدمين", "أقصى لياقة", "كسر الثبات"]
+        }
+      },
+      {
+        "id": "sic",
+        "name": {
+          "en": "SIT (Sprint Interval Training)",
+          "ar": "SIT (تدريب متقطع سريع)"
+        },
+        "description": {
+          "en": "True all-out sprints with full recovery. Maximum intensity, maximum rest.",
+          "ar": "سبرنتات بأقصى مجهود مع استشفاء كامل. أقصى شدة، أقصى راحة."
+        },
+        "heartRateZone": "95-100% max HR during sprint",
+        "duration": "10-20 minutes total",
+        "protocol": {
+          "en": "20-30 second all-out sprint, 2-4 minute rest, repeat 4-6 times",
+          "ar": "20-30 ثانية سبرنت بأقصى مجهود، 2-4 دقيقة راحة، كرر 4-6 مرات"
+        },
+        "bestFor": {
+          "en": ["Athletes", "Power development", "Breaking plateaus"],
+          "ar": ["الرياضيين", "تطوير القوة", "كسر الثبات"]
+        }
+      }
+    ]
+  },
+  "heartRateZones": {
+    "title": {
+      "en": "Heart Rate Training Zones",
+      "ar": "مناطق تدريب نبض القلب"
+    },
+    "howToCalculate": {
+      "en": "Max HR (estimated) = 220 - your age. Then calculate percentage of that number.",
+      "ar": "أقصى نبض (تقديري) = 220 - عمرك. وبعدين احسب النسبة من الرقم ده."
+    },
+    "example": {
+      "en": "30 year old: Max HR = 190. Zone 3 (70-80%) = 133-152 bpm",
+      "ar": "عمر 30 سنة: أقصى نبض = 190. المنطقة 3 (70-80%) = 133-152 نبضة/دقيقة"
+    },
+    "zones": [
+      {
+        "zone": 1,
+        "name": {
+          "en": "Recovery Zone",
+          "ar": "منطقة الاستشفاء"
+        },
+        "percentage": "50-60%",
+        "description": {
+          "en": "Very light activity. Promotes blood flow and recovery. Walking pace.",
+          "ar": "نشاط خفيف جداً. بيعزز تدفق الدم والاستشفاء. سرعة المشي."
+        },
+        "feeling": {
+          "en": "Can talk easily, barely sweating",
+          "ar": "تقدر تتكلم بسهولة، بالكاد بتعرق"
+        }
+      },
+      {
+        "zone": 2,
+        "name": {
+          "en": "Fat Burning Zone",
+          "ar": "منطقة حرق الدهون"
+        },
+        "percentage": "60-70%",
+        "description": {
+          "en": "Light aerobic exercise. Primary fuel source is fat. Sustainable for long periods.",
+          "ar": "تمرين هوائي خفيف. مصدر الوقود الأساسي الدهون. ممكن تستمر لفترات طويلة."
+        },
+        "feeling": {
+          "en": "Can hold a conversation, light sweat",
+          "ar": "تقدر تتكلم، عرق خفيف"
+        }
+      },
+      {
+        "zone": 3,
+        "name": {
+          "en": "Aerobic Zone",
+          "ar": "المنطقة الهوائية"
+        },
+        "percentage": "70-80%",
+        "description": {
+          "en": "Moderate intensity. Improves cardiovascular fitness. Mix of fat and carbs for fuel.",
+          "ar": "شدة معتدلة. بتحسن لياقة القلب والأوعية. مزيج من الدهون والكربوهيدرات للوقود."
+        },
+        "feeling": {
+          "en": "Breathing harder, can speak in short sentences",
+          "ar": "تنفس أصعب، تقدر تتكلم بجمل قصيرة"
+        }
+      },
+      {
+        "zone": 4,
+        "name": {
+          "en": "Anaerobic Zone",
+          "ar": "المنطقة اللاهوائية"
+        },
+        "percentage": "80-90%",
+        "description": {
+          "en": "High intensity. Improves speed and power. Cannot sustain for long.",
+          "ar": "شدة عالية. بتحسن السرعة والقوة. مش هتقدر تستمر طويلاً."
+        },
+        "feeling": {
+          "en": "Breathing very hard, can only say a few words",
+          "ar": "تنفس صعب جداً، بتقدر تقول كلمات قليلة بس"
+        }
+      },
+      {
+        "zone": 5,
+        "name": {
+          "en": "Maximum Effort Zone",
+          "ar": "منطقة المجهود الأقصى"
+        },
+        "percentage": "90-100%",
+        "description": {
+          "en": "All-out effort. Only sustainable for short bursts. Builds maximum power.",
+          "ar": "أقصى مجهود. ممكن تستمر لدفعات قصيرة بس. بتبني أقصى قوة."
+        },
+        "feeling": {
+          "en": "Cannot talk, gasping for air, maximum effort",
+          "ar": "مش هتقدر تتكلم، بتلهث، أقصى مجهود"
+        }
+      }
+    ]
+  },
+  "cardioForGoals": {
+    "title": {
+      "en": "Cardio Recommendations by Goal",
+      "ar": "توصيات الكارديو حسب الهدف"
+    },
+    "goals": [
+      {
+        "goal": {
+          "en": "Fat Loss While Preserving Muscle",
+          "ar": "خسارة الدهون مع الحفاظ على العضلات"
+        },
+        "recommendations": {
+          "en": [
+            "2-3 LISS sessions per week (20-45 min)",
+            "1-2 HIIT sessions per week (15-20 min)",
+            "Keep cardio separate from weight training when possible",
+            "Do cardio after weights, not before",
+            "Don't overdo it - too much cardio = muscle loss"
+          ],
+          "ar": [
+            "2-3 جلسات LISS في الأسبوع (20-45 دقيقة)",
+            "1-2 جلسة HIIT في الأسبوع (15-20 دقيقة)",
+            "فصل الكارديو عن تمارين الأوزان لما تقدر",
+            "اعمل الكارديو بعد الأوزان، مش قبل",
+            "متكترش - كارديو كتير = خسارة عضلات"
+          ]
+        },
+        "weeklyScheduleExample": {
+          "en": {
+            "Monday": "Weights + 15 min walk",
+            "Tuesday": "20 min HIIT",
+            "Wednesday": "Weights + 15 min walk",
+            "Thursday": "30 min LISS",
+            "Friday": "Weights + 15 min walk",
+            "Saturday": "20 min HIIT or 45 min LISS",
+            "Sunday": "Rest or light walk"
+          },
+          "ar": {
+            "الاثنين": "أوزان + 15 دقيقة مشي",
+            "الثلاثاء": "20 دقيقة HIIT",
+            "الأربعاء": "أوزان + 15 دقيقة مشي",
+            "الخميس": "30 دقيقة LISS",
+            "الجمعة": "أوزان + 15 دقيقة مشي",
+            "السبت": "20 دقيقة HIIT أو 45 دقيقة LISS",
+            "الأحد": "راحة أو مشي خفيف"
+          }
+        }
+      },
+      {
+        "goal": {
+          "en": "Building Muscle (Minimize Cardio)",
+          "ar": "بناء العضلات (تقليل الكارديو)"
+        },
+        "recommendations": {
+          "en": [
+            "Keep cardio minimal - 1-2 sessions per week",
+            "Focus on low intensity (LISS) to avoid interfering with recovery",
+            "10-20 minutes post-workout walking is fine",
+            "Avoid HIIT during heavy bulking phases",
+            "Walking is your friend - doesn't hurt gains"
+          ],
+          "ar": [
+            "خلي الكارديو في الحد الأدنى - 1-2 جلسة في الأسبوع",
+            "ركز على الشدة المنخفضة (LISS) عشان متأثرش على الاستشفاء",
+            "10-20 دقيقة مشي بعد التمرين كويس",
+            "تجنب HIIT أثناء فترات التضخيم الشديد",
+            "المشي صاحبك - مش بيأذي المكاسب"
+          ]
+        }
+      },
+      {
+        "goal": {
+          "en": "General Health & Fitness",
+          "ar": "الصحة واللياقة العامة"
+        },
+        "recommendations": {
+          "en": [
+            "150 minutes of moderate cardio per week (WHO recommendation)",
+            "Mix of LISS and MISS",
+            "Add 1 HIIT session for variety",
+            "Find activities you enjoy",
+            "Consistency matters more than intensity"
+          ],
+          "ar": [
+            "150 دقيقة كارديو معتدل في الأسبوع (توصية منظمة الصحة العالمية)",
+            "مزيج من LISS و MISS",
+            "ضيف جلسة HIIT واحدة للتنويع",
+            "اختار نشاطات بتحبها",
+            "الاستمرارية أهم من الشدة"
+          ]
+        }
+      },
+      {
+        "goal": {
+          "en": "Athletic Performance",
+          "ar": "الأداء الرياضي"
+        },
+        "recommendations": {
+          "en": [
+            "Sport-specific conditioning",
+            "Mix all types based on sport demands",
+            "Build aerobic base with LISS/MISS",
+            "Use HIIT for game-like conditions",
+            "Periodize cardio with competition schedule"
+          ],
+          "ar": [
+            "لياقة محددة للرياضة",
+            "مزيج من كل الأنواع حسب متطلبات الرياضة",
+            "ابني قاعدة هوائية بـ LISS/MISS",
+            "استخدم HIIT لظروف شبيهة بالمباراة",
+            "نظم الكارديو مع جدول المسابقات"
+          ]
+        }
+      }
+    ]
+  },
+  "hiitWorkouts": {
+    "title": {
+      "en": "HIIT Workout Templates",
+      "ar": "قوالب تمارين HIIT"
+    },
+    "workouts": [
+      {
+        "id": "beginner-hiit",
+        "name": {
+          "en": "Beginner HIIT (Low Impact)",
+          "ar": "HIIT للمبتدئين (تأثير منخفض)"
+        },
+        "duration": "15 minutes",
+        "structure": {
+          "en": "30 seconds work, 60 seconds rest",
+          "ar": "30 ثانية شغل، 60 ثانية راحة"
+        },
+        "rounds": 10,
+        "exercises": [
+          { "name": { "en": "March in Place", "ar": "مشي في المكان" }, "round": 1 },
+          { "name": { "en": "Slow Squats", "ar": "سكوات بطيء" }, "round": 2 },
+          { "name": { "en": "Step Touches", "ar": "لمسات جانبية" }, "round": 3 },
+          { "name": { "en": "Modified Burpees", "ar": "بيربيز معدل" }, "round": 4 },
+          { "name": { "en": "Knee Raises", "ar": "رفع الركبة" }, "round": 5 },
+          { "name": { "en": "Repeat 1-5", "ar": "كرر 1-5" }, "round": "6-10" }
+        ]
+      },
+      {
+        "id": "classic-tabata",
+        "name": {
+          "en": "Classic Tabata Protocol",
+          "ar": "بروتوكول تاباتا الكلاسيكي"
+        },
+        "duration": "4 minutes (per exercise)",
+        "structure": {
+          "en": "20 seconds ALL OUT, 10 seconds rest",
+          "ar": "20 ثانية بأقصى مجهود، 10 ثواني راحة"
+        },
+        "rounds": 8,
+        "note": {
+          "en": "Do one exercise for all 8 rounds, or rotate through 4 exercises (2 rounds each)",
+          "ar": "اعمل تمرين واحد لكل الـ 8 جولات، أو بدل بين 4 تمارين (جولتين لكل واحد)"
+        },
+        "exercises": [
+          { "name": { "en": "Burpees", "ar": "بيربيز" } },
+          { "name": { "en": "Mountain Climbers", "ar": "ماونتن كلايمرز" } },
+          { "name": { "en": "Jump Squats", "ar": "جامب سكوات" } },
+          { "name": { "en": "High Knees", "ar": "ركب عالية" } }
+        ]
+      },
+      {
+        "id": "full-body-hiit",
+        "name": {
+          "en": "20-Minute Full Body HIIT",
+          "ar": "HIIT جسم كامل 20 دقيقة"
+        },
+        "duration": "20 minutes",
+        "structure": {
+          "en": "40 seconds work, 20 seconds rest",
+          "ar": "40 ثانية شغل، 20 ثانية راحة"
+        },
+        "rounds": "3 rounds of 6 exercises",
+        "exercises": [
+          { "name": { "en": "Jump Squats", "ar": "جامب سكوات" }, "targets": { "en": "Legs", "ar": "رجل" } },
+          { "name": { "en": "Push-ups", "ar": "ضغط" }, "targets": { "en": "Chest/Triceps", "ar": "صدر/تراي" } },
+          { "name": { "en": "Jumping Lunges", "ar": "لانجز قفز" }, "targets": { "en": "Legs", "ar": "رجل" } },
+          { "name": { "en": "Mountain Climbers", "ar": "ماونتن كلايمرز" }, "targets": { "en": "Core/Cardio", "ar": "كور/كارديو" } },
+          { "name": { "en": "Burpees", "ar": "بيربيز" }, "targets": { "en": "Full Body", "ar": "جسم كامل" } },
+          { "name": { "en": "Plank Jacks", "ar": "بلانك جاكس" }, "targets": { "en": "Core", "ar": "كور" } }
+        ],
+        "restBetweenRounds": {
+          "en": "60 seconds rest between rounds",
+          "ar": "60 ثانية راحة بين الجولات"
+        }
+      },
+      {
+        "id": "treadmill-hiit",
+        "name": {
+          "en": "Treadmill HIIT Sprint Protocol",
+          "ar": "بروتوكول HIIT سبرنت على المشاية"
+        },
+        "duration": "25 minutes",
+        "structure": {
+          "en": "Sprint intervals on treadmill",
+          "ar": "فترات سبرنت على المشاية"
+        },
+        "protocol": [
+          { "phase": { "en": "Warm-up", "ar": "تسخين" }, "duration": "5 min", "speed": { "en": "5-6 km/h walk", "ar": "5-6 كم/س مشي" } },
+          { "phase": { "en": "Sprint 1", "ar": "سبرنت 1" }, "duration": "30 sec", "speed": { "en": "12-15 km/h", "ar": "12-15 كم/س" } },
+          { "phase": { "en": "Recovery 1", "ar": "استشفاء 1" }, "duration": "90 sec", "speed": { "en": "5-6 km/h walk", "ar": "5-6 كم/س مشي" } },
+          { "phase": { "en": "Repeat", "ar": "كرر" }, "duration": "8-10 sprints", "speed": { "en": "", "ar": "" } },
+          { "phase": { "en": "Cool-down", "ar": "تهدئة" }, "duration": "5 min", "speed": { "en": "4-5 km/h easy walk", "ar": "4-5 كم/س مشي سهل" } }
+        ]
+      },
+      {
+        "id": "emom",
+        "name": {
+          "en": "EMOM (Every Minute On the Minute)",
+          "ar": "EMOM (كل دقيقة في الدقيقة)"
+        },
+        "duration": "20 minutes",
+        "structure": {
+          "en": "At the start of every minute, do the prescribed exercise. Rest until next minute starts.",
+          "ar": "في بداية كل دقيقة، اعمل التمرين المحدد. استريح لحد ما الدقيقة الجاية تبدأ."
+        },
+        "exercises": [
+          { "minute": "1, 5, 9, 13, 17", "exercise": { "en": "10 Burpees", "ar": "10 بيربيز" } },
+          { "minute": "2, 6, 10, 14, 18", "exercise": { "en": "15 Jump Squats", "ar": "15 جامب سكوات" } },
+          { "minute": "3, 7, 11, 15, 19", "exercise": { "en": "20 Mountain Climbers", "ar": "20 ماونتن كلايمرز" } },
+          { "minute": "4, 8, 12, 16, 20", "exercise": { "en": "10 Push-ups", "ar": "10 ضغط" } }
+        ]
+      }
+    ]
+  },
+  "lissWorkouts": {
+    "title": {
+      "en": "LISS Workout Ideas",
+      "ar": "أفكار تمارين LISS"
+    },
+    "workouts": [
+      {
+        "activity": {
+          "en": "Walking",
+          "ar": "المشي"
+        },
+        "duration": "30-60 minutes",
+        "tips": {
+          "en": ["Walk at a pace where you can talk comfortably", "Use incline for extra challenge", "Track steps with phone or watch"],
+          "ar": ["امشي بسرعة تقدر تتكلم فيها براحة", "استخدم ميل لتحدي إضافي", "تتبع الخطوات بالموبايل أو الساعة"]
+        },
+        "caloriesBurnedPer30Min": "100-200"
+      },
+      {
+        "activity": {
+          "en": "Stationary Bike",
+          "ar": "العجلة الثابتة"
+        },
+        "duration": "30-45 minutes",
+        "tips": {
+          "en": ["Keep resistance moderate", "Maintain steady pace (60-80 RPM)", "Watch a show to pass time"],
+          "ar": ["خلي المقاومة معتدلة", "حافظ على سرعة ثابتة (60-80 لفة/دقيقة)", "اتفرج على مسلسل عشان الوقت يعدي"]
+        },
+        "caloriesBurnedPer30Min": "150-250"
+      },
+      {
+        "activity": {
+          "en": "Swimming",
+          "ar": "السباحة"
+        },
+        "duration": "30-45 minutes",
+        "tips": {
+          "en": ["Use a relaxed stroke", "Focus on technique over speed", "Great for joint issues"],
+          "ar": ["استخدم ضربة مرتاحة", "ركز على التكنيك مش السرعة", "ممتاز لمشاكل المفاصل"]
+        },
+        "caloriesBurnedPer30Min": "200-300"
+      },
+      {
+        "activity": {
+          "en": "Elliptical",
+          "ar": "الإليبتيكال"
+        },
+        "duration": "30-45 minutes",
+        "tips": {
+          "en": ["Low impact on joints", "Keep resistance low-moderate", "Use handles for upper body involvement"],
+          "ar": ["تأثير منخفض على المفاصل", "خلي المقاومة منخفضة-معتدلة", "استخدم المقابض لإشراك الجزء العلوي"]
+        },
+        "caloriesBurnedPer30Min": "200-350"
+      }
+    ]
+  },
+  "cardioMistakes": {
+    "title": {
+      "en": "Common Cardio Mistakes",
+      "ar": "أخطاء الكارديو الشائعة"
+    },
+    "mistakes": [
+      {
+        "mistake": {
+          "en": "Doing Cardio Before Weights",
+          "ar": "عمل الكارديو قبل الأوزان"
+        },
+        "problem": {
+          "en": "Depletes energy for weight training, reduces strength performance",
+          "ar": "بيستنزف الطاقة لتمارين الأوزان، بيقلل أداء القوة"
+        },
+        "solution": {
+          "en": "Do weights first, cardio after. Or separate them into different sessions.",
+          "ar": "اعمل الأوزان الأول، الكارديو بعدها. أو افصلهم في جلسات مختلفة."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Too Much HIIT",
+          "ar": "HIIT كتير"
+        },
+        "problem": {
+          "en": "Overtrains nervous system, hinders recovery, can cause injuries",
+          "ar": "بيرهق الجهاز العصبي، بيعوق الاستشفاء، ممكن يسبب إصابات"
+        },
+        "solution": {
+          "en": "Limit HIIT to 2-3 sessions per week max. Balance with LISS.",
+          "ar": "حدد HIIT بـ 2-3 جلسات في الأسبوع ماكس. وازن مع LISS."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Holding Onto Treadmill Handrails",
+          "ar": "التمسك بمقابض المشاية"
+        },
+        "problem": {
+          "en": "Reduces calorie burn and takes stress off legs",
+          "ar": "بيقلل حرق السعرات وبيشيل الضغط من الرجل"
+        },
+        "solution": {
+          "en": "Walk hands-free. Reduce speed or incline if needed.",
+          "ar": "امشي من غير إمساك. قلل السرعة أو الميل لو محتاج."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Same Cardio Every Day",
+          "ar": "نفس الكارديو كل يوم"
+        },
+        "problem": {
+          "en": "Body adapts, burns fewer calories, overuse injuries",
+          "ar": "الجسم بيتكيف، بيحرق سعرات أقل، إصابات استخدام زائد"
+        },
+        "solution": {
+          "en": "Vary your cardio: walk, bike, swim, row, HIIT.",
+          "ar": "نوع الكارديو: مشي، عجلة، سباحة، تجديف، HIIT."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Skipping Warm-up/Cool-down",
+          "ar": "تخطي التسخين/التهدئة"
+        },
+        "problem": {
+          "en": "Increases injury risk and reduces performance",
+          "ar": "بيزود خطر الإصابة وبيقلل الأداء"
+        },
+        "solution": {
+          "en": "Always warm up 5 min before, cool down 5 min after.",
+          "ar": "دايماً سخن 5 دقايق قبل، وبرد 5 دقايق بعد."
+        }
+      }
+    ]
+  },
+  "cardioTips": {
+    "title": {
+      "en": "Pro Tips for Effective Cardio",
+      "ar": "نصائح احترافية لكارديو فعال"
+    },
+    "tips": [
+      {
+        "tip": {
+          "en": "Track Your Progress",
+          "ar": "تتبع تقدمك"
+        },
+        "details": {
+          "en": "Use a heart rate monitor or fitness tracker. What gets measured gets improved.",
+          "ar": "استخدم مراقب نبض القلب أو تراكر لياقة. اللي بيتقاس بيتحسن."
+        }
+      },
+      {
+        "tip": {
+          "en": "Stay Hydrated",
+          "ar": "خليك رطب"
+        },
+        "details": {
+          "en": "Drink water before, during (if longer than 30 min), and after cardio.",
+          "ar": "اشرب ميه قبل، أثناء (لو أكتر من 30 دقيقة)، وبعد الكارديو."
+        }
+      },
+      {
+        "tip": {
+          "en": "Fasted Cardio is Optional",
+          "ar": "الكارديو على معدة فاضية اختياري"
+        },
+        "details": {
+          "en": "Research shows no significant fat loss benefit. Do what feels best for you.",
+          "ar": "الأبحاث بتقول مفيش فايدة كبيرة لخسارة الدهون. اعمل اللي بيريحك."
+        }
+      },
+      {
+        "tip": {
+          "en": "Listen to Music or Podcasts",
+          "ar": "اسمع موسيقى أو بودكاست"
+        },
+        "details": {
+          "en": "Makes time pass faster and can improve performance.",
+          "ar": "بيخلي الوقت يعدي أسرع وممكن يحسن الأداء."
+        }
+      },
+      {
+        "tip": {
+          "en": "Proper Footwear Matters",
+          "ar": "الحذاء المناسب مهم"
+        },
+        "details": {
+          "en": "Invest in good running/training shoes. Replace them every 6-12 months with regular use.",
+          "ar": "استثمر في حذاء جري/تدريب كويس. غيره كل 6-12 شهر مع الاستخدام المنتظم."
+        }
+      }
+    ]
+  }
+}
