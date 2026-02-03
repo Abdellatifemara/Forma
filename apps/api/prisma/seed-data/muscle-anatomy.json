@@ -1,0 +1,810 @@
+{
+  "muscleGroups": [
+    {
+      "id": "chest",
+      "name": {
+        "en": "Chest (Pectorals)",
+        "ar": "الصدر"
+      },
+      "latinName": "Pectoralis Major & Minor",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/chest-muscles.jpg",
+      "description": {
+        "en": "The chest muscles are the large muscles on the front of your upper body. They're responsible for pushing movements and are one of the most visible 'show muscles'.",
+        "ar": "عضلات الصدر هي العضلات الكبيرة في مقدمة الجزء العلوي من جسمك. هم مسؤولين عن حركات الدفع وهم من أكتر العضلات الظاهرة."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Clavicular Head (Upper Chest) - originates from the collarbone",
+            "Sternal Head (Middle/Lower Chest) - originates from the sternum",
+            "Pectoralis Minor - lies beneath the major, attaches to the scapula"
+          ],
+          "function": "Horizontal adduction (bringing arms across body), flexion of the shoulder (raising arm forward), internal rotation of the arm"
+        },
+        "ar": {
+          "heads": [
+            "الرأس الترقوي (الصدر العلوي) - ينشأ من عظم الترقوة",
+            "الرأس القصي (الصدر الأوسط/السفلي) - ينشأ من عظم القص",
+            "العضلة الصدرية الصغرى - تقع تحت الكبرى، تتصل بالكتف"
+          ],
+          "function": "التقريب الأفقي (جلب الذراعين عبر الجسم)، ثني الكتف (رفع الذراع للأمام)، الدوران الداخلي للذراع"
+        }
+      },
+      "bestExercises": [
+        {"id": "chest-bench-press", "emphasis": "overall"},
+        {"id": "chest-incline-press", "emphasis": "upper"},
+        {"id": "chest-dumbbell-press", "emphasis": "overall"},
+        {"id": "chest-cable-fly", "emphasis": "inner"},
+        {"id": "chest-dip", "emphasis": "lower"},
+        {"id": "chest-pushup", "emphasis": "overall"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Retract shoulder blades for all pressing movements",
+          "Vary angles to hit all portions of the chest",
+          "Incline targets upper chest; decline targets lower",
+          "Use full range of motion for better development",
+          "Don't neglect the stretch at the bottom of movements"
+        ],
+        "ar": [
+          "اسحب كتفيك للخلف في كل حركات الضغط",
+          "نوّع الزوايا لاستهداف كل أجزاء الصدر",
+          "الإنكلاين يستهدف الصدر العلوي؛ الديكلاين يستهدف السفلي",
+          "استخدم المدى الكامل للحركة لتطور أحسن",
+          "ما تهملش الاستطالة في أسفل الحركات"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Pec tear - usually from heavy bench press with poor form",
+          "Shoulder impingement - from excessive pressing with bad form"
+        ],
+        "ar": [
+          "تمزق الصدر - عادة من البنش التقيل بشكل غلط",
+          "انضغاط الكتف - من الضغط الزيادة بشكل غلط"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Always warm up thoroughly before pressing",
+          "Use proper shoulder blade retraction",
+          "Don't bounce the bar off your chest",
+          "Progress weight gradually",
+          "Balance pushing with pulling exercises"
+        ],
+        "ar": [
+          "سخّن كويس دايماً قبل الضغط",
+          "استخدم سحب كتفين صحيح",
+          "ما تعملش ارتداد للبار عن صدرك",
+          "زوّد الوزن تدريجياً",
+          "وازن تمارين الدفع مع السحب"
+        ]
+      }
+    },
+    {
+      "id": "back",
+      "name": {
+        "en": "Back",
+        "ar": "الظهر"
+      },
+      "latinName": "Latissimus Dorsi, Rhomboids, Trapezius, Erector Spinae",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/back-muscles.jpg",
+      "description": {
+        "en": "The back is a complex of multiple muscles responsible for pulling movements, posture, and spinal stability. A well-developed back creates the V-taper look.",
+        "ar": "الظهر مجموعة معقدة من عضلات متعددة مسؤولة عن حركات السحب والوقفة وثبات العمود الفقري. ظهر متطور يعمل شكل V."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Latissimus Dorsi (Lats) - large wing-shaped muscles on sides",
+            "Trapezius (Traps) - upper, middle, and lower portions",
+            "Rhomboids - between shoulder blades",
+            "Erector Spinae - muscles along the spine",
+            "Teres Major/Minor - assist lats in pulling"
+          ],
+          "function": "Pulling movements (vertical and horizontal), shoulder extension, scapular retraction, spinal extension"
+        },
+        "ar": {
+          "heads": [
+            "اللاتس - عضلات كبيرة على شكل جناح على الجنبين",
+            "الترابيس - الأجزاء العلوية والوسطى والسفلية",
+            "العضلة المعينية - بين لوحتي الكتف",
+            "عضلات العمود الفقري - العضلات على طول العمود الفقري",
+            "العضلة المدورة الكبرى/الصغرى - تساعد اللاتس في السحب"
+          ],
+          "function": "حركات السحب (عمودية وأفقية)، امتداد الكتف، سحب الكتفين، امتداد العمود الفقري"
+        }
+      },
+      "bestExercises": [
+        {"id": "back-deadlift", "emphasis": "overall"},
+        {"id": "back-pullup", "emphasis": "lats"},
+        {"id": "back-lat-pulldown", "emphasis": "lats"},
+        {"id": "back-barbell-row", "emphasis": "overall"},
+        {"id": "back-dumbbell-row", "emphasis": "lats"},
+        {"id": "back-seated-row", "emphasis": "middle back"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Initiate pulls with your elbows, not your hands",
+          "Squeeze shoulder blades together on rows",
+          "Use a variety of grips: wide, narrow, neutral",
+          "Include both vertical and horizontal pulling",
+          "Don't neglect the lower back (deadlifts, back extensions)"
+        ],
+        "ar": [
+          "ابدأ السحب بمرفقيك، مش إيديك",
+          "اشد كتفيك مع بعض في التجديف",
+          "استخدم قبضات متنوعة: عريضة، ضيقة، محايدة",
+          "اضمّن سحب عمودي وأفقي",
+          "ما تهملش أسفل الظهر (ديدليفت، تمديد الظهر)"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Lower back strain/herniated disc - from deadlifts with poor form",
+          "Lat tears - from excessive pulling without proper warm-up"
+        ],
+        "ar": [
+          "إجهاد/انزلاق غضروفي في أسفل الظهر - من الديدليفت بشكل غلط",
+          "تمزق اللاتس - من السحب الزيادة من غير تسخين صحيح"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Master deadlift form with light weights first",
+          "Keep a neutral spine during all back exercises",
+          "Strengthen your core to support your back",
+          "Don't ego lift - use weight you can control",
+          "Balance pulling with pushing for posture"
+        ],
+        "ar": [
+          "اتقن شكل الديدليفت بأوزان خفيفة الأول",
+          "حافظ على عمود فقري محايد في كل تمارين الظهر",
+          "قوّي جذعك لدعم ظهرك",
+          "ما ترفعش بإيجو - استخدم وزن تقدر تتحكم فيه",
+          "وازن السحب مع الدفع للوقفة"
+        ]
+      }
+    },
+    {
+      "id": "shoulders",
+      "name": {
+        "en": "Shoulders (Deltoids)",
+        "ar": "الكتف"
+      },
+      "latinName": "Deltoideus",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/shoulder-muscles.jpg",
+      "description": {
+        "en": "The shoulders are ball-and-socket joints with three heads of muscle. Well-developed shoulders create width and a powerful upper body appearance.",
+        "ar": "الكتفين مفاصل كروية بثلاث رؤوس عضلية. كتفين متطورين يعملوا عرض ومظهر جزء علوي قوي."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Anterior Deltoid (Front) - raises arm forward",
+            "Lateral Deltoid (Side) - raises arm to the side",
+            "Posterior Deltoid (Rear) - pulls arm backward"
+          ],
+          "function": "Shoulder abduction (raising arm sideways), flexion (raising forward), extension (moving backward), rotation"
+        },
+        "ar": {
+          "heads": [
+            "الكتف الأمامي - يرفع الذراع للأمام",
+            "الكتف الجانبي - يرفع الذراع للجنب",
+            "الكتف الخلفي - يسحب الذراع للخلف"
+          ],
+          "function": "إبعاد الكتف (رفع الذراع للجنب)، الثني (الرفع للأمام)، الامتداد (التحرك للخلف)، الدوران"
+        }
+      },
+      "bestExercises": [
+        {"id": "shoulders-overhead-press", "emphasis": "front/side"},
+        {"id": "shoulders-dumbbell-press", "emphasis": "front/side"},
+        {"id": "shoulders-lateral-raise", "emphasis": "side"},
+        {"id": "shoulders-face-pull", "emphasis": "rear"},
+        {"id": "shoulders-rear-delt-fly", "emphasis": "rear"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Train all three heads for balanced development",
+          "Front delts get hit during chest pressing - focus on side and rear",
+          "Use lighter weights for lateral raises - it's an isolation exercise",
+          "Face pulls are essential for shoulder health",
+          "Don't neglect rotator cuff work"
+        ],
+        "ar": [
+          "درّب الثلاث رؤوس لتطور متوازن",
+          "الكتف الأمامي بيتدرب أثناء ضغط الصدر - ركز على الجانبي والخلفي",
+          "استخدم أوزان أخف للرفع الجانبي - ده تمرين عزل",
+          "الفيس بول ضروري لصحة الكتف",
+          "ما تهملش شغل الروتاتور كف"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Rotator cuff tears/tendinitis - from overuse or poor form",
+          "Shoulder impingement - from excessive overhead pressing",
+          "AC joint problems - from heavy pressing movements"
+        ],
+        "ar": [
+          "تمزق/التهاب الروتاتور كف - من الاستخدام الزيادة أو الشكل الغلط",
+          "انضغاط الكتف - من الضغط الزيادة فوق الرأس",
+          "مشاكل مفصل AC - من حركات الضغط التقيلة"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Always warm up shoulders thoroughly",
+          "Include face pulls and external rotation work",
+          "Don't go too heavy on lateral raises",
+          "Balance pressing with pulling movements",
+          "Stop pressing if you feel pain in the joint"
+        ],
+        "ar": [
+          "سخّن الكتفين كويس دايماً",
+          "اضمّن فيس بول وشغل الدوران الخارجي",
+          "ما تتقلش أوي في الرفع الجانبي",
+          "وازن الضغط مع حركات السحب",
+          "وقف الضغط لو حسيت بألم في المفصل"
+        ]
+      }
+    },
+    {
+      "id": "biceps",
+      "name": {
+        "en": "Biceps",
+        "ar": "الباي (العضلة ذات الرأسين)"
+      },
+      "latinName": "Biceps Brachii",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/biceps-muscles.jpg",
+      "description": {
+        "en": "The biceps are the 'show muscles' on the front of your upper arm. They're responsible for elbow flexion and forearm supination.",
+        "ar": "الباي هي 'عضلات الاستعراض' في مقدمة ذراعك العلوي. هم مسؤولين عن ثني المرفق ودوران الساعد."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Long Head (Outer) - creates the 'peak' of the bicep",
+            "Short Head (Inner) - creates the width",
+            "Brachialis - lies beneath bicep, adds arm thickness"
+          ],
+          "function": "Elbow flexion (curling), forearm supination (turning palm up)"
+        },
+        "ar": {
+          "heads": [
+            "الرأس الطويل (الخارجي) - يعمل 'قمة' الباي",
+            "الرأس القصير (الداخلي) - يعمل العرض",
+            "العضلة العضدية - تحت الباي، تضيف سُمك للذراع"
+          ],
+          "function": "ثني المرفق (الكيرل)، سوبينيشن الساعد (دوران راحة اليد لفوق)"
+        }
+      },
+      "bestExercises": [
+        {"id": "biceps-barbell-curl", "emphasis": "overall"},
+        {"id": "biceps-dumbbell-curl", "emphasis": "overall"},
+        {"id": "biceps-hammer-curl", "emphasis": "brachialis"},
+        {"id": "biceps-preacher-curl", "emphasis": "short head"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Biceps are small - don't need excessive volume",
+          "Hammer curls target the brachialis for arm thickness",
+          "Keep elbows stationary during curls",
+          "Don't swing - use controlled movements",
+          "Incline curls stretch the long head more"
+        ],
+        "ar": [
+          "الباي صغير - مش محتاج حجم زيادة",
+          "الهامر كيرل يستهدف العضلة العضدية لسُمك الذراع",
+          "خلّي مرفقيك ثابتين أثناء الكيرل",
+          "ما تتأرجحش - استخدم حركات متحكمة",
+          "كيرل الإنكلاين يمط الرأس الطويل أكتر"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Bicep tendon tear - from heavy pulling or curling",
+          "Bicep tendinitis - from overuse"
+        ],
+        "ar": [
+          "تمزق وتر الباي - من السحب أو الكيرل التقيل",
+          "التهاب وتر الباي - من الاستخدام الزيادة"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Warm up elbows before curling",
+          "Don't use momentum or swing weights",
+          "Progress weight gradually",
+          "Don't overtrain - biceps get hit during back work too"
+        ],
+        "ar": [
+          "سخّن مرفقيك قبل الكيرل",
+          "ما تستخدمش زخم أو تتأرجح بالأوزان",
+          "زوّد الوزن تدريجياً",
+          "ما تبالغش في التدريب - الباي بيتدرب أثناء شغل الظهر كمان"
+        ]
+      }
+    },
+    {
+      "id": "triceps",
+      "name": {
+        "en": "Triceps",
+        "ar": "التراي (العضلة ذات الثلاث رؤوس)"
+      },
+      "latinName": "Triceps Brachii",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/triceps-muscles.jpg",
+      "description": {
+        "en": "The triceps make up about 2/3 of your upper arm size. They're responsible for extending the elbow and are key for pushing strength.",
+        "ar": "التراي يشكل حوالي ثلثين حجم ذراعك العلوي. هم مسؤولين عن فرد المرفق وأساسيين لقوة الدفع."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Long Head - largest, runs along the back of the arm",
+            "Lateral Head - on the outside of the arm",
+            "Medial Head - deep, under the other heads"
+          ],
+          "function": "Elbow extension (straightening arm), shoulder extension (long head)"
+        },
+        "ar": {
+          "heads": [
+            "الرأس الطويل - الأكبر، يجري على طول خلفية الذراع",
+            "الرأس الجانبي - على خارج الذراع",
+            "الرأس الوسطي - عميق، تحت الرؤوس التانية"
+          ],
+          "function": "فرد المرفق (فرد الذراع)، امتداد الكتف (الرأس الطويل)"
+        }
+      },
+      "bestExercises": [
+        {"id": "triceps-pushdown", "emphasis": "lateral head"},
+        {"id": "triceps-skull-crusher", "emphasis": "long head"},
+        {"id": "triceps-overhead-extension", "emphasis": "long head"},
+        {"id": "triceps-dip", "emphasis": "overall"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Overhead movements stretch the long head more",
+          "Close grip bench and dips are great compound movements",
+          "Keep elbows stationary for isolation exercises",
+          "Triceps are often overtrained - they work hard during chest pressing"
+        ],
+        "ar": [
+          "الحركات فوق الرأس تمط الرأس الطويل أكتر",
+          "البنش بقبضة ضيقة والديب تمارين مركبة ممتازة",
+          "خلّي مرفقيك ثابتين في تمارين العزل",
+          "التراي غالباً بيتدرب زيادة - بيشتغل بقوة أثناء ضغط الصدر"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Tricep tendinitis - from excessive pressing/extensions",
+          "Elbow strain - from going too heavy on skull crushers"
+        ],
+        "ar": [
+          "التهاب وتر التراي - من الضغط/الفرد الزيادة",
+          "إجهاد المرفق - من التقل أوي في سكل كراشر"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Don't lock out aggressively on extensions",
+          "Control the weight on skull crushers",
+          "Warm up elbows before tricep work",
+          "Don't go too deep on dips"
+        ],
+        "ar": [
+          "ما تقفلش بعنف في الفرد",
+          "تحكم في الوزن في سكل كراشر",
+          "سخّن مرفقيك قبل شغل التراي",
+          "ما تنزلش عميق أوي في الديب"
+        ]
+      }
+    },
+    {
+      "id": "quadriceps",
+      "name": {
+        "en": "Quadriceps",
+        "ar": "الفخذ الأمامي (الكوادز)"
+      },
+      "latinName": "Quadriceps Femoris",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/quad-muscles.jpg",
+      "description": {
+        "en": "The quadriceps are the large muscle group on the front of your thigh, consisting of four heads. They're essential for knee extension and leg power.",
+        "ar": "الكوادز هي مجموعة العضلات الكبيرة في مقدمة فخذك، وتتكون من أربع رؤوس. هم أساسيين لفرد الركبة وقوة الرجل."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Rectus Femoris - runs down the middle, crosses hip joint",
+            "Vastus Lateralis - outer thigh",
+            "Vastus Medialis - inner thigh (the 'teardrop')",
+            "Vastus Intermedius - underneath rectus femoris"
+          ],
+          "function": "Knee extension, hip flexion (rectus femoris)"
+        },
+        "ar": {
+          "heads": [
+            "المستقيم الفخذي - يجري في النص، يعبر مفصل الورك",
+            "المتسع الوحشي - الفخذ الخارجي",
+            "المتسع الإنسي - الفخذ الداخلي (الدمعة)",
+            "المتسع الوسيط - تحت المستقيم الفخذي"
+          ],
+          "function": "فرد الركبة، ثني الورك (المستقيم الفخذي)"
+        }
+      },
+      "bestExercises": [
+        {"id": "legs-squat", "emphasis": "overall"},
+        {"id": "legs-front-squat", "emphasis": "overall"},
+        {"id": "legs-leg-press", "emphasis": "overall"},
+        {"id": "legs-lunges", "emphasis": "overall"},
+        {"id": "legs-leg-extension", "emphasis": "isolation"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Squats are king for quad development",
+          "Front squats and leg press target quads more directly",
+          "Proper depth is important - at least parallel",
+          "Leg extensions are good for isolation after compounds",
+          "Higher rep ranges (8-15) work well for quads"
+        ],
+        "ar": [
+          "السكوات ملك لتطوير الكوادز",
+          "الفرونت سكوات وضغط الأرجل يستهدفوا الكوادز أكتر مباشرة",
+          "العمق الصحيح مهم - على الأقل موازي",
+          "فرد الأرجل كويس للعزل بعد التمارين المركبة",
+          "نطاقات تكرار أعلى (8-15) بتشتغل كويس للكوادز"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Patellar tendinitis (jumper's knee) - from repetitive stress",
+          "Quad strain/tear - from explosive movements"
+        ],
+        "ar": [
+          "التهاب وتر الرضفة (ركبة القافز) - من الضغط المتكرر",
+          "إجهاد/تمزق الكوادز - من الحركات المتفجرة"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Always warm up legs before training",
+          "Don't bounce at the bottom of squats",
+          "Strengthen the VMO (inner quad) for knee health",
+          "Don't let knees cave inward"
+        ],
+        "ar": [
+          "سخّن رجليك دايماً قبل التدريب",
+          "ما تعملش ارتداد في أسفل السكوات",
+          "قوّي الـ VMO (الفخذ الداخلي) لصحة الركبة",
+          "ما تخليش ركبتيك تدخل للداخل"
+        ]
+      }
+    },
+    {
+      "id": "hamstrings",
+      "name": {
+        "en": "Hamstrings",
+        "ar": "الفخذ الخلفي (الهامسترينج)"
+      },
+      "latinName": "Biceps Femoris, Semitendinosus, Semimembranosus",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/hamstring-muscles.jpg",
+      "description": {
+        "en": "The hamstrings are the muscles on the back of your thigh. They're crucial for hip extension and knee flexion - important for running, jumping, and lifting.",
+        "ar": "الهامسترينج هي العضلات في خلفية فخذك. هم أساسيين لامتداد الورك وثني الركبة - مهمين للجري والقفز والرفع."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Biceps Femoris - on the outer back of the thigh",
+            "Semitendinosus - on the inner back",
+            "Semimembranosus - underneath semitendinosus"
+          ],
+          "function": "Knee flexion (bending the knee), hip extension (moving leg backward)"
+        },
+        "ar": {
+          "heads": [
+            "العضلة ذات الرأسين الفخذية - على الخلفية الخارجية للفخذ",
+            "نصف الوترية - على الخلفية الداخلية",
+            "نصف الغشائية - تحت نصف الوترية"
+          ],
+          "function": "ثني الركبة، امتداد الورك (تحريك الرجل للخلف)"
+        }
+      },
+      "bestExercises": [
+        {"id": "legs-romanian-deadlift", "emphasis": "hip extension"},
+        {"id": "back-deadlift", "emphasis": "overall"},
+        {"id": "legs-leg-curl", "emphasis": "knee flexion"},
+        {"id": "legs-hip-thrust", "emphasis": "hip extension"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Train both knee flexion and hip extension",
+          "RDLs stretch the hamstrings at long length",
+          "Leg curls hit hamstrings in contracted position",
+          "Don't neglect hamstrings - they prevent knee injuries"
+        ],
+        "ar": [
+          "درّب ثني الركبة وامتداد الورك",
+          "الـ RDL يمط الهامسترينج في طول أكبر",
+          "ثني الأرجل يضرب الهامسترينج في وضع الانقباض",
+          "ما تهملش الهامسترينج - بيمنعوا إصابات الركبة"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Hamstring strain/pull - very common in athletes",
+          "Hamstring tear - from explosive movements without warm-up"
+        ],
+        "ar": [
+          "إجهاد/شد الهامسترينج - شائع جداً في الرياضيين",
+          "تمزق الهامسترينج - من الحركات المتفجرة من غير تسخين"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Always warm up hamstrings before training",
+          "Nordic curls build eccentric strength (injury prevention)",
+          "Stretch hamstrings regularly",
+          "Don't round your back during RDLs"
+        ],
+        "ar": [
+          "سخّن الهامسترينج دايماً قبل التدريب",
+          "النورديك كيرل يبني قوة الإكسنتريك (منع الإصابة)",
+          "مدد الهامسترينج بانتظام",
+          "ما تقوسش ظهرك أثناء الـ RDL"
+        ]
+      }
+    },
+    {
+      "id": "glutes",
+      "name": {
+        "en": "Glutes",
+        "ar": "المؤخرة (الألوية)"
+      },
+      "latinName": "Gluteus Maximus, Medius, Minimus",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/glute-muscles.jpg",
+      "description": {
+        "en": "The glutes are the largest muscle group in your body. They're essential for hip extension, rotation, and overall lower body power.",
+        "ar": "المؤخرة أكبر مجموعة عضلية في جسمك. هم أساسيين لامتداد الورك والدوران وقوة الجزء السفلي الكلية."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Gluteus Maximus - the main, largest glute muscle",
+            "Gluteus Medius - on the outer hip, stabilizes pelvis",
+            "Gluteus Minimus - deepest glute, assists medius"
+          ],
+          "function": "Hip extension, hip abduction, external rotation of the thigh"
+        },
+        "ar": {
+          "heads": [
+            "الألوية الكبرى - العضلة الرئيسية الأكبر",
+            "الألوية الوسطى - على الورك الخارجي، تثبت الحوض",
+            "الألوية الصغرى - أعمق عضلة، تساعد الوسطى"
+          ],
+          "function": "امتداد الورك، إبعاد الورك، الدوران الخارجي للفخذ"
+        }
+      },
+      "bestExercises": [
+        {"id": "legs-hip-thrust", "emphasis": "maximus"},
+        {"id": "legs-squat", "emphasis": "overall"},
+        {"id": "legs-romanian-deadlift", "emphasis": "maximus"},
+        {"id": "legs-lunges", "emphasis": "overall"},
+        {"id": "back-deadlift", "emphasis": "overall"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Hip thrusts target glutes most directly",
+          "Squeeze glutes at the top of every hip extension movement",
+          "Deep squats hit glutes more than shallow squats",
+          "Don't neglect the medius - do hip abduction work"
+        ],
+        "ar": [
+          "الهيب ثراست يستهدف المؤخرة أكتر مباشرة",
+          "اشد المؤخرة في أعلى كل حركة امتداد ورك",
+          "السكوات العميق يضرب المؤخرة أكتر من السطحي",
+          "ما تهملش الوسطى - اعمل شغل إبعاد الورك"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Gluteal strain - from heavy lifting without proper activation",
+          "Piriformis syndrome - can cause sciatica-like pain"
+        ],
+        "ar": [
+          "إجهاد المؤخرة - من الرفع التقيل من غير تفعيل صحيح",
+          "متلازمة الكمثرية - ممكن تسبب ألم زي عرق النسا"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Activate glutes before heavy leg training",
+          "Include glute bridges in your warm-up",
+          "Don't sit for extended periods without stretching",
+          "Foam roll the glutes and piriformis regularly"
+        ],
+        "ar": [
+          "فعّل المؤخرة قبل تدريب الأرجل التقيل",
+          "اضمّن جسر المؤخرة في إحمائك",
+          "ما تقعدش فترات طويلة من غير تمديد",
+          "فوم رول المؤخرة والكمثرية بانتظام"
+        ]
+      }
+    },
+    {
+      "id": "calves",
+      "name": {
+        "en": "Calves",
+        "ar": "السمانة"
+      },
+      "latinName": "Gastrocnemius & Soleus",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/calf-muscles.jpg",
+      "description": {
+        "en": "The calves are the muscles at the back of your lower leg. They're responsible for ankle plantarflexion (pointing toes down) and are important for walking, running, and jumping.",
+        "ar": "السمانة هي العضلات في خلفية أسفل رجلك. هم مسؤولين عن ثني الكاحل (توجيه الصوابع لتحت) ومهمين للمشي والجري والقفز."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Gastrocnemius - the larger, visible calf muscle with two heads",
+            "Soleus - lies underneath, important for endurance"
+          ],
+          "function": "Plantarflexion of the ankle (pointing toes down), knee flexion (gastrocnemius)"
+        },
+        "ar": {
+          "heads": [
+            "الجاستروكنيميوس - عضلة السمانة الأكبر الظاهرة برأسين",
+            "السوليوس - تحتها، مهم للتحمل"
+          ],
+          "function": "ثني الكاحل (توجيه الصوابع لتحت)، ثني الركبة (الجاستروكنيميوس)"
+        }
+      },
+      "bestExercises": [
+        {"id": "legs-calf-raise", "emphasis": "both"},
+        {"id": "cardio-jump-rope", "emphasis": "both"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Straight leg calf raises target gastrocnemius",
+          "Bent knee calf raises target soleus",
+          "Full range of motion is crucial - stretch at bottom, squeeze at top",
+          "Calves are stubborn - train them frequently (3-4x/week)"
+        ],
+        "ar": [
+          "رفع السمانة برجل مفرودة يستهدف الجاستروكنيميوس",
+          "رفع السمانة بركبة منحنية يستهدف السوليوس",
+          "المدى الكامل للحركة حاسم - استطالة في الأسفل، شد في الأعلى",
+          "السمانة عنيدة - درّبها بكترة (3-4 مرات/أسبوع)"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Calf strain/pull - from explosive movements",
+          "Achilles tendinitis - from overuse"
+        ],
+        "ar": [
+          "إجهاد/شد السمانة - من الحركات المتفجرة",
+          "التهاب وتر أخيل - من الاستخدام الزيادة"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Warm up calves before running or jumping",
+          "Stretch calves regularly",
+          "Don't bounce at the bottom of calf raises",
+          "Progress volume gradually"
+        ],
+        "ar": [
+          "سخّن السمانة قبل الجري أو القفز",
+          "مدد السمانة بانتظام",
+          "ما تعملش ارتداد في أسفل رفع السمانة",
+          "زوّد الحجم تدريجياً"
+        ]
+      }
+    },
+    {
+      "id": "core",
+      "name": {
+        "en": "Core (Abdominals)",
+        "ar": "الجذع (البطن)"
+      },
+      "latinName": "Rectus Abdominis, Obliques, Transverse Abdominis",
+      "imageUrl": "https://www.muscleandstrength.com/sites/default/files/abs-muscles.jpg",
+      "description": {
+        "en": "The core is the center of your body, including abs, obliques, and deep stabilizers. A strong core is essential for all movements and injury prevention.",
+        "ar": "الجذع هو مركز جسمك، يشمل البطن والأوبليك والمثبتات العميقة. جذع قوي أساسي لكل الحركات ومنع الإصابة."
+      },
+      "anatomy": {
+        "en": {
+          "heads": [
+            "Rectus Abdominis - the 'six pack', runs vertically",
+            "External Obliques - on the sides, rotate torso",
+            "Internal Obliques - beneath external, assist rotation",
+            "Transverse Abdominis - deepest layer, stabilizes spine"
+          ],
+          "function": "Trunk flexion, rotation, lateral flexion, spinal stabilization"
+        },
+        "ar": {
+          "heads": [
+            "عضلة البطن المستقيمة - 'السكس باك'، تجري عمودياً",
+            "الأوبليك الخارجية - على الجنبين، تدور الجذع",
+            "الأوبليك الداخلية - تحت الخارجية، تساعد الدوران",
+            "عضلة البطن المستعرضة - أعمق طبقة، تثبت العمود الفقري"
+          ],
+          "function": "ثني الجذع، الدوران، الثني الجانبي، تثبيت العمود الفقري"
+        }
+      },
+      "bestExercises": [
+        {"id": "core-plank", "emphasis": "overall stability"},
+        {"id": "core-crunches", "emphasis": "rectus abdominis"},
+        {"id": "core-hanging-leg-raise", "emphasis": "lower abs"},
+        {"id": "core-russian-twist", "emphasis": "obliques"},
+        {"id": "core-ab-wheel", "emphasis": "overall"}
+      ],
+      "trainingTips": {
+        "en": [
+          "Visible abs come from low body fat, not endless crunches",
+          "Train all core functions: flexion, rotation, anti-rotation",
+          "Planks and carries build functional core strength",
+          "Don't neglect anti-extension and anti-rotation work"
+        ],
+        "ar": [
+          "البطن الظاهر بييجي من دهون جسم منخفضة، مش كرانش لا نهاية",
+          "درّب كل وظائف الجذع: الثني، الدوران، مقاومة الدوران",
+          "البلانك والكاريز يبنوا قوة جذع وظيفية",
+          "ما تهملش شغل مقاومة الامتداد ومقاومة الدوران"
+        ]
+      },
+      "commonInjuries": {
+        "en": [
+          "Lower back strain - from poor form during ab exercises",
+          "Abdominal strain - from excessive twisting movements"
+        ],
+        "ar": [
+          "إجهاد أسفل الظهر - من الشكل الغلط أثناء تمارين البطن",
+          "إجهاد البطن - من حركات الدوران الزيادة"
+        ]
+      },
+      "injuryPrevention": {
+        "en": [
+          "Engage core before any heavy lifting",
+          "Don't pull on your neck during crunches",
+          "Progress planks before doing advanced exercises",
+          "Balance ab work with lower back exercises"
+        ],
+        "ar": [
+          "شغّل بطنك قبل أي رفع تقيل",
+          "ما تسحبش رقبتك أثناء الكرانش",
+          "تدرج في البلانك قبل التمارين المتقدمة",
+          "وازن شغل البطن مع تمارين أسفل الظهر"
+        ]
+      }
+    }
+  ],
+  "additionalMuscles": [
+    {
+      "id": "forearms",
+      "name": { "en": "Forearms", "ar": "الساعد" },
+      "function": { "en": "Wrist flexion/extension, grip strength", "ar": "ثني/فرد المعصم، قوة القبضة" },
+      "trainedBy": { "en": "Curls, rows, deadlifts, farmer's carries", "ar": "الكيرل، التجديف، الديدليفت، حمل المزارع" }
+    },
+    {
+      "id": "hip-flexors",
+      "name": { "en": "Hip Flexors", "ar": "ثنيات الورك" },
+      "function": { "en": "Lift thigh toward torso", "ar": "رفع الفخذ ناحية الجذع" },
+      "trainedBy": { "en": "Leg raises, running, lunges", "ar": "رفع الأرجل، الجري، اللانج" }
+    },
+    {
+      "id": "lower-back",
+      "name": { "en": "Lower Back (Erector Spinae)", "ar": "أسفل الظهر" },
+      "function": { "en": "Spinal extension, posture", "ar": "امتداد العمود الفقري، الوقفة" },
+      "trainedBy": { "en": "Deadlifts, back extensions, good mornings", "ar": "الديدليفت، تمديد الظهر، جود مورنينج" }
+    },
+    {
+      "id": "rotator-cuff",
+      "name": { "en": "Rotator Cuff", "ar": "الروتاتور كف" },
+      "function": { "en": "Shoulder stabilization, rotation", "ar": "تثبيت الكتف، الدوران" },
+      "trainedBy": { "en": "External rotation, face pulls, band work", "ar": "الدوران الخارجي، فيس بول، شغل الباند" }
+    }
+  ]
+}
