@@ -745,6 +745,598 @@
         "primaryAr": ["عضلة البطن المستقيمة", "عضلة البطن المستعرضة"],
         "secondaryAr": ["الأوبليك", "أسفل الظهر", "الكتف", "المؤخرة"]
       }
+    },
+    {
+      "id": "chest-incline-dumbbell",
+      "imageUrl": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400",
+      "instructions": {
+        "en": [
+          "Set bench to 30-45 degree incline (30 targets upper chest more)",
+          "Sit with dumbbells resting on thighs",
+          "Kick dumbbells up to shoulder level as you lie back",
+          "Position dumbbells at chest level, palms facing forward",
+          "Retract shoulder blades and plant feet firmly",
+          "Press dumbbells up and slightly together",
+          "Lower slowly until dumbbells reach chest level",
+          "Keep wrists straight throughout the movement"
+        ],
+        "ar": [
+          "اضبط البنش على زاوية 30-45 درجة (30 يستهدف الصدر العلوي أكتر)",
+          "اقعد والدمبل على فخذيك",
+          "ارفع الدمبل لمستوى الكتف وأنت بتستلقي",
+          "حط الدمبل عند مستوى الصدر، وراحة يدك للأمام",
+          "اسحب كتفيك للخلف وثبّت رجليك",
+          "ادفع الدمبل لفوق وقربهم شوية",
+          "أنزل ببطء لغاية ما الدمبل يوصل لمستوى الصدر",
+          "خلّي معصميك مستقيمين طول الحركة"
+        ]
+      },
+      "tips": {
+        "en": [
+          "Use 70-80% of your flat bench weight",
+          "Focus on squeezing upper chest at top",
+          "Don't let dumbbells drift too far back",
+          "Keep slight arch in lower back"
+        ],
+        "ar": [
+          "استخدم 70-80% من وزن البنش المستوي",
+          "ركز على شد الصدر العلوي في الأعلى",
+          "ما تخليش الدمبل يروح للخلف أوي",
+          "خلّي قوس خفيف في أسفل ظهرك"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          "Using too much weight and cutting range of motion",
+          "Setting incline too high (becomes shoulder press)",
+          "Flaring elbows too wide",
+          "Not controlling the negative",
+          "Wrists bending backwards"
+        ],
+        "ar": [
+          "استخدام وزن كتير وتقليل المدى",
+          "الميل عالي أوي (يتحول لضغط كتف)",
+          "فتح المرفقين عريض أوي",
+          "عدم التحكم في النزول",
+          "المعصمين بتنحني للخلف"
+        ]
+      },
+      "faq": {
+        "en": [
+          {"q": "What angle is best?", "a": "30 degrees targets upper chest most. 45 degrees recruits more shoulders."},
+          {"q": "Dumbbells or barbell?", "a": "Dumbbells allow greater range of motion and even development. Barbell allows more weight."},
+          {"q": "Should dumbbells touch at top?", "a": "They can come close but don't need to touch. Focus on squeezing the chest."}
+        ],
+        "ar": [
+          {"q": "أحسن زاوية إيه؟", "a": "30 درجة يستهدف الصدر العلوي أكتر. 45 درجة يشغّل الكتف أكتر."},
+          {"q": "دمبل ولا بار؟", "a": "الدمبل يسمح بمدى حركة أكبر وتطور متساوي. البار يسمح بوزن أكتر."},
+          {"q": "الدمبل يلمسوا في الأعلى؟", "a": "ممكن يقربوا بس مش لازم يلمسوا. ركز على شد الصدر."}
+        ]
+      },
+      "targetMuscles": {
+        "primary": ["Upper Chest (Clavicular Head)"],
+        "secondary": ["Front Deltoids", "Triceps"],
+        "primaryAr": ["الصدر العلوي"],
+        "secondaryAr": ["الكتف الأمامي", "التراي"]
+      }
+    },
+    {
+      "id": "back-dumbbell-row",
+      "imageUrl": "https://images.unsplash.com/photo-1603287681836-b174ce5074c2?w=400",
+      "instructions": {
+        "en": [
+          "Place left knee and hand on a flat bench",
+          "Keep right foot on the floor for stability",
+          "Hold dumbbell in right hand, arm hanging straight",
+          "Keep your back flat and parallel to the floor",
+          "Pull the dumbbell up toward your hip",
+          "Lead with your elbow, keeping it close to body",
+          "Squeeze your lat at the top for 1 second",
+          "Lower slowly and repeat, then switch sides"
+        ],
+        "ar": [
+          "حط ركبتك الشمال وإيدك على البنش",
+          "خلّي رجلك اليمين على الأرض للثبات",
+          "امسك الدمبل في إيدك اليمين، والذراع متدلي",
+          "خلّي ظهرك مسطح وموازي للأرض",
+          "اسحب الدمبل لفوق ناحية وركك",
+          "قود بمرفقك وخليه قريب من جسمك",
+          "اشد اللاتس في الأعلى لثانية",
+          "أنزل ببطء وكرر، وبعدين غيّر الجانب"
+        ]
+      },
+      "tips": {
+        "en": [
+          "Think about pulling your elbow to the ceiling",
+          "Keep your core tight to prevent rotation",
+          "Don't shrug your shoulder at the top",
+          "Full stretch at bottom, full squeeze at top"
+        ],
+        "ar": [
+          "فكر إنك بتسحب مرفقك للسقف",
+          "خلّي بطنك مشدودة لمنع الدوران",
+          "ما ترفعش كتفك في الأعلى",
+          "استطالة كاملة في الأسفل، شد كامل في الأعلى"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          "Rotating the torso to lift heavier",
+          "Pulling to the chest instead of hip",
+          "Rounding the lower back",
+          "Using momentum instead of controlled pull",
+          "Not getting full range of motion"
+        ],
+        "ar": [
+          "دوران الجذع لرفع أتقل",
+          "السحب للصدر بدل الورك",
+          "تقويس أسفل الظهر",
+          "استخدام الزخم بدل السحب المتحكم",
+          "عدم الحصول على المدى الكامل"
+        ]
+      },
+      "faq": {
+        "en": [
+          {"q": "How high should I row?", "a": "Pull until the dumbbell is at your hip level and your elbow is slightly past your torso."},
+          {"q": "Supported or unsupported?", "a": "Supported (knee on bench) is better for beginners. Unsupported builds more core stability."},
+          {"q": "Should I feel it in my bicep?", "a": "Some bicep involvement is normal, but focus on initiating with the lat and elbow."}
+        ],
+        "ar": [
+          {"q": "أسحب لغاية فين؟", "a": "اسحب لغاية ما الدمبل يوصل لمستوى وركك ومرفقك يعدي جسمك شوية."},
+          {"q": "بسند ولا من غير سند؟", "a": "بسند (ركبة على البنش) أحسن للمبتدئين. من غير سند يبني ثبات الجذع أكتر."},
+          {"q": "لازم أحس في الباي؟", "a": "شوية شغل في الباي طبيعي، بس ركز إنك تبدأ باللاتس والمرفق."}
+        ]
+      },
+      "targetMuscles": {
+        "primary": ["Latissimus Dorsi", "Rhomboids"],
+        "secondary": ["Biceps", "Rear Deltoids", "Traps"],
+        "primaryAr": ["اللاتس", "العضلة المعينية"],
+        "secondaryAr": ["الباي", "الكتف الخلفي", "الترابيس"]
+      }
+    },
+    {
+      "id": "legs-romanian-deadlift",
+      "imageUrl": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=400",
+      "instructions": {
+        "en": [
+          "Stand with feet hip-width apart, barbell against thighs",
+          "Keep a slight bend in your knees throughout",
+          "Push your hips back while lowering the bar",
+          "Keep the bar close to your legs (touching if possible)",
+          "Lower until you feel a strong hamstring stretch",
+          "Keep your back flat - never round it",
+          "Drive through your heels and squeeze glutes to stand",
+          "Fully extend hips at the top"
+        ],
+        "ar": [
+          "قف ورجليك بعرض الورك، والبار ملامس فخذيك",
+          "خلّي انحناء خفيف في ركبتيك طول الوقت",
+          "ادفع وركيك للخلف وأنت بتنزل البار",
+          "خلّي البار قريب من رجليك (لامس لو ممكن)",
+          "انزل لغاية ما تحس باستطالة قوية في الفخذ الخلفي",
+          "خلّي ظهرك مسطح - ما تقوسوش أبداً",
+          "ادفع من كعبيك واشد المؤخرة للوقوف",
+          "افرد وركيك كامل في الأعلى"
+        ]
+      },
+      "tips": {
+        "en": [
+          "Feel the stretch in hamstrings, not lower back",
+          "Your hip position dictates depth, not flexibility",
+          "Squeeze lats to keep bar close",
+          "Push hips back, don't just bend forward"
+        ],
+        "ar": [
+          "حس الاستطالة في الفخذ الخلفي، مش أسفل الظهر",
+          "وضع وركك يحدد العمق، مش المرونة",
+          "اشد اللاتس عشان تخلي البار قريب",
+          "ادفع الورك للخلف، ما تنحنيش بس لقدام"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          "Rounding the lower back (dangerous!)",
+          "Bending knees too much (becomes a squat)",
+          "Bar drifting away from legs",
+          "Going too low (past hamstring stretch)",
+          "Not keeping tension on hamstrings"
+        ],
+        "ar": [
+          "تقويس أسفل الظهر (خطير!)",
+          "ثني الركب كتير (يتحول لسكوات)",
+          "البار بيبتعد عن الرجل",
+          "النزول عميق أوي (بعد استطالة الفخذ)",
+          "عدم الحفاظ على الشد في الفخذ الخلفي"
+        ]
+      },
+      "faq": {
+        "en": [
+          {"q": "How low should I go?", "a": "Only as low as you can while maintaining a flat back. Stop when your spine wants to round."},
+          {"q": "RDL vs conventional deadlift?", "a": "RDL targets hamstrings more and starts from standing. Conventional targets more muscles and starts from floor."},
+          {"q": "Dumbbells or barbell?", "a": "Barbell allows heavier loads. Dumbbells are good for beginners and fixing imbalances."}
+        ],
+        "ar": [
+          {"q": "أنزل أد إيه؟", "a": "بس اللي تقدر تحافظ على ظهرك مسطح. وقف لما عمودك الفقري يبدأ ينحني."},
+          {"q": "RDL ولا ديدليفت عادي؟", "a": "RDL يستهدف الفخذ الخلفي أكتر ويبدأ واقف. الديدليفت العادي يستهدف عضلات أكتر ويبدأ من الأرض."},
+          {"q": "دمبل ولا بار؟", "a": "البار يسمح بأوزان أتقل. الدمبل كويس للمبتدئين ولتصحيح عدم التوازن."}
+        ]
+      },
+      "targetMuscles": {
+        "primary": ["Hamstrings", "Glutes"],
+        "secondary": ["Lower Back", "Traps"],
+        "primaryAr": ["الفخذ الخلفي", "المؤخرة"],
+        "secondaryAr": ["أسفل الظهر", "الترابيس"]
+      }
+    },
+    {
+      "id": "legs-leg-press",
+      "imageUrl": "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?w=400",
+      "instructions": {
+        "en": [
+          "Sit in the leg press machine with back flat against pad",
+          "Place feet shoulder-width apart on the platform",
+          "Release the safety handles",
+          "Lower the platform by bending your knees",
+          "Go down until knees are at 90 degrees (or slightly deeper)",
+          "Keep your lower back pressed against the pad",
+          "Push through your heels to extend legs",
+          "Don't lock knees completely at the top"
+        ],
+        "ar": [
+          "اقعد في جهاز ضغط الأرجل وظهرك على الوسادة",
+          "حط رجليك بعرض الكتفين على المنصة",
+          "فك مقابض الأمان",
+          "أنزل المنصة بثني ركبتيك",
+          "انزل لغاية ما ركبتيك تكون 90 درجة (أو أعمق شوية)",
+          "خلّي أسفل ظهرك مضغوط على الوسادة",
+          "ادفع من كعبيك لفرد رجليك",
+          "ما تقفلش ركبتيك كامل في الأعلى"
+        ]
+      },
+      "tips": {
+        "en": [
+          "Higher foot placement = more glutes/hamstrings",
+          "Lower foot placement = more quads",
+          "Wider stance = more inner thigh",
+          "Never let your lower back lift off the pad"
+        ],
+        "ar": [
+          "وضع القدم أعلى = مؤخرة وفخذ خلفي أكتر",
+          "وضع القدم أسفل = فخذ أمامي أكتر",
+          "وقفة أوسع = الفخذ الداخلي أكتر",
+          "ما تخليش أسفل ظهرك يرتفع عن الوسادة أبداً"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          "Lower back rounding off the pad",
+          "Locking knees at the top (dangerous)",
+          "Going too heavy with half reps",
+          "Feet too high or low for goals",
+          "Bouncing at the bottom"
+        ],
+        "ar": [
+          "أسفل الظهر بيتقوس عن الوسادة",
+          "قفل الركب في الأعلى (خطير)",
+          "وزن تقيل أوي مع نص تكرارات",
+          "القدم عالية أو واطية أوي للهدف",
+          "الارتداد في الأسفل"
+        ]
+      },
+      "faq": {
+        "en": [
+          {"q": "Is leg press as good as squats?", "a": "Squats are better for overall development, but leg press is great for safely adding quad volume."},
+          {"q": "How deep should I go?", "a": "At least 90 degrees at the knee. Deeper is better if your lower back stays flat."},
+          {"q": "Why does my back round?", "a": "You're either going too deep or have tight hip flexors. Work on hip mobility."}
+        ],
+        "ar": [
+          {"q": "ضغط الأرجل كويس زي السكوات؟", "a": "السكوات أحسن للتطور الكلي، بس ضغط الأرجل ممتاز لإضافة حجم للفخذ بأمان."},
+          {"q": "أنزل أد إيه؟", "a": "على الأقل 90 درجة في الركبة. أعمق أحسن لو ظهرك السفلي فضل مسطح."},
+          {"q": "ليه ظهري بيتقوس؟", "a": "إما بتنزل عميق أوي أو عندك عضلات ورك مشدودة. اشتغل على مرونة الورك."}
+        ]
+      },
+      "targetMuscles": {
+        "primary": ["Quadriceps", "Glutes"],
+        "secondary": ["Hamstrings", "Calves"],
+        "primaryAr": ["الفخذ الأمامي", "المؤخرة"],
+        "secondaryAr": ["الفخذ الخلفي", "السمانة"]
+      }
+    },
+    {
+      "id": "back-pullup",
+      "imageUrl": "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=400",
+      "instructions": {
+        "en": [
+          "Grab the bar with hands slightly wider than shoulders",
+          "Hang with arms fully extended, shoulders engaged",
+          "Pull yourself up by driving elbows down and back",
+          "Lead with your chest, not your chin",
+          "Pull until your chin clears the bar",
+          "Squeeze your lats at the top",
+          "Lower yourself slowly with full control",
+          "Fully extend arms at the bottom before next rep"
+        ],
+        "ar": [
+          "امسك البار بإيديك أعرض شوية من كتفيك",
+          "اتعلق وذراعيك مفرودين كامل، وكتفيك مشغولين",
+          "اسحب نفسك لفوق بدفع مرفقيك لتحت وللخلف",
+          "قود بصدرك، مش ذقنك",
+          "اسحب لغاية ما ذقنك تعدي البار",
+          "اشد اللاتس في الأعلى",
+          "أنزل نفسك ببطء وتحكم كامل",
+          "افرد ذراعيك كامل في الأسفل قبل التكرار الجاي"
+        ]
+      },
+      "tips": {
+        "en": [
+          "Engage your core to prevent swinging",
+          "Initiate with scapular depression (pull shoulders down)",
+          "Think about pulling your elbows to your hips",
+          "Use bands for assistance if needed"
+        ],
+        "ar": [
+          "شغّل بطنك لمنع التأرجح",
+          "ابدأ بدفع الكتف لتحت",
+          "فكر إنك بتسحب مرفقيك لوركك",
+          "استخدم باندات للمساعدة لو محتاج"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          "Kipping or swinging for momentum",
+          "Not going to full extension at bottom",
+          "Only going halfway up",
+          "Leading with chin (straining neck)",
+          "Grip too wide (limits range of motion)"
+        ],
+        "ar": [
+          "الكيبينج أو التأرجح للزخم",
+          "عدم الفرد الكامل في الأسفل",
+          "الصعود لنص الطريق بس",
+          "القيادة بالذقن (إجهاد الرقبة)",
+          "القبضة عريضة أوي (تحد المدى)"
+        ]
+      },
+      "faq": {
+        "en": [
+          {"q": "Can't do a pull-up - what now?", "a": "Use resistance bands, do negatives (jumping up and lowering slowly), or use the assisted pull-up machine."},
+          {"q": "Chin-up or pull-up?", "a": "Pull-ups (overhand) work lats more. Chin-ups (underhand) involve biceps more. Both are great."},
+          {"q": "Wide or narrow grip?", "a": "Medium grip (just outside shoulders) is most effective for most people."}
+        ],
+        "ar": [
+          {"q": "مش قادر أعمل عقلة - أعمل إيه؟", "a": "استخدم باندات مقاومة، اعمل نيجاتيف (اقفز لفوق وانزل ببطء)، أو استخدم جهاز العقلة المساعد."},
+          {"q": "تشين أب ولا بول أب؟", "a": "البول أب (قبضة من فوق) يشغل اللاتس أكتر. التشين أب (قبضة من تحت) يشغل الباي أكتر. الاتنين ممتازين."},
+          {"q": "قبضة عريضة ولا ضيقة؟", "a": "قبضة متوسطة (برة الكتف شوية) أكتر فعالية لمعظم الناس."}
+        ]
+      },
+      "targetMuscles": {
+        "primary": ["Latissimus Dorsi", "Biceps"],
+        "secondary": ["Rear Deltoids", "Rhomboids", "Core"],
+        "primaryAr": ["اللاتس", "الباي"],
+        "secondaryAr": ["الكتف الخلفي", "العضلة المعينية", "الجذع"]
+      }
+    },
+    {
+      "id": "shoulders-overhead-press",
+      "imageUrl": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=400",
+      "instructions": {
+        "en": [
+          "Stand with feet shoulder-width apart",
+          "Hold barbell at shoulder level with overhand grip",
+          "Grip slightly wider than shoulder width",
+          "Take a breath, brace your core tight",
+          "Press the bar straight up overhead",
+          "Push your head forward slightly as bar passes face",
+          "Lock out with bar over your ears",
+          "Lower under control back to shoulders"
+        ],
+        "ar": [
+          "قف ورجليك بعرض الكتفين",
+          "امسك البار عند مستوى الكتف بقبضة من فوق",
+          "قبضة أعرض شوية من الكتف",
+          "خد نفس واشد بطنك بقوة",
+          "ادفع البار لفوق فوق راسك مباشرة",
+          "ادفع راسك للأمام شوية لما البار يعدي وشك",
+          "اقفل وعند البار فوق ودانك",
+          "أنزل بتحكم لكتفيك تاني"
+        ]
+      },
+      "tips": {
+        "en": [
+          "Keep your core extremely tight",
+          "Don't lean back too much",
+          "Bar path should be straight up",
+          "Start with a weight you can control"
+        ],
+        "ar": [
+          "خلّي بطنك مشدودة جداً",
+          "ما تميلش للخلف أوي",
+          "مسار البار لازم يكون لفوق مباشرة",
+          "ابدأ بوزن تقدر تتحكم فيه"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          "Leaning back too much (lower back strain)",
+          "Bar going forward, not straight up",
+          "Not engaging core (wobbly)",
+          "Elbows flaring way out",
+          "Using leg drive (unless push press)"
+        ],
+        "ar": [
+          "الميل للخلف أوي (إجهاد أسفل الظهر)",
+          "البار بيروح لقدام، مش لفوق",
+          "عدم شد البطن (متذبذب)",
+          "المرفقين بتفتح للخارج أوي",
+          "استخدام دفع الرجل (إلا لو بوش برس)"
+        ]
+      },
+      "faq": {
+        "en": [
+          {"q": "Standing or seated?", "a": "Standing works more core and allows heavier weight. Seated isolates shoulders more."},
+          {"q": "Barbell or dumbbells?", "a": "Barbell allows more weight. Dumbbells require more stabilization and fix imbalances."},
+          {"q": "Is it bad for shoulders?", "a": "No, when done correctly it strengthens shoulders. Problems arise from poor form or too much weight."}
+        ],
+        "ar": [
+          {"q": "واقف ولا قاعد؟", "a": "الوقوف يشغل الجذع أكتر ويسمح بوزن أتقل. القعود يعزل الكتف أكتر."},
+          {"q": "بار ولا دمبل؟", "a": "البار يسمح بوزن أكتر. الدمبل محتاج ثبات أكتر ويصلح عدم التوازن."},
+          {"q": "ده وحش للكتف؟", "a": "لأ، لما يتعمل صح يقوي الكتف. المشاكل بتيجي من الشكل الغلط أو وزن كتير."}
+        ]
+      },
+      "targetMuscles": {
+        "primary": ["Front Deltoids", "Side Deltoids"],
+        "secondary": ["Triceps", "Upper Chest", "Traps"],
+        "primaryAr": ["الكتف الأمامي", "الكتف الجانبي"],
+        "secondaryAr": ["التراي", "الصدر العلوي", "الترابيس"]
+      }
+    },
+    {
+      "id": "legs-hip-thrust",
+      "imageUrl": "https://images.unsplash.com/photo-1434608519344-49d77a699e1d?w=400",
+      "instructions": {
+        "en": [
+          "Sit on the floor with upper back against a bench",
+          "Roll the barbell over your legs to your hip crease",
+          "Use a pad for comfort on your hips",
+          "Plant feet flat, about hip-width apart",
+          "Drive through heels and lift hips toward ceiling",
+          "Squeeze glutes hard at the top",
+          "Hold for 1-2 seconds at peak contraction",
+          "Lower hips back down with control"
+        ],
+        "ar": [
+          "اقعد على الأرض وأعلى ظهرك على البنش",
+          "دحرج البار على رجليك لثنية وركك",
+          "استخدم وسادة للراحة على وركك",
+          "ثبّت قدميك، بعرض الورك تقريباً",
+          "ادفع من كعبيك وارفع وركك للسقف",
+          "اشد المؤخرة بقوة في الأعلى",
+          "استمر 1-2 ثانية في أقصى انقباض",
+          "أنزل وركك للأسفل بتحكم"
+        ]
+      },
+      "tips": {
+        "en": [
+          "Chin tucked throughout - look at where wall meets ceiling",
+          "Feet position affects muscle emphasis",
+          "Push through entire foot, not just heels",
+          "Feel the burn in glutes, not lower back"
+        ],
+        "ar": [
+          "ذقنك مثبت طول الوقت - بص حيث الحيطة تقابل السقف",
+          "وضع القدم يأثر على التركيز العضلي",
+          "ادفع من كل القدم، مش الكعب بس",
+          "حس بالحرقان في المؤخرة، مش أسفل الظهر"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          "Hyperextending lower back at top",
+          "Not squeezing glutes fully",
+          "Feet too close or far from butt",
+          "Looking up instead of forward",
+          "Using momentum instead of control"
+        ],
+        "ar": [
+          "تقويس أسفل الظهر زيادة في الأعلى",
+          "عدم شد المؤخرة كامل",
+          "القدمين قريبين أو بعيدين عن المؤخرة",
+          "النظر لفوق بدل الأمام",
+          "استخدام الزخم بدل التحكم"
+        ]
+      },
+      "faq": {
+        "en": [
+          {"q": "Where should I feel this?", "a": "Primarily in your glutes. If you feel it in your lower back, you're hyperextending."},
+          {"q": "How high should I go?", "a": "Until your body forms a straight line from knees to shoulders. Don't overarch."},
+          {"q": "Better than squats for glutes?", "a": "Different, not better. Hip thrusts target glutes more directly; squats work more muscles overall."}
+        ],
+        "ar": [
+          {"q": "المفروض أحس فين؟", "a": "في المؤخرة أساساً. لو حاسس في أسفل ظهرك، أنت بتقوّس زيادة."},
+          {"q": "أرفع أد إيه؟", "a": "لغاية ما جسمك يعمل خط مستقيم من ركبتيك لكتفيك. ما تقوّسش زيادة."},
+          {"q": "أحسن من السكوات للمؤخرة؟", "a": "مختلف، مش أحسن. الهيب ثراست يستهدف المؤخرة أكتر مباشرة؛ السكوات يشغل عضلات أكتر ككل."}
+        ]
+      },
+      "targetMuscles": {
+        "primary": ["Glutes (Gluteus Maximus)"],
+        "secondary": ["Hamstrings", "Core"],
+        "primaryAr": ["المؤخرة (الألوية الكبرى)"],
+        "secondaryAr": ["الفخذ الخلفي", "الجذع"]
+      }
+    },
+    {
+      "id": "biceps-hammer-curl",
+      "imageUrl": "https://images.unsplash.com/photo-1581009146145-b5ef050c149a?w=400",
+      "instructions": {
+        "en": [
+          "Stand with dumbbells at your sides",
+          "Palms facing your body (neutral grip)",
+          "Keep elbows fixed at your sides",
+          "Curl the dumbbells up toward shoulders",
+          "Keep wrists straight throughout",
+          "Squeeze at the top for 1 second",
+          "Lower slowly with full control",
+          "Don't let elbows drift forward"
+        ],
+        "ar": [
+          "قف والدمبل جنبك",
+          "راحة يدك مواجهة جسمك (قبضة محايدة)",
+          "خلّي مرفقيك ثابتين جنبك",
+          "اثنِ الدمبل لفوق ناحية كتفيك",
+          "خلّي معصميك مستقيمين طول الوقت",
+          "اشد في الأعلى لثانية",
+          "أنزل ببطء وتحكم كامل",
+          "ما تخليش مرفقيك تتحرك لقدام"
+        ]
+      },
+      "tips": {
+        "en": [
+          "Great for building forearm thickness",
+          "Alternate arms or do both together",
+          "Can also be done on a preacher bench",
+          "Focus on the brachialis squeeze"
+        ],
+        "ar": [
+          "ممتاز لبناء سُمك الساعد",
+          "بدّل الذراعين أو اعملهم مع بعض",
+          "ممكن يتعمل على البريتشر بنش",
+          "ركز على شد العضلة العضدية"
+        ]
+      },
+      "commonMistakes": {
+        "en": [
+          "Swinging body for momentum",
+          "Rotating wrists during the curl",
+          "Elbows moving forward",
+          "Going too fast",
+          "Using too heavy weight"
+        ],
+        "ar": [
+          "التأرجح بالجسم للزخم",
+          "دوران المعصمين أثناء الثني",
+          "المرفقين بتتحرك لقدام",
+          "السرعة الزيادة",
+          "استخدام وزن تقيل أوي"
+        ]
+      },
+      "faq": {
+        "en": [
+          {"q": "Hammer curl vs regular curl?", "a": "Hammer curls work the brachialis and forearms more. Regular curls target the bicep peak better."},
+          {"q": "One arm or both?", "a": "Both work. Alternating can help you focus on form for each arm."},
+          {"q": "Should I supinate at the top?", "a": "No, that changes it to a regular curl. Keep the neutral grip throughout."}
+        ],
+        "ar": [
+          {"q": "هامر كيرل ولا كيرل عادي؟", "a": "الهامر يشغل العضلة العضدية والساعد أكتر. الكيرل العادي يستهدف قمة الباي أحسن."},
+          {"q": "ذراع واحد ولا الاتنين؟", "a": "الاتنين كويسين. التبديل ممكن يساعدك تركز على الشكل لكل ذراع."},
+          {"q": "أدور في الأعلى؟", "a": "لأ، ده يحوله لكيرل عادي. خلّي القبضة المحايدة طول الوقت."}
+        ]
+      },
+      "targetMuscles": {
+        "primary": ["Brachialis", "Biceps Brachii"],
+        "secondary": ["Brachioradialis (Forearm)"],
+        "primaryAr": ["العضلة العضدية", "الباي"],
+        "secondaryAr": ["العضلة العضدية الكعبرية (الساعد)"]
+      }
     }
   ],
   "imageSources": {
