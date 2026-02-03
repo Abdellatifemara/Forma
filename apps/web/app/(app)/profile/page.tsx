@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
   Bell,
@@ -22,6 +23,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Switch } from '@/components/ui/switch';
+import { removeAuthCookie } from '@/lib/api';
 
 const userStats = [
   { label: 'Workouts', value: '47' },
@@ -63,6 +65,13 @@ const achievements = [
 ];
 
 export default function ProfilePage() {
+  const router = useRouter();
+
+  const handleLogout = () => {
+    removeAuthCookie();
+    router.push('/login');
+  };
+
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       {/* Profile Header */}
@@ -168,7 +177,10 @@ export default function ProfilePage() {
       {/* Logout */}
       <Card>
         <CardContent className="p-0">
-          <button className="flex w-full items-center gap-3 px-6 py-3 text-destructive transition-colors hover:bg-destructive/10">
+          <button
+            onClick={handleLogout}
+            className="flex w-full items-center gap-3 px-6 py-3 text-destructive transition-colors hover:bg-destructive/10"
+          >
             <LogOut className="h-5 w-5" />
             <span>Log Out</span>
           </button>
