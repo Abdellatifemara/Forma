@@ -1,0 +1,418 @@
+{
+  "introduction": {
+    "title": {
+      "en": "Understanding Body Types",
+      "ar": "فهم أنواع الأجسام"
+    },
+    "description": {
+      "en": "Body types (somatotypes) are general categories that describe your natural build. While not scientifically precise, they can help guide your training and nutrition approach.",
+      "ar": "أنواع الأجسام (السوماتوتايب) هي فئات عامة بتوصف بنيتك الطبيعية. رغم إنها مش دقيقة علمياً، ممكن تساعد في توجيه نهج تدريبك وتغذيتك."
+    },
+    "disclaimer": {
+      "en": "Most people are a mix of body types. Use this as a guide, not a strict rule. Your results depend on effort, not genetics alone.",
+      "ar": "معظم الناس خليط من أنواع الأجسام. استخدم ده كدليل، مش قاعدة صارمة. نتائجك بتعتمد على المجهود، مش الجينات لوحدها."
+    }
+  },
+  "bodyTypes": [
+    {
+      "id": "ectomorph",
+      "name": {
+        "en": "Ectomorph",
+        "ar": "الإكتومورف (النحيف)"
+      },
+      "nickname": {
+        "en": "The Hard Gainer",
+        "ar": "صعب الزيادة"
+      },
+      "characteristics": {
+        "en": [
+          "Naturally thin with narrow frame",
+          "Long limbs and small joints",
+          "Fast metabolism",
+          "Difficulty gaining weight (muscle or fat)",
+          "Low body fat percentage",
+          "Often described as 'skinny'"
+        ],
+        "ar": [
+          "نحيف طبيعياً ببنية ضيقة",
+          "أطراف طويلة ومفاصل صغيرة",
+          "أيض سريع",
+          "صعوبة في زيادة الوزن (عضلات أو دهون)",
+          "نسبة دهون جسم منخفضة",
+          "غالباً بيتوصف بـ 'نحيف'"
+        ]
+      },
+      "training": {
+        "recommendations": {
+          "en": [
+            "Focus on compound exercises (squat, deadlift, bench press, rows)",
+            "Train 3-4 days per week maximum",
+            "Keep workouts short and intense (45-60 minutes)",
+            "Limit cardio to 2 sessions per week (20 minutes max)",
+            "Use moderate rep ranges (6-10 reps)",
+            "Rest 2-3 minutes between heavy sets",
+            "Prioritize progressive overload",
+            "Get plenty of sleep (8+ hours)"
+          ],
+          "ar": [
+            "ركز على التمارين المركبة (سكوات، ديدليفت، بنش برس، تجديف)",
+            "تمرن 3-4 أيام في الأسبوع ماكس",
+            "خلّي التمرينات قصيرة ومكثفة (45-60 دقيقة)",
+            "قلل الكارديو لـ جلستين في الأسبوع (20 دقيقة ماكس)",
+            "استخدم نطاقات تكرارات معتدلة (6-10 تكرارات)",
+            "استريح 2-3 دقائق بين المجموعات التقيلة",
+            "أعط أولوية للحمل التدريجي",
+            "نام كتير (8+ ساعات)"
+          ]
+        },
+        "avoidance": {
+          "en": [
+            "Too much cardio",
+            "Very high rep training",
+            "Training too frequently",
+            "Long workouts"
+          ],
+          "ar": [
+            "كارديو كتير أوي",
+            "تدريب بتكرارات عالية جداً",
+            "التدريب بتكرار كتير",
+            "تمرينات طويلة"
+          ]
+        }
+      },
+      "nutrition": {
+        "approach": {
+          "en": "Eat in a significant calorie surplus. You need to eat more than you think.",
+          "ar": "كل بفائض سعرات كبير. محتاج تاكل أكتر مما تفتكر."
+        },
+        "recommendations": {
+          "en": [
+            "Eat 300-500+ calories above maintenance",
+            "Aim for 1.8-2.2g protein per kg bodyweight",
+            "Don't fear carbs - they're your friend",
+            "Eat 5-6 smaller meals if big meals are hard",
+            "Drink calories (milk, smoothies, mass gainers)",
+            "Add healthy fats to meals (olive oil, nuts, avocado)",
+            "Don't skip meals - eat consistently"
+          ],
+          "ar": [
+            "كل 300-500+ سعر فوق الصيانة",
+            "استهدف 1.8-2.2 جرام بروتين لكل كيلو وزن",
+            "ما تخافش من الكارب - هو صاحبك",
+            "كل 5-6 وجبات صغيرة لو الوجبات الكبيرة صعبة",
+            "اشرب سعرات (لبن، سموذي، ماس جينر)",
+            "أضف دهون صحية للوجبات (زيت زيتون، مكسرات، أفوكادو)",
+            "ما تتخطاش وجبات - كل بانتظام"
+          ]
+        },
+        "sampleMacros": {
+          "protein": "2g/kg",
+          "carbs": "4-5g/kg",
+          "fat": "1g/kg"
+        }
+      },
+      "tips": {
+        "en": [
+          "Track your calories - you're probably eating less than you think",
+          "Be patient - gaining muscle takes time for everyone",
+          "Your metabolism is a blessing for staying lean later",
+          "Consider mass gainer shakes if struggling to eat enough"
+        ],
+        "ar": [
+          "تتبع سعراتك - غالباً بتاكل أقل مما تفتكر",
+          "كن صبور - بناء العضلات بياخد وقت للكل",
+          "الأيض بتاعك نعمة للبقاء نحيف بعدين",
+          "فكر في شيكات ماس جينر لو بتعاني تاكل كفاية"
+        ]
+      }
+    },
+    {
+      "id": "mesomorph",
+      "name": {
+        "en": "Mesomorph",
+        "ar": "الميزومورف (الرياضي)"
+      },
+      "nickname": {
+        "en": "The Natural Athlete",
+        "ar": "الرياضي الطبيعي"
+      },
+      "characteristics": {
+        "en": [
+          "Naturally muscular and athletic build",
+          "Medium-sized bone structure",
+          "Broad shoulders and narrow waist",
+          "Gains muscle relatively easily",
+          "Can gain and lose weight without extreme effort",
+          "Responds well to training"
+        ],
+        "ar": [
+          "بنية عضلية ورياضية طبيعية",
+          "هيكل عظمي متوسط",
+          "كتفين عريضين وخصر ضيق",
+          "يكسب عضلات بسهولة نسبياً",
+          "يقدر يزيد ويخس من غير مجهود شديد",
+          "يستجيب كويس للتدريب"
+        ]
+      },
+      "training": {
+        "recommendations": {
+          "en": [
+            "Mix of compound and isolation exercises",
+            "Train 4-5 days per week",
+            "Moderate volume, moderate intensity",
+            "Mix rep ranges (6-15 reps)",
+            "Include cardio 2-3 times per week",
+            "Can handle more training variety",
+            "Responds well to periodization"
+          ],
+          "ar": [
+            "خليط من التمارين المركبة والعزل",
+            "تمرن 4-5 أيام في الأسبوع",
+            "حجم معتدل، شدة معتدلة",
+            "نوّع نطاقات التكرارات (6-15 تكرارات)",
+            "اضمّن كارديو 2-3 مرات في الأسبوع",
+            "يقدر يتحمل تنويع تدريب أكتر",
+            "يستجيب كويس للدورات التدريبية"
+          ]
+        },
+        "avoidance": {
+          "en": [
+            "Becoming complacent - still need to push",
+            "Neglecting weak points",
+            "Skipping conditioning work"
+          ],
+          "ar": [
+            "الرضا - لسه محتاج تدفع",
+            "إهمال نقاط الضعف",
+            "تخطي شغل الكونديشنينج"
+          ]
+        }
+      },
+      "nutrition": {
+        "approach": {
+          "en": "Balanced approach works well. Slight surplus for muscle gain, slight deficit for fat loss.",
+          "ar": "النهج المتوازن بيشتغل كويس. فائض طفيف لزيادة العضلات، عجز طفيف لخسارة الدهون."
+        },
+        "recommendations": {
+          "en": [
+            "Eat around maintenance for body recomposition",
+            "Aim for 1.8-2g protein per kg bodyweight",
+            "Moderate carbs based on activity level",
+            "Don't neglect healthy fats",
+            "Can cycle calories (higher on training days)",
+            "Focus on food quality"
+          ],
+          "ar": [
+            "كل حول الصيانة لإعادة تركيب الجسم",
+            "استهدف 1.8-2 جرام بروتين لكل كيلو وزن",
+            "كارب معتدل بناءً على مستوى النشاط",
+            "ما تهملش الدهون الصحية",
+            "ممكن تدور السعرات (أعلى في أيام التدريب)",
+            "ركز على جودة الأكل"
+          ]
+        },
+        "sampleMacros": {
+          "protein": "2g/kg",
+          "carbs": "3-4g/kg",
+          "fat": "0.8-1g/kg"
+        }
+      },
+      "tips": {
+        "en": [
+          "Don't rely only on genetics - consistent effort still matters",
+          "You have great potential - use it wisely",
+          "Pay attention to nutrition for optimal results",
+          "Challenge yourself - you can handle more"
+        ],
+        "ar": [
+          "ما تعتمدش على الجينات بس - المجهود المستمر لسه مهم",
+          "عندك إمكانية عظيمة - استخدمها بحكمة",
+          "انتبه للتغذية لنتائج مثالية",
+          "تحدى نفسك - تقدر تتحمل أكتر"
+        ]
+      }
+    },
+    {
+      "id": "endomorph",
+      "name": {
+        "en": "Endomorph",
+        "ar": "الإندومورف (الضخم)"
+      },
+      "nickname": {
+        "en": "The Power Builder",
+        "ar": "بناء القوة"
+      },
+      "characteristics": {
+        "en": [
+          "Naturally larger frame",
+          "Wider hips and waist",
+          "Gains fat easily",
+          "Gains muscle relatively easily too",
+          "Slower metabolism",
+          "Can build significant strength"
+        ],
+        "ar": [
+          "بنية أكبر طبيعياً",
+          "ورك وخصر أوسع",
+          "يكسب دهون بسهولة",
+          "يكسب عضلات بسهولة نسبياً برضو",
+          "أيض أبطأ",
+          "يقدر يبني قوة كبيرة"
+        ]
+      },
+      "training": {
+        "recommendations": {
+          "en": [
+            "Mix of compound exercises and circuits",
+            "Train 4-5 days per week",
+            "Include more cardio (3-4 sessions, 20-40 minutes)",
+            "Use higher rep ranges (10-15 reps)",
+            "Keep rest periods shorter (60-90 seconds)",
+            "Include HIIT for fat burning",
+            "Full body or circuit training works well",
+            "Stay active on rest days (walking)"
+          ],
+          "ar": [
+            "خليط من التمارين المركبة والدوائر",
+            "تمرن 4-5 أيام في الأسبوع",
+            "اضمّن كارديو أكتر (3-4 جلسات، 20-40 دقيقة)",
+            "استخدم نطاقات تكرارات أعلى (10-15 تكرارات)",
+            "خلّي فترات الراحة أقصر (60-90 ثانية)",
+            "اضمّن HIIT لحرق الدهون",
+            "التدريب الكامل أو الدائري بيشتغل كويس",
+            "ابقى نشط في أيام الراحة (مشي)"
+          ]
+        },
+        "avoidance": {
+          "en": [
+            "Very long rest periods",
+            "Skipping cardio entirely",
+            "Only doing strength training",
+            "Being sedentary outside the gym"
+          ],
+          "ar": [
+            "فترات راحة طويلة جداً",
+            "تخطي الكارديو خالص",
+            "عمل تدريب قوة بس",
+            "كونك خامل برة الجيم"
+          ]
+        }
+      },
+      "nutrition": {
+        "approach": {
+          "en": "Focus on calorie control and food quality. Carb management is key.",
+          "ar": "ركز على التحكم في السعرات وجودة الأكل. إدارة الكارب مفتاح."
+        },
+        "recommendations": {
+          "en": [
+            "Eat in a moderate calorie deficit for fat loss",
+            "Prioritize protein (2g+ per kg bodyweight)",
+            "Control carb intake - eat most around training",
+            "Increase fiber for satiety",
+            "Avoid liquid calories",
+            "Eat protein and vegetables at every meal",
+            "Track food intake carefully",
+            "Drink plenty of water"
+          ],
+          "ar": [
+            "كل بعجز سعرات معتدل لخسارة الدهون",
+            "أعط أولوية للبروتين (2+ جرام لكل كيلو وزن)",
+            "تحكم في تناول الكارب - كل معظمه حول التدريب",
+            "زوّد الألياف للشبع",
+            "تجنب السعرات السائلة",
+            "كل بروتين وخضار في كل وجبة",
+            "تتبع تناول الأكل بعناية",
+            "اشرب ماء كتير"
+          ]
+        },
+        "sampleMacros": {
+          "protein": "2.2g/kg",
+          "carbs": "2-3g/kg",
+          "fat": "0.8g/kg"
+        }
+      },
+      "tips": {
+        "en": [
+          "Your body type means you can build serious strength",
+          "Fat loss is possible - it just requires more attention to diet",
+          "Don't crash diet - sustainable deficit is key",
+          "Stay consistent with cardio",
+          "Your potential for muscle is actually high"
+        ],
+        "ar": [
+          "نوع جسمك معناه إنك تقدر تبني قوة جدية",
+          "خسارة الدهون ممكنة - بس محتاجة انتباه أكتر للدايت",
+          "ما تعملش دايت قاسي - العجز المستدام مفتاح",
+          "استمر مع الكارديو",
+          "إمكانيتك للعضلات فعلاً عالية"
+        ]
+      }
+    }
+  ],
+  "mixedTypes": {
+    "title": {
+      "en": "Mixed Body Types",
+      "ar": "أنواع الأجسام المختلطة"
+    },
+    "description": {
+      "en": "Most people are a combination of body types. You might be ecto-mesomorph (lean and muscular) or endo-mesomorph (muscular but gains fat easily). Identify your dominant traits and adjust accordingly.",
+      "ar": "معظم الناس خليط من أنواع الأجسام. ممكن تكون إكتو-ميزومورف (نحيف وعضلي) أو إندو-ميزومورف (عضلي بس يكسب دهون بسهولة). حدد صفاتك السائدة واضبط بناءً على كده."
+    },
+    "adjustments": {
+      "en": [
+        "Ecto-Mesomorph: Follow mesomorph training but eat like an ectomorph (more calories)",
+        "Endo-Mesomorph: Follow mesomorph training but watch carbs like an endomorph",
+        "Ecto-Endomorph: Rare - focus on building muscle while managing body fat"
+      ],
+      "ar": [
+        "إكتو-ميزومورف: اتبع تدريب الميزومورف بس كل زي الإكتومورف (سعرات أكتر)",
+        "إندو-ميزومورف: اتبع تدريب الميزومورف بس راقب الكارب زي الإندومورف",
+        "إكتو-إندومورف: نادر - ركز على بناء العضلات مع إدارة دهون الجسم"
+      ]
+    }
+  },
+  "mythBusting": {
+    "title": {
+      "en": "Body Type Myths",
+      "ar": "خرافات أنواع الأجسام"
+    },
+    "myths": {
+      "en": [
+        {
+          "myth": "Your body type is a fixed limitation",
+          "truth": "Body types are tendencies, not destinies. Anyone can transform with effort."
+        },
+        {
+          "myth": "Ectomorphs can never build muscle",
+          "truth": "Ectomorphs can build impressive physiques - it just requires more calories and patience."
+        },
+        {
+          "myth": "Endomorphs will always be fat",
+          "truth": "Endomorphs can get very lean with proper diet and cardio - many bodybuilders are natural endomorphs."
+        },
+        {
+          "myth": "Mesomorphs don't need to work hard",
+          "truth": "Genetics help, but mesomorphs still need consistent training and nutrition."
+        }
+      ],
+      "ar": [
+        {
+          "myth": "نوع جسمك حد ثابت",
+          "truth": "أنواع الأجسام ميول، مش أقدار. أي حد يقدر يتحول بالمجهود."
+        },
+        {
+          "myth": "الإكتومورف مش ممكن يبني عضلات",
+          "truth": "الإكتومورف يقدر يبني أجسام مبهرة - بس محتاج سعرات أكتر وصبر."
+        },
+        {
+          "myth": "الإندومورف هيفضل تخين",
+          "truth": "الإندومورف يقدر يكون نحيف جداً بدايت وكارديو صحيح - كتير من لاعبي كمال الأجسام إندومورف طبيعي."
+        },
+        {
+          "myth": "الميزومورف مش محتاج يشتغل بجد",
+          "truth": "الجينات بتساعد، بس الميزومورف لسه محتاج تدريب وتغذية مستمرة."
+        }
+      ]
+    }
+  }
+}
