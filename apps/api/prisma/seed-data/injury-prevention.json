@@ -1,0 +1,795 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15",
+    "disclaimer": {
+      "en": "This guide is for educational purposes only. Always consult a medical professional for injuries.",
+      "ar": "هذا الدليل للأغراض التعليمية فقط. استشر طبيب دائماً للإصابات."
+    }
+  },
+  "commonInjuries": [
+    {
+      "id": "rotator-cuff",
+      "name": {
+        "en": "Rotator Cuff Injury",
+        "ar": "إصابة الكفة المدورة"
+      },
+      "location": {
+        "en": "Shoulder",
+        "ar": "الكتف"
+      },
+      "description": {
+        "en": "Damage to the muscles and tendons that stabilize the shoulder joint. Very common in lifters.",
+        "ar": "ضرر للعضلات والأوتار اللي بتثبت مفصل الكتف. شائعة جداً في الرافعين."
+      },
+      "causes": {
+        "en": [
+          "Too much pressing volume without pulling",
+          "Poor bench press form (elbows flared)",
+          "Heavy overhead work without warm-up",
+          "Sleeping on one side repeatedly",
+          "Internal rotation weakness"
+        ],
+        "ar": [
+          "فوليوم دفع كتير من غير سحب",
+          "فورم بنش غلط (الكوع مفتوح لبرا)",
+          "شغل علوي تقيل من غير تسخين",
+          "النوم على جانب واحد كتير",
+          "ضعف في الدوران الداخلي"
+        ]
+      },
+      "symptoms": {
+        "en": [
+          "Pain when lifting arm overhead",
+          "Weakness in rotating the arm",
+          "Pain sleeping on affected side",
+          "Clicking or popping sounds",
+          "Deep ache in shoulder"
+        ],
+        "ar": [
+          "ألم لما ترفع الدراع فوق",
+          "ضعف في تدوير الدراع",
+          "ألم لما تنام على الجانب المصاب",
+          "صوت طقطقة",
+          "وجع عميق في الكتف"
+        ]
+      },
+      "prevention": {
+        "en": [
+          "Balance pushing and pulling exercises (1:1 ratio)",
+          "Include face pulls and external rotation work",
+          "Proper bench press form (45° elbow angle)",
+          "Warm up shoulders before pressing",
+          "Strengthen rotator cuff with light exercises"
+        ],
+        "ar": [
+          "وازن تمارين الدفع والسحب (نسبة 1:1)",
+          "ضيف فيس بولز وشغل دوران خارجي",
+          "فورم بنش صح (زاوية كوع 45°)",
+          "سخن الكتف قبل الدفع",
+          "قوي الكفة المدورة بتمارين خفيفة"
+        ]
+      },
+      "exercises": {
+        "helpful": [
+          {
+            "name": { "en": "Face Pulls", "ar": "فيس بولز" },
+            "why": { "en": "Strengthens external rotators", "ar": "بتقوي المدورات الخارجية" }
+          },
+          {
+            "name": { "en": "External Rotation", "ar": "دوران خارجي" },
+            "why": { "en": "Directly targets rotator cuff", "ar": "بتستهدف الكفة المدورة مباشرة" }
+          },
+          {
+            "name": { "en": "Band Pull-Aparts", "ar": "سحب الباند" },
+            "why": { "en": "Builds rear delt and rotator strength", "ar": "بتبني قوة الكتف الخلفي والكفة" }
+          }
+        ],
+        "avoid": [
+          {
+            "name": { "en": "Behind Neck Press", "ar": "ضغط خلف الرقبة" },
+            "why": { "en": "Puts shoulder in vulnerable position", "ar": "بتحط الكتف في وضع ضعيف" }
+          },
+          {
+            "name": { "en": "Upright Rows (close grip)", "ar": "رو معتدل (قبضة ضيقة)" },
+            "why": { "en": "Causes impingement", "ar": "بتسبب انحشار" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "lower-back-strain",
+      "name": {
+        "en": "Lower Back Strain",
+        "ar": "شد أسفل الظهر"
+      },
+      "location": {
+        "en": "Lower Back (Lumbar Spine)",
+        "ar": "أسفل الظهر (الفقرات القطنية)"
+      },
+      "description": {
+        "en": "Muscle or ligament strain in the lower back, often from improper lifting technique.",
+        "ar": "شد في العضلات أو الأربطة في أسفل الظهر، غالباً من تكنيك رفع غلط."
+      },
+      "causes": {
+        "en": [
+          "Rounding lower back during deadlifts",
+          "Too much weight too soon",
+          "Weak core muscles",
+          "Sitting all day then heavy lifting",
+          "Not bracing properly"
+        ],
+        "ar": [
+          "تقويس أسفل الظهر أثناء الديدليفت",
+          "وزن كتير بدري",
+          "عضلات كور ضعيفة",
+          "القعدة طول اليوم وبعدين رفع تقيل",
+          "مش بتعمل bracing صح"
+        ]
+      },
+      "symptoms": {
+        "en": [
+          "Dull ache in lower back",
+          "Muscle stiffness",
+          "Pain when bending or twisting",
+          "Difficulty standing straight",
+          "Pain that worsens with movement"
+        ],
+        "ar": [
+          "وجع خفيف في أسفل الظهر",
+          "تيبس في العضلات",
+          "ألم لما تنحني أو تلف",
+          "صعوبة في الوقوف مستقيم",
+          "ألم بيزيد مع الحركة"
+        ]
+      },
+      "prevention": {
+        "en": [
+          "Master hip hinge pattern before deadlifting",
+          "Learn proper bracing technique",
+          "Strengthen core with planks and carries",
+          "Keep spine neutral during lifts",
+          "Warm up thoroughly before heavy lifts"
+        ],
+        "ar": [
+          "اتقن حركة الهيب هينج قبل الديدليفت",
+          "اتعلم تكنيك الـ bracing الصح",
+          "قوي الكور بالبلانك والكاريز",
+          "خلي العمود الفقري محايد أثناء الرفع",
+          "سخن كويس قبل الرفع التقيل"
+        ]
+      },
+      "exercises": {
+        "helpful": [
+          {
+            "name": { "en": "Planks", "ar": "بلانك" },
+            "why": { "en": "Builds core stability", "ar": "بتبني ثبات الكور" }
+          },
+          {
+            "name": { "en": "Bird Dogs", "ar": "بيرد دوج" },
+            "why": { "en": "Teaches spinal stability", "ar": "بتعلم ثبات العمود الفقري" }
+          },
+          {
+            "name": { "en": "Glute Bridges", "ar": "جلوت بريدج" },
+            "why": { "en": "Activates glutes to support lower back", "ar": "بتنشط الجلوت لدعم أسفل الظهر" }
+          },
+          {
+            "name": { "en": "Dead Bugs", "ar": "ديد بج" },
+            "why": { "en": "Core anti-extension exercise", "ar": "تمرين كور ضد الامتداد" }
+          }
+        ],
+        "avoid": [
+          {
+            "name": { "en": "Sit-ups (if injured)", "ar": "ست أبس (لو مصاب)" },
+            "why": { "en": "Increases spinal flexion stress", "ar": "بتزود الضغط على انحناء العمود الفقري" }
+          },
+          {
+            "name": { "en": "Good Mornings (heavy)", "ar": "جود مورنينج (تقيل)" },
+            "why": { "en": "High lower back stress when form breaks", "ar": "ضغط عالي على أسفل الظهر لو الفورم باظ" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "knee-pain",
+      "name": {
+        "en": "Knee Pain (Patellofemoral)",
+        "ar": "ألم الركبة (الرضفة)"
+      },
+      "location": {
+        "en": "Knee (front/under kneecap)",
+        "ar": "الركبة (الأمام/تحت الصابونة)"
+      },
+      "description": {
+        "en": "Pain around or under the kneecap, often from overuse or muscle imbalances.",
+        "ar": "ألم حوالين أو تحت صابونة الركبة، غالباً من الاستخدام الزايد أو عدم توازن العضلات."
+      },
+      "causes": {
+        "en": [
+          "Quad dominance without enough hamstring work",
+          "Weak VMO (inner quad muscle)",
+          "Too much high-rep leg extensions",
+          "Knees caving inward during squats",
+          "Sudden increase in training volume"
+        ],
+        "ar": [
+          "سيطرة الكواد من غير شغل هامسترينج كافي",
+          "VMO ضعيف (عضلة الكواد الداخلية)",
+          "ليج اكستنشن كتير بتكرارات عالية",
+          "الركب بتدخل جوا أثناء السكوات",
+          "زيادة مفاجئة في فوليوم التدريب"
+        ]
+      },
+      "symptoms": {
+        "en": [
+          "Pain under or around kneecap",
+          "Pain going down stairs",
+          "Pain after sitting for long periods",
+          "Grinding sensation",
+          "Swelling around knee"
+        ],
+        "ar": [
+          "ألم تحت أو حوالين الصابونة",
+          "ألم لما تنزل السلم",
+          "ألم بعد القعدة لفترة طويلة",
+          "إحساس طحن",
+          "ورم حوالين الركبة"
+        ]
+      },
+      "prevention": {
+        "en": [
+          "Balance quad and hamstring training",
+          "Strengthen glutes to prevent knee cave",
+          "Avoid excessive leg extension volume",
+          "Progress squat depth gradually",
+          "Warm up knees before leg day"
+        ],
+        "ar": [
+          "وازن تدريب الكواد والهامسترينج",
+          "قوي الجلوت عشان تمنع دخول الركبة",
+          "تجنب فوليوم ليج اكستنشن الزيادة",
+          "تقدم في عمق السكوات تدريجياً",
+          "سخن الركبة قبل يوم الرجل"
+        ]
+      },
+      "exercises": {
+        "helpful": [
+          {
+            "name": { "en": "Terminal Knee Extensions", "ar": "اكستنشن ركبة نهائي" },
+            "why": { "en": "Strengthens VMO specifically", "ar": "بتقوي VMO تحديداً" }
+          },
+          {
+            "name": { "en": "Box Squats", "ar": "بوكس سكوات" },
+            "why": { "en": "Reduces knee stress while building strength", "ar": "بتقلل الضغط على الركبة مع بناء القوة" }
+          },
+          {
+            "name": { "en": "Romanian Deadlifts", "ar": "رومانيان ديدليفت" },
+            "why": { "en": "Builds hamstrings without knee stress", "ar": "بتبني الهامسترينج من غير ضغط على الركبة" }
+          }
+        ],
+        "avoid": [
+          {
+            "name": { "en": "Deep Sissy Squats", "ar": "سيسي سكوات عميق" },
+            "why": { "en": "Extreme knee stress", "ar": "ضغط شديد على الركبة" }
+          },
+          {
+            "name": { "en": "Heavy Leg Extensions", "ar": "ليج اكستنشن تقيل" },
+            "why": { "en": "Shearing force on kneecap", "ar": "قوة قص على الصابونة" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "elbow-tendinitis",
+      "name": {
+        "en": "Elbow Tendinitis (Tennis/Golfer's Elbow)",
+        "ar": "التهاب أوتار الكوع"
+      },
+      "location": {
+        "en": "Elbow (inner or outer)",
+        "ar": "الكوع (داخلي أو خارجي)"
+      },
+      "description": {
+        "en": "Inflammation of the tendons around the elbow from repetitive gripping and arm movements.",
+        "ar": "التهاب في الأوتار حوالين الكوع من القبض المتكرر وحركات الدراع."
+      },
+      "causes": {
+        "en": [
+          "Too much bicep curl volume",
+          "Death grip on bar during pulls",
+          "Excessive tricep work",
+          "Poor wrist positioning",
+          "Not enough rest between arm days"
+        ],
+        "ar": [
+          "فوليوم باي كيرل كتير",
+          "قبضة موت على البار أثناء السحب",
+          "شغل تراي زيادة",
+          "وضع ريست غلط",
+          "راحة مش كافية بين أيام الدراعات"
+        ]
+      },
+      "symptoms": {
+        "en": [
+          "Pain on inner or outer elbow",
+          "Weakness when gripping",
+          "Pain when extending arm",
+          "Tenderness to touch",
+          "Pain that radiates to forearm"
+        ],
+        "ar": [
+          "ألم في الكوع الداخلي أو الخارجي",
+          "ضعف لما تقبض",
+          "ألم لما تفرد الدراع",
+          "حساسية للمس",
+          "ألم بيمتد للساعد"
+        ]
+      },
+      "prevention": {
+        "en": [
+          "Use straps for heavy pulls",
+          "Vary grip width and type",
+          "Don't overdo isolation arm work",
+          "Strengthen forearms and wrists",
+          "Ice after heavy training"
+        ],
+        "ar": [
+          "استخدم سترابس للسحب التقيل",
+          "نوع في عرض ونوع القبضة",
+          "متكترش شغل الدراعات العزل",
+          "قوي الساعدين والريستين",
+          "ثلج بعد التدريب التقيل"
+        ]
+      },
+      "exercises": {
+        "helpful": [
+          {
+            "name": { "en": "Wrist Curls", "ar": "ريست كيرل" },
+            "why": { "en": "Strengthens forearm muscles", "ar": "بتقوي عضلات الساعد" }
+          },
+          {
+            "name": { "en": "Reverse Wrist Curls", "ar": "ريست كيرل عكسي" },
+            "why": { "en": "Balances forearm development", "ar": "بتوازن تطوير الساعد" }
+          },
+          {
+            "name": { "en": "Finger Extensions with Band", "ar": "فرد الأصابع بالباند" },
+            "why": { "en": "Counteracts grip work", "ar": "بتعاكس شغل القبضة" }
+          }
+        ],
+        "avoid": [
+          {
+            "name": { "en": "Reverse Curls (if painful)", "ar": "كيرل عكسي (لو بيألم)" },
+            "why": { "en": "Stresses already inflamed tendons", "ar": "بتضغط على الأوتار الملتهبة" }
+          },
+          {
+            "name": { "en": "Heavy Preacher Curls", "ar": "بريتشر كيرل تقيل" },
+            "why": { "en": "High elbow stress at bottom", "ar": "ضغط عالي على الكوع في الأسفل" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "wrist-pain",
+      "name": {
+        "en": "Wrist Pain",
+        "ar": "ألم الريست"
+      },
+      "location": {
+        "en": "Wrist",
+        "ar": "الريست"
+      },
+      "description": {
+        "en": "Pain or discomfort in the wrist joint, often from improper bar positioning or excessive strain.",
+        "ar": "ألم أو عدم راحة في مفصل الريست، غالباً من وضع البار الغلط أو الضغط الزايد."
+      },
+      "causes": {
+        "en": [
+          "Bent wrists during bench press",
+          "Heavy front rack position",
+          "Poor push-up hand position",
+          "Gripping too tight",
+          "Excessive wrist extension during curls"
+        ],
+        "ar": [
+          "ريست ملوي أثناء البنش",
+          "وضع فرونت راك تقيل",
+          "وضع إيد غلط في البوش أب",
+          "قبضة ضيقة أوي",
+          "فرد ريست زيادة أثناء الكيرل"
+        ]
+      },
+      "symptoms": {
+        "en": [
+          "Sharp pain during pressing",
+          "Weakness in grip",
+          "Clicking or popping",
+          "Pain when extending wrist",
+          "Swelling around wrist"
+        ],
+        "ar": [
+          "ألم حاد أثناء الدفع",
+          "ضعف في القبضة",
+          "طقطقة",
+          "ألم لما تفرد الريست",
+          "ورم حوالين الريست"
+        ]
+      },
+      "prevention": {
+        "en": [
+          "Keep wrists straight during pressing (stack over forearm)",
+          "Use wrist wraps for heavy pressing",
+          "Stretch wrists before and after training",
+          "Build forearm strength gradually",
+          "Use neutral grip when possible"
+        ],
+        "ar": [
+          "خلي الريست مستقيم أثناء الدفع (فوق الساعد)",
+          "استخدم ريست رابس للدفع التقيل",
+          "استرتش الريست قبل وبعد التدريب",
+          "ابني قوة الساعد تدريجياً",
+          "استخدم قبضة محايدة لما تقدر"
+        ]
+      },
+      "exercises": {
+        "helpful": [
+          {
+            "name": { "en": "Wrist Circles", "ar": "دوائر الريست" },
+            "why": { "en": "Improves mobility", "ar": "بتحسن الحركة" }
+          },
+          {
+            "name": { "en": "Wrist Flexor Stretch", "ar": "استرتش ثني الريست" },
+            "why": { "en": "Reduces tightness", "ar": "بتقلل التيبس" }
+          },
+          {
+            "name": { "en": "Neutral Grip Pressing", "ar": "دفع بقبضة محايدة" },
+            "why": { "en": "Reduces wrist extension stress", "ar": "بتقلل ضغط فرد الريست" }
+          }
+        ],
+        "avoid": [
+          {
+            "name": { "en": "Heavy Straight Bar Curls", "ar": "كيرل بار مستقيم تقيل" },
+            "why": { "en": "Locks wrist in stressed position", "ar": "بتثبت الريست في وضع ضغط" }
+          }
+        ]
+      }
+    },
+    {
+      "id": "muscle-strain",
+      "name": {
+        "en": "Muscle Strain/Pull",
+        "ar": "شد/تمزق عضلي"
+      },
+      "location": {
+        "en": "Any muscle",
+        "ar": "أي عضلة"
+      },
+      "description": {
+        "en": "Partial or complete tear of muscle fibers, usually from sudden force or overstretch.",
+        "ar": "تمزق جزئي أو كامل لألياف العضلة، عادة من قوة مفاجئة أو استطالة زايدة."
+      },
+      "causes": {
+        "en": [
+          "Not warming up properly",
+          "Going too heavy too fast",
+          "Training when fatigued",
+          "Ballistic movements without preparation",
+          "Poor flexibility"
+        ],
+        "ar": [
+          "مش بتسخن كويس",
+          "وزن تقيل بسرعة",
+          "التدريب وإنت متعب",
+          "حركات انفجارية من غير تحضير",
+          "مرونة ضعيفة"
+        ]
+      },
+      "symptoms": {
+        "en": [
+          "Sudden sharp pain during exercise",
+          "Swelling",
+          "Bruising",
+          "Weakness in affected muscle",
+          "Pop or snap feeling"
+        ],
+        "ar": [
+          "ألم حاد مفاجئ أثناء التمرين",
+          "ورم",
+          "كدمات",
+          "ضعف في العضلة المصابة",
+          "إحساس فرقعة"
+        ]
+      },
+      "prevention": {
+        "en": [
+          "Always warm up with light cardio + dynamic stretches",
+          "Progress weight gradually",
+          "Don't train through pain",
+          "Get adequate sleep and recovery",
+          "Stay hydrated"
+        ],
+        "ar": [
+          "دايماً سخن بكارديو خفيف + استرتش ديناميكي",
+          "تقدم في الوزن تدريجياً",
+          "متتمرنش وإنت بتوجعك",
+          "نام واستريح كفاية",
+          "اشرب ميه كفاية"
+        ]
+      },
+      "recovery": {
+        "en": [
+          "RICE: Rest, Ice, Compression, Elevation",
+          "Avoid aggravating movements",
+          "Gentle stretching when pain subsides",
+          "Gradual return to training",
+          "See a doctor for severe strains"
+        ],
+        "ar": [
+          "RICE: راحة، ثلج، ضغط، رفع",
+          "تجنب الحركات اللي بتألم",
+          "استرتش خفيف لما الألم يقل",
+          "رجوع تدريجي للتدريب",
+          "روح لدكتور للشد الشديد"
+        ]
+      }
+    }
+  ],
+  "generalPrevention": {
+    "title": {
+      "en": "General Injury Prevention Principles",
+      "ar": "مبادئ منع الإصابات العامة"
+    },
+    "principles": [
+      {
+        "principle": {
+          "en": "Warm Up Properly",
+          "ar": "سخن بشكل صحيح"
+        },
+        "details": {
+          "en": "5-10 minutes of light cardio followed by dynamic stretches and warm-up sets. Never jump straight to heavy weights.",
+          "ar": "5-10 دقايق كارديو خفيف وبعدها استرتش ديناميكي ومجموعات تسخين. متقفزش على الأوزان التقيلة على طول."
+        }
+      },
+      {
+        "principle": {
+          "en": "Use Proper Form",
+          "ar": "استخدم فورم صحيح"
+        },
+        "details": {
+          "en": "Learn correct technique before adding weight. A lighter weight with perfect form beats heavy weight with bad form.",
+          "ar": "اتعلم التكنيك الصح قبل ما تزود وزن. وزن خفيف بفورم مثالي أحسن من وزن تقيل بفورم وحش."
+        }
+      },
+      {
+        "principle": {
+          "en": "Progress Gradually",
+          "ar": "تقدم تدريجياً"
+        },
+        "details": {
+          "en": "Don't rush to lift heavy. Increase weight by small amounts (2.5kg) when you can complete all reps with good form.",
+          "ar": "متستعجلش ترفع تقيل. زود الوزن بكميات صغيرة (2.5 كيلو) لما تقدر تكمل كل التكرارات بفورم كويس."
+        }
+      },
+      {
+        "principle": {
+          "en": "Listen to Your Body",
+          "ar": "اسمع جسمك"
+        },
+        "details": {
+          "en": "Sharp pain is a warning sign. Muscle burn during exercise is normal; joint pain is not.",
+          "ar": "الألم الحاد علامة تحذير. حرق العضلات أثناء التمرين طبيعي؛ ألم المفاصل لأ."
+        }
+      },
+      {
+        "principle": {
+          "en": "Balance Your Training",
+          "ar": "وازن تدريبك"
+        },
+        "details": {
+          "en": "Equal work for opposing muscle groups. Push/pull balance, quad/hamstring balance, etc.",
+          "ar": "شغل متساوي للمجموعات العضلية المتقابلة. توازن دفع/سحب، توازن كواد/هامسترينج، إلخ."
+        }
+      },
+      {
+        "principle": {
+          "en": "Rest and Recover",
+          "ar": "استريح واستشفي"
+        },
+        "details": {
+          "en": "Muscles grow during rest, not during training. Take rest days and prioritize sleep.",
+          "ar": "العضلات بتكبر أثناء الراحة، مش أثناء التدريب. خد أيام راحة واهتم بالنوم."
+        }
+      },
+      {
+        "principle": {
+          "en": "Stay Hydrated and Nourished",
+          "ar": "اشرب ميه وكل كويس"
+        },
+        "details": {
+          "en": "Dehydration and poor nutrition increase injury risk. Drink water and eat enough protein.",
+          "ar": "الجفاف وسوء التغذية بيزودوا خطر الإصابة. اشرب ميه وكل بروتين كفاية."
+        }
+      }
+    ]
+  },
+  "warmUpProtocol": {
+    "title": {
+      "en": "Proper Warm-Up Protocol",
+      "ar": "بروتوكول التسخين الصحيح"
+    },
+    "steps": [
+      {
+        "step": 1,
+        "name": {
+          "en": "General Warm-Up",
+          "ar": "تسخين عام"
+        },
+        "duration": "5 minutes",
+        "activities": {
+          "en": ["Light jogging", "Jumping jacks", "Cycling", "Rowing machine"],
+          "ar": ["جري خفيف", "جامبنج جاكس", "عجلة", "ماكينة تجديف"]
+        }
+      },
+      {
+        "step": 2,
+        "name": {
+          "en": "Dynamic Stretches",
+          "ar": "استرتش ديناميكي"
+        },
+        "duration": "5 minutes",
+        "activities": {
+          "en": ["Arm circles", "Leg swings", "Hip circles", "Walking lunges", "High knees"],
+          "ar": ["دوائر الدراع", "تأرجح الرجل", "دوائر الورك", "لانجز ماشي", "ركب عالية"]
+        }
+      },
+      {
+        "step": 3,
+        "name": {
+          "en": "Activation Exercises",
+          "ar": "تمارين التنشيط"
+        },
+        "duration": "3-5 minutes",
+        "activities": {
+          "en": ["Band pull-aparts", "Glute bridges", "Dead bugs", "Shoulder rotations"],
+          "ar": ["سحب الباند", "جلوت بريدج", "ديد بج", "دورات الكتف"]
+        }
+      },
+      {
+        "step": 4,
+        "name": {
+          "en": "Specific Warm-Up Sets",
+          "ar": "مجموعات تسخين محددة"
+        },
+        "duration": "5-10 minutes",
+        "activities": {
+          "en": [
+            "Empty bar x 10 reps",
+            "40% working weight x 8 reps",
+            "60% working weight x 5 reps",
+            "80% working weight x 3 reps",
+            "Then begin working sets"
+          ],
+          "ar": [
+            "بار فاضي × 10 تكرارات",
+            "40% وزن الشغل × 8 تكرارات",
+            "60% وزن الشغل × 5 تكرارات",
+            "80% وزن الشغل × 3 تكرارات",
+            "وبعدين ابدأ مجموعات الشغل"
+          ]
+        }
+      }
+    ]
+  },
+  "whenToSeeDoctor": {
+    "title": {
+      "en": "When to See a Doctor",
+      "ar": "امتى تروح للدكتور"
+    },
+    "redFlags": [
+      {
+        "flag": {
+          "en": "Severe pain that doesn't improve with rest",
+          "ar": "ألم شديد مش بيتحسن بالراحة"
+        }
+      },
+      {
+        "flag": {
+          "en": "Visible deformity or severe swelling",
+          "ar": "تشوه ظاهر أو ورم شديد"
+        }
+      },
+      {
+        "flag": {
+          "en": "Numbness or tingling",
+          "ar": "تنميل"
+        }
+      },
+      {
+        "flag": {
+          "en": "Unable to bear weight or use limb",
+          "ar": "مش قادر تحمل وزن أو تستخدم الطرف"
+        }
+      },
+      {
+        "flag": {
+          "en": "Pain that wakes you up at night",
+          "ar": "ألم بيصحيك من النوم"
+        }
+      },
+      {
+        "flag": {
+          "en": "Pop or snap sound followed by pain",
+          "ar": "صوت فرقعة وبعدها ألم"
+        }
+      },
+      {
+        "flag": {
+          "en": "Pain lasting more than 2 weeks",
+          "ar": "ألم مستمر أكتر من أسبوعين"
+        }
+      },
+      {
+        "flag": {
+          "en": "Signs of infection (redness, warmth, fever)",
+          "ar": "علامات عدوى (احمرار، سخونة، حرارة)"
+        }
+      }
+    ],
+    "reminder": {
+      "en": "Better to get checked early than to make an injury worse by ignoring it.",
+      "ar": "أحسن تتفحص بدري من إنك تخلي الإصابة تسوء بتجاهلها."
+    }
+  },
+  "firstAid": {
+    "title": {
+      "en": "RICE Protocol for Minor Injuries",
+      "ar": "بروتوكول RICE للإصابات البسيطة"
+    },
+    "steps": [
+      {
+        "letter": "R",
+        "name": {
+          "en": "Rest",
+          "ar": "راحة"
+        },
+        "description": {
+          "en": "Stop the activity that caused the injury. Avoid putting stress on the injured area.",
+          "ar": "وقف النشاط اللي سبب الإصابة. تجنب الضغط على المنطقة المصابة."
+        }
+      },
+      {
+        "letter": "I",
+        "name": {
+          "en": "Ice",
+          "ar": "ثلج"
+        },
+        "description": {
+          "en": "Apply ice for 15-20 minutes every 2-3 hours for the first 48-72 hours. Use a cloth between ice and skin.",
+          "ar": "حط ثلج لمدة 15-20 دقيقة كل 2-3 ساعات لأول 48-72 ساعة. استخدم قماشة بين الثلج والجلد."
+        }
+      },
+      {
+        "letter": "C",
+        "name": {
+          "en": "Compression",
+          "ar": "ضغط"
+        },
+        "description": {
+          "en": "Wrap the injured area with an elastic bandage. Not too tight - you should be able to fit a finger underneath.",
+          "ar": "لف المنطقة المصابة برباط مطاطي. مش ضيق أوي - لازم تقدر تدخل صباعك تحته."
+        }
+      },
+      {
+        "letter": "E",
+        "name": {
+          "en": "Elevation",
+          "ar": "رفع"
+        },
+        "description": {
+          "en": "Raise the injured area above heart level when possible. This helps reduce swelling.",
+          "ar": "ارفع المنطقة المصابة فوق مستوى القلب لما تقدر. ده بيساعد يقلل الورم."
+        }
+      }
+    ]
+  }
+}
