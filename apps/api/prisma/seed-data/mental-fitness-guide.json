@@ -1,0 +1,695 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15",
+    "disclaimer": {
+      "en": "This guide is for general wellness. If you're experiencing serious mental health issues, please seek professional help.",
+      "ar": "هذا الدليل للصحة العامة. لو بتعاني من مشاكل صحة نفسية خطيرة، من فضلك اطلب مساعدة متخصصة."
+    }
+  },
+  "introduction": {
+    "title": {
+      "en": "The Mind-Muscle Connection: Mental Health and Fitness",
+      "ar": "الاتصال بين العقل والعضلات: الصحة النفسية واللياقة"
+    },
+    "overview": {
+      "en": "Exercise is one of the most powerful tools for mental health. It reduces anxiety, fights depression, improves sleep, and boosts confidence. Your gym time is also therapy time.",
+      "ar": "التمرين واحد من أقوى الأدوات للصحة النفسية. بيقلل القلق، بيحارب الاكتئاب، بيحسن النوم، وبيعزز الثقة. وقت الجيم بتاعك هو كمان وقت علاج."
+    }
+  },
+  "mentalHealthBenefits": {
+    "title": {
+      "en": "Mental Health Benefits of Exercise",
+      "ar": "فوايد الصحة النفسية للتمرين"
+    },
+    "benefits": [
+      {
+        "benefit": {
+          "en": "Reduces Anxiety and Stress",
+          "ar": "بيقلل القلق والتوتر"
+        },
+        "how": {
+          "en": "Exercise reduces cortisol (stress hormone) and releases endorphins (feel-good chemicals). Physical exertion gives stress an outlet.",
+          "ar": "التمرين بيقلل الكورتيزول (هرمون التوتر) وبيطلق الإندورفينات (مواد كيميائية بتحسسك كويس). المجهود البدني بيدي التوتر مخرج."
+        },
+        "research": {
+          "en": "Studies show regular exercise can be as effective as medication for mild to moderate anxiety.",
+          "ar": "الدراسات بتقول التمرين المنتظم ممكن يكون فعال زي الدوا للقلق الخفيف للمعتدل."
+        }
+      },
+      {
+        "benefit": {
+          "en": "Fights Depression",
+          "ar": "بيحارب الاكتئاب"
+        },
+        "how": {
+          "en": "Exercise increases serotonin, dopamine, and norepinephrine - the same chemicals targeted by antidepressants.",
+          "ar": "التمرين بيزود السيروتونين والدوبامين والنورإبينفرين - نفس المواد الكيميائية اللي بتستهدفها مضادات الاكتئاب."
+        },
+        "research": {
+          "en": "Multiple studies show exercise can be as effective as antidepressants for mild to moderate depression.",
+          "ar": "دراسات متعددة بتقول التمرين ممكن يكون فعال زي مضادات الاكتئاب للاكتئاب الخفيف للمعتدل."
+        }
+      },
+      {
+        "benefit": {
+          "en": "Improves Sleep Quality",
+          "ar": "بيحسن جودة النوم"
+        },
+        "how": {
+          "en": "Physical activity helps regulate circadian rhythm and reduces the time it takes to fall asleep.",
+          "ar": "النشاط البدني بيساعد ينظم الإيقاع اليومي وبيقلل الوقت اللي بتاخده عشان تنام."
+        },
+        "tips": {
+          "en": "Avoid intense exercise within 2-3 hours of bedtime.",
+          "ar": "تجنب التمرين الشديد قبل النوم بـ 2-3 ساعات."
+        }
+      },
+      {
+        "benefit": {
+          "en": "Boosts Self-Esteem and Confidence",
+          "ar": "بيعزز الثقة بالنفس"
+        },
+        "how": {
+          "en": "Achieving fitness goals, seeing physical changes, and feeling stronger all contribute to better self-image.",
+          "ar": "تحقيق أهداف اللياقة، ورؤية تغييرات جسدية، والشعور بالقوة كلهم بيساهموا في صورة ذاتية أحسن."
+        }
+      },
+      {
+        "benefit": {
+          "en": "Improves Focus and Mental Clarity",
+          "ar": "بيحسن التركيز والوضوح العقلي"
+        },
+        "how": {
+          "en": "Exercise increases blood flow to the brain, improves memory, and enhances cognitive function.",
+          "ar": "التمرين بيزود تدفق الدم للمخ، بيحسن الذاكرة، وبيعزز الوظيفة الإدراكية."
+        }
+      },
+      {
+        "benefit": {
+          "en": "Builds Discipline and Mental Toughness",
+          "ar": "بيبني الانضباط والصلابة العقلية"
+        },
+        "how": {
+          "en": "Showing up consistently, pushing through hard workouts, and delaying gratification builds mental strength that transfers to all areas of life.",
+          "ar": "الحضور باستمرار، والدفع خلال التمارين الصعبة، وتأخير الإشباع بيبني قوة عقلية بتنتقل لكل مجالات الحياة."
+        }
+      }
+    ]
+  },
+  "gymAnxiety": {
+    "title": {
+      "en": "Overcoming Gym Anxiety",
+      "ar": "التغلب على قلق الجيم"
+    },
+    "introduction": {
+      "en": "Gym anxiety is real and very common, especially for beginners. You're not alone - most people felt this way at first.",
+      "ar": "قلق الجيم حقيقي وشائع جداً، خصوصاً للمبتدئين. إنت مش لوحدك - معظم الناس حسوا كده في البداية."
+    },
+    "commonFears": [
+      {
+        "fear": {
+          "en": "Everyone is watching and judging me",
+          "ar": "كل الناس بتتفرج عليا وبتحكم عليا"
+        },
+        "reality": {
+          "en": "Truth: Most people are focused on their own workout. They're looking at themselves in the mirror, not you.",
+          "ar": "الحقيقة: معظم الناس مركزين على تمرينهم. بيبصوا لنفسهم في المراية، مش عليك."
+        },
+        "tip": {
+          "en": "Next time you're in the gym, notice how little attention you pay to others. They're the same.",
+          "ar": "المرة الجاية في الجيم، لاحظ قد إيه قليل بتاخد بالك من الآخرين. هم نفس الشيء."
+        }
+      },
+      {
+        "fear": {
+          "en": "I don't know what I'm doing",
+          "ar": "معرفش بعمل إيه"
+        },
+        "reality": {
+          "en": "Truth: Everyone started somewhere. The biggest people in the gym were once beginners too.",
+          "ar": "الحقيقة: كل واحد بدأ من مكان. أكبر الناس في الجيم كانوا مبتدئين برضو."
+        },
+        "tip": {
+          "en": "Start with simple exercises you know. Watch YouTube tutorials. Consider a few sessions with a trainer.",
+          "ar": "ابدأ بتمارين بسيطة تعرفها. اتفرج على فيديوهات يوتيوب. فكر في كام جلسة مع مدرب."
+        }
+      },
+      {
+        "fear": {
+          "en": "I'm not fit enough for the gym",
+          "ar": "مش لايق كفاية للجيم"
+        },
+        "reality": {
+          "en": "Truth: That's like saying you're too dirty to shower. The gym is WHERE you get fit.",
+          "ar": "الحقيقة: ده زي ما تقول إنت متسخ أوي عشان تستحمى. الجيم هو المكان اللي بتبقى فيه لايق."
+        },
+        "tip": {
+          "en": "Start light, focus on showing up. Everyone respects someone putting in effort.",
+          "ar": "ابدأ خفيف، ركز على الحضور. كل الناس بتحترم اللي بيبذل مجهود."
+        }
+      },
+      {
+        "fear": {
+          "en": "I might make a mistake or look stupid",
+          "ar": "ممكن أغلط أو أبان غبي"
+        },
+        "reality": {
+          "en": "Truth: Everyone makes mistakes. Even experienced lifters fail reps and drop weights sometimes.",
+          "ar": "الحقيقة: كل الناس بتغلط. حتى الرافعين الخبراء بيفشلوا في تكرارات وبيوقعوا أوزان أحياناً."
+        },
+        "tip": {
+          "en": "Mistakes are how you learn. A failed rep is still work done.",
+          "ar": "الأخطاء هي طريقة التعلم. التكرار الفاشل برضو شغل اتعمل."
+        }
+      }
+    ],
+    "practicalTips": {
+      "title": {
+        "en": "Tips for Reducing Gym Anxiety",
+        "ar": "نصائح لتقليل قلق الجيم"
+      },
+      "tips": [
+        {
+          "tip": {
+            "en": "Go During Off-Peak Hours",
+            "ar": "روح في أوقات أقل ازدحام"
+          },
+          "details": {
+            "en": "Early morning, mid-afternoon, or late evening are usually quieter. Avoid 5-8pm rush hour.",
+            "ar": "الصبح بدري، بعد الظهر، أو المسا المتأخر عادة أهدى. تجنب ساعة الذروة 5-8 مساءً."
+          }
+        },
+        {
+          "tip": {
+            "en": "Have a Plan Before You Go",
+            "ar": "خلي عندك خطة قبل ما تروح"
+          },
+          "details": {
+            "en": "Know exactly what exercises you'll do. Use an app like Forma to follow a program.",
+            "ar": "اعرف بالظبط أنهي تمارين هتعملها. استخدم تطبيق زي Forma عشان تتبع برنامج."
+          }
+        },
+        {
+          "tip": {
+            "en": "Wear Comfortable Clothes",
+            "ar": "البس هدوم مريحة"
+          },
+          "details": {
+            "en": "You don't need fancy gym clothes. Comfortable clothes you can move in are fine.",
+            "ar": "مش محتاج هدوم جيم فاخرة. هدوم مريحة تقدر تتحرك فيها كويسة."
+          }
+        },
+        {
+          "tip": {
+            "en": "Use Headphones",
+            "ar": "استخدم سماعات"
+          },
+          "details": {
+            "en": "Music creates your own bubble and signals others not to disturb you.",
+            "ar": "الموسيقى بتعمل فقاعة خاصة بيك وبتبعت إشارة للآخرين إنك مش عايز حد يزعجك."
+          }
+        },
+        {
+          "tip": {
+            "en": "Start with Machines",
+            "ar": "ابدأ بالماكينات"
+          },
+          "details": {
+            "en": "Machines have instructions and are less intimidating than free weights.",
+            "ar": "الماكينات عليها تعليمات ومش مخيفة زي الأوزان الحرة."
+          }
+        },
+        {
+          "tip": {
+            "en": "Remember: It Gets Easier",
+            "ar": "فكر: بتبقى أسهل"
+          },
+          "details": {
+            "en": "The first few visits are hardest. After 2-3 weeks, the gym will feel like home.",
+            "ar": "أول كام زيارة هي الأصعب. بعد 2-3 أسابيع، الجيم هيحس زي البيت."
+          }
+        }
+      ]
+    }
+  },
+  "motivationStrategies": {
+    "title": {
+      "en": "Staying Motivated: Strategies That Work",
+      "ar": "البقاء متحفز: استراتيجيات بتشتغل"
+    },
+    "strategies": [
+      {
+        "strategy": {
+          "en": "Focus on Process, Not Just Results",
+          "ar": "ركز على العملية، مش النتايج بس"
+        },
+        "explanation": {
+          "en": "Instead of 'I want to lose 10kg', focus on 'I will train 3x per week and eat healthy'. The results follow the process.",
+          "ar": "بدل 'عايز أخس 10 كيلو'، ركز على 'هتدرب 3 مرات في الأسبوع وهاكل صحي'. النتايج بتتبع العملية."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Set Small, Achievable Goals",
+          "ar": "حط أهداف صغيرة قابلة للتحقيق"
+        },
+        "explanation": {
+          "en": "Instead of 'bench press 100kg', start with 'add 2.5kg to bench this month'. Small wins build momentum.",
+          "ar": "بدل 'بنش 100 كيلو'، ابدأ بـ 'زود 2.5 كيلو على البنش الشهر ده'. المكاسب الصغيرة بتبني الزخم."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Track Your Progress",
+          "ar": "تتبع تقدمك"
+        },
+        "explanation": {
+          "en": "Use a journal or app. Seeing how far you've come is incredibly motivating. Take progress photos monthly.",
+          "ar": "استخدم مفكرة أو تطبيق. رؤية كام وصلت بتحفز بشكل لا يصدق. خد صور تقدم شهرياً."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Find Your Why",
+          "ar": "اكتشف ليه"
+        },
+        "explanation": {
+          "en": "A surface goal like 'look good' fades. Deeper reasons like 'be healthy for my kids' or 'prove to myself I can' last longer.",
+          "ar": "هدف سطحي زي 'أبان حلو' بيخف. أسباب أعمق زي 'أكون صحي لأولادي' أو 'أثبت لنفسي إني أقدر' بتدوم أكتر."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Schedule Workouts Like Appointments",
+          "ar": "جدول التمارين زي المواعيد"
+        },
+        "explanation": {
+          "en": "Don't wait for motivation. Put workouts in your calendar as non-negotiable appointments.",
+          "ar": "متستناش التحفيز. حط التمارين في التقويم كمواعيد مش قابلة للتفاوض."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Find a Workout Partner or Community",
+          "ar": "لاقي شريك تمرين أو مجتمع"
+        },
+        "explanation": {
+          "en": "Accountability makes a huge difference. You're less likely to skip when someone is waiting for you.",
+          "ar": "المحاسبة بتفرق جداً. أقل احتمال تفوت لما حد مستنيك."
+        }
+      },
+      {
+        "strategy": {
+          "en": "Don't Rely on Motivation",
+          "ar": "متعتمدش على التحفيز"
+        },
+        "explanation": {
+          "en": "Motivation comes and goes. Build discipline and habits instead. Action creates motivation, not the other way around.",
+          "ar": "التحفيز بييجي ويروح. ابني انضباط وعادات بدله. الفعل بيخلق التحفيز، مش العكس."
+        }
+      }
+    ]
+  },
+  "mindsetTips": {
+    "title": {
+      "en": "Growth Mindset for Fitness",
+      "ar": "عقلية النمو للياقة"
+    },
+    "concepts": [
+      {
+        "concept": {
+          "en": "Embrace the Journey",
+          "ar": "اتقبل الرحلة"
+        },
+        "explanation": {
+          "en": "There is no final destination. Fitness is a lifelong journey, not a 12-week program.",
+          "ar": "مفيش وجهة نهائية. اللياقة رحلة العمر، مش برنامج 12 أسبوع."
+        }
+      },
+      {
+        "concept": {
+          "en": "Failure Is Feedback",
+          "ar": "الفشل هو فيدباك"
+        },
+        "explanation": {
+          "en": "Missed a workout? Didn't hit your nutrition? Learn why and adjust. Don't spiral into guilt.",
+          "ar": "فاتك تمرين؟ مجبتش تغذيتك؟ اتعلم ليه وعدل. متدخلش في دوامة الذنب."
+        }
+      },
+      {
+        "concept": {
+          "en": "Compare to Yourself, Not Others",
+          "ar": "قارن بنفسك، مش بالآخرين"
+        },
+        "explanation": {
+          "en": "The only competition is who you were yesterday. Others have different genetics, history, and circumstances.",
+          "ar": "المنافسة الوحيدة هي مع اللي كنته إمبارح. الآخرين عندهم جينات وتاريخ وظروف مختلفة."
+        }
+      },
+      {
+        "concept": {
+          "en": "Something Is Better Than Nothing",
+          "ar": "حاجة أحسن من ولا حاجة"
+        },
+        "explanation": {
+          "en": "No time for a full workout? 15 minutes is better than 0. A walk is better than skipping. Maintain momentum.",
+          "ar": "مفيش وقت لتمرين كامل؟ 15 دقيقة أحسن من 0. مشية أحسن من تخطي. حافظ على الزخم."
+        }
+      },
+      {
+        "concept": {
+          "en": "Progress Is Not Linear",
+          "ar": "التقدم مش خطي"
+        },
+        "explanation": {
+          "en": "There will be good days and bad days, good weeks and bad weeks. The overall trend matters, not daily fluctuations.",
+          "ar": "هيكون في أيام كويسة وأيام وحشة، أسابيع كويسة وأسابيع وحشة. الاتجاه العام اللي مهم، مش التذبذبات اليومية."
+        }
+      },
+      {
+        "concept": {
+          "en": "You're Stronger Than You Think",
+          "ar": "إنت أقوى مما تفتكر"
+        },
+        "explanation": {
+          "en": "That last rep you think you can't do? Try it. Often we quit before our body does.",
+          "ar": "التكرار الأخير اللي فاكر مش هتقدر تعمله؟ جربه. غالباً بنبطل قبل ما جسمنا يبطل."
+        }
+      }
+    ]
+  },
+  "mentalBarriers": {
+    "title": {
+      "en": "Breaking Through Mental Barriers",
+      "ar": "كسر الحواجز العقلية"
+    },
+    "barriers": [
+      {
+        "barrier": {
+          "en": "All-or-Nothing Thinking",
+          "ar": "تفكير الكل أو لا شيء"
+        },
+        "description": {
+          "en": "'I ate one bad meal, the whole day is ruined' or 'I can't do an hour, so I won't go at all'",
+          "ar": "'أكلت وجبة وحشة، اليوم كله باظ' أو 'مش هقدر أعمل ساعة، فمش هروح خالص'"
+        },
+        "solution": {
+          "en": "Every healthy choice matters. One bad meal doesn't erase your progress. 20 minutes is better than nothing.",
+          "ar": "كل اختيار صحي مهم. وجبة وحشة مش بتمسح تقدمك. 20 دقيقة أحسن من ولا حاجة."
+        }
+      },
+      {
+        "barrier": {
+          "en": "Perfectionism",
+          "ar": "الكمالية"
+        },
+        "description": {
+          "en": "Waiting for the perfect time, perfect plan, perfect gym, perfect conditions",
+          "ar": "الاستنا للوقت المثالي، الخطة المثالية، الجيم المثالي، الظروف المثالية"
+        },
+        "solution": {
+          "en": "Done is better than perfect. Start messy. Adjust as you go.",
+          "ar": "الإنجاز أحسن من الكمال. ابدأ عشوائي. عدل وإنت ماشي."
+        }
+      },
+      {
+        "barrier": {
+          "en": "Fear of Judgment",
+          "ar": "الخوف من الحكم"
+        },
+        "description": {
+          "en": "Worrying what others think about your body, strength, or technique",
+          "ar": "القلق من رأي الناس في جسمك أو قوتك أو تكنيكك"
+        },
+        "solution": {
+          "en": "Most people are too focused on themselves to judge you. The fit people respect beginners putting in work.",
+          "ar": "معظم الناس مركزين على نفسهم أوي عشان يحكموا عليك. الناس اللايقين بتحترم المبتدئين اللي بيشتغلوا."
+        }
+      },
+      {
+        "barrier": {
+          "en": "Past Failures",
+          "ar": "الفشل السابق"
+        },
+        "description": {
+          "en": "'I've tried before and failed, so why try again?'",
+          "ar": "'جربت قبل كده وفشلت، فليه أجرب تاني؟'"
+        },
+        "solution": {
+          "en": "Each attempt teaches you something. You're not starting from zero - you're starting with experience.",
+          "ar": "كل محاولة بتعلمك حاجة. إنت مش بتبدأ من الصفر - إنت بتبدأ بخبرة."
+        }
+      },
+      {
+        "barrier": {
+          "en": "Impatience",
+          "ar": "عدم الصبر"
+        },
+        "description": {
+          "en": "Expecting visible results in days or weeks when it takes months",
+          "ar": "توقع نتايج مرئية في أيام أو أسابيع لما بتاخد شهور"
+        },
+        "solution": {
+          "en": "Real change takes 3-6 months to become visible. Trust the process. Results are coming even when you don't see them yet.",
+          "ar": "التغيير الحقيقي بياخد 3-6 شهور عشان يبان. ثق في العملية. النتايج جاية حتى لو مش شايفها لسه."
+        }
+      }
+    ]
+  },
+  "exerciseForMentalHealth": {
+    "title": {
+      "en": "Best Exercises for Mental Health",
+      "ar": "أحسن التمارين للصحة النفسية"
+    },
+    "exercises": [
+      {
+        "type": { "en": "Walking (especially outdoors)", "ar": "المشي (خصوصاً بره)" },
+        "benefits": {
+          "en": "Low barrier, reduces stress, sunshine boosts vitamin D and mood",
+          "ar": "حاجز منخفض، بيقلل التوتر، الشمس بتعزز فيتامين د والمزاج"
+        },
+        "recommendation": { "en": "20-30 min daily", "ar": "20-30 دقيقة يومياً" }
+      },
+      {
+        "type": { "en": "Strength Training", "ar": "تدريب القوة" },
+        "benefits": {
+          "en": "Builds confidence, releases endorphins, provides sense of accomplishment",
+          "ar": "بيبني الثقة، بيطلق إندورفينات، بيدي إحساس بالإنجاز"
+        },
+        "recommendation": { "en": "3x per week", "ar": "3 مرات في الأسبوع" }
+      },
+      {
+        "type": { "en": "HIIT/Cardio", "ar": "HIIT/كارديو" },
+        "benefits": {
+          "en": "Powerful stress release, improves sleep, time efficient mood boost",
+          "ar": "تفريغ توتر قوي، بيحسن النوم، تحسين مزاج موفر للوقت"
+        },
+        "recommendation": { "en": "2-3x per week", "ar": "2-3 مرات في الأسبوع" }
+      },
+      {
+        "type": { "en": "Yoga", "ar": "يوجا" },
+        "benefits": {
+          "en": "Combines movement with mindfulness, reduces anxiety, improves flexibility",
+          "ar": "بتجمع الحركة مع اليقظة الذهنية، بتقلل القلق، بتحسن المرونة"
+        },
+        "recommendation": { "en": "1-2x per week", "ar": "1-2 مرة في الأسبوع" }
+      },
+      {
+        "type": { "en": "Swimming", "ar": "السباحة" },
+        "benefits": {
+          "en": "Low impact, meditative quality, works whole body",
+          "ar": "تأثير منخفض، جودة تأملية، بتشغل الجسم كله"
+        },
+        "recommendation": { "en": "As often as accessible", "ar": "قد ما تقدر توصلها" }
+      },
+      {
+        "type": { "en": "Team Sports", "ar": "رياضات جماعية" },
+        "benefits": {
+          "en": "Social connection, fun, doesn't feel like exercise",
+          "ar": "تواصل اجتماعي، متعة، مش بتحس إنها تمرين"
+        },
+        "recommendation": { "en": "1-2x per week", "ar": "1-2 مرة في الأسبوع" }
+      }
+    ]
+  },
+  "dealingWithSetbacks": {
+    "title": {
+      "en": "Dealing with Setbacks",
+      "ar": "التعامل مع الانتكاسات"
+    },
+    "scenarios": [
+      {
+        "setback": {
+          "en": "Missed a Week (or More) of Training",
+          "ar": "فاتك أسبوع (أو أكتر) من التدريب"
+        },
+        "response": {
+          "en": [
+            "Don't try to 'make up' for lost time with extra intensity",
+            "Start back at slightly reduced weights",
+            "Accept it happened and move forward",
+            "One week off won't ruin months of progress"
+          ],
+          "ar": [
+            "متحاولش 'تعوض' الوقت الضايع بشدة زيادة",
+            "ارجع بأوزان أخف شوية",
+            "اتقبل إنه حصل وامشي للأمام",
+            "أسبوع أجازة مش هيدمر شهور من التقدم"
+          ]
+        }
+      },
+      {
+        "setback": {
+          "en": "Hit a Plateau",
+          "ar": "وصلت لمرحلة ثبات"
+        },
+        "response": {
+          "en": [
+            "Plateaus are normal - they happen to everyone",
+            "Reassess: Are you sleeping enough? Eating enough?",
+            "Try changing your routine, rep ranges, or exercises",
+            "Take a deload week",
+            "Be patient - progress will resume"
+          ],
+          "ar": [
+            "الثبات طبيعي - بيحصل لكل الناس",
+            "راجع: بتنام كفاية؟ بتاكل كفاية؟",
+            "جرب تغير روتينك أو نطاق التكرارات أو التمارين",
+            "خد أسبوع ديلود",
+            "اصبر - التقدم هيرجع"
+          ]
+        }
+      },
+      {
+        "setback": {
+          "en": "Got Injured",
+          "ar": "اتصابت"
+        },
+        "response": {
+          "en": [
+            "See a doctor or physio for proper diagnosis",
+            "Don't train through serious pain",
+            "Find what you CAN do - upper body injured? Train legs",
+            "Use the time to work on mobility or weak points",
+            "Recovery is part of training"
+          ],
+          "ar": [
+            "روح لدكتور أو علاج طبيعي للتشخيص الصح",
+            "متتمرنش خلال ألم شديد",
+            "لاقي اللي تقدر تعمله - الجزء العلوي مصاب؟ درب الرجل",
+            "استخدم الوقت للشغل على الحركية أو النقط الضعيفة",
+            "الاستشفاء جزء من التدريب"
+          ]
+        }
+      },
+      {
+        "setback": {
+          "en": "Lost Motivation Completely",
+          "ar": "خسرت التحفيز تماماً"
+        },
+        "response": {
+          "en": [
+            "It's okay to take a short break (1-2 weeks)",
+            "Remember your 'why' - why did you start?",
+            "Lower the bar: just show up, even for 15 minutes",
+            "Try a new activity or class to reignite interest",
+            "Talk to others who train - community helps"
+          ],
+          "ar": [
+            "عادي تاخد استراحة قصيرة (1-2 أسبوع)",
+            "افتكر 'ليه' بتاعك - ليه بدأت؟",
+            "قلل الهدف: بس روح، حتى لو 15 دقيقة",
+            "جرب نشاط أو كلاس جديد عشان ترجع الاهتمام",
+            "اتكلم مع ناس تانية بتتدرب - المجتمع بيساعد"
+          ]
+        }
+      }
+    ]
+  },
+  "selfTalk": {
+    "title": {
+      "en": "Positive Self-Talk",
+      "ar": "الحديث الإيجابي مع النفس"
+    },
+    "negativeToPositive": [
+      {
+        "negative": {
+          "en": "I can't do this",
+          "ar": "مش قادر أعمل ده"
+        },
+        "positive": {
+          "en": "I can't do this YET. I'm working on it.",
+          "ar": "مش قادر أعمل ده لسه. بشتغل عليه."
+        }
+      },
+      {
+        "negative": {
+          "en": "I'm so weak",
+          "ar": "أنا ضعيف أوي"
+        },
+        "positive": {
+          "en": "I'm stronger than when I started.",
+          "ar": "أنا أقوى من أول ما بدأت."
+        }
+      },
+      {
+        "negative": {
+          "en": "Everyone is looking at me",
+          "ar": "كل الناس بتتفرج عليا"
+        },
+        "positive": {
+          "en": "Everyone is focused on themselves. I'm here for me.",
+          "ar": "كل الناس مركزين على نفسهم. أنا هنا علشاني."
+        }
+      },
+      {
+        "negative": {
+          "en": "I'll never look like them",
+          "ar": "مش هبقى زيهم أبداً"
+        },
+        "positive": {
+          "en": "I'm building the best version of myself.",
+          "ar": "أنا بابني أحسن نسخة من نفسي."
+        }
+      },
+      {
+        "negative": {
+          "en": "I missed my workout, I'm a failure",
+          "ar": "فاتني التمرين، أنا فاشل"
+        },
+        "positive": {
+          "en": "One missed workout doesn't define me. I'll go tomorrow.",
+          "ar": "تمرين واحد فات مش بيعرفني. هروح بكرة."
+        }
+      }
+    ]
+  },
+  "summary": {
+    "title": {
+      "en": "Key Takeaways",
+      "ar": "النقاط الأساسية"
+    },
+    "points": {
+      "en": [
+        "Exercise is powerful medicine for mental health",
+        "Gym anxiety is normal and fades with time",
+        "Discipline beats motivation - build habits",
+        "Progress isn't linear - be patient",
+        "Something is always better than nothing",
+        "The gym is for everyone at every level",
+        "Your only competition is who you were yesterday"
+      ],
+      "ar": [
+        "التمرين دوا قوي للصحة النفسية",
+        "قلق الجيم طبيعي وبيخف مع الوقت",
+        "الانضباط بيغلب التحفيز - ابني عادات",
+        "التقدم مش خطي - اصبر",
+        "حاجة دايماً أحسن من ولا حاجة",
+        "الجيم لكل الناس في كل المستويات",
+        "منافستك الوحيدة هي مع اللي كنته إمبارح"
+      ]
+    }
+  }
+}
