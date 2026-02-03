@@ -1,0 +1,587 @@
+{
+  "glossary": [
+    {
+      "term": "Rep (Repetition)",
+      "termAr": "تكرار (ريب)",
+      "definition": {
+        "en": "One complete movement of an exercise from start to finish",
+        "ar": "حركة واحدة كاملة من التمرين من البداية للنهاية"
+      },
+      "example": {
+        "en": "One push-up is one rep",
+        "ar": "ضغطة واحدة = تكرار واحد"
+      },
+      "category": "basic"
+    },
+    {
+      "term": "Set",
+      "termAr": "مجموعة (سيت)",
+      "definition": {
+        "en": "A group of consecutive repetitions performed without rest",
+        "ar": "مجموعة من التكرارات المتتالية اللي بتتعمل من غير راحة"
+      },
+      "example": {
+        "en": "3 sets of 10 reps means doing 10 reps, resting, repeating 2 more times",
+        "ar": "3 مجموعات من 10 تكرارات يعني تعمل 10، ترتاح، وتكرر كمان مرتين"
+      },
+      "category": "basic"
+    },
+    {
+      "term": "PR (Personal Record)",
+      "termAr": "رقم قياسي شخصي",
+      "definition": {
+        "en": "Your best ever performance on an exercise - most weight lifted or most reps completed",
+        "ar": "أحسن أداء ليك في تمرين معين - أكتر وزن رفعته أو أكتر تكرارات عملتها"
+      },
+      "example": {
+        "en": "I hit a new PR on bench press - 100kg!",
+        "ar": "حققت رقم قياسي جديد في البنش - 100 كيلو!"
+      },
+      "category": "progress"
+    },
+    {
+      "term": "1RM (One Rep Max)",
+      "termAr": "الحد الأقصى لتكرار واحد",
+      "definition": {
+        "en": "The maximum weight you can lift for a single repetition with good form",
+        "ar": "أقصى وزن تقدر ترفعه لتكرار واحد بشكل صحيح"
+      },
+      "example": {
+        "en": "My squat 1RM is 120kg",
+        "ar": "الحد الأقصى للسكوات بتاعي 120 كيلو"
+      },
+      "category": "progress"
+    },
+    {
+      "term": "Hypertrophy",
+      "termAr": "تضخم العضلات (هايبرتروفي)",
+      "definition": {
+        "en": "The process of muscle growth through resistance training",
+        "ar": "عملية نمو العضلات من خلال تدريب المقاومة"
+      },
+      "example": {
+        "en": "Training in the 8-12 rep range is optimal for hypertrophy",
+        "ar": "التدريب في نطاق 8-12 تكرار مثالي للتضخم"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Compound Exercise",
+      "termAr": "تمرين مركب",
+      "definition": {
+        "en": "An exercise that works multiple muscle groups and joints at the same time",
+        "ar": "تمرين بيشغل مجموعات عضلية ومفاصل متعددة في نفس الوقت"
+      },
+      "example": {
+        "en": "Squat, deadlift, and bench press are compound exercises",
+        "ar": "السكوات والديدليفت والبنش تمارين مركبة"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Isolation Exercise",
+      "termAr": "تمرين عزل",
+      "definition": {
+        "en": "An exercise that targets a single muscle group using one joint",
+        "ar": "تمرين بيستهدف مجموعة عضلية واحدة باستخدام مفصل واحد"
+      },
+      "example": {
+        "en": "Bicep curl and leg extension are isolation exercises",
+        "ar": "الباي كيرل وفرد الأرجل تمارين عزل"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Progressive Overload",
+      "termAr": "الحمل التدريجي",
+      "definition": {
+        "en": "Gradually increasing weight, reps, or intensity over time to continue making progress",
+        "ar": "زيادة الوزن أو التكرارات أو الشدة تدريجياً مع الوقت لاستمرار التقدم"
+      },
+      "example": {
+        "en": "Add 2.5kg to your lifts each week - that's progressive overload",
+        "ar": "أضف 2.5 كيلو على رفعاتك كل أسبوع - ده الحمل التدريجي"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Superset",
+      "termAr": "سوبر سيت",
+      "definition": {
+        "en": "Two exercises performed back-to-back with no rest in between",
+        "ar": "تمرينين بيتعملوا ورا بعض من غير راحة بينهم"
+      },
+      "example": {
+        "en": "Bench press followed immediately by rows is a superset",
+        "ar": "البنش برس وبعده فوراً التجديف = سوبر سيت"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Drop Set",
+      "termAr": "دروب سيت",
+      "definition": {
+        "en": "Performing an exercise until failure, then immediately reducing weight and continuing",
+        "ar": "عمل التمرين لغاية الفشل، ثم تقليل الوزن فوراً والاستمرار"
+      },
+      "example": {
+        "en": "Start with 20kg curls, drop to 15kg, then 10kg without rest",
+        "ar": "ابدأ بكيرل 20 كيلو، انزل لـ 15، ثم 10 من غير راحة"
+      },
+      "category": "training"
+    },
+    {
+      "term": "DOMS (Delayed Onset Muscle Soreness)",
+      "termAr": "ألم العضلات المتأخر",
+      "definition": {
+        "en": "Muscle soreness that develops 24-72 hours after exercise",
+        "ar": "ألم العضلات اللي بيظهر بعد 24-72 ساعة من التمرين"
+      },
+      "example": {
+        "en": "My legs are sore from DOMS after yesterday's squats",
+        "ar": "رجليا بتوجعني من الدومز بعد سكوات امبارح"
+      },
+      "category": "recovery"
+    },
+    {
+      "term": "Bulking",
+      "termAr": "التضخيم (بالكينج)",
+      "definition": {
+        "en": "Eating in a calorie surplus to gain muscle mass (and some fat)",
+        "ar": "الأكل بسعرات أكتر من احتياجك لزيادة الكتلة العضلية (وشوية دهون)"
+      },
+      "example": {
+        "en": "I'm bulking right now, eating 3000 calories a day",
+        "ar": "أنا في فترة تضخيم، باكل 3000 سعر في اليوم"
+      },
+      "category": "nutrition"
+    },
+    {
+      "term": "Cutting",
+      "termAr": "التنشيف (كاتنج)",
+      "definition": {
+        "en": "Eating in a calorie deficit to lose fat while maintaining muscle",
+        "ar": "الأكل بسعرات أقل من احتياجك لخسارة الدهون مع الحفاظ على العضلات"
+      },
+      "example": {
+        "en": "I'm cutting for summer - eating 2000 calories",
+        "ar": "أنا بنشف للصيف - باكل 2000 سعر"
+      },
+      "category": "nutrition"
+    },
+    {
+      "term": "Macros (Macronutrients)",
+      "termAr": "الماكروز (العناصر الغذائية الكبرى)",
+      "definition": {
+        "en": "The three main nutrients: protein, carbohydrates, and fats",
+        "ar": "العناصر الغذائية الثلاث الرئيسية: البروتين والكربوهيدرات والدهون"
+      },
+      "example": {
+        "en": "My macros today are 150g protein, 250g carbs, 70g fat",
+        "ar": "الماكروز بتاعتي النهارده 150 جرام بروتين، 250 كارب، 70 دهون"
+      },
+      "category": "nutrition"
+    },
+    {
+      "term": "TDEE (Total Daily Energy Expenditure)",
+      "termAr": "إجمالي استهلاك الطاقة اليومي",
+      "definition": {
+        "en": "The total number of calories you burn in a day including exercise",
+        "ar": "إجمالي عدد السعرات اللي بتحرقها في اليوم بما في ذلك التمرين"
+      },
+      "example": {
+        "en": "My TDEE is about 2500 calories",
+        "ar": "الـ TDEE بتاعي حوالي 2500 سعر"
+      },
+      "category": "nutrition"
+    },
+    {
+      "term": "BMR (Basal Metabolic Rate)",
+      "termAr": "معدل الأيض الأساسي",
+      "definition": {
+        "en": "The number of calories your body burns at rest just to stay alive",
+        "ar": "عدد السعرات اللي جسمك بيحرقها وهو مرتاح بس عشان يفضل حي"
+      },
+      "example": {
+        "en": "Your BMR is the minimum calories you need",
+        "ar": "الـ BMR هو الحد الأدنى من السعرات اللي محتاجها"
+      },
+      "category": "nutrition"
+    },
+    {
+      "term": "Calorie Deficit",
+      "termAr": "عجز السعرات",
+      "definition": {
+        "en": "Eating fewer calories than your body burns, leading to fat loss",
+        "ar": "الأكل بسعرات أقل مما جسمك بيحرق، مما يؤدي لخسارة الدهون"
+      },
+      "example": {
+        "en": "A 500 calorie deficit per day leads to ~0.5kg fat loss per week",
+        "ar": "عجز 500 سعر في اليوم يؤدي لخسارة حوالي 0.5 كيلو دهون في الأسبوع"
+      },
+      "category": "nutrition"
+    },
+    {
+      "term": "Calorie Surplus",
+      "termAr": "فائض السعرات",
+      "definition": {
+        "en": "Eating more calories than your body burns, needed for muscle gain",
+        "ar": "الأكل بسعرات أكتر مما جسمك بيحرق، مطلوب لزيادة العضلات"
+      },
+      "example": {
+        "en": "A 300 calorie surplus helps build muscle without too much fat",
+        "ar": "فائض 300 سعر يساعد على بناء العضلات من غير دهون كتير"
+      },
+      "category": "nutrition"
+    },
+    {
+      "term": "Failure",
+      "termAr": "الفشل العضلي",
+      "definition": {
+        "en": "The point where you cannot complete another rep with good form",
+        "ar": "النقطة اللي مش بتقدر فيها تكمل تكرار تاني بشكل صحيح"
+      },
+      "example": {
+        "en": "I trained to failure on my last set",
+        "ar": "درّبت للفشل في آخر مجموعة"
+      },
+      "category": "training"
+    },
+    {
+      "term": "ROM (Range of Motion)",
+      "termAr": "مدى الحركة",
+      "definition": {
+        "en": "The full movement potential of a joint during an exercise",
+        "ar": "إمكانية الحركة الكاملة للمفصل أثناء التمرين"
+      },
+      "example": {
+        "en": "Full ROM on squats means going below parallel",
+        "ar": "المدى الكامل في السكوات يعني النزول تحت التوازي"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Mind-Muscle Connection",
+      "termAr": "الاتصال بين العقل والعضلة",
+      "definition": {
+        "en": "Focusing mentally on the muscle you're training to improve activation",
+        "ar": "التركيز الذهني على العضلة اللي بتدربها لتحسين التفعيل"
+      },
+      "example": {
+        "en": "Focus on squeezing your chest during flyes",
+        "ar": "ركز على شد صدرك أثناء الفلاي"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Pump",
+      "termAr": "الضخ (بامب)",
+      "definition": {
+        "en": "The temporary swelling of muscles during exercise due to blood flow",
+        "ar": "الانتفاخ المؤقت للعضلات أثناء التمرين بسبب تدفق الدم"
+      },
+      "example": {
+        "en": "I got a crazy arm pump after curls",
+        "ar": "جالي بامب جامد في ذراعي بعد الكيرل"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Spotter",
+      "termAr": "المساعد (سبوتر)",
+      "definition": {
+        "en": "Someone who assists you during heavy lifts for safety",
+        "ar": "حد بيساعدك أثناء الرفعات التقيلة للأمان"
+      },
+      "example": {
+        "en": "Always use a spotter for heavy bench press",
+        "ar": "استخدم سبوتر دايماً للبنش التقيل"
+      },
+      "category": "safety"
+    },
+    {
+      "term": "Deload",
+      "termAr": "تخفيف الحمل (ديلود)",
+      "definition": {
+        "en": "A planned period of reduced training intensity to allow recovery",
+        "ar": "فترة مخططة من تخفيف شدة التدريب للسماح بالاستشفاء"
+      },
+      "example": {
+        "en": "Take a deload week every 4-6 weeks",
+        "ar": "خد أسبوع ديلود كل 4-6 أسابيع"
+      },
+      "category": "recovery"
+    },
+    {
+      "term": "Volume",
+      "termAr": "الحجم التدريبي",
+      "definition": {
+        "en": "Total amount of work done - typically sets x reps x weight",
+        "ar": "إجمالي كمية العمل المنجز - عادة المجموعات × التكرارات × الوزن"
+      },
+      "example": {
+        "en": "High volume training means more sets and reps",
+        "ar": "التدريب بحجم عالي يعني مجموعات وتكرارات أكتر"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Intensity",
+      "termAr": "الشدة",
+      "definition": {
+        "en": "How hard you're working - usually measured as percentage of 1RM",
+        "ar": "قد إيه بتشتغل بجد - عادة بتتقاس كنسبة من الحد الأقصى"
+      },
+      "example": {
+        "en": "Training at 80% intensity means using 80% of your max",
+        "ar": "التدريب بشدة 80% يعني استخدام 80% من الحد الأقصى"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Tempo",
+      "termAr": "الوتيرة (تيمبو)",
+      "definition": {
+        "en": "The speed at which you perform each phase of a lift (e.g., 3-1-2-0)",
+        "ar": "السرعة اللي بتؤدي بيها كل مرحلة من الرفعة (مثلاً 3-1-2-0)"
+      },
+      "example": {
+        "en": "3-1-2-0 means 3 seconds down, 1 pause, 2 up, 0 pause",
+        "ar": "3-1-2-0 يعني 3 ثواني نزول، 1 توقف، 2 صعود، 0 توقف"
+      },
+      "category": "training"
+    },
+    {
+      "term": "TUT (Time Under Tension)",
+      "termAr": "وقت الشد",
+      "definition": {
+        "en": "The total time your muscles are under strain during a set",
+        "ar": "الوقت الكلي اللي عضلاتك تحت ضغط أثناء المجموعة"
+      },
+      "example": {
+        "en": "Slowing down your reps increases TUT",
+        "ar": "تبطيء التكرارات يزيد وقت الشد"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Negative (Eccentric)",
+      "termAr": "النيجاتيف (الانكساري)",
+      "definition": {
+        "en": "The lowering phase of a lift where the muscle lengthens under tension",
+        "ar": "مرحلة النزول في الرفعة حيث العضلة بتطول تحت الشد"
+      },
+      "example": {
+        "en": "Slow negatives on bench press build more muscle",
+        "ar": "النزول البطيء في البنش يبني عضلات أكتر"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Concentric",
+      "termAr": "التقلصي",
+      "definition": {
+        "en": "The lifting phase where the muscle shortens against resistance",
+        "ar": "مرحلة الرفع حيث العضلة بتقصر ضد المقاومة"
+      },
+      "example": {
+        "en": "The concentric phase of a curl is when you bring the weight up",
+        "ar": "المرحلة التقلصية للكيرل هي لما بترفع الوزن"
+      },
+      "category": "training"
+    },
+    {
+      "term": "Form",
+      "termAr": "الشكل/الفورم",
+      "definition": {
+        "en": "The proper technique for performing an exercise",
+        "ar": "التقنية الصحيحة لأداء التمرين"
+      },
+      "example": {
+        "en": "Good form prevents injuries and maximizes results",
+        "ar": "الفورم الكويس يمنع الإصابات ويعظم النتائج"
+      },
+      "category": "safety"
+    },
+    {
+      "term": "Warm-up",
+      "termAr": "الإحماء",
+      "definition": {
+        "en": "Light activity before training to prepare muscles and joints",
+        "ar": "نشاط خفيف قبل التدريب لتحضير العضلات والمفاصل"
+      },
+      "example": {
+        "en": "5-10 minutes of warm-up prevents injuries",
+        "ar": "5-10 دقائق إحماء تمنع الإصابات"
+      },
+      "category": "safety"
+    },
+    {
+      "term": "Cool-down",
+      "termAr": "التهدئة",
+      "definition": {
+        "en": "Light activity after training to gradually lower heart rate",
+        "ar": "نشاط خفيف بعد التدريب لتقليل نبض القلب تدريجياً"
+      },
+      "example": {
+        "en": "Light walking and stretching is a good cool-down",
+        "ar": "المشي الخفيف والتمديد تهدئة كويسة"
+      },
+      "category": "recovery"
+    },
+    {
+      "term": "Split",
+      "termAr": "تقسيم التدريب (سبليت)",
+      "definition": {
+        "en": "How you divide your training across the week",
+        "ar": "إزاي بتقسم تدريبك على مدار الأسبوع"
+      },
+      "example": {
+        "en": "PPL is a popular split: Push, Pull, Legs",
+        "ar": "PPL سبليت شائع: دفع، سحب، أرجل"
+      },
+      "category": "programming"
+    },
+    {
+      "term": "PPL (Push Pull Legs)",
+      "termAr": "دفع سحب أرجل",
+      "definition": {
+        "en": "A training split dividing workouts into push movements, pull movements, and legs",
+        "ar": "تقسيم تدريب يقسم التمارين لحركات دفع، حركات سحب، وأرجل"
+      },
+      "example": {
+        "en": "PPL is great for training 6 days a week",
+        "ar": "PPL ممتاز للتدريب 6 أيام في الأسبوع"
+      },
+      "category": "programming"
+    },
+    {
+      "term": "Bro Split",
+      "termAr": "برو سبليت",
+      "definition": {
+        "en": "Training one muscle group per day (chest day, back day, etc.)",
+        "ar": "تدريب مجموعة عضلية واحدة في اليوم (يوم صدر، يوم ظهر، إلخ)"
+      },
+      "example": {
+        "en": "Monday chest, Tuesday back, Wednesday shoulders...",
+        "ar": "الاتنين صدر، الثلاثاء ظهر، الأربعاء كتف..."
+      },
+      "category": "programming"
+    },
+    {
+      "term": "Full Body",
+      "termAr": "جسم كامل",
+      "definition": {
+        "en": "Training all major muscle groups in each workout",
+        "ar": "تدريب كل المجموعات العضلية الرئيسية في كل تمرين"
+      },
+      "example": {
+        "en": "Full body 3x per week is great for beginners",
+        "ar": "جسم كامل 3 مرات في الأسبوع ممتاز للمبتدئين"
+      },
+      "category": "programming"
+    },
+    {
+      "term": "Upper/Lower",
+      "termAr": "علوي/سفلي",
+      "definition": {
+        "en": "Alternating between upper body and lower body workouts",
+        "ar": "التبديل بين تمارين الجزء العلوي والسفلي"
+      },
+      "example": {
+        "en": "Upper/Lower 4x per week is a balanced approach",
+        "ar": "علوي/سفلي 4 مرات في الأسبوع نهج متوازن"
+      },
+      "category": "programming"
+    },
+    {
+      "term": "HIIT",
+      "termAr": "هيت (تدريب فترات عالي الشدة)",
+      "definition": {
+        "en": "High Intensity Interval Training - short bursts of intense exercise with rest periods",
+        "ar": "تدريب فترات عالي الشدة - فترات قصيرة من التمرين المكثف مع فترات راحة"
+      },
+      "example": {
+        "en": "30 seconds sprint, 30 seconds rest, repeat 10 times",
+        "ar": "30 ثانية سبرنت، 30 ثانية راحة، كرر 10 مرات"
+      },
+      "category": "cardio"
+    },
+    {
+      "term": "LISS",
+      "termAr": "ليس (كارديو منخفض الشدة)",
+      "definition": {
+        "en": "Low Intensity Steady State cardio - longer duration at lower intensity",
+        "ar": "كارديو ثابت منخفض الشدة - مدة أطول بشدة أقل"
+      },
+      "example": {
+        "en": "Walking for 45 minutes is LISS cardio",
+        "ar": "المشي لـ 45 دقيقة كارديو ليس"
+      },
+      "category": "cardio"
+    },
+    {
+      "term": "Gains",
+      "termAr": "المكاسب (جينز)",
+      "definition": {
+        "en": "Progress in muscle size, strength, or overall fitness",
+        "ar": "التقدم في حجم العضلات أو القوة أو اللياقة الكلية"
+      },
+      "example": {
+        "en": "Protect your gains by eating enough protein",
+        "ar": "احمِ مكاسبك بأكل بروتين كافي"
+      },
+      "category": "slang"
+    },
+    {
+      "term": "Natty",
+      "termAr": "ناتشورال (ناتي)",
+      "definition": {
+        "en": "Natural - someone who doesn't use performance-enhancing drugs",
+        "ar": "طبيعي - حد مش بيستخدم منشطات محسنة للأداء"
+      },
+      "example": {
+        "en": "As a natty lifter, progress is slower but sustainable",
+        "ar": "كرافع طبيعي، التقدم أبطأ بس مستدام"
+      },
+      "category": "slang"
+    },
+    {
+      "term": "Swole",
+      "termAr": "متفجر/كبير",
+      "definition": {
+        "en": "Very muscular - slang for having big muscles",
+        "ar": "عضلات كبيرة جداً - سلانج للعضلات الضخمة"
+      },
+      "example": {
+        "en": "He's looking swole after his bulk",
+        "ar": "شكله كبير بعد التضخيم"
+      },
+      "category": "slang"
+    },
+    {
+      "term": "Shredded",
+      "termAr": "مقطع/منحوت",
+      "definition": {
+        "en": "Very lean with visible muscle definition",
+        "ar": "نحيف جداً مع تفصيل عضلات واضح"
+      },
+      "example": {
+        "en": "He got shredded for his competition",
+        "ar": "اتنشف للمسابقة بتاعته"
+      },
+      "category": "slang"
+    }
+  ],
+  "categories": [
+    {"id": "basic", "name": {"en": "Basic Terms", "ar": "مصطلحات أساسية"}},
+    {"id": "training", "name": {"en": "Training", "ar": "التدريب"}},
+    {"id": "nutrition", "name": {"en": "Nutrition", "ar": "التغذية"}},
+    {"id": "progress", "name": {"en": "Progress & Goals", "ar": "التقدم والأهداف"}},
+    {"id": "recovery", "name": {"en": "Recovery", "ar": "الاستشفاء"}},
+    {"id": "programming", "name": {"en": "Programming", "ar": "برمجة التدريب"}},
+    {"id": "cardio", "name": {"en": "Cardio", "ar": "الكارديو"}},
+    {"id": "safety", "name": {"en": "Safety", "ar": "الأمان"}},
+    {"id": "slang", "name": {"en": "Gym Slang", "ar": "سلانج الجيم"}}
+  ]
+}
