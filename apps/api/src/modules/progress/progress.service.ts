@@ -1,0 +1,212 @@
+import { Injectable } from '@nestjs/common';
+import { PrismaService } from '../prisma/prisma.service';
+import { LogWeightDto, LogMeasurementsDto } from './dto/progress.dto';
+
+@Injectable()
+export class ProgressService {
+  constructor(private readonly prisma: PrismaService) {}
+
+  async logWeight(userId: string, dto: LogWeightDto) {
+    const logDate = dto.date ? new Date(dto.date) : new Date();
+
+    // Check if there's already a log for this date
+    const existingLog = await this.prisma.progressLog.findFirst({
+      where: {
+        userId,
+        loggedAt: {
+          gte: new Date(logDate.setHours(0, 0, 0, 0)),
+          lt: new Date(logDate.setHours(23, 59, 59, 999)),
+        },
+        weightKg: { not: null },
+      },
+    });
+
+    if (existingLog) {
+      // Update existing log
+      return this.prisma.progressLog.update({
+        where: { id: existingLog.id },
+        data: { weightKg: dto.weight },
+      });
+    }
+
+    // Create new log
+    return this.prisma.progressLog.create({
+      data: {
+        userId,
+        weightKg: dto.weight,
+        loggedAt: new Date(dto.date || Date.now()),
+      },
+    });
+  }
+
+  async logMeasurements(userId: string, dto: LogMeasurementsDto) {
+    const logDate = dto.date ? new Date(dto.date) : new Date();
+
+    return this.prisma.progressLog.create({
+      data: {
+        userId,
+        loggedAt: logDate,
+        weightKg: dto.weight,
+        bodyFatPercent: dto.bodyFat,
+        chestCm: dto.chest,
+        waistCm: dto.waist,
+        hipsCm: dto.hips,
+        bicepCm: dto.arms,
+        thighCm: dto.thighs,
+        notes: dto.notes,
+      },
+    });
+  }
+
+  async getWeightHistory(userId: string, days: number = 90) {
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() - days);
+
+    const logs = await this.prisma.progressLog.findMany({
+      where: {
+        userId,
+        loggedAt: { gte: startDate },
+        weightKg: { not: null },
+      },
+      orderBy: { loggedAt: 'asc' },
+      select: {
+        loggedAt: true,
+        weightKg: true,
+      },
+    });
+
+    return logs.map((log) => ({
+      date: log.loggedAt.toISOString().split('T')[0],
+      weight: log.weightKg,
+    }));
+  }
+
+  async getMeasurementsHistory(userId: string, limit: number = 10) {
+    const logs = await this.prisma.progressLog.findMany({
+      where: {
+        userId,
+        OR: [
+          { bodyFatPercent: { not: null } },
+          { chestCm: { not: null } },
+          { waistCm: { not: null } },
+          { hipsCm: { not: null } },
+          { bicepCm: { not: null } },
+          { thighCm: { not: null } },
+        ],
+      },
+      orderBy: { loggedAt: 'desc' },
+      take: limit,
+    });
+
+    return logs.map((log) => ({
+      id: log.id,
+      date: log.loggedAt.toISOString().split('T')[0],
+      weight: log.weightKg,
+      bodyFat: log.bodyFatPercent,
+      chest: log.chestCm,
+      waist: log.waistCm,
+      hips: log.hipsCm,
+      arms: log.bicepCm,
+      thighs: log.thighCm,
+      notes: log.notes,
+    }));
+  }
+
+  async getStrengthPRs(userId: string) {
+    // Get all exercise logs with set data
+    const exerciseLogs = await this.prisma.exerciseLog.findMany({
+      where: {
+        workoutLog: { userId },
+      },
+      include: {
+        exercise: true,
+        sets: true,
+      },
+    });
+
+    // Calculate estimated 1RM for each exercise using Brzycki formula
+    const prsMap = new Map<string, { exercise: string; weight: number; reps: number; date: Date; e1rm: number }>();
+
+    for (const log of exerciseLogs) {
+      for (const set of log.sets) {
+        if (set.weightKg && set.reps && set.reps > 0 && set.reps <= 12) {
+          const e1rm = set.weightKg * (36 / (37 - set.reps));
+
+          const existing = prsMap.get(log.exerciseId);
+          if (!existing || e1rm > existing.e1rm) {
+            prsMap.set(log.exerciseId, {
+              exercise: log.exercise.nameEn,
+              weight: set.weightKg,
+              reps: set.reps,
+              date: set.completedAt,
+              e1rm,
+            });
+          }
+        }
+      }
+    }
+
+    return Array.from(prsMap.values())
+      .sort((a, b) => b.e1rm - a.e1rm)
+      .slice(0, 10)
+      .map((pr) => ({
+        exerciseName: pr.exercise,
+        weight: pr.weight,
+        reps: pr.reps,
+        date: pr.date.toISOString().split('T')[0],
+        estimatedMax: Math.round(pr.e1rm),
+      }));
+  }
+
+  async getLatestProgress(userId: string) {
+    const latestWeight = await this.prisma.progressLog.findFirst({
+      where: { userId, weightKg: { not: null } },
+      orderBy: { loggedAt: 'desc' },
+    });
+
+    const latestMeasurements = await this.prisma.progressLog.findFirst({
+      where: {
+        userId,
+        OR: [
+          { bodyFatPercent: { not: null } },
+          { chestCm: { not: null } },
+          { waistCm: { not: null } },
+        ],
+      },
+      orderBy: { loggedAt: 'desc' },
+    });
+
+    // Get weight change over last 30 days
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+
+    const oldestInRange = await this.prisma.progressLog.findFirst({
+      where: {
+        userId,
+        loggedAt: { gte: thirtyDaysAgo },
+        weightKg: { not: null },
+      },
+      orderBy: { loggedAt: 'asc' },
+    });
+
+    const weightChange =
+      latestWeight && oldestInRange
+        ? Number(((latestWeight.weightKg || 0) - (oldestInRange.weightKg || 0)).toFixed(1))
+        : 0;
+
+    return {
+      currentWeight: latestWeight?.weightKg || null,
+      weightChange,
+      bodyFat: latestMeasurements?.bodyFatPercent || null,
+      measurements: latestMeasurements
+        ? {
+            chest: latestMeasurements.chestCm,
+            waist: latestMeasurements.waistCm,
+            hips: latestMeasurements.hipsCm,
+            arms: latestMeasurements.bicepCm,
+            thighs: latestMeasurements.thighCm,
+          }
+        : null,
+    };
+  }
+}
