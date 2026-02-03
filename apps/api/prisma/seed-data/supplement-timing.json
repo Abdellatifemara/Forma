@@ -1,0 +1,708 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15",
+    "disclaimer": {
+      "en": "Supplements are not a substitute for proper nutrition. Consult a doctor before starting any supplement regimen.",
+      "ar": "المكملات مش بديل للتغذية السليمة. استشر دكتور قبل ما تبدأ أي نظام مكملات."
+    }
+  },
+  "introduction": {
+    "title": {
+      "en": "Supplement Timing & Stacks Guide",
+      "ar": "دليل توقيت المكملات والمجموعات"
+    },
+    "priorities": {
+      "en": "Focus on these in order: 1) Nutrition 2) Sleep 3) Training 4) Supplements. Supplements provide marginal benefits on top of a solid foundation.",
+      "ar": "ركز على دول بالترتيب: 1) التغذية 2) النوم 3) التدريب 4) المكملات. المكملات بتقدم فوائد هامشية فوق أساس قوي."
+    }
+  },
+  "supplementTiming": {
+    "title": {
+      "en": "Optimal Timing for Each Supplement",
+      "ar": "التوقيت الأمثل لكل مكمل"
+    },
+    "supplements": [
+      {
+        "name": {
+          "en": "Whey Protein",
+          "ar": "واي بروتين"
+        },
+        "optimalTiming": {
+          "en": "Post-workout (within 2 hours) or anytime to hit daily protein goals",
+          "ar": "بعد التمرين (خلال ساعتين) أو أي وقت عشان توصل لهدفك اليومي من البروتين"
+        },
+        "details": {
+          "en": "Timing isn't as critical as total daily intake. Post-workout window matters less than getting enough protein overall.",
+          "ar": "التوقيت مش حاسم زي الكمية اليومية الكلية. نافذة ما بعد التمرين أقل أهمية من الحصول على بروتين كافي عموماً."
+        },
+        "dosage": "20-40g per serving",
+        "withFood": {
+          "en": "Can take alone or with food",
+          "ar": "ممكن تاخده لوحده أو مع أكل"
+        }
+      },
+      {
+        "name": {
+          "en": "Creatine Monohydrate",
+          "ar": "كرياتين مونوهيدرات"
+        },
+        "optimalTiming": {
+          "en": "Anytime - timing doesn't matter. Consistency matters more.",
+          "ar": "أي وقت - التوقيت مش مهم. الاستمرارية أهم."
+        },
+        "details": {
+          "en": "Take same time daily to build habit. Some prefer post-workout with protein shake. Loading phase optional.",
+          "ar": "خده نفس الوقت يومياً عشان تبني عادة. البعض بيفضله بعد التمرين مع شيك البروتين. مرحلة التحميل اختيارية."
+        },
+        "dosage": "5g daily",
+        "withFood": {
+          "en": "With or without food (slightly better absorption with carbs)",
+          "ar": "مع أو من غير أكل (امتصاص أحسن شوية مع الكربوهيدرات)"
+        }
+      },
+      {
+        "name": {
+          "en": "Caffeine/Pre-workout",
+          "ar": "كافيين/بري ووركاوت"
+        },
+        "optimalTiming": {
+          "en": "30-60 minutes before workout",
+          "ar": "30-60 دقيقة قبل التمرين"
+        },
+        "details": {
+          "en": "Avoid taking less than 6 hours before bed to prevent sleep disruption. Cycle off every 8-12 weeks to prevent tolerance.",
+          "ar": "تجنب تاخده قبل النوم بأقل من 6 ساعات عشان متأثرش على النوم. وقفه كل 8-12 أسبوع عشان تمنع التعود."
+        },
+        "dosage": "100-300mg caffeine",
+        "withFood": {
+          "en": "Empty stomach for faster absorption, with food if causes stomach issues",
+          "ar": "معدة فاضية لامتصاص أسرع، مع أكل لو بيسبب مشاكل معدة"
+        }
+      },
+      {
+        "name": {
+          "en": "BCAAs/EAAs",
+          "ar": "أحماض أمينية متفرعة/أساسية"
+        },
+        "optimalTiming": {
+          "en": "During workout or between meals",
+          "ar": "أثناء التمرين أو بين الوجبات"
+        },
+        "details": {
+          "en": "Not necessary if eating adequate protein. More useful for fasted training or very long workouts.",
+          "ar": "مش ضرورية لو بتاكل بروتين كافي. أكتر فايدة للتدريب على معدة فاضية أو التمارين الطويلة جداً."
+        },
+        "dosage": "5-10g",
+        "withFood": {
+          "en": "Can take without food",
+          "ar": "ممكن تاخده من غير أكل"
+        }
+      },
+      {
+        "name": {
+          "en": "Omega-3 Fish Oil",
+          "ar": "أوميجا 3 زيت السمك"
+        },
+        "optimalTiming": {
+          "en": "With a meal containing fat (breakfast or dinner)",
+          "ar": "مع وجبة فيها دهون (فطار أو عشا)"
+        },
+        "details": {
+          "en": "Fat improves absorption. Taking with food also reduces fishy burps.",
+          "ar": "الدهون بتحسن الامتصاص. أخده مع الأكل بيقلل كمان التجشؤ برائحة السمك."
+        },
+        "dosage": "2-3g EPA+DHA daily",
+        "withFood": {
+          "en": "Always with food (fat-soluble)",
+          "ar": "دايماً مع أكل (قابل للذوبان في الدهون)"
+        }
+      },
+      {
+        "name": {
+          "en": "Vitamin D3",
+          "ar": "فيتامين د3"
+        },
+        "optimalTiming": {
+          "en": "Morning with breakfast (fat-containing meal)",
+          "ar": "الصبح مع الفطار (وجبة فيها دهون)"
+        },
+        "details": {
+          "en": "Fat-soluble, so take with food. Morning is best as it may affect sleep if taken late.",
+          "ar": "قابل للذوبان في الدهون، فخده مع أكل. الصبح أحسن لأنه ممكن يأثر على النوم لو اتاخد متأخر."
+        },
+        "dosage": "2000-5000 IU daily (check levels)",
+        "withFood": {
+          "en": "Always with food containing fat",
+          "ar": "دايماً مع أكل فيه دهون"
+        }
+      },
+      {
+        "name": {
+          "en": "Magnesium",
+          "ar": "ماغنسيوم"
+        },
+        "optimalTiming": {
+          "en": "Evening, 1-2 hours before bed",
+          "ar": "المسا، 1-2 ساعة قبل النوم"
+        },
+        "details": {
+          "en": "Promotes relaxation and sleep quality. Magnesium glycinate is best for sleep, citrate for absorption.",
+          "ar": "بيعزز الاسترخاء وجودة النوم. ماغنسيوم جليسينات أحسن للنوم، سيترات للامتصاص."
+        },
+        "dosage": "200-400mg",
+        "withFood": {
+          "en": "With or without food",
+          "ar": "مع أو من غير أكل"
+        }
+      },
+      {
+        "name": {
+          "en": "Zinc",
+          "ar": "زنك"
+        },
+        "optimalTiming": {
+          "en": "Evening, can take with magnesium",
+          "ar": "المسا، ممكن تاخده مع الماغنسيوم"
+        },
+        "details": {
+          "en": "Don't take with high-calcium meals (interferes with absorption). Can cause nausea on empty stomach.",
+          "ar": "متاخدوش مع وجبات عالية الكالسيوم (بتتدخل في الامتصاص). ممكن يسبب غثيان على معدة فاضية."
+        },
+        "dosage": "15-30mg",
+        "withFood": {
+          "en": "With food if sensitive stomach",
+          "ar": "مع أكل لو معدتك حساسة"
+        }
+      },
+      {
+        "name": {
+          "en": "Casein Protein",
+          "ar": "كازين بروتين"
+        },
+        "optimalTiming": {
+          "en": "Before bed or long periods without food",
+          "ar": "قبل النوم أو فترات طويلة من غير أكل"
+        },
+        "details": {
+          "en": "Slow-digesting protein provides amino acids over 6-8 hours. Good for overnight recovery.",
+          "ar": "بروتين بطيء الهضم بيوفر أحماض أمينية لمدة 6-8 ساعات. كويس للاستشفاء الليلي."
+        },
+        "dosage": "20-40g",
+        "withFood": {
+          "en": "Can take alone before bed",
+          "ar": "ممكن تاخده لوحده قبل النوم"
+        }
+      },
+      {
+        "name": {
+          "en": "Beta-Alanine",
+          "ar": "بيتا ألانين"
+        },
+        "optimalTiming": {
+          "en": "Pre-workout (often in pre-workout formulas) or any time daily",
+          "ar": "قبل التمرين (غالباً في تركيبات البري ووركاوت) أو أي وقت يومياً"
+        },
+        "details": {
+          "en": "Causes tingling (paresthesia) - normal and harmless. Benefits come from daily consistent use, not timing.",
+          "ar": "بيسبب تنميل (paresthesia) - طبيعي ومش مضر. الفوايد بتيجي من الاستخدام اليومي المستمر، مش التوقيت."
+        },
+        "dosage": "3-5g daily",
+        "withFood": {
+          "en": "With or without food",
+          "ar": "مع أو من غير أكل"
+        }
+      },
+      {
+        "name": {
+          "en": "Citrulline Malate",
+          "ar": "سيترولين مالات"
+        },
+        "optimalTiming": {
+          "en": "30-60 minutes pre-workout",
+          "ar": "30-60 دقيقة قبل التمرين"
+        },
+        "details": {
+          "en": "Enhances pumps and endurance. Can also be taken during workout.",
+          "ar": "بيعزز الضخ والتحمل. ممكن تاخده كمان أثناء التمرين."
+        },
+        "dosage": "6-8g",
+        "withFood": {
+          "en": "Empty stomach preferred",
+          "ar": "يفضل معدة فاضية"
+        }
+      },
+      {
+        "name": {
+          "en": "Multivitamin",
+          "ar": "ملتي فيتامين"
+        },
+        "optimalTiming": {
+          "en": "Morning with breakfast",
+          "ar": "الصبح مع الفطار"
+        },
+        "details": {
+          "en": "Contains mix of fat and water soluble vitamins. Taking with food improves absorption and reduces stomach upset.",
+          "ar": "فيه مزيج من فيتامينات قابلة للذوبان في الدهون والماء. أخده مع الأكل بيحسن الامتصاص وبيقلل اضطراب المعدة."
+        },
+        "dosage": "As directed on label",
+        "withFood": {
+          "en": "Always with food",
+          "ar": "دايماً مع أكل"
+        }
+      }
+    ]
+  },
+  "supplementStacks": {
+    "title": {
+      "en": "Supplement Stacks by Goal",
+      "ar": "مجموعات المكملات حسب الهدف"
+    },
+    "stacks": [
+      {
+        "goal": {
+          "en": "Beginner/Essential Stack",
+          "ar": "مجموعة المبتدئين/الأساسية"
+        },
+        "description": {
+          "en": "The basics that everyone can benefit from",
+          "ar": "الأساسيات اللي كل الناس ممكن تستفيد منها"
+        },
+        "supplements": [
+          {
+            "name": { "en": "Whey Protein", "ar": "واي بروتين" },
+            "timing": { "en": "Post-workout or with meals", "ar": "بعد التمرين أو مع الوجبات" },
+            "why": { "en": "Helps hit protein goals conveniently", "ar": "بيساعد توصل لهدفك من البروتين بسهولة" }
+          },
+          {
+            "name": { "en": "Creatine Monohydrate", "ar": "كرياتين مونوهيدرات" },
+            "timing": { "en": "5g daily, any time", "ar": "5 جرام يومياً، أي وقت" },
+            "why": { "en": "Most researched, proven for strength and muscle", "ar": "أكتر مكمل مبحوث عنه، مثبت للقوة والعضلات" }
+          },
+          {
+            "name": { "en": "Vitamin D3", "ar": "فيتامين د3" },
+            "timing": { "en": "Morning with food", "ar": "الصبح مع أكل" },
+            "why": { "en": "Most people are deficient, especially in Egypt despite sun", "ar": "معظم الناس ناقصة، حتى في مصر رغم الشمس" }
+          }
+        ],
+        "monthlyEstimate": {
+          "en": "500-800 EGP",
+          "ar": "500-800 جنيه"
+        }
+      },
+      {
+        "goal": {
+          "en": "Muscle Building Stack",
+          "ar": "مجموعة بناء العضلات"
+        },
+        "description": {
+          "en": "Optimized for maximum muscle growth",
+          "ar": "محسنة لأقصى نمو عضلي"
+        },
+        "supplements": [
+          {
+            "name": { "en": "Whey Protein", "ar": "واي بروتين" },
+            "timing": { "en": "Post-workout + between meals", "ar": "بعد التمرين + بين الوجبات" },
+            "why": { "en": "High-quality protein for muscle synthesis", "ar": "بروتين عالي الجودة لتصنيع العضلات" }
+          },
+          {
+            "name": { "en": "Creatine Monohydrate", "ar": "كرياتين مونوهيدرات" },
+            "timing": { "en": "5g daily", "ar": "5 جرام يومياً" },
+            "why": { "en": "Increases strength and muscle volume", "ar": "بيزود القوة وحجم العضلات" }
+          },
+          {
+            "name": { "en": "Pre-workout (with caffeine)", "ar": "بري ووركاوت (مع كافيين)" },
+            "timing": { "en": "30-45 min pre-workout", "ar": "30-45 دقيقة قبل التمرين" },
+            "why": { "en": "Energy and focus for intense training", "ar": "طاقة وتركيز للتدريب الشديد" }
+          },
+          {
+            "name": { "en": "Casein (optional)", "ar": "كازين (اختياري)" },
+            "timing": { "en": "Before bed", "ar": "قبل النوم" },
+            "why": { "en": "Overnight amino acid supply", "ar": "إمداد أحماض أمينية ليلي" }
+          },
+          {
+            "name": { "en": "Omega-3", "ar": "أوميجا 3" },
+            "timing": { "en": "With meals", "ar": "مع الوجبات" },
+            "why": { "en": "Reduces inflammation, supports recovery", "ar": "بيقلل الالتهاب، بيدعم الاستشفاء" }
+          }
+        ],
+        "monthlyEstimate": {
+          "en": "1000-1500 EGP",
+          "ar": "1000-1500 جنيه"
+        }
+      },
+      {
+        "goal": {
+          "en": "Fat Loss Stack",
+          "ar": "مجموعة خسارة الدهون"
+        },
+        "description": {
+          "en": "Supports fat loss while preserving muscle",
+          "ar": "بتدعم خسارة الدهون مع الحفاظ على العضلات"
+        },
+        "supplements": [
+          {
+            "name": { "en": "Whey Protein", "ar": "واي بروتين" },
+            "timing": { "en": "With meals or as snack", "ar": "مع الوجبات أو كسناك" },
+            "why": { "en": "Maintains muscle during calorie deficit, keeps you full", "ar": "بيحافظ على العضلات أثناء العجز، وبيخليك شبعان" }
+          },
+          {
+            "name": { "en": "Caffeine", "ar": "كافيين" },
+            "timing": { "en": "Morning or pre-workout", "ar": "الصبح أو قبل التمرين" },
+            "why": { "en": "Increases metabolism, suppresses appetite, enhances workout", "ar": "بيزود الأيض، بيقلل الشهية، بيحسن التمرين" }
+          },
+          {
+            "name": { "en": "Creatine", "ar": "كرياتين" },
+            "timing": { "en": "5g daily", "ar": "5 جرام يومياً" },
+            "why": { "en": "Maintains strength during cut", "ar": "بيحافظ على القوة أثناء التنشيف" }
+          },
+          {
+            "name": { "en": "Fiber supplement (optional)", "ar": "مكمل ألياف (اختياري)" },
+            "timing": { "en": "Before large meals", "ar": "قبل الوجبات الكبيرة" },
+            "why": { "en": "Increases fullness, supports digestion", "ar": "بيزود الشبع، بيدعم الهضم" }
+          }
+        ],
+        "monthlyEstimate": {
+          "en": "600-1000 EGP",
+          "ar": "600-1000 جنيه"
+        },
+        "note": {
+          "en": "Fat burners are mostly marketing. Caffeine is the only proven fat loss supplement. Focus on diet.",
+          "ar": "حارقات الدهون معظمها تسويق. الكافيين هو المكمل الوحيد المثبت لخسارة الدهون. ركز على الدايت."
+        }
+      },
+      {
+        "goal": {
+          "en": "Recovery & Joint Health Stack",
+          "ar": "مجموعة الاستشفاء وصحة المفاصل"
+        },
+        "description": {
+          "en": "For those training hard who need extra recovery support",
+          "ar": "للي بيتدربوا جامد ومحتاجين دعم استشفاء إضافي"
+        },
+        "supplements": [
+          {
+            "name": { "en": "Omega-3 Fish Oil", "ar": "أوميجا 3 زيت السمك" },
+            "timing": { "en": "With meals", "ar": "مع الوجبات" },
+            "why": { "en": "Anti-inflammatory, joint lubrication", "ar": "مضاد للالتهاب، تزييت المفاصل" }
+          },
+          {
+            "name": { "en": "Magnesium", "ar": "ماغنسيوم" },
+            "timing": { "en": "Evening", "ar": "المسا" },
+            "why": { "en": "Muscle relaxation, sleep quality, reduces cramps", "ar": "استرخاء العضلات، جودة النوم، بيقلل التقلصات" }
+          },
+          {
+            "name": { "en": "Collagen", "ar": "كولاجين" },
+            "timing": { "en": "Morning or evening", "ar": "الصبح أو المسا" },
+            "why": { "en": "Supports joints, tendons, and skin", "ar": "بيدعم المفاصل والأوتار والجلد" }
+          },
+          {
+            "name": { "en": "Vitamin D3 + K2", "ar": "فيتامين د3 + ك2" },
+            "timing": { "en": "Morning with food", "ar": "الصبح مع أكل" },
+            "why": { "en": "Bone health, calcium absorption", "ar": "صحة العظام، امتصاص الكالسيوم" }
+          },
+          {
+            "name": { "en": "Glucosamine + Chondroitin (optional)", "ar": "جلوكوزامين + كوندرويتين (اختياري)" },
+            "timing": { "en": "Any time", "ar": "أي وقت" },
+            "why": { "en": "Joint cartilage support", "ar": "دعم غضروف المفصل" }
+          }
+        ],
+        "monthlyEstimate": {
+          "en": "700-1200 EGP",
+          "ar": "700-1200 جنيه"
+        }
+      },
+      {
+        "goal": {
+          "en": "General Health & Longevity Stack",
+          "ar": "مجموعة الصحة العامة وطول العمر"
+        },
+        "description": {
+          "en": "For overall health, not just gym performance",
+          "ar": "للصحة العامة، مش أداء الجيم بس"
+        },
+        "supplements": [
+          {
+            "name": { "en": "Multivitamin", "ar": "ملتي فيتامين" },
+            "timing": { "en": "Morning with food", "ar": "الصبح مع أكل" },
+            "why": { "en": "Insurance against deficiencies", "ar": "تأمين ضد النقص" }
+          },
+          {
+            "name": { "en": "Omega-3", "ar": "أوميجا 3" },
+            "timing": { "en": "With meals", "ar": "مع الوجبات" },
+            "why": { "en": "Heart and brain health", "ar": "صحة القلب والمخ" }
+          },
+          {
+            "name": { "en": "Vitamin D3", "ar": "فيتامين د3" },
+            "timing": { "en": "Morning", "ar": "الصبح" },
+            "why": { "en": "Immune function, mood, bone health", "ar": "وظيفة المناعة، المزاج، صحة العظام" }
+          },
+          {
+            "name": { "en": "Magnesium", "ar": "ماغنسيوم" },
+            "timing": { "en": "Evening", "ar": "المسا" },
+            "why": { "en": "Sleep, stress, muscle function", "ar": "النوم، الضغط، وظيفة العضلات" }
+          },
+          {
+            "name": { "en": "Probiotics", "ar": "بروبيوتيكس" },
+            "timing": { "en": "Morning, empty stomach or with food", "ar": "الصبح، معدة فاضية أو مع أكل" },
+            "why": { "en": "Gut health, immune support", "ar": "صحة الأمعاء، دعم المناعة" }
+          }
+        ],
+        "monthlyEstimate": {
+          "en": "600-900 EGP",
+          "ar": "600-900 جنيه"
+        }
+      }
+    ]
+  },
+  "dailyScheduleExample": {
+    "title": {
+      "en": "Example Daily Supplement Schedule",
+      "ar": "مثال جدول المكملات اليومي"
+    },
+    "schedule": [
+      {
+        "time": {
+          "en": "Morning (with breakfast)",
+          "ar": "الصبح (مع الفطار)"
+        },
+        "supplements": {
+          "en": ["Multivitamin", "Vitamin D3", "Omega-3"],
+          "ar": ["ملتي فيتامين", "فيتامين د3", "أوميجا 3"]
+        }
+      },
+      {
+        "time": {
+          "en": "Pre-workout (30-60 min before)",
+          "ar": "قبل التمرين (30-60 دقيقة قبل)"
+        },
+        "supplements": {
+          "en": ["Pre-workout or Caffeine", "Citrulline (optional)"],
+          "ar": ["بري ووركاوت أو كافيين", "سيترولين (اختياري)"]
+        }
+      },
+      {
+        "time": {
+          "en": "Post-workout",
+          "ar": "بعد التمرين"
+        },
+        "supplements": {
+          "en": ["Whey Protein", "Creatine"],
+          "ar": ["واي بروتين", "كرياتين"]
+        }
+      },
+      {
+        "time": {
+          "en": "Evening (with dinner)",
+          "ar": "المسا (مع العشا)"
+        },
+        "supplements": {
+          "en": ["Omega-3 (second dose if needed)"],
+          "ar": ["أوميجا 3 (جرعة تانية لو محتاج)"]
+        }
+      },
+      {
+        "time": {
+          "en": "Before bed",
+          "ar": "قبل النوم"
+        },
+        "supplements": {
+          "en": ["Magnesium", "Zinc", "Casein (optional)"],
+          "ar": ["ماغنسيوم", "زنك", "كازين (اختياري)"]
+        }
+      }
+    ]
+  },
+  "whatToAvoid": {
+    "title": {
+      "en": "Supplements to Avoid or Be Cautious With",
+      "ar": "مكملات تتجنبها أو تكون حذر منها"
+    },
+    "items": [
+      {
+        "supplement": {
+          "en": "Proprietary Blends",
+          "ar": "الخلطات الخاصة"
+        },
+        "reason": {
+          "en": "You don't know how much of each ingredient you're getting. Look for transparent labels.",
+          "ar": "متعرفش كام من كل مكون بتاخد. دور على الليبلز الشفافة."
+        }
+      },
+      {
+        "supplement": {
+          "en": "Fat Burners",
+          "ar": "حارقات الدهون"
+        },
+        "reason": {
+          "en": "Mostly caffeine with other unproven ingredients at high prices. Just use caffeine.",
+          "ar": "معظمها كافيين مع مكونات تانية مش مثبتة بأسعار عالية. استخدم كافيين بس."
+        }
+      },
+      {
+        "supplement": {
+          "en": "Testosterone Boosters",
+          "ar": "معززات التستوستيرون"
+        },
+        "reason": {
+          "en": "No natural supplement significantly increases testosterone. Save your money.",
+          "ar": "مفيش مكمل طبيعي بيزود التستوستيرون بشكل كبير. وفر فلوسك."
+        }
+      },
+      {
+        "supplement": {
+          "en": "Weight Gainers",
+          "ar": "جينرز"
+        },
+        "reason": {
+          "en": "Usually just protein + sugar at a markup. Make your own shake with oats and peanut butter.",
+          "ar": "عادة بروتين + سكر بسعر زيادة. اعمل شيك بنفسك بالشوفان وزبدة الفول السوداني."
+        }
+      },
+      {
+        "supplement": {
+          "en": "Underdosed Pre-workouts",
+          "ar": "بري ووركاوت بجرعات قليلة"
+        },
+        "reason": {
+          "en": "Check that ingredients match effective dosages (3-5g creatine, 6-8g citrulline, 3-5g beta-alanine).",
+          "ar": "اتأكد إن المكونات بتطابق الجرعات الفعالة (3-5 جرام كرياتين، 6-8 جرام سيترولين، 3-5 جرام بيتا ألانين)."
+        }
+      },
+      {
+        "supplement": {
+          "en": "Unknown/Unregulated Brands",
+          "ar": "براندات مش معروفة/مش منظمة"
+        },
+        "reason": {
+          "en": "Stick to reputable brands. Cheap supplements may contain fillers or contaminants.",
+          "ar": "التزم بالبراندات المحترمة. المكملات الرخيصة ممكن تحتوي على حشو أو ملوثات."
+        }
+      }
+    ]
+  },
+  "egyptSpecific": {
+    "title": {
+      "en": "Buying Supplements in Egypt",
+      "ar": "شراء المكملات في مصر"
+    },
+    "tips": [
+      {
+        "tip": {
+          "en": "Check Expiry Dates",
+          "ar": "اتأكد من تاريخ الانتهاء"
+        },
+        "details": {
+          "en": "Some shops sell expired or near-expiry products. Always check.",
+          "ar": "بعض المحلات بتبيع منتجات منتهية أو قربت تنتهي. دايماً اتأكد."
+        }
+      },
+      {
+        "tip": {
+          "en": "Buy from Reputable Sources",
+          "ar": "اشتري من مصادر موثوقة"
+        },
+        "details": {
+          "en": "Stick to known supplement shops or official distributor websites. Avoid random Facebook sellers.",
+          "ar": "التزم بمحلات المكملات المعروفة أو مواقع الموزعين الرسميين. تجنب بياعين الفيسبوك العشوائيين."
+        }
+      },
+      {
+        "tip": {
+          "en": "Consider Local Brands",
+          "ar": "فكر في البراندات المحلية"
+        },
+        "details": {
+          "en": "Some local brands offer good quality at lower prices. Check reviews first.",
+          "ar": "بعض البراندات المحلية بتقدم جودة كويسة بأسعار أقل. شوف الريفيوز الأول."
+        }
+      },
+      {
+        "tip": {
+          "en": "Watch for Fakes",
+          "ar": "خلي بالك من المغشوشة"
+        },
+        "details": {
+          "en": "Popular brands get counterfeited. Compare to official packaging, check seals.",
+          "ar": "البراندات المشهورة بيتعمل منها مقلدة. قارن مع التغليف الرسمي، اتأكد من السيلز."
+        }
+      }
+    ],
+    "trustedShops": {
+      "title": {
+        "en": "Trusted Supplement Shops",
+        "ar": "محلات مكملات موثوقة"
+      },
+      "note": {
+        "en": "These are commonly recommended - always do your own research",
+        "ar": "دول عادة بيتنصح بيهم - دايماً اعمل بحثك الخاص"
+      },
+      "shops": [
+        "Max Muscle Egypt",
+        "Nutrition Hub",
+        "Pro Nutrition Egypt",
+        "iHerb (ships to Egypt)",
+        "Sporter (ships to Egypt)"
+      ]
+    }
+  },
+  "interactionWarnings": {
+    "title": {
+      "en": "Supplement Interactions to Know",
+      "ar": "تفاعلات المكملات اللي لازم تعرفها"
+    },
+    "interactions": [
+      {
+        "interaction": {
+          "en": "Calcium + Iron",
+          "ar": "كالسيوم + حديد"
+        },
+        "effect": {
+          "en": "Calcium reduces iron absorption. Take separately (4+ hours apart).",
+          "ar": "الكالسيوم بيقلل امتصاص الحديد. خدهم منفصلين (4+ ساعات بين بينهم)."
+        }
+      },
+      {
+        "interaction": {
+          "en": "Caffeine + Creatine",
+          "ar": "كافيين + كرياتين"
+        },
+        "effect": {
+          "en": "Some concern caffeine may reduce creatine benefits. Not well established - probably fine together.",
+          "ar": "بعض القلق إن الكافيين ممكن يقلل فوايد الكرياتين. مش مثبت كويس - غالباً كويسين مع بعض."
+        }
+      },
+      {
+        "interaction": {
+          "en": "Zinc + Copper",
+          "ar": "زنك + نحاس"
+        },
+        "effect": {
+          "en": "High-dose zinc can deplete copper over time. Use zinc supplement with copper included.",
+          "ar": "زنك بجرعات عالية ممكن يستنزف النحاس مع الوقت. استخدم مكمل زنك فيه نحاس."
+        }
+      },
+      {
+        "interaction": {
+          "en": "Fat-soluble vitamins (A, D, E, K)",
+          "ar": "فيتامينات قابلة للذوبان في الدهون (أ، د، هـ، ك)"
+        },
+        "effect": {
+          "en": "Take with food containing fat for proper absorption.",
+          "ar": "خدهم مع أكل فيه دهون للامتصاص الصح."
+        }
+      },
+      {
+        "interaction": {
+          "en": "Supplements + Medications",
+          "ar": "مكملات + أدوية"
+        },
+        "effect": {
+          "en": "Always tell your doctor about supplements if taking medications. Some interact dangerously.",
+          "ar": "دايماً قول لدكتورك عن المكملات لو بتاخد أدوية. بعضها بيتفاعل بشكل خطير."
+        }
+      }
+    ]
+  }
+}
