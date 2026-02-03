@@ -21,6 +21,7 @@
     "db:migrate:prod": "prisma migrate deploy",
     "db:seed": "ts-node prisma/seed.ts",
     "db:seed:foods": "ts-node prisma/seed-foods.ts",
+    "db:seed:demo": "ts-node prisma/seed-demo-user.ts",
     "db:studio": "prisma studio"
   },
   "dependencies": {
