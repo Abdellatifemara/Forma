@@ -1,0 +1,613 @@
+{
+  "warmupRoutines": [
+    {
+      "id": "general-warmup",
+      "name": {
+        "en": "General Warm-up",
+        "ar": "إحماء عام"
+      },
+      "duration": "5-10 minutes",
+      "description": {
+        "en": "A comprehensive warm-up suitable for any workout",
+        "ar": "إحماء شامل مناسب لأي تمرين"
+      },
+      "exercises": [
+        {
+          "name": { "en": "Jumping Jacks", "ar": "جمبنج جاكس" },
+          "duration": "30 seconds",
+          "instructions": {
+            "en": "Jump while spreading legs and raising arms overhead, then return to standing position",
+            "ar": "اقفز مع فتح رجليك ورفع ذراعيك فوق راسك، ثم ارجع لوضع الوقوف"
+          }
+        },
+        {
+          "name": { "en": "Arm Circles", "ar": "دوائر الذراع" },
+          "duration": "30 seconds each direction",
+          "instructions": {
+            "en": "Extend arms to sides and make small to large circles, forward then backward",
+            "ar": "افرد ذراعيك للجنب واعمل دوائر صغيرة لكبيرة، للأمام ثم للخلف"
+          }
+        },
+        {
+          "name": { "en": "Leg Swings", "ar": "أرجحة الساق" },
+          "duration": "10 swings each leg",
+          "instructions": {
+            "en": "Hold onto something for balance, swing one leg forward and back in a controlled manner",
+            "ar": "امسك حاجة للتوازن، ارجح رجل واحدة للأمام والخلف بتحكم"
+          }
+        },
+        {
+          "name": { "en": "Hip Circles", "ar": "دوائر الورك" },
+          "duration": "10 circles each direction",
+          "instructions": {
+            "en": "Hands on hips, make large circles with your hips clockwise then counterclockwise",
+            "ar": "إيديك على وركك، اعمل دوائر كبيرة بوركك في اتجاه عقارب الساعة ثم عكسها"
+          }
+        },
+        {
+          "name": { "en": "High Knees", "ar": "رفع الركب العالي" },
+          "duration": "30 seconds",
+          "instructions": {
+            "en": "Jog in place, bringing knees up to hip height with each step",
+            "ar": "اجري في مكانك، وارفع ركبتيك لمستوى الورك مع كل خطوة"
+          }
+        },
+        {
+          "name": { "en": "Butt Kicks", "ar": "ركل المؤخرة" },
+          "duration": "30 seconds",
+          "instructions": {
+            "en": "Jog in place, kicking heels up toward your glutes with each step",
+            "ar": "اجري في مكانك، واركل كعبيك لمؤخرتك مع كل خطوة"
+          }
+        },
+        {
+          "name": { "en": "Torso Twists", "ar": "لف الجذع" },
+          "duration": "20 twists",
+          "instructions": {
+            "en": "Feet shoulder-width apart, rotate torso left and right with arms at shoulder height",
+            "ar": "رجليك بعرض الكتفين، دور جذعك يمين وشمال وذراعيك على مستوى الكتف"
+          }
+        }
+      ]
+    },
+    {
+      "id": "upper-body-warmup",
+      "name": {
+        "en": "Upper Body Warm-up",
+        "ar": "إحماء الجزء العلوي"
+      },
+      "duration": "5 minutes",
+      "description": {
+        "en": "Specific warm-up for chest, back, shoulders, and arms training",
+        "ar": "إحماء مخصص لتدريب الصدر والظهر والكتف والذراعين"
+      },
+      "exercises": [
+        {
+          "name": { "en": "Arm Circles", "ar": "دوائر الذراع" },
+          "duration": "30 seconds each direction",
+          "instructions": {
+            "en": "Small circles progressing to large circles, forward then backward",
+            "ar": "دوائر صغيرة تتقدم لكبيرة، للأمام ثم للخلف"
+          }
+        },
+        {
+          "name": { "en": "Shoulder Rolls", "ar": "دحرجة الكتف" },
+          "duration": "10 rolls each direction",
+          "instructions": {
+            "en": "Roll shoulders forward then backward in a controlled manner",
+            "ar": "دحرج كتفيك للأمام ثم للخلف بتحكم"
+          }
+        },
+        {
+          "name": { "en": "Band Pull-Aparts", "ar": "سحب الباند" },
+          "duration": "15 reps",
+          "instructions": {
+            "en": "Hold resistance band in front, pull apart until band touches chest",
+            "ar": "امسك باند المقاومة قدامك، اسحب لغاية ما الباند يلمس صدرك"
+          }
+        },
+        {
+          "name": { "en": "Wall Angels", "ar": "ملائكة الحائط" },
+          "duration": "10 reps",
+          "instructions": {
+            "en": "Stand with back against wall, arms in W position, slide up to Y position",
+            "ar": "قف وظهرك على الحيطة، ذراعيك في وضع W، اسحب لفوق لوضع Y"
+          }
+        },
+        {
+          "name": { "en": "Cat-Cow Stretch", "ar": "تمرين القطة-البقرة" },
+          "duration": "10 cycles",
+          "instructions": {
+            "en": "On all fours, alternate between arching back (cat) and dropping belly (cow)",
+            "ar": "على الأربع، بدّل بين تقويس الظهر (قطة) وإنزال البطن (بقرة)"
+          }
+        },
+        {
+          "name": { "en": "Light Push-ups", "ar": "ضغط خفيف" },
+          "duration": "10 reps",
+          "instructions": {
+            "en": "Perform slow, controlled push-ups to warm up chest and triceps",
+            "ar": "اعمل ضغط بطيء ومتحكم لإحماء الصدر والتراي"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lower-body-warmup",
+      "name": {
+        "en": "Lower Body Warm-up",
+        "ar": "إحماء الجزء السفلي"
+      },
+      "duration": "5 minutes",
+      "description": {
+        "en": "Specific warm-up for legs and glutes training",
+        "ar": "إحماء مخصص لتدريب الرجلين والمؤخرة"
+      },
+      "exercises": [
+        {
+          "name": { "en": "Leg Swings (Forward/Back)", "ar": "أرجحة الساق (للأمام/للخلف)" },
+          "duration": "10 swings each leg",
+          "instructions": {
+            "en": "Swing leg forward and backward in a controlled manner",
+            "ar": "ارجح رجلك للأمام والخلف بتحكم"
+          }
+        },
+        {
+          "name": { "en": "Leg Swings (Side to Side)", "ar": "أرجحة الساق (جنب لجنب)" },
+          "duration": "10 swings each leg",
+          "instructions": {
+            "en": "Swing leg across body and out to the side",
+            "ar": "ارجح رجلك عبر جسمك وللخارج"
+          }
+        },
+        {
+          "name": { "en": "Bodyweight Squats", "ar": "سكوات بوزن الجسم" },
+          "duration": "15 reps",
+          "instructions": {
+            "en": "Perform slow, controlled squats focusing on depth and form",
+            "ar": "اعمل سكوات بطيء ومتحكم مع التركيز على العمق والشكل"
+          }
+        },
+        {
+          "name": { "en": "Walking Lunges", "ar": "لانج مشي" },
+          "duration": "10 steps each leg",
+          "instructions": {
+            "en": "Step forward into lunge, alternate legs while walking forward",
+            "ar": "اخطو للأمام في لانج، بدّل الرجلين وأنت ماشي"
+          }
+        },
+        {
+          "name": { "en": "Glute Bridges", "ar": "جسر المؤخرة" },
+          "duration": "15 reps",
+          "instructions": {
+            "en": "Lie on back, drive hips up squeezing glutes at top",
+            "ar": "استلقِ على ظهرك، ادفع وركك لفوق واشد مؤخرتك في الأعلى"
+          }
+        },
+        {
+          "name": { "en": "Hip Circles", "ar": "دوائر الورك" },
+          "duration": "10 circles each direction",
+          "instructions": {
+            "en": "On all fours, draw circles with your knee",
+            "ar": "على الأربع، ارسم دوائر بركبتك"
+          }
+        }
+      ]
+    }
+  ],
+  "stretchingRoutines": [
+    {
+      "id": "full-body-stretch",
+      "name": {
+        "en": "Full Body Stretch",
+        "ar": "تمديد الجسم الكامل"
+      },
+      "duration": "10-15 minutes",
+      "type": "static",
+      "description": {
+        "en": "Complete stretching routine for post-workout recovery",
+        "ar": "روتين تمديد كامل للاستشفاء بعد التمرين"
+      },
+      "stretches": [
+        {
+          "name": { "en": "Neck Stretch", "ar": "تمديد الرقبة" },
+          "duration": "30 seconds each side",
+          "musclesTargeted": ["Neck", "Trapezius"],
+          "instructions": {
+            "en": "Gently tilt head to one side, bringing ear toward shoulder. Use hand for gentle pressure.",
+            "ar": "ميّل راسك بلطف لجانب واحد، وقرّب ودنك من كتفك. استخدم إيدك لضغط لطيف."
+          }
+        },
+        {
+          "name": { "en": "Chest Doorway Stretch", "ar": "تمديد الصدر في الباب" },
+          "duration": "30 seconds each arm",
+          "musclesTargeted": ["Chest", "Front Deltoids"],
+          "instructions": {
+            "en": "Place forearm on doorframe at 90 degrees, step forward and rotate away from arm.",
+            "ar": "حط ساعدك على إطار الباب بزاوية 90 درجة، اخطو للأمام ودور بعيد عن ذراعك."
+          }
+        },
+        {
+          "name": { "en": "Cross-Body Shoulder Stretch", "ar": "تمديد الكتف العابر" },
+          "duration": "30 seconds each arm",
+          "musclesTargeted": ["Rear Deltoids", "Rhomboids"],
+          "instructions": {
+            "en": "Bring one arm across body, use other arm to pull it closer to chest.",
+            "ar": "قرّب ذراع واحد عبر جسمك، استخدم الذراع التاني لسحبه لصدرك."
+          }
+        },
+        {
+          "name": { "en": "Triceps Overhead Stretch", "ar": "تمديد التراي فوق الرأس" },
+          "duration": "30 seconds each arm",
+          "musclesTargeted": ["Triceps"],
+          "instructions": {
+            "en": "Raise one arm overhead, bend elbow to reach down back. Use other hand to gently push elbow.",
+            "ar": "ارفع ذراع واحد فوق راسك، اثنِ المرفق للوصول لظهرك. استخدم اليد التانية لدفع المرفق بلطف."
+          }
+        },
+        {
+          "name": { "en": "Standing Quad Stretch", "ar": "تمديد الفخذ الأمامي واقف" },
+          "duration": "30 seconds each leg",
+          "musclesTargeted": ["Quadriceps", "Hip Flexors"],
+          "instructions": {
+            "en": "Stand on one leg, grab opposite ankle and pull heel toward glute. Keep knees together.",
+            "ar": "قف على رجل واحدة، امسك الكاحل المقابل واسحب الكعب لمؤخرتك. خلّي ركبتيك مع بعض."
+          }
+        },
+        {
+          "name": { "en": "Standing Hamstring Stretch", "ar": "تمديد الفخذ الخلفي واقف" },
+          "duration": "30 seconds each leg",
+          "musclesTargeted": ["Hamstrings", "Lower Back"],
+          "instructions": {
+            "en": "Place heel on elevated surface, keep leg straight, hinge at hips reaching toward toes.",
+            "ar": "حط كعبك على سطح مرتفع، خلّي رجلك مفرودة، انحني من الورك للوصول لصوابعك."
+          }
+        },
+        {
+          "name": { "en": "Hip Flexor Stretch", "ar": "تمديد ثنيات الورك" },
+          "duration": "30 seconds each side",
+          "musclesTargeted": ["Hip Flexors", "Quadriceps"],
+          "instructions": {
+            "en": "Kneel on one knee, front foot flat on floor, push hips forward while keeping torso upright.",
+            "ar": "اركع على ركبة واحدة، القدم الأمامية مسطحة على الأرض، ادفع وركك للأمام مع الحفاظ على جذعك منتصب."
+          }
+        },
+        {
+          "name": { "en": "Pigeon Pose", "ar": "وضعية الحمامة" },
+          "duration": "30-60 seconds each side",
+          "musclesTargeted": ["Glutes", "Hip Rotators"],
+          "instructions": {
+            "en": "From all fours, bring one knee forward behind wrist, extend other leg back. Lower hips toward floor.",
+            "ar": "من الأربع، قرّب ركبة واحدة للأمام ورا معصمك، افرد الرجل التانية للخلف. أنزل وركك للأرض."
+          }
+        },
+        {
+          "name": { "en": "Seated Forward Fold", "ar": "الانحناء للأمام جالس" },
+          "duration": "30-45 seconds",
+          "musclesTargeted": ["Hamstrings", "Lower Back", "Calves"],
+          "instructions": {
+            "en": "Sit with legs extended, reach forward toward toes keeping back as flat as possible.",
+            "ar": "اقعد ورجليك مفرودة، امتد للأمام ناحية صوابعك مع الحفاظ على ظهرك مسطح قدر الإمكان."
+          }
+        },
+        {
+          "name": { "en": "Lying Spinal Twist", "ar": "لف العمود الفقري نائم" },
+          "duration": "30 seconds each side",
+          "musclesTargeted": ["Lower Back", "Obliques", "Glutes"],
+          "instructions": {
+            "en": "Lie on back, bring one knee across body while keeping shoulders flat on floor.",
+            "ar": "استلقِ على ظهرك، قرّب ركبة واحدة عبر جسمك مع الحفاظ على كتفيك مسطحين على الأرض."
+          }
+        },
+        {
+          "name": { "en": "Child's Pose", "ar": "وضعية الطفل" },
+          "duration": "45-60 seconds",
+          "musclesTargeted": ["Lower Back", "Lats", "Shoulders"],
+          "instructions": {
+            "en": "Kneel and sit back on heels, reach arms forward on floor, relax head between arms.",
+            "ar": "اركع واقعد على كعبيك، افرد ذراعيك للأمام على الأرض، استرخي راسك بين ذراعيك."
+          }
+        },
+        {
+          "name": { "en": "Calf Stretch", "ar": "تمديد السمانة" },
+          "duration": "30 seconds each leg",
+          "musclesTargeted": ["Gastrocnemius", "Soleus"],
+          "instructions": {
+            "en": "Stand facing wall, place hands on wall, step one leg back keeping heel on floor. Lean forward.",
+            "ar": "قف قدام الحيطة، حط إيديك على الحيطة، ارجع رجل واحدة للخلف مع الحفاظ على الكعب على الأرض. ميّل للأمام."
+          }
+        }
+      ]
+    },
+    {
+      "id": "quick-office-stretch",
+      "name": {
+        "en": "Quick Office Stretch",
+        "ar": "تمديد سريع للمكتب"
+      },
+      "duration": "5 minutes",
+      "type": "static",
+      "description": {
+        "en": "Quick stretches you can do at your desk to relieve tension",
+        "ar": "تمديدات سريعة ممكن تعملها على مكتبك لتخفيف التوتر"
+      },
+      "stretches": [
+        {
+          "name": { "en": "Neck Rolls", "ar": "دحرجة الرقبة" },
+          "duration": "30 seconds",
+          "musclesTargeted": ["Neck"],
+          "instructions": {
+            "en": "Slowly roll head in a circle, then reverse direction.",
+            "ar": "دحرج راسك ببطء في دائرة، ثم اعكس الاتجاه."
+          }
+        },
+        {
+          "name": { "en": "Shoulder Shrugs", "ar": "رفع الكتف" },
+          "duration": "10 reps",
+          "musclesTargeted": ["Trapezius"],
+          "instructions": {
+            "en": "Raise shoulders toward ears, hold briefly, then relax down.",
+            "ar": "ارفع كتفيك ناحية ودانك، استمر لحظة، ثم استرخي."
+          }
+        },
+        {
+          "name": { "en": "Seated Spinal Twist", "ar": "لف العمود الفقري جالس" },
+          "duration": "20 seconds each side",
+          "musclesTargeted": ["Lower Back", "Obliques"],
+          "instructions": {
+            "en": "Sit tall, twist torso to one side holding the chair back.",
+            "ar": "اقعد منتصب، دور جذعك لجانب واحد وامسك ظهر الكرسي."
+          }
+        },
+        {
+          "name": { "en": "Wrist Circles", "ar": "دوائر المعصم" },
+          "duration": "10 circles each direction",
+          "musclesTargeted": ["Forearms", "Wrists"],
+          "instructions": {
+            "en": "Extend arms and make circles with your wrists.",
+            "ar": "افرد ذراعيك واعمل دوائر بمعصميك."
+          }
+        },
+        {
+          "name": { "en": "Seated Figure Four", "ar": "الرقم أربعة جالس" },
+          "duration": "30 seconds each side",
+          "musclesTargeted": ["Glutes", "Hip Rotators"],
+          "instructions": {
+            "en": "Cross one ankle over opposite knee, gently press down on raised knee.",
+            "ar": "ضع كاحل واحد فوق الركبة المقابلة، اضغط بلطف على الركبة المرفوعة."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pre-sleep-stretch",
+      "name": {
+        "en": "Pre-Sleep Relaxation Stretch",
+        "ar": "تمديد الاسترخاء قبل النوم"
+      },
+      "duration": "10 minutes",
+      "type": "static",
+      "description": {
+        "en": "Gentle stretches to relax your body and prepare for sleep",
+        "ar": "تمديدات لطيفة لاسترخاء جسمك والاستعداد للنوم"
+      },
+      "stretches": [
+        {
+          "name": { "en": "Child's Pose", "ar": "وضعية الطفل" },
+          "duration": "60 seconds",
+          "musclesTargeted": ["Lower Back", "Shoulders"],
+          "instructions": {
+            "en": "Kneel and sit back on heels, reach arms forward, breathe deeply.",
+            "ar": "اركع واقعد على كعبيك، افرد ذراعيك للأمام، اتنفس بعمق."
+          }
+        },
+        {
+          "name": { "en": "Supine Twist", "ar": "اللف المستلقي" },
+          "duration": "45 seconds each side",
+          "musclesTargeted": ["Lower Back", "Spine"],
+          "instructions": {
+            "en": "Lie on back, bring knees to chest, let them fall to one side while keeping shoulders down.",
+            "ar": "استلقِ على ظهرك، قرّب ركبتيك لصدرك، سيبهم ينزلوا لجانب واحد مع الحفاظ على كتفيك تحت."
+          }
+        },
+        {
+          "name": { "en": "Legs Up The Wall", "ar": "الرجلين على الحيطة" },
+          "duration": "2-3 minutes",
+          "musclesTargeted": ["Hamstrings", "Lower Back"],
+          "instructions": {
+            "en": "Lie on back with legs extended up against a wall. Let arms rest by sides.",
+            "ar": "استلقِ على ظهرك ورجليك مفرودة لفوق على الحيطة. سيب ذراعيك ترتاح جنبك."
+          }
+        },
+        {
+          "name": { "en": "Happy Baby", "ar": "الطفل السعيد" },
+          "duration": "45 seconds",
+          "musclesTargeted": ["Hips", "Lower Back"],
+          "instructions": {
+            "en": "Lie on back, grab outsides of feet, bring knees toward armpits.",
+            "ar": "استلقِ على ظهرك، امسك برة قدميك، قرّب ركبتيك ناحية إبطك."
+          }
+        },
+        {
+          "name": { "en": "Corpse Pose", "ar": "وضعية الجثة" },
+          "duration": "2-3 minutes",
+          "musclesTargeted": ["Full Body Relaxation"],
+          "instructions": {
+            "en": "Lie flat on back, arms at sides palms up, close eyes and breathe deeply.",
+            "ar": "استلقِ مسطح على ظهرك، ذراعيك جنبك وراحة يدك لفوق، اقفل عينيك واتنفس بعمق."
+          }
+        }
+      ]
+    }
+  ],
+  "mobilityDrills": [
+    {
+      "id": "shoulder-mobility",
+      "name": {
+        "en": "Shoulder Mobility Drills",
+        "ar": "تمارين مرونة الكتف"
+      },
+      "duration": "5 minutes",
+      "description": {
+        "en": "Improve shoulder range of motion and prevent injury",
+        "ar": "تحسين مدى حركة الكتف ومنع الإصابة"
+      },
+      "drills": [
+        {
+          "name": { "en": "Shoulder Dislocates", "ar": "خلع الكتف (بالعصا)" },
+          "reps": "10 passes",
+          "instructions": {
+            "en": "Hold a stick/band wide, pass it overhead and behind your back, keeping arms straight.",
+            "ar": "امسك عصا/باند عريض، عدّيها فوق راسك وورا ظهرك، مع الحفاظ على ذراعيك مفرودين."
+          }
+        },
+        {
+          "name": { "en": "Wall Slides", "ar": "انزلاق الحيطة" },
+          "reps": "10 reps",
+          "instructions": {
+            "en": "Stand with back against wall, arms in W position, slide up to Y and back down.",
+            "ar": "قف وظهرك على الحيطة، ذراعيك في وضع W، انزلق لفوق لوضع Y وارجع."
+          }
+        },
+        {
+          "name": { "en": "Thread the Needle", "ar": "خيط الإبرة" },
+          "reps": "8 each side",
+          "instructions": {
+            "en": "On all fours, reach one arm under body and twist, then open up toward ceiling.",
+            "ar": "على الأربع، مد ذراع واحد تحت جسمك ودور، ثم افتح ناحية السقف."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hip-mobility",
+      "name": {
+        "en": "Hip Mobility Drills",
+        "ar": "تمارين مرونة الورك"
+      },
+      "duration": "5 minutes",
+      "description": {
+        "en": "Improve hip range of motion for better squats and overall movement",
+        "ar": "تحسين مدى حركة الورك لسكوات أفضل وحركة عامة"
+      },
+      "drills": [
+        {
+          "name": { "en": "90/90 Hip Stretch", "ar": "تمديد الورك 90/90" },
+          "reps": "45 seconds each side",
+          "instructions": {
+            "en": "Sit with front leg at 90 degrees, back leg at 90 degrees behind. Rotate between positions.",
+            "ar": "اقعد والرجل الأمامية 90 درجة، والخلفية 90 درجة ورا. دور بين الوضعين."
+          }
+        },
+        {
+          "name": { "en": "Frog Stretch", "ar": "تمديد الضفدعة" },
+          "reps": "45 seconds",
+          "instructions": {
+            "en": "On all fours, spread knees wide, rock hips back and forward.",
+            "ar": "على الأربع، افتح ركبتيك واسع، رجّح وركك للخلف وللأمام."
+          }
+        },
+        {
+          "name": { "en": "Hip Circles (Quadruped)", "ar": "دوائر الورك (على الأربع)" },
+          "reps": "10 each direction per leg",
+          "instructions": {
+            "en": "On all fours, draw circles with your knee while keeping core stable.",
+            "ar": "على الأربع، ارسم دوائر بركبتك مع الحفاظ على ثبات بطنك."
+          }
+        },
+        {
+          "name": { "en": "Deep Squat Hold", "ar": "ثبات السكوات العميق" },
+          "reps": "30-60 seconds",
+          "instructions": {
+            "en": "Sit in the bottom of a squat position, using elbows to push knees out.",
+            "ar": "اقعد في أسفل وضع السكوات، استخدم مرفقيك لدفع ركبتيك للخارج."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ankle-mobility",
+      "name": {
+        "en": "Ankle Mobility Drills",
+        "ar": "تمارين مرونة الكاحل"
+      },
+      "duration": "3 minutes",
+      "description": {
+        "en": "Improve ankle dorsiflexion for better squats and athletic performance",
+        "ar": "تحسين انثناء الكاحل الظهري لسكوات أفضل وأداء رياضي"
+      },
+      "drills": [
+        {
+          "name": { "en": "Ankle Circles", "ar": "دوائر الكاحل" },
+          "reps": "10 each direction per ankle",
+          "instructions": {
+            "en": "Lift foot off ground, draw circles with your toes.",
+            "ar": "ارفع قدمك عن الأرض، ارسم دوائر بصوابعك."
+          }
+        },
+        {
+          "name": { "en": "Wall Ankle Stretch", "ar": "تمديد الكاحل على الحيطة" },
+          "reps": "30 seconds each ankle",
+          "instructions": {
+            "en": "Face wall, place toes on wall with heel on ground. Lean forward keeping heel down.",
+            "ar": "واجه الحيطة، حط صوابعك على الحيطة والكعب على الأرض. ميّل للأمام مع الحفاظ على الكعب تحت."
+          }
+        },
+        {
+          "name": { "en": "Banded Ankle Distraction", "ar": "شد الكاحل بالباند" },
+          "reps": "30 seconds each ankle",
+          "instructions": {
+            "en": "Loop band around front ankle, step forward into lunge, drive knee forward over toes.",
+            "ar": "لف الباند حول الكاحل الأمامي، اخطو للأمام في لانج، ادفع ركبتك للأمام فوق صوابعك."
+          }
+        }
+      ]
+    }
+  ],
+  "tips": {
+    "warmup": {
+      "en": [
+        "Never skip warming up - it prevents injury and improves performance",
+        "Warm-up should gradually increase heart rate and body temperature",
+        "Dynamic stretches are better than static stretches before training",
+        "Spend extra time on areas that feel tight or will be heavily trained"
+      ],
+      "ar": [
+        "ما تتخطاش الإحماء أبداً - بيمنع الإصابة ويحسن الأداء",
+        "الإحماء لازم يزود نبض القلب ودرجة حرارة الجسم تدريجياً",
+        "التمديدات الديناميكية أحسن من الثابتة قبل التدريب",
+        "اقضِ وقت أكتر على المناطق المشدودة أو اللي هتتدرب بقوة"
+      ]
+    },
+    "stretching": {
+      "en": [
+        "Static stretching is best done after training, not before",
+        "Hold each stretch for at least 20-30 seconds",
+        "Breathe deeply and relax into each stretch",
+        "Never bounce while stretching - smooth and controlled",
+        "Stretch to the point of mild discomfort, never pain"
+      ],
+      "ar": [
+        "التمديد الثابت أحسن بعد التدريب، مش قبله",
+        "استمر في كل تمديد على الأقل 20-30 ثانية",
+        "اتنفس بعمق واسترخي في كل تمديد",
+        "ما تعملش ارتداد أثناء التمديد - سلس ومتحكم",
+        "مدد لحد ما تحس بضيق خفيف، مش ألم أبداً"
+      ]
+    },
+    "mobility": {
+      "en": [
+        "Mobility work is different from stretching - it's active movement",
+        "Consistency is key - do mobility work daily for best results",
+        "Focus on areas that limit your exercise performance",
+        "Can be done as a warm-up or on rest days"
+      ],
+      "ar": [
+        "شغل المرونة مختلف عن التمديد - هو حركة نشطة",
+        "الاستمرارية مهمة - اعمل تمارين مرونة يومياً لأحسن نتائج",
+        "ركز على المناطق اللي بتحد من أدائك في التمرين",
+        "ممكن يتعمل كإحماء أو في أيام الراحة"
+      ]
+    }
+  }
+}
