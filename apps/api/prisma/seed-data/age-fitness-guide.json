@@ -1,0 +1,566 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "introduction": {
+    "title": {
+      "en": "Fitness for Every Age: Train Smart at Any Stage of Life",
+      "ar": "اللياقة لكل عمر: اتدرب بذكاء في أي مرحلة من الحياة"
+    },
+    "description": {
+      "en": "You can build muscle, get stronger, and improve fitness at any age. The approach just needs to adapt to your body's needs and capabilities at each stage.",
+      "ar": "تقدر تبني عضلات وتقوى وتحسن لياقتك في أي عمر. النهج بس محتاج يتكيف مع احتياجات وقدرات جسمك في كل مرحلة."
+    },
+    "keyPrinciple": {
+      "en": "The best time to start training was 10 years ago. The second best time is now.",
+      "ar": "أحسن وقت تبدأ تتدرب كان من 10 سنين. تاني أحسن وقت هو دلوقتي."
+    }
+  },
+  "ageGroups": [
+    {
+      "ageRange": "13-17",
+      "name": {
+        "en": "Teenagers",
+        "ar": "المراهقين"
+      },
+      "overview": {
+        "en": "A critical time to build foundational movement patterns, develop coordination, and create healthy habits that last a lifetime.",
+        "ar": "وقت حاسم لبناء أنماط حركة أساسية، وتطوير التنسيق، وخلق عادات صحية تدوم العمر كله."
+      },
+      "physicalChanges": {
+        "en": [
+          "Rapid growth spurts",
+          "Hormonal changes (higher testosterone in boys)",
+          "Bones still developing (growth plates)",
+          "High recovery capacity",
+          "Natural energy and metabolism peak"
+        ],
+        "ar": [
+          "طفرات نمو سريعة",
+          "تغيرات هرمونية (تستوستيرون أعلى في الأولاد)",
+          "العظام لسه بتتطور (صفائح النمو)",
+          "قدرة استشفاء عالية",
+          "طاقة طبيعية وأيض في الذروة"
+        ]
+      },
+      "trainingRecommendations": {
+        "en": [
+          "Focus on bodyweight exercises and learning proper form",
+          "Avoid maximal lifts until growth plates close (usually 16-18)",
+          "Higher rep ranges (8-15+) are safer than heavy singles",
+          "Incorporate sports and varied activities",
+          "Build coordination before loading",
+          "Okay to start weight training with supervision"
+        ],
+        "ar": [
+          "ركز على تمارين وزن الجسم وتعلم الفورم الصح",
+          "تجنب الرفعات القصوى لحد ما صفائح النمو تقفل (عادة 16-18)",
+          "نطاق تكرارات أعلى (8-15+) أأمن من الواحدات التقيلة",
+          "ضم رياضات وأنشطة متنوعة",
+          "ابني التنسيق قبل الحمل",
+          "عادي تبدأ تدريب أوزان مع إشراف"
+        ]
+      },
+      "exercises": {
+        "focus": [
+          { "en": "Push-ups", "ar": "ضغط" },
+          { "en": "Pull-ups/Chin-ups", "ar": "عقلة" },
+          { "en": "Bodyweight Squats", "ar": "سكوات بوزن الجسم" },
+          { "en": "Lunges", "ar": "لانجز" },
+          { "en": "Planks", "ar": "بلانك" },
+          { "en": "Dumbbell exercises with moderate weights", "ar": "تمارين دمبل بأوزان معتدلة" }
+        ],
+        "avoid": [
+          { "en": "Heavy maximal lifts (1-3 rep maxes)", "ar": "رفعات قصوى تقيلة (ماكسات 1-3 تكرار)" },
+          { "en": "Excessive spinal loading", "ar": "حمل عمود فقري زيادة" },
+          { "en": "Training to absolute failure every session", "ar": "التدريب للفشل المطلق كل جلسة" }
+        ]
+      },
+      "nutritionTips": {
+        "en": [
+          "Eat enough to support growth - don't restrict calories",
+          "Protein important but don't obsess (1.2-1.6g/kg is plenty)",
+          "Stay hydrated",
+          "Avoid crash diets - they can stunt development",
+          "Supplements usually unnecessary at this age"
+        ],
+        "ar": [
+          "كل كفاية لدعم النمو - متحددش سعرات",
+          "البروتين مهم بس متهوسش (1.2-1.6 جرام/كيلو كفاية)",
+          "خليك رطب",
+          "تجنب الدايتات القاسية - ممكن تعيق التطور",
+          "المكملات عادة مش ضرورية في السن ده"
+        ]
+      },
+      "sampleWeek": {
+        "en": "3-4 days of training, include sports, PE class counts, rest days important",
+        "ar": "3-4 أيام تدريب، ضم رياضات، حصة التربية الرياضية بتحتسب، أيام الراحة مهمة"
+      }
+    },
+    {
+      "ageRange": "18-29",
+      "name": {
+        "en": "20s: Prime Training Years",
+        "ar": "العشرينات: سنين التدريب الذهبية"
+      },
+      "overview": {
+        "en": "Your body is at peak physical capacity. Recovery is fast, muscle builds relatively easily, and you can handle high training volumes.",
+        "ar": "جسمك في ذروة القدرة البدنية. الاستشفاء سريع، العضلات بتتبني بسهولة نسبياً، وتقدر تتحمل فوليوم تدريب عالي."
+      },
+      "physicalChanges": {
+        "en": [
+          "Peak testosterone levels (men)",
+          "Excellent recovery capacity",
+          "High metabolic rate",
+          "Bones fully developed",
+          "Can handle high training volumes"
+        ],
+        "ar": [
+          "ذروة مستويات التستوستيرون (الرجالة)",
+          "قدرة استشفاء ممتازة",
+          "معدل أيض عالي",
+          "العظام مكتملة النمو",
+          "تقدر تتحمل فوليوم تدريب عالي"
+        ]
+      },
+      "trainingRecommendations": {
+        "en": [
+          "Build your strength foundation now - it's easier than later",
+          "Can train 4-6 days per week",
+          "Progressive overload is highly effective",
+          "Mix of heavy compound lifts and isolation work",
+          "Learn proper technique to avoid future injuries",
+          "Take advantage of fast recovery"
+        ],
+        "ar": [
+          "ابني أساس قوتك دلوقتي - أسهل من بعدين",
+          "ممكن تتدرب 4-6 أيام في الأسبوع",
+          "الحمل التدريجي فعال جداً",
+          "مزيج من الرفعات المركبة التقيلة وشغل العزل",
+          "اتعلم التكنيك الصح عشان تتجنب إصابات المستقبل",
+          "استفيد من الاستشفاء السريع"
+        ]
+      },
+      "exercises": {
+        "focus": [
+          { "en": "All compound lifts (squat, deadlift, bench, row, press)", "ar": "كل الرفعات المركبة (سكوات، ديدليفت، بنش، رو، بريس)" },
+          { "en": "Heavy strength work (4-6 rep range)", "ar": "شغل قوة تقيل (نطاق 4-6 تكرار)" },
+          { "en": "Hypertrophy work (8-12 rep range)", "ar": "شغل تضخيم (نطاق 8-12 تكرار)" },
+          { "en": "Athletic movements (jumps, throws, sprints)", "ar": "حركات رياضية (قفز، رمي، سبرنتات)" }
+        ]
+      },
+      "nutritionTips": {
+        "en": [
+          "High protein intake (1.6-2.2g/kg) for muscle building",
+          "Can handle calorie surpluses well for bulking",
+          "Metabolism is forgiving but don't abuse it",
+          "Establish good eating habits for life",
+          "Supplements: creatine, protein powder are useful"
+        ],
+        "ar": [
+          "كمية بروتين عالية (1.6-2.2 جرام/كيلو) لبناء العضلات",
+          "تقدر تتحمل فائض سعرات كويس للتضخيم",
+          "الأيض متسامح بس متستغلهوش",
+          "أسس عادات أكل كويسة للحياة",
+          "مكملات: الكرياتين وبودرة البروتين مفيدين"
+        ]
+      },
+      "warning": {
+        "en": "Don't neglect recovery thinking you're invincible. Bad habits formed now (poor sleep, alcohol, skipping warm-ups) will catch up later.",
+        "ar": "متهملش الاستشفاء وإنت فاكر نفسك لا يقهر. العادات السيئة اللي بتتكون دلوقتي (نوم سيء، كحول، تخطي التسخين) هتلحقك بعدين."
+      }
+    },
+    {
+      "ageRange": "30-39",
+      "name": {
+        "en": "30s: Building on Your Foundation",
+        "ar": "الثلاثينات: البناء على أساسك"
+      },
+      "overview": {
+        "en": "Still very capable of building muscle and strength. Recovery starts to slow slightly. Smart training becomes more important.",
+        "ar": "لسه قادر جداً على بناء العضلات والقوة. الاستشفاء بيبدأ يبطأ شوية. التدريب الذكي بيبقى أهم."
+      },
+      "physicalChanges": {
+        "en": [
+          "Testosterone begins gradual decline (~1% per year)",
+          "Recovery slightly slower than 20s",
+          "Metabolism starts to slow",
+          "May notice first joint aches",
+          "Work and family demands increase"
+        ],
+        "ar": [
+          "التستوستيرون بيبدأ ينزل تدريجياً (~1% كل سنة)",
+          "الاستشفاء أبطأ شوية من العشرينات",
+          "الأيض بيبدأ يبطأ",
+          "ممكن تلاحظ أول وجع مفاصل",
+          "متطلبات الشغل والعيلة بتزيد"
+        ]
+      },
+      "trainingRecommendations": {
+        "en": [
+          "Quality over quantity - train smarter not just harder",
+          "Warm-ups become non-negotiable",
+          "Include mobility work regularly",
+          "4-5 days per week is sustainable",
+          "Balance heavy lifting with joint-friendly work",
+          "Add deload weeks every 4-6 weeks"
+        ],
+        "ar": [
+          "الجودة أهم من الكمية - اتدرب بذكاء مش بجد بس",
+          "التسخين بقى مش قابل للتفاوض",
+          "ضم شغل حركية بانتظام",
+          "4-5 أيام في الأسبوع مستدام",
+          "وازن الرفع التقيل مع شغل صديق للمفاصل",
+          "ضيف أسابيع ديلود كل 4-6 أسابيع"
+        ]
+      },
+      "exercises": {
+        "focus": [
+          { "en": "Maintain compound lifts with good form", "ar": "حافظ على الرفعات المركبة بفورم كويس" },
+          { "en": "Add mobility and flexibility work", "ar": "ضيف شغل حركية ومرونة" },
+          { "en": "Include face pulls, rotator cuff work", "ar": "ضم فيس بولز، شغل الكفة المدورة" },
+          { "en": "Mix machines with free weights", "ar": "امزج الماكينات مع الأوزان الحرة" }
+        ],
+        "modifications": [
+          { "en": "May need to reduce heavy barbell squats if knees complain", "ar": "ممكن تحتاج تقلل سكوات بار تقيل لو الركب بتشتكي" },
+          { "en": "Consider trap bar deadlifts over conventional", "ar": "فكر في تراب بار ديدليفت بدل التقليدي" },
+          { "en": "More volume at moderate weights", "ar": "فوليوم أكتر بأوزان معتدلة" }
+        ]
+      },
+      "nutritionTips": {
+        "en": [
+          "Metabolism slowing - can't eat like you're 20",
+          "Protein still critical (1.6-2g/kg)",
+          "Watch alcohol intake (affects recovery more)",
+          "May need to be more precise with calories",
+          "Consider omega-3s and vitamin D"
+        ],
+        "ar": [
+          "الأيض بيبطأ - مش هتقدر تاكل زي ما كنت في العشرينات",
+          "البروتين لسه حاسم (1.6-2 جرام/كيلو)",
+          "خلي بالك من الكحول (بيأثر على الاستشفاء أكتر)",
+          "ممكن تحتاج تكون أكثر دقة مع السعرات",
+          "فكر في أوميجا 3 وفيتامين د"
+        ]
+      },
+      "priorityShift": {
+        "en": "Start prioritizing longevity over short-term gains. The goal is to still be training strong at 50+.",
+        "ar": "ابدأ اهتم بطول العمر أكتر من المكاسب قصيرة المدى. الهدف إنك تفضل بتتدرب بقوة على الـ 50+."
+      }
+    },
+    {
+      "ageRange": "40-49",
+      "name": {
+        "en": "40s: Training for the Long Game",
+        "ar": "الأربعينات: التدريب للمدى الطويل"
+      },
+      "overview": {
+        "en": "Muscle and strength are absolutely still achievable. Recovery needs more attention. Injury prevention becomes a priority.",
+        "ar": "العضلات والقوة لسه ممكنين بالتأكيد. الاستشفاء محتاج اهتمام أكتر. منع الإصابات بيبقى أولوية."
+      },
+      "physicalChanges": {
+        "en": [
+          "Continued hormone decline",
+          "Muscle mass naturally decreases if not training (sarcopenia begins)",
+          "Recovery takes longer",
+          "Joint wear may be noticeable",
+          "Sleep quality may decrease"
+        ],
+        "ar": [
+          "استمرار انخفاض الهرمونات",
+          "الكتلة العضلية بتنقص طبيعياً لو مش بتتدرب (الساركوبينيا بتبدأ)",
+          "الاستشفاء بياخد وقت أطول",
+          "تآكل المفاصل ممكن يكون ملحوظ",
+          "جودة النوم ممكن تقل"
+        ]
+      },
+      "trainingRecommendations": {
+        "en": [
+          "Resistance training is crucial to fight muscle loss",
+          "Include more warm-up time (10-15 minutes)",
+          "Train 3-4 days per week with adequate rest",
+          "Prioritize technique over ego lifting",
+          "Regular mobility and flexibility work",
+          "Listen to your body - back off when needed"
+        ],
+        "ar": [
+          "تدريب المقاومة ضروري لمحاربة فقدان العضلات",
+          "ضم وقت تسخين أكتر (10-15 دقيقة)",
+          "اتدرب 3-4 أيام في الأسبوع مع راحة كافية",
+          "الأولوية للتكنيك مش الإيجو",
+          "شغل حركية ومرونة منتظم",
+          "اسمع لجسمك - خفف لما محتاج"
+        ]
+      },
+      "exercises": {
+        "focus": [
+          { "en": "Compound movements with controlled tempo", "ar": "حركات مركبة بسرعة متحكم فيها" },
+          { "en": "Unilateral exercises for balance", "ar": "تمارين أحادية الجانب للتوازن" },
+          { "en": "Core stability work", "ar": "شغل ثبات الكور" },
+          { "en": "Low-impact cardio (cycling, swimming, walking)", "ar": "كارديو منخفض التأثير (عجلة، سباحة، مشي)" }
+        ],
+        "modifications": [
+          { "en": "Replace barbell back squats with goblet squats or leg press if needed", "ar": "بدل سكوات البار بجوبلت سكوات أو ليج بريس لو محتاج" },
+          { "en": "Use machines more for isolation work", "ar": "استخدم الماكينات أكتر لشغل العزل" },
+          { "en": "Reduce frequency of heavy deadlifts", "ar": "قلل تكرار الديدليفت التقيل" }
+        ]
+      },
+      "nutritionTips": {
+        "en": [
+          "Protein becomes MORE important (combat muscle loss)",
+          "May need higher protein (2-2.2g/kg)",
+          "Watch portion sizes as metabolism slower",
+          "Hydration important for joint health",
+          "Consider joint support supplements (omega-3, collagen)"
+        ],
+        "ar": [
+          "البروتين بيبقى أهم (لمحاربة فقدان العضلات)",
+          "ممكن تحتاج بروتين أعلى (2-2.2 جرام/كيلو)",
+          "خلي بالك من أحجام الأكل لأن الأيض أبطأ",
+          "الترطيب مهم لصحة المفاصل",
+          "فكر في مكملات دعم المفاصل (أوميجا 3، كولاجين)"
+        ]
+      },
+      "inspiration": {
+        "en": "Many people in their 40s are in the best shape of their lives. Age is not an excuse.",
+        "ar": "كتير من الناس في الأربعينات في أحسن شكل في حياتهم. العمر مش حجة."
+      }
+    },
+    {
+      "ageRange": "50+",
+      "name": {
+        "en": "50+: Strength for Quality of Life",
+        "ar": "50+: القوة لجودة الحياة"
+      },
+      "overview": {
+        "en": "Training at this age is about maintaining independence, bone health, and quality of life. The benefits are massive - stronger, healthier, and more capable.",
+        "ar": "التدريب في السن ده عن الحفاظ على الاستقلالية وصحة العظام وجودة الحياة. الفوايد ضخمة - أقوى وأصح وأكثر قدرة."
+      },
+      "physicalChanges": {
+        "en": [
+          "Significant muscle loss without resistance training",
+          "Bone density decreases (osteoporosis risk)",
+          "Joints may have accumulated wear",
+          "Balance and coordination may decline",
+          "Higher injury risk but also higher training benefits"
+        ],
+        "ar": [
+          "فقدان عضلات كبير من غير تدريب مقاومة",
+          "كثافة العظام بتقل (خطر هشاشة العظام)",
+          "المفاصل ممكن يكون اتراكم عليها تآكل",
+          "التوازن والتنسيق ممكن يقلوا",
+          "خطر إصابة أعلى بس فوايد التدريب أعلى كمان"
+        ]
+      },
+      "trainingRecommendations": {
+        "en": [
+          "Resistance training 2-3 times per week minimum",
+          "Focus on functional movements (squat, hinge, push, pull, carry)",
+          "Include balance training",
+          "Extended warm-ups (15+ minutes)",
+          "Moderate weights, higher reps (10-15)",
+          "Never skip mobility work"
+        ],
+        "ar": [
+          "تدريب مقاومة 2-3 مرات في الأسبوع كحد أدنى",
+          "ركز على الحركات الوظيفية (سكوات، هينج، دفع، سحب، حمل)",
+          "ضم تدريب توازن",
+          "تسخين ممتد (15+ دقيقة)",
+          "أوزان معتدلة، تكرارات أعلى (10-15)",
+          "متفوتش شغل الحركية أبداً"
+        ]
+      },
+      "exercises": {
+        "focus": [
+          { "en": "Goblet squats to a box", "ar": "جوبلت سكوات على صندوق" },
+          { "en": "Dumbbell Romanian deadlifts", "ar": "رومانيان ديدليفت دمبل" },
+          { "en": "Seated rows and lat pulldowns", "ar": "رو جالس وسحب علوي" },
+          { "en": "Chest press machine", "ar": "ماكينة ضغط صدر" },
+          { "en": "Step-ups", "ar": "ستيب أبس" },
+          { "en": "Farmer's walks", "ar": "فارمرز ووك" },
+          { "en": "Balance exercises (single leg stands)", "ar": "تمارين توازن (وقوف برجل واحدة)" }
+        ],
+        "benefits": [
+          { "en": "Maintain ability to get up from chairs/floor", "ar": "الحفاظ على القدرة على النهوض من الكراسي/الأرض" },
+          { "en": "Reduce fall risk", "ar": "تقليل خطر السقوط" },
+          { "en": "Keep bones strong", "ar": "الحفاظ على قوة العظام" },
+          { "en": "Maintain independence", "ar": "الحفاظ على الاستقلالية" }
+        ]
+      },
+      "nutritionTips": {
+        "en": [
+          "Protein MORE critical than ever (2.0-2.4g/kg for some)",
+          "Calcium and Vitamin D essential for bones",
+          "Spread protein across all meals",
+          "May need to eat more to maintain muscle",
+          "Hydration important for overall health"
+        ],
+        "ar": [
+          "البروتين أهم من أي وقت (2.0-2.4 جرام/كيلو للبعض)",
+          "الكالسيوم وفيتامين د ضروريين للعظام",
+          "وزع البروتين على كل الوجبات",
+          "ممكن تحتاج تاكل أكتر للحفاظ على العضلات",
+          "الترطيب مهم للصحة العامة"
+        ]
+      },
+      "motivation": {
+        "en": "Studies show people who start weight training in their 60s-80s can still build significant muscle and strength. It's never too late.",
+        "ar": "الدراسات بتقول الناس اللي بتبدأ تدريب أوزان في الستينات والثمانينات لسه تقدر تبني عضلات وقوة كبيرة. مش متأخر أبداً."
+      }
+    }
+  ],
+  "generalPrinciples": {
+    "title": {
+      "en": "Universal Principles for All Ages",
+      "ar": "مبادئ عامة لكل الأعمار"
+    },
+    "principles": [
+      {
+        "principle": {
+          "en": "Consistency Beats Intensity",
+          "ar": "الاستمرارية بتغلب الشدة"
+        },
+        "details": {
+          "en": "Training 3 times per week for years beats going hard for 2 months then quitting.",
+          "ar": "التدريب 3 مرات في الأسبوع لسنين بيغلب التدريب الجامد لمدة شهرين وبعدين تبطل."
+        }
+      },
+      {
+        "principle": {
+          "en": "Progressive Overload Always Applies",
+          "ar": "الحمل التدريجي دايماً بيتطبق"
+        },
+        "details": {
+          "en": "To improve, you must gradually increase challenge - this is true at any age.",
+          "ar": "عشان تتحسن، لازم تزود التحدي تدريجياً - ده صح في أي عمر."
+        }
+      },
+      {
+        "principle": {
+          "en": "Recovery Is Part of Training",
+          "ar": "الاستشفاء جزء من التدريب"
+        },
+        "details": {
+          "en": "Sleep, nutrition, and rest are not optional. They become MORE important as you age.",
+          "ar": "النوم والتغذية والراحة مش اختياريين. بيبقوا أهم كل ما تكبر."
+        }
+      },
+      {
+        "principle": {
+          "en": "Form Over Ego",
+          "ar": "الفورم أهم من الإيجو"
+        },
+        "details": {
+          "en": "A controlled, well-executed lift beats a sloppy heavy one. Protect your joints for the future.",
+          "ar": "رفعة متحكم فيها ومتنفذة كويس بتغلب رفعة تقيلة هبدة. احمي مفاصلك للمستقبل."
+        }
+      },
+      {
+        "principle": {
+          "en": "Train for Function, Not Just Looks",
+          "ar": "اتدرب للوظيفة، مش الشكل بس"
+        },
+        "details": {
+          "en": "Being able to move well, lift things, and stay active matters more than a six-pack.",
+          "ar": "القدرة على الحركة كويس ورفع حاجات والنشاط أهم من السكس باك."
+        }
+      }
+    ]
+  },
+  "startingLater": {
+    "title": {
+      "en": "Starting Training Later in Life",
+      "ar": "بدء التدريب متأخر في الحياة"
+    },
+    "tips": [
+      {
+        "tip": {
+          "en": "Get Medical Clearance",
+          "ar": "خد موافقة طبية"
+        },
+        "details": {
+          "en": "If you're over 40 and haven't exercised, see a doctor first. Get blood pressure and basic health checked.",
+          "ar": "لو فوق الـ 40 ومتمرنتش قبل كده، روح لدكتور الأول. اتأكد من ضغط الدم والصحة الأساسية."
+        }
+      },
+      {
+        "tip": {
+          "en": "Start Slowly",
+          "ar": "ابدأ ببطء"
+        },
+        "details": {
+          "en": "Begin with 2 days per week of light resistance training. Build up over months, not days.",
+          "ar": "ابدأ بيومين في الأسبوع من تدريب مقاومة خفيف. اتدرج على شهور، مش أيام."
+        }
+      },
+      {
+        "tip": {
+          "en": "Learn Proper Technique",
+          "ar": "اتعلم التكنيك الصح"
+        },
+        "details": {
+          "en": "Consider a few sessions with a personal trainer to learn movements safely.",
+          "ar": "فكر في كام جلسة مع مدرب شخصي عشان تتعلم الحركات بأمان."
+        }
+      },
+      {
+        "tip": {
+          "en": "Machines Are Fine",
+          "ar": "الماكينات كويسة"
+        },
+        "details": {
+          "en": "Don't feel you need free weights. Machines provide stability and are safer when starting.",
+          "ar": "متحسش إنك محتاج أوزان حرة. الماكينات بتوفر ثبات وأأمن لما تبدأ."
+        }
+      },
+      {
+        "tip": {
+          "en": "Celebrate Small Wins",
+          "ar": "احتفل بالمكاسب الصغيرة"
+        },
+        "details": {
+          "en": "Adding one rep or one kilo is progress. Consistency will compound over time.",
+          "ar": "زيادة تكرار واحد أو كيلو واحد تقدم. الاستمرارية هتتراكم مع الوقت."
+        }
+      }
+    ]
+  },
+  "neverTooLate": {
+    "title": {
+      "en": "Research: It's Never Too Late",
+      "ar": "أبحاث: مش متأخر أبداً"
+    },
+    "studies": [
+      {
+        "finding": {
+          "en": "Adults in their 90s can still gain muscle and strength with resistance training.",
+          "ar": "البالغين في التسعينات لسه يقدروا يكتسبوا عضلات وقوة بتدريب المقاومة."
+        }
+      },
+      {
+        "finding": {
+          "en": "Strength training reduces fall risk in elderly by 40%.",
+          "ar": "تدريب القوة بيقلل خطر السقوط في كبار السن بنسبة 40%."
+        }
+      },
+      {
+        "finding": {
+          "en": "Regular exercise can effectively add years to your life and life to your years.",
+          "ar": "التمرين المنتظم فعلاً ممكن يضيف سنين لحياتك وحياة لسنينك."
+        }
+      },
+      {
+        "finding": {
+          "en": "Starting strength training at 65 provides similar relative gains to starting at 25.",
+          "ar": "بدء تدريب القوة في سن 65 بيوفر مكاسب نسبية مشابهة للبدء في سن 25."
+        }
+      }
+    ],
+    "message": {
+      "en": "Your best workout is the one you actually do. Start where you are, with what you have.",
+      "ar": "أحسن تمرين هو اللي بتعمله فعلاً. ابدأ من مكانك، باللي عندك."
+    }
+  }
+}
