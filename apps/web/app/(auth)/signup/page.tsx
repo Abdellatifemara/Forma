@@ -15,7 +15,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { authApi, setAuthCookie } from '@/lib/api';
+import { authApi, setAuthCookie, setRefreshCookie } from '@/lib/api';
 
 const passwordRequirements = [
   { label: 'At least 8 characters', test: (p: string) => p.length >= 8 },
@@ -90,8 +90,11 @@ export default function SignupPage() {
         lastName: formData.lastName.trim(),
       });
 
-      // Store the token in cookie
+      // Store tokens in cookies
       setAuthCookie(response.accessToken);
+      if (response.refreshToken) {
+        setRefreshCookie(response.refreshToken);
+      }
 
       // Store onboarding data in localStorage for the onboarding page
       localStorage.setItem('onboarding-data', JSON.stringify({

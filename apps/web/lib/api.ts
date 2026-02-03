@@ -2,11 +2,26 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/a
 
 // Cookie utilities for auth
 export function setAuthCookie(token: string, maxAge: number = 7 * 24 * 60 * 60) {
-  document.cookie = `forma-token=${token}; path=/; max-age=${maxAge}; SameSite=Lax`;
+  const isProduction = window.location.protocol === 'https:';
+  const secure = isProduction ? '; Secure' : '';
+  document.cookie = `forma-token=${token}; path=/; max-age=${maxAge}; SameSite=Lax${secure}`;
+}
+
+export function setRefreshCookie(token: string, maxAge: number = 30 * 24 * 60 * 60) {
+  const isProduction = window.location.protocol === 'https:';
+  const secure = isProduction ? '; Secure' : '';
+  document.cookie = `forma-refresh=${token}; path=/; max-age=${maxAge}; SameSite=Lax${secure}`;
 }
 
 export function removeAuthCookie() {
   document.cookie = 'forma-token=; path=/; max-age=0';
+  document.cookie = 'forma-refresh=; path=/; max-age=0';
+}
+
+export function getRefreshCookie(): string | null {
+  if (typeof document === 'undefined') return null;
+  const match = document.cookie.match(/(?:^|; )forma-refresh=([^;]*)/);
+  return match ? match[1] : null;
 }
 
 export function getAuthCookie(): string | null {

@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { authApi, setAuthCookie } from '@/lib/api';
+import { authApi, setAuthCookie, setRefreshCookie } from '@/lib/api';
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -49,8 +49,11 @@ export default function LoginForm() {
         password: formData.password,
       });
 
-      // Store the token in cookie
+      // Store tokens in cookies
       setAuthCookie(response.accessToken);
+      if (response.refreshToken) {
+        setRefreshCookie(response.refreshToken);
+      }
 
       // Redirect to the intended page or dashboard
       router.push(redirectTo);
