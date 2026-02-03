@@ -1,0 +1,402 @@
+{
+  "templates": [
+    {
+      "id": "beginner-full-body",
+      "nameEn": "Beginner Full Body",
+      "nameAr": "تمرين كامل للمبتدئين",
+      "descriptionEn": "Perfect 3-day program for beginners. Build a solid foundation with compound movements.",
+      "descriptionAr": "برنامج مثالي لمدة 3 أيام للمبتدئين. ابنِ أساساً قوياً بالتمارين المركبة.",
+      "difficulty": "BEGINNER",
+      "goal": "BUILD_MUSCLE",
+      "durationWeeks": 8,
+      "daysPerWeek": 3,
+      "estimatedMinutes": 45,
+      "workouts": [
+        {
+          "dayOfWeek": 1,
+          "nameEn": "Full Body A",
+          "nameAr": "تمرين كامل أ",
+          "focusMuscles": ["CHEST", "BACK", "QUADRICEPS"],
+          "exercises": [
+            { "exerciseName": "Barbell Bench Press", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Barbell Row", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Barbell Squat", "sets": 3, "reps": 10, "rest": 120 },
+            { "exerciseName": "Dumbbell Shoulder Press", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Plank", "sets": 3, "reps": 30, "rest": 45, "isTimeBased": true }
+          ]
+        },
+        {
+          "dayOfWeek": 3,
+          "nameEn": "Full Body B",
+          "nameAr": "تمرين كامل ب",
+          "focusMuscles": ["BACK", "SHOULDERS", "HAMSTRINGS"],
+          "exercises": [
+            { "exerciseName": "Deadlift", "sets": 3, "reps": 8, "rest": 120 },
+            { "exerciseName": "Pull Up", "sets": 3, "reps": 8, "rest": 90 },
+            { "exerciseName": "Leg Press", "sets": 3, "reps": 12, "rest": 90 },
+            { "exerciseName": "Dumbbell Lateral Raise", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Bicycle Crunch", "sets": 3, "reps": 15, "rest": 45 }
+          ]
+        },
+        {
+          "dayOfWeek": 5,
+          "nameEn": "Full Body C",
+          "nameAr": "تمرين كامل ج",
+          "focusMuscles": ["CHEST", "BICEPS", "TRICEPS"],
+          "exercises": [
+            { "exerciseName": "Incline Dumbbell Press", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Cable Row", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Leg Curl", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Barbell Curl", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Tricep Pushdown", "sets": 3, "reps": 12, "rest": 60 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ppl-intermediate",
+      "nameEn": "Push Pull Legs (PPL)",
+      "nameAr": "برنامج دفع/سحب/أرجل",
+      "descriptionEn": "Classic 6-day push/pull/legs split for intermediate lifters looking to build serious muscle.",
+      "descriptionAr": "برنامج كلاسيكي لمدة 6 أيام للمستوى المتوسط لبناء عضلات جدية.",
+      "difficulty": "INTERMEDIATE",
+      "goal": "BUILD_MUSCLE",
+      "durationWeeks": 8,
+      "daysPerWeek": 6,
+      "estimatedMinutes": 60,
+      "workouts": [
+        {
+          "dayOfWeek": 1,
+          "nameEn": "Push Day",
+          "nameAr": "يوم الدفع",
+          "focusMuscles": ["CHEST", "SHOULDERS", "TRICEPS"],
+          "exercises": [
+            { "exerciseName": "Barbell Bench Press", "sets": 4, "reps": 8, "rest": 120 },
+            { "exerciseName": "Incline Dumbbell Press", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Dumbbell Shoulder Press", "sets": 4, "reps": 10, "rest": 90 },
+            { "exerciseName": "Dumbbell Lateral Raise", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Tricep Pushdown", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Overhead Tricep Extension", "sets": 3, "reps": 12, "rest": 60 }
+          ]
+        },
+        {
+          "dayOfWeek": 2,
+          "nameEn": "Pull Day",
+          "nameAr": "يوم السحب",
+          "focusMuscles": ["BACK", "BICEPS"],
+          "exercises": [
+            { "exerciseName": "Deadlift", "sets": 4, "reps": 6, "rest": 180 },
+            { "exerciseName": "Pull Up", "sets": 4, "reps": 8, "rest": 90 },
+            { "exerciseName": "Barbell Row", "sets": 4, "reps": 10, "rest": 90 },
+            { "exerciseName": "Face Pull", "sets": 3, "reps": 15, "rest": 60 },
+            { "exerciseName": "Barbell Curl", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Hammer Curl", "sets": 3, "reps": 12, "rest": 60 }
+          ]
+        },
+        {
+          "dayOfWeek": 3,
+          "nameEn": "Leg Day",
+          "nameAr": "يوم الأرجل",
+          "focusMuscles": ["QUADRICEPS", "HAMSTRINGS", "GLUTES", "CALVES"],
+          "exercises": [
+            { "exerciseName": "Barbell Squat", "sets": 4, "reps": 8, "rest": 180 },
+            { "exerciseName": "Romanian Deadlift", "sets": 4, "reps": 10, "rest": 90 },
+            { "exerciseName": "Leg Press", "sets": 3, "reps": 12, "rest": 90 },
+            { "exerciseName": "Leg Curl", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Leg Extension", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Calf Raise", "sets": 4, "reps": 15, "rest": 60 }
+          ]
+        },
+        {
+          "dayOfWeek": 4,
+          "nameEn": "Push Day 2",
+          "nameAr": "يوم الدفع ٢",
+          "focusMuscles": ["CHEST", "SHOULDERS", "TRICEPS"],
+          "exercises": [
+            { "exerciseName": "Dumbbell Bench Press", "sets": 4, "reps": 10, "rest": 90 },
+            { "exerciseName": "Cable Fly", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Arnold Press", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Front Raise", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Close Grip Bench Press", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Skull Crusher", "sets": 3, "reps": 12, "rest": 60 }
+          ]
+        },
+        {
+          "dayOfWeek": 5,
+          "nameEn": "Pull Day 2",
+          "nameAr": "يوم السحب ٢",
+          "focusMuscles": ["BACK", "BICEPS"],
+          "exercises": [
+            { "exerciseName": "T-Bar Row", "sets": 4, "reps": 10, "rest": 90 },
+            { "exerciseName": "Lat Pulldown", "sets": 4, "reps": 10, "rest": 60 },
+            { "exerciseName": "Seated Cable Row", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Rear Delt Fly", "sets": 3, "reps": 15, "rest": 60 },
+            { "exerciseName": "Preacher Curl", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Concentration Curl", "sets": 3, "reps": 12, "rest": 60 }
+          ]
+        },
+        {
+          "dayOfWeek": 6,
+          "nameEn": "Leg Day 2",
+          "nameAr": "يوم الأرجل ٢",
+          "focusMuscles": ["QUADRICEPS", "HAMSTRINGS", "GLUTES"],
+          "exercises": [
+            { "exerciseName": "Front Squat", "sets": 4, "reps": 8, "rest": 120 },
+            { "exerciseName": "Bulgarian Split Squat", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Hip Thrust", "sets": 4, "reps": 12, "rest": 90 },
+            { "exerciseName": "Good Morning", "sets": 3, "reps": 10, "rest": 60 },
+            { "exerciseName": "Leg Press", "sets": 3, "reps": 15, "rest": 60 },
+            { "exerciseName": "Seated Calf Raise", "sets": 4, "reps": 15, "rest": 45 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "upper-lower-split",
+      "nameEn": "Upper/Lower Split",
+      "nameAr": "برنامج علوي/سفلي",
+      "descriptionEn": "Efficient 4-day upper/lower split. Great balance of volume and recovery.",
+      "descriptionAr": "برنامج 4 أيام فعال علوي/سفلي. توازن رائع بين الحجم والاستشفاء.",
+      "difficulty": "INTERMEDIATE",
+      "goal": "BUILD_MUSCLE",
+      "durationWeeks": 8,
+      "daysPerWeek": 4,
+      "estimatedMinutes": 55,
+      "workouts": [
+        {
+          "dayOfWeek": 1,
+          "nameEn": "Upper Body A",
+          "nameAr": "الجزء العلوي أ",
+          "focusMuscles": ["CHEST", "BACK", "SHOULDERS"],
+          "exercises": [
+            { "exerciseName": "Barbell Bench Press", "sets": 4, "reps": 8, "rest": 120 },
+            { "exerciseName": "Barbell Row", "sets": 4, "reps": 8, "rest": 90 },
+            { "exerciseName": "Overhead Press", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Pull Up", "sets": 3, "reps": 8, "rest": 90 },
+            { "exerciseName": "Dumbbell Curl", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Tricep Dip", "sets": 3, "reps": 10, "rest": 60 }
+          ]
+        },
+        {
+          "dayOfWeek": 2,
+          "nameEn": "Lower Body A",
+          "nameAr": "الجزء السفلي أ",
+          "focusMuscles": ["QUADRICEPS", "HAMSTRINGS", "GLUTES"],
+          "exercises": [
+            { "exerciseName": "Barbell Squat", "sets": 4, "reps": 6, "rest": 180 },
+            { "exerciseName": "Romanian Deadlift", "sets": 4, "reps": 10, "rest": 90 },
+            { "exerciseName": "Leg Press", "sets": 3, "reps": 12, "rest": 90 },
+            { "exerciseName": "Leg Curl", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Calf Raise", "sets": 4, "reps": 15, "rest": 45 }
+          ]
+        },
+        {
+          "dayOfWeek": 4,
+          "nameEn": "Upper Body B",
+          "nameAr": "الجزء العلوي ب",
+          "focusMuscles": ["CHEST", "BACK", "ARMS"],
+          "exercises": [
+            { "exerciseName": "Incline Dumbbell Press", "sets": 4, "reps": 10, "rest": 90 },
+            { "exerciseName": "Cable Row", "sets": 4, "reps": 10, "rest": 60 },
+            { "exerciseName": "Dumbbell Lateral Raise", "sets": 3, "reps": 15, "rest": 60 },
+            { "exerciseName": "Lat Pulldown", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Barbell Curl", "sets": 3, "reps": 10, "rest": 60 },
+            { "exerciseName": "Skull Crusher", "sets": 3, "reps": 10, "rest": 60 }
+          ]
+        },
+        {
+          "dayOfWeek": 5,
+          "nameEn": "Lower Body B",
+          "nameAr": "الجزء السفلي ب",
+          "focusMuscles": ["QUADRICEPS", "GLUTES", "CALVES"],
+          "exercises": [
+            { "exerciseName": "Deadlift", "sets": 4, "reps": 5, "rest": 180 },
+            { "exerciseName": "Bulgarian Split Squat", "sets": 3, "reps": 10, "rest": 90 },
+            { "exerciseName": "Hip Thrust", "sets": 4, "reps": 12, "rest": 90 },
+            { "exerciseName": "Leg Extension", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Seated Calf Raise", "sets": 4, "reps": 15, "rest": 45 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fat-loss-hiit",
+      "nameEn": "Fat Loss & HIIT",
+      "nameAr": "حرق الدهون و HIIT",
+      "descriptionEn": "High-intensity 4-day program combining strength and cardio for maximum fat loss.",
+      "descriptionAr": "برنامج 4 أيام عالي الكثافة يجمع بين القوة والكارديو لأقصى حرق للدهون.",
+      "difficulty": "INTERMEDIATE",
+      "goal": "LOSE_WEIGHT",
+      "durationWeeks": 8,
+      "daysPerWeek": 4,
+      "estimatedMinutes": 50,
+      "workouts": [
+        {
+          "dayOfWeek": 1,
+          "nameEn": "Full Body Circuit",
+          "nameAr": "دائرة الجسم الكامل",
+          "focusMuscles": ["FULL_BODY"],
+          "exercises": [
+            { "exerciseName": "Burpee", "sets": 4, "reps": 12, "rest": 30 },
+            { "exerciseName": "Kettlebell Swing", "sets": 4, "reps": 15, "rest": 30 },
+            { "exerciseName": "Mountain Climber", "sets": 4, "reps": 20, "rest": 30 },
+            { "exerciseName": "Box Jump", "sets": 4, "reps": 10, "rest": 30 },
+            { "exerciseName": "Battle Rope", "sets": 4, "reps": 30, "rest": 45, "isTimeBased": true }
+          ]
+        },
+        {
+          "dayOfWeek": 2,
+          "nameEn": "Upper Body Strength",
+          "nameAr": "قوة الجزء العلوي",
+          "focusMuscles": ["CHEST", "BACK", "SHOULDERS"],
+          "exercises": [
+            { "exerciseName": "Push Up", "sets": 4, "reps": 15, "rest": 45 },
+            { "exerciseName": "Dumbbell Row", "sets": 4, "reps": 12, "rest": 45 },
+            { "exerciseName": "Pike Push Up", "sets": 3, "reps": 10, "rest": 45 },
+            { "exerciseName": "Inverted Row", "sets": 3, "reps": 12, "rest": 45 },
+            { "exerciseName": "Plank", "sets": 3, "reps": 45, "rest": 30, "isTimeBased": true }
+          ]
+        },
+        {
+          "dayOfWeek": 4,
+          "nameEn": "HIIT Cardio",
+          "nameAr": "كارديو HIIT",
+          "focusMuscles": ["CARDIO", "FULL_BODY"],
+          "exercises": [
+            { "exerciseName": "Jump Squat", "sets": 5, "reps": 15, "rest": 20 },
+            { "exerciseName": "High Knees", "sets": 5, "reps": 30, "rest": 20, "isTimeBased": true },
+            { "exerciseName": "Jumping Lunges", "sets": 5, "reps": 12, "rest": 20 },
+            { "exerciseName": "Burpee", "sets": 5, "reps": 10, "rest": 20 },
+            { "exerciseName": "Plank Jack", "sets": 5, "reps": 15, "rest": 20 }
+          ]
+        },
+        {
+          "dayOfWeek": 5,
+          "nameEn": "Lower Body Strength",
+          "nameAr": "قوة الجزء السفلي",
+          "focusMuscles": ["QUADRICEPS", "GLUTES", "HAMSTRINGS"],
+          "exercises": [
+            { "exerciseName": "Goblet Squat", "sets": 4, "reps": 15, "rest": 45 },
+            { "exerciseName": "Walking Lunge", "sets": 4, "reps": 12, "rest": 45 },
+            { "exerciseName": "Glute Bridge", "sets": 4, "reps": 15, "rest": 30 },
+            { "exerciseName": "Step Up", "sets": 3, "reps": 12, "rest": 45 },
+            { "exerciseName": "Wall Sit", "sets": 3, "reps": 45, "rest": 30, "isTimeBased": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strength-5x5",
+      "nameEn": "Strength 5x5",
+      "nameAr": "برنامج القوة 5×5",
+      "descriptionEn": "Classic 3-day strength program focused on progressive overload with compound lifts.",
+      "descriptionAr": "برنامج قوة كلاسيكي لمدة 3 أيام يركز على الحمل التدريجي مع الرفعات المركبة.",
+      "difficulty": "INTERMEDIATE",
+      "goal": "INCREASE_STRENGTH",
+      "durationWeeks": 12,
+      "daysPerWeek": 3,
+      "estimatedMinutes": 60,
+      "workouts": [
+        {
+          "dayOfWeek": 1,
+          "nameEn": "Workout A",
+          "nameAr": "تمرين أ",
+          "focusMuscles": ["CHEST", "QUADRICEPS", "BACK"],
+          "exercises": [
+            { "exerciseName": "Barbell Squat", "sets": 5, "reps": 5, "rest": 180 },
+            { "exerciseName": "Barbell Bench Press", "sets": 5, "reps": 5, "rest": 180 },
+            { "exerciseName": "Barbell Row", "sets": 5, "reps": 5, "rest": 180 }
+          ]
+        },
+        {
+          "dayOfWeek": 3,
+          "nameEn": "Workout B",
+          "nameAr": "تمرين ب",
+          "focusMuscles": ["QUADRICEPS", "SHOULDERS", "BACK"],
+          "exercises": [
+            { "exerciseName": "Barbell Squat", "sets": 5, "reps": 5, "rest": 180 },
+            { "exerciseName": "Overhead Press", "sets": 5, "reps": 5, "rest": 180 },
+            { "exerciseName": "Deadlift", "sets": 1, "reps": 5, "rest": 180 }
+          ]
+        },
+        {
+          "dayOfWeek": 5,
+          "nameEn": "Workout A",
+          "nameAr": "تمرين أ",
+          "focusMuscles": ["CHEST", "QUADRICEPS", "BACK"],
+          "exercises": [
+            { "exerciseName": "Barbell Squat", "sets": 5, "reps": 5, "rest": 180 },
+            { "exerciseName": "Barbell Bench Press", "sets": 5, "reps": 5, "rest": 180 },
+            { "exerciseName": "Barbell Row", "sets": 5, "reps": 5, "rest": 180 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-bodyweight",
+      "nameEn": "Home Bodyweight",
+      "nameAr": "تمارين منزلية بدون أوزان",
+      "descriptionEn": "No equipment needed! 4-day bodyweight program you can do anywhere.",
+      "descriptionAr": "لا حاجة لمعدات! برنامج 4 أيام بوزن الجسم يمكنك القيام به في أي مكان.",
+      "difficulty": "BEGINNER",
+      "goal": "IMPROVE_HEALTH",
+      "durationWeeks": 6,
+      "daysPerWeek": 4,
+      "estimatedMinutes": 35,
+      "workouts": [
+        {
+          "dayOfWeek": 1,
+          "nameEn": "Upper Body",
+          "nameAr": "الجزء العلوي",
+          "focusMuscles": ["CHEST", "BACK", "SHOULDERS"],
+          "exercises": [
+            { "exerciseName": "Push Up", "sets": 4, "reps": 12, "rest": 60 },
+            { "exerciseName": "Pike Push Up", "sets": 3, "reps": 10, "rest": 60 },
+            { "exerciseName": "Diamond Push Up", "sets": 3, "reps": 10, "rest": 60 },
+            { "exerciseName": "Superman", "sets": 3, "reps": 12, "rest": 45 },
+            { "exerciseName": "Plank", "sets": 3, "reps": 30, "rest": 30, "isTimeBased": true }
+          ]
+        },
+        {
+          "dayOfWeek": 2,
+          "nameEn": "Lower Body",
+          "nameAr": "الجزء السفلي",
+          "focusMuscles": ["QUADRICEPS", "GLUTES", "CALVES"],
+          "exercises": [
+            { "exerciseName": "Bodyweight Squat", "sets": 4, "reps": 20, "rest": 60 },
+            { "exerciseName": "Lunge", "sets": 3, "reps": 12, "rest": 60 },
+            { "exerciseName": "Glute Bridge", "sets": 3, "reps": 15, "rest": 45 },
+            { "exerciseName": "Calf Raise", "sets": 3, "reps": 20, "rest": 30 },
+            { "exerciseName": "Wall Sit", "sets": 3, "reps": 30, "rest": 45, "isTimeBased": true }
+          ]
+        },
+        {
+          "dayOfWeek": 4,
+          "nameEn": "Core & Cardio",
+          "nameAr": "البطن والكارديو",
+          "focusMuscles": ["ABS", "CARDIO"],
+          "exercises": [
+            { "exerciseName": "Mountain Climber", "sets": 4, "reps": 20, "rest": 30 },
+            { "exerciseName": "Bicycle Crunch", "sets": 4, "reps": 15, "rest": 30 },
+            { "exerciseName": "Leg Raise", "sets": 3, "reps": 12, "rest": 45 },
+            { "exerciseName": "Burpee", "sets": 4, "reps": 10, "rest": 45 },
+            { "exerciseName": "High Knees", "sets": 4, "reps": 30, "rest": 30, "isTimeBased": true }
+          ]
+        },
+        {
+          "dayOfWeek": 5,
+          "nameEn": "Full Body",
+          "nameAr": "الجسم الكامل",
+          "focusMuscles": ["FULL_BODY"],
+          "exercises": [
+            { "exerciseName": "Burpee", "sets": 3, "reps": 10, "rest": 60 },
+            { "exerciseName": "Push Up", "sets": 3, "reps": 12, "rest": 45 },
+            { "exerciseName": "Jump Squat", "sets": 3, "reps": 12, "rest": 45 },
+            { "exerciseName": "Plank", "sets": 3, "reps": 45, "rest": 30, "isTimeBased": true },
+            { "exerciseName": "Superman", "sets": 3, "reps": 12, "rest": 30 }
+          ]
+        }
+      ]
+    }
+  ]
+}
