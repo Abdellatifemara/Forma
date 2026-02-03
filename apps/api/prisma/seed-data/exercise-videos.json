@@ -1,0 +1,55 @@
+{
+  "videos": [
+    {"exerciseId": "chest-bench-press", "videoUrl": "https://www.youtube.com/watch?v=rT7DgCr-3pg", "source": "Jeff Nippard"},
+    {"exerciseId": "chest-incline-press", "videoUrl": "https://www.youtube.com/watch?v=SrqOu55lrYU", "source": "ATHLEAN-X"},
+    {"exerciseId": "chest-dumbbell-press", "videoUrl": "https://www.youtube.com/watch?v=VmB1G1K7v94", "source": "ScottHermanFitness"},
+    {"exerciseId": "chest-incline-dumbbell", "videoUrl": "https://www.youtube.com/watch?v=8iPEnn-ltC8", "source": "ScottHermanFitness"},
+    {"exerciseId": "chest-cable-fly", "videoUrl": "https://www.youtube.com/watch?v=WEM9FCIPlxQ", "source": "ATHLEAN-X"},
+    {"exerciseId": "chest-pushup", "videoUrl": "https://www.youtube.com/watch?v=IODxDxX7oi4", "source": "ATHLEAN-X"},
+    {"exerciseId": "chest-dip", "videoUrl": "https://www.youtube.com/watch?v=wjUmnZH528Y", "source": "ATHLEAN-X"},
+
+    {"exerciseId": "back-deadlift", "videoUrl": "https://www.youtube.com/watch?v=op9kVnSso6Q", "source": "Alan Thrall"},
+    {"exerciseId": "back-pullup", "videoUrl": "https://www.youtube.com/watch?v=eGo4IYlbE5g", "source": "ATHLEAN-X"},
+    {"exerciseId": "back-lat-pulldown", "videoUrl": "https://www.youtube.com/watch?v=CAwf7n6Luuc", "source": "ATHLEAN-X"},
+    {"exerciseId": "back-barbell-row", "videoUrl": "https://www.youtube.com/watch?v=FWJR5Ve8bnQ", "source": "Alan Thrall"},
+    {"exerciseId": "back-dumbbell-row", "videoUrl": "https://www.youtube.com/watch?v=pYcpY20QaE8", "source": "ScottHermanFitness"},
+    {"exerciseId": "back-seated-row", "videoUrl": "https://www.youtube.com/watch?v=GZbfZ033f74", "source": "ScottHermanFitness"},
+
+    {"exerciseId": "shoulders-overhead-press", "videoUrl": "https://www.youtube.com/watch?v=2yjwXTZQDDI", "source": "Alan Thrall"},
+    {"exerciseId": "shoulders-dumbbell-press", "videoUrl": "https://www.youtube.com/watch?v=qEwKCR5JCog", "source": "ScottHermanFitness"},
+    {"exerciseId": "shoulders-lateral-raise", "videoUrl": "https://www.youtube.com/watch?v=3VcKaXpzqRo", "source": "Jeff Nippard"},
+    {"exerciseId": "shoulders-face-pull", "videoUrl": "https://www.youtube.com/watch?v=rep-qVOkqgk", "source": "ATHLEAN-X"},
+    {"exerciseId": "shoulders-rear-delt-fly", "videoUrl": "https://www.youtube.com/watch?v=EA7u4Q_8HQ0", "source": "ScottHermanFitness"},
+
+    {"exerciseId": "biceps-barbell-curl", "videoUrl": "https://www.youtube.com/watch?v=kwG2ipFRgfo", "source": "ScottHermanFitness"},
+    {"exerciseId": "biceps-dumbbell-curl", "videoUrl": "https://www.youtube.com/watch?v=ykJmrZ5v0Oo", "source": "ATHLEAN-X"},
+    {"exerciseId": "biceps-hammer-curl", "videoUrl": "https://www.youtube.com/watch?v=zC3nLlEvin4", "source": "ScottHermanFitness"},
+    {"exerciseId": "biceps-preacher-curl", "videoUrl": "https://www.youtube.com/watch?v=fIWP-FRFNU0", "source": "ScottHermanFitness"},
+
+    {"exerciseId": "triceps-pushdown", "videoUrl": "https://www.youtube.com/watch?v=2-LAMcpzODU", "source": "ScottHermanFitness"},
+    {"exerciseId": "triceps-skull-crusher", "videoUrl": "https://www.youtube.com/watch?v=d_KZxkY_0cM", "source": "ATHLEAN-X"},
+    {"exerciseId": "triceps-overhead-extension", "videoUrl": "https://www.youtube.com/watch?v=-Vyt2QdsR7E", "source": "ScottHermanFitness"},
+    {"exerciseId": "triceps-dip", "videoUrl": "https://www.youtube.com/watch?v=0326dy_-CzM", "source": "ATHLEAN-X"},
+
+    {"exerciseId": "legs-squat", "videoUrl": "https://www.youtube.com/watch?v=bEv6CCg2BC8", "source": "Alan Thrall"},
+    {"exerciseId": "legs-front-squat", "videoUrl": "https://www.youtube.com/watch?v=m4ytaCJZpl0", "source": "Alan Thrall"},
+    {"exerciseId": "legs-leg-press", "videoUrl": "https://www.youtube.com/watch?v=IZxyjW7MPJQ", "source": "ScottHermanFitness"},
+    {"exerciseId": "legs-lunges", "videoUrl": "https://www.youtube.com/watch?v=D7KaRcUTQeE", "source": "ATHLEAN-X"},
+    {"exerciseId": "legs-split-squat", "videoUrl": "https://www.youtube.com/watch?v=2C-uNgKwPLE", "source": "ATHLEAN-X"},
+    {"exerciseId": "legs-leg-extension", "videoUrl": "https://www.youtube.com/watch?v=YyvSfVjQeL0", "source": "ScottHermanFitness"},
+    {"exerciseId": "legs-leg-curl", "videoUrl": "https://www.youtube.com/watch?v=1Tq3QdYUuHs", "source": "ScottHermanFitness"},
+    {"exerciseId": "legs-romanian-deadlift", "videoUrl": "https://www.youtube.com/watch?v=JCXUYuzwNrM", "source": "Alan Thrall"},
+    {"exerciseId": "legs-hip-thrust", "videoUrl": "https://www.youtube.com/watch?v=xDmFkJxPzeM", "source": "Bret Contreras"},
+    {"exerciseId": "legs-calf-raise", "videoUrl": "https://www.youtube.com/watch?v=-M4-G8p8fmc", "source": "ATHLEAN-X"},
+
+    {"exerciseId": "core-plank", "videoUrl": "https://www.youtube.com/watch?v=ASdvN_XEl_c", "source": "ATHLEAN-X"},
+    {"exerciseId": "core-crunches", "videoUrl": "https://www.youtube.com/watch?v=Xyd_fa5zoEU", "source": "ATHLEAN-X"},
+    {"exerciseId": "core-hanging-leg-raise", "videoUrl": "https://www.youtube.com/watch?v=Pr1ieGZ5atk", "source": "ATHLEAN-X"},
+    {"exerciseId": "core-russian-twist", "videoUrl": "https://www.youtube.com/watch?v=wkD8rjkodUI", "source": "ScottHermanFitness"},
+    {"exerciseId": "core-ab-wheel", "videoUrl": "https://www.youtube.com/watch?v=rqiTPdK1c_I", "source": "ATHLEAN-X"},
+
+    {"exerciseId": "cardio-burpees", "videoUrl": "https://www.youtube.com/watch?v=TU8QYVW0gDU", "source": "ATHLEAN-X"},
+    {"exerciseId": "cardio-jump-rope", "videoUrl": "https://www.youtube.com/watch?v=FJmRQ5iTXKE", "source": "Jump Rope Dudes"},
+    {"exerciseId": "cardio-box-jump", "videoUrl": "https://www.youtube.com/watch?v=52r_Ul5k03g", "source": "ATHLEAN-X"}
+  ]
+}
