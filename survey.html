@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Forma Survey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+            background: #FFFFFF;
+            color: #000000;
+            padding: 24px 20px 140px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0 32px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #00D4AA;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 15px;
+            margin-top: 6px;
+        }
+
+        .question {
+            margin-bottom: 32px;
+        }
+
+        .question-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .question-num {
+            background: #00D4AA;
+            color: white;
+            min-width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .question-text {
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.4;
+            padding-top: 3px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .option-btn {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px;
+            background: #F8F8F8;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .option-btn:active {
+            transform: scale(0.98);
+        }
+
+        .option-btn.selected {
+            background: #E8FBF6;
+            border-color: #00D4AA;
+        }
+
+        .radio-circle {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #CCC;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.15s ease;
+        }
+
+        .option-btn.selected .radio-circle {
+            border-color: #00D4AA;
+            background: #00D4AA;
+        }
+
+        .radio-circle::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+
+        .option-btn.selected .radio-circle::after {
+            opacity: 1;
+        }
+
+        .checkbox-square {
+            width: 22px;
+            height: 22px;
+            border: 2px solid #CCC;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.15s ease;
+        }
+
+        .option-btn.selected .checkbox-square {
+            border-color: #00D4AA;
+            background: #00D4AA;
+        }
+
+        .checkbox-square::after {
+            content: '✓';
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+
+        .option-btn.selected .checkbox-square::after {
+            opacity: 1;
+        }
+
+        .option-label {
+            font-size: 15px;
+            line-height: 1.4;
+            color: #1a1a1a;
+        }
+
+        .text-input {
+            width: 100%;
+            min-height: 100px;
+            padding: 16px;
+            font-size: 16px;
+            font-family: inherit;
+            border: 2px solid #E0E0E0;
+            border-radius: 12px;
+            resize: none;
+            transition: border-color 0.15s ease;
+            -webkit-appearance: none;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: #00D4AA;
+        }
+
+        .text-input::placeholder {
+            color: #999;
+        }
+
+        /* Fixed Bottom */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 16px 20px;
+            padding-bottom: max(16px, env(safe-area-inset-bottom));
+            border-top: 1px solid #E5E5E5;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            border: none;
+            -webkit-tap-highlight-color: transparent;
+            transition: transform 0.1s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+
+        .btn-copy {
+            background: #F0F0F0;
+            color: #333;
+        }
+
+        .btn-copy.copied {
+            background: #00D4AA;
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        .hint {
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            padding-top: 4px;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: rgba(0,0,0,0.85);
+            color: white;
+            padding: 20px 32px;
+            border-radius: 14px;
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.2s ease;
+            z-index: 9999;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        /* Progress */
+        .progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: #00D4AA;
+            width: 0%;
+            transition: width 0.3s ease;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<div class="header">
+    <div class="logo">Forma<span>.</span></div>
+    <div class="subtitle">Hybrid Athlete Survey</div>
+</div>
+
+<!-- Q1 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">1</div>
+        <div class="question-text">How do you use recovery data (Whoop/Oura/Garmin)?</div>
+    </div>
+    <div class="options" data-type="radio" data-name="q1">
+        <div class="option-btn" data-value="Adjust training based on Recovery %">
+            <div class="radio-circle"></div>
+            <div class="option-label">Adjust training based on Recovery %</div>
+        </div>
+        <div class="option-btn" data-value="Track but push regardless - el data msh bet2aser">
+            <div class="radio-circle"></div>
+            <div class="option-label">Track but push regardless - el data msh bet2aser</div>
+        </div>
+        <div class="option-btn" data-value="No tracker - body feel only">
+            <div class="radio-circle"></div>
+            <div class="option-label">No tracker - body feel only</div>
+        </div>
+    </div>
+</div>
+
+<!-- Q2 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">2</div>
+        <div class="question-text">Which daily graphs would you actually use?</div>
+    </div>
+    <div class="options" data-type="checkbox" data-name="q2">
+        <div class="option-btn" data-value="Recovery % vs Performance Output">
+            <div class="checkbox-square"></div>
+            <div class="option-label">Recovery % vs Performance Output</div>
+        </div>
+        <div class="option-btn" data-value="Consistency Heatmap (like GitHub)">
+            <div class="checkbox-square"></div>
+            <div class="option-label">Consistency Heatmap (like GitHub)</div>
+        </div>
+        <div class="option-btn" data-value="Body Fat % vs Strength Numbers">
+            <div class="checkbox-square"></div>
+            <div class="option-label">Body Fat % vs Strength Numbers</div>
+        </div>
+    </div>
+</div>
+
+<!-- Q3 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">3</div>
+        <div class="question-text">Why do athletes still use whiteboards over apps?</div>
+    </div>
+    <div class="options" data-type="checkbox" data-name="q3">
+        <div class="option-btn" data-value="Speed - apps need too many clicks">
+            <div class="checkbox-square"></div>
+            <div class="option-label">Speed - apps need too many clicks</div>
+        </div>
+        <div class="option-btn" data-value="No app handles hybrid (Run+Sled+Lifts) properly">
+            <div class="checkbox-square"></div>
+            <div class="option-label">No app handles hybrid (Run+Sled+Lifts) properly</div>
+        </div>
+        <div class="option-btn" data-value="Sweaty hands / screen issues fel gym">
+            <div class="checkbox-square"></div>
+            <div class="option-label">Sweaty hands / screen issues fel gym</div>
+        </div>
+    </div>
+</div>
+
+<!-- Q4 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">4</div>
+        <div class="question-text">El moshkela fel nutrition tracking in Egypt?</div>
+    </div>
+    <div class="options" data-type="checkbox" data-name="q4">
+        <div class="option-btn" data-value="No barcodes/labels on local products">
+            <div class="checkbox-square"></div>
+            <div class="option-label">No barcodes/labels on local products</div>
+        </div>
+        <div class="option-btn" data-value="Hard to estimate home food (mama's kitchen)">
+            <div class="checkbox-square"></div>
+            <div class="option-label">Hard to estimate home food (mama's kitchen)</div>
+        </div>
+        <div class="option-btn" data-value="Restaurants don't list calories">
+            <div class="checkbox-square"></div>
+            <div class="option-label">Restaurants don't list calories</div>
+        </div>
+    </div>
+</div>
+
+<!-- Q5 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">5</div>
+        <div class="question-text">What supplements are you tracking? (Local brands?)</div>
+    </div>
+    <textarea class="text-input" data-name="q5" placeholder="e.g., Ultimate Nutrition Creatine, ON Gold Standard..."></textarea>
+</div>
+
+<!-- Q6 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">6</div>
+        <div class="question-text">Equipment issues at your gym?</div>
+    </div>
+    <textarea class="text-input" data-name="q6" placeholder="e.g., No sled, busy peak hours, machines occupied..."></textarea>
+</div>
+
+<!-- Q7 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">7</div>
+        <div class="question-text">When you're sick or exhausted, what should the app do?</div>
+    </div>
+    <div class="options" data-type="radio" data-name="q7">
+        <div class="option-btn" data-value="Force Rest - no option to train">
+            <div class="radio-circle"></div>
+            <div class="option-label">Force Rest - no option to train</div>
+        </div>
+        <div class="option-btn" data-value="Suggest 50% Light Session (deload)">
+            <div class="radio-circle"></div>
+            <div class="option-label">Suggest 50% Light Session (deload)</div>
+        </div>
+        <div class="option-btn" data-value="Let me push through - I know my body">
+            <div class="radio-circle"></div>
+            <div class="option-label">Let me push through - I know my body</div>
+        </div>
+    </div>
+</div>
+
+<!-- Q8 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">8</div>
+        <div class="question-text">Your dream feature that no app has?</div>
+    </div>
+    <textarea class="text-input" data-name="q8" placeholder="What's the one thing you wish existed?"></textarea>
+</div>
+
+<!-- Q9 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">9</div>
+        <div class="question-text">Where does your training plan come from?</div>
+    </div>
+    <div class="options" data-type="radio" data-name="q9">
+        <div class="option-btn" data-value="Coach via PDF/WhatsApp">
+            <div class="radio-circle"></div>
+            <div class="option-label">Coach via PDF/WhatsApp</div>
+        </div>
+        <div class="option-btn" data-value="Self-Planned - I program my own training">
+            <div class="radio-circle"></div>
+            <div class="option-label">Self-Planned - I program my own training</div>
+        </div>
+    </div>
+</div>
+
+<!-- Q10 -->
+<div class="question">
+    <div class="question-header">
+        <div class="question-num">10</div>
+        <div class="question-text">Would you compete on an Egyptian leaderboard?</div>
+    </div>
+    <div class="options" data-type="radio" data-name="q10">
+        <div class="option-btn" data-value="Yes - show me where I rank in Egypt">
+            <div class="radio-circle"></div>
+            <div class="option-label">Yes - show me where I rank in Egypt</div>
+        </div>
+        <div class="option-btn" data-value="No - keep my data private">
+            <div class="radio-circle"></div>
+            <div class="option-label">No - keep my data private</div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="bottom-bar">
+    <button class="btn btn-copy" id="copyBtn">
+        <span id="copyIcon">📋</span>
+        <span id="copyText">Copy Results</span>
+    </button>
+    <a class="btn btn-whatsapp" id="waBtn" href="https://wa.me/201551412116">
+        <span>💬</span>
+        <span>Send via WhatsApp</span>
+    </a>
+    <div class="hint">Tap Copy first, then Send via WhatsApp</div>
+</div>
+
+<script>
+(function() {
+    // Store answers
+    var answers = {};
+
+    // Handle option clicks
+    document.querySelectorAll('.options').forEach(function(container) {
+        var type = container.getAttribute('data-type');
+        var name = container.getAttribute('data-name');
+
+        container.querySelectorAll('.option-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var value = this.getAttribute('data-value');
+
+                if (type === 'radio') {
+                    // Deselect siblings
+                    container.querySelectorAll('.option-btn').forEach(function(b) {
+                        b.classList.remove('selected');
+                    });
+                    this.classList.add('selected');
+                    answers[name] = value;
+                } else {
+                    // Toggle checkbox
+                    this.classList.toggle('selected');
+                    if (!answers[name]) answers[name] = [];
+
+                    if (this.classList.contains('selected')) {
+                        answers[name].push(value);
+                    } else {
+                        var idx = answers[name].indexOf(value);
+                        if (idx > -1) answers[name].splice(idx, 1);
+                    }
+                }
+
+                updateProgress();
+                updateWhatsAppLink();
+            });
+        });
+    });
+
+    // Handle textareas
+    document.querySelectorAll('.text-input').forEach(function(input) {
+        var name = input.getAttribute('data-name');
+        input.addEventListener('input', function() {
+            answers[name] = this.value.trim();
+            updateProgress();
+            updateWhatsAppLink();
+        });
+    });
+
+    function updateProgress() {
+        var total = 10;
+        var answered = 0;
+
+        if (answers.q1) answered++;
+        if (answers.q2 && answers.q2.length > 0) answered++;
+        if (answers.q3 && answers.q3.length > 0) answered++;
+        if (answers.q4 && answers.q4.length > 0) answered++;
+        if (answers.q5) answered++;
+        if (answers.q6) answered++;
+        if (answers.q7) answered++;
+        if (answers.q8) answered++;
+        if (answers.q9) answered++;
+        if (answers.q10) answered++;
+
+        document.getElementById('progress').style.width = (answered / total * 100) + '%';
+    }
+
+    function generateMessage() {
+        var msg = '🏋️ FORMA SURVEY\n';
+        msg += '═══════════════════\n\n';
+
+        msg += '1️⃣ Tracker Usage\n';
+        msg += '→ ' + (answers.q1 || 'Not answered') + '\n\n';
+
+        msg += '2️⃣ Daily Graphs\n';
+        if (answers.q2 && answers.q2.length > 0) {
+            answers.q2.forEach(function(v) { msg += '→ ' + v + '\n'; });
+        } else {
+            msg += '→ Not answered\n';
+        }
+        msg += '\n';
+
+        msg += '3️⃣ Whiteboard vs App\n';
+        if (answers.q3 && answers.q3.length > 0) {
+            answers.q3.forEach(function(v) { msg += '→ ' + v + '\n'; });
+        } else {
+            msg += '→ Not answered\n';
+        }
+        msg += '\n';
+
+        msg += '4️⃣ Food Tracking Pain\n';
+        if (answers.q4 && answers.q4.length > 0) {
+            answers.q4.forEach(function(v) { msg += '→ ' + v + '\n'; });
+        } else {
+            msg += '→ Not answered\n';
+        }
+        msg += '\n';
+
+        msg += '5️⃣ Supplements\n';
+        msg += '→ ' + (answers.q5 || 'Not answered') + '\n\n';
+
+        msg += '6️⃣ Gym Equipment Issues\n';
+        msg += '→ ' + (answers.q6 || 'Not answered') + '\n\n';
+
+        msg += '7️⃣ Sick/Exhausted Logic\n';
+        msg += '→ ' + (answers.q7 || 'Not answered') + '\n\n';
+
+        msg += '8️⃣ Dream Feature\n';
+        msg += '→ ' + (answers.q8 || 'Not answered') + '\n\n';
+
+        msg += '9️⃣ Planning Source\n';
+        msg += '→ ' + (answers.q9 || 'Not answered') + '\n\n';
+
+        msg += '🔟 Leaderboard\n';
+        msg += '→ ' + (answers.q10 || 'Not answered') + '\n\n';
+
+        msg += '═══════════════════\n';
+        msg += 'Sent via Forma Survey';
+
+        return msg;
+    }
+
+    function updateWhatsAppLink() {
+        var msg = generateMessage();
+        var url = 'https://wa.me/201551412116?text=' + encodeURIComponent(msg);
+        document.getElementById('waBtn').href = url;
+    }
+
+    // Copy button
+    document.getElementById('copyBtn').addEventListener('click', function() {
+        var msg = generateMessage();
+        var btn = this;
+
+        // Try modern API first
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(msg).then(function() {
+                showCopied(btn);
+            }).catch(function() {
+                fallbackCopy(msg, btn);
+            });
+        } else {
+            fallbackCopy(msg, btn);
+        }
+    });
+
+    function fallbackCopy(text, btn) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.cssText = 'position:fixed;left:-999px;top:0;';
+        document.body.appendChild(ta);
+        ta.select();
+        ta.setSelectionRange(0, 99999);
+
+        try {
+            document.execCommand('copy');
+            showCopied(btn);
+        } catch (e) {
+            showToast('Copy failed - select manually');
+        }
+
+        document.body.removeChild(ta);
+    }
+
+    function showCopied(btn) {
+        btn.classList.add('copied');
+        document.getElementById('copyIcon').textContent = '✓';
+        document.getElementById('copyText').textContent = 'Copied!';
+        showToast('Copied! Now tap Send via WhatsApp');
+
+        setTimeout(function() {
+            btn.classList.remove('copied');
+            document.getElementById('copyIcon').textContent = '📋';
+            document.getElementById('copyText').textContent = 'Copy Results';
+        }, 3000);
+    }
+
+    function showToast(msg) {
+        var toast = document.getElementById('toast');
+        toast.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(function() {
+            toast.classList.remove('show');
+        }, 2500);
+    }
+
+    // Init
+    updateWhatsAppLink();
+})();
+</script>
+
+</body>
+</html>
