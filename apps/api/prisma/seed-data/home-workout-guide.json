@@ -1,0 +1,686 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "introduction": {
+    "title": {
+      "en": "Home Workout Guide: Build Muscle Without a Gym",
+      "ar": "دليل التمرين في البيت: ابني عضلات من غير جيم"
+    },
+    "description": {
+      "en": "You don't need an expensive gym membership to get fit. With the right equipment and knowledge, you can build serious muscle at home.",
+      "ar": "مش محتاج اشتراك جيم غالي عشان تبقى فت. بالمعدات والمعرفة الصح، تقدر تبني عضلات جادة في البيت."
+    }
+  },
+  "equipmentTiers": {
+    "title": {
+      "en": "Equipment Tiers: Start Where You Are",
+      "ar": "مستويات المعدات: ابدأ من مكانك"
+    },
+    "tiers": [
+      {
+        "id": "no-equipment",
+        "name": {
+          "en": "Tier 0: No Equipment (Bodyweight Only)",
+          "ar": "المستوى 0: بدون معدات (وزن الجسم فقط)"
+        },
+        "budget": {
+          "en": "Free",
+          "ar": "مجاني"
+        },
+        "description": {
+          "en": "Start with just your body. Perfect for beginners or when traveling.",
+          "ar": "ابدأ بجسمك بس. مثالي للمبتدئين أو لما تكون مسافر."
+        },
+        "equipment": [],
+        "exercises": [
+          {
+            "muscle": { "en": "Chest", "ar": "صدر" },
+            "exercises": [
+              { "en": "Push-ups", "ar": "ضغط" },
+              { "en": "Incline Push-ups", "ar": "ضغط عالي" },
+              { "en": "Diamond Push-ups", "ar": "ضغط ماسي" },
+              { "en": "Wide Push-ups", "ar": "ضغط واسع" }
+            ]
+          },
+          {
+            "muscle": { "en": "Back", "ar": "ظهر" },
+            "exercises": [
+              { "en": "Superman", "ar": "سوبرمان" },
+              { "en": "Reverse Snow Angels", "ar": "ملائكة الثلج العكسية" },
+              { "en": "Doorway Rows", "ar": "رو بالباب" },
+              { "en": "Table Rows", "ar": "رو بالترابيزة" }
+            ]
+          },
+          {
+            "muscle": { "en": "Legs", "ar": "رجل" },
+            "exercises": [
+              { "en": "Squats", "ar": "سكوات" },
+              { "en": "Lunges", "ar": "لانجز" },
+              { "en": "Bulgarian Split Squats", "ar": "سكوات بلغاري" },
+              { "en": "Single Leg Deadlift", "ar": "ديدليفت برجل واحدة" },
+              { "en": "Glute Bridges", "ar": "جلوت بريدج" }
+            ]
+          },
+          {
+            "muscle": { "en": "Core", "ar": "كور" },
+            "exercises": [
+              { "en": "Plank", "ar": "بلانك" },
+              { "en": "Mountain Climbers", "ar": "ماونتن كلايمرز" },
+              { "en": "Dead Bug", "ar": "ديد بج" },
+              { "en": "Bicycle Crunches", "ar": "كرانشز عجلة" }
+            ]
+          }
+        ],
+        "limitations": {
+          "en": "Limited back and bicep work. Hard to progressively overload.",
+          "ar": "شغل ظهر وباي محدود. صعب تزود الحمل تدريجياً."
+        },
+        "sampleWorkout": {
+          "name": { "en": "Bodyweight Full Body", "ar": "جسم كامل بوزن الجسم" },
+          "exercises": [
+            { "exercise": { "en": "Push-ups", "ar": "ضغط" }, "sets": "3", "reps": "Max" },
+            { "exercise": { "en": "Squats", "ar": "سكوات" }, "sets": "3", "reps": "20" },
+            { "exercise": { "en": "Table Rows", "ar": "رو بالترابيزة" }, "sets": "3", "reps": "Max" },
+            { "exercise": { "en": "Lunges", "ar": "لانجز" }, "sets": "3", "reps": "12 each leg" },
+            { "exercise": { "en": "Plank", "ar": "بلانك" }, "sets": "3", "reps": "30-60 sec" },
+            { "exercise": { "en": "Glute Bridges", "ar": "جلوت بريدج" }, "sets": "3", "reps": "15" }
+          ]
+        }
+      },
+      {
+        "id": "minimal-equipment",
+        "name": {
+          "en": "Tier 1: Minimal Equipment",
+          "ar": "المستوى 1: معدات بسيطة"
+        },
+        "budget": {
+          "en": "500-1500 EGP",
+          "ar": "500-1500 جنيه"
+        },
+        "description": {
+          "en": "Add a few key pieces that massively expand your exercise options.",
+          "ar": "ضيف كام قطعة أساسية بتوسع خيارات التمارين بشكل كبير."
+        },
+        "equipment": [
+          {
+            "name": { "en": "Resistance Bands Set", "ar": "مجموعة أحزمة مقاومة" },
+            "price": { "en": "150-300 EGP", "ar": "150-300 جنيه" },
+            "why": { "en": "Versatile, portable, great for all muscles", "ar": "متعددة الاستخدام، محمولة، ممتازة لكل العضلات" }
+          },
+          {
+            "name": { "en": "Pull-up Bar (Doorway)", "ar": "عقلة باب" },
+            "price": { "en": "200-400 EGP", "ar": "200-400 جنيه" },
+            "why": { "en": "Best back exercise, can hang abs too", "ar": "أحسن تمرين ظهر، ممكن تعلق بطن كمان" }
+          },
+          {
+            "name": { "en": "Jump Rope", "ar": "حبل نط" },
+            "price": { "en": "50-150 EGP", "ar": "50-150 جنيه" },
+            "why": { "en": "Excellent cardio, small space", "ar": "كارديو ممتاز، مساحة صغيرة" }
+          }
+        ],
+        "exercises": [
+          {
+            "muscle": { "en": "Back", "ar": "ظهر" },
+            "exercises": [
+              { "en": "Pull-ups", "ar": "عقلة" },
+              { "en": "Chin-ups", "ar": "عقلة عكسية" },
+              { "en": "Band Rows", "ar": "رو بالباند" },
+              { "en": "Band Pull-Aparts", "ar": "سحب باند" }
+            ]
+          },
+          {
+            "muscle": { "en": "Biceps", "ar": "باي" },
+            "exercises": [
+              { "en": "Chin-ups", "ar": "عقلة عكسية" },
+              { "en": "Band Curls", "ar": "كيرل بالباند" }
+            ]
+          },
+          {
+            "muscle": { "en": "Chest", "ar": "صدر" },
+            "exercises": [
+              { "en": "Band Chest Press", "ar": "ضغط صدر بالباند" },
+              { "en": "Band Flyes", "ar": "فلاي بالباند" }
+            ]
+          }
+        ],
+        "sampleWorkout": {
+          "name": { "en": "Minimal Equipment Push Day", "ar": "يوم دفع بمعدات بسيطة" },
+          "exercises": [
+            { "exercise": { "en": "Push-ups", "ar": "ضغط" }, "sets": "4", "reps": "Max" },
+            { "exercise": { "en": "Band Chest Press", "ar": "ضغط صدر بالباند" }, "sets": "3", "reps": "15" },
+            { "exercise": { "en": "Diamond Push-ups", "ar": "ضغط ماسي" }, "sets": "3", "reps": "Max" },
+            { "exercise": { "en": "Band Lateral Raises", "ar": "رفرفة بالباند" }, "sets": "3", "reps": "15" },
+            { "exercise": { "en": "Band Tricep Extension", "ar": "تراي بالباند" }, "sets": "3", "reps": "15" }
+          ]
+        }
+      },
+      {
+        "id": "basic-home-gym",
+        "name": {
+          "en": "Tier 2: Basic Home Gym",
+          "ar": "المستوى 2: جيم بيت أساسي"
+        },
+        "budget": {
+          "en": "2000-5000 EGP",
+          "ar": "2000-5000 جنيه"
+        },
+        "description": {
+          "en": "Now we're getting serious. Dumbbells unlock most exercises.",
+          "ar": "دلوقتي بنبقى جادين. الدمبلز بتفتح معظم التمارين."
+        },
+        "equipment": [
+          {
+            "name": { "en": "Adjustable Dumbbells (or set)", "ar": "دمبلز قابلة للتعديل (أو مجموعة)" },
+            "price": { "en": "1500-3000 EGP", "ar": "1500-3000 جنيه" },
+            "why": { "en": "Essential for progressive overload", "ar": "أساسية للحمل التدريجي" }
+          },
+          {
+            "name": { "en": "Flat Bench", "ar": "بنش مسطح" },
+            "price": { "en": "500-1500 EGP", "ar": "500-1500 جنيه" },
+            "why": { "en": "Enables pressing, rows, and more", "ar": "بتفعل الدفع والرو وأكتر" }
+          },
+          {
+            "name": { "en": "Yoga Mat", "ar": "بساط يوجا" },
+            "price": { "en": "100-300 EGP", "ar": "100-300 جنيه" },
+            "why": { "en": "Comfortable floor work", "ar": "شغل أرض مريح" }
+          }
+        ],
+        "exercises": [
+          {
+            "muscle": { "en": "Chest", "ar": "صدر" },
+            "exercises": [
+              { "en": "Dumbbell Bench Press", "ar": "بنش دمبل" },
+              { "en": "Dumbbell Flyes", "ar": "فلاي دمبل" },
+              { "en": "Floor Press", "ar": "فلور بريس" }
+            ]
+          },
+          {
+            "muscle": { "en": "Back", "ar": "ظهر" },
+            "exercises": [
+              { "en": "One-Arm Dumbbell Row", "ar": "رو دمبل بإيد واحدة" },
+              { "en": "Bent Over Rows", "ar": "رو منحني" }
+            ]
+          },
+          {
+            "muscle": { "en": "Shoulders", "ar": "كتف" },
+            "exercises": [
+              { "en": "Dumbbell Shoulder Press", "ar": "ضغط كتف دمبل" },
+              { "en": "Lateral Raises", "ar": "رفرفة جانبية" },
+              { "en": "Front Raises", "ar": "رفرفة أمامية" }
+            ]
+          },
+          {
+            "muscle": { "en": "Legs", "ar": "رجل" },
+            "exercises": [
+              { "en": "Goblet Squats", "ar": "جوبلت سكوات" },
+              { "en": "Dumbbell Lunges", "ar": "لانجز دمبل" },
+              { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" },
+              { "en": "Dumbbell Step-ups", "ar": "ستيب أبس دمبل" }
+            ]
+          },
+          {
+            "muscle": { "en": "Arms", "ar": "دراعات" },
+            "exercises": [
+              { "en": "Dumbbell Curls", "ar": "كيرل دمبل" },
+              { "en": "Hammer Curls", "ar": "هامر كيرل" },
+              { "en": "Overhead Tricep Extension", "ar": "تراي علوي" },
+              { "en": "Tricep Kickbacks", "ar": "تراي كيكباكس" }
+            ]
+          }
+        ],
+        "sampleWorkout": {
+          "name": { "en": "Basic Home Gym Full Body", "ar": "جسم كامل جيم بيت أساسي" },
+          "exercises": [
+            { "exercise": { "en": "Goblet Squats", "ar": "جوبلت سكوات" }, "sets": "4", "reps": "10-12" },
+            { "exercise": { "en": "Dumbbell Bench Press", "ar": "بنش دمبل" }, "sets": "4", "reps": "8-10" },
+            { "exercise": { "en": "One-Arm Dumbbell Row", "ar": "رو دمبل بإيد واحدة" }, "sets": "3", "reps": "10-12 each" },
+            { "exercise": { "en": "Dumbbell Shoulder Press", "ar": "ضغط كتف دمبل" }, "sets": "3", "reps": "10-12" },
+            { "exercise": { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" }, "sets": "3", "reps": "10-12" },
+            { "exercise": { "en": "Dumbbell Curls", "ar": "كيرل دمبل" }, "sets": "3", "reps": "12-15" },
+            { "exercise": { "en": "Overhead Tricep Extension", "ar": "تراي علوي" }, "sets": "3", "reps": "12-15" }
+          ]
+        }
+      },
+      {
+        "id": "complete-home-gym",
+        "name": {
+          "en": "Tier 3: Complete Home Gym",
+          "ar": "المستوى 3: جيم بيت كامل"
+        },
+        "budget": {
+          "en": "10,000-30,000 EGP",
+          "ar": "10,000-30,000 جنيه"
+        },
+        "description": {
+          "en": "A fully equipped home gym that rivals commercial gyms.",
+          "ar": "جيم بيت مجهز بالكامل بينافس الجيمات التجارية."
+        },
+        "equipment": [
+          {
+            "name": { "en": "Olympic Barbell + Weight Plates", "ar": "بار أولمبي + أقراص أوزان" },
+            "price": { "en": "3000-8000 EGP", "ar": "3000-8000 جنيه" },
+            "why": { "en": "Essential for compound lifts", "ar": "أساسي للرفعات المركبة" }
+          },
+          {
+            "name": { "en": "Power Rack/Squat Stand", "ar": "باور راك/ستاند سكوات" },
+            "price": { "en": "3000-10000 EGP", "ar": "3000-10000 جنيه" },
+            "why": { "en": "Safe squatting and benching", "ar": "سكوات وبنش آمن" }
+          },
+          {
+            "name": { "en": "Adjustable Bench", "ar": "بنش قابل للتعديل" },
+            "price": { "en": "1000-3000 EGP", "ar": "1000-3000 جنيه" },
+            "why": { "en": "Incline, decline, flat positions", "ar": "وضعيات عالي، سفلي، مسطح" }
+          },
+          {
+            "name": { "en": "Cable Machine or Bands", "ar": "ماكينة كيبل أو أحزمة" },
+            "price": { "en": "2000-15000 EGP", "ar": "2000-15000 جنيه" },
+            "why": { "en": "Constant tension exercises", "ar": "تمارين شد ثابت" }
+          },
+          {
+            "name": { "en": "Dip/Pull-up Station", "ar": "محطة ديبس/عقلة" },
+            "price": { "en": "1000-3000 EGP", "ar": "1000-3000 جنيه" },
+            "why": { "en": "Great compound movements", "ar": "حركات مركبة ممتازة" }
+          }
+        ],
+        "exercises": {
+          "en": "All gym exercises possible: Squats, Deadlifts, Bench Press, Barbell Rows, Overhead Press, and more.",
+          "ar": "كل تمارين الجيم ممكنة: سكوات، ديدليفت، بنش، رو بالبار، ضغط علوي، وأكتر."
+        }
+      }
+    ]
+  },
+  "spaceConsiderations": {
+    "title": {
+      "en": "Space Considerations",
+      "ar": "اعتبارات المساحة"
+    },
+    "tips": [
+      {
+        "space": {
+          "en": "Small Apartment (under 2m x 2m)",
+          "ar": "شقة صغيرة (أقل من 2م × 2م)"
+        },
+        "recommendations": {
+          "en": [
+            "Stick to Tier 0-1 equipment",
+            "Resistance bands and doorway pull-up bar",
+            "Foldable yoga mat",
+            "Store equipment in a closet"
+          ],
+          "ar": [
+            "التزم بمعدات المستوى 0-1",
+            "أحزمة مقاومة وعقلة باب",
+            "بساط يوجا قابل للطي",
+            "خزن المعدات في دولاب"
+          ]
+        }
+      },
+      {
+        "space": {
+          "en": "Medium Room (2m x 3m)",
+          "ar": "غرفة متوسطة (2م × 3م)"
+        },
+        "recommendations": {
+          "en": [
+            "Can fit a bench and dumbbells",
+            "Foldable bench saves space",
+            "Wall-mounted pull-up bar",
+            "Consider adjustable dumbbells to save space"
+          ],
+          "ar": [
+            "ممكن تحط بنش ودمبلز",
+            "البنش القابل للطي بيوفر مساحة",
+            "عقلة حايط",
+            "فكر في دمبلز قابلة للتعديل لتوفير المساحة"
+          ]
+        }
+      },
+      {
+        "space": {
+          "en": "Garage/Large Room (3m x 4m+)",
+          "ar": "جراج/غرفة كبيرة (3م × 4م+)"
+        },
+        "recommendations": {
+          "en": [
+            "Full power rack setup possible",
+            "Olympic lifting platform",
+            "Full dumbbell rack",
+            "Can add cardio equipment"
+          ],
+          "ar": [
+            "سيتأب باور راك كامل ممكن",
+            "منصة رفع أولمبي",
+            "راك دمبل كامل",
+            "ممكن تضيف معدات كارديو"
+          ]
+        }
+      }
+    ],
+    "flooringTips": {
+      "title": {
+        "en": "Flooring Tips",
+        "ar": "نصائح الأرضية"
+      },
+      "tips": {
+        "en": [
+          "Rubber mats protect floor and reduce noise",
+          "Horse stall mats are cheap and effective",
+          "At minimum, use a yoga mat for floor exercises",
+          "Don't drop weights on tile or hardwood"
+        ],
+        "ar": [
+          "السجاد المطاطي بيحمي الأرض ويقلل الضوضاء",
+          "سجاد اسطبلات الخيل رخيص وفعال",
+          "على الأقل، استخدم بساط يوجا لتمارين الأرض",
+          "متوقعش الأوزان على السيراميك أو الباركيه"
+        ]
+      }
+    }
+  },
+  "workoutPrograms": {
+    "title": {
+      "en": "Home Workout Programs",
+      "ar": "برامج تمارين البيت"
+    },
+    "programs": [
+      {
+        "id": "beginner-bodyweight",
+        "name": {
+          "en": "Beginner Bodyweight Program (4 weeks)",
+          "ar": "برنامج وزن جسم للمبتدئين (4 أسابيع)"
+        },
+        "equipment": {
+          "en": "None required",
+          "ar": "لا يتطلب معدات"
+        },
+        "frequency": "3x per week",
+        "schedule": {
+          "en": "Monday, Wednesday, Friday",
+          "ar": "الاثنين، الأربعاء، الجمعة"
+        },
+        "workout": {
+          "warmUp": {
+            "en": ["Jumping jacks - 30 sec", "Arm circles - 30 sec", "Leg swings - 30 sec"],
+            "ar": ["جامبنج جاكس - 30 ثانية", "دوائر الدراع - 30 ثانية", "تأرجح الرجل - 30 ثانية"]
+          },
+          "exercises": [
+            {
+              "name": { "en": "Push-ups (or knee push-ups)", "ar": "ضغط (أو ضغط بالركبة)" },
+              "week1": "2x8",
+              "week2": "3x8",
+              "week3": "3x10",
+              "week4": "3x12"
+            },
+            {
+              "name": { "en": "Bodyweight Squats", "ar": "سكوات بوزن الجسم" },
+              "week1": "2x12",
+              "week2": "3x12",
+              "week3": "3x15",
+              "week4": "3x20"
+            },
+            {
+              "name": { "en": "Table/Door Rows", "ar": "رو بالترابيزة/الباب" },
+              "week1": "2x8",
+              "week2": "3x8",
+              "week3": "3x10",
+              "week4": "3x12"
+            },
+            {
+              "name": { "en": "Glute Bridges", "ar": "جلوت بريدج" },
+              "week1": "2x12",
+              "week2": "3x12",
+              "week3": "3x15",
+              "week4": "3x20"
+            },
+            {
+              "name": { "en": "Plank", "ar": "بلانك" },
+              "week1": "2x20sec",
+              "week2": "3x20sec",
+              "week3": "3x30sec",
+              "week4": "3x45sec"
+            },
+            {
+              "name": { "en": "Lunges", "ar": "لانجز" },
+              "week1": "2x8 each",
+              "week2": "3x8 each",
+              "week3": "3x10 each",
+              "week4": "3x12 each"
+            }
+          ]
+        }
+      },
+      {
+        "id": "dumbbell-ppl",
+        "name": {
+          "en": "Dumbbell PPL Program",
+          "ar": "برنامج دمبل PPL"
+        },
+        "equipment": {
+          "en": "Dumbbells, bench (optional)",
+          "ar": "دمبلز، بنش (اختياري)"
+        },
+        "frequency": "6x per week",
+        "schedule": {
+          "en": "Push, Pull, Legs, Push, Pull, Legs, Rest",
+          "ar": "دفع، سحب، رجل، دفع، سحب، رجل، راحة"
+        },
+        "workouts": {
+          "push": {
+            "name": { "en": "Push Day", "ar": "يوم الدفع" },
+            "exercises": [
+              { "name": { "en": "Dumbbell Bench Press", "ar": "بنش دمبل" }, "sets": "4", "reps": "8-10" },
+              { "name": { "en": "Dumbbell Shoulder Press", "ar": "ضغط كتف دمبل" }, "sets": "3", "reps": "10-12" },
+              { "name": { "en": "Incline Dumbbell Press", "ar": "بنش عالي دمبل" }, "sets": "3", "reps": "10-12" },
+              { "name": { "en": "Lateral Raises", "ar": "رفرفة جانبية" }, "sets": "3", "reps": "12-15" },
+              { "name": { "en": "Overhead Tricep Extension", "ar": "تراي علوي" }, "sets": "3", "reps": "12-15" },
+              { "name": { "en": "Push-ups", "ar": "ضغط" }, "sets": "2", "reps": "Max" }
+            ]
+          },
+          "pull": {
+            "name": { "en": "Pull Day", "ar": "يوم السحب" },
+            "exercises": [
+              { "name": { "en": "Pull-ups or Band Pulldowns", "ar": "عقلة أو سحب علوي بالباند" }, "sets": "4", "reps": "8-10" },
+              { "name": { "en": "Dumbbell Rows", "ar": "رو دمبل" }, "sets": "4", "reps": "10-12" },
+              { "name": { "en": "Reverse Flyes", "ar": "فلاي خلفي" }, "sets": "3", "reps": "12-15" },
+              { "name": { "en": "Face Pulls (band)", "ar": "فيس بولز (باند)" }, "sets": "3", "reps": "15-20" },
+              { "name": { "en": "Dumbbell Curls", "ar": "كيرل دمبل" }, "sets": "3", "reps": "12-15" },
+              { "name": { "en": "Hammer Curls", "ar": "هامر كيرل" }, "sets": "3", "reps": "12-15" }
+            ]
+          },
+          "legs": {
+            "name": { "en": "Leg Day", "ar": "يوم الرجل" },
+            "exercises": [
+              { "name": { "en": "Goblet Squats", "ar": "جوبلت سكوات" }, "sets": "4", "reps": "10-12" },
+              { "name": { "en": "Romanian Deadlift", "ar": "رومانيان ديدليفت" }, "sets": "4", "reps": "10-12" },
+              { "name": { "en": "Bulgarian Split Squats", "ar": "سكوات بلغاري" }, "sets": "3", "reps": "10 each" },
+              { "name": { "en": "Dumbbell Lunges", "ar": "لانجز دمبل" }, "sets": "3", "reps": "12 each" },
+              { "name": { "en": "Calf Raises (single leg)", "ar": "رفع سمانة (رجل واحدة)" }, "sets": "4", "reps": "15-20" },
+              { "name": { "en": "Glute Bridges", "ar": "جلوت بريدج" }, "sets": "3", "reps": "15-20" }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "progressionTips": {
+    "title": {
+      "en": "How to Progress Without a Gym",
+      "ar": "إزاي تتقدم من غير جيم"
+    },
+    "methods": [
+      {
+        "method": {
+          "en": "Increase Reps",
+          "ar": "زود التكرارات"
+        },
+        "description": {
+          "en": "If you can do 10 push-ups, aim for 12 next session, then 15, then 20.",
+          "ar": "لو بتقدر تعمل 10 ضغط، استهدف 12 الجلسة الجاية، وبعدين 15، وبعدين 20."
+        }
+      },
+      {
+        "method": {
+          "en": "Add Sets",
+          "ar": "زود المجموعات"
+        },
+        "description": {
+          "en": "Go from 2 sets to 3 sets to 4 sets over time.",
+          "ar": "روح من 2 مجموعة لـ 3 مجموعات لـ 4 مجموعات مع الوقت."
+        }
+      },
+      {
+        "method": {
+          "en": "Progress to Harder Variations",
+          "ar": "تقدم لتنويعات أصعب"
+        },
+        "description": {
+          "en": "Knee push-ups → Regular push-ups → Diamond push-ups → Archer push-ups → One-arm push-ups",
+          "ar": "ضغط بالركبة → ضغط عادي → ضغط ماسي → ضغط آرتشر → ضغط بإيد واحدة"
+        }
+      },
+      {
+        "method": {
+          "en": "Slow Down the Tempo",
+          "ar": "بطئ السرعة"
+        },
+        "description": {
+          "en": "Take 3-4 seconds to lower, pause, then explode up. Harder without adding weight.",
+          "ar": "خد 3-4 ثواني للنزول، توقف، وبعدين اصعد بقوة. أصعب من غير زيادة وزن."
+        }
+      },
+      {
+        "method": {
+          "en": "Reduce Rest Time",
+          "ar": "قلل وقت الراحة"
+        },
+        "description": {
+          "en": "Shortening rest from 90 to 60 to 45 seconds increases difficulty.",
+          "ar": "تقليل الراحة من 90 لـ 60 لـ 45 ثانية بيزود الصعوبة."
+        }
+      },
+      {
+        "method": {
+          "en": "Add Resistance",
+          "ar": "زود المقاومة"
+        },
+        "description": {
+          "en": "Use heavier dumbbells, thicker resistance bands, or add a weight vest.",
+          "ar": "استخدم دمبلز أتقل، أحزمة مقاومة أسمك، أو ضيف سترة أوزان."
+        }
+      }
+    ]
+  },
+  "commonMistakes": {
+    "title": {
+      "en": "Common Home Workout Mistakes",
+      "ar": "أخطاء تمرين البيت الشائعة"
+    },
+    "mistakes": [
+      {
+        "mistake": {
+          "en": "No Schedule",
+          "ar": "مفيش جدول"
+        },
+        "solution": {
+          "en": "Set specific days and times for workouts. Treat them like appointments.",
+          "ar": "حدد أيام وأوقات معينة للتمارين. عاملها زي المواعيد."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Too Many Distractions",
+          "ar": "إلهاءات كتير"
+        },
+        "solution": {
+          "en": "Put phone on airplane mode, tell family you're training, create a dedicated space.",
+          "ar": "حط الموبايل على وضع الطيران، قول لأهلك إنك بتتمرن، اعمل مساحة مخصصة."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Skipping Warm-up",
+          "ar": "تخطي التسخين"
+        },
+        "solution": {
+          "en": "Always do 5-10 minutes of warm-up. No gym around doesn't mean no warm-up needed.",
+          "ar": "دايماً اعمل 5-10 دقايق تسخين. مفيش جيم حواليك مش معناه مفيش تسخين."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Not Tracking Progress",
+          "ar": "مش بتتابع التقدم"
+        },
+        "solution": {
+          "en": "Keep a simple log of exercises, reps, and how you felt.",
+          "ar": "خلي سجل بسيط للتمارين والتكرارات وإحساسك إزاي."
+        }
+      },
+      {
+        "mistake": {
+          "en": "Doing Only What You Like",
+          "ar": "عمل اللي بتحبه بس"
+        },
+        "solution": {
+          "en": "Don't skip legs or back just because you can't see them in the mirror.",
+          "ar": "متتخطاش الرجل أو الظهر بس عشان مش بتشوفهم في المراية."
+        }
+      }
+    ]
+  },
+  "equipmentShoppingGuide": {
+    "title": {
+      "en": "Where to Buy Equipment in Egypt",
+      "ar": "فين تشتري معدات في مصر"
+    },
+    "options": [
+      {
+        "source": {
+          "en": "Decathlon Egypt",
+          "ar": "ديكاتلون مصر"
+        },
+        "description": {
+          "en": "Affordable, good quality. Has resistance bands, dumbbells, mats.",
+          "ar": "أسعار معقولة، جودة كويسة. فيه أحزمة مقاومة، دمبلز، بساطات."
+        },
+        "priceRange": { "en": "Budget to Mid-range", "ar": "اقتصادي لمتوسط" }
+      },
+      {
+        "source": {
+          "en": "Olympic Fitness",
+          "ar": "أوليمبك فتنس"
+        },
+        "description": {
+          "en": "Professional equipment. Power racks, Olympic bars, benches.",
+          "ar": "معدات احترافية. باور راكس، بارات أولمبية، بنشات."
+        },
+        "priceRange": { "en": "Mid-range to Premium", "ar": "متوسط لفاخر" }
+      },
+      {
+        "source": {
+          "en": "Amazon Egypt / Noon",
+          "ar": "أمازون مصر / نون"
+        },
+        "description": {
+          "en": "Wide variety, read reviews carefully. Good for accessories.",
+          "ar": "تشكيلة واسعة، اقرأ التقييمات بعناية. كويس للاكسسوارات."
+        },
+        "priceRange": { "en": "Varies", "ar": "متفاوت" }
+      },
+      {
+        "source": {
+          "en": "Facebook Marketplace / OLX",
+          "ar": "فيسبوك ماركت بليس / أوليكس"
+        },
+        "description": {
+          "en": "Used equipment at big discounts. Check quality before buying.",
+          "ar": "معدات مستعملة بخصومات كبيرة. افحص الجودة قبل ما تشتري."
+        },
+        "priceRange": { "en": "Budget", "ar": "اقتصادي" }
+      }
+    ]
+  }
+}
