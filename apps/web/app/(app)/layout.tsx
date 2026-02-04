@@ -22,6 +22,8 @@ import {
   Camera,
   Settings,
   ChevronRight,
+  Globe,
+  LogOut,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -118,6 +120,11 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                 <span>Ramadan</span>
               </div>
             )}
+            <Button variant="ghost" size="icon" className="relative h-10 w-10 rounded-xl" asChild title="Back to Website">
+              <Link href="/">
+                <Globe className="h-5 w-5" />
+              </Link>
+            </Button>
             <Button variant="ghost" size="icon" className="relative h-10 w-10 rounded-xl" asChild>
               <Link href="/messages">
                 <MessageCircle className="h-5 w-5" />
@@ -207,6 +214,15 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               <Settings className="h-5 w-5" />
               <span>Settings</span>
             </Link>
+
+            <Link
+              href="/"
+              className="flex items-center gap-4 rounded-2xl px-4 py-4 hover:bg-muted transition-all border-t mt-4 pt-4"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Globe className="h-5 w-5" />
+              <span>Back to Website</span>
+            </Link>
           </nav>
         </div>
       )}
@@ -264,6 +280,15 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               <div className="achievement-badge h-10 w-10 rounded-xl text-lg">🎯</div>
             </div>
           </div>
+
+          {/* Back to Website */}
+          <Link
+            href="/"
+            className="mt-4 flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-all duration-200"
+          >
+            <Globe className="h-5 w-5" />
+            Back to Website
+          </Link>
         </div>
       </aside>
 

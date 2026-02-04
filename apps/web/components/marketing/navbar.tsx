@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight, LayoutDashboard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/ui/logo';
 import { cn } from '@/lib/utils';
@@ -17,12 +17,18 @@ const navLinks = [
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
+
+    // Check if user is logged in (has token cookie)
+    const hasToken = document.cookie.includes('forma-token');
+    setIsLoggedIn(hasToken);
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -55,15 +61,26 @@ export function Navbar() {
         </div>
 
         <div className="hidden md:flex md:items-center md:gap-3">
-          <Button variant="ghost" className="font-medium" asChild>
-            <Link href="/login">Log in</Link>
-          </Button>
-          <Button className="btn-premium" asChild>
-            <Link href="/signup">
-              Get Started
-              <ChevronRight className="ml-1 h-4 w-4" />
-            </Link>
-          </Button>
+          {isLoggedIn ? (
+            <Button className="btn-premium" asChild>
+              <Link href="/dashboard">
+                <LayoutDashboard className="mr-2 h-4 w-4" />
+                Go to Dashboard
+              </Link>
+            </Button>
+          ) : (
+            <>
+              <Button variant="ghost" className="font-medium" asChild>
+                <Link href="/login">Log in</Link>
+              </Button>
+              <Button className="btn-premium" asChild>
+                <Link href="/signup">
+                  Get Started
+                  <ChevronRight className="ml-1 h-4 w-4" />
+                </Link>
+              </Button>
+            </>
+          )}
         </div>
 
         {/* Mobile Menu Button */}
@@ -112,24 +129,39 @@ export function Navbar() {
           </div>
 
           <div className="mt-8 space-y-3">
-            <Button
-              variant="outline"
-              size="lg"
-              className="w-full justify-center rounded-xl h-12"
-              asChild
-            >
-              <Link href="/login">Log in</Link>
-            </Button>
-            <Button
-              size="lg"
-              className="btn-premium w-full justify-center rounded-xl h-12"
-              asChild
-            >
-              <Link href="/signup">
-                Get Started Free
-                <ChevronRight className="ml-1 h-4 w-4" />
-              </Link>
-            </Button>
+            {isLoggedIn ? (
+              <Button
+                size="lg"
+                className="btn-premium w-full justify-center rounded-xl h-12"
+                asChild
+              >
+                <Link href="/dashboard">
+                  <LayoutDashboard className="mr-2 h-4 w-4" />
+                  Go to Dashboard
+                </Link>
+              </Button>
+            ) : (
+              <>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full justify-center rounded-xl h-12"
+                  asChild
+                >
+                  <Link href="/login">Log in</Link>
+                </Button>
+                <Button
+                  size="lg"
+                  className="btn-premium w-full justify-center rounded-xl h-12"
+                  asChild
+                >
+                  <Link href="/signup">
+                    Get Started Free
+                    <ChevronRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </Button>
+              </>
+            )}
           </div>
 
           <div className="mt-8 pt-8 border-t">

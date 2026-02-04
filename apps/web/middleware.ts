@@ -20,7 +20,8 @@ const protectedRoutes = [
 ];
 
 // Routes that should redirect to dashboard if authenticated
-const authRoutes = ['/login', '/signup', '/forgot-password', '/'];
+// NOTE: Homepage '/' is NOT included - users should be able to visit it even when logged in
+const authRoutes = ['/login', '/signup', '/forgot-password'];
 
 // Role-based route protection
 const roleRoutes = {
@@ -39,10 +40,8 @@ export function middleware(request: NextRequest) {
     pathname.startsWith(route)
   );
 
-  // Check if route is an auth route (exact match for '/', prefix match for others)
-  const isAuthRoute = authRoutes.some((route) =>
-    route === '/' ? pathname === '/' : pathname.startsWith(route)
-  );
+  // Check if route is an auth route
+  const isAuthRoute = authRoutes.some((route) => pathname.startsWith(route));
 
   // Redirect to login if accessing protected route without token
   if (isProtectedRoute && !token) {
