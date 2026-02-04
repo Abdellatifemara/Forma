@@ -162,10 +162,10 @@ export default function AppDashboardPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-500/20">
               <Activity className="h-5 w-5 text-green-500" />
             </div>
-            <span className="text-xs text-muted-foreground">min</span>
+            <span className="text-xs text-muted-foreground">kg</span>
           </div>
-          <p className="text-2xl font-bold">{weeklyStats?.activeMinutes || '--'}</p>
-          <p className="text-xs text-muted-foreground">Active Time</p>
+          <p className="text-2xl font-bold">{weeklyStats?.totalVolume || '--'}</p>
+          <p className="text-xs text-muted-foreground">Total Volume</p>
         </div>
 
         <div className="stat-card-premium">
