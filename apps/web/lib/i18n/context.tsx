@@ -37,14 +37,14 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const value: LanguageContextType = {
     lang,
     setLang,
-    t: translations[lang],
+    t: translations[lang] as TranslationKeys,
     isRTL: lang === 'ar',
   };
 
   // Prevent hydration mismatch
   if (!mounted) {
     return (
-      <LanguageContext.Provider value={{ ...value, t: translations.en }}>
+      <LanguageContext.Provider value={{ ...value, t: translations.en as TranslationKeys }}>
         {children}
       </LanguageContext.Provider>
     );
