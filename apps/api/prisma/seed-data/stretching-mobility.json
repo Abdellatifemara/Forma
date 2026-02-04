@@ -1,0 +1,1035 @@
+{
+  "stretching_mobility": {
+    "title": {
+      "en": "Stretching & Mobility Guide",
+      "ar": "دليل الإطالة والمرونة"
+    },
+    "introduction": {
+      "en": "Proper mobility and flexibility are essential for injury prevention, exercise performance, and overall quality of life. This guide covers everything you need to know about stretching and mobility work.",
+      "ar": "المرونة والموبيليتي الصحيحة ضرورية لمنع الإصابات وأداء التمارين وجودة الحياة بشكل عام. الدليل ده بيغطي كل اللي محتاج تعرفه عن الإطالة والموبيليتي."
+    },
+    "types_of_stretching": {
+      "title": {
+        "en": "Types of Stretching",
+        "ar": "أنواع الإطالة"
+      },
+      "types": [
+        {
+          "type": {
+            "en": "Static Stretching",
+            "ar": "إطالة ثابتة"
+          },
+          "description": {
+            "en": "Holding a stretch position for an extended period (15-60 seconds). The most common type of stretching.",
+            "ar": "الثبات في وضع الإطالة لفترة ممتدة (15-60 ثانية). أكتر نوع شائع من الإطالة."
+          },
+          "when_to_use": {
+            "en": "Best for post-workout, rest days, or dedicated flexibility sessions. NOT recommended before intense training.",
+            "ar": "أفضل بعد التمرين أو أيام الراحة أو جلسات المرونة المخصصة. مش موصى به قبل التدريب الشديد."
+          },
+          "benefits": [
+            {
+              "en": "Increases flexibility over time",
+              "ar": "بيزود المرونة مع الوقت"
+            },
+            {
+              "en": "Reduces muscle tension",
+              "ar": "بيقلل توتر العضلات"
+            },
+            {
+              "en": "Promotes relaxation",
+              "ar": "بيساعد على الاسترخاء"
+            }
+          ],
+          "duration": {
+            "en": "Hold for 30-60 seconds, 2-4 sets per stretch",
+            "ar": "اثبت 30-60 ثانية، 2-4 مجموعات لكل إطالة"
+          }
+        },
+        {
+          "type": {
+            "en": "Dynamic Stretching",
+            "ar": "إطالة ديناميكية"
+          },
+          "description": {
+            "en": "Active movements that take muscles through their full range of motion. Movement-based stretching.",
+            "ar": "حركات نشطة بتاخد العضلات لمداها الكامل. إطالة مبنية على الحركة."
+          },
+          "when_to_use": {
+            "en": "Perfect for warm-up before training. Prepares muscles for activity.",
+            "ar": "ممتازة للتسخين قبل التدريب. بتجهز العضلات للنشاط."
+          },
+          "benefits": [
+            {
+              "en": "Increases blood flow and body temperature",
+              "ar": "بيزود تدفق الدم وحرارة الجسم"
+            },
+            {
+              "en": "Improves performance",
+              "ar": "بيحسن الأداء"
+            },
+            {
+              "en": "Activates muscles for training",
+              "ar": "بينشط العضلات للتدريب"
+            }
+          ],
+          "duration": {
+            "en": "10-15 reps per movement, or 30-60 seconds",
+            "ar": "10-15 تكرار لكل حركة، أو 30-60 ثانية"
+          }
+        },
+        {
+          "type": {
+            "en": "PNF Stretching (Proprioceptive Neuromuscular Facilitation)",
+            "ar": "إطالة PNF"
+          },
+          "description": {
+            "en": "Advanced technique involving contracting the stretched muscle, then relaxing and stretching further. Highly effective for increasing flexibility.",
+            "ar": "تقنية متقدمة بتشمل انقباض العضلة المشدودة، بعدين استرخاء وشد أكتر. فعالة جداً لزيادة المرونة."
+          },
+          "when_to_use": {
+            "en": "Post-workout or during dedicated flexibility sessions. Best done with a partner.",
+            "ar": "بعد التمرين أو في جلسات المرونة المخصصة. أفضل مع شريك."
+          },
+          "method": {
+            "en": "1) Stretch to comfortable position 2) Contract muscle for 5-10 seconds 3) Relax and stretch further 4) Repeat 2-3 times",
+            "ar": "1) اشد لوضع مريح 2) اقبض العضلة 5-10 ثواني 3) ارتخي واشد أكتر 4) كرر 2-3 مرات"
+          }
+        },
+        {
+          "type": {
+            "en": "Ballistic Stretching",
+            "ar": "إطالة بالستية"
+          },
+          "description": {
+            "en": "Bouncing or jerky movements to push past normal range of motion. Generally NOT recommended for most people.",
+            "ar": "حركات متنططة أو مفاجئة لتجاوز المدى الطبيعي. عموماً مش موصى به لأغلب الناس."
+          },
+          "when_to_use": {
+            "en": "Only for advanced athletes in specific sports that require explosive flexibility. High injury risk.",
+            "ar": "بس للرياضيين المتقدمين في رياضات محددة محتاجة مرونة انفجارية. خطر إصابة عالي."
+          },
+          "warning": {
+            "en": "Can cause muscle strains and injuries if done improperly. Avoid unless specifically trained.",
+            "ar": "ممكن يسبب شد عضلي وإصابات لو اتعمل غلط. تجنبه إلا لو متدرب بشكل محدد."
+          }
+        }
+      ]
+    },
+    "mobility_vs_flexibility": {
+      "title": {
+        "en": "Mobility vs Flexibility - What's the Difference?",
+        "ar": "الموبيليتي مقابل المرونة - إيه الفرق؟"
+      },
+      "flexibility": {
+        "definition": {
+          "en": "The ability of a muscle to lengthen passively through a range of motion.",
+          "ar": "قدرة العضلة على التمدد بشكل سلبي خلال مدى الحركة."
+        },
+        "example": {
+          "en": "Being able to touch your toes with someone pushing you down.",
+          "ar": "إنك تقدر تلمس صوابعك وحد بيدفعك لتحت."
+        }
+      },
+      "mobility": {
+        "definition": {
+          "en": "The ability to move a joint actively through its full range of motion with control and strength.",
+          "ar": "القدرة على تحريك المفصل بنشاط خلال مداه الكامل بتحكم وقوة."
+        },
+        "example": {
+          "en": "Being able to perform a full depth squat with proper form.",
+          "ar": "إنك تقدر تعمل سكوات عميق بفورم صحيح."
+        }
+      },
+      "key_point": {
+        "en": "Flexibility without mobility is not very useful. You need both strength and range of motion.",
+        "ar": "المرونة من غير موبيليتي مش مفيدة قوي. محتاج قوة ومدى حركة."
+      }
+    },
+    "warm_up_routine": {
+      "title": {
+        "en": "Complete Warm-Up Routine",
+        "ar": "روتين تسخين كامل"
+      },
+      "introduction": {
+        "en": "A proper warm-up takes 5-10 minutes and prepares your body for training. Don't skip it!",
+        "ar": "التسخين الصحيح بياخد 5-10 دقايق وبيجهز جسمك للتدريب. ماتسقطهوش!"
+      },
+      "phase_1_general": {
+        "title": {
+          "en": "Phase 1: General Warm-Up (3-5 minutes)",
+          "ar": "المرحلة 1: تسخين عام (3-5 دقايق)"
+        },
+        "purpose": {
+          "en": "Raise body temperature and heart rate",
+          "ar": "رفع حرارة الجسم ومعدل نبض القلب"
+        },
+        "options": [
+          {
+            "en": "Brisk walking or light jogging",
+            "ar": "مشي سريع أو جري خفيف"
+          },
+          {
+            "en": "Jumping jacks",
+            "ar": "جامبنج جاكس"
+          },
+          {
+            "en": "Jump rope",
+            "ar": "نط الحبل"
+          },
+          {
+            "en": "Rowing machine (light)",
+            "ar": "جهاز التجديف (خفيف)"
+          },
+          {
+            "en": "Cycling (low resistance)",
+            "ar": "عجلة (مقاومة خفيفة)"
+          }
+        ]
+      },
+      "phase_2_dynamic": {
+        "title": {
+          "en": "Phase 2: Dynamic Stretches (5-7 minutes)",
+          "ar": "المرحلة 2: إطالات ديناميكية (5-7 دقايق)"
+        },
+        "full_body": {
+          "title": {
+            "en": "Full Body Dynamic Routine",
+            "ar": "روتين ديناميكي للجسم كله"
+          },
+          "exercises": [
+            {
+              "name": {
+                "en": "Arm Circles",
+                "ar": "دوائر الذراع"
+              },
+              "reps": "10 forward, 10 backward",
+              "target": {
+                "en": "Shoulders",
+                "ar": "الكتف"
+              },
+              "instructions": {
+                "en": "Extend arms to sides, make small circles, gradually increase size",
+                "ar": "افرد الذراعين على الجنب، اعمل دوائر صغيرة، زوّد الحجم تدريجياً"
+              }
+            },
+            {
+              "name": {
+                "en": "Leg Swings (Front to Back)",
+                "ar": "أرجحة الرجل (أمام وخلف)"
+              },
+              "reps": "10 each leg",
+              "target": {
+                "en": "Hip Flexors, Hamstrings",
+                "ar": "مثنيات الفخذ، هامسترينج"
+              },
+              "instructions": {
+                "en": "Hold onto something for balance, swing leg forward and back with control",
+                "ar": "امسك حاجة للتوازن، أرجح رجلك لقدام ولورا بتحكم"
+              }
+            },
+            {
+              "name": {
+                "en": "Leg Swings (Side to Side)",
+                "ar": "أرجحة الرجل (جنب لجنب)"
+              },
+              "reps": "10 each leg",
+              "target": {
+                "en": "Hip Adductors, Abductors",
+                "ar": "عضلات الفخذ الداخلية والخارجية"
+              },
+              "instructions": {
+                "en": "Face a wall, swing leg side to side across your body",
+                "ar": "واجه الحيطة، أرجح رجلك من جنب لجنب عبر جسمك"
+              }
+            },
+            {
+              "name": {
+                "en": "Hip Circles",
+                "ar": "دوائر الورك"
+              },
+              "reps": "10 each direction",
+              "target": {
+                "en": "Hip Joint",
+                "ar": "مفصل الورك"
+              },
+              "instructions": {
+                "en": "Hands on hips, rotate hips in large circles",
+                "ar": "إيديك على وركك، دوّر الورك في دوائر كبيرة"
+              }
+            },
+            {
+              "name": {
+                "en": "Walking Lunges",
+                "ar": "لانجز ماشي"
+              },
+              "reps": "10 each leg",
+              "target": {
+                "en": "Quads, Hip Flexors, Glutes",
+                "ar": "كوادز، مثنيات الفخذ، مؤخرة"
+              },
+              "instructions": {
+                "en": "Step forward into lunge, alternate legs while walking forward",
+                "ar": "خطوة لقدام في لانج، بدّل الرجلين وانت ماشي لقدام"
+              }
+            },
+            {
+              "name": {
+                "en": "High Knees",
+                "ar": "ركب عالية"
+              },
+              "reps": "20 total (10 each leg)",
+              "target": {
+                "en": "Hip Flexors, Core",
+                "ar": "مثنيات الفخذ، الكور"
+              },
+              "instructions": {
+                "en": "Jog in place bringing knees up to hip height",
+                "ar": "اجري في مكانك رافع ركبك لمستوى الورك"
+              }
+            },
+            {
+              "name": {
+                "en": "Butt Kicks",
+                "ar": "كعب على المؤخرة"
+              },
+              "reps": "20 total (10 each leg)",
+              "target": {
+                "en": "Quads, Hamstrings",
+                "ar": "كوادز، هامسترينج"
+              },
+              "instructions": {
+                "en": "Jog in place kicking heels up to touch glutes",
+                "ar": "اجري في مكانك رافع كعبك للمؤخرة"
+              }
+            },
+            {
+              "name": {
+                "en": "Inchworms",
+                "ar": "الدودة"
+              },
+              "reps": "5-8",
+              "target": {
+                "en": "Hamstrings, Core, Shoulders",
+                "ar": "هامسترينج، كور، كتف"
+              },
+              "instructions": {
+                "en": "Bend forward, walk hands out to plank, then walk feet to hands",
+                "ar": "انحني لقدام، امشي بإيديك لوضع البلانك، بعدين امشي برجلك لإيديك"
+              }
+            },
+            {
+              "name": {
+                "en": "World's Greatest Stretch",
+                "ar": "أعظم إطالة في العالم"
+              },
+              "reps": "5 each side",
+              "target": {
+                "en": "Hip Flexors, Hamstrings, T-Spine",
+                "ar": "مثنيات الفخذ، هامسترينج، العمود الفقري الصدري"
+              },
+              "instructions": {
+                "en": "Lunge forward, place hand down, rotate other arm up to ceiling, return",
+                "ar": "لانج لقدام، حط إيدك على الأرض، لف الإيد التانية للسقف، ارجع"
+              }
+            },
+            {
+              "name": {
+                "en": "Cat-Cow Stretch",
+                "ar": "إطالة القطة-البقرة"
+              },
+              "reps": "10 cycles",
+              "target": {
+                "en": "Spine, Core",
+                "ar": "العمود الفقري، الكور"
+              },
+              "instructions": {
+                "en": "On all fours, arch back up (cat), then drop belly down (cow)",
+                "ar": "على أربعة، قوّس ظهرك لفوق (قطة)، بعدين نزّل بطنك لتحت (بقرة)"
+              }
+            }
+          ]
+        }
+      },
+      "phase_3_specific": {
+        "title": {
+          "en": "Phase 3: Exercise-Specific Warm-Up",
+          "ar": "المرحلة 3: تسخين خاص بالتمرين"
+        },
+        "description": {
+          "en": "Do light sets of your first exercise to prepare for working weight.",
+          "ar": "اعمل سيتات خفيفة من أول تمرين عشان تتجهز للوزن الشغال."
+        },
+        "example": {
+          "exercise": {
+            "en": "For Bench Press working sets at 100kg",
+            "ar": "للبنش بريس بوزن شغال 100 كيلو"
+          },
+          "sets": [
+            {
+              "en": "Set 1: Empty bar (20kg) × 10 reps",
+              "ar": "سيت 1: البار فاضي (20 كيلو) × 10 ريبس"
+            },
+            {
+              "en": "Set 2: 40kg × 8 reps",
+              "ar": "سيت 2: 40 كيلو × 8 ريبس"
+            },
+            {
+              "en": "Set 3: 60kg × 5 reps",
+              "ar": "سيت 3: 60 كيلو × 5 ريبس"
+            },
+            {
+              "en": "Set 4: 80kg × 3 reps",
+              "ar": "سيت 4: 80 كيلو × 3 ريبس"
+            },
+            {
+              "en": "Then begin working sets at 100kg",
+              "ar": "بعدين ابدأ السيتات الشغالة بـ 100 كيلو"
+            }
+          ]
+        }
+      }
+    },
+    "cool_down_routine": {
+      "title": {
+        "en": "Post-Workout Cool-Down & Stretching",
+        "ar": "التبريد والإطالة بعد التمرين"
+      },
+      "introduction": {
+        "en": "A 5-10 minute cool-down helps your body transition to rest and can improve recovery.",
+        "ar": "تبريد 5-10 دقايق بيساعد جسمك ينتقل للراحة وممكن يحسن الاستشفاء."
+      },
+      "static_stretches": {
+        "title": {
+          "en": "Full Body Static Stretches",
+          "ar": "إطالات ثابتة للجسم كله"
+        },
+        "hold_time": {
+          "en": "Hold each stretch for 30-60 seconds",
+          "ar": "اثبت في كل إطالة 30-60 ثانية"
+        },
+        "stretches": [
+          {
+            "name": {
+              "en": "Standing Quad Stretch",
+              "ar": "إطالة الكوادز واقف"
+            },
+            "target": {
+              "en": "Quadriceps",
+              "ar": "الكوادز"
+            },
+            "instructions": {
+              "en": "Stand on one leg, pull other foot to glutes, keep knees together",
+              "ar": "قف على رجل واحدة، اسحب الرجل التانية للمؤخرة، خلي الركب جنب بعض"
+            }
+          },
+          {
+            "name": {
+              "en": "Standing Hamstring Stretch",
+              "ar": "إطالة الهامسترينج واقف"
+            },
+            "target": {
+              "en": "Hamstrings",
+              "ar": "الهامسترينج"
+            },
+            "instructions": {
+              "en": "Place heel on elevated surface, hinge at hips keeping back straight",
+              "ar": "حط الكعب على سطح مرتفع، انحني من الورك مع إبقاء الظهر مستقيم"
+            }
+          },
+          {
+            "name": {
+              "en": "Hip Flexor Stretch (Kneeling)",
+              "ar": "إطالة مثنيات الفخذ (راكع)"
+            },
+            "target": {
+              "en": "Hip Flexors, Psoas",
+              "ar": "مثنيات الفخذ، السواس"
+            },
+            "instructions": {
+              "en": "Kneel on one knee, push hips forward, keep torso upright",
+              "ar": "اركع على ركبة واحدة، ادفع الورك لقدام، خلي الجذع مستقيم"
+            }
+          },
+          {
+            "name": {
+              "en": "Pigeon Pose",
+              "ar": "وضع الحمامة"
+            },
+            "target": {
+              "en": "Glutes, Hip External Rotators",
+              "ar": "المؤخرة، دوّارات الورك الخارجية"
+            },
+            "instructions": {
+              "en": "From all fours, bring one knee forward and out, extend other leg back, lower torso down",
+              "ar": "من وضع الأربعة، جيب ركبة واحدة لقدام وبره، افرد الرجل التانية لورا، نزّل الجذع لتحت"
+            }
+          },
+          {
+            "name": {
+              "en": "Chest Doorway Stretch",
+              "ar": "إطالة الصدر في الباب"
+            },
+            "target": {
+              "en": "Chest, Front Deltoid",
+              "ar": "الصدر، الدلتويد الأمامي"
+            },
+            "instructions": {
+              "en": "Place forearm on doorframe at 90 degrees, step forward and rotate torso away",
+              "ar": "حط الساعد على إطار الباب بزاوية 90 درجة، خطوة لقدام ولف الجذع بعيد"
+            }
+          },
+          {
+            "name": {
+              "en": "Cross-Body Shoulder Stretch",
+              "ar": "إطالة الكتف عبر الجسم"
+            },
+            "target": {
+              "en": "Rear Deltoid, Rotator Cuff",
+              "ar": "الدلتويد الخلفي، الكفة المدورة"
+            },
+            "instructions": {
+              "en": "Pull straight arm across body at shoulder height with other hand",
+              "ar": "اسحب الذراع المستقيمة عبر الجسم عند مستوى الكتف بالإيد التانية"
+            }
+          },
+          {
+            "name": {
+              "en": "Tricep Stretch",
+              "ar": "إطالة التراي"
+            },
+            "target": {
+              "en": "Triceps",
+              "ar": "التراي"
+            },
+            "instructions": {
+              "en": "Raise arm overhead, bend elbow, use other hand to gently push elbow down",
+              "ar": "ارفع الذراع فوق الراس، اثني الكوع، استخدم الإيد التانية تدفع الكوع لتحت بلطف"
+            }
+          },
+          {
+            "name": {
+              "en": "Lat Stretch",
+              "ar": "إطالة اللاتس"
+            },
+            "target": {
+              "en": "Latissimus Dorsi",
+              "ar": "العضلة الظهرية العريضة"
+            },
+            "instructions": {
+              "en": "Grab a sturdy object with one hand, sit hips back and lean away to stretch side",
+              "ar": "امسك حاجة ثابتة بإيد واحدة، ارجع بالورك لورا ومل بعيد لشد الجنب"
+            }
+          },
+          {
+            "name": {
+              "en": "Child's Pose",
+              "ar": "وضع الطفل"
+            },
+            "target": {
+              "en": "Lower Back, Lats, Shoulders",
+              "ar": "أسفل الظهر، اللاتس، الكتف"
+            },
+            "instructions": {
+              "en": "Kneel and sit back on heels, reach arms forward on ground, relax",
+              "ar": "اركع واقعد على كعوبك، افرد الذراعين لقدام على الأرض، ارتخي"
+            }
+          },
+          {
+            "name": {
+              "en": "Seated Spinal Twist",
+              "ar": "لف العمود الفقري قاعد"
+            },
+            "target": {
+              "en": "Lower Back, Obliques",
+              "ar": "أسفل الظهر، الأوبليكس"
+            },
+            "instructions": {
+              "en": "Sit with legs extended, cross one leg over, twist torso towards bent knee",
+              "ar": "اقعد ورجلك ممدودة، عدّي رجل واحدة فوق، لف الجذع ناحية الركبة المثنية"
+            }
+          }
+        ]
+      }
+    },
+    "mobility_drills": {
+      "title": {
+        "en": "Key Mobility Drills",
+        "ar": "تمارين الموبيليتي الأساسية"
+      },
+      "ankle_mobility": {
+        "title": {
+          "en": "Ankle Mobility (Essential for Squats)",
+          "ar": "موبيليتي الكاحل (أساسية للسكوات)"
+        },
+        "drills": [
+          {
+            "name": {
+              "en": "Ankle Circles",
+              "ar": "دوائر الكاحل"
+            },
+            "reps": "10 each direction, each ankle",
+            "instructions": {
+              "en": "Lift foot off ground, rotate ankle in full circles",
+              "ar": "ارفع الرجل من الأرض، دوّر الكاحل في دوائر كاملة"
+            }
+          },
+          {
+            "name": {
+              "en": "Wall Ankle Stretch",
+              "ar": "إطالة الكاحل على الحيطة"
+            },
+            "reps": "30-60 seconds each ankle",
+            "instructions": {
+              "en": "Face wall, foot flat, drive knee forward over toes without lifting heel",
+              "ar": "واجه الحيطة، الرجل مفرودة، ادفع الركبة لقدام فوق الصوابع من غير ما ترفع الكعب"
+            }
+          },
+          {
+            "name": {
+              "en": "Banded Ankle Distraction",
+              "ar": "تشتيت الكاحل بالباند"
+            },
+            "reps": "2-3 minutes each ankle",
+            "instructions": {
+              "en": "Wrap band around ankle, anchor behind you, drive knee forward to stretch",
+              "ar": "لف الباند حوالين الكاحل، ثبته وراك، ادفع الركبة لقدام للشد"
+            }
+          }
+        ]
+      },
+      "hip_mobility": {
+        "title": {
+          "en": "Hip Mobility (Essential for Lower Body)",
+          "ar": "موبيليتي الورك (أساسية للجزء السفلي)"
+        },
+        "drills": [
+          {
+            "name": {
+              "en": "90/90 Hip Stretch",
+              "ar": "إطالة الورك 90/90"
+            },
+            "reps": "60-90 seconds each side",
+            "instructions": {
+              "en": "Sit with both legs at 90 degrees, front leg externally rotated, back leg internally rotated",
+              "ar": "اقعد ورجلينك بزاوية 90 درجة، الرجل الأمامية دورة لبره، الرجل الخلفية دورة لجوه"
+            }
+          },
+          {
+            "name": {
+              "en": "Frog Stretch",
+              "ar": "إطالة الضفدع"
+            },
+            "reps": "60-90 seconds",
+            "instructions": {
+              "en": "On all fours, spread knees wide, sit hips back. Great for hip adductors.",
+              "ar": "على أربعة، افتح الركب واسع، ارجع بالورك لورا. ممتازة لعضلات الفخذ الداخلية."
+            }
+          },
+          {
+            "name": {
+              "en": "Hip CARs (Controlled Articular Rotations)",
+              "ar": "دورات مفصلية متحكمة للورك"
+            },
+            "reps": "5 each direction, each leg",
+            "instructions": {
+              "en": "Standing, lift knee up, rotate hip out and back in full controlled circles",
+              "ar": "واقف، ارفع الركبة، دوّر الورك لبره ولجوه في دوائر متحكمة كاملة"
+            }
+          },
+          {
+            "name": {
+              "en": "Cossack Squat",
+              "ar": "سكوات القوزاق"
+            },
+            "reps": "8-10 each side",
+            "instructions": {
+              "en": "Wide stance, shift weight to one side squatting deep, other leg stays straight",
+              "ar": "وقفة واسعة، انقل الوزن لجنب واحد في سكوات عميق، الرجل التانية تفضل مستقيمة"
+            }
+          }
+        ]
+      },
+      "thoracic_mobility": {
+        "title": {
+          "en": "Thoracic Spine Mobility (Essential for Upper Body)",
+          "ar": "موبيليتي العمود الفقري الصدري (أساسية للجزء العلوي)"
+        },
+        "drills": [
+          {
+            "name": {
+              "en": "Foam Roller T-Spine Extension",
+              "ar": "تمديد العمود الصدري بالفوم رولر"
+            },
+            "reps": "2-3 minutes",
+            "instructions": {
+              "en": "Lie on foam roller across upper back, support head with hands, gently extend back over roller",
+              "ar": "نام على الفوم رولر عبر أعلى الظهر، اسند الراس بإيديك، مدد الظهر بلطف فوق الرولر"
+            }
+          },
+          {
+            "name": {
+              "en": "Thread the Needle",
+              "ar": "إدخال الخيط"
+            },
+            "reps": "10 each side",
+            "instructions": {
+              "en": "On all fours, reach one arm under body, then rotate up to ceiling",
+              "ar": "على أربعة، افرد إيد تحت الجسم، بعدين لف لفوق ناحية السقف"
+            }
+          },
+          {
+            "name": {
+              "en": "Open Book Stretch",
+              "ar": "إطالة الكتاب المفتوح"
+            },
+            "reps": "10 each side, hold at end",
+            "instructions": {
+              "en": "Lie on side with knees bent, rotate top arm and torso open to ceiling",
+              "ar": "نام على جنبك وركبك مثنية، لف الذراع العلوية والجذع مفتوح للسقف"
+            }
+          },
+          {
+            "name": {
+              "en": "Wall Slides",
+              "ar": "انزلاق على الحيطة"
+            },
+            "reps": "10-15 slow reps",
+            "instructions": {
+              "en": "Back against wall, arms in W position, slide arms up to Y position keeping contact with wall",
+              "ar": "ظهرك على الحيطة، الذراعين في وضع W، زحلق الذراعين لفوق لوضع Y مع الحفاظ على الاتصال بالحيطة"
+            }
+          }
+        ]
+      },
+      "shoulder_mobility": {
+        "title": {
+          "en": "Shoulder Mobility",
+          "ar": "موبيليتي الكتف"
+        },
+        "drills": [
+          {
+            "name": {
+              "en": "Shoulder Dislocates (with band or stick)",
+              "ar": "خلع الكتف (بباند أو عصا)"
+            },
+            "reps": "10-15 slow reps",
+            "instructions": {
+              "en": "Hold band/stick wide, bring overhead and behind back in slow controlled arc",
+              "ar": "امسك الباند/العصا بعرض، جيبها فوق الراس ووراء الظهر في قوس بطيء متحكم"
+            }
+          },
+          {
+            "name": {
+              "en": "Band Pull Aparts",
+              "ar": "فتح الباند"
+            },
+            "reps": "15-20 reps",
+            "instructions": {
+              "en": "Hold band at arm's length in front, pull apart squeezing shoulder blades",
+              "ar": "امسك الباند بطول الذراع قدامك، اسحب للجنبين مع ضغط لوح الكتف"
+            }
+          },
+          {
+            "name": {
+              "en": "Shoulder CARs",
+              "ar": "دورات مفصلية متحكمة للكتف"
+            },
+            "reps": "5 each direction, each arm",
+            "instructions": {
+              "en": "Arm extended, rotate through full shoulder range in slow controlled circles",
+              "ar": "الذراع ممدودة، دوّر خلال مدى الكتف الكامل في دوائر بطيئة متحكمة"
+            }
+          }
+        ]
+      }
+    },
+    "foam_rolling": {
+      "title": {
+        "en": "Foam Rolling Guide",
+        "ar": "دليل الفوم رولر"
+      },
+      "what_it_does": {
+        "en": "Foam rolling (self-myofascial release) can help reduce muscle tension, increase blood flow, and improve mobility. It's like a self-massage.",
+        "ar": "الفوم رولر (تحرير اللفافة العضلية الذاتي) ممكن يساعد يقلل توتر العضلات ويزود تدفق الدم ويحسن الموبيليتي. زي مساج ذاتي."
+      },
+      "when_to_use": {
+        "en": "Before training (brief, 30-60 seconds per area) or after training/on rest days (longer, 2-3 minutes per area).",
+        "ar": "قبل التمرين (قصير، 30-60 ثانية لكل منطقة) أو بعد التمرين/في أيام الراحة (أطول، 2-3 دقيقة لكل منطقة)."
+      },
+      "areas_to_roll": [
+        {
+          "area": {
+            "en": "Quads",
+            "ar": "الكوادز"
+          },
+          "instructions": {
+            "en": "Face down, roller under thighs, roll from knee to hip. Rotate slightly to hit different parts.",
+            "ar": "وشك لتحت، الرولر تحت الفخذين، دحرج من الركبة للورك. لف شوية لتضرب أجزاء مختلفة."
+          }
+        },
+        {
+          "area": {
+            "en": "IT Band (outer thigh)",
+            "ar": "الـ IT Band (خارج الفخذ)"
+          },
+          "instructions": {
+            "en": "Side lying, roller under outer thigh, roll from hip to knee. Can be painful - go slowly.",
+            "ar": "نايم على جنبك، الرولر تحت خارج الفخذ، دحرج من الورك للركبة. ممكن يكون مؤلم - روح ببطء."
+          }
+        },
+        {
+          "area": {
+            "en": "Hamstrings",
+            "ar": "الهامسترينج"
+          },
+          "instructions": {
+            "en": "Sit on roller, roll from knee to glutes. Cross one leg over the other for more pressure.",
+            "ar": "اقعد على الرولر، دحرج من الركبة للمؤخرة. عدي رجل فوق التانية لضغط أكتر."
+          }
+        },
+        {
+          "area": {
+            "en": "Glutes",
+            "ar": "المؤخرة"
+          },
+          "instructions": {
+            "en": "Sit on roller, cross one ankle over opposite knee, lean into the crossed side.",
+            "ar": "اقعد على الرولر، عدي كاحل فوق الركبة المقابلة، مل على الجنب المعدي."
+          }
+        },
+        {
+          "area": {
+            "en": "Calves",
+            "ar": "الكالف"
+          },
+          "instructions": {
+            "en": "Sit with roller under calves, lift hips, roll from ankle to knee. Rotate foot for different angles.",
+            "ar": "اقعد والرولر تحت الكالف، ارفع الورك، دحرج من الكاحل للركبة. لف الرجل لزوايا مختلفة."
+          }
+        },
+        {
+          "area": {
+            "en": "Upper Back / Lats",
+            "ar": "أعلى الظهر / اللاتس"
+          },
+          "instructions": {
+            "en": "Lie on roller across upper back, arms crossed or behind head, roll from mid-back to shoulders.",
+            "ar": "نام على الرولر عبر أعلى الظهر، الذراعين متقاطعة أو ورا الراس، دحرج من نص الظهر للكتف."
+          }
+        }
+      ],
+      "tips": [
+        {
+          "en": "Don't roll directly on joints (knees, lower back)",
+          "ar": "ماتدحرجش مباشرة على المفاصل (الركبة، أسفل الظهر)"
+        },
+        {
+          "en": "When you find a tender spot, pause and hold for 30-60 seconds",
+          "ar": "لما تلاقي نقطة حساسة، توقف واثبت 30-60 ثانية"
+        },
+        {
+          "en": "Breathe deeply and try to relax into the pressure",
+          "ar": "تنفس بعمق وحاول ترتخي على الضغط"
+        },
+        {
+          "en": "Discomfort is normal, sharp pain is not - ease off if it hurts too much",
+          "ar": "عدم الراحة عادي، الألم الحاد لأ - خفف لو بيوجع كتير"
+        }
+      ],
+      "alternatives": {
+        "en": "If no foam roller: use a tennis ball, lacrosse ball, or rolled-up towel",
+        "ar": "لو مفيش فوم رولر: استخدم كرة تنس أو كرة لاكروس أو فوطة ملفوفة"
+      }
+    },
+    "common_issues": {
+      "title": {
+        "en": "Mobility Solutions for Common Issues",
+        "ar": "حلول الموبيليتي للمشاكل الشائعة"
+      },
+      "issues": [
+        {
+          "issue": {
+            "en": "Can't squat deep (heels come up)",
+            "ar": "مش قادر أعمل سكوات عميق (الكعب بيرتفع)"
+          },
+          "likely_cause": {
+            "en": "Limited ankle dorsiflexion",
+            "ar": "محدودية ثني الكاحل"
+          },
+          "solutions": [
+            {
+              "en": "Wall ankle stretches daily",
+              "ar": "إطالات الكاحل على الحيطة يومياً"
+            },
+            {
+              "en": "Use heel elevators (plates under heels) temporarily",
+              "ar": "استخدم رافعات الكعب (أقراص تحت الكعب) مؤقتاً"
+            },
+            {
+              "en": "Banded ankle distractions",
+              "ar": "تشتيت الكاحل بالباند"
+            }
+          ]
+        },
+        {
+          "issue": {
+            "en": "Knees cave in during squats",
+            "ar": "الركبة بتدخل لجوه في السكوات"
+          },
+          "likely_cause": {
+            "en": "Weak glutes and/or tight hip adductors",
+            "ar": "مؤخرة ضعيفة و/أو عضلات فخذ داخلية مشدودة"
+          },
+          "solutions": [
+            {
+              "en": "Banded squats (band around knees)",
+              "ar": "سكوات بباند (باند حوالين الركب)"
+            },
+            {
+              "en": "Frog stretch for adductors",
+              "ar": "إطالة الضفدع لعضلات الفخذ الداخلية"
+            },
+            {
+              "en": "Glute activation exercises",
+              "ar": "تمارين تنشيط المؤخرة"
+            }
+          ]
+        },
+        {
+          "issue": {
+            "en": "Lower back rounds at bottom of squat/deadlift (butt wink)",
+            "ar": "أسفل الظهر بينحني في قاع السكوات/الديدليفت"
+          },
+          "likely_cause": {
+            "en": "Tight hamstrings and/or hip flexors",
+            "ar": "هامسترينج مشدودة و/أو مثنيات فخذ"
+          },
+          "solutions": [
+            {
+              "en": "Don't go deeper than your mobility allows",
+              "ar": "ماتنزلش أعمق من موبيليتيك"
+            },
+            {
+              "en": "Hip flexor stretches",
+              "ar": "إطالات مثنيات الفخذ"
+            },
+            {
+              "en": "Romanian deadlifts for hamstring flexibility under load",
+              "ar": "ديدليفت روماني لمرونة الهامسترينج تحت الحمل"
+            }
+          ]
+        },
+        {
+          "issue": {
+            "en": "Shoulders round forward during bench press",
+            "ar": "الكتف بيدور لقدام في البنش بريس"
+          },
+          "likely_cause": {
+            "en": "Tight chest and/or limited thoracic extension",
+            "ar": "صدر مشدود و/أو تمديد صدري محدود"
+          },
+          "solutions": [
+            {
+              "en": "Doorway chest stretches",
+              "ar": "إطالات الصدر في الباب"
+            },
+            {
+              "en": "T-spine foam rolling",
+              "ar": "فوم رولر للعمود الصدري"
+            },
+            {
+              "en": "Focus on retracting shoulder blades during bench",
+              "ar": "ركز على سحب لوح الكتف أثناء البنش"
+            }
+          ]
+        },
+        {
+          "issue": {
+            "en": "Can't get arms overhead without arching lower back",
+            "ar": "مش قادر أرفع ذراعي فوق من غير ما أقوس أسفل ظهري"
+          },
+          "likely_cause": {
+            "en": "Limited shoulder flexion and/or lat tightness",
+            "ar": "ثني كتف محدود و/أو اللاتس مشدودة"
+          },
+          "solutions": [
+            {
+              "en": "Wall slides",
+              "ar": "انزلاق على الحيطة"
+            },
+            {
+              "en": "Lat stretches",
+              "ar": "إطالات اللاتس"
+            },
+            {
+              "en": "Shoulder dislocates with band",
+              "ar": "خلع الكتف بالباند"
+            }
+          ]
+        }
+      ]
+    },
+    "daily_routine": {
+      "title": {
+        "en": "5-Minute Daily Mobility Routine",
+        "ar": "روتين موبيليتي يومي 5 دقايق"
+      },
+      "introduction": {
+        "en": "Do this routine every day, even on rest days. It takes only 5 minutes and makes a big difference over time.",
+        "ar": "اعمل الروتين ده كل يوم، حتى في أيام الراحة. بياخد 5 دقايق بس وبيفرق كتير مع الوقت."
+      },
+      "routine": [
+        {
+          "exercise": {
+            "en": "Cat-Cow",
+            "ar": "القطة-البقرة"
+          },
+          "duration": "30 seconds"
+        },
+        {
+          "exercise": {
+            "en": "World's Greatest Stretch",
+            "ar": "أعظم إطالة في العالم"
+          },
+          "duration": "30 seconds each side"
+        },
+        {
+          "exercise": {
+            "en": "Hip Circles",
+            "ar": "دوائر الورك"
+          },
+          "duration": "30 seconds"
+        },
+        {
+          "exercise": {
+            "en": "Wall Ankle Stretch",
+            "ar": "إطالة الكاحل على الحيطة"
+          },
+          "duration": "30 seconds each side"
+        },
+        {
+          "exercise": {
+            "en": "Thread the Needle",
+            "ar": "إدخال الخيط"
+          },
+          "duration": "30 seconds each side"
+        },
+        {
+          "exercise": {
+            "en": "Wall Slides",
+            "ar": "انزلاق على الحيطة"
+          },
+          "duration": "30 seconds"
+        },
+        {
+          "exercise": {
+            "en": "Deep Squat Hold",
+            "ar": "ثبات سكوات عميق"
+          },
+          "duration": "60 seconds"
+        }
+      ]
+    }
+  }
+}

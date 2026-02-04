@@ -1,0 +1,969 @@
+{
+  "fitness_tracking": {
+    "title": {
+      "en": "Fitness Tracking & Progress Metrics Guide",
+      "ar": "دليل تتبع اللياقة ومقاييس التقدم"
+    },
+    "introduction": {
+      "en": "Tracking your progress is essential for staying motivated and making informed adjustments to your training. This guide covers all the metrics you should monitor.",
+      "ar": "تتبع تقدمك ضروري للحفاظ على الدافعية واتخاذ قرارات مبنية على معلومات في تدريبك. الدليل ده بيغطي كل المقاييس اللي لازم تتابعها."
+    },
+    "body_measurements": {
+      "title": {
+        "en": "Body Measurements",
+        "ar": "قياسات الجسم"
+      },
+      "importance": {
+        "en": "Body measurements are more reliable than scale weight alone, especially when building muscle and losing fat simultaneously.",
+        "ar": "قياسات الجسم أدق من وزن الميزان لوحده، خصوصاً لما بتبني عضل وتخس دهون في نفس الوقت."
+      },
+      "measurements": [
+        {
+          "measurement": {
+            "en": "Body Weight",
+            "ar": "وزن الجسم"
+          },
+          "how_to_measure": {
+            "en": "Weigh yourself first thing in the morning, after using the bathroom, before eating or drinking. Use weekly averages, not daily readings.",
+            "ar": "اتوزن أول ما تصحى الصبح، بعد الحمام، قبل الأكل أو الشرب. استخدم متوسط الأسبوع مش القراءة اليومية."
+          },
+          "frequency": {
+            "en": "Daily, calculate weekly average",
+            "ar": "يومياً، احسب متوسط أسبوعي"
+          },
+          "tips": {
+            "en": "Weight fluctuates 1-3kg daily due to water, food, and waste. Don't panic about daily changes.",
+            "ar": "الوزن بيتغير 1-3 كيلو يومياً بسبب المية والأكل والفضلات. ماتقلقش من التغيرات اليومية."
+          }
+        },
+        {
+          "measurement": {
+            "en": "Waist Circumference",
+            "ar": "محيط الخصر"
+          },
+          "how_to_measure": {
+            "en": "Measure at the narrowest point, usually at or just above the belly button. Keep the tape horizontal and snug but not tight.",
+            "ar": "قيس عند أضيق نقطة، عادةً عند أو فوق السرة بشوية. خلي الشريط أفقي وملتصق بس مش مشدود."
+          },
+          "frequency": {
+            "en": "Weekly",
+            "ar": "أسبوعياً"
+          },
+          "why_important": {
+            "en": "Best indicator of fat loss. If your waist is getting smaller but weight isn't changing, you're likely building muscle.",
+            "ar": "أفضل مؤشر لخسارة الدهون. لو الخصر بيصغر بس الوزن ثابت، غالباً بتبني عضل."
+          }
+        },
+        {
+          "measurement": {
+            "en": "Chest",
+            "ar": "الصدر"
+          },
+          "how_to_measure": {
+            "en": "Measure around the fullest part of the chest, under the armpits, with arms relaxed at sides.",
+            "ar": "قيس حوالين أعرض جزء من الصدر، تحت الإبط، والذراعين مرتخيين على الجنب."
+          },
+          "frequency": {
+            "en": "Bi-weekly or monthly",
+            "ar": "كل أسبوعين أو شهرياً"
+          }
+        },
+        {
+          "measurement": {
+            "en": "Arms (Biceps)",
+            "ar": "الذراع (الباي)"
+          },
+          "how_to_measure": {
+            "en": "Measure at the largest point of the bicep, with arm flexed at 90 degrees. Measure both arms - they may differ.",
+            "ar": "قيس عند أكبر نقطة في الباي، والذراع مثنية 90 درجة. قيس الذراعين - ممكن يكونوا مختلفين."
+          },
+          "frequency": {
+            "en": "Monthly",
+            "ar": "شهرياً"
+          }
+        },
+        {
+          "measurement": {
+            "en": "Thighs",
+            "ar": "الفخذ"
+          },
+          "how_to_measure": {
+            "en": "Measure at the largest point, usually about 10cm below the hip crease while standing.",
+            "ar": "قيس عند أعرض نقطة، عادةً حوالي 10 سم تحت ثنية الفخذ وانت واقف."
+          },
+          "frequency": {
+            "en": "Bi-weekly or monthly",
+            "ar": "كل أسبوعين أو شهرياً"
+          }
+        },
+        {
+          "measurement": {
+            "en": "Hips",
+            "ar": "الأرداف"
+          },
+          "how_to_measure": {
+            "en": "Measure at the widest part of your hips/glutes, keeping the tape horizontal.",
+            "ar": "قيس عند أعرض جزء من الأرداف/المؤخرة، خلي الشريط أفقي."
+          },
+          "frequency": {
+            "en": "Bi-weekly or monthly",
+            "ar": "كل أسبوعين أو شهرياً"
+          }
+        },
+        {
+          "measurement": {
+            "en": "Shoulders",
+            "ar": "الكتف"
+          },
+          "how_to_measure": {
+            "en": "Measure around the widest part of your shoulders (around the deltoids), keeping the tape horizontal.",
+            "ar": "قيس حوالين أعرض جزء من الكتف (حوالين الدلتويد)، خلي الشريط أفقي."
+          },
+          "frequency": {
+            "en": "Monthly",
+            "ar": "شهرياً"
+          }
+        }
+      ],
+      "measurement_tips": [
+        {
+          "en": "Always measure at the same time of day",
+          "ar": "دايماً قيس في نفس الوقت من اليوم"
+        },
+        {
+          "en": "Use the same tape measure each time",
+          "ar": "استخدم نفس شريط القياس كل مرة"
+        },
+        {
+          "en": "Measure on bare skin when possible",
+          "ar": "قيس على الجلد مباشرة لو ممكن"
+        },
+        {
+          "en": "Take 2-3 measurements and use the average",
+          "ar": "خد 2-3 قياسات واستخدم المتوسط"
+        },
+        {
+          "en": "Don't suck in or flex unless specified",
+          "ar": "ماتشدش بطنك أو تعمل فليكس إلا لو مطلوب"
+        }
+      ]
+    },
+    "body_composition": {
+      "title": {
+        "en": "Body Composition Tracking",
+        "ar": "تتبع تركيب الجسم"
+      },
+      "methods": [
+        {
+          "method": {
+            "en": "Progress Photos",
+            "ar": "صور التقدم"
+          },
+          "accuracy": "visual",
+          "description": {
+            "en": "Take front, side, and back photos in the same lighting, same poses, same time of day. Most practical method for most people.",
+            "ar": "خد صور من الأمام والجنب والخلف في نفس الإضاءة ونفس الوقفات ونفس الوقت من اليوم. أعملي طريقة لأغلب الناس."
+          },
+          "tips": {
+            "en": "Compare monthly, not weekly. Changes are easier to see over longer periods.",
+            "ar": "قارن شهرياً مش أسبوعياً. التغييرات أسهل تتشاف على فترات أطول."
+          },
+          "recommended": true
+        },
+        {
+          "method": {
+            "en": "Skinfold Calipers",
+            "ar": "قياس طيات الجلد (كاليبرز)"
+          },
+          "accuracy": "moderate",
+          "description": {
+            "en": "Measures fat at specific sites. Requires practice but can track trends effectively. 3-7 site measurements.",
+            "ar": "بيقيس الدهون في أماكن محددة. محتاج تدريب بس ممكن يتابع الاتجاهات بفعالية. 3-7 نقط قياس."
+          },
+          "cost_egp": "50-200",
+          "tips": {
+            "en": "Same person should take measurements each time. Don't trust the exact percentage - focus on trends.",
+            "ar": "نفس الشخص ياخد القياسات كل مرة. ماتثقش في النسبة بالظبط - ركز على الاتجاه."
+          }
+        },
+        {
+          "method": {
+            "en": "Bioelectrical Impedance (BIA) Scales",
+            "ar": "موازين المقاومة الكهربائية"
+          },
+          "accuracy": "low-moderate",
+          "description": {
+            "en": "Common smart scales that send electrical current through your body. Heavily affected by hydration.",
+            "ar": "الموازين الذكية الشائعة اللي بتبعت تيار كهربائي في جسمك. بتتأثر جداً بالترطيب."
+          },
+          "cost_egp": "500-3000",
+          "tips": {
+            "en": "Only useful for tracking trends if you measure under the same conditions every time.",
+            "ar": "مفيدة بس لتتبع الاتجاهات لو بتقيس في نفس الظروف كل مرة."
+          }
+        },
+        {
+          "method": {
+            "en": "DEXA Scan",
+            "ar": "فحص DEXA"
+          },
+          "accuracy": "high",
+          "description": {
+            "en": "Gold standard for body composition. X-ray based, shows fat distribution. Available at some hospitals and clinics.",
+            "ar": "المعيار الذهبي لتركيب الجسم. بيستخدم الأشعة السينية، بيبين توزيع الدهون. متوفر في بعض المستشفيات والعيادات."
+          },
+          "cost_egp": "1500-3000",
+          "tips": {
+            "en": "Great for baseline and periodic checks (every 3-6 months), but expensive for frequent use.",
+            "ar": "ممتاز لخط الأساس والفحوصات الدورية (كل 3-6 شهور)، بس غالي للاستخدام المتكرر."
+          }
+        }
+      ],
+      "body_fat_ranges": {
+        "men": [
+          {
+            "category": {
+              "en": "Essential Fat",
+              "ar": "دهون أساسية"
+            },
+            "range": "2-5%",
+            "notes": {
+              "en": "Below this is dangerous. Only competitive bodybuilders reach this temporarily.",
+              "ar": "تحت كده خطر. المحترفين في كمال الأجسام بس بيوصلوا لده مؤقتاً."
+            }
+          },
+          {
+            "category": {
+              "en": "Competition",
+              "ar": "مسابقات"
+            },
+            "range": "6-9%",
+            "notes": {
+              "en": "Visible abs, muscle striations. Hard to maintain.",
+              "ar": "بطن باين، خطوط العضلات واضحة. صعب يتحافظ عليه."
+            }
+          },
+          {
+            "category": {
+              "en": "Athletic/Lean",
+              "ar": "رياضي/رشيق"
+            },
+            "range": "10-14%",
+            "notes": {
+              "en": "Clear muscle definition, visible abs. Achievable and maintainable.",
+              "ar": "تحديد عضلي واضح، بطن باين. ممكن تحقيقه والحفاظ عليه."
+            }
+          },
+          {
+            "category": {
+              "en": "Fit",
+              "ar": "لائق"
+            },
+            "range": "15-19%",
+            "notes": {
+              "en": "Some muscle definition, healthy range for most men.",
+              "ar": "تحديد عضلي شوية، مدى صحي لأغلب الرجالة."
+            }
+          },
+          {
+            "category": {
+              "en": "Average",
+              "ar": "متوسط"
+            },
+            "range": "20-24%",
+            "notes": {
+              "en": "Little muscle definition visible.",
+              "ar": "تحديد عضلي قليل باين."
+            }
+          },
+          {
+            "category": {
+              "en": "Overweight",
+              "ar": "زيادة وزن"
+            },
+            "range": "25%+",
+            "notes": {
+              "en": "Health risks increase. Consider focusing on fat loss.",
+              "ar": "المخاطر الصحية بتزيد. فكر تركز على خسارة الدهون."
+            }
+          }
+        ],
+        "women": [
+          {
+            "category": {
+              "en": "Essential Fat",
+              "ar": "دهون أساسية"
+            },
+            "range": "10-13%",
+            "notes": {
+              "en": "Below this disrupts hormones. Women need more essential fat than men.",
+              "ar": "تحت كده بيأثر على الهرمونات. الستات محتاجين دهون أساسية أكتر من الرجالة."
+            }
+          },
+          {
+            "category": {
+              "en": "Competition",
+              "ar": "مسابقات"
+            },
+            "range": "14-17%",
+            "notes": {
+              "en": "For physique competitors. May affect menstrual cycle.",
+              "ar": "للمتسابقين في البناء. ممكن يأثر على الدورة الشهرية."
+            }
+          },
+          {
+            "category": {
+              "en": "Athletic/Lean",
+              "ar": "رياضية/رشيقة"
+            },
+            "range": "18-22%",
+            "notes": {
+              "en": "Fit and toned appearance. Achievable goal for most women.",
+              "ar": "شكل لائق ومشدود. هدف ممكن لأغلب الستات."
+            }
+          },
+          {
+            "category": {
+              "en": "Fit",
+              "ar": "لائقة"
+            },
+            "range": "23-27%",
+            "notes": {
+              "en": "Healthy range for most women.",
+              "ar": "مدى صحي لأغلب الستات."
+            }
+          },
+          {
+            "category": {
+              "en": "Average",
+              "ar": "متوسط"
+            },
+            "range": "28-32%",
+            "notes": {
+              "en": "Average body fat for women.",
+              "ar": "متوسط دهون الجسم للستات."
+            }
+          },
+          {
+            "category": {
+              "en": "Overweight",
+              "ar": "زيادة وزن"
+            },
+            "range": "33%+",
+            "notes": {
+              "en": "Health risks increase.",
+              "ar": "المخاطر الصحية بتزيد."
+            }
+          }
+        ]
+      }
+    },
+    "strength_tracking": {
+      "title": {
+        "en": "Strength Progress Tracking",
+        "ar": "تتبع تقدم القوة"
+      },
+      "what_to_track": [
+        {
+          "metric": {
+            "en": "1 Rep Max (1RM)",
+            "ar": "الماكس (1RM)"
+          },
+          "description": {
+            "en": "The maximum weight you can lift for one rep. Can be tested or calculated from submaximal lifts.",
+            "ar": "أقصى وزن تقدر ترفعه لريب واحد. ممكن يتختبر أو يتحسب من أوزان أقل."
+          },
+          "how_to_calculate": {
+            "en": "Weight × (1 + Reps/30) = Estimated 1RM. Example: 100kg × 8 reps = 100 × 1.267 = 126.7kg estimated 1RM",
+            "ar": "الوزن × (1 + الريبس/30) = 1RM المقدر. مثال: 100 كيلو × 8 ريبس = 100 × 1.267 = 126.7 كيلو 1RM مقدر"
+          }
+        },
+        {
+          "metric": {
+            "en": "Training Volume",
+            "ar": "حجم التدريب"
+          },
+          "description": {
+            "en": "Sets × Reps × Weight = Volume. Track weekly volume per muscle group.",
+            "ar": "السيتات × الريبس × الوزن = الفوليوم. تابع الفوليوم الأسبوعي لكل مجموعة عضلية."
+          },
+          "example": {
+            "en": "Bench Press: 4 sets × 8 reps × 80kg = 2,560kg volume",
+            "ar": "بنش بريس: 4 سيتات × 8 ريبس × 80 كيلو = 2,560 كيلو فوليوم"
+          }
+        },
+        {
+          "metric": {
+            "en": "Rep PRs",
+            "ar": "أرقام قياسية للريبس"
+          },
+          "description": {
+            "en": "Personal records at various rep ranges. Useful when you can't always test 1RM.",
+            "ar": "الأرقام الشخصية في نطاقات ريبس مختلفة. مفيد لما مش دايماً تقدر تختبر الماكس."
+          },
+          "examples": {
+            "en": "3RM, 5RM, 8RM, 10RM for main lifts",
+            "ar": "3RM, 5RM, 8RM, 10RM للرفعات الأساسية"
+          }
+        }
+      ],
+      "main_lifts_to_track": {
+        "en": "Track these exercises as primary strength indicators:",
+        "ar": "تابع التمارين دي كمؤشرات قوة أساسية:",
+        "lifts": [
+          {
+            "en": "Barbell Squat",
+            "ar": "سكوات بالبار"
+          },
+          {
+            "en": "Barbell Bench Press",
+            "ar": "بنش بريس بالبار"
+          },
+          {
+            "en": "Conventional or Sumo Deadlift",
+            "ar": "ديدليفت تقليدي أو سومو"
+          },
+          {
+            "en": "Overhead Press",
+            "ar": "ضغط علوي"
+          },
+          {
+            "en": "Barbell Row",
+            "ar": "تجديف بالبار"
+          },
+          {
+            "en": "Pull-up (weighted or reps)",
+            "ar": "عقلة (بوزن أو ريبس)"
+          }
+        ]
+      },
+      "progress_expectations": {
+        "title": {
+          "en": "Realistic Strength Progress",
+          "ar": "توقعات تقدم القوة الواقعية"
+        },
+        "beginner": {
+          "level": {
+            "en": "Beginner (0-12 months)",
+            "ar": "مبتدئ (0-12 شهر)"
+          },
+          "progress": {
+            "en": "Add weight every session or every week. 2.5-5kg per week on compound lifts is possible.",
+            "ar": "زوّد وزن كل تمرين أو كل أسبوع. 2.5-5 كيلو في الأسبوع على التمارين المركبة ممكن."
+          }
+        },
+        "intermediate": {
+          "level": {
+            "en": "Intermediate (1-3 years)",
+            "ar": "متوسط (1-3 سنين)"
+          },
+          "progress": {
+            "en": "Monthly progress. Adding 2.5-5kg per month to major lifts is good.",
+            "ar": "تقدم شهري. إضافة 2.5-5 كيلو في الشهر للرفعات الكبيرة كويس."
+          }
+        },
+        "advanced": {
+          "level": {
+            "en": "Advanced (3+ years)",
+            "ar": "متقدم (3+ سنين)"
+          },
+          "progress": {
+            "en": "Progress measured over months or training blocks. Small PRs are victories.",
+            "ar": "التقدم بيتقاس على شهور أو فترات تدريب. الأرقام الصغيرة انتصارات."
+          }
+        }
+      }
+    },
+    "performance_metrics": {
+      "title": {
+        "en": "Other Performance Metrics",
+        "ar": "مقاييس أداء تانية"
+      },
+      "metrics": [
+        {
+          "metric": {
+            "en": "Workout Duration",
+            "ar": "مدة التمرين"
+          },
+          "why_track": {
+            "en": "Ensure you're being efficient. If workouts are getting longer without more volume, you may be resting too much.",
+            "ar": "تأكد إنك فعال. لو التمارين بتطول من غير فوليوم أكتر، ممكن بترتاح كتير."
+          },
+          "target": {
+            "en": "45-90 minutes for most people",
+            "ar": "45-90 دقيقة لأغلب الناس"
+          }
+        },
+        {
+          "metric": {
+            "en": "Rest Times",
+            "ar": "أوقات الراحة"
+          },
+          "why_track": {
+            "en": "Consistent rest times make workout comparison more valid.",
+            "ar": "أوقات راحة ثابتة بتخلي مقارنة التمارين أصح."
+          },
+          "guidelines": {
+            "en": "2-5 minutes for strength (heavy compounds), 60-90 seconds for hypertrophy, 30-60 for metabolic/endurance",
+            "ar": "2-5 دقايق للقوة (المركبة التقيلة)، 60-90 ثانية للتضخيم، 30-60 للأيض/التحمل"
+          }
+        },
+        {
+          "metric": {
+            "en": "RPE (Rate of Perceived Exertion)",
+            "ar": "RPE (درجة الجهد المحسوس)"
+          },
+          "why_track": {
+            "en": "Helps auto-regulate training based on daily readiness. Some days you're stronger than others.",
+            "ar": "بيساعد تنظيم التمرين بناءً على جاهزيتك اليومية. بعض الأيام بتكون أقوى من تانية."
+          },
+          "scale": {
+            "en": "1-10 scale. 10 = maximum effort, 1 = no effort. Most working sets should be 7-9 RPE.",
+            "ar": "مقياس 1-10. 10 = أقصى جهد، 1 = مفيش جهد. أغلب السيتات لازم تكون 7-9 RPE."
+          }
+        },
+        {
+          "metric": {
+            "en": "Reps in Reserve (RIR)",
+            "ar": "الريبس المتبقية (RIR)"
+          },
+          "why_track": {
+            "en": "How many more reps could you have done? Opposite of RPE basically.",
+            "ar": "كام ريب كمان كنت تقدر تعمل؟ عكس RPE تقريباً."
+          },
+          "guidelines": {
+            "en": "0 RIR = failure, 1-3 RIR typical for most sets",
+            "ar": "0 RIR = فشل، 1-3 RIR عادي لأغلب السيتات"
+          }
+        }
+      ]
+    },
+    "nutrition_tracking": {
+      "title": {
+        "en": "Nutrition Tracking",
+        "ar": "تتبع التغذية"
+      },
+      "what_to_track": [
+        {
+          "metric": {
+            "en": "Daily Calories",
+            "ar": "السعرات اليومية"
+          },
+          "importance": "critical",
+          "how": {
+            "en": "Use an app like MyFitnessPal, Cronometer, or manual tracking. Weigh food when possible.",
+            "ar": "استخدم تطبيق زي MyFitnessPal أو Cronometer أو التتبع اليدوي. وزّن الأكل لو تقدر."
+          },
+          "tips": {
+            "en": "Don't obsess over exact numbers. Being within 100-200 calories is close enough.",
+            "ar": "ماتوسوسش على الأرقام بالظبط. إنك تكون في حدود 100-200 سعرة كفاية."
+          }
+        },
+        {
+          "metric": {
+            "en": "Protein Intake",
+            "ar": "تناول البروتين"
+          },
+          "importance": "critical",
+          "target": {
+            "en": "1.6-2.2g per kg of body weight for muscle building",
+            "ar": "1.6-2.2 جرام لكل كيلو من وزن الجسم لبناء العضل"
+          },
+          "why": {
+            "en": "Most important macro for muscle retention and growth. Track this even if you track nothing else.",
+            "ar": "أهم ماكرو للحفاظ على العضل ونموها. تابع ده حتى لو ما تابعتش حاجة تانية."
+          }
+        },
+        {
+          "metric": {
+            "en": "Water Intake",
+            "ar": "شرب المية"
+          },
+          "importance": "high",
+          "target": {
+            "en": "30-40ml per kg of body weight, more when exercising or in hot weather",
+            "ar": "30-40 مل لكل كيلو من وزن الجسم، أكتر لما بتتمرن أو في الحر"
+          }
+        },
+        {
+          "metric": {
+            "en": "Meal Frequency/Timing",
+            "ar": "عدد الوجبات/التوقيت"
+          },
+          "importance": "low",
+          "notes": {
+            "en": "Less important than total daily intake. Track if it helps your adherence.",
+            "ar": "أقل أهمية من إجمالي اليوم. تابعه لو بيساعدك تلتزم."
+          }
+        }
+      ],
+      "tracking_methods": [
+        {
+          "method": {
+            "en": "Full Macro Tracking",
+            "ar": "تتبع الماكروز الكامل"
+          },
+          "effort": "high",
+          "description": {
+            "en": "Track calories, protein, carbs, and fats. Most precise but requires dedication.",
+            "ar": "تتبع السعرات والبروتين والكاربز والدهون. أدق بس محتاج التزام."
+          },
+          "best_for": {
+            "en": "Competition prep, aggressive cutting, maximizing results",
+            "ar": "تحضير المسابقات، التنشيف القوي، تعظيم النتايج"
+          }
+        },
+        {
+          "method": {
+            "en": "Calorie + Protein Only",
+            "ar": "السعرات والبروتين بس"
+          },
+          "effort": "medium",
+          "description": {
+            "en": "Track calories and hit protein target. Let carbs and fats fall where they may.",
+            "ar": "تتبع السعرات وهدف البروتين. سيب الكاربز والدهون يجوا كما يجوا."
+          },
+          "best_for": {
+            "en": "Most people, sustainable long-term",
+            "ar": "أغلب الناس، مستدام على المدى الطويل"
+          }
+        },
+        {
+          "method": {
+            "en": "Hand Portion Method",
+            "ar": "طريقة قياس الإيد"
+          },
+          "effort": "low",
+          "description": {
+            "en": "Use your hand to estimate portions. Palm = protein, fist = carbs, thumb = fats, fist = veggies.",
+            "ar": "استخدم إيدك لتقدير الكميات. الكف = بروتين، القبضة = كاربز، الإبهام = دهون، القبضة = خضار."
+          },
+          "best_for": {
+            "en": "People who hate tracking, maintenance phases",
+            "ar": "الناس اللي بتكره التتبع، مراحل الحفاظ"
+          }
+        }
+      ]
+    },
+    "recovery_tracking": {
+      "title": {
+        "en": "Recovery Tracking",
+        "ar": "تتبع الاستشفاء"
+      },
+      "metrics": [
+        {
+          "metric": {
+            "en": "Sleep Duration",
+            "ar": "مدة النوم"
+          },
+          "target": {
+            "en": "7-9 hours for most adults",
+            "ar": "7-9 ساعات لأغلب الكبار"
+          },
+          "why": {
+            "en": "Sleep is when muscle repair and growth hormone release happens. Poor sleep = poor gains.",
+            "ar": "النوم هو وقت إصلاح العضل وإفراز هرمون النمو. نوم ضعيف = مكاسب ضعيفة."
+          }
+        },
+        {
+          "metric": {
+            "en": "Sleep Quality",
+            "ar": "جودة النوم"
+          },
+          "how_to_track": {
+            "en": "Rate 1-10 each morning. Note factors that affect it (caffeine timing, screen time, stress).",
+            "ar": "قيّم من 1-10 كل صباح. لاحظ العوامل اللي بتأثر عليه (توقيت الكافيين، الشاشات، الضغط)."
+          }
+        },
+        {
+          "metric": {
+            "en": "Soreness/DOMS",
+            "ar": "الألم العضلي (DOMS)"
+          },
+          "why": {
+            "en": "Some soreness is normal, but chronic severe soreness suggests overtraining or insufficient recovery.",
+            "ar": "شوية ألم عادي، بس الألم الشديد المستمر بيدل على إجهاد زيادة أو استشفاء ضعيف."
+          },
+          "scale": {
+            "en": "1-5 scale per muscle group",
+            "ar": "مقياس 1-5 لكل مجموعة عضلية"
+          }
+        },
+        {
+          "metric": {
+            "en": "Resting Heart Rate",
+            "ar": "معدل نبض الراحة"
+          },
+          "how": {
+            "en": "Check first thing in the morning before getting up. An elevated RHR can indicate overtraining or illness.",
+            "ar": "تحقق أول ما تصحى قبل ما تقوم. معدل نبض مرتفع ممكن يدل على إجهاد زيادة أو مرض."
+          },
+          "normal_range": {
+            "en": "60-100 bpm, athletes often 40-60 bpm",
+            "ar": "60-100 نبضة/دقيقة، الرياضيين غالباً 40-60 نبضة/دقيقة"
+          }
+        },
+        {
+          "metric": {
+            "en": "Energy/Mood",
+            "ar": "الطاقة/المزاج"
+          },
+          "why": {
+            "en": "Consistently low energy or mood can indicate overtraining, undereating, or poor recovery.",
+            "ar": "الطاقة أو المزاج المنخفض باستمرار ممكن يدل على إجهاد زيادة أو أكل قليل أو استشفاء ضعيف."
+          }
+        }
+      ]
+    },
+    "tracking_tools": {
+      "title": {
+        "en": "Recommended Tracking Tools",
+        "ar": "أدوات التتبع المقترحة"
+      },
+      "apps": [
+        {
+          "name": "Strong",
+          "category": {
+            "en": "Workout Tracking",
+            "ar": "تتبع التمارين"
+          },
+          "pros": {
+            "en": "Simple, beautiful UI, tracks all exercises, shows progress graphs",
+            "ar": "بسيط، واجهة جميلة، بيتابع كل التمارين، بيعرض رسوم التقدم"
+          },
+          "cons": {
+            "en": "Limited free version",
+            "ar": "النسخة المجانية محدودة"
+          }
+        },
+        {
+          "name": "MyFitnessPal",
+          "category": {
+            "en": "Nutrition Tracking",
+            "ar": "تتبع التغذية"
+          },
+          "pros": {
+            "en": "Huge food database, barcode scanner, Arabic foods available",
+            "ar": "قاعدة بيانات طعام ضخمة، ماسح باركود، أكل عربي متوفر"
+          },
+          "cons": {
+            "en": "Ads in free version, user-submitted entries can be inaccurate",
+            "ar": "إعلانات في النسخة المجانية، المدخلات من المستخدمين ممكن تكون غلط"
+          }
+        },
+        {
+          "name": "Hevy",
+          "category": {
+            "en": "Workout Tracking",
+            "ar": "تتبع التمارين"
+          },
+          "pros": {
+            "en": "Free, good exercise library, workout templates",
+            "ar": "مجاني، مكتبة تمارين كويسة، قوالب تمارين"
+          },
+          "cons": {
+            "en": "Less polished than paid alternatives",
+            "ar": "أقل تلميع من البدائل المدفوعة"
+          }
+        },
+        {
+          "name": "Apple Health / Google Fit",
+          "category": {
+            "en": "General Health Tracking",
+            "ar": "تتبع الصحة العام"
+          },
+          "pros": {
+            "en": "Built-in, syncs with other apps and devices, tracks steps, sleep, heart rate",
+            "ar": "مدمج، بيتزامن مع تطبيقات وأجهزة تانية، بيتابع الخطوات والنوم ومعدل النبض"
+          }
+        }
+      ],
+      "simple_tracking": {
+        "title": {
+          "en": "Low-Tech Tracking Options",
+          "ar": "خيارات التتبع البسيطة"
+        },
+        "options": [
+          {
+            "en": "Notebook and pen - Write exercises, weights, and reps. Simple and effective.",
+            "ar": "نوتة وقلم - اكتب التمارين والأوزان والريبس. بسيط وفعال."
+          },
+          {
+            "en": "Notes app on phone - Quick and always accessible.",
+            "ar": "تطبيق الملاحظات على الموبايل - سريع ومتاح دايماً."
+          },
+          {
+            "en": "Spreadsheet - Google Sheets or Excel for detailed tracking and charts.",
+            "ar": "جدول - Google Sheets أو Excel للتتبع التفصيلي والرسوم البيانية."
+          }
+        ]
+      }
+    },
+    "tracking_frequency": {
+      "title": {
+        "en": "How Often to Track Each Metric",
+        "ar": "كل قد إيه تتابع كل مقياس"
+      },
+      "summary": [
+        {
+          "metric": {
+            "en": "Body weight",
+            "ar": "وزن الجسم"
+          },
+          "frequency": {
+            "en": "Daily (use weekly average)",
+            "ar": "يومياً (استخدم المتوسط الأسبوعي)"
+          }
+        },
+        {
+          "metric": {
+            "en": "Waist measurement",
+            "ar": "قياس الخصر"
+          },
+          "frequency": {
+            "en": "Weekly",
+            "ar": "أسبوعياً"
+          }
+        },
+        {
+          "metric": {
+            "en": "Other body measurements",
+            "ar": "قياسات الجسم التانية"
+          },
+          "frequency": {
+            "en": "Every 2-4 weeks",
+            "ar": "كل 2-4 أسابيع"
+          }
+        },
+        {
+          "metric": {
+            "en": "Progress photos",
+            "ar": "صور التقدم"
+          },
+          "frequency": {
+            "en": "Every 2-4 weeks",
+            "ar": "كل 2-4 أسابيع"
+          }
+        },
+        {
+          "metric": {
+            "en": "Workout performance",
+            "ar": "أداء التمرين"
+          },
+          "frequency": {
+            "en": "Every workout",
+            "ar": "كل تمرين"
+          }
+        },
+        {
+          "metric": {
+            "en": "Nutrition",
+            "ar": "التغذية"
+          },
+          "frequency": {
+            "en": "Daily when cutting/bulking, less during maintenance",
+            "ar": "يومياً في التنشيف/التضخيم، أقل في الحفاظ"
+          }
+        },
+        {
+          "metric": {
+            "en": "Sleep",
+            "ar": "النوم"
+          },
+          "frequency": {
+            "en": "Daily",
+            "ar": "يومياً"
+          }
+        },
+        {
+          "metric": {
+            "en": "1RM testing",
+            "ar": "اختبار الماكس"
+          },
+          "frequency": {
+            "en": "Every 4-12 weeks",
+            "ar": "كل 4-12 أسبوع"
+          }
+        }
+      ]
+    },
+    "common_mistakes": {
+      "title": {
+        "en": "Common Tracking Mistakes",
+        "ar": "أخطاء التتبع الشائعة"
+      },
+      "mistakes": [
+        {
+          "mistake": {
+            "en": "Obsessing Over Daily Weight",
+            "ar": "الوسواس من الوزن اليومي"
+          },
+          "problem": {
+            "en": "Weight fluctuates daily. Panicking over normal fluctuations causes unnecessary stress.",
+            "ar": "الوزن بيتغير يومياً. الهلع من التغيرات العادية بيسبب ضغط مش لازم."
+          },
+          "solution": {
+            "en": "Focus on weekly averages and monthly trends, not daily readings.",
+            "ar": "ركز على المتوسطات الأسبوعية والاتجاهات الشهرية، مش القراءات اليومية."
+          }
+        },
+        {
+          "mistake": {
+            "en": "Not Being Consistent with Conditions",
+            "ar": "عدم الثبات في الظروف"
+          },
+          "problem": {
+            "en": "Measuring at different times, in different clothes, or with different methods makes comparison invalid.",
+            "ar": "القياس في أوقات مختلفة أو بهدوم مختلفة أو بطرق مختلفة بيخلي المقارنة غلط."
+          },
+          "solution": {
+            "en": "Same time, same conditions, same method, every time.",
+            "ar": "نفس الوقت، نفس الظروف، نفس الطريقة، كل مرة."
+          }
+        },
+        {
+          "mistake": {
+            "en": "Tracking Too Much",
+            "ar": "التتبع الزيادة"
+          },
+          "problem": {
+            "en": "Tracking everything can become overwhelming and unsustainable.",
+            "ar": "تتبع كل حاجة ممكن يكون مرهق ومش مستدام."
+          },
+          "solution": {
+            "en": "Start with the essentials (weight, workout performance, protein) and add more only if needed.",
+            "ar": "ابدأ بالأساسيات (الوزن، أداء التمرين، البروتين) وزوّد بس لو محتاج."
+          }
+        },
+        {
+          "mistake": {
+            "en": "Not Tracking Long Enough",
+            "ar": "عدم التتبع لفترة كافية"
+          },
+          "problem": {
+            "en": "Giving up after a week or two because you don't see changes.",
+            "ar": "الاستسلام بعد أسبوع أو اتنين لأنك مش شايف تغيير."
+          },
+          "solution": {
+            "en": "Commit to at least 4-6 weeks before evaluating if something is working.",
+            "ar": "التزم لمدة 4-6 أسابيع على الأقل قبل ما تقيّم لو حاجة شغالة."
+          }
+        },
+        {
+          "mistake": {
+            "en": "Ignoring Non-Scale Victories",
+            "ar": "تجاهل الانتصارات غير الميزان"
+          },
+          "problem": {
+            "en": "Only focusing on weight when there are many other signs of progress.",
+            "ar": "التركيز على الوزن بس لما فيه علامات تقدم تانية كتير."
+          },
+          "solution": {
+            "en": "Notice how clothes fit, energy levels, strength gains, sleep quality, and mood.",
+            "ar": "لاحظ الهدوم بتيجي إزاي، مستويات الطاقة، مكاسب القوة، جودة النوم، والمزاج."
+          }
+        }
+      ]
+    }
+  }
+}

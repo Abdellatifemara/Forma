@@ -1,0 +1,506 @@
+{
+  "gym_etiquette": {
+    "title": {
+      "en": "Gym Etiquette Guide",
+      "ar": "دليل آداب الجيم"
+    },
+    "introduction": {
+      "en": "Following proper gym etiquette makes the gym a better place for everyone. These unwritten rules help maintain a respectful, safe, and enjoyable environment.",
+      "ar": "اتباع آداب الجيم بيخلي المكان أحسن للكل. القواعد دي بتساعد نحافظ على جو محترم وآمن وممتع."
+    },
+    "essential_rules": [
+      {
+        "rule": {
+          "en": "Rerack Your Weights",
+          "ar": "رجّع الأوزان مكانها"
+        },
+        "importance": "critical",
+        "description": {
+          "en": "Always return weights, dumbbells, and plates to their proper racks after use. Nothing is more frustrating than searching for weights scattered around the gym.",
+          "ar": "دايماً رجّع الأوزان والدمبلز والأقراص مكانها بعد ما تخلص. مفيش حاجة مزعجة أكتر من إنك تدور على أوزان متبعترة في الجيم."
+        },
+        "tip": {
+          "en": "If you can lift it, you can rerack it",
+          "ar": "لو تقدر تشيله، تقدر ترجّعه مكانه"
+        }
+      },
+      {
+        "rule": {
+          "en": "Wipe Down Equipment",
+          "ar": "نضّف الأجهزة بعد استخدامك"
+        },
+        "importance": "critical",
+        "description": {
+          "en": "Use the provided towels and sanitizer to wipe down benches, machines, and mats after use. Your sweat is your responsibility.",
+          "ar": "استخدم الفوط والمطهر اللي في الجيم تنضف البنشات والأجهزة والمراتب بعد ما تخلص. عرقك مسؤوليتك."
+        },
+        "tip": {
+          "en": "Bring your own small towel to lay on equipment",
+          "ar": "جيب فوطة صغيرة معاك تحطها على الأجهزة"
+        }
+      },
+      {
+        "rule": {
+          "en": "Don't Hog Equipment",
+          "ar": "ماتحجزش الأجهزة"
+        },
+        "importance": "critical",
+        "description": {
+          "en": "Be mindful of how long you're using equipment, especially during busy hours. If you're resting for extended periods, offer to let others work in.",
+          "ar": "خلي بالك من الوقت اللي بتقعده على الجهاز، خصوصاً في أوقات الزحمة. لو بترتاح كتير، اعرض على حد تاني يستخدم الجهاز في وقت راحتك."
+        },
+        "tip": {
+          "en": "Limit your time to 20-30 minutes on cardio machines during peak hours",
+          "ar": "خلي وقتك على أجهزة الكارديو 20-30 دقيقة بس وقت الزحمة"
+        }
+      },
+      {
+        "rule": {
+          "en": "Allow Others to Work In",
+          "ar": "سيب غيرك يشتغل معاك"
+        },
+        "importance": "high",
+        "description": {
+          "en": "If someone asks to work in (use the equipment during your rest periods), accommodate them when possible. It's common courtesy and doesn't affect your workout.",
+          "ar": "لو حد طلب يستخدم الجهاز في وقت راحتك، سيبه. ده ذوق عادي ومش هيأثر على تمرينك."
+        },
+        "how_to_ask": {
+          "en": "Hey, mind if I work in with you?",
+          "ar": "ممكن أشتغل معاك في وقت راحتك؟"
+        }
+      },
+      {
+        "rule": {
+          "en": "Respect Personal Space",
+          "ar": "احترم المساحة الشخصية"
+        },
+        "importance": "high",
+        "description": {
+          "en": "Don't set up right next to someone when there's plenty of other space available. Give people room to move and breathe.",
+          "ar": "ماتقفش جنب حد لصق وفيه مكان تاني فاضي. سيب للناس مساحة يتحركوا ويتنفسوا."
+        },
+        "tip": {
+          "en": "Keep at least one equipment space between you and others when possible",
+          "ar": "سيب على الأقل مسافة جهاز واحد بينك وبين غيرك لو تقدر"
+        }
+      },
+      {
+        "rule": {
+          "en": "Don't Give Unsolicited Advice",
+          "ar": "ماتديش نصايح محدش طلبها"
+        },
+        "importance": "high",
+        "description": {
+          "en": "Unless someone is about to seriously injure themselves, don't offer workout tips unless asked. People may have specific reasons for their technique or program.",
+          "ar": "إلا لو حد هيأذي نفسه بجد، ماتقولش نصايح لحد إلا لو طلب. الناس ممكن يكون عندهم أسباب معينة لطريقتهم أو برنامجهم."
+        },
+        "exception": {
+          "en": "It's okay to warn someone about immediate danger (e.g., about to drop a weight on themselves)",
+          "ar": "عادي تحذر حد من خطر فوري (زي إن الوزن هيقع عليه)"
+        }
+      },
+      {
+        "rule": {
+          "en": "Keep Your Phone in Check",
+          "ar": "خلي بالك من موبايلك"
+        },
+        "importance": "medium",
+        "description": {
+          "en": "Limit phone use between sets. Don't take calls on the gym floor, and never record others without permission.",
+          "ar": "قلل استخدام الموبايل بين السيتات. ماتردش على تليفونات في الجيم، وما تصورش حد من غير إذنه أبداً."
+        },
+        "tip": {
+          "en": "Use airplane mode or workout playlists to minimize distractions",
+          "ar": "استخدم وضع الطيران أو بلايليست التمرين عشان تقلل التشتت"
+        }
+      },
+      {
+        "rule": {
+          "en": "Use Headphones for Music",
+          "ar": "استخدم سماعات للموسيقى"
+        },
+        "importance": "high",
+        "description": {
+          "en": "Never play music or videos out loud. Always use headphones for your personal audio.",
+          "ar": "أبداً ماتشغلش موسيقى أو فيديوهات بصوت عالي. دايماً استخدم سماعات لصوتك."
+        }
+      },
+      {
+        "rule": {
+          "en": "Don't Block the Mirror or Rack",
+          "ar": "ماتقفش قدام المراية أو الراك"
+        },
+        "importance": "medium",
+        "description": {
+          "en": "Step away from the dumbbell rack when doing exercises. Don't stand directly in front of someone who needs the mirror to check form.",
+          "ar": "ابعد عن راك الدمبلز لما بتتمرن. ماتقفش قدام حد محتاج المراية يشوف فورمه."
+        },
+        "tip": {
+          "en": "Take 3-4 steps back from the rack before starting your set",
+          "ar": "ارجع 3-4 خطوات من الراك قبل ما تبدأ السيت"
+        }
+      },
+      {
+        "rule": {
+          "en": "Ask Before Taking Equipment",
+          "ar": "اسأل قبل ما تاخد حاجة"
+        },
+        "importance": "high",
+        "description": {
+          "en": "If equipment appears to be in use (towel on bench, water bottle nearby), ask before taking it. Someone might be doing supersets or circuit training.",
+          "ar": "لو الجهاز باين إنه مستخدم (فوطة على البنش، ازازة مية جنبه)، اسأل قبل ما تاخده. ممكن حد بيعمل سوبر سيت أو سيركت."
+        },
+        "how_to_ask": {
+          "en": "Is anyone using this?",
+          "ar": "فيه حد بيستخدم ده؟"
+        }
+      }
+    ],
+    "locker_room_etiquette": [
+      {
+        "rule": {
+          "en": "Keep Conversations Appropriate",
+          "ar": "خلي الكلام مناسب"
+        },
+        "description": {
+          "en": "The locker room isn't the place for loud or extended conversations, especially when others are changing.",
+          "ar": "اللوكر مش مكان للكلام العالي أو الطويل، خصوصاً لما الناس بيغيروا."
+        }
+      },
+      {
+        "rule": {
+          "en": "Limit Your Space",
+          "ar": "قلل المساحة اللي بتاخدها"
+        },
+        "description": {
+          "en": "Don't spread your belongings across multiple lockers or benches. Keep your stuff contained.",
+          "ar": "ماتفردش حاجاتك على لوكرات أو بنشات كتير. خلي حاجتك في مكان واحد."
+        }
+      },
+      {
+        "rule": {
+          "en": "Clean Up After Yourself",
+          "ar": "نضف وراك"
+        },
+        "description": {
+          "en": "Don't leave trash, wet towels, or personal items behind. The locker room isn't your bathroom at home.",
+          "ar": "ماتسيبش زبالة أو فوط مبلولة أو حاجات شخصية وراك. اللوكر مش حمام بيتك."
+        }
+      },
+      {
+        "rule": {
+          "en": "Respect Privacy",
+          "ar": "احترم الخصوصية"
+        },
+        "description": {
+          "en": "Don't stare at others or make comments about their bodies. Keep your eyes to yourself.",
+          "ar": "ماتبصش للناس أو تعلق على أجسامهم. خلي عينك على نفسك."
+        }
+      }
+    ],
+    "spotting_etiquette": {
+      "title": {
+        "en": "How to Spot Someone Properly",
+        "ar": "إزاي تساعد حد صح (Spotting)"
+      },
+      "when_asked_to_spot": [
+        {
+          "en": "Ask how many reps they're going for",
+          "ar": "اسأل هيعمل كام ريب"
+        },
+        {
+          "en": "Ask if they want a lift-off (for bench press)",
+          "ar": "اسأل لو عايز مساعدة في رفع البار (للبنش)"
+        },
+        {
+          "en": "Ask when they want you to step in",
+          "ar": "اسأل امتى يحب تتدخل"
+        },
+        {
+          "en": "Stay focused and attentive throughout the set",
+          "ar": "خلي تركيزك وانتباهك طول السيت"
+        },
+        {
+          "en": "Provide minimal assistance unless needed",
+          "ar": "ساعد بالقليل إلا لو محتاج أكتر"
+        }
+      ],
+      "how_to_ask_for_a_spot": {
+        "en": "Hey, can you spot me on this set? I'm going for [X] reps and just need help if I fail.",
+        "ar": "ممكن تساعدني في السيت ده؟ هعمل [X] ريب وبس محتاج مساعدة لو فشلت."
+      },
+      "common_mistakes": [
+        {
+          "mistake": {
+            "en": "Taking over the lift too early",
+            "ar": "إنك تاخد الوزن بدري"
+          },
+          "correction": {
+            "en": "Only help when they truly can't complete the rep",
+            "ar": "ساعد بس لما فعلاً مايقدرش يكمل الريب"
+          }
+        },
+        {
+          "mistake": {
+            "en": "Not paying attention",
+            "ar": "عدم الانتباه"
+          },
+          "correction": {
+            "en": "Watch every rep closely, phone away",
+            "ar": "اتفرج على كل ريب بتركيز، سيب الموبايل"
+          }
+        },
+        {
+          "mistake": {
+            "en": "Using bad form as a spotter",
+            "ar": "فورم غلط وانت بتساعد"
+          },
+          "correction": {
+            "en": "Use proper deadlift form when helping with heavy weights",
+            "ar": "استخدم فورم الديدليفت الصح لما بتساعد في أوزان تقيلة"
+          }
+        }
+      ]
+    },
+    "peak_hours_tips": {
+      "title": {
+        "en": "Surviving Peak Hours",
+        "ar": "التعامل مع أوقات الزحمة"
+      },
+      "peak_times": {
+        "en": "Usually 5-8 PM on weekdays, late morning on weekends",
+        "ar": "عادةً 5-8 مساءً أيام الأسبوع، الصبح المتأخر في الويكند"
+      },
+      "tips": [
+        {
+          "en": "Have a backup exercise ready if equipment is taken",
+          "ar": "جهز تمرين بديل لو الجهاز مشغول"
+        },
+        {
+          "en": "Be flexible with your workout order",
+          "ar": "كن مرن في ترتيب تمارينك"
+        },
+        {
+          "en": "Consider going at off-peak times if possible",
+          "ar": "فكر تروح في أوقات أقل زحمة لو تقدر"
+        },
+        {
+          "en": "Supersets work well when one piece of equipment is enough",
+          "ar": "السوبر سيتس كويسة لما جهاز واحد يكفي"
+        },
+        {
+          "en": "Keep rest periods reasonable",
+          "ar": "خلي فترات الراحة معقولة"
+        }
+      ],
+      "off_peak_times": {
+        "en": "Early morning (5-7 AM), mid-day (11 AM-2 PM), late night",
+        "ar": "الصبح بدري (5-7 صباحاً)، نص النهار (11 صباحاً-2 ظهراً)، بالليل"
+      }
+    },
+    "gym_bag_essentials": {
+      "title": {
+        "en": "What to Bring to the Gym",
+        "ar": "إيه اللي تجيبه معاك الجيم"
+      },
+      "must_have": [
+        {
+          "item": {
+            "en": "Water bottle",
+            "ar": "ازازة مية"
+          },
+          "reason": {
+            "en": "Stay hydrated, avoid water fountain lines",
+            "ar": "خليك مرطب، اتجنب طابور السبيل"
+          }
+        },
+        {
+          "item": {
+            "en": "Small towel",
+            "ar": "فوطة صغيرة"
+          },
+          "reason": {
+            "en": "Wipe equipment and yourself",
+            "ar": "تنضف الأجهزة ونفسك"
+          }
+        },
+        {
+          "item": {
+            "en": "Lock for locker",
+            "ar": "قفل للوكر"
+          },
+          "reason": {
+            "en": "Secure your belongings",
+            "ar": "تأمن حاجاتك"
+          }
+        },
+        {
+          "item": {
+            "en": "Proper gym shoes",
+            "ar": "جزمة جيم مناسبة"
+          },
+          "reason": {
+            "en": "Safety and performance",
+            "ar": "للأمان والأداء"
+          }
+        }
+      ],
+      "nice_to_have": [
+        {
+          "item": {
+            "en": "Wireless headphones",
+            "ar": "سماعات وايرلس"
+          },
+          "reason": {
+            "en": "No wires getting in the way",
+            "ar": "مفيش أسلاك تعطلك"
+          }
+        },
+        {
+          "item": {
+            "en": "Lifting gloves or straps",
+            "ar": "جوانتي أو استرابس"
+          },
+          "reason": {
+            "en": "Better grip, protect hands",
+            "ar": "قبضة أحسن، حماية للإيدين"
+          }
+        },
+        {
+          "item": {
+            "en": "Weightlifting belt",
+            "ar": "حزام رفع الأثقال"
+          },
+          "reason": {
+            "en": "For heavy compound lifts",
+            "ar": "للأوزان التقيلة"
+          }
+        },
+        {
+          "item": {
+            "en": "Foam roller",
+            "ar": "فوم رولر"
+          },
+          "reason": {
+            "en": "Pre/post workout mobility",
+            "ar": "للموبيليتي قبل وبعد التمرين"
+          }
+        },
+        {
+          "item": {
+            "en": "Resistance bands",
+            "ar": "باندات مقاومة"
+          },
+          "reason": {
+            "en": "Warm-up and accessory work",
+            "ar": "للتسخين والتمارين المساعدة"
+          }
+        }
+      ]
+    },
+    "egypt_specific": {
+      "title": {
+        "en": "Egyptian Gym Culture Tips",
+        "ar": "نصايح لثقافة الجيم في مصر"
+      },
+      "tips": [
+        {
+          "en": "Greeting people with 'Salaam' when entering shows respect",
+          "ar": "السلام على الناس لما تدخل بيبين احترام"
+        },
+        {
+          "en": "Be patient during Ramadan - gym schedules and crowds change dramatically",
+          "ar": "اصبر في رمضان - مواعيد الجيم والزحمة بتتغير جداً"
+        },
+        {
+          "en": "Peak hours in Egypt are often later (8-11 PM) due to hot weather and work schedules",
+          "ar": "أوقات الذروة في مصر متأخرة (8-11 مساءً) بسبب الحر ومواعيد الشغل"
+        },
+        {
+          "en": "Some gyms have separate sections or times for women - respect these boundaries",
+          "ar": "بعض الجيمات فيها أقسام أو أوقات منفصلة للستات - احترم الحدود دي"
+        },
+        {
+          "en": "Water fountains may not always work - always bring your own water",
+          "ar": "السبيل ممكن مايشتغلش دايماً - دايماً جيب مية معاك"
+        },
+        {
+          "en": "Air conditioning quality varies - be prepared for temperature differences",
+          "ar": "جودة التكييف بتختلف - كن مستعد لفروق الحرارة"
+        },
+        {
+          "en": "Friday mornings are often quieter since many people are at prayers",
+          "ar": "صباح الجمعة غالباً بيكون أهدى لأن ناس كتير في الصلاة"
+        }
+      ]
+    },
+    "common_phrases": {
+      "title": {
+        "en": "Useful Gym Phrases",
+        "ar": "عبارات مفيدة في الجيم"
+      },
+      "phrases": [
+        {
+          "situation": {
+            "en": "Asking if equipment is free",
+            "ar": "تسأل لو الجهاز فاضي"
+          },
+          "phrase": {
+            "en": "Is anyone using this?",
+            "ar": "فيه حد على الجهاز ده؟"
+          }
+        },
+        {
+          "situation": {
+            "en": "Asking to work in",
+            "ar": "تطلب تشتغل مع حد"
+          },
+          "phrase": {
+            "en": "Mind if I work in?",
+            "ar": "ممكن أشتغل معاك؟"
+          }
+        },
+        {
+          "situation": {
+            "en": "Asking for a spot",
+            "ar": "تطلب مساعدة"
+          },
+          "phrase": {
+            "en": "Can you spot me?",
+            "ar": "ممكن تساعدني / تمسكلي؟"
+          }
+        },
+        {
+          "situation": {
+            "en": "Asking how many sets left",
+            "ar": "تسأل فاضل كام سيت"
+          },
+          "phrase": {
+            "en": "How many sets do you have left?",
+            "ar": "فاضلك كام سيت؟"
+          }
+        },
+        {
+          "situation": {
+            "en": "Complimenting progress",
+            "ar": "تمدح تقدم حد"
+          },
+          "phrase": {
+            "en": "Looking good, keep it up!",
+            "ar": "شكلك حلو، كمّل كده!"
+          }
+        },
+        {
+          "situation": {
+            "en": "Encouraging someone",
+            "ar": "تشجع حد"
+          },
+          "phrase": {
+            "en": "You got this! / Come on!",
+            "ar": "يلا! / هتقدر!"
+          }
+        }
+      ]
+    }
+  }
+}

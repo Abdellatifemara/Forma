@@ -1,0 +1,904 @@
+{
+  "pre_post_workout_nutrition": {
+    "title": {
+      "en": "Pre & Post Workout Nutrition Guide",
+      "ar": "دليل تغذية قبل وبعد التمرين"
+    },
+    "introduction": {
+      "en": "What you eat around your workout can impact performance, recovery, and results. This guide covers the science of workout nutrition timing.",
+      "ar": "اللي بتاكله حوالين التمرين بيأثر على الأداء والاستشفاء والنتايج. الدليل ده بيغطي علم توقيت تغذية التمرين."
+    },
+    "pre_workout_nutrition": {
+      "title": {
+        "en": "Pre-Workout Nutrition",
+        "ar": "تغذية قبل التمرين"
+      },
+      "goals": [
+        {
+          "en": "Provide energy for performance",
+          "ar": "توفير طاقة للأداء"
+        },
+        {
+          "en": "Prevent muscle breakdown during training",
+          "ar": "منع هدم العضل أثناء التدريب"
+        },
+        {
+          "en": "Ensure proper hydration",
+          "ar": "ضمان الترطيب الكافي"
+        },
+        {
+          "en": "Avoid digestive discomfort",
+          "ar": "تجنب عدم الراحة في الهضم"
+        }
+      ],
+      "timing_options": [
+        {
+          "timing": {
+            "en": "2-3 Hours Before (Full Meal)",
+            "ar": "2-3 ساعات قبل (وجبة كاملة)"
+          },
+          "description": {
+            "en": "A complete meal with protein, carbs, and fats. Enough time for digestion.",
+            "ar": "وجبة كاملة ببروتين وكاربز ودهون. وقت كافي للهضم."
+          },
+          "macros": {
+            "protein": {
+              "en": "25-40g",
+              "ar": "25-40 جرام"
+            },
+            "carbs": {
+              "en": "50-80g",
+              "ar": "50-80 جرام"
+            },
+            "fat": {
+              "en": "15-25g",
+              "ar": "15-25 جرام"
+            }
+          },
+          "examples": [
+            {
+              "en": "Chicken breast with rice and vegetables",
+              "ar": "صدر فرخة مع رز وخضار"
+            },
+            {
+              "en": "Koshary with extra lentils (smaller portion)",
+              "ar": "كشري بعدس زيادة (كمية أقل)"
+            },
+            {
+              "en": "Eggs with bread and cheese",
+              "ar": "بيض مع عيش وجبنة"
+            },
+            {
+              "en": "Pasta with meat sauce",
+              "ar": "مكرونة بصلصة اللحمة"
+            }
+          ]
+        },
+        {
+          "timing": {
+            "en": "60-90 Minutes Before (Medium Meal)",
+            "ar": "60-90 دقيقة قبل (وجبة متوسطة)"
+          },
+          "description": {
+            "en": "Moderate protein and carbs, lower fat for faster digestion.",
+            "ar": "بروتين وكاربز معتدل، دهون أقل لهضم أسرع."
+          },
+          "macros": {
+            "protein": {
+              "en": "20-30g",
+              "ar": "20-30 جرام"
+            },
+            "carbs": {
+              "en": "30-50g",
+              "ar": "30-50 جرام"
+            },
+            "fat": {
+              "en": "5-10g",
+              "ar": "5-10 جرام"
+            }
+          },
+          "examples": [
+            {
+              "en": "Greek yogurt with banana and honey",
+              "ar": "زبادي يوناني مع موز وعسل"
+            },
+            {
+              "en": "Tuna sandwich on white bread",
+              "ar": "ساندوتش تونة على عيش أبيض"
+            },
+            {
+              "en": "Oatmeal with protein powder",
+              "ar": "شوفان مع بروتين باودر"
+            },
+            {
+              "en": "Foul with bread (smaller portion)",
+              "ar": "فول بالعيش (كمية أقل)"
+            }
+          ]
+        },
+        {
+          "timing": {
+            "en": "30-45 Minutes Before (Light Snack)",
+            "ar": "30-45 دقيقة قبل (سناك خفيف)"
+          },
+          "description": {
+            "en": "Quick-digesting carbs with small protein. Minimal fat and fiber.",
+            "ar": "كاربز سريعة الهضم مع بروتين قليل. دهون وألياف قليلة جداً."
+          },
+          "macros": {
+            "protein": {
+              "en": "10-20g",
+              "ar": "10-20 جرام"
+            },
+            "carbs": {
+              "en": "20-40g",
+              "ar": "20-40 جرام"
+            },
+            "fat": {
+              "en": "0-5g",
+              "ar": "0-5 جرام"
+            }
+          },
+          "examples": [
+            {
+              "en": "Banana with a scoop of protein shake",
+              "ar": "موزة مع سكوب بروتين شيك"
+            },
+            {
+              "en": "White rice cakes with honey",
+              "ar": "رايس كيك مع عسل"
+            },
+            {
+              "en": "Fruit juice with whey protein",
+              "ar": "عصير فاكهة مع واي بروتين"
+            },
+            {
+              "en": "Dates with a few almonds",
+              "ar": "بلح مع شوية لوز"
+            }
+          ]
+        },
+        {
+          "timing": {
+            "en": "Fasted Training (0-15 Minutes Before)",
+            "ar": "تمرين صايم (0-15 دقيقة قبل)"
+          },
+          "description": {
+            "en": "Some people prefer training fasted. If so, consider BCAAs or EAAs to prevent muscle breakdown.",
+            "ar": "بعض الناس بتحب تتمرن صايمة. لو كده، فكر في BCAAs أو EAAs عشان تمنع هدم العضل."
+          },
+          "considerations": {
+            "en": "Performance may be slightly reduced, but fat oxidation is higher. Good for early morning training.",
+            "ar": "الأداء ممكن يقل شوية، بس حرق الدهون أعلى. كويس لتمرين الصبح بدري."
+          },
+          "tips": {
+            "en": "Stay hydrated. Coffee or caffeine can help performance when fasted.",
+            "ar": "خليك مرطب. القهوة أو الكافيين ممكن يساعدوا الأداء وانت صايم."
+          }
+        }
+      ],
+      "what_to_avoid": {
+        "title": {
+          "en": "Foods to Avoid Before Training",
+          "ar": "أكلات تتجنبها قبل التمرين"
+        },
+        "foods": [
+          {
+            "food": {
+              "en": "High-fat meals",
+              "ar": "الأكل العالي في الدهون"
+            },
+            "reason": {
+              "en": "Takes longer to digest, can cause sluggishness",
+              "ar": "بياخد وقت أطول في الهضم، ممكن يسبب كسل"
+            }
+          },
+          {
+            "food": {
+              "en": "High-fiber foods",
+              "ar": "الأكل العالي في الألياف"
+            },
+            "reason": {
+              "en": "Can cause bloating and digestive issues",
+              "ar": "ممكن يسبب انتفاخ ومشاكل هضم"
+            }
+          },
+          {
+            "food": {
+              "en": "Spicy food",
+              "ar": "الأكل الحار"
+            },
+            "reason": {
+              "en": "Can cause heartburn and discomfort during exercise",
+              "ar": "ممكن يسبب حموضة وعدم راحة أثناء التمرين"
+            }
+          },
+          {
+            "food": {
+              "en": "Large amounts of dairy (for some people)",
+              "ar": "كميات كبيرة من الألبان (لبعض الناس)"
+            },
+            "reason": {
+              "en": "Can cause bloating if lactose intolerant",
+              "ar": "ممكن يسبب انتفاخ لو عندك حساسية لاكتوز"
+            }
+          },
+          {
+            "food": {
+              "en": "Carbonated drinks",
+              "ar": "المشروبات الغازية"
+            },
+            "reason": {
+              "en": "Causes bloating and discomfort",
+              "ar": "بتسبب انتفاخ وعدم راحة"
+            }
+          }
+        ]
+      }
+    },
+    "post_workout_nutrition": {
+      "title": {
+        "en": "Post-Workout Nutrition",
+        "ar": "تغذية بعد التمرين"
+      },
+      "goals": [
+        {
+          "en": "Stimulate muscle protein synthesis",
+          "ar": "تحفيز بناء بروتين العضل"
+        },
+        {
+          "en": "Replenish glycogen stores",
+          "ar": "تعويض مخزون الجليكوجين"
+        },
+        {
+          "en": "Reduce muscle protein breakdown",
+          "ar": "تقليل هدم بروتين العضل"
+        },
+        {
+          "en": "Begin the recovery process",
+          "ar": "بدء عملية الاستشفاء"
+        }
+      ],
+      "anabolic_window_truth": {
+        "title": {
+          "en": "The 'Anabolic Window' - Truth vs Myth",
+          "ar": "النافذة الأنابولية - الحقيقة والأسطورة"
+        },
+        "myth": {
+          "en": "You must eat within 30 minutes or lose all your gains!",
+          "ar": "لازم تاكل في 30 دقيقة وإلا هتخسر كل مكاسبك!"
+        },
+        "truth": {
+          "en": "The post-workout window is wider than once believed. If you ate before training, you have 4-6 hours post-workout. If you trained fasted, eating sooner (within 1-2 hours) is more important.",
+          "ar": "نافذة ما بعد التمرين أوسع مما كنا فاكرين. لو أكلت قبل التمرين، عندك 4-6 ساعات بعد التمرين. لو تمرنت صايم، الأكل بدري (في خلال 1-2 ساعة) أهم."
+        },
+        "practical_advice": {
+          "en": "Don't stress about exact timing. Just ensure you get a good meal with protein within a few hours of training.",
+          "ar": "ماتقلقش من التوقيت بالظبط. بس تأكد إنك بتاكل وجبة كويسة ببروتين في خلال ساعات قليلة من التمرين."
+        }
+      },
+      "optimal_post_workout": {
+        "title": {
+          "en": "Optimal Post-Workout Meal",
+          "ar": "الوجبة المثالية بعد التمرين"
+        },
+        "macros": {
+          "protein": {
+            "amount": {
+              "en": "30-50g (0.4-0.5g per kg bodyweight)",
+              "ar": "30-50 جرام (0.4-0.5 جرام لكل كيلو من وزن الجسم)"
+            },
+            "why": {
+              "en": "Triggers muscle protein synthesis. More than 40-50g in one sitting doesn't provide additional benefit for muscle building.",
+              "ar": "بيحفز بناء بروتين العضل. أكتر من 40-50 جرام في مرة واحدة مش بيدي فايدة زيادة لبناء العضل."
+            },
+            "best_sources": {
+              "en": "Whey protein (fastest absorbing), chicken, eggs, fish, beef",
+              "ar": "واي بروتين (أسرع امتصاص)، فرخة، بيض، سمك، لحمة"
+            }
+          },
+          "carbs": {
+            "amount": {
+              "en": "30-60g or more depending on goals and training intensity",
+              "ar": "30-60 جرام أو أكتر حسب الأهداف وشدة التدريب"
+            },
+            "why": {
+              "en": "Replenishes glycogen, helps with recovery, and can enhance protein uptake.",
+              "ar": "بيعوض الجليكوجين، بيساعد في الاستشفاء، وممكن يحسن امتصاص البروتين."
+            },
+            "best_sources": {
+              "en": "Rice, potatoes, bread, pasta, fruits",
+              "ar": "رز، بطاطس، عيش، مكرونة، فاكهة"
+            },
+            "note": {
+              "en": "If cutting, you may reduce carbs post-workout. If bulking or maintaining, more carbs are beneficial.",
+              "ar": "لو بتنشف، ممكن تقلل الكاربز بعد التمرين. لو بتضخم أو بتحافظ، كاربز أكتر مفيدة."
+            }
+          },
+          "fat": {
+            "amount": {
+              "en": "Keep moderate (15-25g) - doesn't need to be avoided",
+              "ar": "خليها معتدلة (15-25 جرام) - مش لازم تتجنبها"
+            },
+            "myth_busted": {
+              "en": "Old advice said to avoid fat post-workout. Research shows fat doesn't significantly slow protein absorption or reduce gains.",
+              "ar": "النصيحة القديمة قالت تجنب الدهون بعد التمرين. الأبحاث بتقول الدهون مش بتبطئ امتصاص البروتين أو تقلل المكاسب بشكل كبير."
+            }
+          }
+        }
+      },
+      "post_workout_meal_ideas": {
+        "title": {
+          "en": "Post-Workout Meal Ideas",
+          "ar": "أفكار وجبات بعد التمرين"
+        },
+        "quick_options": {
+          "title": {
+            "en": "Quick Options (Within 30-60 min)",
+            "ar": "خيارات سريعة (في خلال 30-60 دقيقة)"
+          },
+          "meals": [
+            {
+              "meal": {
+                "en": "Whey protein shake with banana",
+                "ar": "شيك واي بروتين مع موزة"
+              },
+              "protein": "25-30g",
+              "carbs": "30-40g"
+            },
+            {
+              "meal": {
+                "en": "Greek yogurt with honey and fruit",
+                "ar": "زبادي يوناني مع عسل وفاكهة"
+              },
+              "protein": "20-25g",
+              "carbs": "40-50g"
+            },
+            {
+              "meal": {
+                "en": "Chocolate milk (good budget option)",
+                "ar": "لبن بالشوكولاتة (خيار اقتصادي كويس)"
+              },
+              "protein": "15-20g",
+              "carbs": "40-50g"
+            },
+            {
+              "meal": {
+                "en": "Protein bar with fruit juice",
+                "ar": "بروتين بار مع عصير فاكهة"
+              },
+              "protein": "20-25g",
+              "carbs": "30-40g"
+            }
+          ]
+        },
+        "full_meals": {
+          "title": {
+            "en": "Full Meals (Within 1-3 hours)",
+            "ar": "وجبات كاملة (في خلال 1-3 ساعات)"
+          },
+          "meals": [
+            {
+              "meal": {
+                "en": "Grilled chicken with rice and vegetables",
+                "ar": "فرخة مشوية مع رز وخضار"
+              },
+              "protein": "40-50g",
+              "carbs": "60-80g"
+            },
+            {
+              "meal": {
+                "en": "Koshary with extra lentils/chickpeas",
+                "ar": "كشري بعدس وحمص زيادة"
+              },
+              "protein": "25-35g",
+              "carbs": "80-100g"
+            },
+            {
+              "meal": {
+                "en": "Eggs (4-5) with bread and cheese",
+                "ar": "بيض (4-5) مع عيش وجبنة"
+              },
+              "protein": "30-40g",
+              "carbs": "40-50g"
+            },
+            {
+              "meal": {
+                "en": "Tuna or salmon with sweet potato",
+                "ar": "تونة أو سلمون مع بطاطا"
+              },
+              "protein": "35-45g",
+              "carbs": "50-60g"
+            },
+            {
+              "meal": {
+                "en": "Beef kebab with rice or bread",
+                "ar": "كباب مع رز أو عيش"
+              },
+              "protein": "40-50g",
+              "carbs": "50-70g"
+            },
+            {
+              "meal": {
+                "en": "Molokhia with chicken and rice",
+                "ar": "ملوخية مع فرخة ورز"
+              },
+              "protein": "35-45g",
+              "carbs": "60-80g"
+            }
+          ]
+        }
+      }
+    },
+    "hydration": {
+      "title": {
+        "en": "Hydration Around Workouts",
+        "ar": "الترطيب حوالين التمارين"
+      },
+      "before": {
+        "title": {
+          "en": "Before Workout",
+          "ar": "قبل التمرين"
+        },
+        "guidelines": {
+          "en": "Drink 500-600ml of water 2-3 hours before training. Another 200-300ml 20-30 minutes before.",
+          "ar": "اشرب 500-600 مل مية 2-3 ساعات قبل التمرين. كمان 200-300 مل 20-30 دقيقة قبل."
+        },
+        "tip": {
+          "en": "Check urine color - should be light yellow. Dark urine means drink more.",
+          "ar": "تحقق من لون البول - لازم يكون أصفر فاتح. بول غامق يعني اشرب أكتر."
+        }
+      },
+      "during": {
+        "title": {
+          "en": "During Workout",
+          "ar": "أثناء التمرين"
+        },
+        "guidelines": {
+          "en": "Sip 150-200ml every 15-20 minutes. More in hot weather or intense sessions.",
+          "ar": "اشرب 150-200 مل كل 15-20 دقيقة. أكتر في الحر أو الجلسات الشديدة."
+        },
+        "electrolytes": {
+          "en": "For sessions over 60 minutes or heavy sweating, consider adding electrolytes (sodium, potassium).",
+          "ar": "للجلسات أكتر من 60 دقيقة أو العرق الكتير، فكر تضيف إلكتروليتات (صوديوم، بوتاسيوم)."
+        }
+      },
+      "after": {
+        "title": {
+          "en": "After Workout",
+          "ar": "بعد التمرين"
+        },
+        "guidelines": {
+          "en": "Drink 500-700ml for every 0.5kg of body weight lost during exercise. Most people need 500-1000ml post-workout.",
+          "ar": "اشرب 500-700 مل لكل 0.5 كيلو من وزن الجسم اللي خسرته أثناء التمرين. أغلب الناس محتاجين 500-1000 مل بعد التمرين."
+        },
+        "signs_of_dehydration": {
+          "en": "Thirst, dark urine, headache, fatigue, dizziness, dry mouth",
+          "ar": "عطش، بول غامق، صداع، إرهاق، دوخة، فم جاف"
+        }
+      }
+    },
+    "supplements": {
+      "title": {
+        "en": "Pre & Post Workout Supplements",
+        "ar": "مكملات قبل وبعد التمرين"
+      },
+      "pre_workout_supplements": [
+        {
+          "supplement": {
+            "en": "Caffeine",
+            "ar": "كافيين"
+          },
+          "dosage": "3-6mg per kg bodyweight",
+          "timing": {
+            "en": "30-60 minutes before training",
+            "ar": "30-60 دقيقة قبل التمرين"
+          },
+          "benefits": {
+            "en": "Increases energy, focus, and performance. Most well-researched ergogenic aid.",
+            "ar": "بيزود الطاقة والتركيز والأداء. أكتر مساعد أداء مدروس."
+          },
+          "notes": {
+            "en": "Coffee works too. Don't take too late in day - affects sleep.",
+            "ar": "القهوة كمان شغالة. ماتاخدهاش متأخر - بتأثر على النوم."
+          },
+          "evidence": "strong"
+        },
+        {
+          "supplement": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": "3-5g daily",
+          "timing": {
+            "en": "Timing doesn't matter much - consistency is key",
+            "ar": "التوقيت مش مهم قوي - الثبات هو المهم"
+          },
+          "benefits": {
+            "en": "Increases strength, power, and muscle mass. Safe and well-researched.",
+            "ar": "بيزود القوة والباور والكتلة العضلية. آمن ومدروس كويس."
+          },
+          "evidence": "strong"
+        },
+        {
+          "supplement": {
+            "en": "Beta-Alanine",
+            "ar": "بيتا ألانين"
+          },
+          "dosage": "3-5g daily",
+          "timing": {
+            "en": "Timing doesn't matter - builds up in system over time",
+            "ar": "التوقيت مش مهم - بيتراكم في الجسم مع الوقت"
+          },
+          "benefits": {
+            "en": "Helps with high-rep endurance. May cause tingling sensation (harmless).",
+            "ar": "بيساعد في تحمل الريبس العالية. ممكن يسبب إحساس بالتنميل (مش ضار)."
+          },
+          "evidence": "moderate"
+        },
+        {
+          "supplement": {
+            "en": "Citrulline Malate",
+            "ar": "سيترولين مالات"
+          },
+          "dosage": "6-8g",
+          "timing": {
+            "en": "30-60 minutes before training",
+            "ar": "30-60 دقيقة قبل التمرين"
+          },
+          "benefits": {
+            "en": "May improve endurance and reduce fatigue. Better pumps.",
+            "ar": "ممكن يحسن التحمل ويقلل التعب. ضخ أحسن."
+          },
+          "evidence": "moderate"
+        }
+      ],
+      "post_workout_supplements": [
+        {
+          "supplement": {
+            "en": "Whey Protein",
+            "ar": "واي بروتين"
+          },
+          "dosage": "25-40g",
+          "timing": {
+            "en": "Within a few hours of training",
+            "ar": "في خلال ساعات قليلة من التمرين"
+          },
+          "benefits": {
+            "en": "Fast-absorbing protein, convenient way to hit protein targets. Not magic, just food.",
+            "ar": "بروتين سريع الامتصاص، طريقة سهلة توصل لهدف البروتين. مش سحر، بس أكل."
+          },
+          "notes": {
+            "en": "Not necessary if you can get enough protein from food.",
+            "ar": "مش ضروري لو تقدر تاخد بروتين كفاية من الأكل."
+          },
+          "evidence": "strong"
+        },
+        {
+          "supplement": {
+            "en": "BCAAs / EAAs",
+            "ar": "BCAAs / EAAs"
+          },
+          "dosage": "5-10g",
+          "timing": {
+            "en": "During or after training",
+            "ar": "أثناء أو بعد التمرين"
+          },
+          "benefits": {
+            "en": "May help if training fasted. Not needed if you eat protein before/after training.",
+            "ar": "ممكن تساعد لو بتتمرن صايم. مش محتاجها لو بتاكل بروتين قبل/بعد التمرين."
+          },
+          "notes": {
+            "en": "Whey protein contains all the BCAAs you need. Save your money.",
+            "ar": "الواي بروتين فيه كل الـ BCAAs اللي محتاجها. وفر فلوسك."
+          },
+          "evidence": "weak"
+        }
+      ],
+      "unnecessary_supplements": {
+        "title": {
+          "en": "Supplements You Probably Don't Need",
+          "ar": "مكملات غالباً مش محتاجها"
+        },
+        "list": [
+          {
+            "supplement": {
+              "en": "Mass Gainers",
+              "ar": "ماس جينرز"
+            },
+            "reason": {
+              "en": "Just expensive protein + sugar/maltodextrin. Make your own shake with oats, banana, and protein.",
+              "ar": "بس بروتين غالي + سكر/مالتوديكسترين. اعمل شيك بنفسك بشوفان وموز وبروتين."
+            }
+          },
+          {
+            "supplement": {
+              "en": "Testosterone Boosters",
+              "ar": "رافعات التيستوستيرون"
+            },
+            "reason": {
+              "en": "Don't work. If they did, they'd be illegal. Save your money.",
+              "ar": "مش بتشتغل. لو كانت بتشتغل، كانت هتكون غير قانونية. وفر فلوسك."
+            }
+          },
+          {
+            "supplement": {
+              "en": "Fat Burners",
+              "ar": "حارقات الدهون"
+            },
+            "reason": {
+              "en": "Mostly caffeine with other unproven ingredients. Just drink coffee and eat in a deficit.",
+              "ar": "أغلبها كافيين مع مكونات تانية مش مثبتة. بس اشرب قهوة وكل في عجز سعرات."
+            }
+          },
+          {
+            "supplement": {
+              "en": "Glutamine",
+              "ar": "جلوتامين"
+            },
+            "reason": {
+              "en": "Your body makes enough, and you get plenty from protein. No benefit for muscle building.",
+              "ar": "جسمك بيعمل كفاية، وبتاخد كتير من البروتين. مفيش فايدة لبناء العضل."
+            }
+          }
+        ]
+      }
+    },
+    "special_situations": {
+      "title": {
+        "en": "Special Situations",
+        "ar": "حالات خاصة"
+      },
+      "morning_training": {
+        "title": {
+          "en": "Early Morning Training",
+          "ar": "تمرين الصباح الباكر"
+        },
+        "options": [
+          {
+            "option": {
+              "en": "Train Fasted",
+              "ar": "تمرن صايم"
+            },
+            "when": {
+              "en": "If you feel fine training on empty stomach and can't wake up early enough to eat",
+              "ar": "لو حاسس بكويس وانت بتتمرن على معدة فاضية ومش قادر تصحى بدري كفاية تاكل"
+            },
+            "tips": {
+              "en": "Have coffee/caffeine, stay hydrated, consider BCAAs if concerned about muscle loss",
+              "ar": "اشرب قهوة/كافيين، خليك مرطب، فكر في BCAAs لو قلقان من خسارة العضل"
+            }
+          },
+          {
+            "option": {
+              "en": "Quick Pre-Workout Snack",
+              "ar": "سناك سريع قبل التمرين"
+            },
+            "when": {
+              "en": "If you have 30-45 minutes before training",
+              "ar": "لو عندك 30-45 دقيقة قبل التمرين"
+            },
+            "examples": {
+              "en": "Banana, dates, rice cakes, white bread with honey",
+              "ar": "موزة، بلح، رايس كيك، عيش أبيض بعسل"
+            }
+          }
+        ],
+        "post_workout": {
+          "en": "Make sure to have a good breakfast after training with protein and carbs.",
+          "ar": "تأكد إنك بتاكل فطار كويس بعد التمرين ببروتين وكاربز."
+        }
+      },
+      "late_night_training": {
+        "title": {
+          "en": "Late Night Training",
+          "ar": "تمرين بالليل المتأخر"
+        },
+        "concerns": {
+          "en": "Main concern is caffeine affecting sleep. Avoid pre-workout supplements with stimulants if training after 6-7 PM.",
+          "ar": "القلق الأساسي هو الكافيين يأثر على النوم. تجنب مكملات البري ووركاوت اللي فيها منبهات لو بتتمرن بعد 6-7 مساءً."
+        },
+        "post_workout": {
+          "en": "Still have your post-workout meal. A meal with protein won't significantly disrupt sleep. Casein protein before bed can be beneficial.",
+          "ar": "برضو كل وجبة بعد التمرين. وجبة ببروتين مش هتأثر على النوم بشكل كبير. كازين بروتين قبل النوم ممكن يكون مفيد."
+        }
+      },
+      "ramadan_training": {
+        "title": {
+          "en": "Training During Ramadan",
+          "ar": "التمرين في رمضان"
+        },
+        "timing_options": [
+          {
+            "option": {
+              "en": "After Iftar (Recommended)",
+              "ar": "بعد الإفطار (موصى به)"
+            },
+            "timing": {
+              "en": "1-2 hours after breaking fast",
+              "ar": "1-2 ساعة بعد الإفطار"
+            },
+            "pros": {
+              "en": "Properly fueled and hydrated, can have post-workout nutrition",
+              "ar": "مغذي ومرطب صح، تقدر تاكل بعد التمرين"
+            },
+            "cons": {
+              "en": "May feel heavy if ate too much at Iftar",
+              "ar": "ممكن تحس بتقل لو أكلت كتير في الإفطار"
+            }
+          },
+          {
+            "option": {
+              "en": "Before Iftar",
+              "ar": "قبل الإفطار"
+            },
+            "timing": {
+              "en": "30-60 minutes before Maghrib",
+              "ar": "30-60 دقيقة قبل المغرب"
+            },
+            "pros": {
+              "en": "Can break fast immediately after, empty stomach feels lighter",
+              "ar": "تقدر تفطر بعد التمرين على طول، المعدة الفاضية بتحسس بخفة"
+            },
+            "cons": {
+              "en": "Training while dehydrated and fasted, reduced performance",
+              "ar": "بتتمرن وانت مش مرطب وصايم، أداء أقل"
+            }
+          },
+          {
+            "option": {
+              "en": "After Taraweeh",
+              "ar": "بعد التراويح"
+            },
+            "timing": {
+              "en": "Late night, around 10-11 PM",
+              "ar": "بالليل المتأخر، حوالي 10-11 مساءً"
+            },
+            "pros": {
+              "en": "Fully fueled, most energy",
+              "ar": "مغذي بالكامل، أكتر طاقة"
+            },
+            "cons": {
+              "en": "Late training may affect sleep, less time until Suhoor",
+              "ar": "التمرين المتأخر ممكن يأثر على النوم، وقت أقل للسحور"
+            }
+          }
+        ],
+        "nutrition_tips": [
+          {
+            "en": "Focus on hydration between Iftar and Suhoor",
+            "ar": "ركز على الترطيب بين الإفطار والسحور"
+          },
+          {
+            "en": "Don't overeat at Iftar - eat moderate portions over time",
+            "ar": "ماتاكلش كتير في الإفطار - كل كميات معتدلة على فترات"
+          },
+          {
+            "en": "Prioritize protein at both Iftar and Suhoor",
+            "ar": "أولوية للبروتين في الإفطار والسحور"
+          },
+          {
+            "en": "Have slow-digesting carbs and protein at Suhoor",
+            "ar": "كل كاربز بطيئة الهضم وبروتين في السحور"
+          },
+          {
+            "en": "Accept that progress may be slower - focus on maintenance",
+            "ar": "اقبل إن التقدم ممكن يكون أبطأ - ركز على الحفاظ"
+          }
+        ]
+      }
+    },
+    "budget_friendly_options": {
+      "title": {
+        "en": "Budget-Friendly Egyptian Options",
+        "ar": "خيارات اقتصادية مصرية"
+      },
+      "pre_workout": [
+        {
+          "food": {
+            "en": "White bread with honey",
+            "ar": "عيش أبيض بعسل"
+          },
+          "cost": "~5 EGP"
+        },
+        {
+          "food": {
+            "en": "Dates (3-4)",
+            "ar": "بلح (3-4)"
+          },
+          "cost": "~5-10 EGP"
+        },
+        {
+          "food": {
+            "en": "Banana",
+            "ar": "موزة"
+          },
+          "cost": "~5 EGP"
+        },
+        {
+          "food": {
+            "en": "Black coffee",
+            "ar": "قهوة سادة"
+          },
+          "cost": "~10 EGP"
+        }
+      ],
+      "post_workout": [
+        {
+          "food": {
+            "en": "Eggs (4-5) with bread",
+            "ar": "بيض (4-5) مع عيش"
+          },
+          "cost": "~20-25 EGP"
+        },
+        {
+          "food": {
+            "en": "Foul and falafel with bread",
+            "ar": "فول وطعمية مع عيش"
+          },
+          "cost": "~20-30 EGP"
+        },
+        {
+          "food": {
+            "en": "Koshary (medium)",
+            "ar": "كشري (وسط)"
+          },
+          "cost": "~25-35 EGP"
+        },
+        {
+          "food": {
+            "en": "Canned tuna with rice",
+            "ar": "تونة معلبة مع رز"
+          },
+          "cost": "~30-40 EGP"
+        },
+        {
+          "food": {
+            "en": "Chicken liver with rice",
+            "ar": "كبدة فراخ مع رز"
+          },
+          "cost": "~30-40 EGP"
+        },
+        {
+          "food": {
+            "en": "Milk + banana + oats (DIY gainer)",
+            "ar": "لبن + موز + شوفان (جينر محلي)"
+          },
+          "cost": "~20-25 EGP"
+        }
+      ]
+    },
+    "key_takeaways": {
+      "title": {
+        "en": "Key Takeaways",
+        "ar": "النقاط الأساسية"
+      },
+      "points": [
+        {
+          "en": "Total daily nutrition matters more than specific timing",
+          "ar": "إجمالي التغذية اليومية أهم من التوقيت المحدد"
+        },
+        {
+          "en": "Eat some protein and carbs in the hours around training",
+          "ar": "كل شوية بروتين وكاربز في الساعات حوالين التمرين"
+        },
+        {
+          "en": "Stay hydrated before, during, and after workouts",
+          "ar": "خليك مرطب قبل وأثناء وبعد التمارين"
+        },
+        {
+          "en": "Don't stress about the 'anabolic window' - it's wider than you think",
+          "ar": "ماتقلقش من 'النافذة الأنابولية' - هي أوسع مما تفتكر"
+        },
+        {
+          "en": "Avoid heavy, fatty, or high-fiber foods right before training",
+          "ar": "تجنب الأكل التقيل أو الدهني أو العالي في الألياف قبل التمرين مباشرة"
+        },
+        {
+          "en": "Simple foods work fine - you don't need expensive supplements",
+          "ar": "الأكل البسيط كفاية - مش محتاج مكملات غالية"
+        }
+      ]
+    }
+  }
+}
