@@ -1,0 +1,1228 @@
+{
+  "bodyweight_progressions": {
+    "title": {
+      "en": "Bodyweight Exercise Progressions",
+      "ar": "تدرجات تمارين وزن الجسم"
+    },
+    "introduction": {
+      "en": "Bodyweight training can build serious strength and muscle when you know how to progress. This guide shows you how to advance from beginner to advanced for every major movement pattern.",
+      "ar": "تدريب وزن الجسم ممكن يبني قوة وعضل حقيقية لما تعرف إزاي تتقدم. الدليل ده بيوريك إزاي تتقدم من مبتدئ لمتقدم لكل نمط حركة أساسي."
+    },
+    "how_to_progress": {
+      "title": {
+        "en": "How to Use This Progression System",
+        "ar": "إزاي تستخدم نظام التدرج ده"
+      },
+      "rules": [
+        {
+          "rule": {
+            "en": "Master before moving on",
+            "ar": "اتقن قبل ما تتقدم"
+          },
+          "explanation": {
+            "en": "Only progress when you can do 3 sets of 8-12 reps with perfect form",
+            "ar": "تقدم بس لما تقدر تعمل 3 سيتات من 8-12 ريبس بفورم مثالي"
+          }
+        },
+        {
+          "rule": {
+            "en": "Quality over quantity",
+            "ar": "الجودة فوق الكمية"
+          },
+          "explanation": {
+            "en": "5 perfect reps beats 15 sloppy reps every time",
+            "ar": "5 ريبس مثالية بتغلب 15 ريبس سيئة كل مرة"
+          }
+        },
+        {
+          "rule": {
+            "en": "Be patient",
+            "ar": "اصبر"
+          },
+          "explanation": {
+            "en": "Some progressions take weeks or months to master. That's normal.",
+            "ar": "بعض التدرجات بتاخد أسابيع أو شهور لإتقانها. ده عادي."
+          }
+        },
+        {
+          "rule": {
+            "en": "Use intermediate variations",
+            "ar": "استخدم تنويعات متوسطة"
+          },
+          "explanation": {
+            "en": "If you can't do the next progression, use assisted versions or partial range of motion",
+            "ar": "لو مش قادر تعمل التدرج التالي، استخدم نسخ بمساعدة أو مدى حركة جزئي"
+          }
+        }
+      ]
+    },
+    "push_progressions": {
+      "title": {
+        "en": "Push Progressions (Chest, Shoulders, Triceps)",
+        "ar": "تدرجات الدفع (الصدر، الكتف، التراي)"
+      },
+      "horizontal_push": {
+        "title": {
+          "en": "Horizontal Push (Push-up Progressions)",
+          "ar": "الدفع الأفقي (تدرجات البوش أب)"
+        },
+        "target": {
+          "en": "Chest, Front Deltoids, Triceps",
+          "ar": "الصدر، الدلتويد الأمامي، التراي"
+        },
+        "progressions": [
+          {
+            "level": 1,
+            "name": {
+              "en": "Wall Push-ups",
+              "ar": "بوش أب على الحيطة"
+            },
+            "description": {
+              "en": "Stand facing a wall, arms extended. Lean in and push back.",
+              "ar": "قف مواجه الحيطة، الذراعين ممدودة. مل لقدام وادفع لورا."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x15-20"
+          },
+          {
+            "level": 2,
+            "name": {
+              "en": "Incline Push-ups (High)",
+              "ar": "بوش أب مايل (عالي)"
+            },
+            "description": {
+              "en": "Hands on a table or high bench. The higher, the easier.",
+              "ar": "الإيدين على ترابيزة أو بنش عالي. كل ما يكون أعلى، يكون أسهل."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x12-15"
+          },
+          {
+            "level": 3,
+            "name": {
+              "en": "Incline Push-ups (Low)",
+              "ar": "بوش أب مايل (واطي)"
+            },
+            "description": {
+              "en": "Hands on a chair or low step.",
+              "ar": "الإيدين على كرسي أو درجة واطية."
+            },
+            "difficulty": "beginner-intermediate",
+            "target_reps": "3x12-15"
+          },
+          {
+            "level": 4,
+            "name": {
+              "en": "Knee Push-ups",
+              "ar": "بوش أب على الركبة"
+            },
+            "description": {
+              "en": "Standard push-up position but knees on ground.",
+              "ar": "وضع بوش أب قياسي بس الركبة على الأرض."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x12-15"
+          },
+          {
+            "level": 5,
+            "name": {
+              "en": "Standard Push-ups",
+              "ar": "بوش أب قياسي"
+            },
+            "description": {
+              "en": "Full push-up from toes. Body in straight line.",
+              "ar": "بوش أب كامل من الصوابع. الجسم في خط مستقيم."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x10-15",
+            "form_cues": [
+              {
+                "en": "Hands slightly wider than shoulders",
+                "ar": "الإيدين أعرض شوية من الكتف"
+              },
+              {
+                "en": "Core tight, don't let hips sag",
+                "ar": "الكور مشدود، ماتخليش الورك ينزل"
+              },
+              {
+                "en": "Elbows at 45 degrees, not flared out",
+                "ar": "الكوع 45 درجة، مش مفتوح بره"
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "name": {
+              "en": "Diamond Push-ups",
+              "ar": "بوش أب ماسي"
+            },
+            "description": {
+              "en": "Hands close together forming a diamond shape. More tricep emphasis.",
+              "ar": "الإيدين قريبين يشكلوا شكل ماسة. تركيز أكتر على التراي."
+            },
+            "difficulty": "intermediate-advanced",
+            "target_reps": "3x8-12"
+          },
+          {
+            "level": 7,
+            "name": {
+              "en": "Decline Push-ups",
+              "ar": "بوش أب منحدر"
+            },
+            "description": {
+              "en": "Feet elevated on bench or chair. More upper chest and shoulder.",
+              "ar": "الرجلين مرفوعين على بنش أو كرسي. صدر علوي وكتف أكتر."
+            },
+            "difficulty": "intermediate-advanced",
+            "target_reps": "3x8-12"
+          },
+          {
+            "level": 8,
+            "name": {
+              "en": "Archer Push-ups",
+              "ar": "بوش أب قوس"
+            },
+            "description": {
+              "en": "Wide stance, shift weight to one arm while the other extends. Works toward one-arm push-up.",
+              "ar": "وقفة واسعة، انقل الوزن لإيد واحدة والتانية تمتد. بيشتغل ناحية بوش أب إيد واحدة."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x6-10 each side"
+          },
+          {
+            "level": 9,
+            "name": {
+              "en": "One-Arm Push-up (Assisted)",
+              "ar": "بوش أب إيد واحدة (بمساعدة)"
+            },
+            "description": {
+              "en": "One hand on a basketball or elevated surface for slight assistance.",
+              "ar": "إيد على كرة سلة أو سطح مرتفع لمساعدة خفيفة."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x5-8 each side"
+          },
+          {
+            "level": 10,
+            "name": {
+              "en": "One-Arm Push-up",
+              "ar": "بوش أب إيد واحدة"
+            },
+            "description": {
+              "en": "Full push-up using only one arm. Elite level.",
+              "ar": "بوش أب كامل باستخدام إيد واحدة. مستوى نخبة."
+            },
+            "difficulty": "elite",
+            "target_reps": "3x3-5 each side"
+          }
+        ]
+      },
+      "vertical_push": {
+        "title": {
+          "en": "Vertical Push (Handstand Push-up Progressions)",
+          "ar": "الدفع العمودي (تدرجات بوش أب الوقوف على اليدين)"
+        },
+        "target": {
+          "en": "Shoulders, Triceps, Upper Chest",
+          "ar": "الكتف، التراي، الصدر العلوي"
+        },
+        "progressions": [
+          {
+            "level": 1,
+            "name": {
+              "en": "Pike Push-ups (Bent Knees)",
+              "ar": "بايك بوش أب (ركبة مثنية)"
+            },
+            "description": {
+              "en": "Hips high in pike position, knees slightly bent. Lower head toward ground.",
+              "ar": "الورك عالي في وضع البايك، الركبة مثنية شوية. نزّل الراس ناحية الأرض."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x10-15"
+          },
+          {
+            "level": 2,
+            "name": {
+              "en": "Pike Push-ups (Straight Legs)",
+              "ar": "بايك بوش أب (رجل مستقيمة)"
+            },
+            "description": {
+              "en": "Same as above with legs straight. Harder on shoulders.",
+              "ar": "زي فوق مع الرجل مستقيمة. أصعب على الكتف."
+            },
+            "difficulty": "beginner-intermediate",
+            "target_reps": "3x10-12"
+          },
+          {
+            "level": 3,
+            "name": {
+              "en": "Elevated Pike Push-ups",
+              "ar": "بايك بوش أب مرتفع"
+            },
+            "description": {
+              "en": "Feet on a chair or bench in pike position. More vertical angle.",
+              "ar": "الرجلين على كرسي أو بنش في وضع البايك. زاوية أكتر عمودية."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x8-12"
+          },
+          {
+            "level": 4,
+            "name": {
+              "en": "Box Handstand Push-ups",
+              "ar": "بوش أب وقوف على اليدين على صندوق"
+            },
+            "description": {
+              "en": "Walk feet up a box until nearly vertical, perform push-ups.",
+              "ar": "امشي برجلك على صندوق لحد ما تبقى تقريباً عمودي، اعمل بوش أب."
+            },
+            "difficulty": "intermediate-advanced",
+            "target_reps": "3x6-10"
+          },
+          {
+            "level": 5,
+            "name": {
+              "en": "Wall Handstand Hold",
+              "ar": "ثبات الوقوف على اليدين على الحيطة"
+            },
+            "description": {
+              "en": "Kick up to wall handstand and hold. Build time before adding push-ups.",
+              "ar": "اركل لوضع الوقوف على اليدين على الحيطة واثبت. ابني الوقت قبل إضافة البوش أب."
+            },
+            "difficulty": "intermediate-advanced",
+            "target_reps": "3x30-60 seconds"
+          },
+          {
+            "level": 6,
+            "name": {
+              "en": "Wall Handstand Push-ups (Partial)",
+              "ar": "بوش أب وقوف على اليدين على الحيطة (جزئي)"
+            },
+            "description": {
+              "en": "Handstand against wall, lower head partway and push back up.",
+              "ar": "وقوف على اليدين على الحيطة، نزّل الراس جزء من الطريق وادفع لفوق."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x5-8"
+          },
+          {
+            "level": 7,
+            "name": {
+              "en": "Wall Handstand Push-ups (Full)",
+              "ar": "بوش أب وقوف على اليدين على الحيطة (كامل)"
+            },
+            "description": {
+              "en": "Full range of motion - head touches ground.",
+              "ar": "مدى حركة كامل - الراس تلمس الأرض."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x5-10"
+          },
+          {
+            "level": 8,
+            "name": {
+              "en": "Freestanding Handstand Push-ups",
+              "ar": "بوش أب وقوف على اليدين حر"
+            },
+            "description": {
+              "en": "Handstand push-up without wall support. Requires exceptional balance.",
+              "ar": "بوش أب وقوف على اليدين من غير دعم الحيطة. محتاج توازن استثنائي."
+            },
+            "difficulty": "elite",
+            "target_reps": "3x3-5"
+          }
+        ]
+      },
+      "dip_progressions": {
+        "title": {
+          "en": "Dip Progressions",
+          "ar": "تدرجات الديبس"
+        },
+        "target": {
+          "en": "Chest, Triceps, Front Deltoids",
+          "ar": "الصدر، التراي، الدلتويد الأمامي"
+        },
+        "progressions": [
+          {
+            "level": 1,
+            "name": {
+              "en": "Bench Dips (Feet on Floor)",
+              "ar": "ديبس البنش (الرجل على الأرض)"
+            },
+            "description": {
+              "en": "Hands on bench behind you, feet on floor, lower and push up.",
+              "ar": "الإيدين على البنش وراك، الرجلين على الأرض، نزّل وادفع لفوق."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x12-15"
+          },
+          {
+            "level": 2,
+            "name": {
+              "en": "Bench Dips (Feet Elevated)",
+              "ar": "ديبس البنش (الرجل مرتفعة)"
+            },
+            "description": {
+              "en": "Same as above but feet on another bench or chair.",
+              "ar": "زي فوق بس الرجلين على بنش تاني أو كرسي."
+            },
+            "difficulty": "beginner-intermediate",
+            "target_reps": "3x12-15"
+          },
+          {
+            "level": 3,
+            "name": {
+              "en": "Assisted Parallel Bar Dips",
+              "ar": "ديبس بارات متوازية بمساعدة"
+            },
+            "description": {
+              "en": "Use resistance band for assistance or machine if available.",
+              "ar": "استخدم باند مقاومة للمساعدة أو جهاز لو متوفر."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x8-12"
+          },
+          {
+            "level": 4,
+            "name": {
+              "en": "Parallel Bar Dips",
+              "ar": "ديبس البارات المتوازية"
+            },
+            "description": {
+              "en": "Standard dips on parallel bars. Lower until shoulders below elbows.",
+              "ar": "ديبس قياسي على البارات المتوازية. نزّل لحد ما الكتف يبقى تحت الكوع."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x8-12",
+            "form_cues": [
+              {
+                "en": "Lean forward for more chest, stay upright for more triceps",
+                "ar": "مل لقدام لصدر أكتر، ابقى مستقيم لتراي أكتر"
+              },
+              {
+                "en": "Don't go too deep if you have shoulder issues",
+                "ar": "ماتنزلش عميق قوي لو عندك مشاكل في الكتف"
+              }
+            ]
+          },
+          {
+            "level": 5,
+            "name": {
+              "en": "Ring Dips",
+              "ar": "ديبس الرينجز"
+            },
+            "description": {
+              "en": "Dips on gymnastic rings. Unstable surface makes it much harder.",
+              "ar": "ديبس على حلقات الجمباز. السطح المتحرك بيخليه أصعب بكتير."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x8-10"
+          },
+          {
+            "level": 6,
+            "name": {
+              "en": "Weighted Dips",
+              "ar": "ديبس بوزن"
+            },
+            "description": {
+              "en": "Add weight using a belt or holding dumbbell between feet.",
+              "ar": "ضيف وزن باستخدام حزام أو امسك دمبل بين رجلك."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x6-10"
+          }
+        ]
+      }
+    },
+    "pull_progressions": {
+      "title": {
+        "en": "Pull Progressions (Back, Biceps)",
+        "ar": "تدرجات السحب (الظهر، الباي)"
+      },
+      "horizontal_pull": {
+        "title": {
+          "en": "Horizontal Pull (Row Progressions)",
+          "ar": "السحب الأفقي (تدرجات التجديف)"
+        },
+        "target": {
+          "en": "Middle Back, Lats, Biceps, Rear Deltoids",
+          "ar": "نص الظهر، اللاتس، الباي، الدلتويد الخلفي"
+        },
+        "progressions": [
+          {
+            "level": 1,
+            "name": {
+              "en": "Doorway Rows",
+              "ar": "تجديف الباب"
+            },
+            "description": {
+              "en": "Hold doorframe and lean back, pull yourself up. Further feet = harder.",
+              "ar": "امسك إطار الباب ومل لورا، اسحب نفسك لفوق. الرجل أبعد = أصعب."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x15-20"
+          },
+          {
+            "level": 2,
+            "name": {
+              "en": "Inverted Rows (High Bar)",
+              "ar": "تجديف مقلوب (بار عالي)"
+            },
+            "description": {
+              "en": "Bar at chest height, body at 45 degrees. Easier than low bar.",
+              "ar": "البار على ارتفاع الصدر، الجسم 45 درجة. أسهل من البار الواطي."
+            },
+            "difficulty": "beginner-intermediate",
+            "target_reps": "3x12-15"
+          },
+          {
+            "level": 3,
+            "name": {
+              "en": "Inverted Rows (Low Bar)",
+              "ar": "تجديف مقلوب (بار واطي)"
+            },
+            "description": {
+              "en": "Bar at hip height, body nearly horizontal. Much harder.",
+              "ar": "البار على ارتفاع الورك، الجسم تقريباً أفقي. أصعب بكتير."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x10-12"
+          },
+          {
+            "level": 4,
+            "name": {
+              "en": "Inverted Rows (Feet Elevated)",
+              "ar": "تجديف مقلوب (الرجل مرتفعة)"
+            },
+            "description": {
+              "en": "Feet on a bench or box for added difficulty.",
+              "ar": "الرجلين على بنش أو صندوق لصعوبة إضافية."
+            },
+            "difficulty": "intermediate-advanced",
+            "target_reps": "3x8-12"
+          },
+          {
+            "level": 5,
+            "name": {
+              "en": "Archer Rows",
+              "ar": "تجديف قوس"
+            },
+            "description": {
+              "en": "Wide grip, pull to one side while other arm extends. One-arm row prep.",
+              "ar": "قبضة واسعة، اسحب لجنب واحد والإيد التانية تمتد. تحضير لتجديف إيد واحدة."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x6-10 each side"
+          },
+          {
+            "level": 6,
+            "name": {
+              "en": "One-Arm Inverted Row",
+              "ar": "تجديف مقلوب إيد واحدة"
+            },
+            "description": {
+              "en": "Full inverted row using only one arm.",
+              "ar": "تجديف مقلوب كامل باستخدام إيد واحدة بس."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x5-8 each side"
+          },
+          {
+            "level": 7,
+            "name": {
+              "en": "Front Lever Rows",
+              "ar": "تجديف الرافعة الأمامية"
+            },
+            "description": {
+              "en": "Row while in tucked or full front lever position. Elite level.",
+              "ar": "تجديف وانت في وضع الرافعة الأمامية المطوية أو الكاملة. مستوى نخبة."
+            },
+            "difficulty": "elite",
+            "target_reps": "3x3-5"
+          }
+        ]
+      },
+      "vertical_pull": {
+        "title": {
+          "en": "Vertical Pull (Pull-up Progressions)",
+          "ar": "السحب العمودي (تدرجات العقلة)"
+        },
+        "target": {
+          "en": "Lats, Biceps, Forearms",
+          "ar": "اللاتس، الباي، الساعد"
+        },
+        "progressions": [
+          {
+            "level": 1,
+            "name": {
+              "en": "Dead Hangs",
+              "ar": "تعليق ميت"
+            },
+            "description": {
+              "en": "Just hang from the bar. Build grip strength and shoulder stability.",
+              "ar": "بس اتعلق من البار. ابني قوة القبضة واستقرار الكتف."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x20-30 seconds"
+          },
+          {
+            "level": 2,
+            "name": {
+              "en": "Scapular Pull-ups",
+              "ar": "عقلة الكتف"
+            },
+            "description": {
+              "en": "Hang and pull shoulder blades down and back without bending arms.",
+              "ar": "اتعلق واسحب لوح الكتف لتحت ولورا من غير ما تثني الذراع."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x10-15"
+          },
+          {
+            "level": 3,
+            "name": {
+              "en": "Band-Assisted Pull-ups",
+              "ar": "عقلة بمساعدة الباند"
+            },
+            "description": {
+              "en": "Loop resistance band over bar and under feet for assistance.",
+              "ar": "لف باند المقاومة على البار وتحت الرجلين للمساعدة."
+            },
+            "difficulty": "beginner-intermediate",
+            "target_reps": "3x8-12"
+          },
+          {
+            "level": 4,
+            "name": {
+              "en": "Negative Pull-ups",
+              "ar": "عقلة سلبية"
+            },
+            "description": {
+              "en": "Jump to top position, lower yourself slowly (5 seconds).",
+              "ar": "انط للوضع العلوي، نزّل نفسك ببطء (5 ثواني)."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x5-8"
+          },
+          {
+            "level": 5,
+            "name": {
+              "en": "Chin-ups",
+              "ar": "تشين أب"
+            },
+            "description": {
+              "en": "Underhand grip (palms facing you). Easier than pull-ups for most people.",
+              "ar": "قبضة سفلية (الكفوف مواجهاك). أسهل من العقلة لأغلب الناس."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x6-10"
+          },
+          {
+            "level": 6,
+            "name": {
+              "en": "Pull-ups",
+              "ar": "عقلة (بول أب)"
+            },
+            "description": {
+              "en": "Overhand grip (palms away). The classic back builder.",
+              "ar": "قبضة علوية (الكفوف بعيدة عنك). الكلاسيكية لبناء الظهر."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x6-10",
+            "form_cues": [
+              {
+                "en": "Start from dead hang, full extension",
+                "ar": "ابدأ من تعليق ميت، امتداد كامل"
+              },
+              {
+                "en": "Pull elbows down and back",
+                "ar": "اسحب الكوع لتحت ولورا"
+              },
+              {
+                "en": "Chin over bar at top",
+                "ar": "الذقن فوق البار في القمة"
+              }
+            ]
+          },
+          {
+            "level": 7,
+            "name": {
+              "en": "Wide Grip Pull-ups",
+              "ar": "عقلة قبضة واسعة"
+            },
+            "description": {
+              "en": "Hands wider than shoulder width. More lat emphasis.",
+              "ar": "الإيدين أعرض من الكتف. تركيز أكتر على اللاتس."
+            },
+            "difficulty": "intermediate-advanced",
+            "target_reps": "3x6-10"
+          },
+          {
+            "level": 8,
+            "name": {
+              "en": "L-Sit Pull-ups",
+              "ar": "عقلة إل-سيت"
+            },
+            "description": {
+              "en": "Pull-up with legs extended horizontal. Intense core work.",
+              "ar": "عقلة مع الرجلين ممدودة أفقي. شغل كور مكثف."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x5-8"
+          },
+          {
+            "level": 9,
+            "name": {
+              "en": "Archer Pull-ups",
+              "ar": "عقلة قوس"
+            },
+            "description": {
+              "en": "Pull to one side while other arm extends. One-arm prep.",
+              "ar": "اسحب لجنب واحد والإيد التانية تمتد. تحضير لإيد واحدة."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x5-8 each side"
+          },
+          {
+            "level": 10,
+            "name": {
+              "en": "One-Arm Pull-up (Assisted)",
+              "ar": "عقلة إيد واحدة (بمساعدة)"
+            },
+            "description": {
+              "en": "Hold wrist or towel with other hand for assistance.",
+              "ar": "امسك الرسغ أو فوطة بالإيد التانية للمساعدة."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x3-5 each side"
+          },
+          {
+            "level": 11,
+            "name": {
+              "en": "One-Arm Pull-up",
+              "ar": "عقلة إيد واحدة"
+            },
+            "description": {
+              "en": "Full pull-up with one arm. Elite level achievement.",
+              "ar": "عقلة كاملة بإيد واحدة. إنجاز مستوى نخبة."
+            },
+            "difficulty": "elite",
+            "target_reps": "1-3 each side"
+          }
+        ]
+      }
+    },
+    "squat_progressions": {
+      "title": {
+        "en": "Squat Progressions",
+        "ar": "تدرجات السكوات"
+      },
+      "target": {
+        "en": "Quadriceps, Glutes, Hamstrings",
+        "ar": "الكوادز، المؤخرة، الهامسترينج"
+      },
+      "progressions": [
+        {
+          "level": 1,
+          "name": {
+            "en": "Assisted Squat",
+            "ar": "سكوات بمساعدة"
+          },
+          "description": {
+            "en": "Hold onto something for balance while squatting.",
+            "ar": "امسك حاجة للتوازن وانت بتعمل سكوات."
+          },
+          "difficulty": "beginner",
+          "target_reps": "3x15-20"
+        },
+        {
+          "level": 2,
+          "name": {
+            "en": "Box Squat",
+            "ar": "سكوات الصندوق"
+          },
+          "description": {
+            "en": "Squat down to a box or chair. Helps learn proper depth.",
+            "ar": "سكوات نزولاً لصندوق أو كرسي. بيساعد تتعلم العمق الصحيح."
+          },
+          "difficulty": "beginner",
+          "target_reps": "3x12-15"
+        },
+        {
+          "level": 3,
+          "name": {
+            "en": "Bodyweight Squat",
+            "ar": "سكوات وزن الجسم"
+          },
+          "description": {
+            "en": "Standard squat with arms extended forward for balance.",
+            "ar": "سكوات قياسي مع الذراعين ممدودة لقدام للتوازن."
+          },
+          "difficulty": "beginner-intermediate",
+          "target_reps": "3x15-20",
+          "form_cues": [
+            {
+              "en": "Feet shoulder-width, toes slightly out",
+              "ar": "الرجلين بعرض الكتف، الصوابع طالعة شوية بره"
+            },
+            {
+              "en": "Weight on heels, knees track over toes",
+              "ar": "الوزن على الكعبين، الركبة تتبع الصوابع"
+            },
+            {
+              "en": "Hip crease below knee at bottom",
+              "ar": "ثنية الورك تحت الركبة في الأسفل"
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "name": {
+            "en": "Close Stance Squat",
+            "ar": "سكوات وقفة ضيقة"
+          },
+          "description": {
+            "en": "Feet closer together. More quad emphasis, harder on mobility.",
+            "ar": "الرجلين أقرب لبعض. تركيز أكتر على الكواد، أصعب على الموبيليتي."
+          },
+          "difficulty": "intermediate",
+          "target_reps": "3x12-15"
+        },
+        {
+          "level": 5,
+          "name": {
+            "en": "Pause Squats",
+            "ar": "سكوات بوقفة"
+          },
+          "description": {
+            "en": "Hold at the bottom for 3-5 seconds before coming up.",
+            "ar": "اثبت في الأسفل 3-5 ثواني قبل ما تطلع."
+          },
+          "difficulty": "intermediate",
+          "target_reps": "3x8-12"
+        },
+        {
+          "level": 6,
+          "name": {
+            "en": "Jump Squats",
+            "ar": "سكوات بقفز"
+          },
+          "description": {
+            "en": "Explode up from the bottom into a jump.",
+            "ar": "انفجر لفوق من الأسفل في قفزة."
+          },
+          "difficulty": "intermediate",
+          "target_reps": "3x10-15"
+        },
+        {
+          "level": 7,
+          "name": {
+            "en": "Bulgarian Split Squat",
+            "ar": "سكوات بلغاري مقسم"
+          },
+          "description": {
+            "en": "Rear foot elevated on bench. Single leg strength builder.",
+            "ar": "الرجل الخلفية مرتفعة على البنش. بانية قوة رجل واحدة."
+          },
+          "difficulty": "intermediate-advanced",
+          "target_reps": "3x8-12 each leg"
+        },
+        {
+          "level": 8,
+          "name": {
+            "en": "Shrimp Squat",
+            "ar": "سكوات الجمبري"
+          },
+          "description": {
+            "en": "Hold rear foot behind you, squat until knee touches ground.",
+            "ar": "امسك الرجل الخلفية وراك، سكوات لحد ما الركبة تلمس الأرض."
+          },
+          "difficulty": "advanced",
+          "target_reps": "3x5-8 each leg"
+        },
+        {
+          "level": 9,
+          "name": {
+            "en": "Pistol Squat (Assisted)",
+            "ar": "بيستول سكوات (بمساعدة)"
+          },
+          "description": {
+            "en": "Single leg squat holding onto something or with leg on box.",
+            "ar": "سكوات رجل واحدة ماسك حاجة أو الرجل على صندوق."
+          },
+          "difficulty": "advanced",
+          "target_reps": "3x5-8 each leg"
+        },
+        {
+          "level": 10,
+          "name": {
+            "en": "Pistol Squat",
+            "ar": "بيستول سكوات"
+          },
+          "description": {
+            "en": "Full single leg squat with other leg extended forward. Elite movement.",
+            "ar": "سكوات رجل واحدة كامل مع الرجل التانية ممدودة لقدام. حركة نخبة."
+          },
+          "difficulty": "elite",
+          "target_reps": "3x3-5 each leg"
+        }
+      ]
+    },
+    "hinge_progressions": {
+      "title": {
+        "en": "Hinge Progressions (Hamstrings, Glutes, Lower Back)",
+        "ar": "تدرجات الهينج (الهامسترينج، المؤخرة، أسفل الظهر)"
+      },
+      "progressions": [
+        {
+          "level": 1,
+          "name": {
+            "en": "Hip Hinge Practice",
+            "ar": "تدريب هينج الورك"
+          },
+          "description": {
+            "en": "Stand with back against wall, push hips back until you feel hamstrings. Learn the pattern.",
+            "ar": "قف مع ظهرك على الحيطة، ادفع الورك لورا لحد ما تحس بالهامسترينج. اتعلم النمط."
+          },
+          "difficulty": "beginner",
+          "target_reps": "3x15-20"
+        },
+        {
+          "level": 2,
+          "name": {
+            "en": "Glute Bridge",
+            "ar": "جلوت بريدج"
+          },
+          "description": {
+            "en": "Lie on back, feet flat, drive hips up squeezing glutes.",
+            "ar": "نام على ظهرك، الرجلين مسطحة، ادفع الورك لفوق مع ضغط المؤخرة."
+          },
+          "difficulty": "beginner",
+          "target_reps": "3x15-20"
+        },
+        {
+          "level": 3,
+          "name": {
+            "en": "Single Leg Glute Bridge",
+            "ar": "جلوت بريدج رجل واحدة"
+          },
+          "description": {
+            "en": "Bridge with one leg extended. Much harder.",
+            "ar": "بريدج مع رجل واحدة ممدودة. أصعب بكتير."
+          },
+          "difficulty": "intermediate",
+          "target_reps": "3x10-15 each leg"
+        },
+        {
+          "level": 4,
+          "name": {
+            "en": "Hip Thrust (Back on Bench)",
+            "ar": "هيب ثرست (الظهر على البنش)"
+          },
+          "description": {
+            "en": "Upper back on bench, drive hips up. Greater range of motion than bridge.",
+            "ar": "أعلى الظهر على البنش، ادفع الورك لفوق. مدى حركة أكبر من البريدج."
+          },
+          "difficulty": "intermediate",
+          "target_reps": "3x12-15"
+        },
+        {
+          "level": 5,
+          "name": {
+            "en": "Romanian Deadlift (Bodyweight)",
+            "ar": "ديدليفت روماني (وزن الجسم)"
+          },
+          "description": {
+            "en": "Hinge at hips, lower hands toward ground, keeping back straight.",
+            "ar": "هينج من الورك، نزّل الإيدين ناحية الأرض، مع الحفاظ على الظهر مستقيم."
+          },
+          "difficulty": "intermediate",
+          "target_reps": "3x12-15"
+        },
+        {
+          "level": 6,
+          "name": {
+            "en": "Single Leg Romanian Deadlift",
+            "ar": "ديدليفت روماني رجل واحدة"
+          },
+          "description": {
+            "en": "RDL on one leg. Great for balance and unilateral strength.",
+            "ar": "RDL على رجل واحدة. ممتاز للتوازن والقوة الأحادية."
+          },
+          "difficulty": "intermediate-advanced",
+          "target_reps": "3x8-10 each leg"
+        },
+        {
+          "level": 7,
+          "name": {
+            "en": "Nordic Curl (Assisted)",
+            "ar": "نورديك كيرل (بمساعدة)"
+          },
+          "description": {
+            "en": "Kneeling, ankles secured, lower body forward using hamstrings. Use hands to catch yourself.",
+            "ar": "راكع، الكاحل مثبت، نزّل الجسم لقدام باستخدام الهامسترينج. استخدم الإيدين تمسك نفسك."
+          },
+          "difficulty": "advanced",
+          "target_reps": "3x5-8"
+        },
+        {
+          "level": 8,
+          "name": {
+            "en": "Nordic Curl (Full)",
+            "ar": "نورديك كيرل (كامل)"
+          },
+          "description": {
+            "en": "Full eccentric and concentric without hands. Extremely challenging.",
+            "ar": "نزول وطلوع كامل من غير إيدين. صعب للغاية."
+          },
+          "difficulty": "elite",
+          "target_reps": "3x3-5"
+        }
+      ]
+    },
+    "core_progressions": {
+      "title": {
+        "en": "Core Progressions",
+        "ar": "تدرجات الكور"
+      },
+      "plank_progressions": {
+        "title": {
+          "en": "Plank Progressions (Anti-Extension)",
+          "ar": "تدرجات البلانك (مقاومة التمديد)"
+        },
+        "progressions": [
+          {
+            "level": 1,
+            "name": {
+              "en": "Kneeling Plank",
+              "ar": "بلانك راكع"
+            },
+            "description": {
+              "en": "Plank position but on knees. Build up time.",
+              "ar": "وضع البلانك بس على الركبة. ابني الوقت."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x20-30 seconds"
+          },
+          {
+            "level": 2,
+            "name": {
+              "en": "Standard Plank",
+              "ar": "بلانك قياسي"
+            },
+            "description": {
+              "en": "Full plank on forearms or hands. Body in straight line.",
+              "ar": "بلانك كامل على الساعدين أو الإيدين. الجسم في خط مستقيم."
+            },
+            "difficulty": "beginner-intermediate",
+            "target_reps": "3x30-60 seconds"
+          },
+          {
+            "level": 3,
+            "name": {
+              "en": "Plank with Leg Lift",
+              "ar": "بلانك مع رفع رجل"
+            },
+            "description": {
+              "en": "Plank while alternating lifting each leg.",
+              "ar": "بلانك مع رفع كل رجل بالتناوب."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x10-15 each leg"
+          },
+          {
+            "level": 4,
+            "name": {
+              "en": "Plank with Arm Lift",
+              "ar": "بلانك مع رفع إيد"
+            },
+            "description": {
+              "en": "Plank while alternating extending each arm forward.",
+              "ar": "بلانك مع مد كل إيد لقدام بالتناوب."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x10-15 each arm"
+          },
+          {
+            "level": 5,
+            "name": {
+              "en": "Long Lever Plank",
+              "ar": "بلانك رافعة طويلة"
+            },
+            "description": {
+              "en": "Arms extended far forward instead of under shoulders. Much harder.",
+              "ar": "الذراعين ممدودة بعيد لقدام بدل تحت الكتف. أصعب بكتير."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x20-30 seconds"
+          },
+          {
+            "level": 6,
+            "name": {
+              "en": "RKC Plank",
+              "ar": "بلانك RKC"
+            },
+            "description": {
+              "en": "Maximum tension plank. Squeeze everything as hard as possible.",
+              "ar": "بلانك بأقصى توتر. اضغط كل حاجة بأقصى قوة ممكنة."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x10-15 seconds"
+          }
+        ]
+      },
+      "leg_raise_progressions": {
+        "title": {
+          "en": "Leg Raise Progressions (Anti-Extension/Hip Flexion)",
+          "ar": "تدرجات رفع الرجل (مقاومة التمديد/ثني الورك)"
+        },
+        "progressions": [
+          {
+            "level": 1,
+            "name": {
+              "en": "Dead Bug",
+              "ar": "الحشرة الميتة"
+            },
+            "description": {
+              "en": "On back, opposite arm and leg extend while keeping lower back pressed down.",
+              "ar": "على الظهر، الإيد والرجل المتقابلين يمتدوا مع الحفاظ على أسفل الظهر مضغوط."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x10-15 each side"
+          },
+          {
+            "level": 2,
+            "name": {
+              "en": "Lying Knee Raises",
+              "ar": "رفع ركبة نايم"
+            },
+            "description": {
+              "en": "Lie on back, bring knees to chest and lower.",
+              "ar": "نام على ظهرك، جيب الركب للصدر ونزّل."
+            },
+            "difficulty": "beginner",
+            "target_reps": "3x15-20"
+          },
+          {
+            "level": 3,
+            "name": {
+              "en": "Lying Leg Raises",
+              "ar": "رفع رجل نايم"
+            },
+            "description": {
+              "en": "Lie on back, legs straight, raise and lower.",
+              "ar": "نام على ظهرك، الرجل مستقيمة، ارفع ونزّل."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x12-15"
+          },
+          {
+            "level": 4,
+            "name": {
+              "en": "Hanging Knee Raises",
+              "ar": "رفع ركبة معلق"
+            },
+            "description": {
+              "en": "Hang from bar, bring knees up to chest.",
+              "ar": "اتعلق من البار، جيب الركب لفوق للصدر."
+            },
+            "difficulty": "intermediate",
+            "target_reps": "3x10-15"
+          },
+          {
+            "level": 5,
+            "name": {
+              "en": "Hanging Leg Raises",
+              "ar": "رفع رجل معلق"
+            },
+            "description": {
+              "en": "Hang from bar, raise straight legs to parallel.",
+              "ar": "اتعلق من البار، ارفع الرجل المستقيمة للموازي."
+            },
+            "difficulty": "intermediate-advanced",
+            "target_reps": "3x8-12"
+          },
+          {
+            "level": 6,
+            "name": {
+              "en": "Toes to Bar",
+              "ar": "الصوابع للبار"
+            },
+            "description": {
+              "en": "Raise straight legs all the way to touch bar.",
+              "ar": "ارفع الرجل المستقيمة بالكامل لحد ما تلمس البار."
+            },
+            "difficulty": "advanced",
+            "target_reps": "3x8-10"
+          }
+        ]
+      }
+    },
+    "sample_program": {
+      "title": {
+        "en": "Sample Bodyweight Program",
+        "ar": "برنامج وزن الجسم نموذجي"
+      },
+      "description": {
+        "en": "A 3-day full body program using appropriate progressions for your level.",
+        "ar": "برنامج 3 أيام جسم كامل باستخدام التدرجات المناسبة لمستواك."
+      },
+      "workout": {
+        "warmup": {
+          "en": "5 minutes dynamic stretching",
+          "ar": "5 دقايق إطالة ديناميكية"
+        },
+        "exercises": [
+          {
+            "movement": {
+              "en": "Squat Progression",
+              "ar": "تدرج السكوات"
+            },
+            "sets": "3",
+            "reps": "8-15"
+          },
+          {
+            "movement": {
+              "en": "Push Progression (horizontal)",
+              "ar": "تدرج الدفع (أفقي)"
+            },
+            "sets": "3",
+            "reps": "8-15"
+          },
+          {
+            "movement": {
+              "en": "Pull Progression (horizontal or vertical)",
+              "ar": "تدرج السحب (أفقي أو عمودي)"
+            },
+            "sets": "3",
+            "reps": "8-15"
+          },
+          {
+            "movement": {
+              "en": "Hinge Progression",
+              "ar": "تدرج الهينج"
+            },
+            "sets": "3",
+            "reps": "8-15"
+          },
+          {
+            "movement": {
+              "en": "Core Progression",
+              "ar": "تدرج الكور"
+            },
+            "sets": "3",
+            "reps": "appropriate"
+          }
+        ],
+        "cooldown": {
+          "en": "5 minutes static stretching",
+          "ar": "5 دقايق إطالة ثابتة"
+        }
+      },
+      "note": {
+        "en": "Choose the progression level that lets you do 8-15 reps with good form. When you can do 3x15, move to the next level.",
+        "ar": "اختار مستوى التدرج اللي يخليك تعمل 8-15 ريبس بفورم كويس. لما تقدر تعمل 3x15، انتقل للمستوى التالي."
+      }
+    }
+  }
+}
