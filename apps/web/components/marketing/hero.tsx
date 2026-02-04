@@ -1,261 +1,189 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Play, Star, Sparkles, Check, ChevronRight, Zap } from 'lucide-react';
+import { ArrowRight, Play, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Logo } from '@/components/ui/logo';
+import { useEffect, useState } from 'react';
 
-const stats = [
-  { value: '50K+', label: 'Active Users', suffix: '' },
-  { value: '1M+', label: 'Workouts Done', suffix: '' },
-  { value: '4.9', label: 'App Store Rating', suffix: '★' },
-];
-
-const trustedBy = [
-  'Gold\'s Gym Egypt',
-  'Fitness First',
-  'Smart Gym',
-  'Oxygen Gym',
-];
+const words = ['Transform', 'Strengthen', 'Energize', 'Evolve'];
 
 export function Hero() {
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      setTimeout(() => {
+        setWordIndex((prev) => (prev + 1) % words.length);
+        setIsVisible(true);
+      }, 300);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="relative min-h-[100vh] overflow-hidden">
-      {/* Animated Gradient Background */}
-      <div className="absolute inset-0 -z-10 bg-[#030712]">
-        {/* Mesh gradient */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(0,212,170,0.3),rgba(255,255,255,0))]" />
+    <section className="relative min-h-screen overflow-hidden bg-white dark:bg-black">
+      {/* Geometric Background Pattern */}
+      <div className="absolute inset-0 -z-10">
+        {/* Large gradient circle - top right */}
+        <div className="absolute -top-1/4 -right-1/4 h-[800px] w-[800px] rounded-full bg-gradient-to-br from-coral-200/40 to-coral-400/20 blur-3xl dark:from-coral-500/10 dark:to-coral-600/5" />
 
-        {/* Animated orbs */}
-        <div className="absolute top-1/4 left-1/4 h-[500px] w-[500px] rounded-full bg-forma-teal/20 blur-[128px] animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 h-[400px] w-[400px] rounded-full bg-purple-600/20 blur-[128px] animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/10 blur-[100px] animate-pulse" style={{ animationDelay: '2s' }} />
+        {/* Medium gradient circle - bottom left */}
+        <div className="absolute -bottom-1/4 -left-1/4 h-[600px] w-[600px] rounded-full bg-gradient-to-tr from-purple-200/30 to-purple-400/10 blur-3xl dark:from-purple-500/10 dark:to-purple-600/5" />
 
-        {/* Grid overlay */}
+        {/* Grid pattern */}
         <div
-          className="absolute inset-0 opacity-[0.02]"
+          className="absolute inset-0 opacity-[0.015] dark:opacity-[0.03]"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)`,
-            backgroundSize: '64px 64px',
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         />
-
-        {/* Noise texture */}
-        <div className="absolute inset-0 opacity-20 mix-blend-soft-light" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\'/%3E%3C/svg%3E")' }} />
       </div>
 
-      <div className="container relative z-10 flex min-h-[100vh] flex-col items-center justify-center py-20 text-center">
-        {/* Announcement Badge */}
-        <div className="mb-8 animate-fade-down">
-          <Link
-            href="#features"
-            className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm backdrop-blur-sm transition-all hover:border-forma-teal/50 hover:bg-white/10"
-          >
-            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-forma-teal text-[10px] font-bold text-black">
-              NEW
-            </span>
-            <span className="text-gray-300">AI Form Checker is now FREE</span>
-            <ChevronRight className="h-4 w-4 text-gray-500 transition-transform group-hover:translate-x-0.5" />
-          </Link>
-        </div>
+      <div className="container relative z-10">
+        <div className="flex min-h-screen flex-col items-center justify-center py-20">
+          {/* Floating Badge */}
+          <div className="mb-8 animate-fade-down">
+            <div className="inline-flex items-center gap-2 rounded-full border border-coral-200 bg-coral-50 px-4 py-2 text-sm font-medium text-coral-600 dark:border-coral-500/30 dark:bg-coral-500/10 dark:text-coral-400">
+              <Sparkles className="h-4 w-4" />
+              <span>50,000+ Active Members in Egypt</span>
+            </div>
+          </div>
 
-        {/* Main Headline */}
-        <h1 className="max-w-4xl animate-fade-up text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-          Your AI-Powered
-          <br />
-          <span className="relative">
-            <span className="bg-gradient-to-r from-forma-teal via-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-              Fitness Revolution
-            </span>
-            <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none">
-              <path d="M2 10C50 4 100 2 150 6C200 10 250 4 298 8" stroke="url(#underline-gradient)" strokeWidth="3" strokeLinecap="round"/>
-              <defs>
-                <linearGradient id="underline-gradient" x1="0" y1="0" x2="300" y2="0">
-                  <stop stopColor="#00D4AA" />
-                  <stop offset="1" stopColor="#00D4AA" stopOpacity="0" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
-        </h1>
-
-        {/* Subheadline */}
-        <p className="mx-auto mt-8 max-w-2xl animate-fade-up text-lg text-gray-400 sm:text-xl" style={{ animationDelay: '0.1s' }}>
-          Transform your fitness journey with personalized AI workouts, real-time form correction, and smart nutrition tracking. Built for the Middle East.
-        </p>
-
-        {/* Feature Pills */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-          {['Real-time Form AI', 'Arabic & English', 'Ramadan Mode', 'Offline Ready'].map((feature) => (
-            <div
-              key={feature}
-              className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300 backdrop-blur-sm"
+          {/* Main Headline with Animated Word */}
+          <h1 className="max-w-4xl text-center text-5xl font-black tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
+            <span
+              className={`inline-block bg-gradient-to-r from-coral-500 to-coral-600 bg-clip-text text-transparent transition-all duration-300 ${
+                isVisible ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+              }`}
             >
-              <Check className="h-4 w-4 text-forma-teal" />
-              {feature}
-            </div>
-          ))}
-        </div>
+              {words[wordIndex]}
+            </span>
+            <br />
+            <span className="text-foreground">Your Body</span>
+          </h1>
 
-        {/* CTA Buttons */}
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          <Button
-            size="lg"
-            className="group relative h-14 overflow-hidden rounded-full bg-forma-teal px-8 text-lg font-semibold text-black transition-all hover:bg-forma-teal/90 hover:shadow-[0_0_40px_rgba(0,212,170,0.4)]"
-            asChild
-          >
-            <Link href="/signup">
-              Start Free Today
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Link>
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="h-14 rounded-full border-white/20 bg-white/5 px-8 text-lg text-white backdrop-blur-sm hover:bg-white/10"
-            asChild
-          >
-            <Link href="#demo">
-              <Play className="mr-2 h-5 w-5" />
-              Watch Demo
-            </Link>
-          </Button>
-        </div>
+          {/* Subheadline */}
+          <p className="mt-8 max-w-2xl text-center text-lg text-muted-foreground sm:text-xl animate-fade-up">
+            The complete fitness platform built for you. Personalized workouts, nutrition tracking, and a community that keeps you going.
+          </p>
 
-        {/* Social Proof */}
-        <div className="mt-12 animate-fade-up" style={{ animationDelay: '0.25s' }}>
-          <p className="text-sm text-gray-500 mb-4">Trusted by leading gyms</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-50">
-            {trustedBy.map((name) => (
-              <span key={name} className="text-sm font-medium text-gray-400">{name}</span>
-            ))}
+          {/* CTA Buttons */}
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row animate-fade-up">
+            <Button
+              size="lg"
+              className="h-14 rounded-full bg-coral-500 px-8 text-lg font-semibold text-white shadow-lg shadow-coral-500/30 transition-all hover:bg-coral-600 hover:shadow-xl hover:shadow-coral-500/40"
+              asChild
+            >
+              <Link href="/signup">
+                Start Free
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="h-14 rounded-full px-8 text-lg"
+              asChild
+            >
+              <Link href="#how-it-works">
+                <Play className="mr-2 h-5 w-5" />
+                See How It Works
+              </Link>
+            </Button>
           </div>
-        </div>
 
-        {/* Stats */}
-        <div className="mt-16 grid w-full max-w-2xl grid-cols-3 gap-8 border-t border-white/10 pt-8 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-2xl font-bold text-white sm:text-3xl">
-                {stat.value}
-                <span className="text-forma-teal">{stat.suffix}</span>
+          {/* Social Proof Strip */}
+          <div className="mt-16 flex flex-wrap items-center justify-center gap-8 animate-fade-up">
+            {/* Rating */}
+            <div className="flex items-center gap-2">
+              <div className="flex">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <svg key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
               </div>
-              <p className="mt-1 text-sm text-gray-500">{stat.label}</p>
+              <span className="text-sm text-muted-foreground">4.9 rating</span>
             </div>
-          ))}
-        </div>
 
-        {/* App Preview */}
-        <div className="relative mt-20 w-full max-w-5xl animate-fade-up" style={{ animationDelay: '0.35s' }}>
-          {/* Glow effect */}
-          <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-forma-teal/20 via-purple-500/20 to-forma-teal/20 opacity-50 blur-3xl" />
+            <div className="h-8 w-px bg-border" />
 
-          {/* Preview container */}
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-1 backdrop-blur-xl">
-            <div className="rounded-xl bg-[#0a0f1a] p-6">
-              {/* Mock browser header */}
-              <div className="mb-4 flex items-center gap-2">
-                <div className="h-3 w-3 rounded-full bg-red-500/80" />
-                <div className="h-3 w-3 rounded-full bg-yellow-500/80" />
-                <div className="h-3 w-3 rounded-full bg-green-500/80" />
-                <div className="ml-4 flex-1 rounded-full bg-white/5 px-4 py-1.5 text-xs text-gray-500">
-                  forma.fitness/dashboard
-                </div>
+            {/* Users */}
+            <div className="flex items-center gap-3">
+              <div className="flex -space-x-2">
+                {[1, 2, 3, 4].map((i) => (
+                  <div
+                    key={i}
+                    className="h-8 w-8 rounded-full border-2 border-white bg-gradient-to-br from-coral-400 to-purple-400 dark:border-black"
+                  />
+                ))}
               </div>
+              <span className="text-sm text-muted-foreground">50K+ users</span>
+            </div>
 
-              {/* Dashboard preview */}
-              <div className="grid gap-4 sm:grid-cols-3">
-                {/* Today's workout card */}
-                <div className="sm:col-span-2 rounded-xl bg-gradient-to-br from-forma-teal/20 to-forma-teal/5 p-5 border border-forma-teal/20">
-                  <div className="flex items-center gap-2 text-forma-teal text-sm font-medium mb-3">
-                    <Zap className="h-4 w-4" />
-                    Today&apos;s Workout
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-2">Upper Body Power</h3>
-                  <p className="text-gray-400 text-sm mb-4">6 exercises • 45 min</p>
-                  <div className="flex gap-2">
-                    <span className="px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-xs">Chest</span>
-                    <span className="px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-xs">Back</span>
-                    <span className="px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs">Shoulders</span>
-                  </div>
-                </div>
+            <div className="h-8 w-px bg-border hidden sm:block" />
 
-                {/* Stats sidebar */}
-                <div className="space-y-4">
-                  <div className="rounded-xl bg-white/5 p-4 border border-white/10">
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="h-8 w-8 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center text-xs font-bold text-black">5</div>
-                      <div>
-                        <p className="text-white font-medium text-sm">Level 5</p>
-                        <p className="text-gray-500 text-xs">1,250 XP</p>
+            {/* Workouts */}
+            <div className="hidden sm:flex items-center gap-2">
+              <span className="text-2xl font-bold text-foreground">1M+</span>
+              <span className="text-sm text-muted-foreground">workouts done</span>
+            </div>
+          </div>
+
+          {/* App Preview */}
+          <div className="relative mt-20 w-full max-w-4xl animate-fade-up">
+            {/* Glow behind preview */}
+            <div className="absolute inset-0 -z-10 bg-gradient-to-t from-coral-500/20 to-transparent blur-3xl" />
+
+            {/* Phone mockup */}
+            <div className="relative mx-auto w-full max-w-sm">
+              <div className="rounded-[2.5rem] border-8 border-gray-900 bg-gray-900 p-2 shadow-2xl dark:border-gray-700">
+                <div className="overflow-hidden rounded-[2rem] bg-white dark:bg-gray-900">
+                  {/* Status bar */}
+                  <div className="flex items-center justify-between px-6 py-2 text-xs">
+                    <span className="font-medium">9:41</span>
+                    <div className="flex items-center gap-1">
+                      <div className="h-3 w-4 rounded-sm border border-current" />
+                    </div>
+                  </div>
+
+                  {/* App content preview */}
+                  <div className="px-4 pb-8 pt-4">
+                    <div className="mb-4">
+                      <p className="text-sm text-muted-foreground">Good morning</p>
+                      <h2 className="text-2xl font-bold">Ready to train?</h2>
+                    </div>
+
+                    {/* Today's workout card */}
+                    <div className="rounded-2xl bg-gradient-to-br from-coral-500 to-coral-600 p-4 text-white shadow-lg">
+                      <p className="text-sm opacity-80">Today&apos;s Workout</p>
+                      <h3 className="mt-1 text-xl font-bold">Upper Body Power</h3>
+                      <p className="mt-2 text-sm opacity-80">6 exercises • 45 min</p>
+                      <button className="mt-4 rounded-full bg-white/20 px-4 py-2 text-sm font-medium backdrop-blur-sm">
+                        Start Now →
+                      </button>
+                    </div>
+
+                    {/* Quick stats */}
+                    <div className="mt-4 grid grid-cols-2 gap-3">
+                      <div className="rounded-xl bg-muted/50 p-3">
+                        <p className="text-2xl font-bold">7</p>
+                        <p className="text-xs text-muted-foreground">Day Streak 🔥</p>
+                      </div>
+                      <div className="rounded-xl bg-muted/50 p-3">
+                        <p className="text-2xl font-bold">2,450</p>
+                        <p className="text-xs text-muted-foreground">Calories</p>
                       </div>
                     </div>
-                    <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                      <div className="h-full w-[83%] bg-gradient-to-r from-forma-teal to-emerald-400 rounded-full" />
-                    </div>
-                  </div>
-
-                  <div className="rounded-xl bg-gradient-to-r from-orange-500/20 to-red-500/20 p-4 border border-orange-500/20">
-                    <div className="flex items-center gap-3">
-                      <span className="text-2xl">🔥</span>
-                      <div>
-                        <p className="text-white font-bold text-xl">7 Days</p>
-                        <p className="text-orange-300 text-xs">Streak!</p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Floating elements */}
-          <div className="absolute -left-8 top-1/3 hidden animate-float lg:block" style={{ animationDelay: '0.5s' }}>
-            <div className="rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-4 shadow-2xl">
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center">
-                  <Sparkles className="h-5 w-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-white font-medium text-sm">AI Form Check</p>
-                  <p className="text-gray-400 text-xs">Perfect squat! 98%</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="absolute -right-8 bottom-1/3 hidden animate-float lg:block" style={{ animationDelay: '1s' }}>
-            <div className="rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 p-4 shadow-2xl">
-              <div className="flex items-center gap-3">
-                <div className="h-10 w-10 rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
-                  <Check className="h-5 w-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-white font-medium text-sm">Goal Achieved!</p>
-                  <p className="text-gray-400 text-xs">+50 XP earned</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Platforms */}
-        <div className="mt-16 text-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
-          <p className="text-sm text-gray-500 mb-4">Available on all platforms</p>
-          <div className="flex items-center justify-center gap-6">
-            {['iOS', 'Android', 'Web'].map((platform) => (
-              <div key={platform} className="flex items-center gap-2 text-gray-400">
-                <div className="h-2 w-2 rounded-full bg-forma-teal" />
-                <span className="text-sm">{platform}</span>
-              </div>
-            ))}
           </div>
         </div>
       </div>
-
-      {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 }

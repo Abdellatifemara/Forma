@@ -2,22 +2,22 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronRight, LayoutDashboard } from 'lucide-react';
+import { Menu, X, ChevronRight, LayoutDashboard, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/ui/logo';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '#features', label: 'Features' },
-  { href: '#pricing', label: 'Pricing' },
-  { href: '#trainers', label: 'For Trainers' },
-  { href: '/blog', label: 'Blog' },
+  { href: '#features', label: 'Features', labelAr: 'المميزات' },
+  { href: '#pricing', label: 'Pricing', labelAr: 'الأسعار' },
+  { href: '/blog', label: 'Blog', labelAr: 'المدونة' },
 ];
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [lang, setLang] = useState<'en' | 'ar'>('en');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,15 +29,34 @@ export function Navbar() {
     const hasToken = document.cookie.includes('forma-token');
     setIsLoggedIn(hasToken);
 
+    // Get saved language preference
+    const savedLang = localStorage.getItem('forma-lang') as 'en' | 'ar' | null;
+    if (savedLang) setLang(savedLang);
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const toggleLang = () => {
+    const newLang = lang === 'en' ? 'ar' : 'en';
+    setLang(newLang);
+    localStorage.setItem('forma-lang', newLang);
+    // Update document direction
+    document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
+  };
+
+  const t = {
+    login: lang === 'ar' ? 'دخول' : 'Log in',
+    getStarted: lang === 'ar' ? 'ابدأ مجاناً' : 'Get Started',
+    dashboard: lang === 'ar' ? 'لوحة التحكم' : 'Dashboard',
+    available: lang === 'ar' ? 'متوفر على iOS و Android و الويب' : 'Available on iOS, Android & Web',
+  };
 
   return (
     <header
       className={cn(
         'fixed top-0 z-50 w-full transition-all duration-300',
         scrolled
-          ? 'bg-background/80 backdrop-blur-xl border-b shadow-sm'
+          ? 'bg-background/90 backdrop-blur-xl border-b'
           : 'bg-transparent'
       )}
     >
@@ -52,30 +71,38 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground relative group"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              {link.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-forma-teal transition-all group-hover:w-full" />
+              {lang === 'ar' ? link.labelAr : link.label}
             </Link>
           ))}
         </div>
 
         <div className="hidden md:flex md:items-center md:gap-3">
+          {/* Language Toggle */}
+          <button
+            onClick={toggleLang}
+            className="flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-colors hover:bg-muted"
+          >
+            <Globe className="h-4 w-4" />
+            {lang === 'ar' ? 'EN' : 'عربي'}
+          </button>
+
           {isLoggedIn ? (
-            <Button className="btn-premium" asChild>
+            <Button className="rounded-full bg-coral-500 text-white hover:bg-coral-600" asChild>
               <Link href="/dashboard">
                 <LayoutDashboard className="mr-2 h-4 w-4" />
-                Go to Dashboard
+                {t.dashboard}
               </Link>
             </Button>
           ) : (
             <>
               <Button variant="ghost" className="font-medium" asChild>
-                <Link href="/login">Log in</Link>
+                <Link href="/login">{t.login}</Link>
               </Button>
-              <Button className="btn-premium" asChild>
+              <Button className="rounded-full bg-coral-500 text-white hover:bg-coral-600" asChild>
                 <Link href="/signup">
-                  Get Started
+                  {t.getStarted}
                   <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
               </Button>
@@ -83,28 +110,30 @@ export function Navbar() {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          type="button"
-          className={cn(
-            'relative z-10 inline-flex h-10 w-10 items-center justify-center rounded-xl transition-colors md:hidden',
-            scrolled ? 'bg-muted hover:bg-muted/80' : 'bg-white/10 hover:bg-white/20'
-          )}
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          <span className="sr-only">Open main menu</span>
-          {mobileMenuOpen ? (
-            <X className="h-5 w-5" />
-          ) : (
-            <Menu className="h-5 w-5" />
-          )}
-        </button>
+        {/* Mobile: Language + Menu */}
+        <div className="flex items-center gap-2 md:hidden">
+          <button
+            onClick={toggleLang}
+            className="flex h-10 w-10 items-center justify-center rounded-xl border text-sm font-medium transition-colors hover:bg-muted"
+          >
+            {lang === 'ar' ? 'EN' : 'ع'}
+          </button>
+
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl border transition-colors hover:bg-muted"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <span className="sr-only">Open main menu</span>
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile Menu */}
       <div
         className={cn(
-          'fixed inset-0 z-40 bg-background/95 backdrop-blur-xl transition-all duration-300 md:hidden',
+          'fixed inset-0 z-40 bg-background transition-all duration-300 md:hidden',
           mobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         )}
         style={{ top: '64px' }}
@@ -115,14 +144,10 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={cn(
-                  'flex items-center justify-between rounded-2xl px-4 py-4 text-lg font-medium transition-all hover:bg-muted',
-                  mobileMenuOpen && 'animate-fade-up'
-                )}
-                style={{ animationDelay: `${index * 0.05}s` }}
+                className="flex items-center justify-between rounded-xl px-4 py-4 text-lg font-medium transition-all hover:bg-muted"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                {link.label}
+                {lang === 'ar' ? link.labelAr : link.label}
                 <ChevronRight className="h-5 w-5 text-muted-foreground" />
               </Link>
             ))}
@@ -132,12 +157,12 @@ export function Navbar() {
             {isLoggedIn ? (
               <Button
                 size="lg"
-                className="btn-premium w-full justify-center rounded-xl h-12"
+                className="w-full rounded-xl h-12 bg-coral-500 text-white hover:bg-coral-600"
                 asChild
               >
                 <Link href="/dashboard">
                   <LayoutDashboard className="mr-2 h-4 w-4" />
-                  Go to Dashboard
+                  {t.dashboard}
                 </Link>
               </Button>
             ) : (
@@ -145,18 +170,18 @@ export function Navbar() {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full justify-center rounded-xl h-12"
+                  className="w-full rounded-xl h-12"
                   asChild
                 >
-                  <Link href="/login">Log in</Link>
+                  <Link href="/login">{t.login}</Link>
                 </Button>
                 <Button
                   size="lg"
-                  className="btn-premium w-full justify-center rounded-xl h-12"
+                  className="w-full rounded-xl h-12 bg-coral-500 text-white hover:bg-coral-600"
                   asChild
                 >
                   <Link href="/signup">
-                    Get Started Free
+                    {t.getStarted}
                     <ChevronRight className="ml-1 h-4 w-4" />
                   </Link>
                 </Button>
@@ -166,7 +191,7 @@ export function Navbar() {
 
           <div className="mt-8 pt-8 border-t">
             <p className="text-center text-sm text-muted-foreground">
-              Available on iOS, Android & Web
+              {t.available}
             </p>
           </div>
         </div>

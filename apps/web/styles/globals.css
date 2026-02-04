@@ -2,76 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================
+   FORMA - FRESH DESIGN SYSTEM
+   Premium Fitness Brand Identity
+   ============================================ */
+
 @layer base {
   :root {
+    /* Clean white background */
     --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 0 0% 9%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    /* Cards - subtle warm gray */
+    --card: 0 0% 99%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover-foreground: 0 0% 9%;
 
-    --primary: 162 100% 41%;
+    /* Primary - Vibrant Coral/Orange (energy, motivation) */
+    --primary: 18 100% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    /* Secondary - Deep Purple (premium) */
+    --secondary: 271 81% 56%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 271 81% 96%;
+    --accent-foreground: 271 81% 30%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 162 100% 41%;
+    --border: 0 0% 92%;
+    --input: 0 0% 92%;
+    --ring: 18 100% 60%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
-    /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, #00D4AA 0%, #00E5BE 50%, #00F5D4 100%);
-    --gradient-accent: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
-    --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #fcd34d 100%);
-    --gradient-fire: linear-gradient(135deg, #ef4444 0%, #f97316 50%, #fbbf24 100%);
-    --gradient-surface: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
+    /* Brand Colors */
+    --coral: 18 100% 60%;
+    --purple: 271 81% 56%;
+    --charcoal: 0 0% 15%;
   }
 
   .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
 
-    --card: 224 71% 6%;
-    --card-foreground: 213 31% 91%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 224 71% 6%;
-    --popover-foreground: 213 31% 91%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 162 100% 41%;
-    --primary-foreground: 224 71% 4%;
+    --primary: 18 100% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 28% 17%;
-    --secondary-foreground: 213 31% 91%;
+    --secondary: 271 81% 56%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 223 47% 11%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 55%;
 
-    --accent: 216 34% 17%;
-    --accent-foreground: 213 31% 91%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 95%;
 
     --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
-    --ring: 162 100% 41%;
-
-    --gradient-surface: linear-gradient(180deg, rgba(30,41,59,0.8) 0%, rgba(15,23,42,0.4) 100%);
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 18 100% 60%;
   }
 }
 
@@ -85,10 +90,21 @@
   }
 }
 
-/* Premium Scrollbar */
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -97,216 +113,35 @@
 
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--muted-foreground) / 0.2);
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground) / 0.4);
 }
 
-/* RTL Support */
-[dir="rtl"] {
-  text-align: right;
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 /* ============================================
-   PREMIUM DESIGN SYSTEM
+   ANIMATIONS
    ============================================ */
 
-/* Glassmorphism */
-.glass {
-  @apply bg-white/10 dark:bg-white/5 backdrop-blur-xl border border-white/20 dark:border-white/10;
-}
-
-.glass-card {
-  @apply bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-white/20 dark:border-slate-700/50 shadow-xl;
-}
-
-/* Gradient Text */
-.text-gradient {
-  @apply bg-clip-text text-transparent;
-  background-image: var(--gradient-primary);
-}
-
-.text-gradient-accent {
-  @apply bg-clip-text text-transparent;
-  background-image: var(--gradient-accent);
-}
-
-.text-gradient-gold {
-  @apply bg-clip-text text-transparent;
-  background-image: var(--gradient-gold);
-}
-
-.text-gradient-fire {
-  @apply bg-clip-text text-transparent;
-  background-image: var(--gradient-fire);
-}
-
-/* Gradient Backgrounds */
-.bg-gradient-primary {
-  background-image: var(--gradient-primary);
-}
-
-.bg-gradient-accent {
-  background-image: var(--gradient-accent);
-}
-
-.bg-gradient-gold {
-  background-image: var(--gradient-gold);
-}
-
-.bg-gradient-fire {
-  background-image: var(--gradient-fire);
-}
-
-/* Glow Effects */
-.glow-primary {
-  box-shadow: 0 0 30px rgba(0, 212, 170, 0.3), 0 0 60px rgba(0, 212, 170, 0.1);
-}
-
-.glow-accent {
-  box-shadow: 0 0 30px rgba(99, 102, 241, 0.3), 0 0 60px rgba(99, 102, 241, 0.1);
-}
-
-.glow-gold {
-  box-shadow: 0 0 30px rgba(245, 158, 11, 0.3), 0 0 60px rgba(245, 158, 11, 0.1);
-}
-
-/* Card Variants */
-.card-hover {
-  @apply transition-all duration-300 ease-out;
-}
-
-.card-hover:hover {
-  @apply -translate-y-1 shadow-2xl;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 30px rgba(0, 212, 170, 0.1);
-}
-
-.card-interactive {
-  @apply relative overflow-hidden transition-all duration-300;
-}
-
-.card-interactive::before {
-  content: '';
-  @apply absolute inset-0 opacity-0 transition-opacity duration-300;
-  background: linear-gradient(135deg, rgba(0, 212, 170, 0.1) 0%, transparent 50%);
-}
-
-.card-interactive:hover::before {
-  @apply opacity-100;
-}
-
-/* Bento Grid */
-.bento-grid {
-  @apply grid gap-4;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-}
-
-@media (min-width: 640px) {
-  .bento-grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-
-.bento-item {
-  @apply rounded-2xl p-4 transition-all duration-300;
-}
-
-.bento-item.span-2 {
-  grid-column: span 2;
-}
-
-.bento-item.span-3 {
-  grid-column: span 3;
-}
-
-.bento-item.span-4 {
-  grid-column: span 4;
-}
-
-.bento-item.row-2 {
-  grid-row: span 2;
-}
-
-/* Animated Gradient Border */
-.gradient-border {
-  @apply relative;
-}
-
-.gradient-border::before {
-  content: '';
-  @apply absolute -inset-[1px] rounded-[inherit] -z-10;
-  background: var(--gradient-primary);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.gradient-border:hover::before {
-  opacity: 1;
-}
-
-/* Progress Ring */
-.progress-ring {
-  transform: rotate(-90deg);
-}
-
-.progress-ring__circle {
-  transition: stroke-dashoffset 0.5s ease-out;
-  transform-origin: 50% 50%;
-}
-
-/* Streak Fire Animation */
-@keyframes fireFlicker {
-  0%, 100% { transform: scale(1) translateY(0); }
-  25% { transform: scale(1.05) translateY(-2px); }
-  50% { transform: scale(0.95) translateY(1px); }
-  75% { transform: scale(1.02) translateY(-1px); }
-}
-
-.fire-animation {
-  animation: fireFlicker 0.8s ease-in-out infinite;
-}
-
-/* XP Bar Shine */
-@keyframes xpShine {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(200%); }
-}
-
-.xp-bar-shine::after {
-  content: '';
-  @apply absolute inset-0 -z-10;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-  animation: xpShine 2s ease-in-out infinite;
-}
-
-/* Pulse Animation */
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(0, 212, 170, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 15px rgba(0, 212, 170, 0);
-  }
-}
-
-.pulse-glow {
-  animation: pulse-glow 2s infinite;
-}
-
-/* Float Animation */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.float {
-  animation: float 3s ease-in-out infinite;
-}
-
-/* Slide Up Animation */
-@keyframes slideUp {
+@keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -317,30 +152,26 @@
   }
 }
 
-.animate-slide-up {
-  animation: slideUp 0.5s ease-out forwards;
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.animate-slide-up-delay-1 {
-  animation: slideUp 0.5s ease-out 0.1s forwards;
-  opacity: 0;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.animate-slide-up-delay-2 {
-  animation: slideUp 0.5s ease-out 0.2s forwards;
-  opacity: 0;
-}
-
-.animate-slide-up-delay-3 {
-  animation: slideUp 0.5s ease-out 0.3s forwards;
-  opacity: 0;
-}
-
-/* Scale In Animation */
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
@@ -348,254 +179,191 @@
   }
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.animate-fade-down {
+  animation: fadeDown 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
 .animate-scale-in {
   animation: scaleIn 0.3s ease-out forwards;
 }
 
-/* Number Counter Animation */
-@keyframes countUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
 
-.count-up {
-  animation: countUp 0.5s ease-out forwards;
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
 }
 
-/* FAB Styles */
-.fab {
-  @apply fixed z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-2xl transition-all duration-300;
-  background-image: var(--gradient-primary);
+/* Animation delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* ============================================
+   COMPONENT STYLES
+   ============================================ */
+
+/* Primary Button */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-[hsl(var(--primary))] px-6 py-3 font-semibold text-white transition-all duration-200;
 }
 
-.fab:hover {
-  @apply scale-110;
-  box-shadow: 0 10px 40px rgba(0, 212, 170, 0.4);
+.btn-primary:hover {
+  @apply opacity-90 scale-[1.02];
+  box-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.5);
 }
 
-.fab:active {
-  @apply scale-95;
-}
-
-/* Quick Action Menu */
-.quick-action-menu {
-  @apply fixed z-40 flex flex-col gap-3;
-}
-
-.quick-action-item {
-  @apply flex items-center gap-3 rounded-full bg-card px-4 py-2 shadow-lg transition-all duration-300;
-}
-
-.quick-action-item:hover {
-  @apply translate-x-1;
-}
-
-/* Level Badge */
-.level-badge {
-  @apply relative inline-flex items-center justify-center rounded-full font-bold;
-  background-image: var(--gradient-gold);
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
-}
-
-/* Stat Card Premium */
-.stat-card-premium {
-  @apply relative overflow-hidden rounded-2xl p-4 transition-all duration-300;
-  background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--card) / 0.8) 100%);
-}
-
-.stat-card-premium::before {
-  content: '';
-  @apply absolute top-0 right-0 w-32 h-32 rounded-full opacity-10;
-  background: var(--gradient-primary);
-  transform: translate(30%, -30%);
-}
-
-/* Bottom Navigation Premium */
-.bottom-nav-premium {
-  @apply fixed bottom-0 left-0 right-0 z-50;
-  background: linear-gradient(180deg, transparent 0%, hsl(var(--background)) 20%);
-  padding-top: 20px;
-}
-
-.bottom-nav-inner {
-  @apply mx-auto flex max-w-md items-center justify-around rounded-t-3xl border-t border-x px-4 py-3;
-  background: hsl(var(--card) / 0.95);
-  backdrop-filter: blur(20px);
-}
-
-.nav-item {
-  @apply relative flex flex-col items-center gap-1 px-4 py-2 transition-all duration-300;
-}
-
-.nav-item.active {
-  @apply text-primary;
-}
-
-.nav-item.active::before {
-  content: '';
-  @apply absolute -top-3 h-1 w-8 rounded-full;
-  background-image: var(--gradient-primary);
-}
-
-/* Feature Discovery Card */
-.feature-card {
-  @apply relative overflow-hidden rounded-2xl border p-5 transition-all duration-300;
-  background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--muted) / 0.3) 100%);
-}
-
-.feature-card:hover {
-  @apply border-primary/50 shadow-xl;
-  transform: translateY(-4px);
-}
-
-.feature-card-icon {
-  @apply flex h-12 w-12 items-center justify-center rounded-xl text-2xl;
-}
-
-/* Hero Workout Card */
-.hero-workout-card {
-  @apply relative overflow-hidden rounded-3xl p-6;
-  background: linear-gradient(135deg, hsl(var(--primary) / 0.15) 0%, hsl(var(--primary) / 0.05) 100%);
-  border: 1px solid hsl(var(--primary) / 0.2);
-}
-
-.hero-workout-card::before {
-  content: '';
-  @apply absolute top-0 right-0 w-64 h-64 rounded-full opacity-20;
-  background: var(--gradient-primary);
-  transform: translate(30%, -30%);
-  filter: blur(40px);
-}
-
-/* Gamification Bar */
-.gamification-bar {
-  @apply flex items-center gap-4 rounded-2xl p-3;
-  background: linear-gradient(90deg, hsl(var(--card)) 0%, hsl(var(--muted) / 0.5) 100%);
-}
-
-/* Ramadan Mode Indicator */
-.ramadan-indicator {
-  @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium;
-  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
-  color: #fbbf24;
-}
-
-/* Achievement Badge */
-.achievement-badge {
-  @apply relative flex h-16 w-16 items-center justify-center rounded-2xl text-3xl;
-  background: linear-gradient(135deg, hsl(var(--muted)) 0%, hsl(var(--card)) 100%);
-}
-
-.achievement-badge.unlocked {
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-  box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
-}
-
-/* Streak Display */
-.streak-display {
-  @apply flex items-center gap-2 rounded-full px-4 py-2 font-bold;
-  background: linear-gradient(135deg, #ef4444 0%, #f97316 50%, #fbbf24 100%);
-  color: white;
-}
-
-/* Workout Muscle Tag */
-.muscle-tag {
-  @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium;
-}
-
-.muscle-tag.chest { @apply bg-red-500/20 text-red-400; }
-.muscle-tag.back { @apply bg-blue-500/20 text-blue-400; }
-.muscle-tag.shoulders { @apply bg-orange-500/20 text-orange-400; }
-.muscle-tag.arms { @apply bg-purple-500/20 text-purple-400; }
-.muscle-tag.legs { @apply bg-green-500/20 text-green-400; }
-.muscle-tag.core { @apply bg-yellow-500/20 text-yellow-400; }
-
-/* Input Premium */
-.input-premium {
-  @apply w-full rounded-xl border-2 border-transparent bg-muted/50 px-4 py-3 transition-all duration-300;
-}
-
-.input-premium:focus {
-  @apply border-primary bg-background outline-none;
-  box-shadow: 0 0 0 4px hsl(var(--primary) / 0.1);
-}
-
-/* Button Premium */
-.btn-premium {
-  @apply relative overflow-hidden rounded-xl px-6 py-3 font-semibold text-white transition-all duration-300;
-  background-image: var(--gradient-primary);
-}
-
-.btn-premium:hover {
-  @apply scale-[1.02] shadow-xl;
-  box-shadow: 0 10px 40px rgba(0, 212, 170, 0.3);
-}
-
-.btn-premium:active {
+.btn-primary:active {
   @apply scale-[0.98];
 }
 
-.btn-premium::before {
-  content: '';
-  @apply absolute inset-0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transform: translateX(-100%);
-  transition: transform 0.5s;
+/* Secondary Button */
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border-2 border-current px-6 py-3 font-semibold transition-all duration-200;
 }
 
-.btn-premium:hover::before {
-  transform: translateX(100%);
+.btn-secondary:hover {
+  @apply bg-foreground text-background;
 }
 
-/* Skeleton Loading */
-.skeleton {
-  @apply animate-pulse rounded-lg bg-muted;
+/* Card */
+.card-clean {
+  @apply rounded-2xl border border-border bg-card p-6 transition-all duration-200;
 }
 
-/* Empty State */
-.empty-state {
-  @apply flex flex-col items-center justify-center rounded-2xl border-2 border-dashed p-8 text-center;
+.card-clean:hover {
+  @apply border-border/80 shadow-lg;
 }
 
-/* Tab Premium */
-.tab-premium {
-  @apply relative px-4 py-2 font-medium transition-all duration-300;
+/* Card with hover lift */
+.card-lift {
+  @apply rounded-2xl border border-border bg-card p-6 transition-all duration-300;
 }
 
-.tab-premium.active {
-  @apply text-primary;
+.card-lift:hover {
+  @apply -translate-y-1 shadow-xl;
 }
 
-.tab-premium.active::after {
-  content: '';
-  @apply absolute bottom-0 left-1/2 h-0.5 w-8 -translate-x-1/2 rounded-full;
-  background-image: var(--gradient-primary);
+/* Stat Card */
+.stat-card {
+  @apply rounded-2xl bg-muted/50 p-5;
 }
 
-/* Responsive Utilities */
-@media (max-width: 640px) {
-  .mobile-full {
-    @apply w-full;
-  }
-
-  .mobile-stack {
-    @apply flex-col;
-  }
+/* Input */
+.input-clean {
+  @apply w-full rounded-xl border border-border bg-background px-4 py-3 text-foreground transition-all duration-200 placeholder:text-muted-foreground;
 }
 
-/* Safe Area for Mobile */
+.input-clean:focus {
+  @apply border-primary outline-none ring-2 ring-primary/20;
+}
+
+/* Badge */
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+}
+
+.badge-primary {
+  @apply bg-primary/10 text-primary;
+}
+
+.badge-secondary {
+  @apply bg-secondary/10 text-secondary;
+}
+
+.badge-muted {
+  @apply bg-muted text-muted-foreground;
+}
+
+/* Progress Bar */
+.progress-bar {
+  @apply h-2 w-full overflow-hidden rounded-full bg-muted;
+}
+
+.progress-bar-fill {
+  @apply h-full rounded-full bg-primary transition-all duration-500;
+}
+
+/* Avatar */
+.avatar {
+  @apply relative h-10 w-10 overflow-hidden rounded-full bg-muted;
+}
+
+.avatar img {
+  @apply h-full w-full object-cover;
+}
+
+/* ============================================
+   LAYOUT HELPERS
+   ============================================ */
+
+.section-padding {
+  @apply py-16 md:py-24 lg:py-32;
+}
+
+.container-tight {
+  @apply mx-auto max-w-4xl px-4;
+}
+
+.container-wide {
+  @apply mx-auto max-w-7xl px-4;
+}
+
+/* ============================================
+   SAFE AREAS (Mobile)
+   ============================================ */
+
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .safe-bottom {
     padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
   }
+
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
 }
 
-/* Hide scrollbar but keep functionality */
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+/* ============================================
+   FOCUS STATES
+   ============================================ */
+
+.focus-ring {
+  @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+/* ============================================
+   RTL SUPPORT
+   ============================================ */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
 }

@@ -3,33 +3,18 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import {
-  Flame,
-  Timer,
-  TrendingUp,
-  ChevronRight,
   Play,
   Dumbbell,
-  Target,
-  Loader2,
+  Flame,
+  TrendingUp,
   Plus,
-  Sparkles,
-  Zap,
-  Moon,
+  ChevronRight,
+  Apple,
   Trophy,
-  Users,
-  Heart,
-  Camera,
-  Mic,
-  Activity,
-  Calendar,
-  ArrowRight,
-  Star,
-  Utensils,
+  Target,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Progress } from '@/components/ui/progress';
-import { Badge } from '@/components/ui/badge';
 import {
   authApi,
   workoutsApi,
@@ -41,47 +26,7 @@ import {
   type WeeklySummary,
 } from '@/lib/api';
 
-// Feature cards for discovery
-const featureCards = [
-  {
-    icon: Sparkles,
-    title: 'What Now?',
-    titleAr: 'ماذا الآن؟',
-    description: 'Get personalized workout suggestions',
-    href: '/workouts?whatnow=true',
-    gradient: 'from-violet-500 to-purple-600',
-    badge: 'AI',
-  },
-  {
-    icon: Camera,
-    title: 'Form Check',
-    titleAr: 'تصحيح الحركة',
-    description: 'AI analyzes your exercise form',
-    href: '/workouts?formcheck=true',
-    gradient: 'from-blue-500 to-cyan-500',
-    badge: 'FREE',
-  },
-  {
-    icon: Mic,
-    title: 'Voice Coach',
-    titleAr: 'المدرب الصوتي',
-    description: 'Hands-free workout guidance',
-    href: '/workouts?voicecoach=true',
-    gradient: 'from-orange-500 to-red-500',
-    badge: 'FREE',
-  },
-  {
-    icon: Users,
-    title: 'Squads',
-    titleAr: 'الفرق',
-    description: 'Train with friends & compete',
-    href: '/squads',
-    gradient: 'from-green-500 to-emerald-500',
-    badge: 'NEW',
-  },
-];
-
-export default function AppDashboardPage() {
+export default function DashboardPage() {
   const [user, setUser] = useState<User | null>(null);
   const [todayWorkout, setTodayWorkout] = useState<Workout | null>(null);
   const [dailyNutrition, setDailyNutrition] = useState<DailyNutritionLog | null>(null);
@@ -113,239 +58,162 @@ export default function AppDashboardPage() {
     fetchData();
   }, []);
 
-  const currentHour = new Date().getHours();
-  const greeting =
-    currentHour < 12 ? 'Good morning' : currentHour < 18 ? 'Good afternoon' : 'Good evening';
-  const greetingAr =
-    currentHour < 12 ? 'صباح الخير' : currentHour < 18 ? 'مساء الخير' : 'مساء الخير';
-
-  const userName = user?.name || 'there';
+  const hour = new Date().getHours();
+  const greeting = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
 
   if (isLoading) {
     return (
       <div className="flex h-[60vh] items-center justify-center">
-        <div className="text-center">
-          <div className="relative">
-            <div className="h-16 w-16 rounded-full border-4 border-muted animate-pulse" />
-            <div className="absolute inset-0 h-16 w-16 rounded-full border-4 border-transparent border-t-forma-teal animate-spin" />
-          </div>
-          <p className="mt-4 text-muted-foreground">Loading your dashboard...</p>
-        </div>
+        <div className="h-8 w-8 animate-spin rounded-full border-4 border-muted border-t-coral-500" />
       </div>
     );
   }
 
   return (
-    <div className="space-y-6">
-      {/* Hero Greeting */}
-      <div className="animate-fade-up">
-        <h1 className="text-3xl font-bold">
-          {greeting}, <span className="text-gradient">{userName}</span>! 👋
-        </h1>
-        <p className="text-muted-foreground mt-1">Let&apos;s crush your goals today.</p>
+    <div className="space-y-6 pb-20">
+      {/* Header */}
+      <div>
+        <p className="text-muted-foreground">{greeting}</p>
+        <h1 className="text-2xl font-bold">{user?.name || 'there'}</h1>
       </div>
 
-      {/* Quick Stats Bento Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        <div className="stat-card-premium">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange-500/20">
-              <Flame className="h-5 w-5 text-orange-500" />
-            </div>
-            <span className="text-xs text-muted-foreground">kcal</span>
+      {/* Quick Stats */}
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="rounded-xl bg-muted/50 p-4">
+          <div className="flex items-center gap-2 text-coral-500">
+            <Flame className="h-5 w-5" />
+            <span className="text-2xl font-bold">{weeklyStats?.streakDays || 0}</span>
           </div>
-          <p className="text-2xl font-bold">{weeklyStats ? Math.round(weeklyStats.caloriesAvg) : '--'}</p>
-          <p className="text-xs text-muted-foreground">Avg Calories</p>
+          <p className="text-xs text-muted-foreground mt-1">Day Streak</p>
         </div>
 
-        <div className="stat-card-premium">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-green-500/20">
-              <Activity className="h-5 w-5 text-green-500" />
-            </div>
-            <span className="text-xs text-muted-foreground">kg</span>
+        <div className="rounded-xl bg-muted/50 p-4">
+          <div className="flex items-center gap-2 text-blue-500">
+            <Dumbbell className="h-5 w-5" />
+            <span className="text-2xl font-bold">{weeklyStats?.workoutsCompleted || 0}</span>
           </div>
-          <p className="text-2xl font-bold">{weeklyStats?.totalVolume || '--'}</p>
-          <p className="text-xs text-muted-foreground">Total Volume</p>
+          <p className="text-xs text-muted-foreground mt-1">Workouts This Week</p>
         </div>
 
-        <div className="stat-card-premium">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/20">
-              <Dumbbell className="h-5 w-5 text-blue-500" />
-            </div>
-            <span className="text-xs text-muted-foreground">this week</span>
+        <div className="rounded-xl bg-muted/50 p-4">
+          <div className="flex items-center gap-2 text-green-500">
+            <TrendingUp className="h-5 w-5" />
+            <span className="text-2xl font-bold">{weeklyStats?.totalVolume || 0}</span>
           </div>
-          <p className="text-2xl font-bold">{weeklyStats?.workoutsCompleted || 0}</p>
-          <p className="text-xs text-muted-foreground">Workouts</p>
+          <p className="text-xs text-muted-foreground mt-1">kg Lifted</p>
         </div>
 
-        <div className="stat-card-premium">
-          <div className="flex items-center justify-between mb-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-orange-500/20 to-red-500/20">
-              <span className="text-lg fire-animation">🔥</span>
-            </div>
-            <span className="text-xs text-muted-foreground">days</span>
+        <div className="rounded-xl bg-muted/50 p-4">
+          <div className="flex items-center gap-2 text-orange-500">
+            <Target className="h-5 w-5" />
+            <span className="text-2xl font-bold">{Math.round(weeklyStats?.caloriesAvg || 0)}</span>
           </div>
-          <p className="text-2xl font-bold">{weeklyStats?.streakDays || 0}</p>
-          <p className="text-xs text-muted-foreground">Streak</p>
+          <p className="text-xs text-muted-foreground mt-1">Avg Calories</p>
         </div>
       </div>
 
-      {/* Today's Workout - Hero Card */}
-      <div className="hero-workout-card animate-fade-up" style={{ animationDelay: '0.2s' }}>
-        <div className="relative z-10">
-          <Badge className="mb-3 bg-white/20 text-white border-0">
-            <Calendar className="h-3 w-3 mr-1" />
-            Today&apos;s Workout
-          </Badge>
-
+      {/* Today's Workout */}
+      <Card className="overflow-hidden border-0 bg-gradient-to-br from-coral-500 to-coral-600 text-white">
+        <CardContent className="p-6">
+          <p className="text-sm opacity-80">Today&apos;s Workout</p>
           {todayWorkout ? (
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div>
-                <h2 className="text-2xl font-bold">{todayWorkout.name}</h2>
-                <p className="text-muted-foreground mt-1">
-                  {todayWorkout.exercises?.length || 0} exercises • Day {todayWorkout.day}
-                </p>
-              </div>
-              <Button size="lg" className="btn-premium w-full sm:w-auto" asChild>
+            <>
+              <h2 className="text-xl font-bold mt-1">{todayWorkout.name}</h2>
+              <p className="text-sm opacity-80 mt-1">
+                {todayWorkout.exercises?.length || 0} exercises • Day {todayWorkout.day}
+              </p>
+              <Button
+                size="lg"
+                className="mt-4 bg-white text-coral-600 hover:bg-white/90"
+                asChild
+              >
                 <Link href={`/workouts/${todayWorkout.id}`}>
                   <Play className="mr-2 h-5 w-5" />
                   Start Workout
                 </Link>
               </Button>
-            </div>
+            </>
           ) : (
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div>
-                <h2 className="text-2xl font-bold">No workout scheduled</h2>
-                <p className="text-muted-foreground mt-1">
-                  Tap &quot;What Now?&quot; for AI suggestions or browse workouts
-                </p>
-              </div>
-              <div className="flex gap-2">
-                <Button variant="outline" className="flex-1 sm:flex-none" asChild>
-                  <Link href="/workouts">
-                    Browse Plans
-                  </Link>
-                </Button>
-                <Button className="btn-premium flex-1 sm:flex-none" asChild>
-                  <Link href="/workouts?whatnow=true">
-                    <Sparkles className="mr-2 h-4 w-4" />
-                    What Now?
-                  </Link>
-                </Button>
-              </div>
-            </div>
+            <>
+              <h2 className="text-xl font-bold mt-1">Rest Day</h2>
+              <p className="text-sm opacity-80 mt-1">No workout scheduled for today</p>
+              <Button
+                size="lg"
+                variant="secondary"
+                className="mt-4 bg-white/20 text-white hover:bg-white/30"
+                asChild
+              >
+                <Link href="/workouts">
+                  Browse Workouts
+                </Link>
+              </Button>
+            </>
           )}
-        </div>
-      </div>
+        </CardContent>
+      </Card>
 
-      {/* Feature Discovery Cards */}
-      <div className="animate-fade-up" style={{ animationDelay: '0.3s' }}>
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold">Powerful Features</h2>
-          <Link href="/settings" className="text-sm text-forma-teal hover:underline flex items-center gap-1">
-            All Features <ChevronRight className="h-4 w-4" />
-          </Link>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {featureCards.map((feature, index) => (
-            <Link
-              key={feature.title}
-              href={feature.href}
-              className="feature-card group"
-              style={{ animationDelay: `${0.3 + index * 0.05}s` }}
-            >
-              <div className="flex items-start justify-between mb-3">
-                <div className={`feature-card-icon bg-gradient-to-r ${feature.gradient}`}>
-                  <feature.icon className="h-6 w-6 text-white" />
-                </div>
-                <Badge variant="secondary" className="text-[10px]">{feature.badge}</Badge>
-              </div>
-              <h3 className="font-semibold text-sm group-hover:text-forma-teal transition-colors">
-                {feature.title}
-              </h3>
-              <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
-                {feature.description}
-              </p>
-            </Link>
-          ))}
-        </div>
-      </div>
-
-      <div className="grid gap-6 lg:grid-cols-2">
-        {/* Nutrition Summary */}
-        <Card className="glass-card overflow-hidden animate-fade-up" style={{ animationDelay: '0.4s' }}>
+      {/* Nutrition & Progress Row */}
+      <div className="grid gap-4 md:grid-cols-2">
+        {/* Nutrition Card */}
+        <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
-              <div className="h-8 w-8 rounded-lg bg-green-500/20 flex items-center justify-center">
-                <Utensils className="h-4 w-4 text-green-500" />
-              </div>
+              <Apple className="h-5 w-5 text-green-500" />
               Today&apos;s Nutrition
             </CardTitle>
-            <Button variant="ghost" size="sm" asChild>
-              <Link href="/nutrition" className="text-forma-teal">
-                View All
-                <ChevronRight className="ml-1 h-4 w-4" />
-              </Link>
-            </Button>
+            <Link href="/nutrition" className="text-sm text-coral-500 hover:underline">
+              View All
+            </Link>
           </CardHeader>
           <CardContent>
             {dailyNutrition ? (
-              <>
-                <div className="mb-4">
-                  <div className="flex items-center justify-between text-sm mb-2">
-                    <span className="font-medium">Calories</span>
+              <div className="space-y-4">
+                {/* Calories */}
+                <div>
+                  <div className="flex justify-between text-sm mb-1">
+                    <span>Calories</span>
                     <span className="text-muted-foreground">
                       {Math.round(dailyNutrition.totals.calories)} / {dailyNutrition.goals.calories}
                     </span>
                   </div>
-                  <div className="h-3 w-full overflow-hidden rounded-full bg-muted">
+                  <div className="h-2 bg-muted rounded-full overflow-hidden">
                     <div
-                      className="h-full rounded-full bg-gradient-primary transition-all duration-500"
+                      className="h-full bg-coral-500 rounded-full transition-all"
                       style={{ width: `${Math.min(100, (dailyNutrition.totals.calories / dailyNutrition.goals.calories) * 100)}%` }}
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4">
-                  {[
-                    { label: 'Protein', value: dailyNutrition.totals.protein, goal: dailyNutrition.goals.protein, color: 'bg-blue-500' },
-                    { label: 'Carbs', value: dailyNutrition.totals.carbs, goal: dailyNutrition.goals.carbs, color: 'bg-orange-500' },
-                    { label: 'Fat', value: dailyNutrition.totals.fat, goal: dailyNutrition.goals.fat, color: 'bg-yellow-500' },
-                  ].map((macro) => (
-                    <div key={macro.label} className="text-center">
-                      <div className="text-sm text-muted-foreground">{macro.label}</div>
-                      <div className="font-bold text-lg">{Math.round(macro.value)}g</div>
-                      <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted mt-1">
-                        <div
-                          className={`h-full rounded-full ${macro.color} transition-all duration-500`}
-                          style={{ width: `${Math.min(100, (macro.value / macro.goal) * 100)}%` }}
-                        />
-                      </div>
-                    </div>
-                  ))}
+                {/* Macros */}
+                <div className="grid grid-cols-3 gap-4 text-center">
+                  <div>
+                    <p className="text-lg font-bold">{Math.round(dailyNutrition.totals.protein)}g</p>
+                    <p className="text-xs text-muted-foreground">Protein</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold">{Math.round(dailyNutrition.totals.carbs)}g</p>
+                    <p className="text-xs text-muted-foreground">Carbs</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold">{Math.round(dailyNutrition.totals.fat)}g</p>
+                    <p className="text-xs text-muted-foreground">Fat</p>
+                  </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full mt-4" asChild>
+                <Button variant="outline" size="sm" className="w-full" asChild>
                   <Link href="/nutrition">
                     <Plus className="mr-2 h-4 w-4" />
-                    Log a meal
+                    Log Meal
                   </Link>
                 </Button>
-              </>
+              </div>
             ) : (
-              <div className="empty-state py-6">
-                <div className="h-12 w-12 rounded-full bg-muted flex items-center justify-center mb-3">
-                  <Utensils className="h-6 w-6 text-muted-foreground" />
-                </div>
-                <p className="text-sm font-medium">No meals logged today</p>
-                <p className="text-xs text-muted-foreground mt-1">Start tracking your nutrition</p>
-                <Button variant="outline" size="sm" className="mt-3" asChild>
+              <div className="text-center py-6">
+                <p className="text-muted-foreground text-sm mb-3">No meals logged today</p>
+                <Button variant="outline" size="sm" asChild>
                   <Link href="/nutrition">
                     <Plus className="mr-2 h-4 w-4" />
-                    Log a meal
+                    Log Your First Meal
                   </Link>
                 </Button>
               </div>
@@ -353,108 +221,122 @@ export default function AppDashboardPage() {
           </CardContent>
         </Card>
 
-        {/* Weekly Progress */}
-        <Card className="glass-card overflow-hidden animate-fade-up" style={{ animationDelay: '0.5s' }}>
+        {/* Weekly Goals Card */}
+        <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
-              <div className="h-8 w-8 rounded-lg bg-forma-teal/20 flex items-center justify-center">
-                <Target className="h-4 w-4 text-forma-teal" />
-              </div>
+              <Trophy className="h-5 w-5 text-yellow-500" />
               Weekly Goals
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {[
-                {
-                  label: 'Workouts',
-                  icon: Dumbbell,
-                  value: weeklyStats?.workoutsCompleted || 0,
-                  target: weeklyStats?.workoutsTarget || 4,
-                  color: 'text-forma-teal',
-                  bgColor: 'bg-forma-teal',
-                },
-                {
-                  label: 'Calorie Goal',
-                  icon: Flame,
-                  value: weeklyStats?.daysOnCalorieTarget || 0,
-                  target: 7,
-                  color: 'text-orange-500',
-                  bgColor: 'bg-orange-500',
-                },
-                {
-                  label: 'Nutrition Logged',
-                  icon: Utensils,
-                  value: weeklyStats?.daysWithMeals || 0,
-                  target: 7,
-                  color: 'text-green-500',
-                  bgColor: 'bg-green-500',
-                },
-              ].map((goal) => (
-                <div key={goal.label}>
-                  <div className="flex items-center justify-between text-sm mb-2">
-                    <span className="flex items-center gap-2">
-                      <goal.icon className={`h-4 w-4 ${goal.color}`} />
-                      <span className="font-medium">{goal.label}</span>
-                    </span>
-                    <span className="text-muted-foreground">
-                      {goal.value} / {goal.target}
-                    </span>
-                  </div>
-                  <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
-                    <div
-                      className={`h-full rounded-full ${goal.bgColor} transition-all duration-500`}
-                      style={{ width: `${Math.min(100, (goal.value / goal.target) * 100)}%` }}
-                    />
-                  </div>
+              {/* Workouts Goal */}
+              <div>
+                <div className="flex justify-between text-sm mb-1">
+                  <span>Workouts</span>
+                  <span className="text-muted-foreground">
+                    {weeklyStats?.workoutsCompleted || 0} / {weeklyStats?.workoutsTarget || 4}
+                  </span>
                 </div>
-              ))}
+                <div className="h-2 bg-muted rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-blue-500 rounded-full transition-all"
+                    style={{ width: `${Math.min(100, ((weeklyStats?.workoutsCompleted || 0) / (weeklyStats?.workoutsTarget || 4)) * 100)}%` }}
+                  />
+                </div>
+              </div>
+
+              {/* Calories Goal */}
+              <div>
+                <div className="flex justify-between text-sm mb-1">
+                  <span>Calorie Target Days</span>
+                  <span className="text-muted-foreground">
+                    {weeklyStats?.daysOnCalorieTarget || 0} / 7
+                  </span>
+                </div>
+                <div className="h-2 bg-muted rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-green-500 rounded-full transition-all"
+                    style={{ width: `${Math.min(100, ((weeklyStats?.daysOnCalorieTarget || 0) / 7) * 100)}%` }}
+                  />
+                </div>
+              </div>
+
+              {/* Meals Logged */}
+              <div>
+                <div className="flex justify-between text-sm mb-1">
+                  <span>Days with Meals</span>
+                  <span className="text-muted-foreground">
+                    {weeklyStats?.daysWithMeals || 0} / 7
+                  </span>
+                </div>
+                <div className="h-2 bg-muted rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-orange-500 rounded-full transition-all"
+                    style={{ width: `${Math.min(100, ((weeklyStats?.daysWithMeals || 0) / 7) * 100)}%` }}
+                  />
+                </div>
+              </div>
             </div>
           </CardContent>
         </Card>
       </div>
 
-      {/* Recent Achievements */}
-      <Card className="glass-card animate-fade-up" style={{ animationDelay: '0.6s' }}>
-        <CardHeader className="flex flex-row items-center justify-between pb-2">
-          <CardTitle className="text-base font-semibold flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-yellow-500/20 flex items-center justify-center">
-              <Trophy className="h-4 w-4 text-yellow-500" />
+      {/* Quick Actions */}
+      <div className="grid grid-cols-2 gap-3">
+        <Link
+          href="/workouts"
+          className="flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
+              <Dumbbell className="h-5 w-5 text-blue-500" />
             </div>
-            Achievements
-          </CardTitle>
-          <Button variant="ghost" size="sm" asChild>
-            <Link href="/achievements" className="text-forma-teal">
-              View All
-              <ChevronRight className="ml-1 h-4 w-4" />
-            </Link>
-          </Button>
-        </CardHeader>
-        <CardContent>
-          <div className="flex gap-4 overflow-x-auto no-scrollbar pb-2">
-            {[
-              { emoji: '🏆', name: 'First Workout', unlocked: true },
-              { emoji: '🔥', name: '7-Day Streak', unlocked: true },
-              { emoji: '💪', name: '10 Workouts', unlocked: false },
-              { emoji: '🎯', name: 'Goal Crusher', unlocked: false },
-              { emoji: '⚡', name: 'Speed Demon', unlocked: false },
-            ].map((achievement) => (
-              <div
-                key={achievement.name}
-                className={`flex flex-col items-center gap-2 min-w-[80px] ${!achievement.unlocked && 'opacity-40'}`}
-              >
-                <div className={`achievement-badge ${achievement.unlocked && 'unlocked'}`}>
-                  {achievement.emoji}
-                </div>
-                <span className="text-xs text-center font-medium">{achievement.name}</span>
-              </div>
-            ))}
+            <span className="font-medium">Workouts</span>
           </div>
-        </CardContent>
-      </Card>
+          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+        </Link>
 
-      {/* Bottom Padding for Mobile Nav */}
-      <div className="h-4 lg:hidden" />
+        <Link
+          href="/nutrition"
+          className="flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
+              <Apple className="h-5 w-5 text-green-500" />
+            </div>
+            <span className="font-medium">Nutrition</span>
+          </div>
+          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+        </Link>
+
+        <Link
+          href="/progress"
+          className="flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-500/10">
+              <TrendingUp className="h-5 w-5 text-purple-500" />
+            </div>
+            <span className="font-medium">Progress</span>
+          </div>
+          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+        </Link>
+
+        <Link
+          href="/squads"
+          className="flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+        >
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500/10">
+              <Trophy className="h-5 w-5 text-orange-500" />
+            </div>
+            <span className="font-medium">Squads</span>
+          </div>
+          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+        </Link>
+      </div>
     </div>
   );
 }
