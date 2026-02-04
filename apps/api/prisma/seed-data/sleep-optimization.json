@@ -1,0 +1,703 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15"
+  },
+  "introduction": {
+    "title": {
+      "en": "Sleep Optimization: The Most Underrated Fitness Tool",
+      "ar": "تحسين النوم: أكتر أداة لياقة مش واخدة حقها"
+    },
+    "importance": {
+      "en": "Sleep is when your muscles actually grow. You can train perfectly and eat right, but without quality sleep, you're leaving gains on the table.",
+      "ar": "النوم هو وقت نمو العضلات الفعلي. ممكن تتدرب بشكل مثالي وتاكل صح، بس من غير نوم جيد، بتسيب مكاسب على الترابيزة."
+    },
+    "keyStats": {
+      "en": [
+        "Growth hormone is released primarily during deep sleep",
+        "One night of poor sleep can reduce testosterone by 10-15%",
+        "Sleep deprivation increases injury risk by 1.7x",
+        "Muscle protein synthesis is highest during sleep"
+      ],
+      "ar": [
+        "هرمون النمو بيتفرز بشكل أساسي أثناء النوم العميق",
+        "ليلة واحدة من النوم السيء ممكن تقلل التستوستيرون بنسبة 10-15%",
+        "قلة النوم بتزود خطر الإصابة 1.7 مرة",
+        "تصنيع بروتين العضلات في أعلى مستوى أثناء النوم"
+      ]
+    }
+  },
+  "sleepNeeds": {
+    "title": {
+      "en": "How Much Sleep Do You Need?",
+      "ar": "قد إيه نوم محتاج؟"
+    },
+    "recommendations": [
+      {
+        "group": { "en": "Adults (18-64)", "ar": "البالغين (18-64)" },
+        "hours": "7-9 hours",
+        "note": { "en": "Athletes may need 8-10 hours", "ar": "الرياضيين ممكن يحتاجوا 8-10 ساعات" }
+      },
+      {
+        "group": { "en": "Teens (14-17)", "ar": "المراهقين (14-17)" },
+        "hours": "8-10 hours",
+        "note": { "en": "Critical for growth and development", "ar": "حاسم للنمو والتطور" }
+      },
+      {
+        "group": { "en": "Heavy Training Periods", "ar": "فترات التدريب الشديد" },
+        "hours": "8-10 hours",
+        "note": { "en": "More training = more recovery needed", "ar": "تدريب أكتر = استشفاء أكتر محتاج" }
+      }
+    ],
+    "qualityVsQuantity": {
+      "en": "6 hours of deep, uninterrupted sleep may be better than 8 hours of restless sleep. Quality matters as much as quantity.",
+      "ar": "6 ساعات من النوم العميق المتواصل ممكن تكون أحسن من 8 ساعات من النوم المضطرب. الجودة مهمة زي الكمية."
+    }
+  },
+  "sleepStages": {
+    "title": {
+      "en": "Understanding Sleep Stages",
+      "ar": "فهم مراحل النوم"
+    },
+    "stages": [
+      {
+        "stage": { "en": "Light Sleep (N1 & N2)", "ar": "نوم خفيف (N1 & N2)" },
+        "percentage": "50-60%",
+        "description": {
+          "en": "Transition stages. Body begins to relax. Easy to wake from.",
+          "ar": "مراحل انتقالية. الجسم بيبدأ يسترخي. سهل تصحى منه."
+        },
+        "fitnessRole": {
+          "en": "Memory consolidation begins",
+          "ar": "توطيد الذاكرة بيبدأ"
+        }
+      },
+      {
+        "stage": { "en": "Deep Sleep (N3)", "ar": "نوم عميق (N3)" },
+        "percentage": "15-25%",
+        "description": {
+          "en": "Hardest to wake from. Body is in full repair mode.",
+          "ar": "أصعب مرحلة تصحى منها. الجسم في وضع الإصلاح الكامل."
+        },
+        "fitnessRole": {
+          "en": "Growth hormone release peaks. Muscle repair and growth. Immune system strengthening.",
+          "ar": "إفراز هرمون النمو في الذروة. إصلاح ونمو العضلات. تقوية جهاز المناعة."
+        }
+      },
+      {
+        "stage": { "en": "REM Sleep", "ar": "نوم REM" },
+        "percentage": "20-25%",
+        "description": {
+          "en": "Dreaming stage. Brain is active, body is paralyzed.",
+          "ar": "مرحلة الأحلام. المخ نشيط، الجسم مشلول."
+        },
+        "fitnessRole": {
+          "en": "Mental recovery. Motor skill learning. Emotional processing.",
+          "ar": "استشفاء عقلي. تعلم المهارات الحركية. معالجة المشاعر."
+        }
+      }
+    ],
+    "cycles": {
+      "en": "Sleep occurs in 90-minute cycles. You need 4-6 complete cycles per night. Waking mid-cycle leaves you groggy.",
+      "ar": "النوم بيحصل في دورات 90 دقيقة. محتاج 4-6 دورات كاملة في الليلة. الصحيان في نص الدورة بيخليك مش صاحي."
+    }
+  },
+  "sleepHygiene": {
+    "title": {
+      "en": "Sleep Hygiene: Habits for Better Sleep",
+      "ar": "نظافة النوم: عادات لنوم أحسن"
+    },
+    "habits": [
+      {
+        "habit": {
+          "en": "Consistent Sleep Schedule",
+          "ar": "جدول نوم ثابت"
+        },
+        "why": {
+          "en": "Your body has a circadian rhythm. Irregular sleep times confuse it.",
+          "ar": "جسمك عنده إيقاع يومي. أوقات النوم الغير منتظمة بتلخبطه."
+        },
+        "howTo": {
+          "en": "Go to bed and wake up at the same time every day, even weekends. Within 30 minutes is fine.",
+          "ar": "نام واصحى في نفس الوقت كل يوم، حتى في ويك إند. في حدود 30 دقيقة كويس."
+        },
+        "priority": "critical"
+      },
+      {
+        "habit": {
+          "en": "Limit Blue Light Before Bed",
+          "ar": "قلل الضوء الأزرق قبل النوم"
+        },
+        "why": {
+          "en": "Blue light from screens suppresses melatonin production.",
+          "ar": "الضوء الأزرق من الشاشات بيمنع إنتاج الميلاتونين."
+        },
+        "howTo": {
+          "en": "No screens 1-2 hours before bed. Use night mode/blue light glasses if you must.",
+          "ar": "مفيش شاشات 1-2 ساعة قبل النوم. استخدم الوضع الليلي/نظارات الضوء الأزرق لو لازم."
+        },
+        "priority": "high"
+      },
+      {
+        "habit": {
+          "en": "Cool, Dark Room",
+          "ar": "غرفة باردة ومظلمة"
+        },
+        "why": {
+          "en": "Body temperature drops during sleep. Darkness triggers melatonin release.",
+          "ar": "درجة حرارة الجسم بتنزل أثناء النوم. الظلام بيحفز إفراز الميلاتونين."
+        },
+        "howTo": {
+          "en": "Keep room at 18-22°C. Use blackout curtains. No LED lights from devices.",
+          "ar": "خلي الغرفة على 18-22 درجة. استخدم ستائر معتمة. مفيش أضواء LED من الأجهزة."
+        },
+        "priority": "high"
+      },
+      {
+        "habit": {
+          "en": "Limit Caffeine",
+          "ar": "قلل الكافيين"
+        },
+        "why": {
+          "en": "Caffeine has a half-life of 5-6 hours. It blocks adenosine (sleepiness signal).",
+          "ar": "الكافيين عنده نص عمر 5-6 ساعات. بيمنع الأدينوسين (إشارة النعاس)."
+        },
+        "howTo": {
+          "en": "No caffeine after 2pm (or 6+ hours before bed). This includes pre-workout!",
+          "ar": "مفيش كافيين بعد 2 الظهر (أو 6+ ساعات قبل النوم). ده بيشمل البري ووركاوت!"
+        },
+        "priority": "high"
+      },
+      {
+        "habit": {
+          "en": "Avoid Large Meals Before Bed",
+          "ar": "تجنب الوجبات الكبيرة قبل النوم"
+        },
+        "why": {
+          "en": "Digestion requires energy and can cause discomfort when lying down.",
+          "ar": "الهضم محتاج طاقة وممكن يسبب عدم راحة لما تنام."
+        },
+        "howTo": {
+          "en": "Finish eating 2-3 hours before bed. Light snack (casein protein) is okay.",
+          "ar": "خلص الأكل 2-3 ساعات قبل النوم. سناك خفيف (كازين بروتين) كويس."
+        },
+        "priority": "medium"
+      },
+      {
+        "habit": {
+          "en": "Wind-Down Routine",
+          "ar": "روتين الاسترخاء"
+        },
+        "why": {
+          "en": "You can't go from 100% to sleep instantly. Your body needs transition time.",
+          "ar": "مش هتقدر تروح من 100% للنوم فوراً. جسمك محتاج وقت انتقالي."
+        },
+        "howTo": {
+          "en": "30-60 minutes of calm activities: reading, stretching, meditation, light music.",
+          "ar": "30-60 دقيقة من الأنشطة الهادية: قراءة، استريتش، تأمل، موسيقى هادية."
+        },
+        "priority": "medium"
+      },
+      {
+        "habit": {
+          "en": "Exercise (But Not Too Late)",
+          "ar": "تمرين (بس مش متأخر أوي)"
+        },
+        "why": {
+          "en": "Exercise improves sleep quality, but intense exercise before bed raises body temperature and adrenaline.",
+          "ar": "التمرين بيحسن جودة النوم، بس التمرين الشديد قبل النوم بيرفع حرارة الجسم والأدرينالين."
+        },
+        "howTo": {
+          "en": "Finish intense workouts 3+ hours before bed. Light stretching before bed is fine.",
+          "ar": "خلص التمارين الشديدة 3+ ساعات قبل النوم. الاستريتش الخفيف قبل النوم كويس."
+        },
+        "priority": "medium"
+      },
+      {
+        "habit": {
+          "en": "Limit Alcohol",
+          "ar": "قلل الكحول"
+        },
+        "why": {
+          "en": "Alcohol helps you fall asleep but destroys sleep quality. Reduces REM and deep sleep.",
+          "ar": "الكحول بيساعدك تنام بس بيدمر جودة النوم. بيقلل REM والنوم العميق."
+        },
+        "howTo": {
+          "en": "Avoid alcohol 3+ hours before bed. One drink is less harmful than several.",
+          "ar": "تجنب الكحول 3+ ساعات قبل النوم. مشروب واحد أقل ضرراً من كذا مشروب."
+        },
+        "priority": "medium"
+      }
+    ]
+  },
+  "sleepEnvironment": {
+    "title": {
+      "en": "Optimizing Your Sleep Environment",
+      "ar": "تحسين بيئة نومك"
+    },
+    "factors": [
+      {
+        "factor": {
+          "en": "Temperature",
+          "ar": "درجة الحرارة"
+        },
+        "optimal": "18-22°C (65-72°F)",
+        "tips": {
+          "en": [
+            "Use AC or fan in Egyptian summers",
+            "Sleep with minimal bedding in hot months",
+            "Take a warm shower before bed (body cools down after)"
+          ],
+          "ar": [
+            "استخدم تكييف أو مروحة في صيف مصر",
+            "نام بأغطية قليلة في الشهور الحارة",
+            "خد دش دافي قبل النوم (الجسم بيبرد بعده)"
+          ]
+        }
+      },
+      {
+        "factor": {
+          "en": "Darkness",
+          "ar": "الظلام"
+        },
+        "optimal": "Complete darkness",
+        "tips": {
+          "en": [
+            "Blackout curtains block street lights",
+            "Cover LED lights on devices",
+            "Use a sleep mask if needed",
+            "No phone/TV light in room"
+          ],
+          "ar": [
+            "ستائر معتمة بتمنع أنوار الشارع",
+            "غطي أضواء LED على الأجهزة",
+            "استخدم ماسك نوم لو محتاج",
+            "مفيش ضوء موبايل/تلفزيون في الغرفة"
+          ]
+        }
+      },
+      {
+        "factor": {
+          "en": "Noise",
+          "ar": "الضوضاء"
+        },
+        "optimal": "Quiet or consistent white noise",
+        "tips": {
+          "en": [
+            "Use earplugs if noisy environment",
+            "White noise machine or fan can mask sudden sounds",
+            "Keep phone on silent/do not disturb"
+          ],
+          "ar": [
+            "استخدم سدادات ودان لو البيئة دوشة",
+            "ماكينة ضوضاء بيضا أو مروحة ممكن تغطي الأصوات المفاجئة",
+            "خلي الموبايل على صامت/عدم الإزعاج"
+          ]
+        }
+      },
+      {
+        "factor": {
+          "en": "Mattress & Pillow",
+          "ar": "المرتبة والمخدة"
+        },
+        "optimal": "Supportive, comfortable, personal preference",
+        "tips": {
+          "en": [
+            "Replace mattress every 7-10 years",
+            "Pillow should support neck alignment",
+            "Invest in quality - you spend 1/3 of life in bed"
+          ],
+          "ar": [
+            "غير المرتبة كل 7-10 سنين",
+            "المخدة لازم تدعم محاذاة الرقبة",
+            "استثمر في الجودة - بتقضي ثلث حياتك في السرير"
+          ]
+        }
+      },
+      {
+        "factor": {
+          "en": "Air Quality",
+          "ar": "جودة الهواء"
+        },
+        "optimal": "Fresh, clean air",
+        "tips": {
+          "en": [
+            "Open window briefly before bed if air quality allows",
+            "Consider air purifier in polluted areas",
+            "Keep room clean and dust-free"
+          ],
+          "ar": [
+            "افتح الشباك شوية قبل النوم لو جودة الهواء بتسمح",
+            "فكر في منقي هواء في المناطق الملوثة",
+            "خلي الغرفة نضيفة ومن غير غبار"
+          ]
+        }
+      }
+    ]
+  },
+  "sleepSupplements": {
+    "title": {
+      "en": "Supplements That May Help Sleep",
+      "ar": "مكملات ممكن تساعد في النوم"
+    },
+    "disclaimer": {
+      "en": "Fix sleep habits first. Supplements are a last resort, not a first solution.",
+      "ar": "صلح عادات النوم الأول. المكملات آخر حل، مش أول حل."
+    },
+    "supplements": [
+      {
+        "name": { "en": "Magnesium (Glycinate)", "ar": "ماغنسيوم (جليسينات)" },
+        "dosage": "200-400mg",
+        "timing": { "en": "1-2 hours before bed", "ar": "1-2 ساعة قبل النوم" },
+        "howItWorks": {
+          "en": "Promotes relaxation, helps GABA activity, many people are deficient",
+          "ar": "بيعزز الاسترخاء، بيساعد نشاط GABA، كتير من الناس ناقصين"
+        },
+        "evidence": "Strong",
+        "notes": {
+          "en": "Glycinate form is best for sleep. Citrate may cause loose stools.",
+          "ar": "شكل الجليسينات أحسن للنوم. السيترات ممكن يسبب إسهال."
+        }
+      },
+      {
+        "name": { "en": "Melatonin", "ar": "ميلاتونين" },
+        "dosage": "0.5-3mg (start low)",
+        "timing": { "en": "30-60 min before bed", "ar": "30-60 دقيقة قبل النوم" },
+        "howItWorks": {
+          "en": "Signals to body it's time to sleep. Best for jet lag or shifting schedule.",
+          "ar": "بيبعت إشارة للجسم إن وقت النوم جه. أحسن للجيت لاج أو تغيير الجدول."
+        },
+        "evidence": "Strong for sleep onset",
+        "notes": {
+          "en": "Don't use long-term. Higher doses aren't better. Can cause grogginess.",
+          "ar": "متستخدمهوش على المدى الطويل. الجرعات الأعلى مش أحسن. ممكن يسبب خمول."
+        }
+      },
+      {
+        "name": { "en": "Glycine", "ar": "جلايسين" },
+        "dosage": "3g",
+        "timing": { "en": "1 hour before bed", "ar": "ساعة قبل النوم" },
+        "howItWorks": {
+          "en": "Lowers core body temperature, promotes calmness",
+          "ar": "بينزل درجة حرارة الجسم الأساسية، بيعزز الهدوء"
+        },
+        "evidence": "Moderate",
+        "notes": {
+          "en": "Safe amino acid. Can be taken long-term.",
+          "ar": "حمض أميني آمن. ممكن يتاخد على المدى الطويل."
+        }
+      },
+      {
+        "name": { "en": "L-Theanine", "ar": "إل-ثيانين" },
+        "dosage": "100-200mg",
+        "timing": { "en": "30-60 min before bed", "ar": "30-60 دقيقة قبل النوم" },
+        "howItWorks": {
+          "en": "Promotes relaxation without sedation. Found naturally in tea.",
+          "ar": "بيعزز الاسترخاء من غير تخدير. موجود طبيعياً في الشاي."
+        },
+        "evidence": "Moderate",
+        "notes": {
+          "en": "Works well combined with magnesium. Very safe.",
+          "ar": "بيشتغل كويس مع الماغنسيوم. آمن جداً."
+        }
+      },
+      {
+        "name": { "en": "Zinc", "ar": "زنك" },
+        "dosage": "15-30mg",
+        "timing": { "en": "With dinner or before bed", "ar": "مع العشا أو قبل النوم" },
+        "howItWorks": {
+          "en": "Supports testosterone and sleep quality. Often depleted in athletes.",
+          "ar": "بيدعم التستوستيرون وجودة النوم. غالباً ناقص في الرياضيين."
+        },
+        "evidence": "Moderate",
+        "notes": {
+          "en": "Don't take on empty stomach (nausea). Don't exceed 40mg daily.",
+          "ar": "متاخدوش على معدة فاضية (غثيان). متتجاوزش 40 مجم يومياً."
+        }
+      },
+      {
+        "name": { "en": "Ashwagandha", "ar": "أشواغاندا" },
+        "dosage": "300-600mg",
+        "timing": { "en": "Evening or before bed", "ar": "المسا أو قبل النوم" },
+        "howItWorks": {
+          "en": "Adaptogen that reduces cortisol and stress",
+          "ar": "أدابتوجين بيقلل الكورتيزول والتوتر"
+        },
+        "evidence": "Moderate",
+        "notes": {
+          "en": "KSM-66 or Sensoril extracts are best studied.",
+          "ar": "مستخلصات KSM-66 أو Sensoril الأكثر دراسة."
+        }
+      }
+    ],
+    "stackSuggestion": {
+      "title": {
+        "en": "Simple Sleep Stack",
+        "ar": "مجموعة نوم بسيطة"
+      },
+      "stack": {
+        "en": "Magnesium Glycinate (300mg) + L-Theanine (200mg) taken 1 hour before bed",
+        "ar": "ماغنسيوم جليسينات (300 مجم) + إل-ثيانين (200 مجم) تؤخذ ساعة قبل النوم"
+      }
+    }
+  },
+  "troubleshooting": {
+    "title": {
+      "en": "Sleep Problems and Solutions",
+      "ar": "مشاكل النوم وحلولها"
+    },
+    "problems": [
+      {
+        "problem": {
+          "en": "Can't Fall Asleep (Racing Mind)",
+          "ar": "مش قادر أنام (عقل سايح)"
+        },
+        "solutions": {
+          "en": [
+            "Write down tomorrow's to-do list before bed (brain dump)",
+            "Practice deep breathing: 4 seconds in, 7 hold, 8 out",
+            "Progressive muscle relaxation",
+            "No screens 1 hour before bed",
+            "Keep room cool and dark"
+          ],
+          "ar": [
+            "اكتب قائمة مهام بكرة قبل النوم (تفريغ المخ)",
+            "مارس التنفس العميق: 4 ثواني شهيق، 7 حبس، 8 زفير",
+            "استرخاء عضلي تدريجي",
+            "مفيش شاشات ساعة قبل النوم",
+            "خلي الغرفة باردة ومظلمة"
+          ]
+        }
+      },
+      {
+        "problem": {
+          "en": "Waking Up in Middle of Night",
+          "ar": "الصحيان في نص الليل"
+        },
+        "solutions": {
+          "en": [
+            "Avoid alcohol and large meals before bed",
+            "Limit fluids 2 hours before bed",
+            "Check room temperature (too hot?)",
+            "Magnesium may help",
+            "Don't check phone if you wake"
+          ],
+          "ar": [
+            "تجنب الكحول والوجبات الكبيرة قبل النوم",
+            "قلل السوائل ساعتين قبل النوم",
+            "اتأكد من درجة حرارة الغرفة (حر أوي؟)",
+            "الماغنسيوم ممكن يساعد",
+            "متبصش على الموبايل لو صحيت"
+          ]
+        }
+      },
+      {
+        "problem": {
+          "en": "Waking Up Tired",
+          "ar": "الصحيان تعبان"
+        },
+        "solutions": {
+          "en": [
+            "You may be waking mid-cycle. Try sleeping 7.5 or 9 hours (full cycles)",
+            "Get morning sunlight immediately upon waking",
+            "Check for sleep apnea if you snore",
+            "Ensure enough deep sleep (track with app or watch)"
+          ],
+          "ar": [
+            "ممكن تكون بتصحى في نص دورة. جرب تنام 7.5 أو 9 ساعات (دورات كاملة)",
+            "خد شمس الصبح فوراً لما تصحى",
+            "اتأكد من انقطاع التنفس أثناء النوم لو بتشخر",
+            "اتأكد من نوم عميق كافي (تتبع بتطبيق أو ساعة)"
+          ]
+        }
+      },
+      {
+        "problem": {
+          "en": "Can't Sleep After Late Workout",
+          "ar": "مش قادر أنام بعد تمرين متأخر"
+        },
+        "solutions": {
+          "en": [
+            "Try to finish intense exercise 3+ hours before bed",
+            "Cold shower after workout helps lower body temperature",
+            "Avoid pre-workout supplements after 4pm",
+            "Light stretching/yoga instead of intense cardio"
+          ],
+          "ar": [
+            "حاول تخلص التمرين الشديد 3+ ساعات قبل النوم",
+            "دش بارد بعد التمرين بيساعد ينزل حرارة الجسم",
+            "تجنب مكملات البري ووركاوت بعد 4 العصر",
+            "استريتش خفيف/يوجا بدل كارديو شديد"
+          ]
+        }
+      },
+      {
+        "problem": {
+          "en": "Night Shift or Irregular Schedule",
+          "ar": "شيفت ليلي أو جدول غير منتظم"
+        },
+        "solutions": {
+          "en": [
+            "Keep sleep schedule as consistent as possible",
+            "Use blackout curtains for daytime sleep",
+            "Melatonin can help reset rhythm",
+            "Avoid rotating shifts if possible"
+          ],
+          "ar": [
+            "خلي جدول النوم ثابت قد ما تقدر",
+            "استخدم ستائر معتمة للنوم بالنهار",
+            "الميلاتونين ممكن يساعد يعيد الإيقاع",
+            "تجنب الشيفتات المتغيرة لو ممكن"
+          ]
+        }
+      }
+    ]
+  },
+  "trackingSleep": {
+    "title": {
+      "en": "Tracking Your Sleep",
+      "ar": "تتبع نومك"
+    },
+    "methods": [
+      {
+        "method": { "en": "Sleep Diary", "ar": "مفكرة النوم" },
+        "cost": { "en": "Free", "ar": "مجاني" },
+        "howTo": {
+          "en": "Record: bedtime, wake time, times woken, subjective quality (1-10)",
+          "ar": "سجل: وقت النوم، وقت الصحيان، عدد مرات الصحيان، الجودة الذاتية (1-10)"
+        },
+        "pros": { "en": "Simple, no tech needed", "ar": "بسيط، مش محتاج تكنولوجيا" },
+        "cons": { "en": "Subjective, no sleep stage data", "ar": "ذاتي، مفيش بيانات مراحل النوم" }
+      },
+      {
+        "method": { "en": "Smartphone Apps", "ar": "تطبيقات الموبايل" },
+        "cost": { "en": "Free - 50 EGP/month", "ar": "مجاني - 50 جنيه/شهر" },
+        "howTo": {
+          "en": "Apps like Sleep Cycle use phone movement/sound to estimate sleep stages",
+          "ar": "تطبيقات زي Sleep Cycle بتستخدم حركة/صوت الموبايل لتقدير مراحل النوم"
+        },
+        "pros": { "en": "Easy, smart alarm features", "ar": "سهل، مميزات منبه ذكي" },
+        "cons": { "en": "Less accurate than wearables", "ar": "أقل دقة من الأجهزة القابلة للارتداء" }
+      },
+      {
+        "method": { "en": "Fitness Watches/Bands", "ar": "ساعات/أساور اللياقة" },
+        "cost": { "en": "500-3000 EGP", "ar": "500-3000 جنيه" },
+        "howTo": {
+          "en": "Devices like Fitbit, Garmin, Apple Watch track heart rate and movement",
+          "ar": "أجهزة زي فيتبت، جارمن، أبل واتش بتتبع نبض القلب والحركة"
+        },
+        "pros": { "en": "Heart rate data, sleep stages estimate, automatic tracking", "ar": "بيانات نبض القلب، تقدير مراحل النوم، تتبع تلقائي" },
+        "cons": { "en": "Still estimates, not medical grade", "ar": "برضو تقديرات، مش درجة طبية" }
+      },
+      {
+        "method": { "en": "Oura Ring / WHOOP", "ar": "خاتم أورا / WHOOP" },
+        "cost": { "en": "4000+ EGP", "ar": "4000+ جنيه" },
+        "howTo": {
+          "en": "Premium wearables with detailed sleep and recovery metrics",
+          "ar": "أجهزة قابلة للارتداء فاخرة مع مقاييس نوم واستشفاء مفصلة"
+        },
+        "pros": { "en": "Most detailed consumer data, readiness scores", "ar": "بيانات المستهلك الأكثر تفصيلاً، درجات الجاهزية" },
+        "cons": { "en": "Expensive, may cause obsession", "ar": "غالي، ممكن يسبب هوس" }
+      }
+    ],
+    "whatToTrack": {
+      "en": [
+        "Total sleep time",
+        "Time to fall asleep",
+        "Number of wake-ups",
+        "Deep sleep percentage",
+        "REM sleep percentage",
+        "How you feel next day"
+      ],
+      "ar": [
+        "إجمالي وقت النوم",
+        "وقت الدخول في النوم",
+        "عدد مرات الصحيان",
+        "نسبة النوم العميق",
+        "نسبة نوم REM",
+        "إحساسك في اليوم التالي"
+      ]
+    }
+  },
+  "napping": {
+    "title": {
+      "en": "Napping for Athletes",
+      "ar": "القيلولة للرياضيين"
+    },
+    "benefits": {
+      "en": "Strategic napping can boost recovery, alertness, and performance. Many elite athletes nap regularly.",
+      "ar": "القيلولة الاستراتيجية ممكن تعزز الاستشفاء واليقظة والأداء. كتير من الرياضيين النخبة بيناموا قيلولة بانتظام."
+    },
+    "guidelines": [
+      {
+        "rule": {
+          "en": "Keep naps short",
+          "ar": "خلي القيلولات قصيرة"
+        },
+        "details": {
+          "en": "20-30 minutes max. Longer naps enter deep sleep and cause grogginess.",
+          "ar": "20-30 دقيقة ماكس. القيلولات الأطول بتدخل نوم عميق وبتسبب خمول."
+        }
+      },
+      {
+        "rule": {
+          "en": "Nap before 3pm",
+          "ar": "القيلولة قبل 3 العصر"
+        },
+        "details": {
+          "en": "Later naps can interfere with nighttime sleep.",
+          "ar": "القيلولات المتأخرة ممكن تأثر على نوم الليل."
+        }
+      },
+      {
+        "rule": {
+          "en": "Coffee nap trick",
+          "ar": "خدعة قيلولة القهوة"
+        },
+        "details": {
+          "en": "Drink coffee, then immediately nap for 20 min. Caffeine kicks in as you wake.",
+          "ar": "اشرب قهوة، وبعدين نام قيلولة فوراً لمدة 20 دقيقة. الكافيين بيشتغل لما تصحى."
+        }
+      },
+      {
+        "rule": {
+          "en": "Post-workout nap",
+          "ar": "قيلولة بعد التمرين"
+        },
+        "details": {
+          "en": "A short nap after training can enhance recovery and growth hormone release.",
+          "ar": "قيلولة قصيرة بعد التدريب ممكن تعزز الاستشفاء وإفراز هرمون النمو."
+        }
+      }
+    ]
+  },
+  "summary": {
+    "title": {
+      "en": "Sleep Optimization Checklist",
+      "ar": "قائمة تحقق تحسين النوم"
+    },
+    "checklist": {
+      "en": [
+        "Consistent bed/wake time (even weekends)",
+        "No caffeine after 2pm",
+        "No screens 1 hour before bed",
+        "Room: cool (18-22°C), dark, quiet",
+        "No large meals 2-3 hours before bed",
+        "Wind-down routine before sleep",
+        "7-9 hours of sleep opportunity",
+        "Morning sunlight within 30 min of waking"
+      ],
+      "ar": [
+        "وقت نوم/صحيان ثابت (حتى ويك إند)",
+        "مفيش كافيين بعد 2 الظهر",
+        "مفيش شاشات ساعة قبل النوم",
+        "الغرفة: باردة (18-22 درجة)، مظلمة، هادية",
+        "مفيش وجبات كبيرة 2-3 ساعات قبل النوم",
+        "روتين استرخاء قبل النوم",
+        "7-9 ساعات فرصة نوم",
+        "شمس الصبح خلال 30 دقيقة من الصحيان"
+      ]
+    }
+  }
+}

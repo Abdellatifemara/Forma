@@ -1,0 +1,595 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "languages": ["en", "ar"],
+    "lastUpdated": "2025-01-15",
+    "note": {
+      "en": "These are general guidelines. Individual variation is normal. Use as motivation, not judgment.",
+      "ar": "دي إرشادات عامة. الاختلاف الفردي طبيعي. استخدمها للتحفيز، مش للحكم."
+    }
+  },
+  "introduction": {
+    "title": {
+      "en": "Strength Standards: Where Do You Stand?",
+      "ar": "معايير القوة: إنت فين؟"
+    },
+    "description": {
+      "en": "Strength standards help you understand where you are in your lifting journey and set realistic goals. These are based on one-rep max (1RM) relative to bodyweight.",
+      "ar": "معايير القوة بتساعدك تفهم إنت فين في رحلة الرفع وتحط أهداف واقعية. دي مبنية على الماكس لتكرار واحد (1RM) بالنسبة لوزن الجسم."
+    },
+    "levels": [
+      {
+        "level": { "en": "Beginner", "ar": "مبتدئ" },
+        "description": {
+          "en": "Less than 1 year of consistent training. Still learning form.",
+          "ar": "أقل من سنة تدريب مستمر. لسه بتتعلم الفورم."
+        }
+      },
+      {
+        "level": { "en": "Novice", "ar": "مستجد" },
+        "description": {
+          "en": "1-2 years of training. Solid form, consistent progress.",
+          "ar": "1-2 سنة تدريب. فورم صلب، تقدم مستمر."
+        }
+      },
+      {
+        "level": { "en": "Intermediate", "ar": "متوسط" },
+        "description": {
+          "en": "2-5 years of training. Progress slows, needs programming.",
+          "ar": "2-5 سنين تدريب. التقدم بيبطأ، محتاج برمجة."
+        }
+      },
+      {
+        "level": { "en": "Advanced", "ar": "متقدم" },
+        "description": {
+          "en": "5+ years of serious training. Near genetic potential.",
+          "ar": "5+ سنين تدريب جاد. قريب من الحد الجيني."
+        }
+      },
+      {
+        "level": { "en": "Elite", "ar": "نخبة" },
+        "description": {
+          "en": "Competitive level. Top 1% of lifters.",
+          "ar": "مستوى تنافسي. أعلى 1% من الرافعين."
+        }
+      }
+    ]
+  },
+  "menStandards": {
+    "title": {
+      "en": "Men's Strength Standards (1RM)",
+      "ar": "معايير قوة الرجال (1RM)"
+    },
+    "exercises": [
+      {
+        "exercise": { "en": "Barbell Squat", "ar": "سكوات بالبار" },
+        "standards": {
+          "beginner": "0.75x BW",
+          "novice": "1.0x BW",
+          "intermediate": "1.5x BW",
+          "advanced": "2.0x BW",
+          "elite": "2.5x BW"
+        },
+        "example": {
+          "en": "80kg man: Intermediate = 120kg squat",
+          "ar": "راجل 80 كيلو: متوسط = 120 كيلو سكوات"
+        }
+      },
+      {
+        "exercise": { "en": "Conventional Deadlift", "ar": "ديدليفت تقليدي" },
+        "standards": {
+          "beginner": "1.0x BW",
+          "novice": "1.25x BW",
+          "intermediate": "1.75x BW",
+          "advanced": "2.25x BW",
+          "elite": "3.0x BW"
+        },
+        "example": {
+          "en": "80kg man: Intermediate = 140kg deadlift",
+          "ar": "راجل 80 كيلو: متوسط = 140 كيلو ديدليفت"
+        }
+      },
+      {
+        "exercise": { "en": "Bench Press", "ar": "بنش بريس" },
+        "standards": {
+          "beginner": "0.5x BW",
+          "novice": "0.75x BW",
+          "intermediate": "1.0x BW",
+          "advanced": "1.5x BW",
+          "elite": "2.0x BW"
+        },
+        "example": {
+          "en": "80kg man: Intermediate = 80kg bench",
+          "ar": "راجل 80 كيلو: متوسط = 80 كيلو بنش"
+        }
+      },
+      {
+        "exercise": { "en": "Overhead Press", "ar": "ضغط علوي" },
+        "standards": {
+          "beginner": "0.35x BW",
+          "novice": "0.5x BW",
+          "intermediate": "0.75x BW",
+          "advanced": "1.0x BW",
+          "elite": "1.25x BW"
+        },
+        "example": {
+          "en": "80kg man: Intermediate = 60kg OHP",
+          "ar": "راجل 80 كيلو: متوسط = 60 كيلو ضغط علوي"
+        }
+      },
+      {
+        "exercise": { "en": "Barbell Row", "ar": "رو بالبار" },
+        "standards": {
+          "beginner": "0.5x BW",
+          "novice": "0.75x BW",
+          "intermediate": "1.0x BW",
+          "advanced": "1.25x BW",
+          "elite": "1.5x BW"
+        },
+        "example": {
+          "en": "80kg man: Intermediate = 80kg row",
+          "ar": "راجل 80 كيلو: متوسط = 80 كيلو رو"
+        }
+      },
+      {
+        "exercise": { "en": "Pull-ups", "ar": "عقلة" },
+        "standards": {
+          "beginner": "1 rep",
+          "novice": "5 reps",
+          "intermediate": "10 reps",
+          "advanced": "15+ reps or +20kg weighted",
+          "elite": "20+ reps or +40kg weighted"
+        },
+        "note": {
+          "en": "Bodyweight reps. Add weight for advanced/elite.",
+          "ar": "تكرارات بوزن الجسم. ضيف وزن للمتقدم/النخبة."
+        }
+      },
+      {
+        "exercise": { "en": "Dips", "ar": "ديبس" },
+        "standards": {
+          "beginner": "1-3 reps",
+          "novice": "8 reps",
+          "intermediate": "15 reps",
+          "advanced": "20+ reps or +20kg weighted",
+          "elite": "25+ reps or +40kg weighted"
+        }
+      }
+    ]
+  },
+  "womenStandards": {
+    "title": {
+      "en": "Women's Strength Standards (1RM)",
+      "ar": "معايير قوة النساء (1RM)"
+    },
+    "note": {
+      "en": "Women typically have stronger lower body relative to upper body compared to men.",
+      "ar": "النساء عادة عندهم جزء سفلي أقوى بالنسبة للجزء العلوي مقارنة بالرجال."
+    },
+    "exercises": [
+      {
+        "exercise": { "en": "Barbell Squat", "ar": "سكوات بالبار" },
+        "standards": {
+          "beginner": "0.5x BW",
+          "novice": "0.75x BW",
+          "intermediate": "1.0x BW",
+          "advanced": "1.5x BW",
+          "elite": "2.0x BW"
+        },
+        "example": {
+          "en": "60kg woman: Intermediate = 60kg squat",
+          "ar": "ست 60 كيلو: متوسط = 60 كيلو سكوات"
+        }
+      },
+      {
+        "exercise": { "en": "Conventional Deadlift", "ar": "ديدليفت تقليدي" },
+        "standards": {
+          "beginner": "0.75x BW",
+          "novice": "1.0x BW",
+          "intermediate": "1.25x BW",
+          "advanced": "1.75x BW",
+          "elite": "2.25x BW"
+        },
+        "example": {
+          "en": "60kg woman: Intermediate = 75kg deadlift",
+          "ar": "ست 60 كيلو: متوسط = 75 كيلو ديدليفت"
+        }
+      },
+      {
+        "exercise": { "en": "Bench Press", "ar": "بنش بريس" },
+        "standards": {
+          "beginner": "0.25x BW",
+          "novice": "0.5x BW",
+          "intermediate": "0.75x BW",
+          "advanced": "1.0x BW",
+          "elite": "1.25x BW"
+        },
+        "example": {
+          "en": "60kg woman: Intermediate = 45kg bench",
+          "ar": "ست 60 كيلو: متوسط = 45 كيلو بنش"
+        }
+      },
+      {
+        "exercise": { "en": "Overhead Press", "ar": "ضغط علوي" },
+        "standards": {
+          "beginner": "0.2x BW",
+          "novice": "0.35x BW",
+          "intermediate": "0.5x BW",
+          "advanced": "0.65x BW",
+          "elite": "0.8x BW"
+        },
+        "example": {
+          "en": "60kg woman: Intermediate = 30kg OHP",
+          "ar": "ست 60 كيلو: متوسط = 30 كيلو ضغط علوي"
+        }
+      },
+      {
+        "exercise": { "en": "Hip Thrust", "ar": "هيب ثراست" },
+        "standards": {
+          "beginner": "0.5x BW",
+          "novice": "1.0x BW",
+          "intermediate": "1.5x BW",
+          "advanced": "2.0x BW",
+          "elite": "2.5x BW"
+        },
+        "example": {
+          "en": "60kg woman: Intermediate = 90kg hip thrust",
+          "ar": "ست 60 كيلو: متوسط = 90 كيلو هيب ثراست"
+        }
+      },
+      {
+        "exercise": { "en": "Pull-ups", "ar": "عقلة" },
+        "standards": {
+          "beginner": "0 (assisted)",
+          "novice": "1 rep",
+          "intermediate": "5 reps",
+          "advanced": "10 reps",
+          "elite": "15+ reps or +10kg weighted"
+        }
+      },
+      {
+        "exercise": { "en": "Push-ups", "ar": "ضغط" },
+        "standards": {
+          "beginner": "5 reps (knees okay)",
+          "novice": "10 reps",
+          "intermediate": "20 reps",
+          "advanced": "30+ reps",
+          "elite": "40+ reps"
+        }
+      }
+    ]
+  },
+  "testingYour1RM": {
+    "title": {
+      "en": "How to Test Your 1RM Safely",
+      "ar": "إزاي تختبر الماكس بتاعك بأمان"
+    },
+    "warning": {
+      "en": "Testing 1RM carries injury risk. Only do it after proper warm-up, with good form, and ideally with a spotter.",
+      "ar": "اختبار الماكس فيه خطر إصابة. اعمله بس بعد تسخين مناسب، بفورم كويس، والأفضل مع حد يساعدك."
+    },
+    "methods": [
+      {
+        "method": {
+          "en": "Direct 1RM Test",
+          "ar": "اختبار الماكس المباشر"
+        },
+        "howTo": {
+          "en": [
+            "Warm up thoroughly (general + specific)",
+            "Do warm-up sets: 5 reps at 50%, 3 reps at 70%, 1 rep at 80%, 1 rep at 90%",
+            "Rest 3-5 min between heavy attempts",
+            "Attempt 1RM with 5% jumps until you fail",
+            "Don't exceed 3-4 max attempts in one session"
+          ],
+          "ar": [
+            "سخن كويس (عام + محدد)",
+            "اعمل مجموعات تسخين: 5 تكرارات على 50%، 3 تكرارات على 70%، تكرار على 80%، تكرار على 90%",
+            "استريح 3-5 دقايق بين المحاولات التقيلة",
+            "حاول الماكس بقفزات 5% لحد ما تفشل",
+            "متتجاوزش 3-4 محاولات ماكس في جلسة واحدة"
+          ]
+        }
+      },
+      {
+        "method": {
+          "en": "Calculate from Rep Max (Safer)",
+          "ar": "الحساب من تكرارات الماكس (أأمن)"
+        },
+        "howTo": {
+          "en": [
+            "Find a weight you can lift for 3-5 reps with perfect form",
+            "Use formula: 1RM = Weight × (1 + Reps/30)",
+            "Or use online 1RM calculator",
+            "This is an estimate - actual 1RM may vary"
+          ],
+          "ar": [
+            "لاقي وزن تقدر ترفعه 3-5 تكرارات بفورم مثالي",
+            "استخدم المعادلة: 1RM = الوزن × (1 + التكرارات/30)",
+            "أو استخدم حاسبة 1RM أونلاين",
+            "ده تقدير - الماكس الفعلي ممكن يختلف"
+          ]
+        },
+        "formula": {
+          "en": "Epley Formula: 1RM = Weight × (1 + Reps/30)",
+          "ar": "معادلة إيبلي: 1RM = الوزن × (1 + التكرارات/30)"
+        },
+        "example": {
+          "en": "Bench 80kg for 5 reps → 1RM ≈ 80 × (1 + 5/30) = 80 × 1.17 = 93kg",
+          "ar": "بنش 80 كيلو 5 تكرارات → 1RM ≈ 80 × (1 + 5/30) = 80 × 1.17 = 93 كيلو"
+        }
+      }
+    ],
+    "repMaxChart": {
+      "title": {
+        "en": "Reps to Estimated 1RM Percentage",
+        "ar": "التكرارات لنسبة الماكس المقدرة"
+      },
+      "chart": [
+        { "reps": 1, "percentage": "100%" },
+        { "reps": 2, "percentage": "95%" },
+        { "reps": 3, "percentage": "93%" },
+        { "reps": 4, "percentage": "90%" },
+        { "reps": 5, "percentage": "87%" },
+        { "reps": 6, "percentage": "85%" },
+        { "reps": 8, "percentage": "80%" },
+        { "reps": 10, "percentage": "75%" },
+        { "reps": 12, "percentage": "70%" },
+        { "reps": 15, "percentage": "65%" }
+      ]
+    }
+  },
+  "progressionBenchmarks": {
+    "title": {
+      "en": "Realistic Progression Benchmarks",
+      "ar": "معايير تقدم واقعية"
+    },
+    "expectations": [
+      {
+        "stage": { "en": "Beginner (First 6-12 months)", "ar": "مبتدئ (أول 6-12 شهر)" },
+        "progression": {
+          "en": "Can add weight almost every workout. 2.5-5kg per week on compound lifts is normal.",
+          "ar": "ممكن تزود وزن تقريباً كل تمرين. 2.5-5 كيلو في الأسبوع على الرفعات المركبة طبيعي."
+        },
+        "monthlyGains": {
+          "en": "10-15kg on squat/deadlift, 5-10kg on bench per month",
+          "ar": "10-15 كيلو على السكوات/الديدليفت، 5-10 كيلو على البنش في الشهر"
+        }
+      },
+      {
+        "stage": { "en": "Intermediate (1-3 years)", "ar": "متوسط (1-3 سنين)" },
+        "progression": {
+          "en": "Progress week to week or bi-weekly. Need to periodize training.",
+          "ar": "التقدم أسبوع لأسبوع أو كل أسبوعين. محتاج تنظم التدريب على فترات."
+        },
+        "monthlyGains": {
+          "en": "2.5-5kg per month on compound lifts",
+          "ar": "2.5-5 كيلو في الشهر على الرفعات المركبة"
+        }
+      },
+      {
+        "stage": { "en": "Advanced (3+ years)", "ar": "متقدم (3+ سنين)" },
+        "progression": {
+          "en": "Progress monthly or over training blocks. Every kilo counts.",
+          "ar": "التقدم شهرياً أو على مدى فترات التدريب. كل كيلو بيحتسب."
+        },
+        "monthlyGains": {
+          "en": "1-2.5kg per month, sometimes less",
+          "ar": "1-2.5 كيلو في الشهر، أحياناً أقل"
+        }
+      }
+    ],
+    "plateauNote": {
+      "en": "Plateaus are normal. If stuck for 3+ weeks, reassess: sleep, nutrition, programming, recovery.",
+      "ar": "الثبات طبيعي. لو عالق لمدة 3+ أسابيع، راجع: النوم، التغذية، البرمجة، الاستشفاء."
+    }
+  },
+  "commonGoals": {
+    "title": {
+      "en": "Popular Strength Goals",
+      "ar": "أهداف القوة المشهورة"
+    },
+    "goals": [
+      {
+        "goal": {
+          "en": "1/2/3/4 Plate Club",
+          "ar": "نادي 1/2/3/4 قرص"
+        },
+        "description": {
+          "en": "1 plate (60kg) OHP, 2 plates (100kg) Bench, 3 plates (140kg) Squat, 4 plates (180kg) Deadlift",
+          "ar": "قرص واحد (60 كيلو) ضغط علوي، قرصين (100 كيلو) بنش، 3 أقراص (140 كيلو) سكوات، 4 أقراص (180 كيلو) ديدليفت"
+        },
+        "difficulty": {
+          "en": "Achievable for most men within 2-4 years of training",
+          "ar": "ممكن لمعظم الرجالة في 2-4 سنين تدريب"
+        }
+      },
+      {
+        "goal": {
+          "en": "1000lb Club",
+          "ar": "نادي 1000 رطل"
+        },
+        "description": {
+          "en": "Total of Squat + Bench + Deadlift = 1000lbs (454kg)",
+          "ar": "مجموع السكوات + البنش + الديدليفت = 1000 رطل (454 كيلو)"
+        },
+        "difficulty": {
+          "en": "Intermediate milestone for men. Example: 160kg squat, 100kg bench, 200kg deadlift",
+          "ar": "علامة فارقة متوسطة للرجالة. مثال: 160 كيلو سكوات، 100 كيلو بنش، 200 كيلو ديدليفت"
+        }
+      },
+      {
+        "goal": {
+          "en": "Bodyweight Bench",
+          "ar": "بنش بوزن الجسم"
+        },
+        "description": {
+          "en": "Bench press your own bodyweight for 1 rep",
+          "ar": "بنش بريس وزن جسمك لتكرار واحد"
+        },
+        "difficulty": {
+          "en": "Solid intermediate milestone",
+          "ar": "علامة فارقة متوسطة قوية"
+        }
+      },
+      {
+        "goal": {
+          "en": "2x Bodyweight Squat",
+          "ar": "سكوات ضعف وزن الجسم"
+        },
+        "description": {
+          "en": "Squat 2x your bodyweight for 1 rep",
+          "ar": "سكوات ضعف وزن جسمك لتكرار واحد"
+        },
+        "difficulty": {
+          "en": "Advanced level achievement",
+          "ar": "إنجاز مستوى متقدم"
+        }
+      },
+      {
+        "goal": {
+          "en": "First Pull-up",
+          "ar": "أول عقلة"
+        },
+        "description": {
+          "en": "Complete 1 strict pull-up from dead hang",
+          "ar": "إكمال عقلة واحدة صارمة من التعلق الكامل"
+        },
+        "difficulty": {
+          "en": "Common first milestone for beginners (especially women)",
+          "ar": "علامة فارقة أولى شائعة للمبتدئين (خصوصاً الستات)"
+        }
+      },
+      {
+        "goal": {
+          "en": "10 Strict Pull-ups",
+          "ar": "10 عقلات صارمة"
+        },
+        "description": {
+          "en": "10 consecutive pull-ups with full range of motion",
+          "ar": "10 عقلات متتالية بنطاق حركة كامل"
+        },
+        "difficulty": {
+          "en": "Solid upper body strength indicator",
+          "ar": "مؤشر قوة جزء علوي قوي"
+        }
+      }
+    ]
+  },
+  "calculators": {
+    "title": {
+      "en": "Quick Reference Calculators",
+      "ar": "حاسبات مرجعية سريعة"
+    },
+    "1rmEstimate": {
+      "title": {
+        "en": "Estimate Your 1RM",
+        "ar": "قدر الماكس بتاعك"
+      },
+      "formula": "1RM = Weight × (1 + Reps ÷ 30)",
+      "examples": [
+        {
+          "weight": "60kg",
+          "reps": 8,
+          "estimated1RM": "76kg"
+        },
+        {
+          "weight": "80kg",
+          "reps": 5,
+          "estimated1RM": "93kg"
+        },
+        {
+          "weight": "100kg",
+          "reps": 3,
+          "estimated1RM": "110kg"
+        }
+      ]
+    },
+    "trainingPercentages": {
+      "title": {
+        "en": "Training Percentages",
+        "ar": "نسب التدريب"
+      },
+      "note": {
+        "en": "Based on 1RM, here's what percentage to use for different rep ranges:",
+        "ar": "بناءً على الماكس، دي النسبة اللي تستخدمها لنطاقات تكرارات مختلفة:"
+      },
+      "ranges": [
+        {
+          "goal": { "en": "Strength (1-5 reps)", "ar": "قوة (1-5 تكرارات)" },
+          "percentage": "85-100%"
+        },
+        {
+          "goal": { "en": "Hypertrophy (6-12 reps)", "ar": "تضخيم (6-12 تكرار)" },
+          "percentage": "65-85%"
+        },
+        {
+          "goal": { "en": "Endurance (12+ reps)", "ar": "تحمل (12+ تكرار)" },
+          "percentage": "50-65%"
+        },
+        {
+          "goal": { "en": "Warm-up sets", "ar": "مجموعات تسخين" },
+          "percentage": "40-60%"
+        }
+      ]
+    }
+  },
+  "tips": {
+    "title": {
+      "en": "Tips for Getting Stronger",
+      "ar": "نصائح لتصبح أقوى"
+    },
+    "tips": [
+      {
+        "tip": {
+          "en": "Progressive Overload is King",
+          "ar": "الحمل التدريجي هو الملك"
+        },
+        "details": {
+          "en": "Add weight or reps every week. Small increments add up over time.",
+          "ar": "زود وزن أو تكرارات كل أسبوع. الزيادات الصغيرة بتتراكم مع الوقت."
+        }
+      },
+      {
+        "tip": {
+          "en": "Master Form First",
+          "ar": "اتقن الفورم الأول"
+        },
+        "details": {
+          "en": "A strong foundation of technique allows you to lift heavier safely later.",
+          "ar": "أساس قوي من التكنيك بيسمحلك ترفع أتقل بأمان بعدين."
+        }
+      },
+      {
+        "tip": {
+          "en": "Eat to Support Your Goals",
+          "ar": "كل لدعم أهدافك"
+        },
+        "details": {
+          "en": "You can't build strength in a calorie deficit. Eat enough protein and calories.",
+          "ar": "مش هتقدر تبني قوة في عجز سعرات. كل بروتين وسعرات كفاية."
+        }
+      },
+      {
+        "tip": {
+          "en": "Sleep is When You Get Stronger",
+          "ar": "النوم هو وقت تصبح أقوى"
+        },
+        "details": {
+          "en": "Recovery happens during sleep. 7-9 hours is essential for strength gains.",
+          "ar": "الاستشفاء بيحصل أثناء النوم. 7-9 ساعات ضرورية لمكاسب القوة."
+        }
+      },
+      {
+        "tip": {
+          "en": "Be Patient",
+          "ar": "اصبر"
+        },
+        "details": {
+          "en": "Real strength takes years to build. Trust the process and stay consistent.",
+          "ar": "القوة الحقيقية بتاخد سنين تبنيها. ثق في العملية والتزم."
+        }
+      }
+    ]
+  }
+}
