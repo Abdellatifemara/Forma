@@ -6,7 +6,9 @@ import { progressApi, type MeasurementsData } from '@/lib/api';
 export const progressKeys = {
   all: ['progress'] as const,
   weight: (days?: number) => [...progressKeys.all, 'weight', days] as const,
+  measurements: (limit?: number) => [...progressKeys.all, 'measurements', limit] as const,
   prs: () => [...progressKeys.all, 'prs'] as const,
+  latest: () => [...progressKeys.all, 'latest'] as const,
 };
 
 export function useWeightHistory(days?: number) {
@@ -16,10 +18,24 @@ export function useWeightHistory(days?: number) {
   });
 }
 
+export function useMeasurementsHistory(limit?: number) {
+  return useQuery({
+    queryKey: progressKeys.measurements(limit),
+    queryFn: () => progressApi.getMeasurementsHistory(limit ? { limit } : undefined),
+  });
+}
+
 export function useStrengthPRs() {
   return useQuery({
     queryKey: progressKeys.prs(),
     queryFn: () => progressApi.getStrengthPRs(),
+  });
+}
+
+export function useLatestProgress() {
+  return useQuery({
+    queryKey: progressKeys.latest(),
+    queryFn: () => progressApi.getLatest(),
   });
 }
 

@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma - Technical Architecture & Features</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0a0a0f;
+            --surface: #12121a;
+            --surface-2: #1a1a24;
+            --border: #2a2a3a;
+            --text: #e4e4e7;
+            --text-dim: #71717a;
+            --primary: #6366f1;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --code-bg: #1e1e2e;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid var(--border);
+            padding: 2rem 0;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-dim);
+        }
+
+        /* Architecture Overview */
+        .architecture {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 900px) {
+            .architecture {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .arch-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .arch-box h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+            margin-bottom: 0.5rem;
+        }
+
+        .arch-box .value {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .arch-box .tech {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+
+        /* Feature Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .feature-header {
+            background: var(--surface-2);
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .feature-header h3 {
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-badge {
+            font-size: 0.7rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .badge-free {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--success);
+        }
+
+        .badge-api {
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--primary);
+        }
+
+        .badge-mena {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--warning);
+        }
+
+        .feature-body {
+            padding: 1.5rem;
+        }
+
+        .feature-desc {
+            color: var(--text-dim);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* Code Block */
+        .code-block {
+            background: var(--code-bg);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+
+        .code-block .comment {
+            color: #6b7280;
+        }
+
+        .code-block .keyword {
+            color: #c084fc;
+        }
+
+        .code-block .string {
+            color: #86efac;
+        }
+
+        .code-block .function {
+            color: #60a5fa;
+        }
+
+        .code-block .number {
+            color: #fbbf24;
+        }
+
+        /* Endpoint List */
+        .endpoint-list {
+            list-style: none;
+        }
+
+        .endpoint-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+
+        .endpoint-list li:last-child {
+            border-bottom: none;
+        }
+
+        .method {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .method-get {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--success);
+        }
+
+        .method-post {
+            background: rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+        }
+
+        .method-put {
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--warning);
+        }
+
+        .method-delete {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--danger);
+        }
+
+        .endpoint-path {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        /* Tech Stack */
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .tech-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .tech-icon {
+            font-size: 2rem;
+        }
+
+        .tech-name {
+            font-weight: 600;
+        }
+
+        .tech-purpose {
+            font-size: 0.8rem;
+            color: var(--text-dim);
+        }
+
+        /* Database Schema */
+        .schema-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .schema-table {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .schema-header {
+            background: var(--surface-2);
+            padding: 0.75rem 1rem;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .schema-fields {
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+        }
+
+        .schema-field {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.25rem 0;
+            color: var(--text-dim);
+        }
+
+        .schema-field .type {
+            color: var(--primary);
+        }
+
+        /* Cost Analysis */
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 4rem;
+        }
+
+        .cost-table th,
+        .cost-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .cost-table th {
+            background: var(--surface-2);
+            font-weight: 600;
+        }
+
+        .cost-table td {
+            background: var(--surface);
+        }
+
+        .cost-total {
+            font-weight: 700;
+            color: var(--success);
+        }
+
+        /* API Test Section */
+        .api-test {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .api-test h3 {
+            margin-bottom: 1rem;
+        }
+
+        .api-url {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .api-url input {
+            flex: 1;
+            background: var(--code-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            color: var(--text);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .api-url button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .api-url button:hover {
+            opacity: 0.9;
+        }
+
+        .api-response {
+            background: var(--code-bg);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .status-ok {
+            color: var(--success);
+        }
+
+        .status-error {
+            color: var(--danger);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Forma - Technical Architecture</h1>
+            <p class="subtitle">Comprehensive fitness platform for MENA region • Built with modern web technologies</p>
+        </header>
+
+        <!-- Architecture Overview -->
+        <h2 class="section-title">Infrastructure</h2>
+        <div class="architecture">
+            <div class="arch-box">
+                <h3>Backend</h3>
+                <div class="value">Railway</div>
+                <div class="tech">NestJS + Node.js</div>
+            </div>
+            <div class="arch-box">
+                <h3>Database</h3>
+                <div class="value">Supabase</div>
+                <div class="tech">PostgreSQL + pgvector</div>
+            </div>
+            <div class="arch-box">
+                <h3>Frontend</h3>
+                <div class="value">Vercel</div>
+                <div class="tech">Next.js 14 + React</div>
+            </div>
+            <div class="arch-box">
+                <h3>Storage</h3>
+                <div class="value">Cloudinary</div>
+                <div class="tech">Images + Voice Notes</div>
+            </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="tech-stack">
+            <div class="tech-item">
+                <div class="tech-icon">🔷</div>
+                <div>
+                    <div class="tech-name">TypeScript</div>
+                    <div class="tech-purpose">Full stack type safety</div>
+                </div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">🎯</div>
+                <div>
+                    <div class="tech-name">NestJS</div>
+                    <div class="tech-purpose">API framework</div>
+                </div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">⚛️</div>
+                <div>
+                    <div class="tech-name">Next.js 14</div>
+                    <div class="tech-purpose">React framework + SSR</div>
+                </div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">🗃️</div>
+                <div>
+                    <div class="tech-name">Prisma</div>
+                    <div class="tech-purpose">Type-safe ORM</div>
+                </div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">🤖</div>
+                <div>
+                    <div class="tech-name">TensorFlow.js</div>
+                    <div class="tech-purpose">On-device AI</div>
+                </div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">🎤</div>
+                <div>
+                    <div class="tech-name">Web Speech API</div>
+                    <div class="tech-purpose">Voice coaching</div>
+                </div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">✨</div>
+                <div>
+                    <div class="tech-name">Gemini AI</div>
+                    <div class="tech-purpose">Workout generation</div>
+                </div>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">📱</div>
+                <div>
+                    <div class="tech-name">PWA</div>
+                    <div class="tech-purpose">Offline + installable</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <h2 class="section-title">Feature Implementations</h2>
+        <div class="features-grid">
+
+            <!-- Feature 1: AI Form Checker -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>🤖 AI Form Checker</h3>
+                    <span class="feature-badge badge-free">FREE ON-DEVICE</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Real-time pose detection using camera - no server costs!</p>
+                    <div class="code-block">
+<span class="comment">// apps/web/components/workouts/form-checker.tsx</span>
+<span class="keyword">import</span> * <span class="keyword">as</span> poseDetection <span class="keyword">from</span> <span class="string">'@tensorflow-models/pose-detection'</span>;
+<span class="keyword">import</span> <span class="string">'@mediapipe/pose'</span>;
+
+<span class="comment">// Uses BlazePose via TensorFlow.js</span>
+<span class="keyword">const</span> detector = <span class="keyword">await</span> poseDetection.<span class="function">createDetector</span>(
+  poseDetection.SupportedModels.BlazePose,
+  { runtime: <span class="string">'mediapipe'</span> }
+);
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-dim);">
+                        <strong>Key points:</strong> Runs entirely in browser, analyzes 33 body keypoints,
+                        calculates joint angles to detect form issues
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2: Voice Coach -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>🎙️ Voice Coach</h3>
+                    <span class="feature-badge badge-free">FREE WEB API</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Bilingual voice guidance using native Web Speech API</p>
+                    <div class="code-block">
+<span class="comment">// apps/web/components/workouts/voice-coach.tsx</span>
+<span class="keyword">const</span> speak = (text: <span class="keyword">string</span>, lang: <span class="string">'en'</span> | <span class="string">'ar'</span>) => {
+  <span class="keyword">const</span> utterance = <span class="keyword">new</span> SpeechSynthesisUtterance(text);
+  utterance.lang = lang === <span class="string">'ar'</span> ? <span class="string">'ar-SA'</span> : <span class="string">'en-US'</span>;
+  speechSynthesis.<span class="function">speak</span>(utterance);
+};
+
+<span class="comment">// Hooks: announceExercise, countRep, announceRest</span>
+<span class="comment">// startRestTimer, motivate (encouragement messages)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: What Now? -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>🤔 "What Should I Do Now?"</h3>
+                    <span class="feature-badge badge-api">API</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Smart workout recommendations based on recent history</p>
+                    <div class="code-block">
+<span class="comment">// apps/api/src/modules/workouts/workouts.service.ts</span>
+<span class="keyword">async</span> <span class="function">getWhatNow</span>(userId, { availableMinutes, energyLevel, location }) {
+  <span class="comment">// 1. Get last 7 days of workouts</span>
+  <span class="comment">// 2. Count muscle group frequency</span>
+  <span class="comment">// 3. Find neglected muscles</span>
+  <span class="comment">// 4. Check user injuries</span>
+  <span class="comment">// 5. Filter by available equipment</span>
+  <span class="comment">// 6. Adjust intensity based on energy</span>
+  <span class="keyword">return</span> { type, exercises, reason, reasonAr };
+}
+                    </div>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/workouts/what-now</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 4: Squads -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>👥 Squads & Challenges</h3>
+                    <span class="feature-badge badge-api">API</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Social fitness with team competitions and leaderboards</p>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/squads</span>
+                            <span style="color: var(--text-dim); font-size: 0.8rem;">Create squad</span>
+                        </li>
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/squads/join/:code</span>
+                            <span style="color: var(--text-dim); font-size: 0.8rem;">Join via code</span>
+                        </li>
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/squads/:id/challenges</span>
+                            <span style="color: var(--text-dim); font-size: 0.8rem;">Create challenge</span>
+                        </li>
+                        <li>
+                            <span class="method method-get">GET</span>
+                            <span class="endpoint-path">/api/squads/:id/leaderboard</span>
+                            <span style="color: var(--text-dim); font-size: 0.8rem;">Rankings</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 5: Gamification -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>🎮 XP & Levels System</h3>
+                    <span class="feature-badge badge-api">API</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">10-level progression system with badges and leaderboards</p>
+                    <div class="code-block">
+<span class="comment">// XP Rewards</span>
+workoutCompleted: <span class="number">50</span> XP
+workoutStreak3:   <span class="number">30</span> XP
+workoutStreak7:   <span class="number">100</span> XP
+workoutStreak30:  <span class="number">500</span> XP
+
+<span class="comment">// Levels</span>
+Level 1: Beginner 🌱 (0-100 XP)
+Level 5: Committed 🔥 (1000-1500 XP)
+Level 10: Elite 💎 (5500+ XP)
+                    </div>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-get">GET</span>
+                            <span class="endpoint-path">/api/gamification/stats</span>
+                        </li>
+                        <li>
+                            <span class="method method-get">GET</span>
+                            <span class="endpoint-path">/api/gamification/leaderboard</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 6: Injury Modifications -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>🩹 Injury-Aware Training</h3>
+                    <span class="feature-badge badge-api">API</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Automatic workout modifications based on user injuries</p>
+                    <div class="code-block">
+<span class="comment">// Injury types: shoulder, knee, lower_back, elbow, wrist, hip, neck</span>
+
+<span class="comment">// Example modifications for shoulder injury:</span>
+{
+  avoidExercises: [<span class="string">'overhead_press'</span>, <span class="string">'bench_press'</span>],
+  alternatives: [<span class="string">'landmine_press'</span>, <span class="string">'floor_press'</span>],
+  warmupExercises: [<span class="string">'shoulder_circles'</span>, <span class="string">'band_pull_aparts'</span>]
+}
+                    </div>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/injury-modifications/check-exercise</span>
+                        </li>
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/injury-modifications/modify-workout</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 7: Ramadan Mode -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>🌙 Ramadan Mode</h3>
+                    <span class="feature-badge badge-mena">MENA EXCLUSIVE</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Fasting-aware workout and nutrition scheduling</p>
+                    <div class="code-block">
+<span class="comment">// apps/api/src/modules/settings/settings.service.ts</span>
+<span class="keyword">interface</span> RamadanSettings {
+  enabled: <span class="keyword">boolean</span>;
+  workoutTiming: <span class="string">'before_iftar'</span> | <span class="string">'after_iftar'</span> | <span class="string">'after_taraweeh'</span>;
+  reducedIntensity: <span class="keyword">boolean</span>;
+  iftarTime: <span class="keyword">string</span>;  <span class="comment">// e.g., "18:30"</span>
+  suhoorTime: <span class="keyword">string</span>; <span class="comment">// e.g., "04:30"</span>
+}
+                    </div>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-get">GET</span>
+                            <span class="endpoint-path">/api/settings/ramadan</span>
+                        </li>
+                        <li>
+                            <span class="method method-put">PUT</span>
+                            <span class="endpoint-path">/api/settings/ramadan</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 8: Health Integration -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>⌚ Wearable Integration</h3>
+                    <span class="feature-badge badge-api">API</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">HRV-based readiness score from Apple Health / Google Fit</p>
+                    <div class="code-block">
+<span class="comment">// Readiness Score Algorithm</span>
+factors = [
+  { name: <span class="string">'HRV'</span>, weight: <span class="number">0.3</span> },         <span class="comment">// Heart Rate Variability</span>
+  { name: <span class="string">'Sleep'</span>, weight: <span class="number">0.25</span> },      <span class="comment">// Hours & quality</span>
+  { name: <span class="string">'Resting HR'</span>, weight: <span class="number">0.2</span> },  <span class="comment">// Lower = better</span>
+  { name: <span class="string">'Stress'</span>, weight: <span class="number">0.15</span> },    <span class="comment">// Inverse impact</span>
+  { name: <span class="string">'Activity'</span>, weight: <span class="number">0.1</span> }   <span class="comment">// Yesterday's</span>
+];
+
+<span class="comment">// Score: 0-100 → optimal/good/moderate/low/rest</span>
+                    </div>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/health-data/sync/apple-health</span>
+                        </li>
+                        <li>
+                            <span class="method method-get">GET</span>
+                            <span class="endpoint-path">/api/health-data/readiness</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 9: Body Composition -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>📊 Body Composition</h3>
+                    <span class="feature-badge badge-api">API</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Weight, body fat, measurements tracking with BMI analysis</p>
+                    <div class="code-block">
+<span class="comment">// Tracked metrics</span>
+{
+  weight: <span class="number">75.5</span>,           <span class="comment">// kg</span>
+  bodyFatPercentage: <span class="number">18.5</span>,
+  measurements: {
+    chest: <span class="number">102</span>,         <span class="comment">// cm</span>
+    waist: <span class="number">82</span>,
+    hips: <span class="number">96</span>,
+    bicep: <span class="number">35</span>
+  }
+}
+
+<span class="comment">// BMI categories: underweight/normal/overweight/obese</span>
+<span class="comment">// AI recommendations based on goal + progress</span>
+                    </div>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/body-composition</span>
+                        </li>
+                        <li>
+                            <span class="method method-get">GET</span>
+                            <span class="endpoint-path">/api/body-composition/analysis</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 10: Offline Mode -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>📴 Offline PWA</h3>
+                    <span class="feature-badge badge-free">FREE</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Full offline support with background sync</p>
+                    <div class="code-block">
+<span class="comment">// apps/web/public/sw.js</span>
+<span class="comment">// Cache strategies:</span>
+<span class="comment">// - Static assets: Cache-first</span>
+<span class="comment">// - API requests: Network-first with cache fallback</span>
+<span class="comment">// - Offline workouts: IndexedDB + background sync</span>
+
+self.<span class="function">addEventListener</span>(<span class="string">'sync'</span>, (event) => {
+  <span class="keyword">if</span> (event.tag === <span class="string">'sync-offline-workouts'</span>) {
+    event.<span class="function">waitUntil</span>(<span class="function">syncOfflineWorkouts</span>());
+  }
+});
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 11: Chat -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>💬 Coach Messaging</h3>
+                    <span class="feature-badge badge-api">API + CLOUDINARY</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Text, voice notes, images with content moderation</p>
+                    <div class="code-block">
+<span class="comment">// Image moderation using Cloudinary AWS Rekognition</span>
+cloudinary.uploader.<span class="function">upload_stream</span>({
+  moderation: <span class="string">'aws_rek'</span>  <span class="comment">// NSFW detection</span>
+});
+
+<span class="comment">// 3 violations in 30 days = auto-ban</span>
+<span class="keyword">if</span> (violationCount >= <span class="number">3</span>) {
+  <span class="keyword">await</span> prisma.user.<span class="function">update</span>({ bannedAt: <span class="keyword">new</span> Date() });
+}
+                    </div>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/upload/image</span>
+                        </li>
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/chat/messages</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 12: AI Generation -->
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>✨ AI Workout Plans</h3>
+                    <span class="feature-badge badge-api">GEMINI API</span>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-desc">Personalized workout plans generated by Gemini AI</p>
+                    <div class="code-block">
+<span class="comment">// apps/api/src/modules/ai/ai.service.ts</span>
+<span class="keyword">async</span> <span class="function">generateWorkoutPlan</span>(userProfile) {
+  <span class="keyword">const</span> prompt = <span class="string">`Create a ${goal} plan for ${level}...`</span>;
+  <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="function">callGeminiWithRetry</span>(prompt);
+  <span class="keyword">return</span> {
+    planName, planNameAr,
+    weeklySchedule: [...],
+    progressionNotes
+  };
+}
+                    </div>
+                    <ul class="endpoint-list">
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/ai/generate-workout</span>
+                        </li>
+                        <li>
+                            <span class="method method-post">POST</span>
+                            <span class="endpoint-path">/api/ai/analyze-form</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Database Schema Overview -->
+        <h2 class="section-title">Key Database Models</h2>
+        <div class="schema-grid">
+            <div class="schema-table">
+                <div class="schema-header">User</div>
+                <div class="schema-fields">
+                    <div class="schema-field"><span>id</span><span class="type">String @id</span></div>
+                    <div class="schema-field"><span>email</span><span class="type">String @unique</span></div>
+                    <div class="schema-field"><span>firstName, lastName</span><span class="type">String</span></div>
+                    <div class="schema-field"><span>heightCm, currentWeightKg</span><span class="type">Float?</span></div>
+                    <div class="schema-field"><span>fitnessGoal</span><span class="type">FitnessGoal</span></div>
+                    <div class="schema-field"><span>bannedAt</span><span class="type">DateTime?</span></div>
+                </div>
+            </div>
+            <div class="schema-table">
+                <div class="schema-header">WorkoutLog</div>
+                <div class="schema-fields">
+                    <div class="schema-field"><span>id</span><span class="type">String @id</span></div>
+                    <div class="schema-field"><span>userId, workoutId</span><span class="type">String</span></div>
+                    <div class="schema-field"><span>status</span><span class="type">WorkoutStatus</span></div>
+                    <div class="schema-field"><span>totalVolume</span><span class="type">Float?</span></div>
+                    <div class="schema-field"><span>durationMinutes</span><span class="type">Int?</span></div>
+                    <div class="schema-field"><span>completedAt</span><span class="type">DateTime?</span></div>
+                </div>
+            </div>
+            <div class="schema-table">
+                <div class="schema-header">Squad</div>
+                <div class="schema-fields">
+                    <div class="schema-field"><span>id</span><span class="type">String @id</span></div>
+                    <div class="schema-field"><span>name, description</span><span class="type">String</span></div>
+                    <div class="schema-field"><span>inviteCode</span><span class="type">String @unique</span></div>
+                    <div class="schema-field"><span>ownerId</span><span class="type">String</span></div>
+                    <div class="schema-field"><span>members</span><span class="type">SquadMember[]</span></div>
+                </div>
+            </div>
+            <div class="schema-table">
+                <div class="schema-header">Streak</div>
+                <div class="schema-fields">
+                    <div class="schema-field"><span>id</span><span class="type">String @id</span></div>
+                    <div class="schema-field"><span>userId</span><span class="type">String</span></div>
+                    <div class="schema-field"><span>type</span><span class="type">String (workout)</span></div>
+                    <div class="schema-field"><span>currentCount</span><span class="type">Int</span></div>
+                    <div class="schema-field"><span>longestCount</span><span class="type">Int</span></div>
+                    <div class="schema-field"><span>lastActivityAt</span><span class="type">DateTime</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cost Analysis -->
+        <h2 class="section-title">Monthly Cost Breakdown</h2>
+        <table class="cost-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Plan</th>
+                    <th>Cost</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Railway</td>
+                    <td>Hobby</td>
+                    <td>$20/mo</td>
+                    <td>NestJS API hosting, auto-scaling</td>
+                </tr>
+                <tr>
+                    <td>Supabase</td>
+                    <td>Pro</td>
+                    <td>$25/mo</td>
+                    <td>PostgreSQL, 8GB RAM, 100GB storage</td>
+                </tr>
+                <tr>
+                    <td>Vercel</td>
+                    <td>Free</td>
+                    <td>$0</td>
+                    <td>Next.js frontend, edge functions</td>
+                </tr>
+                <tr>
+                    <td>Cloudinary</td>
+                    <td>Free</td>
+                    <td>$0</td>
+                    <td>25GB storage, 25GB bandwidth</td>
+                </tr>
+                <tr>
+                    <td>Gemini AI</td>
+                    <td>Free tier</td>
+                    <td>$0</td>
+                    <td>60 requests/min, generous limits</td>
+                </tr>
+                <tr>
+                    <td>TensorFlow.js</td>
+                    <td>On-device</td>
+                    <td>$0</td>
+                    <td>No server costs, runs in browser</td>
+                </tr>
+                <tr>
+                    <td>Web Speech API</td>
+                    <td>Browser native</td>
+                    <td>$0</td>
+                    <td>Free voice synthesis</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong>Total</strong></td>
+                    <td class="cost-total">$45/mo</td>
+                    <td>Supports 50,000+ users</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Live API Test -->
+        <h2 class="section-title">Live API Test</h2>
+        <div class="api-test">
+            <h3>Test Production API</h3>
+            <div class="api-url">
+                <input type="text" id="apiUrl" value="https://forma-api-production.up.railway.app/api/health">
+                <button onclick="testApi()">Test</button>
+            </div>
+            <div class="api-response" id="apiResponse">Click "Test" to check API status...</div>
+        </div>
+
+        <!-- All Endpoints Summary -->
+        <h2 class="section-title">API Endpoints Summary</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>Auth & Users</h3>
+                </div>
+                <div class="feature-body">
+                    <ul class="endpoint-list">
+                        <li><span class="method method-post">POST</span><span class="endpoint-path">/api/auth/register</span></li>
+                        <li><span class="method method-post">POST</span><span class="endpoint-path">/api/auth/login</span></li>
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/users/me</span></li>
+                        <li><span class="method method-put">PUT</span><span class="endpoint-path">/api/users/me</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>Workouts</h3>
+                </div>
+                <div class="feature-body">
+                    <ul class="endpoint-list">
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/workouts/plans</span></li>
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/workouts/today</span></li>
+                        <li><span class="method method-post">POST</span><span class="endpoint-path">/api/workouts/start/:id</span></li>
+                        <li><span class="method method-post">POST</span><span class="endpoint-path">/api/workouts/complete/:id</span></li>
+                        <li><span class="method method-post">POST</span><span class="endpoint-path">/api/workouts/what-now</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>Nutrition</h3>
+                </div>
+                <div class="feature-body">
+                    <ul class="endpoint-list">
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/nutrition/foods</span></li>
+                        <li><span class="method method-post">POST</span><span class="endpoint-path">/api/nutrition/log</span></li>
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/nutrition/daily</span></li>
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/nutrition/macros</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-header">
+                    <h3>Progress & Stats</h3>
+                </div>
+                <div class="feature-body">
+                    <ul class="endpoint-list">
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/stats/dashboard</span></li>
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/progress/history</span></li>
+                        <li><span class="method method-post">POST</span><span class="endpoint-path">/api/body-composition</span></li>
+                        <li><span class="method method-get">GET</span><span class="endpoint-path">/api/gamification/stats</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        async function testApi() {
+            const url = document.getElementById('apiUrl').value;
+            const responseEl = document.getElementById('apiResponse');
+
+            responseEl.innerHTML = 'Testing...';
+            responseEl.className = 'api-response';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                const data = await response.json();
+
+                responseEl.innerHTML = `<span class="status-ok">Status: ${response.status} OK</span>\n\n${JSON.stringify(data, null, 2)}`;
+            } catch (error) {
+                responseEl.innerHTML = `<span class="status-error">Error: ${error.message}</span>\n\nThe API might be sleeping on Railway free tier.\nTry again in a few seconds - it should wake up.`;
+            }
+        }
+    </script>
+</body>
+</html>

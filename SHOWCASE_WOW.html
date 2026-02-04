@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma - The Future of Fitness in MENA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --danger: #ef4444;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+            --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+        }
+
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+            background: var(--dark);
+            color: white;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(180deg, var(--dark) 0%, #1e1b4b 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle at 30% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 30%, rgba(168, 85, 247, 0.15) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+
+        .logo {
+            font-size: 4rem;
+            font-weight: 800;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            animation: slideDown 1s ease-out;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-out 0.3s both;
+        }
+
+        .tagline-ar {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.6);
+            direction: rtl;
+            margin-bottom: 3rem;
+            animation: fadeIn 1s ease-out 0.5s both;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            animation: slideUp 1s ease-out 0.7s both;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cta-button {
+            background: var(--gradient);
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: slideUp 1s ease-out 0.9s both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.4);
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Features Grid */
+        .features-section {
+            padding: 6rem 2rem;
+            background: var(--dark);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 4rem;
+            font-size: 1.1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: linear-gradient(145deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(99, 102, 241, 0.2);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-title-ar {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.5);
+            direction: rtl;
+            margin-bottom: 1rem;
+        }
+
+        .feature-description {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.7;
+        }
+
+        .feature-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--gradient-gold);
+            color: var(--dark);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .feature-badge.free {
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+        }
+
+        /* Differentiators Section */
+        .diff-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, var(--dark) 0%, #1e1b4b 100%);
+        }
+
+        .diff-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 900px) {
+            .diff-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .diff-card {
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .diff-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .diff-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .diff-desc {
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* Demo Section */
+        .demo-section {
+            padding: 6rem 2rem;
+            background: var(--dark);
+        }
+
+        .demo-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (max-width: 800px) {
+            .demo-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .demo-phone {
+            background: linear-gradient(145deg, #1e1b4b 0%, #312e81 100%);
+            border-radius: 40px;
+            padding: 1rem;
+            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+            transform: perspective(1000px) rotateY(-5deg);
+        }
+
+        .demo-screen {
+            background: #0f172a;
+            border-radius: 30px;
+            padding: 1.5rem;
+            min-height: 500px;
+        }
+
+        .demo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-greeting {
+            font-size: 1.2rem;
+        }
+
+        .demo-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .demo-card {
+            background: rgba(99, 102, 241, 0.1);
+            border-radius: 15px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .demo-card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .demo-progress {
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .demo-progress-fill {
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 10px;
+            animation: progressFill 2s ease-out infinite;
+        }
+
+        @keyframes progressFill {
+            0% { width: 0; }
+            100% { width: 75%; }
+        }
+
+        .demo-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-features {
+            list-style: none;
+        }
+
+        .demo-features li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .demo-features li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, var(--dark) 0%, #1e1b4b 100%);
+        }
+
+        .pricing-highlight {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .pricing-badge {
+            display: inline-block;
+            background: var(--gradient-gold);
+            color: var(--dark);
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 3rem;
+        }
+
+        .pricing-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .pricing-feature {
+            background: rgba(255,255,255,0.05);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 2rem;
+            background: var(--dark);
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .footer-text {
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Animations on Scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="logo">FORMA</h1>
+            <p class="tagline">The Ultimate Fitness Platform for the Middle East & North Africa</p>
+            <p class="tagline-ar">منصة اللياقة الأفضل للشرق الأوسط وشمال أفريقيا</p>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-label">Unique Features</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">400M+</div>
+                    <div class="stat-label">MENA Market</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">$25</div>
+                    <div class="stat-label">/Month Cost</div>
+                </div>
+            </div>
+
+            <button class="cta-button" onclick="document.querySelector('.features-section').scrollIntoView({behavior: 'smooth'})">
+                Explore Features
+            </button>
+        </div>
+    </section>
+
+    <!-- What Makes Forma Different -->
+    <section class="diff-section">
+        <h2 class="section-title reveal">What Makes Forma Different</h2>
+        <p class="section-subtitle reveal">Built specifically for MENA users, not a Western clone</p>
+
+        <div class="diff-grid">
+            <div class="diff-card reveal">
+                <div class="diff-icon">🌙</div>
+                <h3 class="diff-title">Ramadan Mode</h3>
+                <p class="diff-desc">Smart workout scheduling around fasting hours, Suhoor/Iftar meal planning, and energy-appropriate exercises</p>
+            </div>
+            <div class="diff-card reveal">
+                <div class="diff-icon">🇸🇦</div>
+                <h3 class="diff-title">Arabic-First</h3>
+                <p class="diff-desc">Full RTL support, Arabic voice coaching, MENA food database with local dishes</p>
+            </div>
+            <div class="diff-card reveal">
+                <div class="diff-icon">🏠</div>
+                <h3 class="diff-title">Cultural Fit</h3>
+                <p class="diff-desc">Gender-separated workouts, home exercises for limited gym access, family/squad features</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="features-section">
+        <h2 class="section-title reveal">12 Powerful Features</h2>
+        <p class="section-subtitle reveal">Every feature designed to help you achieve your fitness goals</p>
+
+        <div class="features-grid">
+            <!-- Feature 1: AI Form Checker -->
+            <div class="feature-card reveal">
+                <span class="feature-badge free">FREE (On-Device)</span>
+                <div class="feature-icon">🤖</div>
+                <h3 class="feature-title">AI Form Checker</h3>
+                <p class="feature-title-ar">مصحح الحركات بالذكاء الاصطناعي</p>
+                <p class="feature-description">
+                    Real-time pose detection using your camera. Get instant feedback on your exercise form with TensorFlow.js -
+                    no data leaves your device, completely private and free.
+                </p>
+            </div>
+
+            <!-- Feature 2: Voice Coach -->
+            <div class="feature-card reveal">
+                <span class="feature-badge free">FREE</span>
+                <div class="feature-icon">🎙️</div>
+                <h3 class="feature-title">Voice Coach</h3>
+                <p class="feature-title-ar">المدرب الصوتي</p>
+                <p class="feature-description">
+                    Bilingual voice guidance in English and Arabic. Counts your reps, announces rest periods,
+                    and motivates you through your workout - hands-free training.
+                </p>
+            </div>
+
+            <!-- Feature 3: What Now? -->
+            <div class="feature-card reveal">
+                <div class="feature-icon">🤔</div>
+                <h3 class="feature-title">"What Should I Do Now?"</h3>
+                <p class="feature-title-ar">ماذا أفعل الآن؟</p>
+                <p class="feature-description">
+                    Don't know what to train? Tell us your energy level, available time, and location -
+                    get an instant personalized workout targeting your neglected muscle groups.
+                </p>
+            </div>
+
+            <!-- Feature 4: Squads -->
+            <div class="feature-card reveal">
+                <div class="feature-icon">👥</div>
+                <h3 class="feature-title">Squads & Challenges</h3>
+                <p class="feature-title-ar">الفرق والتحديات</p>
+                <p class="feature-description">
+                    Create or join fitness squads with friends and family. Compete in weekly challenges,
+                    share workouts, and climb the leaderboard together. Accountability made social.
+                </p>
+            </div>
+
+            <!-- Feature 5: Gamification -->
+            <div class="feature-card reveal">
+                <div class="feature-icon">🎮</div>
+                <h3 class="feature-title">XP & Levels</h3>
+                <p class="feature-title-ar">نقاط الخبرة والمستويات</p>
+                <p class="feature-description">
+                    Earn XP for every workout, achievement, and streak. Progress through 10 levels from
+                    "Beginner 🌱" to "Elite 💎". Unlock badges and compete on leaderboards.
+                </p>
+            </div>
+
+            <!-- Feature 6: Injury Modifications -->
+            <div class="feature-card reveal">
+                <div class="feature-icon">🩹</div>
+                <h3 class="feature-title">Injury-Aware Training</h3>
+                <p class="feature-title-ar">تدريب مراعي للإصابات</p>
+                <p class="feature-description">
+                    Got a shoulder injury? Knee pain? The app automatically modifies your workouts,
+                    suggests safe alternatives, and provides injury-specific warm-ups.
+                </p>
+            </div>
+
+            <!-- Feature 7: Ramadan Mode -->
+            <div class="feature-card reveal">
+                <span class="feature-badge">MENA EXCLUSIVE</span>
+                <div class="feature-icon">🌙</div>
+                <h3 class="feature-title">Ramadan Mode</h3>
+                <p class="feature-title-ar">وضع رمضان</p>
+                <p class="feature-description">
+                    Automatically adjusts workout timing, intensity, and nutrition around fasting hours.
+                    Get Suhoor/Iftar meal suggestions and fasting-appropriate exercise recommendations.
+                </p>
+            </div>
+
+            <!-- Feature 8: Health Integration -->
+            <div class="feature-card reveal">
+                <div class="feature-icon">⌚</div>
+                <h3 class="feature-title">Wearable Sync</h3>
+                <p class="feature-title-ar">مزامنة الأجهزة</p>
+                <p class="feature-description">
+                    Connect Apple Health, Google Fit, Fitbit, or Garmin. Your HRV, sleep, and stress data
+                    create a daily "Readiness Score" to optimize workout intensity.
+                </p>
+            </div>
+
+            <!-- Feature 9: Body Composition -->
+            <div class="feature-card reveal">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Body Composition</h3>
+                <p class="feature-title-ar">تركيب الجسم</p>
+                <p class="feature-description">
+                    Track weight, body fat, and measurements over time. Get BMI analysis, progress visualization,
+                    and AI-powered recommendations based on your goals.
+                </p>
+            </div>
+
+            <!-- Feature 10: Offline Mode -->
+            <div class="feature-card reveal">
+                <span class="feature-badge free">FREE (PWA)</span>
+                <div class="feature-icon">📴</div>
+                <h3 class="feature-title">Works Offline</h3>
+                <p class="feature-title-ar">يعمل بدون إنترنت</p>
+                <p class="feature-description">
+                    Full PWA with offline support. Log workouts without internet - they sync automatically
+                    when you're back online. Never miss tracking a session.
+                </p>
+            </div>
+
+            <!-- Feature 11: Real-time Chat -->
+            <div class="feature-card reveal">
+                <div class="feature-icon">💬</div>
+                <h3 class="feature-title">Coach Messaging</h3>
+                <p class="feature-title-ar">محادثة المدرب</p>
+                <p class="feature-description">
+                    Chat with your trainer using text, voice notes, and images. Built-in content moderation
+                    ensures a safe environment. Share your progress instantly.
+                </p>
+            </div>
+
+            <!-- Feature 12: AI Workout Generation -->
+            <div class="feature-card reveal">
+                <div class="feature-icon">✨</div>
+                <h3 class="feature-title">AI Workout Plans</h3>
+                <p class="feature-title-ar">خطط تدريب بالذكاء الاصطناعي</p>
+                <p class="feature-description">
+                    Tell us your goals, experience, and available equipment. Our AI creates a complete
+                    personalized workout plan in seconds - with Arabic translations included.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <h2 class="section-title reveal">See It In Action</h2>
+        <p class="section-subtitle reveal">A glimpse into the Forma experience</p>
+
+        <div class="demo-container">
+            <div class="demo-phone reveal">
+                <div class="demo-screen">
+                    <div class="demo-header">
+                        <div class="demo-greeting">
+                            مرحباً، أحمد! 👋
+                        </div>
+                        <div class="demo-avatar">💪</div>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-card-title">
+                            <span>🔥</span> 7-Day Streak
+                        </div>
+                        <div class="demo-progress">
+                            <div class="demo-progress-fill" style="width: 70%"></div>
+                        </div>
+                        <small style="color: rgba(255,255,255,0.5)">+100 XP Bonus!</small>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-card-title">
+                            <span>🎯</span> Today's Workout
+                        </div>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7)">Upper Body Focus</p>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.5)">45 min • 6 exercises</p>
+                    </div>
+
+                    <div class="demo-card" style="background: rgba(245, 158, 11, 0.2);">
+                        <div class="demo-card-title">
+                            <span>🌙</span> Ramadan Mode Active
+                        </div>
+                        <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7)">Workout scheduled for after Iftar</p>
+                    </div>
+
+                    <div class="demo-card">
+                        <div class="demo-card-title">
+                            <span>⚡</span> Readiness Score
+                        </div>
+                        <p style="font-size: 2rem; font-weight: 700; color: #10b981;">85</p>
+                        <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5)">Great for intense workout!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="demo-content reveal">
+                <h3>Everything You Need</h3>
+                <ul class="demo-features">
+                    <li>Personalized workout plans</li>
+                    <li>Real-time form correction</li>
+                    <li>Progress tracking & analytics</li>
+                    <li>Social challenges with friends</li>
+                    <li>Arabic & English support</li>
+                    <li>Offline-first PWA</li>
+                    <li>Coach messaging</li>
+                    <li>Wearable integration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="pricing-highlight reveal">
+            <div class="pricing-badge">Budget-Friendly Infrastructure</div>
+            <h2 class="pricing-title">Built for Scale</h2>
+            <p class="pricing-subtitle">
+                Railway ($20/mo) + Supabase ($25/mo) = Full platform for 50,000+ users
+            </p>
+
+            <div class="pricing-features">
+                <div class="pricing-feature">
+                    <strong>On-Device AI</strong><br>
+                    <small>No GPU costs</small>
+                </div>
+                <div class="pricing-feature">
+                    <strong>Web Speech API</strong><br>
+                    <small>Free voice features</small>
+                </div>
+                <div class="pricing-feature">
+                    <strong>PWA</strong><br>
+                    <small>No app store fees</small>
+                </div>
+                <div class="pricing-feature">
+                    <strong>Cloudinary Free</strong><br>
+                    <small>25GB/mo storage</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">FORMA</div>
+        <p class="footer-text">The Future of Fitness in MENA</p>
+        <p class="footer-text" style="margin-top: 1rem; font-family: 'Cairo', sans-serif;">مستقبل اللياقة في الشرق الأوسط</p>
+    </footer>
+
+    <script>
+        // Reveal on scroll
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Run once on load
+    </script>
+</body>
+</html>

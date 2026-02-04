@@ -159,7 +159,7 @@ export const authApi = {
 export const usersApi = {
   getProfile: () => api.get<User>('/users/me'),
 
-  updateProfile: (data: Partial<User>) => api.patch<User>('/users/me', data),
+  updateProfile: (data: UpdateProfileData) => api.patch<User>('/users/me', data),
 
   updateOnboarding: (data: OnboardingData) =>
     api.patch<User>('/users/me/onboarding', data),
@@ -173,6 +173,10 @@ export const workoutsApi = {
 
   getPlan: (id: string) => api.get<WorkoutPlan>(`/workouts/plans/${id}`),
 
+  getActivePlan: () => api.get<WorkoutPlan | null>('/workouts/plans/active'),
+
+  activatePlan: (id: string) => api.post<WorkoutPlan>(`/workouts/plans/${id}/activate`),
+
   createPlan: (data: CreateWorkoutPlanData) =>
     api.post<WorkoutPlan>('/workouts/plans', data),
 
@@ -183,6 +187,10 @@ export const workoutsApi = {
 
   getHistory: (params?: { page?: number; limit?: number }) =>
     api.get<PaginatedResponse<WorkoutLog>>('/workouts/history', params as Record<string, string>),
+
+  // What Now? Smart Recommendation
+  getWhatNow: (data: WhatNowInput) =>
+    api.post<WhatNowRecommendation>('/workouts/what-now', data),
 };
 
 // Exercises API
@@ -220,7 +228,12 @@ export const progressApi = {
   getWeightHistory: (params?: { days?: number }) =>
     api.get<WeightLog[]>('/progress/weight', params as Record<string, string>),
 
+  getMeasurementsHistory: (params?: { limit?: number }) =>
+    api.get<MeasurementsLog[]>('/progress/measurements', params as Record<string, string>),
+
   getStrengthPRs: () => api.get<StrengthPR[]>('/progress/prs'),
+
+  getLatest: () => api.get<LatestProgress>('/progress/latest'),
 };
 
 // Stats API
@@ -257,6 +270,12 @@ export const trainersApi = {
   getRecentMessages: () => api.get<TrainerMessage[]>('/trainers/me/messages/recent'),
 };
 
+// Achievements API
+export const achievementsApi = {
+  getAll: () => api.get<Achievement[]>('/achievements'),
+  checkProgress: () => api.post<{ newlyUnlocked: string[] }>('/achievements/check'),
+};
+
 // Admin API
 export const adminApi = {
   getDashboardStats: () => api.get<AdminDashboardStats>('/admin/stats'),
@@ -269,6 +288,109 @@ export const adminApi = {
     api.patch<User>(`/admin/users/${userId}`, data),
 };
 
+// Upload API
+export const uploadApi = {
+  uploadImage: async (file: File): Promise<UploadResponse> => {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const token = getAuthCookie();
+    const response = await fetch(`${API_BASE_URL}/upload/image`, {
+      method: 'POST',
+      headers: token ? { 'Authorization': `Bearer ${token}` } : {},
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: 'Upload failed' }));
+      throw new Error(error.message || 'Upload failed');
+    }
+
+    return response.json();
+  },
+
+  uploadVoice: async (blob: Blob): Promise<UploadResponse> => {
+    const formData = new FormData();
+    formData.append('file', blob, 'voice-message.webm');
+
+    const token = getAuthCookie();
+    const response = await fetch(`${API_BASE_URL}/upload/voice`, {
+      method: 'POST',
+      headers: token ? { 'Authorization': `Bearer ${token}` } : {},
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: 'Upload failed' }));
+      throw new Error(error.message || 'Upload failed');
+    }
+
+    return response.json();
+  },
+};
+
+// Squads API
+export const squadsApi = {
+  create: (data: CreateSquadData) => api.post<Squad>('/squads', data),
+  getMySquads: () => api.get<SquadWithMeta[]>('/squads'),
+  discover: (search?: string) => api.get<Squad[]>('/squads/discover', search ? { search } : undefined),
+  getSquad: (id: string) => api.get<SquadDetails>(`/squads/${id}`),
+  join: (id: string) => api.post<{ success: boolean }>(`/squads/${id}/join`),
+  leave: (id: string) => api.delete<{ success: boolean }>(`/squads/${id}/leave`),
+  createChallenge: (squadId: string, data: CreateChallengeData) =>
+    api.post<SquadChallenge>(`/squads/${squadId}/challenges`, data),
+  getLeaderboard: (squadId: string) => api.get<LeaderboardEntry[]>(`/squads/${squadId}/leaderboard`),
+  getChallengeLeaderboard: (challengeId: string) =>
+    api.get<ChallengeLeaderboardEntry[]>(`/squads/challenges/${challengeId}/leaderboard`),
+  shareWorkout: (squadId: string, workoutLogId: string) =>
+    api.post<{ success: boolean }>(`/squads/${squadId}/share-workout`, { workoutLogId }),
+};
+
+// Settings API
+export const settingsApi = {
+  getPreferences: () => api.get<UserPreferences>('/settings/preferences'),
+
+  updatePreferences: (data: Partial<UserPreferences>) =>
+    api.put<UserPreferences>('/settings/preferences', data),
+
+  // Ramadan Mode
+  getRamadanSettings: () => api.get<RamadanSettings>('/settings/ramadan'),
+
+  enableRamadanMode: (data: RamadanModeData) =>
+    api.post<UserPreferences>('/settings/ramadan/enable', data),
+
+  disableRamadanMode: () => api.post<UserPreferences>('/settings/ramadan/disable'),
+
+  // Injuries
+  getInjuries: () => api.get<string[]>('/settings/injuries'),
+
+  updateInjuries: (injuries: string[]) =>
+    api.put<UserPreferences>('/settings/injuries', { injuries }),
+
+  // Equipment
+  updateEquipment: (equipment: string[]) =>
+    api.put<UserPreferences>('/settings/equipment', { equipment }),
+};
+
+// Chat API
+export const chatApi = {
+  createConversation: (participantId: string) =>
+    api.post<Conversation>('/chat/conversations', { participantId }),
+
+  getConversations: () => api.get<Conversation[]>('/chat/conversations'),
+
+  getMessages: (conversationId: string, params?: { cursor?: string; limit?: number }) =>
+    api.get<MessagesResponse>(`/chat/conversations/${conversationId}/messages`, params as Record<string, string>),
+
+  sendMessage: (data: SendMessageData) =>
+    api.post<ChatMessage>('/chat/messages', data),
+
+  markAsRead: (conversationId: string) =>
+    api.post<{ success: boolean }>(`/chat/conversations/${conversationId}/read`),
+
+  getUnreadCount: () => api.get<{ unreadCount: number }>('/chat/unread-count'),
+};
+
 // Types
 interface User {
   id: string;
@@ -278,6 +400,9 @@ interface User {
   role: 'user' | 'trainer' | 'admin';
   subscription?: 'free' | 'pro' | 'elite';
   createdAt: string;
+  displayName?: string;
+  language?: string;
+  measurementUnit?: string;
 }
 
 interface OnboardingData {
@@ -286,6 +411,16 @@ interface OnboardingData {
   weight?: number;
   height?: number;
   targetWeight?: number;
+}
+
+interface UpdateProfileData {
+  firstName?: string;
+  lastName?: string;
+  displayName?: string;
+  avatarUrl?: string;
+  language?: string;
+  measurementUnit?: string;
+  notificationsEnabled?: boolean;
 }
 
 interface UserStats {
@@ -479,13 +614,50 @@ interface StrengthPR {
   date: string;
 }
 
+interface MeasurementsLog {
+  id: string;
+  date: string;
+  weight?: number;
+  bodyFat?: number;
+  chest?: number;
+  waist?: number;
+  hips?: number;
+  arms?: number;
+  thighs?: number;
+}
+
+interface LatestProgress {
+  weight?: { value: number; change: number; date: string };
+  measurements?: MeasurementsData & { date: string };
+  benchPR?: { weight: number; change: number };
+}
+
+interface Achievement {
+  id: string;
+  code: string;
+  title: string;
+  titleAr?: string;
+  description: string;
+  descriptionAr?: string;
+  icon: string;
+  category: string;
+  xpReward: number;
+  unlocked: boolean;
+  unlockedAt?: string;
+  progress: number;
+  total: number;
+}
+
 interface WeeklySummary {
   workoutsCompleted: number;
+  workoutsTarget: number;
   totalVolume: number;
   caloriesAvg: number;
   proteinAvg: number;
   weightChange: number;
   streakDays: number;
+  daysOnCalorieTarget: number;
+  daysWithMeals: number;
 }
 
 interface MuscleBalance {
@@ -640,6 +812,232 @@ interface AuthResponse {
   user: User;
 }
 
+// Upload types
+interface UploadResponse {
+  success: boolean;
+  url: string;
+  publicId: string;
+  duration?: number;
+}
+
+// Chat types
+type MessageType = 'TEXT' | 'IMAGE' | 'VOICE' | 'WORKOUT_SHARE' | 'PROGRESS_SHARE';
+
+interface ChatParticipant {
+  id: string;
+  name: string;
+  avatarUrl: string | null;
+  isOnline: boolean;
+}
+
+interface ConversationLastMessage {
+  content: string;
+  createdAt: string;
+  isMine: boolean;
+}
+
+interface Conversation {
+  id: string;
+  participant: ChatParticipant | null;
+  lastMessage: ConversationLastMessage | null;
+  unreadCount: number;
+  createdAt: string;
+}
+
+interface ChatMessageSender {
+  id: string;
+  name: string;
+  avatarUrl: string | null;
+}
+
+interface ChatMessage {
+  id: string;
+  type: MessageType;
+  content: string;
+  mediaUrl?: string;
+  createdAt: string;
+  isEdited: boolean;
+  sender: ChatMessageSender;
+  isMine: boolean;
+}
+
+interface MessagesResponse {
+  messages: ChatMessage[];
+  nextCursor: string | null;
+}
+
+interface SendMessageData {
+  conversationId: string;
+  type: MessageType;
+  content: string;
+  mediaUrl?: string;
+}
+
+// Settings types
+interface UserPreferences {
+  id: string;
+  userId: string;
+  isVegetarian: boolean;
+  isVegan: boolean;
+  isKeto: boolean;
+  isPescatarian: boolean;
+  allergies: string[];
+  dislikes: string[];
+  healthConditions: string[];
+  preferLocalFoods: boolean;
+  budgetLevel: string;
+  cookingSkillLevel: string;
+  maxCookingTime: number | null;
+  ramadanModeEnabled: boolean;
+  ramadanIftarTime: string | null;
+  ramadanSuhoorTime: string | null;
+  ramadanWorkoutTiming: string;
+  injuries: string[];
+  preferredWorkoutTime: string | null;
+  availableEquipment: string[];
+  workoutDurationMins: number;
+}
+
+interface RamadanSettings {
+  enabled: boolean;
+  iftarTime: string | null;
+  suhoorTime: string | null;
+  workoutTiming: string | null;
+  recommendedWorkoutTime: string;
+  nutritionAdvice: string;
+  hydrationReminder: string | null;
+}
+
+interface RamadanModeData {
+  iftarTime: string;
+  suhoorTime: string;
+  workoutTiming: 'before_iftar' | 'after_iftar' | 'after_taraweeh' | 'before_suhoor';
+}
+
+// What Now types
+interface WhatNowInput {
+  availableMinutes?: number;
+  energyLevel?: 'low' | 'medium' | 'high';
+  location?: 'gym' | 'home' | 'outdoor';
+}
+
+interface WhatNowExercise {
+  id: string;
+  name: string;
+  nameAr?: string;
+  sets: number;
+  reps: string;
+  equipment: string;
+}
+
+interface WhatNowRecommendation {
+  type: 'quick_workout' | 'full_workout' | 'rest' | 'active_recovery';
+  title: string;
+  titleAr: string;
+  description: string;
+  descriptionAr: string;
+  durationMinutes: number;
+  targetMuscles: string[];
+  exercises: WhatNowExercise[];
+  reason: string;
+  reasonAr: string;
+}
+
+// Squad types
+interface CreateSquadData {
+  name: string;
+  description?: string;
+  isPublic?: boolean;
+  maxMembers?: number;
+}
+
+interface Squad {
+  id: string;
+  name: string;
+  description?: string;
+  imageUrl?: string;
+  isPublic: boolean;
+  maxMembers: number;
+  createdById: string;
+  createdAt: string;
+  members: SquadMember[];
+}
+
+interface SquadMember {
+  id: string;
+  squadId: string;
+  userId: string;
+  role: 'admin' | 'moderator' | 'member';
+  joinedAt: string;
+  user?: {
+    id: string;
+    name: string;
+    avatarUrl?: string;
+  };
+}
+
+interface SquadWithMeta extends Squad {
+  myRole: string;
+  memberCount: number;
+  activeChallenges: number;
+}
+
+interface SquadChallenge {
+  id: string;
+  squadId: string;
+  name: string;
+  description?: string;
+  type: string;
+  target: number;
+  startDate: string;
+  endDate: string;
+  createdAt: string;
+}
+
+interface SquadActivity {
+  id: string;
+  squadId: string;
+  userId: string;
+  type: string;
+  description: string;
+  createdAt: string;
+}
+
+interface SquadDetails extends Squad {
+  challenges: SquadChallenge[];
+  activities: SquadActivity[];
+  myRole: string | null;
+  isMember: boolean;
+  leaderboard: LeaderboardEntry[];
+}
+
+interface CreateChallengeData {
+  name: string;
+  description?: string;
+  type: 'workout_count' | 'total_volume' | 'streak_days' | 'calories_burned';
+  target: number;
+  durationDays: number;
+}
+
+interface LeaderboardEntry {
+  userId: string;
+  name: string;
+  avatarUrl?: string;
+  role: string;
+  workoutCount: number;
+  totalVolume: number;
+  score: number;
+}
+
+interface ChallengeLeaderboardEntry {
+  userId: string;
+  name: string;
+  avatarUrl?: string;
+  progress: number;
+  percentage: number;
+  completed: boolean;
+}
+
 export type {
   User,
   OnboardingData,
@@ -660,6 +1058,9 @@ export type {
   MeasurementsData,
   WeightLog,
   StrengthPR,
+  MeasurementsLog,
+  LatestProgress,
+  Achievement,
   WeeklySummary,
   MuscleBalance,
   VolumeLoadData,
@@ -680,4 +1081,27 @@ export type {
   AdminActivity,
   AdminApproval,
   SystemHealthMetric,
+  UploadResponse,
+  MessageType,
+  ChatParticipant,
+  Conversation,
+  ChatMessage,
+  MessagesResponse,
+  SendMessageData,
+  UserPreferences,
+  RamadanSettings,
+  RamadanModeData,
+  WhatNowInput,
+  WhatNowExercise,
+  WhatNowRecommendation,
+  CreateSquadData,
+  Squad,
+  SquadMember,
+  SquadWithMeta,
+  SquadChallenge,
+  SquadActivity,
+  SquadDetails,
+  CreateChallengeData,
+  LeaderboardEntry,
+  ChallengeLeaderboardEntry,
 };

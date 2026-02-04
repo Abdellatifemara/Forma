@@ -54,6 +54,13 @@ export class StatsService {
       },
     });
 
+    // Group meals by day to calculate daily totals
+    const dailyCalories: Record<string, number> = {};
+    mealLogs.forEach((meal) => {
+      const dateKey = meal.loggedAt.toISOString().split('T')[0];
+      dailyCalories[dateKey] = (dailyCalories[dateKey] || 0) + (meal.totalCalories || 0);
+    });
+
     const nutritionTotals = mealLogs.reduce(
       (acc, meal) => ({
         calories: acc.calories + (meal.totalCalories || 0),
@@ -64,9 +71,16 @@ export class StatsService {
       { calories: 0, protein: 0, carbs: 0, fat: 0 },
     );
 
-    const daysWithMeals = new Set(
-      mealLogs.map((m) => m.loggedAt.toISOString().split('T')[0]),
-    ).size;
+    const daysWithMeals = Object.keys(dailyCalories).length;
+
+    // Use a default calorie goal (could be calculated from TDEE in future)
+    // Note: A more accurate implementation would calculate based on user's TDEE
+    const calorieGoal = 2000;
+
+    // Count days where calories were within 10% of goal
+    const daysOnCalorieTarget = Object.values(dailyCalories).filter(
+      (cals) => cals >= calorieGoal * 0.9 && cals <= calorieGoal * 1.1,
+    ).length;
 
     // Get weight change
     const latestWeight = await this.prisma.progressLog.findFirst({
@@ -109,6 +123,7 @@ export class StatsService {
     // Return in the format the frontend expects
     return {
       workoutsCompleted: workouts.length,
+      workoutsTarget,
       totalVolume: Math.round(totalVolume),
       caloriesAvg: daysWithMeals > 0 ? Math.round(nutritionTotals.calories / daysWithMeals) : 0,
       proteinAvg: daysWithMeals > 0 ? Math.round(nutritionTotals.protein / daysWithMeals) : 0,
@@ -116,13 +131,14 @@ export class StatsService {
         ? Math.round((latestWeight.weightKg - weekAgoWeight.weightKg) * 10) / 10
         : 0,
       streakDays: streak?.currentCount || 0,
+      daysOnCalorieTarget,
+      daysWithMeals,
       // Include additional data for future use
       _extended: {
-        workoutsTarget,
         volumeByMuscle,
         currentWeight: latestWeight?.weightKg || null,
         longestStreak: streak?.longestCount || 0,
-        daysWithMeals,
+        calorieGoal,
       },
     };
     } catch (error) {
@@ -130,17 +146,19 @@ export class StatsService {
       // Return default values if there's an error
       return {
         workoutsCompleted: 0,
+        workoutsTarget: 4,
         totalVolume: 0,
         caloriesAvg: 0,
         proteinAvg: 0,
         weightChange: 0,
         streakDays: 0,
+        daysOnCalorieTarget: 0,
+        daysWithMeals: 0,
         _extended: {
-          workoutsTarget: 4,
           volumeByMuscle: {},
           currentWeight: null,
           longestStreak: 0,
-          daysWithMeals: 0,
+          calorieGoal: 2000,
         },
       };
     }

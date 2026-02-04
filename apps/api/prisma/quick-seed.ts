@@ -77,6 +77,7 @@ async function main() {
             externalId: ex.id,
             nameEn: ex.name_en,
             nameAr: ex.name_ar,
+            category: ex.category?.toUpperCase() || 'STRENGTH',
             primaryMuscle: ex.primary_muscle,
             secondaryMuscles: ex.secondary_muscles || [],
             equipment: ex.equipment || [],

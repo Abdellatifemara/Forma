@@ -332,22 +332,22 @@ async function loadAchievements() {
 
   const achievements = [
     // Workout achievements
-    { code: 'FIRST_WORKOUT', nameEn: 'First Step', nameAr: 'الخطوة الأولى', descriptionEn: 'Complete your first workout', descriptionAr: 'أكمل أول تمرين لك', category: 'workout', requirement: { type: 'workouts_completed', value: 1 }, xpReward: 50 },
-    { code: 'WORKOUT_10', nameEn: 'Getting Started', nameAr: 'بداية الطريق', descriptionEn: 'Complete 10 workouts', descriptionAr: 'أكمل 10 تمارين', category: 'workout', requirement: { type: 'workouts_completed', value: 10 }, xpReward: 100 },
-    { code: 'WORKOUT_50', nameEn: 'Dedicated', nameAr: 'مثابر', descriptionEn: 'Complete 50 workouts', descriptionAr: 'أكمل 50 تمرين', category: 'workout', requirement: { type: 'workouts_completed', value: 50 }, xpReward: 250 },
-    { code: 'WORKOUT_100', nameEn: 'Century Club', nameAr: 'نادي المئة', descriptionEn: 'Complete 100 workouts', descriptionAr: 'أكمل 100 تمرين', category: 'workout', requirement: { type: 'workouts_completed', value: 100 }, xpReward: 500 },
+    { code: 'first_workout', nameEn: 'First Workout', nameAr: 'أول تمرين', descriptionEn: 'Complete your first workout', descriptionAr: 'أكمل أول تمرين لك', category: 'workout', requirement: { type: 'workout_count', target: 1 }, xpReward: 50, iconUrl: 'dumbbell' },
+    { code: 'workout_10', nameEn: 'Getting Started', nameAr: 'البداية', descriptionEn: 'Complete 10 workouts', descriptionAr: 'أكمل 10 تمارين', category: 'workout', requirement: { type: 'workout_count', target: 10 }, xpReward: 100, iconUrl: 'dumbbell' },
+    { code: 'workout_50', nameEn: 'Dedicated', nameAr: 'مخلص', descriptionEn: 'Complete 50 workouts', descriptionAr: 'أكمل 50 تمرين', category: 'workout', requirement: { type: 'workout_count', target: 50 }, xpReward: 300, iconUrl: 'dumbbell' },
+    { code: 'century_club', nameEn: 'Century Club', nameAr: 'نادي المئة', descriptionEn: 'Complete 100 workouts', descriptionAr: 'أكمل 100 تمرين', category: 'workout', requirement: { type: 'workout_count', target: 100 }, xpReward: 1000, iconUrl: 'medal' },
+    { code: 'early_bird', nameEn: 'Early Bird', nameAr: 'الطائر المبكر', descriptionEn: 'Complete 5 workouts before 8 AM', descriptionAr: 'أكمل 5 تمارين قبل الساعة 8 صباحاً', category: 'workout', requirement: { type: 'early_workout_count', target: 5 }, xpReward: 100, iconUrl: 'zap' },
 
     // Streak achievements
-    { code: 'STREAK_7', nameEn: 'Week Warrior', nameAr: 'محارب الأسبوع', descriptionEn: '7 day workout streak', descriptionAr: 'سلسلة تمارين 7 أيام', category: 'streak', requirement: { type: 'workout_streak', value: 7 }, xpReward: 150 },
-    { code: 'STREAK_30', nameEn: 'Monthly Master', nameAr: 'سيد الشهر', descriptionEn: '30 day workout streak', descriptionAr: 'سلسلة تمارين 30 يوم', category: 'streak', requirement: { type: 'workout_streak', value: 30 }, xpReward: 500 },
+    { code: 'streak_7', nameEn: '7 Day Streak', nameAr: 'سلسلة 7 أيام', descriptionEn: 'Work out 7 days in a row', descriptionAr: 'تمرن 7 أيام متتالية', category: 'streak', requirement: { type: 'streak', target: 7 }, xpReward: 100, iconUrl: 'flame' },
+    { code: 'streak_30', nameEn: '30 Day Streak', nameAr: 'سلسلة 30 يوم', descriptionEn: 'Work out 30 days in a row', descriptionAr: 'تمرن 30 يوم متتالي', category: 'streak', requirement: { type: 'streak', target: 30 }, xpReward: 500, iconUrl: 'star' },
 
     // Nutrition achievements
-    { code: 'FIRST_MEAL', nameEn: 'Fuel Up', nameAr: 'زود طاقتك', descriptionEn: 'Log your first meal', descriptionAr: 'سجل أول وجبة لك', category: 'nutrition', requirement: { type: 'meals_logged', value: 1 }, xpReward: 25 },
-    { code: 'PROTEIN_GOAL', nameEn: 'Protein King', nameAr: 'ملك البروتين', descriptionEn: 'Hit protein goal 7 days in a row', descriptionAr: 'حقق هدف البروتين 7 أيام متتالية', category: 'nutrition', requirement: { type: 'protein_streak', value: 7 }, xpReward: 200 },
+    { code: 'calorie_goal_7', nameEn: 'Goal Crusher', nameAr: 'محطم الأهداف', descriptionEn: 'Hit your calorie goal 7 days in a row', descriptionAr: 'حقق هدف السعرات 7 أيام متتالية', category: 'nutrition', requirement: { type: 'calorie_goal_streak', target: 7 }, xpReward: 150, iconUrl: 'target' },
+    { code: 'meal_logger', nameEn: 'Meal Logger', nameAr: 'مسجل الوجبات', descriptionEn: 'Log 50 meals', descriptionAr: 'سجل 50 وجبة', category: 'nutrition', requirement: { type: 'meal_log_count', target: 50 }, xpReward: 150, iconUrl: 'utensils' },
 
     // Progress achievements
-    { code: 'FIRST_PROGRESS', nameEn: 'Tracking Progress', nameAr: 'تتبع التقدم', descriptionEn: 'Log your first progress photo', descriptionAr: 'سجل أول صورة تقدم', category: 'progress', requirement: { type: 'progress_photos', value: 1 }, xpReward: 50 },
-    { code: 'WEIGHT_GOAL', nameEn: 'Goal Getter', nameAr: 'محقق الأهداف', descriptionEn: 'Reach your target weight', descriptionAr: 'وصلت لوزنك المستهدف', category: 'progress', requirement: { type: 'weight_goal_reached', value: 1 }, xpReward: 1000 },
+    { code: 'weight_logged', nameEn: 'Tracking Progress', nameAr: 'تتبع التقدم', descriptionEn: 'Log your weight for the first time', descriptionAr: 'سجل وزنك لأول مرة', category: 'progress', requirement: { type: 'weight_log_count', target: 1 }, xpReward: 25, iconUrl: 'scale' },
   ];
 
   for (const achievement of achievements) {

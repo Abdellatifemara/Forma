@@ -2,6 +2,7 @@ import { Controller, Get, Post, Put, Param, Body, Query, UseGuards } from '@nest
 import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { WorkoutsService } from './workouts.service';
+import { AchievementsService } from '../achievements/achievements.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
@@ -13,7 +14,10 @@ import { LogWorkoutDto } from './dto/log-workout.dto';
 @UseGuards(JwtAuthGuard)
 @Controller('workouts')
 export class WorkoutsController {
-  constructor(private readonly workoutsService: WorkoutsService) {}
+  constructor(
+    private readonly workoutsService: WorkoutsService,
+    private readonly achievementsService: AchievementsService,
+  ) {}
 
   @Get('plans')
   @ApiOperation({ summary: 'Get all workout plans for current user' })
@@ -52,6 +56,13 @@ export class WorkoutsController {
     return this.workoutsService.getPlanById(id, user.id);
   }
 
+  @Post('plans/:id/activate')
+  @ApiOperation({ summary: 'Activate a workout plan' })
+  @ApiResponse({ status: 200, description: 'Plan activated successfully' })
+  async activatePlan(@CurrentUser() user: User, @Param('id') id: string) {
+    return this.workoutsService.activatePlan(user.id, id);
+  }
+
   @Get('today')
   @ApiOperation({ summary: 'Get todays workout based on active plan' })
   @ApiResponse({ status: 200, description: 'Returns todays workout or rest day info' })
@@ -59,6 +70,20 @@ export class WorkoutsController {
   @CacheTTL(300)
   async getTodaysWorkout(@CurrentUser() user: User) {
     return this.workoutsService.getTodaysWorkout(user.id);
+  }
+
+  @Post('what-now')
+  @ApiOperation({ summary: 'Get smart workout recommendation based on user state and history' })
+  @ApiResponse({ status: 200, description: 'Returns personalized workout recommendation' })
+  async getWhatNow(
+    @CurrentUser() user: User,
+    @Body() input: {
+      availableMinutes?: number;
+      energyLevel?: 'low' | 'medium' | 'high';
+      location?: 'gym' | 'home' | 'outdoor';
+    },
+  ) {
+    return this.workoutsService.getWhatNow(user.id, input);
   }
 
   @Post('start/:workoutId')
@@ -79,7 +104,10 @@ export class WorkoutsController {
     @Param('logId') logId: string,
     @Body() data: { rating?: number; notes?: string },
   ) {
-    return this.workoutsService.completeWorkout(user.id, logId, data);
+    const result = await this.workoutsService.completeWorkout(user.id, logId, data);
+    // Check achievements in background (don't await to keep response fast)
+    this.achievementsService.checkAndUpdateAchievements(user.id).catch(() => {});
+    return result;
   }
 
   @Post('logs/:logId/sets')
@@ -128,6 +156,9 @@ export class WorkoutsController {
     @CurrentUser() user: User,
     @Body() logWorkoutDto: LogWorkoutDto,
   ) {
-    return this.workoutsService.logManualWorkout(user.id, logWorkoutDto);
+    const result = await this.workoutsService.logManualWorkout(user.id, logWorkoutDto);
+    // Check achievements in background
+    this.achievementsService.checkAndUpdateAchievements(user.id).catch(() => {});
+    return result;
   }
 }

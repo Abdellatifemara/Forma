@@ -1,8 +1,34 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { WorkoutPlan, Workout, WorkoutLog, WorkoutStatus, Prisma } from '@prisma/client';
+import { WorkoutPlan, Workout, WorkoutLog, WorkoutStatus, Prisma, MuscleGroup } from '@prisma/client';
 import { CreateWorkoutPlanDto } from './dto/create-workout-plan.dto';
 import { LogWorkoutDto } from './dto/log-workout.dto';
+
+interface WhatNowInput {
+  availableMinutes?: number;  // How much time user has
+  energyLevel?: 'low' | 'medium' | 'high';  // User's current energy
+  location?: 'gym' | 'home' | 'outdoor';  // Where they'll workout
+}
+
+export interface WhatNowRecommendation {
+  type: 'quick_workout' | 'full_workout' | 'rest' | 'active_recovery';
+  title: string;
+  titleAr: string;
+  description: string;
+  descriptionAr: string;
+  durationMinutes: number;
+  targetMuscles: string[];
+  exercises: {
+    id: string;
+    name: string;
+    nameAr?: string;
+    sets: number;
+    reps: string;
+    equipment: string;
+  }[];
+  reason: string;
+  reasonAr: string;
+}
 
 @Injectable()
 export class WorkoutsService {
@@ -59,6 +85,43 @@ export class WorkoutsService {
               include: {
                 exercise: true,
               },
+              orderBy: { order: 'asc' },
+            },
+          },
+          orderBy: [{ weekNumber: 'asc' }, { dayOfWeek: 'asc' }],
+        },
+      },
+    });
+  }
+
+  async activatePlan(userId: string, planId: string): Promise<WorkoutPlan> {
+    // Verify the plan belongs to the user
+    const plan = await this.prisma.workoutPlan.findFirst({
+      where: { id: planId, userId },
+    });
+
+    if (!plan) {
+      throw new NotFoundException('Workout plan not found');
+    }
+
+    // Deactivate all other plans
+    await this.prisma.workoutPlan.updateMany({
+      where: { userId, isActive: true },
+      data: { isActive: false },
+    });
+
+    // Activate the selected plan and set start date to today
+    return this.prisma.workoutPlan.update({
+      where: { id: planId },
+      data: {
+        isActive: true,
+        startDate: new Date(),
+      },
+      include: {
+        workouts: {
+          include: {
+            exercises: {
+              include: { exercise: true },
               orderBy: { order: 'asc' },
             },
           },
@@ -360,6 +423,262 @@ export class WorkoutsService {
     });
 
     return plan;
+  }
+
+  // "What Now?" Smart Workout Recommendation
+  async getWhatNow(userId: string, input: WhatNowInput): Promise<WhatNowRecommendation> {
+    const availableMinutes = input.availableMinutes || 30;
+    const energyLevel = input.energyLevel || 'medium';
+    const location = input.location || 'gym';
+
+    // Get user preferences (injuries, equipment)
+    const userPrefs = await this.prisma.userAIPreference.findUnique({
+      where: { userId },
+    });
+
+    const injuries = userPrefs?.injuries || [];
+    const availableEquipment = userPrefs?.availableEquipment || [];
+
+    // Get recent workout history (last 7 days)
+    const sevenDaysAgo = new Date();
+    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+
+    const recentLogs = await this.prisma.workoutLog.findMany({
+      where: {
+        userId,
+        status: 'COMPLETED',
+        completedAt: { gte: sevenDaysAgo },
+      },
+      include: {
+        exerciseLogs: {
+          include: { exercise: true },
+        },
+      },
+    });
+
+    // Analyze which muscles have been worked recently
+    const muscleWorkCount = new Map<string, number>();
+    const allMuscles = [
+      'CHEST', 'BACK', 'SHOULDERS', 'BICEPS', 'TRICEPS',
+      'ABS', 'QUADRICEPS', 'HAMSTRINGS', 'GLUTES', 'CALVES',
+    ];
+
+    allMuscles.forEach(m => muscleWorkCount.set(m, 0));
+
+    recentLogs.forEach(log => {
+      log.exerciseLogs.forEach(exLog => {
+        const muscle = exLog.exercise?.primaryMuscle;
+        if (muscle) {
+          muscleWorkCount.set(muscle, (muscleWorkCount.get(muscle) || 0) + 1);
+        }
+      });
+    });
+
+    // Find neglected muscles (worked least in last 7 days)
+    const sortedMuscles = [...muscleWorkCount.entries()]
+      .filter(([muscle]) => !this.isMuscleAffectedByInjury(muscle, injuries))
+      .sort((a, b) => a[1] - b[1]);
+
+    const neglectedMuscles = sortedMuscles.slice(0, 3).map(([m]) => m);
+
+    // Check if user needs rest
+    const workoutsInLast3Days = recentLogs.filter(log => {
+      const threeDaysAgo = new Date();
+      threeDaysAgo.setDate(threeDaysAgo.getDate() - 3);
+      return log.completedAt && log.completedAt >= threeDaysAgo;
+    }).length;
+
+    // Recommend rest if overtrained or low energy
+    if (workoutsInLast3Days >= 4 || (energyLevel === 'low' && workoutsInLast3Days >= 2)) {
+      return this.generateRestRecommendation(energyLevel);
+    }
+
+    // Get exercises for neglected muscles
+    const exercises = await this.getExercisesForMuscles(
+      neglectedMuscles,
+      location,
+      availableEquipment,
+      injuries,
+      availableMinutes,
+      energyLevel,
+    );
+
+    // Generate recommendation
+    const workoutType = availableMinutes < 20 ? 'quick_workout' : 'full_workout';
+    const muscleNames = neglectedMuscles.join(', ').toLowerCase();
+
+    return {
+      type: workoutType,
+      title: availableMinutes < 20
+        ? `Quick ${this.formatMuscle(neglectedMuscles[0])} Blast`
+        : `${this.formatMuscle(neglectedMuscles[0])} & ${this.formatMuscle(neglectedMuscles[1] || neglectedMuscles[0])} Focus`,
+      titleAr: availableMinutes < 20
+        ? `تمرين سريع للـ${this.getMuscleArabic(neglectedMuscles[0])}`
+        : `تركيز على ${this.getMuscleArabic(neglectedMuscles[0])} و${this.getMuscleArabic(neglectedMuscles[1] || neglectedMuscles[0])}`,
+      description: `A ${availableMinutes}-minute workout targeting your ${muscleNames} - areas you haven't trained recently.`,
+      descriptionAr: `تمرين ${availableMinutes} دقيقة يستهدف ${muscleNames} - مناطق لم تتدرب عليها مؤخراً`,
+      durationMinutes: availableMinutes,
+      targetMuscles: neglectedMuscles,
+      exercises,
+      reason: this.generateReason(neglectedMuscles, workoutsInLast3Days, energyLevel),
+      reasonAr: this.generateReasonAr(neglectedMuscles, workoutsInLast3Days, energyLevel),
+    };
+  }
+
+  private isMuscleAffectedByInjury(muscle: string, injuries: string[]): boolean {
+    const injuryMuscleMap: Record<string, string[]> = {
+      'shoulder': ['SHOULDERS', 'CHEST', 'BACK'],
+      'knee': ['QUADRICEPS', 'HAMSTRINGS', 'GLUTES', 'CALVES'],
+      'lower_back': ['BACK', 'HAMSTRINGS', 'GLUTES', 'ABS'],
+      'elbow': ['BICEPS', 'TRICEPS', 'FOREARMS'],
+      'wrist': ['BICEPS', 'TRICEPS', 'FOREARMS', 'CHEST'],
+      'ankle': ['CALVES', 'QUADRICEPS', 'HAMSTRINGS'],
+      'hip': ['GLUTES', 'QUADRICEPS', 'HAMSTRINGS', 'ABS'],
+      'neck': ['SHOULDERS', 'BACK'],
+    };
+
+    return injuries.some(injury => {
+      const affectedMuscles = injuryMuscleMap[injury.toLowerCase()] || [];
+      return affectedMuscles.includes(muscle);
+    });
+  }
+
+  private async getExercisesForMuscles(
+    muscles: string[],
+    location: string,
+    equipment: string[],
+    injuries: string[],
+    availableMinutes: number,
+    energyLevel: string,
+  ) {
+    // Determine equipment filter based on location
+    const equipmentFilter = location === 'home'
+      ? ['BODYWEIGHT', 'DUMBBELLS', 'RESISTANCE_BANDS', ...equipment]
+      : location === 'outdoor'
+        ? ['BODYWEIGHT', 'NONE']
+        : undefined; // gym has everything
+
+    // Determine difficulty based on energy
+    const difficultyFilter = energyLevel === 'low'
+      ? ['BEGINNER', 'INTERMEDIATE']
+      : energyLevel === 'high'
+        ? ['INTERMEDIATE', 'ADVANCED']
+        : ['BEGINNER', 'INTERMEDIATE', 'ADVANCED'];
+
+    // Calculate how many exercises we can fit
+    const avgTimePerExercise = energyLevel === 'high' ? 5 : energyLevel === 'low' ? 7 : 6;
+    const maxExercises = Math.floor(availableMinutes / avgTimePerExercise);
+    const exercisesPerMuscle = Math.max(1, Math.floor(maxExercises / muscles.length));
+
+    const result: any[] = [];
+
+    for (const muscle of muscles) {
+      const whereClause: Prisma.ExerciseWhereInput = {
+        primaryMuscle: muscle as MuscleGroup,
+        difficulty: { in: difficultyFilter as any[] },
+      };
+
+      if (equipmentFilter) {
+        // For array fields, use hasSome to find exercises that use any of the available equipment
+        whereClause.equipment = { hasSome: equipmentFilter as any[] };
+      }
+
+      const exercises = await this.prisma.exercise.findMany({
+        where: whereClause,
+        take: exercisesPerMuscle,
+        orderBy: { id: 'asc' }, // Simple ordering, could be random
+      });
+
+      exercises.forEach(ex => {
+        // Adjust sets/reps based on energy level
+        const sets = energyLevel === 'low' ? 2 : energyLevel === 'high' ? 4 : 3;
+        const reps = energyLevel === 'low' ? '8-10' : energyLevel === 'high' ? '10-15' : '10-12';
+
+        result.push({
+          id: ex.id,
+          name: ex.nameEn,
+          nameAr: ex.nameAr,
+          sets,
+          reps,
+          equipment: ex.equipment,
+        });
+      });
+
+      if (result.length >= maxExercises) break;
+    }
+
+    return result.slice(0, maxExercises);
+  }
+
+  private generateRestRecommendation(energyLevel: string): WhatNowRecommendation {
+    if (energyLevel === 'low') {
+      return {
+        type: 'rest',
+        title: 'Rest Day Recommended',
+        titleAr: 'يوم راحة موصى به',
+        description: 'Your body needs recovery. Take today off and come back stronger tomorrow.',
+        descriptionAr: 'جسمك يحتاج للتعافي. خذ راحة اليوم وعد أقوى غداً',
+        durationMinutes: 0,
+        targetMuscles: [],
+        exercises: [],
+        reason: 'You\'ve been training hard and your energy is low. Rest is when muscles grow!',
+        reasonAr: 'لقد كنت تتدرب بجد وطاقتك منخفضة. الراحة هي وقت نمو العضلات!',
+      };
+    }
+
+    return {
+      type: 'active_recovery',
+      title: 'Active Recovery',
+      titleAr: 'تعافي نشط',
+      description: 'Light movement to help recovery. Focus on mobility and stretching.',
+      descriptionAr: 'حركة خفيفة للمساعدة في التعافي. ركز على المرونة والتمدد',
+      durationMinutes: 20,
+      targetMuscles: ['FULL_BODY'],
+      exercises: [
+        { id: 'foam-roll', name: 'Foam Rolling', nameAr: 'تدليك بالأسطوانة', sets: 1, reps: '5 min', equipment: 'FOAM_ROLLER' },
+        { id: 'hip-stretch', name: 'Hip Flexor Stretch', nameAr: 'تمدد عضلات الورك', sets: 2, reps: '30 sec each', equipment: 'NONE' },
+        { id: 'cat-cow', name: 'Cat-Cow Stretch', nameAr: 'تمدد القط-البقرة', sets: 2, reps: '10 reps', equipment: 'NONE' },
+        { id: 'walk', name: 'Light Walk', nameAr: 'مشي خفيف', sets: 1, reps: '10 min', equipment: 'NONE' },
+      ],
+      reason: 'You\'ve trained 4+ times in 3 days. Active recovery helps without adding stress.',
+      reasonAr: 'تدربت 4+ مرات في 3 أيام. التعافي النشط يساعد دون إضافة ضغط',
+    };
+  }
+
+  private formatMuscle(muscle: string): string {
+    return muscle.charAt(0) + muscle.slice(1).toLowerCase().replace('_', ' ');
+  }
+
+  private getMuscleArabic(muscle: string): string {
+    const arabicNames: Record<string, string> = {
+      'CHEST': 'صدر',
+      'BACK': 'ظهر',
+      'SHOULDERS': 'أكتاف',
+      'BICEPS': 'بايسبس',
+      'TRICEPS': 'ترايسبس',
+      'ABS': 'بطن',
+      'QUADRICEPS': 'فخذ أمامي',
+      'HAMSTRINGS': 'فخذ خلفي',
+      'GLUTES': 'أرداف',
+      'CALVES': 'سمانة',
+    };
+    return arabicNames[muscle] || muscle;
+  }
+
+  private generateReason(muscles: string[], recentWorkouts: number, energy: string): string {
+    const muscleStr = muscles.map(m => this.formatMuscle(m)).join(' and ');
+    if (recentWorkouts === 0) {
+      return `You haven't worked out in a while. This ${muscleStr} workout is perfect to get back on track!`;
+    }
+    return `Your ${muscleStr} haven't been trained in the last 7 days. Time to give them attention!`;
+  }
+
+  private generateReasonAr(muscles: string[], recentWorkouts: number, energy: string): string {
+    const muscleStr = muscles.map(m => this.getMuscleArabic(m)).join(' و');
+    if (recentWorkouts === 0) {
+      return `لم تتمرن منذ فترة. هذا التمرين للـ${muscleStr} مثالي للعودة!`;
+    }
+    return `لم تتدرب على ${muscleStr} في الأيام السبعة الماضية. حان وقت الاهتمام بها!`;
   }
 
   // Log Manual Workout

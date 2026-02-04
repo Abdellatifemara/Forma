@@ -14,6 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://formaeg.com'),
   title: {
     default: 'Forma - Shape Your Future',
     template: '%s | Forma',

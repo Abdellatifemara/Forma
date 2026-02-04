@@ -33,10 +33,14 @@ model User {
   language              String                    @default("en")
   measurementUnit       String                    @default("metric")
   notificationsEnabled  Boolean                   @default(true)
+  // Content moderation
+  bannedAt              DateTime?
+  uploadBanReason       String?
   createdAt             DateTime                  @default(now())
   updatedAt             DateTime                  @updatedAt
   lastActiveAt          DateTime                  @default(now())
   onboardingCompletedAt DateTime?
+  contentViolations     ContentViolation[]
   conversations         ConversationParticipant[]
   mealLogs              MealLog[]
   mealPlans             MealPlan[]
@@ -83,7 +87,19 @@ model UserAIPreference {
   budgetLevel       String   @default("moderate")
   cookingSkillLevel String   @default("intermediate")
   maxCookingTime    Int      @default(30)
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  // Ramadan Mode Settings
+  ramadanModeEnabled    Boolean  @default(false)
+  ramadanIftarTime      String?  // e.g., "18:30"
+  ramadanSuhoorTime     String?  // e.g., "04:00"
+  ramadanWorkoutTiming  String   @default("after_iftar") // before_iftar, after_iftar, after_taraweeh, before_suhoor
+  ramadanFastingDays    String[] @default([]) // track which days user is fasting
+  // Injury Settings
+  injuries              String[] @default([]) // e.g., ["knee", "lower_back", "shoulder"]
+  // Workout Preferences
+  preferredWorkoutTime  String?  // e.g., "morning", "afternoon", "evening"
+  availableEquipment    String[] @default([])
+  workoutDurationMins   Int      @default(45)
+  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Exercise {
@@ -592,6 +608,85 @@ model Video {
 
   @@index([category])
   @@index([isActive])
+}
+
+// Squad/Group Accountability System
+model Squad {
+  id          String        @id @default(cuid())
+  name        String
+  description String?
+  imageUrl    String?
+  isPublic    Boolean       @default(true)
+  maxMembers  Int           @default(20)
+  createdById String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  members     SquadMember[]
+  activities  SquadActivity[]
+  challenges  SquadChallenge[]
+
+  @@index([isPublic])
+}
+
+model SquadMember {
+  id        String   @id @default(cuid())
+  squadId   String
+  userId    String
+  role      String   @default("member") // admin, moderator, member
+  joinedAt  DateTime @default(now())
+  squad     Squad    @relation(fields: [squadId], references: [id], onDelete: Cascade)
+
+  @@unique([squadId, userId])
+  @@index([userId])
+}
+
+model SquadActivity {
+  id          String   @id @default(cuid())
+  squadId     String
+  userId      String
+  type        String   // workout_completed, streak_milestone, challenge_joined, etc.
+  description String
+  metadata    Json?
+  createdAt   DateTime @default(now())
+  squad       Squad    @relation(fields: [squadId], references: [id], onDelete: Cascade)
+
+  @@index([squadId])
+  @@index([createdAt])
+}
+
+model SquadChallenge {
+  id          String    @id @default(cuid())
+  squadId     String
+  name        String
+  description String?
+  type        String    // workout_count, total_volume, streak_days, etc.
+  target      Int
+  startDate   DateTime
+  endDate     DateTime
+  createdAt   DateTime  @default(now())
+  squad       Squad     @relation(fields: [squadId], references: [id], onDelete: Cascade)
+
+  @@index([squadId])
+  @@index([endDate])
+}
+
+// Content Moderation
+model ContentViolation {
+  id          String   @id @default(cuid())
+  userId      String
+  resourceId  String   // Cloudinary public_id or message ID
+  type        String   // IMAGE, VIDEO, TEXT
+  reason      String
+  detectedAt  DateTime
+  reviewedAt  DateTime?
+  reviewedBy  String?
+  action      String?  // warned, banned, cleared
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([reviewedAt])
 }
 
 enum UserRole {

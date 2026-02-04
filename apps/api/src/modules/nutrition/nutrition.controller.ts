@@ -2,6 +2,7 @@ import { Controller, Get, Post, Delete, Param, Query, Body, UseGuards } from '@n
 import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { NutritionService } from './nutrition.service';
+import { AchievementsService } from '../achievements/achievements.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { Public } from '../auth/decorators/public.decorator';
@@ -10,7 +11,10 @@ import { User, MealType } from '@prisma/client';
 @ApiTags('nutrition')
 @Controller('nutrition')
 export class NutritionController {
-  constructor(private readonly nutritionService: NutritionService) {}
+  constructor(
+    private readonly nutritionService: NutritionService,
+    private readonly achievementsService: AchievementsService,
+  ) {}
 
   // Foods (Public)
   @Public()
@@ -80,7 +84,10 @@ export class NutritionController {
       photoUrl?: string;
     },
   ) {
-    return this.nutritionService.logMeal(user.id, data);
+    const result = await this.nutritionService.logMeal(user.id, data);
+    // Check achievements in background
+    this.achievementsService.checkAndUpdateAchievements(user.id).catch(() => {});
+    return result;
   }
 
   @UseGuards(JwtAuthGuard)

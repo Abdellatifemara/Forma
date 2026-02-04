@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Body, Query, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { ProgressService } from './progress.service';
+import { AchievementsService } from '../achievements/achievements.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
@@ -11,20 +12,29 @@ import { LogWeightDto, LogMeasurementsDto } from './dto/progress.dto';
 @UseGuards(JwtAuthGuard)
 @Controller('progress')
 export class ProgressController {
-  constructor(private readonly progressService: ProgressService) {}
+  constructor(
+    private readonly progressService: ProgressService,
+    private readonly achievementsService: AchievementsService,
+  ) {}
 
   @Post('weight')
   @ApiOperation({ summary: 'Log weight measurement' })
   @ApiResponse({ status: 201, description: 'Weight logged successfully' })
   async logWeight(@CurrentUser() user: User, @Body() dto: LogWeightDto) {
-    return this.progressService.logWeight(user.id, dto);
+    const result = await this.progressService.logWeight(user.id, dto);
+    // Check achievements in background
+    this.achievementsService.checkAndUpdateAchievements(user.id).catch(() => {});
+    return result;
   }
 
   @Post('measurements')
   @ApiOperation({ summary: 'Log body measurements' })
   @ApiResponse({ status: 201, description: 'Measurements logged successfully' })
   async logMeasurements(@CurrentUser() user: User, @Body() dto: LogMeasurementsDto) {
-    return this.progressService.logMeasurements(user.id, dto);
+    const result = await this.progressService.logMeasurements(user.id, dto);
+    // Check achievements in background
+    this.achievementsService.checkAndUpdateAchievements(user.id).catch(() => {});
+    return result;
   }
 
   @Get('weight')

@@ -7,3 +7,4 @@ export * from './use-stats';
 export * from './use-exercises';
 export * from './use-trainers';
 export * from './use-toast';
+export * from './use-chat';
