@@ -14,25 +14,30 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #00D4AA 0%, #00E5BE 50%, #00F5D4 100%)',
-          borderRadius: '6px',
+          background: 'transparent',
         }}
       >
-        {/* Stylized F Logo */}
+        {/* Hexagonal outline F Logo */}
         <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+          viewBox="0 0 48 48"
           fill="none"
         >
-          {/* Top bar */}
-          <rect x="4" y="3" width="16" height="3" rx="1.5" fill="white" />
-          {/* Middle bar */}
-          <rect x="4" y="10" width="12" height="3" rx="1.5" fill="white" />
-          {/* Vertical bar */}
-          <rect x="4" y="3" width="3" height="18" rx="1.5" fill="white" />
-          {/* Arrow accent */}
-          <path d="M16 15L20 12V18L16 15Z" fill="white" fillOpacity="0.85" />
+          {/* Hexagon outline */}
+          <path
+            d="M24 3L43 14V34L24 45L5 34V14L24 3Z"
+            fill="none"
+            stroke="#00D4AA"
+            strokeWidth="3"
+            strokeLinejoin="round"
+          />
+          {/* F letter strokes */}
+          <path d="M16 14H32" stroke="#00D4AA" strokeWidth="3" strokeLinecap="round" />
+          <path d="M16 14V34" stroke="#00D4AA" strokeWidth="3" strokeLinecap="round" />
+          <path d="M16 24H28" stroke="#00D4AA" strokeWidth="3" strokeLinecap="round" />
+          {/* Accent dot */}
+          <circle cx="35" cy="14" r="2.5" fill="#00D4AA" />
         </svg>
       </div>
     ),

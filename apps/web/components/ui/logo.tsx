@@ -10,15 +10,16 @@ interface LogoProps {
 }
 
 const sizes = {
-  sm: { icon: 24, text: 'text-lg' },
-  md: { icon: 32, text: 'text-xl' },
-  lg: { icon: 40, text: 'text-2xl' },
-  xl: { icon: 56, text: 'text-4xl' },
+  sm: { icon: 28, text: 'text-lg', stroke: 2 },
+  md: { icon: 36, text: 'text-xl', stroke: 2.5 },
+  lg: { icon: 44, text: 'text-2xl', stroke: 3 },
+  xl: { icon: 56, text: 'text-4xl', stroke: 3.5 },
 };
 
 export function Logo({ className, size = 'md', variant = 'full', theme = 'auto' }: LogoProps) {
-  const { icon: iconSize, text: textSize } = sizes[size];
+  const { icon: iconSize, text: textSize, stroke } = sizes[size];
 
+  // Modern hexagonal F logo - outline style (not filled)
   const LogoIcon = () => (
     <svg
       width={iconSize}
@@ -28,51 +29,60 @@ export function Logo({ className, size = 'md', variant = 'full', theme = 'auto' 
       xmlns="http://www.w3.org/2000/svg"
       className="flex-shrink-0"
     >
-      {/* Background Circle with Gradient */}
       <defs>
-        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id={`grad-${size}`} x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#00D4AA" />
-          <stop offset="50%" stopColor="#00E5BE" />
           <stop offset="100%" stopColor="#00F5D4" />
-        </linearGradient>
-        <linearGradient id="logoGradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#00B894" />
-          <stop offset="100%" stopColor="#00D4AA" />
         </linearGradient>
       </defs>
 
-      {/* Main Shape - Abstract F formed by fitness elements */}
-      <rect width="48" height="48" rx="12" fill="url(#logoGradient)" />
-
-      {/* Stylized "F" made of geometric shapes representing strength */}
-      {/* Top horizontal bar */}
-      <rect x="12" y="10" width="24" height="5" rx="2.5" fill="white" />
-
-      {/* Middle horizontal bar (shorter) */}
-      <rect x="12" y="21" width="18" height="5" rx="2.5" fill="white" />
-
-      {/* Vertical bar */}
-      <rect x="12" y="10" width="5" height="28" rx="2.5" fill="white" />
-
-      {/* Dynamic accent - represents upward movement/progress */}
+      {/* Hexagon outline - NOT filled */}
       <path
-        d="M30 28L36 22L36 34L30 28Z"
-        fill="white"
-        fillOpacity="0.9"
+        d="M24 3L43 14V34L24 45L5 34V14L24 3Z"
+        fill="none"
+        stroke={`url(#grad-${size})`}
+        strokeWidth={stroke}
+        strokeLinejoin="round"
       />
 
-      {/* Small dot accent - represents a goal/target */}
-      <circle cx="36" cy="14" r="3" fill="white" fillOpacity="0.7" />
+      {/* F letter - clean strokes */}
+      <path
+        d="M16 14H32"
+        stroke={`url(#grad-${size})`}
+        strokeWidth={stroke}
+        strokeLinecap="round"
+      />
+      <path
+        d="M16 14V34"
+        stroke={`url(#grad-${size})`}
+        strokeWidth={stroke}
+        strokeLinecap="round"
+      />
+      <path
+        d="M16 24H28"
+        stroke={`url(#grad-${size})`}
+        strokeWidth={stroke}
+        strokeLinecap="round"
+      />
+
+      {/* Accent elements */}
+      <circle cx="35" cy="14" r="2.5" fill="#00D4AA" />
+      <path
+        d="M28 30L35 24"
+        stroke="#00D4AA"
+        strokeWidth={stroke * 0.8}
+        strokeLinecap="round"
+      />
     </svg>
   );
 
   const LogoText = () => (
     <span className={cn(
-      'font-bold tracking-tight',
+      'font-bold tracking-tight lowercase',
       textSize,
       theme === 'light' ? 'text-forma-navy' : theme === 'dark' ? 'text-white' : 'text-foreground'
     )}>
-      Forma
+      forma
     </span>
   );
 
@@ -92,7 +102,7 @@ export function Logo({ className, size = 'md', variant = 'full', theme = 'auto' 
   );
 }
 
-// Simplified icon for favicon/small sizes
+// For favicon - simplified version
 export function LogoMark({ className, size = 32 }: { className?: string; size?: number }) {
   return (
     <svg
@@ -104,17 +114,22 @@ export function LogoMark({ className, size = 32 }: { className?: string; size?: 
       className={className}
     >
       <defs>
-        <linearGradient id="logoMarkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <linearGradient id="markGrad" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#00D4AA" />
           <stop offset="100%" stopColor="#00F5D4" />
         </linearGradient>
       </defs>
-      <rect width="48" height="48" rx="12" fill="url(#logoMarkGradient)" />
-      <rect x="12" y="10" width="24" height="5" rx="2.5" fill="white" />
-      <rect x="12" y="21" width="18" height="5" rx="2.5" fill="white" />
-      <rect x="12" y="10" width="5" height="28" rx="2.5" fill="white" />
-      <path d="M30 28L36 22L36 34L30 28Z" fill="white" fillOpacity="0.9" />
-      <circle cx="36" cy="14" r="3" fill="white" fillOpacity="0.7" />
+      <path
+        d="M24 3L43 14V34L24 45L5 34V14L24 3Z"
+        fill="none"
+        stroke="url(#markGrad)"
+        strokeWidth="3"
+        strokeLinejoin="round"
+      />
+      <path d="M16 14H32" stroke="url(#markGrad)" strokeWidth="3" strokeLinecap="round" />
+      <path d="M16 14V34" stroke="url(#markGrad)" strokeWidth="3" strokeLinecap="round" />
+      <path d="M16 24H28" stroke="url(#markGrad)" strokeWidth="3" strokeLinecap="round" />
+      <circle cx="35" cy="14" r="2.5" fill="#00D4AA" />
     </svg>
   );
 }
