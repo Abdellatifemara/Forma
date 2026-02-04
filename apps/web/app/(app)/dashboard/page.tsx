@@ -118,7 +118,7 @@ export default function AppDashboardPage() {
   const greetingAr =
     currentHour < 12 ? 'صباح الخير' : currentHour < 18 ? 'مساء الخير' : 'مساء الخير';
 
-  const userName = user?.name || user?.firstName || 'there';
+  const userName = user?.name || 'there';
 
   if (isLoading) {
     return (
