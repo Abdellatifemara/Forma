@@ -1,0 +1,850 @@
+{
+  "plateau_breaking": {
+    "title": {
+      "en": "Breaking Through Plateaus Guide",
+      "ar": "دليل كسر الثبات (البلاتوه)"
+    },
+    "introduction": {
+      "en": "Plateaus are a normal part of fitness progress. When your body adapts to your current training, progress slows. This guide covers strategies to break through both strength and fat loss plateaus.",
+      "ar": "الثبات جزء طبيعي من تقدم اللياقة. لما جسمك يتأقلم على تدريبك الحالي، التقدم بيبطئ. الدليل ده بيغطي استراتيجيات لكسر ثبات القوة وخسارة الدهون."
+    },
+    "types_of_plateaus": {
+      "title": {
+        "en": "Types of Plateaus",
+        "ar": "أنواع الثبات"
+      },
+      "types": [
+        {
+          "type": {
+            "en": "Strength Plateau",
+            "ar": "ثبات القوة"
+          },
+          "description": {
+            "en": "When you can't add weight or reps to your lifts for several weeks despite consistent training.",
+            "ar": "لما مش قادر تزود وزن أو ريبس على رفعاتك لأسابيع رغم التدريب المنتظم."
+          },
+          "signs": [
+            {
+              "en": "Same weight/reps for 2-3+ weeks",
+              "ar": "نفس الوزن/الريبس لـ 2-3+ أسابيع"
+            },
+            {
+              "en": "Decreased motivation and gym enjoyment",
+              "ar": "نقص الحافز ومتعة الجيم"
+            },
+            {
+              "en": "Feeling weaker despite training hard",
+              "ar": "حاسس بضعف رغم التدريب الجامد"
+            }
+          ]
+        },
+        {
+          "type": {
+            "en": "Weight Loss Plateau",
+            "ar": "ثبات خسارة الوزن"
+          },
+          "description": {
+            "en": "When the scale stops moving despite maintaining a caloric deficit and consistent exercise.",
+            "ar": "لما الميزان بيقف رغم إنك محافظ على عجز السعرات والتمرين المنتظم."
+          },
+          "signs": [
+            {
+              "en": "No weight change for 2-4+ weeks",
+              "ar": "مفيش تغيير في الوزن لـ 2-4+ أسابيع"
+            },
+            {
+              "en": "Measurements not changing",
+              "ar": "القياسات مش بتتغير"
+            },
+            {
+              "en": "Increased hunger and fatigue",
+              "ar": "زيادة الجوع والتعب"
+            }
+          ]
+        },
+        {
+          "type": {
+            "en": "Muscle Building Plateau",
+            "ar": "ثبات بناء العضل"
+          },
+          "description": {
+            "en": "When muscle growth slows or stops despite training and eating adequately.",
+            "ar": "لما نمو العضل بيبطئ أو بيقف رغم التدريب والأكل الكافي."
+          },
+          "signs": [
+            {
+              "en": "No visible changes in physique",
+              "ar": "مفيش تغييرات مرئية في الجسم"
+            },
+            {
+              "en": "Measurements staying the same",
+              "ar": "القياسات ثابتة"
+            },
+            {
+              "en": "Strength not increasing",
+              "ar": "القوة مش بتزيد"
+            }
+          ]
+        }
+      ]
+    },
+    "strength_plateau_solutions": {
+      "title": {
+        "en": "Breaking Strength Plateaus",
+        "ar": "كسر ثبات القوة"
+      },
+      "strategies": [
+        {
+          "strategy": {
+            "en": "Take a Deload Week",
+            "ar": "خد أسبوع ديلود"
+          },
+          "description": {
+            "en": "Sometimes you need to step back to move forward. Reduce volume and intensity by 40-50% for one week.",
+            "ar": "أحياناً محتاج ترجع لورا عشان تتقدم لقدام. قلل الفوليوم والشدة 40-50% لأسبوع."
+          },
+          "how_to": {
+            "en": "Keep same exercises but use 50-60% of normal weight for same sets/reps. Focus on form and recovery.",
+            "ar": "حافظ على نفس التمارين بس استخدم 50-60% من الوزن العادي لنفس السيتات/الريبس. ركز على الفورم والاستشفاء."
+          },
+          "when_to_use": {
+            "en": "Every 4-8 weeks of hard training, or when you feel run down",
+            "ar": "كل 4-8 أسابيع من التدريب الجامد، أو لما تحس بإرهاق"
+          }
+        },
+        {
+          "strategy": {
+            "en": "Change Rep Ranges",
+            "ar": "غيّر نطاق الريبس"
+          },
+          "description": {
+            "en": "If you've been doing 5x5, try 4x8. If you've been doing 3x10, try 5x3. Different rep ranges stimulate different adaptations.",
+            "ar": "لو كنت بتعمل 5x5، جرب 4x8. لو كنت بتعمل 3x10، جرب 5x3. نطاقات ريبس مختلفة بتحفز تكيفات مختلفة."
+          },
+          "example": {
+            "en": "Stuck on bench at 100kg for 5 reps? Try building up to 80kg for 10 reps first, then return to heavier weight.",
+            "ar": "واقف على البنش عند 100 كيلو لـ 5 ريبس؟ جرب توصل لـ 80 كيلو لـ 10 ريبس الأول، بعدين ارجع للوزن الأتقل."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Add Paused Reps",
+            "ar": "ضيف ريبس بوقفة"
+          },
+          "description": {
+            "en": "Pause at the bottom of the lift for 2-3 seconds. Eliminates momentum and builds strength in weak positions.",
+            "ar": "اثبت في قاع الرفعة 2-3 ثواني. بيمنع الزخم وبيبني قوة في المواقف الضعيفة."
+          },
+          "exercises": {
+            "en": "Paused bench press, paused squat, paused deadlift",
+            "ar": "بنش بريس بوقفة، سكوات بوقفة، ديدليفت بوقفة"
+          },
+          "note": {
+            "en": "Use 10-20% less weight than normal when adding pauses",
+            "ar": "استخدم 10-20% أقل من الوزن العادي لما تضيف الوقفات"
+          }
+        },
+        {
+          "strategy": {
+            "en": "Add Tempo Training",
+            "ar": "ضيف تدريب التيمبو"
+          },
+          "description": {
+            "en": "Control the speed of each phase of the lift. Builds muscle under tension and improves form.",
+            "ar": "تحكم في سرعة كل مرحلة من الرفعة. بيبني عضل تحت التوتر وبيحسن الفورم."
+          },
+          "tempo_format": {
+            "en": "4 numbers: eccentric-pause-concentric-pause. Example: 3-1-1-0 = 3 sec down, 1 sec pause, 1 sec up, no pause at top.",
+            "ar": "4 أرقام: نزول-وقفة-طلوع-وقفة. مثال: 3-1-1-0 = 3 ثواني نزول، 1 ثانية وقفة، 1 ثانية طلوع، بدون وقفة فوق."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Train Your Weak Points",
+            "ar": "درّب نقاط ضعفك"
+          },
+          "description": {
+            "en": "Identify where in the lift you fail and add accessory work to strengthen that position.",
+            "ar": "حدد فين في الرفعة بتفشل وضيف تمارين مساعدة تقوي المركز ده."
+          },
+          "examples": [
+            {
+              "weakness": {
+                "en": "Weak off the chest on bench",
+                "ar": "ضعيف من على الصدر في البنش"
+              },
+              "accessory": {
+                "en": "Paused bench, dumbbell press, dips",
+                "ar": "بنش بوقفة، دمبل بريس، ديبس"
+              }
+            },
+            {
+              "weakness": {
+                "en": "Weak lockout on bench",
+                "ar": "ضعيف في القفل في البنش"
+              },
+              "accessory": {
+                "en": "Board press, close grip bench, tricep work",
+                "ar": "بورد بريس، بنش قبضة ضيقة، تمارين تراي"
+              }
+            },
+            {
+              "weakness": {
+                "en": "Weak out of the hole on squat",
+                "ar": "ضعيف من القاع في السكوات"
+              },
+              "accessory": {
+                "en": "Paused squats, front squats, leg press",
+                "ar": "سكوات بوقفة، فرونت سكوات، ليج بريس"
+              }
+            },
+            {
+              "weakness": {
+                "en": "Weak off the floor on deadlift",
+                "ar": "ضعيف من الأرض في الديدليفت"
+              },
+              "accessory": {
+                "en": "Deficit deadlifts, paused deadlifts, front squats",
+                "ar": "ديدليفت من عجز، ديدليفت بوقفة، فرونت سكوات"
+              }
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Try a New Variation",
+            "ar": "جرب تنويعة جديدة"
+          },
+          "description": {
+            "en": "Switch to a similar exercise for 4-8 weeks, then return to the original. Fresh stimulus and different angles help.",
+            "ar": "غيّر لتمرين مشابه لـ 4-8 أسابيع، بعدين ارجع للأصلي. تحفيز جديد وزوايا مختلفة بيساعدوا."
+          },
+          "examples": [
+            {
+              "stuck_on": {
+                "en": "Flat bench press",
+                "ar": "بنش بريس فلات"
+              },
+              "try": {
+                "en": "Incline press, dumbbell press, close grip",
+                "ar": "إنكلاين بريس، دمبل بريس، قبضة ضيقة"
+              }
+            },
+            {
+              "stuck_on": {
+                "en": "Back squat",
+                "ar": "باك سكوات"
+              },
+              "try": {
+                "en": "Front squat, high bar, safety bar squat",
+                "ar": "فرونت سكوات، هاي بار، سيفتي بار سكوات"
+              }
+            },
+            {
+              "stuck_on": {
+                "en": "Conventional deadlift",
+                "ar": "ديدليفت تقليدي"
+              },
+              "try": {
+                "en": "Sumo deadlift, trap bar, deficit deadlift",
+                "ar": "سومو ديدليفت، تراب بار، ديفيست ديدليفت"
+              }
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Increase Training Frequency",
+            "ar": "زوّد تكرار التدريب"
+          },
+          "description": {
+            "en": "If you bench once a week, try twice. More practice and volume can help break through.",
+            "ar": "لو بتعمل بنش مرة في الأسبوع، جرب مرتين. ممارسة وفوليوم أكتر ممكن يساعدوا تخترق."
+          },
+          "important": {
+            "en": "Spread volume across sessions - don't just double your workload",
+            "ar": "وزّع الفوليوم على الجلسات - ماتضاعفش شغلك وبس"
+          }
+        },
+        {
+          "strategy": {
+            "en": "Improve Recovery",
+            "ar": "حسّن الاستشفاء"
+          },
+          "description": {
+            "en": "Sometimes the issue isn't training - it's recovery. You grow outside the gym, not in it.",
+            "ar": "أحياناً المشكلة مش التدريب - هي الاستشفاء. بتكبر بره الجيم، مش جواه."
+          },
+          "checklist": [
+            {
+              "en": "Are you sleeping 7-9 hours?",
+              "ar": "بتنام 7-9 ساعات؟"
+            },
+            {
+              "en": "Are you eating enough protein (1.6-2.2g/kg)?",
+              "ar": "بتاكل بروتين كفاية (1.6-2.2 جرام/كيلو)؟"
+            },
+            {
+              "en": "Are you eating enough calories overall?",
+              "ar": "بتاكل سعرات كفاية بشكل عام؟"
+            },
+            {
+              "en": "Are you managing stress?",
+              "ar": "بتدير الضغط؟"
+            },
+            {
+              "en": "Are you taking rest days?",
+              "ar": "بتاخد أيام راحة؟"
+            }
+          ]
+        }
+      ]
+    },
+    "weight_loss_plateau_solutions": {
+      "title": {
+        "en": "Breaking Weight Loss Plateaus",
+        "ar": "كسر ثبات خسارة الوزن"
+      },
+      "first_check": {
+        "title": {
+          "en": "First, Make Sure It's Actually a Plateau",
+          "ar": "الأول، تأكد إنه فعلاً ثبات"
+        },
+        "considerations": [
+          {
+            "en": "Weight fluctuates daily - look at weekly averages over 2-3 weeks minimum",
+            "ar": "الوزن بيتغير يومياً - بص على المتوسطات الأسبوعية على 2-3 أسابيع على الأقل"
+          },
+          {
+            "en": "Are your measurements (waist, hips) changing even if weight isn't?",
+            "ar": "قياساتك (الخصر، الأرداف) بتتغير حتى لو الوزن مش بيتغير؟"
+          },
+          {
+            "en": "Are you building muscle while losing fat (body recomposition)?",
+            "ar": "بتبني عضل وبتخس دهون في نفس الوقت (إعادة تركيب الجسم)؟"
+          },
+          {
+            "en": "For women: Where are you in your menstrual cycle? Weight can fluctuate 1-3kg+",
+            "ar": "للسيدات: انتي فين من دورتك الشهرية؟ الوزن ممكن يتغير 1-3+ كيلو"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "strategy": {
+            "en": "Track Calories More Accurately",
+            "ar": "تابع السعرات بدقة أكتر"
+          },
+          "description": {
+            "en": "The most common reason for weight loss plateaus is eating more than you think. Calorie creep is real.",
+            "ar": "أكتر سبب شائع لثبات خسارة الوزن هو إنك بتاكل أكتر مما تفتكر. زيادة السعرات التدريجية حقيقية."
+          },
+          "common_mistakes": [
+            {
+              "en": "Not weighing food (eyeballing portions)",
+              "ar": "عدم وزن الأكل (تقدير الكميات بالعين)"
+            },
+            {
+              "en": "Forgetting cooking oils, sauces, and drinks",
+              "ar": "نسيان زيوت الطبخ والصوصات والمشروبات"
+            },
+            {
+              "en": "'BLTs' - Bites, Licks, Tastes add up",
+              "ar": "القضمات والتذوقات بتتجمع"
+            },
+            {
+              "en": "Using wrong database entries (user-submitted can be inaccurate)",
+              "ar": "استخدام مدخلات قاعدة بيانات غلط (المدخلات من المستخدمين ممكن تكون غلط)"
+            },
+            {
+              "en": "Not counting 'healthy' foods (nuts, olive oil are calorie dense)",
+              "ar": "عدم حساب الأكل 'الصحي' (المكسرات وزيت الزيتون عاليين السعرات)"
+            }
+          ],
+          "action": {
+            "en": "Weigh EVERYTHING for 1-2 weeks. Be brutally honest with your tracking.",
+            "ar": "وزّن كل حاجة لـ 1-2 أسبوع. كن صادق تماماً في تتبعك."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Reduce Calories Further (Carefully)",
+            "ar": "قلل السعرات أكتر (بحذر)"
+          },
+          "description": {
+            "en": "As you lose weight, your body needs fewer calories. Your deficit shrinks over time.",
+            "ar": "كل ما تخس، جسمك بيحتاج سعرات أقل. العجز بيصغر مع الوقت."
+          },
+          "how_much": {
+            "en": "Reduce by 100-200 calories at a time. Don't make dramatic cuts.",
+            "ar": "قلل 100-200 سعرة في المرة. ماتعملش تخفيضات دراماتيكية."
+          },
+          "minimum": {
+            "en": "Don't go below 1200 kcal (women) or 1500 kcal (men) without medical supervision. Better to increase activity instead.",
+            "ar": "ماتنزلش تحت 1200 سعرة (للسيدات) أو 1500 سعرة (للرجالة) من غير إشراف طبي. أحسن تزود النشاط بدلاً من كده."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Increase Activity (NEAT)",
+            "ar": "زوّد النشاط (NEAT)"
+          },
+          "description": {
+            "en": "Non-Exercise Activity Thermogenesis - all the movement outside formal exercise. Walking, stairs, standing, fidgeting.",
+            "ar": "حرارة النشاط غير التمريني - كل الحركة بره التمرين الرسمي. المشي، السلالم، الوقوف، الحركة."
+          },
+          "ideas": [
+            {
+              "en": "Add 2,000-4,000 extra steps per day",
+              "ar": "ضيف 2,000-4,000 خطوة زيادة في اليوم"
+            },
+            {
+              "en": "Take walking meetings or calls",
+              "ar": "خد ميتنجات أو مكالمات وانت ماشي"
+            },
+            {
+              "en": "Stand while working if possible",
+              "ar": "قف وانت شغال لو ممكن"
+            },
+            {
+              "en": "Take stairs instead of elevator",
+              "ar": "اطلع السلالم بدل الأسانسير"
+            },
+            {
+              "en": "Park farther away",
+              "ar": "اركن أبعد"
+            }
+          ],
+          "why_it_works": {
+            "en": "NEAT can account for 15-50% of daily calorie burn. When dieting, NEAT often decreases unconsciously. Fight this!",
+            "ar": "NEAT ممكن يكون 15-50% من حرق السعرات اليومي. لما بتعمل دايت، NEAT غالباً بينزل من غير ما تحس. قاوم ده!"
+          }
+        },
+        {
+          "strategy": {
+            "en": "Add or Modify Cardio",
+            "ar": "ضيف أو عدّل الكارديو"
+          },
+          "description": {
+            "en": "If you're not doing cardio, add some. If you're doing steady-state, try HIIT. If you're doing too much, reduce it.",
+            "ar": "لو مش بتعمل كارديو، ضيف شوية. لو بتعمل ثابت، جرب HIIT. لو بتعمل كتير، قلله."
+          },
+          "options": [
+            {
+              "en": "Add 1-2 HIIT sessions per week (20 minutes)",
+              "ar": "ضيف 1-2 جلسة HIIT في الأسبوع (20 دقيقة)"
+            },
+            {
+              "en": "Add 2-3 moderate cardio sessions (30-45 minutes)",
+              "ar": "ضيف 2-3 جلسات كارديو متوسطة (30-45 دقيقة)"
+            },
+            {
+              "en": "Try a different type of cardio (cycling, swimming, rowing)",
+              "ar": "جرب نوع مختلف من الكارديو (عجلة، سباحة، تجديف)"
+            }
+          ],
+          "warning": {
+            "en": "Don't add endless cardio. Excessive cardio can increase hunger and decrease NEAT, making things worse.",
+            "ar": "ماتضيفش كارديو لا نهائي. الكارديو الزيادة ممكن يزود الجوع ويقلل NEAT، ويخلي الحالة أسوأ."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Take a Diet Break (Maintenance Phase)",
+            "ar": "خد استراحة من الدايت (مرحلة الحفاظ)"
+          },
+          "description": {
+            "en": "Eating at maintenance for 1-2 weeks can help reset hormones and reduce diet fatigue. Then return to deficit.",
+            "ar": "الأكل على الحفاظ لـ 1-2 أسبوع ممكن يساعد يرجّع الهرمونات ويقلل إرهاق الدايت. بعدين ارجع للعجز."
+          },
+          "how_to": {
+            "en": "Increase calories to estimated maintenance (TDEE). Keep protein high. Don't go crazy with junk food.",
+            "ar": "زوّد السعرات لمستوى الحفاظ المقدر (TDEE). خلي البروتين عالي. ماتتجننش بالأكل الجانك."
+          },
+          "benefits": [
+            {
+              "en": "Reduces metabolic adaptation",
+              "ar": "بيقلل التكيف الأيضي"
+            },
+            {
+              "en": "Restores leptin and other hormones",
+              "ar": "بيرجّع اللبتين والهرمونات التانية"
+            },
+            {
+              "en": "Gives psychological break",
+              "ar": "بيدي استراحة نفسية"
+            },
+            {
+              "en": "Allows for better training performance",
+              "ar": "بيسمح بأداء تدريب أحسن"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Refeed Days",
+            "ar": "أيام إعادة التغذية (ريفيد)"
+          },
+          "description": {
+            "en": "One day per week at maintenance calories, with extra carbs. Less drastic than a full diet break.",
+            "ar": "يوم واحد في الأسبوع على سعرات الحفاظ، مع كاربز زيادة. أقل حدة من استراحة دايت كاملة."
+          },
+          "how_to": {
+            "en": "Increase carbs by 50-100g, keep protein same, reduce fat slightly to stay near maintenance.",
+            "ar": "زوّد الكاربز 50-100 جرام، خلي البروتين ثابت، قلل الدهون شوية عشان تفضل قريب من الحفاظ."
+          },
+          "best_timing": {
+            "en": "On a heavy training day when your body can use the extra carbs",
+            "ar": "في يوم تدريب تقيل لما جسمك يقدر يستخدم الكاربز الزيادة"
+          }
+        },
+        {
+          "strategy": {
+            "en": "Check for Water Retention",
+            "ar": "تحقق من احتباس المية"
+          },
+          "description": {
+            "en": "Sometimes you're losing fat but water retention masks it. The scale stalls, then suddenly drops ('whoosh' effect).",
+            "ar": "أحياناً بتخس دهون بس احتباس المية بيخبيه. الميزان بيقف، بعدين فجأة بينزل (تأثير الـ'ووش')."
+          },
+          "causes_of_water_retention": [
+            {
+              "en": "High sodium intake",
+              "ar": "تناول صوديوم عالي"
+            },
+            {
+              "en": "New exercise routine (muscle inflammation)",
+              "ar": "روتين تمرين جديد (التهاب عضلي)"
+            },
+            {
+              "en": "Carbohydrate refeed after low carb",
+              "ar": "ريفيد كاربز بعد كاربز منخفض"
+            },
+            {
+              "en": "Menstrual cycle (women)",
+              "ar": "الدورة الشهرية (للسيدات)"
+            },
+            {
+              "en": "Stress and cortisol",
+              "ar": "الضغط والكورتيزول"
+            },
+            {
+              "en": "Poor sleep",
+              "ar": "نوم سيء"
+            }
+          ],
+          "solutions": [
+            {
+              "en": "Stay consistent - the whoosh will come",
+              "ar": "خليك ثابت - الووش هييجي"
+            },
+            {
+              "en": "Manage stress and sleep better",
+              "ar": "دير الضغط والنوم أحسن"
+            },
+            {
+              "en": "Stay well hydrated (paradoxically helps reduce retention)",
+              "ar": "خليك مرطب كويس (بيساعد يقلل الاحتباس عكس المتوقع)"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Prioritize Protein",
+            "ar": "أولوية للبروتين"
+          },
+          "description": {
+            "en": "High protein helps preserve muscle, increases satiety, and has a higher thermic effect (burns more calories to digest).",
+            "ar": "البروتين العالي بيساعد يحافظ على العضل، بيزود الشبع، وليه تأثير حراري أعلى (بيحرق سعرات أكتر في الهضم)."
+          },
+          "target": {
+            "en": "Aim for 2.0-2.4g per kg of bodyweight when in a deficit",
+            "ar": "استهدف 2.0-2.4 جرام لكل كيلو من وزن الجسم لما في عجز"
+          }
+        }
+      ]
+    },
+    "muscle_building_plateau_solutions": {
+      "title": {
+        "en": "Breaking Muscle Building Plateaus",
+        "ar": "كسر ثبات بناء العضل"
+      },
+      "strategies": [
+        {
+          "strategy": {
+            "en": "Eat More",
+            "ar": "كل أكتر"
+          },
+          "description": {
+            "en": "The most common reason for not building muscle is not eating enough. You can't build something from nothing.",
+            "ar": "أكتر سبب شائع لعدم بناء العضل هو عدم الأكل الكافي. مش هتقدر تبني حاجة من لا شيء."
+          },
+          "how_much": {
+            "en": "Add 200-300 calories per day, mostly from protein and carbs. Monitor for 2-3 weeks.",
+            "ar": "ضيف 200-300 سعرة في اليوم، أغلبها من البروتين والكاربز. تابع لـ 2-3 أسابيع."
+          },
+          "signs_youre_undereating": [
+            {
+              "en": "Strength not increasing",
+              "ar": "القوة مش بتزيد"
+            },
+            {
+              "en": "Constantly fatigued",
+              "ar": "تعب مستمر"
+            },
+            {
+              "en": "Poor workout performance",
+              "ar": "أداء تمرين ضعيف"
+            },
+            {
+              "en": "Poor recovery between workouts",
+              "ar": "استشفاء ضعيف بين التمارين"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Increase Training Volume",
+            "ar": "زوّد فوليوم التدريب"
+          },
+          "description": {
+            "en": "Volume (sets × reps × weight) is a primary driver of muscle growth. If you've adapted to your current volume, you need more.",
+            "ar": "الفوليوم (السيتات × الريبس × الوزن) هو محرك أساسي لنمو العضل. لو تأقلمت على فوليومك الحالي، محتاج أكتر."
+          },
+          "how_to": {
+            "en": "Add 1-2 sets per muscle group per week. Don't add everything at once.",
+            "ar": "ضيف 1-2 سيت لكل مجموعة عضلية في الأسبوع. ماتضيفش كل حاجة مرة واحدة."
+          },
+          "volume_landmarks": {
+            "minimum": {
+              "en": "10+ sets per muscle group per week to maintain",
+              "ar": "10+ سيت لكل مجموعة عضلية في الأسبوع للحفاظ"
+            },
+            "optimal": {
+              "en": "10-20 sets per muscle group per week for growth",
+              "ar": "10-20 سيت لكل مجموعة عضلية في الأسبوع للنمو"
+            },
+            "maximum": {
+              "en": "Beyond 20-25 sets, recovery becomes an issue for most",
+              "ar": "فوق 20-25 سيت، الاستشفاء بيكون مشكلة لأغلب الناس"
+            }
+          }
+        },
+        {
+          "strategy": {
+            "en": "Increase Training Frequency",
+            "ar": "زوّد تكرار التدريب"
+          },
+          "description": {
+            "en": "Hitting each muscle 2-3 times per week typically beats hitting it once, assuming equal volume.",
+            "ar": "ضرب كل عضلة 2-3 مرات في الأسبوع غالباً أفضل من ضربها مرة واحدة، بافتراض فوليوم متساوي."
+          },
+          "example": {
+            "en": "Instead of doing 12 sets of chest on Monday only, do 4 sets on Monday, 4 on Wednesday, 4 on Friday.",
+            "ar": "بدل ما تعمل 12 سيت صدر يوم الاتنين بس، اعمل 4 سيتات الاتنين، 4 الأربع، 4 الجمعة."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Train Closer to Failure",
+            "ar": "درّب أقرب للفشل"
+          },
+          "description": {
+            "en": "Training 1-3 reps from failure (RIR) is generally more effective for hypertrophy than stopping way short.",
+            "ar": "التدريب على بعد 1-3 ريبس من الفشل (RIR) عموماً أفضل للتضخيم من التوقف بعيد."
+          },
+          "warning": {
+            "en": "Don't train to failure on every set - it's fatiguing. Save failure for last sets of isolation exercises.",
+            "ar": "ماتدربش للفشل في كل سيت - مرهق. وفر الفشل لآخر سيتات تمارين العزل."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Improve Mind-Muscle Connection",
+            "ar": "حسّن الاتصال بين العقل والعضلة"
+          },
+          "description": {
+            "en": "Focus on feeling the target muscle work rather than just moving weight. Quality of contraction matters.",
+            "ar": "ركز على الإحساس بالعضلة المستهدفة بتشتغل مش بس تحريك الوزن. جودة الانقباض مهمة."
+          },
+          "tips": [
+            {
+              "en": "Slow down the eccentric (lowering) phase",
+              "ar": "بطئ مرحلة النزول"
+            },
+            {
+              "en": "Squeeze at the peak contraction",
+              "ar": "اضغط عند ذروة الانقباض"
+            },
+            {
+              "en": "Use lighter weight if needed to feel the muscle",
+              "ar": "استخدم وزن أخف لو محتاج تحس بالعضلة"
+            },
+            {
+              "en": "Visualize the muscle working",
+              "ar": "تخيل العضلة شغالة"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Add Exercise Variety",
+            "ar": "ضيف تنوع في التمارين"
+          },
+          "description": {
+            "en": "Different exercises hit muscles from different angles. Adding variety can stimulate growth in underdeveloped areas.",
+            "ar": "تمارين مختلفة بتضرب العضلات من زوايا مختلفة. إضافة التنوع ممكن تحفز النمو في المناطق الأقل نمواً."
+          },
+          "example": {
+            "en": "For chest: Add incline work if you only do flat, or cable flyes if you only do presses.",
+            "ar": "للصدر: ضيف تمارين إنكلاين لو بتعمل فلات بس، أو كيبل فلاي لو بتعمل بريس بس."
+          }
+        }
+      ]
+    },
+    "mental_strategies": {
+      "title": {
+        "en": "Mental Strategies for Plateaus",
+        "ar": "استراتيجيات نفسية للثبات"
+      },
+      "strategies": [
+        {
+          "strategy": {
+            "en": "Change Your Perspective",
+            "ar": "غيّر وجهة نظرك"
+          },
+          "message": {
+            "en": "Plateaus mean you've adapted - that's success! Your body responded to your training. Now you need a new stimulus.",
+            "ar": "الثبات معناه إنك تأقلمت - ده نجاح! جسمك استجاب لتدريبك. دلوقتي محتاج تحفيز جديد."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Set Process Goals, Not Just Outcome Goals",
+            "ar": "حط أهداف عملية، مش بس أهداف نتائج"
+          },
+          "message": {
+            "en": "Instead of 'lose 5kg this month', focus on 'hit my calories 6 days/week'. Control what you can control.",
+            "ar": "بدل 'أخس 5 كيلو الشهر ده'، ركز على 'أوصل لسعراتي 6 أيام/أسبوع'. تحكم في اللي تقدر تتحكم فيه."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Track Non-Scale Victories",
+            "ar": "تابع الانتصارات غير الميزان"
+          },
+          "examples": [
+            {
+              "en": "Clothes fitting better",
+              "ar": "الهدوم بتيجي أحسن"
+            },
+            {
+              "en": "More energy",
+              "ar": "طاقة أكتر"
+            },
+            {
+              "en": "Better sleep",
+              "ar": "نوم أحسن"
+            },
+            {
+              "en": "Improved mood",
+              "ar": "مزاج محسّن"
+            },
+            {
+              "en": "Strength gains",
+              "ar": "مكاسب قوة"
+            },
+            {
+              "en": "Better endurance",
+              "ar": "تحمل أحسن"
+            },
+            {
+              "en": "Compliments from others",
+              "ar": "مجاملات من الناس"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Remember Why You Started",
+            "ar": "افتكر ليه بدأت"
+          },
+          "message": {
+            "en": "Reconnect with your original motivation. Look at old photos. Remember how far you've come.",
+            "ar": "ارجع اتصل بدافعك الأصلي. بص على صور قديمة. افتكر قد إيه وصلت."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Get Support",
+            "ar": "احصل على دعم"
+          },
+          "message": {
+            "en": "Talk to others who've been through plateaus. Join a community. Consider a coach.",
+            "ar": "اتكلم مع ناس مروا بثبات. انضم لمجتمع. فكر في مدرب."
+          }
+        }
+      ]
+    },
+    "when_to_seek_help": {
+      "title": {
+        "en": "When to Seek Professional Help",
+        "ar": "إمتى تدور على مساعدة متخصصة"
+      },
+      "situations": [
+        {
+          "en": "Plateau lasting 2+ months despite trying multiple strategies",
+          "ar": "ثبات مستمر 2+ شهور رغم تجربة استراتيجيات متعددة"
+        },
+        {
+          "en": "Signs of overtraining (chronic fatigue, decreased performance, frequent illness)",
+          "ar": "علامات إجهاد زيادة (تعب مزمن، أداء منخفض، مرض متكرر)"
+        },
+        {
+          "en": "Extreme diet measures needed to lose weight",
+          "ar": "إجراءات دايت متطرفة مطلوبة لخسارة الوزن"
+        },
+        {
+          "en": "Suspected hormonal issues (thyroid, testosterone, etc.)",
+          "ar": "شك في مشاكل هرمونية (الغدة الدرقية، التيستوستيرون، إلخ)"
+        },
+        {
+          "en": "Disordered eating patterns developing",
+          "ar": "أنماط أكل مضطربة بتتطور"
+        }
+      ],
+      "who_to_see": [
+        {
+          "professional": {
+            "en": "Certified Personal Trainer / Coach",
+            "ar": "مدرب شخصي معتمد"
+          },
+          "for": {
+            "en": "Training program review and optimization",
+            "ar": "مراجعة وتحسين برنامج التدريب"
+          }
+        },
+        {
+          "professional": {
+            "en": "Registered Dietitian",
+            "ar": "أخصائي تغذية مسجل"
+          },
+          "for": {
+            "en": "Nutrition assessment and meal planning",
+            "ar": "تقييم التغذية وتخطيط الوجبات"
+          }
+        },
+        {
+          "professional": {
+            "en": "Sports Medicine Doctor",
+            "ar": "طبيب طب رياضي"
+          },
+          "for": {
+            "en": "Hormonal testing, injury assessment",
+            "ar": "فحص الهرمونات، تقييم الإصابات"
+          }
+        }
+      ]
+    }
+  }
+}

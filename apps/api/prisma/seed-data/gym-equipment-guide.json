@@ -1,0 +1,1156 @@
+{
+  "gym_equipment_guide": {
+    "title": {
+      "en": "Complete Gym Equipment Guide",
+      "ar": "دليل أجهزة الجيم الكامل"
+    },
+    "introduction": {
+      "en": "Walking into a gym for the first time can be overwhelming with all the equipment. This guide explains every piece of equipment you'll encounter and how to use it safely.",
+      "ar": "دخول الجيم لأول مرة ممكن يكون مرهق مع كل الأجهزة. الدليل ده بيشرح كل قطعة هتقابلها وإزاي تستخدمها بأمان."
+    },
+    "free_weights": {
+      "title": {
+        "en": "Free Weights",
+        "ar": "الأوزان الحرة"
+      },
+      "description": {
+        "en": "Free weights allow natural movement patterns and engage stabilizer muscles. They're the foundation of strength training.",
+        "ar": "الأوزان الحرة بتسمح بأنماط حركة طبيعية وبتشغّل عضلات الاستقرار. هي أساس تدريب القوة."
+      },
+      "equipment": [
+        {
+          "name": {
+            "en": "Barbell",
+            "ar": "البار"
+          },
+          "description": {
+            "en": "A long metal bar (typically 20kg for Olympic, 15kg for women's Olympic) that holds weight plates on each end.",
+            "ar": "عصا معدنية طويلة (عادةً 20 كيلو للأولمبي، 15 كيلو للأولمبي النسائي) بتشيل أقراص أوزان على كل طرف."
+          },
+          "types": [
+            {
+              "type": {
+                "en": "Olympic Barbell",
+                "ar": "البار الأولمبي"
+              },
+              "weight": "20kg (men) / 15kg (women)",
+              "notes": {
+                "en": "Standard for serious lifting. 7ft (men) or 6.5ft (women) long.",
+                "ar": "قياسي للرفع الجاد. 7 قدم (رجالة) أو 6.5 قدم (ستات) طول."
+              }
+            },
+            {
+              "type": {
+                "en": "EZ Curl Bar",
+                "ar": "بار EZ"
+              },
+              "weight": "6-10kg",
+              "notes": {
+                "en": "Curved bar that's easier on wrists for curls and tricep work.",
+                "ar": "بار منحني أسهل على الرسغ للكيرل وتمارين التراي."
+              }
+            },
+            {
+              "type": {
+                "en": "Trap Bar (Hex Bar)",
+                "ar": "تراب بار (بار سداسي)"
+              },
+              "weight": "20-25kg",
+              "notes": {
+                "en": "Hexagonal shape you stand inside. Great for deadlifts - easier on lower back.",
+                "ar": "شكل سداسي بتقف جواه. ممتاز للديدليفت - أسهل على أسفل الظهر."
+              }
+            },
+            {
+              "type": {
+                "en": "Safety Squat Bar",
+                "ar": "سيفتي سكوات بار"
+              },
+              "weight": "25-32kg",
+              "notes": {
+                "en": "Padded yoke that sits on shoulders. Easier if you have shoulder mobility issues.",
+                "ar": "نير مبطن بيقعد على الكتف. أسهل لو عندك مشاكل في موبيليتي الكتف."
+              }
+            }
+          ],
+          "exercises": [
+            {
+              "en": "Squat, Bench Press, Deadlift, Overhead Press, Rows, Curls",
+              "ar": "سكوات، بنش بريس، ديدليفت، ضغط علوي، تجديف، كيرل"
+            }
+          ],
+          "tips": [
+            {
+              "en": "Always use clips/collars to secure weight plates",
+              "ar": "دايماً استخدم الكليبسات/الكولرز عشان تثبت أقراص الأوزان"
+            },
+            {
+              "en": "Load weight evenly on both sides",
+              "ar": "وزّع الوزن بالتساوي على الجنبين"
+            },
+            {
+              "en": "Learn to fail safely (use spotters or safety pins)",
+              "ar": "اتعلم تفشل بأمان (استخدم مساعدين أو أعمدة الأمان)"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Dumbbells",
+            "ar": "الدمبلز"
+          },
+          "description": {
+            "en": "Handheld weights used for unilateral (single-arm) or bilateral exercises. Available in fixed or adjustable versions.",
+            "ar": "أوزان بتتشال باليد للتمارين الأحادية (إيد واحدة) أو الثنائية. متوفرة في نسخ ثابتة أو قابلة للتعديل."
+          },
+          "types": [
+            {
+              "type": {
+                "en": "Fixed Dumbbells",
+                "ar": "دمبلز ثابتة"
+              },
+              "notes": {
+                "en": "Pre-set weight that can't be changed. Most gyms have racks from 2kg to 50kg+.",
+                "ar": "وزن محدد مش بيتغير. أغلب الجيمات عندها راكات من 2 كيلو لـ 50+ كيلو."
+              }
+            },
+            {
+              "type": {
+                "en": "Adjustable Dumbbells",
+                "ar": "دمبلز قابلة للتعديل"
+              },
+              "notes": {
+                "en": "Add or remove weight plates. Great for home gyms. Examples: PowerBlocks, Bowflex.",
+                "ar": "ضيف أو شيل أقراص الأوزان. ممتازة للجيم المنزلي. أمثلة: باور بلوكس، باوفليكس."
+              }
+            }
+          ],
+          "exercises": [
+            {
+              "en": "All variations of presses, rows, curls, raises, lunges, and more",
+              "ar": "كل تنويعات البريس والتجديف والكيرل والرفرفة واللانجز وأكتر"
+            }
+          ],
+          "tips": [
+            {
+              "en": "Great for fixing muscle imbalances between sides",
+              "ar": "ممتازة لإصلاح اختلالات العضلات بين الجانبين"
+            },
+            {
+              "en": "Allow for greater range of motion than barbell",
+              "ar": "بتسمح بمدى حركة أكبر من البار"
+            },
+            {
+              "en": "Return to rack in correct position when done",
+              "ar": "رجّعها للراك في المكان الصح لما تخلص"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Kettlebells",
+            "ar": "كيتل بلز"
+          },
+          "description": {
+            "en": "Cast iron weights with a handle. Excellent for swings, carries, and explosive movements.",
+            "ar": "أوزان حديد بمقبض. ممتازة للسوينج والحمل والحركات الانفجارية."
+          },
+          "common_weights": "8kg, 12kg, 16kg, 20kg, 24kg, 32kg",
+          "exercises": [
+            {
+              "en": "Swings, Turkish Get-Ups, Goblet Squats, Cleans, Snatches, Carries",
+              "ar": "سوينج، تركش جت أب، جوبلت سكوات، كلين، سناتش، كاريز"
+            }
+          ],
+          "tips": [
+            {
+              "en": "Start with lighter weight to learn proper swing technique",
+              "ar": "ابدأ بوزن أخف عشان تتعلم تقنية السوينج الصحيحة"
+            },
+            {
+              "en": "The handle gets slippery - use chalk if available",
+              "ar": "المقبض بيكون ناعم - استخدم الطباشير لو متوفر"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Weight Plates",
+            "ar": "أقراص الأوزان"
+          },
+          "description": {
+            "en": "Discs that load onto barbells and machines. Come in standard (1-inch hole) and Olympic (2-inch hole) sizes.",
+            "ar": "أقراص بتتحمّل على البارات والأجهزة. بتيجي في حجم قياسي (فتحة 1 بوصة) وأولمبي (فتحة 2 بوصة)."
+          },
+          "types": [
+            {
+              "type": {
+                "en": "Iron Plates",
+                "ar": "أقراص حديد"
+              },
+              "notes": {
+                "en": "Traditional metal plates. Loud when dropped - some gyms don't allow it.",
+                "ar": "أقراص معدنية تقليدية. صوتها عالي لما بتقع - بعض الجيمات مش بتسمح بيه."
+              }
+            },
+            {
+              "type": {
+                "en": "Bumper Plates",
+                "ar": "بامبر بليتس"
+              },
+              "notes": {
+                "en": "Rubber-coated, can be dropped from overhead. Standard for Olympic lifting.",
+                "ar": "مغطاة بالمطاط، ممكن تسقط من فوق. قياسية للرفع الأولمبي."
+              }
+            }
+          ],
+          "standard_sizes": [
+            "1.25kg", "2.5kg", "5kg", "10kg", "15kg", "20kg", "25kg"
+          ]
+        }
+      ]
+    },
+    "machines": {
+      "title": {
+        "en": "Weight Machines",
+        "ar": "أجهزة الأوزان"
+      },
+      "description": {
+        "en": "Machines guide your movement path and are great for beginners or isolating specific muscles. They're generally safer than free weights.",
+        "ar": "الأجهزة بتوجه مسار حركتك وممتازة للمبتدئين أو عزل عضلات محددة. عموماً أكثر أماناً من الأوزان الحرة."
+      },
+      "equipment": [
+        {
+          "name": {
+            "en": "Chest Press Machine",
+            "ar": "جهاز ضغط الصدر"
+          },
+          "target": {
+            "en": "Chest, Front Deltoids, Triceps",
+            "ar": "الصدر، الدلتويد الأمامي، التراي"
+          },
+          "description": {
+            "en": "Simulates bench press movement on a fixed path. Adjust seat so handles are at chest height.",
+            "ar": "بيحاكي حركة البنش بريس على مسار ثابت. عدّل الكرسي عشان المقابض تكون على مستوى الصدر."
+          },
+          "form_tips": [
+            {
+              "en": "Keep shoulder blades squeezed together",
+              "ar": "خلي لوح الكتف مضغوط مع بعض"
+            },
+            {
+              "en": "Don't lock out elbows completely at top",
+              "ar": "ماتقفلش الكوع بالكامل فوق"
+            },
+            {
+              "en": "Controlled movement - don't let weight slam",
+              "ar": "حركة متحكمة - ماتسيبش الوزن يخبط"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Lat Pulldown Machine",
+            "ar": "جهاز السحب العلوي"
+          },
+          "target": {
+            "en": "Latissimus Dorsi, Biceps, Rear Deltoids",
+            "ar": "اللاتس، الباي، الدلتويد الخلفي"
+          },
+          "description": {
+            "en": "Pull bar down to upper chest. Great for building back width and learning to engage lats.",
+            "ar": "اسحب البار لأعلى الصدر. ممتاز لبناء عرض الظهر وتعلم تشغيل اللاتس."
+          },
+          "form_tips": [
+            {
+              "en": "Lean back slightly (15-20 degrees)",
+              "ar": "مل لورا شوية (15-20 درجة)"
+            },
+            {
+              "en": "Drive elbows down and back",
+              "ar": "ادفع الكوع لتحت ولورا"
+            },
+            {
+              "en": "Pull to upper chest, not behind neck",
+              "ar": "اسحب لأعلى الصدر، مش ورا الرقبة"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Seated Row Machine",
+            "ar": "جهاز التجديف القاعد"
+          },
+          "target": {
+            "en": "Middle Back, Lats, Biceps",
+            "ar": "نص الظهر، اللاتس، الباي"
+          },
+          "description": {
+            "en": "Pull handles toward your body while seated. Builds back thickness.",
+            "ar": "اسحب المقابض ناحية جسمك وانت قاعد. بيبني سمك الظهر."
+          },
+          "form_tips": [
+            {
+              "en": "Keep chest up, don't round forward",
+              "ar": "خلي الصدر عالي، ماتقوسش لقدام"
+            },
+            {
+              "en": "Squeeze shoulder blades at end of pull",
+              "ar": "اضغط لوح الكتف في آخر السحب"
+            },
+            {
+              "en": "Control the weight on the way back",
+              "ar": "تحكم في الوزن وهو راجع"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Shoulder Press Machine",
+            "ar": "جهاز ضغط الكتف"
+          },
+          "target": {
+            "en": "Deltoids, Triceps",
+            "ar": "الدلتويد، التراي"
+          },
+          "description": {
+            "en": "Press handles overhead from seated position. Safer than free weight overhead pressing.",
+            "ar": "اضغط المقابض لفوق من وضع الجلوس. أكثر أماناً من الضغط العلوي بالأوزان الحرة."
+          },
+          "form_tips": [
+            {
+              "en": "Adjust seat so handles start at shoulder height",
+              "ar": "عدّل الكرسي عشان المقابض تبدأ من مستوى الكتف"
+            },
+            {
+              "en": "Keep core tight, don't arch back excessively",
+              "ar": "خلي الكور مشدود، ماتقوسش الظهر كتير"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Leg Press Machine",
+            "ar": "جهاز ليج بريس"
+          },
+          "target": {
+            "en": "Quadriceps, Glutes, Hamstrings",
+            "ar": "الكوادز، المؤخرة، الهامسترينج"
+          },
+          "description": {
+            "en": "Push weight away using your legs. Great for loading legs without spinal compression.",
+            "ar": "ادفع الوزن بعيد برجلك. ممتاز لتحميل الرجل من غير ضغط على العمود الفقري."
+          },
+          "types": [
+            {
+              "type": {
+                "en": "45-Degree Leg Press",
+                "ar": "ليج بريس 45 درجة"
+              },
+              "notes": {
+                "en": "Most common. Weight sled moves at 45-degree angle.",
+                "ar": "الأكثر شيوعاً. الوزن بيتحرك بزاوية 45 درجة."
+              }
+            },
+            {
+              "type": {
+                "en": "Horizontal Leg Press",
+                "ar": "ليج بريس أفقي"
+              },
+              "notes": {
+                "en": "Push forward while seated. Feels heavier than 45-degree version.",
+                "ar": "ادفع لقدام وانت قاعد. بيحسس بتقل أكتر من النسخة 45 درجة."
+              }
+            }
+          ],
+          "form_tips": [
+            {
+              "en": "Keep lower back pressed into pad - don't let it round",
+              "ar": "خلي أسفل الظهر ملتصق بالبطانة - ماتسيبهوش يتقوس"
+            },
+            {
+              "en": "Don't lock knees at top",
+              "ar": "ماتقفلش الركبة فوق"
+            },
+            {
+              "en": "Foot placement changes emphasis (high = more glutes/hams, low = more quads)",
+              "ar": "مكان الرجل بيغير التركيز (عالي = أكتر مؤخرة/هامز، واطي = أكتر كوادز)"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Leg Extension Machine",
+            "ar": "جهاز ليج إكستنشن"
+          },
+          "target": {
+            "en": "Quadriceps",
+            "ar": "الكوادز"
+          },
+          "description": {
+            "en": "Extend legs against resistance while seated. Isolates the quadriceps.",
+            "ar": "افرد رجلك ضد المقاومة وانت قاعد. بيعزل الكوادز."
+          },
+          "form_tips": [
+            {
+              "en": "Adjust pad to sit on lower shin, not on ankle",
+              "ar": "عدّل البطانة تقعد على أسفل الساق، مش على الكاحل"
+            },
+            {
+              "en": "Don't use excessive momentum",
+              "ar": "ماتستخدمش زخم زيادة"
+            },
+            {
+              "en": "Squeeze at top of movement",
+              "ar": "اضغط في أعلى الحركة"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Leg Curl Machine",
+            "ar": "جهاز ليج كيرل"
+          },
+          "target": {
+            "en": "Hamstrings",
+            "ar": "الهامسترينج"
+          },
+          "description": {
+            "en": "Curl legs against resistance. Can be seated or lying down.",
+            "ar": "اثني رجلك ضد المقاومة. ممكن قاعد أو نايم."
+          },
+          "types": [
+            {
+              "type": {
+                "en": "Lying Leg Curl",
+                "ar": "ليج كيرل نايم"
+              }
+            },
+            {
+              "type": {
+                "en": "Seated Leg Curl",
+                "ar": "ليج كيرل قاعد"
+              }
+            }
+          ],
+          "form_tips": [
+            {
+              "en": "Control the movement - don't swing",
+              "ar": "تحكم في الحركة - ماتتأرجحش"
+            },
+            {
+              "en": "Keep hips pressed down (lying) or back pressed into seat (seated)",
+              "ar": "خلي الورك مضغوط لتحت (نايم) أو الظهر ملتصق بالكرسي (قاعد)"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Cable Machine / Functional Trainer",
+            "ar": "جهاز الكيبل / المدرب الوظيفي"
+          },
+          "target": {
+            "en": "Any muscle depending on attachment and angle",
+            "ar": "أي عضلة حسب الملحق والزاوية"
+          },
+          "description": {
+            "en": "Adjustable cables with various attachments. Most versatile piece in the gym.",
+            "ar": "كيبلات قابلة للتعديل مع ملحقات متنوعة. أكثر قطعة متعددة الاستخدامات في الجيم."
+          },
+          "common_attachments": [
+            {
+              "attachment": {
+                "en": "Straight Bar",
+                "ar": "بار مستقيم"
+              },
+              "used_for": {
+                "en": "Tricep pushdowns, cable curls, face pulls",
+                "ar": "تراي بوش داون، كيبل كيرل، فيس بول"
+              }
+            },
+            {
+              "attachment": {
+                "en": "Rope",
+                "ar": "الحبل"
+              },
+              "used_for": {
+                "en": "Tricep pushdowns, face pulls, hammer curls",
+                "ar": "تراي بوش داون، فيس بول، هامر كيرل"
+              }
+            },
+            {
+              "attachment": {
+                "en": "D-Handle",
+                "ar": "مقبض D"
+              },
+              "used_for": {
+                "en": "Single arm work - rows, curls, flyes",
+                "ar": "تمارين إيد واحدة - تجديف، كيرل، فلاي"
+              }
+            },
+            {
+              "attachment": {
+                "en": "V-Bar",
+                "ar": "بار V"
+              },
+              "used_for": {
+                "en": "Close-grip pulldowns, rows",
+                "ar": "سحب قبضة ضيقة، تجديف"
+              }
+            }
+          ],
+          "tips": [
+            {
+              "en": "Cable machines provide constant tension throughout movement",
+              "ar": "أجهزة الكيبل بتوفر توتر ثابت طول الحركة"
+            },
+            {
+              "en": "Adjust height for different exercises",
+              "ar": "عدّل الارتفاع لتمارين مختلفة"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Smith Machine",
+            "ar": "سميث ماشين"
+          },
+          "target": {
+            "en": "Various - barbell on guided rails",
+            "ar": "متنوع - بار على قضبان موجهة"
+          },
+          "description": {
+            "en": "Barbell fixed to vertical rails. Provides stability but restricts natural movement pattern.",
+            "ar": "بار مثبت على قضبان رأسية. بيوفر استقرار بس بيقيد نمط الحركة الطبيعي."
+          },
+          "good_for": [
+            {
+              "en": "Learning movements as a beginner",
+              "ar": "تعلم الحركات كمبتدئ"
+            },
+            {
+              "en": "Training without a spotter",
+              "ar": "التدريب من غير مساعد"
+            },
+            {
+              "en": "Specific isolation work (calf raises, shrugs)",
+              "ar": "تمارين عزل محددة (كالف، شراجز)"
+            }
+          ],
+          "limitations": [
+            {
+              "en": "Fixed bar path may not match your natural movement",
+              "ar": "مسار البار الثابت ممكن مايتطابقش مع حركتك الطبيعية"
+            },
+            {
+              "en": "Doesn't build stabilizer muscles as well as free weights",
+              "ar": "مش بيبني عضلات الاستقرار زي الأوزان الحرة"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Pec Deck / Chest Fly Machine",
+            "ar": "جهاز فلاي الصدر"
+          },
+          "target": {
+            "en": "Chest (emphasis on inner chest)",
+            "ar": "الصدر (تركيز على الصدر الداخلي)"
+          },
+          "description": {
+            "en": "Bring pads or handles together in front of chest. Great for chest isolation.",
+            "ar": "جيب البطانات أو المقابض مع بعض قدام الصدر. ممتاز لعزل الصدر."
+          },
+          "form_tips": [
+            {
+              "en": "Keep slight bend in elbows throughout",
+              "ar": "خلي ثني خفيف في الكوع طول الحركة"
+            },
+            {
+              "en": "Squeeze chest at the contracted position",
+              "ar": "اضغط الصدر في وضع الانقباض"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Hip Abductor / Adductor Machine",
+            "ar": "جهاز فتح وتقريب الفخذ"
+          },
+          "target": {
+            "en": "Inner and outer thighs",
+            "ar": "داخل وخارج الفخذ"
+          },
+          "description": {
+            "en": "Push legs apart (abduction) or bring together (adduction) against resistance.",
+            "ar": "ادفع الرجلين لبره (أبدكشن) أو قربهم (أدكشن) ضد المقاومة."
+          },
+          "form_tips": [
+            {
+              "en": "Keep back against pad",
+              "ar": "خلي الظهر على البطانة"
+            },
+            {
+              "en": "Control both directions of movement",
+              "ar": "تحكم في الاتجاهين"
+            }
+          ]
+        }
+      ]
+    },
+    "cardio_equipment": {
+      "title": {
+        "en": "Cardio Equipment",
+        "ar": "أجهزة الكارديو"
+      },
+      "equipment": [
+        {
+          "name": {
+            "en": "Treadmill",
+            "ar": "التريدميل (المشاية)"
+          },
+          "description": {
+            "en": "Running or walking on a moving belt. Most popular cardio machine.",
+            "ar": "الجري أو المشي على حزام متحرك. أشهر جهاز كارديو."
+          },
+          "features": [
+            {
+              "en": "Speed adjustment (km/h or mph)",
+              "ar": "ضبط السرعة (كم/ساعة أو ميل/ساعة)"
+            },
+            {
+              "en": "Incline adjustment (simulates hills)",
+              "ar": "ضبط الميل (بيحاكي التلال)"
+            },
+            {
+              "en": "Pre-set programs",
+              "ar": "برامج محددة مسبقاً"
+            },
+            {
+              "en": "Heart rate monitors (handles or chest strap)",
+              "ar": "مراقبة معدل النبض (مقابض أو حزام صدر)"
+            }
+          ],
+          "tips": [
+            {
+              "en": "Start slow and increase gradually",
+              "ar": "ابدأ ببطء وزوّد تدريجياً"
+            },
+            {
+              "en": "Use incline for lower impact than running flat",
+              "ar": "استخدم الميل لصدمة أقل من الجري المستوي"
+            },
+            {
+              "en": "Hold emergency stop clip if available",
+              "ar": "امسك كليب الوقف الطوارئ لو متوفر"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Stationary Bike",
+            "ar": "العجلة الثابتة"
+          },
+          "description": {
+            "en": "Cycling in place. Low impact on joints.",
+            "ar": "ركوب العجلة في مكانك. صدمة قليلة على المفاصل."
+          },
+          "types": [
+            {
+              "type": {
+                "en": "Upright Bike",
+                "ar": "عجلة عمودية"
+              },
+              "notes": {
+                "en": "Similar position to regular bike",
+                "ar": "وضع مشابه للعجلة العادية"
+              }
+            },
+            {
+              "type": {
+                "en": "Recumbent Bike",
+                "ar": "عجلة مستلقية"
+              },
+              "notes": {
+                "en": "Reclined position with back support. Easier on lower back.",
+                "ar": "وضع مستلقي مع دعم للظهر. أسهل على أسفل الظهر."
+              }
+            },
+            {
+              "type": {
+                "en": "Spin/Indoor Cycling Bike",
+                "ar": "عجلة السبين"
+              },
+              "notes": {
+                "en": "Heavy flywheel, more realistic cycling feel. Used in spin classes.",
+                "ar": "حذافة تقيلة، إحساس ركوب أكثر واقعية. بتستخدم في كلاسات السبين."
+              }
+            }
+          ],
+          "tips": [
+            {
+              "en": "Adjust seat height - slight bend in knee at bottom",
+              "ar": "عدّل ارتفاع الكرسي - ثني خفيف في الركبة في الأسفل"
+            },
+            {
+              "en": "Don't bounce in the saddle",
+              "ar": "ماتتنططش على الكرسي"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Elliptical (Cross-Trainer)",
+            "ar": "الإليبتكال (كروس ترينر)"
+          },
+          "description": {
+            "en": "Low-impact machine combining walking/running with arm movement.",
+            "ar": "جهاز منخفض الصدمة بيجمع المشي/الجري مع حركة الذراع."
+          },
+          "features": [
+            {
+              "en": "Adjustable resistance",
+              "ar": "مقاومة قابلة للتعديل"
+            },
+            {
+              "en": "Adjustable incline on some models",
+              "ar": "ميل قابل للتعديل في بعض الموديلات"
+            },
+            {
+              "en": "Moving handles for upper body",
+              "ar": "مقابض متحركة للجزء العلوي"
+            },
+            {
+              "en": "Reverse pedaling option",
+              "ar": "خيار التبديل العكسي"
+            }
+          ],
+          "tips": [
+            {
+              "en": "Keep feet flat on pedals",
+              "ar": "خلي القدم مسطحة على الدواسات"
+            },
+            {
+              "en": "Don't lean on handles - use core",
+              "ar": "ماتتكيش على المقابض - استخدم الكور"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Rowing Machine (Erg)",
+            "ar": "جهاز التجديف"
+          },
+          "description": {
+            "en": "Full-body cardio machine that mimics rowing. Excellent calorie burner.",
+            "ar": "جهاز كارديو للجسم كله بيحاكي التجديف. حارق سعرات ممتاز."
+          },
+          "muscles_worked": {
+            "en": "Legs, back, arms, core - nearly full body",
+            "ar": "الرجل، الظهر، الذراعين، الكور - تقريباً الجسم كله"
+          },
+          "proper_form": [
+            {
+              "phase": {
+                "en": "Catch (start position)",
+                "ar": "الالتقاط (وضع البداية)"
+              },
+              "description": {
+                "en": "Knees bent, shins vertical, arms extended",
+                "ar": "الركب مثنية، الساق عمودية، الذراعين ممدودة"
+              }
+            },
+            {
+              "phase": {
+                "en": "Drive",
+                "ar": "الدفع"
+              },
+              "description": {
+                "en": "Push with legs FIRST, then lean back, then pull arms",
+                "ar": "ادفع بالرجل الأول، بعدين مل لورا، بعدين اسحب الذراعين"
+              }
+            },
+            {
+              "phase": {
+                "en": "Finish",
+                "ar": "النهاية"
+              },
+              "description": {
+                "en": "Legs straight, slight lean back, handle at lower ribs",
+                "ar": "الرجل مستقيمة، ميل خفيف لورا، المقبض عند أسفل الضلوع"
+              }
+            },
+            {
+              "phase": {
+                "en": "Recovery",
+                "ar": "الاستعادة"
+              },
+              "description": {
+                "en": "Arms away first, then lean forward, then bend knees",
+                "ar": "الذراعين بعيد الأول، بعدين مل لقدام، بعدين اثني الركبة"
+              }
+            }
+          ],
+          "common_mistakes": [
+            {
+              "en": "Pulling with arms before legs",
+              "ar": "السحب بالذراعين قبل الرجل"
+            },
+            {
+              "en": "Hunching back instead of keeping chest up",
+              "ar": "تقويس الظهر بدل ما تخلي الصدر عالي"
+            },
+            {
+              "en": "Gripping too tightly",
+              "ar": "المسك بقوة زيادة"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Stair Climber (StairMaster)",
+            "ar": "ستير ماستر (سلالم متحركة)"
+          },
+          "description": {
+            "en": "Continuous stair climbing. Excellent for legs and cardio.",
+            "ar": "طلوع سلالم مستمر. ممتاز للرجل والكارديو."
+          },
+          "tips": [
+            {
+              "en": "Don't lean heavily on rails - use them for balance only",
+              "ar": "ماتتكيش بقوة على السور - استخدمه للتوازن بس"
+            },
+            {
+              "en": "Start at lower speed until comfortable",
+              "ar": "ابدأ بسرعة أقل لحد ما تكون مرتاح"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Assault/Air Bike",
+            "ar": "أسولت بايك"
+          },
+          "description": {
+            "en": "Bike with fan that creates resistance - harder you pedal, more resistance. Brutal for HIIT.",
+            "ar": "عجلة بمروحة بتعمل مقاومة - كل ما تبدّل أقوى، المقاومة أكتر. قاسية للـ HIIT."
+          },
+          "tips": [
+            {
+              "en": "Use arms and legs together for maximum calorie burn",
+              "ar": "استخدم الذراعين والرجل مع بعض لأقصى حرق سعرات"
+            },
+            {
+              "en": "Great for intervals - go all-out for short bursts",
+              "ar": "ممتازة للإنترفال - روح بكل قوتك لفترات قصيرة"
+            }
+          ]
+        }
+      ]
+    },
+    "racks_and_benches": {
+      "title": {
+        "en": "Racks and Benches",
+        "ar": "الراكات والبنشات"
+      },
+      "equipment": [
+        {
+          "name": {
+            "en": "Power Rack / Squat Rack",
+            "ar": "باور راك / سكوات راك"
+          },
+          "description": {
+            "en": "Four-post structure with adjustable safety pins. Essential for safe heavy barbell work.",
+            "ar": "هيكل بأربعة أعمدة مع أعمدة أمان قابلة للتعديل. ضروري للأوزان التقيلة بأمان."
+          },
+          "uses": [
+            {
+              "en": "Squats (with safety pins)",
+              "ar": "سكوات (مع أعمدة الأمان)"
+            },
+            {
+              "en": "Bench press (with safety pins)",
+              "ar": "بنش بريس (مع أعمدة الأمان)"
+            },
+            {
+              "en": "Pull-ups (top bar)",
+              "ar": "عقلة (البار العلوي)"
+            },
+            {
+              "en": "Rack pulls",
+              "ar": "راك بولز"
+            }
+          ],
+          "how_to_set_safety_pins": {
+            "en": "For squats: Set pins just below your lowest squat depth. For bench: Set so bar can't crush your chest.",
+            "ar": "للسكوات: حط الأعمدة تحت أقل عمق للسكوات. للبنش: حطها بحيث البار مايقدرش يضغط صدرك."
+          }
+        },
+        {
+          "name": {
+            "en": "Flat Bench",
+            "ar": "بنش فلات"
+          },
+          "description": {
+            "en": "Horizontal bench for bench press and dumbbell work.",
+            "ar": "بنش أفقي للبنش بريس وتمارين الدمبل."
+          },
+          "exercises": {
+            "en": "Bench press, dumbbell press, dumbbell rows, tricep work",
+            "ar": "بنش بريس، دمبل بريس، تجديف دمبل، تمارين تراي"
+          }
+        },
+        {
+          "name": {
+            "en": "Adjustable Bench",
+            "ar": "بنش قابل للتعديل"
+          },
+          "description": {
+            "en": "Bench that can be set to various angles from flat to incline to decline.",
+            "ar": "بنش ممكن يتظبط على زوايا مختلفة من فلات لإنكلاين لديكلاين."
+          },
+          "angles": [
+            {
+              "angle": {
+                "en": "Flat (0°)",
+                "ar": "فلات (0°)"
+              },
+              "emphasis": {
+                "en": "Middle chest",
+                "ar": "نص الصدر"
+              }
+            },
+            {
+              "angle": {
+                "en": "Low Incline (15-30°)",
+                "ar": "إنكلاين منخفض (15-30°)"
+              },
+              "emphasis": {
+                "en": "Upper chest",
+                "ar": "أعلى الصدر"
+              }
+            },
+            {
+              "angle": {
+                "en": "High Incline (45-60°)",
+                "ar": "إنكلاين عالي (45-60°)"
+              },
+              "emphasis": {
+                "en": "Front deltoids",
+                "ar": "الدلتويد الأمامي"
+              }
+            },
+            {
+              "angle": {
+                "en": "Decline (-15 to -30°)",
+                "ar": "ديكلاين (-15 إلى -30°)"
+              },
+              "emphasis": {
+                "en": "Lower chest",
+                "ar": "أسفل الصدر"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Preacher Curl Bench",
+            "ar": "بنش بريتشر كيرل"
+          },
+          "description": {
+            "en": "Angled pad that supports arms during curls for strict bicep isolation.",
+            "ar": "بطانة مائلة بتدعم الذراعين أثناء الكيرل لعزل الباي بشكل صارم."
+          }
+        },
+        {
+          "name": {
+            "en": "Dip Station",
+            "ar": "جهاز الديبس"
+          },
+          "description": {
+            "en": "Parallel bars for bodyweight dips. Works chest and triceps.",
+            "ar": "بارات متوازية للديبس بوزن الجسم. بيشغل الصدر والتراي."
+          },
+          "tips": [
+            {
+              "en": "Lean forward for more chest, stay upright for more triceps",
+              "ar": "مل لقدام لصدر أكتر، ابقى مستقيم لتراي أكتر"
+            },
+            {
+              "en": "Don't go too deep if you have shoulder issues",
+              "ar": "ماتنزلش عميق قوي لو عندك مشاكل في الكتف"
+            }
+          ]
+        }
+      ]
+    },
+    "accessories": {
+      "title": {
+        "en": "Gym Accessories",
+        "ar": "إكسسوارات الجيم"
+      },
+      "items": [
+        {
+          "name": {
+            "en": "Weightlifting Belt",
+            "ar": "حزام رفع الأثقال"
+          },
+          "purpose": {
+            "en": "Provides core support for heavy lifts by giving your abs something to brace against.",
+            "ar": "بيوفر دعم للكور في الأوزان التقيلة بإنه يدي البطن حاجة تضغط عليها."
+          },
+          "when_to_use": {
+            "en": "Heavy squats, deadlifts, overhead press. Not needed for light work or machines.",
+            "ar": "سكوات تقيل، ديدليفت، ضغط علوي. مش محتاج للأوزان الخفيفة أو الأجهزة."
+          }
+        },
+        {
+          "name": {
+            "en": "Wrist Wraps",
+            "ar": "أربطة الرسغ"
+          },
+          "purpose": {
+            "en": "Support wrists during pressing movements.",
+            "ar": "بتدعم الرسغ أثناء حركات الضغط."
+          },
+          "when_to_use": {
+            "en": "Heavy bench press, overhead press, if you have wrist discomfort.",
+            "ar": "بنش تقيل، ضغط علوي، لو عندك عدم راحة في الرسغ."
+          }
+        },
+        {
+          "name": {
+            "en": "Lifting Straps",
+            "ar": "أشرطة الرفع"
+          },
+          "purpose": {
+            "en": "Help grip the bar when your grip gives out before your muscles do.",
+            "ar": "بتساعد في مسك البار لما القبضة بتضعف قبل العضلات."
+          },
+          "when_to_use": {
+            "en": "Heavy deadlifts, rows, shrugs, pull-ups for back training.",
+            "ar": "ديدليفت تقيل، تجديف، شراجز، عقلة لتدريب الظهر."
+          },
+          "note": {
+            "en": "Don't use for every set - train grip strength too",
+            "ar": "ماتستخدمهاش في كل سيت - درّب قوة القبضة كمان"
+          }
+        },
+        {
+          "name": {
+            "en": "Knee Sleeves",
+            "ar": "دعامات الركبة"
+          },
+          "purpose": {
+            "en": "Provide warmth and mild compression to knees.",
+            "ar": "بتوفر دفا وضغط خفيف للركبة."
+          },
+          "when_to_use": {
+            "en": "Squats and leg work, especially if you have knee sensitivity.",
+            "ar": "سكوات وتمارين الرجل، خصوصاً لو عندك حساسية في الركبة."
+          }
+        },
+        {
+          "name": {
+            "en": "Chalk",
+            "ar": "الطباشير"
+          },
+          "purpose": {
+            "en": "Absorbs sweat and improves grip on bars and weights.",
+            "ar": "بيمتص العرق وبيحسن القبضة على البارات والأوزان."
+          },
+          "types": [
+            {
+              "type": {
+                "en": "Block chalk",
+                "ar": "طباشير قالب"
+              }
+            },
+            {
+              "type": {
+                "en": "Liquid chalk (less messy, some gyms only allow this)",
+                "ar": "طباشير سائل (أقل فوضى، بعض الجيمات بتسمح بيه بس)"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Resistance Bands",
+            "ar": "باندات المقاومة"
+          },
+          "purpose": {
+            "en": "Add variable resistance, assist with exercises, or use for warm-up/rehab.",
+            "ar": "بتضيف مقاومة متغيرة، بتساعد في التمارين، أو بتستخدم للتسخين/التأهيل."
+          },
+          "uses": [
+            {
+              "en": "Warm-up and activation",
+              "ar": "التسخين والتنشيط"
+            },
+            {
+              "en": "Assisted pull-ups",
+              "ar": "عقلة بمساعدة"
+            },
+            {
+              "en": "Face pulls, band pull-aparts",
+              "ar": "فيس بول، فتح الباند"
+            },
+            {
+              "en": "Adding resistance to squats/deadlifts",
+              "ar": "إضافة مقاومة للسكوات/الديدليفت"
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Foam Roller",
+            "ar": "فوم رولر"
+          },
+          "purpose": {
+            "en": "Self-myofascial release (self-massage) for muscle recovery and mobility.",
+            "ar": "تحرير اللفافة الذاتي (مساج ذاتي) لاستشفاء العضل والموبيليتي."
+          }
+        },
+        {
+          "name": {
+            "en": "Yoga/Exercise Mat",
+            "ar": "مرتبة اليوجا/التمرين"
+          },
+          "purpose": {
+            "en": "Cushioning for floor exercises, stretching, and ab work.",
+            "ar": "بطانة لتمارين الأرض والإطالة وتمارين البطن."
+          }
+        }
+      ]
+    },
+    "egypt_specific": {
+      "title": {
+        "en": "Gym Equipment in Egypt",
+        "ar": "أجهزة الجيم في مصر"
+      },
+      "tips": [
+        {
+          "en": "Equipment quality varies greatly between gyms - inspect before using if it looks worn",
+          "ar": "جودة الأجهزة بتختلف كتير بين الجيمات - افحص قبل الاستخدام لو شكلها قديم"
+        },
+        {
+          "en": "Some gyms may not have all equipment listed - choose a gym based on your needs",
+          "ar": "بعض الجيمات ممكن مايكونش فيها كل الأجهزة المذكورة - اختار جيم بناءً على احتياجاتك"
+        },
+        {
+          "en": "Gold's Gym, Samia Allouba, California have most complete equipment",
+          "ar": "جولدز جيم، سامية علوبة، كاليفورنيا عندهم أكمل أجهزة"
+        },
+        {
+          "en": "If equipment seems dangerous or broken, report to staff and don't use it",
+          "ar": "لو الجهاز باين خطر أو مكسور، بلّغ الموظفين وماتستخدموش"
+        },
+        {
+          "en": "Peak gym hours in Egypt (8-11 PM) mean equipment may be crowded - have backup exercises ready",
+          "ar": "ساعات الذروة في مصر (8-11 مساءً) معناها الأجهزة ممكن تكون مزدحمة - جهز تمارين بديلة"
+        }
+      ]
+    }
+  }
+}
