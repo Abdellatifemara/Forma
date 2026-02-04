@@ -1,0 +1,840 @@
+{
+  "motivation_habits": {
+    "title": {
+      "en": "Motivation & Building Fitness Habits",
+      "ar": "الدافعية وبناء عادات اللياقة"
+    },
+    "introduction": {
+      "en": "Motivation gets you started, but habits keep you going. This guide covers the psychology of fitness motivation and practical strategies for building lasting habits.",
+      "ar": "الدافعية بتخليك تبدأ، بس العادات بتخليك تكمل. الدليل ده بيغطي سيكولوجية الدافعية للياقة واستراتيجيات عملية لبناء عادات دائمة."
+    },
+    "motivation_vs_discipline": {
+      "title": {
+        "en": "Motivation vs. Discipline",
+        "ar": "الدافعية مقابل الانضباط"
+      },
+      "motivation": {
+        "definition": {
+          "en": "The emotional desire to do something. It comes and goes like waves.",
+          "ar": "الرغبة العاطفية لعمل حاجة. بتيجي وتروح زي الموج."
+        },
+        "characteristics": [
+          {
+            "en": "Temporary and unreliable",
+            "ar": "مؤقتة ومش موثوقة"
+          },
+          {
+            "en": "Dependent on mood, sleep, stress",
+            "ar": "معتمدة على المزاج والنوم والضغط"
+          },
+          {
+            "en": "Great for starting",
+            "ar": "ممتازة للبداية"
+          },
+          {
+            "en": "Will abandon you on hard days",
+            "ar": "هتسيبك في الأيام الصعبة"
+          }
+        ]
+      },
+      "discipline": {
+        "definition": {
+          "en": "Doing what needs to be done regardless of how you feel.",
+          "ar": "عمل اللي لازم يتعمل بغض النظر عن إحساسك."
+        },
+        "characteristics": [
+          {
+            "en": "Can be built like a muscle",
+            "ar": "ممكن يتبني زي العضلة"
+          },
+          {
+            "en": "Doesn't require feeling motivated",
+            "ar": "مش محتاج إحساس بالدافعية"
+          },
+          {
+            "en": "Gets stronger with practice",
+            "ar": "بيقوى بالممارسة"
+          },
+          {
+            "en": "Will carry you when motivation fails",
+            "ar": "هيشيلك لما الدافعية تفشل"
+          }
+        ]
+      },
+      "key_insight": {
+        "en": "Don't wait until you feel motivated. Train yourself to act regardless of feelings. Motivation often comes AFTER you start, not before.",
+        "ar": "ماتستناش لحد ما تحس بدافعية. درّب نفسك تتصرف بغض النظر عن المشاعر. الدافعية غالباً بتيجي بعد ما تبدأ، مش قبل."
+      }
+    },
+    "building_habits": {
+      "title": {
+        "en": "The Science of Habit Building",
+        "ar": "علم بناء العادات"
+      },
+      "habit_loop": {
+        "title": {
+          "en": "The Habit Loop",
+          "ar": "دورة العادة"
+        },
+        "components": [
+          {
+            "component": {
+              "en": "Cue/Trigger",
+              "ar": "المثير/المحفز"
+            },
+            "description": {
+              "en": "Something that triggers the behavior. Can be time, location, emotion, other people, or preceding action.",
+              "ar": "حاجة بتحفز السلوك. ممكن يكون وقت، مكان، عاطفة، ناس تانية، أو فعل سابق."
+            },
+            "fitness_examples": [
+              {
+                "en": "Alarm at 6 AM",
+                "ar": "المنبه الساعة 6 صباحاً"
+              },
+              {
+                "en": "Seeing your gym bag by the door",
+                "ar": "رؤية شنطة الجيم جنب الباب"
+              },
+              {
+                "en": "Finishing work",
+                "ar": "خلصت الشغل"
+              }
+            ]
+          },
+          {
+            "component": {
+              "en": "Craving",
+              "ar": "الرغبة"
+            },
+            "description": {
+              "en": "The motivational force. You don't crave the habit itself, but the change in state it delivers.",
+              "ar": "القوة الدافعة. مش بترغب في العادة نفسها، بس في تغيير الحالة اللي بتجيبها."
+            },
+            "fitness_examples": [
+              {
+                "en": "Wanting to feel energized",
+                "ar": "الرغبة في الإحساس بالنشاط"
+              },
+              {
+                "en": "Wanting to feel strong",
+                "ar": "الرغبة في الإحساس بالقوة"
+              },
+              {
+                "en": "Wanting stress relief",
+                "ar": "الرغبة في تخفيف الضغط"
+              }
+            ]
+          },
+          {
+            "component": {
+              "en": "Response",
+              "ar": "الاستجابة"
+            },
+            "description": {
+              "en": "The actual habit you perform. This is the behavior itself.",
+              "ar": "العادة الفعلية اللي بتعملها. ده السلوك نفسه."
+            },
+            "fitness_examples": [
+              {
+                "en": "Going to the gym",
+                "ar": "الذهاب للجيم"
+              },
+              {
+                "en": "Doing a home workout",
+                "ar": "عمل تمرين في البيت"
+              },
+              {
+                "en": "Going for a walk",
+                "ar": "المشي"
+              }
+            ]
+          },
+          {
+            "component": {
+              "en": "Reward",
+              "ar": "المكافأة"
+            },
+            "description": {
+              "en": "The positive feeling or outcome that reinforces the habit.",
+              "ar": "الإحساس الإيجابي أو النتيجة اللي بتعزز العادة."
+            },
+            "fitness_examples": [
+              {
+                "en": "Endorphin rush after exercise",
+                "ar": "اندفاع الإندورفين بعد التمرين"
+              },
+              {
+                "en": "Sense of accomplishment",
+                "ar": "إحساس الإنجاز"
+              },
+              {
+                "en": "Checking off workout in app",
+                "ar": "تحديد إنجاز التمرين في التطبيق"
+              }
+            ]
+          }
+        ]
+      },
+      "four_laws_of_behavior_change": {
+        "title": {
+          "en": "The 4 Laws of Behavior Change (from Atomic Habits)",
+          "ar": "القوانين الأربعة لتغيير السلوك (من Atomic Habits)"
+        },
+        "laws": [
+          {
+            "law": {
+              "en": "Make it Obvious (Cue)",
+              "ar": "خليها واضحة (المثير)"
+            },
+            "strategies": [
+              {
+                "strategy": {
+                  "en": "Implementation Intention",
+                  "ar": "نية التنفيذ"
+                },
+                "description": {
+                  "en": "\"I will [BEHAVIOR] at [TIME] in [LOCATION]\"",
+                  "ar": "\"هعمل [السلوك] في [الوقت] في [المكان]\""
+                },
+                "example": {
+                  "en": "I will go to the gym at 6 AM at Golds Gym Maadi",
+                  "ar": "هروح الجيم الساعة 6 صباحاً في جولدز جيم المعادي"
+                }
+              },
+              {
+                "strategy": {
+                  "en": "Habit Stacking",
+                  "ar": "تكديس العادات"
+                },
+                "description": {
+                  "en": "\"After [CURRENT HABIT], I will [NEW HABIT]\"",
+                  "ar": "\"بعد [العادة الحالية]، هعمل [العادة الجديدة]\""
+                },
+                "example": {
+                  "en": "After I make my morning coffee, I will do 10 push-ups",
+                  "ar": "بعد ما أعمل قهوتي الصبح، هعمل 10 بوش أبس"
+                }
+              },
+              {
+                "strategy": {
+                  "en": "Environment Design",
+                  "ar": "تصميم البيئة"
+                },
+                "description": {
+                  "en": "Make cues visible - gym bag by door, workout clothes ready, supplements on counter",
+                  "ar": "خلي المثيرات مرئية - شنطة الجيم جنب الباب، هدوم التمرين جاهزة، المكملات على الكاونتر"
+                }
+              }
+            ]
+          },
+          {
+            "law": {
+              "en": "Make it Attractive (Craving)",
+              "ar": "خليها جذابة (الرغبة)"
+            },
+            "strategies": [
+              {
+                "strategy": {
+                  "en": "Temptation Bundling",
+                  "ar": "ربط الإغراء"
+                },
+                "description": {
+                  "en": "Pair something you want to do with something you need to do",
+                  "ar": "اربط حاجة عايز تعملها مع حاجة لازم تعملها"
+                },
+                "example": {
+                  "en": "Only listen to favorite podcast while at the gym",
+                  "ar": "اسمع البودكاست المفضل بس وانت في الجيم"
+                }
+              },
+              {
+                "strategy": {
+                  "en": "Join a Culture",
+                  "ar": "انضم لثقافة"
+                },
+                "description": {
+                  "en": "Surround yourself with people who have the habits you want",
+                  "ar": "حوط نفسك بناس عندهم العادات اللي انت عايزها"
+                },
+                "example": {
+                  "en": "Join a fitness community, workout group, or gym with strong culture",
+                  "ar": "انضم لمجتمع لياقة، مجموعة تمرين، أو جيم بثقافة قوية"
+                }
+              },
+              {
+                "strategy": {
+                  "en": "Reframe Your Mindset",
+                  "ar": "أعد صياغة تفكيرك"
+                },
+                "description": {
+                  "en": "Change 'I have to work out' to 'I get to work out'",
+                  "ar": "غيّر 'لازم أتمرن' لـ 'بقدر أتمرن'"
+                }
+              }
+            ]
+          },
+          {
+            "law": {
+              "en": "Make it Easy (Response)",
+              "ar": "خليها سهلة (الاستجابة)"
+            },
+            "strategies": [
+              {
+                "strategy": {
+                  "en": "Reduce Friction",
+                  "ar": "قلل الاحتكاك"
+                },
+                "description": {
+                  "en": "Remove obstacles between you and the habit",
+                  "ar": "شيل العقبات بينك وبين العادة"
+                },
+                "examples": [
+                  {
+                    "en": "Sleep in your workout clothes",
+                    "ar": "نام بهدوم التمرين"
+                  },
+                  {
+                    "en": "Choose a gym close to home/work",
+                    "ar": "اختار جيم قريب من البيت/الشغل"
+                  },
+                  {
+                    "en": "Prepare meals in advance",
+                    "ar": "حضّر الوجبات مسبقاً"
+                  }
+                ]
+              },
+              {
+                "strategy": {
+                  "en": "Two-Minute Rule",
+                  "ar": "قاعدة الدقيقتين"
+                },
+                "description": {
+                  "en": "Scale down habits to 2 minutes or less when starting",
+                  "ar": "صغّر العادات لدقيقتين أو أقل لما تبدأ"
+                },
+                "example": {
+                  "en": "\"Go to the gym\" becomes \"Put on workout clothes\". Once you start, you'll likely continue.",
+                  "ar": "\"روح الجيم\" بتبقى \"البس هدوم التمرين\". لما تبدأ، غالباً هتكمل."
+                }
+              },
+              {
+                "strategy": {
+                  "en": "Prime Your Environment",
+                  "ar": "جهّز بيئتك"
+                },
+                "description": {
+                  "en": "Set up your environment for the next habit before you need it",
+                  "ar": "جهّز بيئتك للعادة الجاية قبل ما تحتاجها"
+                },
+                "example": {
+                  "en": "Pack gym bag the night before",
+                  "ar": "جهّز شنطة الجيم الليلة اللي قبل"
+                }
+              }
+            ]
+          },
+          {
+            "law": {
+              "en": "Make it Satisfying (Reward)",
+              "ar": "خليها مُرضية (المكافأة)"
+            },
+            "strategies": [
+              {
+                "strategy": {
+                  "en": "Immediate Rewards",
+                  "ar": "مكافآت فورية"
+                },
+                "description": {
+                  "en": "Give yourself small rewards after completing the habit",
+                  "ar": "ادي نفسك مكافآت صغيرة بعد إتمام العادة"
+                },
+                "examples": [
+                  {
+                    "en": "Enjoy a protein shake flavor you love",
+                    "ar": "استمتع بنكهة بروتين شيك بتحبها"
+                  },
+                  {
+                    "en": "Take a relaxing shower",
+                    "ar": "خد دش مريح"
+                  },
+                  {
+                    "en": "Check off workout in your app",
+                    "ar": "علّم على التمرين في التطبيق"
+                  }
+                ]
+              },
+              {
+                "strategy": {
+                  "en": "Habit Tracking",
+                  "ar": "تتبع العادات"
+                },
+                "description": {
+                  "en": "Track your habits - don't break the chain. Visual progress is motivating.",
+                  "ar": "تابع عاداتك - ماتقطعش السلسلة. التقدم المرئي محفز."
+                }
+              },
+              {
+                "strategy": {
+                  "en": "Never Miss Twice",
+                  "ar": "أبداً ماتفوّتش مرتين"
+                },
+                "description": {
+                  "en": "If you miss one day, never miss two in a row. Missing once is accident, twice is a new habit.",
+                  "ar": "لو فوّتت يوم واحد، أبداً ماتفوّتش اتنين ورا بعض. فوات مرة حادث، فوات مرتين عادة جديدة."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "types_of_motivation": {
+      "title": {
+        "en": "Types of Fitness Motivation",
+        "ar": "أنواع دافعية اللياقة"
+      },
+      "intrinsic": {
+        "title": {
+          "en": "Intrinsic Motivation (Internal)",
+          "ar": "الدافعية الداخلية"
+        },
+        "description": {
+          "en": "Doing it because you genuinely enjoy it or find it personally meaningful.",
+          "ar": "تعملها لأنك فعلاً بتستمتع بيها أو بتلاقيها ذات معنى شخصي."
+        },
+        "examples": [
+          {
+            "en": "Enjoying the feeling of getting stronger",
+            "ar": "الاستمتاع بالإحساس بالقوة"
+          },
+          {
+            "en": "Finding peace in the gym routine",
+            "ar": "إيجاد السلام في روتين الجيم"
+          },
+          {
+            "en": "Loving the challenge of progressive overload",
+            "ar": "حب تحدي الزيادة التدريجية"
+          }
+        ],
+        "tip": {
+          "en": "Intrinsic motivation is more sustainable. Try to develop genuine enjoyment of training.",
+          "ar": "الدافعية الداخلية أكثر استدامة. حاول تطور استمتاع حقيقي بالتدريب."
+        }
+      },
+      "extrinsic": {
+        "title": {
+          "en": "Extrinsic Motivation (External)",
+          "ar": "الدافعية الخارجية"
+        },
+        "description": {
+          "en": "Doing it for external rewards or to avoid negative consequences.",
+          "ar": "تعملها لمكافآت خارجية أو لتجنب عواقب سلبية."
+        },
+        "examples": [
+          {
+            "en": "Working out to look good for an event",
+            "ar": "التمرين عشان تبان حلو في مناسبة"
+          },
+          {
+            "en": "Exercising because doctor told you to",
+            "ar": "التمرين لأن الدكتور قالك"
+          },
+          {
+            "en": "Training to impress others",
+            "ar": "التدريب عشان تبهر الناس"
+          }
+        ],
+        "tip": {
+          "en": "Extrinsic can get you started, but try to shift toward intrinsic over time.",
+          "ar": "الخارجية ممكن تخليك تبدأ، بس حاول تتحول للداخلية مع الوقت."
+        }
+      }
+    },
+    "overcoming_common_barriers": {
+      "title": {
+        "en": "Overcoming Common Barriers",
+        "ar": "التغلب على العوائق الشائعة"
+      },
+      "barriers": [
+        {
+          "barrier": {
+            "en": "\"I don't have time\"",
+            "ar": "\"معنديش وقت\""
+          },
+          "solutions": [
+            {
+              "en": "You have the same 24 hours as everyone else. It's about priorities, not time.",
+              "ar": "عندك نفس الـ 24 ساعة زي كل الناس. الموضوع أولويات، مش وقت."
+            },
+            {
+              "en": "Start with just 15-20 minutes. Something is better than nothing.",
+              "ar": "ابدأ بـ 15-20 دقيقة بس. أي حاجة أحسن من لا حاجة."
+            },
+            {
+              "en": "Wake up 30 minutes earlier or use lunch break.",
+              "ar": "صحي 30 دقيقة بدري أو استخدم وقت الغدا."
+            },
+            {
+              "en": "Track your screen time for a week - you might find hours of wasted time.",
+              "ar": "تابع وقتك على الشاشة لأسبوع - ممكن تلاقي ساعات ضايعة."
+            }
+          ]
+        },
+        {
+          "barrier": {
+            "en": "\"I'm too tired\"",
+            "ar": "\"أنا تعبان قوي\""
+          },
+          "solutions": [
+            {
+              "en": "Exercise actually GIVES you energy. You'll feel better after, not worse.",
+              "ar": "التمرين فعلاً بيديك طاقة. هتحس بأحسن بعده، مش أسوأ."
+            },
+            {
+              "en": "Commit to just 10 minutes. If still tired after 10 min, you can stop.",
+              "ar": "التزم بـ 10 دقايق بس. لو لسه تعبان بعد 10 دقايق، ممكن توقف."
+            },
+            {
+              "en": "Address root cause - are you sleeping enough? Eating well?",
+              "ar": "عالج السبب الجذري - بتنام كفاية؟ بتاكل كويس؟"
+            }
+          ]
+        },
+        {
+          "barrier": {
+            "en": "\"I don't know what to do\"",
+            "ar": "\"مش عارف أعمل إيه\""
+          },
+          "solutions": [
+            {
+              "en": "Follow a proven program (this app provides them!).",
+              "ar": "اتبع برنامج مثبت (التطبيق ده بيوفرها!)."
+            },
+            {
+              "en": "Hire a trainer for a few sessions to learn basics.",
+              "ar": "اتعاقد مع مدرب لكام جلسة تتعلم الأساسيات."
+            },
+            {
+              "en": "Start simple: squat, push, pull, hinge. Master basics first.",
+              "ar": "ابدأ بسيط: سكوات، دفع، سحب، هينج. اتقن الأساسيات الأول."
+            }
+          ]
+        },
+        {
+          "barrier": {
+            "en": "\"I'm embarrassed to go to the gym\"",
+            "ar": "\"كسوف أروح الجيم\""
+          },
+          "solutions": [
+            {
+              "en": "Nobody is watching you - everyone is focused on themselves.",
+              "ar": "محدش بيتفرج عليك - كل واحد مركز على نفسه."
+            },
+            {
+              "en": "Start at off-peak hours when it's less crowded.",
+              "ar": "ابدأ في أوقات أقل زحمة."
+            },
+            {
+              "en": "Remember: everyone started somewhere. Respect comes from showing up consistently.",
+              "ar": "افتكر: كل واحد بدأ من حاجة. الاحترام بييجي من الظهور بانتظام."
+            },
+            {
+              "en": "Start with home workouts until you build confidence.",
+              "ar": "ابدأ بتمارين البيت لحد ما تبني ثقة."
+            }
+          ]
+        },
+        {
+          "barrier": {
+            "en": "\"I always lose motivation after a few weeks\"",
+            "ar": "\"دايماً بفقد الدافعية بعد كام أسبوع\""
+          },
+          "solutions": [
+            {
+              "en": "Don't rely on motivation - build systems and habits instead.",
+              "ar": "ماتعتمدش على الدافعية - ابني أنظمة وعادات بدلاً."
+            },
+            {
+              "en": "Set process goals, not just outcome goals.",
+              "ar": "حط أهداف عملية، مش بس أهداف نتايج."
+            },
+            {
+              "en": "Find accountability - workout partner, coach, or community.",
+              "ar": "لاقي محاسبية - شريك تمرين، مدرب، أو مجتمع."
+            },
+            {
+              "en": "Track your progress - seeing results fuels motivation.",
+              "ar": "تابع تقدمك - رؤية النتايج بتغذي الدافعية."
+            }
+          ]
+        },
+        {
+          "barrier": {
+            "en": "\"I've failed before, I'll fail again\"",
+            "ar": "\"فشلت قبل كده، هفشل تاني\""
+          },
+          "solutions": [
+            {
+              "en": "Past failure doesn't determine future success. Learn from what didn't work.",
+              "ar": "الفشل الماضي مش بيحدد النجاح المستقبلي. اتعلم من اللي ماشتغلش."
+            },
+            {
+              "en": "This time, start smaller and more sustainable.",
+              "ar": "المرة دي، ابدأ أصغر وأكثر استدامة."
+            },
+            {
+              "en": "Failure is feedback, not a final verdict.",
+              "ar": "الفشل رد فعل، مش حكم نهائي."
+            },
+            {
+              "en": "Every fit person has failed multiple times. They just kept starting over.",
+              "ar": "كل شخص لائق فشل مرات كتير. بس فضلوا يبدأوا من جديد."
+            }
+          ]
+        }
+      ]
+    },
+    "staying_motivated": {
+      "title": {
+        "en": "Strategies for Staying Motivated",
+        "ar": "استراتيجيات للحفاظ على الدافعية"
+      },
+      "strategies": [
+        {
+          "strategy": {
+            "en": "Find Your Why",
+            "ar": "لاقي ليه بتاعك"
+          },
+          "description": {
+            "en": "Get crystal clear on WHY fitness matters to you. Deep reasons, not surface level.",
+            "ar": "كن واضح تماماً ليه اللياقة مهمة ليك. أسباب عميقة، مش سطحية."
+          },
+          "exercise": {
+            "en": "Ask yourself 'why' 5 times. Example: Why do you want to be fit? To look better. Why? To feel confident. Why? To be comfortable in my own skin. Why? To show up fully in life. Why? Because I deserve to live my best life.",
+            "ar": "اسأل نفسك 'ليه' 5 مرات. مثال: ليه عايز تبقى لائق؟ عشان أبان أحسن. ليه؟ عشان أحس بثقة. ليه؟ عشان أكون مرتاح في جلدي. ليه؟ عشان أظهر بالكامل في الحياة. ليه؟ لأني أستاهل أعيش أحسن حياة."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Set SMART Goals",
+            "ar": "حط أهداف SMART"
+          },
+          "description": {
+            "en": "Specific, Measurable, Achievable, Relevant, Time-bound",
+            "ar": "محددة، قابلة للقياس، قابلة للتحقيق، ذات صلة، محددة بوقت"
+          },
+          "bad_example": {
+            "en": "\"I want to get in shape\"",
+            "ar": "\"عايز أتحسن\""
+          },
+          "good_example": {
+            "en": "\"I will lose 5kg in the next 8 weeks by going to the gym 3x/week and eating 2000 calories daily\"",
+            "ar": "\"هخس 5 كيلو في الـ 8 أسابيع الجاية بالذهاب للجيم 3 مرات/أسبوع وأكل 2000 سعرة يومياً\""
+          }
+        },
+        {
+          "strategy": {
+            "en": "Track Everything",
+            "ar": "تابع كل حاجة"
+          },
+          "description": {
+            "en": "What gets measured gets managed. Track workouts, nutrition, body measurements, and progress photos.",
+            "ar": "اللي بيتقاس بيتدار. تابع التمارين والتغذية وقياسات الجسم وصور التقدم."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Celebrate Small Wins",
+            "ar": "احتفل بالانتصارات الصغيرة"
+          },
+          "description": {
+            "en": "Don't wait for big milestones. Celebrate showing up, beating personal records, making good food choices.",
+            "ar": "ماتستناش المعالم الكبيرة. احتفل بالظهور، تحطيم الأرقام الشخصية، اختيارات الأكل الكويسة."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Find Accountability",
+            "ar": "لاقي محاسبية"
+          },
+          "options": [
+            {
+              "en": "Workout partner",
+              "ar": "شريك تمرين"
+            },
+            {
+              "en": "Personal trainer",
+              "ar": "مدرب شخصي"
+            },
+            {
+              "en": "Online community",
+              "ar": "مجتمع أونلاين"
+            },
+            {
+              "en": "Tell friends and family your goals",
+              "ar": "قول لأصحابك وعيلتك أهدافك"
+            },
+            {
+              "en": "Post progress on social media",
+              "ar": "انشر التقدم على السوشيال ميديا"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Visualize Success",
+            "ar": "تخيل النجاح"
+          },
+          "description": {
+            "en": "Spend a few minutes daily imagining yourself achieving your goals. See it, feel it, believe it.",
+            "ar": "اصرف كام دقيقة يومياً بتتخيل نفسك بتحقق أهدافك. شوفها، حسها، صدقها."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Remember Why You Started",
+            "ar": "افتكر ليه بدأت"
+          },
+          "description": {
+            "en": "Keep reminders visible - photos, written goals, before pictures. Look at them when motivation is low.",
+            "ar": "خلي التذكيرات مرئية - صور، أهداف مكتوبة، صور قبل. بص عليها لما الدافعية تكون واطية."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Mix It Up",
+            "ar": "نوّع"
+          },
+          "description": {
+            "en": "Boredom kills motivation. Try new exercises, classes, or workout styles periodically.",
+            "ar": "الملل بيقتل الدافعية. جرب تمارين جديدة أو كلاسات أو أساليب تمرين من وقت للتاني."
+          }
+        }
+      ]
+    },
+    "motivational_quotes": {
+      "title": {
+        "en": "Motivational Quotes for Your Fitness Journey",
+        "ar": "اقتباسات تحفيزية لرحلة لياقتك"
+      },
+      "quotes": [
+        {
+          "quote": {
+            "en": "The only bad workout is the one that didn't happen.",
+            "ar": "التمرين السيء الوحيد هو اللي ماحصلش."
+          }
+        },
+        {
+          "quote": {
+            "en": "You don't have to be great to start, but you have to start to be great.",
+            "ar": "مش لازم تكون عظيم عشان تبدأ، بس لازم تبدأ عشان تكون عظيم."
+          }
+        },
+        {
+          "quote": {
+            "en": "The body achieves what the mind believes.",
+            "ar": "الجسم بيحقق اللي العقل بيصدقه."
+          }
+        },
+        {
+          "quote": {
+            "en": "Discipline is choosing between what you want now and what you want most.",
+            "ar": "الانضباط هو الاختيار بين اللي عايزه دلوقتي واللي عايزه أكتر."
+          }
+        },
+        {
+          "quote": {
+            "en": "Your future self will thank you.",
+            "ar": "نفسك في المستقبل هتشكرك."
+          }
+        },
+        {
+          "quote": {
+            "en": "Progress, not perfection.",
+            "ar": "تقدم، مش كمال."
+          }
+        },
+        {
+          "quote": {
+            "en": "Fall in love with the process and the results will come.",
+            "ar": "حب العملية والنتايج هتيجي."
+          }
+        },
+        {
+          "quote": {
+            "en": "The best time to start was yesterday. The second best time is now.",
+            "ar": "أحسن وقت للبداية كان امبارح. تاني أحسن وقت هو دلوقتي."
+          }
+        }
+      ]
+    },
+    "when_motivation_is_gone": {
+      "title": {
+        "en": "What to Do When Motivation is Gone",
+        "ar": "إيه اللي تعمله لما الدافعية تختفي"
+      },
+      "steps": [
+        {
+          "step": {
+            "en": "Show Up Anyway",
+            "ar": "اظهر على أي حال"
+          },
+          "description": {
+            "en": "Just get to the gym. You don't have to have a great workout. Just be there. Often motivation returns once you start moving.",
+            "ar": "بس روح الجيم. مش لازم يكون تمرين عظيم. بس كن هناك. غالباً الدافعية بترجع لما تبدأ تتحرك."
+          }
+        },
+        {
+          "step": {
+            "en": "Lower the Bar",
+            "ar": "نزّل المعيار"
+          },
+          "description": {
+            "en": "On low motivation days, commit to the minimum. 10 minutes, 2 exercises, whatever. Something beats nothing.",
+            "ar": "في أيام الدافعية الواطية، التزم بالحد الأدنى. 10 دقايق، 2 تمارين، أي حاجة. أي حاجة بتغلب لا حاجة."
+          }
+        },
+        {
+          "step": {
+            "en": "Remember Your Why",
+            "ar": "افتكر ليه بتاعك"
+          },
+          "description": {
+            "en": "Reconnect with your deep reasons. Look at your goals. Look at progress photos.",
+            "ar": "أعيد الاتصال بأسبابك العميقة. بص على أهدافك. بص على صور التقدم."
+          }
+        },
+        {
+          "step": {
+            "en": "Change Your Environment",
+            "ar": "غيّر بيئتك"
+          },
+          "description": {
+            "en": "Sometimes a change of scenery helps. Try a different gym, workout outside, or train at home.",
+            "ar": "أحياناً تغيير المنظر بيساعد. جرب جيم مختلف، تمرن بره، أو درّب في البيت."
+          }
+        },
+        {
+          "step": {
+            "en": "Get Inspired",
+            "ar": "اتحفز"
+          },
+          "description": {
+            "en": "Watch fitness videos, read success stories, listen to motivational podcasts. Borrow motivation from others.",
+            "ar": "اتفرج على فيديوهات لياقة، اقرأ قصص نجاح، اسمع بودكاستات تحفيزية. استلف الدافعية من غيرك."
+          }
+        },
+        {
+          "step": {
+            "en": "Accept That It's Normal",
+            "ar": "اقبل إنه طبيعي"
+          },
+          "description": {
+            "en": "Everyone loses motivation sometimes. It doesn't mean you've failed. It means you're human.",
+            "ar": "كل واحد بيفقد الدافعية أحياناً. مش معناه إنك فشلت. معناه إنك إنسان."
+          }
+        }
+      ]
+    }
+  }
+}
