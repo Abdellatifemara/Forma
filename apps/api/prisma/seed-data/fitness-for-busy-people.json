@@ -1,0 +1,904 @@
+{
+  "fitness_for_busy_people": {
+    "title": {
+      "en": "Fitness for Busy People Guide",
+      "ar": "دليل اللياقة للناس المشغولة"
+    },
+    "introduction": {
+      "en": "You don't need hours at the gym to get results. This guide shows you how to maximize fitness with limited time. Consistency beats perfection.",
+      "ar": "مش محتاج ساعات في الجيم عشان تحقق نتايج. الدليل ده بيوريك إزاي تعظّم اللياقة بوقت محدود. الاستمرارية بتغلب الكمال."
+    },
+    "mindset_shift": {
+      "title": {
+        "en": "The Busy Person's Mindset",
+        "ar": "عقلية الشخص المشغول"
+      },
+      "principles": [
+        {
+          "principle": {
+            "en": "Something is Always Better Than Nothing",
+            "ar": "أي حاجة دايماً أحسن من لا حاجة"
+          },
+          "explanation": {
+            "en": "A 15-minute workout beats no workout. Don't skip because you can't do a full session.",
+            "ar": "تمرين 15 دقيقة أحسن من مفيش تمرين. ماتسقطش لأنك مش قادر تعمل جلسة كاملة."
+          }
+        },
+        {
+          "principle": {
+            "en": "Consistency Over Intensity",
+            "ar": "الاستمرارية فوق الشدة"
+          },
+          "explanation": {
+            "en": "Three 20-minute sessions per week consistently will beat occasional 2-hour sessions.",
+            "ar": "3 جلسات 20 دقيقة في الأسبوع بانتظام هتغلب جلسات ساعتين من وقت للتاني."
+          }
+        },
+        {
+          "principle": {
+            "en": "Focus on the 20% That Gets 80% of Results",
+            "ar": "ركز على الـ 20% اللي بتجيب 80% من النتايج"
+          },
+          "explanation": {
+            "en": "Compound exercises, adequate protein, and sleep are more important than fancy workout programs.",
+            "ar": "التمارين المركبة والبروتين الكافي والنوم أهم من برامج التمارين الفانسي."
+          }
+        },
+        {
+          "principle": {
+            "en": "Integrate, Don't Add",
+            "ar": "ادمج، ماتضفش"
+          },
+          "explanation": {
+            "en": "Look for ways to add movement to existing routines rather than finding extra time.",
+            "ar": "دور على طرق تضيف حركة لروتينك الحالي بدل ما تدور على وقت زيادة."
+          }
+        }
+      ]
+    },
+    "quick_workout_strategies": {
+      "title": {
+        "en": "Quick Workout Strategies",
+        "ar": "استراتيجيات التمرين السريع"
+      },
+      "strategies": [
+        {
+          "strategy": {
+            "en": "Supersets",
+            "ar": "السوبر سيتس"
+          },
+          "description": {
+            "en": "Perform two exercises back-to-back with no rest, then rest. Cuts workout time nearly in half.",
+            "ar": "اعمل تمرينين ورا بعض من غير راحة، بعدين ارتاح. بيقطع وقت التمرين تقريباً للنص."
+          },
+          "types": [
+            {
+              "type": {
+                "en": "Antagonist Supersets (best for strength)",
+                "ar": "سوبر سيتس متضادة (أفضل للقوة)"
+              },
+              "description": {
+                "en": "Pair opposing muscle groups",
+                "ar": "اجمع مجموعات عضلية متضادة"
+              },
+              "examples": [
+                {
+                  "en": "Bench Press + Barbell Row",
+                  "ar": "بنش بريس + تجديف بار"
+                },
+                {
+                  "en": "Bicep Curl + Tricep Pushdown",
+                  "ar": "كيرل باي + بوش داون تراي"
+                },
+                {
+                  "en": "Leg Extension + Leg Curl",
+                  "ar": "ليج إكستنشن + ليج كيرل"
+                }
+              ]
+            },
+            {
+              "type": {
+                "en": "Same Muscle Supersets (more fatiguing)",
+                "ar": "سوبر سيتس نفس العضلة (أكتر إرهاقاً)"
+              },
+              "description": {
+                "en": "Hit the same muscle twice",
+                "ar": "اضرب نفس العضلة مرتين"
+              },
+              "examples": [
+                {
+                  "en": "Bench Press + Push-ups",
+                  "ar": "بنش بريس + بوش أبس"
+                },
+                {
+                  "en": "Lat Pulldown + Dumbbell Row",
+                  "ar": "سحب علوي + تجديف دمبل"
+                }
+              ]
+            },
+            {
+              "type": {
+                "en": "Upper/Lower Supersets",
+                "ar": "سوبر سيتس علوي/سفلي"
+              },
+              "description": {
+                "en": "Pair upper and lower body exercises",
+                "ar": "اجمع تمارين علوي وسفلي"
+              },
+              "examples": [
+                {
+                  "en": "Overhead Press + Lunges",
+                  "ar": "ضغط علوي + لانجز"
+                },
+                {
+                  "en": "Pull-ups + Squats",
+                  "ar": "عقلة + سكوات"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Circuits",
+            "ar": "الدوائر (سيركتس)"
+          },
+          "description": {
+            "en": "Perform 4-6 exercises in a row with minimal rest, then rest and repeat. Great for fat loss and conditioning.",
+            "ar": "اعمل 4-6 تمارين ورا بعض براحة قليلة، بعدين ارتاح وكرر. ممتاز لخسارة الدهون والكنديشننج."
+          },
+          "example_circuit": {
+            "title": {
+              "en": "15-Minute Full Body Circuit",
+              "ar": "سيركت جسم كامل 15 دقيقة"
+            },
+            "instructions": {
+              "en": "Perform each exercise for 40 seconds, rest 20 seconds, move to next. Complete 3 rounds.",
+              "ar": "اعمل كل تمرين 40 ثانية، ارتاح 20 ثانية، انتقل للتالي. كمّل 3 جولات."
+            },
+            "exercises": [
+              {
+                "en": "Goblet Squat",
+                "ar": "جوبلت سكوات"
+              },
+              {
+                "en": "Push-ups",
+                "ar": "بوش أبس"
+              },
+              {
+                "en": "Dumbbell Row",
+                "ar": "تجديف دمبل"
+              },
+              {
+                "en": "Reverse Lunges",
+                "ar": "لانجز خلفي"
+              },
+              {
+                "en": "Plank",
+                "ar": "بلانك"
+              }
+            ]
+          }
+        },
+        {
+          "strategy": {
+            "en": "EMOM (Every Minute On the Minute)",
+            "ar": "EMOM (كل دقيقة)"
+          },
+          "description": {
+            "en": "Start each exercise at the top of every minute. Whatever time is left before the next minute is your rest.",
+            "ar": "ابدأ كل تمرين في بداية كل دقيقة. الوقت المتبقي قبل الدقيقة الجاية هو راحتك."
+          },
+          "example": {
+            "title": {
+              "en": "12-Minute EMOM",
+              "ar": "EMOM 12 دقيقة"
+            },
+            "exercises": [
+              {
+                "minute": "1, 4, 7, 10",
+                "exercise": {
+                  "en": "10 Squats",
+                  "ar": "10 سكوات"
+                }
+              },
+              {
+                "minute": "2, 5, 8, 11",
+                "exercise": {
+                  "en": "10 Push-ups",
+                  "ar": "10 بوش أبس"
+                }
+              },
+              {
+                "minute": "3, 6, 9, 12",
+                "exercise": {
+                  "en": "10 Rows",
+                  "ar": "10 تجديف"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "strategy": {
+            "en": "Compound-Only Workouts",
+            "ar": "تمارين مركبة فقط"
+          },
+          "description": {
+            "en": "Skip isolation exercises and focus only on big compound movements that work multiple muscles at once.",
+            "ar": "تخطى تمارين العزل وركز بس على الحركات المركبة الكبيرة اللي بتشغل عضلات متعددة مرة واحدة."
+          },
+          "example": {
+            "title": {
+              "en": "20-Minute Compound Workout",
+              "ar": "تمرين مركب 20 دقيقة"
+            },
+            "exercises": [
+              {
+                "exercise": {
+                  "en": "Squat",
+                  "ar": "سكوات"
+                },
+                "sets": "3",
+                "reps": "8-10"
+              },
+              {
+                "exercise": {
+                  "en": "Bench Press or Push-ups",
+                  "ar": "بنش بريس أو بوش أبس"
+                },
+                "sets": "3",
+                "reps": "8-10"
+              },
+              {
+                "exercise": {
+                  "en": "Row",
+                  "ar": "تجديف"
+                },
+                "sets": "3",
+                "reps": "8-10"
+              }
+            ],
+            "note": {
+              "en": "Superset bench and rows to save time",
+              "ar": "اعمل سوبر سيت البنش والتجديف لتوفير الوقت"
+            }
+          }
+        },
+        {
+          "strategy": {
+            "en": "Density Training",
+            "ar": "تدريب الكثافة"
+          },
+          "description": {
+            "en": "Do as many reps as possible of a few exercises in a set time. Track and try to beat it next time.",
+            "ar": "اعمل أكبر عدد ممكن من الريبس لبعض التمارين في وقت محدد. تابع وحاول تغلبه المرة الجاية."
+          },
+          "example": {
+            "en": "Set timer for 15 minutes. Do 5 pull-ups, 10 push-ups, 15 squats. Repeat as many rounds as possible.",
+            "ar": "حط تايمر 15 دقيقة. اعمل 5 عقلة، 10 بوش أبس، 15 سكوات. كرر أكبر عدد ممكن من الجولات."
+          }
+        }
+      ]
+    },
+    "time_based_workouts": {
+      "title": {
+        "en": "Ready-to-Use Workouts by Time",
+        "ar": "تمارين جاهزة حسب الوقت"
+      },
+      "workouts": [
+        {
+          "duration": "10 minutes",
+          "title": {
+            "en": "10-Minute Express Workout",
+            "ar": "تمرين إكسبريس 10 دقايق"
+          },
+          "workout": {
+            "format": {
+              "en": "AMRAP (As Many Rounds As Possible)",
+              "ar": "AMRAP (أكبر عدد ممكن من الجولات)"
+            },
+            "exercises": [
+              {
+                "en": "5 Burpees",
+                "ar": "5 بيربي"
+              },
+              {
+                "en": "10 Push-ups",
+                "ar": "10 بوش أبس"
+              },
+              {
+                "en": "15 Air Squats",
+                "ar": "15 سكوات هوائي"
+              }
+            ]
+          }
+        },
+        {
+          "duration": "15 minutes",
+          "title": {
+            "en": "15-Minute Strength Focus",
+            "ar": "تمرين قوة 15 دقيقة"
+          },
+          "workout": {
+            "format": {
+              "en": "5 sets of 5 reps each (alternating exercises)",
+              "ar": "5 سيتات من 5 ريبس لكل (تمارين بالتناوب)"
+            },
+            "exercises": [
+              {
+                "en": "Goblet Squat or Barbell Squat",
+                "ar": "جوبلت سكوات أو باربل سكوات"
+              },
+              {
+                "en": "Dumbbell Press or Barbell Press",
+                "ar": "دمبل بريس أو باربل بريس"
+              },
+              {
+                "en": "Dumbbell Row or Barbell Row",
+                "ar": "دمبل رو أو باربل رو"
+              }
+            ],
+            "note": {
+              "en": "Superset the press and row. Rest 60-90 seconds after each superset.",
+              "ar": "اعمل سوبر سيت البريس والرو. ارتاح 60-90 ثانية بعد كل سوبر سيت."
+            }
+          }
+        },
+        {
+          "duration": "20 minutes",
+          "title": {
+            "en": "20-Minute Complete Workout",
+            "ar": "تمرين كامل 20 دقيقة"
+          },
+          "workout": {
+            "warmup": {
+              "duration": "2 minutes",
+              "exercises": [
+                {
+                  "en": "Jumping jacks, arm circles, leg swings",
+                  "ar": "جامبنج جاكس، دوائر الذراع، أرجحة الرجل"
+                }
+              ]
+            },
+            "main_workout": {
+              "duration": "15 minutes",
+              "format": {
+                "en": "3 rounds",
+                "ar": "3 جولات"
+              },
+              "exercises": [
+                {
+                  "exercise": {
+                    "en": "Squats",
+                    "ar": "سكوات"
+                  },
+                  "reps": "12"
+                },
+                {
+                  "exercise": {
+                    "en": "Push-ups",
+                    "ar": "بوش أبس"
+                  },
+                  "reps": "10"
+                },
+                {
+                  "exercise": {
+                    "en": "Rows",
+                    "ar": "تجديف"
+                  },
+                  "reps": "10"
+                },
+                {
+                  "exercise": {
+                    "en": "Lunges",
+                    "ar": "لانجز"
+                  },
+                  "reps": "8 each leg"
+                },
+                {
+                  "exercise": {
+                    "en": "Plank",
+                    "ar": "بلانك"
+                  },
+                  "reps": "30 seconds"
+                }
+              ]
+            },
+            "cooldown": {
+              "duration": "3 minutes",
+              "exercises": [
+                {
+                  "en": "Light stretching",
+                  "ar": "إطالة خفيفة"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "duration": "30 minutes",
+          "title": {
+            "en": "30-Minute Optimal Workout",
+            "ar": "تمرين مثالي 30 دقيقة"
+          },
+          "workout": {
+            "warmup": {
+              "duration": "3-5 minutes"
+            },
+            "workout_a": {
+              "name": {
+                "en": "Push Focus",
+                "ar": "تركيز دفع"
+              },
+              "exercises": [
+                {
+                  "exercise": {
+                    "en": "Squat variation",
+                    "ar": "تنويعة سكوات"
+                  },
+                  "sets": "3",
+                  "reps": "8-10"
+                },
+                {
+                  "exercise": {
+                    "en": "Bench Press / Push-up variation",
+                    "ar": "بنش بريس / تنويعة بوش أبس"
+                  },
+                  "sets": "3",
+                  "reps": "8-10"
+                },
+                {
+                  "exercise": {
+                    "en": "Overhead Press",
+                    "ar": "ضغط علوي"
+                  },
+                  "sets": "3",
+                  "reps": "8-10"
+                },
+                {
+                  "exercise": {
+                    "en": "Tricep work",
+                    "ar": "تمرين تراي"
+                  },
+                  "sets": "2",
+                  "reps": "12-15"
+                },
+                {
+                  "exercise": {
+                    "en": "Core",
+                    "ar": "كور"
+                  },
+                  "sets": "2",
+                  "reps": "to failure"
+                }
+              ]
+            },
+            "workout_b": {
+              "name": {
+                "en": "Pull Focus",
+                "ar": "تركيز سحب"
+              },
+              "exercises": [
+                {
+                  "exercise": {
+                    "en": "Hip hinge (RDL, Deadlift)",
+                    "ar": "هينج الورك (RDL، ديدليفت)"
+                  },
+                  "sets": "3",
+                  "reps": "8-10"
+                },
+                {
+                  "exercise": {
+                    "en": "Row variation",
+                    "ar": "تنويعة تجديف"
+                  },
+                  "sets": "3",
+                  "reps": "8-10"
+                },
+                {
+                  "exercise": {
+                    "en": "Pull-up / Lat pulldown",
+                    "ar": "عقلة / سحب علوي"
+                  },
+                  "sets": "3",
+                  "reps": "8-10"
+                },
+                {
+                  "exercise": {
+                    "en": "Bicep work",
+                    "ar": "تمرين باي"
+                  },
+                  "sets": "2",
+                  "reps": "12-15"
+                },
+                {
+                  "exercise": {
+                    "en": "Face pulls",
+                    "ar": "فيس بولز"
+                  },
+                  "sets": "2",
+                  "reps": "15-20"
+                }
+              ]
+            },
+            "note": {
+              "en": "Alternate A and B workouts",
+              "ar": "بدّل بين تمرين A و B"
+            }
+          }
+        }
+      ]
+    },
+    "minimum_effective_dose": {
+      "title": {
+        "en": "The Minimum Effective Dose",
+        "ar": "الجرعة الفعالة الأدنى"
+      },
+      "description": {
+        "en": "What's the absolute minimum you can do and still see results? Here's the science-based answer:",
+        "ar": "إيه الحد الأدنى المطلق اللي ممكن تعمله وبرضو تشوف نتايج؟ هنا الإجابة المبنية على العلم:"
+      },
+      "minimums": {
+        "strength_maintenance": {
+          "title": {
+            "en": "To Maintain Strength",
+            "ar": "للحفاظ على القوة"
+          },
+          "requirement": {
+            "en": "1 session per week per muscle group, at high intensity",
+            "ar": "جلسة واحدة في الأسبوع لكل مجموعة عضلية، بشدة عالية"
+          }
+        },
+        "strength_gains": {
+          "title": {
+            "en": "To Build Strength",
+            "ar": "لبناء القوة"
+          },
+          "requirement": {
+            "en": "2-3 sessions per week per muscle group",
+            "ar": "2-3 جلسات في الأسبوع لكل مجموعة عضلية"
+          }
+        },
+        "muscle_maintenance": {
+          "title": {
+            "en": "To Maintain Muscle",
+            "ar": "للحفاظ على العضل"
+          },
+          "requirement": {
+            "en": "1/3 to 1/2 of what you did to build it (about 6-9 sets per muscle per week)",
+            "ar": "1/3 إلى 1/2 من اللي عملته عشان تبنيه (حوالي 6-9 سيتات لكل عضلة في الأسبوع)"
+          }
+        },
+        "muscle_gains": {
+          "title": {
+            "en": "To Build Muscle",
+            "ar": "لبناء العضل"
+          },
+          "requirement": {
+            "en": "10-20 working sets per muscle per week",
+            "ar": "10-20 سيت شغّال لكل عضلة في الأسبوع"
+          }
+        },
+        "cardio_health": {
+          "title": {
+            "en": "For Heart Health",
+            "ar": "لصحة القلب"
+          },
+          "requirement": {
+            "en": "150 minutes moderate activity OR 75 minutes vigorous activity per week (WHO guidelines)",
+            "ar": "150 دقيقة نشاط متوسط أو 75 دقيقة نشاط شديد في الأسبوع (توصيات WHO)"
+          }
+        }
+      },
+      "practical_minimum": {
+        "title": {
+          "en": "Practical Minimum Program",
+          "ar": "البرنامج العملي الأدنى"
+        },
+        "program": {
+          "en": "2 full-body sessions per week, 20-30 minutes each, focusing on compound exercises",
+          "ar": "جلستين فول بادي في الأسبوع، 20-30 دقيقة لكل واحدة، بالتركيز على التمارين المركبة"
+        },
+        "example": {
+          "session": [
+            {
+              "exercise": {
+                "en": "Squat or Leg Press",
+                "ar": "سكوات أو ليج بريس"
+              },
+              "sets": "2-3",
+              "reps": "8-12"
+            },
+            {
+              "exercise": {
+                "en": "Push (Bench, Push-ups, or Machine)",
+                "ar": "دفع (بنش، بوش أبس، أو جهاز)"
+              },
+              "sets": "2-3",
+              "reps": "8-12"
+            },
+            {
+              "exercise": {
+                "en": "Pull (Row or Pulldown)",
+                "ar": "سحب (تجديف أو سحب)"
+              },
+              "sets": "2-3",
+              "reps": "8-12"
+            },
+            {
+              "exercise": {
+                "en": "Hinge (RDL or Hip Thrust)",
+                "ar": "هينج (RDL أو هيب ثرست)"
+              },
+              "sets": "2-3",
+              "reps": "8-12"
+            }
+          ]
+        }
+      }
+    },
+    "daily_movement_integration": {
+      "title": {
+        "en": "Integrating Movement Into Your Day",
+        "ar": "دمج الحركة في يومك"
+      },
+      "strategies": [
+        {
+          "strategy": {
+            "en": "Movement Snacks",
+            "ar": "وجبات حركة خفيفة"
+          },
+          "description": {
+            "en": "Brief bursts of exercise throughout the day. Every bit counts.",
+            "ar": "فترات قصيرة من التمرين خلال اليوم. كل حاجة بتحسب."
+          },
+          "examples": [
+            {
+              "en": "10 squats every time you use the bathroom",
+              "ar": "10 سكوات كل ما تستخدم الحمام"
+            },
+            {
+              "en": "20 push-ups when you wake up",
+              "ar": "20 بوش أبس لما تصحى"
+            },
+            {
+              "en": "5 minutes of stretching before bed",
+              "ar": "5 دقايق إطالة قبل النوم"
+            },
+            {
+              "en": "Plank during TV commercials",
+              "ar": "بلانك أثناء إعلانات التليفزيون"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Active Commute",
+            "ar": "توصيل نشط"
+          },
+          "ideas": [
+            {
+              "en": "Walk or bike to work if possible",
+              "ar": "امشي أو اركب عجلة للشغل لو ممكن"
+            },
+            {
+              "en": "Get off public transit one stop early",
+              "ar": "انزل من المواصلات محطة بدري"
+            },
+            {
+              "en": "Park farther from your destination",
+              "ar": "اركن أبعد من وجهتك"
+            },
+            {
+              "en": "Take stairs instead of elevator",
+              "ar": "اطلع السلالم بدل الأسانسير"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Standing and Walking Meetings",
+            "ar": "اجتماعات واقف وماشي"
+          },
+          "description": {
+            "en": "When possible, conduct calls or meetings while walking or standing.",
+            "ar": "لما تقدر، اعمل المكالمات أو الاجتماعات وانت ماشي أو واقف."
+          }
+        },
+        {
+          "strategy": {
+            "en": "Desk Exercises",
+            "ar": "تمارين المكتب"
+          },
+          "examples": [
+            {
+              "en": "Desk push-ups (hands on desk)",
+              "ar": "بوش أبس على المكتب (الإيدين على المكتب)"
+            },
+            {
+              "en": "Chair squats (sit and stand without using hands)",
+              "ar": "سكوات الكرسي (اقعد وقوم من غير ما تستخدم إيديك)"
+            },
+            {
+              "en": "Calf raises while standing",
+              "ar": "رفع كالف وانت واقف"
+            },
+            {
+              "en": "Shoulder shrugs and neck stretches",
+              "ar": "شراجز الكتف وإطالات الرقبة"
+            },
+            {
+              "en": "Seated leg raises",
+              "ar": "رفع رجل قاعد"
+            }
+          ]
+        },
+        {
+          "strategy": {
+            "en": "Weekend Warrior (But Better)",
+            "ar": "محارب الويكند (بس أحسن)"
+          },
+          "description": {
+            "en": "If weekdays are truly impossible, weekend workouts can still produce results. New research shows they're more effective than previously thought.",
+            "ar": "لو أيام الأسبوع مستحيلة فعلاً، تمارين الويكند لسه ممكن تجيب نتايج. أبحاث جديدة بتبين إنها أكثر فعالية مما كنا فاكرين."
+          },
+          "plan": {
+            "en": "2 longer sessions (45-60 minutes) on Saturday and Sunday",
+            "ar": "جلستين أطول (45-60 دقيقة) يوم السبت والأحد"
+          }
+        }
+      ]
+    },
+    "nutrition_for_busy_people": {
+      "title": {
+        "en": "Simple Nutrition for Busy People",
+        "ar": "تغذية بسيطة للمشغولين"
+      },
+      "principles": [
+        {
+          "principle": {
+            "en": "Prioritize Protein",
+            "ar": "أولوية للبروتين"
+          },
+          "explanation": {
+            "en": "If you only track one thing, track protein. Aim for palm-sized portion at each meal.",
+            "ar": "لو هتتابع حاجة واحدة بس، تابع البروتين. استهدف كمية بحجم الكف في كل وجبة."
+          }
+        },
+        {
+          "principle": {
+            "en": "Meal Prep Basics",
+            "ar": "أساسيات تحضير الوجبات"
+          },
+          "explanation": {
+            "en": "Spend 1-2 hours on weekend prepping protein and carbs for the week.",
+            "ar": "اصرف 1-2 ساعة في الويكند تحضّر البروتين والكاربز للأسبوع."
+          },
+          "easy_preps": [
+            {
+              "en": "Grill multiple chicken breasts",
+              "ar": "اشوي عدة صدور فراخ"
+            },
+            {
+              "en": "Cook a big batch of rice",
+              "ar": "اطبخ كمية كبيرة من الرز"
+            },
+            {
+              "en": "Hard boil eggs for the week",
+              "ar": "اسلق بيض مسلوق للأسبوع"
+            },
+            {
+              "en": "Wash and chop vegetables",
+              "ar": "اغسل وقطّع الخضار"
+            }
+          ]
+        },
+        {
+          "principle": {
+            "en": "Keep It Simple",
+            "ar": "خليها بسيطة"
+          },
+          "explanation": {
+            "en": "You don't need variety at every meal. Eating the same healthy meals repeatedly is fine.",
+            "ar": "مش محتاج تنوع في كل وجبة. أكل نفس الوجبات الصحية بشكل متكرر كويس."
+          }
+        },
+        {
+          "principle": {
+            "en": "Have Go-To Quick Options",
+            "ar": "جهّز خيارات سريعة"
+          },
+          "options": [
+            {
+              "en": "Protein shake with banana",
+              "ar": "شيك بروتين مع موزة"
+            },
+            {
+              "en": "Greek yogurt with nuts",
+              "ar": "زبادي يوناني مع مكسرات"
+            },
+            {
+              "en": "Pre-made salads with added protein",
+              "ar": "سلطات جاهزة مع بروتين إضافي"
+            },
+            {
+              "en": "Rotisserie chicken (ready from supermarket)",
+              "ar": "فرخة مشوية (جاهزة من السوبر ماركت)"
+            },
+            {
+              "en": "Canned tuna or salmon",
+              "ar": "تونة أو سلمون معلب"
+            }
+          ]
+        }
+      ]
+    },
+    "recovery_for_busy": {
+      "title": {
+        "en": "Quick Recovery Tips",
+        "ar": "نصايح استشفاء سريعة"
+      },
+      "tips": [
+        {
+          "tip": {
+            "en": "Prioritize Sleep Above All",
+            "ar": "أولوية للنوم فوق كل شيء"
+          },
+          "explanation": {
+            "en": "If you have to choose between an extra hour of sleep or a workout, choose sleep. Chronic sleep deprivation kills gains.",
+            "ar": "لو لازم تختار بين ساعة نوم زيادة أو تمرين، اختار النوم. قلة النوم المزمنة بتقتل المكاسب."
+          }
+        },
+        {
+          "tip": {
+            "en": "Walk for Active Recovery",
+            "ar": "امشي للاستشفاء النشط"
+          },
+          "explanation": {
+            "en": "Light walking improves blood flow and recovery without adding stress.",
+            "ar": "المشي الخفيف بيحسن تدفق الدم والاستشفاء من غير ما يضيف ضغط."
+          }
+        },
+        {
+          "tip": {
+            "en": "5-Minute Stretching Before Bed",
+            "ar": "5 دقايق إطالة قبل النوم"
+          },
+          "explanation": {
+            "en": "Quick stretching routine promotes relaxation and better sleep quality.",
+            "ar": "روتين إطالة سريع بيساعد على الاسترخاء وجودة نوم أحسن."
+          }
+        }
+      ]
+    },
+    "egypt_specific_tips": {
+      "title": {
+        "en": "Tips for Busy People in Egypt",
+        "ar": "نصايح للمشغولين في مصر"
+      },
+      "tips": [
+        {
+          "en": "Consider early morning workouts (5-6 AM) before Cairo traffic gets bad",
+          "ar": "فكر في تمارين الصبح بدري (5-6 صباحاً) قبل ما زحمة القاهرة تبدأ"
+        },
+        {
+          "en": "Many gyms have late night hours (until midnight) for those with long work days",
+          "ar": "كتير من الجيمات عندها ساعات متأخرة (لحد نص الليل) للي عندهم يوم شغل طويل"
+        },
+        {
+          "en": "Home workouts can be done on your rooftop or balcony if space is limited",
+          "ar": "تمارين البيت ممكن تتعمل على السطح أو البلكونة لو المساحة محدودة"
+        },
+        {
+          "en": "Koshary and foul are quick, cheap, and decent protein options when you're in a rush",
+          "ar": "الكشري والفول خيارات سريعة ورخيصة وبروتين معقول لما تكون مستعجل"
+        },
+        {
+          "en": "Gyms near your workplace may be better than gyms near home to avoid commute time",
+          "ar": "الجيمات قريبة من شغلك ممكن تكون أحسن من الجيمات قريبة من البيت عشان توفر وقت المواصلات"
+        }
+      ]
+    }
+  }
+}

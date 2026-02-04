@@ -1,0 +1,1008 @@
+{
+  "macro_counting_guide": {
+    "title": {
+      "en": "Complete Macro Counting Guide",
+      "ar": "دليل حساب الماكروز الكامل"
+    },
+    "introduction": {
+      "en": "Macros (macronutrients) are protein, carbohydrates, and fats - the three nutrients that provide calories. Tracking macros gives you more control over your body composition than just counting calories.",
+      "ar": "الماكروز (المغذيات الكبرى) هي البروتين والكربوهيدرات والدهون - المغذيات التلاتة اللي بتوفر السعرات. تتبع الماكروز بيديك تحكم أكتر في تركيب جسمك من مجرد حساب السعرات."
+    },
+    "understanding_macros": {
+      "title": {
+        "en": "Understanding the Three Macros",
+        "ar": "فهم الماكروز التلاتة"
+      },
+      "macros": [
+        {
+          "macro": {
+            "en": "Protein",
+            "ar": "البروتين"
+          },
+          "calories_per_gram": 4,
+          "functions": [
+            {
+              "en": "Builds and repairs muscle tissue",
+              "ar": "بيبني ويصلح أنسجة العضل"
+            },
+            {
+              "en": "Supports immune function",
+              "ar": "بيدعم وظيفة المناعة"
+            },
+            {
+              "en": "Creates enzymes and hormones",
+              "ar": "بيصنع الإنزيمات والهرمونات"
+            },
+            {
+              "en": "Most satiating macro (keeps you full)",
+              "ar": "أكتر ماكرو مشبع (بيخليك شبعان)"
+            },
+            {
+              "en": "Highest thermic effect (burns calories to digest)",
+              "ar": "أعلى تأثير حراري (بيحرق سعرات في الهضم)"
+            }
+          ],
+          "sources": {
+            "animal": [
+              {
+                "en": "Chicken breast",
+                "ar": "صدر فراخ"
+              },
+              {
+                "en": "Beef",
+                "ar": "لحم بقري"
+              },
+              {
+                "en": "Fish",
+                "ar": "سمك"
+              },
+              {
+                "en": "Eggs",
+                "ar": "بيض"
+              },
+              {
+                "en": "Greek yogurt",
+                "ar": "زبادي يوناني"
+              },
+              {
+                "en": "Cottage cheese",
+                "ar": "جبنة قريش"
+              }
+            ],
+            "plant": [
+              {
+                "en": "Lentils",
+                "ar": "عدس"
+              },
+              {
+                "en": "Chickpeas",
+                "ar": "حمص"
+              },
+              {
+                "en": "Tofu",
+                "ar": "توفو"
+              },
+              {
+                "en": "Fava beans (foul)",
+                "ar": "فول"
+              },
+              {
+                "en": "Quinoa",
+                "ar": "كينوا"
+              }
+            ]
+          },
+          "priority": {
+            "en": "HIGHEST - Hit your protein target first, then fill in carbs and fats",
+            "ar": "الأعلى - حقق هدف البروتين الأول، بعدين كمّل الكاربز والدهون"
+          }
+        },
+        {
+          "macro": {
+            "en": "Carbohydrates",
+            "ar": "الكربوهيدرات"
+          },
+          "calories_per_gram": 4,
+          "functions": [
+            {
+              "en": "Primary energy source for high-intensity exercise",
+              "ar": "مصدر الطاقة الأساسي للتمرين عالي الشدة"
+            },
+            {
+              "en": "Fuels the brain and nervous system",
+              "ar": "بيغذي المخ والجهاز العصبي"
+            },
+            {
+              "en": "Spares protein for muscle building",
+              "ar": "بيوفر البروتين لبناء العضل"
+            },
+            {
+              "en": "Stored as glycogen in muscles and liver",
+              "ar": "بيتخزن كجليكوجين في العضلات والكبد"
+            }
+          ],
+          "types": [
+            {
+              "type": {
+                "en": "Complex/Slow (preferred)",
+                "ar": "معقدة/بطيئة (مفضلة)"
+              },
+              "examples": [
+                {
+                  "en": "Rice, oats, whole grain bread, sweet potato, beans",
+                  "ar": "رز، شوفان، عيش أسمر، بطاطا، فاصوليا"
+                }
+              ],
+              "benefits": {
+                "en": "Sustained energy, more fiber, more nutrients",
+                "ar": "طاقة مستدامة، ألياف أكتر، مغذيات أكتر"
+              }
+            },
+            {
+              "type": {
+                "en": "Simple/Fast",
+                "ar": "بسيطة/سريعة"
+              },
+              "examples": [
+                {
+                  "en": "Fruit, white rice, white bread, sugar, honey",
+                  "ar": "فاكهة، رز أبيض، عيش أبيض، سكر، عسل"
+                }
+              ],
+              "when_useful": {
+                "en": "Around workouts for quick energy",
+                "ar": "حوالين التمارين لطاقة سريعة"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "en": "Rice (white and brown)",
+              "ar": "رز (أبيض وأسمر)"
+            },
+            {
+              "en": "Bread and pita",
+              "ar": "عيش وعيش شامي"
+            },
+            {
+              "en": "Pasta",
+              "ar": "مكرونة"
+            },
+            {
+              "en": "Oats",
+              "ar": "شوفان"
+            },
+            {
+              "en": "Potatoes and sweet potatoes",
+              "ar": "بطاطس وبطاطا"
+            },
+            {
+              "en": "Fruits",
+              "ar": "فواكه"
+            },
+            {
+              "en": "Beans and lentils",
+              "ar": "فاصوليا وعدس"
+            }
+          ],
+          "flexibility": {
+            "en": "Most flexible macro - can be higher or lower depending on preference and activity level",
+            "ar": "أكتر ماكرو مرن - ممكن يكون أعلى أو أقل حسب التفضيل ومستوى النشاط"
+          }
+        },
+        {
+          "macro": {
+            "en": "Fats",
+            "ar": "الدهون"
+          },
+          "calories_per_gram": 9,
+          "functions": [
+            {
+              "en": "Hormone production (including testosterone)",
+              "ar": "إنتاج الهرمونات (بما فيها التستوستيرون)"
+            },
+            {
+              "en": "Absorbs vitamins A, D, E, K",
+              "ar": "بيمتص فيتامينات A, D, E, K"
+            },
+            {
+              "en": "Brain health and function",
+              "ar": "صحة ووظيفة المخ"
+            },
+            {
+              "en": "Cell membrane structure",
+              "ar": "هيكل غشاء الخلية"
+            },
+            {
+              "en": "Provides sustained energy",
+              "ar": "بيوفر طاقة مستدامة"
+            }
+          ],
+          "types": [
+            {
+              "type": {
+                "en": "Unsaturated (healthy fats)",
+                "ar": "غير مشبعة (دهون صحية)"
+              },
+              "examples": [
+                {
+                  "en": "Olive oil, avocado, nuts, fatty fish",
+                  "ar": "زيت زيتون، أفوكادو، مكسرات، سمك دهني"
+                }
+              ]
+            },
+            {
+              "type": {
+                "en": "Saturated (moderate)",
+                "ar": "مشبعة (باعتدال)"
+              },
+              "examples": [
+                {
+                  "en": "Butter, coconut oil, red meat fat",
+                  "ar": "زبدة، زيت جوز الهند، دهون اللحم الأحمر"
+                }
+              ]
+            },
+            {
+              "type": {
+                "en": "Trans fats (AVOID)",
+                "ar": "دهون متحولة (تجنبها)"
+              },
+              "examples": [
+                {
+                  "en": "Fried foods, processed snacks, margarine",
+                  "ar": "أكل مقلي، سناكس معالجة، مارجرين"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "en": "Olive oil",
+              "ar": "زيت زيتون"
+            },
+            {
+              "en": "Nuts (almonds, walnuts, peanuts)",
+              "ar": "مكسرات (لوز، جوز، فول سوداني)"
+            },
+            {
+              "en": "Avocado",
+              "ar": "أفوكادو"
+            },
+            {
+              "en": "Fatty fish (salmon, sardines)",
+              "ar": "سمك دهني (سلمون، سردين)"
+            },
+            {
+              "en": "Eggs (yolks)",
+              "ar": "بيض (الصفار)"
+            },
+            {
+              "en": "Cheese",
+              "ar": "جبنة"
+            }
+          ],
+          "minimum": {
+            "en": "Don't go below 0.5g per kg bodyweight - hormones need fat",
+            "ar": "ماتنزلش تحت 0.5 جرام لكل كيلو من وزن الجسم - الهرمونات محتاجة دهون"
+          }
+        }
+      ]
+    },
+    "calculating_your_macros": {
+      "title": {
+        "en": "How to Calculate Your Macros",
+        "ar": "إزاي تحسب ماكروزك"
+      },
+      "step_1": {
+        "title": {
+          "en": "Step 1: Calculate Your TDEE (Total Daily Energy Expenditure)",
+          "ar": "الخطوة 1: احسب الـ TDEE (إجمالي الطاقة اليومية المصروفة)"
+        },
+        "method": {
+          "en": "Use the Mifflin-St Jeor equation for BMR, then multiply by activity factor",
+          "ar": "استخدم معادلة ميفلين-سانت جور للـ BMR، بعدين اضرب في عامل النشاط"
+        },
+        "bmr_formula": {
+          "men": {
+            "en": "BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age) + 5",
+            "ar": "BMR = (10 × الوزن بالكيلو) + (6.25 × الطول بالسم) - (5 × العمر) + 5"
+          },
+          "women": {
+            "en": "BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age) - 161",
+            "ar": "BMR = (10 × الوزن بالكيلو) + (6.25 × الطول بالسم) - (5 × العمر) - 161"
+          }
+        },
+        "activity_multipliers": [
+          {
+            "level": {
+              "en": "Sedentary (desk job, little exercise)",
+              "ar": "خامل (شغل مكتب، تمرين قليل)"
+            },
+            "multiplier": 1.2
+          },
+          {
+            "level": {
+              "en": "Lightly Active (light exercise 1-3 days/week)",
+              "ar": "نشط قليلاً (تمرين خفيف 1-3 أيام/أسبوع)"
+            },
+            "multiplier": 1.375
+          },
+          {
+            "level": {
+              "en": "Moderately Active (moderate exercise 3-5 days/week)",
+              "ar": "نشط باعتدال (تمرين معتدل 3-5 أيام/أسبوع)"
+            },
+            "multiplier": 1.55
+          },
+          {
+            "level": {
+              "en": "Very Active (hard exercise 6-7 days/week)",
+              "ar": "نشط جداً (تمرين شديد 6-7 أيام/أسبوع)"
+            },
+            "multiplier": 1.725
+          },
+          {
+            "level": {
+              "en": "Extremely Active (very hard exercise + physical job)",
+              "ar": "نشط للغاية (تمرين شديد جداً + شغل بدني)"
+            },
+            "multiplier": 1.9
+          }
+        ],
+        "example": {
+          "en": "80kg man, 175cm, 30 years old, moderately active: BMR = (10×80) + (6.25×175) - (5×30) + 5 = 1,799 kcal. TDEE = 1,799 × 1.55 = 2,788 kcal",
+          "ar": "راجل 80 كيلو، 175 سم، 30 سنة، نشط باعتدال: BMR = (10×80) + (6.25×175) - (5×30) + 5 = 1,799 سعرة. TDEE = 1,799 × 1.55 = 2,788 سعرة"
+        }
+      },
+      "step_2": {
+        "title": {
+          "en": "Step 2: Adjust for Your Goal",
+          "ar": "الخطوة 2: عدّل حسب هدفك"
+        },
+        "goals": [
+          {
+            "goal": {
+              "en": "Fat Loss",
+              "ar": "خسارة دهون"
+            },
+            "adjustment": {
+              "en": "TDEE - 300 to 500 calories (moderate deficit)",
+              "ar": "TDEE - 300 لـ 500 سعرة (عجز معتدل)"
+            },
+            "rate": {
+              "en": "Aim for 0.5-1% of bodyweight loss per week",
+              "ar": "استهدف 0.5-1% من وزن الجسم خسارة في الأسبوع"
+            }
+          },
+          {
+            "goal": {
+              "en": "Maintenance",
+              "ar": "الحفاظ"
+            },
+            "adjustment": {
+              "en": "Eat at TDEE",
+              "ar": "كل على الـ TDEE"
+            }
+          },
+          {
+            "goal": {
+              "en": "Muscle Gain (Lean Bulk)",
+              "ar": "بناء عضل (تضخيم نظيف)"
+            },
+            "adjustment": {
+              "en": "TDEE + 200 to 300 calories (small surplus)",
+              "ar": "TDEE + 200 لـ 300 سعرة (فائض صغير)"
+            },
+            "rate": {
+              "en": "Aim for 0.25-0.5% of bodyweight gain per week",
+              "ar": "استهدف 0.25-0.5% من وزن الجسم زيادة في الأسبوع"
+            }
+          },
+          {
+            "goal": {
+              "en": "Aggressive Bulk",
+              "ar": "تضخيم قوي"
+            },
+            "adjustment": {
+              "en": "TDEE + 500+ calories",
+              "ar": "TDEE + 500+ سعرة"
+            },
+            "note": {
+              "en": "Will gain more fat alongside muscle - only for hard gainers",
+              "ar": "هتزيد دهون أكتر مع العضل - بس للي صعب يزيدوا"
+            }
+          }
+        ]
+      },
+      "step_3": {
+        "title": {
+          "en": "Step 3: Set Your Protein",
+          "ar": "الخطوة 3: حدد البروتين"
+        },
+        "recommendations": {
+          "fat_loss": {
+            "en": "2.0-2.4g per kg bodyweight (higher to preserve muscle in deficit)",
+            "ar": "2.0-2.4 جرام لكل كيلو من وزن الجسم (أعلى للحفاظ على العضل في العجز)"
+          },
+          "maintenance": {
+            "en": "1.6-2.0g per kg bodyweight",
+            "ar": "1.6-2.0 جرام لكل كيلو من وزن الجسم"
+          },
+          "muscle_gain": {
+            "en": "1.6-2.2g per kg bodyweight",
+            "ar": "1.6-2.2 جرام لكل كيلو من وزن الجسم"
+          }
+        },
+        "example": {
+          "en": "80kg person cutting: 80 × 2.2 = 176g protein = 704 calories from protein",
+          "ar": "شخص 80 كيلو بيقطع: 80 × 2.2 = 176 جرام بروتين = 704 سعرة من البروتين"
+        }
+      },
+      "step_4": {
+        "title": {
+          "en": "Step 4: Set Your Fats",
+          "ar": "الخطوة 4: حدد الدهون"
+        },
+        "recommendation": {
+          "en": "0.7-1.2g per kg bodyweight (20-35% of calories)",
+          "ar": "0.7-1.2 جرام لكل كيلو من وزن الجسم (20-35% من السعرات)"
+        },
+        "minimum": {
+          "en": "Don't go below 0.5g/kg - hormones need fat",
+          "ar": "ماتنزلش تحت 0.5 جرام/كيلو - الهرمونات محتاجة دهون"
+        },
+        "example": {
+          "en": "80kg person: 80 × 0.8 = 64g fat = 576 calories from fat",
+          "ar": "شخص 80 كيلو: 80 × 0.8 = 64 جرام دهون = 576 سعرة من الدهون"
+        }
+      },
+      "step_5": {
+        "title": {
+          "en": "Step 5: Fill Remaining Calories with Carbs",
+          "ar": "الخطوة 5: كمّل السعرات المتبقية بالكاربز"
+        },
+        "formula": {
+          "en": "Remaining calories ÷ 4 = Carbs in grams",
+          "ar": "السعرات المتبقية ÷ 4 = الكاربز بالجرام"
+        },
+        "example": {
+          "en": "Target: 2,300 kcal. Protein: 704 kcal. Fat: 576 kcal. Remaining: 2,300 - 704 - 576 = 1,020 kcal ÷ 4 = 255g carbs",
+          "ar": "الهدف: 2,300 سعرة. البروتين: 704 سعرة. الدهون: 576 سعرة. المتبقي: 2,300 - 704 - 576 = 1,020 سعرة ÷ 4 = 255 جرام كاربز"
+        }
+      },
+      "summary_example": {
+        "title": {
+          "en": "Complete Example",
+          "ar": "مثال كامل"
+        },
+        "scenario": {
+          "en": "80kg man, cutting (TDEE 2,800, eating 2,300)",
+          "ar": "راجل 80 كيلو، تنشيف (TDEE 2,800، بياكل 2,300)"
+        },
+        "macros": {
+          "calories": "2,300 kcal",
+          "protein": "176g (704 kcal)",
+          "fat": "64g (576 kcal)",
+          "carbs": "255g (1,020 kcal)"
+        }
+      }
+    },
+    "tracking_methods": {
+      "title": {
+        "en": "How to Track Your Macros",
+        "ar": "إزاي تتابع ماكروزك"
+      },
+      "methods": [
+        {
+          "method": {
+            "en": "Food Scale + App (Most Accurate)",
+            "ar": "ميزان أكل + تطبيق (الأدق)"
+          },
+          "description": {
+            "en": "Weigh your food and log it in an app. Gold standard for accuracy.",
+            "ar": "وزّن أكلك وسجّله في تطبيق. المعيار الذهبي للدقة."
+          },
+          "recommended_apps": [
+            "MyFitnessPal",
+            "Cronometer",
+            "MacroFactor",
+            "FatSecret"
+          ],
+          "tips": [
+            {
+              "en": "Weigh food raw before cooking (meat shrinks when cooked)",
+              "ar": "وزّن الأكل نيء قبل الطبخ (اللحم بيصغر لما بيتطبخ)"
+            },
+            {
+              "en": "Use verified/official database entries when possible",
+              "ar": "استخدم مدخلات قاعدة البيانات الرسمية/المتحققة لما تقدر"
+            },
+            {
+              "en": "Don't forget cooking oils - 1 tbsp = ~120 calories",
+              "ar": "ماتنساش زيوت الطبخ - 1 ملعقة كبيرة = ~120 سعرة"
+            }
+          ]
+        },
+        {
+          "method": {
+            "en": "Hand Portion Method (Easier, Less Precise)",
+            "ar": "طريقة قياس اليد (أسهل، أقل دقة)"
+          },
+          "description": {
+            "en": "Use your hand to estimate portions. Good for maintenance or less strict phases.",
+            "ar": "استخدم إيدك لتقدير الكميات. كويس للحفاظ أو المراحل الأقل صرامة."
+          },
+          "portions": [
+            {
+              "macro": {
+                "en": "Protein",
+                "ar": "البروتين"
+              },
+              "portion": {
+                "en": "1 palm = ~25-30g protein",
+                "ar": "1 كف = ~25-30 جرام بروتين"
+              }
+            },
+            {
+              "macro": {
+                "en": "Carbs",
+                "ar": "الكاربز"
+              },
+              "portion": {
+                "en": "1 cupped hand = ~25-30g carbs",
+                "ar": "1 حفنة = ~25-30 جرام كاربز"
+              }
+            },
+            {
+              "macro": {
+                "en": "Fats",
+                "ar": "الدهون"
+              },
+              "portion": {
+                "en": "1 thumb = ~10-15g fat",
+                "ar": "1 إبهام = ~10-15 جرام دهون"
+              }
+            },
+            {
+              "macro": {
+                "en": "Vegetables",
+                "ar": "الخضار"
+              },
+              "portion": {
+                "en": "1 fist = 1 serving vegetables",
+                "ar": "1 قبضة = 1 حصة خضار"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "common_foods_macros": {
+      "title": {
+        "en": "Common Egyptian Foods Macro Reference",
+        "ar": "مرجع ماكروز الأكلات المصرية الشائعة"
+      },
+      "proteins": [
+        {
+          "food": {
+            "en": "Chicken breast (100g cooked)",
+            "ar": "صدر فراخ (100 جرام مطبوخ)"
+          },
+          "protein": "31g",
+          "carbs": "0g",
+          "fat": "3.6g",
+          "calories": "165"
+        },
+        {
+          "food": {
+            "en": "Eggs (1 large)",
+            "ar": "بيضة (1 كبيرة)"
+          },
+          "protein": "6g",
+          "carbs": "0.5g",
+          "fat": "5g",
+          "calories": "72"
+        },
+        {
+          "food": {
+            "en": "Foul medames (100g)",
+            "ar": "فول مدمس (100 جرام)"
+          },
+          "protein": "8g",
+          "carbs": "19g",
+          "fat": "0.5g",
+          "calories": "110"
+        },
+        {
+          "food": {
+            "en": "Canned tuna in water (100g)",
+            "ar": "تونة معلبة في ماء (100 جرام)"
+          },
+          "protein": "26g",
+          "carbs": "0g",
+          "fat": "1g",
+          "calories": "116"
+        },
+        {
+          "food": {
+            "en": "Lentils cooked (100g)",
+            "ar": "عدس مطبوخ (100 جرام)"
+          },
+          "protein": "9g",
+          "carbs": "20g",
+          "fat": "0.4g",
+          "calories": "116"
+        },
+        {
+          "food": {
+            "en": "Greek yogurt (100g)",
+            "ar": "زبادي يوناني (100 جرام)"
+          },
+          "protein": "10g",
+          "carbs": "4g",
+          "fat": "0.5g",
+          "calories": "59"
+        },
+        {
+          "food": {
+            "en": "Cottage cheese (100g)",
+            "ar": "جبنة قريش (100 جرام)"
+          },
+          "protein": "11g",
+          "carbs": "3g",
+          "fat": "4g",
+          "calories": "98"
+        }
+      ],
+      "carbs": [
+        {
+          "food": {
+            "en": "White rice cooked (100g)",
+            "ar": "رز أبيض مطبوخ (100 جرام)"
+          },
+          "protein": "2.7g",
+          "carbs": "28g",
+          "fat": "0.3g",
+          "calories": "130"
+        },
+        {
+          "food": {
+            "en": "Baladi bread (1 loaf ~90g)",
+            "ar": "عيش بلدي (1 رغيف ~90 جرام)"
+          },
+          "protein": "9g",
+          "carbs": "55g",
+          "fat": "1g",
+          "calories": "270"
+        },
+        {
+          "food": {
+            "en": "Pasta cooked (100g)",
+            "ar": "مكرونة مطبوخة (100 جرام)"
+          },
+          "protein": "5g",
+          "carbs": "25g",
+          "fat": "1g",
+          "calories": "131"
+        },
+        {
+          "food": {
+            "en": "Oats dry (100g)",
+            "ar": "شوفان جاف (100 جرام)"
+          },
+          "protein": "17g",
+          "carbs": "66g",
+          "fat": "7g",
+          "calories": "389"
+        },
+        {
+          "food": {
+            "en": "Sweet potato (100g)",
+            "ar": "بطاطا (100 جرام)"
+          },
+          "protein": "2g",
+          "carbs": "20g",
+          "fat": "0g",
+          "calories": "86"
+        },
+        {
+          "food": {
+            "en": "Banana (1 medium)",
+            "ar": "موزة (1 متوسطة)"
+          },
+          "protein": "1g",
+          "carbs": "27g",
+          "fat": "0.3g",
+          "calories": "105"
+        }
+      ],
+      "fats": [
+        {
+          "food": {
+            "en": "Olive oil (1 tbsp)",
+            "ar": "زيت زيتون (1 ملعقة كبيرة)"
+          },
+          "protein": "0g",
+          "carbs": "0g",
+          "fat": "14g",
+          "calories": "120"
+        },
+        {
+          "food": {
+            "en": "Almonds (28g/~23 nuts)",
+            "ar": "لوز (28 جرام/~23 حبة)"
+          },
+          "protein": "6g",
+          "carbs": "6g",
+          "fat": "14g",
+          "calories": "164"
+        },
+        {
+          "food": {
+            "en": "Peanut butter (2 tbsp)",
+            "ar": "زبدة فول سوداني (2 ملعقة كبيرة)"
+          },
+          "protein": "8g",
+          "carbs": "6g",
+          "fat": "16g",
+          "calories": "188"
+        },
+        {
+          "food": {
+            "en": "Avocado (1/2 medium)",
+            "ar": "أفوكادو (1/2 متوسطة)"
+          },
+          "protein": "2g",
+          "carbs": "6g",
+          "fat": "11g",
+          "calories": "120"
+        },
+        {
+          "food": {
+            "en": "Tahini (2 tbsp)",
+            "ar": "طحينة (2 ملعقة كبيرة)"
+          },
+          "protein": "5g",
+          "carbs": "6g",
+          "fat": "16g",
+          "calories": "178"
+        }
+      ],
+      "mixed_meals": [
+        {
+          "food": {
+            "en": "Koshary (medium portion ~400g)",
+            "ar": "كشري (وسط ~400 جرام)"
+          },
+          "protein": "15g",
+          "carbs": "90g",
+          "fat": "8g",
+          "calories": "500"
+        },
+        {
+          "food": {
+            "en": "Falafel sandwich (2 pieces + bread)",
+            "ar": "ساندويتش فلافل (2 حبة + عيش)"
+          },
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "18g",
+          "calories": "400"
+        },
+        {
+          "food": {
+            "en": "Shawarma sandwich",
+            "ar": "ساندويتش شاورما"
+          },
+          "protein": "25g",
+          "carbs": "40g",
+          "fat": "20g",
+          "calories": "450"
+        }
+      ]
+    },
+    "flexible_dieting": {
+      "title": {
+        "en": "Flexible Dieting (IIFYM)",
+        "ar": "النظام الغذائي المرن (IIFYM)"
+      },
+      "concept": {
+        "en": "If It Fits Your Macros - you can eat any food as long as it fits your daily macro targets. No foods are 'off limits'.",
+        "ar": "لو بيدخل في ماكروزك - ممكن تاكل أي أكل طالما بيدخل في أهداف ماكروزك اليومية. مفيش أكل 'ممنوع'."
+      },
+      "principles": [
+        {
+          "principle": {
+            "en": "80/20 Rule",
+            "ar": "قاعدة 80/20"
+          },
+          "explanation": {
+            "en": "80% of your food should be nutritious whole foods. 20% can be whatever you want.",
+            "ar": "80% من أكلك لازم يكون أكل صحي كامل. 20% ممكن يكون أي حاجة انت عايزها."
+          }
+        },
+        {
+          "principle": {
+            "en": "No Good or Bad Foods",
+            "ar": "مفيش أكل كويس أو وحش"
+          },
+          "explanation": {
+            "en": "Only appropriate or inappropriate amounts in context of your goals.",
+            "ar": "فيه بس كميات مناسبة أو غير مناسبة في سياق أهدافك."
+          }
+        },
+        {
+          "principle": {
+            "en": "Sustainability Over Perfection",
+            "ar": "الاستدامة فوق الكمال"
+          },
+          "explanation": {
+            "en": "A diet you can stick to beats a 'perfect' diet you quit after 2 weeks.",
+            "ar": "دايت تقدر تلتزم بيه بيغلب دايت 'مثالي' بتسيبه بعد أسبوعين."
+          }
+        }
+      ],
+      "example": {
+        "en": "Want pizza? Fit it into your macros. Maybe have a lighter breakfast and lunch, then enjoy pizza for dinner while still hitting your targets.",
+        "ar": "عايز بيتزا؟ دخّلها في ماكروزك. يمكن تاكل فطار وغدا أخف، بعدين استمتع بالبيتزا في العشا وبرضو توصل لأهدافك."
+      }
+    },
+    "adjusting_macros": {
+      "title": {
+        "en": "When and How to Adjust Your Macros",
+        "ar": "إمتى وإزاي تعدّل ماكروزك"
+      },
+      "when_to_adjust": [
+        {
+          "situation": {
+            "en": "Weight not changing for 2-3 weeks (and you're tracking accurately)",
+            "ar": "الوزن مش بيتغير لـ 2-3 أسابيع (وانت بتتابع بدقة)"
+          },
+          "action": {
+            "en": "Reduce calories by 100-200 (cutting) or increase by 100-200 (bulking)",
+            "ar": "قلل السعرات 100-200 (تنشيف) أو زوّد 100-200 (تضخيم)"
+          }
+        },
+        {
+          "situation": {
+            "en": "Losing weight too fast (>1% bodyweight/week)",
+            "ar": "بتخس بسرعة زيادة (>1% من وزن الجسم/أسبوع)"
+          },
+          "action": {
+            "en": "Add 100-200 calories, mainly from carbs",
+            "ar": "ضيف 100-200 سعرة، أغلبها من الكاربز"
+          }
+        },
+        {
+          "situation": {
+            "en": "Energy is very low during workouts",
+            "ar": "الطاقة قليلة جداً أثناء التمارين"
+          },
+          "action": {
+            "en": "Increase carbs, especially around workout times",
+            "ar": "زوّد الكاربز، خصوصاً حوالين أوقات التمرين"
+          }
+        },
+        {
+          "situation": {
+            "en": "Always hungry despite hitting macros",
+            "ar": "جعان دايماً رغم إنك موصل للماكروز"
+          },
+          "action": {
+            "en": "Swap some carbs for protein (more satiating), add more fiber",
+            "ar": "بدّل بعض الكاربز ببروتين (أكتر إشباعاً)، ضيف ألياف أكتر"
+          }
+        }
+      ],
+      "what_to_adjust": {
+        "en": "When adjusting calories, typically adjust carbs first (most flexible), then fats if needed. Keep protein consistent.",
+        "ar": "لما تعدّل السعرات، عادةً عدّل الكاربز الأول (الأكتر مرونة)، بعدين الدهون لو لزم. خلي البروتين ثابت."
+      }
+    },
+    "common_mistakes": {
+      "title": {
+        "en": "Common Macro Counting Mistakes",
+        "ar": "أخطاء حساب الماكروز الشائعة"
+      },
+      "mistakes": [
+        {
+          "mistake": {
+            "en": "Not Tracking Cooking Oils",
+            "ar": "عدم تتبع زيوت الطبخ"
+          },
+          "impact": {
+            "en": "1 tablespoon = 120 calories. This adds up fast.",
+            "ar": "1 ملعقة كبيرة = 120 سعرة. ده بيتجمع بسرعة."
+          }
+        },
+        {
+          "mistake": {
+            "en": "Weighing Cooked Instead of Raw",
+            "ar": "وزن المطبوخ بدل النيء"
+          },
+          "impact": {
+            "en": "Meat loses 25-30% weight when cooked. Database entries are usually for raw.",
+            "ar": "اللحم بيخسر 25-30% من وزنه لما بيتطبخ. مدخلات قاعدة البيانات عادةً للنيء."
+          }
+        },
+        {
+          "mistake": {
+            "en": "Not Counting Sauces and Dressings",
+            "ar": "عدم حساب الصوصات والتتبيلات"
+          },
+          "impact": {
+            "en": "Can add 100-300+ calories per meal",
+            "ar": "ممكن تضيف 100-300+ سعرة لكل وجبة"
+          }
+        },
+        {
+          "mistake": {
+            "en": "Forgetting Weekend Eating",
+            "ar": "نسيان أكل الويكند"
+          },
+          "impact": {
+            "en": "Two days of overeating can wipe out five days of deficit",
+            "ar": "يومين أكل زيادة ممكن يمسحوا خمس أيام عجز"
+          }
+        },
+        {
+          "mistake": {
+            "en": "Obsessing Over Daily Numbers",
+            "ar": "الوسواس من الأرقام اليومية"
+          },
+          "solution": {
+            "en": "Weekly averages matter more than hitting exact numbers daily",
+            "ar": "المتوسطات الأسبوعية أهم من ضرب الأرقام بالظبط يومياً"
+          }
+        },
+        {
+          "mistake": {
+            "en": "Starting Too Extreme",
+            "ar": "البداية المتطرفة"
+          },
+          "solution": {
+            "en": "Don't cut 1000 calories on day one. Start moderate and adjust.",
+            "ar": "ماتقطعش 1000 سعرة من أول يوم. ابدأ معتدل وعدّل."
+          }
+        }
+      ]
+    },
+    "tips_for_success": {
+      "title": {
+        "en": "Tips for Macro Counting Success",
+        "ar": "نصائح لنجاح حساب الماكروز"
+      },
+      "tips": [
+        {
+          "en": "Meal prep to make tracking easier",
+          "ar": "حضّر الوجبات عشان التتبع يكون أسهل"
+        },
+        {
+          "en": "Have go-to meals with known macros",
+          "ar": "جهّز وجبات ثابتة بماكروز معروفة"
+        },
+        {
+          "en": "Log food BEFORE or AS you eat, not after",
+          "ar": "سجّل الأكل قبل أو وانت بتاكل، مش بعد"
+        },
+        {
+          "en": "Be patient - it gets easier with practice",
+          "ar": "اصبر - بيكون أسهل مع الممارسة"
+        },
+        {
+          "en": "Focus on hitting protein first, then fit in the rest",
+          "ar": "ركز على ضرب البروتين الأول، بعدين كمّل الباقي"
+        },
+        {
+          "en": "Don't stress about being off by 5-10g on any macro",
+          "ar": "ماتقلقش من إنك غلطت بـ 5-10 جرام في أي ماكرو"
+        },
+        {
+          "en": "Take diet breaks when needed for mental health",
+          "ar": "خد استراحات من الدايت لما تحتاج للصحة النفسية"
+        }
+      ]
+    }
+  }
+}
