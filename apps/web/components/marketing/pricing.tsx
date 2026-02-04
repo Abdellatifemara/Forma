@@ -3,69 +3,73 @@
 import Link from 'next/link';
 import { Check, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 
-const plans = [
-  {
-    name: 'Free',
-    price: '0',
-    description: 'Get started with the basics',
-    features: [
-      'Basic workout tracking',
-      'Form checker (unlimited)',
-      'Exercise library',
-      'Progress photos',
-      'Community access',
-    ],
-    cta: 'Get Started',
-    href: '/signup',
-    popular: false,
-  },
-  {
-    name: 'Pro',
-    price: '99',
-    description: 'For dedicated fitness enthusiasts',
-    features: [
-      'Everything in Free',
-      'Personalized workout plans',
-      'Unlimited nutrition tracking',
-      'Advanced analytics',
-      'Squad challenges',
-      'Priority support',
-    ],
-    cta: 'Start 7-Day Trial',
-    href: '/signup?plan=pro',
-    popular: true,
-  },
-  {
-    name: 'Elite',
-    price: '299',
-    description: 'With personal trainer access',
-    features: [
-      'Everything in Pro',
-      'Monthly trainer check-in',
-      'Custom meal plans',
-      'Video form reviews',
-      'Direct messaging',
-      '1-on-1 consultations',
-    ],
-    cta: 'Contact Us',
-    href: '/contact?plan=elite',
-    popular: false,
-  },
-];
-
 export function Pricing() {
+  const { t, isRTL } = useLanguage();
+
+  const plans = [
+    {
+      name: t.pricing.free.name,
+      price: '0',
+      description: t.pricing.free.description,
+      features: [
+        t.pricing.features.basicTracking,
+        t.pricing.features.formChecker,
+        t.pricing.features.exerciseLibrary,
+        t.pricing.features.progressPhotos,
+        t.pricing.features.community,
+      ],
+      cta: t.pricing.free.cta,
+      href: '/signup',
+      popular: false,
+    },
+    {
+      name: t.pricing.pro.name,
+      price: '99',
+      description: t.pricing.pro.description,
+      features: [
+        t.pricing.features.everythingFree,
+        t.pricing.features.personalizedPlans,
+        t.pricing.features.unlimitedNutrition,
+        t.pricing.features.analytics,
+        t.pricing.features.squadChallenges,
+        t.pricing.features.prioritySupport,
+      ],
+      cta: t.pricing.pro.cta,
+      href: '/signup?plan=pro',
+      popular: true,
+    },
+    {
+      name: t.pricing.elite.name,
+      price: '299',
+      description: t.pricing.elite.description,
+      features: [
+        t.pricing.features.everythingPro,
+        t.pricing.features.trainerCheckin,
+        t.pricing.features.mealPlans,
+        t.pricing.features.videoReviews,
+        t.pricing.features.directMessaging,
+        t.pricing.features.consultations,
+      ],
+      cta: t.pricing.elite.cta,
+      href: '/contact?plan=elite',
+      popular: false,
+    },
+  ];
+
   return (
     <section id="pricing" className="py-24">
       <div className="container">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className={cn('text-center mb-16', isRTL && 'font-cairo')}>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Simple pricing, <span className="text-coral-500">real value</span>
+            {t.pricing.title}{' '}
+            <span className="text-coral-500">{t.pricing.titleHighlight}</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Start free. Upgrade when you're ready. Cancel anytime.
+            {t.pricing.subtitle}
           </p>
         </div>
 
@@ -76,33 +80,44 @@ export function Pricing() {
               key={plan.name}
               className={cn(
                 'relative rounded-2xl border bg-card p-8',
-                plan.popular && 'border-coral-500 shadow-lg shadow-coral-500/10 scale-105'
+                plan.popular && 'border-coral-500 shadow-lg shadow-coral-500/10 scale-105',
+                isRTL && 'text-right'
               )}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex items-center gap-1 rounded-full bg-coral-500 px-4 py-1 text-sm font-medium text-white">
+                  <span className={cn(
+                    'inline-flex items-center gap-1 rounded-full bg-coral-500 px-4 py-1 text-sm font-medium text-white',
+                    isRTL && 'flex-row-reverse'
+                  )}>
                     <Zap className="h-3.5 w-3.5" />
-                    Most Popular
+                    {t.pricing.pro.badge}
                   </span>
                 </div>
               )}
 
               <div className="mb-6">
-                <h3 className="text-xl font-semibold">{plan.name}</h3>
-                <p className="text-sm text-muted-foreground">{plan.description}</p>
+                <h3 className={cn('text-xl font-semibold', isRTL && 'font-cairo')}>
+                  {plan.name}
+                </h3>
+                <p className={cn('text-sm text-muted-foreground', isRTL && 'font-cairo')}>
+                  {plan.description}
+                </p>
               </div>
 
-              <div className="mb-6">
+              <div className={cn('mb-6', isRTL && 'flex flex-row-reverse items-baseline gap-1')}>
                 <span className="text-4xl font-bold">{plan.price}</span>
-                <span className="text-muted-foreground"> EGP/month</span>
+                <span className="text-muted-foreground"> EGP{t.pricing.perMonth}</span>
               </div>
 
               <ul className="mb-8 space-y-3">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3">
+                  <li key={feature} className={cn(
+                    'flex items-start gap-3',
+                    isRTL && 'flex-row-reverse'
+                  )}>
                     <Check className="h-5 w-5 text-coral-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">{feature}</span>
+                    <span className={cn('text-sm', isRTL && 'font-cairo')}>{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -123,8 +138,8 @@ export function Pricing() {
         </div>
 
         {/* Trust note */}
-        <p className="mt-12 text-center text-sm text-muted-foreground">
-          All prices in Egyptian Pounds. Secure payments via Paymob & Fawry.
+        <p className={cn('mt-12 text-center text-sm text-muted-foreground', isRTL && 'font-cairo')}>
+          {t.pricing.trustNote}
         </p>
       </div>
     </section>

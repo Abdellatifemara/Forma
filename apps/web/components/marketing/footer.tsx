@@ -2,21 +2,8 @@
 
 import Link from 'next/link';
 import { Instagram, Twitter, Facebook } from 'lucide-react';
-
-const links = {
-  product: [
-    { href: '#features', label: 'Features' },
-    { href: '#pricing', label: 'Pricing' },
-  ],
-  company: [
-    { href: '/contact', label: 'Contact' },
-    { href: '/blog', label: 'Blog' },
-  ],
-  legal: [
-    { href: '/privacy', label: 'Privacy' },
-    { href: '/terms', label: 'Terms' },
-  ],
-};
+import { useLanguage } from '@/lib/i18n';
+import { cn } from '@/lib/utils';
 
 const social = [
   { href: 'https://instagram.com/formaeg', icon: Instagram, label: 'Instagram' },
@@ -25,19 +12,39 @@ const social = [
 ];
 
 export function Footer() {
+  const { t, isRTL } = useLanguage();
+
+  const links = {
+    product: [
+      { href: '#features', label: t.nav.features },
+      { href: '#pricing', label: t.nav.pricing },
+    ],
+    company: [
+      { href: '/contact', label: t.footer.contact },
+      { href: '/blog', label: t.footer.blog },
+    ],
+    legal: [
+      { href: '/privacy', label: t.footer.privacy },
+      { href: '/terms', label: t.footer.terms },
+    ],
+  };
+
   return (
     <footer className="border-t bg-muted/30">
       <div className="container py-12">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className={cn(
+          'grid gap-8 sm:grid-cols-2 lg:grid-cols-4',
+          isRTL && 'text-right'
+        )}>
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="text-xl font-bold">
               forma
             </Link>
-            <p className="mt-3 text-sm text-muted-foreground max-w-xs">
-              Egypt's fitness platform. Transform your body with personalized workouts and smart nutrition.
+            <p className={cn('mt-3 text-sm text-muted-foreground max-w-xs', isRTL && 'font-cairo')}>
+              {t.footer.tagline}
             </p>
-            <div className="mt-4 flex gap-3">
+            <div className={cn('mt-4 flex gap-3', isRTL && 'flex-row-reverse justify-end')}>
               {social.map((s) => (
                 <a
                   key={s.label}
@@ -54,11 +61,16 @@ export function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold mb-3">Product</h4>
+            <h4 className={cn('font-semibold mb-3', isRTL && 'font-cairo')}>
+              {t.footer.product}
+            </h4>
             <ul className="space-y-2">
               {links.product.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link
+                    href={link.href}
+                    className={cn('text-sm text-muted-foreground hover:text-foreground', isRTL && 'font-cairo')}
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -67,11 +79,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-3">Company</h4>
+            <h4 className={cn('font-semibold mb-3', isRTL && 'font-cairo')}>
+              {t.footer.company}
+            </h4>
             <ul className="space-y-2">
               {links.company.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link
+                    href={link.href}
+                    className={cn('text-sm text-muted-foreground hover:text-foreground', isRTL && 'font-cairo')}
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -80,11 +97,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-3">Legal</h4>
+            <h4 className={cn('font-semibold mb-3', isRTL && 'font-cairo')}>
+              {t.footer.legal}
+            </h4>
             <ul className="space-y-2">
               {links.legal.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground">
+                  <Link
+                    href={link.href}
+                    className={cn('text-sm text-muted-foreground hover:text-foreground', isRTL && 'font-cairo')}
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -93,8 +115,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t pt-6 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Forma. All rights reserved.
+        <div className={cn(
+          'mt-12 border-t pt-6 text-center text-sm text-muted-foreground',
+          isRTL && 'font-cairo'
+        )}>
+          © {new Date().getFullYear()} Forma. {t.footer.copyright}
         </div>
       </div>
     </footer>

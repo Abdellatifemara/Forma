@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/lib/i18n';
+import { cn } from '@/lib/utils';
 import {
   authApi,
   workoutsApi,
@@ -27,6 +29,7 @@ import {
 } from '@/lib/api';
 
 export default function DashboardPage() {
+  const { t, isRTL } = useLanguage();
   const [user, setUser] = useState<User | null>(null);
   const [todayWorkout, setTodayWorkout] = useState<Workout | null>(null);
   const [dailyNutrition, setDailyNutrition] = useState<DailyNutritionLog | null>(null);
@@ -59,7 +62,11 @@ export default function DashboardPage() {
   }, []);
 
   const hour = new Date().getHours();
-  const greeting = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+  const greeting = hour < 12
+    ? t.dashboard.greetings.morning
+    : hour < 18
+      ? t.dashboard.greetings.afternoon
+      : t.dashboard.greetings.evening;
 
   if (isLoading) {
     return (
@@ -70,7 +77,7 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="space-y-6 pb-20">
+    <div className={cn('space-y-6 pb-20', isRTL && 'text-right font-cairo')}>
       {/* Header */}
       <div>
         <p className="text-muted-foreground">{greeting}</p>
@@ -80,72 +87,70 @@ export default function DashboardPage() {
       {/* Quick Stats */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <div className="rounded-xl bg-muted/50 p-4">
-          <div className="flex items-center gap-2 text-coral-500">
+          <div className={cn('flex items-center gap-2 text-coral-500', isRTL && 'flex-row-reverse')}>
             <Flame className="h-5 w-5" />
             <span className="text-2xl font-bold">{weeklyStats?.streakDays || 0}</span>
           </div>
-          <p className="text-xs text-muted-foreground mt-1">Day Streak</p>
+          <p className="text-xs text-muted-foreground mt-1">{t.dashboard.stats.streak}</p>
         </div>
 
         <div className="rounded-xl bg-muted/50 p-4">
-          <div className="flex items-center gap-2 text-blue-500">
+          <div className={cn('flex items-center gap-2 text-blue-500', isRTL && 'flex-row-reverse')}>
             <Dumbbell className="h-5 w-5" />
             <span className="text-2xl font-bold">{weeklyStats?.workoutsCompleted || 0}</span>
           </div>
-          <p className="text-xs text-muted-foreground mt-1">Workouts This Week</p>
+          <p className="text-xs text-muted-foreground mt-1">{t.dashboard.stats.workoutsWeek}</p>
         </div>
 
         <div className="rounded-xl bg-muted/50 p-4">
-          <div className="flex items-center gap-2 text-green-500">
+          <div className={cn('flex items-center gap-2 text-green-500', isRTL && 'flex-row-reverse')}>
             <TrendingUp className="h-5 w-5" />
             <span className="text-2xl font-bold">{weeklyStats?.totalVolume || 0}</span>
           </div>
-          <p className="text-xs text-muted-foreground mt-1">kg Lifted</p>
+          <p className="text-xs text-muted-foreground mt-1">{t.dashboard.stats.lifted}</p>
         </div>
 
         <div className="rounded-xl bg-muted/50 p-4">
-          <div className="flex items-center gap-2 text-orange-500">
+          <div className={cn('flex items-center gap-2 text-orange-500', isRTL && 'flex-row-reverse')}>
             <Target className="h-5 w-5" />
             <span className="text-2xl font-bold">{Math.round(weeklyStats?.caloriesAvg || 0)}</span>
           </div>
-          <p className="text-xs text-muted-foreground mt-1">Avg Calories</p>
+          <p className="text-xs text-muted-foreground mt-1">{t.dashboard.stats.avgCalories}</p>
         </div>
       </div>
 
       {/* Today's Workout */}
       <Card className="overflow-hidden border-0 bg-gradient-to-br from-coral-500 to-coral-600 text-white">
         <CardContent className="p-6">
-          <p className="text-sm opacity-80">Today&apos;s Workout</p>
+          <p className="text-sm opacity-80">{t.dashboard.todayWorkout}</p>
           {todayWorkout ? (
             <>
               <h2 className="text-xl font-bold mt-1">{todayWorkout.name}</h2>
               <p className="text-sm opacity-80 mt-1">
-                {todayWorkout.exercises?.length || 0} exercises • Day {todayWorkout.day}
+                {todayWorkout.exercises?.length || 0} {t.dashboard.exercises} • {t.dashboard.day} {todayWorkout.day}
               </p>
               <Button
                 size="lg"
-                className="mt-4 bg-white text-coral-600 hover:bg-white/90"
+                className={cn('mt-4 bg-white text-coral-600 hover:bg-white/90', isRTL && 'flex-row-reverse')}
                 asChild
               >
                 <Link href={`/workouts/${todayWorkout.id}`}>
-                  <Play className="mr-2 h-5 w-5" />
-                  Start Workout
+                  <Play className={cn('h-5 w-5', isRTL ? 'ml-2' : 'mr-2')} />
+                  {t.dashboard.startWorkout}
                 </Link>
               </Button>
             </>
           ) : (
             <>
-              <h2 className="text-xl font-bold mt-1">Rest Day</h2>
-              <p className="text-sm opacity-80 mt-1">No workout scheduled for today</p>
+              <h2 className="text-xl font-bold mt-1">{t.dashboard.restDay}</h2>
+              <p className="text-sm opacity-80 mt-1">{t.dashboard.noWorkout}</p>
               <Button
                 size="lg"
                 variant="secondary"
                 className="mt-4 bg-white/20 text-white hover:bg-white/30"
                 asChild
               >
-                <Link href="/workouts">
-                  Browse Workouts
-                </Link>
+                <Link href="/workouts">{t.dashboard.browseWorkouts}</Link>
               </Button>
             </>
           )}
@@ -156,13 +161,16 @@ export default function DashboardPage() {
       <div className="grid gap-4 md:grid-cols-2">
         {/* Nutrition Card */}
         <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-base font-semibold flex items-center gap-2">
+          <CardHeader className={cn(
+            'flex flex-row items-center justify-between pb-2',
+            isRTL && 'flex-row-reverse'
+          )}>
+            <CardTitle className={cn('text-base font-semibold flex items-center gap-2', isRTL && 'flex-row-reverse')}>
               <Apple className="h-5 w-5 text-green-500" />
-              Today&apos;s Nutrition
+              {t.dashboard.nutrition.title}
             </CardTitle>
             <Link href="/nutrition" className="text-sm text-coral-500 hover:underline">
-              View All
+              {t.dashboard.nutrition.viewAll}
             </Link>
           </CardHeader>
           <CardContent>
@@ -170,8 +178,8 @@ export default function DashboardPage() {
               <div className="space-y-4">
                 {/* Calories */}
                 <div>
-                  <div className="flex justify-between text-sm mb-1">
-                    <span>Calories</span>
+                  <div className={cn('flex justify-between text-sm mb-1', isRTL && 'flex-row-reverse')}>
+                    <span>{t.dashboard.nutrition.calories}</span>
                     <span className="text-muted-foreground">
                       {Math.round(dailyNutrition.totals.calories)} / {dailyNutrition.goals.calories}
                     </span>
@@ -188,32 +196,32 @@ export default function DashboardPage() {
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
                     <p className="text-lg font-bold">{Math.round(dailyNutrition.totals.protein)}g</p>
-                    <p className="text-xs text-muted-foreground">Protein</p>
+                    <p className="text-xs text-muted-foreground">{t.dashboard.nutrition.protein}</p>
                   </div>
                   <div>
                     <p className="text-lg font-bold">{Math.round(dailyNutrition.totals.carbs)}g</p>
-                    <p className="text-xs text-muted-foreground">Carbs</p>
+                    <p className="text-xs text-muted-foreground">{t.dashboard.nutrition.carbs}</p>
                   </div>
                   <div>
                     <p className="text-lg font-bold">{Math.round(dailyNutrition.totals.fat)}g</p>
-                    <p className="text-xs text-muted-foreground">Fat</p>
+                    <p className="text-xs text-muted-foreground">{t.dashboard.nutrition.fat}</p>
                   </div>
                 </div>
 
-                <Button variant="outline" size="sm" className="w-full" asChild>
+                <Button variant="outline" size="sm" className={cn('w-full', isRTL && 'flex-row-reverse')} asChild>
                   <Link href="/nutrition">
-                    <Plus className="mr-2 h-4 w-4" />
-                    Log Meal
+                    <Plus className={cn('h-4 w-4', isRTL ? 'ml-2' : 'mr-2')} />
+                    {t.dashboard.nutrition.logMeal}
                   </Link>
                 </Button>
               </div>
             ) : (
               <div className="text-center py-6">
-                <p className="text-muted-foreground text-sm mb-3">No meals logged today</p>
-                <Button variant="outline" size="sm" asChild>
+                <p className="text-muted-foreground text-sm mb-3">{t.dashboard.nutrition.noMeals}</p>
+                <Button variant="outline" size="sm" className={cn(isRTL && 'flex-row-reverse')} asChild>
                   <Link href="/nutrition">
-                    <Plus className="mr-2 h-4 w-4" />
-                    Log Your First Meal
+                    <Plus className={cn('h-4 w-4', isRTL ? 'ml-2' : 'mr-2')} />
+                    {t.dashboard.nutrition.logFirst}
                   </Link>
                 </Button>
               </div>
@@ -223,18 +231,21 @@ export default function DashboardPage() {
 
         {/* Weekly Goals Card */}
         <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-base font-semibold flex items-center gap-2">
+          <CardHeader className={cn(
+            'flex flex-row items-center justify-between pb-2',
+            isRTL && 'flex-row-reverse'
+          )}>
+            <CardTitle className={cn('text-base font-semibold flex items-center gap-2', isRTL && 'flex-row-reverse')}>
               <Trophy className="h-5 w-5 text-yellow-500" />
-              Weekly Goals
+              {t.dashboard.weeklyGoals.title}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               {/* Workouts Goal */}
               <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span>Workouts</span>
+                <div className={cn('flex justify-between text-sm mb-1', isRTL && 'flex-row-reverse')}>
+                  <span>{t.dashboard.weeklyGoals.workouts}</span>
                   <span className="text-muted-foreground">
                     {weeklyStats?.workoutsCompleted || 0} / {weeklyStats?.workoutsTarget || 4}
                   </span>
@@ -249,8 +260,8 @@ export default function DashboardPage() {
 
               {/* Calories Goal */}
               <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span>Calorie Target Days</span>
+                <div className={cn('flex justify-between text-sm mb-1', isRTL && 'flex-row-reverse')}>
+                  <span>{t.dashboard.weeklyGoals.calorieTarget}</span>
                   <span className="text-muted-foreground">
                     {weeklyStats?.daysOnCalorieTarget || 0} / 7
                   </span>
@@ -265,8 +276,8 @@ export default function DashboardPage() {
 
               {/* Meals Logged */}
               <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span>Days with Meals</span>
+                <div className={cn('flex justify-between text-sm mb-1', isRTL && 'flex-row-reverse')}>
+                  <span>{t.dashboard.weeklyGoals.mealsLogged}</span>
                   <span className="text-muted-foreground">
                     {weeklyStats?.daysWithMeals || 0} / 7
                   </span>
@@ -287,54 +298,66 @@ export default function DashboardPage() {
       <div className="grid grid-cols-2 gap-3">
         <Link
           href="/workouts"
-          className="flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+          className={cn(
+            'flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50',
+            isRTL && 'flex-row-reverse'
+          )}
         >
-          <div className="flex items-center gap-3">
+          <div className={cn('flex items-center gap-3', isRTL && 'flex-row-reverse')}>
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
               <Dumbbell className="h-5 w-5 text-blue-500" />
             </div>
-            <span className="font-medium">Workouts</span>
+            <span className="font-medium">{t.dashboard.quickActions.workouts}</span>
           </div>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+          <ChevronRight className={cn('h-5 w-5 text-muted-foreground', isRTL && 'rotate-180')} />
         </Link>
 
         <Link
           href="/nutrition"
-          className="flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+          className={cn(
+            'flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50',
+            isRTL && 'flex-row-reverse'
+          )}
         >
-          <div className="flex items-center gap-3">
+          <div className={cn('flex items-center gap-3', isRTL && 'flex-row-reverse')}>
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
               <Apple className="h-5 w-5 text-green-500" />
             </div>
-            <span className="font-medium">Nutrition</span>
+            <span className="font-medium">{t.dashboard.quickActions.nutrition}</span>
           </div>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+          <ChevronRight className={cn('h-5 w-5 text-muted-foreground', isRTL && 'rotate-180')} />
         </Link>
 
         <Link
           href="/progress"
-          className="flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+          className={cn(
+            'flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50',
+            isRTL && 'flex-row-reverse'
+          )}
         >
-          <div className="flex items-center gap-3">
+          <div className={cn('flex items-center gap-3', isRTL && 'flex-row-reverse')}>
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-500/10">
               <TrendingUp className="h-5 w-5 text-purple-500" />
             </div>
-            <span className="font-medium">Progress</span>
+            <span className="font-medium">{t.dashboard.quickActions.progress}</span>
           </div>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+          <ChevronRight className={cn('h-5 w-5 text-muted-foreground', isRTL && 'rotate-180')} />
         </Link>
 
         <Link
           href="/squads"
-          className="flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50"
+          className={cn(
+            'flex items-center justify-between rounded-xl border bg-card p-4 transition-colors hover:bg-muted/50',
+            isRTL && 'flex-row-reverse'
+          )}
         >
-          <div className="flex items-center gap-3">
+          <div className={cn('flex items-center gap-3', isRTL && 'flex-row-reverse')}>
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500/10">
               <Trophy className="h-5 w-5 text-orange-500" />
             </div>
-            <span className="font-medium">Squads</span>
+            <span className="font-medium">{t.dashboard.quickActions.squads}</span>
           </div>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+          <ChevronRight className={cn('h-5 w-5 text-muted-foreground', isRTL && 'rotate-180')} />
         </Link>
       </div>
     </div>
