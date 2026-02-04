@@ -436,6 +436,7 @@ interface WorkoutPlan {
   description: string;
   duration: number;
   frequency: number;
+  goal?: string;
   workouts: Workout[];
 }
 
@@ -505,6 +506,8 @@ interface WorkoutLog {
   date: string;
   duration: number;
   totalVolume: number;
+  name?: string;
+  calories?: number;
 }
 
 interface Exercise {

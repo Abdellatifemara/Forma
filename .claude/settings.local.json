@@ -105,7 +105,18 @@
       "Bash(npx nest build)",
       "Bash(timeout 15 node:*)",
       "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbWtyMnlxd2owMDAwdjd2MHpiNWtmN25kIiwiZW1haWwiOiJhZG1pbkBmb3JtYS5hcHAiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3NjkxOTUzNzIsImV4cCI6MTc2OTgwMDE3Mn0.5TejbWyXbMTDg2O_OL35TuTKKt0WdeyKHGZ92ocn-Tg\")",
-      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbWw2aWI4aTcwMDAwNnR6c2x5eGk4cml1IiwiZW1haWwiOiJhZG1pbkBmb3JtYS5hcHAiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTc3MDExNzU5NCwiZXhwIjoxNzcwNzIyMzk0fQ.QQ70bER2vr8_YitkPVIX_8UJluaK4vXTeLl1r7MLxSM\":*)"
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbWw2aWI4aTcwMDAwNnR6c2x5eGk4cml1IiwiZW1haWwiOiJhZG1pbkBmb3JtYS5hcHAiLCJyb2xlIjoiVVNFUiIsImlhdCI6MTc3MDExNzU5NCwiZXhwIjoxNzcwNzIyMzk0fQ.QQ70bER2vr8_YitkPVIX_8UJluaK4vXTeLl1r7MLxSM\":*)",
+      "Bash(npm run db:seed:foods:*)",
+      "Bash(set:*)",
+      "Bash(set DIRECT_URL=postgresql://postgres.dfztxvbdruksednaucdq:RHvw5Xw4IyD3xouY@aws-1-eu-west-1.pooler.supabase.com:5432/postgres)",
+      "Bash(DATABASE_URL=\"postgresql://postgres.lfbgyvndzqhuwbyrvrvx:FormaFitness2024!@aws-0-eu-central-1.pooler.supabase.com:6543/postgres?pgbouncer=true\" DIRECT_URL=\"postgresql://postgres.lfbgyvndzqhuwbyrvrvx:FormaFitness2024!@aws-0-eu-central-1.pooler.supabase.com:5432/postgres\" npx ts-node prisma/seed-demo-user.ts)",
+      "Bash(wc:*)",
+      "Bash(npm run lint:*)",
+      "Bash(NODE_OPTIONS=\"--max-old-space-size=4096\" npm run build:*)",
+      "WebFetch(domain:www.g2.com)",
+      "Bash(npm run start:dev:*)",
+      "Bash(taskkill:*)",
+      "WebFetch(domain:forma-web-nine.vercel.app)"
     ]
   }
 }

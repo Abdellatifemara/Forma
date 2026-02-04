@@ -24,6 +24,7 @@ import {
   Calendar,
   ArrowRight,
   Star,
+  Utensils,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -204,15 +205,8 @@ export default function AppDashboardPage() {
               <div>
                 <h2 className="text-2xl font-bold">{todayWorkout.name}</h2>
                 <p className="text-muted-foreground mt-1">
-                  {todayWorkout.exercises?.length || 0} exercises • ~{todayWorkout.duration || 45} min
+                  {todayWorkout.exercises?.length || 0} exercises • Day {todayWorkout.day}
                 </p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {todayWorkout.targetMuscles?.slice(0, 3).map((muscle: string) => (
-                    <span key={muscle} className={`muscle-tag ${muscle.toLowerCase()}`}>
-                      {muscle}
-                    </span>
-                  ))}
-                </div>
               </div>
               <Button size="lg" className="btn-premium w-full sm:w-auto" asChild>
                 <Link href={`/workouts/${todayWorkout.id}`}>
