@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/marketing/navbar';
 import { Footer } from '@/components/marketing/footer';
 
+// Marketing layout for homepage and public pages
 export default function MarketingLayout({
   children,
 }: {
