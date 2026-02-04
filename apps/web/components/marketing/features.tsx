@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import {
   Brain,
   Dumbbell,
@@ -16,8 +17,11 @@ import {
   Wifi,
   Shield,
   Zap,
+  ChevronRight,
+  Play,
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 
 const features = [
   {
@@ -28,6 +32,7 @@ const features = [
     badge: 'FREE',
     badgeColor: 'bg-green-500',
     gradient: 'from-blue-500 to-cyan-500',
+    video: '/demos/form-check.mp4',
   },
   {
     icon: Mic,
@@ -43,7 +48,7 @@ const features = [
     title: '"What Now?" AI',
     titleAr: 'ماذا أفعل الآن؟',
     description: 'Don\'t know what to train? Tell us your energy level, available time, and location — get instant personalized workout suggestions.',
-    badge: 'SMART',
+    badge: 'AI',
     badgeColor: 'bg-violet-500',
     gradient: 'from-violet-500 to-purple-500',
   },
@@ -58,21 +63,12 @@ const features = [
   },
   {
     icon: Trophy,
-    title: 'XP & Levels',
+    title: 'XP & Gamification',
     titleAr: 'نقاط الخبرة',
-    description: 'Earn XP for every workout and achievement. Progress through 10 levels from "Beginner" to "Elite". Compete on leaderboards.',
-    badge: 'GAMIFIED',
+    description: 'Earn XP for every workout and achievement. Progress through 10 levels from "Beginner" to "Elite". Unlock badges and compete.',
+    badge: 'FUN',
     badgeColor: 'bg-yellow-500',
     gradient: 'from-yellow-500 to-orange-500',
-  },
-  {
-    icon: Shield,
-    title: 'Injury-Aware Training',
-    titleAr: 'تدريب مراعي للإصابات',
-    description: 'Got a shoulder injury? Knee pain? The app automatically modifies your workouts and suggests safe alternatives.',
-    badge: 'SAFE',
-    badgeColor: 'bg-red-500',
-    gradient: 'from-red-500 to-pink-500',
   },
   {
     icon: Moon,
@@ -83,114 +79,165 @@ const features = [
     badgeColor: 'bg-indigo-500',
     gradient: 'from-indigo-500 to-purple-500',
   },
-  {
-    icon: Activity,
-    title: 'Wearable Sync',
-    titleAr: 'مزامنة الأجهزة',
-    description: 'Connect Apple Health, Google Fit, or Garmin. Your HRV and sleep data create a daily "Readiness Score" to optimize training.',
-    badge: 'SMART',
-    badgeColor: 'bg-forma-teal',
-    gradient: 'from-forma-teal to-cyan-500',
-  },
-  {
-    icon: LineChart,
-    title: 'Body Composition',
-    titleAr: 'تركيب الجسم',
-    description: 'Track weight, body fat, and measurements. Get BMI analysis, progress visualization, and AI-powered recommendations.',
-    badge: 'TRACK',
-    badgeColor: 'bg-blue-500',
-    gradient: 'from-blue-500 to-indigo-500',
-  },
-  {
-    icon: Wifi,
-    title: 'Offline Mode',
-    titleAr: 'بدون إنترنت',
-    description: 'Full PWA with offline support. Log workouts without internet — they sync automatically when you\'re back online.',
-    badge: 'FREE',
-    badgeColor: 'bg-green-500',
-    gradient: 'from-gray-500 to-slate-500',
-  },
-  {
-    icon: MessageCircle,
-    title: 'Coach Chat',
-    titleAr: 'محادثة المدرب',
-    description: 'Chat with your trainer using text, voice notes, and images. Share progress, ask questions, get personalized guidance.',
-    badge: 'PRO',
-    badgeColor: 'bg-violet-500',
-    gradient: 'from-pink-500 to-rose-500',
-  },
-  {
-    icon: Brain,
-    title: 'AI Workout Plans',
-    titleAr: 'خطط بالذكاء الاصطناعي',
-    description: 'Tell us your goals, experience, and equipment. Our AI creates a complete personalized workout plan in seconds.',
-    badge: 'AI',
-    badgeColor: 'bg-violet-500',
-    gradient: 'from-violet-500 to-fuchsia-500',
-  },
+];
+
+const additionalFeatures = [
+  { icon: Shield, title: 'Injury-Aware Training', description: 'Modifies workouts based on your injuries' },
+  { icon: Activity, title: 'Wearable Sync', description: 'Apple Health, Google Fit, Garmin' },
+  { icon: LineChart, title: 'Body Composition', description: 'Track weight, body fat, measurements' },
+  { icon: Wifi, title: 'Offline Mode', description: 'Full PWA with offline support' },
+  { icon: MessageCircle, title: 'Coach Chat', description: 'Chat with your trainer anytime' },
+  { icon: Brain, title: 'AI Workout Plans', description: 'Personalized plans in seconds' },
 ];
 
 export function Features() {
+  const [activeFeature, setActiveFeature] = useState(0);
+
   return (
-    <section id="features" className="py-20 md:py-32 bg-gradient-to-b from-background to-muted/30">
+    <section id="features" className="relative py-24 md:py-32 overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-forma-navy/50" />
+        <div className="absolute top-1/2 left-1/4 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-forma-teal/5 blur-[128px]" />
+        <div className="absolute top-1/2 right-1/4 h-[400px] w-[400px] -translate-y-1/2 rounded-full bg-purple-500/5 blur-[128px]" />
+      </div>
+
       <div className="container">
         {/* Section Header */}
-        <div className="mx-auto max-w-3xl text-center mb-16">
-          <Badge className="mb-4 bg-forma-teal/10 text-forma-teal border-forma-teal/20 hover:bg-forma-teal/20">
+        <div className="mx-auto max-w-3xl text-center mb-20">
+          <Badge className="mb-6 bg-forma-teal/10 text-forma-teal border-forma-teal/20 hover:bg-forma-teal/20 text-sm px-4 py-1">
+            <Zap className="h-3.5 w-3.5 mr-1.5" />
             12 Powerful Features
           </Badge>
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             Everything you need to{' '}
-            <span className="text-gradient">transform</span>
+            <span className="bg-gradient-to-r from-forma-teal to-emerald-400 bg-clip-text text-transparent">
+              transform
+            </span>
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Built specifically for the MENA region. Arabic-first design, Ramadan mode,
-            and features that actually matter for your fitness journey.
+          <p className="mt-6 text-lg text-muted-foreground">
+            Built specifically for the MENA region. Arabic-first design, Ramadan mode, and features that actually matter for your fitness journey.
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {features.map((feature, index) => (
-            <div
-              key={feature.title}
-              className="group relative rounded-2xl border bg-card p-6 transition-all duration-300 hover:border-forma-teal/50 hover:shadow-xl hover:shadow-forma-teal/5 hover:-translate-y-1 animate-fade-up"
-              style={{ animationDelay: `${index * 0.05}s` }}
-            >
-              {/* Badge */}
-              <Badge
-                className={`absolute top-4 right-4 text-[10px] text-white ${feature.badgeColor}`}
+        {/* Main Features - Interactive Showcase */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-24">
+          {/* Feature List */}
+          <div className="space-y-3">
+            {features.map((feature, index) => (
+              <button
+                key={feature.title}
+                onClick={() => setActiveFeature(index)}
+                className={cn(
+                  'w-full text-left rounded-2xl p-5 transition-all duration-300',
+                  activeFeature === index
+                    ? 'bg-gradient-to-r from-forma-teal/10 to-transparent border-l-4 border-forma-teal'
+                    : 'hover:bg-muted/50'
+                )}
               >
-                {feature.badge}
-              </Badge>
+                <div className="flex items-start gap-4">
+                  <div className={cn(
+                    'flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl transition-all',
+                    activeFeature === index
+                      ? `bg-gradient-to-r ${feature.gradient}`
+                      : 'bg-muted'
+                  )}>
+                    <feature.icon className={cn(
+                      'h-6 w-6 transition-colors',
+                      activeFeature === index ? 'text-white' : 'text-muted-foreground'
+                    )} />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <h3 className={cn(
+                        'font-semibold transition-colors',
+                        activeFeature === index ? 'text-forma-teal' : 'text-foreground'
+                      )}>
+                        {feature.title}
+                      </h3>
+                      <Badge className={cn('text-[10px] text-white', feature.badgeColor)}>
+                        {feature.badge}
+                      </Badge>
+                    </div>
+                    <p className={cn(
+                      'text-sm transition-all',
+                      activeFeature === index ? 'text-muted-foreground' : 'text-muted-foreground/70 line-clamp-1'
+                    )}>
+                      {feature.description}
+                    </p>
+                  </div>
+                  <ChevronRight className={cn(
+                    'h-5 w-5 transition-all',
+                    activeFeature === index ? 'text-forma-teal rotate-90' : 'text-muted-foreground'
+                  )} />
+                </div>
+              </button>
+            ))}
+          </div>
 
-              {/* Icon */}
-              <div className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-r ${feature.gradient} text-white shadow-lg`}>
-                <feature.icon className="h-6 w-6" />
+          {/* Feature Preview */}
+          <div className="relative">
+            <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-forma-teal/20 to-purple-500/20 opacity-50 blur-3xl" />
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-1 aspect-[4/3]">
+              <div className="h-full w-full rounded-xl bg-forma-navy flex items-center justify-center">
+                <div className="text-center p-8">
+                  <div className={cn(
+                    'mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-r',
+                    features[activeFeature].gradient
+                  )}>
+                    {(() => {
+                      const Icon = features[activeFeature].icon;
+                      return <Icon className="h-10 w-10 text-white" />;
+                    })()}
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">
+                    {features[activeFeature].title}
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-2">
+                    {features[activeFeature].titleAr}
+                  </p>
+                  <p className="text-gray-300 max-w-md mx-auto">
+                    {features[activeFeature].description}
+                  </p>
+                  {features[activeFeature].video && (
+                    <button className="mt-6 inline-flex items-center gap-2 text-forma-teal hover:underline">
+                      <Play className="h-4 w-4" />
+                      Watch Demo
+                    </button>
+                  )}
+                </div>
               </div>
-
-              {/* Content */}
-              <h3 className="mb-1 text-lg font-semibold group-hover:text-forma-teal transition-colors">
-                {feature.title}
-              </h3>
-              <p className="text-xs text-muted-foreground mb-2 font-cairo">
-                {feature.titleAr}
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {feature.description}
-              </p>
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* Additional Features Grid */}
+        <div className="border-t border-border/50 pt-16">
+          <h3 className="text-center text-lg font-semibold mb-8">And so much more...</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {additionalFeatures.map((feature) => (
+              <div
+                key={feature.title}
+                className="group rounded-xl border border-border/50 bg-card/50 p-4 text-center transition-all hover:border-forma-teal/50 hover:bg-forma-teal/5"
+              >
+                <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-muted group-hover:bg-forma-teal/20 transition-colors">
+                  <feature.icon className="h-5 w-5 text-muted-foreground group-hover:text-forma-teal transition-colors" />
+                </div>
+                <h4 className="font-medium text-sm mb-1">{feature.title}</h4>
+                <p className="text-xs text-muted-foreground">{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 text-center">
+        <div className="mt-20 text-center">
           <p className="text-muted-foreground mb-4">
             Ready to experience all these features?
           </p>
           <a
             href="/signup"
-            className="inline-flex items-center gap-2 btn-premium px-8 py-3 rounded-xl font-semibold"
+            className="inline-flex items-center gap-2 rounded-full bg-forma-teal px-8 py-3 font-semibold text-black transition-all hover:bg-forma-teal/90 hover:shadow-[0_0_30px_rgba(0,212,170,0.3)]"
           >
             <Zap className="h-5 w-5" />
             Start Free Today
