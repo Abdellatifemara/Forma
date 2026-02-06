@@ -56,7 +56,7 @@ export class ExercisesService {
       where.OR = [
         { nameEn: { contains: searchTerm, mode: 'insensitive' } },
         { nameAr: { contains: searchTerm, mode: 'insensitive' } },
-        { tags: { hasSome: [searchTerm] } },
+        { descriptionEn: { contains: searchTerm, mode: 'insensitive' } },
       ];
     }
 
@@ -121,7 +121,16 @@ export class ExercisesService {
       this.prisma.exercise.count({ where }),
     ]);
 
+    // Return in format expected by frontend
     return {
+      data: exercises,
+      meta: {
+        total,
+        page,
+        pageSize,
+        totalPages: Math.ceil(total / pageSize),
+      },
+      // Also include flat properties for backward compatibility
       exercises,
       total,
       page,
