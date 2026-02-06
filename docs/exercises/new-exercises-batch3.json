@@ -1,0 +1,542 @@
+[
+  {
+    "id": "CAB001",
+    "name_en": "Cable Crossover (High to Low)",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB002",
+    "name_en": "Cable Crossover (Low to High)",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["SHOULDERS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB003",
+    "name_en": "Cable Crossover (Mid Level)",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB004",
+    "name_en": "Single Arm Cable Fly",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB005",
+    "name_en": "Cable Chest Press (Standing)",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB006",
+    "name_en": "Cable Incline Fly",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["SHOULDERS"],
+    "equipment": ["CABLES", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB007",
+    "name_en": "Cable Decline Fly",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [],
+    "equipment": ["CABLES", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB008",
+    "name_en": "Cable Pullover",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["CHEST"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB009",
+    "name_en": "Rope Straight Arm Pulldown",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB010",
+    "name_en": "Cable Row (Rope Attachment)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB011",
+    "name_en": "Cable Row (Wide Bar)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB012",
+    "name_en": "Cable Row (V-Bar)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB013",
+    "name_en": "Single Arm Cable Row (Standing)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB014",
+    "name_en": "Single Arm Cable Row (Kneeling)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB015",
+    "name_en": "Cable High Row",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["SHOULDERS", "BICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB016",
+    "name_en": "Cable Low Row",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB017",
+    "name_en": "Cable Upright Row",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BICEPS", "BACK"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB018",
+    "name_en": "Cable Lateral Raise (Single Arm)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB019",
+    "name_en": "Cable Lateral Raise (Behind Back)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB020",
+    "name_en": "Cable Front Raise (Rope)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB021",
+    "name_en": "Cable Front Raise (Bar)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB022",
+    "name_en": "Cable Rear Delt Fly",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB023",
+    "name_en": "Cable Rear Delt Row",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB024",
+    "name_en": "Cable Face Pull (Rope)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB025",
+    "name_en": "Cable Face Pull with External Rotation",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["CABLES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB026",
+    "name_en": "Cable Shoulder Press",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB027",
+    "name_en": "Cable Shrug",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB028",
+    "name_en": "Rope Pushdown",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB029",
+    "name_en": "Bar Pushdown (Straight Bar)",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB030",
+    "name_en": "Bar Pushdown (V-Bar)",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB031",
+    "name_en": "Single Arm Cable Pushdown",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB032",
+    "name_en": "Reverse Grip Pushdown",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB033",
+    "name_en": "Cable Overhead Tricep Extension (Rope)",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB034",
+    "name_en": "Cable Overhead Tricep Extension (Bar)",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB035",
+    "name_en": "Single Arm Cable Overhead Extension",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB036",
+    "name_en": "Cable Tricep Kickback",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB037",
+    "name_en": "Cable Curl (Straight Bar)",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB038",
+    "name_en": "Cable Curl (EZ Bar)",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB039",
+    "name_en": "Cable Curl (Rope)",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": ["FOREARMS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB040",
+    "name_en": "Single Arm Cable Curl",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB041",
+    "name_en": "High Cable Curl",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB042",
+    "name_en": "Cable Preacher Curl",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB043",
+    "name_en": "Cable Hammer Curl (Rope)",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": ["FOREARMS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB044",
+    "name_en": "Cable Concentration Curl",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB045",
+    "name_en": "Cable Wrist Curl",
+    "primary_muscle": "FOREARMS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB046",
+    "name_en": "Cable Reverse Wrist Curl",
+    "primary_muscle": "FOREARMS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB047",
+    "name_en": "Cable Crunch (Kneeling)",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB048",
+    "name_en": "Cable Crunch (Standing)",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB049",
+    "name_en": "Cable Woodchop (High to Low)",
+    "primary_muscle": "OBLIQUES",
+    "secondary_muscles": ["ABS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB050",
+    "name_en": "Cable Woodchop (Low to High)",
+    "primary_muscle": "OBLIQUES",
+    "secondary_muscles": ["ABS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB051",
+    "name_en": "Cable Twist (Standing)",
+    "primary_muscle": "OBLIQUES",
+    "secondary_muscles": ["ABS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB052",
+    "name_en": "Cable Pallof Press",
+    "primary_muscle": "ABS",
+    "secondary_muscles": ["OBLIQUES"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB053",
+    "name_en": "Cable Pallof Press (Kneeling)",
+    "primary_muscle": "ABS",
+    "secondary_muscles": ["OBLIQUES"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB054",
+    "name_en": "Cable Pull Through",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB055",
+    "name_en": "Cable Hip Abduction",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB056",
+    "name_en": "Cable Hip Adduction",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB057",
+    "name_en": "Cable Glute Kickback (Standing)",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB058",
+    "name_en": "Cable Glute Kickback (Kneeling)",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB059",
+    "name_en": "Cable Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CAB060",
+    "name_en": "Cable Romanian Deadlift",
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": ["GLUTES", "LOWER_BACK"],
+    "equipment": ["CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  }
+]

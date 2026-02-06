@@ -1,65 +1,17 @@
 [
   {
-    "id": "FD001",
-    "name_en": "Standing Barbell Overhead Press",
-    "name_ar": "Standing Barbell Overhead Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB001",
+    "name_en": "Kettlebell Deadlift",
+    "name_ar": "Kettlebell Deadlift (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS",
-      "ABS"
-    ],
+    "secondary_muscles": [],
     "equipment": [
-      "BARBELL"
+      "BODYWEIGHT"
     ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Feet shoulder-width, slight knee bend",
-      "Grip just outside shoulders",
-      "Bar starts at collar bone level",
-      "Brace core, squeeze glutes",
-      "Press straight up, move head back then forward",
-      "Lock out overhead, biceps by ears"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [
-      "Excessive lower back arch → Brace core harder",
-      "Pressing in front of face → Move head back, bar goes straight up",
-      "Flaring elbows excessively → 45° elbow angle",
-      "--"
-    ],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD002",
-    "name_en": "Seated Barbell Overhead Press",
-    "name_ar": "Seated Barbell Overhead Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
+    "difficulty": "BEGINNER",
     "instructions_en": [
       "Step 1: Assume starting position.",
       "Step 2: Perform the movement.",
@@ -78,25 +30,23 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD003",
-    "name_en": "Behind Neck Press",
-    "name_ar": "Behind Neck Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior/lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior/lateral deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB002",
+    "name_en": "Kettlebell Goblet Squat",
+    "name_ar": "Kettlebell Goblet Squat (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
+    "secondary_muscles": [],
     "equipment": [
-      "BARBELL"
+      "BODYWEIGHT"
     ],
-    "difficulty": "ADVANCED",
+    "difficulty": "BEGINNER",
     "instructions_en": [
       "Step 1: Assume starting position.",
       "Step 2: Perform the movement.",
@@ -115,317 +65,616 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD004",
+    "id": "KB003",
+    "name_en": "Kettlebell Swing (Two-Hand)",
+    "name_ar": "Kettlebell Swing (Two-Hand) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB004",
+    "name_en": "Kettlebell Turkish Get-Up",
+    "name_ar": "Kettlebell Turkish Get-Up (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB005",
+    "name_en": "Kettlebell Clean",
+    "name_ar": "Kettlebell Clean (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB006",
+    "name_en": "Kettlebell Press (Military Press)",
+    "name_ar": "Kettlebell Press (Military Press) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB007",
+    "name_en": "Kettlebell Snatch",
+    "name_ar": "Kettlebell Snatch (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB008",
+    "name_en": "Single Arm Swing",
+    "name_ar": "Single Arm Swing (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB009",
+    "name_en": "Hand-to-Hand Swing",
+    "name_ar": "Hand-to-Hand Swing (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB010",
+    "name_en": "Dead Stop Swing",
+    "name_ar": "Dead Stop Swing (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB011",
+    "name_en": "Swing to Squat",
+    "name_ar": "Swing to Squat (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB012",
+    "name_en": "High Pull (from Swing)",
+    "name_ar": "High Pull (from Swing) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB013",
+    "name_en": "Swing to Clean",
+    "name_ar": "Swing to Clean (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB014",
+    "name_en": "American Swing (Overhead)",
+    "name_ar": "American Swing (Overhead) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB015",
+    "name_en": "Sumo Squat",
+    "name_ar": "Sumo Squat (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB016",
+    "name_en": "Front Squat (Single KB)",
+    "name_ar": "Front Squat (Single KB) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB017",
+    "name_en": "Double Front Squat",
+    "name_ar": "Double Front Squat (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB018",
+    "name_en": "Pistol Squat (KB Counterbalance)",
+    "name_ar": "Pistol Squat (KB Counterbalance) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB019",
+    "name_en": "Cossack Squat with KB",
+    "name_ar": "Cossack Squat with KB (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB020",
     "name_en": "Push Press",
     "name_ar": "Push Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, power.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, power.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "QUADRICEPS",
-      "TRICEPS"
-    ],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Start like overhead press",
-      "Dip knees slightly (quarter squat)",
-      "Explosively drive through legs",
-      "Use momentum to help press",
-      "Lock out overhead"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD005",
-    "name_en": "Strict Press - Pause Rep",
-    "name_ar": "Strict Press - Pause Rep (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD006",
-    "name_en": "Press - Tempo 3-1-2",
-    "name_ar": "Press - Tempo 3-1-2 (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid (time under tension).",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid (time under tension).",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD007",
-    "name_en": "Z Press (seated on floor)",
-    "name_ar": "Z Press (seated on floor) (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, core.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, core.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD008",
-    "name_en": "Single-Arm DB Press - Standing",
-    "name_ar": "Single-Arm DB Press - Standing (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, core.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, core.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD009",
-    "name_en": "Dumbbell Shoulder Press - Seated",
-    "name_ar": "Dumbbell Shoulder Press - Seated (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Bench angle 85-90° (slight incline OK)",
-      "Start with DBs at shoulder level",
-      "Press up and slightly together",
-      "Control the descent"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD010",
-    "name_en": "Dumbbell Shoulder Press - Standing",
-    "name_ar": "Dumbbell Shoulder Press - Standing (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS",
-      "ABS"
-    ],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD011",
-    "name_en": "Arnold Press",
-    "name_ar": "Arnold Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior + lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior + lateral deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Start with palms facing you (supinated)",
-      "Press up while rotating palms outward",
-      "At top, palms face forward",
-      "Reverse on the way down"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD012",
-    "name_en": "DB Press - Neutral Grip",
-    "name_ar": "DB Press - Neutral Grip (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "DUMBBELLS"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -446,58 +695,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD013",
-    "name_en": "DB Press - Alternating",
-    "name_ar": "DB Press - Alternating (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB021",
+    "name_en": "Jerk",
+    "name_ar": "Jerk (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD014",
-    "name_en": "Machine Shoulder Press",
-    "name_ar": "Machine Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -518,23 +730,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD015",
-    "name_en": "Smith Machine Shoulder Press",
-    "name_ar": "Smith Machine Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB022",
+    "name_en": "Floor Press",
+    "name_ar": "Floor Press (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
+    "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -555,21 +765,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD016",
-    "name_en": "Hammer Strength Shoulder Press",
-    "name_ar": "Hammer Strength Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB023",
+    "name_en": "See-Saw Press (Alternating)",
+    "name_ar": "See-Saw Press (Alternating) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -590,57 +800,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD017",
-    "name_en": "Dumbbell Front Raise",
-    "name_ar": "Dumbbell Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB024",
+    "name_en": "Bottoms-Up Press",
+    "name_ar": "Bottoms-Up Press (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Stand with DBs at thighs",
-      "Slight elbow bend (fixed throughout)",
-      "Raise to shoulder height (not higher)",
-      "Control the descent"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD018",
-    "name_en": "Front Raise - Alternating",
-    "name_ar": "Front Raise - Alternating (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -661,21 +835,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD019",
-    "name_en": "Front Raise - Neutral Grip (hammer)",
-    "name_ar": "Front Raise - Neutral Grip (hammer) (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB025",
+    "name_en": "Half-Kneeling Press",
+    "name_ar": "Half-Kneeling Press (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "DUMBBELLS"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -696,21 +870,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD020",
-    "name_en": "Cable Front Raise",
-    "name_ar": "Cable Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB026",
+    "name_en": "Bent Over Row (Single)",
+    "name_ar": "Bent Over Row (Single) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -731,93 +905,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD021",
-    "name_en": "Cable Front Raise - Single Arm",
-    "name_ar": "Cable Front Raise - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB027",
+    "name_en": "Renegade Row",
+    "name_ar": "Renegade Row (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD022",
-    "name_en": "Cable Front Raise - Rope",
-    "name_ar": "Cable Front Raise - Rope (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD023",
-    "name_en": "Plate Front Raise",
-    "name_ar": "Plate Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "FOREARMS"
-    ],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -838,161 +940,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD024",
-    "name_en": "Plate Raise - Steering Wheel",
-    "name_ar": "Plate Raise - Steering Wheel (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior + lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior + lateral deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB028",
+    "name_en": "Upright Row",
+    "name_ar": "Upright Row (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD025",
-    "name_en": "Barbell Front Raise",
-    "name_ar": "Barbell Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD026",
-    "name_en": "EZ Bar Front Raise",
-    "name_ar": "EZ Bar Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD027",
-    "name_en": "Incline Front Raise",
-    "name_ar": "Incline Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid (stretched).",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid (stretched).",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD028",
-    "name_en": "Band Front Raise",
-    "name_ar": "Band Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1013,237 +975,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD029",
-    "name_en": "Front Raise - Pause Rep",
-    "name_ar": "Front Raise - Pause Rep (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB029",
+    "name_en": "Gorilla Row",
+    "name_ar": "Gorilla Row (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD030",
-    "name_en": "Front Raise to Overhead",
-    "name_ar": "Front Raise to Overhead (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD031",
-    "name_en": "Landmine Press - Standing",
-    "name_ar": "Landmine Press - Standing (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Stand facing landmine, bar at shoulder",
-      "Press up and forward at 45° angle",
-      "Great shoulder-friendly pressing option"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD032",
-    "name_en": "Landmine Press - Kneeling",
-    "name_ar": "Landmine Press - Kneeling (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD033",
-    "name_en": "Landmine Press - Half Kneeling",
-    "name_ar": "Landmine Press - Half Kneeling (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD034",
-    "name_en": "Landmine Press - Single Arm",
-    "name_ar": "Landmine Press - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD035",
-    "name_en": "Landmine Press - Both Hands",
-    "name_ar": "Landmine Press - Both Hands (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1264,308 +1010,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD036",
-    "name_en": "Landmine Thruster",
-    "name_ar": "Landmine Thruster (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, quads.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, quads.",
-    "category": "SHOULDERS",
+    "id": "KB030",
+    "name_en": "Face Pull (with KB)",
+    "name_ar": "Face Pull (with KB) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD037",
-    "name_en": "Landmine Press - Seated",
-    "name_ar": "Landmine Press - Seated (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD038",
-    "name_en": "Landmine Rainbow",
-    "name_ar": "Landmine Rainbow (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, mobility.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, mobility.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD039",
-    "name_en": "Pike Push-Up",
-    "name_ar": "Pike Push-Up (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Start in downward dog position (inverted V)",
-      "Lower head toward ground between hands",
-      "Press back up",
-      "Higher hips = more shoulder emphasis"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD040",
-    "name_en": "Pike Push-Up - Feet Elevated",
-    "name_ar": "Pike Push-Up - Feet Elevated (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD041",
-    "name_en": "Handstand Push-Up (wall)",
-    "name_ar": "Handstand Push-Up (wall) (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS",
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Kick up against wall",
-      "Lower head toward ground",
-      "Press back up",
-      "Keep core tight"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD042",
-    "name_en": "Handstand Push-Up - Deficit",
-    "name_ar": "Handstand Push-Up - Deficit (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD043",
-    "name_en": "Handstand Push-Up - Free Standing",
-    "name_ar": "Handstand Push-Up - Free Standing (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, balance.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, balance.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "EXPERT",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD044",
-    "name_en": "Decline Push-Up (shoulder emphasis)",
-    "name_ar": "Decline Push-Up (shoulder emphasis) (AR)",
-    "description_en": "A shoulders exercise focusing on the upper chest, anterior delt.",
-    "description_ar": "تمرين shoulders يركز على upper chest, anterior delt.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1586,237 +1045,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD045",
-    "name_en": "Pseudo Planche Lean",
-    "name_ar": "Pseudo Planche Lean (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD046",
-    "name_en": "Ring Pike Push-Up",
-    "name_ar": "Ring Pike Push-Up (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB031",
+    "name_en": "Goblet Lunge",
+    "name_ar": "Goblet Lunge (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD047",
-    "name_en": "TRX Y Press",
-    "name_ar": "TRX Y Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "TRX"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD048",
-    "name_en": "Wall Walk",
-    "name_ar": "Wall Walk (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD049",
-    "name_en": "Cable Shoulder Press",
-    "name_ar": "Cable Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD050",
-    "name_en": "Cable Shoulder Press - Single Arm",
-    "name_ar": "Cable Shoulder Press - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD051",
-    "name_en": "Iso-Lateral Shoulder Press",
-    "name_ar": "Iso-Lateral Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "MACHINES"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1837,21 +1080,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD052",
-    "name_en": "Machine Front Raise",
-    "name_ar": "Machine Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB032",
+    "name_en": "Reverse Lunge",
+    "name_ar": "Reverse Lunge (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1872,161 +1115,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD053",
-    "name_en": "Seated Machine Press - Single Arm",
-    "name_ar": "Seated Machine Press - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB033",
+    "name_en": "Rack Position Lunge",
+    "name_ar": "Rack Position Lunge (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "MACHINES"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD054",
-    "name_en": "Cable Press-Around",
-    "name_ar": "Cable Press-Around (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "CABLES"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD055",
-    "name_en": "High Cable Front Raise",
-    "name_ar": "High Cable Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD056",
-    "name_en": "Machine Shoulder Press - Behind Neck",
-    "name_ar": "Machine Shoulder Press - Behind Neck (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior/lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior/lateral deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "MACHINES"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD057",
-    "name_en": "Band Shoulder Press",
-    "name_ar": "Band Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2047,21 +1150,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD058",
-    "name_en": "Band Front Raise",
-    "name_ar": "Band Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB034",
+    "name_en": "Overhead Lunge",
+    "name_ar": "Overhead Lunge (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2082,21 +1185,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD059",
-    "name_en": "Band Overhead Press - Single Arm",
-    "name_ar": "Band Overhead Press - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB035",
+    "name_en": "Lateral Lunge with KB",
+    "name_ar": "Lateral Lunge with KB (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2117,126 +1220,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD060",
-    "name_en": "Band Arnold Press",
-    "name_ar": "Band Arnold Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior + lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior + lateral deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB036",
+    "name_en": "Step-Up with KB",
+    "name_ar": "Step-Up with KB (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD061",
-    "name_en": "Overhead Hold",
-    "name_ar": "Overhead Hold (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD062",
-    "name_en": "Handstand Hold",
-    "name_ar": "Handstand Hold (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD063",
-    "name_en": "Front Raise Hold",
-    "name_ar": "Front Raise Hold (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2257,21 +1255,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
     ]
   },
   {
-    "id": "FD064",
-    "name_en": "Wall Press Isometric",
-    "name_ar": "Wall Press Isometric (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "KB037",
+    "name_en": "Single Leg Deadlift with KB",
+    "name_ar": "Single Leg Deadlift with KB (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2292,8 +1290,1163 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB038",
+    "name_en": "Windmill",
+    "name_ar": "Windmill (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB039",
+    "name_en": "Russian Twist",
+    "name_ar": "Russian Twist (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB040",
+    "name_en": "Turkish Sit-Up",
+    "name_ar": "Turkish Sit-Up (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB041",
+    "name_en": "Figure 8",
+    "name_ar": "Figure 8 (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB042",
+    "name_en": "Around the World",
+    "name_ar": "Around the World (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB043",
+    "name_en": "Halo",
+    "name_ar": "Halo (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB044",
+    "name_en": "Drag (Plank KB Pull)",
+    "name_ar": "Drag (Plank KB Pull) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB045",
+    "name_en": "Dead Bug with KB",
+    "name_ar": "Dead Bug with KB (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB046",
+    "name_en": "KB Thruster",
+    "name_ar": "KB Thruster (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB047",
+    "name_en": "Man Maker (KB version)",
+    "name_ar": "Man Maker (KB version) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB048",
+    "name_en": "KB Swing to Squat to Press",
+    "name_ar": "KB Swing to Squat to Press (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB049",
+    "name_en": "Long Cycle (Clean and Jerk)",
+    "name_ar": "Long Cycle (Clean and Jerk) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB050",
+    "name_en": "Snatch Test",
+    "name_ar": "Snatch Test (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB051",
+    "name_en": "Farmer's Walk (Two KB)",
+    "name_ar": "Farmer's Walk (Two KB) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB052",
+    "name_en": "Suitcase Carry",
+    "name_ar": "Suitcase Carry (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB053",
+    "name_en": "Rack Carry",
+    "name_ar": "Rack Carry (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB054",
+    "name_en": "Overhead Carry",
+    "name_ar": "Overhead Carry (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB055",
+    "name_en": "Mixed Carry (Cross Body)",
+    "name_ar": "Mixed Carry (Cross Body) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB056",
+    "name_en": "Romanian Deadlift (RDL)",
+    "name_ar": "Romanian Deadlift (RDL) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB057",
+    "name_en": "Sumo Deadlift",
+    "name_ar": "Sumo Deadlift (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB058",
+    "name_en": "Good Morning with KB",
+    "name_ar": "Good Morning with KB (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB059",
+    "name_en": "Pull Through (KB between legs)",
+    "name_ar": "Pull Through (KB between legs) (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB060",
+    "name_en": "Double Swing",
+    "name_ar": "Double Swing (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB061",
+    "name_en": "Double Clean",
+    "name_ar": "Double Clean (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB062",
+    "name_en": "Swing to High Pull",
+    "name_ar": "Swing to High Pull (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB063",
+    "name_en": "Alternating Swing",
+    "name_ar": "Alternating Swing (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB064",
+    "name_en": "Bottom-Up Clean",
+    "name_ar": "Bottom-Up Clean (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB065",
+    "name_en": "Deck Squat with KB",
+    "name_ar": "Deck Squat with KB (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB066",
+    "name_en": "Lateral Swing",
+    "name_ar": "Lateral Swing (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB067",
+    "name_en": "Figure 8 to Hold",
+    "name_ar": "Figure 8 to Hold (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB068",
+    "name_en": "Swing to Catch",
+    "name_ar": "Swing to Catch (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB069",
+    "name_en": "Bottoms-Up Hold",
+    "name_ar": "Bottoms-Up Hold (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "KB070",
+    "name_en": "Arm Bar",
+    "name_ar": "Arm Bar (AR)",
+    "description_en": "A equipment exercise focusing on the kettlebell.",
+    "description_ar": "تمرين equipment يركز على kettlebell.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "kettlebell"
     ]
   }
 ]

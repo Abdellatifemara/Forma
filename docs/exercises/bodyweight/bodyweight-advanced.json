@@ -1,0 +1,4328 @@
+[
+  {
+    "id": "BWA001",
+    "name_en": "Typewriter Push-Up",
+    "name_ar": "Typewriter Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Wide push-up position",
+      "Lower and slide toward one hand",
+      "Stay low, slide across to other side",
+      "Push up from that side",
+      "Alternate directions"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rising up during slide",
+      "Not going low enough",
+      "Rushing movement",
+      "**Contraindications:** Shoulder instability",
+      "**Programming:** 3 sets x 4-6 each side, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA002",
+    "name_en": "Aztec Push-Up",
+    "name_ar": "Aztec Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Explosive push-up",
+      "Touch hands to toes mid-air",
+      "Land softly in push-up position",
+      "Requires significant power and flexibility",
+      "Master clap push-ups first"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not enough height",
+      "Poor landing",
+      "Flexibility limitation",
+      "**Contraindications:** Wrist/shoulder problems",
+      "**Programming:** 2-3 sets x 3-5 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA003",
+    "name_en": "Planche Push-Up (Tuck)",
+    "name_ar": "Planche Push-Up (Tuck) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Achieve tuck planche position",
+      "Lower body slightly",
+      "Push back to tuck planche",
+      "Maintain forward lean",
+      "Keep hips at hand height"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not enough lean",
+      "Breaking tuck position",
+      "Arms bending unevenly",
+      "**Contraindications:** Wrist issues, shoulder problems",
+      "**Programming:** 3-4 sets x 3-5 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA004",
+    "name_en": "Knuckle Push-Up",
+    "name_ar": "Knuckle Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Make fists, knuckles on floor",
+      "Wrists stay straight",
+      "Perform standard push-up",
+      "Harder on forearms",
+      "Safer for wrist issues"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Wrists bending",
+      "Knuckles rolling",
+      "Poor surface choice",
+      "**Contraindications:** Knuckle/hand injuries",
+      "**Programming:** 3-4 sets x 10-15 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA005",
+    "name_en": "Fingertip Push-Up",
+    "name_ar": "Fingertip Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Support on fingertips, not flat hands",
+      "Start with all 5 fingers",
+      "Progress to fewer fingers",
+      "Full push-up range of motion",
+      "Builds grip strength"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Fingers collapsing",
+      "Reducing range of motion",
+      "Progressing too fast",
+      "**Contraindications:** Finger injuries",
+      "**Programming:** 3 sets x 8-12 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA006",
+    "name_en": "Superman Push-Up",
+    "name_ar": "Superman Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Explosive push from bottom",
+      "Extend arms forward mid-air (like flying)",
+      "Return to push-up position",
+      "Land with soft elbows",
+      "Requires significant power"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not enough height",
+      "Arms not extending",
+      "Hard landing",
+      "**Contraindications:** Shoulder/wrist issues",
+      "**Programming:** 2-3 sets x 3-5 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA007",
+    "name_en": "Tiger Bend Push-Up",
+    "name_ar": "Tiger Bend Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lower to elbows (sphinx position)",
+      "Push back up to hands",
+      "Keep body rigid throughout",
+      "Arms stay close to body",
+      "Control the transition"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips sagging",
+      "Using momentum",
+      "Elbows flaring",
+      "**Contraindications:** Elbow problems",
+      "**Programming:** 3 sets x 6-10 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA008",
+    "name_en": "Grasshopper Push-Up",
+    "name_ar": "Grasshopper Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Push-up position",
+      "Lower while swinging leg under body",
+      "Rotate to touch opposite elbow",
+      "Return and alternate sides",
+      "Fluid motion"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not rotating enough",
+      "Incomplete push-up",
+      "Losing balance",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3 sets x 6-8 each side, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA009",
+    "name_en": "Reverse Push-Up",
+    "name_ar": "Reverse Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie face up, hands by hips",
+      "Fingers pointing toward feet",
+      "Press down to lift upper body",
+      "Lower with control",
+      "Keep hips on ground"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Lifting hips",
+      "Wrists uncomfortable",
+      "Incomplete range",
+      "**Contraindications:** Wrist issues",
+      "**Programming:** 3 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA010",
+    "name_en": "Push-Up with Rotation",
+    "name_ar": "Push-Up with Rotation (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Perform push-up",
+      "At top, rotate to side plank",
+      "Extend top arm to ceiling",
+      "Return and alternate",
+      "Control throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rushing rotation",
+      "Not stabilizing at top",
+      "Incomplete push-up",
+      "**Contraindications:** Shoulder instability",
+      "**Programming:** 3 sets x 8-10 total, 2x/week",
+      "--",
+      "## ANIMAL MOVEMENTS"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA011",
+    "name_en": "Bear Crawl (Forward)",
+    "name_ar": "Bear Crawl (Forward) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hands and feet on ground",
+      "Knees hover 2-3 inches",
+      "Move opposite hand/foot together",
+      "Keep hips low and stable",
+      "Controlled movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips too high",
+      "Same side moving together",
+      "Moving too fast",
+      "**Contraindications:** Wrist pain",
+      "**Programming:** 3 sets x 30-60 seconds, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA012",
+    "name_en": "Bear Crawl (Backward)",
+    "name_ar": "Bear Crawl (Backward) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Same position as forward bear crawl",
+      "Move in reverse",
+      "Requires more coordination",
+      "Keep looking forward",
+      "Maintain low position"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Looking backward (neck strain)",
+      "Rising up",
+      "Poor coordination",
+      "**Contraindications:** Wrist issues",
+      "**Programming:** 3 sets x 30-60 seconds, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA013",
+    "name_en": "Frog Jump",
+    "name_ar": "Frog Jump (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Deep squat, hands on floor",
+      "Jump forward like a frog",
+      "Land in squat position",
+      "Repeat continuously",
+      "Keep chest up"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not going deep enough",
+      "Landing hard",
+      "Poor coordination",
+      "**Contraindications:** Knee issues",
+      "**Programming:** 3 sets x 10-15 jumps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA014",
+    "name_en": "Crocodile Walk",
+    "name_ar": "Crocodile Walk (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Low push-up position",
+      "Move forward, staying very low",
+      "Chest nearly touches ground",
+      "Elbows bent throughout",
+      "Like crawling under barbed wire"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rising too high",
+      "Moving too fast",
+      "Losing form when fatigued",
+      "**Contraindications:** Shoulder problems",
+      "**Programming:** 3 sets x 20-40 seconds, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA015",
+    "name_en": "Lizard Crawl",
+    "name_ar": "Lizard Crawl (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Low crawling position",
+      "Bring knee to outside of elbow",
+      "Low, sinuous movement",
+      "Alternate sides",
+      "Stay close to ground"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rising too high",
+      "Knee not reaching elbow",
+      "Rushing movement",
+      "**Contraindications:** Hip issues",
+      "**Programming:** 3 sets x 30-60 seconds, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA016",
+    "name_en": "Duck Walk",
+    "name_ar": "Duck Walk (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Deep squat position",
+      "Hands behind head or on hips",
+      "Walk forward while staying low",
+      "Keep chest up",
+      "Don't rise between steps"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rising up",
+      "Falling forward",
+      "Knee pain (don't force depth)",
+      "**Contraindications:** Knee problems",
+      "**Programming:** 3 sets x 20-40 steps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA017",
+    "name_en": "Monkey Walk",
+    "name_ar": "Monkey Walk (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Squat, hands on floor beside feet",
+      "Jump/shift hands to one side",
+      "Feet follow hands",
+      "Move laterally",
+      "Stay in squat throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Standing up",
+      "Moving same direction only",
+      "Poor coordination",
+      "**Contraindications:** Wrist issues",
+      "**Programming:** 3 sets x 30 seconds each direction, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA018",
+    "name_en": "Bunny Hop",
+    "name_ar": "Bunny Hop (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand with feet together",
+      "Small jumps forward",
+      "Arms swing for momentum",
+      "Stay on balls of feet",
+      "Light, bouncy movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Jumping too high",
+      "Landing heavy",
+      "Flat-footed landing",
+      "**Contraindications:** Ankle problems",
+      "**Programming:** 3 sets x 20-30 seconds, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA019",
+    "name_en": "Crab Reach",
+    "name_ar": "Crab Reach (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Crab position (tabletop, face up)",
+      "Reach opposite hand to opposite foot",
+      "Lift hips as you reach",
+      "Rotate through core",
+      "Alternate sides"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips dropping",
+      "Not reaching far enough",
+      "Losing balance",
+      "**Contraindications:** Wrist pain",
+      "**Programming:** 3 sets x 8-10 each side, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA020",
+    "name_en": "Scorpion Stretch (Dynamic)",
+    "name_ar": "Scorpion Stretch (Dynamic) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie face down, arms out",
+      "Lift one leg, reach toward opposite hand",
+      "Rotate through spine",
+      "Return and alternate",
+      "Controlled movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Lifting shoulder off floor",
+      "Forcing range",
+      "Moving too quickly",
+      "**Contraindications:** Lower back pain",
+      "**Programming:** 2-3 sets x 8-10 each side, daily",
+      "--",
+      "## ISOMETRIC HOLDS"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA021",
+    "name_en": "Wall Sit Variations",
+    "name_ar": "Wall Sit Variations (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Back flat against wall",
+      "Progress depth gradually",
+      "Try single-leg holds",
+      "Add arm movements",
+      "Breathe steadily"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Leaning on thighs",
+      "Shallow angle",
+      "Holding breath",
+      "**Contraindications:** Knee pain",
+      "**Programming:** 3-4 sets x 30-60 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA022",
+    "name_en": "Plank Shoulder Tap",
+    "name_ar": "Plank Shoulder Tap (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "High plank position",
+      "Tap opposite shoulder with hand",
+      "Minimize hip rotation",
+      "Alternate hands",
+      "Core engaged throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Excessive hip sway",
+      "Moving too fast",
+      "Hips piking",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3 sets x 10-15 each side, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA023",
+    "name_en": "Superman Hold",
+    "name_ar": "Superman Hold (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie face down",
+      "Lift arms, chest, and legs",
+      "Hold at top position",
+      "Squeeze lower back",
+      "Breathe normally"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hyperextending neck",
+      "Not holding long enough",
+      "Legs too low",
+      "**Contraindications:** Lower back injury",
+      "**Programming:** 3-4 sets x 20-45 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA024",
+    "name_en": "Hollow Body to Superman Roll",
+    "name_ar": "Hollow Body to Superman Roll (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in hollow body",
+      "Roll to stomach without using limbs",
+      "Achieve superman position",
+      "Roll back to hollow",
+      "Arms and legs stay elevated"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using arms to roll",
+      "Breaking position",
+      "Legs touching ground",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3 sets x 5-10 rolls, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA025",
+    "name_en": "Horse Stance",
+    "name_ar": "Horse Stance (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Wide stance, toes slightly out",
+      "Squat to parallel or below",
+      "Keep back straight",
+      "Arms extended forward or on hips",
+      "Hold position"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not going low enough",
+      "Knees caving",
+      "Leaning forward",
+      "**Contraindications:** Knee problems",
+      "**Programming:** 3-5 sets x 30-60 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA026",
+    "name_en": "Glute Bridge Hold",
+    "name_ar": "Glute Bridge Hold (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Drive hips up",
+      "Squeeze glutes maximally",
+      "Hold at top",
+      "Don't hyperextend back",
+      "Breathe steadily"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips dropping",
+      "Arching back",
+      "Holding breath",
+      "**Contraindications:** Lower back pain",
+      "**Programming:** 3-4 sets x 30-60 seconds, 3-5x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA027",
+    "name_en": "Low Squat Hold (Malasana)",
+    "name_ar": "Low Squat Hold (Malasana) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Full depth squat",
+      "Heels down if possible",
+      "Elbows press knees out",
+      "Chest up, spine long",
+      "Relax and breathe"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Heels lifting",
+      "Rounding excessively",
+      "Knees collapsing",
+      "**Contraindications:** Knee pain in position",
+      "**Programming:** Accumulate 5-10 minutes daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA028",
+    "name_en": "Single-Leg Balance with Eyes Closed",
+    "name_ar": "Single-Leg Balance with Eyes Closed (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand on one leg",
+      "Close eyes",
+      "Maintain balance",
+      "Arms out for help if needed",
+      "Progress duration gradually"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Peeking",
+      "Not challenging enough",
+      "Giving up too quickly",
+      "**Contraindications:** Severe balance disorders",
+      "**Programming:** 3 sets x 20-60 seconds each leg, daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA029",
+    "name_en": "Copenhagen Plank",
+    "name_ar": "Copenhagen Plank (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Side plank, top leg on bench",
+      "Bottom leg hangs free",
+      "Lift and hold body straight",
+      "Keep hips from dropping",
+      "Switch sides"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips sagging",
+      "Top leg sliding",
+      "Not engaging adductors",
+      "**Contraindications:** Groin strains",
+      "**Programming:** 3 sets x 15-30 seconds each side, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA030",
+    "name_en": "Arch Hold (Gymnastics)",
+    "name_ar": "Arch Hold (Gymnastics) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie face down, arms overhead",
+      "Lift arms, chest, legs simultaneously",
+      "Form shallow arch shape",
+      "Squeeze glutes hard",
+      "Hold position"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not lifting legs high enough",
+      "Neck hyperextension",
+      "Holding breath",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3-4 sets x 20-45 seconds, 3x/week",
+      "--",
+      "## CARDIO/CONDITIONING (NO EQUIPMENT)"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA031",
+    "name_en": "High Knees",
+    "name_ar": "High Knees (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Run in place",
+      "Drive knees to hip height",
+      "Pump arms vigorously",
+      "Stay on balls of feet",
+      "Maintain fast pace"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Knees too low",
+      "Leaning back",
+      "Flat-footed",
+      "**Contraindications:** Hip flexor strain",
+      "**Programming:** 3-4 sets x 30-60 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA032",
+    "name_en": "Butt Kicks",
+    "name_ar": "Butt Kicks (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Run in place",
+      "Kick heels to glutes",
+      "Quick, light steps",
+      "Stay upright",
+      "Pump arms"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Leaning forward",
+      "Heels not reaching glutes",
+      "Moving too slowly",
+      "**Contraindications:** Knee problems",
+      "**Programming:** 3-4 sets x 30-60 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA033",
+    "name_en": "Fast Feet (Football Drill)",
+    "name_ar": "Fast Feet (Football Drill) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Quick, small steps in place",
+      "Stay on balls of feet",
+      "Low, athletic stance",
+      "Arms pumping",
+      "Maximum speed"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Steps too big",
+      "Standing too tall",
+      "Slowing down",
+      "**Contraindications:** Ankle problems",
+      "**Programming:** 4-6 sets x 10-20 seconds, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA034",
+    "name_en": "Star Jump",
+    "name_ar": "Star Jump (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in squat",
+      "Jump up, extending all limbs",
+      "Form star shape at peak",
+      "Land softly in squat",
+      "Continuous movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not extending fully",
+      "Hard landings",
+      "Losing form",
+      "**Contraindications:** Joint problems",
+      "**Programming:** 3 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA035",
+    "name_en": "Seal Jack",
+    "name_ar": "Seal Jack (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Like jumping jack",
+      "Arms clap in front instead of overhead",
+      "Feet jump out and in",
+      "Coordinate arm and leg movement",
+      "Keep pace steady"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Poor coordination",
+      "Arms too high",
+      "Slow pace",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3 sets x 20-30 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA036",
+    "name_en": "Squat Thrust",
+    "name_ar": "Squat Thrust (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "From standing, hands to floor",
+      "Jump feet back to plank",
+      "Jump feet back to hands",
+      "Stand up (no jump at top)",
+      "Like burpee without push-up or jump"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Sloppy plank position",
+      "Not jumping feet far enough",
+      "Losing rhythm",
+      "**Contraindications:** Wrist pain",
+      "**Programming:** 3-4 sets x 15-20 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA037",
+    "name_en": "Speed Skater",
+    "name_ar": "Speed Skater (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Leap laterally side to side",
+      "Land on outside leg",
+      "Inside leg sweeps behind",
+      "Touch floor with opposite hand",
+      "Continuous flowing motion"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not reaching far enough",
+      "Stiff landing",
+      "Poor balance",
+      "**Contraindications:** Ankle/knee instability",
+      "**Programming:** 3 sets x 30-60 seconds, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA038",
+    "name_en": "Plank Jack",
+    "name_ar": "Plank Jack (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in plank position",
+      "Jump feet out and in",
+      "Keep hips stable",
+      "Don't let hips pike or sag",
+      "Maintain steady rhythm"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips bouncing",
+      "Hands shifting",
+      "Losing plank form",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3 sets x 20-30 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA039",
+    "name_en": "Split Jump",
+    "name_ar": "Split Jump (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "From lunge position",
+      "Jump and switch legs mid-air",
+      "Land in opposite lunge",
+      "Immediate repeat",
+      "Arms swing for momentum"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Shallow lunges",
+      "Landing with straight legs",
+      "Losing balance",
+      "**Contraindications:** Knee/ankle problems",
+      "**Programming:** 3 sets x 10-15 total, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA040",
+    "name_en": "180 Jump Turn",
+    "name_ar": "180 Jump Turn (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Jump and rotate 180 degrees",
+      "Land facing opposite direction",
+      "Absorb landing with bent knees",
+      "Repeat in opposite direction",
+      "Control rotation"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Under/over-rotating",
+      "Hard landing",
+      "Losing balance",
+      "**Contraindications:** Knee/ankle issues",
+      "**Programming:** 3 sets x 10-12 total, 2x/week",
+      "--",
+      "## CORE VARIATIONS"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA041",
+    "name_en": "Reverse Crunch",
+    "name_ar": "Reverse Crunch (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on back, legs up",
+      "Curl hips off floor toward chest",
+      "Don't use momentum",
+      "Lower slowly",
+      "Keep upper back down"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Swinging legs",
+      "Using momentum",
+      "Hip flexors dominating",
+      "**Contraindications:** Lower back pain",
+      "**Programming:** 3-4 sets x 15-20 reps, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA042",
+    "name_en": "Dead Bug Variations",
+    "name_ar": "Dead Bug Variations (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Arms up, knees at 90 degrees",
+      "Lower opposite arm and leg",
+      "Progress to both legs",
+      "Add holds at extended position",
+      "Keep lower back pressed down"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Back arching",
+      "Rushing movement",
+      "Not breathing",
+      "**Contraindications:** None significant",
+      "**Programming:** 3 sets x 10-15 each side, 3-5x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA043",
+    "name_en": "Plank Reach",
+    "name_ar": "Plank Reach (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Forearm plank position",
+      "Reach one arm forward",
+      "Keep hips stable",
+      "Hold briefly",
+      "Alternate arms"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips rotating",
+      "Rushing",
+      "Losing plank form",
+      "**Contraindications:** Shoulder problems",
+      "**Programming:** 3 sets x 8-10 each arm, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA044",
+    "name_en": "Side Plank Dip",
+    "name_ar": "Side Plank Dip (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Side plank position",
+      "Lower hip toward floor",
+      "Don't touch ground",
+      "Lift back up",
+      "Control movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Touching floor",
+      "Rushing",
+      "Rolling forward/back",
+      "**Contraindications:** Shoulder injury",
+      "**Programming:** 3 sets x 10-15 each side, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA045",
+    "name_en": "Ab Wheel Simulation (Sliding)",
+    "name_ar": "Ab Wheel Simulation (Sliding) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Kneel on towel",
+      "Slide hands forward on floor",
+      "Extend body as far as controllable",
+      "Pull back using abs",
+      "Keep back from sagging"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Going too far",
+      "Back collapsing",
+      "Using momentum",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3 sets x 8-12 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA046",
+    "name_en": "Thread the Needle",
+    "name_ar": "Thread the Needle (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in side plank or all fours",
+      "Reach top arm under body",
+      "Rotate through thoracic spine",
+      "Return and open to ceiling",
+      "Fluid movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not rotating enough",
+      "Moving from lumbar spine",
+      "Rushing",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3 sets x 10-12 each side, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA047",
+    "name_en": "Boat Pose (Navasana)",
+    "name_ar": "Boat Pose (Navasana) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Balance on sit bones",
+      "Legs extended, body forms V",
+      "Arms parallel to floor",
+      "Keep back straight",
+      "Hold position"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rounding back",
+      "Legs dropping",
+      "Holding breath",
+      "**Contraindications:** Lower back pain",
+      "**Programming:** 3-4 sets x 20-45 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA048",
+    "name_en": "Scissor Kicks",
+    "name_ar": "Scissor Kicks (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on back, legs elevated",
+      "Cross legs alternately",
+      "Keep legs straight",
+      "Lower back pressed down",
+      "Small, quick movements"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Legs too high",
+      "Back arching",
+      "Large movements",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3 sets x 30-60 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA049",
+    "name_en": "Windshield Wiper",
+    "name_ar": "Windshield Wiper (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on back, arms out, legs up",
+      "Lower legs side to side",
+      "Don't touch floor",
+      "Control movement",
+      "Keep shoulders down"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Moving too fast",
+      "Touching floor",
+      "Shoulders lifting",
+      "**Contraindications:** Lower back problems",
+      "**Programming:** 3 sets x 8-10 each side, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA050",
+    "name_en": "Starfish Crunch",
+    "name_ar": "Starfish Crunch (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie with arms and legs spread wide",
+      "Touch opposite hand to opposite foot",
+      "Lift through center",
+      "Return to spread position",
+      "Alternate sides"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not lifting high enough",
+      "Using momentum",
+      "Rushing",
+      "**Contraindications:** Lower back pain",
+      "**Programming:** 3 sets x 10-12 each side, 3x/week",
+      "--",
+      "## LOWER BODY ADDITIONS"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA051",
+    "name_en": "Sissy Squat (Assisted)",
+    "name_ar": "Sissy Squat (Assisted) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold onto support",
+      "Rise onto toes, lean back",
+      "Lower, keeping hips extended",
+      "Knees travel forward",
+      "Use support minimally"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bending at hips",
+      "Relying too much on support",
+      "Not controlling descent",
+      "**Contraindications:** Knee pain",
+      "**Programming:** 3 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA052",
+    "name_en": "Reverse Nordic Curl",
+    "name_ar": "Reverse Nordic Curl (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Kneel on floor",
+      "Lean back from knees",
+      "Keep hips extended",
+      "Go as far as controllable",
+      "Return to upright"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bending at hips",
+      "Going too far",
+      "Falling backward",
+      "**Contraindications:** Knee problems",
+      "**Programming:** 3 sets x 5-10 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA053",
+    "name_en": "Airborne Lunge",
+    "name_ar": "Airborne Lunge (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Balance on one leg",
+      "Extend other leg behind",
+      "Lower into lunge (back knee to floor)",
+      "Back foot stays elevated",
+      "Drive up to balance"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Back foot touching",
+      "Losing balance",
+      "Not going deep enough",
+      "**Contraindications:** Knee issues",
+      "**Programming:** 3 sets x 5-8 each leg, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA054",
+    "name_en": "Slider Hamstring Curl",
+    "name_ar": "Slider Hamstring Curl (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on back, heels on towel",
+      "Lift hips (bridge position)",
+      "Slide heels toward glutes",
+      "Extend legs out",
+      "Keep hips elevated throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips dropping",
+      "Using momentum",
+      "Incomplete range",
+      "**Contraindications:** Hamstring strains",
+      "**Programming:** 3 sets x 10-15 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA055",
+    "name_en": "Nordic Curl (Negative)",
+    "name_ar": "Nordic Curl (Negative) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Kneel, feet anchored",
+      "Slowly lower body forward",
+      "Keep hips extended",
+      "Catch yourself at bottom",
+      "Use arms to return to top"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bending at hips",
+      "Falling too fast",
+      "Not going low enough",
+      "**Contraindications:** Hamstring/knee issues",
+      "**Programming:** 3 sets x 3-8 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA056",
+    "name_en": "Single-Leg Hip Hinge",
+    "name_ar": "Single-Leg Hip Hinge (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand on one leg",
+      "Hinge forward from hips",
+      "Keep back flat",
+      "Rear leg extends behind",
+      "Touch floor if flexible enough"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rounding back",
+      "Hip opening (rotation)",
+      "Losing balance",
+      "**Contraindications:** Lower back pain",
+      "**Programming:** 3 sets x 8-12 each leg, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA057",
+    "name_en": "Wall Sit Single-Leg",
+    "name_ar": "Wall Sit Single-Leg (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Wall sit position",
+      "Extend one leg straight",
+      "Hold single-leg position",
+      "Keep hips level",
+      "Switch legs"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Extended leg dropping",
+      "Hips tilting",
+      "Standing too high",
+      "**Contraindications:** Knee pain",
+      "**Programming:** 3 sets x 20-40 seconds each leg, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA058",
+    "name_en": "Touchdown Lunge",
+    "name_ar": "Touchdown Lunge (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Reverse lunge",
+      "Reach opposite hand to front foot",
+      "Touch floor if possible",
+      "Drive back to standing",
+      "Alternate sides"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not reaching low enough",
+      "Balance issues",
+      "Rushing",
+      "**Contraindications:** Balance problems",
+      "**Programming:** 3 sets x 10-12 each side, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA059",
+    "name_en": "Squat Jump to Lunge",
+    "name_ar": "Squat Jump to Lunge (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in squat",
+      "Jump up",
+      "Land in lunge position",
+      "Jump back to squat",
+      "Alternate lunge legs"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hard landings",
+      "Shallow positions",
+      "Losing form",
+      "**Contraindications:** Knee/ankle issues",
+      "**Programming:** 3 sets x 8-10 total, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA060",
+    "name_en": "Sumo Squat Pulse",
+    "name_ar": "Sumo Squat Pulse (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Wide stance sumo squat",
+      "Hold at bottom",
+      "Small pulse movements",
+      "Stay low throughout",
+      "Maintain tension"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rising too high",
+      "Knees caving",
+      "Poor posture",
+      "**Contraindications:** Hip issues",
+      "**Programming:** 3 sets x 20-30 pulses, 2x/week",
+      "--",
+      "## UPPER BODY PULLING (CREATIVE)"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA061",
+    "name_en": "Door Row (with towel)",
+    "name_ar": "Door Row (with towel) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Loop towel over door knobs",
+      "Feet against door base",
+      "Lean back, arms extended",
+      "Pull chest toward door",
+      "Control descent"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Door not secure",
+      "Not leaning back enough",
+      "Jerky movement",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3-4 sets x 12-20 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA062",
+    "name_en": "Bedsheet Row",
+    "name_ar": "Bedsheet Row (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Sheet over door or bar",
+      "Grip both ends",
+      "Lean back, body straight",
+      "Pull chest to hands",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Unstable anchor",
+      "Body not straight",
+      "Hips sagging",
+      "**Contraindications:** Shoulder injury",
+      "**Programming:** 3-4 sets x 10-15 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA063",
+    "name_en": "Sliding Lat Pulldown",
+    "name_ar": "Sliding Lat Pulldown (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie face down, arms extended",
+      "Hands on sliders or towels",
+      "Pull hands toward hips",
+      "Lift chest slightly",
+      "Extend arms back out"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using momentum",
+      "Not engaging lats",
+      "Incomplete range",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA064",
+    "name_en": "Superman with Lat Squeeze",
+    "name_ar": "Superman with Lat Squeeze (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Superman position",
+      "Pull elbows down and back",
+      "Squeeze shoulder blades",
+      "Hold squeeze",
+      "Extend arms, repeat"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not squeezing fully",
+      "Losing superman position",
+      "Rushing",
+      "**Contraindications:** Lower back pain",
+      "**Programming:** 3 sets x 12-15 reps, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA065",
+    "name_en": "Table Pull-Up",
+    "name_ar": "Table Pull-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie under table edge",
+      "Grip edge, body straight",
+      "Pull chest to table",
+      "Lower with control",
+      "Keep body rigid"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Table not stable",
+      "Hips sagging",
+      "Partial range of motion",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3-4 sets x 10-15 reps, 2-3x/week",
+      "--",
+      "## PARTNER EXERCISES (NO EQUIPMENT)"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA066",
+    "name_en": "Partner Push-Up High Five",
+    "name_ar": "Partner Push-Up High Five (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Face partner in push-up position",
+      "Perform push-up",
+      "At top, high-five opposite hands",
+      "Lower and repeat",
+      "Coordinate with partner"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Losing balance",
+      "Not syncing with partner",
+      "Poor push-up form",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA067",
+    "name_en": "Partner Squat Hold",
+    "name_ar": "Partner Squat Hold (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Face partner, hold hands",
+      "Both squat simultaneously",
+      "Hold bottom position",
+      "Use each other for balance",
+      "Stand together"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Pulling partner off balance",
+      "Not going deep enough",
+      "Poor coordination",
+      "**Contraindications:** Knee issues",
+      "**Programming:** 3-4 sets x 30-60 seconds, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA068",
+    "name_en": "Partner Wheelbarrow",
+    "name_ar": "Partner Wheelbarrow (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "One in push-up position",
+      "Partner holds ankles",
+      "Walk forward on hands",
+      "Keep body rigid",
+      "Partner walks behind"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips sagging",
+      "Moving too fast",
+      "Poor grip",
+      "**Contraindications:** Wrist/shoulder issues",
+      "**Programming:** 3 sets x 30-60 seconds, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA069",
+    "name_en": "Partner Leg Throw",
+    "name_ar": "Partner Leg Throw (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie down, grip partner's ankles",
+      "Lift legs toward partner",
+      "Partner throws legs down",
+      "Control descent, don't touch floor",
+      "Repeat immediately"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Legs hitting floor",
+      "Back arching",
+      "Partner throwing too hard",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA070",
+    "name_en": "Partner Plank Challenge",
+    "name_ar": "Partner Plank Challenge (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Both in plank position, facing",
+      "Try to slap partner's hands",
+      "Defend your own hands",
+      "Keep plank form",
+      "Compete for duration"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Breaking plank form",
+      "Becoming too aggressive",
+      "Losing focus on core",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3 sets x 30-60 seconds, 2x/week",
+      "--",
+      "## MARTIAL ARTS INSPIRED (NO EQUIPMENT)"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA071",
+    "name_en": "Shadow Boxing (Basic)",
+    "name_ar": "Shadow Boxing (Basic) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Fighting stance",
+      "Throw punches at air",
+      "Include jab, cross, hook, uppercut",
+      "Move feet, stay light",
+      "Keep hands up"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Dropping hands",
+      "Poor stance",
+      "No hip rotation",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3-5 rounds x 2-3 minutes, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA072",
+    "name_en": "Front Kick (Teep)",
+    "name_ar": "Front Kick (Teep) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Fighting stance",
+      "Chamber knee up",
+      "Extend leg, push with ball of foot",
+      "Retract quickly",
+      "Maintain balance"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not chambering knee",
+      "Losing balance",
+      "Slow retraction",
+      "**Contraindications:** Hip issues",
+      "**Programming:** 3 sets x 10-15 each leg, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA073",
+    "name_en": "Roundhouse Kick (Air)",
+    "name_ar": "Roundhouse Kick (Air) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Fighting stance",
+      "Pivot on base foot",
+      "Rotate hip through",
+      "Kick with shin or instep",
+      "Return to stance"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not pivoting",
+      "Poor hip rotation",
+      "Balance issues",
+      "**Contraindications:** Hip/knee problems",
+      "**Programming:** 3 sets x 10-12 each leg, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA074",
+    "name_en": "Sprawl",
+    "name_ar": "Sprawl (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "From standing",
+      "Kick legs back, hips to floor",
+      "Chest stays up",
+      "Immediately return to standing",
+      "Quick, explosive movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips staying high",
+      "Slow recovery",
+      "Poor position",
+      "**Contraindications:** Shoulder/hip issues",
+      "**Programming:** 3-4 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA075",
+    "name_en": "Knee Strike (Air)",
+    "name_ar": "Knee Strike (Air) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Fighting stance",
+      "Drive knee upward",
+      "Pull arms down",
+      "Hip thrust into strike",
+      "Return to stance"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Leaning back",
+      "No hip engagement",
+      "Poor balance",
+      "**Contraindications:** Hip issues",
+      "**Programming:** 3 sets x 12-15 each leg, 2x/week",
+      "--",
+      "## FLEXIBILITY/MOBILITY"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA076",
+    "name_en": "90/90 Hip Switch",
+    "name_ar": "90/90 Hip Switch (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Sit in 90/90 hip position",
+      "Lift and switch to opposite side",
+      "Knees stay at 90 degrees",
+      "Try to keep knees down",
+      "Fluid motion"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using hands too much",
+      "Knees lifting high",
+      "Rushing",
+      "**Contraindications:** Hip impingement",
+      "**Programming:** 2-3 sets x 10 switches, daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA077",
+    "name_en": "Pigeon Stretch (Dynamic)",
+    "name_ar": "Pigeon Stretch (Dynamic) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Pigeon pose position",
+      "Rock forward and back gently",
+      "Don't force depth",
+      "Switch sides",
+      "Breathe into stretch"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Forcing position",
+      "Poor hip alignment",
+      "Holding breath",
+      "**Contraindications:** Knee pain in position",
+      "**Programming:** 2-3 minutes each side, daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA078",
+    "name_en": "Squat to Forward Fold",
+    "name_ar": "Squat to Forward Fold (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Deep squat, hold toes",
+      "Straighten legs, keeping hold",
+      "Feel hamstring stretch",
+      "Return to squat",
+      "Repeat fluidly"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Releasing toes",
+      "Not straightening fully",
+      "Rushing",
+      "**Contraindications:** Hamstring strain",
+      "**Programming:** 2-3 sets x 8-10 reps, daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA079",
+    "name_en": "Standing Figure-4 Stretch",
+    "name_ar": "Standing Figure-4 Stretch (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand on one leg",
+      "Cross opposite ankle over knee",
+      "Sit back into stretch",
+      "Use wall for balance if needed",
+      "Hold and switch"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rounding back",
+      "Losing balance",
+      "Not sitting back enough",
+      "**Contraindications:** Knee issues",
+      "**Programming:** 30-60 seconds each side, daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA080",
+    "name_en": "Thoracic Spine Rotation (Lying)",
+    "name_ar": "Thoracic Spine Rotation (Lying) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on side, knees stacked",
+      "Top arm reaches toward ceiling",
+      "Rotate to reach behind",
+      "Follow with eyes",
+      "Return and repeat"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips rotating",
+      "Not following with eyes",
+      "Forcing range",
+      "**Contraindications:** Disc issues",
+      "**Programming:** 10-15 each side, daily",
+      "--",
+      "## REGRESSION/BEGINNER OPTIONS"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA081",
+    "name_en": "Wall Push-Up",
+    "name_ar": "Wall Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hands on wall, arms extended",
+      "Lean forward, bending elbows",
+      "Push back to start",
+      "Keep body straight",
+      "Progress to lower surfaces"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips bending",
+      "Hands too high",
+      "Partial range",
+      "**Contraindications:** Wrist pain",
+      "**Programming:** 3-4 sets x 15-20 reps, daily if needed"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA082",
+    "name_en": "Assisted Squat (Holding Support)",
+    "name_ar": "Assisted Squat (Holding Support) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold onto support",
+      "Squat down, using support minimally",
+      "Keep chest up",
+      "Drive through heels",
+      "Use less support over time"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Relying too heavily on support",
+      "Not going deep enough",
+      "Poor posture",
+      "**Contraindications:** None significant",
+      "**Programming:** 3-4 sets x 12-20 reps, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA083",
+    "name_en": "Kneeling Push-Up",
+    "name_ar": "Kneeling Push-Up (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Knees on floor, ankles crossed",
+      "Hands shoulder-width",
+      "Lower chest toward floor",
+      "Push back up",
+      "Keep body straight from knees"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips sagging",
+      "Not going low enough",
+      "Hands too far forward",
+      "**Contraindications:** Wrist/knee pain",
+      "**Programming:** 3-4 sets x 10-15 reps, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA084",
+    "name_en": "Half Squat",
+    "name_ar": "Half Squat (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Partial depth squat",
+      "Go halfway down",
+      "Focus on form over depth",
+      "Progress to full squats",
+      "Keep knees tracking toes"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Going too deep too soon",
+      "Poor knee tracking",
+      "Rushing",
+      "**Contraindications:** Knee pain",
+      "**Programming:** 3-4 sets x 15-20 reps, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA085",
+    "name_en": "Standing Calf Raise (Single-Leg)",
+    "name_ar": "Standing Calf Raise (Single-Leg) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand on one leg",
+      "Rise up on toes",
+      "Hold at top",
+      "Lower with control",
+      "Use wall for balance"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Partial range",
+      "Bouncing",
+      "Poor balance",
+      "**Contraindications:** Achilles problems",
+      "**Programming:** 4-5 sets x 15-25 each leg, 3x/week",
+      "--",
+      "## ADVANCED GYMNASTICS-INSPIRED"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA086",
+    "name_en": "Skin the Cat (Partial)",
+    "name_ar": "Skin the Cat (Partial) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hang from bar",
+      "Tuck knees, rotate backward",
+      "Go as far as comfortable",
+      "Return to hang",
+      "Build range gradually"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Going too far too soon",
+      "No control",
+      "Shoulder strain",
+      "**Contraindications:** Shoulder problems",
+      "**Programming:** 3 sets x 3-5 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA087",
+    "name_en": "V-Sit Hold",
+    "name_ar": "V-Sit Hold (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Similar to L-sit but legs higher",
+      "Form acute V angle",
+      "Extreme hip flexor strength required",
+      "Shoulders depressed",
+      "Hold position"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Legs too low (just L-sit)",
+      "Rounding back",
+      "Holding breath",
+      "**Contraindications:** Hip flexor strain",
+      "**Programming:** 3-5 sets x 5-15 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA088",
+    "name_en": "Tuck Front Lever Raise",
+    "name_ar": "Tuck Front Lever Raise (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hang from bar",
+      "Raise body to tuck front lever",
+      "Lower with control",
+      "Keep arms straight",
+      "Engage lats throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Arms bending",
+      "Using momentum",
+      "Poor body position",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3-5 sets x 3-5 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA089",
+    "name_en": "Straight Arm Planche Lean",
+    "name_ar": "Straight Arm Planche Lean (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Plank with arms straight",
+      "Lean forward maximally",
+      "Protract shoulder blades",
+      "Hold lean",
+      "Progress lean over time"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Arms bending",
+      "Not enough lean",
+      "Hips sagging",
+      "**Contraindications:** Wrist/shoulder issues",
+      "**Programming:** 5-6 sets x 10-30 seconds, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA090",
+    "name_en": "Straddle L-Sit",
+    "name_ar": "Straddle L-Sit (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "L-sit with legs spread wide",
+      "Requires good flexibility",
+      "Slightly easier than pike L-sit",
+      "Shoulders depressed",
+      "Hold position"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Legs too close together",
+      "Back rounding",
+      "Shoulders shrugging",
+      "**Contraindications:** Hip/groin issues",
+      "**Programming:** 3-5 sets x 10-30 seconds, 3x/week",
+      "--",
+      "## ADDITIONAL FUNCTIONAL MOVEMENTS"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA091",
+    "name_en": "Turkish Get-Up (Unloaded)",
+    "name_ar": "Turkish Get-Up (Unloaded) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie down, one arm extended up",
+      "Follow TGU sequence",
+      "Keep arm vertical throughout",
+      "Stand fully, then reverse",
+      "Control every position"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rushing",
+      "Arm dropping",
+      "Skipping positions",
+      "**Contraindications:** Shoulder instability",
+      "**Programming:** 3 sets x 3-5 each side, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA092",
+    "name_en": "Get-Up from Ground (Various)",
+    "name_ar": "Get-Up from Ground (Various) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on ground",
+      "Stand up without using hands",
+      "Find efficient patterns",
+      "Practice different methods",
+      "Get back down without hands"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using hands",
+      "Same pattern every time",
+      "Losing balance",
+      "**Contraindications:** Balance issues",
+      "**Programming:** 3 sets x 5-10 reps, 3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA093",
+    "name_en": "Rolling Patterns",
+    "name_ar": "Rolling Patterns (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Practice forward rolls",
+      "Practice backward rolls",
+      "Practice side rolls",
+      "Control movement",
+      "Stay tucked appropriately"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Going too fast",
+      "Poor surface",
+      "Not tucking",
+      "**Contraindications:** Neck issues",
+      "**Programming:** 3 sets x 5 each direction, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA094",
+    "name_en": "Cossack Squat to Lateral Lunge Flow",
+    "name_ar": "Cossack Squat to Lateral Lunge Flow (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Cossack squat to one side",
+      "Shift to lateral lunge",
+      "Flow back and forth",
+      "Don't stand between transitions",
+      "Continuous movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Standing up between reps",
+      "Poor depth",
+      "Losing balance",
+      "**Contraindications:** Hip/groin issues",
+      "**Programming:** 3 sets x 6-8 flows each side, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA095",
+    "name_en": "World's Greatest Stretch Flow",
+    "name_ar": "World's Greatest Stretch Flow (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lunge, hands down",
+      "Elbow to instep",
+      "Rotate, reach toward ceiling",
+      "Straighten front leg (hamstring)",
+      "Flow through continuously"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Skipping positions",
+      "Rushing",
+      "Not rotating enough",
+      "**Contraindications:** None significant",
+      "**Programming:** 5-8 flows each side, daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA096",
+    "name_en": "Spinal Wave (Cat/Cow Flow)",
+    "name_ar": "Spinal Wave (Cat/Cow Flow) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "All fours position",
+      "Sequentially flex spine from head to tail",
+      "Then extend from tail to head",
+      "Create wave-like motion",
+      "Slow, controlled movement"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Moving too fast",
+      "Moving entire spine at once",
+      "Holding breath",
+      "**Contraindications:** Acute back pain",
+      "**Programming:** 2-3 minutes continuous, daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA097",
+    "name_en": "Yoga Sun Salutation (Modified)",
+    "name_ar": "Yoga Sun Salutation (Modified) (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Mountain pose to forward fold",
+      "Step or jump to plank",
+      "Lower through chaturanga",
+      "Upward dog to downward dog",
+      "Return to standing"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rushing through poses",
+      "Poor alignment",
+      "Skipping breath work",
+      "**Contraindications:** Wrist/shoulder issues",
+      "**Programming:** 5-10 rounds, daily"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA098",
+    "name_en": "Ground-Based Flow Sequence",
+    "name_ar": "Ground-Based Flow Sequence (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Combine ground movements",
+      "Sit-throughs, crab walks, rolls",
+      "Create flowing sequence",
+      "Transition smoothly",
+      "Stay low throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Disconnected movements",
+      "Standing up",
+      "Rushing",
+      "**Contraindications:** Joint issues",
+      "**Programming:** 5-10 minutes continuous, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA099",
+    "name_en": "Primal Movement Complex",
+    "name_ar": "Primal Movement Complex (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bear crawl → Crab walk → Frog jump",
+      "Combine animal movements",
+      "Flow between patterns",
+      "Vary directions",
+      "Maintain quality"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Sloppy transitions",
+      "Moving too fast",
+      "Losing form when fatigued",
+      "**Contraindications:** Various joint issues",
+      "**Programming:** 5-10 minutes continuous, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  },
+  {
+    "id": "BWA100",
+    "name_en": "Movement Exploration",
+    "name_ar": "Movement Exploration (AR)",
+    "description_en": "A bodyweight exercise focusing on the bodyweight-advanced.",
+    "description_ar": "تمرين bodyweight يركز على bodyweight-advanced.",
+    "category": "BODYWEIGHT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Move freely without structure",
+      "Explore range of motion",
+      "Roll, crawl, reach, twist",
+      "Find new movement patterns",
+      "Listen to your body"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Being too rigid",
+      "Forcing movements",
+      "Not exploring fully",
+      "**Contraindications:** Depends on movements chosen",
+      "**Programming:** 10-15 minutes, daily",
+      "--",
+      "## Programming Recommendations"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "bodyweight",
+      "bodyweight-advanced"
+    ]
+  }
+]

@@ -1,12 +1,12 @@
 [
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A core exercise focusing on the muscles.",
-    "description_ar": "تمرين core يركز على muscles.",
+    "id": "DC001",
+    "name_en": "Diaphragmatic Breathing",
+    "name_ar": "Diaphragmatic Breathing (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
     "category": "CORE",
-    "primary_muscle": "ABS",
+    "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
       "BODYWEIGHT"
@@ -31,17 +31,17 @@
     "default_rest": 60,
     "tags": [
       "core",
-      "bodyweight"
+      "deep-core"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A core exercise focusing on the muscles.",
-    "description_ar": "تمرين core يركز على muscles.",
+    "id": "DC002",
+    "name_en": "Crocodile Breathing",
+    "name_ar": "Crocodile Breathing (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
     "category": "CORE",
-    "primary_muscle": "ABS",
+    "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
       "BODYWEIGHT"
@@ -66,17 +66,17 @@
     "default_rest": 60,
     "tags": [
       "core",
-      "bodyweight"
+      "deep-core"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A core exercise focusing on the muscles.",
-    "description_ar": "تمرين core يركز على muscles.",
+    "id": "DC003",
+    "name_en": "90/90 Breathing",
+    "name_ar": "90/90 Breathing (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
     "category": "CORE",
-    "primary_muscle": "ABS",
+    "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
       "BODYWEIGHT"
@@ -101,17 +101,17 @@
     "default_rest": 60,
     "tags": [
       "core",
-      "bodyweight"
+      "deep-core"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A core exercise focusing on the muscles.",
-    "description_ar": "تمرين core يركز على muscles.",
+    "id": "DC004",
+    "name_en": "Dead Bug Breathing",
+    "name_ar": "Dead Bug Breathing (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
     "category": "CORE",
-    "primary_muscle": "ABS",
+    "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
       "BODYWEIGHT"
@@ -136,17 +136,17 @@
     "default_rest": 60,
     "tags": [
       "core",
-      "bodyweight"
+      "deep-core"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A core exercise focusing on the muscles.",
-    "description_ar": "تمرين core يركز على muscles.",
+    "id": "DC005",
+    "name_en": "Quadruped Breathing",
+    "name_ar": "Quadruped Breathing (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
     "category": "CORE",
-    "primary_muscle": "ABS",
+    "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
       "BODYWEIGHT"
@@ -171,17 +171,17 @@
     "default_rest": 60,
     "tags": [
       "core",
-      "bodyweight"
+      "deep-core"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A core exercise focusing on the muscles.",
-    "description_ar": "تمرين core يركز على muscles.",
+    "id": "DC006",
+    "name_en": "Supine Stomach Vacuum",
+    "name_ar": "Supine Stomach Vacuum (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
     "category": "CORE",
-    "primary_muscle": "ABS",
+    "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
       "BODYWEIGHT"
@@ -206,17 +206,17 @@
     "default_rest": 60,
     "tags": [
       "core",
-      "bodyweight"
+      "deep-core"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A core exercise focusing on the muscles.",
-    "description_ar": "تمرين core يركز على muscles.",
+    "id": "DC007",
+    "name_en": "Quadruped Stomach Vacuum",
+    "name_ar": "Quadruped Stomach Vacuum (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
     "category": "CORE",
-    "primary_muscle": "ABS",
+    "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
       "BODYWEIGHT"
@@ -241,17 +241,17 @@
     "default_rest": 60,
     "tags": [
       "core",
-      "bodyweight"
+      "deep-core"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A core exercise focusing on the muscles.",
-    "description_ar": "تمرين core يركز على muscles.",
+    "id": "DC008",
+    "name_en": "Standing Stomach Vacuum",
+    "name_ar": "Standing Stomach Vacuum (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
     "category": "CORE",
-    "primary_muscle": "ABS",
+    "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
       "BODYWEIGHT"
@@ -276,7 +276,2002 @@
     "default_rest": 60,
     "tags": [
       "core",
-      "bodyweight"
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC009",
+    "name_en": "Seated Stomach Vacuum",
+    "name_ar": "Seated Stomach Vacuum (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC010",
+    "name_en": "Kneeling Stomach Vacuum",
+    "name_ar": "Kneeling Stomach Vacuum (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC011",
+    "name_en": "Basic Dead Bug",
+    "name_ar": "Basic Dead Bug (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC012",
+    "name_en": "Dead Bug Arms Only",
+    "name_ar": "Dead Bug Arms Only (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC013",
+    "name_en": "Dead Bug Legs Only",
+    "name_ar": "Dead Bug Legs Only (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC014",
+    "name_en": "Dead Bug with Band",
+    "name_ar": "Dead Bug with Band (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC015",
+    "name_en": "Dead Bug with Physioball Press",
+    "name_ar": "Dead Bug with Physioball Press (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC016",
+    "name_en": "Dead Bug Pullover",
+    "name_ar": "Dead Bug Pullover (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC017",
+    "name_en": "Dead Bug with Heel Slides",
+    "name_ar": "Dead Bug with Heel Slides (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC018",
+    "name_en": "Basic Bird Dog",
+    "name_ar": "Basic Bird Dog (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC019",
+    "name_en": "Bird Dog with Crunch",
+    "name_ar": "Bird Dog with Crunch (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC020",
+    "name_en": "Bird Dog with Hold",
+    "name_ar": "Bird Dog with Hold (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC021",
+    "name_en": "Bird Dog with Resistance Band",
+    "name_ar": "Bird Dog with Resistance Band (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC022",
+    "name_en": "Bird Dog with Hip Circle",
+    "name_ar": "Bird Dog with Hip Circle (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC023",
+    "name_en": "Weighted Bird Dog",
+    "name_ar": "Weighted Bird Dog (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC024",
+    "name_en": "Bird Dog Row",
+    "name_ar": "Bird Dog Row (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC025",
+    "name_en": "RKC Plank (Hardstyle)",
+    "name_ar": "RKC Plank (Hardstyle) (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC026",
+    "name_en": "Long Lever Posterior Tilt Plank",
+    "name_ar": "Long Lever Posterior Tilt Plank (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC027",
+    "name_en": "Body Saw",
+    "name_ar": "Body Saw (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC028",
+    "name_en": "Stir the Pot",
+    "name_ar": "Stir the Pot (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC029",
+    "name_en": "Plank with Arm Lift",
+    "name_ar": "Plank with Arm Lift (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC030",
+    "name_en": "Plank with Leg Lift",
+    "name_ar": "Plank with Leg Lift (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC031",
+    "name_en": "Plank to Pike",
+    "name_ar": "Plank to Pike (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC032",
+    "name_en": "Kneeling Pallof Press",
+    "name_ar": "Kneeling Pallof Press (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC033",
+    "name_en": "Standing Pallof Press",
+    "name_ar": "Standing Pallof Press (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC034",
+    "name_en": "Split Stance Pallof Press",
+    "name_ar": "Split Stance Pallof Press (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC035",
+    "name_en": "Pallof Press with Rotation",
+    "name_ar": "Pallof Press with Rotation (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC036",
+    "name_en": "Pallof Press Overhead",
+    "name_ar": "Pallof Press Overhead (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC037",
+    "name_en": "Pallof Press with March",
+    "name_ar": "Pallof Press with March (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC038",
+    "name_en": "McGill Curl-Up",
+    "name_ar": "McGill Curl-Up (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC039",
+    "name_en": "McGill Side Plank",
+    "name_ar": "McGill Side Plank (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC040",
+    "name_en": "McGill Bird Dog",
+    "name_ar": "McGill Bird Dog (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC041",
+    "name_en": "Ab Wheel Rollout from Knees",
+    "name_ar": "Ab Wheel Rollout from Knees (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC042",
+    "name_en": "Stability Ball Rollout",
+    "name_ar": "Stability Ball Rollout (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC043",
+    "name_en": "Barbell Rollout",
+    "name_ar": "Barbell Rollout (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC044",
+    "name_en": "Standing Ab Wheel Rollout",
+    "name_ar": "Standing Ab Wheel Rollout (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC045",
+    "name_en": "Single Arm Rollout",
+    "name_ar": "Single Arm Rollout (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC046",
+    "name_en": "Hollow Body Hold",
+    "name_ar": "Hollow Body Hold (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC047",
+    "name_en": "Hollow Body Tuck",
+    "name_ar": "Hollow Body Tuck (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC048",
+    "name_en": "Hollow Body Rock",
+    "name_ar": "Hollow Body Rock (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC049",
+    "name_en": "Hollow Body Flutter Kicks",
+    "name_ar": "Hollow Body Flutter Kicks (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC050",
+    "name_en": "Farmer's Walk",
+    "name_ar": "Farmer's Walk (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC051",
+    "name_en": "Suitcase Carry",
+    "name_ar": "Suitcase Carry (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC052",
+    "name_en": "Overhead Carry",
+    "name_ar": "Overhead Carry (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC053",
+    "name_en": "Single Arm Overhead Carry",
+    "name_ar": "Single Arm Overhead Carry (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC054",
+    "name_en": "Waiter's Walk",
+    "name_ar": "Waiter's Walk (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC055",
+    "name_en": "Cross-Body Carry",
+    "name_ar": "Cross-Body Carry (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC056",
+    "name_en": "Side-Lying Hip Lift",
+    "name_ar": "Side-Lying Hip Lift (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC057",
+    "name_en": "Standing QL Side Bend",
+    "name_ar": "Standing QL Side Bend (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC058",
+    "name_en": "Quadruped QL Reach",
+    "name_ar": "Quadruped QL Reach (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC059",
+    "name_en": "Plank with Arm/Leg Reach",
+    "name_ar": "Plank with Arm/Leg Reach (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC060",
+    "name_en": "Half-Kneeling Chop",
+    "name_ar": "Half-Kneeling Chop (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC061",
+    "name_en": "Half-Kneeling Lift",
+    "name_ar": "Half-Kneeling Lift (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC062",
+    "name_en": "Rotating Plank",
+    "name_ar": "Rotating Plank (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC063",
+    "name_en": "Wall Sit with Abdominal Brace",
+    "name_ar": "Wall Sit with Abdominal Brace (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC064",
+    "name_en": "Supine Leg Lowering Isometric",
+    "name_ar": "Supine Leg Lowering Isometric (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
+    ]
+  },
+  {
+    "id": "DC065",
+    "name_en": "Quadruped Hold",
+    "name_ar": "Quadruped Hold (AR)",
+    "description_en": "A core exercise focusing on the deep-core.",
+    "description_ar": "تمرين core يركز على deep-core.",
+    "category": "CORE",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "core",
+      "deep-core"
     ]
   }
 ]

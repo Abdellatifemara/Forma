@@ -1,0 +1,542 @@
+[
+  {
+    "id": "SMT001",
+    "name_en": "Smith Machine Front Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT002",
+    "name_en": "Smith Machine Split Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT003",
+    "name_en": "Smith Machine Reverse Lunge",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT004",
+    "name_en": "Smith Machine Step Up",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT005",
+    "name_en": "Smith Machine Sissy Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT006",
+    "name_en": "Smith Machine Kaz Press",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": ["CHEST"],
+    "equipment": ["MACHINES", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT007",
+    "name_en": "Smith Machine Incline Press (Wide Grip)",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["SHOULDERS"],
+    "equipment": ["MACHINES", "BENCH"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT008",
+    "name_en": "Smith Machine Bench Press (Wide Grip)",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["MACHINES", "BENCH"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT009",
+    "name_en": "Smith Machine Behind Neck Press",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT010",
+    "name_en": "Smith Machine Seated Shoulder Press",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT011",
+    "name_en": "Smith Machine Row (Overhand)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT012",
+    "name_en": "Smith Machine Row (Underhand)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT013",
+    "name_en": "Smith Machine Drag Curl",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT014",
+    "name_en": "Smith Machine Inverted Row",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT015",
+    "name_en": "Smith Machine Good Morning",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT016",
+    "name_en": "Smith Machine Stiff Leg Deadlift",
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": ["GLUTES", "LOWER_BACK"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT017",
+    "name_en": "Smith Machine Donkey Kick",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT018",
+    "name_en": "Smith Machine Calf Raise (Toes In)",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT019",
+    "name_en": "Smith Machine Calf Raise (Toes Out)",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "SMT020",
+    "name_en": "Smith Machine Single Leg Calf Raise",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT001",
+    "name_en": "Thruster",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "QUADRICEPS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT002",
+    "name_en": "Dumbbell Thruster",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "QUADRICEPS", "GLUTES"],
+    "equipment": ["DUMBBELLS"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT003",
+    "name_en": "Wall Ball",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "QUADRICEPS", "GLUTES"],
+    "equipment": ["STABILITY_BALL"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT004",
+    "name_en": "Sumo Deadlift High Pull",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["BACK", "SHOULDERS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT005",
+    "name_en": "Kettlebell Sumo Deadlift High Pull",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["BACK", "SHOULDERS", "GLUTES"],
+    "equipment": ["KETTLEBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT006",
+    "name_en": "Devil Press",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "CHEST", "BACK"],
+    "equipment": ["DUMBBELLS"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT007",
+    "name_en": "Man Maker",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "CHEST", "BACK"],
+    "equipment": ["DUMBBELLS"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT008",
+    "name_en": "Cluster",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "QUADRICEPS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "CFT009",
+    "name_en": "Bear Complex",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT010",
+    "name_en": "Double Under",
+    "primary_muscle": "CARDIO",
+    "secondary_muscles": ["CALVES", "SHOULDERS"],
+    "equipment": ["JUMP_ROPE"],
+    "difficulty": "INTERMEDIATE",
+    "category": "CARDIO"
+  },
+  {
+    "id": "CFT011",
+    "name_en": "Triple Under",
+    "primary_muscle": "CARDIO",
+    "secondary_muscles": ["CALVES", "SHOULDERS"],
+    "equipment": ["JUMP_ROPE"],
+    "difficulty": "ADVANCED",
+    "category": "CARDIO"
+  },
+  {
+    "id": "CFT012",
+    "name_en": "Toes to Bar",
+    "primary_muscle": "ABS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["PULL_UP_BAR"],
+    "difficulty": "INTERMEDIATE",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT013",
+    "name_en": "Knees to Elbows",
+    "primary_muscle": "ABS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["PULL_UP_BAR"],
+    "difficulty": "INTERMEDIATE",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT014",
+    "name_en": "Kipping Pull-Up",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS", "ABS"],
+    "equipment": ["PULL_UP_BAR"],
+    "difficulty": "INTERMEDIATE",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT015",
+    "name_en": "Butterfly Pull-Up",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS", "ABS"],
+    "equipment": ["PULL_UP_BAR"],
+    "difficulty": "ADVANCED",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT016",
+    "name_en": "Chest to Bar Pull-Up",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["PULL_UP_BAR"],
+    "difficulty": "ADVANCED",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT017",
+    "name_en": "Bar Muscle-Up",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["CHEST", "TRICEPS"],
+    "equipment": ["PULL_UP_BAR"],
+    "difficulty": "ADVANCED",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT018",
+    "name_en": "Ring Muscle-Up",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["CHEST", "TRICEPS"],
+    "equipment": ["TRX"],
+    "difficulty": "ADVANCED",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT019",
+    "name_en": "Ring Dip",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": ["CHEST", "SHOULDERS"],
+    "equipment": ["TRX"],
+    "difficulty": "INTERMEDIATE",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT020",
+    "name_en": "Strict Ring Muscle-Up",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["CHEST", "TRICEPS"],
+    "equipment": ["TRX"],
+    "difficulty": "EXPERT",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT021",
+    "name_en": "Handstand Push-Up (Wall)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "ADVANCED",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT022",
+    "name_en": "Handstand Push-Up (Strict)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "EXPERT",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT023",
+    "name_en": "Kipping Handstand Push-Up",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS", "ABS"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "ADVANCED",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT024",
+    "name_en": "Deficit Handstand Push-Up",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "EXPERT",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT025",
+    "name_en": "Pistol Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "ADVANCED",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT026",
+    "name_en": "Weighted Pistol Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["DUMBBELLS", "KETTLEBELL"],
+    "difficulty": "EXPERT",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT027",
+    "name_en": "Box Pistol Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "INTERMEDIATE",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT028",
+    "name_en": "Rope Climb (Legless)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS", "FOREARMS"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "ADVANCED",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT029",
+    "name_en": "Rope Climb (With Legs)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS", "QUADRICEPS"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "INTERMEDIATE",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT030",
+    "name_en": "Pegboard Climb",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS", "FOREARMS"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "EXPERT",
+    "category": "CALISTHENICS"
+  },
+  {
+    "id": "CFT031",
+    "name_en": "GHD Sit-Up",
+    "primary_muscle": "ABS",
+    "secondary_muscles": ["LOWER_BACK"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT032",
+    "name_en": "GHD Hip Extension",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT033",
+    "name_en": "GHD Back Extension",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT034",
+    "name_en": "Assault Bike Sprint",
+    "primary_muscle": "CARDIO",
+    "secondary_muscles": ["QUADRICEPS", "SHOULDERS"],
+    "equipment": ["BIKE"],
+    "difficulty": "INTERMEDIATE",
+    "category": "CARDIO"
+  },
+  {
+    "id": "CFT035",
+    "name_en": "Ski Erg",
+    "primary_muscle": "CARDIO",
+    "secondary_muscles": ["BACK", "SHOULDERS", "ABS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "CARDIO"
+  },
+  {
+    "id": "CFT036",
+    "name_en": "Sled Push",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "CALVES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT037",
+    "name_en": "Sled Pull",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS", "HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT038",
+    "name_en": "Sled Drag (Backwards)",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT039",
+    "name_en": "Farmer's Walk",
+    "primary_muscle": "FOREARMS",
+    "secondary_muscles": ["SHOULDERS", "BACK"],
+    "equipment": ["DUMBBELLS", "KETTLEBELL"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "CFT040",
+    "name_en": "Farmer's Walk (Trap Bar)",
+    "primary_muscle": "FOREARMS",
+    "secondary_muscles": ["SHOULDERS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  }
+]

@@ -1,0 +1,3463 @@
+[
+  {
+    "id": "BB001",
+    "name_en": "Barbell Bench Press",
+    "name_ar": "Barbell Bench Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Retract and depress scapulae",
+      "Arch back slightly, feet flat",
+      "Lower bar to mid-chest level",
+      "Press up and slightly back",
+      "Keep wrists stacked over elbows"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bouncing bar off chest",
+      "Flaring elbows excessively",
+      "Lifting hips off bench",
+      "Uneven bar path",
+      "**Contraindications:** Acute shoulder injury, shoulder impingement",
+      "**Programming:** 3-5 sets x 3-8 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB002",
+    "name_en": "Incline Barbell Press",
+    "name_ar": "Incline Barbell Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Set bench to 30-45 degree angle",
+      "Plant feet firmly on floor",
+      "Lower bar to upper chest",
+      "Press in slight arc toward face",
+      "Maintain tight upper back"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bench angle too steep (becomes shoulder press)",
+      "Lifting hips off bench",
+      "Bar path too vertical",
+      "**Contraindications:** Shoulder impingement, AC joint issues",
+      "**Programming:** 3-4 sets x 6-10 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB003",
+    "name_en": "Decline Barbell Press",
+    "name_ar": "Decline Barbell Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Secure legs under pads",
+      "Lower bar to lower chest",
+      "Press up and slightly toward head",
+      "Keep shoulder blades retracted",
+      "Maintain core tension"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Excessive decline angle",
+      "Bouncing bar off chest",
+      "Not securing legs properly",
+      "**Contraindications:** High blood pressure, glaucoma, recent head injury",
+      "**Programming:** 3-4 sets x 6-10 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB004",
+    "name_en": "Close-Grip Bench Press",
+    "name_ar": "Close-Grip Bench Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Grip shoulder-width or slightly narrower",
+      "Keep elbows closer to body",
+      "Lower bar to lower chest",
+      "Focus on triceps contraction",
+      "Lock out fully at top"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Grip too narrow (wrist strain)",
+      "Flaring elbows out wide",
+      "Incomplete range of motion",
+      "**Contraindications:** Wrist injuries, elbow tendinitis",
+      "**Programming:** 3-4 sets x 8-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB005",
+    "name_en": "Floor Press",
+    "name_ar": "Floor Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on floor with knees bent or legs straight",
+      "Lower until triceps touch floor",
+      "Pause briefly, then press up",
+      "Maintain shoulder blade retraction",
+      "Keep core engaged throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bouncing arms off floor",
+      "Losing shoulder position",
+      "Arching excessively",
+      "**Contraindications:** Shoulder instability",
+      "**Programming:** 3-4 sets x 6-10 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB006",
+    "name_en": "Guillotine Press",
+    "name_ar": "Guillotine Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Use lighter weight than standard bench",
+      "Lower bar toward neck/upper chest",
+      "Elbows flared at 90 degrees",
+      "Control descent completely",
+      "Press up in reverse arc"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using too heavy weight",
+      "Losing control of bar",
+      "Not having spotter",
+      "**Contraindications:** Shoulder problems, neck issues",
+      "**Programming:** 3 sets x 8-12 reps, 1x/week (with spotter)",
+      "--",
+      "## BACK EXERCISES"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB007",
+    "name_en": "Barbell Bent-Over Row",
+    "name_ar": "Barbell Bent-Over Row (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hinge at hips to 45-degree angle",
+      "Keep back flat, core braced",
+      "Pull bar to lower chest/upper abdomen",
+      "Squeeze shoulder blades together",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Excessive body English",
+      "Rounding lower back",
+      "Standing too upright",
+      "Pulling with arms only",
+      "**Contraindications:** Acute lower back injury",
+      "**Programming:** 3-5 sets x 6-12 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB008",
+    "name_en": "Pendlay Row",
+    "name_ar": "Pendlay Row (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start with bar on floor each rep",
+      "Back parallel to ground",
+      "Explosively pull bar to chest",
+      "Lower under control to floor",
+      "Reset position each rep"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not touching floor each rep",
+      "Raising torso during pull",
+      "Using momentum",
+      "**Contraindications:** Lower back injuries, disc issues",
+      "**Programming:** 3-5 sets x 5-8 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB009",
+    "name_en": "T-Bar Row",
+    "name_ar": "T-Bar Row (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Straddle bar with feet wide",
+      "Hinge at hips, neutral spine",
+      "Pull toward chest/abdomen",
+      "Squeeze at top position",
+      "Control the negative"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Excessive hip movement",
+      "Rounding upper back",
+      "Using arm momentum",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3-4 sets x 8-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB010",
+    "name_en": "Barbell Shrug",
+    "name_ar": "Barbell Shrug (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold bar at hip level, arms straight",
+      "Elevate shoulders straight up",
+      "Hold contraction at top",
+      "Lower slowly with control",
+      "Keep chin neutral"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rolling shoulders (unnecessary)",
+      "Using momentum",
+      "Shrugging too fast",
+      "**Contraindications:** Neck injuries, cervical issues",
+      "**Programming:** 3-4 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB011",
+    "name_en": "Seal Row",
+    "name_ar": "Seal Row (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie face down on elevated bench",
+      "Arms hanging straight down",
+      "Pull bar to bench/chest",
+      "Squeeze shoulder blades together",
+      "Lower with full control"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bench too low",
+      "Using body momentum",
+      "Incomplete range of motion",
+      "**Contraindications:** Rib injuries",
+      "**Programming:** 3-4 sets x 8-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB012",
+    "name_en": "Meadows Row",
+    "name_ar": "Meadows Row (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand perpendicular to landmine",
+      "Staggered stance, hinge forward",
+      "Pull end of bar toward hip",
+      "Drive elbow back and up",
+      "Control eccentric portion"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Standing too far from bar",
+      "Not hinging enough",
+      "Rotating torso excessively",
+      "**Contraindications:** Lower back injuries",
+      "**Programming:** 3-4 sets x 8-12 reps each side, 1x/week",
+      "--",
+      "## SHOULDER EXERCISES"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB013",
+    "name_en": "Standing Overhead Press",
+    "name_ar": "Standing Overhead Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start bar at clavicle level",
+      "Brace core, squeeze glutes",
+      "Press bar overhead in straight line",
+      "Move head through at top",
+      "Lower with control to shoulders"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Excessive back arch",
+      "Bar drifting forward",
+      "Not bracing core",
+      "Incomplete lockout",
+      "**Contraindications:** Shoulder impingement, lower back issues",
+      "**Programming:** 3-5 sets x 5-10 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB014",
+    "name_en": "Push Press",
+    "name_ar": "Push Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in front rack position",
+      "Dip knees slightly (quarter squat)",
+      "Explosively drive through legs",
+      "Press bar overhead",
+      "Catch with locked arms"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Dip too deep",
+      "Not using leg drive",
+      "Pressing before drive completes",
+      "**Contraindications:** Knee issues, shoulder problems",
+      "**Programming:** 3-5 sets x 3-6 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB015",
+    "name_en": "Seated Military Press",
+    "name_ar": "Seated Military Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Sit with back supported",
+      "Unrack bar to shoulders",
+      "Press straight up overhead",
+      "Lower to chin level",
+      "Keep core engaged throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Arching back excessively",
+      "Pressing behind neck (risky)",
+      "Using excessive weight",
+      "**Contraindications:** Shoulder impingement, neck issues",
+      "**Programming:** 3-4 sets x 6-10 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB016",
+    "name_en": "Behind-Neck Press (Advanced)",
+    "name_ar": "Behind-Neck Press (Advanced) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Requires excellent shoulder mobility",
+      "Use light to moderate weight",
+      "Lower to base of neck only",
+      "Press straight up overhead",
+      "Control movement throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using too heavy weight",
+      "Lowering too far",
+      "Lacking shoulder mobility",
+      "**Contraindications:** Shoulder impingement, rotator cuff issues, poor mobility",
+      "**Programming:** 2-3 sets x 10-12 reps (light weight), 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB017",
+    "name_en": "Barbell Upright Row",
+    "name_ar": "Barbell Upright Row (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Grip slightly wider than shoulders",
+      "Pull elbows up and out",
+      "Raise to chest level only",
+      "Keep bar close to body",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Grip too narrow (impingement)",
+      "Pulling too high",
+      "Using momentum",
+      "**Contraindications:** Shoulder impingement",
+      "**Programming:** 3-4 sets x 10-15 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB018",
+    "name_en": "Barbell Front Raise",
+    "name_ar": "Barbell Front Raise (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold bar at hip level",
+      "Raise with straight arms",
+      "Lift to shoulder height",
+      "Lower with control",
+      "Keep core engaged"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Swinging weight up",
+      "Raising too high",
+      "Arching back",
+      "**Contraindications:** Shoulder impingement",
+      "**Programming:** 3 sets x 10-15 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB019",
+    "name_en": "Barbell High Pull",
+    "name_ar": "Barbell High Pull (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in deadlift position",
+      "Explosively extend hips and knees",
+      "Pull bar to chest height",
+      "Elbows lead the movement",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not using hip drive",
+      "Pulling with arms too early",
+      "Excessive forward lean",
+      "**Contraindications:** Lower back issues, shoulder problems",
+      "**Programming:** 3-4 sets x 5-8 reps, 1-2x/week",
+      "--",
+      "## ARM EXERCISES"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB020",
+    "name_en": "Barbell Curl",
+    "name_ar": "Barbell Curl (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand with bar at hip level",
+      "Elbows pinned to sides",
+      "Curl bar to shoulder level",
+      "Squeeze biceps at top",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Excessive body swing",
+      "Elbows drifting forward",
+      "Using momentum",
+      "**Contraindications:** Elbow tendinitis",
+      "**Programming:** 3-4 sets x 8-12 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB021",
+    "name_en": "EZ Bar Curl",
+    "name_ar": "EZ Bar Curl (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Grip angled portion of bar",
+      "Keep elbows stationary",
+      "Curl with controlled tempo",
+      "Full contraction at top",
+      "Slow negative"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Swinging body",
+      "Partial range of motion",
+      "Using too heavy weight",
+      "**Contraindications:** Wrist pain, elbow issues",
+      "**Programming:** 3-4 sets x 8-12 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB022",
+    "name_en": "Preacher Curl (Barbell)",
+    "name_ar": "Preacher Curl (Barbell) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Position armpits at top of pad",
+      "Full arm extension at bottom",
+      "Curl to full contraction",
+      "Control the descent",
+      "Don't hyperextend elbow"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Lifting off pad",
+      "Bouncing at bottom",
+      "Hyperextending elbows",
+      "**Contraindications:** Elbow hyperextension issues",
+      "**Programming:** 3 sets x 8-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB023",
+    "name_en": "Drag Curl",
+    "name_ar": "Drag Curl (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start with bar at thighs",
+      "Drag bar up body (elbows back)",
+      "Keep bar in contact with torso",
+      "Squeeze at top position",
+      "Drag bar back down"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Curling forward (normal curl)",
+      "Not keeping bar on body",
+      "Using momentum",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3 sets x 10-12 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB024",
+    "name_en": "Reverse Curl",
+    "name_ar": "Reverse Curl (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Overhand (pronated) grip",
+      "Keep wrists straight",
+      "Curl to shoulder level",
+      "Control descent",
+      "Avoid swinging"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bending wrists",
+      "Using too heavy weight",
+      "Body momentum",
+      "**Contraindications:** Wrist injuries",
+      "**Programming:** 3 sets x 10-15 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB025",
+    "name_en": "Skull Crusher (Lying Tricep Extension)",
+    "name_ar": "Skull Crusher (Lying Tricep Extension) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on bench, arms vertical",
+      "Lower bar to forehead level",
+      "Keep upper arms stationary",
+      "Extend to full lockout",
+      "Control movement throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Elbows flaring out",
+      "Moving upper arms",
+      "Bar path going too far back",
+      "**Contraindications:** Elbow tendinitis",
+      "**Programming:** 3-4 sets x 8-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB026",
+    "name_en": "Overhead Tricep Extension (Standing)",
+    "name_ar": "Overhead Tricep Extension (Standing) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold bar overhead, arms extended",
+      "Lower behind head by bending elbows",
+      "Keep upper arms vertical",
+      "Extend to full lockout",
+      "Maintain core tension"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Elbows flaring wide",
+      "Arching back excessively",
+      "Moving upper arms",
+      "**Contraindications:** Shoulder impingement, elbow issues",
+      "**Programming:** 3 sets x 10-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB027",
+    "name_en": "JM Press",
+    "name_ar": "JM Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Set up like close-grip bench",
+      "Lower bar toward neck/chin",
+      "Let elbows drift toward feet",
+      "Push up and back to lockout",
+      "Keep tension on triceps"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Converting to close-grip bench",
+      "Excessive weight",
+      "Poor elbow path",
+      "**Contraindications:** Elbow issues, shoulder problems",
+      "**Programming:** 3 sets x 6-10 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB028",
+    "name_en": "Wrist Curl",
+    "name_ar": "Wrist Curl (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Rest forearms on bench or thighs",
+      "Let wrists hang over edge",
+      "Curl bar up using only wrists",
+      "Full contraction at top",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using too heavy weight",
+      "Moving forearms",
+      "Incomplete range of motion",
+      "**Contraindications:** Carpal tunnel, wrist injuries",
+      "**Programming:** 3 sets x 15-20 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB029",
+    "name_en": "Reverse Wrist Curl",
+    "name_ar": "Reverse Wrist Curl (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Palms facing down",
+      "Rest forearms on bench",
+      "Extend wrists upward",
+      "Control descent",
+      "Use light weight"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using too heavy weight",
+      "Jerky movements",
+      "Moving forearms",
+      "**Contraindications:** Tennis elbow, wrist injuries",
+      "**Programming:** 3 sets x 15-20 reps, 2x/week",
+      "--",
+      "## LEG EXERCISES"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB030",
+    "name_en": "Back Squat",
+    "name_ar": "Back Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar on upper traps (high bar) or rear delts (low bar)",
+      "Feet shoulder-width or wider",
+      "Break at hips and knees together",
+      "Descend to parallel or below",
+      "Drive through whole foot"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Excessive forward lean",
+      "Knees caving inward",
+      "Rising onto toes",
+      "Rounding lower back",
+      "**Contraindications:** Acute knee injury, severe back problems",
+      "**Programming:** 3-5 sets x 3-10 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB031",
+    "name_en": "Front Squat",
+    "name_ar": "Front Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar on front delts, elbows high",
+      "Clean grip or cross-arm grip",
+      "Keep torso upright",
+      "Descend between legs",
+      "Drive through midfoot"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Elbows dropping",
+      "Forward lean",
+      "Not staying upright",
+      "**Contraindications:** Wrist limitations, knee issues",
+      "**Programming:** 3-4 sets x 3-8 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB032",
+    "name_en": "Zercher Squat",
+    "name_ar": "Zercher Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar held in elbow crooks",
+      "Arms crossed for support",
+      "Keep torso very upright",
+      "Squat between arms",
+      "Maintain balance throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rounding upper back",
+      "Bar slipping from elbows",
+      "Not staying upright",
+      "**Contraindications:** Elbow injuries, bicep issues",
+      "**Programming:** 3 sets x 5-8 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB033",
+    "name_en": "Box Squat",
+    "name_ar": "Box Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Sit back onto box",
+      "Pause briefly on box",
+      "Keep shins vertical",
+      "Explode off box",
+      "Wider stance typically used"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bouncing off box",
+      "Not pausing",
+      "Rocking forward",
+      "**Contraindications:** Hip mobility issues",
+      "**Programming:** 3-5 sets x 3-6 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB034",
+    "name_en": "Pause Squat",
+    "name_ar": "Pause Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Descend under control",
+      "Pause 2-3 seconds at bottom",
+      "Maintain tension during pause",
+      "Drive up without bounce",
+      "Use lighter weight than regular squat"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Relaxing at bottom",
+      "Pause too short",
+      "Excessive weight",
+      "**Contraindications:** Knee instability",
+      "**Programming:** 3-4 sets x 3-5 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB035",
+    "name_en": "Anderson Squat (Pin Squat)",
+    "name_ar": "Anderson Squat (Pin Squat) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Set pins at bottom position",
+      "Start from dead stop on pins",
+      "Explode up from pins",
+      "Lower back to pins",
+      "Reset between reps"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Pins set too high",
+      "Bouncing off pins",
+      "Poor starting position",
+      "**Contraindications:** Back issues",
+      "**Programming:** 3-5 sets x 2-5 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB036",
+    "name_en": "Romanian Deadlift (RDL)",
+    "name_ar": "Romanian Deadlift (RDL) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start standing with bar at hips",
+      "Hinge at hips, pushing back",
+      "Lower until hamstring stretch",
+      "Keep bar close to legs",
+      "Drive hips forward to stand"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bending knees too much",
+      "Rounding lower back",
+      "Bar drifting away from legs",
+      "**Contraindications:** Acute lower back injury",
+      "**Programming:** 3-4 sets x 8-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB037",
+    "name_en": "Stiff-Leg Deadlift",
+    "name_ar": "Stiff-Leg Deadlift (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Legs nearly straight (soft knees)",
+      "Hinge at hips",
+      "Lower until hamstring stretch",
+      "Keep back flat",
+      "Return to standing"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Locking knees completely",
+      "Rounding back",
+      "Not feeling hamstrings",
+      "**Contraindications:** Lower back issues, hamstring tears",
+      "**Programming:** 3-4 sets x 8-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB038",
+    "name_en": "Good Morning",
+    "name_ar": "Good Morning (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar on upper back like squat",
+      "Soft bend in knees",
+      "Hinge forward from hips",
+      "Lower until torso near parallel",
+      "Return by extending hips"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using too heavy weight",
+      "Rounding lower back",
+      "Bending knees excessively",
+      "**Contraindications:** Lower back problems",
+      "**Programming:** 3-4 sets x 8-12 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB039",
+    "name_en": "Barbell Hip Thrust",
+    "name_ar": "Barbell Hip Thrust (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Upper back on bench, feet flat",
+      "Bar over hip crease with pad",
+      "Drive through heels",
+      "Squeeze glutes at top",
+      "Control descent"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hyperextending lower back",
+      "Feet too far out",
+      "Not reaching full hip extension",
+      "**Contraindications:** Lower back pain",
+      "**Programming:** 3-4 sets x 8-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB040",
+    "name_en": "Glute Bridge (Barbell)",
+    "name_ar": "Glute Bridge (Barbell) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie on floor, bar over hips",
+      "Feet flat, knees bent",
+      "Drive hips up toward ceiling",
+      "Squeeze glutes at top",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not full hip extension",
+      "Lower back doing work",
+      "Rushing reps",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3-4 sets x 10-15 reps, 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB041",
+    "name_en": "Barbell Walking Lunge",
+    "name_ar": "Barbell Walking Lunge (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar across upper back",
+      "Step forward into lunge",
+      "Lower until back knee near floor",
+      "Push through front heel",
+      "Alternate legs walking forward"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Front knee going past toes",
+      "Torso leaning forward",
+      "Balance issues",
+      "**Contraindications:** Knee problems, balance issues",
+      "**Programming:** 3 sets x 10-12 steps each leg, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB042",
+    "name_en": "Barbell Reverse Lunge",
+    "name_ar": "Barbell Reverse Lunge (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar across upper back",
+      "Step backward into lunge",
+      "Lower until back knee near floor",
+      "Drive through front heel",
+      "Return to standing"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Stepping back too short",
+      "Torso leaning forward",
+      "Knee valgus",
+      "**Contraindications:** Knee issues, balance problems",
+      "**Programming:** 3 sets x 8-10 each leg, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB043",
+    "name_en": "Barbell Step-Up",
+    "name_ar": "Barbell Step-Up (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar across upper back",
+      "Place entire foot on box",
+      "Drive through heel to stand",
+      "Control descent",
+      "Avoid pushing off back foot"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Box too high",
+      "Pushing with back leg",
+      "Balance issues",
+      "**Contraindications:** Knee instability",
+      "**Programming:** 3 sets x 8-10 each leg, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB044",
+    "name_en": "Barbell Calf Raise",
+    "name_ar": "Barbell Calf Raise (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar across upper back",
+      "Balls of feet on platform",
+      "Rise up on toes",
+      "Hold contraction at top",
+      "Lower with full stretch"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bouncing at bottom",
+      "Partial range of motion",
+      "Knees bending",
+      "**Contraindications:** Achilles problems",
+      "**Programming:** 4-5 sets x 12-20 reps, 2-3x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB045",
+    "name_en": "Barbell Sumo Squat",
+    "name_ar": "Barbell Sumo Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Wide stance, toes pointed out",
+      "Bar on upper back",
+      "Push knees out over toes",
+      "Squat between legs",
+      "Drive through heels"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Knees caving",
+      "Not going deep enough",
+      "Stance too narrow",
+      "**Contraindications:** Hip impingement, groin strains",
+      "**Programming:** 3-4 sets x 6-10 reps, 1-2x/week",
+      "--",
+      "## COMPOUND/FULL BODY EXERCISES"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB046",
+    "name_en": "Conventional Deadlift",
+    "name_ar": "Conventional Deadlift (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Feet hip-width, bar over mid-foot",
+      "Grip outside legs",
+      "Flat back, chest up",
+      "Drive through floor, extend hips and knees",
+      "Lockout by squeezing glutes"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rounding lower back",
+      "Bar drifting away",
+      "Hips rising first",
+      "Hyperextending at top",
+      "**Contraindications:** Acute lower back injury, disc problems",
+      "**Programming:** 3-5 sets x 1-6 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB047",
+    "name_en": "Sumo Deadlift",
+    "name_ar": "Sumo Deadlift (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Wide stance, toes pointed out",
+      "Grip inside legs",
+      "Push knees out, chest up",
+      "Drive through floor",
+      "Lockout hips at top"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hips shooting up",
+      "Knees caving",
+      "Not opening hips",
+      "**Contraindications:** Hip mobility issues, groin problems",
+      "**Programming:** 3-5 sets x 1-6 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB048",
+    "name_en": "Trap Bar Deadlift",
+    "name_ar": "Trap Bar Deadlift (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand inside bar, feet hip-width",
+      "Grip handles, neutral spine",
+      "Drive through whole foot",
+      "Extend hips and knees together",
+      "Lockout standing tall"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rounding back",
+      "Turning into squat",
+      "Not using full range",
+      "**Contraindications:** Lower back issues (though better than conventional)",
+      "**Programming:** 3-5 sets x 3-8 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB049",
+    "name_en": "Deficit Deadlift",
+    "name_ar": "Deficit Deadlift (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand on platform",
+      "Increased range of motion",
+      "Maintain flat back throughout",
+      "Drive through floor",
+      "Same technique as regular deadlift"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Deficit too high",
+      "Rounding back",
+      "Poor starting position",
+      "**Contraindications:** Lower back issues, limited flexibility",
+      "**Programming:** 3-4 sets x 3-6 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB050",
+    "name_en": "Rack Pull",
+    "name_ar": "Rack Pull (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Set pins at knee level or above",
+      "Same setup as deadlift",
+      "Pull from pins to lockout",
+      "Focus on lockout strength",
+      "Control descent to pins"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Pins too low (becomes deadlift)",
+      "Bouncing off pins",
+      "Rounding upper back",
+      "**Contraindications:** Upper back injuries",
+      "**Programming:** 3-4 sets x 3-6 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB051",
+    "name_en": "Power Clean",
+    "name_ar": "Power Clean (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in deadlift position",
+      "First pull: lift to knee level",
+      "Second pull: explosive hip extension",
+      "Shrug and pull under bar",
+      "Catch in front rack position"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Pulling with arms too early",
+      "Not using hip drive",
+      "Poor catch position",
+      "**Contraindications:** Wrist issues, shoulder problems",
+      "**Programming:** 3-5 sets x 2-5 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB052",
+    "name_en": "Hang Clean",
+    "name_ar": "Hang Clean (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start with bar at hip level",
+      "Hinge to just above knees",
+      "Explosively extend hips",
+      "Pull under and catch",
+      "Stand to complete"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Starting too high",
+      "Not hinging enough",
+      "Arm pulling",
+      "**Contraindications:** Shoulder issues, wrist problems",
+      "**Programming:** 3-5 sets x 2-5 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB053",
+    "name_en": "Power Snatch",
+    "name_ar": "Power Snatch (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Wide grip (snatch grip)",
+      "Similar to power clean but wider",
+      "Catch overhead with straight arms",
+      "Receive in partial squat",
+      "Stand to complete"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Grip too narrow",
+      "Not extending fully",
+      "Poor overhead stability",
+      "**Contraindications:** Shoulder issues, limited mobility",
+      "**Programming:** 3-5 sets x 2-4 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB054",
+    "name_en": "Barbell Thruster",
+    "name_ar": "Barbell Thruster (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Start in front rack position",
+      "Perform front squat",
+      "As you stand, press overhead",
+      "One fluid movement",
+      "Lower bar back to shoulders"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Pressing before squat completes",
+      "Elbows dropping",
+      "Not going deep enough",
+      "**Contraindications:** Shoulder issues, knee problems",
+      "**Programming:** 3-4 sets x 6-10 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB055",
+    "name_en": "Barbell Complex (Clean + Press)",
+    "name_ar": "Barbell Complex (Clean + Press) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Clean bar from floor",
+      "Press overhead",
+      "Lower to shoulders",
+      "Lower to floor",
+      "Repeat without rest"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Poor clean technique",
+      "Fatigue compromising form",
+      "Using too heavy weight",
+      "**Contraindications:** Multiple joint issues",
+      "**Programming:** 3-5 sets x 3-6 complexes, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB056",
+    "name_en": "Barbell Row to Press",
+    "name_ar": "Barbell Row to Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bent-over row to waist",
+      "Stand upright",
+      "Clean bar to shoulders",
+      "Press overhead",
+      "Reverse sequence"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rushing through movements",
+      "Poor transition between exercises",
+      "Excessive weight",
+      "**Contraindications:** Lower back issues, shoulder problems",
+      "**Programming:** 3-4 sets x 6-8 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB057",
+    "name_en": "Landmine Press",
+    "name_ar": "Landmine Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold end of barbell at chest",
+      "Press up and forward",
+      "Arc follows landmine angle",
+      "Control return",
+      "Can be done standing or kneeling"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Pressing straight up",
+      "Arching back",
+      "Using momentum",
+      "**Contraindications:** Shoulder impingement",
+      "**Programming:** 3-4 sets x 8-12 reps each side, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB058",
+    "name_en": "Landmine Squat",
+    "name_ar": "Landmine Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold end of bar at chest",
+      "Feet shoulder-width apart",
+      "Squat while holding bar",
+      "Keep torso upright",
+      "Drive through heels"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Letting bar drop",
+      "Not going deep enough",
+      "Leaning too far forward",
+      "**Contraindications:** Shoulder issues (holding position)",
+      "**Programming:** 3-4 sets x 10-15 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB059",
+    "name_en": "Landmine Rotation",
+    "name_ar": "Landmine Rotation (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold bar with both hands extended",
+      "Rotate from side to side",
+      "Pivot on back foot",
+      "Control throughout range",
+      "Keep arms relatively straight"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using arms instead of core",
+      "Moving too fast",
+      "Not pivoting properly",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3 sets x 10-12 each side, 1-2x/week",
+      "--",
+      "## CORE EXERCISES"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB060",
+    "name_en": "Barbell Rollout",
+    "name_ar": "Barbell Rollout (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Kneel behind bar, grip shoulder-width",
+      "Roll bar forward, extending body",
+      "Keep hips from sagging",
+      "Roll back using abs",
+      "Maintain neutral spine"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Going too far (back collapse)",
+      "Hips sagging",
+      "Using momentum",
+      "**Contraindications:** Lower back pain, shoulder issues",
+      "**Programming:** 3 sets x 8-12 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB061",
+    "name_en": "Barbell Russian Twist",
+    "name_ar": "Barbell Russian Twist (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold bar overhead, standing",
+      "Rotate from side to side",
+      "Keep hips stable",
+      "Control the weight",
+      "Exhale on rotation"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rotating hips",
+      "Using momentum",
+      "Bending arms",
+      "**Contraindications:** Spine issues",
+      "**Programming:** 3 sets x 8-12 each side, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB062",
+    "name_en": "Barbell Suitcase Deadlift",
+    "name_ar": "Barbell Suitcase Deadlift (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand beside bar (perpendicular)",
+      "Grip center with one hand",
+      "Deadlift while resisting lateral lean",
+      "Keep torso vertical",
+      "Switch sides each set"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Leaning toward bar",
+      "Not gripping center",
+      "Rotating torso",
+      "**Contraindications:** Lower back issues",
+      "**Programming:** 3 sets x 6-8 each side, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB063",
+    "name_en": "Barbell Hip Hinge Twist",
+    "name_ar": "Barbell Hip Hinge Twist (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar on back, hinge position",
+      "Rotate torso to each side",
+      "Keep hips stable",
+      "Control movement",
+      "Light weight only"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using too heavy weight",
+      "Moving hips",
+      "Rounding back",
+      "**Contraindications:** Lower back problems",
+      "**Programming:** 2-3 sets x 8-10 each side, 1x/week",
+      "--",
+      "## SPECIALTY EXERCISES"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB064",
+    "name_en": "Barbell Hack Squat",
+    "name_ar": "Barbell Hack Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar behind legs at arm's length",
+      "Stand on balls of feet",
+      "Squat down, bar slides along legs",
+      "Keep torso upright",
+      "Drive through balls of feet"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bar hitting calves",
+      "Leaning forward",
+      "Not going deep enough",
+      "**Contraindications:** Knee issues, poor ankle mobility",
+      "**Programming:** 3-4 sets x 8-12 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB065",
+    "name_en": "Jefferson Squat",
+    "name_ar": "Jefferson Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Straddle bar, one leg forward",
+      "Grip bar one hand front, one back",
+      "Squat down between legs",
+      "Keep torso relatively upright",
+      "Drive up evenly"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rotating torso",
+      "Uneven weight distribution",
+      "Poor grip position",
+      "**Contraindications:** Hip issues, knee problems",
+      "**Programming:** 3 sets x 6-8 each direction, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB066",
+    "name_en": "Steinborn Squat",
+    "name_ar": "Steinborn Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Tip loaded bar onto back",
+      "Stabilize and squat",
+      "Tip bar back to floor",
+      "Requires excellent balance",
+      "Light weight to start"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using too heavy weight",
+      "Poor balance",
+      "Not practiced unloaded first",
+      "**Contraindications:** Balance issues, shoulder problems",
+      "**Programming:** Practice with empty bar first, 2-3 sets x 3-5 reps"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB067",
+    "name_en": "Barbell Hip Halo",
+    "name_ar": "Barbell Hip Halo (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Hold bar at one end",
+      "Circle bar around hips",
+      "Keep core braced",
+      "Control throughout",
+      "Alternate directions"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using momentum",
+      "Moving hips",
+      "Going too fast",
+      "**Contraindications:** Shoulder issues, lower back problems",
+      "**Programming:** 2-3 sets x 8-10 each direction, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB068",
+    "name_en": "Barbell Shoulder-to-Shoulder Press",
+    "name_ar": "Barbell Shoulder-to-Shoulder Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Press bar from one shoulder to overhead",
+      "Lower to opposite shoulder",
+      "Alternate sides",
+      "Control weight throughout",
+      "Maintain stable stance"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Using momentum",
+      "Not controlling descent",
+      "Poor shoulder mobility",
+      "**Contraindications:** Shoulder impingement",
+      "**Programming:** 3 sets x 8-10 total, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB069",
+    "name_en": "Barbell Overhead Carry",
+    "name_ar": "Barbell Overhead Carry (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Press bar overhead",
+      "Lock arms straight",
+      "Walk with controlled steps",
+      "Keep core tight",
+      "Breathe normally"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Arms bending",
+      "Arching back",
+      "Moving too fast",
+      "**Contraindications:** Shoulder instability",
+      "**Programming:** 3 sets x 20-40m, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB070",
+    "name_en": "Barbell Zercher Carry",
+    "name_ar": "Barbell Zercher Carry (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar in crooks of elbows",
+      "Keep torso upright",
+      "Take controlled steps",
+      "Maintain breathing",
+      "Core braced throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Hunching forward",
+      "Bar sliding",
+      "Holding breath",
+      "**Contraindications:** Elbow injuries",
+      "**Programming:** 3 sets x 20-40m, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB071",
+    "name_en": "Barbell Farmer's Walk (Overhead)",
+    "name_ar": "Barbell Farmer's Walk (Overhead) (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Press both bars overhead",
+      "Walk with control",
+      "Maintain lockout",
+      "Core extremely tight",
+      "Short, controlled steps"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Bars uneven",
+      "Arms bending",
+      "Moving too fast",
+      "**Contraindications:** Shoulder problems",
+      "**Programming:** 2-3 sets x 15-25m, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB072",
+    "name_en": "Barbell Sots Press",
+    "name_ar": "Barbell Sots Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Sit in bottom of squat",
+      "Press bar from shoulders to overhead",
+      "Maintain squat position",
+      "Extremely light weight",
+      "Requires excellent mobility"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rising out of squat",
+      "Too heavy weight",
+      "Poor mobility compensations",
+      "**Contraindications:** Limited mobility, shoulder issues",
+      "**Programming:** 2-3 sets x 5-8 reps (very light), 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB073",
+    "name_en": "Barbell Muscle Snatch",
+    "name_ar": "Barbell Muscle Snatch (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Wide grip (snatch width)",
+      "Pull bar from floor to overhead",
+      "No receiving position (stay tall)",
+      "One continuous pull",
+      "Light weight required"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Too heavy weight",
+      "Pressing instead of pulling",
+      "Poor timing",
+      "**Contraindications:** Shoulder issues",
+      "**Programming:** 3-4 sets x 3-5 reps, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB074",
+    "name_en": "Barbell Cuban Press",
+    "name_ar": "Barbell Cuban Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Row bar to chest, elbows high",
+      "Externally rotate to press position",
+      "Press overhead",
+      "Reverse movement",
+      "Very light weight"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Too heavy weight",
+      "Skipping rotation portion",
+      "Poor elbow position",
+      "**Contraindications:** Rotator cuff issues",
+      "**Programming:** 2-3 sets x 8-10 reps (light), 2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB075",
+    "name_en": "Barbell Waiter's Walk",
+    "name_ar": "Barbell Waiter's Walk (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Press bar overhead with one arm",
+      "Other arm for balance",
+      "Walk with controlled steps",
+      "Maintain lockout",
+      "Core braced throughout"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Arm bending",
+      "Leaning away from bar",
+      "Moving too fast",
+      "**Contraindications:** Shoulder instability",
+      "**Programming:** 3 sets x 20-30m each arm, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB076",
+    "name_en": "Barbell Kneeling Squat",
+    "name_ar": "Barbell Kneeling Squat (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar on back, kneeling position",
+      "Sit back on heels",
+      "Drive hips forward to kneel tall",
+      "Squeeze glutes at top",
+      "Control descent"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Not sitting back enough",
+      "Hyperextending lower back",
+      "Poor knee padding",
+      "**Contraindications:** Knee problems",
+      "**Programming:** 3 sets x 10-15 reps, 1-2x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB077",
+    "name_en": "Barbell Single-Leg RDL",
+    "name_ar": "Barbell Single-Leg RDL (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Stand on one leg, bar at hips",
+      "Hinge forward as rear leg lifts",
+      "Keep hips square",
+      "Lower until parallel",
+      "Drive hip forward to stand"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Rotating hips",
+      "Rounding back",
+      "Losing balance",
+      "**Contraindications:** Balance issues, lower back problems",
+      "**Programming:** 3 sets x 6-8 each leg, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB078",
+    "name_en": "Barbell Bent Press",
+    "name_ar": "Barbell Bent Press (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Bar in one hand at shoulder",
+      "Lean away from weight",
+      "Push body under bar",
+      "Straighten arm as you lean",
+      "Stand up to complete"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Pressing instead of leaning",
+      "Too heavy weight",
+      "Poor flexibility",
+      "**Contraindications:** Shoulder issues, back problems",
+      "**Programming:** 2-3 sets x 3-5 each side (light), 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB079",
+    "name_en": "Barbell Turkish Get-Up",
+    "name_ar": "Barbell Turkish Get-Up (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Lie down holding bar overhead",
+      "Follow TGU sequence",
+      "Keep arm locked throughout",
+      "Move slowly and deliberately",
+      "Use very light weight"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Weight too heavy",
+      "Arm bending",
+      "Rushing movement",
+      "**Contraindications:** Shoulder instability",
+      "**Programming:** 2-3 sets x 2-3 each side, 1x/week"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  },
+  {
+    "id": "BB080",
+    "name_en": "Barbell Windmill",
+    "name_ar": "Barbell Windmill (AR)",
+    "description_en": "A barbells exercise focusing on the barbell-exercises.",
+    "description_ar": "تمرين barbells يركز على barbell-exercises.",
+    "category": "BARBELLS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Press bar overhead, one hand",
+      "Feet angled away from loaded arm",
+      "Hinge and reach toward floor",
+      "Keep arm vertical",
+      "Return to standing"
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [
+      "Arm bending",
+      "Not hinging properly",
+      "Rounding back",
+      "**Contraindications:** Shoulder problems, lower back issues",
+      "**Programming:** 2-3 sets x 5-8 each side, 1x/week",
+      "--",
+      "## Programming Recommendations"
+    ],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "barbells",
+      "barbell-exercises"
+    ]
+  }
+]

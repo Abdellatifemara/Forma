@@ -1,10 +1,10 @@
 [
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED001",
+    "name_en": "Breath Awareness Meditation",
+    "name_ar": "Breath Awareness Meditation (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -31,15 +31,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED002",
+    "name_en": "Counting Breath Meditation",
+    "name_ar": "Counting Breath Meditation (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -66,15 +66,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED003",
+    "name_en": "Body Scan Meditation",
+    "name_ar": "Body Scan Meditation (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -101,15 +101,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED004",
+    "name_en": "Present Moment Awareness",
+    "name_ar": "Present Moment Awareness (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -136,15 +136,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED005",
+    "name_en": "Open Awareness Meditation",
+    "name_ar": "Open Awareness Meditation (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -171,15 +171,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED006",
+    "name_en": "Pre-Workout Intention Setting",
+    "name_ar": "Pre-Workout Intention Setting (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -206,15 +206,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED007",
+    "name_en": "Visualization for Performance",
+    "name_ar": "Visualization for Performance (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -241,15 +241,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED008",
+    "name_en": "Mind-Muscle Connection",
+    "name_ar": "Mind-Muscle Connection (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -276,15 +276,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED009",
+    "name_en": "Post-Workout Integration",
+    "name_ar": "Post-Workout Integration (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -311,15 +311,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED010",
+    "name_en": "Focus Reset (Between Sets)",
+    "name_ar": "Focus Reset (Between Sets) (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -346,15 +346,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED011",
+    "name_en": "Pain vs. Discomfort Awareness",
+    "name_ar": "Pain vs. Discomfort Awareness (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -381,15 +381,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED012",
+    "name_en": "Progressive Muscle Relaxation",
+    "name_ar": "Progressive Muscle Relaxation (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -416,15 +416,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED013",
+    "name_en": "Rest Day Mind Reset",
+    "name_ar": "Rest Day Mind Reset (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -451,15 +451,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED014",
+    "name_en": "Sleep Preparation Meditation",
+    "name_ar": "Sleep Preparation Meditation (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -486,15 +486,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED015",
+    "name_en": "Yoga Nidra (Simplified)",
+    "name_ar": "Yoga Nidra (Simplified) (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -521,15 +521,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED016",
+    "name_en": "Discomfort Tolerance Training",
+    "name_ar": "Discomfort Tolerance Training (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -556,15 +556,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED017",
+    "name_en": "Competition Preparation",
+    "name_ar": "Competition Preparation (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -591,15 +591,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED018",
+    "name_en": "Dealing with Setbacks",
+    "name_ar": "Dealing with Setbacks (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -626,15 +626,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED019",
+    "name_en": "Motivation Meditation",
+    "name_ar": "Motivation Meditation (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -661,15 +661,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED020",
+    "name_en": "Self-Talk Awareness",
+    "name_ar": "Self-Talk Awareness (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -696,15 +696,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED021",
+    "name_en": "One-Minute Reset",
+    "name_ar": "One-Minute Reset (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -731,15 +731,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED022",
+    "name_en": "Three-Breath Centering",
+    "name_ar": "Three-Breath Centering (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -766,15 +766,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED023",
+    "name_en": "STOP Technique",
+    "name_ar": "STOP Technique (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -801,15 +801,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED024",
+    "name_en": "Pre-Lift Focus",
+    "name_ar": "Pre-Lift Focus (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -836,15 +836,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED025",
+    "name_en": "Gratitude Moment",
+    "name_ar": "Gratitude Moment (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -871,15 +871,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED026",
+    "name_en": "Morning Intention Script (5 min)",
+    "name_ar": "Morning Intention Script (5 min) (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -906,15 +906,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED027",
+    "name_en": "Post-Workout Recovery Script (7 min)",
+    "name_ar": "Post-Workout Recovery Script (7 min) (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -941,15 +941,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED028",
+    "name_en": "Pre-Competition Visualization (10 min)",
+    "name_ar": "Pre-Competition Visualization (10 min) (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -976,15 +976,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED029",
+    "name_en": "Dealing with Injury Recovery (8 min)",
+    "name_ar": "Dealing with Injury Recovery (8 min) (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -1011,15 +1011,15 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
+    "id": "MED030",
+    "name_en": "Body Appreciation (6 min)",
+    "name_ar": "Body Appreciation (6 min) (AR)",
+    "description_en": "A recovery exercise focusing on the meditation-techniques.",
+    "description_ar": "تمرين recovery يركز على meditation-techniques.",
     "category": "RECOVERY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -1046,3367 +1046,7 @@
     "default_rest": 60,
     "tags": [
       "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
-    ]
-  },
-  {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A recovery exercise focusing on the muscles.",
-    "description_ar": "تمرين recovery يركز على muscles.",
-    "category": "RECOVERY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "recovery",
-      "bodyweight"
+      "meditation-techniques"
     ]
   }
 ]

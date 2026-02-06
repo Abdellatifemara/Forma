@@ -1,10 +1,10 @@
 [
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A equipment exercise focusing on the muscles.",
-    "description_ar": "تمرين equipment يركز على muscles.",
+    "id": "RB001",
+    "name_en": "Band Chest Press",
+    "name_ar": "Band Chest Press (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
     "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -31,15 +31,15 @@
     "default_rest": 60,
     "tags": [
       "equipment",
-      "bodyweight"
+      "resistance-bands"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A equipment exercise focusing on the muscles.",
-    "description_ar": "تمرين equipment يركز على muscles.",
+    "id": "RB002",
+    "name_en": "Band Push-Up (Added Resistance)",
+    "name_ar": "Band Push-Up (Added Resistance) (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
     "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -66,15 +66,15 @@
     "default_rest": 60,
     "tags": [
       "equipment",
-      "bodyweight"
+      "resistance-bands"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A equipment exercise focusing on the muscles.",
-    "description_ar": "تمرين equipment يركز على muscles.",
+    "id": "RB003",
+    "name_en": "Band Chest Fly",
+    "name_ar": "Band Chest Fly (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
     "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -101,15 +101,15 @@
     "default_rest": 60,
     "tags": [
       "equipment",
-      "bodyweight"
+      "resistance-bands"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A equipment exercise focusing on the muscles.",
-    "description_ar": "تمرين equipment يركز على muscles.",
+    "id": "RB004",
+    "name_en": "Incline Band Press",
+    "name_ar": "Incline Band Press (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
     "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -136,15 +136,15 @@
     "default_rest": 60,
     "tags": [
       "equipment",
-      "bodyweight"
+      "resistance-bands"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A equipment exercise focusing on the muscles.",
-    "description_ar": "تمرين equipment يركز على muscles.",
+    "id": "RB005",
+    "name_en": "Decline Band Press",
+    "name_ar": "Decline Band Press (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
     "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -171,15 +171,15 @@
     "default_rest": 60,
     "tags": [
       "equipment",
-      "bodyweight"
+      "resistance-bands"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A equipment exercise focusing on the muscles.",
-    "description_ar": "تمرين equipment يركز على muscles.",
+    "id": "RB006",
+    "name_en": "Band Row (Seated)",
+    "name_ar": "Band Row (Seated) (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
     "category": "EQUIPMENT",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -206,7 +206,2072 @@
     "default_rest": 60,
     "tags": [
       "equipment",
-      "bodyweight"
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB007",
+    "name_en": "Band Row (Standing)",
+    "name_ar": "Band Row (Standing) (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB008",
+    "name_en": "Band Lat Pulldown",
+    "name_ar": "Band Lat Pulldown (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB009",
+    "name_en": "Band Straight Arm Pulldown",
+    "name_ar": "Band Straight Arm Pulldown (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB010",
+    "name_en": "Band Face Pull",
+    "name_ar": "Band Face Pull (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB011",
+    "name_en": "Band Pull-Apart",
+    "name_ar": "Band Pull-Apart (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB012",
+    "name_en": "Band Good Morning",
+    "name_ar": "Band Good Morning (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB013",
+    "name_en": "Band Deadlift",
+    "name_ar": "Band Deadlift (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB014",
+    "name_en": "Band Shoulder Press",
+    "name_ar": "Band Shoulder Press (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB015",
+    "name_en": "Band Lateral Raise",
+    "name_ar": "Band Lateral Raise (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB016",
+    "name_en": "Band Front Raise",
+    "name_ar": "Band Front Raise (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB017",
+    "name_en": "Band Rear Delt Fly",
+    "name_ar": "Band Rear Delt Fly (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB018",
+    "name_en": "Band Upright Row",
+    "name_ar": "Band Upright Row (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB019",
+    "name_en": "Band Shrug",
+    "name_ar": "Band Shrug (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB020",
+    "name_en": "Band External Rotation",
+    "name_ar": "Band External Rotation (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB021",
+    "name_en": "Band Internal Rotation",
+    "name_ar": "Band Internal Rotation (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB022",
+    "name_en": "Band Bicep Curl",
+    "name_ar": "Band Bicep Curl (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB023",
+    "name_en": "Band Hammer Curl",
+    "name_ar": "Band Hammer Curl (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB024",
+    "name_en": "Band Concentration Curl",
+    "name_ar": "Band Concentration Curl (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB025",
+    "name_en": "Band Tricep Extension (Overhead)",
+    "name_ar": "Band Tricep Extension (Overhead) (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB026",
+    "name_en": "Band Tricep Pushdown",
+    "name_ar": "Band Tricep Pushdown (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB027",
+    "name_en": "Band Kickback",
+    "name_ar": "Band Kickback (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB028",
+    "name_en": "Band Wrist Curl",
+    "name_ar": "Band Wrist Curl (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB029",
+    "name_en": "Band Reverse Wrist Curl",
+    "name_ar": "Band Reverse Wrist Curl (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB030",
+    "name_en": "Banded Glute Bridge",
+    "name_ar": "Banded Glute Bridge (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB031",
+    "name_en": "Banded Clamshell",
+    "name_ar": "Banded Clamshell (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB032",
+    "name_en": "Banded Fire Hydrant",
+    "name_ar": "Banded Fire Hydrant (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB033",
+    "name_en": "Banded Donkey Kick",
+    "name_ar": "Banded Donkey Kick (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB034",
+    "name_en": "Banded Monster Walk",
+    "name_ar": "Banded Monster Walk (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB035",
+    "name_en": "Banded Lateral Walk",
+    "name_ar": "Banded Lateral Walk (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB036",
+    "name_en": "Banded Squat",
+    "name_ar": "Banded Squat (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB037",
+    "name_en": "Banded Standing Hip Abduction",
+    "name_ar": "Banded Standing Hip Abduction (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB038",
+    "name_en": "Banded Kickback (Standing)",
+    "name_ar": "Banded Kickback (Standing) (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB039",
+    "name_en": "Banded Hip Thrust",
+    "name_ar": "Banded Hip Thrust (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB040",
+    "name_en": "Banded Sumo Squat Pulse",
+    "name_ar": "Banded Sumo Squat Pulse (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB041",
+    "name_en": "Band Leg Press",
+    "name_ar": "Band Leg Press (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB042",
+    "name_en": "Band Leg Extension",
+    "name_ar": "Band Leg Extension (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB043",
+    "name_en": "Band Leg Curl (Prone)",
+    "name_ar": "Band Leg Curl (Prone) (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB044",
+    "name_en": "Band Leg Curl (Standing)",
+    "name_ar": "Band Leg Curl (Standing) (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB045",
+    "name_en": "Band Romanian Deadlift",
+    "name_ar": "Band Romanian Deadlift (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB046",
+    "name_en": "Band Front Squat",
+    "name_ar": "Band Front Squat (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB047",
+    "name_en": "Band Split Squat",
+    "name_ar": "Band Split Squat (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB048",
+    "name_en": "Band Step-Up",
+    "name_ar": "Band Step-Up (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB049",
+    "name_en": "Band Calf Raise",
+    "name_ar": "Band Calf Raise (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB050",
+    "name_en": "Banded Terminal Knee Extension",
+    "name_ar": "Banded Terminal Knee Extension (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB051",
+    "name_en": "Band Pallof Press",
+    "name_ar": "Band Pallof Press (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB052",
+    "name_en": "Band Woodchop",
+    "name_ar": "Band Woodchop (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB053",
+    "name_en": "Band Reverse Woodchop",
+    "name_ar": "Band Reverse Woodchop (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB054",
+    "name_en": "Band Dead Bug",
+    "name_ar": "Band Dead Bug (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB055",
+    "name_en": "Band Crunch",
+    "name_ar": "Band Crunch (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB056",
+    "name_en": "Band Standing Crunch",
+    "name_ar": "Band Standing Crunch (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB057",
+    "name_en": "Band Rotation",
+    "name_ar": "Band Rotation (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB058",
+    "name_en": "Band Thruster",
+    "name_ar": "Band Thruster (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB059",
+    "name_en": "Band Clean",
+    "name_ar": "Band Clean (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB060",
+    "name_en": "Band High Pull",
+    "name_ar": "Band High Pull (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB061",
+    "name_en": "Band Squat to Press",
+    "name_ar": "Band Squat to Press (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB062",
+    "name_en": "Band Deadlift to Row",
+    "name_ar": "Band Deadlift to Row (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB063",
+    "name_en": "Band Hamstring Stretch",
+    "name_ar": "Band Hamstring Stretch (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB064",
+    "name_en": "Band Shoulder Stretch",
+    "name_ar": "Band Shoulder Stretch (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
+    ]
+  },
+  {
+    "id": "RB065",
+    "name_en": "Band Assisted Squat Stretch",
+    "name_ar": "Band Assisted Squat Stretch (AR)",
+    "description_en": "A equipment exercise focusing on the resistance-bands.",
+    "description_ar": "تمرين equipment يركز على resistance-bands.",
+    "category": "EQUIPMENT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "equipment",
+      "resistance-bands"
     ]
   }
 ]

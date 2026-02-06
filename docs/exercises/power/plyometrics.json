@@ -1,10 +1,10 @@
 [
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL001",
+    "name_en": "Box Step-Up with Drive",
+    "name_ar": "Box Step-Up with Drive (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -31,15 +31,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL002",
+    "name_en": "Squat Jump (Low)",
+    "name_ar": "Squat Jump (Low) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -66,15 +66,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL003",
+    "name_en": "Ankle Hops (Pogo Jumps)",
+    "name_ar": "Ankle Hops (Pogo Jumps) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -101,15 +101,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL004",
+    "name_en": "Jump Rope (Basic)",
+    "name_ar": "Jump Rope (Basic) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -136,15 +136,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL005",
+    "name_en": "Standing Long Jump",
+    "name_ar": "Standing Long Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -171,15 +171,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL006",
+    "name_en": "Lateral Hop (Small)",
+    "name_ar": "Lateral Hop (Small) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -206,15 +206,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL007",
+    "name_en": "Forward Hop (Single Leg)",
+    "name_ar": "Forward Hop (Single Leg) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -241,15 +241,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL008",
+    "name_en": "Line Hops (Forward/Back)",
+    "name_ar": "Line Hops (Forward/Back) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -276,15 +276,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL009",
+    "name_en": "Line Hops (Side to Side)",
+    "name_ar": "Line Hops (Side to Side) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -311,15 +311,15 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
     ]
   },
   {
-    "id": "",
-    "name_en": "Unknown Exercise",
-    "name_ar": "Unknown (AR)",
-    "description_en": "A power exercise focusing on the muscles.",
-    "description_ar": "تمرين power يركز على muscles.",
+    "id": "PL010",
+    "name_en": "Box Jump (Low Box)",
+    "name_ar": "Box Jump (Low Box) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
     "category": "POWER",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
@@ -346,7 +346,2982 @@
     "default_rest": 60,
     "tags": [
       "power",
-      "bodyweight"
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL011",
+    "name_en": "Squat Jump (Full)",
+    "name_ar": "Squat Jump (Full) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL012",
+    "name_en": "Tuck Jump",
+    "name_ar": "Tuck Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL013",
+    "name_en": "Split Squat Jump",
+    "name_ar": "Split Squat Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL014",
+    "name_en": "Lateral Bound",
+    "name_ar": "Lateral Bound (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL015",
+    "name_en": "Forward Bound (Single Leg)",
+    "name_ar": "Forward Bound (Single Leg) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL016",
+    "name_en": "Box Jump (Medium Box)",
+    "name_ar": "Box Jump (Medium Box) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL017",
+    "name_en": "Broad Jump Series",
+    "name_ar": "Broad Jump Series (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL018",
+    "name_en": "Lateral Shuffle to Sprint",
+    "name_ar": "Lateral Shuffle to Sprint (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL019",
+    "name_en": "Depth Drop",
+    "name_ar": "Depth Drop (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL020",
+    "name_en": "Skater Jump",
+    "name_ar": "Skater Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL021",
+    "name_en": "Hurdle Hop (Two Foot)",
+    "name_ar": "Hurdle Hop (Two Foot) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL022",
+    "name_en": "Single Leg Hop (In Place)",
+    "name_ar": "Single Leg Hop (In Place) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL023",
+    "name_en": "180-Degree Jump",
+    "name_ar": "180-Degree Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL024",
+    "name_en": "Star Jump",
+    "name_ar": "Star Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL025",
+    "name_en": "Scissor Jump",
+    "name_ar": "Scissor Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL026",
+    "name_en": "Depth Jump",
+    "name_ar": "Depth Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL027",
+    "name_en": "Depth Jump to Broad Jump",
+    "name_ar": "Depth Jump to Broad Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL028",
+    "name_en": "Box Jump (High Box)",
+    "name_ar": "Box Jump (High Box) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL029",
+    "name_en": "Single Leg Box Jump",
+    "name_ar": "Single Leg Box Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL030",
+    "name_en": "Reactive Box Jump",
+    "name_ar": "Reactive Box Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL031",
+    "name_en": "Hurdle Bound",
+    "name_ar": "Hurdle Bound (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL032",
+    "name_en": "Triple Jump (Full)",
+    "name_ar": "Triple Jump (Full) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL033",
+    "name_en": "Weighted Squat Jump",
+    "name_ar": "Weighted Squat Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL034",
+    "name_en": "Medicine Ball Slam",
+    "name_ar": "Medicine Ball Slam (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL035",
+    "name_en": "Medicine Ball Chest Pass (Explosive)",
+    "name_ar": "Medicine Ball Chest Pass (Explosive) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL036",
+    "name_en": "Medicine Ball Overhead Throw",
+    "name_ar": "Medicine Ball Overhead Throw (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL037",
+    "name_en": "Medicine Ball Rotational Throw",
+    "name_ar": "Medicine Ball Rotational Throw (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL038",
+    "name_en": "Plyo Push-Up",
+    "name_ar": "Plyo Push-Up (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL039",
+    "name_en": "Clap Push-Up",
+    "name_ar": "Clap Push-Up (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL040",
+    "name_en": "Burpee",
+    "name_ar": "Burpee (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL041",
+    "name_en": "Approach Jump (Volleyball)",
+    "name_ar": "Approach Jump (Volleyball) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL042",
+    "name_en": "Block Jump (Volleyball)",
+    "name_ar": "Block Jump (Volleyball) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL043",
+    "name_en": "Jump Shot Practice",
+    "name_ar": "Jump Shot Practice (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL044",
+    "name_en": "A-Skip",
+    "name_ar": "A-Skip (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL045",
+    "name_en": "B-Skip",
+    "name_ar": "B-Skip (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL046",
+    "name_en": "Power Skip",
+    "name_ar": "Power Skip (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL047",
+    "name_en": "Sprint to Cut",
+    "name_ar": "Sprint to Cut (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL048",
+    "name_en": "Pro Agility (5-10-5)",
+    "name_ar": "Pro Agility (5-10-5) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL049",
+    "name_en": "Jump Squat with Twist",
+    "name_ar": "Jump Squat with Twist (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL050",
+    "name_en": "Medicine Ball Ground and Pound",
+    "name_ar": "Medicine Ball Ground and Pound (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL051",
+    "name_en": "Split Step Jump",
+    "name_ar": "Split Step Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL052",
+    "name_en": "Crossover Step to Sprint",
+    "name_ar": "Crossover Step to Sprint (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL053",
+    "name_en": "Squat Jump with Reach",
+    "name_ar": "Squat Jump with Reach (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL054",
+    "name_en": "Prisoner Squat Jump",
+    "name_ar": "Prisoner Squat Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL055",
+    "name_en": "Frog Jump",
+    "name_ar": "Frog Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL056",
+    "name_en": "Stair Jump (Two at a Time)",
+    "name_ar": "Stair Jump (Two at a Time) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL057",
+    "name_en": "Single Leg Bounds (Continuous)",
+    "name_ar": "Single Leg Bounds (Continuous) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL058",
+    "name_en": "Alternate Leg Bound",
+    "name_ar": "Alternate Leg Bound (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL059",
+    "name_en": "Depth Jump to Box",
+    "name_ar": "Depth Jump to Box (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL060",
+    "name_en": "Lateral Box Jump",
+    "name_ar": "Lateral Box Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL061",
+    "name_en": "Medicine Ball Push-Up",
+    "name_ar": "Medicine Ball Push-Up (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL062",
+    "name_en": "Medicine Ball Drop Push-Up",
+    "name_ar": "Medicine Ball Drop Push-Up (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL063",
+    "name_en": "Overhead Medicine Ball Slam",
+    "name_ar": "Overhead Medicine Ball Slam (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL064",
+    "name_en": "Medicine Ball Scoop Throw",
+    "name_ar": "Medicine Ball Scoop Throw (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL065",
+    "name_en": "Plyo Push-Up to Box",
+    "name_ar": "Plyo Push-Up to Box (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL066",
+    "name_en": "Superman Push-Up",
+    "name_ar": "Superman Push-Up (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL067",
+    "name_en": "Medicine Ball Slam to Wall",
+    "name_ar": "Medicine Ball Slam to Wall (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL068",
+    "name_en": "Explosive Pull-Up",
+    "name_ar": "Explosive Pull-Up (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL069",
+    "name_en": "Clap Pull-Up",
+    "name_ar": "Clap Pull-Up (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL070",
+    "name_en": "Medicine Ball Woodchop",
+    "name_ar": "Medicine Ball Woodchop (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL071",
+    "name_en": "V-Up Jump",
+    "name_ar": "V-Up Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL072",
+    "name_en": "Burpee Box Jump",
+    "name_ar": "Burpee Box Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL073",
+    "name_en": "Burpee Broad Jump",
+    "name_ar": "Burpee Broad Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL074",
+    "name_en": "Mountain Climber Plyo",
+    "name_ar": "Mountain Climber Plyo (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL075",
+    "name_en": "Jumping Lunge",
+    "name_ar": "Jumping Lunge (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL076",
+    "name_en": "Tuck Jump to Broad Jump Combo",
+    "name_ar": "Tuck Jump to Broad Jump Combo (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL077",
+    "name_en": "Speed Skater to Vertical Jump",
+    "name_ar": "Speed Skater to Vertical Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL078",
+    "name_en": "Reverse Lunge to Knee Drive",
+    "name_ar": "Reverse Lunge to Knee Drive (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL079",
+    "name_en": "Lateral Shuffle to Squat Jump",
+    "name_ar": "Lateral Shuffle to Squat Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL080",
+    "name_en": "Pike Jump",
+    "name_ar": "Pike Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL081",
+    "name_en": "Reactive Depth Jump Series",
+    "name_ar": "Reactive Depth Jump Series (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL082",
+    "name_en": "Weighted Depth Jump",
+    "name_ar": "Weighted Depth Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL083",
+    "name_en": "Single Leg Depth Jump",
+    "name_ar": "Single Leg Depth Jump (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL084",
+    "name_en": "Altitude Drop (No Jump)",
+    "name_ar": "Altitude Drop (No Jump) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL085",
+    "name_en": "Hurdle Hops (High Hurdles)",
+    "name_ar": "Hurdle Hops (High Hurdles) (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL086",
+    "name_en": "Box Jump with 180 Turn",
+    "name_ar": "Box Jump with 180 Turn (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL087",
+    "name_en": "Lateral Box Jump Over",
+    "name_ar": "Lateral Box Jump Over (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL088",
+    "name_en": "Double Under Jump Rope",
+    "name_ar": "Double Under Jump Rope (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL089",
+    "name_en": "Triple Jump Stand",
+    "name_ar": "Triple Jump Stand (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL090",
+    "name_en": "Reactive Lateral Bound Series",
+    "name_ar": "Reactive Lateral Bound Series (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL091",
+    "name_en": "T-Drill",
+    "name_ar": "T-Drill (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL092",
+    "name_en": "L-Drill",
+    "name_ar": "L-Drill (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL093",
+    "name_en": "Illinois Agility Test",
+    "name_ar": "Illinois Agility Test (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL094",
+    "name_en": "Box Drill",
+    "name_ar": "Box Drill (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
+    ]
+  },
+  {
+    "id": "PL095",
+    "name_en": "Reaction Ball Drill",
+    "name_ar": "Reaction Ball Drill (AR)",
+    "description_en": "A power exercise focusing on the plyometrics.",
+    "description_ar": "تمرين power يركز على plyometrics.",
+    "category": "POWER",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "power",
+      "plyometrics"
     ]
   }
 ]

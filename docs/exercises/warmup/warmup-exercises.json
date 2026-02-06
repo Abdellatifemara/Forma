@@ -1,11 +1,11 @@
 [
   {
-    "id": "FR001",
-    "name_en": "Calves (Gastrocnemius)",
-    "name_ar": "Calves (Gastrocnemius) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU001",
+    "name_en": "Jogging in Place",
+    "name_ar": "Jogging in Place (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -22,17 +22,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling too fast",
-      "Rolling directly behind the knee",
-      "Not rotating the leg to hit medial/lateral heads",
-      "Holding breath instead of breathing deeply",
-      "**Variations:**",
-      "Single leg (more pressure)",
-      "Double leg (less pressure, beginner)",
-      "Ball rolling for specific trigger points",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -40,17 +30,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR002",
-    "name_en": "Calves (Soleus)",
-    "name_ar": "Calves (Soleus) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU002",
+    "name_en": "Jumping Jacks",
+    "name_ar": "Jumping Jacks (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -67,12 +57,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling with straight knee (targets gastrocnemius instead)",
-      "Rolling over Achilles tendon",
-      "Applying too much pressure on sensitive area",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -80,17 +65,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR003",
-    "name_en": "Tibialis Anterior (Shin)",
-    "name_ar": "Tibialis Anterior (Shin) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU003",
+    "name_en": "High Knees",
+    "name_ar": "High Knees (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -107,15 +92,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling directly on shin bone",
-      "Too much pressure (sensitive area)",
-      "Rolling over bony prominences",
-      "**Notes:**",
-      "Use lighter pressure than other areas",
-      "Good for runners and those with shin splints history",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -123,17 +100,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR004",
-    "name_en": "Peroneals (Outer Lower Leg)",
-    "name_ar": "Peroneals (Outer Lower Leg) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU004",
+    "name_en": "Butt Kicks",
+    "name_ar": "Butt Kicks (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -150,12 +127,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on fibula bone",
-      "Not supporting body weight properly",
-      "Rushing through the movement",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -163,17 +135,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR005",
-    "name_en": "Quadriceps (General)",
-    "name_ar": "Quadriceps (General) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU005",
+    "name_en": "Seal Jacks",
+    "name_ar": "Seal Jacks (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -190,17 +162,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling directly on kneecap",
-      "Hyperextending lower back",
-      "Rolling both legs when single leg needed",
-      "Moving too quickly",
-      "**Variations:**",
-      "Both legs (beginner)",
-      "Single leg (more pressure)",
-      "Bent knee variation (targets rectus femoris)",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -208,17 +170,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR006",
-    "name_en": "Rectus Femoris (Hip Flexor/Quad)",
-    "name_ar": "Rectus Femoris (Hip Flexor/Quad) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU006",
+    "name_en": "Skipping",
+    "name_ar": "Skipping (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -235,12 +197,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on hip bone (ASIS)",
-      "Not angling body correctly",
-      "Missing the hip flexor attachment",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -248,17 +205,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR007",
-    "name_en": "Vastus Lateralis (Outer Quad)",
-    "name_ar": "Vastus Lateralis (Outer Quad) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU007",
+    "name_en": "Lateral Shuffle",
+    "name_ar": "Lateral Shuffle (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -275,12 +232,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Confusing with IT band (IT band is more lateral)",
-      "Not rotating to hit full muscle belly",
-      "Rolling past the knee joint",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -288,17 +240,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR008",
-    "name_en": "Vastus Medialis (Inner Quad/VMO)",
-    "name_ar": "Vastus Medialis (Inner Quad/VMO) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU008",
+    "name_en": "Carioca (Grapevine)",
+    "name_ar": "Carioca (Grapevine) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -315,12 +267,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on kneecap",
-      "Not rotating leg externally enough",
-      "Missing VMO and hitting adductors instead",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -328,17 +275,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR009",
-    "name_en": "IT Band",
-    "name_ar": "IT Band (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU009",
+    "name_en": "Backpedal",
+    "name_ar": "Backpedal (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -355,18 +302,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling too fast due to discomfort",
-      "Rolling directly on hip bone or knee",
-      "Not breathing through discomfort",
-      "Expecting immediate relief (takes consistency)",
-      "**Important Notes:**",
-      "IT band is fascia, not muscle - won't \"release\" like muscle",
-      "Focus on muscles that attach to IT band (TFL, glutes)",
-      "Reduce pressure if too painful",
-      "Consider rolling quads and glutes instead",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -374,17 +310,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR010",
-    "name_en": "Adductors (Inner Thigh)",
-    "name_ar": "Adductors (Inner Thigh) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU010",
+    "name_en": "March in Place",
+    "name_ar": "March in Place (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -401,13 +337,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling too close to groin",
-      "Not relaxing the leg",
-      "Rolling on pubic bone",
-      "Rushing through sensitive areas",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -415,17 +345,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR011",
-    "name_en": "Hamstrings (General)",
-    "name_ar": "Hamstrings (General) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU011",
+    "name_en": "Arm Circles (Small to Large)",
+    "name_ar": "Arm Circles (Small to Large) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -442,17 +372,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling behind the knee",
-      "Not rotating leg to target all muscles",
-      "Sitting passively (engage to lift body)",
-      "Rolling both legs when more pressure needed",
-      "**Variations:**",
-      "Double leg (beginner)",
-      "Single leg (more pressure)",
-      "Ball for specific trigger points",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -460,17 +380,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR012",
-    "name_en": "Biceps Femoris (Outer Hamstring)",
-    "name_ar": "Biceps Femoris (Outer Hamstring) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU012",
+    "name_en": "Arm Swings (Horizontal)",
+    "name_ar": "Arm Swings (Horizontal) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -487,11 +407,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Not rotating enough to isolate muscle",
-      "Confusing with IT band",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -499,17 +415,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR013",
-    "name_en": "Semitendinosus/Semimembranosus (Inner Hamstring)",
-    "name_ar": "Semitendinosus/Semimembranosus (Inner Hamstring) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU013",
+    "name_en": "Leg Swings (Front/Back)",
+    "name_ar": "Leg Swings (Front/Back) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -526,11 +442,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Not internally rotating enough",
-      "Rolling into sensitive adductor area",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -538,17 +450,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR014",
-    "name_en": "Glutes (Gluteus Maximus)",
-    "name_ar": "Glutes (Gluteus Maximus) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU014",
+    "name_en": "Leg Swings (Side to Side)",
+    "name_ar": "Leg Swings (Side to Side) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -565,17 +477,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Sitting square (not targeting specific glute)",
-      "Rolling on tailbone",
-      "Not leaning enough into target side",
-      "Moving too fast",
-      "**Variations:**",
-      "Both cheeks (general warmup)",
-      "Single side with figure-4 (deep work)",
-      "Ball for piriformis/trigger points",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -583,17 +485,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR015",
-    "name_en": "Gluteus Medius",
-    "name_ar": "Gluteus Medius (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU015",
+    "name_en": "Walking Knee Hug",
+    "name_ar": "Walking Knee Hug (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -610,12 +512,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on hip bone",
-      "Confusing with TFL (TFL is more forward)",
-      "Not supporting body properly",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -623,17 +520,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR016",
-    "name_en": "TFL (Tensor Fasciae Latae)",
-    "name_ar": "TFL (Tensor Fasciae Latae) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU016",
+    "name_en": "Walking Quad Pull",
+    "name_ar": "Walking Quad Pull (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -650,15 +547,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on hip bone (ASIS)",
-      "Confusing with hip flexor (more medial)",
-      "Rolling too large an area",
-      "**Notes:**",
-      "Small muscle - requires precision",
-      "Often very tight in desk workers and runners",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -666,17 +555,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR017",
-    "name_en": "Piriformis",
-    "name_ar": "Piriformis (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU017",
+    "name_en": "Walking Lunge with Twist",
+    "name_ar": "Walking Lunge with Twist (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -693,16 +582,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Using foam roller (not precise enough)",
-      "Rolling on sciatic nerve (causes shooting pain)",
-      "Pressing too hard initially",
-      "Not maintaining figure-4 position",
-      "**Caution:**",
-      "If you feel shooting pain down leg, move the ball",
-      "Not suitable during active sciatica",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -710,17 +590,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR018",
-    "name_en": "Hip Flexors (Psoas/Iliacus)",
-    "name_ar": "Hip Flexors (Psoas/Iliacus) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU018",
+    "name_en": "Inchworm",
+    "name_ar": "Inchworm (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -737,18 +617,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Too much pressure initially",
-      "Rolling instead of holding",
-      "Holding breath",
-      "Pressing on organs (go too medial)",
-      "**Caution:**",
-      "This is near organs - use appropriate pressure",
-      "Stop if you feel pulsing (femoral artery)",
-      "Not recommended during pregnancy",
-      "--",
-      "## UPPER BODY FOAM ROLLING"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -756,17 +625,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR019",
-    "name_en": "Lats (Latissimus Dorsi)",
-    "name_ar": "Lats (Latissimus Dorsi) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU019",
+    "name_en": "World's Greatest Stretch",
+    "name_ar": "World's Greatest Stretch (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -783,13 +652,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on ribs (painful and ineffective)",
-      "Not extending arm overhead",
-      "Rolling too far toward spine",
-      "Moving too quickly",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -797,17 +660,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR020",
-    "name_en": "Thoracic Spine (Upper Back)",
-    "name_ar": "Thoracic Spine (Upper Back) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU020",
+    "name_en": "Scorpion",
+    "name_ar": "Scorpion (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -824,20 +687,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling into lower back (hyperextension risk)",
-      "Flaring ribs instead of true extension",
-      "Rolling too fast",
-      "Hands pulling on neck",
-      "**Variations:**",
-      "Arms crossed (less extension)",
-      "Arms overhead (more extension)",
-      "Peanut for specific vertebrae",
-      "**Notes:**",
-      "Focus on extension, not just rolling",
-      "Great for desk workers and overhead athletes",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -845,17 +695,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR021",
-    "name_en": "Rhomboids/Mid-Back",
-    "name_ar": "Rhomboids/Mid-Back (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU021",
+    "name_en": "Iron Cross",
+    "name_ar": "Iron Cross (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -872,13 +722,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on spine",
-      "Using foam roller (too wide for this area)",
-      "Not protracting scapula to expose rhomboids",
-      "Pressing too hard on ribs",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -886,17 +730,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR022",
-    "name_en": "Upper Trapezius",
-    "name_ar": "Upper Trapezius (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU022",
+    "name_en": "Hip Circles (Standing)",
+    "name_ar": "Hip Circles (Standing) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -913,15 +757,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Too much pressure (sensitive area)",
-      "Rolling on cervical spine",
-      "Tensing shoulders while rolling",
-      "**Alternative:**",
-      "Lie on floor with ball under trap",
-      "Place in pillowcase for easier control",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -929,17 +765,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR023",
-    "name_en": "Levator Scapulae",
-    "name_ar": "Levator Scapulae (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU023",
+    "name_en": "Ankle Circles",
+    "name_ar": "Ankle Circles (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -956,12 +792,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Too much pressure",
-      "Rolling on spine",
-      "Not positioning ball correctly (at superomedial angle of scapula)",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -969,17 +800,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR024",
-    "name_en": "Pectoralis Major",
-    "name_ar": "Pectoralis Major (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU024",
+    "name_en": "Neck Circles (Gentle)",
+    "name_ar": "Neck Circles (Gentle) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -996,13 +827,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on collarbone",
-      "Pressing on breast tissue (women)",
-      "Rolling on shoulder joint",
-      "Using too much pressure initially",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1010,17 +835,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR025",
-    "name_en": "Pectoralis Minor",
-    "name_ar": "Pectoralis Minor (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU025",
+    "name_en": "Trunk Rotations",
+    "name_ar": "Trunk Rotations (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1037,15 +862,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on collarbone or shoulder joint",
-      "Too much pressure (can compress nerves)",
-      "Confusing with pec major",
-      "**Caution:**",
-      "Nerves and blood vessels run near here",
-      "If you feel tingling in arm, reposition ball",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1053,17 +870,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR026",
-    "name_en": "Anterior Deltoid",
-    "name_ar": "Anterior Deltoid (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU026",
+    "name_en": "Glute Bridge Hold",
+    "name_ar": "Glute Bridge Hold (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1080,12 +897,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on shoulder joint",
-      "Rolling too far into pec or bicep",
-      "Too much pressure",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1093,17 +905,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR027",
-    "name_en": "Posterior Deltoid/Rotator Cuff",
-    "name_ar": "Posterior Deltoid/Rotator Cuff (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU027",
+    "name_en": "Glute Bridge March",
+    "name_ar": "Glute Bridge March (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1120,15 +932,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on spine",
-      "Pressing directly on shoulder joint",
-      "Not relaxing shoulder",
-      "**Notes:**",
-      "Good for infraspinatus, teres minor, posterior deltoid",
-      "Move slowly in this area",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1136,17 +940,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR028",
-    "name_en": "Triceps",
-    "name_ar": "Triceps (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU028",
+    "name_en": "Clamshell",
+    "name_ar": "Clamshell (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1163,12 +967,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling over elbow joint",
-      "Not rotating to hit all heads",
-      "Applying too much pressure near armpit",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1176,17 +975,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR029",
-    "name_en": "Biceps",
-    "name_ar": "Biceps (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU029",
+    "name_en": "Fire Hydrant",
+    "name_ar": "Fire Hydrant (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1203,12 +1002,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling over elbow joint",
-      "Pressing into armpit",
-      "Not rotating forearm",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1216,17 +1010,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR030",
-    "name_en": "Forearm Extensors",
-    "name_ar": "Forearm Extensors (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU030",
+    "name_en": "Donkey Kick",
+    "name_ar": "Donkey Kick (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1243,15 +1037,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling over elbow",
-      "Rolling on bony wrist",
-      "Not flexing/extending fingers",
-      "**Notes:**",
-      "Great for computer users and climbers",
-      "Helpful for tennis elbow (lateral epicondylitis)",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1259,17 +1045,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR031",
-    "name_en": "Forearm Flexors",
-    "name_ar": "Forearm Flexors (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU031",
+    "name_en": "Bird Dog",
+    "name_ar": "Bird Dog (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1286,16 +1072,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling over elbow",
-      "Rolling on wrist bones",
-      "Not opening/closing hand",
-      "**Notes:**",
-      "Great for golfer's elbow (medial epicondylitis)",
-      "Helpful for grip-intensive activities",
-      "--",
-      "## TORSO FOAM ROLLING"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1303,17 +1080,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR032",
-    "name_en": "Quadratus Lumborum (QL)",
-    "name_ar": "Quadratus Lumborum (QL) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU032",
+    "name_en": "Dead Bug",
+    "name_ar": "Dead Bug (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1330,17 +1107,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Too much pressure",
-      "Rolling on ribs or spine",
-      "Pressing on kidney area (too far back)",
-      "Rolling instead of holding",
-      "**Caution:**",
-      "Very sensitive area",
-      "Start with minimal pressure",
-      "Avoid if you have kidney issues",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1348,17 +1115,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR033",
-    "name_en": "Erector Spinae (Lower Back)",
-    "name_ar": "Erector Spinae (Lower Back) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU033",
+    "name_en": "Plank Hold",
+    "name_ar": "Plank Hold (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1375,16 +1142,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on spinous processes (spine bumps)",
-      "Using single foam roller on lower back (causes hyperextension)",
-      "Too much pressure",
-      "Moving too quickly",
-      "**Important:**",
-      "Single foam roller not recommended for lower back",
-      "Use peanut or skip this area and stretch instead",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1392,17 +1150,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR034",
-    "name_en": "Serratus Anterior",
-    "name_ar": "Serratus Anterior (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU034",
+    "name_en": "Side Plank Hold",
+    "name_ar": "Side Plank Hold (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1419,12 +1177,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling on ribs too hard",
-      "Confusing with lats",
-      "Not rotating to access serratus",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1432,17 +1185,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR035",
-    "name_en": "Intercostals (Rib Muscles)",
-    "name_ar": "Intercostals (Rib Muscles) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU035",
+    "name_en": "Scapular Push-Ups",
+    "name_ar": "Scapular Push-Ups (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1459,13 +1212,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Too much pressure",
-      "Rolling instead of holding",
-      "Not breathing deeply",
-      "--",
-      "## SPECIALIZED TECHNIQUES"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1473,17 +1220,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR036",
-    "name_en": "Plantar Fascia (Foot)",
-    "name_ar": "Plantar Fascia (Foot) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU036",
+    "name_en": "Band Pull-Apart",
+    "name_ar": "Band Pull-Apart (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1500,15 +1247,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Rolling over toes",
-      "Too much pressure on heel bone",
-      "Not covering arch fully",
-      "**Notes:**",
-      "Frozen water bottle provides massage + cold therapy",
-      "Great for plantar fasciitis (consult healthcare provider first)",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1516,17 +1255,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR037",
-    "name_en": "Suboccipitals (Base of Skull)",
-    "name_ar": "Suboccipitals (Base of Skull) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU037",
+    "name_en": "Face Pull (Band)",
+    "name_ar": "Face Pull (Band) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1543,16 +1282,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Balls too low on neck",
-      "Too much movement",
-      "Tensing instead of relaxing",
-      "Using too hard a ball",
-      "**Notes:**",
-      "Great for headache relief",
-      "Use softer balls (tennis) for this area",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1560,17 +1290,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR038",
-    "name_en": "Scalenes (Side of Neck)",
-    "name_ar": "Scalenes (Side of Neck) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU038",
+    "name_en": "Wall Slide",
+    "name_ar": "Wall Slide (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1587,16 +1317,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Too much pressure",
-      "Rolling on blood vessels/nerves",
-      "Using hard ball",
-      "**Caution:**",
-      "Very sensitive area with important structures",
-      "Use only light pressure",
-      "Finger massage may be safer",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1604,17 +1325,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR039",
-    "name_en": "SCM (Sternocleidomastoid)",
-    "name_ar": "SCM (Sternocleidomastoid) (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU039",
+    "name_en": "Shoulder Pass-Through",
+    "name_ar": "Shoulder Pass-Through (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1631,16 +1352,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Using a ball (too aggressive)",
-      "Pressing on blood vessels",
-      "Too much pressure",
-      "**Caution:**",
-      "Carotid artery runs nearby",
-      "Finger work only recommended",
-      "Skip if you have vascular issues",
-      "--"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1648,17 +1360,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
     ]
   },
   {
-    "id": "FR040",
-    "name_en": "Jaw/Masseter",
-    "name_ar": "Jaw/Masseter (AR)",
-    "description_en": "A recovery exercise focusing on the foam-rolling.",
-    "description_ar": "تمرين recovery يركز على foam-rolling.",
-    "category": "RECOVERY",
+    "id": "WU040",
+    "name_en": "Cat-Cow",
+    "name_ar": "Cat-Cow (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1675,16 +1387,7 @@
       "الخطوة ٢: قم بأداء الحركة.",
       "الخطوة ٣: عد إلى وضعية البداية."
     ],
-    "tips_en": [
-      "Clenching jaw while massaging",
-      "Too much pressure",
-      "Working on jaw joint itself",
-      "**Notes:**",
-      "Helpful for jaw tension and teeth grinding",
-      "Can also use thumb inside mouth (clean hands) for deeper work",
-      "--",
-      "## FOAM ROLLING ROUTINES"
-    ],
+    "tips_en": [],
     "tips_ar": [],
     "is_time_based": false,
     "default_sets": 3,
@@ -1692,8 +1395,463 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "recovery",
-      "foam-rolling"
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU041",
+    "name_en": "Goblet Squat Hold",
+    "name_ar": "Goblet Squat Hold (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU042",
+    "name_en": "Wall Ankle Mobilization",
+    "name_ar": "Wall Ankle Mobilization (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU043",
+    "name_en": "Bodyweight Squats",
+    "name_ar": "Bodyweight Squats (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU044",
+    "name_en": "Hip Hinge with Dowel",
+    "name_ar": "Hip Hinge with Dowel (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU045",
+    "name_en": "Good Morning (Bodyweight)",
+    "name_ar": "Good Morning (Bodyweight) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU046",
+    "name_en": "Pull-Through (Band)",
+    "name_ar": "Pull-Through (Band) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU047",
+    "name_en": "Push-Up Plus",
+    "name_ar": "Push-Up Plus (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU048",
+    "name_en": "Band Chest Fly",
+    "name_ar": "Band Chest Fly (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU049",
+    "name_en": "I-Y-T-W Raises (Prone)",
+    "name_ar": "I-Y-T-W Raises (Prone) (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU050",
+    "name_en": "A-Skip",
+    "name_ar": "A-Skip (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU051",
+    "name_en": "B-Skip",
+    "name_ar": "B-Skip (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU052",
+    "name_en": "Straight Leg Bound",
+    "name_ar": "Straight Leg Bound (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
+    ]
+  },
+  {
+    "id": "WU053",
+    "name_en": "Build-Up Sprint",
+    "name_ar": "Build-Up Sprint (AR)",
+    "description_en": "A warmup exercise focusing on the warmup-exercises.",
+    "description_ar": "تمرين warmup يركز على warmup-exercises.",
+    "category": "WARMUP",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "warmup",
+      "warmup-exercises"
     ]
   }
 ]

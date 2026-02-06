@@ -1,0 +1,542 @@
+[
+  {
+    "id": "MAC001",
+    "name_en": "Leg Press (Wide Stance)",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC002",
+    "name_en": "Leg Press (Narrow Stance)",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC003",
+    "name_en": "Leg Press (High Foot Placement)",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS", "QUADRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC004",
+    "name_en": "Leg Press (Low Foot Placement)",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC005",
+    "name_en": "Single Leg Press",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC006",
+    "name_en": "Vertical Leg Press",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC007",
+    "name_en": "Pendulum Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC008",
+    "name_en": "Belt Squat Machine",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC009",
+    "name_en": "V-Squat Machine",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC010",
+    "name_en": "Sissy Squat Machine",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC011",
+    "name_en": "Reverse Hack Squat",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS", "QUADRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC012",
+    "name_en": "Standing Leg Curl",
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": ["CALVES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC013",
+    "name_en": "Prone Leg Curl",
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": ["CALVES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC014",
+    "name_en": "Kneeling Leg Curl",
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": ["CALVES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC015",
+    "name_en": "Glute Drive Machine",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC016",
+    "name_en": "Hip Abduction Machine",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC017",
+    "name_en": "Hip Adduction Machine",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC018",
+    "name_en": "Standing Hip Abduction Machine",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC019",
+    "name_en": "Glute Kickback Machine",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC020",
+    "name_en": "Donkey Calf Raise Machine",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC021",
+    "name_en": "Rotary Calf Machine",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC022",
+    "name_en": "Assisted Dip Machine",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": ["CHEST", "SHOULDERS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC023",
+    "name_en": "Assisted Pull-Up Machine",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC024",
+    "name_en": "Lat Pulldown (Wide Grip)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES", "CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC025",
+    "name_en": "Lat Pulldown (Reverse Grip)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES", "CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC026",
+    "name_en": "Lat Pulldown (Neutral Grip)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES", "CABLES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC027",
+    "name_en": "Lat Pulldown (Single Arm)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES", "CABLES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC028",
+    "name_en": "Behind Neck Pulldown",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS", "SHOULDERS"],
+    "equipment": ["MACHINES", "CABLES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC029",
+    "name_en": "Chest Supported Row Machine",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC030",
+    "name_en": "Plate Loaded Row Machine",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC031",
+    "name_en": "Iso-Lateral Row Machine",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC032",
+    "name_en": "Iso-Lateral Low Row",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC033",
+    "name_en": "Iso-Lateral High Row",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS", "SHOULDERS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC034",
+    "name_en": "Pullover Machine",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["CHEST"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC035",
+    "name_en": "Rear Delt Machine",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC036",
+    "name_en": "Pec Deck (Reverse)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC037",
+    "name_en": "Iso-Lateral Chest Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC038",
+    "name_en": "Iso-Lateral Incline Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["SHOULDERS", "TRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC039",
+    "name_en": "Iso-Lateral Decline Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC040",
+    "name_en": "Seated Chest Press Machine",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC041",
+    "name_en": "Incline Chest Press Machine",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["SHOULDERS", "TRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC042",
+    "name_en": "Decline Chest Press Machine",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC043",
+    "name_en": "Converging Chest Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC044",
+    "name_en": "Iso-Lateral Shoulder Press",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC045",
+    "name_en": "Lateral Raise Machine",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC046",
+    "name_en": "Front Raise Machine",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC047",
+    "name_en": "Shrug Machine",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC048",
+    "name_en": "Bicep Curl Machine",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": ["FOREARMS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC049",
+    "name_en": "Preacher Curl Machine",
+    "primary_muscle": "BICEPS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC050",
+    "name_en": "Tricep Extension Machine",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC051",
+    "name_en": "Tricep Dip Machine",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": ["CHEST"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC052",
+    "name_en": "Ab Crunch Machine",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC053",
+    "name_en": "Rotary Torso Machine",
+    "primary_muscle": "OBLIQUES",
+    "secondary_muscles": ["ABS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC054",
+    "name_en": "Back Extension Machine",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC055",
+    "name_en": "Reverse Hyperextension Machine",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC056",
+    "name_en": "Glute Ham Raise Machine",
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": ["GLUTES", "LOWER_BACK"],
+    "equipment": ["MACHINES"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC057",
+    "name_en": "45-Degree Back Extension",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC058",
+    "name_en": "Roman Chair Back Extension",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC059",
+    "name_en": "Captain's Chair Leg Raise",
+    "primary_muscle": "ABS",
+    "secondary_muscles": ["OBLIQUES"],
+    "equipment": ["MACHINES"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "MAC060",
+    "name_en": "Captain's Chair Knee Raise",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [],
+    "equipment": ["MACHINES"],
+    "difficulty": "BEGINNER",
+    "category": "STRENGTH"
+  }
+]

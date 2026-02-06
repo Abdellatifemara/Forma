@@ -1,236 +1,15 @@
 [
   {
-    "id": "TR001",
-    "name_en": "Close-Grip Bench Press",
-    "name_ar": "Close-Grip Bench Press (AR)",
-    "description_en": "A arms exercise focusing on the all triceps heads.",
-    "description_ar": "تمرين arms يركز على all triceps heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "CHEST"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Grip shoulder-width or slightly narrower",
-      "Keep elbows tucked at 30-45° from body",
-      "Lower bar to lower chest",
-      "Press up while focusing on triceps",
-      "Full lockout at top"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [
-      "Grip too narrow → Wrist strain, use shoulder width",
-      "Elbows flaring → Keep tucked",
-      "Not locking out → Full extension for triceps",
-      "--"
-    ],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR002",
-    "name_en": "Close-Grip Bench - Pause Rep",
-    "name_ar": "Close-Grip Bench - Pause Rep (AR)",
-    "description_en": "A arms exercise focusing on the all triceps heads.",
-    "description_ar": "تمرين arms يركز على all triceps heads.",
-    "category": "ARMS",
+    "id": "MD001",
+    "name_en": "Standing Hip CAR",
+    "name_ar": "Standing Hip CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR003",
-    "name_en": "Close-Grip Bench - Tempo 3-1-2",
-    "name_ar": "Close-Grip Bench - Tempo 3-1-2 (AR)",
-    "description_en": "A arms exercise focusing on the all triceps heads.",
-    "description_ar": "تمرين arms يركز على all triceps heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR004",
-    "name_en": "Close-Grip Floor Press",
-    "name_ar": "Close-Grip Floor Press (AR)",
-    "description_en": "A arms exercise focusing on the triceps, lockout strength.",
-    "description_ar": "تمرين arms يركز على triceps, lockout strength.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR005",
-    "name_en": "JM Press",
-    "name_ar": "JM Press (AR)",
-    "description_en": "A arms exercise focusing on the triceps.",
-    "description_ar": "تمرين arms يركز على triceps.",
-    "category": "ARMS",
-    "primary_muscle": "TRICEPS",
-    "secondary_muscles": [
-      "CHEST"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR006",
-    "name_en": "Board Press (tricep focus)",
-    "name_ar": "Board Press (tricep focus) (AR)",
-    "description_en": "A arms exercise focusing on the triceps (lockout).",
-    "description_ar": "تمرين arms يركز على triceps (lockout).",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR007",
-    "name_en": "Smith Machine Close-Grip Press",
-    "name_ar": "Smith Machine Close-Grip Press (AR)",
-    "description_en": "A arms exercise focusing on the all triceps heads.",
-    "description_ar": "تمرين arms يركز على all triceps heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -251,21 +30,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR008",
-    "name_en": "DB Close-Grip Press",
-    "name_ar": "DB Close-Grip Press (AR)",
-    "description_en": "A arms exercise focusing on the all triceps heads.",
-    "description_ar": "تمرين arms يركز على all triceps heads.",
-    "category": "ARMS",
+    "id": "MD002",
+    "name_en": "Quadruped Hip CAR",
+    "name_ar": "Quadruped Hip CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -286,126 +65,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR009",
-    "name_en": "DB Tate Press",
-    "name_ar": "DB Tate Press (AR)",
-    "description_en": "A arms exercise focusing on the triceps.",
-    "description_ar": "تمرين arms يركز على triceps.",
-    "category": "ARMS",
-    "primary_muscle": "TRICEPS",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR010",
-    "name_en": "Decline Close-Grip Bench",
-    "name_ar": "Decline Close-Grip Bench (AR)",
-    "description_en": "A arms exercise focusing on the triceps, lower chest.",
-    "description_ar": "تمرين arms يركز على triceps, lower chest.",
-    "category": "ARMS",
+    "id": "MD003",
+    "name_en": "Supine Hip CAR",
+    "name_ar": "Supine Hip CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR011",
-    "name_en": "Incline Close-Grip Bench",
-    "name_ar": "Incline Close-Grip Bench (AR)",
-    "description_en": "A arms exercise focusing on the triceps, upper chest.",
-    "description_ar": "تمرين arms يركز على triceps, upper chest.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR012",
-    "name_en": "Machine Tricep Press",
-    "name_ar": "Machine Tricep Press (AR)",
-    "description_en": "A arms exercise focusing on the triceps.",
-    "description_ar": "تمرين arms يركز على triceps.",
-    "category": "ARMS",
-    "primary_muscle": "TRICEPS",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -426,197 +100,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR013",
-    "name_en": "Landmine Press - Tricep Focus",
-    "name_ar": "Landmine Press - Tricep Focus (AR)",
-    "description_en": "A arms exercise focusing on the triceps.",
-    "description_ar": "تمرين arms يركز على triceps.",
-    "category": "ARMS",
-    "primary_muscle": "TRICEPS",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR014",
-    "name_en": "Pin Press - Tricep Focus",
-    "name_ar": "Pin Press - Tricep Focus (AR)",
-    "description_en": "A arms exercise focusing on the triceps (lockout).",
-    "description_ar": "تمرين arms يركز على triceps (lockout).",
-    "category": "ARMS",
+    "id": "MD004",
+    "name_en": "Standing Shoulder CAR",
+    "name_ar": "Standing Shoulder CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR015",
-    "name_en": "Skull Crusher - EZ Bar",
-    "name_ar": "Skull Crusher - EZ Bar (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Lie on bench, arms extended over chest",
-      "Lower bar to forehead (or behind head for more stretch)",
-      "Keep upper arms stationary",
-      "Extend arms fully at top"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR016",
-    "name_en": "Skull Crusher - Barbell",
-    "name_ar": "Skull Crusher - Barbell (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR017",
-    "name_en": "Skull Crusher - Dumbbell",
-    "name_ar": "Skull Crusher - Dumbbell (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR018",
-    "name_en": "Skull Crusher - Single DB (both hands)",
-    "name_ar": "Skull Crusher - Single DB (both hands) (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -637,91 +135,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR019",
-    "name_en": "Skull Crusher - Decline",
-    "name_ar": "Skull Crusher - Decline (AR)",
-    "description_en": "A arms exercise focusing on the long head (greater stretch).",
-    "description_ar": "تمرين arms يركز على long head (greater stretch).",
-    "category": "ARMS",
+    "id": "MD005",
+    "name_en": "Prone Shoulder CAR",
+    "name_ar": "Prone Shoulder CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR020",
-    "name_en": "Skull Crusher - Incline",
-    "name_ar": "Skull Crusher - Incline (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR021",
-    "name_en": "Skull Crusher - Floor",
-    "name_ar": "Skull Crusher - Floor (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -742,232 +170,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR022",
-    "name_en": "Skull Crusher - To Nose",
-    "name_ar": "Skull Crusher - To Nose (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
+    "id": "MD006",
+    "name_en": "Cervical (Neck) CAR",
+    "name_ar": "Cervical (Neck) CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR023",
-    "name_en": "Skull Crusher - Behind Head",
-    "name_ar": "Skull Crusher - Behind Head (AR)",
-    "description_en": "A arms exercise focusing on the long head (maximum stretch).",
-    "description_ar": "تمرين arms يركز على long head (maximum stretch).",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR024",
-    "name_en": "Skull Crusher - Pause Rep",
-    "name_ar": "Skull Crusher - Pause Rep (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR025",
-    "name_en": "Skull Crusher to Close-Grip Press",
-    "name_ar": "Skull Crusher to Close-Grip Press (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR026",
-    "name_en": "Cable Skull Crusher",
-    "name_ar": "Cable Skull Crusher (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR027",
-    "name_en": "Overhead Tricep Extension - DB (two hands)",
-    "name_ar": "Overhead Tricep Extension - DB (two hands) (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Hold one DB with both hands behind head",
-      "Keep elbows pointed forward",
-      "Extend arms overhead",
-      "Lower with control"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR028",
-    "name_en": "Overhead Extension - Single Arm DB",
-    "name_ar": "Overhead Extension - Single Arm DB (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -988,21 +205,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR029",
-    "name_en": "Overhead Extension - Seated",
-    "name_ar": "Overhead Extension - Seated (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
+    "id": "MD007",
+    "name_en": "Thoracic CAR",
+    "name_ar": "Thoracic CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1023,196 +240,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR030",
-    "name_en": "Overhead Extension - EZ Bar",
-    "name_ar": "Overhead Extension - EZ Bar (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
+    "id": "MD008",
+    "name_en": "Lumbar CAR (Gentle)",
+    "name_ar": "Lumbar CAR (Gentle) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR031",
-    "name_en": "Overhead Extension - Barbell",
-    "name_ar": "Overhead Extension - Barbell (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR032",
-    "name_en": "Overhead Cable Extension - Rope",
-    "name_ar": "Overhead Cable Extension - Rope (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR033",
-    "name_en": "Overhead Cable Extension - Single Arm",
-    "name_ar": "Overhead Cable Extension - Single Arm (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR034",
-    "name_en": "Overhead Cable Extension - Bar",
-    "name_ar": "Overhead Cable Extension - Bar (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR035",
-    "name_en": "Overhead Extension - Band",
-    "name_ar": "Overhead Extension - Band (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1233,232 +275,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR036",
-    "name_en": "French Press (standing)",
-    "name_ar": "French Press (standing) (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
+    "id": "MD009",
+    "name_en": "Wrist CAR",
+    "name_ar": "Wrist CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR037",
-    "name_en": "Overhead Extension - Incline (face away)",
-    "name_ar": "Overhead Extension - Incline (face away) (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR038",
-    "name_en": "Overhead Extension - Pause Rep",
-    "name_ar": "Overhead Extension - Pause Rep (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR039",
-    "name_en": "Overhead Extension - 21s",
-    "name_ar": "Overhead Extension - 21s (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR040",
-    "name_en": "Kneeling Overhead Extension",
-    "name_ar": "Kneeling Overhead Extension (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR041",
-    "name_en": "Tricep Pushdown - Straight Bar",
-    "name_ar": "Tricep Pushdown - Straight Bar (AR)",
-    "description_en": "A arms exercise focusing on the lateral, medial heads.",
-    "description_ar": "تمرين arms يركز على lateral, medial heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Stand facing cable, slight forward lean",
-      "Keep elbows pinned at sides",
-      "Push bar down until arms fully extended",
-      "Control the return, don't let weight pull up"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR042",
-    "name_en": "Tricep Pushdown - V-Bar",
-    "name_ar": "Tricep Pushdown - V-Bar (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1479,21 +310,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR043",
-    "name_en": "Tricep Pushdown - Rope",
-    "name_ar": "Tricep Pushdown - Rope (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD010",
+    "name_en": "Ankle CAR",
+    "name_ar": "Ankle CAR (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1514,301 +345,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR044",
-    "name_en": "Tricep Pushdown - Single Arm",
-    "name_ar": "Tricep Pushdown - Single Arm (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD011",
+    "name_en": "90/90 Hip Switches",
+    "name_ar": "90/90 Hip Switches (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR045",
-    "name_en": "Tricep Pushdown - Reverse Grip",
-    "name_ar": "Tricep Pushdown - Reverse Grip (AR)",
-    "description_en": "A arms exercise focusing on the medial head.",
-    "description_ar": "تمرين arms يركز على medial head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR046",
-    "name_en": "Tricep Pushdown - Pause Rep",
-    "name_ar": "Tricep Pushdown - Pause Rep (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "CABLES"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR047",
-    "name_en": "Tricep Pushdown - Drop Set",
-    "name_ar": "Tricep Pushdown - Drop Set (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "CABLES"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR048",
-    "name_en": "Tricep Pushdown - 21s",
-    "name_ar": "Tricep Pushdown - 21s (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "CABLES"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR049",
-    "name_en": "Tricep Pushdown - Leaning",
-    "name_ar": "Tricep Pushdown - Leaning (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR050",
-    "name_en": "Tricep Pushdown - Behind Back",
-    "name_ar": "Tricep Pushdown - Behind Back (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR051",
-    "name_en": "Cross-Body Pushdown",
-    "name_ar": "Cross-Body Pushdown (AR)",
-    "description_en": "A arms exercise focusing on the lateral head.",
-    "description_ar": "تمرين arms يركز على lateral head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR052",
-    "name_en": "Machine Tricep Pushdown",
-    "name_ar": "Machine Tricep Pushdown (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1829,21 +380,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR053",
-    "name_en": "Band Pushdown",
-    "name_ar": "Band Pushdown (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD012",
+    "name_en": "90/90 Active Hip Lift",
+    "name_ar": "90/90 Active Hip Lift (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1864,21 +415,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR054",
-    "name_en": "Band Pushdown - Single Arm",
-    "name_ar": "Band Pushdown - Single Arm (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD013",
+    "name_en": "Hip Airplane",
+    "name_ar": "Hip Airplane (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1899,21 +450,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR055",
-    "name_en": "Pushdown - Pronated Grip",
-    "name_ar": "Pushdown - Pronated Grip (AR)",
-    "description_en": "A arms exercise focusing on the lateral head.",
-    "description_ar": "تمرين arms يركز على lateral head.",
-    "category": "ARMS",
+    "id": "MD014",
+    "name_en": "Frog Rock",
+    "name_ar": "Frog Rock (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1934,162 +485,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR056",
-    "name_en": "Pushdown - Supinated Grip",
-    "name_ar": "Pushdown - Supinated Grip (AR)",
-    "description_en": "A arms exercise focusing on the medial head.",
-    "description_ar": "تمرين arms يركز على medial head.",
-    "category": "ARMS",
+    "id": "MD015",
+    "name_en": "Pigeon Rotations",
+    "name_ar": "Pigeon Rotations (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR057",
-    "name_en": "Tricep Kickback - DB",
-    "name_ar": "Tricep Kickback - DB (AR)",
-    "description_en": "A arms exercise focusing on the long, lateral heads.",
-    "description_ar": "تمرين arms يركز على long, lateral heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Hinge forward, upper arm parallel to floor",
-      "Keep elbow pinned at side",
-      "Extend arm back until straight",
-      "Squeeze at top, control descent"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR058",
-    "name_en": "Kickback - Both Arms",
-    "name_ar": "Kickback - Both Arms (AR)",
-    "description_en": "A arms exercise focusing on the long, lateral heads.",
-    "description_ar": "تمرين arms يركز على long, lateral heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR059",
-    "name_en": "Kickback - Cable",
-    "name_ar": "Kickback - Cable (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR060",
-    "name_en": "Kickback - Band",
-    "name_ar": "Kickback - Band (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2110,21 +520,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR061",
-    "name_en": "Kickback - Bench Supported",
-    "name_ar": "Kickback - Bench Supported (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
+    "id": "MD016",
+    "name_en": "Deep Squat Hold with Shifts",
+    "name_ar": "Deep Squat Hold with Shifts (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2145,199 +555,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR062",
-    "name_en": "Kickback - Pause Rep",
-    "name_ar": "Kickback - Pause Rep (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
+    "id": "MD017",
+    "name_en": "Tactical Frog",
+    "name_ar": "Tactical Frog (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR063",
-    "name_en": "Kickback - Prone on Incline",
-    "name_ar": "Kickback - Prone on Incline (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR064",
-    "name_en": "Kickback - Supinated Grip",
-    "name_ar": "Kickback - Supinated Grip (AR)",
-    "description_en": "A arms exercise focusing on the medial head.",
-    "description_ar": "تمرين arms يركز على medial head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR065",
-    "name_en": "Tricep Dip - Parallel Bars",
-    "name_ar": "Tricep Dip - Parallel Bars (AR)",
-    "description_en": "A arms exercise focusing on the all triceps heads.",
-    "description_ar": "تمرين arms يركز على all triceps heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "CHEST",
-      "SHOULDERS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR066",
-    "name_en": "Tricep Dip - Weighted",
-    "name_ar": "Tricep Dip - Weighted (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR067",
-    "name_en": "Tricep Dip - Negative Only",
-    "name_ar": "Tricep Dip - Negative Only (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2358,21 +590,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR068",
-    "name_en": "Tricep Dip - Machine Assisted",
-    "name_ar": "Tricep Dip - Machine Assisted (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD018",
+    "name_en": "Shin Box Transitions",
+    "name_ar": "Shin Box Transitions (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2393,21 +625,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR069",
-    "name_en": "Bench Dip",
-    "name_ar": "Bench Dip (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD019",
+    "name_en": "Kneeling Hip Flexor PAILs/RAILs",
+    "name_ar": "Kneeling Hip Flexor PAILs/RAILs (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "BENCH"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2428,233 +660,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR070",
-    "name_en": "Bench Dip - Weighted",
-    "name_ar": "Bench Dip - Weighted (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD020",
+    "name_en": "Hip Capsule Circles",
+    "name_ar": "Hip Capsule Circles (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR071",
-    "name_en": "Bench Dip - Feet Elevated",
-    "name_ar": "Bench Dip - Feet Elevated (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR072",
-    "name_en": "Ring Dip - Tricep Focus",
-    "name_ar": "Ring Dip - Tricep Focus (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR073",
-    "name_en": "Korean Dip",
-    "name_ar": "Korean Dip (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR074",
-    "name_en": "Straight Bar Dip",
-    "name_ar": "Straight Bar Dip (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR075",
-    "name_en": "Diamond Push-Up",
-    "name_ar": "Diamond Push-Up (AR)",
-    "description_en": "A arms exercise focusing on the all heads (highest emg!).",
-    "description_ar": "تمرين arms يركز على all heads (highest emg!).",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "CHEST"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR076",
-    "name_en": "Close-Grip Push-Up",
-    "name_ar": "Close-Grip Push-Up (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2675,231 +695,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR077",
-    "name_en": "Tricep Push-Up (elbows back)",
-    "name_ar": "Tricep Push-Up (elbows back) (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD021",
+    "name_en": "Shoulder Pass-Through",
+    "name_ar": "Shoulder Pass-Through (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR078",
-    "name_en": "Sphinx Push-Up",
-    "name_ar": "Sphinx Push-Up (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR079",
-    "name_en": "Tiger Bend Push-Up",
-    "name_ar": "Tiger Bend Push-Up (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR080",
-    "name_en": "TRX Tricep Extension",
-    "name_ar": "TRX Tricep Extension (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "TRX"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR081",
-    "name_en": "Ring Tricep Extension",
-    "name_ar": "Ring Tricep Extension (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR082",
-    "name_en": "Bodyweight Skull Crusher (bar)",
-    "name_ar": "Bodyweight Skull Crusher (bar) (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR083",
-    "name_en": "Tricep Pushdown Hold",
-    "name_ar": "Tricep Pushdown Hold (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "CABLES"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2920,91 +730,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR084",
-    "name_en": "Overhead Extension Hold",
-    "name_ar": "Overhead Extension Hold (AR)",
-    "description_en": "A arms exercise focusing on the long head.",
-    "description_ar": "تمرين arms يركز على long head.",
-    "category": "ARMS",
+    "id": "MD022",
+    "name_en": "Wall Slide",
+    "name_ar": "Wall Slide (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR085",
-    "name_en": "Lockout Hold (bench position)",
-    "name_ar": "Lockout Hold (bench position) (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR086",
-    "name_en": "Dip Hold (top)",
-    "name_ar": "Dip Hold (top) (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -3025,56 +765,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
     ]
   },
   {
-    "id": "TR087",
-    "name_en": "Diamond Push-Up Hold",
-    "name_ar": "Diamond Push-Up Hold (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
+    "id": "MD023",
+    "name_en": "Floor Slide (Supine)",
+    "name_ar": "Floor Slide (Supine) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "arms",
-      "triceps"
-    ]
-  },
-  {
-    "id": "TR088",
-    "name_en": "Wall Push Isometric",
-    "name_ar": "Wall Push Isometric (AR)",
-    "description_en": "A arms exercise focusing on the all heads.",
-    "description_ar": "تمرين arms يركز على all heads.",
-    "category": "ARMS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -3095,8 +800,2038 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "arms",
-      "triceps"
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD024",
+    "name_en": "Thread the Needle (Active)",
+    "name_ar": "Thread the Needle (Active) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD025",
+    "name_en": "Prone Y, T, W, L",
+    "name_ar": "Prone Y, T, W, L (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD026",
+    "name_en": "Banded Pull-Apart (Various Angles)",
+    "name_ar": "Banded Pull-Apart (Various Angles) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD027",
+    "name_en": "Face Pull with External Rotation",
+    "name_ar": "Face Pull with External Rotation (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD028",
+    "name_en": "Shoulder Flexion PAILs/RAILs",
+    "name_ar": "Shoulder Flexion PAILs/RAILs (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD029",
+    "name_en": "Prone Swimmer Circles",
+    "name_ar": "Prone Swimmer Circles (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD030",
+    "name_en": "Chest Opener on Foam Roller",
+    "name_ar": "Chest Opener on Foam Roller (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD031",
+    "name_en": "Cat-Cow (Segmental)",
+    "name_ar": "Cat-Cow (Segmental) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD032",
+    "name_en": "Quadruped Thoracic Rotation",
+    "name_ar": "Quadruped Thoracic Rotation (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD033",
+    "name_en": "Open Book",
+    "name_ar": "Open Book (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD034",
+    "name_en": "Seated Thoracic Rotation",
+    "name_ar": "Seated Thoracic Rotation (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD035",
+    "name_en": "Jefferson Curl",
+    "name_ar": "Jefferson Curl (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD036",
+    "name_en": "Sphinx to Child's Pose Flow",
+    "name_ar": "Sphinx to Child's Pose Flow (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD037",
+    "name_en": "Foam Roller Thoracic Extension",
+    "name_ar": "Foam Roller Thoracic Extension (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD038",
+    "name_en": "Side-Lying Windmill",
+    "name_ar": "Side-Lying Windmill (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD039",
+    "name_en": "Wall Ankle Mobilization",
+    "name_ar": "Wall Ankle Mobilization (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD040",
+    "name_en": "Banded Ankle Mobilization",
+    "name_ar": "Banded Ankle Mobilization (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD041",
+    "name_en": "Elevated Heel Squat Hold",
+    "name_ar": "Elevated Heel Squat Hold (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD042",
+    "name_en": "Single Leg Ankle Circles (Weighted)",
+    "name_ar": "Single Leg Ankle Circles (Weighted) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD043",
+    "name_en": "Calf Raise with Pause at Bottom",
+    "name_ar": "Calf Raise with Pause at Bottom (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD044",
+    "name_en": "Quadruped Wrist Circles",
+    "name_ar": "Quadruped Wrist Circles (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD045",
+    "name_en": "Wrist Push-Up Position Hold",
+    "name_ar": "Wrist Push-Up Position Hold (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD046",
+    "name_en": "Finger Extension Stretch",
+    "name_ar": "Finger Extension Stretch (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD047",
+    "name_en": "Prayer Position Pulses",
+    "name_ar": "Prayer Position Pulses (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD048",
+    "name_en": "Wrist Flexion/Extension with Band",
+    "name_ar": "Wrist Flexion/Extension with Band (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD049",
+    "name_en": "Neck Segmental Rotation",
+    "name_ar": "Neck Segmental Rotation (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD050",
+    "name_en": "Chin Tuck with Rotation",
+    "name_ar": "Chin Tuck with Rotation (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD051",
+    "name_en": "Neck Flexion PAILs/RAILs",
+    "name_ar": "Neck Flexion PAILs/RAILs (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD052",
+    "name_en": "Supine Neck Protraction/Retraction",
+    "name_ar": "Supine Neck Protraction/Retraction (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD053",
+    "name_en": "Morning Mobility Flow",
+    "name_ar": "Morning Mobility Flow (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD054",
+    "name_en": "Pre-Squat Mobility Flow",
+    "name_ar": "Pre-Squat Mobility Flow (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD055",
+    "name_en": "Pre-Pressing Mobility Flow",
+    "name_ar": "Pre-Pressing Mobility Flow (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD056",
+    "name_en": "Office Worker Reset",
+    "name_ar": "Office Worker Reset (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD057",
+    "name_en": "Post-Workout Mobility",
+    "name_ar": "Post-Workout Mobility (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD058",
+    "name_en": "Scapular Push-Ups",
+    "name_ar": "Scapular Push-Ups (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD059",
+    "name_en": "Prone Scorpion",
+    "name_ar": "Prone Scorpion (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD060",
+    "name_en": "Spiderman Lunge with Rotation",
+    "name_ar": "Spiderman Lunge with Rotation (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD061",
+    "name_en": "Bretzel (Active)",
+    "name_ar": "Bretzel (Active) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD062",
+    "name_en": "Kneeling T-Spine Rotation",
+    "name_ar": "Kneeling T-Spine Rotation (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD063",
+    "name_en": "Hip Flexor Contract-Relax",
+    "name_ar": "Hip Flexor Contract-Relax (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD064",
+    "name_en": "Squat to Stand",
+    "name_ar": "Squat to Stand (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD065",
+    "name_en": "World's Greatest Stretch (Full Version)",
+    "name_ar": "World's Greatest Stretch (Full Version) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD066",
+    "name_en": "Active Pigeon with Rotation",
+    "name_ar": "Active Pigeon with Rotation (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD067",
+    "name_en": "Bear Sit Position",
+    "name_ar": "Bear Sit Position (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD068",
+    "name_en": "Heel Sit to Kneeling",
+    "name_ar": "Heel Sit to Kneeling (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD069",
+    "name_en": "Cossack Squat",
+    "name_ar": "Cossack Squat (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD070",
+    "name_en": "Loaded Progressive Stretch (Hip Flexor)",
+    "name_ar": "Loaded Progressive Stretch (Hip Flexor) (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD071",
+    "name_en": "Lat Foam Roll to Overhead Reach",
+    "name_ar": "Lat Foam Roll to Overhead Reach (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD072",
+    "name_en": "Thoracic Extension Over Roller",
+    "name_ar": "Thoracic Extension Over Roller (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD073",
+    "name_en": "Goblet Squat Hold",
+    "name_ar": "Goblet Squat Hold (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD074",
+    "name_en": "Ankle Mobilization with Squat",
+    "name_ar": "Ankle Mobilization with Squat (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD075",
+    "name_en": "Overhead Squat Assessment",
+    "name_ar": "Overhead Squat Assessment (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD076",
+    "name_en": "Wall Angel Assessment",
+    "name_ar": "Wall Angel Assessment (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD077",
+    "name_en": "Thomas Test Position",
+    "name_ar": "Thomas Test Position (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD078",
+    "name_en": "Front Rack Mobility",
+    "name_ar": "Front Rack Mobility (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD079",
+    "name_en": "Overhead Squat Position Work",
+    "name_ar": "Overhead Squat Position Work (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD080",
+    "name_en": "Hip Escape Mobility",
+    "name_ar": "Hip Escape Mobility (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
+    ]
+  },
+  {
+    "id": "MD081",
+    "name_en": "Hourly Reset Routine",
+    "name_ar": "Hourly Reset Routine (AR)",
+    "description_en": "A mobility exercise focusing on the mobility-drills.",
+    "description_ar": "تمرين mobility يركز على mobility-drills.",
+    "category": "MOBILITY",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "mobility",
+      "mobility-drills"
     ]
   }
 ]

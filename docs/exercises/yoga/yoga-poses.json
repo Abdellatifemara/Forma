@@ -1,11 +1,11 @@
 [
   {
-    "id": "ST001",
-    "name_en": "Standing Hamstring Stretch",
-    "name_ar": "Standing Hamstring Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG001",
+    "name_en": "Mountain Pose (Tadasana)",
+    "name_ar": "Mountain Pose (Tadasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -30,17 +30,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST002",
-    "name_en": "Seated Forward Fold",
-    "name_ar": "Seated Forward Fold (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG002",
+    "name_en": "Forward Fold (Uttanasana)",
+    "name_ar": "Forward Fold (Uttanasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -65,17 +65,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST003",
-    "name_en": "Lying Hamstring Stretch with Strap",
-    "name_ar": "Lying Hamstring Stretch with Strap (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG003",
+    "name_en": "Halfway Lift (Ardha Uttanasana)",
+    "name_ar": "Halfway Lift (Ardha Uttanasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -100,17 +100,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST004",
-    "name_en": "Standing Leg Swing (Dynamic)",
-    "name_ar": "Standing Leg Swing (Dynamic) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG004",
+    "name_en": "Chair Pose (Utkatasana)",
+    "name_ar": "Chair Pose (Utkatasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -135,17 +135,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST005",
-    "name_en": "Supine Hamstring PNF",
-    "name_ar": "Supine Hamstring PNF (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG005",
+    "name_en": "Warrior I (Virabhadrasana I)",
+    "name_ar": "Warrior I (Virabhadrasana I) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -170,17 +170,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST006",
-    "name_en": "Doorway Hamstring Stretch",
-    "name_ar": "Doorway Hamstring Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG006",
+    "name_en": "Warrior II (Virabhadrasana II)",
+    "name_ar": "Warrior II (Virabhadrasana II) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -205,17 +205,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST007",
-    "name_en": "Standing Quad Stretch",
-    "name_ar": "Standing Quad Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG007",
+    "name_en": "Warrior III (Virabhadrasana III)",
+    "name_ar": "Warrior III (Virabhadrasana III) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -240,17 +240,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST008",
-    "name_en": "Side-Lying Quad Stretch",
-    "name_ar": "Side-Lying Quad Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG008",
+    "name_en": "Extended Side Angle (Utthita Parsvakonasana)",
+    "name_ar": "Extended Side Angle (Utthita Parsvakonasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -275,17 +275,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST009",
-    "name_en": "Prone Quad Stretch",
-    "name_ar": "Prone Quad Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG009",
+    "name_en": "Triangle Pose (Trikonasana)",
+    "name_ar": "Triangle Pose (Trikonasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -310,17 +310,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST010",
-    "name_en": "Kneeling Quad Stretch (Couch Stretch)",
-    "name_ar": "Kneeling Quad Stretch (Couch Stretch) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG010",
+    "name_en": "Revolved Triangle (Parivrtta Trikonasana)",
+    "name_ar": "Revolved Triangle (Parivrtta Trikonasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -345,17 +345,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST011",
-    "name_en": "Rectus Femoris Stretch",
-    "name_ar": "Rectus Femoris Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG011",
+    "name_en": "Half Moon (Ardha Chandrasana)",
+    "name_ar": "Half Moon (Ardha Chandrasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -380,17 +380,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST012",
-    "name_en": "Leg Swing Side-to-Side (Dynamic)",
-    "name_ar": "Leg Swing Side-to-Side (Dynamic) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG012",
+    "name_en": "Tree Pose (Vrksasana)",
+    "name_ar": "Tree Pose (Vrksasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -415,17 +415,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST013",
-    "name_en": "Kneeling Hip Flexor Stretch",
-    "name_ar": "Kneeling Hip Flexor Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG013",
+    "name_en": "Eagle Pose (Garudasana)",
+    "name_ar": "Eagle Pose (Garudasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -450,17 +450,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST014",
-    "name_en": "Low Lunge Hip Flexor Stretch",
-    "name_ar": "Low Lunge Hip Flexor Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG014",
+    "name_en": "Standing Split (Urdhva Prasarita Eka Padasana)",
+    "name_ar": "Standing Split (Urdhva Prasarita Eka Padasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -485,17 +485,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST015",
-    "name_en": "Standing Hip Flexor Stretch",
-    "name_ar": "Standing Hip Flexor Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG015",
+    "name_en": "Dancer Pose (Natarajasana)",
+    "name_ar": "Dancer Pose (Natarajasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -520,17 +520,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST016",
-    "name_en": "Pigeon Pose Variation",
-    "name_ar": "Pigeon Pose Variation (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG016",
+    "name_en": "Extended Hand to Big Toe (Utthita Hasta Padangusthasana)",
+    "name_ar": "Extended Hand to Big Toe (Utthita Hasta Padangusthasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -555,17 +555,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST017",
-    "name_en": "Hip Flexor Leg Swing (Dynamic)",
-    "name_ar": "Hip Flexor Leg Swing (Dynamic) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG017",
+    "name_en": "Pyramid Pose (Parsvottanasana)",
+    "name_ar": "Pyramid Pose (Parsvottanasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -590,17 +590,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST018",
-    "name_en": "Figure Four Stretch (Supine)",
-    "name_ar": "Figure Four Stretch (Supine) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG018",
+    "name_en": "Wide-Legged Forward Fold (Prasarita Padottanasana)",
+    "name_ar": "Wide-Legged Forward Fold (Prasarita Padottanasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -625,17 +625,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST019",
-    "name_en": "Seated Figure Four",
-    "name_ar": "Seated Figure Four (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG019",
+    "name_en": "Goddess Pose (Utkata Konasana)",
+    "name_ar": "Goddess Pose (Utkata Konasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -660,17 +660,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST020",
-    "name_en": "Pigeon Pose",
-    "name_ar": "Pigeon Pose (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG020",
+    "name_en": "Humble Warrior (Baddha Virabhadrasana)",
+    "name_ar": "Humble Warrior (Baddha Virabhadrasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -695,17 +695,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST021",
-    "name_en": "Lying Glute Stretch",
-    "name_ar": "Lying Glute Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG021",
+    "name_en": "Easy Pose (Sukhasana)",
+    "name_ar": "Easy Pose (Sukhasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -730,17 +730,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST022",
-    "name_en": "Crossed Leg Twist",
-    "name_ar": "Crossed Leg Twist (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG022",
+    "name_en": "Staff Pose (Dandasana)",
+    "name_ar": "Staff Pose (Dandasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -765,17 +765,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST023",
-    "name_en": "Butterfly Stretch",
-    "name_ar": "Butterfly Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG023",
+    "name_en": "Seated Forward Fold (Paschimottanasana)",
+    "name_ar": "Seated Forward Fold (Paschimottanasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -800,17 +800,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST024",
-    "name_en": "Wide-Legged Seated Straddle",
-    "name_ar": "Wide-Legged Seated Straddle (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG024",
+    "name_en": "Head to Knee (Janu Sirsasana)",
+    "name_ar": "Head to Knee (Janu Sirsasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -835,17 +835,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST025",
-    "name_en": "Frog Stretch",
-    "name_ar": "Frog Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG025",
+    "name_en": "Bound Angle (Baddha Konasana)",
+    "name_ar": "Bound Angle (Baddha Konasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -870,17 +870,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST026",
-    "name_en": "Kneeling Adductor Stretch",
-    "name_ar": "Kneeling Adductor Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG026",
+    "name_en": "Cobbler's Pose Forward Fold",
+    "name_ar": "Cobbler's Pose Forward Fold (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -905,17 +905,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST027",
-    "name_en": "Standing Wide-Legged Forward Fold",
-    "name_ar": "Standing Wide-Legged Forward Fold (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG027",
+    "name_en": "Seated Wide-Legged Forward Fold (Upavistha Konasana)",
+    "name_ar": "Seated Wide-Legged Forward Fold (Upavistha Konasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -940,17 +940,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST028",
-    "name_en": "Lateral Lunge Stretch",
-    "name_ar": "Lateral Lunge Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG028",
+    "name_en": "Fire Log Pose (Agnistambhasana)",
+    "name_ar": "Fire Log Pose (Agnistambhasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -975,17 +975,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST029",
-    "name_en": "Wall Calf Stretch (Gastrocnemius)",
-    "name_ar": "Wall Calf Stretch (Gastrocnemius) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG029",
+    "name_en": "Hero Pose (Virasana)",
+    "name_ar": "Hero Pose (Virasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1010,17 +1010,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST030",
-    "name_en": "Bent Knee Calf Stretch (Soleus)",
-    "name_ar": "Bent Knee Calf Stretch (Soleus) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG030",
+    "name_en": "Reclining Hero (Supta Virasana)",
+    "name_ar": "Reclining Hero (Supta Virasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1045,17 +1045,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST031",
-    "name_en": "Step Calf Stretch",
-    "name_ar": "Step Calf Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG031",
+    "name_en": "Cow Face Pose (Gomukhasana)",
+    "name_ar": "Cow Face Pose (Gomukhasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1080,17 +1080,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST032",
-    "name_en": "Downward Dog Calf Pedal (Dynamic)",
-    "name_ar": "Downward Dog Calf Pedal (Dynamic) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG032",
+    "name_en": "Seated Twist (Ardha Matsyendrasana)",
+    "name_ar": "Seated Twist (Ardha Matsyendrasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1115,17 +1115,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST033",
-    "name_en": "Tibialis Anterior Stretch",
-    "name_ar": "Tibialis Anterior Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG033",
+    "name_en": "Boat Pose (Navasana)",
+    "name_ar": "Boat Pose (Navasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1150,17 +1150,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST034",
-    "name_en": "Doorway Chest Stretch",
-    "name_ar": "Doorway Chest Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG034",
+    "name_en": "Half Lord of the Fishes (Marichyasana C)",
+    "name_ar": "Half Lord of the Fishes (Marichyasana C) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1185,17 +1185,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST035",
-    "name_en": "Lying Chest Opener",
-    "name_ar": "Lying Chest Opener (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "id": "YG035",
+    "name_en": "Compass Pose (Parivrtta Surya Yantrasana)",
+    "name_ar": "Compass Pose (Parivrtta Surya Yantrasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -1220,2782 +1220,17 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
     ]
   },
   {
-    "id": "ST036",
-    "name_en": "Wall Angel",
-    "name_ar": "Wall Angel (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST037",
-    "name_en": "Behind Back Clasp Stretch",
-    "name_ar": "Behind Back Clasp Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST038",
-    "name_en": "Floor Chest Stretch",
-    "name_ar": "Floor Chest Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST039",
-    "name_en": "Cat-Cow Stretch",
-    "name_ar": "Cat-Cow Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST040",
-    "name_en": "Child's Pose",
-    "name_ar": "Child's Pose (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST041",
-    "name_en": "Thread the Needle",
-    "name_ar": "Thread the Needle (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST042",
-    "name_en": "Seated Spinal Twist",
-    "name_ar": "Seated Spinal Twist (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST043",
-    "name_en": "Lying Spinal Twist",
-    "name_ar": "Lying Spinal Twist (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST044",
-    "name_en": "Standing Lat Stretch",
-    "name_ar": "Standing Lat Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST045",
-    "name_en": "Doorway Lat Stretch",
-    "name_ar": "Doorway Lat Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST046",
-    "name_en": "Cobra/Prone Extension",
-    "name_ar": "Cobra/Prone Extension (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST047",
-    "name_en": "Cross-Body Shoulder Stretch",
-    "name_ar": "Cross-Body Shoulder Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST048",
-    "name_en": "Sleeper Stretch",
-    "name_ar": "Sleeper Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST049",
-    "name_en": "Arm Circles (Dynamic)",
-    "name_ar": "Arm Circles (Dynamic) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST050",
-    "name_en": "Wall Shoulder Stretch",
-    "name_ar": "Wall Shoulder Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST051",
-    "name_en": "Overhead Tricep Stretch",
-    "name_ar": "Overhead Tricep Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST052",
-    "name_en": "Eagle Arms",
-    "name_ar": "Eagle Arms (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST053",
-    "name_en": "Shoulder Pendulum (Dynamic)",
-    "name_ar": "Shoulder Pendulum (Dynamic) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST054",
-    "name_en": "Bicep Wall Stretch",
-    "name_ar": "Bicep Wall Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST055",
-    "name_en": "Tricep Stretch (Towel)",
-    "name_ar": "Tricep Stretch (Towel) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST056",
-    "name_en": "Wrist Flexor Stretch",
-    "name_ar": "Wrist Flexor Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST057",
-    "name_en": "Wrist Extensor Stretch",
-    "name_ar": "Wrist Extensor Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST058",
-    "name_en": "Prayer Stretch",
-    "name_ar": "Prayer Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST059",
-    "name_en": "Reverse Prayer Stretch",
-    "name_ar": "Reverse Prayer Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST060",
-    "name_en": "Neck Side Bend",
-    "name_ar": "Neck Side Bend (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST061",
-    "name_en": "Neck Rotation Stretch",
-    "name_ar": "Neck Rotation Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST062",
-    "name_en": "Chin Tuck Stretch",
-    "name_ar": "Chin Tuck Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST063",
-    "name_en": "Levator Scapulae Stretch",
-    "name_ar": "Levator Scapulae Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST064",
-    "name_en": "Scalene Stretch",
-    "name_ar": "Scalene Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST065",
-    "name_en": "Neck Circles (Dynamic)",
-    "name_ar": "Neck Circles (Dynamic) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST066",
-    "name_en": "Sun Salutation A (Dynamic Flow)",
-    "name_ar": "Sun Salutation A (Dynamic Flow) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST067",
-    "name_en": "World's Greatest Stretch",
-    "name_ar": "World's Greatest Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST068",
-    "name_en": "Scorpion Stretch",
-    "name_ar": "Scorpion Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST069",
-    "name_en": "Bretzel Stretch",
-    "name_ar": "Bretzel Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST070",
-    "name_en": "Supine Full Body Stretch",
-    "name_ar": "Supine Full Body Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST071",
-    "name_en": "PNF Hamstring (Contract-Relax)",
-    "name_ar": "PNF Hamstring (Contract-Relax) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST072",
-    "name_en": "PNF Hip Flexor",
-    "name_ar": "PNF Hip Flexor (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST073",
-    "name_en": "PNF Chest",
-    "name_ar": "PNF Chest (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST074",
-    "name_en": "PNF Shoulder (External Rotation)",
-    "name_ar": "PNF Shoulder (External Rotation) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST075",
-    "name_en": "PNF Quad",
-    "name_ar": "PNF Quad (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST076",
-    "name_en": "Walking Knee Hugs",
-    "name_ar": "Walking Knee Hugs (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST077",
-    "name_en": "Walking Quad Pull",
-    "name_ar": "Walking Quad Pull (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST078",
-    "name_en": "Walking Toe Touch",
-    "name_ar": "Walking Toe Touch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST079",
-    "name_en": "Walking Lunge with Twist",
-    "name_ar": "Walking Lunge with Twist (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST080",
-    "name_en": "High Knees",
-    "name_ar": "High Knees (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST081",
-    "name_en": "Arm Swings (Horizontal)",
-    "name_ar": "Arm Swings (Horizontal) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST082",
-    "name_en": "Leg Swings (Lateral)",
-    "name_ar": "Leg Swings (Lateral) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST083",
-    "name_en": "Hip Circles",
-    "name_ar": "Hip Circles (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST084",
-    "name_en": "Shoulder Dislocates",
-    "name_ar": "Shoulder Dislocates (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST085",
-    "name_en": "Squat to Stand",
-    "name_ar": "Squat to Stand (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST086",
-    "name_en": "90/90 Hip Stretch",
-    "name_ar": "90/90 Hip Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST087",
-    "name_en": "Pigeon to King Pigeon",
-    "name_ar": "Pigeon to King Pigeon (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST088",
-    "name_en": "Supported Fish Pose",
-    "name_ar": "Supported Fish Pose (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST089",
-    "name_en": "Legs Up the Wall",
-    "name_ar": "Legs Up the Wall (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST090",
-    "name_en": "Seated Forward Fold (Relaxed)",
-    "name_ar": "Seated Forward Fold (Relaxed) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST091",
-    "name_en": "Seated Spinal Twist",
-    "name_ar": "Seated Spinal Twist (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST092",
-    "name_en": "Seated Hip Flexor",
-    "name_ar": "Seated Hip Flexor (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST093",
-    "name_en": "Desk Chest Stretch",
-    "name_ar": "Desk Chest Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST094",
-    "name_en": "Seated Figure Four",
-    "name_ar": "Seated Figure Four (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST095",
-    "name_en": "Standing Desk Lat Stretch",
-    "name_ar": "Standing Desk Lat Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST096",
-    "name_en": "Seated Neck Series",
-    "name_ar": "Seated Neck Series (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST097",
-    "name_en": "Wrist Desk Stretches",
-    "name_ar": "Wrist Desk Stretches (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST098",
-    "name_en": "Knee to Chest (Single)",
-    "name_ar": "Knee to Chest (Single) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST099",
-    "name_en": "Double Knee to Chest",
-    "name_ar": "Double Knee to Chest (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST100",
-    "name_en": "Press Up",
-    "name_ar": "Press Up (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST101",
-    "name_en": "Hip Flexor Series",
-    "name_ar": "Hip Flexor Series (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST102",
-    "name_en": "Hip CARs (Controlled Articular Rotations)",
-    "name_ar": "Hip CARs (Controlled Articular Rotations) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST103",
-    "name_en": "Foam Roller Thoracic Extension",
-    "name_ar": "Foam Roller Thoracic Extension (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST104",
-    "name_en": "Open Book",
-    "name_ar": "Open Book (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST105",
-    "name_en": "Wall Thoracic Rotation",
-    "name_ar": "Wall Thoracic Rotation (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST106",
-    "name_en": "Half Split (Ardha Hanumanasana)",
-    "name_ar": "Half Split (Ardha Hanumanasana) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST107",
-    "name_en": "Low Lunge Hip Sink",
-    "name_ar": "Low Lunge Hip Sink (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST108",
-    "name_en": "Pancake Stretch",
-    "name_ar": "Pancake Stretch (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST109",
-    "name_en": "Lat Foam Roll",
-    "name_ar": "Lat Foam Roll (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST110",
-    "name_en": "Pec Minor Release",
-    "name_ar": "Pec Minor Release (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST111",
-    "name_en": "Morning Full Body Flow",
-    "name_ar": "Morning Full Body Flow (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST112",
-    "name_en": "Evening Wind-Down Flow",
-    "name_ar": "Evening Wind-Down Flow (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST113",
-    "name_en": "Happy Baby Pose",
-    "name_ar": "Happy Baby Pose (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST114",
-    "name_en": "Reclined Butterfly",
-    "name_ar": "Reclined Butterfly (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "mobility",
-      "stretches"
-    ]
-  },
-  {
-    "id": "ST115",
+    "id": "YG036",
     "name_en": "Corpse Pose (Savasana)",
     "name_ar": "Corpse Pose (Savasana) (AR)",
-    "description_en": "A mobility exercise focusing on the stretches.",
-    "description_ar": "تمرين mobility يركز على stretches.",
-    "category": "MOBILITY",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
@@ -4020,8 +1255,2948 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "mobility",
-      "stretches"
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG037",
+    "name_en": "Reclined Bound Angle (Supta Baddha Konasana)",
+    "name_ar": "Reclined Bound Angle (Supta Baddha Konasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG038",
+    "name_en": "Happy Baby (Ananda Balasana)",
+    "name_ar": "Happy Baby (Ananda Balasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG039",
+    "name_en": "Supine Twist (Supta Matsyendrasana)",
+    "name_ar": "Supine Twist (Supta Matsyendrasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG040",
+    "name_en": "Legs Up the Wall (Viparita Karani)",
+    "name_ar": "Legs Up the Wall (Viparita Karani) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG041",
+    "name_en": "Bridge Pose (Setu Bandhasana)",
+    "name_ar": "Bridge Pose (Setu Bandhasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG042",
+    "name_en": "Wheel Pose (Urdhva Dhanurasana)",
+    "name_ar": "Wheel Pose (Urdhva Dhanurasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG043",
+    "name_en": "Shoulder Stand (Salamba Sarvangasana)",
+    "name_ar": "Shoulder Stand (Salamba Sarvangasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG044",
+    "name_en": "Plow Pose (Halasana)",
+    "name_ar": "Plow Pose (Halasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG045",
+    "name_en": "Fish Pose (Matsyasana)",
+    "name_ar": "Fish Pose (Matsyasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG046",
+    "name_en": "Reclined Hero (Arms Overhead)",
+    "name_ar": "Reclined Hero (Arms Overhead) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG047",
+    "name_en": "Reclined Pigeon (Figure Four)",
+    "name_ar": "Reclined Pigeon (Figure Four) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG048",
+    "name_en": "Wind-Relieving Pose (Pavanamuktasana)",
+    "name_ar": "Wind-Relieving Pose (Pavanamuktasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG049",
+    "name_en": "Cobra Pose (Bhujangasana)",
+    "name_ar": "Cobra Pose (Bhujangasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG050",
+    "name_en": "Upward Facing Dog (Urdhva Mukha Svanasana)",
+    "name_ar": "Upward Facing Dog (Urdhva Mukha Svanasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG051",
+    "name_en": "Sphinx Pose",
+    "name_ar": "Sphinx Pose (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG052",
+    "name_en": "Locust Pose (Salabhasana)",
+    "name_ar": "Locust Pose (Salabhasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG053",
+    "name_en": "Bow Pose (Dhanurasana)",
+    "name_ar": "Bow Pose (Dhanurasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG054",
+    "name_en": "Superman Pose",
+    "name_ar": "Superman Pose (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG055",
+    "name_en": "Frog Pose (Bhekasana)",
+    "name_ar": "Frog Pose (Bhekasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG056",
+    "name_en": "Plank Pose (Phalakasana)",
+    "name_ar": "Plank Pose (Phalakasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG057",
+    "name_en": "Side Plank (Vasisthasana)",
+    "name_ar": "Side Plank (Vasisthasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG058",
+    "name_en": "Crow Pose (Bakasana)",
+    "name_ar": "Crow Pose (Bakasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG059",
+    "name_en": "Side Crow (Parsva Bakasana)",
+    "name_ar": "Side Crow (Parsva Bakasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG060",
+    "name_en": "Firefly Pose (Tittibhasana)",
+    "name_ar": "Firefly Pose (Tittibhasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG061",
+    "name_en": "Eight-Angle Pose (Astavakrasana)",
+    "name_ar": "Eight-Angle Pose (Astavakrasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG062",
+    "name_en": "Flying Crow (Eka Pada Galavasana)",
+    "name_ar": "Flying Crow (Eka Pada Galavasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG063",
+    "name_en": "Peacock Pose (Mayurasana)",
+    "name_ar": "Peacock Pose (Mayurasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG064",
+    "name_en": "Handstand Prep (at wall)",
+    "name_ar": "Handstand Prep (at wall) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG065",
+    "name_en": "Forearm Stand Prep (at wall)",
+    "name_ar": "Forearm Stand Prep (at wall) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG066",
+    "name_en": "Pigeon Pose (Eka Pada Rajakapotasana)",
+    "name_ar": "Pigeon Pose (Eka Pada Rajakapotasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG067",
+    "name_en": "King Pigeon (Full)",
+    "name_ar": "King Pigeon (Full) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG068",
+    "name_en": "Lizard Pose (Utthan Pristhasana)",
+    "name_ar": "Lizard Pose (Utthan Pristhasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG069",
+    "name_en": "Dragon Pose",
+    "name_ar": "Dragon Pose (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG070",
+    "name_en": "Frog Pose (Mandukasana)",
+    "name_ar": "Frog Pose (Mandukasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG071",
+    "name_en": "Garland Pose (Malasana)",
+    "name_ar": "Garland Pose (Malasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG072",
+    "name_en": "Butterfly Pose (Seated)",
+    "name_ar": "Butterfly Pose (Seated) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG073",
+    "name_en": "Square Pose (Double Pigeon)",
+    "name_ar": "Square Pose (Double Pigeon) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG074",
+    "name_en": "Revolved Chair (Parivrtta Utkatasana)",
+    "name_ar": "Revolved Chair (Parivrtta Utkatasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG075",
+    "name_en": "Revolved Crescent Lunge",
+    "name_ar": "Revolved Crescent Lunge (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG076",
+    "name_en": "Revolved Side Angle (Parivrtta Parsvakonasana)",
+    "name_ar": "Revolved Side Angle (Parivrtta Parsvakonasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG077",
+    "name_en": "Supine Eagle Twist",
+    "name_ar": "Supine Eagle Twist (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG078",
+    "name_en": "Thread the Needle",
+    "name_ar": "Thread the Needle (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG079",
+    "name_en": "Standing Hand to Big Toe (variations)",
+    "name_ar": "Standing Hand to Big Toe (variations) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG080",
+    "name_en": "Warrior III with Variations",
+    "name_ar": "Warrior III with Variations (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG081",
+    "name_en": "Half Moon with Block",
+    "name_ar": "Half Moon with Block (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG082",
+    "name_en": "Standing Splits Variations",
+    "name_ar": "Standing Splits Variations (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG083",
+    "name_en": "Sun Salutation A (Surya Namaskar A)",
+    "name_ar": "Sun Salutation A (Surya Namaskar A) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG084",
+    "name_en": "Sun Salutation B (Surya Namaskar B)",
+    "name_ar": "Sun Salutation B (Surya Namaskar B) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG085",
+    "name_en": "Moon Salutation (Chandra Namaskar)",
+    "name_ar": "Moon Salutation (Chandra Namaskar) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG086",
+    "name_en": "Supported Fish",
+    "name_ar": "Supported Fish (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG087",
+    "name_en": "Supported Bridge",
+    "name_ar": "Supported Bridge (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG088",
+    "name_en": "Supported Child's Pose",
+    "name_ar": "Supported Child's Pose (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG089",
+    "name_en": "Supported Reclined Twist",
+    "name_ar": "Supported Reclined Twist (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG090",
+    "name_en": "Banana Pose",
+    "name_ar": "Banana Pose (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG091",
+    "name_en": "Caterpillar (Yin Forward Fold)",
+    "name_ar": "Caterpillar (Yin Forward Fold) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG092",
+    "name_en": "Dragonfly (Yin Straddle)",
+    "name_ar": "Dragonfly (Yin Straddle) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG093",
+    "name_en": "Shoelace (Yin Cow Face)",
+    "name_ar": "Shoelace (Yin Cow Face) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG094",
+    "name_en": "Sphinx (Yin)",
+    "name_ar": "Sphinx (Yin) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG095",
+    "name_en": "Seal Pose",
+    "name_ar": "Seal Pose (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG096",
+    "name_en": "Downward Facing Dog (Adho Mukha Svanasana)",
+    "name_ar": "Downward Facing Dog (Adho Mukha Svanasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG097",
+    "name_en": "Dolphin Pose",
+    "name_ar": "Dolphin Pose (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG098",
+    "name_en": "Headstand Prep (Sirsasana)",
+    "name_ar": "Headstand Prep (Sirsasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG099",
+    "name_en": "Tripod Headstand",
+    "name_ar": "Tripod Headstand (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG100",
+    "name_en": "Supported Shoulderstand",
+    "name_ar": "Supported Shoulderstand (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG101",
+    "name_en": "Child's Pose (Balasana)",
+    "name_ar": "Child's Pose (Balasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG102",
+    "name_en": "Cat Pose (Marjaryasana)",
+    "name_ar": "Cat Pose (Marjaryasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG103",
+    "name_en": "Cow Pose (Bitilasana)",
+    "name_ar": "Cow Pose (Bitilasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG104",
+    "name_en": "Tabletop (All Fours)",
+    "name_ar": "Tabletop (All Fours) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG105",
+    "name_en": "Low Lunge (Anjaneyasana)",
+    "name_ar": "Low Lunge (Anjaneyasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG106",
+    "name_en": "High Lunge (Crescent)",
+    "name_ar": "High Lunge (Crescent) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG107",
+    "name_en": "Reverse Warrior",
+    "name_ar": "Reverse Warrior (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG108",
+    "name_en": "Wild Thing (Camatkarasana)",
+    "name_ar": "Wild Thing (Camatkarasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG109",
+    "name_en": "Gate Pose (Parighasana)",
+    "name_ar": "Gate Pose (Parighasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG110",
+    "name_en": "Camel Pose (Ustrasana)",
+    "name_ar": "Camel Pose (Ustrasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG111",
+    "name_en": "Extended Puppy (Uttana Shishosana)",
+    "name_ar": "Extended Puppy (Uttana Shishosana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG112",
+    "name_en": "Rabbit Pose (Sasangasana)",
+    "name_ar": "Rabbit Pose (Sasangasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG113",
+    "name_en": "Reclined Spinal Twist (both knees)",
+    "name_ar": "Reclined Spinal Twist (both knees) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG114",
+    "name_en": "Standing Forward Fold with Clasp",
+    "name_ar": "Standing Forward Fold with Clasp (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG115",
+    "name_en": "Intense Side Stretch (Parsvottanasana)",
+    "name_ar": "Intense Side Stretch (Parsvottanasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG116",
+    "name_en": "Revolved Half Moon",
+    "name_ar": "Revolved Half Moon (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG117",
+    "name_en": "Bird of Paradise",
+    "name_ar": "Bird of Paradise (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG118",
+    "name_en": "Lotus Pose (Padmasana)",
+    "name_ar": "Lotus Pose (Padmasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG119",
+    "name_en": "Half Lotus (Ardha Padmasana)",
+    "name_ar": "Half Lotus (Ardha Padmasana) (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
+    ]
+  },
+  {
+    "id": "YG120",
+    "name_en": "Embryo Pose",
+    "name_ar": "Embryo Pose (AR)",
+    "description_en": "A yoga exercise focusing on the yoga-poses.",
+    "description_ar": "تمرين yoga يركز على yoga-poses.",
+    "category": "YOGA",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "yoga",
+      "yoga-poses"
     ]
   }
 ]

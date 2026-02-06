@@ -1,431 +1,15 @@
 [
   {
-    "id": "FD001",
-    "name_en": "Standing Barbell Overhead Press",
-    "name_ar": "Standing Barbell Overhead Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS",
-      "ABS"
-    ],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Feet shoulder-width, slight knee bend",
-      "Grip just outside shoulders",
-      "Bar starts at collar bone level",
-      "Brace core, squeeze glutes",
-      "Press straight up, move head back then forward",
-      "Lock out overhead, biceps by ears"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [
-      "Excessive lower back arch → Brace core harder",
-      "Pressing in front of face → Move head back, bar goes straight up",
-      "Flaring elbows excessively → 45° elbow angle",
-      "--"
-    ],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD002",
-    "name_en": "Seated Barbell Overhead Press",
-    "name_ar": "Seated Barbell Overhead Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD003",
-    "name_en": "Behind Neck Press",
-    "name_ar": "Behind Neck Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior/lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior/lateral deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD004",
-    "name_en": "Push Press",
-    "name_ar": "Push Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, power.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, power.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "QUADRICEPS",
-      "TRICEPS"
-    ],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Start like overhead press",
-      "Dip knees slightly (quarter squat)",
-      "Explosively drive through legs",
-      "Use momentum to help press",
-      "Lock out overhead"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD005",
-    "name_en": "Strict Press - Pause Rep",
-    "name_ar": "Strict Press - Pause Rep (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS001",
+    "name_en": "Wall Push-Up",
+    "name_ar": "Wall Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD006",
-    "name_en": "Press - Tempo 3-1-2",
-    "name_ar": "Press - Tempo 3-1-2 (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid (time under tension).",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid (time under tension).",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD007",
-    "name_en": "Z Press (seated on floor)",
-    "name_ar": "Z Press (seated on floor) (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, core.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, core.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD008",
-    "name_en": "Single-Arm DB Press - Standing",
-    "name_ar": "Single-Arm DB Press - Standing (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, core.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, core.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD009",
-    "name_en": "Dumbbell Shoulder Press - Seated",
-    "name_ar": "Dumbbell Shoulder Press - Seated (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Bench angle 85-90° (slight incline OK)",
-      "Start with DBs at shoulder level",
-      "Press up and slightly together",
-      "Control the descent"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD010",
-    "name_en": "Dumbbell Shoulder Press - Standing",
-    "name_ar": "Dumbbell Shoulder Press - Standing (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS",
-      "ABS"
-    ],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD011",
-    "name_en": "Arnold Press",
-    "name_ar": "Arnold Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior + lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior + lateral deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Start with palms facing you (supinated)",
-      "Press up while rotating palms outward",
-      "At top, palms face forward",
-      "Reverse on the way down"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD012",
-    "name_en": "DB Press - Neutral Grip",
-    "name_ar": "DB Press - Neutral Grip (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "DUMBBELLS"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -446,58 +30,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD013",
-    "name_en": "DB Press - Alternating",
-    "name_ar": "DB Press - Alternating (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS002",
+    "name_en": "Incline Push-Up",
+    "name_ar": "Incline Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD014",
-    "name_en": "Machine Shoulder Press",
-    "name_ar": "Machine Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -518,23 +65,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD015",
-    "name_en": "Smith Machine Shoulder Press",
-    "name_ar": "Smith Machine Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS003",
+    "name_en": "Knee Push-Up",
+    "name_ar": "Knee Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
+    "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -555,21 +100,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD016",
-    "name_en": "Hammer Strength Shoulder Press",
-    "name_ar": "Hammer Strength Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS004",
+    "name_en": "Standard Push-Up",
+    "name_ar": "Standard Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -590,57 +135,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD017",
-    "name_en": "Dumbbell Front Raise",
-    "name_ar": "Dumbbell Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS005",
+    "name_en": "Diamond Push-Up",
+    "name_ar": "Diamond Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "DUMBBELLS"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Stand with DBs at thighs",
-      "Slight elbow bend (fixed throughout)",
-      "Raise to shoulder height (not higher)",
-      "Control the descent"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD018",
-    "name_en": "Front Raise - Alternating",
-    "name_ar": "Front Raise - Alternating (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "DUMBBELLS"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -661,21 +170,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD019",
-    "name_en": "Front Raise - Neutral Grip (hammer)",
-    "name_ar": "Front Raise - Neutral Grip (hammer) (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS006",
+    "name_en": "Wide Push-Up",
+    "name_ar": "Wide Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "DUMBBELLS"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -696,21 +205,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD020",
-    "name_en": "Cable Front Raise",
-    "name_ar": "Cable Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS007",
+    "name_en": "Archer Push-Up",
+    "name_ar": "Archer Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -731,93 +240,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD021",
-    "name_en": "Cable Front Raise - Single Arm",
-    "name_ar": "Cable Front Raise - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS008",
+    "name_en": "Decline Push-Up",
+    "name_ar": "Decline Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD022",
-    "name_en": "Cable Front Raise - Rope",
-    "name_ar": "Cable Front Raise - Rope (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD023",
-    "name_en": "Plate Front Raise",
-    "name_ar": "Plate Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "FOREARMS"
-    ],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -838,734 +275,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD024",
-    "name_en": "Plate Raise - Steering Wheel",
-    "name_ar": "Plate Raise - Steering Wheel (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior + lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior + lateral deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD025",
-    "name_en": "Barbell Front Raise",
-    "name_ar": "Barbell Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "BARBELL"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD026",
-    "name_en": "EZ Bar Front Raise",
-    "name_ar": "EZ Bar Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD027",
-    "name_en": "Incline Front Raise",
-    "name_ar": "Incline Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid (stretched).",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid (stretched).",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD028",
-    "name_en": "Band Front Raise",
-    "name_ar": "Band Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD029",
-    "name_en": "Front Raise - Pause Rep",
-    "name_ar": "Front Raise - Pause Rep (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD030",
-    "name_en": "Front Raise to Overhead",
-    "name_ar": "Front Raise to Overhead (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD031",
-    "name_en": "Landmine Press - Standing",
-    "name_ar": "Landmine Press - Standing (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Stand facing landmine, bar at shoulder",
-      "Press up and forward at 45° angle",
-      "Great shoulder-friendly pressing option"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD032",
-    "name_en": "Landmine Press - Kneeling",
-    "name_ar": "Landmine Press - Kneeling (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD033",
-    "name_en": "Landmine Press - Half Kneeling",
-    "name_ar": "Landmine Press - Half Kneeling (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD034",
-    "name_en": "Landmine Press - Single Arm",
-    "name_ar": "Landmine Press - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD035",
-    "name_en": "Landmine Press - Both Hands",
-    "name_ar": "Landmine Press - Both Hands (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD036",
-    "name_en": "Landmine Thruster",
-    "name_ar": "Landmine Thruster (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, quads.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, quads.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD037",
-    "name_en": "Landmine Press - Seated",
-    "name_ar": "Landmine Press - Seated (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD038",
-    "name_en": "Landmine Rainbow",
-    "name_ar": "Landmine Rainbow (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, mobility.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, mobility.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD039",
+    "id": "CS009",
     "name_en": "Pike Push-Up",
     "name_ar": "Pike Push-Up (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Start in downward dog position (inverted V)",
-      "Lower head toward ground between hands",
-      "Press back up",
-      "Higher hips = more shoulder emphasis"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD040",
-    "name_en": "Pike Push-Up - Feet Elevated",
-    "name_ar": "Pike Push-Up - Feet Elevated (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD041",
-    "name_en": "Handstand Push-Up (wall)",
-    "name_ar": "Handstand Push-Up (wall) (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "TRICEPS",
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Kick up against wall",
-      "Lower head toward ground",
-      "Press back up",
-      "Keep core tight"
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD042",
-    "name_en": "Handstand Push-Up - Deficit",
-    "name_ar": "Handstand Push-Up - Deficit (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD043",
-    "name_en": "Handstand Push-Up - Free Standing",
-    "name_ar": "Handstand Push-Up - Free Standing (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid, balance.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid, balance.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "EXPERT",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD044",
-    "name_en": "Decline Push-Up (shoulder emphasis)",
-    "name_ar": "Decline Push-Up (shoulder emphasis) (AR)",
-    "description_en": "A shoulders exercise focusing on the upper chest, anterior delt.",
-    "description_ar": "تمرين shoulders يركز على upper chest, anterior delt.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1586,237 +310,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD045",
-    "name_en": "Pseudo Planche Lean",
-    "name_ar": "Pseudo Planche Lean (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD046",
-    "name_en": "Ring Pike Push-Up",
-    "name_ar": "Ring Pike Push-Up (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS010",
+    "name_en": "Pseudo Planche Push-Up",
+    "name_ar": "Pseudo Planche Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD047",
-    "name_en": "TRX Y Press",
-    "name_ar": "TRX Y Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "TRX"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD048",
-    "name_en": "Wall Walk",
-    "name_ar": "Wall Walk (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD049",
-    "name_en": "Cable Shoulder Press",
-    "name_ar": "Cable Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD050",
-    "name_en": "Cable Shoulder Press - Single Arm",
-    "name_ar": "Cable Shoulder Press - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [
-      "ABS"
-    ],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD051",
-    "name_en": "Iso-Lateral Shoulder Press",
-    "name_ar": "Iso-Lateral Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "MACHINES"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1837,21 +345,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD052",
-    "name_en": "Machine Front Raise",
-    "name_ar": "Machine Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS011",
+    "name_en": "One-Arm Push-Up",
+    "name_ar": "One-Arm Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -1872,161 +380,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD053",
-    "name_en": "Seated Machine Press - Single Arm",
-    "name_ar": "Seated Machine Press - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS012",
+    "name_en": "Clapping Push-Up",
+    "name_ar": "Clapping Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "MACHINES"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD054",
-    "name_en": "Cable Press-Around",
-    "name_ar": "Cable Press-Around (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "CABLES"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD055",
-    "name_en": "High Cable Front Raise",
-    "name_ar": "High Cable Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD056",
-    "name_en": "Machine Shoulder Press - Behind Neck",
-    "name_ar": "Machine Shoulder Press - Behind Neck (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior/lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior/lateral deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "MACHINES"
-    ],
-    "difficulty": "ADVANCED",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD057",
-    "name_en": "Band Shoulder Press",
-    "name_ar": "Band Shoulder Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2047,21 +415,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD058",
-    "name_en": "Band Front Raise",
-    "name_ar": "Band Front Raise (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS013",
+    "name_en": "Superman Push-Up",
+    "name_ar": "Superman Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2082,21 +450,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD059",
-    "name_en": "Band Overhead Press - Single Arm",
-    "name_ar": "Band Overhead Press - Single Arm (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS014",
+    "name_en": "Dead Hang",
+    "name_ar": "Dead Hang (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2117,126 +485,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD060",
-    "name_en": "Band Arnold Press",
-    "name_ar": "Band Arnold Press (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior + lateral deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior + lateral deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS015",
+    "name_en": "Scapular Pull-Up",
+    "name_ar": "Scapular Pull-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD061",
-    "name_en": "Overhead Hold",
-    "name_ar": "Overhead Hold (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD062",
-    "name_en": "Handstand Hold",
-    "name_ar": "Handstand Hold (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
-    ],
-    "difficulty": "INTERMEDIATE",
-    "instructions_en": [
-      "Step 1: Assume starting position.",
-      "Step 2: Perform the movement.",
-      "Step 3: Return to start."
-    ],
-    "instructions_ar": [
-      "الخطوة ١: اتخذ وضعية البداية.",
-      "الخطوة ٢: قم بأداء الحركة.",
-      "الخطوة ٣: عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "shoulders",
-      "front-delts"
-    ]
-  },
-  {
-    "id": "FD063",
-    "name_en": "Front Raise Hold",
-    "name_ar": "Front Raise Hold (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
-    "primary_muscle": "FULL_BODY",
-    "secondary_muscles": [],
-    "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2257,21 +520,21 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
     ]
   },
   {
-    "id": "FD064",
-    "name_en": "Wall Press Isometric",
-    "name_ar": "Wall Press Isometric (AR)",
-    "description_en": "A shoulders exercise focusing on the anterior deltoid.",
-    "description_ar": "تمرين shoulders يركز على anterior deltoid.",
-    "category": "SHOULDERS",
+    "id": "CS016",
+    "name_en": "Negative Pull-Up",
+    "name_ar": "Negative Pull-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
     "primary_muscle": "FULL_BODY",
     "secondary_muscles": [],
     "equipment": [
-      "NONE"
+      "BODYWEIGHT"
     ],
     "difficulty": "BEGINNER",
     "instructions_en": [
@@ -2292,8 +555,2003 @@
     "default_duration": null,
     "default_rest": 60,
     "tags": [
-      "shoulders",
-      "front-delts"
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS017",
+    "name_en": "Assisted Pull-Up (Band)",
+    "name_ar": "Assisted Pull-Up (Band) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS018",
+    "name_en": "Standard Pull-Up",
+    "name_ar": "Standard Pull-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS019",
+    "name_en": "Chin-Up",
+    "name_ar": "Chin-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS020",
+    "name_en": "Wide Grip Pull-Up",
+    "name_ar": "Wide Grip Pull-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS021",
+    "name_en": "Close Grip Pull-Up",
+    "name_ar": "Close Grip Pull-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS022",
+    "name_en": "L-Sit Pull-Up",
+    "name_ar": "L-Sit Pull-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS023",
+    "name_en": "Archer Pull-Up",
+    "name_ar": "Archer Pull-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS024",
+    "name_en": "Typewriter Pull-Up",
+    "name_ar": "Typewriter Pull-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS025",
+    "name_en": "Muscle-Up",
+    "name_ar": "Muscle-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS026",
+    "name_en": "One-Arm Pull-Up (Progression)",
+    "name_ar": "One-Arm Pull-Up (Progression) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS027",
+    "name_en": "Bench Dip",
+    "name_ar": "Bench Dip (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS028",
+    "name_en": "Assisted Dip (Band/Machine)",
+    "name_ar": "Assisted Dip (Band/Machine) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS029",
+    "name_en": "Parallel Bar Dip",
+    "name_ar": "Parallel Bar Dip (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS030",
+    "name_en": "Ring Dip",
+    "name_ar": "Ring Dip (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS031",
+    "name_en": "Korean Dip",
+    "name_ar": "Korean Dip (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS032",
+    "name_en": "Weighted Dip",
+    "name_ar": "Weighted Dip (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS033",
+    "name_en": "Hollow Body Hold",
+    "name_ar": "Hollow Body Hold (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS034",
+    "name_en": "Hollow Body Rock",
+    "name_ar": "Hollow Body Rock (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS035",
+    "name_en": "Tuck L-Sit",
+    "name_ar": "Tuck L-Sit (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS036",
+    "name_en": "L-Sit (Full)",
+    "name_ar": "L-Sit (Full) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS037",
+    "name_en": "V-Sit",
+    "name_ar": "V-Sit (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS038",
+    "name_en": "Dragon Flag",
+    "name_ar": "Dragon Flag (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS039",
+    "name_en": "Front Lever Tuck",
+    "name_ar": "Front Lever Tuck (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS040",
+    "name_en": "Front Lever (Full)",
+    "name_ar": "Front Lever (Full) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS041",
+    "name_en": "Back Lever Tuck",
+    "name_ar": "Back Lever Tuck (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS042",
+    "name_en": "Back Lever (Full)",
+    "name_ar": "Back Lever (Full) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS043",
+    "name_en": "Wall Plank",
+    "name_ar": "Wall Plank (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS044",
+    "name_en": "Chest-to-Wall Handstand",
+    "name_ar": "Chest-to-Wall Handstand (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS045",
+    "name_en": "Back-to-Wall Handstand",
+    "name_ar": "Back-to-Wall Handstand (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS046",
+    "name_en": "Freestanding Handstand",
+    "name_ar": "Freestanding Handstand (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS047",
+    "name_en": "Handstand Walk",
+    "name_ar": "Handstand Walk (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS048",
+    "name_en": "Handstand Push-Up (Wall)",
+    "name_ar": "Handstand Push-Up (Wall) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS049",
+    "name_en": "Freestanding Handstand Push-Up",
+    "name_ar": "Freestanding Handstand Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS050",
+    "name_en": "One-Arm Handstand (Progression)",
+    "name_ar": "One-Arm Handstand (Progression) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS051",
+    "name_en": "Planche Lean",
+    "name_ar": "Planche Lean (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS052",
+    "name_en": "Frog Stand",
+    "name_ar": "Frog Stand (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS053",
+    "name_en": "Tuck Planche",
+    "name_ar": "Tuck Planche (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS054",
+    "name_en": "Advanced Tuck Planche",
+    "name_ar": "Advanced Tuck Planche (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS055",
+    "name_en": "Straddle Planche",
+    "name_ar": "Straddle Planche (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS056",
+    "name_en": "Full Planche",
+    "name_ar": "Full Planche (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS057",
+    "name_en": "Ring Support Hold",
+    "name_ar": "Ring Support Hold (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS058",
+    "name_en": "Ring Turned Out Dip",
+    "name_ar": "Ring Turned Out Dip (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS059",
+    "name_en": "Ring L-Sit",
+    "name_ar": "Ring L-Sit (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS060",
+    "name_en": "Rings Muscle-Up",
+    "name_ar": "Rings Muscle-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS061",
+    "name_en": "Iron Cross (Progressions)",
+    "name_ar": "Iron Cross (Progressions) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS062",
+    "name_en": "Back Lever (Rings)",
+    "name_ar": "Back Lever (Rings) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS063",
+    "name_en": "Front Lever (Rings)",
+    "name_ar": "Front Lever (Rings) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS064",
+    "name_en": "Pistol Squat (Assisted)",
+    "name_ar": "Pistol Squat (Assisted) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS065",
+    "name_en": "Pistol Squat (Full)",
+    "name_ar": "Pistol Squat (Full) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS066",
+    "name_en": "Shrimp Squat",
+    "name_ar": "Shrimp Squat (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS067",
+    "name_en": "Nordic Curl",
+    "name_ar": "Nordic Curl (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS068",
+    "name_en": "Dragon Squat",
+    "name_ar": "Dragon Squat (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS069",
+    "name_en": "Glute Bridge",
+    "name_ar": "Glute Bridge (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS070",
+    "name_en": "Bridge Hold (Full Bridge)",
+    "name_ar": "Bridge Hold (Full Bridge) (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS071",
+    "name_en": "Bridge Push-Up",
+    "name_ar": "Bridge Push-Up (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS072",
+    "name_en": "Wall Walk Bridge",
+    "name_ar": "Wall Walk Bridge (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
+    ]
+  },
+  {
+    "id": "CS073",
+    "name_en": "Stand to Bridge to Stand",
+    "name_ar": "Stand to Bridge to Stand (AR)",
+    "description_en": "A calisthenics exercise focusing on the calisthenics-skills.",
+    "description_ar": "تمرين calisthenics يركز على calisthenics-skills.",
+    "category": "CALISTHENICS",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "instructions_en": [
+      "Step 1: Assume starting position.",
+      "Step 2: Perform the movement.",
+      "Step 3: Return to start."
+    ],
+    "instructions_ar": [
+      "الخطوة ١: اتخذ وضعية البداية.",
+      "الخطوة ٢: قم بأداء الحركة.",
+      "الخطوة ٣: عد إلى وضعية البداية."
+    ],
+    "tips_en": [],
+    "tips_ar": [],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "calisthenics",
+      "calisthenics-skills"
     ]
   }
 ]

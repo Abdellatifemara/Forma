@@ -1,0 +1,722 @@
+[
+  {
+    "id": "OLY001",
+    "name_en": "Barbell Snatch (Full)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES", "QUADRICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "EXPERT",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY002",
+    "name_en": "Clean and Jerk (Full)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES", "QUADRICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "EXPERT",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY003",
+    "name_en": "Hang Snatch",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY004",
+    "name_en": "Hang Clean",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY005",
+    "name_en": "Power Clean",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES", "QUADRICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY006",
+    "name_en": "Split Jerk",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS", "QUADRICEPS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY007",
+    "name_en": "Push Jerk",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS", "QUADRICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY008",
+    "name_en": "Squat Jerk",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS", "QUADRICEPS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "EXPERT",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY009",
+    "name_en": "Snatch Balance",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["QUADRICEPS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY010",
+    "name_en": "Overhead Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["SHOULDERS", "GLUTES", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY011",
+    "name_en": "Snatch Pull",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS", "SHOULDERS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY012",
+    "name_en": "Clean Pull",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS", "SHOULDERS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY013",
+    "name_en": "Snatch Deadlift",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY014",
+    "name_en": "Clean Deadlift",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY015",
+    "name_en": "Block Snatch",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY016",
+    "name_en": "Block Clean",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY017",
+    "name_en": "Hang Snatch (Below Knee)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY018",
+    "name_en": "Hang Clean (Below Knee)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY019",
+    "name_en": "Snatch from Deficit",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "EXPERT",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY020",
+    "name_en": "Clean from Deficit",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "EXPERT",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY021",
+    "name_en": "Snatch High Pull",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["SHOULDERS", "BICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY022",
+    "name_en": "Clean High Pull",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["SHOULDERS", "BICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY023",
+    "name_en": "Power Snatch from Blocks",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY024",
+    "name_en": "Power Clean from Blocks",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY025",
+    "name_en": "Snatch Grip Push Press",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY026",
+    "name_en": "Behind the Neck Jerk",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS", "QUADRICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY027",
+    "name_en": "Snatch Grip Behind Neck Press",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY028",
+    "name_en": "Sots Press",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK", "QUADRICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "EXPERT",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY029",
+    "name_en": "Hang Snatch High Pull",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["SHOULDERS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY030",
+    "name_en": "Pause Snatch (at knee)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY031",
+    "name_en": "Pause Clean (at knee)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY032",
+    "name_en": "Snatch + Overhead Squat Complex",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "QUADRICEPS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY033",
+    "name_en": "Clean + Front Squat + Jerk Complex",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "QUADRICEPS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY034",
+    "name_en": "Dumbbell Snatch",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["DUMBBELLS"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY035",
+    "name_en": "Dumbbell Clean",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["DUMBBELLS"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY036",
+    "name_en": "Dumbbell Clean and Jerk",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "TRICEPS", "GLUTES"],
+    "equipment": ["DUMBBELLS"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY037",
+    "name_en": "Single Arm Dumbbell Snatch",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK", "GLUTES"],
+    "equipment": ["DUMBBELLS"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY038",
+    "name_en": "Muscle Clean",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["BACK", "BICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY039",
+    "name_en": "No Feet Snatch",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "OLY040",
+    "name_en": "No Feet Clean",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": ["SHOULDERS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "OLYMPIC"
+  },
+  {
+    "id": "PWR001",
+    "name_en": "Pause Bench Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR002",
+    "name_en": "Spoto Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR003",
+    "name_en": "Larsen Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR004",
+    "name_en": "Pin Press (Chest)",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR005",
+    "name_en": "Board Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR006",
+    "name_en": "Reverse Band Bench Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH", "RESISTANCE_BANDS"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR007",
+    "name_en": "Banded Bench Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH", "RESISTANCE_BANDS"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR008",
+    "name_en": "Chain Bench Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR009",
+    "name_en": "Tempo Bench Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR010",
+    "name_en": "Wide Grip Bench Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR011",
+    "name_en": "Competition Pause Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR012",
+    "name_en": "Pin Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR013",
+    "name_en": "Box Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR014",
+    "name_en": "Banded Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL", "RESISTANCE_BANDS"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR015",
+    "name_en": "Chain Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR016",
+    "name_en": "Tempo Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR017",
+    "name_en": "1.5 Rep Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR018",
+    "name_en": "Safety Bar Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR019",
+    "name_en": "Cambered Bar Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR020",
+    "name_en": "Buffalo Bar Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR021",
+    "name_en": "Pause Deadlift",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR022",
+    "name_en": "Pause Deadlift (at knee)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR023",
+    "name_en": "Block Pull (2 inch)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR024",
+    "name_en": "Block Pull (4 inch)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR025",
+    "name_en": "Rack Pull (below knee)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR026",
+    "name_en": "Rack Pull (above knee)",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR027",
+    "name_en": "Banded Deadlift",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL", "RESISTANCE_BANDS"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR028",
+    "name_en": "Chain Deadlift",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR029",
+    "name_en": "Tempo Deadlift",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR030",
+    "name_en": "Sumo Deficit Deadlift",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": ["HAMSTRINGS", "QUADRICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR031",
+    "name_en": "Zercher Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "BICEPS", "BACK"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR032",
+    "name_en": "Zercher Deadlift",
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["GLUTES", "BICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR033",
+    "name_en": "Anderson Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR034",
+    "name_en": "Hatfield Squat",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR035",
+    "name_en": "Seated Good Morning",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR036",
+    "name_en": "Arched Back Good Morning",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["HAMSTRINGS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR037",
+    "name_en": "Cambered Bar Good Morning",
+    "primary_muscle": "LOWER_BACK",
+    "secondary_muscles": ["HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR038",
+    "name_en": "JM Press",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": ["CHEST", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "ADVANCED",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR039",
+    "name_en": "Slingshot Bench Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  },
+  {
+    "id": "PWR040",
+    "name_en": "Feet Up Bench Press",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "INTERMEDIATE",
+    "category": "STRENGTH"
+  }
+]
