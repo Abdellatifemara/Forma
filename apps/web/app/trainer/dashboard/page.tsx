@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
   DollarSign,
@@ -20,6 +20,7 @@ import {
   Clock,
   Target,
   ChevronRight,
+  Loader2,
 } from 'lucide-react';
 import {
   Card,
@@ -33,56 +34,66 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { cn } from '@/lib/utils';
-
-// Mock data - will be replaced with real API calls
-const trainerData = {
-  name: 'Ahmed',
-  tier: 'REGULAR' as 'REGULAR' | 'TRUSTED_PARTNER',
-  commissionRate: 0.20,
-  inviteCode: 'AHMED-FIT-2024',
-  stats: {
-    activeClients: 47,
-    clientsThisMonth: 3,
-    monthlyRevenue: 12450,
-    revenueChange: 23,
-    pendingPayout: 9960,
-    totalEarnings: 45000,
-    avgRating: 4.9,
-    totalReviews: 127,
-    avgCompliance: 78,
-  },
-};
-
-const recentClients = [
-  { name: 'Mohamed Ali', avatar: null, status: 'active', plan: 'Weight Loss', compliance: 92, lastActive: '2h ago' },
-  { name: 'Sara Ahmed', avatar: null, status: 'active', plan: 'Muscle Building', compliance: 85, lastActive: '5h ago' },
-  { name: 'Youssef Hassan', avatar: null, status: 'pending', plan: 'General Fitness', compliance: 0, lastActive: 'Pending' },
-  { name: 'Nour Ibrahim', avatar: null, status: 'active', plan: 'Strength Training', compliance: 95, lastActive: '1d ago' },
-];
-
-const upcomingSessions = [
-  { client: 'Mohamed Ali', time: '10:00 AM', type: 'Video Call', avatar: null },
-  { client: 'Sara Ahmed', time: '2:00 PM', type: 'Check-in', avatar: null },
-  { client: 'Youssef Hassan', time: '4:30 PM', type: 'Form Review', avatar: null },
-];
-
-const recentMessages = [
-  { from: 'Mohamed Ali', message: 'Thanks for the new program!', time: '5m ago', unread: true },
-  { from: 'Sara Ahmed', message: 'Can we reschedule tomorrow?', time: '1h ago', unread: true },
-  { from: 'Nour Ibrahim', message: 'Great workout today!', time: '3h ago', unread: false },
-];
+import { trainersApi, type TrainerProfile, type TrainerStats, type TrainerClientResponse } from '@/lib/api';
 
 export default function TrainerDashboardPage() {
   const [copied, setCopied] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [profile, setProfile] = useState<TrainerProfile | null>(null);
+  const [stats, setStats] = useState<TrainerStats | null>(null);
+  const [clients, setClients] = useState<TrainerClientResponse[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      setIsLoading(true);
+      try {
+        const [profileRes, statsRes, clientsRes] = await Promise.all([
+          trainersApi.getMyProfile(),
+          trainersApi.getDashboardStats(),
+          trainersApi.getClients(),
+        ]);
+        setProfile(profileRes);
+        setStats(statsRes);
+        setClients(clientsRes.slice(0, 4)); // Show only first 4 clients
+      } catch (err: any) {
+        console.error('Error fetching trainer data:', err);
+        setError(err.message || 'Failed to load dashboard');
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center min-h-[50vh]">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  if (error || !profile || !stats) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[50vh] gap-4">
+        <p className="text-red-500">{error || 'Failed to load dashboard'}</p>
+        <Button onClick={() => window.location.reload()}>Try Again</Button>
+      </div>
+    );
+  }
+
+  // Calculate derived values
+  const commissionRate = profile.tier === 'TRUSTED_PARTNER' ? 0.15 : 0.20;
+  const platformFee = (stats.monthlyRevenue || 0) * commissionRate;
+  const netEarnings = (stats.monthlyRevenue || 0) - platformFee;
 
   const copyInviteCode = () => {
-    navigator.clipboard.writeText(`https://forma.app/join/${trainerData.inviteCode}`);
+    const inviteCode = profile?.inviteCode || 'TRAINER';
+    navigator.clipboard.writeText(`https://forma.app/join/${inviteCode}`);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
-  const platformFee = trainerData.stats.monthlyRevenue * trainerData.commissionRate;
-  const netEarnings = trainerData.stats.monthlyRevenue - platformFee;
 
   return (
     <div className="space-y-8 pb-8">
@@ -91,9 +102,9 @@ export default function TrainerDashboardPage() {
         <div>
           <div className="flex items-center gap-3 mb-2">
             <h1 className="text-3xl font-bold">
-              Welcome back, <span className="text-gradient">{trainerData.name}</span>
+              Welcome back, <span className="text-gradient">{(profile as any).user?.firstName || 'Trainer'}</span>
             </h1>
-            {trainerData.tier === 'TRUSTED_PARTNER' ? (
+            {profile.tier === 'TRUSTED_PARTNER' ? (
               <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0">
                 <Crown className="h-3 w-3 mr-1" />
                 Trusted Partner
@@ -115,7 +126,7 @@ export default function TrainerDashboardPage() {
           <p className="text-xs text-muted-foreground mb-2">Your Invite Link</p>
           <div className="flex items-center gap-2">
             <code className="flex-1 text-sm font-mono text-primary truncate">
-              forma.app/join/{trainerData.inviteCode}
+              forma.app/join/{profile.inviteCode || 'TRAINER'}
             </code>
             <Button
               size="sm"
@@ -142,10 +153,10 @@ export default function TrainerDashboardPage() {
               <Users className="h-5 w-5 text-cyan-400" />
             </div>
             <Badge variant="outline" className="text-green-400 border-green-400/50 text-xs">
-              +{trainerData.stats.clientsThisMonth} this month
+              +{stats.newClientsThisMonth || 0} this month
             </Badge>
           </div>
-          <p className="text-3xl font-bold">{trainerData.stats.activeClients}</p>
+          <p className="text-3xl font-bold">{stats.activeClients || 0}</p>
           <p className="text-sm text-muted-foreground mt-1">Active Clients</p>
         </div>
 
@@ -156,10 +167,10 @@ export default function TrainerDashboardPage() {
               <DollarSign className="h-5 w-5 text-green-400" />
             </div>
             <Badge variant="outline" className="text-green-400 border-green-400/50 text-xs">
-              +{trainerData.stats.revenueChange}%
+              Revenue
             </Badge>
           </div>
-          <p className="text-3xl font-bold">{trainerData.stats.monthlyRevenue.toLocaleString()} <span className="text-lg text-muted-foreground">EGP</span></p>
+          <p className="text-3xl font-bold">{(stats.monthlyRevenue || 0).toLocaleString()} <span className="text-lg text-muted-foreground">EGP</span></p>
           <p className="text-sm text-muted-foreground mt-1">Monthly Revenue</p>
         </div>
 
@@ -170,11 +181,11 @@ export default function TrainerDashboardPage() {
               <Zap className="h-5 w-5 text-purple-400" />
             </div>
             <span className="text-xs text-muted-foreground">
-              {Math.round((1 - trainerData.commissionRate) * 100)}% yours
+              {Math.round((1 - commissionRate) * 100)}% yours
             </span>
           </div>
-          <p className="text-3xl font-bold">{trainerData.stats.pendingPayout.toLocaleString()} <span className="text-lg text-muted-foreground">EGP</span></p>
-          <p className="text-sm text-muted-foreground mt-1">Pending Payout</p>
+          <p className="text-3xl font-bold">{netEarnings.toLocaleString()} <span className="text-lg text-muted-foreground">EGP</span></p>
+          <p className="text-sm text-muted-foreground mt-1">Your Earnings</p>
         </div>
 
         {/* Average Rating */}
@@ -187,13 +198,16 @@ export default function TrainerDashboardPage() {
               {[1, 2, 3, 4, 5].map((i) => (
                 <Star
                   key={i}
-                  className="h-3 w-3 fill-yellow-400 text-yellow-400"
+                  className={cn(
+                    "h-3 w-3",
+                    i <= Math.round(stats.averageRating || 0) ? "fill-yellow-400 text-yellow-400" : "text-muted"
+                  )}
                 />
               ))}
             </div>
           </div>
-          <p className="text-3xl font-bold">{trainerData.stats.avgRating}</p>
-          <p className="text-sm text-muted-foreground mt-1">{trainerData.stats.totalReviews} reviews</p>
+          <p className="text-3xl font-bold">{(stats.averageRating || 0).toFixed(1)}</p>
+          <p className="text-sm text-muted-foreground mt-1">{stats.totalReviews || 0} reviews</p>
         </div>
       </div>
 
@@ -209,10 +223,10 @@ export default function TrainerDashboardPage() {
           <div className="grid gap-6 md:grid-cols-3">
             <div className="space-y-2">
               <p className="text-sm text-muted-foreground">Gross Revenue</p>
-              <p className="text-2xl font-bold">{trainerData.stats.monthlyRevenue.toLocaleString()} EGP</p>
+              <p className="text-2xl font-bold">{(stats.monthlyRevenue || 0).toLocaleString()} EGP</p>
             </div>
             <div className="space-y-2">
-              <p className="text-sm text-muted-foreground">Platform Fee ({trainerData.commissionRate * 100}%)</p>
+              <p className="text-sm text-muted-foreground">Platform Fee ({commissionRate * 100}%)</p>
               <p className="text-2xl font-bold text-orange-400">-{platformFee.toLocaleString()} EGP</p>
             </div>
             <div className="space-y-2">
@@ -223,11 +237,13 @@ export default function TrainerDashboardPage() {
           <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Clock className="h-4 w-4" />
-              Next payout: <span className="text-foreground font-medium">Feb 15, 2024</span>
+              Next payout: <span className="text-foreground font-medium">15th of next month</span>
             </div>
-            <Button variant="outline" size="sm" className="border-primary/50 hover:bg-primary/10">
-              View Transactions
-              <ArrowUpRight className="h-4 w-4 ml-1" />
+            <Button variant="outline" size="sm" className="border-primary/50 hover:bg-primary/10" asChild>
+              <Link href="/trainer/earnings">
+                View Transactions
+                <ArrowUpRight className="h-4 w-4 ml-1" />
+              </Link>
             </Button>
           </div>
         </CardContent>
@@ -251,49 +267,55 @@ export default function TrainerDashboardPage() {
           </CardHeader>
           <CardContent>
             <div className="space-y-3">
-              {recentClients.map((client) => (
-                <div
-                  key={client.name}
-                  className="flex items-center justify-between rounded-xl bg-card/50 border border-border/50 p-4 hover:border-primary/30 transition-colors"
-                >
-                  <div className="flex items-center gap-4">
-                    <Avatar className="border-2 border-primary/30">
-                      <AvatarImage src={client.avatar || undefined} />
-                      <AvatarFallback className="bg-primary/10 text-primary">
-                        {client.name.split(' ').map((n) => n[0]).join('')}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <p className="font-medium">{client.name}</p>
-                      <p className="text-sm text-muted-foreground">{client.plan}</p>
+              {clients.length === 0 ? (
+                <p className="text-center text-muted-foreground py-8">
+                  No clients yet. Share your invite link to get started!
+                </p>
+              ) : clients.map((item) => {
+                const clientName = `${item.client?.firstName || ''} ${item.client?.lastName || ''}`.trim() || 'Unknown';
+                const initials = clientName.split(' ').map((n) => n[0]).join('').toUpperCase() || 'U';
+                const compliance = item.complianceRate || 0;
+
+                return (
+                  <div
+                    key={item.id}
+                    className="flex items-center justify-between rounded-xl bg-card/50 border border-border/50 p-4 hover:border-primary/30 transition-colors"
+                  >
+                    <div className="flex items-center gap-4">
+                      <Avatar className="border-2 border-primary/30">
+                        <AvatarImage src={item.client?.avatarUrl || undefined} />
+                        <AvatarFallback className="bg-primary/10 text-primary">
+                          {initials}
+                        </AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p className="font-medium">{clientName}</p>
+                        <p className="text-sm text-muted-foreground">{item.client?.fitnessGoal?.replace('_', ' ') || 'General Fitness'}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    {client.status === 'active' && (
+                    <div className="flex items-center gap-4">
                       <div className="hidden sm:block w-32">
                         <div className="flex items-center justify-between text-xs mb-1">
                           <span className="text-muted-foreground">Compliance</span>
                           <span className={cn(
                             'font-medium',
-                            client.compliance >= 80 ? 'text-green-400' : client.compliance >= 50 ? 'text-yellow-400' : 'text-red-400'
+                            compliance >= 80 ? 'text-green-400' : compliance >= 50 ? 'text-yellow-400' : 'text-red-400'
                           )}>
-                            {client.compliance}%
+                            {compliance}%
                           </span>
                         </div>
-                        <Progress value={client.compliance} className="h-1.5" />
+                        <Progress value={compliance} className="h-1.5" />
                       </div>
-                    )}
-                    <Badge
-                      variant={client.status === 'active' ? 'default' : 'secondary'}
-                      className={cn(
-                        client.status === 'active' && 'bg-green-500/20 text-green-400 border-green-500/50'
-                      )}
-                    >
-                      {client.status}
-                    </Badge>
+                      <Badge
+                        variant="default"
+                        className="bg-green-500/20 text-green-400 border-green-500/50"
+                      >
+                        active
+                      </Badge>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </CardContent>
         </Card>
@@ -335,7 +357,7 @@ export default function TrainerDashboardPage() {
           </CardContent>
         </Card>
 
-        {/* Today's Sessions */}
+        {/* Today's Sessions - Placeholder */}
         <Card className="glass border-border/50">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -344,28 +366,9 @@ export default function TrainerDashboardPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="space-y-3">
-              {upcomingSessions.map((session, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between rounded-xl bg-card/50 border border-border/50 p-3"
-                >
-                  <div className="flex items-center gap-3">
-                    <Avatar className="h-9 w-9 border border-primary/30">
-                      <AvatarFallback className="text-xs bg-primary/10 text-primary">
-                        {session.client.split(' ').map((n) => n[0]).join('')}
-                      </AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <p className="font-medium text-sm">{session.client}</p>
-                      <p className="text-xs text-muted-foreground">{session.type}</p>
-                    </div>
-                  </div>
-                  <Badge variant="outline" className="border-primary/50 text-primary">
-                    {session.time}
-                  </Badge>
-                </div>
-              ))}
+            <div className="text-center py-8 text-muted-foreground">
+              <Calendar className="h-8 w-8 mx-auto mb-2 opacity-50" />
+              <p>Session scheduling coming soon</p>
             </div>
           </CardContent>
         </Card>
@@ -376,47 +379,23 @@ export default function TrainerDashboardPage() {
             <div>
               <CardTitle className="flex items-center gap-2">
                 <MessageSquare className="h-5 w-5 text-primary" />
-                Recent Messages
+                Messages
               </CardTitle>
             </div>
             <Button variant="outline" size="sm" asChild>
               <Link href="/trainer/messages">
-                View All
+                Open Chat
                 <ChevronRight className="h-4 w-4 ml-1" />
               </Link>
             </Button>
           </CardHeader>
           <CardContent>
-            <div className="space-y-3">
-              {recentMessages.map((msg, index) => (
-                <div
-                  key={index}
-                  className={cn(
-                    "flex items-start gap-4 rounded-xl border p-4 transition-colors",
-                    msg.unread
-                      ? "bg-primary/5 border-primary/30"
-                      : "bg-card/50 border-border/50"
-                  )}
-                >
-                  <Avatar className="h-10 w-10 border border-primary/30">
-                    <AvatarFallback className="bg-primary/10 text-primary text-sm">
-                      {msg.from.split(' ').map((n) => n[0]).join('')}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-center justify-between gap-2">
-                      <p className="font-medium">{msg.from}</p>
-                      <span className="text-xs text-muted-foreground flex-shrink-0">{msg.time}</span>
-                    </div>
-                    <p className="mt-1 text-sm text-muted-foreground truncate">
-                      {msg.message}
-                    </p>
-                  </div>
-                  {msg.unread && (
-                    <div className="w-2 h-2 rounded-full bg-primary animate-pulse flex-shrink-0 mt-2" />
-                  )}
-                </div>
-              ))}
+            <div className="text-center py-8 text-muted-foreground">
+              <MessageSquare className="h-8 w-8 mx-auto mb-2 opacity-50" />
+              <p>Chat with your clients</p>
+              <Button variant="outline" size="sm" className="mt-4" asChild>
+                <Link href="/trainer/messages">Go to Messages</Link>
+              </Button>
             </div>
           </CardContent>
         </Card>
@@ -453,7 +432,7 @@ export default function TrainerDashboardPage() {
                   stroke="url(#compliance-gradient)"
                   strokeWidth="12"
                   strokeLinecap="round"
-                  strokeDasharray={`${trainerData.stats.avgCompliance * 3.52} 352`}
+                  strokeDasharray={`${(stats.avgCompliance || 0) * 3.52} 352`}
                 />
                 <defs>
                   <linearGradient id="compliance-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -463,24 +442,24 @@ export default function TrainerDashboardPage() {
                 </defs>
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-3xl font-bold">{trainerData.stats.avgCompliance}%</span>
+                <span className="text-3xl font-bold">{stats.avgCompliance || 0}%</span>
               </div>
             </div>
             <div className="flex-1 grid gap-4 sm:grid-cols-3">
               <div className="space-y-1">
-                <p className="text-sm text-muted-foreground">High Performers</p>
-                <p className="text-2xl font-bold text-green-400">32</p>
-                <p className="text-xs text-muted-foreground">80%+ compliance</p>
+                <p className="text-sm text-muted-foreground">Total Clients</p>
+                <p className="text-2xl font-bold text-primary">{stats.activeClients || 0}</p>
+                <p className="text-xs text-muted-foreground">Active subscriptions</p>
               </div>
               <div className="space-y-1">
-                <p className="text-sm text-muted-foreground">Need Attention</p>
-                <p className="text-2xl font-bold text-yellow-400">11</p>
-                <p className="text-xs text-muted-foreground">50-80% compliance</p>
+                <p className="text-sm text-muted-foreground">New This Month</p>
+                <p className="text-2xl font-bold text-green-400">{stats.newClientsThisMonth || 0}</p>
+                <p className="text-xs text-muted-foreground">Recently joined</p>
               </div>
               <div className="space-y-1">
-                <p className="text-sm text-muted-foreground">At Risk</p>
-                <p className="text-2xl font-bold text-red-400">4</p>
-                <p className="text-xs text-muted-foreground">&lt;50% compliance</p>
+                <p className="text-sm text-muted-foreground">Total Earnings</p>
+                <p className="text-2xl font-bold text-purple-400">{(stats.totalEarnings || 0).toLocaleString()}</p>
+                <p className="text-xs text-muted-foreground">EGP lifetime</p>
               </div>
             </div>
           </div>

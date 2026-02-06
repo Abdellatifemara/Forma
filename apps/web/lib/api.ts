@@ -1537,6 +1537,12 @@ interface TrainerApplicationData {
 interface TrainerProfile extends Trainer {
   earnings: number;
   pendingPayout: number;
+  tier: 'REGULAR' | 'TRUSTED_PARTNER';
+  inviteCode: string | null;
+  status: 'PENDING' | 'APPROVED' | 'REJECTED' | 'SUSPENDED';
+  acceptingClients: boolean;
+  monthlyPrice: number;
+  commissionRate: number;
 }
 
 interface Client {
