@@ -23,7 +23,8 @@ export class NutritionService {
       where.OR = [
         { nameEn: { contains: query, mode: 'insensitive' } },
         { nameAr: { contains: query, mode: 'insensitive' } },
-        { tags: { hasSome: [query.toLowerCase()] } },
+        { brandEn: { contains: query, mode: 'insensitive' } },
+        { category: { contains: query, mode: 'insensitive' } },
       ];
     }
 
