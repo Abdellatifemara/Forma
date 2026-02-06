@@ -73,8 +73,8 @@ export function ExerciseSearchDialog({ onAddExercise, children }: ExerciseSearch
           {searchResults && searchResults.length > 0 && searchResults.map(ex => (
             <div key={ex.id} className="flex items-center justify-between rounded-md border p-2">
               <div>
-                <p className="font-semibold">{ex.name || ex.nameEn}</p>
-                <p className="text-sm text-muted-foreground">{ex.muscleGroup || ex.primaryMuscle}</p>
+                <p className="font-semibold">{ex.name}</p>
+                <p className="text-sm text-muted-foreground">{ex.muscleGroup}</p>
               </div>
               <Button size="sm" onClick={() => handleAdd(ex)}>Add</Button>
             </div>

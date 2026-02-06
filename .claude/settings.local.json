@@ -124,7 +124,13 @@
       "Bash(node:*)",
       "Bash(cd:*)",
       "Bash(npm run:*)",
-      "Bash(sort:*)"
+      "Bash(sort:*)",
+      "Bash(Start-Process -NoNewWindow npm -ArgumentList \"run\", \"start:dev\")",
+      "Bash(Start-Sleep -Seconds 15)",
+      "Bash(Invoke-WebRequest -Uri \"http://localhost:3001/api/health\" -UseBasicParsing)",
+      "Bash(Select-Object -ExpandProperty Content)",
+      "Bash(printf:*)",
+      "Bash(__NEW_LINE_9e2a1dcf59171d26__ echo -e \"\\\\n=== Backend routes ===\")"
     ]
   }
 }
