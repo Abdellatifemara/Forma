@@ -281,11 +281,11 @@ function ExercisesPageContent() {
                   <Dumbbell className="h-6 w-6 text-forma-teal" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-semibold">{exercise.name}</h3>
+                  <h3 className="font-semibold">{exercise.nameEn || exercise.name}</h3>
                   <p className="text-sm text-muted-foreground">{exercise.nameAr}</p>
                   <div className="mt-2 flex flex-wrap gap-2">
                     <Badge variant="outline" className="text-xs">
-                      {exercise.muscleGroup}
+                      {exercise.primaryMuscle || exercise.muscleGroup}
                     </Badge>
                     <Badge
                       variant="secondary"
@@ -322,7 +322,7 @@ function ExercisesPageContent() {
             <>
               <DialogHeader>
                 <DialogTitle className="text-xl">
-                  {selectedExercise.name}
+                  {selectedExercise.nameEn || selectedExercise.name}
                   <span className="ml-2 text-base font-normal text-muted-foreground">
                     {selectedExercise.nameAr}
                   </span>
@@ -342,8 +342,8 @@ function ExercisesPageContent() {
 
                 {/* Info Badges */}
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">{selectedExercise.muscleGroup}</Badge>
-                  <Badge variant="outline">{selectedExercise.equipment}</Badge>
+                  <Badge variant="outline">{selectedExercise.primaryMuscle || selectedExercise.muscleGroup}</Badge>
+                  <Badge variant="outline">{Array.isArray(selectedExercise.equipment) ? selectedExercise.equipment[0] : selectedExercise.equipment}</Badge>
                   <Badge
                     className={getDifficultyColor(selectedExercise.difficulty)}
                   >
@@ -352,7 +352,7 @@ function ExercisesPageContent() {
                 </div>
 
                 {/* Secondary Muscles */}
-                {selectedExercise.secondaryMuscles.length > 0 && (
+                {selectedExercise.secondaryMuscles && selectedExercise.secondaryMuscles.length > 0 && (
                   <div>
                     <h4 className="mb-2 font-semibold">Secondary Muscles</h4>
                     <div className="flex flex-wrap gap-2">
@@ -369,7 +369,7 @@ function ExercisesPageContent() {
                 <div>
                   <h4 className="mb-2 font-semibold">Description</h4>
                   <p className="text-muted-foreground">
-                    {selectedExercise.description}
+                    {selectedExercise.descriptionEn || selectedExercise.description}
                   </p>
                 </div>
 
@@ -377,7 +377,7 @@ function ExercisesPageContent() {
                 <div>
                   <h4 className="mb-2 font-semibold">Instructions</h4>
                   <ol className="space-y-2">
-                    {selectedExercise.instructions.map((instruction, index) => (
+                    {(selectedExercise.instructionsEn || selectedExercise.instructions || []).map((instruction, index) => (
                       <li key={index} className="flex gap-3">
                         <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-forma-teal/10 text-sm font-medium text-forma-teal">
                           {index + 1}
@@ -389,11 +389,11 @@ function ExercisesPageContent() {
                 </div>
 
                 {/* Tips */}
-                {selectedExercise.tips && selectedExercise.tips.length > 0 && (
+                {(selectedExercise.tipsEn || selectedExercise.tips) && (selectedExercise.tipsEn || selectedExercise.tips || []).length > 0 && (
                   <div>
                     <h4 className="mb-2 font-semibold">Tips</h4>
                     <ul className="space-y-2">
-                      {selectedExercise.tips.map((tip, index) => (
+                      {(selectedExercise.tipsEn || selectedExercise.tips || []).map((tip, index) => (
                         <li
                           key={index}
                           className="flex items-start gap-2 text-muted-foreground"

@@ -1324,16 +1324,34 @@ interface WorkoutLog {
 
 interface Exercise {
   id: string;
-  name: string;
+  externalId?: string;
+  // API returns these names
+  nameEn: string;
   nameAr?: string;
-  description: string;
-  muscleGroup: string;
+  descriptionEn?: string;
+  descriptionAr?: string;
+  primaryMuscle: string;
   secondaryMuscles: string[];
-  equipment: string;
+  equipment: string[];
   difficulty: string;
-  instructions: string[];
-  tips?: string[];
+  category?: string;
+  instructionsEn?: string[];
+  instructionsAr?: string[];
+  tipsEn?: string[];
+  tipsAr?: string[];
   videoUrl?: string;
+  thumbnailUrl?: string;
+  isTimeBased?: boolean;
+  defaultSets?: number;
+  defaultReps?: number;
+  defaultDuration?: number;
+  defaultRest?: number;
+  // Computed/alias fields for backward compatibility
+  name?: string;
+  description?: string;
+  muscleGroup?: string;
+  instructions?: string[];
+  tips?: string[];
   imageUrl?: string;
 }
 
