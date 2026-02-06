@@ -1,11 +1,14 @@
-FROM node:20-alpine
+FROM node:20-slim
+
+# Install OpenSSL for Prisma
+RUN apt-get update -y && apt-get install -y openssl && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Copy package files from api
+# Copy package files
 COPY package.json ./
 
-# Install dependencies (using npm install since no package-lock in api folder)
+# Install dependencies
 RUN npm install
 
 # Copy prisma schema
