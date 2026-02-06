@@ -570,30 +570,49 @@ export class WorkoutsService {
     const maxExercises = Math.floor(availableMinutes / avgTimePerExercise);
     const exercisesPerMuscle = Math.max(1, Math.floor(maxExercises / muscles.length));
 
-    const result: any[] = [];
+    // Batch query: fetch exercises for ALL muscles in one query (fixes N+1)
+    const whereClause: Prisma.ExerciseWhereInput = {
+      primaryMuscle: { in: muscles as MuscleGroup[] },
+      difficulty: { in: difficultyFilter as any[] },
+    };
 
-    for (const muscle of muscles) {
-      const whereClause: Prisma.ExerciseWhereInput = {
-        primaryMuscle: muscle as MuscleGroup,
-        difficulty: { in: difficultyFilter as any[] },
-      };
+    if (equipmentFilter) {
+      whereClause.equipment = { hasSome: equipmentFilter as any[] };
+    }
 
-      if (equipmentFilter) {
-        // For array fields, use hasSome to find exercises that use any of the available equipment
-        whereClause.equipment = { hasSome: equipmentFilter as any[] };
+    const allExercises = await this.prisma.exercise.findMany({
+      where: whereClause,
+      select: {
+        id: true,
+        nameEn: true,
+        nameAr: true,
+        equipment: true,
+        primaryMuscle: true,
+      },
+      orderBy: { id: 'asc' },
+    });
+
+    // Group by muscle and pick exercisesPerMuscle from each
+    const exercisesByMuscle = new Map<string, typeof allExercises>();
+    for (const ex of allExercises) {
+      const muscle = ex.primaryMuscle;
+      if (!exercisesByMuscle.has(muscle)) {
+        exercisesByMuscle.set(muscle, []);
       }
+      const group = exercisesByMuscle.get(muscle)!;
+      if (group.length < exercisesPerMuscle) {
+        group.push(ex);
+      }
+    }
 
-      const exercises = await this.prisma.exercise.findMany({
-        where: whereClause,
-        take: exercisesPerMuscle,
-        orderBy: { id: 'asc' }, // Simple ordering, could be random
-      });
+    // Flatten and format results
+    const sets = energyLevel === 'low' ? 2 : energyLevel === 'high' ? 4 : 3;
+    const reps = energyLevel === 'low' ? '8-10' : energyLevel === 'high' ? '10-15' : '10-12';
 
-      exercises.forEach(ex => {
-        // Adjust sets/reps based on energy level
-        const sets = energyLevel === 'low' ? 2 : energyLevel === 'high' ? 4 : 3;
-        const reps = energyLevel === 'low' ? '8-10' : energyLevel === 'high' ? '10-15' : '10-12';
-
+    const result: any[] = [];
+    for (const muscle of muscles) {
+      const exercises = exercisesByMuscle.get(muscle as string) || [];
+      for (const ex of exercises) {
         result.push({
           id: ex.id,
           name: ex.nameEn,
@@ -602,8 +621,8 @@ export class WorkoutsService {
           reps,
           equipment: ex.equipment,
         });
-      });
-
+        if (result.length >= maxExercises) break;
+      }
       if (result.length >= maxExercises) break;
     }
 

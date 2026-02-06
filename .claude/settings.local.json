@@ -123,7 +123,8 @@
       "WebFetch(domain:www.thesaasnews.com)",
       "Bash(node:*)",
       "Bash(cd:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(sort:*)"
     ]
   }
 }

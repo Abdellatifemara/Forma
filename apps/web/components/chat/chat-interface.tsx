@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import {
   Bot,
   ImageIcon,
@@ -71,43 +71,43 @@ export function ChatInterface({
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const scrollToBottom = () => {
+  const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  }, []);
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  }, [messages, scrollToBottom]);
 
-  const handleSend = () => {
+  const handleSend = useCallback(() => {
     if (!inputValue.trim() || isLoading) return;
     onSendMessage(inputValue.trim());
     setInputValue('');
     setShowSuggestions(false);
-  };
+  }, [inputValue, isLoading, onSendMessage]);
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyPress = useCallback((e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       handleSend();
     }
-  };
+  }, [handleSend]);
 
-  const handleSuggestedPrompt = (prompt: string) => {
+  const handleSuggestedPrompt = useCallback((prompt: string) => {
     onSendMessage(prompt);
     setShowSuggestions(false);
-  };
+  }, [onSendMessage]);
 
-  const formatTime = (date: Date) => {
+  const formatTime = useCallback((date: Date) => {
     return new Intl.DateTimeFormat('en', {
       hour: 'numeric',
       minute: 'numeric',
       hour12: true,
     }).format(date);
-  };
+  }, []);
 
-  const getStatusColor = (status?: string) => {
-    switch (status) {
+  const statusColor = useMemo(() => {
+    switch (participant.status) {
       case 'online':
         return 'bg-green-500';
       case 'away':
@@ -115,7 +115,7 @@ export function ChatInterface({
       default:
         return 'bg-gray-400';
     }
-  };
+  }, [participant.status]);
 
   return (
     <Card className="flex h-[600px] flex-col">
@@ -136,9 +136,7 @@ export function ChatInterface({
               </Avatar>
               {participant.status && (
                 <span
-                  className={`absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-background ${getStatusColor(
-                    participant.status
-                  )}`}
+                  className={`absolute bottom-0 right-0 h-3 w-3 rounded-full border-2 border-background ${statusColor}`}
                 />
               )}
             </div>
