@@ -37,6 +37,13 @@ export class ExercisesService {
   }
 
   async search(dto: SearchExercisesDto): Promise<{
+    data: Exercise[];
+    meta: {
+      total: number;
+      page: number;
+      pageSize: number;
+      totalPages: number;
+    };
     exercises: Exercise[];
     total: number;
     page: number;
