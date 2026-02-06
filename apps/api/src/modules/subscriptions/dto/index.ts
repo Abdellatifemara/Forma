@@ -66,12 +66,12 @@ export const SUBSCRIPTION_PRICING = {
     yearly: 0,
   },
   PREMIUM: {
-    monthly: 79,
-    yearly: 590,
+    monthly: 199,
+    yearly: 1990, // ~10 months (2 months free)
   },
   PREMIUM_PLUS: {
-    monthly: 449,
-    yearly: 4290,
+    monthly: 699,
+    yearly: 6990, // ~10 months (2 months free)
   },
 } as const;
 

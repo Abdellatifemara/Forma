@@ -23,7 +23,6 @@ interface AuthRequest {
 }
 
 @Controller('subscriptions')
-@UseGuards(JwtAuthGuard)
 export class SubscriptionsController {
   constructor(private subscriptionsService: SubscriptionsService) {}
 
@@ -31,12 +30,13 @@ export class SubscriptionsController {
    * Get current user's subscription
    */
   @Get('me')
+  @UseGuards(JwtAuthGuard)
   async getMySubscription(@Request() req: AuthRequest) {
     return this.subscriptionsService.getSubscription(req.user.id);
   }
 
   /**
-   * Get available plans
+   * Get available plans - PUBLIC endpoint for pricing page
    */
   @Get('plans')
   async getPlans() {
@@ -47,6 +47,7 @@ export class SubscriptionsController {
    * Create or upgrade subscription
    */
   @Post()
+  @UseGuards(JwtAuthGuard)
   async createSubscription(
     @Request() req: AuthRequest,
     @Body() dto: CreateSubscriptionDto,
@@ -61,6 +62,7 @@ export class SubscriptionsController {
    * Cancel subscription
    */
   @Delete('me')
+  @UseGuards(JwtAuthGuard)
   async cancelSubscription(
     @Request() req: AuthRequest,
     @Body() dto: CancelSubscriptionDto,
@@ -72,6 +74,7 @@ export class SubscriptionsController {
    * Reactivate cancelled subscription
    */
   @Post('me/reactivate')
+  @UseGuards(JwtAuthGuard)
   async reactivateSubscription(@Request() req: AuthRequest) {
     return this.subscriptionsService.reactivateSubscription(req.user.id);
   }
@@ -80,6 +83,7 @@ export class SubscriptionsController {
    * Gift a subscription to another user
    */
   @Post('gift')
+  @UseGuards(JwtAuthGuard)
   async giftSubscription(
     @Request() req: AuthRequest,
     @Body() dto: GiftSubscriptionDto,
@@ -91,6 +95,7 @@ export class SubscriptionsController {
    * Check feature access
    */
   @Get('features/:featureId/access')
+  @UseGuards(JwtAuthGuard)
   async checkFeatureAccess(
     @Request() req: AuthRequest,
     @Param('featureId') featureId: string,
@@ -106,6 +111,7 @@ export class SubscriptionsController {
    * Get feature usage
    */
   @Get('features/:featureId/usage')
+  @UseGuards(JwtAuthGuard)
   async getFeatureUsage(
     @Request() req: AuthRequest,
     @Param('featureId') featureId: string,
@@ -117,6 +123,7 @@ export class SubscriptionsController {
    * Get payment history
    */
   @Get('payments')
+  @UseGuards(JwtAuthGuard)
   async getPaymentHistory(
     @Request() req: AuthRequest,
     @Query('page') page?: string,

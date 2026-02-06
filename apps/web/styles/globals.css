@@ -63,7 +63,7 @@
     --glow-accent: 0 0 30px hsl(150 100% 50% / 0.3);
   }
 
-  /* Light mode override (optional, user can switch) */
+  /* Light mode override */
   .light {
     --background: 210 20% 98%;
     --foreground: 220 20% 10%;
@@ -74,21 +74,29 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 10%;
 
-    --primary: 180 100% 40%;
+    --primary: 180 100% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 80% 55%;
+    --secondary: 270 80% 50%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 15% 94%;
-    --muted-foreground: 220 10% 45%;
+    --muted-foreground: 220 10% 40%;
 
-    --accent: 150 80% 45%;
+    --accent: 150 80% 40%;
     --accent-foreground: 0 0% 100%;
 
-    --border: 220 15% 90%;
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 88%;
     --input: 220 15% 94%;
-    --ring: 180 100% 40%;
+    --ring: 180 100% 35%;
+
+    /* Light mode glows (more subtle) */
+    --glow-primary: 0 0 20px hsl(180 100% 35% / 0.2);
+    --glow-secondary: 0 0 20px hsl(270 80% 50% / 0.2);
+    --glow-accent: 0 0 20px hsl(150 80% 40% / 0.2);
   }
 }
 

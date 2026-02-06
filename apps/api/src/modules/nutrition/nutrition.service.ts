@@ -361,4 +361,51 @@ export class NutritionService {
       },
     };
   }
+
+  // Get weekly nutrition summary
+  async getWeeklySummary(userId: string) {
+    const today = new Date();
+    const weekAgo = new Date(today);
+    weekAgo.setDate(today.getDate() - 7);
+
+    const meals = await this.prisma.mealLog.findMany({
+      where: {
+        userId,
+        loggedAt: { gte: weekAgo, lte: today },
+      },
+    });
+
+    // Group by day
+    const dailyTotals: Record<string, { calories: number; protein: number; carbs: number; fat: number }> = {};
+
+    meals.forEach(meal => {
+      const day = meal.loggedAt.toISOString().split('T')[0];
+      if (!dailyTotals[day]) {
+        dailyTotals[day] = { calories: 0, protein: 0, carbs: 0, fat: 0 };
+      }
+      dailyTotals[day].calories += meal.totalCalories || 0;
+      dailyTotals[day].protein += meal.totalProteinG || 0;
+      dailyTotals[day].carbs += meal.totalCarbsG || 0;
+      dailyTotals[day].fat += meal.totalFatG || 0;
+    });
+
+    const days = Object.entries(dailyTotals).map(([date, totals]) => ({
+      date,
+      ...totals,
+    }));
+
+    const totalMeals = meals.length;
+    const avgCalories = totalMeals > 0 ? Math.round(meals.reduce((sum, m) => sum + (m.totalCalories || 0), 0) / Math.max(Object.keys(dailyTotals).length, 1)) : 0;
+    const avgProtein = totalMeals > 0 ? Math.round(meals.reduce((sum, m) => sum + (m.totalProteinG || 0), 0) / Math.max(Object.keys(dailyTotals).length, 1)) : 0;
+
+    return {
+      days,
+      summary: {
+        totalMeals,
+        avgDailyCalories: avgCalories,
+        avgDailyProtein: avgProtein,
+        daysTracked: Object.keys(dailyTotals).length,
+      },
+    };
+  }
 }

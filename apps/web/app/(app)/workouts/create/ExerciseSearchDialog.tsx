@@ -70,16 +70,16 @@ export function ExerciseSearchDialog({ onAddExercise, children }: ExerciseSearch
         </div>
         <div className="mt-4 max-h-[400px] overflow-y-auto space-y-2">
           {isLoading && <p>Loading...</p>}
-          {searchResults.map(ex => (
+          {searchResults && searchResults.length > 0 && searchResults.map(ex => (
             <div key={ex.id} className="flex items-center justify-between rounded-md border p-2">
               <div>
-                <p className="font-semibold">{ex.name}</p>
-                <p className="text-sm text-muted-foreground">{ex.muscleGroup}</p>
+                <p className="font-semibold">{ex.name || ex.nameEn}</p>
+                <p className="text-sm text-muted-foreground">{ex.muscleGroup || ex.primaryMuscle}</p>
               </div>
               <Button size="sm" onClick={() => handleAdd(ex)}>Add</Button>
             </div>
           ))}
-          {!isLoading && searchQuery.length > 1 && searchResults.length === 0 && (
+          {!isLoading && searchQuery.length > 1 && (!searchResults || searchResults.length === 0) && (
             <p className="text-center text-muted-foreground">No results found.</p>
           )}
         </div>

@@ -140,4 +140,12 @@ export class NutritionController {
     await this.nutritionService.deleteMealLog(user.id, id);
     return { success: true };
   }
+
+  @UseGuards(JwtAuthGuard)
+  @Get('weekly')
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Get weekly nutrition summary' })
+  async getWeeklySummary(@CurrentUser() user: User) {
+    return this.nutritionService.getWeeklySummary(user.id);
+  }
 }

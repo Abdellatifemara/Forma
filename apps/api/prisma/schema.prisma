@@ -33,53 +33,48 @@ model User {
   language              String                    @default("en")
   measurementUnit       String                    @default("metric")
   notificationsEnabled  Boolean                   @default(true)
-  // Content moderation
-  bannedAt              DateTime?
-  uploadBanReason       String?
   createdAt             DateTime                  @default(now())
   updatedAt             DateTime                  @updatedAt
   lastActiveAt          DateTime                  @default(now())
   onboardingCompletedAt DateTime?
-
-  // Trainer/Client relationship tracking
-  invitedByCode         String?                   // Invite code used to join
-  invitedByTrainerId    String?                   // Trainer who invited
-  canSeeMarketplace     Boolean                   @default(true)  // false = locked to specific trainer
+  bannedAt              DateTime?
+  uploadBanReason       String?
+  canSeeMarketplace     Boolean                   @default(true)
+  invitedByCode         String?
+  invitedByTrainerId    String?
+  aiUsageEvents         AIUsageEvent[]
   contentViolations     ContentViolation[]
   conversations         ConversationParticipant[]
+  dailyReadinessLogs    DailyReadinessLog[]
+  featureUsageLimits    FeatureUsageLimit[]
   mealLogs              MealLog[]
   mealPlans             MealPlan[]
   sentMessages          Message[]                 @relation("SentMessages")
+  muscleRecoveryStatus  MuscleRecoveryStatus[]
   progressLogs          ProgressLog[]
   progressPhotos        ProgressPhoto[]
   streaks               Streak[]
   subscription          Subscription?
+  surveyResponses       SurveyResponse[]
   trainers              TrainerClient[]           @relation("ClientTrainers")
   trainerProfile        TrainerProfile?
   aiPreferences         UserAIPreference?
   achievements          UserAchievement[]
+  bodyComposition       UserBodyComposition?
   equipment             UserEquipment[]
+  equipmentInventory    UserEquipmentInventory?
+  exerciseCapability    UserExerciseCapability?
+  fastingProfile        UserFastingProfile?
+  goalsProfile          UserGoalsProfile?
+  healthProfile         UserHealthProfile?
+  lifestyleProfile      UserLifestyleProfile?
+  movementScreen        UserMovementScreen?
+  nutritionProfile      UserNutritionProfile?
+  trainingHistory       UserTrainingHistory?
+  workoutFeedback       WorkoutFeedback[]
   workoutLogs           WorkoutLog[]
   workoutPlans          WorkoutPlan[]
   receivedMessages      Message[]                 @relation("ReceivedMessages")
-  aiUsageEvents         AIUsageEvent[]
-  surveyResponses       SurveyResponse[]
-  featureUsageLimits    FeatureUsageLimit[]
-
-  // AI Data Collection Relations
-  equipmentInventory    UserEquipmentInventory?
-  exerciseCapability    UserExerciseCapability?
-  movementScreen        UserMovementScreen?
-  healthProfile         UserHealthProfile?
-  nutritionProfile      UserNutritionProfile?
-  lifestyleProfile      UserLifestyleProfile?
-  bodyComposition       UserBodyComposition?
-  dailyReadinessLogs    DailyReadinessLog[]
-  workoutFeedback       WorkoutFeedback[]
-  muscleRecoveryStatus  MuscleRecoveryStatus[]
-  trainingHistory       UserTrainingHistory?
-  goalsProfile          UserGoalsProfile?
-  fastingProfile        UserFastingProfile?
 
   @@index([email])
   @@index([phone])
@@ -96,33 +91,30 @@ model UserEquipment {
 }
 
 model UserAIPreference {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  isVegetarian      Boolean  @default(false)
-  isVegan           Boolean  @default(false)
-  isKeto            Boolean  @default(false)
-  isPescatarian     Boolean  @default(false)
-  allergies         String[] @default([])
-  dislikes          String[] @default([])
-  healthConditions  String[] @default([])
-  medications       String[] @default([])
-  preferLocalFoods  Boolean  @default(true)
-  budgetLevel       String   @default("moderate")
-  cookingSkillLevel String   @default("intermediate")
-  maxCookingTime    Int      @default(30)
-  // Ramadan Mode Settings
-  ramadanModeEnabled    Boolean  @default(false)
-  ramadanIftarTime      String?  // e.g., "18:30"
-  ramadanSuhoorTime     String?  // e.g., "04:00"
-  ramadanWorkoutTiming  String   @default("after_iftar") // before_iftar, after_iftar, after_taraweeh, before_suhoor
-  ramadanFastingDays    String[] @default([]) // track which days user is fasting
-  // Injury Settings
-  injuries              String[] @default([]) // e.g., ["knee", "lower_back", "shoulder"]
-  // Workout Preferences
-  preferredWorkoutTime  String?  // e.g., "morning", "afternoon", "evening"
-  availableEquipment    String[] @default([])
-  workoutDurationMins   Int      @default(45)
-  user                  User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id                   String   @id @default(cuid())
+  userId               String   @unique
+  isVegetarian         Boolean  @default(false)
+  isVegan              Boolean  @default(false)
+  isKeto               Boolean  @default(false)
+  isPescatarian        Boolean  @default(false)
+  allergies            String[] @default([])
+  dislikes             String[] @default([])
+  healthConditions     String[] @default([])
+  medications          String[] @default([])
+  preferLocalFoods     Boolean  @default(true)
+  budgetLevel          String   @default("moderate")
+  cookingSkillLevel    String   @default("intermediate")
+  maxCookingTime       Int      @default(30)
+  availableEquipment   String[] @default([])
+  injuries             String[] @default([])
+  preferredWorkoutTime String?
+  ramadanFastingDays   String[] @default([])
+  ramadanIftarTime     String?
+  ramadanModeEnabled   Boolean  @default(false)
+  ramadanSuhoorTime    String?
+  ramadanWorkoutTiming String   @default("after_iftar")
+  workoutDurationMins  Int      @default(45)
+  user                 User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Exercise {
@@ -153,8 +145,8 @@ model Exercise {
   createdAt        DateTime               @default(now())
   updatedAt        DateTime               @updatedAt
   exerciseLogs     ExerciseLog[]
-  workoutExercises WorkoutExercise[]
   programExercises ProgramExercise[]
+  workoutExercises WorkoutExercise[]
 
   @@index([primaryMuscle])
   @@index([category])
@@ -223,14 +215,14 @@ model WorkoutExercise {
 }
 
 model WorkoutLog {
-  id              String        @id @default(cuid())
+  id              String           @id @default(cuid())
   userId          String
   workoutId       String?
   manualName      String?
   scheduledDate   DateTime
   startedAt       DateTime?
   completedAt     DateTime?
-  status          WorkoutStatus @default(SCHEDULED)
+  status          WorkoutStatus    @default(SCHEDULED)
   totalVolume     Float?
   durationMinutes Int?
   caloriesBurned  Int?
@@ -238,8 +230,8 @@ model WorkoutLog {
   notes           String?
   exerciseLogs    ExerciseLog[]
   feedback        WorkoutFeedback?
-  user            User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  workout         Workout?      @relation(fields: [workoutId], references: [id])
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  workout         Workout?         @relation(fields: [workoutId], references: [id])
 
   @@index([userId])
   @@index([scheduledDate])
@@ -428,46 +420,39 @@ model ProgressPhoto {
 }
 
 model TrainerProfile {
-  id                 String                 @id @default(cuid())
-  userId             String                 @unique
-  bio                String?
-  specializations    String[]
-  yearsExperience    Int                    @default(0)
-  instagramHandle    String?
-  instagramFollowers Int?
-  monthlyPrice       Int
-  averageRating      Float                  @default(0)
-  totalReviews       Int                    @default(0)
-  status             TrainerStatus          @default(PENDING)
-  verifiedAt         DateTime?
-  maxClients         Int                    @default(20)
-  acceptingClients   Boolean                @default(true)
-  createdAt          DateTime               @default(now())
-  updatedAt          DateTime               @updatedAt
-
-  // New: Trainer Tier & Commission
-  tier               TrainerTier            @default(REGULAR)
-  commissionRate     Float                  @default(0.20)  // 0.20 = 20% for regular, 0.05-0.07 for trusted
-  canGiftPremium     Boolean                @default(false) // Only trusted partners
-
-  // Earnings
-  totalEarnings         Float                  @default(0)
-  availableBalanceEGP   Float                  @default(0)
-  pendingPayoutEGP      Float                  @default(0)
-  lastPayoutAt          DateTime?
-
-  // Invite System
-  inviteCode         String?                @unique
-  inviteUses         Int                    @default(0)
-
-  certifications     TrainerCertification[]
-  clients            TrainerClient[]
-  user               User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
-  reviews            TrainerReview[]
-  workoutPlans       WorkoutPlan[]
-  transactions       TrainerTransaction[]
-  invites            TrainerInvite[]
-  programs           TrainerProgram[]
+  id                  String                 @id @default(cuid())
+  userId              String                 @unique
+  bio                 String?
+  specializations     String[]
+  yearsExperience     Int                    @default(0)
+  instagramHandle     String?
+  instagramFollowers  Int?
+  monthlyPrice        Int
+  averageRating       Float                  @default(0)
+  totalReviews        Int                    @default(0)
+  status              TrainerStatus          @default(PENDING)
+  verifiedAt          DateTime?
+  maxClients          Int                    @default(20)
+  acceptingClients    Boolean                @default(true)
+  createdAt           DateTime               @default(now())
+  updatedAt           DateTime               @updatedAt
+  canGiftPremium      Boolean                @default(false)
+  commissionRate      Float                  @default(0.20)
+  inviteCode          String?                @unique
+  inviteUses          Int                    @default(0)
+  lastPayoutAt        DateTime?
+  tier                TrainerTier            @default(REGULAR)
+  totalEarnings       Float                  @default(0)
+  availableBalanceEGP Float                  @default(0)
+  pendingPayoutEGP    Float                  @default(0)
+  certifications      TrainerCertification[]
+  clients             TrainerClient[]
+  invites             TrainerInvite[]
+  user                User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  programs            TrainerProgram[]
+  reviews             TrainerReview[]
+  transactions        TrainerTransaction[]
+  workoutPlans        WorkoutPlan[]
 
   @@index([status])
   @@index([averageRating])
@@ -491,28 +476,23 @@ model TrainerCertification {
 }
 
 model TrainerClient {
-  id        String         @id @default(cuid())
-  trainerId String
-  clientId  String
-  isActive  Boolean        @default(true)
-  startDate DateTime       @default(now())
-  endDate   DateTime?
-  notes     String?
-
-  // New: Invite tracking & visibility
-  invitedVia         String?        // Invite code used
-  canSeeMarketplace  Boolean        @default(true)  // false for trusted partner clients
-  premiumGifted      Boolean        @default(false) // Was premium gifted by trainer?
-  complianceRate     Float          @default(0)     // Track if client follows program
-
-  // Current program assignment
-  currentProgramId   String?
-  programStartDate   DateTime?
-  programEndDate     DateTime?
-
-  client    User           @relation("ClientTrainers", fields: [clientId], references: [id], onDelete: Cascade)
-  trainer   TrainerProfile @relation(fields: [trainerId], references: [id], onDelete: Cascade)
-  program   TrainerProgram? @relation(fields: [currentProgramId], references: [id])
+  id                String          @id @default(cuid())
+  trainerId         String
+  clientId          String
+  isActive          Boolean         @default(true)
+  startDate         DateTime        @default(now())
+  endDate           DateTime?
+  notes             String?
+  canSeeMarketplace Boolean         @default(true)
+  complianceRate    Float           @default(0)
+  currentProgramId  String?
+  invitedVia        String?
+  premiumGifted     Boolean         @default(false)
+  programEndDate    DateTime?
+  programStartDate  DateTime?
+  client            User            @relation("ClientTrainers", fields: [clientId], references: [id], onDelete: Cascade)
+  program           TrainerProgram? @relation(fields: [currentProgramId], references: [id])
+  trainer           TrainerProfile  @relation(fields: [trainerId], references: [id], onDelete: Cascade)
 
   @@unique([trainerId, clientId])
   @@index([trainerId])
@@ -520,13 +500,12 @@ model TrainerClient {
   @@index([isActive])
 }
 
-// Trainer Invite System
 model TrainerInvite {
   id            String         @id @default(cuid())
   trainerId     String
   code          String         @unique
   uses          Int            @default(0)
-  maxUses       Int?           // null = unlimited
+  maxUses       Int?
   grantsPremium Boolean        @default(false)
   expiresAt     DateTime?
   isActive      Boolean        @default(true)
@@ -537,119 +516,113 @@ model TrainerInvite {
   @@index([code])
 }
 
-// Trainer Programs (converted from PDFs or built manually)
 model TrainerProgram {
-  id             String          @id @default(cuid())
-  trainerId      String
-  nameEn         String
-  nameAr         String?
-  descriptionEn  String?
-  descriptionAr  String?
-  durationWeeks  Int             @default(4)
-  priceEGP       Int?            // null = included in trainer subscription
-  status         ProgramStatus   @default(DRAFT)
-  isTemplate     Boolean         @default(false)  // Can be reused
-  sourceType     String?         // "pdf", "manual", "ai_generated"
-  sourcePdfUrl   String?         // Original PDF if uploaded
-  createdAt      DateTime        @default(now())
-  updatedAt      DateTime        @updatedAt
-  trainer        TrainerProfile  @relation(fields: [trainerId], references: [id], onDelete: Cascade)
-  workoutDays    ProgramWorkoutDay[]
-  nutritionDays  ProgramNutritionDay[]
-  clients        TrainerClient[]
+  id            String                @id @default(cuid())
+  trainerId     String
+  nameEn        String
+  nameAr        String?
+  descriptionEn String?
+  descriptionAr String?
+  durationWeeks Int                   @default(4)
+  priceEGP      Int?
+  status        ProgramStatus         @default(DRAFT)
+  isTemplate    Boolean               @default(false)
+  sourceType    String?
+  sourcePdfUrl  String?
+  createdAt     DateTime              @default(now())
+  updatedAt     DateTime              @updatedAt
+  nutritionDays ProgramNutritionDay[]
+  workoutDays   ProgramWorkoutDay[]
+  clients       TrainerClient[]
+  trainer       TrainerProfile        @relation(fields: [trainerId], references: [id], onDelete: Cascade)
 
   @@index([trainerId])
   @@index([status])
 }
 
-// Program Workout Days
 model ProgramWorkoutDay {
-  id           String         @id @default(cuid())
-  programId    String
-  dayNumber    Int            // Day 1, 2, 3...
-  nameEn       String?
-  nameAr       String?
-  notesEn      String?
-  notesAr      String?
-  program      TrainerProgram @relation(fields: [programId], references: [id], onDelete: Cascade)
-  exercises    ProgramExercise[]
+  id        String            @id @default(cuid())
+  programId String
+  dayNumber Int
+  nameEn    String?
+  nameAr    String?
+  notesEn   String?
+  notesAr   String?
+  exercises ProgramExercise[]
+  program   TrainerProgram    @relation(fields: [programId], references: [id], onDelete: Cascade)
 
-  @@index([programId])
   @@unique([programId, dayNumber])
+  @@index([programId])
 }
 
-// Program Exercises
 model ProgramExercise {
-  id              String            @id @default(cuid())
-  workoutDayId    String
-  exerciseId      String?           // Link to Exercise or custom name
-  customNameEn    String?           // For exercises not in DB
-  customNameAr    String?
-  order           Int
-  sets            Int               @default(3)
-  reps            String?           // "10-12" or "8"
-  restSeconds     Int               @default(60)
-  notesEn         String?
-  notesAr         String?
-  workoutDay      ProgramWorkoutDay @relation(fields: [workoutDayId], references: [id], onDelete: Cascade)
-  exercise        Exercise?         @relation(fields: [exerciseId], references: [id])
+  id           String            @id @default(cuid())
+  workoutDayId String
+  exerciseId   String?
+  customNameEn String?
+  customNameAr String?
+  order        Int
+  sets         Int               @default(3)
+  reps         String?
+  restSeconds  Int               @default(60)
+  notesEn      String?
+  notesAr      String?
+  exercise     Exercise?         @relation(fields: [exerciseId], references: [id])
+  workoutDay   ProgramWorkoutDay @relation(fields: [workoutDayId], references: [id], onDelete: Cascade)
 
   @@index([workoutDayId])
 }
 
-// Program Nutrition Days
 model ProgramNutritionDay {
-  id           String         @id @default(cuid())
-  programId    String
-  dayNumber    Int
-  notesEn      String?
-  notesAr      String?
+  id             String         @id @default(cuid())
+  programId      String
+  dayNumber      Int
+  notesEn        String?
+  notesAr        String?
   targetCalories Int?
   targetProteinG Int?
   targetCarbsG   Int?
   targetFatG     Int?
-  program      TrainerProgram @relation(fields: [programId], references: [id], onDelete: Cascade)
-  meals        ProgramMeal[]
+  meals          ProgramMeal[]
+  program        TrainerProgram @relation(fields: [programId], references: [id], onDelete: Cascade)
 
-  @@index([programId])
   @@unique([programId, dayNumber])
+  @@index([programId])
 }
 
-// Program Meals
 model ProgramMeal {
-  id              String              @id @default(cuid())
-  nutritionDayId  String
-  mealType        MealType
-  nameEn          String?
-  nameAr          String?
-  descriptionEn   String?             // Full description of meal
-  descriptionAr   String?
-  calories        Int?
-  proteinG        Int?
-  carbsG          Int?
-  fatG            Int?
-  nutritionDay    ProgramNutritionDay @relation(fields: [nutritionDayId], references: [id], onDelete: Cascade)
+  id             String              @id @default(cuid())
+  nutritionDayId String
+  mealType       MealType
+  nameEn         String?
+  nameAr         String?
+  descriptionEn  String?
+  descriptionAr  String?
+  calories       Int?
+  proteinG       Int?
+  carbsG         Int?
+  fatG           Int?
+  nutritionDay   ProgramNutritionDay @relation(fields: [nutritionDayId], references: [id], onDelete: Cascade)
 
   @@index([nutritionDayId])
 }
 
-// Trainer Earnings & Transactions
 model TrainerTransaction {
-  id              String            @id @default(cuid())
-  trainerId       String
-  clientId        String?
-  type            TransactionType
-  amountEGP       Float
-  platformFeeEGP  Float             // Commission taken
-  trainerEarningEGP Float           // What trainer gets
-  status          TransactionStatus @default(PENDING)
-  description     String?
-  paymentRef      String?           // Paymob/Fawry reference
-  metadata        Json?             // Additional transaction details
-  createdAt       DateTime          @default(now())
-  completedAt     DateTime?
-  paidOutAt       DateTime?
-  trainer         TrainerProfile    @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+  id                String            @id @default(cuid())
+  trainerId         String
+  clientId          String?
+  type              TransactionType
+  amountEGP         Float
+  platformFeeEGP    Float
+  trainerEarningEGP Float
+  status            TransactionStatus @default(PENDING)
+  description       String?
+  paymentRef        String?
+  createdAt         DateTime          @default(now())
+  completedAt       DateTime?
+  paidOutAt         DateTime?
+  metadata          Json?
+  trainer           TrainerProfile    @relation(fields: [trainerId], references: [id], onDelete: Cascade)
 
   @@index([trainerId])
   @@index([status])
@@ -806,31 +779,30 @@ model Video {
   @@index([isActive])
 }
 
-// Squad/Group Accountability System
 model Squad {
-  id          String        @id @default(cuid())
+  id          String           @id @default(cuid())
   name        String
   description String?
   imageUrl    String?
-  isPublic    Boolean       @default(true)
-  maxMembers  Int           @default(20)
+  isPublic    Boolean          @default(true)
+  maxMembers  Int              @default(20)
   createdById String
-  createdAt   DateTime      @default(now())
-  updatedAt   DateTime      @updatedAt
-  members     SquadMember[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
   activities  SquadActivity[]
   challenges  SquadChallenge[]
+  members     SquadMember[]
 
   @@index([isPublic])
 }
 
 model SquadMember {
-  id        String   @id @default(cuid())
-  squadId   String
-  userId    String
-  role      String   @default("member") // admin, moderator, member
-  joinedAt  DateTime @default(now())
-  squad     Squad    @relation(fields: [squadId], references: [id], onDelete: Cascade)
+  id       String   @id @default(cuid())
+  squadId  String
+  userId   String
+  role     String   @default("member")
+  joinedAt DateTime @default(now())
+  squad    Squad    @relation(fields: [squadId], references: [id], onDelete: Cascade)
 
   @@unique([squadId, userId])
   @@index([userId])
@@ -840,7 +812,7 @@ model SquadActivity {
   id          String   @id @default(cuid())
   squadId     String
   userId      String
-  type        String   // workout_completed, streak_milestone, challenge_joined, etc.
+  type        String
   description String
   metadata    Json?
   createdAt   DateTime @default(now())
@@ -851,38 +823,562 @@ model SquadActivity {
 }
 
 model SquadChallenge {
-  id          String    @id @default(cuid())
+  id          String   @id @default(cuid())
   squadId     String
   name        String
   description String?
-  type        String    // workout_count, total_volume, streak_days, etc.
+  type        String
   target      Int
   startDate   DateTime
   endDate     DateTime
-  createdAt   DateTime  @default(now())
-  squad       Squad     @relation(fields: [squadId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  squad       Squad    @relation(fields: [squadId], references: [id], onDelete: Cascade)
 
   @@index([squadId])
   @@index([endDate])
 }
 
-// Content Moderation
 model ContentViolation {
-  id          String   @id @default(cuid())
-  userId      String
-  resourceId  String   // Cloudinary public_id or message ID
-  type        String   // IMAGE, VIDEO, TEXT
-  reason      String
-  detectedAt  DateTime
-  reviewedAt  DateTime?
-  reviewedBy  String?
-  action      String?  // warned, banned, cleared
-  createdAt   DateTime @default(now())
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id         String    @id @default(cuid())
+  userId     String
+  resourceId String
+  type       String
+  reason     String
+  detectedAt DateTime
+  reviewedAt DateTime?
+  reviewedBy String?
+  action     String?
+  createdAt  DateTime  @default(now())
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
   @@index([createdAt])
   @@index([reviewedAt])
+}
+
+model AIUsageEvent {
+  id             String           @id @default(cuid())
+  userId         String
+  tier           SubscriptionTier
+  featureId      String
+  queryType      AIQueryType
+  queryText      String?
+  responseTimeMs Int?
+  successful     Boolean          @default(true)
+  satisfaction   Int?
+  metadata       Json?
+  createdAt      DateTime         @default(now())
+  user           User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([tier])
+  @@index([queryType])
+  @@index([createdAt])
+}
+
+model Survey {
+  id            String           @id @default(cuid())
+  code          String           @unique
+  title         String
+  titleAr       String?
+  description   String?
+  descriptionAr String?
+  questions     Json
+  isActive      Boolean          @default(true)
+  triggerEvent  String?
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+  responses     SurveyResponse[]
+}
+
+model SurveyResponse {
+  id          String   @id @default(cuid())
+  surveyId    String
+  userId      String
+  responses   Json
+  completedAt DateTime @default(now())
+  metadata    Json?
+  survey      Survey   @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([surveyId, userId])
+  @@index([surveyId])
+  @@index([userId])
+}
+
+model FeatureUsageLimit {
+  id          String    @id @default(cuid())
+  userId      String
+  featureId   String
+  usedCount   Int       @default(0)
+  limitHitAt  DateTime?
+  periodStart DateTime  @default(now())
+  periodEnd   DateTime
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, featureId, periodStart])
+  @@index([userId])
+  @@index([featureId])
+}
+
+model UserEquipmentInventory {
+  id                 String           @id @default(cuid())
+  userId             String           @unique
+  primaryLocation    TrainingLocation @default(HOME)
+  hasGymAccess       Boolean          @default(false)
+  gymName            String?
+  hasFloorSpace      Boolean          @default(true)
+  hasWallSpace       Boolean          @default(true)
+  hasPullUpBar       Boolean          @default(false)
+  hasDipStation      Boolean          @default(false)
+  hasParallettesBars Boolean          @default(false)
+  hasDumbbells       Boolean          @default(false)
+  dumbbellMinKg      Float?
+  dumbbellMaxKg      Float?
+  dumbbellIncrement  Float?
+  hasBarbell         Boolean          @default(false)
+  barbellWeightKg    Float?
+  hasPlates          Boolean          @default(false)
+  plateMaxTotalKg    Float?
+  hasKettlebells     Boolean          @default(false)
+  kettlebellWeights  Float[]          @default([])
+  hasEZBar           Boolean          @default(false)
+  hasBench           Boolean          @default(false)
+  benchType          BenchType?
+  hasSquatRack       Boolean          @default(false)
+  hasPowerRack       Boolean          @default(false)
+  hasSmithMachine    Boolean          @default(false)
+  hasCableMachine    Boolean          @default(false)
+  hasLegPress        Boolean          @default(false)
+  hasLegExtension    Boolean          @default(false)
+  hasLegCurl         Boolean          @default(false)
+  hasLatPulldown     Boolean          @default(false)
+  hasSeatedRow       Boolean          @default(false)
+  hasChestPress      Boolean          @default(false)
+  hasShoulderPress   Boolean          @default(false)
+  hasPecDeck         Boolean          @default(false)
+  hasTreadmill       Boolean          @default(false)
+  hasStatBike        Boolean          @default(false)
+  hasRowingMachine   Boolean          @default(false)
+  hasResistanceBands Boolean          @default(false)
+  bandStrengths      String[]         @default([])
+  hasTRX             Boolean          @default(false)
+  hasAbWheel         Boolean          @default(false)
+  hasFoamRoller      Boolean          @default(false)
+  hasYogaMat         Boolean          @default(false)
+  hasJumpRope        Boolean          @default(false)
+  hasBox             Boolean          @default(false)
+  boxHeightsCm       Int[]            @default([])
+  hasMedicineBall    Boolean          @default(false)
+  medicineBallKg     Float?
+  hasStabilityBall   Boolean          @default(false)
+  updatedAt          DateTime         @updatedAt
+  user               User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserExerciseCapability {
+  id                     String   @id @default(cuid())
+  userId                 String   @unique
+  assessedAt             DateTime @default(now())
+  pushUpMaxReps          Int      @default(0)
+  pushUpFromKnees        Boolean  @default(false)
+  wallPushUp             Boolean  @default(true)
+  declinePushUp          Boolean  @default(false)
+  diamondPushUp          Boolean  @default(false)
+  pikePushUp             Boolean  @default(false)
+  handstandPushUp        Boolean  @default(false)
+  dipMaxReps             Int      @default(0)
+  pullUpMaxReps          Int      @default(0)
+  chinUpMaxReps          Int      @default(0)
+  canHangFromBar         Boolean  @default(false)
+  bodyweightRow          Boolean  @default(false)
+  plankHoldSeconds       Int      @default(0)
+  sidePlankSeconds       Int      @default(0)
+  hollowBodyHold         Boolean  @default(false)
+  hangingLegRaise        Boolean  @default(false)
+  abWheelRollout         Boolean  @default(false)
+  bodyweightSquatMaxReps Int      @default(0)
+  canSquatBelowParallel  Boolean  @default(false)
+  pistolSquat            Boolean  @default(false)
+  bulgarianSplitSquat    Boolean  @default(false)
+  lungeMaxReps           Int      @default(0)
+  boxJump                Boolean  @default(false)
+  boxJumpMaxCm           Int?
+  singleLegRDL           Boolean  @default(false)
+  hipThrust              Boolean  @default(false)
+  nordicCurl             Boolean  @default(false)
+  singleLegStandSeconds  Int      @default(0)
+  canRun5Min             Boolean  @default(false)
+  canRun20Min            Boolean  @default(false)
+  burpeeMaxReps          Int      @default(0)
+  canTouchToes           Boolean  @default(false)
+  canDeepSquatNoHeel     Boolean  @default(false)
+  canOverheadSquat       Boolean  @default(false)
+  benchPress1RM          Float?
+  squat1RM               Float?
+  deadlift1RM            Float?
+  overheadPress1RM       Float?
+  updatedAt              DateTime @updatedAt
+  user                   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserMovementScreen {
+  id                          String   @id @default(cuid())
+  userId                      String   @unique
+  screenedAt                  DateTime @default(now())
+  deepSquatScore              Int      @default(2)
+  shoulderMobilityScoreL      Int      @default(2)
+  shoulderMobilityScoreR      Int      @default(2)
+  activeSLRScoreL             Int      @default(2)
+  activeSLRScoreR             Int      @default(2)
+  limitedAnkleDorsiflexion    Boolean  @default(false)
+  limitedHipFlexion           Boolean  @default(false)
+  limitedHipExtension         Boolean  @default(false)
+  limitedThoracicExtension    Boolean  @default(false)
+  limitedShoulderFlexion      Boolean  @default(false)
+  limitedShoulderRotationInt  Boolean  @default(false)
+  limitedShoulderRotationExt  Boolean  @default(false)
+  limitedHamstringFlexibility Boolean  @default(false)
+  limitedWristExtension       Boolean  @default(false)
+  hasLeftRightImbalance       Boolean  @default(false)
+  strongerSide                String?
+  forwardHeadPosture          Boolean  @default(false)
+  roundedShoulders            Boolean  @default(false)
+  excessiveLordosis           Boolean  @default(false)
+  anteriorPelvicTilt          Boolean  @default(false)
+  kneeValgus                  Boolean  @default(false)
+  notes                       String?
+  updatedAt                   DateTime @updatedAt
+  user                        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserHealthProfile {
+  id                      String       @id @default(cuid())
+  userId                  String       @unique
+  updatedAt               DateTime     @updatedAt
+  hasHeartCondition       Boolean      @default(false)
+  hasHighBloodPressure    Boolean      @default(false)
+  hasLowBloodPressure     Boolean      @default(false)
+  hasDiabetes             Boolean      @default(false)
+  diabetesType            Int?
+  hasAsthma               Boolean      @default(false)
+  hasArthritis            Boolean      @default(false)
+  arthritisJoints         String[]     @default([])
+  hasOsteoporosis         Boolean      @default(false)
+  hasHerniaHistory        Boolean      @default(false)
+  hasJointReplacement     Boolean      @default(false)
+  jointReplacementDetails String?
+  hasNerveIssues          Boolean      @default(false)
+  nerveIssueDetails       String?
+  hasVertigoBalance       Boolean      @default(false)
+  isPregnant              Boolean      @default(false)
+  pregnancyTrimester      Int?
+  hadRecentSurgery        Boolean      @default(false)
+  surgeryDetails          String?
+  surgeryDate             DateTime?
+  clearedForExercise      Boolean      @default(true)
+  takesBloodThinners      Boolean      @default(false)
+  takesBetaBlockers       Boolean      @default(false)
+  takesInsulin            Boolean      @default(false)
+  medicationNotes         String?
+  hasDoctorClearance      Boolean      @default(true)
+  user                    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  injuries                UserInjury[]
+}
+
+model UserInjury {
+  id                String            @id @default(cuid())
+  healthProfileId   String
+  bodyPart          InjuryBodyPart
+  side              String?
+  injuryType        InjuryType
+  severity          InjurySeverity
+  occurredAt        DateTime?
+  isCurrentlyActive Boolean           @default(true)
+  isFullyHealed     Boolean           @default(false)
+  painLevel         Int               @default(0)
+  painTriggers      String[]          @default([])
+  avoidMovements    String[]          @default([])
+  inPhysicalTherapy Boolean           @default(false)
+  notes             String?
+  updatedAt         DateTime          @updatedAt
+  healthProfile     UserHealthProfile @relation(fields: [healthProfileId], references: [id], onDelete: Cascade)
+
+  @@index([healthProfileId])
+}
+
+model UserNutritionProfile {
+  id                      String       @id @default(cuid())
+  userId                  String       @unique
+  updatedAt               DateTime     @updatedAt
+  isHalal                 Boolean      @default(false)
+  isKosher                Boolean      @default(false)
+  isVegetarian            Boolean      @default(false)
+  isVegan                 Boolean      @default(false)
+  isPescatarian           Boolean      @default(false)
+  isKeto                  Boolean      @default(false)
+  isLowCarb               Boolean      @default(false)
+  isPaleo                 Boolean      @default(false)
+  isLowSodium             Boolean      @default(false)
+  allergyPeanuts          Boolean      @default(false)
+  allergyTreeNuts         Boolean      @default(false)
+  allergyMilk             Boolean      @default(false)
+  allergyEggs             Boolean      @default(false)
+  allergyGluten           Boolean      @default(false)
+  allergySoy              Boolean      @default(false)
+  allergyFish             Boolean      @default(false)
+  allergyShellfish        Boolean      @default(false)
+  allergySesame           Boolean      @default(false)
+  otherAllergies          String[]     @default([])
+  lactoseIntolerant       Boolean      @default(false)
+  glutenSensitive         Boolean      @default(false)
+  fodmapSensitive         Boolean      @default(false)
+  dislikedFoods           String[]     @default([])
+  dislikedCategories      String[]     @default([])
+  cookingSkillLevel       CookingLevel @default(INTERMEDIATE)
+  maxCookingTimeMin       Int          @default(30)
+  willingToBatchCook      Boolean      @default(false)
+  hasKitchenAccess        Boolean      @default(true)
+  hasBlender              Boolean      @default(false)
+  hasAirFryer             Boolean      @default(false)
+  budgetLevel             BudgetLevel  @default(MODERATE)
+  monthlyFoodBudgetEGP    Int?
+  mealsPerDay             Int          @default(3)
+  snacksPerDay            Int          @default(1)
+  eatsBreakfast           Boolean      @default(true)
+  breakfastTime           String?
+  lunchTime               String?
+  dinnerTime              String?
+  doesIntermittentFasting Boolean      @default(false)
+  fastingWindowStart      String?
+  fastingWindowEnd        String?
+  preferLocalEgyptianFood Boolean      @default(true)
+  preferSimpleRecipes     Boolean      @default(true)
+  likesSpicyFood          Boolean      @default(true)
+  takesProteinPowder      Boolean      @default(false)
+  proteinPowderType       String?
+  takesCreatine           Boolean      @default(false)
+  takesPreWorkout         Boolean      @default(false)
+  otherSupplements        String[]     @default([])
+  useCalculatedMacros     Boolean      @default(true)
+  customCalories          Int?
+  customProteinG          Int?
+  customCarbsG            Int?
+  customFatG              Int?
+  user                    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserLifestyleProfile {
+  id                    String                @id @default(cuid())
+  userId                String                @unique
+  updatedAt             DateTime              @updatedAt
+  occupation            String?
+  workType              WorkType              @default(SEDENTARY)
+  workHoursPerDay       Int                   @default(8)
+  dailyStepsEstimate    Int                   @default(5000)
+  hasPhysicalHobbies    Boolean               @default(false)
+  physicalHobbies       String[]              @default([])
+  averageSleepHours     Float                 @default(7)
+  sleepQuality          SleepQuality          @default(FAIR)
+  typicalBedtime        String?
+  typicalWakeTime       String?
+  hasSleepDisorder      Boolean               @default(false)
+  currentStressLevel    StressLevel           @default(MODERATE)
+  mainStressors         String[]              @default([])
+  hasAnxiety            Boolean               @default(false)
+  preferredWorkoutTime  WorkoutTimePreference @default(ANYTIME)
+  availableMonday       Boolean               @default(true)
+  availableTuesday      Boolean               @default(true)
+  availableWednesday    Boolean               @default(true)
+  availableThursday     Boolean               @default(true)
+  availableFriday       Boolean               @default(true)
+  availableSaturday     Boolean               @default(true)
+  availableSunday       Boolean               @default(true)
+  maxWorkoutMinutes     Int                   @default(60)
+  minWorkoutMinutes     Int                   @default(30)
+  targetWorkoutsPerWeek Int                   @default(4)
+  recoveryCapacity      RecoveryCapacity      @default(AVERAGE)
+  doesStretching        Boolean               @default(false)
+  doesYogaMobility      Boolean               @default(false)
+  caffeineIntakeDaily   Int                   @default(2)
+  smoker                Boolean               @default(false)
+  alcoholDrinksPerWeek  Int                   @default(0)
+  user                  User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserBodyComposition {
+  id                 String         @id @default(cuid())
+  userId             String         @unique
+  updatedAt          DateTime       @updatedAt
+  currentWeightKg    Float
+  heightCm           Float
+  bmi                Float?
+  bodyFatPercent     Float?
+  bodyFatMethod      BodyFatMethod?
+  leanMassKg         Float?
+  fatMassKg          Float?
+  neckCm             Float?
+  shouldersCm        Float?
+  chestCm            Float?
+  waistCm            Float?
+  hipsGlutesCm       Float?
+  leftBicepCm        Float?
+  rightBicepCm       Float?
+  leftThighCm        Float?
+  rightThighCm       Float?
+  leftCalfCm         Float?
+  rightCalfCm        Float?
+  waistToHipRatio    Float?
+  waistToHeightRatio Float?
+  bodyType           BodyType?
+  frameSize          FrameSize?
+  user               User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model DailyReadinessLog {
+  id                   String            @id @default(cuid())
+  userId               String
+  loggedAt             DateTime          @default(now())
+  energyLevel          Int
+  motivationLevel      Int
+  moodLevel            Int
+  overallReadiness     Int
+  sleepHours           Float?
+  sleepQuality         Int?
+  anyPainToday         Boolean           @default(false)
+  painAreas            String[]          @default([])
+  painIntensity        Int?
+  musclesSore          Boolean           @default(false)
+  soreAreas            String[]          @default([])
+  sorenessLevel        Int?
+  feelingIll           Boolean           @default(false)
+  restingHeartRate     Int?
+  hrvScore             Int?
+  stressYesterday      Int?
+  alcoholYesterday     Boolean           @default(false)
+  hydratedWell         Boolean           @default(true)
+  recommendedIntensity WorkoutIntensity?
+  shouldSkipWorkout    Boolean           @default(false)
+  notes                String?
+  user                 User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([loggedAt])
+}
+
+model WorkoutFeedback {
+  id                    String           @id @default(cuid())
+  workoutLogId          String           @unique
+  userId                String
+  loggedAt              DateTime         @default(now())
+  overallRating         Int
+  perceivedDifficulty   Int
+  enjoymentLevel        Int
+  performanceVsExpected PerformanceLevel
+  formQuality           Int
+  anyPainDuringWorkout  Boolean          @default(false)
+  painExercises         String[]         @default([])
+  feltTooEasy           Boolean          @default(false)
+  feltTooHard           Boolean          @default(false)
+  favoriteExercise      String?
+  leastFavoriteExercise String?
+  wantMoreOf            String?
+  wantLessOf            String?
+  notes                 String?
+  user                  User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  workoutLog            WorkoutLog       @relation(fields: [workoutLogId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model MuscleRecoveryStatus {
+  id                      String      @id @default(cuid())
+  userId                  String
+  muscleGroup             MuscleGroup
+  lastWorkedAt            DateTime?
+  lastWorkoutSets         Int         @default(0)
+  lastWorkoutRPE          Int         @default(5)
+  recoveryPercent         Int         @default(100)
+  estimatedFullRecoveryAt DateTime?
+  currentSoreness         Int         @default(0)
+  setsThisWeek            Int         @default(0)
+  targetSetsPerWeek       Int         @default(10)
+  updatedAt               DateTime    @updatedAt
+  user                    User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, muscleGroup])
+  @@index([userId])
+}
+
+model UserTrainingHistory {
+  id                     String          @id @default(cuid())
+  userId                 String          @unique
+  trainingStartDate      DateTime?
+  totalYearsTraining     Float           @default(0)
+  currentLevel           ExperienceLevel @default(BEGINNER)
+  previousPrograms       String[]        @default([])
+  sportsBackground       String[]        @default([])
+  preferredTrainingStyle TrainingStyle   @default(TRADITIONAL)
+  preferredSplitType     SplitType       @default(FULL_BODY)
+  preferredRepRange      RepRange        @default(MODERATE)
+  bestProgressMade       String?
+  whatWorkedBest         String?
+  whatDidntWork          String?
+  totalWorkoutsLogged    Int             @default(0)
+  longestStreak          Int             @default(0)
+  averageWorkoutsPerWeek Float           @default(0)
+  consistencyScore       Int             @default(50)
+  prBenchPressKg         Float?
+  prSquatKg              Float?
+  prDeadliftKg           Float?
+  prPullUps              Int?
+  prPushUps              Int?
+  prPlankSeconds         Int?
+  updatedAt              DateTime        @updatedAt
+  user                   User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserGoalsProfile {
+  id                       String             @id @default(cuid())
+  userId                   String             @unique
+  updatedAt                DateTime           @updatedAt
+  primaryGoal              FitnessGoal
+  primaryGoalTarget        String?
+  targetDate               DateTime?
+  secondaryGoals           FitnessGoal[]
+  targetWeightKg           Float?
+  targetBodyFatPercent     Float?
+  targetStrength           String?
+  targetEndurance          String?
+  mainMotivation           MotivationType
+  secondaryMotivations     MotivationType[]
+  biggestBarriers          String[]           @default([])
+  previousFailures         String[]           @default([])
+  accountabilityPreference AccountabilityType @default(SELF)
+  hasWorkoutPartner        Boolean            @default(false)
+  wantsReminders           Boolean            @default(true)
+  confidenceLevel          Int                @default(5)
+  commitmentLevel          Int                @default(7)
+  patienceForResults       Int                @default(5)
+  user                     User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserFastingProfile {
+  id                      String             @id @default(cuid())
+  userId                  String             @unique
+  doesIntermittentFasting Boolean            @default(false)
+  ifProtocol              IFProtocol?
+  eatingWindowStart       String?
+  eatingWindowEnd         String?
+  observesRamadan         Boolean            @default(false)
+  ramadanActive           Boolean            @default(false)
+  ramadanIftarTime        String?
+  ramadanSuhoorTime       String?
+  ramadanWorkoutTiming    RamadanWorkoutTime @default(AFTER_IFTAR)
+  ramadanReduceIntensity  Boolean            @default(true)
+  ramadanReduceVolume     Boolean            @default(true)
+  updatedAt               DateTime           @updatedAt
+  user                    User               @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 enum UserRole {
@@ -1020,8 +1516,8 @@ enum TrainerStatus {
 }
 
 enum TrainerTier {
-  REGULAR         // 20% commission to platform
-  TRUSTED_PARTNER // 5-7% commission to platform (high-profile trainers)
+  REGULAR
+  TRUSTED_PARTNER
 }
 
 enum TransactionType {
@@ -1055,78 +1551,6 @@ enum MessageType {
   PROGRESS_SHARE
 }
 
-// ==========================================
-// RESEARCH & ANALYTICS MODELS
-// ==========================================
-
-model AIUsageEvent {
-  id              String   @id @default(cuid())
-  userId          String
-  tier            SubscriptionTier
-  featureId       String
-  queryType       AIQueryType
-  queryText       String?  @db.Text
-  responseTimeMs  Int?
-  successful      Boolean  @default(true)
-  satisfaction    Int?     // 1-5 rating
-  metadata        Json?
-  createdAt       DateTime @default(now())
-
-  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@index([userId])
-  @@index([tier])
-  @@index([queryType])
-  @@index([createdAt])
-}
-
-model Survey {
-  id           String           @id @default(cuid())
-  code         String           @unique // e.g., "ai_value_perception", "limit_hit"
-  title        String
-  titleAr      String?
-  description  String?
-  descriptionAr String?
-  questions    Json             // Array of question objects
-  isActive     Boolean          @default(true)
-  triggerEvent String?          // Event that triggers this survey
-  createdAt    DateTime         @default(now())
-  updatedAt    DateTime         @updatedAt
-  responses    SurveyResponse[]
-}
-
-model SurveyResponse {
-  id          String   @id @default(cuid())
-  surveyId    String
-  userId      String
-  responses   Json     // Map of questionId -> answer
-  completedAt DateTime @default(now())
-  metadata    Json?    // Additional context (tier, usage, etc.)
-
-  survey      Survey   @relation(fields: [surveyId], references: [id], onDelete: Cascade)
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([surveyId, userId]) // One response per user per survey
-  @@index([surveyId])
-  @@index([userId])
-}
-
-model FeatureUsageLimit {
-  id          String   @id @default(cuid())
-  userId      String
-  featureId   String
-  usedCount   Int      @default(0)
-  limitHitAt  DateTime? // When they first hit the limit
-  periodStart DateTime  @default(now())
-  periodEnd   DateTime
-
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([userId, featureId, periodStart])
-  @@index([userId])
-  @@index([featureId])
-}
-
 enum AIQueryType {
   WORKOUT
   NUTRITION
@@ -1134,619 +1558,6 @@ enum AIQueryType {
   PROGRESS
   GENERAL
 }
-
-// ==========================================
-// AI DATA COLLECTION MODELS
-// Structured data that AI uses for smart decisions
-// ==========================================
-
-// Equipment Inventory - What equipment user has
-model UserEquipmentInventory {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-
-  // Training Location
-  primaryLocation   TrainingLocation @default(HOME)
-  hasGymAccess      Boolean  @default(false)
-  gymName           String?
-
-  // Bodyweight Capabilities
-  hasFloorSpace     Boolean  @default(true)
-  hasWallSpace      Boolean  @default(true)
-  hasPullUpBar      Boolean  @default(false)
-  hasDipStation     Boolean  @default(false)
-  hasParallettesBars Boolean @default(false)
-
-  // Free Weights
-  hasDumbbells      Boolean  @default(false)
-  dumbbellMinKg     Float?
-  dumbbellMaxKg     Float?
-  dumbbellIncrement Float?
-  hasBarbell        Boolean  @default(false)
-  barbellWeightKg   Float?
-  hasPlates         Boolean  @default(false)
-  plateMaxTotalKg   Float?
-  hasKettlebells    Boolean  @default(false)
-  kettlebellWeights Float[]  @default([])
-  hasEZBar          Boolean  @default(false)
-
-  // Racks & Benches
-  hasBench          Boolean  @default(false)
-  benchType         BenchType?
-  hasSquatRack      Boolean  @default(false)
-  hasPowerRack      Boolean  @default(false)
-  hasSmithMachine   Boolean  @default(false)
-
-  // Machines
-  hasCableMachine   Boolean  @default(false)
-  hasLegPress       Boolean  @default(false)
-  hasLegExtension   Boolean  @default(false)
-  hasLegCurl        Boolean  @default(false)
-  hasLatPulldown    Boolean  @default(false)
-  hasSeatedRow      Boolean  @default(false)
-  hasChestPress     Boolean  @default(false)
-  hasShoulderPress  Boolean  @default(false)
-  hasPecDeck        Boolean  @default(false)
-
-  // Cardio
-  hasTreadmill      Boolean  @default(false)
-  hasStatBike       Boolean  @default(false)
-  hasRowingMachine  Boolean  @default(false)
-
-  // Accessories
-  hasResistanceBands Boolean @default(false)
-  bandStrengths     String[] @default([])
-  hasTRX            Boolean  @default(false)
-  hasAbWheel        Boolean  @default(false)
-  hasFoamRoller     Boolean  @default(false)
-  hasYogaMat        Boolean  @default(false)
-  hasJumpRope       Boolean  @default(false)
-  hasBox            Boolean  @default(false)
-  boxHeightsCm      Int[]    @default([])
-  hasMedicineBall   Boolean  @default(false)
-  medicineBallKg    Float?
-  hasStabilityBall  Boolean  @default(false)
-
-  updatedAt         DateTime @updatedAt
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// Exercise Capability - What exercises user CAN do
-model UserExerciseCapability {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  assessedAt        DateTime @default(now())
-
-  // Push Movements
-  pushUpMaxReps           Int      @default(0)
-  pushUpFromKnees         Boolean  @default(false)
-  wallPushUp              Boolean  @default(true)
-  declinePushUp           Boolean  @default(false)
-  diamondPushUp           Boolean  @default(false)
-  pikePushUp              Boolean  @default(false)
-  handstandPushUp         Boolean  @default(false)
-  dipMaxReps              Int      @default(0)
-
-  // Pull Movements
-  pullUpMaxReps           Int      @default(0)
-  chinUpMaxReps           Int      @default(0)
-  canHangFromBar          Boolean  @default(false)
-  bodyweightRow           Boolean  @default(false)
-
-  // Core
-  plankHoldSeconds        Int      @default(0)
-  sidePlankSeconds        Int      @default(0)
-  hollowBodyHold          Boolean  @default(false)
-  hangingLegRaise         Boolean  @default(false)
-  abWheelRollout          Boolean  @default(false)
-
-  // Legs
-  bodyweightSquatMaxReps  Int      @default(0)
-  canSquatBelowParallel   Boolean  @default(false)
-  pistolSquat             Boolean  @default(false)
-  bulgarianSplitSquat     Boolean  @default(false)
-  lungeMaxReps            Int      @default(0)
-  boxJump                 Boolean  @default(false)
-  boxJumpMaxCm            Int?
-  singleLegRDL            Boolean  @default(false)
-  hipThrust               Boolean  @default(false)
-  nordicCurl              Boolean  @default(false)
-
-  // Balance
-  singleLegStandSeconds   Int      @default(0)
-
-  // Cardio
-  canRun5Min              Boolean  @default(false)
-  canRun20Min             Boolean  @default(false)
-  burpeeMaxReps           Int      @default(0)
-
-  // Flexibility
-  canTouchToes            Boolean  @default(false)
-  canDeepSquatNoHeel      Boolean  @default(false)
-  canOverheadSquat        Boolean  @default(false)
-
-  // Estimated 1RMs (kg)
-  benchPress1RM           Float?
-  squat1RM                Float?
-  deadlift1RM             Float?
-  overheadPress1RM        Float?
-
-  updatedAt               DateTime @updatedAt
-  user                    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// Movement Screening - Mobility and movement quality
-model UserMovementScreen {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  screenedAt        DateTime @default(now())
-
-  // FMS-style scores (0-3)
-  deepSquatScore          Int      @default(2)
-  shoulderMobilityScoreL  Int      @default(2)
-  shoulderMobilityScoreR  Int      @default(2)
-  activeSLRScoreL         Int      @default(2)
-  activeSLRScoreR         Int      @default(2)
-
-  // Specific Limitations
-  limitedAnkleDorsiflexion    Boolean @default(false)
-  limitedHipFlexion           Boolean @default(false)
-  limitedHipExtension         Boolean @default(false)
-  limitedThoracicExtension    Boolean @default(false)
-  limitedShoulderFlexion      Boolean @default(false)
-  limitedShoulderRotationInt  Boolean @default(false)
-  limitedShoulderRotationExt  Boolean @default(false)
-  limitedHamstringFlexibility Boolean @default(false)
-  limitedWristExtension       Boolean @default(false)
-
-  // Asymmetries
-  hasLeftRightImbalance   Boolean  @default(false)
-  strongerSide            String?
-
-  // Posture Issues
-  forwardHeadPosture      Boolean  @default(false)
-  roundedShoulders        Boolean  @default(false)
-  excessiveLordosis       Boolean  @default(false)
-  anteriorPelvicTilt      Boolean  @default(false)
-  kneeValgus              Boolean  @default(false)
-
-  notes                   String?
-  updatedAt               DateTime @updatedAt
-  user                    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// Health Profile - Medical conditions & injuries
-model UserHealthProfile {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  updatedAt         DateTime @updatedAt
-
-  // Medical Conditions
-  hasHeartCondition       Boolean  @default(false)
-  hasHighBloodPressure    Boolean  @default(false)
-  hasLowBloodPressure     Boolean  @default(false)
-  hasDiabetes             Boolean  @default(false)
-  diabetesType            Int?
-  hasAsthma               Boolean  @default(false)
-  hasArthritis            Boolean  @default(false)
-  arthritisJoints         String[] @default([])
-  hasOsteoporosis         Boolean  @default(false)
-  hasHerniaHistory        Boolean  @default(false)
-  hasJointReplacement     Boolean  @default(false)
-  jointReplacementDetails String?
-  hasNerveIssues          Boolean  @default(false)
-  nerveIssueDetails       String?
-  hasVertigoBalance       Boolean  @default(false)
-
-  // Pregnancy
-  isPregnant              Boolean  @default(false)
-  pregnancyTrimester      Int?
-
-  // Surgery
-  hadRecentSurgery        Boolean  @default(false)
-  surgeryDetails          String?
-  surgeryDate             DateTime?
-  clearedForExercise      Boolean  @default(true)
-
-  // Medications
-  takesBloodThinners      Boolean  @default(false)
-  takesBetaBlockers       Boolean  @default(false)
-  takesInsulin            Boolean  @default(false)
-  medicationNotes         String?
-
-  hasDoctorClearance      Boolean  @default(true)
-
-  injuries                UserInjury[]
-  user                    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// User Injuries
-model UserInjury {
-  id                String   @id @default(cuid())
-  healthProfileId   String
-  bodyPart          InjuryBodyPart
-  side              String?
-  injuryType        InjuryType
-  severity          InjurySeverity
-  occurredAt        DateTime?
-  isCurrentlyActive Boolean  @default(true)
-  isFullyHealed     Boolean  @default(false)
-  painLevel         Int      @default(0)
-  painTriggers      String[] @default([])
-  avoidMovements    String[] @default([])
-  inPhysicalTherapy Boolean  @default(false)
-  notes             String?
-  updatedAt         DateTime @updatedAt
-
-  healthProfile     UserHealthProfile @relation(fields: [healthProfileId], references: [id], onDelete: Cascade)
-  @@index([healthProfileId])
-}
-
-// Nutrition Profile - Diet preferences & restrictions
-model UserNutritionProfile {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  updatedAt         DateTime @updatedAt
-
-  // Dietary Restrictions
-  isHalal           Boolean  @default(false)
-  isKosher          Boolean  @default(false)
-  isVegetarian      Boolean  @default(false)
-  isVegan           Boolean  @default(false)
-  isPescatarian     Boolean  @default(false)
-  isKeto            Boolean  @default(false)
-  isLowCarb         Boolean  @default(false)
-  isPaleo           Boolean  @default(false)
-  isLowSodium       Boolean  @default(false)
-
-  // Allergies
-  allergyPeanuts    Boolean  @default(false)
-  allergyTreeNuts   Boolean  @default(false)
-  allergyMilk       Boolean  @default(false)
-  allergyEggs       Boolean  @default(false)
-  allergyGluten     Boolean  @default(false)
-  allergySoy        Boolean  @default(false)
-  allergyFish       Boolean  @default(false)
-  allergyShellfish  Boolean  @default(false)
-  allergySesame     Boolean  @default(false)
-  otherAllergies    String[] @default([])
-
-  // Intolerances
-  lactoseIntolerant Boolean  @default(false)
-  glutenSensitive   Boolean  @default(false)
-  fodmapSensitive   Boolean  @default(false)
-
-  // Dislikes
-  dislikedFoods     String[] @default([])
-  dislikedCategories String[] @default([])
-
-  // Cooking
-  cookingSkillLevel CookingLevel @default(INTERMEDIATE)
-  maxCookingTimeMin Int      @default(30)
-  willingToBatchCook Boolean @default(false)
-  hasKitchenAccess  Boolean  @default(true)
-  hasBlender        Boolean  @default(false)
-  hasAirFryer       Boolean  @default(false)
-
-  // Budget
-  budgetLevel       BudgetLevel @default(MODERATE)
-  monthlyFoodBudgetEGP Int?
-
-  // Eating Patterns
-  mealsPerDay       Int      @default(3)
-  snacksPerDay      Int      @default(1)
-  eatsBreakfast     Boolean  @default(true)
-  breakfastTime     String?
-  lunchTime         String?
-  dinnerTime        String?
-
-  // Intermittent Fasting
-  doesIntermittentFasting Boolean @default(false)
-  fastingWindowStart String?
-  fastingWindowEnd   String?
-
-  // Preferences
-  preferLocalEgyptianFood Boolean @default(true)
-  preferSimpleRecipes Boolean @default(true)
-  likesSpicyFood    Boolean  @default(true)
-
-  // Supplements
-  takesProteinPowder Boolean @default(false)
-  proteinPowderType String?
-  takesCreatine     Boolean  @default(false)
-  takesPreWorkout   Boolean  @default(false)
-  otherSupplements  String[] @default([])
-
-  // Custom Macros
-  useCalculatedMacros Boolean @default(true)
-  customCalories    Int?
-  customProteinG    Int?
-  customCarbsG      Int?
-  customFatG        Int?
-
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// Lifestyle Profile - Sleep, stress, schedule
-model UserLifestyleProfile {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  updatedAt         DateTime @updatedAt
-
-  // Work
-  occupation        String?
-  workType          WorkType @default(SEDENTARY)
-  workHoursPerDay   Int      @default(8)
-
-  // Daily Activity
-  dailyStepsEstimate Int     @default(5000)
-  hasPhysicalHobbies Boolean @default(false)
-  physicalHobbies   String[] @default([])
-
-  // Sleep
-  averageSleepHours Float    @default(7)
-  sleepQuality      SleepQuality @default(FAIR)
-  typicalBedtime    String?
-  typicalWakeTime   String?
-  hasSleepDisorder  Boolean  @default(false)
-
-  // Stress
-  currentStressLevel StressLevel @default(MODERATE)
-  mainStressors     String[] @default([])
-  hasAnxiety        Boolean  @default(false)
-
-  // Schedule
-  preferredWorkoutTime WorkoutTimePreference @default(ANYTIME)
-  availableMonday   Boolean  @default(true)
-  availableTuesday  Boolean  @default(true)
-  availableWednesday Boolean @default(true)
-  availableThursday Boolean  @default(true)
-  availableFriday   Boolean  @default(true)
-  availableSaturday Boolean  @default(true)
-  availableSunday   Boolean  @default(true)
-  maxWorkoutMinutes Int      @default(60)
-  minWorkoutMinutes Int      @default(30)
-  targetWorkoutsPerWeek Int  @default(4)
-
-  // Recovery
-  recoveryCapacity  RecoveryCapacity @default(AVERAGE)
-  doesStretching    Boolean  @default(false)
-  doesYogaMobility  Boolean  @default(false)
-  caffeineIntakeDaily Int    @default(2)
-  smoker            Boolean  @default(false)
-  alcoholDrinksPerWeek Int   @default(0)
-
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// Body Composition - Detailed measurements
-model UserBodyComposition {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  updatedAt         DateTime @updatedAt
-
-  currentWeightKg   Float
-  heightCm          Float
-  bmi               Float?
-
-  // Body Fat
-  bodyFatPercent    Float?
-  bodyFatMethod     BodyFatMethod?
-  leanMassKg        Float?
-  fatMassKg         Float?
-
-  // Circumferences (cm)
-  neckCm            Float?
-  shouldersCm       Float?
-  chestCm           Float?
-  waistCm           Float?
-  hipsGlutesCm      Float?
-  leftBicepCm       Float?
-  rightBicepCm      Float?
-  leftThighCm       Float?
-  rightThighCm      Float?
-  leftCalfCm        Float?
-  rightCalfCm       Float?
-
-  // Ratios
-  waistToHipRatio   Float?
-  waistToHeightRatio Float?
-
-  // Body Type
-  bodyType          BodyType?
-  frameSize         FrameSize?
-
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// Daily Readiness - Pre-workout check-in
-model DailyReadinessLog {
-  id                String   @id @default(cuid())
-  userId            String
-  loggedAt          DateTime @default(now())
-
-  energyLevel       Int
-  motivationLevel   Int
-  moodLevel         Int
-  overallReadiness  Int
-
-  sleepHours        Float?
-  sleepQuality      Int?
-
-  anyPainToday      Boolean  @default(false)
-  painAreas         String[] @default([])
-  painIntensity     Int?
-
-  musclesSore       Boolean  @default(false)
-  soreAreas         String[] @default([])
-  sorenessLevel     Int?
-
-  feelingIll        Boolean  @default(false)
-
-  restingHeartRate  Int?
-  hrvScore          Int?
-
-  stressYesterday   Int?
-  alcoholYesterday  Boolean  @default(false)
-  hydratedWell      Boolean  @default(true)
-
-  recommendedIntensity WorkoutIntensity?
-  shouldSkipWorkout Boolean  @default(false)
-  notes             String?
-
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  @@index([userId])
-  @@index([loggedAt])
-}
-
-// Workout Feedback - Post-workout
-model WorkoutFeedback {
-  id                String   @id @default(cuid())
-  workoutLogId      String   @unique
-  userId            String
-  loggedAt          DateTime @default(now())
-
-  overallRating     Int
-  perceivedDifficulty Int
-  enjoymentLevel    Int
-  performanceVsExpected PerformanceLevel
-  formQuality       Int
-
-  anyPainDuringWorkout Boolean @default(false)
-  painExercises     String[] @default([])
-  feltTooEasy       Boolean  @default(false)
-  feltTooHard       Boolean  @default(false)
-
-  favoriteExercise  String?
-  leastFavoriteExercise String?
-  wantMoreOf        String?
-  wantLessOf        String?
-  notes             String?
-
-  workoutLog        WorkoutLog @relation(fields: [workoutLogId], references: [id], onDelete: Cascade)
-  user              User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  @@index([userId])
-}
-
-// Muscle Recovery Status
-model MuscleRecoveryStatus {
-  id                String   @id @default(cuid())
-  userId            String
-  muscleGroup       MuscleGroup
-
-  lastWorkedAt      DateTime?
-  lastWorkoutSets   Int      @default(0)
-  lastWorkoutRPE    Int      @default(5)
-  recoveryPercent   Int      @default(100)
-  estimatedFullRecoveryAt DateTime?
-  currentSoreness   Int      @default(0)
-  setsThisWeek      Int      @default(0)
-  targetSetsPerWeek Int      @default(10)
-
-  updatedAt         DateTime @updatedAt
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([userId, muscleGroup])
-  @@index([userId])
-}
-
-// Training History Summary
-model UserTrainingHistory {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-
-  trainingStartDate DateTime?
-  totalYearsTraining Float   @default(0)
-  currentLevel      ExperienceLevel @default(BEGINNER)
-
-  previousPrograms  String[] @default([])
-  sportsBackground  String[] @default([])
-
-  preferredTrainingStyle TrainingStyle @default(TRADITIONAL)
-  preferredSplitType SplitType @default(FULL_BODY)
-  preferredRepRange RepRange @default(MODERATE)
-
-  bestProgressMade  String?
-  whatWorkedBest    String?
-  whatDidntWork     String?
-
-  totalWorkoutsLogged Int    @default(0)
-  longestStreak     Int      @default(0)
-  averageWorkoutsPerWeek Float @default(0)
-  consistencyScore  Int      @default(50)
-
-  // PRs
-  prBenchPressKg    Float?
-  prSquatKg         Float?
-  prDeadliftKg      Float?
-  prPullUps         Int?
-  prPushUps         Int?
-  prPlankSeconds    Int?
-
-  updatedAt         DateTime @updatedAt
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// Goals Profile
-model UserGoalsProfile {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-  updatedAt         DateTime @updatedAt
-
-  primaryGoal       FitnessGoal
-  primaryGoalTarget String?
-  targetDate        DateTime?
-  secondaryGoals    FitnessGoal[]
-
-  targetWeightKg    Float?
-  targetBodyFatPercent Float?
-  targetStrength    String?
-  targetEndurance   String?
-
-  mainMotivation    MotivationType
-  secondaryMotivations MotivationType[]
-
-  biggestBarriers   String[] @default([])
-  previousFailures  String[] @default([])
-
-  accountabilityPreference AccountabilityType @default(SELF)
-  hasWorkoutPartner Boolean  @default(false)
-  wantsReminders    Boolean  @default(true)
-
-  confidenceLevel   Int      @default(5)
-  commitmentLevel   Int      @default(7)
-  patienceForResults Int     @default(5)
-
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// Fasting Profile
-model UserFastingProfile {
-  id                String   @id @default(cuid())
-  userId            String   @unique
-
-  // Intermittent Fasting
-  doesIntermittentFasting Boolean @default(false)
-  ifProtocol        IFProtocol?
-  eatingWindowStart String?
-  eatingWindowEnd   String?
-
-  // Ramadan
-  observesRamadan   Boolean  @default(false)
-  ramadanActive     Boolean  @default(false)
-  ramadanIftarTime  String?
-  ramadanSuhoorTime String?
-  ramadanWorkoutTiming RamadanWorkoutTime @default(AFTER_IFTAR)
-  ramadanReduceIntensity Boolean @default(true)
-  ramadanReduceVolume Boolean @default(true)
-
-  updatedAt         DateTime @updatedAt
-  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-}
-
-// ==========================================
-// NEW ENUMS FOR AI DATA
-// ==========================================
 
 enum TrainingLocation {
   HOME
