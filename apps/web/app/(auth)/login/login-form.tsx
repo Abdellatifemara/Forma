@@ -55,8 +55,20 @@ export default function LoginForm() {
         setRefreshCookie(response.refreshToken);
       }
 
-      // Redirect to the intended page or dashboard
-      router.push(redirectTo);
+      // Redirect based on user role
+      const userRole = response.user?.role?.toUpperCase();
+      let destination = redirectTo;
+
+      // Only override redirect if going to generic dashboard
+      if (redirectTo === '/dashboard') {
+        if (userRole === 'TRAINER') {
+          destination = '/trainer/dashboard';
+        } else if (userRole === 'ADMIN') {
+          destination = '/admin/dashboard';
+        }
+      }
+
+      router.push(destination);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Invalid email or password');
     } finally {

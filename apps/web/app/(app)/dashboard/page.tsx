@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
   Play,
@@ -32,6 +33,7 @@ import {
 } from '@/lib/api';
 
 export default function DashboardPage() {
+  const router = useRouter();
   const { t, isRTL } = useLanguage();
   const [user, setUser] = useState<User | null>(null);
   const [todayWorkout, setTodayWorkout] = useState<Workout | null>(null);
@@ -49,6 +51,17 @@ export default function DashboardPage() {
           nutritionApi.getDailyLog(),
           statsApi.getWeeklySummary(),
         ]);
+
+        // Redirect trainers to trainer dashboard
+        const userRole = userResponse.user?.role?.toUpperCase();
+        if (userRole === 'TRAINER') {
+          router.replace('/trainer/dashboard');
+          return;
+        }
+        if (userRole === 'ADMIN') {
+          router.replace('/admin/dashboard');
+          return;
+        }
 
         setUser(userResponse.user);
         setTodayWorkout(workoutResponse);
