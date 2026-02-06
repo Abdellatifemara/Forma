@@ -25,21 +25,24 @@ export class NutritionController {
   @ApiQuery({ name: 'isEgyptian', required: false, type: Boolean })
   @ApiQuery({ name: 'page', required: false, type: Number })
   @ApiQuery({ name: 'pageSize', required: false, type: Number })
-  @CacheKey('search_foods')
-  @CacheTTL(300)
   async searchFoods(
     @Query('query') query?: string,
     @Query('category') category?: string,
-    @Query('isEgyptian') isEgyptian?: boolean,
-    @Query('page') page?: number,
-    @Query('pageSize') pageSize?: number,
+    @Query('isEgyptian') isEgyptianStr?: string,
+    @Query('page') pageStr?: string,
+    @Query('pageSize') pageSizeStr?: string,
   ) {
+    // Convert string params to proper types
+    const page = pageStr ? parseInt(pageStr, 10) : undefined;
+    const pageSize = pageSizeStr ? parseInt(pageSizeStr, 10) : undefined;
+    const isEgyptian = isEgyptianStr === 'true' ? true : isEgyptianStr === 'false' ? false : undefined;
+
     return this.nutritionService.searchFoods({
       query,
       category,
       isEgyptian,
-      page,
-      pageSize,
+      page: isNaN(page as number) ? undefined : page,
+      pageSize: isNaN(pageSize as number) ? undefined : pageSize,
     });
   }
 
