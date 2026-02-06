@@ -9,26 +9,77 @@
 
 @layer base {
   :root {
-    /* Default is DARK theme - modern fitness apps are dark */
+    /* Default is LIGHT theme */
+    --background: 210 20% 98%;
+    --foreground: 220 20% 10%;
+
+    /* Cards - clean white surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    /* Primary - Electric Cyan (energy, technology, progress) */
+    --primary: 180 100% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Vibrant Purple (premium, ambition) */
+    --secondary: 270 80% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Accent - Neon Green (success, achievement) */
+    --accent: 150 80% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 10% 40%;
+
+    --destructive: 0 85% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 180 100% 35%;
+
+    --radius: 0.75rem;
+
+    /* Brand Colors */
+    --cyan: 180 100% 40%;
+    --purple: 270 80% 50%;
+    --green: 150 80% 40%;
+    --orange: 25 95% 50%;
+    --pink: 330 90% 55%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 40%), hsl(270 80% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(150 80% 45%), hsl(180 100% 40%));
+    --gradient-warm: linear-gradient(135deg, hsl(25 95% 50%), hsl(330 90% 55%));
+    --gradient-dark: linear-gradient(180deg, hsl(220 15% 96%), hsl(220 15% 94%));
+
+    /* Light mode glows (more subtle) */
+    --glow-primary: 0 0 20px hsl(180 100% 35% / 0.15);
+    --glow-secondary: 0 0 20px hsl(270 80% 50% / 0.15);
+    --glow-accent: 0 0 20px hsl(150 80% 40% / 0.15);
+  }
+
+  /* Dark mode override */
+  .dark {
     --background: 220 20% 4%;
     --foreground: 210 20% 98%;
 
-    /* Cards - elevated dark surfaces with subtle blue undertone */
     --card: 220 20% 7%;
     --card-foreground: 210 20% 98%;
 
     --popover: 220 20% 8%;
     --popover-foreground: 210 20% 98%;
 
-    /* Primary - Electric Cyan (energy, technology, progress) */
     --primary: 180 100% 50%;
     --primary-foreground: 220 20% 4%;
 
-    /* Secondary - Vibrant Purple (premium, ambition) */
     --secondary: 270 95% 65%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Neon Green (success, achievement) */
     --accent: 150 100% 50%;
     --accent-foreground: 220 20% 4%;
 
@@ -41,8 +92,6 @@
     --border: 220 15% 15%;
     --input: 220 15% 12%;
     --ring: 180 100% 50%;
-
-    --radius: 0.75rem;
 
     /* Brand Colors */
     --cyan: 180 100% 50%;
@@ -57,46 +106,10 @@
     --gradient-warm: linear-gradient(135deg, hsl(25 100% 55%), hsl(330 100% 65%));
     --gradient-dark: linear-gradient(180deg, hsl(220 20% 7%), hsl(220 20% 4%));
 
-    /* Glow effects */
+    /* Dark mode glows */
     --glow-primary: 0 0 30px hsl(180 100% 50% / 0.3);
     --glow-secondary: 0 0 30px hsl(270 95% 65% / 0.3);
     --glow-accent: 0 0 30px hsl(150 100% 50% / 0.3);
-  }
-
-  /* Light mode override */
-  .light {
-    --background: 210 20% 98%;
-    --foreground: 220 20% 10%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
-
-    --primary: 180 100% 35%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 270 80% 50%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 220 15% 94%;
-    --muted-foreground: 220 10% 40%;
-
-    --accent: 150 80% 40%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 85% 55%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 220 15% 88%;
-    --input: 220 15% 94%;
-    --ring: 180 100% 35%;
-
-    /* Light mode glows (more subtle) */
-    --glow-primary: 0 0 20px hsl(180 100% 35% / 0.2);
-    --glow-secondary: 0 0 20px hsl(270 80% 50% / 0.2);
-    --glow-accent: 0 0 20px hsl(150 80% 40% / 0.2);
   }
 }
 
@@ -106,13 +119,29 @@
   }
 
   html {
-    /* Dark by default */
+    /* Light by default */
+    color-scheme: light;
+  }
+
+  html.dark {
     color-scheme: dark;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Light mode body background */
+  html:not(.dark) body {
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, hsl(180 100% 50% / 0.03), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 100%, hsl(270 95% 65% / 0.03), transparent);
+    background-attachment: fixed;
+  }
+
+  /* Dark mode body background */
+  html.dark body {
     background-image:
       radial-gradient(ellipse 80% 50% at 50% -20%, hsl(180 100% 50% / 0.05), transparent),
       radial-gradient(ellipse 60% 40% at 100% 100%, hsl(270 95% 65% / 0.05), transparent);
