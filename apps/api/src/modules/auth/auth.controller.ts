@@ -1,6 +1,7 @@
 import { Controller, Post, Body, UseGuards, Get, HttpCode, HttpStatus } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { AuthService } from './auth.service';
+import { UsersService } from '../users/users.service';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto, RefreshTokenDto, GoogleLoginDto, AppleLoginDto } from './dto/login.dto';
 import { Public } from './decorators/public.decorator';
@@ -11,7 +12,10 @@ import { User } from '@prisma/client';
 @ApiTags('auth')
 @Controller('auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) {}
+  constructor(
+    private readonly authService: AuthService,
+    private readonly usersService: UsersService,
+  ) {}
 
   @Public()
   @Post('register')
@@ -67,6 +71,12 @@ export class AuthController {
   @ApiResponse({ status: 200, description: 'Returns current user' })
   @ApiResponse({ status: 401, description: 'Unauthorized' })
   async getMe(@CurrentUser() user: Omit<User, 'passwordHash'>) {
-    return { user };
+    // Fetch fresh user data from database (not from JWT token)
+    const freshUser = await this.usersService.findById(user.id);
+    if (!freshUser) {
+      return { user };
+    }
+    const { passwordHash, ...userWithoutPassword } = freshUser;
+    return { user: userWithoutPassword };
   }
 }

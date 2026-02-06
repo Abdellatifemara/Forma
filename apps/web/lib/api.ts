@@ -1179,14 +1179,23 @@ interface FastingProfile {
 interface User {
   id: string;
   email: string;
-  name: string;
-  avatar?: string;
-  role: 'user' | 'trainer' | 'admin';
+  firstName?: string;
+  lastName?: string;
+  name?: string; // Computed: firstName + lastName (for backward compat)
+  avatarUrl?: string;
+  avatar?: string; // Alias for avatarUrl
+  role: 'USER' | 'TRAINER' | 'ADMIN' | 'user' | 'trainer' | 'admin';
   subscription?: 'free' | 'pro' | 'elite';
   createdAt: string;
   displayName?: string;
   language?: string;
   measurementUnit?: string;
+  fitnessGoal?: string;
+  activityLevel?: string;
+  fitnessLevel?: string;
+  heightCm?: number;
+  currentWeightKg?: number;
+  targetWeightKg?: number;
 }
 
 interface OnboardingData {

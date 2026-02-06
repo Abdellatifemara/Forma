@@ -29,11 +29,9 @@ export default function EditProfilePage() {
   useEffect(() => {
     if (userData?.user) {
       const user = userData.user;
-      // Parse name into firstName and lastName
-      const nameParts = (user.name || '').split(' ');
       setFormData({
-        firstName: nameParts[0] || '',
-        lastName: nameParts.slice(1).join(' ') || '',
+        firstName: user.firstName || '',
+        lastName: user.lastName || '',
         displayName: user.displayName || '',
         language: user.language || 'en',
         measurementUnit: user.measurementUnit || 'metric',
