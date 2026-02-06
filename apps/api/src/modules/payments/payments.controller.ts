@@ -32,7 +32,7 @@ export class PaymentsController {
    */
   @Post('create-intent')
   async createPaymentIntent(
-    @Request() req,
+    @Request() req: { user: { id: string } },
     @Body() body: Omit<CreatePaymentRequest, 'userId'>,
   ) {
     return this.paymentsService.createPaymentIntent(req.user.id, {

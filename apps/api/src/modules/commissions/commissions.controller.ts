@@ -12,6 +12,10 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CommissionsService, PayoutRequest } from './commissions.service';
 import { TransactionType, TransactionStatus } from '@prisma/client';
 
+interface AuthRequest {
+  user: { id: string };
+}
+
 @Controller('commissions')
 @UseGuards(JwtAuthGuard)
 export class CommissionsController {
@@ -21,7 +25,7 @@ export class CommissionsController {
    * Get trainer's balance and commission info
    */
   @Get('balance')
-  async getBalance(@Request() req) {
+  async getBalance(@Request() req: AuthRequest) {
     // Get trainer ID from user
     const trainer = await this.getTrainerFromUser(req.user.id);
     return this.commissionsService.getTrainerBalance(trainer.id);
@@ -32,7 +36,7 @@ export class CommissionsController {
    */
   @Get('transactions')
   async getTransactions(
-    @Request() req,
+    @Request() req: AuthRequest,
     @Query('type') type?: TransactionType,
     @Query('status') status?: TransactionStatus,
     @Query('page') page?: string,
@@ -56,7 +60,7 @@ export class CommissionsController {
    */
   @Get('earnings')
   async getEarnings(
-    @Request() req,
+    @Request() req: AuthRequest,
     @Query('period') period?: 'week' | 'month' | 'year',
   ) {
     const trainer = await this.getTrainerFromUser(req.user.id);
@@ -68,7 +72,7 @@ export class CommissionsController {
    */
   @Post('payouts')
   async requestPayout(
-    @Request() req,
+    @Request() req: AuthRequest,
     @Body() body: Omit<PayoutRequest, 'trainerId'>,
   ) {
     const trainer = await this.getTrainerFromUser(req.user.id);

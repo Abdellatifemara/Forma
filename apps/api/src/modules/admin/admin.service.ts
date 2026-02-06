@@ -234,4 +234,81 @@ export class AdminService {
       data: { status: 'REJECTED' },
     });
   }
+
+  async getUsers(options: { page: number; limit: number; query?: string }) {
+    const { page, limit, query } = options;
+    const skip = (page - 1) * limit;
+
+    const where = query
+      ? {
+          OR: [
+            { email: { contains: query, mode: 'insensitive' as const } },
+            { firstName: { contains: query, mode: 'insensitive' as const } },
+            { lastName: { contains: query, mode: 'insensitive' as const } },
+          ],
+        }
+      : {};
+
+    const [users, total] = await Promise.all([
+      this.prisma.user.findMany({
+        where,
+        skip,
+        take: limit,
+        orderBy: { createdAt: 'desc' },
+        select: {
+          id: true,
+          email: true,
+          firstName: true,
+          lastName: true,
+          role: true,
+          createdAt: true,
+          lastActiveAt: true,
+          subscription: {
+            select: {
+              tier: true,
+              status: true,
+            },
+          },
+        },
+      }),
+      this.prisma.user.count({ where }),
+    ]);
+
+    return {
+      data: users.map((u) => ({
+        id: u.id,
+        email: u.email,
+        name: `${u.firstName} ${u.lastName}`,
+        role: u.role,
+        subscription: u.subscription?.tier || 'FREE',
+        createdAt: u.createdAt,
+        lastActiveAt: u.lastActiveAt,
+      })),
+      meta: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
+    };
+  }
+
+  async updateUser(userId: string, data: Record<string, unknown>) {
+    // Filter out fields that shouldn't be updated directly
+    const { passwordHash, id, ...updateData } = data as Record<string, unknown>;
+
+    return this.prisma.user.update({
+      where: { id: userId },
+      data: updateData as Record<string, unknown>,
+      select: {
+        id: true,
+        email: true,
+        firstName: true,
+        lastName: true,
+        role: true,
+        createdAt: true,
+        lastActiveAt: true,
+      },
+    });
+  }
 }

@@ -306,7 +306,7 @@ export class TrainersService {
       clientsChange: activeClients - lastMonthClients,
       monthlyRevenue,
       revenueChange,
-      pendingPayout: trainer.pendingPayout,
+      pendingPayout: trainer.pendingPayoutEGP,
       totalEarnings: trainer.totalEarnings,
       averageRating: trainer.averageRating,
       totalReviews: trainer.totalReviews,
@@ -389,7 +389,7 @@ export class TrainersService {
       platformFeePercentage: trainer.commissionRate * 100,
       netEarnings,
       payouts,
-      pendingPayout: trainer.pendingPayout,
+      pendingPayout: trainer.pendingPayoutEGP,
       nextPayoutDate: nextPayoutDate.toISOString(),
       transactions: transactions.slice(0, 20), // Latest 20 transactions
     };

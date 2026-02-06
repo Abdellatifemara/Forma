@@ -116,7 +116,7 @@ export class ResearchService {
       titleAr: test.titleAr,
       description: test.description,
       descriptionAr: test.descriptionAr,
-      questions: test.questions as SurveyQuestion[],
+      questions: test.questions as unknown as SurveyQuestion[],
       completed: !!existingResponse,
       completedAt: existingResponse?.completedAt,
     };
@@ -160,7 +160,7 @@ export class ResearchService {
       titleAr: survey.titleAr,
       description: survey.description,
       descriptionAr: survey.descriptionAr,
-      questions: survey.questions as SurveyQuestion[],
+      questions: survey.questions as unknown as SurveyQuestion[],
     };
   }
 
@@ -206,8 +206,8 @@ export class ResearchService {
       data: {
         surveyId,
         userId,
-        responses,
-        metadata: {
+        responses: JSON.parse(JSON.stringify(responses)),
+        metadata: JSON.parse(JSON.stringify({
           tier: subscription?.tier || 'FREE',
           fitnessLevel: user?.fitnessLevel,
           fitnessGoal: user?.fitnessGoal,
@@ -217,7 +217,7 @@ export class ResearchService {
                   (1000 * 60 * 60 * 24),
               )
             : null,
-        },
+        })),
       },
     });
 
@@ -247,7 +247,7 @@ export class ResearchService {
       throw new NotFoundException('Survey not found');
     }
 
-    const questions = survey.questions as SurveyQuestion[];
+    const questions = survey.questions as unknown as SurveyQuestion[];
     const responseCount = survey.responses.length;
 
     // Aggregate responses by question
@@ -357,7 +357,7 @@ export class ResearchService {
         responseTimeMs: data.responseTimeMs,
         successful: data.successful ?? true,
         satisfaction: data.satisfaction,
-        metadata: data.metadata,
+        ...(data.metadata && { metadata: JSON.parse(JSON.stringify(data.metadata)) }),
       },
     });
 
@@ -429,7 +429,7 @@ export class ResearchService {
       return true;
     }
 
-    return usage.remaining > 0;
+    return (usage.remaining as number) > 0;
   }
 
   /**

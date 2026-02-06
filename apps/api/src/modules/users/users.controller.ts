@@ -1,4 +1,4 @@
-import { Controller, Get, Put, Delete, Body, UseGuards, HttpCode, HttpStatus } from '@nestjs/common';
+import { Controller, Get, Put, Patch, Delete, Body, UseGuards, HttpCode, HttpStatus } from '@nestjs/common';
 import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { UsersService } from './users.service';
@@ -27,7 +27,19 @@ export class UsersController {
   }
 
   @Put('me')
-  @ApiOperation({ summary: 'Update current user profile' })
+  @ApiOperation({ summary: 'Update current user profile (PUT)' })
+  @ApiResponse({ status: 200, description: 'Profile updated successfully' })
+  async updateProfilePut(
+    @CurrentUser() user: User,
+    @Body() updateUserDto: UpdateUserDto,
+  ) {
+    const updated = await this.usersService.update(user.id, updateUserDto);
+    const { passwordHash, ...result } = updated;
+    return result;
+  }
+
+  @Patch('me')
+  @ApiOperation({ summary: 'Update current user profile (PATCH)' })
   @ApiResponse({ status: 200, description: 'Profile updated successfully' })
   async updateProfile(
     @CurrentUser() user: User,
@@ -39,7 +51,19 @@ export class UsersController {
   }
 
   @Put('me/onboarding')
-  @ApiOperation({ summary: 'Complete onboarding with fitness data' })
+  @ApiOperation({ summary: 'Complete onboarding with fitness data (PUT)' })
+  @ApiResponse({ status: 200, description: 'Onboarding completed successfully' })
+  async completeOnboardingPut(
+    @CurrentUser() user: User,
+    @Body() onboardingDto: UpdateOnboardingDto,
+  ) {
+    const updated = await this.usersService.updateOnboarding(user.id, onboardingDto);
+    const { passwordHash, ...result } = updated;
+    return result;
+  }
+
+  @Patch('me/onboarding')
+  @ApiOperation({ summary: 'Complete onboarding with fitness data (PATCH)' })
   @ApiResponse({ status: 200, description: 'Onboarding completed successfully' })
   async completeOnboarding(
     @CurrentUser() user: User,

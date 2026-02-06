@@ -5,8 +5,9 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { ProgramStatus } from '@prisma/client';
 import { CreateProgramDto, ProgramSourceType } from './dto/create-program.dto';
-import { UpdateProgramDto, ProgramStatus } from './dto/update-program.dto';
+import { UpdateProgramDto } from './dto/update-program.dto';
 import { ParsedProgramData, ParsedWorkoutDay, ParsedExercise } from './dto/parse-pdf.dto';
 
 @Injectable()
@@ -246,7 +247,7 @@ export class ProgramsService {
     // If program has clients, prevent certain changes
     if (existing.status === 'ACTIVE') {
       const clientCount = await this.prisma.trainerClient.count({
-        where: { programId },
+        where: { currentProgramId: programId },
       });
 
       if (clientCount > 0 && dto.workoutDays) {
@@ -265,7 +266,7 @@ export class ProgramsService {
         descriptionAr: dto.descriptionAr,
         durationWeeks: dto.durationWeeks,
         priceEGP: dto.priceEGP,
-        status: dto.status,
+        ...(dto.status && { status: dto.status }),
       },
       include: {
         workoutDays: {
@@ -341,7 +342,7 @@ export class ProgramsService {
 
     return this.prisma.trainerProgram.update({
       where: { id: programId },
-      data: { status: 'ARCHIVED' },
+      data: { status: ProgramStatus.ARCHIVED },
     });
   }
 

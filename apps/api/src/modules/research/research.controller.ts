@@ -12,6 +12,10 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { ResearchService, AIUsageData } from './research.service';
 import { AIQueryType } from '@prisma/client';
 
+interface AuthRequest {
+  user: { id: string };
+}
+
 @Controller('research')
 @UseGuards(JwtAuthGuard)
 export class ResearchController {
@@ -21,7 +25,7 @@ export class ResearchController {
    * Get all available tests for user
    */
   @Get('tests')
-  async getAvailableTests(@Request() req) {
+  async getAvailableTests(@Request() req: AuthRequest) {
     return this.researchService.getAvailableTests(req.user.id);
   }
 
@@ -29,7 +33,7 @@ export class ResearchController {
    * Get specific test by code
    */
   @Get('tests/:code')
-  async getTest(@Request() req, @Param('code') code: string) {
+  async getTest(@Request() req: AuthRequest, @Param('code') code: string) {
     return this.researchService.getTestByCode(req.user.id, code);
   }
 
@@ -38,7 +42,7 @@ export class ResearchController {
    */
   @Get('surveys/available')
   async getAvailableSurvey(
-    @Request() req,
+    @Request() req: AuthRequest,
     @Query('trigger') trigger?: string,
   ) {
     return this.researchService.getAvailableSurvey(req.user.id, trigger);
@@ -49,7 +53,7 @@ export class ResearchController {
    */
   @Post('surveys/:surveyId/respond')
   async submitSurveyResponse(
-    @Request() req,
+    @Request() req: AuthRequest,
     @Param('surveyId') surveyId: string,
     @Body() body: { responses: Record<string, unknown> },
   ) {
@@ -65,7 +69,7 @@ export class ResearchController {
    */
   @Post('ai-usage')
   async trackAIUsage(
-    @Request() req,
+    @Request() req: AuthRequest,
     @Body() body: {
       featureId: string;
       queryType: AIQueryType;
@@ -82,7 +86,7 @@ export class ResearchController {
    * Get user's AI usage
    */
   @Get('ai-usage/me')
-  async getMyAIUsage(@Request() req) {
+  async getMyAIUsage(@Request() req: AuthRequest) {
     return this.researchService.getUserAIUsage(req.user.id);
   }
 
@@ -90,7 +94,7 @@ export class ResearchController {
    * Check if user can use AI feature
    */
   @Get('ai-usage/can-use/:featureId')
-  async canUseAIFeature(@Request() req, @Param('featureId') featureId: string) {
+  async canUseAIFeature(@Request() req: AuthRequest, @Param('featureId') featureId: string) {
     const canUse = await this.researchService.canUseAIFeature(req.user.id, featureId);
     return { canUse };
   }

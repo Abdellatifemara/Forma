@@ -18,6 +18,10 @@ import {
   GiftSubscriptionDto,
 } from './dto';
 
+interface AuthRequest {
+  user: { id: string };
+}
+
 @Controller('subscriptions')
 @UseGuards(JwtAuthGuard)
 export class SubscriptionsController {
@@ -27,7 +31,7 @@ export class SubscriptionsController {
    * Get current user's subscription
    */
   @Get('me')
-  async getMySubscription(@Request() req) {
+  async getMySubscription(@Request() req: AuthRequest) {
     return this.subscriptionsService.getSubscription(req.user.id);
   }
 
@@ -43,7 +47,10 @@ export class SubscriptionsController {
    * Create or upgrade subscription
    */
   @Post()
-  async createSubscription(@Request() req, @Body() dto: CreateSubscriptionDto) {
+  async createSubscription(
+    @Request() req: AuthRequest,
+    @Body() dto: CreateSubscriptionDto,
+  ) {
     return this.subscriptionsService.createOrUpgradeSubscription(
       req.user.id,
       dto,
@@ -54,7 +61,10 @@ export class SubscriptionsController {
    * Cancel subscription
    */
   @Delete('me')
-  async cancelSubscription(@Request() req, @Body() dto: CancelSubscriptionDto) {
+  async cancelSubscription(
+    @Request() req: AuthRequest,
+    @Body() dto: CancelSubscriptionDto,
+  ) {
     return this.subscriptionsService.cancelSubscription(req.user.id, dto);
   }
 
@@ -62,7 +72,7 @@ export class SubscriptionsController {
    * Reactivate cancelled subscription
    */
   @Post('me/reactivate')
-  async reactivateSubscription(@Request() req) {
+  async reactivateSubscription(@Request() req: AuthRequest) {
     return this.subscriptionsService.reactivateSubscription(req.user.id);
   }
 
@@ -70,7 +80,10 @@ export class SubscriptionsController {
    * Gift a subscription to another user
    */
   @Post('gift')
-  async giftSubscription(@Request() req, @Body() dto: GiftSubscriptionDto) {
+  async giftSubscription(
+    @Request() req: AuthRequest,
+    @Body() dto: GiftSubscriptionDto,
+  ) {
     return this.subscriptionsService.giftSubscription(req.user.id, dto);
   }
 
@@ -78,7 +91,10 @@ export class SubscriptionsController {
    * Check feature access
    */
   @Get('features/:featureId/access')
-  async checkFeatureAccess(@Request() req, @Param('featureId') featureId: string) {
+  async checkFeatureAccess(
+    @Request() req: AuthRequest,
+    @Param('featureId') featureId: string,
+  ) {
     const hasAccess = await this.subscriptionsService.hasFeatureAccess(
       req.user.id,
       featureId,
@@ -90,7 +106,10 @@ export class SubscriptionsController {
    * Get feature usage
    */
   @Get('features/:featureId/usage')
-  async getFeatureUsage(@Request() req, @Param('featureId') featureId: string) {
+  async getFeatureUsage(
+    @Request() req: AuthRequest,
+    @Param('featureId') featureId: string,
+  ) {
     return this.subscriptionsService.getFeatureUsage(req.user.id, featureId);
   }
 
@@ -99,7 +118,7 @@ export class SubscriptionsController {
    */
   @Get('payments')
   async getPaymentHistory(
-    @Request() req,
+    @Request() req: AuthRequest,
     @Query('page') page?: string,
     @Query('limit') limit?: string,
   ) {

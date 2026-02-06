@@ -100,14 +100,15 @@ export class CommissionsService {
     const transaction = await this.prisma.trainerTransaction.create({
       data: {
         trainerId: data.trainerId,
+        clientId: data.clientId,
         type: data.type,
-        amountEGP: split.trainerEarnings,
+        amountEGP: data.amountEGP,
         platformFeeEGP: split.platformFee,
+        trainerEarningEGP: split.trainerEarnings,
         status: 'COMPLETED',
         description: data.description || `${data.type} earning`,
         metadata: {
           ...data.metadata,
-          clientId: data.clientId,
           originalAmount: data.amountEGP,
           commissionRate: split.commissionRate,
         },
@@ -121,7 +122,7 @@ export class CommissionsService {
         availableBalanceEGP: {
           increment: split.trainerEarnings,
         },
-        totalEarningsEGP: {
+        totalEarnings: {
           increment: split.trainerEarnings,
         },
       },
@@ -146,7 +147,7 @@ export class CommissionsService {
       select: {
         tier: true,
         availableBalanceEGP: true,
-        totalEarningsEGP: true,
+        totalEarnings: true,
         pendingPayoutEGP: true,
       },
     });
@@ -158,7 +159,10 @@ export class CommissionsService {
     const commissionRate = COMMISSION_RATES[trainer.tier].trainer;
 
     return {
-      ...trainer,
+      availableBalanceEGP: trainer.availableBalanceEGP,
+      totalEarningsEGP: trainer.totalEarnings,
+      pendingPayoutEGP: trainer.pendingPayoutEGP,
+      tier: trainer.tier,
       commissionRate,
       commissionPercentage: commissionRate * 100,
       minimumPayout: MINIMUM_PAYOUT_AMOUNT,
@@ -258,8 +262,9 @@ export class CommissionsService {
       data: {
         trainerId,
         type: 'PAYOUT',
-        amountEGP: -amountEGP, // Negative for payout
+        amountEGP: amountEGP,
         platformFeeEGP: PAYOUT_PROCESSING_FEE,
+        trainerEarningEGP: netPayout,
         status: 'PENDING',
         description: `Payout request via ${payoutMethod}`,
         metadata: {
@@ -313,6 +318,8 @@ export class CommissionsService {
 
     const payoutAmount = Math.abs(transaction.amountEGP);
 
+    const existingMetadata = (transaction.metadata || {}) as Record<string, unknown>;
+
     if (success) {
       // Mark as completed
       await this.prisma.trainerTransaction.update({
@@ -320,8 +327,9 @@ export class CommissionsService {
         data: {
           status: 'COMPLETED',
           paidOutAt: new Date(),
+          paymentRef: reference,
           metadata: {
-            ...(transaction.metadata as Record<string, unknown>),
+            ...existingMetadata,
             payoutReference: reference,
           },
         },
@@ -345,7 +353,7 @@ export class CommissionsService {
         data: {
           status: 'FAILED',
           metadata: {
-            ...(transaction.metadata as Record<string, unknown>),
+            ...existingMetadata,
             failureReason: reference,
           },
         },

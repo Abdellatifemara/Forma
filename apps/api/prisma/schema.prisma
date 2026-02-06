@@ -451,9 +451,10 @@ model TrainerProfile {
   canGiftPremium     Boolean                @default(false) // Only trusted partners
 
   // Earnings
-  totalEarnings      Float                  @default(0)
-  pendingPayout      Float                  @default(0)
-  lastPayoutAt       DateTime?
+  totalEarnings         Float                  @default(0)
+  availableBalanceEGP   Float                  @default(0)
+  pendingPayoutEGP      Float                  @default(0)
+  lastPayoutAt          DateTime?
 
   // Invite System
   inviteCode         String?                @unique
@@ -644,6 +645,7 @@ model TrainerTransaction {
   status          TransactionStatus @default(PENDING)
   description     String?
   paymentRef      String?           // Paymob/Fawry reference
+  metadata        Json?             // Additional transaction details
   createdAt       DateTime          @default(now())
   completedAt     DateTime?
   paidOutAt       DateTime?
@@ -1042,6 +1044,7 @@ enum ProgramStatus {
   ACTIVE
   COMPLETED
   CANCELLED
+  ARCHIVED
 }
 
 enum MessageType {

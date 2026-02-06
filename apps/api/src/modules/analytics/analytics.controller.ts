@@ -10,6 +10,10 @@ import {
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { AnalyticsService, AIUsageEvent, UserSurveyResponse } from './analytics.service';
 
+interface AuthRequest {
+  user: { id: string };
+}
+
 @Controller('analytics')
 @UseGuards(JwtAuthGuard)
 export class AnalyticsController {
@@ -19,7 +23,10 @@ export class AnalyticsController {
    * Track AI usage event
    */
   @Post('ai-usage')
-  async trackAIUsage(@Request() req, @Body() body: Omit<AIUsageEvent, 'userId'>) {
+  async trackAIUsage(
+    @Request() req: AuthRequest,
+    @Body() body: Omit<AIUsageEvent, 'userId'>,
+  ) {
     return this.analyticsService.trackAIUsage({
       ...body,
       userId: req.user.id,
@@ -31,7 +38,7 @@ export class AnalyticsController {
    */
   @Get('ai-usage/me')
   async getMyAIUsage(
-    @Request() req,
+    @Request() req: AuthRequest,
     @Query('period') period?: 'day' | 'week' | 'month',
   ) {
     return this.analyticsService.getUserAIUsage(req.user.id, period);
@@ -41,7 +48,10 @@ export class AnalyticsController {
    * Submit survey response
    */
   @Post('surveys')
-  async submitSurvey(@Request() req, @Body() body: Omit<UserSurveyResponse, 'userId'>) {
+  async submitSurvey(
+    @Request() req: AuthRequest,
+    @Body() body: Omit<UserSurveyResponse, 'userId'>,
+  ) {
     return this.analyticsService.storeSurveyResponse({
       ...body,
       userId: req.user.id,

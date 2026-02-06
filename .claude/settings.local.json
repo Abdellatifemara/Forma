@@ -122,7 +122,8 @@
       "WebFetch(domain:www.wamda.com)",
       "WebFetch(domain:www.thesaasnews.com)",
       "Bash(node:*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(npm run:*)"
     ]
   }
 }

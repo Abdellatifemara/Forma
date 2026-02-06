@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Param, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Patch, Param, Query, Body, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { AdminService } from './admin.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
@@ -54,5 +54,27 @@ export class AdminController {
   @ApiResponse({ status: 200, description: 'Trainer rejected' })
   async rejectTrainer(@Param('id') id: string) {
     return this.adminService.rejectTrainer(id);
+  }
+
+  @Get('users')
+  @ApiOperation({ summary: 'Get all users with pagination' })
+  @ApiResponse({ status: 200, description: 'Returns paginated users list' })
+  async getUsers(
+    @Query('page') page?: string,
+    @Query('limit') limit?: string,
+    @Query('query') query?: string,
+  ) {
+    return this.adminService.getUsers({
+      page: page ? parseInt(page) : 1,
+      limit: limit ? parseInt(limit) : 20,
+      query,
+    });
+  }
+
+  @Patch('users/:id')
+  @ApiOperation({ summary: 'Update a user' })
+  @ApiResponse({ status: 200, description: 'User updated successfully' })
+  async updateUser(@Param('id') id: string, @Body() data: Record<string, unknown>) {
+    return this.adminService.updateUser(id, data);
   }
 }

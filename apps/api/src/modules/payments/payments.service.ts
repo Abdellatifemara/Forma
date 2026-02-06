@@ -171,25 +171,25 @@ export class PaymentsService {
   getPaymentMethods(): { id: PaymentMethod; name: string; nameAr: string; enabled: boolean }[] {
     return [
       {
-        id: 'card',
+        id: 'card' as const,
         name: 'Credit/Debit Card',
         nameAr: 'بطاقة ائتمان/خصم',
         enabled: this.integrationIds.card > 0,
       },
       {
-        id: 'wallet',
+        id: 'wallet' as const,
         name: 'Mobile Wallet',
         nameAr: 'محفظة إلكترونية',
         enabled: this.integrationIds.wallet > 0,
       },
       {
-        id: 'fawry',
+        id: 'fawry' as const,
         name: 'Fawry',
         nameAr: 'فوري',
         enabled: this.integrationIds.fawry > 0,
       },
       {
-        id: 'kiosk',
+        id: 'kiosk' as const,
         name: 'Aman/Masary Kiosk',
         nameAr: 'كشك أمان/مصاري',
         enabled: this.integrationIds.kiosk > 0,

@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { PrismaService } from '../../prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
+import { MuscleRecoveryStatus } from '@prisma/client';
 
 @Injectable()
 export class UserProfileService {
@@ -369,7 +370,7 @@ export class UserProfileService {
 
     // Update recovery percentages based on time since last workout
     const now = new Date();
-    return statuses.map(status => {
+    return statuses.map((status: MuscleRecoveryStatus) => {
       if (!status.lastWorkedAt) return { ...status, recoveryPercent: 100 };
 
       const hoursSinceWorkout = (now.getTime() - status.lastWorkedAt.getTime()) / (1000 * 60 * 60);

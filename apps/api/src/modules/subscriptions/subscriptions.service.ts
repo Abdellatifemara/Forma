@@ -74,7 +74,7 @@ export class SubscriptionsService {
 
     // Get pricing
     const pricing = SUBSCRIPTION_PRICING[tier];
-    let priceEGP = billingCycle === 'yearly' ? pricing.yearly : pricing.monthly;
+    let priceEGP: number = billingCycle === 'yearly' ? pricing.yearly : pricing.monthly;
 
     // Apply promo code discount (simplified - would need promo code table)
     if (promoCode) {

@@ -46,6 +46,18 @@ export class StatsController {
     return this.statsService.getVolumeLoadTrend(user.id, weeks || 8);
   }
 
+  @Get('volume')
+  @ApiOperation({ summary: 'Get volume data (alias for volume-trend)' })
+  @ApiQuery({ name: 'weeks', required: false, type: Number, description: 'Number of weeks (default: 8)' })
+  @CacheKey('get_volume_')
+  @CacheTTL(300)
+  async getVolume(
+    @CurrentUser() user: User,
+    @Query('weeks') weeks?: number,
+  ) {
+    return this.statsService.getVolumeLoadTrend(user.id, weeks || 8);
+  }
+
   @Get('strength')
   @ApiOperation({ summary: 'Get strength trends (estimated 1RM) for major lifts' })
   @CacheKey('get_strength_trends_')
