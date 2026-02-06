@@ -35,7 +35,9 @@ export function ExerciseSearchDialog({ onAddExercise, children }: ExerciseSearch
       setIsLoading(true);
       try {
         const response = await exercisesApi.search({ query: searchQuery });
-        setSearchResults(response.data);
+        // Handle both old format (exercises) and new format (data)
+        const exerciseData = response.data || (response as any).exercises || [];
+        setSearchResults(exerciseData);
       } catch (error) {
         console.error("Error searching exercises:", error);
       } finally {

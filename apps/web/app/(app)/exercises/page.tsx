@@ -81,7 +81,9 @@ function ExercisesPageContent() {
           difficulty: difficultyFilter !== 'All' ? difficultyFilter : undefined,
         };
         const response = await exercisesApi.search(params);
-        setExercises(response.data);
+        // Handle both old format (exercises) and new format (data)
+        const exerciseData = response.data || (response as any).exercises || [];
+        setExercises(exerciseData);
       } catch (error) {
         console.error("Error searching exercises:", error);
         setExercises([]);
