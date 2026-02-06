@@ -5,6 +5,7 @@ import { translations, Language, TranslationKeys } from './translations';
 
 interface LanguageContextType {
   lang: Language;
+  language: Language;  // alias for lang
   setLang: (lang: Language) => void;
   t: TranslationKeys;
   isRTL: boolean;
@@ -36,15 +37,16 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const value: LanguageContextType = {
     lang,
+    language: lang,  // alias for lang
     setLang,
-    t: translations[lang] as TranslationKeys,
+    t: translations[lang] as unknown as TranslationKeys,
     isRTL: lang === 'ar',
   };
 
   // Prevent hydration mismatch
   if (!mounted) {
     return (
-      <LanguageContext.Provider value={{ ...value, t: translations.en as TranslationKeys }}>
+      <LanguageContext.Provider value={{ ...value, t: translations.en as unknown as TranslationKeys }}>
         {children}
       </LanguageContext.Provider>
     );

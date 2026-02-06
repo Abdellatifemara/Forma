@@ -33,10 +33,10 @@ export function useTrainerClients() {
   });
 }
 
-export function useTrainerEarnings(month?: string) {
+export function useTrainerEarnings(month?: number, year?: number) {
   return useQuery({
-    queryKey: trainerKeys.earnings(month),
-    queryFn: () => trainersApi.getEarnings(month ? { month } : undefined),
+    queryKey: trainerKeys.earnings(month?.toString()),
+    queryFn: () => trainersApi.getEarnings({ month, year }),
   });
 }
 

@@ -24,6 +24,12 @@ import { HealthDataModule } from './modules/health-data/health-data.module';
 import { BodyCompositionModule } from './modules/body-composition/body-composition.module';
 import { GamificationModule } from './modules/gamification/gamification.module';
 import { InjuryModificationsModule } from './modules/injury-modifications/injury-modifications.module';
+import { ProgramsModule } from './modules/programs/programs.module';
+import { SubscriptionsModule } from './modules/subscriptions/subscriptions.module';
+import { PaymentsModule } from './modules/payments/payments.module';
+import { AnalyticsModule } from './modules/analytics/analytics.module';
+import { CommissionsModule } from './modules/commissions/commissions.module';
+import { ResearchModule } from './modules/research/research.module';
 
 @Module({
   imports: [
@@ -83,6 +89,12 @@ import { InjuryModificationsModule } from './modules/injury-modifications/injury
     BodyCompositionModule,
     GamificationModule,
     InjuryModificationsModule,
+    ProgramsModule,
+    SubscriptionsModule,
+    PaymentsModule,
+    AnalyticsModule,
+    CommissionsModule,
+    ResearchModule,
   ],
 })
 export class AppModule {}

@@ -116,7 +116,13 @@
       "WebFetch(domain:www.g2.com)",
       "Bash(npm run start:dev:*)",
       "Bash(taskkill:*)",
-      "WebFetch(domain:forma-web-nine.vercel.app)"
+      "WebFetch(domain:forma-web-nine.vercel.app)",
+      "WebFetch(domain:fitexpert.team)",
+      "WebFetch(domain:disruptafrica.com)",
+      "WebFetch(domain:www.wamda.com)",
+      "WebFetch(domain:www.thesaasnews.com)",
+      "Bash(node:*)",
+      "Bash(cd:*)"
     ]
   }
 }

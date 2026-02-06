@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   Plus,
   Search,
@@ -10,11 +11,23 @@ import {
   Droplet,
   Apple,
   Loader2,
+  Coffee,
+  UtensilsCrossed,
+  Moon,
+  Cookie,
+  Flame,
+  Zap,
+  TrendingUp,
+  X,
+  Sparkles,
+  Target,
+  ChevronDown,
+  Check,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Progress } from '@/components/ui/progress';
+import { Badge } from '@/components/ui/badge';
 import {
   Dialog,
   DialogContent,
@@ -22,7 +35,13 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from '@/components/ui/collapsible';
 import { useDailyNutrition, useFoodSearch } from '@/hooks/use-nutrition';
+import { cn } from '@/lib/utils';
 
 // Default goals if none set
 const defaultGoals = {
@@ -35,15 +54,32 @@ const defaultGoals = {
 
 // Sample recent foods for quick access
 const recentFoods = [
-  { name: 'Foul Medames', calories: 280 },
-  { name: 'Grilled Chicken', calories: 240 },
-  { name: 'Greek Yogurt', calories: 100 },
-  { name: 'Koshari', calories: 758 },
-  { name: 'Protein Shake', calories: 120 },
+  { name: 'Foul Medames', calories: 280, protein: 15, carbs: 40, fat: 6 },
+  { name: 'Grilled Chicken', calories: 240, protein: 35, carbs: 0, fat: 8 },
+  { name: 'Greek Yogurt', calories: 100, protein: 17, carbs: 6, fat: 0 },
+  { name: 'Koshari', calories: 758, protein: 18, carbs: 140, fat: 12 },
+  { name: 'Protein Shake', calories: 120, protein: 24, carbs: 3, fat: 1 },
 ];
+
+const mealIcons = {
+  BREAKFAST: Coffee,
+  LUNCH: UtensilsCrossed,
+  DINNER: Moon,
+  SNACK: Cookie,
+};
+
+const mealColors = {
+  BREAKFAST: 'from-orange-500 to-yellow-500',
+  LUNCH: 'from-green-500 to-emerald-500',
+  DINNER: 'from-purple-500 to-pink-500',
+  SNACK: 'from-cyan-500 to-blue-500',
+};
 
 export default function NutritionPage() {
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
+  const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
+  const [waterGlasses, setWaterGlasses] = useState(6);
   const { data: dailyData, isLoading: dailyLoading, error: dailyError } = useDailyNutrition();
   const { data: searchResults, isLoading: searchLoading } = useFoodSearch(searchQuery);
 
@@ -53,12 +89,12 @@ export default function NutritionPage() {
   const meals = dailyData?.meals || [];
 
   // Group meals by type
-  const mealTypes = ['BREAKFAST', 'LUNCH', 'DINNER', 'SNACK'];
+  const mealTypes = ['BREAKFAST', 'LUNCH', 'DINNER', 'SNACK'] as const;
   const mealLabels: Record<string, { label: string; time: string }> = {
     BREAKFAST: { label: 'Breakfast', time: '8:00 AM' },
     LUNCH: { label: 'Lunch', time: '1:00 PM' },
     DINNER: { label: 'Dinner', time: '7:00 PM' },
-    SNACK: { label: 'Snack', time: '4:00 PM' },
+    SNACK: { label: 'Snack', time: 'Anytime' },
   };
 
   const organizedMeals = mealTypes.map((type) => {
@@ -74,112 +110,169 @@ export default function NutritionPage() {
     };
   });
 
-  // Water tracking (simulated for now)
-  const waterGlasses = 6;
+  // Progress calculations
+  const calorieProgress = Math.min((totals.calories / goals.calories) * 100, 100);
+  const proteinProgress = Math.min((totals.protein / goals.protein) * 100, 100);
+  const carbsProgress = Math.min((totals.carbs / goals.carbs) * 100, 100);
+  const fatProgress = Math.min((totals.fat / goals.fat) * 100, 100);
+  const waterProgress = Math.min((waterGlasses / defaultGoals.water) * 100, 100);
+
+  const caloriesRemaining = Math.max(0, goals.calories - totals.calories);
 
   if (dailyLoading) {
     return (
       <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
-        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
       </div>
     );
   }
 
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+      {/* Animated Background */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none lg:left-64">
+        <div className="absolute top-20 -right-20 w-64 h-64 bg-green-500/10 rounded-full blur-[100px]" />
+        <div className="absolute bottom-40 -left-20 w-64 h-64 bg-orange-500/10 rounded-full blur-[100px]" />
+      </div>
+
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="relative z-10 flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold">Nutrition</h1>
+          <h1 className="text-3xl font-bold">Nutrition</h1>
           <p className="text-muted-foreground">Track your daily intake</p>
         </div>
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="forma">
+            <Button className="btn-primary">
               <Plus className="mr-2 h-4 w-4" />
               Log Food
             </Button>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent className="glass border-border/50 sm:max-w-md">
             <DialogHeader>
-              <DialogTitle>Add Food</DialogTitle>
+              <DialogTitle className="flex items-center gap-2">
+                <Apple className="h-5 w-5 text-primary" />
+                Add Food
+              </DialogTitle>
             </DialogHeader>
             <div className="space-y-4">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                <Input
-                  placeholder="Search foods..."
-                  className="pl-10"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-              </div>
-
-              {/* Search Results */}
-              {searchQuery.length >= 2 && (
-                <div>
-                  <p className="mb-2 text-sm font-medium">Search Results</p>
-                  {searchLoading ? (
-                    <div className="flex items-center justify-center py-4">
-                      <Loader2 className="h-5 w-5 animate-spin" />
-                    </div>
-                  ) : searchResults && searchResults.length > 0 ? (
-                    <div className="max-h-48 space-y-2 overflow-y-auto">
-                      {searchResults.map((food) => (
-                        <div
-                          key={food.id}
-                          className="flex cursor-pointer items-center justify-between rounded-lg border p-3 hover:bg-muted"
-                        >
-                          <div>
-                            <span className="font-medium">{food.name}</span>
-                            {food.brand && (
-                              <span className="ml-2 text-xs text-muted-foreground">
-                                ({food.brand})
-                              </span>
-                            )}
-                          </div>
-                          <span className="text-sm text-muted-foreground">
-                            {food.calories} kcal
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <p className="py-4 text-center text-sm text-muted-foreground">
-                      No foods found
-                    </p>
-                  )}
-                </div>
-              )}
-
-              <div className="grid grid-cols-2 gap-2">
-                <Button variant="outline" className="h-auto flex-col py-4">
-                  <Camera className="mb-2 h-5 w-5" />
-                  <span className="text-xs">Scan Food</span>
-                </Button>
-                <Button variant="outline" className="h-auto flex-col py-4">
-                  <Barcode className="mb-2 h-5 w-5" />
-                  <span className="text-xs">Scan Barcode</span>
-                </Button>
-              </div>
-
-              {searchQuery.length < 2 && (
-                <div>
-                  <p className="mb-2 text-sm font-medium">Recent Foods</p>
-                  <div className="space-y-2">
-                    {recentFoods.map((food) => (
-                      <div
-                        key={food.name}
-                        className="flex cursor-pointer items-center justify-between rounded-lg border p-3 hover:bg-muted"
+              {/* Meal Type Selection */}
+              {!selectedMealType ? (
+                <div className="grid grid-cols-2 gap-3">
+                  {mealTypes.map((type) => {
+                    const Icon = mealIcons[type];
+                    return (
+                      <button
+                        key={type}
+                        onClick={() => setSelectedMealType(type)}
+                        className={cn(
+                          "flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-border/50 transition-all hover:border-primary/50 hover:bg-primary/5"
+                        )}
                       >
-                        <span>{food.name}</span>
-                        <span className="text-sm text-muted-foreground">
-                          {food.calories} kcal
-                        </span>
-                      </div>
-                    ))}
-                  </div>
+                        <div className={cn(
+                          "p-2 rounded-xl bg-gradient-to-br",
+                          mealColors[type]
+                        )}>
+                          <Icon className="h-5 w-5 text-white" />
+                        </div>
+                        <span className="text-sm font-medium">{mealLabels[type].label}</span>
+                      </button>
+                    );
+                  })}
                 </div>
+              ) : (
+                <>
+                  <div className="flex items-center justify-between">
+                    <Button variant="ghost" size="sm" onClick={() => setSelectedMealType(null)}>
+                      ← Back
+                    </Button>
+                    <Badge variant="outline">{mealLabels[selectedMealType].label}</Badge>
+                  </div>
+
+                  <div className="relative">
+                    <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                    <Input
+                      placeholder="Search foods..."
+                      className="pl-10 bg-muted/50 border-border/50"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                  </div>
+
+                  {/* Search Results */}
+                  {searchQuery.length >= 2 && (
+                    <div>
+                      <p className="mb-2 text-sm font-medium">Search Results</p>
+                      {searchLoading ? (
+                        <div className="flex items-center justify-center py-4">
+                          <Loader2 className="h-5 w-5 animate-spin text-primary" />
+                        </div>
+                      ) : searchResults && searchResults.length > 0 ? (
+                        <div className="max-h-48 space-y-2 overflow-y-auto">
+                          {searchResults.map((food) => (
+                            <div
+                              key={food.id}
+                              className="flex cursor-pointer items-center justify-between rounded-xl border border-border/50 p-3 hover:bg-primary/5 hover:border-primary/30 transition-all"
+                            >
+                              <div>
+                                <span className="font-medium">{food.name}</span>
+                                {food.brand && (
+                                  <span className="ml-2 text-xs text-muted-foreground">
+                                    ({food.brand})
+                                  </span>
+                                )}
+                              </div>
+                              <Badge variant="outline" className="text-xs">
+                                {food.calories} kcal
+                              </Badge>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="py-4 text-center text-sm text-muted-foreground">
+                          No foods found
+                        </p>
+                      )}
+                    </div>
+                  )}
+
+                  <div className="grid grid-cols-2 gap-2">
+                    <Button variant="outline" className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5">
+                      <Camera className="mb-2 h-5 w-5 text-primary" />
+                      <span className="text-xs">Scan Food</span>
+                    </Button>
+                    <Button variant="outline" className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5">
+                      <Barcode className="mb-2 h-5 w-5 text-primary" />
+                      <span className="text-xs">Scan Barcode</span>
+                    </Button>
+                  </div>
+
+                  {searchQuery.length < 2 && (
+                    <div>
+                      <p className="mb-2 text-sm font-medium">Recent Foods</p>
+                      <div className="space-y-2">
+                        {recentFoods.map((food) => (
+                          <div
+                            key={food.name}
+                            className="flex cursor-pointer items-center justify-between rounded-xl border border-border/50 p-3 hover:bg-primary/5 hover:border-primary/30 transition-all"
+                          >
+                            <div>
+                              <span className="font-medium">{food.name}</span>
+                              <div className="flex gap-2 mt-1">
+                                <span className="text-xs text-muted-foreground">P: {food.protein}g</span>
+                                <span className="text-xs text-muted-foreground">C: {food.carbs}g</span>
+                                <span className="text-xs text-muted-foreground">F: {food.fat}g</span>
+                              </div>
+                            </div>
+                            <Badge variant="outline" className="text-xs">
+                              {food.calories} kcal
+                            </Badge>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           </DialogContent>
@@ -188,62 +281,74 @@ export default function NutritionPage() {
 
       {/* Error Message */}
       {dailyError && (
-        <Card className="border-yellow-500/50 bg-yellow-500/10">
-          <CardContent className="p-4">
-            <p className="text-sm text-yellow-600">
+        <Card className="glass border-yellow-500/30 bg-yellow-500/5">
+          <CardContent className="p-4 flex items-center gap-3">
+            <Zap className="h-5 w-5 text-yellow-500" />
+            <p className="text-sm text-yellow-500">
               Could not load nutrition data. Showing default goals.
             </p>
           </CardContent>
         </Card>
       )}
 
-      {/* Daily Summary */}
-      <div className="grid gap-4 md:grid-cols-2">
+      {/* Main Stats */}
+      <div className="relative z-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {/* Calorie Ring */}
-        <Card>
+        <Card className="glass border-border/50 md:col-span-2">
           <CardContent className="p-6">
             <div className="flex items-center gap-6">
-              <div className="relative h-32 w-32">
-                <svg className="h-full w-full -rotate-90" viewBox="0 0 100 100">
+              <div className="relative w-32 h-32">
+                <svg className="w-32 h-32 -rotate-90">
                   <circle
-                    cx="50"
-                    cy="50"
-                    r="40"
+                    cx="64"
+                    cy="64"
+                    r="56"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="8"
-                    className="text-muted"
+                    strokeWidth="12"
+                    className="text-muted/20"
                   />
                   <circle
-                    cx="50"
-                    cy="50"
-                    r="40"
+                    cx="64"
+                    cy="64"
+                    r="56"
                     fill="none"
-                    stroke="currentColor"
-                    strokeWidth="8"
-                    strokeDasharray={`${Math.min((totals.calories / goals.calories) * 251, 251)} 251`}
+                    stroke="url(#calorieGradient)"
+                    strokeWidth="12"
+                    strokeDasharray={`${calorieProgress * 3.52} 352`}
                     strokeLinecap="round"
-                    className="text-forma-teal"
+                    className="transition-all duration-1000"
                   />
+                  <defs>
+                    <linearGradient id="calorieGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#06b6d4" />
+                      <stop offset="100%" stopColor="#a855f7" />
+                    </linearGradient>
+                  </defs>
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="text-2xl font-bold">{Math.round(totals.calories)}</span>
+                  <span className="text-3xl font-bold">{Math.round(totals.calories)}</span>
                   <span className="text-xs text-muted-foreground">kcal</span>
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold">Calories</h3>
-                <p className="text-sm text-muted-foreground">
-                  {Math.max(0, Math.round(goals.calories - totals.calories))} kcal remaining
+                <div className="flex items-center gap-2 mb-2">
+                  <Flame className="h-5 w-5 text-orange-500" />
+                  <h3 className="font-semibold text-lg">Calories</h3>
+                </div>
+                <p className={cn(
+                  "text-2xl font-bold",
+                  caloriesRemaining > 0 ? "text-green-400" : "text-red-400"
+                )}>
+                  {caloriesRemaining > 0 ? caloriesRemaining : Math.abs(caloriesRemaining - goals.calories)}
+                  <span className="text-sm font-normal text-muted-foreground ml-2">
+                    {caloriesRemaining > 0 ? 'remaining' : 'over'}
+                  </span>
                 </p>
-                <div className="mt-4 space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span>Goal</span>
-                    <span>{goals.calories} kcal</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span>Food</span>
-                    <span>+{Math.round(totals.calories)} kcal</span>
+                <div className="mt-3 flex items-center gap-4 text-sm">
+                  <div className="flex items-center gap-1">
+                    <Target className="h-4 w-4 text-muted-foreground" />
+                    <span className="text-muted-foreground">Goal: {goals.calories}</span>
                   </div>
                 </div>
               </div>
@@ -251,131 +356,254 @@ export default function NutritionPage() {
           </CardContent>
         </Card>
 
-        {/* Macros */}
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-base font-semibold">Macronutrients</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-red-500" />
-                  Protein
-                </span>
-                <span>
-                  {Math.round(totals.protein)}g / {goals.protein}g
-                </span>
-              </div>
-              <Progress
-                value={Math.min((totals.protein / goals.protein) * 100, 100)}
-                className="mt-2"
+        {/* Quick Stats */}
+        <Card className="glass border-border/50">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-sm text-muted-foreground">Protein</span>
+              <Badge variant="outline" className="bg-red-500/10 text-red-400 border-red-500/30">
+                {Math.round(totals.protein)}g / {goals.protein}g
+              </Badge>
+            </div>
+            <div className="h-2 bg-muted/30 rounded-full overflow-hidden">
+              <motion.div
+                className="h-full bg-gradient-to-r from-red-500 to-orange-500 rounded-full"
+                initial={{ width: 0 }}
+                animate={{ width: `${proteinProgress}%` }}
+                transition={{ duration: 1, delay: 0.1 }}
               />
             </div>
-            <div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-yellow-500" />
-                  Carbs
-                </span>
-                <span>
-                  {Math.round(totals.carbs)}g / {goals.carbs}g
-                </span>
-              </div>
-              <Progress
-                value={Math.min((totals.carbs / goals.carbs) * 100, 100)}
-                className="mt-2"
+            <p className="text-xs text-muted-foreground mt-2">
+              {Math.max(0, goals.protein - Math.round(totals.protein))}g remaining
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="glass border-border/50">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-sm text-muted-foreground">Carbs</span>
+              <Badge variant="outline" className="bg-yellow-500/10 text-yellow-400 border-yellow-500/30">
+                {Math.round(totals.carbs)}g / {goals.carbs}g
+              </Badge>
+            </div>
+            <div className="h-2 bg-muted/30 rounded-full overflow-hidden">
+              <motion.div
+                className="h-full bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full"
+                initial={{ width: 0 }}
+                animate={{ width: `${carbsProgress}%` }}
+                transition={{ duration: 1, delay: 0.2 }}
               />
             </div>
-            <div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-blue-500" />
-                  Fat
-                </span>
-                <span>
-                  {Math.round(totals.fat)}g / {goals.fat}g
-                </span>
-              </div>
-              <Progress
-                value={Math.min((totals.fat / goals.fat) * 100, 100)}
-                className="mt-2"
-              />
-            </div>
-            <div>
-              <div className="flex items-center justify-between text-sm">
-                <span className="flex items-center gap-2">
-                  <Droplet className="h-3 w-3 text-cyan-500" />
-                  Water
-                </span>
-                <span>
-                  {waterGlasses} / {defaultGoals.water} glasses
-                </span>
-              </div>
-              <Progress
-                value={(waterGlasses / defaultGoals.water) * 100}
-                className="mt-2"
-              />
-            </div>
+            <p className="text-xs text-muted-foreground mt-2">
+              {Math.max(0, goals.carbs - Math.round(totals.carbs))}g remaining
+            </p>
           </CardContent>
         </Card>
       </div>
 
-      {/* Meals */}
-      <div className="space-y-4">
-        <h2 className="text-lg font-semibold">Today&apos;s Meals</h2>
-        {organizedMeals.map((meal) => (
-          <Card key={meal.type}>
-            <CardContent className="p-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="rounded-lg bg-forma-teal/10 p-2">
-                    <Apple className="h-5 w-5 text-forma-teal" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">{meal.name}</h3>
-                    <p className="text-sm text-muted-foreground">{meal.time}</p>
-                  </div>
+      {/* Fat & Water Row */}
+      <div className="relative z-10 grid gap-4 md:grid-cols-2">
+        <Card className="glass border-border/50">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <div className="p-2 rounded-lg bg-blue-500/20">
+                  <Zap className="h-4 w-4 text-blue-400" />
                 </div>
-                <div className="flex items-center gap-3">
-                  {meal.notLogged ? (
-                    <Button variant="outline" size="sm">
-                      <Plus className="mr-1 h-4 w-4" />
-                      Log
-                    </Button>
-                  ) : (
-                    <>
-                      <div className="text-right">
-                        <p className="font-semibold">{Math.round(meal.calories)} kcal</p>
-                        <p className="text-xs text-muted-foreground">
-                          {meal.foods.length} items
-                        </p>
-                      </div>
-                      <ChevronRight className="h-5 w-5 text-muted-foreground" />
-                    </>
+                <span className="font-medium">Fat</span>
+              </div>
+              <Badge variant="outline" className="bg-blue-500/10 text-blue-400 border-blue-500/30">
+                {Math.round(totals.fat)}g / {goals.fat}g
+              </Badge>
+            </div>
+            <div className="h-2 bg-muted/30 rounded-full overflow-hidden">
+              <motion.div
+                className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"
+                initial={{ width: 0 }}
+                animate={{ width: `${fatProgress}%` }}
+                transition={{ duration: 1, delay: 0.3 }}
+              />
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="glass border-border/50">
+          <CardContent className="p-6">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <div className="p-2 rounded-lg bg-cyan-500/20">
+                  <Droplet className="h-4 w-4 text-cyan-400" />
+                </div>
+                <span className="font-medium">Water</span>
+              </div>
+              <Badge variant="outline" className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
+                {waterGlasses} / {defaultGoals.water} glasses
+              </Badge>
+            </div>
+            <div className="flex items-center gap-2">
+              {Array.from({ length: defaultGoals.water }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setWaterGlasses(i + 1)}
+                  className={cn(
+                    "flex-1 h-8 rounded-lg transition-all",
+                    i < waterGlasses
+                      ? "bg-gradient-to-t from-cyan-500 to-blue-500"
+                      : "bg-muted/30 hover:bg-muted/50"
                   )}
-                </div>
-              </div>
-
-              {meal.foods.length > 0 && (
-                <div className="mt-4 space-y-2 border-t pt-4">
-                  {meal.foods.map((foodItem, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-between text-sm"
-                    >
-                      <span>{foodItem.food?.name || 'Food'}</span>
-                      <span className="text-muted-foreground">
-                        {Math.round((foodItem.food?.calories || 0) * (foodItem.servings || 1))} kcal
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </CardContent>
-          </Card>
-        ))}
+                />
+              ))}
+            </div>
+          </CardContent>
+        </Card>
       </div>
+
+      {/* Today's Meals */}
+      <div className="relative z-10 space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-bold">Today's Meals</h2>
+          <Badge variant="outline" className="text-xs">
+            {organizedMeals.filter(m => !m.notLogged).length} / {organizedMeals.length} logged
+          </Badge>
+        </div>
+
+        {organizedMeals.map((meal, index) => {
+          const Icon = mealIcons[meal.type as keyof typeof mealIcons];
+          const colorClass = mealColors[meal.type as keyof typeof mealColors];
+
+          return (
+            <motion.div
+              key={meal.type}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+            >
+              <Collapsible
+                open={expandedMeal === meal.type}
+                onOpenChange={() => setExpandedMeal(expandedMeal === meal.type ? null : meal.type)}
+              >
+                <Card className={cn(
+                  "glass border-border/50 overflow-hidden transition-all",
+                  !meal.notLogged && "border-green-500/30"
+                )}>
+                  {/* Gradient accent */}
+                  <div className={cn("h-1 bg-gradient-to-r", colorClass)} />
+
+                  <CollapsibleTrigger asChild>
+                    <CardContent className="p-4 cursor-pointer">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-4">
+                          <div className={cn(
+                            "p-3 rounded-xl bg-gradient-to-br",
+                            colorClass
+                          )}>
+                            <Icon className="h-5 w-5 text-white" />
+                          </div>
+                          <div>
+                            <h3 className="font-semibold">{meal.name}</h3>
+                            <p className="text-sm text-muted-foreground">{meal.time}</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-3">
+                          {meal.notLogged ? (
+                            <Dialog>
+                              <DialogTrigger asChild>
+                                <Button
+                                  variant="outline"
+                                  size="sm"
+                                  className="border-primary/50 hover:bg-primary/10"
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    setSelectedMealType(meal.type);
+                                  }}
+                                >
+                                  <Plus className="mr-1 h-4 w-4" />
+                                  Log
+                                </Button>
+                              </DialogTrigger>
+                            </Dialog>
+                          ) : (
+                            <>
+                              <div className="text-right">
+                                <p className="font-bold text-lg">{Math.round(meal.calories)}</p>
+                                <p className="text-xs text-muted-foreground">kcal</p>
+                              </div>
+                              {meal.foods.length > 0 && (
+                                <ChevronDown className={cn(
+                                  "h-5 w-5 text-muted-foreground transition-transform",
+                                  expandedMeal === meal.type && "rotate-180"
+                                )} />
+                              )}
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    </CardContent>
+                  </CollapsibleTrigger>
+
+                  <CollapsibleContent>
+                    {meal.foods.length > 0 && (
+                      <div className="px-4 pb-4 space-y-2 border-t border-border/30 pt-4">
+                        {meal.foods.map((foodItem, foodIndex) => (
+                          <motion.div
+                            key={foodIndex}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: foodIndex * 0.05 }}
+                            className="flex items-center justify-between p-3 rounded-xl bg-muted/20"
+                          >
+                            <div className="flex items-center gap-3">
+                              <div className="w-2 h-2 rounded-full bg-green-500" />
+                              <span className="font-medium">{foodItem.food?.name || 'Food'}</span>
+                            </div>
+                            <span className="text-sm text-muted-foreground">
+                              {Math.round((foodItem.food?.calories || 0) * (foodItem.servings || 1))} kcal
+                            </span>
+                          </motion.div>
+                        ))}
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="w-full border border-dashed border-border/50 hover:border-primary/50"
+                        >
+                          <Plus className="mr-2 h-4 w-4" />
+                          Add More
+                        </Button>
+                      </div>
+                    )}
+                  </CollapsibleContent>
+                </Card>
+              </Collapsible>
+            </motion.div>
+          );
+        })}
+      </div>
+
+      {/* Daily Insight */}
+      <Card className="relative z-10 glass border-primary/20 bg-primary/5">
+        <CardContent className="p-6">
+          <div className="flex items-start gap-4">
+            <div className="p-3 rounded-xl bg-primary/20">
+              <Sparkles className="h-6 w-6 text-primary" />
+            </div>
+            <div>
+              <h3 className="font-semibold mb-1">Daily Insight</h3>
+              {totals.protein >= goals.protein * 0.8 ? (
+                <p className="text-sm text-muted-foreground">
+                  Great protein intake today! You're on track to hit your muscle-building goals.
+                  Consider having a light snack if you're feeling hungry before bed.
+                </p>
+              ) : (
+                <p className="text-sm text-muted-foreground">
+                  You're {Math.round(goals.protein - totals.protein)}g short on protein today.
+                  Try adding a protein shake or some Greek yogurt to reach your goal.
+                </p>
+              )}
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }

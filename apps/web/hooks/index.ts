@@ -6,5 +6,13 @@ export * from './use-progress';
 export * from './use-stats';
 export * from './use-exercises';
 export * from './use-trainers';
+export {
+  useTrainerStats,
+  useClientCompliance,
+  useInviteCode,
+  useTrainerDashboard,
+  useClientDetails,
+} from './use-trainer';
 export * from './use-toast';
 export * from './use-chat';
+export * from './use-subscription';

@@ -196,7 +196,48 @@ export class UploadService {
     });
   }
 
-  async deleteFile(publicId: string, resourceType: 'image' | 'video' = 'image'): Promise<void> {
+  async uploadPdf(
+    file: Express.Multer.File,
+    userId: string,
+  ): Promise<{ url: string; publicId: string; pages?: number }> {
+    if (!file) {
+      throw new BadRequestException('No file provided');
+    }
+
+    if (file.mimetype !== 'application/pdf') {
+      throw new BadRequestException('Invalid file type. Only PDF files are allowed.');
+    }
+
+    const maxSize = 10 * 1024 * 1024; // 10MB
+    if (file.size > maxSize) {
+      throw new BadRequestException('File size exceeds 10MB limit');
+    }
+
+    return new Promise((resolve, reject) => {
+      const uploadStream = cloudinary.uploader.upload_stream(
+        {
+          folder: `forma/programs/pdfs/${userId}`,
+          resource_type: 'raw', // PDFs are raw files
+          format: 'pdf',
+        },
+        (error, result) => {
+          if (error) {
+            reject(new BadRequestException(`Upload failed: ${error.message}`));
+          } else if (result) {
+            resolve({
+              url: result.secure_url,
+              publicId: result.public_id,
+              pages: (result as any).pages,
+            });
+          }
+        },
+      );
+
+      uploadStream.end(file.buffer);
+    });
+  }
+
+  async deleteFile(publicId: string, resourceType: 'image' | 'video' | 'raw' = 'image'): Promise<void> {
     try {
       await cloudinary.uploader.destroy(publicId, { resource_type: resourceType });
     } catch (error) {

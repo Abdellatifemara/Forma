@@ -10,10 +10,16 @@ import {
   Clock,
   Save,
   Loader2,
+  Upload,
+  Wallet,
+  Award,
+  CheckCircle,
+  AlertCircle,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
 import {
   Card,
   CardContent,
@@ -21,9 +27,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Switch } from '@/components/ui/switch';
-import { Separator } from '@/components/ui/separator';
 import {
   Select,
   SelectContent,
@@ -32,6 +38,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { cn } from '@/lib/utils';
 
 export default function TrainerSettingsPage() {
   const [isSaving, setIsSaving] = useState(false);
@@ -52,6 +59,11 @@ export default function TrainerSettingsPage() {
     marketingEmails: false,
   });
 
+  // Mock tier data - would come from API
+  const trainerTier = 'TRUSTED_PARTNER';
+  const commissionRate = trainerTier === 'TRUSTED_PARTNER' ? 7 : 20;
+  const keepRate = 100 - commissionRate;
+
   const handleSave = async () => {
     setIsSaving(true);
     await new Promise((resolve) => setTimeout(resolve, 1500));
@@ -59,16 +71,16 @@ export default function TrainerSettingsPage() {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-8">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-3xl font-bold">Settings</h1>
           <p className="text-muted-foreground">
             Manage your trainer account settings
           </p>
         </div>
-        <Button variant="forma" onClick={handleSave} disabled={isSaving}>
+        <Button onClick={handleSave} disabled={isSaving} className="btn-primary">
           {isSaving ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -83,8 +95,8 @@ export default function TrainerSettingsPage() {
         </Button>
       </div>
 
-      <Tabs defaultValue="profile">
-        <TabsList>
+      <Tabs defaultValue="profile" className="space-y-6">
+        <TabsList className="bg-muted/50">
           <TabsTrigger value="profile">
             <User className="mr-2 h-4 w-4" />
             Profile
@@ -105,7 +117,7 @@ export default function TrainerSettingsPage() {
 
         <TabsContent value="profile" className="space-y-6">
           {/* Profile Photo */}
-          <Card>
+          <Card className="glass border-border/50">
             <CardHeader>
               <CardTitle>Profile Photo</CardTitle>
               <CardDescription>
@@ -113,11 +125,17 @@ export default function TrainerSettingsPage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="flex items-center gap-6">
-              <Avatar className="h-24 w-24">
-                <AvatarFallback className="text-2xl bg-forma-teal text-white">U</AvatarFallback>
+              <Avatar className="h-24 w-24 border-4 border-primary/30">
+                <AvatarImage src={undefined} />
+                <AvatarFallback className="text-2xl bg-gradient-to-br from-cyan-500 to-purple-500 text-white">
+                  AH
+                </AvatarFallback>
               </Avatar>
-              <div className="space-y-2">
-                <Button variant="outline">Change Photo</Button>
+              <div className="space-y-3">
+                <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
+                  <Upload className="mr-2 h-4 w-4" />
+                  Change Photo
+                </Button>
                 <p className="text-sm text-muted-foreground">
                   JPG, PNG or GIF. Max 5MB.
                 </p>
@@ -126,9 +144,10 @@ export default function TrainerSettingsPage() {
           </Card>
 
           {/* Basic Info */}
-          <Card>
+          <Card className="glass border-border/50">
             <CardHeader>
               <CardTitle>Basic Information</CardTitle>
+              <CardDescription>Update your personal details</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
@@ -139,6 +158,7 @@ export default function TrainerSettingsPage() {
                     onChange={(e) =>
                       setProfile({ ...profile, name: e.target.value })
                     }
+                    className="bg-muted/50 border-border/50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -149,6 +169,7 @@ export default function TrainerSettingsPage() {
                     onChange={(e) =>
                       setProfile({ ...profile, email: e.target.value })
                     }
+                    className="bg-muted/50 border-border/50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -158,6 +179,7 @@ export default function TrainerSettingsPage() {
                     onChange={(e) =>
                       setProfile({ ...profile, phone: e.target.value })
                     }
+                    className="bg-muted/50 border-border/50"
                   />
                 </div>
                 <div className="space-y-2">
@@ -168,13 +190,14 @@ export default function TrainerSettingsPage() {
                     onChange={(e) =>
                       setProfile({ ...profile, hourlyRate: e.target.value })
                     }
+                    className="bg-muted/50 border-border/50"
                   />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label>Bio</Label>
-                <textarea
-                  className="min-h-[100px] w-full rounded-md border bg-background px-3 py-2 text-sm"
+                <Textarea
+                  className="min-h-[100px] bg-muted/50 border-border/50"
                   value={profile.bio}
                   onChange={(e) =>
                     setProfile({ ...profile, bio: e.target.value })
@@ -183,10 +206,62 @@ export default function TrainerSettingsPage() {
               </div>
             </CardContent>
           </Card>
+
+          {/* Trainer Tier */}
+          <Card className={cn(
+            "glass",
+            trainerTier === 'TRUSTED_PARTNER'
+              ? 'border-yellow-500/30 bg-yellow-500/5'
+              : 'border-border/50'
+          )}>
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <div>
+                  <CardTitle className="flex items-center gap-2">
+                    <Award className="h-5 w-5 text-yellow-400" />
+                    Trainer Tier
+                  </CardTitle>
+                  <CardDescription>Your current partnership level</CardDescription>
+                </div>
+                <Badge className={
+                  trainerTier === 'TRUSTED_PARTNER'
+                    ? 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50'
+                    : 'bg-muted'
+                }>
+                  {trainerTier === 'TRUSTED_PARTNER' ? 'Trusted Partner' : 'Regular Trainer'}
+                </Badge>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="p-4 rounded-xl bg-muted/30 border border-border/30">
+                  <p className="text-sm text-muted-foreground mb-1">Commission Rate</p>
+                  <p className="text-2xl font-bold">{commissionRate}%</p>
+                </div>
+                <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/30">
+                  <p className="text-sm text-muted-foreground mb-1">You Keep</p>
+                  <p className="text-2xl font-bold text-green-400">{keepRate}%</p>
+                </div>
+              </div>
+              {trainerTier !== 'TRUSTED_PARTNER' && (
+                <div className="mt-4 p-4 rounded-xl bg-primary/10 border border-primary/20">
+                  <p className="text-sm">
+                    <span className="font-medium">Want to become a Trusted Partner?</span>{' '}
+                    <span className="text-muted-foreground">
+                      Reduce your commission to 5-7% by applying for our partner program.
+                    </span>
+                  </p>
+                  <Button variant="outline" className="mt-3 border-primary/50">
+                    Learn More
+                  </Button>
+                </div>
+              )}
+            </CardContent>
+          </Card>
         </TabsContent>
 
         <TabsContent value="notifications" className="space-y-6">
-          <Card>
+          <Card className="glass border-border/50">
             <CardHeader>
               <CardTitle>Notification Preferences</CardTitle>
               <CardDescription>
@@ -194,142 +269,124 @@ export default function TrainerSettingsPage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">New Client Requests</p>
-                  <p className="text-sm text-muted-foreground">
-                    Get notified when someone wants to work with you
-                  </p>
+              {[
+                {
+                  key: 'newClient',
+                  title: 'New Client Requests',
+                  description: 'Get notified when someone wants to work with you',
+                },
+                {
+                  key: 'sessionReminder',
+                  title: 'Session Reminders',
+                  description: 'Reminders before scheduled sessions',
+                },
+                {
+                  key: 'messageAlert',
+                  title: 'Message Alerts',
+                  description: 'Notifications for new messages',
+                },
+                {
+                  key: 'weeklyReport',
+                  title: 'Weekly Reports',
+                  description: 'Summary of your weekly performance',
+                },
+                {
+                  key: 'marketingEmails',
+                  title: 'Marketing Emails',
+                  description: 'Tips and promotional content',
+                },
+              ].map((item, index) => (
+                <div key={item.key}>
+                  <div className="flex items-center justify-between p-4 rounded-xl bg-muted/30 border border-border/30">
+                    <div>
+                      <p className="font-medium">{item.title}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {item.description}
+                      </p>
+                    </div>
+                    <Switch
+                      checked={notifications[item.key as keyof typeof notifications]}
+                      onCheckedChange={(checked) =>
+                        setNotifications({ ...notifications, [item.key]: checked })
+                      }
+                    />
+                  </div>
                 </div>
-                <Switch
-                  checked={notifications.newClient}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, newClient: checked })
-                  }
-                />
-              </div>
-              <Separator />
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">Session Reminders</p>
-                  <p className="text-sm text-muted-foreground">
-                    Reminders before scheduled sessions
-                  </p>
-                </div>
-                <Switch
-                  checked={notifications.sessionReminder}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, sessionReminder: checked })
-                  }
-                />
-              </div>
-              <Separator />
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">Message Alerts</p>
-                  <p className="text-sm text-muted-foreground">
-                    Notifications for new messages
-                  </p>
-                </div>
-                <Switch
-                  checked={notifications.messageAlert}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, messageAlert: checked })
-                  }
-                />
-              </div>
-              <Separator />
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">Weekly Reports</p>
-                  <p className="text-sm text-muted-foreground">
-                    Summary of your weekly performance
-                  </p>
-                </div>
-                <Switch
-                  checked={notifications.weeklyReport}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, weeklyReport: checked })
-                  }
-                />
-              </div>
-              <Separator />
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">Marketing Emails</p>
-                  <p className="text-sm text-muted-foreground">
-                    Tips and promotional content
-                  </p>
-                </div>
-                <Switch
-                  checked={notifications.marketingEmails}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, marketingEmails: checked })
-                  }
-                />
-              </div>
+              ))}
             </CardContent>
           </Card>
         </TabsContent>
 
         <TabsContent value="availability" className="space-y-6">
-          <Card>
+          <Card className="glass border-border/50">
             <CardHeader>
               <CardTitle>Working Hours</CardTitle>
               <CardDescription>
                 Set your available hours for client sessions
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-6">
               <div className="space-y-2">
                 <Label>Timezone</Label>
-                <Select value={profile.timezone}>
-                  <SelectTrigger>
+                <Select value={profile.timezone} onValueChange={(value) => setProfile({ ...profile, timezone: value })}>
+                  <SelectTrigger className="w-full max-w-xs bg-muted/50 border-border/50">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="Africa/Cairo">
-                      Cairo (GMT+2)
-                    </SelectItem>
+                    <SelectItem value="Africa/Cairo">Cairo (GMT+2)</SelectItem>
                     <SelectItem value="Asia/Dubai">Dubai (GMT+4)</SelectItem>
-                    <SelectItem value="Europe/London">
-                      London (GMT+0)
-                    </SelectItem>
+                    <SelectItem value="Asia/Riyadh">Riyadh (GMT+3)</SelectItem>
+                    <SelectItem value="Europe/London">London (GMT+0)</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(
-                  (day) => (
-                    <div key={day} className="flex items-center gap-4">
-                      <div className="w-24">
-                        <p className="font-medium">{day}</p>
+                  (day) => {
+                    const isClosed = day === 'Friday';
+                    return (
+                      <div
+                        key={day}
+                        className={cn(
+                          'flex items-center gap-4 p-4 rounded-xl border',
+                          isClosed
+                            ? 'bg-muted/20 border-border/30'
+                            : 'bg-muted/30 border-border/50'
+                        )}
+                      >
+                        <div className="w-24">
+                          <p className={cn('font-medium', isClosed && 'text-muted-foreground')}>
+                            {day}
+                          </p>
+                        </div>
+                        <Select defaultValue={isClosed ? 'closed' : 'open'}>
+                          <SelectTrigger className="w-24 bg-muted/50 border-border/50">
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="open">Open</SelectItem>
+                            <SelectItem value="closed">Closed</SelectItem>
+                          </SelectContent>
+                        </Select>
+                        <div className="flex items-center gap-2 flex-1">
+                          <Input
+                            type="time"
+                            defaultValue="09:00"
+                            className="w-28 bg-muted/50 border-border/50"
+                            disabled={isClosed}
+                          />
+                          <span className="text-muted-foreground">to</span>
+                          <Input
+                            type="time"
+                            defaultValue="18:00"
+                            className="w-28 bg-muted/50 border-border/50"
+                            disabled={isClosed}
+                          />
+                        </div>
                       </div>
-                      <Select defaultValue={day === 'Sunday' ? 'closed' : 'open'}>
-                        <SelectTrigger className="w-24">
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="open">Open</SelectItem>
-                          <SelectItem value="closed">Closed</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <Input
-                        type="time"
-                        defaultValue="09:00"
-                        className="w-28"
-                        disabled={day === 'Sunday'}
-                      />
-                      <span className="text-muted-foreground">to</span>
-                      <Input
-                        type="time"
-                        defaultValue="18:00"
-                        className="w-28"
-                        disabled={day === 'Sunday'}
-                      />
-                    </div>
-                  )
+                    );
+                  }
                 )}
               </div>
             </CardContent>
@@ -337,7 +394,8 @@ export default function TrainerSettingsPage() {
         </TabsContent>
 
         <TabsContent value="billing" className="space-y-6">
-          <Card>
+          {/* Payout Method */}
+          <Card className="glass border-border/50">
             <CardHeader>
               <CardTitle>Payout Method</CardTitle>
               <CardDescription>
@@ -345,40 +403,85 @@ export default function TrainerSettingsPage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="rounded-lg border p-4">
+              <div className="p-4 rounded-xl bg-muted/30 border border-border/50">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="rounded-lg bg-muted p-2">
-                      <CreditCard className="h-5 w-5" />
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 rounded-xl bg-cyan-500/20">
+                      <Wallet className="h-5 w-5 text-cyan-400" />
                     </div>
                     <div>
-                      <p className="font-medium">Bank Transfer</p>
+                      <div className="flex items-center gap-2">
+                        <p className="font-medium">Bank Transfer</p>
+                        <Badge className="bg-green-500/20 text-green-400 border-green-500/50">
+                          <CheckCircle className="h-3 w-3 mr-1" />
+                          Verified
+                        </Badge>
+                      </div>
                       <p className="text-sm text-muted-foreground">
                         ****1234 - National Bank of Egypt
                       </p>
                     </div>
                   </div>
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" className="border-border/50">
                     Edit
                   </Button>
                 </div>
               </div>
-              <Button variant="outline">Add Payment Method</Button>
+              <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
+                Add Payment Method
+              </Button>
             </CardContent>
           </Card>
 
-          <Card>
+          {/* Commission Info */}
+          <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle>Commission Rate</CardTitle>
+              <CardTitle>Commission & Payouts</CardTitle>
+              <CardDescription>Understanding your earnings</CardDescription>
             </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Forma takes a 15% commission on all earnings. You keep 85%.
-              </p>
-              <div className="mt-4 rounded-lg bg-forma-teal/10 p-4">
-                <p className="text-sm font-medium text-forma-teal">
-                  Your rate: 85% of earnings
-                </p>
+            <CardContent className="space-y-4">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="p-4 rounded-xl bg-muted/30 border border-border/30">
+                  <p className="text-sm text-muted-foreground mb-1">Platform Fee</p>
+                  <p className="text-2xl font-bold text-orange-400">{commissionRate}%</p>
+                </div>
+                <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/30">
+                  <p className="text-sm text-muted-foreground mb-1">Your Share</p>
+                  <p className="text-2xl font-bold text-green-400">{keepRate}%</p>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-xl bg-muted/20 border border-border/30">
+                <h4 className="font-medium mb-3">Payout Schedule</h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Processing</span>
+                    <span>Every Sunday</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Minimum Payout</span>
+                    <span>500 EGP</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Transfer Time</span>
+                    <span>1-3 business days</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-xl bg-primary/10 border border-primary/20">
+                <div className="flex items-start gap-3">
+                  <AlertCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-medium text-sm">Need Help?</p>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Contact our support team for any billing or payout questions.
+                    </p>
+                    <Button variant="link" className="p-0 h-auto text-primary mt-2">
+                      Contact Support
+                    </Button>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>

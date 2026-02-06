@@ -3,18 +3,26 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Eye, EyeOff, Loader2, Check, AlertCircle } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import {
+  Eye,
+  EyeOff,
+  Loader2,
+  Check,
+  AlertCircle,
+  ChevronRight,
+  ChevronLeft,
+  Mail,
+  Lock,
+  User,
+  Target,
+  Dumbbell,
+  Sparkles,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
+import { cn } from '@/lib/utils';
 import { authApi, setAuthCookie, setRefreshCookie } from '@/lib/api';
 
 const passwordRequirements = [
@@ -25,6 +33,20 @@ const passwordRequirements = [
 ];
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+const goals = [
+  { value: 'lose-weight', label: 'Lose Weight', icon: '🔥' },
+  { value: 'build-muscle', label: 'Build Muscle', icon: '💪' },
+  { value: 'get-stronger', label: 'Get Stronger', icon: '🏋️' },
+  { value: 'improve-health', label: 'Improve Health', icon: '❤️' },
+  { value: 'increase-endurance', label: 'Endurance', icon: '🏃' },
+];
+
+const experienceLevels = [
+  { value: 'beginner', label: 'Beginner', description: "I'm new to fitness" },
+  { value: 'intermediate', label: 'Intermediate', description: '1-2 years experience' },
+  { value: 'advanced', label: 'Advanced', description: '3+ years experience' },
+];
 
 export default function SignupPage() {
   const router = useRouter();
@@ -111,200 +133,249 @@ export default function SignupPage() {
   };
 
   return (
-    <Card className="border-white/10 bg-white/5 backdrop-blur">
-      <CardHeader className="text-center">
-        <CardTitle className="text-2xl text-white">
-          {step === 1 ? 'Create your account' : 'Tell us about yourself'}
-        </CardTitle>
-        <CardDescription className="text-white/60">
-          {step === 1
-            ? 'Start your fitness transformation today'
-            : 'This helps us personalize your experience'}
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        {/* Progress indicator */}
-        <div className="mb-6 flex gap-2">
-          <div className={`h-1 flex-1 rounded-full ${step >= 1 ? 'bg-forma-teal' : 'bg-white/20'}`} />
-          <div className={`h-1 flex-1 rounded-full ${step >= 2 ? 'bg-forma-teal' : 'bg-white/20'}`} />
+    <div className="w-full max-w-md">
+      {/* Logo */}
+      <div className="text-center mb-8">
+        <Link href="/">
+          <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
+            FORMA
+          </h1>
+        </Link>
+        <p className="text-muted-foreground mt-2">Your fitness transformation starts here</p>
+      </div>
+
+      {/* Progress Steps */}
+      <div className="flex items-center justify-center gap-2 mb-8">
+        <div className={cn(
+          "flex items-center justify-center w-8 h-8 rounded-full transition-all",
+          step >= 1 ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+        )}>
+          {step > 1 ? <Check className="h-4 w-4" /> : '1'}
+        </div>
+        <div className={cn("w-12 h-0.5", step > 1 ? "bg-primary" : "bg-muted")} />
+        <div className={cn(
+          "flex items-center justify-center w-8 h-8 rounded-full transition-all",
+          step >= 2 ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+        )}>
+          2
+        </div>
+      </div>
+
+      {/* Card */}
+      <div className="glass rounded-2xl p-6 border border-border/50">
+        <div className="text-center mb-6">
+          <h2 className="text-xl font-bold">
+            {step === 1 ? 'Create your account' : 'Tell us about yourself'}
+          </h2>
+          <p className="text-sm text-muted-foreground mt-1">
+            {step === 1
+              ? 'Start your fitness transformation today'
+              : 'This helps us personalize your experience'}
+          </p>
         </div>
 
-        {/* Error message */}
+        {/* Error Message */}
         {error && (
-          <div className="mb-4 flex items-center gap-2 rounded-md bg-red-500/10 p-3 text-sm text-red-400">
+          <div className="mb-4 flex items-center gap-2 rounded-xl bg-destructive/10 border border-destructive/30 p-3 text-sm text-destructive">
             <AlertCircle className="h-4 w-4 flex-shrink-0" />
             <span>{error}</span>
           </div>
         )}
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          {step === 1 ? (
-            <>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="firstName" className="text-white/80">
-                    First Name
-                  </Label>
-                  <Input
-                    id="firstName"
-                    type="text"
-                    placeholder="Ahmed"
-                    value={formData.firstName}
-                    onChange={(e) => {
-                      setFormData({ ...formData, firstName: e.target.value });
-                      setError(null);
-                    }}
-                    className="border-white/20 bg-white/10 text-white placeholder:text-white/40"
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="lastName" className="text-white/80">
-                    Last Name
-                  </Label>
-                  <Input
-                    id="lastName"
-                    type="text"
-                    placeholder="Mohamed"
-                    value={formData.lastName}
-                    onChange={(e) => {
-                      setFormData({ ...formData, lastName: e.target.value });
-                      setError(null);
-                    }}
-                    className="border-white/20 bg-white/10 text-white placeholder:text-white/40"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="email" className="text-white/80">
-                  Email
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="you@example.com"
-                  value={formData.email}
-                  onChange={(e) => {
-                    setFormData({ ...formData, email: e.target.value });
-                    setError(null);
-                  }}
-                  className={`border-white/20 bg-white/10 text-white placeholder:text-white/40 ${
-                    formData.email && !isEmailValid ? 'border-red-500' : ''
-                  }`}
-                  required
-                />
-                {formData.email && !isEmailValid && (
-                  <p className="text-xs text-red-400">Please enter a valid email address</p>
-                )}
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="password" className="text-white/80">
-                  Password
-                </Label>
-                <div className="relative">
-                  <Input
-                    id="password"
-                    type={showPassword ? 'text' : 'password'}
-                    placeholder="Create a strong password"
-                    value={formData.password}
-                    onChange={(e) => {
-                      setFormData({ ...formData, password: e.target.value });
-                      setError(null);
-                    }}
-                    className="border-white/20 bg-white/10 pr-10 text-white placeholder:text-white/40"
-                    required
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white/60"
-                  >
-                    {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                  </button>
-                </div>
-
-                {/* Password requirements */}
-                <div className="mt-3 space-y-2">
-                  {passwordRequirements.map((req, index) => (
-                    <div key={index} className="flex items-center gap-2">
-                      <div
-                        className={`flex h-4 w-4 items-center justify-center rounded-full ${
-                          req.test(formData.password)
-                            ? 'bg-forma-teal text-forma-navy'
-                            : 'bg-white/20'
-                        }`}
-                      >
-                        {req.test(formData.password) && <Check className="h-3 w-3" />}
-                      </div>
-                      <span
-                        className={`text-xs ${
-                          req.test(formData.password) ? 'text-forma-teal' : 'text-white/40'
-                        }`}
-                      >
-                        {req.label}
-                      </span>
+          <AnimatePresence mode="wait">
+            {step === 1 ? (
+              <motion.div
+                key="step1"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                className="space-y-4"
+              >
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="space-y-2">
+                    <Label htmlFor="firstName" className="text-sm">First Name</Label>
+                    <div className="relative">
+                      <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                      <Input
+                        id="firstName"
+                        type="text"
+                        placeholder="Ahmed"
+                        value={formData.firstName}
+                        onChange={(e) => {
+                          setFormData({ ...formData, firstName: e.target.value });
+                          setError(null);
+                        }}
+                        className="pl-10 bg-muted/50 border-border/50"
+                        required
+                      />
                     </div>
-                  ))}
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="lastName" className="text-sm">Last Name</Label>
+                    <Input
+                      id="lastName"
+                      type="text"
+                      placeholder="Mohamed"
+                      value={formData.lastName}
+                      onChange={(e) => {
+                        setFormData({ ...formData, lastName: e.target.value });
+                        setError(null);
+                      }}
+                      className="bg-muted/50 border-border/50"
+                      required
+                    />
+                  </div>
                 </div>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="space-y-2">
-                <Label htmlFor="goal" className="text-white/80">
-                  What is your main fitness goal?
-                </Label>
-                <Select
-                  value={formData.goal}
-                  onValueChange={(value) => {
-                    setFormData({ ...formData, goal: value });
-                    setError(null);
-                  }}
-                >
-                  <SelectTrigger className="border-white/20 bg-white/10 text-white">
-                    <SelectValue placeholder="Select your goal" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="lose-weight">Lose Weight</SelectItem>
-                    <SelectItem value="build-muscle">Build Muscle</SelectItem>
-                    <SelectItem value="get-stronger">Get Stronger</SelectItem>
-                    <SelectItem value="improve-health">Improve Overall Health</SelectItem>
-                    <SelectItem value="increase-endurance">Increase Endurance</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="experience" className="text-white/80">
-                  What is your fitness experience level?
-                </Label>
-                <Select
-                  value={formData.experience}
-                  onValueChange={(value) => {
-                    setFormData({ ...formData, experience: value });
-                    setError(null);
-                  }}
-                >
-                  <SelectTrigger className="border-white/20 bg-white/10 text-white">
-                    <SelectValue placeholder="Select your level" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="beginner">Beginner - New to fitness</SelectItem>
-                    <SelectItem value="intermediate">Intermediate - 1-2 years</SelectItem>
-                    <SelectItem value="advanced">Advanced - 3+ years</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </>
-          )}
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-sm">Email</Label>
+                  <div className="relative">
+                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="you@example.com"
+                      value={formData.email}
+                      onChange={(e) => {
+                        setFormData({ ...formData, email: e.target.value });
+                        setError(null);
+                      }}
+                      className={cn(
+                        "pl-10 bg-muted/50 border-border/50",
+                        formData.email && !isEmailValid && "border-destructive"
+                      )}
+                      required
+                    />
+                  </div>
+                </div>
 
+                <div className="space-y-2">
+                  <Label htmlFor="password" className="text-sm">Password</Label>
+                  <div className="relative">
+                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                    <Input
+                      id="password"
+                      type={showPassword ? 'text' : 'password'}
+                      placeholder="Create a strong password"
+                      value={formData.password}
+                      onChange={(e) => {
+                        setFormData({ ...formData, password: e.target.value });
+                        setError(null);
+                      }}
+                      className="pl-10 pr-10 bg-muted/50 border-border/50"
+                      required
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowPassword(!showPassword)}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                    </button>
+                  </div>
+
+                  {/* Password Requirements */}
+                  <div className="mt-3 grid grid-cols-2 gap-2">
+                    {passwordRequirements.map((req, index) => (
+                      <div key={index} className="flex items-center gap-2">
+                        <div className={cn(
+                          "flex items-center justify-center w-4 h-4 rounded-full transition-all",
+                          req.test(formData.password)
+                            ? "bg-green-500"
+                            : "bg-muted border border-border"
+                        )}>
+                          {req.test(formData.password) && <Check className="h-2.5 w-2.5 text-white" />}
+                        </div>
+                        <span className={cn(
+                          "text-xs",
+                          req.test(formData.password) ? "text-green-500" : "text-muted-foreground"
+                        )}>
+                          {req.label}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ) : (
+              <motion.div
+                key="step2"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                className="space-y-5"
+              >
+                {/* Goal Selection */}
+                <div className="space-y-3">
+                  <Label className="text-sm flex items-center gap-2">
+                    <Target className="h-4 w-4 text-primary" />
+                    What's your main goal?
+                  </Label>
+                  <div className="grid grid-cols-2 gap-2">
+                    {goals.map((goal) => (
+                      <button
+                        key={goal.value}
+                        type="button"
+                        onClick={() => {
+                          setFormData({ ...formData, goal: goal.value });
+                          setError(null);
+                        }}
+                        className={cn(
+                          "flex items-center gap-2 p-3 rounded-xl border-2 transition-all text-left text-sm",
+                          formData.goal === goal.value
+                            ? "border-primary bg-primary/10"
+                            : "border-border/50 bg-muted/20 hover:border-primary/50"
+                        )}
+                      >
+                        <span>{goal.icon}</span>
+                        <span className="font-medium">{goal.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Experience Selection */}
+                <div className="space-y-3">
+                  <Label className="text-sm flex items-center gap-2">
+                    <Dumbbell className="h-4 w-4 text-primary" />
+                    Experience level
+                  </Label>
+                  <div className="space-y-2">
+                    {experienceLevels.map((level) => (
+                      <button
+                        key={level.value}
+                        type="button"
+                        onClick={() => {
+                          setFormData({ ...formData, experience: level.value });
+                          setError(null);
+                        }}
+                        className={cn(
+                          "w-full flex items-center justify-between p-3 rounded-xl border-2 transition-all text-left",
+                          formData.experience === level.value
+                            ? "border-primary bg-primary/10"
+                            : "border-border/50 bg-muted/20 hover:border-primary/50"
+                        )}
+                      >
+                        <div>
+                          <p className="font-medium">{level.label}</p>
+                          <p className="text-xs text-muted-foreground">{level.description}</p>
+                        </div>
+                        {formData.experience === level.value && (
+                          <Check className="h-4 w-4 text-primary" />
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Submit Button */}
           <Button
             type="submit"
-            className="w-full"
-            variant="forma"
+            className="w-full btn-primary"
             disabled={isLoading || (step === 1 && (!formData.firstName || !formData.lastName || !formData.email || !isPasswordValid))}
           >
             {isLoading ? (
@@ -313,9 +384,15 @@ export default function SignupPage() {
                 Creating account...
               </>
             ) : step === 1 ? (
-              'Continue'
+              <>
+                Continue
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </>
             ) : (
-              'Create account'
+              <>
+                <Sparkles className="mr-2 h-4 w-4" />
+                Create Account
+              </>
             )}
           </Button>
 
@@ -323,9 +400,10 @@ export default function SignupPage() {
             <Button
               type="button"
               variant="ghost"
-              className="w-full text-white/60 hover:text-white"
+              className="w-full"
               onClick={() => setStep(1)}
             >
+              <ChevronLeft className="mr-2 h-4 w-4" />
               Back
             </Button>
           )}
@@ -335,15 +413,15 @@ export default function SignupPage() {
           <>
             <div className="relative my-6">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-white/10" />
+                <div className="w-full border-t border-border/50" />
               </div>
-              <div className="relative flex justify-center text-xs uppercase">
-                <span className="bg-transparent px-2 text-white/40">Or continue with</span>
+              <div className="relative flex justify-center text-xs">
+                <span className="bg-card px-2 text-muted-foreground">Or continue with</span>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10" disabled>
+            <div className="grid grid-cols-2 gap-3">
+              <Button variant="outline" className="border-border/50 bg-muted/20" disabled>
                 <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
@@ -364,23 +442,31 @@ export default function SignupPage() {
                 </svg>
                 Google
               </Button>
-              <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10" disabled>
+              <Button variant="outline" className="border-border/50 bg-muted/20" disabled>
                 <svg className="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
                 Apple
               </Button>
             </div>
 
-            <p className="mt-6 text-center text-sm text-white/60">
+            <p className="mt-6 text-center text-sm text-muted-foreground">
               Already have an account?{' '}
-              <Link href="/login" className="text-forma-teal hover:underline">
+              <Link href="/login" className="text-primary hover:underline font-medium">
                 Sign in
               </Link>
             </p>
           </>
         )}
-      </CardContent>
-    </Card>
+      </div>
+
+      {/* Terms */}
+      <p className="mt-6 text-center text-xs text-muted-foreground">
+        By signing up, you agree to our{' '}
+        <Link href="/terms" className="underline hover:text-foreground">Terms of Service</Link>
+        {' '}and{' '}
+        <Link href="/privacy" className="underline hover:text-foreground">Privacy Policy</Link>
+      </p>
+    </div>
   );
 }

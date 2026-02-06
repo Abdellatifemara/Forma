@@ -24,6 +24,7 @@ import {
   ChevronRight,
   Globe,
   LogOut,
+  ClipboardList,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -207,6 +208,20 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             </div>
 
             <Link
+              href="/tests"
+              className="flex items-center gap-4 rounded-2xl px-4 py-4 hover:bg-muted transition-all mt-4 border border-primary/30 bg-primary/5"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-purple-500">
+                <ClipboardList className="h-5 w-5 text-white" />
+              </div>
+              <div>
+                <span className="font-medium">Research Tests</span>
+                <p className="text-xs text-muted-foreground">Help us build Forma</p>
+              </div>
+            </Link>
+
+            <Link
               href="/settings"
               className="flex items-center gap-4 rounded-2xl px-4 py-4 hover:bg-muted transition-all mt-4"
               onClick={() => setMobileMenuOpen(false)}
@@ -267,6 +282,17 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
           </div>
+
+          {/* Research Tests Banner */}
+          <Link href="/tests" className="mt-4 block rounded-2xl border border-primary/30 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 p-4 hover:border-primary/50 transition-all">
+            <div className="flex items-center gap-3">
+              <ClipboardList className="h-5 w-5 text-primary" />
+              <div>
+                <p className="text-sm font-medium">Research Tests</p>
+                <p className="text-xs text-muted-foreground">Help us build Forma</p>
+              </div>
+            </div>
+          </Link>
 
           {/* Achievements Preview */}
           <div className="mt-4 rounded-2xl bg-gradient-to-r from-muted to-muted/50 p-4">

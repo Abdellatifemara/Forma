@@ -172,4 +172,99 @@ export class UsersService {
       targetWeightKg: user.targetWeightKg,
     };
   }
+
+  /**
+   * Check if a user can see the trainer marketplace.
+   * Clients of Trusted Partner trainers cannot see the marketplace.
+   */
+  async canSeeMarketplace(userId: string): Promise<{ canSeeMarketplace: boolean; reason?: string }> {
+    // Check if user is a client of any trainer
+    const clientRelations = await this.prisma.trainerClient.findMany({
+      where: {
+        clientId: userId,
+        isActive: true,
+      },
+      select: {
+        canSeeMarketplace: true,
+        trainer: {
+          select: {
+            tier: true,
+            user: {
+              select: {
+                firstName: true,
+                lastName: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    // If no trainer relations, user can see marketplace
+    if (clientRelations.length === 0) {
+      return { canSeeMarketplace: true };
+    }
+
+    // Check if any relation blocks marketplace access
+    const blockedRelation = clientRelations.find(rel => !rel.canSeeMarketplace);
+
+    if (blockedRelation) {
+      const trainerName = `${blockedRelation.trainer.user.firstName} ${blockedRelation.trainer.user.lastName}`;
+      return {
+        canSeeMarketplace: false,
+        reason: `You are exclusively training with ${trainerName}`,
+      };
+    }
+
+    return { canSeeMarketplace: true };
+  }
+
+  /**
+   * Get user's trainers (both with and without marketplace visibility)
+   */
+  async getMyTrainers(userId: string) {
+    const relations = await this.prisma.trainerClient.findMany({
+      where: {
+        clientId: userId,
+        isActive: true,
+      },
+      include: {
+        trainer: {
+          include: {
+            user: {
+              select: {
+                id: true,
+                firstName: true,
+                lastName: true,
+                avatarUrl: true,
+              },
+            },
+          },
+        },
+        program: {
+          select: {
+            id: true,
+            nameEn: true,
+            nameAr: true,
+          },
+        },
+      },
+    });
+
+    return relations.map(rel => ({
+      id: rel.trainer.id,
+      name: `${rel.trainer.user.firstName} ${rel.trainer.user.lastName}`,
+      avatarUrl: rel.trainer.user.avatarUrl,
+      specializations: rel.trainer.specializations,
+      tier: rel.trainer.tier,
+      currentProgram: rel.program ? {
+        id: rel.program.id,
+        name: rel.program.nameEn,
+        nameAr: rel.program.nameAr,
+      } : null,
+      canSeeMarketplace: rel.canSeeMarketplace,
+      premiumGifted: rel.premiumGifted,
+      startDate: rel.startDate,
+    }));
+  }
 }

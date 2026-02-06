@@ -3,7 +3,17 @@
 import { ThemeProvider } from 'next-themes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useState } from 'react';
-import { LanguageProvider } from '@/lib/i18n';
+import { LanguageProvider, useLanguage } from '@/lib/i18n';
+import { SurveyProvider } from '@/components/research/survey-provider';
+
+function SurveyWrapper({ children }: { children: React.ReactNode }) {
+  const { language } = useLanguage();
+  return (
+    <SurveyProvider language={language}>
+      {children}
+    </SurveyProvider>
+  );
+}
 
 export function Providers({ children }: { children: React.ReactNode }) {
   const [queryClient] = useState(
@@ -27,7 +37,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
         disableTransitionOnChange
       >
         <LanguageProvider>
-          {children}
+          <SurveyWrapper>
+            {children}
+          </SurveyWrapper>
         </LanguageProvider>
       </ThemeProvider>
     </QueryClientProvider>

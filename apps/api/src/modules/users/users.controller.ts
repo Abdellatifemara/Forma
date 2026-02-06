@@ -59,6 +59,20 @@ export class UsersController {
     return this.usersService.getStats(user.id);
   }
 
+  @Get('me/marketplace-access')
+  @ApiOperation({ summary: 'Check if user can access trainer marketplace' })
+  @ApiResponse({ status: 200, description: 'Returns marketplace access status' })
+  async checkMarketplaceAccess(@CurrentUser() user: User) {
+    return this.usersService.canSeeMarketplace(user.id);
+  }
+
+  @Get('me/trainers')
+  @ApiOperation({ summary: 'Get user\'s trainers' })
+  @ApiResponse({ status: 200, description: 'Returns list of user\'s trainers' })
+  async getMyTrainers(@CurrentUser() user: User) {
+    return this.usersService.getMyTrainers(user.id);
+  }
+
   @Delete('me')
   @HttpCode(HttpStatus.NO_CONTENT)
   @ApiOperation({ summary: 'Delete current user account' })

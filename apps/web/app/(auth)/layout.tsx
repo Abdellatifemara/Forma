@@ -1,34 +1,20 @@
-import Link from 'next/link';
-
 export default function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-forma-navy to-forma-navy-light">
-      <div className="container flex min-h-screen items-center justify-center py-12">
-        <div className="w-full max-w-md">
-          {/* Logo */}
-          <Link href="/" className="mb-8 flex items-center justify-center space-x-2">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-forma-teal to-forma-teal-light" />
-            <span className="text-2xl font-bold text-white">Forma</span>
-          </Link>
+    <div className="min-h-screen bg-background">
+      {/* Animated background */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-[128px] animate-pulse" />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/20 rounded-full blur-[128px] animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px]" />
+      </div>
 
-          {children}
-
-          {/* Footer */}
-          <p className="mt-8 text-center text-sm text-white/50">
-            By continuing, you agree to our{' '}
-            <Link href="/terms" className="text-forma-teal hover:underline">
-              Terms of Service
-            </Link>{' '}
-            and{' '}
-            <Link href="/privacy" className="text-forma-teal hover:underline">
-              Privacy Policy
-            </Link>
-          </p>
-        </div>
+      {/* Content */}
+      <div className="relative z-10 container flex min-h-screen items-center justify-center py-12">
+        {children}
       </div>
     </div>
   );

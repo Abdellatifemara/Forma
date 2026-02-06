@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   DollarSign,
   TrendingUp,
@@ -9,308 +9,332 @@ import {
   Download,
   ArrowUpRight,
   ArrowDownRight,
+  Clock,
+  Loader2,
+  AlertCircle,
+  ChevronLeft,
+  ChevronRight,
+  Zap,
+  CreditCard,
 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from '@/components/ui/table';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
+import { trainersApi, type TrainerEarningsBreakdown, type TrainerTransaction } from '@/lib/api';
+import { cn } from '@/lib/utils';
 
-const monthlyData = [
-  { month: 'Jan', earnings: 8500 },
-  { month: 'Feb', earnings: 9200 },
-  { month: 'Mar', earnings: 12450 },
-];
-
-const transactions = [
-  {
-    id: '1',
-    client: 'Mohamed Ali',
-    type: 'Subscription',
-    amount: 299,
-    date: 'Mar 20, 2024',
-    status: 'completed',
-  },
-  {
-    id: '2',
-    client: 'Sara Ahmed',
-    type: 'One-time Session',
-    amount: 150,
-    date: 'Mar 19, 2024',
-    status: 'completed',
-  },
-  {
-    id: '3',
-    client: 'Youssef Hassan',
-    type: 'Subscription',
-    amount: 299,
-    date: 'Mar 18, 2024',
-    status: 'completed',
-  },
-  {
-    id: '4',
-    client: 'Nour Ibrahim',
-    type: 'Program Purchase',
-    amount: 499,
-    date: 'Mar 17, 2024',
-    status: 'completed',
-  },
-  {
-    id: '5',
-    client: 'Layla Mahmoud',
-    type: 'Subscription',
-    amount: 299,
-    date: 'Mar 15, 2024',
-    status: 'pending',
-  },
-];
-
-const payouts = [
-  {
-    id: '1',
-    amount: 10582,
-    period: 'Feb 1 - Feb 29, 2024',
-    date: 'Mar 5, 2024',
-    status: 'completed',
-  },
-  {
-    id: '2',
-    amount: 9180,
-    period: 'Jan 1 - Jan 31, 2024',
-    date: 'Feb 5, 2024',
-    status: 'completed',
-  },
-  {
-    id: '3',
-    amount: 8245,
-    period: 'Dec 1 - Dec 31, 2023',
-    date: 'Jan 5, 2024',
-    status: 'completed',
-  },
-];
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export default function EarningsPage() {
-  const [timeRange, setTimeRange] = useState('month');
+  const [earnings, setEarnings] = useState<TrainerEarningsBreakdown | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const totalEarnings = 12450;
-  const pendingPayout = 3250;
-  const activeSubscribers = 47;
-  const avgPerClient = 265;
+  // Month selection
+  const now = new Date();
+  const [selectedMonth, setSelectedMonth] = useState(now.getMonth());
+  const [selectedYear, setSelectedYear] = useState(now.getFullYear());
+
+  useEffect(() => {
+    async function fetchEarnings() {
+      try {
+        setIsLoading(true);
+        const data = await trainersApi.getEarnings({ month: selectedMonth, year: selectedYear });
+        setEarnings(data);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Failed to load earnings');
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchEarnings();
+  }, [selectedMonth, selectedYear]);
+
+  const goToPreviousMonth = () => {
+    if (selectedMonth === 0) {
+      setSelectedMonth(11);
+      setSelectedYear(selectedYear - 1);
+    } else {
+      setSelectedMonth(selectedMonth - 1);
+    }
+  };
+
+  const goToNextMonth = () => {
+    const canGoNext = selectedYear < now.getFullYear() ||
+      (selectedYear === now.getFullYear() && selectedMonth < now.getMonth());
+
+    if (canGoNext) {
+      if (selectedMonth === 11) {
+        setSelectedMonth(0);
+        setSelectedYear(selectedYear + 1);
+      } else {
+        setSelectedMonth(selectedMonth + 1);
+      }
+    }
+  };
+
+  const isCurrentMonth = selectedMonth === now.getMonth() && selectedYear === now.getFullYear();
+
+  const getStatusBadge = (status: string) => {
+    switch (status) {
+      case 'COMPLETED':
+      case 'PAID_OUT':
+        return { label: status === 'PAID_OUT' ? 'Paid' : 'Completed', class: 'bg-green-500/20 text-green-400 border-green-500/50' };
+      case 'PENDING':
+        return { label: 'Pending', class: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50' };
+      case 'FAILED':
+        return { label: 'Failed', class: 'bg-red-500/20 text-red-400 border-red-500/50' };
+      case 'REFUNDED':
+        return { label: 'Refunded', class: 'bg-orange-500/20 text-orange-400 border-orange-500/50' };
+      default:
+        return { label: status, class: 'bg-muted' };
+    }
+  };
+
+  const getTypeIcon = (type: string) => {
+    switch (type) {
+      case 'SUBSCRIPTION':
+        return <Users className="h-4 w-4" />;
+      case 'PROGRAM_PURCHASE':
+        return <Zap className="h-4 w-4" />;
+      case 'TIP':
+        return <DollarSign className="h-4 w-4" />;
+      case 'PAYOUT':
+        return <CreditCard className="h-4 w-4" />;
+      default:
+        return <DollarSign className="h-4 w-4" />;
+    }
+  };
+
+  const formatDate = (dateStr: string) => {
+    return new Date(dateStr).toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+  };
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center min-h-[400px]">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  if (error || !earnings) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
+        <AlertCircle className="h-12 w-12 text-destructive mb-4" />
+        <h2 className="text-xl font-semibold mb-2">Failed to load earnings</h2>
+        <p className="text-muted-foreground">{error}</p>
+      </div>
+    );
+  }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-8">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-3xl font-bold">Earnings</h1>
           <p className="text-muted-foreground">Track your revenue and payouts</p>
         </div>
-        <Button variant="outline">
+        <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
           <Download className="mr-2 h-4 w-4" />
           Export Report
         </Button>
       </div>
 
-      {/* Stats */}
-      <div className="grid gap-4 md:grid-cols-4">
-        <Card>
+      {/* Month Selector */}
+      <Card className="glass border-border/50">
+        <CardContent className="py-4">
+          <div className="flex items-center justify-between">
+            <Button variant="ghost" size="icon" onClick={goToPreviousMonth}>
+              <ChevronLeft className="h-5 w-5" />
+            </Button>
+            <div className="text-center">
+              <p className="text-lg font-semibold">{MONTHS[selectedMonth]} {selectedYear}</p>
+              {isCurrentMonth && (
+                <p className="text-sm text-muted-foreground">Current month</p>
+              )}
+            </div>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={goToNextMonth}
+              disabled={isCurrentMonth}
+            >
+              <ChevronRight className="h-5 w-5" />
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Earnings Breakdown */}
+      <div className="grid gap-4 md:grid-cols-3">
+        {/* Gross Revenue */}
+        <Card className="glass border-border/50">
           <CardContent className="pt-6">
-            <div className="flex items-center justify-between">
-              <div className="rounded-lg bg-forma-teal/10 p-2">
-                <DollarSign className="h-5 w-5 text-forma-teal" />
+            <div className="flex items-center gap-3 mb-3">
+              <div className="p-2 rounded-xl bg-cyan-500/20">
+                <DollarSign className="h-5 w-5 text-cyan-400" />
               </div>
-              <Badge variant="forma" className="flex items-center gap-1">
-                <ArrowUpRight className="h-3 w-3" />
-                +23%
+              <span className="text-sm text-muted-foreground">Gross Revenue</span>
+            </div>
+            <p className="text-3xl font-bold">
+              {earnings.grossRevenue.toLocaleString()} <span className="text-lg text-muted-foreground">EGP</span>
+            </p>
+            <div className="mt-4 space-y-2 text-sm">
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Subscriptions</span>
+                <span>{earnings.breakdown.subscriptions.toLocaleString()} EGP</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Programs</span>
+                <span>{earnings.breakdown.programs.toLocaleString()} EGP</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">Tips</span>
+                <span>{earnings.breakdown.tips.toLocaleString()} EGP</span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Platform Fee */}
+        <Card className="glass border-border/50">
+          <CardContent className="pt-6">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="p-2 rounded-xl bg-orange-500/20">
+                <TrendingUp className="h-5 w-5 text-orange-400" />
+              </div>
+              <span className="text-sm text-muted-foreground">Platform Fee ({earnings.platformFeePercentage}%)</span>
+            </div>
+            <p className="text-3xl font-bold text-orange-400">
+              -{earnings.platformFee.toLocaleString()} <span className="text-lg">EGP</span>
+            </p>
+            <div className="mt-4">
+              <p className="text-sm text-muted-foreground">
+                This fee helps us maintain the platform, provide support, and process payments securely.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Net Earnings */}
+        <Card className="glass border-primary/20 bg-primary/5">
+          <CardContent className="pt-6">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="p-2 rounded-xl bg-green-500/20">
+                <DollarSign className="h-5 w-5 text-green-400" />
+              </div>
+              <span className="text-sm text-muted-foreground">Your Earnings</span>
+            </div>
+            <p className="text-3xl font-bold text-green-400">
+              {earnings.netEarnings.toLocaleString()} <span className="text-lg">EGP</span>
+            </p>
+            <div className="mt-4 flex items-center gap-2 text-sm">
+              <Badge variant="outline" className="bg-green-500/10 text-green-400 border-green-500/30">
+                {100 - earnings.platformFeePercentage}% of revenue
               </Badge>
             </div>
-            <p className="mt-3 text-2xl font-bold">{totalEarnings.toLocaleString()} EGP</p>
-            <p className="text-sm text-muted-foreground">This Month</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center justify-between">
-              <div className="rounded-lg bg-yellow-500/10 p-2">
-                <DollarSign className="h-5 w-5 text-yellow-500" />
-              </div>
-            </div>
-            <p className="mt-3 text-2xl font-bold">{pendingPayout.toLocaleString()} EGP</p>
-            <p className="text-sm text-muted-foreground">Pending Payout</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center justify-between">
-              <div className="rounded-lg bg-blue-500/10 p-2">
-                <Users className="h-5 w-5 text-blue-500" />
-              </div>
-              <Badge variant="secondary" className="flex items-center gap-1">
-                <ArrowUpRight className="h-3 w-3" />
-                +3
-              </Badge>
-            </div>
-            <p className="mt-3 text-2xl font-bold">{activeSubscribers}</p>
-            <p className="text-sm text-muted-foreground">Active Subscribers</p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center justify-between">
-              <div className="rounded-lg bg-green-500/10 p-2">
-                <TrendingUp className="h-5 w-5 text-green-500" />
-              </div>
-            </div>
-            <p className="mt-3 text-2xl font-bold">{avgPerClient} EGP</p>
-            <p className="text-sm text-muted-foreground">Avg Per Client</p>
           </CardContent>
         </Card>
       </div>
 
-      {/* Chart */}
-      <Card>
-        <CardHeader className="flex flex-row items-center justify-between pb-2">
-          <CardTitle className="text-base font-semibold">Revenue Overview</CardTitle>
-          <Select value={timeRange} onValueChange={setTimeRange}>
-            <SelectTrigger className="w-[120px]">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="week">This Week</SelectItem>
-              <SelectItem value="month">This Month</SelectItem>
-              <SelectItem value="year">This Year</SelectItem>
-            </SelectContent>
-          </Select>
-        </CardHeader>
-        <CardContent>
-          {/* Simple bar chart */}
-          <div className="h-64">
-            <div className="flex h-full items-end justify-around gap-4">
-              {monthlyData.map((data) => (
-                <div key={data.month} className="flex flex-1 flex-col items-center gap-2">
-                  <div
-                    className="w-full rounded-t-lg bg-forma-teal transition-all hover:bg-forma-teal-light"
-                    style={{ height: `${(data.earnings / 15000) * 100}%` }}
-                  />
-                  <span className="text-sm text-muted-foreground">{data.month}</span>
-                  <span className="text-sm font-medium">{data.earnings.toLocaleString()}</span>
-                </div>
-              ))}
+      {/* Payout Info */}
+      <Card className="glass border-border/50">
+        <CardContent className="py-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-xl bg-purple-500/20">
+                <Clock className="h-6 w-6 text-purple-400" />
+              </div>
+              <div>
+                <p className="font-semibold">Pending Payout</p>
+                <p className="text-sm text-muted-foreground">
+                  Next payout on {new Date(earnings.nextPayoutDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                </p>
+              </div>
+            </div>
+            <div className="text-right">
+              <p className="text-3xl font-bold text-gradient">{earnings.pendingPayout.toLocaleString()} EGP</p>
+              <p className="text-sm text-muted-foreground">Total pending amount</p>
             </div>
           </div>
         </CardContent>
       </Card>
 
-      <Tabs defaultValue="transactions">
-        <TabsList>
-          <TabsTrigger value="transactions">Transactions</TabsTrigger>
-          <TabsTrigger value="payouts">Payouts</TabsTrigger>
-        </TabsList>
-
-        <TabsContent value="transactions">
-          <Card>
-            <CardHeader>
-              <CardTitle>Recent Transactions</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead>Client</TableHead>
-                    <TableHead>Type</TableHead>
-                    <TableHead>Amount</TableHead>
-                    <TableHead>Date</TableHead>
-                    <TableHead>Status</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {transactions.map((tx) => (
-                    <TableRow key={tx.id}>
-                      <TableCell className="font-medium">{tx.client}</TableCell>
-                      <TableCell>{tx.type}</TableCell>
-                      <TableCell>{tx.amount} EGP</TableCell>
-                      <TableCell className="text-muted-foreground">{tx.date}</TableCell>
-                      <TableCell>
-                        <Badge
-                          variant={tx.status === 'completed' ? 'forma' : 'warning'}
-                        >
-                          {tx.status}
-                        </Badge>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        <TabsContent value="payouts">
-          <Card>
-            <CardHeader>
-              <CardTitle>Payout History</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead>Period</TableHead>
-                    <TableHead>Amount</TableHead>
-                    <TableHead>Payout Date</TableHead>
-                    <TableHead>Status</TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {payouts.map((payout) => (
-                    <TableRow key={payout.id}>
-                      <TableCell className="font-medium">{payout.period}</TableCell>
-                      <TableCell>{payout.amount.toLocaleString()} EGP</TableCell>
-                      <TableCell className="text-muted-foreground">{payout.date}</TableCell>
-                      <TableCell>
-                        <Badge variant="forma">{payout.status}</Badge>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </CardContent>
-          </Card>
-
-          <Card className="mt-4">
-            <CardContent className="p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="font-semibold">Next Payout</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Mar 1 - Mar 31, 2024
-                  </p>
-                </div>
-                <div className="text-right">
-                  <p className="text-2xl font-bold">{pendingPayout.toLocaleString()} EGP</p>
-                  <p className="text-sm text-muted-foreground">Estimated: Apr 5, 2024</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-      </Tabs>
+      {/* Transactions */}
+      <Card className="glass border-border/50">
+        <CardHeader>
+          <CardTitle>Recent Transactions</CardTitle>
+          <CardDescription>Your transaction history for {MONTHS[selectedMonth]}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          {earnings.transactions.length === 0 ? (
+            <div className="text-center py-8 text-muted-foreground">
+              <DollarSign className="h-12 w-12 mx-auto mb-3 opacity-50" />
+              <p>No transactions this month</p>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {earnings.transactions.map((tx) => {
+                const statusBadge = getStatusBadge(tx.status);
+                return (
+                  <div
+                    key={tx.id}
+                    className="flex items-center justify-between p-4 rounded-xl bg-card/50 border border-border/50"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className={cn(
+                        "p-2 rounded-xl",
+                        tx.type === 'PAYOUT' ? 'bg-purple-500/20' : 'bg-primary/20'
+                      )}>
+                        {getTypeIcon(tx.type)}
+                      </div>
+                      <div>
+                        <p className="font-medium">
+                          {tx.type === 'SUBSCRIPTION' ? 'Subscription Payment' :
+                           tx.type === 'PROGRAM_PURCHASE' ? 'Program Purchase' :
+                           tx.type === 'TIP' ? 'Tip Received' :
+                           tx.type === 'PAYOUT' ? 'Payout to Bank' :
+                           tx.type}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          {tx.description || formatDate(tx.createdAt)}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <Badge variant="outline" className={statusBadge.class}>
+                        {statusBadge.label}
+                      </Badge>
+                      <div className="text-right min-w-[100px]">
+                        <p className={cn(
+                          "font-bold",
+                          tx.type === 'PAYOUT' || tx.status === 'REFUNDED' ? 'text-orange-400' : 'text-green-400'
+                        )}>
+                          {tx.type === 'PAYOUT' || tx.status === 'REFUNDED' ? '-' : '+'}
+                          {tx.amountEGP.toLocaleString()} EGP
+                        </p>
+                        {tx.trainerEarningEGP !== tx.amountEGP && tx.type !== 'PAYOUT' && (
+                          <p className="text-xs text-muted-foreground">
+                            You earn: {tx.trainerEarningEGP.toLocaleString()} EGP
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </CardContent>
+      </Card>
     </div>
   );
 }

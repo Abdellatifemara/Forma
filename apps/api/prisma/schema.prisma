@@ -40,6 +40,11 @@ model User {
   updatedAt             DateTime                  @updatedAt
   lastActiveAt          DateTime                  @default(now())
   onboardingCompletedAt DateTime?
+
+  // Trainer/Client relationship tracking
+  invitedByCode         String?                   // Invite code used to join
+  invitedByTrainerId    String?                   // Trainer who invited
+  canSeeMarketplace     Boolean                   @default(true)  // false = locked to specific trainer
   contentViolations     ContentViolation[]
   conversations         ConversationParticipant[]
   mealLogs              MealLog[]
@@ -57,6 +62,9 @@ model User {
   workoutLogs           WorkoutLog[]
   workoutPlans          WorkoutPlan[]
   receivedMessages      Message[]                 @relation("ReceivedMessages")
+  aiUsageEvents         AIUsageEvent[]
+  surveyResponses       SurveyResponse[]
+  featureUsageLimits    FeatureUsageLimit[]
 
   @@index([email])
   @@index([phone])
@@ -131,6 +139,7 @@ model Exercise {
   updatedAt        DateTime               @updatedAt
   exerciseLogs     ExerciseLog[]
   workoutExercises WorkoutExercise[]
+  programExercises ProgramExercise[]
 
   @@index([primaryMuscle])
   @@index([category])
@@ -419,14 +428,34 @@ model TrainerProfile {
   acceptingClients   Boolean                @default(true)
   createdAt          DateTime               @default(now())
   updatedAt          DateTime               @updatedAt
+
+  // New: Trainer Tier & Commission
+  tier               TrainerTier            @default(REGULAR)
+  commissionRate     Float                  @default(0.20)  // 0.20 = 20% for regular, 0.05-0.07 for trusted
+  canGiftPremium     Boolean                @default(false) // Only trusted partners
+
+  // Earnings
+  totalEarnings      Float                  @default(0)
+  pendingPayout      Float                  @default(0)
+  lastPayoutAt       DateTime?
+
+  // Invite System
+  inviteCode         String?                @unique
+  inviteUses         Int                    @default(0)
+
   certifications     TrainerCertification[]
   clients            TrainerClient[]
   user               User                   @relation(fields: [userId], references: [id], onDelete: Cascade)
   reviews            TrainerReview[]
   workoutPlans       WorkoutPlan[]
+  transactions       TrainerTransaction[]
+  invites            TrainerInvite[]
+  programs           TrainerProgram[]
 
   @@index([status])
   @@index([averageRating])
+  @@index([tier])
+  @@index([inviteCode])
 }
 
 model TrainerCertification {
@@ -452,12 +481,161 @@ model TrainerClient {
   startDate DateTime       @default(now())
   endDate   DateTime?
   notes     String?
+
+  // New: Invite tracking & visibility
+  invitedVia         String?        // Invite code used
+  canSeeMarketplace  Boolean        @default(true)  // false for trusted partner clients
+  premiumGifted      Boolean        @default(false) // Was premium gifted by trainer?
+  complianceRate     Float          @default(0)     // Track if client follows program
+
+  // Current program assignment
+  currentProgramId   String?
+  programStartDate   DateTime?
+  programEndDate     DateTime?
+
   client    User           @relation("ClientTrainers", fields: [clientId], references: [id], onDelete: Cascade)
   trainer   TrainerProfile @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+  program   TrainerProgram? @relation(fields: [currentProgramId], references: [id])
 
   @@unique([trainerId, clientId])
   @@index([trainerId])
   @@index([clientId])
+  @@index([isActive])
+}
+
+// Trainer Invite System
+model TrainerInvite {
+  id            String         @id @default(cuid())
+  trainerId     String
+  code          String         @unique
+  uses          Int            @default(0)
+  maxUses       Int?           // null = unlimited
+  grantsPremium Boolean        @default(false)
+  expiresAt     DateTime?
+  isActive      Boolean        @default(true)
+  createdAt     DateTime       @default(now())
+  trainer       TrainerProfile @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+
+  @@index([trainerId])
+  @@index([code])
+}
+
+// Trainer Programs (converted from PDFs or built manually)
+model TrainerProgram {
+  id             String          @id @default(cuid())
+  trainerId      String
+  nameEn         String
+  nameAr         String?
+  descriptionEn  String?
+  descriptionAr  String?
+  durationWeeks  Int             @default(4)
+  priceEGP       Int?            // null = included in trainer subscription
+  status         ProgramStatus   @default(DRAFT)
+  isTemplate     Boolean         @default(false)  // Can be reused
+  sourceType     String?         // "pdf", "manual", "ai_generated"
+  sourcePdfUrl   String?         // Original PDF if uploaded
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  trainer        TrainerProfile  @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+  workoutDays    ProgramWorkoutDay[]
+  nutritionDays  ProgramNutritionDay[]
+  clients        TrainerClient[]
+
+  @@index([trainerId])
+  @@index([status])
+}
+
+// Program Workout Days
+model ProgramWorkoutDay {
+  id           String         @id @default(cuid())
+  programId    String
+  dayNumber    Int            // Day 1, 2, 3...
+  nameEn       String?
+  nameAr       String?
+  notesEn      String?
+  notesAr      String?
+  program      TrainerProgram @relation(fields: [programId], references: [id], onDelete: Cascade)
+  exercises    ProgramExercise[]
+
+  @@index([programId])
+  @@unique([programId, dayNumber])
+}
+
+// Program Exercises
+model ProgramExercise {
+  id              String            @id @default(cuid())
+  workoutDayId    String
+  exerciseId      String?           // Link to Exercise or custom name
+  customNameEn    String?           // For exercises not in DB
+  customNameAr    String?
+  order           Int
+  sets            Int               @default(3)
+  reps            String?           // "10-12" or "8"
+  restSeconds     Int               @default(60)
+  notesEn         String?
+  notesAr         String?
+  workoutDay      ProgramWorkoutDay @relation(fields: [workoutDayId], references: [id], onDelete: Cascade)
+  exercise        Exercise?         @relation(fields: [exerciseId], references: [id])
+
+  @@index([workoutDayId])
+}
+
+// Program Nutrition Days
+model ProgramNutritionDay {
+  id           String         @id @default(cuid())
+  programId    String
+  dayNumber    Int
+  notesEn      String?
+  notesAr      String?
+  targetCalories Int?
+  targetProteinG Int?
+  targetCarbsG   Int?
+  targetFatG     Int?
+  program      TrainerProgram @relation(fields: [programId], references: [id], onDelete: Cascade)
+  meals        ProgramMeal[]
+
+  @@index([programId])
+  @@unique([programId, dayNumber])
+}
+
+// Program Meals
+model ProgramMeal {
+  id              String              @id @default(cuid())
+  nutritionDayId  String
+  mealType        MealType
+  nameEn          String?
+  nameAr          String?
+  descriptionEn   String?             // Full description of meal
+  descriptionAr   String?
+  calories        Int?
+  proteinG        Int?
+  carbsG          Int?
+  fatG            Int?
+  nutritionDay    ProgramNutritionDay @relation(fields: [nutritionDayId], references: [id], onDelete: Cascade)
+
+  @@index([nutritionDayId])
+}
+
+// Trainer Earnings & Transactions
+model TrainerTransaction {
+  id              String            @id @default(cuid())
+  trainerId       String
+  clientId        String?
+  type            TransactionType
+  amountEGP       Float
+  platformFeeEGP  Float             // Commission taken
+  trainerEarningEGP Float           // What trainer gets
+  status          TransactionStatus @default(PENDING)
+  description     String?
+  paymentRef      String?           // Paymob/Fawry reference
+  createdAt       DateTime          @default(now())
+  completedAt     DateTime?
+  paidOutAt       DateTime?
+  trainer         TrainerProfile    @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+
+  @@index([trainerId])
+  @@index([status])
+  @@index([createdAt])
 }
 
 model TrainerReview {
@@ -823,10 +1001,117 @@ enum TrainerStatus {
   SUSPENDED
 }
 
+enum TrainerTier {
+  REGULAR         // 20% commission to platform
+  TRUSTED_PARTNER // 5-7% commission to platform (high-profile trainers)
+}
+
+enum TransactionType {
+  SUBSCRIPTION
+  PROGRAM_PURCHASE
+  TIP
+  PAYOUT
+}
+
+enum TransactionStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+  PAID_OUT
+}
+
+enum ProgramStatus {
+  DRAFT
+  ACTIVE
+  COMPLETED
+  CANCELLED
+}
+
 enum MessageType {
   TEXT
   IMAGE
   VOICE
   WORKOUT_SHARE
   PROGRESS_SHARE
+}
+
+// ==========================================
+// RESEARCH & ANALYTICS MODELS
+// ==========================================
+
+model AIUsageEvent {
+  id              String   @id @default(cuid())
+  userId          String
+  tier            SubscriptionTier
+  featureId       String
+  queryType       AIQueryType
+  queryText       String?  @db.Text
+  responseTimeMs  Int?
+  successful      Boolean  @default(true)
+  satisfaction    Int?     // 1-5 rating
+  metadata        Json?
+  createdAt       DateTime @default(now())
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([tier])
+  @@index([queryType])
+  @@index([createdAt])
+}
+
+model Survey {
+  id           String           @id @default(cuid())
+  code         String           @unique // e.g., "ai_value_perception", "limit_hit"
+  title        String
+  titleAr      String?
+  description  String?
+  descriptionAr String?
+  questions    Json             // Array of question objects
+  isActive     Boolean          @default(true)
+  triggerEvent String?          // Event that triggers this survey
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+  responses    SurveyResponse[]
+}
+
+model SurveyResponse {
+  id          String   @id @default(cuid())
+  surveyId    String
+  userId      String
+  responses   Json     // Map of questionId -> answer
+  completedAt DateTime @default(now())
+  metadata    Json?    // Additional context (tier, usage, etc.)
+
+  survey      Survey   @relation(fields: [surveyId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([surveyId, userId]) // One response per user per survey
+  @@index([surveyId])
+  @@index([userId])
+}
+
+model FeatureUsageLimit {
+  id          String   @id @default(cuid())
+  userId      String
+  featureId   String
+  usedCount   Int      @default(0)
+  limitHitAt  DateTime? // When they first hit the limit
+  periodStart DateTime  @default(now())
+  periodEnd   DateTime
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, featureId, periodStart])
+  @@index([userId])
+  @@index([featureId])
+}
+
+enum AIQueryType {
+  WORKOUT
+  NUTRITION
+  FORM
+  PROGRESS
+  GENERAL
 }

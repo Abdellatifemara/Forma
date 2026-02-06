@@ -165,6 +165,11 @@ export const usersApi = {
     api.patch<User>('/users/me/onboarding', data),
 
   getStats: () => api.get<UserStats>('/users/me/stats'),
+
+  checkMarketplaceAccess: () =>
+    api.get<MarketplaceAccess>('/users/me/marketplace-access'),
+
+  getMyTrainers: () => api.get<MyTrainer[]>('/users/me/trainers'),
 };
 
 // Workouts API
@@ -249,6 +254,7 @@ export const statsApi = {
 
 // Trainers API
 export const trainersApi = {
+  // Public endpoints
   getMarketplace: (params?: TrainerSearchParams) =>
     api.get<PaginatedResponse<Trainer>>('/trainers', params as Record<string, string>),
 
@@ -257,17 +263,40 @@ export const trainersApi = {
   apply: (data: TrainerApplicationData) =>
     api.post<TrainerProfile>('/trainers/apply', data),
 
-  // For trainers
-  getClients: () => api.get<Client[]>('/trainers/me/clients'),
+  // Trainer dashboard endpoints
+  getMyProfile: () => api.get<TrainerProfile>('/trainers/me/profile'),
 
-  getEarnings: (params?: { month?: string }) =>
-    api.get<EarningsData>('/trainers/me/earnings', params as Record<string, string>),
-    
-  getDashboardStats: () => api.get<TrainerDashboardStats>('/trainers/me/dashboard-stats'),
-  
-  getUpcomingSessions: () => api.get<TrainerSession[]>('/trainers/me/sessions/upcoming'),
-  
-  getRecentMessages: () => api.get<TrainerMessage[]>('/trainers/me/messages/recent'),
+  getDashboardStats: () => api.get<TrainerStats>('/trainers/me/stats'),
+
+  getEarnings: (params?: { month?: number; year?: number }) =>
+    api.get<TrainerEarningsBreakdown>('/trainers/me/earnings', params as Record<string, string>),
+
+  getClients: () => api.get<TrainerClientResponse[]>('/trainers/me/clients'),
+
+  getClientCompliance: () => api.get<ClientComplianceOverview>('/trainers/me/compliance'),
+
+  getClientDetails: (clientId: string) =>
+    api.get<ClientDetails>(`/trainers/me/clients/${clientId}`),
+
+  // Invite system
+  generateInviteCode: () => api.post<{ inviteCode: string }>('/trainers/me/invite-code'),
+
+  createInviteLink: (grantsPremium?: boolean) =>
+    api.post<InviteLinkResponse>('/trainers/me/invite-link', { grantsPremium }),
+
+  getMyInvites: () => api.get<TrainerInvite[]>('/trainers/me/invites'),
+
+  deactivateInvite: (inviteId: string) =>
+    api.post<{ success: boolean }>(`/trainers/me/invites/${inviteId}/deactivate`),
+};
+
+// Invite verification API (public endpoints)
+export const inviteApi = {
+  verify: (code: string) =>
+    api.get<InviteVerification>(`/trainers/invite/${code}`),
+
+  redeem: (code: string) =>
+    api.post<InviteRedemption>(`/trainers/invite/${code}/redeem`),
 };
 
 // Achievements API
@@ -391,6 +420,177 @@ export const chatApi = {
   getUnreadCount: () => api.get<{ unreadCount: number }>('/chat/unread-count'),
 };
 
+// Programs API (Trainer programs)
+export const programsApi = {
+  // Get all programs for current trainer
+  getAll: () => api.get<TrainerProgramSummary[]>('/programs'),
+
+  // Get single program with full details
+  getById: (id: string) => api.get<TrainerProgramFull>(`/programs/${id}`),
+
+  // Create a new program
+  create: (data: CreateProgramData) => api.post<TrainerProgramFull>('/programs', data),
+
+  // Create program from parsed PDF
+  createFromPdf: (pdfUrl: string, parsedData: ParsedProgramData) =>
+    api.post<TrainerProgramFull>('/programs/from-pdf', { pdfUrl, parsedData }),
+
+  // Update a program
+  update: (id: string, data: UpdateProgramData) =>
+    api.patch<TrainerProgramFull>(`/programs/${id}`, data),
+
+  // Publish a draft program
+  publish: (id: string) => api.post<TrainerProgramFull>(`/programs/${id}/publish`),
+
+  // Archive a program
+  archive: (id: string) => api.post<TrainerProgramFull>(`/programs/${id}/archive`),
+
+  // Duplicate a program
+  duplicate: (id: string) => api.post<TrainerProgramFull>(`/programs/${id}/duplicate`),
+
+  // Delete a program
+  delete: (id: string) => api.delete<{ success: boolean }>(`/programs/${id}`),
+
+  // Workout day management
+  addWorkoutDay: (programId: string, data: { nameEn?: string; nameAr?: string }) =>
+    api.post<ProgramWorkoutDay>(`/programs/${programId}/days`, data),
+
+  updateWorkoutDay: (programId: string, dayId: string, data: WorkoutDayUpdate) =>
+    api.patch<ProgramWorkoutDay>(`/programs/${programId}/days/${dayId}`, data),
+
+  deleteWorkoutDay: (programId: string, dayId: string) =>
+    api.delete<{ success: boolean }>(`/programs/${programId}/days/${dayId}`),
+
+  // Exercise management
+  addExercise: (programId: string, dayId: string, data: AddExerciseData) =>
+    api.post<ProgramExercise>(`/programs/${programId}/days/${dayId}/exercises`, data),
+
+  updateExercise: (programId: string, exerciseId: string, data: UpdateExerciseData) =>
+    api.patch<ProgramExercise>(`/programs/${programId}/exercises/${exerciseId}`, data),
+
+  deleteExercise: (programId: string, exerciseId: string) =>
+    api.delete<{ success: boolean }>(`/programs/${programId}/exercises/${exerciseId}`),
+};
+
+// Upload API - Extended for PDF
+export const uploadApiExtended = {
+  ...uploadApi,
+
+  uploadPdf: async (file: File): Promise<PdfUploadResponse> => {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const token = getAuthCookie();
+    const response = await fetch(`${API_BASE_URL}/upload/pdf`, {
+      method: 'POST',
+      headers: token ? { 'Authorization': `Bearer ${token}` } : {},
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: 'Upload failed' }));
+      throw new Error(error.message || 'Upload failed');
+    }
+
+    return response.json();
+  },
+};
+
+// Subscriptions API
+export const subscriptionsApi = {
+  getMySubscription: () =>
+    api.get<Subscription>('/subscriptions/me'),
+
+  getPlans: () =>
+    api.get<SubscriptionPlan[]>('/subscriptions/plans'),
+
+  createSubscription: (data: CreateSubscriptionData) =>
+    api.post<SubscriptionResponse>('/subscriptions', data),
+
+  cancelSubscription: (data?: { reason?: string; immediate?: boolean }) =>
+    api.delete<Subscription>('/subscriptions/me'),
+
+  reactivateSubscription: () =>
+    api.post<Subscription>('/subscriptions/me/reactivate'),
+
+  giftSubscription: (data: GiftSubscriptionData) =>
+    api.post<GiftSubscriptionResponse>('/subscriptions/gift', data),
+
+  checkFeatureAccess: (featureId: string) =>
+    api.get<{ featureId: string; hasAccess: boolean }>(`/subscriptions/features/${featureId}/access`),
+
+  getFeatureUsage: (featureId: string) =>
+    api.get<FeatureUsage>(`/subscriptions/features/${featureId}/usage`),
+
+  getPaymentHistory: (params?: { page?: number; limit?: number }) =>
+    api.get<PaginatedResponse<Payment>>('/subscriptions/payments', params as Record<string, string>),
+};
+
+// Payments API (Paymob)
+export const paymentsApi = {
+  getPaymentMethods: () =>
+    api.get<PaymentMethodOption[]>('/payments/methods'),
+
+  createPaymentIntent: (data: CreatePaymentIntentData) =>
+    api.post<PaymentIntentResponse>('/payments/create-intent', data),
+
+  getPaymentStatus: (paymentId: string) =>
+    api.get<PaymentStatus>(`/payments/${paymentId}/status`),
+};
+
+// Research API (Surveys, Tests & AI Usage Tracking)
+export const researchApi = {
+  // Get all available tests
+  getTests: () =>
+    api.get<TestsResponse>('/research/tests'),
+
+  // Get specific test by code
+  getTest: (code: string) =>
+    api.get<TestDetail>(`/research/tests/${code}`),
+
+  // Submit test/survey response
+  submitTest: (surveyId: string, responses: Record<string, unknown>) =>
+    api.post<{ success: boolean }>(`/research/surveys/${surveyId}/respond`, { responses }),
+
+  // Get available survey for user
+  getAvailableSurvey: (trigger?: string) =>
+    api.get<Survey | null>('/research/surveys/available', trigger ? { trigger } : undefined),
+
+  // Submit survey response
+  submitSurvey: (surveyId: string, responses: Record<string, unknown>) =>
+    api.post<{ success: boolean }>(`/research/surveys/${surveyId}/respond`, { responses }),
+
+  // Track AI usage event
+  trackAIUsage: (data: AIUsageTrackData) =>
+    api.post<{ success: boolean }>('/research/ai-usage', data),
+
+  // Get user's AI usage
+  getMyAIUsage: () =>
+    api.get<AIUsageStats>('/research/ai-usage/me'),
+
+  // Check if user can use AI feature
+  canUseAIFeature: (featureId: string) =>
+    api.get<{ canUse: boolean }>(`/research/ai-usage/can-use/${featureId}`),
+};
+
+// Admin Research API
+export const adminResearchApi = {
+  getSurveyResults: (code: string) =>
+    api.get<SurveyResults>(`/admin/research/surveys/${code}/results`),
+
+  getAIMetrics: (days?: number) =>
+    api.get<AIMetrics>('/admin/research/ai-metrics', days ? { days: days.toString() } : undefined),
+
+  getLimitAnalysis: () =>
+    api.get<LimitAnalysis>('/admin/research/limit-analysis'),
+
+  getQueryPatterns: () =>
+    api.get<QueryPatterns>('/admin/research/query-patterns'),
+
+  seedSurveys: () =>
+    api.post<{ seededCount: number }>('/admin/research/surveys/seed'),
+};
+
 // Types
 interface User {
   id: string;
@@ -406,8 +606,15 @@ interface User {
 }
 
 interface OnboardingData {
-  goal: string;
-  experience: string;
+  fitnessGoal?: string;
+  fitnessLevel?: string;
+  activityLevel?: string;
+  heightCm?: number;
+  currentWeightKg?: number;
+  targetWeightKg?: number;
+  equipment?: string[];
+  goal?: string;
+  experience?: string;
   weight?: number;
   height?: number;
   targetWeight?: number;
@@ -428,6 +635,27 @@ interface UserStats {
   currentStreak: number;
   totalVolume: number;
   weeklyGoalProgress: number;
+}
+
+interface MarketplaceAccess {
+  canSeeMarketplace: boolean;
+  reason?: string;
+}
+
+interface MyTrainer {
+  id: string;
+  name: string;
+  avatarUrl: string | null;
+  specializations: string[];
+  tier: 'REGULAR' | 'TRUSTED_PARTNER';
+  currentProgram: {
+    id: string;
+    name: string;
+    nameAr: string | null;
+  } | null;
+  canSeeMarketplace: boolean;
+  premiumGifted: boolean;
+  startDate: string;
 }
 
 interface WorkoutPlan {
@@ -740,6 +968,189 @@ interface TrainerDashboardStats {
   averageRating: { value: number; reviewCount: number };
 }
 
+interface TrainerStats {
+  activeClients: number;
+  newClientsThisMonth: number;
+  clientsChange: number;
+  monthlyRevenue: number;
+  revenueChange: number;
+  pendingPayout: number;
+  totalEarnings: number;
+  averageRating: number;
+  totalReviews: number;
+  tier: 'REGULAR' | 'TRUSTED_PARTNER';
+  commissionRate: number;
+  avgCompliance: number;
+  complianceBreakdown: {
+    highPerformers: number;
+    needAttention: number;
+    atRisk: number;
+  };
+  inviteCode: string | null;
+}
+
+interface TrainerEarningsBreakdown {
+  month: number;
+  year: number;
+  grossRevenue: number;
+  breakdown: {
+    subscriptions: number;
+    programs: number;
+    tips: number;
+  };
+  platformFee: number;
+  platformFeePercentage: number;
+  netEarnings: number;
+  payouts: number;
+  pendingPayout: number;
+  nextPayoutDate: string;
+  transactions: TrainerTransaction[];
+}
+
+interface TrainerTransaction {
+  id: string;
+  type: 'SUBSCRIPTION' | 'PROGRAM_PURCHASE' | 'TIP' | 'PAYOUT';
+  status: 'PENDING' | 'COMPLETED' | 'FAILED' | 'REFUNDED' | 'PAID_OUT';
+  amountEGP: number;
+  platformFeeEGP: number;
+  trainerEarningEGP: number;
+  description: string | null;
+  createdAt: string;
+}
+
+interface TrainerClientResponse {
+  id: string;
+  clientId: string;
+  client: {
+    id: string;
+    firstName: string;
+    lastName: string;
+    avatarUrl: string | null;
+    fitnessGoal: string | null;
+    currentWeightKg: number | null;
+    targetWeightKg: number | null;
+    lastActiveAt: string | null;
+  };
+  currentProgram: {
+    id: string;
+    name: string;
+  } | null;
+  complianceRate: number;
+  canSeeMarketplace: boolean;
+  premiumGifted: boolean;
+}
+
+interface ClientComplianceOverview {
+  averageCompliance: number;
+  totalClients: number;
+  breakdown: {
+    highPerformers: TrainerClientResponse[];
+    needAttention: TrainerClientResponse[];
+    atRisk: TrainerClientResponse[];
+  };
+  clients: {
+    id: string;
+    clientId: string;
+    name: string;
+    avatarUrl: string | null;
+    complianceRate: number;
+    lastActiveAt: string | null;
+    program: string;
+    canSeeMarketplace: boolean;
+    premiumGifted: boolean;
+  }[];
+}
+
+interface ClientDetails {
+  id: string;
+  clientId: string;
+  client: {
+    id: string;
+    firstName: string;
+    lastName: string;
+    name: string;
+    email: string;
+    avatarUrl: string | null;
+    fitnessGoal: string | null;
+    currentWeightKg: number | null;
+    targetWeightKg: number | null;
+    heightCm: number | null;
+    lastActiveAt: string | null;
+    createdAt: string;
+  };
+  program: {
+    id: string;
+    nameEn: string;
+    descriptionEn: string | null;
+    durationWeeks: number;
+  } | null;
+  startDate: string;
+  isActive: boolean;
+  canSeeMarketplace: boolean;
+  premiumGifted: boolean;
+  compliance: {
+    overall: number;
+    workout: number;
+    nutrition: number;
+    weeklyTrend: {
+      week: string;
+      compliance: number;
+    }[];
+  };
+  stats: {
+    workoutsCompleted: number;
+    totalVolume: number;
+    avgCalories: number;
+    weightProgress: number;
+    currentWeight: number | null;
+    startWeight: number | null;
+  };
+  recentActivity: {
+    lastWorkout: string | null;
+    lastNutritionLog: string | null;
+  };
+}
+
+interface InviteLinkResponse {
+  code: string;
+  grantsPremium: boolean;
+  expiresAt: string;
+  link: string;
+}
+
+interface TrainerInvite {
+  id: string;
+  code: string;
+  link: string;
+  uses: number;
+  maxUses: number | null;
+  grantsPremium: boolean;
+  expiresAt: string | null;
+  isActive: boolean;
+  createdAt: string;
+  isExpired: boolean;
+}
+
+interface InviteVerification {
+  valid: boolean;
+  trainer: {
+    id: string;
+    name: string;
+    avatarUrl: string | null;
+    specializations: string[];
+    tier: 'REGULAR' | 'TRUSTED_PARTNER';
+  };
+  grantsPremium: boolean;
+  expiresAt: string | null;
+}
+
+interface InviteRedemption {
+  success: boolean;
+  trainerId: string;
+  premiumGranted: boolean;
+  canSeeMarketplace: boolean;
+}
+
 interface TrainerSession {
   id: string;
   clientName: string;
@@ -1041,10 +1452,398 @@ interface ChallengeLeaderboardEntry {
   completed: boolean;
 }
 
+// Program types
+type ProgramStatus = 'DRAFT' | 'ACTIVE' | 'ARCHIVED';
+type ProgramSourceType = 'manual' | 'pdf' | 'ai_generated';
+
+interface ProgramExercise {
+  id: string;
+  exerciseId: string | null;
+  customNameEn: string | null;
+  customNameAr: string | null;
+  order: number;
+  sets: number;
+  reps: string | null;
+  restSeconds: number;
+  notesEn: string | null;
+  notesAr: string | null;
+  exercise?: Exercise;
+}
+
+interface ProgramWorkoutDay {
+  id: string;
+  dayNumber: number;
+  nameEn: string | null;
+  nameAr: string | null;
+  notesEn: string | null;
+  notesAr: string | null;
+  exercises: ProgramExercise[];
+}
+
+interface TrainerProgramSummary {
+  id: string;
+  nameEn: string;
+  nameAr: string | null;
+  descriptionEn: string | null;
+  descriptionAr: string | null;
+  durationWeeks: number;
+  priceEGP: number | null;
+  status: ProgramStatus;
+  sourceType: ProgramSourceType | null;
+  clientCount: number;
+  workoutDayCount: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+interface TrainerProgramFull extends Omit<TrainerProgramSummary, 'clientCount' | 'workoutDayCount'> {
+  sourcePdfUrl: string | null;
+  workoutDays: ProgramWorkoutDay[];
+  _count: {
+    clients: number;
+  };
+}
+
+interface CreateProgramData {
+  nameEn: string;
+  nameAr?: string;
+  descriptionEn?: string;
+  descriptionAr?: string;
+  durationWeeks: number;
+  priceEGP?: number;
+  sourceType?: ProgramSourceType;
+  sourcePdfUrl?: string;
+  workoutDays?: CreateWorkoutDayData[];
+}
+
+interface CreateWorkoutDayData {
+  dayNumber: number;
+  nameEn?: string;
+  nameAr?: string;
+  notesEn?: string;
+  notesAr?: string;
+  exercises: CreateExerciseData[];
+}
+
+interface CreateExerciseData {
+  exerciseId?: string;
+  customNameEn?: string;
+  customNameAr?: string;
+  order: number;
+  sets: number;
+  reps?: string;
+  restSeconds?: number;
+  notesEn?: string;
+  notesAr?: string;
+}
+
+interface UpdateProgramData {
+  nameEn?: string;
+  nameAr?: string;
+  descriptionEn?: string;
+  descriptionAr?: string;
+  durationWeeks?: number;
+  priceEGP?: number;
+  status?: ProgramStatus;
+}
+
+interface WorkoutDayUpdate {
+  nameEn?: string;
+  nameAr?: string;
+  notesEn?: string;
+  notesAr?: string;
+}
+
+interface AddExerciseData {
+  exerciseId?: string;
+  customNameEn?: string;
+  customNameAr?: string;
+  sets: number;
+  reps: string;
+  restSeconds?: number;
+  notesEn?: string;
+}
+
+interface UpdateExerciseData {
+  sets?: number;
+  reps?: string;
+  restSeconds?: number;
+  notesEn?: string;
+  notesAr?: string;
+  order?: number;
+}
+
+interface ParsedExercise {
+  name: string;
+  sets: number;
+  reps: string;
+  restSeconds?: number;
+  notes?: string;
+}
+
+interface ParsedWorkoutDay {
+  name: string;
+  focus?: string;
+  exercises: ParsedExercise[];
+}
+
+interface ParsedProgramData {
+  suggestedName: string;
+  suggestedDescription: string;
+  durationWeeks: number;
+  frequency: number;
+  workoutDays: ParsedWorkoutDay[];
+  rawText?: string;
+}
+
+interface PdfUploadResponse extends UploadResponse {
+  pages?: number;
+}
+
+// Subscription types
+type SubscriptionTierType = 'FREE' | 'PREMIUM' | 'PREMIUM_PLUS';
+type SubscriptionStatusType = 'ACTIVE' | 'CANCELLED' | 'EXPIRED' | 'TRIAL';
+
+interface Subscription {
+  id: string;
+  userId: string;
+  tier: SubscriptionTierType;
+  status: SubscriptionStatusType;
+  priceEGP: number;
+  billingCycle: 'monthly' | 'yearly';
+  startDate: string;
+  endDate: string | null;
+  trialEndDate: string | null;
+  cancelledAt: string | null;
+  pricing: {
+    monthly: number;
+    yearly: number;
+  };
+  limits: Record<string, number>;
+  payments?: Payment[];
+}
+
+interface SubscriptionPlan {
+  tier: SubscriptionTierType;
+  name: string;
+  pricing: {
+    monthly: number;
+    yearly: number;
+  };
+  limits: Record<string, number>;
+}
+
+interface CreateSubscriptionData {
+  tier: SubscriptionTierType;
+  billingCycle?: 'monthly' | 'yearly';
+  paymentMethodId?: string;
+  promoCode?: string;
+}
+
+interface SubscriptionResponse {
+  subscription: Subscription;
+  payment: Payment;
+  paymentRequired: boolean;
+  amountDue: number;
+}
+
+interface GiftSubscriptionData {
+  recipientEmail: string;
+  tier: SubscriptionTierType;
+  billingCycle?: 'monthly' | 'yearly';
+  message?: string;
+}
+
+interface GiftSubscriptionResponse {
+  subscription: Subscription;
+  payment: Payment;
+  recipientId: string;
+  amountDue: number;
+}
+
+interface FeatureUsage {
+  featureId: string;
+  limit: number | 'unlimited';
+  used: number;
+  remaining: number | 'unlimited';
+  resetDate: string;
+}
+
+interface Payment {
+  id: string;
+  subscriptionId: string;
+  amountEGP: number;
+  currency: string;
+  status: 'pending' | 'completed' | 'failed' | 'refunded';
+  stripePaymentId: string | null;
+  createdAt: string;
+  paidAt: string | null;
+}
+
+// Paymob payment types
+type PaymentMethodType = 'card' | 'wallet' | 'fawry' | 'kiosk';
+
+interface PaymentMethodOption {
+  id: PaymentMethodType;
+  name: string;
+  nameAr: string;
+  enabled: boolean;
+}
+
+interface CreatePaymentIntentData {
+  amountEGP: number;
+  description: string;
+  paymentMethod: PaymentMethodType;
+  metadata?: {
+    subscriptionId?: string;
+    programId?: string;
+    giftRecipientId?: string;
+    type: 'subscription' | 'program' | 'gift';
+  };
+}
+
+interface PaymentIntentResponse {
+  id: string;
+  orderId: number;
+  paymentKey: string;
+  iframeUrl: string;
+  amountEGP: number;
+  status: 'pending' | 'completed' | 'failed';
+  expiresAt: string;
+}
+
+interface PaymentStatus {
+  id: string;
+  status: 'pending' | 'completed' | 'failed' | 'refunded';
+  amountEGP: number;
+  paidAt: string | null;
+}
+
+// Research types
+type AIQueryType = 'workout_suggestion' | 'nutrition_advice' | 'form_check' | 'injury_modification' | 'meal_plan' | 'progress_analysis' | 'general_question';
+
+interface SurveyQuestion {
+  id: string;
+  type: 'single_choice' | 'multiple_choice' | 'scale' | 'text';
+  question: string;
+  questionAr?: string;
+  options?: { value: string; label: string; labelAr?: string }[];
+  scaleMin?: number;
+  scaleMax?: number;
+  scaleMinLabel?: string;
+  scaleMaxLabel?: string;
+  required?: boolean;
+}
+
+interface Survey {
+  id: string;
+  code: string;
+  title: string;
+  titleAr?: string;
+  description?: string;
+  descriptionAr?: string;
+  questions: SurveyQuestion[];
+}
+
+interface AIUsageTrackData {
+  featureId: string;
+  queryType: AIQueryType;
+  queryText?: string;
+  responseTimeMs?: number;
+  successful?: boolean;
+  satisfaction?: number;
+}
+
+interface AIUsageStats {
+  totalQueries: number;
+  queriesByType: Record<AIQueryType, number>;
+  avgSatisfaction: number;
+  limitHits: number;
+  currentPeriodUsage: {
+    used: number;
+    limit: number;
+    remaining: number;
+  };
+}
+
+interface SurveyResults {
+  surveyId: string;
+  code: string;
+  title: string;
+  totalResponses: number;
+  questions: {
+    id: string;
+    question: string;
+    type: string;
+    responses: {
+      value: unknown;
+      count: number;
+      percentage: number;
+    }[];
+  }[];
+}
+
+interface AIMetrics {
+  totalQueries: number;
+  uniqueUsers: number;
+  avgResponseTime: number;
+  avgSatisfaction: number;
+  queriesByType: Record<AIQueryType, number>;
+  queriesByTier: Record<string, number>;
+  dailyUsage: { date: string; count: number }[];
+}
+
+interface LimitAnalysis {
+  totalLimitHits: number;
+  hitsByTier: Record<string, number>;
+  hitsByFeature: Record<string, number>;
+  conversionAfterHit: number;
+  avgQueriesBeforeHit: number;
+}
+
+interface QueryPatterns {
+  peakHours: { hour: number; count: number }[];
+  peakDays: { day: string; count: number }[];
+  avgSessionQueries: number;
+  queryCategories: { category: string; count: number; percentage: number }[];
+}
+
+interface TestSummary {
+  id: string;
+  code: string;
+  title: string;
+  titleAr?: string;
+  description?: string;
+  descriptionAr?: string;
+  questionCount: number;
+  completed: boolean;
+}
+
+interface TestsResponse {
+  tests: TestSummary[];
+  totalTests: number;
+  completedTests: number;
+  progress: number;
+}
+
+interface TestDetail {
+  id: string;
+  code: string;
+  title: string;
+  titleAr?: string;
+  description?: string;
+  descriptionAr?: string;
+  questions: SurveyQuestion[];
+  completed: boolean;
+  completedAt?: string;
+}
+
 export type {
   User,
   OnboardingData,
   UserStats,
+  MarketplaceAccess,
+  MyTrainer,
   WorkoutPlan,
   Workout,
   WorkoutExercise,
@@ -1071,6 +1870,16 @@ export type {
   TrainerSearchParams,
   TrainerApplicationData,
   TrainerProfile,
+  TrainerStats,
+  TrainerEarningsBreakdown,
+  TrainerTransaction,
+  TrainerClientResponse,
+  ClientComplianceOverview,
+  ClientDetails,
+  InviteLinkResponse,
+  TrainerInvite,
+  InviteVerification,
+  InviteRedemption,
   Client,
   EarningsData,
   Transaction,
@@ -1107,4 +1916,52 @@ export type {
   CreateChallengeData,
   LeaderboardEntry,
   ChallengeLeaderboardEntry,
+  // Program types
+  ProgramStatus,
+  ProgramSourceType,
+  ProgramExercise,
+  ProgramWorkoutDay,
+  TrainerProgramSummary,
+  TrainerProgramFull,
+  CreateProgramData,
+  CreateWorkoutDayData,
+  CreateExerciseData,
+  UpdateProgramData,
+  WorkoutDayUpdate,
+  AddExerciseData,
+  UpdateExerciseData,
+  ParsedExercise,
+  ParsedWorkoutDay,
+  ParsedProgramData,
+  PdfUploadResponse,
+  // Subscription types
+  SubscriptionTierType,
+  SubscriptionStatusType,
+  Subscription,
+  SubscriptionPlan,
+  CreateSubscriptionData,
+  SubscriptionResponse,
+  GiftSubscriptionData,
+  GiftSubscriptionResponse,
+  FeatureUsage,
+  Payment,
+  // Payment types (Paymob)
+  PaymentMethodType,
+  PaymentMethodOption,
+  CreatePaymentIntentData,
+  PaymentIntentResponse,
+  PaymentStatus,
+  // Research types
+  AIQueryType,
+  SurveyQuestion,
+  Survey,
+  AIUsageTrackData,
+  AIUsageStats,
+  SurveyResults,
+  AIMetrics,
+  LimitAnalysis,
+  QueryPatterns,
+  TestSummary,
+  TestsResponse,
+  TestDetail,
 };

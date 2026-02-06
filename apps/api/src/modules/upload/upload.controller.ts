@@ -55,4 +55,25 @@ export class UploadController {
       duration: result.duration,
     };
   }
+
+  @Post('pdf')
+  @UseInterceptors(
+    FileInterceptor('file', {
+      limits: {
+        fileSize: 10 * 1024 * 1024, // 10MB
+      },
+    }),
+  )
+  async uploadPdf(
+    @UploadedFile() file: Express.Multer.File,
+    @Request() req: { user: { id: string } },
+  ) {
+    const result = await this.uploadService.uploadPdf(file, req.user.id);
+    return {
+      success: true,
+      url: result.url,
+      publicId: result.publicId,
+      pages: result.pages,
+    };
+  }
 }

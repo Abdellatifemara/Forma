@@ -12,6 +12,10 @@ import {
   Users,
   Dumbbell,
   FileText,
+  Share2,
+  LogOut,
+  Globe,
+  FlaskConical,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -22,8 +26,8 @@ interface SidebarProps {
 const trainerLinks = [
   { href: '/trainer/dashboard', icon: Home, label: 'Dashboard' },
   { href: '/trainer/clients', icon: Users, label: 'Clients' },
+  { href: '/trainer/invites', icon: Share2, label: 'Invites' },
   { href: '/trainer/programs', icon: Dumbbell, label: 'Programs' },
-  { href: '/trainer/schedule', icon: Calendar, label: 'Schedule' },
   { href: '/trainer/messages', icon: MessageSquare, label: 'Messages' },
   { href: '/trainer/earnings', icon: DollarSign, label: 'Earnings' },
   { href: '/trainer/analytics', icon: BarChart3, label: 'Analytics' },
@@ -36,6 +40,7 @@ const adminLinks = [
   { href: '/admin/trainers', icon: Dumbbell, label: 'Trainers' },
   { href: '/admin/content', icon: FileText, label: 'Content' },
   { href: '/admin/analytics', icon: BarChart3, label: 'Analytics' },
+  { href: '/admin/research', icon: FlaskConical, label: 'Research' },
   { href: '/admin/settings', icon: Settings, label: 'Settings' },
 ];
 
@@ -44,49 +49,70 @@ export function Sidebar({ type }: SidebarProps) {
   const links = type === 'trainer' ? trainerLinks : adminLinks;
 
   return (
-    <aside className="fixed left-0 top-0 z-40 h-screen w-64 border-r bg-card">
+    <aside className="fixed left-0 top-0 z-40 h-screen w-64 border-r border-border/50 bg-card/50 backdrop-blur-xl">
       <div className="flex h-full flex-col">
         {/* Logo */}
-        <div className="flex h-16 items-center border-b px-6">
+        <div className="flex h-16 items-center border-b border-border/50 px-6">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-forma-teal to-forma-teal-light" />
+            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-500 flex items-center justify-center">
+              <Dumbbell className="h-4 w-4 text-white" />
+            </div>
             <span className="text-xl font-bold">Forma</span>
           </Link>
-          <span className="ml-2 rounded-full bg-muted px-2 py-0.5 text-xs font-medium capitalize">
+          <span className="ml-2 rounded-full bg-primary/10 text-primary px-2 py-0.5 text-xs font-medium capitalize">
             {type}
           </span>
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 space-y-1 p-4">
+        <nav className="flex-1 space-y-1 p-4 overflow-y-auto">
           {links.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
             return (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors',
+                  'flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all duration-200',
                   isActive
-                    ? 'bg-forma-teal/10 text-forma-teal'
+                    ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-glow'
                     : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                 )}
               >
-                <link.icon className="h-5 w-5" />
+                <link.icon className={cn('h-5 w-5', isActive && 'text-white')} />
                 {link.label}
               </Link>
             );
           })}
         </nav>
 
+        {/* Bottom Links */}
+        <div className="border-t border-border/50 p-4 space-y-1">
+          <Link
+            href="/"
+            className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
+          >
+            <Globe className="h-5 w-5" />
+            Back to Website
+          </Link>
+          <button
+            className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-destructive/10 hover:text-destructive transition-colors"
+          >
+            <LogOut className="h-5 w-5" />
+            Logout
+          </button>
+        </div>
+
         {/* User section */}
-        <div className="border-t p-4">
-          <div className="flex items-center gap-3 rounded-lg bg-muted/50 px-3 py-2">
-            <div className="h-8 w-8 rounded-full bg-forma-teal/20" />
+        <div className="border-t border-border/50 p-4">
+          <div className="flex items-center gap-3 rounded-xl bg-muted/50 px-3 py-3">
+            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-500 to-purple-500 flex items-center justify-center text-white font-semibold">
+              A
+            </div>
             <div className="flex-1 truncate">
               <p className="text-sm font-medium">Ahmed Hassan</p>
               <p className="truncate text-xs text-muted-foreground">
-                ahmed@example.com
+                Trainer
               </p>
             </div>
           </div>

@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { Eye, EyeOff, Loader2, AlertCircle } from 'lucide-react';
+import { Eye, EyeOff, Loader2, AlertCircle, Mail, Lock, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 import { authApi, setAuthCookie, setRefreshCookie } from '@/lib/api';
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -65,17 +65,29 @@ export default function LoginForm() {
   };
 
   return (
-    <Card className="border-white/10 bg-white/5 backdrop-blur">
-      <CardHeader className="text-center">
-        <CardTitle className="text-2xl text-white">Welcome back</CardTitle>
-        <CardDescription className="text-white/60">
-          Sign in to continue your fitness journey
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        {/* Error message */}
+    <div className="w-full max-w-md">
+      {/* Logo */}
+      <div className="text-center mb-8">
+        <Link href="/">
+          <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
+            FORMA
+          </h1>
+        </Link>
+        <p className="text-muted-foreground mt-2">Welcome back</p>
+      </div>
+
+      {/* Card */}
+      <div className="glass rounded-2xl p-6 border border-border/50">
+        <div className="text-center mb-6">
+          <h2 className="text-xl font-bold">Sign in to your account</h2>
+          <p className="text-sm text-muted-foreground mt-1">
+            Continue your fitness journey
+          </p>
+        </div>
+
+        {/* Error Message */}
         {error && (
-          <div className="mb-4 flex items-center gap-2 rounded-md bg-red-500/10 p-3 text-sm text-red-400">
+          <div className="mb-4 flex items-center gap-2 rounded-xl bg-destructive/10 border border-destructive/30 p-3 text-sm text-destructive">
             <AlertCircle className="h-4 w-4 flex-shrink-0" />
             <span>{error}</span>
           </div>
@@ -83,41 +95,42 @@ export default function LoginForm() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="email" className="text-white/80">
-              Email
-            </Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="you@example.com"
-              value={formData.email}
-              onChange={(e) => {
-                setFormData({ ...formData, email: e.target.value });
-                setError(null);
-              }}
-              className={`border-white/20 bg-white/10 text-white placeholder:text-white/40 ${
-                formData.email && !isEmailValid ? 'border-red-500' : ''
-              }`}
-              required
-            />
+            <Label htmlFor="email" className="text-sm">Email</Label>
+            <div className="relative">
+              <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              <Input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                value={formData.email}
+                onChange={(e) => {
+                  setFormData({ ...formData, email: e.target.value });
+                  setError(null);
+                }}
+                className={cn(
+                  "pl-10 bg-muted/50 border-border/50",
+                  formData.email && !isEmailValid && "border-destructive"
+                )}
+                required
+              />
+            </div>
             {formData.email && !isEmailValid && (
-              <p className="text-xs text-red-400">Please enter a valid email address</p>
+              <p className="text-xs text-destructive">Please enter a valid email address</p>
             )}
           </div>
 
           <div className="space-y-2">
             <div className="flex items-center justify-between">
-              <Label htmlFor="password" className="text-white/80">
-                Password
-              </Label>
+              <Label htmlFor="password" className="text-sm">Password</Label>
               <Link
                 href="/forgot-password"
-                className="text-sm text-forma-teal hover:underline"
+                className="text-xs text-primary hover:underline"
               >
                 Forgot password?
               </Link>
             </div>
             <div className="relative">
+              <Lock className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
                 id="password"
                 type={showPassword ? 'text' : 'password'}
@@ -127,13 +140,13 @@ export default function LoginForm() {
                   setFormData({ ...formData, password: e.target.value });
                   setError(null);
                 }}
-                className="border-white/20 bg-white/10 pr-10 text-white placeholder:text-white/40"
+                className="pl-10 pr-10 bg-muted/50 border-border/50"
                 required
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white/60"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
               >
                 {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
               </button>
@@ -142,8 +155,7 @@ export default function LoginForm() {
 
           <Button
             type="submit"
-            className="w-full"
-            variant="forma"
+            className="w-full btn-primary"
             disabled={isLoading || !formData.email || !formData.password}
           >
             {isLoading ? (
@@ -152,22 +164,25 @@ export default function LoginForm() {
                 Signing in...
               </>
             ) : (
-              'Sign in'
+              <>
+                Sign in
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </>
             )}
           </Button>
         </form>
 
         <div className="relative my-6">
           <div className="absolute inset-0 flex items-center">
-            <div className="w-full border-t border-white/10" />
+            <div className="w-full border-t border-border/50" />
           </div>
-          <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-transparent px-2 text-white/40">Or continue with</span>
+          <div className="relative flex justify-center text-xs">
+            <span className="bg-card px-2 text-muted-foreground">Or continue with</span>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
-          <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10" disabled>
+        <div className="grid grid-cols-2 gap-3">
+          <Button variant="outline" className="border-border/50 bg-muted/20" disabled>
             <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -188,21 +203,29 @@ export default function LoginForm() {
             </svg>
             Google
           </Button>
-          <Button variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10" disabled>
+          <Button variant="outline" className="border-border/50 bg-muted/20" disabled>
             <svg className="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
             </svg>
             Apple
           </Button>
         </div>
 
-        <p className="mt-6 text-center text-sm text-white/60">
-          Do not have an account?{' '}
-          <Link href="/signup" className="text-forma-teal hover:underline">
+        <p className="mt-6 text-center text-sm text-muted-foreground">
+          Don't have an account?{' '}
+          <Link href="/signup" className="text-primary hover:underline font-medium">
             Sign up
           </Link>
         </p>
-      </CardContent>
-    </Card>
+      </div>
+
+      {/* Terms */}
+      <p className="mt-6 text-center text-xs text-muted-foreground">
+        By signing in, you agree to our{' '}
+        <Link href="/terms" className="underline hover:text-foreground">Terms of Service</Link>
+        {' '}and{' '}
+        <Link href="/privacy" className="underline hover:text-foreground">Privacy Policy</Link>
+      </p>
+    </div>
   );
 }
