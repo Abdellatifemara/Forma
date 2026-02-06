@@ -130,7 +130,9 @@
       "Bash(Invoke-WebRequest -Uri \"http://localhost:3001/api/health\" -UseBasicParsing)",
       "Bash(Select-Object -ExpandProperty Content)",
       "Bash(printf:*)",
-      "Bash(__NEW_LINE_9e2a1dcf59171d26__ echo -e \"\\\\n=== Backend routes ===\")"
+      "Bash(__NEW_LINE_9e2a1dcf59171d26__ echo -e \"\\\\n=== Backend routes ===\")",
+      "Bash(while read f)",
+      "Bash(cat:*)"
     ]
   }
 }

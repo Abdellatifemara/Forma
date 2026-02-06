@@ -144,9 +144,22 @@ export class WorkoutsController {
   @ApiResponse({ status: 200, description: 'Returns workout history' })
   async getHistory(
     @CurrentUser() user: User,
-    @Query('limit') limit?: number,
+    @Query('limit') limitStr?: string,
+    @Query('page') pageStr?: string,
   ) {
-    return this.workoutsService.getWorkoutHistory(user.id, limit || 20);
+    const limit = limitStr ? parseInt(limitStr, 10) : 20;
+    const page = pageStr ? parseInt(pageStr, 10) : 1;
+    const logs = await this.workoutsService.getWorkoutHistory(user.id, limit);
+
+    // Return in format expected by frontend
+    return {
+      data: logs,
+      meta: {
+        total: logs.length,
+        page,
+        limit,
+      },
+    };
   }
 
   @Post('log')
