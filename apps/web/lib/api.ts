@@ -591,6 +591,590 @@ export const adminResearchApi = {
     api.post<{ seededCount: number }>('/admin/research/surveys/seed'),
 };
 
+// ==========================================
+// USER PROFILE API - AI Data Collection
+// ==========================================
+export const userProfileApi = {
+  // Complete AI Profile (all data AI needs)
+  getAIProfile: () =>
+    api.get<UserAIProfile>('/user-profile/ai-profile'),
+
+  // Profile completion status
+  getCompletionStatus: () =>
+    api.get<ProfileCompletionStatus>('/user-profile/completion-status'),
+
+  // Equipment Inventory
+  getEquipment: () =>
+    api.get<EquipmentInventory>('/user-profile/equipment'),
+  updateEquipment: (data: Partial<EquipmentInventory>) =>
+    api.put<EquipmentInventory>('/user-profile/equipment', data),
+
+  // Exercise Capability
+  getCapability: () =>
+    api.get<ExerciseCapability>('/user-profile/capability'),
+  updateCapability: (data: Partial<ExerciseCapability>) =>
+    api.put<ExerciseCapability>('/user-profile/capability', data),
+
+  // Movement Screening
+  getMovement: () =>
+    api.get<MovementScreen>('/user-profile/movement'),
+  updateMovement: (data: Partial<MovementScreen>) =>
+    api.put<MovementScreen>('/user-profile/movement', data),
+
+  // Health Profile
+  getHealth: () =>
+    api.get<HealthProfile>('/user-profile/health'),
+  updateHealth: (data: Partial<HealthProfile>) =>
+    api.put<HealthProfile>('/user-profile/health', data),
+  addInjury: (data: InjuryData) =>
+    api.post<UserInjury>('/user-profile/health/injuries', data),
+  updateInjury: (id: string, data: Partial<InjuryData>) =>
+    api.put<UserInjury>(`/user-profile/health/injuries/${id}`, data),
+  deleteInjury: (id: string) =>
+    api.delete(`/user-profile/health/injuries/${id}`),
+
+  // Nutrition Profile
+  getNutrition: () =>
+    api.get<NutritionProfile>('/user-profile/nutrition'),
+  updateNutrition: (data: Partial<NutritionProfile>) =>
+    api.put<NutritionProfile>('/user-profile/nutrition', data),
+
+  // Lifestyle Profile
+  getLifestyle: () =>
+    api.get<LifestyleProfile>('/user-profile/lifestyle'),
+  updateLifestyle: (data: Partial<LifestyleProfile>) =>
+    api.put<LifestyleProfile>('/user-profile/lifestyle', data),
+
+  // Body Composition
+  getBody: () =>
+    api.get<BodyComposition>('/user-profile/body'),
+  updateBody: (data: Partial<BodyComposition>) =>
+    api.put<BodyComposition>('/user-profile/body', data),
+
+  // Daily Readiness
+  getTodayReadiness: () =>
+    api.get<DailyReadiness | null>('/user-profile/readiness/today'),
+  getReadinessHistory: () =>
+    api.get<DailyReadiness[]>('/user-profile/readiness/history'),
+  logReadiness: (data: DailyReadinessInput) =>
+    api.post<DailyReadiness>('/user-profile/readiness', data),
+
+  // Workout Feedback
+  getWorkoutFeedback: (workoutLogId: string) =>
+    api.get<WorkoutFeedbackData>(`/user-profile/feedback/${workoutLogId}`),
+  logWorkoutFeedback: (workoutLogId: string, data: WorkoutFeedbackInput) =>
+    api.post<WorkoutFeedbackData>(`/user-profile/feedback/${workoutLogId}`, data),
+
+  // Muscle Recovery
+  getMuscleRecovery: () =>
+    api.get<MuscleRecoveryStatus[]>('/user-profile/recovery'),
+
+  // Training History
+  getTrainingHistory: () =>
+    api.get<TrainingHistory>('/user-profile/training'),
+  updateTrainingHistory: (data: Partial<TrainingHistory>) =>
+    api.put<TrainingHistory>('/user-profile/training', data),
+
+  // Goals Profile
+  getGoals: () =>
+    api.get<GoalsProfile | null>('/user-profile/goals'),
+  updateGoals: (data: Partial<GoalsProfile>) =>
+    api.put<GoalsProfile>('/user-profile/goals', data),
+
+  // Fasting Profile
+  getFasting: () =>
+    api.get<FastingProfile>('/user-profile/fasting'),
+  updateFasting: (data: Partial<FastingProfile>) =>
+    api.put<FastingProfile>('/user-profile/fasting', data),
+};
+
+// User Profile Types
+interface UserAIProfile {
+  user: Partial<User>;
+  equipment: EquipmentInventory;
+  capability: ExerciseCapability;
+  movement: MovementScreen;
+  health: HealthProfile;
+  nutrition: NutritionProfile;
+  lifestyle: LifestyleProfile;
+  body: BodyComposition | null;
+  training: TrainingHistory;
+  goals: GoalsProfile | null;
+  fasting: FastingProfile;
+  todayReadiness: DailyReadiness | null;
+  muscleRecovery: MuscleRecoveryStatus[];
+  computed: {
+    age: number | null;
+    bmi: number | null;
+    isRamadanActive: boolean;
+    currentReadiness: number | null;
+  };
+}
+
+interface ProfileCompletionStatus {
+  sections: Record<string, { completed: boolean; priority: number; name: string }>;
+  completedCount: number;
+  totalCount: number;
+  completionPercent: number;
+  nextToComplete: string | null;
+}
+
+interface EquipmentInventory {
+  id?: string;
+  primaryLocation: 'HOME' | 'COMMERCIAL_GYM' | 'HOME_GYM' | 'OUTDOOR' | 'HOTEL';
+  hasGymAccess: boolean;
+  gymName?: string;
+  hasFloorSpace: boolean;
+  hasWallSpace: boolean;
+  hasPullUpBar: boolean;
+  hasDipStation: boolean;
+  hasDumbbells: boolean;
+  dumbbellMinKg?: number;
+  dumbbellMaxKg?: number;
+  hasBarbell: boolean;
+  barbellWeightKg?: number;
+  hasPlates: boolean;
+  plateMaxTotalKg?: number;
+  hasKettlebells: boolean;
+  kettlebellWeights: number[];
+  hasBench: boolean;
+  benchType?: 'FLAT' | 'INCLINE' | 'DECLINE' | 'ADJUSTABLE';
+  hasSquatRack: boolean;
+  hasPowerRack: boolean;
+  hasCableMachine: boolean;
+  hasLegPress: boolean;
+  hasLatPulldown: boolean;
+  hasTreadmill: boolean;
+  hasStatBike: boolean;
+  hasRowingMachine: boolean;
+  hasResistanceBands: boolean;
+  bandStrengths: string[];
+  hasTRX: boolean;
+  hasYogaMat: boolean;
+  hasJumpRope: boolean;
+  hasBox: boolean;
+  boxHeightsCm: number[];
+  hasFoamRoller: boolean;
+  hasAbWheel: boolean;
+  hasMedicineBall: boolean;
+  hasStabilityBall: boolean;
+}
+
+interface ExerciseCapability {
+  id?: string;
+  assessedAt?: string;
+  // Push
+  pushUpMaxReps: number;
+  pushUpFromKnees: boolean;
+  wallPushUp: boolean;
+  declinePushUp: boolean;
+  diamondPushUp: boolean;
+  pikePushUp: boolean;
+  handstandPushUp: boolean;
+  dipMaxReps: number;
+  // Pull
+  pullUpMaxReps: number;
+  chinUpMaxReps: number;
+  canHangFromBar: boolean;
+  bodyweightRow: boolean;
+  // Core
+  plankHoldSeconds: number;
+  sidePlankSeconds: number;
+  hollowBodyHold: boolean;
+  hangingLegRaise: boolean;
+  abWheelRollout: boolean;
+  // Legs
+  bodyweightSquatMaxReps: number;
+  canSquatBelowParallel: boolean;
+  pistolSquat: boolean;
+  bulgarianSplitSquat: boolean;
+  lungeMaxReps: number;
+  boxJump: boolean;
+  boxJumpMaxCm?: number;
+  singleLegRDL: boolean;
+  hipThrust: boolean;
+  nordicCurl: boolean;
+  // Balance
+  singleLegStandSeconds: number;
+  // Cardio
+  canRun5Min: boolean;
+  canRun20Min: boolean;
+  burpeeMaxReps: number;
+  // Flexibility
+  canTouchToes: boolean;
+  canDeepSquatNoHeel: boolean;
+  canOverheadSquat: boolean;
+  // Estimated 1RMs
+  benchPress1RM?: number;
+  squat1RM?: number;
+  deadlift1RM?: number;
+  overheadPress1RM?: number;
+}
+
+interface MovementScreen {
+  id?: string;
+  screenedAt?: string;
+  deepSquatScore: number;
+  shoulderMobilityScoreL: number;
+  shoulderMobilityScoreR: number;
+  activeSLRScoreL: number;
+  activeSLRScoreR: number;
+  limitedAnkleDorsiflexion: boolean;
+  limitedHipFlexion: boolean;
+  limitedHipExtension: boolean;
+  limitedThoracicExtension: boolean;
+  limitedShoulderFlexion: boolean;
+  limitedShoulderRotationInt: boolean;
+  limitedShoulderRotationExt: boolean;
+  limitedHamstringFlexibility: boolean;
+  limitedWristExtension: boolean;
+  hasLeftRightImbalance: boolean;
+  strongerSide?: string;
+  forwardHeadPosture: boolean;
+  roundedShoulders: boolean;
+  excessiveLordosis: boolean;
+  anteriorPelvicTilt: boolean;
+  kneeValgus: boolean;
+  notes?: string;
+}
+
+interface HealthProfile {
+  id?: string;
+  hasHeartCondition: boolean;
+  hasHighBloodPressure: boolean;
+  hasLowBloodPressure: boolean;
+  hasDiabetes: boolean;
+  diabetesType?: number;
+  hasAsthma: boolean;
+  hasArthritis: boolean;
+  arthritisJoints: string[];
+  hasOsteoporosis: boolean;
+  hasHerniaHistory: boolean;
+  hasJointReplacement: boolean;
+  jointReplacementDetails?: string;
+  hasNerveIssues: boolean;
+  nerveIssueDetails?: string;
+  hasVertigoBalance: boolean;
+  isPregnant: boolean;
+  pregnancyTrimester?: number;
+  hadRecentSurgery: boolean;
+  surgeryDetails?: string;
+  surgeryDate?: string;
+  clearedForExercise: boolean;
+  takesBloodThinners: boolean;
+  takesBetaBlockers: boolean;
+  takesInsulin: boolean;
+  medicationNotes?: string;
+  hasDoctorClearance: boolean;
+  injuries: UserInjury[];
+}
+
+interface UserInjury {
+  id: string;
+  bodyPart: string;
+  side?: string;
+  injuryType: string;
+  severity: string;
+  occurredAt?: string;
+  isCurrentlyActive: boolean;
+  isFullyHealed: boolean;
+  painLevel: number;
+  painTriggers: string[];
+  avoidMovements: string[];
+  inPhysicalTherapy: boolean;
+  notes?: string;
+}
+
+interface InjuryData {
+  bodyPart: string;
+  side?: string;
+  injuryType: string;
+  severity: string;
+  occurredAt?: string;
+  painLevel?: number;
+  painTriggers?: string[];
+  avoidMovements?: string[];
+  inPhysicalTherapy?: boolean;
+  notes?: string;
+}
+
+interface NutritionProfile {
+  id?: string;
+  isHalal: boolean;
+  isKosher: boolean;
+  isVegetarian: boolean;
+  isVegan: boolean;
+  isPescatarian: boolean;
+  isKeto: boolean;
+  isLowCarb: boolean;
+  isPaleo: boolean;
+  isLowSodium: boolean;
+  allergyPeanuts: boolean;
+  allergyTreeNuts: boolean;
+  allergyMilk: boolean;
+  allergyEggs: boolean;
+  allergyGluten: boolean;
+  allergySoy: boolean;
+  allergyFish: boolean;
+  allergyShellfish: boolean;
+  allergySesame: boolean;
+  otherAllergies: string[];
+  lactoseIntolerant: boolean;
+  glutenSensitive: boolean;
+  fodmapSensitive: boolean;
+  dislikedFoods: string[];
+  dislikedCategories: string[];
+  cookingSkillLevel: 'NONE' | 'BASIC' | 'INTERMEDIATE' | 'ADVANCED';
+  maxCookingTimeMin: number;
+  willingToBatchCook: boolean;
+  hasKitchenAccess: boolean;
+  hasBlender: boolean;
+  hasAirFryer: boolean;
+  budgetLevel: 'VERY_LOW' | 'LOW' | 'MODERATE' | 'HIGH' | 'NO_LIMIT';
+  monthlyFoodBudgetEGP?: number;
+  mealsPerDay: number;
+  snacksPerDay: number;
+  eatsBreakfast: boolean;
+  breakfastTime?: string;
+  lunchTime?: string;
+  dinnerTime?: string;
+  doesIntermittentFasting: boolean;
+  fastingWindowStart?: string;
+  fastingWindowEnd?: string;
+  preferLocalEgyptianFood: boolean;
+  preferSimpleRecipes: boolean;
+  likesSpicyFood: boolean;
+  takesProteinPowder: boolean;
+  proteinPowderType?: string;
+  takesCreatine: boolean;
+  takesPreWorkout: boolean;
+  otherSupplements: string[];
+  useCalculatedMacros: boolean;
+  customCalories?: number;
+  customProteinG?: number;
+  customCarbsG?: number;
+  customFatG?: number;
+}
+
+interface LifestyleProfile {
+  id?: string;
+  occupation?: string;
+  workType: 'SEDENTARY' | 'LIGHT' | 'MODERATE' | 'ACTIVE' | 'VERY_ACTIVE';
+  workHoursPerDay: number;
+  dailyStepsEstimate: number;
+  hasPhysicalHobbies: boolean;
+  physicalHobbies: string[];
+  averageSleepHours: number;
+  sleepQuality: 'POOR' | 'FAIR' | 'GOOD' | 'EXCELLENT';
+  typicalBedtime?: string;
+  typicalWakeTime?: string;
+  hasSleepDisorder: boolean;
+  currentStressLevel: 'LOW' | 'MODERATE' | 'HIGH' | 'VERY_HIGH';
+  mainStressors: string[];
+  hasAnxiety: boolean;
+  preferredWorkoutTime: 'EARLY_MORNING' | 'MORNING' | 'MIDDAY' | 'AFTERNOON' | 'EVENING' | 'NIGHT' | 'ANYTIME';
+  availableMonday: boolean;
+  availableTuesday: boolean;
+  availableWednesday: boolean;
+  availableThursday: boolean;
+  availableFriday: boolean;
+  availableSaturday: boolean;
+  availableSunday: boolean;
+  maxWorkoutMinutes: number;
+  minWorkoutMinutes: number;
+  targetWorkoutsPerWeek: number;
+  recoveryCapacity: 'LOW' | 'AVERAGE' | 'HIGH';
+  doesStretching: boolean;
+  doesYogaMobility: boolean;
+  caffeineIntakeDaily: number;
+  smoker: boolean;
+  alcoholDrinksPerWeek: number;
+}
+
+interface BodyComposition {
+  id?: string;
+  currentWeightKg: number;
+  heightCm: number;
+  bmi?: number;
+  bodyFatPercent?: number;
+  bodyFatMethod?: string;
+  leanMassKg?: number;
+  fatMassKg?: number;
+  neckCm?: number;
+  shouldersCm?: number;
+  chestCm?: number;
+  waistCm?: number;
+  hipsGlutesCm?: number;
+  leftBicepCm?: number;
+  rightBicepCm?: number;
+  leftThighCm?: number;
+  rightThighCm?: number;
+  leftCalfCm?: number;
+  rightCalfCm?: number;
+  waistToHipRatio?: number;
+  waistToHeightRatio?: number;
+  bodyType?: string;
+  frameSize?: string;
+}
+
+interface DailyReadiness {
+  id: string;
+  loggedAt: string;
+  energyLevel: number;
+  motivationLevel: number;
+  moodLevel: number;
+  overallReadiness: number;
+  sleepHours?: number;
+  sleepQuality?: number;
+  anyPainToday: boolean;
+  painAreas: string[];
+  painIntensity?: number;
+  musclesSore: boolean;
+  soreAreas: string[];
+  sorenessLevel?: number;
+  feelingIll: boolean;
+  restingHeartRate?: number;
+  hrvScore?: number;
+  stressYesterday?: number;
+  alcoholYesterday: boolean;
+  hydratedWell: boolean;
+  recommendedIntensity?: string;
+  shouldSkipWorkout: boolean;
+  notes?: string;
+}
+
+interface DailyReadinessInput {
+  energyLevel: number;
+  motivationLevel: number;
+  moodLevel: number;
+  overallReadiness?: number;
+  sleepHours?: number;
+  sleepQuality?: number;
+  anyPainToday?: boolean;
+  painAreas?: string[];
+  painIntensity?: number;
+  musclesSore?: boolean;
+  soreAreas?: string[];
+  sorenessLevel?: number;
+  feelingIll?: boolean;
+  restingHeartRate?: number;
+  stressYesterday?: number;
+  alcoholYesterday?: boolean;
+  hydratedWell?: boolean;
+  notes?: string;
+}
+
+interface WorkoutFeedbackData {
+  id: string;
+  workoutLogId: string;
+  overallRating: number;
+  perceivedDifficulty: number;
+  enjoymentLevel: number;
+  performanceVsExpected: string;
+  formQuality: number;
+  anyPainDuringWorkout: boolean;
+  painExercises: string[];
+  feltTooEasy: boolean;
+  feltTooHard: boolean;
+  favoriteExercise?: string;
+  leastFavoriteExercise?: string;
+  wantMoreOf?: string;
+  wantLessOf?: string;
+  notes?: string;
+}
+
+interface WorkoutFeedbackInput {
+  overallRating: number;
+  perceivedDifficulty: number;
+  enjoymentLevel: number;
+  performanceVsExpected: string;
+  formQuality: number;
+  anyPainDuringWorkout?: boolean;
+  painExercises?: string[];
+  feltTooEasy?: boolean;
+  feltTooHard?: boolean;
+  favoriteExercise?: string;
+  leastFavoriteExercise?: string;
+  wantMoreOf?: string;
+  wantLessOf?: string;
+  notes?: string;
+}
+
+interface MuscleRecoveryStatus {
+  id: string;
+  muscleGroup: string;
+  lastWorkedAt?: string;
+  lastWorkoutSets: number;
+  lastWorkoutRPE: number;
+  recoveryPercent: number;
+  estimatedFullRecoveryAt?: string;
+  currentSoreness: number;
+  setsThisWeek: number;
+  targetSetsPerWeek: number;
+}
+
+interface TrainingHistory {
+  id?: string;
+  trainingStartDate?: string;
+  totalYearsTraining: number;
+  currentLevel: string;
+  previousPrograms: string[];
+  sportsBackground: string[];
+  preferredTrainingStyle: string;
+  preferredSplitType: string;
+  preferredRepRange: string;
+  bestProgressMade?: string;
+  whatWorkedBest?: string;
+  whatDidntWork?: string;
+  totalWorkoutsLogged: number;
+  longestStreak: number;
+  averageWorkoutsPerWeek: number;
+  consistencyScore: number;
+  prBenchPressKg?: number;
+  prSquatKg?: number;
+  prDeadliftKg?: number;
+  prPullUps?: number;
+  prPushUps?: number;
+  prPlankSeconds?: number;
+}
+
+interface GoalsProfile {
+  id?: string;
+  primaryGoal: string;
+  primaryGoalTarget?: string;
+  targetDate?: string;
+  secondaryGoals: string[];
+  targetWeightKg?: number;
+  targetBodyFatPercent?: number;
+  targetStrength?: string;
+  targetEndurance?: string;
+  mainMotivation: string;
+  secondaryMotivations: string[];
+  biggestBarriers: string[];
+  previousFailures: string[];
+  accountabilityPreference: string;
+  hasWorkoutPartner: boolean;
+  wantsReminders: boolean;
+  confidenceLevel: number;
+  commitmentLevel: number;
+  patienceForResults: number;
+}
+
+interface FastingProfile {
+  id?: string;
+  doesIntermittentFasting: boolean;
+  ifProtocol?: string;
+  eatingWindowStart?: string;
+  eatingWindowEnd?: string;
+  observesRamadan: boolean;
+  ramadanActive: boolean;
+  ramadanIftarTime?: string;
+  ramadanSuhoorTime?: string;
+  ramadanWorkoutTiming: string;
+  ramadanReduceIntensity: boolean;
+  ramadanReduceVolume: boolean;
+}
+
 // Types
 interface User {
   id: string;
@@ -1964,4 +2548,24 @@ export type {
   TestSummary,
   TestsResponse,
   TestDetail,
+  // AI Profile types
+  UserAIProfile,
+  ProfileCompletionStatus,
+  EquipmentInventory,
+  ExerciseCapability,
+  MovementScreen,
+  HealthProfile,
+  UserInjury,
+  InjuryData,
+  NutritionProfile,
+  LifestyleProfile,
+  BodyComposition,
+  DailyReadiness,
+  DailyReadinessInput,
+  WorkoutFeedbackData,
+  WorkoutFeedbackInput,
+  MuscleRecoveryStatus,
+  TrainingHistory,
+  GoalsProfile,
+  FastingProfile,
 };

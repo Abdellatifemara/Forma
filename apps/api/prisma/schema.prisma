@@ -66,6 +66,21 @@ model User {
   surveyResponses       SurveyResponse[]
   featureUsageLimits    FeatureUsageLimit[]
 
+  // AI Data Collection Relations
+  equipmentInventory    UserEquipmentInventory?
+  exerciseCapability    UserExerciseCapability?
+  movementScreen        UserMovementScreen?
+  healthProfile         UserHealthProfile?
+  nutritionProfile      UserNutritionProfile?
+  lifestyleProfile      UserLifestyleProfile?
+  bodyComposition       UserBodyComposition?
+  dailyReadinessLogs    DailyReadinessLog[]
+  workoutFeedback       WorkoutFeedback[]
+  muscleRecoveryStatus  MuscleRecoveryStatus[]
+  trainingHistory       UserTrainingHistory?
+  goalsProfile          UserGoalsProfile?
+  fastingProfile        UserFastingProfile?
+
   @@index([email])
   @@index([phone])
   @@index([role])
@@ -222,6 +237,7 @@ model WorkoutLog {
   rating          Int?
   notes           String?
   exerciseLogs    ExerciseLog[]
+  feedback        WorkoutFeedback?
   user            User          @relation(fields: [userId], references: [id], onDelete: Cascade)
   workout         Workout?      @relation(fields: [workoutId], references: [id])
 
@@ -1114,4 +1130,839 @@ enum AIQueryType {
   FORM
   PROGRESS
   GENERAL
+}
+
+// ==========================================
+// AI DATA COLLECTION MODELS
+// Structured data that AI uses for smart decisions
+// ==========================================
+
+// Equipment Inventory - What equipment user has
+model UserEquipmentInventory {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+
+  // Training Location
+  primaryLocation   TrainingLocation @default(HOME)
+  hasGymAccess      Boolean  @default(false)
+  gymName           String?
+
+  // Bodyweight Capabilities
+  hasFloorSpace     Boolean  @default(true)
+  hasWallSpace      Boolean  @default(true)
+  hasPullUpBar      Boolean  @default(false)
+  hasDipStation     Boolean  @default(false)
+  hasParallettesBars Boolean @default(false)
+
+  // Free Weights
+  hasDumbbells      Boolean  @default(false)
+  dumbbellMinKg     Float?
+  dumbbellMaxKg     Float?
+  dumbbellIncrement Float?
+  hasBarbell        Boolean  @default(false)
+  barbellWeightKg   Float?
+  hasPlates         Boolean  @default(false)
+  plateMaxTotalKg   Float?
+  hasKettlebells    Boolean  @default(false)
+  kettlebellWeights Float[]  @default([])
+  hasEZBar          Boolean  @default(false)
+
+  // Racks & Benches
+  hasBench          Boolean  @default(false)
+  benchType         BenchType?
+  hasSquatRack      Boolean  @default(false)
+  hasPowerRack      Boolean  @default(false)
+  hasSmithMachine   Boolean  @default(false)
+
+  // Machines
+  hasCableMachine   Boolean  @default(false)
+  hasLegPress       Boolean  @default(false)
+  hasLegExtension   Boolean  @default(false)
+  hasLegCurl        Boolean  @default(false)
+  hasLatPulldown    Boolean  @default(false)
+  hasSeatedRow      Boolean  @default(false)
+  hasChestPress     Boolean  @default(false)
+  hasShoulderPress  Boolean  @default(false)
+  hasPecDeck        Boolean  @default(false)
+
+  // Cardio
+  hasTreadmill      Boolean  @default(false)
+  hasStatBike       Boolean  @default(false)
+  hasRowingMachine  Boolean  @default(false)
+
+  // Accessories
+  hasResistanceBands Boolean @default(false)
+  bandStrengths     String[] @default([])
+  hasTRX            Boolean  @default(false)
+  hasAbWheel        Boolean  @default(false)
+  hasFoamRoller     Boolean  @default(false)
+  hasYogaMat        Boolean  @default(false)
+  hasJumpRope       Boolean  @default(false)
+  hasBox            Boolean  @default(false)
+  boxHeightsCm      Int[]    @default([])
+  hasMedicineBall   Boolean  @default(false)
+  medicineBallKg    Float?
+  hasStabilityBall  Boolean  @default(false)
+
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Exercise Capability - What exercises user CAN do
+model UserExerciseCapability {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  assessedAt        DateTime @default(now())
+
+  // Push Movements
+  pushUpMaxReps           Int      @default(0)
+  pushUpFromKnees         Boolean  @default(false)
+  wallPushUp              Boolean  @default(true)
+  declinePushUp           Boolean  @default(false)
+  diamondPushUp           Boolean  @default(false)
+  pikePushUp              Boolean  @default(false)
+  handstandPushUp         Boolean  @default(false)
+  dipMaxReps              Int      @default(0)
+
+  // Pull Movements
+  pullUpMaxReps           Int      @default(0)
+  chinUpMaxReps           Int      @default(0)
+  canHangFromBar          Boolean  @default(false)
+  bodyweightRow           Boolean  @default(false)
+
+  // Core
+  plankHoldSeconds        Int      @default(0)
+  sidePlankSeconds        Int      @default(0)
+  hollowBodyHold          Boolean  @default(false)
+  hangingLegRaise         Boolean  @default(false)
+  abWheelRollout          Boolean  @default(false)
+
+  // Legs
+  bodyweightSquatMaxReps  Int      @default(0)
+  canSquatBelowParallel   Boolean  @default(false)
+  pistolSquat             Boolean  @default(false)
+  bulgarianSplitSquat     Boolean  @default(false)
+  lungeMaxReps            Int      @default(0)
+  boxJump                 Boolean  @default(false)
+  boxJumpMaxCm            Int?
+  singleLegRDL            Boolean  @default(false)
+  hipThrust               Boolean  @default(false)
+  nordicCurl              Boolean  @default(false)
+
+  // Balance
+  singleLegStandSeconds   Int      @default(0)
+
+  // Cardio
+  canRun5Min              Boolean  @default(false)
+  canRun20Min             Boolean  @default(false)
+  burpeeMaxReps           Int      @default(0)
+
+  // Flexibility
+  canTouchToes            Boolean  @default(false)
+  canDeepSquatNoHeel      Boolean  @default(false)
+  canOverheadSquat        Boolean  @default(false)
+
+  // Estimated 1RMs (kg)
+  benchPress1RM           Float?
+  squat1RM                Float?
+  deadlift1RM             Float?
+  overheadPress1RM        Float?
+
+  updatedAt               DateTime @updatedAt
+  user                    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Movement Screening - Mobility and movement quality
+model UserMovementScreen {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  screenedAt        DateTime @default(now())
+
+  // FMS-style scores (0-3)
+  deepSquatScore          Int      @default(2)
+  shoulderMobilityScoreL  Int      @default(2)
+  shoulderMobilityScoreR  Int      @default(2)
+  activeSLRScoreL         Int      @default(2)
+  activeSLRScoreR         Int      @default(2)
+
+  // Specific Limitations
+  limitedAnkleDorsiflexion    Boolean @default(false)
+  limitedHipFlexion           Boolean @default(false)
+  limitedHipExtension         Boolean @default(false)
+  limitedThoracicExtension    Boolean @default(false)
+  limitedShoulderFlexion      Boolean @default(false)
+  limitedShoulderRotationInt  Boolean @default(false)
+  limitedShoulderRotationExt  Boolean @default(false)
+  limitedHamstringFlexibility Boolean @default(false)
+  limitedWristExtension       Boolean @default(false)
+
+  // Asymmetries
+  hasLeftRightImbalance   Boolean  @default(false)
+  strongerSide            String?
+
+  // Posture Issues
+  forwardHeadPosture      Boolean  @default(false)
+  roundedShoulders        Boolean  @default(false)
+  excessiveLordosis       Boolean  @default(false)
+  anteriorPelvicTilt      Boolean  @default(false)
+  kneeValgus              Boolean  @default(false)
+
+  notes                   String?
+  updatedAt               DateTime @updatedAt
+  user                    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Health Profile - Medical conditions & injuries
+model UserHealthProfile {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  updatedAt         DateTime @updatedAt
+
+  // Medical Conditions
+  hasHeartCondition       Boolean  @default(false)
+  hasHighBloodPressure    Boolean  @default(false)
+  hasLowBloodPressure     Boolean  @default(false)
+  hasDiabetes             Boolean  @default(false)
+  diabetesType            Int?
+  hasAsthma               Boolean  @default(false)
+  hasArthritis            Boolean  @default(false)
+  arthritisJoints         String[] @default([])
+  hasOsteoporosis         Boolean  @default(false)
+  hasHerniaHistory        Boolean  @default(false)
+  hasJointReplacement     Boolean  @default(false)
+  jointReplacementDetails String?
+  hasNerveIssues          Boolean  @default(false)
+  nerveIssueDetails       String?
+  hasVertigoBalance       Boolean  @default(false)
+
+  // Pregnancy
+  isPregnant              Boolean  @default(false)
+  pregnancyTrimester      Int?
+
+  // Surgery
+  hadRecentSurgery        Boolean  @default(false)
+  surgeryDetails          String?
+  surgeryDate             DateTime?
+  clearedForExercise      Boolean  @default(true)
+
+  // Medications
+  takesBloodThinners      Boolean  @default(false)
+  takesBetaBlockers       Boolean  @default(false)
+  takesInsulin            Boolean  @default(false)
+  medicationNotes         String?
+
+  hasDoctorClearance      Boolean  @default(true)
+
+  injuries                UserInjury[]
+  user                    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// User Injuries
+model UserInjury {
+  id                String   @id @default(cuid())
+  healthProfileId   String
+  bodyPart          InjuryBodyPart
+  side              String?
+  injuryType        InjuryType
+  severity          InjurySeverity
+  occurredAt        DateTime?
+  isCurrentlyActive Boolean  @default(true)
+  isFullyHealed     Boolean  @default(false)
+  painLevel         Int      @default(0)
+  painTriggers      String[] @default([])
+  avoidMovements    String[] @default([])
+  inPhysicalTherapy Boolean  @default(false)
+  notes             String?
+  updatedAt         DateTime @updatedAt
+
+  healthProfile     UserHealthProfile @relation(fields: [healthProfileId], references: [id], onDelete: Cascade)
+  @@index([healthProfileId])
+}
+
+// Nutrition Profile - Diet preferences & restrictions
+model UserNutritionProfile {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  updatedAt         DateTime @updatedAt
+
+  // Dietary Restrictions
+  isHalal           Boolean  @default(false)
+  isKosher          Boolean  @default(false)
+  isVegetarian      Boolean  @default(false)
+  isVegan           Boolean  @default(false)
+  isPescatarian     Boolean  @default(false)
+  isKeto            Boolean  @default(false)
+  isLowCarb         Boolean  @default(false)
+  isPaleo           Boolean  @default(false)
+  isLowSodium       Boolean  @default(false)
+
+  // Allergies
+  allergyPeanuts    Boolean  @default(false)
+  allergyTreeNuts   Boolean  @default(false)
+  allergyMilk       Boolean  @default(false)
+  allergyEggs       Boolean  @default(false)
+  allergyGluten     Boolean  @default(false)
+  allergySoy        Boolean  @default(false)
+  allergyFish       Boolean  @default(false)
+  allergyShellfish  Boolean  @default(false)
+  allergySesame     Boolean  @default(false)
+  otherAllergies    String[] @default([])
+
+  // Intolerances
+  lactoseIntolerant Boolean  @default(false)
+  glutenSensitive   Boolean  @default(false)
+  fodmapSensitive   Boolean  @default(false)
+
+  // Dislikes
+  dislikedFoods     String[] @default([])
+  dislikedCategories String[] @default([])
+
+  // Cooking
+  cookingSkillLevel CookingLevel @default(INTERMEDIATE)
+  maxCookingTimeMin Int      @default(30)
+  willingToBatchCook Boolean @default(false)
+  hasKitchenAccess  Boolean  @default(true)
+  hasBlender        Boolean  @default(false)
+  hasAirFryer       Boolean  @default(false)
+
+  // Budget
+  budgetLevel       BudgetLevel @default(MODERATE)
+  monthlyFoodBudgetEGP Int?
+
+  // Eating Patterns
+  mealsPerDay       Int      @default(3)
+  snacksPerDay      Int      @default(1)
+  eatsBreakfast     Boolean  @default(true)
+  breakfastTime     String?
+  lunchTime         String?
+  dinnerTime        String?
+
+  // Intermittent Fasting
+  doesIntermittentFasting Boolean @default(false)
+  fastingWindowStart String?
+  fastingWindowEnd   String?
+
+  // Preferences
+  preferLocalEgyptianFood Boolean @default(true)
+  preferSimpleRecipes Boolean @default(true)
+  likesSpicyFood    Boolean  @default(true)
+
+  // Supplements
+  takesProteinPowder Boolean @default(false)
+  proteinPowderType String?
+  takesCreatine     Boolean  @default(false)
+  takesPreWorkout   Boolean  @default(false)
+  otherSupplements  String[] @default([])
+
+  // Custom Macros
+  useCalculatedMacros Boolean @default(true)
+  customCalories    Int?
+  customProteinG    Int?
+  customCarbsG      Int?
+  customFatG        Int?
+
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Lifestyle Profile - Sleep, stress, schedule
+model UserLifestyleProfile {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  updatedAt         DateTime @updatedAt
+
+  // Work
+  occupation        String?
+  workType          WorkType @default(SEDENTARY)
+  workHoursPerDay   Int      @default(8)
+
+  // Daily Activity
+  dailyStepsEstimate Int     @default(5000)
+  hasPhysicalHobbies Boolean @default(false)
+  physicalHobbies   String[] @default([])
+
+  // Sleep
+  averageSleepHours Float    @default(7)
+  sleepQuality      SleepQuality @default(FAIR)
+  typicalBedtime    String?
+  typicalWakeTime   String?
+  hasSleepDisorder  Boolean  @default(false)
+
+  // Stress
+  currentStressLevel StressLevel @default(MODERATE)
+  mainStressors     String[] @default([])
+  hasAnxiety        Boolean  @default(false)
+
+  // Schedule
+  preferredWorkoutTime WorkoutTimePreference @default(ANYTIME)
+  availableMonday   Boolean  @default(true)
+  availableTuesday  Boolean  @default(true)
+  availableWednesday Boolean @default(true)
+  availableThursday Boolean  @default(true)
+  availableFriday   Boolean  @default(true)
+  availableSaturday Boolean  @default(true)
+  availableSunday   Boolean  @default(true)
+  maxWorkoutMinutes Int      @default(60)
+  minWorkoutMinutes Int      @default(30)
+  targetWorkoutsPerWeek Int  @default(4)
+
+  // Recovery
+  recoveryCapacity  RecoveryCapacity @default(AVERAGE)
+  doesStretching    Boolean  @default(false)
+  doesYogaMobility  Boolean  @default(false)
+  caffeineIntakeDaily Int    @default(2)
+  smoker            Boolean  @default(false)
+  alcoholDrinksPerWeek Int   @default(0)
+
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Body Composition - Detailed measurements
+model UserBodyComposition {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  updatedAt         DateTime @updatedAt
+
+  currentWeightKg   Float
+  heightCm          Float
+  bmi               Float?
+
+  // Body Fat
+  bodyFatPercent    Float?
+  bodyFatMethod     BodyFatMethod?
+  leanMassKg        Float?
+  fatMassKg         Float?
+
+  // Circumferences (cm)
+  neckCm            Float?
+  shouldersCm       Float?
+  chestCm           Float?
+  waistCm           Float?
+  hipsGlutesCm      Float?
+  leftBicepCm       Float?
+  rightBicepCm      Float?
+  leftThighCm       Float?
+  rightThighCm      Float?
+  leftCalfCm        Float?
+  rightCalfCm       Float?
+
+  // Ratios
+  waistToHipRatio   Float?
+  waistToHeightRatio Float?
+
+  // Body Type
+  bodyType          BodyType?
+  frameSize         FrameSize?
+
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Daily Readiness - Pre-workout check-in
+model DailyReadinessLog {
+  id                String   @id @default(cuid())
+  userId            String
+  loggedAt          DateTime @default(now())
+
+  energyLevel       Int
+  motivationLevel   Int
+  moodLevel         Int
+  overallReadiness  Int
+
+  sleepHours        Float?
+  sleepQuality      Int?
+
+  anyPainToday      Boolean  @default(false)
+  painAreas         String[] @default([])
+  painIntensity     Int?
+
+  musclesSore       Boolean  @default(false)
+  soreAreas         String[] @default([])
+  sorenessLevel     Int?
+
+  feelingIll        Boolean  @default(false)
+
+  restingHeartRate  Int?
+  hrvScore          Int?
+
+  stressYesterday   Int?
+  alcoholYesterday  Boolean  @default(false)
+  hydratedWell      Boolean  @default(true)
+
+  recommendedIntensity WorkoutIntensity?
+  shouldSkipWorkout Boolean  @default(false)
+  notes             String?
+
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId])
+  @@index([loggedAt])
+}
+
+// Workout Feedback - Post-workout
+model WorkoutFeedback {
+  id                String   @id @default(cuid())
+  workoutLogId      String   @unique
+  userId            String
+  loggedAt          DateTime @default(now())
+
+  overallRating     Int
+  perceivedDifficulty Int
+  enjoymentLevel    Int
+  performanceVsExpected PerformanceLevel
+  formQuality       Int
+
+  anyPainDuringWorkout Boolean @default(false)
+  painExercises     String[] @default([])
+  feltTooEasy       Boolean  @default(false)
+  feltTooHard       Boolean  @default(false)
+
+  favoriteExercise  String?
+  leastFavoriteExercise String?
+  wantMoreOf        String?
+  wantLessOf        String?
+  notes             String?
+
+  workoutLog        WorkoutLog @relation(fields: [workoutLogId], references: [id], onDelete: Cascade)
+  user              User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId])
+}
+
+// Muscle Recovery Status
+model MuscleRecoveryStatus {
+  id                String   @id @default(cuid())
+  userId            String
+  muscleGroup       MuscleGroup
+
+  lastWorkedAt      DateTime?
+  lastWorkoutSets   Int      @default(0)
+  lastWorkoutRPE    Int      @default(5)
+  recoveryPercent   Int      @default(100)
+  estimatedFullRecoveryAt DateTime?
+  currentSoreness   Int      @default(0)
+  setsThisWeek      Int      @default(0)
+  targetSetsPerWeek Int      @default(10)
+
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, muscleGroup])
+  @@index([userId])
+}
+
+// Training History Summary
+model UserTrainingHistory {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+
+  trainingStartDate DateTime?
+  totalYearsTraining Float   @default(0)
+  currentLevel      ExperienceLevel @default(BEGINNER)
+
+  previousPrograms  String[] @default([])
+  sportsBackground  String[] @default([])
+
+  preferredTrainingStyle TrainingStyle @default(TRADITIONAL)
+  preferredSplitType SplitType @default(FULL_BODY)
+  preferredRepRange RepRange @default(MODERATE)
+
+  bestProgressMade  String?
+  whatWorkedBest    String?
+  whatDidntWork     String?
+
+  totalWorkoutsLogged Int    @default(0)
+  longestStreak     Int      @default(0)
+  averageWorkoutsPerWeek Float @default(0)
+  consistencyScore  Int      @default(50)
+
+  // PRs
+  prBenchPressKg    Float?
+  prSquatKg         Float?
+  prDeadliftKg      Float?
+  prPullUps         Int?
+  prPushUps         Int?
+  prPlankSeconds    Int?
+
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Goals Profile
+model UserGoalsProfile {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  updatedAt         DateTime @updatedAt
+
+  primaryGoal       FitnessGoal
+  primaryGoalTarget String?
+  targetDate        DateTime?
+  secondaryGoals    FitnessGoal[]
+
+  targetWeightKg    Float?
+  targetBodyFatPercent Float?
+  targetStrength    String?
+  targetEndurance   String?
+
+  mainMotivation    MotivationType
+  secondaryMotivations MotivationType[]
+
+  biggestBarriers   String[] @default([])
+  previousFailures  String[] @default([])
+
+  accountabilityPreference AccountabilityType @default(SELF)
+  hasWorkoutPartner Boolean  @default(false)
+  wantsReminders    Boolean  @default(true)
+
+  confidenceLevel   Int      @default(5)
+  commitmentLevel   Int      @default(7)
+  patienceForResults Int     @default(5)
+
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Fasting Profile
+model UserFastingProfile {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+
+  // Intermittent Fasting
+  doesIntermittentFasting Boolean @default(false)
+  ifProtocol        IFProtocol?
+  eatingWindowStart String?
+  eatingWindowEnd   String?
+
+  // Ramadan
+  observesRamadan   Boolean  @default(false)
+  ramadanActive     Boolean  @default(false)
+  ramadanIftarTime  String?
+  ramadanSuhoorTime String?
+  ramadanWorkoutTiming RamadanWorkoutTime @default(AFTER_IFTAR)
+  ramadanReduceIntensity Boolean @default(true)
+  ramadanReduceVolume Boolean @default(true)
+
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ==========================================
+// NEW ENUMS FOR AI DATA
+// ==========================================
+
+enum TrainingLocation {
+  HOME
+  COMMERCIAL_GYM
+  HOME_GYM
+  OUTDOOR
+  HOTEL
+}
+
+enum BenchType {
+  FLAT
+  INCLINE
+  DECLINE
+  ADJUSTABLE
+}
+
+enum InjuryBodyPart {
+  NECK
+  SHOULDER
+  ROTATOR_CUFF
+  ELBOW
+  WRIST
+  HAND
+  UPPER_BACK
+  LOWER_BACK
+  SPINE_DISC
+  HIP
+  GROIN
+  KNEE
+  ACL
+  MCL
+  MENISCUS
+  ANKLE
+  ACHILLES
+  FOOT
+  OTHER
+}
+
+enum InjuryType {
+  STRAIN
+  SPRAIN
+  TEAR
+  TENDINITIS
+  BURSITIS
+  FRACTURE
+  IMPINGEMENT
+  HERNIATION
+  ARTHRITIS
+  CHRONIC_PAIN
+  POST_SURGERY
+  OTHER
+}
+
+enum InjurySeverity {
+  MILD
+  MODERATE
+  SEVERE
+  RECOVERING
+  FULLY_HEALED
+}
+
+enum CookingLevel {
+  NONE
+  BASIC
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum BudgetLevel {
+  VERY_LOW
+  LOW
+  MODERATE
+  HIGH
+  NO_LIMIT
+}
+
+enum WorkType {
+  SEDENTARY
+  LIGHT
+  MODERATE
+  ACTIVE
+  VERY_ACTIVE
+}
+
+enum SleepQuality {
+  POOR
+  FAIR
+  GOOD
+  EXCELLENT
+}
+
+enum StressLevel {
+  LOW
+  MODERATE
+  HIGH
+  VERY_HIGH
+}
+
+enum WorkoutTimePreference {
+  EARLY_MORNING
+  MORNING
+  MIDDAY
+  AFTERNOON
+  EVENING
+  NIGHT
+  ANYTIME
+}
+
+enum RecoveryCapacity {
+  LOW
+  AVERAGE
+  HIGH
+}
+
+enum BodyFatMethod {
+  DEXA
+  BODPOD
+  BIA_SCALE
+  CALIPERS
+  NAVY_METHOD
+  VISUAL_ESTIMATE
+}
+
+enum BodyType {
+  ECTOMORPH
+  MESOMORPH
+  ENDOMORPH
+  ECTO_MESO
+  MESO_ENDO
+}
+
+enum FrameSize {
+  SMALL
+  MEDIUM
+  LARGE
+}
+
+enum WorkoutIntensity {
+  RECOVERY
+  LIGHT
+  MODERATE
+  HIGH
+  MAXIMUM
+}
+
+enum PerformanceLevel {
+  MUCH_WORSE
+  WORSE
+  SAME
+  BETTER
+  MUCH_BETTER
+}
+
+enum ExperienceLevel {
+  COMPLETE_BEGINNER
+  BEGINNER
+  NOVICE
+  INTERMEDIATE
+  ADVANCED
+  EXPERT
+}
+
+enum TrainingStyle {
+  TRADITIONAL
+  CIRCUIT
+  SUPERSETS
+  HIIT
+  POWERLIFTING
+  BODYBUILDING
+  CALISTHENICS
+}
+
+enum SplitType {
+  FULL_BODY
+  UPPER_LOWER
+  PUSH_PULL_LEGS
+  BRO_SPLIT
+  HYBRID
+}
+
+enum RepRange {
+  LOW
+  MODERATE
+  HIGH
+  VARIED
+}
+
+enum MotivationType {
+  HEALTH
+  APPEARANCE
+  STRENGTH
+  PERFORMANCE
+  MENTAL_HEALTH
+  SOCIAL
+  COMPETITION
+  HABIT
+  MEDICAL
+}
+
+enum AccountabilityType {
+  SELF
+  PARTNER
+  TRAINER
+  GROUP
+  APP
+}
+
+enum IFProtocol {
+  IF_16_8
+  IF_18_6
+  IF_20_4
+  OMAD
+  CUSTOM
+}
+
+enum RamadanWorkoutTime {
+  BEFORE_FAJR
+  BEFORE_IFTAR
+  AFTER_IFTAR
+  AFTER_TARAWEEH
+  SKIP
 }

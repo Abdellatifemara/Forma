@@ -30,6 +30,7 @@ import { PaymentsModule } from './modules/payments/payments.module';
 import { AnalyticsModule } from './modules/analytics/analytics.module';
 import { CommissionsModule } from './modules/commissions/commissions.module';
 import { ResearchModule } from './modules/research/research.module';
+import { UserProfileModule } from './modules/user-profile/user-profile.module';
 
 @Module({
   imports: [
@@ -95,6 +96,7 @@ import { ResearchModule } from './modules/research/research.module';
     AnalyticsModule,
     CommissionsModule,
     ResearchModule,
+    UserProfileModule,
   ],
 })
 export class AppModule {}
