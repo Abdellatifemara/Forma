@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   User,
   Bell,
@@ -39,15 +39,22 @@ import {
 } from '@/components/ui/select';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
+import { trainersApi, usersApi } from '@/lib/api';
+import { useUser } from '@/hooks/use-user';
 
 export default function TrainerSettingsPage() {
+  const { data: userData, isLoading: userLoading } = useUser();
   const [isSaving, setIsSaving] = useState(false);
+  const [isLoadingProfile, setIsLoadingProfile] = useState(true);
+  const [trainerProfile, setTrainerProfile] = useState<any>(null);
+
   const [profile, setProfile] = useState({
-    name: 'Ahmed Hassan',
-    email: 'ahmed.trainer@email.com',
-    phone: '+20 100 123 4567',
-    bio: 'Certified personal trainer with 5+ years of experience specializing in strength training and body transformation.',
-    hourlyRate: '150',
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    bio: '',
+    hourlyRate: '',
     timezone: 'Africa/Cairo',
   });
 
@@ -59,16 +66,56 @@ export default function TrainerSettingsPage() {
     marketingEmails: false,
   });
 
-  // Mock tier data - would come from API
-  const trainerTier = 'TRUSTED_PARTNER';
-  const commissionRate = trainerTier === 'TRUSTED_PARTNER' ? 7 : 20;
+  // Load trainer profile
+  useEffect(() => {
+    async function loadProfile() {
+      try {
+        const trainerData = await trainersApi.getMyProfile();
+        setTrainerProfile(trainerData);
+        setProfile({
+          firstName: trainerData.user?.firstName || '',
+          lastName: trainerData.user?.lastName || '',
+          email: trainerData.user?.email || '',
+          phone: (trainerData.user as any)?.phone || '',
+          bio: trainerData.bio || '',
+          hourlyRate: trainerData.monthlyPrice?.toString() || '',
+          timezone: 'Africa/Cairo',
+        });
+      } catch (error) {
+        console.error('Failed to load trainer profile:', error);
+      } finally {
+        setIsLoadingProfile(false);
+      }
+    }
+    loadProfile();
+  }, []);
+
+  const trainerTier = trainerProfile?.tier || 'REGULAR';
+  const commissionRate = trainerTier === 'TRUSTED_PARTNER' ? 15 : 20;
   const keepRate = 100 - commissionRate;
 
   const handleSave = async () => {
     setIsSaving(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSaving(false);
+    try {
+      await usersApi.updateProfile({
+        firstName: profile.firstName,
+        lastName: profile.lastName,
+      });
+      // Note: Full trainer profile update would need additional API endpoint
+    } catch (error) {
+      console.error('Failed to save:', error);
+    } finally {
+      setIsSaving(false);
+    }
   };
+
+  if (userLoading || isLoadingProfile) {
+    return (
+      <div className="flex items-center justify-center min-h-[50vh]">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 pb-8">
@@ -126,9 +173,11 @@ export default function TrainerSettingsPage() {
             </CardHeader>
             <CardContent className="flex items-center gap-6">
               <Avatar className="h-24 w-24 border-4 border-primary/30">
-                <AvatarImage src={undefined} />
+                <AvatarImage src={trainerProfile?.user?.avatarUrl || undefined} />
                 <AvatarFallback className="text-2xl bg-gradient-to-br from-cyan-500 to-purple-500 text-white">
-                  AH
+                  {profile.firstName && profile.lastName
+                    ? `${profile.firstName[0]}${profile.lastName[0]}`
+                    : 'TR'}
                 </AvatarFallback>
               </Avatar>
               <div className="space-y-3">
@@ -152,11 +201,21 @@ export default function TrainerSettingsPage() {
             <CardContent className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2">
-                  <Label>Full Name</Label>
+                  <Label>First Name</Label>
                   <Input
-                    value={profile.name}
+                    value={profile.firstName}
                     onChange={(e) =>
-                      setProfile({ ...profile, name: e.target.value })
+                      setProfile({ ...profile, firstName: e.target.value })
+                    }
+                    className="bg-muted/50 border-border/50"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label>Last Name</Label>
+                  <Input
+                    value={profile.lastName}
+                    onChange={(e) =>
+                      setProfile({ ...profile, lastName: e.target.value })
                     }
                     className="bg-muted/50 border-border/50"
                   />
@@ -166,9 +225,7 @@ export default function TrainerSettingsPage() {
                   <Input
                     type="email"
                     value={profile.email}
-                    onChange={(e) =>
-                      setProfile({ ...profile, email: e.target.value })
-                    }
+                    disabled
                     className="bg-muted/50 border-border/50"
                   />
                 </div>
@@ -182,7 +239,7 @@ export default function TrainerSettingsPage() {
                     className="bg-muted/50 border-border/50"
                   />
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-2 md:col-span-2">
                   <Label>Hourly Rate (EGP)</Label>
                   <Input
                     type="number"
@@ -190,7 +247,7 @@ export default function TrainerSettingsPage() {
                     onChange={(e) =>
                       setProfile({ ...profile, hourlyRate: e.target.value })
                     }
-                    className="bg-muted/50 border-border/50"
+                    className="bg-muted/50 border-border/50 max-w-xs"
                   />
                 </div>
               </div>

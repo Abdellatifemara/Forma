@@ -823,4 +823,81 @@ export class TrainersService {
 
     return { success: true };
   }
+
+  async assignProgramToClient(userId: string, clientId: string, programId: string) {
+    const trainer = await this.prisma.trainerProfile.findUnique({
+      where: { userId },
+    });
+
+    if (!trainer) {
+      throw new NotFoundException('Trainer profile not found');
+    }
+
+    // Verify the client belongs to this trainer
+    const trainerClient = await this.prisma.trainerClient.findUnique({
+      where: {
+        trainerId_clientId: {
+          trainerId: trainer.id,
+          clientId,
+        },
+      },
+    });
+
+    if (!trainerClient) {
+      throw new NotFoundException('Client not found');
+    }
+
+    // Verify the program belongs to this trainer
+    const program = await this.prisma.trainerProgram.findFirst({
+      where: {
+        id: programId,
+        trainerId: trainer.id,
+      },
+    });
+
+    if (!program) {
+      throw new NotFoundException('Program not found');
+    }
+
+    // Assign the program
+    const updated = await this.prisma.trainerClient.update({
+      where: { id: trainerClient.id },
+      data: {
+        currentProgramId: programId,
+        programStartDate: new Date(),
+        programEndDate: program.durationWeeks
+          ? new Date(Date.now() + program.durationWeeks * 7 * 24 * 60 * 60 * 1000)
+          : null,
+      },
+      include: {
+        program: {
+          select: {
+            id: true,
+            nameEn: true,
+            nameAr: true,
+            durationWeeks: true,
+          },
+        },
+        client: {
+          select: {
+            id: true,
+            firstName: true,
+            lastName: true,
+            email: true,
+          },
+        },
+      },
+    });
+
+    return {
+      success: true,
+      client: {
+        id: updated.clientId,
+        name: `${updated.client.firstName} ${updated.client.lastName}`,
+      },
+      program: updated.program,
+      programStartDate: updated.programStartDate,
+      programEndDate: updated.programEndDate,
+    };
+  }
 }

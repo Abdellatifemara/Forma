@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   Bell,
   ChevronRight,
@@ -15,6 +16,7 @@ import {
   Sun,
   User,
   Volume2,
+  Loader2,
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -40,17 +42,21 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-
-const user = {
-  name: 'Ahmed Hassan',
-  email: 'ahmed@example.com',
-  avatar: null,
-  subscription: 'pro',
-  memberSince: 'March 2024',
-};
+import { useUser, useUpdateProfile } from '@/hooks/use-user';
+import { removeAuthCookie } from '@/lib/api';
 
 export default function SettingsPage() {
-  const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('dark');
+  const router = useRouter();
+  const { data: userData, isLoading: userLoading } = useUser();
+  const updateProfile = useUpdateProfile();
+
+  const user = userData?.user;
+
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+  });
+  const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('light');
   const [language, setLanguage] = useState('en');
   const [unit, setUnit] = useState('metric');
   const [notifications, setNotifications] = useState({
@@ -63,6 +69,63 @@ export default function SettingsPage() {
   });
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [showPasswordDialog, setShowPasswordDialog] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+
+  // Populate form with user data
+  useEffect(() => {
+    if (user) {
+      setFormData({
+        firstName: user.firstName || '',
+        lastName: user.lastName || '',
+      });
+      setLanguage(user.language || 'en');
+      setUnit(user.measurementUnit || 'metric');
+    }
+  }, [user]);
+
+  const handleSaveProfile = async () => {
+    setIsSaving(true);
+    try {
+      await updateProfile.mutateAsync({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        language,
+        measurementUnit: unit,
+      });
+    } catch (error) {
+      console.error('Failed to save profile:', error);
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  const handleLogout = () => {
+    removeAuthCookie();
+    router.push('/login');
+  };
+
+  // Format member since date
+  const formatMemberSince = () => {
+    if (!user?.createdAt) return '';
+    const date = new Date(user.createdAt);
+    return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  };
+
+  // Get initials
+  const getInitials = () => {
+    if (user?.firstName && user?.lastName) {
+      return `${user.firstName[0]}${user.lastName[0]}`.toUpperCase();
+    }
+    return user?.email?.[0]?.toUpperCase() || 'U';
+  };
+
+  if (userLoading) {
+    return (
+      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
@@ -91,16 +154,20 @@ export default function SettingsPage() {
             <CardContent className="space-y-6">
               <div className="flex items-center gap-4">
                 <Avatar className="h-20 w-20">
-                  <AvatarImage src={user.avatar || undefined} />
+                  <AvatarImage src={user?.avatarUrl || undefined} />
                   <AvatarFallback className="text-xl">
-                    {user.name.split(' ').map((n) => n[0]).join('')}
+                    {getInitials()}
                   </AvatarFallback>
                 </Avatar>
                 <div>
-                  <h3 className="font-semibold">{user.name}</h3>
-                  <p className="text-sm text-muted-foreground">{user.email}</p>
+                  <h3 className="font-semibold">
+                    {user?.firstName && user?.lastName
+                      ? `${user.firstName} ${user.lastName}`
+                      : user?.displayName || 'User'}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">{user?.email}</p>
                   <p className="mt-1 text-xs text-muted-foreground">
-                    Member since {user.memberSince}
+                    Member since {formatMemberSince()}
                   </p>
                 </div>
                 <Button variant="outline" className="ml-auto">
@@ -112,16 +179,37 @@ export default function SettingsPage() {
 
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
-                  <Label>Full Name</Label>
-                  <Input defaultValue={user.name} className="mt-1.5" />
+                  <Label>First Name</Label>
+                  <Input
+                    value={formData.firstName}
+                    onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                    className="mt-1.5"
+                  />
                 </div>
                 <div>
+                  <Label>Last Name</Label>
+                  <Input
+                    value={formData.lastName}
+                    onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                    className="mt-1.5"
+                  />
+                </div>
+                <div className="md:col-span-2">
                   <Label>Email</Label>
-                  <Input defaultValue={user.email} className="mt-1.5" disabled />
+                  <Input value={user?.email || ''} className="mt-1.5" disabled />
                 </div>
               </div>
 
-              <Button variant="forma">Save Changes</Button>
+              <Button variant="forma" onClick={handleSaveProfile} disabled={isSaving}>
+                {isSaving ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Saving...
+                  </>
+                ) : (
+                  'Save Changes'
+                )}
+              </Button>
             </CardContent>
           </Card>
 
@@ -134,7 +222,7 @@ export default function SettingsPage() {
                   <CardDescription>Manage your subscription plan</CardDescription>
                 </div>
                 <Badge variant="forma" className="text-sm">
-                  {user.subscription.toUpperCase()}
+                  {(user?.subscription || 'FREE').toUpperCase()}
                 </Badge>
               </div>
             </CardHeader>
@@ -143,14 +231,19 @@ export default function SettingsPage() {
                 <div className="flex items-center gap-3">
                   <CreditCard className="h-5 w-5 text-muted-foreground" />
                   <div>
-                    <p className="font-medium">Pro Plan</p>
+                    <p className="font-medium">
+                      {user?.subscription === 'pro' ? 'Pro Plan' :
+                       user?.subscription === 'elite' ? 'Elite Plan' : 'Free Plan'}
+                    </p>
                     <p className="text-sm text-muted-foreground">
-                      199 EGP/month • Renews March 1, 2025
+                      {user?.subscription === 'free' || !user?.subscription
+                        ? 'Upgrade to unlock premium features'
+                        : 'Active subscription'}
                     </p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">
-                  Manage
+                  {user?.subscription === 'free' || !user?.subscription ? 'Upgrade' : 'Manage'}
                 </Button>
               </div>
 
@@ -571,7 +664,11 @@ export default function SettingsPage() {
                 <ChevronRight className="h-5 w-5 text-muted-foreground" />
               </div>
 
-              <Button variant="outline" className="w-full text-destructive hover:text-destructive">
+              <Button
+                variant="outline"
+                className="w-full text-destructive hover:text-destructive"
+                onClick={handleLogout}
+              >
                 <LogOut className="mr-2 h-4 w-4" />
                 Sign Out
               </Button>

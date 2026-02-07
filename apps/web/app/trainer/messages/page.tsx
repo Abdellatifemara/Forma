@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useMemo } from 'react';
+import { useSearchParams } from 'next/navigation';
 import {
   Search,
   Send,
@@ -31,6 +32,7 @@ import {
   useSendMessage,
   useSendMediaMessage,
   useMarkAsRead,
+  useCreateConversation,
 } from '@/hooks/use-chat';
 import type { Conversation, ChatMessage, MessageType } from '@/lib/api';
 import { cn } from '@/lib/utils';
@@ -58,13 +60,18 @@ function formatMessageTime(dateString: string) {
 }
 
 export default function MessagesPage() {
+  const searchParams = useSearchParams();
+  const clientIdParam = searchParams.get('client');
+
   const [selectedConversationId, setSelectedConversationId] = useState<string | null>(null);
   const [newMessage, setNewMessage] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
+  const [isCreatingConversation, setIsCreatingConversation] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // API hooks
   const { data: conversations, isLoading: conversationsLoading } = useConversations();
+  const createConversation = useCreateConversation();
   const { data: messagesData, isLoading: messagesLoading, fetchNextPage, hasNextPage } = useMessages(selectedConversationId);
   const sendMessage = useSendMessage();
   const { sendImageMessage, sendVoiceMessage, isLoading: mediaLoading, isUploadingImage, isUploadingVoice } = useSendMediaMessage();
@@ -91,12 +98,42 @@ export default function MessagesPage() {
     );
   }, [conversations, searchQuery]);
 
-  // Auto-select first conversation if none selected
+  // Handle client query parameter - create/select conversation with that client
   useEffect(() => {
-    if (!selectedConversationId && filteredConversations.length > 0) {
+    async function handleClientParam() {
+      if (!clientIdParam || isCreatingConversation || conversationsLoading) return;
+
+      // Check if we already have a conversation with this client
+      const existingConv = conversations?.find(
+        c => c.participant?.id === clientIdParam
+      );
+
+      if (existingConv) {
+        setSelectedConversationId(existingConv.id);
+        return;
+      }
+
+      // Create new conversation with this client
+      setIsCreatingConversation(true);
+      try {
+        const newConv = await createConversation.mutateAsync(clientIdParam);
+        setSelectedConversationId(newConv.id);
+      } catch (error) {
+        console.error('Failed to create conversation:', error);
+      } finally {
+        setIsCreatingConversation(false);
+      }
+    }
+
+    handleClientParam();
+  }, [clientIdParam, conversations, conversationsLoading]);
+
+  // Auto-select first conversation if none selected and no client param
+  useEffect(() => {
+    if (!selectedConversationId && !clientIdParam && filteredConversations.length > 0) {
       setSelectedConversationId(filteredConversations[0].id);
     }
-  }, [filteredConversations, selectedConversationId]);
+  }, [filteredConversations, selectedConversationId, clientIdParam]);
 
   // Mark conversation as read when selected
   useEffect(() => {
@@ -207,7 +244,7 @@ export default function MessagesPage() {
             </div>
 
             <div className="flex-1 overflow-y-auto">
-              {conversationsLoading ? (
+              {(conversationsLoading || isCreatingConversation) ? (
                 <div className="flex items-center justify-center p-8">
                   <Loader2 className="h-6 w-6 animate-spin text-primary" />
                 </div>

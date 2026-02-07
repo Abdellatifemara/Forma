@@ -4,6 +4,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import {
   programsApi,
   uploadApiExtended,
+  trainersApi,
   type TrainerProgramSummary,
   type TrainerProgramFull,
   type CreateProgramData,
@@ -270,12 +271,29 @@ export function useUploadPdf() {
 }
 
 /**
+ * Hook to assign a program to a client
+ */
+export function useAssignProgram() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: ({ clientId, programId }: { clientId: string; programId: string }) =>
+      trainersApi.assignProgramToClient(clientId, programId),
+    onSuccess: () => {
+      // Invalidate client-related queries
+      queryClient.invalidateQueries({ queryKey: ['trainer', 'clients'] });
+    },
+  });
+}
+
+/**
  * Combined hook for managing programs on the list page
  */
 export function useProgramsManager() {
   const programs = usePrograms();
   const duplicateProgram = useDuplicateProgram();
   const deleteProgram = useDeleteProgram();
+  const assignProgram = useAssignProgram();
 
   return {
     programs: programs.data || [],
@@ -284,7 +302,9 @@ export function useProgramsManager() {
     refetch: programs.refetch,
     duplicate: duplicateProgram.mutateAsync,
     delete: deleteProgram.mutateAsync,
+    assignToClient: assignProgram.mutateAsync,
     isDuplicating: duplicateProgram.isPending,
     isDeleting: deleteProgram.isPending,
+    isAssigning: assignProgram.isPending,
   };
 }

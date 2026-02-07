@@ -29,6 +29,7 @@ import {
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { useUser, useUserStats } from '@/hooks/use-user';
 
 const navLinks = [
   { href: '/dashboard', icon: Home, label: 'Home', labelAr: 'الرئيسية' },
@@ -50,20 +51,33 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   const [fabOpen, setFabOpen] = useState(false);
   const [showGamification, setShowGamification] = useState(true);
 
-  // Mock user data - replace with real data
+  // Real user data from API
+  const { data: userData } = useUser();
+  const { data: statsData } = useUserStats();
+
+  // Calculate level based on workouts (simplified)
+  const totalWorkouts = statsData?.totalWorkouts || 0;
+  const level = Math.floor(totalWorkouts / 10) + 1;
+  const levelTitles = ['Beginner', 'Rookie', 'Dedicated', 'Committed', 'Warrior', 'Champion', 'Legend'];
+  const levelTitle = levelTitles[Math.min(level - 1, levelTitles.length - 1)];
+
+  // XP is workouts * 100 + volume/1000
+  const xp = (totalWorkouts * 100) + Math.floor((statsData?.totalVolume || 0) / 1000);
+  const xpForNextLevel = level * 1000;
+
   const user = {
-    name: 'Ahmed',
-    level: 5,
-    levelTitle: 'Committed',
-    xp: 1250,
-    xpForNextLevel: 1500,
-    streak: 7,
+    name: userData?.user?.firstName || userData?.user?.displayName || 'User',
+    level,
+    levelTitle,
+    xp,
+    xpForNextLevel,
+    streak: statsData?.currentStreak || 0,
     badge: '🔥',
-    avatar: null,
+    avatar: userData?.user?.avatarUrl || null,
     ramadanMode: false,
   };
 
-  const xpProgress = (user.xp / user.xpForNextLevel) * 100;
+  const xpProgress = Math.min((user.xp / user.xpForNextLevel) * 100, 100);
 
   return (
     <div className="min-h-screen bg-background">

@@ -138,6 +138,19 @@ export class TrainersController {
     return this.trainersService.deactivateInvite(user.id, inviteId);
   }
 
+  @UseGuards(JwtAuthGuard)
+  @Post('me/clients/:clientId/assign-program')
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Assign a program to a client' })
+  @ApiResponse({ status: 200, description: 'Program assigned successfully' })
+  async assignProgramToClient(
+    @CurrentUser() user: User,
+    @Param('clientId') clientId: string,
+    @Body() body: { programId: string },
+  ) {
+    return this.trainersService.assignProgramToClient(user.id, clientId, body.programId);
+  }
+
   // Public invite endpoints (no auth required)
   @Public()
   @Get('invite/:code')

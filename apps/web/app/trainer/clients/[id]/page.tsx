@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import {
   Activity,
   ArrowLeft,
@@ -45,6 +45,7 @@ import { useClientDetails } from '@/hooks/use-trainer';
 
 export default function ClientDetailPage() {
   const params = useParams();
+  const router = useRouter();
   const clientId = params.id as string;
 
   const [activeTab, setActiveTab] = useState('overview');
@@ -161,7 +162,7 @@ export default function ClientDetailPage() {
               Message
             </Link>
           </Button>
-          <Button className="btn-primary">
+          <Button className="btn-primary" onClick={() => router.push(`/trainer/schedule?client=${clientId}`)}>
             <Calendar className="mr-2 h-4 w-4" />
             Schedule Session
           </Button>
@@ -172,15 +173,15 @@ export default function ClientDetailPage() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => router.push(`/trainer/clients/${clientId}/edit`)}>
                 <Edit className="mr-2 h-4 w-4" />
                 Edit Client Info
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => router.push(`/trainer/programs?assign=${clientId}`)}>
                 <Dumbbell className="mr-2 h-4 w-4" />
                 Assign New Program
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => router.push(`/trainer/clients/${clientId}/meal-plan`)}>
                 <Utensils className="mr-2 h-4 w-4" />
                 Update Meal Plan
               </DropdownMenuItem>
@@ -463,9 +464,9 @@ export default function ClientDetailPage() {
         <TabsContent value="workouts" className="space-y-6">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold">Workout Performance</h3>
-            <Button className="btn-primary">
+            <Button className="btn-primary" onClick={() => router.push(`/trainer/programs?assign=${clientId}`)}>
               <Dumbbell className="mr-2 h-4 w-4" />
-              Assign Workout
+              Assign Program
             </Button>
           </div>
 

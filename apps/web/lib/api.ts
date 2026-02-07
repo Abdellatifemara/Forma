@@ -278,6 +278,13 @@ export const trainersApi = {
   getClientDetails: (clientId: string) =>
     api.get<ClientDetails>(`/trainers/me/clients/${clientId}`),
 
+  // Program assignment
+  assignProgramToClient: (clientId: string, programId: string) =>
+    api.post<{ success: boolean; client: { id: string; name: string }; program: { id: string; nameEn: string } }>(
+      `/trainers/me/clients/${clientId}/assign-program`,
+      { programId }
+    ),
+
   // Invite system
   generateInviteCode: () => api.post<{ inviteCode: string }>('/trainers/me/invite-code'),
 

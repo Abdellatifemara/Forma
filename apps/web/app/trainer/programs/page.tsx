@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useSearchParams, useRouter } from 'next/navigation';
 import {
   Plus,
   Search,
@@ -20,6 +21,9 @@ import {
   Target,
   Loader2,
   AlertCircle,
+  Check,
+  ArrowLeft,
+  UserPlus,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -43,10 +47,33 @@ import { cn } from '@/lib/utils';
 import { useProgramsManager } from '@/hooks/use-programs';
 
 export default function ProgramsPage() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const assignToClientId = searchParams.get('assign');
+  const isAssignMode = !!assignToClientId;
+
   const [searchQuery, setSearchQuery] = useState('');
   const [activeTab, setActiveTab] = useState('all');
+  const [assignSuccess, setAssignSuccess] = useState(false);
 
-  const { programs, isLoading, error, duplicate, delete: deleteProgram, isDuplicating } = useProgramsManager();
+  const { programs, isLoading, error, duplicate, delete: deleteProgram, isDuplicating, assignToClient, isAssigning } = useProgramsManager();
+
+  // Handle program assignment
+  const handleAssignProgram = async (programId: string) => {
+    if (!assignToClientId || isAssigning) return;
+
+    try {
+      await assignToClient({ clientId: assignToClientId, programId });
+      setAssignSuccess(true);
+      // Redirect back to client page after short delay
+      setTimeout(() => {
+        router.push(`/trainer/clients/${assignToClientId}`);
+      }, 1500);
+    } catch (err) {
+      console.error('Failed to assign program:', err);
+      alert('Failed to assign program. Please try again.');
+    }
+  };
 
   const filteredPrograms = programs.filter((program) => {
     const matchesSearch = program.nameEn.toLowerCase().includes(searchQuery.toLowerCase());
@@ -111,28 +138,70 @@ export default function ProgramsPage() {
 
   return (
     <div className="space-y-6 pb-8">
+      {/* Assignment Mode Banner */}
+      {isAssignMode && (
+        <Card className="glass border-primary/50 bg-primary/5">
+          <CardContent className="py-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-xl bg-primary/20">
+                  <UserPlus className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold">
+                    {assignSuccess ? 'Program Assigned!' : 'Select a Program to Assign'}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {assignSuccess
+                      ? 'Redirecting back to client...'
+                      : 'Click on a program below to assign it to your client'}
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                {assignSuccess && <Check className="h-5 w-5 text-green-500" />}
+                {(isAssigning) && <Loader2 className="h-5 w-5 animate-spin text-primary" />}
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => router.push(`/trainer/clients/${assignToClientId}`)}
+                  disabled={isAssigning}
+                >
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Cancel
+                </Button>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-3xl font-bold">Programs</h1>
           <p className="text-muted-foreground">
-            Create and manage workout programs for your clients
+            {isAssignMode
+              ? 'Select a program to assign to your client'
+              : 'Create and manage workout programs for your clients'}
           </p>
         </div>
-        <div className="flex gap-2">
-          <Button variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
-            <Link href="/trainer/programs/upload">
-              <Upload className="mr-2 h-4 w-4" />
-              Upload PDF
-            </Link>
-          </Button>
-          <Button className="btn-primary" asChild>
-            <Link href="/trainer/programs/new">
-              <Plus className="mr-2 h-4 w-4" />
-              Create Program
-            </Link>
-          </Button>
-        </div>
+        {!isAssignMode && (
+          <div className="flex gap-2">
+            <Button variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
+              <Link href="/trainer/programs/upload">
+                <Upload className="mr-2 h-4 w-4" />
+                Upload PDF
+              </Link>
+            </Button>
+            <Button className="btn-primary" asChild>
+              <Link href="/trainer/programs/new">
+                <Plus className="mr-2 h-4 w-4" />
+                Create Program
+              </Link>
+            </Button>
+          </div>
+        )}
       </div>
 
       {/* Quick Actions */}
@@ -299,8 +368,19 @@ export default function ProgramsPage() {
           {filteredPrograms.map((program) => {
             const sourceBadge = getSourceBadge(program.sourceType || 'manual');
             const SourceIcon = sourceBadge.icon;
+            const canAssign = isAssignMode && program.status === 'ACTIVE';
             return (
-              <Card key={program.id} className="glass border-border/50 hover:border-primary/30 transition-all">
+              <Card
+                key={program.id}
+                className={cn(
+                  "glass border-border/50 transition-all",
+                  canAssign
+                    ? "cursor-pointer hover:border-primary hover:bg-primary/5"
+                    : "hover:border-primary/30",
+                  isAssigning && "opacity-50 pointer-events-none"
+                )}
+                onClick={canAssign ? () => handleAssignProgram(program.id) : undefined}
+              >
                 <CardHeader className="flex flex-row items-start justify-between pb-2">
                   <div className="flex-1">
                     <div className="flex items-center gap-2 flex-wrap">
@@ -319,30 +399,43 @@ export default function ProgramsPage() {
                       {program.descriptionEn || 'No description'}
                     </CardDescription>
                   </div>
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <Button variant="ghost" size="icon" className="h-8 w-8">
-                        <MoreHorizontal className="h-4 w-4" />
-                      </Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent align="end">
-                      <DropdownMenuItem asChild>
-                        <Link href={`/trainer/programs/${program.id}`}>
-                          <Pencil className="mr-2 h-4 w-4" />
-                          Edit
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem onClick={() => handleDuplicate(program.id)} disabled={isDuplicating}>
-                        <Copy className="mr-2 h-4 w-4" />
-                        Duplicate
-                      </DropdownMenuItem>
-                      <DropdownMenuSeparator />
-                      <DropdownMenuItem className="text-destructive" onClick={() => handleDelete(program.id)}>
-                        <Trash2 className="mr-2 h-4 w-4" />
-                        Delete
-                      </DropdownMenuItem>
-                    </DropdownMenuContent>
-                  </DropdownMenu>
+                  {isAssignMode ? (
+                    canAssign ? (
+                      <Badge className="bg-primary/20 text-primary border-primary/50">
+                        <Check className="h-3 w-3 mr-1" />
+                        Click to Assign
+                      </Badge>
+                    ) : (
+                      <Badge variant="secondary" className="text-muted-foreground">
+                        Draft - Not Available
+                      </Badge>
+                    )
+                  ) : (
+                    <DropdownMenu>
+                      <DropdownMenuTrigger asChild>
+                        <Button variant="ghost" size="icon" className="h-8 w-8">
+                          <MoreHorizontal className="h-4 w-4" />
+                        </Button>
+                      </DropdownMenuTrigger>
+                      <DropdownMenuContent align="end">
+                        <DropdownMenuItem asChild>
+                          <Link href={`/trainer/programs/${program.id}`}>
+                            <Pencil className="mr-2 h-4 w-4" />
+                            Edit
+                          </Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => handleDuplicate(program.id)} disabled={isDuplicating}>
+                          <Copy className="mr-2 h-4 w-4" />
+                          Duplicate
+                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem className="text-destructive" onClick={() => handleDelete(program.id)}>
+                          <Trash2 className="mr-2 h-4 w-4" />
+                          Delete
+                        </DropdownMenuItem>
+                      </DropdownMenuContent>
+                    </DropdownMenu>
+                  )}
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
