@@ -1,6 +1,7 @@
 'use client';
 
 import { Bell, Menu, Search } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -12,12 +13,34 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { useUser } from '@/hooks/use-user';
+import { removeAuthCookie } from '@/lib/api';
 
 interface HeaderProps {
   onMenuClick?: () => void;
 }
 
 export function Header({ onMenuClick }: HeaderProps) {
+  const router = useRouter();
+  const { data: userData } = useUser();
+  const user = userData?.user;
+
+  const userName = user?.firstName && user?.lastName
+    ? `${user.firstName} ${user.lastName}`
+    : user?.displayName || 'User';
+
+  const initials = userName
+    .split(' ')
+    .map(n => n[0])
+    .join('')
+    .toUpperCase()
+    .slice(0, 2);
+
+  const handleLogout = () => {
+    removeAuthCookie();
+    router.push('/login');
+  };
+
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b bg-background/95 px-6 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex items-center gap-4">
@@ -51,25 +74,32 @@ export function Header({ onMenuClick }: HeaderProps) {
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="relative h-8 w-8 rounded-full">
               <Avatar className="h-8 w-8">
-                <AvatarFallback className="bg-forma-teal text-white">U</AvatarFallback>
+                <AvatarImage src={user?.avatarUrl || undefined} />
+                <AvatarFallback className="bg-forma-teal text-white">
+                  {initials}
+                </AvatarFallback>
               </Avatar>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56" align="end" forceMount>
             <DropdownMenuLabel className="font-normal">
               <div className="flex flex-col space-y-1">
-                <p className="text-sm font-medium leading-none">Ahmed Hassan</p>
+                <p className="text-sm font-medium leading-none">{userName}</p>
                 <p className="text-xs leading-none text-muted-foreground">
-                  ahmed@example.com
+                  {user?.email || ''}
                 </p>
               </div>
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Settings</DropdownMenuItem>
+            <DropdownMenuItem onClick={() => router.push('/trainer/settings')}>
+              Profile
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => router.push('/trainer/settings')}>
+              Settings
+            </DropdownMenuItem>
             <DropdownMenuItem>Support</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem className="text-destructive">
+            <DropdownMenuItem className="text-destructive" onClick={handleLogout}>
               Log out
             </DropdownMenuItem>
           </DropdownMenuContent>

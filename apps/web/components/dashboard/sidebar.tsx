@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import {
   BarChart3,
   Calendar,
@@ -18,6 +18,9 @@ import {
   FlaskConical,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useUser } from '@/hooks/use-user';
+import { removeAuthCookie } from '@/lib/api';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 interface SidebarProps {
   type: 'trainer' | 'admin';
@@ -46,7 +49,27 @@ const adminLinks = [
 
 export function Sidebar({ type }: SidebarProps) {
   const pathname = usePathname();
+  const router = useRouter();
+  const { data: userData } = useUser();
+  const user = userData?.user;
+
   const links = type === 'trainer' ? trainerLinks : adminLinks;
+
+  const userName = user?.firstName && user?.lastName
+    ? `${user.firstName} ${user.lastName}`
+    : user?.displayName || 'User';
+
+  const initials = userName
+    .split(' ')
+    .map(n => n[0])
+    .join('')
+    .toUpperCase()
+    .slice(0, 2);
+
+  const handleLogout = () => {
+    removeAuthCookie();
+    router.push('/login');
+  };
 
   return (
     <aside className="fixed left-0 top-0 z-40 h-screen w-64 border-r border-border/50 bg-card/50 backdrop-blur-xl">
@@ -96,6 +119,7 @@ export function Sidebar({ type }: SidebarProps) {
             Back to Website
           </Link>
           <button
+            onClick={handleLogout}
             className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-destructive/10 hover:text-destructive transition-colors"
           >
             <LogOut className="h-5 w-5" />
@@ -106,13 +130,16 @@ export function Sidebar({ type }: SidebarProps) {
         {/* User section */}
         <div className="border-t border-border/50 p-4">
           <div className="flex items-center gap-3 rounded-xl bg-muted/50 px-3 py-3">
-            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-cyan-500 to-purple-500 flex items-center justify-center text-white font-semibold">
-              A
-            </div>
+            <Avatar className="h-10 w-10">
+              <AvatarImage src={user?.avatarUrl || undefined} />
+              <AvatarFallback className="bg-gradient-to-br from-cyan-500 to-purple-500 text-white font-semibold">
+                {initials}
+              </AvatarFallback>
+            </Avatar>
             <div className="flex-1 truncate">
-              <p className="text-sm font-medium">Ahmed Hassan</p>
-              <p className="truncate text-xs text-muted-foreground">
-                Trainer
+              <p className="text-sm font-medium">{userName}</p>
+              <p className="truncate text-xs text-muted-foreground capitalize">
+                {type}
               </p>
             </div>
           </div>

@@ -46,7 +46,49 @@ export function useSendMessage() {
 
   return useMutation({
     mutationFn: (data: SendMessageData) => chatApi.sendMessage(data),
-    onSuccess: (_, variables) => {
+    // Optimistic update - show message immediately
+    onMutate: async (newMessage) => {
+      // Cancel any outgoing refetches
+      await queryClient.cancelQueries({ queryKey: chatKeys.messages(newMessage.conversationId) });
+
+      // Snapshot the previous value
+      const previousMessages = queryClient.getQueryData(chatKeys.messages(newMessage.conversationId));
+
+      // Optimistically add the new message
+      queryClient.setQueryData(chatKeys.messages(newMessage.conversationId), (old: any) => {
+        if (!old?.pages) return old;
+        const optimisticMessage = {
+          id: `temp-${Date.now()}`,
+          type: newMessage.type,
+          content: newMessage.content,
+          mediaUrl: newMessage.mediaUrl,
+          createdAt: new Date().toISOString(),
+          isMine: true,
+          sender: { id: 'me', name: 'Me' },
+        };
+        return {
+          ...old,
+          pages: old.pages.map((page: any, index: number) =>
+            index === 0
+              ? { ...page, messages: [...page.messages, optimisticMessage] }
+              : page
+          ),
+        };
+      });
+
+      return { previousMessages };
+    },
+    onError: (err, newMessage, context) => {
+      // Rollback on error
+      if (context?.previousMessages) {
+        queryClient.setQueryData(
+          chatKeys.messages(newMessage.conversationId),
+          context.previousMessages
+        );
+      }
+    },
+    onSettled: (_, __, variables) => {
+      // Always refetch after error or success to get real data
       queryClient.invalidateQueries({ queryKey: chatKeys.messages(variables.conversationId) });
       queryClient.invalidateQueries({ queryKey: chatKeys.conversations() });
     },

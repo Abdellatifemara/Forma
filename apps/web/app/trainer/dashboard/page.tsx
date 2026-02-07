@@ -34,7 +34,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { cn } from '@/lib/utils';
-import { trainersApi, type TrainerProfile, type TrainerStats, type TrainerClientResponse } from '@/lib/api';
+import { trainersApi, chatApi, type TrainerProfile, type TrainerStats, type TrainerClientResponse } from '@/lib/api';
 
 export default function TrainerDashboardPage() {
   const [copied, setCopied] = useState(false);
@@ -43,19 +43,22 @@ export default function TrainerDashboardPage() {
   const [stats, setStats] = useState<TrainerStats | null>(null);
   const [clients, setClients] = useState<TrainerClientResponse[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [unreadCount, setUnreadCount] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
       setIsLoading(true);
       try {
-        const [profileRes, statsRes, clientsRes] = await Promise.all([
+        const [profileRes, statsRes, clientsRes, unreadRes] = await Promise.all([
           trainersApi.getMyProfile(),
           trainersApi.getDashboardStats(),
           trainersApi.getClients(),
+          chatApi.getUnreadCount().catch(() => ({ unreadCount: 0 })),
         ]);
         setProfile(profileRes);
         setStats(statsRes);
         setClients(clientsRes.slice(0, 4)); // Show only first 4 clients
+        setUnreadCount(unreadRes.unreadCount || 0);
       } catch (err: any) {
         console.error('Error fetching trainer data:', err);
         setError(err.message || 'Failed to load dashboard');
@@ -351,7 +354,9 @@ export default function TrainerDashboardPage() {
               <Link href="/trainer/messages">
                 <MessageSquare className="mr-3 h-5 w-5" />
                 Message Clients
-                <Badge className="ml-auto bg-primary text-primary-foreground">3</Badge>
+                {unreadCount > 0 && (
+                  <Badge className="ml-auto bg-primary text-primary-foreground">{unreadCount}</Badge>
+                )}
               </Link>
             </Button>
           </CardContent>
