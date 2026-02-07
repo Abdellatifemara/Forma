@@ -185,11 +185,32 @@ async function seedTestAccounts() {
       trainerId: trainerProfile.id,
       clientId: premiumPlusUser.id,
       isActive: true,
+      complianceRate: 85,
       startDate: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000),
     },
   });
 
   console.log(`✅ Premium+ user account: vip@forma.fitness`);
+
+  // Also connect Premium user to trainer (for testing)
+  await prisma.trainerClient.upsert({
+    where: {
+      trainerId_clientId: {
+        trainerId: trainerProfile.id,
+        clientId: premiumUser.id,
+      },
+    },
+    update: {},
+    create: {
+      trainerId: trainerProfile.id,
+      clientId: premiumUser.id,
+      isActive: true,
+      complianceRate: 72,
+      startDate: new Date(Date.now() - 60 * 24 * 60 * 60 * 1000),
+    },
+  });
+
+  console.log(`  ↳ Connected premium@forma.fitness to trainer`);
 
   // ==========================================
   // 5. FREE USER ACCOUNT
