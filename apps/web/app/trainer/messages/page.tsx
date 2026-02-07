@@ -12,6 +12,8 @@ import {
   Image as ImageIcon,
   MessageSquare,
   User,
+  Plus,
+  UserPlus,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -35,7 +37,15 @@ import {
   useCreateConversation,
 } from '@/hooks/use-chat';
 import type { Conversation, ChatMessage, MessageType } from '@/lib/api';
+import { trainersApi, type TrainerClientResponse } from '@/lib/api';
 import { cn } from '@/lib/utils';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 
 function formatTime(dateString: string) {
   const date = new Date(dateString);
@@ -67,6 +77,9 @@ function MessagesPageContent() {
   const [newMessage, setNewMessage] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [isCreatingConversation, setIsCreatingConversation] = useState(false);
+  const [showNewChatDialog, setShowNewChatDialog] = useState(false);
+  const [clients, setClients] = useState<TrainerClientResponse[]>([]);
+  const [clientsLoading, setClientsLoading] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // API hooks
@@ -76,6 +89,44 @@ function MessagesPageContent() {
   const sendMessage = useSendMessage();
   const { sendImageMessage, sendVoiceMessage, isLoading: mediaLoading, isUploadingImage, isUploadingVoice } = useSendMediaMessage();
   const markAsRead = useMarkAsRead();
+
+  // Load trainer's clients
+  useEffect(() => {
+    async function loadClients() {
+      try {
+        const data = await trainersApi.getClients();
+        setClients(data);
+      } catch (error) {
+        console.error('Failed to load clients:', error);
+      } finally {
+        setClientsLoading(false);
+      }
+    }
+    loadClients();
+  }, []);
+
+  // Get clients who don't have conversations yet
+  const clientsWithoutConversation = useMemo(() => {
+    if (!clients.length) return [];
+    const conversationClientIds = new Set(
+      conversations?.map(c => c.participant?.id).filter(Boolean) || []
+    );
+    return clients.filter(c => !conversationClientIds.has(c.clientId));
+  }, [clients, conversations]);
+
+  // Start new conversation with a client
+  const handleStartConversation = async (clientId: string) => {
+    setShowNewChatDialog(false);
+    setIsCreatingConversation(true);
+    try {
+      const newConv = await createConversation.mutateAsync(clientId);
+      setSelectedConversationId(newConv.id);
+    } catch (error) {
+      console.error('Failed to create conversation:', error);
+    } finally {
+      setIsCreatingConversation(false);
+    }
+  };
 
   // Flatten messages from infinite query
   const messages = useMemo(() => {
@@ -222,9 +273,95 @@ function MessagesPageContent() {
   return (
     <div className="space-y-6 pb-8">
       {/* Header */}
-      <div>
-        <h1 className="text-3xl font-bold">Messages</h1>
-        <p className="text-muted-foreground">Chat with your clients</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-3xl font-bold">Messages</h1>
+          <p className="text-muted-foreground">Chat with your clients</p>
+        </div>
+        <Dialog open={showNewChatDialog} onOpenChange={setShowNewChatDialog}>
+          <DialogTrigger asChild>
+            <Button className="btn-primary">
+              <Plus className="mr-2 h-4 w-4" />
+              New Chat
+            </Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>Start New Conversation</DialogTitle>
+            </DialogHeader>
+            <div className="max-h-[400px] overflow-y-auto">
+              {clientsLoading ? (
+                <div className="flex items-center justify-center py-8">
+                  <Loader2 className="h-6 w-6 animate-spin text-primary" />
+                </div>
+              ) : clients.length === 0 ? (
+                <div className="text-center py-8">
+                  <UserPlus className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
+                  <p className="text-muted-foreground">No clients yet</p>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Invite clients to start messaging them
+                  </p>
+                </div>
+              ) : (
+                <div className="space-y-2">
+                  {clients.map((client) => {
+                    const hasConversation = conversations?.some(
+                      c => c.participant?.id === client.clientId
+                    );
+                    return (
+                      <div
+                        key={client.id}
+                        className={cn(
+                          "flex items-center gap-3 p-3 rounded-lg border transition-all",
+                          hasConversation
+                            ? "border-border/30 bg-muted/30 cursor-default"
+                            : "border-border/50 hover:border-primary/50 cursor-pointer hover:bg-primary/5"
+                        )}
+                        onClick={() => {
+                          if (hasConversation) {
+                            // Select existing conversation
+                            const existingConv = conversations?.find(
+                              c => c.participant?.id === client.clientId
+                            );
+                            if (existingConv) {
+                              setSelectedConversationId(existingConv.id);
+                              setShowNewChatDialog(false);
+                            }
+                          } else {
+                            handleStartConversation(client.clientId);
+                          }
+                        }}
+                      >
+                        <Avatar className="h-10 w-10 border-2 border-border/50">
+                          <AvatarImage src={client.client.avatarUrl || undefined} />
+                          <AvatarFallback className="bg-primary/10 text-primary">
+                            {client.client.firstName?.charAt(0)}
+                            {client.client.lastName?.charAt(0)}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="flex-1 min-w-0">
+                          <p className="font-semibold truncate">
+                            {client.client.firstName} {client.client.lastName}
+                          </p>
+                          <p className="text-sm text-muted-foreground truncate">
+                            {client.currentProgram?.name || 'No program assigned'}
+                          </p>
+                        </div>
+                        {hasConversation ? (
+                          <Badge variant="secondary" className="text-xs">
+                            Active
+                          </Badge>
+                        ) : (
+                          <MessageSquare className="h-5 w-5 text-muted-foreground" />
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
 
       <div className="flex h-[calc(100vh-14rem)] gap-6">
@@ -251,7 +388,17 @@ function MessagesPageContent() {
               ) : filteredConversations.length === 0 ? (
                 <div className="p-8 text-center">
                   <MessageSquare className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-                  <p className="text-muted-foreground">No conversations yet</p>
+                  <p className="text-muted-foreground mb-2">No conversations yet</p>
+                  {clients.length > 0 && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setShowNewChatDialog(true)}
+                    >
+                      <Plus className="mr-2 h-4 w-4" />
+                      Start a Chat
+                    </Button>
+                  )}
                 </div>
               ) : (
                 filteredConversations.map((conv) => (

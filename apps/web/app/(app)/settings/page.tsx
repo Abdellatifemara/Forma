@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import {
   Bell,
@@ -17,6 +17,7 @@ import {
   User,
   Volume2,
   Loader2,
+  Camera,
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -43,12 +44,15 @@ import {
 } from '@/components/ui/dialog';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useUser, useUpdateProfile } from '@/hooks/use-user';
-import { removeAuthCookie } from '@/lib/api';
+import { useToast } from '@/hooks/use-toast';
+import { removeAuthCookie, uploadApi } from '@/lib/api';
 
 export default function SettingsPage() {
   const router = useRouter();
-  const { data: userData, isLoading: userLoading } = useUser();
+  const { data: userData, isLoading: userLoading, refetch: refetchUser } = useUser();
   const updateProfile = useUpdateProfile();
+  const { toast } = useToast();
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const user = userData?.user;
 
@@ -70,6 +74,7 @@ export default function SettingsPage() {
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [showPasswordDialog, setShowPasswordDialog] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+  const [isUploadingPhoto, setIsUploadingPhoto] = useState(false);
 
   // Populate form with user data
   useEffect(() => {
@@ -92,10 +97,73 @@ export default function SettingsPage() {
         language,
         measurementUnit: unit,
       });
+      await refetchUser();
+      toast({
+        title: 'Profile updated',
+        description: 'Your changes have been saved successfully.',
+      });
     } catch (error) {
       console.error('Failed to save profile:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to save profile. Please try again.',
+        variant: 'destructive',
+      });
     } finally {
       setIsSaving(false);
+    }
+  };
+
+  const handlePhotoUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    // Validate file type
+    if (!file.type.startsWith('image/')) {
+      toast({
+        title: 'Invalid file',
+        description: 'Please select an image file.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    // Validate file size (max 5MB)
+    if (file.size > 5 * 1024 * 1024) {
+      toast({
+        title: 'File too large',
+        description: 'Please select an image under 5MB.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    setIsUploadingPhoto(true);
+    try {
+      // Upload to Cloudinary
+      const { url } = await uploadApi.uploadImage(file);
+
+      // Update profile with new avatar URL
+      await updateProfile.mutateAsync({ avatarUrl: url });
+      await refetchUser();
+
+      toast({
+        title: 'Photo updated',
+        description: 'Your profile photo has been changed.',
+      });
+    } catch (error) {
+      console.error('Failed to upload photo:', error);
+      toast({
+        title: 'Upload failed',
+        description: 'Failed to upload photo. Please try again.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsUploadingPhoto(false);
+      // Reset file input
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
     }
   };
 
@@ -153,12 +221,19 @@ export default function SettingsPage() {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="flex items-center gap-4">
-                <Avatar className="h-20 w-20">
-                  <AvatarImage src={user?.avatarUrl || undefined} />
-                  <AvatarFallback className="text-xl">
-                    {getInitials()}
-                  </AvatarFallback>
-                </Avatar>
+                <div className="relative">
+                  <Avatar className="h-20 w-20">
+                    <AvatarImage src={user?.avatarUrl || undefined} />
+                    <AvatarFallback className="text-xl">
+                      {getInitials()}
+                    </AvatarFallback>
+                  </Avatar>
+                  {isUploadingPhoto && (
+                    <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/50">
+                      <Loader2 className="h-6 w-6 animate-spin text-white" />
+                    </div>
+                  )}
+                </div>
                 <div>
                   <h3 className="font-semibold">
                     {user?.firstName && user?.lastName
@@ -170,8 +245,31 @@ export default function SettingsPage() {
                     Member since {formatMemberSince()}
                   </p>
                 </div>
-                <Button variant="outline" className="ml-auto">
-                  Change Photo
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={handlePhotoUpload}
+                  disabled={isUploadingPhoto}
+                />
+                <Button
+                  variant="outline"
+                  className="ml-auto"
+                  onClick={() => fileInputRef.current?.click()}
+                  disabled={isUploadingPhoto}
+                >
+                  {isUploadingPhoto ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Uploading...
+                    </>
+                  ) : (
+                    <>
+                      <Camera className="mr-2 h-4 w-4" />
+                      Change Photo
+                    </>
+                  )}
                 </Button>
               </div>
 
