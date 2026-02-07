@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import {
@@ -46,7 +46,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { cn } from '@/lib/utils';
 import { useProgramsManager } from '@/hooks/use-programs';
 
-export default function ProgramsPage() {
+function ProgramsPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const assignToClientId = searchParams.get('assign');
@@ -477,5 +477,13 @@ export default function ProgramsPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function ProgramsPage() {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center min-h-[50vh]"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>}>
+      <ProgramsPageContent />
+    </Suspense>
   );
 }
