@@ -85,7 +85,7 @@ function ExercisesPageContent() {
         const exerciseData = response.data || (response as any).exercises || [];
         setExercises(exerciseData);
       } catch (error) {
-        console.error("Error searching exercises:", error);
+        // Error handled
         setExercises([]);
       } finally {
         setIsLoading(false);

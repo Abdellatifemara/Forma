@@ -1,18 +1,19 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Loader2, Sparkles } from 'lucide-react';
+import { Send, Bot, User, Loader2, Sparkles, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
+import { aiApi } from '@/lib/api';
 
 interface Message {
   id: string;
   role: 'user' | 'assistant';
   content: string;
   timestamp: Date;
+  error?: boolean;
 }
 
 const suggestedQuestions = [
@@ -20,7 +21,21 @@ const suggestedQuestions = [
   'How much protein should I eat daily?',
   'Create a workout for me today',
   'What are the benefits of creatine?',
+  'How can I improve my squat form?',
+  'What should I eat before a workout?',
 ];
+
+const SYSTEM_CONTEXT = `You are Forma AI, a knowledgeable fitness and nutrition coach. You help users with:
+- Workout planning and exercise recommendations
+- Nutrition advice and meal planning
+- Exercise form and technique tips
+- Supplement guidance
+- Motivation and goal setting
+- Recovery and injury prevention
+
+Be concise, friendly, and encouraging. Use bullet points and formatting for clarity.
+If you don't know something specific about the user, ask them.
+Always prioritize safety - recommend consulting professionals for medical concerns.`;
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([
@@ -28,7 +43,7 @@ export default function ChatPage() {
       id: '1',
       role: 'assistant',
       content:
-        "Hello! I'm your AI fitness coach. I can help you with workout suggestions, nutrition advice, exercise form tips, and answer any fitness-related questions. How can I help you today?",
+        "Hello! I'm Forma AI, your personal fitness coach. I can help you with workout suggestions, nutrition advice, exercise form tips, and answer any fitness-related questions. How can I help you today?",
       timestamp: new Date(),
     },
   ]);
@@ -55,46 +70,54 @@ export default function ChatPage() {
     };
 
     setMessages((prev) => [...prev, userMessage]);
+    const userInput = input;
     setInput('');
     setIsLoading(true);
 
-    // Simulate AI response
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // Build context from recent messages for continuity
+      const recentMessages = messages.slice(-6).map(m =>
+        `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.content}`
+      ).join('\n');
 
-    const responses: Record<string, string> = {
-      chest:
-        "Great question! For chest development, I recommend:\n\n1. **Bench Press** - The king of chest exercises\n2. **Incline Dumbbell Press** - Targets upper chest\n3. **Cable Flyes** - Great for isolation\n4. **Push-ups** - Bodyweight classic\n5. **Dips** - Compound movement\n\nWould you like me to create a chest workout for you?",
-      protein:
-        "For optimal muscle building and recovery, I recommend:\n\n**Daily Protein Intake:** 1.6-2.2g per kg of body weight\n\nBased on your profile (83kg), that's approximately **133-183g of protein daily**.\n\nGood protein sources:\n- Chicken breast (31g per 100g)\n- Greek yogurt (10g per 100g)\n- Eggs (6g per egg)\n- Fish (20-25g per 100g)\n- Legumes (for plant-based options)\n\nWould you like help planning your meals to hit this target?",
-      workout:
-        "Based on your Push Pull Legs program, here's today's workout:\n\n**Push Day - Chest & Triceps**\n\n1. Bench Press - 4x8\n2. Incline Dumbbell Press - 3x10\n3. Cable Flyes - 3x12\n4. Overhead Tricep Extension - 3x12\n5. Tricep Pushdowns - 3x15\n6. Lateral Raises - 3x15\n\nEstimated duration: 45-50 minutes\n\nShall I start tracking this workout?",
-      creatine:
-        "Creatine is one of the most researched and effective supplements:\n\n**Benefits:**\n✅ Increased strength and power\n✅ Improved muscle recovery\n✅ Enhanced brain function\n✅ Safe for long-term use\n\n**Recommended dosage:** 3-5g daily\n\n**Best type:** Creatine Monohydrate (most studied, cost-effective)\n\n**When to take:** Timing doesn't matter much, just be consistent.\n\nWould you like more information about supplements?",
-    };
+      const fullContext = `${SYSTEM_CONTEXT}\n\nRecent conversation:\n${recentMessages}`;
 
-    let response =
-      "I'm here to help with your fitness questions! I can assist with workout planning, nutrition advice, exercise form, and more. What would you like to know?";
+      const response = await aiApi.chat(userInput, fullContext);
 
-    for (const [key, value] of Object.entries(responses)) {
-      if (input.toLowerCase().includes(key)) {
-        response = value;
-        break;
-      }
+      const assistantMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: response.response,
+        timestamp: new Date(),
+      };
+
+      setMessages((prev) => [...prev, assistantMessage]);
+    } catch (error) {
+      // Error handled
+
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: "I'm sorry, I couldn't process your request right now. Please try again in a moment.",
+        timestamp: new Date(),
+        error: true,
+      };
+
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
+      setIsLoading(false);
     }
-
-    const assistantMessage: Message = {
-      id: (Date.now() + 1).toString(),
-      role: 'assistant',
-      content: response,
-      timestamp: new Date(),
-    };
-
-    setMessages((prev) => [...prev, assistantMessage]);
-    setIsLoading(false);
   };
 
   const handleSuggestionClick = (question: string) => {
     setInput(question);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      handleSend();
+    }
   };
 
   return (
@@ -102,12 +125,12 @@ export default function ChatPage() {
       {/* Header */}
       <div className="border-b px-4 py-3">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-forma-teal/20">
-            <Sparkles className="h-5 w-5 text-forma-teal" />
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-forma-teal to-cyan-400">
+            <Sparkles className="h-5 w-5 text-white" />
           </div>
           <div>
-            <h1 className="font-semibold">AI Fitness Coach</h1>
-            <p className="text-sm text-muted-foreground">Powered by Forma AI</p>
+            <h1 className="font-semibold">Forma AI Coach</h1>
+            <p className="text-sm text-muted-foreground">Powered by OpenAI</p>
           </div>
           <Badge variant="forma" className="ml-auto">
             Pro Feature
@@ -129,12 +152,18 @@ export default function ChatPage() {
                 <AvatarFallback
                   className={
                     message.role === 'assistant'
-                      ? 'bg-forma-teal/20 text-forma-teal'
+                      ? message.error
+                        ? 'bg-destructive/20 text-destructive'
+                        : 'bg-gradient-to-br from-forma-teal to-cyan-400 text-white'
                       : 'bg-muted'
                   }
                 >
                   {message.role === 'assistant' ? (
-                    <Bot className="h-4 w-4" />
+                    message.error ? (
+                      <AlertCircle className="h-4 w-4" />
+                    ) : (
+                      <Bot className="h-4 w-4" />
+                    )
                   ) : (
                     <User className="h-4 w-4" />
                   )}
@@ -144,11 +173,28 @@ export default function ChatPage() {
                 className={`max-w-[80%] rounded-2xl px-4 py-3 ${
                   message.role === 'user'
                     ? 'bg-forma-teal text-forma-navy'
+                    : message.error
+                    ? 'bg-destructive/10 border border-destructive/20'
                     : 'bg-muted'
                 }`}
               >
-                <p className="whitespace-pre-wrap text-sm">{message.content}</p>
-                <p className="mt-1 text-xs opacity-60">
+                <div className="whitespace-pre-wrap text-sm prose prose-sm dark:prose-invert max-w-none">
+                  {message.content.split('\n').map((line, i) => (
+                    <p key={i} className="mb-1 last:mb-0">
+                      {line.startsWith('- ') || line.startsWith('• ') ? (
+                        <span className="flex gap-2">
+                          <span className="text-forma-teal">•</span>
+                          <span>{line.substring(2)}</span>
+                        </span>
+                      ) : line.startsWith('**') && line.endsWith('**') ? (
+                        <strong>{line.slice(2, -2)}</strong>
+                      ) : (
+                        line
+                      )}
+                    </p>
+                  ))}
+                </div>
+                <p className="mt-2 text-xs opacity-60">
                   {message.timestamp.toLocaleTimeString([], {
                     hour: '2-digit',
                     minute: '2-digit',
@@ -161,12 +207,15 @@ export default function ChatPage() {
           {isLoading && (
             <div className="flex gap-3">
               <Avatar className="h-8 w-8">
-                <AvatarFallback className="bg-forma-teal/20 text-forma-teal">
+                <AvatarFallback className="bg-gradient-to-br from-forma-teal to-cyan-400 text-white">
                   <Bot className="h-4 w-4" />
                 </AvatarFallback>
               </Avatar>
               <div className="rounded-2xl bg-muted px-4 py-3">
-                <Loader2 className="h-5 w-5 animate-spin text-muted-foreground" />
+                <div className="flex items-center gap-2">
+                  <Loader2 className="h-4 w-4 animate-spin text-forma-teal" />
+                  <span className="text-sm text-muted-foreground">Thinking...</span>
+                </div>
               </div>
             </div>
           )}
@@ -179,7 +228,7 @@ export default function ChatPage() {
       {messages.length === 1 && (
         <div className="border-t px-4 py-3">
           <p className="mb-2 text-sm text-muted-foreground">
-            Suggested questions:
+            Try asking:
           </p>
           <div className="flex flex-wrap gap-2">
             {suggestedQuestions.map((question) => (
@@ -187,6 +236,7 @@ export default function ChatPage() {
                 key={question}
                 variant="outline"
                 size="sm"
+                className="text-xs"
                 onClick={() => handleSuggestionClick(question)}
               >
                 {question}
@@ -203,7 +253,7 @@ export default function ChatPage() {
             placeholder="Ask me anything about fitness..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+            onKeyDown={handleKeyDown}
             disabled={isLoading}
             className="flex-1"
           />
@@ -213,7 +263,11 @@ export default function ChatPage() {
             onClick={handleSend}
             disabled={!input.trim() || isLoading}
           >
-            <Send className="h-4 w-4" />
+            {isLoading ? (
+              <Loader2 className="h-4 w-4 animate-spin" />
+            ) : (
+              <Send className="h-4 w-4" />
+            )}
           </Button>
         </div>
       </div>

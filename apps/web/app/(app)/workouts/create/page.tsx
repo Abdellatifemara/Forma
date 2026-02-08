@@ -150,7 +150,7 @@ export default function CreateWorkoutPlanPage() {
       await workoutsApi.createPlan(planData);
       router.push('/workouts');
     } catch (err) {
-      console.error('Failed to save plan:', err);
+      // Error handled
       setError(err instanceof Error ? err.message : 'Failed to save plan. Please try again.');
     } finally {
       setIsSubmitting(false);

@@ -10,6 +10,7 @@ import {
   ChevronRight,
   DollarSign,
   FileText,
+  Loader2,
   Star,
   Upload,
   Users,
@@ -28,6 +29,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { trainersApi } from '@/lib/api';
 
 const specializations = [
   'Weight Loss',
@@ -138,9 +140,28 @@ export default function BecomeTrainerPage() {
     }
   };
 
-  const handleSubmit = () => {
-    console.log('Submitting application:', formData);
-    router.push('/become-trainer/success');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  const handleSubmit = async () => {
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      await trainersApi.apply({
+        bio: formData.bio,
+        specializations: formData.specializations,
+        certifications: formData.certifications,
+        experience: parseInt(formData.yearsExperience) || 0,
+        hourlyRate: parseInt(formData.hourlyRate) || 0,
+      });
+      router.push('/become-trainer/success');
+    } catch (error) {
+      // Error handled
+      setSubmitError(error instanceof Error ? error.message : 'Failed to submit application');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const progress = ((currentStep + 1) / (steps.length + 1)) * 100;
@@ -639,13 +660,26 @@ export default function BecomeTrainerPage() {
               </div>
             </div>
 
+            {submitError && (
+              <div className="rounded-lg border border-destructive/50 bg-destructive/10 p-4 text-destructive">
+                {submitError}
+              </div>
+            )}
+
             <div className="flex justify-end">
               <Button
                 variant="forma"
                 onClick={handleSubmit}
-                disabled={!formData.hourlyRate || !formData.monthlyRate}
+                disabled={!formData.hourlyRate || !formData.monthlyRate || isSubmitting}
               >
-                Submit Application
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Submitting...
+                  </>
+                ) : (
+                  'Submit Application'
+                )}
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </div>

@@ -58,7 +58,7 @@ export default function TrainersMarketplacePage() {
         const response = await trainersApi.getMarketplace();
         setTrainers(response.data || []);
       } catch (err) {
-        console.error('Failed to load trainers:', err);
+        // Error handled
         setError(err instanceof Error ? err.message : 'Failed to load trainers');
       } finally {
         setIsLoading(false);
@@ -315,23 +315,23 @@ function TrainerCard({ trainer, featured = false }: { trainer: Trainer; featured
               </div>
               <div className="flex items-center justify-between text-sm">
                 <div className="flex items-center gap-4">
-                  {trainer.rating > 0 && (
+                  {(trainer.rating ?? 0) > 0 && (
                     <span className="flex items-center gap-1">
                       <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
-                      {trainer.rating.toFixed(1)}
-                      {trainer.reviewCount > 0 && (
+                      {(trainer.rating ?? 0).toFixed(1)}
+                      {(trainer.reviewCount ?? 0) > 0 && (
                         <span className="text-muted-foreground">({trainer.reviewCount})</span>
                       )}
                     </span>
                   )}
-                  {trainer.experience > 0 && (
+                  {(trainer.experience ?? 0) > 0 && (
                     <span className="flex items-center gap-1 text-muted-foreground">
                       <Award className="h-4 w-4" />
                       {trainer.experience}y exp
                     </span>
                   )}
                 </div>
-                {trainer.hourlyRate > 0 && (
+                {(trainer.hourlyRate ?? 0) > 0 && (
                   <span className="font-semibold text-primary">
                     {trainer.hourlyRate} EGP/hr
                   </span>

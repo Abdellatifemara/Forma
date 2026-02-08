@@ -5,11 +5,15 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { EncryptionService } from './encryption.service';
 import { MessageType } from '@prisma/client';
 
 @Injectable()
 export class ChatService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly encryption: EncryptionService,
+  ) {}
 
   async createOrGetConversation(userId: string, participantId: string) {
     if (userId === participantId) {
@@ -169,10 +173,11 @@ export class ChatService {
       messages: messagesData.map((msg) => ({
         id: msg.id,
         type: msg.type,
-        content: msg.content,
+        content: this.encryption.decrypt(msg.content, conversationId),
         mediaUrl: msg.mediaUrl,
         createdAt: msg.createdAt.toISOString(),
         isEdited: msg.isEdited,
+        isEncrypted: true, // E2E indicator
         sender: {
           id: msg.sender.id,
           name: `${msg.sender.firstName} ${msg.sender.lastName}`,
@@ -204,6 +209,9 @@ export class ChatService {
       throw new ForbiddenException('Not a participant of this conversation');
     }
 
+    // Encrypt message content before storing
+    const encryptedContent = this.encryption.encrypt(data.content, data.conversationId);
+
     // Create message and update conversation
     const [message] = await this.prisma.$transaction([
       this.prisma.message.create({
@@ -211,7 +219,7 @@ export class ChatService {
           conversationId: data.conversationId,
           senderId: userId,
           type: data.type,
-          content: data.content,
+          content: encryptedContent,
           mediaUrl: data.mediaUrl,
         },
         include: {
@@ -234,10 +242,11 @@ export class ChatService {
     return {
       id: message.id,
       type: message.type,
-      content: message.content,
+      content: data.content, // Return original content to sender
       mediaUrl: message.mediaUrl,
       createdAt: message.createdAt.toISOString(),
       isEdited: message.isEdited,
+      isEncrypted: true, // E2E indicator
       sender: {
         id: message.sender.id,
         name: `${message.sender.firstName} ${message.sender.lastName}`,

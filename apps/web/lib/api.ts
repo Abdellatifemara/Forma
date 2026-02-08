@@ -34,6 +34,9 @@ interface RequestConfig extends RequestInit {
   params?: Record<string, string>;
 }
 
+// Request deduplication cache for GET requests
+const pendingRequests = new Map<string, Promise<unknown>>();
+
 class ApiClient {
   private baseUrl: string;
 
@@ -41,7 +44,12 @@ class ApiClient {
     this.baseUrl = baseUrl;
   }
 
-  private async request<T>(endpoint: string, config: RequestConfig = {}): Promise<T> {
+  private getRequestKey(endpoint: string, params?: Record<string, string>): string {
+    const paramsStr = params ? JSON.stringify(params) : '';
+    return `GET:${endpoint}:${paramsStr}`;
+  }
+
+  private async executeRequest<T>(endpoint: string, config: RequestConfig = {}): Promise<T> {
     const { params, ...init } = config;
 
     let url = `${this.baseUrl}${endpoint}`;
@@ -55,7 +63,6 @@ class ApiClient {
       ...(init.headers as Record<string, string>),
     };
 
-    // Get token from cookie
     const token = getAuthCookie();
     if (token) {
       headers['Authorization'] = `Bearer ${token}`;
@@ -72,6 +79,30 @@ class ApiClient {
     }
 
     return response.json();
+  }
+
+  private async request<T>(endpoint: string, config: RequestConfig = {}): Promise<T> {
+    const method = (config.method || 'GET').toUpperCase();
+
+    // Only deduplicate GET requests
+    if (method === 'GET') {
+      const key = this.getRequestKey(endpoint, config.params);
+
+      if (pendingRequests.has(key)) {
+        return pendingRequests.get(key) as Promise<T>;
+      }
+
+      const promise = this.executeRequest<T>(endpoint, config);
+      pendingRequests.set(key, promise);
+
+      promise.finally(() => {
+        pendingRequests.delete(key);
+      });
+
+      return promise;
+    }
+
+    return this.executeRequest<T>(endpoint, config);
   }
 
   async get<T>(endpoint: string, params?: Record<string, string>): Promise<T> {
@@ -363,6 +394,25 @@ export const uploadApi = {
 
     return response.json();
   },
+
+  uploadAvatar: async (file: File): Promise<UploadResponse> => {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const token = getAuthCookie();
+    const response = await fetch(`${API_BASE_URL}/upload/avatar`, {
+      method: 'POST',
+      headers: token ? { 'Authorization': `Bearer ${token}` } : {},
+      body: formData,
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: 'Upload failed' }));
+      throw new Error(error.message || 'Upload failed');
+    }
+
+    return response.json();
+  },
 };
 
 // Squads API
@@ -426,6 +476,56 @@ export const chatApi = {
 
   getUnreadCount: () => api.get<{ unreadCount: number }>('/chat/unread-count'),
 };
+
+// AI API
+export const aiApi = {
+  chat: (message: string, context?: string) =>
+    api.post<{ response: string }>('/ai/chat', { message, context }),
+
+  getWorkoutRecommendation: (data: { fitnessGoal: string; fitnessLevel: string; equipment: string[] }) =>
+    api.post<{ recommendation: string }>('/ai/workout-recommendation', data),
+
+  getNutritionAdvice: (data: { goal: string; currentCalories: number; currentProtein: number }) =>
+    api.post<{ advice: string }>('/ai/nutrition-advice', data),
+
+  generatePlan: (data: {
+    goal: string;
+    fitnessLevel: string;
+    daysPerWeek: number;
+    durationWeeks: number;
+    availableEquipment: string[];
+    injuries: string[];
+    workoutDuration: number;
+    isRamadan?: boolean;
+  }) => api.post<{ plan: GeneratedWorkoutPlan }>('/ai/generate-plan', data),
+
+  getMotivation: (data: { streakDays: number; recentWorkouts: number; goalProgress: number; language: 'en' | 'ar' }) =>
+    api.post<{ message: string }>('/ai/motivate', data),
+};
+
+interface GeneratedWorkoutPlan {
+  planName: string;
+  planNameAr: string;
+  description: string;
+  descriptionAr: string;
+  weeklySchedule: {
+    dayOfWeek: number;
+    workoutName: string;
+    workoutNameAr: string;
+    focusMuscles: string[];
+    estimatedDuration: number;
+    exercises: {
+      name: string;
+      nameAr: string;
+      sets: number;
+      reps: string;
+      restSeconds: number;
+      notes?: string;
+    }[];
+  }[];
+  progressionNotes: string;
+  nutritionTips: string;
+}
 
 // Programs API (Trainer programs)
 export const programsApi = {
@@ -1522,16 +1622,46 @@ interface VolumeLoadData {
 interface Trainer {
   id: string;
   userId: string;
-  user: User;
-  bio: string;
-  specializations: string[];
-  certifications: string[];
-  experience: number;
-  rating: number;
-  reviewCount: number;
-  clientCount: number;
-  hourlyRate: number;
-  verified: boolean;
+  user?: User;
+  bio?: string;
+  specializations?: string[];
+  certifications?: string[];
+  experience?: number;
+  rating?: number;
+  reviewCount?: number;
+  clientCount?: number;
+  hourlyRate?: number;
+  monthlyRate?: number;
+  verified?: boolean;
+  location?: string;
+  languages?: string[];
+  availability?: string;
+  responseTime?: string;
+  socialLinks?: {
+    instagram?: string;
+    youtube?: string;
+    website?: string;
+  };
+  programs?: Array<{
+    id: string;
+    name: string;
+    description?: string;
+    duration?: string;
+    price?: number;
+    enrolled?: number;
+    rating?: number;
+  }>;
+  reviews?: Array<{
+    id: string;
+    user?: { firstName?: string; lastName?: string; displayName?: string };
+    userName?: string;
+    rating: number;
+    date?: string;
+    createdAt?: string;
+    text?: string;
+    comment?: string;
+    program?: string;
+  }>;
 }
 
 interface TrainerSearchParams {
@@ -2462,6 +2592,257 @@ interface TestDetail {
   completedAt?: string;
 }
 
+// ============================================
+// FITSTN COMPETITION FEATURES
+// ============================================
+
+// Health Metrics Types
+type HealthMetricType =
+  | 'WEIGHT'
+  | 'BODY_FAT_PERCENTAGE'
+  | 'BLOOD_PRESSURE_SYSTOLIC'
+  | 'BLOOD_PRESSURE_DIASTOLIC'
+  | 'HEART_RATE_RESTING'
+  | 'BLOOD_GLUCOSE_FASTING'
+  | 'BLOOD_GLUCOSE_POSTPRANDIAL'
+  | 'HBA1C'
+  | 'TOTAL_CHOLESTEROL'
+  | 'LDL_CHOLESTEROL'
+  | 'HDL_CHOLESTEROL'
+  | 'TRIGLYCERIDES'
+  | 'WAIST_CIRCUMFERENCE'
+  | 'HIP_CIRCUMFERENCE'
+  | 'SLEEP_HOURS'
+  | 'WATER_INTAKE_ML'
+  | 'STEPS';
+
+interface HealthMetric {
+  id: string;
+  type: HealthMetricType;
+  value: number;
+  unit: string;
+  date: string;
+  notes?: string;
+  source?: string;
+}
+
+interface CreateHealthMetricData {
+  type: HealthMetricType;
+  value: number;
+  unit: string;
+  date?: string;
+  notes?: string;
+  source?: string;
+}
+
+interface HealthMetricsDashboard {
+  current: {
+    weight: HealthMetric | null;
+    bodyFat: HealthMetric | null;
+    bloodPressure: HealthMetric | null;
+    glucose: HealthMetric | null;
+  };
+  trends: {
+    weightChange: number | null;
+    weightHistory: { date: string; value: number }[];
+  };
+}
+
+// Health Metrics API
+export const healthMetricsApi = {
+  create: (data: CreateHealthMetricData) =>
+    api.post<HealthMetric>('/health-metrics', data),
+
+  getAll: (params?: { type?: HealthMetricType; startDate?: string; endDate?: string }) =>
+    api.get<HealthMetric[]>('/health-metrics', params as Record<string, string>),
+
+  getDashboard: () =>
+    api.get<HealthMetricsDashboard>('/health-metrics/dashboard'),
+
+  getByType: (type: HealthMetricType, days?: number) =>
+    api.get<HealthMetric[]>(`/health-metrics/type/${type}`, { days: String(days || 30) }),
+
+  getLatest: (type: HealthMetricType) =>
+    api.get<HealthMetric | null>(`/health-metrics/latest/${type}`),
+
+  delete: (id: string) =>
+    api.delete<{ success: boolean }>(`/health-metrics/${id}`),
+};
+
+// Daily Check-In Types
+interface DailyCheckIn {
+  id: string;
+  date: string;
+  workoutCompleted?: boolean;
+  workoutRating?: number;
+  workoutNotes?: string;
+  nutritionCompleted?: boolean;
+  nutritionRating?: number;
+  nutritionNotes?: string;
+  sleepHours?: number;
+  sleepQuality?: number;
+  energyLevel?: number;
+  stressLevel?: number;
+  musclesoreness?: number;
+  mood?: number;
+  notes?: string;
+}
+
+interface CreateCheckInData {
+  workoutCompleted?: boolean;
+  workoutRating?: number;
+  workoutNotes?: string;
+  nutritionCompleted?: boolean;
+  nutritionRating?: number;
+  nutritionNotes?: string;
+  sleepHours?: number;
+  sleepQuality?: number;
+  energyLevel?: number;
+  stressLevel?: number;
+  musclesoreness?: number;
+  mood?: number;
+  notes?: string;
+}
+
+interface WeeklyCheckInStats {
+  totalCheckIns: number;
+  workoutsCompleted: number;
+  nutritionCompleted: number;
+  avgWorkoutRating: number | null;
+  avgNutritionRating: number | null;
+  avgSleepHours: number | null;
+  avgSleepQuality: number | null;
+  avgEnergyLevel: number | null;
+  avgStressLevel: number | null;
+  avgMood: number | null;
+}
+
+interface ComplianceRate {
+  workoutCompliance: number;
+  nutritionCompliance: number;
+  checkInCompliance: number;
+  totalDays: number;
+  checkInDays: number;
+}
+
+// Check-Ins API
+export const checkInsApi = {
+  createOrUpdate: (data: CreateCheckInData) =>
+    api.post<DailyCheckIn>('/check-ins', data),
+
+  createForDate: (date: string, data: CreateCheckInData) =>
+    api.post<DailyCheckIn>(`/check-ins/date/${date}`, data),
+
+  getToday: () =>
+    api.get<DailyCheckIn | null>('/check-ins/today'),
+
+  getHistory: (days?: number) =>
+    api.get<DailyCheckIn[]>('/check-ins/history', { days: String(days || 7) }),
+
+  getByDate: (date: string) =>
+    api.get<DailyCheckIn | null>(`/check-ins/date/${date}`),
+
+  getWeeklyStats: () =>
+    api.get<WeeklyCheckInStats | null>('/check-ins/weekly-stats'),
+
+  getCompliance: (days?: number) =>
+    api.get<ComplianceRate>('/check-ins/compliance', { days: String(days || 30) }),
+
+  // Trainer endpoints
+  getClientCheckIns: (clientId: string, days?: number) =>
+    api.get<DailyCheckIn[]>(`/check-ins/client/${clientId}`, { days: String(days || 7) }),
+
+  getClientsWithoutCheckIn: () =>
+    api.get<{ id: string; firstName: string; lastName: string; avatarUrl?: string }[]>(
+      '/check-ins/clients/no-checkin'
+    ),
+};
+
+// Scheduled Call Types
+type ScheduledCallType =
+  | 'ONBOARDING'
+  | 'WEEKLY_CHECKIN'
+  | 'PROGRESS_REVIEW'
+  | 'PROGRAM_UPDATE'
+  | 'EMERGENCY'
+  | 'CUSTOM';
+
+type ScheduledCallStatus =
+  | 'SCHEDULED'
+  | 'CONFIRMED'
+  | 'IN_PROGRESS'
+  | 'COMPLETED'
+  | 'CANCELLED'
+  | 'NO_SHOW';
+
+interface ScheduledCall {
+  id: string;
+  trainerId: string;
+  clientId: string;
+  scheduledAt: string;
+  duration: number;
+  type: ScheduledCallType;
+  status: ScheduledCallStatus;
+  meetingUrl?: string;
+  roomName?: string;
+  agenda?: string;
+  trainerNotes?: string;
+  clientNotes?: string;
+  recordingUrl?: string;
+  startedAt?: string;
+  endedAt?: string;
+}
+
+interface CreateScheduledCallData {
+  clientId: string;
+  scheduledAt: string;
+  duration?: number;
+  type: ScheduledCallType;
+  agenda?: string;
+}
+
+interface UpdateScheduledCallData {
+  scheduledAt?: string;
+  duration?: number;
+  type?: ScheduledCallType;
+  status?: ScheduledCallStatus;
+  agenda?: string;
+  trainerNotes?: string;
+  clientNotes?: string;
+}
+
+// Scheduled Calls API
+export const scheduledCallsApi = {
+  create: (data: CreateScheduledCallData) =>
+    api.post<ScheduledCall>('/scheduled-calls', data),
+
+  update: (id: string, data: UpdateScheduledCallData) =>
+    api.patch<ScheduledCall>(`/scheduled-calls/${id}`, data),
+
+  cancel: (id: string) =>
+    api.delete<ScheduledCall>(`/scheduled-calls/${id}`),
+
+  start: (id: string) =>
+    api.post<ScheduledCall>(`/scheduled-calls/${id}/start`),
+
+  end: (id: string, notes?: string) =>
+    api.post<ScheduledCall>(`/scheduled-calls/${id}/end`, { notes }),
+
+  getById: (id: string) =>
+    api.get<ScheduledCall>(`/scheduled-calls/${id}`),
+
+  // Trainer endpoints
+  getTrainerCalls: (params?: { upcoming?: boolean; status?: ScheduledCallStatus }) =>
+    api.get<ScheduledCall[]>('/scheduled-calls/trainer/all', params as Record<string, string>),
+
+  getTodaysCalls: () =>
+    api.get<ScheduledCall[]>('/scheduled-calls/trainer/today'),
+
+  // Client endpoints
+  getClientCalls: (params?: { upcoming?: boolean }) =>
+    api.get<ScheduledCall[]>('/scheduled-calls/client/all', params as Record<string, string>),
+};
+
 export type {
   User,
   OnboardingData,
@@ -2608,4 +2989,20 @@ export type {
   TrainingHistory,
   GoalsProfile,
   FastingProfile,
+  // Health Metrics types
+  HealthMetricType,
+  HealthMetric,
+  CreateHealthMetricData,
+  HealthMetricsDashboard,
+  // Check-In types
+  DailyCheckIn,
+  CreateCheckInData,
+  WeeklyCheckInStats,
+  ComplianceRate,
+  // Scheduled Call types
+  ScheduledCallType,
+  ScheduledCallStatus,
+  ScheduledCall,
+  CreateScheduledCallData,
+  UpdateScheduledCallData,
 };

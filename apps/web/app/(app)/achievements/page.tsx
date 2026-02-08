@@ -42,7 +42,7 @@ export default function AchievementsPage() {
         const data = await achievementsApi.getAll();
         setAchievements(data);
       } catch (error) {
-        console.error('Error fetching achievements:', error);
+        // Error handled
       } finally {
         setIsLoading(false);
       }

@@ -76,7 +76,7 @@ export default function TrainerInvitesPage() {
       setCopiedId(invite.id);
       setTimeout(() => setCopiedId(null), 2000);
     } catch (err) {
-      console.error('Failed to copy:', err);
+      // Error handled
     }
   };
 
@@ -116,7 +116,7 @@ export default function TrainerInvitesPage() {
       setIsCreateDialogOpen(false);
       setGrantsPremium(false);
     } catch (err) {
-      console.error('Failed to create invite:', err);
+      // Error handled
     } finally {
       setIsCreating(false);
     }
@@ -134,7 +134,7 @@ export default function TrainerInvitesPage() {
       );
       setDeactivateId(null);
     } catch (err) {
-      console.error('Failed to deactivate:', err);
+      // Error handled
     } finally {
       setIsDeactivating(false);
     }

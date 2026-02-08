@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { Search, Send, Phone, Video, MoreVertical, Loader2, MessageCircle } from 'lucide-react';
+import { Search, Send, Phone, Video, MoreVertical, Loader2, MessageCircle, Clock, CheckCheck, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card } from '@/components/ui/card';
@@ -121,8 +121,9 @@ export default function MessagesPage() {
     await sendImageMessage(selectedConversationId, file);
   };
 
-  const renderMessage = (message: ChatMessage) => {
+  const renderMessage = (message: ChatMessage & { isPending?: boolean }) => {
     const isMine = message.isMine;
+    const isPending = message.isPending || message.id.startsWith('temp-');
 
     return (
       <div
@@ -131,11 +132,11 @@ export default function MessagesPage() {
       >
         <div
           className={`max-w-[70%] rounded-2xl px-4 py-2 ${
-            isMine ? 'bg-forma-teal text-forma-navy' : 'bg-muted'
+            isMine ? 'bg-primary text-primary-foreground' : 'bg-muted'
           }`}
         >
           {message.type === 'TEXT' && (
-            <p className="text-sm">{message.content}</p>
+            <p className="text-sm whitespace-pre-wrap break-words">{message.content}</p>
           )}
 
           {message.type === 'IMAGE' && message.mediaUrl && (
@@ -157,9 +158,18 @@ export default function MessagesPage() {
             <p className="text-sm">{message.content}</p>
           )}
 
-          <p className="mt-1 text-xs opacity-60">
-            {formatMessageTime(message.createdAt)}
-          </p>
+          <div className={`flex items-center justify-end gap-1 mt-1 ${
+            isMine ? 'text-primary-foreground/70' : 'text-muted-foreground'
+          }`}>
+            <span className="text-[10px]">{formatMessageTime(message.createdAt)}</span>
+            {isMine && (
+              isPending ? (
+                <Clock className="h-3 w-3" />
+              ) : (
+                <CheckCheck className="h-3 w-3" />
+              )
+            )}
+          </div>
         </div>
       </div>
     );
@@ -298,9 +308,12 @@ export default function MessagesPage() {
                 </Avatar>
                 <div>
                   <p className="font-medium">{selectedConversation.participant?.name}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {selectedConversation.participant?.isOnline ? 'Online' : 'Offline'}
-                  </p>
+                  <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
+                    <span className="text-emerald-600">End-to-end encrypted</span>
+                    <span className="mx-1">·</span>
+                    <span>{selectedConversation.participant?.isOnline ? 'Online' : 'Offline'}</span>
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-2">

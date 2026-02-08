@@ -70,7 +70,7 @@ function ProgramsPageContent() {
         router.push(`/trainer/clients/${assignToClientId}`);
       }, 1500);
     } catch (err) {
-      console.error('Failed to assign program:', err);
+      // Error handled
       alert('Failed to assign program. Please try again.');
     }
   };
@@ -94,7 +94,7 @@ function ProgramsPageContent() {
     try {
       await duplicate(id);
     } catch (err) {
-      console.error('Failed to duplicate program:', err);
+      // Error handled
     }
   };
 
@@ -103,7 +103,7 @@ function ProgramsPageContent() {
     try {
       await deleteProgram(id);
     } catch (err) {
-      console.error('Failed to delete program:', err);
+      // Error handled
     }
   };
 

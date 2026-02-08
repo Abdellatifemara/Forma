@@ -103,7 +103,7 @@ export default function SettingsPage() {
         description: 'Your changes have been saved successfully.',
       });
     } catch (error) {
-      console.error('Failed to save profile:', error);
+      // Error handled
       toast({
         title: 'Error',
         description: 'Failed to save profile. Please try again.',
@@ -140,11 +140,8 @@ export default function SettingsPage() {
 
     setIsUploadingPhoto(true);
     try {
-      // Upload to Cloudinary
-      const { url } = await uploadApi.uploadImage(file);
-
-      // Update profile with new avatar URL
-      await updateProfile.mutateAsync({ avatarUrl: url });
+      // Upload avatar (handles Cloudinary or base64 fallback)
+      await uploadApi.uploadAvatar(file);
       await refetchUser();
 
       toast({
@@ -152,7 +149,7 @@ export default function SettingsPage() {
         description: 'Your profile photo has been changed.',
       });
     } catch (error) {
-      console.error('Failed to upload photo:', error);
+      // Error handled
       toast({
         title: 'Upload failed',
         description: 'Failed to upload photo. Please try again.',

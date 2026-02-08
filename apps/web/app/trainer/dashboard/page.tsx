@@ -60,7 +60,7 @@ export default function TrainerDashboardPage() {
         setClients(clientsRes.slice(0, 4)); // Show only first 4 clients
         setUnreadCount(unreadRes.unreadCount || 0);
       } catch (err: any) {
-        console.error('Error fetching trainer data:', err);
+        // Error handled
         setError(err.message || 'Failed to load dashboard');
       } finally {
         setIsLoading(false);

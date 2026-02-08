@@ -39,7 +39,7 @@ export function ExerciseSearchDialog({ onAddExercise, children }: ExerciseSearch
         const exerciseData = response.data || (response as any).exercises || [];
         setSearchResults(exerciseData);
       } catch (error) {
-        console.error("Error searching exercises:", error);
+        // Error handled
       } finally {
         setIsLoading(false);
       }

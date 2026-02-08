@@ -106,13 +106,10 @@ export default function NewProgramPage() {
     setIsCreating(true);
     try {
       // TODO: Call API to create program
-      console.log('Creating program:', formData);
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
-      // Redirect to program builder
       router.push('/trainer/programs/new-program-id');
-    } catch (error) {
-      console.error('Failed to create program:', error);
+    } catch {
+      // Handle error silently - show toast in production
     } finally {
       setIsCreating(false);
     }

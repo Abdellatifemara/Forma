@@ -236,6 +236,8 @@ model WorkoutLog {
   @@index([userId])
   @@index([scheduledDate])
   @@index([status])
+  @@index([userId, completedAt]) // For workout history queries
+  @@index([userId, status, scheduledDate]) // For filtered queries
 }
 
 model ExerciseLog {
@@ -249,6 +251,7 @@ model ExerciseLog {
 
   @@index([workoutLogId])
   @@index([exerciseId])
+  @@index([workoutLogId, exerciseId]) // For batch lookups
 }
 
 model SetLog {
@@ -716,6 +719,7 @@ model Message {
   @@index([conversationId])
   @@index([senderId])
   @@index([createdAt])
+  @@index([conversationId, createdAt]) // For message pagination
 }
 
 model Achievement {
@@ -1779,4 +1783,202 @@ enum RamadanWorkoutTime {
   AFTER_IFTAR
   AFTER_TARAWEEH
   SKIP
+}
+
+// ============================================
+// FITSTN COMPETITION FEATURES
+// ============================================
+
+// Health metrics tracking (blood work, vitals, etc.)
+model HealthMetric {
+  id        String           @id @default(cuid())
+  userId    String
+  type      HealthMetricType
+  value     Float
+  unit      String
+  date      DateTime         @default(now())
+  notes     String?
+  source    String? // manual, device, lab
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  @@index([userId])
+  @@index([type])
+  @@index([date])
+}
+
+enum HealthMetricType {
+  WEIGHT
+  BODY_FAT_PERCENTAGE
+  BLOOD_PRESSURE_SYSTOLIC
+  BLOOD_PRESSURE_DIASTOLIC
+  HEART_RATE_RESTING
+  BLOOD_GLUCOSE_FASTING
+  BLOOD_GLUCOSE_POSTPRANDIAL
+  HBA1C
+  TOTAL_CHOLESTEROL
+  LDL_CHOLESTEROL
+  HDL_CHOLESTEROL
+  TRIGLYCERIDES
+  CREATININE
+  BUN
+  HEMOGLOBIN
+  VITAMIN_D
+  VITAMIN_B12
+  TESTOSTERONE
+  CORTISOL
+  TSH
+  WAIST_CIRCUMFERENCE
+  HIP_CIRCUMFERENCE
+  SLEEP_HOURS
+  WATER_INTAKE_ML
+  STEPS
+  CALORIES_BURNED
+}
+
+// Daily check-ins for automated follow-up
+model DailyCheckIn {
+  id     String   @id @default(cuid())
+  userId String
+  date   DateTime @default(now()) @db.Date
+
+  // Workout feedback
+  workoutCompleted Boolean?
+  workoutRating    Int? // 1-5
+  workoutNotes     String?
+
+  // Nutrition feedback
+  nutritionCompleted Boolean?
+  nutritionRating    Int? // 1-5
+  nutritionNotes     String?
+
+  // Recovery & wellness
+  sleepHours     Float?
+  sleepQuality   Int? // 1-5
+  energyLevel    Int? // 1-5
+  stressLevel    Int? // 1-5
+  musclesoreness Int? // 1-5
+
+  // General
+  mood  Int? // 1-5
+  notes String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, date])
+  @@index([userId])
+  @@index([date])
+}
+
+// Scheduled calls (video/phone) with trainers
+model ScheduledCall {
+  id          String              @id @default(cuid())
+  trainerId   String
+  clientId    String
+  scheduledAt DateTime
+  duration    Int                 @default(30) // minutes
+  type        ScheduledCallType
+  status      ScheduledCallStatus @default(SCHEDULED)
+
+  // Meeting details
+  meetingUrl String? // Daily.co, Zoom, etc.
+  roomName   String?
+
+  // Notes
+  agenda       String?
+  trainerNotes String?
+  clientNotes  String?
+
+  // Recording
+  recordingUrl String?
+
+  // Timestamps
+  startedAt DateTime?
+  endedAt   DateTime?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@index([trainerId])
+  @@index([clientId])
+  @@index([scheduledAt])
+  @@index([status])
+}
+
+enum ScheduledCallType {
+  ONBOARDING
+  WEEKLY_CHECKIN
+  PROGRESS_REVIEW
+  PROGRAM_UPDATE
+  EMERGENCY
+  CUSTOM
+}
+
+enum ScheduledCallStatus {
+  SCHEDULED
+  CONFIRMED
+  IN_PROGRESS
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+}
+
+// Weekly progress reports (auto-generated)
+model WeeklyProgressReport {
+  id            String   @id @default(cuid())
+  userId        String
+  trainerId     String?
+  weekStartDate DateTime @db.Date
+  weekEndDate   DateTime @db.Date
+
+  // Compliance stats
+  workoutsPlanned   Int @default(0)
+  workoutsCompleted Int @default(0)
+  mealsLogged       Int @default(0)
+  checkInsCompleted Int @default(0)
+
+  // Averages
+  avgWorkoutRating   Float?
+  avgNutritionRating Float?
+  avgSleepHours      Float?
+  avgEnergyLevel     Float?
+  avgMood            Float?
+
+  // Weight change
+  startWeight  Float?
+  endWeight    Float?
+  weightChange Float?
+
+  // AI insights
+  aiSummary         String?
+  aiRecommendations String[]
+
+  // Status
+  reviewedByTrainer Boolean @default(false)
+  trainerFeedback   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, weekStartDate])
+  @@index([userId])
+  @@index([trainerId])
+  @@index([weekStartDate])
+}
+
+// Trainer notes about clients
+model TrainerClientNote {
+  id        String   @id @default(cuid())
+  trainerId String
+  clientId  String
+  title     String?
+  content   String
+  category  String? // progress, nutrition, mindset, medical, etc.
+  isPinned  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([trainerId])
+  @@index([clientId])
+  @@index([createdAt])
 }

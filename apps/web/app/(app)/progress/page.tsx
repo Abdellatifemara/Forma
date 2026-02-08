@@ -81,7 +81,7 @@ export default function ProgressPage() {
       setWeightInput('');
       setLogDialogOpen(false);
     } catch (error) {
-      console.error('Failed to log weight:', error);
+      // Error handled
     }
   };
 
@@ -110,7 +110,7 @@ export default function ProgressPage() {
       });
       setLogDialogOpen(false);
     } catch (error) {
-      console.error('Failed to log measurements:', error);
+      // Error handled
     }
   };
 

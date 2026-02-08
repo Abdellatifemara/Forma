@@ -68,7 +68,7 @@ export default function DashboardPage() {
         setDailyNutrition(nutritionResponse);
         setWeeklyStats(statsResponse);
       } catch (error) {
-        console.error("Error fetching dashboard data:", error);
+        // Error handled
         setUser(null);
       } finally {
         setIsLoading(false);

@@ -254,7 +254,7 @@ export default function ProgramBuilderPage() {
   };
 
   const handleSave = () => {
-    console.log('Saving program:', program);
+    // TODO: Save to API
     setHasChanges(false);
   };
 

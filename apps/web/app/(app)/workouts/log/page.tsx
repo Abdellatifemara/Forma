@@ -125,7 +125,7 @@ export default function LogWorkoutPage() {
 
       router.push('/workouts');
     } catch (err) {
-      console.error('Failed to log workout:', err);
+      // Error handled
       setError(
         err instanceof Error ? err.message : 'Failed to log workout. Please try again.'
       );

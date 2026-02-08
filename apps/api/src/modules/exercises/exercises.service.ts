@@ -3,6 +3,28 @@ import { PrismaService } from '../prisma/prisma.service';
 import { Exercise, MuscleGroup, EquipmentType, DifficultyLevel, ExerciseCategory, Prisma } from '@prisma/client';
 import { SearchExercisesDto } from './dto/search-exercises.dto';
 
+// Simple in-memory cache for exercise searches
+const searchCache = new Map<string, { data: unknown; expiry: number }>();
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+
+function getCached<T>(key: string): T | null {
+  const cached = searchCache.get(key);
+  if (cached && cached.expiry > Date.now()) {
+    return cached.data as T;
+  }
+  searchCache.delete(key);
+  return null;
+}
+
+function setCache(key: string, data: unknown): void {
+  // Limit cache size
+  if (searchCache.size > 500) {
+    const firstKey = searchCache.keys().next().value;
+    if (firstKey) searchCache.delete(firstKey);
+  }
+  searchCache.set(key, { data, expiry: Date.now() + CACHE_TTL });
+}
+
 @Injectable()
 export class ExercisesService {
   constructor(private readonly prisma: PrismaService) {}

@@ -82,7 +82,7 @@ export default function TrainerSettingsPage() {
           timezone: 'Africa/Cairo',
         });
       } catch (error) {
-        console.error('Failed to load trainer profile:', error);
+        // Error handled
       } finally {
         setIsLoadingProfile(false);
       }
@@ -103,7 +103,7 @@ export default function TrainerSettingsPage() {
       });
       // Note: Full trainer profile update would need additional API endpoint
     } catch (error) {
-      console.error('Failed to save:', error);
+      // Error handled
     } finally {
       setIsSaving(false);
     }

@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-// import { CacheModule } from '@nestjs/cache-manager'; // TODO: Re-enable after fixing version conflict
 import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { PrismaModule } from './modules/prisma/prisma.module';
@@ -31,6 +30,9 @@ import { AnalyticsModule } from './modules/analytics/analytics.module';
 import { CommissionsModule } from './modules/commissions/commissions.module';
 import { ResearchModule } from './modules/research/research.module';
 import { UserProfileModule } from './modules/user-profile/user-profile.module';
+import { HealthMetricsModule } from './modules/health-metrics/health-metrics.module';
+import { CheckInsModule } from './modules/check-ins/check-ins.module';
+import { ScheduledCallsModule } from './modules/scheduled-calls/scheduled-calls.module';
 
 @Module({
   imports: [
@@ -40,30 +42,24 @@ import { UserProfileModule } from './modules/user-profile/user-profile.module';
       envFilePath: ['.env.local', '.env'],
     }),
 
-    // Rate limiting
+    // Rate limiting - production-ready limits
     ThrottlerModule.forRoot([
       {
         name: 'short',
         ttl: 1000,
-        limit: 3,
+        limit: 10, // 10 req/sec
       },
       {
         name: 'medium',
         ttl: 10000,
-        limit: 20,
+        limit: 100, // 100 req/10sec
       },
       {
         name: 'long',
         ttl: 60000,
-        limit: 100,
+        limit: 300, // 300 req/min
       },
     ]),
-
-    // Caching - TODO: Re-enable after fixing version conflict
-    // CacheModule.register({
-    //   isGlobal: true,
-    //   ttl: 60, // seconds
-    // }),
 
     // Core modules
     PrismaModule,
@@ -97,6 +93,9 @@ import { UserProfileModule } from './modules/user-profile/user-profile.module';
     CommissionsModule,
     ResearchModule,
     UserProfileModule,
+    HealthMetricsModule,
+    CheckInsModule,
+    ScheduledCallsModule,
   ],
 })
 export class AppModule {}

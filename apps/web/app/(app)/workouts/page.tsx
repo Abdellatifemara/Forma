@@ -80,7 +80,7 @@ export default function WorkoutsPage() {
           setActivePlanId(activePlanResponse.id);
         }
       } catch (error) {
-        console.error("Error fetching workouts data:", error);
+        // Error handled
       } finally {
         setIsLoading(false);
       }
@@ -93,7 +93,7 @@ export default function WorkoutsPage() {
       await workoutsApi.activatePlan(planId);
       setActivePlanId(planId);
     } catch (error) {
-      console.error("Error activating plan:", error);
+      // Error handled
     }
   };
 

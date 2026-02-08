@@ -1,16 +1,23 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 
-interface GeminiResponse {
-  candidates?: Array<{
-    content: {
-      parts: Array<{ text: string }>;
+// Simple in-memory cache for AI responses
+const aiCache = new Map<string, { data: string; expiry: number }>();
+const AI_CACHE_TTL = 10 * 60 * 1000; // 10 minutes
+
+interface OpenAIResponse {
+  id?: string;
+  choices?: Array<{
+    message: {
+      role: string;
+      content: string;
     };
+    finish_reason: string;
   }>;
   error?: {
-    code: number;
+    code: string;
     message: string;
-    status: string;
+    type: string;
   };
 }
 
@@ -24,8 +31,8 @@ interface RetryConfig {
 @Injectable()
 export class AiService {
   private readonly logger = new Logger(AiService.name);
-  private readonly geminiApiKey: string;
-  private readonly geminiModel = 'gemini-1.5-flash';
+  private readonly openaiApiKey: string;
+  private readonly openaiModel = 'gpt-4o-mini'; // Cost-effective, fast model
 
   private readonly defaultRetryConfig: RetryConfig = {
     maxRetries: 5,
@@ -35,7 +42,31 @@ export class AiService {
   };
 
   constructor(private readonly configService: ConfigService) {
-    this.geminiApiKey = this.configService.get('GEMINI_API_KEY') || '';
+    this.openaiApiKey = this.configService.get('OPENAI_API_KEY') || '';
+  }
+
+  /**
+   * Get cached AI response
+   */
+  private getCached(key: string): string | null {
+    const cached = aiCache.get(key);
+    if (cached && cached.expiry > Date.now()) {
+      this.logger.debug(`AI cache hit: ${key.slice(0, 50)}...`);
+      return cached.data;
+    }
+    aiCache.delete(key);
+    return null;
+  }
+
+  /**
+   * Cache AI response
+   */
+  private setCache(key: string, data: string): void {
+    if (aiCache.size > 200) {
+      const firstKey = aiCache.keys().next().value;
+      if (firstKey) aiCache.delete(firstKey);
+    }
+    aiCache.set(key, { data, expiry: Date.now() + AI_CACHE_TTL });
   }
 
   /**
@@ -80,9 +111,9 @@ export class AiService {
   }
 
   /**
-   * Call Gemini API with exponential backoff
+   * Call OpenAI API with exponential backoff
    */
-  async callGemini(
+  async callOpenAI(
     prompt: string,
     options?: {
       systemPrompt?: string;
@@ -91,8 +122,8 @@ export class AiService {
       retryConfig?: Partial<RetryConfig>;
     },
   ): Promise<string> {
-    if (!this.geminiApiKey) {
-      throw new Error('GEMINI_API_KEY not configured');
+    if (!this.openaiApiKey) {
+      throw new Error('OPENAI_API_KEY not configured');
     }
 
     const config = { ...this.defaultRetryConfig, ...options?.retryConfig };
@@ -100,52 +131,59 @@ export class AiService {
 
     for (let attempt = 0; attempt <= config.maxRetries; attempt++) {
       try {
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/${this.geminiModel}:generateContent?key=${this.geminiApiKey}`;
+        const url = 'https://api.openai.com/v1/chat/completions';
+
+        const messages = [];
+
+        // Add system message if provided
+        if (options?.systemPrompt) {
+          messages.push({
+            role: 'system',
+            content: options.systemPrompt,
+          });
+        }
+
+        // Add user message
+        messages.push({
+          role: 'user',
+          content: prompt,
+        });
 
         const body = {
-          contents: [
-            {
-              parts: [{ text: prompt }],
-            },
-          ],
-          generationConfig: {
-            maxOutputTokens: options?.maxTokens || 2048,
-            temperature: options?.temperature || 0.7,
-          },
-          ...(options?.systemPrompt && {
-            systemInstruction: {
-              parts: [{ text: options.systemPrompt }],
-            },
-          }),
+          model: this.openaiModel,
+          messages,
+          max_tokens: options?.maxTokens || 2048,
+          temperature: options?.temperature || 0.7,
         };
 
         this.logger.debug(
-          `Gemini API call attempt ${attempt + 1}/${config.maxRetries + 1}`,
+          `OpenAI API call attempt ${attempt + 1}/${config.maxRetries + 1}`,
         );
 
         const response = await fetch(url, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'Authorization': `Bearer ${this.openaiApiKey}`,
           },
           body: JSON.stringify(body),
         });
 
         // Parse response
-        const data: GeminiResponse = await response.json();
+        const data: OpenAIResponse = await response.json();
 
         // Check for API errors
         if (!response.ok || data.error) {
-          const errorCode = data.error?.code || response.status;
+          const errorCode = data.error?.code || response.status.toString();
           const errorMessage =
             data.error?.message || `HTTP ${response.status}`;
 
           this.logger.warn(
-            `Gemini API error (attempt ${attempt + 1}): ${errorCode} - ${errorMessage}`,
+            `OpenAI API error (attempt ${attempt + 1}): ${errorCode} - ${errorMessage}`,
           );
 
           // Check if retryable
-          if (this.isRetryableError(response.status, data.error?.code)) {
+          if (this.isRetryableError(response.status)) {
             if (attempt < config.maxRetries) {
               const delay = this.calculateBackoffDelay(attempt, config);
               this.logger.log(
@@ -157,17 +195,17 @@ export class AiService {
           }
 
           // Non-retryable or exhausted retries
-          throw new Error(`Gemini API error: ${errorCode} - ${errorMessage}`);
+          throw new Error(`OpenAI API error: ${errorCode} - ${errorMessage}`);
         }
 
         // Extract text from response
-        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        const text = data.choices?.[0]?.message?.content;
 
         if (!text) {
-          throw new Error('Empty response from Gemini');
+          throw new Error('Empty response from OpenAI');
         }
 
-        this.logger.debug(`Gemini API success on attempt ${attempt + 1}`);
+        this.logger.debug(`OpenAI API success on attempt ${attempt + 1}`);
         return text;
       } catch (error) {
         lastError = error as Error;
@@ -201,9 +239,22 @@ export class AiService {
 
     // Exhausted all retries
     this.logger.error(
-      `Gemini API failed after ${config.maxRetries + 1} attempts`,
+      `OpenAI API failed after ${config.maxRetries + 1} attempts`,
     );
-    throw lastError || new Error('Gemini API failed after all retries');
+    throw lastError || new Error('OpenAI API failed after all retries');
+  }
+
+  // Alias for backwards compatibility
+  async callGemini(
+    prompt: string,
+    options?: {
+      systemPrompt?: string;
+      maxTokens?: number;
+      temperature?: number;
+      retryConfig?: Partial<RetryConfig>;
+    },
+  ): Promise<string> {
+    return this.callOpenAI(prompt, options);
   }
 
   /**

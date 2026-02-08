@@ -14,6 +14,9 @@ import {
   User,
   Plus,
   UserPlus,
+  Check,
+  CheckCheck,
+  Clock,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -97,7 +100,7 @@ function MessagesPageContent() {
         const data = await trainersApi.getClients();
         setClients(data);
       } catch (error) {
-        console.error('Failed to load clients:', error);
+        // Error handled
       } finally {
         setClientsLoading(false);
       }
@@ -122,7 +125,7 @@ function MessagesPageContent() {
       const newConv = await createConversation.mutateAsync(clientId);
       setSelectedConversationId(newConv.id);
     } catch (error) {
-      console.error('Failed to create conversation:', error);
+      // Error handled
     } finally {
       setIsCreatingConversation(false);
     }
@@ -170,7 +173,7 @@ function MessagesPageContent() {
         const newConv = await createConversation.mutateAsync(clientIdParam);
         setSelectedConversationId(newConv.id);
       } catch (error) {
-        console.error('Failed to create conversation:', error);
+        // Error handled
       } finally {
         setIsCreatingConversation(false);
       }
@@ -220,35 +223,34 @@ function MessagesPageContent() {
     await sendImageMessage(selectedConversationId, file);
   };
 
-  const renderMessage = (message: ChatMessage) => {
-    const isTrainer = message.isMine;
+  const renderMessage = (message: ChatMessage & { isPending?: boolean }) => {
+    const isMine = message.isMine;
+    const isPending = message.isPending || message.id.startsWith('temp-');
 
     return (
       <div
         key={message.id}
-        className={cn('flex', isTrainer ? 'justify-end' : 'justify-start')}
+        className={cn('flex', isMine ? 'justify-end' : 'justify-start')}
       >
         <div
           className={cn(
-            'max-w-[70%] rounded-2xl px-4 py-3',
-            isTrainer
-              ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white'
-              : 'bg-muted/50 border border-border/50'
+            'max-w-[75%] rounded-lg px-3 py-2 shadow-sm',
+            isMine
+              ? 'bg-primary text-primary-foreground rounded-br-none'
+              : 'bg-muted rounded-bl-none'
           )}
         >
           {message.type === 'TEXT' && (
-            <p className="text-sm">{message.content}</p>
+            <p className="text-sm whitespace-pre-wrap break-words">{message.content}</p>
           )}
 
           {message.type === 'IMAGE' && message.mediaUrl && (
-            <div className="space-y-2">
-              <img
-                src={message.mediaUrl}
-                alt="Shared image"
-                className="max-w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                onClick={() => window.open(message.mediaUrl, '_blank')}
-              />
-            </div>
+            <img
+              src={message.mediaUrl}
+              alt="Image"
+              className="max-w-[280px] rounded cursor-pointer"
+              onClick={() => window.open(message.mediaUrl, '_blank')}
+            />
           )}
 
           {message.type === 'VOICE' && message.mediaUrl && (
@@ -259,12 +261,19 @@ function MessagesPageContent() {
             <p className="text-sm">{message.content}</p>
           )}
 
-          <p className={cn(
-            'mt-1 text-xs',
-            isTrainer ? 'text-white/60' : 'text-muted-foreground'
+          <div className={cn(
+            'flex items-center justify-end gap-1 mt-1',
+            isMine ? 'text-primary-foreground/70' : 'text-muted-foreground'
           )}>
-            {formatMessageTime(message.createdAt)}
-          </p>
+            <span className="text-[10px]">{formatMessageTime(message.createdAt)}</span>
+            {isMine && (
+              isPending ? (
+                <Clock className="h-3 w-3" />
+              ) : (
+                <CheckCheck className="h-3 w-3" />
+              )
+            )}
+          </div>
         </div>
       </div>
     );
