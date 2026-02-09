@@ -102,8 +102,8 @@ export function AILimitModal({
             </h3>
             <p className="text-muted-foreground text-sm">
               {isRTL
-                ? `استخدمت ${usedQueries} من ${queryLimit} استفسار AI هذا الشهر`
-                : `You've used ${usedQueries} of ${queryLimit} AI queries this month`}
+                ? `استخدمت ${usedQueries} من ${queryLimit} استفسار ذكي هذا الشهر`
+                : `You've used ${usedQueries} of ${queryLimit} smart queries this month`}
             </p>
           </div>
         </div>
@@ -135,8 +135,8 @@ export function AILimitModal({
         <div className="p-6 space-y-3">
           <p className="text-sm text-muted-foreground mb-4 text-center">
             {isRTL
-              ? 'ترقّى للحصول على المزيد من استفسارات AI'
-              : 'Upgrade to get more AI queries'}
+              ? 'ترقّى للحصول على المزيد من الاستفسارات'
+              : 'Upgrade to get more smart queries'}
           </p>
 
           {upgradeOptions.map((option) => (
@@ -206,8 +206,8 @@ export function AILimitModal({
                   </p>
                   <p className="text-xs text-muted-foreground mb-3">
                     {isRTL
-                      ? 'شاركنا رأيك عن حدود AI في 30 ثانية'
-                      : 'Share your feedback about AI limits in 30 seconds'}
+                      ? 'شاركنا رأيك عن حدود الاستخدام في 30 ثانية'
+                      : 'Share your feedback about usage limits in 30 seconds'}
                   </p>
                   <Button
                     variant="outline"

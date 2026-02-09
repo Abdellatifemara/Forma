@@ -67,8 +67,8 @@ export const translations = {
         description: 'Train with friends, compete in challenges, and climb leaderboards together.',
       },
       formChecker: {
-        title: 'AI Form Checker',
-        description: 'Get instant feedback on your exercise form using AI-powered video analysis.',
+        title: 'Form Review',
+        description: 'Send your videos to trainers. Get personalized feedback on your technique within 24 hours.',
       },
       stats: {
         exercises: 'Exercises',
@@ -431,8 +431,8 @@ export const translations = {
         description: 'اتمرن مع صحابك، نافس في تحديات، واطلعوا الليدربورد مع بعض.',
       },
       formChecker: {
-        title: 'مراجع الفورم بالذكاء الاصطناعي',
-        description: 'احصل على ردود فورية على شكل تمارينك باستخدام تحليل الفيديو بالذكاء الاصطناعي.',
+        title: 'مراجعة الفورم',
+        description: 'ابعت فيديوهاتك للمدربين. احصل على ملاحظات مخصصة لتقنيتك خلال 24 ساعة.',
       },
       stats: {
         exercises: 'تمرين',

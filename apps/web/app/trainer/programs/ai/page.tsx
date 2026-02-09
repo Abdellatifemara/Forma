@@ -75,11 +75,11 @@ interface GeneratedProgram {
 }
 
 const generationSteps = [
-  'Analyzing your requirements...',
-  'Selecting optimal exercises...',
+  'Reviewing your requirements...',
+  'Selecting exercises from library...',
   'Structuring workout days...',
-  'Calculating sets and reps...',
-  'Optimizing rest periods...',
+  'Setting up sets and reps...',
+  'Configuring rest periods...',
   'Finalizing your program...',
 ];
 
@@ -112,7 +112,7 @@ export default function AIGeneratorPage() {
     // Mock generated program
     const mockProgram: GeneratedProgram = {
       name: `${formData.durationWeeks}-Week ${goals.find((g) => g.id === formData.goal)?.name} Program`,
-      description: `AI-generated ${formData.level} level program optimized for ${goals.find((g) => g.id === formData.goal)?.name.toLowerCase()}. Designed for ${formData.frequency} training days per week with ${formData.sessionLength}-minute sessions.`,
+      description: `${formData.level.charAt(0).toUpperCase() + formData.level.slice(1)} level program for ${goals.find((g) => g.id === formData.goal)?.name.toLowerCase()}. Designed for ${formData.frequency} training days per week with ${formData.sessionLength}-minute sessions.`,
       durationWeeks: formData.durationWeeks,
       frequency: formData.frequency,
       days: generateMockDays(formData),
@@ -255,14 +255,14 @@ export default function AIGeneratorPage() {
         </Button>
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold">AI Program Generator</h1>
+            <h1 className="text-3xl font-bold">Personalized Program Builder</h1>
             <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/50">
               <Sparkles className="h-3 w-3 mr-1" />
-              Beta
+              Smart
             </Badge>
           </div>
           <p className="text-muted-foreground">
-            Let AI create a personalized workout program based on your requirements
+            Create a program tailored to your goals, level, and available equipment
           </p>
         </div>
       </div>
@@ -449,7 +449,7 @@ export default function AIGeneratorPage() {
               <CardHeader>
                 <CardTitle>Additional Instructions (Optional)</CardTitle>
                 <CardDescription>
-                  Any specific requirements or preferences for the AI
+                  Any specific requirements or preferences
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -476,10 +476,10 @@ export default function AIGeneratorPage() {
                   <div className="mx-auto w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-4">
                     <Sparkles className="h-6 w-6 text-purple-400" />
                   </div>
-                  <h3 className="font-bold text-lg mb-2">AI-Powered</h3>
+                  <h3 className="font-bold text-lg mb-2">Built Just For You</h3>
                   <p className="text-sm text-muted-foreground">
-                    Our AI analyzes thousands of workout programs to create
-                    optimized training plans tailored to your specifications.
+                    Programs designed to match your exact fitness level,
+                    goals, and available equipment. Your body, your program.
                   </p>
                 </div>
               </CardContent>
@@ -522,7 +522,7 @@ export default function AIGeneratorPage() {
             <div className="mx-auto w-20 h-20 rounded-2xl bg-purple-500/20 flex items-center justify-center mb-6">
               <Sparkles className="h-10 w-10 text-purple-400 animate-pulse" />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Generating Your Program</h2>
+            <h2 className="text-2xl font-bold mb-2">Building Your Program</h2>
             <p className="text-muted-foreground mb-8">{currentStep}</p>
             <Loader2 className="h-8 w-8 animate-spin mx-auto text-primary" />
           </CardContent>
@@ -537,7 +537,7 @@ export default function AIGeneratorPage() {
                 <div>
                   <Badge className="mb-2 bg-purple-500/20 text-purple-400 border-purple-500/50">
                     <Sparkles className="h-3 w-3 mr-1" />
-                    AI Generated
+                    Personalized
                   </Badge>
                   <CardTitle className="text-2xl">{generatedProgram.name}</CardTitle>
                   <CardDescription className="mt-2">

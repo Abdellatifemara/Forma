@@ -1,0 +1,432 @@
+[
+  {
+    "id": "chest-bench-press",
+    "name_en": "Barbell Bench Press",
+    "name_ar": "ضغط البار على البنش",
+    "description_en": "The barbell bench press is the king of chest exercises, building strength and mass in the chest, shoulders, and triceps.",
+    "description_ar": "ضغط البار على البنش هو ملك تمارين الصدر، يبني القوة والكتلة في الصدر والكتفين والترايسبس.",
+    "instructions_en": [
+      "Lie flat on a bench with your feet firmly on the floor",
+      "Grip the bar slightly wider than shoulder-width apart",
+      "Unrack the bar and hold it directly over your chest",
+      "Lower the bar slowly to your mid-chest",
+      "Press the bar back up to the starting position"
+    ],
+    "instructions_ar": [
+      "استلقِ على البنش مع تثبيت قدميك على الأرض",
+      "امسك البار بمسافة أوسع قليلاً من عرض الكتفين",
+      "ارفع البار وأمسكه فوق صدرك مباشرة",
+      "أنزل البار ببطء نحو منتصف صدرك",
+      "ادفع البار للأعلى إلى وضع البداية"
+    ],
+    "tips_en": ["Keep your shoulder blades pinched together", "Don't bounce the bar off your chest", "Keep your wrists straight"],
+    "tips_ar": ["أبقِ لوحي كتفك مضمومين معاً", "لا ترتد البار عن صدرك", "أبقِ معصميك مستقيمين"],
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "intermediate",
+    "default_sets": 4,
+    "default_reps": 8
+  },
+  {
+    "id": "chest-incline-press",
+    "name_en": "Incline Bench Press",
+    "name_ar": "ضغط البنش المائل",
+    "description_en": "The incline bench press targets the upper chest and front shoulders for a complete chest development.",
+    "description_ar": "ضغط البنش المائل يستهدف الجزء العلوي من الصدر والكتف الأمامي لتطوير صدري متكامل.",
+    "instructions_en": [
+      "Set the bench to a 30-45 degree incline",
+      "Lie back with your feet flat on the floor",
+      "Grip the bar slightly wider than shoulder-width",
+      "Unrack and lower the bar to your upper chest",
+      "Press the bar back up explosively"
+    ],
+    "instructions_ar": [
+      "اضبط البنش على زاوية 30-45 درجة",
+      "استلقِ للخلف مع قدميك مسطحتين على الأرض",
+      "امسك البار أوسع قليلاً من عرض الكتفين",
+      "أنزل البار إلى الجزء العلوي من صدرك",
+      "ادفع البار للأعلى بقوة"
+    ],
+    "tips_en": ["Focus on squeezing your upper chest at the top", "Keep your elbows at about 45 degrees"],
+    "tips_ar": ["ركز على ضغط الجزء العلوي من صدرك في القمة", "أبقِ مرفقيك بزاوية 45 درجة تقريباً"],
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["SHOULDERS", "TRICEPS"],
+    "equipment": ["BARBELL", "BENCH"],
+    "difficulty": "intermediate",
+    "default_sets": 3,
+    "default_reps": 10
+  },
+  {
+    "id": "chest-dumbbell-press",
+    "name_en": "Dumbbell Bench Press",
+    "name_ar": "ضغط الدمبل على البنش",
+    "description_en": "The dumbbell bench press allows for a greater range of motion and helps fix muscle imbalances between sides.",
+    "description_ar": "ضغط الدمبل يسمح بمدى حركة أكبر ويساعد في إصلاح اختلالات العضلات بين الجانبين.",
+    "instructions_en": [
+      "Sit on a bench with a dumbbell in each hand",
+      "Lie back and position the dumbbells at chest level",
+      "Press the dumbbells up until your arms are extended",
+      "Lower the dumbbells slowly to chest level",
+      "Repeat for the desired number of reps"
+    ],
+    "instructions_ar": [
+      "اجلس على البنش مع دمبل في كل يد",
+      "استلقِ للخلف وضع الدمبلز على مستوى الصدر",
+      "ادفع الدمبلز للأعلى حتى تمتد ذراعيك",
+      "أنزل الدمبلز ببطء لمستوى الصدر",
+      "كرر العدد المطلوب"
+    ],
+    "tips_en": ["Bring the dumbbells together at the top", "Keep your core tight throughout"],
+    "tips_ar": ["قرّب الدمبلز من بعضهما في القمة", "أبقِ جذعك مشدوداً طوال التمرين"],
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["DUMBBELLS", "BENCH"],
+    "difficulty": "beginner",
+    "default_sets": 3,
+    "default_reps": 10
+  },
+  {
+    "id": "chest-pushup",
+    "name_en": "Push-Up",
+    "name_ar": "ضغط الأرض",
+    "description_en": "The classic push-up is a fundamental bodyweight exercise that builds chest, shoulder, and arm strength.",
+    "description_ar": "تمرين الضغط الكلاسيكي هو تمرين أساسي بوزن الجسم يبني قوة الصدر والكتف والذراعين.",
+    "instructions_en": [
+      "Start in a plank position with hands shoulder-width apart",
+      "Keep your body in a straight line from head to heels",
+      "Lower your body until your chest nearly touches the floor",
+      "Push yourself back up to the starting position",
+      "Keep your core engaged throughout the movement"
+    ],
+    "instructions_ar": [
+      "ابدأ في وضع البلانك مع اليدين بعرض الكتفين",
+      "حافظ على جسمك في خط مستقيم من الرأس للكعبين",
+      "أنزل جسمك حتى يقترب صدرك من الأرض",
+      "ادفع نفسك للأعلى لوضع البداية",
+      "أبقِ جذعك مشدوداً طوال الحركة"
+    ],
+    "tips_en": ["Don't let your hips sag", "Keep your elbows at 45 degrees", "Breathe in going down, out going up"],
+    "tips_ar": ["لا تدع وركيك يتدلى", "أبقِ مرفقيك بزاوية 45 درجة", "تنفس عند النزول، أخرج عند الصعود"],
+    "primary_muscle": "CHEST",
+    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "beginner",
+    "default_sets": 3,
+    "default_reps": 15
+  },
+  {
+    "id": "back-deadlift",
+    "name_en": "Conventional Deadlift",
+    "name_ar": "رفعة الميتة",
+    "description_en": "The deadlift is the ultimate full-body strength exercise, working your back, legs, and core simultaneously.",
+    "description_ar": "رفعة الميتة هي تمرين القوة الشامل للجسم كله، تعمل على الظهر والأرجل والجذع في آن واحد.",
+    "instructions_en": [
+      "Stand with feet hip-width apart, bar over mid-foot",
+      "Bend down and grip the bar just outside your legs",
+      "Push your chest up and flatten your back",
+      "Drive through your heels and lift the bar",
+      "Stand tall with shoulders back, then lower with control"
+    ],
+    "instructions_ar": [
+      "قف مع القدمين بعرض الورك، البار فوق منتصف القدم",
+      "انحنِ وأمسك البار خارج ساقيك مباشرة",
+      "ارفع صدرك وافرد ظهرك",
+      "ادفع من كعبيك وارفع البار",
+      "قف منتصباً مع الكتفين للخلف، ثم أنزل بتحكم"
+    ],
+    "tips_en": ["Never round your lower back", "Keep the bar close to your body", "Lock out at the top"],
+    "tips_ar": ["لا تقوّس أسفل ظهرك أبداً", "أبقِ البار قريباً من جسمك", "اقفل في القمة"],
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["HAMSTRINGS", "GLUTES"],
+    "equipment": ["BARBELL"],
+    "difficulty": "advanced",
+    "default_sets": 4,
+    "default_reps": 5
+  },
+  {
+    "id": "back-pullup",
+    "name_en": "Pull-Up",
+    "name_ar": "سحب العقلة",
+    "description_en": "The pull-up is the gold standard for back development, building a wide, strong upper back and biceps.",
+    "description_ar": "سحب العقلة هو المعيار الذهبي لتطوير الظهر، يبني ظهراً علوياً عريضاً وقوياً مع الباي.",
+    "instructions_en": [
+      "Hang from the bar with palms facing away, wider than shoulders",
+      "Engage your back muscles and pull yourself up",
+      "Pull until your chin is above the bar",
+      "Lower yourself slowly with control",
+      "Fully extend your arms at the bottom"
+    ],
+    "instructions_ar": [
+      "تعلق من البار مع الكفين للخارج، أوسع من الكتفين",
+      "شد عضلات ظهرك واسحب نفسك للأعلى",
+      "اسحب حتى يصبح ذقنك فوق البار",
+      "أنزل نفسك ببطء بتحكم",
+      "افرد ذراعيك بالكامل في الأسفل"
+    ],
+    "tips_en": ["Focus on pulling with your back, not arms", "Avoid swinging or kipping", "Squeeze your lats at the top"],
+    "tips_ar": ["ركز على السحب بظهرك لا ذراعيك", "تجنب التأرجح", "اضغط اللاتس في القمة"],
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["PULL_UP_BAR"],
+    "difficulty": "intermediate",
+    "default_sets": 4,
+    "default_reps": 8
+  },
+  {
+    "id": "back-lat-pulldown",
+    "name_en": "Lat Pulldown",
+    "name_ar": "سحب علوي",
+    "description_en": "The lat pulldown is an excellent exercise for building back width, especially for those who can't do pull-ups yet.",
+    "description_ar": "السحب العلوي تمرين ممتاز لبناء عرض الظهر، خاصة لمن لا يستطيع عمل سحب العقلة.",
+    "instructions_en": [
+      "Sit at the lat pulldown machine with thighs secured",
+      "Grip the bar wider than shoulder-width",
+      "Pull the bar down to your upper chest",
+      "Squeeze your lats at the bottom",
+      "Return the bar slowly with control"
+    ],
+    "instructions_ar": [
+      "اجلس على جهاز السحب العلوي مع تثبيت الفخذين",
+      "امسك البار أوسع من عرض الكتفين",
+      "اسحب البار لأعلى صدرك",
+      "اضغط اللاتس في الأسفل",
+      "أعد البار ببطء بتحكم"
+    ],
+    "tips_en": ["Don't lean back too much", "Pull with your elbows, not your hands", "Keep your chest up"],
+    "tips_ar": ["لا تميل للخلف كثيراً", "اسحب بمرفقيك لا يديك", "أبقِ صدرك مرتفعاً"],
+    "primary_muscle": "BACK",
+    "secondary_muscles": ["BICEPS"],
+    "equipment": ["CABLES"],
+    "difficulty": "beginner",
+    "default_sets": 3,
+    "default_reps": 12
+  },
+  {
+    "id": "legs-squat",
+    "name_en": "Barbell Back Squat",
+    "name_ar": "سكوات البار",
+    "description_en": "The barbell squat is the king of leg exercises, building massive quads, glutes, and overall lower body strength.",
+    "description_ar": "سكوات البار هو ملك تمارين الأرجل، يبني عضلات فخذ ومؤخرة ضخمة وقوة شاملة للجزء السفلي.",
+    "instructions_en": [
+      "Position the bar on your upper traps",
+      "Stand with feet shoulder-width apart, toes slightly out",
+      "Brace your core and keep your chest up",
+      "Lower by bending knees and pushing hips back",
+      "Go down until thighs are parallel, then drive up"
+    ],
+    "instructions_ar": [
+      "ضع البار على أعلى الترابس",
+      "قف مع القدمين بعرض الكتفين، الأصابع للخارج قليلاً",
+      "شد جذعك وأبقِ صدرك مرتفعاً",
+      "أنزل بثني الركبتين ودفع الوركين للخلف",
+      "انزل حتى تصبح الفخذين موازية، ثم ادفع للأعلى"
+    ],
+    "tips_en": ["Keep your knees tracking over your toes", "Don't let your knees cave in", "Keep your heels on the ground"],
+    "tips_ar": ["أبقِ ركبتيك تتبع أصابع قدميك", "لا تدع ركبتيك تنهار للداخل", "أبقِ كعبيك على الأرض"],
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "intermediate",
+    "default_sets": 4,
+    "default_reps": 8
+  },
+  {
+    "id": "legs-romanian-deadlift",
+    "name_en": "Romanian Deadlift",
+    "name_ar": "الرفعة الرومانية",
+    "description_en": "The Romanian deadlift is the best exercise for hamstring development and hip hinge movement pattern.",
+    "description_ar": "الرفعة الرومانية هي أفضل تمرين لتطوير الهامسترينج ونمط حركة مفصل الورك.",
+    "instructions_en": [
+      "Stand with feet hip-width apart, holding the bar",
+      "Keep a slight bend in your knees throughout",
+      "Push your hips back while lowering the bar",
+      "Lower until you feel a stretch in your hamstrings",
+      "Drive your hips forward to return to standing"
+    ],
+    "instructions_ar": [
+      "قف مع القدمين بعرض الورك، ممسكاً بالبار",
+      "أبقِ انحناءً خفيفاً في ركبتيك طوال التمرين",
+      "ادفع وركيك للخلف مع إنزال البار",
+      "أنزل حتى تشعر بشد في الهامسترينج",
+      "ادفع وركيك للأمام للعودة للوقوف"
+    ],
+    "tips_en": ["Keep the bar close to your legs", "Feel the stretch in your hamstrings", "Squeeze your glutes at the top"],
+    "tips_ar": ["أبقِ البار قريباً من ساقيك", "اشعر بالشد في الهامسترينج", "اضغط المؤخرة في القمة"],
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": ["GLUTES", "LOWER_BACK"],
+    "equipment": ["BARBELL", "DUMBBELLS"],
+    "difficulty": "intermediate",
+    "default_sets": 4,
+    "default_reps": 10
+  },
+  {
+    "id": "shoulders-overhead-press",
+    "name_en": "Overhead Press",
+    "name_ar": "ضغط علوي",
+    "description_en": "The overhead press is the ultimate shoulder builder, developing all three heads of the deltoids.",
+    "description_ar": "الضغط العلوي هو بناء الكتف المثالي، يطور رؤوس الدالتويد الثلاثة.",
+    "instructions_en": [
+      "Stand with feet shoulder-width apart",
+      "Hold the bar at shoulder height, palms facing forward",
+      "Press the bar straight up overhead",
+      "Lock out at the top with arms fully extended",
+      "Lower the bar back to shoulder height with control"
+    ],
+    "instructions_ar": [
+      "قف مع القدمين بعرض الكتفين",
+      "أمسك البار على ارتفاع الكتف، الكفين للأمام",
+      "ادفع البار للأعلى مباشرة فوق الرأس",
+      "اقفل في القمة مع فرد الذراعين بالكامل",
+      "أنزل البار لارتفاع الكتف بتحكم"
+    ],
+    "tips_en": ["Keep your core tight", "Don't arch your back excessively", "Push your head through at the top"],
+    "tips_ar": ["أبقِ جذعك مشدوداً", "لا تقوّس ظهرك بشكل مفرط", "ادفع رأسك للأمام في القمة"],
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": ["TRICEPS"],
+    "equipment": ["BARBELL"],
+    "difficulty": "intermediate",
+    "default_sets": 4,
+    "default_reps": 8
+  },
+  {
+    "id": "shoulders-lateral-raise",
+    "name_en": "Lateral Raise",
+    "name_ar": "رفع جانبي",
+    "description_en": "Lateral raises isolate the side deltoids, creating that wide, capped shoulder look.",
+    "description_ar": "الرفع الجانبي يعزل الدالتويد الجانبي، يخلق مظهر الكتف العريض المغطى.",
+    "instructions_en": [
+      "Stand with dumbbells at your sides",
+      "Keep a slight bend in your elbows",
+      "Raise your arms out to the sides until shoulder height",
+      "Pause briefly at the top",
+      "Lower slowly back to the starting position"
+    ],
+    "instructions_ar": [
+      "قف مع الدمبلز على جانبيك",
+      "أبقِ انحناءً خفيفاً في مرفقيك",
+      "ارفع ذراعيك للجانبين حتى ارتفاع الكتف",
+      "توقف لحظة في القمة",
+      "أنزل ببطء لوضع البداية"
+    ],
+    "tips_en": ["Lead with your elbows", "Don't swing the weights", "Control the negative"],
+    "tips_ar": ["قُد بمرفقيك", "لا تأرجح الأوزان", "تحكم في النزول"],
+    "primary_muscle": "SHOULDERS",
+    "equipment": ["DUMBBELLS"],
+    "difficulty": "beginner",
+    "default_sets": 4,
+    "default_reps": 15
+  },
+  {
+    "id": "biceps-barbell-curl",
+    "name_en": "Barbell Curl",
+    "name_ar": "ثني البار للباي",
+    "description_en": "The barbell curl is the classic bicep builder, allowing you to lift heavy weights for maximum growth.",
+    "description_ar": "ثني البار هو بناء البايسبس الكلاسيكي، يسمح لك برفع أوزان ثقيلة لنمو أقصى.",
+    "instructions_en": [
+      "Stand with feet shoulder-width apart",
+      "Hold the barbell with an underhand grip",
+      "Keep your elbows at your sides throughout",
+      "Curl the bar up by bending your elbows",
+      "Lower the bar slowly with control"
+    ],
+    "instructions_ar": [
+      "قف مع القدمين بعرض الكتفين",
+      "أمسك البار بقبضة سفلية",
+      "أبقِ مرفقيك على جانبيك طوال التمرين",
+      "اثنِ البار للأعلى بثني مرفقيك",
+      "أنزل البار ببطء بتحكم"
+    ],
+    "tips_en": ["Don't swing your body", "Squeeze at the top", "Keep your wrists straight"],
+    "tips_ar": ["لا تأرجح جسمك", "اضغط في القمة", "أبقِ معصميك مستقيمين"],
+    "primary_muscle": "BICEPS",
+    "equipment": ["BARBELL"],
+    "difficulty": "beginner",
+    "default_sets": 3,
+    "default_reps": 10
+  },
+  {
+    "id": "triceps-pushdown",
+    "name_en": "Tricep Pushdown",
+    "name_ar": "دفع الكيبل للتراي",
+    "description_en": "The cable pushdown isolates the triceps, building the horseshoe shape on the back of your arms.",
+    "description_ar": "دفع الكيبل يعزل الترايسبس، يبني شكل حدوة الحصان في خلف ذراعيك.",
+    "instructions_en": [
+      "Stand facing the cable machine with the attachment at chest height",
+      "Grip the attachment with palms facing down",
+      "Keep your elbows pinned to your sides",
+      "Push down until your arms are fully extended",
+      "Return slowly to the starting position"
+    ],
+    "instructions_ar": [
+      "قف مواجهاً لجهاز الكيبل مع المقبض على ارتفاع الصدر",
+      "امسك المقبض مع الكفين للأسفل",
+      "أبقِ مرفقيك ملتصقين بجانبيك",
+      "ادفع للأسفل حتى تفرد ذراعيك بالكامل",
+      "عد ببطء لوضع البداية"
+    ],
+    "tips_en": ["Keep your upper arms stationary", "Squeeze your triceps at the bottom", "Don't lean forward"],
+    "tips_ar": ["أبقِ أعلى ذراعيك ثابتاً", "اضغط الترايسبس في الأسفل", "لا تميل للأمام"],
+    "primary_muscle": "TRICEPS",
+    "equipment": ["CABLES"],
+    "difficulty": "beginner",
+    "default_sets": 3,
+    "default_reps": 12
+  },
+  {
+    "id": "core-plank",
+    "name_en": "Plank",
+    "name_ar": "اللوح",
+    "description_en": "The plank is the foundational core exercise, building total core stability and endurance.",
+    "description_ar": "البلانك هو تمرين الجذع الأساسي، يبني استقرار وتحمل الجذع الكلي.",
+    "instructions_en": [
+      "Start in a push-up position on your forearms",
+      "Keep your body in a straight line from head to heels",
+      "Engage your core by pulling your belly button to your spine",
+      "Keep your glutes squeezed and legs straight",
+      "Hold the position for the prescribed time"
+    ],
+    "instructions_ar": [
+      "ابدأ في وضع الضغط على ساعديك",
+      "أبقِ جسمك في خط مستقيم من الرأس للكعبين",
+      "شد جذعك بسحب سرتك نحو عمودك الفقري",
+      "أبقِ مؤخرتك مضغوطة وساقيك مستقيمتين",
+      "حافظ على الوضع للوقت المحدد"
+    ],
+    "tips_en": ["Don't let your hips sag", "Don't pike your hips up", "Breathe steadily"],
+    "tips_ar": ["لا تدع وركيك يتدلى", "لا ترفع وركيك للأعلى", "تنفس بثبات"],
+    "primary_muscle": "ABS",
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "beginner",
+    "is_time_based": true,
+    "default_duration": 60
+  },
+  {
+    "id": "cardio-burpees",
+    "name_en": "Burpees",
+    "name_ar": "بيربي",
+    "description_en": "Burpees are the ultimate full-body cardio exercise, burning maximum calories while building conditioning.",
+    "description_ar": "البيربي هو تمرين الكارديو الشامل للجسم، يحرق أقصى سعرات حرارية مع بناء اللياقة.",
+    "instructions_en": [
+      "Start standing with feet shoulder-width apart",
+      "Drop into a squat and place your hands on the floor",
+      "Jump your feet back into a plank position",
+      "Perform a push-up (optional)",
+      "Jump your feet forward and explosively jump up with arms overhead"
+    ],
+    "instructions_ar": [
+      "ابدأ واقفاً مع القدمين بعرض الكتفين",
+      "انزل إلى سكوات وضع يديك على الأرض",
+      "اقفز بقدميك للخلف لوضع البلانك",
+      "أدِّ ضغطة (اختياري)",
+      "اقفز بقدميك للأمام واقفز للأعلى بقوة مع الذراعين فوق الرأس"
+    ],
+    "tips_en": ["Maintain a quick pace", "Land softly on your feet", "Keep your core engaged"],
+    "tips_ar": ["حافظ على إيقاع سريع", "اهبط بنعومة على قدميك", "أبقِ جذعك مشدوداً"],
+    "primary_muscle": "CARDIO",
+    "equipment": ["BODYWEIGHT"],
+    "difficulty": "intermediate",
+    "default_sets": 3,
+    "default_reps": 10
+  }
+]

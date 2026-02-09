@@ -57,6 +57,7 @@ model User {
   subscription          Subscription?
   surveyResponses       SurveyResponse[]
   trainers              TrainerClient[]           @relation("ClientTrainers")
+  scheduledCalls        ScheduledCall[]           @relation("ScheduledCalls")
   trainerProfile        TrainerProfile?
   aiPreferences         UserAIPreference?
   achievements          UserAchievement[]
@@ -458,12 +459,33 @@ model TrainerProfile {
   reviews             TrainerReview[]
   transactions        TrainerTransaction[]
   workoutPlans        WorkoutPlan[]
+  availability        TrainerAvailability[]
+  scheduledCalls      ScheduledCall[]
 
   @@index([status])
   @@index([averageRating])
   @@index([tier])
   @@index([inviteCode])
 }
+
+// Trainer's weekly availability schedule
+model TrainerAvailability {
+  id          String         @id @default(cuid())
+  trainerId   String
+  dayOfWeek   Int            // 0=Sunday, 1=Monday, etc.
+  startTime   String         // "09:00" format
+  endTime     String         // "17:00" format
+  slotMinutes Int            @default(30) // Duration of each slot
+  isActive    Boolean        @default(true)
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  trainer     TrainerProfile @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+
+  @@unique([trainerId, dayOfWeek, startTime])
+  @@index([trainerId])
+  @@index([dayOfWeek])
+}
+
 
 model TrainerCertification {
   id          String         @id @default(cuid())
@@ -1900,6 +1922,10 @@ model ScheduledCall {
   endedAt   DateTime?
   createdAt DateTime  @default(now())
   updatedAt DateTime  @updatedAt
+
+  // Relations
+  trainer TrainerProfile @relation(fields: [trainerId], references: [id], onDelete: Cascade)
+  client  User           @relation("ScheduledCalls", fields: [clientId], references: [id], onDelete: Cascade)
 
   @@index([trainerId])
   @@index([clientId])

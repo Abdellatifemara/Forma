@@ -16,6 +16,8 @@ import {
   LogOut,
   Globe,
   FlaskConical,
+  ClipboardCheck,
+  Video,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useUser } from '@/hooks/use-user';
@@ -29,6 +31,8 @@ interface SidebarProps {
 const trainerLinks = [
   { href: '/trainer/dashboard', icon: Home, label: 'Dashboard' },
   { href: '/trainer/clients', icon: Users, label: 'Clients' },
+  { href: '/trainer/check-ins', icon: ClipboardCheck, label: 'Check-Ins' },
+  { href: '/trainer/calls', icon: Video, label: 'Calls' },
   { href: '/trainer/invites', icon: Share2, label: 'Invites' },
   { href: '/trainer/programs', icon: Dumbbell, label: 'Programs' },
   { href: '/trainer/messages', icon: MessageSquare, label: 'Messages' },

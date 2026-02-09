@@ -132,7 +132,29 @@
       "Bash(printf:*)",
       "Bash(__NEW_LINE_9e2a1dcf59171d26__ echo -e \"\\\\n=== Backend routes ===\")",
       "Bash(while read f)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(code tunnel:*)",
+      "Bash(timeout:*)",
+      "WebFetch(domain:fitstn.com)",
+      "WebFetch(domain:www.exercisedb.dev)",
+      "Bash(netstat:*)",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbWxkdGNlbXAwMDAwdjc0bzJmbGp3N2NoIiwiZW1haWwiOiJhdWRpdDJAdGVzdC5jb20iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTc3MDU1OTM4NywiZXhwIjoxNzcxMTY0MTg3fQ.kgGz7ptJz2YJp9RPaNGTOOo51CV3wqbwzGID0OAfYvU\")",
+      "Bash(__NEW_LINE_20a2b4a8ca83c419__ echo \"=== Testing Login ===\")",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbWxkdGNlbXAwMDAwdjc0bzJmbGp3N2NoIiwiZW1haWwiOiJhdWRpdDJAdGVzdC5jb20iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTc3MDU1OTQyNywiZXhwIjoxNzcxMTY0MjI3fQ.zruvtfN44k2DqEWb2GlJTrjqYmJck6U0NxTE6z7ZhIo\")",
+      "Bash(__NEW_LINE_badb9f80e1610d51__ echo \"=== /auth/me ===\")",
+      "Bash(__NEW_LINE_899d29b6581e912e__ echo \"\")",
+      "Bash(__NEW_LINE_3f0f56f623a98b15__ echo \"=== /auth/me ===\")",
+      "Bash(__NEW_LINE_c91ea7e325ade2c9__ echo \"=== /users/me ===\")",
+      "Bash(__NEW_LINE_02ce7b786ddd960f__ echo \"=== /exercises \\(search\\) ===\")",
+      "Bash(__NEW_LINE_617e8a9f0b372e90__ echo \"=== /exercises \\(no params\\) ===\")",
+      "Bash(__NEW_LINE_61a3d075a595cf59__ echo \"=== /exercises?query=squat ===\")",
+      "Bash(__NEW_LINE_a61944c8dc8da57f__ echo \"=== /exercises?query=squat&pageSize=3 ===\")",
+      "Bash(__NEW_LINE_9c29121fad28f4f4__ echo \"=== /workouts/plans ===\")",
+      "Bash(__NEW_LINE_7a2fdc2db0881803__ echo \"=== /workouts/plans/active ===\")",
+      "Bash(__NEW_LINE_7a2fdc2db0881803__ echo \"\")",
+      "Bash(__NEW_LINE_9fb2990dc8ae8a36__ echo \"=== /nutrition/foods?query=chicken ===\")",
+      "WebFetch(domain:reactjs.org)",
+      "Bash(npx next build:*)"
     ]
   }
 }

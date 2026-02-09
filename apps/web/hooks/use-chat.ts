@@ -46,51 +46,110 @@ export function useSendMessage() {
 
   return useMutation({
     mutationFn: (data: SendMessageData) => chatApi.sendMessage(data),
-    // Optimistic update - show message immediately
     onMutate: async (newMessage) => {
-      // Cancel any outgoing refetches
+      // Cancel any outgoing refetches to prevent race conditions
       await queryClient.cancelQueries({ queryKey: chatKeys.messages(newMessage.conversationId) });
 
-      // Snapshot the previous value
-      const previousMessages = queryClient.getQueryData(chatKeys.messages(newMessage.conversationId));
+      // Snapshot the previous value for rollback
+      const previousData = queryClient.getQueryData(chatKeys.messages(newMessage.conversationId));
+
+      const optimisticMessage = {
+        id: `temp-${Date.now()}`,
+        type: newMessage.type,
+        content: newMessage.content,
+        mediaUrl: newMessage.mediaUrl,
+        createdAt: new Date().toISOString(),
+        isMine: true,
+        isPending: true,
+        sender: { id: 'me', name: 'Me' },
+      };
 
       // Optimistically add the new message
       queryClient.setQueryData(chatKeys.messages(newMessage.conversationId), (old: any) => {
-        if (!old?.pages) return old;
-        const optimisticMessage = {
-          id: `temp-${Date.now()}`,
-          type: newMessage.type,
-          content: newMessage.content,
-          mediaUrl: newMessage.mediaUrl,
-          createdAt: new Date().toISOString(),
-          isMine: true,
-          sender: { id: 'me', name: 'Me' },
-        };
+        // Handle case when there's no existing data (new conversation)
+        if (!old?.pages || old.pages.length === 0) {
+          return {
+            pages: [{ messages: [optimisticMessage], nextCursor: null }],
+            pageParams: [undefined],
+          };
+        }
+        // Add to beginning of first page (messages are newest-first from API)
         return {
           ...old,
           pages: old.pages.map((page: any, index: number) =>
             index === 0
-              ? { ...page, messages: [...page.messages, optimisticMessage] }
+              ? { ...page, messages: [optimisticMessage, ...(page.messages || [])] }
               : page
           ),
         };
       });
 
-      return { previousMessages };
+      // Return context with previous data for rollback
+      return { previousData, optimisticId: optimisticMessage.id };
     },
-    onError: (err, newMessage, context) => {
-      // Rollback on error
-      if (context?.previousMessages) {
-        queryClient.setQueryData(
-          chatKeys.messages(newMessage.conversationId),
-          context.previousMessages
-        );
+    onSuccess: (response, variables, context) => {
+      // Replace the temp message with the real one from server
+      queryClient.setQueryData(chatKeys.messages(variables.conversationId), (old: any) => {
+        if (!old?.pages || old.pages.length === 0) {
+          return {
+            pages: [{ messages: [response], nextCursor: null }],
+            pageParams: [undefined],
+          };
+        }
+
+        // Replace temp message with real one, or add if temp was removed by refetch
+        let replacedTemp = false;
+        const updatedPages = old.pages.map((page: any, index: number) => {
+          const updatedMessages = (page.messages || []).map((m: any) => {
+            if (m.id === context?.optimisticId || m.id.startsWith('temp-')) {
+              replacedTemp = true;
+              return response;
+            }
+            return m;
+          });
+
+          // If this is the first page and we didn't replace a temp message,
+          // check if the message already exists (from refetch) before adding
+          if (index === 0 && !replacedTemp) {
+            const alreadyExists = updatedMessages.some((m: any) => m.id === response.id);
+            if (!alreadyExists) {
+              return { ...page, messages: [response, ...updatedMessages] };
+            }
+          }
+
+          return { ...page, messages: updatedMessages };
+        });
+
+        return { ...old, pages: updatedPages };
+      });
+
+      // Update conversations list for last message preview
+      queryClient.invalidateQueries({ queryKey: chatKeys.conversations() });
+    },
+    onError: (err, variables, context) => {
+      // Rollback to the previous state
+      if (context?.previousData) {
+        queryClient.setQueryData(chatKeys.messages(variables.conversationId), context.previousData);
+      } else {
+        // Fallback: just remove temp messages
+        queryClient.setQueryData(chatKeys.messages(variables.conversationId), (old: any) => {
+          if (!old?.pages) return old;
+          return {
+            ...old,
+            pages: old.pages.map((page: any) => ({
+              ...page,
+              messages: (page.messages || []).filter((m: any) => !m.id.startsWith('temp-')),
+            })),
+          };
+        });
       }
     },
-    onSettled: (_, __, variables) => {
-      // Always refetch after error or success to get real data
-      queryClient.invalidateQueries({ queryKey: chatKeys.messages(variables.conversationId) });
-      queryClient.invalidateQueries({ queryKey: chatKeys.conversations() });
+    onSettled: (data, error, variables) => {
+      // Always refetch after mutation to ensure consistency
+      // Small delay to let the server process the message
+      setTimeout(() => {
+        queryClient.invalidateQueries({ queryKey: chatKeys.messages(variables.conversationId) });
+      }, 500);
     },
   });
 }
