@@ -43,6 +43,7 @@ const navLinks = [
 
 const quickActions = [
   { icon: Sparkles, label: 'What Now?', href: '/workouts?whatnow=true', color: 'from-violet-500 to-purple-500' },
+  { icon: MessageCircle, label: 'Coach', href: '/chat', color: 'from-forma-teal to-cyan-400' },
   { icon: Heart, label: 'Health', href: '/health', color: 'from-red-500 to-pink-500' },
   { icon: TrendingUp, label: 'Progress', href: '/progress', color: 'from-green-500 to-emerald-500' },
 ];
@@ -142,8 +143,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                 <Globe className="h-5 w-5" />
               </Link>
             </Button>
-            <Button variant="ghost" size="icon" className="relative h-10 w-10 rounded-xl" asChild>
-              <Link href="/messages">
+            <Button variant="ghost" size="icon" className="relative h-10 w-10 rounded-xl" asChild title="Forma Coach">
+              <Link href="/chat">
                 <MessageCircle className="h-5 w-5" />
               </Link>
             </Button>

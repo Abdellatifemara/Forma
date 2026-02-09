@@ -18,15 +18,41 @@ const coachingMessages = {
     // Exercise cues
     exerciseStart: (name: string, sets: number, reps: number) =>
       `Starting ${name}. ${sets} sets of ${reps} reps. You've got this!`,
-    nextSet: (setNumber: number, totalSets: number) =>
-      `Set ${setNumber} of ${totalSets}. Focus on form, not speed.`,
+    nextSet: (setNumber: number, totalSets: number) => {
+      const setsLeft = totalSets - setNumber + 1;
+      if (setsLeft === 1) return "Last set! Give it everything you've got!";
+      if (setsLeft === 2) return `2 sets left. Stay focused!`;
+      return `Set ${setNumber} of ${totalSets}. ${setsLeft} sets to go.`;
+    },
+    setsLeft: (remaining: number) => {
+      if (remaining === 1) return "Last set!";
+      if (remaining === 2) return "2 sets left!";
+      return `${remaining} sets left.`;
+    },
     lastSet: "Last set! Give it everything you've got!",
-    setComplete: "Great job! Rest for a moment.",
+    setComplete: "Set done! Great work.",
+
+    // Rep cues
+    repCount: (rep: number, total: number) => {
+      if (rep === total) return "Last rep!";
+      if (rep === total - 1) return "One more after this!";
+      if (rep === Math.floor(total / 2)) return "Halfway there!";
+      return `${rep}`;
+    },
+    lastRep: "Last rep! Make it count!",
+    halfwayReps: "Halfway through! Keep going!",
 
     // Rest periods
-    restStart: (seconds: number) => `Rest for ${seconds} seconds. Breathe deeply.`,
-    restHalf: "Halfway through rest. Get ready for the next set.",
-    restEnd: "Rest over! Let's go!",
+    restStart: (seconds: number) => `Rest for ${seconds} seconds.`,
+    restCountdown: (seconds: number) => {
+      if (seconds === 30) return "30 seconds left.";
+      if (seconds === 10) return "10 seconds, get ready!";
+      if (seconds === 5) return "5 seconds!";
+      if (seconds <= 3 && seconds > 0) return `${seconds}`;
+      return "";
+    },
+    restHalf: "Halfway through rest. Prepare for the next set.",
+    restEnd: "Time! Let's go!",
 
     // Encouragement
     encouragement: [
@@ -49,9 +75,16 @@ const coachingMessages = {
       default: "Focus on your form. Quality over quantity.",
     },
 
+    // Progress feedback
+    progressFeedback: {
+      newPR: "New personal record! Incredible!",
+      weightIncrease: (weight: number) => `Great progress! You're lifting ${weight} more than last time.`,
+      consistentStrength: "Solid consistency. Keep building!",
+    },
+
     // Workout completion
     coolDown: "Excellent workout! Time to cool down and stretch.",
-    workoutComplete: "Workout complete! You showed up and gave your best. That's what matters. See you next time!",
+    workoutComplete: "Workout complete! You showed up and gave your best. See you next time!",
 
     // Countdowns
     countdown: (num: number) => num.toString(),
@@ -64,15 +97,41 @@ const coachingMessages = {
     // Exercise cues
     exerciseStart: (name: string, sets: number, reps: number) =>
       `نبدأ ${name}. ${sets} مجموعات من ${reps} تكرار. يمكنك فعلها!`,
-    nextSet: (setNumber: number, totalSets: number) =>
-      `مجموعة ${setNumber} من ${totalSets}. ركز على الشكل الصحيح.`,
+    nextSet: (setNumber: number, totalSets: number) => {
+      const setsLeft = totalSets - setNumber + 1;
+      if (setsLeft === 1) return "المجموعة الأخيرة! أعطها كل ما لديك!";
+      if (setsLeft === 2) return "مجموعتان متبقيتان. ركز!";
+      return `مجموعة ${setNumber} من ${totalSets}. ${setsLeft} مجموعات متبقية.`;
+    },
+    setsLeft: (remaining: number) => {
+      if (remaining === 1) return "المجموعة الأخيرة!";
+      if (remaining === 2) return "مجموعتان متبقيتان!";
+      return `${remaining} مجموعات متبقية.`;
+    },
     lastSet: "المجموعة الأخيرة! أعطها كل ما لديك!",
-    setComplete: "عمل رائع! استرح قليلاً.",
+    setComplete: "انتهت المجموعة! عمل رائع.",
+
+    // Rep cues
+    repCount: (rep: number, total: number) => {
+      if (rep === total) return "التكرار الأخير!";
+      if (rep === total - 1) return "واحد آخر بعد هذا!";
+      if (rep === Math.floor(total / 2)) return "في المنتصف!";
+      return `${rep}`;
+    },
+    lastRep: "التكرار الأخير! اجعله مهماً!",
+    halfwayReps: "في منتصف الطريق! استمر!",
 
     // Rest periods
-    restStart: (seconds: number) => `استرح ${seconds} ثانية. تنفس بعمق.`,
+    restStart: (seconds: number) => `استرح ${seconds} ثانية.`,
+    restCountdown: (seconds: number) => {
+      if (seconds === 30) return "30 ثانية متبقية.";
+      if (seconds === 10) return "10 ثواني، استعد!";
+      if (seconds === 5) return "5 ثواني!";
+      if (seconds <= 3 && seconds > 0) return `${seconds}`;
+      return "";
+    },
     restHalf: "نصف الراحة انتهى. استعد للمجموعة التالية.",
-    restEnd: "انتهت الراحة! هيا!",
+    restEnd: "الوقت! هيا!",
 
     // Encouragement
     encouragement: [
@@ -95,9 +154,16 @@ const coachingMessages = {
       default: "ركز على شكلك. الجودة أهم من الكمية.",
     },
 
+    // Progress feedback
+    progressFeedback: {
+      newPR: "رقم قياسي جديد! مذهل!",
+      weightIncrease: (weight: number) => `تقدم رائع! أنت ترفع ${weight} أكثر من المرة السابقة.`,
+      consistentStrength: "ثبات قوي. استمر في البناء!",
+    },
+
     // Workout completion
     coolDown: "تمرين ممتاز! وقت التهدئة والتمدد.",
-    workoutComplete: "انتهى التمرين! لقد حضرت وقدمت أفضل ما لديك. هذا ما يهم. أراك المرة القادمة!",
+    workoutComplete: "انتهى التمرين! لقد حضرت وقدمت أفضل ما لديك. أراك المرة القادمة!",
 
     // Countdowns
     countdown: (num: number) => num.toString(),
@@ -200,6 +266,20 @@ export function useVoiceCoach(language: 'en' | 'ar' = 'en') {
     },
     announceWorkoutComplete: () => {
       speak(messages.workoutComplete);
+    },
+    announceSetsLeft: (remaining: number) => {
+      speak(messages.setsLeft(remaining));
+    },
+    announceRep: (rep: number, total: number) => {
+      const phrase = messages.repCount(rep, total);
+      if (phrase) speak(phrase, { rate: 1.1 });
+    },
+    announceRestCountdown: (seconds: number) => {
+      const phrase = messages.restCountdown(seconds);
+      if (phrase) speak(phrase, { rate: 1.1 });
+    },
+    announceNewPR: () => {
+      speak(messages.progressFeedback.newPR);
     },
     countdown: (from: number, onComplete?: () => void) => {
       let count = from;
