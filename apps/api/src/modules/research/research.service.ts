@@ -44,11 +44,10 @@ export class ResearchService {
    * Get all available tests for user (those not yet completed)
    */
   async getAvailableTests(userId: string) {
-    // Get all tests
+    // Get all active surveys/tests
     const allTests = await this.prisma.survey.findMany({
       where: {
         isActive: true,
-        code: { startsWith: 'test_' },
       },
       select: {
         id: true,
