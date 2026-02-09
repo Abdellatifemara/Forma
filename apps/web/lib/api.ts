@@ -78,7 +78,25 @@ class ApiClient {
       throw new Error(error.message || `HTTP error! status: ${response.status}`);
     }
 
-    return response.json();
+    // Handle empty responses (204 No Content, etc.)
+    const contentType = response.headers.get('content-type');
+    const contentLength = response.headers.get('content-length');
+
+    if (response.status === 204 || contentLength === '0' || !contentType?.includes('application/json')) {
+      return null as T;
+    }
+
+    // Try to parse JSON, return null if empty
+    const text = await response.text();
+    if (!text || text.trim() === '') {
+      return null as T;
+    }
+
+    try {
+      return JSON.parse(text);
+    } catch {
+      return null as T;
+    }
   }
 
   private async request<T>(endpoint: string, config: RequestConfig = {}): Promise<T> {

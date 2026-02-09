@@ -51,9 +51,10 @@ export function useSubmitTest() {
 export function useAvailableSurvey(trigger?: string) {
   return useQuery({
     queryKey: ['availableSurvey', trigger],
-    queryFn: () => researchApi.getAvailableSurvey(trigger),
+    queryFn: () => trigger ? researchApi.getAvailableSurvey(trigger) : null,
     staleTime: 1000 * 60 * 5, // 5 minutes
     retry: false,
+    enabled: !!trigger, // Only run when trigger exists
   });
 }
 
