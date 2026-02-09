@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import {
   ArrowLeft,
@@ -44,12 +45,9 @@ const defaultRatingBreakdown = [
   { stars: 1, count: 0, percentage: 0 },
 ];
 
-interface TrainerDetailPageProps {
-  params: Promise<{ id: string }>;
-}
-
-export default function TrainerDetailPage({ params }: TrainerDetailPageProps) {
-  const { id } = use(params);
+export default function TrainerDetailPage() {
+  const params = useParams();
+  const id = params.id as string;
   const [trainer, setTrainer] = useState<Trainer | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

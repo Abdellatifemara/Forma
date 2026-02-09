@@ -36,7 +36,7 @@ import { useUser, useUserStats } from '@/hooks/use-user';
 const navLinks = [
   { href: '/dashboard', icon: Home, label: 'Home', labelAr: 'الرئيسية' },
   { href: '/workouts', icon: Dumbbell, label: 'Workouts', labelAr: 'التمارين' },
-  { href: '/check-in', icon: ClipboardCheck, label: 'Check-In', labelAr: 'تسجيل يومي' },
+  { href: '/chat', icon: MessageCircle, label: 'Coach', labelAr: 'المدرب' },
   { href: '/nutrition', icon: Utensils, label: 'Nutrition', labelAr: 'التغذية' },
   { href: '/profile', icon: User, label: 'Profile', labelAr: 'الملف' },
 ];

@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect, use } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { useRouter, useParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft,
@@ -83,8 +83,9 @@ interface WorkoutSession {
   startedAt: string;
 }
 
-export default function ActiveWorkoutPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id: workoutId } = use(params);
+export default function ActiveWorkoutPage() {
+  const params = useParams();
+  const workoutId = params.id as string;
   const router = useRouter();
 
   // Data states
