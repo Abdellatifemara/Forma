@@ -14,19 +14,51 @@ import Link from 'next/link';
 const faqs = [
   {
     question: 'How do I create a workout plan?',
-    answer: 'Go to Workouts → Create Plan, add exercises, and save your custom plan.',
+    answer: 'Go to Workouts → Create Plan, add exercises, set your schedule, and save your custom plan. You can also use "What Now?" to get a personalized recommendation.',
   },
   {
     question: 'How do I track my nutrition?',
-    answer: 'Navigate to Nutrition, search for foods, and log your meals for each day.',
+    answer: 'Navigate to Nutrition, search for Egyptian and international foods, and log your meals. The app tracks calories, protein, carbs, and fats automatically.',
+  },
+  {
+    question: 'How do I log my weight and progress?',
+    answer: 'Go to Progress → Log Weight to record your current weight. You can also take progress photos and view your trends over time.',
+  },
+  {
+    question: 'How do I find exercises for a specific muscle?',
+    answer: 'Go to Exercises and use the filters to select your target muscle group, equipment, and difficulty level.',
+  },
+  {
+    question: 'How does the "What Now?" feature work?',
+    answer: 'Tell it your available time, energy level, and location (gym/home/outdoor), and it will suggest the perfect workout for your situation.',
+  },
+  {
+    question: 'How do I check my exercise form?',
+    answer: 'Use the Form Check feature in Workouts. It uses your camera to analyze your form and provide real-time feedback on exercises like squats and push-ups.',
+  },
+  {
+    question: 'What is Voice Coach?',
+    answer: 'Voice Coach provides hands-free workout guidance. It announces exercises, counts reps, manages rest times, and gives form reminders - all through voice.',
   },
   {
     question: 'How do I connect with a trainer?',
-    answer: 'Visit the Trainers marketplace to browse and connect with certified trainers.',
+    answer: 'Visit the Trainers marketplace to browse certified trainers. You can view their specialties, ratings, and book sessions directly.',
   },
   {
-    question: 'How do I upgrade my subscription?',
-    answer: 'Go to Settings → Subscription to view plans and upgrade.',
+    question: 'How do I become a trainer on Forma?',
+    answer: 'Go to Settings → Become a Trainer, fill out your qualifications, upload certifications, and submit your application for review.',
+  },
+  {
+    question: 'What are the subscription tiers?',
+    answer: 'Free tier includes basic tracking. Premium adds unlimited personalized recommendations, advanced analytics, and trainer messaging. Premium Plus includes personal coaching.',
+  },
+  {
+    question: 'How do I change my language?',
+    answer: 'Go to Settings and select your preferred language. Forma supports both English and Arabic.',
+  },
+  {
+    question: 'Is my chat private?',
+    answer: 'Yes, all messages are end-to-end encrypted. Only you and your conversation partner can read them.',
   },
 ];
 

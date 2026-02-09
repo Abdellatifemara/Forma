@@ -17,8 +17,8 @@ import { useResearchTests, useResearchTest, useSubmitTest } from '@/hooks/use-re
 import { SurveyModal } from '@/components/research/survey-modal';
 import type { TestDetail } from '@/lib/api';
 
-// Test category colors
-const testCategories: Record<string, { icon: string; color: string; bgColor: string }> = {
+// Preference category colors - these questions help personalize the AI
+const preferenceCategories: Record<string, { icon: string; color: string; bgColor: string }> = {
   test_workout_logging: { icon: '💪', color: 'text-cyan-400', bgColor: 'bg-cyan-500/10' },
   test_nutrition_tracking: { icon: '🥗', color: 'text-green-400', bgColor: 'bg-green-500/10' },
   test_body_tracking: { icon: '📊', color: 'text-purple-400', bgColor: 'bg-purple-500/10' },
@@ -36,7 +36,7 @@ const testCategories: Record<string, { icon: string; color: string; bgColor: str
   test_ramadan: { icon: '🌙', color: 'text-teal-400', bgColor: 'bg-teal-500/10' },
 };
 
-export default function ResearchTestsPage() {
+export default function PersonalizationPage() {
   const { data, isLoading } = useResearchTests();
   const [selectedTest, setSelectedTest] = useState<string | null>(null);
   const [activeTest, setActiveTest] = useState<TestDetail | null>(null);
@@ -83,9 +83,9 @@ export default function ResearchTestsPage() {
               <ClipboardList className="h-8 w-8 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold">Research Tests</h1>
+              <h1 className="text-2xl font-bold">Personalize Your Experience</h1>
               <p className="text-muted-foreground">
-                Help us build the perfect fitness app for you
+                Answer a few questions to get tailored recommendations
               </p>
             </div>
           </div>
@@ -93,8 +93,8 @@ export default function ResearchTestsPage() {
           {/* Progress bar */}
           <div className="mt-6">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-muted-foreground">Your progress</span>
-              <span className="text-sm font-medium">{completedCount}/{totalCount} tests</span>
+              <span className="text-sm text-muted-foreground">Personalization progress</span>
+              <span className="text-sm font-medium">{completedCount}/{totalCount} completed</span>
             </div>
             <div className="h-3 bg-muted rounded-full overflow-hidden">
               <div
@@ -107,7 +107,7 @@ export default function ResearchTestsPage() {
           {progress === 100 && (
             <div className="mt-4 flex items-center gap-2 text-green-400">
               <Trophy className="h-5 w-5" />
-              <span className="font-medium">All tests completed! Thank you!</span>
+              <span className="font-medium">All done! Your experience is now fully personalized.</span>
             </div>
           )}
         </div>
@@ -118,18 +118,18 @@ export default function ResearchTestsPage() {
         <div className="flex items-center gap-3">
           <Sparkles className="h-5 w-5 text-primary" />
           <div>
-            <p className="font-medium">Complete all tests to help shape Forma</p>
+            <p className="font-medium">The more you share, the better your recommendations</p>
             <p className="text-sm text-muted-foreground">
-              Your answers directly influence what features we build and how they work
+              Your preferences help us give you personalized workouts, nutrition plans, and coaching tips
             </p>
           </div>
         </div>
       </div>
 
-      {/* Tests grid */}
+      {/* Preference questions */}
       <div className="space-y-3">
         {tests.map((test) => {
-          const category = testCategories[test.code] || {
+          const category = preferenceCategories[test.code] || {
             icon: '📋',
             color: 'text-muted-foreground',
             bgColor: 'bg-muted',

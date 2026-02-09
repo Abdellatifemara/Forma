@@ -135,6 +135,8 @@ model Exercise {
   instructionsAr   String[]
   tipsEn           String[]
   tipsAr           String[]
+  faqsEn           Json?                  // Array of {question, answer} objects
+  faqsAr           Json?                  // Array of {question, answer} objects
   isTimeBased      Boolean                @default(false)
   defaultSets      Int                    @default(3)
   defaultReps      Int?                   @default(10)

@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
+import { useSearchParams, useRouter } from 'next/navigation';
 import {
   Calendar,
   Dumbbell,
@@ -17,12 +18,16 @@ import {
   Camera,
   Mic,
   Filter,
+  X,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { workoutsApi, type WorkoutPlan, type WorkoutLog } from '@/lib/api';
+import { WhatNowButton } from '@/components/workouts/what-now';
+import { FormChecker } from '@/components/workouts/form-checker';
+import { WorkoutWithVoiceCoach, VoiceCoachToggle, useVoiceCoach } from '@/components/workouts/voice-coach';
 
 const quickActions = [
   {
@@ -59,11 +64,23 @@ const muscleGroups = [
   { name: 'Full Body', color: 'bg-forma-teal/20 text-forma-teal border-forma-teal/30' },
 ];
 
-export default function WorkoutsPage() {
+function WorkoutsContent() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const [plans, setPlans] = useState<WorkoutPlan[]>([]);
   const [history, setHistory] = useState<WorkoutLog[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [activePlanId, setActivePlanId] = useState<string | null>(null);
+
+  // Quick Action states from URL params
+  const showWhatNow = searchParams.get('whatnow') === 'true';
+  const showFormCheck = searchParams.get('formcheck') === 'true';
+  const showVoiceCoach = searchParams.get('voicecoach') === 'true';
+  const [formCheckExercise, setFormCheckExercise] = useState('squat');
+
+  const closeQuickAction = () => {
+    router.push('/workouts');
+  };
 
   useEffect(() => {
     async function fetchData() {
@@ -358,6 +375,116 @@ export default function WorkoutsPage() {
           </div>
         </TabsContent>
       </Tabs>
+
+      {/* Quick Action: What Now? */}
+      {showWhatNow && (
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="w-full max-w-lg animate-scale-in">
+            <div className="flex justify-end mb-2">
+              <button
+                onClick={closeQuickAction}
+                className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+              >
+                <X className="w-5 h-5 text-white" />
+              </button>
+            </div>
+            <WhatNowButton />
+          </div>
+        </div>
+      )}
+
+      {/* Quick Action: Form Check */}
+      {showFormCheck && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex flex-col">
+          <div className="p-4 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <Camera className="w-6 h-6 text-forma-teal" />
+              <h2 className="text-white text-lg font-semibold">Form Check</h2>
+            </div>
+            <button
+              onClick={closeQuickAction}
+              className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+            >
+              <X className="w-5 h-5 text-white" />
+            </button>
+          </div>
+          <div className="px-4 pb-4">
+            <p className="text-white/70 mb-4">Select an exercise to check your form:</p>
+            <div className="flex flex-wrap gap-2">
+              {['squat', 'pushup', 'deadlift', 'plank'].map((exercise) => (
+                <button
+                  key={exercise}
+                  onClick={() => setFormCheckExercise(exercise)}
+                  className={`px-4 py-2 rounded-lg capitalize transition-colors ${
+                    formCheckExercise === exercise
+                      ? 'bg-forma-teal text-white'
+                      : 'bg-white/20 text-white hover:bg-white/30'
+                  }`}
+                >
+                  {exercise}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="flex-1">
+            <FormChecker exercise={formCheckExercise} onClose={closeQuickAction} />
+          </div>
+        </div>
+      )}
+
+      {/* Quick Action: Voice Coach */}
+      {showVoiceCoach && (
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="w-full max-w-lg animate-scale-in">
+            <div className="flex justify-end mb-2">
+              <button
+                onClick={closeQuickAction}
+                className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
+              >
+                <X className="w-5 h-5 text-white" />
+              </button>
+            </div>
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
+                  <Mic className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">Voice Coach</h2>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Hands-free workout guidance</p>
+                </div>
+              </div>
+              <WorkoutWithVoiceCoach
+                exercises={[
+                  { name: 'Squats', sets: 3, reps: 12 },
+                  { name: 'Push-ups', sets: 3, reps: 10 },
+                  { name: 'Lunges', sets: 3, reps: 10 },
+                  { name: 'Plank', sets: 3, reps: 30 },
+                ]}
+                language="en"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
+  );
+}
+
+export default function WorkoutsPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex h-[60vh] items-center justify-center">
+        <div className="text-center">
+          <div className="relative mx-auto h-16 w-16">
+            <div className="h-16 w-16 rounded-full border-4 border-muted animate-pulse" />
+            <div className="absolute inset-0 h-16 w-16 rounded-full border-4 border-transparent border-t-forma-teal animate-spin" />
+          </div>
+          <p className="mt-4 text-muted-foreground">Loading workouts...</p>
+        </div>
+      </div>
+    }>
+      <WorkoutsContent />
+    </Suspense>
   );
 }

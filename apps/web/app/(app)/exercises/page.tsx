@@ -26,6 +26,7 @@ import {
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
@@ -340,6 +341,9 @@ function ExercisesPageContent() {
                     {selectedExercise.nameAr}
                   </span>
                 </DialogTitle>
+                <DialogDescription className="sr-only">
+                  Exercise details for {selectedExercise.nameEn || selectedExercise.name}
+                </DialogDescription>
               </DialogHeader>
 
               <div className="space-y-6">
@@ -416,6 +420,26 @@ function ExercisesPageContent() {
                         </li>
                       ))}
                     </ul>
+                  </div>
+                )}
+
+                {/* FAQs */}
+                {selectedExercise.faqsEn && Array.isArray(selectedExercise.faqsEn) && selectedExercise.faqsEn.length > 0 && (
+                  <div>
+                    <h4 className="mb-3 font-semibold">Frequently Asked Questions</h4>
+                    <div className="space-y-3">
+                      {selectedExercise.faqsEn.map((faq: { question: string; answer: string }, index: number) => (
+                        <details key={index} className="group rounded-lg border bg-muted/30 p-3">
+                          <summary className="cursor-pointer font-medium text-sm flex items-center justify-between">
+                            {faq.question}
+                            <ChevronRight className="h-4 w-4 transition-transform group-open:rotate-90" />
+                          </summary>
+                          <p className="mt-2 text-sm text-muted-foreground pl-0">
+                            {faq.answer}
+                          </p>
+                        </details>
+                      ))}
+                    </div>
                   </div>
                 )}
 

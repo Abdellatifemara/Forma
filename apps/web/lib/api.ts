@@ -1471,6 +1471,11 @@ interface WorkoutLog {
   calories?: number;
 }
 
+interface ExerciseFaq {
+  question: string;
+  answer: string;
+}
+
 interface Exercise {
   id: string;
   externalId?: string;
@@ -1488,6 +1493,8 @@ interface Exercise {
   instructionsAr?: string[];
   tipsEn?: string[];
   tipsAr?: string[];
+  faqsEn?: ExerciseFaq[];
+  faqsAr?: ExerciseFaq[];
   videoUrl?: string;
   thumbnailUrl?: string;
   isTimeBased?: boolean;
