@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
 import { useAvailableSurvey } from '@/hooks/use-research';
 import { SurveyModal } from './survey-modal';
 import type { Survey } from '@/lib/api';
@@ -34,11 +34,17 @@ export function SurveyProvider({ children, language = 'en' }: SurveyProviderProp
   // Fetch available survey when trigger is set
   const { data: availableSurvey } = useAvailableSurvey(currentTrigger);
 
+  // Show survey when available - FIXED: moved to useEffect to avoid setState during render
+  useEffect(() => {
+    if (availableSurvey && !currentSurvey && currentTrigger) {
+      setCurrentSurvey(availableSurvey);
+      setCurrentTrigger(undefined);
+    }
+  }, [availableSurvey, currentSurvey, currentTrigger]);
+
   // Show survey when available
   const triggerSurvey = useCallback((trigger: string) => {
     setCurrentTrigger(trigger);
-    // The useAvailableSurvey hook will fetch the survey
-    // Once data is available, we show it
   }, []);
 
   const showSurvey = useCallback((survey: Survey) => {
@@ -49,12 +55,6 @@ export function SurveyProvider({ children, language = 'en' }: SurveyProviderProp
     setCurrentSurvey(null);
     setCurrentTrigger(undefined);
   }, []);
-
-  // When survey becomes available, show it
-  if (availableSurvey && !currentSurvey && currentTrigger) {
-    setCurrentSurvey(availableSurvey);
-    setCurrentTrigger(undefined);
-  }
 
   return (
     <SurveyContext.Provider value={{ triggerSurvey, showSurvey, dismissSurvey, currentSurvey }}>

@@ -9,6 +9,7 @@ const protectedRoutes = [
   '/progress',
   '/profile',
   '/chat',
+  '/coach',
   '/settings',
   '/exercises',
   '/trainers',
@@ -17,6 +18,8 @@ const protectedRoutes = [
   '/onboarding',
   '/trainer',
   '/admin',
+  '/tests',
+  '/health',
 ];
 
 // Routes that should redirect to dashboard if authenticated
