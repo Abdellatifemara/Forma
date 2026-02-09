@@ -54,40 +54,15 @@ export class UploadService {
             { quality: 'auto' },
             { format: 'auto' },
           ],
-          // Enable moderation using Cloudinary's built-in NSFW detection
-          // This uses Google's Vision API or AWS Rekognition depending on account setup
-          moderation: 'aws_rek',
         },
         async (error, result) => {
           if (error) {
             reject(new BadRequestException(`Upload failed: ${error.message}`));
           } else if (result) {
-            // Check moderation result (Cloudinary returns moderation array with status)
-            const moderationResult = (result as any).moderation?.[0];
-            const isRejected = moderationResult?.status === 'rejected';
-
-            if (isRejected) {
-              // Delete the uploaded image
-              await cloudinary.uploader.destroy(result.public_id);
-
-              // Log the violation
-              await this.logContentViolation(userId, result.public_id, 'NSFW content detected');
-
-              // Check violation count and potentially ban user
-              await this.checkAndBanUser(userId);
-
-              reject(
-                new ForbiddenException(
-                  'Image rejected: Content violates community guidelines. Repeated violations may result in account suspension.',
-                ),
-              );
-              return;
-            }
-
             resolve({
               url: result.secure_url,
               publicId: result.public_id,
-              moderated: true,
+              moderated: false,
             });
           }
         },
