@@ -25,6 +25,8 @@ import {
   Globe,
   LogOut,
   ClipboardList,
+  ClipboardCheck,
+  Heart,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -34,15 +36,15 @@ import { useUser, useUserStats } from '@/hooks/use-user';
 const navLinks = [
   { href: '/dashboard', icon: Home, label: 'Home', labelAr: 'الرئيسية' },
   { href: '/workouts', icon: Dumbbell, label: 'Workouts', labelAr: 'التمارين' },
+  { href: '/check-in', icon: ClipboardCheck, label: 'Check-In', labelAr: 'تسجيل يومي' },
   { href: '/nutrition', icon: Utensils, label: 'Nutrition', labelAr: 'التغذية' },
-  { href: '/progress', icon: TrendingUp, label: 'Progress', labelAr: 'التقدم' },
   { href: '/profile', icon: User, label: 'Profile', labelAr: 'الملف' },
 ];
 
 const quickActions = [
   { icon: Sparkles, label: 'What Now?', href: '/workouts?whatnow=true', color: 'from-violet-500 to-purple-500' },
-  { icon: Camera, label: 'Form Check', href: '/workouts?formcheck=true', color: 'from-blue-500 to-cyan-500' },
-  { icon: Mic, label: 'Voice Coach', href: '/workouts?voicecoach=true', color: 'from-orange-500 to-red-500' },
+  { icon: Heart, label: 'Health', href: '/health', color: 'from-red-500 to-pink-500' },
+  { icon: TrendingUp, label: 'Progress', href: '/progress', color: 'from-green-500 to-emerald-500' },
 ];
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
@@ -230,8 +232,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                 <ClipboardList className="h-5 w-5 text-white" />
               </div>
               <div>
-                <span className="font-medium">Research Tests</span>
-                <p className="text-xs text-muted-foreground">Help us build Forma</p>
+                <span className="font-medium">Personalize</span>
+                <p className="text-xs text-muted-foreground">Get tailored recommendations</p>
               </div>
             </Link>
 
@@ -297,13 +299,13 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
             ))}
           </div>
 
-          {/* Research Tests Banner */}
+          {/* Personalization Banner */}
           <Link href="/tests" className="mt-4 block rounded-2xl border border-primary/30 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 p-4 hover:border-primary/50 transition-all">
             <div className="flex items-center gap-3">
               <ClipboardList className="h-5 w-5 text-primary" />
               <div>
-                <p className="text-sm font-medium">Research Tests</p>
-                <p className="text-xs text-muted-foreground">Help us build Forma</p>
+                <p className="text-sm font-medium">Personalize</p>
+                <p className="text-xs text-muted-foreground">Get tailored recommendations</p>
               </div>
             </div>
           </Link>

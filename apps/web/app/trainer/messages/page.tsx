@@ -45,6 +45,7 @@ import { cn } from '@/lib/utils';
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -297,6 +298,9 @@ function MessagesPageContent() {
           <DialogContent>
             <DialogHeader>
               <DialogTitle>Start New Conversation</DialogTitle>
+              <DialogDescription className="sr-only">
+                Select a client to start a new conversation
+              </DialogDescription>
             </DialogHeader>
             <div className="max-h-[400px] overflow-y-auto">
               {clientsLoading ? (

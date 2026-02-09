@@ -31,6 +31,7 @@ import { Badge } from '@/components/ui/badge';
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -154,6 +155,9 @@ export default function NutritionPage() {
                 <Apple className="h-5 w-5 text-primary" />
                 Add Food
               </DialogTitle>
+              <DialogDescription className="sr-only">
+                Log a food item to your daily nutrition tracker
+              </DialogDescription>
             </DialogHeader>
             <div className="space-y-4">
               {/* Meal Type Selection */}

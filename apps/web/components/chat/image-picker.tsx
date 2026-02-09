@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
@@ -100,6 +101,9 @@ export function ImagePicker({ onImageSelected, isUploading, disabled }: ImagePic
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
             <DialogTitle>Send Image</DialogTitle>
+            <DialogDescription className="sr-only">
+              Preview and send an image
+            </DialogDescription>
           </DialogHeader>
 
           <div className="relative">
