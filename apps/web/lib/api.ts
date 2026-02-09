@@ -54,8 +54,17 @@ class ApiClient {
 
     let url = `${this.baseUrl}${endpoint}`;
     if (params) {
-      const searchParams = new URLSearchParams(params);
-      url += `?${searchParams.toString()}`;
+      // Filter out undefined/null values before creating URLSearchParams
+      const filteredParams: Record<string, string> = {};
+      for (const [key, value] of Object.entries(params)) {
+        if (value !== undefined && value !== null && value !== 'undefined' && value !== 'null') {
+          filteredParams[key] = String(value);
+        }
+      }
+      if (Object.keys(filteredParams).length > 0) {
+        const searchParams = new URLSearchParams(filteredParams);
+        url += `?${searchParams.toString()}`;
+      }
     }
 
     const headers: Record<string, string> = {

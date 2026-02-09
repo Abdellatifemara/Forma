@@ -38,8 +38,11 @@ export class ChatController {
     @Query('limit') limit: string,
     @Request() req: { user: { id: string } },
   ) {
+    // Handle "undefined" string being passed as cursor
+    const validCursor = cursor && cursor !== 'undefined' && cursor !== 'null' ? cursor : undefined;
+
     return this.chatService.getMessages(req.user.id, conversationId, {
-      cursor,
+      cursor: validCursor,
       limit: limit ? parseInt(limit, 10) : undefined,
     });
   }
