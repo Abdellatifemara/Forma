@@ -1,43 +1,80 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import {
   ClipboardList,
   CheckCircle2,
-  Circle,
   ChevronRight,
   Trophy,
   Sparkles,
   Loader2,
+  Dumbbell,
+  Target,
+  Utensils,
+  Calendar,
+  Heart,
+  Brain,
+  Settings,
+  Activity,
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useResearchTests, useResearchTest, useSubmitTest } from '@/hooks/use-research';
 import { SurveyModal } from '@/components/research/survey-modal';
 import type { TestDetail } from '@/lib/api';
 
-// Preference category colors - these questions help personalize your experience
-const preferenceCategories: Record<string, { icon: string; color: string; bgColor: string }> = {
-  test_workout_logging: { icon: '💪', color: 'text-cyan-400', bgColor: 'bg-cyan-500/10' },
-  test_nutrition_tracking: { icon: '🥗', color: 'text-green-400', bgColor: 'bg-green-500/10' },
-  test_body_tracking: { icon: '📊', color: 'text-purple-400', bgColor: 'bg-purple-500/10' },
-  test_schedule_lifestyle: { icon: '📅', color: 'text-orange-400', bgColor: 'bg-orange-500/10' },
-  test_goals_motivation: { icon: '🎯', color: 'text-red-400', bgColor: 'bg-red-500/10' },
-  test_social_community: { icon: '👥', color: 'text-blue-400', bgColor: 'bg-blue-500/10' },
-  test_coach_interaction: { icon: '🏋️', color: 'text-yellow-400', bgColor: 'bg-yellow-500/10' },
-  test_onboarding_depth: { icon: '🚀', color: 'text-pink-400', bgColor: 'bg-pink-500/10' },
-  test_notifications: { icon: '🔔', color: 'text-indigo-400', bgColor: 'bg-indigo-500/10' },
-  test_feature_priority: { icon: '⭐', color: 'text-amber-400', bgColor: 'bg-amber-500/10' },
-  test_pricing_value: { icon: '💰', color: 'text-emerald-400', bgColor: 'bg-emerald-500/10' },
-  test_app_experience: { icon: '📱', color: 'text-violet-400', bgColor: 'bg-violet-500/10' },
-  test_equipment: { icon: '🏠', color: 'text-slate-400', bgColor: 'bg-slate-500/10' },
-  test_injuries: { icon: '🩹', color: 'text-rose-400', bgColor: 'bg-rose-500/10' },
-  test_ramadan: { icon: '🌙', color: 'text-teal-400', bgColor: 'bg-teal-500/10' },
+// Survey categories with icons matching the new comprehensive surveys
+const surveyCategories: Record<string, { icon: React.ReactNode; color: string; bgColor: string }> = {
+  fitness_profile: {
+    icon: <Activity className="h-6 w-6" />,
+    color: 'text-cyan-400',
+    bgColor: 'bg-cyan-500/20'
+  },
+  body_goals: {
+    icon: <Target className="h-6 w-6" />,
+    color: 'text-red-400',
+    bgColor: 'bg-red-500/20'
+  },
+  training_style: {
+    icon: <Dumbbell className="h-6 w-6" />,
+    color: 'text-purple-400',
+    bgColor: 'bg-purple-500/20'
+  },
+  schedule: {
+    icon: <Calendar className="h-6 w-6" />,
+    color: 'text-orange-400',
+    bgColor: 'bg-orange-500/20'
+  },
+  nutrition_profile: {
+    icon: <Utensils className="h-6 w-6" />,
+    color: 'text-green-400',
+    bgColor: 'bg-green-500/20'
+  },
+  lifestyle: {
+    icon: <Heart className="h-6 w-6" />,
+    color: 'text-pink-400',
+    bgColor: 'bg-pink-500/20'
+  },
+  motivation: {
+    icon: <Brain className="h-6 w-6" />,
+    color: 'text-yellow-400',
+    bgColor: 'bg-yellow-500/20'
+  },
+  tracking_preferences: {
+    icon: <Settings className="h-6 w-6" />,
+    color: 'text-blue-400',
+    bgColor: 'bg-blue-500/20'
+  },
+};
+
+// Fallback category
+const defaultCategory = {
+  icon: <ClipboardList className="h-6 w-6" />,
+  color: 'text-muted-foreground',
+  bgColor: 'bg-muted'
 };
 
 export default function PersonalizationPage() {
-  const { data, isLoading } = useResearchTests();
+  const { data, isLoading, error } = useResearchTests();
   const [selectedTest, setSelectedTest] = useState<string | null>(null);
   const [activeTest, setActiveTest] = useState<TestDetail | null>(null);
 
@@ -67,10 +104,19 @@ export default function PersonalizationPage() {
     );
   }
 
+  if (error) {
+    return (
+      <div className="text-center py-12">
+        <p className="text-muted-foreground">Failed to load personalization options</p>
+        <p className="text-sm text-muted-foreground mt-2">Please try again later</p>
+      </div>
+    );
+  }
+
   const tests = data?.tests || [];
   const progress = data?.progress || 0;
   const completedCount = data?.completedTests || 0;
-  const totalCount = data?.totalTests || 0;
+  const totalCount = data?.totalTests || tests.length || 0;
 
   return (
     <div className="space-y-8 pb-20">
@@ -126,14 +172,19 @@ export default function PersonalizationPage() {
         </div>
       </div>
 
-      {/* Preference questions */}
+      {/* Show message if no tests */}
+      {tests.length === 0 && (
+        <div className="text-center py-12 rounded-xl border border-dashed">
+          <ClipboardList className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
+          <p className="text-muted-foreground">No personalization surveys available yet</p>
+          <p className="text-sm text-muted-foreground mt-2">Check back soon!</p>
+        </div>
+      )}
+
+      {/* Surveys list */}
       <div className="space-y-3">
         {tests.map((test) => {
-          const category = preferenceCategories[test.code] || {
-            icon: '📋',
-            color: 'text-muted-foreground',
-            bgColor: 'bg-muted',
-          };
+          const category = surveyCategories[test.code] || defaultCategory;
 
           return (
             <button
@@ -141,26 +192,26 @@ export default function PersonalizationPage() {
               onClick={() => handleTestClick(test.code, test.completed)}
               disabled={test.completed || loadingTest}
               className={cn(
-                'w-full flex items-center gap-4 p-4 rounded-xl border transition-all',
+                'w-full flex items-center gap-4 p-4 rounded-xl border transition-all text-left',
                 test.completed
                   ? 'border-green-500/30 bg-green-500/5 cursor-default'
                   : 'border-border hover:border-primary/50 hover:bg-muted/50 cursor-pointer',
                 selectedTest === test.code && loadingTest && 'opacity-70'
               )}
             >
-              <div className={cn('p-3 rounded-xl text-2xl', category.bgColor)}>
+              <div className={cn('p-3 rounded-xl', category.bgColor, category.color)}>
                 {category.icon}
               </div>
 
-              <div className="flex-1 text-left">
-                <h3 className="font-medium">{test.title}</h3>
-                <p className="text-sm text-muted-foreground">{test.description}</p>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-medium truncate">{test.title}</h3>
+                <p className="text-sm text-muted-foreground truncate">{test.description}</p>
                 <p className="text-xs text-muted-foreground mt-1">
                   {test.questionCount} questions
                 </p>
               </div>
 
-              <div className="flex items-center gap-2">
+              <div className="flex-shrink-0 flex items-center gap-2">
                 {test.completed ? (
                   <CheckCircle2 className="h-6 w-6 text-green-400" />
                 ) : selectedTest === test.code && loadingTest ? (
@@ -174,7 +225,7 @@ export default function PersonalizationPage() {
         })}
       </div>
 
-      {/* Test Modal */}
+      {/* Survey Modal */}
       {activeTest && (
         <SurveyModal
           survey={{
