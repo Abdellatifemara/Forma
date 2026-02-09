@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   User,
   Bell,
@@ -15,6 +15,7 @@ import {
   Award,
   CheckCircle,
   AlertCircle,
+  Camera,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -39,12 +40,16 @@ import {
 } from '@/components/ui/select';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
-import { trainersApi, usersApi } from '@/lib/api';
+import { trainersApi, usersApi, uploadApi } from '@/lib/api';
 import { useUser } from '@/hooks/use-user';
+import { useToast } from '@/hooks/use-toast';
 
 export default function TrainerSettingsPage() {
-  const { data: userData, isLoading: userLoading } = useUser();
+  const { data: userData, isLoading: userLoading, refetch: refetchUser } = useUser();
+  const { toast } = useToast();
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [isSaving, setIsSaving] = useState(false);
+  const [isUploadingPhoto, setIsUploadingPhoto] = useState(false);
   const [isLoadingProfile, setIsLoadingProfile] = useState(true);
   const [trainerProfile, setTrainerProfile] = useState<any>(null);
 
@@ -89,6 +94,33 @@ export default function TrainerSettingsPage() {
     }
     loadProfile();
   }, []);
+
+  const handlePhotoUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    if (!file.type.startsWith('image/')) {
+      toast({ title: 'Invalid file', description: 'Please select an image file.', variant: 'destructive' });
+      return;
+    }
+
+    if (file.size > 5 * 1024 * 1024) {
+      toast({ title: 'File too large', description: 'Please select an image under 5MB.', variant: 'destructive' });
+      return;
+    }
+
+    setIsUploadingPhoto(true);
+    try {
+      await uploadApi.uploadAvatar(file);
+      await refetchUser();
+      toast({ title: 'Photo updated', description: 'Your profile photo has been changed.' });
+    } catch {
+      toast({ title: 'Upload failed', description: 'Failed to upload photo. Please try again.', variant: 'destructive' });
+    } finally {
+      setIsUploadingPhoto(false);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+    }
+  };
 
   const trainerTier = trainerProfile?.tier || 'REGULAR';
   const commissionRate = trainerTier === 'TRUSTED_PARTNER' ? 15 : 20;
@@ -181,9 +213,31 @@ export default function TrainerSettingsPage() {
                 </AvatarFallback>
               </Avatar>
               <div className="space-y-3">
-                <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
-                  <Upload className="mr-2 h-4 w-4" />
-                  Change Photo
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  onChange={handlePhotoUpload}
+                  disabled={isUploadingPhoto}
+                />
+                <Button
+                  variant="outline"
+                  className="border-primary/50 hover:bg-primary/10"
+                  onClick={() => fileInputRef.current?.click()}
+                  disabled={isUploadingPhoto}
+                >
+                  {isUploadingPhoto ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Uploading...
+                    </>
+                  ) : (
+                    <>
+                      <Camera className="mr-2 h-4 w-4" />
+                      Change Photo
+                    </>
+                  )}
                 </Button>
                 <p className="text-sm text-muted-foreground">
                   JPG, PNG or GIF. Max 5MB.
