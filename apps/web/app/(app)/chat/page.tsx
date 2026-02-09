@@ -12,7 +12,7 @@ interface Message {
   id: string;
   role: 'user' | 'assistant';
   content: string;
-  timestamp: Date;
+  timestamp: number; // Use number timestamp to avoid hydration issues
   error?: boolean;
 }
 
@@ -55,16 +55,24 @@ RESPONSE FORMAT:
 - Be specific and actionable
 - Always end with a question or next step`;
 
+const INITIAL_MESSAGE = "Hey! I'm your Forma Coach. I can help you with workouts, nutrition, supplements, or any fitness questions. What's on your mind today?";
+
 export default function ChatPage() {
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: '1',
-      role: 'assistant',
-      content:
-        "Hey! I'm your Forma Coach 💪 I can help you with workouts, nutrition, supplements, or any fitness questions. What's on your mind today?",
-      timestamp: new Date(),
-    },
-  ]);
+  const [mounted, setMounted] = useState(false);
+  const [messages, setMessages] = useState<Message[]>([]);
+
+  // Initialize messages only on client side to avoid hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+    setMessages([
+      {
+        id: '1',
+        role: 'assistant',
+        content: INITIAL_MESSAGE,
+        timestamp: Date.now(),
+      },
+    ]);
+  }, []);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesContainerRef = useRef<HTMLDivElement>(null);
@@ -87,7 +95,7 @@ export default function ChatPage() {
       id: Date.now().toString(),
       role: 'user',
       content: input,
-      timestamp: new Date(),
+      timestamp: Date.now(),
     };
 
     setMessages((prev) => [...prev, userMessage]);
@@ -109,7 +117,7 @@ export default function ChatPage() {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
         content: response.response,
-        timestamp: new Date(),
+        timestamp: Date.now(),
       };
 
       setMessages((prev) => [...prev, assistantMessage]);
@@ -120,7 +128,7 @@ export default function ChatPage() {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
         content: "Sorry, I'm having trouble connecting right now. Please try again in a moment!",
-        timestamp: new Date(),
+        timestamp: Date.now(),
         error: true,
       };
 
@@ -140,6 +148,15 @@ export default function ChatPage() {
       handleSend();
     }
   };
+
+  // Show loading state while mounting to avoid hydration issues
+  if (!mounted) {
+    return (
+      <div className="flex items-center justify-center h-[50vh]">
+        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+      </div>
+    );
+  }
 
   return (
     <div className="-mx-4 -my-6 sm:-mx-6 lg:-mx-8">
@@ -222,7 +239,7 @@ export default function ChatPage() {
                     ))}
                   </div>
                   <p className="mt-2 text-[10px] opacity-50">
-                    {message.timestamp.toLocaleTimeString([], {
+                    {new Date(message.timestamp).toLocaleTimeString([], {
                       hour: '2-digit',
                       minute: '2-digit',
                     })}
