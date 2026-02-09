@@ -326,62 +326,260 @@ async function main() {
     }
   }
 
-  // Generate basic content for exercises without descriptions
-  const emptyExercises = await prisma.exercise.findMany({
-    where: {
-      OR: [
-        { descriptionEn: '' },
-        { descriptionEn: null },
+  // Practical injury-prevention FAQs by muscle group
+  const muscleFaqs: Record<string, { faqsEn: { question: string; answer: string }[]; faqsAr: { question: string; answer: string }[] }> = {
+    CHEST: {
+      faqsEn: [
+        { question: 'How do I protect my shoulders during chest exercises?', answer: 'Keep shoulder blades retracted and pinched together. Do not let elbows flare out past 45 degrees. Warm up with light weights and band pull-aparts.' },
+        { question: 'I feel it more in my shoulders than my chest. What am I doing wrong?', answer: 'Your shoulders are taking over. Focus on squeezing your chest, keep elbows at 45 degrees not 90, and make sure shoulder blades stay back.' },
+        { question: 'My wrists hurt during pressing movements. How do I fix this?', answer: 'Keep wrists straight, not bent back. The weight should stack over your forearm. Use wrist wraps for heavy lifts if needed.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أحمي كتفي أثناء تمارين الصدر؟', answer: 'أبقِ لوحي الكتف مسحوبين ومضمومين. لا تدع المرفقين يتفتحان أكثر من 45 درجة. سخّن بأوزان خفيفة.' },
+        { question: 'أشعر به في كتفي أكثر من صدري. ماذا أفعل خطأ؟', answer: 'كتفاك تتولى الحمل. ركز على ضغط صدرك، أبقِ المرفقين بزاوية 45 درجة، وتأكد من بقاء لوحي الكتف للخلف.' },
+        { question: 'معصمي يؤلمني أثناء الضغط. كيف أصلح هذا؟', answer: 'أبقِ المعصمين مستقيمين، ليس مثنيين للخلف. الوزن يجب أن يكون فوق ساعدك. استخدم رباط المعصم للأوزان الثقيلة.' },
       ],
     },
-    select: {
-      id: true,
-      externalId: true,
-      nameEn: true,
-      primaryMuscle: true,
-      difficulty: true,
-      equipment: true,
+    BACK: {
+      faqsEn: [
+        { question: 'How do I avoid lower back injury?', answer: 'Never round your lower back. Brace your core, keep chest up, and if your form breaks, the weight is too heavy. Use a belt for heavy lifts.' },
+        { question: 'I feel it in my arms more than my back. Why?', answer: 'You are pulling with biceps instead of back. Focus on driving elbows back, squeeze shoulder blades together, and think about pulling with your elbows not hands.' },
+        { question: 'My grip gives out before my back is tired. What should I do?', answer: 'Use lifting straps or mixed grip. Train grip separately with farmer walks and dead hangs. Do not let grip limit your back development.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أتجنب إصابة أسفل الظهر؟', answer: 'لا تقوّس أسفل ظهرك أبداً. شد جذعك، ارفع صدرك، وإذا انهار أسلوبك فالوزن ثقيل جداً. استخدم حزاماً للأوزان الثقيلة.' },
+        { question: 'أشعر به في ذراعي أكثر من ظهري. لماذا؟', answer: 'أنت تسحب بالباي بدلاً من الظهر. ركز على دفع المرفقين للخلف، اضغط لوحي الكتف معاً، وفكر في السحب بمرفقيك لا يديك.' },
+        { question: 'قبضتي تضعف قبل أن يتعب ظهري. ماذا أفعل؟', answer: 'استخدم أحزمة الرفع أو قبضة مختلطة. درّب القبضة بشكل منفصل. لا تدع القبضة تحد من تطور ظهرك.' },
+      ],
     },
-  });
+    SHOULDERS: {
+      faqsEn: [
+        { question: 'How do I avoid shoulder impingement?', answer: 'Warm up rotator cuff with band exercises. Avoid behind-the-neck movements. Keep elbows slightly in front, not directly to sides. Stop if you feel pinching.' },
+        { question: 'One shoulder is weaker than the other. How do I fix this?', answer: 'Do extra unilateral work on the weak side. Let the weak side set the weight. The imbalance will correct over time with consistent work.' },
+        { question: 'My neck hurts after shoulder exercises. Why?', answer: 'You are shrugging or tensing neck muscles. Keep shoulders down and away from ears. Focus on the target muscle, not lifting with traps.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أتجنب انحشار الكتف؟', answer: 'سخّن الكفة المدورة بتمارين المطاط. تجنب الحركات خلف الرقبة. أبقِ المرفقين للأمام قليلاً. توقف إذا شعرت بقرصة.' },
+        { question: 'كتف أضعف من الآخر. كيف أصلح هذا؟', answer: 'أدِّ عملاً إضافياً بذراع واحدة على الجانب الضعيف. دع الجانب الضعيف يحدد الوزن. الاختلال سيصحح مع الوقت.' },
+        { question: 'رقبتي تؤلمني بعد تمارين الكتف. لماذا؟', answer: 'أنت ترفع الكتفين أو تشد عضلات الرقبة. أبقِ الكتفين للأسفل بعيداً عن الأذنين. ركز على العضلة المستهدفة.' },
+      ],
+    },
+    BICEPS: {
+      faqsEn: [
+        { question: 'How do I avoid elbow pain during curls?', answer: 'Do not fully lock out elbows at the bottom. Avoid swinging or using momentum. Warm up with light weights first and stretch forearms after.' },
+        { question: 'I feel more forearm than bicep when curling. What is wrong?', answer: 'Your grip is too tight or wrists are bending. Relax grip slightly, keep wrists neutral, and focus on squeezing the bicep at the top.' },
+        { question: 'My biceps are not growing. What should I change?', answer: 'Slow down the negative portion. Use full range of motion. Focus on mind-muscle connection and squeeze at the top of each rep.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أتجنب ألم المرفق أثناء الكيرل؟', answer: 'لا تقفل المرفقين بالكامل في الأسفل. تجنب التأرجح أو استخدام الزخم. سخّن بأوزان خفيفة أولاً.' },
+        { question: 'أشعر بالساعد أكثر من الباي عند الكيرل. ما الخطأ؟', answer: 'قبضتك ضيقة جداً أو المعصمين يثنيان. أرخِ القبضة قليلاً، أبقِ المعصمين محايدين، واضغط الباي في القمة.' },
+        { question: 'باي لا ينمو. ماذا أغير؟', answer: 'أبطئ الجزء السلبي. استخدم نطاق حركة كامل. ركز على اتصال العقل-العضلة واضغط في قمة كل تكرار.' },
+      ],
+    },
+    TRICEPS: {
+      faqsEn: [
+        { question: 'How do I protect my elbows during tricep exercises?', answer: 'Warm up thoroughly. Avoid locking out explosively. Keep elbows tucked and stable. If you feel pain, reduce weight and check form.' },
+        { question: 'I feel it in my shoulders instead of triceps. How do I fix this?', answer: 'Keep elbows pinned in place. Do not let them flare out. Focus on only moving at the elbow joint, not the shoulder.' },
+        { question: 'Skull crushers hurt my elbows. What should I do?', answer: 'Try lowering the bar to behind your head instead of forehead. Use EZ bar to reduce wrist strain. Or switch to cable pushdowns.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أحمي مرفقي أثناء تمارين الترايسبس؟', answer: 'سخّن جيداً. تجنب القفل بشكل انفجاري. أبقِ المرفقين مثبتين ومستقرين. إذا شعرت بألم، قلل الوزن وراجع الأسلوب.' },
+        { question: 'أشعر به في كتفي بدلاً من الترايسبس. كيف أصلح هذا؟', answer: 'أبقِ المرفقين مثبتين في مكانهما. لا تدعهما يتفتحان. ركز على الحركة فقط من مفصل المرفق لا الكتف.' },
+        { question: 'سكل كراشر يؤلم مرفقي. ماذا أفعل؟', answer: 'جرب إنزال البار خلف رأسك بدلاً من الجبهة. استخدم بار EZ لتقليل إجهاد المعصم. أو انتقل لدفع الكيبل.' },
+      ],
+    },
+    QUADRICEPS: {
+      faqsEn: [
+        { question: 'My knees hurt during leg exercises. What should I check?', answer: 'Ensure knees track over toes, not caving in. Check ankle mobility. Reduce depth if needed. Warm up thoroughly and consider knee sleeves.' },
+        { question: 'How do I prevent knee caving?', answer: 'Push knees out over pinky toe throughout the movement. Strengthen glutes. Use resistance bands around knees during warm-up to build awareness.' },
+        { question: 'I feel it in my lower back instead of legs. Why?', answer: 'Your core is not braced properly or you are leaning too far forward. Keep chest up, brace core hard, and consider heel elevation.' },
+      ],
+      faqsAr: [
+        { question: 'ركبتي تؤلمني أثناء تمارين الأرجل. ماذا أراجع؟', answer: 'تأكد أن الركبتين تتبعان أصابع القدم، ليس منهارتين للداخل. راجع مرونة الكاحل. قلل العمق إذا لزم. سخّن جيداً.' },
+        { question: 'كيف أمنع انهيار الركبة؟', answer: 'ادفع الركبتين للخارج فوق إصبع القدم الصغير طوال الحركة. قوِّ المؤخرة. استخدم مطاط حول الركبتين أثناء التسخين.' },
+        { question: 'أشعر به في أسفل ظهري بدلاً من أرجلي. لماذا؟', answer: 'جذعك غير مشدود جيداً أو تميل للأمام كثيراً. أبقِ صدرك مرفوعاً، شد الجذع بقوة، وفكر في رفع الكعبين.' },
+      ],
+    },
+    HAMSTRINGS: {
+      faqsEn: [
+        { question: 'How do I avoid hamstring strains?', answer: 'Always warm up with light cardio and dynamic stretches. Do not bounce at the bottom of stretches. Progress weight slowly and stop if you feel sharp pain.' },
+        { question: 'I feel it in my lower back instead of hamstrings. What is wrong?', answer: 'You are rounding your lower back. Keep back flat, push hips back, and feel the stretch in your hamstrings not lower back.' },
+        { question: 'My hamstrings cramp during exercises. How do I prevent this?', answer: 'Stay hydrated, ensure adequate electrolytes. Strengthen hamstrings gradually. Stretch after workouts. Cramps often indicate the muscle is weak.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أتجنب شد الهامسترينج؟', answer: 'سخّن دائماً بكارديو خفيف وإطالات ديناميكية. لا ترتد في أسفل الإطالات. تقدم بالوزن ببطء وتوقف إذا شعرت بألم حاد.' },
+        { question: 'أشعر به في أسفل ظهري بدلاً من الهامسترينج. ما الخطأ؟', answer: 'أنت تقوّس أسفل ظهرك. أبقِ الظهر مسطحاً، ادفع الوركين للخلف، واشعر بالإطالة في الهامسترينج لا أسفل الظهر.' },
+        { question: 'الهامسترينج يتشنج أثناء التمارين. كيف أمنع هذا؟', answer: 'ابقَ رطباً، تأكد من كفاية الإلكتروليتات. قوِّ الهامسترينج تدريجياً. مدد بعد التمارين. التشنجات غالباً تشير لضعف العضلة.' },
+      ],
+    },
+    GLUTES: {
+      faqsEn: [
+        { question: 'I do not feel my glutes working. How do I activate them?', answer: 'Do glute activation exercises before your workout like glute bridges and clamshells. Squeeze glutes hard at the top of each rep. Mind-muscle connection is key.' },
+        { question: 'My lower back hurts during glute exercises. Why?', answer: 'Your lower back is compensating for weak glutes. Reduce weight, focus on squeezing glutes not arching back. Strengthen core alongside glutes.' },
+        { question: 'How do I prevent hip flexor tightness from glute work?', answer: 'Stretch hip flexors after glute exercises. Ensure full hip extension at the top of movements. Balance pushing exercises with hip flexor stretches.' },
+      ],
+      faqsAr: [
+        { question: 'لا أشعر بالمؤخرة تعمل. كيف أنشطها؟', answer: 'أدِّ تمارين تنشيط المؤخرة قبل تمرينك مثل جسر المؤخرة. اضغط المؤخرة بقوة في قمة كل تكرار. اتصال العقل-العضلة مفتاح.' },
+        { question: 'أسفل ظهري يؤلم أثناء تمارين المؤخرة. لماذا؟', answer: 'أسفل ظهرك يعوض عن ضعف المؤخرة. قلل الوزن، ركز على ضغط المؤخرة لا تقويس الظهر. قوِّ الجذع مع المؤخرة.' },
+        { question: 'كيف أمنع ضيق ثني الورك من تمارين المؤخرة؟', answer: 'مدد ثني الورك بعد تمارين المؤخرة. تأكد من فرد الورك الكامل في قمة الحركات. وازن تمارين الدفع بإطالات ثني الورك.' },
+      ],
+    },
+    CALVES: {
+      faqsEn: [
+        { question: 'How do I avoid Achilles tendon injury?', answer: 'Warm up calves with light raises first. Do not bounce at the bottom. Progress weight slowly. Stop if you feel sharp pain in the tendon.' },
+        { question: 'My calves cramp during exercises. What should I do?', answer: 'Stay hydrated and ensure adequate potassium and magnesium. Stretch calves before and after. Start with lighter weight and build up.' },
+        { question: 'I only feel it in one part of my calf. How do I target the whole muscle?', answer: 'Vary foot position - toes straight, pointed in, and pointed out. Do both seated (soleus) and standing (gastrocnemius) calf raises.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أتجنب إصابة وتر أخيل؟', answer: 'سخّن السمانة برفعات خفيفة أولاً. لا ترتد في الأسفل. تقدم بالوزن ببطء. توقف إذا شعرت بألم حاد في الوتر.' },
+        { question: 'سمانتي تتشنج أثناء التمارين. ماذا أفعل؟', answer: 'ابقَ رطباً وتأكد من كفاية البوتاسيوم والمغنيسيوم. مدد السمانة قبل وبعد. ابدأ بوزن أخف وابنِ تدريجياً.' },
+        { question: 'أشعر به في جزء واحد فقط من سمانتي. كيف أستهدف العضلة كلها؟', answer: 'نوّع وضع القدم - أصابع مستقيمة، للداخل، وللخارج. أدِّ رفعات جالس (سوليوس) وواقف (جاستروكنيميوس).' },
+      ],
+    },
+    ABS: {
+      faqsEn: [
+        { question: 'My lower back hurts during ab exercises. What is wrong?', answer: 'Your lower back is taking over because abs are weak. Keep lower back pressed into floor. Reduce difficulty until you can maintain proper form.' },
+        { question: 'My neck hurts during crunches. How do I fix this?', answer: 'Do not pull on your head. Keep chin tucked and look at ceiling. Support head lightly with hands or cross arms over chest instead.' },
+        { question: 'How do I avoid hip flexor strain during ab work?', answer: 'Focus on using abs, not hip flexors. Keep lower back flat. If hip flexors burn, the exercise is too advanced - regress to an easier version.' },
+      ],
+      faqsAr: [
+        { question: 'أسفل ظهري يؤلم أثناء تمارين البطن. ما الخطأ؟', answer: 'أسفل ظهرك يتولى الحمل لأن البطن ضعيفة. أبقِ أسفل الظهر مضغوطاً على الأرض. قلل الصعوبة حتى تحافظ على أسلوب صحيح.' },
+        { question: 'رقبتي تؤلم أثناء الكرانش. كيف أصلح هذا؟', answer: 'لا تسحب رأسك. أبقِ الذقن مطوياً وانظر للسقف. ادعم الرأس بخفة باليدين أو ضع الذراعين على صدرك بدلاً.' },
+        { question: 'كيف أتجنب شد ثني الورك أثناء تمارين البطن؟', answer: 'ركز على استخدام البطن، ليس ثني الورك. أبقِ أسفل الظهر مسطحاً. إذا احترق ثني الورك، التمرين متقدم جداً.' },
+      ],
+    },
+    OBLIQUES: {
+      faqsEn: [
+        { question: 'How do I target obliques without bulking my waist?', answer: 'Use moderate weight and higher reps. Focus on twisting movements with control. Avoid heavy weighted side bends which can thicken the waist.' },
+        { question: 'My lower back hurts during side exercises. Why?', answer: 'You are likely bending at the spine instead of rotating. Keep spine neutral and twist from the core. Reduce range of motion if needed.' },
+        { question: 'I only feel one side working. How do I fix this?', answer: 'One side is likely stronger. Do extra reps on the weak side. Focus on equal contraction and use unilateral exercises.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أستهدف الأوبليك دون تضخيم الخصر؟', answer: 'استخدم وزناً معتدلاً وتكرارات أعلى. ركز على حركات الدوران بتحكم. تجنب الانحناءات الجانبية الثقيلة التي يمكن أن تثخّن الخصر.' },
+        { question: 'أسفل ظهري يؤلم أثناء التمارين الجانبية. لماذا؟', answer: 'أنت على الأرجح تنحني من العمود الفقري بدلاً من الدوران. أبقِ العمود الفقري محايداً وادر من الجذع. قلل نطاق الحركة إذا لزم.' },
+        { question: 'أشعر بجانب واحد فقط يعمل. كيف أصلح هذا؟', answer: 'جانب واحد على الأرجح أقوى. أدِّ تكرارات إضافية على الجانب الضعيف. ركز على انقباض متساوٍ واستخدم تمارين أحادية الجانب.' },
+      ],
+    },
+    LOWER_BACK: {
+      faqsEn: [
+        { question: 'How do I strengthen my lower back without injury?', answer: 'Start with bodyweight exercises like bird dogs and supermans. Progress slowly and never round your back under load. Stop if you feel sharp pain.' },
+        { question: 'My lower back hurts during these exercises. What should I do?', answer: 'Pain means something is wrong. Check your form, reduce intensity, and consider seeing a physio. Never push through lower back pain.' },
+        { question: 'How often should I train lower back?', answer: 'Lower back gets worked in many exercises. Direct training 1-2 times per week is enough. Focus on endurance over strength.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أقوّي أسفل ظهري بدون إصابة؟', answer: 'ابدأ بتمارين وزن الجسم مثل كلب الطائر وسوبرمان. تقدم ببطء ولا تقوّس ظهرك أبداً تحت الحمل. توقف إذا شعرت بألم حاد.' },
+        { question: 'أسفل ظهري يؤلم أثناء هذه التمارين. ماذا أفعل؟', answer: 'الألم يعني شيء خاطئ. راجع أسلوبك، قلل الشدة، وفكر في رؤية أخصائي علاج طبيعي. لا تدفع أبداً من خلال ألم أسفل الظهر.' },
+        { question: 'كم مرة يجب أن أدرّب أسفل الظهر؟', answer: 'أسفل الظهر يُمرّن في تمارين كثيرة. التدريب المباشر 1-2 مرة أسبوعياً كافٍ. ركز على التحمل أكثر من القوة.' },
+      ],
+    },
+    FOREARMS: {
+      faqsEn: [
+        { question: 'How do I avoid wrist pain during forearm exercises?', answer: 'Warm up wrists with circles and stretches. Use full range of motion but do not hyperextend. Start light and progress gradually.' },
+        { question: 'My grip gives out quickly. How do I build endurance?', answer: 'Train grip specifically with dead hangs, farmer walks, and wrist curls. Consistency is key - train grip 2-3 times per week.' },
+        { question: 'I feel elbow pain during forearm work. What should I check?', answer: 'You may be gripping too tight or using too much weight. Ensure elbows are stable. Consider if you have golfer\'s or tennis elbow.' },
+      ],
+      faqsAr: [
+        { question: 'كيف أتجنب ألم المعصم أثناء تمارين الساعد؟', answer: 'سخّن المعصمين بدوائر وإطالات. استخدم نطاق حركة كامل لكن لا تفرط في الفرد. ابدأ خفيفاً وتقدم تدريجياً.' },
+        { question: 'قبضتي تضعف بسرعة. كيف أبني التحمل؟', answer: 'درّب القبضة بشكل خاص بالتعلق، مشي الفارمر، وثني المعصم. الاستمرارية مفتاح - درّب القبضة 2-3 مرات أسبوعياً.' },
+        { question: 'أشعر بألم مرفق أثناء تمارين الساعد. ماذا أراجع؟', answer: 'قد تقبض بقوة مفرطة أو تستخدم وزناً زائداً. تأكد أن المرفقين مستقرين. فكر إذا كان لديك مرفق لاعب الجولف أو التنس.' },
+      ],
+    },
+  };
 
-  console.log(`\n📊 Generating basic content for ${emptyExercises.length} remaining exercises...`);
+  // Default FAQs for muscles not in the list
+  const defaultFaqs = {
+    faqsEn: [
+      { question: 'How do I avoid injury during this exercise?', answer: 'Warm up properly, use controlled movements, and start with lighter weight to master form. Stop if you feel sharp pain.' },
+      { question: 'I feel pain during this exercise. What should I do?', answer: 'Stop immediately if you feel sharp pain. Check your form, reduce weight, and consult a professional if pain persists.' },
+      { question: 'How do I know if I am using the correct form?', answer: 'The target muscle should feel the most work. No joint pain. Movement is controlled, not jerky. Consider recording yourself or asking someone to check.' },
+    ],
+    faqsAr: [
+      { question: 'كيف أتجنب الإصابة أثناء هذا التمرين؟', answer: 'سخّن جيداً، استخدم حركات متحكم بها، وابدأ بوزن أخف لإتقان الأسلوب. توقف إذا شعرت بألم حاد.' },
+      { question: 'أشعر بألم أثناء هذا التمرين. ماذا أفعل؟', answer: 'توقف فوراً إذا شعرت بألم حاد. راجع أسلوبك، قلل الوزن، واستشر متخصصاً إذا استمر الألم.' },
+      { question: 'كيف أعرف إذا كنت أستخدم الأسلوب الصحيح؟', answer: 'العضلة المستهدفة يجب أن تشعر بمعظم العمل. لا ألم مفاصل. الحركة متحكم بها، ليست متقطعة. فكر في تصوير نفسك أو اطلب من شخص التحقق.' },
+    ],
+  };
 
-  for (const ex of emptyExercises) {
-    const muscle = ex.primaryMuscle.toLowerCase().replace('_', ' ');
-    const diff = ex.difficulty.toLowerCase();
-    const equip = ex.equipment.length > 0 ? ex.equipment[0].toLowerCase().replace('_', ' ') : 'no equipment';
+  // Basic instructions by movement type
+  const getBasicInstructions = (name: string, muscle: string, equipment: string[]): { en: string[]; ar: string[] } => {
+    const equip = equipment.length > 0 ? equipment[0] : 'BODYWEIGHT';
 
-    const descEn = `${ex.nameEn} is a ${diff}-level exercise targeting your ${muscle}. This ${equip} exercise helps build strength and muscle definition.`;
-    const descAr = `${ex.nameEn} هو تمرين ${diff === 'beginner' ? 'للمبتدئين' : diff === 'intermediate' ? 'متوسط' : 'متقدم'} يستهدف ${muscle}. هذا التمرين يساعد في بناء القوة وتعريف العضلات.`;
+    return {
+      en: [
+        'Set up with proper posture and brace your core',
+        'Begin the movement with control, focusing on the target muscle',
+        'Move through the full range of motion without using momentum',
+        'Squeeze the target muscle at the point of peak contraction',
+        'Return to the starting position with control',
+        'Breathe out during the exertion phase, in during the return',
+      ],
+      ar: [
+        'اتخذ وضعية صحيحة وشد جذعك',
+        'ابدأ الحركة بتحكم، مركزاً على العضلة المستهدفة',
+        'تحرك خلال نطاق الحركة الكامل بدون استخدام الزخم',
+        'اضغط العضلة المستهدفة في نقطة الانقباض الأقصى',
+        'عد لوضع البداية بتحكم',
+        'تنفس زفير أثناء مرحلة الجهد، شهيق أثناء العودة',
+      ],
+    };
+  };
 
-    const basicFaqsEn = [
-      { question: `What muscles does ${ex.nameEn} work?`, answer: `${ex.nameEn} primarily targets the ${muscle} muscles.` },
-      { question: 'How many sets and reps should I do?', answer: 'Start with 3 sets of 8-12 reps. Adjust based on your fitness level and goals.' },
-      { question: 'How often should I do this exercise?', answer: 'Include this exercise in your routine 2-3 times per week, allowing adequate recovery between sessions.' },
-    ];
+  // Update ALL exercises with proper FAQs using batch updates by muscle group
+  const detailedExerciseIds = Object.keys(exerciseContent);
 
-    const basicFaqsAr = [
-      { question: `ما العضلات التي يعملها ${ex.nameEn}؟`, answer: `${ex.nameEn} يستهدف أساساً عضلات ${muscle}.` },
-      { question: 'كم مجموعة وتكرار يجب أن أفعل؟', answer: 'ابدأ بـ 3 مجموعات من 8-12 تكرار. اضبط بناءً على مستوى لياقتك وأهدافك.' },
-      { question: 'كم مرة يجب أن أمارس هذا التمرين؟', answer: 'أضف هذا التمرين لروتينك 2-3 مرات أسبوعياً، مع السماح بتعافي كافٍ بين الجلسات.' },
-    ];
+  console.log(`\n📊 Updating exercises with practical FAQs by muscle group...`);
 
-    await prisma.exercise.update({
-      where: { id: ex.id },
+  let updatedCount = 0;
+
+  // Update by muscle group using updateMany for better performance
+  for (const [muscle, faqs] of Object.entries(muscleFaqs)) {
+    const result = await prisma.exercise.updateMany({
+      where: {
+        primaryMuscle: muscle as any,
+        externalId: { notIn: detailedExerciseIds },
+      },
       data: {
-        descriptionEn: descEn,
-        descriptionAr: descAr,
-        faqsEn: basicFaqsEn,
-        faqsAr: basicFaqsAr,
+        faqsEn: faqs.faqsEn,
+        faqsAr: faqs.faqsAr,
       },
     });
+    console.log(`  ✅ ${muscle}: ${result.count} exercises`);
+    updatedCount += result.count;
   }
+
+  // Update remaining exercises with default FAQs
+  const remainingResult = await prisma.exercise.updateMany({
+    where: {
+      primaryMuscle: { notIn: Object.keys(muscleFaqs) as any[] },
+      externalId: { notIn: detailedExerciseIds },
+    },
+    data: {
+      faqsEn: defaultFaqs.faqsEn,
+      faqsAr: defaultFaqs.faqsAr,
+    },
+  });
+  console.log(`  ✅ Other muscles: ${remainingResult.count} exercises`);
+  updatedCount += remainingResult.count;
+
+  // Update exercises without instructions
+  const basicInstructions = getBasicInstructions('', '', []);
+  const instructionResult = await prisma.exercise.updateMany({
+    where: {
+      instructionsEn: { isEmpty: true },
+      externalId: { notIn: detailedExerciseIds },
+    },
+    data: {
+      instructionsEn: basicInstructions.en,
+      instructionsAr: basicInstructions.ar,
+    },
+  });
+  console.log(`  ✅ Added instructions to ${instructionResult.count} exercises`);
 
   const totalExercises = await prisma.exercise.count();
 
   console.log('\n═══════════════════════════════════════════════════════');
-  console.log(`✅ Updated ${updated} exercises with detailed content`);
-  console.log(`📝 Generated basic content for ${emptyExercises.length} exercises`);
+  console.log(`✅ Updated ${updated} exercises with detailed content (7 key exercises)`);
+  console.log(`📝 Updated ${updatedCount} exercises with injury-prevention FAQs`);
   console.log(`⚠️ ${notFound} exercises not found`);
   console.log(`📊 Total exercises in database: ${totalExercises}`);
   console.log('═══════════════════════════════════════════════════════\n');

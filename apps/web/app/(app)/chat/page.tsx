@@ -25,7 +25,7 @@ const suggestedQuestions = [
   'What should I eat before a workout?',
 ];
 
-const SYSTEM_CONTEXT = `You are Forma AI, a knowledgeable fitness and nutrition coach. You help users with:
+const SYSTEM_CONTEXT = `You are Forma Coach, a knowledgeable fitness and nutrition coach. You help users with:
 - Workout planning and exercise recommendations
 - Nutrition advice and meal planning
 - Exercise form and technique tips
@@ -43,7 +43,7 @@ export default function ChatPage() {
       id: '1',
       role: 'assistant',
       content:
-        "Hello! I'm Forma AI, your personal fitness coach. I can help you with workout suggestions, nutrition advice, exercise form tips, and answer any fitness-related questions. How can I help you today?",
+        "Hello! I'm your Forma Coach. I can help you with workout suggestions, nutrition advice, exercise form tips, and answer any fitness-related questions. How can I help you today?",
       timestamp: new Date(),
     },
   ]);
@@ -129,8 +129,8 @@ export default function ChatPage() {
             <Sparkles className="h-5 w-5 text-white" />
           </div>
           <div>
-            <h1 className="font-semibold">Forma AI Coach</h1>
-            <p className="text-sm text-muted-foreground">Powered by OpenAI</p>
+            <h1 className="font-semibold">Forma Coach</h1>
+            <p className="text-sm text-muted-foreground">Your fitness assistant</p>
           </div>
           <Badge variant="forma" className="ml-auto">
             Pro Feature

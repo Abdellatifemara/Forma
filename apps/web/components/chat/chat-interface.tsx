@@ -144,7 +144,7 @@ export function ChatInterface({
               <CardTitle className="text-base">{participant.name}</CardTitle>
               <p className="text-xs text-muted-foreground">
                 {participant.type === 'ai'
-                  ? 'AI Fitness Coach'
+                  ? 'Your fitness assistant'
                   : participant.status === 'online'
                   ? 'Online'
                   : 'Last seen recently'}

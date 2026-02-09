@@ -17,7 +17,7 @@ import { useResearchTests, useResearchTest, useSubmitTest } from '@/hooks/use-re
 import { SurveyModal } from '@/components/research/survey-modal';
 import type { TestDetail } from '@/lib/api';
 
-// Preference category colors - these questions help personalize the AI
+// Preference category colors - these questions help personalize your experience
 const preferenceCategories: Record<string, { icon: string; color: string; bgColor: string }> = {
   test_workout_logging: { icon: '💪', color: 'text-cyan-400', bgColor: 'bg-cyan-500/10' },
   test_nutrition_tracking: { icon: '🥗', color: 'text-green-400', bgColor: 'bg-green-500/10' },

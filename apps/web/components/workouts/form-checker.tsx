@@ -280,7 +280,16 @@ export function FormChecker({ exercise, onClose }: FormCheckerProps) {
         detectPose();
       } catch (err: any) {
         console.error('Form checker error:', err);
-        setError(err.message || 'Failed to initialize camera');
+        // Provide user-friendly error messages
+        let errorMessage = 'Failed to initialize camera';
+        if (err.name === 'NotFoundError' || err.message?.includes('device not found')) {
+          errorMessage = 'No camera found. Please connect a camera and try again.';
+        } else if (err.name === 'NotAllowedError') {
+          errorMessage = 'Camera access denied. Please allow camera access in your browser settings.';
+        } else if (err.name === 'NotReadableError') {
+          errorMessage = 'Camera is in use by another application. Please close other apps using the camera.';
+        }
+        setError(errorMessage);
         setIsLoading(false);
       }
     };
@@ -359,7 +368,7 @@ export function FormChecker({ exercise, onClose }: FormCheckerProps) {
         <div className="flex items-center justify-between">
           <div>
             <h2 className="text-white text-lg font-semibold capitalize">{exercise} Form Check</h2>
-            <p className="text-white/70 text-sm">AI-powered form analysis</p>
+            <p className="text-white/70 text-sm">Basic pose detection - for guidance only</p>
           </div>
           <button
             onClick={onClose}
@@ -389,7 +398,7 @@ export function FormChecker({ exercise, onClose }: FormCheckerProps) {
           <div className="absolute inset-0 flex items-center justify-center bg-black/80">
             <div className="text-center">
               <Loader2 className="w-12 h-12 text-emerald-500 animate-spin mx-auto mb-4" />
-              <p className="text-white">Loading AI model...</p>
+              <p className="text-white">Loading pose detection...</p>
               <p className="text-white/60 text-sm">This may take a few seconds</p>
             </div>
           </div>

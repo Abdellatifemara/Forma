@@ -83,7 +83,7 @@ export function ChatList({
     id: 'ai-coach',
     participant: {
       id: 'ai',
-      name: 'AI Fitness Coach',
+      name: 'Forma Coach',
       type: 'ai',
       status: 'online',
     },

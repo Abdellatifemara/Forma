@@ -33,14 +33,14 @@ const quickActions = [
   {
     icon: Sparkles,
     title: 'What Now?',
-    description: 'AI suggests your next workout',
+    description: 'Get your perfect workout',
     href: '?whatnow=true',
     gradient: 'from-violet-500 to-purple-600',
   },
   {
     icon: Camera,
     title: 'Form Check',
-    description: 'AI analyzes your form',
+    description: 'Real-time form analysis',
     href: '?formcheck=true',
     gradient: 'from-blue-500 to-cyan-500',
   },
@@ -194,7 +194,7 @@ function WorkoutsContent() {
               </div>
               <h3 className="font-semibold text-lg mb-2">No workout plans yet</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Create your first plan or let AI generate one for you
+                Create your first plan or get a personalized recommendation
               </p>
               <div className="flex gap-3">
                 <Button variant="outline" asChild>
@@ -203,7 +203,7 @@ function WorkoutsContent() {
                 <Button className="btn-premium" asChild>
                   <Link href="/workouts?whatnow=true">
                     <Sparkles className="mr-2 h-4 w-4" />
-                    AI Generate
+                    Generate for Me
                   </Link>
                 </Button>
               </div>

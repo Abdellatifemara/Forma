@@ -130,7 +130,7 @@ function ProgramsPageContent() {
       case 'pdf':
         return { icon: FileText, label: 'From PDF', class: 'bg-blue-500/20 text-blue-400 border-blue-500/50' };
       case 'ai_generated':
-        return { icon: Sparkles, label: 'AI Generated', class: 'bg-purple-500/20 text-purple-400 border-purple-500/50' };
+        return { icon: Sparkles, label: 'Auto Generated', class: 'bg-purple-500/20 text-purple-400 border-purple-500/50' };
       default:
         return { icon: Pencil, label: 'Manual', class: 'bg-muted text-muted-foreground' };
     }
@@ -252,9 +252,9 @@ function ProgramsPageContent() {
                   <Sparkles className="h-6 w-6 text-purple-400" />
                 </div>
                 <div className="flex-1">
-                  <p className="font-semibold">AI Program Generator</p>
+                  <p className="font-semibold">Smart Program Generator</p>
                   <p className="text-sm text-muted-foreground">
-                    Let AI create a program based on goals
+                    Create a program based on client goals
                   </p>
                 </div>
                 <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />

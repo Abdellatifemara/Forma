@@ -290,7 +290,7 @@ export default function UploadPDFPage() {
                     <Sparkles className="h-8 w-8 text-purple-400 animate-pulse" />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">Processing with AI...</p>
+                    <p className="font-semibold text-lg">Processing your program...</p>
                     <p className="text-muted-foreground mt-1">{processingStep}</p>
                   </div>
                   <Loader2 className="h-8 w-8 animate-spin mx-auto text-primary" />
@@ -410,9 +410,9 @@ export default function UploadPDFPage() {
                   2
                 </div>
                 <div>
-                  <p className="font-medium">AI Processing</p>
+                  <p className="font-medium">Smart Processing</p>
                   <p className="text-sm text-muted-foreground">
-                    Our AI extracts exercises, sets, and reps
+                    Automatically extracts exercises, sets, and reps
                   </p>
                 </div>
               </div>

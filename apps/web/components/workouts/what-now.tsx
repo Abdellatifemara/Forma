@@ -282,7 +282,9 @@ export function WhatNowButton() {
                           {exercise.name}
                         </p>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
-                          {exercise.equipment.toLowerCase().replace('_', ' ')}
+                          {Array.isArray(exercise.equipment)
+                            ? exercise.equipment[0]?.toLowerCase().replace('_', ' ') || 'No equipment'
+                            : exercise.equipment?.toLowerCase().replace('_', ' ') || 'No equipment'}
                         </p>
                       </div>
                     </div>
