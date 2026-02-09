@@ -121,9 +121,9 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="flex h-[calc(100vh-12rem)] flex-col">
+    <div className="rounded-xl border bg-card shadow-sm overflow-hidden">
       {/* Header */}
-      <div className="border-b px-4 py-3">
+      <div className="border-b px-4 py-3 bg-muted/30">
         <div className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-forma-teal to-cyan-400">
             <Sparkles className="h-5 w-5 text-white" />
@@ -138,9 +138,9 @@ export default function ChatPage() {
         </div>
       </div>
 
-      {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-4">
-        <div className="mx-auto max-w-3xl space-y-4">
+      {/* Messages Container */}
+      <div className="h-[400px] overflow-y-auto p-4">
+        <div className="space-y-4">
           {messages.map((message) => (
             <div
               key={message.id}
@@ -148,7 +148,7 @@ export default function ChatPage() {
                 message.role === 'user' ? 'flex-row-reverse' : ''
               }`}
             >
-              <Avatar className="h-8 w-8">
+              <Avatar className="h-8 w-8 flex-shrink-0">
                 <AvatarFallback
                   className={
                     message.role === 'assistant'
@@ -178,7 +178,7 @@ export default function ChatPage() {
                     : 'bg-muted'
                 }`}
               >
-                <div className="whitespace-pre-wrap text-sm prose prose-sm dark:prose-invert max-w-none">
+                <div className="whitespace-pre-wrap text-sm">
                   {message.content.split('\n').map((line, i) => (
                     <p key={i} className="mb-1 last:mb-0">
                       {line.startsWith('- ') || line.startsWith('• ') ? (
@@ -206,7 +206,7 @@ export default function ChatPage() {
 
           {isLoading && (
             <div className="flex gap-3">
-              <Avatar className="h-8 w-8">
+              <Avatar className="h-8 w-8 flex-shrink-0">
                 <AvatarFallback className="bg-gradient-to-br from-forma-teal to-cyan-400 text-white">
                   <Bot className="h-4 w-4" />
                 </AvatarFallback>
@@ -226,7 +226,7 @@ export default function ChatPage() {
 
       {/* Suggestions */}
       {messages.length === 1 && (
-        <div className="border-t px-4 py-3">
+        <div className="border-t px-4 py-3 bg-muted/20">
           <p className="mb-2 text-sm text-muted-foreground">
             Try asking:
           </p>
@@ -247,8 +247,8 @@ export default function ChatPage() {
       )}
 
       {/* Input */}
-      <div className="border-t bg-background p-4">
-        <div className="mx-auto flex max-w-3xl gap-2">
+      <div className="border-t bg-muted/30 p-4">
+        <div className="flex gap-2">
           <Input
             placeholder="Ask me anything about fitness..."
             value={input}
