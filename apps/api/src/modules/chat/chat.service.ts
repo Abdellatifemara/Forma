@@ -364,6 +364,19 @@ export class ChatService {
         5 * 60 * 1000
       : false;
 
+    // Decrypt last message content for preview
+    let lastMessageContent = '';
+    if (lastMessage) {
+      if (lastMessage.type === 'IMAGE') {
+        lastMessageContent = 'Sent an image';
+      } else if (lastMessage.type === 'VOICE') {
+        lastMessageContent = 'Sent a voice message';
+      } else {
+        // Decrypt TEXT messages
+        lastMessageContent = this.encryption.decrypt(lastMessage.content, conversation.id);
+      }
+    }
+
     return {
       id: conversation.id,
       participant: otherParticipant
@@ -376,14 +389,7 @@ export class ChatService {
         : null,
       lastMessage: lastMessage
         ? {
-            content:
-              lastMessage.type === 'TEXT'
-                ? lastMessage.content
-                : lastMessage.type === 'IMAGE'
-                  ? 'Sent an image'
-                  : lastMessage.type === 'VOICE'
-                    ? 'Sent a voice message'
-                    : lastMessage.content,
+            content: lastMessageContent,
             createdAt: lastMessage.createdAt.toISOString(),
             isMine: lastMessage.senderId === currentUserId,
           }
