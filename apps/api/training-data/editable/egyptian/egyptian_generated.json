@@ -1,0 +1,62 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Egyptian foods high in protein?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Egyptian high-protein foods:**\n\n**Traditional:**\n| Food | Protein (per 100g) |\n|------|-------------------|\n| Foul (فول) | 8g |\n| Lentils (عدس) | 9g |\n| Eggs (بيض) | 13g |\n| Liver (كبدة) | 21g |\n| Grilled chicken (فراخ) | 31g |\n\n**Cheap & available:**\n- Canned tuna (24g)\n- Eggs (cheapest protein!)\n- Foul + eggs combo\n- Cottage cheese (جبنة قريش) 11g\n\n**Muscle building combo:**\nFoul + 3 eggs + bread = 35g protein for ~15 EGP!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Best Egyptian pre-workout meal?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Egyptian pre-workout meals:**\n\n**2-3 hours before:**\n- فول مدمس + عيش بلدي\n- رز + فراخ مشوية\n- مكرونة + لحمة مفرومة\n\n**1 hour before:**\n- بطاطس مسلوقة\n- موز + dates (بلح)\n- عيش بعسل نحل\n\n**30 min before:**\n- بلح (3-4 pieces)\n- موزة\n- عصير برتقال طبيعي\n\n**Avoid:**\n- فول بزيت كتير\n- كشري (heavy)\n- مقليات\n\nجرب وشوف معدتك بتستريح مع ايه!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Cheap bulking foods in Egypt?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Budget bulking in Egypt:**\n\n**Protein (cheap):**\n- Eggs: ~3 EGP each = 6g protein\n- Foul: ~5 EGP/meal = 15g protein\n- Canned tuna: ~25 EGP = 24g protein\n- Liver (كبدة): 150 EGP/kg\n\n**Carbs (very cheap):**\n- Rice: ~30 EGP/kg\n- Bread (عيش بلدي): subsidized\n- Pasta: ~20 EGP/kg\n- Potatoes: ~15 EGP/kg\n\n**Fats (healthy):**\n- Peanuts: ~80 EGP/kg\n- Olive oil: ~150 EGP/L\n\n**Sample 3000 cal day for ~50 EGP:**\n- 6 eggs + bread\n- Rice + foul + salad\n- Pasta + tuna\n- Peanuts snack\n\nMuscle building doesn't have to be expensive!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Egyptian foods for cutting?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Egyptian cutting foods (low calorie, high protein):**\n\n**Proteins:**\n- Grilled chicken breast\n- Grilled fish\n- Egg whites (صفار قليل)\n- جبنة قريش\n- Greek yogurt\n\n**Low-cal carbs:**\n- Vegetables (unlimited!)\n- Small portions of rice\n- Molokhia (ملوخية) - very low cal\n- Bamia (بامية)\n\n**Filling foods:**\n- Soup (شوربة خضار)\n- Salads with lemon dressing\n- Cucumber, tomatoes\n\n**Avoid:**\n- Fried foods (طعمية, بطاطس)\n- Koshary (high carb)\n- Mahshi (rice inside)\n- Sweets (كنافة, بسبوسة)\n\n**Sample cutting day:**\n- فراخ مشوية + سلطة\n- سمك مشوي + خضار سوتيه\n- زبادي + خيار"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Supplements available in Egypt?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Supplements in Egypt (2024 prices):**\n\n**Protein powder:**\n- Optimum Gold Standard: 2000-2500 EGP\n- Dymatize ISO100: 2500-3000 EGP\n- Rule 1: 1800-2200 EGP\n- Local brands: 800-1200 EGP\n\n**Creatine:**\n- Monohydrate: 400-600 EGP\n\n**Pre-workout:**\n- C4: 600-800 EGP\n\n**Where to buy:**\n- Protein Egypt (trusted)\n- iHerb (ships to Egypt)\n- Local supplement stores\n\n**What you actually need:**\n1. Creatine (most effective)\n2. Protein powder (convenience)\n3. That's it!\n\n**Skip:** Fat burners, BCAAs, testosterone boosters - waste of money!"
+      }
+    ]
+  }
+]

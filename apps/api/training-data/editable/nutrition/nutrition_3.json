@@ -1,0 +1,2458 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What was the name of the album that the Beatles released in 1966?"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Who created Popeye?"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What was the WCWA World Heavyweight Championship originally created by?"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the name of the animated series that features Marland T. \"Ren\" and Stimpson J. \"Stimpy\" Cat?"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Provide a quick summary on Poet Laureate of the United Kingdom"
+      },
+      {
+        "from": "gpt",
+        "value": "The British Poet Laureate is an honorary position appointed by the monarch of the United Kingdom, currently on the advice of the prime minister."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What team did Bahrain defeat in the 2004 Asian Cup?"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Tell me about Personal relationships of Alexander the Great"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What was the name of Pearl Jam's 2004 greatest hits album?"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is the name of the show that features a host?"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Who created Professor James Moriarty?"
+      },
+      {
+        "from": "gpt",
+        "value": "I don't have data on that"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Provide a quick summary on The Great American Bash (2008)"
+      },
+      {
+        "from": "gpt",
+        "value": "The 2008 Great American Bash was the fifth annual Great American Bash professional wrestling pay-per-view (PPV) event produced by World Wrestling Entertainment (WWE), and 19th Great American Bash event overall."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how can i optimize my nutrition to support my fitness goals?"
+      },
+      {
+        "from": "gpt",
+        "value": "focus on balanced macronutrients, such as lean proteins, complex carbs, and healthy fats. adjust calorie intake based on whether you aim to gain muscle or lose fat."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "what to do if the weather conditions change a lot?"
+      },
+      {
+        "from": "gpt",
+        "value": "develop a set of regular activities that are always available regardless of weather like aerobic dance, indoor swimming, stair climbing, rope skipping, mall walking, dancing, or home activities including indoor cycling, calisthenics, exercise videos, etc."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how does diet affect running performance?"
+      },
+      {
+        "from": "gpt",
+        "value": "maintaining a correct diet is crucial for optimizing running performance. consuming adequate carbohydrates fuels the body during training, while protein aids in muscle repair and recovery. hydration is also essential, as it replenishes fluids lost through sweat and prevents muscle cramps and dehydration."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "what's the role of nutrition in fitness?"
+      },
+      {
+        "from": "gpt",
+        "value": "nutrition fuels your workouts and aids recovery. focus on balanced meals with protein, carbs, healthy fats, and hydration."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how can i maintain a healthy diet while training for an event?"
+      },
+      {
+        "from": "gpt",
+        "value": "to maintain a healthy diet while training for an event, focus on nutrient-dense foods like fruits, vegetables, whole grains, lean proteins, and healthy fats. plan meals and snacks to ensure adequate fueling before and after workouts, stay hydrated with water and electrolyte-rich beverages, and listen to your body's hunger and fullness cues to support training and recovery."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "what is the best way to cut down visceral or stomach fats without having to strictly do cardio?"
+      },
+      {
+        "from": "gpt",
+        "value": "there are two types of body fat, subcutaneous and visceral. neither exercise nor diet can selectively target fat loss from specific areas of the body. the best way to lose weight is to do a combination of eating a little less and exercising a little more."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "as someone trying to reduce meat consumption, how do i make up protein intake in a healthy  balanced way?"
+      },
+      {
+        "from": "gpt",
+        "value": "for adults, the recommended dietary allowance (rda) for protein is 0.8 grams per kilogram of bodyweight per day (g/kg/day) active individuals should consume 1.2 to 2.0 g/ kg/day. proteins that are found in animal sources such as meat, poultry, fish, eggs, milk, cheese and yogurt are complete proteins, containing all nine essential amino acids."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "i don't have too much fats and mussels. what is the best way to gain mussels?"
+      },
+      {
+        "from": "gpt",
+        "value": "in order to increase your muscle mass, two things must be done. you must engage in strength-training activities that address the major muscles in your body the hips, legs and torso. second, you must increase the number of calories that you consume. a good target is a weight gain of no more than about one pound per week."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "what is the proper way to breathe during sport?"
+      },
+      {
+        "from": "gpt",
+        "value": "you should never hold your breath when doing sport. often, you breathe in during the prep phase, and breathe out during effort. for example, when doing squats, breathe in as you bend your knees and go down. breathe out when you straighten your legs to come back up."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "what are the best foods to eat before working out?"
+      },
+      {
+        "from": "gpt",
+        "value": "it's best to eat carbs and protein before a workout."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how many calories does taking 10000 steps burn?"
+      },
+      {
+        "from": "gpt",
+        "value": "perhaps surprisingly, its not simple to measure exactly how many calories you burn by taking 10000 steps. in fact, each person likely burns a different number of calories every time they take those steps because the number of calories you burn through physical activity is affected by many factors like weight, genetics, and the pace and terrain on which you walk."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how many calories do i burn while walking?"
+      },
+      {
+        "from": "gpt",
+        "value": "the amount of calories you burn while walking depends on several factors, such as your weight, pace, how long you walk, and the terrain."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how many calories did i burn?"
+      },
+      {
+        "from": "gpt",
+        "value": "unfortunately, any answer to this question can only be an estimate at best, and it is not wise to trust any number to be 100% accurate. in particular, you should absolutely not rely on exercise machines themselves (such as treadmills) or wearable fitness gadgets to give you correct information about calorie burn.however, there are a few reference lists that can be used as a rough general estimate."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how soon can i run after eating?"
+      },
+      {
+        "from": "gpt",
+        "value": "eating a large meal right before a run can lead to cramping and digestive problems. it can also make you feel sluggish during your run. it’s recommended that you wait 3 to 4 hours after a large meal before running."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "what are good snacks to eat during a run?"
+      },
+      {
+        "from": "gpt",
+        "value": "you’ll generally only need water or a sports drink during your workout for runs under 1 hour. for runs longer than an hour or very intense exercise, you’ll need to take in a form of carbohydrates, such as a sports drink or energy gel, for every hour you’re running for longer than 75 minutes."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how many calories can one burn through calisthenics?"
+      },
+      {
+        "from": "gpt",
+        "value": "the number of calories burned during calisthenics depends on various factors, including intensity, effort, body weight, and age. on average, calisthenics can burn approximately 135-355 calories in 30 minutes, with higher intensity exercises resulting in greater calorie expenditure."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how to lose butt fat?"
+      },
+      {
+        "from": "gpt",
+        "value": "with regular exercise that includes aerobic activity and targeted toning exercises, losing butt fat is an achievable goal. if these methods do not work, even with exercise and a healthful diet, a person may want to consider seeing their doctor. there may be an underlying reason for this, such as a thyroid disorder. it may also be helpful to work with a dietician or personal trainer."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how many calories does barre burn?"
+      },
+      {
+        "from": "gpt",
+        "value": "how many calories you burn during barre workouts depends on various factors, including your age, weight, sex, and genetics. it also depends on the length and intensity of the workout. in general, you might burn 250 to 500 calories during a 60-minute class."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how many calories does hiit burn?"
+      },
+      {
+        "from": "gpt",
+        "value": "how many calories you burn during a hiit workout will depend on many factors, including your weight, age, how hard you work, which activities you do, and how long your workout is. but an intense 20 minutes of calisthenics (bodyweight exercises) burns roughly 157 to 229 calories."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "is rock climbing good for belly fat?"
+      },
+      {
+        "from": "gpt",
+        "value": "theres no research to prove that rock climbing can help with belly fat. however, it may burn as many calories as running at a moderate pace (8 to 11 minutes per mile). rock climbing also builds muscle, which burns more calories at rest than fat. this can contribute to the calorie deficit you need to lose weight."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "is jumping rope good for reducing belly fat?"
+      },
+      {
+        "from": "gpt",
+        "value": "some jump rope exercises intentionally work the core, but no form of exercise can specifically target belly fat. still, that doesnt mean you wont see results around your middle. any exercise performed regularly can contribute to strength and toning. the key to seeing results from jumping rope (or any type of fitness) is consistency."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how many calories does jumping rope burn?"
+      },
+      {
+        "from": "gpt",
+        "value": "jumping rope is definitely a calorie-torcher. depending on how vigorously or fast you jump, you can expect to burn from 400 to 1,000 calories per hour based on your body weight and the intensity or speed of the workout."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "how many calories does dancing burn?"
+      },
+      {
+        "from": "gpt",
+        "value": "how many calories you burn dancing depends on the physical intensity of the dance and how long you do it for. thirty minutes of dancing burns an estimated 90 to 252 calories, depending on the dance style and your body weight."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I perform Seated Shrug Machine?"
+      },
+      {
+        "from": "gpt",
+        "value": "Step 1: Assume starting position.\nStep 2: Perform the movement.\nStep 3: Return to start."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I do Seated Shrug Machine?"
+      },
+      {
+        "from": "gpt",
+        "value": "Step 1: Assume starting position.\nStep 2: Perform the movement.\nStep 3: Return to start."
+      },
+      {
+        "from": "human",
+        "value": "What muscles does it work?"
+      },
+      {
+        "from": "gpt",
+        "value": "Seated Shrug Machine primarily targets the FULL_BODY. Secondary muscles include: FOREARMS. This makes it an excellent exercise for full_body development."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What equipment do I need for Seated Shrug Machine?"
+      },
+      {
+        "from": "gpt",
+        "value": "For Seated Shrug Machine, you'll need: MACHINES. This is a beginner-friendly exercise."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Is Seated Shrug Machine suitable for beginners?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, Seated Shrug Machine is great for beginners! Start with light weight or just your bodyweight to master the movement pattern. Focus on controlled tempo: 2 seconds down, 1 second pause, 2 seconds up."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Chicken Half?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Chicken Half (per 450g):\n- Calories: 630 kcal\n- Protein: 72g\n- Carbs: 0g\n- Fat: 36g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mixed Grill Plate?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mixed Grill Plate (per 350g):\n- Calories: 680 kcal\n- Protein: 58g\n- Carbs: 5g\n- Fat: 48g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mixed Grill?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mixed Grill (per 100g):\n- Calories: 600 kcal\n- Protein: 55g\n- Carbs: 5g\n- Fat: 40g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Tilapia (Boulti)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Tilapia (Boulti) (per 250g):\n- Calories: 280 kcal\n- Protein: 52g\n- Carbs: 0g\n- Fat: 8g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mass Gainer - Serious Mass 6lb?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mass Gainer - Serious Mass 6lb (per 334g):\n- Calories: 1250 kcal\n- Protein: 50g\n- Carbs: 252g\n- Fat: 4g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Sea Bass (Qarous)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Sea Bass (Qarous) (per 250g):\n- Calories: 260 kcal\n- Protein: 48g\n- Carbs: 0g\n- Fat: 7g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fried Tilapia (Boulti)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fried Tilapia (Boulti) (per 250g):\n- Calories: 380 kcal\n- Protein: 48g\n- Carbs: 10g\n- Fat: 18g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Mullet (Bouri)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Mullet (Bouri) (per 250g):\n- Calories: 300 kcal\n- Protein: 45g\n- Carbs: 0g\n- Fat: 13g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kebab?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kebab (per 200g):\n- Calories: 420 kcal\n- Protein: 45g\n- Carbs: 2g\n- Fat: 25g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Sugarcane Juice?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sugarcane Juice (per 100g):\n- Calories: 180 kcal\n- Protein: 45g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kebab Grilled?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kebab Grilled (per 200g):\n- Calories: 420 kcal\n- Protein: 45g\n- Carbs: 2g\n- Fat: 25g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Shrimp?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Shrimp (per 200g):\n- Calories: 220 kcal\n- Protein: 44g\n- Carbs: 0g\n- Fat: 5g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Chicken Breast?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Chicken Breast (per 150breast):\n- Calories: 230 kcal\n- Protein: 43g\n- Carbs: 0g\n- Fat: 5g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Bouri Fish?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Bouri Fish (per 200fillet):\n- Calories: 220 kcal\n- Protein: 40g\n- Carbs: 0g\n- Fat: 6g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Shawarma Plate with Rice?"
+      },
+      {
+        "from": "gpt",
+        "value": "Shawarma Plate with Rice (per 450g):\n- Calories: 750 kcal\n- Protein: 40g\n- Carbs: 65g\n- Fat: 38g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fatta with Chicken?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fatta with Chicken (per 450g):\n- Calories: 680 kcal\n- Protein: 40g\n- Carbs: 70g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mansaf?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mansaf (per 450plate):\n- Calories: 750 kcal\n- Protein: 40g\n- Carbs: 68g\n- Fat: 35g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Chicken Quarter?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Chicken Quarter (per 250g):\n- Calories: 350 kcal\n- Protein: 40g\n- Carbs: 0g\n- Fat: 20g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fried Shrimp?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fried Shrimp (per 200g):\n- Calories: 350 kcal\n- Protein: 40g\n- Carbs: 15g\n- Fat: 15g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kaware (Cow Trotters)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kaware (Cow Trotters) (per 350g):\n- Calories: 450 kcal\n- Protein: 40g\n- Carbs: 5g\n- Fat: 30g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Shawarma Plate?"
+      },
+      {
+        "from": "gpt",
+        "value": "Shawarma Plate (per 100g):\n- Calories: 700 kcal\n- Protein: 40g\n- Carbs: 60g\n- Fat: 35g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fatta with Meat?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fatta with Meat (per 450g):\n- Calories: 750 kcal\n- Protein: 38g\n- Carbs: 70g\n- Fat: 35g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mandi?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mandi (per 400plate):\n- Calories: 620 kcal\n- Protein: 38g\n- Carbs: 65g\n- Fat: 22g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Roasted Chicken?"
+      },
+      {
+        "from": "gpt",
+        "value": "Roasted Chicken (per 100g):\n- Calories: 400 kcal\n- Protein: 38g\n- Carbs: 5g\n- Fat: 24g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Roasted Chicken Quarter?"
+      },
+      {
+        "from": "gpt",
+        "value": "Roasted Chicken Quarter (per 250g):\n- Calories: 400 kcal\n- Protein: 38g\n- Carbs: 5g\n- Fat: 25g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Chicken?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Chicken (per 150g):\n- Calories: 240 kcal\n- Protein: 38g\n- Carbs: 0g\n- Fat: 9g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fattah Langoustines?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fattah Langoustines (per 400g):\n- Calories: 620 kcal\n- Protein: 38g\n- Carbs: 55g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Original Chicken?"
+      },
+      {
+        "from": "gpt",
+        "value": "Original Chicken (per 100g):\n- Calories: 500 kcal\n- Protein: 36g\n- Carbs: 16g\n- Fat: 32g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Sayadeya?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sayadeya (per 100g):\n- Calories: 550 kcal\n- Protein: 35g\n- Carbs: 55g\n- Fat: 20g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Shawarma?"
+      },
+      {
+        "from": "gpt",
+        "value": "Shawarma (per 300g):\n- Calories: 550 kcal\n- Protein: 35g\n- Carbs: 40g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kofta with Rice?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kofta with Rice (per 400g):\n- Calories: 650 kcal\n- Protein: 35g\n- Carbs: 60g\n- Fat: 30g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Grilled Chicken Salad?"
+      },
+      {
+        "from": "gpt",
+        "value": "Grilled Chicken Salad (per 300bowl):\n- Calories: 320 kcal\n- Protein: 35g\n- Carbs: 12g\n- Fat: 15g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kebda with Rice?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kebda with Rice (per 350g):\n- Calories: 480 kcal\n- Protein: 35g\n- Carbs: 45g\n- Fat: 18g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kawarea Soup (Trotters)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kawarea Soup (Trotters) (per 400g):\n- Calories: 380 kcal\n- Protein: 35g\n- Carbs: 5g\n- Fat: 25g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Molokhia with Chicken?"
+      },
+      {
+        "from": "gpt",
+        "value": "Molokhia with Chicken (per 100g):\n- Calories: 400 kcal\n- Protein: 35g\n- Carbs: 15g\n- Fat: 22g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fattah?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fattah (per 400g):\n- Calories: 680 kcal\n- Protein: 35g\n- Carbs: 72g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Broasted Chicken?"
+      },
+      {
+        "from": "gpt",
+        "value": "Broasted Chicken (per 100g):\n- Calories: 450 kcal\n- Protein: 35g\n- Carbs: 20g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Sayadeya (Fish with Rice)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sayadeya (Fish with Rice) (per 400g):\n- Calories: 580 kcal\n- Protein: 35g\n- Carbs: 55g\n- Fat: 24g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Tilapia (Boulti)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Tilapia (Boulti) (per 150g):\n- Calories: 165 kcal\n- Protein: 34g\n- Carbs: 0g\n- Fat: 3g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Salmon Fillet?"
+      },
+      {
+        "from": "gpt",
+        "value": "Salmon Fillet (per 150g):\n- Calories: 280 kcal\n- Protein: 34g\n- Carbs: 0g\n- Fat: 16g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Hawawshi with Cheese?"
+      },
+      {
+        "from": "gpt",
+        "value": "Hawawshi with Cheese (per 300g):\n- Calories: 680 kcal\n- Protein: 34g\n- Carbs: 48g\n- Fat: 40g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kofta?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kofta (per 150g):\n- Calories: 380 kcal\n- Protein: 32g\n- Carbs: 4g\n- Fat: 26g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Molokhia with Rabbit?"
+      },
+      {
+        "from": "gpt",
+        "value": "Molokhia with Rabbit (per 100g):\n- Calories: 380 kcal\n- Protein: 32g\n- Carbs: 15g\n- Fat: 20g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kofta Grilled?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kofta Grilled (per 150g):\n- Calories: 380 kcal\n- Protein: 32g\n- Carbs: 4g\n- Fat: 26g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Eggs with Liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "Eggs with Liver (per 200g):\n- Calories: 380 kcal\n- Protein: 32g\n- Carbs: 4g\n- Fat: 26g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Chicken Breast?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chicken Breast (per 100g):\n- Calories: 165 kcal\n- Protein: 31g\n- Carbs: 0g\n- Fat: 3.6g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Hawawshi Iskandarani?"
+      },
+      {
+        "from": "gpt",
+        "value": "Hawawshi Iskandarani (per 280g):\n- Calories: 620 kcal\n- Protein: 30g\n- Carbs: 50g\n- Fat: 35g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Koshari Large?"
+      },
+      {
+        "from": "gpt",
+        "value": "Koshari Large (per 550g):\n- Calories: 950 kcal\n- Protein: 30g\n- Carbs: 175g\n- Fat: 14g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Turkey Breast?"
+      },
+      {
+        "from": "gpt",
+        "value": "Turkey Breast (per 100g):\n- Calories: 135 kcal\n- Protein: 30g\n- Carbs: 0g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Whey Protein Shake?"
+      },
+      {
+        "from": "gpt",
+        "value": "Whey Protein Shake (per 350shake):\n- Calories: 180 kcal\n- Protein: 30g\n- Carbs: 8g\n- Fat: 3g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Chicken Shawarma Sandwich?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chicken Shawarma Sandwich (per 250g):\n- Calories: 450 kcal\n- Protein: 30g\n- Carbs: 35g\n- Fat: 22g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fresh Mango Juice?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fresh Mango Juice (per 100g):\n- Calories: 150 kcal\n- Protein: 30g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Vega Sport Premium Protein?"
+      },
+      {
+        "from": "gpt",
+        "value": "Vega Sport Premium Protein (per 30g):\n- Calories: 130 kcal\n- Protein: 30g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Calamari Grilled?"
+      },
+      {
+        "from": "gpt",
+        "value": "Calamari Grilled (per 200g):\n- Calories: 180 kcal\n- Protein: 30g\n- Carbs: 4g\n- Fat: 5g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kebab (Grilled Lamb)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kebab (Grilled Lamb) (per 1503 skewers):\n- Calories: 350 kcal\n- Protein: 30g\n- Carbs: 2g\n- Fat: 24g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Qamar El Din?"
+      },
+      {
+        "from": "gpt",
+        "value": "Qamar El Din (per 100g):\n- Calories: 120 kcal\n- Protein: 28g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Whopper?"
+      },
+      {
+        "from": "gpt",
+        "value": "Whopper (per 100g):\n- Calories: 660 kcal\n- Protein: 28g\n- Carbs: 49g\n- Fat: 40g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Limonana?"
+      },
+      {
+        "from": "gpt",
+        "value": "Limonana (per 100g):\n- Calories: 120 kcal\n- Protein: 28g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Hawawshi?"
+      },
+      {
+        "from": "gpt",
+        "value": "Hawawshi (per 250g):\n- Calories: 520 kcal\n- Protein: 28g\n- Carbs: 42g\n- Fat: 26g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Ful with Pastrami?"
+      },
+      {
+        "from": "gpt",
+        "value": "Ful with Pastrami (per 250g):\n- Calories: 480 kcal\n- Protein: 28g\n- Carbs: 40g\n- Fat: 24g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Feteer with Meat?"
+      },
+      {
+        "from": "gpt",
+        "value": "Feteer with Meat (per 250g):\n- Calories: 750 kcal\n- Protein: 28g\n- Carbs: 58g\n- Fat: 45g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Shawarma Wrap?"
+      },
+      {
+        "from": "gpt",
+        "value": "Shawarma Wrap (per 100g):\n- Calories: 500 kcal\n- Protein: 28g\n- Carbs: 40g\n- Fat: 25g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kabab?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kabab (per 100g):\n- Calories: 380 kcal\n- Protein: 28g\n- Carbs: 2g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Liver (Kebda)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Liver (Kebda) (per 150g):\n- Calories: 220 kcal\n- Protein: 28g\n- Carbs: 4g\n- Fat: 10g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Meat Shawarma Sandwich?"
+      },
+      {
+        "from": "gpt",
+        "value": "Meat Shawarma Sandwich (per 250g):\n- Calories: 520 kcal\n- Protein: 28g\n- Carbs: 35g\n- Fat: 30g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Calamari Fried?"
+      },
+      {
+        "from": "gpt",
+        "value": "Calamari Fried (per 200g):\n- Calories: 320 kcal\n- Protein: 28g\n- Carbs: 20g\n- Fat: 14g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kebda Iskandarani Sandwich?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kebda Iskandarani Sandwich (per 200g):\n- Calories: 380 kcal\n- Protein: 28g\n- Carbs: 30g\n- Fat: 18g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kofta (Grilled)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kofta (Grilled) (per 1503 skewers):\n- Calories: 380 kcal\n- Protein: 28g\n- Carbs: 5g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Beef?"
+      },
+      {
+        "from": "gpt",
+        "value": "Beef (per 100g):\n- Calories: 250 kcal\n- Protein: 26g\n- Carbs: 0g\n- Fat: 15g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Beef Ground (lean)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Beef Ground (lean) (per 100g):\n- Calories: 250 kcal\n- Protein: 26g\n- Carbs: 0g\n- Fat: 15g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Tuna (canned in water)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Tuna (canned in water) (per 100g):\n- Calories: 116 kcal\n- Protein: 26g\n- Carbs: 0g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Tuna (canned)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Tuna (canned) (per 100g):\n- Calories: 116 kcal\n- Protein: 26g\n- Carbs: 0g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Molokhia with Meat?"
+      },
+      {
+        "from": "gpt",
+        "value": "Molokhia with Meat (per 300g):\n- Calories: 320 kcal\n- Protein: 26g\n- Carbs: 12g\n- Fat: 20g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Beef Fillet?"
+      },
+      {
+        "from": "gpt",
+        "value": "Beef Fillet (per 100g):\n- Calories: 218 kcal\n- Protein: 26g\n- Carbs: 0g\n- Fat: 12g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Ful with Sausage?"
+      },
+      {
+        "from": "gpt",
+        "value": "Ful with Sausage (per 280g):\n- Calories: 520 kcal\n- Protein: 26g\n- Carbs: 42g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Canned Tuna?"
+      },
+      {
+        "from": "gpt",
+        "value": "Canned Tuna (per 100g):\n- Calories: 116 kcal\n- Protein: 26g\n- Carbs: 0g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Beef Steak?"
+      },
+      {
+        "from": "gpt",
+        "value": "Beef Steak (per 100g):\n- Calories: 271 kcal\n- Protein: 26g\n- Carbs: 0g\n- Fat: 18g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Alexandrian Liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "Alexandrian Liver (per 150serving):\n- Calories: 280 kcal\n- Protein: 26g\n- Carbs: 8g\n- Fat: 15g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Scivation/Xtend Xtend Pro Whey Isolate?"
+      },
+      {
+        "from": "gpt",
+        "value": "Scivation/Xtend Xtend Pro Whey Isolate (per 30g):\n- Calories: 110 kcal\n- Protein: 25g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Lamb Meat?"
+      },
+      {
+        "from": "gpt",
+        "value": "Lamb Meat (per 100g):\n- Calories: 294 kcal\n- Protein: 25g\n- Carbs: 0g\n- Fat: 21g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Dymatize ISO 100 Hydrolyzed Whey Protein Isolate?"
+      },
+      {
+        "from": "gpt",
+        "value": "Dymatize ISO 100 Hydrolyzed Whey Protein Isolate (per 30g):\n- Calories: 110 kcal\n- Protein: 25g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Rule 1 Proteins R1 Protein?"
+      },
+      {
+        "from": "gpt",
+        "value": "Rule 1 Proteins R1 Protein (per 30g):\n- Calories: 110 kcal\n- Protein: 25g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fresh Guava Juice?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fresh Guava Juice (per 100g):\n- Calories: 140 kcal\n- Protein: 25g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fesikh (Fermented Fish)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fesikh (Fermented Fish) (per 100g):\n- Calories: 180 kcal\n- Protein: 25g\n- Carbs: 0g\n- Fat: 9g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Liver Sandwich?"
+      },
+      {
+        "from": "gpt",
+        "value": "Liver Sandwich (per 100g):\n- Calories: 400 kcal\n- Protein: 25g\n- Carbs: 40g\n- Fat: 16g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Sardines?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sardines (per 100g):\n- Calories: 208 kcal\n- Protein: 25g\n- Carbs: 0g\n- Fat: 11g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Maklouba?"
+      },
+      {
+        "from": "gpt",
+        "value": "Maklouba (per 350serving):\n- Calories: 520 kcal\n- Protein: 25g\n- Carbs: 58g\n- Fat: 20g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Sahlab?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sahlab (per 100g):\n- Calories: 200 kcal\n- Protein: 25g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Ultimate Nutrition Prostar 100% Whey?"
+      },
+      {
+        "from": "gpt",
+        "value": "Ultimate Nutrition Prostar 100% Whey (per 30g):\n- Calories: 110 kcal\n- Protein: 25g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Canned Sardines?"
+      },
+      {
+        "from": "gpt",
+        "value": "Canned Sardines (per 100g):\n- Calories: 208 kcal\n- Protein: 25g\n- Carbs: 0g\n- Fat: 11g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Roumy Cheese?"
+      },
+      {
+        "from": "gpt",
+        "value": "Roumy Cheese (per 100g):\n- Calories: 393 kcal\n- Protein: 25g\n- Carbs: 1g\n- Fat: 32g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Lasagna?"
+      },
+      {
+        "from": "gpt",
+        "value": "Lasagna (per 350g):\n- Calories: 520 kcal\n- Protein: 25g\n- Carbs: 45g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Big Mac?"
+      },
+      {
+        "from": "gpt",
+        "value": "Big Mac (per 100g):\n- Calories: 550 kcal\n- Protein: 25g\n- Carbs: 45g\n- Fat: 30g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Dymatize Elite Casein?"
+      },
+      {
+        "from": "gpt",
+        "value": "Dymatize Elite Casein (per 30g):\n- Calories: 110 kcal\n- Protein: 25g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Lamb?"
+      },
+      {
+        "from": "gpt",
+        "value": "Lamb (per 100g):\n- Calories: 294 kcal\n- Protein: 25g\n- Carbs: 0g\n- Fat: 21g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Renga (Smoked Fish)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Renga (Smoked Fish) (per 100g):\n- Calories: 200 kcal\n- Protein: 24g\n- Carbs: 0g\n- Fat: 12g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Chicken Thigh?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chicken Thigh (per 100g):\n- Calories: 177 kcal\n- Protein: 24g\n- Carbs: 0g\n- Fat: 8g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Optimum Nutrition Gold Standard Whey - 5lb?"
+      },
+      {
+        "from": "gpt",
+        "value": "Optimum Nutrition Gold Standard Whey - 5lb (per 30g):\n- Calories: 120 kcal\n- Protein: 24g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Chicken Royale?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chicken Royale (per 100g):\n- Calories: 570 kcal\n- Protein: 24g\n- Carbs: 48g\n- Fat: 32g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Whey Protein?"
+      },
+      {
+        "from": "gpt",
+        "value": "Whey Protein (per 30g):\n- Calories: 120 kcal\n- Protein: 24g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Molokhia with Shrimp?"
+      },
+      {
+        "from": "gpt",
+        "value": "Molokhia with Shrimp (per 300g):\n- Calories: 260 kcal\n- Protein: 24g\n- Carbs: 12g\n- Fat: 14g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Optimum Nutrition (ON) Gold Standard 100% Whey?"
+      },
+      {
+        "from": "gpt",
+        "value": "Optimum Nutrition (ON) Gold Standard 100% Whey (per 30g):\n- Calories: 106 kcal\n- Protein: 24g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Casein Protein - Gold Standard?"
+      },
+      {
+        "from": "gpt",
+        "value": "Casein Protein - Gold Standard (per 34g):\n- Calories: 120 kcal\n- Protein: 24g\n- Carbs: 4g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Koshari with Extra Sauce?"
+      },
+      {
+        "from": "gpt",
+        "value": "Koshari with Extra Sauce (per 450g):\n- Calories: 780 kcal\n- Protein: 24g\n- Carbs: 145g\n- Fat: 12g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Lamb Chops?"
+      },
+      {
+        "from": "gpt",
+        "value": "Lamb Chops (per 100g):\n- Calories: 290 kcal\n- Protein: 24g\n- Carbs: 0g\n- Fat: 21g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Almarai Protein Yogurt?"
+      },
+      {
+        "from": "gpt",
+        "value": "Almarai Protein Yogurt (per 237g):\n- Calories: 158 kcal\n- Protein: 24g\n- Carbs: 13g\n- Fat: 3g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Foul with Eggs?"
+      },
+      {
+        "from": "gpt",
+        "value": "Foul with Eggs (per 250g):\n- Calories: 380 kcal\n- Protein: 24g\n- Carbs: 38g\n- Fat: 16g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Optimum Nutrition Gold Standard Whey - 1lb?"
+      },
+      {
+        "from": "gpt",
+        "value": "Optimum Nutrition Gold Standard Whey - 1lb (per 30g):\n- Calories: 120 kcal\n- Protein: 24g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Optimum Nutrition Gold Standard Whey - 2lb?"
+      },
+      {
+        "from": "gpt",
+        "value": "Optimum Nutrition Gold Standard Whey - 2lb (per 30g):\n- Calories: 120 kcal\n- Protein: 24g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Tamr Hindi?"
+      },
+      {
+        "from": "gpt",
+        "value": "Tamr Hindi (per 100g):\n- Calories: 100 kcal\n- Protein: 24g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Eggs with Pastrami?"
+      },
+      {
+        "from": "gpt",
+        "value": "Eggs with Pastrami (per 150g):\n- Calories: 350 kcal\n- Protein: 24g\n- Carbs: 2g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Optimum Nutrition Gold Standard 100% Casein?"
+      },
+      {
+        "from": "gpt",
+        "value": "Optimum Nutrition Gold Standard 100% Casein (per 30g):\n- Calories: 106 kcal\n- Protein: 24g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Veal?"
+      },
+      {
+        "from": "gpt",
+        "value": "Veal (per 100g):\n- Calories: 172 kcal\n- Protein: 24g\n- Carbs: 0g\n- Fat: 8g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Shrimp?"
+      },
+      {
+        "from": "gpt",
+        "value": "Shrimp (per 100g):\n- Calories: 99 kcal\n- Protein: 24g\n- Carbs: 0g\n- Fat: 0.3g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Ful with Eggs?"
+      },
+      {
+        "from": "gpt",
+        "value": "Ful with Eggs (per 250g):\n- Calories: 450 kcal\n- Protein: 24g\n- Carbs: 42g\n- Fat: 20g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Subway 6\" Chicken?"
+      },
+      {
+        "from": "gpt",
+        "value": "Subway 6\" Chicken (per 100g):\n- Calories: 320 kcal\n- Protein: 23g\n- Carbs: 46g\n- Fat: 6g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Tuna?"
+      },
+      {
+        "from": "gpt",
+        "value": "Tuna (per 100g):\n- Calories: 144 kcal\n- Protein: 23g\n- Carbs: 0g\n- Fat: 5g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Molouha (Salted Fish)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Molouha (Salted Fish) (per 100g):\n- Calories: 170 kcal\n- Protein: 22g\n- Carbs: 0g\n- Fat: 9g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Beid Bel Basturma?"
+      },
+      {
+        "from": "gpt",
+        "value": "Beid Bel Basturma (per 100g):\n- Calories: 350 kcal\n- Protein: 22g\n- Carbs: 2g\n- Fat: 28g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Koshari?"
+      },
+      {
+        "from": "gpt",
+        "value": "Koshari (per 350g):\n- Calories: 758 kcal\n- Protein: 22g\n- Carbs: 145g\n- Fat: 18g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Zinger Sandwich?"
+      },
+      {
+        "from": "gpt",
+        "value": "Zinger Sandwich (per 100g):\n- Calories: 480 kcal\n- Protein: 22g\n- Carbs: 38g\n- Fat: 27g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in BSN Syntha-6?"
+      },
+      {
+        "from": "gpt",
+        "value": "BSN Syntha-6 (per 30g):\n- Calories: 98 kcal\n- Protein: 22g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Sabanekh (Spinach Stew)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sabanekh (Spinach Stew) (per 300g):\n- Calories: 280 kcal\n- Protein: 22g\n- Carbs: 15g\n- Fat: 16g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Macarona Bechamel?"
+      },
+      {
+        "from": "gpt",
+        "value": "Macarona Bechamel (per 100g):\n- Calories: 500 kcal\n- Protein: 22g\n- Carbs: 50g\n- Fat: 24g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Koshari Medium?"
+      },
+      {
+        "from": "gpt",
+        "value": "Koshari Medium (per 400g):\n- Calories: 700 kcal\n- Protein: 22g\n- Carbs: 130g\n- Fat: 10g\n\nThis is an excellent protein source for muscle building. Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in MyProtein Vegan Protein Blend?"
+      },
+      {
+        "from": "gpt",
+        "value": "MyProtein Vegan Protein Blend (per 30g):\n- Calories: 98 kcal\n- Protein: 22g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Quail?"
+      },
+      {
+        "from": "gpt",
+        "value": "Quail (per 100g):\n- Calories: 134 kcal\n- Protein: 22g\n- Carbs: 0g\n- Fat: 5g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Eggs with Sausage?"
+      },
+      {
+        "from": "gpt",
+        "value": "Eggs with Sausage (per 180g):\n- Calories: 420 kcal\n- Protein: 22g\n- Carbs: 4g\n- Fat: 36g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Bamya (Okra Stew)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Bamya (Okra Stew) (per 300g):\n- Calories: 280 kcal\n- Protein: 22g\n- Carbs: 18g\n- Fat: 14g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fresh Orange Juice?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fresh Orange Juice (per 100g):\n- Calories: 110 kcal\n- Protein: 22g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Applied Nutrition Critical Whey?"
+      },
+      {
+        "from": "gpt",
+        "value": "Applied Nutrition Critical Whey (per 30g):\n- Calories: 98 kcal\n- Protein: 22g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mozzarella?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mozzarella (per 100g):\n- Calories: 280 kcal\n- Protein: 22g\n- Carbs: 2g\n- Fat: 22g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Orgain Organic Plant-Based Protein?"
+      },
+      {
+        "from": "gpt",
+        "value": "Orgain Organic Plant-Based Protein (per 30g):\n- Calories: 94 kcal\n- Protein: 21g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Lamb Liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "Lamb Liver (per 100g):\n- Calories: 139 kcal\n- Protein: 21g\n- Carbs: 2g\n- Fat: 5g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in MyProtein Impact Whey Protein?"
+      },
+      {
+        "from": "gpt",
+        "value": "MyProtein Impact Whey Protein (per 30g):\n- Calories: 94 kcal\n- Protein: 21g\n- Carbs: 3g\n- Fat: 1g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Beef Liver?"
+      },
+      {
+        "from": "gpt",
+        "value": "Beef Liver (per 100g):\n- Calories: 135 kcal\n- Protein: 20g\n- Carbs: 4g\n- Fat: 4g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Salmon?"
+      },
+      {
+        "from": "gpt",
+        "value": "Salmon (per 100g):\n- Calories: 208 kcal\n- Protein: 20g\n- Carbs: 0g\n- Fat: 13g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Bamya?"
+      },
+      {
+        "from": "gpt",
+        "value": "Bamya (per 100g):\n- Calories: 250 kcal\n- Protein: 20g\n- Carbs: 18g\n- Fat: 12g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Kolkas (Taro Stew)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Kolkas (Taro Stew) (per 300g):\n- Calories: 350 kcal\n- Protein: 20g\n- Carbs: 40g\n- Fat: 14g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Tilapia?"
+      },
+      {
+        "from": "gpt",
+        "value": "Tilapia (per 100g):\n- Calories: 96 kcal\n- Protein: 20g\n- Carbs: 0g\n- Fat: 2g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Fasolia (White Bean Stew)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Fasolia (White Bean Stew) (per 300g):\n- Calories: 320 kcal\n- Protein: 20g\n- Carbs: 35g\n- Fat: 12g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Turkey?"
+      },
+      {
+        "from": "gpt",
+        "value": "Turkey (per 100g):\n- Calories: 149 kcal\n- Protein: 20g\n- Carbs: 0g\n- Fat: 7g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Cheese Omelette?"
+      },
+      {
+        "from": "gpt",
+        "value": "Cheese Omelette (per 150g):\n- Calories: 320 kcal\n- Protein: 20g\n- Carbs: 2g\n- Fat: 26g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Nile Perch?"
+      },
+      {
+        "from": "gpt",
+        "value": "Nile Perch (per 100g):\n- Calories: 93 kcal\n- Protein: 19g\n- Carbs: 0g\n- Fat: 1g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Duck?"
+      },
+      {
+        "from": "gpt",
+        "value": "Duck (per 100g):\n- Calories: 337 kcal\n- Protein: 19g\n- Carbs: 0g\n- Fat: 28g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mullet?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mullet (per 100g):\n- Calories: 117 kcal\n- Protein: 19g\n- Carbs: 0g\n- Fat: 4g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mackerel?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mackerel (per 100g):\n- Calories: 205 kcal\n- Protein: 19g\n- Carbs: 0g\n- Fat: 14g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Sea Bream?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sea Bream (per 100g):\n- Calories: 100 kcal\n- Protein: 19g\n- Carbs: 0g\n- Fat: 2g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Chicken Wings?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chicken Wings (per 100g):\n- Calories: 203 kcal\n- Protein: 18g\n- Carbs: 0g\n- Fat: 14g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Chicken Gizzard?"
+      },
+      {
+        "from": "gpt",
+        "value": "Chicken Gizzard (per 100g):\n- Calories: 94 kcal\n- Protein: 18g\n- Carbs: 0g\n- Fat: 2g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Subway 6\" Turkey?"
+      },
+      {
+        "from": "gpt",
+        "value": "Subway 6\" Turkey (per 100g):\n- Calories: 280 kcal\n- Protein: 18g\n- Carbs: 46g\n- Fat: 4g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Pigeon?"
+      },
+      {
+        "from": "gpt",
+        "value": "Pigeon (per 100g):\n- Calories: 142 kcal\n- Protein: 18g\n- Carbs: 0g\n- Fat: 8g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Crab?"
+      },
+      {
+        "from": "gpt",
+        "value": "Crab (per 100g):\n- Calories: 87 kcal\n- Protein: 18g\n- Carbs: 0g\n- Fat: 1g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Calamari?"
+      },
+      {
+        "from": "gpt",
+        "value": "Calamari (per 100g):\n- Calories: 92 kcal\n- Protein: 18g\n- Carbs: 3g\n- Fat: 1g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Feteer with Cheese?"
+      },
+      {
+        "from": "gpt",
+        "value": "Feteer with Cheese (per 200g):\n- Calories: 650 kcal\n- Protein: 18g\n- Carbs: 55g\n- Fat: 42g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Mombar (Stuffed Intestines)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Mombar (Stuffed Intestines) (per 200g):\n- Calories: 420 kcal\n- Protein: 18g\n- Carbs: 35g\n- Fat: 24g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Ful Medames?"
+      },
+      {
+        "from": "gpt",
+        "value": "Ful Medames (per 200g):\n- Calories: 280 kcal\n- Protein: 18g\n- Carbs: 36g\n- Fat: 8g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Sogo (Sausage) Sandwich?"
+      },
+      {
+        "from": "gpt",
+        "value": "Sogo (Sausage) Sandwich (per 200g):\n- Calories: 480 kcal\n- Protein: 18g\n- Carbs: 35g\n- Fat: 30g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Batates Mahshiya (Stuffed Potatoes)?"
+      },
+      {
+        "from": "gpt",
+        "value": "Batates Mahshiya (Stuffed Potatoes) (per 300g):\n- Calories: 420 kcal\n- Protein: 18g\n- Carbs: 45g\n- Fat: 20g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Erksoos?"
+      },
+      {
+        "from": "gpt",
+        "value": "Erksoos (per 100g):\n- Calories: 80 kcal\n- Protein: 18g\n- Carbs: 0g\n- Fat: 0g\n\n "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in Ful & Ta'ameya Combo?"
+      },
+      {
+        "from": "gpt",
+        "value": "Ful & Ta'ameya Combo (per 100g):\n- Calories: 500 kcal\n- Protein: 18g\n- Carbs: 55g\n- Fat: 22g\n\n Good source of carbohydrates for energy."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I lose belly fat?"
+      },
+      {
+        "from": "gpt",
+        "value": "I'll be honest: you can't spot-reduce fat from specific areas. Your body decides where fat comes off first (usually the last place you gained it).\n\n**What actually works:**\n\n1. **Caloric Deficit** (Most important)\n- Eat 300-500 calories below maintenance\n- Track your food for accuracy\n- Aim for 0.5-1% bodyweight loss per week\n\n2. **Resistance Training**\n- Preserves muscle during the cut\n- Increases metabolic rate\n- Train 3-4x per week\n\n3. **Protein Priority**\n- 2.0-2.4g per kg bodyweight when cutting\n- Keeps you full, preserves muscle\n\n4. **Cardio (Optional but helpful)**\n- 150-300 min/week moderate intensity\n- Or 2-3 HIIT sessions\n\n5. **Sleep & Stress**\n- Poor sleep = higher cortisol = more belly fat storage\n- Aim for 7-9 hours\n\nThe belly is often the last place fat leaves. Stay consistent and trust the process."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How many calories should I eat to lose weight?"
+      },
+      {
+        "from": "gpt",
+        "value": "Here's how to calculate your calorie target:\n\n**Step 1: Calculate Maintenance (TDEE)**\nQuick estimate: Bodyweight (kg) × 28-35\n- Sedentary: ×28\n- Moderate activity: ×31\n- Very active: ×35\n\nExample: 80kg moderately active = 80 × 31 = 2,480 calories\n\n**Step 2: Create Deficit**\n- Conservative: -300 calories (slow, sustainable)\n- Moderate: -500 calories (0.5kg/week loss)\n- Aggressive: -750 calories (only if significantly overweight)\n\nExample: 2,480 - 500 = 1,980 calories/day\n\n**Step 3: Monitor & Adjust**\n- Weigh yourself weekly (same time, same conditions)\n- If no loss after 2 weeks, reduce by 100-200 more\n- If losing too fast (>1kg/week), add 200 back\n\n**Macros for fat loss:**\n- Protein: 2g per kg\n- Fat: 0.8-1g per kg\n- Carbs: remaining calories"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How much protein do I need?"
+      },
+      {
+        "from": "gpt",
+        "value": "Protein recommendations based on your goal:\n\n**Building Muscle:**\n- 1.6-2.2g per kg bodyweight\n- Example: 80kg person = 128-176g daily\n\n**Losing Fat (while preserving muscle):**\n- 2.0-2.4g per kg bodyweight\n- Higher protein = more satiety and muscle preservation\n\n**Maintenance:**\n- 1.4-1.6g per kg bodyweight\n\n**Practical tips:**\n1. Spread across 4-5 meals (30-40g per meal)\n2. Include protein with every meal\n3. Complete proteins: meat, fish, eggs, dairy\n4. Plant-based: combine legumes + grains\n\n**Quality sources:**\n- Chicken breast: 31g per 100g\n- Greek yogurt: 10g per 100g\n- Eggs: 6g per egg\n- Lentils: 9g per 100g cooked\n- Whey protein: 24g per scoop"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What supplements should I take?"
+      },
+      {
+        "from": "gpt",
+        "value": "Most supplements are unnecessary. Here's the evidence-based tier list:\n\n**Tier 1 - Actually Works:**\n- **Creatine Monohydrate** (5g daily) - Proven for strength/power\n- **Protein Powder** - Convenient, not magic\n- **Caffeine** (3-6mg/kg) - Pre-workout performance\n\n**Tier 2 - May Help If Deficient:**\n- **Vitamin D** (2000-5000 IU) - If you don't get sun\n- **Omega-3** (2-3g EPA+DHA) - If you don't eat fatty fish\n- **Magnesium** - If sleep/recovery is poor\n\n**Tier 3 - Skip These:**\n- BCAAs (just eat protein)\n- Fat burners (waste of money)\n- Testosterone boosters (don't work)\n- Most pre-workouts (just have coffee)\n\n**Priority order:**\n1. Dial in your diet first\n2. Get enough sleep\n3. Then consider creatine + protein powder\n4. Everything else is optimization"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Is creatine safe?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes! Creatine monohydrate is one of the most researched and safest supplements available.\n\n**The science:**\n- 500+ studies conducted\n- No serious side effects in healthy individuals\n- Used safely for 30+ years\n\n**What it does:**\n- Increases phosphocreatine stores in muscles\n- Improves high-intensity exercise performance\n- May increase strength gains by 5-10%\n- Some cognitive benefits too\n\n**How to take it:**\n- 3-5g daily (no need to load)\n- Take any time of day\n- Creatine monohydrate is the only form you need\n- Stay well hydrated\n\n**Common myths debunked:**\n- Does NOT damage kidneys (in healthy people)\n- Does NOT cause hair loss\n- Water retention is intracellular (in the muscle)\n\n**Who should avoid:**\n- Those with kidney disease (consult doctor)\n- Otherwise, it's safe for most adults"
+      }
+    ]
+  }
+]

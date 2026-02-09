@@ -1,0 +1,15 @@
+{
+  "original_total": 91374,
+  "after_balancing": 8301,
+  "after_dedup": 8140,
+  "category_distribution": {
+    "arabic": 95,
+    "franco": 216,
+    "egyptian": 8,
+    "forma": 306,
+    "alternatives": 286,
+    "exercises": 453,
+    "nutrition": 1840,
+    "general": 88170
+  }
+}

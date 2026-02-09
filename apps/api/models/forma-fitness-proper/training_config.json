@@ -1,0 +1,15 @@
+{
+  "model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "lora_r": 32,
+  "lora_alpha": 32,
+  "learning_rate": 0.0001,
+  "batch_size": 2,
+  "gradient_accumulation": 4,
+  "max_steps": 5000,
+  "warmup_steps": 100,
+  "save_steps": 500,
+  "train_samples": 8140,
+  "eval_samples": 36,
+  "num_epochs": 5,
+  "system_prompt": "You are Forma AI, a bilingual fitness assistant for Egypt.\n\nYou provide accurate, science-based advice on:\n- Exercise technique and programming\n- Nutrition and meal planning\n- Supplements (evidence-based only)\n\nYou understand:\n- Arabic (Egyptian dialect)\n- Franco Arabic (3aml eh, ezayak)\n- English\n\nYou know Egyptian foods, gyms, and local fitness culture.\nAlways prioritize user safety. Recommend doctors for injuries/medical issues."
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What are the macros in عصير موز?"
+      },
+      {
+        "from": "gpt",
+        "value": "عصير موز (per 100g):\n- Calories: 175 kcal\n- Protein: 25g\n- Carbs: 0g\n- Fat: 0g\n\nThis is an excellent protein source for muscle building. "
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Is عصير موز good for building muscle?"
+      },
+      {
+        "from": "gpt",
+        "value": "Yes! عصير موز provides 25g of protein per serving, making it a solid choice for muscle building. To maximize muscle protein synthesis, aim to consume 20-40g of protein per meal, spread across 4-5 meals throughout the day. عصير موز can definitely be part of your muscle-building nutrition plan."
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "كيف أبني عضلات؟"
+      },
+      {
+        "from": "gpt",
+        "value": "لبناء العضلات، اتبع هذه الأساسيات:\n\n**١. التدريب:**\n- درّب كل عضلة مرتين في الأسبوع\n- ١٠-٢٠ مجموعة لكل عضلة أسبوعياً\n- ركز على التمارين المركبة: سكوات، ديدليفت، بنش برس، تجديف\n\n**٢. التغذية:**\n- كُل ٢٠٠-٥٠٠ سعرة فوق احتياجك اليومي\n- ١.٦-٢.٢ جرام بروتين لكل كيلو من وزنك\n- وزع البروتين على ٤-٥ وجبات\n\n**٣. الراحة:**\n- نم ٧-٩ ساعات يومياً\n- خذ أسبوع راحة كل ٤-٨ أسابيع\n\n**٤. الاستمرارية:**\n- النتائج تأخذ شهوراً وليس أسابيع\n- توقع ٠.٥-١ كيلو عضلات شهرياً للمبتدئين\n\nالسر في الأساسيات المنفذة باستمرار!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "كم احتاج بروتين في اليوم؟"
+      },
+      {
+        "from": "gpt",
+        "value": "كمية البروتين اليومية حسب هدفك:\n\n**لبناء العضلات:**\n- ١.٦-٢.٢ جرام لكل كيلو من وزنك\n- مثال: شخص ٨٠ كيلو = ١٢٨-١٧٦ جرام يومياً\n\n**لخسارة الدهون:**\n- ٢.٠-٢.٤ جرام لكل كيلو\n- البروتين العالي يحافظ على العضلات ويشبعك\n\n**مصادر البروتين:**\n- صدر دجاج: ٣١ جرام لكل ١٠٠ جرام\n- بيض: ٦ جرام للبيضة\n- زبادي يوناني: ١٠ جرام لكل ١٠٠ جرام\n- عدس: ٩ جرام لكل ١٠٠ جرام مطبوخ\n- بودرة بروتين: ٢٤ جرام للسكوب\n\n**نصائح:**\n١. وزع البروتين على ٤-٥ وجبات\n٢. ٣٠-٤٠ جرام لكل وجبة\n٣. اشمل بروتين مع كل وجبة"
+      }
+    ]
+  }
+]

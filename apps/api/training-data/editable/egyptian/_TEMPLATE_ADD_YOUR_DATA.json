@@ -1,0 +1,29 @@
+{
+  "description": "Egyptian-specific fitness content - foods, gyms, culture",
+  "example": [
+    {
+      "conversations": [
+        {
+          "from": "human",
+          "value": "ايه افضل اكل بعد التمرين في مصر؟"
+        },
+        {
+          "from": "gpt",
+          "value": "بعد التمرين محتاج بروتين وكاربوهيدرات. اختيارات مصرية ممتازة:\n\n1. فول بالبيض - بروتين عالي\n2. كشري - كاربوهيدرات للطاقة\n3. فراخ مشوية مع رز\n4. زبادي يوناني مع موز\n\nالمهم تاكل خلال ساعتين من التمرين."
+        }
+      ]
+    },
+    {
+      "conversations": [
+        {
+          "from": "human",
+          "value": "What Egyptian foods are good for muscle building?"
+        },
+        {
+          "from": "gpt",
+          "value": "Egypt has excellent protein sources for muscle building:\n\n**High Protein Options:**\n- Foul (fava beans): 8g protein per cup\n- Eggs (cheap and available everywhere)\n- Grilled chicken (فراخ مشوية)\n- Liver (كبدة) - high in protein and iron\n- Greek yogurt (زبادي)\n\n**Carb Sources:**\n- Aish baladi (whole wheat bread)\n- Rice\n- Sweet potato (بطاطا)\n\n**Egyptian Protein Tip:** Foul + eggs is a classic, cheap, high-protein breakfast that bodybuilders use."
+        }
+      ]
+    }
+  ]
+}

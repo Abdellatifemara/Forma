@@ -1,0 +1,50 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What is Forma?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Forma Fitness** is Egypt's premier fitness platform!\n\n**Features:**\n- Find certified Egyptian trainers\n- Custom workout programs in Arabic & English\n- Track your workouts and progress\n- Nutrition and meal planning\n- Video call sessions with trainers\n- Chat with AI (that's me!)\n\n**Why Forma?**\n- Made for Egypt\n- Arabic support\n- Local trainers who understand you\n- Egyptian food database\n- Affordable prices\n\nDownload and start your fitness journey today!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How do I find a trainer on Forma?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Finding a trainer on Forma:**\n\n1. **Go to Trainers page**\n2. **Filter by:**\n   - Location\n   - Specialty (weight loss, muscle, etc.)\n   - Price range\n   - Language (Arabic/English)\n\n3. **Check their profile:**\n   - Certifications\n   - Reviews from clients\n   - Programs they offer\n\n4. **Book a consultation**\n   - Many offer free first call\n   - Discuss your goals\n\n5. **Subscribe to a package**\n   - Monthly or quarterly\n   - Includes program + support\n\n**Tip:** Read reviews and ask about their experience with your specific goal!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "How much does Forma cost?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Forma Pricing:**\n\n**Free features:**\n- Basic workout tracking\n- Exercise library\n- AI chat (limited)\n- Food database\n\n**Premium subscription:**\n- Full AI chat access\n- Advanced analytics\n- Custom meal plans\n- Priority support\n\n**Trainer packages:**\n- Varies by trainer\n- Typically 500-2000 EGP/month\n- Includes personalized program\n- Weekly check-ins\n- Direct messaging\n\n**Best value:** Start with premium, add trainer when ready!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Can I track my workouts on Forma?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Yes! Forma has full workout tracking:**\n\n**What you can track:**\n- Exercises performed\n- Sets, reps, weight\n- Workout duration\n- Rest times\n- Notes\n\n**Features:**\n- Pre-made workout templates\n- Custom workout builder\n- Progress graphs\n- Personal records (PRs)\n- Workout history\n\n**How to use:**\n1. Start a workout\n2. Select exercises\n3. Log your sets as you go\n4. Complete and save\n\n**Pro tip:** Log every workout to see your progress over time!"
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "description": "Forma app specific - features, how to use, trainers, programs",
+  "example": [
+    {
+      "conversations": [
+        {
+          "from": "human",
+          "value": "What is Forma Fitness?"
+        },
+        {
+          "from": "gpt",
+          "value": "Forma Fitness is Egypt's premier fitness platform that connects you with certified trainers, personalized workout programs, and nutrition tracking.\n\n**Key Features:**\n- Find certified Egyptian trainers\n- Custom workout programs\n- Track your workouts and progress\n- Nutrition and meal planning\n- Video call sessions with trainers\n- Arabic and English support\n\nWhether you're a beginner or advanced, Forma helps you achieve your fitness goals with local expertise."
+        }
+      ]
+    },
+    {
+      "conversations": [
+        {
+          "from": "human",
+          "value": "ازاي اختار مدرب على فورما؟"
+        },
+        {
+          "from": "gpt",
+          "value": "اختيار المدرب المناسب على فورما:\n\n1. **حدد هدفك** - تخسيس، تضخيم، لياقة عامة\n2. **شوف التقييمات** - اقرأ آراء العملاء السابقين\n3. **اتصل بالمدرب** - اطلب استشارة مجانية\n4. **اختار الباقة** - شهرية أو ربع سنوية\n\nكل المدربين على فورما معتمدين ومتخصصين."
+        }
+      ]
+    }
+  ]
+}

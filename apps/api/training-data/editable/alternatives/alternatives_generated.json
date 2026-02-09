@@ -1,0 +1,74 @@
+[
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I have a shoulder injury, what can I replace bench press with?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Bench press alternatives for shoulder injuries:**\n\n**Safe options:**\n1. Floor press (limits range of motion)\n2. Landmine press\n3. Cable chest press\n4. Push-ups with hands close\n\n**Tips:**\n- Keep elbows at 45° not 90°\n- Don't go below chest level\n- Use lighter weights, higher reps\n- Stop if ANY pain\n\n**Important:** See a physiotherapist first!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I don't have a gym, what can I do at home?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Complete home workout - no equipment:**\n\n**Push (chest, shoulders, triceps):**\n- Push-ups (3x15-20)\n- Diamond push-ups (3x10-12)\n- Pike push-ups (3x10)\n- Tricep dips on chair (3x12)\n\n**Pull (back, biceps):**\n- Door frame rows\n- Towel curls\n- Superman holds\n\n**Legs:**\n- Squats (3x20)\n- Lunges (3x12 each)\n- Glute bridges (3x15)\n- Calf raises (3x20)\n\n**Core:**\n- Planks (3x45s)\n- Crunches (3x20)\n- Leg raises (3x15)\n\nDo this 3-4x per week!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "What can replace deadlifts at home?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Deadlift alternatives for home:**\n\n**With dumbbells:**\n- Romanian deadlifts\n- Single leg RDL\n- Sumo deadlift\n\n**Bodyweight:**\n- Single leg glute bridge\n- Good mornings\n- Superman holds\n- Hip hinge practice\n\n**With resistance bands:**\n- Banded deadlifts\n- Banded good mornings\n\n**Pro tip:** Fill a backpack with books for extra weight!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I don't have a barbell, what can I use instead?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Barbell to dumbbell swaps:**\n\n| Barbell | Dumbbell Alternative |\n|---------|---------------------|\n| Bench press | DB bench press |\n| Squat | Goblet squat, DB squats |\n| Deadlift | DB Romanian deadlift |\n| Rows | Single arm DB rows |\n| OHP | DB shoulder press |\n| Curls | DB curls |\n\n**Benefits of dumbbells:**\n- Fix muscle imbalances\n- Greater range of motion\n- Safer for home use\n\n**Pro tip:** Dumbbells can be MORE effective for muscle building!"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "Swap me something easier than squats"
+      },
+      {
+        "from": "gpt",
+        "value": "**Squat alternatives (easier to harder):**\n\n**Easiest:**\n1. Wall sit\n2. Bodyweight squats (limited ROM)\n3. Box squats\n\n**Medium:**\n1. Goblet squats\n2. Leg press\n3. Smith machine squats\n\n**Why squats are hard:**\n- Ankle mobility\n- Hip mobility\n- Core strength\n\n**To improve squat:**\n1. Elevate heels on plates\n2. Hold something for balance\n3. Practice daily with no weight"
+      }
+    ]
+  },
+  {
+    "conversations": [
+      {
+        "from": "human",
+        "value": "I work from home and sit all day, what exercises help?"
+      },
+      {
+        "from": "gpt",
+        "value": "**Office/WFH mobility routine:**\n\n**Every hour (2 min):**\n- Stand up and stretch\n- 10 squats\n- Shoulder rolls\n\n**Daily (15-20 min):**\n\n**Hip openers:**\n- Hip flexor stretch (90s each)\n- Pigeon pose\n- Deep squat hold\n\n**Back relief:**\n- Cat-cow (20 reps)\n- Thoracic rotations\n- Child's pose\n\n**Posture:**\n- Face pulls or band pull-aparts\n- Wall slides\n- Chin tucks\n\n**Long term:** Stand desk, walk meetings, gym 3x/week"
+      }
+    ]
+  }
+]
