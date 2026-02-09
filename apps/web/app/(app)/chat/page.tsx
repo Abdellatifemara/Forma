@@ -25,17 +25,35 @@ const suggestedQuestions = [
   'What should I eat before a workout?',
 ];
 
-const SYSTEM_CONTEXT = `You are Forma Coach, a knowledgeable fitness and nutrition coach. You help users with:
+const SYSTEM_CONTEXT = `You are Forma Coach, a friendly and knowledgeable fitness and nutrition coach for Egyptian and Arab users.
+
+IMPORTANT - LANGUAGE UNDERSTANDING:
+- Users may write in casual/informal English, Arabic, or Egyptian Arabic (Franco-Arab like "3ayz", "eh da", "kda")
+- Users may use slang, abbreviations, or broken grammar like "hey bro i want good plan for food you get me?"
+- ALWAYS understand the intent behind casual messages and respond helpfully
+- If a message is unclear, make your best guess at what they want, then confirm
+- Never say you don't understand - always try to help
+
+COMMUNICATION STYLE:
+- Be friendly, casual, and encouraging - like a gym buddy
+- Use simple language, avoid jargon
+- Match the user's energy and language style
+- If they write in Arabic, respond in Arabic
+- If they write casually, respond casually
+
+YOU HELP WITH:
 - Workout planning and exercise recommendations
-- Nutrition advice and meal planning
+- Nutrition advice and meal planning (including Egyptian foods)
 - Exercise form and technique tips
 - Supplement guidance
 - Motivation and goal setting
 - Recovery and injury prevention
 
-Be concise, friendly, and encouraging. Use bullet points and formatting for clarity.
-If you don't know something specific about the user, ask them.
-Always prioritize safety - recommend consulting professionals for medical concerns.`;
+RESPONSE FORMAT:
+- Keep responses concise (2-4 paragraphs max)
+- Use bullet points for lists
+- Be specific and actionable
+- Always end with a question or next step`;
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([
@@ -43,16 +61,19 @@ export default function ChatPage() {
       id: '1',
       role: 'assistant',
       content:
-        "Hello! I'm your Forma Coach. I can help you with workout suggestions, nutrition advice, exercise form tips, and answer any fitness-related questions. How can I help you today?",
+        "Hey! I'm your Forma Coach 💪 I can help you with workouts, nutrition, supplements, or any fitness questions. What's on your mind today?",
       timestamp: new Date(),
     },
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   useEffect(() => {
@@ -77,7 +98,7 @@ export default function ChatPage() {
     try {
       // Build context from recent messages for continuity
       const recentMessages = messages.slice(-6).map(m =>
-        `${m.role === 'user' ? 'User' : 'Assistant'}: ${m.content}`
+        `${m.role === 'user' ? 'User' : 'Coach'}: ${m.content}`
       ).join('\n');
 
       const fullContext = `${SYSTEM_CONTEXT}\n\nRecent conversation:\n${recentMessages}`;
@@ -93,12 +114,12 @@ export default function ChatPage() {
 
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
-      // Error handled
+      console.error('Chat error:', error);
 
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: "I'm sorry, I couldn't process your request right now. Please try again in a moment.",
+        content: "Sorry, I'm having trouble connecting right now. Please try again in a moment!",
         timestamp: new Date(),
         error: true,
       };
@@ -121,154 +142,163 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="rounded-xl border bg-card shadow-sm overflow-hidden">
-      {/* Header */}
-      <div className="border-b px-4 py-3 bg-muted/30">
-        <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-forma-teal to-cyan-400">
-            <Sparkles className="h-5 w-5 text-white" />
+    <div className="-mx-4 -my-6 sm:-mx-6 lg:-mx-8">
+      {/* Full-width chat container */}
+      <div className="flex flex-col h-[calc(100vh-8rem)] lg:h-[calc(100vh-6rem)]">
+        {/* Header */}
+        <div className="flex-shrink-0 border-b bg-card px-4 py-3">
+          <div className="flex items-center gap-3 max-w-3xl mx-auto">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-forma-teal to-cyan-400">
+              <Sparkles className="h-5 w-5 text-white" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h1 className="font-semibold truncate">Forma Coach</h1>
+              <p className="text-sm text-muted-foreground truncate">Your fitness assistant</p>
+            </div>
+            <Badge variant="forma" className="flex-shrink-0">
+              Pro
+            </Badge>
           </div>
-          <div>
-            <h1 className="font-semibold">Forma Coach</h1>
-            <p className="text-sm text-muted-foreground">Your fitness assistant</p>
-          </div>
-          <Badge variant="forma" className="ml-auto">
-            Pro Feature
-          </Badge>
         </div>
-      </div>
 
-      {/* Messages Container */}
-      <div className="h-[400px] overflow-y-auto p-4">
-        <div className="space-y-4">
-          {messages.map((message) => (
-            <div
-              key={message.id}
-              className={`flex gap-3 ${
-                message.role === 'user' ? 'flex-row-reverse' : ''
-              }`}
-            >
-              <Avatar className="h-8 w-8 flex-shrink-0">
-                <AvatarFallback
-                  className={
-                    message.role === 'assistant'
-                      ? message.error
-                        ? 'bg-destructive/20 text-destructive'
-                        : 'bg-gradient-to-br from-forma-teal to-cyan-400 text-white'
-                      : 'bg-muted'
-                  }
-                >
-                  {message.role === 'assistant' ? (
-                    message.error ? (
-                      <AlertCircle className="h-4 w-4" />
-                    ) : (
-                      <Bot className="h-4 w-4" />
-                    )
-                  ) : (
-                    <User className="h-4 w-4" />
-                  )}
-                </AvatarFallback>
-              </Avatar>
+        {/* Messages Area - Scrollable */}
+        <div
+          ref={messagesContainerRef}
+          className="flex-1 overflow-y-auto overscroll-contain"
+          style={{ minHeight: 0 }}
+        >
+          <div className="max-w-3xl mx-auto p-4 space-y-4">
+            {messages.map((message) => (
               <div
-                className={`max-w-[80%] rounded-2xl px-4 py-3 ${
-                  message.role === 'user'
-                    ? 'bg-forma-teal text-forma-navy'
-                    : message.error
-                    ? 'bg-destructive/10 border border-destructive/20'
-                    : 'bg-muted'
+                key={message.id}
+                className={`flex gap-3 ${
+                  message.role === 'user' ? 'flex-row-reverse' : ''
                 }`}
               >
-                <div className="whitespace-pre-wrap text-sm">
-                  {message.content.split('\n').map((line, i) => (
-                    <p key={i} className="mb-1 last:mb-0">
-                      {line.startsWith('- ') || line.startsWith('• ') ? (
-                        <span className="flex gap-2">
-                          <span className="text-forma-teal">•</span>
-                          <span>{line.substring(2)}</span>
-                        </span>
-                      ) : line.startsWith('**') && line.endsWith('**') ? (
-                        <strong>{line.slice(2, -2)}</strong>
+                <Avatar className="h-8 w-8 flex-shrink-0">
+                  <AvatarFallback
+                    className={
+                      message.role === 'assistant'
+                        ? message.error
+                          ? 'bg-destructive/20 text-destructive'
+                          : 'bg-gradient-to-br from-forma-teal to-cyan-400 text-white'
+                        : 'bg-primary/10 text-primary'
+                    }
+                  >
+                    {message.role === 'assistant' ? (
+                      message.error ? (
+                        <AlertCircle className="h-4 w-4" />
                       ) : (
-                        line
-                      )}
-                    </p>
-                  ))}
+                        <Bot className="h-4 w-4" />
+                      )
+                    ) : (
+                      <User className="h-4 w-4" />
+                    )}
+                  </AvatarFallback>
+                </Avatar>
+                <div
+                  className={`max-w-[85%] rounded-2xl px-4 py-3 ${
+                    message.role === 'user'
+                      ? 'bg-primary text-primary-foreground'
+                      : message.error
+                      ? 'bg-destructive/10 border border-destructive/20 text-foreground'
+                      : 'bg-muted text-foreground'
+                  }`}
+                >
+                  <div className="whitespace-pre-wrap text-sm break-words">
+                    {message.content.split('\n').map((line, i) => (
+                      <p key={i} className="mb-1 last:mb-0">
+                        {line.startsWith('- ') || line.startsWith('• ') ? (
+                          <span className="flex gap-2">
+                            <span>•</span>
+                            <span>{line.substring(2)}</span>
+                          </span>
+                        ) : line.startsWith('**') && line.endsWith('**') ? (
+                          <strong>{line.slice(2, -2)}</strong>
+                        ) : (
+                          line || '\u00A0'
+                        )}
+                      </p>
+                    ))}
+                  </div>
+                  <p className="mt-2 text-[10px] opacity-50">
+                    {message.timestamp.toLocaleTimeString([], {
+                      hour: '2-digit',
+                      minute: '2-digit',
+                    })}
+                  </p>
                 </div>
-                <p className="mt-2 text-xs opacity-60">
-                  {message.timestamp.toLocaleTimeString([], {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                  })}
-                </p>
               </div>
-            </div>
-          ))}
-
-          {isLoading && (
-            <div className="flex gap-3">
-              <Avatar className="h-8 w-8 flex-shrink-0">
-                <AvatarFallback className="bg-gradient-to-br from-forma-teal to-cyan-400 text-white">
-                  <Bot className="h-4 w-4" />
-                </AvatarFallback>
-              </Avatar>
-              <div className="rounded-2xl bg-muted px-4 py-3">
-                <div className="flex items-center gap-2">
-                  <Loader2 className="h-4 w-4 animate-spin text-forma-teal" />
-                  <span className="text-sm text-muted-foreground">Thinking...</span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          <div ref={messagesEndRef} />
-        </div>
-      </div>
-
-      {/* Suggestions */}
-      {messages.length === 1 && (
-        <div className="border-t px-4 py-3 bg-muted/20">
-          <p className="mb-2 text-sm text-muted-foreground">
-            Try asking:
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {suggestedQuestions.map((question) => (
-              <Button
-                key={question}
-                variant="outline"
-                size="sm"
-                className="text-xs"
-                onClick={() => handleSuggestionClick(question)}
-              >
-                {question}
-              </Button>
             ))}
+
+            {isLoading && (
+              <div className="flex gap-3">
+                <Avatar className="h-8 w-8 flex-shrink-0">
+                  <AvatarFallback className="bg-gradient-to-br from-forma-teal to-cyan-400 text-white">
+                    <Bot className="h-4 w-4" />
+                  </AvatarFallback>
+                </Avatar>
+                <div className="rounded-2xl bg-muted px-4 py-3">
+                  <div className="flex items-center gap-2">
+                    <Loader2 className="h-4 w-4 animate-spin text-forma-teal" />
+                    <span className="text-sm text-muted-foreground">Thinking...</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            <div ref={messagesEndRef} />
           </div>
         </div>
-      )}
 
-      {/* Input */}
-      <div className="border-t bg-muted/30 p-4">
-        <div className="flex gap-2">
-          <Input
-            placeholder="Ask me anything about fitness..."
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyDown}
-            disabled={isLoading}
-            className="flex-1"
-          />
-          <Button
-            variant="forma"
-            size="icon"
-            onClick={handleSend}
-            disabled={!input.trim() || isLoading}
-          >
-            {isLoading ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
-            ) : (
-              <Send className="h-4 w-4" />
-            )}
-          </Button>
+        {/* Suggestions - Only show when no conversation */}
+        {messages.length === 1 && (
+          <div className="flex-shrink-0 border-t bg-muted/30 px-4 py-3">
+            <div className="max-w-3xl mx-auto">
+              <p className="mb-2 text-sm text-muted-foreground">
+                Try asking:
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {suggestedQuestions.map((question) => (
+                  <Button
+                    key={question}
+                    variant="outline"
+                    size="sm"
+                    className="text-xs h-auto py-1.5 px-3"
+                    onClick={() => handleSuggestionClick(question)}
+                  >
+                    {question}
+                  </Button>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Input Area - Fixed at bottom */}
+        <div className="flex-shrink-0 border-t bg-background p-4">
+          <div className="max-w-3xl mx-auto flex gap-2">
+            <Input
+              placeholder="Ask me anything about fitness..."
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              disabled={isLoading}
+              className="flex-1"
+            />
+            <Button
+              variant="forma"
+              size="icon"
+              onClick={handleSend}
+              disabled={!input.trim() || isLoading}
+            >
+              {isLoading ? (
+                <Loader2 className="h-4 w-4 animate-spin" />
+              ) : (
+                <Send className="h-4 w-4" />
+              )}
+            </Button>
+          </div>
         </div>
       </div>
     </div>
