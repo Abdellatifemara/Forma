@@ -14,7 +14,7 @@ export function useExerciseSearch(params: ExerciseSearchParams) {
   return useQuery({
     queryKey: exerciseKeys.search(params),
     queryFn: () => exercisesApi.search(params),
-    enabled: !!(params.query || params.muscle || params.equipment),
+    enabled: !!(params.query || params.primaryMuscle || params.equipment?.length),
   });
 }
 

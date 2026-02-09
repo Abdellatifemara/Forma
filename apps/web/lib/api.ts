@@ -249,8 +249,23 @@ export const workoutsApi = {
 
 // Exercises API
 export const exercisesApi = {
-  search: (params: ExerciseSearchParams) =>
-    api.get<PaginatedResponse<Exercise>>('/exercises', params as Record<string, string>),
+  search: (params: ExerciseSearchParams) => {
+    // Filter out undefined/null/empty values to prevent "undefined" string in URL
+    const cleanParams: Record<string, string> = {};
+    Object.entries(params).forEach(([key, value]) => {
+      if (value !== undefined && value !== null && value !== '' && value !== 'undefined') {
+        // Handle arrays by joining with comma
+        if (Array.isArray(value)) {
+          if (value.length > 0) {
+            cleanParams[key] = value.join(',');
+          }
+        } else {
+          cleanParams[key] = String(value);
+        }
+      }
+    });
+    return api.get<PaginatedResponse<Exercise>>('/exercises', cleanParams);
+  },
 
   getById: (id: string) => api.get<Exercise>(`/exercises/${id}`),
 
@@ -1491,11 +1506,12 @@ interface Exercise {
 
 interface ExerciseSearchParams {
   query?: string;
-  muscle?: string;
-  equipment?: string;
+  primaryMuscle?: string;
+  muscleGroups?: string[];
+  equipment?: string[];
   difficulty?: string;
   page?: number;
-  limit?: number;
+  pageSize?: number;
 }
 
 interface Food {

@@ -55,6 +55,17 @@ const equipmentTypes = [
   'Resistance Band',
 ];
 
+// Map frontend equipment names to backend enum values
+const equipmentToEnum: Record<string, string> = {
+  'Barbell': 'BARBELL',
+  'Dumbbell': 'DUMBBELLS',
+  'Cable': 'CABLES',
+  'Machine': 'MACHINES',
+  'Bodyweight': 'BODYWEIGHT',
+  'Kettlebell': 'KETTLEBELL',
+  'Resistance Band': 'RESISTANCE_BANDS',
+};
+
 const difficultyLevels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
 
 function ExercisesPageContent() {
@@ -75,10 +86,10 @@ function ExercisesPageContent() {
       setIsLoading(true);
       try {
         const params = {
-          query: searchQuery,
-          muscle: muscleFilter !== 'All' ? muscleFilter.toLowerCase() : undefined,
-          equipment: equipmentFilter !== 'All' ? equipmentFilter : undefined,
-          difficulty: difficultyFilter !== 'All' ? difficultyFilter : undefined,
+          query: searchQuery || undefined,
+          primaryMuscle: muscleFilter !== 'All' ? muscleFilter.toUpperCase() : undefined,
+          equipment: equipmentFilter !== 'All' ? [equipmentToEnum[equipmentFilter]] : undefined,
+          difficulty: difficultyFilter !== 'All' ? difficultyFilter.toUpperCase() : undefined,
         };
         const response = await exercisesApi.search(params);
         // Handle both old format (exercises) and new format (data)
