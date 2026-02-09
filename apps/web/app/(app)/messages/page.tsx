@@ -178,7 +178,7 @@ export default function MessagesPage() {
   // Empty state when no conversations
   if (!conversationsLoading && (!conversations || conversations.length === 0)) {
     return (
-      <div className="flex h-[calc(100vh-8rem)] items-center justify-center pb-20 lg:ml-64 lg:pb-0">
+      <div className="flex h-[calc(100vh-12rem)] items-center justify-center">
         <Card className="max-w-md p-8 text-center">
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-muted">
             <MessageCircle className="h-8 w-8 text-muted-foreground" />
@@ -196,7 +196,7 @@ export default function MessagesPage() {
   }
 
   return (
-    <div className="flex h-[calc(100vh-8rem)] gap-4 pb-20 lg:ml-64 lg:gap-6 lg:pb-0">
+    <div className="flex h-[calc(100vh-12rem)] gap-4 lg:gap-6">
       {/* Conversations List - Hidden on mobile when conversation is selected */}
       <Card className={`w-full flex-shrink-0 lg:w-80 ${selectedConversationId ? 'hidden lg:flex' : 'flex'}`}>
         <div className="flex h-full w-full flex-col">
@@ -205,10 +205,13 @@ export default function MessagesPage() {
             <div className="relative">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
+                id="search-conversations"
+                name="search-conversations"
                 placeholder="Search conversations..."
                 className="pl-10"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                autoComplete="off"
               />
             </div>
           </div>
@@ -383,11 +386,14 @@ export default function MessagesPage() {
                   disabled={mediaLoading}
                 />
                 <Input
+                  id="message-input"
+                  name="message-input"
                   placeholder="Type a message..."
                   value={newMessage}
                   onChange={(e) => setNewMessage(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && handleSend()}
                   disabled={sendMessage.isPending || mediaLoading}
+                  autoComplete="off"
                 />
                 <Button
                   variant="forma"
