@@ -13,7 +13,8 @@ const exerciseContent: Record<string, {
   faqsEn: { question: string; answer: string }[];
   faqsAr: { question: string; answer: string }[];
 }> = {
-  'chest-bench-press': {
+  // Flat Barbell Bench Press
+  'MC001': {
     descriptionEn: 'The barbell bench press is the king of chest exercises, building strength and mass in the chest, shoulders, and triceps. It is a compound movement that engages multiple muscle groups simultaneously.',
     descriptionAr: 'ضغط البار على البنش هو ملك تمارين الصدر، يبني القوة والكتلة في الصدر والكتفين والترايسبس. هو تمرين مركب يشغل عدة مجموعات عضلية في آن واحد.',
     instructionsEn: [
@@ -35,21 +36,22 @@ const exerciseContent: Record<string, {
     tipsEn: ['Keep shoulder blades pinched together for stability', 'Never bounce the bar off chest', 'Keep wrists straight', 'Drive through your legs for power'],
     tipsAr: ['أبقِ لوحي كتفك مضمومين للثبات', 'لا ترتد البار عن صدرك', 'أبقِ معصميك مستقيمين', 'ادفع بساقيك للقوة'],
     faqsEn: [
-      { question: 'What is the correct grip width?', answer: 'Grip the bar about 1.5 times shoulder-width apart. Your forearms should be vertical at the bottom of the movement.' },
-      { question: 'How deep should I lower the bar?', answer: 'Lower the bar until it touches your mid-chest, just below your nipple line. Full range of motion is key for muscle development.' },
-      { question: 'Should I arch my back?', answer: 'A slight natural arch in your lower back is fine and helps with stability. Avoid excessive arching which can strain your back.' },
-      { question: 'What if I cannot lift the weight?', answer: 'Always use a spotter when bench pressing heavy weights. You can also use safety pins in a power rack.' },
-      { question: 'How often should I bench press?', answer: 'Most people benefit from bench pressing 2-3 times per week, allowing at least 48 hours between sessions for recovery.' }
+      { question: 'How do I avoid shoulder injury?', answer: 'Keep elbows at 45-degree angle, not flared out at 90 degrees. Retract your shoulder blades and do not bounce the bar. Warm up with lighter weights first.' },
+      { question: 'My wrists hurt during bench press. What should I do?', answer: 'Keep your wrists straight, not bent back. The bar should rest on the heel of your palm. Consider using wrist wraps for heavy lifts.' },
+      { question: 'Why does my shoulder click during bench press?', answer: 'Clicking often means your shoulder is not stable. Focus on retracting shoulder blades, use proper form, and reduce weight. See a doctor if there is pain.' },
+      { question: 'How do I stop the bar from shaking?', answer: 'Start with lighter weight to build stabilizer muscles. Keep your core tight, squeeze the bar hard, and ensure even grip width on both sides.' },
+      { question: 'What if I get stuck under the bar?', answer: 'Always use a spotter or safety pins. If stuck alone, tilt the bar to one side to slide weights off, or roll the bar down to your hips and sit up.' }
     ],
     faqsAr: [
-      { question: 'ما هو عرض القبضة الصحيح؟', answer: 'امسك البار بحوالي 1.5 ضعف عرض الكتفين. يجب أن تكون ساعديك عمودية في أسفل الحركة.' },
-      { question: 'إلى أي عمق يجب أن أنزل البار؟', answer: 'أنزل البار حتى يلمس منتصف صدرك، أسفل خط الحلمة. النطاق الكامل للحركة مهم لنمو العضلات.' },
-      { question: 'هل يجب أن أقوّس ظهري؟', answer: 'تقوس طبيعي خفيف في أسفل ظهرك مقبول ويساعد في الثبات. تجنب التقوس المفرط الذي يمكن أن يضر ظهرك.' },
-      { question: 'ماذا لو لم أستطع رفع الوزن؟', answer: 'استخدم دائماً مساعداً عند رفع أوزان ثقيلة. يمكنك أيضاً استخدام قضبان الأمان في رف القوة.' },
-      { question: 'كم مرة يجب أن أمارس ضغط البنش؟', answer: 'معظم الناس يستفيدون من ممارسة ضغط البنش 2-3 مرات أسبوعياً، مع 48 ساعة على الأقل بين الجلسات للتعافي.' }
+      { question: 'كيف أتجنب إصابة الكتف؟', answer: 'أبقِ المرفقين بزاوية 45 درجة، ليس منفتحين بزاوية 90. اسحب لوحي الكتف ولا ترتد البار. سخّن بأوزان خفيفة أولاً.' },
+      { question: 'معصمي يؤلمني أثناء البنش. ماذا أفعل؟', answer: 'أبقِ معصميك مستقيمين، ليسوا مثنيين للخلف. يجب أن يستقر البار على كعب راحة يدك. فكر في استخدام رباط المعصم للرفعات الثقيلة.' },
+      { question: 'لماذا يصدر كتفي صوت طقطقة أثناء البنش؟', answer: 'الطقطقة غالباً تعني أن كتفك غير مستقر. ركز على سحب لوحي الكتف، استخدم الأسلوب الصحيح، وقلل الوزن. راجع طبيباً إذا كان هناك ألم.' },
+      { question: 'كيف أوقف البار من الاهتزاز؟', answer: 'ابدأ بوزن أخف لبناء عضلات التثبيت. شد جذعك، اضغط البار بقوة، وتأكد من تساوي عرض القبضة على الجانبين.' },
+      { question: 'ماذا لو علقت تحت البار؟', answer: 'استخدم دائماً مساعداً أو قضبان الأمان. إذا علقت وحدك، أمِل البار لجانب لإنزلاق الأوزان، أو دحرج البار لوركيك واجلس.' }
     ],
   },
-  'back-deadlift': {
+  // Conventional Deadlift
+  'LB001': {
     descriptionEn: 'The deadlift is the ultimate full-body strength exercise. It works your entire posterior chain including back, glutes, and hamstrings while also engaging your core, forearms, and traps.',
     descriptionAr: 'رفعة الميتة هي تمرين القوة الشامل للجسم كله. تعمل على السلسلة الخلفية بالكامل شاملة الظهر والمؤخرة والهامسترينج بينما تشغل أيضاً الجذع والساعدين والترابس.',
     instructionsEn: [
@@ -73,21 +75,22 @@ const exerciseContent: Record<string, {
     tipsEn: ['Never round your lower back', 'Keep bar close to body', 'Lock out completely at top', 'Use mixed grip or straps for heavy weights'],
     tipsAr: ['لا تقوّس أسفل ظهرك أبداً', 'أبقِ البار قريباً من جسمك', 'اقفل بالكامل في القمة', 'استخدم قبضة مختلطة أو أحزمة للأوزان الثقيلة'],
     faqsEn: [
-      { question: 'Is deadlift bad for your back?', answer: 'No, when performed correctly, deadlifts strengthen your back. The key is maintaining a neutral spine throughout the lift.' },
-      { question: 'Should I use a belt?', answer: 'A belt can help with heavy lifts by providing something to brace against. Learn to brace properly without a belt first.' },
-      { question: 'What grip should I use?', answer: 'Start with double overhand grip. Switch to mixed grip or use straps when grip becomes limiting.' },
-      { question: 'How do I avoid rounding my back?', answer: 'Focus on pushing your chest up, engaging your lats, and keeping your core tight. If you cannot maintain position, reduce the weight.' },
-      { question: 'Can I do deadlifts with back pain?', answer: 'Consult a doctor first. Often, proper deadlifts can help strengthen a weak back, but start very light and focus on form.' }
+      { question: 'How do I protect my lower back?', answer: 'Never round your lower back. Brace your core like you are about to get punched, keep chest up, and if your back rounds, the weight is too heavy.' },
+      { question: 'I feel it in my lower back, not my legs. Is this wrong?', answer: 'Yes, you are likely using your back too much. Push through your legs first, keep the bar close, and think about pushing the floor away.' },
+      { question: 'Should I look up or down?', answer: 'Keep your neck neutral - look at a spot on the floor about 6-10 feet ahead. Looking up can strain your neck; looking down can round your back.' },
+      { question: 'My grip gives out before my legs. What do I do?', answer: 'Use mixed grip (one palm forward, one back) or lifting straps. Also train your grip separately with farmer walks and dead hangs.' },
+      { question: 'Is it normal to feel dizzy after heavy deadlifts?', answer: 'Some lightheadedness is normal from the effort. Breathe at the top of each rep, stay hydrated, and do not hold your breath too long.' }
     ],
     faqsAr: [
-      { question: 'هل رفعة الميتة سيئة للظهر؟', answer: 'لا، عند أدائها بشكل صحيح، رفعات الميتة تقوي ظهرك. المفتاح هو الحفاظ على عمود فقري محايد طوال الرفع.' },
-      { question: 'هل يجب أن أستخدم حزاماً؟', answer: 'الحزام يمكن أن يساعد في الرفعات الثقيلة بتوفير شيء للتثبيت ضده. تعلم التثبيت بشكل صحيح بدون حزام أولاً.' },
-      { question: 'أي قبضة يجب أن أستخدم؟', answer: 'ابدأ بقبضة علوية مزدوجة. انتقل لقبضة مختلطة أو استخدم أحزمة عندما تصبح القبضة محدودة.' },
-      { question: 'كيف أتجنب تقوس ظهري؟', answer: 'ركز على دفع صدرك للأعلى، إشراك اللاتس، وإبقاء جذعك مشدوداً. إذا لم تستطع الحفاظ على الوضع، قلل الوزن.' },
-      { question: 'هل يمكنني ممارسة رفعة الميتة مع آلام الظهر؟', answer: 'استشر طبيباً أولاً. غالباً، رفعات الميتة الصحيحة يمكن أن تساعد في تقوية ظهر ضعيف، لكن ابدأ بأوزان خفيفة جداً وركز على الأسلوب.' }
+      { question: 'كيف أحمي أسفل ظهري؟', answer: 'لا تقوّس أسفل ظهرك أبداً. شد جذعك كأنك ستتلقى لكمة، أبقِ صدرك مرتفعاً، وإذا تقوّس ظهرك فالوزن ثقيل جداً.' },
+      { question: 'أشعر به في أسفل ظهري، ليس ساقاي. هل هذا خطأ؟', answer: 'نعم، أنت تستخدم ظهرك كثيراً على الأرجح. ادفع بساقيك أولاً، أبقِ البار قريباً، وفكر في دفع الأرض بعيداً.' },
+      { question: 'هل أنظر للأعلى أم للأسفل؟', answer: 'أبقِ رقبتك محايدة - انظر لنقطة على الأرض على بعد 2-3 أمتار. النظر للأعلى يمكن أن يجهد رقبتك؛ النظر للأسفل يمكن أن يقوّس ظهرك.' },
+      { question: 'قبضتي تضعف قبل ساقاي. ماذا أفعل؟', answer: 'استخدم قبضة مختلطة (كف للأمام، كف للخلف) أو أحزمة الرفع. أيضاً درّب قبضتك بشكل منفصل بحمل الفارمر والتعلق.' },
+      { question: 'هل من الطبيعي الشعور بالدوخة بعد رفعات ثقيلة؟', answer: 'بعض الدوار طبيعي من المجهود. تنفس في أعلى كل تكرار، ابقَ رطباً، ولا تحبس نفسك طويلاً.' }
     ],
   },
-  'legs-squat': {
+  // Back Squat - High Bar
+  'QD001': {
     descriptionEn: 'The barbell back squat is the king of leg exercises. It builds massive quads, glutes, and hamstrings while also strengthening your core and developing overall lower body power.',
     descriptionAr: 'سكوات البار هو ملك تمارين الأرجل. يبني عضلات فخذ ومؤخرة ضخمة مع تقوية الجذع وتطوير قوة الجزء السفلي بالكامل.',
     instructionsEn: [
@@ -113,21 +116,22 @@ const exerciseContent: Record<string, {
     tipsEn: ['Keep knees tracking over toes', 'Do not let knees cave inward', 'Keep heels planted', 'Look forward not down'],
     tipsAr: ['أبقِ الركبتين تتبعان أصابع القدمين', 'لا تدع الركبتين تنهار للداخل', 'أبقِ الكعبين على الأرض', 'انظر للأمام لا للأسفل'],
     faqsEn: [
-      { question: 'How deep should I squat?', answer: 'Ideally, squat until your hip crease goes below your knee (below parallel). This ensures full quad and glute activation.' },
-      { question: 'Are squats bad for your knees?', answer: 'No, properly performed squats actually strengthen the muscles around your knees. Pain usually indicates a form issue.' },
-      { question: 'Should I use weightlifting shoes?', answer: 'Shoes with a raised heel can help if you have limited ankle mobility. They help keep your torso more upright.' },
-      { question: 'What is butt wink and how do I fix it?', answer: 'Butt wink is when your pelvis tucks under at the bottom. Work on hip mobility and only squat as deep as you can maintain a neutral spine.' },
-      { question: 'High bar or low bar squat?', answer: 'High bar is more quad-dominant and upright. Low bar allows more weight and hits glutes/hamstrings more. Both are valid.' }
+      { question: 'My knees hurt when I squat. What am I doing wrong?', answer: 'Common causes: knees caving inward, heels lifting off ground, or going too heavy too fast. Push knees out over toes, keep heels down, and reduce weight to fix form.' },
+      { question: 'How do I prevent knee caving?', answer: 'Focus on pushing your knees out over your pinky toe. Strengthen your glutes with hip thrusts and banded squats. Consider wider stance.' },
+      { question: 'My lower back rounds at the bottom (butt wink). Is this dangerous?', answer: 'Yes, it can cause disc issues over time. Work on hip and ankle mobility. Only squat as deep as you can maintain a flat back.' },
+      { question: 'I lean forward too much. How do I stay upright?', answer: 'Usually caused by tight ankles or weak quads. Try heel wedges, work on ankle mobility, and strengthen quads with leg press and extensions.' },
+      { question: 'The bar hurts my neck/back. What should I do?', answer: 'Create a shelf with your traps by squeezing shoulder blades together. Use a barbell pad if needed, or try front squats instead.' }
     ],
     faqsAr: [
-      { question: 'إلى أي عمق يجب أن أنزل في السكوات؟', answer: 'من الأفضل النزول حتى تصبح ثنية الورك أسفل الركبة (تحت التوازي). هذا يضمن تفعيل كامل للفخذ والمؤخرة.' },
-      { question: 'هل السكوات سيء للركبتين؟', answer: 'لا، السكوات المؤدى بشكل صحيح يقوي العضلات حول ركبتيك. الألم عادة يشير لمشكلة في الأسلوب.' },
-      { question: 'هل يجب أن أستخدم أحذية رفع الأثقال؟', answer: 'الأحذية ذات الكعب المرتفع يمكن أن تساعد إذا كان لديك مرونة كاحل محدودة. تساعد في إبقاء جذعك أكثر استقامة.' },
-      { question: 'ما هو butt wink وكيف أصلحه؟', answer: 'هو عندما يلتف حوضك للأسفل في القاع. اعمل على مرونة الورك وانزل فقط بالعمق الذي يمكنك فيه الحفاظ على عمود فقري محايد.' },
-      { question: 'سكوات عالي أم منخفض؟', answer: 'العالي أكثر هيمنة للفخذ ومنتصب. المنخفض يسمح بوزن أكبر ويستهدف المؤخرة/الهامسترينج أكثر. كلاهما صالح.' }
+      { question: 'ركبتي تؤلمني عند السكوات. ماذا أفعل خطأ؟', answer: 'أسباب شائعة: الركبتين تنهار للداخل، الكعبين يرتفعان، أو الذهاب ثقيل جداً بسرعة. ادفع الركبتين للخارج فوق أصابع القدم، أبقِ الكعبين على الأرض، وقلل الوزن لإصلاح الأسلوب.' },
+      { question: 'كيف أمنع انهيار الركبة؟', answer: 'ركز على دفع ركبتيك للخارج فوق إصبع القدم الصغير. قوِّ المؤخرة بتمارين الهيب ثرست وسكوات بالمطاط. فكر في وقفة أوسع.' },
+      { question: 'أسفل ظهري يتقوس في القاع. هل هذا خطير؟', answer: 'نعم، يمكن أن يسبب مشاكل في الديسك مع الوقت. اعمل على مرونة الورك والكاحل. انزل فقط بالعمق الذي يمكنك فيه الحفاظ على ظهر مسطح.' },
+      { question: 'أميل للأمام كثيراً. كيف أبقى منتصباً؟', answer: 'عادة بسبب ضيق الكاحلين أو ضعف الكوادريسبس. جرب وضع شيء تحت الكعبين، اعمل على مرونة الكاحل، وقوِّ الفخذين بالليج برس والإكستنشن.' },
+      { question: 'البار يؤلم رقبتي/ظهري. ماذا أفعل؟', answer: 'اصنع رفاً بالترابس بضم لوحي الكتف معاً. استخدم وسادة للبار إذا لزم الأمر، أو جرب السكوات الأمامي بدلاً.' }
     ],
   },
-  'back-pullup': {
+  // Pull-Up - Standard
+  'LA001': {
     descriptionEn: 'The pull-up is the gold standard for back development. It builds a wide, strong upper back and biceps using just your bodyweight. Mastering pull-ups demonstrates true relative strength.',
     descriptionAr: 'سحب العقلة هو المعيار الذهبي لتطوير الظهر. يبني ظهراً علوياً عريضاً وقوياً مع الباي باستخدام وزن جسمك فقط. إتقان سحب العقلة يظهر قوة نسبية حقيقية.',
     instructionsEn: [
@@ -151,21 +155,22 @@ const exerciseContent: Record<string, {
     tipsEn: ['Lead with elbows not hands', 'Squeeze lats at top', 'Control the negative', 'Start with assisted if needed'],
     tipsAr: ['قُد بالمرفقين لا باليدين', 'اضغط اللاتس في القمة', 'تحكم في النزول', 'ابدأ بمساعدة إذا لزم الأمر'],
     faqsEn: [
-      { question: 'I cannot do a pull-up. Where do I start?', answer: 'Start with assisted pull-ups using a band or machine, negative pull-ups (jump up and lower slowly), or inverted rows.' },
-      { question: 'What is the difference between pull-up and chin-up?', answer: 'Pull-ups use an overhand (palms away) grip targeting more back. Chin-ups use underhand (palms toward you) grip hitting biceps more.' },
-      { question: 'How do I increase my pull-up numbers?', answer: 'Practice frequently (greasing the groove), add weight progressively, and work on negative reps. Lose body fat if needed.' },
-      { question: 'Is wide grip better than narrow?', answer: 'Wide grip emphasizes lats and back width. Narrow grip allows more bicep involvement. Use both for complete development.' },
-      { question: 'Should I go all the way down?', answer: 'Yes, full range of motion is important. Extend arms completely at bottom, but keep shoulders engaged (not completely relaxed).' }
+      { question: 'My shoulders hurt during pull-ups. How do I fix this?', answer: 'Start each rep from a dead hang with shoulders engaged (pull shoulders down and back). Do not let shoulders rise to ears. Avoid going behind the neck.' },
+      { question: 'I feel it more in my arms than my back. Why?', answer: 'You are pulling with your biceps instead of your back. Focus on driving elbows down and back, imagine pulling your chest to the bar, not chin over bar.' },
+      { question: 'My elbow hurts after pull-ups. What causes this?', answer: 'Usually golfer\'s elbow from overuse or bad form. Reduce volume, warm up properly, and try neutral grip (palms facing each other). Avoid full lockout at bottom.' },
+      { question: 'Is kipping bad for you?', answer: 'Kipping uses momentum and is a different exercise (CrossFit). For muscle building, strict pull-ups are better. Kipping can strain shoulders if done wrong.' },
+      { question: 'How do I avoid calluses and blisters?', answer: 'Grip with fingers at the base (not middle of palm). Use chalk to reduce friction. File down calluses regularly before they tear.' }
     ],
     faqsAr: [
-      { question: 'لا أستطيع عمل سحب عقلة. من أين أبدأ؟', answer: 'ابدأ بسحب العقلة بمساعدة باستخدام حزام أو جهاز، سحب سلبي (اقفز للأعلى وانزل ببطء)، أو تجديف معكوس.' },
-      { question: 'ما الفرق بين سحب العقلة وتشين أب؟', answer: 'سحب العقلة يستخدم قبضة علوية (الكفين بعيداً) يستهدف الظهر أكثر. تشين أب يستخدم قبضة سفلية (الكفين نحوك) يضرب الباي أكثر.' },
-      { question: 'كيف أزيد عدد سحبات العقلة؟', answer: 'تدرب بشكل متكرر، أضف وزناً تدريجياً، واعمل على التكرارات السلبية. اخسر دهون الجسم إذا لزم الأمر.' },
-      { question: 'هل القبضة العريضة أفضل من الضيقة؟', answer: 'القبضة العريضة تؤكد على اللاتس وعرض الظهر. القبضة الضيقة تسمح بمشاركة أكثر للباي. استخدم كلاهما لتطوير كامل.' },
-      { question: 'هل يجب أن أنزل بالكامل؟', answer: 'نعم، النطاق الكامل للحركة مهم. افرد ذراعيك بالكامل في الأسفل، لكن أبقِ الكتفين مشغولين (غير مسترخيين تماماً).' }
+      { question: 'كتفي يؤلمني أثناء سحب العقلة. كيف أصلح هذا؟', answer: 'ابدأ كل تكرار من تعلق ميت مع الكتفين مشغولين (اسحب الكتفين للأسفل والخلف). لا تدع الكتفين يرتفعان للأذنين. تجنب الذهاب خلف الرقبة.' },
+      { question: 'أشعر به في ذراعي أكثر من ظهري. لماذا؟', answer: 'أنت تسحب بالباي بدلاً من الظهر. ركز على دفع المرفقين للأسفل والخلف، تخيل سحب صدرك للبار، ليس الذقن فوق البار.' },
+      { question: 'مرفقي يؤلمني بعد سحب العقلة. ما السبب؟', answer: 'عادة مرفق لاعب الجولف من الإفراط أو الأسلوب السيء. قلل الحجم، سخّن جيداً، وجرب قبضة محايدة (الكفين يواجهان بعضهما). تجنب القفل الكامل في الأسفل.' },
+      { question: 'هل الكيبينج سيء لك؟', answer: 'الكيبينج يستخدم الزخم وهو تمرين مختلف (كروسفت). لبناء العضلات، سحب العقلة الصارم أفضل. الكيبينج يمكن أن يجهد الكتفين إذا أُدي خطأ.' },
+      { question: 'كيف أتجنب مسامير اللحم والبثور؟', answer: 'امسك بالأصابع عند القاعدة (ليس منتصف الكف). استخدم الطباشير لتقليل الاحتكاك. ابرد مسامير اللحم بانتظام قبل أن تتمزق.' }
     ],
   },
-  'shoulders-overhead-press': {
+  // Standing Overhead Press
+  'BB013': {
     descriptionEn: 'The overhead press is the ultimate shoulder builder. It develops all three heads of the deltoids while also strengthening the triceps and core. It is a true test of upper body pressing strength.',
     descriptionAr: 'الضغط العلوي هو بناء الكتف المثالي. يطور رؤوس الدالتويد الثلاثة بينما يقوي أيضاً الترايسبس والجذع. هو اختبار حقيقي لقوة الضغط للجزء العلوي.',
     instructionsEn: [
@@ -191,21 +196,22 @@ const exerciseContent: Record<string, {
     tipsEn: ['Keep core tight throughout', 'Do not lean back excessively', 'Push head through at top', 'Squeeze glutes for stability'],
     tipsAr: ['أبقِ الجذع مشدوداً طوال التمرين', 'لا تميل للخلف بشكل مفرط', 'ادفع رأسك للأمام في القمة', 'اضغط المؤخرة للثبات'],
     faqsEn: [
-      { question: 'Standing or seated overhead press?', answer: 'Standing requires more core stability and is more functional. Seated isolates shoulders more but limits weight due to less leg drive.' },
-      { question: 'Why is my overhead press so weak?', answer: 'Overhead pressing uses smaller muscles than bench press. It is normal for it to be about 60-70% of your bench press.' },
-      { question: 'Is overhead press bad for shoulders?', answer: 'No, when done correctly it actually strengthens the shoulder joint. Avoid extreme flaring of elbows and maintain proper form.' },
-      { question: 'Should I use a barbell or dumbbells?', answer: 'Barbell allows more weight. Dumbbells require more stabilization and can help fix imbalances. Use both for complete development.' },
-      { question: 'How do I avoid lower back pain?', answer: 'Keep your core braced, squeeze your glutes, and avoid excessive backward lean. Do not use momentum or heaving.' }
+      { question: 'I get shoulder pain when pressing overhead. What is wrong?', answer: 'Usually poor mobility or impingement. Keep elbows slightly in front, not flared. Try warming up with band pull-aparts. See a physio if pain persists.' },
+      { question: 'My lower back hurts after overhead press. Why?', answer: 'You are leaning back too much to compensate for weak shoulders. Squeeze glutes hard, brace core, and use less weight with strict form.' },
+      { question: 'How do I avoid hitting my chin with the bar?', answer: 'Move your head back slightly as the bar goes up, then push your head through once the bar passes your forehead. The bar should travel in a straight line.' },
+      { question: 'One arm is weaker than the other. How do I fix this?', answer: 'Do extra sets of single-arm dumbbell press on the weak side. Let the weak side dictate the weight. The imbalance will correct over time.' },
+      { question: 'Is behind-the-neck press safe?', answer: 'Not recommended for most people - it puts the shoulder in a vulnerable position. Stick to pressing in front of your head.' }
     ],
     faqsAr: [
-      { question: 'ضغط علوي واقف أم جالس؟', answer: 'الواقف يتطلب ثبات جذع أكثر وأكثر وظيفية. الجالس يعزل الكتفين أكثر لكن يحد الوزن بسبب قلة دفع الساقين.' },
-      { question: 'لماذا الضغط العلوي ضعيف جداً؟', answer: 'الضغط العلوي يستخدم عضلات أصغر من ضغط البنش. من الطبيعي أن يكون حوالي 60-70% من ضغط البنش.' },
-      { question: 'هل الضغط العلوي سيء للكتفين؟', answer: 'لا، عند أدائه بشكل صحيح يقوي مفصل الكتف فعلياً. تجنب فتح المرفقين المفرط وحافظ على الأسلوب الصحيح.' },
-      { question: 'هل أستخدم بار أم دمبلز؟', answer: 'البار يسمح بوزن أكثر. الدمبلز تتطلب تثبيتاً أكثر ويمكن أن تساعد في إصلاح الاختلالات. استخدم كلاهما لتطوير كامل.' },
-      { question: 'كيف أتجنب آلام أسفل الظهر؟', answer: 'أبقِ جذعك مشدوداً، اضغط مؤخرتك، وتجنب الميل للخلف المفرط. لا تستخدم الزخم أو الرفع بقوة.' }
+      { question: 'أحصل على ألم كتف عند الضغط العلوي. ما الخطأ؟', answer: 'عادة مرونة سيئة أو انحشار. أبقِ المرفقين للأمام قليلاً، ليس منفتحين. جرب التسخين بسحب المطاط. راجع أخصائي علاج طبيعي إذا استمر الألم.' },
+      { question: 'أسفل ظهري يؤلم بعد الضغط العلوي. لماذا؟', answer: 'أنت تميل للخلف كثيراً للتعويض عن كتفين ضعيفين. اضغط المؤخرة بقوة، شد الجذع، واستخدم وزناً أقل بأسلوب صارم.' },
+      { question: 'كيف أتجنب ضرب ذقني بالبار؟', answer: 'حرك رأسك للخلف قليلاً عندما يصعد البار، ثم ادفع رأسك للأمام بمجرد تجاوز البار لجبهتك. يجب أن يتحرك البار في خط مستقيم.' },
+      { question: 'ذراع أضعف من الأخرى. كيف أصلح هذا؟', answer: 'أدِّ مجموعات إضافية من ضغط الدمبل بذراع واحدة على الجانب الضعيف. دع الجانب الضعيف يحدد الوزن. الاختلال سيصحح مع الوقت.' },
+      { question: 'هل الضغط خلف الرقبة آمن؟', answer: 'غير موصى به لمعظم الناس - يضع الكتف في وضع ضعيف. التزم بالضغط أمام رأسك.' }
     ],
   },
-  'chest-pushup': {
+  // Standard Push-Up
+  'BW001': {
     descriptionEn: 'The push-up is the fundamental bodyweight chest exercise that builds chest, shoulder, and tricep strength. No equipment needed, can be done anywhere, and has countless variations for all fitness levels.',
     descriptionAr: 'تمرين الضغط هو تمرين الصدر الأساسي بوزن الجسم الذي يبني قوة الصدر والكتف والترايسبس. لا يحتاج معدات، يمكن عمله في أي مكان، وله تنويعات لا حصر لها لجميع مستويات اللياقة.',
     instructionsEn: [
@@ -229,21 +235,22 @@ const exerciseContent: Record<string, {
     tipsEn: ['Do not let hips sag or pike up', 'Keep neck neutral', 'Full range of motion', 'Progress to harder variations'],
     tipsAr: ['لا تدع الوركين يتدلى أو يرتفع', 'أبقِ الرقبة محايدة', 'نطاق حركة كامل', 'تقدم لتنويعات أصعب'],
     faqsEn: [
-      { question: 'How many push-ups should I do?', answer: 'Start with as many as you can with good form. Work up to 3 sets of 15-20. Then progress to harder variations.' },
-      { question: 'I cannot do a push-up. Where do I start?', answer: 'Start with incline push-ups (hands on a bench or wall), then progress to knee push-ups, then full push-ups.' },
-      { question: 'What muscles do push-ups work?', answer: 'Primarily chest, front shoulders, and triceps. Also works core for stabilization.' },
-      { question: 'How do I make push-ups harder?', answer: 'Try decline push-ups, diamond push-ups, archer push-ups, one-arm push-ups, or add a weight vest.' },
-      { question: 'Is it bad to do push-ups every day?', answer: 'It is okay if you are not going to failure. For muscle growth, allow 48 hours recovery between intense sessions.' }
+      { question: 'My wrists hurt during push-ups. What should I do?', answer: 'Use push-up handles or make fists on the floor. Stretch wrists before and after. If pain continues, try incline push-ups to reduce wrist angle.' },
+      { question: 'My shoulders pop or click during push-ups. Is this bad?', answer: 'Clicking without pain is often okay. But if there is pain, narrow your hand position, keep elbows closer to body (45 degrees), and strengthen rotator cuff.' },
+      { question: 'Why does my lower back hurt during push-ups?', answer: 'Your core is weak or you are not engaging it. Squeeze glutes, tighten abs, and do not let hips sag. Practice planks to build core strength.' },
+      { question: 'I feel it more in my arms than my chest. Why?', answer: 'Your hands are probably too narrow. Widen your grip. Also focus on squeezing your chest as you push up, not just straightening arms.' },
+      { question: 'How do I avoid neck strain?', answer: 'Keep your head in line with your spine - do not look up or tuck chin. Pick a spot on the floor about a foot ahead of your hands and look at it.' }
     ],
     faqsAr: [
-      { question: 'كم عدد تمارين الضغط التي يجب أن أفعلها؟', answer: 'ابدأ بأكبر عدد يمكنك بأسلوب جيد. اعمل للوصول إلى 3 مجموعات من 15-20. ثم تقدم لتنويعات أصعب.' },
-      { question: 'لا أستطيع عمل ضغطة. من أين أبدأ؟', answer: 'ابدأ بالضغط المائل (اليدين على بنش أو حائط)، ثم تقدم لضغط الركبة، ثم الضغط الكامل.' },
-      { question: 'ما العضلات التي يعملها الضغط؟', answer: 'أساساً الصدر والكتف الأمامي والترايسبس. يعمل أيضاً الجذع للتثبيت.' },
-      { question: 'كيف أجعل الضغط أصعب؟', answer: 'جرب ضغط منحدر، ضغط الماسة، ضغط الرامي، ضغط ذراع واحدة، أو أضف سترة ثقيلة.' },
-      { question: 'هل من السيء عمل ضغط كل يوم؟', answer: 'مقبول إذا لم تصل للفشل. لنمو العضلات، اسمح بـ 48 ساعة تعافي بين الجلسات المكثفة.' }
+      { question: 'معصمي يؤلمني أثناء الضغط. ماذا أفعل؟', answer: 'استخدم مقابض الضغط أو اصنع قبضات على الأرض. مدد المعصمين قبل وبعد. إذا استمر الألم، جرب الضغط المائل لتقليل زاوية المعصم.' },
+      { question: 'كتفي يطقطق أثناء الضغط. هل هذا سيء؟', answer: 'الطقطقة بدون ألم غالباً مقبولة. لكن إذا كان هناك ألم، ضيّق وضع يديك، أبقِ المرفقين أقرب للجسم (45 درجة)، وقوِّ الكفة المدورة.' },
+      { question: 'لماذا يؤلمني أسفل ظهري أثناء الضغط؟', answer: 'جذعك ضعيف أو أنت لا تشغله. اضغط المؤخرة، شد البطن، ولا تدع الوركين يتدلى. مارس البلانك لبناء قوة الجذع.' },
+      { question: 'أشعر به في ذراعي أكثر من صدري. لماذا؟', answer: 'يداك ربما ضيقتان جداً. وسّع قبضتك. أيضاً ركز على ضغط صدرك أثناء الدفع، ليس فقط فرد الذراعين.' },
+      { question: 'كيف أتجنب إجهاد الرقبة؟', answer: 'أبقِ رأسك في خط مع عمودك الفقري - لا تنظر للأعلى أو تثني ذقنك. اختر نقطة على الأرض على بعد قدم أمام يديك وانظر إليها.' }
     ],
   },
-  'core-plank': {
+  // Plank
+  'BW039': {
     descriptionEn: 'The plank is the foundational core exercise that builds total core stability, endurance, and strength. It works the entire core including abs, obliques, and lower back.',
     descriptionAr: 'البلانك هو تمرين الجذع الأساسي الذي يبني ثبات وتحمل وقوة الجذع الكلي. يعمل على الجذع بالكامل شاملاً البطن والأوبليك وأسفل الظهر.',
     instructionsEn: [
