@@ -2869,14 +2869,17 @@ export const scheduledCallsApi = {
   update: (id: string, data: UpdateScheduledCallData) =>
     api.patch<ScheduledCall>(`/scheduled-calls/${id}`, data),
 
-  cancel: (id: string) =>
-    api.delete<ScheduledCall>(`/scheduled-calls/${id}`),
+  cancel: (id: string, reason?: string) =>
+    api.delete<ScheduledCall>(`/scheduled-calls/${id}`, reason ? { reason } : undefined),
 
   start: (id: string) =>
     api.post<ScheduledCall>(`/scheduled-calls/${id}/start`),
 
   end: (id: string, notes?: string) =>
     api.post<ScheduledCall>(`/scheduled-calls/${id}/end`, { notes }),
+
+  confirm: (id: string, meetingUrl?: string) =>
+    api.post<ScheduledCall>(`/scheduled-calls/${id}/confirm`, { meetingUrl }),
 
   getById: (id: string) =>
     api.get<ScheduledCall>(`/scheduled-calls/${id}`),
@@ -2891,7 +2894,35 @@ export const scheduledCallsApi = {
   // Client endpoints
   getClientCalls: (params?: { upcoming?: boolean }) =>
     api.get<ScheduledCall[]>('/scheduled-calls/client/all', params as Record<string, string>),
+
+  // Availability endpoints
+  getMyAvailability: () =>
+    api.get<AvailabilitySlot[]>('/scheduled-calls/availability/me'),
+
+  getTrainerAvailability: (trainerId: string) =>
+    api.get<AvailabilitySlot[]>(`/scheduled-calls/availability/${trainerId}`),
+
+  setAvailability: (slots: AvailabilitySlot[]) =>
+    api.post<AvailabilitySlot[]>('/scheduled-calls/availability', { slots }),
+
+  getAvailableSlots: (trainerId: string, date: string) =>
+    api.get<{ date: string; slots: { time: string; available: boolean }[] }>(
+      `/scheduled-calls/slots/${trainerId}`,
+      { date }
+    ),
+
+  // Client booking
+  requestCall: (data: { trainerId: string; scheduledAt: string; type?: string; agenda?: string }) =>
+    api.post<ScheduledCall>('/scheduled-calls/request', data),
 };
+
+interface AvailabilitySlot {
+  id?: string;
+  dayOfWeek: number;
+  startTime: string;
+  endTime: string;
+  slotMinutes: number;
+}
 
 export type {
   User,

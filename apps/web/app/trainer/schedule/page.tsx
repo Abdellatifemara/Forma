@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Calendar,
   ChevronLeft,
@@ -10,6 +10,10 @@ import {
   Video,
   MessageSquare,
   FileText,
+  Save,
+  Loader2,
+  Trash2,
+  Settings,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -21,90 +25,217 @@ import {
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { useToast } from '@/hooks/use-toast';
+import { getAuthCookie } from '@/lib/api';
 
-const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-const hours = Array.from({ length: 12 }, (_, i) => i + 8); // 8 AM to 7 PM
-
-const sessions = [
-  {
-    id: '1',
-    client: 'Mohamed Ali',
-    type: 'video',
-    time: '10:00 AM',
-    duration: '45 min',
-    day: 1, // Monday
-    hour: 10,
-    status: 'confirmed',
-  },
-  {
-    id: '2',
-    client: 'Sara Ahmed',
-    type: 'check-in',
-    time: '2:00 PM',
-    duration: '30 min',
-    day: 1, // Monday
-    hour: 14,
-    status: 'confirmed',
-  },
-  {
-    id: '3',
-    client: 'Youssef Hassan',
-    type: 'form-review',
-    time: '4:30 PM',
-    duration: '15 min',
-    day: 2, // Tuesday
-    hour: 16,
-    status: 'pending',
-  },
-  {
-    id: '4',
-    client: 'Nour Ibrahim',
-    type: 'video',
-    time: '11:00 AM',
-    duration: '60 min',
-    day: 3, // Wednesday
-    hour: 11,
-    status: 'confirmed',
-  },
+const DAYS = [
+  { value: 0, label: 'Sunday', short: 'Sun' },
+  { value: 1, label: 'Monday', short: 'Mon' },
+  { value: 2, label: 'Tuesday', short: 'Tue' },
+  { value: 3, label: 'Wednesday', short: 'Wed' },
+  { value: 4, label: 'Thursday', short: 'Thu' },
+  { value: 5, label: 'Friday', short: 'Fri' },
+  { value: 6, label: 'Saturday', short: 'Sat' },
 ];
 
-const upcomingToday = [
-  {
-    client: 'Mohamed Ali',
-    time: '10:00 AM',
-    type: 'Video Call',
-    avatar: 'MA',
-  },
-  {
-    client: 'Sara Ahmed',
-    time: '2:00 PM',
-    type: 'Weekly Check-in',
-    avatar: 'SA',
-  },
-  {
-    client: 'Ahmed Hassan',
-    time: '4:30 PM',
-    type: 'Form Review',
-    avatar: 'AH',
-  },
-];
+const TIMES = Array.from({ length: 48 }, (_, i) => {
+  const hour = Math.floor(i / 2);
+  const minute = (i % 2) * 30;
+  return `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+});
+
+interface AvailabilitySlot {
+  id?: string;
+  dayOfWeek: number;
+  startTime: string;
+  endTime: string;
+  slotMinutes: number;
+}
+
+interface ScheduledCall {
+  id: string;
+  scheduledAt: string;
+  duration: number;
+  type: string;
+  status: string;
+  client: {
+    id: string;
+    name: string;
+    avatarUrl?: string;
+  };
+  trainer: {
+    id: string;
+    name: string;
+    avatarUrl?: string;
+  };
+}
 
 export default function SchedulePage() {
+  const { toast } = useToast();
   const [currentWeek, setCurrentWeek] = useState(0);
   const [view, setView] = useState<'week' | 'day'>('week');
+  const [availabilityOpen, setAvailabilityOpen] = useState(false);
+  const [slots, setSlots] = useState<AvailabilitySlot[]>([]);
+  const [calls, setCalls] = useState<ScheduledCall[]>([]);
+  const [todaysCalls, setTodaysCalls] = useState<ScheduledCall[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const token = getAuthCookie();
+      const headers = { Authorization: `Bearer ${token}` };
+
+      // Fetch availability
+      const availRes = await fetch(`${API_URL}/scheduled-calls/availability/me`, { headers });
+      if (availRes.ok) {
+        const data = await availRes.json();
+        setSlots(data);
+      }
+
+      // Fetch calls
+      const callsRes = await fetch(`${API_URL}/scheduled-calls/trainer/all?upcoming=true`, { headers });
+      if (callsRes.ok) {
+        const data = await callsRes.json();
+        setCalls(data);
+      }
+
+      // Fetch today's calls
+      const todayRes = await fetch(`${API_URL}/scheduled-calls/trainer/today`, { headers });
+      if (todayRes.ok) {
+        const data = await todayRes.json();
+        setTodaysCalls(data);
+      }
+    } catch (error) {
+      console.error('Failed to fetch data:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const addSlot = () => {
+    setSlots([
+      ...slots,
+      { dayOfWeek: 1, startTime: '09:00', endTime: '17:00', slotMinutes: 30 },
+    ]);
+  };
+
+  const removeSlot = (index: number) => {
+    setSlots(slots.filter((_, i) => i !== index));
+  };
+
+  const updateSlot = (index: number, field: keyof AvailabilitySlot, value: string | number) => {
+    const newSlots = [...slots];
+    newSlots[index] = { ...newSlots[index], [field]: value };
+    setSlots(newSlots);
+  };
+
+  const saveAvailability = async () => {
+    setSaving(true);
+    try {
+      const token = getAuthCookie();
+      const res = await fetch(`${API_URL}/scheduled-calls/availability`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ slots }),
+      });
+
+      if (res.ok) {
+        toast({ title: 'Saved', description: 'Your availability has been updated.' });
+        setAvailabilityOpen(false);
+      } else {
+        throw new Error('Failed to save');
+      }
+    } catch (error) {
+      toast({ title: 'Error', description: 'Failed to save availability.', variant: 'destructive' });
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const confirmCall = async (callId: string) => {
+    try {
+      const token = getAuthCookie();
+      const res = await fetch(`${API_URL}/scheduled-calls/${callId}/confirm`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({}),
+      });
+
+      if (res.ok) {
+        toast({ title: 'Confirmed', description: 'Call has been confirmed.' });
+        fetchData();
+      }
+    } catch (error) {
+      toast({ title: 'Error', description: 'Failed to confirm call.', variant: 'destructive' });
+    }
+  };
 
   const getSessionIcon = (type: string) => {
     switch (type) {
+      case 'ONBOARDING':
       case 'video':
         return <Video className="h-3 w-3" />;
+      case 'WEEKLY_CHECKIN':
       case 'check-in':
         return <MessageSquare className="h-3 w-3" />;
+      case 'PROGRESS_REVIEW':
       case 'form-review':
         return <FileText className="h-3 w-3" />;
       default:
         return <Calendar className="h-3 w-3" />;
     }
   };
+
+  const getWeekDates = () => {
+    const today = new Date();
+    const startOfWeek = new Date(today);
+    startOfWeek.setDate(today.getDate() - today.getDay() + (currentWeek * 7));
+
+    return DAYS.map((_, i) => {
+      const date = new Date(startOfWeek);
+      date.setDate(startOfWeek.getDate() + i);
+      return date;
+    });
+  };
+
+  const weekDates = getWeekDates();
+  const hours = Array.from({ length: 12 }, (_, i) => i + 8);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center py-20">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
@@ -114,10 +245,123 @@ export default function SchedulePage() {
           <h1 className="text-3xl font-bold">Schedule</h1>
           <p className="text-muted-foreground">Manage your client sessions</p>
         </div>
-        <Button variant="forma">
-          <Plus className="mr-2 h-4 w-4" />
-          New Session
-        </Button>
+        <Dialog open={availabilityOpen} onOpenChange={setAvailabilityOpen}>
+          <DialogTrigger asChild>
+            <Button variant="outline">
+              <Settings className="mr-2 h-4 w-4" />
+              Set Availability
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle>Set Your Availability</DialogTitle>
+              <DialogDescription>
+                Define when clients can book video calls with you.
+              </DialogDescription>
+            </DialogHeader>
+
+            <div className="space-y-4 py-4">
+              {slots.length === 0 ? (
+                <div className="text-center py-8 text-muted-foreground">
+                  <Clock className="h-12 w-12 mx-auto mb-4 opacity-50" />
+                  <p>No availability set</p>
+                  <p className="text-sm">Add time slots to let clients book calls</p>
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  {slots.map((slot, index) => (
+                    <div key={index} className="flex items-center gap-2 p-3 rounded-lg border bg-muted/30">
+                      <Select
+                        value={slot.dayOfWeek.toString()}
+                        onValueChange={(v) => updateSlot(index, 'dayOfWeek', parseInt(v))}
+                      >
+                        <SelectTrigger className="w-[130px]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {DAYS.map((day) => (
+                            <SelectItem key={day.value} value={day.value.toString()}>
+                              {day.label}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+
+                      <Select
+                        value={slot.startTime}
+                        onValueChange={(v) => updateSlot(index, 'startTime', v)}
+                      >
+                        <SelectTrigger className="w-[90px]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {TIMES.map((time) => (
+                            <SelectItem key={time} value={time}>{time}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+
+                      <span className="text-muted-foreground text-sm">to</span>
+
+                      <Select
+                        value={slot.endTime}
+                        onValueChange={(v) => updateSlot(index, 'endTime', v)}
+                      >
+                        <SelectTrigger className="w-[90px]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {TIMES.map((time) => (
+                            <SelectItem key={time} value={time}>{time}</SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+
+                      <Select
+                        value={slot.slotMinutes.toString()}
+                        onValueChange={(v) => updateSlot(index, 'slotMinutes', parseInt(v))}
+                      >
+                        <SelectTrigger className="w-[100px]">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="15">15 min</SelectItem>
+                          <SelectItem value="30">30 min</SelectItem>
+                          <SelectItem value="45">45 min</SelectItem>
+                          <SelectItem value="60">60 min</SelectItem>
+                        </SelectContent>
+                      </Select>
+
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={() => removeSlot(index)}
+                        className="text-destructive hover:text-destructive"
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </Button>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <Button variant="outline" onClick={addSlot} className="w-full">
+                <Plus className="h-4 w-4 mr-2" />
+                Add Time Slot
+              </Button>
+
+              <div className="flex justify-end gap-2 pt-4 border-t">
+                <Button variant="outline" onClick={() => setAvailabilityOpen(false)}>
+                  Cancel
+                </Button>
+                <Button onClick={saveAvailability} disabled={saving}>
+                  {saving ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : <Save className="h-4 w-4 mr-2" />}
+                  Save Changes
+                </Button>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-4">
@@ -125,57 +369,38 @@ export default function SchedulePage() {
         <Card className="lg:col-span-3">
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <div className="flex items-center gap-4">
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setCurrentWeek(currentWeek - 1)}
-              >
+              <Button variant="ghost" size="icon" onClick={() => setCurrentWeek(currentWeek - 1)}>
                 <ChevronLeft className="h-4 w-4" />
               </Button>
-              <CardTitle>March 18 - 24, 2024</CardTitle>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setCurrentWeek(currentWeek + 1)}
-              >
+              <CardTitle>
+                {weekDates[0].toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - {weekDates[6].toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+              </CardTitle>
+              <Button variant="ghost" size="icon" onClick={() => setCurrentWeek(currentWeek + 1)}>
                 <ChevronRight className="h-4 w-4" />
               </Button>
             </div>
-            <div className="flex items-center gap-2">
-              <Button
-                variant={view === 'week' ? 'default' : 'ghost'}
-                size="sm"
-                onClick={() => setView('week')}
-              >
-                Week
-              </Button>
-              <Button
-                variant={view === 'day' ? 'default' : 'ghost'}
-                size="sm"
-                onClick={() => setView('day')}
-              >
-                Day
-              </Button>
-            </div>
+            <Button variant="ghost" size="sm" onClick={() => setCurrentWeek(0)}>
+              Today
+            </Button>
           </CardHeader>
           <CardContent>
-            {/* Week View */}
             <div className="overflow-x-auto">
               <div className="min-w-[800px]">
                 {/* Header */}
                 <div className="grid grid-cols-8 border-b">
                   <div className="p-2 text-sm font-medium text-muted-foreground" />
-                  {weekDays.map((day, index) => (
-                    <div
-                      key={day}
-                      className={`p-2 text-center ${
-                        index === 1 ? 'bg-forma-teal/5' : ''
-                      }`}
-                    >
-                      <p className="text-sm font-medium">{day}</p>
-                      <p className="text-lg font-bold">{18 + index}</p>
-                    </div>
-                  ))}
+                  {DAYS.map((day, index) => {
+                    const date = weekDates[index];
+                    const isToday = date.toDateString() === new Date().toDateString();
+                    return (
+                      <div key={day.value} className={`p-2 text-center ${isToday ? 'bg-forma-teal/10' : ''}`}>
+                        <p className="text-sm font-medium">{day.short}</p>
+                        <p className={`text-lg font-bold ${isToday ? 'text-forma-teal' : ''}`}>
+                          {date.getDate()}
+                        </p>
+                      </div>
+                    );
+                  })}
                 </div>
 
                 {/* Time slots */}
@@ -183,37 +408,48 @@ export default function SchedulePage() {
                   {hours.map((hour) => (
                     <div key={hour} className="grid grid-cols-8 border-b">
                       <div className="p-2 text-right text-sm text-muted-foreground">
-                        {hour > 12 ? `${hour - 12} PM` : `${hour} AM`}
+                        {hour > 12 ? `${hour - 12} PM` : hour === 12 ? '12 PM' : `${hour} AM`}
                       </div>
-                      {weekDays.map((_, dayIndex) => (
-                        <div
-                          key={dayIndex}
-                          className={`relative h-16 border-l ${
-                            dayIndex === 1 ? 'bg-forma-teal/5' : ''
-                          }`}
-                        >
-                          {sessions
-                            .filter((s) => s.day === dayIndex && s.hour === hour)
-                            .map((session) => (
+                      {DAYS.map((_, dayIndex) => {
+                        const date = weekDates[dayIndex];
+                        const isToday = date.toDateString() === new Date().toDateString();
+
+                        // Find calls for this day and hour
+                        const dayCalls = calls.filter((call) => {
+                          const callDate = new Date(call.scheduledAt);
+                          return (
+                            callDate.toDateString() === date.toDateString() &&
+                            callDate.getHours() === hour
+                          );
+                        });
+
+                        return (
+                          <div
+                            key={dayIndex}
+                            className={`relative h-16 border-l ${isToday ? 'bg-forma-teal/5' : ''}`}
+                          >
+                            {dayCalls.map((call) => (
                               <div
-                                key={session.id}
-                                className={`absolute inset-x-1 top-1 rounded-md p-1 text-xs ${
-                                  session.status === 'confirmed'
+                                key={call.id}
+                                className={`absolute inset-x-1 top-1 rounded-md p-1 text-xs cursor-pointer ${
+                                  call.status === 'CONFIRMED'
                                     ? 'bg-forma-teal/20 text-forma-teal'
-                                    : 'bg-yellow-500/20 text-yellow-500'
+                                    : call.status === 'SCHEDULED'
+                                    ? 'bg-yellow-500/20 text-yellow-600'
+                                    : 'bg-muted'
                                 }`}
+                                onClick={() => call.status === 'SCHEDULED' && confirmCall(call.id)}
                               >
                                 <div className="flex items-center gap-1">
-                                  {getSessionIcon(session.type)}
-                                  <span className="truncate font-medium">
-                                    {session.client}
-                                  </span>
+                                  {getSessionIcon(call.type)}
+                                  <span className="truncate font-medium">{call.client.name}</span>
                                 </div>
-                                <span>{session.time}</span>
+                                <span>{new Date(call.scheduledAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
                               </div>
                             ))}
-                        </div>
-                      ))}
+                          </div>
+                        );
+                      })}
                     </div>
                   ))}
                 </div>
@@ -228,73 +464,83 @@ export default function SchedulePage() {
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="text-base font-semibold">Today</CardTitle>
-              <CardDescription>Monday, March 18</CardDescription>
+              <CardDescription>{new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="space-y-3">
-                {upcomingToday.map((session, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-3 rounded-lg border p-3"
-                  >
-                    <Avatar className="h-8 w-8">
-                      <AvatarFallback>{session.avatar}</AvatarFallback>
-                    </Avatar>
-                    <div className="flex-1">
-                      <p className="text-sm font-medium">{session.client}</p>
-                      <p className="text-xs text-muted-foreground">{session.type}</p>
+              {todaysCalls.length === 0 ? (
+                <p className="text-sm text-muted-foreground text-center py-4">No calls scheduled today</p>
+              ) : (
+                <div className="space-y-3">
+                  {todaysCalls.map((call) => (
+                    <div key={call.id} className="flex items-center gap-3 rounded-lg border p-3">
+                      <Avatar className="h-8 w-8">
+                        <AvatarImage src={call.client.avatarUrl} />
+                        <AvatarFallback>{call.client.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
+                      </Avatar>
+                      <div className="flex-1">
+                        <p className="text-sm font-medium">{call.client.name}</p>
+                        <p className="text-xs text-muted-foreground">{call.type.replace('_', ' ')}</p>
+                      </div>
+                      <Badge variant={call.status === 'CONFIRMED' ? 'default' : 'outline'}>
+                        {new Date(call.scheduledAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                      </Badge>
                     </div>
-                    <Badge variant="outline">{session.time}</Badge>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </CardContent>
           </Card>
 
-          {/* Availability */}
+          {/* Availability Summary */}
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-base font-semibold">Availability</CardTitle>
+              <CardTitle className="text-base font-semibold">Your Availability</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-2 text-sm">
-                <div className="flex items-center justify-between">
-                  <span>Mon - Fri</span>
-                  <span className="text-muted-foreground">9 AM - 6 PM</span>
+              {slots.length === 0 ? (
+                <p className="text-sm text-muted-foreground">No availability set</p>
+              ) : (
+                <div className="space-y-1 text-sm">
+                  {DAYS.map((day) => {
+                    const daySlots = slots.filter((s) => s.dayOfWeek === day.value);
+                    return (
+                      <div key={day.value} className="flex items-center justify-between">
+                        <span>{day.short}</span>
+                        <span className="text-muted-foreground">
+                          {daySlots.length > 0
+                            ? daySlots.map((s) => `${s.startTime}-${s.endTime}`).join(', ')
+                            : 'Off'}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
-                <div className="flex items-center justify-between">
-                  <span>Saturday</span>
-                  <span className="text-muted-foreground">10 AM - 2 PM</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span>Sunday</span>
-                  <span className="text-muted-foreground">Closed</span>
-                </div>
-              </div>
-              <Button variant="outline" className="mt-4 w-full" size="sm">
+              )}
+              <Button
+                variant="outline"
+                className="mt-4 w-full"
+                size="sm"
+                onClick={() => setAvailabilityOpen(true)}
+              >
                 Edit Availability
               </Button>
             </CardContent>
           </Card>
 
-          {/* Session Types */}
+          {/* Legend */}
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-base font-semibold">Session Types</CardTitle>
+              <CardTitle className="text-base font-semibold">Status</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full bg-forma-teal" />
-                  <span className="text-sm">Video Call</span>
+                  <span className="text-sm">Confirmed</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-blue-500" />
-                  <span className="text-sm">Check-in</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-orange-500" />
-                  <span className="text-sm">Form Review</span>
+                  <div className="h-3 w-3 rounded-full bg-yellow-500" />
+                  <span className="text-sm">Pending (click to confirm)</span>
                 </div>
               </div>
             </CardContent>
