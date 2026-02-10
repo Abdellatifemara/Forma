@@ -1,0 +1,196 @@
+# -*- coding: utf-8 -*-
+"""
+FORMA FITNESS - COMBAT SPORTS WITH EGYPTIAN MINDSET
+====================================================
+- Egyptian Arabic dialect (العامية المصرية)
+- Assertive, motivating Egyptian style
+- Amateur mode (home, no gear)
+- Advanced mode (gym, equipment)
+- Kickboxing extensive
+- Equipment adaptation
+"""
+
+import json
+import os
+
+# =============================================================================
+# EGYPTIAN MINDSET RESPONSES - ASSERTIVE & MOTIVATING
+# =============================================================================
+
+EGYPTIAN_MINDSET = [
+    # Motivational - Egyptian style
+    {
+        "instruction": "مش قادر اكمل التمرين",
+        "output": "يا باشا اسمعني كويس! 💪\n\nمفيش حاجة اسمها \"مش قادر\" - فيه \"مش عايز\"!\n\nانت أقوى مما تفتكر. كل واحد فينا جواه أسد، بس محتاج يصحيه.\n\n**خد نفس عميق وقولي:**\n- كام ريب فاضلك؟\n- إيه اللي واقفك بالظبط؟\n\nلو تعبان جسدياً - خد راحة دقيقة وكمل.\nلو تعبان نفسياً - فكر ليه بدأت من الأول.\n\n**انت مبدأتش عشان تبطل في النص!**\n\nيلا قوم كمل، وبعد ما تخلص هتشكرني. 🔥",
+        "category": "motivation_egyptian"
+    },
+    {
+        "instruction": "I want to quit",
+        "output": "**Listen here, champion!** 💪\n\nQuitting is easy. Anyone can quit. But you're not anyone - you're here because you want MORE.\n\n**Remember:**\n- The pain you feel today = the strength you feel tomorrow\n- Every champion was once a beginner who refused to give up\n- Your body can handle almost anything - it's your mind you have to convince\n\n**What's really stopping you?**\n- Tired? Rest 2 minutes, then continue\n- Bored? Switch exercises\n- Unmotivated? Remember your WHY\n\n**The workout that almost beat you is the one that makes you stronger.**\n\nNow get back to it! You'll thank yourself later. 🔥",
+        "category": "motivation_english"
+    },
+    {
+        "instruction": "ana 3ayez aba6al",
+        "output": "Ya basha esma3ni! 💪\n\nMafeesh 7aga esmaha \"aba6al\" - da elly fara2 bein elly bey7a2a2 a7lamo wel elly fadel toul 3omro yet7asar!\n\n**Faker:**\n- El wa2t elly hatdaya3o law ba6alt = nadm\n- Kol champion kan mara beginner zayak\n- Gesmak ye2dar 3ala ay 7aga - 3a2lak howa elly me7tag te2ne3o\n\n**El tamrin elly kan hay8lebak - howa elly bey2awik!**\n\nYalla 2oum kamel, w ba3d ma te5alas hate7medni! 🔥",
+        "category": "motivation_franco"
+    },
+
+    # Assertive coaching style
+    {
+        "instruction": "مش عارف ابدأ منين",
+        "output": "تمام، هقولك بالظبط تعمل إيه! 👊\n\n**النهاردة - أول يوم ليك:**\n\n1. **قوم دلوقتي** - مش بكرة، مش بعدين - دلوقتي\n2. **اعمل الآتي:**\n   - 10 بوش أبس (أو من على الركبة لو مش قادر)\n   - 10 سكوات\n   - 30 ثانية بلانك\n   - كرر 3 مرات\n\n3. **خلصت؟** مبروك - ده أول تمرين ليك!\n\n**من بكرة:**\n- اتمرن يوم أيوه يوم لأ\n- زود عدة كل مرة\n- بعد أسبوعين كلمني نزود التمارين\n\n**مفيش تفكير زيادة!** الخطة قدامك. نفذ وبس.\n\nيلا ابدأ! 💪",
+        "category": "coaching_egyptian"
+    },
+
+    # Direct answers - Egyptian style
+    {
+        "instruction": "هو البروتين بودر ضروري؟",
+        "output": "**الإجابة المختصرة: لأ مش ضروري!** 🎯\n\nالبروتين بودر مكمل - يعني بيكمل اللي ناقص من أكلك.\n\n**محتاجه لو:**\n- مش بتاكل بروتين كفاية من الأكل\n- مشغول ومحتاج حاجة سريعة\n- ميزانيتك تسمح\n\n**مش محتاجه لو:**\n- بتاكل فراخ/لحمة/سمك/بيض كل يوم\n- ميزانيتك ضيقة (الأكل أرخص)\n\n**الحساب:**\n- وزنك × 1.6 = جرامات البروتين اللي محتاجها\n- مثال: 80 كيلو × 1.6 = 128 جرام يومياً\n\n**بلاش تصدق الدعاية!** الأكل الطبيعي أحسن وأرخص.\n\nبتاكل بروتين كام جرام تقريباً؟",
+        "category": "nutrition_egyptian"
+    },
+]
+
+# =============================================================================
+# EQUIPMENT ADAPTATION
+# =============================================================================
+
+EQUIPMENT_ADAPTATION = [
+    # Boxing - No equipment
+    {
+        "instruction": "عايز اتعلم ملاكمة بس مفيش عندي حاجة",
+        "output": "**تمام! هنبدأ ملاكمة من غير أي معدات!** 🥊\n\n**اللي محتاجه: جسمك بس!**\n\n**تمرين النهاردة (شادو بوكسينج):**\n\n**الإحماء (5 دقايق):**\n- جري في المكان: دقيقتين\n- دوائر للدراعات: دقيقة\n- سكوات خفيف: دقيقة\n- جمبنج جاكس: دقيقة\n\n**اتعلم الوقفة:**\n- رجلك الشمال قدام (لو يمين)\n- الرجلين على مسافة الكتف\n- الأيدين فوق يحموا وشك\n- الدقن لتحت\n\n**اللكمات (قدام المراية):**\n- **جاب:** 50 مرة (يد قدام)\n- **كروس:** 50 مرة (يد ورا)\n- **1-2 كومبو:** 50 مرة\n\n**الراوندات (3 دقايق لكل راوند):**\n- راوند 1: جاب بس\n- راوند 2: كروس بس\n- راوند 3: 1-2 كومبو\n- راوند 4: حر\n\n**راحة دقيقة بين كل راوند**\n\nده كفاية تبدأ بيه! لما تتقن ده، هنزود الهوك والأبركت. 💪",
+        "category": "boxing_no_equipment_ar"
+    },
+    {
+        "instruction": "I want to learn boxing but I have no equipment",
+        "output": "**Perfect! Let's start boxing with ZERO equipment!** 🥊\n\n**What you need: Just your body!**\n\n**Today's workout (Shadowboxing):**\n\n**Warm-up (5 min):**\n- Jog in place: 2 min\n- Arm circles: 1 min\n- Light squats: 1 min\n- Jumping jacks: 1 min\n\n**Learn the stance:**\n- Left foot forward (if right-handed)\n- Feet shoulder-width apart\n- Hands up protecting face\n- Chin tucked down\n\n**Punches (in front of mirror):**\n- **Jab:** 50 reps (lead hand)\n- **Cross:** 50 reps (rear hand)\n- **1-2 combo:** 50 reps\n\n**Rounds (3 min each):**\n- Round 1: Jabs only\n- Round 2: Cross only\n- Round 3: 1-2 combos\n- Round 4: Freestyle\n\n**1 minute rest between rounds**\n\n**No bag? No problem:**\n- Shadowbox is how pros train\n- Focus on form, not power\n- Visualize opponent in front of you\n\nMaster this first, then we add hooks and uppercuts! 💪",
+        "category": "boxing_no_equipment"
+    },
+
+    # Boxing - With equipment
+    {
+        "instruction": "عندي شنطة ملاكمة وجوانتي، اتمرن ازاي؟",
+        "output": "**تمام يا بطل! عندك اللي محتاجه!** 🥊\n\n**مهم: لف ايدك الأول! (Hand wraps)**\n\n**تمرين الشنطة (Heavy Bag Workout):**\n\n**الإحماء (10 دقايق):**\n- حبل أو جري: 3 دقايق\n- شادو بوكسينج: 3 دقايق\n- استرتش ديناميك: 4 دقايق\n\n**راوندات الشنطة (3 دقايق + 1 راحة):**\n\n**راوند 1:** جاب بس - ركز على السرعة\n**راوند 2:** كروس بس - ركز على القوة\n**راوند 3:** 1-2 (جاب-كروس)\n**راوند 4:** هوكات\n**راوند 5:** أبركت\n**راوند 6:** كل الكومبوهات حر\n\n**راوندات القوة:**\n- 10 ثواني لكمات بأقصى سرعة\n- 20 ثواني راحة\n- كرر 10 مرات\n\n**الختام:**\n- 50 بوش أب\n- 50 سكوات\n- بلانك دقيقة\n- استرتش 5 دقايق\n\n**نصايح للشنطة:**\n- اضرب بأول اتنين مفاصل\n- ارجع ايدك بسرعة\n- متسندش على الشنطة\n- اتحرك حواليها\n\nده تمرين كامل! اعمله 3-4 مرات في الأسبوع. 🔥",
+        "category": "boxing_with_equipment_ar"
+    },
+
+    # Muay Thai - No equipment
+    {
+        "instruction": "عايز اتمرن مواي تاي في البيت من غير معدات",
+        "output": "**يلا نبدأ مواي تاي في البيت!** 🦵\n\n**تمرين بدون أي معدات:**\n\n**الإحماء (10 دقايق):**\n- جري في المكان: 3 دقايق\n- High knees: دقيقتين\n- دوائر للورك: دقيقة لكل جانب\n- استرتش ديناميك: 3 دقايق\n\n**تعلم الأساسيات:**\n\n**1. اللكمات (شادو):**\n- جاب-كروس: 50 مرة\n- جاب-كروس-هوك: 30 مرة\n\n**2. الركلات (في الهوا):**\n- تييب (ركلة دفع): 20 لكل رجل\n- راوند هاوس (ركلة دائرية): 20 لكل رجل\n- لو كيك (ركلة واطية): 20 لكل رجل\n\n**3. الركب (شادو):**\n- ركبة مستقيمة: 20 لكل رجل\n- امسك كرسي للتوازن لو محتاج\n\n**4. الأكواع (شادو - بدون ضرب حاجة):**\n- كوع أفقي: 10 لكل جانب\n- كوع طالع: 10 لكل جانب\n\n**الراوندات (3 دقايق):**\n- راوند 1: لكمات بس\n- راوند 2: ركلات بس\n- راوند 3: ركب بس\n- راوند 4: كل حاجة\n\n**كوندشننج:**\n- سكوات جمب: 3x15\n- بيربيز: 3x10\n- ماونتن كلايمرز: 3x20\n\n**المرونة ضرورية للمواي تاي!** اعمل استرتش كل يوم. 🔥",
+        "category": "muaythai_no_equipment_ar"
+    },
+
+    # BJJ - No mat
+    {
+        "instruction": "عايز اتعلم جوجيتسو بس مفيش عندي مكان",
+        "output": "**الجوجيتسو محتاج بارتنر ومات، بس فيه حاجات تعملها لوحدك!** 🥋\n\n**اللي تقدر تعمله في البيت:**\n\n**1. Solo Drills (على سجادة أو فرشة):**\n\n**الشريمب (Hip Escape):**\n- نام على ضهرك\n- ادفع برجلك وحرك وسطك لجنب\n- 20 لكل جانب\n- أهم حركة في الجوجيتسو!\n\n**البريدج:**\n- نام على ضهرك\n- ارفع وسطك لفوق\n- امسك 3 ثواني\n- 20 مرة\n\n**Technical Stand-up:**\n- من الأرض للوقوف بشكل صحيح\n- 10 لكل جانب\n\n**Sprawls:**\n- انزل بوسطك لتحت وارجع رجلك لورا\n- 20 مرة\n\n**2. Conditioning للجوجيتسو:**\n- بول أبس: قوة السحب\n- بوش أبس: قوة الدفع\n- سكوات: قوة الرجل\n- بلانك: الكور\n- Dead hangs: قوة القبضة\n\n**3. المرونة (مهمة جداً):**\n- استرتش الورك: 5 دقايق\n- Pigeon pose: دقيقتين لكل جانب\n- استرتش الكتف: 3 دقايق\n\n**الحقيقة؟**\nالجوجيتسو لازم تتعلمه في أكاديمية مع مدرب وناس تتمرن معاهم. الدريلز دي تحضير بس.\n\n**دور على أكاديمية جوجيتسو قريبة منك!** 💪",
+        "category": "bjj_home_ar"
+    },
+]
+
+# =============================================================================
+# KICKBOXING - EXTENSIVE
+# =============================================================================
+
+KICKBOXING = [
+    {
+        "instruction": "What is kickboxing?",
+        "output": "**Kickboxing - Complete Guide**\n\n**What is it?**\nCombination of boxing punches with kicks. Different styles exist:\n- American Kickboxing\n- Dutch Kickboxing\n- K-1 Rules\n- Glory Kickboxing\n\n**Difference from Muay Thai:**\n- No elbows (usually)\n- No knees to head (usually)\n- No clinch fighting\n- Focus on punches and kicks\n\n**Techniques:**\n\n**Punches (from boxing):**\n- Jab, Cross, Hook, Uppercut\n- All boxing combinations\n\n**Kicks:**\n- Front kick (teep)\n- Roundhouse kick\n- Side kick\n- Back kick\n- Hook kick\n- Spinning kicks\n\n**What makes kickboxing unique:**\n- Fast combinations\n- Boxing + kicks flow together\n- More movement than Muay Thai\n- Emphasis on angles\n\n**Who is it for?**\n- Great for fitness\n- Self-defense\n- Competition\n- Fun cardio workout\n\n**Starting kickboxing:**\n1. Learn boxing basics first\n2. Add front kick and roundhouse\n3. Combine punches with kicks\n4. Work on movement",
+        "category": "kickboxing_basics"
+    },
+    {
+        "instruction": "إيه هو الكيك بوكسينج؟",
+        "output": "**الكيك بوكسينج - دليل كامل** 🥊🦵\n\n**يعني إيه؟**\nجمع بين لكمات الملاكمة والركلات.\n\n**الفرق عن المواي تاي:**\n- مفيش أكواع (غالباً)\n- مفيش ركب على الوش (غالباً)\n- مفيش كلينش\n- تركيز على اللكمات والركلات\n\n**التقنيات:**\n\n**اللكمات (زي الملاكمة):**\n- جاب، كروس، هوك، أبركت\n- كل كومبوهات الملاكمة\n\n**الركلات:**\n- الركلة الأمامية (تييب)\n- الركلة الدائرية (راوند هاوس)\n- الركلة الجانبية (سايد كيك)\n- الركلة الخلفية (باك كيك)\n- ركلات لفة\n\n**اللي بيميز الكيك بوكسينج:**\n- كومبوهات سريعة\n- ملاكمة + ركلات مع بعض\n- حركة أكتر من المواي تاي\n- تركيز على الزوايا\n\n**لمين؟**\n- كويس للياقة\n- دفاع عن النفس\n- مسابقات\n- كارديو ممتع\n\n**عايز تبدأ؟**\n1. اتعلم أساسيات الملاكمة الأول\n2. ضيف الركلة الأمامية والدائرية\n3. اجمع اللكمات مع الركلات\n4. اشتغل على الحركة",
+        "category": "kickboxing_basics_ar"
+    },
+
+    # Kickboxing combinations
+    {
+        "instruction": "Kickboxing combinations",
+        "output": "**Kickboxing Combinations**\n\n**Basic Combos (Master These First):**\n\n**1. Jab - Cross - Low Kick**\n- Classic combo\n- Punches distract, kick damages\n- Do 50 times each side\n\n**2. Jab - Cross - Body Kick**\n- Higher target\n- More damage potential\n- Requires flexibility\n\n**3. Jab - Low Kick - Cross**\n- Kick in the middle\n- Unexpected timing\n\n**4. Low Kick - Cross - Hook**\n- Start with kick\n- Close distance\n- Finish with hook\n\n**Intermediate Combos:**\n\n**5. Jab - Cross - Hook - Low Kick**\n- 4-strike combo\n- Flowing attack\n\n**6. Teep - Cross - Hook - Roundhouse**\n- Push, punches, kick\n- Uses distance well\n\n**7. Cross - Hook - Cross - Body Kick**\n- Power punches into kick\n- Devastating if landed\n\n**Advanced:**\n\n**8. Jab - Spinning Back Kick**\n- Jab hides the spin\n- Powerful surprise\n\n**9. Switch Kick - Cross - Hook**\n- Switch stance, kick\n- Continue with hands\n\n**10. Question Mark Kick Combo**\n- Fake low, go high\n- Jab - Cross - Question mark kick\n\n**Drilling:**\n- Each combo 50 times slow\n- Each combo 50 times fast\n- Mix combos in sparring",
+        "category": "kickboxing_combos"
+    },
+    {
+        "instruction": "كومبوهات الكيك بوكسينج",
+        "output": "**كومبوهات الكيك بوكسينج** 🥊🦵\n\n**كومبوهات أساسية (اتقنها الأول):**\n\n**1. جاب - كروس - لو كيك**\n- أشهر كومبو\n- اللكمات تشتت، الركلة تأذي\n- اعملها 50 مرة لكل جانب\n\n**2. جاب - كروس - بودي كيك**\n- ركلة على الجسم\n- ضرر أكبر\n- محتاج مرونة\n\n**3. جاب - لو كيك - كروس**\n- الركلة في النص\n- توقيت مفاجئ\n\n**4. لو كيك - كروس - هوك**\n- ابدأ بالركلة\n- قرب المسافة\n- اختم بالهوك\n\n**كومبوهات متوسطة:**\n\n**5. جاب - كروس - هوك - لو كيك**\n- كومبو 4 ضربات\n- هجوم متدفق\n\n**6. تييب - كروس - هوك - راوند هاوس**\n- ادفع، اضرب، اركل\n- بيستخدم المسافة كويس\n\n**7. كروس - هوك - كروس - بودي كيك**\n- لكمات قوية في ركلة\n- مدمر لو وقع\n\n**متقدم:**\n\n**8. جاب - سبيننج باك كيك**\n- الجاب بيخبي اللفة\n- مفاجأة قوية\n\n**9. سويتش كيك - كروس - هوك**\n- غير الوقفة، اركل\n- كمل بالإيدين\n\n**التدريب:**\n- كل كومبو 50 مرة ببطء\n- كل كومبو 50 مرة بسرعة\n- امزج الكومبوهات في السبارينج",
+        "category": "kickboxing_combos_ar"
+    },
+
+    # Kickboxing workout
+    {
+        "instruction": "Kickboxing workout at home",
+        "output": "**Home Kickboxing Workout (No Equipment)**\n\n**Warm-up (8 min):**\n- Jumping jacks: 1 min\n- High knees: 1 min\n- Butt kicks: 1 min\n- Shadowbox light: 2 min\n- Leg swings: 1 min each leg\n- Hip circles: 1 min\n\n**TECHNIQUE ROUNDS (3 min each):**\n\n**Round 1: Punches Only**\n- Jab-Cross combos\n- Add hooks\n- Movement around room\n\n**Round 2: Kicks Only**\n- Front kicks (teep)\n- Roundhouse kicks\n- Alternate legs\n\n**Round 3: Low Kicks**\n- Low roundhouse left\n- Low roundhouse right\n- Focus on form\n\n**Round 4: Punch-Kick Combos**\n- Jab-Cross-Low kick\n- Repeat non-stop\n\n**Round 5: All Out Freestyle**\n- Everything you know\n- Maximum effort\n- 3 minutes!\n\n**HIIT FINISHER:**\n- 20 sec: Fast punches\n- 10 sec: Rest\n- 20 sec: Fast kicks\n- 10 sec: Rest\n- Repeat 4 times (4 min total)\n\n**CONDITIONING:**\n- Squat jumps: 3x15\n- Burpees: 3x10\n- Mountain climbers: 3x20\n- Plank: 3x30 sec\n\n**COOL DOWN:**\n- Light shadow: 2 min\n- Stretching: 5 min (especially legs!)\n\n**Total: ~45 minutes**\n**Calories: 400-600**",
+        "category": "kickboxing_workout"
+    },
+    {
+        "instruction": "تمرين كيك بوكسينج في البيت",
+        "output": "**تمرين كيك بوكسينج في البيت (بدون معدات)** 🏠🥊\n\n**الإحماء (8 دقايق):**\n- جمبنج جاكس: دقيقة\n- High knees: دقيقة\n- Butt kicks: دقيقة\n- شادو بوكسينج خفيف: دقيقتين\n- تأرجح الرجل: دقيقة لكل رجل\n\n**راوندات التكنيك (3 دقايق لكل راوند):**\n\n**راوند 1: لكمات بس**\n- جاب-كروس\n- أضف هوكات\n- اتحرك في الأوضة\n\n**راوند 2: ركلات بس**\n- ركلة أمامية\n- ركلة دائرية\n- بدل الرجلين\n\n**راوند 3: لو كيكس**\n- لو كيك شمال\n- لو كيك يمين\n- ركز على الفورم\n\n**راوند 4: لكمات + ركلات**\n- جاب-كروس-لو كيك\n- كرر بدون توقف\n\n**راوند 5: كل حاجة حر**\n- كل اللي تعرفه\n- أقصى مجهود\n- 3 دقايق!\n\n**HIIT:**\n- 20 ثانية: لكمات سريعة\n- 10 ثانية: راحة\n- 20 ثانية: ركلات سريعة\n- 10 ثانية: راحة\n- كرر 4 مرات\n\n**كوندشننج:**\n- سكوات جمب: 3x15\n- بيربيز: 3x10\n- ماونتن كلايمرز: 3x20\n- بلانك: 3x30 ثانية\n\n**التهدئة:**\n- شادو خفيف: دقيقتين\n- استرتش: 5 دقايق (خصوصاً الرجل!)\n\n**الإجمالي: ~45 دقيقة**\n**السعرات: 400-600**\n\nده تمرين كامل! اعمله 3 مرات في الأسبوع يا بطل! 🔥",
+        "category": "kickboxing_workout_ar"
+    },
+
+    # Kickboxing kicks
+    {
+        "instruction": "Kickboxing kick techniques",
+        "output": "**Kickboxing Kicks - Complete Guide**\n\n**1. ROUNDHOUSE KICK (Most Important)**\n- Same as Muay Thai roundhouse\n- Target: leg, body, head\n- Power from hip rotation\n- Land with shin\n\n**2. FRONT KICK (Teep/Push Kick)**\n- Knee up first\n- Extend leg straight\n- Push with ball of foot\n- Keeps distance\n\n**3. SIDE KICK**\n- Chamber knee across body\n- Extend sideways\n- Hit with heel\n- Powerful and long range\n- Great for keeping distance\n\n**4. BACK KICK**\n- Turn, look over shoulder\n- Thrust leg straight back\n- Hit with heel\n- Very powerful\n- Use sparingly (can be countered)\n\n**5. HOOK KICK (Heel Kick)**\n- Extend leg out\n- Snap heel back in arc\n- Targets head\n- Flashy and effective\n\n**6. SPINNING HEEL KICK**\n- Full 360 spin\n- Hook kick at end\n- High risk, high reward\n- Practice slowly first!\n\n**7. QUESTION MARK KICK**\n- Fake low kick\n- Redirect to head\n- Looks like '?' shape\n- Very deceptive\n\n**8. AXE KICK**\n- Raise leg high\n- Bring down on opponent\n- Targets head/shoulder\n- Needs flexibility\n\n**Training priority:**\n1. Roundhouse (master first)\n2. Front kick\n3. Side kick\n4. Then others",
+        "category": "kickboxing_kicks"
+    },
+    {
+        "instruction": "ركلات الكيك بوكسينج",
+        "output": "**ركلات الكيك بوكسينج - دليل كامل** 🦵\n\n**1. الركلة الدائرية (ROUNDHOUSE) - الأهم**\n- زي ركلة المواي تاي\n- الهدف: رجل، جسم، راس\n- القوة من دوران الورك\n- اضرب بالقصبة\n\n**2. الركلة الأمامية (TEEP)**\n- ارفع الركبة الأول\n- مد رجلك مستقيم\n- ادفع بمقدمة القدم\n- بتحافظ على المسافة\n\n**3. الركلة الجانبية (SIDE KICK)**\n- اطوي الركبة عبر الجسم\n- مد لجنب\n- اضرب بالكعب\n- قوية ومداها طويل\n\n**4. الركلة الخلفية (BACK KICK)**\n- لف، بص من فوق كتفك\n- اطعن برجلك لورا\n- اضرب بالكعب\n- قوية جداً\n\n**5. الهوك كيك**\n- مد رجلك برة\n- ارجع الكعب في قوس\n- بتستهدف الراس\n- شكلها حلو وفعالة\n\n**6. سبيننج هيل كيك**\n- لفة 360 كاملة\n- هوك كيك في الآخر\n- مخاطرة عالية، مكسب عالي\n- تمرن ببطء الأول!\n\n**7. ركلة علامة الاستفهام**\n- مثل إنك هتركل واطي\n- حول على الراس\n- شكلها زي '?'\n- خداعة جداً\n\n**ترتيب التعلم:**\n1. الدائرية (اتقنها الأول)\n2. الأمامية\n3. الجانبية\n4. بعدين الباقي",
+        "category": "kickboxing_kicks_ar"
+    },
+]
+
+# =============================================================================
+# MORE FRANCO ARABIC CONTENT
+# =============================================================================
+
+FRANCO_CONTENT = [
+    {
+        "instruction": "ezay at3alem boxing",
+        "output": "**Yalla neb2a boxers!** 🥊\n\n**El basics:**\n\n**1. El Stance:**\n- Reglak el shemal odam (law yemeen)\n- El edein fo2 ye7mo weshak\n- El da2n le ta7t\n\n**2. El Punches:**\n- **Jab:** Lekma sree3a bel eid el odameya\n- **Cross:** Lekma 2aweya bel eid el waraneya\n- **Hook:** Lekma men el ganb\n- **Uppercut:** Lekma le fo2\n\n**3. El ta3leem:**\n- Shadow boxing odam el miraya: 15 de2ee2a\n- Kol lekma 50 mara\n- Combo 1-2: 50 mara\n\n**4. El workout:**\n- Warm up: 5 de2aye2\n- Rounds: 5 rounds x 3 de2aye2\n- Ra7a: de2ee2a bein kol round\n- Conditioning: push ups, squats, burpees\n\n**Mesh me7tag equipment!** Shadow boxing kefaya tel3ab.\n\n**Tips:**\n- Khalik relaxed\n- Speed before power\n- Raga3 edak besro3a\n\nYalla ebd2! 💪",
+        "category": "boxing_franco"
+    },
+    {
+        "instruction": "3ayez workout kickboxing fel beit",
+        "output": "**Kickboxing fel beit - bdon ay 7aga!** 🏠🥊\n\n**Warm up (5 de2aye2):**\n- Jumping jacks: de2ee2a\n- High knees: de2ee2a\n- Gery fel makan: de2ee2a\n- Shadow boxing 5afeef: de2eteen\n\n**El rounds (3 de2aye2 kol wa7ed):**\n\n**Round 1:** Jab-Cross bas\n**Round 2:** Hooks\n**Round 3:** Rek-lat bas (front kick + roundhouse)\n**Round 4:** Jab-Cross-Low kick\n**Round 5:** Kol 7aga - freestyle!\n\n**Ra7a de2ee2a bein kol round**\n\n**HIIT (4 de2aye2):**\n- 20 sec: Lekamat besro3a\n- 10 sec: Ra7a\n- 20 sec: Rekalat besro3a  \n- 10 sec: Ra7a\n- Karer 4 marat\n\n**Conditioning:**\n- Squat jumps: 3x15\n- Burpees: 3x10\n- Mountain climbers: 3x20\n- Plank: 3x30 sec\n\n**Cool down:**\n- Stretch: 5 de2aye2 (especially el regl!)\n\n**Total: 45 de2ee2a**\n**Calories: 400-600**\n\nE3mel da 3-4 marat fel osboo3! 🔥",
+        "category": "kickboxing_franco"
+    },
+    {
+        "instruction": "el far2 bein muay thai w kickboxing",
+        "output": "**Muay Thai vs Kickboxing - El Far2** 🥊🦵\n\n**MUAY THAI:**\n- 8 as-le7a: 2 eid, 2 koo3, 2 rokba, 2 regl\n- Fee clinch (el mesh-baka)\n- El koo3 w el rokba 3ala el ras 7alal\n- Aktar brutal\n- Men Thailand\n\n**KICKBOXING:**\n- Lekamat + rekalat bas (3adatan)\n- Mafeesh clinch\n- Mafeesh kawa3e3 3ala el wesh (3adatan)\n- Aktar sree3\n- Focus 3ala el movement\n\n**Anehi a5tar?**\n\n**Law 3ayez:**\n- Self defense 7a2ee2y → Muay Thai\n- Fitness w cardio → Kickboxing\n- Kol el as-le7a → Muay Thai\n- Sro3a w combinations → Kickboxing\n\n**El mashtorak:**\n- El lekamat (jab, cross, hook, uppercut)\n- El rekalat el dawreya (roundhouse)\n- El front kick (teep)\n- Conditioning sa3b\n\n**El nas-ee7a:**\nLaw maba-da2tesh 2abl keda, Kickboxing ashal tel3ab.\nLaw 3ayez el package el kamla, Muay Thai.\n\n**El etnein kwayes!** El mohim tebtedy. 💪",
+        "category": "combat_comparison_franco"
+    },
+]
+
+def main():
+    """Generate Egyptian combat sports training data"""
+    all_data = []
+
+    all_data.extend(EGYPTIAN_MINDSET)
+    print(f"Egyptian mindset: {len(EGYPTIAN_MINDSET)}")
+
+    all_data.extend(EQUIPMENT_ADAPTATION)
+    print(f"Equipment adaptation: {len(EQUIPMENT_ADAPTATION)}")
+
+    all_data.extend(KICKBOXING)
+    print(f"Kickboxing: {len(KICKBOXING)}")
+
+    all_data.extend(FRANCO_CONTENT)
+    print(f"Franco content: {len(FRANCO_CONTENT)}")
+
+    print(f"\nTotal: {len(all_data)} samples")
+
+    # Save
+    output_dir = os.path.dirname(os.path.dirname(__file__))
+    output_path = os.path.join(output_dir, "training-data", "combat_egyptian_training.json")
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(all_data, f, ensure_ascii=False, indent=2)
+
+    print(f"Saved to: {output_path}")
+    return all_data
+
+if __name__ == "__main__":
+    main()

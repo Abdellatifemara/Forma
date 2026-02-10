@@ -1,0 +1,117 @@
+[
+  {
+    "instruction": "What does WHO recommend for exercise?",
+    "output": "**WHO Physical Activity Guidelines (2020):**\n\n**Adults (18-64 years):**\n- 150-300 minutes of moderate aerobic activity per week, OR\n- 75-150 minutes of vigorous aerobic activity per week, OR\n- Equivalent combination of both\n- Muscle-strengthening activities 2+ days per week (all major muscle groups)\n\n**Older Adults (65+):**\n- Same as adults PLUS\n- Multicomponent training (balance, strength, flexibility)\n- Focus on functional fitness\n\n**Children & Adolescents:**\n- 60 minutes of moderate-to-vigorous activity daily\n- Muscle and bone strengthening 3x per week\n\n**Key Points from WHO:**\n- Some activity is better than none\n- Reduce sedentary time\n- Health benefits at any activity level\n- No minimum time to start seeing benefits\n\nAre you currently meeting these guidelines?",
+    "category": "who_guidelines"
+  },
+  {
+    "instruction": "How much exercise does WHO say is healthy?",
+    "output": "**WHO Exercise Recommendations:**\n\nFor significant health benefits, adults should do:\n\n**Cardio:**\n- 150-300 min/week of moderate activity (brisk walking, cycling)\n- OR 75-150 min/week of vigorous activity (running, HIIT)\n\n**Strength:**\n- 2+ days per week targeting all major muscle groups\n\n**The Science:**\n- Reduces risk of cardiovascular disease by 35%\n- Reduces risk of type 2 diabetes by 40%\n- Reduces risk of certain cancers (colon, breast) by 20-25%\n- Improves mental health and reduces depression\n- Improves bone density and reduces fall risk\n\n**Going Beyond:**\n- Additional benefits up to 300+ min/week\n- Beyond that, diminishing returns (but still beneficial)\n\nMost people don't meet even the minimum. You're already ahead by training!",
+    "category": "who_guidelines"
+  },
+  {
+    "instruction": "منظمة الصحة العالمية بتقول ايه عن الرياضة؟",
+    "output": "**توصيات منظمة الصحة العالمية للرياضة:**\n\n**للبالغين (18-64 سنة):**\n- 150-300 دقيقة نشاط متوسط في الأسبوع\n- أو 75-150 دقيقة نشاط شديد\n- تقوية العضلات يومين أو أكتر\n\n**الفوايد العلمية:**\n- تقليل أمراض القلب بنسبة 35%\n- تقليل خطر السكري بنسبة 40%\n- تحسين الصحة النفسية\n- تقوية العظام\n\n**المهم:**\n- أي رياضة أحسن من مفيش\n- قلل وقت الجلوس\n- ابدأ بأي كمية والزود بالتدريج\n\nإنت بتتمرن كام مرة في الأسبوع دلوقتي؟",
+    "category": "who_guidelines"
+  },
+  {
+    "instruction": "What does research say about building muscle?",
+    "output": "**Science of Muscle Building (Meta-Analyses):**\n\n**Training Volume (Schoenfeld 2017):**\n- 10+ sets per muscle per week is minimum\n- 15-20 sets per week is optimal for most\n- More volume = more growth (with limits)\n\n**Training Frequency (Schoenfeld 2016):**\n- Training each muscle 2x/week is better than 1x\n- Total volume matters more than frequency\n\n**Rep Ranges (Schoenfeld 2021):**\n- All rep ranges build muscle (5-30 reps)\n- Higher reps with lighter weight works IF taken near failure\n- 6-12 reps is most efficient, not mandatory\n\n**Protein Needs (Morton 2018):**\n- 1.6g/kg is optimal for most\n- Up to 2.2g/kg may help in a deficit\n- Beyond that, no additional benefit\n\n**Sleep (Knowles 2018):**\n- 7-9 hours needed for optimal recovery\n- Sleep deprivation reduces muscle protein synthesis\n\nWant me to design a program based on this research?",
+    "category": "research"
+  },
+  {
+    "instruction": "How much protein do I really need? What does science say?",
+    "output": "**Protein Science (Comprehensive Research Review):**\n\n**The Numbers:**\n- RDA minimum: 0.8g/kg (not optimal for muscle)\n- Muscle building: 1.6-2.2g/kg bodyweight\n- Fat loss: Higher end (2.0-2.4g/kg) to preserve muscle\n\n**Key Studies:**\n\n**Morton et al. 2018 (Meta-analysis of 49 studies):**\n- Benefits plateau at 1.62g/kg\n- Upper confidence bound: 2.2g/kg\n- More than this shows no additional benefit\n\n**Protein Timing:**\n- Total daily intake matters most\n- Spreading across 3-5 meals may help slightly\n- Post-workout window is real but flexible (0-4 hours)\n- Pre-sleep protein (40g casein) may boost overnight recovery\n\n**For You:**\nMultiply your bodyweight in kg by 1.6-2.2:\n- 70kg person: 112-154g protein daily\n- 80kg person: 128-176g protein daily\n\nWhat's your current bodyweight?",
+    "category": "research"
+  },
+  {
+    "instruction": "Is cardio bad for muscle building?",
+    "output": "**Cardio & Muscle Building - The Research:**\n\n**The Interference Effect (Hickson 1980, Wilson 2012):**\n- Excessive endurance training CAN reduce strength/hypertrophy gains\n- This is called \"concurrent training interference\"\n\n**BUT Here's the Truth:**\n\n**When Cardio HURTS Gains:**\n- Running 40+ km per week\n- Cardio immediately before lifting\n- Excessive calorie deficit from cardio\n- Not eating enough to fuel both\n\n**When Cardio is FINE:**\n- 2-3 sessions of 20-30 min per week\n- Separated from lifting (different days or 6+ hours apart)\n- Low-intensity (walking, cycling)\n- Eating enough to recover\n\n**Cardio BENEFITS for Lifting:**\n- Better recovery between sets\n- Improved nutrient delivery to muscles\n- Better work capacity\n- Heart health (you want to live long, right?)\n\n**My Recommendation:**\n- 2-3x low-intensity cardio (walking, cycling)\n- Keep it separate from weights\n- Eat enough to fuel everything",
+    "category": "research"
+  },
+  {
+    "instruction": "What's the science on fat loss?",
+    "output": "**Fat Loss Science (Evidence-Based):**\n\n**The Only Rule That Matters:**\nCalorie deficit = fat loss. Period.\n- Burn more than you eat\n- No food is \"fattening\" in a deficit\n- No exercise \"burns fat\" without a deficit\n\n**Optimal Deficit (Research):**\n- 300-500 calories below maintenance\n- Lose 0.5-1% bodyweight per week\n- Faster = muscle loss + metabolic adaptation\n\n**Preserving Muscle (Helms 2014):**\n- High protein (2.0-2.4g/kg in a deficit)\n- Keep lifting heavy (don't switch to high reps)\n- Don't crash diet (slow and steady)\n- Sleep 7-9 hours\n\n**Diet Breaks (Research):**\n- Every 4-12 weeks, eat at maintenance for 1-2 weeks\n- Reduces metabolic adaptation\n- Psychological relief\n\n**What DOESN'T Work:**\n- Spot reduction (can't target belly fat)\n- Fat burner supplements (waste of money)\n- Excessive cardio (muscle loss)\n- Very low calorie diets (muscle loss + rebound)\n\nConsistency beats perfection. Small deficit, maintained for months.",
+    "category": "research"
+  },
+  {
+    "instruction": "How do Olympic athletes train?",
+    "output": "**Olympic Athlete Training Principles:**\n\n**Periodization:**\n- Training is planned in phases (macrocycles, mesocycles, microcycles)\n- Off-season: Build base fitness and muscle\n- Pre-competition: Sport-specific intensity\n- Peaking: Reduce volume, maintain intensity\n- Recovery: Deload after competitions\n\n**Training Volume:**\n- 20-40+ hours per week of training\n- Multiple sessions per day\n- Years of progressive overload\n\n**Key Principles:**\n1. Specificity - Train for your sport\n2. Progressive Overload - Gradual increases\n3. Recovery - As important as training\n4. Individualization - What works for YOU\n5. Reversibility - Use it or lose it\n\n**Recovery Methods:**\n- 8-10 hours sleep\n- Nutrition timing and quality\n- Active recovery days\n- Massage, ice baths, contrast therapy\n- Mental recovery\n\nOlympians train for years to peak for one event. For regular fitness, consistency over time is your \"gold medal.\"",
+    "category": "olympic"
+  },
+  {
+    "instruction": "What is periodization?",
+    "output": "**Periodization Explained:**\n\nPeriodization is strategically varying your training over time to maximize results and prevent burnout.\n\n**The Phases:**\n\n**1. Accumulation (4-6 weeks)**\n- High volume, moderate intensity\n- Build work capacity and muscle\n- 10-15 reps, 3-4 sets\n\n**2. Intensification (3-4 weeks)**\n- Moderate volume, higher intensity\n- Build strength\n- 5-8 reps, 4-5 sets\n\n**3. Realization/Peak (1-2 weeks)**\n- Low volume, highest intensity\n- Express your strength\n- 1-5 reps, 3-5 sets\n\n**4. Deload (1 week)**\n- Half the volume, same or lighter intensity\n- Recover and prepare for next cycle\n\n**Why It Works:**\n- Prevents plateaus\n- Reduces injury risk\n- Optimizes recovery\n- Keeps training interesting\n\n**For Regular Lifters:**\n- 3 weeks hard, 1 week easy\n- Or 4-6 weeks building, 1 week deload\n- Change rep ranges every 4-6 weeks",
+    "category": "olympic"
+  },
+  {
+    "instruction": "How do weightlifters train?",
+    "output": "**Olympic Weightlifting Training:**\n\n**The Lifts:**\n- Snatch: Bar from floor to overhead in one motion\n- Clean & Jerk: Bar to shoulders, then overhead\n- Both require speed, power, flexibility, and technique\n\n**Training Structure:**\n\n**Frequency:** 5-6 days/week\n\n**Daily Session:**\n1. Warm-up and mobility (15-20 min)\n2. Snatch variations (30-40 min)\n3. Clean & Jerk variations (30-40 min)\n4. Strength work - squats, pulls (30 min)\n5. Accessory work (15-20 min)\n\n**Key Training Methods:**\n- Heavy singles (build max strength)\n- Complexes (technique work)\n- Pulls (snatch pull, clean pull)\n- Squats (front squat is king)\n- Lots of practice at submaximal weights\n\n**For General Fitness:**\n- Power cleans build explosive power\n- Front squats for quad strength\n- Overhead pressing for shoulder stability\n\nOlympic lifting is highly technical. Get a coach if you want to learn!",
+    "category": "olympic"
+  },
+  {
+    "instruction": "How do bodybuilders train for competition?",
+    "output": "**Competition Bodybuilding Prep:**\n\n**Timeline:** 12-20 weeks out from show\n\n**Phase 1: Offseason (building)**\n- Calorie surplus (200-500 above maintenance)\n- High volume training (15-25 sets per muscle/week)\n- Focus on weak points\n- Gain muscle (and some fat)\n\n**Phase 2: Contest Prep (cutting)**\n- Gradual calorie reduction\n- Lose 0.5-1% bodyweight per week\n- Maintain heavy training (don't switch to light weights!)\n- Protein stays high (2.0-2.4g/kg)\n- Add cardio as needed\n\n**Final Week (Peak Week):**\n- Water manipulation\n- Carb loading\n- Sodium adjustments\n- Tanning, posing practice\n\n**What It Takes:**\n- Years of muscle building first\n- Extreme discipline in diet\n- Getting to 5-8% body fat (men) is NOT healthy long-term\n- Mental fortitude\n\n**For Regular People:**\n- You don't need to diet this hard\n- 10-15% body fat is healthy and sustainable\n- Focus on consistency, not extremes",
+    "category": "olympic"
+  },
+  {
+    "instruction": "I want to lose fat, what should I do?",
+    "output": "**Fat Loss Blueprint:**\n\n**Step 1: Calculate Your Calories**\n- Find maintenance (bodyweight in kg × 28-33)\n- Subtract 300-500 calories\n- Track everything for 2 weeks\n\n**Step 2: Set Protein High**\n- 2.0-2.4g per kg bodyweight\n- Preserves muscle while losing fat\n\n**Step 3: Train for Muscle**\n- Lift weights 3-4x per week\n- Don't switch to high reps/light weights\n- Keep trying to get stronger\n\n**Step 4: Add Cardio (Optional)**\n- 2-3x per week, 20-30 minutes\n- Increases calorie burn without eating less\n- Walking is underrated!\n\n**Step 5: Be Patient**\n- Expect 0.5-1kg per week max\n- Take progress photos monthly\n- Weight fluctuates - trust the process\n\n**Expect:**\n- 4-8 weeks to see visible changes\n- 3-6 months for significant transformation\n- This is a marathon, not a sprint\n\nWant me to calculate your specific calories?",
+    "category": "goal_fat_loss"
+  },
+  {
+    "instruction": "عايز اخس، اعمل ايه؟",
+    "output": "**خطة خسارة الوزن:**\n\n**الخطوة 1: احسب سعراتك**\n- وزنك بالكيلو × 28-33 = سعرات الثبات\n- اطرح 300-500 سعرة\n- تتبع أكلك أسبوعين\n\n**الخطوة 2: بروتين عالي**\n- 2.0-2.4 جرام لكل كيلو من وزنك\n- يحافظ على العضل وإنت بتخس\n\n**الخطوة 3: تمرين قوة**\n- أوزان 3-4 مرات في الأسبوع\n- متخففش الأوزان\n- حاول تقوى\n\n**الخطوة 4: كارديو (اختياري)**\n- 2-3 مرات، 20-30 دقيقة\n- المشي ممتاز!\n\n**الخطوة 5: صبر**\n- توقع 0.5-1 كيلو في الأسبوع\n- صور progress كل شهر\n- 3-6 شهور للتحول الكبير\n\nعايز أحسبلك السعرات بالظبط؟",
+    "category": "goal_fat_loss"
+  },
+  {
+    "instruction": "I want to build muscle, what should I do?",
+    "output": "**Muscle Building Blueprint:**\n\n**Step 1: Eat in a Surplus**\n- Find maintenance + add 200-300 calories\n- Gain ~0.25-0.5kg per week (beginners can gain faster)\n- Too fast = fat gain\n\n**Step 2: Protein is King**\n- 1.6-2.2g per kg bodyweight\n- Spread across 4-5 meals\n- 20-40g per meal\n\n**Step 3: Progressive Overload**\n- Add weight or reps every week\n- 10-20 sets per muscle per week\n- Train each muscle 2x per week minimum\n\n**Step 4: Compound Lifts**\n- Squat, Deadlift, Bench, Rows, OHP\n- These build the most muscle\n- Add isolation work after\n\n**Step 5: Recovery**\n- 7-9 hours sleep\n- Rest days between same muscle\n- Don't train every day\n\n**Expect:**\n- Beginners: 8-12kg muscle first year\n- Intermediate: 4-6kg muscle per year\n- Advanced: 1-2kg muscle per year\n- This is a LONG game\n\nWant me to create a muscle building program for you?",
+    "category": "goal_muscle"
+  },
+  {
+    "instruction": "عايز ابني عضل، اعمل ايه؟",
+    "output": "**خطة بناء العضل:**\n\n**الخطوة 1: كل أكتر من احتياجك**\n- سعرات الثبات + 200-300 سعرة\n- زيادة 0.25-0.5 كيلو في الأسبوع\n\n**الخطوة 2: البروتين**\n- 1.6-2.2 جرام لكل كيلو من وزنك\n- موزع على 4-5 وجبات\n\n**الخطوة 3: زود الأوزان**\n- زود وزن أو تكرارات كل أسبوع\n- 10-20 مجموعة لكل عضلة في الأسبوع\n- كل عضلة مرتين في الأسبوع\n\n**الخطوة 4: التمارين المركبة**\n- Squat, Deadlift, Bench, Rows\n- دي اللي بتبني العضل\n\n**الخطوة 5: الراحة**\n- 7-9 ساعات نوم\n- أيام راحة مهمة\n\n**توقع:**\n- المبتدئين: 8-12 كيلو عضل أول سنة\n- اللي اتمرنوا: 4-6 كيلو في السنة\n- ده ماراثون مش سباق سريع\n\nعايز أعملك برنامج؟",
+    "category": "goal_muscle"
+  },
+  {
+    "instruction": "I want to get stronger, what should I do?",
+    "output": "**Strength Building Blueprint:**\n\n**The Big Lifts:**\nFocus on these compound movements:\n- Squat\n- Deadlift\n- Bench Press\n- Overhead Press\n- Rows\n\n**Training Parameters:**\n- Low reps: 3-6 reps per set\n- Higher intensity: 80-90% of max\n- Moderate volume: 4-5 sets\n- Long rest: 3-5 minutes between sets\n\n**Programming (Example):**\n- Train 3-4x per week\n- Each lift 2x per week\n- Week 1: 5x5 @ 75%\n- Week 2: 5x4 @ 80%\n- Week 3: 5x3 @ 85%\n- Week 4: Deload or test\n\n**Key Principles:**\n1. Practice the lifts frequently (skill development)\n2. Progressive overload (add weight weekly)\n3. Technique is everything (bad form = injury)\n4. Rest and recover (strength built during recovery)\n\n**Popular Programs:**\n- Starting Strength (beginners)\n- 5/3/1 (intermediate)\n- Texas Method\n\nWant me to design a strength program for you?",
+    "category": "goal_strength"
+  },
+  {
+    "instruction": "I want to improve my endurance",
+    "output": "**Endurance Building Blueprint:**\n\n**For Cardiovascular Endurance:**\n\n**Base Building (80% of training):**\n- Low-intensity, long duration\n- Heart rate 120-150 bpm (Zone 2)\n- Can hold a conversation\n- 30-60+ minutes\n- Running, cycling, swimming\n\n**High Intensity (20% of training):**\n- Intervals: 1-4 minutes hard, 1-4 minutes easy\n- HIIT: 20-30 minutes total\n- Pushes cardiovascular limits\n- 1-2x per week maximum\n\n**Progression:**\n- Week 1: 3x 20 minutes\n- Week 2: 3x 25 minutes\n- Week 3: 3x 30 minutes\n- Add 10% volume per week max\n\n**For Muscular Endurance:**\n- Higher reps: 15-25\n- Shorter rest: 30-60 seconds\n- Circuit training\n- Supersets\n\n**Key Points:**\n- Consistency is everything\n- Build slowly (avoid injury)\n- Mix modalities (run, bike, swim)\n- Don't neglect strength training\n\nWhat type of endurance are you training for?",
+    "category": "goal_endurance"
+  },
+  {
+    "instruction": "I want to be more flexible",
+    "output": "**Flexibility Improvement Blueprint:**\n\n**Daily Practice:**\n- Stretch 10-15 minutes every day\n- Consistency beats intensity\n- Morning or evening, pick one\n\n**Types of Stretching:**\n\n**Static Stretching (after workout):**\n- Hold stretch 30-60 seconds\n- Breathe and relax into it\n- Don't bounce\n- Do 2-3 rounds per stretch\n\n**Dynamic Stretching (before workout):**\n- Moving through range of motion\n- Leg swings, arm circles\n- Warms up joints and muscles\n\n**Key Areas to Focus:**\n1. Hip flexors (everyone's tight from sitting)\n2. Hamstrings\n3. Thoracic spine (upper back)\n4. Shoulders\n5. Ankles\n\n**Recommended Practices:**\n- Yoga 2-3x per week\n- Mobility routine daily (5-10 min)\n- Foam rolling\n\n**Timeline:**\n- 2 weeks: Feel better\n- 4-6 weeks: Noticeable improvement\n- 3-6 months: Significant flexibility gains\n\nWant a specific mobility routine?",
+    "category": "goal_flexibility"
+  },
+  {
+    "instruction": "What are the benefits of exercise?",
+    "output": "**Exercise Benefits (Research-Proven):**\n\n**Physical Health:**\n- 35% lower risk of heart disease\n- 40% lower risk of type 2 diabetes\n- 20-25% lower risk of certain cancers\n- Lower blood pressure\n- Better cholesterol profile\n- Stronger bones and muscles\n- Better immune function\n\n**Mental Health:**\n- 30% reduction in depression risk\n- Reduced anxiety\n- Better sleep quality\n- Improved cognitive function\n- Lower dementia risk\n- Better stress management\n\n**Longevity:**\n- 3-7 extra years of life\n- More years of healthy, active life\n- Better quality of life as you age\n\n**Daily Function:**\n- More energy\n- Better posture\n- Less pain\n- Better mobility\n- Improved confidence\n\nExercise is the closest thing we have to a magic pill. What's stopping you from training?",
+    "category": "health_stats"
+  },
+  {
+    "instruction": "How many people exercise enough?",
+    "output": "**Global Physical Activity Statistics:**\n\n**World Health Organization Data:**\n- 27.5% of adults worldwide don't meet minimum guidelines\n- That's 1.4 billion people too sedentary\n- Women are less active than men in most regions\n\n**Egypt Specific:**\n- Physical inactivity is a major health concern\n- Urbanization and sedentary jobs increasing\n- Gym culture growing but still minority\n\n**Health Impact:**\n- Physical inactivity is 4th leading risk factor for death\n- Causes 6% of coronary heart disease\n- Causes 7% of type 2 diabetes\n- Causes 10% of breast and colon cancer\n- 5.3 million deaths per year attributable to inactivity\n\n**The Good News:**\n- Any increase in activity helps\n- You don't need to be an athlete\n- Walking more makes a difference\n- Even 10 minutes has benefits\n\nYou're already ahead of most people by caring about fitness!",
+    "category": "health_stats"
+  },
+  {
+    "instruction": "What happens if I don't exercise?",
+    "output": "**Consequences of Physical Inactivity:**\n\n**Short-Term (Weeks to Months):**\n- Reduced energy levels\n- Poor sleep quality\n- Increased stress and anxiety\n- Weight gain\n- Muscle loss (sarcopenia)\n\n**Medium-Term (Months to Years):**\n- Decreased bone density\n- Metabolic slowdown\n- Insulin resistance developing\n- Blood pressure increasing\n- Posture deteriorating\n\n**Long-Term (Years to Decades):**\n- Heart disease risk increases significantly\n- Type 2 diabetes risk doubles\n- Certain cancer risks increase\n- Earlier cognitive decline\n- Reduced life expectancy (3-7 years)\n- Loss of independence in old age\n\n**The Reality:**\n- Sitting is the new smoking\n- Your body was designed to move\n- Use it or lose it is literally true\n\n**But Here's the Good Part:**\n- It's never too late to start\n- Benefits begin with ANY activity\n- Even walking counts\n\nWhat's your current activity level?",
+    "category": "health_stats"
+  },
+  {
+    "instruction": "What's the science on meal timing?",
+    "output": "**Meal Timing Science (What Research Shows):**\n\n**Total Daily Intake Matters MOST:**\n- When you eat matters less than WHAT and HOW MUCH\n- A calorie deficit at 2pm = same as at 8pm\n\n**Protein Distribution:**\n- Spreading protein (20-40g) across 3-5 meals may be slightly better\n- Leucine threshold matters (~2-3g per meal)\n- But total daily protein is still king\n\n**Pre-Workout:**\n- Some food 1-3 hours before training helps performance\n- Not essential if you ate within 4-5 hours\n- Personal preference\n\n**Post-Workout:**\n- The \"anabolic window\" is exaggerated\n- You have 4-6 hours, not 30 minutes\n- A balanced meal within this time is fine\n- Urgent only if training fasted\n\n**Eating Before Sleep:**\n- Won't make you fat if in calorie balance\n- Casein protein before bed may help muscle building\n- Large meals may disrupt sleep for some\n\n**Intermittent Fasting:**\n- Works for fat loss because it restricts calories\n- Not magic, just a preference\n- Fine if it suits your lifestyle\n\nDon't overcomplicate it. Eat enough protein, hit your calories, train hard.",
+    "category": "nutrition_science"
+  },
+  {
+    "instruction": "Do I need supplements?",
+    "output": "**Supplement Science (Evidence-Based):**\n\n**ACTUALLY Useful (Strong Evidence):**\n\n1. **Creatine Monohydrate**\n   - 5g daily, any time\n   - Increases strength, muscle, and performance\n   - 500+ studies backing it\n   - Cheap and safe\n\n2. **Protein Powder (if needed)**\n   - Convenient way to hit protein goals\n   - No magic, just food\n   - Not necessary if you eat enough protein\n\n3. **Vitamin D (if deficient)**\n   - Most people are deficient\n   - Get blood test to check\n   - 2000-5000 IU daily if low\n\n4. **Caffeine**\n   - Improves performance 3-5%\n   - 200-400mg before training\n   - Just drink coffee\n\n**PROBABLY Useless:**\n- BCAAs (get them from protein)\n- Fat burners (waste of money)\n- Testosterone boosters (don't work)\n- Most pre-workouts (just caffeine + marketing)\n\n**Save Your Money:**\nFood > Supplements. Always.\nGet the basics right first. Supplements are the last 5%.",
+    "category": "nutrition_science"
+  }
+]
