@@ -1,0 +1,3477 @@
+[
+  {
+    "instruction": "How many calories in Foul Medames?",
+    "output": "Foul Medames has 180 calories per 200g bowl. It contains 10g protein, 28g carbs, and 3g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Foul Medames?",
+    "output": "Foul Medames (200g bowl):\n- Calories: 180\n- Protein: 10g\n- Carbs: 28g\n- Fat: 3g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فول مدمس؟",
+    "output": "فول مدمس فيه 180 سعرة حرارية لكل 200g bowl. البروتين 10 جرام، الكاربز 28 جرام، والدهون 3 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel foul?",
+    "output": "foul has 180 calories per 200g bowl. Protein: 10g, Carbs: 28g, Fat: 3g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Foul with Tahini?",
+    "output": "Foul with Tahini has 280 calories per 200g bowl. It contains 12g protein, 30g carbs, and 14g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Foul with Tahini?",
+    "output": "Foul with Tahini (200g bowl):\n- Calories: 280\n- Protein: 12g\n- Carbs: 30g\n- Fat: 14g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فول بالطحينة؟",
+    "output": "فول بالطحينة فيه 280 سعرة حرارية لكل 200g bowl. البروتين 12 جرام، الكاربز 30 جرام، والدهون 14 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel foul bel ta7ina?",
+    "output": "foul bel ta7ina has 280 calories per 200g bowl. Protein: 12g, Carbs: 30g, Fat: 14g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Foul with Eggs?",
+    "output": "Foul with Eggs has 320 calories per 250g plate. It contains 18g protein, 28g carbs, and 16g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Foul with Eggs?",
+    "output": "Foul with Eggs (250g plate):\n- Calories: 320\n- Protein: 18g\n- Carbs: 28g\n- Fat: 16g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فول بالبيض؟",
+    "output": "فول بالبيض فيه 320 سعرة حرارية لكل 250g plate. البروتين 18 جرام، الكاربز 28 جرام، والدهون 16 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel foul bel beid?",
+    "output": "foul bel beid has 320 calories per 250g plate. Protein: 18g, Carbs: 28g, Fat: 16g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Ta'meya (Falafel)?",
+    "output": "Ta'meya (Falafel) has 60 calories per 1 piece. It contains 3g protein, 5g carbs, and 3g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Ta'meya (Falafel)?",
+    "output": "Ta'meya (Falafel) (1 piece):\n- Calories: 60\n- Protein: 3g\n- Carbs: 5g\n- Fat: 3g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في طعمية؟",
+    "output": "طعمية فيه 60 سعرة حرارية لكل 1 piece. البروتين 3 جرام، الكاربز 5 جرام، والدهون 3 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel ta3meya?",
+    "output": "ta3meya has 60 calories per 1 piece. Protein: 3g, Carbs: 5g, Fat: 3g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Falafel Sandwich?",
+    "output": "Falafel Sandwich has 380 calories per 1 sandwich. It contains 12g protein, 45g carbs, and 18g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Falafel Sandwich?",
+    "output": "Falafel Sandwich (1 sandwich):\n- Calories: 380\n- Protein: 12g\n- Carbs: 45g\n- Fat: 18g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ساندوتش طعمية؟",
+    "output": "ساندوتش طعمية فيه 380 سعرة حرارية لكل 1 sandwich. البروتين 12 جرام، الكاربز 45 جرام، والدهون 18 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel sandwich ta3meya?",
+    "output": "sandwich ta3meya has 380 calories per 1 sandwich. Protein: 12g, Carbs: 45g, Fat: 18g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Eggs with Basterma?",
+    "output": "Eggs with Basterma has 350 calories per 2 eggs + 50g basterma. It contains 22g protein, 2g carbs, and 28g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Eggs with Basterma?",
+    "output": "Eggs with Basterma (2 eggs + 50g basterma):\n- Calories: 350\n- Protein: 22g\n- Carbs: 2g\n- Fat: 28g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيض بالبسطرمة؟",
+    "output": "بيض بالبسطرمة فيه 350 سعرة حرارية لكل 2 eggs + 50g basterma. البروتين 22 جرام، الكاربز 2 جرام، والدهون 28 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel beid bel basterma?",
+    "output": "beid bel basterma has 350 calories per 2 eggs + 50g basterma. Protein: 22g, Carbs: 2g, Fat: 28g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Eggs with Basterma good for muscle building?",
+    "output": "Yes! Eggs with Basterma is a good protein source with 22g protein per 2 eggs + 50g basterma. That's great for muscle building. Total calories: 350.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Shakshuka?",
+    "output": "Shakshuka has 280 calories per 1 portion. It contains 14g protein, 15g carbs, and 18g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Shakshuka?",
+    "output": "Shakshuka (1 portion):\n- Calories: 280\n- Protein: 14g\n- Carbs: 15g\n- Fat: 18g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شكشوكة؟",
+    "output": "شكشوكة فيه 280 سعرة حرارية لكل 1 portion. البروتين 14 جرام، الكاربز 15 جرام، والدهون 18 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel shakshuka?",
+    "output": "shakshuka has 280 calories per 1 portion. Protein: 14g, Carbs: 15g, Fat: 18g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Feteer Meshaltet?",
+    "output": "Feteer Meshaltet has 450 calories per 1 slice. It contains 8g protein, 55g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Feteer Meshaltet?",
+    "output": "Feteer Meshaltet (1 slice):\n- Calories: 450\n- Protein: 8g\n- Carbs: 55g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فطير مشلتت؟",
+    "output": "فطير مشلتت فيه 450 سعرة حرارية لكل 1 slice. البروتين 8 جرام، الكاربز 55 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel feteer?",
+    "output": "feteer has 450 calories per 1 slice. Protein: 8g, Carbs: 55g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Feteer with Honey?",
+    "output": "Feteer with Honey has 520 calories per 1 slice. It contains 8g protein, 70g carbs, and 24g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Feteer with Honey?",
+    "output": "Feteer with Honey (1 slice):\n- Calories: 520\n- Protein: 8g\n- Carbs: 70g\n- Fat: 24g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فطير بالعسل؟",
+    "output": "فطير بالعسل فيه 520 سعرة حرارية لكل 1 slice. البروتين 8 جرام، الكاربز 70 جرام، والدهون 24 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel feteer bel 3asal?",
+    "output": "feteer bel 3asal has 520 calories per 1 slice. Protein: 8g, Carbs: 70g, Fat: 24g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Feteer with Honey good for bulking?",
+    "output": "Yes! Feteer with Honey has 520 calories per 1 slice, which is good for bulking. It provides 8g protein, 70g carbs, and 24g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Baladi Bread?",
+    "output": "Baladi Bread has 150 calories per 1 loaf. It contains 5g protein, 30g carbs, and 1g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Baladi Bread?",
+    "output": "Baladi Bread (1 loaf):\n- Calories: 150\n- Protein: 5g\n- Carbs: 30g\n- Fat: 1g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في عيش بلدي؟",
+    "output": "عيش بلدي فيه 150 سعرة حرارية لكل 1 loaf. البروتين 5 جرام، الكاربز 30 جرام، والدهون 1 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 3eish baladi?",
+    "output": "3eish baladi has 150 calories per 1 loaf. Protein: 5g, Carbs: 30g, Fat: 1g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Shami Bread?",
+    "output": "Shami Bread has 180 calories per 1 loaf. It contains 6g protein, 35g carbs, and 2g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Shami Bread?",
+    "output": "Shami Bread (1 loaf):\n- Calories: 180\n- Protein: 6g\n- Carbs: 35g\n- Fat: 2g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في عيش شامي؟",
+    "output": "عيش شامي فيه 180 سعرة حرارية لكل 1 loaf. البروتين 6 جرام، الكاربز 35 جرام، والدهون 2 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 3eish shami?",
+    "output": "3eish shami has 180 calories per 1 loaf. Protein: 6g, Carbs: 35g, Fat: 2g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Fino Bread?",
+    "output": "Fino Bread has 200 calories per 1 roll. It contains 6g protein, 38g carbs, and 3g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Fino Bread?",
+    "output": "Fino Bread (1 roll):\n- Calories: 200\n- Protein: 6g\n- Carbs: 38g\n- Fat: 3g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في عيش فينو؟",
+    "output": "عيش فينو فيه 200 سعرة حرارية لكل 1 roll. البروتين 6 جرام، الكاربز 38 جرام، والدهون 3 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 3eish fino?",
+    "output": "3eish fino has 200 calories per 1 roll. Protein: 6g, Carbs: 38g, Fat: 3g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Koshary?",
+    "output": "Koshary has 380 calories per medium bowl. It contains 12g protein, 72g carbs, and 6g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Koshary?",
+    "output": "Koshary (medium bowl):\n- Calories: 380\n- Protein: 12g\n- Carbs: 72g\n- Fat: 6g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كشري؟",
+    "output": "كشري فيه 380 سعرة حرارية لكل medium bowl. البروتين 12 جرام، الكاربز 72 جرام، والدهون 6 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel koshary?",
+    "output": "koshary has 380 calories per medium bowl. Protein: 12g, Carbs: 72g, Fat: 6g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Koshary Large?",
+    "output": "Koshary Large has 550 calories per large bowl. It contains 18g protein, 105g carbs, and 9g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Koshary Large?",
+    "output": "Koshary Large (large bowl):\n- Calories: 550\n- Protein: 18g\n- Carbs: 105g\n- Fat: 9g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كشري كبير؟",
+    "output": "كشري كبير فيه 550 سعرة حرارية لكل large bowl. البروتين 18 جرام، الكاربز 105 جرام، والدهون 9 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel koshary kebeer?",
+    "output": "koshary kebeer has 550 calories per large bowl. Protein: 18g, Carbs: 105g, Fat: 9g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Koshary Large good for bulking?",
+    "output": "Yes! Koshary Large has 550 calories per large bowl, which is good for bulking. It provides 18g protein, 105g carbs, and 9g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Molokheya with Chicken?",
+    "output": "Molokheya with Chicken has 320 calories per 1 plate. It contains 28g protein, 18g carbs, and 16g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Molokheya with Chicken?",
+    "output": "Molokheya with Chicken (1 plate):\n- Calories: 320\n- Protein: 28g\n- Carbs: 18g\n- Fat: 16g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ملوخية بالفراخ؟",
+    "output": "ملوخية بالفراخ فيه 320 سعرة حرارية لكل 1 plate. البروتين 28 جرام، الكاربز 18 جرام، والدهون 16 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel molokheya bel ferakh?",
+    "output": "molokheya bel ferakh has 320 calories per 1 plate. Protein: 28g, Carbs: 18g, Fat: 16g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Molokheya with Chicken good for muscle building?",
+    "output": "Yes! Molokheya with Chicken is a good protein source with 28g protein per 1 plate. That's great for muscle building. Total calories: 320.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Molokheya with Rabbit?",
+    "output": "Molokheya with Rabbit has 280 calories per 1 plate. It contains 32g protein, 15g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Molokheya with Rabbit?",
+    "output": "Molokheya with Rabbit (1 plate):\n- Calories: 280\n- Protein: 32g\n- Carbs: 15g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ملوخية بالأرانب؟",
+    "output": "ملوخية بالأرانب فيه 280 سعرة حرارية لكل 1 plate. البروتين 32 جرام، الكاربز 15 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel molokheya bel araneb?",
+    "output": "molokheya bel araneb has 280 calories per 1 plate. Protein: 32g, Carbs: 15g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Molokheya with Rabbit good for muscle building?",
+    "output": "Yes! Molokheya with Rabbit is a good protein source with 32g protein per 1 plate. That's great for muscle building. Total calories: 280.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Mahshi Wara2 3enab?",
+    "output": "Mahshi Wara2 3enab has 45 calories per 1 piece. It contains 1g protein, 8g carbs, and 1g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Mahshi Wara2 3enab?",
+    "output": "Mahshi Wara2 3enab (1 piece):\n- Calories: 45\n- Protein: 1g\n- Carbs: 8g\n- Fat: 1g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في محشي ورق عنب؟",
+    "output": "محشي ورق عنب فيه 45 سعرة حرارية لكل 1 piece. البروتين 1 جرام، الكاربز 8 جرام، والدهون 1 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel ma7shi wara2 3enab?",
+    "output": "ma7shi wara2 3enab has 45 calories per 1 piece. Protein: 1g, Carbs: 8g, Fat: 1g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Mahshi Koronb?",
+    "output": "Mahshi Koronb has 55 calories per 1 piece. It contains 2g protein, 10g carbs, and 1g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Mahshi Koronb?",
+    "output": "Mahshi Koronb (1 piece):\n- Calories: 55\n- Protein: 2g\n- Carbs: 10g\n- Fat: 1g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في محشي كرنب؟",
+    "output": "محشي كرنب فيه 55 سعرة حرارية لكل 1 piece. البروتين 2 جرام، الكاربز 10 جرام، والدهون 1 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel ma7shi koronb?",
+    "output": "ma7shi koronb has 55 calories per 1 piece. Protein: 2g, Carbs: 10g, Fat: 1g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Mahshi Felfel?",
+    "output": "Mahshi Felfel has 120 calories per 1 pepper. It contains 4g protein, 22g carbs, and 2g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Mahshi Felfel?",
+    "output": "Mahshi Felfel (1 pepper):\n- Calories: 120\n- Protein: 4g\n- Carbs: 22g\n- Fat: 2g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في محشي فلفل؟",
+    "output": "محشي فلفل فيه 120 سعرة حرارية لكل 1 pepper. البروتين 4 جرام، الكاربز 22 جرام، والدهون 2 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel ma7shi felfel?",
+    "output": "ma7shi felfel has 120 calories per 1 pepper. Protein: 4g, Carbs: 22g, Fat: 2g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Mahshi Betingan?",
+    "output": "Mahshi Betingan has 150 calories per 1 eggplant. It contains 5g protein, 25g carbs, and 4g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Mahshi Betingan?",
+    "output": "Mahshi Betingan (1 eggplant):\n- Calories: 150\n- Protein: 5g\n- Carbs: 25g\n- Fat: 4g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في محشي باذنجان؟",
+    "output": "محشي باذنجان فيه 150 سعرة حرارية لكل 1 eggplant. البروتين 5 جرام، الكاربز 25 جرام، والدهون 4 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel ma7shi betingan?",
+    "output": "ma7shi betingan has 150 calories per 1 eggplant. Protein: 5g, Carbs: 25g, Fat: 4g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Fattah?",
+    "output": "Fattah has 650 calories per 1 plate. It contains 35g protein, 55g carbs, and 32g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Fattah?",
+    "output": "Fattah (1 plate):\n- Calories: 650\n- Protein: 35g\n- Carbs: 55g\n- Fat: 32g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فتة؟",
+    "output": "فتة فيه 650 سعرة حرارية لكل 1 plate. البروتين 35 جرام، الكاربز 55 جرام، والدهون 32 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel fatta?",
+    "output": "fatta has 650 calories per 1 plate. Protein: 35g, Carbs: 55g, Fat: 32g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Fattah good for muscle building?",
+    "output": "Yes! Fattah is a good protein source with 35g protein per 1 plate. That's great for muscle building. Total calories: 650.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Fattah good for bulking?",
+    "output": "Yes! Fattah has 650 calories per 1 plate, which is good for bulking. It provides 35g protein, 55g carbs, and 32g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Fatta with Meat?",
+    "output": "Fatta with Meat has 720 calories per 1 plate. It contains 40g protein, 55g carbs, and 38g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Fatta with Meat?",
+    "output": "Fatta with Meat (1 plate):\n- Calories: 720\n- Protein: 40g\n- Carbs: 55g\n- Fat: 38g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فتة باللحمة؟",
+    "output": "فتة باللحمة فيه 720 سعرة حرارية لكل 1 plate. البروتين 40 جرام، الكاربز 55 جرام، والدهون 38 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel fatta bel la7ma?",
+    "output": "fatta bel la7ma has 720 calories per 1 plate. Protein: 40g, Carbs: 55g, Fat: 38g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Fatta with Meat good for muscle building?",
+    "output": "Yes! Fatta with Meat is a good protein source with 40g protein per 1 plate. That's great for muscle building. Total calories: 720.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Fatta with Meat good for bulking?",
+    "output": "Yes! Fatta with Meat has 720 calories per 1 plate, which is good for bulking. It provides 40g protein, 55g carbs, and 38g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Moussaka?",
+    "output": "Moussaka has 280 calories per 1 plate. It contains 8g protein, 25g carbs, and 18g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Moussaka?",
+    "output": "Moussaka (1 plate):\n- Calories: 280\n- Protein: 8g\n- Carbs: 25g\n- Fat: 18g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في مسقعة؟",
+    "output": "مسقعة فيه 280 سعرة حرارية لكل 1 plate. البروتين 8 جرام، الكاربز 25 جرام، والدهون 18 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel msa23a?",
+    "output": "msa23a has 280 calories per 1 plate. Protein: 8g, Carbs: 25g, Fat: 18g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Bamia with Meat?",
+    "output": "Bamia with Meat has 320 calories per 1 plate. It contains 22g protein, 18g carbs, and 20g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Bamia with Meat?",
+    "output": "Bamia with Meat (1 plate):\n- Calories: 320\n- Protein: 22g\n- Carbs: 18g\n- Fat: 20g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بامية باللحمة؟",
+    "output": "بامية باللحمة فيه 320 سعرة حرارية لكل 1 plate. البروتين 22 جرام، الكاربز 18 جرام، والدهون 20 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel bamya bel la7ma?",
+    "output": "bamya bel la7ma has 320 calories per 1 plate. Protein: 22g, Carbs: 18g, Fat: 20g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Bamia with Meat good for muscle building?",
+    "output": "Yes! Bamia with Meat is a good protein source with 22g protein per 1 plate. That's great for muscle building. Total calories: 320.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Fasolia?",
+    "output": "Fasolia has 280 calories per 1 plate. It contains 18g protein, 30g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Fasolia?",
+    "output": "Fasolia (1 plate):\n- Calories: 280\n- Protein: 18g\n- Carbs: 30g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فاصوليا؟",
+    "output": "فاصوليا فيه 280 سعرة حرارية لكل 1 plate. البروتين 18 جرام، الكاربز 30 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel fasolia?",
+    "output": "fasolia has 280 calories per 1 plate. Protein: 18g, Carbs: 30g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Bissara?",
+    "output": "Bissara has 180 calories per 1 bowl. It contains 10g protein, 25g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Bissara?",
+    "output": "Bissara (1 bowl):\n- Calories: 180\n- Protein: 10g\n- Carbs: 25g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بصارة؟",
+    "output": "بصارة فيه 180 سعرة حرارية لكل 1 bowl. البروتين 10 جرام، الكاربز 25 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel besara?",
+    "output": "besara has 180 calories per 1 bowl. Protein: 10g, Carbs: 25g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Mombar?",
+    "output": "Mombar has 180 calories per 3 pieces. It contains 8g protein, 22g carbs, and 7g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Mombar?",
+    "output": "Mombar (3 pieces):\n- Calories: 180\n- Protein: 8g\n- Carbs: 22g\n- Fat: 7g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ممبار؟",
+    "output": "ممبار فيه 180 سعرة حرارية لكل 3 pieces. البروتين 8 جرام، الكاربز 22 جرام، والدهون 7 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel mombar?",
+    "output": "mombar has 180 calories per 3 pieces. Protein: 8g, Carbs: 22g, Fat: 7g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Kawarea?",
+    "output": "Kawarea has 350 calories per 1 portion. It contains 30g protein, 5g carbs, and 24g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Kawarea?",
+    "output": "Kawarea (1 portion):\n- Calories: 350\n- Protein: 30g\n- Carbs: 5g\n- Fat: 24g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كوارع؟",
+    "output": "كوارع فيه 350 سعرة حرارية لكل 1 portion. البروتين 30 جرام، الكاربز 5 جرام، والدهون 24 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel kawar3?",
+    "output": "kawar3 has 350 calories per 1 portion. Protein: 30g, Carbs: 5g, Fat: 24g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Kawarea good for muscle building?",
+    "output": "Yes! Kawarea is a good protein source with 30g protein per 1 portion. That's great for muscle building. Total calories: 350.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Hawawshi?",
+    "output": "Hawawshi has 480 calories per 1 sandwich. It contains 25g protein, 40g carbs, and 26g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Hawawshi?",
+    "output": "Hawawshi (1 sandwich):\n- Calories: 480\n- Protein: 25g\n- Carbs: 40g\n- Fat: 26g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في حواوشي؟",
+    "output": "حواوشي فيه 480 سعرة حرارية لكل 1 sandwich. البروتين 25 جرام، الكاربز 40 جرام، والدهون 26 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 7awashy?",
+    "output": "7awashy has 480 calories per 1 sandwich. Protein: 25g, Carbs: 40g, Fat: 26g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Hawawshi good for muscle building?",
+    "output": "Yes! Hawawshi is a good protein source with 25g protein per 1 sandwich. That's great for muscle building. Total calories: 480.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Kofta?",
+    "output": "Kofta has 280 calories per 4 pieces. It contains 22g protein, 5g carbs, and 20g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Kofta?",
+    "output": "Kofta (4 pieces):\n- Calories: 280\n- Protein: 22g\n- Carbs: 5g\n- Fat: 20g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كفتة؟",
+    "output": "كفتة فيه 280 سعرة حرارية لكل 4 pieces. البروتين 22 جرام، الكاربز 5 جرام، والدهون 20 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel kofta?",
+    "output": "kofta has 280 calories per 4 pieces. Protein: 22g, Carbs: 5g, Fat: 20g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Kofta good for muscle building?",
+    "output": "Yes! Kofta is a good protein source with 22g protein per 4 pieces. That's great for muscle building. Total calories: 280.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Kebab?",
+    "output": "Kebab has 320 calories per 4 pieces. It contains 28g protein, 2g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Kebab?",
+    "output": "Kebab (4 pieces):\n- Calories: 320\n- Protein: 28g\n- Carbs: 2g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كباب؟",
+    "output": "كباب فيه 320 سعرة حرارية لكل 4 pieces. البروتين 28 جرام، الكاربز 2 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel kebab?",
+    "output": "kebab has 320 calories per 4 pieces. Protein: 28g, Carbs: 2g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Kebab good for muscle building?",
+    "output": "Yes! Kebab is a good protein source with 28g protein per 4 pieces. That's great for muscle building. Total calories: 320.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Grilled Chicken?",
+    "output": "Grilled Chicken has 250 calories per quarter chicken. It contains 35g protein, 0g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Grilled Chicken?",
+    "output": "Grilled Chicken (quarter chicken):\n- Calories: 250\n- Protein: 35g\n- Carbs: 0g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في فراخ مشوية؟",
+    "output": "فراخ مشوية فيه 250 سعرة حرارية لكل quarter chicken. البروتين 35 جرام، الكاربز 0 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel ferakh mashweya?",
+    "output": "ferakh mashweya has 250 calories per quarter chicken. Protein: 35g, Carbs: 0g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Grilled Chicken good for muscle building?",
+    "output": "Yes! Grilled Chicken is a good protein source with 35g protein per quarter chicken. That's great for muscle building. Total calories: 250.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Grilled Pigeon?",
+    "output": "Grilled Pigeon has 280 calories per 1 pigeon. It contains 30g protein, 0g carbs, and 18g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Grilled Pigeon?",
+    "output": "Grilled Pigeon (1 pigeon):\n- Calories: 280\n- Protein: 30g\n- Carbs: 0g\n- Fat: 18g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في حمام مشوي؟",
+    "output": "حمام مشوي فيه 280 سعرة حرارية لكل 1 pigeon. البروتين 30 جرام، الكاربز 0 جرام، والدهون 18 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 7amam mashwy?",
+    "output": "7amam mashwy has 280 calories per 1 pigeon. Protein: 30g, Carbs: 0g, Fat: 18g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Grilled Pigeon good for muscle building?",
+    "output": "Yes! Grilled Pigeon is a good protein source with 30g protein per 1 pigeon. That's great for muscle building. Total calories: 280.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Stuffed Pigeon?",
+    "output": "Stuffed Pigeon has 380 calories per 1 pigeon. It contains 28g protein, 25g carbs, and 20g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Stuffed Pigeon?",
+    "output": "Stuffed Pigeon (1 pigeon):\n- Calories: 380\n- Protein: 28g\n- Carbs: 25g\n- Fat: 20g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في حمام محشي؟",
+    "output": "حمام محشي فيه 380 سعرة حرارية لكل 1 pigeon. البروتين 28 جرام، الكاربز 25 جرام، والدهون 20 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 7amam ma7shy?",
+    "output": "7amam ma7shy has 380 calories per 1 pigeon. Protein: 28g, Carbs: 25g, Fat: 20g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Stuffed Pigeon good for muscle building?",
+    "output": "Yes! Stuffed Pigeon is a good protein source with 28g protein per 1 pigeon. That's great for muscle building. Total calories: 380.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Shawerma Chicken?",
+    "output": "Shawerma Chicken has 450 calories per 1 sandwich. It contains 28g protein, 42g carbs, and 20g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Shawerma Chicken?",
+    "output": "Shawerma Chicken (1 sandwich):\n- Calories: 450\n- Protein: 28g\n- Carbs: 42g\n- Fat: 20g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شاورما فراخ؟",
+    "output": "شاورما فراخ فيه 450 سعرة حرارية لكل 1 sandwich. البروتين 28 جرام، الكاربز 42 جرام، والدهون 20 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel shawerma ferakh?",
+    "output": "shawerma ferakh has 450 calories per 1 sandwich. Protein: 28g, Carbs: 42g, Fat: 20g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Shawerma Chicken good for muscle building?",
+    "output": "Yes! Shawerma Chicken is a good protein source with 28g protein per 1 sandwich. That's great for muscle building. Total calories: 450.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Shawerma Meat?",
+    "output": "Shawerma Meat has 520 calories per 1 sandwich. It contains 30g protein, 42g carbs, and 28g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Shawerma Meat?",
+    "output": "Shawerma Meat (1 sandwich):\n- Calories: 520\n- Protein: 30g\n- Carbs: 42g\n- Fat: 28g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شاورما لحمة؟",
+    "output": "شاورما لحمة فيه 520 سعرة حرارية لكل 1 sandwich. البروتين 30 جرام، الكاربز 42 جرام، والدهون 28 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel shawerma la7ma?",
+    "output": "shawerma la7ma has 520 calories per 1 sandwich. Protein: 30g, Carbs: 42g, Fat: 28g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Shawerma Meat good for muscle building?",
+    "output": "Yes! Shawerma Meat is a good protein source with 30g protein per 1 sandwich. That's great for muscle building. Total calories: 520.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Shawerma Meat good for bulking?",
+    "output": "Yes! Shawerma Meat has 520 calories per 1 sandwich, which is good for bulking. It provides 30g protein, 42g carbs, and 28g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Liver Alexandria?",
+    "output": "Liver Alexandria has 380 calories per 1 sandwich. It contains 25g protein, 35g carbs, and 18g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Liver Alexandria?",
+    "output": "Liver Alexandria (1 sandwich):\n- Calories: 380\n- Protein: 25g\n- Carbs: 35g\n- Fat: 18g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كبدة اسكندراني؟",
+    "output": "كبدة اسكندراني فيه 380 سعرة حرارية لكل 1 sandwich. البروتين 25 جرام، الكاربز 35 جرام، والدهون 18 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel kebda eskandarany?",
+    "output": "kebda eskandarany has 380 calories per 1 sandwich. Protein: 25g, Carbs: 35g, Fat: 18g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Liver Alexandria good for muscle building?",
+    "output": "Yes! Liver Alexandria is a good protein source with 25g protein per 1 sandwich. That's great for muscle building. Total calories: 380.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Sogo2?",
+    "output": "Sogo2 has 320 calories per 4 pieces. It contains 18g protein, 8g carbs, and 26g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Sogo2?",
+    "output": "Sogo2 (4 pieces):\n- Calories: 320\n- Protein: 18g\n- Carbs: 8g\n- Fat: 26g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في سجق؟",
+    "output": "سجق فيه 320 سعرة حرارية لكل 4 pieces. البروتين 18 جرام، الكاربز 8 جرام، والدهون 26 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel sogo2?",
+    "output": "sogo2 has 320 calories per 4 pieces. Protein: 18g, Carbs: 8g, Fat: 26g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Egyptian Rice?",
+    "output": "Egyptian Rice has 200 calories per 1 cup cooked. It contains 4g protein, 44g carbs, and 1g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Egyptian Rice?",
+    "output": "Egyptian Rice (1 cup cooked):\n- Calories: 200\n- Protein: 4g\n- Carbs: 44g\n- Fat: 1g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في أرز مصري؟",
+    "output": "أرز مصري فيه 200 سعرة حرارية لكل 1 cup cooked. البروتين 4 جرام، الكاربز 44 جرام، والدهون 1 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel roz masry?",
+    "output": "roz masry has 200 calories per 1 cup cooked. Protein: 4g, Carbs: 44g, Fat: 1g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Rice with Vermicelli?",
+    "output": "Rice with Vermicelli has 250 calories per 1 cup. It contains 5g protein, 50g carbs, and 4g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Rice with Vermicelli?",
+    "output": "Rice with Vermicelli (1 cup):\n- Calories: 250\n- Protein: 5g\n- Carbs: 50g\n- Fat: 4g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في أرز بالشعرية؟",
+    "output": "أرز بالشعرية فيه 250 سعرة حرارية لكل 1 cup. البروتين 5 جرام، الكاربز 50 جرام، والدهون 4 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel roz bel sha3reya?",
+    "output": "roz bel sha3reya has 250 calories per 1 cup. Protein: 5g, Carbs: 50g, Fat: 4g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Fried Rice with Liver?",
+    "output": "Fried Rice with Liver has 380 calories per 1 plate. It contains 18g protein, 48g carbs, and 14g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Fried Rice with Liver?",
+    "output": "Fried Rice with Liver (1 plate):\n- Calories: 380\n- Protein: 18g\n- Carbs: 48g\n- Fat: 14g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في أرز بالكبد؟",
+    "output": "أرز بالكبد فيه 380 سعرة حرارية لكل 1 plate. البروتين 18 جرام، الكاربز 48 جرام، والدهون 14 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel roz bel kebda?",
+    "output": "roz bel kebda has 380 calories per 1 plate. Protein: 18g, Carbs: 48g, Fat: 14g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Macarona Bechamel?",
+    "output": "Macarona Bechamel has 450 calories per 1 piece. It contains 18g protein, 45g carbs, and 24g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Macarona Bechamel?",
+    "output": "Macarona Bechamel (1 piece):\n- Calories: 450\n- Protein: 18g\n- Carbs: 45g\n- Fat: 24g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في مكرونة بشاميل؟",
+    "output": "مكرونة بشاميل فيه 450 سعرة حرارية لكل 1 piece. البروتين 18 جرام، الكاربز 45 جرام، والدهون 24 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel makarona bashamel?",
+    "output": "makarona bashamel has 450 calories per 1 piece. Protein: 18g, Carbs: 45g, Fat: 24g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Egyptian Pasta?",
+    "output": "Egyptian Pasta has 350 calories per 1 plate. It contains 12g protein, 55g carbs, and 10g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Egyptian Pasta?",
+    "output": "Egyptian Pasta (1 plate):\n- Calories: 350\n- Protein: 12g\n- Carbs: 55g\n- Fat: 10g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في مكرونة مصري؟",
+    "output": "مكرونة مصري فيه 350 سعرة حرارية لكل 1 plate. البروتين 12 جرام، الكاربز 55 جرام، والدهون 10 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel makarona masry?",
+    "output": "makarona masry has 350 calories per 1 plate. Protein: 12g, Carbs: 55g, Fat: 10g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Lentil Soup?",
+    "output": "Lentil Soup has 180 calories per 1 bowl. It contains 12g protein, 28g carbs, and 3g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Lentil Soup?",
+    "output": "Lentil Soup (1 bowl):\n- Calories: 180\n- Protein: 12g\n- Carbs: 28g\n- Fat: 3g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شوربة عدس؟",
+    "output": "شوربة عدس فيه 180 سعرة حرارية لكل 1 bowl. البروتين 12 جرام، الكاربز 28 جرام، والدهون 3 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel shorbet 3ads?",
+    "output": "shorbet 3ads has 180 calories per 1 bowl. Protein: 12g, Carbs: 28g, Fat: 3g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Lentil Soup good for cutting?",
+    "output": "Yes! Lentil Soup is great for cutting - only 180 calories with 12g protein per 1 bowl. High protein, low calorie ratio is perfect for fat loss.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Chicken Soup?",
+    "output": "Chicken Soup has 120 calories per 1 bowl. It contains 10g protein, 8g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Chicken Soup?",
+    "output": "Chicken Soup (1 bowl):\n- Calories: 120\n- Protein: 10g\n- Carbs: 8g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شوربة فراخ؟",
+    "output": "شوربة فراخ فيه 120 سعرة حرارية لكل 1 bowl. البروتين 10 جرام، الكاربز 8 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel shorbet ferakh?",
+    "output": "shorbet ferakh has 120 calories per 1 bowl. Protein: 10g, Carbs: 8g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Orzo Soup?",
+    "output": "Orzo Soup has 150 calories per 1 bowl. It contains 6g protein, 25g carbs, and 3g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Orzo Soup?",
+    "output": "Orzo Soup (1 bowl):\n- Calories: 150\n- Protein: 6g\n- Carbs: 25g\n- Fat: 3g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شوربة لسان عصفور؟",
+    "output": "شوربة لسان عصفور فيه 150 سعرة حرارية لكل 1 bowl. البروتين 6 جرام، الكاربز 25 جرام، والدهون 3 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel shorbet lesan 3asfour?",
+    "output": "shorbet lesan 3asfour has 150 calories per 1 bowl. Protein: 6g, Carbs: 25g, Fat: 3g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Tahini Salad?",
+    "output": "Tahini Salad has 180 calories per 100g. It contains 5g protein, 8g carbs, and 15g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Tahini Salad?",
+    "output": "Tahini Salad (100g):\n- Calories: 180\n- Protein: 5g\n- Carbs: 8g\n- Fat: 15g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في سلطة طحينة؟",
+    "output": "سلطة طحينة فيه 180 سعرة حرارية لكل 100g. البروتين 5 جرام، الكاربز 8 جرام، والدهون 15 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel salata ta7ina?",
+    "output": "salata ta7ina has 180 calories per 100g. Protein: 5g, Carbs: 8g, Fat: 15g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Baba Ghanoush?",
+    "output": "Baba Ghanoush has 120 calories per 100g. It contains 3g protein, 10g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Baba Ghanoush?",
+    "output": "Baba Ghanoush (100g):\n- Calories: 120\n- Protein: 3g\n- Carbs: 10g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بابا غنوج؟",
+    "output": "بابا غنوج فيه 120 سعرة حرارية لكل 100g. البروتين 3 جرام، الكاربز 10 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel baba ghanoug?",
+    "output": "baba ghanoug has 120 calories per 100g. Protein: 3g, Carbs: 10g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Baladi Salad?",
+    "output": "Baladi Salad has 80 calories per 1 bowl. It contains 2g protein, 12g carbs, and 3g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Baladi Salad?",
+    "output": "Baladi Salad (1 bowl):\n- Calories: 80\n- Protein: 2g\n- Carbs: 12g\n- Fat: 3g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في سلطة بلدي؟",
+    "output": "سلطة بلدي فيه 80 سعرة حرارية لكل 1 bowl. البروتين 2 جرام، الكاربز 12 جرام، والدهون 3 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel salata balady?",
+    "output": "salata balady has 80 calories per 1 bowl. Protein: 2g, Carbs: 12g, Fat: 3g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Pickles (Torshi)?",
+    "output": "Pickles (Torshi) has 20 calories per 50g. It contains 1g protein, 4g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Pickles (Torshi)?",
+    "output": "Pickles (Torshi) (50g):\n- Calories: 20\n- Protein: 1g\n- Carbs: 4g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في طرشي؟",
+    "output": "طرشي فيه 20 سعرة حرارية لكل 50g. البروتين 1 جرام، الكاربز 4 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel torshi?",
+    "output": "torshi has 20 calories per 50g. Protein: 1g, Carbs: 4g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Basbousa?",
+    "output": "Basbousa has 280 calories per 1 piece. It contains 4g protein, 45g carbs, and 10g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Basbousa?",
+    "output": "Basbousa (1 piece):\n- Calories: 280\n- Protein: 4g\n- Carbs: 45g\n- Fat: 10g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بسبوسة؟",
+    "output": "بسبوسة فيه 280 سعرة حرارية لكل 1 piece. البروتين 4 جرام، الكاربز 45 جرام، والدهون 10 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel basbousa?",
+    "output": "basbousa has 280 calories per 1 piece. Protein: 4g, Carbs: 45g, Fat: 10g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Konafa?",
+    "output": "Konafa has 350 calories per 1 piece. It contains 6g protein, 50g carbs, and 15g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Konafa?",
+    "output": "Konafa (1 piece):\n- Calories: 350\n- Protein: 6g\n- Carbs: 50g\n- Fat: 15g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كنافة؟",
+    "output": "كنافة فيه 350 سعرة حرارية لكل 1 piece. البروتين 6 جرام، الكاربز 50 جرام، والدهون 15 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel konafa?",
+    "output": "konafa has 350 calories per 1 piece. Protein: 6g, Carbs: 50g, Fat: 15g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Konafa with Cream?",
+    "output": "Konafa with Cream has 420 calories per 1 piece. It contains 8g protein, 55g carbs, and 20g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Konafa with Cream?",
+    "output": "Konafa with Cream (1 piece):\n- Calories: 420\n- Protein: 8g\n- Carbs: 55g\n- Fat: 20g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كنافة بالقشطة؟",
+    "output": "كنافة بالقشطة فيه 420 سعرة حرارية لكل 1 piece. البروتين 8 جرام، الكاربز 55 جرام، والدهون 20 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel konafa bel eshta?",
+    "output": "konafa bel eshta has 420 calories per 1 piece. Protein: 8g, Carbs: 55g, Fat: 20g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Om Ali?",
+    "output": "Om Ali has 450 calories per 1 bowl. It contains 10g protein, 55g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Om Ali?",
+    "output": "Om Ali (1 bowl):\n- Calories: 450\n- Protein: 10g\n- Carbs: 55g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في أم علي؟",
+    "output": "أم علي فيه 450 سعرة حرارية لكل 1 bowl. البروتين 10 جرام، الكاربز 55 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel om 3ali?",
+    "output": "om 3ali has 450 calories per 1 bowl. Protein: 10g, Carbs: 55g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Roz Bel Laban?",
+    "output": "Roz Bel Laban has 280 calories per 1 bowl. It contains 8g protein, 45g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Roz Bel Laban?",
+    "output": "Roz Bel Laban (1 bowl):\n- Calories: 280\n- Protein: 8g\n- Carbs: 45g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في أرز باللبن؟",
+    "output": "أرز باللبن فيه 280 سعرة حرارية لكل 1 bowl. البروتين 8 جرام، الكاربز 45 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel roz bel laban?",
+    "output": "roz bel laban has 280 calories per 1 bowl. Protein: 8g, Carbs: 45g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Mehalabeya?",
+    "output": "Mehalabeya has 220 calories per 1 bowl. It contains 6g protein, 35g carbs, and 7g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Mehalabeya?",
+    "output": "Mehalabeya (1 bowl):\n- Calories: 220\n- Protein: 6g\n- Carbs: 35g\n- Fat: 7g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في مهلبية؟",
+    "output": "مهلبية فيه 220 سعرة حرارية لكل 1 bowl. البروتين 6 جرام، الكاربز 35 جرام، والدهون 7 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel me7alabeya?",
+    "output": "me7alabeya has 220 calories per 1 bowl. Protein: 6g, Carbs: 35g, Fat: 7g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Balah El Sham?",
+    "output": "Balah El Sham has 120 calories per 3 pieces. It contains 2g protein, 18g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Balah El Sham?",
+    "output": "Balah El Sham (3 pieces):\n- Calories: 120\n- Protein: 2g\n- Carbs: 18g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بلح الشام؟",
+    "output": "بلح الشام فيه 120 سعرة حرارية لكل 3 pieces. البروتين 2 جرام، الكاربز 18 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel bala7 el sham?",
+    "output": "bala7 el sham has 120 calories per 3 pieces. Protein: 2g, Carbs: 18g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Zalabia?",
+    "output": "Zalabia has 180 calories per 5 pieces. It contains 3g protein, 28g carbs, and 7g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Zalabia?",
+    "output": "Zalabia (5 pieces):\n- Calories: 180\n- Protein: 3g\n- Carbs: 28g\n- Fat: 7g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في زلابية؟",
+    "output": "زلابية فيه 180 سعرة حرارية لكل 5 pieces. البروتين 3 جرام، الكاربز 28 جرام، والدهون 7 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel zalabya?",
+    "output": "zalabya has 180 calories per 5 pieces. Protein: 3g, Carbs: 28g, Fat: 7g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Atayef?",
+    "output": "Atayef has 150 calories per 2 pieces. It contains 4g protein, 22g carbs, and 6g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Atayef?",
+    "output": "Atayef (2 pieces):\n- Calories: 150\n- Protein: 4g\n- Carbs: 22g\n- Fat: 6g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في قطايف؟",
+    "output": "قطايف فيه 150 سعرة حرارية لكل 2 pieces. البروتين 4 جرام، الكاربز 22 جرام، والدهون 6 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel atayef?",
+    "output": "atayef has 150 calories per 2 pieces. Protein: 4g, Carbs: 22g, Fat: 6g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Halawa Tahinia?",
+    "output": "Halawa Tahinia has 180 calories per 40g. It contains 5g protein, 20g carbs, and 10g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Halawa Tahinia?",
+    "output": "Halawa Tahinia (40g):\n- Calories: 180\n- Protein: 5g\n- Carbs: 20g\n- Fat: 10g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في حلاوة طحينية؟",
+    "output": "حلاوة طحينية فيه 180 سعرة حرارية لكل 40g. البروتين 5 جرام، الكاربز 20 جرام، والدهون 10 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 7alawa?",
+    "output": "7alawa has 180 calories per 40g. Protein: 5g, Carbs: 20g, Fat: 10g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Karkade (Hibiscus)?",
+    "output": "Karkade (Hibiscus) has 40 calories per 1 glass. It contains 0g protein, 10g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Karkade (Hibiscus)?",
+    "output": "Karkade (Hibiscus) (1 glass):\n- Calories: 40\n- Protein: 0g\n- Carbs: 10g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كركديه؟",
+    "output": "كركديه فيه 40 سعرة حرارية لكل 1 glass. البروتين 0 جرام، الكاربز 10 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel karkade?",
+    "output": "karkade has 40 calories per 1 glass. Protein: 0g, Carbs: 10g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Sahlab?",
+    "output": "Sahlab has 180 calories per 1 cup. It contains 6g protein, 30g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Sahlab?",
+    "output": "Sahlab (1 cup):\n- Calories: 180\n- Protein: 6g\n- Carbs: 30g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في سحلب؟",
+    "output": "سحلب فيه 180 سعرة حرارية لكل 1 cup. البروتين 6 جرام، الكاربز 30 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel sa7lab?",
+    "output": "sa7lab has 180 calories per 1 cup. Protein: 6g, Carbs: 30g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Qamar El Din?",
+    "output": "Qamar El Din has 120 calories per 1 glass. It contains 1g protein, 30g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Qamar El Din?",
+    "output": "Qamar El Din (1 glass):\n- Calories: 120\n- Protein: 1g\n- Carbs: 30g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في قمر الدين؟",
+    "output": "قمر الدين فيه 120 سعرة حرارية لكل 1 glass. البروتين 1 جرام، الكاربز 30 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 2amar el deen?",
+    "output": "2amar el deen has 120 calories per 1 glass. Protein: 1g, Carbs: 30g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Tamarind?",
+    "output": "Tamarind has 100 calories per 1 glass. It contains 1g protein, 25g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Tamarind?",
+    "output": "Tamarind (1 glass):\n- Calories: 100\n- Protein: 1g\n- Carbs: 25g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في تمر هندي؟",
+    "output": "تمر هندي فيه 100 سعرة حرارية لكل 1 glass. البروتين 1 جرام، الكاربز 25 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel tamr hendy?",
+    "output": "tamr hendy has 100 calories per 1 glass. Protein: 1g, Carbs: 25g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Sugarcane Juice?",
+    "output": "Sugarcane Juice has 180 calories per 1 glass. It contains 0g protein, 45g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Sugarcane Juice?",
+    "output": "Sugarcane Juice (1 glass):\n- Calories: 180\n- Protein: 0g\n- Carbs: 45g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في عصير قصب؟",
+    "output": "عصير قصب فيه 180 سعرة حرارية لكل 1 glass. البروتين 0 جرام، الكاربز 45 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 3aseer 2asab?",
+    "output": "3aseer 2asab has 180 calories per 1 glass. Protein: 0g, Carbs: 45g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Fresh Orange Juice?",
+    "output": "Fresh Orange Juice has 110 calories per 1 glass. It contains 2g protein, 26g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Fresh Orange Juice?",
+    "output": "Fresh Orange Juice (1 glass):\n- Calories: 110\n- Protein: 2g\n- Carbs: 26g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في عصير برتقال؟",
+    "output": "عصير برتقال فيه 110 سعرة حرارية لكل 1 glass. البروتين 2 جرام، الكاربز 26 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 3aseer borto2an?",
+    "output": "3aseer borto2an has 110 calories per 1 glass. Protein: 2g, Carbs: 26g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Mango Juice?",
+    "output": "Mango Juice has 150 calories per 1 glass. It contains 1g protein, 38g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Mango Juice?",
+    "output": "Mango Juice (1 glass):\n- Calories: 150\n- Protein: 1g\n- Carbs: 38g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في عصير مانجو؟",
+    "output": "عصير مانجو فيه 150 سعرة حرارية لكل 1 glass. البروتين 1 جرام، الكاربز 38 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 3aseer manga?",
+    "output": "3aseer manga has 150 calories per 1 glass. Protein: 1g, Carbs: 38g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Lemon with Mint?",
+    "output": "Lemon with Mint has 60 calories per 1 glass. It contains 0g protein, 15g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Lemon with Mint?",
+    "output": "Lemon with Mint (1 glass):\n- Calories: 60\n- Protein: 0g\n- Carbs: 15g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ليمون بالنعناع؟",
+    "output": "ليمون بالنعناع فيه 60 سعرة حرارية لكل 1 glass. البروتين 0 جرام، الكاربز 15 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel lamoon bel na3na3?",
+    "output": "lamoon bel na3na3 has 60 calories per 1 glass. Protein: 0g, Carbs: 15g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in McDonald's Big Mac?",
+    "output": "McDonald's Big Mac has 550 calories per 1 burger. It contains 25g protein, 45g carbs, and 30g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's Big Mac?",
+    "output": "McDonald's Big Mac (1 burger):\n- Calories: 550\n- Protein: 25g\n- Carbs: 45g\n- Fat: 30g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيج ماك؟",
+    "output": "بيج ماك فيه 550 سعرة حرارية لكل 1 burger. البروتين 25 جرام، الكاربز 45 جرام، والدهون 30 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel big mac?",
+    "output": "big mac has 550 calories per 1 burger. Protein: 25g, Carbs: 45g, Fat: 30g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is McDonald's Big Mac good for muscle building?",
+    "output": "Yes! McDonald's Big Mac is a good protein source with 25g protein per 1 burger. That's great for muscle building. Total calories: 550.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is McDonald's Big Mac good for bulking?",
+    "output": "Yes! McDonald's Big Mac has 550 calories per 1 burger, which is good for bulking. It provides 25g protein, 45g carbs, and 30g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in McDonald's McChicken?",
+    "output": "McDonald's McChicken has 400 calories per 1 sandwich. It contains 15g protein, 40g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's McChicken?",
+    "output": "McDonald's McChicken (1 sandwich):\n- Calories: 400\n- Protein: 15g\n- Carbs: 40g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ماك تشيكن؟",
+    "output": "ماك تشيكن فيه 400 سعرة حرارية لكل 1 sandwich. البروتين 15 جرام، الكاربز 40 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel mac chicken?",
+    "output": "mac chicken has 400 calories per 1 sandwich. Protein: 15g, Carbs: 40g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in McDonald's Quarter Pounder?",
+    "output": "McDonald's Quarter Pounder has 520 calories per 1 burger. It contains 30g protein, 40g carbs, and 28g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's Quarter Pounder?",
+    "output": "McDonald's Quarter Pounder (1 burger):\n- Calories: 520\n- Protein: 30g\n- Carbs: 40g\n- Fat: 28g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كوارتر باوندر؟",
+    "output": "كوارتر باوندر فيه 520 سعرة حرارية لكل 1 burger. البروتين 30 جرام، الكاربز 40 جرام، والدهون 28 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel quarter pounder?",
+    "output": "quarter pounder has 520 calories per 1 burger. Protein: 30g, Carbs: 40g, Fat: 28g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is McDonald's Quarter Pounder good for muscle building?",
+    "output": "Yes! McDonald's Quarter Pounder is a good protein source with 30g protein per 1 burger. That's great for muscle building. Total calories: 520.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is McDonald's Quarter Pounder good for bulking?",
+    "output": "Yes! McDonald's Quarter Pounder has 520 calories per 1 burger, which is good for bulking. It provides 30g protein, 40g carbs, and 28g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in McDonald's McArabia Chicken?",
+    "output": "McDonald's McArabia Chicken has 550 calories per 1 sandwich. It contains 28g protein, 48g carbs, and 28g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's McArabia Chicken?",
+    "output": "McDonald's McArabia Chicken (1 sandwich):\n- Calories: 550\n- Protein: 28g\n- Carbs: 48g\n- Fat: 28g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ماك ارابيا فراخ؟",
+    "output": "ماك ارابيا فراخ فيه 550 سعرة حرارية لكل 1 sandwich. البروتين 28 جرام، الكاربز 48 جرام، والدهون 28 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel mac arabia ferakh?",
+    "output": "mac arabia ferakh has 550 calories per 1 sandwich. Protein: 28g, Carbs: 48g, Fat: 28g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is McDonald's McArabia Chicken good for muscle building?",
+    "output": "Yes! McDonald's McArabia Chicken is a good protein source with 28g protein per 1 sandwich. That's great for muscle building. Total calories: 550.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is McDonald's McArabia Chicken good for bulking?",
+    "output": "Yes! McDonald's McArabia Chicken has 550 calories per 1 sandwich, which is good for bulking. It provides 28g protein, 48g carbs, and 28g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in McDonald's McArabia Kofta?",
+    "output": "McDonald's McArabia Kofta has 620 calories per 1 sandwich. It contains 26g protein, 50g carbs, and 35g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's McArabia Kofta?",
+    "output": "McDonald's McArabia Kofta (1 sandwich):\n- Calories: 620\n- Protein: 26g\n- Carbs: 50g\n- Fat: 35g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ماك ارابيا كفتة؟",
+    "output": "ماك ارابيا كفتة فيه 620 سعرة حرارية لكل 1 sandwich. البروتين 26 جرام، الكاربز 50 جرام، والدهون 35 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel mac arabia kofta?",
+    "output": "mac arabia kofta has 620 calories per 1 sandwich. Protein: 26g, Carbs: 50g, Fat: 35g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is McDonald's McArabia Kofta good for muscle building?",
+    "output": "Yes! McDonald's McArabia Kofta is a good protein source with 26g protein per 1 sandwich. That's great for muscle building. Total calories: 620.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is McDonald's McArabia Kofta good for bulking?",
+    "output": "Yes! McDonald's McArabia Kofta has 620 calories per 1 sandwich, which is good for bulking. It provides 26g protein, 50g carbs, and 35g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in McDonald's Chicken Nuggets 6pc?",
+    "output": "McDonald's Chicken Nuggets 6pc has 280 calories per 6 pieces. It contains 14g protein, 18g carbs, and 18g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's Chicken Nuggets 6pc?",
+    "output": "McDonald's Chicken Nuggets 6pc (6 pieces):\n- Calories: 280\n- Protein: 14g\n- Carbs: 18g\n- Fat: 18g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في تشيكن ناجتس؟",
+    "output": "تشيكن ناجتس فيه 280 سعرة حرارية لكل 6 pieces. البروتين 14 جرام، الكاربز 18 جرام، والدهون 18 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel chicken nuggets?",
+    "output": "chicken nuggets has 280 calories per 6 pieces. Protein: 14g, Carbs: 18g, Fat: 18g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in McDonald's Medium Fries?",
+    "output": "McDonald's Medium Fries has 340 calories per medium. It contains 4g protein, 44g carbs, and 16g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's Medium Fries?",
+    "output": "McDonald's Medium Fries (medium):\n- Calories: 340\n- Protein: 4g\n- Carbs: 44g\n- Fat: 16g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بطاطس وسط؟",
+    "output": "بطاطس وسط فيه 340 سعرة حرارية لكل medium. البروتين 4 جرام، الكاربز 44 جرام، والدهون 16 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel fries medium?",
+    "output": "fries medium has 340 calories per medium. Protein: 4g, Carbs: 44g, Fat: 16g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in McDonald's Large Fries?",
+    "output": "McDonald's Large Fries has 490 calories per large. It contains 6g protein, 63g carbs, and 23g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's Large Fries?",
+    "output": "McDonald's Large Fries (large):\n- Calories: 490\n- Protein: 6g\n- Carbs: 63g\n- Fat: 23g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بطاطس كبير؟",
+    "output": "بطاطس كبير فيه 490 سعرة حرارية لكل large. البروتين 6 جرام، الكاربز 63 جرام، والدهون 23 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel fries kebeer?",
+    "output": "fries kebeer has 490 calories per large. Protein: 6g, Carbs: 63g, Fat: 23g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in McDonald's McFlurry Oreo?",
+    "output": "McDonald's McFlurry Oreo has 340 calories per 1 cup. It contains 8g protein, 52g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for McDonald's McFlurry Oreo?",
+    "output": "McDonald's McFlurry Oreo (1 cup):\n- Calories: 340\n- Protein: 8g\n- Carbs: 52g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ماك فلوري اوريو؟",
+    "output": "ماك فلوري اوريو فيه 340 سعرة حرارية لكل 1 cup. البروتين 8 جرام، الكاربز 52 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel mcflurry oreo?",
+    "output": "mcflurry oreo has 340 calories per 1 cup. Protein: 8g, Carbs: 52g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in KFC Original 2 Pieces?",
+    "output": "KFC Original 2 Pieces has 480 calories per 2 pieces. It contains 36g protein, 16g carbs, and 30g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for KFC Original 2 Pieces?",
+    "output": "KFC Original 2 Pieces (2 pieces):\n- Calories: 480\n- Protein: 36g\n- Carbs: 16g\n- Fat: 30g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في قطعتين اوريجينال؟",
+    "output": "قطعتين اوريجينال فيه 480 سعرة حرارية لكل 2 pieces. البروتين 36 جرام، الكاربز 16 جرام، والدهون 30 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel 2 pieces original?",
+    "output": "2 pieces original has 480 calories per 2 pieces. Protein: 36g, Carbs: 16g, Fat: 30g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is KFC Original 2 Pieces good for muscle building?",
+    "output": "Yes! KFC Original 2 Pieces is a good protein source with 36g protein per 2 pieces. That's great for muscle building. Total calories: 480.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in KFC Zinger?",
+    "output": "KFC Zinger has 520 calories per 1 sandwich. It contains 28g protein, 42g carbs, and 28g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for KFC Zinger?",
+    "output": "KFC Zinger (1 sandwich):\n- Calories: 520\n- Protein: 28g\n- Carbs: 42g\n- Fat: 28g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في زنجر؟",
+    "output": "زنجر فيه 520 سعرة حرارية لكل 1 sandwich. البروتين 28 جرام، الكاربز 42 جرام، والدهون 28 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel zinger?",
+    "output": "zinger has 520 calories per 1 sandwich. Protein: 28g, Carbs: 42g, Fat: 28g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is KFC Zinger good for muscle building?",
+    "output": "Yes! KFC Zinger is a good protein source with 28g protein per 1 sandwich. That's great for muscle building. Total calories: 520.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is KFC Zinger good for bulking?",
+    "output": "Yes! KFC Zinger has 520 calories per 1 sandwich, which is good for bulking. It provides 28g protein, 42g carbs, and 28g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in KFC Twister?",
+    "output": "KFC Twister has 480 calories per 1 wrap. It contains 22g protein, 45g carbs, and 24g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for KFC Twister?",
+    "output": "KFC Twister (1 wrap):\n- Calories: 480\n- Protein: 22g\n- Carbs: 45g\n- Fat: 24g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في تويستر؟",
+    "output": "تويستر فيه 480 سعرة حرارية لكل 1 wrap. البروتين 22 جرام، الكاربز 45 جرام، والدهون 24 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel twister?",
+    "output": "twister has 480 calories per 1 wrap. Protein: 22g, Carbs: 45g, Fat: 24g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is KFC Twister good for muscle building?",
+    "output": "Yes! KFC Twister is a good protein source with 22g protein per 1 wrap. That's great for muscle building. Total calories: 480.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in KFC Mighty Zinger?",
+    "output": "KFC Mighty Zinger has 680 calories per 1 sandwich. It contains 35g protein, 50g carbs, and 38g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for KFC Mighty Zinger?",
+    "output": "KFC Mighty Zinger (1 sandwich):\n- Calories: 680\n- Protein: 35g\n- Carbs: 50g\n- Fat: 38g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في مايتي زنجر؟",
+    "output": "مايتي زنجر فيه 680 سعرة حرارية لكل 1 sandwich. البروتين 35 جرام، الكاربز 50 جرام، والدهون 38 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel mighty zinger?",
+    "output": "mighty zinger has 680 calories per 1 sandwich. Protein: 35g, Carbs: 50g, Fat: 38g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is KFC Mighty Zinger good for muscle building?",
+    "output": "Yes! KFC Mighty Zinger is a good protein source with 35g protein per 1 sandwich. That's great for muscle building. Total calories: 680.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is KFC Mighty Zinger good for bulking?",
+    "output": "Yes! KFC Mighty Zinger has 680 calories per 1 sandwich, which is good for bulking. It provides 35g protein, 50g carbs, and 38g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in KFC Strips 5pc?",
+    "output": "KFC Strips 5pc has 420 calories per 5 pieces. It contains 32g protein, 22g carbs, and 24g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for KFC Strips 5pc?",
+    "output": "KFC Strips 5pc (5 pieces):\n- Calories: 420\n- Protein: 32g\n- Carbs: 22g\n- Fat: 24g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ستربس؟",
+    "output": "ستربس فيه 420 سعرة حرارية لكل 5 pieces. البروتين 32 جرام، الكاربز 22 جرام، والدهون 24 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel strips?",
+    "output": "strips has 420 calories per 5 pieces. Protein: 32g, Carbs: 22g, Fat: 24g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is KFC Strips 5pc good for muscle building?",
+    "output": "Yes! KFC Strips 5pc is a good protein source with 32g protein per 5 pieces. That's great for muscle building. Total calories: 420.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in KFC Coleslaw?",
+    "output": "KFC Coleslaw has 150 calories per regular. It contains 1g protein, 12g carbs, and 11g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for KFC Coleslaw?",
+    "output": "KFC Coleslaw (regular):\n- Calories: 150\n- Protein: 1g\n- Carbs: 12g\n- Fat: 11g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كول سلو؟",
+    "output": "كول سلو فيه 150 سعرة حرارية لكل regular. البروتين 1 جرام، الكاربز 12 جرام، والدهون 11 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel coleslaw?",
+    "output": "coleslaw has 150 calories per regular. Protein: 1g, Carbs: 12g, Fat: 11g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in KFC Bucket 8 Pieces?",
+    "output": "KFC Bucket 8 Pieces has 1920 calories per 8 pieces. It contains 144g protein, 64g carbs, and 120g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for KFC Bucket 8 Pieces?",
+    "output": "KFC Bucket 8 Pieces (8 pieces):\n- Calories: 1920\n- Protein: 144g\n- Carbs: 64g\n- Fat: 120g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في باكت ٨ قطع؟",
+    "output": "باكت ٨ قطع فيه 1920 سعرة حرارية لكل 8 pieces. البروتين 144 جرام، الكاربز 64 جرام، والدهون 120 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel bucket 8?",
+    "output": "bucket 8 has 1920 calories per 8 pieces. Protein: 144g, Carbs: 64g, Fat: 120g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is KFC Bucket 8 Pieces good for muscle building?",
+    "output": "Yes! KFC Bucket 8 Pieces is a good protein source with 144g protein per 8 pieces. That's great for muscle building. Total calories: 1920.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is KFC Bucket 8 Pieces good for bulking?",
+    "output": "Yes! KFC Bucket 8 Pieces has 1920 calories per 8 pieces, which is good for bulking. It provides 144g protein, 64g carbs, and 120g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Hardee's Angus Thickburger?",
+    "output": "Hardee's Angus Thickburger has 780 calories per 1 burger. It contains 42g protein, 52g carbs, and 48g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Hardee's Angus Thickburger?",
+    "output": "Hardee's Angus Thickburger (1 burger):\n- Calories: 780\n- Protein: 42g\n- Carbs: 52g\n- Fat: 48g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في انجوس ثيك برجر؟",
+    "output": "انجوس ثيك برجر فيه 780 سعرة حرارية لكل 1 burger. البروتين 42 جرام، الكاربز 52 جرام، والدهون 48 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel angus thickburger?",
+    "output": "angus thickburger has 780 calories per 1 burger. Protein: 42g, Carbs: 52g, Fat: 48g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Hardee's Angus Thickburger good for muscle building?",
+    "output": "Yes! Hardee's Angus Thickburger is a good protein source with 42g protein per 1 burger. That's great for muscle building. Total calories: 780.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Hardee's Angus Thickburger good for bulking?",
+    "output": "Yes! Hardee's Angus Thickburger has 780 calories per 1 burger, which is good for bulking. It provides 42g protein, 52g carbs, and 48g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Hardee's Mushroom Swiss?",
+    "output": "Hardee's Mushroom Swiss has 720 calories per 1 burger. It contains 38g protein, 48g carbs, and 45g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Hardee's Mushroom Swiss?",
+    "output": "Hardee's Mushroom Swiss (1 burger):\n- Calories: 720\n- Protein: 38g\n- Carbs: 48g\n- Fat: 45g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في مشروم سويس؟",
+    "output": "مشروم سويس فيه 720 سعرة حرارية لكل 1 burger. البروتين 38 جرام، الكاربز 48 جرام، والدهون 45 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel mushroom swiss?",
+    "output": "mushroom swiss has 720 calories per 1 burger. Protein: 38g, Carbs: 48g, Fat: 45g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Hardee's Mushroom Swiss good for muscle building?",
+    "output": "Yes! Hardee's Mushroom Swiss is a good protein source with 38g protein per 1 burger. That's great for muscle building. Total calories: 720.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Hardee's Mushroom Swiss good for bulking?",
+    "output": "Yes! Hardee's Mushroom Swiss has 720 calories per 1 burger, which is good for bulking. It provides 38g protein, 48g carbs, and 45g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Hardee's Spicy Chicken?",
+    "output": "Hardee's Spicy Chicken has 480 calories per 1 sandwich. It contains 25g protein, 45g carbs, and 24g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Hardee's Spicy Chicken?",
+    "output": "Hardee's Spicy Chicken (1 sandwich):\n- Calories: 480\n- Protein: 25g\n- Carbs: 45g\n- Fat: 24g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في سبايسي تشيكن؟",
+    "output": "سبايسي تشيكن فيه 480 سعرة حرارية لكل 1 sandwich. البروتين 25 جرام، الكاربز 45 جرام، والدهون 24 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel spicy chicken?",
+    "output": "spicy chicken has 480 calories per 1 sandwich. Protein: 25g, Carbs: 45g, Fat: 24g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Hardee's Spicy Chicken good for muscle building?",
+    "output": "Yes! Hardee's Spicy Chicken is a good protein source with 25g protein per 1 sandwich. That's great for muscle building. Total calories: 480.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Hardee's Hand Breaded Tenders?",
+    "output": "Hardee's Hand Breaded Tenders has 380 calories per 5 pieces. It contains 28g protein, 22g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Hardee's Hand Breaded Tenders?",
+    "output": "Hardee's Hand Breaded Tenders (5 pieces):\n- Calories: 380\n- Protein: 28g\n- Carbs: 22g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في هاند بريدد تندرز؟",
+    "output": "هاند بريدد تندرز فيه 380 سعرة حرارية لكل 5 pieces. البروتين 28 جرام، الكاربز 22 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel tenders?",
+    "output": "tenders has 380 calories per 5 pieces. Protein: 28g, Carbs: 22g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Hardee's Hand Breaded Tenders good for muscle building?",
+    "output": "Yes! Hardee's Hand Breaded Tenders is a good protein source with 28g protein per 5 pieces. That's great for muscle building. Total calories: 380.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Cook Door Chicken Burger?",
+    "output": "Cook Door Chicken Burger has 420 calories per 1 burger. It contains 22g protein, 40g carbs, and 20g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Cook Door Chicken Burger?",
+    "output": "Cook Door Chicken Burger (1 burger):\n- Calories: 420\n- Protein: 22g\n- Carbs: 40g\n- Fat: 20g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في تشيكن برجر كوك دور؟",
+    "output": "تشيكن برجر كوك دور فيه 420 سعرة حرارية لكل 1 burger. البروتين 22 جرام، الكاربز 40 جرام، والدهون 20 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel cook door chicken?",
+    "output": "cook door chicken has 420 calories per 1 burger. Protein: 22g, Carbs: 40g, Fat: 20g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Cook Door Chicken Burger good for muscle building?",
+    "output": "Yes! Cook Door Chicken Burger is a good protein source with 22g protein per 1 burger. That's great for muscle building. Total calories: 420.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Cook Door Beef Burger?",
+    "output": "Cook Door Beef Burger has 480 calories per 1 burger. It contains 26g protein, 38g carbs, and 26g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Cook Door Beef Burger?",
+    "output": "Cook Door Beef Burger (1 burger):\n- Calories: 480\n- Protein: 26g\n- Carbs: 38g\n- Fat: 26g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيف برجر كوك دور؟",
+    "output": "بيف برجر كوك دور فيه 480 سعرة حرارية لكل 1 burger. البروتين 26 جرام، الكاربز 38 جرام، والدهون 26 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel cook door beef?",
+    "output": "cook door beef has 480 calories per 1 burger. Protein: 26g, Carbs: 38g, Fat: 26g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Cook Door Beef Burger good for muscle building?",
+    "output": "Yes! Cook Door Beef Burger is a good protein source with 26g protein per 1 burger. That's great for muscle building. Total calories: 480.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Cook Door Chicken Pane?",
+    "output": "Cook Door Chicken Pane has 380 calories per 1 sandwich. It contains 24g protein, 35g carbs, and 18g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Cook Door Chicken Pane?",
+    "output": "Cook Door Chicken Pane (1 sandwich):\n- Calories: 380\n- Protein: 24g\n- Carbs: 35g\n- Fat: 18g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في تشيكن بانيه كوك دور؟",
+    "output": "تشيكن بانيه كوك دور فيه 380 سعرة حرارية لكل 1 sandwich. البروتين 24 جرام، الكاربز 35 جرام، والدهون 18 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel cook door pane?",
+    "output": "cook door pane has 380 calories per 1 sandwich. Protein: 24g, Carbs: 35g, Fat: 18g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Cook Door Chicken Pane good for muscle building?",
+    "output": "Yes! Cook Door Chicken Pane is a good protein source with 24g protein per 1 sandwich. That's great for muscle building. Total calories: 380.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Cook Door Chicken Shawerma?",
+    "output": "Cook Door Chicken Shawerma has 450 calories per 1 sandwich. It contains 26g protein, 42g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Cook Door Chicken Shawerma?",
+    "output": "Cook Door Chicken Shawerma (1 sandwich):\n- Calories: 450\n- Protein: 26g\n- Carbs: 42g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شاورما فراخ كوك دور؟",
+    "output": "شاورما فراخ كوك دور فيه 450 سعرة حرارية لكل 1 sandwich. البروتين 26 جرام، الكاربز 42 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel cook door shawerma?",
+    "output": "cook door shawerma has 450 calories per 1 sandwich. Protein: 26g, Carbs: 42g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Cook Door Chicken Shawerma good for muscle building?",
+    "output": "Yes! Cook Door Chicken Shawerma is a good protein source with 26g protein per 1 sandwich. That's great for muscle building. Total calories: 450.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Pizza Hut Pepperoni Medium?",
+    "output": "Pizza Hut Pepperoni Medium has 280 calories per 1 slice. It contains 12g protein, 32g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Pizza Hut Pepperoni Medium?",
+    "output": "Pizza Hut Pepperoni Medium (1 slice):\n- Calories: 280\n- Protein: 12g\n- Carbs: 32g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيتزا بيبروني وسط؟",
+    "output": "بيتزا بيبروني وسط فيه 280 سعرة حرارية لكل 1 slice. البروتين 12 جرام، الكاربز 32 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel pizza pepperoni medium?",
+    "output": "pizza pepperoni medium has 280 calories per 1 slice. Protein: 12g, Carbs: 32g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Pizza Hut Supreme Medium?",
+    "output": "Pizza Hut Supreme Medium has 300 calories per 1 slice. It contains 14g protein, 34g carbs, and 14g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Pizza Hut Supreme Medium?",
+    "output": "Pizza Hut Supreme Medium (1 slice):\n- Calories: 300\n- Protein: 14g\n- Carbs: 34g\n- Fat: 14g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيتزا سوبريم وسط؟",
+    "output": "بيتزا سوبريم وسط فيه 300 سعرة حرارية لكل 1 slice. البروتين 14 جرام، الكاربز 34 جرام، والدهون 14 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel pizza supreme?",
+    "output": "pizza supreme has 300 calories per 1 slice. Protein: 14g, Carbs: 34g, Fat: 14g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Pizza Hut Cheese Lovers Medium?",
+    "output": "Pizza Hut Cheese Lovers Medium has 320 calories per 1 slice. It contains 15g protein, 32g carbs, and 16g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Pizza Hut Cheese Lovers Medium?",
+    "output": "Pizza Hut Cheese Lovers Medium (1 slice):\n- Calories: 320\n- Protein: 15g\n- Carbs: 32g\n- Fat: 16g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيتزا تشيز لوفرز؟",
+    "output": "بيتزا تشيز لوفرز فيه 320 سعرة حرارية لكل 1 slice. البروتين 15 جرام، الكاربز 32 جرام، والدهون 16 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel cheese lovers?",
+    "output": "cheese lovers has 320 calories per 1 slice. Protein: 15g, Carbs: 32g, Fat: 16g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Pizza Hut Chicken BBQ Medium?",
+    "output": "Pizza Hut Chicken BBQ Medium has 290 calories per 1 slice. It contains 14g protein, 33g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Pizza Hut Chicken BBQ Medium?",
+    "output": "Pizza Hut Chicken BBQ Medium (1 slice):\n- Calories: 290\n- Protein: 14g\n- Carbs: 33g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيتزا تشيكن باربيكيو؟",
+    "output": "بيتزا تشيكن باربيكيو فيه 290 سعرة حرارية لكل 1 slice. البروتين 14 جرام، الكاربز 33 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel chicken bbq pizza?",
+    "output": "chicken bbq pizza has 290 calories per 1 slice. Protein: 14g, Carbs: 33g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Subway Chicken Teriyaki 6 inch?",
+    "output": "Subway Chicken Teriyaki 6 inch has 370 calories per 6 inch. It contains 26g protein, 46g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Subway Chicken Teriyaki 6 inch?",
+    "output": "Subway Chicken Teriyaki 6 inch (6 inch):\n- Calories: 370\n- Protein: 26g\n- Carbs: 46g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في صب واي تشيكن ترياكي؟",
+    "output": "صب واي تشيكن ترياكي فيه 370 سعرة حرارية لكل 6 inch. البروتين 26 جرام، الكاربز 46 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel subway teriyaki?",
+    "output": "subway teriyaki has 370 calories per 6 inch. Protein: 26g, Carbs: 46g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Subway Chicken Teriyaki 6 inch good for muscle building?",
+    "output": "Yes! Subway Chicken Teriyaki 6 inch is a good protein source with 26g protein per 6 inch. That's great for muscle building. Total calories: 370.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Subway Turkey 6 inch?",
+    "output": "Subway Turkey 6 inch has 280 calories per 6 inch. It contains 18g protein, 42g carbs, and 4g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Subway Turkey 6 inch?",
+    "output": "Subway Turkey 6 inch (6 inch):\n- Calories: 280\n- Protein: 18g\n- Carbs: 42g\n- Fat: 4g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في صب واي تيركي؟",
+    "output": "صب واي تيركي فيه 280 سعرة حرارية لكل 6 inch. البروتين 18 جرام، الكاربز 42 جرام، والدهون 4 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel subway turkey?",
+    "output": "subway turkey has 280 calories per 6 inch. Protein: 18g, Carbs: 42g, Fat: 4g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Subway BMT 6 inch?",
+    "output": "Subway BMT 6 inch has 400 calories per 6 inch. It contains 22g protein, 44g carbs, and 16g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Subway BMT 6 inch?",
+    "output": "Subway BMT 6 inch (6 inch):\n- Calories: 400\n- Protein: 22g\n- Carbs: 44g\n- Fat: 16g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في صب واي بي ام تي؟",
+    "output": "صب واي بي ام تي فيه 400 سعرة حرارية لكل 6 inch. البروتين 22 جرام، الكاربز 44 جرام، والدهون 16 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel subway bmt?",
+    "output": "subway bmt has 400 calories per 6 inch. Protein: 22g, Carbs: 44g, Fat: 16g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Subway BMT 6 inch good for muscle building?",
+    "output": "Yes! Subway BMT 6 inch is a good protein source with 22g protein per 6 inch. That's great for muscle building. Total calories: 400.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Subway Tuna 6 inch?",
+    "output": "Subway Tuna 6 inch has 480 calories per 6 inch. It contains 20g protein, 44g carbs, and 26g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Subway Tuna 6 inch?",
+    "output": "Subway Tuna 6 inch (6 inch):\n- Calories: 480\n- Protein: 20g\n- Carbs: 44g\n- Fat: 26g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في صب واي تونة؟",
+    "output": "صب واي تونة فيه 480 سعرة حرارية لكل 6 inch. البروتين 20 جرام، الكاربز 44 جرام، والدهون 26 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel subway tuna?",
+    "output": "subway tuna has 480 calories per 6 inch. Protein: 20g, Carbs: 44g, Fat: 26g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Subway Tuna 6 inch good for muscle building?",
+    "output": "Yes! Subway Tuna 6 inch is a good protein source with 20g protein per 6 inch. That's great for muscle building. Total calories: 480.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Grilled Chicken Breast with Rice?",
+    "output": "Grilled Chicken Breast with Rice has 420 calories per 1 meal. It contains 42g protein, 40g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Grilled Chicken Breast with Rice?",
+    "output": "Grilled Chicken Breast with Rice (1 meal):\n- Calories: 420\n- Protein: 42g\n- Carbs: 40g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في صدور فراخ مشوية مع أرز؟",
+    "output": "صدور فراخ مشوية مع أرز فيه 420 سعرة حرارية لكل 1 meal. البروتين 42 جرام، الكاربز 40 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel grilled chicken breast meal?",
+    "output": "grilled chicken breast meal has 420 calories per 1 meal. Protein: 42g, Carbs: 40g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Grilled Chicken Breast with Rice good for muscle building?",
+    "output": "Yes! Grilled Chicken Breast with Rice is a good protein source with 42g protein per 1 meal. That's great for muscle building. Total calories: 420.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Salmon with Vegetables?",
+    "output": "Salmon with Vegetables has 480 calories per 1 meal. It contains 38g protein, 25g carbs, and 24g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Salmon with Vegetables?",
+    "output": "Salmon with Vegetables (1 meal):\n- Calories: 480\n- Protein: 38g\n- Carbs: 25g\n- Fat: 24g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في سلمون مع خضار؟",
+    "output": "سلمون مع خضار فيه 480 سعرة حرارية لكل 1 meal. البروتين 38 جرام، الكاربز 25 جرام، والدهون 24 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel salmon meal?",
+    "output": "salmon meal has 480 calories per 1 meal. Protein: 38g, Carbs: 25g, Fat: 24g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Salmon with Vegetables good for muscle building?",
+    "output": "Yes! Salmon with Vegetables is a good protein source with 38g protein per 1 meal. That's great for muscle building. Total calories: 480.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Beef Steak with Sweet Potato?",
+    "output": "Beef Steak with Sweet Potato has 520 calories per 1 meal. It contains 45g protein, 35g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Beef Steak with Sweet Potato?",
+    "output": "Beef Steak with Sweet Potato (1 meal):\n- Calories: 520\n- Protein: 45g\n- Carbs: 35g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ستيك لحمة مع بطاطا؟",
+    "output": "ستيك لحمة مع بطاطا فيه 520 سعرة حرارية لكل 1 meal. البروتين 45 جرام، الكاربز 35 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel steak meal?",
+    "output": "steak meal has 520 calories per 1 meal. Protein: 45g, Carbs: 35g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Beef Steak with Sweet Potato good for muscle building?",
+    "output": "Yes! Beef Steak with Sweet Potato is a good protein source with 45g protein per 1 meal. That's great for muscle building. Total calories: 520.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Beef Steak with Sweet Potato good for bulking?",
+    "output": "Yes! Beef Steak with Sweet Potato has 520 calories per 1 meal, which is good for bulking. It provides 45g protein, 35g carbs, and 22g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Chicken Shawerma Bowl?",
+    "output": "Chicken Shawerma Bowl has 450 calories per 1 bowl. It contains 38g protein, 42g carbs, and 14g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Chicken Shawerma Bowl?",
+    "output": "Chicken Shawerma Bowl (1 bowl):\n- Calories: 450\n- Protein: 38g\n- Carbs: 42g\n- Fat: 14g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بول شاورما فراخ؟",
+    "output": "بول شاورما فراخ فيه 450 سعرة حرارية لكل 1 bowl. البروتين 38 جرام، الكاربز 42 جرام، والدهون 14 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel shawerma bowl?",
+    "output": "shawerma bowl has 450 calories per 1 bowl. Protein: 38g, Carbs: 42g, Fat: 14g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Chicken Shawerma Bowl good for muscle building?",
+    "output": "Yes! Chicken Shawerma Bowl is a good protein source with 38g protein per 1 bowl. That's great for muscle building. Total calories: 450.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Protein Pancakes?",
+    "output": "Protein Pancakes has 350 calories per 3 pancakes. It contains 28g protein, 38g carbs, and 10g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Protein Pancakes?",
+    "output": "Protein Pancakes (3 pancakes):\n- Calories: 350\n- Protein: 28g\n- Carbs: 38g\n- Fat: 10g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بان كيك بروتين؟",
+    "output": "بان كيك بروتين فيه 350 سعرة حرارية لكل 3 pancakes. البروتين 28 جرام، الكاربز 38 جرام، والدهون 10 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel protein pancakes?",
+    "output": "protein pancakes has 350 calories per 3 pancakes. Protein: 28g, Carbs: 38g, Fat: 10g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Protein Pancakes good for muscle building?",
+    "output": "Yes! Protein Pancakes is a good protein source with 28g protein per 3 pancakes. That's great for muscle building. Total calories: 350.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Overnight Oats?",
+    "output": "Overnight Oats has 320 calories per 1 jar. It contains 15g protein, 48g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Overnight Oats?",
+    "output": "Overnight Oats (1 jar):\n- Calories: 320\n- Protein: 15g\n- Carbs: 48g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في اوفرنايت اوتس؟",
+    "output": "اوفرنايت اوتس فيه 320 سعرة حرارية لكل 1 jar. البروتين 15 جرام، الكاربز 48 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel overnight oats?",
+    "output": "overnight oats has 320 calories per 1 jar. Protein: 15g, Carbs: 48g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Egg White Omelette?",
+    "output": "Egg White Omelette has 180 calories per 1 omelette. It contains 25g protein, 5g carbs, and 6g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Egg White Omelette?",
+    "output": "Egg White Omelette (1 omelette):\n- Calories: 180\n- Protein: 25g\n- Carbs: 5g\n- Fat: 6g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في اومليت بياض البيض؟",
+    "output": "اومليت بياض البيض فيه 180 سعرة حرارية لكل 1 omelette. البروتين 25 جرام، الكاربز 5 جرام، والدهون 6 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel egg white omelette?",
+    "output": "egg white omelette has 180 calories per 1 omelette. Protein: 25g, Carbs: 5g, Fat: 6g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Egg White Omelette good for muscle building?",
+    "output": "Yes! Egg White Omelette is a good protein source with 25g protein per 1 omelette. That's great for muscle building. Total calories: 180.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Egg White Omelette good for cutting?",
+    "output": "Yes! Egg White Omelette is great for cutting - only 180 calories with 25g protein per 1 omelette. High protein, low calorie ratio is perfect for fat loss.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Grilled Kofta with Salad?",
+    "output": "Grilled Kofta with Salad has 380 calories per 1 meal. It contains 32g protein, 15g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Grilled Kofta with Salad?",
+    "output": "Grilled Kofta with Salad (1 meal):\n- Calories: 380\n- Protein: 32g\n- Carbs: 15g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كفتة مشوية مع سلطة؟",
+    "output": "كفتة مشوية مع سلطة فيه 380 سعرة حرارية لكل 1 meal. البروتين 32 جرام، الكاربز 15 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel kofta salad?",
+    "output": "kofta salad has 380 calories per 1 meal. Protein: 32g, Carbs: 15g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Grilled Kofta with Salad good for muscle building?",
+    "output": "Yes! Grilled Kofta with Salad is a good protein source with 32g protein per 1 meal. That's great for muscle building. Total calories: 380.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Tuna Salad Bowl?",
+    "output": "Tuna Salad Bowl has 320 calories per 1 bowl. It contains 30g protein, 18g carbs, and 15g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Tuna Salad Bowl?",
+    "output": "Tuna Salad Bowl (1 bowl):\n- Calories: 320\n- Protein: 30g\n- Carbs: 18g\n- Fat: 15g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بول سلطة تونة؟",
+    "output": "بول سلطة تونة فيه 320 سعرة حرارية لكل 1 bowl. البروتين 30 جرام، الكاربز 18 جرام، والدهون 15 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel tuna salad bowl?",
+    "output": "tuna salad bowl has 320 calories per 1 bowl. Protein: 30g, Carbs: 18g, Fat: 15g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Tuna Salad Bowl good for muscle building?",
+    "output": "Yes! Tuna Salad Bowl is a good protein source with 30g protein per 1 bowl. That's great for muscle building. Total calories: 320.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Quinoa Chicken Bowl?",
+    "output": "Quinoa Chicken Bowl has 450 calories per 1 bowl. It contains 35g protein, 45g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Quinoa Chicken Bowl?",
+    "output": "Quinoa Chicken Bowl (1 bowl):\n- Calories: 450\n- Protein: 35g\n- Carbs: 45g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بول كينوا مع فراخ؟",
+    "output": "بول كينوا مع فراخ فيه 450 سعرة حرارية لكل 1 bowl. البروتين 35 جرام، الكاربز 45 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel quinoa bowl?",
+    "output": "quinoa bowl has 450 calories per 1 bowl. Protein: 35g, Carbs: 45g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Quinoa Chicken Bowl good for muscle building?",
+    "output": "Yes! Quinoa Chicken Bowl is a good protein source with 35g protein per 1 bowl. That's great for muscle building. Total calories: 450.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Juhayna Full Cream Milk?",
+    "output": "Juhayna Full Cream Milk has 150 calories per 250ml. It contains 8g protein, 12g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Juhayna Full Cream Milk?",
+    "output": "Juhayna Full Cream Milk (250ml):\n- Calories: 150\n- Protein: 8g\n- Carbs: 12g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في لبن جهينة كامل الدسم؟",
+    "output": "لبن جهينة كامل الدسم فيه 150 سعرة حرارية لكل 250ml. البروتين 8 جرام، الكاربز 12 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel laban juhayna?",
+    "output": "laban juhayna has 150 calories per 250ml. Protein: 8g, Carbs: 12g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Juhayna Skimmed Milk?",
+    "output": "Juhayna Skimmed Milk has 80 calories per 250ml. It contains 8g protein, 12g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Juhayna Skimmed Milk?",
+    "output": "Juhayna Skimmed Milk (250ml):\n- Calories: 80\n- Protein: 8g\n- Carbs: 12g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في لبن جهينة خالي الدسم؟",
+    "output": "لبن جهينة خالي الدسم فيه 80 سعرة حرارية لكل 250ml. البروتين 8 جرام، الكاربز 12 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel laban juhayna skimmed?",
+    "output": "laban juhayna skimmed has 80 calories per 250ml. Protein: 8g, Carbs: 12g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Activia Yogurt Plain?",
+    "output": "Activia Yogurt Plain has 120 calories per 150g. It contains 6g protein, 15g carbs, and 4g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Activia Yogurt Plain?",
+    "output": "Activia Yogurt Plain (150g):\n- Calories: 120\n- Protein: 6g\n- Carbs: 15g\n- Fat: 4g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في اكتيفيا زبادي؟",
+    "output": "اكتيفيا زبادي فيه 120 سعرة حرارية لكل 150g. البروتين 6 جرام، الكاربز 15 جرام، والدهون 4 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel activia?",
+    "output": "activia has 120 calories per 150g. Protein: 6g, Carbs: 15g, Fat: 4g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Labanita Yogurt?",
+    "output": "Labanita Yogurt has 100 calories per 150g. It contains 5g protein, 12g carbs, and 4g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Labanita Yogurt?",
+    "output": "Labanita Yogurt (150g):\n- Calories: 100\n- Protein: 5g\n- Carbs: 12g\n- Fat: 4g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في لبنيتا؟",
+    "output": "لبنيتا فيه 100 سعرة حرارية لكل 150g. البروتين 5 جرام، الكاربز 12 جرام، والدهون 4 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel labanita?",
+    "output": "labanita has 100 calories per 150g. Protein: 5g, Carbs: 12g, Fat: 4g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Domty White Cheese?",
+    "output": "Domty White Cheese has 280 calories per 100g. It contains 18g protein, 2g carbs, and 22g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Domty White Cheese?",
+    "output": "Domty White Cheese (100g):\n- Calories: 280\n- Protein: 18g\n- Carbs: 2g\n- Fat: 22g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في جبنة دومتي بيضاء؟",
+    "output": "جبنة دومتي بيضاء فيه 280 سعرة حرارية لكل 100g. البروتين 18 جرام، الكاربز 2 جرام، والدهون 22 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel gebna domty?",
+    "output": "gebna domty has 280 calories per 100g. Protein: 18g, Carbs: 2g, Fat: 22g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Domty Feta Cheese?",
+    "output": "Domty Feta Cheese has 260 calories per 100g. It contains 14g protein, 4g carbs, and 21g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Domty Feta Cheese?",
+    "output": "Domty Feta Cheese (100g):\n- Calories: 260\n- Protein: 14g\n- Carbs: 4g\n- Fat: 21g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في جبنة فيتا دومتي؟",
+    "output": "جبنة فيتا دومتي فيه 260 سعرة حرارية لكل 100g. البروتين 14 جرام، الكاربز 4 جرام، والدهون 21 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel feta domty?",
+    "output": "feta domty has 260 calories per 100g. Protein: 14g, Carbs: 4g, Fat: 21g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in President Cheese Triangle?",
+    "output": "President Cheese Triangle has 50 calories per 1 triangle. It contains 2g protein, 1g carbs, and 4g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for President Cheese Triangle?",
+    "output": "President Cheese Triangle (1 triangle):\n- Calories: 50\n- Protein: 2g\n- Carbs: 1g\n- Fat: 4g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في جبنة بريزيدون مثلثات؟",
+    "output": "جبنة بريزيدون مثلثات فيه 50 سعرة حرارية لكل 1 triangle. البروتين 2 جرام، الكاربز 1 جرام، والدهون 4 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel president cheese?",
+    "output": "president cheese has 50 calories per 1 triangle. Protein: 2g, Carbs: 1g, Fat: 4g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Kiri Cheese?",
+    "output": "Kiri Cheese has 55 calories per 1 piece. It contains 2g protein, 1g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Kiri Cheese?",
+    "output": "Kiri Cheese (1 piece):\n- Calories: 55\n- Protein: 2g\n- Carbs: 1g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في جبنة كيري؟",
+    "output": "جبنة كيري فيه 55 سعرة حرارية لكل 1 piece. البروتين 2 جرام، الكاربز 1 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel kiri?",
+    "output": "kiri has 55 calories per 1 piece. Protein: 2g, Carbs: 1g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Labneh?",
+    "output": "Labneh has 180 calories per 100g. It contains 8g protein, 4g carbs, and 15g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Labneh?",
+    "output": "Labneh (100g):\n- Calories: 180\n- Protein: 8g\n- Carbs: 4g\n- Fat: 15g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في لبنة؟",
+    "output": "لبنة فيه 180 سعرة حرارية لكل 100g. البروتين 8 جرام، الكاربز 4 جرام، والدهون 15 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel labneh?",
+    "output": "labneh has 180 calories per 100g. Protein: 8g, Carbs: 4g, Fat: 15g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Canned Tuna in Water?",
+    "output": "Canned Tuna in Water has 100 calories per 100g. It contains 22g protein, 0g carbs, and 1g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Canned Tuna in Water?",
+    "output": "Canned Tuna in Water (100g):\n- Calories: 100\n- Protein: 22g\n- Carbs: 0g\n- Fat: 1g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في تونة في ماء؟",
+    "output": "تونة في ماء فيه 100 سعرة حرارية لكل 100g. البروتين 22 جرام، الكاربز 0 جرام، والدهون 1 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel tuna?",
+    "output": "tuna has 100 calories per 100g. Protein: 22g, Carbs: 0g, Fat: 1g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Canned Tuna in Water good for muscle building?",
+    "output": "Yes! Canned Tuna in Water is a good protein source with 22g protein per 100g. That's great for muscle building. Total calories: 100.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Canned Tuna in Water good for cutting?",
+    "output": "Yes! Canned Tuna in Water is great for cutting - only 100 calories with 22g protein per 100g. High protein, low calorie ratio is perfect for fat loss.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Canned Tuna in Oil?",
+    "output": "Canned Tuna in Oil has 200 calories per 100g. It contains 22g protein, 0g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Canned Tuna in Oil?",
+    "output": "Canned Tuna in Oil (100g):\n- Calories: 200\n- Protein: 22g\n- Carbs: 0g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في تونة في زيت؟",
+    "output": "تونة في زيت فيه 200 سعرة حرارية لكل 100g. البروتين 22 جرام، الكاربز 0 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel tuna bel zeit?",
+    "output": "tuna bel zeit has 200 calories per 100g. Protein: 22g, Carbs: 0g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Canned Tuna in Oil good for muscle building?",
+    "output": "Yes! Canned Tuna in Oil is a good protein source with 22g protein per 100g. That's great for muscle building. Total calories: 200.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Chicken Breast Raw?",
+    "output": "Chicken Breast Raw has 165 calories per 100g raw. It contains 31g protein, 0g carbs, and 4g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Chicken Breast Raw?",
+    "output": "Chicken Breast Raw (100g raw):\n- Calories: 165\n- Protein: 31g\n- Carbs: 0g\n- Fat: 4g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في صدور فراخ؟",
+    "output": "صدور فراخ فيه 165 سعرة حرارية لكل 100g raw. البروتين 31 جرام، الكاربز 0 جرام، والدهون 4 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel sodor ferakh?",
+    "output": "sodor ferakh has 165 calories per 100g raw. Protein: 31g, Carbs: 0g, Fat: 4g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Chicken Breast Raw good for muscle building?",
+    "output": "Yes! Chicken Breast Raw is a good protein source with 31g protein per 100g raw. That's great for muscle building. Total calories: 165.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Chicken Breast Raw good for cutting?",
+    "output": "Yes! Chicken Breast Raw is great for cutting - only 165 calories with 31g protein per 100g raw. High protein, low calorie ratio is perfect for fat loss.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Ground Beef?",
+    "output": "Ground Beef has 250 calories per 100g. It contains 26g protein, 0g carbs, and 17g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Ground Beef?",
+    "output": "Ground Beef (100g):\n- Calories: 250\n- Protein: 26g\n- Carbs: 0g\n- Fat: 17g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في لحمة مفرومة؟",
+    "output": "لحمة مفرومة فيه 250 سعرة حرارية لكل 100g. البروتين 26 جرام، الكاربز 0 جرام، والدهون 17 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel la7ma mafroma?",
+    "output": "la7ma mafroma has 250 calories per 100g. Protein: 26g, Carbs: 0g, Fat: 17g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Ground Beef good for muscle building?",
+    "output": "Yes! Ground Beef is a good protein source with 26g protein per 100g. That's great for muscle building. Total calories: 250.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Eggs Large?",
+    "output": "Eggs Large has 70 calories per 1 egg. It contains 6g protein, 1g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Eggs Large?",
+    "output": "Eggs Large (1 egg):\n- Calories: 70\n- Protein: 6g\n- Carbs: 1g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيض؟",
+    "output": "بيض فيه 70 سعرة حرارية لكل 1 egg. البروتين 6 جرام، الكاربز 1 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel beid?",
+    "output": "beid has 70 calories per 1 egg. Protein: 6g, Carbs: 1g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Egg Whites?",
+    "output": "Egg Whites has 17 calories per 1 egg white. It contains 4g protein, 0g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Egg Whites?",
+    "output": "Egg Whites (1 egg white):\n- Calories: 17\n- Protein: 4g\n- Carbs: 0g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بياض البيض؟",
+    "output": "بياض البيض فيه 17 سعرة حرارية لكل 1 egg white. البروتين 4 جرام، الكاربز 0 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel bayad el beid?",
+    "output": "bayad el beid has 17 calories per 1 egg white. Protein: 4g, Carbs: 0g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Chipsy Cheese?",
+    "output": "Chipsy Cheese has 160 calories per 30g bag. It contains 2g protein, 15g carbs, and 10g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Chipsy Cheese?",
+    "output": "Chipsy Cheese (30g bag):\n- Calories: 160\n- Protein: 2g\n- Carbs: 15g\n- Fat: 10g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شيبسي جبنة؟",
+    "output": "شيبسي جبنة فيه 160 سعرة حرارية لكل 30g bag. البروتين 2 جرام، الكاربز 15 جرام، والدهون 10 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel chipsy gebna?",
+    "output": "chipsy gebna has 160 calories per 30g bag. Protein: 2g, Carbs: 15g, Fat: 10g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Tiger Biscuits?",
+    "output": "Tiger Biscuits has 120 calories per 4 biscuits. It contains 2g protein, 18g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Tiger Biscuits?",
+    "output": "Tiger Biscuits (4 biscuits):\n- Calories: 120\n- Protein: 2g\n- Carbs: 18g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بسكويت تايجر؟",
+    "output": "بسكويت تايجر فيه 120 سعرة حرارية لكل 4 biscuits. البروتين 2 جرام، الكاربز 18 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel tiger biscuit?",
+    "output": "tiger biscuit has 120 calories per 4 biscuits. Protein: 2g, Carbs: 18g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Molto Croissant?",
+    "output": "Molto Croissant has 180 calories per 1 croissant. It contains 3g protein, 22g carbs, and 9g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Molto Croissant?",
+    "output": "Molto Croissant (1 croissant):\n- Calories: 180\n- Protein: 3g\n- Carbs: 22g\n- Fat: 9g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في مولتو كرواسون؟",
+    "output": "مولتو كرواسون فيه 180 سعرة حرارية لكل 1 croissant. البروتين 3 جرام، الكاربز 22 جرام، والدهون 9 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel molto?",
+    "output": "molto has 180 calories per 1 croissant. Protein: 3g, Carbs: 22g, Fat: 9g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Corona Chocolate?",
+    "output": "Corona Chocolate has 280 calories per 50g bar. It contains 4g protein, 32g carbs, and 16g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Corona Chocolate?",
+    "output": "Corona Chocolate (50g bar):\n- Calories: 280\n- Protein: 4g\n- Carbs: 32g\n- Fat: 16g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شوكولاتة كورونا؟",
+    "output": "شوكولاتة كورونا فيه 280 سعرة حرارية لكل 50g bar. البروتين 4 جرام، الكاربز 32 جرام، والدهون 16 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel corona chocolate?",
+    "output": "corona chocolate has 280 calories per 50g bar. Protein: 4g, Carbs: 32g, Fat: 16g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Galaxy Chocolate?",
+    "output": "Galaxy Chocolate has 270 calories per 50g bar. It contains 4g protein, 30g carbs, and 15g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Galaxy Chocolate?",
+    "output": "Galaxy Chocolate (50g bar):\n- Calories: 270\n- Protein: 4g\n- Carbs: 30g\n- Fat: 15g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شوكولاتة جالاكسي؟",
+    "output": "شوكولاتة جالاكسي فيه 270 سعرة حرارية لكل 50g bar. البروتين 4 جرام، الكاربز 30 جرام، والدهون 15 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel galaxy?",
+    "output": "galaxy has 270 calories per 50g bar. Protein: 4g, Carbs: 30g, Fat: 15g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Nestle Fitness?",
+    "output": "Nestle Fitness has 150 calories per 40g. It contains 4g protein, 30g carbs, and 2g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Nestle Fitness?",
+    "output": "Nestle Fitness (40g):\n- Calories: 150\n- Protein: 4g\n- Carbs: 30g\n- Fat: 2g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في نستله فيتنس؟",
+    "output": "نستله فيتنس فيه 150 سعرة حرارية لكل 40g. البروتين 4 جرام، الكاربز 30 جرام، والدهون 2 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel fitness cereal?",
+    "output": "fitness cereal has 150 calories per 40g. Protein: 4g, Carbs: 30g, Fat: 2g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Corn Flakes?",
+    "output": "Corn Flakes has 140 calories per 40g. It contains 3g protein, 32g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Corn Flakes?",
+    "output": "Corn Flakes (40g):\n- Calories: 140\n- Protein: 3g\n- Carbs: 32g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كورن فليكس؟",
+    "output": "كورن فليكس فيه 140 سعرة حرارية لكل 40g. البروتين 3 جرام، الكاربز 32 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel corn flakes?",
+    "output": "corn flakes has 140 calories per 40g. Protein: 3g, Carbs: 32g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Oats Quaker?",
+    "output": "Oats Quaker has 150 calories per 40g dry. It contains 5g protein, 27g carbs, and 3g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Oats Quaker?",
+    "output": "Oats Quaker (40g dry):\n- Calories: 150\n- Protein: 5g\n- Carbs: 27g\n- Fat: 3g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في شوفان كويكر؟",
+    "output": "شوفان كويكر فيه 150 سعرة حرارية لكل 40g dry. البروتين 5 جرام، الكاربز 27 جرام، والدهون 3 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel oats?",
+    "output": "oats has 150 calories per 40g dry. Protein: 5g, Carbs: 27g, Fat: 3g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Pepsi Can?",
+    "output": "Pepsi Can has 150 calories per 330ml can. It contains 0g protein, 39g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Pepsi Can?",
+    "output": "Pepsi Can (330ml can):\n- Calories: 150\n- Protein: 0g\n- Carbs: 39g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيبسي؟",
+    "output": "بيبسي فيه 150 سعرة حرارية لكل 330ml can. البروتين 0 جرام، الكاربز 39 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel pepsi?",
+    "output": "pepsi has 150 calories per 330ml can. Protein: 0g, Carbs: 39g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Coca Cola Can?",
+    "output": "Coca Cola Can has 140 calories per 330ml can. It contains 0g protein, 35g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Coca Cola Can?",
+    "output": "Coca Cola Can (330ml can):\n- Calories: 140\n- Protein: 0g\n- Carbs: 35g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كوكاكولا؟",
+    "output": "كوكاكولا فيه 140 سعرة حرارية لكل 330ml can. البروتين 0 جرام، الكاربز 35 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel coca cola?",
+    "output": "coca cola has 140 calories per 330ml can. Protein: 0g, Carbs: 35g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Pepsi Diet?",
+    "output": "Pepsi Diet has 0 calories per 330ml can. It contains 0g protein, 0g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Pepsi Diet?",
+    "output": "Pepsi Diet (330ml can):\n- Calories: 0\n- Protein: 0g\n- Carbs: 0g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بيبسي دايت؟",
+    "output": "بيبسي دايت فيه 0 سعرة حرارية لكل 330ml can. البروتين 0 جرام، الكاربز 0 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel pepsi diet?",
+    "output": "pepsi diet has 0 calories per 330ml can. Protein: 0g, Carbs: 0g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Nescafe 3in1?",
+    "output": "Nescafe 3in1 has 80 calories per 1 sachet. It contains 1g protein, 14g carbs, and 2g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Nescafe 3in1?",
+    "output": "Nescafe 3in1 (1 sachet):\n- Calories: 80\n- Protein: 1g\n- Carbs: 14g\n- Fat: 2g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في نسكافيه؟",
+    "output": "نسكافيه فيه 80 سعرة حرارية لكل 1 sachet. البروتين 1 جرام، الكاربز 14 جرام، والدهون 2 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel nescafe?",
+    "output": "nescafe has 80 calories per 1 sachet. Protein: 1g, Carbs: 14g, Fat: 2g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Red Bull?",
+    "output": "Red Bull has 110 calories per 250ml can. It contains 0g protein, 27g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Red Bull?",
+    "output": "Red Bull (250ml can):\n- Calories: 110\n- Protein: 0g\n- Carbs: 27g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ريد بول؟",
+    "output": "ريد بول فيه 110 سعرة حرارية لكل 250ml can. البروتين 0 جرام، الكاربز 27 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel red bull?",
+    "output": "red bull has 110 calories per 250ml can. Protein: 0g, Carbs: 27g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Cilantro Latte?",
+    "output": "Cilantro Latte has 180 calories per regular. It contains 6g protein, 18g carbs, and 9g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Cilantro Latte?",
+    "output": "Cilantro Latte (regular):\n- Calories: 180\n- Protein: 6g\n- Carbs: 18g\n- Fat: 9g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في لاتيه سيلانترو؟",
+    "output": "لاتيه سيلانترو فيه 180 سعرة حرارية لكل regular. البروتين 6 جرام، الكاربز 18 جرام، والدهون 9 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel cilantro latte?",
+    "output": "cilantro latte has 180 calories per regular. Protein: 6g, Carbs: 18g, Fat: 9g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Cilantro Cappuccino?",
+    "output": "Cilantro Cappuccino has 150 calories per regular. It contains 6g protein, 14g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Cilantro Cappuccino?",
+    "output": "Cilantro Cappuccino (regular):\n- Calories: 150\n- Protein: 6g\n- Carbs: 14g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كابتشينو سيلانترو؟",
+    "output": "كابتشينو سيلانترو فيه 150 سعرة حرارية لكل regular. البروتين 6 جرام، الكاربز 14 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel cilantro cappuccino?",
+    "output": "cilantro cappuccino has 150 calories per regular. Protein: 6g, Carbs: 14g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Cilantro Chocolate Croissant?",
+    "output": "Cilantro Chocolate Croissant has 320 calories per 1 piece. It contains 5g protein, 38g carbs, and 17g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Cilantro Chocolate Croissant?",
+    "output": "Cilantro Chocolate Croissant (1 piece):\n- Calories: 320\n- Protein: 5g\n- Carbs: 38g\n- Fat: 17g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كرواسون شوكولاتة؟",
+    "output": "كرواسون شوكولاتة فيه 320 سعرة حرارية لكل 1 piece. البروتين 5 جرام، الكاربز 38 جرام، والدهون 17 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel chocolate croissant?",
+    "output": "chocolate croissant has 320 calories per 1 piece. Protein: 5g, Carbs: 38g, Fat: 17g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Cilantro Chicken Panini?",
+    "output": "Cilantro Chicken Panini has 420 calories per 1 sandwich. It contains 24g protein, 45g carbs, and 18g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Cilantro Chicken Panini?",
+    "output": "Cilantro Chicken Panini (1 sandwich):\n- Calories: 420\n- Protein: 24g\n- Carbs: 45g\n- Fat: 18g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في باني تشيكن؟",
+    "output": "باني تشيكن فيه 420 سعرة حرارية لكل 1 sandwich. البروتين 24 جرام، الكاربز 45 جرام، والدهون 18 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel chicken panini?",
+    "output": "chicken panini has 420 calories per 1 sandwich. Protein: 24g, Carbs: 45g, Fat: 18g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Cilantro Chicken Panini good for muscle building?",
+    "output": "Yes! Cilantro Chicken Panini is a good protein source with 24g protein per 1 sandwich. That's great for muscle building. Total calories: 420.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Costa Latte?",
+    "output": "Costa Latte has 200 calories per medium. It contains 8g protein, 20g carbs, and 10g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Costa Latte?",
+    "output": "Costa Latte (medium):\n- Calories: 200\n- Protein: 8g\n- Carbs: 20g\n- Fat: 10g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كوستا لاتيه؟",
+    "output": "كوستا لاتيه فيه 200 سعرة حرارية لكل medium. البروتين 8 جرام، الكاربز 20 جرام، والدهون 10 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel costa latte?",
+    "output": "costa latte has 200 calories per medium. Protein: 8g, Carbs: 20g, Fat: 10g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Costa Mocha?",
+    "output": "Costa Mocha has 280 calories per medium. It contains 8g protein, 35g carbs, and 12g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Costa Mocha?",
+    "output": "Costa Mocha (medium):\n- Calories: 280\n- Protein: 8g\n- Carbs: 35g\n- Fat: 12g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كوستا موكا؟",
+    "output": "كوستا موكا فيه 280 سعرة حرارية لكل medium. البروتين 8 جرام، الكاربز 35 جرام، والدهون 12 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel costa mocha?",
+    "output": "costa mocha has 280 calories per medium. Protein: 8g, Carbs: 35g, Fat: 12g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Costa Iced Coffee?",
+    "output": "Costa Iced Coffee has 150 calories per medium. It contains 4g protein, 22g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Costa Iced Coffee?",
+    "output": "Costa Iced Coffee (medium):\n- Calories: 150\n- Protein: 4g\n- Carbs: 22g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كوستا ايس كوفي؟",
+    "output": "كوستا ايس كوفي فيه 150 سعرة حرارية لكل medium. البروتين 4 جرام، الكاربز 22 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel iced coffee?",
+    "output": "iced coffee has 150 calories per medium. Protein: 4g, Carbs: 22g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Starbucks Caramel Frappuccino?",
+    "output": "Starbucks Caramel Frappuccino has 380 calories per grande. It contains 5g protein, 58g carbs, and 14g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Starbucks Caramel Frappuccino?",
+    "output": "Starbucks Caramel Frappuccino (grande):\n- Calories: 380\n- Protein: 5g\n- Carbs: 58g\n- Fat: 14g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ستاربكس كراميل فرابتشينو؟",
+    "output": "ستاربكس كراميل فرابتشينو فيه 380 سعرة حرارية لكل grande. البروتين 5 جرام، الكاربز 58 جرام، والدهون 14 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel starbucks frappuccino?",
+    "output": "starbucks frappuccino has 380 calories per grande. Protein: 5g, Carbs: 58g, Fat: 14g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Starbucks Americano?",
+    "output": "Starbucks Americano has 15 calories per grande. It contains 1g protein, 2g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Starbucks Americano?",
+    "output": "Starbucks Americano (grande):\n- Calories: 15\n- Protein: 1g\n- Carbs: 2g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ستاربكس امريكانو؟",
+    "output": "ستاربكس امريكانو فيه 15 سعرة حرارية لكل grande. البروتين 1 جرام، الكاربز 2 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel starbucks americano?",
+    "output": "starbucks americano has 15 calories per grande. Protein: 1g, Carbs: 2g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Starbucks Vanilla Latte?",
+    "output": "Starbucks Vanilla Latte has 250 calories per grande. It contains 8g protein, 35g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Starbucks Vanilla Latte?",
+    "output": "Starbucks Vanilla Latte (grande):\n- Calories: 250\n- Protein: 8g\n- Carbs: 35g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ستاربكس فانيلا لاتيه؟",
+    "output": "ستاربكس فانيلا لاتيه فيه 250 سعرة حرارية لكل grande. البروتين 8 جرام، الكاربز 35 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel vanilla latte?",
+    "output": "vanilla latte has 250 calories per grande. Protein: 8g, Carbs: 35g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Whey Protein Scoop?",
+    "output": "Whey Protein Scoop has 120 calories per 1 scoop (30g). It contains 24g protein, 3g carbs, and 1g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Whey Protein Scoop?",
+    "output": "Whey Protein Scoop (1 scoop (30g)):\n- Calories: 120\n- Protein: 24g\n- Carbs: 3g\n- Fat: 1g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في واي بروتين؟",
+    "output": "واي بروتين فيه 120 سعرة حرارية لكل 1 scoop (30g). البروتين 24 جرام، الكاربز 3 جرام، والدهون 1 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel whey protein?",
+    "output": "whey protein has 120 calories per 1 scoop (30g). Protein: 24g, Carbs: 3g, Fat: 1g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Whey Protein Scoop good for muscle building?",
+    "output": "Yes! Whey Protein Scoop is a good protein source with 24g protein per 1 scoop (30g). That's great for muscle building. Total calories: 120.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Whey Protein Scoop good for cutting?",
+    "output": "Yes! Whey Protein Scoop is great for cutting - only 120 calories with 24g protein per 1 scoop (30g). High protein, low calorie ratio is perfect for fat loss.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Mass Gainer Scoop?",
+    "output": "Mass Gainer Scoop has 650 calories per 1 serving. It contains 30g protein, 120g carbs, and 5g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Mass Gainer Scoop?",
+    "output": "Mass Gainer Scoop (1 serving):\n- Calories: 650\n- Protein: 30g\n- Carbs: 120g\n- Fat: 5g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في ماس جينر؟",
+    "output": "ماس جينر فيه 650 سعرة حرارية لكل 1 serving. البروتين 30 جرام، الكاربز 120 جرام، والدهون 5 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel mass gainer?",
+    "output": "mass gainer has 650 calories per 1 serving. Protein: 30g, Carbs: 120g, Fat: 5g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Mass Gainer Scoop good for muscle building?",
+    "output": "Yes! Mass Gainer Scoop is a good protein source with 30g protein per 1 serving. That's great for muscle building. Total calories: 650.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "Is Mass Gainer Scoop good for bulking?",
+    "output": "Yes! Mass Gainer Scoop has 650 calories per 1 serving, which is good for bulking. It provides 30g protein, 120g carbs, and 5g fat.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "How many calories in Creatine?",
+    "output": "Creatine has 0 calories per 5g. It contains 0g protein, 0g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Creatine?",
+    "output": "Creatine (5g):\n- Calories: 0\n- Protein: 0g\n- Carbs: 0g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في كرياتين؟",
+    "output": "كرياتين فيه 0 سعرة حرارية لكل 5g. البروتين 0 جرام، الكاربز 0 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel creatine?",
+    "output": "creatine has 0 calories per 5g. Protein: 0g, Carbs: 0g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in BCAA?",
+    "output": "BCAA has 10 calories per 1 scoop. It contains 3g protein, 0g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for BCAA?",
+    "output": "BCAA (1 scoop):\n- Calories: 10\n- Protein: 3g\n- Carbs: 0g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بي سي ايه ايه؟",
+    "output": "بي سي ايه ايه فيه 10 سعرة حرارية لكل 1 scoop. البروتين 3 جرام، الكاربز 0 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel bcaa?",
+    "output": "bcaa has 10 calories per 1 scoop. Protein: 3g, Carbs: 0g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Pre-Workout?",
+    "output": "Pre-Workout has 15 calories per 1 scoop. It contains 0g protein, 3g carbs, and 0g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Pre-Workout?",
+    "output": "Pre-Workout (1 scoop):\n- Calories: 15\n- Protein: 0g\n- Carbs: 3g\n- Fat: 0g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بري ورك اوت؟",
+    "output": "بري ورك اوت فيه 15 سعرة حرارية لكل 1 scoop. البروتين 0 جرام، الكاربز 3 جرام، والدهون 0 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel pre workout?",
+    "output": "pre workout has 15 calories per 1 scoop. Protein: 0g, Carbs: 3g, Fat: 0g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "How many calories in Protein Bar?",
+    "output": "Protein Bar has 200 calories per 1 bar. It contains 20g protein, 22g carbs, and 8g fat.",
+    "category": "calorie_lookup"
+  },
+  {
+    "instruction": "What are the macros for Protein Bar?",
+    "output": "Protein Bar (1 bar):\n- Calories: 200\n- Protein: 20g\n- Carbs: 22g\n- Fat: 8g",
+    "category": "macro_lookup"
+  },
+  {
+    "instruction": "كام سعرة في بروتين بار؟",
+    "output": "بروتين بار فيه 200 سعرة حرارية لكل 1 bar. البروتين 20 جرام، الكاربز 22 جرام، والدهون 8 جرام.",
+    "category": "calorie_lookup_ar"
+  },
+  {
+    "instruction": "kam calorie fel protein bar?",
+    "output": "protein bar has 200 calories per 1 bar. Protein: 20g, Carbs: 22g, Fat: 8g.",
+    "category": "calorie_lookup_franco"
+  },
+  {
+    "instruction": "Is Protein Bar good for muscle building?",
+    "output": "Yes! Protein Bar is a good protein source with 20g protein per 1 bar. That's great for muscle building. Total calories: 200.",
+    "category": "fitness_advice"
+  },
+  {
+    "instruction": "What's healthier, McDonald's or KFC?",
+    "output": "Both are fast food, but here's a comparison:\n\n- KFC Original (2 pieces): 480 cal, 36g protein\n- McDonald's Big Mac: 550 cal, 25g protein\n\nKFC has more protein and less calories per serving. However, grilling at home is always healthier than either!",
+    "category": "comparison"
+  },
+  {
+    "instruction": "What Egyptian food is highest in protein?",
+    "output": "Top high-protein Egyptian foods:\n\n1. Grilled Chicken (ferakh mashweya): 35g protein per quarter\n2. Kebab: 28g protein per serving\n3. Fattah with Meat: 40g protein per plate\n4. Kofta: 22g protein per 4 pieces\n5. Grilled Liver (kebda): 25g protein per sandwich\n\nFor building muscle, pair these with rice or bread for complete nutrition!",
+    "category": "egyptian_nutrition"
+  },
+  {
+    "instruction": "اكل ايه عشان اخس من الاكل المصري؟",
+    "output": "أحسن اكل مصري للدايت:\n\n1. فول بدون زيت: 180 سعرة، 10 جرام بروتين\n2. فراخ مشوية: 250 سعرة، 35 جرام بروتين\n3. سلطة بلدي: 80 سعرة\n4. شوربة عدس: 180 سعرة، 12 جرام بروتين\n5. كفتة مشوية: 280 سعرة، 22 جرام بروتين\n\nابعد عن الفطير والكشري الكتير والحاجات المقلية!",
+    "category": "egyptian_nutrition_ar"
+  },
+  {
+    "instruction": "Best pre-workout meal from Egyptian food?",
+    "output": "Great Egyptian pre-workout options (eat 1-2 hours before training):\n\n1. Foul with Baladi Bread: 330 cal, complex carbs + protein\n2. Rice with Grilled Chicken: 450 cal, perfect carb/protein ratio\n3. Lentil Soup with Bread: 330 cal, easy to digest\n4. Foul with Eggs: 320 cal, sustained energy\n\nAvoid: Heavy fattah, fried foods, or large portions of koshary right before training.",
+    "category": "egyptian_nutrition"
+  }
+]
