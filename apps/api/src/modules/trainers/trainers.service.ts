@@ -327,8 +327,30 @@ export class TrainersService {
       where: { userId },
     });
 
+    // Return empty data for non-trainers instead of throwing
     if (!trainer) {
-      throw new NotFoundException('Trainer profile not found');
+      const now = new Date();
+      const targetMonth = month ?? now.getMonth();
+      const targetYear = year ?? now.getFullYear();
+      const nextPayoutDate = new Date();
+      if (nextPayoutDate.getDate() > 15) {
+        nextPayoutDate.setMonth(nextPayoutDate.getMonth() + 1);
+      }
+      nextPayoutDate.setDate(15);
+
+      return {
+        month: targetMonth,
+        year: targetYear,
+        grossRevenue: 0,
+        breakdown: { subscriptions: 0, programs: 0, tips: 0 },
+        platformFee: 0,
+        platformFeePercentage: 15,
+        netEarnings: 0,
+        payouts: 0,
+        pendingPayout: 0,
+        nextPayoutDate: nextPayoutDate.toISOString(),
+        transactions: [],
+      };
     }
 
     const now = new Date();
