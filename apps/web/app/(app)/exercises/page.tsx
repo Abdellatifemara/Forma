@@ -35,15 +35,22 @@ import { exercisesApi, type Exercise } from '@/lib/api';
 import { useToast } from '@/hooks/use-toast';
 
 const muscleGroups = [
-  'All',
-  'Chest',
-  'Back',
-  'Shoulders',
-  'Biceps',
-  'Triceps',
-  'Legs',
-  'Core',
-  'Glutes',
+  { label: 'All', value: 'All' },
+  { label: 'Chest', value: 'CHEST' },
+  { label: 'Back', value: 'BACK' },
+  { label: 'Shoulders', value: 'SHOULDERS' },
+  { label: 'Biceps', value: 'BICEPS' },
+  { label: 'Triceps', value: 'TRICEPS' },
+  { label: 'Forearms', value: 'FOREARMS' },
+  { label: 'Abs', value: 'ABS' },
+  { label: 'Obliques', value: 'OBLIQUES' },
+  { label: 'Lower Back', value: 'LOWER_BACK' },
+  { label: 'Glutes', value: 'GLUTES' },
+  { label: 'Quads', value: 'QUADRICEPS' },
+  { label: 'Hamstrings', value: 'HAMSTRINGS' },
+  { label: 'Calves', value: 'CALVES' },
+  { label: 'Full Body', value: 'FULL_BODY' },
+  { label: 'Cardio', value: 'CARDIO' },
 ];
 
 const equipmentTypes = [
@@ -70,6 +77,27 @@ const equipmentToEnum: Record<string, string> = {
 
 const difficultyLevels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
 
+// Helper to get muscle group label from value
+const getMuscleLabel = (value: string) => {
+  const muscle = muscleGroups.find(m => m.value === value);
+  return muscle?.label || value;
+};
+
+// Helper to validate/normalize muscle group from URL param
+const normalizeMuscleParam = (param: string | null): string => {
+  if (!param) return 'All';
+  // Check if it's already a valid enum value
+  const exactMatch = muscleGroups.find(m => m.value === param);
+  if (exactMatch) return exactMatch.value;
+  // Check if it matches a label (case-insensitive)
+  const labelMatch = muscleGroups.find(m => m.label.toLowerCase() === param.toLowerCase());
+  if (labelMatch) return labelMatch.value;
+  // Check uppercase version
+  const upperMatch = muscleGroups.find(m => m.value === param.toUpperCase());
+  if (upperMatch) return upperMatch.value;
+  return 'All';
+};
+
 function ExercisesPageContent() {
   const searchParams = useSearchParams();
   const initialMuscle = searchParams.get('muscle');
@@ -78,7 +106,7 @@ function ExercisesPageContent() {
   const [exercises, setExercises] = useState<Exercise[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
-  const [muscleFilter, setMuscleFilter] = useState(initialMuscle || 'All');
+  const [muscleFilter, setMuscleFilter] = useState(normalizeMuscleParam(initialMuscle));
   const [equipmentFilter, setEquipmentFilter] = useState('All');
   const [difficultyFilter, setDifficultyFilter] = useState('All');
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
@@ -90,7 +118,7 @@ function ExercisesPageContent() {
       try {
         const params = {
           query: searchQuery || undefined,
-          primaryMuscle: muscleFilter !== 'All' ? muscleFilter.toUpperCase() : undefined,
+          primaryMuscle: muscleFilter !== 'All' ? muscleFilter : undefined,
           equipment: equipmentFilter !== 'All' ? [equipmentToEnum[equipmentFilter]] : undefined,
           difficulty: difficultyFilter !== 'All' ? difficultyFilter.toUpperCase() : undefined,
         };
@@ -187,8 +215,8 @@ function ExercisesPageContent() {
                     </SelectTrigger>
                     <SelectContent>
                       {muscleGroups.map((muscle) => (
-                        <SelectItem key={muscle} value={muscle}>
-                          {muscle}
+                        <SelectItem key={muscle.value} value={muscle.value}>
+                          {muscle.label}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -249,7 +277,7 @@ function ExercisesPageContent() {
           <div className="flex flex-wrap gap-2">
             {muscleFilter !== 'All' && (
               <Badge variant="secondary" className="gap-1">
-                {muscleFilter}
+                {getMuscleLabel(muscleFilter)}
                 <X
                   className="h-3 w-3 cursor-pointer"
                   onClick={() => setMuscleFilter('All')}

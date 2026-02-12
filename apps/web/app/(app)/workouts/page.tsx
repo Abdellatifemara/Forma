@@ -54,14 +54,14 @@ const quickActions = [
 ];
 
 const muscleGroups = [
-  { name: 'Chest', color: 'bg-red-500/20 text-red-400 border-red-500/30' },
-  { name: 'Back', color: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
-  { name: 'Shoulders', color: 'bg-orange-500/20 text-orange-400 border-orange-500/30' },
-  { name: 'Arms', color: 'bg-purple-500/20 text-purple-400 border-purple-500/30' },
-  { name: 'Legs', color: 'bg-green-500/20 text-green-400 border-green-500/30' },
-  { name: 'Core', color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
-  { name: 'Cardio', color: 'bg-pink-500/20 text-pink-400 border-pink-500/30' },
-  { name: 'Full Body', color: 'bg-forma-teal/20 text-forma-teal border-forma-teal/30' },
+  { name: 'Chest', value: 'CHEST', color: 'bg-red-500/20 text-red-400 border-red-500/30' },
+  { name: 'Back', value: 'BACK', color: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
+  { name: 'Shoulders', value: 'SHOULDERS', color: 'bg-orange-500/20 text-orange-400 border-orange-500/30' },
+  { name: 'Biceps', value: 'BICEPS', color: 'bg-purple-500/20 text-purple-400 border-purple-500/30' },
+  { name: 'Quads', value: 'QUADRICEPS', color: 'bg-green-500/20 text-green-400 border-green-500/30' },
+  { name: 'Abs', value: 'ABS', color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
+  { name: 'Cardio', value: 'CARDIO', color: 'bg-pink-500/20 text-pink-400 border-pink-500/30' },
+  { name: 'Full Body', value: 'FULL_BODY', color: 'bg-forma-teal/20 text-forma-teal border-forma-teal/30' },
 ];
 
 function WorkoutsContent() {
@@ -355,7 +355,7 @@ function WorkoutsContent() {
             {muscleGroups.map((muscle, index) => (
               <Link
                 key={muscle.name}
-                href={`/exercises?muscle=${muscle.name.toLowerCase().replace(' ', '-')}`}
+                href={`/exercises?muscle=${muscle.value}`}
                 className="animate-fade-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
