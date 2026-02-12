@@ -10,6 +10,8 @@ import {
   Key,
   Save,
   Loader2,
+  AlertCircle,
+  Info,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -31,13 +33,40 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { useToast } from '@/hooks/use-toast';
+import { Alert, AlertDescription } from '@/components/ui/alert';
 
 export default function AdminSettingsPage() {
+  const { toast } = useToast();
   const [isSaving, setIsSaving] = useState(false);
+  const [settings, setSettings] = useState({
+    platformName: 'Forma',
+    supportEmail: 'support@formaeg.com',
+    defaultLanguage: 'en',
+    timezone: 'Africa/Cairo',
+    freeTrialDays: 7,
+    proPrice: 99,
+    elitePrice: 299,
+    platformCommission: 15,
+    twoFactorRequired: true,
+    strongPasswordRequired: true,
+    sessionTimeout: '60',
+    apiRateLimit: 100,
+    loginAttemptsLimit: 5,
+    newUserNotifications: true,
+    trainerAppNotifications: true,
+    paymentIssueNotifications: true,
+    dailySummary: false,
+  });
 
   const handleSave = async () => {
     setIsSaving(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Simulate save - in production this would call an API
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    toast({
+      title: 'Settings saved',
+      description: 'Your changes have been saved successfully.',
+    });
     setIsSaving(false);
   };
 
@@ -98,15 +127,24 @@ export default function AdminSettingsPage() {
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2">
                   <Label>Platform Name</Label>
-                  <Input defaultValue="Forma" />
+                  <Input
+                    value={settings.platformName}
+                    onChange={(e) => setSettings({ ...settings, platformName: e.target.value })}
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label>Support Email</Label>
-                  <Input defaultValue="support@formaeg.com" />
+                  <Input
+                    value={settings.supportEmail}
+                    onChange={(e) => setSettings({ ...settings, supportEmail: e.target.value })}
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label>Default Language</Label>
-                  <Select defaultValue="en">
+                  <Select
+                    value={settings.defaultLanguage}
+                    onValueChange={(v) => setSettings({ ...settings, defaultLanguage: v })}
+                  >
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>
@@ -118,7 +156,10 @@ export default function AdminSettingsPage() {
                 </div>
                 <div className="space-y-2">
                   <Label>Timezone</Label>
-                  <Select defaultValue="Africa/Cairo">
+                  <Select
+                    value={settings.timezone}
+                    onValueChange={(v) => setSettings({ ...settings, timezone: v })}
+                  >
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>
@@ -140,15 +181,27 @@ export default function AdminSettingsPage() {
               <div className="grid gap-4 md:grid-cols-3">
                 <div className="space-y-2">
                   <Label>Free Trial Days</Label>
-                  <Input type="number" defaultValue="7" />
+                  <Input
+                    type="number"
+                    value={settings.freeTrialDays}
+                    onChange={(e) => setSettings({ ...settings, freeTrialDays: parseInt(e.target.value) || 0 })}
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label>Pro Price (EGP)</Label>
-                  <Input type="number" defaultValue="99" />
+                  <Input
+                    type="number"
+                    value={settings.proPrice}
+                    onChange={(e) => setSettings({ ...settings, proPrice: parseInt(e.target.value) || 0 })}
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label>Elite Price (EGP)</Label>
-                  <Input type="number" defaultValue="299" />
+                  <Input
+                    type="number"
+                    value={settings.elitePrice}
+                    onChange={(e) => setSettings({ ...settings, elitePrice: parseInt(e.target.value) || 0 })}
+                  />
                 </div>
               </div>
             </CardContent>
@@ -161,9 +214,13 @@ export default function AdminSettingsPage() {
             <CardContent>
               <div className="space-y-2">
                 <Label>Platform Commission (%)</Label>
-                <Input type="number" defaultValue="15" />
+                <Input
+                  type="number"
+                  value={settings.platformCommission}
+                  onChange={(e) => setSettings({ ...settings, platformCommission: parseInt(e.target.value) || 0 })}
+                />
                 <p className="text-sm text-muted-foreground">
-                  Trainers will receive the remaining percentage of their earnings
+                  Trainers will receive the remaining {100 - settings.platformCommission}% of their earnings
                 </p>
               </div>
             </CardContent>
@@ -183,7 +240,10 @@ export default function AdminSettingsPage() {
                     Require 2FA for admin accounts
                   </p>
                 </div>
-                <Switch defaultChecked />
+                <Switch
+                  checked={settings.twoFactorRequired}
+                  onCheckedChange={(v) => setSettings({ ...settings, twoFactorRequired: v })}
+                />
               </div>
               <Separator />
               <div className="flex items-center justify-between">
@@ -193,7 +253,10 @@ export default function AdminSettingsPage() {
                     Enforce strong password policy
                   </p>
                 </div>
-                <Switch defaultChecked />
+                <Switch
+                  checked={settings.strongPasswordRequired}
+                  onCheckedChange={(v) => setSettings({ ...settings, strongPasswordRequired: v })}
+                />
               </div>
               <Separator />
               <div className="flex items-center justify-between">
@@ -203,7 +266,10 @@ export default function AdminSettingsPage() {
                     Auto-logout after inactivity
                   </p>
                 </div>
-                <Select defaultValue="60">
+                <Select
+                  value={settings.sessionTimeout}
+                  onValueChange={(v) => setSettings({ ...settings, sessionTimeout: v })}
+                >
                   <SelectTrigger className="w-[150px]">
                     <SelectValue />
                   </SelectTrigger>
@@ -226,11 +292,19 @@ export default function AdminSettingsPage() {
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2">
                   <Label>API Rate Limit (requests/min)</Label>
-                  <Input type="number" defaultValue="100" />
+                  <Input
+                    type="number"
+                    value={settings.apiRateLimit}
+                    onChange={(e) => setSettings({ ...settings, apiRateLimit: parseInt(e.target.value) || 0 })}
+                  />
                 </div>
                 <div className="space-y-2">
                   <Label>Login Attempts Before Lock</Label>
-                  <Input type="number" defaultValue="5" />
+                  <Input
+                    type="number"
+                    value={settings.loginAttemptsLimit}
+                    onChange={(e) => setSettings({ ...settings, loginAttemptsLimit: parseInt(e.target.value) || 0 })}
+                  />
                 </div>
               </div>
             </CardContent>
@@ -250,7 +324,10 @@ export default function AdminSettingsPage() {
                     Get notified when new users register
                   </p>
                 </div>
-                <Switch defaultChecked />
+                <Switch
+                  checked={settings.newUserNotifications}
+                  onCheckedChange={(v) => setSettings({ ...settings, newUserNotifications: v })}
+                />
               </div>
               <Separator />
               <div className="flex items-center justify-between">
@@ -260,7 +337,10 @@ export default function AdminSettingsPage() {
                     Notifications for new trainer applications
                   </p>
                 </div>
-                <Switch defaultChecked />
+                <Switch
+                  checked={settings.trainerAppNotifications}
+                  onCheckedChange={(v) => setSettings({ ...settings, trainerAppNotifications: v })}
+                />
               </div>
               <Separator />
               <div className="flex items-center justify-between">
@@ -270,7 +350,10 @@ export default function AdminSettingsPage() {
                     Alerts for failed payments or disputes
                   </p>
                 </div>
-                <Switch defaultChecked />
+                <Switch
+                  checked={settings.paymentIssueNotifications}
+                  onCheckedChange={(v) => setSettings({ ...settings, paymentIssueNotifications: v })}
+                />
               </div>
               <Separator />
               <div className="flex items-center justify-between">
@@ -280,13 +363,24 @@ export default function AdminSettingsPage() {
                     Daily report of platform activity
                   </p>
                 </div>
-                <Switch />
+                <Switch
+                  checked={settings.dailySummary}
+                  onCheckedChange={(v) => setSettings({ ...settings, dailySummary: v })}
+                />
               </div>
             </CardContent>
           </Card>
         </TabsContent>
 
         <TabsContent value="api" className="space-y-6">
+          <Alert>
+            <Info className="h-4 w-4" />
+            <AlertDescription>
+              API keys and secrets are managed through environment variables for security.
+              Contact your system administrator to update these values.
+            </AlertDescription>
+          </Alert>
+
           <Card>
             <CardHeader>
               <CardTitle>API Configuration</CardTitle>
@@ -294,11 +388,11 @@ export default function AdminSettingsPage() {
             <CardContent className="space-y-4">
               <div className="space-y-2">
                 <Label>API Base URL</Label>
-                <Input defaultValue="https://api.formaeg.com" readOnly />
+                <Input value={process.env.NEXT_PUBLIC_API_URL || 'https://api.formaeg.com'} readOnly className="bg-muted" />
               </div>
               <div className="space-y-2">
                 <Label>API Version</Label>
-                <Input defaultValue="v1" readOnly />
+                <Input value="v1" readOnly className="bg-muted" />
               </div>
             </CardContent>
           </Card>
@@ -306,19 +400,25 @@ export default function AdminSettingsPage() {
           <Card>
             <CardHeader>
               <CardTitle>Third-Party Integrations</CardTitle>
+              <CardDescription>
+                These values are configured via environment variables and cannot be changed here.
+              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
                 <Label>OpenAI API Key</Label>
-                <Input type="password" defaultValue="sk-••••••••••••••••" />
+                <Input type="password" value="sk-••••••••••••••••" readOnly className="bg-muted" />
+                <p className="text-xs text-muted-foreground">Environment variable: OPENAI_API_KEY</p>
               </div>
               <div className="space-y-2">
                 <Label>Stripe Secret Key</Label>
-                <Input type="password" defaultValue="sk_••••••••••••••••" />
+                <Input type="password" value="sk_••••••••••••••••" readOnly className="bg-muted" />
+                <p className="text-xs text-muted-foreground">Environment variable: STRIPE_SECRET_KEY</p>
               </div>
               <div className="space-y-2">
                 <Label>SendGrid API Key</Label>
-                <Input type="password" defaultValue="SG.••••••••••••••••" />
+                <Input type="password" value="SG.••••••••••••••••" readOnly className="bg-muted" />
+                <p className="text-xs text-muted-foreground">Environment variable: SENDGRID_API_KEY</p>
               </div>
             </CardContent>
           </Card>

@@ -32,6 +32,7 @@ import {
 } from '@/components/ui/dialog';
 
 import { exercisesApi, type Exercise } from '@/lib/api';
+import { useToast } from '@/hooks/use-toast';
 
 const muscleGroups = [
   'All',
@@ -72,6 +73,7 @@ const difficultyLevels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
 function ExercisesPageContent() {
   const searchParams = useSearchParams();
   const initialMuscle = searchParams.get('muscle');
+  const { toast } = useToast();
 
   const [exercises, setExercises] = useState<Exercise[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -350,7 +352,11 @@ function ExercisesPageContent() {
                 {/* Video Placeholder */}
                 <div className="relative aspect-video overflow-hidden rounded-lg bg-muted">
                   <div className="flex h-full items-center justify-center">
-                    <Button variant="forma" size="lg">
+                    <Button
+                      variant="forma"
+                      size="lg"
+                      onClick={() => toast({ title: 'Coming Soon', description: 'Exercise videos will be available soon' })}
+                    >
                       <Play className="mr-2 h-5 w-5" />
                       Watch Demo
                     </Button>
@@ -444,7 +450,11 @@ function ExercisesPageContent() {
                 )}
 
                 {/* Action Button */}
-                <Button variant="forma" className="w-full">
+                <Button
+                  variant="forma"
+                  className="w-full"
+                  onClick={() => toast({ title: 'Coming Soon', description: 'Quick add to workout will be available soon' })}
+                >
                   Add to Workout
                 </Button>
               </div>

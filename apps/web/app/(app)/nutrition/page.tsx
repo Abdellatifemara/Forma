@@ -43,6 +43,7 @@ import {
 } from '@/components/ui/collapsible';
 import { useDailyNutrition, useFoodSearch } from '@/hooks/use-nutrition';
 import { cn } from '@/lib/utils';
+import { useToast } from '@/hooks/use-toast';
 
 // Default goals if none set
 const defaultGoals = {
@@ -77,6 +78,7 @@ const mealColors = {
 };
 
 export default function NutritionPage() {
+  const { toast } = useToast();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
   const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
@@ -241,11 +243,19 @@ export default function NutritionPage() {
                   )}
 
                   <div className="grid grid-cols-2 gap-2">
-                    <Button variant="outline" className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5">
+                    <Button
+                      variant="outline"
+                      className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5"
+                      onClick={() => toast({ title: 'Coming Soon', description: 'Food scanning will be available soon' })}
+                    >
                       <Camera className="mb-2 h-5 w-5 text-primary" />
                       <span className="text-xs">Scan Food</span>
                     </Button>
-                    <Button variant="outline" className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5">
+                    <Button
+                      variant="outline"
+                      className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5"
+                      onClick={() => toast({ title: 'Coming Soon', description: 'Barcode scanning will be available soon' })}
+                    >
                       <Barcode className="mb-2 h-5 w-5 text-primary" />
                       <span className="text-xs">Scan Barcode</span>
                     </Button>

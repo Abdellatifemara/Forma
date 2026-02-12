@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Patch, Param, Query, Body, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Patch, Delete, Param, Query, Body, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { AdminService } from './admin.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
@@ -76,5 +76,88 @@ export class AdminController {
   @ApiResponse({ status: 200, description: 'User updated successfully' })
   async updateUser(@Param('id') id: string, @Body() data: Record<string, unknown>) {
     return this.adminService.updateUser(id, data);
+  }
+
+  @Post('users/:id/delete')
+  @ApiOperation({ summary: 'Delete a user and all their data' })
+  @ApiResponse({ status: 200, description: 'User deleted successfully' })
+  async deleteUser(@Param('id') id: string) {
+    return this.adminService.deleteUser(id);
+  }
+
+  @Post('users/:id/subscription')
+  @ApiOperation({ summary: 'Update user subscription tier' })
+  @ApiResponse({ status: 200, description: 'Subscription updated successfully' })
+  async updateUserSubscription(
+    @Param('id') id: string,
+    @Body() data: { tier: 'FREE' | 'PREMIUM' | 'PREMIUM_PLUS' },
+  ) {
+    return this.adminService.updateUserSubscription(id, data.tier);
+  }
+
+  @Get('trainers/stats')
+  @ApiOperation({ summary: 'Get trainer statistics' })
+  @ApiResponse({ status: 200, description: 'Returns trainer statistics' })
+  async getTrainerStats() {
+    return this.adminService.getTrainerStats();
+  }
+
+  @Get('trainers')
+  @ApiOperation({ summary: 'Get all trainers with pagination' })
+  @ApiResponse({ status: 200, description: 'Returns paginated trainers list' })
+  async getAllTrainers(
+    @Query('page') page?: string,
+    @Query('limit') limit?: string,
+    @Query('status') status?: string,
+  ) {
+    return this.adminService.getAllTrainers({
+      page: page ? parseInt(page) : 1,
+      limit: limit ? parseInt(limit) : 20,
+      status,
+    });
+  }
+
+  @Get('analytics')
+  @ApiOperation({ summary: 'Get platform analytics' })
+  @ApiResponse({ status: 200, description: 'Returns analytics data' })
+  async getAnalytics(@Query('period') period?: 'week' | 'month' | 'quarter' | 'year') {
+    return this.adminService.getAnalytics(period || 'month');
+  }
+
+  @Get('content/stats')
+  @ApiOperation({ summary: 'Get content statistics' })
+  @ApiResponse({ status: 200, description: 'Returns content stats' })
+  async getContentStats() {
+    return this.adminService.getContentStats();
+  }
+
+  @Get('content/exercises')
+  @ApiOperation({ summary: 'Get exercises for content management' })
+  @ApiResponse({ status: 200, description: 'Returns paginated exercises' })
+  async getExercises(
+    @Query('page') page?: string,
+    @Query('limit') limit?: string,
+    @Query('search') search?: string,
+  ) {
+    return this.adminService.getExercises({
+      page: page ? parseInt(page) : 1,
+      limit: limit ? parseInt(limit) : 20,
+      search,
+    });
+  }
+
+  @Get('content/foods')
+  @ApiOperation({ summary: 'Get foods for content management' })
+  @ApiResponse({ status: 200, description: 'Returns paginated foods' })
+  async getFoods(
+    @Query('page') page?: string,
+    @Query('limit') limit?: string,
+    @Query('search') search?: string,
+  ) {
+    return this.adminService.getFoods({
+      page: page ? parseInt(page) : 1,
+      limit: limit ? parseInt(limit) : 20,
+      search,
+    });
   }
 }

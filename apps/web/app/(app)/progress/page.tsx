@@ -32,6 +32,7 @@ import {
   useLogWeight,
   useLogMeasurements,
 } from '@/hooks/use-progress';
+import { useToast } from '@/hooks/use-toast';
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString);
@@ -45,6 +46,7 @@ function TrendIcon({ change }: { change: number }) {
 }
 
 export default function ProgressPage() {
+  const { toast } = useToast();
   const [timeRange, setTimeRange] = useState<'week' | 'month' | 'year'>('month');
   const [logDialogOpen, setLogDialogOpen] = useState(false);
   const [logTab, setLogTab] = useState<'weight' | 'measurements'>('weight');
@@ -621,7 +623,11 @@ export default function ProgressPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-base font-semibold">Progress Photos</CardTitle>
-              <Button variant="outline" size="sm">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => toast({ title: 'Coming Soon', description: 'Progress photos will be available soon' })}
+              >
                 <Camera className="mr-2 h-4 w-4" />
                 Add Photo
               </Button>

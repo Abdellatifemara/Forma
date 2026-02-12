@@ -41,28 +41,32 @@ import {
 import { Progress } from '@/components/ui/progress';
 import { trainersApi, type TrainerClientResponse } from '@/lib/api';
 import { cn } from '@/lib/utils';
+import { useToast } from '@/hooks/use-toast';
 
 type FilterStatus = 'all' | 'high' | 'attention' | 'risk';
 
 export default function ClientsPage() {
+  const { toast } = useToast();
   const [clients, setClients] = useState<TrainerClientResponse[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterStatus, setFilterStatus] = useState<FilterStatus>('all');
 
-  useEffect(() => {
-    async function fetchClients() {
-      try {
-        setIsLoading(true);
-        const data = await trainersApi.getClients();
-        setClients(data);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load clients');
-      } finally {
-        setIsLoading(false);
-      }
+  const fetchClients = async () => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      const data = await trainersApi.getClients();
+      setClients(data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load clients');
+    } finally {
+      setIsLoading(false);
     }
+  };
+
+  useEffect(() => {
     fetchClients();
   }, []);
 
@@ -131,7 +135,8 @@ export default function ClientsPage() {
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
         <h2 className="text-xl font-semibold mb-2">Failed to load clients</h2>
-        <p className="text-muted-foreground">{error}</p>
+        <p className="text-muted-foreground mb-4">{error}</p>
+        <Button onClick={fetchClients}>Try Again</Button>
       </div>
     );
   }
@@ -377,7 +382,13 @@ export default function ClientsPage() {
                             </Link>
                           </DropdownMenuItem>
                           <DropdownMenuSeparator />
-                          <DropdownMenuItem className="text-destructive">
+                          <DropdownMenuItem
+                            className="text-destructive"
+                            onClick={() => toast({
+                              title: 'Coming Soon',
+                              description: 'Client removal will be available soon',
+                            })}
+                          >
                             <UserX className="mr-2 h-4 w-4" />
                             Remove Client
                           </DropdownMenuItem>

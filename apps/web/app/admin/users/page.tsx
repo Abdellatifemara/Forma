@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { Search, Filter, MoreHorizontal, Download } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Search, Filter, MoreHorizontal, Download, Loader2, AlertCircle, Crown, Ban, UserCheck, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -25,6 +25,7 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import {
@@ -34,71 +35,148 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog';
+import { adminApi, type AdminUser } from '@/lib/api';
+import { useToast } from '@/hooks/use-toast';
 
-const users = [
-  {
-    id: '1',
-    name: 'Ahmed Mohamed',
-    email: 'ahmed@email.com',
-    plan: 'Pro',
-    status: 'active',
-    joined: '2024-01-15',
-    lastActive: '2 hours ago',
-    workouts: 47,
-  },
-  {
-    id: '2',
-    name: 'Sara Hassan',
-    email: 'sara@email.com',
-    plan: 'Free',
-    status: 'active',
-    joined: '2024-02-20',
-    lastActive: '1 day ago',
-    workouts: 12,
-  },
-  {
-    id: '3',
-    name: 'Omar Ali',
-    email: 'omar@email.com',
-    plan: 'Elite',
-    status: 'active',
-    joined: '2023-11-10',
-    lastActive: '3 hours ago',
-    workouts: 156,
-  },
-  {
-    id: '4',
-    name: 'Fatma Ibrahim',
-    email: 'fatma@email.com',
-    plan: 'Pro',
-    status: 'suspended',
-    joined: '2024-01-05',
-    lastActive: '1 week ago',
-    workouts: 23,
-  },
-  {
-    id: '5',
-    name: 'Karim Ahmed',
-    email: 'karim@email.com',
-    plan: 'Free',
-    status: 'inactive',
-    joined: '2024-03-01',
-    lastActive: '2 weeks ago',
-    workouts: 5,
-  },
-];
+interface UsersMeta {
+  total: number;
+  page: number;
+  limit?: number;
+  totalPages: number;
+}
 
 export default function UsersPage() {
+  const { toast } = useToast();
+  const [users, setUsers] = useState<AdminUser[]>([]);
+  const [meta, setMeta] = useState<UsersMeta | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [planFilter, setPlanFilter] = useState<string>('all');
+  const [page, setPage] = useState(1);
+  const [selectedUser, setSelectedUser] = useState<AdminUser | null>(null);
+  const [actionDialog, setActionDialog] = useState<'suspend' | 'premium' | 'delete' | null>(null);
+  const [isProcessing, setIsProcessing] = useState(false);
 
-  const filteredUsers = users.filter((user) => {
-    const matchesSearch =
-      user.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      user.email.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesPlan = planFilter === 'all' || user.plan.toLowerCase() === planFilter;
-    return matchesSearch && matchesPlan;
-  });
+  const fetchUsers = async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const response = await adminApi.getUsers({
+        page,
+        limit: 20,
+        query: searchQuery || undefined,
+      });
+      setUsers(response.data);
+      setMeta(response.meta);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load users');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      fetchUsers();
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [page, searchQuery]);
+
+  const filteredUsers = planFilter === 'all'
+    ? users
+    : users.filter(u => u.subscription?.toLowerCase() === planFilter);
+
+  const getLastActive = (date: string | null) => {
+    if (!date) return 'Never';
+    const diff = Date.now() - new Date(date).getTime();
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    if (hours < 1) return 'Just now';
+    if (hours < 24) return `${hours}h ago`;
+    const days = Math.floor(hours / 24);
+    if (days === 1) return 'Yesterday';
+    if (days < 7) return `${days}d ago`;
+    return `${Math.floor(days / 7)}w ago`;
+  };
+
+  const handleUpdateUser = async (userId: string, data: Record<string, unknown>) => {
+    setIsProcessing(true);
+    try {
+      await adminApi.updateUser(userId, data);
+      toast({ title: 'Success', description: 'User updated successfully' });
+      fetchUsers();
+    } catch (err) {
+      toast({ title: 'Error', description: 'Failed to update user', variant: 'destructive' });
+    } finally {
+      setIsProcessing(false);
+      setActionDialog(null);
+      setSelectedUser(null);
+    }
+  };
+
+  const handleGivePremium = async () => {
+    if (!selectedUser) return;
+    setIsProcessing(true);
+    try {
+      await adminApi.updateUserSubscription(selectedUser.id, 'PREMIUM');
+      toast({ title: 'Success', description: `${selectedUser.name} now has Premium subscription` });
+      fetchUsers();
+    } catch (err) {
+      toast({ title: 'Error', description: 'Failed to update subscription', variant: 'destructive' });
+    } finally {
+      setIsProcessing(false);
+      setActionDialog(null);
+      setSelectedUser(null);
+    }
+  };
+
+  const handleSuspendUser = () => {
+    if (!selectedUser) return;
+    handleUpdateUser(selectedUser.id, { role: 'SUSPENDED' });
+  };
+
+  const handleDeleteUser = async () => {
+    if (!selectedUser) return;
+    setIsProcessing(true);
+    try {
+      await adminApi.deleteUser(selectedUser.id);
+      toast({ title: 'Success', description: `${selectedUser.name} has been deleted` });
+      fetchUsers();
+    } catch (err) {
+      toast({ title: 'Error', description: 'Failed to delete user', variant: 'destructive' });
+    } finally {
+      setIsProcessing(false);
+      setActionDialog(null);
+      setSelectedUser(null);
+    }
+  };
+
+  if (isLoading && users.length === 0) {
+    return (
+      <div className="flex h-[50vh] items-center justify-center">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
+        <AlertCircle className="h-12 w-12 text-destructive mb-4" />
+        <h2 className="text-xl font-semibold mb-2">Failed to load users</h2>
+        <p className="text-muted-foreground mb-4">{error}</p>
+        <Button onClick={fetchUsers}>Try Again</Button>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
@@ -110,7 +188,10 @@ export default function UsersPage() {
             Manage and monitor all platform users.
           </p>
         </div>
-        <Button variant="outline">
+        <Button
+          variant="outline"
+          onClick={() => toast({ title: 'Coming Soon', description: 'Export feature will be available soon' })}
+        >
           <Download className="mr-2 h-4 w-4" />
           Export CSV
         </Button>
@@ -120,26 +201,32 @@ export default function UsersPage() {
       <div className="grid gap-4 md:grid-cols-4">
         <Card>
           <CardContent className="pt-6">
-            <div className="text-2xl font-bold">12,847</div>
+            <div className="text-2xl font-bold">{meta?.total?.toLocaleString() || 0}</div>
             <p className="text-sm text-muted-foreground">Total Users</p>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="pt-6">
-            <div className="text-2xl font-bold">8,234</div>
-            <p className="text-sm text-muted-foreground">Active Users</p>
+            <div className="text-2xl font-bold">
+              {users.filter(u => u.lastActiveAt && (Date.now() - new Date(u.lastActiveAt).getTime()) < 7 * 24 * 60 * 60 * 1000).length}
+            </div>
+            <p className="text-sm text-muted-foreground">Active This Week</p>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="pt-6">
-            <div className="text-2xl font-bold">2,156</div>
-            <p className="text-sm text-muted-foreground">Pro Subscribers</p>
+            <div className="text-2xl font-bold">
+              {users.filter(u => u.subscription && u.subscription !== 'FREE').length}
+            </div>
+            <p className="text-sm text-muted-foreground">Premium Users</p>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="pt-6">
-            <div className="text-2xl font-bold">523</div>
-            <p className="text-sm text-muted-foreground">New This Month</p>
+            <div className="text-2xl font-bold">
+              {users.filter(u => u.role === 'TRAINER').length}
+            </div>
+            <p className="text-sm text-muted-foreground">Trainers</p>
           </CardContent>
         </Card>
       </div>
@@ -151,10 +238,13 @@ export default function UsersPage() {
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
-                placeholder="Search users..."
+                placeholder="Search users by name or email..."
                 className="pl-10"
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setPage(1);
+                }}
               />
             </div>
             <Select value={planFilter} onValueChange={setPlanFilter}>
@@ -164,14 +254,10 @@ export default function UsersPage() {
               <SelectContent>
                 <SelectItem value="all">All Plans</SelectItem>
                 <SelectItem value="free">Free</SelectItem>
-                <SelectItem value="pro">Pro</SelectItem>
-                <SelectItem value="elite">Elite</SelectItem>
+                <SelectItem value="premium">Premium</SelectItem>
+                <SelectItem value="premium_plus">Premium+</SelectItem>
               </SelectContent>
             </Select>
-            <Button variant="outline">
-              <Filter className="mr-2 h-4 w-4" />
-              More Filters
-            </Button>
           </div>
         </CardContent>
       </Card>
@@ -181,7 +267,7 @@ export default function UsersPage() {
         <CardHeader>
           <CardTitle>All Users</CardTitle>
           <CardDescription>
-            {filteredUsers.length} users found
+            {filteredUsers.length} users {meta && `(Page ${meta.page} of ${meta.totalPages})`}
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -189,9 +275,8 @@ export default function UsersPage() {
             <TableHeader>
               <TableRow>
                 <TableHead>User</TableHead>
+                <TableHead>Role</TableHead>
                 <TableHead>Plan</TableHead>
-                <TableHead>Status</TableHead>
-                <TableHead>Workouts</TableHead>
                 <TableHead>Joined</TableHead>
                 <TableHead>Last Active</TableHead>
                 <TableHead className="w-[50px]"></TableHead>
@@ -203,9 +288,8 @@ export default function UsersPage() {
                   <TableCell>
                     <div className="flex items-center gap-3">
                       <Avatar>
-                        <AvatarImage src={`/avatars/${user.id}.jpg`} />
                         <AvatarFallback>
-                          {user.name.split(' ').map((n) => n[0]).join('')}
+                          {user.name?.split(' ').map((n) => n[0]).join('') || '?'}
                         </AvatarFallback>
                       </Avatar>
                       <div>
@@ -217,37 +301,28 @@ export default function UsersPage() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <Badge
-                      variant={
-                        user.plan === 'Elite'
-                          ? 'forma'
-                          : user.plan === 'Pro'
-                          ? 'default'
-                          : 'secondary'
-                      }
-                    >
-                      {user.plan}
+                    <Badge variant={user.role === 'ADMIN' ? 'destructive' : user.role === 'TRAINER' ? 'forma' : 'secondary'}>
+                      {user.role}
                     </Badge>
                   </TableCell>
                   <TableCell>
                     <Badge
                       variant={
-                        user.status === 'active'
-                          ? 'success'
-                          : user.status === 'suspended'
-                          ? 'destructive'
+                        user.subscription === 'PREMIUM_PLUS'
+                          ? 'forma'
+                          : user.subscription === 'PREMIUM'
+                          ? 'default'
                           : 'secondary'
                       }
                     >
-                      {user.status}
+                      {user.subscription || 'FREE'}
                     </Badge>
                   </TableCell>
-                  <TableCell>{user.workouts}</TableCell>
                   <TableCell className="text-muted-foreground">
-                    {user.joined}
+                    {new Date(user.createdAt).toLocaleDateString()}
                   </TableCell>
                   <TableCell className="text-muted-foreground">
-                    {user.lastActive}
+                    {getLastActive(user.lastActiveAt)}
                   </TableCell>
                   <TableCell>
                     <DropdownMenu>
@@ -257,12 +332,30 @@ export default function UsersPage() {
                         </Button>
                       </DropdownMenuTrigger>
                       <DropdownMenuContent align="end">
-                        <DropdownMenuItem>View Profile</DropdownMenuItem>
-                        <DropdownMenuItem>Edit User</DropdownMenuItem>
-                        <DropdownMenuItem>Reset Password</DropdownMenuItem>
-                        <DropdownMenuItem>View Activity</DropdownMenuItem>
-                        <DropdownMenuItem className="text-destructive">
+                        <DropdownMenuItem onClick={() => {
+                          setSelectedUser(user);
+                          setActionDialog('premium');
+                        }}>
+                          <Crown className="mr-2 h-4 w-4" />
+                          Give Premium
+                        </DropdownMenuItem>
+                        <DropdownMenuItem onClick={() => {
+                          setSelectedUser(user);
+                          setActionDialog('suspend');
+                        }}>
+                          <Ban className="mr-2 h-4 w-4" />
                           Suspend User
+                        </DropdownMenuItem>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem
+                          className="text-destructive"
+                          onClick={() => {
+                            setSelectedUser(user);
+                            setActionDialog('delete');
+                          }}
+                        >
+                          <Trash2 className="mr-2 h-4 w-4" />
+                          Delete User
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
@@ -271,8 +364,90 @@ export default function UsersPage() {
               ))}
             </TableBody>
           </Table>
+
+          {/* Pagination */}
+          {meta && meta.totalPages > 1 && (
+            <div className="flex items-center justify-between mt-4">
+              <p className="text-sm text-muted-foreground">
+                Showing {(meta.page - 1) * (meta.limit || 20) + 1} to {Math.min(meta.page * (meta.limit || 20), meta.total)} of {meta.total}
+              </p>
+              <div className="flex gap-2">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  disabled={meta.page <= 1}
+                  onClick={() => setPage(p => p - 1)}
+                >
+                  Previous
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  disabled={meta.page >= meta.totalPages}
+                  onClick={() => setPage(p => p + 1)}
+                >
+                  Next
+                </Button>
+              </div>
+            </div>
+          )}
         </CardContent>
       </Card>
+
+      {/* Action Dialogs */}
+      <Dialog open={actionDialog === 'suspend'} onOpenChange={(open) => !open && setActionDialog(null)}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Suspend User</DialogTitle>
+            <DialogDescription>
+              Are you sure you want to suspend {selectedUser?.name}? They will not be able to access the app.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setActionDialog(null)}>Cancel</Button>
+            <Button variant="destructive" onClick={handleSuspendUser} disabled={isProcessing}>
+              {isProcessing ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}
+              Suspend User
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={actionDialog === 'premium'} onOpenChange={(open) => !open && setActionDialog(null)}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Give Premium</DialogTitle>
+            <DialogDescription>
+              Grant premium subscription to {selectedUser?.name}?
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setActionDialog(null)}>Cancel</Button>
+            <Button variant="forma" onClick={handleGivePremium} disabled={isProcessing}>
+              {isProcessing ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}
+              Give Premium
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={actionDialog === 'delete'} onOpenChange={(open) => !open && setActionDialog(null)}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Delete User</DialogTitle>
+            <DialogDescription>
+              This action cannot be undone. {selectedUser?.name}'s account and all data will be permanently deleted.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setActionDialog(null)}>Cancel</Button>
+            <Button variant="destructive" onClick={handleDeleteUser} disabled={isProcessing}>
+              {isProcessing ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}
+              Delete User
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

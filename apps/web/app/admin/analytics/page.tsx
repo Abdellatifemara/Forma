@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import {
   Users,
   DollarSign,
@@ -8,6 +9,8 @@ import {
   Download,
   ArrowUpRight,
   ArrowDownRight,
+  Loader2,
+  AlertCircle,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -20,43 +23,52 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-
-const monthlyGrowth = [
-  { month: 'Jan', users: 8500, revenue: 420000 },
-  { month: 'Feb', users: 9800, revenue: 580000 },
-  { month: 'Mar', users: 12847, revenue: 1200000 },
-];
-
-const userAcquisition = [
-  { source: 'Organic Search', users: 4200, percentage: 33 },
-  { source: 'Social Media', users: 3800, percentage: 30 },
-  { source: 'Referrals', users: 2600, percentage: 20 },
-  { source: 'Paid Ads', users: 1400, percentage: 11 },
-  { source: 'Direct', users: 847, percentage: 7 },
-];
-
-const planDistribution = [
-  { plan: 'Free', users: 8500, percentage: 66 },
-  { plan: 'Pro', users: 3500, percentage: 27 },
-  { plan: 'Elite', users: 847, percentage: 7 },
-];
-
-const topFeatures = [
-  { feature: 'Workout Tracking', usage: 92 },
-  { feature: 'Food Logging', usage: 78 },
-  { feature: 'Progress Photos', usage: 65 },
-  { feature: 'AI Coach', usage: 45 },
-  { feature: 'Trainer Marketplace', usage: 23 },
-];
-
-const retentionRates = [
-  { period: 'Day 1', rate: 85 },
-  { period: 'Day 7', rate: 62 },
-  { period: 'Day 30', rate: 45 },
-  { period: 'Day 90', rate: 32 },
-];
+import { adminApi, type AnalyticsData } from '@/lib/api';
+import { useToast } from '@/hooks/use-toast';
 
 export default function AdminAnalyticsPage() {
+  const { toast } = useToast();
+  const [analytics, setAnalytics] = useState<AnalyticsData | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [period, setPeriod] = useState<'week' | 'month' | 'quarter' | 'year'>('month');
+
+  const fetchAnalytics = async () => {
+    setIsLoading(true);
+    setError(null);
+    try {
+      const data = await adminApi.getAnalytics(period);
+      setAnalytics(data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load analytics');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchAnalytics();
+  }, [period]);
+
+  if (isLoading) {
+    return (
+      <div className="flex h-[50vh] items-center justify-center">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
+        <AlertCircle className="h-12 w-12 text-destructive mb-4" />
+        <h2 className="text-xl font-semibold mb-2">Failed to load analytics</h2>
+        <p className="text-muted-foreground mb-4">{error}</p>
+        <Button onClick={fetchAnalytics}>Try Again</Button>
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -68,7 +80,7 @@ export default function AdminAnalyticsPage() {
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <Select defaultValue="month">
+          <Select value={period} onValueChange={(v) => setPeriod(v as typeof period)}>
             <SelectTrigger className="w-[150px]">
               <SelectValue />
             </SelectTrigger>
@@ -79,7 +91,10 @@ export default function AdminAnalyticsPage() {
               <SelectItem value="year">This Year</SelectItem>
             </SelectContent>
           </Select>
-          <Button variant="outline">
+          <Button
+            variant="outline"
+            onClick={() => toast({ title: 'Coming Soon', description: 'Export feature will be available soon' })}
+          >
             <Download className="mr-2 h-4 w-4" />
             Export Report
           </Button>
@@ -94,12 +109,19 @@ export default function AdminAnalyticsPage() {
               <div className="rounded-lg bg-forma-teal/10 p-2">
                 <Users className="h-5 w-5 text-forma-teal" />
               </div>
-              <Badge variant="forma" className="flex items-center gap-1">
-                <ArrowUpRight className="h-3 w-3" />
-                +31%
+              <Badge
+                variant={analytics?.userChange && analytics.userChange >= 0 ? 'forma' : 'secondary'}
+                className="flex items-center gap-1"
+              >
+                {analytics?.userChange && analytics.userChange >= 0 ? (
+                  <ArrowUpRight className="h-3 w-3" />
+                ) : (
+                  <ArrowDownRight className="h-3 w-3" />
+                )}
+                {analytics?.userChange ? `${analytics.userChange >= 0 ? '+' : ''}${analytics.userChange}%` : '0%'}
               </Badge>
             </div>
-            <p className="mt-3 text-2xl font-bold">12,847</p>
+            <p className="mt-3 text-2xl font-bold">{analytics?.totalUsers?.toLocaleString() || 0}</p>
             <p className="text-sm text-muted-foreground">Total Users</p>
           </CardContent>
         </Card>
@@ -110,12 +132,25 @@ export default function AdminAnalyticsPage() {
               <div className="rounded-lg bg-green-500/10 p-2">
                 <DollarSign className="h-5 w-5 text-green-500" />
               </div>
-              <Badge variant="forma" className="flex items-center gap-1">
-                <ArrowUpRight className="h-3 w-3" />
-                +107%
+              <Badge
+                variant={analytics?.revenueChange && analytics.revenueChange >= 0 ? 'forma' : 'secondary'}
+                className="flex items-center gap-1"
+              >
+                {analytics?.revenueChange && analytics.revenueChange >= 0 ? (
+                  <ArrowUpRight className="h-3 w-3" />
+                ) : (
+                  <ArrowDownRight className="h-3 w-3" />
+                )}
+                {analytics?.revenueChange ? `${analytics.revenueChange >= 0 ? '+' : ''}${analytics.revenueChange}%` : '0%'}
               </Badge>
             </div>
-            <p className="mt-3 text-2xl font-bold">1.2M EGP</p>
+            <p className="mt-3 text-2xl font-bold">
+              {analytics?.monthlyRevenue
+                ? analytics.monthlyRevenue >= 1000000
+                  ? `${(analytics.monthlyRevenue / 1000000).toFixed(1)}M`
+                  : `${(analytics.monthlyRevenue / 1000).toFixed(0)}K`
+                : '0'} EGP
+            </p>
             <p className="text-sm text-muted-foreground">Monthly Revenue</p>
           </CardContent>
         </Card>
@@ -128,10 +163,10 @@ export default function AdminAnalyticsPage() {
               </div>
               <Badge variant="forma" className="flex items-center gap-1">
                 <ArrowUpRight className="h-3 w-3" />
-                +12%
+                Live
               </Badge>
             </div>
-            <p className="mt-3 text-2xl font-bold">3,421</p>
+            <p className="mt-3 text-2xl font-bold">{analytics?.dailyActiveUsers?.toLocaleString() || 0}</p>
             <p className="text-sm text-muted-foreground">Daily Active Users</p>
           </CardContent>
         </Card>
@@ -142,12 +177,19 @@ export default function AdminAnalyticsPage() {
               <div className="rounded-lg bg-orange-500/10 p-2">
                 <TrendingUp className="h-5 w-5 text-orange-500" />
               </div>
-              <Badge variant="secondary" className="flex items-center gap-1">
-                <ArrowDownRight className="h-3 w-3" />
-                -0.5%
+              <Badge
+                variant={analytics?.churnRate && analytics.churnRate <= 5 ? 'forma' : 'secondary'}
+                className="flex items-center gap-1"
+              >
+                {analytics?.churnRate && analytics.churnRate <= 5 ? (
+                  <ArrowDownRight className="h-3 w-3" />
+                ) : (
+                  <ArrowUpRight className="h-3 w-3" />
+                )}
+                {analytics?.churnRate ? `${analytics.churnRate}%` : '0%'}
               </Badge>
             </div>
-            <p className="mt-3 text-2xl font-bold">2.1%</p>
+            <p className="mt-3 text-2xl font-bold">{analytics?.churnRate || 0}%</p>
             <p className="text-sm text-muted-foreground">Churn Rate</p>
           </CardContent>
         </Card>
@@ -161,18 +203,27 @@ export default function AdminAnalyticsPage() {
           </CardHeader>
           <CardContent>
             <div className="h-64">
-              <div className="flex h-full items-end justify-around gap-4">
-                {monthlyGrowth.map((data) => (
-                  <div key={data.month} className="flex flex-1 flex-col items-center gap-2">
-                    <div
-                      className="w-full rounded-t-lg bg-forma-teal transition-all"
-                      style={{ height: `${(data.users / 15000) * 100}%` }}
-                    />
-                    <span className="text-sm text-muted-foreground">{data.month}</span>
-                    <span className="text-sm font-medium">{data.users.toLocaleString()}</span>
-                  </div>
-                ))}
-              </div>
+              {analytics?.monthlyGrowth && analytics.monthlyGrowth.length > 0 ? (
+                <div className="flex h-full items-end justify-around gap-4">
+                  {analytics.monthlyGrowth.map((data) => {
+                    const maxUsers = Math.max(...analytics.monthlyGrowth.map((d) => d.users), 1);
+                    return (
+                      <div key={data.month} className="flex flex-1 flex-col items-center gap-2">
+                        <div
+                          className="w-full rounded-t-lg bg-forma-teal transition-all"
+                          style={{ height: `${(data.users / maxUsers) * 100}%`, minHeight: '4px' }}
+                        />
+                        <span className="text-sm text-muted-foreground">{data.month}</span>
+                        <span className="text-sm font-medium">{data.users.toLocaleString()}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="flex h-full items-center justify-center text-muted-foreground">
+                  No data available
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>
@@ -184,40 +235,29 @@ export default function AdminAnalyticsPage() {
           </CardHeader>
           <CardContent>
             <div className="h-64">
-              <div className="flex h-full items-end justify-around gap-4">
-                {monthlyGrowth.map((data) => (
-                  <div key={data.month} className="flex flex-1 flex-col items-center gap-2">
-                    <div
-                      className="w-full rounded-t-lg bg-green-500 transition-all"
-                      style={{ height: `${(data.revenue / 1500000) * 100}%` }}
-                    />
-                    <span className="text-sm text-muted-foreground">{data.month}</span>
-                    <span className="text-sm font-medium">
-                      {(data.revenue / 1000).toFixed(0)}K
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* User Acquisition */}
-        <Card>
-          <CardHeader>
-            <CardTitle>User Acquisition</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {userAcquisition.map((item) => (
-                <div key={item.source}>
-                  <div className="flex items-center justify-between text-sm">
-                    <span>{item.source}</span>
-                    <span className="font-medium">{item.users.toLocaleString()} users</span>
-                  </div>
-                  <Progress value={item.percentage} className="mt-2" />
+              {analytics?.monthlyGrowth && analytics.monthlyGrowth.length > 0 ? (
+                <div className="flex h-full items-end justify-around gap-4">
+                  {analytics.monthlyGrowth.map((data) => {
+                    const maxRevenue = Math.max(...analytics.monthlyGrowth.map((d) => d.revenue), 1);
+                    return (
+                      <div key={data.month} className="flex flex-1 flex-col items-center gap-2">
+                        <div
+                          className="w-full rounded-t-lg bg-green-500 transition-all"
+                          style={{ height: `${(data.revenue / maxRevenue) * 100}%`, minHeight: '4px' }}
+                        />
+                        <span className="text-sm text-muted-foreground">{data.month}</span>
+                        <span className="text-sm font-medium">
+                          {(data.revenue / 1000).toFixed(0)}K
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
-              ))}
+              ) : (
+                <div className="flex h-full items-center justify-center text-muted-foreground">
+                  No data available
+                </div>
+              )}
             </div>
           </CardContent>
         </Card>
@@ -229,18 +269,24 @@ export default function AdminAnalyticsPage() {
           </CardHeader>
           <CardContent>
             <div className="space-y-6">
-              {planDistribution.map((item) => (
-                <div key={item.plan} className="flex items-center gap-4">
-                  <div className="w-20">
-                    <p className="font-medium">{item.plan}</p>
+              {analytics?.planDistribution && analytics.planDistribution.length > 0 ? (
+                analytics.planDistribution.map((item) => (
+                  <div key={item.plan} className="flex items-center gap-4">
+                    <div className="w-20">
+                      <p className="font-medium">{item.plan}</p>
+                    </div>
+                    <Progress value={item.percentage} className="flex-1" />
+                    <div className="w-24 text-right">
+                      <p className="text-sm font-medium">{item.users.toLocaleString()}</p>
+                      <p className="text-xs text-muted-foreground">{item.percentage}%</p>
+                    </div>
                   </div>
-                  <Progress value={item.percentage} className="flex-1" />
-                  <div className="w-24 text-right">
-                    <p className="text-sm font-medium">{item.users.toLocaleString()}</p>
-                    <p className="text-xs text-muted-foreground">{item.percentage}%</p>
-                  </div>
+                ))
+              ) : (
+                <div className="py-8 text-center text-muted-foreground">
+                  No data available
                 </div>
-              ))}
+              )}
             </div>
           </CardContent>
         </Card>
@@ -252,34 +298,46 @@ export default function AdminAnalyticsPage() {
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
-              {topFeatures.map((item) => (
-                <div key={item.feature}>
-                  <div className="flex items-center justify-between text-sm">
-                    <span>{item.feature}</span>
-                    <span className="font-medium">{item.usage}%</span>
+              {analytics?.featureUsage && analytics.featureUsage.length > 0 ? (
+                analytics.featureUsage.map((item) => (
+                  <div key={item.feature}>
+                    <div className="flex items-center justify-between text-sm">
+                      <span>{item.feature}</span>
+                      <span className="font-medium">{item.usage}%</span>
+                    </div>
+                    <Progress value={item.usage} className="mt-2" />
                   </div>
-                  <Progress value={item.usage} className="mt-2" />
+                ))
+              ) : (
+                <div className="py-8 text-center text-muted-foreground">
+                  No data available
                 </div>
-              ))}
+              )}
             </div>
           </CardContent>
         </Card>
 
         {/* Retention Rates */}
-        <Card>
+        <Card className="lg:col-span-2">
           <CardHeader>
             <CardTitle>Retention Rates</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-4 gap-4">
-              {retentionRates.map((item) => (
-                <div key={item.period} className="text-center">
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-forma-teal/10">
-                    <span className="text-lg font-bold text-forma-teal">{item.rate}%</span>
+              {analytics?.retentionRates && analytics.retentionRates.length > 0 ? (
+                analytics.retentionRates.map((item) => (
+                  <div key={item.period} className="text-center">
+                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-forma-teal/10">
+                      <span className="text-lg font-bold text-forma-teal">{item.rate}%</span>
+                    </div>
+                    <p className="mt-2 text-sm text-muted-foreground">{item.period}</p>
                   </div>
-                  <p className="mt-2 text-sm text-muted-foreground">{item.period}</p>
+                ))
+              ) : (
+                <div className="col-span-4 py-8 text-center text-muted-foreground">
+                  No data available
                 </div>
-              ))}
+              )}
             </div>
           </CardContent>
         </Card>

@@ -1,5 +1,8 @@
+'use client';
+
 import { Sidebar } from '@/components/dashboard/sidebar';
 import { Header } from '@/components/dashboard/header';
+import { RoleGuard } from '@/components/auth/role-guard';
 
 export default function AdminLayout({
   children,
@@ -7,12 +10,14 @@ export default function AdminLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-background">
-      <Sidebar type="admin" />
-      <div className="lg:pl-64">
-        <Header />
-        <main className="p-6">{children}</main>
+    <RoleGuard allowedRoles={['ADMIN']} fallbackUrl="/dashboard">
+      <div className="min-h-screen bg-background">
+        <Sidebar type="admin" />
+        <div className="lg:pl-64">
+          <Header />
+          <main className="p-6">{children}</main>
+        </div>
       </div>
-    </div>
+    </RoleGuard>
   );
 }

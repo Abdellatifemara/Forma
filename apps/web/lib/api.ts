@@ -389,15 +389,94 @@ export const achievementsApi = {
 };
 
 // Admin API
+export interface AdminTrainerStats {
+  activeTrainers: number;
+  pendingTrainers: number;
+  avgRating: number;
+  ratingCount: number;
+  monthlyPayout: number;
+}
+
+export interface AdminTrainer {
+  id: string;
+  userId: string;
+  name: string;
+  email: string;
+  status: string;
+  specializations: string[];
+  rating: number | null;
+  clientCount: number;
+  hourlyRate: number | null;
+  createdAt: string;
+  verifiedAt: string | null;
+}
+
+export interface AnalyticsData {
+  totalUsers: number;
+  userChange: number;
+  monthlyRevenue: number;
+  revenueChange: number;
+  dailyActiveUsers: number;
+  churnRate: number;
+  planDistribution: Array<{ plan: string; users: number; percentage: number }>;
+  monthlyGrowth: Array<{ month: string; users: number; revenue: number }>;
+  featureUsage: Array<{ feature: string; usage: number }>;
+  retentionRates: Array<{ period: string; rate: number }>;
+}
+
+export interface ContentStats {
+  exercises: number;
+  foods: number;
+  programs: number;
+  articles: number;
+  videos: number;
+}
+
+export interface ContentExercise {
+  id: string;
+  name: string;
+  muscle: string;
+  equipment: string;
+  status: string;
+}
+
+export interface ContentFood {
+  id: string;
+  name: string;
+  category: string;
+  calories: number;
+  status: string;
+}
+
 export const adminApi = {
   getDashboardStats: () => api.get<AdminDashboardStats>('/admin/stats'),
   getRecentActivity: () => api.get<AdminActivity[]>('/admin/activity'),
   getPendingApprovals: () => api.get<AdminApproval[]>('/admin/approvals'),
   getSystemHealth: () => api.get<SystemHealthMetric[]>('/admin/health'),
   getUsers: (params?: { page?: number; limit?: number; query?: string }) =>
-    api.get<PaginatedResponse<User>>('/admin/users', params as Record<string, string>),
+    api.get<PaginatedResponse<AdminUser>>('/admin/users', params as Record<string, string>),
   updateUser: (userId: string, data: Partial<User>) =>
     api.patch<User>(`/admin/users/${userId}`, data),
+  deleteUser: (userId: string) =>
+    api.post<{ success: boolean }>(`/admin/users/${userId}/delete`),
+  updateUserSubscription: (userId: string, tier: 'FREE' | 'PREMIUM' | 'PREMIUM_PLUS') =>
+    api.post<{ tier: string; status: string }>(`/admin/users/${userId}/subscription`, { tier }),
+  approveTrainer: (trainerId: string) =>
+    api.post<{ success: boolean }>(`/admin/trainers/${trainerId}/approve`),
+  rejectTrainer: (trainerId: string) =>
+    api.post<{ success: boolean }>(`/admin/trainers/${trainerId}/reject`),
+  getTrainerStats: () => api.get<AdminTrainerStats>('/admin/trainers/stats'),
+  getAllTrainers: (params?: { page?: number; limit?: number; status?: string }) =>
+    api.get<PaginatedResponse<AdminTrainer>>('/admin/trainers', params as Record<string, string>),
+  // Analytics
+  getAnalytics: (period?: 'week' | 'month' | 'quarter' | 'year') =>
+    api.get<AnalyticsData>('/admin/analytics', period ? { period } : undefined),
+  // Content Management
+  getContentStats: () => api.get<ContentStats>('/admin/content/stats'),
+  getExercises: (params?: { page?: number; limit?: number; search?: string }) =>
+    api.get<PaginatedResponse<ContentExercise>>('/admin/content/exercises', params as Record<string, string>),
+  getFoods: (params?: { page?: number; limit?: number; search?: string }) =>
+    api.get<PaginatedResponse<ContentFood>>('/admin/content/foods', params as Record<string, string>),
 };
 
 // Upload API
@@ -1988,11 +2067,23 @@ interface AdminActivity {
   type: 'user' | 'trainer' | 'payment' | 'content' | 'system';
 }
 
-interface AdminApproval {
+export interface AdminApproval {
   id: string;
   name: string;
-  type: 'Trainer Application' | 'Content Review';
+  email: string;
+  type: string;
+  status: string;
   submittedAt: string;
+}
+
+export interface AdminUser {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+  subscription: string;
+  createdAt: string;
+  lastActiveAt: string | null;
 }
 
 interface SystemHealthMetric {
@@ -2980,7 +3071,6 @@ export type {
   ManualWorkoutLogData,
   AdminDashboardStats,
   AdminActivity,
-  AdminApproval,
   SystemHealthMetric,
   UploadResponse,
   MessageType,

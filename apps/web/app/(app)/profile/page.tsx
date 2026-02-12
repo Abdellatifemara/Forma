@@ -25,6 +25,8 @@ import { Badge } from '@/components/ui/badge';
 import { Switch } from '@/components/ui/switch';
 import { removeAuthCookie } from '@/lib/api';
 import { useUser, useUserStats } from '@/hooks/use-user';
+import { useToast } from '@/hooks/use-toast';
+import { useTheme } from 'next-themes';
 
 const menuItems = [
   {
@@ -47,8 +49,8 @@ const menuItems = [
     section: 'Support',
     items: [
       { icon: HelpCircle, label: 'Help Center', href: '/help' },
-      { icon: Star, label: 'Rate the App', href: '#' },
-      { icon: Share2, label: 'Share Forma', href: '#' },
+      { icon: Star, label: 'Rate the App', href: '', action: 'rate' },
+      { icon: Share2, label: 'Share Forma', href: '', action: 'share' },
     ],
   },
 ];
@@ -70,12 +72,34 @@ function formatVolume(kg: number): string {
 
 export default function ProfilePage() {
   const router = useRouter();
+  const { toast } = useToast();
+  const { theme, setTheme } = useTheme();
   const { data: userData, isLoading: userLoading } = useUser();
   const { data: statsData, isLoading: statsLoading } = useUserStats();
 
   const handleLogout = () => {
     removeAuthCookie();
     router.push('/login');
+  };
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Forma Fitness',
+          text: 'Check out Forma - the best fitness app for Egyptians!',
+          url: 'https://formaeg.com',
+        });
+      } catch (err) {
+        toast({ title: 'Share link copied!', description: 'formaeg.com' });
+      }
+    } else {
+      toast({ title: 'Share link copied!', description: 'formaeg.com' });
+    }
+  };
+
+  const handleRateApp = () => {
+    toast({ title: 'Coming Soon', description: 'App Store rating will be available soon' });
   };
 
   const user = userData?.user;
@@ -161,7 +185,10 @@ export default function ProfilePage() {
             <Moon className="h-5 w-5" />
             <span className="font-medium">Dark Mode</span>
           </div>
-          <Switch defaultChecked />
+          <Switch
+            checked={theme === 'dark'}
+            onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
+          />
         </CardContent>
       </Card>
 
@@ -202,22 +229,45 @@ export default function ProfilePage() {
             </CardTitle>
           </CardHeader>
           <CardContent className="p-0">
-            {section.items.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="flex items-center justify-between px-6 py-3 transition-colors hover:bg-muted"
-              >
-                <div className="flex items-center gap-3">
-                  <item.icon className="h-5 w-5 text-muted-foreground" />
-                  <span>{item.label}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  {item.badge && <Badge variant="forma">{item.badge}</Badge>}
-                  <ChevronRight className="h-4 w-4 text-muted-foreground" />
-                </div>
-              </Link>
-            ))}
+            {section.items.map((item) => {
+              const content = (
+                <>
+                  <div className="flex items-center gap-3">
+                    <item.icon className="h-5 w-5 text-muted-foreground" />
+                    <span>{item.label}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    {'badge' in item && item.badge && <Badge variant="forma">{item.badge}</Badge>}
+                    <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                  </div>
+                </>
+              );
+
+              if ((item as any).action) {
+                return (
+                  <button
+                    key={item.label}
+                    onClick={() => {
+                      if ((item as any).action === 'rate') handleRateApp();
+                      if ((item as any).action === 'share') handleShare();
+                    }}
+                    className="flex w-full items-center justify-between px-6 py-3 transition-colors hover:bg-muted"
+                  >
+                    {content}
+                  </button>
+                );
+              }
+
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="flex items-center justify-between px-6 py-3 transition-colors hover:bg-muted"
+                >
+                  {content}
+                </Link>
+              );
+            })}
           </CardContent>
         </Card>
       ))}

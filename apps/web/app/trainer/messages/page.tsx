@@ -50,6 +50,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import { useToast } from '@/hooks/use-toast';
+import Link from 'next/link';
 
 function formatTime(dateString: string) {
   const date = new Date(dateString);
@@ -76,6 +78,7 @@ function formatMessageTime(dateString: string) {
 function MessagesPageContent() {
   const searchParams = useSearchParams();
   const clientIdParam = searchParams.get('client');
+  const { toast } = useToast();
 
   const [selectedConversationId, setSelectedConversationId] = useState<string | null>(null);
   const [newMessage, setNewMessage] = useState('');
@@ -498,10 +501,20 @@ function MessagesPageContent() {
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Button variant="ghost" size="icon" className="hover:bg-primary/10">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="hover:bg-primary/10"
+                    onClick={() => toast({ title: 'Coming Soon', description: 'Voice calls will be available soon' })}
+                  >
                     <Phone className="h-5 w-5" />
                   </Button>
-                  <Button variant="ghost" size="icon" className="hover:bg-primary/10">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="hover:bg-primary/10"
+                    onClick={() => toast({ title: 'Coming Soon', description: 'Video calls will be available soon' })}
+                  >
                     <Video className="h-5 w-5" />
                   </Button>
                   <DropdownMenu>
@@ -511,14 +524,25 @@ function MessagesPageContent() {
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
-                      <DropdownMenuItem>
-                        <User className="mr-2 h-4 w-4" />
-                        View Profile
+                      <DropdownMenuItem asChild>
+                        <Link href={`/trainer/clients/${selectedConversation.participant?.id}`}>
+                          <User className="mr-2 h-4 w-4" />
+                          View Profile
+                        </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem>View Program</DropdownMenuItem>
-                      <DropdownMenuItem>Schedule Session</DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link href={`/trainer/programs?client=${selectedConversation.participant?.id}`}>
+                          View Program
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem onClick={() => toast({ title: 'Coming Soon', description: 'Session scheduling will be available soon' })}>
+                        Schedule Session
+                      </DropdownMenuItem>
                       <DropdownMenuSeparator />
-                      <DropdownMenuItem className="text-destructive">
+                      <DropdownMenuItem
+                        className="text-destructive"
+                        onClick={() => toast({ title: 'Coming Soon', description: 'Client blocking will be available soon' })}
+                      >
                         Block Client
                       </DropdownMenuItem>
                     </DropdownMenuContent>

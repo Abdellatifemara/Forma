@@ -75,6 +75,8 @@ export default function SettingsPage() {
   const [showPasswordDialog, setShowPasswordDialog] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [isUploadingPhoto, setIsUploadingPhoto] = useState(false);
+  const [passwordForm, setPasswordForm] = useState({ current: '', new: '', confirm: '' });
+  const [deleteConfirmText, setDeleteConfirmText] = useState('');
 
   // Populate form with user data
   useEffect(() => {
@@ -773,7 +775,10 @@ export default function SettingsPage() {
       </Tabs>
 
       {/* Password Change Dialog */}
-      <Dialog open={showPasswordDialog} onOpenChange={setShowPasswordDialog}>
+      <Dialog open={showPasswordDialog} onOpenChange={(open) => {
+        setShowPasswordDialog(open);
+        if (!open) setPasswordForm({ current: '', new: '', confirm: '' });
+      }}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Change Password</DialogTitle>
@@ -784,28 +789,56 @@ export default function SettingsPage() {
           <div className="space-y-4 py-4">
             <div>
               <Label>Current Password</Label>
-              <Input type="password" className="mt-1.5" />
+              <Input
+                type="password"
+                className="mt-1.5"
+                value={passwordForm.current}
+                onChange={(e) => setPasswordForm({ ...passwordForm, current: e.target.value })}
+              />
             </div>
             <div>
               <Label>New Password</Label>
-              <Input type="password" className="mt-1.5" />
+              <Input
+                type="password"
+                className="mt-1.5"
+                value={passwordForm.new}
+                onChange={(e) => setPasswordForm({ ...passwordForm, new: e.target.value })}
+              />
             </div>
             <div>
               <Label>Confirm New Password</Label>
-              <Input type="password" className="mt-1.5" />
+              <Input
+                type="password"
+                className="mt-1.5"
+                value={passwordForm.confirm}
+                onChange={(e) => setPasswordForm({ ...passwordForm, confirm: e.target.value })}
+              />
             </div>
           </div>
           <DialogFooter>
             <Button variant="outline" onClick={() => setShowPasswordDialog(false)}>
               Cancel
             </Button>
-            <Button variant="forma">Update Password</Button>
+            <Button
+              variant="forma"
+              disabled={!passwordForm.current || !passwordForm.new || passwordForm.new !== passwordForm.confirm}
+              onClick={() => {
+                toast({ title: 'Coming Soon', description: 'Password change will be available soon' });
+                setShowPasswordDialog(false);
+                setPasswordForm({ current: '', new: '', confirm: '' });
+              }}
+            >
+              Update Password
+            </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
 
       {/* Delete Account Dialog */}
-      <Dialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
+      <Dialog open={showDeleteDialog} onOpenChange={(open) => {
+        setShowDeleteDialog(open);
+        if (!open) setDeleteConfirmText('');
+      }}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Delete Account</DialogTitle>
@@ -817,13 +850,28 @@ export default function SettingsPage() {
             <p className="text-sm text-muted-foreground">
               To confirm, type <strong>DELETE</strong> below:
             </p>
-            <Input className="mt-2" placeholder="Type DELETE to confirm" />
+            <Input
+              className="mt-2"
+              placeholder="Type DELETE to confirm"
+              value={deleteConfirmText}
+              onChange={(e) => setDeleteConfirmText(e.target.value)}
+            />
           </div>
           <DialogFooter>
             <Button variant="outline" onClick={() => setShowDeleteDialog(false)}>
               Cancel
             </Button>
-            <Button variant="destructive">Delete My Account</Button>
+            <Button
+              variant="destructive"
+              disabled={deleteConfirmText !== 'DELETE'}
+              onClick={() => {
+                toast({ title: 'Coming Soon', description: 'Account deletion will be available soon' });
+                setShowDeleteDialog(false);
+                setDeleteConfirmText('');
+              }}
+            >
+              Delete My Account
+            </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>

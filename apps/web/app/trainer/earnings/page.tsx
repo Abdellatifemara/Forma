@@ -23,10 +23,12 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { trainersApi, type TrainerEarningsBreakdown, type TrainerTransaction } from '@/lib/api';
 import { cn } from '@/lib/utils';
+import { useToast } from '@/hooks/use-toast';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export default function EarningsPage() {
+  const { toast } = useToast();
   const [earnings, setEarnings] = useState<TrainerEarningsBreakdown | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -36,18 +38,20 @@ export default function EarningsPage() {
   const [selectedMonth, setSelectedMonth] = useState(now.getMonth());
   const [selectedYear, setSelectedYear] = useState(now.getFullYear());
 
-  useEffect(() => {
-    async function fetchEarnings() {
-      try {
-        setIsLoading(true);
-        const data = await trainersApi.getEarnings({ month: selectedMonth, year: selectedYear });
-        setEarnings(data);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load earnings');
-      } finally {
-        setIsLoading(false);
-      }
+  const fetchEarnings = async () => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      const data = await trainersApi.getEarnings({ month: selectedMonth, year: selectedYear });
+      setEarnings(data);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load earnings');
+    } finally {
+      setIsLoading(false);
     }
+  };
+
+  useEffect(() => {
     fetchEarnings();
   }, [selectedMonth, selectedYear]);
 
@@ -129,7 +133,8 @@ export default function EarningsPage() {
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
         <h2 className="text-xl font-semibold mb-2">Failed to load earnings</h2>
-        <p className="text-muted-foreground">{error}</p>
+        <p className="text-muted-foreground mb-4">{error}</p>
+        <Button onClick={fetchEarnings}>Try Again</Button>
       </div>
     );
   }
@@ -142,7 +147,11 @@ export default function EarningsPage() {
           <h1 className="text-3xl font-bold">Earnings</h1>
           <p className="text-muted-foreground">Track your revenue and payouts</p>
         </div>
-        <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
+        <Button
+          variant="outline"
+          className="border-primary/50 hover:bg-primary/10"
+          onClick={() => toast({ title: 'Coming Soon', description: 'Export feature will be available soon' })}
+        >
           <Download className="mr-2 h-4 w-4" />
           Export Report
         </Button>

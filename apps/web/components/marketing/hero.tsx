@@ -115,7 +115,7 @@ export function Hero() {
               className="h-14 rounded-xl px-8 text-lg border-primary/30 hover:bg-primary/10 hover:border-primary/50"
               asChild
             >
-              <Link href="#how-it-works" className={cn('flex items-center', isRTL && 'flex-row-reverse')}>
+              <Link href="#features" className={cn('flex items-center', isRTL && 'flex-row-reverse')}>
                 <Play className={cn('h-5 w-5', isRTL ? 'ml-2' : 'mr-2')} fill="currentColor" />
                 {t.hero.watchDemo}
               </Link>

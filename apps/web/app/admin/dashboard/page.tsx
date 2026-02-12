@@ -245,35 +245,36 @@ export default function AdminDashboardPage() {
           </CardContent>
         </Card>
 
-        {/* Quick Stats */}
+        {/* Quick Actions */}
         <Card>
           <CardHeader>
-            <CardTitle>Growth Metrics</CardTitle>
+            <CardTitle>Quick Actions</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-muted-foreground">Daily Active Users</span>
-              <div className="flex items-center gap-2">
-                <TrendingUp className="h-4 w-4 text-green-500" />
-                <span className="font-medium">3,421</span>
-              </div>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-muted-foreground">Avg Session Duration</span>
-              <span className="font-medium">12m 34s</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-muted-foreground">Conversion Rate</span>
-              <span className="font-medium">4.2%</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-muted-foreground">Churn Rate</span>
-              <span className="font-medium">2.1%</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-muted-foreground">NPS Score</span>
-              <span className="font-medium text-forma-teal">72</span>
-            </div>
+          <CardContent className="space-y-3">
+            <Button variant="outline" className="w-full justify-start" asChild>
+              <a href="/admin/users">
+                <Users className="mr-2 h-4 w-4" />
+                Manage Users
+              </a>
+            </Button>
+            <Button variant="outline" className="w-full justify-start" asChild>
+              <a href="/admin/trainers">
+                <UserCheck className="mr-2 h-4 w-4" />
+                Review Trainers
+              </a>
+            </Button>
+            <Button variant="outline" className="w-full justify-start" asChild>
+              <a href="/admin/analytics">
+                <TrendingUp className="mr-2 h-4 w-4" />
+                View Analytics
+              </a>
+            </Button>
+            <Button variant="outline" className="w-full justify-start" asChild>
+              <a href="/admin/content">
+                <Dumbbell className="mr-2 h-4 w-4" />
+                Manage Content
+              </a>
+            </Button>
           </CardContent>
         </Card>
       </div>
