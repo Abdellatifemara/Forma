@@ -1,5 +1,6 @@
 'use client';
 
+// Meal Plan Management Page for Trainers
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import {
