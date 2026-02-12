@@ -51,29 +51,34 @@ export class ScheduledCallsService {
    * Get trainer's availability schedule
    */
   async getTrainerAvailability(trainerId: string) {
-    // trainerId could be the user ID or trainer profile ID
-    const trainer = await this.prisma.trainerProfile.findFirst({
-      where: {
-        OR: [{ userId: trainerId }, { id: trainerId }],
-      },
-    });
+    try {
+      // trainerId could be the user ID or trainer profile ID
+      const trainer = await this.prisma.trainerProfile.findFirst({
+        where: {
+          OR: [{ userId: trainerId }, { id: trainerId }],
+        },
+      });
 
-    if (!trainer) {
+      if (!trainer) {
+        return [];
+      }
+
+      const availability = await this.prisma.trainerAvailability.findMany({
+        where: { trainerId: trainer.id, isActive: true },
+        orderBy: [{ dayOfWeek: 'asc' }, { startTime: 'asc' }],
+      });
+
+      return availability.map((slot) => ({
+        id: slot.id,
+        dayOfWeek: slot.dayOfWeek,
+        startTime: slot.startTime,
+        endTime: slot.endTime,
+        slotMinutes: slot.slotMinutes,
+      }));
+    } catch (error) {
+      console.error('Error fetching trainer availability:', error);
       return [];
     }
-
-    const availability = await this.prisma.trainerAvailability.findMany({
-      where: { trainerId: trainer.id, isActive: true },
-      orderBy: [{ dayOfWeek: 'asc' }, { startTime: 'asc' }],
-    });
-
-    return availability.map((slot) => ({
-      id: slot.id,
-      dayOfWeek: slot.dayOfWeek,
-      startTime: slot.startTime,
-      endTime: slot.endTime,
-      slotMinutes: slot.slotMinutes,
-    }));
   }
 
   /**
@@ -88,6 +93,9 @@ export class ScheduledCallsService {
       throw new ForbiddenException('Not a trainer');
     }
 
+    // Ensure slots is an array
+    const slotsArray = Array.isArray(slots) ? slots : [];
+
     await this.prisma.$transaction(async (tx) => {
       // Delete all existing availability
       await tx.trainerAvailability.deleteMany({
@@ -95,9 +103,9 @@ export class ScheduledCallsService {
       });
 
       // Create new availability slots
-      if (slots.length > 0) {
+      if (slotsArray.length > 0) {
         await tx.trainerAvailability.createMany({
-          data: slots.map((slot) => ({
+          data: slotsArray.map((slot) => ({
             trainerId: trainer.id,
             dayOfWeek: slot.dayOfWeek,
             startTime: slot.startTime,
@@ -467,7 +475,8 @@ export class ScheduledCallsService {
     });
 
     if (!trainerProfile) {
-      throw new ForbiddenException('Not a trainer');
+      // Return empty array instead of throwing - user may not be a trainer yet
+      return [];
     }
 
     const calls = await this.prisma.scheduledCall.findMany({
@@ -525,7 +534,8 @@ export class ScheduledCallsService {
     });
 
     if (!trainerProfile) {
-      throw new ForbiddenException('Not a trainer');
+      // Return empty array instead of throwing - user may not be a trainer yet
+      return [];
     }
 
     const startOfDay = new Date();
