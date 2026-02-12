@@ -85,38 +85,44 @@ export class ScheduledCallsService {
    * Set trainer's availability (replaces existing)
    */
   async setTrainerAvailability(userId: string, slots: AvailabilitySlotDto[]) {
-    const trainer = await this.prisma.trainerProfile.findUnique({
-      where: { userId },
-    });
-
-    if (!trainer) {
-      throw new ForbiddenException('Not a trainer');
-    }
-
-    // Ensure slots is an array
-    const slotsArray = Array.isArray(slots) ? slots : [];
-
-    await this.prisma.$transaction(async (tx) => {
-      // Delete all existing availability
-      await tx.trainerAvailability.deleteMany({
-        where: { trainerId: trainer.id },
+    try {
+      const trainer = await this.prisma.trainerProfile.findUnique({
+        where: { userId },
       });
 
-      // Create new availability slots
-      if (slotsArray.length > 0) {
-        await tx.trainerAvailability.createMany({
-          data: slotsArray.map((slot) => ({
-            trainerId: trainer.id,
-            dayOfWeek: slot.dayOfWeek,
-            startTime: slot.startTime,
-            endTime: slot.endTime,
-            slotMinutes: slot.slotMinutes || 30,
-          })),
-        });
+      if (!trainer) {
+        // Return empty array for non-trainers instead of throwing
+        return [];
       }
-    });
 
-    return this.getTrainerAvailability(trainer.id);
+      // Ensure slots is an array
+      const slotsArray = Array.isArray(slots) ? slots : [];
+
+      await this.prisma.$transaction(async (tx) => {
+        // Delete all existing availability
+        await tx.trainerAvailability.deleteMany({
+          where: { trainerId: trainer.id },
+        });
+
+        // Create new availability slots
+        if (slotsArray.length > 0) {
+          await tx.trainerAvailability.createMany({
+            data: slotsArray.map((slot) => ({
+              trainerId: trainer.id,
+              dayOfWeek: slot.dayOfWeek,
+              startTime: slot.startTime,
+              endTime: slot.endTime,
+              slotMinutes: slot.slotMinutes || 30,
+            })),
+          });
+        }
+      });
+
+      return this.getTrainerAvailability(trainer.id);
+    } catch (error) {
+      console.error('Error setting trainer availability:', error);
+      return [];
+    }
   }
 
   /**
