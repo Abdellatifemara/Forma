@@ -514,33 +514,29 @@ export default function TrainerSettingsPage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="p-4 rounded-xl bg-muted/30 border border-border/50">
+              <div className="p-4 rounded-xl bg-muted/30 border border-amber-500/30">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <div className="p-3 rounded-xl bg-cyan-500/20">
-                      <Wallet className="h-5 w-5 text-cyan-400" />
+                    <div className="p-3 rounded-xl bg-amber-500/20">
+                      <Wallet className="h-5 w-5 text-amber-400" />
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
-                        <p className="font-medium">Bank Transfer</p>
-                        <Badge className="bg-green-500/20 text-green-400 border-green-500/50">
-                          <CheckCircle className="h-3 w-3 mr-1" />
-                          Verified
+                        <p className="font-medium">Paymob Integration</p>
+                        <Badge className="bg-amber-500/20 text-amber-400 border-amber-500/50">
+                          Coming Soon
                         </Badge>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        ****1234 - National Bank of Egypt
+                        InstaPay, Vodafone Cash, Bank Transfer - No Stripe fees
                       </p>
                     </div>
                   </div>
-                  <Button variant="outline" size="sm" className="border-border/50">
-                    Edit
-                  </Button>
                 </div>
               </div>
-              <Button variant="outline" className="border-primary/50 hover:bg-primary/10">
-                Add Payment Method
-              </Button>
+              <p className="text-xs text-muted-foreground text-center">
+                Paymob integration coming soon. You&apos;ll be able to receive payouts via InstaPay, Vodafone Cash, or direct bank transfer.
+              </p>
             </CardContent>
           </Card>
 
