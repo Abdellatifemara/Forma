@@ -392,14 +392,16 @@ export default function ActiveWorkoutPage() {
       'SHOULDERS': 'from-blue-500 to-cyan-500',
       'BACK': 'from-green-500 to-emerald-500',
       'BICEPS': 'from-yellow-500 to-orange-500',
-      'LEGS': 'from-cyan-500 to-blue-500',
       'QUADRICEPS': 'from-cyan-500 to-blue-500',
       'HAMSTRINGS': 'from-teal-500 to-green-500',
       'GLUTES': 'from-pink-500 to-rose-500',
-      'CORE': 'from-amber-500 to-yellow-500',
       'ABS': 'from-amber-500 to-yellow-500',
+      'OBLIQUES': 'from-amber-500 to-orange-500',
+      'LOWER_BACK': 'from-green-500 to-teal-500',
       'FOREARMS': 'from-orange-500 to-red-500',
       'CALVES': 'from-indigo-500 to-purple-500',
+      'FULL_BODY': 'from-forma-teal to-emerald-500',
+      'CARDIO': 'from-pink-500 to-red-500',
     };
     return colors[normalizedMuscle] || 'from-gray-500 to-gray-600';
   };

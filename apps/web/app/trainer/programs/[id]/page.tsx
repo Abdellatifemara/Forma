@@ -69,20 +69,20 @@ interface WorkoutDay {
 }
 
 const exerciseLibrary = [
-  { id: '1', name: 'Bench Press', nameAr: 'تمرين الصدر', muscleGroup: 'Chest' },
-  { id: '2', name: 'Incline Dumbbell Press', nameAr: 'ضغط الدمبل المائل', muscleGroup: 'Chest' },
-  { id: '3', name: 'Cable Flyes', nameAr: 'تمرين الكابل للصدر', muscleGroup: 'Chest' },
-  { id: '4', name: 'Deadlift', nameAr: 'الرفعة الميتة', muscleGroup: 'Back' },
-  { id: '5', name: 'Pull-ups', nameAr: 'السحب للأعلى', muscleGroup: 'Back' },
-  { id: '6', name: 'Barbell Row', nameAr: 'تجديف البار', muscleGroup: 'Back' },
-  { id: '7', name: 'Squat', nameAr: 'القرفصاء', muscleGroup: 'Legs' },
-  { id: '8', name: 'Leg Press', nameAr: 'ضغط الأرجل', muscleGroup: 'Legs' },
-  { id: '9', name: 'Romanian Deadlift', nameAr: 'الرفعة الرومانية', muscleGroup: 'Legs' },
-  { id: '10', name: 'Shoulder Press', nameAr: 'ضغط الكتف', muscleGroup: 'Shoulders' },
-  { id: '11', name: 'Lateral Raises', nameAr: 'رفع جانبي', muscleGroup: 'Shoulders' },
-  { id: '12', name: 'Bicep Curl', nameAr: 'تمرين الباي', muscleGroup: 'Biceps' },
-  { id: '13', name: 'Tricep Pushdown', nameAr: 'دفع التراي', muscleGroup: 'Triceps' },
-  { id: '14', name: 'Plank', nameAr: 'البلانك', muscleGroup: 'Core' },
+  { id: '1', name: 'Bench Press', nameAr: 'تمرين الصدر', muscleGroup: 'CHEST' },
+  { id: '2', name: 'Incline Dumbbell Press', nameAr: 'ضغط الدمبل المائل', muscleGroup: 'CHEST' },
+  { id: '3', name: 'Cable Flyes', nameAr: 'تمرين الكابل للصدر', muscleGroup: 'CHEST' },
+  { id: '4', name: 'Deadlift', nameAr: 'الرفعة الميتة', muscleGroup: 'BACK' },
+  { id: '5', name: 'Pull-ups', nameAr: 'السحب للأعلى', muscleGroup: 'BACK' },
+  { id: '6', name: 'Barbell Row', nameAr: 'تجديف البار', muscleGroup: 'BACK' },
+  { id: '7', name: 'Squat', nameAr: 'القرفصاء', muscleGroup: 'QUADRICEPS' },
+  { id: '8', name: 'Leg Press', nameAr: 'ضغط الأرجل', muscleGroup: 'QUADRICEPS' },
+  { id: '9', name: 'Romanian Deadlift', nameAr: 'الرفعة الرومانية', muscleGroup: 'HAMSTRINGS' },
+  { id: '10', name: 'Shoulder Press', nameAr: 'ضغط الكتف', muscleGroup: 'SHOULDERS' },
+  { id: '11', name: 'Lateral Raises', nameAr: 'رفع جانبي', muscleGroup: 'SHOULDERS' },
+  { id: '12', name: 'Bicep Curl', nameAr: 'تمرين الباي', muscleGroup: 'BICEPS' },
+  { id: '13', name: 'Tricep Pushdown', nameAr: 'دفع التراي', muscleGroup: 'TRICEPS' },
+  { id: '14', name: 'Plank', nameAr: 'البلانك', muscleGroup: 'ABS' },
 ];
 
 const initialProgram = {
@@ -100,11 +100,11 @@ const initialProgram = {
       dayNumber: 1,
       isRestDay: false,
       exercises: [
-        { id: '1', name: 'Bench Press', muscleGroup: 'Chest', sets: 4, reps: '6-8', restSeconds: 120, notes: 'Focus on chest contraction' },
-        { id: '2', name: 'Incline Dumbbell Press', muscleGroup: 'Chest', sets: 3, reps: '8-10', restSeconds: 90 },
-        { id: '10', name: 'Shoulder Press', muscleGroup: 'Shoulders', sets: 3, reps: '8-10', restSeconds: 90 },
-        { id: '11', name: 'Lateral Raises', muscleGroup: 'Shoulders', sets: 3, reps: '12-15', restSeconds: 60 },
-        { id: '13', name: 'Tricep Pushdown', muscleGroup: 'Triceps', sets: 3, reps: '10-12', restSeconds: 60 },
+        { id: '1', name: 'Bench Press', muscleGroup: 'CHEST', sets: 4, reps: '6-8', restSeconds: 120, notes: 'Focus on chest contraction' },
+        { id: '2', name: 'Incline Dumbbell Press', muscleGroup: 'CHEST', sets: 3, reps: '8-10', restSeconds: 90 },
+        { id: '10', name: 'Shoulder Press', muscleGroup: 'SHOULDERS', sets: 3, reps: '8-10', restSeconds: 90 },
+        { id: '11', name: 'Lateral Raises', muscleGroup: 'SHOULDERS', sets: 3, reps: '12-15', restSeconds: 60 },
+        { id: '13', name: 'Tricep Pushdown', muscleGroup: 'TRICEPS', sets: 3, reps: '10-12', restSeconds: 60 },
       ],
     },
     {
@@ -113,10 +113,10 @@ const initialProgram = {
       dayNumber: 2,
       isRestDay: false,
       exercises: [
-        { id: '4', name: 'Deadlift', muscleGroup: 'Back', sets: 4, reps: '5-6', restSeconds: 180, notes: 'Keep core tight' },
-        { id: '5', name: 'Pull-ups', muscleGroup: 'Back', sets: 4, reps: '6-10', restSeconds: 90 },
-        { id: '6', name: 'Barbell Row', muscleGroup: 'Back', sets: 3, reps: '8-10', restSeconds: 90 },
-        { id: '12', name: 'Bicep Curl', muscleGroup: 'Biceps', sets: 3, reps: '10-12', restSeconds: 60 },
+        { id: '4', name: 'Deadlift', muscleGroup: 'BACK', sets: 4, reps: '5-6', restSeconds: 180, notes: 'Keep core tight' },
+        { id: '5', name: 'Pull-ups', muscleGroup: 'BACK', sets: 4, reps: '6-10', restSeconds: 90 },
+        { id: '6', name: 'Barbell Row', muscleGroup: 'BACK', sets: 3, reps: '8-10', restSeconds: 90 },
+        { id: '12', name: 'Bicep Curl', muscleGroup: 'BICEPS', sets: 3, reps: '10-12', restSeconds: 60 },
       ],
     },
     {
@@ -125,9 +125,9 @@ const initialProgram = {
       dayNumber: 3,
       isRestDay: false,
       exercises: [
-        { id: '7', name: 'Squat', muscleGroup: 'Legs', sets: 4, reps: '6-8', restSeconds: 180 },
-        { id: '8', name: 'Leg Press', muscleGroup: 'Legs', sets: 3, reps: '10-12', restSeconds: 90 },
-        { id: '9', name: 'Romanian Deadlift', muscleGroup: 'Legs', sets: 3, reps: '8-10', restSeconds: 90 },
+        { id: '7', name: 'Squat', muscleGroup: 'QUADRICEPS', sets: 4, reps: '6-8', restSeconds: 180 },
+        { id: '8', name: 'Leg Press', muscleGroup: 'QUADRICEPS', sets: 3, reps: '10-12', restSeconds: 90 },
+        { id: '9', name: 'Romanian Deadlift', muscleGroup: 'HAMSTRINGS', sets: 3, reps: '8-10', restSeconds: 90 },
       ],
     },
     {
