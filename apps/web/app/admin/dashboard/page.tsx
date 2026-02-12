@@ -10,6 +10,9 @@ import {
   Dumbbell,
   AlertCircle,
   Loader2,
+  Key,
+  Copy,
+  Check,
 } from 'lucide-react';
 import { StatCard } from '@/components/dashboard/stat-card';
 import {
@@ -25,9 +28,19 @@ import { Progress } from '@/components/ui/progress';
 import { adminApi, type AdminDashboardStats, type AdminActivity, type AdminApproval, type SystemHealthMetric } from '@/lib/api';
 
 
+const TEST_ACCOUNTS = [
+  { email: 'admin@forma.fitness', role: 'ADMIN', tier: 'Admin', color: 'text-red-500' },
+  { email: 'trainer@forma.fitness', role: 'TRAINER', tier: 'Trainer', color: 'text-blue-500' },
+  { email: 'premium@forma.fitness', role: 'USER', tier: 'Premium', color: 'text-purple-500' },
+  { email: 'vip@forma.fitness', role: 'USER', tier: 'Premium+', color: 'text-yellow-500' },
+  { email: 'free@forma.fitness', role: 'USER', tier: 'Free', color: 'text-gray-500' },
+];
+const TEST_PASSWORD = 'Forma2024!';
+
 export default function AdminDashboardPage() {
   const [stats, setStats] = useState<AdminDashboardStats | null>(null);
   const [activity, setActivity] = useState<AdminActivity[]>([]);
+  const [copiedEmail, setCopiedEmail] = useState<string | null>(null);
   const [approvals, setApprovals] = useState<AdminApproval[]>([]);
   const [health, setHealth] = useState<SystemHealthMetric[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -278,6 +291,57 @@ export default function AdminDashboardPage() {
           </CardContent>
         </Card>
       </div>
+
+      {/* Test Accounts Section */}
+      <Card className="border-dashed border-yellow-500/50 bg-yellow-500/5">
+        <CardHeader>
+          <div className="flex items-center gap-2">
+            <Key className="h-5 w-5 text-yellow-500" />
+            <CardTitle>Test Accounts</CardTitle>
+          </div>
+          <CardDescription>
+            Use these accounts to test different user roles. All accounts use password: <code className="bg-muted px-2 py-0.5 rounded font-mono text-sm">{TEST_PASSWORD}</code>
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
+            {TEST_ACCOUNTS.map((account) => (
+              <div
+                key={account.email}
+                className="rounded-lg border p-3 hover:bg-muted/50 transition-colors"
+              >
+                <div className="flex items-center justify-between mb-2">
+                  <Badge variant="outline" className={account.color}>
+                    {account.tier}
+                  </Badge>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-7 w-7"
+                    onClick={() => {
+                      navigator.clipboard.writeText(account.email);
+                      setCopiedEmail(account.email);
+                      setTimeout(() => setCopiedEmail(null), 2000);
+                    }}
+                  >
+                    {copiedEmail === account.email ? (
+                      <Check className="h-3.5 w-3.5 text-green-500" />
+                    ) : (
+                      <Copy className="h-3.5 w-3.5" />
+                    )}
+                  </Button>
+                </div>
+                <p className="text-xs font-mono text-muted-foreground truncate">
+                  {account.email}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-xs text-muted-foreground text-center">
+            Click the copy icon to copy email. Open an incognito window to login as a different user.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }
