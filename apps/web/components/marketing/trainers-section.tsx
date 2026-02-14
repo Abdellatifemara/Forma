@@ -32,7 +32,7 @@ export function TrainersSection() {
   return (
     <section id="trainers" className="py-20 md:py-32">
       <div className="container">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid gap-8 md:gap-12 md:grid-cols-2 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}

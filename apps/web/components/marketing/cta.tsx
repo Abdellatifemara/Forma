@@ -10,7 +10,7 @@ export function CTA() {
     <section className="py-20 md:py-32">
       <div className="container">
         <motion.div
-          className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-forma-teal to-forma-teal-dark p-12 md:p-20"
+          className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-forma-teal to-forma-teal-dark p-8 sm:p-12 md:p-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -22,7 +22,7 @@ export function CTA() {
           <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
 
           <div className="relative mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-forma-navy md:text-4xl lg:text-5xl">
+            <h2 className="text-2xl font-bold tracking-tight text-forma-navy sm:text-3xl md:text-4xl lg:text-5xl">
               Ready to transform your fitness journey?
             </h2>
             <p className="mt-6 text-lg text-forma-navy/80">

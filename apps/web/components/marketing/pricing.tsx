@@ -75,7 +75,7 @@ export function Pricing() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid gap-8 lg:grid-cols-3 lg:gap-6 max-w-6xl mx-auto">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 max-w-6xl mx-auto">
           {plans.map((plan) => {
             const isPremium = plan.tier.id === 'PREMIUM';
             const isPremiumPlus = plan.tier.id === 'PREMIUM_PLUS';
@@ -86,7 +86,7 @@ export function Pricing() {
                 key={plan.tier.id}
                 className={cn(
                   'relative rounded-2xl border bg-card/50 backdrop-blur-sm p-6 transition-all duration-300',
-                  isPremium && 'border-cyan-500/50 shadow-lg shadow-cyan-500/10 scale-[1.02] lg:scale-105',
+                  isPremium && 'border-cyan-500/50 shadow-lg shadow-cyan-500/10 md:scale-[1.02] lg:scale-105',
                   isPremiumPlus && 'border-purple-500/30',
                   !isPremium && !isPremiumPlus && 'border-border/50',
                   isRTL && 'text-right'

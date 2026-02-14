@@ -32,8 +32,8 @@ export function Navbar() {
   };
 
   const navLinks = [
-    { href: '#features', label: t.nav.features },
-    { href: '#pricing', label: t.nav.pricing },
+    { href: '/#features', label: t.nav.features },
+    { href: '/#pricing', label: t.nav.pricing },
     { href: '/blog', label: t.nav.blog },
   ];
 

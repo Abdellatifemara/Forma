@@ -16,8 +16,8 @@ export function Footer() {
 
   const links = {
     product: [
-      { href: '#features', label: t.nav.features },
-      { href: '#pricing', label: t.nav.pricing },
+      { href: '/#features', label: t.nav.features },
+      { href: '/#pricing', label: t.nav.pricing },
     ],
     company: [
       { href: '/contact', label: t.footer.contact },
