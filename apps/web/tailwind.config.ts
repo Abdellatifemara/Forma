@@ -18,6 +18,26 @@ const config: Config = {
     },
     extend: {
       colors: {
+        // Legacy Brand Colors (used in marketing pages)
+        'forma-teal': {
+          DEFAULT: '#00D4AA',
+          light: '#33DDBB',
+          dark: '#00A888',
+        },
+        'forma-navy': {
+          DEFAULT: '#0A1628',
+          light: '#1A2D4A',
+        },
+        coral: {
+          DEFAULT: '#FF6B6B',
+          50: '#FFF0F0',
+          100: '#FFD6D6',
+          200: '#FFB3B3',
+          300: '#FF8F8F',
+          400: '#FF7D7D',
+          500: '#FF6B6B',
+          600: '#E85555',
+        },
         // Brand Colors - Futuristic Fitness
         cyan: {
           DEFAULT: '#00FFFF',
