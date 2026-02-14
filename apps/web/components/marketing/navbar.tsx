@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { Menu, X, ChevronRight, LayoutDashboard, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/ui/logo';
@@ -13,6 +14,8 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const { lang, setLang, t, isRTL } = useLanguage();
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,10 +35,34 @@ export function Navbar() {
   };
 
   const navLinks = [
-    { href: '/#features', label: t.nav.features },
-    { href: '/#pricing', label: t.nav.pricing },
-    { href: '/blog', label: t.nav.blog },
+    { href: '/#features', label: t.nav.features, isAnchor: true },
+    { href: '/#pricing', label: t.nav.pricing, isAnchor: true },
+    { href: '/blog', label: t.nav.blog, isAnchor: false },
   ];
+
+  const handleAnchorClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    const hash = href.split('#')[1];
+
+    if (pathname === '/') {
+      // Already on homepage, just scroll to section
+      const el = document.getElementById(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to homepage first, then scroll
+      router.push('/');
+      // Wait for navigation then scroll
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header
@@ -51,15 +78,26 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <div className={cn('hidden md:flex md:items-center md:gap-8', isRTL && 'flex-row-reverse')}>
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.isAnchor ? (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleAnchorClick(e, link.href)}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
         </div>
 
         <div className={cn('hidden md:flex md:items-center md:gap-3', isRTL && 'flex-row-reverse')}>
@@ -124,17 +162,29 @@ export function Navbar() {
       >
         <div className="container py-8">
           <div className="space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="flex items-center justify-between rounded-xl px-4 py-4 text-lg font-medium transition-all hover:bg-muted"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {link.label}
-                <ChevronRight className={cn('h-5 w-5 text-muted-foreground', isRTL && 'rotate-180')} />
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.isAnchor ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => handleAnchorClick(e, link.href)}
+                  className="flex items-center justify-between rounded-xl px-4 py-4 text-lg font-medium transition-all hover:bg-muted cursor-pointer"
+                >
+                  {link.label}
+                  <ChevronRight className={cn('h-5 w-5 text-muted-foreground', isRTL && 'rotate-180')} />
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="flex items-center justify-between rounded-xl px-4 py-4 text-lg font-medium transition-all hover:bg-muted"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.label}
+                  <ChevronRight className={cn('h-5 w-5 text-muted-foreground', isRTL && 'rotate-180')} />
+                </Link>
+              )
+            )}
           </div>
 
           <div className="mt-8 space-y-3">

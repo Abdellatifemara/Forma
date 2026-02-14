@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import { Instagram, Twitter, Facebook } from 'lucide-react';
 import { useLanguage } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
@@ -13,21 +14,43 @@ const social = [
 
 export function Footer() {
   const { t, isRTL } = useLanguage();
+  const pathname = usePathname();
+  const router = useRouter();
 
-  const links = {
-    product: [
-      { href: '/#features', label: t.nav.features },
-      { href: '/#pricing', label: t.nav.pricing },
-    ],
-    company: [
-      { href: '/contact', label: t.footer.contact },
-      { href: '/blog', label: t.footer.blog },
-    ],
-    legal: [
-      { href: '/privacy', label: t.footer.privacy },
-      { href: '/terms', label: t.footer.terms },
-    ],
+  const handleAnchorClick = (e: React.MouseEvent, href: string) => {
+    e.preventDefault();
+    const hash = href.split('#')[1];
+
+    if (pathname === '/') {
+      const el = document.getElementById(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      router.push('/');
+      setTimeout(() => {
+        const el = document.getElementById(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
   };
+
+  const productLinks = [
+    { href: '/#features', label: t.nav.features, isAnchor: true },
+    { href: '/#pricing', label: t.nav.pricing, isAnchor: true },
+  ];
+
+  const companyLinks = [
+    { href: '/contact', label: t.footer.contact },
+    { href: '/blog', label: t.footer.blog },
+  ];
+
+  const legalLinks = [
+    { href: '/privacy', label: t.footer.privacy },
+    { href: '/terms', label: t.footer.terms },
+  ];
 
   return (
     <footer className="border-t bg-muted/30">
@@ -59,20 +82,30 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links */}
+          {/* Product Links */}
           <div>
             <h4 className={cn('font-semibold mb-3', isRTL && 'font-cairo')}>
               {t.footer.product}
             </h4>
             <ul className="space-y-2">
-              {links.product.map((link) => (
+              {productLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={cn('text-sm text-muted-foreground hover:text-foreground', isRTL && 'font-cairo')}
-                  >
-                    {link.label}
-                  </Link>
+                  {link.isAnchor ? (
+                    <a
+                      href={link.href}
+                      onClick={(e) => handleAnchorClick(e, link.href)}
+                      className={cn('text-sm text-muted-foreground hover:text-foreground cursor-pointer', isRTL && 'font-cairo')}
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className={cn('text-sm text-muted-foreground hover:text-foreground', isRTL && 'font-cairo')}
+                    >
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -83,7 +116,7 @@ export function Footer() {
               {t.footer.company}
             </h4>
             <ul className="space-y-2">
-              {links.company.map((link) => (
+              {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -101,7 +134,7 @@ export function Footer() {
               {t.footer.legal}
             </h4>
             <ul className="space-y-2">
-              {links.legal.map((link) => (
+              {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
