@@ -1,4 +1,6 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001/api';
+import { API_URL } from '@/lib/constants';
+
+const API_BASE_URL = API_URL;
 
 // Cookie utilities for auth
 export function setAuthCookie(token: string, maxAge: number = 7 * 24 * 60 * 60) {
