@@ -1,0 +1,9 @@
+# Cloudflare Workers - Static Assets Configuration
+# Serves the Next.js static export (apps/web/out/) as a Single Page Application
+
+name = "formaegypt"
+compatibility_date = "2026-02-18"
+
+[assets]
+directory = "./apps/web/out"
+not_found_handling = "single-page-application"
