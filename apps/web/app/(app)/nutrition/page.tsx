@@ -44,6 +44,7 @@ import {
 import { useDailyNutrition, useFoodSearch } from '@/hooks/use-nutrition';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 // Default goals if none set
 const defaultGoals = {
@@ -54,8 +55,8 @@ const defaultGoals = {
   water: 8,
 };
 
-// Sample recent foods for quick access
-const recentFoods = [
+// Default recent foods shown when no meal history exists
+const defaultRecentFoods = [
   { name: 'Foul Medames', calories: 280, protein: 15, carbs: 40, fat: 6 },
   { name: 'Grilled Chicken', calories: 240, protein: 35, carbs: 0, fat: 8 },
   { name: 'Greek Yogurt', calories: 100, protein: 17, carbs: 6, fat: 0 },
@@ -79,6 +80,7 @@ const mealColors = {
 
 export default function NutritionPage() {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
   const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
@@ -94,10 +96,10 @@ export default function NutritionPage() {
   // Group meals by type
   const mealTypes = ['BREAKFAST', 'LUNCH', 'DINNER', 'SNACK'] as const;
   const mealLabels: Record<string, { label: string; time: string }> = {
-    BREAKFAST: { label: 'Breakfast', time: '8:00 AM' },
-    LUNCH: { label: 'Lunch', time: '1:00 PM' },
-    DINNER: { label: 'Dinner', time: '7:00 PM' },
-    SNACK: { label: 'Snack', time: 'Anytime' },
+    BREAKFAST: { label: t.nutrition.breakfast, time: '8:00 AM' },
+    LUNCH: { label: t.nutrition.lunch, time: '1:00 PM' },
+    DINNER: { label: t.nutrition.dinner, time: '7:00 PM' },
+    SNACK: { label: t.nutrition.snack, time: 'Anytime' },
   };
 
   const organizedMeals = mealTypes.map((type) => {
@@ -112,6 +114,27 @@ export default function NutritionPage() {
       notLogged: !meal,
     };
   });
+
+  // Recent foods from today's logged meals, fallback to defaults
+  const recentFoods = (() => {
+    const loggedFoods = meals.flatMap((m) =>
+      (m.foods || []).map((f: any) => ({
+        name: f.name || f.food?.name || 'Food',
+        calories: f.calories || 0,
+        protein: f.protein || 0,
+        carbs: f.carbs || 0,
+        fat: f.fat || 0,
+      }))
+    );
+    // Deduplicate by name, take up to 5
+    const seen = new Set<string>();
+    const unique = loggedFoods.filter((f) => {
+      if (seen.has(f.name)) return false;
+      seen.add(f.name);
+      return true;
+    });
+    return unique.length > 0 ? unique.slice(0, 5) : defaultRecentFoods;
+  })();
 
   // Progress calculations
   const calorieProgress = Math.min((totals.calories / goals.calories) * 100, 100);
@@ -141,21 +164,21 @@ export default function NutritionPage() {
       {/* Header */}
       <div className="relative z-10 flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Nutrition</h1>
+          <h1 className="text-3xl font-bold">{t.nutrition.title}</h1>
           <p className="text-muted-foreground">Track your daily intake</p>
         </div>
         <Dialog>
           <DialogTrigger asChild>
             <Button className="btn-primary">
               <Plus className="mr-2 h-4 w-4" />
-              Log Food
+              {t.nutrition.logMeal}
             </Button>
           </DialogTrigger>
           <DialogContent className="glass border-border/50 sm:max-w-md">
             <DialogHeader>
               <DialogTitle className="flex items-center gap-2">
                 <Apple className="h-5 w-5 text-primary" />
-                Add Food
+                {t.nutrition.add}
               </DialogTitle>
               <DialogDescription className="sr-only">
                 Log a food item to your daily nutrition tracker
@@ -198,7 +221,7 @@ export default function NutritionPage() {
                   <div className="relative">
                     <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                     <Input
-                      placeholder="Search foods..."
+                      placeholder={t.nutrition.searchFoods}
                       className="pl-10 bg-muted/50 border-border/50"
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
@@ -236,7 +259,7 @@ export default function NutritionPage() {
                         </div>
                       ) : (
                         <p className="py-4 text-center text-sm text-muted-foreground">
-                          No foods found
+                          {t.nutrition.noResults}
                         </p>
                       )}
                     </div>
@@ -263,7 +286,7 @@ export default function NutritionPage() {
 
                   {searchQuery.length < 2 && (
                     <div>
-                      <p className="mb-2 text-sm font-medium">Recent Foods</p>
+                      <p className="mb-2 text-sm font-medium">{t.nutrition.recentFoods}</p>
                       <div className="space-y-2">
                         {recentFoods.map((food) => (
                           <div
@@ -348,7 +371,7 @@ export default function NutritionPage() {
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-2">
                   <Flame className="h-5 w-5 text-orange-500" />
-                  <h3 className="font-semibold text-lg">Calories</h3>
+                  <h3 className="font-semibold text-lg">{t.nutrition.calories}</h3>
                 </div>
                 <p className={cn(
                   "text-2xl font-bold",
@@ -374,7 +397,7 @@ export default function NutritionPage() {
         <Card className="glass border-border/50">
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-4">
-              <span className="text-sm text-muted-foreground">Protein</span>
+              <span className="text-sm text-muted-foreground">{t.nutrition.protein}</span>
               <Badge variant="outline" className="bg-red-500/10 text-red-400 border-red-500/30">
                 {Math.round(totals.protein)}g / {goals.protein}g
               </Badge>
@@ -396,7 +419,7 @@ export default function NutritionPage() {
         <Card className="glass border-border/50">
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-4">
-              <span className="text-sm text-muted-foreground">Carbs</span>
+              <span className="text-sm text-muted-foreground">{t.nutrition.carbs}</span>
               <Badge variant="outline" className="bg-yellow-500/10 text-yellow-400 border-yellow-500/30">
                 {Math.round(totals.carbs)}g / {goals.carbs}g
               </Badge>
@@ -425,7 +448,7 @@ export default function NutritionPage() {
                 <div className="p-2 rounded-lg bg-blue-500/20">
                   <Zap className="h-4 w-4 text-blue-400" />
                 </div>
-                <span className="font-medium">Fat</span>
+                <span className="font-medium">{t.nutrition.fat}</span>
               </div>
               <Badge variant="outline" className="bg-blue-500/10 text-blue-400 border-blue-500/30">
                 {Math.round(totals.fat)}g / {goals.fat}g
@@ -449,7 +472,7 @@ export default function NutritionPage() {
                 <div className="p-2 rounded-lg bg-cyan-500/20">
                   <Droplet className="h-4 w-4 text-cyan-400" />
                 </div>
-                <span className="font-medium">Water</span>
+                <span className="font-medium">{t.health.water}</span>
               </div>
               <Badge variant="outline" className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
                 {waterGlasses} / {defaultGoals.water} glasses
@@ -476,7 +499,7 @@ export default function NutritionPage() {
       {/* Today's Meals */}
       <div className="relative z-10 space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-bold">Today's Meals</h2>
+          <h2 className="text-xl font-bold">{t.nutrition.today}</h2>
           <Badge variant="outline" className="text-xs">
             {organizedMeals.filter(m => !m.notLogged).length} / {organizedMeals.length} logged
           </Badge>
@@ -582,7 +605,7 @@ export default function NutritionPage() {
                           className="w-full border border-dashed border-border/50 hover:border-primary/50"
                         >
                           <Plus className="mr-2 h-4 w-4" />
-                          Add More
+                          {t.nutrition.add}
                         </Button>
                       </div>
                     )}

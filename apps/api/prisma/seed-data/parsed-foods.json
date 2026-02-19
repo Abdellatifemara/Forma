@@ -40,26 +40,6 @@
     ]
   },
   {
-    "id": "PRO0003",
-    "name_en": "Beef Liver",
-    "name_ar": "كبدة بقري",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Red Meat (لحوم حمراء)",
-    "serving_size_g": 100,
-    "calories": 135,
-    "protein_g": 20,
-    "carbs_g": 4,
-    "fat_g": 4,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "PRO0004",
     "name_en": "Beef Heart",
     "name_ar": "قلب",
@@ -100,26 +80,6 @@
     ]
   },
   {
-    "id": "PRO0006",
-    "name_en": "Veal",
-    "name_ar": "لحم عجل",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Red Meat (لحوم حمراء)",
-    "serving_size_g": 100,
-    "calories": 172,
-    "protein_g": 24,
-    "carbs_g": 0,
-    "fat_g": 8,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "PRO0007",
     "name_en": "Lamb",
     "name_ar": "لحم ضأني",
@@ -130,26 +90,6 @@
     "serving_size_g": 100,
     "calories": 294,
     "protein_g": 25,
-    "carbs_g": 0,
-    "fat_g": 21,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0008",
-    "name_en": "Lamb Chops",
-    "name_ar": "ريش ضأني",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Red Meat (لحوم حمراء)",
-    "serving_size_g": 100,
-    "calories": 290,
-    "protein_g": 24,
     "carbs_g": 0,
     "fat_g": 21,
     "fiber_g": 0,
@@ -200,26 +140,6 @@
     ]
   },
   {
-    "id": "PRO0011",
-    "name_en": "Ground Beef",
-    "name_ar": "لحم مفروم قليل الدهن",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Red Meat (لحوم حمراء)",
-    "serving_size_g": 100,
-    "calories": 176,
-    "protein_g": 20,
-    "carbs_g": 0,
-    "fat_g": 10,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "PRO0012",
     "name_en": "Beef Steak",
     "name_ar": "ستيك",
@@ -260,86 +180,6 @@
     ]
   },
   {
-    "id": "PRO0014",
-    "name_en": "Chicken Breast",
-    "name_ar": "صدور فراخ",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Poultry (دواجن)",
-    "serving_size_g": 100,
-    "calories": 165,
-    "protein_g": 31,
-    "carbs_g": 0,
-    "fat_g": 3.6,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0015",
-    "name_en": "Chicken Breast",
-    "name_ar": "صدور فراخ بالجلد",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Poultry (دواجن)",
-    "serving_size_g": 100,
-    "calories": 197,
-    "protein_g": 30,
-    "carbs_g": 0,
-    "fat_g": 8,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0016",
-    "name_en": "Chicken Thigh",
-    "name_ar": "أوراك فراخ",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Poultry (دواجن)",
-    "serving_size_g": 100,
-    "calories": 177,
-    "protein_g": 24,
-    "carbs_g": 0,
-    "fat_g": 8,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0017",
-    "name_en": "Chicken Thigh",
-    "name_ar": "أوراك بالجلد",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Poultry (دواجن)",
-    "serving_size_g": 100,
-    "calories": 229,
-    "protein_g": 24,
-    "carbs_g": 0,
-    "fat_g": 14,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "PRO0018",
     "name_en": "Chicken Wings",
     "name_ar": "جوانح",
@@ -352,26 +192,6 @@
     "protein_g": 18,
     "carbs_g": 0,
     "fat_g": 14,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0019",
-    "name_en": "Chicken Liver",
-    "name_ar": "كبدة فراخ",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Poultry (دواجن)",
-    "serving_size_g": 100,
-    "calories": 119,
-    "protein_g": 17,
-    "carbs_g": 1,
-    "fat_g": 5,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
@@ -540,126 +360,6 @@
     ]
   },
   {
-    "id": "PRO0028",
-    "name_en": "Tilapia",
-    "name_ar": "بلطي",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 96,
-    "protein_g": 20,
-    "carbs_g": 0,
-    "fat_g": 2,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0029",
-    "name_en": "Mullet",
-    "name_ar": "بوري",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 117,
-    "protein_g": 19,
-    "carbs_g": 0,
-    "fat_g": 4,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0030",
-    "name_en": "Sea Bass",
-    "name_ar": "قاروص",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 97,
-    "protein_g": 18,
-    "carbs_g": 0,
-    "fat_g": 2,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0031",
-    "name_en": "Sea Bream",
-    "name_ar": "دنيس",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 100,
-    "protein_g": 19,
-    "carbs_g": 0,
-    "fat_g": 2,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0032",
-    "name_en": "Sardines",
-    "name_ar": "سردين",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 208,
-    "protein_g": 25,
-    "carbs_g": 0,
-    "fat_g": 11,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0033",
-    "name_en": "Mackerel",
-    "name_ar": "ماكريل",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 205,
-    "protein_g": 19,
-    "carbs_g": 0,
-    "fat_g": 14,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "PRO0034",
     "name_en": "Salmon",
     "name_ar": "سلمون",
@@ -720,106 +420,6 @@
     ]
   },
   {
-    "id": "PRO0037",
-    "name_en": "Canned Tuna",
-    "name_ar": "تونة بالزيت",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 198,
-    "protein_g": 29,
-    "carbs_g": 0,
-    "fat_g": 8,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0038",
-    "name_en": "Canned Sardines",
-    "name_ar": "سردين معلب",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 208,
-    "protein_g": 25,
-    "carbs_g": 0,
-    "fat_g": 11,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0039",
-    "name_en": "Shrimp",
-    "name_ar": "جمبري",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 99,
-    "protein_g": 24,
-    "carbs_g": 0,
-    "fat_g": 0.3,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0040",
-    "name_en": "Calamari",
-    "name_ar": "كاليماري",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 92,
-    "protein_g": 18,
-    "carbs_g": 3,
-    "fat_g": 1,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0041",
-    "name_en": "Crab",
-    "name_ar": "كابوريا",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 87,
-    "protein_g": 18,
-    "carbs_g": 0,
-    "fat_g": 1,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "PRO0042",
     "name_en": "Mussels",
     "name_ar": "بلح البحر",
@@ -832,46 +432,6 @@
     "protein_g": 12,
     "carbs_g": 4,
     "fat_g": 2,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0043",
-    "name_en": "Catfish",
-    "name_ar": "قرموط",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 95,
-    "protein_g": 16,
-    "carbs_g": 0,
-    "fat_g": 3,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0044",
-    "name_en": "Nile Perch",
-    "name_ar": "قشر بياض",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Fish & Seafood (أسماك و مأكولات بحرية)",
-    "serving_size_g": 100,
-    "calories": 93,
-    "protein_g": 19,
-    "carbs_g": 0,
-    "fat_g": 1,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
@@ -1000,26 +560,6 @@
     ]
   },
   {
-    "id": "PRO0051",
-    "name_en": "White Cheese",
-    "name_ar": "جبنة بيضاء",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Eggs & Dairy Proteins",
-    "serving_size_g": 100,
-    "calories": 250,
-    "protein_g": 13,
-    "carbs_g": 2,
-    "fat_g": 21,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "PRO0052",
     "name_en": "Roumy Cheese",
     "name_ar": "جبنة رومي",
@@ -1072,46 +612,6 @@
     "protein_g": 22,
     "carbs_g": 2,
     "fat_g": 22,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0055",
-    "name_en": "Labneh",
-    "name_ar": "لبنة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Eggs & Dairy Proteins",
-    "serving_size_g": 100,
-    "calories": 148,
-    "protein_g": 8,
-    "carbs_g": 4,
-    "fat_g": 11,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0056",
-    "name_en": "Greek Yogurt",
-    "name_ar": "زبادي يوناني",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Eggs & Dairy Proteins",
-    "serving_size_g": 100,
-    "calories": 100,
-    "protein_g": 10,
-    "carbs_g": 6,
-    "fat_g": 5,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
@@ -1180,26 +680,6 @@
     ]
   },
   {
-    "id": "PRO0060",
-    "name_en": "Ful Medames",
-    "name_ar": "فول مدمس",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Legumes (بقوليات)",
-    "serving_size_g": 100,
-    "calories": 110,
-    "protein_g": 8,
-    "carbs_g": 19,
-    "fat_g": 0.5,
-    "fiber_g": 5,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "PRO0061",
     "name_en": "Lentils",
     "name_ar": "عدس بني",
@@ -1213,206 +693,6 @@
     "carbs_g": 20,
     "fat_g": 0.4,
     "fiber_g": 8,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0062",
-    "name_en": "Lentils",
-    "name_ar": "عدس أحمر",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Legumes (بقوليات)",
-    "serving_size_g": 100,
-    "calories": 116,
-    "protein_g": 9,
-    "carbs_g": 20,
-    "fat_g": 0.4,
-    "fiber_g": 4,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0063",
-    "name_en": "Chickpeas",
-    "name_ar": "حمص",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Legumes (بقوليات)",
-    "serving_size_g": 100,
-    "calories": 164,
-    "protein_g": 9,
-    "carbs_g": 27,
-    "fat_g": 3,
-    "fiber_g": 8,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0064",
-    "name_en": "White Beans",
-    "name_ar": "فاصوليا بيضاء",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Legumes (بقوليات)",
-    "serving_size_g": 100,
-    "calories": 139,
-    "protein_g": 9,
-    "carbs_g": 25,
-    "fat_g": 0.5,
-    "fiber_g": 6,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0065",
-    "name_en": "Kidney Beans",
-    "name_ar": "فاصوليا حمراء",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Legumes (بقوليات)",
-    "serving_size_g": 100,
-    "calories": 127,
-    "protein_g": 9,
-    "carbs_g": 23,
-    "fat_g": 0.5,
-    "fiber_g": 6,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0066",
-    "name_en": "Black-Eyed Peas",
-    "name_ar": "لوبيا",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Legumes (بقوليات)",
-    "serving_size_g": 100,
-    "calories": 116,
-    "protein_g": 8,
-    "carbs_g": 21,
-    "fat_g": 0.5,
-    "fiber_g": 7,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0067",
-    "name_en": "Green Peas",
-    "name_ar": "بسلة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Legumes (بقوليات)",
-    "serving_size_g": 100,
-    "calories": 81,
-    "protein_g": 5,
-    "carbs_g": 14,
-    "fat_g": 0.4,
-    "fiber_g": 5,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "PRO0068",
-    "name_en": "Fava Beans",
-    "name_ar": "فول أخضر",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "PROTEIN",
-    "subcategory": "Legumes (بقوليات)",
-    "serving_size_g": 100,
-    "calories": 88,
-    "protein_g": 8,
-    "carbs_g": 15,
-    "fat_g": 0.7,
-    "fiber_g": 5,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "CARB0069",
-    "name_en": "Aish Baladi",
-    "name_ar": "عيش بلدي",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Breads (خبز)",
-    "serving_size_g": 100,
-    "calories": 210,
-    "protein_g": 7,
-    "carbs_g": 43,
-    "fat_g": 1,
-    "fiber_g": 3,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "CARB0070",
-    "name_en": "Aish Fino",
-    "name_ar": "عيش فينو",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Breads (خبز)",
-    "serving_size_g": 100,
-    "calories": 140,
-    "protein_g": 4,
-    "carbs_g": 26,
-    "fat_g": 2,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "CARB0071",
-    "name_en": "Aish Shamsi",
-    "name_ar": "عيش شمسي",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Breads (خبز)",
-    "serving_size_g": 100,
-    "calories": 200,
-    "protein_g": 6,
-    "carbs_g": 40,
-    "fat_g": 1,
-    "fiber_g": 2,
     "is_egyptian": true,
     "barcode": null,
     "available_at": [
@@ -1540,26 +820,6 @@
     ]
   },
   {
-    "id": "CARB0078",
-    "name_en": "Tortilla",
-    "name_ar": "تورتيلا قمح كامل",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Breads (خبز)",
-    "serving_size_g": 100,
-    "calories": 130,
-    "protein_g": 4,
-    "carbs_g": 22,
-    "fat_g": 3,
-    "fiber_g": 3,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "CARB0079",
     "name_en": "Croissant",
     "name_ar": "كرواسون",
@@ -1640,86 +900,6 @@
     ]
   },
   {
-    "id": "CARB0083",
-    "name_en": "Basmati Rice",
-    "name_ar": "أرز بسمتي",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Rice & Grains (أرز وحبوب)",
-    "serving_size_g": 100,
-    "calories": 121,
-    "protein_g": 3,
-    "carbs_g": 25,
-    "fat_g": 0.4,
-    "fiber_g": 0.6,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "CARB0084",
-    "name_en": "Brown Rice",
-    "name_ar": "أرز بني",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Rice & Grains (أرز وحبوب)",
-    "serving_size_g": 100,
-    "calories": 111,
-    "protein_g": 2.6,
-    "carbs_g": 23,
-    "fat_g": 0.9,
-    "fiber_g": 1.8,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "CARB0085",
-    "name_en": "Bulgur",
-    "name_ar": "برغل",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Rice & Grains (أرز وحبوب)",
-    "serving_size_g": 100,
-    "calories": 83,
-    "protein_g": 3,
-    "carbs_g": 19,
-    "fat_g": 0.2,
-    "fiber_g": 4,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "CARB0086",
-    "name_en": "Freekeh",
-    "name_ar": "فريكة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Rice & Grains (أرز وحبوب)",
-    "serving_size_g": 100,
-    "calories": 130,
-    "protein_g": 4,
-    "carbs_g": 24,
-    "fat_g": 1,
-    "fiber_g": 4,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "CARB0087",
     "name_en": "Couscous",
     "name_ar": "كسكسي",
@@ -1733,26 +913,6 @@
     "carbs_g": 23,
     "fat_g": 0.2,
     "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "CARB0088",
-    "name_en": "Quinoa",
-    "name_ar": "كينوا",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Rice & Grains (أرز وحبوب)",
-    "serving_size_g": 100,
-    "calories": 120,
-    "protein_g": 4,
-    "carbs_g": 21,
-    "fat_g": 2,
-    "fiber_g": 3,
     "is_egyptian": true,
     "barcode": null,
     "available_at": [
@@ -1960,26 +1120,6 @@
     ]
   },
   {
-    "id": "CARB0099",
-    "name_en": "Potato",
-    "name_ar": "بطاطس مشوية",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Potatoes & Starchy Vegetables",
-    "serving_size_g": 100,
-    "calories": 93,
-    "protein_g": 2,
-    "carbs_g": 21,
-    "fat_g": 0.1,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "CARB0100",
     "name_en": "Sweet Potato",
     "name_ar": "بطاطا حلوة",
@@ -2040,26 +1180,6 @@
     ]
   },
   {
-    "id": "CARB0103",
-    "name_en": "Green Peas",
-    "name_ar": "بسلة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "CARBS",
-    "subcategory": "Potatoes & Starchy Vegetables",
-    "serving_size_g": 100,
-    "calories": 81,
-    "protein_g": 5,
-    "carbs_g": 14,
-    "fat_g": 0.4,
-    "fiber_g": 5,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0104",
     "name_en": "Corn Oil",
     "name_ar": "زيت ذرة",
@@ -2092,26 +1212,6 @@
     "protein_g": 14,
     "carbs_g": 1,
     "fat_g": 227,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0106",
-    "name_en": "Olive Oil",
-    "name_ar": "زيت زيتون",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FATS",
-    "subcategory": "Cooking Oils (زيوت الطهي)",
-    "serving_size_g": 100,
-    "calories": 119,
-    "protein_g": 14,
-    "carbs_g": 2,
-    "fat_g": 210,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
@@ -2253,26 +1353,6 @@
     "carbs_g": 1,
     "fat_g": 0,
     "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0114",
-    "name_en": "Almonds",
-    "name_ar": "لوز",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FATS",
-    "subcategory": "Nuts & Seeds (مكسرات وبذور)",
-    "serving_size_g": 100,
-    "calories": 164,
-    "protein_g": 6,
-    "carbs_g": 6,
-    "fat_g": 14,
-    "fiber_g": 3.5,
     "is_egyptian": true,
     "barcode": null,
     "available_at": [
@@ -2460,26 +1540,6 @@
     ]
   },
   {
-    "id": "FOOD0124",
-    "name_en": "Chia Seeds",
-    "name_ar": "بذور الشيا",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FATS",
-    "subcategory": "Nuts & Seeds (مكسرات وبذور)",
-    "serving_size_g": 100,
-    "calories": 137,
-    "protein_g": 4,
-    "carbs_g": 12,
-    "fat_g": 9,
-    "fiber_g": 10,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0125",
     "name_en": "Flaxseeds",
     "name_ar": "بذور الكتان",
@@ -2513,46 +1573,6 @@
     "carbs_g": 7,
     "fat_g": 14,
     "fiber_g": 3,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0127",
-    "name_en": "Tahini",
-    "name_ar": "طحينة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FATS",
-    "subcategory": "Nut Butters & Spreads",
-    "serving_size_g": 100,
-    "calories": 89,
-    "protein_g": 3,
-    "carbs_g": 3,
-    "fat_g": 8,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0128",
-    "name_en": "Peanut Butter",
-    "name_ar": "زبدة فول سوداني",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FATS",
-    "subcategory": "Nut Butters & Spreads",
-    "serving_size_g": 100,
-    "calories": 94,
-    "protein_g": 4,
-    "carbs_g": 3,
-    "fat_g": 8,
-    "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
     "available_at": [
@@ -2740,26 +1760,6 @@
     ]
   },
   {
-    "id": "FOOD0138",
-    "name_en": "Molokhia",
-    "name_ar": "ملوخية",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "VEGETABLES",
-    "subcategory": "Leafy Greens",
-    "serving_size_g": 100,
-    "calories": 32,
-    "protein_g": 4,
-    "carbs_g": 4,
-    "fat_g": 0.5,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0139",
     "name_en": "Cabbage",
     "name_ar": "كرنب",
@@ -2892,26 +1892,6 @@
     "protein_g": 1,
     "carbs_g": 5,
     "fat_g": 0.2,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0146",
-    "name_en": "Bell Pepper",
-    "name_ar": "فلفل أحمر",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "VEGETABLES",
-    "subcategory": "Common Vegetables",
-    "serving_size_g": 100,
-    "calories": 31,
-    "protein_g": 1,
-    "carbs_g": 6,
-    "fat_g": 0.3,
     "fiber_g": 2,
     "is_egyptian": true,
     "barcode": null,
@@ -3200,66 +2180,6 @@
     ]
   },
   {
-    "id": "FOOD0161",
-    "name_en": "Apple",
-    "name_ar": "تفاح",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Common Fruits",
-    "serving_size_g": 100,
-    "calories": 52,
-    "protein_g": 0.3,
-    "carbs_g": 14,
-    "fat_g": 10,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0162",
-    "name_en": "Banana",
-    "name_ar": "موز",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Common Fruits",
-    "serving_size_g": 100,
-    "calories": 89,
-    "protein_g": 1,
-    "carbs_g": 23,
-    "fat_g": 12,
-    "fiber_g": 3,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0163",
-    "name_en": "Orange",
-    "name_ar": "برتقال",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Common Fruits",
-    "serving_size_g": 100,
-    "calories": 47,
-    "protein_g": 1,
-    "carbs_g": 12,
-    "fat_g": 9,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0164",
     "name_en": "Mandarin",
     "name_ar": "يوسفي",
@@ -3300,26 +2220,6 @@
     ]
   },
   {
-    "id": "FOOD0166",
-    "name_en": "Watermelon",
-    "name_ar": "بطيخ",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Common Fruits",
-    "serving_size_g": 100,
-    "calories": 30,
-    "protein_g": 0.6,
-    "carbs_g": 8,
-    "fat_g": 6,
-    "fiber_g": 0.4,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0167",
     "name_en": "Cantaloupe",
     "name_ar": "كانتلوب",
@@ -3340,26 +2240,6 @@
     ]
   },
   {
-    "id": "FOOD0168",
-    "name_en": "Mango",
-    "name_ar": "مانجو",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Common Fruits",
-    "serving_size_g": 100,
-    "calories": 60,
-    "protein_g": 0.8,
-    "carbs_g": 15,
-    "fat_g": 14,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0169",
     "name_en": "Strawberry",
     "name_ar": "فراولة",
@@ -3373,26 +2253,6 @@
     "carbs_g": 8,
     "fat_g": 5,
     "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0170",
-    "name_en": "Guava",
-    "name_ar": "جوافة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Common Fruits",
-    "serving_size_g": 100,
-    "calories": 68,
-    "protein_g": 3,
-    "carbs_g": 14,
-    "fat_g": 9,
-    "fiber_g": 5,
     "is_egyptian": true,
     "barcode": null,
     "available_at": [
@@ -3460,26 +2320,6 @@
     ]
   },
   {
-    "id": "FOOD0174",
-    "name_en": "Date",
-    "name_ar": "تمر",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Common Fruits",
-    "serving_size_g": 100,
-    "calories": 277,
-    "protein_g": 2,
-    "carbs_g": 75,
-    "fat_g": 63,
-    "fiber_g": 7,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0175",
     "name_en": "Peach",
     "name_ar": "خوخ",
@@ -3492,26 +2332,6 @@
     "protein_g": 1,
     "carbs_g": 10,
     "fat_g": 8,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0176",
-    "name_en": "Apricot",
-    "name_ar": "مشمش",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Common Fruits",
-    "serving_size_g": 100,
-    "calories": 48,
-    "protein_g": 1,
-    "carbs_g": 11,
-    "fat_g": 9,
     "fiber_g": 2,
     "is_egyptian": true,
     "barcode": null,
@@ -3680,26 +2500,6 @@
     ]
   },
   {
-    "id": "FOOD0185",
-    "name_en": "Dates",
-    "name_ar": "تمر عادي",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "FRUITS",
-    "subcategory": "Dried Fruits",
-    "serving_size_g": 100,
-    "calories": 80,
-    "protein_g": 0.6,
-    "carbs_g": 21,
-    "fat_g": 18,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0186",
     "name_en": "Raisins",
     "name_ar": "زبيب",
@@ -3780,26 +2580,6 @@
     ]
   },
   {
-    "id": "FOOD0190",
-    "name_en": "Ful Medames",
-    "name_ar": "فول مدمس",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Breakfast Dishes (فطار)",
-    "serving_size_g": 100,
-    "calories": 300,
-    "protein_g": 15,
-    "carbs_g": 45,
-    "fat_g": 6,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0191",
     "name_en": "Ful with Oil & Lemon",
     "name_ar": "فول بالزيت والليمون",
@@ -3812,26 +2592,6 @@
     "protein_g": 15,
     "carbs_g": 45,
     "fat_g": 14,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0192",
-    "name_en": "Ful with Eggs",
-    "name_ar": "فول بالبيض",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Breakfast Dishes (فطار)",
-    "serving_size_g": 100,
-    "calories": 450,
-    "protein_g": 22,
-    "carbs_g": 45,
-    "fat_g": 18,
     "fiber_g": 1,
     "is_egyptian": true,
     "barcode": null,
@@ -3872,106 +2632,6 @@
     "protein_g": 12,
     "carbs_g": 1,
     "fat_g": 14,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0195",
-    "name_en": "Eggs",
-    "name_ar": "بيض مقلب",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Breakfast Dishes (فطار)",
-    "serving_size_g": 100,
-    "calories": 200,
-    "protein_g": 12,
-    "carbs_g": 2,
-    "fat_g": 16,
-    "fiber_g": 2,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0196",
-    "name_en": "Shakshuka",
-    "name_ar": "شكشوكة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Breakfast Dishes (فطار)",
-    "serving_size_g": 100,
-    "calories": 300,
-    "protein_g": 14,
-    "carbs_g": 18,
-    "fat_g": 20,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0197",
-    "name_en": "Feteer Meshaltet",
-    "name_ar": "فطير مشلتت",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Breakfast Dishes (فطار)",
-    "serving_size_g": 100,
-    "calories": 450,
-    "protein_g": 8,
-    "carbs_g": 50,
-    "fat_g": 24,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0198",
-    "name_en": "Feteer with Cheese",
-    "name_ar": "فطير بالجبنة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Breakfast Dishes (فطار)",
-    "serving_size_g": 100,
-    "calories": 550,
-    "protein_g": 16,
-    "carbs_g": 50,
-    "fat_g": 32,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0199",
-    "name_en": "Cheese Omelette",
-    "name_ar": "أومليت بالجبنة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Breakfast Dishes (فطار)",
-    "serving_size_g": 100,
-    "calories": 280,
-    "protein_g": 18,
-    "carbs_g": 3,
-    "fat_g": 22,
     "fiber_g": 2,
     "is_egyptian": true,
     "barcode": null,
@@ -4040,86 +2700,6 @@
     ]
   },
   {
-    "id": "FOOD0203",
-    "name_en": "Koshari",
-    "name_ar": "كشري",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 600,
-    "protein_g": 18,
-    "carbs_g": 100,
-    "fat_g": 12,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0204",
-    "name_en": "Koshari",
-    "name_ar": "كشري كبير",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 900,
-    "protein_g": 27,
-    "carbs_g": 150,
-    "fat_g": 18,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0205",
-    "name_en": "Molokhia with Chicken",
-    "name_ar": "ملوخية بالفراخ",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 400,
-    "protein_g": 35,
-    "carbs_g": 15,
-    "fat_g": 22,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0206",
-    "name_en": "Molokhia with Rabbit",
-    "name_ar": "ملوخية بالأرانب",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 380,
-    "protein_g": 32,
-    "carbs_g": 15,
-    "fat_g": 20,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0207",
     "name_en": "Bamya",
     "name_ar": "بامية",
@@ -4140,26 +2720,6 @@
     ]
   },
   {
-    "id": "FOOD0208",
-    "name_en": "Grilled Chicken",
-    "name_ar": "ربع فرخة مشوية",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 350,
-    "protein_g": 40,
-    "carbs_g": 0,
-    "fat_g": 20,
-    "fiber_g": 250,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0209",
     "name_en": "Roasted Chicken",
     "name_ar": "ربع فرخة محمرة",
@@ -4173,26 +2733,6 @@
     "carbs_g": 5,
     "fat_g": 24,
     "fiber_g": 250,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0210",
-    "name_en": "Kofta",
-    "name_ar": "كفتة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 400,
-    "protein_g": 25,
-    "carbs_g": 5,
-    "fat_g": 32,
-    "fiber_g": 4,
     "is_egyptian": true,
     "barcode": null,
     "available_at": [
@@ -4280,26 +2820,6 @@
     ]
   },
   {
-    "id": "FOOD0215",
-    "name_en": "Fatta with Meat",
-    "name_ar": "فتة باللحم",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 650,
-    "protein_g": 30,
-    "carbs_g": 60,
-    "fat_g": 32,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0216",
     "name_en": "Roz Bel Khalta",
     "name_ar": "رز بالخلطة",
@@ -4312,26 +2832,6 @@
     "protein_g": 12,
     "carbs_g": 55,
     "fat_g": 15,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0217",
-    "name_en": "Macarona Bechamel",
-    "name_ar": "مكرونة بشاميل",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 500,
-    "protein_g": 22,
-    "carbs_g": 50,
-    "fat_g": 24,
     "fiber_g": 1,
     "is_egyptian": true,
     "barcode": null,
@@ -4380,126 +2880,6 @@
     ]
   },
   {
-    "id": "FOOD0220",
-    "name_en": "Fattah",
-    "name_ar": "مسقعة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 400,
-    "protein_g": 18,
-    "carbs_g": 30,
-    "fat_g": 24,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0221",
-    "name_en": "Hawawshi",
-    "name_ar": "حواوشي",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 550,
-    "protein_g": 25,
-    "carbs_g": 45,
-    "fat_g": 30,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0222",
-    "name_en": "Shawarma",
-    "name_ar": "شاورما فراخ",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 450,
-    "protein_g": 30,
-    "carbs_g": 35,
-    "fat_g": 22,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0223",
-    "name_en": "Shawarma",
-    "name_ar": "شاورما لحمة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Main Dishes (وجبات رئيسية)",
-    "serving_size_g": 100,
-    "calories": 500,
-    "protein_g": 28,
-    "carbs_g": 35,
-    "fat_g": 28,
-    "fiber_g": 1,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0224",
-    "name_en": "Lentil Soup",
-    "name_ar": "شوربة عدس",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Soups (شوربات)",
-    "serving_size_g": 100,
-    "calories": 180,
-    "protein_g": 10,
-    "carbs_g": 28,
-    "fat_g": 4,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0225",
-    "name_en": "Chicken Soup",
-    "name_ar": "شوربة فراخ",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Soups (شوربات)",
-    "serving_size_g": 100,
-    "calories": 150,
-    "protein_g": 12,
-    "carbs_g": 15,
-    "fat_g": 5,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0226",
     "name_en": "Molokhia Soup",
     "name_ar": "شوربة ملوخية",
@@ -4512,26 +2892,6 @@
     "protein_g": 5,
     "carbs_g": 10,
     "fat_g": 5,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0227",
-    "name_en": "Freekeh Soup",
-    "name_ar": "شوربة فريكة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Soups (شوربات)",
-    "serving_size_g": 100,
-    "calories": 200,
-    "protein_g": 8,
-    "carbs_g": 35,
-    "fat_g": 4,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
@@ -4560,26 +2920,6 @@
     ]
   },
   {
-    "id": "FOOD0229",
-    "name_en": "Vegetable Soup",
-    "name_ar": "شوربة خضار",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Soups (شوربات)",
-    "serving_size_g": 100,
-    "calories": 120,
-    "protein_g": 4,
-    "carbs_g": 20,
-    "fat_g": 3,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0230",
     "name_en": "Egyptian Salad",
     "name_ar": "سلطة بلدي",
@@ -4592,106 +2932,6 @@
     "protein_g": 2,
     "carbs_g": 12,
     "fat_g": 4,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0231",
-    "name_en": "Tahini Salad",
-    "name_ar": "سلطة طحينة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Salads & Mezze (سلطات ومقبلات)",
-    "serving_size_g": 100,
-    "calories": 180,
-    "protein_g": 5,
-    "carbs_g": 10,
-    "fat_g": 14,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0232",
-    "name_en": "Baba Ghanoush",
-    "name_ar": "بابا غنوج",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Salads & Mezze (سلطات ومقبلات)",
-    "serving_size_g": 100,
-    "calories": 150,
-    "protein_g": 3,
-    "carbs_g": 12,
-    "fat_g": 10,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0233",
-    "name_en": "Hummus",
-    "name_ar": "حمص",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Salads & Mezze (سلطات ومقبلات)",
-    "serving_size_g": 100,
-    "calories": 170,
-    "protein_g": 8,
-    "carbs_g": 15,
-    "fat_g": 9,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0234",
-    "name_en": "Tabbouleh",
-    "name_ar": "تبولة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Salads & Mezze (سلطات ومقبلات)",
-    "serving_size_g": 100,
-    "calories": 100,
-    "protein_g": 3,
-    "carbs_g": 15,
-    "fat_g": 4,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0235",
-    "name_en": "Fattoush",
-    "name_ar": "فتوش",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Salads & Mezze (سلطات ومقبلات)",
-    "serving_size_g": 100,
-    "calories": 120,
-    "protein_g": 3,
-    "carbs_g": 18,
-    "fat_g": 5,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
@@ -4720,86 +2960,6 @@
     ]
   },
   {
-    "id": "FOOD0237",
-    "name_en": "Dukkah",
-    "name_ar": "دقة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Salads & Mezze (سلطات ومقبلات)",
-    "serving_size_g": 100,
-    "calories": 50,
-    "protein_g": 2,
-    "carbs_g": 3,
-    "fat_g": 4,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0238",
-    "name_en": "Basbousa",
-    "name_ar": "بسبوسة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Desserts (حلويات)",
-    "serving_size_g": 100,
-    "calories": 350,
-    "protein_g": 4,
-    "carbs_g": 50,
-    "fat_g": 15,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0239",
-    "name_en": "Konafa",
-    "name_ar": "كنافة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Desserts (حلويات)",
-    "serving_size_g": 100,
-    "calories": 400,
-    "protein_g": 8,
-    "carbs_g": 55,
-    "fat_g": 18,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0240",
-    "name_en": "Om Ali",
-    "name_ar": "أم علي",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Desserts (حلويات)",
-    "serving_size_g": 100,
-    "calories": 450,
-    "protein_g": 10,
-    "carbs_g": 55,
-    "fat_g": 22,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0241",
     "name_en": "Rice Pudding",
     "name_ar": "رز بلبن",
@@ -4812,46 +2972,6 @@
     "protein_g": 6,
     "carbs_g": 40,
     "fat_g": 8,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0242",
-    "name_en": "Mehalabeya",
-    "name_ar": "مهلبية",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Desserts (حلويات)",
-    "serving_size_g": 100,
-    "calories": 200,
-    "protein_g": 5,
-    "carbs_g": 35,
-    "fat_g": 5,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0243",
-    "name_en": "Baklava",
-    "name_ar": "بقلاوة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Desserts (حلويات)",
-    "serving_size_g": 100,
-    "calories": 250,
-    "protein_g": 4,
-    "carbs_g": 30,
-    "fat_g": 14,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
@@ -4880,26 +3000,6 @@
     ]
   },
   {
-    "id": "FOOD0245",
-    "name_en": "Zalabya",
-    "name_ar": "زلابية",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Desserts (حلويات)",
-    "serving_size_g": 100,
-    "calories": 300,
-    "protein_g": 3,
-    "carbs_g": 45,
-    "fat_g": 12,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0246",
     "name_en": "Fiteer with Honey",
     "name_ar": "فطير بالعسل",
@@ -4920,46 +3020,6 @@
     ]
   },
   {
-    "id": "FOOD0247",
-    "name_en": "Halawa",
-    "name_ar": "حلاوة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Desserts (حلويات)",
-    "serving_size_g": 100,
-    "calories": 150,
-    "protein_g": 4,
-    "carbs_g": 15,
-    "fat_g": 9,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0248",
-    "name_en": "Dates",
-    "name_ar": "تمر",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Desserts (حلويات)",
-    "serving_size_g": 100,
-    "calories": 70,
-    "protein_g": 0.5,
-    "carbs_g": 18,
-    "fat_g": 0,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0249",
     "name_en": "Karkade",
     "name_ar": "كركديه",
@@ -4970,46 +3030,6 @@
     "serving_size_g": 100,
     "calories": 5,
     "protein_g": 0,
-    "carbs_g": 0,
-    "fat_g": 0,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0250",
-    "name_en": "Karkade",
-    "name_ar": "كركديه محلى",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Beverages (مشروبات)",
-    "serving_size_g": 100,
-    "calories": 90,
-    "protein_g": 22,
-    "carbs_g": 0,
-    "fat_g": 0,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0251",
-    "name_en": "Sahlab",
-    "name_ar": "سحلب",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Beverages (مشروبات)",
-    "serving_size_g": 100,
-    "calories": 200,
-    "protein_g": 25,
     "carbs_g": 0,
     "fat_g": 0,
     "fiber_g": 0,
@@ -5080,66 +3100,6 @@
     ]
   },
   {
-    "id": "FOOD0255",
-    "name_en": "Fresh Orange Juice",
-    "name_ar": "عصير برتقال",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Beverages (مشروبات)",
-    "serving_size_g": 100,
-    "calories": 110,
-    "protein_g": 22,
-    "carbs_g": 0,
-    "fat_g": 0,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0256",
-    "name_en": "Fresh Guava Juice",
-    "name_ar": "عصير جوافة",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Beverages (مشروبات)",
-    "serving_size_g": 100,
-    "calories": 140,
-    "protein_g": 25,
-    "carbs_g": 0,
-    "fat_g": 0,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0257",
-    "name_en": "Fresh Mango Juice",
-    "name_ar": "عصير مانجو",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Beverages (مشروبات)",
-    "serving_size_g": 100,
-    "calories": 150,
-    "protein_g": 30,
-    "carbs_g": 0,
-    "fat_g": 0,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0258",
     "name_en": "Erksoos",
     "name_ar": "عرقسوس",
@@ -5150,26 +3110,6 @@
     "serving_size_g": 100,
     "calories": 80,
     "protein_g": 18,
-    "carbs_g": 0,
-    "fat_g": 0,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0259",
-    "name_en": "Qamar El Din",
-    "name_ar": "قمر الدين",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Beverages (مشروبات)",
-    "serving_size_g": 100,
-    "calories": 120,
-    "protein_g": 28,
     "carbs_g": 0,
     "fat_g": 0,
     "fiber_g": 0,
@@ -5340,26 +3280,6 @@
     ]
   },
   {
-    "id": "FOOD0268",
-    "name_en": "Hawawshi",
-    "name_ar": "حواوشي",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Egyptian Street Food",
-    "serving_size_g": 100,
-    "calories": 550,
-    "protein_g": 25,
-    "carbs_g": 45,
-    "fat_g": 30,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
     "id": "FOOD0269",
     "name_en": "Feteer",
     "name_ar": "فطير",
@@ -5372,46 +3292,6 @@
     "protein_g": 8,
     "carbs_g": 50,
     "fat_g": 24,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0270",
-    "name_en": "Koshari",
-    "name_ar": "كشري صغير",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Egyptian Street Food",
-    "serving_size_g": 100,
-    "calories": 450,
-    "protein_g": 14,
-    "carbs_g": 75,
-    "fat_g": 9,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0271",
-    "name_en": "Sobia",
-    "name_ar": "سوبيا",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "Egyptian Street Food",
-    "serving_size_g": 100,
-    "calories": 180,
-    "protein_g": 2,
-    "carbs_g": 40,
-    "fat_g": 2,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,
@@ -5632,26 +3512,6 @@
     "protein_g": 12,
     "carbs_g": 34,
     "fat_g": 10,
-    "fiber_g": 0,
-    "is_egyptian": true,
-    "barcode": null,
-    "available_at": [
-      "Egyptian Markets"
-    ]
-  },
-  {
-    "id": "FOOD0283",
-    "name_en": "Pizza Slice",
-    "name_ar": "Various",
-    "brand_en": null,
-    "brand_ar": null,
-    "category": "OTHER",
-    "subcategory": "International Fast Food (Egypt branches)",
-    "serving_size_g": 100,
-    "calories": 310,
-    "protein_g": 13,
-    "carbs_g": 34,
-    "fat_g": 14,
     "fiber_g": 0,
     "is_egyptian": true,
     "barcode": null,

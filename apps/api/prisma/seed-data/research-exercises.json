@@ -5276,41 +5276,6 @@
     ]
   },
   {
-    "id": "COR0154",
-    "name_en": "Crunches",
-    "name_ar": "Crunches (AR)",
-    "description_en": "A commercial gym equipment guide exercise targeting the machines - core & other.",
-    "description_ar": "تمرين COMMERCIAL GYM EQUIPMENT GUIDE يستهدف Machines - Core & Other.",
-    "category": "STRENGTH",
-    "primary_muscle": "ABS",
-    "secondary_muscles": [],
-    "equipment": [
-      "BODYWEIGHT"
-    ],
-    "difficulty": "BEGINNER",
-    "instructions_en": [
-      "Assume starting position.",
-      "Perform the movement with control.",
-      "Return to starting position."
-    ],
-    "instructions_ar": [
-      "اتخذ وضعية البداية.",
-      "قم بأداء الحركة بتحكم.",
-      "عد إلى وضعية البداية."
-    ],
-    "tips_en": [],
-    "tips_ar": [],
-    "is_time_based": false,
-    "default_sets": 3,
-    "default_reps": 12,
-    "default_duration": null,
-    "default_rest": 60,
-    "tags": [
-      "commercial gym equipment guide",
-      "machines - core & other"
-    ]
-  },
-  {
     "id": "COR0155",
     "name_en": "Rotation",
     "name_ar": "Rotation (AR)",

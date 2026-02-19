@@ -23,6 +23,8 @@ import {
 } from '@/hooks/use-chat';
 import type { Conversation, ChatMessage, MessageType } from '@/lib/api';
 import Link from 'next/link';
+import { useLanguage } from '@/lib/i18n';
+import { FeatureGate } from '@/components/feature-gate';
 
 function formatTime(dateString: string) {
   const date = new Date(dateString);
@@ -47,6 +49,7 @@ function formatMessageTime(dateString: string) {
 }
 
 export default function MessagesPage() {
+  const { t } = useLanguage();
   const [selectedConversationId, setSelectedConversationId] = useState<string | null>(null);
   const [newMessage, setNewMessage] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
@@ -183,12 +186,12 @@ export default function MessagesPage() {
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-muted">
             <MessageCircle className="h-8 w-8 text-muted-foreground" />
           </div>
-          <h2 className="mb-2 text-xl font-semibold">No Messages Yet</h2>
+          <h2 className="mb-2 text-xl font-semibold">{t.messages.noConversations}</h2>
           <p className="mb-6 text-muted-foreground">
-            Start a conversation with your trainer to get personalized guidance and support.
+            {t.messages.noConversationsDesc}
           </p>
           <Link href="/trainers">
-            <Button variant="forma">Find a Trainer</Button>
+            <Button variant="forma">{t.trainers.findTrainer}</Button>
           </Link>
         </Card>
       </div>
@@ -196,18 +199,19 @@ export default function MessagesPage() {
   }
 
   return (
+    <FeatureGate featureId="trainer_messaging" blurContent>
     <div className="flex h-[calc(100vh-12rem)] gap-4 lg:gap-6">
       {/* Conversations List - Hidden on mobile when conversation is selected */}
       <Card className={`w-full flex-shrink-0 lg:w-80 ${selectedConversationId ? 'hidden lg:flex' : 'flex'}`}>
         <div className="flex h-full w-full flex-col">
           <div className="border-b p-4">
-            <h2 className="mb-4 text-lg font-semibold">Messages</h2>
+            <h2 className="mb-4 text-lg font-semibold">{t.messages.title}</h2>
             <div className="relative">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
                 id="search-conversations"
                 name="search-conversations"
-                placeholder="Search conversations..."
+                placeholder={t.messages.searchConversations}
                 className="pl-10"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -315,7 +319,7 @@ export default function MessagesPage() {
                     <ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
                     <span className="text-emerald-600">End-to-end encrypted</span>
                     <span className="mx-1">·</span>
-                    <span>{selectedConversation.participant?.isOnline ? 'Online' : 'Offline'}</span>
+                    <span>{selectedConversation.participant?.isOnline ? t.messages.online : t.messages.offline}</span>
                   </div>
                 </div>
               </div>
@@ -382,7 +386,7 @@ export default function MessagesPage() {
                 <Input
                   id="message-input"
                   name="message-input"
-                  placeholder="Type a message..."
+                  placeholder={t.messages.typeMessage}
                   value={newMessage}
                   onChange={(e) => setNewMessage(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && handleSend()}
@@ -405,10 +409,11 @@ export default function MessagesPage() {
           </>
         ) : (
           <div className="flex items-center justify-center h-full text-muted-foreground">
-            Select a conversation to start messaging
+            {t.messages.noConversationsDesc}
           </div>
         )}
       </Card>
     </div>
+    </FeatureGate>
   );
 }

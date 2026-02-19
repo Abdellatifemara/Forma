@@ -25,6 +25,7 @@ import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { checkInsApi, type CreateCheckInData, type DailyCheckIn } from '@/lib/api';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/lib/i18n';
 
 const ratingLabels: Record<number, string> = {
   1: 'Poor',
@@ -84,6 +85,7 @@ function RatingSlider({
 }
 
 export default function CheckInPage() {
+  const { t } = useLanguage();
   const queryClient = useQueryClient();
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -208,8 +210,8 @@ export default function CheckInPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Daily Check-In</h1>
-          <p className="text-muted-foreground">Track your progress and wellness</p>
+          <h1 className="text-3xl font-bold">{t.checkIn.title}</h1>
+          <p className="text-muted-foreground">{t.checkIn.subtitle}</p>
         </div>
         {existingCheckIn && (
           <div className="flex items-center gap-2 text-green-500">
@@ -375,7 +377,7 @@ export default function CheckInPage() {
             <CardContent className="space-y-4">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="font-medium">Hours of sleep</span>
+                  <span className="font-medium">{t.checkIn.sleep}</span>
                   <span className="text-lg font-bold text-primary">{sleepHours}h</span>
                 </div>
                 <Slider
@@ -408,25 +410,25 @@ export default function CheckInPage() {
               <RatingSlider
                 value={energyLevel}
                 onChange={setEnergyLevel}
-                label="Energy level"
+                label={t.checkIn.energy}
                 icon={Battery}
               />
               <RatingSlider
                 value={stressLevel}
                 onChange={setStressLevel}
-                label="Stress level"
+                label={t.health.stress}
                 icon={Brain}
               />
               <RatingSlider
                 value={musclesoreness}
                 onChange={setMusclesoreness}
-                label="Muscle soreness"
+                label={t.checkIn.soreness}
                 icon={Dumbbell}
               />
               <RatingSlider
                 value={mood}
                 onChange={setMood}
-                label="Overall mood"
+                label={t.checkIn.mood}
                 icon={Smile}
               />
             </CardContent>
@@ -462,12 +464,12 @@ export default function CheckInPage() {
             ) : existingCheckIn ? (
               <>
                 <Check className="mr-2 h-4 w-4" />
-                Update Check-In
+                {t.checkIn.submit}
               </>
             ) : (
               <>
                 <Check className="mr-2 h-4 w-4" />
-                Complete Check-In
+                {t.checkIn.submit}
               </>
             )}
           </Button>

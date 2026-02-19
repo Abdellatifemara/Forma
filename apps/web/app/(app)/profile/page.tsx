@@ -1,9 +1,9 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
-  Bell,
   ChevronRight,
   CreditCard,
   HelpCircle,
@@ -23,10 +23,11 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Switch } from '@/components/ui/switch';
-import { removeAuthCookie } from '@/lib/api';
+import { removeAuthCookie, achievementsApi } from '@/lib/api';
 import { useUser, useUserStats } from '@/hooks/use-user';
 import { useToast } from '@/hooks/use-toast';
 import { useTheme } from 'next-themes';
+import { useLanguage } from '@/lib/i18n';
 
 const menuItems = [
   {
@@ -35,7 +36,6 @@ const menuItems = [
       { icon: User, label: 'Edit Profile', href: '/profile/edit' },
       { icon: CreditCard, label: 'Subscription', href: '/profile/subscription', badge: 'Pro' },
       { icon: Lock, label: 'Privacy & Security', href: '/profile/security' },
-      { icon: Bell, label: 'Notifications', href: '/profile/notifications' },
     ],
   },
   {
@@ -55,7 +55,7 @@ const menuItems = [
   },
 ];
 
-const achievements = [
+const defaultAchievements = [
   { title: 'Early Adopter', description: 'Joined Forma in the first month', icon: Trophy },
   { title: '7 Day Streak', description: 'Worked out 7 days in a row', icon: Dumbbell },
   { title: '100 Workouts', description: 'Completed 100 workouts', icon: Star },
@@ -74,8 +74,27 @@ export default function ProfilePage() {
   const router = useRouter();
   const { toast } = useToast();
   const { theme, setTheme } = useTheme();
+  const { t } = useLanguage();
   const { data: userData, isLoading: userLoading } = useUser();
   const { data: statsData, isLoading: statsLoading } = useUserStats();
+  const [achievements, setAchievements] = useState(defaultAchievements);
+
+  useEffect(() => {
+    achievementsApi.getAll().then((data) => {
+      if (data && data.length > 0) {
+        const iconMap: Record<string, typeof Trophy> = {
+          streak: Dumbbell, workout: Dumbbell, strength: Trophy, nutrition: Star,
+        };
+        setAchievements(data.slice(0, 5).map((a: any) => ({
+          title: a.nameEn || a.name || a.title || 'Achievement',
+          description: a.descriptionEn || a.description || '',
+          icon: iconMap[a.category?.toLowerCase()] || Trophy,
+        })));
+      }
+    }).catch(() => {
+      // Keep defaults on error
+    });
+  }, []);
 
   const handleLogout = () => {
     removeAuthCookie();
@@ -160,7 +179,7 @@ export default function ProfilePage() {
               <p className="mt-1 text-sm text-muted-foreground">{formatMemberSince()}</p>
             </div>
             <Button variant="outline" asChild>
-              <Link href="/profile/edit">Edit</Link>
+              <Link href="/profile/edit">{t.common.edit}</Link>
             </Button>
           </div>
 
@@ -183,7 +202,7 @@ export default function ProfilePage() {
         <CardContent className="flex items-center justify-between p-4">
           <div className="flex items-center gap-3">
             <Moon className="h-5 w-5" />
-            <span className="font-medium">Dark Mode</span>
+            <span className="font-medium">{t.settings.appearance.dark}</span>
           </div>
           <Switch
             checked={theme === 'dark'}
@@ -195,10 +214,10 @@ export default function ProfilePage() {
       {/* Achievements */}
       <Card>
         <CardHeader className="flex flex-row items-center justify-between pb-2">
-          <CardTitle className="text-base font-semibold">Achievements</CardTitle>
+          <CardTitle className="text-base font-semibold">{t.achievements.title}</CardTitle>
           <Button variant="ghost" size="sm" asChild>
             <Link href="/achievements">
-              View All
+              {t.achievements.viewAll}
               <ChevronRight className="ml-1 h-4 w-4" />
             </Link>
           </Button>
@@ -280,7 +299,7 @@ export default function ProfilePage() {
             className="flex w-full items-center gap-3 px-6 py-3 text-destructive transition-colors hover:bg-destructive/10"
           >
             <LogOut className="h-5 w-5" />
-            <span>Log Out</span>
+            <span>{t.profile.logout}</span>
           </button>
         </CardContent>
       </Card>

@@ -30,6 +30,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { trainersApi } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 const specializations = [
   'Weight Loss',
@@ -91,6 +92,7 @@ const steps = [
 ];
 
 export default function BecomeTrainerPage() {
+  const { t } = useLanguage();
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({
@@ -177,14 +179,13 @@ export default function BecomeTrainerPage() {
               Trainer Program
             </Badge>
             <h1 className="text-3xl font-bold lg:text-4xl">
-              Become a Forma Trainer
+              {t.becomeTrainer.title}
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Join our community of certified fitness professionals and help
-              thousands of people achieve their fitness goals.
+              {t.becomeTrainer.subtitle}
             </p>
             <Button variant="forma" size="lg" className="mt-6" onClick={nextStep}>
-              Start Application
+              {t.becomeTrainer.apply}
               <ChevronRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
@@ -213,7 +214,7 @@ export default function BecomeTrainerPage() {
         {/* Requirements */}
         <Card>
           <CardHeader>
-            <CardTitle>Requirements</CardTitle>
+            <CardTitle>{t.becomeTrainer.requirements}</CardTitle>
             <CardDescription>
               What you need to become a Forma trainer
             </CardDescription>
@@ -321,7 +322,7 @@ export default function BecomeTrainerPage() {
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
-              <Label>Bio</Label>
+              <Label>{t.becomeTrainer.bio}</Label>
               <Textarea
                 placeholder="Write a compelling bio that highlights your experience, training philosophy, and what clients can expect when working with you..."
                 className="mt-1.5 min-h-[150px]"
@@ -334,7 +335,7 @@ export default function BecomeTrainerPage() {
             </div>
 
             <div>
-              <Label>Years of Experience</Label>
+              <Label>{t.becomeTrainer.experience}</Label>
               <Select
                 value={formData.yearsExperience}
                 onValueChange={(value) =>
@@ -354,7 +355,7 @@ export default function BecomeTrainerPage() {
             </div>
 
             <div>
-              <Label>Specializations</Label>
+              <Label>{t.becomeTrainer.specialization}</Label>
               <p className="mb-3 text-sm text-muted-foreground">
                 Select all areas you specialize in
               </p>
@@ -387,7 +388,7 @@ export default function BecomeTrainerPage() {
                   formData.specializations.length === 0
                 }
               >
-                Continue
+                {t.common.continue}
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -399,7 +400,7 @@ export default function BecomeTrainerPage() {
       {currentStep === 2 && (
         <Card>
           <CardHeader>
-            <CardTitle>Your Experience</CardTitle>
+            <CardTitle>{t.becomeTrainer.experience}</CardTitle>
             <CardDescription>
               Tell us about your professional background
             </CardDescription>
@@ -506,7 +507,7 @@ export default function BecomeTrainerPage() {
 
             <div className="flex justify-end">
               <Button variant="forma" onClick={nextStep}>
-                Continue
+                {t.common.continue}
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -518,14 +519,14 @@ export default function BecomeTrainerPage() {
       {currentStep === 3 && (
         <Card>
           <CardHeader>
-            <CardTitle>Certifications</CardTitle>
+            <CardTitle>{t.becomeTrainer.certifications}</CardTitle>
             <CardDescription>
               Select your certifications and upload proof
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
-              <Label>Your Certifications</Label>
+              <Label>{t.becomeTrainer.certifications}</Label>
               <p className="mb-3 text-sm text-muted-foreground">
                 Select all certifications you hold
               </p>
@@ -574,7 +575,7 @@ export default function BecomeTrainerPage() {
                 onClick={nextStep}
                 disabled={formData.certifications.length === 0}
               >
-                Continue
+                {t.common.continue}
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
@@ -678,7 +679,7 @@ export default function BecomeTrainerPage() {
                     Submitting...
                   </>
                 ) : (
-                  'Submit Application'
+                  t.becomeTrainer.submit
                 )}
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>

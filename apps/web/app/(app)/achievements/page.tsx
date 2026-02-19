@@ -17,6 +17,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { achievementsApi, type Achievement } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 // Map icon names to components
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -32,6 +33,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export default function AchievementsPage() {
+  const { t } = useLanguage();
   const [achievements, setAchievements] = useState<Achievement[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -63,7 +65,7 @@ export default function AchievementsPage() {
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       <div>
-        <h1 className="text-2xl font-bold">Achievements</h1>
+        <h1 className="text-2xl font-bold">{t.achievements.title}</h1>
         <p className="text-muted-foreground">
           {unlockedCount} of {achievements.length} unlocked
         </p>
@@ -98,7 +100,7 @@ export default function AchievementsPage() {
                       <h3 className="font-semibold">{achievement.title}</h3>
                       {achievement.unlocked && (
                         <Badge variant="forma" className="text-xs">
-                          Unlocked
+                          {t.achievements.unlocked}
                         </Badge>
                       )}
                     </div>
@@ -113,7 +115,7 @@ export default function AchievementsPage() {
                     {!achievement.unlocked && (
                       <div className="mt-2">
                         <div className="flex items-center justify-between text-xs text-muted-foreground">
-                          <span>Progress</span>
+                          <span>{t.achievements.progress}</span>
                           <span>
                             {achievement.progress} / {achievement.total}
                           </span>

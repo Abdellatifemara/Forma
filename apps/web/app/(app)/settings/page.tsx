@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import {
-  Bell,
   ChevronRight,
   CreditCard,
   Globe,
@@ -15,7 +14,6 @@ import {
   Smartphone,
   Sun,
   User,
-  Volume2,
   Loader2,
   Camera,
 } from 'lucide-react';
@@ -46,6 +44,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useUser, useUpdateProfile } from '@/hooks/use-user';
 import { useToast } from '@/hooks/use-toast';
 import { removeAuthCookie, uploadApi } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -53,6 +52,7 @@ export default function SettingsPage() {
   const updateProfile = useUpdateProfile();
   const { toast } = useToast();
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const { t, lang, setLang } = useLanguage();
 
   const user = userData?.user;
 
@@ -63,14 +63,6 @@ export default function SettingsPage() {
   const [theme, setTheme] = useState<'light' | 'dark' | 'system'>('light');
   const [language, setLanguage] = useState('en');
   const [unit, setUnit] = useState('metric');
-  const [notifications, setNotifications] = useState({
-    workoutReminders: true,
-    mealReminders: true,
-    progressUpdates: true,
-    trainerMessages: true,
-    marketing: false,
-    sounds: true,
-  });
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [showPasswordDialog, setShowPasswordDialog] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
@@ -198,16 +190,15 @@ export default function SettingsPage() {
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold">Settings</h1>
-        <p className="text-muted-foreground">Manage your account and preferences</p>
+        <h1 className="text-2xl font-bold">{t.settings.title}</h1>
+        <p className="text-muted-foreground">{t.settings.subtitle}</p>
       </div>
 
       <Tabs defaultValue="account" className="space-y-6">
-        <TabsList className="grid w-full grid-cols-4 lg:w-[400px]">
-          <TabsTrigger value="account">Account</TabsTrigger>
-          <TabsTrigger value="preferences">Preferences</TabsTrigger>
-          <TabsTrigger value="notifications">Notifications</TabsTrigger>
-          <TabsTrigger value="privacy">Privacy</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-3 lg:w-[300px]">
+          <TabsTrigger value="account">{t.settings.tabs.account}</TabsTrigger>
+          <TabsTrigger value="preferences">{t.settings.tabs.preferences}</TabsTrigger>
+          <TabsTrigger value="privacy">{t.settings.tabs.privacy}</TabsTrigger>
         </TabsList>
 
         {/* Account Tab */}
@@ -215,8 +206,8 @@ export default function SettingsPage() {
           {/* Profile Card */}
           <Card>
             <CardHeader>
-              <CardTitle>Profile</CardTitle>
-              <CardDescription>Manage your personal information</CardDescription>
+              <CardTitle>{t.settings.profile.title}</CardTitle>
+              <CardDescription>{t.settings.profile.subtitle}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="flex items-center gap-4">
@@ -241,7 +232,7 @@ export default function SettingsPage() {
                   </h3>
                   <p className="text-sm text-muted-foreground">{user?.email}</p>
                   <p className="mt-1 text-xs text-muted-foreground">
-                    Member since {formatMemberSince()}
+                    {t.settings.profile.memberSince} {formatMemberSince()}
                   </p>
                 </div>
                 <input
@@ -261,12 +252,12 @@ export default function SettingsPage() {
                   {isUploadingPhoto ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Uploading...
+                      {t.settings.profile.uploading}
                     </>
                   ) : (
                     <>
                       <Camera className="mr-2 h-4 w-4" />
-                      Change Photo
+                      {t.settings.profile.changePhoto}
                     </>
                   )}
                 </Button>
@@ -276,7 +267,7 @@ export default function SettingsPage() {
 
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
-                  <Label>First Name</Label>
+                  <Label>{t.settings.profile.firstName}</Label>
                   <Input
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
@@ -284,7 +275,7 @@ export default function SettingsPage() {
                   />
                 </div>
                 <div>
-                  <Label>Last Name</Label>
+                  <Label>{t.settings.profile.lastName}</Label>
                   <Input
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
@@ -292,7 +283,7 @@ export default function SettingsPage() {
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <Label>Email</Label>
+                  <Label>{t.settings.profile.email}</Label>
                   <Input value={user?.email || ''} className="mt-1.5" disabled />
                 </div>
               </div>
@@ -301,10 +292,10 @@ export default function SettingsPage() {
                 {isSaving ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Saving...
+                    {t.settings.profile.saving}
                   </>
                 ) : (
-                  'Save Changes'
+                  t.settings.profile.saveChanges
                 )}
               </Button>
             </CardContent>
@@ -315,8 +306,8 @@ export default function SettingsPage() {
             <CardHeader>
               <div className="flex items-center justify-between">
                 <div>
-                  <CardTitle>Subscription</CardTitle>
-                  <CardDescription>Manage your subscription plan</CardDescription>
+                  <CardTitle>{t.settings.subscription.title}</CardTitle>
+                  <CardDescription>{t.settings.subscription.subtitle}</CardDescription>
                 </div>
                 <Badge variant="forma" className="text-sm">
                   {(user?.subscription || 'FREE').toUpperCase()}
@@ -329,27 +320,27 @@ export default function SettingsPage() {
                   <CreditCard className="h-5 w-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">
-                      {user?.subscription === 'pro' ? 'Pro Plan' :
-                       user?.subscription === 'elite' ? 'Elite Plan' : 'Free Plan'}
+                      {user?.subscription === 'pro' ? t.settings.subscription.proPlan :
+                       user?.subscription === 'elite' ? t.settings.subscription.elitePlan : t.settings.subscription.freePlan}
                     </p>
                     <p className="text-sm text-muted-foreground">
                       {user?.subscription === 'free' || !user?.subscription
-                        ? 'Upgrade to unlock premium features'
-                        : 'Active subscription'}
+                        ? t.settings.subscription.upgradePrompt
+                        : t.settings.subscription.activeSubscription}
                     </p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">
-                  {user?.subscription === 'free' || !user?.subscription ? 'Upgrade' : 'Manage'}
+                  {user?.subscription === 'free' || !user?.subscription ? t.settings.subscription.upgrade : t.settings.subscription.manage}
                 </Button>
               </div>
 
               <div className="flex gap-2">
                 <Button variant="outline" className="flex-1">
-                  View Billing History
+                  {t.settings.subscription.viewBilling}
                 </Button>
                 <Button variant="outline" className="flex-1">
-                  Update Payment Method
+                  {t.settings.subscription.updatePayment}
                 </Button>
               </div>
             </CardContent>
@@ -358,8 +349,8 @@ export default function SettingsPage() {
           {/* Security Card */}
           <Card>
             <CardHeader>
-              <CardTitle>Security</CardTitle>
-              <CardDescription>Keep your account secure</CardDescription>
+              <CardTitle>{t.settings.security.title}</CardTitle>
+              <CardDescription>{t.settings.security.subtitle}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div
@@ -369,9 +360,9 @@ export default function SettingsPage() {
                 <div className="flex items-center gap-3">
                   <Key className="h-5 w-5 text-muted-foreground" />
                   <div>
-                    <p className="font-medium">Change Password</p>
+                    <p className="font-medium">{t.settings.security.changePassword}</p>
                     <p className="text-sm text-muted-foreground">
-                      Last changed 3 months ago
+                      {t.settings.security.lastChanged}
                     </p>
                   </div>
                 </div>
@@ -382,14 +373,14 @@ export default function SettingsPage() {
                 <div className="flex items-center gap-3">
                   <Shield className="h-5 w-5 text-muted-foreground" />
                   <div>
-                    <p className="font-medium">Two-Factor Authentication</p>
+                    <p className="font-medium">{t.settings.security.twoFactor}</p>
                     <p className="text-sm text-muted-foreground">
-                      Add an extra layer of security
+                      {t.settings.security.twoFactorDesc}
                     </p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">
-                  Enable
+                  {t.settings.security.enable}
                 </Button>
               </div>
 
@@ -397,14 +388,14 @@ export default function SettingsPage() {
                 <div className="flex items-center gap-3">
                   <Smartphone className="h-5 w-5 text-muted-foreground" />
                   <div>
-                    <p className="font-medium">Active Sessions</p>
+                    <p className="font-medium">{t.settings.security.activeSessions}</p>
                     <p className="text-sm text-muted-foreground">
-                      Manage your logged-in devices
+                      {t.settings.security.activeSessionsDesc}
                     </p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">
-                  View All
+                  {t.settings.security.viewAll}
                 </Button>
               </div>
             </CardContent>
@@ -415,8 +406,8 @@ export default function SettingsPage() {
         <TabsContent value="preferences" className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle>Appearance</CardTitle>
-              <CardDescription>Customize how Forma looks</CardDescription>
+              <CardTitle>{t.settings.appearance.title}</CardTitle>
+              <CardDescription>{t.settings.appearance.subtitle}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
@@ -427,9 +418,9 @@ export default function SettingsPage() {
                     <Sun className="h-5 w-5 text-muted-foreground" />
                   )}
                   <div>
-                    <p className="font-medium">Theme</p>
+                    <p className="font-medium">{t.settings.appearance.theme}</p>
                     <p className="text-sm text-muted-foreground">
-                      Choose your preferred theme
+                      {t.settings.appearance.themeDesc}
                     </p>
                   </div>
                 </div>
@@ -438,9 +429,9 @@ export default function SettingsPage() {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="light">Light</SelectItem>
-                    <SelectItem value="dark">Dark</SelectItem>
-                    <SelectItem value="system">System</SelectItem>
+                    <SelectItem value="light">{t.settings.appearance.light}</SelectItem>
+                    <SelectItem value="dark">{t.settings.appearance.dark}</SelectItem>
+                    <SelectItem value="system">{t.settings.appearance.system}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -449,21 +440,21 @@ export default function SettingsPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Language & Region</CardTitle>
-              <CardDescription>Set your language and measurement preferences</CardDescription>
+              <CardTitle>{t.settings.language.title}</CardTitle>
+              <CardDescription>{t.settings.language.subtitle}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Globe className="h-5 w-5 text-muted-foreground" />
                   <div>
-                    <p className="font-medium">Language</p>
+                    <p className="font-medium">{t.settings.language.language}</p>
                     <p className="text-sm text-muted-foreground">
-                      Select your preferred language
+                      {t.settings.language.languageDesc}
                     </p>
                   </div>
                 </div>
-                <Select value={language} onValueChange={setLanguage}>
+                <Select value={language} onValueChange={(v) => { setLanguage(v); setLang(v as 'en' | 'ar'); }}>
                   <SelectTrigger className="w-40">
                     <SelectValue />
                   </SelectTrigger>
@@ -478,9 +469,9 @@ export default function SettingsPage() {
 
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-medium">Units</p>
+                  <p className="font-medium">{t.settings.language.units}</p>
                   <p className="text-sm text-muted-foreground">
-                    Choose your measurement system
+                    {t.settings.language.unitsDesc}
                   </p>
                 </div>
                 <Select value={unit} onValueChange={setUnit}>
@@ -488,8 +479,8 @@ export default function SettingsPage() {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="metric">Metric (kg, cm)</SelectItem>
-                    <SelectItem value="imperial">Imperial (lb, in)</SelectItem>
+                    <SelectItem value="metric">{t.settings.language.metric}</SelectItem>
+                    <SelectItem value="imperial">{t.settings.language.imperial}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -498,15 +489,15 @@ export default function SettingsPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Workout Preferences</CardTitle>
-              <CardDescription>Customize your workout experience</CardDescription>
+              <CardTitle>{t.settings.workout.title}</CardTitle>
+              <CardDescription>{t.settings.workout.subtitle}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-medium">Default Rest Timer</p>
+                  <p className="font-medium">{t.settings.workout.defaultRest}</p>
                   <p className="text-sm text-muted-foreground">
-                    Set your default rest time between sets
+                    {t.settings.workout.defaultRestDesc}
                   </p>
                 </div>
                 <Select defaultValue="90">
@@ -514,10 +505,10 @@ export default function SettingsPage() {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="60">60 seconds</SelectItem>
-                    <SelectItem value="90">90 seconds</SelectItem>
-                    <SelectItem value="120">120 seconds</SelectItem>
-                    <SelectItem value="180">180 seconds</SelectItem>
+                    <SelectItem value="60">60 {t.settings.workout.seconds}</SelectItem>
+                    <SelectItem value="90">90 {t.settings.workout.seconds}</SelectItem>
+                    <SelectItem value="120">120 {t.settings.workout.seconds}</SelectItem>
+                    <SelectItem value="180">180 {t.settings.workout.seconds}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -526,9 +517,9 @@ export default function SettingsPage() {
 
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-medium">Auto-start Rest Timer</p>
+                  <p className="font-medium">{t.settings.workout.autoStart}</p>
                   <p className="text-sm text-muted-foreground">
-                    Start timer after completing a set
+                    {t.settings.workout.autoStartDesc}
                   </p>
                 </div>
                 <Switch defaultChecked />
@@ -538,135 +529,12 @@ export default function SettingsPage() {
 
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-medium">Vibration</p>
+                  <p className="font-medium">{t.settings.workout.vibration}</p>
                   <p className="text-sm text-muted-foreground">
-                    Vibrate when rest timer ends
+                    {t.settings.workout.vibrationDesc}
                   </p>
                 </div>
                 <Switch defaultChecked />
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        {/* Notifications Tab */}
-        <TabsContent value="notifications" className="space-y-6">
-          <Card>
-            <CardHeader>
-              <CardTitle>Push Notifications</CardTitle>
-              <CardDescription>Choose what notifications you receive</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <Bell className="h-5 w-5 text-muted-foreground" />
-                  <div>
-                    <p className="font-medium">Workout Reminders</p>
-                    <p className="text-sm text-muted-foreground">
-                      Get reminded about scheduled workouts
-                    </p>
-                  </div>
-                </div>
-                <Switch
-                  checked={notifications.workoutReminders}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, workoutReminders: checked })
-                  }
-                />
-              </div>
-
-              <Separator />
-
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">Meal Reminders</p>
-                  <p className="text-sm text-muted-foreground">
-                    Reminders to log your meals
-                  </p>
-                </div>
-                <Switch
-                  checked={notifications.mealReminders}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, mealReminders: checked })
-                  }
-                />
-              </div>
-
-              <Separator />
-
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">Progress Updates</p>
-                  <p className="text-sm text-muted-foreground">
-                    Weekly progress summaries and milestones
-                  </p>
-                </div>
-                <Switch
-                  checked={notifications.progressUpdates}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, progressUpdates: checked })
-                  }
-                />
-              </div>
-
-              <Separator />
-
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">Trainer Messages</p>
-                  <p className="text-sm text-muted-foreground">
-                    Messages from your personal trainer
-                  </p>
-                </div>
-                <Switch
-                  checked={notifications.trainerMessages}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, trainerMessages: checked })
-                  }
-                />
-              </div>
-
-              <Separator />
-
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">Marketing & Promotions</p>
-                  <p className="text-sm text-muted-foreground">
-                    News, tips, and special offers
-                  </p>
-                </div>
-                <Switch
-                  checked={notifications.marketing}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, marketing: checked })
-                  }
-                />
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Sound</CardTitle>
-              <CardDescription>Configure notification sounds</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <Volume2 className="h-5 w-5 text-muted-foreground" />
-                  <div>
-                    <p className="font-medium">Notification Sounds</p>
-                    <p className="text-sm text-muted-foreground">
-                      Play sounds for notifications
-                    </p>
-                  </div>
-                </div>
-                <Switch
-                  checked={notifications.sounds}
-                  onCheckedChange={(checked) =>
-                    setNotifications({ ...notifications, sounds: checked })
-                  }
-                />
               </div>
             </CardContent>
           </Card>
@@ -676,15 +544,15 @@ export default function SettingsPage() {
         <TabsContent value="privacy" className="space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle>Data & Privacy</CardTitle>
-              <CardDescription>Manage your data and privacy settings</CardDescription>
+              <CardTitle>{t.settings.privacy.title}</CardTitle>
+              <CardDescription>{t.settings.privacy.subtitle}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-medium">Profile Visibility</p>
+                  <p className="font-medium">{t.settings.privacy.profileVisibility}</p>
                   <p className="text-sm text-muted-foreground">
-                    Allow other users to see your profile
+                    {t.settings.privacy.profileVisibilityDesc}
                   </p>
                 </div>
                 <Select defaultValue="friends">
@@ -692,9 +560,9 @@ export default function SettingsPage() {
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="public">Public</SelectItem>
-                    <SelectItem value="friends">Friends Only</SelectItem>
-                    <SelectItem value="private">Private</SelectItem>
+                    <SelectItem value="public">{t.settings.privacy.public}</SelectItem>
+                    <SelectItem value="friends">{t.settings.privacy.friendsOnly}</SelectItem>
+                    <SelectItem value="private">{t.settings.privacy.private}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -703,9 +571,9 @@ export default function SettingsPage() {
 
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-medium">Share Progress</p>
+                  <p className="font-medium">{t.settings.privacy.shareProgress}</p>
                   <p className="text-sm text-muted-foreground">
-                    Allow sharing your progress on leaderboards
+                    {t.settings.privacy.shareProgressDesc}
                   </p>
                 </div>
                 <Switch defaultChecked />
@@ -715,29 +583,29 @@ export default function SettingsPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Data Management</CardTitle>
-              <CardDescription>Export or delete your data</CardDescription>
+              <CardTitle>{t.settings.privacy.dataManagement}</CardTitle>
+              <CardDescription>{t.settings.privacy.dataManagementDesc}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between rounded-lg border p-4">
                 <div>
-                  <p className="font-medium">Export Data</p>
+                  <p className="font-medium">{t.settings.privacy.exportData}</p>
                   <p className="text-sm text-muted-foreground">
-                    Download all your Forma data
+                    {t.settings.privacy.exportDataDesc}
                   </p>
                 </div>
-                <Button variant="outline">Export</Button>
+                <Button variant="outline">{t.settings.privacy.export}</Button>
               </div>
 
               <div className="flex items-center justify-between rounded-lg border border-destructive/20 p-4">
                 <div>
-                  <p className="font-medium text-destructive">Delete Account</p>
+                  <p className="font-medium text-destructive">{t.settings.privacy.deleteAccount}</p>
                   <p className="text-sm text-muted-foreground">
-                    Permanently delete your account and data
+                    {t.settings.privacy.deleteAccountDesc}
                   </p>
                 </div>
                 <Button variant="destructive" onClick={() => setShowDeleteDialog(true)}>
-                  Delete
+                  {t.common.delete}
                 </Button>
               </div>
             </CardContent>
@@ -745,16 +613,16 @@ export default function SettingsPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Support</CardTitle>
+              <CardTitle>{t.settings.support.title}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex cursor-pointer items-center justify-between rounded-lg border p-4 transition-colors hover:bg-muted/50">
                 <div className="flex items-center gap-3">
                   <HelpCircle className="h-5 w-5 text-muted-foreground" />
                   <div>
-                    <p className="font-medium">Help Center</p>
+                    <p className="font-medium">{t.settings.support.helpCenter}</p>
                     <p className="text-sm text-muted-foreground">
-                      Get help with Forma
+                      {t.settings.support.helpCenterDesc}
                     </p>
                   </div>
                 </div>
@@ -767,7 +635,7 @@ export default function SettingsPage() {
                 onClick={handleLogout}
               >
                 <LogOut className="mr-2 h-4 w-4" />
-                Sign Out
+                {t.settings.support.signOut}
               </Button>
             </CardContent>
           </Card>
@@ -781,14 +649,14 @@ export default function SettingsPage() {
       }}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Change Password</DialogTitle>
+            <DialogTitle>{t.settings.security.changePassword}</DialogTitle>
             <DialogDescription>
-              Enter your current password and choose a new one
+              {t.settings.security.enterCurrentPassword}
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4 py-4">
             <div>
-              <Label>Current Password</Label>
+              <Label>{t.settings.security.currentPassword}</Label>
               <Input
                 type="password"
                 className="mt-1.5"
@@ -797,7 +665,7 @@ export default function SettingsPage() {
               />
             </div>
             <div>
-              <Label>New Password</Label>
+              <Label>{t.settings.security.newPassword}</Label>
               <Input
                 type="password"
                 className="mt-1.5"
@@ -806,7 +674,7 @@ export default function SettingsPage() {
               />
             </div>
             <div>
-              <Label>Confirm New Password</Label>
+              <Label>{t.settings.security.confirmNewPassword}</Label>
               <Input
                 type="password"
                 className="mt-1.5"
@@ -817,7 +685,7 @@ export default function SettingsPage() {
           </div>
           <DialogFooter>
             <Button variant="outline" onClick={() => setShowPasswordDialog(false)}>
-              Cancel
+              {t.common.cancel}
             </Button>
             <Button
               variant="forma"
@@ -828,7 +696,7 @@ export default function SettingsPage() {
                 setPasswordForm({ current: '', new: '', confirm: '' });
               }}
             >
-              Update Password
+              {t.settings.security.updatePassword}
             </Button>
           </DialogFooter>
         </DialogContent>
@@ -841,25 +709,25 @@ export default function SettingsPage() {
       }}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Delete Account</DialogTitle>
+            <DialogTitle>{t.settings.privacy.deleteAccount}</DialogTitle>
             <DialogDescription>
-              This action cannot be undone. All your data will be permanently deleted.
+              {t.settings.privacy.deleteAccountWarning}
             </DialogDescription>
           </DialogHeader>
           <div className="py-4">
             <p className="text-sm text-muted-foreground">
-              To confirm, type <strong>DELETE</strong> below:
+              {t.settings.privacy.deleteConfirm}
             </p>
             <Input
               className="mt-2"
-              placeholder="Type DELETE to confirm"
+              placeholder={t.settings.privacy.deleteConfirmPlaceholder}
               value={deleteConfirmText}
               onChange={(e) => setDeleteConfirmText(e.target.value)}
             />
           </div>
           <DialogFooter>
             <Button variant="outline" onClick={() => setShowDeleteDialog(false)}>
-              Cancel
+              {t.common.cancel}
             </Button>
             <Button
               variant="destructive"
@@ -870,7 +738,7 @@ export default function SettingsPage() {
                 setDeleteConfirmText('');
               }}
             >
-              Delete My Account
+              {t.settings.privacy.deleteMyAccount}
             </Button>
           </DialogFooter>
         </DialogContent>

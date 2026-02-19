@@ -76,6 +76,7 @@ data/scraped/*.json
 *.key
 credentials.json
 service-account.json
+passwords.txt
 
 # TypeScript
 *.tsbuildinfo

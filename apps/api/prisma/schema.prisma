@@ -132,6 +132,8 @@ model Exercise {
   difficulty       DifficultyLevel
   thumbnailUrl     String?
   videoUrl         String?
+  youtubeVideoId   String?
+  blurPlaceholder  String?
   instructionsEn   String[]
   instructionsAr   String[]
   tipsEn           String[]
@@ -1480,6 +1482,10 @@ enum EquipmentType {
   TREADMILL
   BIKE
   ROWING
+  HEAVY_BAG
+  BOXING_GLOVES
+  PADS
+  SHIN_GUARDS
 }
 
 enum ExerciseCategory {
@@ -1493,6 +1499,7 @@ enum ExerciseCategory {
   YOGA
   PILATES
   MOBILITY
+  MARTIAL_ARTS
 }
 
 enum VideoCategory {

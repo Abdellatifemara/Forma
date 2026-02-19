@@ -1,6 +1,7 @@
 import { Controller, Post, Body, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 import { AiService } from './ai.service';
+import { AiRateLimitService } from './ai-rate-limit.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
@@ -10,11 +11,19 @@ import { User } from '@prisma/client';
 @UseGuards(JwtAuthGuard)
 @ApiBearerAuth()
 export class AiController {
-  constructor(private readonly aiService: AiService) {}
+  constructor(
+    private readonly aiService: AiService,
+    private readonly rateLimitService: AiRateLimitService,
+  ) {}
 
   @Post('chat')
   @ApiOperation({ summary: 'Chat with AI assistant' })
-  async chat(@Body() body: { message: string; context?: string }) {
+  async chat(
+    @CurrentUser() user: User,
+    @Body() body: { message: string; context?: string },
+  ) {
+    await this.rateLimitService.checkAndIncrement(user.id);
+
     const response = await this.aiService.callGemini(body.message, {
       systemPrompt: body.context || 'You are a helpful fitness and nutrition assistant.',
       maxTokens: 1024,
@@ -26,6 +35,7 @@ export class AiController {
   @Post('workout-recommendation')
   @ApiOperation({ summary: 'Get AI workout recommendation' })
   async getWorkoutRecommendation(
+    @CurrentUser() user: User,
     @Body()
     body: {
       fitnessGoal: string;
@@ -33,6 +43,8 @@ export class AiController {
       equipment: string[];
     },
   ) {
+    await this.rateLimitService.checkAndIncrement(user.id);
+
     const recommendation =
       await this.aiService.generateWorkoutRecommendation(body);
     return { recommendation };
@@ -41,6 +53,7 @@ export class AiController {
   @Post('nutrition-advice')
   @ApiOperation({ summary: 'Get AI nutrition advice' })
   async getNutritionAdvice(
+    @CurrentUser() user: User,
     @Body()
     body: {
       goal: string;
@@ -48,6 +61,8 @@ export class AiController {
       currentProtein: number;
     },
   ) {
+    await this.rateLimitService.checkAndIncrement(user.id);
+
     const advice = await this.aiService.generateNutritionAdvice(body.goal, {
       calories: body.currentCalories,
       protein: body.currentProtein,
@@ -71,6 +86,8 @@ export class AiController {
       isRamadan?: boolean;
     },
   ) {
+    await this.rateLimitService.checkAndIncrement(user.id);
+
     const plan = await this.aiService.generateWorkoutPlan({
       goal: body.goal,
       fitnessLevel: body.fitnessLevel,
@@ -89,12 +106,15 @@ export class AiController {
   @Post('analyze-form')
   @ApiOperation({ summary: 'Analyze exercise form from pose data' })
   async analyzeForm(
+    @CurrentUser() user: User,
     @Body()
     body: {
       exerciseName: string;
       poseData: { joint: string; angle: number }[];
     },
   ) {
+    await this.rateLimitService.checkAndIncrement(user.id);
+
     const analysis = await this.aiService.analyzeExerciseForm(body);
     return analysis;
   }
@@ -111,6 +131,8 @@ export class AiController {
       language: 'en' | 'ar';
     },
   ) {
+    await this.rateLimitService.checkAndIncrement(user.id);
+
     const result = await this.aiService.generateMotivationalMessage({
       userName: user.firstName,
       streakDays: body.streakDays,
@@ -124,6 +146,7 @@ export class AiController {
   @Post('churn-risk')
   @ApiOperation({ summary: 'Predict user churn risk and get interventions' })
   async predictChurnRisk(
+    @CurrentUser() user: User,
     @Body()
     body: {
       daysSinceLastWorkout: number;

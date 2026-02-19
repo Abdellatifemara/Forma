@@ -23,6 +23,8 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
+import { programsApi } from '@/lib/api';
+import { useToast } from '@/hooks/use-toast';
 
 type Step = 'basics' | 'schedule' | 'goal' | 'review';
 
@@ -49,6 +51,7 @@ const frequencies = [
 
 export default function NewProgramPage() {
   const router = useRouter();
+  const { toast } = useToast();
   const [currentStep, setCurrentStep] = useState<Step>('basics');
   const [isCreating, setIsCreating] = useState(false);
 
@@ -105,11 +108,26 @@ export default function NewProgramPage() {
   const handleCreate = async () => {
     setIsCreating(true);
     try {
-      // TODO: Call API to create program
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      router.push('/trainer/programs/new-program-id');
-    } catch {
-      // Handle error silently - show toast in production
+      const program = await programsApi.create({
+        nameEn: formData.nameEn,
+        nameAr: formData.nameAr || undefined,
+        descriptionEn: formData.descriptionEn || undefined,
+        descriptionAr: formData.descriptionAr || undefined,
+        durationWeeks: formData.durationWeeks,
+        priceEGP: formData.priceEGP ?? undefined,
+        sourceType: 'manual',
+      });
+      toast({
+        title: 'Program created',
+        description: 'Now add workout days and exercises.',
+      });
+      router.push(`/trainer/programs/${program.id}`);
+    } catch (error: any) {
+      toast({
+        title: 'Failed to create program',
+        description: error?.message || 'Please try again.',
+        variant: 'destructive',
+      });
     } finally {
       setIsCreating(false);
     }

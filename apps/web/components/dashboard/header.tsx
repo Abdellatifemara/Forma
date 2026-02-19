@@ -1,6 +1,6 @@
 'use client';
 
-import { Bell, Menu, Search } from 'lucide-react';
+import { Menu, Search } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -65,11 +65,6 @@ export function Header({ onMenuClick }: HeaderProps) {
       </div>
 
       <div className="flex items-center gap-4">
-        <Button variant="ghost" size="icon" className="relative">
-          <Bell className="h-5 w-5" />
-          <span className="absolute right-1 top-1 h-2 w-2 rounded-full bg-forma-teal" />
-        </Button>
-
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="relative h-8 w-8 rounded-full">

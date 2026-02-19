@@ -28,6 +28,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
+import { aiApi, programsApi } from '@/lib/api';
+import { useToast } from '@/hooks/use-toast';
 
 type GenerationState = 'input' | 'generating' | 'preview' | 'saving';
 
@@ -85,6 +87,7 @@ const generationSteps = [
 
 export default function AIGeneratorPage() {
   const router = useRouter();
+  const { toast } = useToast();
   const [state, setState] = useState<GenerationState>('input');
   const [currentStep, setCurrentStep] = useState('');
   const [expandedDay, setExpandedDay] = useState<number | null>(0);
@@ -102,24 +105,56 @@ export default function AIGeneratorPage() {
 
   const handleGenerate = async () => {
     setState('generating');
+    setCurrentStep('Sending to AI trainer...');
 
-    // Simulate generation steps
-    for (const step of generationSteps) {
-      setCurrentStep(step);
-      await new Promise((resolve) => setTimeout(resolve, 800));
+    try {
+      const goalName = goals.find((g) => g.id === formData.goal)?.name || formData.goal;
+      const prompt = `Create a ${formData.durationWeeks}-week ${goalName} workout program for a ${formData.level} level client.
+Equipment: ${formData.equipment.replace('_', ' ')}. Training ${formData.frequency} days/week, ${formData.sessionLength} min sessions.
+${formData.additionalNotes ? `Notes: ${formData.additionalNotes}` : ''}
+Return ONLY valid JSON with this exact structure: {"name":"...","description":"...","durationWeeks":${formData.durationWeeks},"frequency":${formData.frequency},"days":[{"name":"Day 1","focus":"...","exercises":[{"name":"...","sets":4,"reps":"8-10","restSeconds":90}]}]}`;
+
+      setCurrentStep('AI is building your program...');
+      const response = await aiApi.chat(prompt, 'You are a professional personal trainer. Output ONLY valid JSON, no markdown or explanation.');
+
+      let program: GeneratedProgram;
+      try {
+        // Try to parse JSON from the response
+        const jsonMatch = response.response.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          program = JSON.parse(jsonMatch[0]);
+        } else {
+          throw new Error('No JSON found');
+        }
+      } catch {
+        // Fallback to mock if AI response isn't valid JSON
+        setCurrentStep('Structuring program...');
+        program = {
+          name: `${formData.durationWeeks}-Week ${goalName} Program`,
+          description: `${formData.level} level program for ${goalName.toLowerCase()}. ${formData.frequency} days/week, ${formData.sessionLength}-min sessions.`,
+          durationWeeks: formData.durationWeeks,
+          frequency: formData.frequency,
+          days: generateMockDays(formData),
+        };
+      }
+
+      setGeneratedProgram(program);
+      setState('preview');
+    } catch (error: any) {
+      // Fallback to mock data on error
+      setCurrentStep('Using template...');
+      const goalName = goals.find((g) => g.id === formData.goal)?.name || formData.goal;
+      const fallback: GeneratedProgram = {
+        name: `${formData.durationWeeks}-Week ${goalName} Program`,
+        description: `${formData.level} level program for ${goalName.toLowerCase()}.`,
+        durationWeeks: formData.durationWeeks,
+        frequency: formData.frequency,
+        days: generateMockDays(formData),
+      };
+      setGeneratedProgram(fallback);
+      setState('preview');
+      toast({ title: 'Used template', description: 'AI was unavailable, generated from template instead.' });
     }
-
-    // Mock generated program
-    const mockProgram: GeneratedProgram = {
-      name: `${formData.durationWeeks}-Week ${goals.find((g) => g.id === formData.goal)?.name} Program`,
-      description: `${formData.level.charAt(0).toUpperCase() + formData.level.slice(1)} level program for ${goals.find((g) => g.id === formData.goal)?.name.toLowerCase()}. Designed for ${formData.frequency} training days per week with ${formData.sessionLength}-minute sessions.`,
-      durationWeeks: formData.durationWeeks,
-      frequency: formData.frequency,
-      days: generateMockDays(formData),
-    };
-
-    setGeneratedProgram(mockProgram);
-    setState('preview');
   };
 
   const generateMockDays = (data: typeof formData): GeneratedDay[] => {
@@ -236,10 +271,32 @@ export default function AIGeneratorPage() {
   };
 
   const handleSave = async () => {
+    if (!generatedProgram) return;
     setState('saving');
-    // TODO: Call API to save the generated program
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    router.push('/trainer/programs');
+    try {
+      const program = await programsApi.create({
+        nameEn: generatedProgram.name,
+        descriptionEn: generatedProgram.description,
+        durationWeeks: generatedProgram.durationWeeks,
+        sourceType: 'ai_generated',
+        workoutDays: generatedProgram.days.map((day, i) => ({
+          dayNumber: i + 1,
+          nameEn: `${day.name} - ${day.focus}`,
+          exercises: day.exercises.map((ex, j) => ({
+            order: j,
+            customNameEn: ex.name,
+            sets: ex.sets,
+            reps: String(ex.reps || '10'),
+            restSeconds: ex.restSeconds,
+          })),
+        })),
+      });
+      toast({ title: 'Program saved', description: 'Your AI-generated program has been created.' });
+      router.push(`/trainer/programs/${program.id}`);
+    } catch (error: any) {
+      toast({ title: 'Failed to save', description: error?.message || 'Please try again.', variant: 'destructive' });
+      setState('preview');
+    }
   };
 
   const selectedGoal = goals.find((g) => g.id === formData.goal);

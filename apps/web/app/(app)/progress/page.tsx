@@ -33,6 +33,7 @@ import {
   useLogMeasurements,
 } from '@/hooks/use-progress';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString);
@@ -47,6 +48,7 @@ function TrendIcon({ change }: { change: number }) {
 
 export default function ProgressPage() {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [timeRange, setTimeRange] = useState<'week' | 'month' | 'year'>('month');
   const [logDialogOpen, setLogDialogOpen] = useState(false);
   const [logTab, setLogTab] = useState<'weight' | 'measurements'>('weight');
@@ -149,12 +151,12 @@ export default function ProgressPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold">Progress</h1>
-          <p className="text-muted-foreground">Track your transformation</p>
+          <h1 className="text-2xl font-bold">{t.progress.title}</h1>
+          <p className="text-muted-foreground">{t.progress.startTracking}</p>
         </div>
         <Button variant="forma" onClick={() => setLogDialogOpen(true)}>
           <Plus className="mr-2 h-4 w-4" />
-          Log Progress
+          {t.progress.logWeight}
         </Button>
       </div>
 
@@ -162,19 +164,19 @@ export default function ProgressPage() {
       <Dialog open={logDialogOpen} onOpenChange={setLogDialogOpen}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle>Log Progress</DialogTitle>
-            <DialogDescription>Track your weight and body measurements</DialogDescription>
+            <DialogTitle>{t.progress.logWeight}</DialogTitle>
+            <DialogDescription>{t.progress.startTracking}</DialogDescription>
           </DialogHeader>
 
           <Tabs value={logTab} onValueChange={(v) => setLogTab(v as 'weight' | 'measurements')}>
             <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="weight">Weight</TabsTrigger>
-              <TabsTrigger value="measurements">Measurements</TabsTrigger>
+              <TabsTrigger value="weight">{t.progress.weight}</TabsTrigger>
+              <TabsTrigger value="measurements">{t.progress.measurements}</TabsTrigger>
             </TabsList>
 
             <TabsContent value="weight" className="space-y-4 pt-4">
               <div className="space-y-2">
-                <Label htmlFor="weight">Weight (kg)</Label>
+                <Label htmlFor="weight">{t.progress.weight} ({t.progress.kg})</Label>
                 <Input
                   id="weight"
                   type="number"
@@ -196,7 +198,7 @@ export default function ProgressPage() {
                     Saving...
                   </>
                 ) : (
-                  'Log Weight'
+                  t.progress.logWeight
                 )}
               </Button>
             </TabsContent>
@@ -204,7 +206,7 @@ export default function ProgressPage() {
             <TabsContent value="measurements" className="space-y-4 pt-4">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="m-weight">Weight (kg)</Label>
+                  <Label htmlFor="m-weight">{t.progress.weight} ({t.progress.kg})</Label>
                   <Input
                     id="m-weight"
                     type="number"
@@ -217,7 +219,7 @@ export default function ProgressPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="bodyFat">Body Fat (%)</Label>
+                  <Label htmlFor="bodyFat">{t.progress.bodyFat} (%)</Label>
                   <Input
                     id="bodyFat"
                     type="number"
@@ -230,7 +232,7 @@ export default function ProgressPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="chest">Chest (cm)</Label>
+                  <Label htmlFor="chest">{t.progress.chest} ({t.progress.cm})</Label>
                   <Input
                     id="chest"
                     type="number"
@@ -243,7 +245,7 @@ export default function ProgressPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="waist">Waist (cm)</Label>
+                  <Label htmlFor="waist">{t.progress.waist} ({t.progress.cm})</Label>
                   <Input
                     id="waist"
                     type="number"
@@ -256,7 +258,7 @@ export default function ProgressPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="hips">Hips (cm)</Label>
+                  <Label htmlFor="hips">{t.progress.hips} ({t.progress.cm})</Label>
                   <Input
                     id="hips"
                     type="number"
@@ -269,7 +271,7 @@ export default function ProgressPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="arms">Arms (cm)</Label>
+                  <Label htmlFor="arms">{t.progress.arms} ({t.progress.cm})</Label>
                   <Input
                     id="arms"
                     type="number"
@@ -282,7 +284,7 @@ export default function ProgressPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="thighs">Thighs (cm)</Label>
+                  <Label htmlFor="thighs">{t.progress.thighs} ({t.progress.cm})</Label>
                   <Input
                     id="thighs"
                     type="number"
@@ -307,7 +309,7 @@ export default function ProgressPage() {
                     Saving...
                   </>
                 ) : (
-                  'Log Measurements'
+                  t.progress.logMeasurements
                 )}
               </Button>
             </TabsContent>
@@ -340,7 +342,7 @@ export default function ProgressPage() {
                 '--'
               )}
             </p>
-            <p className="text-sm text-muted-foreground">Current Weight</p>
+            <p className="text-sm text-muted-foreground">{t.progress.weight}</p>
           </CardContent>
         </Card>
 
@@ -366,7 +368,7 @@ export default function ProgressPage() {
                 '--'
               )}
             </p>
-            <p className="text-sm text-muted-foreground">Waist</p>
+            <p className="text-sm text-muted-foreground">{t.progress.waist}</p>
           </CardContent>
         </Card>
 
@@ -401,16 +403,16 @@ export default function ProgressPage() {
 
       <Tabs defaultValue="weight">
         <TabsList>
-          <TabsTrigger value="weight">Weight</TabsTrigger>
-          <TabsTrigger value="measurements">Measurements</TabsTrigger>
-          <TabsTrigger value="strength">Strength</TabsTrigger>
-          <TabsTrigger value="photos">Photos</TabsTrigger>
+          <TabsTrigger value="weight">{t.progress.weight}</TabsTrigger>
+          <TabsTrigger value="measurements">{t.progress.measurements}</TabsTrigger>
+          <TabsTrigger value="strength">{t.progress.strength}</TabsTrigger>
+          <TabsTrigger value="photos">{t.progress.photos}</TabsTrigger>
         </TabsList>
 
         <TabsContent value="weight" className="space-y-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-base font-semibold">Weight Trend</CardTitle>
+              <CardTitle className="text-base font-semibold">{t.progress.weight}</CardTitle>
               <div className="flex items-center gap-2">
                 <Button
                   variant={timeRange === 'week' ? 'default' : 'ghost'}
@@ -443,8 +445,8 @@ export default function ProgressPage() {
               ) : !weightData || weightData.length === 0 ? (
                 <div className="flex h-64 flex-col items-center justify-center text-muted-foreground">
                   <Scale className="mb-2 h-12 w-12" />
-                  <p>No weight data yet</p>
-                  <p className="text-sm">Start logging your weight to see trends</p>
+                  <p>{t.progress.noData}</p>
+                  <p className="text-sm">{t.progress.startTracking}</p>
                 </div>
               ) : (
                 <>
@@ -498,7 +500,7 @@ export default function ProgressPage() {
 
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-base font-semibold">Weight History</CardTitle>
+              <CardTitle className="text-base font-semibold">{t.progress.weight}</CardTitle>
             </CardHeader>
             <CardContent>
               {weightLoading ? (
@@ -527,7 +529,7 @@ export default function ProgressPage() {
         <TabsContent value="measurements" className="space-y-4">
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-base font-semibold">Body Measurements</CardTitle>
+              <CardTitle className="text-base font-semibold">{t.progress.measurements}</CardTitle>
             </CardHeader>
             <CardContent>
               {measurementsLoading ? (
@@ -537,8 +539,8 @@ export default function ProgressPage() {
               ) : measurementFields.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-8 text-muted-foreground">
                   <Ruler className="mb-2 h-12 w-12" />
-                  <p>No measurements logged yet</p>
-                  <p className="text-sm">Start tracking your body measurements</p>
+                  <p>{t.progress.noData}</p>
+                  <p className="text-sm">{t.progress.startTracking}</p>
                 </div>
               ) : (
                 <div className="grid gap-4 md:grid-cols-2">
@@ -581,7 +583,7 @@ export default function ProgressPage() {
         <TabsContent value="strength" className="space-y-4">
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-base font-semibold">Personal Records</CardTitle>
+              <CardTitle className="text-base font-semibold">{t.progress.strength}</CardTitle>
             </CardHeader>
             <CardContent>
               {prsLoading ? (
@@ -591,8 +593,8 @@ export default function ProgressPage() {
               ) : !prsData || prsData.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-8 text-muted-foreground">
                   <TrendingUp className="mb-2 h-12 w-12" />
-                  <p>No personal records yet</p>
-                  <p className="text-sm">Complete workouts to track your PRs</p>
+                  <p>{t.progress.noData}</p>
+                  <p className="text-sm">{t.progress.startTracking}</p>
                 </div>
               ) : (
                 <div className="space-y-4">
@@ -622,14 +624,14 @@ export default function ProgressPage() {
         <TabsContent value="photos" className="space-y-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-base font-semibold">Progress Photos</CardTitle>
+              <CardTitle className="text-base font-semibold">{t.progress.photos}</CardTitle>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => toast({ title: 'Coming Soon', description: 'Progress photos will be available soon' })}
               >
                 <Camera className="mr-2 h-4 w-4" />
-                Add Photo
+                {t.progress.addPhoto}
               </Button>
             </CardHeader>
             <CardContent>

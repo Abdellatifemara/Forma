@@ -19,11 +19,25 @@
       "أنزل البار ببطء نحو منتصف صدرك",
       "ادفع البار للأعلى إلى وضع البداية"
     ],
-    "tips_en": ["Keep your shoulder blades pinched together", "Don't bounce the bar off your chest", "Keep your wrists straight"],
-    "tips_ar": ["أبقِ لوحي كتفك مضمومين معاً", "لا ترتد البار عن صدرك", "أبقِ معصميك مستقيمين"],
+    "tips_en": [
+      "Keep your shoulder blades pinched together",
+      "Don't bounce the bar off your chest",
+      "Keep your wrists straight"
+    ],
+    "tips_ar": [
+      "أبقِ لوحي كتفك مضمومين معاً",
+      "لا ترتد البار عن صدرك",
+      "أبقِ معصميك مستقيمين"
+    ],
     "primary_muscle": "CHEST",
-    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
-    "equipment": ["BARBELL", "BENCH"],
+    "secondary_muscles": [
+      "TRICEPS",
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BARBELL",
+      "BENCH"
+    ],
     "difficulty": "intermediate",
     "default_sets": 4,
     "default_reps": 8
@@ -48,11 +62,23 @@
       "أنزل البار إلى الجزء العلوي من صدرك",
       "ادفع البار للأعلى بقوة"
     ],
-    "tips_en": ["Focus on squeezing your upper chest at the top", "Keep your elbows at about 45 degrees"],
-    "tips_ar": ["ركز على ضغط الجزء العلوي من صدرك في القمة", "أبقِ مرفقيك بزاوية 45 درجة تقريباً"],
+    "tips_en": [
+      "Focus on squeezing your upper chest at the top",
+      "Keep your elbows at about 45 degrees"
+    ],
+    "tips_ar": [
+      "ركز على ضغط الجزء العلوي من صدرك في القمة",
+      "أبقِ مرفقيك بزاوية 45 درجة تقريباً"
+    ],
     "primary_muscle": "CHEST",
-    "secondary_muscles": ["SHOULDERS", "TRICEPS"],
-    "equipment": ["BARBELL", "BENCH"],
+    "secondary_muscles": [
+      "SHOULDERS",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL",
+      "BENCH"
+    ],
     "difficulty": "intermediate",
     "default_sets": 3,
     "default_reps": 10
@@ -77,11 +103,23 @@
       "أنزل الدمبلز ببطء لمستوى الصدر",
       "كرر العدد المطلوب"
     ],
-    "tips_en": ["Bring the dumbbells together at the top", "Keep your core tight throughout"],
-    "tips_ar": ["قرّب الدمبلز من بعضهما في القمة", "أبقِ جذعك مشدوداً طوال التمرين"],
+    "tips_en": [
+      "Bring the dumbbells together at the top",
+      "Keep your core tight throughout"
+    ],
+    "tips_ar": [
+      "قرّب الدمبلز من بعضهما في القمة",
+      "أبقِ جذعك مشدوداً طوال التمرين"
+    ],
     "primary_muscle": "CHEST",
-    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
-    "equipment": ["DUMBBELLS", "BENCH"],
+    "secondary_muscles": [
+      "TRICEPS",
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "DUMBBELLS",
+      "BENCH"
+    ],
     "difficulty": "beginner",
     "default_sets": 3,
     "default_reps": 10
@@ -106,43 +144,27 @@
       "ادفع نفسك للأعلى لوضع البداية",
       "أبقِ جذعك مشدوداً طوال الحركة"
     ],
-    "tips_en": ["Don't let your hips sag", "Keep your elbows at 45 degrees", "Breathe in going down, out going up"],
-    "tips_ar": ["لا تدع وركيك يتدلى", "أبقِ مرفقيك بزاوية 45 درجة", "تنفس عند النزول، أخرج عند الصعود"],
+    "tips_en": [
+      "Don't let your hips sag",
+      "Keep your elbows at 45 degrees",
+      "Breathe in going down, out going up"
+    ],
+    "tips_ar": [
+      "لا تدع وركيك يتدلى",
+      "أبقِ مرفقيك بزاوية 45 درجة",
+      "تنفس عند النزول، أخرج عند الصعود"
+    ],
     "primary_muscle": "CHEST",
-    "secondary_muscles": ["TRICEPS", "SHOULDERS"],
-    "equipment": ["BODYWEIGHT"],
+    "secondary_muscles": [
+      "TRICEPS",
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
     "difficulty": "beginner",
     "default_sets": 3,
     "default_reps": 15
-  },
-  {
-    "id": "back-deadlift",
-    "name_en": "Conventional Deadlift",
-    "name_ar": "رفعة الميتة",
-    "description_en": "The deadlift is the ultimate full-body strength exercise, working your back, legs, and core simultaneously.",
-    "description_ar": "رفعة الميتة هي تمرين القوة الشامل للجسم كله، تعمل على الظهر والأرجل والجذع في آن واحد.",
-    "instructions_en": [
-      "Stand with feet hip-width apart, bar over mid-foot",
-      "Bend down and grip the bar just outside your legs",
-      "Push your chest up and flatten your back",
-      "Drive through your heels and lift the bar",
-      "Stand tall with shoulders back, then lower with control"
-    ],
-    "instructions_ar": [
-      "قف مع القدمين بعرض الورك، البار فوق منتصف القدم",
-      "انحنِ وأمسك البار خارج ساقيك مباشرة",
-      "ارفع صدرك وافرد ظهرك",
-      "ادفع من كعبيك وارفع البار",
-      "قف منتصباً مع الكتفين للخلف، ثم أنزل بتحكم"
-    ],
-    "tips_en": ["Never round your lower back", "Keep the bar close to your body", "Lock out at the top"],
-    "tips_ar": ["لا تقوّس أسفل ظهرك أبداً", "أبقِ البار قريباً من جسمك", "اقفل في القمة"],
-    "primary_muscle": "BACK",
-    "secondary_muscles": ["HAMSTRINGS", "GLUTES"],
-    "equipment": ["BARBELL"],
-    "difficulty": "advanced",
-    "default_sets": 4,
-    "default_reps": 5
   },
   {
     "id": "back-pullup",
@@ -164,11 +186,23 @@
       "أنزل نفسك ببطء بتحكم",
       "افرد ذراعيك بالكامل في الأسفل"
     ],
-    "tips_en": ["Focus on pulling with your back, not arms", "Avoid swinging or kipping", "Squeeze your lats at the top"],
-    "tips_ar": ["ركز على السحب بظهرك لا ذراعيك", "تجنب التأرجح", "اضغط اللاتس في القمة"],
+    "tips_en": [
+      "Focus on pulling with your back, not arms",
+      "Avoid swinging or kipping",
+      "Squeeze your lats at the top"
+    ],
+    "tips_ar": [
+      "ركز على السحب بظهرك لا ذراعيك",
+      "تجنب التأرجح",
+      "اضغط اللاتس في القمة"
+    ],
     "primary_muscle": "BACK",
-    "secondary_muscles": ["BICEPS"],
-    "equipment": ["PULL_UP_BAR"],
+    "secondary_muscles": [
+      "BICEPS"
+    ],
+    "equipment": [
+      "PULL_UP_BAR"
+    ],
     "difficulty": "intermediate",
     "default_sets": 4,
     "default_reps": 8
@@ -193,11 +227,23 @@
       "اضغط اللاتس في الأسفل",
       "أعد البار ببطء بتحكم"
     ],
-    "tips_en": ["Don't lean back too much", "Pull with your elbows, not your hands", "Keep your chest up"],
-    "tips_ar": ["لا تميل للخلف كثيراً", "اسحب بمرفقيك لا يديك", "أبقِ صدرك مرتفعاً"],
+    "tips_en": [
+      "Don't lean back too much",
+      "Pull with your elbows, not your hands",
+      "Keep your chest up"
+    ],
+    "tips_ar": [
+      "لا تميل للخلف كثيراً",
+      "اسحب بمرفقيك لا يديك",
+      "أبقِ صدرك مرتفعاً"
+    ],
     "primary_muscle": "BACK",
-    "secondary_muscles": ["BICEPS"],
-    "equipment": ["CABLES"],
+    "secondary_muscles": [
+      "BICEPS"
+    ],
+    "equipment": [
+      "CABLES"
+    ],
     "difficulty": "beginner",
     "default_sets": 3,
     "default_reps": 12
@@ -222,11 +268,24 @@
       "أنزل بثني الركبتين ودفع الوركين للخلف",
       "انزل حتى تصبح الفخذين موازية، ثم ادفع للأعلى"
     ],
-    "tips_en": ["Keep your knees tracking over your toes", "Don't let your knees cave in", "Keep your heels on the ground"],
-    "tips_ar": ["أبقِ ركبتيك تتبع أصابع قدميك", "لا تدع ركبتيك تنهار للداخل", "أبقِ كعبيك على الأرض"],
+    "tips_en": [
+      "Keep your knees tracking over your toes",
+      "Don't let your knees cave in",
+      "Keep your heels on the ground"
+    ],
+    "tips_ar": [
+      "أبقِ ركبتيك تتبع أصابع قدميك",
+      "لا تدع ركبتيك تنهار للداخل",
+      "أبقِ كعبيك على الأرض"
+    ],
     "primary_muscle": "QUADRICEPS",
-    "secondary_muscles": ["GLUTES", "HAMSTRINGS"],
-    "equipment": ["BARBELL"],
+    "secondary_muscles": [
+      "GLUTES",
+      "HAMSTRINGS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
     "difficulty": "intermediate",
     "default_sets": 4,
     "default_reps": 8
@@ -251,11 +310,25 @@
       "أنزل حتى تشعر بشد في الهامسترينج",
       "ادفع وركيك للأمام للعودة للوقوف"
     ],
-    "tips_en": ["Keep the bar close to your legs", "Feel the stretch in your hamstrings", "Squeeze your glutes at the top"],
-    "tips_ar": ["أبقِ البار قريباً من ساقيك", "اشعر بالشد في الهامسترينج", "اضغط المؤخرة في القمة"],
+    "tips_en": [
+      "Keep the bar close to your legs",
+      "Feel the stretch in your hamstrings",
+      "Squeeze your glutes at the top"
+    ],
+    "tips_ar": [
+      "أبقِ البار قريباً من ساقيك",
+      "اشعر بالشد في الهامسترينج",
+      "اضغط المؤخرة في القمة"
+    ],
     "primary_muscle": "HAMSTRINGS",
-    "secondary_muscles": ["GLUTES", "LOWER_BACK"],
-    "equipment": ["BARBELL", "DUMBBELLS"],
+    "secondary_muscles": [
+      "GLUTES",
+      "LOWER_BACK"
+    ],
+    "equipment": [
+      "BARBELL",
+      "DUMBBELLS"
+    ],
     "difficulty": "intermediate",
     "default_sets": 4,
     "default_reps": 10
@@ -280,11 +353,23 @@
       "اقفل في القمة مع فرد الذراعين بالكامل",
       "أنزل البار لارتفاع الكتف بتحكم"
     ],
-    "tips_en": ["Keep your core tight", "Don't arch your back excessively", "Push your head through at the top"],
-    "tips_ar": ["أبقِ جذعك مشدوداً", "لا تقوّس ظهرك بشكل مفرط", "ادفع رأسك للأمام في القمة"],
+    "tips_en": [
+      "Keep your core tight",
+      "Don't arch your back excessively",
+      "Push your head through at the top"
+    ],
+    "tips_ar": [
+      "أبقِ جذعك مشدوداً",
+      "لا تقوّس ظهرك بشكل مفرط",
+      "ادفع رأسك للأمام في القمة"
+    ],
     "primary_muscle": "SHOULDERS",
-    "secondary_muscles": ["TRICEPS"],
-    "equipment": ["BARBELL"],
+    "secondary_muscles": [
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BARBELL"
+    ],
     "difficulty": "intermediate",
     "default_sets": 4,
     "default_reps": 8
@@ -309,10 +394,20 @@
       "توقف لحظة في القمة",
       "أنزل ببطء لوضع البداية"
     ],
-    "tips_en": ["Lead with your elbows", "Don't swing the weights", "Control the negative"],
-    "tips_ar": ["قُد بمرفقيك", "لا تأرجح الأوزان", "تحكم في النزول"],
+    "tips_en": [
+      "Lead with your elbows",
+      "Don't swing the weights",
+      "Control the negative"
+    ],
+    "tips_ar": [
+      "قُد بمرفقيك",
+      "لا تأرجح الأوزان",
+      "تحكم في النزول"
+    ],
     "primary_muscle": "SHOULDERS",
-    "equipment": ["DUMBBELLS"],
+    "equipment": [
+      "DUMBBELLS"
+    ],
     "difficulty": "beginner",
     "default_sets": 4,
     "default_reps": 15
@@ -337,10 +432,20 @@
       "اثنِ البار للأعلى بثني مرفقيك",
       "أنزل البار ببطء بتحكم"
     ],
-    "tips_en": ["Don't swing your body", "Squeeze at the top", "Keep your wrists straight"],
-    "tips_ar": ["لا تأرجح جسمك", "اضغط في القمة", "أبقِ معصميك مستقيمين"],
+    "tips_en": [
+      "Don't swing your body",
+      "Squeeze at the top",
+      "Keep your wrists straight"
+    ],
+    "tips_ar": [
+      "لا تأرجح جسمك",
+      "اضغط في القمة",
+      "أبقِ معصميك مستقيمين"
+    ],
     "primary_muscle": "BICEPS",
-    "equipment": ["BARBELL"],
+    "equipment": [
+      "BARBELL"
+    ],
     "difficulty": "beginner",
     "default_sets": 3,
     "default_reps": 10
@@ -365,10 +470,20 @@
       "ادفع للأسفل حتى تفرد ذراعيك بالكامل",
       "عد ببطء لوضع البداية"
     ],
-    "tips_en": ["Keep your upper arms stationary", "Squeeze your triceps at the bottom", "Don't lean forward"],
-    "tips_ar": ["أبقِ أعلى ذراعيك ثابتاً", "اضغط الترايسبس في الأسفل", "لا تميل للأمام"],
+    "tips_en": [
+      "Keep your upper arms stationary",
+      "Squeeze your triceps at the bottom",
+      "Don't lean forward"
+    ],
+    "tips_ar": [
+      "أبقِ أعلى ذراعيك ثابتاً",
+      "اضغط الترايسبس في الأسفل",
+      "لا تميل للأمام"
+    ],
     "primary_muscle": "TRICEPS",
-    "equipment": ["CABLES"],
+    "equipment": [
+      "CABLES"
+    ],
     "difficulty": "beginner",
     "default_sets": 3,
     "default_reps": 12
@@ -393,10 +508,20 @@
       "أبقِ مؤخرتك مضغوطة وساقيك مستقيمتين",
       "حافظ على الوضع للوقت المحدد"
     ],
-    "tips_en": ["Don't let your hips sag", "Don't pike your hips up", "Breathe steadily"],
-    "tips_ar": ["لا تدع وركيك يتدلى", "لا ترفع وركيك للأعلى", "تنفس بثبات"],
+    "tips_en": [
+      "Don't let your hips sag",
+      "Don't pike your hips up",
+      "Breathe steadily"
+    ],
+    "tips_ar": [
+      "لا تدع وركيك يتدلى",
+      "لا ترفع وركيك للأعلى",
+      "تنفس بثبات"
+    ],
     "primary_muscle": "ABS",
-    "equipment": ["BODYWEIGHT"],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
     "difficulty": "beginner",
     "is_time_based": true,
     "default_duration": 60
@@ -421,10 +546,20 @@
       "أدِّ ضغطة (اختياري)",
       "اقفز بقدميك للأمام واقفز للأعلى بقوة مع الذراعين فوق الرأس"
     ],
-    "tips_en": ["Maintain a quick pace", "Land softly on your feet", "Keep your core engaged"],
-    "tips_ar": ["حافظ على إيقاع سريع", "اهبط بنعومة على قدميك", "أبقِ جذعك مشدوداً"],
+    "tips_en": [
+      "Maintain a quick pace",
+      "Land softly on your feet",
+      "Keep your core engaged"
+    ],
+    "tips_ar": [
+      "حافظ على إيقاع سريع",
+      "اهبط بنعومة على قدميك",
+      "أبقِ جذعك مشدوداً"
+    ],
     "primary_muscle": "CARDIO",
-    "equipment": ["BODYWEIGHT"],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
     "difficulty": "intermediate",
     "default_sets": 3,
     "default_reps": 10

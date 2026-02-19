@@ -27,6 +27,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
 import { usersApi } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 const steps = [
   { id: 'goal', title: 'Your Goal', icon: Target, description: 'What brings you here?' },
@@ -97,6 +98,7 @@ const equipmentOptions = [
 ];
 
 export default function OnboardingPage() {
+  const { t } = useLanguage();
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
@@ -206,7 +208,7 @@ export default function OnboardingPage() {
             <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
               FORMA
             </h2>
-            <p className="text-muted-foreground mt-1">Let's personalize your experience</p>
+            <p className="text-muted-foreground mt-1">{t.onboarding.letsGetStarted}</p>
           </div>
 
           {/* Step Indicators */}
@@ -282,8 +284,8 @@ export default function OnboardingPage() {
               {currentStep === 0 && (
                 <div className="space-y-6">
                   <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-2">What's your main fitness goal?</h1>
-                    <p className="text-muted-foreground">Choose the goal that matters most to you</p>
+                    <h1 className="text-2xl font-bold mb-2">{t.onboarding.whatIsYourGoal}</h1>
+                    <p className="text-muted-foreground">{t.onboarding.letsGetStarted}</p>
                   </div>
                   <div className="grid gap-3">
                     {goals.map((goal) => {
@@ -328,7 +330,7 @@ export default function OnboardingPage() {
               {currentStep === 1 && (
                 <div className="space-y-6">
                   <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-2">What's your fitness experience?</h1>
+                    <h1 className="text-2xl font-bold mb-2">{t.onboarding.fitnessLevel}</h1>
                     <p className="text-muted-foreground">We'll tailor your workouts accordingly</p>
                   </div>
                   <div className="grid gap-4">
@@ -559,7 +561,7 @@ export default function OnboardingPage() {
               className="text-muted-foreground hover:text-foreground"
             >
               <ChevronLeft className="mr-2 h-4 w-4" />
-              Back
+              {t.common.back}
             </Button>
 
             {currentStep < steps.length - 1 ? (
@@ -568,7 +570,7 @@ export default function OnboardingPage() {
                 disabled={!canProceed()}
                 className="btn-primary"
               >
-                Continue
+                {t.common.continue}
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
             ) : (
@@ -585,7 +587,7 @@ export default function OnboardingPage() {
                 ) : (
                   <>
                     <Sparkles className="mr-2 h-4 w-4" />
-                    Start My Journey
+                    {t.onboarding.complete}
                   </>
                 )}
               </Button>
@@ -598,7 +600,7 @@ export default function OnboardingPage() {
               onClick={() => router.push('/dashboard')}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Skip for now
+              {t.onboarding.skip}
             </button>
           </div>
         </div>

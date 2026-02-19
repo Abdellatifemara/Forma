@@ -214,6 +214,21 @@ export const authApi = {
   },
 
   getMe: () => api.get<{ user: User }>('/auth/me'),
+
+  forgotPassword: async (email: string): Promise<{ message: string }> => {
+    const response = await fetch(`${API_BASE_URL}/auth/forgot-password`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: 'Request failed' }));
+      throw new Error(error.message || 'Failed to send reset email');
+    }
+
+    return response.json();
+  },
 };
 
 // Users API
@@ -1794,6 +1809,8 @@ interface Trainer {
     comment?: string;
     program?: string;
   }>;
+  tier?: 'REGULAR' | 'TRUSTED_PARTNER';
+  acceptingClients?: boolean;
 }
 
 interface TrainerSearchParams {

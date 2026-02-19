@@ -72,18 +72,6 @@
     "is_egyptian": true
   },
   {
-    "name_en": "Hawawshi",
-    "name_ar": "حواوشي",
-    "category": "PROTEIN",
-    "serving_size_g": 250,
-    "calories": 520,
-    "protein_g": 28,
-    "carbs_g": 42,
-    "fat_g": 26,
-    "fiber_g": 3,
-    "is_egyptian": true
-  },
-  {
     "name_en": "Kofta",
     "name_ar": "كفتة",
     "category": "PROTEIN",
@@ -120,18 +108,6 @@
     "is_egyptian": true
   },
   {
-    "name_en": "Aish Baladi",
-    "name_ar": "عيش بلدي",
-    "category": "CARBS",
-    "serving_size_g": 90,
-    "calories": 210,
-    "protein_g": 7,
-    "carbs_g": 42,
-    "fat_g": 1,
-    "fiber_g": 6,
-    "is_egyptian": true
-  },
-  {
     "name_en": "Gibna Areesh",
     "name_ar": "جبنة قريش",
     "category": "DAIRY",
@@ -144,18 +120,6 @@
     "is_egyptian": true
   },
   {
-    "name_en": "Basbousa",
-    "name_ar": "بسبوسة",
-    "category": "DESSERTS",
-    "serving_size_g": 100,
-    "calories": 380,
-    "protein_g": 4,
-    "carbs_g": 52,
-    "fat_g": 18,
-    "fiber_g": 1,
-    "is_egyptian": true
-  },
-  {
     "name_en": "Konafa",
     "name_ar": "كنافة",
     "category": "DESSERTS",
@@ -165,18 +129,6 @@
     "carbs_g": 68,
     "fat_g": 24,
     "fiber_g": 1,
-    "is_egyptian": true
-  },
-  {
-    "name_en": "Om Ali",
-    "name_ar": "أم علي",
-    "category": "DESSERTS",
-    "serving_size_g": 200,
-    "calories": 480,
-    "protein_g": 10,
-    "carbs_g": 58,
-    "fat_g": 24,
-    "fiber_g": 2,
     "is_egyptian": true
   },
   {
@@ -213,18 +165,6 @@
     "carbs_g": 38,
     "fat_g": 16,
     "fiber_g": 8,
-    "is_egyptian": true
-  },
-  {
-    "name_en": "Shakshuka",
-    "name_ar": "شكشوكة",
-    "category": "PROTEIN",
-    "serving_size_g": 200,
-    "calories": 220,
-    "protein_g": 14,
-    "carbs_g": 12,
-    "fat_g": 14,
-    "fiber_g": 3,
     "is_egyptian": true
   },
   {

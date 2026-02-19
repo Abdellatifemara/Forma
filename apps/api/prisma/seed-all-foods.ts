@@ -37,9 +37,10 @@ interface FoodData {
   availableAt?: string[];
 }
 
-function normalizeFood(raw: FoodData, index: number): any {
+function normalizeFood(raw: FoodData, index: number, filePrefix?: string): any {
   // Handle both snake_case and camelCase field names
-  const externalId = raw.id || raw.externalId || `FOOD${String(index).padStart(5, '0')}`;
+  const prefix = filePrefix || 'FOOD';
+  const externalId = raw.id || raw.externalId || `${prefix}-${String(index).padStart(4, '0')}`;
   const nameEn = raw.name_en || raw.nameEn || 'Unknown Food';
   const nameAr = raw.name_ar || raw.nameAr || nameEn;
   const brandEn = raw.brand_en || raw.brandEn || null;
@@ -107,18 +108,27 @@ async function main() {
   const seenNames = new Set<string>();
   let skipped = 0;
 
-  // Load from seed-data directory
-  console.log('\n📂 Loading from seed-data/...');
-  const jsonFiles = [
-    'egyptian-foods.json',
-    'egyptian-foods-complete.json',
-    'egyptian-foods-part2.json',
-    'egyptian-foods-part3.json',
-    'expanded-foods.json',
-    'parsed-foods.json',
-    'parsed-supplements.json',
-    'parsed-food-docs.json'
+  // Auto-discover all food JSON files in seed-data directory
+  // Exclude exercise, faq, program, guide, and workout files
+  const exerciseKeywords = [
+    'exercise', 'powerlifting', 'yoga', 'calisthenics', 'stretching',
+    'crossfit', 'olympic', 'resistance-band', 'machine-cable', 'core-abs',
+    'mobility-rehab', 'dumbbell-exercises', 'barbell-compound', 'sport-conditioning',
+    'seniors-beginners'
   ];
+  const nonFoodKeywords = ['faq', 'program', 'guide', 'workout'];
+  const allKeywordsToExclude = [...exerciseKeywords, ...nonFoodKeywords];
+
+  console.log('\n📂 Auto-discovering food files from seed-data/...');
+  const allJsonInDir = fs.existsSync(seedDataDir)
+    ? fs.readdirSync(seedDataDir).filter(f => {
+        if (!f.endsWith('.json')) return false;
+        const lower = f.toLowerCase();
+        return !allKeywordsToExclude.some(kw => lower.includes(kw));
+      })
+    : [];
+  const jsonFiles = allJsonInDir.sort();
+  console.log(`  Found ${jsonFiles.length} food/nutrition JSON files\n`);
 
   for (const filename of jsonFiles) {
     const filePath = path.join(seedDataDir, filename);
@@ -128,10 +138,13 @@ async function main() {
         const data = JSON.parse(content);
         const items: FoodData[] = Array.isArray(data) ? data : [data];
 
+        // Generate a file prefix for unique IDs
+        const filePrefix = filename.replace('.json', '').replace(/[^a-zA-Z0-9]/g, '-').substring(0, 20).toUpperCase();
+
         let fileAdded = 0;
         for (let i = 0; i < items.length; i++) {
           const item = items[i];
-          const normalized = normalizeFood(item, allFoods.length + 1);
+          const normalized = normalizeFood(item, i + 1, filePrefix);
 
           // Skip duplicates by ID
           if (seenIds.has(normalized.externalId)) {

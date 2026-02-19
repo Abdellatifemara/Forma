@@ -21,6 +21,7 @@ import { cn } from '@/lib/utils';
 import { useResearchTests, useResearchTest, useSubmitTest } from '@/hooks/use-research';
 import { SurveyModal } from '@/components/research/survey-modal';
 import type { TestDetail } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 // Survey categories with icons matching the new comprehensive surveys
 const surveyCategories: Record<string, { icon: React.ReactNode; color: string; bgColor: string }> = {
@@ -74,6 +75,7 @@ const defaultCategory = {
 };
 
 export default function PersonalizationPage() {
+  const { t } = useLanguage();
   const { data, isLoading, error } = useResearchTests();
   const [selectedTest, setSelectedTest] = useState<string | null>(null);
   const [activeTest, setActiveTest] = useState<TestDetail | null>(null);
@@ -129,9 +131,9 @@ export default function PersonalizationPage() {
               <ClipboardList className="h-8 w-8 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold">Personalize Your Experience</h1>
+              <h1 className="text-2xl font-bold">{t.tests.title}</h1>
               <p className="text-muted-foreground">
-                Answer a few questions to get tailored recommendations
+                {t.tests.subtitle}
               </p>
             </div>
           </div>
@@ -140,7 +142,7 @@ export default function PersonalizationPage() {
           <div className="mt-6">
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm text-muted-foreground">Personalization progress</span>
-              <span className="text-sm font-medium">{completedCount}/{totalCount} completed</span>
+              <span className="text-sm font-medium">{completedCount}/{totalCount} {t.achievements.completed}</span>
             </div>
             <div className="h-3 bg-muted rounded-full overflow-hidden">
               <div

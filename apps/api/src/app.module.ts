@@ -12,27 +12,31 @@ import { StatsModule } from './modules/stats/stats.module';
 import { HealthModule } from './modules/health/health.module';
 import { VideosModule } from './modules/videos/videos.module';
 import { AiModule } from './modules/ai/ai.module';
-import { AdminModule } from './modules/admin/admin.module';
 import { ProgressModule } from './modules/progress/progress.module';
-import { AchievementsModule } from './modules/achievements/achievements.module';
 import { UploadModule } from './modules/upload/upload.module';
-import { ChatModule } from './modules/chat/chat.module';
 import { SettingsModule } from './modules/settings/settings.module';
-import { SquadsModule } from './modules/squads/squads.module';
-import { HealthDataModule } from './modules/health-data/health-data.module';
-import { BodyCompositionModule } from './modules/body-composition/body-composition.module';
-import { GamificationModule } from './modules/gamification/gamification.module';
-import { InjuryModificationsModule } from './modules/injury-modifications/injury-modifications.module';
-import { ProgramsModule } from './modules/programs/programs.module';
 import { SubscriptionsModule } from './modules/subscriptions/subscriptions.module';
-import { PaymentsModule } from './modules/payments/payments.module';
-import { AnalyticsModule } from './modules/analytics/analytics.module';
-import { CommissionsModule } from './modules/commissions/commissions.module';
-import { ResearchModule } from './modules/research/research.module';
 import { UserProfileModule } from './modules/user-profile/user-profile.module';
-import { HealthMetricsModule } from './modules/health-metrics/health-metrics.module';
-import { CheckInsModule } from './modules/check-ins/check-ins.module';
-import { ScheduledCallsModule } from './modules/scheduled-calls/scheduled-calls.module';
+
+// V1.5 modules - re-enabled for launch
+import { ChatModule } from './modules/chat/chat.module';
+import { PaymentsModule } from './modules/payments/payments.module';
+import { ProgramsModule } from './modules/programs/programs.module';
+
+// V2+ modules - deferred for launch (code kept, just not loaded on startup)
+// import { AdminModule } from './modules/admin/admin.module';
+// import { AchievementsModule } from './modules/achievements/achievements.module';
+// import { SquadsModule } from './modules/squads/squads.module';
+// import { HealthDataModule } from './modules/health-data/health-data.module';
+// import { BodyCompositionModule } from './modules/body-composition/body-composition.module';
+// import { GamificationModule } from './modules/gamification/gamification.module';
+// import { InjuryModificationsModule } from './modules/injury-modifications/injury-modifications.module';
+// import { AnalyticsModule } from './modules/analytics/analytics.module';
+// import { CommissionsModule } from './modules/commissions/commissions.module';
+// import { ResearchModule } from './modules/research/research.module';
+// import { HealthMetricsModule } from './modules/health-metrics/health-metrics.module';
+// import { CheckInsModule } from './modules/check-ins/check-ins.module';
+// import { ScheduledCallsModule } from './modules/scheduled-calls/scheduled-calls.module';
 
 @Module({
   imports: [
@@ -65,37 +69,41 @@ import { ScheduledCallsModule } from './modules/scheduled-calls/scheduled-calls.
     PrismaModule,
     HealthModule,
 
-    // Feature modules
+    // V1 feature modules (16 modules)
     AuthModule,
     UsersModule,
+    UserProfileModule,
     ExercisesModule,
     WorkoutsModule,
     NutritionModule,
+    ProgressModule,
+    AiModule,
+    SettingsModule,
+    UploadModule,
+    SubscriptionsModule,
     TrainersModule,
     StatsModule,
     VideosModule,
-    AiModule,
-    AdminModule,
-    ProgressModule,
-    AchievementsModule,
-    UploadModule,
+
+    // V1.5 modules - re-enabled for launch
     ChatModule,
-    SettingsModule,
-    SquadsModule,
-    HealthDataModule,
-    BodyCompositionModule,
-    GamificationModule,
-    InjuryModificationsModule,
-    ProgramsModule,
-    SubscriptionsModule,
     PaymentsModule,
-    AnalyticsModule,
-    CommissionsModule,
-    ResearchModule,
-    UserProfileModule,
-    HealthMetricsModule,
-    CheckInsModule,
-    ScheduledCallsModule,
+    ProgramsModule,
+
+    // V2+ modules - uncomment when ready
+    // AdminModule,
+    // AchievementsModule,
+    // SquadsModule,
+    // HealthDataModule,
+    // BodyCompositionModule,
+    // GamificationModule,
+    // InjuryModificationsModule,
+    // AnalyticsModule,
+    // CommissionsModule,
+    // ResearchModule,
+    // HealthMetricsModule,
+    // CheckInsModule,
+    // ScheduledCallsModule,
   ],
 })
 export class AppModule {}

@@ -13,7 +13,10 @@
     "fiber_g": 2,
     "ingredients": "Kofta, rice, salad",
     "is_egyptian": true,
-    "available_at": ["Restaurants", "Home"],
+    "available_at": [
+      "Restaurants",
+      "Home"
+    ],
     "price_egp_min": 100,
     "price_egp_max": 180
   },
@@ -31,7 +34,11 @@
     "fiber_g": 0,
     "ingredients": "Lamb cubes, onion, spices",
     "is_egyptian": true,
-    "available_at": ["Abou Shakra", "El Dahan", "Restaurants"],
+    "available_at": [
+      "Abou Shakra",
+      "El Dahan",
+      "Restaurants"
+    ],
     "price_egp_min": 120,
     "price_egp_max": 220
   },
@@ -49,7 +56,11 @@
     "fiber_g": 1,
     "ingredients": "Kofta, kebab, chicken, liver, sausage",
     "is_egyptian": true,
-    "available_at": ["Abou Shakra", "El Dahan", "Andrea"],
+    "available_at": [
+      "Abou Shakra",
+      "El Dahan",
+      "Andrea"
+    ],
     "price_egp_min": 180,
     "price_egp_max": 350
   },
@@ -67,7 +78,10 @@
     "fiber_g": 0,
     "ingredients": "Chicken, spices, lemon",
     "is_egyptian": true,
-    "available_at": ["Andrea", "Restaurants"],
+    "available_at": [
+      "Andrea",
+      "Restaurants"
+    ],
     "price_egp_min": 60,
     "price_egp_max": 120
   },
@@ -85,7 +99,10 @@
     "fiber_g": 0,
     "ingredients": "Chicken, spices, lemon",
     "is_egyptian": true,
-    "available_at": ["Andrea", "Restaurants"],
+    "available_at": [
+      "Andrea",
+      "Restaurants"
+    ],
     "price_egp_min": 100,
     "price_egp_max": 200
   },
@@ -103,7 +120,10 @@
     "fiber_g": 0,
     "ingredients": "Chicken, oil, spices",
     "is_egyptian": true,
-    "available_at": ["Andrea", "Restaurants"],
+    "available_at": [
+      "Andrea",
+      "Restaurants"
+    ],
     "price_egp_min": 65,
     "price_egp_max": 130
   },
@@ -121,7 +141,11 @@
     "fiber_g": 2,
     "ingredients": "Chicken shawarma, bread, tahini, pickles",
     "is_egyptian": true,
-    "available_at": ["Shawarmer", "Street Vendors", "Restaurants"],
+    "available_at": [
+      "Shawarmer",
+      "Street Vendors",
+      "Restaurants"
+    ],
     "price_egp_min": 40,
     "price_egp_max": 85
   },
@@ -139,7 +163,11 @@
     "fiber_g": 2,
     "ingredients": "Beef shawarma, bread, tahini, pickles",
     "is_egyptian": true,
-    "available_at": ["Shawarmer", "Street Vendors", "Restaurants"],
+    "available_at": [
+      "Shawarmer",
+      "Street Vendors",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
     "price_egp_max": 100
   },
@@ -157,27 +185,11 @@
     "fiber_g": 3,
     "ingredients": "Shawarma, rice, salad, tahini",
     "is_egyptian": true,
-    "available_at": ["Restaurants"],
+    "available_at": [
+      "Restaurants"
+    ],
     "price_egp_min": 90,
     "price_egp_max": 170
-  },
-  {
-    "id": "EGY0060",
-    "name_en": "Kebda Iskandarani Sandwich",
-    "name_ar": "ساندوتش كبدة إسكندراني",
-    "category": "TRADITIONAL",
-    "subcategory": "Street Food",
-    "serving_size_g": 200,
-    "calories": 380,
-    "protein_g": 28,
-    "carbs_g": 30,
-    "fat_g": 18,
-    "fiber_g": 2,
-    "ingredients": "Liver, peppers, onion, garlic, bread",
-    "is_egyptian": true,
-    "available_at": ["Street Vendors", "Gad"],
-    "price_egp_min": 30,
-    "price_egp_max": 65
   },
   {
     "id": "EGY0061",
@@ -193,7 +205,10 @@
     "fiber_g": 2,
     "ingredients": "Liver, rice, peppers, onion",
     "is_egyptian": true,
-    "available_at": ["Restaurants", "Home"],
+    "available_at": [
+      "Restaurants",
+      "Home"
+    ],
     "price_egp_min": 70,
     "price_egp_max": 130
   },
@@ -211,7 +226,10 @@
     "fiber_g": 2,
     "ingredients": "Oriental sausage, bread, peppers, onion",
     "is_egyptian": true,
-    "available_at": ["Street Vendors", "Gad"],
+    "available_at": [
+      "Street Vendors",
+      "Gad"
+    ],
     "price_egp_min": 35,
     "price_egp_max": 70
   },
@@ -229,7 +247,10 @@
     "fiber_g": 2,
     "ingredients": "Beef intestines, rice, herbs, spices",
     "is_egyptian": true,
-    "available_at": ["Traditional restaurants", "Home"],
+    "available_at": [
+      "Traditional restaurants",
+      "Home"
+    ],
     "price_egp_min": 60,
     "price_egp_max": 120
   },
@@ -247,7 +268,9 @@
     "fiber_g": 0,
     "ingredients": "Fermented mullet fish, salt",
     "is_egyptian": true,
-    "available_at": ["Specialty shops (Sham El Nessim)"],
+    "available_at": [
+      "Specialty shops (Sham El Nessim)"
+    ],
     "price_egp_min": 80,
     "price_egp_max": 200
   },
@@ -265,7 +288,10 @@
     "fiber_g": 0,
     "ingredients": "Smoked herring",
     "is_egyptian": true,
-    "available_at": ["Supermarkets", "Fish shops"],
+    "available_at": [
+      "Supermarkets",
+      "Fish shops"
+    ],
     "price_egp_min": 50,
     "price_egp_max": 120
   },
@@ -283,7 +309,10 @@
     "fiber_g": 0,
     "ingredients": "Salted sardines or mackerel",
     "is_egyptian": true,
-    "available_at": ["Fish shops", "Supermarkets"],
+    "available_at": [
+      "Fish shops",
+      "Supermarkets"
+    ],
     "price_egp_min": 40,
     "price_egp_max": 90
   },
@@ -301,7 +330,10 @@
     "fiber_g": 2,
     "ingredients": "Fish, rice, caramelized onion, spices",
     "is_egyptian": true,
-    "available_at": ["Coastal restaurants", "Home"],
+    "available_at": [
+      "Coastal restaurants",
+      "Home"
+    ],
     "price_egp_min": 90,
     "price_egp_max": 180
   },
@@ -319,7 +351,10 @@
     "fiber_g": 0,
     "ingredients": "Tilapia, lemon, spices",
     "is_egyptian": true,
-    "available_at": ["Fish restaurants", "Home"],
+    "available_at": [
+      "Fish restaurants",
+      "Home"
+    ],
     "price_egp_min": 60,
     "price_egp_max": 120
   },
@@ -337,7 +372,10 @@
     "fiber_g": 0,
     "ingredients": "Tilapia, flour, oil, spices",
     "is_egyptian": true,
-    "available_at": ["Fish restaurants", "Home"],
+    "available_at": [
+      "Fish restaurants",
+      "Home"
+    ],
     "price_egp_min": 50,
     "price_egp_max": 100
   },
@@ -355,7 +393,9 @@
     "fiber_g": 0,
     "ingredients": "Sea bass, lemon, herbs",
     "is_egyptian": true,
-    "available_at": ["Fish restaurants"],
+    "available_at": [
+      "Fish restaurants"
+    ],
     "price_egp_min": 150,
     "price_egp_max": 300
   },
@@ -373,7 +413,10 @@
     "fiber_g": 0,
     "ingredients": "Mullet, lemon, spices",
     "is_egyptian": true,
-    "available_at": ["Fish restaurants", "Home"],
+    "available_at": [
+      "Fish restaurants",
+      "Home"
+    ],
     "price_egp_min": 80,
     "price_egp_max": 160
   },
@@ -391,7 +434,9 @@
     "fiber_g": 0,
     "ingredients": "Shrimp, flour, oil, spices",
     "is_egyptian": true,
-    "available_at": ["Fish restaurants"],
+    "available_at": [
+      "Fish restaurants"
+    ],
     "price_egp_min": 120,
     "price_egp_max": 250
   },
@@ -409,7 +454,9 @@
     "fiber_g": 0,
     "ingredients": "Shrimp, garlic, lemon, olive oil",
     "is_egyptian": true,
-    "available_at": ["Fish restaurants"],
+    "available_at": [
+      "Fish restaurants"
+    ],
     "price_egp_min": 150,
     "price_egp_max": 300
   },
@@ -427,7 +474,9 @@
     "fiber_g": 0,
     "ingredients": "Squid, flour, oil",
     "is_egyptian": true,
-    "available_at": ["Fish restaurants"],
+    "available_at": [
+      "Fish restaurants"
+    ],
     "price_egp_min": 100,
     "price_egp_max": 200
   },
@@ -445,7 +494,9 @@
     "fiber_g": 0,
     "ingredients": "Squid, garlic, lemon, herbs",
     "is_egyptian": true,
-    "available_at": ["Fish restaurants"],
+    "available_at": [
+      "Fish restaurants"
+    ],
     "price_egp_min": 120,
     "price_egp_max": 220
   },
@@ -463,7 +514,10 @@
     "fiber_g": 3,
     "ingredients": "Penne pasta, ground beef, bechamel sauce, cheese",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
     "price_egp_max": 100
   },
@@ -481,7 +535,10 @@
     "fiber_g": 4,
     "ingredients": "Pasta, tomato sauce, garlic, oil",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 30,
     "price_egp_max": 60
   },
@@ -499,7 +556,10 @@
     "fiber_g": 3,
     "ingredients": "Lasagna sheets, ground beef, bechamel, cheese",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 60,
     "price_egp_max": 120
   },
@@ -517,7 +577,10 @@
     "fiber_g": 1,
     "ingredients": "Rice, vermicelli, ghee, salt",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 15,
     "price_egp_max": 35
   },
@@ -535,7 +598,10 @@
     "fiber_g": 2,
     "ingredients": "Rice, liver, nuts, raisins, ghee",
     "is_egyptian": true,
-    "available_at": ["Home", "Traditional restaurants"],
+    "available_at": [
+      "Home",
+      "Traditional restaurants"
+    ],
     "price_egp_min": 40,
     "price_egp_max": 80
   },
@@ -553,7 +619,10 @@
     "fiber_g": 5,
     "ingredients": "Okra, meat or chicken, tomato sauce, garlic",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
     "price_egp_max": 100
   },
@@ -571,7 +640,10 @@
     "fiber_g": 10,
     "ingredients": "White beans, meat, tomato sauce, onion",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
     "price_egp_max": 95
   },
@@ -589,7 +661,10 @@
     "fiber_g": 8,
     "ingredients": "Dried fava beans, garlic, coriander, cumin, oil",
     "is_egyptian": true,
-    "available_at": ["Home", "Street Vendors"],
+    "available_at": [
+      "Home",
+      "Street Vendors"
+    ],
     "price_egp_min": 15,
     "price_egp_max": 35
   },
@@ -607,7 +682,10 @@
     "fiber_g": 6,
     "ingredients": "Eggplant, ground beef, tomato sauce, peppers, onion",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 45,
     "price_egp_max": 90
   },
@@ -625,7 +703,9 @@
     "fiber_g": 4,
     "ingredients": "Potatoes, ground beef, onion, spices",
     "is_egyptian": true,
-    "available_at": ["Home"],
+    "available_at": [
+      "Home"
+    ],
     "price_egp_min": 40,
     "price_egp_max": 80
   },
@@ -643,7 +723,10 @@
     "fiber_g": 6,
     "ingredients": "Taro, meat, chard or silq, garlic, coriander",
     "is_egyptian": true,
-    "available_at": ["Home", "Traditional restaurants"],
+    "available_at": [
+      "Home",
+      "Traditional restaurants"
+    ],
     "price_egp_min": 50,
     "price_egp_max": 100
   },
@@ -661,7 +744,10 @@
     "fiber_g": 5,
     "ingredients": "Spinach, meat, garlic, coriander",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
     "price_egp_max": 95
   },
@@ -679,7 +765,9 @@
     "fiber_g": 8,
     "ingredients": "Potatoes, zucchini, eggplant, tomatoes, peppers, oil",
     "is_egyptian": true,
-    "available_at": ["Home"],
+    "available_at": [
+      "Home"
+    ],
     "price_egp_min": 40,
     "price_egp_max": 80
   },
@@ -697,7 +785,9 @@
     "fiber_g": 0,
     "ingredients": "Cow trotters, onion, spices",
     "is_egyptian": true,
-    "available_at": ["Traditional restaurants"],
+    "available_at": [
+      "Traditional restaurants"
+    ],
     "price_egp_min": 80,
     "price_egp_max": 160
   },
@@ -715,7 +805,9 @@
     "fiber_g": 3,
     "ingredients": "Langoustines, bread, rice, garlic sauce",
     "is_egyptian": true,
-    "available_at": ["Coastal restaurants"],
+    "available_at": [
+      "Coastal restaurants"
+    ],
     "price_egp_min": 200,
     "price_egp_max": 400
   },
@@ -733,7 +825,10 @@
     "fiber_g": 1,
     "ingredients": "Flour, ghee, butter",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Feteer shops"],
+    "available_at": [
+      "Bakeries",
+      "Feteer shops"
+    ],
     "price_egp_min": 40,
     "price_egp_max": 80
   },
@@ -751,7 +846,10 @@
     "fiber_g": 1,
     "ingredients": "Flour, ghee, butter, white cheese",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Feteer shops"],
+    "available_at": [
+      "Bakeries",
+      "Feteer shops"
+    ],
     "price_egp_min": 60,
     "price_egp_max": 120
   },
@@ -769,7 +867,10 @@
     "fiber_g": 1,
     "ingredients": "Flour, ghee, butter, honey",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Feteer shops"],
+    "available_at": [
+      "Bakeries",
+      "Feteer shops"
+    ],
     "price_egp_min": 55,
     "price_egp_max": 100
   },
@@ -787,7 +888,10 @@
     "fiber_g": 1,
     "ingredients": "Flour, ghee, butter, cream, sugar",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Feteer shops"],
+    "available_at": [
+      "Bakeries",
+      "Feteer shops"
+    ],
     "price_egp_min": 65,
     "price_egp_max": 130
   },
@@ -805,7 +909,10 @@
     "fiber_g": 2,
     "ingredients": "Flour, ghee, ground beef, onion, peppers",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Feteer shops"],
+    "available_at": [
+      "Bakeries",
+      "Feteer shops"
+    ],
     "price_egp_min": 80,
     "price_egp_max": 150
   },
@@ -823,7 +930,10 @@
     "fiber_g": 6,
     "ingredients": "Whole wheat flour, water, yeast, salt",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Everywhere"],
+    "available_at": [
+      "Bakeries",
+      "Everywhere"
+    ],
     "price_egp_min": 1,
     "price_egp_max": 3
   },
@@ -841,7 +951,10 @@
     "fiber_g": 1,
     "ingredients": "White flour, water, yeast, sugar, oil",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Everywhere"],
+    "available_at": [
+      "Bakeries",
+      "Everywhere"
+    ],
     "price_egp_min": 2,
     "price_egp_max": 5
   },
@@ -859,7 +972,9 @@
     "fiber_g": 3,
     "ingredients": "Flour, water, yeast, salt (sun-dried)",
     "is_egyptian": true,
-    "available_at": ["Upper Egypt bakeries"],
+    "available_at": [
+      "Upper Egypt bakeries"
+    ],
     "price_egp_min": 5,
     "price_egp_max": 15
   },
@@ -877,7 +992,9 @@
     "fiber_g": 4,
     "ingredients": "Fenugreek flour, corn flour, water",
     "is_egyptian": true,
-    "available_at": ["Upper Egypt bakeries"],
+    "available_at": [
+      "Upper Egypt bakeries"
+    ],
     "price_egp_min": 3,
     "price_egp_max": 8
   },
@@ -895,7 +1012,9 @@
     "fiber_g": 5,
     "ingredients": "Corn flour, water, salt",
     "is_egyptian": true,
-    "available_at": ["Upper Egypt bakeries"],
+    "available_at": [
+      "Upper Egypt bakeries"
+    ],
     "price_egp_min": 3,
     "price_egp_max": 10
   }

@@ -38,6 +38,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { healthMetricsApi, type HealthMetricType, type CreateHealthMetricData } from '@/lib/api';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/lib/i18n';
 
 const metricCategories = {
   body: {
@@ -338,6 +339,7 @@ function WeightChart() {
 }
 
 export default function HealthPage() {
+  const { t } = useLanguage();
   const [addDialogOpen, setAddDialogOpen] = useState(false);
   const [selectedMetricType, setSelectedMetricType] = useState<HealthMetricType | null>(null);
 
@@ -356,8 +358,8 @@ export default function HealthPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Health Metrics</h1>
-          <p className="text-muted-foreground">Track your health and body measurements</p>
+          <h1 className="text-3xl font-bold">{t.health.title}</h1>
+          <p className="text-muted-foreground">{t.health.subtitle}</p>
         </div>
         <Button className="btn-primary" onClick={() => {
           setSelectedMetricType(null);

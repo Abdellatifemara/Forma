@@ -28,6 +28,7 @@ import {
 } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
 import { trainersApi, type Trainer } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 const specializations = [
   'All',
@@ -42,6 +43,7 @@ const specializations = [
 ];
 
 export default function TrainersMarketplacePage() {
+  const { t } = useLanguage();
   const [trainers, setTrainers] = useState<Trainer[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -100,8 +102,10 @@ export default function TrainersMarketplacePage() {
       }
     });
 
-  const featuredTrainers = filteredTrainers.filter((t) => t.verified && (t.rating || 0) >= 4.5);
-  const regularTrainers = filteredTrainers.filter((t) => !featuredTrainers.includes(t));
+  // Trusted Partners first, then top-rated, then rest
+  const trustedPartners = filteredTrainers.filter((tr) => tr.tier === 'TRUSTED_PARTNER');
+  const featuredTrainers = filteredTrainers.filter((tr) => tr.tier !== 'TRUSTED_PARTNER' && tr.verified && (tr.rating || 0) >= 4.5);
+  const regularTrainers = filteredTrainers.filter((tr) => !trustedPartners.includes(tr) && !featuredTrainers.includes(tr));
 
   if (isLoading) {
     return (
@@ -125,9 +129,9 @@ export default function TrainersMarketplacePage() {
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold">Find a Trainer</h1>
+        <h1 className="text-2xl font-bold">{t.trainers.findTrainer}</h1>
         <p className="text-muted-foreground">
-          Connect with certified fitness professionals to accelerate your progress
+          {t.trainers.title}
         </p>
       </div>
 
@@ -137,7 +141,7 @@ export default function TrainersMarketplacePage() {
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
-              placeholder="Search trainers..."
+              placeholder={t.trainers.searchTrainers}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-10"
@@ -149,7 +153,7 @@ export default function TrainersMarketplacePage() {
             className={showFilters ? 'bg-primary text-primary-foreground' : ''}
           >
             <Filter className="h-4 w-4 mr-2" />
-            Filters
+            {t.common.filter}
           </Button>
         </div>
 
@@ -159,7 +163,7 @@ export default function TrainersMarketplacePage() {
             <CardContent className="pt-4 space-y-4">
               <div className="grid gap-4 md:grid-cols-3">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Specialization</label>
+                  <label className="text-sm font-medium">{t.trainers.specialization}</label>
                   <Select value={specializationFilter} onValueChange={setSpecializationFilter}>
                     <SelectTrigger>
                       <SelectValue />
@@ -175,7 +179,7 @@ export default function TrainersMarketplacePage() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Sort By</label>
+                  <label className="text-sm font-medium">{t.common.sort}</label>
                   <Select value={sortBy} onValueChange={setSortBy}>
                     <SelectTrigger>
                       <SelectValue />
@@ -192,7 +196,7 @@ export default function TrainersMarketplacePage() {
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium">
-                    Price Range (EGP/hour): {priceRange[0]} - {priceRange[1]}
+                    {t.trainers.priceRange} (EGP/hour): {priceRange[0]} - {priceRange[1]}
                   </label>
                   <Slider
                     value={priceRange}
@@ -234,7 +238,7 @@ export default function TrainersMarketplacePage() {
         <Card>
           <CardContent className="py-12 text-center">
             <Users className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-            <h3 className="text-lg font-semibold mb-2">No trainers found</h3>
+            <h3 className="text-lg font-semibold mb-2">{t.trainers.noTrainers}</h3>
             <p className="text-muted-foreground">
               {searchQuery || specializationFilter !== 'All'
                 ? 'Try adjusting your search or filters'
@@ -242,6 +246,22 @@ export default function TrainersMarketplacePage() {
             </p>
           </CardContent>
         </Card>
+      )}
+
+      {/* Trusted Partners */}
+      {trustedPartners.length > 0 && (
+        <div className="space-y-4">
+          <h2 className="text-lg font-semibold flex items-center gap-2">
+            <Award className="h-5 w-5 text-amber-500" />
+            Trusted Partners
+          </h2>
+          <p className="text-sm text-muted-foreground -mt-2">Premium trainers - their clients get free Premium access</p>
+          <div className="grid gap-4 md:grid-cols-2">
+            {trustedPartners.map((trainer) => (
+              <TrainerCard key={trainer.id} trainer={trainer} trusted />
+            ))}
+          </div>
+        </div>
       )}
 
       {/* Featured Trainers */}
@@ -276,15 +296,16 @@ export default function TrainersMarketplacePage() {
   );
 }
 
-function TrainerCard({ trainer, featured = false }: { trainer: Trainer; featured?: boolean }) {
+function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: Trainer; featured?: boolean; trusted?: boolean }) {
   const name = trainer.user?.firstName && trainer.user?.lastName
     ? `${trainer.user.firstName} ${trainer.user.lastName}`
     : trainer.user?.displayName || 'Trainer';
   const initials = name.split(' ').map(n => n[0]).join('').toUpperCase();
+  const isTrusted = trusted || trainer.tier === 'TRUSTED_PARTNER';
 
   return (
     <Link href={`/trainers/${trainer.id}`}>
-      <Card className={`cursor-pointer transition-all hover:border-primary/50 ${featured ? 'border-yellow-500/30 bg-yellow-500/5' : ''}`}>
+      <Card className={`cursor-pointer transition-all hover:border-primary/50 ${isTrusted ? 'border-amber-500/40 bg-amber-500/5' : featured ? 'border-yellow-500/30 bg-yellow-500/5' : ''}`}>
         <CardContent className="pt-6">
           <div className="flex gap-4">
             <Avatar className="h-16 w-16 border-2 border-primary/30">
@@ -296,7 +317,13 @@ function TrainerCard({ trainer, featured = false }: { trainer: Trainer; featured
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 mb-1">
                 <h3 className="font-semibold truncate">{name}</h3>
-                {featured && (
+                {isTrusted && (
+                  <Badge className="bg-amber-500/20 text-amber-600 border-amber-500/50">
+                    <Award className="h-3 w-3 mr-1" />
+                    Trusted Partner
+                  </Badge>
+                )}
+                {featured && !isTrusted && (
                   <Badge className="bg-yellow-500/20 text-yellow-600 border-yellow-500/50">
                     <Star className="h-3 w-3 mr-1 fill-current" />
                     Top Rated
