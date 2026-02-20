@@ -25,33 +25,36 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { cn } from '@/lib/utils';
 import { programsApi } from '@/lib/api';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 type Step = 'basics' | 'schedule' | 'goal' | 'review';
 
 const goals = [
-  { id: 'muscle_building', name: 'Muscle Building', nameAr: 'بناء العضلات', icon: Dumbbell, color: 'cyan' },
-  { id: 'fat_loss', name: 'Fat Loss', nameAr: 'حرق الدهون', icon: Flame, color: 'orange' },
-  { id: 'strength', name: 'Strength', nameAr: 'القوة', icon: Zap, color: 'purple' },
-  { id: 'endurance', name: 'Endurance', nameAr: 'التحمل', icon: Heart, color: 'red' },
-  { id: 'general_fitness', name: 'General Fitness', nameAr: 'اللياقة العامة', icon: Target, color: 'green' },
+  { id: 'muscle_building', name: 'Muscle Building', nameAr: '\u0628\u0646\u0627\u0621 \u0627\u0644\u0639\u0636\u0644\u0627\u062a', icon: Dumbbell, color: 'cyan' },
+  { id: 'fat_loss', name: 'Fat Loss', nameAr: '\u062d\u0631\u0642 \u0627\u0644\u062f\u0647\u0648\u0646', icon: Flame, color: 'orange' },
+  { id: 'strength', name: 'Strength', nameAr: '\u0627\u0644\u0642\u0648\u0629', icon: Zap, color: 'purple' },
+  { id: 'endurance', name: 'Endurance', nameAr: '\u0627\u0644\u062a\u062d\u0645\u0644', icon: Heart, color: 'red' },
+  { id: 'general_fitness', name: 'General Fitness', nameAr: '\u0627\u0644\u0644\u064a\u0627\u0642\u0629 \u0627\u0644\u0639\u0627\u0645\u0629', icon: Target, color: 'green' },
 ];
 
 const levels = [
-  { id: 'beginner', name: 'Beginner', description: 'New to training, less than 6 months experience' },
-  { id: 'intermediate', name: 'Intermediate', description: '6 months to 2 years of consistent training' },
-  { id: 'advanced', name: 'Advanced', description: '2+ years of structured training experience' },
+  { id: 'beginner', name: 'Beginner', nameAr: '\u0645\u0628\u062a\u062f\u0626', description: 'New to training, less than 6 months experience', descriptionAr: '\u062c\u062f\u064a\u062f \u0639\u0644\u0649 \u0627\u0644\u062a\u0645\u0631\u064a\u0646\u060c \u0623\u0642\u0644 \u0645\u0646 6 \u0634\u0647\u0648\u0631 \u062e\u0628\u0631\u0629' },
+  { id: 'intermediate', name: 'Intermediate', nameAr: '\u0645\u062a\u0648\u0633\u0637', description: '6 months to 2 years of consistent training', descriptionAr: '\u0645\u0646 6 \u0634\u0647\u0648\u0631 \u0644\u0633\u0646\u062a\u064a\u0646 \u062a\u0645\u0631\u064a\u0646 \u0645\u0646\u062a\u0638\u0645' },
+  { id: 'advanced', name: 'Advanced', nameAr: '\u0645\u062a\u0642\u062f\u0645', description: '2+ years of structured training experience', descriptionAr: '\u0623\u0643\u062a\u0631 \u0645\u0646 \u0633\u0646\u062a\u064a\u0646 \u062a\u0645\u0631\u064a\u0646 \u0645\u0646\u0638\u0645' },
 ];
 
 const frequencies = [
-  { days: 3, name: '3 Days', description: 'Full body or upper/lower split' },
-  { days: 4, name: '4 Days', description: 'Upper/lower or push/pull split' },
-  { days: 5, name: '5 Days', description: 'Body part split or push/pull/legs' },
-  { days: 6, name: '6 Days', description: 'Push/pull/legs x2 or advanced split' },
+  { days: 3, name: '3 Days', nameAr: '3 \u0623\u064a\u0627\u0645', description: 'Full body or upper/lower split', descriptionAr: '\u062c\u0633\u0645 \u0643\u0627\u0645\u0644 \u0623\u0648 \u062a\u0642\u0633\u064a\u0645 \u0639\u0644\u0648\u064a/\u0633\u0641\u0644\u064a' },
+  { days: 4, name: '4 Days', nameAr: '4 \u0623\u064a\u0627\u0645', description: 'Upper/lower or push/pull split', descriptionAr: '\u0639\u0644\u0648\u064a/\u0633\u0641\u0644\u064a \u0623\u0648 \u062f\u0641\u0639/\u0633\u062d\u0628' },
+  { days: 5, name: '5 Days', nameAr: '5 \u0623\u064a\u0627\u0645', description: 'Body part split or push/pull/legs', descriptionAr: '\u062a\u0642\u0633\u064a\u0645 \u0639\u0636\u0644\u0627\u062a \u0623\u0648 \u062f\u0641\u0639/\u0633\u062d\u0628/\u0631\u062c\u0644' },
+  { days: 6, name: '6 Days', nameAr: '6 \u0623\u064a\u0627\u0645', description: 'Push/pull/legs x2 or advanced split', descriptionAr: '\u062f\u0641\u0639/\u0633\u062d\u0628/\u0631\u062c\u0644 x2 \u0623\u0648 \u062a\u0642\u0633\u064a\u0645 \u0645\u062a\u0642\u062f\u0645' },
 ];
 
 export default function NewProgramPage() {
   const router = useRouter();
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [currentStep, setCurrentStep] = useState<Step>('basics');
   const [isCreating, setIsCreating] = useState(false);
 
@@ -68,10 +71,10 @@ export default function NewProgramPage() {
   });
 
   const steps: { id: Step; name: string }[] = [
-    { id: 'basics', name: 'Basics' },
-    { id: 'schedule', name: 'Schedule' },
-    { id: 'goal', name: 'Goal & Level' },
-    { id: 'review', name: 'Review' },
+    { id: 'basics', name: isAr ? '\u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0627\u062a' : 'Basics' },
+    { id: 'schedule', name: isAr ? '\u0627\u0644\u062c\u062f\u0648\u0644' : 'Schedule' },
+    { id: 'goal', name: isAr ? '\u0627\u0644\u0647\u062f\u0641 \u0648\u0627\u0644\u0645\u0633\u062a\u0648\u0649' : 'Goal & Level' },
+    { id: 'review', name: isAr ? '\u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629' : 'Review' },
   ];
 
   const currentStepIndex = steps.findIndex((s) => s.id === currentStep);
@@ -118,14 +121,14 @@ export default function NewProgramPage() {
         sourceType: 'manual',
       });
       toast({
-        title: 'Program created',
-        description: 'Now add workout days and exercises.',
+        title: isAr ? '\u062a\u0645 \u0625\u0646\u0634\u0627\u0621 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program created',
+        description: isAr ? '\u062f\u0644\u0648\u0642\u062a\u064a \u0623\u0636\u0641 \u0623\u064a\u0627\u0645 \u0627\u0644\u062a\u0645\u0631\u064a\u0646 \u0648\u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646.' : 'Now add workout days and exercises.',
       });
       router.push(`/trainer/programs/${program.id}`);
     } catch (error: any) {
       toast({
-        title: 'Failed to create program',
-        description: error?.message || 'Please try again.',
+        title: isAr ? '\u0641\u0634\u0644 \u0625\u0646\u0634\u0627\u0621 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Failed to create program',
+        description: error?.message || (isAr ? '\u062d\u0627\u0648\u0644 \u062a\u0627\u0646\u064a.' : 'Please try again.'),
         variant: 'destructive',
       });
     } finally {
@@ -138,7 +141,7 @@ export default function NewProgramPage() {
   const selectedFrequency = frequencies.find((f) => f.days === formData.frequency);
 
   return (
-    <div className="space-y-6 pb-8">
+    <div className="space-y-6 pb-8" dir={isAr ? 'rtl' : 'ltr'}>
       {/* Header */}
       <div className="flex items-center gap-4">
         <Button variant="ghost" size="icon" asChild>
@@ -147,8 +150,8 @@ export default function NewProgramPage() {
           </Link>
         </Button>
         <div>
-          <h1 className="text-3xl font-bold">Create Program</h1>
-          <p className="text-muted-foreground">Build a custom workout program step by step</p>
+          <h1 className="text-3xl font-bold">{isAr ? '\u0625\u0646\u0634\u0627\u0621 \u0628\u0631\u0646\u0627\u0645\u062c' : 'Create Program'}</h1>
+          <p className="text-muted-foreground">{isAr ? '\u0627\u0628\u0646\u064a \u0628\u0631\u0646\u0627\u0645\u062c \u062a\u0645\u0627\u0631\u064a\u0646 \u0645\u062e\u0635\u0635 \u062e\u0637\u0648\u0629 \u0628\u062e\u0637\u0648\u0629' : 'Build a custom workout program step by step'}</p>
         </div>
       </div>
 
@@ -214,57 +217,57 @@ export default function NewProgramPage() {
             <div className="space-y-6 max-w-2xl mx-auto">
               <div className="text-center mb-8">
                 <FileText className="h-12 w-12 mx-auto mb-4 text-cyan-400" />
-                <h2 className="text-2xl font-bold">Program Details</h2>
+                <h2 className="text-2xl font-bold">{isAr ? '\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program Details'}</h2>
                 <p className="text-muted-foreground mt-2">
-                  Start by naming your program and adding a description
+                  {isAr ? '\u0627\u0628\u062f\u0623 \u0628\u062a\u0633\u0645\u064a\u0629 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u0648\u0625\u0636\u0627\u0641\u0629 \u0648\u0635\u0641' : 'Start by naming your program and adding a description'}
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div>
-                  <Label>Program Name (English) *</Label>
+                  <Label>{isAr ? '(\u0625\u0646\u062c\u0644\u064a\u0632\u064a) *\u0627\u0633\u0645 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program Name (English) *'}</Label>
                   <Input
                     value={formData.nameEn}
                     onChange={(e) => setFormData({ ...formData, nameEn: e.target.value })}
-                    placeholder="e.g., 12-Week Transformation Program"
+                    placeholder={isAr ? '\u0645\u062b\u0627\u0644: 12-Week Transformation Program' : 'e.g., 12-Week Transformation Program'}
                     className="mt-1.5 bg-muted/50 border-border/50"
                   />
                 </div>
 
                 <div>
-                  <Label>Program Name (Arabic)</Label>
+                  <Label>{isAr ? '(\u0639\u0631\u0628\u064a) \u0627\u0633\u0645 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program Name (Arabic)'}</Label>
                   <Input
                     value={formData.nameAr}
                     onChange={(e) => setFormData({ ...formData, nameAr: e.target.value })}
-                    placeholder="مثال: برنامج التحول لمدة 12 أسبوع"
+                    placeholder="\u0645\u062b\u0627\u0644: \u0628\u0631\u0646\u0627\u0645\u062c \u0627\u0644\u062a\u062d\u0648\u0644 \u0644\u0645\u062f\u0629 12 \u0623\u0633\u0628\u0648\u0639"
                     className="mt-1.5 bg-muted/50 border-border/50"
                     dir="rtl"
                   />
                 </div>
 
                 <div>
-                  <Label>Description (English)</Label>
+                  <Label>{isAr ? '(\u0625\u0646\u062c\u0644\u064a\u0632\u064a) \u0627\u0644\u0648\u0635\u0641' : 'Description (English)'}</Label>
                   <Textarea
                     value={formData.descriptionEn}
                     onChange={(e) => setFormData({ ...formData, descriptionEn: e.target.value })}
-                    placeholder="Describe what this program offers and who it's for..."
+                    placeholder={isAr ? '\u0648\u0635\u0641 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u0628\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a...' : 'Describe what this program offers and who it\'s for...'}
                     className="mt-1.5 bg-muted/50 border-border/50 min-h-[100px]"
                   />
                 </div>
 
                 <div>
-                  <Label>Description (Arabic)</Label>
+                  <Label>{isAr ? '(\u0639\u0631\u0628\u064a) \u0627\u0644\u0648\u0635\u0641' : 'Description (Arabic)'}</Label>
                   <Textarea
                     value={formData.descriptionAr}
                     onChange={(e) => setFormData({ ...formData, descriptionAr: e.target.value })}
-                    placeholder="وصف البرنامج..."
+                    placeholder="\u0648\u0635\u0641 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c..."
                     className="mt-1.5 bg-muted/50 border-border/50 min-h-[100px]"
                     dir="rtl"
                   />
                 </div>
 
                 <div>
-                  <Label>Price (EGP) - Leave empty for subscription-only</Label>
+                  <Label>{isAr ? '\u0627\u0644\u0633\u0639\u0631 (\u062c.\u0645) - \u0633\u064a\u0628\u0647 \u0641\u0627\u0636\u064a \u0644\u0648 \u0644\u0644\u0645\u0634\u062a\u0631\u0643\u064a\u0646 \u0628\u0633' : 'Price (EGP) - Leave empty for subscription-only'}</Label>
                   <Input
                     type="number"
                     value={formData.priceEGP ?? ''}
@@ -274,11 +277,11 @@ export default function NewProgramPage() {
                         priceEGP: e.target.value ? parseInt(e.target.value) : null,
                       })
                     }
-                    placeholder="e.g., 500"
+                    placeholder={isAr ? '\u0645\u062b\u0627\u0644: 500' : 'e.g., 500'}
                     className="mt-1.5 bg-muted/50 border-border/50"
                   />
                   <p className="text-xs text-muted-foreground mt-1">
-                    If left empty, this program will only be available to subscribed clients
+                    {isAr ? '\u0644\u0648 \u0641\u0627\u0636\u064a\u060c \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u062f\u0647 \u0647\u064a\u0643\u0648\u0646 \u0645\u062a\u0627\u062d \u0644\u0644\u0639\u0645\u0644\u0627\u0621 \u0627\u0644\u0645\u0634\u062a\u0631\u0643\u064a\u0646 \u0628\u0633' : 'If left empty, this program will only be available to subscribed clients'}
                   </p>
                 </div>
               </div>
@@ -289,17 +292,17 @@ export default function NewProgramPage() {
             <div className="space-y-8 max-w-2xl mx-auto">
               <div className="text-center mb-8">
                 <Calendar className="h-12 w-12 mx-auto mb-4 text-purple-400" />
-                <h2 className="text-2xl font-bold">Program Schedule</h2>
+                <h2 className="text-2xl font-bold">{isAr ? '\u062c\u062f\u0648\u0644 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program Schedule'}</h2>
                 <p className="text-muted-foreground mt-2">
-                  Set the duration and training frequency
+                  {isAr ? '\u062d\u062f\u062f \u0627\u0644\u0645\u062f\u0629 \u0648\u062a\u0643\u0631\u0627\u0631 \u0627\u0644\u062a\u062f\u0631\u064a\u0628' : 'Set the duration and training frequency'}
                 </p>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <Label className="text-base font-semibold">Program Duration</Label>
+                  <Label className="text-base font-semibold">{isAr ? '\u0645\u062f\u0629 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program Duration'}</Label>
                   <p className="text-sm text-muted-foreground mb-4">
-                    How many weeks will this program run?
+                    {isAr ? '\u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u062f\u0647 \u0647\u064a\u0643\u0648\u0646 \u0643\u0627\u0645 \u0623\u0633\u0628\u0648\u0639\u061f' : 'How many weeks will this program run?'}
                   </p>
                   <div className="grid grid-cols-4 gap-3">
                     {[4, 6, 8, 12].map((weeks) => (
@@ -314,12 +317,12 @@ export default function NewProgramPage() {
                         )}
                       >
                         <p className="text-2xl font-bold">{weeks}</p>
-                        <p className="text-sm text-muted-foreground">weeks</p>
+                        <p className="text-sm text-muted-foreground">{isAr ? '\u0623\u0633\u0627\u0628\u064a\u0639' : 'weeks'}</p>
                       </div>
                     ))}
                   </div>
                   <div className="mt-4">
-                    <Label className="text-sm">Or enter custom duration</Label>
+                    <Label className="text-sm">{isAr ? '\u0623\u0648 \u0627\u062f\u062e\u0644 \u0645\u062f\u0629 \u0645\u062e\u0635\u0635\u0629' : 'Or enter custom duration'}</Label>
                     <Input
                       type="number"
                       value={formData.durationWeeks}
@@ -334,9 +337,9 @@ export default function NewProgramPage() {
                 </div>
 
                 <div>
-                  <Label className="text-base font-semibold">Training Frequency</Label>
+                  <Label className="text-base font-semibold">{isAr ? '\u062a\u0643\u0631\u0627\u0631 \u0627\u0644\u062a\u062f\u0631\u064a\u0628' : 'Training Frequency'}</Label>
                   <p className="text-sm text-muted-foreground mb-4">
-                    How many days per week will clients train?
+                    {isAr ? '\u0643\u0627\u0645 \u064a\u0648\u0645 \u0641\u064a \u0627\u0644\u0623\u0633\u0628\u0648\u0639 \u0627\u0644\u0639\u0645\u0644\u0627\u0621 \u0647\u064a\u062a\u0645\u0631\u0646\u0648\u0627\u061f' : 'How many days per week will clients train?'}
                   </p>
                   <div className="grid gap-3">
                     {frequencies.map((freq) => (
@@ -352,8 +355,8 @@ export default function NewProgramPage() {
                       >
                         <div className="flex items-center justify-between">
                           <div>
-                            <p className="font-semibold">{freq.name}</p>
-                            <p className="text-sm text-muted-foreground">{freq.description}</p>
+                            <p className="font-semibold">{isAr ? freq.nameAr : freq.name}</p>
+                            <p className="text-sm text-muted-foreground">{isAr ? freq.descriptionAr : freq.description}</p>
                           </div>
                           <div className="flex gap-1">
                             {Array.from({ length: 7 }).map((_, i) => (
@@ -379,17 +382,17 @@ export default function NewProgramPage() {
             <div className="space-y-8 max-w-2xl mx-auto">
               <div className="text-center mb-8">
                 <Target className="h-12 w-12 mx-auto mb-4 text-green-400" />
-                <h2 className="text-2xl font-bold">Goal & Level</h2>
+                <h2 className="text-2xl font-bold">{isAr ? '\u0627\u0644\u0647\u062f\u0641 \u0648\u0627\u0644\u0645\u0633\u062a\u0648\u0649' : 'Goal & Level'}</h2>
                 <p className="text-muted-foreground mt-2">
-                  Define the primary goal and difficulty level
+                  {isAr ? '\u062d\u062f\u062f \u0627\u0644\u0647\u062f\u0641 \u0627\u0644\u0623\u0633\u0627\u0633\u064a \u0648\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0635\u0639\u0648\u0628\u0629' : 'Define the primary goal and difficulty level'}
                 </p>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <Label className="text-base font-semibold">Primary Goal</Label>
+                  <Label className="text-base font-semibold">{isAr ? '\u0627\u0644\u0647\u062f\u0641 \u0627\u0644\u0623\u0633\u0627\u0633\u064a' : 'Primary Goal'}</Label>
                   <p className="text-sm text-muted-foreground mb-4">
-                    What will clients achieve with this program?
+                    {isAr ? '\u0627\u0644\u0639\u0645\u0644\u0627\u0621 \u0647\u064a\u062d\u0642\u0642\u0648\u0627 \u0625\u064a\u0647 \u0628\u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u062f\u0647\u061f' : 'What will clients achieve with this program?'}
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {goals.map((goal) => {
@@ -413,8 +416,8 @@ export default function NewProgramPage() {
                           >
                             <Icon className={cn('h-6 w-6', `text-${goal.color}-400`)} />
                           </div>
-                          <p className="font-semibold">{goal.name}</p>
-                          <p className="text-sm text-muted-foreground">{goal.nameAr}</p>
+                          <p className="font-semibold">{isAr ? goal.nameAr : goal.name}</p>
+                          <p className="text-sm text-muted-foreground">{isAr ? goal.name : goal.nameAr}</p>
                         </div>
                       );
                     })}
@@ -422,9 +425,9 @@ export default function NewProgramPage() {
                 </div>
 
                 <div>
-                  <Label className="text-base font-semibold">Difficulty Level</Label>
+                  <Label className="text-base font-semibold">{isAr ? '\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0635\u0639\u0648\u0628\u0629' : 'Difficulty Level'}</Label>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Who is this program designed for?
+                    {isAr ? '\u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u062f\u0647 \u0645\u062a\u0635\u0645\u0645 \u0644\u0645\u064a\u0646\u061f' : 'Who is this program designed for?'}
                   </p>
                   <div className="grid gap-3">
                     {levels.map((level) => (
@@ -448,8 +451,8 @@ export default function NewProgramPage() {
                             )}
                           />
                           <div>
-                            <p className="font-semibold">{level.name}</p>
-                            <p className="text-sm text-muted-foreground">{level.description}</p>
+                            <p className="font-semibold">{isAr ? level.nameAr : level.name}</p>
+                            <p className="text-sm text-muted-foreground">{isAr ? level.descriptionAr : level.description}</p>
                           </div>
                         </div>
                       </div>
@@ -464,25 +467,25 @@ export default function NewProgramPage() {
             <div className="space-y-6 max-w-2xl mx-auto">
               <div className="text-center mb-8">
                 <Check className="h-12 w-12 mx-auto mb-4 text-green-400" />
-                <h2 className="text-2xl font-bold">Review & Create</h2>
+                <h2 className="text-2xl font-bold">{isAr ? '\u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629 \u0648\u0627\u0644\u0625\u0646\u0634\u0627\u0621' : 'Review & Create'}</h2>
                 <p className="text-muted-foreground mt-2">
-                  Review your program details before creating
+                  {isAr ? '\u0631\u0627\u062c\u0639 \u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u0642\u0628\u0644 \u0627\u0644\u0625\u0646\u0634\u0627\u0621' : 'Review your program details before creating'}
                 </p>
               </div>
 
               <div className="space-y-4">
                 <Card className="bg-muted/30 border-border/50">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">Program Details</CardTitle>
+                    <CardTitle className="text-lg">{isAr ? '\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program Details'}</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Name</span>
-                      <span className="font-medium">{formData.nameEn || 'Not set'}</span>
+                      <span className="text-muted-foreground">{isAr ? '\u0627\u0644\u0627\u0633\u0645' : 'Name'}</span>
+                      <span className="font-medium">{formData.nameEn || (isAr ? '\u0644\u0645 \u064a\u062a\u0645 \u0627\u0644\u062a\u062d\u062f\u064a\u062f' : 'Not set')}</span>
                     </div>
                     {formData.nameAr && (
                       <div className="flex justify-between">
-                        <span className="text-muted-foreground">Name (Arabic)</span>
+                        <span className="text-muted-foreground">{isAr ? '\u0627\u0644\u0627\u0633\u0645 (\u0639\u0631\u0628\u064a)' : 'Name (Arabic)'}</span>
                         <span className="font-medium" dir="rtl">
                           {formData.nameAr}
                         </span>
@@ -490,7 +493,7 @@ export default function NewProgramPage() {
                     )}
                     {formData.descriptionEn && (
                       <div className="flex justify-between">
-                        <span className="text-muted-foreground">Description</span>
+                        <span className="text-muted-foreground">{isAr ? '\u0627\u0644\u0648\u0635\u0641' : 'Description'}</span>
                         <span className="font-medium text-right max-w-[200px] truncate">
                           {formData.descriptionEn}
                         </span>
@@ -501,45 +504,45 @@ export default function NewProgramPage() {
 
                 <Card className="bg-muted/30 border-border/50">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">Schedule</CardTitle>
+                    <CardTitle className="text-lg">{isAr ? '\u0627\u0644\u062c\u062f\u0648\u0644' : 'Schedule'}</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Duration</span>
-                      <span className="font-medium">{formData.durationWeeks} weeks</span>
+                      <span className="text-muted-foreground">{isAr ? '\u0627\u0644\u0645\u062f\u0629' : 'Duration'}</span>
+                      <span className="font-medium">{formData.durationWeeks} {isAr ? '\u0623\u0633\u0627\u0628\u064a\u0639' : 'weeks'}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Frequency</span>
-                      <span className="font-medium">{formData.frequency} days/week</span>
+                      <span className="text-muted-foreground">{isAr ? '\u0627\u0644\u062a\u0643\u0631\u0627\u0631' : 'Frequency'}</span>
+                      <span className="font-medium">{formData.frequency} {isAr ? '\u0623\u064a\u0627\u0645/\u0627\u0644\u0623\u0633\u0628\u0648\u0639' : 'days/week'}</span>
                     </div>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-muted/30 border-border/50">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">Goal & Level</CardTitle>
+                    <CardTitle className="text-lg">{isAr ? '\u0627\u0644\u0647\u062f\u0641 \u0648\u0627\u0644\u0645\u0633\u062a\u0648\u0649' : 'Goal & Level'}</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Primary Goal</span>
-                      <span className="font-medium">{selectedGoal?.name}</span>
+                      <span className="text-muted-foreground">{isAr ? '\u0627\u0644\u0647\u062f\u0641' : 'Primary Goal'}</span>
+                      <span className="font-medium">{isAr ? selectedGoal?.nameAr : selectedGoal?.name}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Difficulty</span>
-                      <span className="font-medium capitalize">{formData.level}</span>
+                      <span className="text-muted-foreground">{isAr ? '\u0627\u0644\u0635\u0639\u0648\u0628\u0629' : 'Difficulty'}</span>
+                      <span className="font-medium capitalize">{isAr ? selectedLevel?.nameAr : formData.level}</span>
                     </div>
                   </CardContent>
                 </Card>
 
                 <Card className="bg-muted/30 border-border/50">
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-lg">Pricing</CardTitle>
+                    <CardTitle className="text-lg">{isAr ? '\u0627\u0644\u062a\u0633\u0639\u064a\u0631' : 'Pricing'}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Price</span>
+                      <span className="text-muted-foreground">{isAr ? '\u0627\u0644\u0633\u0639\u0631' : 'Price'}</span>
                       <span className="font-medium">
-                        {formData.priceEGP ? `${formData.priceEGP} EGP` : 'Subscription only'}
+                        {formData.priceEGP ? `${formData.priceEGP} ${isAr ? '\u062c.\u0645' : 'EGP'}` : (isAr ? '\u0644\u0644\u0645\u0634\u062a\u0631\u0643\u064a\u0646 \u0641\u0642\u0637' : 'Subscription only')}
                       </span>
                     </div>
                   </CardContent>
@@ -558,28 +561,28 @@ export default function NewProgramPage() {
           disabled={currentStepIndex === 0}
           className="border-border/50"
         >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back
+          <ArrowLeft className={cn('h-4 w-4', isAr ? 'ml-2' : 'mr-2')} />
+          {isAr ? '\u0631\u062c\u0648\u0639' : 'Back'}
         </Button>
 
         {currentStep === 'review' ? (
           <Button onClick={handleCreate} disabled={isCreating} className="btn-primary">
             {isCreating ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Creating...
+                <Loader2 className={cn('h-4 w-4 animate-spin', isAr ? 'ml-2' : 'mr-2')} />
+                {isAr ? '\u062c\u0627\u0631\u064a \u0627\u0644\u0625\u0646\u0634\u0627\u0621...' : 'Creating...'}
               </>
             ) : (
               <>
-                Create Program
-                <ArrowRight className="ml-2 h-4 w-4" />
+                {isAr ? '\u0625\u0646\u0634\u0627\u0621 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Create Program'}
+                <ArrowRight className={cn('h-4 w-4', isAr ? 'mr-2' : 'ml-2')} />
               </>
             )}
           </Button>
         ) : (
           <Button onClick={handleNext} disabled={!canProceed()} className="btn-primary">
-            Continue
-            <ArrowRight className="ml-2 h-4 w-4" />
+            {isAr ? '\u0645\u062a\u0627\u0628\u0639\u0629' : 'Continue'}
+            <ArrowRight className={cn('h-4 w-4', isAr ? 'mr-2' : 'ml-2')} />
           </Button>
         )}
       </div>

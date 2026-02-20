@@ -10,9 +10,12 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useUser, useUpdateProfile } from '@/hooks/use-user';
+import { useLanguage } from '@/lib/i18n';
 
 export default function EditProfilePage() {
   const router = useRouter();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const { data: userData, isLoading: userLoading } = useUser();
   const updateProfile = useUpdateProfile();
 
@@ -53,7 +56,7 @@ export default function EditProfilePage() {
       });
       router.push('/profile');
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to update profile');
+      setError(err instanceof Error ? err.message : (isAr ? 'فشل تحديث الملف' : 'Failed to update profile'));
     }
   };
 
@@ -73,7 +76,7 @@ export default function EditProfilePage() {
             <ArrowLeft className="h-5 w-5" />
           </Link>
         </Button>
-        <h1 className="text-2xl font-bold">Edit Profile</h1>
+        <h1 className="text-2xl font-bold">{isAr ? 'تعديل الملف' : 'Edit Profile'}</h1>
       </div>
 
       {error && (
@@ -86,58 +89,58 @@ export default function EditProfilePage() {
       {updateProfile.isSuccess && (
         <div className="flex items-center gap-2 rounded-lg bg-green-500/10 p-4 text-green-600">
           <Check className="h-5 w-5" />
-          <p>Profile updated successfully!</p>
+          <p>{isAr ? 'تم تحديث الملف بنجاح!' : 'Profile updated successfully!'}</p>
         </div>
       )}
 
       <Card>
         <CardHeader>
-          <CardTitle>Personal Information</CardTitle>
+          <CardTitle>{isAr ? 'المعلومات الشخصية' : 'Personal Information'}</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2">
-                <Label htmlFor="firstName">First Name</Label>
+                <Label htmlFor="firstName">{isAr ? 'الاسم الأول' : 'First Name'}</Label>
                 <Input
                   id="firstName"
                   value={formData.firstName}
                   onChange={(e) =>
                     setFormData({ ...formData, firstName: e.target.value })
                   }
-                  placeholder="Enter your first name"
+                  placeholder={isAr ? 'أدخل اسمك الأول' : 'Enter your first name'}
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="lastName">Last Name</Label>
+                <Label htmlFor="lastName">{isAr ? 'الاسم الأخير' : 'Last Name'}</Label>
                 <Input
                   id="lastName"
                   value={formData.lastName}
                   onChange={(e) =>
                     setFormData({ ...formData, lastName: e.target.value })
                   }
-                  placeholder="Enter your last name"
+                  placeholder={isAr ? 'أدخل اسمك الأخير' : 'Enter your last name'}
                 />
               </div>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="displayName">Display Name (optional)</Label>
+              <Label htmlFor="displayName">{isAr ? 'اسم العرض (اختياري)' : 'Display Name (optional)'}</Label>
               <Input
                 id="displayName"
                 value={formData.displayName}
                 onChange={(e) =>
                   setFormData({ ...formData, displayName: e.target.value })
                 }
-                placeholder="How should we call you?"
+                placeholder={isAr ? 'عايزنا نناديك إيه؟' : 'How should we call you?'}
               />
               <p className="text-sm text-muted-foreground">
-                This is the name shown in the app and to trainers
+                {isAr ? 'ده الاسم اللي بيظهر في التطبيق وللمدربين' : 'This is the name shown in the app and to trainers'}
               </p>
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">{isAr ? 'البريد الإلكتروني' : 'Email'}</Label>
               <Input
                 id="email"
                 type="email"
@@ -146,7 +149,7 @@ export default function EditProfilePage() {
                 className="bg-muted"
               />
               <p className="text-sm text-muted-foreground">
-                Contact support to change your email
+                {isAr ? 'تواصل مع الدعم لتغيير بريدك' : 'Contact support to change your email'}
               </p>
             </div>
 
@@ -155,14 +158,14 @@ export default function EditProfilePage() {
                 {updateProfile.isPending ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Saving...
+                    {isAr ? 'جاري الحفظ...' : 'Saving...'}
                   </>
                 ) : (
-                  'Save Changes'
+                  isAr ? 'حفظ التغييرات' : 'Save Changes'
                 )}
               </Button>
               <Button type="button" variant="outline" asChild>
-                <Link href="/profile">Cancel</Link>
+                <Link href="/profile">{isAr ? 'إلغاء' : 'Cancel'}</Link>
               </Button>
             </div>
           </form>
@@ -171,12 +174,12 @@ export default function EditProfilePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Preferences</CardTitle>
+          <CardTitle>{isAr ? 'التفضيلات' : 'Preferences'}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-2">
-              <Label htmlFor="language">Language</Label>
+              <Label htmlFor="language">{isAr ? 'اللغة' : 'Language'}</Label>
               <Select
                 value={formData.language}
                 onValueChange={(value) =>
@@ -184,7 +187,7 @@ export default function EditProfilePage() {
                 }
               >
                 <SelectTrigger id="language">
-                  <SelectValue placeholder="Select language" />
+                  <SelectValue placeholder={isAr ? 'اختر اللغة' : 'Select language'} />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="en">English</SelectItem>
@@ -194,7 +197,7 @@ export default function EditProfilePage() {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="measurementUnit">Measurement Unit</Label>
+              <Label htmlFor="measurementUnit">{isAr ? 'وحدة القياس' : 'Measurement Unit'}</Label>
               <Select
                 value={formData.measurementUnit}
                 onValueChange={(value) =>
@@ -202,11 +205,11 @@ export default function EditProfilePage() {
                 }
               >
                 <SelectTrigger id="measurementUnit">
-                  <SelectValue placeholder="Select unit" />
+                  <SelectValue placeholder={isAr ? 'اختر الوحدة' : 'Select unit'} />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="metric">Metric (kg, cm)</SelectItem>
-                  <SelectItem value="imperial">Imperial (lbs, in)</SelectItem>
+                  <SelectItem value="metric">{isAr ? 'متري (كجم، سم)' : 'Metric (kg, cm)'}</SelectItem>
+                  <SelectItem value="imperial">{isAr ? 'إمبراطوري (رطل، بوصة)' : 'Imperial (lbs, in)'}</SelectItem>
                 </SelectContent>
               </Select>
             </div>

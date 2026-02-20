@@ -4,8 +4,12 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/lib/i18n';
 
 export function CTA() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
   return (
     <section className="py-20 md:py-32">
       <div className="container">
@@ -23,11 +27,12 @@ export function CTA() {
 
           <div className="relative mx-auto max-w-2xl text-center">
             <h2 className="text-2xl font-bold tracking-tight text-forma-navy sm:text-3xl md:text-4xl lg:text-5xl">
-              Ready to transform your fitness journey?
+              {isAr ? 'جاهز تغير رحلتك الرياضية؟' : 'Ready to transform your fitness journey?'}
             </h2>
             <p className="mt-6 text-lg text-forma-navy/80">
-              Join thousands of Egyptians who have already started their
-              transformation with Forma. Your first week is on us.
+              {isAr
+                ? 'انضم لآلاف المصريين اللي بدأوا تحولهم مع فورما. أول أسبوع عليناا.'
+                : 'Join thousands of Egyptians who have already started their transformation with Forma. Your first week is on us.'}
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button
@@ -36,7 +41,7 @@ export function CTA() {
                 asChild
               >
                 <Link href="/signup">
-                  Start Your Free Trial
+                  {isAr ? 'ابدأ تجربتك المجانية' : 'Start Your Free Trial'}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -46,7 +51,7 @@ export function CTA() {
                 className="border-forma-navy/30 text-forma-navy hover:bg-forma-navy/10"
                 asChild
               >
-                <Link href="/demo">View Demo</Link>
+                <Link href="/demo">{isAr ? 'شاهد العرض' : 'View Demo'}</Link>
               </Button>
             </div>
           </div>

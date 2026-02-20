@@ -29,55 +29,62 @@ import { useToast } from '@/hooks/use-toast';
 import { useTheme } from 'next-themes';
 import { useLanguage } from '@/lib/i18n';
 
-const menuItems = [
-  {
-    section: 'Account',
-    items: [
-      { icon: User, label: 'Edit Profile', href: '/profile/edit' },
-      { icon: CreditCard, label: 'Subscription', href: '/profile/subscription', badge: 'Pro' },
-      { icon: Lock, label: 'Privacy & Security', href: '/profile/security' },
-    ],
-  },
-  {
-    section: 'Preferences',
-    items: [
-      { icon: Settings, label: 'App Settings', href: '/profile/settings' },
-      { icon: Dumbbell, label: 'Workout Preferences', href: '/profile/workout-preferences' },
-    ],
-  },
-  {
-    section: 'Support',
-    items: [
-      { icon: HelpCircle, label: 'Help Center', href: '/help' },
-      { icon: Star, label: 'Rate the App', href: '', action: 'rate' },
-      { icon: Share2, label: 'Share Forma', href: '', action: 'share' },
-    ],
-  },
-];
+function getMenuItems(isAr: boolean) {
+  return [
+    {
+      section: isAr ? 'الحساب' : 'Account',
+      items: [
+        { icon: User, label: isAr ? 'تعديل الملف' : 'Edit Profile', href: '/profile/edit' },
+        { icon: CreditCard, label: isAr ? 'الاشتراك' : 'Subscription', href: '/profile/subscription', badge: isAr ? 'برو' : 'Pro' },
+        { icon: Lock, label: isAr ? 'الخصوصية والأمان' : 'Privacy & Security', href: '/profile/security' },
+      ],
+    },
+    {
+      section: isAr ? 'التفضيلات' : 'Preferences',
+      items: [
+        { icon: Settings, label: isAr ? 'إعدادات التطبيق' : 'App Settings', href: '/profile/settings' },
+        { icon: Dumbbell, label: isAr ? 'تفضيلات التمارين' : 'Workout Preferences', href: '/profile/workout-preferences' },
+      ],
+    },
+    {
+      section: isAr ? 'الدعم' : 'Support',
+      items: [
+        { icon: HelpCircle, label: isAr ? 'مركز المساعدة' : 'Help Center', href: '/help' },
+        { icon: Star, label: isAr ? 'قيّم التطبيق' : 'Rate the App', href: '', action: 'rate' },
+        { icon: Share2, label: isAr ? 'شارك فورما' : 'Share Forma', href: '', action: 'share' },
+      ],
+    },
+  ];
+}
 
-const defaultAchievements = [
-  { title: 'Early Adopter', description: 'Joined Forma in the first month', icon: Trophy },
-  { title: '7 Day Streak', description: 'Worked out 7 days in a row', icon: Dumbbell },
-  { title: '100 Workouts', description: 'Completed 100 workouts', icon: Star },
-];
+function getDefaultAchievements(isAr: boolean) {
+  return [
+    { title: isAr ? 'من الأوائل' : 'Early Adopter', description: isAr ? 'انضم لفورما في أول شهر' : 'Joined Forma in the first month', icon: Trophy },
+    { title: isAr ? '٧ أيام متواصلة' : '7 Day Streak', description: isAr ? 'اتمرن ٧ أيام ورا بعض' : 'Worked out 7 days in a row', icon: Dumbbell },
+    { title: isAr ? '١٠٠ تمرين' : '100 Workouts', description: isAr ? 'خلّص ١٠٠ تمرين' : 'Completed 100 workouts', icon: Star },
+  ];
+}
 
-function formatVolume(kg: number): string {
+function formatVolume(kg: number, isAr: boolean): string {
+  const unit = isAr ? 'كجم' : 'kg';
   if (kg >= 1000000) {
-    return `${(kg / 1000000).toFixed(1)}M kg`;
+    return isAr ? `${(kg / 1000000).toFixed(1)} مليون ${unit}` : `${(kg / 1000000).toFixed(1)}M kg`;
   } else if (kg >= 1000) {
-    return `${(kg / 1000).toFixed(0)}K kg`;
+    return isAr ? `${(kg / 1000).toFixed(0)} ألف ${unit}` : `${(kg / 1000).toFixed(0)}K kg`;
   }
-  return `${kg} kg`;
+  return `${kg} ${unit}`;
 }
 
 export default function ProfilePage() {
   const router = useRouter();
   const { toast } = useToast();
   const { theme, setTheme } = useTheme();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const { data: userData, isLoading: userLoading } = useUser();
   const { data: statsData, isLoading: statsLoading } = useUserStats();
-  const [achievements, setAchievements] = useState(defaultAchievements);
+  const [achievements, setAchievements] = useState(getDefaultAchievements(isAr));
+  const menuItems = getMenuItems(isAr);
 
   useEffect(() => {
     achievementsApi.getAll().then((data) => {
@@ -86,15 +93,21 @@ export default function ProfilePage() {
           streak: Dumbbell, workout: Dumbbell, strength: Trophy, nutrition: Star,
         };
         setAchievements(data.slice(0, 5).map((a: any) => ({
-          title: a.nameEn || a.name || a.title || 'Achievement',
-          description: a.descriptionEn || a.description || '',
+          title: isAr
+            ? (a.nameAr || a.name || a.title || 'إنجاز')
+            : (a.nameEn || a.name || a.title || 'Achievement'),
+          description: isAr
+            ? (a.descriptionAr || a.description || '')
+            : (a.descriptionEn || a.description || ''),
           icon: iconMap[a.category?.toLowerCase()] || Trophy,
         })));
+      } else {
+        setAchievements(getDefaultAchievements(isAr));
       }
     }).catch(() => {
-      // Keep defaults on error
+      setAchievements(getDefaultAchievements(isAr));
     });
-  }, []);
+  }, [isAr]);
 
   const handleLogout = () => {
     removeAuthCookie();
@@ -102,23 +115,32 @@ export default function ProfilePage() {
   };
 
   const handleShare = async () => {
+    const shareTitle = isAr ? 'فورما فيتنس' : 'Forma Fitness';
+    const shareText = isAr
+      ? 'جرب فورما - أحسن تطبيق لياقة للمصريين!'
+      : 'Check out Forma - the best fitness app for Egyptians!';
+    const copiedMsg = isAr ? 'تم نسخ اللينك!' : 'Share link copied!';
+
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Forma Fitness',
-          text: 'Check out Forma - the best fitness app for Egyptians!',
+          title: shareTitle,
+          text: shareText,
           url: 'https://formaeg.com',
         });
       } catch (err) {
-        toast({ title: 'Share link copied!', description: 'formaeg.com' });
+        toast({ title: copiedMsg, description: 'formaeg.com' });
       }
     } else {
-      toast({ title: 'Share link copied!', description: 'formaeg.com' });
+      toast({ title: copiedMsg, description: 'formaeg.com' });
     }
   };
 
   const handleRateApp = () => {
-    toast({ title: 'Coming Soon', description: 'App Store rating will be available soon' });
+    toast({
+      title: isAr ? 'قريباً' : 'Coming Soon',
+      description: isAr ? 'تقييم التطبيق هيكون متاح قريباً' : 'App Store rating will be available soon',
+    });
   };
 
   const user = userData?.user;
@@ -126,9 +148,9 @@ export default function ProfilePage() {
 
   // Format stats
   const userStats = [
-    { label: 'Workouts', value: statsData?.totalWorkouts?.toString() || '0' },
-    { label: 'Streak', value: statsData?.currentStreak ? `${statsData.currentStreak} days` : '0 days' },
-    { label: 'Total Volume', value: statsData?.totalVolume ? formatVolume(statsData.totalVolume) : '0 kg' },
+    { label: isAr ? 'تمارين' : 'Workouts', value: statsData?.totalWorkouts?.toString() || '0' },
+    { label: isAr ? 'متواصل' : 'Streak', value: statsData?.currentStreak ? `${statsData.currentStreak} ${isAr ? 'يوم' : 'days'}` : isAr ? '٠ يوم' : '0 days' },
+    { label: isAr ? 'إجمالي الحجم' : 'Total Volume', value: statsData?.totalVolume ? formatVolume(statsData.totalVolume, isAr) : isAr ? '٠ كجم' : '0 kg' },
   ];
 
   // Get user initials
@@ -145,6 +167,9 @@ export default function ProfilePage() {
   const formatMemberSince = () => {
     if (!user?.createdAt) return '';
     const date = new Date(user.createdAt);
+    if (isAr) {
+      return `عضو من ${date.toLocaleDateString('ar-EG', { month: 'long', year: 'numeric' })}`;
+    }
     return `Member since ${date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`;
   };
 
@@ -163,16 +188,16 @@ export default function ProfilePage() {
         <CardContent className="p-6">
           <div className="flex items-center gap-4">
             <Avatar className="h-20 w-20">
-              {user?.avatar && <AvatarImage src={user.avatar} alt={user.name || 'User'} />}
+              {user?.avatar && <AvatarImage src={user.avatar} alt={user.name || (isAr ? 'مستخدم' : 'User')} />}
               <AvatarFallback className="text-2xl bg-forma-teal text-white">
                 {getInitials()}
               </AvatarFallback>
             </Avatar>
             <div className="flex-1">
               <div className="flex items-center gap-2">
-                <h1 className="text-xl font-bold">{user?.name || 'User'}</h1>
+                <h1 className="text-xl font-bold">{user?.name || (isAr ? 'مستخدم' : 'User')}</h1>
                 {user?.subscription && user.subscription !== 'free' && (
-                  <Badge variant="forma">{user.subscription === 'pro' ? 'Pro' : 'Elite'}</Badge>
+                  <Badge variant="forma">{user.subscription === 'pro' ? (isAr ? 'برو' : 'Pro') : (isAr ? 'إيليت' : 'Elite')}</Badge>
                 )}
               </div>
               <p className="text-muted-foreground">{user?.email || ''}</p>
@@ -305,7 +330,7 @@ export default function ProfilePage() {
       </Card>
 
       {/* App Version */}
-      <p className="text-center text-sm text-muted-foreground">Forma v1.0.0</p>
+      <p className="text-center text-sm text-muted-foreground">{isAr ? 'فورما v1.0.0' : 'Forma v1.0.0'}</p>
     </div>
   );
 }

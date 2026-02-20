@@ -2,9 +2,11 @@
 
 import { ThemeProvider } from 'next-themes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { LanguageProvider, useLanguage } from '@/lib/i18n';
 import { SurveyProvider } from '@/components/research/survey-provider';
+import { setupGlobalErrorHandlers } from '@/lib/error-reporter';
+import { ErrorBoundary } from '@/components/error-boundary';
 
 function SurveyWrapper({ children }: { children: React.ReactNode }) {
   const { language } = useLanguage();
@@ -16,6 +18,10 @@ function SurveyWrapper({ children }: { children: React.ReactNode }) {
 }
 
 export function Providers({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    setupGlobalErrorHandlers();
+  }, []);
+
   const [queryClient] = useState(
     () =>
       new QueryClient({
@@ -33,19 +39,21 @@ export function Providers({ children }: { children: React.ReactNode }) {
   );
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="light"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <LanguageProvider>
-          <SurveyWrapper>
-            {children}
-          </SurveyWrapper>
-        </LanguageProvider>
-      </ThemeProvider>
-    </QueryClientProvider>
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <LanguageProvider>
+            <SurveyWrapper>
+              {children}
+            </SurveyWrapper>
+          </LanguageProvider>
+        </ThemeProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
   );
 }

@@ -27,12 +27,20 @@ import { checkInsApi, type CreateCheckInData, type DailyCheckIn } from '@/lib/ap
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/lib/i18n';
 
-const ratingLabels: Record<number, string> = {
+const ratingLabelsEn: Record<number, string> = {
   1: 'Poor',
   2: 'Below Average',
   3: 'Average',
   4: 'Good',
   5: 'Excellent',
+};
+
+const ratingLabelsAr: Record<number, string> = {
+  1: 'ضعيف',
+  2: 'تحت المتوسط',
+  3: 'متوسط',
+  4: 'كويس',
+  5: 'ممتاز',
 };
 
 const ratingColors: Record<number, string> = {
@@ -48,12 +56,15 @@ function RatingSlider({
   onChange,
   label,
   icon: Icon,
+  isAr = false,
 }: {
   value: number;
   onChange: (value: number) => void;
   label: string;
   icon: React.ElementType;
+  isAr?: boolean;
 }) {
+  const ratingLabels = isAr ? ratingLabelsAr : ratingLabelsEn;
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between">
@@ -85,7 +96,8 @@ function RatingSlider({
 }
 
 export default function CheckInPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const queryClient = useQueryClient();
   const [selectedDate, setSelectedDate] = useState(new Date());
 
@@ -198,11 +210,11 @@ export default function CheckInPage() {
   };
 
   const formatDate = (date: Date) => {
-    if (isToday) return 'Today';
+    if (isToday) return isAr ? 'النهارده' : 'Today';
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
-    if (date.toDateString() === yesterday.toDateString()) return 'Yesterday';
-    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+    if (date.toDateString() === yesterday.toDateString()) return isAr ? 'إمبارح' : 'Yesterday';
+    return date.toLocaleDateString(isAr ? 'ar-EG' : 'en-US', { weekday: 'long', month: 'short', day: 'numeric' });
   };
 
   return (
@@ -216,7 +228,7 @@ export default function CheckInPage() {
         {existingCheckIn && (
           <div className="flex items-center gap-2 text-green-500">
             <Check className="h-5 w-5" />
-            <span className="text-sm font-medium">Completed</span>
+            <span className="text-sm font-medium">{isAr ? 'تم' : 'Completed'}</span>
           </div>
         )}
       </div>
@@ -250,7 +262,7 @@ export default function CheckInPage() {
           <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-lg">
               <TrendingUp className="h-5 w-5 text-primary" />
-              This Week
+              {isAr ? 'الأسبوع ده' : 'This Week'}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -259,19 +271,19 @@ export default function CheckInPage() {
                 <div className="text-2xl font-bold text-primary">
                   {weeklyStats.workoutsCompleted}/{weeklyStats.totalCheckIns}
                 </div>
-                <div className="text-xs text-muted-foreground">Workouts</div>
+                <div className="text-xs text-muted-foreground">{isAr ? 'تمارين' : 'Workouts'}</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-primary">
-                  {weeklyStats.avgSleepHours?.toFixed(1) || '-'}h
+                  {weeklyStats.avgSleepHours?.toFixed(1) || '-'}{isAr ? 'س' : 'h'}
                 </div>
-                <div className="text-xs text-muted-foreground">Avg Sleep</div>
+                <div className="text-xs text-muted-foreground">{isAr ? 'متوسط النوم' : 'Avg Sleep'}</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-primary">
                   {weeklyStats.avgMood?.toFixed(1) || '-'}/5
                 </div>
-                <div className="text-xs text-muted-foreground">Avg Mood</div>
+                <div className="text-xs text-muted-foreground">{isAr ? 'متوسط المزاج' : 'Avg Mood'}</div>
               </div>
             </div>
           </CardContent>
@@ -289,13 +301,13 @@ export default function CheckInPage() {
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2">
                 <Dumbbell className="h-5 w-5 text-primary" />
-                Workout
+                {isAr ? 'التمرين' : 'Workout'}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
                 <Label htmlFor="workout-completed" className="text-base">
-                  Did you complete your workout?
+                  {isAr ? 'خلصت التمرين؟' : 'Did you complete your workout?'}
                 </Label>
                 <Switch
                   id="workout-completed"
@@ -308,13 +320,14 @@ export default function CheckInPage() {
                   <RatingSlider
                     value={workoutRating}
                     onChange={setWorkoutRating}
-                    label="How was your workout?"
+                    label={isAr ? 'التمرين كان عامل إيه؟' : 'How was your workout?'}
                     icon={Sparkles}
+                    isAr={isAr}
                   />
                   <div>
-                    <Label className="text-sm text-muted-foreground">Notes (optional)</Label>
+                    <Label className="text-sm text-muted-foreground">{isAr ? 'ملاحظات (اختياري)' : 'Notes (optional)'}</Label>
                     <Textarea
-                      placeholder="Any notes about your workout..."
+                      placeholder={isAr ? 'أي ملاحظات عن التمرين...' : 'Any notes about your workout...'}
                       value={workoutNotes}
                       onChange={(e) => setWorkoutNotes(e.target.value)}
                       className="mt-1"
@@ -330,13 +343,13 @@ export default function CheckInPage() {
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2">
                 <Utensils className="h-5 w-5 text-primary" />
-                Nutrition
+                {isAr ? 'التغذية' : 'Nutrition'}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
                 <Label htmlFor="nutrition-completed" className="text-base">
-                  Did you follow your nutrition plan?
+                  {isAr ? 'مشيت على نظام الأكل؟' : 'Did you follow your nutrition plan?'}
                 </Label>
                 <Switch
                   id="nutrition-completed"
@@ -349,13 +362,14 @@ export default function CheckInPage() {
                   <RatingSlider
                     value={nutritionRating}
                     onChange={setNutritionRating}
-                    label="How was your nutrition?"
+                    label={isAr ? 'الأكل كان عامل إيه؟' : 'How was your nutrition?'}
                     icon={Sparkles}
+                    isAr={isAr}
                   />
                   <div>
-                    <Label className="text-sm text-muted-foreground">Notes (optional)</Label>
+                    <Label className="text-sm text-muted-foreground">{isAr ? 'ملاحظات (اختياري)' : 'Notes (optional)'}</Label>
                     <Textarea
-                      placeholder="Any notes about your nutrition..."
+                      placeholder={isAr ? 'أي ملاحظات عن الأكل...' : 'Any notes about your nutrition...'}
                       value={nutritionNotes}
                       onChange={(e) => setNutritionNotes(e.target.value)}
                       className="mt-1"
@@ -371,14 +385,14 @@ export default function CheckInPage() {
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2">
                 <Moon className="h-5 w-5 text-primary" />
-                Sleep
+                {isAr ? 'النوم' : 'Sleep'}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="font-medium">{t.checkIn.sleep}</span>
-                  <span className="text-lg font-bold text-primary">{sleepHours}h</span>
+                  <span className="text-lg font-bold text-primary">{sleepHours}{isAr ? 'س' : 'h'}</span>
                 </div>
                 <Slider
                   value={[sleepHours]}
@@ -392,8 +406,9 @@ export default function CheckInPage() {
               <RatingSlider
                 value={sleepQuality}
                 onChange={setSleepQuality}
-                label="Sleep quality"
+                label={isAr ? 'جودة النوم' : 'Sleep quality'}
                 icon={Moon}
+                isAr={isAr}
               />
             </CardContent>
           </Card>
@@ -403,7 +418,7 @@ export default function CheckInPage() {
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2">
                 <Battery className="h-5 w-5 text-primary" />
-                Wellness
+                {isAr ? 'الحالة العامة' : 'Wellness'}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -412,24 +427,28 @@ export default function CheckInPage() {
                 onChange={setEnergyLevel}
                 label={t.checkIn.energy}
                 icon={Battery}
+                isAr={isAr}
               />
               <RatingSlider
                 value={stressLevel}
                 onChange={setStressLevel}
                 label={t.health.stress}
                 icon={Brain}
+                isAr={isAr}
               />
               <RatingSlider
                 value={musclesoreness}
                 onChange={setMusclesoreness}
                 label={t.checkIn.soreness}
                 icon={Dumbbell}
+                isAr={isAr}
               />
               <RatingSlider
                 value={mood}
                 onChange={setMood}
                 label={t.checkIn.mood}
                 icon={Smile}
+                isAr={isAr}
               />
             </CardContent>
           </Card>
@@ -437,11 +456,11 @@ export default function CheckInPage() {
           {/* General Notes */}
           <Card className="glass border-border/50">
             <CardHeader className="pb-2">
-              <CardTitle>Additional Notes</CardTitle>
+              <CardTitle>{isAr ? 'ملاحظات إضافية' : 'Additional Notes'}</CardTitle>
             </CardHeader>
             <CardContent>
               <Textarea
-                placeholder="Anything else you'd like to note about today..."
+                placeholder={isAr ? 'أي حاجة تانية عايز تسجلها عن يومك...' : "Anything else you'd like to note about today..."}
                 value={notes}
                 onChange={(e) => setNotes(e.target.value)}
                 rows={4}
@@ -458,8 +477,8 @@ export default function CheckInPage() {
           >
             {saveMutation.isPending ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Saving...
+                <Loader2 className={cn("h-4 w-4 animate-spin", isAr ? "ml-2" : "mr-2")} />
+                {isAr ? 'جاري الحفظ...' : 'Saving...'}
               </>
             ) : existingCheckIn ? (
               <>

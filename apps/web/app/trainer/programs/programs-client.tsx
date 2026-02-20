@@ -44,11 +44,14 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/lib/i18n';
 import { useProgramsManager } from '@/hooks/use-programs';
 
 function ProgramsPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const assignToClientId = searchParams.get('assign');
   const isAssignMode = !!assignToClientId;
 
@@ -71,7 +74,7 @@ function ProgramsPageContent() {
       }, 1500);
     } catch (err) {
       // Error handled
-      alert('Failed to assign program. Please try again.');
+      alert(isAr ? 'فشل تعيين البرنامج. حاول تاني.' : 'Failed to assign program. Please try again.');
     }
   };
 
@@ -99,7 +102,7 @@ function ProgramsPageContent() {
   };
 
   const handleDelete = async (id: string) => {
-    if (!confirm('Are you sure you want to delete this program?')) return;
+    if (!confirm(isAr ? 'متأكد إنك عايز تحذف البرنامج ده؟' : 'Are you sure you want to delete this program?')) return;
     try {
       await deleteProgram(id);
     } catch (err) {
@@ -119,7 +122,7 @@ function ProgramsPageContent() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load programs</h2>
+        <h2 className="text-xl font-semibold mb-2">{isAr ? 'فشل تحميل البرامج' : 'Failed to load programs'}</h2>
         <p className="text-muted-foreground">{error.message}</p>
       </div>
     );
@@ -128,11 +131,11 @@ function ProgramsPageContent() {
   const getSourceBadge = (sourceType: string) => {
     switch (sourceType) {
       case 'pdf':
-        return { icon: FileText, label: 'From PDF', class: 'bg-blue-500/20 text-blue-400 border-blue-500/50' };
+        return { icon: FileText, label: isAr ? 'من PDF' : 'From PDF', class: 'bg-blue-500/20 text-blue-400 border-blue-500/50' };
       case 'ai_generated':
-        return { icon: Sparkles, label: 'Auto Generated', class: 'bg-purple-500/20 text-purple-400 border-purple-500/50' };
+        return { icon: Sparkles, label: isAr ? 'مولد تلقائياً' : 'Auto Generated', class: 'bg-purple-500/20 text-purple-400 border-purple-500/50' };
       default:
-        return { icon: Pencil, label: 'Manual', class: 'bg-muted text-muted-foreground' };
+        return { icon: Pencil, label: isAr ? 'يدوي' : 'Manual', class: 'bg-muted text-muted-foreground' };
     }
   };
 
@@ -149,12 +152,12 @@ function ProgramsPageContent() {
                 </div>
                 <div>
                   <p className="font-semibold">
-                    {assignSuccess ? 'Program Assigned!' : 'Select a Program to Assign'}
+                    {assignSuccess ? (isAr ? 'تم تعيين البرنامج!' : 'Program Assigned!') : (isAr ? 'اختار برنامج للتعيين' : 'Select a Program to Assign')}
                   </p>
                   <p className="text-sm text-muted-foreground">
                     {assignSuccess
-                      ? 'Redirecting back to client...'
-                      : 'Click on a program below to assign it to your client'}
+                      ? (isAr ? 'جاري التحويل للعميل...' : 'Redirecting back to client...')
+                      : (isAr ? 'اضغط على برنامج تحت عشان تعينه لعميلك' : 'Click on a program below to assign it to your client')}
                   </p>
                 </div>
               </div>
@@ -168,7 +171,7 @@ function ProgramsPageContent() {
                   disabled={isAssigning}
                 >
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Cancel
+                  {isAr ? 'إلغاء' : 'Cancel'}
                 </Button>
               </div>
             </div>
@@ -179,11 +182,11 @@ function ProgramsPageContent() {
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Programs</h1>
+          <h1 className="text-3xl font-bold">{isAr ? 'البرامج' : 'Programs'}</h1>
           <p className="text-muted-foreground">
             {isAssignMode
-              ? 'Select a program to assign to your client'
-              : 'Create and manage workout programs for your clients'}
+              ? (isAr ? 'اختار برنامج لتعيينه لعميلك' : 'Select a program to assign to your client')
+              : (isAr ? 'أنشئ وأدر برامج التمارين لعملائك' : 'Create and manage workout programs for your clients')}
           </p>
         </div>
         {!isAssignMode && (
@@ -191,13 +194,13 @@ function ProgramsPageContent() {
             <Button variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
               <Link href="/trainer/programs/upload">
                 <Upload className="mr-2 h-4 w-4" />
-                Upload PDF
+                {isAr ? 'رفع PDF' : 'Upload PDF'}
               </Link>
             </Button>
             <Button className="btn-primary" asChild>
               <Link href="/trainer/programs/new">
                 <Plus className="mr-2 h-4 w-4" />
-                Create Program
+                {isAr ? 'إنشاء برنامج' : 'Create Program'}
               </Link>
             </Button>
           </div>
@@ -214,9 +217,9 @@ function ProgramsPageContent() {
                   <Upload className="h-6 w-6 text-blue-400" />
                 </div>
                 <div className="flex-1">
-                  <p className="font-semibold">Upload PDF Program</p>
+                  <p className="font-semibold">{isAr ? 'رفع برنامج PDF' : 'Upload PDF Program'}</p>
                   <p className="text-sm text-muted-foreground">
-                    Convert your existing PDFs to interactive programs
+                    {isAr ? 'حول ملفات PDF لبرامج تفاعلية' : 'Convert your existing PDFs to interactive programs'}
                   </p>
                 </div>
                 <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
@@ -233,9 +236,9 @@ function ProgramsPageContent() {
                   <Dumbbell className="h-6 w-6 text-green-400" />
                 </div>
                 <div className="flex-1">
-                  <p className="font-semibold">Build from Scratch</p>
+                  <p className="font-semibold">{isAr ? 'ابني من الصفر' : 'Build from Scratch'}</p>
                   <p className="text-sm text-muted-foreground">
-                    Create a custom program step by step
+                    {isAr ? 'أنشئ برنامج مخصص خطوة بخطوة' : 'Create a custom program step by step'}
                   </p>
                 </div>
                 <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
@@ -252,9 +255,9 @@ function ProgramsPageContent() {
                   <Sparkles className="h-6 w-6 text-purple-400" />
                 </div>
                 <div className="flex-1">
-                  <p className="font-semibold">Smart Program Generator</p>
+                  <p className="font-semibold">{isAr ? 'مولد البرامج الذكي' : 'Smart Program Generator'}</p>
                   <p className="text-sm text-muted-foreground">
-                    Create a program based on client goals
+                    {isAr ? 'أنشئ برنامج بناءً على أهداف العميل' : 'Create a program based on client goals'}
                   </p>
                 </div>
                 <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
@@ -274,7 +277,7 @@ function ProgramsPageContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats.total}</p>
-                <p className="text-sm text-muted-foreground">Total Programs</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'إجمالي البرامج' : 'Total Programs'}</p>
               </div>
             </div>
           </CardContent>
@@ -287,7 +290,7 @@ function ProgramsPageContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-green-400">{stats.active}</p>
-                <p className="text-sm text-muted-foreground">Active Programs</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'البرامج النشطة' : 'Active Programs'}</p>
               </div>
             </div>
           </CardContent>
@@ -300,7 +303,7 @@ function ProgramsPageContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats.clients}</p>
-                <p className="text-sm text-muted-foreground">Clients Enrolled</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'العملاء المسجلين' : 'Clients Enrolled'}</p>
               </div>
             </div>
           </CardContent>
@@ -313,7 +316,7 @@ function ProgramsPageContent() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-yellow-400">{stats.drafts}</p>
-                <p className="text-sm text-muted-foreground">Drafts</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'المسودات' : 'Drafts'}</p>
               </div>
             </div>
           </CardContent>
@@ -327,7 +330,7 @@ function ProgramsPageContent() {
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
-                placeholder="Search programs..."
+                placeholder={isAr ? 'ابحث عن برامج...' : 'Search programs...'}
                 className="pl-10 bg-muted/50 border-border/50"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -335,9 +338,9 @@ function ProgramsPageContent() {
             </div>
             <Tabs value={activeTab} onValueChange={setActiveTab}>
               <TabsList>
-                <TabsTrigger value="all">All</TabsTrigger>
-                <TabsTrigger value="active">Active</TabsTrigger>
-                <TabsTrigger value="draft">Drafts</TabsTrigger>
+                <TabsTrigger value="all">{isAr ? 'الكل' : 'All'}</TabsTrigger>
+                <TabsTrigger value="active">{isAr ? 'نشط' : 'Active'}</TabsTrigger>
+                <TabsTrigger value="draft">{isAr ? 'المسودات' : 'Drafts'}</TabsTrigger>
               </TabsList>
             </Tabs>
           </div>
@@ -349,15 +352,15 @@ function ProgramsPageContent() {
         <Card className="glass border-border/50">
           <CardContent className="py-12 text-center">
             <FileText className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-            <h3 className="text-lg font-semibold mb-2">No programs found</h3>
+            <h3 className="text-lg font-semibold mb-2">{isAr ? 'مفيش برامج' : 'No programs found'}</h3>
             <p className="text-muted-foreground mb-4">
-              {searchQuery ? 'Try a different search term' : 'Create your first program to get started'}
+              {searchQuery ? (isAr ? 'جرب كلمة بحث تانية' : 'Try a different search term') : (isAr ? 'أنشئ أول برنامج عشان تبدأ' : 'Create your first program to get started')}
             </p>
             {!searchQuery && (
               <Button asChild>
                 <Link href="/trainer/programs/new">
                   <Plus className="mr-2 h-4 w-4" />
-                  Create Program
+                  {isAr ? 'إنشاء برنامج' : 'Create Program'}
                 </Link>
               </Button>
             )}
@@ -392,22 +395,22 @@ function ProgramsPageContent() {
                           : 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50'
                         }
                       >
-                        {program.status === 'ACTIVE' ? 'Active' : 'Draft'}
+                        {program.status === 'ACTIVE' ? (isAr ? 'نشط' : 'Active') : (isAr ? 'مسودة' : 'Draft')}
                       </Badge>
                     </div>
                     <CardDescription className="mt-1">
-                      {program.descriptionEn || 'No description'}
+                      {program.descriptionEn || (isAr ? 'بدون وصف' : 'No description')}
                     </CardDescription>
                   </div>
                   {isAssignMode ? (
                     canAssign ? (
                       <Badge className="bg-primary/20 text-primary border-primary/50">
                         <Check className="h-3 w-3 mr-1" />
-                        Click to Assign
+                        {isAr ? 'اضغط للتعيين' : 'Click to Assign'}
                       </Badge>
                     ) : (
                       <Badge variant="secondary" className="text-muted-foreground">
-                        Draft - Not Available
+                        {isAr ? 'مسودة - غير متاح' : 'Draft - Not Available'}
                       </Badge>
                     )
                   ) : (
@@ -421,17 +424,17 @@ function ProgramsPageContent() {
                         <DropdownMenuItem asChild>
                           <Link href={`/trainer/programs/${program.id}`}>
                             <Pencil className="mr-2 h-4 w-4" />
-                            Edit
+                            {isAr ? 'تعديل' : 'Edit'}
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem onClick={() => handleDuplicate(program.id)} disabled={isDuplicating}>
                           <Copy className="mr-2 h-4 w-4" />
-                          Duplicate
+                          {isAr ? 'نسخ' : 'Duplicate'}
                         </DropdownMenuItem>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem className="text-destructive" onClick={() => handleDelete(program.id)}>
                           <Trash2 className="mr-2 h-4 w-4" />
-                          Delete
+                          {isAr ? 'حذف' : 'Delete'}
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
@@ -441,11 +444,11 @@ function ProgramsPageContent() {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                     <span className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      {program.durationWeeks} weeks
+                      {program.durationWeeks} {isAr ? 'أسبوع' : 'weeks'}
                     </span>
                     <span className="flex items-center gap-1">
                       <Dumbbell className="h-4 w-4" />
-                      {program.workoutDayCount} days
+                      {program.workoutDayCount} {isAr ? 'يوم' : 'days'}
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
@@ -466,7 +469,7 @@ function ProgramsPageContent() {
                         "font-medium",
                         program.clientCount > 0 ? 'text-foreground' : 'text-muted-foreground'
                       )}>
-                        {program.clientCount} {program.clientCount === 1 ? 'client' : 'clients'}
+                        {program.clientCount} {isAr ? 'عميل' : (program.clientCount === 1 ? 'client' : 'clients')}
                       </span>
                     </span>
                   </div>

@@ -33,7 +33,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export default function AchievementsPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const [achievements, setAchievements] = useState<Achievement[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -67,7 +68,7 @@ export default function AchievementsPage() {
       <div>
         <h1 className="text-2xl font-bold">{t.achievements.title}</h1>
         <p className="text-muted-foreground">
-          {unlockedCount} of {achievements.length} unlocked
+          {isAr ? `${unlockedCount} من ${achievements.length} مفتوحين` : `${unlockedCount} of ${achievements.length} unlocked`}
         </p>
       </div>
 
@@ -142,9 +143,9 @@ export default function AchievementsPage() {
         <Card>
           <CardContent className="flex flex-col items-center justify-center py-12">
             <Trophy className="h-12 w-12 text-muted-foreground" />
-            <h3 className="mt-4 font-semibold">No achievements available</h3>
+            <h3 className="mt-4 font-semibold">{isAr ? 'مفيش إنجازات متاحة' : 'No achievements available'}</h3>
             <p className="mt-1 text-sm text-muted-foreground">
-              Achievements are being set up. Check back soon!
+              {isAr ? 'الإنجازات بيتم إعدادها. ارجع تاني قريباً!' : 'Achievements are being set up. Check back soon!'}
             </p>
           </CardContent>
         </Card>
@@ -154,14 +155,14 @@ export default function AchievementsPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Trophy className="h-5 w-5 text-yellow-500" />
-            How to Earn Achievements
+            {isAr ? 'إزاي تكسب إنجازات' : 'How to Earn Achievements'}
           </CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground">
-            Complete workouts, hit your goals, and stay consistent to unlock
-            achievements. Each achievement tracks your progress automatically.
-            Keep pushing and watch your trophy collection grow!
+            {isAr
+              ? 'كمّل تمارينك، حقق أهدافك، واستمر بانتظام عشان تفتح إنجازات. كل إنجاز بيتابع تقدمك تلقائياً. كمّل وشوف مجموعة الكؤوس بتكبر!'
+              : 'Complete workouts, hit your goals, and stay consistent to unlock achievements. Each achievement tracks your progress automatically. Keep pushing and watch your trophy collection grow!'}
           </p>
         </CardContent>
       </Card>

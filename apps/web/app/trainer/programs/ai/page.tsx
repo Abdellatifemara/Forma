@@ -30,28 +30,29 @@ import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import { aiApi, programsApi } from '@/lib/api';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 type GenerationState = 'input' | 'generating' | 'preview' | 'saving';
 
 const goals = [
-  { id: 'muscle_building', name: 'Muscle Building', icon: Dumbbell, color: 'cyan' },
-  { id: 'fat_loss', name: 'Fat Loss', icon: Flame, color: 'orange' },
-  { id: 'strength', name: 'Strength', icon: Zap, color: 'purple' },
-  { id: 'endurance', name: 'Endurance', icon: Heart, color: 'red' },
-  { id: 'general_fitness', name: 'General Fitness', icon: Target, color: 'green' },
+  { id: 'muscle_building', name: 'Muscle Building', nameAr: 'بناء العضلات', icon: Dumbbell, color: 'cyan' },
+  { id: 'fat_loss', name: 'Fat Loss', nameAr: 'حرق الدهون', icon: Flame, color: 'orange' },
+  { id: 'strength', name: 'Strength', nameAr: 'القوة', icon: Zap, color: 'purple' },
+  { id: 'endurance', name: 'Endurance', nameAr: 'التحمل', icon: Heart, color: 'red' },
+  { id: 'general_fitness', name: 'General Fitness', nameAr: 'اللياقة العامة', icon: Target, color: 'green' },
 ];
 
 const levels = [
-  { id: 'beginner', name: 'Beginner' },
-  { id: 'intermediate', name: 'Intermediate' },
-  { id: 'advanced', name: 'Advanced' },
+  { id: 'beginner', name: 'Beginner', nameAr: 'مبتدئ' },
+  { id: 'intermediate', name: 'Intermediate', nameAr: 'متوسط' },
+  { id: 'advanced', name: 'Advanced', nameAr: 'متقدم' },
 ];
 
 const equipmentOptions = [
-  { id: 'full_gym', name: 'Full Gym' },
-  { id: 'dumbbells', name: 'Dumbbells Only' },
-  { id: 'home', name: 'Home/Minimal' },
-  { id: 'bodyweight', name: 'Bodyweight Only' },
+  { id: 'full_gym', name: 'Full Gym', nameAr: 'جيم كامل' },
+  { id: 'dumbbells', name: 'Dumbbells Only', nameAr: 'دمبلز بس' },
+  { id: 'home', name: 'Home/Minimal', nameAr: 'منزلي/بسيط' },
+  { id: 'bodyweight', name: 'Bodyweight Only', nameAr: 'وزن الجسم بس' },
 ];
 
 interface GeneratedExercise {
@@ -76,7 +77,7 @@ interface GeneratedProgram {
   days: GeneratedDay[];
 }
 
-const generationSteps = [
+const generationStepsEn = [
   'Reviewing your requirements...',
   'Selecting exercises from library...',
   'Structuring workout days...',
@@ -85,9 +86,20 @@ const generationSteps = [
   'Finalizing your program...',
 ];
 
+const generationStepsAr = [
+  'بنراجع متطلباتك...',
+  'بنختار التمارين من المكتبة...',
+  'بنرتب أيام التمرين...',
+  'بنظبط المجموعات والتكرارات...',
+  'بنظبط فترات الراحة...',
+  'بننهي البرنامج بتاعك...',
+];
+
 export default function AIGeneratorPage() {
   const router = useRouter();
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [state, setState] = useState<GenerationState>('input');
   const [currentStep, setCurrentStep] = useState('');
   const [expandedDay, setExpandedDay] = useState<number | null>(0);
@@ -105,7 +117,7 @@ export default function AIGeneratorPage() {
 
   const handleGenerate = async () => {
     setState('generating');
-    setCurrentStep('Sending to AI trainer...');
+    setCurrentStep(isAr ? 'بنبعت للمدرب الذكي...' : 'Sending to AI trainer...');
 
     try {
       const goalName = goals.find((g) => g.id === formData.goal)?.name || formData.goal;
@@ -114,8 +126,8 @@ Equipment: ${formData.equipment.replace('_', ' ')}. Training ${formData.frequenc
 ${formData.additionalNotes ? `Notes: ${formData.additionalNotes}` : ''}
 Return ONLY valid JSON with this exact structure: {"name":"...","description":"...","durationWeeks":${formData.durationWeeks},"frequency":${formData.frequency},"days":[{"name":"Day 1","focus":"...","exercises":[{"name":"...","sets":4,"reps":"8-10","restSeconds":90}]}]}`;
 
-      setCurrentStep('AI is building your program...');
-      const response = await aiApi.chat(prompt, 'You are a professional personal trainer. Output ONLY valid JSON, no markdown or explanation.');
+      setCurrentStep(isAr ? 'الذكاء الاصطناعي بيبني البرنامج بتاعك...' : 'AI is building your program...');
+      const response = await aiApi.chat(prompt, { context: 'You are a professional personal trainer. Output ONLY valid JSON, no markdown or explanation.' });
 
       let program: GeneratedProgram;
       try {
@@ -128,7 +140,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
         }
       } catch {
         // Fallback to mock if AI response isn't valid JSON
-        setCurrentStep('Structuring program...');
+        setCurrentStep(isAr ? 'بنرتب البرنامج...' : 'Structuring program...');
         program = {
           name: `${formData.durationWeeks}-Week ${goalName} Program`,
           description: `${formData.level} level program for ${goalName.toLowerCase()}. ${formData.frequency} days/week, ${formData.sessionLength}-min sessions.`,
@@ -142,7 +154,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
       setState('preview');
     } catch (error: any) {
       // Fallback to mock data on error
-      setCurrentStep('Using template...');
+      setCurrentStep(isAr ? 'بنستخدم قالب...' : 'Using template...');
       const goalName = goals.find((g) => g.id === formData.goal)?.name || formData.goal;
       const fallback: GeneratedProgram = {
         name: `${formData.durationWeeks}-Week ${goalName} Program`,
@@ -153,7 +165,10 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
       };
       setGeneratedProgram(fallback);
       setState('preview');
-      toast({ title: 'Used template', description: 'AI was unavailable, generated from template instead.' });
+      toast({
+        title: isAr ? 'تم استخدام قالب' : 'Used template',
+        description: isAr ? 'الذكاء الاصطناعي مش متاح، اتعمل من قالب بدل كده.' : 'AI was unavailable, generated from template instead.',
+      });
     }
   };
 
@@ -291,10 +306,17 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
           })),
         })),
       });
-      toast({ title: 'Program saved', description: 'Your AI-generated program has been created.' });
+      toast({
+        title: isAr ? 'تم حفظ البرنامج' : 'Program saved',
+        description: isAr ? 'برنامجك المولد بالذكاء الاصطناعي اتعمل.' : 'Your AI-generated program has been created.',
+      });
       router.push(`/trainer/programs/${program.id}`);
     } catch (error: any) {
-      toast({ title: 'Failed to save', description: error?.message || 'Please try again.', variant: 'destructive' });
+      toast({
+        title: isAr ? 'فشل الحفظ' : 'Failed to save',
+        description: error?.message || (isAr ? 'حاول تاني.' : 'Please try again.'),
+        variant: 'destructive',
+      });
       setState('preview');
     }
   };
@@ -302,7 +324,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
   const selectedGoal = goals.find((g) => g.id === formData.goal);
 
   return (
-    <div className="space-y-6 pb-8">
+    <div className="space-y-6 pb-8" dir={isAr ? 'rtl' : 'ltr'}>
       {/* Header */}
       <div className="flex items-center gap-4">
         <Button variant="ghost" size="icon" asChild>
@@ -312,14 +334,18 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
         </Button>
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="text-3xl font-bold">Personalized Program Builder</h1>
+            <h1 className="text-3xl font-bold">
+              {isAr ? 'باني البرامج الشخصي' : 'Personalized Program Builder'}
+            </h1>
             <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/50">
               <Sparkles className="h-3 w-3 mr-1" />
-              Smart
+              {isAr ? 'ذكي' : 'Smart'}
             </Badge>
           </div>
           <p className="text-muted-foreground">
-            Create a program tailored to your goals, level, and available equipment
+            {isAr
+              ? 'أنشئ برنامج مخصص لأهدافك ومستواك ومعداتك'
+              : 'Create a program tailored to your goals, level, and available equipment'}
           </p>
         </div>
       </div>
@@ -330,8 +356,10 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
             {/* Goal Selection */}
             <Card className="glass border-border/50">
               <CardHeader>
-                <CardTitle>Primary Goal</CardTitle>
-                <CardDescription>What should this program help achieve?</CardDescription>
+                <CardTitle>{isAr ? 'الهدف الأساسي' : 'Primary Goal'}</CardTitle>
+                <CardDescription>
+                  {isAr ? 'البرنامج ده لازم يساعد يحقق إيه؟' : 'What should this program help achieve?'}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
@@ -356,7 +384,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                         >
                           <Icon className={cn('h-5 w-5', `text-${goal.color}-400`)} />
                         </div>
-                        <p className="text-sm font-medium">{goal.name}</p>
+                        <p className="text-sm font-medium">{isAr ? goal.nameAr : goal.name}</p>
                       </div>
                     );
                   })}
@@ -367,8 +395,10 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
             {/* Experience Level */}
             <Card className="glass border-border/50">
               <CardHeader>
-                <CardTitle>Experience Level</CardTitle>
-                <CardDescription>What level is this program for?</CardDescription>
+                <CardTitle>{isAr ? 'مستوى الخبرة' : 'Experience Level'}</CardTitle>
+                <CardDescription>
+                  {isAr ? 'البرنامج ده لأي مستوى؟' : 'What level is this program for?'}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-3 gap-3">
@@ -398,7 +428,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                           />
                         ))}
                       </div>
-                      <p className="font-medium">{level.name}</p>
+                      <p className="font-medium">{isAr ? level.nameAr : level.name}</p>
                     </div>
                   ))}
                 </div>
@@ -408,8 +438,10 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
             {/* Equipment */}
             <Card className="glass border-border/50">
               <CardHeader>
-                <CardTitle>Available Equipment</CardTitle>
-                <CardDescription>What equipment will be available?</CardDescription>
+                <CardTitle>{isAr ? 'المعدات المتاحة' : 'Available Equipment'}</CardTitle>
+                <CardDescription>
+                  {isAr ? 'إيه المعدات اللي هتكون متاحة؟' : 'What equipment will be available?'}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -424,7 +456,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                           : 'border-border/50 hover:border-primary/30'
                       )}
                     >
-                      <p className="font-medium text-sm">{eq.name}</p>
+                      <p className="font-medium text-sm">{isAr ? eq.nameAr : eq.name}</p>
                     </div>
                   ))}
                 </div>
@@ -434,15 +466,17 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
             {/* Schedule */}
             <Card className="glass border-border/50">
               <CardHeader>
-                <CardTitle>Program Schedule</CardTitle>
-                <CardDescription>Duration and training frequency</CardDescription>
+                <CardTitle>{isAr ? 'جدول البرنامج' : 'Program Schedule'}</CardTitle>
+                <CardDescription>
+                  {isAr ? 'المدة وتكرار التدريب' : 'Duration and training frequency'}
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid grid-cols-3 gap-4">
                   <div>
                     <Label className="flex items-center gap-2">
                       <Calendar className="h-4 w-4" />
-                      Duration
+                      {isAr ? 'المدة' : 'Duration'}
                     </Label>
                     <div className="flex items-center gap-2 mt-2">
                       <Input
@@ -455,13 +489,13 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                         min={4}
                         max={16}
                       />
-                      <span className="text-muted-foreground">weeks</span>
+                      <span className="text-muted-foreground">{isAr ? 'أسابيع' : 'weeks'}</span>
                     </div>
                   </div>
                   <div>
                     <Label className="flex items-center gap-2">
                       <Dumbbell className="h-4 w-4" />
-                      Frequency
+                      {isAr ? 'التكرار' : 'Frequency'}
                     </Label>
                     <div className="flex items-center gap-2 mt-2">
                       <Input
@@ -474,13 +508,13 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                         min={2}
                         max={6}
                       />
-                      <span className="text-muted-foreground">days/week</span>
+                      <span className="text-muted-foreground">{isAr ? 'أيام/أسبوع' : 'days/week'}</span>
                     </div>
                   </div>
                   <div>
                     <Label className="flex items-center gap-2">
                       <Clock className="h-4 w-4" />
-                      Session Length
+                      {isAr ? 'مدة الجلسة' : 'Session Length'}
                     </Label>
                     <div className="flex items-center gap-2 mt-2">
                       <Input
@@ -494,7 +528,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                         max={120}
                         step={15}
                       />
-                      <span className="text-muted-foreground">min</span>
+                      <span className="text-muted-foreground">{isAr ? 'دقيقة' : 'min'}</span>
                     </div>
                   </div>
                 </div>
@@ -504,16 +538,18 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
             {/* Additional Notes */}
             <Card className="glass border-border/50">
               <CardHeader>
-                <CardTitle>Additional Instructions (Optional)</CardTitle>
+                <CardTitle>{isAr ? 'تعليمات إضافية (اختياري)' : 'Additional Instructions (Optional)'}</CardTitle>
                 <CardDescription>
-                  Any specific requirements or preferences
+                  {isAr ? 'أي متطلبات أو تفضيلات محددة' : 'Any specific requirements or preferences'}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Textarea
                   value={formData.additionalNotes}
                   onChange={(e) => setFormData({ ...formData, additionalNotes: e.target.value })}
-                  placeholder="e.g., Focus on compound movements, avoid deadlifts due to injury, include supersets..."
+                  placeholder={isAr
+                    ? 'مثلا: ركز على التمارين المركبة، تجنب الديدلفت بسبب إصابة، حط سوبرسيتس...'
+                    : 'e.g., Focus on compound movements, avoid deadlifts due to injury, include supersets...'}
                   className="bg-muted/50 border-border/50 min-h-[100px]"
                 />
               </CardContent>
@@ -521,7 +557,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
 
             <Button onClick={handleGenerate} className="w-full btn-primary py-6 text-lg">
               <Sparkles className="mr-2 h-5 w-5" />
-              Generate Program
+              {isAr ? 'توليد البرنامج' : 'Generate Program'}
             </Button>
           </div>
 
@@ -533,10 +569,13 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                   <div className="mx-auto w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-4">
                     <Sparkles className="h-6 w-6 text-purple-400" />
                   </div>
-                  <h3 className="font-bold text-lg mb-2">Built Just For You</h3>
+                  <h3 className="font-bold text-lg mb-2">
+                    {isAr ? 'متصمم ليك' : 'Built Just For You'}
+                  </h3>
                   <p className="text-sm text-muted-foreground">
-                    Programs designed to match your exact fitness level,
-                    goals, and available equipment. Your body, your program.
+                    {isAr
+                      ? 'برامج متصممة لمستوى لياقتك بالظبط وأهدافك ومعداتك المتاحة. جسمك، برنامجك.'
+                      : 'Programs designed to match your exact fitness level, goals, and available equipment. Your body, your program.'}
                   </p>
                 </div>
               </CardContent>
@@ -544,28 +583,42 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
 
             <Card className="glass border-border/50">
               <CardHeader>
-                <CardTitle className="text-base">Program Summary</CardTitle>
+                <CardTitle className="text-base">
+                  {isAr ? 'ملخص البرنامج' : 'Program Summary'}
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Goal</span>
-                  <span className="font-medium">{selectedGoal?.name}</span>
+                  <span className="text-muted-foreground">{isAr ? 'الهدف' : 'Goal'}</span>
+                  <span className="font-medium">
+                    {isAr ? selectedGoal?.nameAr : selectedGoal?.name}
+                  </span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Level</span>
-                  <span className="font-medium capitalize">{formData.level}</span>
+                  <span className="text-muted-foreground">{isAr ? 'المستوى' : 'Level'}</span>
+                  <span className="font-medium capitalize">
+                    {isAr
+                      ? levels.find((l) => l.id === formData.level)?.nameAr
+                      : formData.level}
+                  </span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Duration</span>
-                  <span className="font-medium">{formData.durationWeeks} weeks</span>
+                  <span className="text-muted-foreground">{isAr ? 'المدة' : 'Duration'}</span>
+                  <span className="font-medium">
+                    {formData.durationWeeks} {isAr ? 'أسابيع' : 'weeks'}
+                  </span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Frequency</span>
-                  <span className="font-medium">{formData.frequency} days/week</span>
+                  <span className="text-muted-foreground">{isAr ? 'التكرار' : 'Frequency'}</span>
+                  <span className="font-medium">
+                    {formData.frequency} {isAr ? 'أيام/أسبوع' : 'days/week'}
+                  </span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Session Length</span>
-                  <span className="font-medium">{formData.sessionLength} min</span>
+                  <span className="text-muted-foreground">{isAr ? 'مدة الجلسة' : 'Session Length'}</span>
+                  <span className="font-medium">
+                    {formData.sessionLength} {isAr ? 'دقيقة' : 'min'}
+                  </span>
                 </div>
               </CardContent>
             </Card>
@@ -579,7 +632,9 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
             <div className="mx-auto w-20 h-20 rounded-2xl bg-purple-500/20 flex items-center justify-center mb-6">
               <Sparkles className="h-10 w-10 text-purple-400 animate-pulse" />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Building Your Program</h2>
+            <h2 className="text-2xl font-bold mb-2">
+              {isAr ? 'جاري بناء البرنامج' : 'Building Your Program'}
+            </h2>
             <p className="text-muted-foreground mb-8">{currentStep}</p>
             <Loader2 className="h-8 w-8 animate-spin mx-auto text-primary" />
           </CardContent>
@@ -594,7 +649,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                 <div>
                   <Badge className="mb-2 bg-purple-500/20 text-purple-400 border-purple-500/50">
                     <Sparkles className="h-3 w-3 mr-1" />
-                    Personalized
+                    {isAr ? 'مخصص' : 'Personalized'}
                   </Badge>
                   <CardTitle className="text-2xl">{generatedProgram.name}</CardTitle>
                   <CardDescription className="mt-2">
@@ -603,16 +658,20 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                 </div>
                 <Button variant="outline" onClick={handleRegenerate} className="border-primary/50">
                   <RefreshCw className="mr-2 h-4 w-4" />
-                  Regenerate
+                  {isAr ? 'إعادة التوليد' : 'Regenerate'}
                 </Button>
               </div>
             </CardHeader>
             <CardContent>
               <div className="flex gap-4 text-sm">
-                <Badge variant="outline">{generatedProgram.durationWeeks} weeks</Badge>
-                <Badge variant="outline">{generatedProgram.frequency} days/week</Badge>
                 <Badge variant="outline">
-                  {generatedProgram.days.reduce((sum, d) => sum + d.exercises.length, 0)} total exercises
+                  {generatedProgram.durationWeeks} {isAr ? 'أسابيع' : 'weeks'}
+                </Badge>
+                <Badge variant="outline">
+                  {generatedProgram.frequency} {isAr ? 'أيام/أسبوع' : 'days/week'}
+                </Badge>
+                <Badge variant="outline">
+                  {generatedProgram.days.reduce((sum, d) => sum + d.exercises.length, 0)} {isAr ? 'إجمالي التمارين' : 'total exercises'}
                 </Badge>
               </div>
             </CardContent>
@@ -636,7 +695,9 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
-                      <Badge variant="outline">{day.exercises.length} exercises</Badge>
+                      <Badge variant="outline">
+                        {day.exercises.length} {isAr ? 'تمارين' : 'exercises'}
+                      </Badge>
                       {expandedDay === index ? (
                         <ChevronUp className="h-5 w-5 text-muted-foreground" />
                       ) : (
@@ -665,11 +726,13 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                             </div>
                           </div>
                           <div className="flex items-center gap-4 text-sm">
-                            <span>{exercise.sets} sets</span>
-                            <span className="text-muted-foreground">×</span>
+                            <span>
+                              {exercise.sets} {isAr ? 'مجموعات' : 'sets'}
+                            </span>
+                            <span className="text-muted-foreground">x</span>
                             <span>{exercise.reps}</span>
                             <span className="text-muted-foreground">
-                              ({exercise.restSeconds}s rest)
+                              ({exercise.restSeconds}{isAr ? 'ث' : 's'} {isAr ? 'راحة' : 'rest'})
                             </span>
                           </div>
                         </div>
@@ -688,11 +751,11 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
               className="flex-1 border-border/50"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Settings
+              {isAr ? 'رجوع للإعدادات' : 'Back to Settings'}
             </Button>
             <Button onClick={handleSave} className="flex-1 btn-primary">
               <Check className="mr-2 h-4 w-4" />
-              Save Program
+              {isAr ? 'حفظ البرنامج' : 'Save Program'}
             </Button>
           </div>
         </div>
@@ -704,8 +767,12 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
             <div className="mx-auto w-20 h-20 rounded-full bg-green-500/20 flex items-center justify-center mb-6">
               <Check className="h-10 w-10 text-green-400" />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Saving Program</h2>
-            <p className="text-muted-foreground mb-8">Your program is being saved...</p>
+            <h2 className="text-2xl font-bold mb-2">
+              {isAr ? 'جاري حفظ البرنامج' : 'Saving Program'}
+            </h2>
+            <p className="text-muted-foreground mb-8">
+              {isAr ? 'جاري حفظ برنامجك...' : 'Your program is being saved...'}
+            </p>
             <Loader2 className="h-8 w-8 animate-spin mx-auto text-primary" />
           </CardContent>
         </Card>

@@ -1,7 +1,8 @@
-import { Controller, Post, Body, UseGuards } from '@nestjs/common';
+import { Controller, Post, Get, Body, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 import { AiService } from './ai.service';
 import { AiRateLimitService } from './ai-rate-limit.service';
+import { ChatPipelineService } from './chat-pipeline.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
@@ -14,22 +15,37 @@ export class AiController {
   constructor(
     private readonly aiService: AiService,
     private readonly rateLimitService: AiRateLimitService,
+    private readonly chatPipeline: ChatPipelineService,
   ) {}
 
   @Post('chat')
-  @ApiOperation({ summary: 'Chat with AI assistant' })
+  @ApiOperation({ summary: 'Smart chat with AI coach (pipeline)' })
   async chat(
     @CurrentUser() user: User,
-    @Body() body: { message: string; context?: string },
+    @Body() body: {
+      message: string;
+      context?: string;
+      language?: 'en' | 'ar';
+      conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>;
+    },
   ) {
+    // Rate limit check (local/faq/food responses are free but still counted for analytics)
     await this.rateLimitService.checkAndIncrement(user.id);
 
-    const response = await this.aiService.callGemini(body.message, {
-      systemPrompt: body.context || 'You are a helpful fitness and nutrition assistant.',
-      maxTokens: 1024,
+    const result = await this.chatPipeline.processMessage({
+      userId: user.id,
+      message: body.message,
+      language: body.language || (user.language === 'ar' ? 'ar' : 'en'),
+      conversationHistory: body.conversationHistory,
     });
 
-    return { response };
+    return result;
+  }
+
+  @Get('chat/usage')
+  @ApiOperation({ summary: 'Get AI chat usage stats for current user' })
+  async getChatUsage(@CurrentUser() user: User) {
+    return this.chatPipeline.getUsageStats(user.id);
   }
 
   @Post('workout-recommendation')

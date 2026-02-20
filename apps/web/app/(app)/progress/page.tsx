@@ -35,9 +35,9 @@ import {
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '@/lib/i18n';
 
-function formatDate(dateString: string): string {
+function formatDate(dateString: string, lang: string = 'en'): string {
   const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  return date.toLocaleDateString(lang === 'ar' ? 'ar-EG' : 'en-US', { month: 'short', day: 'numeric' });
 }
 
 function TrendIcon({ change }: { change: number }) {
@@ -48,7 +48,8 @@ function TrendIcon({ change }: { change: number }) {
 
 export default function ProgressPage() {
   const { toast } = useToast();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const [timeRange, setTimeRange] = useState<'week' | 'month' | 'year'>('month');
   const [logDialogOpen, setLogDialogOpen] = useState(false);
   const [logTab, setLogTab] = useState<'weight' | 'measurements'>('weight');
@@ -129,21 +130,21 @@ export default function ProgressPage() {
   // Prepare measurements display data
   const measurementFields = latestMeasurements
     ? [
-        { label: 'Weight', value: latestMeasurements.weight, unit: 'kg' },
-        { label: 'Body Fat', value: latestMeasurements.bodyFat, unit: '%' },
-        { label: 'Chest', value: latestMeasurements.chest, unit: 'cm' },
-        { label: 'Waist', value: latestMeasurements.waist, unit: 'cm' },
-        { label: 'Arms', value: latestMeasurements.arms, unit: 'cm' },
-        { label: 'Thighs', value: latestMeasurements.thighs, unit: 'cm' },
+        { label: isAr ? 'الوزن' : 'Weight', key: 'weight', value: latestMeasurements.weight, unit: isAr ? 'كجم' : 'kg' },
+        { label: isAr ? 'نسبة الدهون' : 'Body Fat', key: 'bodyFat', value: latestMeasurements.bodyFat, unit: '%' },
+        { label: isAr ? 'الصدر' : 'Chest', key: 'chest', value: latestMeasurements.chest, unit: isAr ? 'سم' : 'cm' },
+        { label: isAr ? 'الوسط' : 'Waist', key: 'waist', value: latestMeasurements.waist, unit: isAr ? 'سم' : 'cm' },
+        { label: isAr ? 'الذراع' : 'Arms', key: 'arms', value: latestMeasurements.arms, unit: isAr ? 'سم' : 'cm' },
+        { label: isAr ? 'الفخذ' : 'Thighs', key: 'thighs', value: latestMeasurements.thighs, unit: isAr ? 'سم' : 'cm' },
       ].filter((m) => m.value !== undefined && m.value !== null)
     : [];
 
   // Progress photos placeholder
   const progressPhotos = [
-    { date: 'Coming Soon', label: 'Week 4' },
-    { date: 'Coming Soon', label: 'Week 3' },
-    { date: 'Coming Soon', label: 'Week 2' },
-    { date: 'Coming Soon', label: 'Week 1' },
+    { date: isAr ? 'قريباً' : 'Coming Soon', label: isAr ? 'أسبوع ٤' : 'Week 4' },
+    { date: isAr ? 'قريباً' : 'Coming Soon', label: isAr ? 'أسبوع ٣' : 'Week 3' },
+    { date: isAr ? 'قريباً' : 'Coming Soon', label: isAr ? 'أسبوع ٢' : 'Week 2' },
+    { date: isAr ? 'قريباً' : 'Coming Soon', label: isAr ? 'أسبوع ١' : 'Week 1' },
   ];
 
   return (
@@ -181,7 +182,7 @@ export default function ProgressPage() {
                   id="weight"
                   type="number"
                   step="0.1"
-                  placeholder="e.g., 75.5"
+                  placeholder={isAr ? 'مثلاً ٧٥.٥' : 'e.g., 75.5'}
                   value={weightInput}
                   onChange={(e) => setWeightInput(e.target.value)}
                 />
@@ -195,7 +196,7 @@ export default function ProgressPage() {
                 {logWeight.isPending ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Saving...
+                    {isAr ? 'جاري الحفظ...' : 'Saving...'}
                   </>
                 ) : (
                   t.progress.logWeight
@@ -306,7 +307,7 @@ export default function ProgressPage() {
                 {logMeasurements.isPending ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Saving...
+                    {isAr ? 'جاري الحفظ...' : 'Saving...'}
                   </>
                 ) : (
                   t.progress.logMeasurements
@@ -329,7 +330,7 @@ export default function ProgressPage() {
                 <Badge variant="forma" className="flex items-center gap-1">
                   <TrendIcon change={weightChange} />
                   {weightChange > 0 ? '+' : ''}
-                  {weightChange.toFixed(1)} kg
+                  {weightChange.toFixed(1)} {isAr ? 'كجم' : 'kg'}
                 </Badge>
               )}
             </div>
@@ -337,7 +338,7 @@ export default function ProgressPage() {
               {latestLoading ? (
                 <Loader2 className="h-6 w-6 animate-spin" />
               ) : currentWeight ? (
-                `${currentWeight} kg`
+                `${currentWeight} ${isAr ? 'كجم' : 'kg'}`
               ) : (
                 '--'
               )}
@@ -355,7 +356,7 @@ export default function ProgressPage() {
               {latestMeasurements?.waist && measurementsData?.[1]?.waist && (
                 <Badge variant="secondary" className="flex items-center gap-1">
                   <TrendIcon change={latestMeasurements.waist - measurementsData[1].waist} />
-                  {(latestMeasurements.waist - measurementsData[1].waist).toFixed(1)} cm
+                  {(latestMeasurements.waist - measurementsData[1].waist).toFixed(1)} {isAr ? 'سم' : 'cm'}
                 </Badge>
               )}
             </div>
@@ -363,7 +364,7 @@ export default function ProgressPage() {
               {measurementsLoading ? (
                 <Loader2 className="h-6 w-6 animate-spin" />
               ) : latestMeasurements?.waist ? (
-                `${latestMeasurements.waist} cm`
+                `${latestMeasurements.waist} ${isAr ? 'سم' : 'cm'}`
               ) : (
                 '--'
               )}
@@ -381,7 +382,7 @@ export default function ProgressPage() {
               {prsData && prsData.length > 0 && (
                 <Badge variant="secondary" className="flex items-center gap-1">
                   <TrendingUp className="h-3 w-3" />
-                  PR
+                  {isAr ? 'رقم قياسي' : 'PR'}
                 </Badge>
               )}
             </div>
@@ -389,13 +390,13 @@ export default function ProgressPage() {
               {prsLoading ? (
                 <Loader2 className="h-6 w-6 animate-spin" />
               ) : prsData && prsData.length > 0 ? (
-                `${prsData[0].weight} kg`
+                `${prsData[0].weight} ${isAr ? 'كجم' : 'kg'}`
               ) : (
                 '--'
               )}
             </p>
             <p className="text-sm text-muted-foreground">
-              {prsData && prsData.length > 0 ? prsData[0].exerciseName : 'Best PR'}
+              {prsData && prsData.length > 0 ? prsData[0].exerciseName : (isAr ? 'أحسن رقم قياسي' : 'Best PR')}
             </p>
           </CardContent>
         </Card>
@@ -419,21 +420,21 @@ export default function ProgressPage() {
                   size="sm"
                   onClick={() => setTimeRange('week')}
                 >
-                  Week
+                  {isAr ? 'أسبوع' : 'Week'}
                 </Button>
                 <Button
                   variant={timeRange === 'month' ? 'default' : 'ghost'}
                   size="sm"
                   onClick={() => setTimeRange('month')}
                 >
-                  Month
+                  {isAr ? 'شهر' : 'Month'}
                 </Button>
                 <Button
                   variant={timeRange === 'year' ? 'default' : 'ghost'}
                   size="sm"
                   onClick={() => setTimeRange('year')}
                 >
-                  Year
+                  {isAr ? 'سنة' : 'Year'}
                 </Button>
               </div>
             </CardHeader>
@@ -462,10 +463,10 @@ export default function ProgressPage() {
                             <div
                               className="w-full rounded-t-lg bg-forma-teal transition-all"
                               style={{ height: `${heightPercent}%` }}
-                              title={`${data.weight} kg`}
+                              title={`${data.weight} ${isAr ? 'كجم' : 'kg'}`}
                             />
                             <span className="text-xs text-muted-foreground">
-                              {formatDate(data.date)}
+                              {formatDate(data.date, language)}
                             </span>
                           </div>
                         );
@@ -475,21 +476,21 @@ export default function ProgressPage() {
 
                   <div className="mt-4 grid grid-cols-3 gap-4 border-t pt-4">
                     <div className="text-center">
-                      <p className="text-sm text-muted-foreground">Starting</p>
+                      <p className="text-sm text-muted-foreground">{isAr ? 'البداية' : 'Starting'}</p>
                       <p className="text-lg font-bold">
-                        {startingWeight ? `${startingWeight} kg` : '--'}
+                        {startingWeight ? `${startingWeight} ${isAr ? 'كجم' : 'kg'}` : '--'}
                       </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-sm text-muted-foreground">Current</p>
+                      <p className="text-sm text-muted-foreground">{isAr ? 'الحالي' : 'Current'}</p>
                       <p className="text-lg font-bold text-forma-teal">
-                        {currentWeight ? `${currentWeight} kg` : '--'}
+                        {currentWeight ? `${currentWeight} ${isAr ? 'كجم' : 'kg'}` : '--'}
                       </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-sm text-muted-foreground">Change</p>
+                      <p className="text-sm text-muted-foreground">{isAr ? 'التغيير' : 'Change'}</p>
                       <p className="text-lg font-bold">
-                        {weightChange !== 0 ? `${weightChange > 0 ? '+' : ''}${weightChange.toFixed(1)} kg` : '--'}
+                        {weightChange !== 0 ? `${weightChange > 0 ? '+' : ''}${weightChange.toFixed(1)} ${isAr ? 'كجم' : 'kg'}` : '--'}
                       </p>
                     </div>
                   </div>
@@ -508,7 +509,7 @@ export default function ProgressPage() {
                   <Loader2 className="h-6 w-6 animate-spin" />
                 </div>
               ) : !weightData || weightData.length === 0 ? (
-                <p className="py-4 text-center text-muted-foreground">No weight entries yet</p>
+                <p className="py-4 text-center text-muted-foreground">{isAr ? 'مفيش بيانات وزن لسه' : 'No weight entries yet'}</p>
               ) : (
                 <div className="space-y-2">
                   {weightData.slice(0, 10).map((data) => (
@@ -516,8 +517,8 @@ export default function ProgressPage() {
                       key={data.date}
                       className="flex items-center justify-between rounded-lg border p-3"
                     >
-                      <span className="text-muted-foreground">{formatDate(data.date)}</span>
-                      <span className="font-semibold">{data.weight} kg</span>
+                      <span className="text-muted-foreground">{formatDate(data.date, language)}</span>
+                      <span className="font-semibold">{data.weight} {isAr ? 'كجم' : 'kg'}</span>
                     </div>
                   ))}
                 </div>
@@ -547,7 +548,7 @@ export default function ProgressPage() {
                   {measurementFields.map((m) => {
                     // Calculate change from previous measurement
                     const prev = measurementsData?.[1];
-                    const prevValue = prev?.[m.label.toLowerCase().replace(' ', '') as keyof typeof prev] as number | undefined;
+                    const prevValue = prev?.[m.key as keyof typeof prev] as number | undefined;
                     const change = prevValue !== undefined && m.value !== undefined ? m.value - prevValue : 0;
 
                     return (
@@ -606,12 +607,12 @@ export default function ProgressPage() {
                       <div>
                         <p className="font-semibold">{pr.exerciseName}</p>
                         <p className="text-sm text-muted-foreground">
-                          {pr.reps} rep{pr.reps > 1 ? 's' : ''}
+                          {pr.reps} {isAr ? (pr.reps > 1 ? 'تكرارات' : 'تكرار') : (pr.reps > 1 ? 'reps' : 'rep')}
                         </p>
                       </div>
                       <div className="text-right">
-                        <p className="text-xl font-bold text-forma-teal">{pr.weight} kg</p>
-                        <p className="text-xs text-muted-foreground">{formatDate(pr.date)}</p>
+                        <p className="text-xl font-bold text-forma-teal">{pr.weight} {isAr ? 'كجم' : 'kg'}</p>
+                        <p className="text-xs text-muted-foreground">{formatDate(pr.date, language)}</p>
                       </div>
                     </div>
                   ))}
@@ -628,7 +629,7 @@ export default function ProgressPage() {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => toast({ title: 'Coming Soon', description: 'Progress photos will be available soon' })}
+                onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'صور التقدم هتكون متاحة قريباً' : 'Progress photos will be available soon' })}
               >
                 <Camera className="mr-2 h-4 w-4" />
                 {t.progress.addPhoto}
@@ -650,7 +651,7 @@ export default function ProgressPage() {
                 ))}
               </div>
               <p className="mt-4 text-center text-sm text-muted-foreground">
-                Progress photos feature coming soon
+                {isAr ? 'خاصية صور التقدم هتكون متاحة قريباً' : 'Progress photos feature coming soon'}
               </p>
             </CardContent>
           </Card>

@@ -33,20 +33,20 @@ import { trainersApi } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
 
 const specializations = [
-  'Weight Loss',
-  'Muscle Building',
-  'Strength Training',
-  'HIIT & Cardio',
-  'Bodybuilding',
-  'Powerlifting',
-  'CrossFit',
-  'Calisthenics',
-  'Yoga & Flexibility',
-  'Sports Performance',
-  'Rehabilitation',
-  'Senior Fitness',
-  'Pre/Post Natal',
-  'Nutrition Coaching',
+  { value: 'Weight Loss', labelAr: 'تخسيس' },
+  { value: 'Muscle Building', labelAr: 'بناء عضلات' },
+  { value: 'Strength Training', labelAr: 'تدريب قوة' },
+  { value: 'HIIT & Cardio', labelAr: 'كارديو و HIIT' },
+  { value: 'Bodybuilding', labelAr: 'كمال أجسام' },
+  { value: 'Powerlifting', labelAr: 'باورليفتنج' },
+  { value: 'CrossFit', labelAr: 'كروسفيت' },
+  { value: 'Calisthenics', labelAr: 'كاليسثنكس' },
+  { value: 'Yoga & Flexibility', labelAr: 'يوجا ومرونة' },
+  { value: 'Sports Performance', labelAr: 'أداء رياضي' },
+  { value: 'Rehabilitation', labelAr: 'تأهيل إصابات' },
+  { value: 'Senior Fitness', labelAr: 'لياقة كبار السن' },
+  { value: 'Pre/Post Natal', labelAr: 'قبل/بعد الولادة' },
+  { value: 'Nutrition Coaching', labelAr: 'تدريب تغذية' },
 ];
 
 const certifications = [
@@ -65,34 +65,43 @@ const benefits = [
   {
     icon: Users,
     title: 'Access to Clients',
+    titleAr: 'وصول للعملاء',
     description: 'Connect with thousands of users looking for personal trainers',
+    descriptionAr: 'اتواصل مع آلاف المستخدمين اللي بيدوروا على مدربين شخصيين',
   },
   {
     icon: DollarSign,
     title: 'Earn More',
+    titleAr: 'اكسب أكتر',
     description: 'Set your own rates and earn up to 85% of your coaching fees',
+    descriptionAr: 'حدد أسعارك واكسب لحد 85% من رسوم التدريب',
   },
   {
     icon: Briefcase,
     title: 'Flexible Schedule',
+    titleAr: 'جدول مرن',
     description: 'Work from anywhere and set your own availability',
+    descriptionAr: 'اشتغل من أي مكان وحدد مواعيدك بنفسك',
   },
   {
     icon: Star,
     title: 'Build Your Brand',
+    titleAr: 'ابني اسمك',
     description: 'Create your profile, share programs, and grow your reputation',
+    descriptionAr: 'اعمل بروفايلك وشارك برامجك وكبّر سمعتك',
   },
 ];
 
 const steps = [
-  { id: 1, name: 'Personal Info', icon: FileText },
-  { id: 2, name: 'Experience', icon: Briefcase },
-  { id: 3, name: 'Certifications', icon: Award },
-  { id: 4, name: 'Pricing', icon: DollarSign },
+  { id: 1, name: 'Personal Info', nameAr: 'بياناتك', icon: FileText },
+  { id: 2, name: 'Experience', nameAr: 'الخبرة', icon: Briefcase },
+  { id: 3, name: 'Certifications', nameAr: 'الشهادات', icon: Award },
+  { id: 4, name: 'Pricing', nameAr: 'الأسعار', icon: DollarSign },
 ];
 
 export default function BecomeTrainerPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({
@@ -160,7 +169,7 @@ export default function BecomeTrainerPage() {
       router.push('/become-trainer/success');
     } catch (error) {
       // Error handled
-      setSubmitError(error instanceof Error ? error.message : 'Failed to submit application');
+      setSubmitError(error instanceof Error ? error.message : (isAr ? 'فشل تقديم الطلب' : 'Failed to submit application'));
     } finally {
       setIsSubmitting(false);
     }
@@ -176,7 +185,7 @@ export default function BecomeTrainerPage() {
         <div className="rounded-2xl bg-gradient-to-br from-forma-teal/20 to-forma-teal/5 p-8 lg:p-12">
           <div className="max-w-2xl">
             <Badge variant="forma" className="mb-4">
-              Trainer Program
+              {isAr ? 'برنامج المدربين' : 'Trainer Program'}
             </Badge>
             <h1 className="text-3xl font-bold lg:text-4xl">
               {t.becomeTrainer.title}
@@ -193,7 +202,7 @@ export default function BecomeTrainerPage() {
 
         {/* Benefits */}
         <div>
-          <h2 className="mb-6 text-xl font-semibold">Why Join Forma?</h2>
+          <h2 className="mb-6 text-xl font-semibold">{isAr ? 'ليه تنضم لفورما؟' : 'Why Join Forma?'}</h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {benefits.map((benefit) => (
               <Card key={benefit.title}>
@@ -201,9 +210,9 @@ export default function BecomeTrainerPage() {
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-forma-teal/10">
                     <benefit.icon className="h-6 w-6 text-forma-teal" />
                   </div>
-                  <h3 className="font-semibold">{benefit.title}</h3>
+                  <h3 className="font-semibold">{isAr ? benefit.titleAr : benefit.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    {benefit.description}
+                    {isAr ? benefit.descriptionAr : benefit.description}
                   </p>
                 </CardContent>
               </Card>
@@ -216,18 +225,24 @@ export default function BecomeTrainerPage() {
           <CardHeader>
             <CardTitle>{t.becomeTrainer.requirements}</CardTitle>
             <CardDescription>
-              What you need to become a Forma trainer
+              {isAr ? 'اللي محتاجه عشان تبقى مدرب في فورما' : 'What you need to become a Forma trainer'}
             </CardDescription>
           </CardHeader>
           <CardContent>
             <ul className="space-y-3">
-              {[
+              {(isAr ? [
+                'شهادة فيتنس معتمدة من جهة معترف بيها',
+                'خبرة سنة على الأقل في التدريب',
+                'شغف إنك تساعد الناس توصل لأهدافها',
+                'مهارات تواصل ممتازة',
+                'القدرة على عمل برامج تمارين وتغذية مخصصة',
+              ] : [
                 'Valid fitness certification from a recognized organization',
                 'Minimum 1 year of professional training experience',
                 'Passion for helping others achieve their fitness goals',
                 'Excellent communication skills',
                 'Ability to create personalized workout and nutrition plans',
-              ].map((req, index) => (
+              ]).map((req, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-forma-teal/10">
                     <Check className="h-3 w-3 text-forma-teal" />
@@ -244,19 +259,19 @@ export default function BecomeTrainerPage() {
           <Card>
             <CardContent className="p-6 text-center">
               <p className="text-3xl font-bold text-forma-teal">500+</p>
-              <p className="text-sm text-muted-foreground">Active Trainers</p>
+              <p className="text-sm text-muted-foreground">{isAr ? 'مدرب نشط' : 'Active Trainers'}</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6 text-center">
               <p className="text-3xl font-bold text-forma-teal">50,000+</p>
-              <p className="text-sm text-muted-foreground">Active Users</p>
+              <p className="text-sm text-muted-foreground">{isAr ? 'مستخدم نشط' : 'Active Users'}</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6 text-center">
               <p className="text-3xl font-bold text-forma-teal">85%</p>
-              <p className="text-sm text-muted-foreground">Revenue Share</p>
+              <p className="text-sm text-muted-foreground">{isAr ? 'نسبة الأرباح' : 'Revenue Share'}</p>
             </CardContent>
           </Card>
         </div>
@@ -271,10 +286,10 @@ export default function BecomeTrainerPage() {
         <div className="mb-4 flex items-center justify-between">
           <Button variant="ghost" onClick={prevStep}>
             <ChevronLeft className="mr-2 h-4 w-4" />
-            Back
+            {isAr ? 'رجوع' : 'Back'}
           </Button>
           <span className="text-sm text-muted-foreground">
-            Step {currentStep} of {steps.length}
+            {isAr ? `خطوة ${currentStep} من ${steps.length}` : `Step ${currentStep} of ${steps.length}`}
           </span>
         </div>
         <Progress value={progress} className="h-2" />
@@ -304,7 +319,7 @@ export default function BecomeTrainerPage() {
                 )}
               </div>
               <span className="mt-2 hidden text-xs font-medium sm:block">
-                {step.name}
+                {isAr ? step.nameAr : step.name}
               </span>
             </div>
           ))}
@@ -315,22 +330,22 @@ export default function BecomeTrainerPage() {
       {currentStep === 1 && (
         <Card>
           <CardHeader>
-            <CardTitle>Tell Us About Yourself</CardTitle>
+            <CardTitle>{isAr ? 'كلمنا عن نفسك' : 'Tell Us About Yourself'}</CardTitle>
             <CardDescription>
-              Share your background and what makes you a great trainer
+              {isAr ? 'شاركنا خلفيتك وإيه اللي بيميزك كمدرب' : 'Share your background and what makes you a great trainer'}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
               <Label>{t.becomeTrainer.bio}</Label>
               <Textarea
-                placeholder="Write a compelling bio that highlights your experience, training philosophy, and what clients can expect when working with you..."
+                placeholder={isAr ? 'اكتب نبذة عنك توضح خبرتك وفلسفتك في التدريب وإيه اللي العملاء هيستفادوه معاك...' : 'Write a compelling bio that highlights your experience, training philosophy, and what clients can expect when working with you...'}
                 className="mt-1.5 min-h-[150px]"
                 value={formData.bio}
                 onChange={(e) => setFormData({ ...formData, bio: e.target.value })}
               />
               <p className="mt-1.5 text-sm text-muted-foreground">
-                {formData.bio.length}/500 characters
+                {formData.bio.length}/500 {isAr ? 'حرف' : 'characters'}
               </p>
             </div>
 
@@ -343,13 +358,13 @@ export default function BecomeTrainerPage() {
                 }
               >
                 <SelectTrigger className="mt-1.5">
-                  <SelectValue placeholder="Select years of experience" />
+                  <SelectValue placeholder={isAr ? 'اختار سنين الخبرة' : 'Select years of experience'} />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="1-2">1-2 years</SelectItem>
-                  <SelectItem value="3-5">3-5 years</SelectItem>
-                  <SelectItem value="5-10">5-10 years</SelectItem>
-                  <SelectItem value="10+">10+ years</SelectItem>
+                  <SelectItem value="1-2">{isAr ? '١-٢ سنين' : '1-2 years'}</SelectItem>
+                  <SelectItem value="3-5">{isAr ? '٣-٥ سنين' : '3-5 years'}</SelectItem>
+                  <SelectItem value="5-10">{isAr ? '٥-١٠ سنين' : '5-10 years'}</SelectItem>
+                  <SelectItem value="10+">{isAr ? '+١٠ سنين' : '10+ years'}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -357,22 +372,22 @@ export default function BecomeTrainerPage() {
             <div>
               <Label>{t.becomeTrainer.specialization}</Label>
               <p className="mb-3 text-sm text-muted-foreground">
-                Select all areas you specialize in
+                {isAr ? 'اختار كل المجالات اللي متخصص فيها' : 'Select all areas you specialize in'}
               </p>
               <div className="flex flex-wrap gap-2">
                 {specializations.map((spec) => (
                   <Badge
-                    key={spec}
+                    key={spec.value}
                     variant={
-                      formData.specializations.includes(spec) ? 'forma' : 'outline'
+                      formData.specializations.includes(spec.value) ? 'forma' : 'outline'
                     }
                     className="cursor-pointer"
-                    onClick={() => handleSpecializationToggle(spec)}
+                    onClick={() => handleSpecializationToggle(spec.value)}
                   >
-                    {formData.specializations.includes(spec) && (
+                    {formData.specializations.includes(spec.value) && (
                       <Check className="mr-1 h-3 w-3" />
                     )}
-                    {spec}
+                    {isAr ? spec.labelAr : spec.value}
                   </Badge>
                 ))}
               </div>
@@ -402,12 +417,12 @@ export default function BecomeTrainerPage() {
           <CardHeader>
             <CardTitle>{t.becomeTrainer.experience}</CardTitle>
             <CardDescription>
-              Tell us about your professional background
+              {isAr ? 'كلمنا عن خلفيتك المهنية' : 'Tell us about your professional background'}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
-              <Label>Availability</Label>
+              <Label>{isAr ? 'التفرّغ' : 'Availability'}</Label>
               <Select
                 value={formData.availability}
                 onValueChange={(value) =>
@@ -418,41 +433,46 @@ export default function BecomeTrainerPage() {
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="full-time">Full-time (40+ hours/week)</SelectItem>
-                  <SelectItem value="part-time">Part-time (20-40 hours/week)</SelectItem>
-                  <SelectItem value="flexible">Flexible (Less than 20 hours/week)</SelectItem>
+                  <SelectItem value="full-time">{isAr ? 'دوام كامل (+٤٠ ساعة/أسبوع)' : 'Full-time (40+ hours/week)'}</SelectItem>
+                  <SelectItem value="part-time">{isAr ? 'دوام جزئي (٢٠-٤٠ ساعة/أسبوع)' : 'Part-time (20-40 hours/week)'}</SelectItem>
+                  <SelectItem value="flexible">{isAr ? 'مرن (أقل من ٢٠ ساعة/أسبوع)' : 'Flexible (Less than 20 hours/week)'}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <div>
-              <Label>Languages</Label>
+              <Label>{isAr ? 'اللغات' : 'Languages'}</Label>
               <div className="mt-2 flex flex-wrap gap-2">
-                {['Arabic', 'English', 'French', 'German'].map((lang) => (
+                {([
+                  { value: 'Arabic', labelAr: 'عربي' },
+                  { value: 'English', labelAr: 'إنجليزي' },
+                  { value: 'French', labelAr: 'فرنساوي' },
+                  { value: 'German', labelAr: 'ألماني' },
+                ] as const).map((lang) => (
                   <Badge
-                    key={lang}
-                    variant={formData.languages.includes(lang) ? 'forma' : 'outline'}
+                    key={lang.value}
+                    variant={formData.languages.includes(lang.value) ? 'forma' : 'outline'}
                     className="cursor-pointer"
                     onClick={() =>
                       setFormData({
                         ...formData,
-                        languages: formData.languages.includes(lang)
-                          ? formData.languages.filter((l) => l !== lang)
-                          : [...formData.languages, lang],
+                        languages: formData.languages.includes(lang.value)
+                          ? formData.languages.filter((l) => l !== lang.value)
+                          : [...formData.languages, lang.value],
                       })
                     }
                   >
-                    {formData.languages.includes(lang) && (
+                    {formData.languages.includes(lang.value) && (
                       <Check className="mr-1 h-3 w-3" />
                     )}
-                    {lang}
+                    {isAr ? lang.labelAr : lang.value}
                   </Badge>
                 ))}
               </div>
             </div>
 
             <div>
-              <Label>Social Links (Optional)</Label>
+              <Label>{isAr ? 'لينكات السوشيال ميديا (اختياري)' : 'Social Links (Optional)'}</Label>
               <div className="mt-2 space-y-3">
                 <div className="flex items-center gap-2">
                   <span className="w-24 text-sm text-muted-foreground">Instagram</span>
@@ -473,7 +493,7 @@ export default function BecomeTrainerPage() {
                 <div className="flex items-center gap-2">
                   <span className="w-24 text-sm text-muted-foreground">YouTube</span>
                   <Input
-                    placeholder="Channel URL"
+                    placeholder={isAr ? 'لينك القناة' : 'Channel URL'}
                     value={formData.socialLinks.youtube}
                     onChange={(e) =>
                       setFormData({
@@ -487,7 +507,7 @@ export default function BecomeTrainerPage() {
                   />
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-24 text-sm text-muted-foreground">Website</span>
+                  <span className="w-24 text-sm text-muted-foreground">{isAr ? 'موقع' : 'Website'}</span>
                   <Input
                     placeholder="https://..."
                     value={formData.socialLinks.website}
@@ -521,14 +541,14 @@ export default function BecomeTrainerPage() {
           <CardHeader>
             <CardTitle>{t.becomeTrainer.certifications}</CardTitle>
             <CardDescription>
-              Select your certifications and upload proof
+              {isAr ? 'اختار شهاداتك وارفع الإثبات' : 'Select your certifications and upload proof'}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div>
               <Label>{t.becomeTrainer.certifications}</Label>
               <p className="mb-3 text-sm text-muted-foreground">
-                Select all certifications you hold
+                {isAr ? 'اختار كل الشهادات اللي عندك' : 'Select all certifications you hold'}
               </p>
               <div className="space-y-2">
                 {certifications.map((cert) => (
@@ -551,20 +571,20 @@ export default function BecomeTrainerPage() {
             </div>
 
             <div>
-              <Label>Upload Certification Documents</Label>
+              <Label>{isAr ? 'ارفع مستندات الشهادات' : 'Upload Certification Documents'}</Label>
               <p className="mb-3 text-sm text-muted-foreground">
-                Upload scans or photos of your certifications (PDF, JPG, PNG)
+                {isAr ? 'ارفع صور أو سكان من شهاداتك (PDF, JPG, PNG)' : 'Upload scans or photos of your certifications (PDF, JPG, PNG)'}
               </p>
               <div className="flex flex-col items-center justify-center rounded-lg border-2 border-dashed p-8">
                 <Upload className="h-10 w-10 text-muted-foreground" />
                 <p className="mt-4 text-sm font-medium">
-                  Drag and drop files here, or click to browse
+                  {isAr ? 'اسحب الملفات هنا أو اضغط عشان تختار' : 'Drag and drop files here, or click to browse'}
                 </p>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  Max file size: 10MB
+                  {isAr ? 'أقصى حجم للملف: 10MB' : 'Max file size: 10MB'}
                 </p>
                 <Button variant="outline" className="mt-4">
-                  Select Files
+                  {isAr ? 'اختار ملفات' : 'Select Files'}
                 </Button>
               </div>
             </div>
@@ -587,21 +607,21 @@ export default function BecomeTrainerPage() {
       {currentStep === 4 && (
         <Card>
           <CardHeader>
-            <CardTitle>Set Your Rates</CardTitle>
+            <CardTitle>{isAr ? 'حدد أسعارك' : 'Set Your Rates'}</CardTitle>
             <CardDescription>
-              Define your pricing for different services
+              {isAr ? 'حدد تسعيرك للخدمات المختلفة' : 'Define your pricing for different services'}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="rounded-lg bg-muted/50 p-4">
               <p className="text-sm text-muted-foreground">
-                Forma takes a 15% platform fee. You keep 85% of all earnings.
+                {isAr ? 'فورما بتاخد 15% رسوم منصة. إنت بتاخد 85% من كل الأرباح.' : 'Forma takes a 15% platform fee. You keep 85% of all earnings.'}
               </p>
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">
               <div>
-                <Label>Hourly Rate (EGP)</Label>
+                <Label>{isAr ? 'سعر الساعة (جنيه)' : 'Hourly Rate (EGP)'}</Label>
                 <div className="relative mt-1.5">
                   <DollarSign className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <Input
@@ -615,12 +635,12 @@ export default function BecomeTrainerPage() {
                   />
                 </div>
                 <p className="mt-1.5 text-sm text-muted-foreground">
-                  For 1-on-1 video sessions
+                  {isAr ? 'لجلسات الفيديو الفردية' : 'For 1-on-1 video sessions'}
                 </p>
               </div>
 
               <div>
-                <Label>Monthly Plan Rate (EGP)</Label>
+                <Label>{isAr ? 'سعر الباقة الشهرية (جنيه)' : 'Monthly Plan Rate (EGP)'}</Label>
                 <div className="relative mt-1.5">
                   <DollarSign className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <Input
@@ -634,28 +654,28 @@ export default function BecomeTrainerPage() {
                   />
                 </div>
                 <p className="mt-1.5 text-sm text-muted-foreground">
-                  For full month coaching programs
+                  {isAr ? 'لبرامج التدريب الشهرية الكاملة' : 'For full month coaching programs'}
                 </p>
               </div>
             </div>
 
             <div className="rounded-lg border p-4">
-              <h4 className="font-medium">Earnings Preview</h4>
+              <h4 className="font-medium">{isAr ? 'معاينة الأرباح' : 'Earnings Preview'}</h4>
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div>
-                  <p className="text-sm text-muted-foreground">Per Session (You Earn)</p>
+                  <p className="text-sm text-muted-foreground">{isAr ? 'لكل جلسة (هتاخد)' : 'Per Session (You Earn)'}</p>
                   <p className="text-xl font-bold text-forma-teal">
                     {formData.hourlyRate
-                      ? `${Math.round(Number(formData.hourlyRate) * 0.85)} EGP`
-                      : '- EGP'}
+                      ? `${Math.round(Number(formData.hourlyRate) * 0.85)} ${isAr ? 'جنيه' : 'EGP'}`
+                      : `- ${isAr ? 'جنيه' : 'EGP'}`}
                   </p>
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Per Month (You Earn)</p>
+                  <p className="text-sm text-muted-foreground">{isAr ? 'في الشهر (هتاخد)' : 'Per Month (You Earn)'}</p>
                   <p className="text-xl font-bold text-forma-teal">
                     {formData.monthlyRate
-                      ? `${Math.round(Number(formData.monthlyRate) * 0.85)} EGP`
-                      : '- EGP'}
+                      ? `${Math.round(Number(formData.monthlyRate) * 0.85)} ${isAr ? 'جنيه' : 'EGP'}`
+                      : `- ${isAr ? 'جنيه' : 'EGP'}`}
                   </p>
                 </div>
               </div>
@@ -676,7 +696,7 @@ export default function BecomeTrainerPage() {
                 {isSubmitting ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Submitting...
+                    {isAr ? 'جاري التقديم...' : 'Submitting...'}
                   </>
                 ) : (
                   t.becomeTrainer.submit

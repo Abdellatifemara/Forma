@@ -2,6 +2,7 @@
 
 import { Component, ReactNode } from 'react';
 import { AlertCircle, RefreshCw, Home, Bug } from 'lucide-react';
+import { reportError } from '@/lib/error-reporter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -35,8 +36,10 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
     this.setState({ errorInfo });
     this.props.onError?.(error, errorInfo);
 
-    // Log to error reporting service
-    console.error('Error caught by ErrorBoundary:', error, errorInfo);
+    reportError({
+      message: error.message,
+      stack: error.stack || errorInfo.componentStack || undefined,
+    });
   }
 
   handleRetry = () => {
@@ -106,7 +109,7 @@ export function ErrorFallback({ error, onRetry, showDetails = false }: ErrorFall
 
           <p className="text-center text-xs text-muted-foreground">
             If this problem persists, please{' '}
-            <a href="mailto:support@forma.app" className="underline">
+            <a href="mailto:support@formaeg.com" className="underline">
               contact support
             </a>
           </p>

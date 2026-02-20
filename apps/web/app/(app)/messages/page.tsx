@@ -26,7 +26,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/lib/i18n';
 import { FeatureGate } from '@/components/feature-gate';
 
-function formatTime(dateString: string) {
+function formatTime(dateString: string, isAr = false) {
   const date = new Date(dateString);
   const now = new Date();
   const diffMs = now.getTime() - date.getTime();
@@ -34,11 +34,11 @@ function formatTime(dateString: string) {
   const diffHours = Math.floor(diffMins / 60);
   const diffDays = Math.floor(diffHours / 24);
 
-  if (diffMins < 1) return 'Just now';
-  if (diffMins < 60) return `${diffMins}m ago`;
-  if (diffHours < 24) return `${diffHours}h ago`;
-  if (diffDays === 1) return 'Yesterday';
-  if (diffDays < 7) return `${diffDays}d ago`;
+  if (diffMins < 1) return isAr ? 'دلوقتي' : 'Just now';
+  if (diffMins < 60) return isAr ? `من ${diffMins} د` : `${diffMins}m ago`;
+  if (diffHours < 24) return isAr ? `من ${diffHours} س` : `${diffHours}h ago`;
+  if (diffDays === 1) return isAr ? 'امبارح' : 'Yesterday';
+  if (diffDays < 7) return isAr ? `من ${diffDays} يوم` : `${diffDays}d ago`;
 
   return date.toLocaleDateString();
 }
@@ -49,7 +49,8 @@ function formatMessageTime(dateString: string) {
 }
 
 export default function MessagesPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const [selectedConversationId, setSelectedConversationId] = useState<string | null>(null);
   const [newMessage, setNewMessage] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
@@ -146,7 +147,7 @@ export default function MessagesPage() {
             <div className="space-y-2">
               <img
                 src={message.mediaUrl}
-                alt="Shared image"
+                alt={isAr ? 'صورة مشتركة' : 'Shared image'}
                 className="max-w-full rounded-lg cursor-pointer"
                 onClick={() => window.open(message.mediaUrl, '_blank')}
               />
@@ -251,16 +252,16 @@ export default function MessagesPage() {
                     </div>
                     <div className="flex-1 overflow-hidden">
                       <div className="flex items-center justify-between">
-                        <p className="font-medium">{conv.participant?.name || 'Unknown'}</p>
+                        <p className="font-medium">{conv.participant?.name || (isAr ? 'مجهول' : 'Unknown')}</p>
                         {conv.lastMessage && (
                           <span className="text-xs text-muted-foreground">
-                            {formatTime(conv.lastMessage.createdAt)}
+                            {formatTime(conv.lastMessage.createdAt, isAr)}
                           </span>
                         )}
                       </div>
                       <p className="truncate text-sm text-muted-foreground">
-                        {conv.lastMessage?.isMine && 'You: '}
-                        {conv.lastMessage?.content || 'No messages yet'}
+                        {conv.lastMessage?.isMine && (isAr ? 'انت: ' : 'You: ')}
+                        {conv.lastMessage?.content || (isAr ? 'مفيش رسايل لسه' : 'No messages yet')}
                       </p>
                     </div>
                     {conv.unreadCount > 0 && (
@@ -317,7 +318,7 @@ export default function MessagesPage() {
                   <p className="font-medium">{selectedConversation.participant?.name}</p>
                   <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
                     <ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
-                    <span className="text-emerald-600">End-to-end encrypted</span>
+                    <span className="text-emerald-600">{isAr ? 'مشفّر بالكامل' : 'End-to-end encrypted'}</span>
                     <span className="mx-1">·</span>
                     <span>{selectedConversation.participant?.isOnline ? t.messages.online : t.messages.offline}</span>
                   </div>
@@ -331,11 +332,11 @@ export default function MessagesPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem>View Trainer Profile</DropdownMenuItem>
-                    <DropdownMenuItem>View My Program</DropdownMenuItem>
-                    <DropdownMenuItem>Schedule Session</DropdownMenuItem>
+                    <DropdownMenuItem>{isAr ? 'بروفايل المدرب' : 'View Trainer Profile'}</DropdownMenuItem>
+                    <DropdownMenuItem>{isAr ? 'برنامجي' : 'View My Program'}</DropdownMenuItem>
+                    <DropdownMenuItem>{isAr ? 'حجز جلسة' : 'Schedule Session'}</DropdownMenuItem>
                     <DropdownMenuItem className="text-destructive">
-                      Report Issue
+                      {isAr ? 'إبلاغ عن مشكلة' : 'Report Issue'}
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -351,8 +352,8 @@ export default function MessagesPage() {
               ) : messages.length === 0 ? (
                 <div className="flex items-center justify-center h-full text-center text-muted-foreground px-4">
                   <div>
-                    <p className="mb-2">No messages yet.</p>
-                    <p className="text-sm">Send a message to start the conversation with your trainer!</p>
+                    <p className="mb-2">{isAr ? 'مفيش رسايل لسه.' : 'No messages yet.'}</p>
+                    <p className="text-sm">{isAr ? 'ابعت رسالة عشان تبدأ الكلام مع المدرب بتاعك!' : 'Send a message to start the conversation with your trainer!'}</p>
                   </div>
                 </div>
               ) : (
@@ -360,7 +361,7 @@ export default function MessagesPage() {
                   {hasNextPage && (
                     <div className="text-center">
                       <Button variant="ghost" size="sm" onClick={() => fetchNextPage()}>
-                        Load older messages
+                        {isAr ? 'تحميل رسايل أقدم' : 'Load older messages'}
                       </Button>
                     </div>
                   )}

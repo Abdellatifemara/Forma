@@ -52,6 +52,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { programsApi, exercisesApi } from '@/lib/api';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 interface ExerciseResult {
   id: string;
@@ -103,6 +104,8 @@ export default function ProgramBuilderPage() {
   const params = useParams();
   const router = useRouter();
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const programId = params.id as string;
 
   const [program, setProgram] = useState<Program | null>(null);
@@ -142,7 +145,7 @@ export default function ProgramBuilderPage() {
           priceEGP: data.priceEGP || 0,
         });
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load program');
+        setError(err instanceof Error ? err.message : (isAr ? 'فشل تحميل البرنامج' : 'Failed to load program'));
       } finally {
         setIsLoading(false);
       }
@@ -208,9 +211,9 @@ export default function ProgramBuilderPage() {
 
       setShowExerciseDialog(false);
       setExerciseSearch('');
-      toast({ title: 'Exercise added' });
+      toast({ title: isAr ? 'تم إضافة التمرين' : 'Exercise added' });
     } catch (err) {
-      toast({ title: 'Failed to add exercise', variant: 'destructive' });
+      toast({ title: isAr ? 'فشل إضافة التمرين' : 'Failed to add exercise', variant: 'destructive' });
     }
   };
 
@@ -231,9 +234,9 @@ export default function ProgramBuilderPage() {
           ),
         };
       });
-      toast({ title: 'Exercise removed' });
+      toast({ title: isAr ? 'تم حذف التمرين' : 'Exercise removed' });
     } catch {
-      toast({ title: 'Failed to remove exercise', variant: 'destructive' });
+      toast({ title: isAr ? 'فشل حذف التمرين' : 'Failed to remove exercise', variant: 'destructive' });
     }
   };
 
@@ -286,9 +289,9 @@ export default function ProgramBuilderPage() {
       });
 
       setHasChanges(false);
-      toast({ title: 'Program saved' });
+      toast({ title: isAr ? 'تم حفظ البرنامج' : 'Program saved' });
     } catch {
-      toast({ title: 'Failed to save', variant: 'destructive' });
+      toast({ title: isAr ? 'فشل الحفظ' : 'Failed to save', variant: 'destructive' });
     } finally {
       setIsSaving(false);
     }
@@ -310,9 +313,9 @@ export default function ProgramBuilderPage() {
         };
       });
       setSelectedDayId(newDay.id);
-      toast({ title: isRest ? 'Rest day added' : 'Workout day added' });
+      toast({ title: isRest ? (isAr ? 'تم إضافة يوم راحة' : 'Rest day added') : (isAr ? 'تم إضافة يوم تمرين' : 'Workout day added') });
     } catch {
-      toast({ title: 'Failed to add day', variant: 'destructive' });
+      toast({ title: isAr ? 'فشل إضافة اليوم' : 'Failed to add day', variant: 'destructive' });
     }
   };
 
@@ -331,9 +334,9 @@ export default function ProgramBuilderPage() {
       if (selectedDayId === dayId) {
         setSelectedDayId(program.workoutDays[0]?.id || '');
       }
-      toast({ title: 'Day removed' });
+      toast({ title: isAr ? 'تم حذف اليوم' : 'Day removed' });
     } catch {
-      toast({ title: 'Failed to remove day', variant: 'destructive' });
+      toast({ title: isAr ? 'فشل حذف اليوم' : 'Failed to remove day', variant: 'destructive' });
     }
   };
 
@@ -357,9 +360,9 @@ export default function ProgramBuilderPage() {
       } : prev);
 
       setShowSettingsDialog(false);
-      toast({ title: 'Settings saved' });
+      toast({ title: isAr ? 'تم حفظ الإعدادات' : 'Settings saved' });
     } catch {
-      toast({ title: 'Failed to save settings', variant: 'destructive' });
+      toast({ title: isAr ? 'فشل حفظ الإعدادات' : 'Failed to save settings', variant: 'destructive' });
     }
   };
 
@@ -375,10 +378,10 @@ export default function ProgramBuilderPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load program</h2>
+        <h2 className="text-xl font-semibold mb-2">{isAr ? 'فشل تحميل البرنامج' : 'Failed to load program'}</h2>
         <p className="text-muted-foreground mb-4">{error}</p>
         <Button variant="outline" asChild>
-          <Link href="/trainer/programs">Back to Programs</Link>
+          <Link href="/trainer/programs">{isAr ? 'رجوع للبرامج' : 'Back to Programs'}</Link>
         </Button>
       </div>
     );
@@ -396,18 +399,18 @@ export default function ProgramBuilderPage() {
           </Button>
           <div>
             <h1 className="text-2xl font-bold">{program.nameEn}</h1>
-            <p className="text-muted-foreground">{program.descriptionEn || 'No description'}</p>
+            <p className="text-muted-foreground">{program.descriptionEn || (isAr ? 'بدون وصف' : 'No description')}</p>
           </div>
         </div>
 
         <div className="flex items-center gap-2">
           <Button variant="outline" onClick={() => setShowSettingsDialog(true)}>
-            <Settings className="mr-2 h-4 w-4" />
-            Settings
+            <Settings className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            {isAr ? 'الإعدادات' : 'Settings'}
           </Button>
           <Button variant="forma" onClick={saveExerciseChanges} disabled={!hasChanges || isSaving}>
             {isSaving ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Save className="mr-2 h-4 w-4" />}
-            {hasChanges ? 'Save Changes' : 'Saved'}
+            {hasChanges ? (isAr ? 'حفظ التغييرات' : 'Save Changes') : (isAr ? 'تم الحفظ' : 'Saved')}
           </Button>
         </div>
       </div>
@@ -416,18 +419,18 @@ export default function ProgramBuilderPage() {
       <div className="flex flex-wrap gap-4">
         <Badge variant="outline" className="py-1.5">
           <Calendar className="mr-1 h-3 w-3" />
-          {program.durationWeeks} weeks
+          {program.durationWeeks} {isAr ? 'أسابيع' : 'weeks'}
         </Badge>
         <Badge variant="outline" className="py-1.5">
           <Dumbbell className="mr-1 h-3 w-3" />
-          {program.workoutDays.length} days
+          {program.workoutDays.length} {isAr ? 'أيام' : 'days'}
         </Badge>
         <Badge variant="outline" className="py-1.5 capitalize">
           {program.status.toLowerCase()}
         </Badge>
         {program.priceEGP && (
           <Badge variant="forma" className="py-1.5">
-            {program.priceEGP} EGP
+            {program.priceEGP} {isAr ? 'ج.م' : 'EGP'}
           </Badge>
         )}
       </div>
@@ -437,7 +440,7 @@ export default function ProgramBuilderPage() {
         <Card className="lg:col-span-1">
           <CardHeader className="pb-3">
             <div className="flex items-center justify-between">
-              <CardTitle className="text-base">Workout Days</CardTitle>
+              <CardTitle className="text-base">{isAr ? 'أيام التمرين' : 'Workout Days'}</CardTitle>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" size="icon" className="h-8 w-8">
@@ -447,11 +450,11 @@ export default function ProgramBuilderPage() {
                 <DropdownMenuContent>
                   <DropdownMenuItem onClick={() => addDay(false)}>
                     <Dumbbell className="mr-2 h-4 w-4" />
-                    Add Workout Day
+                    {isAr ? 'إضافة يوم تمرين' : 'Add Workout Day'}
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => addDay(true)}>
                     <Calendar className="mr-2 h-4 w-4" />
-                    Add Rest Day
+                    {isAr ? 'إضافة يوم راحة' : 'Add Rest Day'}
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -474,8 +477,8 @@ export default function ProgramBuilderPage() {
                     <p className="text-sm font-medium">{day.nameEn || `Day ${day.dayNumber}`}</p>
                     <p className="text-xs text-muted-foreground">
                       {day.exercises.length === 0 && day.nameEn?.toLowerCase().includes('rest')
-                        ? 'Rest & Recovery'
-                        : `${day.exercises.length} exercises`}
+                        ? (isAr ? 'راحة واستشفاء' : 'Rest & Recovery')
+                        : `${day.exercises.length} ${isAr ? 'تمارين' : 'exercises'}`}
                     </p>
                   </div>
                 </div>
@@ -497,7 +500,7 @@ export default function ProgramBuilderPage() {
                       onClick={() => removeDay(day.id)}
                     >
                       <Trash2 className="mr-2 h-4 w-4" />
-                      Delete
+                      {isAr ? 'حذف' : 'Delete'}
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -511,17 +514,17 @@ export default function ProgramBuilderPage() {
           <CardHeader>
             <div className="flex items-center justify-between">
               <div>
-                <CardTitle>{currentDay?.nameEn || 'Select a day'}</CardTitle>
+                <CardTitle>{currentDay?.nameEn || (isAr ? 'اختار يوم' : 'Select a day')}</CardTitle>
                 <CardDescription>
                   {isRestDay
-                    ? 'Rest and recovery day'
-                    : 'Add and configure exercises'}
+                    ? (isAr ? 'يوم راحة واستشفاء' : 'Rest and recovery day')
+                    : (isAr ? 'أضف واظبط التمارين' : 'Add and configure exercises')}
                 </CardDescription>
               </div>
               {currentDay && !isRestDay && (
                 <Button variant="forma" onClick={() => setShowExerciseDialog(true)}>
-                  <Plus className="mr-2 h-4 w-4" />
-                  Add Exercise
+                  <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                  {isAr ? 'إضافة تمرين' : 'Add Exercise'}
                 </Button>
               )}
             </div>
@@ -532,9 +535,9 @@ export default function ProgramBuilderPage() {
                 <div className="rounded-full bg-muted p-4">
                   <Calendar className="h-8 w-8 text-muted-foreground" />
                 </div>
-                <h3 className="mt-4 font-semibold">Rest Day</h3>
+                <h3 className="mt-4 font-semibold">{isAr ? 'يوم راحة' : 'Rest Day'}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Recovery is essential for muscle growth and preventing injury
+                  {isAr ? 'الراحة مهمة لنمو العضلات ومنع الإصابات' : 'Recovery is essential for muscle growth and preventing injury'}
                 </p>
               </div>
             ) : currentDay?.exercises.length === 0 ? (
@@ -542,17 +545,17 @@ export default function ProgramBuilderPage() {
                 <div className="rounded-full bg-muted p-4">
                   <Dumbbell className="h-8 w-8 text-muted-foreground" />
                 </div>
-                <h3 className="mt-4 font-semibold">No exercises yet</h3>
+                <h3 className="mt-4 font-semibold">{isAr ? 'مفيش تمارين لسه' : 'No exercises yet'}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Start building this workout by adding exercises
+                  {isAr ? 'ابدأ ببناء التمرين بإضافة تمارين' : 'Start building this workout by adding exercises'}
                 </p>
                 <Button
                   variant="forma"
                   className="mt-4"
                   onClick={() => setShowExerciseDialog(true)}
                 >
-                  <Plus className="mr-2 h-4 w-4" />
-                  Add First Exercise
+                  <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                  {isAr ? 'أضف أول تمرين' : 'Add First Exercise'}
                 </Button>
               </div>
             ) : (
@@ -576,7 +579,7 @@ export default function ProgramBuilderPage() {
                             {exercise.exercise?.nameEn || exercise.customNameEn || 'Exercise'}
                           </h4>
                           <Badge variant="secondary" className="mt-1 text-xs">
-                            {exercise.exercise?.primaryMuscle || 'General'}
+                            {exercise.exercise?.primaryMuscle || (isAr ? 'عام' : 'General')}
                           </Badge>
                         </div>
                         <Button
@@ -591,7 +594,7 @@ export default function ProgramBuilderPage() {
 
                       <div className="grid grid-cols-3 gap-3">
                         <div>
-                          <Label className="text-xs">Sets</Label>
+                          <Label className="text-xs">{isAr ? 'مجموعات' : 'Sets'}</Label>
                           <Input
                             type="number"
                             value={exercise.sets}
@@ -602,7 +605,7 @@ export default function ProgramBuilderPage() {
                           />
                         </div>
                         <div>
-                          <Label className="text-xs">Reps</Label>
+                          <Label className="text-xs">{isAr ? 'تكرارات' : 'Reps'}</Label>
                           <Input
                             value={exercise.reps || ''}
                             onChange={(e) =>
@@ -613,7 +616,7 @@ export default function ProgramBuilderPage() {
                           />
                         </div>
                         <div>
-                          <Label className="text-xs">Rest (sec)</Label>
+                          <Label className="text-xs">{isAr ? 'راحة (ثانية)' : 'Rest (sec)'}</Label>
                           <Input
                             type="number"
                             value={exercise.restSeconds}
@@ -626,14 +629,14 @@ export default function ProgramBuilderPage() {
                       </div>
 
                       <div>
-                        <Label className="text-xs">Notes (optional)</Label>
+                        <Label className="text-xs">{isAr ? 'ملاحظات (اختياري)' : 'Notes (optional)'}</Label>
                         <Input
                           value={exercise.notesEn || ''}
                           onChange={(e) =>
                             updateExercise(exercise.id, 'notesEn', e.target.value)
                           }
                           className="mt-1 h-9"
-                          placeholder="Form tips, tempo, etc."
+                          placeholder={isAr ? 'نصائح الأداء، السرعة، إلخ' : 'Form tips, tempo, etc.'}
                         />
                       </div>
                     </div>
@@ -649,16 +652,16 @@ export default function ProgramBuilderPage() {
       <Dialog open={showExerciseDialog} onOpenChange={setShowExerciseDialog}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
-            <DialogTitle>Add Exercise</DialogTitle>
+            <DialogTitle>{isAr ? 'إضافة تمرين' : 'Add Exercise'}</DialogTitle>
             <DialogDescription>
-              Search from {2862} exercises in the database
+              {isAr ? 'ابحث من قاعدة بيانات التمارين' : 'Search from our exercise database'}
             </DialogDescription>
           </DialogHeader>
 
           <div className="relative">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
-              placeholder="Search exercises (e.g. bench press, squat, deadlift)..."
+              placeholder={isAr ? 'ابحث عن تمارين...' : 'Search exercises (e.g. bench press, squat, deadlift)...'}
               value={exerciseSearch}
               onChange={(e) => setExerciseSearch(e.target.value)}
               className="pl-9"
@@ -674,13 +677,13 @@ export default function ProgramBuilderPage() {
 
             {!searchLoading && exerciseSearch && exerciseResults.length === 0 && (
               <div className="text-center py-8 text-muted-foreground">
-                No exercises found for &quot;{exerciseSearch}&quot;
+                {isAr ? `مفيش تمارين لـ "${exerciseSearch}"` : <>No exercises found for &quot;{exerciseSearch}&quot;</>}
               </div>
             )}
 
             {!searchLoading && !exerciseSearch && (
               <div className="text-center py-8 text-muted-foreground">
-                Type to search exercises...
+                {isAr ? 'اكتب عشان تبحث عن تمارين...' : 'Type to search exercises...'}
               </div>
             )}
 
@@ -712,13 +715,13 @@ export default function ProgramBuilderPage() {
       <Dialog open={showSettingsDialog} onOpenChange={setShowSettingsDialog}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Program Settings</DialogTitle>
-            <DialogDescription>Configure your program details</DialogDescription>
+            <DialogTitle>{isAr ? 'إعدادات البرنامج' : 'Program Settings'}</DialogTitle>
+            <DialogDescription>{isAr ? 'اظبط تفاصيل برنامجك' : 'Configure your program details'}</DialogDescription>
           </DialogHeader>
 
           <div className="space-y-4 py-4">
             <div>
-              <Label>Program Name</Label>
+              <Label>{isAr ? 'اسم البرنامج' : 'Program Name'}</Label>
               <Input
                 value={settingsForm.nameEn}
                 onChange={(e) => setSettingsForm({ ...settingsForm, nameEn: e.target.value })}
@@ -727,7 +730,7 @@ export default function ProgramBuilderPage() {
             </div>
 
             <div>
-              <Label>Description</Label>
+              <Label>{isAr ? 'الوصف' : 'Description'}</Label>
               <Textarea
                 value={settingsForm.descriptionEn}
                 onChange={(e) => setSettingsForm({ ...settingsForm, descriptionEn: e.target.value })}
@@ -737,7 +740,7 @@ export default function ProgramBuilderPage() {
 
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <Label>Duration (weeks)</Label>
+                <Label>{isAr ? 'المدة (أسابيع)' : 'Duration (weeks)'}</Label>
                 <Input
                   type="number"
                   value={settingsForm.durationWeeks}
@@ -746,7 +749,7 @@ export default function ProgramBuilderPage() {
                 />
               </div>
               <div>
-                <Label>Price (EGP)</Label>
+                <Label>{isAr ? 'السعر (ج.م)' : 'Price (EGP)'}</Label>
                 <Input
                   type="number"
                   value={settingsForm.priceEGP}
@@ -759,10 +762,10 @@ export default function ProgramBuilderPage() {
 
           <DialogFooter>
             <Button variant="outline" onClick={() => setShowSettingsDialog(false)}>
-              Cancel
+              {isAr ? 'إلغاء' : 'Cancel'}
             </Button>
             <Button variant="forma" onClick={saveSettings}>
-              Save Settings
+              {isAr ? 'حفظ الإعدادات' : 'Save Settings'}
             </Button>
           </DialogFooter>
         </DialogContent>

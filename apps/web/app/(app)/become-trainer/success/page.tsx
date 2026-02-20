@@ -4,8 +4,12 @@ import Link from 'next/link';
 import { CheckCircle, Clock, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/lib/i18n';
 
 export default function TrainerApplicationSuccessPage() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
   return (
     <div className="flex min-h-[80vh] items-center justify-center pb-20 lg:ml-64 lg:pb-6">
       <Card className="max-w-md">
@@ -14,19 +18,20 @@ export default function TrainerApplicationSuccessPage() {
             <CheckCircle className="h-8 w-8 text-forma-teal" />
           </div>
 
-          <h1 className="text-2xl font-bold">Application Submitted!</h1>
+          <h1 className="text-2xl font-bold">{isAr ? 'تم إرسال الطلب!' : 'Application Submitted!'}</h1>
           <p className="mt-3 text-muted-foreground">
-            Thank you for applying to become a Forma trainer. We've received your
-            application and will review it shortly.
+            {isAr
+              ? 'شكراً لتقديمك طلب للانضمام كمدرب في فورما. استلمنا طلبك وهنراجعه قريباً.'
+              : "Thank you for applying to become a Forma trainer. We've received your application and will review it shortly."}
           </p>
 
           <div className="mt-8 space-y-4">
             <div className="flex items-center gap-4 rounded-lg bg-muted/50 p-4 text-left">
               <Clock className="h-5 w-5 text-muted-foreground" />
               <div>
-                <p className="font-medium">Review Time</p>
+                <p className="font-medium">{isAr ? 'وقت المراجعة' : 'Review Time'}</p>
                 <p className="text-sm text-muted-foreground">
-                  Applications are typically reviewed within 2-3 business days
+                  {isAr ? 'الطلبات بتتراجع خلال 2-3 أيام عمل' : 'Applications are typically reviewed within 2-3 business days'}
                 </p>
               </div>
             </div>
@@ -34,10 +39,11 @@ export default function TrainerApplicationSuccessPage() {
             <div className="flex items-center gap-4 rounded-lg bg-muted/50 p-4 text-left">
               <Mail className="h-5 w-5 text-muted-foreground" />
               <div>
-                <p className="font-medium">Check Your Email</p>
+                <p className="font-medium">{isAr ? 'راجع بريدك' : 'Check Your Email'}</p>
                 <p className="text-sm text-muted-foreground">
-                  We'll send you an email with the next steps once your
-                  application is reviewed
+                  {isAr
+                    ? 'هنبعتلك إيميل بالخطوات الجاية لما نراجع طلبك'
+                    : "We'll send you an email with the next steps once your application is reviewed"}
                 </p>
               </div>
             </div>
@@ -45,10 +51,10 @@ export default function TrainerApplicationSuccessPage() {
 
           <div className="mt-8 space-y-3">
             <Button variant="forma" className="w-full" asChild>
-              <Link href="/dashboard">Return to Dashboard</Link>
+              <Link href="/dashboard">{isAr ? 'الرجوع للوحة التحكم' : 'Return to Dashboard'}</Link>
             </Button>
             <Button variant="outline" className="w-full" asChild>
-              <Link href="/profile">View Your Profile</Link>
+              <Link href="/profile">{isAr ? 'عرض ملفك' : 'View Your Profile'}</Link>
             </Button>
           </div>
         </CardContent>

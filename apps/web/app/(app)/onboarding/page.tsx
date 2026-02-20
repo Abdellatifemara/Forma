@@ -29,76 +29,79 @@ import { cn } from '@/lib/utils';
 import { usersApi } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
 
-const steps = [
-  { id: 'goal', title: 'Your Goal', icon: Target, description: 'What brings you here?' },
-  { id: 'experience', title: 'Experience', icon: Dumbbell, description: 'Your fitness journey' },
-  { id: 'body', title: 'Body Stats', icon: Scale, description: 'Help us personalize' },
-  { id: 'activity', title: 'Activity Level', icon: Activity, description: 'Your daily routine' },
-  { id: 'equipment', title: 'Equipment', icon: Home, description: 'Where you train' },
-];
-
-const goals = [
-  { value: 'LOSE_WEIGHT', label: 'Lose Weight', description: 'Burn fat and slim down', icon: Flame, color: 'from-orange-500 to-red-500' },
-  { value: 'BUILD_MUSCLE', label: 'Build Muscle', description: 'Gain size and strength', icon: Dumbbell, color: 'from-cyan-500 to-blue-500' },
-  { value: 'GET_STRONGER', label: 'Get Stronger', description: 'Increase your lifts', icon: TrendingUp, color: 'from-purple-500 to-pink-500' },
-  { value: 'IMPROVE_HEALTH', label: 'Improve Health', description: 'Feel better daily', icon: Heart, color: 'from-green-500 to-emerald-500' },
-  { value: 'INCREASE_ENDURANCE', label: 'Endurance', description: 'Go longer & harder', icon: Zap, color: 'from-yellow-500 to-orange-500' },
-];
-
-const experienceLevels = [
-  {
-    value: 'BEGINNER',
-    label: 'Beginner',
-    description: "I'm new to fitness",
-    detail: 'Perfect! We\'ll start with the fundamentals',
-    weeks: '0-6 months'
-  },
-  {
-    value: 'INTERMEDIATE',
-    label: 'Intermediate',
-    description: 'I train regularly',
-    detail: 'We\'ll push your boundaries further',
-    weeks: '6 months - 2 years'
-  },
-  {
-    value: 'ADVANCED',
-    label: 'Advanced',
-    description: 'I\'m experienced',
-    detail: 'Ready for serious progression',
-    weeks: '2+ years'
-  },
-];
-
-const activityLevels = [
-  { value: 'SEDENTARY', label: 'Sedentary', description: 'Little to no exercise', icon: '🪑', multiplier: 1.2 },
-  { value: 'LIGHT', label: 'Lightly Active', description: 'Light exercise 1-3 days/week', icon: '🚶', multiplier: 1.375 },
-  { value: 'MODERATE', label: 'Moderately Active', description: 'Moderate exercise 3-5 days/week', icon: '🏃', multiplier: 1.55 },
-  { value: 'ACTIVE', label: 'Very Active', description: 'Hard exercise 6-7 days/week', icon: '💪', multiplier: 1.725 },
-  { value: 'VERY_ACTIVE', label: 'Athlete', description: 'Professional athlete level', icon: '🏆', multiplier: 1.9 },
-];
-
-const workoutLocations = [
-  { value: 'gym', label: 'Gym', description: 'Full equipment access', icon: Building2 },
-  { value: 'home', label: 'Home', description: 'Limited equipment', icon: Home },
-  { value: 'outdoor', label: 'Outdoor', description: 'Parks & bodyweight', icon: TreePine },
-  { value: 'work', label: 'Office', description: 'Quick sessions', icon: Briefcase },
-];
-
-const equipmentOptions = [
-  { value: 'DUMBBELLS', label: 'Dumbbells' },
-  { value: 'BARBELL', label: 'Barbell' },
-  { value: 'KETTLEBELL', label: 'Kettlebell' },
-  { value: 'RESISTANCE_BANDS', label: 'Resistance Bands' },
-  { value: 'PULL_UP_BAR', label: 'Pull-up Bar' },
-  { value: 'BENCH', label: 'Bench' },
-  { value: 'CABLE_MACHINE', label: 'Cable Machine' },
-  { value: 'TREADMILL', label: 'Treadmill' },
-  { value: 'ROWING_MACHINE', label: 'Rowing Machine' },
-  { value: 'BODYWEIGHT', label: 'Bodyweight Only' },
-];
+// Static config arrays are defined inside the component to access isAr
 
 export default function OnboardingPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
+
+  const steps = [
+    { id: 'goal', title: isAr ? 'هدفك' : 'Your Goal', icon: Target, description: isAr ? 'إيه اللي جابك هنا؟' : 'What brings you here?' },
+    { id: 'experience', title: isAr ? 'الخبرة' : 'Experience', icon: Dumbbell, description: isAr ? 'رحلتك في الفيتنس' : 'Your fitness journey' },
+    { id: 'body', title: isAr ? 'قياسات الجسم' : 'Body Stats', icon: Scale, description: isAr ? 'عشان نخصصلك البرنامج' : 'Help us personalize' },
+    { id: 'activity', title: isAr ? 'مستوى النشاط' : 'Activity Level', icon: Activity, description: isAr ? 'روتينك اليومي' : 'Your daily routine' },
+    { id: 'equipment', title: isAr ? 'الأدوات' : 'Equipment', icon: Home, description: isAr ? 'بتتمرن فين؟' : 'Where you train' },
+  ];
+
+  const goals = [
+    { value: 'LOSE_WEIGHT', label: isAr ? 'نزول وزن' : 'Lose Weight', description: isAr ? 'حرق دهون وتخسيس' : 'Burn fat and slim down', icon: Flame, color: 'from-orange-500 to-red-500' },
+    { value: 'BUILD_MUSCLE', label: isAr ? 'بناء عضل' : 'Build Muscle', description: isAr ? 'زيادة حجم وقوة' : 'Gain size and strength', icon: Dumbbell, color: 'from-cyan-500 to-blue-500' },
+    { value: 'GET_STRONGER', label: isAr ? 'زيادة قوة' : 'Get Stronger', description: isAr ? 'ارفع أتقل' : 'Increase your lifts', icon: TrendingUp, color: 'from-purple-500 to-pink-500' },
+    { value: 'IMPROVE_HEALTH', label: isAr ? 'تحسين الصحة' : 'Improve Health', description: isAr ? 'حس بتحسن كل يوم' : 'Feel better daily', icon: Heart, color: 'from-green-500 to-emerald-500' },
+    { value: 'INCREASE_ENDURANCE', label: isAr ? 'تحمّل' : 'Endurance', description: isAr ? 'استمر أكتر وأقوى' : 'Go longer & harder', icon: Zap, color: 'from-yellow-500 to-orange-500' },
+  ];
+
+  const experienceLevels = [
+    {
+      value: 'BEGINNER',
+      label: isAr ? 'مبتدئ' : 'Beginner',
+      description: isAr ? 'أنا جديد في الفيتنس' : "I'm new to fitness",
+      detail: isAr ? 'تمام! هنبدأ معاك من الأساسيات' : 'Perfect! We\'ll start with the fundamentals',
+      weeks: isAr ? '٠-٦ شهور' : '0-6 months'
+    },
+    {
+      value: 'INTERMEDIATE',
+      label: isAr ? 'متوسط' : 'Intermediate',
+      description: isAr ? 'بتمرن بانتظام' : 'I train regularly',
+      detail: isAr ? 'هنوصلك لمستوى أعلى' : 'We\'ll push your boundaries further',
+      weeks: isAr ? '٦ شهور - سنتين' : '6 months - 2 years'
+    },
+    {
+      value: 'ADVANCED',
+      label: isAr ? 'متقدم' : 'Advanced',
+      description: isAr ? 'عندي خبرة' : 'I\'m experienced',
+      detail: isAr ? 'جاهز للتقدم الجدي' : 'Ready for serious progression',
+      weeks: isAr ? '+٢ سنين' : '2+ years'
+    },
+  ];
+
+  const activityLevels = [
+    { value: 'SEDENTARY', label: isAr ? 'قليل الحركة' : 'Sedentary', description: isAr ? 'مفيش تمارين تقريباً' : 'Little to no exercise', icon: '🪑', multiplier: 1.2 },
+    { value: 'LIGHT', label: isAr ? 'نشاط خفيف' : 'Lightly Active', description: isAr ? 'تمارين خفيفة ١-٣ أيام/أسبوع' : 'Light exercise 1-3 days/week', icon: '🚶', multiplier: 1.375 },
+    { value: 'MODERATE', label: isAr ? 'نشاط متوسط' : 'Moderately Active', description: isAr ? 'تمارين متوسطة ٣-٥ أيام/أسبوع' : 'Moderate exercise 3-5 days/week', icon: '🏃', multiplier: 1.55 },
+    { value: 'ACTIVE', label: isAr ? 'نشيط جداً' : 'Very Active', description: isAr ? 'تمارين شاقة ٦-٧ أيام/أسبوع' : 'Hard exercise 6-7 days/week', icon: '💪', multiplier: 1.725 },
+    { value: 'VERY_ACTIVE', label: isAr ? 'رياضي محترف' : 'Athlete', description: isAr ? 'مستوى رياضي محترف' : 'Professional athlete level', icon: '🏆', multiplier: 1.9 },
+  ];
+
+  const workoutLocations = [
+    { value: 'gym', label: isAr ? 'جيم' : 'Gym', description: isAr ? 'أجهزة كاملة' : 'Full equipment access', icon: Building2 },
+    { value: 'home', label: isAr ? 'البيت' : 'Home', description: isAr ? 'أدوات محدودة' : 'Limited equipment', icon: Home },
+    { value: 'outdoor', label: isAr ? 'في الهوا' : 'Outdoor', description: isAr ? 'حدائق وتمارين بالجسم' : 'Parks & bodyweight', icon: TreePine },
+    { value: 'work', label: isAr ? 'المكتب' : 'Office', description: isAr ? 'جلسات سريعة' : 'Quick sessions', icon: Briefcase },
+  ];
+
+  const equipmentOptions = [
+    { value: 'DUMBBELLS', label: isAr ? 'دمبلز' : 'Dumbbells' },
+    { value: 'BARBELL', label: isAr ? 'بار' : 'Barbell' },
+    { value: 'KETTLEBELL', label: isAr ? 'كيتل بل' : 'Kettlebell' },
+    { value: 'RESISTANCE_BANDS', label: isAr ? 'أحبال مقاومة' : 'Resistance Bands' },
+    { value: 'PULL_UP_BAR', label: isAr ? 'بار عقلة' : 'Pull-up Bar' },
+    { value: 'BENCH', label: isAr ? 'بنش' : 'Bench' },
+    { value: 'CABLE_MACHINE', label: isAr ? 'جهاز كابل' : 'Cable Machine' },
+    { value: 'TREADMILL', label: isAr ? 'مشاية' : 'Treadmill' },
+    { value: 'ROWING_MACHINE', label: isAr ? 'جهاز تجديف' : 'Rowing Machine' },
+    { value: 'BODYWEIGHT', label: isAr ? 'بدون أدوات' : 'Bodyweight Only' },
+  ];
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
@@ -171,7 +174,7 @@ export default function OnboardingPage() {
       });
       router.push('/dashboard');
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to save profile');
+      setError(err instanceof Error ? err.message : (isAr ? 'فشل حفظ البيانات' : 'Failed to save profile'));
       setIsLoading(false);
     }
   };
@@ -331,7 +334,7 @@ export default function OnboardingPage() {
                 <div className="space-y-6">
                   <div className="text-center">
                     <h1 className="text-2xl font-bold mb-2">{t.onboarding.fitnessLevel}</h1>
-                    <p className="text-muted-foreground">We'll tailor your workouts accordingly</p>
+                    <p className="text-muted-foreground">{isAr ? 'هنظبط التمارين على مستواك' : "We'll tailor your workouts accordingly"}</p>
                   </div>
                   <div className="grid gap-4">
                     {experienceLevels.map((level) => {
@@ -376,13 +379,13 @@ export default function OnboardingPage() {
               {currentStep === 2 && (
                 <div className="space-y-6">
                   <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-2">Tell us about your body</h1>
-                    <p className="text-muted-foreground">This helps us calculate your nutrition needs</p>
+                    <h1 className="text-2xl font-bold mb-2">{isAr ? 'قولنا عن جسمك' : 'Tell us about your body'}</h1>
+                    <p className="text-muted-foreground">{isAr ? 'ده بيساعدنا نحسب احتياجاتك الغذائية' : 'This helps us calculate your nutrition needs'}</p>
                   </div>
                   <div className="space-y-5">
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label className="text-sm font-medium">Current Weight</Label>
+                        <Label className="text-sm font-medium">{isAr ? 'الوزن الحالي' : 'Current Weight'}</Label>
                         <div className="relative">
                           <Input
                             type="number"
@@ -395,7 +398,7 @@ export default function OnboardingPage() {
                         </div>
                       </div>
                       <div className="space-y-2">
-                        <Label className="text-sm font-medium">Height</Label>
+                        <Label className="text-sm font-medium">{isAr ? 'الطول' : 'Height'}</Label>
                         <div className="relative">
                           <Input
                             type="number"
@@ -409,7 +412,7 @@ export default function OnboardingPage() {
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <Label className="text-sm font-medium">Target Weight <span className="text-muted-foreground">(optional)</span></Label>
+                      <Label className="text-sm font-medium">{isAr ? 'الوزن المستهدف' : 'Target Weight'} <span className="text-muted-foreground">{isAr ? '(اختياري)' : '(optional)'}</span></Label>
                       <div className="relative">
                         <Input
                           type="number"
@@ -429,10 +432,10 @@ export default function OnboardingPage() {
                           <Sparkles className="h-5 w-5 text-primary" />
                           <div>
                             <p className="text-sm font-medium">
-                              Your BMI: {(parseFloat(formData.currentWeight) / Math.pow(parseFloat(formData.height) / 100, 2)).toFixed(1)}
+                              {isAr ? 'مؤشر كتلة الجسم: ' : 'Your BMI: '}{(parseFloat(formData.currentWeight) / Math.pow(parseFloat(formData.height) / 100, 2)).toFixed(1)}
                             </p>
                             <p className="text-xs text-muted-foreground">
-                              We'll use this to personalize your plan
+                              {isAr ? 'هنستخدم ده عشان نخصصلك الخطة' : "We'll use this to personalize your plan"}
                             </p>
                           </div>
                         </div>
@@ -446,8 +449,8 @@ export default function OnboardingPage() {
               {currentStep === 3 && (
                 <div className="space-y-6">
                   <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-2">How active are you?</h1>
-                    <p className="text-muted-foreground">Outside of planned workouts</p>
+                    <h1 className="text-2xl font-bold mb-2">{isAr ? 'قد إيه بتتحرك؟' : 'How active are you?'}</h1>
+                    <p className="text-muted-foreground">{isAr ? 'غير التمارين المخططة' : 'Outside of planned workouts'}</p>
                   </div>
                   <div className="grid gap-3">
                     {activityLevels.map((level) => {
@@ -485,13 +488,13 @@ export default function OnboardingPage() {
               {currentStep === 4 && (
                 <div className="space-y-6">
                   <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-2">What equipment do you have?</h1>
-                    <p className="text-muted-foreground">Select all that apply</p>
+                    <h1 className="text-2xl font-bold mb-2">{isAr ? 'عندك إيه من الأدوات؟' : 'What equipment do you have?'}</h1>
+                    <p className="text-muted-foreground">{isAr ? 'اختار كل اللي عندك' : 'Select all that apply'}</p>
                   </div>
 
                   {/* Workout Location */}
                   <div className="space-y-3">
-                    <Label className="text-sm font-medium">Where do you usually train?</Label>
+                    <Label className="text-sm font-medium">{isAr ? 'بتتمرن فين عادةً؟' : 'Where do you usually train?'}</Label>
                     <div className="grid grid-cols-2 gap-3">
                       {workoutLocations.map((location) => {
                         const Icon = location.icon;
@@ -524,7 +527,7 @@ export default function OnboardingPage() {
 
                   {/* Equipment Selection */}
                   <div className="space-y-3">
-                    <Label className="text-sm font-medium">Available Equipment</Label>
+                    <Label className="text-sm font-medium">{isAr ? 'الأدوات المتاحة' : 'Available Equipment'}</Label>
                     <div className="flex flex-wrap gap-2">
                       {equipmentOptions.map((eq) => {
                         const isSelected = formData.equipment.includes(eq.value);
@@ -582,7 +585,7 @@ export default function OnboardingPage() {
                 {isLoading ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Setting up...
+                    {isAr ? 'جاري التجهيز...' : 'Setting up...'}
                   </>
                 ) : (
                   <>

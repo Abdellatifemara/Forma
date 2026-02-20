@@ -1,4 +1,5 @@
 import { API_URL } from '@/lib/constants';
+import { reportError } from '@/lib/error-reporter';
 
 const API_BASE_URL = API_URL;
 
@@ -79,14 +80,30 @@ class ApiClient {
       headers['Authorization'] = `Bearer ${token}`;
     }
 
-    const response = await fetch(url, {
-      ...init,
-      headers,
-    });
+    let response: Response;
+    try {
+      response = await fetch(url, {
+        ...init,
+        headers,
+      });
+    } catch (networkError) {
+      const msg = networkError instanceof Error ? networkError.message : 'Network error';
+      reportError({
+        message: msg,
+        endpoint: `${init.method || 'GET'} ${endpoint}`,
+      });
+      throw networkError;
+    }
 
     if (!response.ok) {
       const error = await response.json().catch(() => ({ message: 'An error occurred' }));
-      throw new Error(error.message || `HTTP error! status: ${response.status}`);
+      const errorMessage = error.message || `HTTP error! status: ${response.status}`;
+      reportError({
+        message: errorMessage,
+        endpoint: `${init.method || 'GET'} ${endpoint}`,
+        status: response.status,
+      });
+      throw new Error(errorMessage);
     }
 
     // Handle empty responses (204 No Content, etc.)
@@ -227,6 +244,25 @@ export const authApi = {
     if (!response.ok) {
       const error = await response.json().catch(() => ({ message: 'Request failed' }));
       throw new Error(error.message || 'Failed to send reset email');
+    }
+
+    return response.json();
+  },
+
+  changePassword: async (currentPassword: string, newPassword: string): Promise<{ message: string }> => {
+    const token = getAuthCookie();
+    const response = await fetch(`${API_BASE_URL}/auth/change-password`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(token ? { Authorization: `Bearer ${token}` } : {}),
+      },
+      body: JSON.stringify({ currentPassword, newPassword }),
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({ message: 'Request failed' }));
+      throw new Error(error.message || 'Failed to change password');
     }
 
     return response.json();
@@ -619,9 +655,35 @@ export const chatApi = {
 };
 
 // AI API
+export interface ChatPipelineResponse {
+  response: string;
+  source: 'local' | 'faq' | 'food_search' | 'exercise_search' | 'program_match' | 'ai' | 'premium_gate';
+  data?: any;
+  remainingQueries?: number;
+  dailyLimit?: number;
+}
+
+export interface ChatUsageStats {
+  used: number;
+  limit: number;
+  tier: string;
+}
+
 export const aiApi = {
-  chat: (message: string, context?: string) =>
-    api.post<{ response: string }>('/ai/chat', { message, context }),
+  chat: (message: string, options?: {
+    context?: string;
+    language?: 'en' | 'ar';
+    conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>;
+  }) =>
+    api.post<ChatPipelineResponse>('/ai/chat', {
+      message,
+      context: options?.context,
+      language: options?.language,
+      conversationHistory: options?.conversationHistory,
+    }),
+
+  getChatUsage: () =>
+    api.get<ChatUsageStats>('/ai/chat/usage'),
 
   getWorkoutRecommendation: (data: { fitnessGoal: string; fitnessLevel: string; equipment: string[] }) =>
     api.post<{ recommendation: string }>('/ai/workout-recommendation', data),

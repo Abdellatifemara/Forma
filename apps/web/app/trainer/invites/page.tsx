@@ -37,8 +37,12 @@ import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { trainersApi, type TrainerInvite } from '@/lib/api';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/lib/i18n';
 
 export default function TrainerInvitesPage() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
   const [invites, setInvites] = useState<TrainerInvite[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -60,7 +64,7 @@ export default function TrainerInvitesPage() {
       const data = await trainersApi.getMyInvites();
       setInvites(data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load invites');
+      setError(err instanceof Error ? err.message : isAr ? 'فشل تحميل الدعوات' : 'Failed to load invites');
     } finally {
       setIsLoading(false);
     }
@@ -84,8 +88,8 @@ export default function TrainerInvitesPage() {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'Join me on Forma',
-          text: 'I want to be your personal trainer! Use this link to join:',
+          title: isAr ? 'انضم لي على فورما' : 'Join me on Forma',
+          text: isAr ? 'عايزك تنضم لي! استخدم الرابط ده:' : 'I want to be your personal trainer! Use this link to join:',
           url: invite.link,
         });
       } catch (err) {
@@ -155,9 +159,9 @@ export default function TrainerInvitesPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load invites</h2>
+        <h2 className="text-xl font-semibold mb-2">{isAr ? 'فشل تحميل الدعوات' : 'Failed to load invites'}</h2>
         <p className="text-muted-foreground mb-4">{error}</p>
-        <Button onClick={fetchInvites}>Try Again</Button>
+        <Button onClick={fetchInvites}>{isAr ? 'حاول تاني' : 'Try Again'}</Button>
       </div>
     );
   }
@@ -167,9 +171,9 @@ export default function TrainerInvitesPage() {
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Invite Links</h1>
+          <h1 className="text-3xl font-bold">{isAr ? 'روابط الدعوة' : 'Invite Links'}</h1>
           <p className="text-muted-foreground">
-            Create and manage invite links to grow your client base
+            {isAr ? 'إنشاء وإدارة روابط الدعوة لتوسيع قاعدة عملاءك' : 'Create and manage invite links to grow your client base'}
           </p>
         </div>
 
@@ -177,22 +181,22 @@ export default function TrainerInvitesPage() {
           <DialogTrigger asChild>
             <Button className="btn-primary">
               <Plus className="h-5 w-5 mr-2" />
-              Create Invite
+              {isAr ? 'إنشاء دعوة' : 'Create Invite'}
             </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Create New Invite Link</DialogTitle>
+              <DialogTitle>{isAr ? 'إنشاء رابط دعوة جديد' : 'Create New Invite Link'}</DialogTitle>
               <DialogDescription>
-                Generate a unique invite link to share with potential clients
+                {isAr ? 'أنشئ رابط دعوة فريد لمشاركته مع العملاء المحتملين' : 'Generate a unique invite link to share with potential clients'}
               </DialogDescription>
             </DialogHeader>
             <div className="py-4 space-y-4">
               <div className="flex items-center justify-between">
                 <div className="space-y-0.5">
-                  <Label htmlFor="premium">Grant Premium Access</Label>
+                  <Label htmlFor="premium">{isAr ? 'منح وصول بريميوم' : 'Grant Premium Access'}</Label>
                   <p className="text-sm text-muted-foreground">
-                    Clients who join with this link get free Premium
+                    {isAr ? 'العملاء اللي بينضموا بالرابط ده بياخدوا بريميوم مجاني' : 'Clients who join with this link get free Premium'}
                   </p>
                 </div>
                 <Switch
@@ -203,25 +207,25 @@ export default function TrainerInvitesPage() {
               </div>
               {grantsPremium && (
                 <div className="p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/30 text-sm">
-                  <p className="text-yellow-500 font-medium">Trusted Partner Feature</p>
+                  <p className="text-yellow-500 font-medium">{isAr ? 'ميزة الشريك الموثوق' : 'Trusted Partner Feature'}</p>
                   <p className="text-muted-foreground">
-                    Only Trusted Partners can gift Premium access
+                    {isAr ? 'الشركاء الموثوقين بس يقدروا يهدوا وصول بريميوم' : 'Only Trusted Partners can gift Premium access'}
                   </p>
                 </div>
               )}
             </div>
             <DialogFooter>
               <Button variant="outline" onClick={() => setIsCreateDialogOpen(false)}>
-                Cancel
+                {isAr ? 'إلغاء' : 'Cancel'}
               </Button>
               <Button onClick={handleCreate} disabled={isCreating}>
                 {isCreating ? (
                   <>
                     <Loader2 className="h-4 w-4 animate-spin mr-2" />
-                    Creating...
+                    {isAr ? 'جاري الإنشاء...' : 'Creating...'}
                   </>
                 ) : (
-                  'Create Link'
+                  isAr ? 'إنشاء الرابط' : 'Create Link'
                 )}
               </Button>
             </DialogFooter>
@@ -239,7 +243,7 @@ export default function TrainerInvitesPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold">{activeInvites.length}</p>
-                <p className="text-sm text-muted-foreground">Active Links</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'روابط نشطة' : 'Active Links'}</p>
               </div>
             </div>
           </CardContent>
@@ -254,7 +258,7 @@ export default function TrainerInvitesPage() {
                 <p className="text-2xl font-bold">
                   {invites.reduce((sum, inv) => sum + inv.uses, 0)}
                 </p>
-                <p className="text-sm text-muted-foreground">Total Joins</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'إجمالي الانضمام' : 'Total Joins'}</p>
               </div>
             </div>
           </CardContent>
@@ -269,7 +273,7 @@ export default function TrainerInvitesPage() {
                 <p className="text-2xl font-bold">
                   {invites.filter(inv => inv.grantsPremium).reduce((sum, inv) => sum + inv.uses, 0)}
                 </p>
-                <p className="text-sm text-muted-foreground">Premium Gifted</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'بريميوم مجاني' : 'Premium Gifted'}</p>
               </div>
             </div>
           </CardContent>
@@ -279,15 +283,15 @@ export default function TrainerInvitesPage() {
       {/* Active Invites */}
       <Card className="glass border-border/50">
         <CardHeader>
-          <CardTitle>Active Invite Links</CardTitle>
-          <CardDescription>Links that clients can currently use to join</CardDescription>
+          <CardTitle>{isAr ? 'روابط الدعوة النشطة' : 'Active Invite Links'}</CardTitle>
+          <CardDescription>{isAr ? 'الروابط اللي العملاء يقدروا يستخدموها دلوقتي' : 'Links that clients can currently use to join'}</CardDescription>
         </CardHeader>
         <CardContent>
           {activeInvites.length === 0 ? (
             <div className="text-center py-8 text-muted-foreground">
               <Link2 className="h-12 w-12 mx-auto mb-3 opacity-50" />
-              <p>No active invite links</p>
-              <p className="text-sm">Create one to start inviting clients</p>
+              <p>{isAr ? 'مفيش روابط دعوة نشطة' : 'No active invite links'}</p>
+              <p className="text-sm">{isAr ? 'أنشئ واحد عشان تبدأ تدعو عملاء' : 'Create one to start inviting clients'}</p>
             </div>
           ) : (
             <div className="space-y-3">
@@ -311,12 +315,12 @@ export default function TrainerInvitesPage() {
                     <div className="flex items-center gap-4 text-sm text-muted-foreground">
                       <span className="flex items-center gap-1">
                         <Users className="h-4 w-4" />
-                        {invite.uses} joins
+                        {invite.uses} {isAr ? 'انضمام' : 'joins'}
                       </span>
                       {invite.expiresAt && (
                         <span className="flex items-center gap-1">
                           <Clock className="h-4 w-4" />
-                          Expires {new Date(invite.expiresAt).toLocaleDateString()}
+                          {isAr ? 'ينتهي' : 'Expires'} {new Date(invite.expiresAt).toLocaleDateString()}
                         </span>
                       )}
                     </div>
@@ -331,12 +335,12 @@ export default function TrainerInvitesPage() {
                       {copiedId === invite.id ? (
                         <>
                           <Check className="h-4 w-4 mr-1 text-green-500" />
-                          Copied
+                          {isAr ? 'تم النسخ' : 'Copied'}
                         </>
                       ) : (
                         <>
                           <Copy className="h-4 w-4 mr-1" />
-                          Copy
+                          {isAr ? 'نسخ' : 'Copy'}
                         </>
                       )}
                     </Button>
@@ -347,7 +351,7 @@ export default function TrainerInvitesPage() {
                       className="h-9"
                     >
                       <Share2 className="h-4 w-4 mr-1" />
-                      Share
+                      {isAr ? 'مشاركة' : 'Share'}
                     </Button>
                     <Button
                       variant="ghost"
@@ -369,7 +373,7 @@ export default function TrainerInvitesPage() {
       {expiredInvites.length > 0 && (
         <Card className="glass border-border/50 opacity-75">
           <CardHeader>
-            <CardTitle className="text-muted-foreground">Expired & Deactivated</CardTitle>
+            <CardTitle className="text-muted-foreground">{isAr ? 'منتهية ومعطلة' : 'Expired & Deactivated'}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-2">
@@ -383,7 +387,7 @@ export default function TrainerInvitesPage() {
                       {invite.code}
                     </code>
                     <p className="text-xs text-muted-foreground">
-                      {invite.uses} joins • {invite.isExpired ? 'Expired' : 'Deactivated'}
+                      {invite.uses} {isAr ? 'انضمام' : 'joins'} • {invite.isExpired ? (isAr ? 'منتهي' : 'Expired') : (isAr ? 'معطل' : 'Deactivated')}
                     </p>
                   </div>
                 </div>
@@ -397,15 +401,16 @@ export default function TrainerInvitesPage() {
       <Dialog open={!!deactivateId} onOpenChange={() => setDeactivateId(null)}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Deactivate Invite Link?</DialogTitle>
+            <DialogTitle>{isAr ? 'تعطيل رابط الدعوة؟' : 'Deactivate Invite Link?'}</DialogTitle>
             <DialogDescription>
-              This link will no longer work for new clients. Existing clients who
-              joined through this link will not be affected.
+              {isAr
+                ? 'الرابط ده مش هيشتغل تاني للعملاء الجداد. العملاء اللي انضموا بيه مش هيتأثروا.'
+                : 'This link will no longer work for new clients. Existing clients who joined through this link will not be affected.'}
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
             <Button variant="outline" onClick={() => setDeactivateId(null)}>
-              Cancel
+              {isAr ? 'إلغاء' : 'Cancel'}
             </Button>
             <Button
               variant="destructive"
@@ -415,10 +420,10 @@ export default function TrainerInvitesPage() {
               {isDeactivating ? (
                 <>
                   <Loader2 className="h-4 w-4 animate-spin mr-2" />
-                  Deactivating...
+                  {isAr ? 'جاري التعطيل...' : 'Deactivating...'}
                 </>
               ) : (
-                'Deactivate'
+                isAr ? 'تعطيل' : 'Deactivate'
               )}
             </Button>
           </DialogFooter>

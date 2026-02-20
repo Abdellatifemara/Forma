@@ -20,6 +20,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { paymentsApi } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 import {
   SUBSCRIPTION_TIERS,
   TIER_COMPARISON_HIGHLIGHTS,
@@ -36,6 +37,7 @@ const PAYMENT_METHOD_ICONS: Record<string, React.ComponentType<{ className?: str
 function CheckoutContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const { t } = useLanguage();
 
   const plan = (searchParams.get('plan')?.toUpperCase() || 'PREMIUM') as SubscriptionTier;
   const billing = (searchParams.get('billing') || 'monthly') as 'monthly' | 'yearly';
@@ -119,8 +121,8 @@ function CheckoutContent() {
             <ArrowLeft className="h-5 w-5" />
           </Link>
           <div>
-            <h1 className="text-2xl font-bold">Checkout</h1>
-            <p className="text-muted-foreground">Complete your subscription</p>
+            <h1 className="text-2xl font-bold">{t.checkout.title}</h1>
+            <p className="text-muted-foreground">{t.checkout.subtitle}</p>
           </div>
         </div>
 
@@ -130,7 +132,7 @@ function CheckoutContent() {
             <div className="p-4 border-b border-border/50 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Shield className="h-5 w-5 text-green-500" />
-                <span className="text-sm font-medium">Secure Payment</span>
+                <span className="text-sm font-medium">{t.checkout.securePayment}</span>
               </div>
               <Button
                 variant="ghost"
@@ -140,7 +142,7 @@ function CheckoutContent() {
                   setIframeUrl(null);
                 }}
               >
-                Cancel
+                {t.checkout.cancel}
               </Button>
             </div>
             <iframe
@@ -197,7 +199,7 @@ function CheckoutContent() {
 
               {/* Billing toggle */}
               <div className="p-4 rounded-xl bg-background/50 mb-6">
-                <p className="text-sm font-medium mb-3">Billing Period</p>
+                <p className="text-sm font-medium mb-3">{t.checkout.billingPeriod}</p>
                 <div className="grid grid-cols-2 gap-2">
                   <Link
                     href={`/checkout?plan=${plan.toLowerCase()}&billing=monthly`}
@@ -208,8 +210,8 @@ function CheckoutContent() {
                         : 'border-border/50 hover:border-border'
                     )}
                   >
-                    <p className="font-bold">{tierInfo.pricing.monthly} EGP</p>
-                    <p className="text-xs text-muted-foreground">Monthly</p>
+                    <p className="font-bold">{tierInfo.pricing.monthly} {t.checkout.currency}</p>
+                    <p className="text-xs text-muted-foreground">{t.checkout.monthly}</p>
                   </Link>
                   <Link
                     href={`/checkout?plan=${plan.toLowerCase()}&billing=yearly`}
@@ -221,21 +223,21 @@ function CheckoutContent() {
                     )}
                   >
                     <span className="absolute -top-2 right-2 px-2 py-0.5 rounded-full bg-green-500 text-white text-xs">
-                      Save {plan === 'PREMIUM' ? '38%' : '20%'}
+                      {plan === 'PREMIUM' ? t.checkout.savePremium : t.checkout.savePremiumPlus}
                     </span>
-                    <p className="font-bold">{tierInfo.pricing.yearly} EGP</p>
-                    <p className="text-xs text-muted-foreground">Yearly</p>
+                    <p className="font-bold">{tierInfo.pricing.yearly} {t.checkout.currency}</p>
+                    <p className="text-xs text-muted-foreground">{t.checkout.yearly}</p>
                   </Link>
                 </div>
               </div>
 
               {/* Total */}
               <div className="flex items-center justify-between p-4 rounded-xl bg-muted/30">
-                <span className="font-medium">Total</span>
+                <span className="font-medium">{t.checkout.total}</span>
                 <div className="text-right">
-                  <p className="text-2xl font-bold">{price} EGP</p>
+                  <p className="text-2xl font-bold">{price} {t.checkout.currency}</p>
                   <p className="text-xs text-muted-foreground">
-                    {billing === 'yearly' ? 'per year' : 'per month'}
+                    {billing === 'yearly' ? t.checkout.perYear : t.checkout.perMonth}
                   </p>
                 </div>
               </div>
@@ -243,7 +245,7 @@ function CheckoutContent() {
 
             {/* Payment Methods */}
             <div className="rounded-2xl border border-border/50 p-6">
-              <h3 className="text-lg font-bold mb-6">Payment Method</h3>
+              <h3 className="text-lg font-bold mb-6">{t.checkout.paymentMethod}</h3>
 
               {methodsLoading ? (
                 <div className="flex items-center justify-center py-12">
@@ -293,9 +295,9 @@ function CheckoutContent() {
                     <div className="flex items-start gap-3 p-4 rounded-xl bg-red-500/10 border border-red-500/30 mb-6">
                       <AlertCircle className="h-5 w-5 text-red-500 flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium text-red-500">Payment Error</p>
+                        <p className="font-medium text-red-500">{t.checkout.paymentError}</p>
                         <p className="text-sm text-muted-foreground">
-                          Something went wrong. Please try again.
+                          {t.checkout.paymentErrorDesc}
                         </p>
                       </div>
                     </div>
@@ -313,22 +315,22 @@ function CheckoutContent() {
                     {createPaymentMutation.isPending ? (
                       <>
                         <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                        Processing...
+                        {t.checkout.processing}
                       </>
                     ) : (
-                      `Pay ${price} EGP`
+                      `${t.checkout.payButton} ${price} ${t.checkout.currency}`
                     )}
                   </Button>
 
                   <div className="mt-6 flex items-center justify-center gap-2 text-xs text-muted-foreground">
                     <Shield className="h-4 w-4" />
-                    <span>Secured by Paymob</span>
+                    <span>{t.checkout.securedBy}</span>
                   </div>
                 </>
               ) : (
                 <div className="text-center py-12">
                   <p className="text-muted-foreground">
-                    Payment methods not available. Please try again later.
+                    {t.checkout.noPaymentMethods}
                   </p>
                 </div>
               )}
@@ -338,11 +340,11 @@ function CheckoutContent() {
 
         {/* Terms */}
         <p className="mt-8 text-center text-xs text-muted-foreground">
-          By completing this purchase, you agree to our{' '}
+          {t.checkout.termsPrefix}{' '}
           <Link href="/terms" className="text-primary hover:underline">
-            Terms of Service
+            {t.checkout.termsLink}
           </Link>
-          . Subscriptions auto-renew and can be cancelled anytime.
+          . {t.checkout.termsSuffix}
         </p>
       </div>
     </div>

@@ -31,19 +31,20 @@ import { trainersApi, type Trainer } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
 
 const specializations = [
-  'All',
-  'Weight Loss',
-  'Muscle Building',
-  'Strength Training',
-  'HIIT & Cardio',
-  'Bodybuilding',
-  'CrossFit',
-  'Yoga',
-  'Sports Performance',
+  { value: 'All', en: 'All', ar: 'الكل' },
+  { value: 'Weight Loss', en: 'Weight Loss', ar: 'خسارة وزن' },
+  { value: 'Muscle Building', en: 'Muscle Building', ar: 'بناء عضلات' },
+  { value: 'Strength Training', en: 'Strength Training', ar: 'تمارين قوة' },
+  { value: 'HIIT & Cardio', en: 'HIIT & Cardio', ar: 'كارديو و HIIT' },
+  { value: 'Bodybuilding', en: 'Bodybuilding', ar: 'كمال أجسام' },
+  { value: 'CrossFit', en: 'CrossFit', ar: 'كروس فت' },
+  { value: 'Yoga', en: 'Yoga', ar: 'يوجا' },
+  { value: 'Sports Performance', en: 'Sports Performance', ar: 'أداء رياضي' },
 ];
 
 export default function TrainersMarketplacePage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const [trainers, setTrainers] = useState<Trainer[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -61,7 +62,7 @@ export default function TrainersMarketplacePage() {
         setTrainers(response.data || []);
       } catch (err) {
         // Error handled
-        setError(err instanceof Error ? err.message : 'Failed to load trainers');
+        setError(err instanceof Error ? err.message : 'LOAD_FAILED');
       } finally {
         setIsLoading(false);
       }
@@ -81,6 +82,11 @@ export default function TrainersMarketplacePage() {
         specializationFilter === 'All' ||
         (trainer.specializations || []).some(s =>
           s.toLowerCase().includes(specializationFilter.toLowerCase())
+        ) ||
+        specializations.some(sp => sp.value === specializationFilter &&
+          (trainer.specializations || []).some(s =>
+            s.toLowerCase().includes(sp.en.toLowerCase())
+          )
         );
       const matchesPrice = (trainer.hourlyRate || 0) >= priceRange[0] && (trainer.hourlyRate || 0) <= priceRange[1];
       return matchesSearch && matchesSpecialization && matchesPrice;
@@ -119,7 +125,7 @@ export default function TrainersMarketplacePage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh] text-center lg:ml-64">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load trainers</h2>
+        <h2 className="text-xl font-semibold mb-2">{isAr ? 'مقدرناش نحمّل المدربين' : 'Failed to load trainers'}</h2>
         <p className="text-muted-foreground">{error}</p>
       </div>
     );
@@ -170,8 +176,8 @@ export default function TrainersMarketplacePage() {
                     </SelectTrigger>
                     <SelectContent>
                       {specializations.map((spec) => (
-                        <SelectItem key={spec} value={spec}>
-                          {spec}
+                        <SelectItem key={spec.value} value={spec.value}>
+                          {isAr ? spec.ar : spec.en}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -185,18 +191,18 @@ export default function TrainersMarketplacePage() {
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="rating">Highest Rated</SelectItem>
-                      <SelectItem value="reviews">Most Reviews</SelectItem>
-                      <SelectItem value="price_low">Price: Low to High</SelectItem>
-                      <SelectItem value="price_high">Price: High to Low</SelectItem>
-                      <SelectItem value="experience">Most Experienced</SelectItem>
+                      <SelectItem value="rating">{isAr ? 'الأعلى تقييم' : 'Highest Rated'}</SelectItem>
+                      <SelectItem value="reviews">{isAr ? 'الأكتر مراجعات' : 'Most Reviews'}</SelectItem>
+                      <SelectItem value="price_low">{isAr ? 'السعر: من الأقل للأعلى' : 'Price: Low to High'}</SelectItem>
+                      <SelectItem value="price_high">{isAr ? 'السعر: من الأعلى للأقل' : 'Price: High to Low'}</SelectItem>
+                      <SelectItem value="experience">{isAr ? 'الأكتر خبرة' : 'Most Experienced'}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium">
-                    {t.trainers.priceRange} (EGP/hour): {priceRange[0]} - {priceRange[1]}
+                    {t.trainers.priceRange} ({isAr ? 'ج.م/ساعة' : 'EGP/hour'}): {priceRange[0]} - {priceRange[1]}
                   </label>
                   <Slider
                     value={priceRange}
@@ -220,7 +226,7 @@ export default function TrainersMarketplacePage() {
                   }}
                 >
                   <X className="h-4 w-4 mr-1" />
-                  Reset Filters
+                  {isAr ? 'مسح الفلاتر' : 'Reset Filters'}
                 </Button>
               </div>
             </CardContent>
@@ -230,7 +236,9 @@ export default function TrainersMarketplacePage() {
 
       {/* Results Count */}
       <p className="text-sm text-muted-foreground">
-        {filteredTrainers.length} trainer{filteredTrainers.length !== 1 ? 's' : ''} found
+        {isAr
+          ? `تم العثور على ${filteredTrainers.length} مدرب`
+          : `${filteredTrainers.length} trainer${filteredTrainers.length !== 1 ? 's' : ''} found`}
       </p>
 
       {/* No Trainers Found */}
@@ -241,8 +249,8 @@ export default function TrainersMarketplacePage() {
             <h3 className="text-lg font-semibold mb-2">{t.trainers.noTrainers}</h3>
             <p className="text-muted-foreground">
               {searchQuery || specializationFilter !== 'All'
-                ? 'Try adjusting your search or filters'
-                : 'No trainers are currently available'}
+                ? (isAr ? 'جرّب تعدّل البحث أو الفلاتر' : 'Try adjusting your search or filters')
+                : (isAr ? 'مفيش مدربين متاحين دلوقتي' : 'No trainers are currently available')}
             </p>
           </CardContent>
         </Card>
@@ -253,9 +261,9 @@ export default function TrainersMarketplacePage() {
         <div className="space-y-4">
           <h2 className="text-lg font-semibold flex items-center gap-2">
             <Award className="h-5 w-5 text-amber-500" />
-            Trusted Partners
+            {isAr ? 'شركاء موثوقين' : 'Trusted Partners'}
           </h2>
-          <p className="text-sm text-muted-foreground -mt-2">Premium trainers - their clients get free Premium access</p>
+          <p className="text-sm text-muted-foreground -mt-2">{isAr ? 'مدربين مميزين - عملاءهم بياخدوا Premium مجاناً' : 'Premium trainers - their clients get free Premium access'}</p>
           <div className="grid gap-4 md:grid-cols-2">
             {trustedPartners.map((trainer) => (
               <TrainerCard key={trainer.id} trainer={trainer} trusted />
@@ -269,7 +277,7 @@ export default function TrainersMarketplacePage() {
         <div className="space-y-4">
           <h2 className="text-lg font-semibold flex items-center gap-2">
             <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-            Top Rated Trainers
+            {isAr ? 'أعلى المدربين تقييماً' : 'Top Rated Trainers'}
           </h2>
           <div className="grid gap-4 md:grid-cols-2">
             {featuredTrainers.map((trainer) => (
@@ -283,7 +291,7 @@ export default function TrainersMarketplacePage() {
       {regularTrainers.length > 0 && (
         <div className="space-y-4">
           {featuredTrainers.length > 0 && (
-            <h2 className="text-lg font-semibold">All Trainers</h2>
+            <h2 className="text-lg font-semibold">{isAr ? 'كل المدربين' : 'All Trainers'}</h2>
           )}
           <div className="grid gap-4 md:grid-cols-2">
             {regularTrainers.map((trainer) => (
@@ -297,9 +305,11 @@ export default function TrainersMarketplacePage() {
 }
 
 function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: Trainer; featured?: boolean; trusted?: boolean }) {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const name = trainer.user?.firstName && trainer.user?.lastName
     ? `${trainer.user.firstName} ${trainer.user.lastName}`
-    : trainer.user?.displayName || 'Trainer';
+    : trainer.user?.displayName || (isAr ? 'مدرب' : 'Trainer');
   const initials = name.split(' ').map(n => n[0]).join('').toUpperCase();
   const isTrusted = trusted || trainer.tier === 'TRUSTED_PARTNER';
 
@@ -320,18 +330,18 @@ function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: 
                 {isTrusted && (
                   <Badge className="bg-amber-500/20 text-amber-600 border-amber-500/50">
                     <Award className="h-3 w-3 mr-1" />
-                    Trusted Partner
+                    {isAr ? 'شريك موثوق' : 'Trusted Partner'}
                   </Badge>
                 )}
                 {featured && !isTrusted && (
                   <Badge className="bg-yellow-500/20 text-yellow-600 border-yellow-500/50">
                     <Star className="h-3 w-3 mr-1 fill-current" />
-                    Top Rated
+                    {isAr ? 'تقييم عالي' : 'Top Rated'}
                   </Badge>
                 )}
               </div>
               <p className="text-sm text-muted-foreground line-clamp-2 mb-2">
-                {trainer.bio || 'Certified fitness professional'}
+                {trainer.bio || (isAr ? 'مدرب لياقة بدنية معتمد' : 'Certified fitness professional')}
               </p>
               <div className="flex flex-wrap gap-1 mb-2">
                 {(trainer.specializations || []).slice(0, 3).map((spec) => (
@@ -354,13 +364,13 @@ function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: 
                   {(trainer.experience ?? 0) > 0 && (
                     <span className="flex items-center gap-1 text-muted-foreground">
                       <Award className="h-4 w-4" />
-                      {trainer.experience}y exp
+                      {trainer.experience}{isAr ? ' سنة خبرة' : 'y exp'}
                     </span>
                   )}
                 </div>
                 {(trainer.hourlyRate ?? 0) > 0 && (
                   <span className="font-semibold text-primary">
-                    {trainer.hourlyRate} EGP/hr
+                    {trainer.hourlyRate} {isAr ? 'ج.م/ساعة' : 'EGP/hr'}
                   </span>
                 )}
               </div>

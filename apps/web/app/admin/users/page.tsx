@@ -45,6 +45,7 @@ import {
 } from '@/components/ui/dialog';
 import { adminApi, type AdminUser } from '@/lib/api';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 interface UsersMeta {
   total: number;
@@ -55,6 +56,8 @@ interface UsersMeta {
 
 export default function UsersPage() {
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [meta, setMeta] = useState<UsersMeta | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -78,7 +81,7 @@ export default function UsersPage() {
       setUsers(response.data);
       setMeta(response.meta);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load users');
+      setError(err instanceof Error ? err.message : (isAr ? 'فشل تحميل المستخدمين' : 'Failed to load users'));
     } finally {
       setIsLoading(false);
     }
@@ -96,25 +99,26 @@ export default function UsersPage() {
     : users.filter(u => u.subscription?.toLowerCase() === planFilter);
 
   const getLastActive = (date: string | null) => {
-    if (!date) return 'Never';
+    if (!date) return isAr ? 'أبداً' : 'Never';
     const diff = Date.now() - new Date(date).getTime();
     const hours = Math.floor(diff / (1000 * 60 * 60));
-    if (hours < 1) return 'Just now';
-    if (hours < 24) return `${hours}h ago`;
+    if (hours < 1) return isAr ? 'دلوقتي' : 'Just now';
+    if (hours < 24) return isAr ? `${hours}س` : `${hours}h ago`;
     const days = Math.floor(hours / 24);
-    if (days === 1) return 'Yesterday';
-    if (days < 7) return `${days}d ago`;
-    return `${Math.floor(days / 7)}w ago`;
+    if (days === 1) return isAr ? 'امبارح' : 'Yesterday';
+    if (days < 7) return isAr ? `${days}ي` : `${days}d ago`;
+    const weeks = Math.floor(days / 7);
+    return isAr ? `${weeks}أ` : `${weeks}w ago`;
   };
 
   const handleUpdateUser = async (userId: string, data: Record<string, unknown>) => {
     setIsProcessing(true);
     try {
       await adminApi.updateUser(userId, data);
-      toast({ title: 'Success', description: 'User updated successfully' });
+      toast({ title: isAr ? 'تم بنجاح' : 'Success', description: isAr ? 'تم تحديث المستخدم بنجاح' : 'User updated successfully' });
       fetchUsers();
     } catch (err) {
-      toast({ title: 'Error', description: 'Failed to update user', variant: 'destructive' });
+      toast({ title: isAr ? 'خطأ' : 'Error', description: isAr ? 'فشل تحديث المستخدم' : 'Failed to update user', variant: 'destructive' });
     } finally {
       setIsProcessing(false);
       setActionDialog(null);
@@ -127,10 +131,10 @@ export default function UsersPage() {
     setIsProcessing(true);
     try {
       await adminApi.updateUserSubscription(selectedUser.id, 'PREMIUM');
-      toast({ title: 'Success', description: `${selectedUser.name} now has Premium subscription` });
+      toast({ title: isAr ? 'تم بنجاح' : 'Success', description: isAr ? `${selectedUser.name} بقى عنده اشتراك بريميوم` : `${selectedUser.name} now has Premium subscription` });
       fetchUsers();
     } catch (err) {
-      toast({ title: 'Error', description: 'Failed to update subscription', variant: 'destructive' });
+      toast({ title: isAr ? 'خطأ' : 'Error', description: isAr ? 'فشل تحديث الاشتراك' : 'Failed to update subscription', variant: 'destructive' });
     } finally {
       setIsProcessing(false);
       setActionDialog(null);
@@ -148,10 +152,10 @@ export default function UsersPage() {
     setIsProcessing(true);
     try {
       await adminApi.deleteUser(selectedUser.id);
-      toast({ title: 'Success', description: `${selectedUser.name} has been deleted` });
+      toast({ title: isAr ? 'تم بنجاح' : 'Success', description: isAr ? `تم حذف ${selectedUser.name}` : `${selectedUser.name} has been deleted` });
       fetchUsers();
     } catch (err) {
-      toast({ title: 'Error', description: 'Failed to delete user', variant: 'destructive' });
+      toast({ title: isAr ? 'خطأ' : 'Error', description: isAr ? 'فشل حذف المستخدم' : 'Failed to delete user', variant: 'destructive' });
     } finally {
       setIsProcessing(false);
       setActionDialog(null);
@@ -171,29 +175,29 @@ export default function UsersPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load users</h2>
+        <h2 className="text-xl font-semibold mb-2">{isAr ? 'فشل تحميل المستخدمين' : 'Failed to load users'}</h2>
         <p className="text-muted-foreground mb-4">{error}</p>
-        <Button onClick={fetchUsers}>Try Again</Button>
+        <Button onClick={fetchUsers}>{isAr ? 'حاول تاني' : 'Try Again'}</Button>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6" dir={isAr ? 'rtl' : 'ltr'}>
       {/* Page Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Users</h1>
+          <h1 className="text-3xl font-bold">{isAr ? 'المستخدمين' : 'Users'}</h1>
           <p className="text-muted-foreground">
-            Manage and monitor all platform users.
+            {isAr ? 'إدارة ومتابعة كل مستخدمي المنصة.' : 'Manage and monitor all platform users.'}
           </p>
         </div>
         <Button
           variant="outline"
-          onClick={() => toast({ title: 'Coming Soon', description: 'Export feature will be available soon' })}
+          onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'خاصية التصدير هتكون متاحة قريباً' : 'Export feature will be available soon' })}
         >
-          <Download className="mr-2 h-4 w-4" />
-          Export CSV
+          <Download className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+          {isAr ? 'تصدير CSV' : 'Export CSV'}
         </Button>
       </div>
 
@@ -201,8 +205,8 @@ export default function UsersPage() {
       <div className="grid gap-4 md:grid-cols-4">
         <Card>
           <CardContent className="pt-6">
-            <div className="text-2xl font-bold">{meta?.total?.toLocaleString() || 0}</div>
-            <p className="text-sm text-muted-foreground">Total Users</p>
+            <div className="text-2xl font-bold">{meta?.total?.toLocaleString(isAr ? 'ar-EG' : 'en-US') || 0}</div>
+            <p className="text-sm text-muted-foreground">{isAr ? 'إجمالي المستخدمين' : 'Total Users'}</p>
           </CardContent>
         </Card>
         <Card>
@@ -210,7 +214,7 @@ export default function UsersPage() {
             <div className="text-2xl font-bold">
               {users.filter(u => u.lastActiveAt && (Date.now() - new Date(u.lastActiveAt).getTime()) < 7 * 24 * 60 * 60 * 1000).length}
             </div>
-            <p className="text-sm text-muted-foreground">Active This Week</p>
+            <p className="text-sm text-muted-foreground">{isAr ? 'نشطين الأسبوع ده' : 'Active This Week'}</p>
           </CardContent>
         </Card>
         <Card>
@@ -218,7 +222,7 @@ export default function UsersPage() {
             <div className="text-2xl font-bold">
               {users.filter(u => u.subscription && u.subscription !== 'FREE').length}
             </div>
-            <p className="text-sm text-muted-foreground">Premium Users</p>
+            <p className="text-sm text-muted-foreground">{isAr ? 'مستخدمين بريميوم' : 'Premium Users'}</p>
           </CardContent>
         </Card>
         <Card>
@@ -226,7 +230,7 @@ export default function UsersPage() {
             <div className="text-2xl font-bold">
               {users.filter(u => u.role === 'TRAINER').length}
             </div>
-            <p className="text-sm text-muted-foreground">Trainers</p>
+            <p className="text-sm text-muted-foreground">{isAr ? 'مدربين' : 'Trainers'}</p>
           </CardContent>
         </Card>
       </div>
@@ -236,10 +240,10 @@ export default function UsersPage() {
         <CardContent className="py-4">
           <div className="flex items-center gap-4">
             <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Search className={`absolute ${isAr ? 'right-3' : 'left-3'} top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground`} />
               <Input
-                placeholder="Search users by name or email..."
-                className="pl-10"
+                placeholder={isAr ? 'ابحث بالاسم أو الإيميل...' : 'Search users by name or email...'}
+                className={isAr ? 'pr-10' : 'pl-10'}
                 value={searchQuery}
                 onChange={(e) => {
                   setSearchQuery(e.target.value);
@@ -249,13 +253,13 @@ export default function UsersPage() {
             </div>
             <Select value={planFilter} onValueChange={setPlanFilter}>
               <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="All Plans" />
+                <SelectValue placeholder={isAr ? 'كل الباقات' : 'All Plans'} />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="all">All Plans</SelectItem>
-                <SelectItem value="free">Free</SelectItem>
-                <SelectItem value="premium">Premium</SelectItem>
-                <SelectItem value="premium_plus">Premium+</SelectItem>
+                <SelectItem value="all">{isAr ? 'كل الباقات' : 'All Plans'}</SelectItem>
+                <SelectItem value="free">{isAr ? 'مجاني' : 'Free'}</SelectItem>
+                <SelectItem value="premium">{isAr ? 'بريميوم' : 'Premium'}</SelectItem>
+                <SelectItem value="premium_plus">{isAr ? '+بريميوم' : 'Premium+'}</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -265,20 +269,20 @@ export default function UsersPage() {
       {/* Users Table */}
       <Card>
         <CardHeader>
-          <CardTitle>All Users</CardTitle>
+          <CardTitle>{isAr ? 'كل المستخدمين' : 'All Users'}</CardTitle>
           <CardDescription>
-            {filteredUsers.length} users {meta && `(Page ${meta.page} of ${meta.totalPages})`}
+            {filteredUsers.length} {isAr ? 'مستخدم' : 'users'} {meta && `(${isAr ? 'صفحة' : 'Page'} ${meta.page} ${isAr ? 'من' : 'of'} ${meta.totalPages})`}
           </CardDescription>
         </CardHeader>
         <CardContent>
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>User</TableHead>
-                <TableHead>Role</TableHead>
-                <TableHead>Plan</TableHead>
-                <TableHead>Joined</TableHead>
-                <TableHead>Last Active</TableHead>
+                <TableHead>{isAr ? 'المستخدم' : 'User'}</TableHead>
+                <TableHead>{isAr ? 'الدور' : 'Role'}</TableHead>
+                <TableHead>{isAr ? 'الباقة' : 'Plan'}</TableHead>
+                <TableHead>{isAr ? 'تاريخ الانضمام' : 'Joined'}</TableHead>
+                <TableHead>{isAr ? 'آخر نشاط' : 'Last Active'}</TableHead>
                 <TableHead className="w-[50px]"></TableHead>
               </TableRow>
             </TableHeader>
@@ -319,7 +323,7 @@ export default function UsersPage() {
                     </Badge>
                   </TableCell>
                   <TableCell className="text-muted-foreground">
-                    {new Date(user.createdAt).toLocaleDateString()}
+                    {new Date(user.createdAt).toLocaleDateString(isAr ? 'ar-EG' : 'en-US')}
                   </TableCell>
                   <TableCell className="text-muted-foreground">
                     {getLastActive(user.lastActiveAt)}
@@ -331,20 +335,20 @@ export default function UsersPage() {
                           <MoreHorizontal className="h-4 w-4" />
                         </Button>
                       </DropdownMenuTrigger>
-                      <DropdownMenuContent align="end">
+                      <DropdownMenuContent align={isAr ? 'start' : 'end'}>
                         <DropdownMenuItem onClick={() => {
                           setSelectedUser(user);
                           setActionDialog('premium');
                         }}>
-                          <Crown className="mr-2 h-4 w-4" />
-                          Give Premium
+                          <Crown className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                          {isAr ? 'إدي بريميوم' : 'Give Premium'}
                         </DropdownMenuItem>
                         <DropdownMenuItem onClick={() => {
                           setSelectedUser(user);
                           setActionDialog('suspend');
                         }}>
-                          <Ban className="mr-2 h-4 w-4" />
-                          Suspend User
+                          <Ban className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                          {isAr ? 'إيقاف المستخدم' : 'Suspend User'}
                         </DropdownMenuItem>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem
@@ -354,8 +358,8 @@ export default function UsersPage() {
                             setActionDialog('delete');
                           }}
                         >
-                          <Trash2 className="mr-2 h-4 w-4" />
-                          Delete User
+                          <Trash2 className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                          {isAr ? 'حذف المستخدم' : 'Delete User'}
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
@@ -369,7 +373,10 @@ export default function UsersPage() {
           {meta && meta.totalPages > 1 && (
             <div className="flex items-center justify-between mt-4">
               <p className="text-sm text-muted-foreground">
-                Showing {(meta.page - 1) * (meta.limit || 20) + 1} to {Math.min(meta.page * (meta.limit || 20), meta.total)} of {meta.total}
+                {isAr
+                  ? `عرض ${(meta.page - 1) * (meta.limit || 20) + 1} من ${Math.min(meta.page * (meta.limit || 20), meta.total)} من ${meta.total}`
+                  : `Showing ${(meta.page - 1) * (meta.limit || 20) + 1} to ${Math.min(meta.page * (meta.limit || 20), meta.total)} of ${meta.total}`
+                }
               </p>
               <div className="flex gap-2">
                 <Button
@@ -378,7 +385,7 @@ export default function UsersPage() {
                   disabled={meta.page <= 1}
                   onClick={() => setPage(p => p - 1)}
                 >
-                  Previous
+                  {isAr ? 'السابق' : 'Previous'}
                 </Button>
                 <Button
                   variant="outline"
@@ -386,7 +393,7 @@ export default function UsersPage() {
                   disabled={meta.page >= meta.totalPages}
                   onClick={() => setPage(p => p + 1)}
                 >
-                  Next
+                  {isAr ? 'التالي' : 'Next'}
                 </Button>
               </div>
             </div>
@@ -398,16 +405,19 @@ export default function UsersPage() {
       <Dialog open={actionDialog === 'suspend'} onOpenChange={(open) => !open && setActionDialog(null)}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Suspend User</DialogTitle>
+            <DialogTitle>{isAr ? 'إيقاف المستخدم' : 'Suspend User'}</DialogTitle>
             <DialogDescription>
-              Are you sure you want to suspend {selectedUser?.name}? They will not be able to access the app.
+              {isAr
+                ? `متأكد إنك عايز توقف ${selectedUser?.name}؟ مش هيقدر يدخل التطبيق.`
+                : `Are you sure you want to suspend ${selectedUser?.name}? They will not be able to access the app.`
+              }
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
-            <Button variant="outline" onClick={() => setActionDialog(null)}>Cancel</Button>
+            <Button variant="outline" onClick={() => setActionDialog(null)}>{isAr ? 'إلغاء' : 'Cancel'}</Button>
             <Button variant="destructive" onClick={handleSuspendUser} disabled={isProcessing}>
-              {isProcessing ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}
-              Suspend User
+              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ml-2' : 'mr-2'}`} /> : null}
+              {isAr ? 'إيقاف المستخدم' : 'Suspend User'}
             </Button>
           </DialogFooter>
         </DialogContent>
@@ -416,16 +426,19 @@ export default function UsersPage() {
       <Dialog open={actionDialog === 'premium'} onOpenChange={(open) => !open && setActionDialog(null)}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Give Premium</DialogTitle>
+            <DialogTitle>{isAr ? 'إدي بريميوم' : 'Give Premium'}</DialogTitle>
             <DialogDescription>
-              Grant premium subscription to {selectedUser?.name}?
+              {isAr
+                ? `تدي اشتراك بريميوم لـ ${selectedUser?.name}؟`
+                : `Grant premium subscription to ${selectedUser?.name}?`
+              }
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
-            <Button variant="outline" onClick={() => setActionDialog(null)}>Cancel</Button>
+            <Button variant="outline" onClick={() => setActionDialog(null)}>{isAr ? 'إلغاء' : 'Cancel'}</Button>
             <Button variant="forma" onClick={handleGivePremium} disabled={isProcessing}>
-              {isProcessing ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}
-              Give Premium
+              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ml-2' : 'mr-2'}`} /> : null}
+              {isAr ? 'إدي بريميوم' : 'Give Premium'}
             </Button>
           </DialogFooter>
         </DialogContent>
@@ -434,16 +447,19 @@ export default function UsersPage() {
       <Dialog open={actionDialog === 'delete'} onOpenChange={(open) => !open && setActionDialog(null)}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Delete User</DialogTitle>
+            <DialogTitle>{isAr ? 'حذف المستخدم' : 'Delete User'}</DialogTitle>
             <DialogDescription>
-              This action cannot be undone. {selectedUser?.name}'s account and all data will be permanently deleted.
+              {isAr
+                ? `العملية دي مش هتترجع. حساب ${selectedUser?.name} وكل البيانات هيتحذفوا نهائياً.`
+                : `This action cannot be undone. ${selectedUser?.name}'s account and all data will be permanently deleted.`
+              }
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
-            <Button variant="outline" onClick={() => setActionDialog(null)}>Cancel</Button>
+            <Button variant="outline" onClick={() => setActionDialog(null)}>{isAr ? 'إلغاء' : 'Cancel'}</Button>
             <Button variant="destructive" onClick={handleDeleteUser} disabled={isProcessing}>
-              {isProcessing ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : null}
-              Delete User
+              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ml-2' : 'mr-2'}`} /> : null}
+              {isAr ? 'حذف المستخدم' : 'Delete User'}
             </Button>
           </DialogFooter>
         </DialogContent>

@@ -80,7 +80,8 @@ const mealColors = {
 
 export default function NutritionPage() {
   const { toast } = useToast();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
   const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
@@ -96,10 +97,10 @@ export default function NutritionPage() {
   // Group meals by type
   const mealTypes = ['BREAKFAST', 'LUNCH', 'DINNER', 'SNACK'] as const;
   const mealLabels: Record<string, { label: string; time: string }> = {
-    BREAKFAST: { label: t.nutrition.breakfast, time: '8:00 AM' },
-    LUNCH: { label: t.nutrition.lunch, time: '1:00 PM' },
-    DINNER: { label: t.nutrition.dinner, time: '7:00 PM' },
-    SNACK: { label: t.nutrition.snack, time: 'Anytime' },
+    BREAKFAST: { label: t.nutrition.breakfast, time: isAr ? '٨:٠٠ ص' : '8:00 AM' },
+    LUNCH: { label: t.nutrition.lunch, time: isAr ? '١:٠٠ م' : '1:00 PM' },
+    DINNER: { label: t.nutrition.dinner, time: isAr ? '٧:٠٠ م' : '7:00 PM' },
+    SNACK: { label: t.nutrition.snack, time: isAr ? 'أي وقت' : 'Anytime' },
   };
 
   const organizedMeals = mealTypes.map((type) => {
@@ -119,7 +120,7 @@ export default function NutritionPage() {
   const recentFoods = (() => {
     const loggedFoods = meals.flatMap((m) =>
       (m.foods || []).map((f: any) => ({
-        name: f.name || f.food?.name || 'Food',
+        name: f.name || f.food?.name || (isAr ? 'طعام' : 'Food'),
         calories: f.calories || 0,
         protein: f.protein || 0,
         carbs: f.carbs || 0,
@@ -165,7 +166,7 @@ export default function NutritionPage() {
       <div className="relative z-10 flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold">{t.nutrition.title}</h1>
-          <p className="text-muted-foreground">Track your daily intake</p>
+          <p className="text-muted-foreground">{isAr ? 'تابع أكلك اليومي' : 'Track your daily intake'}</p>
         </div>
         <Dialog>
           <DialogTrigger asChild>
@@ -181,7 +182,7 @@ export default function NutritionPage() {
                 {t.nutrition.add}
               </DialogTitle>
               <DialogDescription className="sr-only">
-                Log a food item to your daily nutrition tracker
+                {isAr ? 'سجّل أكل في متابعة التغذية اليومية' : 'Log a food item to your daily nutrition tracker'}
               </DialogDescription>
             </DialogHeader>
             <div className="space-y-4">
@@ -213,7 +214,7 @@ export default function NutritionPage() {
                 <>
                   <div className="flex items-center justify-between">
                     <Button variant="ghost" size="sm" onClick={() => setSelectedMealType(null)}>
-                      ← Back
+                      {isAr ? 'رجوع ←' : '← Back'}
                     </Button>
                     <Badge variant="outline">{mealLabels[selectedMealType].label}</Badge>
                   </div>
@@ -231,7 +232,7 @@ export default function NutritionPage() {
                   {/* Search Results */}
                   {searchQuery.length >= 2 && (
                     <div>
-                      <p className="mb-2 text-sm font-medium">Search Results</p>
+                      <p className="mb-2 text-sm font-medium">{isAr ? 'نتايج البحث' : 'Search Results'}</p>
                       {searchLoading ? (
                         <div className="flex items-center justify-center py-4">
                           <Loader2 className="h-5 w-5 animate-spin text-primary" />
@@ -269,18 +270,18 @@ export default function NutritionPage() {
                     <Button
                       variant="outline"
                       className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5"
-                      onClick={() => toast({ title: 'Coming Soon', description: 'Food scanning will be available soon' })}
+                      onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'مسح الأكل هيكون متاح قريباً' : 'Food scanning will be available soon' })}
                     >
                       <Camera className="mb-2 h-5 w-5 text-primary" />
-                      <span className="text-xs">Scan Food</span>
+                      <span className="text-xs">{isAr ? 'مسح الطعام' : 'Scan Food'}</span>
                     </Button>
                     <Button
                       variant="outline"
                       className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5"
-                      onClick={() => toast({ title: 'Coming Soon', description: 'Barcode scanning will be available soon' })}
+                      onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'مسح الباركود هيكون متاح قريباً' : 'Barcode scanning will be available soon' })}
                     >
                       <Barcode className="mb-2 h-5 w-5 text-primary" />
-                      <span className="text-xs">Scan Barcode</span>
+                      <span className="text-xs">{isAr ? 'مسح الباركود' : 'Scan Barcode'}</span>
                     </Button>
                   </div>
 
@@ -322,7 +323,7 @@ export default function NutritionPage() {
           <CardContent className="p-4 flex items-center gap-3">
             <Zap className="h-5 w-5 text-yellow-500" />
             <p className="text-sm text-yellow-500">
-              Could not load nutrition data. Showing default goals.
+              {isAr ? 'مقدرناش نحمّل بيانات التغذية. بنعرض الأهداف الافتراضية.' : 'Could not load nutrition data. Showing default goals.'}
             </p>
           </CardContent>
         </Card>
@@ -379,13 +380,13 @@ export default function NutritionPage() {
                 )}>
                   {caloriesRemaining > 0 ? caloriesRemaining : Math.abs(caloriesRemaining - goals.calories)}
                   <span className="text-sm font-normal text-muted-foreground ml-2">
-                    {caloriesRemaining > 0 ? 'remaining' : 'over'}
+                    {caloriesRemaining > 0 ? (isAr ? 'متبقي' : 'remaining') : (isAr ? 'زيادة' : 'over')}
                   </span>
                 </p>
                 <div className="mt-3 flex items-center gap-4 text-sm">
                   <div className="flex items-center gap-1">
                     <Target className="h-4 w-4 text-muted-foreground" />
-                    <span className="text-muted-foreground">Goal: {goals.calories}</span>
+                    <span className="text-muted-foreground">{isAr ? `الهدف: ${goals.calories}` : `Goal: ${goals.calories}`}</span>
                   </div>
                 </div>
               </div>
@@ -411,7 +412,7 @@ export default function NutritionPage() {
               />
             </div>
             <p className="text-xs text-muted-foreground mt-2">
-              {Math.max(0, goals.protein - Math.round(totals.protein))}g remaining
+              {isAr ? `${Math.max(0, goals.protein - Math.round(totals.protein))}جم متبقي` : `${Math.max(0, goals.protein - Math.round(totals.protein))}g remaining`}
             </p>
           </CardContent>
         </Card>
@@ -433,7 +434,7 @@ export default function NutritionPage() {
               />
             </div>
             <p className="text-xs text-muted-foreground mt-2">
-              {Math.max(0, goals.carbs - Math.round(totals.carbs))}g remaining
+              {isAr ? `${Math.max(0, goals.carbs - Math.round(totals.carbs))}جم متبقي` : `${Math.max(0, goals.carbs - Math.round(totals.carbs))}g remaining`}
             </p>
           </CardContent>
         </Card>
@@ -475,7 +476,7 @@ export default function NutritionPage() {
                 <span className="font-medium">{t.health.water}</span>
               </div>
               <Badge variant="outline" className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
-                {waterGlasses} / {defaultGoals.water} glasses
+                {waterGlasses} / {defaultGoals.water} {isAr ? 'كوباية' : 'glasses'}
               </Badge>
             </div>
             <div className="flex items-center gap-2">
@@ -501,7 +502,7 @@ export default function NutritionPage() {
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold">{t.nutrition.today}</h2>
           <Badge variant="outline" className="text-xs">
-            {organizedMeals.filter(m => !m.notLogged).length} / {organizedMeals.length} logged
+            {organizedMeals.filter(m => !m.notLogged).length} / {organizedMeals.length} {isAr ? 'مسجّل' : 'logged'}
           </Badge>
         </div>
 
@@ -556,7 +557,7 @@ export default function NutritionPage() {
                                   }}
                                 >
                                   <Plus className="mr-1 h-4 w-4" />
-                                  Log
+                                  {isAr ? 'سجّل' : 'Log'}
                                 </Button>
                               </DialogTrigger>
                             </Dialog>
@@ -592,7 +593,7 @@ export default function NutritionPage() {
                           >
                             <div className="flex items-center gap-3">
                               <div className="w-2 h-2 rounded-full bg-green-500" />
-                              <span className="font-medium">{foodItem.food?.name || 'Food'}</span>
+                              <span className="font-medium">{foodItem.food?.name || (isAr ? 'طعام' : 'Food')}</span>
                             </div>
                             <span className="text-sm text-muted-foreground">
                               {Math.round((foodItem.food?.calories || 0) * (foodItem.servings || 1))} kcal
@@ -625,16 +626,18 @@ export default function NutritionPage() {
               <Sparkles className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <h3 className="font-semibold mb-1">Daily Insight</h3>
+              <h3 className="font-semibold mb-1">{isAr ? 'نصيحة اليوم' : 'Daily Insight'}</h3>
               {totals.protein >= goals.protein * 0.8 ? (
                 <p className="text-sm text-muted-foreground">
-                  Great protein intake today! You're on track to hit your muscle-building goals.
-                  Consider having a light snack if you're feeling hungry before bed.
+                  {isAr
+                    ? 'بروتين ممتاز النهارده! انت ماشي صح على هدف بناء العضلات. لو جعت قبل ما تنام، كُل سناك خفيف.'
+                    : "Great protein intake today! You're on track to hit your muscle-building goals. Consider having a light snack if you're feeling hungry before bed."}
                 </p>
               ) : (
                 <p className="text-sm text-muted-foreground">
-                  You're {Math.round(goals.protein - totals.protein)}g short on protein today.
-                  Try adding a protein shake or some Greek yogurt to reach your goal.
+                  {isAr
+                    ? `ناقصك ${Math.round(goals.protein - totals.protein)}جم بروتين النهارده. جرّب تشرب بروتين شيك أو تاكل زبادي يوناني عشان توصل لهدفك.`
+                    : `You're ${Math.round(goals.protein - totals.protein)}g short on protein today. Try adding a protein shake or some Greek yogurt to reach your goal.`}
                 </p>
               )}
             </div>

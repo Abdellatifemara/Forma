@@ -15,6 +15,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { useUser } from '@/hooks/use-user';
 import { removeAuthCookie } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 interface HeaderProps {
   onMenuClick?: () => void;
@@ -24,6 +25,8 @@ export function Header({ onMenuClick }: HeaderProps) {
   const router = useRouter();
   const { data: userData } = useUser();
   const user = userData?.user;
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
 
   const userName = user?.firstName && user?.lastName
     ? `${user.firstName} ${user.lastName}`
@@ -57,7 +60,7 @@ export function Header({ onMenuClick }: HeaderProps) {
           <div className="relative">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
-              placeholder="Search clients, programs..."
+              placeholder={isAr ? 'ابحث عن عملاء، برامج...' : 'Search clients, programs...'}
               className="w-80 pl-10"
             />
           </div>
@@ -87,15 +90,15 @@ export function Header({ onMenuClick }: HeaderProps) {
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={() => router.push('/trainer/settings')}>
-              Profile
+              {isAr ? 'الملف الشخصي' : 'Profile'}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => router.push('/trainer/settings')}>
-              Settings
+              {isAr ? 'الإعدادات' : 'Settings'}
             </DropdownMenuItem>
-            <DropdownMenuItem>Support</DropdownMenuItem>
+            <DropdownMenuItem>{isAr ? 'الدعم' : 'Support'}</DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem className="text-destructive" onClick={handleLogout}>
-              Log out
+              {isAr ? 'تسجيل خروج' : 'Log out'}
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

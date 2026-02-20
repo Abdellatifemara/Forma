@@ -46,6 +46,7 @@ import {
 } from '@/components/ui/collapsible';
 import { cn } from '@/lib/utils';
 import { api, workoutsApi } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 interface SetData {
   id: string;
@@ -87,6 +88,8 @@ export default function ActiveWorkoutPage() {
   const params = useParams();
   const workoutId = params.id as string;
   const router = useRouter();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
 
   // Data states
   const [workout, setWorkout] = useState<WorkoutData | null>(null);
@@ -174,7 +177,8 @@ export default function ActiveWorkoutPage() {
             startedAt: sessionResponse.startedAt,
           });
         } catch (startError) {
-          // Error handled - continue anyway, user can still use the workout
+          console.warn('Could not start workout session:', startError);
+          // Session tracking unavailable - sets won't be saved to server but user can still use the workout locally
         }
 
       } catch (err) {
@@ -412,7 +416,7 @@ export default function ActiveWorkoutPage() {
       <div className="flex h-[60vh] items-center justify-center">
         <div className="text-center">
           <Loader2 className="h-12 w-12 animate-spin text-primary mx-auto mb-4" />
-          <p className="text-muted-foreground">Loading workout...</p>
+          <p className="text-muted-foreground">{isAr ? 'جاري تحميل التمرين...' : 'Loading workout...'}</p>
         </div>
       </div>
     );
@@ -424,11 +428,11 @@ export default function ActiveWorkoutPage() {
       <div className="flex h-[60vh] items-center justify-center">
         <div className="text-center">
           <AlertCircle className="h-12 w-12 text-destructive mx-auto mb-4" />
-          <p className="text-lg font-medium mb-2">Failed to load workout</p>
-          <p className="text-muted-foreground mb-4">{error || 'Workout not found'}</p>
+          <p className="text-lg font-medium mb-2">{isAr ? 'فشل تحميل التمرين' : 'Failed to load workout'}</p>
+          <p className="text-muted-foreground mb-4">{error || (isAr ? 'التمرين مش موجود' : 'Workout not found')}</p>
           <Button onClick={() => router.push('/workouts')}>
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Workouts
+            {isAr ? 'رجوع للتمارين' : 'Back to Workouts'}
           </Button>
         </div>
       </div>
@@ -484,7 +488,7 @@ export default function ActiveWorkoutPage() {
             ) : (
               <Save className="mr-2 h-4 w-4" />
             )}
-            Finish
+            {isAr ? 'خلص' : 'Finish'}
           </Button>
         </div>
 
@@ -493,15 +497,15 @@ export default function ActiveWorkoutPage() {
           <div className="grid grid-cols-3 gap-4 mb-3">
             <div className="text-center">
               <p className="text-lg font-bold text-cyan-400">{completedSets}/{totalSets}</p>
-              <p className="text-xs text-muted-foreground">Sets</p>
+              <p className="text-xs text-muted-foreground">{isAr ? 'مجموعات' : 'Sets'}</p>
             </div>
             <div className="text-center">
               <p className="text-lg font-bold text-purple-400">{completedExercises}/{totalExercises}</p>
-              <p className="text-xs text-muted-foreground">Exercises</p>
+              <p className="text-xs text-muted-foreground">{isAr ? 'تمارين' : 'Exercises'}</p>
             </div>
             <div className="text-center">
               <p className="text-lg font-bold text-green-400">{(totalVolume / 1000).toFixed(1)}k</p>
-              <p className="text-xs text-muted-foreground">Volume (kg)</p>
+              <p className="text-xs text-muted-foreground">{isAr ? 'الحجم (كجم)' : 'Volume (kg)'}</p>
             </div>
           </div>
           <div className="h-1.5 bg-muted/30 rounded-full overflow-hidden">
@@ -559,9 +563,9 @@ export default function ActiveWorkoutPage() {
                     </div>
                   </div>
                   <div>
-                    <p className="font-semibold">Rest Time</p>
+                    <p className="font-semibold">{isAr ? 'وقت الراحة' : 'Rest Time'}</p>
                     <p className="text-sm text-muted-foreground">
-                      Take a breather
+                      {isAr ? 'خد نفسك' : 'Take a breather'}
                     </p>
                   </div>
                 </div>
@@ -604,8 +608,8 @@ export default function ActiveWorkoutPage() {
         {exercises.length === 0 ? (
           <div className="text-center py-12">
             <Dumbbell className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-            <p className="text-lg font-medium">No exercises in this workout</p>
-            <p className="text-muted-foreground">This workout plan has no exercises configured.</p>
+            <p className="text-lg font-medium">{isAr ? 'مفيش تمارين في التمرين ده' : 'No exercises in this workout'}</p>
+            <p className="text-muted-foreground">{isAr ? 'خطة التمرين دي مفيهاش تمارين.' : 'This workout plan has no exercises configured.'}</p>
           </div>
         ) : (
           exercises.map((exercise, exerciseIndex) => (
@@ -701,9 +705,9 @@ export default function ActiveWorkoutPage() {
                       <div className="space-y-2">
                         {/* Header */}
                         <div className="grid grid-cols-12 gap-2 text-xs font-medium text-muted-foreground px-1">
-                          <div className="col-span-2">SET</div>
-                          <div className="col-span-4 text-center">KG</div>
-                          <div className="col-span-4 text-center">REPS</div>
+                          <div className="col-span-2">{isAr ? 'مجموعة' : 'SET'}</div>
+                          <div className="col-span-4 text-center">{isAr ? 'كجم' : 'KG'}</div>
+                          <div className="col-span-4 text-center">{isAr ? 'تكرار' : 'REPS'}</div>
                           <div className="col-span-2"></div>
                         </div>
 
@@ -805,7 +809,7 @@ export default function ActiveWorkoutPage() {
                           onClick={() => addSet(exercise.id)}
                         >
                           <Plus className="mr-2 h-4 w-4" />
-                          Add Set
+                          {isAr ? 'أضف مجموعة' : 'Add Set'}
                         </Button>
                       </div>
 
@@ -813,7 +817,7 @@ export default function ActiveWorkoutPage() {
                       <div className="mt-4 flex items-center justify-between border-t border-border/30 pt-4">
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <Timer className="h-4 w-4" />
-                          <span>Rest: {exercise.restSeconds}s</span>
+                          <span>{isAr ? 'راحة:' : 'Rest:'} {exercise.restSeconds}s</span>
                         </div>
                         <Button
                           variant="outline"
@@ -825,7 +829,7 @@ export default function ActiveWorkoutPage() {
                           }}
                         >
                           <RotateCcw className="mr-2 h-4 w-4" />
-                          Start Rest
+                          {isAr ? 'ابدأ راحة' : 'Start Rest'}
                         </Button>
                       </div>
                     </CardContent>
@@ -841,20 +845,20 @@ export default function ActiveWorkoutPage() {
       <Dialog open={showExitDialog} onOpenChange={setShowExitDialog}>
         <DialogContent className="glass border-border/50">
           <DialogHeader>
-            <DialogTitle>Exit Workout?</DialogTitle>
+            <DialogTitle>{isAr ? 'خروج من التمرين?' : 'Exit Workout?'}</DialogTitle>
             <DialogDescription>
-              Your workout progress will be lost if you exit without saving.
+              {isAr ? 'تقدمك في التمرين هيتحذف لو خرجت من غير حفظ.' : 'Your workout progress will be lost if you exit without saving.'}
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="flex gap-2 sm:gap-0">
             <Button variant="outline" onClick={() => setShowExitDialog(false)}>
-              Continue Workout
+              {isAr ? 'كمل التمرين' : 'Continue Workout'}
             </Button>
             <Button
               variant="destructive"
               onClick={() => router.push('/workouts')}
             >
-              Exit Without Saving
+              {isAr ? 'اخرج من غير حفظ' : 'Exit Without Saving'}
             </Button>
           </DialogFooter>
         </DialogContent>
@@ -866,10 +870,10 @@ export default function ActiveWorkoutPage() {
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
               <Zap className="h-5 w-5 text-primary" />
-              Workout Complete!
+              {isAr ? 'التمرين خلص!' : 'Workout Complete!'}
             </DialogTitle>
             <DialogDescription>
-              Great job pushing through! Here's your summary:
+              {isAr ? 'شغل عظيم! هنا ملخصك:' : "Great job pushing through! Here's your summary:"}
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4 py-4">
@@ -879,21 +883,21 @@ export default function ActiveWorkoutPage() {
                   <Clock className="h-5 w-5 text-cyan-400" />
                 </div>
                 <p className="text-2xl font-bold">{formatTime(elapsedTime)}</p>
-                <p className="text-xs text-muted-foreground">Duration</p>
+                <p className="text-xs text-muted-foreground">{isAr ? 'المدة' : 'Duration'}</p>
               </div>
               <div className="text-center p-4 rounded-xl bg-muted/30 border border-border/50">
                 <div className="flex items-center justify-center mb-2">
                   <Target className="h-5 w-5 text-purple-400" />
                 </div>
                 <p className="text-2xl font-bold">{completedExercises}</p>
-                <p className="text-xs text-muted-foreground">Exercises</p>
+                <p className="text-xs text-muted-foreground">{isAr ? 'تمارين' : 'Exercises'}</p>
               </div>
               <div className="text-center p-4 rounded-xl bg-muted/30 border border-border/50">
                 <div className="flex items-center justify-center mb-2">
                   <Flame className="h-5 w-5 text-orange-400" />
                 </div>
                 <p className="text-2xl font-bold">{totalVolume.toLocaleString()}</p>
-                <p className="text-xs text-muted-foreground">Volume (kg)</p>
+                <p className="text-xs text-muted-foreground">{isAr ? 'الحجم (كجم)' : 'Volume (kg)'}</p>
               </div>
             </div>
 
@@ -904,7 +908,7 @@ export default function ActiveWorkoutPage() {
                   <Zap className="h-5 w-5 text-yellow-400" />
                 </div>
                 <div>
-                  <p className="font-medium text-yellow-400">Great Session!</p>
+                  <p className="font-medium text-yellow-400">{isAr ? 'جلسة رائعة!' : 'Great Session!'}</p>
                   <p className="text-xs text-muted-foreground">You crushed {(totalVolume / 1000).toFixed(1)}k volume today!</p>
                 </div>
               </div>
@@ -912,7 +916,7 @@ export default function ActiveWorkoutPage() {
           </div>
           <DialogFooter>
             <Button variant="outline" onClick={() => setShowFinishDialog(false)}>
-              Keep Going
+              {isAr ? 'كمل' : 'Keep Going'}
             </Button>
             <Button className="btn-primary" onClick={confirmFinish} disabled={isSaving}>
               {isSaving ? (
@@ -920,7 +924,7 @@ export default function ActiveWorkoutPage() {
               ) : (
                 <Save className="mr-2 h-4 w-4" />
               )}
-              Save Workout
+              {isAr ? 'احفظ التمرين' : 'Save Workout'}
             </Button>
           </DialogFooter>
         </DialogContent>

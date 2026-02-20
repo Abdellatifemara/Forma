@@ -35,8 +35,11 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { cn } from '@/lib/utils';
 import { trainersApi, chatApi, type TrainerProfile, type TrainerStats, type TrainerClientResponse } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 export default function TrainerDashboardPage() {
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const [copied, setCopied] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [profile, setProfile] = useState<TrainerProfile | null>(null);
@@ -80,8 +83,8 @@ export default function TrainerDashboardPage() {
   if (error || !profile || !stats) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[50vh] gap-4">
-        <p className="text-red-500">{error || 'Failed to load dashboard'}</p>
-        <Button onClick={() => window.location.reload()}>Try Again</Button>
+        <p className="text-red-500">{error || (isAr ? 'فشل تحميل لوحة التحكم' : 'Failed to load dashboard')}</p>
+        <Button onClick={() => window.location.reload()}>{isAr ? 'حاول تاني' : 'Try Again'}</Button>
       </div>
     );
   }
@@ -93,7 +96,7 @@ export default function TrainerDashboardPage() {
 
   const copyInviteCode = () => {
     const inviteCode = profile?.inviteCode || 'TRAINER';
-    navigator.clipboard.writeText(`https://forma.app/join/${inviteCode}`);
+    navigator.clipboard.writeText(`https://formaeg.com/join/${inviteCode}`);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -105,7 +108,7 @@ export default function TrainerDashboardPage() {
         <div>
           <div className="flex items-center gap-3 mb-2">
             <h1 className="text-3xl font-bold">
-              Welcome back, <span className="text-gradient">{(profile as any).user?.firstName || 'Trainer'}</span>
+              {t.trainer.welcome}, <span className="text-gradient">{(profile as any).user?.firstName || 'Trainer'}</span>
             </h1>
             {profile.tier === 'TRUSTED_PARTNER' ? (
               <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0">
@@ -120,16 +123,16 @@ export default function TrainerDashboardPage() {
             )}
           </div>
           <p className="text-muted-foreground">
-            Here's how your coaching business is performing
+            {isAr ? 'إزاي شغلك كمدرب ماشي' : "Here's how your coaching business is performing"}
           </p>
         </div>
 
         {/* Invite Code Card */}
         <div className="glass rounded-xl p-4 min-w-[280px]">
-          <p className="text-xs text-muted-foreground mb-2">Your Invite Link</p>
+          <p className="text-xs text-muted-foreground mb-2">{isAr ? 'رابط الدعوة' : 'Your Invite Link'}</p>
           <div className="flex items-center gap-2">
             <code className="flex-1 text-sm font-mono text-primary truncate">
-              forma.app/join/{profile.inviteCode || 'TRAINER'}
+              formaeg.com/join/{profile.inviteCode || 'TRAINER'}
             </code>
             <Button
               size="sm"
@@ -156,11 +159,11 @@ export default function TrainerDashboardPage() {
               <Users className="h-5 w-5 text-cyan-400" />
             </div>
             <Badge variant="outline" className="text-green-400 border-green-400/50 text-xs">
-              +{stats.newClientsThisMonth || 0} this month
+              +{stats.newClientsThisMonth || 0} {isAr ? 'الشهر ده' : 'this month'}
             </Badge>
           </div>
           <p className="text-3xl font-bold">{stats.activeClients || 0}</p>
-          <p className="text-sm text-muted-foreground mt-1">Active Clients</p>
+          <p className="text-sm text-muted-foreground mt-1">{isAr ? 'عملاء نشطين' : 'Active Clients'}</p>
         </div>
 
         {/* Monthly Revenue */}
@@ -170,11 +173,11 @@ export default function TrainerDashboardPage() {
               <DollarSign className="h-5 w-5 text-green-400" />
             </div>
             <Badge variant="outline" className="text-green-400 border-green-400/50 text-xs">
-              Revenue
+              {isAr ? 'الإيرادات' : 'Revenue'}
             </Badge>
           </div>
-          <p className="text-3xl font-bold">{(stats.monthlyRevenue || 0).toLocaleString()} <span className="text-lg text-muted-foreground">EGP</span></p>
-          <p className="text-sm text-muted-foreground mt-1">Monthly Revenue</p>
+          <p className="text-3xl font-bold">{(stats.monthlyRevenue || 0).toLocaleString()} <span className="text-lg text-muted-foreground">{isAr ? 'ج.م' : 'EGP'}</span></p>
+          <p className="text-sm text-muted-foreground mt-1">{isAr ? 'إيرادات الشهر' : 'Monthly Revenue'}</p>
         </div>
 
         {/* Pending Payout */}
@@ -184,11 +187,11 @@ export default function TrainerDashboardPage() {
               <Zap className="h-5 w-5 text-purple-400" />
             </div>
             <span className="text-xs text-muted-foreground">
-              {Math.round((1 - commissionRate) * 100)}% yours
+              {Math.round((1 - commissionRate) * 100)}% {isAr ? 'ليك' : 'yours'}
             </span>
           </div>
-          <p className="text-3xl font-bold">{netEarnings.toLocaleString()} <span className="text-lg text-muted-foreground">EGP</span></p>
-          <p className="text-sm text-muted-foreground mt-1">Your Earnings</p>
+          <p className="text-3xl font-bold">{netEarnings.toLocaleString()} <span className="text-lg text-muted-foreground">{isAr ? 'ج.م' : 'EGP'}</span></p>
+          <p className="text-sm text-muted-foreground mt-1">{isAr ? 'أرباحك' : 'Your Earnings'}</p>
         </div>
 
         {/* Average Rating */}
@@ -210,7 +213,7 @@ export default function TrainerDashboardPage() {
             </div>
           </div>
           <p className="text-3xl font-bold">{(stats.averageRating || 0).toFixed(1)}</p>
-          <p className="text-sm text-muted-foreground mt-1">{stats.totalReviews || 0} reviews</p>
+          <p className="text-sm text-muted-foreground mt-1">{stats.totalReviews || 0} {isAr ? 'تقييم' : 'reviews'}</p>
         </div>
       </div>
 
@@ -219,32 +222,32 @@ export default function TrainerDashboardPage() {
         <CardHeader className="pb-2">
           <CardTitle className="flex items-center gap-2 text-lg">
             <TrendingUp className="h-5 w-5 text-primary" />
-            This Month's Earnings Breakdown
+            {isAr ? 'تفاصيل أرباح الشهر' : "This Month's Earnings Breakdown"}
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="grid gap-6 md:grid-cols-3">
             <div className="space-y-2">
-              <p className="text-sm text-muted-foreground">Gross Revenue</p>
-              <p className="text-2xl font-bold">{(stats.monthlyRevenue || 0).toLocaleString()} EGP</p>
+              <p className="text-sm text-muted-foreground">{isAr ? 'إجمالي الإيرادات' : 'Gross Revenue'}</p>
+              <p className="text-2xl font-bold">{(stats.monthlyRevenue || 0).toLocaleString()} {isAr ? 'ج.م' : 'EGP'}</p>
             </div>
             <div className="space-y-2">
-              <p className="text-sm text-muted-foreground">Platform Fee ({commissionRate * 100}%)</p>
-              <p className="text-2xl font-bold text-orange-400">-{platformFee.toLocaleString()} EGP</p>
+              <p className="text-sm text-muted-foreground">{isAr ? `عمولة المنصة (${commissionRate * 100}%)` : `Platform Fee (${commissionRate * 100}%)`}</p>
+              <p className="text-2xl font-bold text-orange-400">-{platformFee.toLocaleString()} {isAr ? 'ج.م' : 'EGP'}</p>
             </div>
             <div className="space-y-2">
-              <p className="text-sm text-muted-foreground">Your Earnings</p>
-              <p className="text-2xl font-bold text-green-400">{netEarnings.toLocaleString()} EGP</p>
+              <p className="text-sm text-muted-foreground">{isAr ? 'أرباحك' : 'Your Earnings'}</p>
+              <p className="text-2xl font-bold text-green-400">{netEarnings.toLocaleString()} {isAr ? 'ج.م' : 'EGP'}</p>
             </div>
           </div>
           <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Clock className="h-4 w-4" />
-              Next payout: <span className="text-foreground font-medium">15th of next month</span>
+              {isAr ? 'التحويل الجاي:' : 'Next payout:'} <span className="text-foreground font-medium">{isAr ? '15 الشهر الجاي' : '15th of next month'}</span>
             </div>
             <Button variant="outline" size="sm" className="border-primary/50 hover:bg-primary/10" asChild>
               <Link href="/trainer/earnings">
-                View Transactions
+                {isAr ? 'عرض المعاملات' : 'View Transactions'}
                 <ArrowUpRight className="h-4 w-4 ml-1" />
               </Link>
             </Button>
@@ -258,12 +261,12 @@ export default function TrainerDashboardPage() {
         <Card className="lg:col-span-2 glass border-border/50">
           <CardHeader className="flex flex-row items-center justify-between">
             <div>
-              <CardTitle>Your Clients</CardTitle>
-              <CardDescription>Client activity and compliance rates</CardDescription>
+              <CardTitle>{isAr ? 'عملاؤك' : 'Your Clients'}</CardTitle>
+              <CardDescription>{isAr ? 'نشاط العملاء ومعدلات الالتزام' : 'Client activity and compliance rates'}</CardDescription>
             </div>
             <Button variant="outline" size="sm" asChild>
               <Link href="/trainer/clients">
-                View All
+                {isAr ? 'عرض الكل' : 'View All'}
                 <ChevronRight className="h-4 w-4 ml-1" />
               </Link>
             </Button>
@@ -272,7 +275,7 @@ export default function TrainerDashboardPage() {
             <div className="space-y-3">
               {clients.length === 0 ? (
                 <p className="text-center text-muted-foreground py-8">
-                  No clients yet. Share your invite link to get started!
+                  {isAr ? 'مفيش عملاء لسه. شارك رابط الدعوة عشان تبدأ!' : 'No clients yet. Share your invite link to get started!'}
                 </p>
               ) : clients.map((item) => {
                 const clientName = `${item.client?.firstName || ''} ${item.client?.lastName || ''}`.trim() || 'Unknown';
@@ -299,7 +302,7 @@ export default function TrainerDashboardPage() {
                     <div className="flex items-center gap-4">
                       <div className="hidden sm:block w-32">
                         <div className="flex items-center justify-between text-xs mb-1">
-                          <span className="text-muted-foreground">Compliance</span>
+                          <span className="text-muted-foreground">{isAr ? 'الالتزام' : 'Compliance'}</span>
                           <span className={cn(
                             'font-medium',
                             compliance >= 80 ? 'text-green-400' : compliance >= 50 ? 'text-yellow-400' : 'text-red-400'
@@ -328,32 +331,32 @@ export default function TrainerDashboardPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Zap className="h-5 w-5 text-primary" />
-              Quick Actions
+              {isAr ? 'إجراءات سريعة' : 'Quick Actions'}
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
             <Button className="w-full justify-start h-12 btn-primary" asChild>
               <Link href="/trainer/clients/invite">
                 <Share2 className="mr-3 h-5 w-5" />
-                Share Invite Link
+                {isAr ? 'شارك رابط الدعوة' : 'Share Invite Link'}
               </Link>
             </Button>
             <Button className="w-full justify-start h-12" variant="outline" asChild>
               <Link href="/trainer/programs/upload">
                 <FileText className="mr-3 h-5 w-5" />
-                Upload Program PDF
+                {isAr ? 'رفع برنامج PDF' : 'Upload Program PDF'}
               </Link>
             </Button>
             <Button className="w-full justify-start h-12" variant="outline" asChild>
               <Link href="/trainer/programs/new">
                 <Target className="mr-3 h-5 w-5" />
-                Create New Program
+                {isAr ? 'إنشاء برنامج جديد' : 'Create New Program'}
               </Link>
             </Button>
             <Button className="w-full justify-start h-12" variant="outline" asChild>
               <Link href="/trainer/messages">
                 <MessageSquare className="mr-3 h-5 w-5" />
-                Message Clients
+                {isAr ? 'راسل العملاء' : 'Message Clients'}
                 {unreadCount > 0 && (
                   <Badge className="ml-auto bg-primary text-primary-foreground">{unreadCount}</Badge>
                 )}
@@ -367,13 +370,13 @@ export default function TrainerDashboardPage() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Calendar className="h-5 w-5 text-primary" />
-              Today's Sessions
+              {isAr ? 'جلسات النهاردة' : "Today's Sessions"}
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="text-center py-8 text-muted-foreground">
               <Calendar className="h-8 w-8 mx-auto mb-2 opacity-50" />
-              <p>Session scheduling coming soon</p>
+              <p>{isAr ? 'جدولة الجلسات قريباً' : 'Session scheduling coming soon'}</p>
             </div>
           </CardContent>
         </Card>
@@ -384,12 +387,12 @@ export default function TrainerDashboardPage() {
             <div>
               <CardTitle className="flex items-center gap-2">
                 <MessageSquare className="h-5 w-5 text-primary" />
-                Messages
+                {isAr ? 'الرسائل' : 'Messages'}
               </CardTitle>
             </div>
             <Button variant="outline" size="sm" asChild>
               <Link href="/trainer/messages">
-                Open Chat
+                {isAr ? 'افتح الشات' : 'Open Chat'}
                 <ChevronRight className="h-4 w-4 ml-1" />
               </Link>
             </Button>
@@ -397,9 +400,9 @@ export default function TrainerDashboardPage() {
           <CardContent>
             <div className="text-center py-8 text-muted-foreground">
               <MessageSquare className="h-8 w-8 mx-auto mb-2 opacity-50" />
-              <p>Chat with your clients</p>
+              <p>{isAr ? 'تواصل مع عملاءك' : 'Chat with your clients'}</p>
               <Button variant="outline" size="sm" className="mt-4" asChild>
-                <Link href="/trainer/messages">Go to Messages</Link>
+                <Link href="/trainer/messages">{isAr ? 'الذهاب للرسائل' : 'Go to Messages'}</Link>
               </Button>
             </div>
           </CardContent>
@@ -411,10 +414,10 @@ export default function TrainerDashboardPage() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Target className="h-5 w-5 text-primary" />
-            Client Compliance Overview
+            {isAr ? 'نظرة عامة على التزام العملاء' : 'Client Compliance Overview'}
           </CardTitle>
           <CardDescription>
-            How well your clients are following their programs
+            {isAr ? 'مدى التزام عملاءك ببرامجهم' : 'How well your clients are following their programs'}
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -452,19 +455,19 @@ export default function TrainerDashboardPage() {
             </div>
             <div className="flex-1 grid gap-4 sm:grid-cols-3">
               <div className="space-y-1">
-                <p className="text-sm text-muted-foreground">Total Clients</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'إجمالي العملاء' : 'Total Clients'}</p>
                 <p className="text-2xl font-bold text-primary">{stats.activeClients || 0}</p>
-                <p className="text-xs text-muted-foreground">Active subscriptions</p>
+                <p className="text-xs text-muted-foreground">{isAr ? 'اشتراكات نشطة' : 'Active subscriptions'}</p>
               </div>
               <div className="space-y-1">
-                <p className="text-sm text-muted-foreground">New This Month</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'جدد الشهر ده' : 'New This Month'}</p>
                 <p className="text-2xl font-bold text-green-400">{stats.newClientsThisMonth || 0}</p>
-                <p className="text-xs text-muted-foreground">Recently joined</p>
+                <p className="text-xs text-muted-foreground">{isAr ? 'انضموا مؤخراً' : 'Recently joined'}</p>
               </div>
               <div className="space-y-1">
-                <p className="text-sm text-muted-foreground">Total Earnings</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'إجمالي الأرباح' : 'Total Earnings'}</p>
                 <p className="text-2xl font-bold text-purple-400">{(stats.totalEarnings || 0).toLocaleString()}</p>
-                <p className="text-xs text-muted-foreground">EGP lifetime</p>
+                <p className="text-xs text-muted-foreground">{isAr ? 'ج.م مدى الحياة' : 'EGP lifetime'}</p>
               </div>
             </div>
           </div>

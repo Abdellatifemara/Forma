@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/lib/i18n';
 import {
   useAIMetrics,
   useLimitAnalysis,
@@ -25,6 +26,8 @@ import {
 } from '@/hooks/use-research';
 
 export default function AdminResearchPage() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [timeRange, setTimeRange] = useState(30);
   const { data: aiMetrics, isLoading: metricsLoading, refetch: refetchMetrics } = useAIMetrics(timeRange);
   const { data: limitAnalysis, isLoading: limitLoading } = useLimitAnalysis();
@@ -34,13 +37,17 @@ export default function AdminResearchPage() {
   const isLoading = metricsLoading || limitLoading || patternsLoading;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8" dir={isAr ? 'rtl' : 'ltr'}>
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold">Research & Analytics</h1>
+          <h1 className="text-2xl font-bold">
+            {isAr ? 'البحث والتحليلات' : 'Research & Analytics'}
+          </h1>
           <p className="text-muted-foreground">
-            AI usage metrics, survey responses, and limit analysis
+            {isAr
+              ? 'مقاييس استخدام الذكاء الاصطناعي والاستبيانات وتحليل الحدود'
+              : 'AI usage metrics, survey responses, and limit analysis'}
           </p>
         </div>
         <div className="flex items-center gap-3">
@@ -49,9 +56,9 @@ export default function AdminResearchPage() {
             onChange={(e) => setTimeRange(Number(e.target.value))}
             className="px-3 py-2 rounded-lg bg-muted border border-border text-sm"
           >
-            <option value={7}>Last 7 days</option>
-            <option value={30}>Last 30 days</option>
-            <option value={90}>Last 90 days</option>
+            <option value={7}>{isAr ? 'آخر 7 أيام' : 'Last 7 days'}</option>
+            <option value={30}>{isAr ? 'آخر 30 يوم' : 'Last 30 days'}</option>
+            <option value={90}>{isAr ? 'آخر 90 يوم' : 'Last 90 days'}</option>
           </select>
           <Button
             variant="outline"
@@ -69,7 +76,9 @@ export default function AdminResearchPage() {
             onClick={() => seedMutation.mutate()}
             disabled={seedMutation.isPending}
           >
-            {seedMutation.isPending ? 'Seeding...' : 'Seed Surveys'}
+            {seedMutation.isPending
+              ? (isAr ? 'جاري الإنشاء...' : 'Seeding...')
+              : (isAr ? 'إنشاء استبيانات' : 'Seed Surveys')}
           </Button>
         </div>
       </div>
@@ -78,31 +87,35 @@ export default function AdminResearchPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
           icon={Zap}
-          label="Total AI Queries"
+          label={isAr ? 'إجمالي استعلامات الذكاء الاصطناعي' : 'Total AI Queries'}
           value={aiMetrics?.totalQueries?.toLocaleString() ?? '0'}
           change={null}
           iconColor="text-cyan-400"
+          isAr={isAr}
         />
         <StatCard
           icon={Users}
-          label="Unique Users"
+          label={isAr ? 'مستخدمين فريدين' : 'Unique Users'}
           value={aiMetrics?.uniqueUsers?.toLocaleString() ?? '0'}
           change={null}
           iconColor="text-green-400"
+          isAr={isAr}
         />
         <StatCard
           icon={Clock}
-          label="Avg Response Time"
+          label={isAr ? 'متوسط وقت الاستجابة' : 'Avg Response Time'}
           value={`${aiMetrics?.avgResponseTime?.toFixed(0) ?? '0'}ms`}
           change={null}
           iconColor="text-orange-400"
+          isAr={isAr}
         />
         <StatCard
           icon={ThumbsUp}
-          label="Avg Satisfaction"
+          label={isAr ? 'متوسط الرضا' : 'Avg Satisfaction'}
           value={`${aiMetrics?.avgSatisfaction?.toFixed(1) ?? '0'}/5`}
           change={null}
           iconColor="text-purple-400"
+          isAr={isAr}
         />
       </div>
 
@@ -114,9 +127,13 @@ export default function AdminResearchPage() {
               <AlertTriangle className="h-5 w-5 text-orange-400" />
             </div>
             <div>
-              <h3 className="font-bold">Limit Hit Analysis</h3>
+              <h3 className="font-bold">
+                {isAr ? 'تحليل الوصول للحد الأقصى' : 'Limit Hit Analysis'}
+              </h3>
               <p className="text-xs text-muted-foreground">
-                Users who hit their AI query limits
+                {isAr
+                  ? 'المستخدمين اللي وصلوا لحد الاستعلامات'
+                  : 'Users who hit their AI query limits'}
               </p>
             </div>
           </div>
@@ -127,18 +144,24 @@ export default function AdminResearchPage() {
                 <p className="text-2xl font-bold">
                   {limitAnalysis?.totalLimitHits ?? 0}
                 </p>
-                <p className="text-sm text-muted-foreground">Total limit hits</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'إجمالي مرات الوصول للحد' : 'Total limit hits'}
+                </p>
               </div>
-              <div className="text-right">
+              <div className={isAr ? 'text-left' : 'text-right'}>
                 <p className="text-2xl font-bold text-green-400">
                   {((limitAnalysis?.conversionAfterHit ?? 0) * 100).toFixed(1)}%
                 </p>
-                <p className="text-sm text-muted-foreground">Upgrade conversion</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'معدل الترقية' : 'Upgrade conversion'}
+                </p>
               </div>
             </div>
 
             <div className="space-y-2">
-              <p className="text-sm font-medium">Hits by Tier</p>
+              <p className="text-sm font-medium">
+                {isAr ? 'حسب الباقة' : 'Hits by Tier'}
+              </p>
               {Object.entries(limitAnalysis?.hitsByTier ?? {}).map(([tier, count]) => (
                 <div key={tier} className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
@@ -156,7 +179,7 @@ export default function AdminResearchPage() {
 
             <div className="pt-4 border-t border-border/50">
               <p className="text-sm text-muted-foreground">
-                Avg queries before hitting limit:{' '}
+                {isAr ? 'متوسط الاستعلامات قبل الوصول للحد:' : 'Avg queries before hitting limit:'}{' '}
                 <span className="text-foreground font-medium">
                   {limitAnalysis?.avgQueriesBeforeHit?.toFixed(1) ?? '0'}
                 </span>
@@ -172,9 +195,13 @@ export default function AdminResearchPage() {
               <BarChart3 className="h-5 w-5 text-cyan-400" />
             </div>
             <div>
-              <h3 className="font-bold">Query Patterns</h3>
+              <h3 className="font-bold">
+                {isAr ? 'أنماط الاستعلامات' : 'Query Patterns'}
+              </h3>
               <p className="text-xs text-muted-foreground">
-                When and how users interact with AI
+                {isAr
+                  ? 'إزاي ومتى المستخدمين بيتفاعلوا مع الذكاء الاصطناعي'
+                  : 'When and how users interact with AI'}
               </p>
             </div>
           </div>
@@ -182,13 +209,17 @@ export default function AdminResearchPage() {
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 rounded-xl bg-muted/50">
-                <p className="text-sm text-muted-foreground mb-1">Avg Session Queries</p>
+                <p className="text-sm text-muted-foreground mb-1">
+                  {isAr ? 'متوسط استعلامات الجلسة' : 'Avg Session Queries'}
+                </p>
                 <p className="text-2xl font-bold">
                   {patterns?.avgSessionQueries?.toFixed(1) ?? '0'}
                 </p>
               </div>
               <div className="p-4 rounded-xl bg-muted/50">
-                <p className="text-sm text-muted-foreground mb-1">Peak Hour</p>
+                <p className="text-sm text-muted-foreground mb-1">
+                  {isAr ? 'ساعة الذروة' : 'Peak Hour'}
+                </p>
                 <p className="text-2xl font-bold">
                   {patterns?.peakHours?.[0]?.hour ?? 0}:00
                 </p>
@@ -196,7 +227,9 @@ export default function AdminResearchPage() {
             </div>
 
             <div className="space-y-2">
-              <p className="text-sm font-medium">Top Query Categories</p>
+              <p className="text-sm font-medium">
+                {isAr ? 'أكتر فئات الاستعلامات' : 'Top Query Categories'}
+              </p>
               {(patterns?.queryCategories ?? []).slice(0, 5).map((cat) => (
                 <div key={cat.category} className="flex items-center gap-3">
                   <div className="flex-1">
@@ -229,9 +262,13 @@ export default function AdminResearchPage() {
             <MessageSquare className="h-5 w-5 text-purple-400" />
           </div>
           <div>
-            <h3 className="font-bold">Query Types Distribution</h3>
+            <h3 className="font-bold">
+              {isAr ? 'توزيع أنواع الاستعلامات' : 'Query Types Distribution'}
+            </h3>
             <p className="text-xs text-muted-foreground">
-              Breakdown of AI queries by type
+              {isAr
+                ? 'تقسيم استعلامات الذكاء الاصطناعي حسب النوع'
+                : 'Breakdown of AI queries by type'}
             </p>
           </div>
         </div>
@@ -255,9 +292,13 @@ export default function AdminResearchPage() {
             <Crown className="h-5 w-5 text-green-400" />
           </div>
           <div>
-            <h3 className="font-bold">Usage by Subscription Tier</h3>
+            <h3 className="font-bold">
+              {isAr ? 'الاستخدام حسب باقة الاشتراك' : 'Usage by Subscription Tier'}
+            </h3>
             <p className="text-xs text-muted-foreground">
-              AI queries segmented by user tier
+              {isAr
+                ? 'استعلامات الذكاء الاصطناعي مقسمة حسب باقة المستخدم'
+                : 'AI queries segmented by user tier'}
             </p>
           </div>
         </div>
@@ -295,7 +336,7 @@ export default function AdminResearchPage() {
                   />
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">
-                  {percentage.toFixed(1)}% of total queries
+                  {percentage.toFixed(1)}% {isAr ? 'من إجمالي الاستعلامات' : 'of total queries'}
                 </p>
               </div>
             );
@@ -310,40 +351,59 @@ export default function AdminResearchPage() {
             <TrendingUp className="h-5 w-5 text-primary" />
           </div>
           <div>
-            <h3 className="font-bold">Key Insights</h3>
+            <h3 className="font-bold">
+              {isAr ? 'رؤى مهمة' : 'Key Insights'}
+            </h3>
             <p className="text-xs text-muted-foreground">
-              Actionable findings from research data
+              {isAr
+                ? 'نتائج قابلة للتنفيذ من بيانات البحث'
+                : 'Actionable findings from research data'}
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <InsightCard
-            title="Limit Validation"
+            title={isAr ? 'التحقق من الحدود' : 'Limit Validation'}
             insight={
               limitAnalysis && limitAnalysis.avgQueriesBeforeHit < 18
-                ? 'Current limit (20) may be too restrictive - users hit limits before month end'
-                : 'Current limit (20) seems appropriate - most users don\'t hit limits'
+                ? (isAr
+                    ? 'الحد الحالي (20) ممكن يكون ضيق أوي - المستخدمين بيوصلوا للحد قبل نهاية الشهر'
+                    : 'Current limit (20) may be too restrictive - users hit limits before month end')
+                : (isAr
+                    ? 'الحد الحالي (20) مناسب - معظم المستخدمين مش بيوصلوا للحد'
+                    : 'Current limit (20) seems appropriate - most users don\'t hit limits')
             }
             type={limitAnalysis && limitAnalysis.avgQueriesBeforeHit < 18 ? 'warning' : 'success'}
+            isAr={isAr}
           />
           <InsightCard
-            title="Conversion Opportunity"
+            title={isAr ? 'فرصة التحويل' : 'Conversion Opportunity'}
             insight={
               limitAnalysis && limitAnalysis.conversionAfterHit > 0.15
-                ? `${(limitAnalysis.conversionAfterHit * 100).toFixed(0)}% upgrade after limit hit - pricing is well positioned`
-                : 'Low conversion after limit hit - consider adjusting pricing or limits'
+                ? (isAr
+                    ? `${(limitAnalysis.conversionAfterHit * 100).toFixed(0)}% ترقية بعد الوصول للحد - التسعير مناسب`
+                    : `${(limitAnalysis.conversionAfterHit * 100).toFixed(0)}% upgrade after limit hit - pricing is well positioned`)
+                : (isAr
+                    ? 'معدل التحويل بعد الوصول للحد منخفض - ممكن تعدل التسعير أو الحدود'
+                    : 'Low conversion after limit hit - consider adjusting pricing or limits')
             }
             type={limitAnalysis && limitAnalysis.conversionAfterHit > 0.15 ? 'success' : 'warning'}
+            isAr={isAr}
           />
           <InsightCard
-            title="User Satisfaction"
+            title={isAr ? 'رضا المستخدمين' : 'User Satisfaction'}
             insight={
               aiMetrics && aiMetrics.avgSatisfaction >= 4
-                ? 'High satisfaction (4+/5) - AI features are meeting expectations'
-                : 'Satisfaction below 4/5 - review AI response quality'
+                ? (isAr
+                    ? 'رضا عالي (4+/5) - خصائص الذكاء الاصطناعي بتحقق التوقعات'
+                    : 'High satisfaction (4+/5) - AI features are meeting expectations')
+                : (isAr
+                    ? 'الرضا أقل من 4/5 - راجع جودة ردود الذكاء الاصطناعي'
+                    : 'Satisfaction below 4/5 - review AI response quality')
             }
             type={aiMetrics && aiMetrics.avgSatisfaction >= 4 ? 'success' : 'warning'}
+            isAr={isAr}
           />
         </div>
       </div>
@@ -357,12 +417,14 @@ function StatCard({
   value,
   change,
   iconColor,
+  isAr,
 }: {
   icon: typeof Zap;
   label: string;
   value: string;
   change: number | null;
   iconColor: string;
+  isAr: boolean;
 }) {
   return (
     <div className="rounded-2xl border border-border bg-card p-4">
@@ -390,10 +452,12 @@ function InsightCard({
   title,
   insight,
   type,
+  isAr,
 }: {
   title: string;
   insight: string;
   type: 'success' | 'warning' | 'info';
+  isAr: boolean;
 }) {
   return (
     <div className={cn(

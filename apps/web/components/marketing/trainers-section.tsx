@@ -4,31 +4,43 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Award, Shield, TrendingUp, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/lib/i18n';
 
 const benefits = [
   {
     icon: Users,
     title: 'Reach More Clients',
+    titleAr: 'وصّل لعملاء أكتر',
     description: 'Access thousands of fitness enthusiasts across Egypt looking for professional guidance.',
+    descriptionAr: 'وصّل لآلاف عشاق اللياقة في مصر اللي بيدوروا على توجيه احترافي.',
   },
   {
     icon: Shield,
     title: 'Verified Credentials',
+    titleAr: 'شهادات موثقة',
     description: 'Stand out with our certification verification. Build trust with verified badges.',
+    descriptionAr: 'اتميز بتوثيق شهاداتك. ابني ثقة مع شارات التحقق.',
   },
   {
     icon: TrendingUp,
     title: 'Grow Your Business',
+    titleAr: 'كبّر شغلك',
     description: 'Use our tools to manage clients, track progress, and scale your coaching practice.',
+    descriptionAr: 'استخدم أدواتنا لإدارة العملاء وتتبع التقدم وتكبير ممارستك التدريبية.',
   },
   {
     icon: Award,
     title: 'Competitive Commission',
+    titleAr: 'عمولة تنافسية',
     description: 'Keep 85% of your earnings. No hidden fees, no surprises. Get paid weekly.',
+    descriptionAr: 'خد 85% من أرباحك. مفيش رسوم مخفية. الدفع أسبوعياً.',
   },
 ];
 
 export function TrainersSection() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
   return (
     <section id="trainers" className="py-20 md:py-32">
       <div className="container">
@@ -40,13 +52,16 @@ export function TrainersSection() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-              Are you a{' '}
-              <span className="text-forma-teal">fitness professional</span>?
+              {isAr ? (
+                <>أنت <span className="text-forma-teal">مدرب لياقة</span> محترف؟</>
+              ) : (
+                <>Are you a{' '}<span className="text-forma-teal">fitness professional</span>?</>
+              )}
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Join Egypt's growing community of certified trainers. Build your
-              online coaching business with Forma's powerful tools and reach
-              clients nationwide.
+              {isAr
+                ? 'انضم لمجتمع المدربين المعتمدين في مصر. ابني شغلك في التدريب أونلاين مع أدوات فورما القوية ووصّل لعملاء في كل مكان.'
+                : "Join Egypt's growing community of certified trainers. Build your online coaching business with Forma's powerful tools and reach clients nationwide."}
             </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
@@ -63,9 +78,9 @@ export function TrainersSection() {
                     <benefit.icon className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">{benefit.title}</h3>
+                    <h3 className="font-semibold">{isAr ? benefit.titleAr : benefit.title}</h3>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      {benefit.description}
+                      {isAr ? benefit.descriptionAr : benefit.description}
                     </p>
                   </div>
                 </motion.div>
@@ -75,7 +90,7 @@ export function TrainersSection() {
             <div className="mt-10">
               <Button variant="forma" size="lg" asChild>
                 <Link href="/trainer/apply">
-                  Apply as a Trainer
+                  {isAr ? 'قدم كمدرب' : 'Apply as a Trainer'}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -96,7 +111,7 @@ export function TrainersSection() {
               <div className="relative space-y-4">
                 <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-white/70">Active Clients</span>
+                    <span className="text-sm text-white/70">{isAr ? 'عملاء نشطين' : 'Active Clients'}</span>
                     <span className="text-2xl font-bold text-white">47</span>
                   </div>
                   <div className="mt-2 h-2 rounded-full bg-white/20">
@@ -106,15 +121,15 @@ export function TrainersSection() {
 
                 <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-white/70">Monthly Revenue</span>
-                    <span className="text-2xl font-bold text-white">12,450 EGP</span>
+                    <span className="text-sm text-white/70">{isAr ? 'إيرادات شهرية' : 'Monthly Revenue'}</span>
+                    <span className="text-2xl font-bold text-white">{isAr ? '12,450 ج.م' : '12,450 EGP'}</span>
                   </div>
-                  <p className="mt-1 text-xs text-forma-teal">+23% from last month</p>
+                  <p className="mt-1 text-xs text-forma-teal">{isAr ? '+23% عن الشهر اللي فات' : '+23% from last month'}</p>
                 </div>
 
                 <div className="rounded-xl bg-white/10 p-6 backdrop-blur">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-white/70">Client Satisfaction</span>
+                    <span className="text-sm text-white/70">{isAr ? 'رضا العملاء' : 'Client Satisfaction'}</span>
                     <span className="text-2xl font-bold text-white">4.9/5</span>
                   </div>
                   <div className="mt-2 flex gap-1">

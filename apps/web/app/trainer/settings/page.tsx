@@ -43,10 +43,12 @@ import { cn } from '@/lib/utils';
 import { trainersApi, usersApi, uploadApi } from '@/lib/api';
 import { useUser } from '@/hooks/use-user';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 export default function TrainerSettingsPage() {
   const { data: userData, isLoading: userLoading, refetch: refetchUser } = useUser();
   const { toast } = useToast();
+  const { t } = useLanguage();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [isUploadingPhoto, setIsUploadingPhoto] = useState(false);
@@ -100,12 +102,12 @@ export default function TrainerSettingsPage() {
     if (!file) return;
 
     if (!file.type.startsWith('image/')) {
-      toast({ title: 'Invalid file', description: 'Please select an image file.', variant: 'destructive' });
+      toast({ title: t.settings.profile.invalidFile, description: t.settings.profile.invalidFileDesc, variant: 'destructive' });
       return;
     }
 
     if (file.size > 5 * 1024 * 1024) {
-      toast({ title: 'File too large', description: 'Please select an image under 5MB.', variant: 'destructive' });
+      toast({ title: t.settings.profile.fileTooLarge, description: t.settings.profile.fileTooLargeDesc, variant: 'destructive' });
       return;
     }
 
@@ -113,9 +115,9 @@ export default function TrainerSettingsPage() {
     try {
       await uploadApi.uploadAvatar(file);
       await refetchUser();
-      toast({ title: 'Photo updated', description: 'Your profile photo has been changed.' });
+      toast({ title: t.settings.profile.photoUpdated, description: t.settings.profile.photoUpdatedDesc });
     } catch {
-      toast({ title: 'Upload failed', description: 'Failed to upload photo. Please try again.', variant: 'destructive' });
+      toast({ title: t.settings.profile.uploadFailed, description: t.settings.profile.uploadFailedDesc, variant: 'destructive' });
     } finally {
       setIsUploadingPhoto(false);
       if (fileInputRef.current) fileInputRef.current.value = '';
@@ -133,9 +135,9 @@ export default function TrainerSettingsPage() {
         firstName: profile.firstName,
         lastName: profile.lastName,
       });
-      // Note: Full trainer profile update would need additional API endpoint
+      toast({ title: t.settings.profile.profileUpdated, description: t.settings.profile.profileUpdatedDesc });
     } catch (error) {
-      // Error handled
+      toast({ title: t.settings.profile.errorTitle, description: t.settings.profile.saveError, variant: 'destructive' });
     } finally {
       setIsSaving(false);
     }
@@ -154,21 +156,21 @@ export default function TrainerSettingsPage() {
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Settings</h1>
+          <h1 className="text-3xl font-bold">{t.trainer.settings}</h1>
           <p className="text-muted-foreground">
-            Manage your trainer account settings
+            {t.trainer.settingsSubtitle}
           </p>
         </div>
         <Button onClick={handleSave} disabled={isSaving} className="btn-primary">
           {isSaving ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Saving...
+              {t.trainer.saving}
             </>
           ) : (
             <>
               <Save className="mr-2 h-4 w-4" />
-              Save Changes
+              {t.trainer.saveChanges}
             </>
           )}
         </Button>
@@ -178,19 +180,19 @@ export default function TrainerSettingsPage() {
         <TabsList className="bg-muted/50">
           <TabsTrigger value="profile">
             <User className="mr-2 h-4 w-4" />
-            Profile
+            {t.trainer.tabProfile}
           </TabsTrigger>
           <TabsTrigger value="notifications">
             <Bell className="mr-2 h-4 w-4" />
-            Notifications
+            {t.trainer.tabNotifications}
           </TabsTrigger>
           <TabsTrigger value="availability">
             <Clock className="mr-2 h-4 w-4" />
-            Availability
+            {t.trainer.tabAvailability}
           </TabsTrigger>
           <TabsTrigger value="billing">
             <CreditCard className="mr-2 h-4 w-4" />
-            Billing
+            {t.trainer.tabBilling}
           </TabsTrigger>
         </TabsList>
 
@@ -198,9 +200,9 @@ export default function TrainerSettingsPage() {
           {/* Profile Photo */}
           <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle>Profile Photo</CardTitle>
+              <CardTitle>{t.trainer.profilePhoto}</CardTitle>
               <CardDescription>
-                This will be displayed on your public profile
+                {t.trainer.profilePhotoDesc}
               </CardDescription>
             </CardHeader>
             <CardContent className="flex items-center gap-6">
@@ -230,17 +232,17 @@ export default function TrainerSettingsPage() {
                   {isUploadingPhoto ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Uploading...
+                      {t.trainer.uploading}
                     </>
                   ) : (
                     <>
                       <Camera className="mr-2 h-4 w-4" />
-                      Change Photo
+                      {t.trainer.changePhoto}
                     </>
                   )}
                 </Button>
                 <p className="text-sm text-muted-foreground">
-                  JPG, PNG or GIF. Max 5MB.
+                  {t.trainer.photoHint}
                 </p>
               </div>
             </CardContent>
@@ -249,13 +251,13 @@ export default function TrainerSettingsPage() {
           {/* Basic Info */}
           <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle>Basic Information</CardTitle>
-              <CardDescription>Update your personal details</CardDescription>
+              <CardTitle>{t.trainer.basicInfo}</CardTitle>
+              <CardDescription>{t.trainer.basicInfoDesc}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2">
-                  <Label>First Name</Label>
+                  <Label>{t.trainer.firstName}</Label>
                   <Input
                     value={profile.firstName}
                     onChange={(e) =>
@@ -265,7 +267,7 @@ export default function TrainerSettingsPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label>Last Name</Label>
+                  <Label>{t.trainer.lastName}</Label>
                   <Input
                     value={profile.lastName}
                     onChange={(e) =>
@@ -275,7 +277,7 @@ export default function TrainerSettingsPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label>Email</Label>
+                  <Label>{t.trainer.email}</Label>
                   <Input
                     type="email"
                     value={profile.email}
@@ -284,7 +286,7 @@ export default function TrainerSettingsPage() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label>Phone</Label>
+                  <Label>{t.trainer.phone}</Label>
                   <Input
                     value={profile.phone}
                     onChange={(e) =>
@@ -294,7 +296,7 @@ export default function TrainerSettingsPage() {
                   />
                 </div>
                 <div className="space-y-2 md:col-span-2">
-                  <Label>Hourly Rate (EGP)</Label>
+                  <Label>{t.trainer.hourlyRate}</Label>
                   <Input
                     type="number"
                     value={profile.hourlyRate}
@@ -306,7 +308,7 @@ export default function TrainerSettingsPage() {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label>Bio</Label>
+                <Label>{t.trainer.bio}</Label>
                 <Textarea
                   className="min-h-[100px] bg-muted/50 border-border/50"
                   value={profile.bio}
@@ -330,40 +332,40 @@ export default function TrainerSettingsPage() {
                 <div>
                   <CardTitle className="flex items-center gap-2">
                     <Award className="h-5 w-5 text-yellow-400" />
-                    Trainer Tier
+                    {t.trainer.trainerTier}
                   </CardTitle>
-                  <CardDescription>Your current partnership level</CardDescription>
+                  <CardDescription>{t.trainer.trainerTierDesc}</CardDescription>
                 </div>
                 <Badge className={
                   trainerTier === 'TRUSTED_PARTNER'
                     ? 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50'
                     : 'bg-muted'
                 }>
-                  {trainerTier === 'TRUSTED_PARTNER' ? 'Trusted Partner' : 'Regular Trainer'}
+                  {trainerTier === 'TRUSTED_PARTNER' ? t.trainer.trustedPartner : t.trainer.regularTrainer}
                 </Badge>
               </div>
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="p-4 rounded-xl bg-muted/30 border border-border/30">
-                  <p className="text-sm text-muted-foreground mb-1">Commission Rate</p>
+                  <p className="text-sm text-muted-foreground mb-1">{t.trainer.commissionRate}</p>
                   <p className="text-2xl font-bold">{commissionRate}%</p>
                 </div>
                 <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/30">
-                  <p className="text-sm text-muted-foreground mb-1">You Keep</p>
+                  <p className="text-sm text-muted-foreground mb-1">{t.trainer.youKeep}</p>
                   <p className="text-2xl font-bold text-green-400">{keepRate}%</p>
                 </div>
               </div>
               {trainerTier !== 'TRUSTED_PARTNER' && (
                 <div className="mt-4 p-4 rounded-xl bg-primary/10 border border-primary/20">
                   <p className="text-sm">
-                    <span className="font-medium">Want to become a Trusted Partner?</span>{' '}
+                    <span className="font-medium">{t.trainer.becomePartnerPrompt}</span>{' '}
                     <span className="text-muted-foreground">
-                      Reduce your commission to 5-7% by applying for our partner program.
+                      {t.trainer.becomePartnerDesc}
                     </span>
                   </p>
                   <Button variant="outline" className="mt-3 border-primary/50">
-                    Learn More
+                    {t.trainer.learnMore}
                   </Button>
                 </div>
               )}
@@ -374,37 +376,37 @@ export default function TrainerSettingsPage() {
         <TabsContent value="notifications" className="space-y-6">
           <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle>Notification Preferences</CardTitle>
+              <CardTitle>{t.trainer.notificationPrefs}</CardTitle>
               <CardDescription>
-                Choose what notifications you want to receive
+                {t.trainer.notificationPrefsDesc}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               {[
                 {
                   key: 'newClient',
-                  title: 'New Client Requests',
-                  description: 'Get notified when someone wants to work with you',
+                  title: t.trainer.notifNewClient,
+                  description: t.trainer.notifNewClientDesc,
                 },
                 {
                   key: 'sessionReminder',
-                  title: 'Session Reminders',
-                  description: 'Reminders before scheduled sessions',
+                  title: t.trainer.notifSessionReminder,
+                  description: t.trainer.notifSessionReminderDesc,
                 },
                 {
                   key: 'messageAlert',
-                  title: 'Message Alerts',
-                  description: 'Notifications for new messages',
+                  title: t.trainer.notifMessageAlert,
+                  description: t.trainer.notifMessageAlertDesc,
                 },
                 {
                   key: 'weeklyReport',
-                  title: 'Weekly Reports',
-                  description: 'Summary of your weekly performance',
+                  title: t.trainer.notifWeeklyReport,
+                  description: t.trainer.notifWeeklyReportDesc,
                 },
                 {
                   key: 'marketingEmails',
-                  title: 'Marketing Emails',
-                  description: 'Tips and promotional content',
+                  title: t.trainer.notifMarketing,
+                  description: t.trainer.notifMarketingDesc,
                 },
               ].map((item, index) => (
                 <div key={item.key}>
@@ -431,14 +433,14 @@ export default function TrainerSettingsPage() {
         <TabsContent value="availability" className="space-y-6">
           <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle>Working Hours</CardTitle>
+              <CardTitle>{t.trainer.workingHours}</CardTitle>
               <CardDescription>
-                Set your available hours for client sessions
+                {t.trainer.workingHoursDesc}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-2">
-                <Label>Timezone</Label>
+                <Label>{t.trainer.timezone}</Label>
                 <Select value={profile.timezone} onValueChange={(value) => setProfile({ ...profile, timezone: value })}>
                   <SelectTrigger className="w-full max-w-xs bg-muted/50 border-border/50">
                     <SelectValue />
@@ -476,8 +478,8 @@ export default function TrainerSettingsPage() {
                             <SelectValue />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="open">Open</SelectItem>
-                            <SelectItem value="closed">Closed</SelectItem>
+                            <SelectItem value="open">{t.trainer.open}</SelectItem>
+                            <SelectItem value="closed">{t.trainer.closed}</SelectItem>
                           </SelectContent>
                         </Select>
                         <div className="flex items-center gap-2 flex-1">
@@ -487,7 +489,7 @@ export default function TrainerSettingsPage() {
                             className="w-28 bg-muted/50 border-border/50"
                             disabled={isClosed}
                           />
-                          <span className="text-muted-foreground">to</span>
+                          <span className="text-muted-foreground">{t.trainer.timeTo}</span>
                           <Input
                             type="time"
                             defaultValue="18:00"
@@ -508,9 +510,9 @@ export default function TrainerSettingsPage() {
           {/* Payout Method */}
           <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle>Payout Method</CardTitle>
+              <CardTitle>{t.trainer.payoutMethod}</CardTitle>
               <CardDescription>
-                How you receive your earnings
+                {t.trainer.payoutMethodDesc}
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -522,20 +524,20 @@ export default function TrainerSettingsPage() {
                     </div>
                     <div>
                       <div className="flex items-center gap-2">
-                        <p className="font-medium">Paymob Integration</p>
+                        <p className="font-medium">{t.trainer.paymobIntegration}</p>
                         <Badge className="bg-amber-500/20 text-amber-400 border-amber-500/50">
-                          Coming Soon
+                          {t.trainer.paymobComingSoon}
                         </Badge>
                       </div>
                       <p className="text-sm text-muted-foreground">
-                        InstaPay, Vodafone Cash, Bank Transfer - No Stripe fees
+                        {t.trainer.paymobOptions}
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
               <p className="text-xs text-muted-foreground text-center">
-                Paymob integration coming soon. You&apos;ll be able to receive payouts via InstaPay, Vodafone Cash, or direct bank transfer.
+                {t.trainer.paymobNote}
               </p>
             </CardContent>
           </Card>
@@ -543,35 +545,35 @@ export default function TrainerSettingsPage() {
           {/* Commission Info */}
           <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle>Commission & Payouts</CardTitle>
-              <CardDescription>Understanding your earnings</CardDescription>
+              <CardTitle>{t.trainer.commissionAndPayouts}</CardTitle>
+              <CardDescription>{t.trainer.commissionAndPayoutsDesc}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="p-4 rounded-xl bg-muted/30 border border-border/30">
-                  <p className="text-sm text-muted-foreground mb-1">Platform Fee</p>
+                  <p className="text-sm text-muted-foreground mb-1">{t.trainer.platformFee}</p>
                   <p className="text-2xl font-bold text-orange-400">{commissionRate}%</p>
                 </div>
                 <div className="p-4 rounded-xl bg-green-500/10 border border-green-500/30">
-                  <p className="text-sm text-muted-foreground mb-1">Your Share</p>
+                  <p className="text-sm text-muted-foreground mb-1">{t.trainer.yourShare}</p>
                   <p className="text-2xl font-bold text-green-400">{keepRate}%</p>
                 </div>
               </div>
 
               <div className="p-4 rounded-xl bg-muted/20 border border-border/30">
-                <h4 className="font-medium mb-3">Payout Schedule</h4>
+                <h4 className="font-medium mb-3">{t.trainer.payoutSchedule}</h4>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Processing</span>
-                    <span>Every Sunday</span>
+                    <span className="text-muted-foreground">{t.trainer.payoutProcessing}</span>
+                    <span>{t.trainer.payoutEverySunday}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Minimum Payout</span>
+                    <span className="text-muted-foreground">{t.trainer.minimumPayout}</span>
                     <span>500 EGP</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Transfer Time</span>
-                    <span>1-3 business days</span>
+                    <span className="text-muted-foreground">{t.trainer.transferTime}</span>
+                    <span>{t.trainer.businessDays}</span>
                   </div>
                 </div>
               </div>
@@ -580,12 +582,12 @@ export default function TrainerSettingsPage() {
                 <div className="flex items-start gap-3">
                   <AlertCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-sm">Need Help?</p>
+                    <p className="font-medium text-sm">{t.trainer.needHelp}</p>
                     <p className="text-sm text-muted-foreground mt-1">
-                      Contact our support team for any billing or payout questions.
+                      {t.trainer.needHelpDesc}
                     </p>
                     <Button variant="link" className="p-0 h-auto text-primary mt-2">
-                      Contact Support
+                      {t.trainer.contactSupport}
                     </Button>
                   </div>
                 </div>

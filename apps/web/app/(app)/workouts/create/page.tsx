@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ExerciseSearchDialog } from './ExerciseSearchDialog';
 import { workoutsApi, type Exercise } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 // New types for better structure
 interface WorkoutSet {
@@ -31,13 +32,15 @@ interface WorkoutDay {
 
 export default function CreateWorkoutPlanPage() {
   const router = useRouter();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [planName, setPlanName] = useState('');
-  const [workouts, setWorkouts] = useState<WorkoutDay[]>([{ id: 1, name: 'Day 1', exercises: [] }]);
+  const [workouts, setWorkouts] = useState<WorkoutDay[]>([{ id: 1, name: isAr ? 'يوم 1' : 'Day 1', exercises: [] }]);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const addWorkoutDay = () => {
-    setWorkouts([...workouts, { id: Date.now(), name: `Day ${workouts.length + 1}`, exercises: [] }]);
+    setWorkouts([...workouts, { id: Date.now(), name: `${isAr ? 'يوم' : 'Day'} ${workouts.length + 1}`, exercises: [] }]);
   };
 
   const removeWorkoutDay = (id: number) => {
@@ -123,12 +126,12 @@ export default function CreateWorkoutPlanPage() {
 
   const handleSavePlan = async () => {
     if (!planName.trim()) {
-      setError('Please enter a plan name');
+      setError(isAr ? 'أدخل اسم الخطة' : 'Please enter a plan name');
       return;
     }
 
     if (workouts.length === 0) {
-      setError('Please add at least one workout day');
+      setError(isAr ? 'أضف يوم تمرين واحد على الأقل' : 'Please add at least one workout day');
       return;
     }
 
@@ -151,7 +154,7 @@ export default function CreateWorkoutPlanPage() {
       router.push('/workouts');
     } catch (err) {
       // Error handled
-      setError(err instanceof Error ? err.message : 'Failed to save plan. Please try again.');
+      setError(err instanceof Error ? err.message : (isAr ? 'فشل حفظ الخطة. حاول تاني.' : 'Failed to save plan. Please try again.'));
     } finally {
       setIsSubmitting(false);
     }
@@ -160,20 +163,20 @@ export default function CreateWorkoutPlanPage() {
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       <div>
-        <h1 className="text-2xl font-bold">Create Workout Plan</h1>
-        <p className="text-muted-foreground">Build your own custom training program from scratch.</p>
+        <h1 className="text-2xl font-bold">{isAr ? 'إنشاء خطة تمرين' : 'Create Workout Plan'}</h1>
+        <p className="text-muted-foreground">{isAr ? 'ابني برنامج تدريبك المخصص من الصفر.' : 'Build your own custom training program from scratch.'}</p>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>Plan Details</CardTitle>
+          <CardTitle>{isAr ? 'تفاصيل الخطة' : 'Plan Details'}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="space-y-2">
-            <label htmlFor="planName" className="font-medium">Plan Name</label>
-            <Input 
+            <label htmlFor="planName" className="font-medium">{isAr ? 'اسم الخطة' : 'Plan Name'}</label>
+            <Input
               id="planName"
-              placeholder="e.g., My Awesome Strength Plan" 
+              placeholder={isAr ? 'مثال: خطة القوة الخاصة بي' : 'e.g., My Awesome Strength Plan'}
               value={planName}
               onChange={(e) => setPlanName(e.target.value)}
             />
@@ -203,8 +206,8 @@ export default function CreateWorkoutPlanPage() {
                     
                     <div className="space-y-2">
                       <div className="grid grid-cols-[1fr_1fr_auto] gap-2 items-center text-sm font-medium text-muted-foreground px-2">
-                        <span>Reps</span>
-                        <span>Weight (kg)</span>
+                        <span>{isAr ? 'تكرارات' : 'Reps'}</span>
+                        <span>{isAr ? 'الوزن (كجم)' : 'Weight (kg)'}</span>
                         <span></span>
                       </div>
                       {ex.sets.map((set, setIndex) => (
@@ -229,14 +232,14 @@ export default function CreateWorkoutPlanPage() {
                     </div>
 
                     <Button variant="outline" size="sm" onClick={() => addSetToExercise(workout.id, ex.id)}>
-                      <Plus className="mr-2 h-4 w-4" /> Add Set
+                      <Plus className="mr-2 h-4 w-4" /> {isAr ? 'إضافة مجموعة' : 'Add Set'}
                     </Button>
                   </div>
                 ))}
                 
                 <ExerciseSearchDialog onAddExercise={(exercise) => addExerciseToWorkout(workout.id, exercise)}>
                   <Button variant="outline" className="w-full border-dashed">
-                    <Plus className="mr-2 h-4 w-4" /> Add Exercise
+                    <Plus className="mr-2 h-4 w-4" /> {isAr ? 'إضافة تمرين' : 'Add Exercise'}
                   </Button>
                 </ExerciseSearchDialog>
               </CardContent>
@@ -244,7 +247,7 @@ export default function CreateWorkoutPlanPage() {
           ))}
 
           <Button variant="outline" onClick={addWorkoutDay}>
-            <Plus className="mr-2 h-4 w-4" /> Add Day / Workout
+            <Plus className="mr-2 h-4 w-4" /> {isAr ? 'إضافة يوم / تمرين' : 'Add Day / Workout'}
           </Button>
 
           {error && (
@@ -262,10 +265,10 @@ export default function CreateWorkoutPlanPage() {
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Saving...
+                {isAr ? 'جاري الحفظ...' : 'Saving...'}
               </>
             ) : (
-              'Save Plan'
+              isAr ? 'حفظ الخطة' : 'Save Plan'
             )}
           </Button>
         </CardContent>

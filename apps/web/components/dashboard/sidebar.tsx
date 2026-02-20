@@ -22,32 +22,33 @@ import { cn } from '@/lib/utils';
 import { useUser } from '@/hooks/use-user';
 import { removeAuthCookie } from '@/lib/api';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { useLanguage } from '@/lib/i18n';
 
 interface SidebarProps {
   type: 'trainer' | 'admin';
 }
 
 const trainerLinks = [
-  { href: '/trainer/dashboard', icon: Home, label: 'Dashboard' },
-  { href: '/trainer/clients', icon: Users, label: 'Clients' },
-  { href: '/trainer/schedule', icon: Calendar, label: 'Schedule' },
-  { href: '/trainer/check-ins', icon: ClipboardCheck, label: 'Check-Ins' },
-  { href: '/trainer/invites', icon: Share2, label: 'Invites' },
-  { href: '/trainer/programs', icon: Dumbbell, label: 'Programs' },
-  { href: '/trainer/messages', icon: MessageSquare, label: 'Messages' },
-  { href: '/trainer/earnings', icon: DollarSign, label: 'Earnings' },
-  { href: '/trainer/analytics', icon: BarChart3, label: 'Analytics' },
-  { href: '/trainer/settings', icon: Settings, label: 'Settings' },
+  { href: '/trainer/dashboard', icon: Home, label: 'Dashboard', labelAr: 'لوحة التحكم' },
+  { href: '/trainer/clients', icon: Users, label: 'Clients', labelAr: 'العملاء' },
+  { href: '/trainer/schedule', icon: Calendar, label: 'Schedule', labelAr: 'الجدول' },
+  { href: '/trainer/check-ins', icon: ClipboardCheck, label: 'Check-Ins', labelAr: 'المتابعات' },
+  { href: '/trainer/invites', icon: Share2, label: 'Invites', labelAr: 'الدعوات' },
+  { href: '/trainer/programs', icon: Dumbbell, label: 'Programs', labelAr: 'البرامج' },
+  { href: '/trainer/messages', icon: MessageSquare, label: 'Messages', labelAr: 'الرسائل' },
+  { href: '/trainer/earnings', icon: DollarSign, label: 'Earnings', labelAr: 'الأرباح' },
+  { href: '/trainer/analytics', icon: BarChart3, label: 'Analytics', labelAr: 'التحليلات' },
+  { href: '/trainer/settings', icon: Settings, label: 'Settings', labelAr: 'الإعدادات' },
 ];
 
 const adminLinks = [
-  { href: '/admin/dashboard', icon: Home, label: 'Dashboard' },
-  { href: '/admin/users', icon: Users, label: 'Users' },
-  { href: '/admin/trainers', icon: Dumbbell, label: 'Trainers' },
-  { href: '/admin/content', icon: FileText, label: 'Content' },
-  { href: '/admin/analytics', icon: BarChart3, label: 'Analytics' },
-  { href: '/admin/research', icon: FlaskConical, label: 'Research' },
-  { href: '/admin/settings', icon: Settings, label: 'Settings' },
+  { href: '/admin/dashboard', icon: Home, label: 'Dashboard', labelAr: 'لوحة التحكم' },
+  { href: '/admin/users', icon: Users, label: 'Users', labelAr: 'المستخدمين' },
+  { href: '/admin/trainers', icon: Dumbbell, label: 'Trainers', labelAr: 'المدربين' },
+  { href: '/admin/content', icon: FileText, label: 'Content', labelAr: 'المحتوى' },
+  { href: '/admin/analytics', icon: BarChart3, label: 'Analytics', labelAr: 'التحليلات' },
+  { href: '/admin/research', icon: FlaskConical, label: 'Research', labelAr: 'الأبحاث' },
+  { href: '/admin/settings', icon: Settings, label: 'Settings', labelAr: 'الإعدادات' },
 ];
 
 export function Sidebar({ type }: SidebarProps) {
@@ -55,6 +56,8 @@ export function Sidebar({ type }: SidebarProps) {
   const router = useRouter();
   const { data: userData } = useUser();
   const user = userData?.user;
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
 
   const links = type === 'trainer' ? trainerLinks : adminLinks;
 
@@ -86,7 +89,7 @@ export function Sidebar({ type }: SidebarProps) {
             <span className="text-xl font-bold">Forma</span>
           </Link>
           <span className="ml-2 rounded-full bg-primary/10 text-primary px-2 py-0.5 text-xs font-medium capitalize">
-            {type}
+            {isAr ? (type === 'trainer' ? 'مدرب' : 'مدير') : type}
           </span>
         </div>
 
@@ -106,7 +109,7 @@ export function Sidebar({ type }: SidebarProps) {
                 )}
               >
                 <link.icon className={cn('h-5 w-5', isActive && 'text-white')} />
-                {link.label}
+                {isAr ? link.labelAr : link.label}
               </Link>
             );
           })}
@@ -119,14 +122,14 @@ export function Sidebar({ type }: SidebarProps) {
             className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-colors"
           >
             <Globe className="h-5 w-5" />
-            Back to Website
+            {isAr ? 'رجوع للموقع' : 'Back to Website'}
           </Link>
           <button
             onClick={handleLogout}
             className="w-full flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-destructive/10 hover:text-destructive transition-colors"
           >
             <LogOut className="h-5 w-5" />
-            Logout
+            {isAr ? 'تسجيل خروج' : 'Logout'}
           </button>
         </div>
 

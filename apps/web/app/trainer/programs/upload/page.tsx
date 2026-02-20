@@ -25,6 +25,7 @@ import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import { programsApi, uploadApiExtended } from '@/lib/api';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 type UploadState = 'idle' | 'uploading' | 'processing' | 'review' | 'complete' | 'error';
 
@@ -50,6 +51,8 @@ interface ParsedProgram {
 export default function UploadPDFPage() {
   const router = useRouter();
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [uploadState, setUploadState] = useState<UploadState>('idle');
   const [file, setFile] = useState<File | null>(null);
   const [uploadProgress, setUploadProgress] = useState(0);
@@ -61,34 +64,34 @@ export default function UploadPDFPage() {
     const selectedFile = e.target.files?.[0];
     if (selectedFile) {
       if (selectedFile.type !== 'application/pdf') {
-        setError('Please select a PDF file');
+        setError(isAr ? 'اختار ملف PDF من فضلك' : 'Please select a PDF file');
         return;
       }
       if (selectedFile.size > 10 * 1024 * 1024) {
-        setError('File size must be less than 10MB');
+        setError(isAr ? 'حجم الملف لازم يكون أقل من 10 ميجابايت' : 'File size must be less than 10MB');
         return;
       }
       setFile(selectedFile);
       setError(null);
     }
-  }, []);
+  }, [isAr]);
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault();
     const droppedFile = e.dataTransfer.files[0];
     if (droppedFile) {
       if (droppedFile.type !== 'application/pdf') {
-        setError('Please select a PDF file');
+        setError(isAr ? 'اختار ملف PDF من فضلك' : 'Please select a PDF file');
         return;
       }
       if (droppedFile.size > 10 * 1024 * 1024) {
-        setError('File size must be less than 10MB');
+        setError(isAr ? 'حجم الملف لازم يكون أقل من 10 ميجابايت' : 'File size must be less than 10MB');
         return;
       }
       setFile(droppedFile);
       setError(null);
     }
-  }, []);
+  }, [isAr]);
 
   const handleUpload = async () => {
     if (!file) return;
@@ -103,30 +106,30 @@ export default function UploadPDFPage() {
       setUploadProgress(100);
 
       setUploadState('processing');
-      setProcessingStep('Analyzing workout structure...');
+      setProcessingStep(isAr ? 'جاري تحليل هيكل التمارين...' : 'Analyzing workout structure...');
 
       // Step 2: Send to AI for parsing (using the AI chat endpoint with parsing prompt)
       // For now, create a basic parsed structure from the upload
       // The backend programs/from-pdf endpoint will handle the full parsing
       const fallbackProgram: ParsedProgram = {
         name: file.name.replace('.pdf', '').replace(/[-_]/g, ' '),
-        description: 'Program imported from PDF - review and adjust as needed',
+        description: isAr ? 'برنامج مستورد من PDF - راجع وعدل حسب الحاجة' : 'Program imported from PDF - review and adjust as needed',
         durationWeeks: 8,
         days: [
           {
-            name: 'Day 1',
+            name: isAr ? 'يوم 1' : 'Day 1',
             exercises: [
-              { name: 'Review uploaded PDF and add exercises', sets: 3, reps: '8-12', restSeconds: 60 },
+              { name: isAr ? 'راجع ملف PDF وأضف التمارين' : 'Review uploaded PDF and add exercises', sets: 3, reps: '8-12', restSeconds: 60 },
             ],
           },
         ],
       };
 
-      setProcessingStep('Finalizing program...');
+      setProcessingStep(isAr ? 'جاري تجهيز البرنامج...' : 'Finalizing program...');
       setParsedProgram(fallbackProgram);
       setUploadState('review');
     } catch (error: any) {
-      setError(error?.message || 'Upload failed. Please try again.');
+      setError(error?.message || (isAr ? 'فشل الرفع. حاول تاني.' : 'Upload failed. Please try again.'));
       setUploadState('error');
     }
   };
@@ -152,10 +155,10 @@ export default function UploadPDFPage() {
           })),
         })),
       });
-      toast({ title: 'Program imported', description: 'Review and edit your imported program.' });
+      toast({ title: isAr ? 'تم استيراد البرنامج' : 'Program imported', description: isAr ? 'راجع وعدل البرنامج المستورد.' : 'Review and edit your imported program.' });
       router.push(`/trainer/programs/${program.id}`);
     } catch (error: any) {
-      toast({ title: 'Failed to save', description: error?.message || 'Please try again.', variant: 'destructive' });
+      toast({ title: isAr ? 'فشل الحفظ' : 'Failed to save', description: error?.message || (isAr ? 'حاول تاني.' : 'Please try again.'), variant: 'destructive' });
       setUploadState('review');
     }
   };
@@ -170,18 +173,18 @@ export default function UploadPDFPage() {
   };
 
   return (
-    <div className="space-y-6 pb-8">
+    <div className="space-y-6 pb-8" dir={isAr ? 'rtl' : 'ltr'}>
       {/* Header */}
       <div className="flex items-center gap-4">
         <Button variant="ghost" size="icon" asChild>
           <Link href="/trainer/programs">
-            <ArrowLeft className="h-5 w-5" />
+            <ArrowLeft className={cn("h-5 w-5", isAr && "rotate-180")} />
           </Link>
         </Button>
         <div>
-          <h1 className="text-3xl font-bold">Upload PDF Program</h1>
+          <h1 className="text-3xl font-bold">{isAr ? 'رفع برنامج PDF' : 'Upload PDF Program'}</h1>
           <p className="text-muted-foreground">
-            Convert your existing PDF workout programs into interactive formats
+            {isAr ? 'حول برامج التمارين PDF لصيغ تفاعلية' : 'Convert your existing PDF workout programs into interactive formats'}
           </p>
         </div>
       </div>
@@ -210,17 +213,17 @@ export default function UploadPDFPage() {
                       <div>
                         <p className="font-semibold text-lg">{file.name}</p>
                         <p className="text-sm text-muted-foreground">
-                          {(file.size / 1024 / 1024).toFixed(2)} MB
+                          {(file.size / 1024 / 1024).toFixed(2)} {isAr ? 'ميجابايت' : 'MB'}
                         </p>
                       </div>
                       <div className="flex gap-3 justify-center">
                         <Button variant="outline" onClick={resetUpload}>
-                          <X className="mr-2 h-4 w-4" />
-                          Remove
+                          <X className={cn("h-4 w-4", isAr ? "ml-2" : "mr-2")} />
+                          {isAr ? 'إزالة' : 'Remove'}
                         </Button>
                         <Button onClick={handleUpload} className="btn-primary">
-                          <Sparkles className="mr-2 h-4 w-4" />
-                          Process PDF
+                          <Sparkles className={cn("h-4 w-4", isAr ? "ml-2" : "mr-2")} />
+                          {isAr ? 'معالجة PDF' : 'Process PDF'}
                         </Button>
                       </div>
                     </div>
@@ -231,10 +234,10 @@ export default function UploadPDFPage() {
                       </div>
                       <div>
                         <p className="font-semibold text-lg">
-                          Drag and drop your PDF here
+                          {isAr ? 'اسحب وارمي ملف PDF هنا' : 'Drag and drop your PDF here'}
                         </p>
                         <p className="text-muted-foreground mt-1">
-                          or click to browse files
+                          {isAr ? 'أو اضغط عشان تختار ملفات' : 'or click to browse files'}
                         </p>
                       </div>
                       <Input
@@ -246,11 +249,11 @@ export default function UploadPDFPage() {
                       />
                       <Button asChild variant="outline" className="border-primary/50">
                         <label htmlFor="pdf-upload" className="cursor-pointer">
-                          Select PDF File
+                          {isAr ? 'اختار ملف PDF' : 'Select PDF File'}
                         </label>
                       </Button>
                       <p className="text-xs text-muted-foreground">
-                        Maximum file size: 10MB
+                        {isAr ? 'أقصى حجم: 10 ميجابايت' : 'Maximum file size: 10MB'}
                       </p>
                     </div>
                   )}
@@ -270,7 +273,7 @@ export default function UploadPDFPage() {
                     <Upload className="h-8 w-8 text-blue-400 animate-pulse" />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">Uploading PDF...</p>
+                    <p className="font-semibold text-lg">{isAr ? 'جاري رفع PDF...' : 'Uploading PDF...'}</p>
                     <p className="text-muted-foreground mt-1">{file?.name}</p>
                   </div>
                   <div className="max-w-xs mx-auto space-y-2">
@@ -286,7 +289,7 @@ export default function UploadPDFPage() {
                     <Sparkles className="h-8 w-8 text-purple-400 animate-pulse" />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">Processing your program...</p>
+                    <p className="font-semibold text-lg">{isAr ? 'جاري معالجة البرنامج...' : 'Processing your program...'}</p>
                     <p className="text-muted-foreground mt-1">{processingStep}</p>
                   </div>
                   <Loader2 className="h-8 w-8 animate-spin mx-auto text-primary" />
@@ -297,14 +300,14 @@ export default function UploadPDFPage() {
                 <div className="space-y-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="text-xl font-bold">Program Extracted</h3>
+                      <h3 className="text-xl font-bold">{isAr ? 'تم استخراج البرنامج' : 'Program Extracted'}</h3>
                       <p className="text-muted-foreground">
-                        Review the extracted content before saving
+                        {isAr ? 'راجع المحتوى المستخرج قبل الحفظ' : 'Review the extracted content before saving'}
                       </p>
                     </div>
                     <Badge className="bg-green-500/20 text-green-400 border-green-500/50">
-                      <Check className="h-3 w-3 mr-1" />
-                      Ready
+                      <Check className={cn("h-3 w-3", isAr ? "ml-1" : "mr-1")} />
+                      {isAr ? 'جاهز' : 'Ready'}
                     </Badge>
                   </div>
 
@@ -315,10 +318,10 @@ export default function UploadPDFPage() {
                     </CardHeader>
                     <CardContent>
                       <div className="flex gap-4 text-sm text-muted-foreground">
-                        <span>{parsedProgram.durationWeeks} weeks</span>
-                        <span>{parsedProgram.days.length} workout days</span>
+                        <span>{parsedProgram.durationWeeks} {isAr ? 'أسابيع' : 'weeks'}</span>
+                        <span>{parsedProgram.days.length} {isAr ? 'أيام تمرين' : 'workout days'}</span>
                         <span>
-                          {parsedProgram.days.reduce((sum, d) => sum + d.exercises.length, 0)} exercises
+                          {parsedProgram.days.reduce((sum, d) => sum + d.exercises.length, 0)} {isAr ? 'تمارين' : 'exercises'}
                         </span>
                       </div>
                     </CardContent>
@@ -330,7 +333,7 @@ export default function UploadPDFPage() {
                         <CardHeader className="pb-2">
                           <div className="flex items-center justify-between">
                             <CardTitle className="text-base">{day.name}</CardTitle>
-                            <Badge variant="outline">{day.exercises.length} exercises</Badge>
+                            <Badge variant="outline">{day.exercises.length} {isAr ? 'تمارين' : 'exercises'}</Badge>
                           </div>
                         </CardHeader>
                         <CardContent>
@@ -354,12 +357,12 @@ export default function UploadPDFPage() {
 
                   <div className="flex gap-3">
                     <Button variant="outline" onClick={resetUpload} className="flex-1">
-                      <X className="mr-2 h-4 w-4" />
-                      Start Over
+                      <X className={cn("h-4 w-4", isAr ? "ml-2" : "mr-2")} />
+                      {isAr ? 'ابدأ من جديد' : 'Start Over'}
                     </Button>
                     <Button onClick={handleConfirm} className="btn-primary flex-1">
-                      <Check className="mr-2 h-4 w-4" />
-                      Save Program
+                      <Check className={cn("h-4 w-4", isAr ? "ml-2" : "mr-2")} />
+                      {isAr ? 'حفظ البرنامج' : 'Save Program'}
                     </Button>
                   </div>
                 </div>
@@ -371,9 +374,9 @@ export default function UploadPDFPage() {
                     <Check className="h-8 w-8 text-green-400" />
                   </div>
                   <div>
-                    <p className="font-semibold text-lg">Program Created!</p>
+                    <p className="font-semibold text-lg">{isAr ? 'تم إنشاء البرنامج!' : 'Program Created!'}</p>
                     <p className="text-muted-foreground mt-1">
-                      Redirecting to your programs...
+                      {isAr ? 'جاري التحويل لبرامجك...' : 'Redirecting to your programs...'}
                     </p>
                   </div>
                   <Loader2 className="h-6 w-6 animate-spin mx-auto text-primary" />
@@ -387,7 +390,7 @@ export default function UploadPDFPage() {
         <div className="space-y-4">
           <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle className="text-base">How it works</CardTitle>
+              <CardTitle className="text-base">{isAr ? 'إزاي بتشتغل' : 'How it works'}</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex gap-3">
@@ -395,9 +398,9 @@ export default function UploadPDFPage() {
                   1
                 </div>
                 <div>
-                  <p className="font-medium">Upload your PDF</p>
+                  <p className="font-medium">{isAr ? 'ارفع ملف PDF' : 'Upload your PDF'}</p>
                   <p className="text-sm text-muted-foreground">
-                    Upload any workout program PDF file
+                    {isAr ? 'ارفع أي ملف PDF لبرنامج تمارين' : 'Upload any workout program PDF file'}
                   </p>
                 </div>
               </div>
@@ -406,9 +409,9 @@ export default function UploadPDFPage() {
                   2
                 </div>
                 <div>
-                  <p className="font-medium">Smart Processing</p>
+                  <p className="font-medium">{isAr ? 'معالجة ذكية' : 'Smart Processing'}</p>
                   <p className="text-sm text-muted-foreground">
-                    Automatically extracts exercises, sets, and reps
+                    {isAr ? 'بيستخرج التمارين والمجموعات والتكرارات تلقائياً' : 'Automatically extracts exercises, sets, and reps'}
                   </p>
                 </div>
               </div>
@@ -417,9 +420,9 @@ export default function UploadPDFPage() {
                   3
                 </div>
                 <div>
-                  <p className="font-medium">Review & Edit</p>
+                  <p className="font-medium">{isAr ? 'مراجعة وتعديل' : 'Review & Edit'}</p>
                   <p className="text-sm text-muted-foreground">
-                    Verify the extracted content and make adjustments
+                    {isAr ? 'تأكد من المحتوى المستخرج وعدل لو محتاج' : 'Verify the extracted content and make adjustments'}
                   </p>
                 </div>
               </div>
@@ -428,9 +431,9 @@ export default function UploadPDFPage() {
                   4
                 </div>
                 <div>
-                  <p className="font-medium">Assign to Clients</p>
+                  <p className="font-medium">{isAr ? 'تعيين للعملاء' : 'Assign to Clients'}</p>
                   <p className="text-sm text-muted-foreground">
-                    Your program is ready to assign
+                    {isAr ? 'برنامجك جاهز للتعيين' : 'Your program is ready to assign'}
                   </p>
                 </div>
               </div>
@@ -439,25 +442,25 @@ export default function UploadPDFPage() {
 
           <Card className="glass border-border/50">
             <CardHeader>
-              <CardTitle className="text-base">Supported Formats</CardTitle>
+              <CardTitle className="text-base">{isAr ? 'الصيغ المدعومة' : 'Supported Formats'}</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center gap-2">
                   <Check className="h-4 w-4 text-green-400" />
-                  <span>Standard workout PDFs</span>
+                  <span>{isAr ? 'ملفات PDF تمارين عادية' : 'Standard workout PDFs'}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="h-4 w-4 text-green-400" />
-                  <span>Program spreadsheets as PDF</span>
+                  <span>{isAr ? 'جداول برامج PDF' : 'Program spreadsheets as PDF'}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="h-4 w-4 text-green-400" />
-                  <span>Text-based programs</span>
+                  <span>{isAr ? 'برامج نصية' : 'Text-based programs'}</span>
                 </li>
                 <li className="flex items-center gap-2 text-muted-foreground">
                   <X className="h-4 w-4" />
-                  <span>Image-only PDFs (scanned)</span>
+                  <span>{isAr ? 'ملفات PDF صور فقط (ممسوحة)' : 'Image-only PDFs (scanned)'}</span>
                 </li>
               </ul>
             </CardContent>
@@ -468,10 +471,11 @@ export default function UploadPDFPage() {
               <div className="flex items-start gap-3">
                 <Sparkles className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium text-sm">Pro Tip</p>
+                  <p className="font-medium text-sm">{isAr ? 'نصيحة' : 'Pro Tip'}</p>
                   <p className="text-xs text-muted-foreground mt-1">
-                    For best results, use PDFs with clearly formatted exercises,
-                    sets, and reps. Tables work great!
+                    {isAr
+                      ? 'لأفضل نتائج، استخدم ملفات PDF بتمارين واضحة ومجموعات وتكرارات. الجداول بتشتغل كويس!'
+                      : 'For best results, use PDFs with clearly formatted exercises, sets, and reps. Tables work great!'}
                   </p>
                 </div>
               </div>

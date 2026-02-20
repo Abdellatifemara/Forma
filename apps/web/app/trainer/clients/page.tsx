@@ -42,10 +42,12 @@ import { Progress } from '@/components/ui/progress';
 import { trainersApi, type TrainerClientResponse } from '@/lib/api';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 type FilterStatus = 'all' | 'high' | 'attention' | 'risk';
 
 export default function ClientsPage() {
+  const { t } = useLanguage();
   const { toast } = useToast();
   const [clients, setClients] = useState<TrainerClientResponse[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -60,7 +62,7 @@ export default function ClientsPage() {
       const data = await trainersApi.getClients();
       setClients(data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load clients');
+      setError(err instanceof Error ? err.message : t.trainer.failedToLoadClients);
     } finally {
       setIsLoading(false);
     }
@@ -105,9 +107,9 @@ export default function ClientsPage() {
   };
 
   const getComplianceBadge = (rate: number) => {
-    if (rate >= 80) return { label: 'High', class: 'bg-green-500/20 text-green-400 border-green-500/50' };
-    if (rate >= 50) return { label: 'Medium', class: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50' };
-    return { label: 'Low', class: 'bg-red-500/20 text-red-400 border-red-500/50' };
+    if (rate >= 80) return { label: t.trainer.complianceHigh, class: 'bg-green-500/20 text-green-400 border-green-500/50' };
+    if (rate >= 50) return { label: t.trainer.complianceMedium, class: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50' };
+    return { label: t.trainer.complianceLow, class: 'bg-red-500/20 text-red-400 border-red-500/50' };
   };
 
   const getLastActiveText = (date: string | null) => {
@@ -134,9 +136,9 @@ export default function ClientsPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load clients</h2>
+        <h2 className="text-xl font-semibold mb-2">{t.trainer.failedToLoadClients}</h2>
         <p className="text-muted-foreground mb-4">{error}</p>
-        <Button onClick={fetchClients}>Try Again</Button>
+        <Button onClick={fetchClients}>{t.common.retry}</Button>
       </div>
     );
   }
@@ -146,15 +148,15 @@ export default function ClientsPage() {
       {/* Page Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Your Clients</h1>
+          <h1 className="text-3xl font-bold">{t.trainer.yourClients}</h1>
           <p className="text-muted-foreground">
-            Manage your client relationships and track their progress
+            {t.trainer.manageClientsDesc}
           </p>
         </div>
         <Button className="btn-primary" asChild>
           <Link href="/trainer/invites">
             <Share2 className="mr-2 h-4 w-4" />
-            Invite Clients
+            {t.trainer.inviteClients}
           </Link>
         </Button>
       </div>
@@ -169,7 +171,7 @@ export default function ClientsPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats.total}</p>
-                <p className="text-sm text-muted-foreground">Total Clients</p>
+                <p className="text-sm text-muted-foreground">{t.trainer.totalClients}</p>
               </div>
             </div>
           </CardContent>
@@ -189,7 +191,7 @@ export default function ClientsPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-green-400">{stats.highPerformers}</p>
-                <p className="text-sm text-muted-foreground">High Performers</p>
+                <p className="text-sm text-muted-foreground">{t.trainer.highPerformers}</p>
               </div>
             </div>
           </CardContent>
@@ -209,7 +211,7 @@ export default function ClientsPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-yellow-400">{stats.needAttention}</p>
-                <p className="text-sm text-muted-foreground">Need Attention</p>
+                <p className="text-sm text-muted-foreground">{t.trainer.needAttention}</p>
               </div>
             </div>
           </CardContent>
@@ -229,7 +231,7 @@ export default function ClientsPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold text-red-400">{stats.atRisk}</p>
-                <p className="text-sm text-muted-foreground">At Risk</p>
+                <p className="text-sm text-muted-foreground">{t.trainer.atRisk}</p>
               </div>
             </div>
           </CardContent>
@@ -243,7 +245,7 @@ export default function ClientsPage() {
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
-                placeholder="Search clients by name..."
+                placeholder={t.trainer.searchClientsPlaceholder}
                 className="pl-10 bg-muted/50 border-border/50"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -253,27 +255,27 @@ export default function ClientsPage() {
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="border-border/50">
                   <Filter className="mr-2 h-4 w-4" />
-                  {filterStatus === 'all' ? 'All Clients' :
-                   filterStatus === 'high' ? 'High Performers' :
-                   filterStatus === 'attention' ? 'Need Attention' : 'At Risk'}
+                  {filterStatus === 'all' ? t.trainer.allClients :
+                   filterStatus === 'high' ? t.trainer.highPerformers :
+                   filterStatus === 'attention' ? t.trainer.needAttention : t.trainer.atRisk}
                   <ChevronDown className="ml-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuItem onClick={() => setFilterStatus('all')}>
-                  All Clients
+                  {t.trainer.allClients}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setFilterStatus('high')}>
                   <span className="h-2 w-2 rounded-full bg-green-500 mr-2" />
-                  High Performers (80%+)
+                  {t.trainer.highPerformers80}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setFilterStatus('attention')}>
                   <span className="h-2 w-2 rounded-full bg-yellow-500 mr-2" />
-                  Need Attention (50-80%)
+                  {t.trainer.needAttention5080}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setFilterStatus('risk')}>
                   <span className="h-2 w-2 rounded-full bg-red-500 mr-2" />
-                  At Risk (&lt;50%)
+                  {t.trainer.atRisk50}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -286,17 +288,17 @@ export default function ClientsPage() {
         <Card className="glass border-border/50">
           <CardContent className="py-12 text-center">
             <Users className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-            <h3 className="text-lg font-semibold mb-2">No clients found</h3>
+            <h3 className="text-lg font-semibold mb-2">{t.trainer.noClientsFound}</h3>
             <p className="text-muted-foreground mb-4">
               {searchQuery || filterStatus !== 'all'
-                ? 'Try adjusting your search or filters'
-                : 'Start by inviting clients to train with you'}
+                ? t.trainer.adjustSearchFilters
+                : t.trainer.startInviting}
             </p>
             {!searchQuery && filterStatus === 'all' && (
               <Button asChild>
                 <Link href="/trainer/invites">
                   <Share2 className="mr-2 h-4 w-4" />
-                  Create Invite Link
+                  {t.trainer.createInviteLink}
                 </Link>
               </Button>
             )}
@@ -326,17 +328,17 @@ export default function ClientsPage() {
                           {client.premiumGifted && (
                             <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/50">
                               <Crown className="h-3 w-3 mr-1" />
-                              Premium
+                              {t.trainer.premiumBadge}
                             </Badge>
                           )}
                           {!client.canSeeMarketplace && (
                             <Badge variant="outline" className="text-xs">
-                              Exclusive
+                              {t.trainer.exclusive}
                             </Badge>
                           )}
                         </div>
                         <p className="text-sm text-muted-foreground truncate">
-                          {client.currentProgram?.name || 'No program assigned'}
+                          {client.currentProgram?.name || t.trainer.noProgramAssigned}
                         </p>
                       </div>
                     </div>
@@ -345,7 +347,7 @@ export default function ClientsPage() {
                     <div className="flex items-center gap-6">
                       <div className="w-32">
                         <div className="flex items-center justify-between text-sm mb-1">
-                          <span className="text-muted-foreground">Compliance</span>
+                          <span className="text-muted-foreground">{t.trainer.compliance}</span>
                           <span className={cn('font-semibold', getComplianceColor(client.complianceRate))}>
                             {client.complianceRate}%
                           </span>
@@ -372,25 +374,25 @@ export default function ClientsPage() {
                           <DropdownMenuItem asChild>
                             <Link href={`/trainer/clients/${client.clientId}`}>
                               <Eye className="mr-2 h-4 w-4" />
-                              View Profile
+                              {t.trainer.viewProfile}
                             </Link>
                           </DropdownMenuItem>
                           <DropdownMenuItem asChild>
                             <Link href={`/trainer/messages?client=${client.clientId}`}>
                               <MessageSquare className="mr-2 h-4 w-4" />
-                              Send Message
+                              {t.trainer.sendMessage}
                             </Link>
                           </DropdownMenuItem>
                           <DropdownMenuSeparator />
                           <DropdownMenuItem
                             className="text-destructive"
                             onClick={() => toast({
-                              title: 'Coming Soon',
-                              description: 'Client removal will be available soon',
+                              title: t.trainer.comingSoon,
+                              description: t.trainer.clientRemovalSoon,
                             })}
                           >
                             <UserX className="mr-2 h-4 w-4" />
-                            Remove Client
+                            {t.trainer.removeClient}
                           </DropdownMenuItem>
                         </DropdownMenuContent>
                       </DropdownMenu>

@@ -103,7 +103,8 @@ function ExercisesPageContent() {
   const searchParams = useSearchParams();
   const initialMuscle = searchParams.get('muscle');
   const { toast } = useToast();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
 
   const [exercises, setExercises] = useState<Exercise[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -385,10 +386,10 @@ function ExercisesPageContent() {
                     <Button
                       variant="forma"
                       size="lg"
-                      onClick={() => toast({ title: 'Coming Soon', description: 'Exercise videos will be available soon' })}
+                      onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'فيديوهات التمارين هتكون متاحة قريباً' : 'Exercise videos will be available soon' })}
                     >
                       <Play className="mr-2 h-5 w-5" />
-                      Watch Demo
+                      {isAr ? 'شاهد العرض' : 'Watch Demo'}
                     </Button>
                   </div>
                 </div>
@@ -462,7 +463,7 @@ function ExercisesPageContent() {
                 {/* FAQs */}
                 {selectedExercise.faqsEn && Array.isArray(selectedExercise.faqsEn) && selectedExercise.faqsEn.length > 0 && (
                   <div>
-                    <h4 className="mb-3 font-semibold">Frequently Asked Questions</h4>
+                    <h4 className="mb-3 font-semibold">{isAr ? 'أسئلة شائعة' : 'Frequently Asked Questions'}</h4>
                     <div className="space-y-3">
                       {selectedExercise.faqsEn.map((faq: { question: string; answer: string }, index: number) => (
                         <details key={index} className="group rounded-lg border bg-muted/30 p-3">
@@ -483,9 +484,9 @@ function ExercisesPageContent() {
                 <Button
                   variant="forma"
                   className="w-full"
-                  onClick={() => toast({ title: 'Coming Soon', description: 'Quick add to workout will be available soon' })}
+                  onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'إضافة سريعة للتمرين هتكون متاحة قريباً' : 'Quick add to workout will be available soon' })}
                 >
-                  Add to Workout
+                  {isAr ? 'أضف للتمرين' : 'Add to Workout'}
                 </Button>
               </div>
             </>

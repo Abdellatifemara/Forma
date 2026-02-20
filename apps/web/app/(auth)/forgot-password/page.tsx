@@ -8,8 +8,10 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { authApi } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 export default function ForgotPasswordPage() {
+  const { t } = useLanguage();
   const [isLoading, setIsLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [email, setEmail] = useState('');
@@ -38,20 +40,20 @@ export default function ForgotPasswordPage() {
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-forma-teal/20">
             <Mail className="h-8 w-8 text-forma-teal" />
           </div>
-          <CardTitle className="text-2xl text-white">Check your email</CardTitle>
+          <CardTitle className="text-2xl text-white">{t.auth.resetSuccess}</CardTitle>
           <CardDescription className="text-white/60">
-            We've sent a password reset link to{' '}
+            {t.auth.resetSuccessDesc}{' '}
             <span className="text-white">{email}</span>
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-center text-sm text-white/50">
-            Didn't receive the email? Check your spam folder or{' '}
+            {t.auth.didntReceiveEmail}{' '}
             <button
               onClick={() => setIsSubmitted(false)}
               className="text-forma-teal hover:underline"
             >
-              try another email address
+              {t.auth.tryAnotherEmail}
             </button>
           </p>
 
@@ -62,7 +64,7 @@ export default function ForgotPasswordPage() {
           >
             <Link href="/login">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to login
+              {t.auth.backToLogin}
             </Link>
           </Button>
         </CardContent>
@@ -73,16 +75,16 @@ export default function ForgotPasswordPage() {
   return (
     <Card className="border-white/10 bg-white/5 backdrop-blur">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl text-white">Forgot password?</CardTitle>
+        <CardTitle className="text-2xl text-white">{t.auth.forgotPasswordTitle}</CardTitle>
         <CardDescription className="text-white/60">
-          No worries, we'll send you reset instructions
+          {t.auth.forgotPasswordDesc}
         </CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="email" className="text-white/80">
-              Email
+              {t.auth.email}
             </Label>
             <Input
               id="email"
@@ -104,10 +106,10 @@ export default function ForgotPasswordPage() {
             {isLoading ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Sending...
+                {t.auth.sending}
               </>
             ) : (
-              'Reset password'
+              t.auth.sendResetLink
             )}
           </Button>
 
@@ -118,7 +120,7 @@ export default function ForgotPasswordPage() {
           >
             <Link href="/login">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to login
+              {t.auth.backToLogin}
             </Link>
           </Button>
         </form>

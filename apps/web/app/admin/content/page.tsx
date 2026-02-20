@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useLanguage } from '@/lib/i18n';
 import {
   Search,
   Plus,
@@ -42,6 +43,8 @@ import { useToast } from '@/hooks/use-toast';
 
 export default function AdminContentPage() {
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [stats, setStats] = useState<ContentStats | null>(null);
   const [exercises, setExercises] = useState<ContentExercise[]>([]);
   const [foods, setFoods] = useState<ContentFood[]>([]);
@@ -63,7 +66,7 @@ export default function AdminContentPage() {
       setExercises(exercisesData.data);
       setFoods(foodsData.data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load content');
+      setError(err instanceof Error ? err.message : (isAr ? 'فشل تحميل المحتوى' : 'Failed to load content'));
     } finally {
       setIsLoading(false);
     }
@@ -75,23 +78,21 @@ export default function AdminContentPage() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      if (searchQuery !== '') {
-        fetchData();
-      }
+      fetchData();
     }, 300);
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
   const handleAddItem = (type: string) => {
-    toast({ title: 'Coming Soon', description: `Adding ${type} will be available soon` });
+    toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? `إضافة ${type} هتكون متاحة قريباً` : `Adding ${type} will be available soon` });
   };
 
   const handleEditItem = (type: string, id: string) => {
-    toast({ title: 'Coming Soon', description: `Editing ${type} will be available soon` });
+    toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? `تعديل ${type} هيكون متاح قريباً` : `Editing ${type} will be available soon` });
   };
 
   const handleDeleteItem = (type: string, id: string) => {
-    toast({ title: 'Coming Soon', description: `Deleting ${type} will be available soon` });
+    toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? `حذف ${type} هيكون متاح قريباً` : `Deleting ${type} will be available soon` });
   };
 
   if (isLoading) {
@@ -106,9 +107,9 @@ export default function AdminContentPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load content</h2>
+        <h2 className="text-xl font-semibold mb-2">{isAr ? 'فشل تحميل المحتوى' : 'Failed to load content'}</h2>
         <p className="text-muted-foreground mb-4">{error}</p>
-        <Button onClick={fetchData}>Try Again</Button>
+        <Button onClick={fetchData}>{isAr ? 'حاول تاني' : 'Try Again'}</Button>
       </div>
     );
   }
@@ -118,9 +119,9 @@ export default function AdminContentPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Content Management</h1>
+          <h1 className="text-3xl font-bold">{isAr ? 'إدارة المحتوى' : 'Content Management'}</h1>
           <p className="text-muted-foreground">
-            Manage exercises, foods, and educational content
+            {isAr ? 'إدارة التمارين والأطعمة والمحتوى التعليمي' : 'Manage exercises, foods, and educational content'}
           </p>
         </div>
       </div>
@@ -135,7 +136,7 @@ export default function AdminContentPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats?.exercises?.toLocaleString() || 0}</p>
-                <p className="text-sm text-muted-foreground">Exercises</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'التمارين' : 'Exercises'}</p>
               </div>
             </div>
           </CardContent>
@@ -148,7 +149,7 @@ export default function AdminContentPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats?.foods?.toLocaleString() || 0}</p>
-                <p className="text-sm text-muted-foreground">Foods</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'الأطعمة' : 'Foods'}</p>
               </div>
             </div>
           </CardContent>
@@ -161,7 +162,7 @@ export default function AdminContentPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats?.programs?.toLocaleString() || 0}</p>
-                <p className="text-sm text-muted-foreground">Programs</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'البرامج' : 'Programs'}</p>
               </div>
             </div>
           </CardContent>
@@ -174,7 +175,7 @@ export default function AdminContentPage() {
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats?.videos?.toLocaleString() || 0}</p>
-                <p className="text-sm text-muted-foreground">Videos</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'الفيديوهات' : 'Videos'}</p>
               </div>
             </div>
           </CardContent>
@@ -184,12 +185,12 @@ export default function AdminContentPage() {
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           <TabsTrigger value="exercises">
-            <Dumbbell className="mr-2 h-4 w-4" />
-            Exercises
+            <Dumbbell className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            {isAr ? 'التمارين' : 'Exercises'}
           </TabsTrigger>
           <TabsTrigger value="foods">
-            <Apple className="mr-2 h-4 w-4" />
-            Foods
+            <Apple className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            {isAr ? 'الأطعمة' : 'Foods'}
           </TabsTrigger>
         </TabsList>
 
@@ -197,12 +198,12 @@ export default function AdminContentPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between">
               <div>
-                <CardTitle>Exercises</CardTitle>
-                <CardDescription>Manage the exercise library ({exercises.length} shown)</CardDescription>
+                <CardTitle>{isAr ? 'التمارين' : 'Exercises'}</CardTitle>
+                <CardDescription>{isAr ? `إدارة مكتبة التمارين (${exercises.length} معروض)` : `Manage the exercise library (${exercises.length} shown)`}</CardDescription>
               </div>
-              <Button variant="forma" onClick={() => handleAddItem('exercise')}>
-                <Plus className="mr-2 h-4 w-4" />
-                Add Exercise
+              <Button variant="forma" onClick={() => handleAddItem(isAr ? 'تمرين' : 'exercise')}>
+                <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                {isAr ? 'إضافة تمرين' : 'Add Exercise'}
               </Button>
             </CardHeader>
             <CardContent>
@@ -210,7 +211,7 @@ export default function AdminContentPage() {
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <Input
-                    placeholder="Search exercises..."
+                    placeholder={isAr ? 'ابحث عن تمارين...' : 'Search exercises...'}
                     className="pl-10"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
@@ -220,19 +221,19 @@ export default function AdminContentPage() {
               {exercises.length === 0 ? (
                 <div className="py-12 text-center">
                   <Dumbbell className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
-                  <p className="text-lg font-medium">No exercises found</p>
+                  <p className="text-lg font-medium">{isAr ? 'مفيش تمارين' : 'No exercises found'}</p>
                   <p className="text-muted-foreground">
-                    {searchQuery ? 'Try a different search term' : 'Add exercises to get started'}
+                    {searchQuery ? (isAr ? 'جرب كلمة بحث تانية' : 'Try a different search term') : (isAr ? 'أضف تمارين عشان تبدأ' : 'Add exercises to get started')}
                   </p>
                 </div>
               ) : (
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Name</TableHead>
-                      <TableHead>Muscle Group</TableHead>
-                      <TableHead>Equipment</TableHead>
-                      <TableHead>Status</TableHead>
+                      <TableHead>{isAr ? 'الاسم' : 'Name'}</TableHead>
+                      <TableHead>{isAr ? 'مجموعة العضلات' : 'Muscle Group'}</TableHead>
+                      <TableHead>{isAr ? 'المعدات' : 'Equipment'}</TableHead>
+                      <TableHead>{isAr ? 'الحالة' : 'Status'}</TableHead>
                       <TableHead className="w-[50px]"></TableHead>
                     </TableRow>
                   </TableHeader>
@@ -257,17 +258,17 @@ export default function AdminContentPage() {
                               </Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
-                              <DropdownMenuItem onClick={() => handleEditItem('exercise', exercise.id)}>
-                                Edit
+                              <DropdownMenuItem onClick={() => handleEditItem(isAr ? 'تمرين' : 'exercise', exercise.id)}>
+                                {isAr ? 'تعديل' : 'Edit'}
                               </DropdownMenuItem>
-                              <DropdownMenuItem onClick={() => toast({ title: 'View', description: exercise.name })}>
-                                View
+                              <DropdownMenuItem onClick={() => toast({ title: isAr ? 'عرض' : 'View', description: exercise.name })}>
+                                {isAr ? 'عرض' : 'View'}
                               </DropdownMenuItem>
                               <DropdownMenuItem
                                 className="text-destructive"
-                                onClick={() => handleDeleteItem('exercise', exercise.id)}
+                                onClick={() => handleDeleteItem(isAr ? 'تمرين' : 'exercise', exercise.id)}
                               >
-                                Delete
+                                {isAr ? 'حذف' : 'Delete'}
                               </DropdownMenuItem>
                             </DropdownMenuContent>
                           </DropdownMenu>
@@ -285,12 +286,12 @@ export default function AdminContentPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between">
               <div>
-                <CardTitle>Foods</CardTitle>
-                <CardDescription>Manage the food database ({foods.length} shown)</CardDescription>
+                <CardTitle>{isAr ? 'الأطعمة' : 'Foods'}</CardTitle>
+                <CardDescription>{isAr ? `إدارة قاعدة بيانات الأطعمة (${foods.length} معروض)` : `Manage the food database (${foods.length} shown)`}</CardDescription>
               </div>
-              <Button variant="forma" onClick={() => handleAddItem('food')}>
-                <Plus className="mr-2 h-4 w-4" />
-                Add Food
+              <Button variant="forma" onClick={() => handleAddItem(isAr ? 'طعام' : 'food')}>
+                <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                {isAr ? 'إضافة طعام' : 'Add Food'}
               </Button>
             </CardHeader>
             <CardContent>
@@ -298,7 +299,7 @@ export default function AdminContentPage() {
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <Input
-                    placeholder="Search foods..."
+                    placeholder={isAr ? 'ابحث عن أطعمة...' : 'Search foods...'}
                     className="pl-10"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
@@ -308,19 +309,19 @@ export default function AdminContentPage() {
               {foods.length === 0 ? (
                 <div className="py-12 text-center">
                   <Apple className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
-                  <p className="text-lg font-medium">No foods found</p>
+                  <p className="text-lg font-medium">{isAr ? 'مفيش أطعمة' : 'No foods found'}</p>
                   <p className="text-muted-foreground">
-                    {searchQuery ? 'Try a different search term' : 'Add foods to get started'}
+                    {searchQuery ? (isAr ? 'جرب كلمة بحث تانية' : 'Try a different search term') : (isAr ? 'أضف أطعمة عشان تبدأ' : 'Add foods to get started')}
                   </p>
                 </div>
               ) : (
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Name</TableHead>
-                      <TableHead>Category</TableHead>
-                      <TableHead>Calories</TableHead>
-                      <TableHead>Status</TableHead>
+                      <TableHead>{isAr ? 'الاسم' : 'Name'}</TableHead>
+                      <TableHead>{isAr ? 'الفئة' : 'Category'}</TableHead>
+                      <TableHead>{isAr ? 'السعرات' : 'Calories'}</TableHead>
+                      <TableHead>{isAr ? 'الحالة' : 'Status'}</TableHead>
                       <TableHead className="w-[50px]"></TableHead>
                     </TableRow>
                   </TableHeader>
@@ -329,7 +330,7 @@ export default function AdminContentPage() {
                       <TableRow key={food.id}>
                         <TableCell className="font-medium">{food.name}</TableCell>
                         <TableCell>{food.category}</TableCell>
-                        <TableCell>{food.calories} kcal</TableCell>
+                        <TableCell>{food.calories} {isAr ? 'سعرة' : 'kcal'}</TableCell>
                         <TableCell>
                           <Badge
                             variant={food.status === 'published' ? 'forma' : 'secondary'}
@@ -345,17 +346,17 @@ export default function AdminContentPage() {
                               </Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end">
-                              <DropdownMenuItem onClick={() => handleEditItem('food', food.id)}>
-                                Edit
+                              <DropdownMenuItem onClick={() => handleEditItem(isAr ? 'طعام' : 'food', food.id)}>
+                                {isAr ? 'تعديل' : 'Edit'}
                               </DropdownMenuItem>
-                              <DropdownMenuItem onClick={() => toast({ title: 'View', description: food.name })}>
-                                View
+                              <DropdownMenuItem onClick={() => toast({ title: isAr ? 'عرض' : 'View', description: food.name })}>
+                                {isAr ? 'عرض' : 'View'}
                               </DropdownMenuItem>
                               <DropdownMenuItem
                                 className="text-destructive"
-                                onClick={() => handleDeleteItem('food', food.id)}
+                                onClick={() => handleDeleteItem(isAr ? 'طعام' : 'food', food.id)}
                               >
-                                Delete
+                                {isAr ? 'حذف' : 'Delete'}
                               </DropdownMenuItem>
                             </DropdownMenuContent>
                           </DropdownMenu>

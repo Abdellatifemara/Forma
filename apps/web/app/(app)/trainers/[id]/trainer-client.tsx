@@ -47,7 +47,8 @@ const defaultRatingBreakdown = [
 ];
 
 export default function TrainerDetailPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const params = useParams();
   const id = params.id as string;
   const [trainer, setTrainer] = useState<Trainer | null>(null);
@@ -64,7 +65,7 @@ export default function TrainerDetailPage() {
         setTrainer(data);
       } catch (err) {
         // Error handled
-        setError(err instanceof Error ? err.message : 'Failed to load trainer');
+        setError(err instanceof Error ? err.message : (isAr ? 'فشل تحميل بيانات المدرب' : 'Failed to load trainer'));
       } finally {
         setIsLoading(false);
       }
@@ -91,8 +92,8 @@ export default function TrainerDetailPage() {
         </Button>
         <div className="flex flex-col items-center justify-center min-h-[40vh] text-center">
           <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-          <h2 className="text-xl font-semibold mb-2">Trainer not found</h2>
-          <p className="text-muted-foreground">{error || 'This trainer profile is not available'}</p>
+          <h2 className="text-xl font-semibold mb-2">{isAr ? 'المدرب مش موجود' : 'Trainer not found'}</h2>
+          <p className="text-muted-foreground">{error || (isAr ? 'بروفايل المدرب ده مش متاح' : 'This trainer profile is not available')}</p>
           <Button variant="outline" className="mt-4" asChild>
             <Link href="/trainers">{t.trainers.findTrainer}</Link>
           </Button>
@@ -104,9 +105,9 @@ export default function TrainerDetailPage() {
   // Derive trainer display values
   const trainerName = trainer.user?.firstName && trainer.user?.lastName
     ? `${trainer.user.firstName} ${trainer.user.lastName}`
-    : trainer.user?.displayName || 'Trainer';
+    : trainer.user?.displayName || (isAr ? 'مدرب' : 'Trainer');
   const trainerAvatar = trainer.user?.avatarUrl || null;
-  const trainerBio = trainer.bio || 'Certified fitness professional dedicated to helping you achieve your goals.';
+  const trainerBio = trainer.bio || (isAr ? 'مدرب لياقة بدنية معتمد مخصص لمساعدتك في تحقيق أهدافك.' : 'Certified fitness professional dedicated to helping you achieve your goals.');
   const trainerSpecializations = trainer.specializations || [];
   const trainerCertifications = trainer.certifications || [];
   const trainerRating = trainer.rating || 0;
@@ -118,8 +119,8 @@ export default function TrainerDetailPage() {
   const trainerLocation = trainer.location || 'Egypt';
   const trainerVerified = trainer.verified || false;
   const trainerLanguages = trainer.languages || ['Arabic'];
-  const trainerAvailability = trainer.availability || 'Contact for availability';
-  const trainerResponseTime = trainer.responseTime || 'Usually responds within 24 hours';
+  const trainerAvailability = trainer.availability || (isAr ? 'تواصل للاستفسار' : 'Contact for availability');
+  const trainerResponseTime = trainer.responseTime || (isAr ? 'عادةً بيرد خلال 24 ساعة' : 'Usually responds within 24 hours');
   const trainerSocialLinks = trainer.socialLinks || {};
   const trainerPrograms = trainer.programs || [];
   const trainerReviews = trainer.reviews || [];
@@ -139,7 +140,7 @@ export default function TrainerDetailPage() {
       <Button variant="ghost" size="sm" asChild>
         <Link href="/trainers">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Trainers
+          {isAr ? 'رجوع للمدربين' : 'Back to Trainers'}
         </Link>
       </Button>
 
@@ -157,7 +158,7 @@ export default function TrainerDetailPage() {
               <div className="flex items-center gap-2">
                 <h1 className="text-2xl font-bold lg:text-3xl">{trainerName}</h1>
                 {trainerVerified && (
-                  <Badge variant="forma">Verified</Badge>
+                  <Badge variant="forma">{isAr ? 'موثق' : 'Verified'}</Badge>
                 )}
               </div>
               <div className="mt-2 flex flex-wrap items-center gap-3 text-muted-foreground">
@@ -168,7 +169,7 @@ export default function TrainerDetailPage() {
                 {trainerExperience > 0 && (
                   <span className="flex items-center gap-1">
                     <Award className="h-4 w-4" />
-                    {trainerExperience} years experience
+                    {trainerExperience} {isAr ? 'سنة خبرة' : 'years experience'}
                   </span>
                 )}
                 {trainerClientCount > 0 && (
@@ -185,7 +186,7 @@ export default function TrainerDetailPage() {
                     <span className="text-lg font-semibold">{trainerRating.toFixed(1)}</span>
                   </div>
                   <span className="text-muted-foreground">
-                    ({trainerReviewCount} reviews)
+                    ({trainerReviewCount} {isAr ? 'تقييم' : 'reviews'})
                   </span>
                 </div>
               )}
@@ -210,22 +211,22 @@ export default function TrainerDetailPage() {
                   className="flex-1"
                   onClick={() => setSelectedPlan('monthly')}
                 >
-                  Monthly
+                  {isAr ? 'شهري' : 'Monthly'}
                 </Button>
                 <Button
                   variant={selectedPlan === 'hourly' ? 'forma' : 'outline'}
                   className="flex-1"
                   onClick={() => setSelectedPlan('hourly')}
                 >
-                  Hourly
+                  {isAr ? 'بالساعة' : 'Hourly'}
                 </Button>
               </div>
               <div className="text-center">
                 <p className="text-3xl font-bold text-forma-teal">
-                  {selectedPlan === 'monthly' ? trainerMonthlyRate : trainerHourlyRate} EGP
+                  {selectedPlan === 'monthly' ? trainerMonthlyRate : trainerHourlyRate} {isAr ? 'ج.م' : 'EGP'}
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  {selectedPlan === 'monthly' ? 'per month' : 'per session'}
+                  {selectedPlan === 'monthly' ? (isAr ? 'في الشهر' : 'per month') : (isAr ? 'للجلسة' : 'per session')}
                 </p>
               </div>
               <Button
@@ -233,7 +234,7 @@ export default function TrainerDetailPage() {
                 className="mt-4 w-full"
                 onClick={() => setShowBookingDialog(true)}
               >
-                Start Training
+                {isAr ? 'ابدأ التدريب' : 'Start Training'}
               </Button>
               <Button variant="outline" className="mt-2 w-full" asChild>
                 <Link href={`/messages?trainer=${trainer.id}`}>
@@ -252,7 +253,7 @@ export default function TrainerDetailPage() {
       <Tabs defaultValue="about" className="space-y-6">
         <TabsList>
           <TabsTrigger value="about">{t.trainers.about}</TabsTrigger>
-          <TabsTrigger value="programs">Programs</TabsTrigger>
+          <TabsTrigger value="programs">{isAr ? 'البرامج' : 'Programs'}</TabsTrigger>
           <TabsTrigger value="reviews">{t.trainers.reviews}</TabsTrigger>
         </TabsList>
 
@@ -273,21 +274,21 @@ export default function TrainerDetailPage() {
             <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Details</CardTitle>
+                  <CardTitle>{isAr ? 'التفاصيل' : 'Details'}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">Languages</span>
+                    <span className="text-muted-foreground">{isAr ? 'اللغات' : 'Languages'}</span>
                     <span className="font-medium">{trainerLanguages.join(', ')}</span>
                   </div>
                   <Separator />
                   <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">Availability</span>
+                    <span className="text-muted-foreground">{isAr ? 'التفرّغ' : 'Availability'}</span>
                     <span className="font-medium">{trainerAvailability}</span>
                   </div>
                   <Separator />
                   <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">Response Time</span>
+                    <span className="text-muted-foreground">{isAr ? 'وقت الرد' : 'Response Time'}</span>
                     <span className="font-medium">{trainerResponseTime}</span>
                   </div>
                 </CardContent>
@@ -296,7 +297,7 @@ export default function TrainerDetailPage() {
               {(trainerSocialLinks.instagram || trainerSocialLinks.youtube || trainerSocialLinks.website) && (
                 <Card>
                   <CardHeader>
-                    <CardTitle>Connect</CardTitle>
+                    <CardTitle>{isAr ? 'تواصل' : 'Connect'}</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
                     {trainerSocialLinks.instagram && (
@@ -371,7 +372,7 @@ export default function TrainerDetailPage() {
                       {program.enrolled !== undefined && program.enrolled > 0 && (
                         <span className="flex items-center gap-1">
                           <Users className="h-4 w-4" />
-                          {program.enrolled} enrolled
+                          {program.enrolled} {isAr ? 'مشترك' : 'enrolled'}
                         </span>
                       )}
                     </div>
@@ -384,7 +385,7 @@ export default function TrainerDetailPage() {
                       )}
                       {program.price !== undefined && program.price > 0 && (
                         <p className="font-semibold text-forma-teal">
-                          {program.price} EGP
+                          {program.price} {isAr ? 'ج.م' : 'EGP'}
                         </p>
                       )}
                     </div>
@@ -613,9 +614,11 @@ export default function TrainerDetailPage() {
             <Button variant="outline" onClick={() => setShowBookingDialog(false)}>
               {t.common.cancel}
             </Button>
-            <Button variant="forma">
-              Continue to Payment
-              <ChevronRight className="ml-2 h-4 w-4" />
+            <Button variant="forma" asChild>
+              <Link href={`/checkout?trainer=${trainer.id}&plan=${selectedPlan}&amount=${selectedPlan === 'monthly' ? trainerMonthlyRate : trainerHourlyRate}`}>
+                Continue to Payment
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
           </DialogFooter>
         </DialogContent>

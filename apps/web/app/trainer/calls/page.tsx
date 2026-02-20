@@ -48,24 +48,29 @@ import {
   type TrainerClientResponse,
 } from '@/lib/api';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/lib/i18n';
 
-const callTypeLabels: Record<ScheduledCallType, { label: string; color: string }> = {
-  ONBOARDING: { label: 'Onboarding', color: 'bg-blue-500' },
-  WEEKLY_CHECKIN: { label: 'Weekly Check-in', color: 'bg-green-500' },
-  PROGRESS_REVIEW: { label: 'Progress Review', color: 'bg-purple-500' },
-  PROGRAM_UPDATE: { label: 'Program Update', color: 'bg-orange-500' },
-  EMERGENCY: { label: 'Emergency', color: 'bg-red-500' },
-  CUSTOM: { label: 'Custom', color: 'bg-gray-500' },
-};
+function getCallTypeLabels(isAr: boolean): Record<ScheduledCallType, { label: string; color: string }> {
+  return {
+    ONBOARDING: { label: isAr ? 'تعارف' : 'Onboarding', color: 'bg-blue-500' },
+    WEEKLY_CHECKIN: { label: isAr ? 'متابعة أسبوعية' : 'Weekly Check-in', color: 'bg-green-500' },
+    PROGRESS_REVIEW: { label: isAr ? 'مراجعة تقدم' : 'Progress Review', color: 'bg-purple-500' },
+    PROGRAM_UPDATE: { label: isAr ? 'تحديث برنامج' : 'Program Update', color: 'bg-orange-500' },
+    EMERGENCY: { label: isAr ? 'طوارئ' : 'Emergency', color: 'bg-red-500' },
+    CUSTOM: { label: isAr ? 'مخصص' : 'Custom', color: 'bg-gray-500' },
+  };
+}
 
-const statusLabels: Record<string, { label: string; variant: 'default' | 'secondary' | 'destructive' | 'outline' }> = {
-  SCHEDULED: { label: 'Scheduled', variant: 'secondary' },
-  CONFIRMED: { label: 'Confirmed', variant: 'default' },
-  IN_PROGRESS: { label: 'In Progress', variant: 'default' },
-  COMPLETED: { label: 'Completed', variant: 'outline' },
-  CANCELLED: { label: 'Cancelled', variant: 'destructive' },
-  NO_SHOW: { label: 'No Show', variant: 'destructive' },
-};
+function getStatusLabels(isAr: boolean): Record<string, { label: string; variant: 'default' | 'secondary' | 'destructive' | 'outline' }> {
+  return {
+    SCHEDULED: { label: isAr ? 'مجدول' : 'Scheduled', variant: 'secondary' },
+    CONFIRMED: { label: isAr ? 'مؤكد' : 'Confirmed', variant: 'default' },
+    IN_PROGRESS: { label: isAr ? 'جاري' : 'In Progress', variant: 'default' },
+    COMPLETED: { label: isAr ? 'مكتمل' : 'Completed', variant: 'outline' },
+    CANCELLED: { label: isAr ? 'ملغي' : 'Cancelled', variant: 'destructive' },
+    NO_SHOW: { label: isAr ? 'لم يحضر' : 'No Show', variant: 'destructive' },
+  };
+}
 
 function CallCard({
   call,
@@ -80,6 +85,13 @@ function CallCard({
   onEnd: (id: string) => void;
   onCancel: (id: string) => void;
 }) {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
+  const callTypeLabels = getCallTypeLabels(isAr);
+  const statusLabels = getStatusLabels(isAr);
+  const locale = isAr ? 'ar-EG' : 'en-US';
+
   const client = clients.find((c) => c.clientId === call.clientId);
   const typeInfo = callTypeLabels[call.type];
   const statusInfo = statusLabels[call.status];
@@ -121,20 +133,22 @@ function CallCard({
           <div className="flex items-center gap-2 text-sm">
             <Calendar className="h-4 w-4 text-muted-foreground" />
             <span>
-              {isToday ? 'Today' : scheduledDate.toLocaleDateString('en-US', {
-                weekday: 'short',
-                month: 'short',
-                day: 'numeric',
-              })}
+              {isToday
+                ? (isAr ? 'النهاردة' : 'Today')
+                : scheduledDate.toLocaleDateString(locale, {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric',
+                  })}
             </span>
           </div>
           <div className="flex items-center gap-2 text-sm">
             <Clock className="h-4 w-4 text-muted-foreground" />
             <span>
-              {scheduledDate.toLocaleTimeString('en-US', {
+              {scheduledDate.toLocaleTimeString(locale, {
                 hour: '2-digit',
                 minute: '2-digit',
-              })} ({call.duration} min)
+              })} ({call.duration} {isAr ? 'دقيقة' : 'min'})
             </span>
           </div>
           {call.agenda && (
@@ -154,7 +168,7 @@ function CallCard({
                 onClick={() => onStart(call.id)}
               >
                 <Play className="h-4 w-4 mr-2" />
-                Start Call
+                {isAr ? 'ابدأ المكالمة' : 'Start Call'}
               </Button>
               <Button
                 size="sm"
@@ -175,7 +189,7 @@ function CallCard({
                   onClick={() => window.open(call.meetingUrl, '_blank')}
                 >
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  Open Meeting
+                  {isAr ? 'افتح الاجتماع' : 'Open Meeting'}
                 </Button>
               )}
               <Button
@@ -183,13 +197,13 @@ function CallCard({
                 onClick={() => onEnd(call.id)}
               >
                 <Check className="h-4 w-4 mr-2" />
-                End Call
+                {isAr ? 'إنهاء المكالمة' : 'End Call'}
               </Button>
             </>
           )}
           {call.status === 'COMPLETED' && call.trainerNotes && (
             <div className="w-full p-2 bg-muted/50 rounded text-sm">
-              <strong>Notes:</strong> {call.trainerNotes}
+              <strong>{isAr ? 'ملاحظات:' : 'Notes:'}</strong> {call.trainerNotes}
             </div>
           )}
         </div>
@@ -207,6 +221,11 @@ function ScheduleCallDialog({
   onOpenChange: (open: boolean) => void;
   clients: TrainerClientResponse[];
 }) {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
+  const callTypeLabels = getCallTypeLabels(isAr);
+
   const queryClient = useQueryClient();
   const [clientId, setClientId] = useState('');
   const [type, setType] = useState<ScheduledCallType>('WEEKLY_CHECKIN');
@@ -244,18 +263,18 @@ function ScheduleCallDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-md">
         <DialogHeader>
-          <DialogTitle>Schedule a Call</DialogTitle>
+          <DialogTitle>{isAr ? 'جدول مكالمة' : 'Schedule a Call'}</DialogTitle>
           <DialogDescription>
-            Book a video call with your client
+            {isAr ? 'حجز مكالمة فيديو مع عميلك' : 'Book a video call with your client'}
           </DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4 pt-4">
           <div className="space-y-2">
-            <Label>Client</Label>
+            <Label>{isAr ? 'العميل' : 'Client'}</Label>
             <Select value={clientId} onValueChange={setClientId}>
               <SelectTrigger>
-                <SelectValue placeholder="Select client" />
+                <SelectValue placeholder={isAr ? 'اختر العميل' : 'Select client'} />
               </SelectTrigger>
               <SelectContent>
                 {clients.map((client) => (
@@ -277,7 +296,7 @@ function ScheduleCallDialog({
           </div>
 
           <div className="space-y-2">
-            <Label>Call Type</Label>
+            <Label>{isAr ? 'نوع المكالمة' : 'Call Type'}</Label>
             <Select value={type} onValueChange={(v) => setType(v as ScheduledCallType)}>
               <SelectTrigger>
                 <SelectValue />
@@ -297,7 +316,7 @@ function ScheduleCallDialog({
 
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label>Date</Label>
+              <Label>{isAr ? 'التاريخ' : 'Date'}</Label>
               <Input
                 type="date"
                 value={date}
@@ -306,7 +325,7 @@ function ScheduleCallDialog({
               />
             </div>
             <div className="space-y-2">
-              <Label>Time</Label>
+              <Label>{isAr ? 'الوقت' : 'Time'}</Label>
               <Input
                 type="time"
                 value={time}
@@ -316,24 +335,24 @@ function ScheduleCallDialog({
           </div>
 
           <div className="space-y-2">
-            <Label>Duration</Label>
+            <Label>{isAr ? 'المدة' : 'Duration'}</Label>
             <Select value={duration} onValueChange={setDuration}>
               <SelectTrigger>
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="15">15 minutes</SelectItem>
-                <SelectItem value="30">30 minutes</SelectItem>
-                <SelectItem value="45">45 minutes</SelectItem>
-                <SelectItem value="60">1 hour</SelectItem>
+                <SelectItem value="15">{isAr ? '15 دقيقة' : '15 minutes'}</SelectItem>
+                <SelectItem value="30">{isAr ? '30 دقيقة' : '30 minutes'}</SelectItem>
+                <SelectItem value="45">{isAr ? '45 دقيقة' : '45 minutes'}</SelectItem>
+                <SelectItem value="60">{isAr ? 'ساعة' : '1 hour'}</SelectItem>
               </SelectContent>
             </Select>
           </div>
 
           <div className="space-y-2">
-            <Label>Agenda (optional)</Label>
+            <Label>{isAr ? 'الأجندة (اختياري)' : 'Agenda (optional)'}</Label>
             <Textarea
-              placeholder="What will you discuss?"
+              placeholder={isAr ? 'هتتكلموا عن إيه؟' : 'What will you discuss?'}
               value={agenda}
               onChange={(e) => setAgenda(e.target.value)}
             />
@@ -349,7 +368,7 @@ function ScheduleCallDialog({
             ) : (
               <Calendar className="h-4 w-4 mr-2" />
             )}
-            Schedule Call
+            {isAr ? 'جدول مكالمة' : 'Schedule Call'}
           </Button>
         </div>
       </DialogContent>
@@ -358,6 +377,12 @@ function ScheduleCallDialog({
 }
 
 export default function TrainerCallsPage() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
+  const statusLabels = getStatusLabels(isAr);
+  const locale = isAr ? 'ar-EG' : 'en-US';
+
   const queryClient = useQueryClient();
   const [scheduleOpen, setScheduleOpen] = useState(false);
 
@@ -418,12 +443,16 @@ export default function TrainerCallsPage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Scheduled Calls</h1>
-          <p className="text-muted-foreground">Manage video calls with your clients</p>
+          <h1 className="text-3xl font-bold">
+            {isAr ? 'المكالمات المجدولة' : 'Scheduled Calls'}
+          </h1>
+          <p className="text-muted-foreground">
+            {isAr ? 'إدارة مكالمات الفيديو مع عملاءك' : 'Manage video calls with your clients'}
+          </p>
         </div>
         <Button className="btn-primary" onClick={() => setScheduleOpen(true)}>
           <Plus className="mr-2 h-4 w-4" />
-          Schedule Call
+          {isAr ? 'جدول مكالمة' : 'Schedule Call'}
         </Button>
       </div>
 
@@ -433,7 +462,7 @@ export default function TrainerCallsPage() {
           <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2">
               <Calendar className="h-5 w-5 text-primary" />
-              Today's Calls ({todayCalls.length})
+              {isAr ? `مكالمات النهاردة (${todayCalls.length})` : `Today's Calls (${todayCalls.length})`}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -455,7 +484,7 @@ export default function TrainerCallsPage() {
                           {client?.client.firstName} {client?.client.lastName}
                         </p>
                         <p className="text-xs text-muted-foreground">
-                          {new Date(call.scheduledAt).toLocaleTimeString('en-US', {
+                          {new Date(call.scheduledAt).toLocaleTimeString(locale, {
                             hour: '2-digit',
                             minute: '2-digit',
                           })}
@@ -482,7 +511,9 @@ export default function TrainerCallsPage() {
                 <Video className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Today</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'النهاردة' : 'Today'}
+                </p>
                 <p className="text-2xl font-bold">{todayCalls?.length || 0}</p>
               </div>
             </div>
@@ -496,7 +527,9 @@ export default function TrainerCallsPage() {
                 <Play className="h-6 w-6 text-green-500" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Active</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'نشط' : 'Active'}
+                </p>
                 <p className="text-2xl font-bold">{activeCalls?.length || 0}</p>
               </div>
             </div>
@@ -510,7 +543,9 @@ export default function TrainerCallsPage() {
                 <Calendar className="h-6 w-6 text-blue-500" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Upcoming</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'قادمة' : 'Upcoming'}
+                </p>
                 <p className="text-2xl font-bold">{upcomingCalls?.length || 0}</p>
               </div>
             </div>
@@ -524,7 +559,9 @@ export default function TrainerCallsPage() {
                 <Check className="h-6 w-6 text-purple-500" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Completed</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'مكتملة' : 'Completed'}
+                </p>
                 <p className="text-2xl font-bold">
                   {pastCalls?.filter((c) => c.status === 'COMPLETED').length || 0}
                 </p>
@@ -538,13 +575,13 @@ export default function TrainerCallsPage() {
       <Tabs defaultValue="upcoming" className="w-full">
         <TabsList>
           <TabsTrigger value="upcoming">
-            Upcoming ({upcomingCalls?.length || 0})
+            {isAr ? `قادمة (${upcomingCalls?.length || 0})` : `Upcoming (${upcomingCalls?.length || 0})`}
           </TabsTrigger>
           <TabsTrigger value="active">
-            Active ({activeCalls?.length || 0})
+            {isAr ? `نشط (${activeCalls?.length || 0})` : `Active (${activeCalls?.length || 0})`}
           </TabsTrigger>
           <TabsTrigger value="past">
-            Past ({pastCalls?.length || 0})
+            {isAr ? `سابقة (${pastCalls?.length || 0})` : `Past (${pastCalls?.length || 0})`}
           </TabsTrigger>
         </TabsList>
 
@@ -557,14 +594,16 @@ export default function TrainerCallsPage() {
             <Card className="glass border-border/50">
               <CardContent className="py-12 text-center">
                 <Calendar className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-                <p className="text-muted-foreground">No upcoming calls</p>
+                <p className="text-muted-foreground">
+                  {isAr ? 'مفيش مكالمات قادمة' : 'No upcoming calls'}
+                </p>
                 <Button
                   variant="outline"
                   className="mt-4"
                   onClick={() => setScheduleOpen(true)}
                 >
                   <Plus className="h-4 w-4 mr-2" />
-                  Schedule a Call
+                  {isAr ? 'جدول مكالمة' : 'Schedule a Call'}
                 </Button>
               </CardContent>
             </Card>
@@ -589,7 +628,9 @@ export default function TrainerCallsPage() {
             <Card className="glass border-border/50">
               <CardContent className="py-12 text-center">
                 <Video className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-                <p className="text-muted-foreground">No active calls</p>
+                <p className="text-muted-foreground">
+                  {isAr ? 'مفيش مكالمات نشطة' : 'No active calls'}
+                </p>
               </CardContent>
             </Card>
           ) : (
@@ -613,7 +654,9 @@ export default function TrainerCallsPage() {
             <Card className="glass border-border/50">
               <CardContent className="py-12 text-center">
                 <Check className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-                <p className="text-muted-foreground">No past calls</p>
+                <p className="text-muted-foreground">
+                  {isAr ? 'مفيش مكالمات سابقة' : 'No past calls'}
+                </p>
               </CardContent>
             </Card>
           ) : (

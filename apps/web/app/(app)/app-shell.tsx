@@ -343,7 +343,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               className="mt-4 flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium bg-gradient-to-r from-cyan-500/10 to-blue-500/10 text-cyan-600 dark:text-cyan-400 hover:from-cyan-500/20 hover:to-blue-500/20 transition-all duration-200 border border-cyan-500/20"
             >
               <Zap className="h-5 w-5" />
-              Upgrade to Premium
+              {isRTL ? 'ترقية لبريميوم' : 'Upgrade to Premium'}
             </Link>
           )}
 

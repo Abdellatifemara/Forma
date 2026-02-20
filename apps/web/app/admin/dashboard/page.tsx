@@ -10,9 +10,6 @@ import {
   Dumbbell,
   AlertCircle,
   Loader2,
-  Key,
-  Copy,
-  Check,
 } from 'lucide-react';
 import { StatCard } from '@/components/dashboard/stat-card';
 import {
@@ -26,21 +23,14 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { adminApi, type AdminDashboardStats, type AdminActivity, type AdminApproval, type SystemHealthMetric } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
-
-const TEST_ACCOUNTS = [
-  { email: 'admin@forma.fitness', role: 'ADMIN', tier: 'Admin', color: 'text-red-500' },
-  { email: 'trainer@forma.fitness', role: 'TRAINER', tier: 'Trainer', color: 'text-blue-500' },
-  { email: 'premium@forma.fitness', role: 'USER', tier: 'Premium', color: 'text-purple-500' },
-  { email: 'vip@forma.fitness', role: 'USER', tier: 'Premium+', color: 'text-yellow-500' },
-  { email: 'free@forma.fitness', role: 'USER', tier: 'Free', color: 'text-gray-500' },
-];
-const TEST_PASSWORD = 'Forma2024!';
 
 export default function AdminDashboardPage() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [stats, setStats] = useState<AdminDashboardStats | null>(null);
   const [activity, setActivity] = useState<AdminActivity[]>([]);
-  const [copiedEmail, setCopiedEmail] = useState<string | null>(null);
   const [approvals, setApprovals] = useState<AdminApproval[]>([]);
   const [health, setHealth] = useState<SystemHealthMetric[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -86,39 +76,39 @@ export default function AdminDashboardPage() {
     <div className="space-y-6">
       {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-bold">Admin Dashboard</h1>
+        <h1 className="text-3xl font-bold">{isAr ? 'لوحة تحكم المدير' : 'Admin Dashboard'}</h1>
         <p className="text-muted-foreground">
-          Platform overview and management controls.
+          {isAr ? 'نظرة عامة على المنصة وأدوات الإدارة.' : 'Platform overview and management controls.'}
         </p>
       </div>
 
       {/* Stats Grid */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <StatCard
-          title="Total Users"
+          title={isAr ? 'إجمالي المستخدمين' : 'Total Users'}
           value={stats ? stats.totalUsers.value.toLocaleString() : 'N/A'}
-          change={stats ? `${stats.totalUsers.change >= 0 ? '+' : ''}${stats.totalUsers.change} this month` : ''}
+          change={stats ? `${stats.totalUsers.change >= 0 ? '+' : ''}${stats.totalUsers.change} ${isAr ? 'الشهر ده' : 'this month'}` : ''}
           changeType={stats && stats.totalUsers.change >= 0 ? 'positive' : 'negative'}
           icon={Users}
         />
         <StatCard
-          title="Active Trainers"
+          title={isAr ? 'مدربين نشطين' : 'Active Trainers'}
           value={stats ? stats.activeTrainers.value.toLocaleString() : 'N/A'}
-          change={stats ? `${stats.activeTrainers.change >= 0 ? '+' : ''}${stats.activeTrainers.change} this month` : ''}
+          change={stats ? `${stats.activeTrainers.change >= 0 ? '+' : ''}${stats.activeTrainers.change} ${isAr ? 'الشهر ده' : 'this month'}` : ''}
           changeType={stats && stats.activeTrainers.change >= 0 ? 'positive' : 'negative'}
           icon={UserCheck}
         />
         <StatCard
-          title="Monthly Revenue"
-          value={stats ? `${(stats.monthlyRevenue.value / 1000000).toFixed(1)}M EGP` : 'N/A'}
-          change={stats ? `${stats.monthlyRevenue.change >= 0 ? '+' : ''}${stats.monthlyRevenue.change}% vs last month` : ''}
+          title={isAr ? 'إيرادات الشهر' : 'Monthly Revenue'}
+          value={stats ? `${(stats.monthlyRevenue.value / 1000000).toFixed(1)}M ${isAr ? 'ج.م' : 'EGP'}` : 'N/A'}
+          change={stats ? `${stats.monthlyRevenue.change >= 0 ? '+' : ''}${stats.monthlyRevenue.change}% ${isAr ? 'مقارنة بالشهر اللي فات' : 'vs last month'}` : ''}
           changeType={stats && stats.monthlyRevenue.change >= 0 ? 'positive' : 'negative'}
           icon={DollarSign}
         />
         <StatCard
-          title="Active Sessions"
+          title={isAr ? 'جلسات نشطة' : 'Active Sessions'}
           value={stats ? stats.activeSessions.value.toLocaleString() : 'N/A'}
-          change="Real-time"
+          change={isAr ? 'لحظي' : 'Real-time'}
           changeType="neutral"
           icon={Activity}
         />
@@ -129,8 +119,8 @@ export default function AdminDashboardPage() {
         {/* Recent Activity */}
         <Card className="lg:col-span-2">
           <CardHeader>
-            <CardTitle>Recent Activity</CardTitle>
-            <CardDescription>Latest platform events</CardDescription>
+            <CardTitle>{isAr ? 'النشاط الأخير' : 'Recent Activity'}</CardTitle>
+            <CardDescription>{isAr ? 'آخر أحداث المنصة' : 'Latest platform events'}</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -167,7 +157,7 @@ export default function AdminDashboardPage() {
                 ))
               ) : (
                 <div className="py-8 text-center text-muted-foreground">
-                  <p>No recent activity found.</p>
+                  <p>{isAr ? 'مفيش نشاط حديث.' : 'No recent activity found.'}</p>
                 </div>
               )}
             </div>
@@ -177,9 +167,9 @@ export default function AdminDashboardPage() {
         {/* Pending Approvals */}
         <Card>
           <CardHeader>
-            <CardTitle>Pending Approvals</CardTitle>
+            <CardTitle>{isAr ? 'موافقات معلقة' : 'Pending Approvals'}</CardTitle>
             <CardDescription>
-              {approvals.length > 0 ? `${approvals.length} items need review` : 'No items to review'}
+              {approvals.length > 0 ? `${approvals.length} ${isAr ? 'عناصر محتاجة مراجعة' : 'items need review'}` : (isAr ? 'مفيش عناصر للمراجعة' : 'No items to review')}
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -195,18 +185,18 @@ export default function AdminDashboardPage() {
                       <Badge variant="warning">{item.type}</Badge>
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      Submitted {new Date(item.submittedAt).toLocaleDateString()}
+                      {isAr ? 'تم التقديم' : 'Submitted'} {new Date(item.submittedAt).toLocaleDateString(isAr ? 'ar-EG' : 'en-US')}
                     </p>
                     <div className="mt-3 flex gap-2">
                       <Button size="sm" variant="forma">
-                        Review
+                        {isAr ? 'مراجعة' : 'Review'}
                       </Button>
                     </div>
                   </div>
                 ))
               ) : (
                 <div className="py-8 text-center text-muted-foreground">
-                  <p>The approval queue is empty.</p>
+                  <p>{isAr ? 'قائمة الموافقات فاضية.' : 'The approval queue is empty.'}</p>
                 </div>
               )}
             </div>
@@ -216,8 +206,8 @@ export default function AdminDashboardPage() {
         {/* System Health */}
         <Card className="lg:col-span-2">
           <CardHeader>
-            <CardTitle>System Health</CardTitle>
-            <CardDescription>Infrastructure monitoring</CardDescription>
+            <CardTitle>{isAr ? 'صحة النظام' : 'System Health'}</CardTitle>
+            <CardDescription>{isAr ? 'مراقبة البنية التحتية' : 'Infrastructure monitoring'}</CardDescription>
           </CardHeader>
           <CardContent>
             {health.length > 0 ? (
@@ -252,7 +242,7 @@ export default function AdminDashboardPage() {
               </div>
             ) : (
               <div className="py-8 text-center text-muted-foreground">
-                <p>System health data is not available.</p>
+                <p>{isAr ? 'بيانات صحة النظام غير متاحة.' : 'System health data is not available.'}</p>
               </div>
             )}
           </CardContent>
@@ -261,87 +251,37 @@ export default function AdminDashboardPage() {
         {/* Quick Actions */}
         <Card>
           <CardHeader>
-            <CardTitle>Quick Actions</CardTitle>
+            <CardTitle>{isAr ? 'إجراءات سريعة' : 'Quick Actions'}</CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
             <Button variant="outline" className="w-full justify-start" asChild>
               <a href="/admin/users">
                 <Users className="mr-2 h-4 w-4" />
-                Manage Users
+                {isAr ? 'إدارة المستخدمين' : 'Manage Users'}
               </a>
             </Button>
             <Button variant="outline" className="w-full justify-start" asChild>
               <a href="/admin/trainers">
                 <UserCheck className="mr-2 h-4 w-4" />
-                Review Trainers
+                {isAr ? 'مراجعة المدربين' : 'Review Trainers'}
               </a>
             </Button>
             <Button variant="outline" className="w-full justify-start" asChild>
               <a href="/admin/analytics">
                 <TrendingUp className="mr-2 h-4 w-4" />
-                View Analytics
+                {isAr ? 'عرض التحليلات' : 'View Analytics'}
               </a>
             </Button>
             <Button variant="outline" className="w-full justify-start" asChild>
               <a href="/admin/content">
                 <Dumbbell className="mr-2 h-4 w-4" />
-                Manage Content
+                {isAr ? 'إدارة المحتوى' : 'Manage Content'}
               </a>
             </Button>
           </CardContent>
         </Card>
       </div>
 
-      {/* Test Accounts Section */}
-      <Card className="border-dashed border-yellow-500/50 bg-yellow-500/5">
-        <CardHeader>
-          <div className="flex items-center gap-2">
-            <Key className="h-5 w-5 text-yellow-500" />
-            <CardTitle>Test Accounts</CardTitle>
-          </div>
-          <CardDescription>
-            Use these accounts to test different user roles. All accounts use password: <code className="bg-muted px-2 py-0.5 rounded font-mono text-sm">{TEST_PASSWORD}</code>
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
-            {TEST_ACCOUNTS.map((account) => (
-              <div
-                key={account.email}
-                className="rounded-lg border p-3 hover:bg-muted/50 transition-colors"
-              >
-                <div className="flex items-center justify-between mb-2">
-                  <Badge variant="outline" className={account.color}>
-                    {account.tier}
-                  </Badge>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="h-7 w-7"
-                    onClick={() => {
-                      navigator.clipboard.writeText(account.email);
-                      setCopiedEmail(account.email);
-                      setTimeout(() => setCopiedEmail(null), 2000);
-                    }}
-                  >
-                    {copiedEmail === account.email ? (
-                      <Check className="h-3.5 w-3.5 text-green-500" />
-                    ) : (
-                      <Copy className="h-3.5 w-3.5" />
-                    )}
-                  </Button>
-                </div>
-                <p className="text-xs font-mono text-muted-foreground truncate">
-                  {account.email}
-                </p>
-              </div>
-            ))}
-          </div>
-          <p className="mt-4 text-xs text-muted-foreground text-center">
-            Click the copy icon to copy email. Open an incognito window to login as a different user.
-          </p>
-        </CardContent>
-      </Card>
     </div>
   );
 }

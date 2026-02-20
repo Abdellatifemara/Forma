@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useLanguage } from '@/lib/i18n';
 import {
   Users,
   DollarSign,
@@ -28,6 +29,8 @@ import { useToast } from '@/hooks/use-toast';
 
 export default function AdminAnalyticsPage() {
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [analytics, setAnalytics] = useState<AnalyticsData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -40,7 +43,7 @@ export default function AdminAnalyticsPage() {
       const data = await adminApi.getAnalytics(period);
       setAnalytics(data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load analytics');
+      setError(err instanceof Error ? err.message : (isAr ? 'فشل تحميل التحليلات' : 'Failed to load analytics'));
     } finally {
       setIsLoading(false);
     }
@@ -62,21 +65,21 @@ export default function AdminAnalyticsPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load analytics</h2>
+        <h2 className="text-xl font-semibold mb-2">{isAr ? 'فشل تحميل التحليلات' : 'Failed to load analytics'}</h2>
         <p className="text-muted-foreground mb-4">{error}</p>
-        <Button onClick={fetchAnalytics}>Try Again</Button>
+        <Button onClick={fetchAnalytics}>{isAr ? 'حاول تاني' : 'Try Again'}</Button>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6" dir={isAr ? 'rtl' : 'ltr'}>
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Analytics</h1>
+          <h1 className="text-3xl font-bold">{isAr ? 'التحليلات' : 'Analytics'}</h1>
           <p className="text-muted-foreground">
-            Platform performance and growth metrics
+            {isAr ? 'أداء المنصة ومقاييس النمو' : 'Platform performance and growth metrics'}
           </p>
         </div>
         <div className="flex items-center gap-4">
@@ -85,18 +88,18 @@ export default function AdminAnalyticsPage() {
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="week">This Week</SelectItem>
-              <SelectItem value="month">This Month</SelectItem>
-              <SelectItem value="quarter">This Quarter</SelectItem>
-              <SelectItem value="year">This Year</SelectItem>
+              <SelectItem value="week">{isAr ? 'الأسبوع ده' : 'This Week'}</SelectItem>
+              <SelectItem value="month">{isAr ? 'الشهر ده' : 'This Month'}</SelectItem>
+              <SelectItem value="quarter">{isAr ? 'الربع ده' : 'This Quarter'}</SelectItem>
+              <SelectItem value="year">{isAr ? 'السنة دي' : 'This Year'}</SelectItem>
             </SelectContent>
           </Select>
           <Button
             variant="outline"
-            onClick={() => toast({ title: 'Coming Soon', description: 'Export feature will be available soon' })}
+            onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'خاصية التصدير هتكون متاحة قريباً' : 'Export feature will be available soon' })}
           >
-            <Download className="mr-2 h-4 w-4" />
-            Export Report
+            <Download className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            {isAr ? 'تصدير التقرير' : 'Export Report'}
           </Button>
         </div>
       </div>
@@ -122,7 +125,7 @@ export default function AdminAnalyticsPage() {
               </Badge>
             </div>
             <p className="mt-3 text-2xl font-bold">{analytics?.totalUsers?.toLocaleString() || 0}</p>
-            <p className="text-sm text-muted-foreground">Total Users</p>
+            <p className="text-sm text-muted-foreground">{isAr ? 'إجمالي المستخدمين' : 'Total Users'}</p>
           </CardContent>
         </Card>
 
@@ -149,9 +152,9 @@ export default function AdminAnalyticsPage() {
                 ? analytics.monthlyRevenue >= 1000000
                   ? `${(analytics.monthlyRevenue / 1000000).toFixed(1)}M`
                   : `${(analytics.monthlyRevenue / 1000).toFixed(0)}K`
-                : '0'} EGP
+                : '0'} {isAr ? 'ج.م' : 'EGP'}
             </p>
-            <p className="text-sm text-muted-foreground">Monthly Revenue</p>
+            <p className="text-sm text-muted-foreground">{isAr ? 'الإيرادات الشهرية' : 'Monthly Revenue'}</p>
           </CardContent>
         </Card>
 
@@ -163,11 +166,11 @@ export default function AdminAnalyticsPage() {
               </div>
               <Badge variant="forma" className="flex items-center gap-1">
                 <ArrowUpRight className="h-3 w-3" />
-                Live
+                {isAr ? 'لحظي' : 'Live'}
               </Badge>
             </div>
             <p className="mt-3 text-2xl font-bold">{analytics?.dailyActiveUsers?.toLocaleString() || 0}</p>
-            <p className="text-sm text-muted-foreground">Daily Active Users</p>
+            <p className="text-sm text-muted-foreground">{isAr ? 'المستخدمين النشطين يومياً' : 'Daily Active Users'}</p>
           </CardContent>
         </Card>
 
@@ -190,7 +193,7 @@ export default function AdminAnalyticsPage() {
               </Badge>
             </div>
             <p className="mt-3 text-2xl font-bold">{analytics?.churnRate || 0}%</p>
-            <p className="text-sm text-muted-foreground">Churn Rate</p>
+            <p className="text-sm text-muted-foreground">{isAr ? 'معدل المغادرة' : 'Churn Rate'}</p>
           </CardContent>
         </Card>
       </div>
@@ -199,7 +202,7 @@ export default function AdminAnalyticsPage() {
         {/* User Growth */}
         <Card>
           <CardHeader>
-            <CardTitle>User Growth</CardTitle>
+            <CardTitle>{isAr ? 'نمو المستخدمين' : 'User Growth'}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="h-64">
@@ -221,7 +224,7 @@ export default function AdminAnalyticsPage() {
                 </div>
               ) : (
                 <div className="flex h-full items-center justify-center text-muted-foreground">
-                  No data available
+                  {isAr ? 'مفيش بيانات متاحة' : 'No data available'}
                 </div>
               )}
             </div>
@@ -231,7 +234,7 @@ export default function AdminAnalyticsPage() {
         {/* Revenue Growth */}
         <Card>
           <CardHeader>
-            <CardTitle>Revenue Growth</CardTitle>
+            <CardTitle>{isAr ? 'نمو الإيرادات' : 'Revenue Growth'}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="h-64">
@@ -255,7 +258,7 @@ export default function AdminAnalyticsPage() {
                 </div>
               ) : (
                 <div className="flex h-full items-center justify-center text-muted-foreground">
-                  No data available
+                  {isAr ? 'مفيش بيانات متاحة' : 'No data available'}
                 </div>
               )}
             </div>
@@ -265,7 +268,7 @@ export default function AdminAnalyticsPage() {
         {/* Plan Distribution */}
         <Card>
           <CardHeader>
-            <CardTitle>Plan Distribution</CardTitle>
+            <CardTitle>{isAr ? 'توزيع الباقات' : 'Plan Distribution'}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-6">
@@ -284,7 +287,7 @@ export default function AdminAnalyticsPage() {
                 ))
               ) : (
                 <div className="py-8 text-center text-muted-foreground">
-                  No data available
+                  {isAr ? 'مفيش بيانات متاحة' : 'No data available'}
                 </div>
               )}
             </div>
@@ -294,7 +297,7 @@ export default function AdminAnalyticsPage() {
         {/* Feature Usage */}
         <Card>
           <CardHeader>
-            <CardTitle>Feature Usage</CardTitle>
+            <CardTitle>{isAr ? 'استخدام المميزات' : 'Feature Usage'}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
@@ -310,7 +313,7 @@ export default function AdminAnalyticsPage() {
                 ))
               ) : (
                 <div className="py-8 text-center text-muted-foreground">
-                  No data available
+                  {isAr ? 'مفيش بيانات متاحة' : 'No data available'}
                 </div>
               )}
             </div>
@@ -320,7 +323,7 @@ export default function AdminAnalyticsPage() {
         {/* Retention Rates */}
         <Card className="lg:col-span-2">
           <CardHeader>
-            <CardTitle>Retention Rates</CardTitle>
+            <CardTitle>{isAr ? 'معدلات الاحتفاظ' : 'Retention Rates'}</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-4 gap-4">
@@ -335,7 +338,7 @@ export default function AdminAnalyticsPage() {
                 ))
               ) : (
                 <div className="col-span-4 py-8 text-center text-muted-foreground">
-                  No data available
+                  {isAr ? 'مفيش بيانات متاحة' : 'No data available'}
                 </div>
               )}
             </div>

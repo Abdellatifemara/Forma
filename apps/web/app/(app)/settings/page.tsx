@@ -93,14 +93,14 @@ export default function SettingsPage() {
       });
       await refetchUser();
       toast({
-        title: 'Profile updated',
-        description: 'Your changes have been saved successfully.',
+        title: t.settings.profile.profileUpdated,
+        description: t.settings.profile.profileUpdatedDesc,
       });
     } catch (error) {
       // Error handled
       toast({
-        title: 'Error',
-        description: 'Failed to save profile. Please try again.',
+        title: t.settings.profile.errorTitle,
+        description: t.settings.profile.saveError,
         variant: 'destructive',
       });
     } finally {
@@ -115,8 +115,8 @@ export default function SettingsPage() {
     // Validate file type
     if (!file.type.startsWith('image/')) {
       toast({
-        title: 'Invalid file',
-        description: 'Please select an image file.',
+        title: t.settings.profile.invalidFile,
+        description: t.settings.profile.invalidFileDesc,
         variant: 'destructive',
       });
       return;
@@ -125,8 +125,8 @@ export default function SettingsPage() {
     // Validate file size (max 5MB)
     if (file.size > 5 * 1024 * 1024) {
       toast({
-        title: 'File too large',
-        description: 'Please select an image under 5MB.',
+        title: t.settings.profile.fileTooLarge,
+        description: t.settings.profile.fileTooLargeDesc,
         variant: 'destructive',
       });
       return;
@@ -139,14 +139,14 @@ export default function SettingsPage() {
       await refetchUser();
 
       toast({
-        title: 'Photo updated',
-        description: 'Your profile photo has been changed.',
+        title: t.settings.profile.photoUpdated,
+        description: t.settings.profile.photoUpdatedDesc,
       });
     } catch (error) {
       // Error handled
       toast({
-        title: 'Upload failed',
-        description: 'Failed to upload photo. Please try again.',
+        title: t.settings.profile.uploadFailed,
+        description: t.settings.profile.uploadFailedDesc,
         variant: 'destructive',
       });
     } finally {
@@ -228,7 +228,7 @@ export default function SettingsPage() {
                   <h3 className="font-semibold">
                     {user?.firstName && user?.lastName
                       ? `${user.firstName} ${user.lastName}`
-                      : user?.displayName || 'User'}
+                      : user?.displayName || t.settings.profile.userFallback}
                   </h3>
                   <p className="text-sm text-muted-foreground">{user?.email}</p>
                   <p className="mt-1 text-xs text-muted-foreground">
@@ -691,7 +691,7 @@ export default function SettingsPage() {
               variant="forma"
               disabled={!passwordForm.current || !passwordForm.new || passwordForm.new !== passwordForm.confirm}
               onClick={() => {
-                toast({ title: 'Coming Soon', description: 'Password change will be available soon' });
+                toast({ title: t.settings.support.comingSoon, description: t.settings.support.passwordChangeSoon });
                 setShowPasswordDialog(false);
                 setPasswordForm({ current: '', new: '', confirm: '' });
               }}
@@ -733,7 +733,7 @@ export default function SettingsPage() {
               variant="destructive"
               disabled={deleteConfirmText !== 'DELETE'}
               onClick={() => {
-                toast({ title: 'Coming Soon', description: 'Account deletion will be available soon' });
+                toast({ title: t.settings.support.comingSoon, description: t.settings.support.accountDeletionSoon });
                 setShowDeleteDialog(false);
                 setDeleteConfirmText('');
               }}

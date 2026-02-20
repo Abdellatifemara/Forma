@@ -24,11 +24,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { trainersApi, type TrainerEarningsBreakdown, type TrainerTransaction } from '@/lib/api';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export default function EarningsPage() {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [earnings, setEarnings] = useState<TrainerEarningsBreakdown | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -45,7 +47,7 @@ export default function EarningsPage() {
       const data = await trainersApi.getEarnings({ month: selectedMonth, year: selectedYear });
       setEarnings(data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load earnings');
+      setError(err instanceof Error ? err.message : t.trainer.failedToLoadEarnings);
     } finally {
       setIsLoading(false);
     }
@@ -84,13 +86,13 @@ export default function EarningsPage() {
     switch (status) {
       case 'COMPLETED':
       case 'PAID_OUT':
-        return { label: status === 'PAID_OUT' ? 'Paid' : 'Completed', class: 'bg-green-500/20 text-green-400 border-green-500/50' };
+        return { label: status === 'PAID_OUT' ? t.trainer.statusPaid : t.trainer.statusCompleted, class: 'bg-green-500/20 text-green-400 border-green-500/50' };
       case 'PENDING':
-        return { label: 'Pending', class: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50' };
+        return { label: t.trainer.statusPending, class: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/50' };
       case 'FAILED':
-        return { label: 'Failed', class: 'bg-red-500/20 text-red-400 border-red-500/50' };
+        return { label: t.trainer.statusFailed, class: 'bg-red-500/20 text-red-400 border-red-500/50' };
       case 'REFUNDED':
-        return { label: 'Refunded', class: 'bg-orange-500/20 text-orange-400 border-orange-500/50' };
+        return { label: t.trainer.statusRefunded, class: 'bg-orange-500/20 text-orange-400 border-orange-500/50' };
       default:
         return { label: status, class: 'bg-muted' };
     }
@@ -132,9 +134,9 @@ export default function EarningsPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load earnings</h2>
+        <h2 className="text-xl font-semibold mb-2">{t.trainer.failedToLoadEarnings}</h2>
         <p className="text-muted-foreground mb-4">{error}</p>
-        <Button onClick={fetchEarnings}>Try Again</Button>
+        <Button onClick={fetchEarnings}>{t.common.tryAgain}</Button>
       </div>
     );
   }
@@ -144,16 +146,16 @@ export default function EarningsPage() {
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Earnings</h1>
-          <p className="text-muted-foreground">Track your revenue and payouts</p>
+          <h1 className="text-3xl font-bold">{t.trainer.earningsTitle}</h1>
+          <p className="text-muted-foreground">{t.trainer.earningsSubtitle}</p>
         </div>
         <Button
           variant="outline"
           className="border-primary/50 hover:bg-primary/10"
-          onClick={() => toast({ title: 'Coming Soon', description: 'Export feature will be available soon' })}
+          onClick={() => toast({ title: t.trainer.exportComingSoon, description: t.trainer.exportComingSoonDesc })}
         >
           <Download className="mr-2 h-4 w-4" />
-          Export Report
+          {t.trainer.exportReport}
         </Button>
       </div>
 
@@ -167,7 +169,7 @@ export default function EarningsPage() {
             <div className="text-center">
               <p className="text-lg font-semibold">{MONTHS[selectedMonth]} {selectedYear}</p>
               {isCurrentMonth && (
-                <p className="text-sm text-muted-foreground">Current month</p>
+                <p className="text-sm text-muted-foreground">{t.trainer.currentMonth}</p>
               )}
             </div>
             <Button
@@ -191,22 +193,22 @@ export default function EarningsPage() {
               <div className="p-2 rounded-xl bg-cyan-500/20">
                 <DollarSign className="h-5 w-5 text-cyan-400" />
               </div>
-              <span className="text-sm text-muted-foreground">Gross Revenue</span>
+              <span className="text-sm text-muted-foreground">{t.trainer.grossRevenue}</span>
             </div>
             <p className="text-3xl font-bold">
               {earnings.grossRevenue.toLocaleString()} <span className="text-lg text-muted-foreground">EGP</span>
             </p>
             <div className="mt-4 space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Subscriptions</span>
+                <span className="text-muted-foreground">{t.trainer.subscriptions}</span>
                 <span>{earnings.breakdown.subscriptions.toLocaleString()} EGP</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Programs</span>
+                <span className="text-muted-foreground">{t.trainer.programs2}</span>
                 <span>{earnings.breakdown.programs.toLocaleString()} EGP</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Tips</span>
+                <span className="text-muted-foreground">{t.trainer.tips}</span>
                 <span>{earnings.breakdown.tips.toLocaleString()} EGP</span>
               </div>
             </div>
@@ -220,14 +222,14 @@ export default function EarningsPage() {
               <div className="p-2 rounded-xl bg-orange-500/20">
                 <TrendingUp className="h-5 w-5 text-orange-400" />
               </div>
-              <span className="text-sm text-muted-foreground">Platform Fee ({earnings.platformFeePercentage}%)</span>
+              <span className="text-sm text-muted-foreground">{t.trainer.platformFee} ({earnings.platformFeePercentage}%)</span>
             </div>
             <p className="text-3xl font-bold text-orange-400">
               -{earnings.platformFee.toLocaleString()} <span className="text-lg">EGP</span>
             </p>
             <div className="mt-4">
               <p className="text-sm text-muted-foreground">
-                This fee helps us maintain the platform, provide support, and process payments securely.
+                {t.trainer.platformFeeDesc}
               </p>
             </div>
           </CardContent>
@@ -240,14 +242,14 @@ export default function EarningsPage() {
               <div className="p-2 rounded-xl bg-green-500/20">
                 <DollarSign className="h-5 w-5 text-green-400" />
               </div>
-              <span className="text-sm text-muted-foreground">Your Earnings</span>
+              <span className="text-sm text-muted-foreground">{t.trainer.yourEarnings}</span>
             </div>
             <p className="text-3xl font-bold text-green-400">
               {earnings.netEarnings.toLocaleString()} <span className="text-lg">EGP</span>
             </p>
             <div className="mt-4 flex items-center gap-2 text-sm">
               <Badge variant="outline" className="bg-green-500/10 text-green-400 border-green-500/30">
-                {100 - earnings.platformFeePercentage}% of revenue
+                {100 - earnings.platformFeePercentage}{t.trainer.ofRevenue}
               </Badge>
             </div>
           </CardContent>
@@ -263,15 +265,15 @@ export default function EarningsPage() {
                 <Clock className="h-6 w-6 text-purple-400" />
               </div>
               <div>
-                <p className="font-semibold">Pending Payout</p>
+                <p className="font-semibold">{t.trainer.pendingPayout}</p>
                 <p className="text-sm text-muted-foreground">
-                  Next payout on {new Date(earnings.nextPayoutDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                  {t.trainer.nextPayoutOn} {new Date(earnings.nextPayoutDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                 </p>
               </div>
             </div>
             <div className="text-right">
               <p className="text-3xl font-bold text-gradient">{earnings.pendingPayout.toLocaleString()} EGP</p>
-              <p className="text-sm text-muted-foreground">Total pending amount</p>
+              <p className="text-sm text-muted-foreground">{t.trainer.totalPendingAmount}</p>
             </div>
           </div>
         </CardContent>
@@ -280,14 +282,14 @@ export default function EarningsPage() {
       {/* Transactions */}
       <Card className="glass border-border/50">
         <CardHeader>
-          <CardTitle>Recent Transactions</CardTitle>
-          <CardDescription>Your transaction history for {MONTHS[selectedMonth]}</CardDescription>
+          <CardTitle>{t.trainer.recentTransactions}</CardTitle>
+          <CardDescription>{t.trainer.transactionHistoryFor} {MONTHS[selectedMonth]}</CardDescription>
         </CardHeader>
         <CardContent>
           {earnings.transactions.length === 0 ? (
             <div className="text-center py-8 text-muted-foreground">
               <DollarSign className="h-12 w-12 mx-auto mb-3 opacity-50" />
-              <p>No transactions this month</p>
+              <p>{t.trainer.noTransactions}</p>
             </div>
           ) : (
             <div className="space-y-3">
@@ -307,10 +309,10 @@ export default function EarningsPage() {
                       </div>
                       <div>
                         <p className="font-medium">
-                          {tx.type === 'SUBSCRIPTION' ? 'Subscription Payment' :
-                           tx.type === 'PROGRAM_PURCHASE' ? 'Program Purchase' :
-                           tx.type === 'TIP' ? 'Tip Received' :
-                           tx.type === 'PAYOUT' ? 'Payout to Bank' :
+                          {tx.type === 'SUBSCRIPTION' ? t.trainer.txSubscription :
+                           tx.type === 'PROGRAM_PURCHASE' ? t.trainer.txProgramPurchase :
+                           tx.type === 'TIP' ? t.trainer.txTip :
+                           tx.type === 'PAYOUT' ? t.trainer.txPayout :
                            tx.type}
                         </p>
                         <p className="text-sm text-muted-foreground">
@@ -332,7 +334,7 @@ export default function EarningsPage() {
                         </p>
                         {tx.trainerEarningEGP !== tx.amountEGP && tx.type !== 'PAYOUT' && (
                           <p className="text-xs text-muted-foreground">
-                            You earn: {tx.trainerEarningEGP.toLocaleString()} EGP
+                            {t.trainer.youEarn}: {tx.trainerEarningEGP.toLocaleString()} EGP
                           </p>
                         )}
                       </div>

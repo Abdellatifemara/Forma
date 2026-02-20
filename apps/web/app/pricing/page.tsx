@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { useLanguage } from '@/lib/i18n';
 import {
   SUBSCRIPTION_TIERS,
   FEATURES,
@@ -55,6 +56,9 @@ const CATEGORY_ORDER: FeatureCategory[] = [
 ];
 
 export default function PricingPage() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
   const [expandedCategories, setExpandedCategories] = useState<Set<FeatureCategory>>(
     new Set(CATEGORY_ORDER)
   );
@@ -82,10 +86,56 @@ export default function PricingPage() {
 
   const formatLimit = (limit: number | 'unlimited' | null) => {
     if (limit === null) return null;
-    if (limit === 'unlimited') return 'Unlimited';
+    if (limit === 'unlimited') return isAr ? 'غير محدود' : 'Unlimited';
     if (limit === 0) return null;
-    return `${limit}/mo`;
+    return isAr ? `${limit}/شهر` : `${limit}/mo`;
   };
+
+  const faqs = isAr
+    ? [
+        {
+          q: 'ممكن أغير باقتي في أي وقت؟',
+          a: 'أيوه! تقدر ترقي أو تخفض باقتك في أي وقت. لو رقيت، هتتحسبلك الفرق بالنسبة. لو خفضت، التغيير هيتطبق في دورة الفوترة الجاية.',
+        },
+        {
+          q: 'إيه طرق الدفع المتاحة؟',
+          a: 'بنقبل كل الكروت الائتمانية والخصم، فودافون كاش، أورنج كاش، فوري، والتحويل البنكي عن طريق شريكنا الآمن Paymob.',
+        },
+        {
+          q: 'فيه تجربة مجانية لباقة بريميوم؟',
+          a: 'بنوفر تجربة مجانية 7 أيام لباقة بريميوم لما تشترك في الباقة السنوية. تقدر تلغي في أي وقت خلال الفترة دي من غير ما تتحسبلك أي فلوس.',
+        },
+        {
+          q: 'إيه اللي بيتضمنه بريميوم+ من حيث التواصل مع المدرب؟',
+          a: 'بريميوم+ بيتضمن التواصل مع مدرب مصري معتمد هيعمل برامج تمارين وتغذية مخصوصة ليك، متابعة أسبوعية، و2 استشارة فيديو في الشهر. تقدر تراسل مدربك مباشرة من خلال التطبيق.',
+        },
+        {
+          q: 'ممكن استرجع فلوسي؟',
+          a: 'أيوه، بنضمن استرداد كامل خلال 14 يوم على كل الباقات المدفوعة. لو مش راضي، تواصل مع الدعم عشان تسترد فلوسك بالكامل.',
+        },
+      ]
+    : [
+        {
+          q: 'Can I switch plans anytime?',
+          a: "Yes! You can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, the change takes effect at your next billing cycle.",
+        },
+        {
+          q: 'What payment methods do you accept?',
+          a: 'We accept all major credit/debit cards, Vodafone Cash, Orange Cash, Fawry, and bank transfers through our secure payment partner Paymob.',
+        },
+        {
+          q: 'Is there a free trial for Premium?',
+          a: "We offer a 7-day free trial for Premium when you sign up for a yearly subscription. You can cancel anytime during the trial without being charged.",
+        },
+        {
+          q: "What's included in the Premium+ trainer matching?",
+          a: 'Premium+ includes matching with a certified Egyptian trainer who will create custom workout and nutrition plans, provide weekly check-ins, and offer 2 video consultations per month. You can message your trainer directly through the app.',
+        },
+        {
+          q: 'Can I get a refund?',
+          a: "Yes, we offer a 14-day money-back guarantee on all paid plans. If you're not satisfied, contact support for a full refund.",
+        },
+      ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -102,19 +152,21 @@ export default function PricingPage() {
           className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-8"
         >
           <ArrowLeft className="h-4 w-4" />
-          Back to home
+          {isAr ? 'رجوع للرئيسية' : 'Back to home'}
         </Link>
 
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-            Compare{' '}
+            {isAr ? 'قارن' : 'Compare'}{' '}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
-              Plans
+              {isAr ? 'الباقات' : 'Plans'}
             </span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Choose the plan that fits your fitness goals. All plans include core features to track your progress.
+            {isAr
+              ? 'اختار الباقة المناسبة لأهدافك...'
+              : 'Choose the plan that fits your fitness goals. All plans include core features to track your progress.'}
           </p>
 
           {/* Billing toggle */}
@@ -128,7 +180,7 @@ export default function PricingPage() {
                   : 'text-muted-foreground hover:text-foreground'
               )}
             >
-              Monthly
+              {isAr ? 'شهري' : 'Monthly'}
             </button>
             <button
               onClick={() => setBillingPeriod('yearly')}
@@ -139,9 +191,9 @@ export default function PricingPage() {
                   : 'text-muted-foreground hover:text-foreground'
               )}
             >
-              Yearly
+              {isAr ? 'سنوي' : 'Yearly'}
               <span className="px-2 py-0.5 rounded-full bg-green-500/20 text-green-500 text-xs">
-                Save up to 38%
+                {isAr ? 'وفر لحد 38%' : 'Save up to 38%'}
               </span>
             </button>
           </div>
@@ -149,7 +201,9 @@ export default function PricingPage() {
 
         {/* Pricing cards header */}
         <div className="grid grid-cols-4 gap-4 mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-lg py-4 border-b border-border/50">
-          <div className="text-sm text-muted-foreground font-medium">Features</div>
+          <div className="text-sm text-muted-foreground font-medium">
+            {isAr ? 'المميزات' : 'Features'}
+          </div>
           {tiers.map((tier) => {
             const tierInfo = SUBSCRIPTION_TIERS[tier];
             const isPremium = tier === 'PREMIUM';
@@ -171,12 +225,12 @@ export default function PricingPage() {
                 </div>
                 <div className="mb-3">
                   {tierInfo.pricing.monthly === 0 ? (
-                    <span className="text-2xl font-bold">Free</span>
+                    <span className="text-2xl font-bold">{isAr ? 'مجاني' : 'Free'}</span>
                   ) : (
                     <>
                       <span className="text-2xl font-bold">{getPrice(tier)}</span>
                       <span className="text-muted-foreground text-sm">
-                        {' '}EGP/{billingPeriod === 'yearly' ? 'yr' : 'mo'}
+                        {' '}{isAr ? 'ج.م' : 'EGP'}/{billingPeriod === 'yearly' ? (isAr ? 'سنة' : 'yr') : (isAr ? 'شهر' : 'mo')}
                       </span>
                     </>
                   )}
@@ -192,7 +246,9 @@ export default function PricingPage() {
                   asChild
                 >
                   <Link href={`/signup?plan=${tier.toLowerCase()}`}>
-                    {tier === 'FREE' ? 'Start Free' : 'Get Started'}
+                    {tier === 'FREE'
+                      ? (isAr ? 'ابدأ مجاناً' : 'Start Free')
+                      : (isAr ? 'ابدأ دلوقتي' : 'Get Started')}
                   </Link>
                 </Button>
               </div>
@@ -229,7 +285,7 @@ export default function PricingPage() {
                     </div>
                     <span className="font-semibold">{categoryInfo.name}</span>
                     <span className="text-xs text-muted-foreground">
-                      ({features.length} features)
+                      ({features.length} {isAr ? 'مميزات' : 'features'})
                     </span>
                   </div>
                   {isExpanded ? (
@@ -299,20 +355,26 @@ export default function PricingPage() {
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
           <div className="glass rounded-2xl p-8 border border-border/50 max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Ready to transform your fitness?</h2>
+            <h2 className="text-2xl font-bold mb-4">
+              {isAr ? 'جاهز تغير حياتك الرياضية?' : 'Ready to transform your fitness?'}
+            </h2>
             <p className="text-muted-foreground mb-6">
-              Join thousands of Egyptians already achieving their fitness goals with Forma.
+              {isAr
+                ? 'انضم لآلاف المصريين...'
+                : 'Join thousands of Egyptians already achieving their fitness goals with Forma.'}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" variant="outline" asChild>
-                <Link href="/signup">Start Free</Link>
+                <Link href="/signup">{isAr ? 'ابدأ مجاناً' : 'Start Free'}</Link>
               </Button>
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
                 asChild
               >
-                <Link href="/signup?plan=premium">Get Premium</Link>
+                <Link href="/signup?plan=premium">
+                  {isAr ? 'اشترك في بريميوم' : 'Get Premium'}
+                </Link>
               </Button>
             </div>
           </div>
@@ -320,30 +382,11 @@ export default function PricingPage() {
 
         {/* FAQ */}
         <div className="mt-16 max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-bold text-center mb-8">
+            {isAr ? 'أسئلة شائعة' : 'Frequently Asked Questions'}
+          </h2>
           <div className="space-y-4">
-            {[
-              {
-                q: 'Can I switch plans anytime?',
-                a: 'Yes! You can upgrade or downgrade your plan at any time. When upgrading, you\'ll be charged the prorated difference. When downgrading, the change takes effect at your next billing cycle.',
-              },
-              {
-                q: 'What payment methods do you accept?',
-                a: 'We accept all major credit/debit cards, Vodafone Cash, Orange Cash, Fawry, and bank transfers through our secure payment partner Paymob.',
-              },
-              {
-                q: 'Is there a free trial for Premium?',
-                a: 'We offer a 7-day free trial for Premium when you sign up for a yearly subscription. You can cancel anytime during the trial without being charged.',
-              },
-              {
-                q: 'What\'s included in the Premium+ trainer matching?',
-                a: 'Premium+ includes matching with a certified Egyptian trainer who will create custom workout and nutrition plans, provide weekly check-ins, and offer 2 video consultations per month. You can message your trainer directly through the app.',
-              },
-              {
-                q: 'Can I get a refund?',
-                a: 'Yes, we offer a 14-day money-back guarantee on all paid plans. If you\'re not satisfied, contact support for a full refund.',
-              },
-            ].map((faq, idx) => (
+            {faqs.map((faq, idx) => (
               <div key={idx} className="p-4 rounded-xl bg-muted/30 border border-border/50">
                 <h3 className="font-semibold mb-2">{faq.q}</h3>
                 <p className="text-sm text-muted-foreground">{faq.a}</p>

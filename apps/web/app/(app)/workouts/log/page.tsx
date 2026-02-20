@@ -7,6 +7,7 @@ import { Plus, Trash2, Loader2 } from 'lucide-react';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { workoutsApi } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
 interface ExerciseSet {
   id: number;
@@ -22,6 +23,8 @@ interface ExerciseEntry {
 
 export default function LogWorkoutPage() {
   const router = useRouter();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [workoutName, setWorkoutName] = useState('');
   const [duration, setDuration] = useState('');
   const [notes, setNotes] = useState('');
@@ -89,18 +92,18 @@ export default function LogWorkoutPage() {
   const handleSubmit = async () => {
     // Validation
     if (!workoutName.trim()) {
-      setError('Please enter a workout name');
+      setError(isAr ? 'أدخل اسم التمرين' : 'Please enter a workout name');
       return;
     }
 
     if (!duration || parseInt(duration) <= 0) {
-      setError('Please enter a valid duration');
+      setError(isAr ? 'أدخل مدة صحيحة' : 'Please enter a valid duration');
       return;
     }
 
     const validExercises = exercises.filter((ex) => ex.name.trim());
     if (validExercises.length === 0) {
-      setError('Please add at least one exercise');
+      setError(isAr ? 'أضف تمرين واحد على الأقل' : 'Please add at least one exercise');
       return;
     }
 
@@ -127,7 +130,11 @@ export default function LogWorkoutPage() {
     } catch (err) {
       // Error handled
       setError(
-        err instanceof Error ? err.message : 'Failed to log workout. Please try again.'
+        err instanceof Error
+          ? err.message
+          : isAr
+            ? 'فشل تسجيل التمرين. حاول تاني.'
+            : 'Failed to log workout. Please try again.'
       );
     } finally {
       setIsSubmitting(false);
@@ -137,27 +144,35 @@ export default function LogWorkoutPage() {
   return (
     <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
       <div>
-        <h1 className="text-2xl font-bold">Log a Workout</h1>
+        <h1 className="text-2xl font-bold">
+          {isAr ? 'تسجيل تمرين' : 'Log a Workout'}
+        </h1>
         <p className="text-muted-foreground">
-          Manually enter the details of your training session.
+          {isAr
+            ? 'أدخل تفاصيل جلسة التدريب يدوياً.'
+            : 'Manually enter the details of your training session.'}
         </p>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>Workout Details</CardTitle>
+          <CardTitle>{isAr ? 'تفاصيل التمرين' : 'Workout Details'}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="space-y-2">
-            <label className="font-medium">Workout Name</label>
+            <label className="font-medium">
+              {isAr ? 'اسم التمرين' : 'Workout Name'}
+            </label>
             <Input
-              placeholder="e.g., Morning Run, Chest Day"
+              placeholder={isAr ? 'مثال: جري الصبح، يوم صدر' : 'e.g., Morning Run, Chest Day'}
               value={workoutName}
               onChange={(e) => setWorkoutName(e.target.value)}
             />
           </div>
           <div className="space-y-2">
-            <label className="font-medium">Duration (minutes)</label>
+            <label className="font-medium">
+              {isAr ? 'المدة (دقائق)' : 'Duration (minutes)'}
+            </label>
             <Input
               type="number"
               placeholder="e.g., 60"
@@ -169,7 +184,9 @@ export default function LogWorkoutPage() {
           {exercises.map((exercise, exIndex) => (
             <div key={exercise.id} className="space-y-4 rounded-md border p-4">
               <div className="flex items-center justify-between">
-                <h3 className="font-semibold">Exercise #{exIndex + 1}</h3>
+                <h3 className="font-semibold">
+                  {isAr ? `تمرين #${exIndex + 1}` : `Exercise #${exIndex + 1}`}
+                </h3>
                 {exercises.length > 1 && (
                   <Button
                     variant="ghost"
@@ -181,18 +198,18 @@ export default function LogWorkoutPage() {
                 )}
               </div>
               <Input
-                placeholder="Exercise Name, e.g., Bench Press"
+                placeholder={isAr ? 'اسم التمرين، مثال: بنش بريس' : 'Exercise Name, e.g., Bench Press'}
                 value={exercise.name}
                 onChange={(e) => updateExerciseName(exercise.id, e.target.value)}
               />
               {exercise.sets.map((set, setIndex) => (
                 <div key={set.id} className="flex items-center gap-2">
                   <span className="w-14 text-sm text-muted-foreground">
-                    Set {setIndex + 1}
+                    {isAr ? `مجموعة ${setIndex + 1}` : `Set ${setIndex + 1}`}
                   </span>
                   <Input
                     type="number"
-                    placeholder="Reps"
+                    placeholder={isAr ? 'تكرارات' : 'Reps'}
                     value={set.reps}
                     onChange={(e) =>
                       updateSet(exercise.id, set.id, 'reps', e.target.value)
@@ -200,7 +217,7 @@ export default function LogWorkoutPage() {
                   />
                   <Input
                     type="number"
-                    placeholder="Weight (kg)"
+                    placeholder={isAr ? 'الوزن (كجم)' : 'Weight (kg)'}
                     value={set.weight}
                     onChange={(e) =>
                       updateSet(exercise.id, set.id, 'weight', e.target.value)
@@ -218,20 +235,24 @@ export default function LogWorkoutPage() {
                 </div>
               ))}
               <Button variant="outline" size="sm" onClick={() => addSet(exercise.id)}>
-                <Plus className="mr-2 h-4 w-4" /> Add Set
+                <Plus className="mr-2 h-4 w-4" />
+                {isAr ? 'إضافة مجموعة' : 'Add Set'}
               </Button>
             </div>
           ))}
 
           <Button variant="outline" onClick={addExercise}>
-            <Plus className="mr-2 h-4 w-4" /> Add Exercise
+            <Plus className="mr-2 h-4 w-4" />
+            {isAr ? 'إضافة تمرين' : 'Add Exercise'}
           </Button>
 
           <div className="space-y-2">
-            <label className="font-medium">Notes</label>
+            <label className="font-medium">
+              {isAr ? 'ملاحظات' : 'Notes'}
+            </label>
             <textarea
               className="w-full rounded-md border p-2"
-              placeholder="Any thoughts on your workout?"
+              placeholder={isAr ? 'أي أفكار عن تمرينك؟' : 'Any thoughts on your workout?'}
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
             />
@@ -252,10 +273,10 @@ export default function LogWorkoutPage() {
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Saving...
+                {isAr ? 'جاري الحفظ...' : 'Saving...'}
               </>
             ) : (
-              'Save Workout'
+              isAr ? 'حفظ التمرين' : 'Save Workout'
             )}
           </Button>
         </CardContent>

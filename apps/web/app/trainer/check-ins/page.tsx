@@ -33,6 +33,7 @@ import {
 import { checkInsApi, trainersApi, type DailyCheckIn, type TrainerClientResponse } from '@/lib/api';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { useLanguage } from '@/lib/i18n';
 
 const ratingColors: Record<number, string> = {
   1: 'bg-red-500',
@@ -42,12 +43,34 @@ const ratingColors: Record<number, string> = {
   5: 'bg-emerald-500',
 };
 
-function RatingBadge({ value, label }: { value: number | null | undefined; label: string }) {
+function RatingBadge({
+  value,
+  label,
+  isAr,
+}: {
+  value: number | null | undefined;
+  label: string;
+  isAr: boolean;
+}) {
   if (value === null || value === undefined) return null;
+
+  const translatedLabel = (() => {
+    if (!isAr) return label;
+    switch (label) {
+      case 'Workout':   return 'تمرين';
+      case 'Nutrition': return 'تغذية';
+      case 'Sleep':     return 'نوم';
+      case 'Energy':    return 'طاقة';
+      case 'Stress':    return 'توتر';
+      case 'Mood':      return 'مزاج';
+      default:          return label;
+    }
+  })();
+
   return (
     <div className="flex items-center gap-2">
       <div className={cn('w-2 h-2 rounded-full', ratingColors[value])} />
-      <span className="text-sm">{label}: {value}/5</span>
+      <span className="text-sm">{translatedLabel}: {value}/5</span>
     </div>
   );
 }
@@ -55,9 +78,11 @@ function RatingBadge({ value, label }: { value: number | null | undefined; label
 function ClientCheckInCard({
   client,
   onViewDetails,
+  isAr,
 }: {
   client: TrainerClientResponse;
   onViewDetails: () => void;
+  isAr: boolean;
 }) {
   const { data: checkIns, isLoading } = useQuery({
     queryKey: ['client-checkins', client.clientId],
@@ -89,19 +114,19 @@ function ClientCheckInCard({
                 {client.client.firstName} {client.client.lastName}
               </p>
               <p className="text-sm text-muted-foreground">
-                {client.currentProgram?.name || 'No program'}
+                {client.currentProgram?.name || (isAr ? 'مفيش برنامج' : 'No program')}
               </p>
             </div>
           </div>
           {todayCheckIn ? (
             <Badge className="bg-green-500/10 text-green-500 border-green-500/20">
               <CheckCircle2 className="h-3 w-3 mr-1" />
-              Checked In
+              {isAr ? 'سجّل' : 'Checked In'}
             </Badge>
           ) : (
             <Badge className="bg-red-500/10 text-red-500 border-red-500/20">
               <AlertCircle className="h-3 w-3 mr-1" />
-              No Check-In
+              {isAr ? 'لسه ماسجّلش' : 'No Check-In'}
             </Badge>
           )}
         </div>
@@ -110,7 +135,9 @@ function ClientCheckInCard({
           {/* Weekly compliance */}
           <div>
             <div className="flex justify-between text-sm mb-1">
-              <span className="text-muted-foreground">Weekly Workout Compliance</span>
+              <span className="text-muted-foreground">
+                {isAr ? 'الالتزام بالتمارين الأسبوعي' : 'Weekly Workout Compliance'}
+              </span>
               <span className="font-medium">{weeklyCompliance}%</span>
             </div>
             <Progress value={weeklyCompliance} className="h-2" />
@@ -125,19 +152,25 @@ function ClientCheckInCard({
                     'h-3 w-3',
                     todayCheckIn.workoutCompleted ? 'text-green-500' : 'text-red-500'
                   )} />
-                  <span>{todayCheckIn.workoutCompleted ? 'Done' : 'Skipped'}</span>
+                  <span>
+                    {todayCheckIn.workoutCompleted
+                      ? (isAr ? 'خلص' : 'Done')
+                      : (isAr ? 'اتعداها' : 'Skipped')}
+                  </span>
                 </div>
               )}
               {todayCheckIn.sleepHours && (
                 <div className="flex items-center gap-1 text-xs">
                   <Moon className="h-3 w-3 text-blue-500" />
-                  <span>{todayCheckIn.sleepHours}h sleep</span>
+                  <span>
+                    {todayCheckIn.sleepHours}h {isAr ? 'نوم' : 'sleep'}
+                  </span>
                 </div>
               )}
               {todayCheckIn.mood && (
                 <div className="flex items-center gap-1 text-xs">
                   <Smile className="h-3 w-3 text-yellow-500" />
-                  <span>Mood: {todayCheckIn.mood}/5</span>
+                  <span>{isAr ? 'المزاج:' : 'Mood:'} {todayCheckIn.mood}/5</span>
                 </div>
               )}
             </div>
@@ -156,10 +189,12 @@ function ClientDetailDialog({
   client,
   open,
   onOpenChange,
+  isAr,
 }: {
   client: TrainerClientResponse | null;
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  isAr: boolean;
 }) {
   const { data: checkIns, isLoading } = useQuery({
     queryKey: ['client-checkins', client?.clientId],
@@ -184,7 +219,7 @@ function ClientDetailDialog({
             <div>
               {client.client.firstName} {client.client.lastName}
               <p className="text-sm font-normal text-muted-foreground">
-                Last 14 Days Check-Ins
+                {isAr ? 'آخر 14 يوم' : 'Last 14 Days Check-Ins'}
               </p>
             </div>
           </DialogTitle>
@@ -197,7 +232,7 @@ function ClientDetailDialog({
             </div>
           ) : !checkIns || checkIns.length === 0 ? (
             <div className="text-center py-8 text-muted-foreground">
-              No check-ins recorded yet
+              {isAr ? 'مفيش تسجيلات لسه' : 'No check-ins recorded yet'}
             </div>
           ) : (
             <div className="space-y-4">
@@ -208,57 +243,70 @@ function ClientDetailDialog({
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
                         <span className="font-medium">
-                          {new Date(checkIn.date).toLocaleDateString('en-US', {
-                            weekday: 'long',
-                            month: 'short',
-                            day: 'numeric',
-                          })}
+                          {new Date(checkIn.date).toLocaleDateString(
+                            isAr ? 'ar-EG' : 'en-US',
+                            {
+                              weekday: 'long',
+                              month: 'short',
+                              day: 'numeric',
+                            }
+                          )}
                         </span>
                       </div>
                       {checkIn.workoutCompleted ? (
-                        <Badge className="bg-green-500/10 text-green-500">Workout Done</Badge>
+                        <Badge className="bg-green-500/10 text-green-500">
+                          {isAr ? 'التمرين خلص' : 'Workout Done'}
+                        </Badge>
                       ) : (
-                        <Badge variant="secondary">Rest Day</Badge>
+                        <Badge variant="secondary">
+                          {isAr ? 'يوم راحة' : 'Rest Day'}
+                        </Badge>
                       )}
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {checkIn.workoutRating && (
-                        <RatingBadge value={checkIn.workoutRating} label="Workout" />
+                        <RatingBadge value={checkIn.workoutRating} label="Workout" isAr={isAr} />
                       )}
                       {checkIn.nutritionRating && (
-                        <RatingBadge value={checkIn.nutritionRating} label="Nutrition" />
+                        <RatingBadge value={checkIn.nutritionRating} label="Nutrition" isAr={isAr} />
                       )}
                       {checkIn.sleepQuality && (
-                        <RatingBadge value={checkIn.sleepQuality} label="Sleep" />
+                        <RatingBadge value={checkIn.sleepQuality} label="Sleep" isAr={isAr} />
                       )}
                       {checkIn.energyLevel && (
-                        <RatingBadge value={checkIn.energyLevel} label="Energy" />
+                        <RatingBadge value={checkIn.energyLevel} label="Energy" isAr={isAr} />
                       )}
                       {checkIn.stressLevel && (
-                        <RatingBadge value={checkIn.stressLevel} label="Stress" />
+                        <RatingBadge value={checkIn.stressLevel} label="Stress" isAr={isAr} />
                       )}
                       {checkIn.mood && (
-                        <RatingBadge value={checkIn.mood} label="Mood" />
+                        <RatingBadge value={checkIn.mood} label="Mood" isAr={isAr} />
                       )}
                     </div>
 
                     {checkIn.sleepHours && (
                       <p className="text-sm text-muted-foreground mt-2">
-                        Sleep: {checkIn.sleepHours} hours
+                        {isAr ? 'نوم:' : 'Sleep:'} {checkIn.sleepHours} {isAr ? 'ساعات' : 'hours'}
                       </p>
                     )}
 
                     {(checkIn.workoutNotes || checkIn.nutritionNotes || checkIn.notes) && (
                       <div className="mt-3 pt-3 border-t border-border/50">
                         {checkIn.workoutNotes && (
-                          <p className="text-sm"><strong>Workout:</strong> {checkIn.workoutNotes}</p>
+                          <p className="text-sm">
+                            <strong>{isAr ? 'تمرين:' : 'Workout:'}</strong> {checkIn.workoutNotes}
+                          </p>
                         )}
                         {checkIn.nutritionNotes && (
-                          <p className="text-sm"><strong>Nutrition:</strong> {checkIn.nutritionNotes}</p>
+                          <p className="text-sm">
+                            <strong>{isAr ? 'تغذية:' : 'Nutrition:'}</strong> {checkIn.nutritionNotes}
+                          </p>
                         )}
                         {checkIn.notes && (
-                          <p className="text-sm"><strong>Notes:</strong> {checkIn.notes}</p>
+                          <p className="text-sm">
+                            <strong>{isAr ? 'ملاحظات:' : 'Notes:'}</strong> {checkIn.notes}
+                          </p>
                         )}
                       </div>
                     )}
@@ -272,7 +320,7 @@ function ClientDetailDialog({
             <Link href={`/trainer/messages?client=${client.clientId}`}>
               <Button variant="outline">
                 <MessageSquare className="h-4 w-4 mr-2" />
-                Message Client
+                {isAr ? 'راسل العميل' : 'Message Client'}
               </Button>
             </Link>
           </div>
@@ -285,6 +333,8 @@ function ClientDetailDialog({
 export default function TrainerCheckInsPage() {
   const [selectedClient, setSelectedClient] = useState<TrainerClientResponse | null>(null);
   const [detailsOpen, setDetailsOpen] = useState(false);
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
 
   const { data: clients, isLoading: clientsLoading } = useQuery({
     queryKey: ['trainer-clients'],
@@ -305,8 +355,12 @@ export default function TrainerCheckInsPage() {
     <div className="space-y-6 pb-8">
       {/* Header */}
       <div>
-        <h1 className="text-3xl font-bold">Client Check-Ins</h1>
-        <p className="text-muted-foreground">Monitor your clients' daily progress</p>
+        <h1 className="text-3xl font-bold">
+          {isAr ? 'متابعة العملاء' : 'Client Check-Ins'}
+        </h1>
+        <p className="text-muted-foreground">
+          {isAr ? 'تابع تقدم عملاءك اليومي' : "Monitor your clients' daily progress"}
+        </p>
       </div>
 
       {/* Stats Cards */}
@@ -318,7 +372,9 @@ export default function TrainerCheckInsPage() {
                 <Users className="h-6 w-6 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Total Clients</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'إجمالي العملاء' : 'Total Clients'}
+                </p>
                 <p className="text-2xl font-bold">{clients?.length || 0}</p>
               </div>
             </div>
@@ -332,7 +388,9 @@ export default function TrainerCheckInsPage() {
                 <CheckCircle2 className="h-6 w-6 text-green-500" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Checked In Today</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'سجلوا النهاردة' : 'Checked In Today'}
+                </p>
                 <p className="text-2xl font-bold">
                   {(clients?.length || 0) - (noCheckInClients?.length || 0)}
                 </p>
@@ -348,7 +406,9 @@ export default function TrainerCheckInsPage() {
                 <AlertCircle className="h-6 w-6 text-red-500" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Missing Check-In</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'لسه ماسجلوش' : 'Missing Check-In'}
+                </p>
                 <p className="text-2xl font-bold">{noCheckInClients?.length || 0}</p>
               </div>
             </div>
@@ -362,7 +422,7 @@ export default function TrainerCheckInsPage() {
           <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-red-500">
               <AlertCircle className="h-5 w-5" />
-              Clients Who Haven't Checked In Today
+              {isAr ? 'عملاء لسه ماسجلوش النهاردة' : "Clients Who Haven't Checked In Today"}
             </CardTitle>
           </CardHeader>
           <CardContent>
@@ -395,9 +455,9 @@ export default function TrainerCheckInsPage() {
       {/* Clients List */}
       <Tabs defaultValue="all" className="w-full">
         <TabsList>
-          <TabsTrigger value="all">All Clients</TabsTrigger>
-          <TabsTrigger value="today">Checked In Today</TabsTrigger>
-          <TabsTrigger value="missing">Missing Check-In</TabsTrigger>
+          <TabsTrigger value="all">{isAr ? 'كل العملاء' : 'All Clients'}</TabsTrigger>
+          <TabsTrigger value="today">{isAr ? 'سجلوا النهاردة' : 'Checked In Today'}</TabsTrigger>
+          <TabsTrigger value="missing">{isAr ? 'لسه ماسجلوش' : 'Missing Check-In'}</TabsTrigger>
         </TabsList>
 
         <TabsContent value="all" className="mt-4">
@@ -409,7 +469,9 @@ export default function TrainerCheckInsPage() {
             <Card className="glass border-border/50">
               <CardContent className="py-12 text-center">
                 <Users className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-                <p className="text-muted-foreground">No clients yet</p>
+                <p className="text-muted-foreground">
+                  {isAr ? 'مفيش عملاء لسه' : 'No clients yet'}
+                </p>
               </CardContent>
             </Card>
           ) : (
@@ -419,6 +481,7 @@ export default function TrainerCheckInsPage() {
                   key={client.id}
                   client={client}
                   onViewDetails={() => handleViewDetails(client)}
+                  isAr={isAr}
                 />
               ))}
             </div>
@@ -434,6 +497,7 @@ export default function TrainerCheckInsPage() {
                   key={client.id}
                   client={client}
                   onViewDetails={() => handleViewDetails(client)}
+                  isAr={isAr}
                 />
               ))}
           </div>
@@ -448,6 +512,7 @@ export default function TrainerCheckInsPage() {
                   key={client.id}
                   client={client}
                   onViewDetails={() => handleViewDetails(client)}
+                  isAr={isAr}
                 />
               ))}
           </div>
@@ -459,6 +524,7 @@ export default function TrainerCheckInsPage() {
         client={selectedClient}
         open={detailsOpen}
         onOpenChange={setDetailsOpen}
+        isAr={isAr}
       />
     </div>
   );

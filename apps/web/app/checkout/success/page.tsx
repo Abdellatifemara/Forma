@@ -6,9 +6,12 @@ import { useRouter } from 'next/navigation';
 import { CheckCircle, Sparkles, ArrowRight, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import confetti from 'canvas-confetti';
+import { useLanguage } from '@/lib/i18n';
 
 export default function CheckoutSuccessPage() {
   const router = useRouter();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [countdown, setCountdown] = useState(5);
 
   useEffect(() => {
@@ -81,14 +84,15 @@ export default function CheckoutSuccessPage() {
 
         {/* Text */}
         <h1 className="text-3xl font-bold mb-4">
-          Welcome to{' '}
+          {isAr ? 'أهلاً بيك في ' : 'Welcome to '}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
-            Premium
+            {isAr ? 'بريميوم' : 'Premium'}
           </span>
         </h1>
         <p className="text-muted-foreground mb-8">
-          Your payment was successful! You now have access to all premium features.
-          Let's continue your fitness journey.
+          {isAr
+            ? 'الدفع تم بنجاح! دلوقتي عندك وصول لكل المميزات. يلا نكمل رحلة اللياقة.'
+            : "Your payment was successful! You now have access to all premium features. Let's continue your fitness journey."}
         </p>
 
         {/* CTA */}
@@ -97,7 +101,7 @@ export default function CheckoutSuccessPage() {
           asChild
         >
           <Link href="/dashboard">
-            Go to Dashboard
+            {isAr ? 'روح للوحة التحكم' : 'Go to Dashboard'}
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
@@ -105,7 +109,7 @@ export default function CheckoutSuccessPage() {
         {/* Auto redirect */}
         <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
           <Loader2 className="h-4 w-4 animate-spin" />
-          Redirecting in {countdown} seconds...
+          {isAr ? `جاري التحويل خلال ${countdown} ثواني...` : `Redirecting in ${countdown} seconds...`}
         </p>
 
         {/* Quick links */}
@@ -114,15 +118,15 @@ export default function CheckoutSuccessPage() {
             href="/workouts"
             className="p-4 rounded-xl border border-border/50 hover:border-primary/50 transition-colors"
           >
-            <p className="font-medium">Start Workout</p>
-            <p className="text-xs text-muted-foreground">Use premium features</p>
+            <p className="font-medium">{isAr ? 'ابدأ تمرين' : 'Start Workout'}</p>
+            <p className="text-xs text-muted-foreground">{isAr ? 'استخدم مميزات بريميوم' : 'Use premium features'}</p>
           </Link>
           <Link
             href="/settings/subscription"
             className="p-4 rounded-xl border border-border/50 hover:border-primary/50 transition-colors"
           >
-            <p className="font-medium">Manage Plan</p>
-            <p className="text-xs text-muted-foreground">View subscription</p>
+            <p className="font-medium">{isAr ? 'إدارة الباقة' : 'Manage Plan'}</p>
+            <p className="text-xs text-muted-foreground">{isAr ? 'عرض الاشتراك' : 'View subscription'}</p>
           </Link>
         </div>
       </div>

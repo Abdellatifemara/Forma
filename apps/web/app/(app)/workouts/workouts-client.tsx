@@ -31,49 +31,50 @@ import dynamic from 'next/dynamic';
 
 const FormChecker = dynamic(
   () => import('@/components/workouts/form-checker').then(mod => ({ default: mod.FormChecker })),
-  { ssr: false, loading: () => <div className="fixed inset-0 bg-black z-50 flex items-center justify-center"><div className="text-white">Loading form checker...</div></div> }
+  { ssr: false, loading: () => <div className="fixed inset-0 bg-black z-50 flex items-center justify-center"><div className="text-white">Loading...</div></div> }
 );
 import { WorkoutWithVoiceCoach, VoiceCoachToggle, useVoiceCoach } from '@/components/workouts/voice-coach';
 
-const quickActions = [
+const getQuickActions = (isAr: boolean) => [
   {
     icon: Sparkles,
-    title: 'What Now?',
-    description: 'Get your perfect workout',
+    title: isAr ? 'إيه دلوقتي؟' : 'What Now?',
+    description: isAr ? 'هنختارلك التمرين المثالي' : 'Get your perfect workout',
     href: '?whatnow=true',
     gradient: 'from-violet-500 to-purple-600',
   },
   {
     icon: Camera,
-    title: 'Form Check',
-    description: 'Real-time form analysis',
+    title: isAr ? 'تحليل الفورم' : 'Form Check',
+    description: isAr ? 'تحليل فوري لأدائك' : 'Real-time form analysis',
     href: '?formcheck=true',
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Mic,
-    title: 'Voice Coach',
-    description: 'Hands-free guidance',
+    title: isAr ? 'مدرب صوتي' : 'Voice Coach',
+    description: isAr ? 'تمرن من غير ما تمسك الموبايل' : 'Hands-free guidance',
     href: '?voicecoach=true',
     gradient: 'from-orange-500 to-red-500',
   },
 ];
 
-const muscleGroups = [
-  { name: 'Chest', value: 'CHEST', color: 'bg-red-500/20 text-red-400 border-red-500/30' },
-  { name: 'Back', value: 'BACK', color: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
-  { name: 'Shoulders', value: 'SHOULDERS', color: 'bg-orange-500/20 text-orange-400 border-orange-500/30' },
-  { name: 'Biceps', value: 'BICEPS', color: 'bg-purple-500/20 text-purple-400 border-purple-500/30' },
-  { name: 'Quads', value: 'QUADRICEPS', color: 'bg-green-500/20 text-green-400 border-green-500/30' },
-  { name: 'Abs', value: 'ABS', color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
-  { name: 'Cardio', value: 'CARDIO', color: 'bg-pink-500/20 text-pink-400 border-pink-500/30' },
-  { name: 'Full Body', value: 'FULL_BODY', color: 'bg-forma-teal/20 text-forma-teal border-forma-teal/30' },
+const getMuscleGroups = (isAr: boolean) => [
+  { name: isAr ? 'صدر' : 'Chest', value: 'CHEST', color: 'bg-red-500/20 text-red-400 border-red-500/30' },
+  { name: isAr ? 'ظهر' : 'Back', value: 'BACK', color: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
+  { name: isAr ? 'كتف' : 'Shoulders', value: 'SHOULDERS', color: 'bg-orange-500/20 text-orange-400 border-orange-500/30' },
+  { name: isAr ? 'باي' : 'Biceps', value: 'BICEPS', color: 'bg-purple-500/20 text-purple-400 border-purple-500/30' },
+  { name: isAr ? 'رجل' : 'Quads', value: 'QUADRICEPS', color: 'bg-green-500/20 text-green-400 border-green-500/30' },
+  { name: isAr ? 'بطن' : 'Abs', value: 'ABS', color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
+  { name: isAr ? 'كارديو' : 'Cardio', value: 'CARDIO', color: 'bg-pink-500/20 text-pink-400 border-pink-500/30' },
+  { name: isAr ? 'جسم كامل' : 'Full Body', value: 'FULL_BODY', color: 'bg-forma-teal/20 text-forma-teal border-forma-teal/30' },
 ];
 
 function WorkoutsContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isAr = language === 'ar';
   const [plans, setPlans] = useState<WorkoutPlan[]>([]);
   const [history, setHistory] = useState<WorkoutLog[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -144,19 +145,19 @@ function WorkoutsContent() {
             <Dumbbell className="h-6 w-6 text-forma-teal" />
             {t.workouts.title}
           </h1>
-          <p className="text-muted-foreground">Track and plan your training</p>
+          <p className="text-muted-foreground">{isAr ? 'تابع و خطط تمارينك' : 'Track and plan your training'}</p>
         </div>
         <Button className="btn-premium" asChild>
           <Link href="/workouts/log">
             <Plus className="mr-2 h-4 w-4" />
-            Log Workout
+            {isAr ? 'سجّل تمرين' : 'Log Workout'}
           </Link>
         </Button>
       </div>
 
       {/* Quick Actions */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-        {quickActions.map((action) => (
+        {getQuickActions(isAr).map((action) => (
           <Link
             key={action.title}
             href={`/workouts${action.href}`}
@@ -201,16 +202,16 @@ function WorkoutsContent() {
               </div>
               <h3 className="font-semibold text-lg mb-2">{t.workouts.noActivePlan}</h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Create your first plan or get a personalized recommendation
+                {isAr ? 'اعمل أول خطة تمرين أو خلي الذكاء الاصطناعي يختارلك' : 'Create your first plan or get a personalized recommendation'}
               </p>
               <div className="flex gap-3">
                 <Button variant="outline" asChild>
-                  <Link href="/workouts/create">Create Plan</Link>
+                  <Link href="/workouts/create">{isAr ? 'اعمل خطة' : 'Create Plan'}</Link>
                 </Button>
                 <Button className="btn-premium" asChild>
                   <Link href="/workouts?whatnow=true">
                     <Sparkles className="mr-2 h-4 w-4" />
-                    Generate for Me
+                    {isAr ? 'اختارلي' : 'Generate for Me'}
                   </Link>
                 </Button>
               </div>
@@ -242,15 +243,15 @@ function WorkoutsContent() {
                       <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                         <span className="flex items-center gap-1">
                           <Calendar className="h-4 w-4 text-forma-teal" />
-                          {plan.frequency} days/week
+                          {plan.frequency} {isAr ? 'يوم/أسبوع' : 'days/week'}
                         </span>
                         <span className="flex items-center gap-1">
                           <Timer className="h-4 w-4 text-forma-teal" />
-                          {plan.duration} weeks
+                          {plan.duration} {isAr ? 'أسبوع' : 'weeks'}
                         </span>
                         <span className="flex items-center gap-1">
                           <Target className="h-4 w-4 text-forma-teal" />
-                          {plan.goal || 'General Fitness'}
+                          {plan.goal || (isAr ? 'لياقة عامة' : 'General Fitness')}
                         </span>
                       </div>
                     </div>
@@ -284,12 +285,12 @@ function WorkoutsContent() {
               <div className="h-14 w-14 rounded-2xl bg-muted flex items-center justify-center mb-4">
                 <Plus className="h-7 w-7 text-muted-foreground" />
               </div>
-              <h3 className="font-semibold text-lg mb-1">Create Custom Plan</h3>
+              <h3 className="font-semibold text-lg mb-1">{isAr ? 'اعمل خطة مخصصة' : 'Create Custom Plan'}</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Build your own workout program from scratch
+                {isAr ? 'ابني برنامج تمارينك من الصفر' : 'Build your own workout program from scratch'}
               </p>
               <Button variant="outline" className="rounded-xl" asChild>
-                <Link href="/workouts/create">Create Plan</Link>
+                <Link href="/workouts/create">{isAr ? 'اعمل خطة' : 'Create Plan'}</Link>
               </Button>
             </CardContent>
           </Card>
@@ -304,7 +305,7 @@ function WorkoutsContent() {
               </div>
               <h3 className="font-semibold text-lg mb-2">{t.progress.noData}</h3>
               <p className="text-muted-foreground text-sm">
-                Complete your first workout to see it here
+                {isAr ? 'كمّل أول تمرين عشان يظهر هنا' : 'Complete your first workout to see it here'}
               </p>
             </div>
           ) : (
@@ -322,17 +323,17 @@ function WorkoutsContent() {
                       </div>
                       <div>
                         <p className="text-xs text-muted-foreground">
-                          {new Date(workout.date).toLocaleDateString('en-US', {
+                          {new Date(workout.date).toLocaleDateString(isAr ? 'ar-EG' : 'en-US', {
                             weekday: 'short',
                             month: 'short',
                             day: 'numeric',
                           })}
                         </p>
-                        <h3 className="font-semibold">{workout.name || 'Workout'}</h3>
+                        <h3 className="font-semibold">{workout.name || (isAr ? 'تمرين' : 'Workout')}</h3>
                         <div className="flex items-center gap-4 mt-1 text-sm text-muted-foreground">
                           <span className="flex items-center gap-1">
                             <Timer className="h-3.5 w-3.5" />
-                            {Math.round((workout.duration || 0) / 60)} min
+                            {Math.round((workout.duration || 0) / 60)} {isAr ? 'د' : 'min'}
                           </span>
                           <span className="flex items-center gap-1">
                             <Flame className="h-3.5 w-3.5 text-orange-500" />
@@ -345,9 +346,11 @@ function WorkoutsContent() {
                         </div>
                       </div>
                     </div>
-                    <Button variant="ghost" size="sm" className="rounded-xl">
-                      View
-                      <ChevronRight className="ml-1 h-4 w-4" />
+                    <Button variant="ghost" size="sm" className="rounded-xl" asChild>
+                      <Link href={`/workouts/${workout.id}`}>
+                        {isAr ? 'عرض' : 'View'}
+                        <ChevronRight className="ml-1 h-4 w-4" />
+                      </Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -359,7 +362,7 @@ function WorkoutsContent() {
         {/* Exercises Tab */}
         <TabsContent value="exercises" className="mt-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {muscleGroups.map((muscle, index) => (
+            {getMuscleGroups(isAr).map((muscle, index) => (
               <Link
                 key={muscle.name}
                 href={`/exercises?muscle=${muscle.value}`}
@@ -373,7 +376,7 @@ function WorkoutsContent() {
                     </div>
                     <div>
                       <h3 className="font-medium">{muscle.name}</h3>
-                      <p className="text-xs text-muted-foreground">View exercises</p>
+                      <p className="text-xs text-muted-foreground">{isAr ? 'عرض التمارين' : 'View exercises'}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -406,7 +409,7 @@ function WorkoutsContent() {
           <div className="p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <Camera className="w-6 h-6 text-forma-teal" />
-              <h2 className="text-white text-lg font-semibold">Form Check</h2>
+              <h2 className="text-white text-lg font-semibold">{isAr ? 'تحليل الفورم' : 'Form Check'}</h2>
             </div>
             <button
               onClick={closeQuickAction}
@@ -416,7 +419,7 @@ function WorkoutsContent() {
             </button>
           </div>
           <div className="px-4 pb-4">
-            <p className="text-white/70 mb-4">Select an exercise to check your form:</p>
+            <p className="text-white/70 mb-4">{isAr ? 'اختار التمرين عشان نحلل الفورم بتاعك:' : 'Select an exercise to check your form:'}</p>
             <div className="flex flex-wrap gap-2">
               {['squat', 'pushup', 'deadlift', 'plank'].map((exercise) => (
                 <button
@@ -457,8 +460,8 @@ function WorkoutsContent() {
                   <Mic className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">Voice Coach</h2>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">Hands-free workout guidance</p>
+                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">{isAr ? 'مدرب صوتي' : 'Voice Coach'}</h2>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{isAr ? 'تمرن من غير ما تمسك الموبايل' : 'Hands-free workout guidance'}</p>
                 </div>
               </div>
               <WorkoutWithVoiceCoach
@@ -468,7 +471,7 @@ function WorkoutsContent() {
                   { name: 'Lunges', sets: 3, reps: 10 },
                   { name: 'Plank', sets: 3, reps: 30 },
                 ]}
-                language="en"
+                language={isAr ? 'ar' : 'en'}
               />
             </div>
           </div>
@@ -487,7 +490,7 @@ export default function WorkoutsPage() {
             <div className="h-16 w-16 rounded-full border-4 border-muted animate-pulse" />
             <div className="absolute inset-0 h-16 w-16 rounded-full border-4 border-transparent border-t-forma-teal animate-spin" />
           </div>
-          <p className="mt-4 text-muted-foreground">Loading...</p>
+          <p className="mt-4 text-muted-foreground">...</p>
         </div>
       </div>
     }>

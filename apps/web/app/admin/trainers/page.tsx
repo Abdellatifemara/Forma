@@ -30,9 +30,12 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { adminApi, type AdminTrainerStats, type AdminTrainer, type AdminApproval } from '@/lib/api';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 
 export default function TrainersPage() {
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [searchQuery, setSearchQuery] = useState('');
   const [applications, setApplications] = useState<AdminApproval[]>([]);
   const [trainers, setTrainers] = useState<AdminTrainer[]>([]);
@@ -55,7 +58,7 @@ export default function TrainersPage() {
       setStats(statsData);
       setTrainers(trainersData.data);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load data');
+      setError(err instanceof Error ? err.message : (isAr ? 'فشل تحميل البيانات' : 'Failed to load data'));
     } finally {
       setIsLoading(false);
     }
@@ -69,10 +72,10 @@ export default function TrainersPage() {
     setProcessingId(trainerId);
     try {
       await adminApi.approveTrainer(trainerId);
-      toast({ title: 'Success', description: 'Trainer approved successfully' });
+      toast({ title: isAr ? 'تم' : 'Success', description: isAr ? 'تم قبول المدرب بنجاح' : 'Trainer approved successfully' });
       fetchData();
     } catch (err) {
-      toast({ title: 'Error', description: 'Failed to approve trainer', variant: 'destructive' });
+      toast({ title: isAr ? 'خطأ' : 'Error', description: isAr ? 'فشل قبول المدرب' : 'Failed to approve trainer', variant: 'destructive' });
     } finally {
       setProcessingId(null);
     }
@@ -82,10 +85,10 @@ export default function TrainersPage() {
     setProcessingId(trainerId);
     try {
       await adminApi.rejectTrainer(trainerId);
-      toast({ title: 'Success', description: 'Trainer application rejected' });
+      toast({ title: isAr ? 'تم' : 'Success', description: isAr ? 'تم رفض طلب المدرب' : 'Trainer application rejected' });
       fetchData();
     } catch (err) {
-      toast({ title: 'Error', description: 'Failed to reject trainer', variant: 'destructive' });
+      toast({ title: isAr ? 'خطأ' : 'Error', description: isAr ? 'فشل رفض المدرب' : 'Failed to reject trainer', variant: 'destructive' });
     } finally {
       setProcessingId(null);
     }
@@ -103,9 +106,9 @@ export default function TrainersPage() {
     return (
       <div className="flex flex-col items-center justify-center min-h-[400px] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-        <h2 className="text-xl font-semibold mb-2">Failed to load trainers</h2>
+        <h2 className="text-xl font-semibold mb-2">{isAr ? 'فشل تحميل المدربين' : 'Failed to load trainers'}</h2>
         <p className="text-muted-foreground mb-4">{error}</p>
-        <Button onClick={fetchData}>Try Again</Button>
+        <Button onClick={fetchData}>{isAr ? 'حاول تاني' : 'Try Again'}</Button>
       </div>
     );
   }
@@ -114,9 +117,9 @@ export default function TrainersPage() {
     <div className="space-y-6">
       {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-bold">Trainers</h1>
+        <h1 className="text-3xl font-bold">{isAr ? 'المدربين' : 'Trainers'}</h1>
         <p className="text-muted-foreground">
-          Manage trainer accounts and review applications.
+          {isAr ? 'إدارة حسابات المدربين ومراجعة الطلبات.' : 'Manage trainer accounts and review applications.'}
         </p>
       </div>
 
@@ -130,7 +133,7 @@ export default function TrainersPage() {
               </div>
               <div>
                 <div className="text-2xl font-bold">{stats?.activeTrainers ?? 0}</div>
-                <p className="text-sm text-muted-foreground">Active Trainers</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'مدربين نشطين' : 'Active Trainers'}</p>
               </div>
             </div>
           </CardContent>
@@ -143,7 +146,7 @@ export default function TrainersPage() {
               </div>
               <div>
                 <div className="text-2xl font-bold">{stats?.pendingTrainers ?? applications.length}</div>
-                <p className="text-sm text-muted-foreground">Pending Applications</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'طلبات معلقة' : 'Pending Applications'}</p>
               </div>
             </div>
           </CardContent>
@@ -156,10 +159,10 @@ export default function TrainersPage() {
               </div>
               <div>
                 <div className="text-2xl font-bold">
-                  {stats?.avgRating ? stats.avgRating.toFixed(1) : 'N/A'}
+                  {stats?.avgRating ? stats.avgRating.toFixed(1) : (isAr ? 'غ/م' : 'N/A')}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Avg Rating {stats?.ratingCount ? `(${stats.ratingCount})` : ''}
+                  {isAr ? 'متوسط التقييم' : 'Avg Rating'} {stats?.ratingCount ? `(${stats.ratingCount})` : ''}
                 </p>
               </div>
             </div>
@@ -173,9 +176,9 @@ export default function TrainersPage() {
               </div>
               <div>
                 <div className="text-2xl font-bold">
-                  {stats?.monthlyPayout ? `${(stats.monthlyPayout / 1000).toFixed(1)}K` : '0'} EGP
+                  {stats?.monthlyPayout ? `${(stats.monthlyPayout / 1000).toFixed(1)}K` : '0'} {isAr ? 'ج.م' : 'EGP'}
                 </div>
-                <p className="text-sm text-muted-foreground">Monthly Payout</p>
+                <p className="text-sm text-muted-foreground">{isAr ? 'المدفوعات الشهرية' : 'Monthly Payout'}</p>
               </div>
             </div>
           </CardContent>
@@ -186,25 +189,25 @@ export default function TrainersPage() {
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           <TabsTrigger value="pending">
-            Pending Applications {applications.length > 0 && `(${applications.length})`}
+            {isAr ? 'الطلبات المعلقة' : 'Pending Applications'} {applications.length > 0 && `(${applications.length})`}
           </TabsTrigger>
-          <TabsTrigger value="all">All Trainers</TabsTrigger>
+          <TabsTrigger value="all">{isAr ? 'كل المدربين' : 'All Trainers'}</TabsTrigger>
         </TabsList>
 
         <TabsContent value="pending">
           <Card>
             <CardHeader>
-              <CardTitle>Pending Applications</CardTitle>
+              <CardTitle>{isAr ? 'الطلبات المعلقة' : 'Pending Applications'}</CardTitle>
               <CardDescription>
-                {applications.length} applications need review
+                {applications.length} {isAr ? 'طلبات محتاجة مراجعة' : 'applications need review'}
               </CardDescription>
             </CardHeader>
             <CardContent>
               {applications.length === 0 ? (
                 <div className="py-12 text-center">
                   <CheckCircle className="h-12 w-12 mx-auto mb-4 text-green-500" />
-                  <p className="text-lg font-medium">All caught up!</p>
-                  <p className="text-muted-foreground">No pending trainer applications</p>
+                  <p className="text-lg font-medium">{isAr ? 'مفيش حاجة معلقة!' : 'All caught up!'}</p>
+                  <p className="text-muted-foreground">{isAr ? 'مفيش طلبات مدربين معلقة' : 'No pending trainer applications'}</p>
                 </div>
               ) : (
                 <div className="space-y-4">
@@ -239,7 +242,7 @@ export default function TrainersPage() {
                             ) : (
                               <XCircle className="mr-2 h-4 w-4" />
                             )}
-                            Reject
+                            {isAr ? 'رفض' : 'Reject'}
                           </Button>
                           <Button
                             size="sm"
@@ -252,23 +255,23 @@ export default function TrainersPage() {
                             ) : (
                               <CheckCircle className="mr-2 h-4 w-4" />
                             )}
-                            Approve
+                            {isAr ? 'قبول' : 'Approve'}
                           </Button>
                         </div>
                       </div>
 
                       <div className="mt-4 grid gap-4 md:grid-cols-3">
                         <div>
-                          <p className="text-sm text-muted-foreground">Type</p>
+                          <p className="text-sm text-muted-foreground">{isAr ? 'النوع' : 'Type'}</p>
                           <p className="font-medium">{app.type}</p>
                         </div>
                         <div>
-                          <p className="text-sm text-muted-foreground">Status</p>
+                          <p className="text-sm text-muted-foreground">{isAr ? 'الحالة' : 'Status'}</p>
                           <Badge variant="warning">{app.status}</Badge>
                         </div>
                         <div>
-                          <p className="text-sm text-muted-foreground">Submitted</p>
-                          <p className="font-medium">{new Date(app.submittedAt).toLocaleDateString()}</p>
+                          <p className="text-sm text-muted-foreground">{isAr ? 'تم التقديم' : 'Submitted'}</p>
+                          <p className="font-medium">{new Date(app.submittedAt).toLocaleDateString(isAr ? 'ar-EG' : 'en-US')}</p>
                         </div>
                       </div>
                     </div>
@@ -282,28 +285,28 @@ export default function TrainersPage() {
         <TabsContent value="all">
           <Card>
             <CardHeader>
-              <CardTitle>All Trainers</CardTitle>
+              <CardTitle>{isAr ? 'كل المدربين' : 'All Trainers'}</CardTitle>
               <CardDescription>
-                {trainers.length} total trainers on the platform
+                {trainers.length} {isAr ? 'مدرب على المنصة' : 'total trainers on the platform'}
               </CardDescription>
             </CardHeader>
             <CardContent>
               {trainers.length === 0 ? (
                 <div className="py-12 text-center">
                   <Users className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
-                  <p className="text-lg font-medium">No trainers yet</p>
-                  <p className="text-muted-foreground">Trainers will appear here once approved</p>
+                  <p className="text-lg font-medium">{isAr ? 'مفيش مدربين لسه' : 'No trainers yet'}</p>
+                  <p className="text-muted-foreground">{isAr ? 'المدربين هيظهروا هنا بعد الموافقة' : 'Trainers will appear here once approved'}</p>
                 </div>
               ) : (
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead>Trainer</TableHead>
-                      <TableHead>Status</TableHead>
-                      <TableHead>Specializations</TableHead>
-                      <TableHead>Clients</TableHead>
-                      <TableHead>Rating</TableHead>
-                      <TableHead>Rate</TableHead>
+                      <TableHead>{isAr ? 'المدرب' : 'Trainer'}</TableHead>
+                      <TableHead>{isAr ? 'الحالة' : 'Status'}</TableHead>
+                      <TableHead>{isAr ? 'التخصصات' : 'Specializations'}</TableHead>
+                      <TableHead>{isAr ? 'العملاء' : 'Clients'}</TableHead>
+                      <TableHead>{isAr ? 'التقييم' : 'Rating'}</TableHead>
+                      <TableHead>{isAr ? 'السعر' : 'Rate'}</TableHead>
                       <TableHead className="w-[50px]"></TableHead>
                     </TableRow>
                   </TableHeader>
@@ -356,11 +359,11 @@ export default function TrainersPage() {
                               {trainer.rating.toFixed(1)}
                             </div>
                           ) : (
-                            <span className="text-muted-foreground">N/A</span>
+                            <span className="text-muted-foreground">{isAr ? 'غ/م' : 'N/A'}</span>
                           )}
                         </TableCell>
                         <TableCell>
-                          {trainer.hourlyRate ? `${trainer.hourlyRate} EGP/hr` : 'N/A'}
+                          {trainer.hourlyRate ? `${trainer.hourlyRate} ${isAr ? 'ج.م/ساعة' : 'EGP/hr'}` : (isAr ? 'غ/م' : 'N/A')}
                         </TableCell>
                         <TableCell>
                           <DropdownMenu>
@@ -374,24 +377,24 @@ export default function TrainersPage() {
                                 <>
                                   <DropdownMenuItem onClick={() => handleApprove(trainer.id)}>
                                     <CheckCircle className="mr-2 h-4 w-4" />
-                                    Approve
+                                    {isAr ? 'قبول' : 'Approve'}
                                   </DropdownMenuItem>
                                   <DropdownMenuItem onClick={() => handleReject(trainer.id)}>
                                     <XCircle className="mr-2 h-4 w-4" />
-                                    Reject
+                                    {isAr ? 'رفض' : 'Reject'}
                                   </DropdownMenuItem>
                                 </>
                               )}
                               {trainer.status === 'APPROVED' && (
                                 <DropdownMenuItem onClick={() => handleReject(trainer.id)}>
                                   <XCircle className="mr-2 h-4 w-4" />
-                                  Revoke Approval
+                                  {isAr ? 'سحب الموافقة' : 'Revoke Approval'}
                                 </DropdownMenuItem>
                               )}
                               {trainer.status === 'REJECTED' && (
                                 <DropdownMenuItem onClick={() => handleApprove(trainer.id)}>
                                   <CheckCircle className="mr-2 h-4 w-4" />
-                                  Approve
+                                  {isAr ? 'قبول' : 'Approve'}
                                 </DropdownMenuItem>
                               )}
                             </DropdownMenuContent>

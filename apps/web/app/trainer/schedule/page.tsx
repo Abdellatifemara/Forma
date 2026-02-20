@@ -42,8 +42,9 @@ import {
 } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { getAuthCookie } from '@/lib/api';
+import { useLanguage } from '@/lib/i18n';
 
-const DAYS = [
+const DAYS_EN = [
   { value: 0, label: 'Sunday', short: 'Sun' },
   { value: 1, label: 'Monday', short: 'Mon' },
   { value: 2, label: 'Tuesday', short: 'Tue' },
@@ -51,6 +52,16 @@ const DAYS = [
   { value: 4, label: 'Thursday', short: 'Thu' },
   { value: 5, label: 'Friday', short: 'Fri' },
   { value: 6, label: 'Saturday', short: 'Sat' },
+];
+
+const DAYS_AR = [
+  { value: 0, label: 'الأحد', short: 'أحد' },
+  { value: 1, label: 'الاثنين', short: 'اثنين' },
+  { value: 2, label: 'الثلاثاء', short: 'ثلاثاء' },
+  { value: 3, label: 'الأربعاء', short: 'أربعاء' },
+  { value: 4, label: 'الخميس', short: 'خميس' },
+  { value: 5, label: 'الجمعة', short: 'جمعة' },
+  { value: 6, label: 'السبت', short: 'سبت' },
 ];
 
 const TIMES = Array.from({ length: 48 }, (_, i) => {
@@ -87,6 +98,9 @@ interface ScheduledCall {
 
 export default function SchedulePage() {
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+
   const [currentWeek, setCurrentWeek] = useState(0);
   const [view, setView] = useState<'week' | 'day'>('week');
   const [availabilityOpen, setAvailabilityOpen] = useState(false);
@@ -97,6 +111,8 @@ export default function SchedulePage() {
   const [saving, setSaving] = useState(false);
 
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
+  const DAYS = isAr ? DAYS_AR : DAYS_EN;
+  const locale = isAr ? 'ar-EG' : 'en-US';
 
   useEffect(() => {
     fetchData();
@@ -165,13 +181,20 @@ export default function SchedulePage() {
       });
 
       if (res.ok) {
-        toast({ title: 'Saved', description: 'Your availability has been updated.' });
+        toast({
+          title: isAr ? 'محفوظ' : 'Saved',
+          description: isAr ? 'تم تحديث مواعيدك' : 'Your availability has been updated.',
+        });
         setAvailabilityOpen(false);
       } else {
         throw new Error('Failed to save');
       }
     } catch (error) {
-      toast({ title: 'Error', description: 'Failed to save availability.', variant: 'destructive' });
+      toast({
+        title: isAr ? 'خطأ' : 'Error',
+        description: isAr ? 'فشل حفظ المواعيد' : 'Failed to save availability.',
+        variant: 'destructive',
+      });
     } finally {
       setSaving(false);
     }
@@ -190,11 +213,18 @@ export default function SchedulePage() {
       });
 
       if (res.ok) {
-        toast({ title: 'Confirmed', description: 'Call has been confirmed.' });
+        toast({
+          title: isAr ? 'مؤكد' : 'Confirmed',
+          description: isAr ? 'تم تأكيد المكالمة' : 'Call has been confirmed.',
+        });
         fetchData();
       }
     } catch (error) {
-      toast({ title: 'Error', description: 'Failed to confirm call.', variant: 'destructive' });
+      toast({
+        title: isAr ? 'خطأ' : 'Error',
+        description: isAr ? 'فشل تأكيد المكالمة' : 'Failed to confirm call.',
+        variant: 'destructive',
+      });
     }
   };
 
@@ -219,11 +249,22 @@ export default function SchedulePage() {
     const startOfWeek = new Date(today);
     startOfWeek.setDate(today.getDate() - today.getDay() + (currentWeek * 7));
 
-    return DAYS.map((_, i) => {
+    return DAYS_EN.map((_, i) => {
       const date = new Date(startOfWeek);
       date.setDate(startOfWeek.getDate() + i);
       return date;
     });
+  };
+
+  const formatHour = (hour: number): string => {
+    if (isAr) {
+      const date = new Date();
+      date.setHours(hour, 0, 0, 0);
+      return date.toLocaleTimeString('ar-EG', { hour: 'numeric', hour12: true });
+    }
+    if (hour > 12) return `${hour - 12} PM`;
+    if (hour === 12) return '12 PM';
+    return `${hour} AM`;
   };
 
   const weekDates = getWeekDates();
@@ -242,21 +283,25 @@ export default function SchedulePage() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Schedule</h1>
-          <p className="text-muted-foreground">Manage your client sessions</p>
+          <h1 className="text-3xl font-bold">{isAr ? 'الجدول' : 'Schedule'}</h1>
+          <p className="text-muted-foreground">
+            {isAr ? 'إدارة جلسات عملاءك' : 'Manage your client sessions'}
+          </p>
         </div>
         <Dialog open={availabilityOpen} onOpenChange={setAvailabilityOpen}>
           <DialogTrigger asChild>
             <Button variant="outline">
               <Settings className="mr-2 h-4 w-4" />
-              Set Availability
+              {isAr ? 'تحديد المواعيد' : 'Set Availability'}
             </Button>
           </DialogTrigger>
           <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
             <DialogHeader>
-              <DialogTitle>Set Your Availability</DialogTitle>
+              <DialogTitle>{isAr ? 'حدد مواعيدك المتاحة' : 'Set Your Availability'}</DialogTitle>
               <DialogDescription>
-                Define when clients can book video calls with you.
+                {isAr
+                  ? 'حدد الأوقات اللي العملاء يقدروا يحجزوا فيها مكالمات'
+                  : 'Define when clients can book video calls with you.'}
               </DialogDescription>
             </DialogHeader>
 
@@ -264,8 +309,10 @@ export default function SchedulePage() {
               {slots.length === 0 ? (
                 <div className="text-center py-8 text-muted-foreground">
                   <Clock className="h-12 w-12 mx-auto mb-4 opacity-50" />
-                  <p>No availability set</p>
-                  <p className="text-sm">Add time slots to let clients book calls</p>
+                  <p>{isAr ? 'مفيش مواعيد محددة' : 'No availability set'}</p>
+                  <p className="text-sm">
+                    {isAr ? 'أضف أوقات عشان العملاء يقدروا يحجزوا' : 'Add time slots to let clients book calls'}
+                  </p>
                 </div>
               ) : (
                 <div className="space-y-3">
@@ -301,7 +348,9 @@ export default function SchedulePage() {
                         </SelectContent>
                       </Select>
 
-                      <span className="text-muted-foreground text-sm">to</span>
+                      <span className="text-muted-foreground text-sm">
+                        {isAr ? 'إلى' : 'to'}
+                      </span>
 
                       <Select
                         value={slot.endTime}
@@ -325,10 +374,10 @@ export default function SchedulePage() {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="15">15 min</SelectItem>
-                          <SelectItem value="30">30 min</SelectItem>
-                          <SelectItem value="45">45 min</SelectItem>
-                          <SelectItem value="60">60 min</SelectItem>
+                          <SelectItem value="15">{isAr ? '15 دقيقة' : '15 min'}</SelectItem>
+                          <SelectItem value="30">{isAr ? '30 دقيقة' : '30 min'}</SelectItem>
+                          <SelectItem value="45">{isAr ? '45 دقيقة' : '45 min'}</SelectItem>
+                          <SelectItem value="60">{isAr ? '60 دقيقة' : '60 min'}</SelectItem>
                         </SelectContent>
                       </Select>
 
@@ -347,16 +396,16 @@ export default function SchedulePage() {
 
               <Button variant="outline" onClick={addSlot} className="w-full">
                 <Plus className="h-4 w-4 mr-2" />
-                Add Time Slot
+                {isAr ? 'أضف وقت' : 'Add Time Slot'}
               </Button>
 
               <div className="flex justify-end gap-2 pt-4 border-t">
                 <Button variant="outline" onClick={() => setAvailabilityOpen(false)}>
-                  Cancel
+                  {isAr ? 'إلغاء' : 'Cancel'}
                 </Button>
                 <Button onClick={saveAvailability} disabled={saving}>
                   {saving ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : <Save className="h-4 w-4 mr-2" />}
-                  Save Changes
+                  {isAr ? 'حفظ التغييرات' : 'Save Changes'}
                 </Button>
               </div>
             </div>
@@ -373,14 +422,16 @@ export default function SchedulePage() {
                 <ChevronLeft className="h-4 w-4" />
               </Button>
               <CardTitle>
-                {weekDates[0].toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} - {weekDates[6].toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                {weekDates[0].toLocaleDateString(locale, { month: 'short', day: 'numeric' })}
+                {' - '}
+                {weekDates[6].toLocaleDateString(locale, { month: 'short', day: 'numeric', year: 'numeric' })}
               </CardTitle>
               <Button variant="ghost" size="icon" onClick={() => setCurrentWeek(currentWeek + 1)}>
                 <ChevronRight className="h-4 w-4" />
               </Button>
             </div>
             <Button variant="ghost" size="sm" onClick={() => setCurrentWeek(0)}>
-              Today
+              {isAr ? 'النهاردة' : 'Today'}
             </Button>
           </CardHeader>
           <CardContent>
@@ -408,7 +459,7 @@ export default function SchedulePage() {
                   {hours.map((hour) => (
                     <div key={hour} className="grid grid-cols-8 border-b">
                       <div className="p-2 text-right text-sm text-muted-foreground">
-                        {hour > 12 ? `${hour - 12} PM` : hour === 12 ? '12 PM' : `${hour} AM`}
+                        {formatHour(hour)}
                       </div>
                       {DAYS.map((_, dayIndex) => {
                         const date = weekDates[dayIndex];
@@ -444,7 +495,12 @@ export default function SchedulePage() {
                                   {getSessionIcon(call.type)}
                                   <span className="truncate font-medium">{call.client.name}</span>
                                 </div>
-                                <span>{new Date(call.scheduledAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+                                <span>
+                                  {new Date(call.scheduledAt).toLocaleTimeString(locale, {
+                                    hour: '2-digit',
+                                    minute: '2-digit',
+                                  })}
+                                </span>
                               </div>
                             ))}
                           </div>
@@ -463,12 +519,18 @@ export default function SchedulePage() {
           {/* Today's Sessions */}
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-base font-semibold">Today</CardTitle>
-              <CardDescription>{new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}</CardDescription>
+              <CardTitle className="text-base font-semibold">
+                {isAr ? 'النهاردة' : 'Today'}
+              </CardTitle>
+              <CardDescription>
+                {new Date().toLocaleDateString(locale, { weekday: 'long', month: 'long', day: 'numeric' })}
+              </CardDescription>
             </CardHeader>
             <CardContent>
               {todaysCalls.length === 0 ? (
-                <p className="text-sm text-muted-foreground text-center py-4">No calls scheduled today</p>
+                <p className="text-sm text-muted-foreground text-center py-4">
+                  {isAr ? 'مفيش مكالمات النهاردة' : 'No calls scheduled today'}
+                </p>
               ) : (
                 <div className="space-y-3">
                   {todaysCalls.map((call) => (
@@ -482,7 +544,10 @@ export default function SchedulePage() {
                         <p className="text-xs text-muted-foreground">{call.type.replace('_', ' ')}</p>
                       </div>
                       <Badge variant={call.status === 'CONFIRMED' ? 'default' : 'outline'}>
-                        {new Date(call.scheduledAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                        {new Date(call.scheduledAt).toLocaleTimeString(locale, {
+                          hour: '2-digit',
+                          minute: '2-digit',
+                        })}
                       </Badge>
                     </div>
                   ))}
@@ -494,11 +559,15 @@ export default function SchedulePage() {
           {/* Availability Summary */}
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-base font-semibold">Your Availability</CardTitle>
+              <CardTitle className="text-base font-semibold">
+                {isAr ? 'مواعيدك المتاحة' : 'Your Availability'}
+              </CardTitle>
             </CardHeader>
             <CardContent>
               {slots.length === 0 ? (
-                <p className="text-sm text-muted-foreground">No availability set</p>
+                <p className="text-sm text-muted-foreground">
+                  {isAr ? 'مفيش مواعيد محددة' : 'No availability set'}
+                </p>
               ) : (
                 <div className="space-y-1 text-sm">
                   {DAYS.map((day) => {
@@ -509,7 +578,7 @@ export default function SchedulePage() {
                         <span className="text-muted-foreground">
                           {daySlots.length > 0
                             ? daySlots.map((s) => `${s.startTime}-${s.endTime}`).join(', ')
-                            : 'Off'}
+                            : isAr ? 'إجازة' : 'Off'}
                         </span>
                       </div>
                     );
@@ -522,7 +591,7 @@ export default function SchedulePage() {
                 size="sm"
                 onClick={() => setAvailabilityOpen(true)}
               >
-                Edit Availability
+                {isAr ? 'تعديل المواعيد' : 'Edit Availability'}
               </Button>
             </CardContent>
           </Card>
@@ -530,17 +599,21 @@ export default function SchedulePage() {
           {/* Legend */}
           <Card>
             <CardHeader className="pb-2">
-              <CardTitle className="text-base font-semibold">Status</CardTitle>
+              <CardTitle className="text-base font-semibold">
+                {isAr ? 'الحالة' : 'Status'}
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full bg-forma-teal" />
-                  <span className="text-sm">Confirmed</span>
+                  <span className="text-sm">{isAr ? 'مؤكد' : 'Confirmed'}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full bg-yellow-500" />
-                  <span className="text-sm">Pending (click to confirm)</span>
+                  <span className="text-sm">
+                    {isAr ? 'معلق (اضغط للتأكيد)' : 'Pending (click to confirm)'}
+                  </span>
                 </div>
               </div>
             </CardContent>

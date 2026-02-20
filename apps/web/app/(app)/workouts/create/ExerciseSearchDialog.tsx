@@ -12,6 +12,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import { useLanguage } from '@/lib/i18n';
 
 interface ExerciseSearchDialogProps {
   onAddExercise: (exercise: Exercise) => void;
@@ -19,6 +20,8 @@ interface ExerciseSearchDialogProps {
 }
 
 export function ExerciseSearchDialog({ onAddExercise, children }: ExerciseSearchDialogProps) {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<Exercise[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -59,30 +62,30 @@ export function ExerciseSearchDialog({ onAddExercise, children }: ExerciseSearch
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Add Exercise</DialogTitle>
+          <DialogTitle>{isAr ? 'إضافة تمرين' : 'Add Exercise'}</DialogTitle>
         </DialogHeader>
         <div className="relative">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
-            placeholder="Search exercises..."
+            placeholder={isAr ? 'ابحث عن تمارين...' : 'Search exercises...'}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="pl-9"
           />
         </div>
         <div className="mt-4 max-h-[400px] overflow-y-auto space-y-2">
-          {isLoading && <p>Loading...</p>}
+          {isLoading && <p>{isAr ? 'جاري التحميل...' : 'Loading...'}</p>}
           {searchResults && searchResults.length > 0 && searchResults.map(ex => (
             <div key={ex.id} className="flex items-center justify-between rounded-md border p-2">
               <div>
-                <p className="font-semibold">{ex.nameEn || ex.name}</p>
+                <p className="font-semibold">{isAr ? (ex.nameAr || ex.nameEn || ex.name) : (ex.nameEn || ex.name)}</p>
                 <p className="text-sm text-muted-foreground">{ex.primaryMuscle || ex.muscleGroup}</p>
               </div>
-              <Button size="sm" onClick={() => handleAdd(ex)}>Add</Button>
+              <Button size="sm" onClick={() => handleAdd(ex)}>{isAr ? 'أضف' : 'Add'}</Button>
             </div>
           ))}
           {!isLoading && searchQuery.length > 1 && (!searchResults || searchResults.length === 0) && (
-            <p className="text-center text-muted-foreground">No results found.</p>
+            <p className="text-center text-muted-foreground">{isAr ? 'مفيش نتائج.' : 'No results found.'}</p>
           )}
         </div>
       </DialogContent>

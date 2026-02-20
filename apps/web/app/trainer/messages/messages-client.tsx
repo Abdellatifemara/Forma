@@ -51,9 +51,10 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/lib/i18n';
 import Link from 'next/link';
 
-function formatTime(dateString: string) {
+function formatTime(dateString: string, isAr = false) {
   const date = new Date(dateString);
   const now = new Date();
   const diffMs = now.getTime() - date.getTime();
@@ -61,13 +62,13 @@ function formatTime(dateString: string) {
   const diffHours = Math.floor(diffMins / 60);
   const diffDays = Math.floor(diffHours / 24);
 
-  if (diffMins < 1) return 'Just now';
-  if (diffMins < 60) return `${diffMins}m ago`;
-  if (diffHours < 24) return `${diffHours}h ago`;
-  if (diffDays === 1) return 'Yesterday';
-  if (diffDays < 7) return `${diffDays}d ago`;
+  if (diffMins < 1) return isAr ? 'دلوقتي' : 'Just now';
+  if (diffMins < 60) return isAr ? `${diffMins}د` : `${diffMins}m ago`;
+  if (diffHours < 24) return isAr ? `${diffHours}س` : `${diffHours}h ago`;
+  if (diffDays === 1) return isAr ? 'امبارح' : 'Yesterday';
+  if (diffDays < 7) return isAr ? `${diffDays}ي` : `${diffDays}d ago`;
 
-  return date.toLocaleDateString();
+  return date.toLocaleDateString(isAr ? 'ar-EG' : undefined);
 }
 
 function formatMessageTime(dateString: string) {
@@ -79,6 +80,8 @@ function MessagesPageContent() {
   const searchParams = useSearchParams();
   const clientIdParam = searchParams.get('client');
   const { toast } = useToast();
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
 
   const [selectedConversationId, setSelectedConversationId] = useState<string | null>(null);
   const [newMessage, setNewMessage] = useState('');
@@ -288,21 +291,21 @@ function MessagesPageContent() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Messages</h1>
-          <p className="text-muted-foreground">Chat with your clients</p>
+          <h1 className="text-3xl font-bold">{isAr ? 'الرسائل' : 'Messages'}</h1>
+          <p className="text-muted-foreground">{isAr ? 'اتكلم مع عملائك' : 'Chat with your clients'}</p>
         </div>
         <Dialog open={showNewChatDialog} onOpenChange={setShowNewChatDialog}>
           <DialogTrigger asChild>
             <Button className="btn-primary">
-              <Plus className="mr-2 h-4 w-4" />
-              New Chat
+              <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+              {isAr ? 'محادثة جديدة' : 'New Chat'}
             </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>Start New Conversation</DialogTitle>
+              <DialogTitle>{isAr ? 'ابدأ محادثة جديدة' : 'Start New Conversation'}</DialogTitle>
               <DialogDescription className="sr-only">
-                Select a client to start a new conversation
+                {isAr ? 'اختار عميل عشان تبدأ محادثة جديدة' : 'Select a client to start a new conversation'}
               </DialogDescription>
             </DialogHeader>
             <div className="max-h-[400px] overflow-y-auto">
@@ -313,9 +316,9 @@ function MessagesPageContent() {
               ) : clients.length === 0 ? (
                 <div className="text-center py-8">
                   <UserPlus className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-                  <p className="text-muted-foreground">No clients yet</p>
+                  <p className="text-muted-foreground">{isAr ? 'مفيش عملاء لسه' : 'No clients yet'}</p>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Invite clients to start messaging them
+                    {isAr ? 'ادعي عملاء عشان تبدأ تراسلهم' : 'Invite clients to start messaging them'}
                   </p>
                 </div>
               ) : (
@@ -360,12 +363,12 @@ function MessagesPageContent() {
                             {client.client.firstName} {client.client.lastName}
                           </p>
                           <p className="text-sm text-muted-foreground truncate">
-                            {client.currentProgram?.name || 'No program assigned'}
+                            {client.currentProgram?.name || (isAr ? 'مفيش برنامج' : 'No program assigned')}
                           </p>
                         </div>
                         {hasConversation ? (
                           <Badge variant="secondary" className="text-xs">
-                            Active
+                            {isAr ? 'نشط' : 'Active'}
                           </Badge>
                         ) : (
                           <MessageSquare className="h-5 w-5 text-muted-foreground" />
@@ -388,7 +391,7 @@ function MessagesPageContent() {
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
-                  placeholder="Search conversations..."
+                  placeholder={isAr ? 'ابحث عن محادثات...' : 'Search conversations...'}
                   className="pl-10 bg-muted/50 border-border/50"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
@@ -404,15 +407,15 @@ function MessagesPageContent() {
               ) : filteredConversations.length === 0 ? (
                 <div className="p-8 text-center">
                   <MessageSquare className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-                  <p className="text-muted-foreground mb-2">No conversations yet</p>
+                  <p className="text-muted-foreground mb-2">{isAr ? 'مفيش محادثات لسه' : 'No conversations yet'}</p>
                   {clients.length > 0 && (
                     <Button
                       variant="outline"
                       size="sm"
                       onClick={() => setShowNewChatDialog(true)}
                     >
-                      <Plus className="mr-2 h-4 w-4" />
-                      Start a Chat
+                      <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                      {isAr ? 'ابدأ محادثة' : 'Start a Chat'}
                     </Button>
                   )}
                 </div>
@@ -448,13 +451,13 @@ function MessagesPageContent() {
                           <p className="font-semibold truncate">{conv.participant?.name || 'Unknown'}</p>
                           {conv.lastMessage && (
                             <span className="text-xs text-muted-foreground">
-                              {formatTime(conv.lastMessage.createdAt)}
+                              {formatTime(conv.lastMessage.createdAt, isAr)}
                             </span>
                           )}
                         </div>
                         <p className="truncate text-sm text-muted-foreground">
-                          {conv.lastMessage?.isMine && <span className="text-primary">You: </span>}
-                          {conv.lastMessage?.content || 'No messages yet'}
+                          {conv.lastMessage?.isMine && <span className="text-primary">{isAr ? 'أنت: ' : 'You: '}</span>}
+                          {conv.lastMessage?.content || (isAr ? 'مفيش رسائل' : 'No messages yet')}
                         </p>
                       </div>
                       {conv.unreadCount > 0 && (
@@ -492,10 +495,10 @@ function MessagesPageContent() {
                       {selectedConversation.participant?.isOnline ? (
                         <span className="flex items-center gap-1">
                           <span className="h-2 w-2 rounded-full bg-green-500" />
-                          Online
+                          {isAr ? 'متصل' : 'Online'}
                         </span>
                       ) : (
-                        'Offline'
+                        isAr ? 'غير متصل' : 'Offline'
                       )}
                     </p>
                   </div>
@@ -505,7 +508,7 @@ function MessagesPageContent() {
                     variant="ghost"
                     size="icon"
                     className="hover:bg-primary/10"
-                    onClick={() => toast({ title: 'Coming Soon', description: 'Voice calls will be available soon' })}
+                    onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'المكالمات الصوتية هتكون متاحة قريباً' : 'Voice calls will be available soon' })}
                   >
                     <Phone className="h-5 w-5" />
                   </Button>
@@ -513,7 +516,7 @@ function MessagesPageContent() {
                     variant="ghost"
                     size="icon"
                     className="hover:bg-primary/10"
-                    onClick={() => toast({ title: 'Coming Soon', description: 'Video calls will be available soon' })}
+                    onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'مكالمات الفيديو هتكون متاحة قريباً' : 'Video calls will be available soon' })}
                   >
                     <Video className="h-5 w-5" />
                   </Button>
@@ -526,24 +529,24 @@ function MessagesPageContent() {
                     <DropdownMenuContent align="end">
                       <DropdownMenuItem asChild>
                         <Link href={`/trainer/clients/${selectedConversation.participant?.id}`}>
-                          <User className="mr-2 h-4 w-4" />
-                          View Profile
+                          <User className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                          {isAr ? 'عرض الملف' : 'View Profile'}
                         </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
                         <Link href={`/trainer/programs?client=${selectedConversation.participant?.id}`}>
-                          View Program
+                          {isAr ? 'عرض البرنامج' : 'View Program'}
                         </Link>
                       </DropdownMenuItem>
-                      <DropdownMenuItem onClick={() => toast({ title: 'Coming Soon', description: 'Session scheduling will be available soon' })}>
-                        Schedule Session
+                      <DropdownMenuItem onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'جدولة الجلسات هتكون متاحة قريباً' : 'Session scheduling will be available soon' })}>
+                        {isAr ? 'جدولة جلسة' : 'Schedule Session'}
                       </DropdownMenuItem>
                       <DropdownMenuSeparator />
                       <DropdownMenuItem
                         className="text-destructive"
-                        onClick={() => toast({ title: 'Coming Soon', description: 'Client blocking will be available soon' })}
+                        onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'حظر العملاء هتكون متاحة قريباً' : 'Client blocking will be available soon' })}
                       >
-                        Block Client
+                        {isAr ? 'حظر العميل' : 'Block Client'}
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
@@ -561,9 +564,9 @@ function MessagesPageContent() {
                     <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                       <MessageSquare className="h-8 w-8 text-primary" />
                     </div>
-                    <p className="font-semibold mb-2">No messages yet</p>
+                    <p className="font-semibold mb-2">{isAr ? 'مفيش رسائل' : 'No messages yet'}</p>
                     <p className="text-sm text-muted-foreground">
-                      Start the conversation by sending a message
+                      {isAr ? 'ابدأ المحادثة بإرسال رسالة' : 'Start the conversation by sending a message'}
                     </p>
                   </div>
                 ) : (
@@ -571,7 +574,7 @@ function MessagesPageContent() {
                     {hasNextPage && (
                       <div className="text-center">
                         <Button variant="ghost" size="sm" onClick={() => fetchNextPage()} className="text-primary">
-                          Load older messages
+                          {isAr ? 'تحميل رسائل أقدم' : 'Load older messages'}
                         </Button>
                       </div>
                     )}
@@ -595,7 +598,7 @@ function MessagesPageContent() {
                     disabled={mediaLoading}
                   />
                   <Input
-                    placeholder="Type a message..."
+                    placeholder={isAr ? 'اكتب رسالة...' : 'Type a message...'}
                     value={newMessage}
                     onChange={(e) => setNewMessage(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && handleSend()}
@@ -621,9 +624,9 @@ function MessagesPageContent() {
               <div className="w-20 h-20 rounded-full bg-muted/50 flex items-center justify-center mb-4">
                 <MessageSquare className="h-10 w-10 text-muted-foreground" />
               </div>
-              <p className="font-semibold text-lg mb-2">Select a conversation</p>
+              <p className="font-semibold text-lg mb-2">{isAr ? 'اختار محادثة' : 'Select a conversation'}</p>
               <p className="text-muted-foreground">
-                Choose a client from the list to start messaging
+                {isAr ? 'اختار عميل من القائمة عشان تبدأ مراسلة' : 'Choose a client from the list to start messaging'}
               </p>
             </div>
           )}

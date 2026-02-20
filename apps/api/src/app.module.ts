@@ -33,6 +33,8 @@ import { ResearchModule } from './modules/research/research.module';
 import { HealthMetricsModule } from './modules/health-metrics/health-metrics.module';
 import { CheckInsModule } from './modules/check-ins/check-ins.module';
 import { ScheduledCallsModule } from './modules/scheduled-calls/scheduled-calls.module';
+import { EmailModule } from './modules/email/email.module';
+import { ErrorReportingModule } from './modules/error-reporting/error-reporting.module';
 
 @Module({
   imports: [
@@ -64,6 +66,7 @@ import { ScheduledCallsModule } from './modules/scheduled-calls/scheduled-calls.
     // Core
     PrismaModule,
     HealthModule,
+    EmailModule,
 
     // All feature modules
     AuthModule,
@@ -96,6 +99,7 @@ import { ScheduledCallsModule } from './modules/scheduled-calls/scheduled-calls.
     HealthMetricsModule,
     CheckInsModule,
     ScheduledCallsModule,
+    ErrorReportingModule,
   ],
 })
 export class AppModule {}

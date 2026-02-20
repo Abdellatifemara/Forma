@@ -6,12 +6,14 @@ FitApp is an AI-powered fitness and nutrition platform built for the Egyptian ma
 
 ## Core Concept
 
-Unlike global fitness apps with Western food databases, FitApp offers:
+Unlike global fitness apps with Western food databases, Forma offers:
 - **Egyptian-first nutrition database** with local ingredients and cuisines
 - **Equipment-adaptive workouts** from bodyweight to full gym
 - **Trainer marketplace** connecting verified coaches with premium clients
 - **Offline-first architecture** with all core data stored locally
-- **Health integration** with visual graphs trainers can view
+- **Advanced health dashboard** — Whoop-style recovery score, Apple Watch-style activity rings, OURA-style sleep analysis, Garmin-style Body Battery, all in one app
+- **Wearable integration** — Apple Watch, Whoop, OURA Ring, Garmin, Fitbit, Apple Health, Google Fit, Samsung Health
+- **Smart guided AI chat** — state machine with 170+ guided paths for Premium; full GPT conversation for Premium+
 
 ## Registration Requirement
 
@@ -27,10 +29,9 @@ At signup, user chooses:
 
 | Type | Description |
 |------|-------------|
-| **Client (Free)** | Access to food database, exercises, self-guided workouts, tracking |
 | **Client (Free Trial)** | 7 days of Premium features for new users |
-| **Client (Premium)** | Everything free + trainer marketplace + warmups + limited AI usage |
-| **Client (Premium+)** | Everything Premium + unlimited AI + all add-ons (Kegel, Yoga, etc.) |
+| **Client (Premium — 299 LE/mo)** | Guided AI chat, health dashboard, wearable integration, trainer marketplace, workout programs |
+| **Client (Premium+ — 999 LE/mo)** | Everything Premium + free GPT chat, owner-reviewed programs, Whoop-style tables, InBody analysis, priority everything |
 | **Trainer (Standard)** | Verified fitness professional, pays 15% platform fee, gets FREE Premium |
 | **Trainer (Partner)** | Famous/invited trainer, 5% fee only, can gift Premium to clients |
 | **Admin** | Platform staff who verify trainers, handle disputes, manage platform |
@@ -42,54 +43,45 @@ At signup, user chooses:
 
 ## Subscription Tiers
 
-### Free Tier
-- Access to food & exercise database
-- Basic meal & workout logging
-- Limited history (7 days)
-- No AI features
-- Ads displayed
+**NO FREE TIER** — Forma is premium-only. Not available for free to the public.
 
 ### Free Trial (7 Days)
 - All Premium features
 - Available to new users only
-- Auto-converts to Free after trial
+- Locks out after trial ends (must subscribe)
 - One-time only
 
-### Premium
-- Trainer marketplace access (can hire trainers)
-- **Automatic warmups** (specific to today's muscle, can disable)
-- **Limited AI usage** (equipment change, meal suggestions, etc.)
-- Advanced analytics & graphs
-- Unlimited history
-- Ad-free experience
-- Health app sync with visual graphs
-- Priority support
+### Premium (299 LE/month)
+- **Guided AI Chat** — 170+ state machine paths, button-based, no typing needed, instant responses
+- Supplements recommendations embedded in nutrition page
+- Healthy food book/guide with ingredient sourcing
+- AI chat performs actions (create workout drafts, log meals, search exercises)
+- Preset workout programs library
+- Full exercise & food database
+- **Health Dashboard** — Whoop-style recovery score, sleep analysis, HRV, strain tracking
+- **Wearable Integration** — Apple Watch, Whoop, OURA, Garmin, Fitbit, Apple Health, Google Fit, Samsung Health
+- Body composition & InBody analysis
+- Blood work & lab tracking
+- Trainer marketplace access
+- Unlimited history, ad-free
 
-### Premium+ (The Ultimate Experience)
+### Premium+ (999 LE/month) — The LUXURY Experience
 
 **Your body. Your goals. Zero limits.**
 
-- **Unlimited AI Power** - Change your workout anytime, generate meals on demand, no restrictions
-- **Weak Spot Targeting** - Tell us your weak areas, we'll build you stronger (asked during onboarding)
-- **Complete Add-on Library:**
-  - Kegel & Pelvic Power - Core strength from the inside out
-  - Yoga & Flow Sessions - Flexibility meets inner peace
-  - Post-Workout Recovery - Cool down like a pro
-  - Mobility Mastery - Move better, feel younger
-  - Recovery Protocols - Bounce back faster
-  - Guided Meditation - Clear mind, strong body
-  - Breathwork Training - Oxygen is power
-  - Posture Perfection - Stand tall, look confident
-  - Self-Massage & Foam Rolling - Your personal recovery toolkit
-  - Balance & Coordination - Athletic precision
-  - Sport-Specific Training - Train like an athlete
-- **Lifetime Data** - Your entire fitness journey, forever
-- **Exclusive Programs** - Workouts you won't find anywhere else
-- **Early Access** - Be the first to try new features
-- **Priority Everything** - Trainer matching, support, you come first
-- **Multiple Trainers** - Nutrition coach + workout coach together
-- **Export Your Data** - It's yours, take it anywhere
-- **Premium+ Badge** - Show the world you're serious
+- Everything in Premium, PLUS:
+- **Free AI Chat** — type ANYTHING, full GPT conversation with your complete fitness context
+- **Owner personally reviews** and sets your initial program
+- **Fast workout plan generation** with custom exercise additions
+- **Pre-workout & post-workout** personalized guidance
+- **Whoop-style health tables** & advanced analytics
+- **Walking tables** from health data
+- **InBody deep analysis** & statistics
+- **Complete Add-on Library:** Kegel, Yoga, Recovery Protocols, Mobility, Meditation, Breathwork, Posture, Foam Rolling, Balance, Sport-Specific
+- **Priority everything** — trainer matching, support, you come first
+- **Multiple trainers** — nutrition coach + workout coach together
+- **Export your data** — PDF health reports, full data export
+- **Premium+ badge** — show the world you're serious
 
 ---
 
@@ -179,14 +171,16 @@ Trainers personally invited by founders to grow the platform.
 
 1. **Localized Content** - Egyptian food, Arabic language, local payment methods
 2. **Trainer Marketplace** - Verified coaches with reviews and specializations
-3. **AI-Powered Simplicity** - Trainers get smart recommendations, prefilled forms
-4. **AI Day-by-Day Reveal** - AI generates full plan but reveals one day at a time (tomorrow = hint only: "Tomorrow: Shoulder")
-5. **Equipment Flexibility** - Works for home, gym, or no equipment
-6. **Offline Capable** - Core features work without internet
-7. **Health Graphs for Trainers** - Visual client data (steps, sleep, heart rate)
-8. **Fair Commission** - 15% for standard, 5% for partners
-9. **Partner Program** - Famous trainers get lower fees + gifting powers
-10. **Automatic Warmups** - Premium users get muscle-specific warmups before each workout
+3. **Advanced Health Dashboard** - Whoop-style recovery, Apple Watch-style rings, OURA-style sleep, Garmin-style Body Battery — all in one app
+4. **Universal Wearable Support** - Connect ANY watch/band: Apple Watch, Whoop, OURA Ring, Garmin, Fitbit, Samsung, Apple Health, Google Fit
+5. **Dual Chat System** - Premium gets guided AI with 170+ smart paths; Premium+ gets unlimited GPT conversation
+6. **AI-Powered Simplicity** - Trainers get smart recommendations, prefilled forms
+7. **AI Day-by-Day Reveal** - AI generates full plan but reveals one day at a time
+8. **Equipment Flexibility** - Works for home, gym, or no equipment
+9. **Offline Capable** - Core features work without internet
+10. **Health Graphs for Trainers** - Recovery score, sleep analysis, HRV, strain, body composition — visual client data
+11. **Fair Commission** - 15% for standard, 5% for partners
+12. **Partner Program** - Famous trainers get lower fees + gifting powers
 
 ---
 

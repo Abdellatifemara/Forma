@@ -96,8 +96,8 @@ export default function PrivacyPage() {
           <h2 className="text-2xl font-semibold mt-8 mb-4">9. Contact Us</h2>
           <p>
             If you have any questions about this Privacy Policy, please contact us at{' '}
-            <a href="mailto:support@forma.eg" className="text-forma-teal hover:underline">
-              support@forma.eg
+            <a href="mailto:support@formaeg.com" className="text-forma-teal hover:underline">
+              support@formaeg.com
             </a>
           </p>
         </section>
