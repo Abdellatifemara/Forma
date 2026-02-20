@@ -20,9 +20,11 @@
     "db:migrate": "prisma migrate dev",
     "db:migrate:prod": "prisma migrate deploy",
     "db:seed": "ts-node prisma/seed.ts",
-    "db:seed:foods": "ts-node prisma/seed-foods.ts",
-    "db:seed:demo": "ts-node prisma/seed-demo-user.ts",
-    "db:seed:mena": "ts-node prisma/seed-mena-foods.ts",
+    "db:seed:exercises": "ts-node prisma/seed-all-exercises.ts",
+    "db:seed:foods": "ts-node prisma/seed-all-foods.ts",
+    "db:seed:programs": "ts-node prisma/seed-professional-programs.ts",
+    "db:seed:accounts": "ts-node prisma/seed-test-accounts.ts",
+    "db:seed:all": "npm run db:seed:accounts && npm run db:seed:exercises && npm run db:seed:foods && npm run db:seed:programs",
     "db:studio": "prisma studio"
   },
   "dependencies": {

@@ -78,17 +78,17 @@ export function Sidebar({ type }: SidebarProps) {
   };
 
   return (
-    <aside className="fixed left-0 top-0 z-40 h-screen w-64 border-r border-border/50 bg-card/50 backdrop-blur-xl">
+    <aside className="fixed start-0 top-0 z-40 h-screen w-64 border-e border-border/50 bg-card/50 backdrop-blur-xl">
       <div className="flex h-full flex-col">
         {/* Logo */}
         <div className="flex h-16 items-center border-b border-border/50 px-6">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-500 flex items-center justify-center">
               <Dumbbell className="h-4 w-4 text-white" />
             </div>
             <span className="text-xl font-bold">Forma</span>
           </Link>
-          <span className="ml-2 rounded-full bg-primary/10 text-primary px-2 py-0.5 text-xs font-medium capitalize">
+          <span className="ms-2 rounded-full bg-primary/10 text-primary px-2 py-0.5 text-xs font-medium capitalize">
             {isAr ? (type === 'trainer' ? 'مدرب' : 'مدير') : type}
           </span>
         </div>

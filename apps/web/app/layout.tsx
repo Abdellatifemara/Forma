@@ -76,6 +76,16 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className={`${inter.variable} ${cairo.variable} font-sans antialiased`}>
+        <script dangerouslySetInnerHTML={{ __html: `
+          try {
+            var l = localStorage.getItem('forma-lang');
+            if (l === 'ar') {
+              document.documentElement.dir = 'rtl';
+              document.documentElement.lang = 'ar';
+              document.body.style.fontFamily = 'Cairo, sans-serif';
+            }
+          } catch(e) {}
+        `}} />
         <Providers>{children}</Providers>
       </body>
     </html>

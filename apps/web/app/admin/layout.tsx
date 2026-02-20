@@ -13,7 +13,7 @@ export default function AdminLayout({
     <RoleGuard allowedRoles={['ADMIN']} fallbackUrl="/dashboard">
       <div className="min-h-screen bg-background">
         <Sidebar type="admin" />
-        <div className="lg:pl-64">
+        <div className="lg:ps-64">
           <Header />
           <main className="p-6">{children}</main>
         </div>

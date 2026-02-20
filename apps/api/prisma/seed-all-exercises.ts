@@ -197,7 +197,9 @@ async function main() {
     'exercise', 'powerlifting', 'yoga', 'calisthenics', 'stretching',
     'crossfit', 'olympic', 'resistance-band', 'machine-cable', 'core-abs',
     'mobility-rehab', 'dumbbell-exercises', 'barbell-compound', 'sport-conditioning',
-    'seniors-beginners'
+    'seniors-beginners', 'sport-agility', 'kettlebell', 'boxing', 'martial-arts',
+    'swimming', 'rehab-physio', 'office-senior', 'band-trx', 'functional-mobility',
+    'home-bodyweight', 'gym-machine', 'drills'
   ];
 
   const jsonFiles = [

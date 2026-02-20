@@ -215,7 +215,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               >
                 <link.icon className="h-5 w-5" />
                 <span>{link.label}</span>
-                <ChevronRight className="ml-auto h-5 w-5 opacity-50" />
+                <ChevronRight className={cn("ms-auto h-5 w-5 opacity-50", isRTL && "rotate-180")} />
               </Link>
             ))}
 
@@ -272,7 +272,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       )}
 
       {/* Desktop Sidebar */}
-      <aside className="fixed left-0 top-16 hidden h-[calc(100vh-4rem)] w-64 border-r border-border/50 bg-background/50 backdrop-blur-sm lg:block">
+      <aside className="fixed start-0 top-16 hidden h-[calc(100vh-4rem)] w-64 border-e border-border/50 bg-background/50 backdrop-blur-sm lg:block">
         <div className="flex flex-col h-full p-4">
           <nav className="space-y-1 flex-1">
             {navLinks.map((link) => {
@@ -359,17 +359,17 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       </aside>
 
       {/* Main Content */}
-      <main className="pb-24 lg:pb-6 lg:pl-64">
+      <main className="pb-24 lg:pb-6 lg:ps-64">
         <div className="container py-6 max-w-5xl">
           {children}
         </div>
       </main>
 
       {/* Floating Action Button (Mobile) */}
-      <div className="fixed bottom-24 right-4 z-50 lg:hidden">
+      <div className={cn("fixed bottom-24 z-50 lg:hidden", isRTL ? "left-4" : "right-4")}>
         {/* Quick Action Menu */}
         {fabOpen && (
-          <div className="absolute bottom-16 right-0 flex flex-col gap-3 animate-fade-up">
+          <div className={cn("absolute bottom-16 flex flex-col gap-3 animate-fade-up", isRTL ? "left-0" : "right-0")}>
             {quickActions.map((action, index) => (
               <Link
                 key={action.label}

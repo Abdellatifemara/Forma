@@ -142,14 +142,68 @@ function generateWorkoutDays(program: ProfessionalProgram): { dayNumber: number;
 async function seedProfessionalPrograms() {
   console.log('\n🎓 SEEDING PROFESSIONAL PROGRAMS (NSCA/ACSM/NASM Standards)\n');
 
-  // Load program data
-  const dataPath = path.join(__dirname, 'seed-data', 'professional-programs.json');
-  if (!fs.existsSync(dataPath)) {
-    console.log('❌ professional-programs.json not found!');
-    return;
+  // Auto-discover all program JSON files
+  const seedDataDir = path.join(__dirname, 'seed-data');
+  const programFiles = fs.existsSync(seedDataDir)
+    ? fs.readdirSync(seedDataDir)
+        .filter(f => f.endsWith('.json') && (f.includes('program') || f.includes('workout-program')))
+        .sort()
+    : [];
+
+  console.log(`📂 Found ${programFiles.length} program JSON files\n`);
+
+  // Collect all programs from all files
+  const allPrograms: ProfessionalProgram[] = [];
+  const seenNames = new Set<string>();
+
+  for (const filename of programFiles) {
+    try {
+      const content = fs.readFileSync(path.join(seedDataDir, filename), 'utf-8');
+      const data = JSON.parse(content);
+
+      // Handle different formats
+      let programs: any[] = [];
+      if (Array.isArray(data)) {
+        programs = data;
+      } else if (data.professionalPrograms) {
+        programs = [...(data.professionalPrograms || []), ...(data.professionalAddons || [])];
+      } else if (data.programs) {
+        programs = data.programs;
+      }
+
+      let added = 0;
+      for (const p of programs) {
+        const nameEn = p.nameEn || p.name_en;
+        if (!nameEn || seenNames.has(nameEn.toLowerCase())) continue;
+        seenNames.add(nameEn.toLowerCase());
+
+        allPrograms.push({
+          id: p.id || `prog-${seenNames.size}`,
+          nameEn,
+          nameAr: p.nameAr || p.name_ar || nameEn,
+          slug: p.slug || nameEn.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+          descriptionEn: p.descriptionEn || p.description_en || '',
+          descriptionAr: p.descriptionAr || p.description_ar || '',
+          programType: p.programType || p.category || 'general',
+          category: (p.category || 'GENERAL_FITNESS').toUpperCase().replace(/-/g, '_'),
+          tier: p.tier || 'PREMIUM',
+          durationWeeks: p.durationWeeks || p.duration_weeks || 4,
+          daysPerWeek: p.daysPerWeek || p.days_per_week || 4,
+          sessionMinutes: p.sessionMinutes || p.session_minutes || 60,
+          difficulty: p.difficulty || 'intermediate',
+          goals: p.goals || p.tags || [],
+          equipmentNeeded: p.equipmentNeeded || p.equipment || ['gym'],
+          originalAuthor: p.originalAuthor || p.author || 'Forma',
+        });
+        added++;
+      }
+      console.log(`  ✅ ${filename}: ${added} programs`);
+    } catch (err: any) {
+      console.log(`  ⚠️ ${filename}: ${err.message}`);
+    }
   }
 
-  const data: ProgramData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+  console.log(`\n📊 Total unique programs: ${allPrograms.length}\n`);
 
   // Get the trainer profile
   const trainer = await prisma.user.findUnique({
@@ -168,8 +222,8 @@ async function seedProfessionalPrograms() {
   let created = 0;
   let skipped = 0;
 
-  // Seed professional programs
-  for (const program of data.professionalPrograms) {
+  // Seed all programs
+  for (const program of allPrograms) {
     // Check if already exists
     const existing = await prisma.trainerProgram.findFirst({
       where: {

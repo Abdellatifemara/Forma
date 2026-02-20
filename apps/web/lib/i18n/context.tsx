@@ -25,6 +25,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       setLangState(savedLang);
       document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
       document.documentElement.lang = savedLang;
+      document.body.style.fontFamily = savedLang === 'ar' ? 'Cairo, sans-serif' : '';
     }
   }, []);
 
@@ -33,6 +34,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('forma-lang', newLang);
     document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.lang = newLang;
+    document.body.style.fontFamily = newLang === 'ar' ? 'Cairo, sans-serif' : '';
   };
 
   const value: LanguageContextType = {
