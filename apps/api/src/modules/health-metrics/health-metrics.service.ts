@@ -38,6 +38,7 @@ export class HealthMetricsService {
 
   async getAll(userId: string, query: GetHealthMetricsQuery = {}) {
     const { type, startDate, endDate, limit = 100 } = query;
+    const safeTake = Math.min(limit, 500);
 
     return this.prisma.healthMetric.findMany({
       where: {
@@ -47,7 +48,7 @@ export class HealthMetricsService {
         ...(endDate && { date: { lte: endDate } }),
       },
       orderBy: { date: 'desc' },
-      take: limit,
+      take: safeTake,
     });
   }
 

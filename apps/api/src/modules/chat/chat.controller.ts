@@ -12,6 +12,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { ChatService } from './chat.service';
 import { CreateConversationDto } from './dto/create-conversation.dto';
 import { SendMessageDto } from './dto/send-message.dto';
+import { CursorPaginationDto } from '../../common/dto/pagination.dto';
 
 @Controller('chat')
 @UseGuards(JwtAuthGuard)
@@ -34,16 +35,16 @@ export class ChatController {
   @Get('conversations/:id/messages')
   async getMessages(
     @Param('id') conversationId: string,
-    @Query('cursor') cursor: string,
-    @Query('limit') limit: string,
+    @Query() query: CursorPaginationDto,
     @Request() req: { user: { id: string } },
   ) {
-    // Handle "undefined" string being passed as cursor
-    const validCursor = cursor && cursor !== 'undefined' && cursor !== 'null' ? cursor : undefined;
+    const validCursor = query.cursor && query.cursor !== 'undefined' && query.cursor !== 'null'
+      ? query.cursor
+      : undefined;
 
     return this.chatService.getMessages(req.user.id, conversationId, {
       cursor: validCursor,
-      limit: limit ? parseInt(limit, 10) : undefined,
+      limit: query.limit,
     });
   }
 

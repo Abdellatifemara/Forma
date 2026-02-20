@@ -81,8 +81,8 @@ export class BodyCompositionService {
    * Get body composition history
    */
   async getHistory(userId: string, params?: { days?: number; limit?: number }) {
-    const days = params?.days || 90;
-    const limit = params?.limit || 50;
+    const days = Math.min(params?.days || 90, 365);
+    const limit = Math.min(params?.limit || 50, 200);
 
     const startDate = new Date();
     startDate.setDate(startDate.getDate() - days);

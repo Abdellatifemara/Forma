@@ -163,7 +163,8 @@ export class AdminService {
   }
 
   async getExercises(options: { page: number; limit: number; search?: string }) {
-    const { page, limit, search } = options;
+    const { page, limit: rawLimit, search } = options;
+    const limit = Math.min(rawLimit, 200);
     const skip = (page - 1) * limit;
 
     const where: any = search
@@ -198,7 +199,8 @@ export class AdminService {
   }
 
   async getFoods(options: { page: number; limit: number; search?: string }) {
-    const { page, limit, search } = options;
+    const { page, limit: rawLimit, search } = options;
+    const limit = Math.min(rawLimit, 200);
     const skip = (page - 1) * limit;
 
     const where: any = search
@@ -299,7 +301,8 @@ export class AdminService {
     };
   }
 
-  async getRecentActivity(limit: number = 10) {
+  async getRecentActivity(rawLimit: number = 10) {
+    const limit = Math.min(rawLimit, 100);
     const activities: Array<{
       id: string;
       action: string;
@@ -464,7 +467,8 @@ export class AdminService {
   }
 
   async getUsers(options: { page: number; limit: number; query?: string }) {
-    const { page, limit, query } = options;
+    const { page, limit: rawLimit, query } = options;
+    const limit = Math.min(rawLimit, 200);
     const skip = (page - 1) * limit;
 
     const where = query
@@ -657,7 +661,8 @@ export class AdminService {
   }
 
   async getAllTrainers(options: { page: number; limit: number; status?: string }) {
-    const { page, limit, status } = options;
+    const { page, limit: rawLimit, status } = options;
+    const limit = Math.min(rawLimit, 200);
     const skip = (page - 1) * limit;
 
     const where: any = status && status !== 'all'

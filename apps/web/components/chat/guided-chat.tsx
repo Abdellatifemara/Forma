@@ -470,34 +470,20 @@ export default function GuidedChat() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Get current state
-  let currentState: ChatState | null = null;
-  try {
-    currentState = getState(currentStateId);
-  } catch {
-    currentState = getState(INITIAL_STATE);
-    setCurrentStateId(INITIAL_STATE);
-  }
+  const currentState: ChatState | null = (() => {
+    try {
+      return getState(currentStateId);
+    } catch {
+      return getState(INITIAL_STATE);
+    }
+  })();
 
-  // Add bot message on state change
+  // Reset to initial state if currentStateId was invalid
   useEffect(() => {
-    if (!currentState?.botMessage) return;
-
-    const msg = isAr ? currentState.botMessage.ar : currentState.botMessage.en;
-    const lastBot = history.filter(h => h.type === 'bot').pop();
-    if (lastBot?.stateId === currentState.id) return;
-
-    setHistory(prev => [...prev, {
-      id: `bot-${Date.now()}`,
-      type: 'bot',
-      text: msg,
-      stateId: currentState!.id,
-      domain: currentState!.domain,
-      timestamp: Date.now(),
-    }]);
-
-    // Execute onEnter fetch action
-    if (currentState.onEnter && (currentState.onEnter.type === 'fetch' || currentState.onEnter.type === 'read') && currentState.onEnter.endpoint) {
-      handleFetchAction(currentState.onEnter);
+    try {
+      getState(currentStateId);
+    } catch {
+      setCurrentStateId(INITIAL_STATE);
     }
   }, [currentStateId]);
 
@@ -536,6 +522,29 @@ export default function GuidedChat() {
       setIsLoading(false);
     }
   }, [isAr]);
+
+  // Add bot message on state change
+  useEffect(() => {
+    if (!currentState?.botMessage) return;
+
+    const msg = isAr ? currentState.botMessage.ar : currentState.botMessage.en;
+    const lastBot = history.filter(h => h.type === 'bot').pop();
+    if (lastBot?.stateId === currentState.id) return;
+
+    setHistory(prev => [...prev, {
+      id: `bot-${Date.now()}`,
+      type: 'bot',
+      text: msg,
+      stateId: currentState!.id,
+      domain: currentState!.domain,
+      timestamp: Date.now(),
+    }]);
+
+    // Execute onEnter fetch action
+    if (currentState.onEnter && (currentState.onEnter.type === 'fetch' || currentState.onEnter.type === 'read') && currentState.onEnter.endpoint) {
+      handleFetchAction(currentState.onEnter);
+    }
+  }, [currentStateId, isAr, handleFetchAction]);
 
   // Execute a write action and add result to chat
   const handleWriteAction = useCallback(async (action: StateAction) => {
@@ -586,6 +595,13 @@ export default function GuidedChat() {
     }
   }, [router, handleFetchAction, handleWriteAction]);
 
+  // Transition to a new state
+  const transitionTo = useCallback((nextStateId: string) => {
+    setStateStack(prev => [...prev, currentStateId]);
+    setCurrentStateId(nextStateId);
+    setPendingAction(null);
+  }, [currentStateId]);
+
   // Handle option selection
   const handleSelect = useCallback((option: ChatOption) => {
     const label = isAr ? option.label.ar : option.label.en;
@@ -611,14 +627,7 @@ export default function GuidedChat() {
 
     // Transition to next state
     transitionTo(option.nextState);
-  }, [isAr, executeAction]);
-
-  // Transition to a new state
-  const transitionTo = useCallback((nextStateId: string) => {
-    setStateStack(prev => [...prev, currentStateId]);
-    setCurrentStateId(nextStateId);
-    setPendingAction(null);
-  }, [currentStateId]);
+  }, [isAr, executeAction, transitionTo]);
 
   // Confirm a pending action
   const handleConfirm = useCallback(() => {
@@ -674,9 +683,9 @@ export default function GuidedChat() {
   const stateTitle = isAr ? currentState.text.ar : currentState.text.en;
 
   return (
-    <div className="flex flex-col h-[600px] max-h-[80vh] border rounded-xl bg-card overflow-hidden">
+    <div className="flex flex-col h-[600px] max-h-[80vh] border border-border/60 rounded-2xl bg-white dark:bg-card overflow-hidden shadow-card">
       {/* Header */}
-      <div className="flex items-center gap-3 px-4 py-3 border-b bg-muted/30">
+      <div className="flex items-center gap-3 px-4 py-3 border-b">
         <div className={`h-10 w-10 rounded-full bg-gradient-to-br ${domainColor} flex items-center justify-center`}>
           <Sparkles className="h-5 w-5 text-white" />
         </div>
@@ -705,7 +714,7 @@ export default function GuidedChat() {
 
       {/* Breadcrumb */}
       {stateStack.length > 0 && (
-        <div className="px-4 py-1.5 border-b bg-muted/10 overflow-x-auto">
+        <div className="px-4 py-1.5 border-b overflow-x-auto">
           <div className="flex items-center gap-1 text-[10px] text-muted-foreground">
             <span className="cursor-pointer hover:text-foreground" onClick={handleReset}>ROOT</span>
             {stateStack.slice(-3).map((sid, i) => {
@@ -801,8 +810,12 @@ export default function GuidedChat() {
                   <Bot className="h-3.5 w-3.5" />
                 </AvatarFallback>
               </Avatar>
-              <div className="bg-muted rounded-2xl px-4 py-2.5">
-                <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
+              <div className="bg-muted rounded-2xl rounded-tl-sm px-4 py-3">
+                <div className="flex items-center gap-1">
+                  <span className="h-2 w-2 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '0ms' }} />
+                  <span className="h-2 w-2 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '150ms' }} />
+                  <span className="h-2 w-2 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '300ms' }} />
+                </div>
               </div>
             </div>
           )}
@@ -823,7 +836,7 @@ export default function GuidedChat() {
 
       {/* Options — the core of the guided chat */}
       {!pendingAction && currentState.options.length > 0 && (
-        <div className="border-t bg-background p-3">
+        <div className="border-t bg-white dark:bg-card p-3">
           <div className="space-y-1.5 max-h-[200px] overflow-y-auto">
             {currentState.options.map((option) => (
               <OptionButton

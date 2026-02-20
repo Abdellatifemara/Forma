@@ -188,10 +188,11 @@ export class CommissionsService {
       type,
       status,
       page = 1,
-      limit = 20,
+      limit: rawLimit = 20,
       startDate,
       endDate,
     } = options || {};
+    const limit = Math.min(rawLimit, 100);
 
     const where = {
       trainerId,

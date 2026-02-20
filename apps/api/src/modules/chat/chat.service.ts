@@ -130,7 +130,8 @@ export class ChatService {
     conversationId: string,
     options: { cursor?: string; limit?: number } = {},
   ) {
-    const { cursor, limit = 50 } = options;
+    const { cursor, limit: rawLimit = 50 } = options;
+    const limit = Math.min(rawLimit, 100);
 
     // Verify user is participant
     const participant = await this.prisma.conversationParticipant.findUnique({

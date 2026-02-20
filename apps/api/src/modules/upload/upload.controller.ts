@@ -8,12 +8,14 @@ import {
   BadRequestException,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { Throttle } from '@nestjs/throttler';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { UploadService } from './upload.service';
 import { PrismaService } from '../prisma/prisma.service';
 
 @Controller('upload')
 @UseGuards(JwtAuthGuard)
+@Throttle({ short: { limit: 5, ttl: 10000 }, medium: { limit: 20, ttl: 60000 } })
 export class UploadController {
   constructor(
     private readonly uploadService: UploadService,

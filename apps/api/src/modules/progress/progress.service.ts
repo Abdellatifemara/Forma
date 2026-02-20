@@ -58,7 +58,8 @@ export class ProgressService {
     });
   }
 
-  async getWeightHistory(userId: string, days: number = 90) {
+  async getWeightHistory(userId: string, rawDays: number = 90) {
+    const days = Math.min(rawDays, 365);
     const startDate = new Date();
     startDate.setDate(startDate.getDate() - days);
 
@@ -81,7 +82,8 @@ export class ProgressService {
     }));
   }
 
-  async getMeasurementsHistory(userId: string, limit: number = 10) {
+  async getMeasurementsHistory(userId: string, rawLimit: number = 10) {
+    const limit = Math.min(rawLimit, 200);
     const logs = await this.prisma.progressLog.findMany({
       where: {
         userId,

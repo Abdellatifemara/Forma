@@ -350,6 +350,7 @@ export class WorkoutsService {
     userId: string,
     limit = 20,
   ): Promise<WorkoutLog[]> {
+    const safeTake = Math.min(limit, 100);
     return this.prisma.workoutLog.findMany({
       where: {
         userId,
@@ -365,7 +366,7 @@ export class WorkoutsService {
         },
       },
       orderBy: { completedAt: 'desc' },
-      take: limit,
+      take: safeTake,
     });
   }
 

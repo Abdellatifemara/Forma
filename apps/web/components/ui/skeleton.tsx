@@ -26,15 +26,32 @@ function SkeletonCard({ className }: { className?: string }) {
 
 function SkeletonStatCard({ className }: { className?: string }) {
   return (
-    <div className={cn('rounded-lg border bg-card p-6', className)}>
-      <div className="flex items-center justify-between">
+    <div className={cn('rounded-2xl border border-border/60 bg-white dark:bg-card p-5 shadow-card', className)}>
+      <div className="flex items-center gap-3">
+        <Skeleton className="h-10 w-10 rounded-lg" />
         <div className="space-y-2">
-          <Skeleton className="h-4 w-24" />
-          <Skeleton className="h-8 w-16" />
+          <Skeleton className="h-6 w-12" />
           <Skeleton className="h-3 w-20" />
         </div>
-        <Skeleton className="h-10 w-10 rounded-lg" />
       </div>
+    </div>
+  );
+}
+
+function FormaSpinner({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
+  const sizes = { sm: 'h-6 w-6', md: 'h-10 w-10', lg: 'h-14 w-14' };
+  const borderSizes = { sm: 'border-2', md: 'border-[3px]', lg: 'border-4' };
+  return (
+    <div className="flex flex-col items-center gap-3">
+      <div className={cn('animate-spin rounded-full border-muted border-t-primary', sizes[size], borderSizes[size])} />
+    </div>
+  );
+}
+
+function FormaPageLoader() {
+  return (
+    <div className="flex h-[60vh] items-center justify-center">
+      <FormaSpinner size="lg" />
     </div>
   );
 }
@@ -164,21 +181,41 @@ function SkeletonText({ lines = 3, className }: { lines?: number; className?: st
 function SkeletonDashboard() {
   return (
     <div className="space-y-6">
+      {/* Header */}
+      <div className="space-y-2">
+        <Skeleton className="h-4 w-24" />
+        <Skeleton className="h-8 w-40" />
+      </div>
+
       {/* Stats */}
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         {[1, 2, 3, 4].map((i) => (
           <SkeletonStatCard key={i} />
         ))}
       </div>
 
-      {/* Charts and Content */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        <SkeletonChart />
-        <SkeletonChart />
+      {/* Today's workout */}
+      <div className="rounded-2xl border border-border/60 bg-white dark:bg-card p-6 shadow-card border-s-[3px] border-s-muted">
+        <Skeleton className="h-4 w-24 mb-3" />
+        <Skeleton className="h-7 w-48 mb-2" />
+        <Skeleton className="h-4 w-32 mb-4" />
+        <Skeleton className="h-10 w-36 rounded-xl" />
       </div>
 
-      {/* Table */}
-      <SkeletonTable rows={5} />
+      {/* Two cards */}
+      <div className="grid gap-4 md:grid-cols-2">
+        {[1, 2].map((i) => (
+          <div key={i} className="rounded-2xl border border-border/60 bg-white dark:bg-card p-6 shadow-card">
+            <Skeleton className="h-5 w-32 mb-4" />
+            <div className="space-y-3">
+              <Skeleton className="h-3 w-full" />
+              <Skeleton className="h-2 w-full rounded-full" />
+              <Skeleton className="h-3 w-full" />
+              <Skeleton className="h-2 w-full rounded-full" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -261,4 +298,6 @@ export {
   SkeletonDashboard,
   SkeletonWorkoutsPage,
   SkeletonProfilePage,
+  FormaSpinner,
+  FormaPageLoader,
 };

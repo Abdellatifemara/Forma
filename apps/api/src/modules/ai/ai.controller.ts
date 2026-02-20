@@ -1,5 +1,6 @@
 import { Controller, Post, Get, Body, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
+import { Throttle } from '@nestjs/throttler';
 import { AiService } from './ai.service';
 import { AiRateLimitService } from './ai-rate-limit.service';
 import { ChatPipelineService } from './chat-pipeline.service';
@@ -11,6 +12,7 @@ import { User } from '@prisma/client';
 @Controller('ai')
 @UseGuards(JwtAuthGuard)
 @ApiBearerAuth()
+@Throttle({ short: { limit: 3, ttl: 10000 }, medium: { limit: 15, ttl: 60000 } })
 export class AiController {
   constructor(
     private readonly aiService: AiService,

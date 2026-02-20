@@ -406,7 +406,8 @@ export class SubscriptionsService {
   /**
    * Get payment history
    */
-  async getPaymentHistory(userId: string, page = 1, limit = 10) {
+  async getPaymentHistory(userId: string, page = 1, rawLimit = 10) {
+    const limit = Math.min(rawLimit, 100);
     const subscription = await this.prisma.subscription.findUnique({
       where: { userId },
     });

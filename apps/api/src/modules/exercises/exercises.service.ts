@@ -39,7 +39,7 @@ export class ExercisesService {
     const { skip, take, cursor, where, orderBy } = params;
     return this.prisma.exercise.findMany({
       skip,
-      take,
+      take: take ? Math.min(take, 100) : 50,
       cursor,
       where,
       orderBy,
@@ -177,6 +177,7 @@ export class ExercisesService {
         ],
       },
       orderBy: { nameEn: 'asc' },
+      take: 200,
     });
   }
 
@@ -186,6 +187,7 @@ export class ExercisesService {
         equipment: { hasSome: equipment },
       },
       orderBy: { nameEn: 'asc' },
+      take: 200,
     });
   }
 
@@ -222,6 +224,7 @@ export class ExercisesService {
     return this.prisma.exercise.findMany({
       where,
       orderBy: { difficulty: 'asc' },
+      take: 200,
     });
   }
 

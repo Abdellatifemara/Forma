@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { AiService } from './ai.service';
-import { SubscriptionTier } from '@prisma/client';
+import { Prisma, SubscriptionTier } from '@prisma/client';
 
 // ─── Types ───────────────────────────────────────────────────
 
@@ -406,16 +406,36 @@ export class ChatPipelineService {
       const keywords = query.toLowerCase().split(/\s+/).filter(w => w.length > 3);
       if (keywords.length === 0) return null;
 
-      // Build a text search condition for the FAQ JSON fields
-      const field = isAr ? '"faqsAr"' : '"faqsEn"';
-      const searchCondition = keywords.map(kw => `${field}::text ILIKE '%${kw.replace(/'/g, "''")}%'`).join(' AND ');
+      // Build a parameterized text search condition for the FAQ JSON fields
+      // Use Prisma.sql for safe parameterized queries (no string interpolation)
+      // Build ILIKE conditions with parameterized values
+      const likePatterns = keywords.map(kw => `%${kw}%`);
 
-      const results: Array<{ nameEn: string; nameAr: string; faqsEn: any; faqsAr: any }> = await this.prisma.$queryRawUnsafe(`
-        SELECT "nameEn", "nameAr", "faqsEn", "faqsAr"
-        FROM "Exercise"
-        WHERE ${field} IS NOT NULL AND ${searchCondition}
-        LIMIT 3
-      `);
+      let results: Array<{ nameEn: string; nameAr: string; faqsEn: any; faqsAr: any }>;
+
+      if (isAr) {
+        const conditions = likePatterns.map(
+          pattern => Prisma.sql`"faqsAr"::text ILIKE ${pattern}`
+        );
+        const whereClause = Prisma.join(conditions, ' AND ');
+        results = await this.prisma.$queryRaw`
+          SELECT "nameEn", "nameAr", "faqsEn", "faqsAr"
+          FROM "Exercise"
+          WHERE "faqsAr" IS NOT NULL AND ${whereClause}
+          LIMIT 3
+        `;
+      } else {
+        const conditions = likePatterns.map(
+          pattern => Prisma.sql`"faqsEn"::text ILIKE ${pattern}`
+        );
+        const whereClause = Prisma.join(conditions, ' AND ');
+        results = await this.prisma.$queryRaw`
+          SELECT "nameEn", "nameAr", "faqsEn", "faqsAr"
+          FROM "Exercise"
+          WHERE "faqsEn" IS NOT NULL AND ${whereClause}
+          LIMIT 3
+        `;
+      }
 
       if (results.length === 0) return null;
 
