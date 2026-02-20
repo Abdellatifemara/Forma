@@ -1,7 +1,7 @@
 {
-  "name": "Forma - Shape Your Future",
-  "short_name": "Forma",
-  "description": "Egypt's premier AI-powered fitness platform",
+  "name": "FormaEG - Shape Your Future",
+  "short_name": "FormaEG",
+  "description": "Egypt's complete fitness platform. Personalized workouts, nutrition tracking, and expert coaching.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A0A0A",

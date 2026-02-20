@@ -111,7 +111,7 @@ export function Navbar() {
           </button>
 
           {isLoggedIn ? (
-            <Button className="rounded-full bg-coral-500 text-white hover:bg-coral-600" asChild>
+            <Button className="rounded-full btn-primary text-white" asChild>
               <Link href="/dashboard">
                 <LayoutDashboard className={cn('h-4 w-4', isRTL ? 'ml-2' : 'mr-2')} />
                 {t.nav.dashboard}
@@ -122,7 +122,7 @@ export function Navbar() {
               <Button variant="ghost" className="font-medium" asChild>
                 <Link href="/login">{t.nav.login}</Link>
               </Button>
-              <Button className="rounded-full bg-coral-500 text-white hover:bg-coral-600" asChild>
+              <Button className="rounded-full btn-primary text-white" asChild>
                 <Link href="/signup">
                   {t.nav.signup}
                   <ChevronRight className={cn('h-4 w-4', isRTL ? 'mr-1 rotate-180' : 'ml-1')} />
@@ -191,7 +191,7 @@ export function Navbar() {
             {isLoggedIn ? (
               <Button
                 size="lg"
-                className="w-full rounded-xl h-12 bg-coral-500 text-white hover:bg-coral-600"
+                className="w-full rounded-xl h-12 btn-primary text-white"
                 asChild
               >
                 <Link href="/dashboard">
@@ -206,7 +206,7 @@ export function Navbar() {
                 </Button>
                 <Button
                   size="lg"
-                  className="w-full rounded-xl h-12 bg-coral-500 text-white hover:bg-coral-600"
+                  className="w-full rounded-xl h-12 btn-primary text-white"
                   asChild
                 >
                   <Link href="/signup">

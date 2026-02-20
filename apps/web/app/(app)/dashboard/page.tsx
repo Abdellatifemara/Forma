@@ -31,6 +31,7 @@ import {
   type WeeklySummary,
 } from '@/lib/api';
 import { SkeletonDashboard } from '@/components/ui/skeleton';
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell } from 'recharts';
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -146,6 +147,24 @@ export default function DashboardPage() {
           </div>
         </div>
       </div>
+
+      {/* Weekly Activity Chart — Flexcore-style */}
+      <Card className="card-premium overflow-hidden">
+        <CardHeader className="flex flex-row items-center justify-between pb-2">
+          <CardTitle className="text-base font-semibold flex items-center gap-2">
+            <div className="p-1.5 rounded-lg bg-orange-50 dark:bg-orange-500/10">
+              <Activity className="h-4 w-4 text-orange-500" />
+            </div>
+            {isRTL ? 'النشاط الأسبوعي' : 'Weekly Activity'}
+          </CardTitle>
+          <span className="text-sm text-muted-foreground">
+            {isRTL ? 'هذا الأسبوع' : 'This Week'}
+          </span>
+        </CardHeader>
+        <CardContent>
+          <WeeklyChart weeklyStats={weeklyStats} isRTL={isRTL} />
+        </CardContent>
+      </Card>
 
       {/* Today's Workout — White card with teal accent */}
       <Card className="card-premium overflow-hidden border-s-[3px] border-s-primary">
@@ -362,6 +381,48 @@ export default function DashboardPage() {
           </Link>
         ))}
       </div>
+    </div>
+  );
+}
+
+/* ---- Weekly Activity Bar Chart ---- */
+const DAYS_EN = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const DAYS_AR = ['اث', 'ثل', 'أر', 'خم', 'جم', 'سب', 'أح'];
+
+function WeeklyChart({ weeklyStats, isRTL }: { weeklyStats: WeeklySummary | null; isRTL: boolean }) {
+  const today = new Date().getDay(); // 0=Sun
+  const todayIdx = today === 0 ? 6 : today - 1; // convert to Mon=0
+  const labels = isRTL ? DAYS_AR : DAYS_EN;
+
+  // Placeholder until API returns daily breakdown
+  const completed = weeklyStats?.workoutsCompleted ?? 0;
+  const data = labels.map((day, i) => ({
+    day,
+    minutes: i < completed ? 30 + (i * 12 % 45) : (i <= todayIdx ? 10 : 0),
+    isToday: i === todayIdx,
+  }));
+
+  return (
+    <div className="h-[180px] w-full mt-2">
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart data={data} barCategoryGap="25%">
+          <XAxis
+            dataKey="day"
+            axisLine={false}
+            tickLine={false}
+            tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
+          />
+          <YAxis hide />
+          <Bar dataKey="minutes" radius={[6, 6, 0, 0]}>
+            {data.map((entry, idx) => (
+              <Cell
+                key={idx}
+                fill={entry.isToday ? '#f97316' : 'hsl(var(--muted-foreground) / 0.2)'}
+              />
+            ))}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 }

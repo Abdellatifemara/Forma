@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Check, X, Zap, Crown, Sparkles } from 'lucide-react';
+import { Check, Zap, Crown, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
@@ -19,17 +19,9 @@ export function Pricing() {
 
   const plans = [
     {
-      tier: SUBSCRIPTION_TIERS.FREE,
-      features: highlights.FREE,
-      cta: language === 'ar' ? 'ابدأ مجاناً' : 'Start Free',
-      href: '/signup',
-      icon: null,
-      gradient: null,
-    },
-    {
       tier: SUBSCRIPTION_TIERS.PREMIUM,
       features: highlights.PREMIUM,
-      cta: language === 'ar' ? 'احصل على Premium' : 'Get Premium',
+      cta: language === 'ar' ? 'ابدأ تجربة 7 أيام' : 'Start 7-Day Trial',
       href: '/signup?plan=premium',
       icon: Zap,
       gradient: 'from-cyan-500 to-blue-500',
@@ -69,13 +61,13 @@ export function Pricing() {
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             {language === 'ar'
-              ? 'ابدأ مجاناً وقم بالترقية عندما تكون جاهزاً. بدون عقود، إلغاء في أي وقت.'
-              : 'Start free and upgrade when ready. No contracts, cancel anytime.'}
+              ? 'ابدأ بتجربة مجانية لمدة 7 أيام. بدون عقود، إلغاء في أي وقت.'
+              : 'Start with a 7-day free trial. No contracts, cancel anytime.'}
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-6 max-w-6xl mx-auto">
+        <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
           {plans.map((plan) => {
             const isPremium = plan.tier.id === 'PREMIUM';
             const isPremiumPlus = plan.tier.id === 'PREMIUM_PLUS';
@@ -160,7 +152,7 @@ export function Pricing() {
                     <li key={idx} className={cn(
                       'flex items-start gap-3 text-sm',
                       isRTL && 'flex-row-reverse',
-                      idx === 0 && plan.tier.id !== 'FREE' && 'font-medium text-primary'
+                      idx === 0 && 'font-medium text-primary'
                     )}>
                       <Check className={cn(
                         'h-5 w-5 flex-shrink-0 mt-0.5',

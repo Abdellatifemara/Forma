@@ -19,6 +19,8 @@ import {
   ChevronRight,
   Zap,
   Brain,
+  Crown,
+  Sparkles,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -42,6 +44,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { healthMetricsApi, type HealthMetricType, type CreateHealthMetricData } from '@/lib/api';
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/lib/i18n';
+import { useSubscription } from '@/hooks/use-subscription';
+import Link from 'next/link';
 
 /* =========================================================
    RECOVERY SCORE RING — SVG circular progress indicator
@@ -639,7 +643,99 @@ function AddMetricDialog({
    MAIN HEALTH PAGE
    ========================================================= */
 
+/* =========================================================
+   PREMIUM+ TEASER — shown to non-Premium+ users
+   ========================================================= */
+
+function HealthTeaser({ isAr }: { isAr: boolean }) {
+  return (
+    <div className="space-y-6 pb-20 lg:pb-8">
+      <div>
+        <h1 className="text-3xl font-bold">{isAr ? 'لوحة الصحة' : 'Health Dashboard'}</h1>
+        <p className="text-muted-foreground">
+          {isAr ? 'تتبع صحتك الكاملة مع Premium+' : 'Track your complete health with Premium+'}
+        </p>
+      </div>
+
+      {/* Blurred preview */}
+      <div className="relative overflow-hidden rounded-2xl">
+        <div className="blur-sm pointer-events-none select-none opacity-50 space-y-4 p-1">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <Card className="card-premium md:row-span-2">
+              <CardContent className="flex flex-col items-center py-8">
+                <RecoveryRing score={72} />
+                <div className="grid grid-cols-2 gap-4 mt-6 w-full">
+                  <div className="text-center p-3 rounded-xl bg-muted/50">
+                    <p className="text-lg font-bold">53</p>
+                    <p className="text-xs text-muted-foreground">HRV (ms)</p>
+                  </div>
+                  <div className="text-center p-3 rounded-xl bg-muted/50">
+                    <p className="text-lg font-bold">58</p>
+                    <p className="text-xs text-muted-foreground">RHR (bpm)</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="card-premium">
+              <CardContent className="py-6">
+                <StrainGauge strain={12.4} />
+              </CardContent>
+            </Card>
+            <Card className="card-premium">
+              <CardContent className="py-6">
+                <SleepBreakdown totalHours={7.2} isAr={isAr} />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/80 backdrop-blur-sm rounded-2xl">
+          <div className="p-3 rounded-full bg-purple-500/10 mb-4">
+            <Crown className="h-8 w-8 text-purple-500" />
+          </div>
+          <h3 className="font-bold text-xl mb-2">
+            {isAr ? 'ارتقِ إلى Premium+' : 'Upgrade to Premium+'}
+          </h3>
+          <p className="text-sm text-muted-foreground mb-4 max-w-sm text-center px-4">
+            {isAr
+              ? 'تتبع التعافي، الإجهاد، النوم، HRV، ونبض القلب. وصّل ساعتك الذكية للمتابعة التلقائية.'
+              : 'Track recovery, strain, sleep, HRV, and heart rate. Connect your smartwatch for automatic syncing.'}
+          </p>
+          <div className="flex flex-col items-center gap-2">
+            <Button
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600"
+              asChild
+            >
+              <Link href="/signup?plan=premium_plus">
+                <Sparkles className="h-4 w-4 mr-2" />
+                {isAr ? 'ابدأ Premium+' : 'Get Premium+'}
+              </Link>
+            </Button>
+            <p className="text-xs text-muted-foreground">
+              {isAr ? 'ابتداءً من 999 جنيه/شهر' : 'Starting at 999 EGP/month'}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function HealthPage() {
+  const { language } = useLanguage();
+  const isAr = language === 'ar';
+  const { isPremiumPlus, isLoading: subLoading } = useSubscription();
+
+  // Show teaser for non-Premium+ users
+  if (!subLoading && !isPremiumPlus) {
+    return <HealthTeaser isAr={isAr} />;
+  }
+
+  return <HealthDashboard />;
+}
+
+function HealthDashboard() {
   const { t, language } = useLanguage();
   const isAr = language === 'ar';
   const metricCategories = getMetricCategories(isAr);

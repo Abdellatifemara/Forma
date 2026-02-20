@@ -16,11 +16,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://formaeg.com'),
   title: {
-    default: 'Forma - Shape Your Future',
-    template: '%s | Forma',
+    default: 'FormaEG - Shape Your Future',
+    template: '%s | FormaEG',
   },
   description:
-    'Egypt\'s premier AI-powered fitness platform. Personalized workouts, nutrition tracking, and expert coaching.',
+    'Egypt\'s complete fitness platform. Personalized workouts, nutrition tracking, and expert coaching — built for Egyptians.',
   keywords: [
     'fitness',
     'workout',
@@ -28,33 +28,34 @@ export const metadata: Metadata = {
     'Egypt',
     'gym',
     'personal trainer',
-    'AI fitness',
+    'fitness app Egypt',
     'Arabic fitness app',
+    'FormaEG',
   ],
-  authors: [{ name: 'Forma' }],
+  authors: [{ name: 'FormaEG' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     alternateLocale: 'ar_EG',
     url: 'https://formaeg.com',
-    siteName: 'Forma',
-    title: 'Forma - Shape Your Future',
+    siteName: 'FormaEG',
+    title: 'FormaEG - Shape Your Future',
     description:
-      'Egypt\'s premier AI-powered fitness platform. Personalized workouts, nutrition tracking, and expert coaching.',
+      'Egypt\'s complete fitness platform. Personalized workouts, nutrition tracking, and expert coaching — built for Egyptians.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Forma - Shape Your Future',
+        alt: 'FormaEG - Shape Your Future',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Forma - Shape Your Future',
+    title: 'FormaEG - Shape Your Future',
     description:
-      'Egypt\'s premier AI-powered fitness platform. Personalized workouts, nutrition tracking, and expert coaching.',
+      'Egypt\'s complete fitness platform. Personalized workouts, nutrition tracking, and expert coaching — built for Egyptians.',
     images: ['/og-image.png'],
   },
   robots: {

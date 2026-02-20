@@ -31,8 +31,8 @@ export function CTA() {
             </h2>
             <p className="mt-6 text-lg text-forma-navy/80">
               {isAr
-                ? 'انضم لآلاف المصريين اللي بدأوا تحولهم مع فورما. أول أسبوع عليناا.'
-                : 'Join thousands of Egyptians who have already started their transformation with Forma. Your first week is on us.'}
+                ? 'ابدأ تحولك الرياضي مع فورما. أول أسبوع عليناا.'
+                : 'Start your fitness transformation with Forma. Your first week is on us.'}
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button

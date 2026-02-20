@@ -51,10 +51,10 @@ export type FeatureCategory =
 export const SUBSCRIPTION_TIERS: Record<SubscriptionTier, TierInfo> = {
   FREE: {
     id: 'FREE',
-    name: 'Free',
-    nameAr: 'مجاني',
-    tagline: 'Get started on your fitness journey',
-    taglineAr: 'ابدأ رحلتك في اللياقة البدنية',
+    name: '7-Day Trial',
+    nameAr: 'تجربة 7 أيام',
+    tagline: 'Try everything free for 7 days',
+    taglineAr: 'جرب كل شيء مجاناً لمدة 7 أيام',
     pricing: {
       monthly: 0,
       yearly: 0,
@@ -68,8 +68,8 @@ export const SUBSCRIPTION_TIERS: Record<SubscriptionTier, TierInfo> = {
     tagline: 'Best value - everything you need to transform',
     taglineAr: 'أفضل قيمة - كل ما تحتاجه للتحول',
     pricing: {
-      monthly: 199,
-      yearly: 1990, // 10 months price (2 months free)
+      monthly: 299,
+      yearly: 2990, // 10 months price (2 months free)
       currency: 'EGP',
     },
     badge: 'Best Deal',
@@ -83,8 +83,8 @@ export const SUBSCRIPTION_TIERS: Record<SubscriptionTier, TierInfo> = {
     tagline: 'VIP experience with personal coaching & smart features',
     taglineAr: 'تجربة VIP مع التدريب الشخصي والميزات الذكية',
     pricing: {
-      monthly: 699,
-      yearly: 6990, // 10 months price (2 months free)
+      monthly: 999,
+      yearly: 9990, // 10 months price (2 months free)
       currency: 'EGP',
     },
     badge: 'VIP',
@@ -633,16 +633,158 @@ export const CATEGORY_INFO: Record<
 };
 
 // ===========================================
+// EXERCISE CATEGORY ACCESS TIERS
+// ===========================================
+
+export interface ExerciseCategory {
+  id: string;
+  name: string;
+  nameAr: string;
+  icon: string; // Lucide icon name
+  minimumTier: SubscriptionTier;
+  searchTags: string[]; // used to filter exercises by category
+}
+
+/**
+ * Exercise categories with tier access.
+ * Premium: gym, crossfit, pre-workout supplements
+ * Premium+: everything else (martial arts, yoga, swimming, etc.)
+ */
+export const EXERCISE_CATEGORIES: ExerciseCategory[] = [
+  // ---- PREMIUM (gym basics) ----
+  {
+    id: 'gym',
+    name: 'Gym & Weights',
+    nameAr: 'جيم وأوزان',
+    icon: 'Dumbbell',
+    minimumTier: 'FREE',
+    searchTags: ['barbell', 'dumbbell', 'machine', 'cable', 'gym', 'weight'],
+  },
+  {
+    id: 'crossfit',
+    name: 'CrossFit',
+    nameAr: 'كروسفيت',
+    icon: 'Timer',
+    minimumTier: 'FREE',
+    searchTags: ['crossfit', 'wod', 'amrap', 'emom'],
+  },
+  {
+    id: 'preworkout',
+    name: 'Pre & Post Workout',
+    nameAr: 'قبل وبعد التمرين',
+    icon: 'Zap',
+    minimumTier: 'FREE',
+    searchTags: ['preworkout', 'pre-workout', 'post-workout', 'supplement', 'warmup', 'cooldown'],
+  },
+  // ---- PREMIUM+ (specialty) ----
+  {
+    id: 'boxing',
+    name: 'Boxing',
+    nameAr: 'ملاكمة',
+    icon: 'Swords',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['boxing', 'punch', 'bag', 'sparring'],
+  },
+  {
+    id: 'kickboxing',
+    name: 'Kickboxing & Muay Thai',
+    nameAr: 'كيك بوكسينج ومواي تاي',
+    icon: 'Flame',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['kickboxing', 'muay thai', 'kick', 'elbow', 'knee strike'],
+  },
+  {
+    id: 'bjj',
+    name: 'BJJ & Grappling',
+    nameAr: 'جوجيتسو',
+    icon: 'Shield',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['bjj', 'jiu-jitsu', 'grappling', 'submission', 'guard'],
+  },
+  {
+    id: 'wrestling',
+    name: 'Wrestling',
+    nameAr: 'مصارعة',
+    icon: 'Users',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['wrestling', 'takedown', 'sprawl'],
+  },
+  {
+    id: 'mma',
+    name: 'MMA & Martial Arts',
+    nameAr: 'فنون قتالية',
+    icon: 'Target',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['mma', 'martial arts', 'combat', 'fighting'],
+  },
+  {
+    id: 'yoga',
+    name: 'Yoga & Flexibility',
+    nameAr: 'يوجا ومرونة',
+    icon: 'Leaf',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['yoga', 'flexibility', 'stretch', 'pose'],
+  },
+  {
+    id: 'swimming',
+    name: 'Swimming',
+    nameAr: 'سباحة',
+    icon: 'Waves',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['swimming', 'pool', 'aqua', 'water'],
+  },
+  {
+    id: 'olympic',
+    name: 'Olympic Lifting',
+    nameAr: 'رفع أثقال أولمبي',
+    icon: 'Trophy',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['olympic', 'snatch', 'clean and jerk', 'clean', 'jerk'],
+  },
+  {
+    id: 'calisthenics',
+    name: 'Calisthenics',
+    nameAr: 'كاليسثنكس',
+    icon: 'PersonStanding',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['calisthenics', 'bodyweight', 'planche', 'handstand', 'muscle up'],
+  },
+  {
+    id: 'mobility',
+    name: 'Mobility & Rehab',
+    nameAr: 'حركة وتأهيل',
+    icon: 'Heart',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['mobility', 'rehab', 'physical therapy', 'recovery', 'foam roll'],
+  },
+  {
+    id: 'sport',
+    name: 'Sport-Specific',
+    nameAr: 'تمارين رياضية',
+    icon: 'Medal',
+    minimumTier: 'PREMIUM_PLUS',
+    searchTags: ['sport', 'agility', 'speed', 'plyometric', 'conditioning'],
+  },
+];
+
+/** Check if a category is accessible for a given tier */
+export function isCategoryAccessible(categoryId: string, userTier: SubscriptionTier): boolean {
+  const cat = EXERCISE_CATEGORIES.find(c => c.id === categoryId);
+  if (!cat) return false;
+  const tierOrder: SubscriptionTier[] = ['FREE', 'PREMIUM', 'PREMIUM_PLUS'];
+  return tierOrder.indexOf(userTier) >= tierOrder.indexOf(cat.minimumTier);
+}
+
+// ===========================================
 // QUICK COMPARISON DATA FOR UI
 // ===========================================
 
 export const TIER_COMPARISON_HIGHLIGHTS = {
   FREE: [
-    'Basic workout tracking',
-    'Food logging (3 meals/day)',
-    'Progress photos (2/month)',
-    '3 personalized recommendations/month',
-    'Community access',
+    'Full access for 7 days',
+    'All Premium features included',
+    'No credit card required',
+    'Cancel anytime',
   ],
   PREMIUM: [
     'Everything in Free, plus:',
@@ -673,11 +815,10 @@ export const TIER_COMPARISON_HIGHLIGHTS = {
 
 export const TIER_COMPARISON_HIGHLIGHTS_AR = {
   FREE: [
-    'تتبع التمارين الأساسي',
-    'تسجيل الطعام (3 وجبات/يوم)',
-    'صور التقدم (2/شهر)',
-    '3 توصيات شخصية/شهر',
-    'الوصول للمجتمع',
+    'وصول كامل لمدة 7 أيام',
+    'كل مميزات بريميوم متاحة',
+    'بدون بطاقة ائتمان',
+    'إلغاء في أي وقت',
   ],
   PREMIUM: [
     'كل شيء في المجاني، بالإضافة إلى:',

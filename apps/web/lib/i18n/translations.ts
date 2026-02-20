@@ -22,15 +22,12 @@ export const translations = {
 
     // Hero
     hero: {
-      badge: '50,000+ Active Members in Egypt',
+      badge: 'Egypt\'s Complete Fitness Platform',
       words: ['Transform', 'Strengthen', 'Energize', 'Evolve'],
       headline: 'Your Body',
       subheadline: 'The complete fitness platform built for you. Personalized workouts, nutrition tracking, and a community that keeps you going.',
-      cta: 'Start Free',
+      cta: 'Start 7-Day Trial',
       watchDemo: 'See How It Works',
-      rating: '4.9 rating',
-      users: '50K+ users',
-      workoutsDone: 'workouts done',
     },
 
     // Features
@@ -72,9 +69,7 @@ export const translations = {
       },
       stats: {
         exercises: 'Exercises',
-        members: 'Members',
-        workoutsDone: 'Workouts Done',
-        appRating: 'App Rating',
+        foods: 'Foods & Meals',
       },
       cta: 'Start Your Journey',
     },
@@ -947,15 +942,12 @@ export const translations = {
 
     // Hero
     hero: {
-      badge: 'أكتر من 50,000 عضو نشط في مصر',
+      badge: 'منصة اللياقة الكاملة في مصر',
       words: ['غيّر', 'قوّي', 'نشّط', 'طوّر'],
       headline: 'جسمك',
       subheadline: 'منصة اللياقة الكاملة اللي اتبنت عشانك. تمارين مخصصة، متابعة أكلك، ومجتمع يخليك مكمّل.',
-      cta: 'ابدأ ببلاش',
+      cta: 'ابدأ تجربة 7 أيام',
       watchDemo: 'شوف إزاي بيشتغل',
-      rating: 'تقييم 4.9',
-      users: '+50 ألف مستخدم',
-      workoutsDone: 'تمرين اتعمل',
     },
 
     // Features
@@ -997,9 +989,7 @@ export const translations = {
       },
       stats: {
         exercises: 'تمرين',
-        members: 'عضو',
-        workoutsDone: 'تمرين اتعمل',
-        appRating: 'تقييم التطبيق',
+        foods: 'أكلة ووجبة',
       },
       cta: 'ابدأ رحلتك',
     },

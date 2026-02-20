@@ -14,7 +14,7 @@ export function Features() {
       icon: Dumbbell,
       title: t.features.smartWorkouts.title,
       description: t.features.smartWorkouts.description,
-      color: 'bg-coral-500',
+      color: 'bg-orange-500',
     },
     {
       icon: Apple,
@@ -49,10 +49,8 @@ export function Features() {
   ];
 
   const stats = [
-    { value: '500+', label: t.features.stats.exercises },
-    { value: '50K+', label: t.features.stats.members },
-    { value: '1M+', label: t.features.stats.workoutsDone },
-    { value: '4.9★', label: t.features.stats.appRating },
+    { value: '3,400+', label: t.features.stats.exercises },
+    { value: '2,100+', label: t.features.stats.foods },
   ];
 
   return (
@@ -62,7 +60,7 @@ export function Features() {
         <div className={cn('text-center mb-16', isRTL && 'font-cairo')}>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             {t.features.title}{' '}
-            <span className="text-coral-500">{t.features.titleHighlight}</span>
+            <span className="text-orange-500">{t.features.titleHighlight}</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             {t.features.subtitle}
@@ -96,10 +94,10 @@ export function Features() {
         </div>
 
         {/* Stats Strip */}
-        <div className={cn('mt-20 grid grid-cols-2 gap-8 sm:grid-cols-4', isRTL && 'font-cairo')}>
+        <div className={cn('mt-20 grid grid-cols-2 gap-8 max-w-md mx-auto', isRTL && 'font-cairo')}>
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-3xl font-bold text-coral-500 sm:text-4xl">{stat.value}</div>
+              <div className="text-3xl font-bold text-orange-500 sm:text-4xl">{stat.value}</div>
               <div className="mt-1 text-sm text-muted-foreground">{stat.label}</div>
             </div>
           ))}
@@ -109,7 +107,7 @@ export function Features() {
         <div className="mt-16 text-center">
           <Button
             size="lg"
-            className="h-14 rounded-full bg-coral-500 px-8 text-lg font-semibold text-white shadow-lg shadow-coral-500/30 hover:bg-coral-600"
+            className="h-14 rounded-full bg-orange-500 px-8 text-lg font-semibold text-white shadow-lg shadow-orange-500/30 hover:bg-orange-600"
             asChild
           >
             <Link href="/signup">
