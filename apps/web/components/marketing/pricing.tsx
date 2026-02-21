@@ -55,7 +55,7 @@ export function Pricing() {
           </div>
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             {language === 'ar' ? 'اختر خطتك ' : 'Choose Your '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
+            <span className="text-primary">
               {language === 'ar' ? 'المثالية' : 'Perfect Plan'}
             </span>
           </h2>
@@ -78,8 +78,8 @@ export function Pricing() {
                 key={plan.tier.id}
                 className={cn(
                   'relative rounded-2xl border bg-card/50 backdrop-blur-sm p-6 transition-all duration-300',
-                  isPremium && 'border-cyan-500/50 shadow-lg shadow-cyan-500/10 md:scale-[1.02] lg:scale-105',
-                  isPremiumPlus && 'border-purple-500/30',
+                  isPremium && 'border-primary/50 shadow-lg shadow-primary/10 md:scale-[1.02] lg:scale-105',
+                  isPremiumPlus && 'border-forma-navy/30',
                   !isPremium && !isPremiumPlus && 'border-border/50',
                   isRTL && 'text-right'
                 )}
@@ -89,8 +89,8 @@ export function Pricing() {
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span className={cn(
                       'inline-flex items-center gap-1.5 rounded-full px-4 py-1 text-sm font-semibold text-white',
-                      isPremium && 'bg-gradient-to-r from-cyan-500 to-blue-500',
-                      isPremiumPlus && 'bg-gradient-to-r from-purple-500 to-pink-500',
+                      isPremium && 'bg-gradient-to-r from-forma-orange to-forma-orange-dark',
+                      isPremiumPlus && 'bg-gradient-to-r from-forma-navy to-forma-navy-light',
                       isRTL && 'flex-row-reverse'
                     )}>
                       {Icon && <Icon className="h-3.5 w-3.5" />}
@@ -156,8 +156,8 @@ export function Pricing() {
                     )}>
                       <Check className={cn(
                         'h-5 w-5 flex-shrink-0 mt-0.5',
-                        isPremium && 'text-cyan-500',
-                        isPremiumPlus && 'text-purple-500',
+                        isPremium && 'text-primary',
+                        isPremiumPlus && 'text-forma-navy dark:text-forma-navy-light',
                         !isPremium && !isPremiumPlus && 'text-muted-foreground'
                       )} />
                       <span className={isRTL ? 'font-cairo' : ''}>{feature}</span>
@@ -169,8 +169,8 @@ export function Pricing() {
                 <Button
                   className={cn(
                     'w-full h-12 rounded-xl font-semibold transition-all',
-                    isPremium && 'bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white shadow-lg shadow-cyan-500/25',
-                    isPremiumPlus && 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white',
+                    isPremium && 'bg-gradient-to-r from-forma-orange to-forma-orange-dark hover:from-orange-600 hover:to-orange-700 text-white shadow-lg shadow-primary/25',
+                    isPremiumPlus && 'bg-gradient-to-r from-forma-navy to-forma-navy-light hover:from-forma-navy-light hover:to-forma-navy text-white',
                     !isPremium && !isPremiumPlus && 'bg-muted hover:bg-muted/80'
                   )}
                   asChild
