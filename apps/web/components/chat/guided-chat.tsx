@@ -352,6 +352,58 @@ function TypingDots() {
   );
 }
 
+// ─── Time-Aware Greeting ────────────────────────────────────
+function getTimeGreeting(isAr: boolean): string {
+  const hour = new Date().getHours();
+  if (hour < 6) return isAr ? 'سهرانين يا بطل؟ ايه اللي جابك الوقت ده؟' : "Burning the midnight oil? What brings you here?";
+  if (hour < 12) return isAr ? 'صباح الخير يا بطل! جاهز للتمرين النهارده؟' : "Good morning champ! Ready to train today?";
+  if (hour < 17) return isAr ? 'أهلاً! ايه الخطة النهارده؟' : "Hey! What's the plan today?";
+  if (hour < 21) return isAr ? 'مساء الخير! وقت التمرين ولا أكل ولا ايه؟' : "Good evening! Workout time, meal time, or something else?";
+  return isAr ? 'أهلاً! قبل ما تنام خلينا نشوف تقدمك' : "Hey! Before bed, let's check your progress";
+}
+
+function getContextualChips(isAr: boolean): Array<{ label: string; stateId: string; route?: string }> {
+  const hour = new Date().getHours();
+  const chips: Array<{ label: string; stateId: string; route?: string }> = [];
+
+  if (hour >= 5 && hour < 11) {
+    chips.push({ label: isAr ? 'ابدأ تمرين' : 'Start workout', stateId: 'WK_TODAY', route: '/workouts' });
+    chips.push({ label: isAr ? 'سجل فطار' : 'Log breakfast', stateId: 'NT_LOG_MEAL', route: '/nutrition' });
+    chips.push({ label: isAr ? 'استرتش الصبح' : 'Morning stretch', stateId: 'RC_STRETCH_MORNING' });
+  } else if (hour >= 11 && hour < 15) {
+    chips.push({ label: isAr ? 'سجل غدا' : 'Log lunch', stateId: 'NT_LOG_MEAL', route: '/nutrition' });
+    chips.push({ label: isAr ? 'ابدأ تمرين' : 'Start workout', stateId: 'WK_TODAY', route: '/workouts' });
+    chips.push({ label: isAr ? 'آكل ايه؟' : 'What to eat?', stateId: 'NT_SUGGEST' });
+  } else if (hour >= 15 && hour < 20) {
+    chips.push({ label: isAr ? 'ابدأ تمرين' : 'Start workout', stateId: 'WK_TODAY', route: '/workouts' });
+    chips.push({ label: isAr ? 'أكل قبل التمرين' : 'Pre-workout meal', stateId: 'NT_PRE_WORKOUT' });
+    chips.push({ label: isAr ? 'سجل وجبة' : 'Log meal', stateId: 'NT_LOG_MEAL', route: '/nutrition' });
+  } else {
+    chips.push({ label: isAr ? 'سجل عشا' : 'Log dinner', stateId: 'NT_LOG_MEAL', route: '/nutrition' });
+    chips.push({ label: isAr ? 'شوف تقدمي' : 'My progress', stateId: 'PR_MENU', route: '/progress' });
+    chips.push({ label: isAr ? 'استرتش قبل النوم' : 'Bedtime stretch', stateId: 'RC_STRETCH_NIGHT' });
+  }
+
+  return chips;
+}
+
+// ─── Contextual Placeholder ─────────────────────────────────
+function getContextualPlaceholder(domain: string, isAr: boolean): string {
+  const hints: Record<string, { en: string; ar: string }> = {
+    root:        { en: 'Try "start workout" or "log meal" or "change my name"', ar: 'جرب "ابدأ تمرين" أو "سجل وجبة" أو "غير اسمي"' },
+    workout:     { en: 'Try "chest exercises" or "skip today" or "form check"', ar: 'جرب "تمارين صدر" أو "اسكب النهارده" أو "الفورم"' },
+    nutrition:   { en: 'Try "log breakfast" or "high protein" or "pre workout meal"', ar: 'جرب "سجل فطار" أو "بروتين عالي" أو "أكل قبل التمرين"' },
+    health:      { en: 'Try "sleep data" or "heart rate" or "log weight"', ar: 'جرب "بيانات النوم" أو "نبض القلب" أو "سجل الوزن"' },
+    progress:    { en: 'Try "my progress" or "log weight" or "weekly check"', ar: 'جرب "تقدمي" أو "سجل الوزن" أو "تشيك أسبوعي"' },
+    programs:    { en: 'Try "beginner program" or "my program" or "browse"', ar: 'جرب "برنامج مبتدئين" أو "برنامجي" أو "تصفح"' },
+    supplements: { en: 'Try "creatine" or "protein powder" or "where to buy"', ar: 'جرب "كرياتين" أو "بروتين" أو "فين اشتري"' },
+    recovery:    { en: 'Try "foam rolling" or "morning stretch" or "ice bath"', ar: 'جرب "فوم رولر" أو "استرتش الصبح" أو "حمام تلج"' },
+    device:      { en: 'Try "apple watch" or "garmin" or "my devices"', ar: 'جرب "أبل واتش" أو "جارمين" أو "أجهزتي"' },
+    settings:    { en: 'Try "change password" or "edit profile" or "subscription"', ar: 'جرب "غير الباسورد" أو "عدل البروفايل" أو "الاشتراك"' },
+  };
+  return (hints[domain] || hints.root)[isAr ? 'ar' : 'en'];
+}
+
 // ─── Main Guided Chat Component ────────────────────────────
 export default function GuidedChat() {
   const { t, language } = useLanguage();
@@ -371,6 +423,9 @@ export default function GuidedChat() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // Time-aware welcome message on first load
+  const [welcomed, setWelcomed] = useState(false);
+
   // Fetch user subscription tier
   useEffect(() => {
     api.get('/users/me/subscription').then((sub: any) => {
@@ -378,6 +433,17 @@ export default function GuidedChat() {
       else if (sub?.plan) setUserTier(sub.plan.toUpperCase().replace('+', '_PLUS'));
     }).catch(() => {}); // Default to PREMIUM on error
   }, []);
+
+  // Show time-aware welcome on mount
+  useEffect(() => {
+    if (welcomed) return;
+    setWelcomed(true);
+    const greeting = getTimeGreeting(isAr);
+    setHistory([{
+      id: 'welcome', type: 'bot', text: greeting,
+      stateId: 'ROOT', domain: 'root', timestamp: Date.now(),
+    }]);
+  }, [isAr, welcomed]);
 
   const currentState: ChatState | null = (() => {
     try { return getState(currentStateId); } catch { return getState(INITIAL_STATE); }
@@ -557,14 +623,23 @@ export default function GuidedChat() {
         // State doesn't exist, just show the response
       }
     } else {
-      // No match — show helpful message
+      // No match — show domain-aware helpful message
+      const domainHints: Record<string, { en: string; ar: string }> = {
+        workout: { en: 'Try "chest exercises", "skip today", or "log workout"', ar: 'جرب "تمارين صدر" أو "اسكب النهارده" أو "سجل تمرين"' },
+        nutrition: { en: 'Try "log meal", "high protein foods", or "what to eat"', ar: 'جرب "سجل وجبة" أو "أكل بروتين عالي" أو "آكل ايه"' },
+        health: { en: 'Try "log weight", "sleep data", or "heart rate"', ar: 'جرب "سجل الوزن" أو "بيانات النوم" أو "نبض القلب"' },
+        settings: { en: 'Try "change password", "edit profile", or "subscription"', ar: 'جرب "غير الباسورد" أو "عدل البروفايل" أو "الاشتراك"' },
+      };
+      const currentDomain = currentState?.domain || 'root';
+      const hint = domainHints[currentDomain];
+      const fallbackEn = hint ? `I didn't quite get that. ${hint.en}` : 'I didn\'t quite get that. Try "start workout", "log meal", or "change my name"';
+      const fallbackAr = hint ? `مش فاهم تمام. ${hint.ar}` : 'مش فاهم تمام. جرب "ابدأ تمرين" أو "سجل وجبة" أو "غير اسمي"';
+
       setTimeout(() => {
         setHistory(prev => [...prev, {
           id: `bot-${Date.now()}`, type: 'bot',
-          text: isAr
-            ? 'مش فاهم تمام 😅 جرب اختار من الخيارات تحت، أو قولي حاجة زي "ابدأ تمرين" أو "غير اسمي"'
-            : "I didn't quite get that 😅 Try picking from the options below, or say something like \"start workout\" or \"change my name\"",
-          stateId: currentStateId, domain: 'root', timestamp: Date.now(),
+          text: isAr ? fallbackAr : fallbackEn,
+          stateId: currentStateId, domain: currentDomain, timestamp: Date.now(),
         }]);
       }, 300);
     }
@@ -756,6 +831,33 @@ export default function GuidedChat() {
         <ConfirmDialog action={pendingAction.action} isAr={isAr} onConfirm={handleConfirm} onCancel={handleCancel} />
       )}
 
+      {/* ─── Contextual Quick Actions (Root only) ─── */}
+      {isRoot && !pendingAction && history.length <= 2 && (
+        <div className="border-t border-border/60 bg-gradient-to-b from-primary/5 to-transparent px-3 py-2">
+          <p className="text-[11px] text-muted-foreground mb-1.5">{isAr ? 'إجراءات سريعة' : 'Quick actions'}</p>
+          <div className="flex flex-wrap gap-1.5">
+            {getContextualChips(isAr).map((chip, i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  setHistory(prev => [...prev, {
+                    id: `user-${Date.now()}`, type: 'user', text: chip.label, timestamp: Date.now(),
+                  }]);
+                  try {
+                    getState(chip.stateId);
+                    transitionTo(chip.stateId);
+                  } catch {}
+                  if (chip.route) setTimeout(() => router.push(chip.route!), 300);
+                }}
+                className="text-[12px] px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 active:scale-95 transition-all"
+              >
+                {chip.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* ─── Options Panel ─── */}
       {!pendingAction && filteredOptions.length > 0 && (
         <div className="border-t border-border/60 bg-muted/20 dark:bg-card">
@@ -868,7 +970,7 @@ export default function GuidedChat() {
             value={textInput}
             onChange={(e) => setTextInput(e.target.value)}
             onKeyDown={(e) => { if (e.key === 'Enter') handleTextSubmit(); }}
-            placeholder={isAr ? 'اكتب أي حاجة... مثلاً "غير اسمي"' : 'Type anything... e.g. "change my name"'}
+            placeholder={getContextualPlaceholder(currentState?.domain || 'root', isAr)}
             className="flex-1 bg-muted/50 border border-border/50 rounded-xl px-3.5 py-2.5 text-[13px] placeholder:text-muted-foreground/60 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary/50 transition-all"
             dir={isAr ? 'rtl' : 'ltr'}
           />
