@@ -58,15 +58,17 @@ export default function TrainerDetailPage() {
   const [showBookingDialog, setShowBookingDialog] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<'hourly' | 'monthly'>('monthly');
 
+  const isPlaceholder = id === '_placeholder' || id === '_placeholder_';
+
   // Redirect placeholder routes (static export artifact)
   useEffect(() => {
-    if (id === '_placeholder' || id === '_placeholder_') {
-      router.replace('/trainers');
+    if (isPlaceholder) {
+      window.location.href = '/trainers';
     }
-  }, [id, router]);
+  }, [isPlaceholder]);
 
   useEffect(() => {
-    if (id === '_placeholder' || id === '_placeholder_') return;
+    if (isPlaceholder) return;
 
     async function loadTrainer() {
       try {

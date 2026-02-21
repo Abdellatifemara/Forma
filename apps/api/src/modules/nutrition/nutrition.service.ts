@@ -14,17 +14,34 @@ export class NutritionService {
     page?: number;
     pageSize?: number;
   }) {
-    const { query, category, isEgyptian, page = 1, pageSize = 20 } = params;
+    const { query, category, isEgyptian, page = 1, pageSize = 50 } = params;
     const skip = (page - 1) * pageSize;
 
     const where: Prisma.FoodWhereInput = {};
 
     if (query) {
-      where.OR = [
-        { nameEn: { contains: query, mode: 'insensitive' } },
-        { nameAr: { contains: query, mode: 'insensitive' } },
-        { category: { contains: query, mode: 'insensitive' } },
-      ];
+      // Split query into words for better matching
+      const words = query.trim().split(/\s+/).filter(w => w.length >= 2);
+      if (words.length > 1) {
+        // Multi-word: each word must match somewhere (AND logic)
+        where.AND = words.map(word => ({
+          OR: [
+            { nameEn: { contains: word, mode: 'insensitive' as const } },
+            { nameAr: { contains: word, mode: 'insensitive' as const } },
+            { category: { contains: word, mode: 'insensitive' as const } },
+            { brandEn: { contains: word, mode: 'insensitive' as const } },
+            { tags: { has: word.toLowerCase() } },
+          ],
+        }));
+      } else {
+        where.OR = [
+          { nameEn: { contains: query, mode: 'insensitive' } },
+          { nameAr: { contains: query, mode: 'insensitive' } },
+          { category: { contains: query, mode: 'insensitive' } },
+          { brandEn: { contains: query, mode: 'insensitive' } },
+          { tags: { has: query.toLowerCase() } },
+        ];
+      }
     }
 
     if (category) {

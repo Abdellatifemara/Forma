@@ -111,16 +111,18 @@ export default function ActiveWorkoutPage() {
   const [showFinishDialog, setShowFinishDialog] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
 
+  const isPlaceholder = workoutId === '_placeholder' || workoutId === '_placeholder_';
+
   // Redirect placeholder routes (static export artifact)
   useEffect(() => {
-    if (workoutId === '_placeholder' || workoutId === '_placeholder_') {
-      router.replace('/workouts');
+    if (isPlaceholder) {
+      window.location.href = '/workouts';
     }
-  }, [workoutId, router]);
+  }, [isPlaceholder]);
 
   // Fetch workout data and start session
   useEffect(() => {
-    if (workoutId === '_placeholder' || workoutId === '_placeholder_') return;
+    if (isPlaceholder) return;
 
     async function initializeWorkout() {
       setIsLoading(true);

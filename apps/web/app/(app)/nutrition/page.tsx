@@ -89,6 +89,7 @@ export default function NutritionPage() {
   const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
   const [logDialogOpen, setLogDialogOpen] = useState(false);
   const [waterGlasses, setWaterGlasses] = useState(6);
+  const [selectedFood, setSelectedFood] = useState<any>(null);
   const { data: dailyData, isLoading: dailyLoading, error: dailyError } = useDailyNutrition();
   const { data: searchResults, isLoading: searchLoading } = useFoodSearch(debouncedSearch);
 
@@ -270,23 +271,39 @@ export default function NutritionPage() {
                       ) : (() => {
                         const foods = Array.isArray(searchResults) ? searchResults : searchResults?.foods || [];
                         return foods.length > 0 ? (
-                        <div className="max-h-48 space-y-2 overflow-y-auto">
+                        <div className="max-h-64 space-y-2 overflow-y-auto">
                           {foods.map((food: any) => (
                             <div
                               key={food.id}
+                              onClick={() => setSelectedFood(food)}
                               className="flex cursor-pointer items-center justify-between rounded-xl border border-border/50 p-3 hover:bg-primary/5 hover:border-primary/30 transition-all"
                             >
-                              <div>
-                                <span className="font-medium">{food.nameEn || food.name}</span>
-                                {(food.brandEn || food.brand) && (
-                                  <span className="ml-2 text-xs text-muted-foreground">
-                                    ({food.brandEn || food.brand})
-                                  </span>
+                              <div className="flex items-center gap-3">
+                                {food.imageUrl ? (
+                                  <img src={food.imageUrl} alt={food.nameEn} className="h-10 w-10 rounded-lg object-cover" />
+                                ) : (
+                                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                                    <Apple className="h-5 w-5 text-primary" />
+                                  </div>
                                 )}
+                                <div>
+                                  <span className="font-medium text-sm">{food.nameEn || food.name}</span>
+                                  {(food.brandEn || food.brand) && (
+                                    <p className="text-xs text-muted-foreground">{food.brandEn || food.brand}</p>
+                                  )}
+                                  <div className="flex gap-2 mt-0.5">
+                                    <span className="text-[10px] text-muted-foreground">P: {Math.round(food.proteinG || 0)}g</span>
+                                    <span className="text-[10px] text-muted-foreground">C: {Math.round(food.carbsG || 0)}g</span>
+                                    <span className="text-[10px] text-muted-foreground">F: {Math.round(food.fatG || 0)}g</span>
+                                  </div>
+                                </div>
                               </div>
-                              <Badge variant="outline" className="text-xs">
-                                {Math.round(food.calories)} kcal
-                              </Badge>
+                              <div className="text-right shrink-0">
+                                <Badge variant="outline" className="text-xs">
+                                  {Math.round(food.calories)} kcal
+                                </Badge>
+                                <p className="text-[10px] text-muted-foreground mt-0.5">{food.servingSizeG}g</p>
+                              </div>
                             </div>
                           ))}
                         </div>
@@ -662,6 +679,115 @@ export default function NutritionPage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* Food Detail Dialog */}
+      <Dialog open={!!selectedFood} onOpenChange={(open) => { if (!open) setSelectedFood(null); }}>
+        <DialogContent className="rounded-2xl border border-border/50 bg-card sm:max-w-md">
+          {selectedFood && (
+            <>
+              <DialogHeader>
+                <DialogTitle className="flex items-center gap-3">
+                  {selectedFood.imageUrl ? (
+                    <img src={selectedFood.imageUrl} alt={selectedFood.nameEn} className="h-12 w-12 rounded-xl object-cover" />
+                  ) : (
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                      <Apple className="h-6 w-6 text-primary" />
+                    </div>
+                  )}
+                  <div>
+                    <span>{selectedFood.nameEn || selectedFood.name}</span>
+                    {selectedFood.nameAr && (
+                      <p className="text-sm font-normal text-muted-foreground">{selectedFood.nameAr}</p>
+                    )}
+                  </div>
+                </DialogTitle>
+                <DialogDescription className="sr-only">
+                  {isAr ? 'تفاصيل الغذاء' : 'Food details'}
+                </DialogDescription>
+              </DialogHeader>
+
+              {/* Brand & Category */}
+              <div className="flex flex-wrap gap-2">
+                {(selectedFood.brandEn || selectedFood.brand) && (
+                  <Badge variant="outline" className="text-xs">{selectedFood.brandEn || selectedFood.brand}</Badge>
+                )}
+                {selectedFood.category && (
+                  <Badge variant="secondary" className="text-xs">{selectedFood.category}</Badge>
+                )}
+                {selectedFood.isEgyptian && (
+                  <Badge className="text-xs bg-green-500/10 text-green-600">Egyptian</Badge>
+                )}
+              </div>
+
+              {/* Serving info */}
+              <div className="rounded-xl bg-muted/30 p-4">
+                <p className="text-xs text-muted-foreground mb-2">
+                  {isAr ? 'لكل حصة' : 'Per serving'} ({selectedFood.servingSizeG}{selectedFood.servingUnit || 'g'})
+                </p>
+                <div className="grid grid-cols-4 gap-3 text-center">
+                  <div>
+                    <p className="text-lg font-bold text-primary">{Math.round(selectedFood.calories)}</p>
+                    <p className="text-[10px] text-muted-foreground">kcal</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold text-blue-500">{Math.round(selectedFood.proteinG || 0)}g</p>
+                    <p className="text-[10px] text-muted-foreground">{isAr ? 'بروتين' : 'Protein'}</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold text-amber-500">{Math.round(selectedFood.carbsG || 0)}g</p>
+                    <p className="text-[10px] text-muted-foreground">{isAr ? 'كربو' : 'Carbs'}</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold text-red-400">{Math.round(selectedFood.fatG || 0)}g</p>
+                    <p className="text-[10px] text-muted-foreground">{isAr ? 'دهون' : 'Fat'}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Micronutrients (if available) */}
+              {(selectedFood.fiberG || selectedFood.sugarG || selectedFood.sodiumMg) && (
+                <div className="space-y-2">
+                  <p className="text-xs font-medium text-muted-foreground">{isAr ? 'تفاصيل إضافية' : 'Additional Details'}</p>
+                  <div className="grid grid-cols-3 gap-2">
+                    {selectedFood.fiberG != null && (
+                      <div className="rounded-lg bg-muted/20 p-2 text-center">
+                        <p className="text-sm font-semibold">{Math.round(selectedFood.fiberG)}g</p>
+                        <p className="text-[10px] text-muted-foreground">{isAr ? 'ألياف' : 'Fiber'}</p>
+                      </div>
+                    )}
+                    {selectedFood.sugarG != null && (
+                      <div className="rounded-lg bg-muted/20 p-2 text-center">
+                        <p className="text-sm font-semibold">{Math.round(selectedFood.sugarG)}g</p>
+                        <p className="text-[10px] text-muted-foreground">{isAr ? 'سكر' : 'Sugar'}</p>
+                      </div>
+                    )}
+                    {selectedFood.sodiumMg != null && (
+                      <div className="rounded-lg bg-muted/20 p-2 text-center">
+                        <p className="text-sm font-semibold">{Math.round(selectedFood.sodiumMg)}mg</p>
+                        <p className="text-[10px] text-muted-foreground">{isAr ? 'صوديوم' : 'Sodium'}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              {/* Add to meal button */}
+              {selectedMealType && (
+                <Button
+                  className="w-full btn-primary"
+                  onClick={() => {
+                    toast({ title: isAr ? 'تم إضافة الطعام' : 'Food added', description: selectedFood.nameEn });
+                    setSelectedFood(null);
+                  }}
+                >
+                  <Plus className="mr-2 h-4 w-4" />
+                  {isAr ? 'أضف للوجبة' : 'Add to Meal'}
+                </Button>
+              )}
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
