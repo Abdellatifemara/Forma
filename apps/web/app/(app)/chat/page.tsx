@@ -30,33 +30,21 @@ function renderMessageContent(content: string) {
       const [, linkText, href] = linkMatch;
       if (href.startsWith('http')) {
         return (
-          <a
-            key={i}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary underline underline-offset-2 hover:text-primary/80 font-medium"
-          >
+          <a key={i} href={href} target="_blank" rel="noopener noreferrer"
+            className="text-primary underline underline-offset-2 hover:text-primary/80 font-medium">
             {linkText}
           </a>
         );
       }
       return (
-        <Link
-          key={i}
-          href={href}
-          className="text-primary underline underline-offset-2 hover:text-primary/80 font-medium"
-        >
+        <Link key={i} href={href}
+          className="text-primary underline underline-offset-2 hover:text-primary/80 font-medium">
           {linkText}
         </Link>
       );
     }
-
     const boldMatch = part.match(/^\*\*([^*]+)\*\*$/);
-    if (boldMatch) {
-      return <strong key={i}>{boldMatch[1]}</strong>;
-    }
-
+    if (boldMatch) return <strong key={i}>{boldMatch[1]}</strong>;
     return <span key={i}>{part}</span>;
   });
 }
@@ -85,21 +73,21 @@ function SourceBadge({ source }: { source?: string }) {
   );
 }
 
-// ─── Typing Indicator (3-dot bounce) ──────────────────────────
+// ─── Typing Indicator ──────────────────────────────────────────
 
 function TypingIndicator() {
   return (
     <div className="flex gap-3">
       <Avatar className="h-8 w-8 flex-shrink-0">
-        <AvatarFallback className="bg-amber-500 text-white">
+        <AvatarFallback className="bg-primary text-white">
           <Bot className="h-4 w-4" />
         </AvatarFallback>
       </Avatar>
-      <div className="bg-muted rounded-2xl rounded-tl-sm px-4 py-3">
+      <div className="bg-muted/60 rounded-2xl rounded-tl-md px-4 py-3">
         <div className="flex items-center gap-1">
-          <span className="h-2 w-2 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '0ms' }} />
-          <span className="h-2 w-2 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '150ms' }} />
-          <span className="h-2 w-2 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '300ms' }} />
+          <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '0ms' }} />
+          <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '150ms' }} />
+          <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/40 animate-bounce" style={{ animationDelay: '300ms' }} />
         </div>
       </div>
     </div>
@@ -116,12 +104,9 @@ type MessageAction =
 
 function messageReducer(state: ChatMessage[], action: MessageAction): ChatMessage[] {
   switch (action.type) {
-    case 'ADD_MESSAGE':
-      return [...state, action.message];
-    case 'SET_MESSAGES':
-      return action.messages;
-    default:
-      return state;
+    case 'ADD_MESSAGE': return [...state, action.message];
+    case 'SET_MESSAGES': return action.messages;
+    default: return state;
   }
 }
 
@@ -129,32 +114,34 @@ function messageReducer(state: ChatMessage[], action: MessageAction): ChatMessag
 
 function ChatSkeleton() {
   return (
-    <div className="flex flex-col h-[600px] max-h-[80vh] border border-border/60 rounded-2xl bg-white dark:bg-card overflow-hidden shadow-card">
-      {/* Header skeleton */}
-      <div className="flex items-center gap-3 px-4 py-3 border-b">
-        <div className="h-10 w-10 rounded-full animate-shimmer" />
+    <div className="flex flex-col h-[calc(100dvh-180px)] min-h-[400px] max-h-[700px] border border-border/60 rounded-2xl bg-white dark:bg-card overflow-hidden">
+      <div className="flex items-center gap-3 px-4 py-3 border-b border-border/60">
+        <div className="h-10 w-10 rounded-2xl animate-shimmer" />
         <div className="flex-1 space-y-2">
-          <div className="h-4 w-24 rounded animate-shimmer" />
-          <div className="h-3 w-40 rounded animate-shimmer" />
+          <div className="h-4 w-24 rounded-lg animate-shimmer" />
+          <div className="h-3 w-40 rounded-lg animate-shimmer" />
         </div>
       </div>
-      {/* Messages skeleton */}
       <div className="flex-1 p-4 space-y-4">
         <div className="flex gap-3">
-          <div className="h-8 w-8 rounded-full animate-shimmer flex-shrink-0" />
+          <div className="h-7 w-7 rounded-xl animate-shimmer flex-shrink-0" />
           <div className="h-16 w-[60%] rounded-2xl animate-shimmer" />
         </div>
         <div className="flex gap-3 justify-end">
           <div className="h-10 w-[40%] rounded-2xl animate-shimmer" />
         </div>
         <div className="flex gap-3">
-          <div className="h-8 w-8 rounded-full animate-shimmer flex-shrink-0" />
+          <div className="h-7 w-7 rounded-xl animate-shimmer flex-shrink-0" />
           <div className="h-12 w-[55%] rounded-2xl animate-shimmer" />
         </div>
       </div>
-      {/* Input skeleton */}
-      <div className="border-t p-4">
-        <div className="h-10 w-full rounded-xl animate-shimmer" />
+      <div className="border-t border-border/60 p-3">
+        <div className="grid grid-cols-2 gap-2">
+          <div className="h-14 rounded-xl animate-shimmer" />
+          <div className="h-14 rounded-xl animate-shimmer" />
+          <div className="h-14 rounded-xl animate-shimmer" />
+          <div className="h-14 rounded-xl animate-shimmer" />
+        </div>
       </div>
     </div>
   );
@@ -179,189 +166,122 @@ function FreeChat({ tier }: { tier: string }) {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved) as ChatMessage[];
-        if (parsed.length > 0) {
-          dispatch({ type: 'SET_MESSAGES', messages: parsed });
-          setMounted(true);
-          return;
-        }
+        if (parsed.length > 0) { dispatch({ type: 'SET_MESSAGES', messages: parsed }); setMounted(true); return; }
       }
-    } catch {
-      // Ignore
-    }
-
-    dispatch({
-      type: 'SET_MESSAGES',
-      messages: [{
-        id: 'welcome',
-        role: 'assistant',
-        content: t.chat.welcome,
-      }]
-    });
+    } catch { /* ignore */ }
+    dispatch({ type: 'SET_MESSAGES', messages: [{ id: 'welcome', role: 'assistant', content: t.chat.welcome }] });
     setMounted(true);
   }, []);
 
-  useEffect(() => {
-    aiApi.getChatUsage()
-      .then(stats => setUsageStats(stats))
-      .catch(() => {});
-  }, [messages.length]);
-
-  useEffect(() => {
-    if (mounted) bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages, mounted]);
-
+  useEffect(() => { aiApi.getChatUsage().then(stats => setUsageStats(stats)).catch(() => {}); }, [messages.length]);
+  useEffect(() => { if (mounted) bottomRef.current?.scrollIntoView({ behavior: 'smooth' }); }, [messages, mounted]);
   useEffect(() => {
     if (mounted && messages.length > 0) {
-      try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
-      } catch { /* ignore */ }
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(messages)); } catch { /* ignore */ }
     }
   }, [messages, mounted]);
 
   const sendMessage = useCallback(async (overrideText?: string) => {
     const text = (overrideText || inputValue).trim();
     if (!text || isLoading) return;
-
-    const userMsg: ChatMessage = {
-      id: `user-${Date.now()}`,
-      role: 'user',
-      content: text,
-    };
-
+    const userMsg: ChatMessage = { id: `user-${Date.now()}`, role: 'user', content: text };
     dispatch({ type: 'ADD_MESSAGE', message: userMsg });
     if (!overrideText) setInputValue('');
-
     setIsLoading(true);
 
     try {
-      const history = messages.slice(-8).map(m => ({
-        role: m.role as 'user' | 'assistant',
-        content: m.content,
-      }));
-
-      const result = await aiApi.chat(text, {
-        language: isAr ? 'ar' : 'en',
-        conversationHistory: history,
-      });
-
-      const assistantMsg: ChatMessage = {
-        id: `assistant-${Date.now()}`,
-        role: 'assistant',
-        content: result.response || (isAr ? '\u062A\u0645 \u0627\u0633\u062A\u0644\u0627\u0645 \u0631\u0633\u0627\u0644\u062A\u0643.' : 'I received your message.'),
+      const history = messages.slice(-8).map(m => ({ role: m.role as 'user' | 'assistant', content: m.content }));
+      const result = await aiApi.chat(text, { language: isAr ? 'ar' : 'en', conversationHistory: history });
+      dispatch({ type: 'ADD_MESSAGE', message: {
+        id: `assistant-${Date.now()}`, role: 'assistant',
+        content: result.response || (isAr ? 'تم استلام رسالتك.' : 'I received your message.'),
         source: result.source,
-      };
-
-      dispatch({ type: 'ADD_MESSAGE', message: assistantMsg });
+      }});
     } catch (error: any) {
       const is403 = error?.message?.includes('403') || error?.status === 403;
-      const errorContent = is403
-        ? (isAr ? '\uD83D\uDD12 \u0648\u0635\u0644\u062A \u0644\u0644\u062D\u062F \u0627\u0644\u064A\u0648\u0645\u064A! \u062C\u0631\u0628 \u062A\u0627\u0646\u064A \u0628\u0643\u0631\u0629 \u0623\u0648 \u0627\u0634\u062A\u0631\u0643 \u0641\u064A \u0628\u0627\u0642\u0629 \u0623\u0639\u0644\u0649.' : '\uD83D\uDD12 Daily limit reached! Try again tomorrow or upgrade your plan.')
-        : t.chat.errorMessage;
-
-      dispatch({
-        type: 'ADD_MESSAGE',
-        message: {
-          id: `error-${Date.now()}`,
-          role: 'assistant',
-          content: errorContent,
-          isError: true,
-        },
-      });
-    } finally {
-      setIsLoading(false);
-      inputRef.current?.focus();
-    }
+      dispatch({ type: 'ADD_MESSAGE', message: {
+        id: `error-${Date.now()}`, role: 'assistant',
+        content: is403
+          ? (isAr ? 'وصلت للحد اليومي! جرب تاني بكرة أو اشترك في باقة أعلى.' : 'Daily limit reached! Try again tomorrow or upgrade your plan.')
+          : t.chat.errorMessage,
+        isError: true,
+      }});
+    } finally { setIsLoading(false); inputRef.current?.focus(); }
   }, [inputValue, isLoading, messages, isAr, t]);
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
-    }
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
   };
 
-  if (!mounted) {
-    return <ChatSkeleton />;
-  }
+  if (!mounted) return <ChatSkeleton />;
 
   const usageText = usageStats && usageStats.limit > 0
     ? `${usageStats.used}/${usageStats.limit}`
-    : usageStats?.limit === -1
-    ? '\u221E'
-    : null;
+    : usageStats?.limit === -1 ? '\u221E' : null;
 
   return (
-    <div className="flex flex-col h-[600px] max-h-[80vh] border border-border/60 rounded-2xl bg-white dark:bg-card overflow-hidden shadow-card">
-      {/* Header — Clean premium */}
-      <div className="flex items-center gap-3 px-4 py-3 border-b">
-        <div className="h-10 w-10 rounded-full bg-amber-500 flex items-center justify-center">
-          <Sparkles className="h-5 w-5 text-white" />
+    <div className="flex flex-col h-[calc(100dvh-180px)] min-h-[400px] max-h-[700px] border border-border/60 rounded-2xl bg-white dark:bg-card overflow-hidden" dir={isAr ? 'rtl' : 'ltr'}>
+      {/* Header */}
+      <div className="flex items-center gap-3 px-4 py-3 border-b border-border/60">
+        <div className="h-10 w-10 rounded-2xl bg-primary/10 flex items-center justify-center">
+          <Sparkles className="h-5 w-5 text-primary" />
         </div>
         <div className="flex-1">
-          <h1 className="font-semibold">{t.chat.title}</h1>
-          <p className="text-xs text-muted-foreground">
-            {isAr ? '\u0627\u0643\u062A\u0628 \u0623\u064A \u062D\u0627\u062C\u0629 \u2014 \u0623\u0646\u0627 \u0647\u0646\u0627 \u0639\u0634\u0627\u0646\u0643' : "Type anything \u2014 I'm here for you"}
+          <div className="flex items-center gap-2">
+            <h1 className="font-semibold text-sm">{t.chat.title}</h1>
+            <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
+          </div>
+          <p className="text-[11px] text-muted-foreground mt-0.5">
+            {isAr ? 'اكتب أي حاجة — أنا هنا عشانك' : "Type anything \u2014 I'm here for you"}
           </p>
         </div>
         <div className="flex items-center gap-2">
           {usageText && (
-            <Badge variant="outline" className="text-xs font-mono">
-              {usageText} {isAr ? '\u064A\u0648\u0645\u064A' : 'today'}
+            <Badge variant="outline" className="text-[10px] font-mono h-5 px-1.5">
+              {usageText}
             </Badge>
           )}
-          <Badge className="text-xs bg-amber-500 text-white hover:bg-amber-600">
+          <Badge className="text-[10px] bg-gradient-to-r from-amber-500 to-orange-500 text-white border-0 h-5 px-2">
             Premium+
           </Badge>
         </div>
       </div>
 
-      {/* Messages Area */}
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      {/* Messages */}
+      <div className="flex-1 overflow-y-auto p-4 space-y-3">
         {messages.map((msg) => (
-          <div
-            key={msg.id}
-            className={`flex gap-3 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}
-          >
-            <Avatar className="h-8 w-8 flex-shrink-0">
-              <AvatarFallback className={
-                msg.role === 'assistant'
-                  ? msg.isError
-                    ? 'bg-red-50 text-red-600 dark:bg-red-900/30'
-                    : 'bg-amber-500 text-white'
-                  : 'bg-primary/10 text-primary'
-              }>
-                {msg.role === 'assistant' ? (
-                  msg.isError ? <AlertCircle className="h-4 w-4" /> : <Bot className="h-4 w-4" />
-                ) : (
-                  <User className="h-4 w-4" />
-                )}
-              </AvatarFallback>
-            </Avatar>
-
-            <div className="max-w-[80%] space-y-1">
-              <div className={`rounded-2xl px-4 py-2.5 ${
-                msg.role === 'user'
-                  ? 'bg-primary text-primary-foreground rounded-tr-sm'
-                  : msg.isError
-                  ? 'bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-tl-sm'
-                  : 'bg-muted rounded-tl-sm'
-              }`}>
-                <p className="text-sm whitespace-pre-wrap leading-relaxed">{renderMessageContent(msg.content)}</p>
-              </div>
-              {msg.role === 'assistant' && msg.source && (
-                <SourceBadge source={msg.source} />
+          <div key={msg.id} className={`flex gap-2.5 ${msg.role === 'user' ? 'flex-row-reverse' : ''} animate-fade-up`}>
+            <div className={`h-7 w-7 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5 ${
+              msg.role === 'assistant'
+                ? msg.isError ? 'bg-red-500/10 text-red-600 dark:text-red-400' : 'bg-primary/10 text-primary'
+                : 'bg-muted text-muted-foreground'
+            }`}>
+              {msg.role === 'assistant' ? (
+                msg.isError ? <AlertCircle className="h-3.5 w-3.5" /> : <Bot className="h-3.5 w-3.5" />
+              ) : (
+                <User className="h-3.5 w-3.5" />
               )}
+            </div>
+            <div className="max-w-[80%] space-y-1">
+              <div className={`rounded-2xl px-3.5 py-2.5 ${
+                msg.role === 'user'
+                  ? 'bg-primary text-primary-foreground rounded-tr-md'
+                  : msg.isError
+                  ? 'bg-red-50 dark:bg-red-950/30 border border-red-100 dark:border-red-900/40 rounded-tl-md'
+                  : 'bg-muted/60 rounded-tl-md'
+              }`}>
+                <p className="text-[13px] whitespace-pre-wrap leading-relaxed">{renderMessageContent(msg.content)}</p>
+              </div>
+              {msg.role === 'assistant' && msg.source && <SourceBadge source={msg.source} />}
             </div>
           </div>
         ))}
-
         {isLoading && <TypingIndicator />}
-
         <div ref={bottomRef} />
       </div>
 
-      {/* Input Area */}
-      <div className="border-t p-3 bg-white dark:bg-card">
+      {/* Input */}
+      <div className="border-t border-border/60 p-3">
         <div className="flex gap-2">
           <Input
             ref={inputRef}
@@ -370,20 +290,15 @@ function FreeChat({ tier }: { tier: string }) {
             onKeyDown={handleKeyDown}
             placeholder={t.chat.inputPlaceholder}
             disabled={isLoading}
-            className="flex-1 rounded-xl border-border/60"
-            dir={isAr ? 'rtl' : 'ltr'}
+            className="flex-1 h-10 rounded-xl border-border/60 text-[13px]"
           />
           <Button
             onClick={() => sendMessage()}
             disabled={!inputValue.trim() || isLoading}
             size="icon"
-            className="h-10 w-10 rounded-xl bg-primary hover:bg-primary/90"
+            className="h-10 w-10 rounded-xl"
           >
-            {isLoading ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
-            ) : (
-              <Send className="h-4 w-4" />
-            )}
+            {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
           </Button>
         </div>
       </div>
@@ -397,26 +312,20 @@ function FreeChat({ tier }: { tier: string }) {
 // Trial/Free → Guided Chat (same as Premium)
 
 export default function ChatPage() {
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
   const isAr = language === 'ar';
   const [tier, setTier] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     aiApi.getChatUsage()
-      .then(stats => {
-        setTier(stats.tier || 'FREE');
-        setLoading(false);
-      })
-      .catch(() => {
-        setTier('PREMIUM');
-        setLoading(false);
-      });
+      .then(stats => { setTier(stats.tier || 'FREE'); setLoading(false); })
+      .catch(() => { setTier('PREMIUM'); setLoading(false); });
   }, []);
 
   if (loading) {
     return (
-      <div className="max-w-2xl mx-auto px-4 py-6">
+      <div className="max-w-2xl mx-auto px-4 py-4">
         <ChatSkeleton />
       </div>
     );
@@ -425,36 +334,31 @@ export default function ChatPage() {
   const isPremiumPlus = tier === 'PREMIUM_PLUS';
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-6">
-      {/* Tier indicator */}
-      <div className="flex items-center justify-between mb-4">
+    <div className="max-w-2xl mx-auto px-4 py-4">
+      {/* Tier badge — compact */}
+      <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           {isPremiumPlus ? (
-            <Badge className="bg-amber-500 text-white text-xs hover:bg-amber-600">
+            <Badge className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[11px] border-0 h-6">
               <MessageSquare className="h-3 w-3 me-1" />
-              {isAr ? '\u0645\u062D\u0627\u062F\u062B\u0629 \u062D\u0631\u0629' : 'Free Chat'}
+              {isAr ? 'محادثة حرة' : 'Free Chat'}
             </Badge>
           ) : (
-            <Badge className="bg-primary text-white text-xs">
+            <Badge className="bg-primary/10 text-primary text-[11px] border-0 h-6">
               <LayoutGrid className="h-3 w-3 me-1" />
-              {isAr ? '\u0645\u0633\u0627\u0639\u062F \u0630\u0643\u064A' : 'Smart Guide'}
+              {isAr ? 'مساعد ذكي' : 'Smart Guide'}
             </Badge>
           )}
         </div>
-        <p className="text-xs text-muted-foreground">
+        <p className="text-[11px] text-muted-foreground">
           {isPremiumPlus
-            ? (isAr ? '\u0627\u0643\u062A\u0628 \u0623\u064A \u0633\u0624\u0627\u0644 \u0648\u0623\u0646\u0627 \u0647\u062C\u0627\u0648\u0628\u0643' : 'Ask me anything')
-            : (isAr ? '\u0627\u062E\u062A\u0627\u0631 \u0645\u0646 \u0627\u0644\u062E\u064A\u0627\u0631\u0627\u062A' : 'Pick from the options')
+            ? (isAr ? 'اكتب أي سؤال وأنا هجاوبك' : 'Ask me anything')
+            : (isAr ? 'اختار من الخيارات' : 'Pick from the options')
           }
         </p>
       </div>
 
-      {/* Chat Component */}
-      {isPremiumPlus ? (
-        <FreeChat tier={tier!} />
-      ) : (
-        <GuidedChat />
-      )}
+      {isPremiumPlus ? <FreeChat tier={tier!} /> : <GuidedChat />}
     </div>
   );
 }

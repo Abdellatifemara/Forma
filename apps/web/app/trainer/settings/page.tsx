@@ -164,12 +164,12 @@ export default function TrainerSettingsPage() {
         <Button onClick={handleSave} disabled={isSaving} className="btn-primary">
           {isSaving ? (
             <>
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              <Loader2 className="me-2 h-4 w-4 animate-spin" />
               {t.trainer.saving}
             </>
           ) : (
             <>
-              <Save className="mr-2 h-4 w-4" />
+              <Save className="me-2 h-4 w-4" />
               {t.trainer.saveChanges}
             </>
           )}
@@ -179,19 +179,19 @@ export default function TrainerSettingsPage() {
       <Tabs defaultValue="profile" className="space-y-6">
         <TabsList className="bg-muted/50">
           <TabsTrigger value="profile">
-            <User className="mr-2 h-4 w-4" />
+            <User className="me-2 h-4 w-4" />
             {t.trainer.tabProfile}
           </TabsTrigger>
           <TabsTrigger value="notifications">
-            <Bell className="mr-2 h-4 w-4" />
+            <Bell className="me-2 h-4 w-4" />
             {t.trainer.tabNotifications}
           </TabsTrigger>
           <TabsTrigger value="availability">
-            <Clock className="mr-2 h-4 w-4" />
+            <Clock className="me-2 h-4 w-4" />
             {t.trainer.tabAvailability}
           </TabsTrigger>
           <TabsTrigger value="billing">
-            <CreditCard className="mr-2 h-4 w-4" />
+            <CreditCard className="me-2 h-4 w-4" />
             {t.trainer.tabBilling}
           </TabsTrigger>
         </TabsList>
@@ -208,7 +208,7 @@ export default function TrainerSettingsPage() {
             <CardContent className="flex items-center gap-6">
               <Avatar className="h-24 w-24 border-4 border-primary/30">
                 <AvatarImage src={trainerProfile?.user?.avatarUrl || undefined} />
-                <AvatarFallback className="text-2xl bg-gradient-to-br from-cyan-500 to-purple-500 text-white">
+                <AvatarFallback className="text-2xl bg-primary text-white">
                   {profile.firstName && profile.lastName
                     ? `${profile.firstName[0]}${profile.lastName[0]}`
                     : 'TR'}
@@ -231,12 +231,12 @@ export default function TrainerSettingsPage() {
                 >
                   {isUploadingPhoto ? (
                     <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      <Loader2 className="me-2 h-4 w-4 animate-spin" />
                       {t.trainer.uploading}
                     </>
                   ) : (
                     <>
-                      <Camera className="mr-2 h-4 w-4" />
+                      <Camera className="me-2 h-4 w-4" />
                       {t.trainer.changePhoto}
                     </>
                   )}

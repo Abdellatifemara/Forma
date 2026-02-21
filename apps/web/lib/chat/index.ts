@@ -1,12 +1,13 @@
 /**
- * Forma Fitness — Premium Guided Chat State Machine
+ * Forma Fitness — Guided Chat State Machine
  *
- * 172 states across 9 domains:
- *   root (9) → workout (37) → nutrition (32) → health (44)
- *   → devices (11) → supplements → programs → progress → recovery (39 combined)
+ * 180+ states across 9 domains:
+ *   root (9) → workout (37+) → nutrition (32+) → health (44+)
+ *   → devices (11) → supplements → programs → progress → recovery
+ *   + Premium+ GPT-enhanced leaf nodes (11)
  *
- * Premium (299 LE/mo): Guided chat — user picks from premade options only
- * Premium+ (999 LE/mo): Free chat — full GPT conversation
+ * Premium (299 LE/mo):  Guided chat — premade options only, no GPT
+ * Premium+ (999 LE/mo): Guided chat — deeper options + smart GPT at leaves
  */
 
 import type { ChatState } from './types';
@@ -18,6 +19,7 @@ import { nutritionStates } from './states-nutrition';
 import { healthStates } from './states-health';
 import { deviceStates } from './states-devices';
 import { supplementStates, programStates, progressStates, recoveryStates } from './states-remaining';
+import { premiumPlusStates } from './states-premium-plus';
 
 // All states combined into a single array
 export const ALL_STATES: ChatState[] = [
@@ -30,6 +32,7 @@ export const ALL_STATES: ChatState[] = [
   ...programStates,
   ...progressStates,
   ...recoveryStates,
+  ...premiumPlusStates,
 ];
 
 // Map for O(1) lookup by state ID
@@ -59,6 +62,7 @@ export { nutritionStates } from './states-nutrition';
 export { healthStates } from './states-health';
 export { deviceStates } from './states-devices';
 export { supplementStates, programStates, progressStates, recoveryStates } from './states-remaining';
+export { premiumPlusStates } from './states-premium-plus';
 
 // Stats
 export const TOTAL_STATES = ALL_STATES.length;

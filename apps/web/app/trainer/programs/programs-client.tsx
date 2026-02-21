@@ -272,8 +272,8 @@ function ProgramsPageContent() {
         <Card className="glass border-border/50">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-xl bg-cyan-500/20">
-                <FileText className="h-5 w-5 text-cyan-400" />
+              <div className="p-2 rounded-xl bg-blue-500/20">
+                <FileText className="h-5 w-5 text-blue-400" />
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats.total}</p>

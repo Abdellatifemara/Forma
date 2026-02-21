@@ -26,7 +26,7 @@ export default function Error({
       </p>
       <button
         onClick={() => reset()}
-        className="mt-6 rounded-md bg-forma-teal px-6 py-2 text-white hover:bg-forma-teal/90"
+        className="mt-6 rounded-md bg-forma-orange px-6 py-2 text-white hover:bg-forma-orange/90"
       >
         {isAr ? 'حاول تاني' : 'Try again'}
       </button>

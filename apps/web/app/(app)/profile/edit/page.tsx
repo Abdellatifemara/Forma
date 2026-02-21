@@ -62,14 +62,14 @@ export default function EditProfilePage() {
 
   if (userLoading) {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
-        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+      <div className="flex min-h-[50vh] items-center justify-center">
+        <Loader2 className="h-8 w-8 animate-spin text-forma-orange" />
       </div>
     );
   }
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       <div className="flex items-center gap-4">
         <Button variant="ghost" size="icon" asChild>
           <Link href="/profile">

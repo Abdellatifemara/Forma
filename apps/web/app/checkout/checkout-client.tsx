@@ -107,7 +107,7 @@ function CheckoutContent() {
     <div className="min-h-screen bg-background">
       {/* Background effects */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-500/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-500/10 rounded-full blur-[128px]" />
         <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/10 rounded-full blur-[128px]" />
       </div>
 
@@ -157,7 +157,7 @@ function CheckoutContent() {
             <div
               className={cn(
                 'rounded-2xl border p-6 h-fit',
-                plan === 'PREMIUM' && 'border-cyan-500/50 bg-cyan-500/5',
+                plan === 'PREMIUM' && 'border-blue-500/50 bg-blue-500/5',
                 plan === 'PREMIUM_PLUS' && 'border-purple-500/50 bg-purple-500/5'
               )}
             >
@@ -165,14 +165,14 @@ function CheckoutContent() {
                 <div
                   className={cn(
                     'p-3 rounded-xl',
-                    plan === 'PREMIUM' && 'bg-cyan-500/20',
+                    plan === 'PREMIUM' && 'bg-blue-500/20',
                     plan === 'PREMIUM_PLUS' && 'bg-purple-500/20'
                   )}
                 >
                   {plan === 'PREMIUM_PLUS' ? (
                     <Crown className="h-6 w-6 text-purple-500" />
                   ) : (
-                    <Zap className="h-6 w-6 text-cyan-500" />
+                    <Zap className="h-6 w-6 text-blue-500" />
                   )}
                 </div>
                 <div>
@@ -188,7 +188,7 @@ function CheckoutContent() {
                     <Check
                       className={cn(
                         'h-4 w-4',
-                        plan === 'PREMIUM' && 'text-cyan-500',
+                        plan === 'PREMIUM' && 'text-blue-500',
                         plan === 'PREMIUM_PLUS' && 'text-purple-500'
                       )}
                     />
@@ -306,7 +306,7 @@ function CheckoutContent() {
                   <Button
                     className={cn(
                       'w-full h-12',
-                      plan === 'PREMIUM' && 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white',
+                      plan === 'PREMIUM' && 'bg-gradient-to-r from-blue-500 to-blue-600 text-white',
                       plan === 'PREMIUM_PLUS' && 'bg-gradient-to-r from-purple-500 to-pink-500 text-white'
                     )}
                     onClick={handleProceedToPayment}

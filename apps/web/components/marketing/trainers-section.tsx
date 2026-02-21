@@ -54,9 +54,9 @@ export function TrainersSection() {
           >
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
               {isAr ? (
-                <>أنت <span className="text-forma-teal">مدرب لياقة</span> محترف؟</>
+                <>أنت <span className="text-forma-orange">مدرب لياقة</span> محترف؟</>
               ) : (
-                <>Are you a{' '}<span className="text-forma-teal">fitness professional</span>?</>
+                <>Are you a{' '}<span className="text-forma-orange">fitness professional</span>?</>
               )}
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
@@ -76,7 +76,7 @@ export function TrainersSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
               >
-                <div className="shrink-0 rounded-lg bg-forma-teal/10 p-2.5 text-forma-teal h-fit">
+                <div className="shrink-0 rounded-lg bg-forma-orange/10 p-2.5 text-forma-orange h-fit">
                   <benefit.icon className="h-6 w-6" />
                 </div>
                 <div>

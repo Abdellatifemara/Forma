@@ -83,7 +83,7 @@ export default function LoginForm() {
       {/* Logo */}
       <div className="text-center mb-8">
         <Link href="/">
-          <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
+          <h1 className="text-4xl font-bold text-primary">
             FORMA
           </h1>
         </Link>

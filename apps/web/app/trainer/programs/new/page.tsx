@@ -216,7 +216,7 @@ export default function NewProgramPage() {
           {currentStep === 'basics' && (
             <div className="space-y-6 max-w-2xl mx-auto">
               <div className="text-center mb-8">
-                <FileText className="h-12 w-12 mx-auto mb-4 text-cyan-400" />
+                <FileText className="h-12 w-12 mx-auto mb-4 text-blue-400" />
                 <h2 className="text-2xl font-bold">{isAr ? '\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program Details'}</h2>
                 <p className="text-muted-foreground mt-2">
                   {isAr ? '\u0627\u0628\u062f\u0623 \u0628\u062a\u0633\u0645\u064a\u0629 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c \u0648\u0625\u0636\u0627\u0641\u0629 \u0648\u0635\u0641' : 'Start by naming your program and adding a description'}

@@ -90,7 +90,7 @@ export default function AdminResearchPage() {
           label={isAr ? 'إجمالي استعلامات الذكاء الاصطناعي' : 'Total AI Queries'}
           value={aiMetrics?.totalQueries?.toLocaleString() ?? '0'}
           change={null}
-          iconColor="text-cyan-400"
+          iconColor="text-blue-400"
           isAr={isAr}
         />
         <StatCard
@@ -191,8 +191,8 @@ export default function AdminResearchPage() {
         {/* Query Patterns */}
         <div className="rounded-2xl border border-border bg-card p-6">
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-cyan-500/10">
-              <BarChart3 className="h-5 w-5 text-cyan-400" />
+            <div className="p-2 rounded-lg bg-blue-500/10">
+              <BarChart3 className="h-5 w-5 text-blue-400" />
             </div>
             <div>
               <h3 className="font-bold">
@@ -243,7 +243,7 @@ export default function AdminResearchPage() {
                     </div>
                     <div className="h-2 bg-muted rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full"
+                        className="h-full bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"
                         style={{ width: `${cat.percentage}%` }}
                       />
                     </div>
@@ -329,7 +329,7 @@ export default function AdminResearchPage() {
                     className={cn(
                       'h-full rounded-full',
                       tier === 'FREE' ? 'bg-gray-400' :
-                      tier === 'PREMIUM' ? 'bg-gradient-to-r from-cyan-500 to-blue-600' :
+                      tier === 'PREMIUM' ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
                       'bg-gradient-to-r from-purple-500 to-pink-600'
                     )}
                     style={{ width: `${percentage}%` }}
@@ -345,9 +345,9 @@ export default function AdminResearchPage() {
       </div>
 
       {/* Research Insights */}
-      <div className="rounded-2xl border border-border bg-gradient-to-br from-cyan-500/5 via-transparent to-purple-500/5 p-6">
+      <div className="rounded-2xl border border-border bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 p-6">
         <div className="flex items-center gap-3 mb-6">
-          <div className="p-2 rounded-lg bg-gradient-to-br from-cyan-500/20 to-purple-500/20">
+          <div className="p-2 rounded-lg bg-gradient-to-br from-blue-500/20 to-purple-500/20">
             <TrendingUp className="h-5 w-5 text-primary" />
           </div>
           <div>
@@ -464,7 +464,7 @@ function InsightCard({
       'p-4 rounded-xl border',
       type === 'success' ? 'border-green-500/30 bg-green-500/5' :
       type === 'warning' ? 'border-orange-500/30 bg-orange-500/5' :
-      'border-cyan-500/30 bg-cyan-500/5'
+      'border-blue-500/30 bg-blue-500/5'
     )}>
       <p className="font-medium mb-2">{title}</p>
       <p className="text-sm text-muted-foreground">{insight}</p>

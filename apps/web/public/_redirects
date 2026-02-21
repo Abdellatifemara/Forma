@@ -1,3 +1,19 @@
+# Dynamic route rewrites — more specific rules FIRST
+# Trainer client sub-pages
+/trainer/clients/:id/edit /trainer/clients/_placeholder/edit.html 200
+/trainer/clients/:id/meal-plan /trainer/clients/_placeholder/meal-plan.html 200
+# Trainer client detail
+/trainer/clients/:id /trainer/clients/_placeholder.html 200
+# Trainer programs
+/trainer/programs/:id /trainer/programs/_placeholder.html 200
+# Public trainers
+/trainers/:id /trainers/_placeholder.html 200
+# Workouts
+/workouts/:id /workouts/_placeholder.html 200
+# Join invite code
+/join/:code /join/_placeholder.html 200
+
+# Convenience redirects
 /app /workouts 302
 /trainer /trainer/dashboard 302
 /admin /admin/dashboard 302

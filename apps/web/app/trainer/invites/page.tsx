@@ -180,7 +180,7 @@ export default function TrainerInvitesPage() {
         <Dialog open={isCreateDialogOpen} onOpenChange={setIsCreateDialogOpen}>
           <DialogTrigger asChild>
             <Button className="btn-primary">
-              <Plus className="h-5 w-5 mr-2" />
+              <Plus className="h-5 w-5 me-2" />
               {isAr ? 'إنشاء دعوة' : 'Create Invite'}
             </Button>
           </DialogTrigger>
@@ -221,7 +221,7 @@ export default function TrainerInvitesPage() {
               <Button onClick={handleCreate} disabled={isCreating}>
                 {isCreating ? (
                   <>
-                    <Loader2 className="h-4 w-4 animate-spin mr-2" />
+                    <Loader2 className="h-4 w-4 animate-spin me-2" />
                     {isAr ? 'جاري الإنشاء...' : 'Creating...'}
                   </>
                 ) : (
@@ -238,8 +238,8 @@ export default function TrainerInvitesPage() {
         <Card className="glass border-border/50">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-xl bg-cyan-500/20">
-                <Link2 className="h-5 w-5 text-cyan-400" />
+              <div className="p-2 rounded-xl bg-blue-500/20">
+                <Link2 className="h-5 w-5 text-blue-400" />
               </div>
               <div>
                 <p className="text-2xl font-bold">{activeInvites.length}</p>
@@ -307,7 +307,7 @@ export default function TrainerInvitesPage() {
                       </code>
                       {invite.grantsPremium && (
                         <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/50">
-                          <Crown className="h-3 w-3 mr-1" />
+                          <Crown className="h-3 w-3 me-1" />
                           Premium
                         </Badge>
                       )}
@@ -334,12 +334,12 @@ export default function TrainerInvitesPage() {
                     >
                       {copiedId === invite.id ? (
                         <>
-                          <Check className="h-4 w-4 mr-1 text-green-500" />
+                          <Check className="h-4 w-4 me-1 text-green-500" />
                           {isAr ? 'تم النسخ' : 'Copied'}
                         </>
                       ) : (
                         <>
-                          <Copy className="h-4 w-4 mr-1" />
+                          <Copy className="h-4 w-4 me-1" />
                           {isAr ? 'نسخ' : 'Copy'}
                         </>
                       )}
@@ -350,7 +350,7 @@ export default function TrainerInvitesPage() {
                       onClick={() => handleShare(invite)}
                       className="h-9"
                     >
-                      <Share2 className="h-4 w-4 mr-1" />
+                      <Share2 className="h-4 w-4 me-1" />
                       {isAr ? 'مشاركة' : 'Share'}
                     </Button>
                     <Button
@@ -419,7 +419,7 @@ export default function TrainerInvitesPage() {
             >
               {isDeactivating ? (
                 <>
-                  <Loader2 className="h-4 w-4 animate-spin mr-2" />
+                  <Loader2 className="h-4 w-4 animate-spin me-2" />
                   {isAr ? 'جاري التعطيل...' : 'Deactivating...'}
                 </>
               ) : (

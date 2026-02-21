@@ -22,6 +22,10 @@ export class HealthDataController {
       restingHeartRate?: number;
       sleepHours?: number;
       sleepQuality?: number;
+      sleepDeep?: number;
+      sleepRem?: number;
+      sleepLight?: number;
+      sleepAwake?: number;
       steps?: number;
       activeCalories?: number;
       stressLevel?: number;
@@ -60,6 +64,28 @@ export class HealthDataController {
     return this.healthDataService.getReadinessTrend(user.id, days ? parseInt(days) : 7);
   }
 
+  @Get('strain')
+  @ApiOperation({ summary: 'Get strain score (0-21, WHOOP-style)' })
+  async getStrain(@CurrentUser() user: User) {
+    return this.healthDataService.getStrainScore(user.id);
+  }
+
+  @Get('sleep')
+  @ApiOperation({ summary: 'Get sleep stages breakdown and trend' })
+  async getSleep(@CurrentUser() user: User) {
+    return this.healthDataService.getSleepData(user.id);
+  }
+
+  @Get('summary')
+  @ApiOperation({ summary: 'Get weekly or monthly health summary' })
+  async getSummary(
+    @CurrentUser() user: User,
+    @Query('period') period?: string,
+  ) {
+    const p = period === 'month' ? 'month' : 'week';
+    return this.healthDataService.getSummary(user.id, p);
+  }
+
   @Post('sync/apple-health')
   @ApiOperation({ summary: 'Sync data from Apple Health (called from iOS app)' })
   async syncAppleHealth(
@@ -74,7 +100,6 @@ export class HealthDataController {
       }>;
     },
   ) {
-    // Process Apple Health data
     const metrics: any = {};
 
     for (const item of body.data) {
@@ -86,7 +111,19 @@ export class HealthDataController {
           metrics.restingHeartRate = item.value;
           break;
         case 'HKCategoryTypeIdentifierSleepAnalysis':
-          metrics.sleepHours = item.value / 3600; // Convert seconds to hours
+          metrics.sleepHours = item.value / 3600;
+          break;
+        case 'HKCategoryTypeIdentifierSleepAnalysis.asleepDeep':
+          metrics.sleepDeep = item.value / 3600;
+          break;
+        case 'HKCategoryTypeIdentifierSleepAnalysis.asleepREM':
+          metrics.sleepRem = item.value / 3600;
+          break;
+        case 'HKCategoryTypeIdentifierSleepAnalysis.asleepCore':
+          metrics.sleepLight = item.value / 3600;
+          break;
+        case 'HKCategoryTypeIdentifierSleepAnalysis.awake':
+          metrics.sleepAwake = item.value / 3600;
           break;
         case 'HKQuantityTypeIdentifierStepCount':
           metrics.steps = item.value;
@@ -114,10 +151,10 @@ export class HealthDataController {
         dataType: string;
         value: number;
         timestamp: string;
+        segmentType?: number;
       }>;
     },
   ) {
-    // Process Google Fit data
     const metrics: any = {};
 
     for (const item of body.data) {
@@ -129,8 +166,17 @@ export class HealthDataController {
           metrics.restingHeartRate = item.value;
           break;
         case 'com.google.sleep.segment':
-          // Google Fit returns sleep in segments
+          // Google Fit segment types: 1=awake, 2=sleep, 3=out-of-bed, 4=light, 5=deep, 6=REM
           metrics.sleepHours = (metrics.sleepHours || 0) + item.value;
+          if (item.segmentType === 5) {
+            metrics.sleepDeep = (metrics.sleepDeep || 0) + item.value;
+          } else if (item.segmentType === 6) {
+            metrics.sleepRem = (metrics.sleepRem || 0) + item.value;
+          } else if (item.segmentType === 4) {
+            metrics.sleepLight = (metrics.sleepLight || 0) + item.value;
+          } else if (item.segmentType === 1) {
+            metrics.sleepAwake = (metrics.sleepAwake || 0) + item.value;
+          }
           break;
         case 'com.google.step_count.delta':
           metrics.steps = item.value;

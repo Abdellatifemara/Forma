@@ -9,75 +9,68 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 220 20% 10%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card-foreground: 0 0% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover-foreground: 0 0% 5%;
 
-    /* Primary — Teal (energy, health, progress) */
-    --primary: 174 72% 40%;
+    /* Primary — Orange (energy, action, brand) */
+    --primary: 25 95% 53%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary — Slate-purple (premium tier accent) */
-    --secondary: 250 40% 55%;
+    /* Secondary — Dark (depth, contrast) */
+    --secondary: 0 0% 10%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent — Green (success, achievement) */
-    --accent: 152 60% 42%;
+    /* Accent — Warm orange-amber (highlight, success) */
+    --accent: 32 95% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --muted: 220 14% 94%;
-    --muted-foreground: 220 10% 46%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 90%;
-    --input: 220 14% 94%;
-    --ring: 174 72% 40%;
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 25 95% 53%;
 
     --radius: 0.75rem;
-
-    /* Brand palette (light) */
-    --orange: 25 95% 53%;
-    --pink: 330 80% 55%;
   }
 
   .dark {
-    --background: 220 20% 4%;
-    --foreground: 210 20% 98%;
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
 
-    --card: 220 20% 7%;
-    --card-foreground: 210 20% 98%;
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 174 72% 50%;
-    --primary-foreground: 220 20% 4%;
+    --primary: 25 100% 55%;
+    --primary-foreground: 0 0% 4%;
 
-    --secondary: 250 50% 65%;
+    --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 152 70% 50%;
-    --accent-foreground: 220 20% 4%;
+    --accent: 32 100% 55%;
+    --accent-foreground: 0 0% 4%;
 
-    --muted: 220 15% 12%;
-    --muted-foreground: 220 10% 55%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 55%;
 
     --destructive: 0 72% 55%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 15%;
-    --input: 220 15% 12%;
-    --ring: 174 72% 50%;
-
-    --orange: 25 100% 55%;
-    --pink: 330 100% 65%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 25 100% 55%;
   }
 }
 
@@ -108,9 +101,9 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-bold tracking-tight;
 }
 
-/* Legacy gradient text — used in other pages, kept for compat */
+/* Gradient text — orange to amber */
 .text-gradient {
-  background: linear-gradient(135deg, hsl(var(--primary)), hsl(174 72% 50%));
+  background: linear-gradient(135deg, hsl(25 95% 53%), hsl(32 95% 50%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

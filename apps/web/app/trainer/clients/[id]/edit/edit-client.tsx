@@ -54,7 +54,7 @@ export default function EditClientPage() {
             {/* Preview of features */}
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 max-w-3xl mx-auto">
               <div className="p-4 rounded-xl bg-muted/30 border border-border/50">
-                <User className="h-6 w-6 text-cyan-400 mx-auto mb-2" />
+                <User className="h-6 w-6 text-blue-400 mx-auto mb-2" />
                 <p className="font-medium text-sm">{isAr ? 'الملف الشخصي' : 'Profile'}</p>
                 <p className="text-xs text-muted-foreground">{isAr ? 'بيانات أساسية وصور' : 'Basic info & photos'}</p>
               </div>

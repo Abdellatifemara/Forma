@@ -49,7 +49,7 @@ export default function TrainerAnalyticsPage() {
             {/* Preview of what's coming */}
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 max-w-2xl mx-auto">
               <div className="p-4 rounded-xl bg-muted/30 border border-border/50">
-                <BarChart3 className="h-6 w-6 text-cyan-400 mx-auto mb-2" />
+                <BarChart3 className="h-6 w-6 text-blue-400 mx-auto mb-2" />
                 <p className="font-medium text-sm">{isAr ? 'رسوم بيانية للإيرادات' : 'Revenue Charts'}</p>
                 <p className="text-xs text-muted-foreground">{isAr ? 'اتجاهات شهرية وسنوية' : 'Monthly & yearly trends'}</p>
               </div>
@@ -88,8 +88,8 @@ export default function TrainerAnalyticsPage() {
         <Card className="glass border-border/50 opacity-60">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3 mb-3">
-              <div className="p-2 rounded-xl bg-cyan-500/20">
-                <Users className="h-5 w-5 text-cyan-400" />
+              <div className="p-2 rounded-xl bg-blue-500/20">
+                <Users className="h-5 w-5 text-blue-400" />
               </div>
               <span className="text-sm text-muted-foreground">{isAr ? 'إجمالي العملاء' : 'Total Clients'}</span>
             </div>

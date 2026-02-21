@@ -291,7 +291,7 @@ export default function SchedulePage() {
         <Dialog open={availabilityOpen} onOpenChange={setAvailabilityOpen}>
           <DialogTrigger asChild>
             <Button variant="outline">
-              <Settings className="mr-2 h-4 w-4" />
+              <Settings className="me-2 h-4 w-4" />
               {isAr ? 'تحديد المواعيد' : 'Set Availability'}
             </Button>
           </DialogTrigger>
@@ -395,7 +395,7 @@ export default function SchedulePage() {
               )}
 
               <Button variant="outline" onClick={addSlot} className="w-full">
-                <Plus className="h-4 w-4 mr-2" />
+                <Plus className="h-4 w-4 me-2" />
                 {isAr ? 'أضف وقت' : 'Add Time Slot'}
               </Button>
 
@@ -404,7 +404,7 @@ export default function SchedulePage() {
                   {isAr ? 'إلغاء' : 'Cancel'}
                 </Button>
                 <Button onClick={saveAvailability} disabled={saving}>
-                  {saving ? <Loader2 className="h-4 w-4 animate-spin mr-2" /> : <Save className="h-4 w-4 mr-2" />}
+                  {saving ? <Loader2 className="h-4 w-4 animate-spin me-2" /> : <Save className="h-4 w-4 me-2" />}
                   {isAr ? 'حفظ التغييرات' : 'Save Changes'}
                 </Button>
               </div>
@@ -444,9 +444,9 @@ export default function SchedulePage() {
                     const date = weekDates[index];
                     const isToday = date.toDateString() === new Date().toDateString();
                     return (
-                      <div key={day.value} className={`p-2 text-center ${isToday ? 'bg-forma-teal/10' : ''}`}>
+                      <div key={day.value} className={`p-2 text-center ${isToday ? 'bg-forma-orange/10' : ''}`}>
                         <p className="text-sm font-medium">{day.short}</p>
-                        <p className={`text-lg font-bold ${isToday ? 'text-forma-teal' : ''}`}>
+                        <p className={`text-lg font-bold ${isToday ? 'text-forma-orange' : ''}`}>
                           {date.getDate()}
                         </p>
                       </div>
@@ -458,7 +458,7 @@ export default function SchedulePage() {
                 <div className="relative">
                   {hours.map((hour) => (
                     <div key={hour} className="grid grid-cols-8 border-b">
-                      <div className="p-2 text-right text-sm text-muted-foreground">
+                      <div className="p-2 text-end text-sm text-muted-foreground">
                         {formatHour(hour)}
                       </div>
                       {DAYS.map((_, dayIndex) => {
@@ -477,14 +477,14 @@ export default function SchedulePage() {
                         return (
                           <div
                             key={dayIndex}
-                            className={`relative h-16 border-l ${isToday ? 'bg-forma-teal/5' : ''}`}
+                            className={`relative h-16 border-s ${isToday ? 'bg-forma-orange/5' : ''}`}
                           >
                             {dayCalls.map((call) => (
                               <div
                                 key={call.id}
                                 className={`absolute inset-x-1 top-1 rounded-md p-1 text-xs cursor-pointer ${
                                   call.status === 'CONFIRMED'
-                                    ? 'bg-forma-teal/20 text-forma-teal'
+                                    ? 'bg-forma-orange/20 text-forma-orange'
                                     : call.status === 'SCHEDULED'
                                     ? 'bg-yellow-500/20 text-yellow-600'
                                     : 'bg-muted'
@@ -606,7 +606,7 @@ export default function SchedulePage() {
             <CardContent>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <div className="h-3 w-3 rounded-full bg-forma-teal" />
+                  <div className="h-3 w-3 rounded-full bg-forma-orange" />
                   <span className="text-sm">{isAr ? 'مؤكد' : 'Confirmed'}</span>
                 </div>
                 <div className="flex items-center gap-2">

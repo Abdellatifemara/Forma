@@ -52,15 +52,15 @@ const config: Config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        // Legacy brand colors (used in marketing + other pages)
-        'forma-teal': {
-          DEFAULT: '#2BB5A0',
-          light: '#3CC4AF',
-          dark: '#229688',
+        // Brand colors
+        'forma-orange': {
+          DEFAULT: '#F97316',
+          light: '#FB923C',
+          dark: '#EA580C',
         },
         'forma-navy': {
-          DEFAULT: '#0A1628',
-          light: '#1A2D4A',
+          DEFAULT: '#0A0A0A',
+          light: '#1A1A1A',
         },
         coral: {
           DEFAULT: '#FF6B6B',
@@ -148,9 +148,9 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       backgroundImage: {
-        'gradient-primary': 'linear-gradient(135deg, hsl(174 72% 40%), hsl(174 72% 50%))',
-        'gradient-accent': 'linear-gradient(135deg, hsl(152 60% 42%), hsl(174 72% 40%))',
-        'gradient-warm': 'linear-gradient(135deg, hsl(25 95% 53%), hsl(330 80% 55%))',
+        'gradient-primary': 'linear-gradient(135deg, #F97316, #EA580C)',
+        'gradient-accent': 'linear-gradient(135deg, #F97316, #F59E0B)',
+        'gradient-warm': 'linear-gradient(135deg, #F97316, #EF4444)',
         'gradient-gold': 'linear-gradient(135deg, #F59E0B, #D97706)',
       },
       boxShadow: {

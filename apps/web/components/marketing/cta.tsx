@@ -14,7 +14,7 @@ export function CTA() {
     <section className="py-20 md:py-32">
       <div className="container">
         <motion.div
-          className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-forma-teal to-forma-teal-dark p-8 sm:p-12 md:p-20"
+          className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-forma-orange to-forma-orange-dark p-8 sm:p-12 md:p-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

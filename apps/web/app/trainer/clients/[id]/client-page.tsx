@@ -133,7 +133,7 @@ export default function ClientDetailPage() {
           <div className="flex items-center gap-4">
             <Avatar className="h-16 w-16 border-4 border-primary/30">
               <AvatarImage src={client.avatarUrl || undefined} />
-              <AvatarFallback className="text-xl bg-gradient-to-br from-cyan-500 to-purple-500 text-white">
+              <AvatarFallback className="text-xl bg-primary text-white">
                 {client.name.split(' ').map((n) => n[0]).join('')}
               </AvatarFallback>
             </Avatar>
@@ -256,7 +256,7 @@ export default function ClientDetailPage() {
             <div className="grid grid-cols-3 gap-4 md:gap-8">
               <div className="text-center">
                 <div className="flex items-center justify-center gap-1 mb-1">
-                  <Dumbbell className="h-4 w-4 text-cyan-400" />
+                  <Dumbbell className="h-4 w-4 text-blue-400" />
                 </div>
                 <p className="text-2xl font-bold">{stats.workoutsCompleted}</p>
                 <p className="text-xs text-muted-foreground">{isAr ? 'تمارين' : 'Workouts'}</p>
@@ -315,8 +315,8 @@ export default function ClientDetailPage() {
                   {stats.workoutsCompleted}
                 </p>
               </div>
-              <div className="p-2 rounded-xl bg-cyan-500/20">
-                <Dumbbell className="h-5 w-5 text-cyan-400" />
+              <div className="p-2 rounded-xl bg-blue-500/20">
+                <Dumbbell className="h-5 w-5 text-blue-400" />
               </div>
             </div>
           </CardContent>
@@ -441,8 +441,8 @@ export default function ClientDetailPage() {
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="flex items-center gap-4 p-3 rounded-xl bg-muted/20">
-                <div className="p-2 rounded-lg bg-cyan-500/20">
-                  <Dumbbell className="h-5 w-5 text-cyan-400" />
+                <div className="p-2 rounded-lg bg-blue-500/20">
+                  <Dumbbell className="h-5 w-5 text-blue-400" />
                 </div>
                 <div className="flex-1">
                   <p className="font-medium">{isAr ? 'آخر تمرين' : 'Last Workout'}</p>
@@ -484,7 +484,7 @@ export default function ClientDetailPage() {
             <Card className="glass border-border/50">
               <CardContent className="pt-6">
                 <div className="text-center">
-                  <p className="text-5xl font-bold text-cyan-400">{stats.workoutsCompleted}</p>
+                  <p className="text-5xl font-bold text-blue-400">{stats.workoutsCompleted}</p>
                   <p className="text-muted-foreground mt-2">{isAr ? 'تمارين مكتملة (30 يوم)' : 'Workouts Completed (30 days)'}</p>
                 </div>
               </CardContent>
@@ -584,7 +584,7 @@ export default function ClientDetailPage() {
                   {compliance.weeklyTrend.map((week, index) => (
                     <div key={index} className="flex-1 flex flex-col items-center gap-2">
                       <div
-                        className="w-full rounded-t-lg bg-gradient-to-t from-cyan-500 to-purple-500"
+                        className="w-full rounded-t-lg bg-primary"
                         style={{ height: `${week.compliance}%` }}
                       />
                       <span className="text-xs text-muted-foreground">{week.week}</span>
@@ -726,7 +726,7 @@ export default function ClientDetailPage() {
               </CardHeader>
               <CardContent>
                 <div className="text-center py-8">
-                  <p className="text-5xl font-bold text-cyan-400">{(stats.totalVolume / 1000).toFixed(1)}k</p>
+                  <p className="text-5xl font-bold text-blue-400">{(stats.totalVolume / 1000).toFixed(1)}k</p>
                   <p className="text-muted-foreground mt-2">{isAr ? 'إجمالي الحجم (كجم) - آخر 30 يوم' : 'Total Volume (kg) - Last 30 Days'}</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 mt-4">

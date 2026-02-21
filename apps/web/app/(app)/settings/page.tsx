@@ -180,14 +180,31 @@ export default function SettingsPage() {
 
   if (userLoading) {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
-        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      <div className="space-y-6 pb-20">
+        <div className="space-y-2">
+          <div className="h-8 w-32 rounded-lg animate-shimmer" />
+          <div className="h-4 w-48 rounded-lg animate-shimmer" />
+        </div>
+        {[1, 2, 3, 4].map(i => (
+          <div key={i} className="rounded-2xl border border-border/60 bg-white dark:bg-card p-5">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-xl animate-shimmer" />
+                <div className="space-y-2">
+                  <div className="h-4 w-28 rounded animate-shimmer" />
+                  <div className="h-3 w-40 rounded animate-shimmer" />
+                </div>
+              </div>
+              <div className="h-6 w-12 rounded-full animate-shimmer" />
+            </div>
+          </div>
+        ))}
       </div>
     );
   }
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       {/* Header */}
       <div>
         <h1 className="text-2xl font-bold">{t.settings.title}</h1>

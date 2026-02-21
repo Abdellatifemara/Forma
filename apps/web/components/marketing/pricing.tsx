@@ -24,7 +24,7 @@ export function Pricing() {
       cta: language === 'ar' ? 'ابدأ تجربة 7 أيام' : 'Start 7-Day Trial',
       href: '/signup?plan=premium',
       icon: Zap,
-      gradient: 'from-cyan-500 to-blue-500',
+      gradient: 'from-forma-orange to-forma-orange-dark',
       savings: language === 'ar' ? 'وفر 38% سنوياً' : 'Save 38% yearly',
     },
     {
@@ -33,7 +33,7 @@ export function Pricing() {
       cta: language === 'ar' ? 'انضم لـ VIP' : 'Join VIP',
       href: '/signup?plan=premium_plus',
       icon: Crown,
-      gradient: 'from-purple-500 to-pink-500',
+      gradient: 'from-forma-navy to-forma-navy-light',
     },
   ];
 

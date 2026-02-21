@@ -90,13 +90,19 @@ function mapEquipment(equip: string): EquipmentType {
     'resistance_band': 'RESISTANCE_BANDS',
     'resistance band': 'RESISTANCE_BANDS',
     'ab_wheel': 'NONE',
-    'medicine_ball': 'NONE',
-    'battle_ropes': 'NONE',
-    'sled': 'NONE',
+    'medicine_ball': 'MEDICINE_BALL',
+    'battle_ropes': 'BATTLE_ROPES',
+    'sled': 'SLED',
     'tire': 'NONE',
-    'plyo_box': 'NONE',
-    'assault_bike': 'BIKE',
-    'ski_erg': 'ROWING',
+    'plyo_box': 'PLYO_BOX',
+    'assault_bike': 'ASSAULT_BIKE',
+    'ski_erg': 'SKI_ERG',
+    'wall_ball': 'WALL_BALL',
+    'rings': 'RINGS',
+    'rope': 'ROPE',
+    'ghd': 'GHD',
+    'gymnastic_rings': 'RINGS',
+    'climbing_rope': 'ROPE',
     'heavy_bag': 'NONE',
     'speed_bag': 'NONE',
     'parallel_bars': 'NONE',
@@ -137,7 +143,7 @@ function mapCategory(cat: string): ExerciseCategory {
     'conditioning': 'CARDIO',
     'seniors': 'BALANCE',
     'home': 'STRENGTH',
-    'crossfit': 'PLYOMETRIC',
+    'crossfit': 'CROSSFIT',
     'sport_specific': 'PLYOMETRIC',
   };
   return map[cat?.toLowerCase()] || 'STRENGTH';
@@ -199,7 +205,7 @@ async function main() {
     'mobility-rehab', 'dumbbell-exercises', 'barbell-compound', 'sport-conditioning',
     'seniors-beginners', 'sport-agility', 'kettlebell', 'boxing', 'martial-arts',
     'swimming', 'rehab-physio', 'office-senior', 'band-trx', 'functional-mobility',
-    'home-bodyweight', 'gym-machine', 'drills'
+    'home-bodyweight', 'gym-machine', 'drills', 'bjj', 'wrestling'
   ];
 
   const jsonFiles = [

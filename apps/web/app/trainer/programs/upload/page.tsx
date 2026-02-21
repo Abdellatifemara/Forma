@@ -229,8 +229,8 @@ export default function UploadPDFPage() {
                     </div>
                   ) : (
                     <div className="space-y-4">
-                      <div className="mx-auto w-16 h-16 rounded-xl bg-cyan-500/20 flex items-center justify-center">
-                        <Upload className="h-8 w-8 text-cyan-400" />
+                      <div className="mx-auto w-16 h-16 rounded-xl bg-blue-500/20 flex items-center justify-center">
+                        <Upload className="h-8 w-8 text-blue-400" />
                       </div>
                       <div>
                         <p className="font-semibold text-lg">
@@ -394,7 +394,7 @@ export default function UploadPDFPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex gap-3">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-sm font-bold">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-sm font-bold">
                   1
                 </div>
                 <div>

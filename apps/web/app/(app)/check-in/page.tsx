@@ -234,7 +234,7 @@ export default function CheckInPage() {
       </div>
 
       {/* Date Navigation */}
-      <Card className="glass border-border/50">
+      <Card className="rounded-2xl border border-border/50 bg-card">
         <CardContent className="py-4">
           <div className="flex items-center justify-between">
             <Button variant="ghost" size="icon" onClick={goToPreviousDay}>
@@ -258,7 +258,7 @@ export default function CheckInPage() {
 
       {/* Weekly Stats */}
       {weeklyStats && (
-        <Card className="glass border-border/50">
+        <Card className="rounded-2xl border border-border/50 bg-card">
           <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-lg">
               <TrendingUp className="h-5 w-5 text-primary" />
@@ -297,7 +297,7 @@ export default function CheckInPage() {
       ) : (
         <div className="space-y-6">
           {/* Workout Section */}
-          <Card className="glass border-border/50">
+          <Card className="rounded-2xl border border-border/50 bg-card">
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2">
                 <Dumbbell className="h-5 w-5 text-primary" />
@@ -339,7 +339,7 @@ export default function CheckInPage() {
           </Card>
 
           {/* Nutrition Section */}
-          <Card className="glass border-border/50">
+          <Card className="rounded-2xl border border-border/50 bg-card">
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2">
                 <Utensils className="h-5 w-5 text-primary" />
@@ -381,7 +381,7 @@ export default function CheckInPage() {
           </Card>
 
           {/* Sleep Section */}
-          <Card className="glass border-border/50">
+          <Card className="rounded-2xl border border-border/50 bg-card">
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2">
                 <Moon className="h-5 w-5 text-primary" />
@@ -414,7 +414,7 @@ export default function CheckInPage() {
           </Card>
 
           {/* Wellness Section */}
-          <Card className="glass border-border/50">
+          <Card className="rounded-2xl border border-border/50 bg-card">
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2">
                 <Battery className="h-5 w-5 text-primary" />
@@ -454,7 +454,7 @@ export default function CheckInPage() {
           </Card>
 
           {/* General Notes */}
-          <Card className="glass border-border/50">
+          <Card className="rounded-2xl border border-border/50 bg-card">
             <CardHeader className="pb-2">
               <CardTitle>{isAr ? 'ملاحظات إضافية' : 'Additional Notes'}</CardTitle>
             </CardHeader>

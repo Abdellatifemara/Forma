@@ -110,7 +110,7 @@ export default function CookiesPage() {
           <h2 className="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
           <p>
             If you have any questions about our use of cookies, please contact us at{' '}
-            <a href="mailto:support@forma.eg" className="text-forma-teal hover:underline">
+            <a href="mailto:support@forma.eg" className="text-forma-orange hover:underline">
               support@forma.eg
             </a>
           </p>

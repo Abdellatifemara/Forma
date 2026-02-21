@@ -154,7 +154,7 @@ export default function EarningsPage() {
           className="border-primary/50 hover:bg-primary/10"
           onClick={() => toast({ title: t.trainer.exportComingSoon, description: t.trainer.exportComingSoonDesc })}
         >
-          <Download className="mr-2 h-4 w-4" />
+          <Download className="me-2 h-4 w-4" />
           {t.trainer.exportReport}
         </Button>
       </div>
@@ -190,8 +190,8 @@ export default function EarningsPage() {
         <Card className="glass border-border/50">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3 mb-3">
-              <div className="p-2 rounded-xl bg-cyan-500/20">
-                <DollarSign className="h-5 w-5 text-cyan-400" />
+              <div className="p-2 rounded-xl bg-blue-500/20">
+                <DollarSign className="h-5 w-5 text-blue-400" />
               </div>
               <span className="text-sm text-muted-foreground">{t.trainer.grossRevenue}</span>
             </div>
@@ -271,7 +271,7 @@ export default function EarningsPage() {
                 </p>
               </div>
             </div>
-            <div className="text-right">
+            <div className="text-end">
               <p className="text-3xl font-bold text-gradient">{earnings.pendingPayout.toLocaleString()} EGP</p>
               <p className="text-sm text-muted-foreground">{t.trainer.totalPendingAmount}</p>
             </div>
@@ -324,7 +324,7 @@ export default function EarningsPage() {
                       <Badge variant="outline" className={statusBadge.class}>
                         {statusBadge.label}
                       </Badge>
-                      <div className="text-right min-w-[100px]">
+                      <div className="text-end min-w-[100px]">
                         <p className={cn(
                           "font-bold",
                           tx.type === 'PAYOUT' || tx.status === 'REFUNDED' ? 'text-orange-400' : 'text-green-400'

@@ -180,9 +180,9 @@ export default function BecomeTrainerPage() {
   // Introduction step
   if (currentStep === 0) {
     return (
-      <div className="space-y-8 pb-20 lg:ml-64 lg:pb-6">
+      <div className="space-y-8 pb-20">
         {/* Hero Section */}
-        <div className="rounded-2xl bg-gradient-to-br from-forma-teal/20 to-forma-teal/5 p-8 lg:p-12">
+        <div className="rounded-2xl bg-gradient-to-br from-forma-orange/20 to-forma-orange/5 p-8 lg:p-12">
           <div className="max-w-2xl">
             <Badge variant="forma" className="mb-4">
               {isAr ? 'برنامج المدربين' : 'Trainer Program'}
@@ -207,8 +207,8 @@ export default function BecomeTrainerPage() {
             {benefits.map((benefit) => (
               <Card key={benefit.title}>
                 <CardContent className="p-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-forma-teal/10">
-                    <benefit.icon className="h-6 w-6 text-forma-teal" />
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-forma-orange/10">
+                    <benefit.icon className="h-6 w-6 text-forma-orange" />
                   </div>
                   <h3 className="font-semibold">{isAr ? benefit.titleAr : benefit.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
@@ -244,8 +244,8 @@ export default function BecomeTrainerPage() {
                 'Ability to create personalized workout and nutrition plans',
               ]).map((req, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-forma-teal/10">
-                    <Check className="h-3 w-3 text-forma-teal" />
+                  <div className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-forma-orange/10">
+                    <Check className="h-3 w-3 text-forma-orange" />
                   </div>
                   <span className="text-muted-foreground">{req}</span>
                 </li>
@@ -258,19 +258,19 @@ export default function BecomeTrainerPage() {
         <div className="grid gap-4 md:grid-cols-3">
           <Card>
             <CardContent className="p-6 text-center">
-              <p className="text-3xl font-bold text-forma-teal">500+</p>
+              <p className="text-3xl font-bold text-forma-orange">500+</p>
               <p className="text-sm text-muted-foreground">{isAr ? 'مدرب نشط' : 'Active Trainers'}</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6 text-center">
-              <p className="text-3xl font-bold text-forma-teal">50,000+</p>
+              <p className="text-3xl font-bold text-forma-orange">50,000+</p>
               <p className="text-sm text-muted-foreground">{isAr ? 'مستخدم نشط' : 'Active Users'}</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className="p-6 text-center">
-              <p className="text-3xl font-bold text-forma-teal">85%</p>
+              <p className="text-3xl font-bold text-forma-orange">85%</p>
               <p className="text-sm text-muted-foreground">{isAr ? 'نسبة الأرباح' : 'Revenue Share'}</p>
             </CardContent>
           </Card>
@@ -280,7 +280,7 @@ export default function BecomeTrainerPage() {
   }
 
   return (
-    <div className="pb-20 lg:ml-64 lg:pb-6">
+    <div className="pb-20">
       {/* Progress Header */}
       <div className="mb-8">
         <div className="mb-4 flex items-center justify-between">
@@ -300,15 +300,15 @@ export default function BecomeTrainerPage() {
             <div
               key={step.id}
               className={`flex flex-col items-center ${
-                step.id <= currentStep ? 'text-forma-teal' : 'text-muted-foreground'
+                step.id <= currentStep ? 'text-forma-orange' : 'text-muted-foreground'
               }`}
             >
               <div
                 className={`flex h-10 w-10 items-center justify-center rounded-full ${
                   step.id < currentStep
-                    ? 'bg-forma-teal text-white'
+                    ? 'bg-forma-orange text-white'
                     : step.id === currentStep
-                    ? 'border-2 border-forma-teal bg-forma-teal/10'
+                    ? 'border-2 border-forma-orange bg-forma-orange/10'
                     : 'border-2 border-muted bg-muted/50'
                 }`}
               >
@@ -556,14 +556,14 @@ export default function BecomeTrainerPage() {
                     key={cert}
                     className={`flex cursor-pointer items-center justify-between rounded-lg border p-4 transition-colors ${
                       formData.certifications.includes(cert)
-                        ? 'border-forma-teal bg-forma-teal/5'
+                        ? 'border-forma-orange bg-forma-orange/5'
                         : 'hover:bg-muted/50'
                     }`}
                     onClick={() => handleCertificationToggle(cert)}
                   >
                     <span>{cert}</span>
                     {formData.certifications.includes(cert) && (
-                      <Check className="h-5 w-5 text-forma-teal" />
+                      <Check className="h-5 w-5 text-forma-orange" />
                     )}
                   </div>
                 ))}
@@ -664,7 +664,7 @@ export default function BecomeTrainerPage() {
               <div className="mt-4 grid gap-4 md:grid-cols-2">
                 <div>
                   <p className="text-sm text-muted-foreground">{isAr ? 'لكل جلسة (هتاخد)' : 'Per Session (You Earn)'}</p>
-                  <p className="text-xl font-bold text-forma-teal">
+                  <p className="text-xl font-bold text-forma-orange">
                     {formData.hourlyRate
                       ? `${Math.round(Number(formData.hourlyRate) * 0.85)} ${isAr ? 'جنيه' : 'EGP'}`
                       : `- ${isAr ? 'جنيه' : 'EGP'}`}
@@ -672,7 +672,7 @@ export default function BecomeTrainerPage() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">{isAr ? 'في الشهر (هتاخد)' : 'Per Month (You Earn)'}</p>
-                  <p className="text-xl font-bold text-forma-teal">
+                  <p className="text-xl font-bold text-forma-orange">
                     {formData.monthlyRate
                       ? `${Math.round(Number(formData.monthlyRate) * 0.85)} ${isAr ? 'جنيه' : 'EGP'}`
                       : `- ${isAr ? 'جنيه' : 'EGP'}`}

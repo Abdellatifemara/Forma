@@ -139,7 +139,7 @@ export function ChatList({
             >
               <div className="relative">
                 <Avatar>
-                  <AvatarFallback className="bg-forma-teal/10 text-forma-teal">
+                  <AvatarFallback className="bg-forma-orange/10 text-forma-orange">
                     <Bot className="h-5 w-5" />
                   </AvatarFallback>
                 </Avatar>

@@ -466,7 +466,7 @@ export default function ProgramBuilderPage() {
                 key={day.id}
                 className={`group flex cursor-pointer items-center justify-between rounded-lg border p-3 transition-colors ${
                   selectedDayId === day.id
-                    ? 'border-forma-teal bg-forma-teal/5'
+                    ? 'border-forma-orange bg-forma-orange/5'
                     : 'hover:bg-muted/50'
                 }`}
                 onClick={() => setSelectedDayId(day.id)}
@@ -694,8 +694,8 @@ export default function ProgramBuilderPage() {
                 onClick={() => addExerciseToDay(exercise)}
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-forma-teal/10">
-                    <Dumbbell className="h-5 w-5 text-forma-teal" />
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-forma-orange/10">
+                    <Dumbbell className="h-5 w-5 text-forma-orange" />
                   </div>
                   <div>
                     <p className="font-medium">{exercise.nameEn}</p>

@@ -155,7 +155,7 @@ export default function ClientsPage() {
         </div>
         <Button className="btn-primary" asChild>
           <Link href="/trainer/invites">
-            <Share2 className="mr-2 h-4 w-4" />
+            <Share2 className="me-2 h-4 w-4" />
             {t.trainer.inviteClients}
           </Link>
         </Button>
@@ -166,8 +166,8 @@ export default function ClientsPage() {
         <Card className="glass border-border/50 cursor-pointer transition-all hover:border-primary/30" onClick={() => setFilterStatus('all')}>
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-xl bg-cyan-500/20">
-                <Users className="h-5 w-5 text-cyan-400" />
+              <div className="p-2 rounded-xl bg-blue-500/20">
+                <Users className="h-5 w-5 text-blue-400" />
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats.total}</p>
@@ -246,7 +246,7 @@ export default function ClientsPage() {
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
                 placeholder={t.trainer.searchClientsPlaceholder}
-                className="pl-10 bg-muted/50 border-border/50"
+                className="ps-10 bg-muted/50 border-border/50"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -254,11 +254,11 @@ export default function ClientsPage() {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="border-border/50">
-                  <Filter className="mr-2 h-4 w-4" />
+                  <Filter className="me-2 h-4 w-4" />
                   {filterStatus === 'all' ? t.trainer.allClients :
                    filterStatus === 'high' ? t.trainer.highPerformers :
                    filterStatus === 'attention' ? t.trainer.needAttention : t.trainer.atRisk}
-                  <ChevronDown className="ml-2 h-4 w-4" />
+                  <ChevronDown className="ms-2 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
@@ -266,15 +266,15 @@ export default function ClientsPage() {
                   {t.trainer.allClients}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setFilterStatus('high')}>
-                  <span className="h-2 w-2 rounded-full bg-green-500 mr-2" />
+                  <span className="h-2 w-2 rounded-full bg-green-500 me-2" />
                   {t.trainer.highPerformers80}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setFilterStatus('attention')}>
-                  <span className="h-2 w-2 rounded-full bg-yellow-500 mr-2" />
+                  <span className="h-2 w-2 rounded-full bg-yellow-500 me-2" />
                   {t.trainer.needAttention5080}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setFilterStatus('risk')}>
-                  <span className="h-2 w-2 rounded-full bg-red-500 mr-2" />
+                  <span className="h-2 w-2 rounded-full bg-red-500 me-2" />
                   {t.trainer.atRisk50}
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -297,7 +297,7 @@ export default function ClientsPage() {
             {!searchQuery && filterStatus === 'all' && (
               <Button asChild>
                 <Link href="/trainer/invites">
-                  <Share2 className="mr-2 h-4 w-4" />
+                  <Share2 className="me-2 h-4 w-4" />
                   {t.trainer.createInviteLink}
                 </Link>
               </Button>
@@ -327,7 +327,7 @@ export default function ClientsPage() {
                           </p>
                           {client.premiumGifted && (
                             <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/50">
-                              <Crown className="h-3 w-3 mr-1" />
+                              <Crown className="h-3 w-3 me-1" />
                               {t.trainer.premiumBadge}
                             </Badge>
                           )}
@@ -373,13 +373,13 @@ export default function ClientsPage() {
                         <DropdownMenuContent align="end">
                           <DropdownMenuItem asChild>
                             <Link href={`/trainer/clients/${client.clientId}`}>
-                              <Eye className="mr-2 h-4 w-4" />
+                              <Eye className="me-2 h-4 w-4" />
                               {t.trainer.viewProfile}
                             </Link>
                           </DropdownMenuItem>
                           <DropdownMenuItem asChild>
                             <Link href={`/trainer/messages?client=${client.clientId}`}>
-                              <MessageSquare className="mr-2 h-4 w-4" />
+                              <MessageSquare className="me-2 h-4 w-4" />
                               {t.trainer.sendMessage}
                             </Link>
                           </DropdownMenuItem>
@@ -391,7 +391,7 @@ export default function ClientsPage() {
                               description: t.trainer.clientRemovalSoon,
                             })}
                           >
-                            <UserX className="mr-2 h-4 w-4" />
+                            <UserX className="me-2 h-4 w-4" />
                             {t.trainer.removeClient}
                           </DropdownMenuItem>
                         </DropdownMenuContent>

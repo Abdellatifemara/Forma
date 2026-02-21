@@ -4,7 +4,7 @@ export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000
 
 // App Configuration
 export const APP_NAME = 'Forma';
-export const APP_DESCRIPTION = "Egypt's premier AI-powered fitness platform";
+export const APP_DESCRIPTION = "Egypt's complete fitness platform";
 export const APP_TAGLINE = 'Shape Your Future';
 
 // Brand Colors
@@ -94,47 +94,6 @@ export const MEAL_TYPES = [
   { value: 'lunch', label: 'Lunch', labelAr: 'الغداء' },
   { value: 'dinner', label: 'Dinner', labelAr: 'العشاء' },
   { value: 'snack', label: 'Snack', labelAr: 'وجبة خفيفة' },
-] as const;
-
-// Subscription Plans
-export const SUBSCRIPTION_PLANS = [
-  {
-    id: 'free',
-    name: 'Free',
-    price: 0,
-    features: [
-      'Basic workout tracking',
-      'Limited food logging',
-      'Progress photos',
-      'Exercise library access',
-    ],
-  },
-  {
-    id: 'pro',
-    name: 'Pro',
-    price: 99,
-    features: [
-      'Everything in Free',
-      'AI workout generation',
-      'Unlimited food logging',
-      'Advanced analytics',
-      'AI Coach chat',
-      'Export data',
-    ],
-  },
-  {
-    id: 'elite',
-    name: 'Elite',
-    price: 299,
-    features: [
-      'Everything in Pro',
-      'Monthly trainer check-in',
-      'Custom meal plans',
-      'Video form checks',
-      'Direct messaging',
-      '1-on-1 consultations',
-    ],
-  },
 ] as const;
 
 // Trainer Specializations

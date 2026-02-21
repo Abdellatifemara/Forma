@@ -393,10 +393,10 @@ export default function ActiveWorkoutPage() {
     const colors: Record<string, string> = {
       'CHEST': 'from-red-500 to-orange-500',
       'TRICEPS': 'from-purple-500 to-pink-500',
-      'SHOULDERS': 'from-blue-500 to-cyan-500',
+      'SHOULDERS': 'from-blue-500 to-blue-500',
       'BACK': 'from-green-500 to-emerald-500',
       'BICEPS': 'from-yellow-500 to-orange-500',
-      'QUADRICEPS': 'from-cyan-500 to-blue-500',
+      'QUADRICEPS': 'from-blue-500 to-blue-600',
       'HAMSTRINGS': 'from-teal-500 to-green-500',
       'GLUTES': 'from-pink-500 to-rose-500',
       'ABS': 'from-amber-500 to-yellow-500',
@@ -404,7 +404,7 @@ export default function ActiveWorkoutPage() {
       'LOWER_BACK': 'from-green-500 to-teal-500',
       'FOREARMS': 'from-orange-500 to-red-500',
       'CALVES': 'from-indigo-500 to-purple-500',
-      'FULL_BODY': 'from-forma-teal to-emerald-500',
+      'FULL_BODY': 'from-forma-orange to-emerald-500',
       'CARDIO': 'from-pink-500 to-red-500',
     };
     return colors[normalizedMuscle] || 'from-gray-500 to-gray-600';
@@ -440,15 +440,15 @@ export default function ActiveWorkoutPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background pb-32 lg:ml-64 lg:pb-6">
+    <div className="min-h-screen bg-background pb-32">
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none lg:left-64">
-        <div className="absolute top-20 -right-20 w-64 h-64 bg-cyan-500/10 rounded-full blur-[100px]" />
+        <div className="absolute top-20 -right-20 w-64 h-64 bg-blue-500/10 rounded-full blur-[100px]" />
         <div className="absolute bottom-40 -left-20 w-64 h-64 bg-purple-500/10 rounded-full blur-[100px]" />
       </div>
 
       {/* Sticky Header */}
-      <div className="sticky top-0 z-20 glass border-b border-border/50">
+      <div className="sticky top-0 z-20 rounded-2xl border-b border-border/50 bg-card">
         <div className="flex items-center justify-between p-4">
           <Button variant="ghost" size="icon" onClick={() => setShowExitDialog(true)}>
             <ArrowLeft className="h-5 w-5" />
@@ -496,7 +496,7 @@ export default function ActiveWorkoutPage() {
         <div className="px-4 pb-4">
           <div className="grid grid-cols-3 gap-4 mb-3">
             <div className="text-center">
-              <p className="text-lg font-bold text-cyan-400">{completedSets}/{totalSets}</p>
+              <p className="text-lg font-bold text-blue-400">{completedSets}/{totalSets}</p>
               <p className="text-xs text-muted-foreground">{isAr ? 'مجموعات' : 'Sets'}</p>
             </div>
             <div className="text-center">
@@ -510,7 +510,7 @@ export default function ActiveWorkoutPage() {
           </div>
           <div className="h-1.5 bg-muted/30 rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-cyan-500 to-purple-500"
+              className="h-full bg-primary"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.3 }}
@@ -528,9 +528,9 @@ export default function ActiveWorkoutPage() {
             exit={{ opacity: 0, y: 50 }}
             className="fixed inset-x-0 bottom-20 z-30 px-4 lg:left-64 lg:bottom-4"
           >
-            <Card className="glass border-primary/50 overflow-hidden">
+            <Card className="rounded-2xl border border-primary/50 bg-card overflow-hidden">
               <div
-                className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20"
+                className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20"
                 style={{ width: `${restProgress}%` }}
               />
               <CardContent className="relative flex items-center justify-between p-4">
@@ -628,7 +628,7 @@ export default function ActiveWorkoutPage() {
                 transition={{ delay: exerciseIndex * 0.05 }}
               >
                 <Card className={cn(
-                  "glass border-border/50 transition-all overflow-hidden",
+                  "rounded-2xl border border-border/50 bg-card transition-all overflow-hidden",
                   exercise.completed && "border-green-500/50 bg-green-500/5"
                 )}>
                   {/* Gradient accent bar */}
@@ -843,7 +843,7 @@ export default function ActiveWorkoutPage() {
 
       {/* Exit Confirmation Dialog */}
       <Dialog open={showExitDialog} onOpenChange={setShowExitDialog}>
-        <DialogContent className="glass border-border/50">
+        <DialogContent className="rounded-2xl border border-border/50 bg-card">
           <DialogHeader>
             <DialogTitle>{isAr ? 'خروج من التمرين?' : 'Exit Workout?'}</DialogTitle>
             <DialogDescription>
@@ -866,7 +866,7 @@ export default function ActiveWorkoutPage() {
 
       {/* Finish Confirmation Dialog */}
       <Dialog open={showFinishDialog} onOpenChange={setShowFinishDialog}>
-        <DialogContent className="glass border-border/50">
+        <DialogContent className="rounded-2xl border border-border/50 bg-card">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
               <Zap className="h-5 w-5 text-primary" />
@@ -880,7 +880,7 @@ export default function ActiveWorkoutPage() {
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center p-4 rounded-xl bg-muted/30 border border-border/50">
                 <div className="flex items-center justify-center mb-2">
-                  <Clock className="h-5 w-5 text-cyan-400" />
+                  <Clock className="h-5 w-5 text-blue-400" />
                 </div>
                 <p className="text-2xl font-bold">{formatTime(elapsedTime)}</p>
                 <p className="text-xs text-muted-foreground">{isAr ? 'المدة' : 'Duration'}</p>

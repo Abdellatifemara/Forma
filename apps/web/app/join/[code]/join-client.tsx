@@ -137,7 +137,7 @@ export default function JoinPage() {
           // Invite card
           <div className="glass rounded-2xl overflow-hidden animate-fade-up">
             {/* Header with gradient */}
-            <div className="bg-gradient-to-br from-cyan-500 via-cyan-600 to-purple-600 p-6 text-white">
+            <div className="bg-gradient-to-br from-blue-500 via-cyan-600 to-purple-600 p-6 text-white">
               <p className="text-sm opacity-80 mb-2">{isAr ? 'أنت مدعو للتدريب مع' : "You've been invited to train with"}</p>
               <div className="flex items-center gap-4">
                 {trainer.avatarUrl ? (

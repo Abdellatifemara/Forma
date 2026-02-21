@@ -2,14 +2,23 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Instagram, Twitter, Facebook } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 import { useLanguage } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
+import { Logo } from '@/components/ui/logo';
+
+// TikTok icon (not in lucide)
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52v-3.4a4.85 4.85 0 01-1-.16z"/>
+    </svg>
+  );
+}
 
 const social = [
-  { href: 'https://instagram.com/formaeg', icon: Instagram, label: 'Instagram' },
-  { href: 'https://twitter.com/formaeg', icon: Twitter, label: 'Twitter' },
-  { href: 'https://facebook.com/formaeg', icon: Facebook, label: 'Facebook' },
+  { href: 'https://instagram.com/formaegypt', icon: Instagram, label: 'Instagram' },
+  { href: 'https://tiktok.com/@formaeg', icon: TikTokIcon, label: 'TikTok' },
 ];
 
 export function Footer() {
@@ -61,8 +70,8 @@ export function Footer() {
         )}>
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="text-xl font-bold">
-              forma
+            <Link href="/">
+              <Logo size="md" />
             </Link>
             <p className={cn('mt-3 text-sm text-muted-foreground max-w-xs', isRTL && 'font-cairo')}>
               {t.footer.tagline}

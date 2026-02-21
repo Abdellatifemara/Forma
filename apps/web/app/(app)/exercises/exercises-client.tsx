@@ -151,7 +151,7 @@ function UpgradeModal({ open, onClose, language }: { open: boolean; onClose: () 
 
         <div className="mt-4 flex flex-col gap-2">
           <Button
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600"
+            className="w-full bg-primary text-white hover:bg-primary/90"
             asChild
           >
             <Link href="/signup?plan=premium_plus">
@@ -319,7 +319,7 @@ function ExercisesPageContent() {
   };
 
   return (
-    <div className={cn('space-y-6 pb-20 lg:ml-64 lg:pb-6', isAr && 'text-right font-cairo')}>
+    <div className={cn('space-y-6 pb-20', isAr && 'text-right font-cairo')}>
       {/* Header */}
       <div>
         <h1 className="text-2xl font-bold">{isAr ? 'مكتبة التمارين' : 'Exercise Library'}</h1>
@@ -692,7 +692,7 @@ function ExercisesPageContent() {
 
 function ExercisesPageFallback() {
   return (
-    <div className="flex h-[50vh] items-center justify-center pb-20 lg:ml-64 lg:pb-6">
+    <div className="flex h-[50vh] items-center justify-center pb-20">
       <Loader2 className="h-8 w-8 animate-spin text-primary" />
     </div>
   );

@@ -1,6 +1,6 @@
-// ─── Premium Guided Chat State Machine Types ─────────────────
-// Premium (299 LE) = GUIDED chat with premade options only (NO free text)
-// Premium+ (999 LE) = FREE chat with GPT (separate system)
+// ─── Forma Guided Chat State Machine Types ────────────────────
+// Premium (299 LE)  = GUIDED chat with premade options (NO free text, NO GPT)
+// Premium+ (999 LE) = GUIDED chat with DEEPER options + smart GPT at leaf nodes
 
 export interface ChatState {
   id: string;
@@ -15,6 +15,10 @@ export interface ChatState {
   dynamic?: boolean;
   // Back navigation — which state to return to
   back?: string;
+  // Premium+ only: GPT-enhanced response when entering this state
+  gptEnhanced?: GptEnhancedConfig;
+  // Only show this state for certain tiers
+  tier?: 'PREMIUM' | 'PREMIUM_PLUS';
 }
 
 export interface ChatOption {
@@ -41,6 +45,40 @@ export interface StateAction {
   // Parameters to pass
   params?: Record<string, string>;
 }
+
+// ─── GPT-Enhanced Node Configuration ────────────────────────
+// These nodes make ONE targeted GPT call with known context and intent.
+// The state path tells us exactly what the user wants → zero ambiguity.
+
+export interface GptEnhancedConfig {
+  // What data to fetch from our APIs before calling GPT
+  contextSources: GptContextSource[];
+  // The prompt template — {placeholders} get replaced with context data
+  promptTemplate: string;
+  // Expected output format so we can parse/display it
+  outputFormat: 'text' | 'list' | 'plan' | 'comparison' | 'analysis';
+  // Which model to use (trade-off: speed vs quality)
+  model: 'gpt-4o-mini' | 'gpt-4o';
+  // Max tokens for response
+  maxTokens?: number;
+  // System prompt override (defaults to fitness coach)
+  systemPrompt?: string;
+  // Cache key — if set, cache result for N minutes
+  cacheTtlMinutes?: number;
+}
+
+export interface GptContextSource {
+  // What to fetch
+  type: 'profile' | 'todayWorkout' | 'workoutHistory' | 'nutritionToday'
+    | 'weightHistory' | 'healthMetrics' | 'activePlan' | 'exercises'
+    | 'foods' | 'preferences' | 'injuries' | 'subscription';
+  // Key to use in the prompt template
+  key: string;
+  // Optional filter params
+  params?: Record<string, string>;
+}
+
+// ─── Option Conditions ──────────────────────────────────────
 
 export type OptionCondition =
   | { type: 'hasDevice'; device?: string }

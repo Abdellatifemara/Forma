@@ -41,14 +41,14 @@ const getQuickActions = (isAr: boolean) => [
     title: isAr ? 'إيه دلوقتي؟' : 'What Now?',
     description: isAr ? 'هنختارلك التمرين المثالي' : 'Get your perfect workout',
     href: '?whatnow=true',
-    gradient: 'from-violet-500 to-purple-600',
+    gradient: 'from-primary to-orange-600',
   },
   {
     icon: Camera,
     title: isAr ? 'تحليل الفورم' : 'Form Check',
     description: isAr ? 'تحليل فوري لأدائك' : 'Real-time form analysis',
     href: '?formcheck=true',
-    gradient: 'from-blue-500 to-cyan-500',
+    gradient: 'from-blue-500 to-blue-500',
   },
   {
     icon: Mic,
@@ -67,7 +67,7 @@ const getMuscleGroups = (isAr: boolean) => [
   { name: isAr ? 'رجل' : 'Quads', value: 'QUADRICEPS', color: 'bg-green-500/20 text-green-400 border-green-500/30' },
   { name: isAr ? 'بطن' : 'Abs', value: 'ABS', color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
   { name: isAr ? 'كارديو' : 'Cardio', value: 'CARDIO', color: 'bg-pink-500/20 text-pink-400 border-pink-500/30' },
-  { name: isAr ? 'جسم كامل' : 'Full Body', value: 'FULL_BODY', color: 'bg-forma-teal/20 text-forma-teal border-forma-teal/30' },
+  { name: isAr ? 'جسم كامل' : 'Full Body', value: 'FULL_BODY', color: 'bg-forma-orange/20 text-forma-orange border-forma-orange/30' },
 ];
 
 function WorkoutsContent() {
@@ -128,7 +128,7 @@ function WorkoutsContent() {
         <div className="text-center">
           <div className="relative mx-auto h-16 w-16">
             <div className="h-16 w-16 rounded-full border-4 border-muted animate-pulse" />
-            <div className="absolute inset-0 h-16 w-16 rounded-full border-4 border-transparent border-t-forma-teal animate-spin" />
+            <div className="absolute inset-0 h-16 w-16 rounded-full border-4 border-transparent border-t-forma-orange animate-spin" />
           </div>
           <p className="mt-4 text-muted-foreground">{t.common.loading}</p>
         </div>
@@ -142,12 +142,12 @@ function WorkoutsContent() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 animate-fade-up">
         <div>
           <h1 className="text-2xl font-bold flex items-center gap-2">
-            <Dumbbell className="h-6 w-6 text-forma-teal" />
+            <Dumbbell className="h-6 w-6 text-forma-orange" />
             {t.workouts.title}
           </h1>
           <p className="text-muted-foreground">{isAr ? 'تابع و خطط تمارينك' : 'Track and plan your training'}</p>
         </div>
-        <Button className="btn-premium" asChild>
+        <Button className="bg-primary text-white hover:bg-primary/90" asChild>
           <Link href="/workouts/log">
             <Plus className="mr-2 h-4 w-4" />
             {isAr ? 'سجّل تمرين' : 'Log Workout'}
@@ -161,19 +161,19 @@ function WorkoutsContent() {
           <Link
             key={action.title}
             href={`/workouts${action.href}`}
-            className="group relative overflow-hidden rounded-2xl border bg-card p-4 transition-all duration-300 hover:border-forma-teal/50 hover:shadow-lg hover:-translate-y-1"
+            className="group relative overflow-hidden rounded-2xl border bg-card p-4 transition-all duration-300 hover:border-forma-orange/50 hover:shadow-lg hover:-translate-y-1"
           >
             <div className="flex items-center gap-3">
               <div className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-r ${action.gradient} shadow-lg`}>
                 <action.icon className="h-6 w-6 text-white" />
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold group-hover:text-forma-teal transition-colors">
+                <h3 className="font-semibold group-hover:text-forma-orange transition-colors">
                   {action.title}
                 </h3>
                 <p className="text-xs text-muted-foreground">{action.description}</p>
               </div>
-              <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-forma-teal group-hover:translate-x-1 transition-all" />
+              <ChevronRight className="h-5 w-5 text-muted-foreground group-hover:text-forma-orange group-hover:translate-x-1 transition-all" />
             </div>
           </Link>
         ))}
@@ -196,7 +196,7 @@ function WorkoutsContent() {
         {/* Plans Tab */}
         <TabsContent value="plans" className="space-y-4 mt-6">
           {plans.length === 0 && !isLoading ? (
-            <div className="empty-state py-12">
+            <div className="flex flex-col items-center py-12">
               <div className="h-16 w-16 rounded-full bg-muted flex items-center justify-center mb-4">
                 <Dumbbell className="h-8 w-8 text-muted-foreground" />
               </div>
@@ -208,7 +208,7 @@ function WorkoutsContent() {
                 <Button variant="outline" asChild>
                   <Link href="/workouts/create">{isAr ? 'اعمل خطة' : 'Create Plan'}</Link>
                 </Button>
-                <Button className="btn-premium" asChild>
+                <Button className="bg-primary text-white hover:bg-primary/90" asChild>
                   <Link href="/workouts?whatnow=true">
                     <Sparkles className="mr-2 h-4 w-4" />
                     {isAr ? 'اختارلي' : 'Generate for Me'}
@@ -220,8 +220,8 @@ function WorkoutsContent() {
             plans.map((plan, index) => (
               <Card
                 key={plan.id}
-                className={`glass-card overflow-hidden transition-all duration-300 hover:shadow-lg ${
-                  activePlanId === plan.id ? 'border-forma-teal ring-1 ring-forma-teal/20' : ''
+                className={`overflow-hidden transition-all duration-300 hover:shadow-lg ${
+                  activePlanId === plan.id ? 'border-forma-orange ring-1 ring-forma-orange/20' : ''
                 } animate-fade-up`}
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
@@ -231,7 +231,7 @@ function WorkoutsContent() {
                       <div className="flex items-center gap-2 mb-1">
                         <h3 className="font-semibold text-lg">{plan.name}</h3>
                         {activePlanId === plan.id && (
-                          <Badge className="bg-forma-teal/20 text-forma-teal border-forma-teal/30">
+                          <Badge className="bg-forma-orange/20 text-forma-orange border-forma-orange/30">
                             <Zap className="h-3 w-3 mr-1" />
                             {t.workouts.activePlan}
                           </Badge>
@@ -242,15 +242,15 @@ function WorkoutsContent() {
                       </p>
                       <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                         <span className="flex items-center gap-1">
-                          <Calendar className="h-4 w-4 text-forma-teal" />
+                          <Calendar className="h-4 w-4 text-forma-orange" />
                           {plan.frequency} {isAr ? 'يوم/أسبوع' : 'days/week'}
                         </span>
                         <span className="flex items-center gap-1">
-                          <Timer className="h-4 w-4 text-forma-teal" />
+                          <Timer className="h-4 w-4 text-forma-orange" />
                           {plan.duration} {isAr ? 'أسبوع' : 'weeks'}
                         </span>
                         <span className="flex items-center gap-1">
-                          <Target className="h-4 w-4 text-forma-teal" />
+                          <Target className="h-4 w-4 text-forma-orange" />
                           {plan.goal || (isAr ? 'لياقة عامة' : 'General Fitness')}
                         </span>
                       </div>
@@ -265,7 +265,7 @@ function WorkoutsContent() {
                         </Button>
                       ) : (
                         <Button
-                          className="btn-premium flex-1 sm:flex-none"
+                          className="bg-primary text-white hover:bg-primary/90 flex-1 sm:flex-none"
                           onClick={() => handleStartPlan(plan.id)}
                         >
                           <Play className="mr-2 h-4 w-4" />
@@ -280,7 +280,7 @@ function WorkoutsContent() {
           )}
 
           {/* Create Custom Plan Card */}
-          <Card className="border-dashed border-2 bg-transparent hover:border-forma-teal/50 hover:bg-forma-teal/5 transition-all duration-300">
+          <Card className="border-dashed border-2 bg-transparent hover:border-forma-orange/50 hover:bg-forma-orange/5 transition-all duration-300">
             <CardContent className="flex flex-col items-center justify-center p-8 text-center">
               <div className="h-14 w-14 rounded-2xl bg-muted flex items-center justify-center mb-4">
                 <Plus className="h-7 w-7 text-muted-foreground" />
@@ -299,7 +299,7 @@ function WorkoutsContent() {
         {/* History Tab */}
         <TabsContent value="history" className="space-y-4 mt-6">
           {history.length === 0 ? (
-            <div className="empty-state py-12">
+            <div className="flex flex-col items-center py-12">
               <div className="h-16 w-16 rounded-full bg-muted flex items-center justify-center mb-4">
                 <TrendingUp className="h-8 w-8 text-muted-foreground" />
               </div>
@@ -312,13 +312,13 @@ function WorkoutsContent() {
             history.map((workout, index) => (
               <Card
                 key={workout.id}
-                className="glass-card hover:shadow-lg transition-all duration-300 animate-fade-up"
+                className="hover:shadow-lg transition-all duration-300 animate-fade-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-4">
-                      <div className="h-12 w-12 rounded-xl bg-gradient-to-r from-forma-teal to-forma-teal-light flex items-center justify-center">
+                      <div className="h-12 w-12 rounded-xl bg-gradient-to-r from-forma-orange to-forma-orange-light flex items-center justify-center">
                         <Dumbbell className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -340,7 +340,7 @@ function WorkoutsContent() {
                             {workout.calories || 0} kcal
                           </span>
                           <span className="flex items-center gap-1">
-                            <TrendingUp className="h-3.5 w-3.5 text-forma-teal" />
+                            <TrendingUp className="h-3.5 w-3.5 text-forma-orange" />
                             {workout.totalVolume || 0} kg
                           </span>
                         </div>
@@ -369,7 +369,7 @@ function WorkoutsContent() {
                 className="animate-fade-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <Card className="glass-card hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
+                <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
                   <CardContent className="p-4 flex items-center gap-3">
                     <div className={`h-10 w-10 rounded-xl flex items-center justify-center border ${muscle.color}`}>
                       <Dumbbell className="h-5 w-5" />
@@ -408,7 +408,7 @@ function WorkoutsContent() {
         <div className="fixed inset-0 z-50 bg-black/90 flex flex-col">
           <div className="p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <Camera className="w-6 h-6 text-forma-teal" />
+              <Camera className="w-6 h-6 text-forma-orange" />
               <h2 className="text-white text-lg font-semibold">{isAr ? 'تحليل الفورم' : 'Form Check'}</h2>
             </div>
             <button
@@ -427,7 +427,7 @@ function WorkoutsContent() {
                   onClick={() => setFormCheckExercise(exercise)}
                   className={`px-4 py-2 rounded-lg capitalize transition-colors ${
                     formCheckExercise === exercise
-                      ? 'bg-forma-teal text-white'
+                      ? 'bg-forma-orange text-white'
                       : 'bg-white/20 text-white hover:bg-white/30'
                   }`}
                 >
@@ -488,7 +488,7 @@ export default function WorkoutsPage() {
         <div className="text-center">
           <div className="relative mx-auto h-16 w-16">
             <div className="h-16 w-16 rounded-full border-4 border-muted animate-pulse" />
-            <div className="absolute inset-0 h-16 w-16 rounded-full border-4 border-transparent border-t-forma-teal animate-spin" />
+            <div className="absolute inset-0 h-16 w-16 rounded-full border-4 border-transparent border-t-forma-orange animate-spin" />
           </div>
           <p className="mt-4 text-muted-foreground">...</p>
         </div>

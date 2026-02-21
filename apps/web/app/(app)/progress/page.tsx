@@ -148,7 +148,7 @@ export default function ProgressPage() {
   ];
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
@@ -323,8 +323,8 @@ export default function ProgressPage() {
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center justify-between">
-              <div className="rounded-lg bg-forma-teal/10 p-2">
-                <Scale className="h-5 w-5 text-forma-teal" />
+              <div className="rounded-lg bg-forma-orange/10 p-2">
+                <Scale className="h-5 w-5 text-forma-orange" />
               </div>
               {weightChange !== 0 && (
                 <Badge variant="forma" className="flex items-center gap-1">
@@ -441,7 +441,7 @@ export default function ProgressPage() {
             <CardContent>
               {weightLoading ? (
                 <div className="flex h-64 items-center justify-center">
-                  <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+                  <Loader2 className="h-8 w-8 animate-spin text-forma-orange" />
                 </div>
               ) : !weightData || weightData.length === 0 ? (
                 <div className="flex h-64 flex-col items-center justify-center text-muted-foreground">
@@ -451,28 +451,7 @@ export default function ProgressPage() {
                 </div>
               ) : (
                 <>
-                  <div className="h-64 rounded-lg bg-muted/30">
-                    <div className="flex h-full items-end justify-around gap-2 p-4">
-                      {weightData.slice(0, 8).reverse().map((data) => {
-                        const minWeight = Math.min(...weightData.map((d) => d.weight)) - 2;
-                        const maxWeight = Math.max(...weightData.map((d) => d.weight)) + 2;
-                        const range = maxWeight - minWeight;
-                        const heightPercent = ((data.weight - minWeight) / range) * 80 + 10;
-                        return (
-                          <div key={data.date} className="flex flex-1 flex-col items-center gap-2">
-                            <div
-                              className="w-full rounded-t-lg bg-forma-teal transition-all"
-                              style={{ height: `${heightPercent}%` }}
-                              title={`${data.weight} ${isAr ? 'كجم' : 'kg'}`}
-                            />
-                            <span className="text-xs text-muted-foreground">
-                              {formatDate(data.date, language)}
-                            </span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
+                  <WeightLineChart data={weightData} isAr={isAr} />
 
                   <div className="mt-4 grid grid-cols-3 gap-4 border-t pt-4">
                     <div className="text-center">
@@ -483,7 +462,7 @@ export default function ProgressPage() {
                     </div>
                     <div className="text-center">
                       <p className="text-sm text-muted-foreground">{isAr ? 'الحالي' : 'Current'}</p>
-                      <p className="text-lg font-bold text-forma-teal">
+                      <p className="text-lg font-bold text-primary">
                         {currentWeight ? `${currentWeight} ${isAr ? 'كجم' : 'kg'}` : '--'}
                       </p>
                     </div>
@@ -535,7 +514,7 @@ export default function ProgressPage() {
             <CardContent>
               {measurementsLoading ? (
                 <div className="flex justify-center py-8">
-                  <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+                  <Loader2 className="h-8 w-8 animate-spin text-forma-orange" />
                 </div>
               ) : measurementFields.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-8 text-muted-foreground">
@@ -589,7 +568,7 @@ export default function ProgressPage() {
             <CardContent>
               {prsLoading ? (
                 <div className="flex justify-center py-8">
-                  <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+                  <Loader2 className="h-8 w-8 animate-spin text-forma-orange" />
                 </div>
               ) : !prsData || prsData.length === 0 ? (
                 <div className="flex flex-col items-center justify-center py-8 text-muted-foreground">
@@ -611,7 +590,7 @@ export default function ProgressPage() {
                         </p>
                       </div>
                       <div className="text-right">
-                        <p className="text-xl font-bold text-forma-teal">{pr.weight} {isAr ? 'كجم' : 'kg'}</p>
+                        <p className="text-xl font-bold text-forma-orange">{pr.weight} {isAr ? 'كجم' : 'kg'}</p>
                         <p className="text-xs text-muted-foreground">{formatDate(pr.date, language)}</p>
                       </div>
                     </div>
@@ -657,6 +636,74 @@ export default function ProgressPage() {
           </Card>
         </TabsContent>
       </Tabs>
+    </div>
+  );
+}
+
+/* ---- SVG Line Chart for Weight History ---- */
+function WeightLineChart({ data, isAr }: { data: Array<{ date: string; weight: number }>; isAr: boolean }) {
+  const points = [...data].reverse().slice(-12); // last 12 entries, oldest first
+  if (points.length < 2) {
+    return (
+      <div className="h-64 flex items-center justify-center text-muted-foreground">
+        <p>{isAr ? 'محتاج نقطتين على الأقل للرسم' : 'Need at least 2 entries for chart'}</p>
+      </div>
+    );
+  }
+
+  const weights = points.map(p => p.weight);
+  const minW = Math.min(...weights) - 1;
+  const maxW = Math.max(...weights) + 1;
+  const range = maxW - minW || 1;
+
+  const W = 100;
+  const H = 50;
+  const PAD_X = 2;
+  const PAD_Y = 4;
+  const chartW = W - PAD_X * 2;
+  const chartH = H - PAD_Y * 2;
+
+  const toX = (i: number) => PAD_X + (i / (points.length - 1)) * chartW;
+  const toY = (w: number) => PAD_Y + chartH - ((w - minW) / range) * chartH;
+
+  const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${toX(i).toFixed(1)},${toY(p.weight).toFixed(1)}`).join(' ');
+  const areaPath = `${linePath} L${toX(points.length - 1).toFixed(1)},${(H - PAD_Y).toFixed(1)} L${PAD_X},${(H - PAD_Y).toFixed(1)} Z`;
+
+  // Grid lines (3 horizontal)
+  const gridLines = [0.25, 0.5, 0.75].map(pct => {
+    const y = PAD_Y + chartH * (1 - pct);
+    const val = (minW + range * pct).toFixed(1);
+    return { y, val };
+  });
+
+  return (
+    <div className="h-64 w-full">
+      <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className="w-full h-full">
+        <defs>
+          <linearGradient id="weightGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.02" />
+          </linearGradient>
+        </defs>
+        {/* Grid */}
+        {gridLines.map((g, i) => (
+          <line key={i} x1={PAD_X} y1={g.y} x2={W - PAD_X} y2={g.y} stroke="hsl(var(--muted-foreground))" strokeOpacity="0.1" strokeWidth="0.15" />
+        ))}
+        {/* Area fill */}
+        <path d={areaPath} fill="url(#weightGrad)" />
+        {/* Line */}
+        <path d={linePath} fill="none" stroke="hsl(var(--primary))" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round" />
+        {/* Data points */}
+        {points.map((p, i) => (
+          <circle key={i} cx={toX(i)} cy={toY(p.weight)} r="0.8" fill="hsl(var(--background))" stroke="hsl(var(--primary))" strokeWidth="0.35" />
+        ))}
+      </svg>
+      {/* X-axis labels */}
+      <div className="flex justify-between px-2 -mt-2">
+        {points.filter((_, i) => i === 0 || i === points.length - 1 || i === Math.floor(points.length / 2)).map((p, i) => (
+          <span key={i} className="text-[10px] text-muted-foreground">{formatDate(p.date, isAr ? 'ar' : 'en')}</span>
+        ))}
+      </div>
     </div>
   );
 }

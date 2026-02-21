@@ -11,11 +11,11 @@ export default function TrainerApplicationSuccessPage() {
   const isAr = language === 'ar';
 
   return (
-    <div className="flex min-h-[80vh] items-center justify-center pb-20 lg:ml-64 lg:pb-6">
+    <div className="flex min-h-[80vh] items-center justify-center pb-20">
       <Card className="max-w-md">
         <CardContent className="p-8 text-center">
-          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-forma-teal/10">
-            <CheckCircle className="h-8 w-8 text-forma-teal" />
+          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-forma-orange/10">
+            <CheckCircle className="h-8 w-8 text-forma-orange" />
           </div>
 
           <h1 className="text-2xl font-bold">{isAr ? 'تم إرسال الطلب!' : 'Application Submitted!'}</h1>

@@ -23,6 +23,11 @@ export const workoutStates: ChatState[] = [
       { id: 'wk5', label: { en: 'Pre-Workout Checklist', ar: 'تشيكلست قبل التمرين' }, icon: '✅', nextState: 'WK_PRE' },
       { id: 'wk6', label: { en: 'Post-Workout', ar: 'بعد التمرين' }, icon: '🏁', nextState: 'WK_POST' },
       { id: 'wk7', label: { en: 'Form & Technique', ar: 'الفورم والتكنيك' }, icon: '🎯', nextState: 'WK_FORM_MENU' },
+      { id: 'wk9', label: { en: 'CrossFit', ar: 'كروس فت' }, icon: '🏋️‍♂️', nextState: 'WK_CROSSFIT' },
+      { id: 'wk_ai1', label: { en: 'AI Pre-Workout Guidance', ar: 'إرشادات AI قبل التمرين' }, icon: '🧠', nextState: 'WK_AI_PREWORKOUT',
+        condition: { type: 'tier', tier: 'PREMIUM_PLUS' } },
+      { id: 'wk_ai2', label: { en: 'AI Post-Workout Review', ar: 'مراجعة AI بعد التمرين' }, icon: '🧠', nextState: 'WK_AI_POSTWORKOUT',
+        condition: { type: 'tier', tier: 'PREMIUM_PLUS' } },
       { id: 'wk8', label: { en: 'Back to Menu', ar: 'رجوع للقائمة' }, icon: '🔙', nextState: 'ROOT' },
     ],
   },
@@ -43,6 +48,10 @@ export const workoutStates: ChatState[] = [
       { id: 'wkt1', label: { en: 'Start Workout', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_SESSION_START',
         action: { type: 'navigate', route: '/workouts' } },
       { id: 'wkt2', label: { en: 'Swap Exercise', ar: 'غيّر تمرين' }, icon: '🔄', nextState: 'WK_SWAP_SELECT' },
+      { id: 'wkt_ai1', label: { en: 'AI Exercise Alternatives', ar: 'بدائل تمارين AI' }, icon: '🧠', nextState: 'WK_AI_ALTERNATIVES',
+        condition: { type: 'tier', tier: 'PREMIUM_PLUS' } },
+      { id: 'wkt_ai2', label: { en: 'AI Form Feedback', ar: 'تقييم AI للفورم' }, icon: '🧠', nextState: 'WK_AI_FEEDBACK',
+        condition: { type: 'tier', tier: 'PREMIUM_PLUS' } },
       { id: 'wkt3', label: { en: 'Skip Today', ar: 'سكيب النهارده' }, icon: '⏭️', nextState: 'WK_SKIP_REASON' },
       { id: 'wkt4', label: { en: 'Change Workout', ar: 'غيّر التمرين كله' }, icon: '📝', nextState: 'WK_CHANGE' },
       { id: 'wkt5', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_MENU' },
@@ -870,6 +879,493 @@ export const workoutStates: ChatState[] = [
     options: [
       { id: 'wkfmk1', label: { en: 'Proper form guides', ar: 'أدلة فورم صح' }, icon: '🎯', nextState: 'WK_FORM_MENU' },
       { id: 'wkfmk2', label: { en: 'Back to Menu', ar: 'رجوع للقائمة' }, icon: '🔙', nextState: 'ROOT' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════════════════════
+  // CROSSFIT SECTION — WODs, Benchmarks, Scaling, Challenges
+  // ═══════════════════════════════════════════════════════════════
+
+  {
+    id: 'WK_CROSSFIT',
+    domain: 'workout',
+    text: { en: 'CrossFit', ar: 'كروس فت' },
+    botMessage: {
+      en: '🏋️‍♂️ Welcome to CrossFit!\n\nTrack WODs, benchmark times, compete with yourself, and get scaling advice. What do you need?',
+      ar: '🏋️‍♂️ أهلاً في كروس فت!\n\nتابع الـ WODs، أوقات البنشمارك، نافس نفسك، واحصل على نصايح تعديل. محتاج ايه؟',
+    },
+    back: 'WK_MENU',
+    options: [
+      { id: 'wkcf1', label: { en: 'Today\'s WOD', ar: 'تمرين النهارده' }, icon: '📅', nextState: 'WK_CF_WOD' },
+      { id: 'wkcf2', label: { en: 'Benchmark WODs', ar: 'بنشمارك WODs' }, icon: '🏆', nextState: 'WK_CF_BENCHMARK' },
+      { id: 'wkcf3', label: { en: 'Movement Scaling', ar: 'تعديل الحركات' }, icon: '📏', nextState: 'WK_CF_SCALE' },
+      { id: 'wkcf4', label: { en: 'My PR Board', ar: 'لوحة أرقامي القياسية' }, icon: '📊', nextState: 'WK_CF_PR' },
+      { id: 'wkcf5', label: { en: 'CrossFit Programs', ar: 'برامج كروس فت' }, icon: '📋', nextState: 'WK_CF_PROGRAMS' },
+      { id: 'wkcf6', label: { en: 'Challenges', ar: 'تحديات' }, icon: '🔥', nextState: 'WK_CF_CHALLENGES' },
+      { id: 'wkcf7', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_MENU' },
+    ],
+  },
+
+  // ─── Today's WOD ────────────────────────────────────────────
+  {
+    id: 'WK_CF_WOD',
+    domain: 'workout',
+    text: { en: 'Today\'s WOD', ar: 'تمرين النهارده' },
+    botMessage: {
+      en: '📅 Here\'s your WOD for today! Choose a format:',
+      ar: '📅 ده تمرين النهارده! اختار النوع:',
+    },
+    dynamic: true,
+    onEnter: { type: 'fetch', endpoint: '/crossfit/wod-of-day' },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcfw1', label: { en: 'Random Girl WOD', ar: 'جيرل WOD عشوائي' }, icon: '👧', nextState: 'WK_CF_RANDOM_GIRL' },
+      { id: 'wkcfw2', label: { en: 'Random Hero WOD', ar: 'هيرو WOD عشوائي' }, icon: '🦸', nextState: 'WK_CF_RANDOM_HERO' },
+      { id: 'wkcfw3', label: { en: 'Quick AMRAP (15 min)', ar: 'AMRAP سريع (15 دقيقة)' }, icon: '⏱️', nextState: 'WK_CF_QUICK_AMRAP' },
+      { id: 'wkcfw4', label: { en: 'For Time (under 20 min)', ar: 'فور تايم (أقل من 20 دقيقة)' }, icon: '🏃', nextState: 'WK_CF_FOR_TIME' },
+      { id: 'wkcfw5', label: { en: 'EMOM Workout', ar: 'تمرين EMOM' }, icon: '⏰', nextState: 'WK_CF_EMOM' },
+      { id: 'wkcfw6', label: { en: 'Chipper (Long)', ar: 'تشيبر (طويل)' }, icon: '💀', nextState: 'WK_CF_CHIPPER' },
+      { id: 'wkcfw7', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_RANDOM_GIRL',
+    domain: 'workout',
+    text: { en: 'Girl WOD', ar: 'جيرل WOD' },
+    dynamic: true,
+    onEnter: { type: 'fetch', endpoint: '/crossfit/random-wod?type=girl' },
+    botMessage: {
+      en: '👧 Here\'s a Girl WOD! These are the classic CrossFit benchmarks. Record your time and compare next month.',
+      ar: '👧 ده جيرل WOD! دي البنشماركات الكلاسيكية في كروس فت. سجّل وقتك وقارن الشهر الجاي.',
+    },
+    back: 'WK_CF_WOD',
+    options: [
+      { id: 'wkcfg1', label: { en: 'Start WOD', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_CF_LOG_START',
+        action: { type: 'navigate', route: '/workouts' } },
+      { id: 'wkcfg2', label: { en: 'Show scaling options', ar: 'عرض خيارات التعديل' }, icon: '📏', nextState: 'WK_CF_SCALE' },
+      { id: 'wkcfg3', label: { en: 'Different WOD', ar: 'WOD مختلف' }, icon: '🔄', nextState: 'WK_CF_WOD' },
+      { id: 'wkcfg4', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_WOD' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_RANDOM_HERO',
+    domain: 'workout',
+    text: { en: 'Hero WOD', ar: 'هيرو WOD' },
+    dynamic: true,
+    onEnter: { type: 'fetch', endpoint: '/crossfit/random-wod?type=hero' },
+    botMessage: {
+      en: '🦸 Hero WODs honor fallen heroes. These are HARD — scale as needed but give max effort. It\'s about heart, not RX.',
+      ar: '🦸 هيرو WODs بتكرّم الأبطال. دي صعبة — عدّل على حسب مستواك بس ادّي أقصى مجهود. الموضوع عن القلب، مش RX.',
+    },
+    back: 'WK_CF_WOD',
+    options: [
+      { id: 'wkcfh1', label: { en: 'Start WOD', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_CF_LOG_START',
+        action: { type: 'navigate', route: '/workouts' } },
+      { id: 'wkcfh2', label: { en: 'Show scaling options', ar: 'عرض خيارات التعديل' }, icon: '📏', nextState: 'WK_CF_SCALE' },
+      { id: 'wkcfh3', label: { en: 'Different WOD', ar: 'WOD مختلف' }, icon: '🔄', nextState: 'WK_CF_WOD' },
+      { id: 'wkcfh4', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_WOD' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_QUICK_AMRAP',
+    domain: 'workout',
+    text: { en: 'Quick AMRAP', ar: 'AMRAP سريع' },
+    botMessage: {
+      en: '⏱️ AMRAP 15:\n\n• 10 Power Cleans (61/43 kg)\n• 15 Wall Balls (9/6 kg)\n• 20 Calorie Row\n\nScore = total rounds + reps. Record and beat it next time!',
+      ar: '⏱️ AMRAP 15:\n\n• 10 باور كلين (61/43 كجم)\n• 15 وول بول (9/6 كجم)\n• 20 كالوري تجديف\n\nالسكور = إجمالي الراوندات + التكرارات. سجّل واكسره المرة الجاية!',
+    },
+    back: 'WK_CF_WOD',
+    options: [
+      { id: 'wkcfa1', label: { en: 'Start WOD', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_CF_LOG_START',
+        action: { type: 'navigate', route: '/workouts' } },
+      { id: 'wkcfa2', label: { en: 'Different WOD', ar: 'WOD مختلف' }, icon: '🔄', nextState: 'WK_CF_WOD' },
+      { id: 'wkcfa3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_WOD' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_FOR_TIME',
+    domain: 'workout',
+    text: { en: 'For Time', ar: 'فور تايم' },
+    botMessage: {
+      en: '🏃 For Time:\n\n5 Rounds:\n• 12 Deadlifts (84/57 kg)\n• 9 Hang Power Cleans\n• 6 Push Jerks\n\nTime cap: 18 minutes. Go fast, stay safe!',
+      ar: '🏃 فور تايم:\n\n5 راوندات:\n• 12 ديدلفت (84/57 كجم)\n• 9 هانج باور كلين\n• 6 بوش جيرك\n\nحد الوقت: 18 دقيقة. بسرعة بس بأمان!',
+    },
+    back: 'WK_CF_WOD',
+    options: [
+      { id: 'wkcft1', label: { en: 'Start WOD', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_CF_LOG_START',
+        action: { type: 'navigate', route: '/workouts' } },
+      { id: 'wkcft2', label: { en: 'Different WOD', ar: 'WOD مختلف' }, icon: '🔄', nextState: 'WK_CF_WOD' },
+      { id: 'wkcft3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_WOD' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_EMOM',
+    domain: 'workout',
+    text: { en: 'EMOM Workout', ar: 'تمرين EMOM' },
+    botMessage: {
+      en: '⏰ EMOM 20 (Every Minute On the Minute):\n\nMin 1: 5 Power Cleans (70/47 kg)\nMin 2: 10 Box Jumps (60/50 cm)\nMin 3: 15 Wall Balls (9/6 kg)\nMin 4: 20 Double-Unders\n\nRepeat x5. Rest = whatever\'s left in the minute.',
+      ar: '⏰ EMOM 20 (كل دقيقة في الدقيقة):\n\nدقيقة 1: 5 باور كلين (70/47 كجم)\nدقيقة 2: 10 بوكس جمب (60/50 سم)\nدقيقة 3: 15 وول بول (9/6 كجم)\nدقيقة 4: 20 دبل أندر\n\nكرر x5. الراحة = الباقي من الدقيقة.',
+    },
+    back: 'WK_CF_WOD',
+    options: [
+      { id: 'wkcfe1', label: { en: 'Start WOD', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_CF_LOG_START',
+        action: { type: 'navigate', route: '/workouts' } },
+      { id: 'wkcfe2', label: { en: 'Different WOD', ar: 'WOD مختلف' }, icon: '🔄', nextState: 'WK_CF_WOD' },
+      { id: 'wkcfe3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_WOD' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_CHIPPER',
+    domain: 'workout',
+    text: { en: 'Chipper', ar: 'تشيبر' },
+    botMessage: {
+      en: '💀 The Chipper — For Time:\n\n50 Double-Unders\n40 Toes-to-Bar\n30 Box Jumps (60 cm)\n20 Power Cleans (61/43 kg)\n10 Muscle-Ups (or 20 C2B Pull-Ups)\n\nOne trip through. Pace yourself — this is a grinder.',
+      ar: '💀 التشيبر — فور تايم:\n\n50 دبل أندر\n40 أصابع للبار\n30 بوكس جمب (60 سم)\n20 باور كلين (61/43 كجم)\n10 ماسل أب (أو 20 صدر للبار)\n\nمرة واحدة. وزّع مجهودك — ده تمرين طحن.',
+    },
+    back: 'WK_CF_WOD',
+    options: [
+      { id: 'wkcfc1', label: { en: 'Start WOD', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_CF_LOG_START',
+        action: { type: 'navigate', route: '/workouts' } },
+      { id: 'wkcfc2', label: { en: 'Different WOD', ar: 'WOD مختلف' }, icon: '🔄', nextState: 'WK_CF_WOD' },
+      { id: 'wkcfc3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_WOD' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_LOG_START',
+    domain: 'workout',
+    text: { en: 'WOD Started', ar: 'التمرين بدأ' },
+    botMessage: {
+      en: '🔥 GO! Timer is running. Come back when you\'re done to log your score.',
+      ar: '🔥 يلا! التايمر شغال. ارجع لما تخلّص تسجّل السكور بتاعك.',
+    },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcfls1', label: { en: 'Log my score', ar: 'سجّل السكور' }, icon: '📝', nextState: 'WK_CF_LOG_SCORE',
+        action: { type: 'write', endpoint: '/crossfit/log-score', requiresConfirmation: true,
+          confirmText: { en: 'Ready to log your WOD score?', ar: 'جاهز تسجّل سكور الـ WOD?' } } },
+      { id: 'wkcfls2', label: { en: 'Back to CrossFit', ar: 'رجوع لكروس فت' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_LOG_SCORE',
+    domain: 'workout',
+    text: { en: 'Score Logged', ar: 'السكور اتسجّل' },
+    botMessage: {
+      en: '✅ WOD score logged! Check your PR board to see how you\'re progressing over time. Keep grinding!',
+      ar: '✅ سكور الـ WOD اتسجّل! شوف لوحة أرقامك القياسية تشوف تقدمك مع الوقت. كمّل اطحن!',
+    },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcflg1', label: { en: 'View PR Board', ar: 'شوف لوحة الأرقام' }, icon: '📊', nextState: 'WK_CF_PR' },
+      { id: 'wkcflg2', label: { en: 'Another WOD', ar: 'WOD تاني' }, icon: '🔄', nextState: 'WK_CF_WOD' },
+      { id: 'wkcflg3', label: { en: 'Back to CrossFit', ar: 'رجوع لكروس فت' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  // ─── Benchmark WODs ─────────────────────────────────────────
+  {
+    id: 'WK_CF_BENCHMARK',
+    domain: 'workout',
+    text: { en: 'Benchmark WODs', ar: 'بنشمارك WODs' },
+    botMessage: {
+      en: '🏆 Benchmark WODs are how you measure CrossFit progress. Pick a category:',
+      ar: '🏆 البنشمارك WODs هي طريقة قياس تقدمك في كروس فت. اختار فئة:',
+    },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcfb1', label: { en: 'Girl WODs', ar: 'جيرل WODs' }, icon: '👧', nextState: 'WK_CF_GIRLS' },
+      { id: 'wkcfb2', label: { en: 'Hero WODs', ar: 'هيرو WODs' }, icon: '🦸', nextState: 'WK_CF_HEROES' },
+      { id: 'wkcfb3', label: { en: 'Open WODs', ar: 'أوبن WODs' }, icon: '🌍', nextState: 'WK_CF_OPEN' },
+      { id: 'wkcfb4', label: { en: 'My Benchmark History', ar: 'تاريخ بنشماركاتي' }, icon: '📈', nextState: 'WK_CF_BENCHMARK_HISTORY' },
+      { id: 'wkcfb5', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_GIRLS',
+    domain: 'workout',
+    text: { en: 'Girl WODs', ar: 'جيرل WODs' },
+    botMessage: {
+      en: '👧 The Girls — Classic CrossFit Benchmarks:\n\n• Fran: 21-15-9 Thrusters & Pull-Ups\n• Grace: 30 Clean & Jerks\n• Isabel: 30 Snatches\n• Diane: 21-15-9 Deadlifts & HSPU\n• Elizabeth: 21-15-9 Cleans & Ring Dips\n• Helen: 3 RFT Run, KB Swings, Pull-Ups\n• Jackie: Row, Thrusters, Pull-Ups\n• Karen: 150 Wall Balls\n• Annie: DUs & Sit-Ups\n• Cindy: AMRAP 20 Pull-Ups, Push-Ups, Squats\n• Mary: AMRAP 20 HSPU, Pistols, Pull-Ups\n• Nancy: 5 RFT Run & OHS\n\nPick one to start!',
+      ar: '👧 الجيرلز — بنشماركات كروس فت الكلاسيكية:\n\n• فران: 21-15-9 ثرسترز وعقلة\n• جريس: 30 كلين آند جيرك\n• إيزابيل: 30 سناتش\n• ديان: 21-15-9 ديدلفت و HSPU\n• إليزابيث: 21-15-9 كلينز ورينج ديبس\n• هيلين: 3 راوند جري، كيتل بل سوينج، عقلة\n• جاكي: تجديف، ثرسترز، عقلة\n• كارين: 150 وول بول\n• آني: دبل أندرز وست أبز\n• سيندي: AMRAP 20 عقلة، ضغط، سكوات\n• ماري: AMRAP 20 HSPU، بيستول، عقلة\n• نانسي: 5 راوند جري و OHS\n\nاختار واحد تبدأ!',
+    },
+    back: 'WK_CF_BENCHMARK',
+    options: [
+      { id: 'wkcfgr1', label: { en: 'Do Fran', ar: 'عمل فران' }, icon: '🔥', nextState: 'WK_CF_LOG_START' },
+      { id: 'wkcfgr2', label: { en: 'Do Cindy', ar: 'عمل سيندي' }, icon: '⏱️', nextState: 'WK_CF_LOG_START' },
+      { id: 'wkcfgr3', label: { en: 'Do Grace', ar: 'عمل جريس' }, icon: '💪', nextState: 'WK_CF_LOG_START' },
+      { id: 'wkcfgr4', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_BENCHMARK' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_HEROES',
+    domain: 'workout',
+    text: { en: 'Hero WODs', ar: 'هيرو WODs' },
+    botMessage: {
+      en: '🦸 Hero WODs — In honor of fallen heroes:\n\n• Murph: 1mi Run, 100 Pull-Ups, 200 Push-Ups, 300 Squats, 1mi Run (w/ vest)\n• DT: 5 RFT Deadlifts, Hang Cleans, Push Jerks\n• Nate: AMRAP 20 Muscle-Ups, HSPU, KB Swings\n• Michael: 3 RFT Run, Back Extensions, Sit-Ups\n• Badger: 3 RFT Squat Cleans, Pull-Ups, Run\n\n⚠️ These are BRUTAL. Scale wisely. Honor the workout with max effort.',
+      ar: '🦸 هيرو WODs — تكريماً للأبطال:\n\n• ميرف: 1 ميل جري، 100 عقلة، 200 ضغط، 300 سكوات، 1 ميل جري (بالفست)\n• DT: 5 راوند ديدلفت، هانج كلينز، بوش جيركس\n• نيت: AMRAP 20 ماسل أبز، HSPU، كيتل بل سوينج\n• مايكل: 3 راوند جري، باك إكستنشن، ست أبز\n• بادجر: 3 راوند سكوات كلينز، عقلة، جري\n\n⚠️ دي وحشية. عدّل بحكمة. كرّم التمرين بأقصى مجهود.',
+    },
+    back: 'WK_CF_BENCHMARK',
+    options: [
+      { id: 'wkcfhr1', label: { en: 'Do Murph', ar: 'عمل ميرف' }, icon: '🦸', nextState: 'WK_CF_LOG_START' },
+      { id: 'wkcfhr2', label: { en: 'Do DT', ar: 'عمل DT' }, icon: '🏋️', nextState: 'WK_CF_LOG_START' },
+      { id: 'wkcfhr3', label: { en: 'Do Nate', ar: 'عمل نيت' }, icon: '💀', nextState: 'WK_CF_LOG_START' },
+      { id: 'wkcfhr4', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_BENCHMARK' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_OPEN',
+    domain: 'workout',
+    text: { en: 'Open WODs', ar: 'أوبن WODs' },
+    botMessage: {
+      en: '🌍 CrossFit Open Classic WODs:\n\n• 12.1: AMRAP 7 Burpees\n• 14.5: 21-18-15-12-9-6-3 Thrusters & Burpees\n• 17.5: 10 RFT Thrusters & DUs\n• 20.1: 10 RFT Ground-to-OH & Bar-Facing Burpees\n• 23.1: AMRAP 14 Row, TTB, Wall Balls, Cleans, Muscle-Ups\n\nGreat way to measure your Open readiness!',
+      ar: '🌍 WODs كروس فت أوبن الكلاسيكية:\n\n• 12.1: AMRAP 7 بيربي\n• 14.5: 21-18-15-12-9-6-3 ثرسترز وبيربي\n• 17.5: 10 راوند ثرسترز ودبل أندرز\n• 20.1: 10 راوند أرض لفوق الراس وبيربي\n• 23.1: AMRAP 14 تجديف، أصابع للبار، وول بول، كلينز، ماسل أبز\n\nطريقة ممتازة تقيس جاهزيتك للأوبن!',
+    },
+    back: 'WK_CF_BENCHMARK',
+    options: [
+      { id: 'wkcfo1', label: { en: 'Do 14.5', ar: 'عمل 14.5' }, icon: '🔥', nextState: 'WK_CF_LOG_START' },
+      { id: 'wkcfo2', label: { en: 'Do 23.1', ar: 'عمل 23.1' }, icon: '💀', nextState: 'WK_CF_LOG_START' },
+      { id: 'wkcfo3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_BENCHMARK' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_BENCHMARK_HISTORY',
+    domain: 'workout',
+    text: { en: 'Benchmark History', ar: 'تاريخ البنشماركات' },
+    dynamic: true,
+    onEnter: { type: 'fetch', endpoint: '/crossfit/benchmark-history' },
+    botMessage: {
+      en: '📈 Your benchmark WOD history and progress over time. See how you\'re improving!',
+      ar: '📈 تاريخ بنشماركاتك وتقدمك مع الوقت. شوف ازاي بتتحسن!',
+    },
+    back: 'WK_CF_BENCHMARK',
+    options: [
+      { id: 'wkcfbh1', label: { en: 'Retest a benchmark', ar: 'أعد اختبار بنشمارك' }, icon: '🔄', nextState: 'WK_CF_BENCHMARK' },
+      { id: 'wkcfbh2', label: { en: 'View PR Board', ar: 'شوف لوحة الأرقام' }, icon: '📊', nextState: 'WK_CF_PR' },
+      { id: 'wkcfbh3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_BENCHMARK' },
+    ],
+  },
+
+  // ─── Movement Scaling ───────────────────────────────────────
+  {
+    id: 'WK_CF_SCALE',
+    domain: 'workout',
+    text: { en: 'Movement Scaling', ar: 'تعديل الحركات' },
+    botMessage: {
+      en: '📏 Can\'t do a movement? No shame — scaling is how you GET there. Pick a movement:',
+      ar: '📏 مش قادر تعمل حركة؟ عادي — التعديل هو الطريقة اللي توصلك. اختار حركة:',
+    },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcfs1', label: { en: 'Muscle-Up', ar: 'ماسل أب' }, icon: '🔄', nextState: 'WK_CF_SCALE_MU' },
+      { id: 'wkcfs2', label: { en: 'Handstand Push-Up', ar: 'HSPU' }, icon: '🤸', nextState: 'WK_CF_SCALE_HSPU' },
+      { id: 'wkcfs3', label: { en: 'Double-Under', ar: 'دبل أندر' }, icon: '🪢', nextState: 'WK_CF_SCALE_DU' },
+      { id: 'wkcfs4', label: { en: 'Pistol Squat', ar: 'بيستول سكوات' }, icon: '🦵', nextState: 'WK_CF_SCALE_PISTOL' },
+      { id: 'wkcfs5', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_SCALE_MU',
+    domain: 'workout',
+    text: { en: 'Muscle-Up Scaling', ar: 'تعديل ماسل أب' },
+    botMessage: {
+      en: '🔄 Muscle-Up Progression:\n\n1. Ring Rows → build pulling strength\n2. Strict Pull-Ups → 5+ unbroken\n3. Chest-to-Bar Pull-Ups → kipping ok\n4. Ring Dips → 5+ strict\n5. Banded Muscle-Up transitions\n6. Low Ring Muscle-Up (feet on ground)\n7. Full Ring Muscle-Up\n\n💡 Pro tip: The transition is the hard part. Practice jumping muscle-ups on low rings daily.',
+      ar: '🔄 تدرج ماسل أب:\n\n1. رينج رو → بناء قوة سحب\n2. عقلة ستريكت → 5+ من غير وقف\n3. صدر للبار → كيبنج ممكن\n4. رينج ديبس → 5+ ستريكت\n5. انتقالات ماسل أب بالباند\n6. ماسل أب واطي (الرجل على الأرض)\n7. رينج ماسل أب كامل\n\n💡 نصيحة: الانتقال هو الجزء الصعب. تمرّن على ماسل أب بالنط على رينجز واطية كل يوم.',
+    },
+    back: 'WK_CF_SCALE',
+    options: [
+      { id: 'wkcfsm1', label: { en: 'Find progression exercises', ar: 'دوّر على تمارين التدرج' }, icon: '🔍', nextState: 'WK_FIND' },
+      { id: 'wkcfsm2', label: { en: 'Other movements', ar: 'حركات تانية' }, icon: '📏', nextState: 'WK_CF_SCALE' },
+      { id: 'wkcfsm3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_SCALE' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_SCALE_HSPU',
+    domain: 'workout',
+    text: { en: 'HSPU Scaling', ar: 'تعديل HSPU' },
+    botMessage: {
+      en: '🤸 HSPU Progression:\n\n1. Pike Push-Up (feet on floor)\n2. Pike Push-Up (feet on box)\n3. Wall Walk\n4. Handstand Hold (nose to wall)\n5. Negative HSPU (slow lower)\n6. Kipping HSPU (with AbMat)\n7. Strict HSPU\n8. Deficit HSPU\n\n💡 Build overhead strength with strict presses 2x/week.',
+      ar: '🤸 تدرج HSPU:\n\n1. بايك بوش أب (الرجل على الأرض)\n2. بايك بوش أب (الرجل على بوكس)\n3. وول ووك\n4. تعليق هاند ستاند (الأنف للحيط)\n5. HSPU سلبي (نزول بطيء)\n6. كيبنج HSPU (مع AbMat)\n7. ستريكت HSPU\n8. ديفيسيت HSPU\n\n💡 ابني قوة فوق الراس بضغط ستريكت مرتين في الأسبوع.',
+    },
+    back: 'WK_CF_SCALE',
+    options: [
+      { id: 'wkcfsh1', label: { en: 'Find progression exercises', ar: 'دوّر على تمارين التدرج' }, icon: '🔍', nextState: 'WK_FIND' },
+      { id: 'wkcfsh2', label: { en: 'Other movements', ar: 'حركات تانية' }, icon: '📏', nextState: 'WK_CF_SCALE' },
+      { id: 'wkcfsh3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_SCALE' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_SCALE_DU',
+    domain: 'workout',
+    text: { en: 'Double-Under Scaling', ar: 'تعديل دبل أندر' },
+    botMessage: {
+      en: '🪢 Double-Under Progression:\n\n1. Single-Unders (3:1 ratio for WODs)\n2. Power jumps (higher bounce)\n3. Penguin taps (clap thighs mid-air)\n4. Single-single-double pattern\n5. 5 unbroken Double-Unders\n6. 20 unbroken\n7. 50+ unbroken\n\n💡 Use a speed rope (not a thick one). Wrists, not arms. Jump once — rope goes twice.',
+      ar: '🪢 تدرج دبل أندر:\n\n1. سينجل أندرز (نسبة 3:1 في الـ WODs)\n2. نطات عالية (باونس أعلى)\n3. تصفيق الفخدين في الهوا\n4. نمط سينجل-سينجل-دبل\n5. 5 دبل أندر من غير وقف\n6. 20 من غير وقف\n7. 50+ من غير وقف\n\n💡 استخدم حبل سريع (مش تخين). الرسغ مش الدراع. انط مرة — الحبل يلف مرتين.',
+    },
+    back: 'WK_CF_SCALE',
+    options: [
+      { id: 'wkcfsd1', label: { en: 'Other movements', ar: 'حركات تانية' }, icon: '📏', nextState: 'WK_CF_SCALE' },
+      { id: 'wkcfsd2', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_SCALE' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_SCALE_PISTOL',
+    domain: 'workout',
+    text: { en: 'Pistol Squat Scaling', ar: 'تعديل بيستول سكوات' },
+    botMessage: {
+      en: '🦵 Pistol Squat Progression:\n\n1. Air Squats (perfect depth)\n2. Box pistol (sit to box on one leg)\n3. Banded pistol (hold band for support)\n4. Counterbalance pistol (hold weight in front)\n5. Pistol to box (lower depth)\n6. Full pistol squat\n\n💡 Ankle mobility is usually the limiter. Stretch calves and work ankle dorsiflexion daily.',
+      ar: '🦵 تدرج بيستول سكوات:\n\n1. اير سكوات (عمق مثالي)\n2. بوكس بيستول (اقعد على بوكس برجل واحدة)\n3. بيستول بالباند (امسك باند للدعم)\n4. بيستول بتوازن (امسك وزن قدامك)\n5. بيستول لبوكس (عمق أقل)\n6. بيستول سكوات كامل\n\n💡 مرونة الكاحل عادةً هي المشكلة. اعمل إطالة للسمانة واشتغل على مرونة الكاحل يومياً.',
+    },
+    back: 'WK_CF_SCALE',
+    options: [
+      { id: 'wkcfsp1', label: { en: 'Other movements', ar: 'حركات تانية' }, icon: '📏', nextState: 'WK_CF_SCALE' },
+      { id: 'wkcfsp2', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CF_SCALE' },
+    ],
+  },
+
+  // ─── PR Board ───────────────────────────────────────────────
+  {
+    id: 'WK_CF_PR',
+    domain: 'workout',
+    text: { en: 'PR Board', ar: 'لوحة الأرقام القياسية' },
+    dynamic: true,
+    onEnter: { type: 'fetch', endpoint: '/crossfit/pr-board' },
+    botMessage: {
+      en: '📊 Your CrossFit PR Board — Track everything:\n\n🏋️ Lifting PRs: Snatch, C&J, Back Squat, Front Squat, Deadlift, Strict Press\n⏱️ Benchmark Times: Fran, Grace, Isabel, Diane, Helen, Murph\n🔄 Gymnastics: Max Pull-Ups, Muscle-Ups, HSPU, T2B\n🚣 Cardio: 500m Row, 2k Row, 1mi Run, Assault Bike Cal\n\nYour numbers tell your story. Keep pushing!',
+      ar: '📊 لوحة أرقامك القياسية — تابع كل حاجة:\n\n🏋️ أرقام الرفع: سناتش، C&J، باك سكوات، فرنت سكوات، ديدلفت، ستريكت بريس\n⏱️ أوقات البنشمارك: فران، جريس، إيزابيل، ديان، هيلين، ميرف\n🔄 جمباز: أقصى عقلة، ماسل أبز، HSPU، T2B\n🚣 كارديو: 500م تجديف، 2ك تجديف، 1 ميل جري، أسولت بايك كال\n\nأرقامك بتحكي قصتك. كمّل ادفع!',
+    },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcfpr1', label: { en: 'Log a new PR', ar: 'سجّل رقم قياسي جديد' }, icon: '🆕', nextState: 'WK_CF_LOG_PR',
+        action: { type: 'write', endpoint: '/crossfit/log-pr', requiresConfirmation: true,
+          confirmText: { en: 'Log a new personal record?', ar: 'تسجّل رقم قياسي جديد?' } } },
+      { id: 'wkcfpr2', label: { en: 'Compare with last month', ar: 'قارن بالشهر اللي فات' }, icon: '📈', nextState: 'WK_CF_BENCHMARK_HISTORY' },
+      { id: 'wkcfpr3', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_LOG_PR',
+    domain: 'workout',
+    text: { en: 'PR Logged', ar: 'الرقم القياسي اتسجّل' },
+    botMessage: {
+      en: '🎉 NEW PR LOGGED! That\'s what it\'s about. Your progress graph just got a new peak!',
+      ar: '🎉 رقم قياسي جديد اتسجّل! ده المطلوب. جراف التقدم بتاعك عنده قمة جديدة!',
+    },
+    back: 'WK_CF_PR',
+    options: [
+      { id: 'wkcflp1', label: { en: 'View PR Board', ar: 'شوف لوحة الأرقام' }, icon: '📊', nextState: 'WK_CF_PR' },
+      { id: 'wkcflp2', label: { en: 'Back to CrossFit', ar: 'رجوع لكروس فت' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  // ─── CrossFit Programs ─────────────────────────────────────
+  {
+    id: 'WK_CF_PROGRAMS',
+    domain: 'workout',
+    text: { en: 'CrossFit Programs', ar: 'برامج كروس فت' },
+    botMessage: {
+      en: '📋 Structured CrossFit programs for every level:\n\n🟢 Foundations (4 weeks) — New to CF? Start here\n🟡 WOD Program (8 weeks) — Classic 5-day split\n🔴 Competitor (12 weeks) — Double sessions, Open prep\n🟢 Fat Loss (6 weeks) — High-volume metcons\n🟡 Strength Hybrid (8 weeks) — 5/3/1 + daily WOD\n🔴 Open Prep (8 weeks) — Train for the Open',
+      ar: '📋 برامج كروس فت منظمة لكل مستوى:\n\n🟢 أساسيات (4 أسابيع) — جديد على CF؟ ابدأ هنا\n🟡 برنامج WOD (8 أسابيع) — سبليت 5 أيام كلاسيكي\n🔴 كومبتيتور (12 أسبوع) — جلستين، تحضير أوبن\n🟢 حرق دهون (6 أسابيع) — ميتكون عالي الحجم\n🟡 قوة هايبرد (8 أسابيع) — 5/3/1 + WOD يومي\n🔴 تحضير أوبن (8 أسابيع) — تدريب للأوبن',
+    },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcfp1', label: { en: 'Start Foundations', ar: 'ابدأ الأساسيات' }, icon: '🟢', nextState: 'WK_CF_PROGRAM_START',
+        action: { type: 'write', endpoint: '/programs/enroll', params: { program: 'cfp-foundations' },
+          requiresConfirmation: true, confirmText: { en: 'Start CrossFit Foundations program?', ar: 'تبدأ برنامج أساسيات كروس فت?' } } },
+      { id: 'wkcfp2', label: { en: 'Start WOD Program', ar: 'ابدأ برنامج WOD' }, icon: '🟡', nextState: 'WK_CF_PROGRAM_START',
+        action: { type: 'write', endpoint: '/programs/enroll', params: { program: 'cfp-wod-program' },
+          requiresConfirmation: true, confirmText: { en: 'Start CrossFit WOD Program?', ar: 'تبدأ برنامج كروس فت WOD?' } } },
+      { id: 'wkcfp3', label: { en: 'Start Competitor', ar: 'ابدأ كومبتيتور' }, icon: '🔴', nextState: 'WK_CF_PROGRAM_START',
+        action: { type: 'write', endpoint: '/programs/enroll', params: { program: 'cfp-competitor' },
+          requiresConfirmation: true, confirmText: { en: 'Start CrossFit Competitor program?', ar: 'تبدأ برنامج كروس فت كومبتيتور?' } } },
+      { id: 'wkcfp4', label: { en: 'View all programs', ar: 'شوف كل البرامج' }, icon: '📋', nextState: 'WK_CF_PROGRAMS',
+        action: { type: 'navigate', route: '/programs?filter=crossfit' } },
+      { id: 'wkcfp5', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_PROGRAM_START',
+    domain: 'workout',
+    text: { en: 'Program Started', ar: 'البرنامج بدأ' },
+    botMessage: {
+      en: '✅ Program enrolled! Your first workout is ready. Check your schedule — let\'s crush it!',
+      ar: '✅ اتسجلت في البرنامج! أول تمرين جاهز. شوف الجدول — يلا نكسره!',
+    },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcfps1', label: { en: 'Go to Today\'s Workout', ar: 'روح لتمرين النهارده' }, icon: '📅', nextState: 'WK_TODAY' },
+      { id: 'wkcfps2', label: { en: 'Back to CrossFit', ar: 'رجوع لكروس فت' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  // ─── Challenges ─────────────────────────────────────────────
+  {
+    id: 'WK_CF_CHALLENGES',
+    domain: 'workout',
+    text: { en: 'CrossFit Challenges', ar: 'تحديات كروس فت' },
+    botMessage: {
+      en: '🔥 CrossFit Challenges — Push your limits!\n\nActive challenges you can join:\n\n• 30-Day Murph Challenge — Do Murph once a week, improve each time\n• 100 Pull-Up Challenge — Build to 100 unbroken\n• Double-Under September — 1000 DUs total this month\n• Squat Snatch PR Challenge — Beat your 1RM by end of month\n• WOD Streak — Complete a WOD every day for 30 days\n\nCompete with yourself. Track everything.',
+      ar: '🔥 تحديات كروس فت — ادفع حدودك!\n\nتحديات نشطة تقدر تشارك فيها:\n\n• تحدي ميرف 30 يوم — اعمل ميرف مرة في الأسبوع، اتحسن كل مرة\n• تحدي 100 عقلة — وصّل لـ 100 من غير وقف\n• دبل أندر سبتمبر — 1000 دبل أندر إجمالي الشهر ده\n• تحدي سكوات سناتش PR — اكسر رقمك القياسي قبل آخر الشهر\n• WOD ستريك — خلّص WOD كل يوم لمدة 30 يوم\n\nنافس نفسك. تابع كل حاجة.',
+    },
+    back: 'WK_CROSSFIT',
+    options: [
+      { id: 'wkcfch1', label: { en: 'Join Murph Challenge', ar: 'انضم لتحدي ميرف' }, icon: '🦸', nextState: 'WK_CF_CHALLENGE_JOINED',
+        action: { type: 'write', endpoint: '/challenges/join', params: { challenge: 'murph-30' },
+          requiresConfirmation: true, confirmText: { en: 'Join 30-Day Murph Challenge?', ar: 'تنضم لتحدي ميرف 30 يوم?' } } },
+      { id: 'wkcfch2', label: { en: 'Join WOD Streak', ar: 'انضم لـ WOD ستريك' }, icon: '🔥', nextState: 'WK_CF_CHALLENGE_JOINED',
+        action: { type: 'write', endpoint: '/challenges/join', params: { challenge: 'wod-streak-30' },
+          requiresConfirmation: true, confirmText: { en: 'Join 30-Day WOD Streak?', ar: 'تنضم لستريك WOD 30 يوم?' } } },
+      { id: 'wkcfch3', label: { en: 'View my challenges', ar: 'شوف تحدياتي' }, icon: '📊', nextState: 'WK_CF_MY_CHALLENGES' },
+      { id: 'wkcfch4', label: { en: 'Back', ar: 'رجوع' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_CHALLENGE_JOINED',
+    domain: 'workout',
+    text: { en: 'Challenge Joined', ar: 'انضممت للتحدي' },
+    botMessage: {
+      en: '✅ You\'re in! Challenge starts now. Track your progress in the Challenges section. Let\'s go!',
+      ar: '✅ انت فيها! التحدي بيبدأ دلوقتي. تابع تقدمك في قسم التحديات. يلا!',
+    },
+    back: 'WK_CF_CHALLENGES',
+    options: [
+      { id: 'wkcfcj1', label: { en: 'Start first WOD', ar: 'ابدأ أول WOD' }, icon: '▶️', nextState: 'WK_CF_WOD' },
+      { id: 'wkcfcj2', label: { en: 'Back to Challenges', ar: 'رجوع للتحديات' }, icon: '🔙', nextState: 'WK_CF_CHALLENGES' },
+    ],
+  },
+
+  {
+    id: 'WK_CF_MY_CHALLENGES',
+    domain: 'workout',
+    text: { en: 'My Challenges', ar: 'تحدياتي' },
+    dynamic: true,
+    onEnter: { type: 'fetch', endpoint: '/challenges/my-challenges?type=crossfit' },
+    botMessage: {
+      en: '📊 Your active CrossFit challenges and progress. Keep pushing — consistency beats intensity.',
+      ar: '📊 تحديات كروس فت النشطة وتقدمك. كمّل — الانتظام أهم من الشدة.',
+    },
+    back: 'WK_CF_CHALLENGES',
+    options: [
+      { id: 'wkcfmc1', label: { en: 'Join more challenges', ar: 'انضم لتحديات أكتر' }, icon: '➕', nextState: 'WK_CF_CHALLENGES' },
+      { id: 'wkcfmc2', label: { en: 'Back to CrossFit', ar: 'رجوع لكروس فت' }, icon: '🔙', nextState: 'WK_CROSSFIT' },
     ],
   },
 ];

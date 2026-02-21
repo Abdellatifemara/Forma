@@ -6,7 +6,7 @@ function LoginFallback() {
   return (
     <div className="w-full max-w-md">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
+        <h1 className="text-4xl font-bold text-primary">
           FORMA
         </h1>
         <p className="text-muted-foreground mt-2">Welcome back</p>

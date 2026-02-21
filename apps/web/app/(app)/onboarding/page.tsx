@@ -45,8 +45,8 @@ export default function OnboardingPage() {
 
   const goals = [
     { value: 'LOSE_WEIGHT', label: isAr ? 'نزول وزن' : 'Lose Weight', description: isAr ? 'حرق دهون وتخسيس' : 'Burn fat and slim down', icon: Flame, color: 'from-orange-500 to-red-500' },
-    { value: 'BUILD_MUSCLE', label: isAr ? 'بناء عضل' : 'Build Muscle', description: isAr ? 'زيادة حجم وقوة' : 'Gain size and strength', icon: Dumbbell, color: 'from-cyan-500 to-blue-500' },
-    { value: 'GET_STRONGER', label: isAr ? 'زيادة قوة' : 'Get Stronger', description: isAr ? 'ارفع أتقل' : 'Increase your lifts', icon: TrendingUp, color: 'from-purple-500 to-pink-500' },
+    { value: 'BUILD_MUSCLE', label: isAr ? 'بناء عضل' : 'Build Muscle', description: isAr ? 'زيادة حجم وقوة' : 'Gain size and strength', icon: Dumbbell, color: 'from-blue-500 to-blue-600' },
+    { value: 'GET_STRONGER', label: isAr ? 'زيادة قوة' : 'Get Stronger', description: isAr ? 'ارفع أتقل' : 'Increase your lifts', icon: TrendingUp, color: 'from-rose-500 to-pink-500' },
     { value: 'IMPROVE_HEALTH', label: isAr ? 'تحسين الصحة' : 'Improve Health', description: isAr ? 'حس بتحسن كل يوم' : 'Feel better daily', icon: Heart, color: 'from-green-500 to-emerald-500' },
     { value: 'INCREASE_ENDURANCE', label: isAr ? 'تحمّل' : 'Endurance', description: isAr ? 'استمر أكتر وأقوى' : 'Go longer & harder', icon: Zap, color: 'from-yellow-500 to-orange-500' },
   ];
@@ -198,17 +198,11 @@ export default function OnboardingPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Animated background */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-[128px] animate-pulse" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/20 rounded-full blur-[128px] animate-pulse" style={{ animationDelay: '1s' }} />
-      </div>
-
-      <div className="relative z-10 container flex min-h-screen flex-col items-center justify-center py-8">
+      <div className="container flex min-h-screen flex-col items-center justify-center py-8">
         <div className="w-full max-w-xl">
           {/* Logo */}
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
+            <h2 className="text-3xl font-bold text-primary">
               FORMA
             </h2>
             <p className="text-muted-foreground mt-1">{t.onboarding.letsGetStarted}</p>
@@ -226,7 +220,7 @@ export default function OnboardingPage() {
                   <div key={step.id} className="flex items-center">
                     <div className={cn(
                       "relative flex items-center justify-center w-10 h-10 rounded-xl transition-all duration-300",
-                      isActive && "bg-gradient-to-br from-cyan-500 to-purple-500 shadow-lg shadow-primary/25",
+                      isActive && "bg-primary shadow-lg shadow-primary/25",
                       isCompleted && "bg-primary",
                       !isActive && !isCompleted && "bg-muted/50 border border-border/50"
                     )}>
@@ -259,7 +253,7 @@ export default function OnboardingPage() {
           {/* Progress Bar */}
           <div className="mb-8 h-1 bg-muted/30 rounded-full overflow-hidden">
             <motion.div
-              className="h-full bg-gradient-to-r from-cyan-500 to-purple-500"
+              className="h-full bg-primary"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.3 }}
@@ -281,7 +275,7 @@ export default function OnboardingPage() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="glass rounded-2xl p-6 border border-border/50"
+              className="rounded-2xl border border-border/50 bg-card p-6"
             >
               {/* Step 0: Goal Selection */}
               {currentStep === 0 && (

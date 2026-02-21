@@ -115,15 +115,37 @@ export default function TrainersMarketplacePage() {
 
   if (isLoading) {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
-        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      <div className="space-y-6 pb-20">
+        <div className="space-y-2">
+          <div className="h-8 w-40 rounded-lg animate-shimmer" />
+          <div className="h-4 w-64 rounded-lg animate-shimmer" />
+        </div>
+        <div className="h-10 w-full rounded-xl animate-shimmer" />
+        <div className="grid gap-4 md:grid-cols-2">
+          {[1, 2, 3, 4].map(i => (
+            <div key={i} className="rounded-2xl border border-border/60 bg-white dark:bg-card p-5">
+              <div className="flex gap-4">
+                <div className="h-16 w-16 rounded-full animate-shimmer flex-shrink-0" />
+                <div className="flex-1 space-y-2">
+                  <div className="h-5 w-32 rounded animate-shimmer" />
+                  <div className="h-3 w-24 rounded animate-shimmer" />
+                  <div className="h-4 w-full rounded animate-shimmer" />
+                  <div className="flex gap-2">
+                    <div className="h-6 w-16 rounded-full animate-shimmer" />
+                    <div className="h-6 w-20 rounded-full animate-shimmer" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-[50vh] text-center lg:ml-64">
+      <div className="flex flex-col items-center justify-center min-h-[50vh] text-center">
         <AlertCircle className="h-12 w-12 text-destructive mb-4" />
         <h2 className="text-xl font-semibold mb-2">{isAr ? 'مقدرناش نحمّل المدربين' : 'Failed to load trainers'}</h2>
         <p className="text-muted-foreground">{error}</p>
@@ -132,7 +154,7 @@ export default function TrainersMarketplacePage() {
   }
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       {/* Header */}
       <div>
         <h1 className="text-2xl font-bold">{t.trainers.findTrainer}</h1>
@@ -320,7 +342,7 @@ function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: 
           <div className="flex gap-4">
             <Avatar className="h-16 w-16 border-2 border-primary/30">
               <AvatarImage src={trainer.user?.avatarUrl || undefined} />
-              <AvatarFallback className="text-lg bg-gradient-to-br from-cyan-500 to-purple-500 text-white">
+              <AvatarFallback className="text-lg bg-primary text-white">
                 {initials}
               </AvatarFallback>
             </Avatar>

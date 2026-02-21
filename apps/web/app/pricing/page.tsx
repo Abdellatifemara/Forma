@@ -141,7 +141,7 @@ export default function PricingPage() {
     <div className="min-h-screen bg-background">
       {/* Background effects */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-500/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-500/10 rounded-full blur-[128px]" />
         <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/10 rounded-full blur-[128px]" />
       </div>
 
@@ -159,7 +159,7 @@ export default function PricingPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
             {isAr ? 'قارن' : 'Compare'}{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
+            <span className="text-primary">
               {isAr ? 'الباقات' : 'Plans'}
             </span>
           </h1>
@@ -214,12 +214,12 @@ export default function PricingPage() {
                 key={tier}
                 className={cn(
                   'text-center p-4 rounded-xl',
-                  isPremium && 'bg-cyan-500/10 border border-cyan-500/30',
+                  isPremium && 'bg-blue-500/10 border border-blue-500/30',
                   isPremiumPlus && 'bg-purple-500/10 border border-purple-500/30'
                 )}
               >
                 <div className="flex items-center justify-center gap-2 mb-2">
-                  {isPremium && <Zap className="h-5 w-5 text-cyan-500" />}
+                  {isPremium && <Zap className="h-5 w-5 text-blue-500" />}
                   {isPremiumPlus && <Crown className="h-5 w-5 text-purple-500" />}
                   <h3 className="font-bold text-lg">{tierInfo.name}</h3>
                 </div>
@@ -239,7 +239,7 @@ export default function PricingPage() {
                   size="sm"
                   className={cn(
                     'w-full',
-                    isPremium && 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white',
+                    isPremium && 'bg-gradient-to-r from-blue-500 to-blue-600 text-white',
                     isPremiumPlus && 'bg-gradient-to-r from-purple-500 to-pink-500 text-white'
                   )}
                   variant={!isPremium && !isPremiumPlus ? 'outline' : 'default'}
@@ -327,7 +327,7 @@ export default function PricingPage() {
                                     className={cn(
                                       'h-5 w-5',
                                       isPremiumPlus && 'text-purple-500',
-                                      isPremium && 'text-cyan-500',
+                                      isPremium && 'text-blue-500',
                                       !isPremium && !isPremiumPlus && 'text-green-500'
                                     )}
                                   />
@@ -369,7 +369,7 @@ export default function PricingPage() {
               </Button>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
+                className="bg-gradient-to-r from-blue-500 to-blue-600 text-white"
                 asChild
               >
                 <Link href="/signup?plan=premium">

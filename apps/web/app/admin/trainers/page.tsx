@@ -238,9 +238,9 @@ export default function TrainersPage() {
                             disabled={processingId === app.id}
                           >
                             {processingId === app.id ? (
-                              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                              <Loader2 className="me-2 h-4 w-4 animate-spin" />
                             ) : (
-                              <XCircle className="mr-2 h-4 w-4" />
+                              <XCircle className="me-2 h-4 w-4" />
                             )}
                             {isAr ? 'رفض' : 'Reject'}
                           </Button>
@@ -251,9 +251,9 @@ export default function TrainersPage() {
                             disabled={processingId === app.id}
                           >
                             {processingId === app.id ? (
-                              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                              <Loader2 className="me-2 h-4 w-4 animate-spin" />
                             ) : (
-                              <CheckCircle className="mr-2 h-4 w-4" />
+                              <CheckCircle className="me-2 h-4 w-4" />
                             )}
                             {isAr ? 'قبول' : 'Approve'}
                           </Button>
@@ -376,24 +376,24 @@ export default function TrainersPage() {
                               {trainer.status === 'PENDING' && (
                                 <>
                                   <DropdownMenuItem onClick={() => handleApprove(trainer.id)}>
-                                    <CheckCircle className="mr-2 h-4 w-4" />
+                                    <CheckCircle className="me-2 h-4 w-4" />
                                     {isAr ? 'قبول' : 'Approve'}
                                   </DropdownMenuItem>
                                   <DropdownMenuItem onClick={() => handleReject(trainer.id)}>
-                                    <XCircle className="mr-2 h-4 w-4" />
+                                    <XCircle className="me-2 h-4 w-4" />
                                     {isAr ? 'رفض' : 'Reject'}
                                   </DropdownMenuItem>
                                 </>
                               )}
                               {trainer.status === 'APPROVED' && (
                                 <DropdownMenuItem onClick={() => handleReject(trainer.id)}>
-                                  <XCircle className="mr-2 h-4 w-4" />
+                                  <XCircle className="me-2 h-4 w-4" />
                                   {isAr ? 'سحب الموافقة' : 'Revoke Approval'}
                                 </DropdownMenuItem>
                               )}
                               {trainer.status === 'REJECTED' && (
                                 <DropdownMenuItem onClick={() => handleApprove(trainer.id)}>
-                                  <CheckCircle className="mr-2 h-4 w-4" />
+                                  <CheckCircle className="me-2 h-4 w-4" />
                                   {isAr ? 'قبول' : 'Approve'}
                                 </DropdownMenuItem>
                               )}

@@ -75,7 +75,7 @@ export default function TrainerDetailPage() {
 
   if (isLoading) {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
+      <div className="flex min-h-[50vh] items-center justify-center">
         <Loader2 className="h-8 w-8 animate-spin text-primary" />
       </div>
     );
@@ -83,7 +83,7 @@ export default function TrainerDetailPage() {
 
   if (error || !trainer) {
     return (
-      <div className="space-y-4 pb-20 lg:ml-64 lg:pb-6">
+      <div className="space-y-4 pb-20">
         <Button variant="ghost" size="sm" asChild>
           <Link href="/trainers">
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -135,7 +135,7 @@ export default function TrainerDetailPage() {
     : defaultRatingBreakdown;
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       {/* Back Button */}
       <Button variant="ghost" size="sm" asChild>
         <Link href="/trainers">
@@ -145,7 +145,7 @@ export default function TrainerDetailPage() {
       </Button>
 
       {/* Hero Section */}
-      <div className="rounded-2xl bg-gradient-to-br from-forma-teal/20 to-forma-teal/5 p-6 lg:p-8">
+      <div className="rounded-2xl bg-gradient-to-br from-forma-orange/20 to-forma-orange/5 p-6 lg:p-8">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex gap-6">
             <Avatar className="h-24 w-24 lg:h-32 lg:w-32">
@@ -222,7 +222,7 @@ export default function TrainerDetailPage() {
                 </Button>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-forma-teal">
+                <p className="text-3xl font-bold text-forma-orange">
                   {selectedPlan === 'monthly' ? trainerMonthlyRate : trainerHourlyRate} {isAr ? 'ج.م' : 'EGP'}
                 </p>
                 <p className="text-sm text-muted-foreground">
@@ -337,8 +337,8 @@ export default function TrainerDetailPage() {
                       key={cert}
                       className="flex items-center gap-3 rounded-lg border p-4"
                     >
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-forma-teal/10">
-                        <Award className="h-5 w-5 text-forma-teal" />
+                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-forma-orange/10">
+                        <Award className="h-5 w-5 text-forma-orange" />
                       </div>
                       <span className="font-medium">{cert}</span>
                     </div>
@@ -384,7 +384,7 @@ export default function TrainerDetailPage() {
                         </div>
                       )}
                       {program.price !== undefined && program.price > 0 && (
-                        <p className="font-semibold text-forma-teal">
+                        <p className="font-semibold text-forma-orange">
                           {program.price} {isAr ? 'ج.م' : 'EGP'}
                         </p>
                       )}
@@ -418,7 +418,7 @@ export default function TrainerDetailPage() {
               <CardContent className="p-6">
                 <div className="grid gap-6 md:grid-cols-2">
                   <div className="text-center">
-                    <p className="text-5xl font-bold text-forma-teal">{trainerRating.toFixed(1)}</p>
+                    <p className="text-5xl font-bold text-forma-orange">{trainerRating.toFixed(1)}</p>
                     <div className="mt-2 flex justify-center gap-1">
                       {[1, 2, 3, 4, 5].map((star) => (
                         <Star
@@ -536,7 +536,7 @@ export default function TrainerDetailPage() {
             <div
               className={`cursor-pointer rounded-lg border p-4 transition-colors ${
                 selectedPlan === 'monthly'
-                  ? 'border-forma-teal bg-forma-teal/5'
+                  ? 'border-forma-orange bg-forma-orange/5'
                   : 'hover:bg-muted/50'
               }`}
               onClick={() => setSelectedPlan('monthly')}
@@ -555,19 +555,19 @@ export default function TrainerDetailPage() {
               </div>
               <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-forma-teal" />
+                  <Check className="h-4 w-4 text-forma-orange" />
                   Personalized workout program
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-forma-teal" />
+                  <Check className="h-4 w-4 text-forma-orange" />
                   Custom meal plan
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-forma-teal" />
+                  <Check className="h-4 w-4 text-forma-orange" />
                   Weekly video check-ins
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-forma-teal" />
+                  <Check className="h-4 w-4 text-forma-orange" />
                   Direct messaging support
                 </li>
               </ul>
@@ -576,7 +576,7 @@ export default function TrainerDetailPage() {
             <div
               className={`cursor-pointer rounded-lg border p-4 transition-colors ${
                 selectedPlan === 'hourly'
-                  ? 'border-forma-teal bg-forma-teal/5'
+                  ? 'border-forma-orange bg-forma-orange/5'
                   : 'hover:bg-muted/50'
               }`}
               onClick={() => setSelectedPlan('hourly')}
@@ -595,15 +595,15 @@ export default function TrainerDetailPage() {
               </div>
               <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-forma-teal" />
+                  <Check className="h-4 w-4 text-forma-orange" />
                   60-minute video session
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-forma-teal" />
+                  <Check className="h-4 w-4 text-forma-orange" />
                   Form correction & technique
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-forma-teal" />
+                  <Check className="h-4 w-4 text-forma-orange" />
                   Q&A and advice
                 </li>
               </ul>

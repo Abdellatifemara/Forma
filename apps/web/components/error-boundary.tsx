@@ -204,8 +204,8 @@ export function MaintenanceError() {
     <div className="flex min-h-screen items-center justify-center p-6">
       <Card className="max-w-md text-center">
         <CardHeader>
-          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-forma-teal/10">
-            <Bug className="h-8 w-8 text-forma-teal" />
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-forma-orange/10">
+            <Bug className="h-8 w-8 text-forma-orange" />
           </div>
           <CardTitle>Under Maintenance</CardTitle>
           <CardDescription>

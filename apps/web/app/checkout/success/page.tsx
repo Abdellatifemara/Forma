@@ -67,7 +67,7 @@ export default function CheckoutSuccessPage() {
     <div className="min-h-screen bg-background flex items-center justify-center">
       {/* Background effects */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-[128px] animate-pulse" />
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-500/20 rounded-full blur-[128px] animate-pulse" />
         <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/20 rounded-full blur-[128px] animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px]" />
       </div>
@@ -85,7 +85,7 @@ export default function CheckoutSuccessPage() {
         {/* Text */}
         <h1 className="text-3xl font-bold mb-4">
           {isAr ? 'أهلاً بيك في ' : 'Welcome to '}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
+          <span className="text-primary">
             {isAr ? 'بريميوم' : 'Premium'}
           </span>
         </h1>
@@ -97,7 +97,7 @@ export default function CheckoutSuccessPage() {
 
         {/* CTA */}
         <Button
-          className="w-full h-12 bg-gradient-to-r from-cyan-500 to-blue-500 text-white mb-4"
+          className="w-full h-12 bg-gradient-to-r from-blue-500 to-blue-600 text-white mb-4"
           asChild
         >
           <Link href="/dashboard">

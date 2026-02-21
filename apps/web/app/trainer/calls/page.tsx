@@ -167,7 +167,7 @@ function CallCard({
                 className="flex-1 btn-primary"
                 onClick={() => onStart(call.id)}
               >
-                <Play className="h-4 w-4 mr-2" />
+                <Play className="h-4 w-4 me-2" />
                 {isAr ? 'ابدأ المكالمة' : 'Start Call'}
               </Button>
               <Button
@@ -188,7 +188,7 @@ function CallCard({
                   className="flex-1"
                   onClick={() => window.open(call.meetingUrl, '_blank')}
                 >
-                  <ExternalLink className="h-4 w-4 mr-2" />
+                  <ExternalLink className="h-4 w-4 me-2" />
                   {isAr ? 'افتح الاجتماع' : 'Open Meeting'}
                 </Button>
               )}
@@ -196,7 +196,7 @@ function CallCard({
                 size="sm"
                 onClick={() => onEnd(call.id)}
               >
-                <Check className="h-4 w-4 mr-2" />
+                <Check className="h-4 w-4 me-2" />
                 {isAr ? 'إنهاء المكالمة' : 'End Call'}
               </Button>
             </>
@@ -364,9 +364,9 @@ function ScheduleCallDialog({
             disabled={!clientId || !date || !time || createMutation.isPending}
           >
             {createMutation.isPending ? (
-              <Loader2 className="h-4 w-4 animate-spin mr-2" />
+              <Loader2 className="h-4 w-4 animate-spin me-2" />
             ) : (
-              <Calendar className="h-4 w-4 mr-2" />
+              <Calendar className="h-4 w-4 me-2" />
             )}
             {isAr ? 'جدول مكالمة' : 'Schedule Call'}
           </Button>
@@ -451,7 +451,7 @@ export default function TrainerCallsPage() {
           </p>
         </div>
         <Button className="btn-primary" onClick={() => setScheduleOpen(true)}>
-          <Plus className="mr-2 h-4 w-4" />
+          <Plus className="me-2 h-4 w-4" />
           {isAr ? 'جدول مكالمة' : 'Schedule Call'}
         </Button>
       </div>
@@ -602,7 +602,7 @@ export default function TrainerCallsPage() {
                   className="mt-4"
                   onClick={() => setScheduleOpen(true)}
                 >
-                  <Plus className="h-4 w-4 mr-2" />
+                  <Plus className="h-4 w-4 me-2" />
                   {isAr ? 'جدول مكالمة' : 'Schedule a Call'}
                 </Button>
               </CardContent>

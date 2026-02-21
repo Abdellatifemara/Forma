@@ -172,8 +172,8 @@ export function ChatInterface({
           {messages.length === 0 && showSuggestions && suggestedPrompts.length > 0 && (
             <div className="space-y-4 py-8">
               <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-forma-teal/10">
-                  <Bot className="h-8 w-8 text-forma-teal" />
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-forma-orange/10">
+                  <Bot className="h-8 w-8 text-forma-orange" />
                 </div>
                 <h3 className="font-semibold">How can I help you today?</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -229,7 +229,7 @@ export function ChatInterface({
                 <div
                   className={`rounded-2xl px-4 py-2 ${
                     message.sender === 'user'
-                      ? 'bg-forma-teal text-white'
+                      ? 'bg-forma-orange text-white'
                       : 'bg-muted'
                   }`}
                 >

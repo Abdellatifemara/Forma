@@ -37,8 +37,8 @@ export default function ForgotPasswordPage() {
     return (
       <Card className="border-white/10 bg-white/5 backdrop-blur">
         <CardHeader className="text-center">
-          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-forma-teal/20">
-            <Mail className="h-8 w-8 text-forma-teal" />
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-forma-orange/20">
+            <Mail className="h-8 w-8 text-forma-orange" />
           </div>
           <CardTitle className="text-2xl text-white">{t.auth.resetSuccess}</CardTitle>
           <CardDescription className="text-white/60">
@@ -51,7 +51,7 @@ export default function ForgotPasswordPage() {
             {t.auth.didntReceiveEmail}{' '}
             <button
               onClick={() => setIsSubmitted(false)}
-              className="text-forma-teal hover:underline"
+              className="text-forma-orange hover:underline"
             >
               {t.auth.tryAnotherEmail}
             </button>

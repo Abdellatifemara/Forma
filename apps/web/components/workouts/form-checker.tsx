@@ -323,7 +323,7 @@ export function FormChecker({ exercise, onClose }: FormCheckerProps) {
     ];
 
     // Draw connections
-    ctx.strokeStyle = '#10B981';
+    ctx.strokeStyle = '#F97316';
     ctx.lineWidth = 3;
     connections.forEach(([i, j]) => {
       const a = landmarks[i];
@@ -339,7 +339,7 @@ export function FormChecker({ exercise, onClose }: FormCheckerProps) {
     // Draw keypoints
     landmarks.forEach((landmark) => {
       if ((landmark.visibility || 0) > 0.5) {
-        ctx.fillStyle = '#10B981';
+        ctx.fillStyle = '#F97316';
         ctx.beginPath();
         ctx.arc(
           landmark.x * ctx.canvas.width,

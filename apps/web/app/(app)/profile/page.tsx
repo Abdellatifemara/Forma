@@ -6,6 +6,7 @@ import Link from 'next/link';
 import {
   ChevronRight,
   CreditCard,
+  Globe,
   HelpCircle,
   Lock,
   LogOut,
@@ -23,6 +24,7 @@ import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
 import { Switch } from '@/components/ui/switch';
+import { Skeleton, SkeletonStatCard } from '@/components/ui/skeleton';
 import { removeAuthCookie, achievementsApi } from '@/lib/api';
 import { useUser, useUserStats } from '@/hooks/use-user';
 import { useToast } from '@/hooks/use-toast';
@@ -79,7 +81,7 @@ export default function ProfilePage() {
   const router = useRouter();
   const { toast } = useToast();
   const { theme, setTheme } = useTheme();
-  const { t, language } = useLanguage();
+  const { t, language, setLang } = useLanguage();
   const isAr = language === 'ar';
   const { data: userData, isLoading: userLoading } = useUser();
   const { data: statsData, isLoading: statsLoading } = useUserStats();
@@ -175,21 +177,44 @@ export default function ProfilePage() {
 
   if (isLoading) {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
-        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+      <div className="space-y-6 pb-20">
+        <div className="rounded-2xl border border-border/60 bg-white dark:bg-card p-6">
+          <div className="flex items-center gap-4">
+            <Skeleton className="h-20 w-20 rounded-full" />
+            <div className="flex-1 space-y-2">
+              <Skeleton className="h-6 w-40" />
+              <Skeleton className="h-4 w-32" />
+              <Skeleton className="h-4 w-48" />
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-3 gap-3">
+          {[1, 2, 3].map(i => <SkeletonStatCard key={i} />)}
+        </div>
+        <div className="space-y-3">
+          {[1, 2, 3, 4, 5].map(i => (
+            <div key={i} className="rounded-xl border border-border/60 bg-white dark:bg-card p-4">
+              <div className="flex items-center gap-3">
+                <Skeleton className="h-9 w-9 rounded-lg" />
+                <Skeleton className="h-4 w-32 flex-1" />
+                <Skeleton className="h-4 w-4" />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       {/* Profile Header */}
       <Card>
         <CardContent className="p-6">
           <div className="flex items-center gap-4">
             <Avatar className="h-20 w-20">
               {user?.avatar && <AvatarImage src={user.avatar} alt={user.name || (isAr ? 'مستخدم' : 'User')} />}
-              <AvatarFallback className="text-2xl bg-forma-teal text-white">
+              <AvatarFallback className="text-2xl bg-forma-orange text-white">
                 {getInitials()}
               </AvatarFallback>
             </Avatar>
@@ -222,17 +247,32 @@ export default function ProfilePage() {
         </CardContent>
       </Card>
 
-      {/* Quick Toggle */}
+      {/* Quick Toggles */}
       <Card>
-        <CardContent className="flex items-center justify-between p-4">
-          <div className="flex items-center gap-3">
-            <Moon className="h-5 w-5" />
-            <span className="font-medium">{t.settings.appearance.dark}</span>
+        <CardContent className="space-y-0 p-0">
+          <div className="flex items-center justify-between p-4">
+            <div className="flex items-center gap-3">
+              <Moon className="h-5 w-5" />
+              <span className="font-medium">{t.settings.appearance.dark}</span>
+            </div>
+            <Switch
+              checked={theme === 'dark'}
+              onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
+            />
           </div>
-          <Switch
-            checked={theme === 'dark'}
-            onCheckedChange={(checked) => setTheme(checked ? 'dark' : 'light')}
-          />
+          <div className="border-t" />
+          <div className="flex items-center justify-between p-4">
+            <div className="flex items-center gap-3">
+              <Globe className="h-5 w-5" />
+              <span className="font-medium">{isAr ? 'اللغة' : 'Language'}</span>
+            </div>
+            <button
+              onClick={() => setLang(isAr ? 'en' : 'ar')}
+              className="rounded-lg bg-muted px-3 py-1.5 text-sm font-medium hover:bg-muted/80 transition-colors"
+            >
+              {isAr ? 'English' : 'العربية'}
+            </button>
+          </div>
         </CardContent>
       </Card>
 
@@ -254,8 +294,8 @@ export default function ProfilePage() {
                 key={achievement.title}
                 className="flex min-w-[140px] flex-col items-center rounded-lg border p-4 text-center"
               >
-                <div className="rounded-full bg-forma-teal/10 p-3">
-                  <achievement.icon className="h-6 w-6 text-forma-teal" />
+                <div className="rounded-full bg-forma-orange/10 p-3">
+                  <achievement.icon className="h-6 w-6 text-forma-orange" />
                 </div>
                 <p className="mt-2 text-sm font-medium">{achievement.title}</p>
               </div>

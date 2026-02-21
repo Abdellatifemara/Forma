@@ -120,12 +120,12 @@ function ClientCheckInCard({
           </div>
           {todayCheckIn ? (
             <Badge className="bg-green-500/10 text-green-500 border-green-500/20">
-              <CheckCircle2 className="h-3 w-3 mr-1" />
+              <CheckCircle2 className="h-3 w-3 me-1" />
               {isAr ? 'سجّل' : 'Checked In'}
             </Badge>
           ) : (
             <Badge className="bg-red-500/10 text-red-500 border-red-500/20">
-              <AlertCircle className="h-3 w-3 mr-1" />
+              <AlertCircle className="h-3 w-3 me-1" />
               {isAr ? 'لسه ماسجّلش' : 'No Check-In'}
             </Badge>
           )}
@@ -319,7 +319,7 @@ function ClientDetailDialog({
           <div className="mt-4 flex justify-end gap-2">
             <Link href={`/trainer/messages?client=${client.clientId}`}>
               <Button variant="outline">
-                <MessageSquare className="h-4 w-4 mr-2" />
+                <MessageSquare className="h-4 w-4 me-2" />
                 {isAr ? 'راسل العميل' : 'Message Client'}
               </Button>
             </Link>
@@ -436,14 +436,14 @@ export default function TrainerCheckInsPage() {
                     variant="outline"
                     className="cursor-pointer hover:bg-primary/10 transition-colors"
                   >
-                    <Avatar className="h-5 w-5 mr-2">
+                    <Avatar className="h-5 w-5 me-2">
                       <AvatarImage src={client.avatarUrl || undefined} />
                       <AvatarFallback className="text-[10px]">
                         {client.firstName?.charAt(0)}{client.lastName?.charAt(0)}
                       </AvatarFallback>
                     </Avatar>
                     {client.firstName} {client.lastName}
-                    <MessageSquare className="h-3 w-3 ml-2" />
+                    <MessageSquare className="h-3 w-3 ms-2" />
                   </Badge>
                 </Link>
               ))}

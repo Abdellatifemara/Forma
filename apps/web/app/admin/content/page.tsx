@@ -131,8 +131,8 @@ export default function AdminContentPage() {
         <Card>
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
-              <div className="rounded-lg bg-forma-teal/10 p-2">
-                <Dumbbell className="h-5 w-5 text-forma-teal" />
+              <div className="rounded-lg bg-forma-orange/10 p-2">
+                <Dumbbell className="h-5 w-5 text-forma-orange" />
               </div>
               <div>
                 <p className="text-2xl font-bold">{stats?.exercises?.toLocaleString() || 0}</p>
@@ -212,7 +212,7 @@ export default function AdminContentPage() {
                   <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <Input
                     placeholder={isAr ? 'ابحث عن تمارين...' : 'Search exercises...'}
-                    className="pl-10"
+                    className="ps-10"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                   />
@@ -300,7 +300,7 @@ export default function AdminContentPage() {
                   <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                   <Input
                     placeholder={isAr ? 'ابحث عن أطعمة...' : 'Search foods...'}
-                    className="pl-10"
+                    className="ps-10"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                   />

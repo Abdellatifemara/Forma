@@ -24,10 +24,12 @@
     "db:seed:foods": "ts-node prisma/seed-all-foods.ts",
     "db:seed:programs": "ts-node prisma/seed-professional-programs.ts",
     "db:seed:accounts": "ts-node prisma/seed-test-accounts.ts",
-    "db:seed:all": "npm run db:seed:accounts && npm run db:seed:exercises && npm run db:seed:foods && npm run db:seed:programs",
+    "db:seed:videos": "ts-node prisma/seed-videos.ts",
+    "db:seed:all": "npm run db:seed:accounts && npm run db:seed:exercises && npm run db:seed:foods && npm run db:seed:programs && npm run db:seed:videos",
     "db:studio": "prisma studio"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.995.0",
     "@nestjs/cache-manager": "^2.3.0",
     "@nestjs/common": "^10.4.0",
     "@nestjs/config": "^3.3.0",

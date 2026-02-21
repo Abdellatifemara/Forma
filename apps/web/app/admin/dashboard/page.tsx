@@ -67,7 +67,7 @@ export default function AdminDashboardPage() {
   if (isLoading) {
     return (
       <div className="flex h-[50vh] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+        <Loader2 className="h-8 w-8 animate-spin text-forma-orange" />
       </div>
     );
   }
@@ -136,7 +136,7 @@ export default function AdminDashboardPage() {
                           activityItem.type === 'user'
                             ? 'bg-blue-500/10 text-blue-500'
                             : activityItem.type === 'trainer'
-                            ? 'bg-forma-teal/10 text-forma-teal'
+                            ? 'bg-forma-orange/10 text-forma-orange'
                             : activityItem.type === 'payment'
                             ? 'bg-green-500/10 text-green-500'
                             : 'bg-yellow-500/10 text-yellow-500'
@@ -256,25 +256,25 @@ export default function AdminDashboardPage() {
           <CardContent className="space-y-3">
             <Button variant="outline" className="w-full justify-start" asChild>
               <a href="/admin/users">
-                <Users className="mr-2 h-4 w-4" />
+                <Users className="me-2 h-4 w-4" />
                 {isAr ? 'إدارة المستخدمين' : 'Manage Users'}
               </a>
             </Button>
             <Button variant="outline" className="w-full justify-start" asChild>
               <a href="/admin/trainers">
-                <UserCheck className="mr-2 h-4 w-4" />
+                <UserCheck className="me-2 h-4 w-4" />
                 {isAr ? 'مراجعة المدربين' : 'Review Trainers'}
               </a>
             </Button>
             <Button variant="outline" className="w-full justify-start" asChild>
               <a href="/admin/analytics">
-                <TrendingUp className="mr-2 h-4 w-4" />
+                <TrendingUp className="me-2 h-4 w-4" />
                 {isAr ? 'عرض التحليلات' : 'View Analytics'}
               </a>
             </Button>
             <Button variant="outline" className="w-full justify-start" asChild>
               <a href="/admin/content">
-                <Dumbbell className="mr-2 h-4 w-4" />
+                <Dumbbell className="me-2 h-4 w-4" />
                 {isAr ? 'إدارة المحتوى' : 'Manage Content'}
               </a>
             </Button>

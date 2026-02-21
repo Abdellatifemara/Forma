@@ -73,7 +73,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#10B981" />
+        <meta name="theme-color" content="#F97316" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className={`${inter.variable} ${cairo.variable} font-sans antialiased`}>

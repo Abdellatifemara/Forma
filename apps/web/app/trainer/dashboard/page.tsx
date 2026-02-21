@@ -112,12 +112,12 @@ export default function TrainerDashboardPage() {
             </h1>
             {profile.tier === 'TRUSTED_PARTNER' ? (
               <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white border-0">
-                <Crown className="h-3 w-3 mr-1" />
+                <Crown className="h-3 w-3 me-1" />
                 Trusted Partner
               </Badge>
             ) : (
               <Badge variant="outline" className="border-primary/50 text-primary">
-                <Sparkles className="h-3 w-3 mr-1" />
+                <Sparkles className="h-3 w-3 me-1" />
                 Trainer
               </Badge>
             )}
@@ -155,8 +155,8 @@ export default function TrainerDashboardPage() {
         {/* Active Clients */}
         <div className="stat-card group">
           <div className="flex items-center justify-between mb-3">
-            <div className="p-2 rounded-xl bg-cyan-500/20">
-              <Users className="h-5 w-5 text-cyan-400" />
+            <div className="p-2 rounded-xl bg-blue-500/20">
+              <Users className="h-5 w-5 text-blue-400" />
             </div>
             <Badge variant="outline" className="text-green-400 border-green-400/50 text-xs">
               +{stats.newClientsThisMonth || 0} {isAr ? 'الشهر ده' : 'this month'}
@@ -248,7 +248,7 @@ export default function TrainerDashboardPage() {
             <Button variant="outline" size="sm" className="border-primary/50 hover:bg-primary/10" asChild>
               <Link href="/trainer/earnings">
                 {isAr ? 'عرض المعاملات' : 'View Transactions'}
-                <ArrowUpRight className="h-4 w-4 ml-1" />
+                <ArrowUpRight className="h-4 w-4 ms-1" />
               </Link>
             </Button>
           </div>
@@ -267,7 +267,7 @@ export default function TrainerDashboardPage() {
             <Button variant="outline" size="sm" asChild>
               <Link href="/trainer/clients">
                 {isAr ? 'عرض الكل' : 'View All'}
-                <ChevronRight className="h-4 w-4 ml-1" />
+                <ChevronRight className="h-4 w-4 ms-1" />
               </Link>
             </Button>
           </CardHeader>
@@ -337,28 +337,28 @@ export default function TrainerDashboardPage() {
           <CardContent className="space-y-3">
             <Button className="w-full justify-start h-12 btn-primary" asChild>
               <Link href="/trainer/clients/invite">
-                <Share2 className="mr-3 h-5 w-5" />
+                <Share2 className="me-3 h-5 w-5" />
                 {isAr ? 'شارك رابط الدعوة' : 'Share Invite Link'}
               </Link>
             </Button>
             <Button className="w-full justify-start h-12" variant="outline" asChild>
               <Link href="/trainer/programs/upload">
-                <FileText className="mr-3 h-5 w-5" />
+                <FileText className="me-3 h-5 w-5" />
                 {isAr ? 'رفع برنامج PDF' : 'Upload Program PDF'}
               </Link>
             </Button>
             <Button className="w-full justify-start h-12" variant="outline" asChild>
               <Link href="/trainer/programs/new">
-                <Target className="mr-3 h-5 w-5" />
+                <Target className="me-3 h-5 w-5" />
                 {isAr ? 'إنشاء برنامج جديد' : 'Create New Program'}
               </Link>
             </Button>
             <Button className="w-full justify-start h-12" variant="outline" asChild>
               <Link href="/trainer/messages">
-                <MessageSquare className="mr-3 h-5 w-5" />
+                <MessageSquare className="me-3 h-5 w-5" />
                 {isAr ? 'راسل العملاء' : 'Message Clients'}
                 {unreadCount > 0 && (
-                  <Badge className="ml-auto bg-primary text-primary-foreground">{unreadCount}</Badge>
+                  <Badge className="ms-auto bg-primary text-primary-foreground">{unreadCount}</Badge>
                 )}
               </Link>
             </Button>
@@ -393,7 +393,7 @@ export default function TrainerDashboardPage() {
             <Button variant="outline" size="sm" asChild>
               <Link href="/trainer/messages">
                 {isAr ? 'افتح الشات' : 'Open Chat'}
-                <ChevronRight className="h-4 w-4 ml-1" />
+                <ChevronRight className="h-4 w-4 ms-1" />
               </Link>
             </Button>
           </CardHeader>

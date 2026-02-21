@@ -57,14 +57,37 @@ export default function AchievementsPage() {
 
   if (isLoading) {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
-        <Loader2 className="h-8 w-8 animate-spin text-forma-teal" />
+      <div className="space-y-6 pb-20">
+        <div className="space-y-2">
+          <div className="h-8 w-40 rounded-lg animate-shimmer" />
+          <div className="h-4 w-56 rounded-lg animate-shimmer" />
+        </div>
+        <div className="rounded-2xl border border-border/60 bg-white dark:bg-card p-5">
+          <div className="flex items-center gap-4">
+            <div className="h-14 w-14 rounded-2xl animate-shimmer" />
+            <div className="flex-1 space-y-2">
+              <div className="h-5 w-24 rounded animate-shimmer" />
+              <div className="h-2 w-full rounded-full animate-shimmer" />
+            </div>
+          </div>
+        </div>
+        <div className="grid gap-3 grid-cols-2">
+          {[1, 2, 3, 4, 5, 6].map(i => (
+            <div key={i} className="rounded-2xl border border-border/60 bg-white dark:bg-card p-4">
+              <div className="flex flex-col items-center gap-2 text-center">
+                <div className="h-12 w-12 rounded-full animate-shimmer" />
+                <div className="h-4 w-20 rounded animate-shimmer" />
+                <div className="h-3 w-16 rounded animate-shimmer" />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       <div>
         <h1 className="text-2xl font-bold">{t.achievements.title}</h1>
         <p className="text-muted-foreground">
@@ -86,7 +109,7 @@ export default function AchievementsPage() {
                   <div
                     className={`flex h-12 w-12 items-center justify-center rounded-full ${
                       achievement.unlocked
-                        ? 'bg-forma-teal/20 text-forma-teal'
+                        ? 'bg-forma-orange/20 text-forma-orange'
                         : 'bg-muted text-muted-foreground'
                     }`}
                   >
@@ -109,7 +132,7 @@ export default function AchievementsPage() {
                       {achievement.description}
                     </p>
                     {achievement.xpReward > 0 && (
-                      <p className="mt-1 text-xs text-forma-teal">
+                      <p className="mt-1 text-xs text-forma-orange">
                         +{achievement.xpReward} XP
                       </p>
                     )}
@@ -123,7 +146,7 @@ export default function AchievementsPage() {
                         </div>
                         <div className="mt-1 h-1.5 rounded-full bg-muted">
                           <div
-                            className="h-full rounded-full bg-forma-teal"
+                            className="h-full rounded-full bg-forma-orange"
                             style={{
                               width: `${(achievement.progress / achievement.total) * 100}%`,
                             }}

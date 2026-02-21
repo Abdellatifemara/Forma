@@ -3,21 +3,15 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
-  Play,
-  Dumbbell,
-  Flame,
-  TrendingUp,
-  Plus,
+  Search,
   ChevronRight,
-  Apple,
-  Trophy,
-  Target,
-  Users,
+  Clock,
+  Flame,
+  Heart,
   Activity,
 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 import {
@@ -30,8 +24,11 @@ import {
   type DailyNutritionLog,
   type WeeklySummary,
 } from '@/lib/api';
-import { SkeletonDashboard } from '@/components/ui/skeleton';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell } from 'recharts';
+
+const MUSCLE_GROUPS = ['All Type', 'Chest', 'Back', 'Arms', 'Cardio', 'Legs'];
+const MUSCLE_GROUPS_AR = ['كل الأنواع', 'الصدر', 'الظهر', 'الذراعين', 'كارديو', 'الأرجل'];
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -41,6 +38,8 @@ export default function DashboardPage() {
   const [dailyNutrition, setDailyNutrition] = useState<DailyNutritionLog | null>(null);
   const [weeklyStats, setWeeklyStats] = useState<WeeklySummary | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [activeFilter, setActiveFilter] = useState(0);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     async function fetchData() {
@@ -78,351 +77,259 @@ export default function DashboardPage() {
 
   const hour = new Date().getHours();
   const greeting = hour < 12
-    ? t.dashboard.greetings.morning
+    ? (isRTL ? 'صباح الخير' : "Let's Get Back")
     : hour < 18
-      ? t.dashboard.greetings.afternoon
-      : t.dashboard.greetings.evening;
+      ? (isRTL ? 'يلا نكمل' : "Let's Get Back")
+      : (isRTL ? 'يلا نتمرن' : "Let's Get Back");
 
   if (isLoading) {
-    return <SkeletonDashboard />;
+    return <DashboardSkeleton />;
   }
 
+  const userName = user?.name || user?.firstName || (isRTL ? 'بطل' : 'Champ');
+  const filters = isRTL ? MUSCLE_GROUPS_AR : MUSCLE_GROUPS;
+
   return (
-    <div className={cn('space-y-6 pb-24', isRTL && 'text-right font-cairo')}>
-      {/* Header — Clean, no glow blob */}
-      <div>
-        <p className="text-muted-foreground text-sm">{greeting}</p>
-        <h1 className="text-3xl font-bold mt-1 text-foreground">
-          {user?.name || user?.firstName || t.dashboard.welcome}
-        </h1>
+    <div className={cn('space-y-6', isRTL && 'text-right')}>
+      {/* Header — Greeting + Avatar */}
+      <div className="flex items-center justify-between">
+        <div>
+          <p className="text-sm text-muted-foreground flex items-center gap-1">
+            {greeting} <span>{'\uD83D\uDCAA'}</span>
+          </p>
+          <h1 className="text-2xl font-bold">{userName}</h1>
+        </div>
+        <Link href="/profile">
+          <Avatar className="h-11 w-11 border-2 border-border">
+            <AvatarImage src={user?.avatarUrl || undefined} />
+            <AvatarFallback className="bg-muted text-foreground font-semibold">
+              {userName.charAt(0).toUpperCase()}
+            </AvatarFallback>
+          </Avatar>
+        </Link>
       </div>
 
-      {/* Quick Stats — White cards with colored left accent */}
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <div className="card-accent-left border-s-orange-500">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-orange-50 dark:bg-orange-500/10">
-              <Flame className="h-5 w-5 text-orange-500" />
-            </div>
-            <div>
-              <span className="text-2xl font-bold">{weeklyStats?.streakDays || 0}</span>
-              <p className="text-xs text-muted-foreground">{t.dashboard.stats.streak}</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-accent-left border-s-primary">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-primary/10">
-              <Dumbbell className="h-5 w-5 text-primary" />
-            </div>
-            <div>
-              <span className="text-2xl font-bold">{weeklyStats?.workoutsCompleted || 0}</span>
-              <p className="text-xs text-muted-foreground">{t.dashboard.stats.workoutsWeek}</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-accent-left border-s-green-500">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-green-50 dark:bg-green-500/10">
-              <TrendingUp className="h-5 w-5 text-green-500" />
-            </div>
-            <div>
-              <span className="text-2xl font-bold">{weeklyStats?.totalVolume || 0}</span>
-              <p className="text-xs text-muted-foreground">{t.dashboard.stats.lifted}</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-accent-left border-s-purple-500">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-lg bg-purple-50 dark:bg-purple-500/10">
-              <Target className="h-5 w-5 text-purple-500" />
-            </div>
-            <div>
-              <span className="text-2xl font-bold">{Math.round(weeklyStats?.caloriesAvg || 0)}</span>
-              <p className="text-xs text-muted-foreground">{t.dashboard.stats.avgCalories}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Weekly Activity Chart — Flexcore-style */}
-      <Card className="card-premium overflow-hidden">
-        <CardHeader className="flex flex-row items-center justify-between pb-2">
-          <CardTitle className="text-base font-semibold flex items-center gap-2">
-            <div className="p-1.5 rounded-lg bg-orange-50 dark:bg-orange-500/10">
-              <Activity className="h-4 w-4 text-orange-500" />
-            </div>
-            {isRTL ? 'النشاط الأسبوعي' : 'Weekly Activity'}
-          </CardTitle>
-          <span className="text-sm text-muted-foreground">
-            {isRTL ? 'هذا الأسبوع' : 'This Week'}
-          </span>
-        </CardHeader>
-        <CardContent>
-          <WeeklyChart weeklyStats={weeklyStats} isRTL={isRTL} />
-        </CardContent>
-      </Card>
-
-      {/* Today's Workout — White card with teal accent */}
-      <Card className="card-premium overflow-hidden border-s-[3px] border-s-primary">
-        <CardContent className="p-6">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="p-1.5 rounded-lg bg-primary/10">
-              <Activity className="h-4 w-4 text-primary" />
-            </div>
-            <p className="text-sm font-medium text-muted-foreground">{t.dashboard.todayWorkout}</p>
-          </div>
-
-          {todayWorkout ? (
-            <>
-              <h2 className="text-2xl font-bold text-foreground">{todayWorkout.name}</h2>
-              <p className="text-sm text-muted-foreground mt-1">
-                {todayWorkout.exercises?.length || 0} {t.dashboard.exercises} {'\u2022'} {t.dashboard.day} {todayWorkout.day}
-              </p>
-              <Button
-                size="lg"
-                className="mt-4 btn-primary"
-                asChild
-              >
-                <Link href={`/workouts/${todayWorkout.id}`}>
-                  <Play className={cn('h-5 w-5', isRTL ? 'ms-2' : 'me-2')} fill="currentColor" />
-                  {t.dashboard.startWorkout}
-                </Link>
-              </Button>
-            </>
-          ) : (
-            <>
-              <h2 className="text-2xl font-bold text-foreground">{t.dashboard.restDay}</h2>
-              <p className="text-sm text-muted-foreground mt-1">{t.dashboard.noWorkout}</p>
-              <Button
-                size="lg"
-                variant="outline"
-                className="mt-4 border-primary/30 hover:bg-primary/5"
-                asChild
-              >
-                <Link href="/workouts">{t.dashboard.browseWorkouts}</Link>
-              </Button>
-            </>
+      {/* Search Bar */}
+      <div className="relative">
+        <Search className={cn('absolute top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground', isRTL ? 'right-4' : 'left-4')} />
+        <input
+          type="text"
+          placeholder={isRTL ? 'ابحث عن تمارين...' : 'Search Workouts...'}
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className={cn(
+            'w-full rounded-2xl border border-border bg-muted/50 py-3 text-sm placeholder:text-muted-foreground focus:border-primary/50 focus:outline-none',
+            isRTL ? 'pr-11 pl-4' : 'pl-11 pr-4'
           )}
-        </CardContent>
-      </Card>
-
-      {/* Nutrition & Goals Row */}
-      <div className="grid gap-4 md:grid-cols-2">
-        {/* Nutrition Card */}
-        <Card className="card-premium">
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-base font-semibold flex items-center gap-2">
-              <div className="p-1.5 rounded-lg bg-green-50 dark:bg-green-500/10">
-                <Apple className="h-4 w-4 text-green-500" />
-              </div>
-              {t.dashboard.nutrition.title}
-            </CardTitle>
-            <Link href="/nutrition" className="text-sm text-primary hover:text-primary/80 transition-colors">
-              {t.dashboard.nutrition.viewAll}
-            </Link>
-          </CardHeader>
-          <CardContent>
-            {dailyNutrition ? (
-              <div className="space-y-4">
-                {/* Calories Progress */}
-                <div>
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="font-medium">{t.dashboard.nutrition.calories}</span>
-                    <span className="text-muted-foreground">
-                      {Math.round(dailyNutrition.totals.calories)} / {dailyNutrition.goals.calories}
-                    </span>
-                  </div>
-                  <div className="progress-bar">
-                    <div
-                      className="progress-fill"
-                      style={{ width: `${Math.min(100, dailyNutrition.goals.calories > 0 ? (dailyNutrition.totals.calories / dailyNutrition.goals.calories) * 100 : 0)}%` }}
-                    />
-                  </div>
-                </div>
-
-                {/* Macros — Clean white cards with colored text */}
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="text-center p-3 rounded-xl border border-border/60 bg-white dark:bg-card">
-                    <p className="text-lg font-bold text-primary">{Math.round(dailyNutrition.totals.protein)}g</p>
-                    <p className="text-xs text-muted-foreground">{t.dashboard.nutrition.protein}</p>
-                  </div>
-                  <div className="text-center p-3 rounded-xl border border-border/60 bg-white dark:bg-card">
-                    <p className="text-lg font-bold text-purple-500">{Math.round(dailyNutrition.totals.carbs)}g</p>
-                    <p className="text-xs text-muted-foreground">{t.dashboard.nutrition.carbs}</p>
-                  </div>
-                  <div className="text-center p-3 rounded-xl border border-border/60 bg-white dark:bg-card">
-                    <p className="text-lg font-bold text-orange-500">{Math.round(dailyNutrition.totals.fat)}g</p>
-                    <p className="text-xs text-muted-foreground">{t.dashboard.nutrition.fat}</p>
-                  </div>
-                </div>
-
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full border-primary/30 hover:bg-primary/5 hover:border-primary/50"
-                  asChild
-                >
-                  <Link href="/nutrition">
-                    <Plus className={cn('h-4 w-4', isRTL ? 'ms-2' : 'me-2')} />
-                    {t.dashboard.nutrition.logMeal}
-                  </Link>
-                </Button>
-              </div>
-            ) : (
-              <div className="text-center py-8">
-                <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-muted flex items-center justify-center">
-                  <Apple className="h-6 w-6 text-muted-foreground" />
-                </div>
-                <p className="text-muted-foreground text-sm mb-4">{t.dashboard.nutrition.noMeals}</p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-primary/30 hover:bg-primary/5"
-                  asChild
-                >
-                  <Link href="/nutrition">
-                    <Plus className={cn('h-4 w-4', isRTL ? 'ms-2' : 'me-2')} />
-                    {t.dashboard.nutrition.logFirst}
-                  </Link>
-                </Button>
-              </div>
-            )}
-          </CardContent>
-        </Card>
-
-        {/* Weekly Goals Card */}
-        <Card className="card-premium">
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-base font-semibold flex items-center gap-2">
-              <div className="p-1.5 rounded-lg bg-amber-50 dark:bg-yellow-500/10">
-                <Trophy className="h-4 w-4 text-amber-500" />
-              </div>
-              {t.dashboard.weeklyGoals.title}
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="font-medium">{t.dashboard.weeklyGoals.workouts}</span>
-                  <span className="text-muted-foreground">
-                    {weeklyStats?.workoutsCompleted || 0} / {weeklyStats?.workoutsTarget || 4}
-                  </span>
-                </div>
-                <div className="progress-bar">
-                  <div
-                    className="h-full rounded-full transition-all duration-700 bg-primary"
-                    style={{ width: `${Math.min(100, ((weeklyStats?.workoutsCompleted || 0) / (weeklyStats?.workoutsTarget || 4)) * 100)}%` }}
-                  />
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="font-medium">{t.dashboard.weeklyGoals.calorieTarget}</span>
-                  <span className="text-muted-foreground">
-                    {weeklyStats?.daysOnCalorieTarget || 0} / 7
-                  </span>
-                </div>
-                <div className="progress-bar">
-                  <div
-                    className="h-full rounded-full transition-all duration-700 bg-green-500"
-                    style={{ width: `${Math.min(100, ((weeklyStats?.daysOnCalorieTarget || 0) / 7) * 100)}%` }}
-                  />
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="font-medium">{t.dashboard.weeklyGoals.mealsLogged}</span>
-                  <span className="text-muted-foreground">
-                    {weeklyStats?.daysWithMeals || 0} / 7
-                  </span>
-                </div>
-                <div className="progress-bar">
-                  <div
-                    className="h-full rounded-full transition-all duration-700 bg-purple-500"
-                    style={{ width: `${Math.min(100, ((weeklyStats?.daysWithMeals || 0) / 7) * 100)}%` }}
-                  />
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        />
       </div>
 
-      {/* Quick Actions — Clean white cards */}
-      <div className="grid grid-cols-2 gap-3">
-        {[
-          { href: '/workouts', icon: Dumbbell, label: t.dashboard.quickActions.workouts, color: 'bg-primary/10', iconColor: 'text-primary' },
-          { href: '/nutrition', icon: Apple, label: t.dashboard.quickActions.nutrition, color: 'bg-green-50 dark:bg-green-500/10', iconColor: 'text-green-500' },
-          { href: '/progress', icon: TrendingUp, label: t.dashboard.quickActions.progress, color: 'bg-purple-50 dark:bg-purple-500/10', iconColor: 'text-purple-500' },
-          { href: '/trainers', icon: Users, label: t.dashboard.quickActions.trainers, color: 'bg-orange-50 dark:bg-orange-500/10', iconColor: 'text-orange-500' },
-        ].map((action) => (
-          <Link
-            key={action.href}
-            href={action.href}
-            className="group flex items-center justify-between rounded-xl border border-border/60 bg-white dark:bg-card p-4 transition-all duration-200 hover:shadow-card-hover"
-          >
-            <div className="flex items-center gap-3">
-              <div className={cn('flex h-10 w-10 items-center justify-center rounded-xl', action.color)}>
-                <action.icon className={cn('h-5 w-5', action.iconColor)} />
-              </div>
-              <span className="font-medium">{action.label}</span>
+      {/* Hero Banner — Gym photo with overlay */}
+      <div className="relative overflow-hidden rounded-3xl bg-secondary h-48">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent dark:from-black/90 dark:via-black/60" />
+        <div className="absolute inset-0 bg-[url('/images/gym-hero.jpg')] bg-cover bg-center opacity-60 dark:opacity-40" />
+        <div className="relative h-full flex flex-col justify-end p-5">
+          <h2 className="text-xl font-bold text-white leading-tight">
+            {isRTL ? 'أقوى مع كل تمرين،' : 'Stronger every rep,'}
+            <br />
+            {isRTL ? 'كل خطوة.' : 'every step.'}
+          </h2>
+          <div className="flex items-center gap-2 mt-3">
+            <div className="flex gap-1.5">
+              <span className="rounded-full bg-white/15 px-2.5 py-0.5 text-[10px] text-white/80">#FitLife</span>
+              <span className="rounded-full bg-white/15 px-2.5 py-0.5 text-[10px] text-white/80">#FormaEG</span>
             </div>
-            <ChevronRight className={cn(
-              'h-5 w-5 text-muted-foreground transition-transform group-hover:translate-x-0.5',
-              isRTL && 'rotate-180 group-hover:-translate-x-0.5'
-            )} />
+            <Link
+              href={todayWorkout ? `/workouts/${todayWorkout.id}` : '/workouts'}
+              className={cn(
+                'rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white',
+                isRTL ? 'me-auto' : 'ms-auto'
+              )}
+            >
+              {isRTL ? 'يلا نبدأ 🔥' : 'Start Workout 🔥'}
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Daily Program Section */}
+      <div>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-lg font-bold">{isRTL ? 'البرنامج اليومي' : 'Daily Program'}</h3>
+          <Link href="/workouts" className="text-xs text-muted-foreground hover:text-primary">
+            {isRTL ? 'شوف الكل' : 'See All'}
           </Link>
-        ))}
+        </div>
+
+        {/* Filter Pills */}
+        <div className="flex gap-2 overflow-x-auto no-scrollbar pb-3">
+          {filters.map((filter, i) => (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(i)}
+              className={cn(
+                'shrink-0 rounded-full px-4 py-2 text-xs font-medium transition-colors',
+                activeFilter === i
+                  ? 'bg-foreground text-background'
+                  : 'bg-muted text-muted-foreground'
+              )}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        {/* Workout Cards — Horizontal Scroll */}
+        <div className="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+          {todayWorkout ? (
+            <WorkoutCard
+              name={todayWorkout.name || (isRTL ? 'تمرين اليوم' : "Today's Workout")}
+              duration={45}
+              sets={todayWorkout.exercises?.length || 4}
+              reps={12}
+              href={`/workouts/${todayWorkout.id}`}
+              isRTL={isRTL}
+            />
+          ) : null}
+          <WorkoutCard
+            name={isRTL ? 'برنامج الصدر' : 'Chest Program'}
+            duration={12}
+            sets={3}
+            reps={15}
+            href="/workouts"
+            isRTL={isRTL}
+          />
+          <WorkoutCard
+            name={isRTL ? 'برنامج الذراعين' : 'Arms Program'}
+            duration={16}
+            sets={3}
+            reps={12}
+            href="/workouts"
+            isRTL={isRTL}
+          />
+        </div>
+      </div>
+
+      {/* Quick Stats Row */}
+      <div className="grid grid-cols-3 gap-3">
+        <div className="rounded-2xl bg-muted/50 border border-border/50 p-4 text-center">
+          <Flame className="h-5 w-5 text-primary mx-auto mb-1" />
+          <p className="text-lg font-bold">{weeklyStats?.streakDays || 0}</p>
+          <p className="text-[10px] text-muted-foreground">{isRTL ? 'يوم متواصل' : 'Day Streak'}</p>
+        </div>
+        <div className="rounded-2xl bg-muted/50 border border-border/50 p-4 text-center">
+          <Activity className="h-5 w-5 text-primary mx-auto mb-1" />
+          <p className="text-lg font-bold">{weeklyStats?.workoutsCompleted || 0}</p>
+          <p className="text-[10px] text-muted-foreground">{isRTL ? 'هذا الأسبوع' : 'This Week'}</p>
+        </div>
+        <div className="rounded-2xl bg-muted/50 border border-border/50 p-4 text-center">
+          <Heart className="h-5 w-5 text-red-500 mx-auto mb-1" />
+          <p className="text-lg font-bold">{Math.round(weeklyStats?.caloriesAvg || 0)}</p>
+          <p className="text-[10px] text-muted-foreground">{isRTL ? 'سعرات' : 'Avg Cal'}</p>
+        </div>
+      </div>
+
+      {/* Nutrition Quick View */}
+      {dailyNutrition && (
+        <div className="rounded-2xl border border-border/50 bg-muted/30 p-4">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold">{isRTL ? 'أكل النهارده' : "Today's Nutrition"}</h3>
+            <Link href="/nutrition" className="text-xs text-primary">
+              {isRTL ? 'التفاصيل' : 'Details'}
+            </Link>
+          </div>
+          <div className="grid grid-cols-4 gap-2">
+            <NutrientPill label={isRTL ? 'سعرات' : 'Cal'} value={Math.round(dailyNutrition.totals.calories)} color="text-primary" />
+            <NutrientPill label={isRTL ? 'بروتين' : 'Protein'} value={`${Math.round(dailyNutrition.totals.protein)}g`} color="text-blue-500" />
+            <NutrientPill label={isRTL ? 'كاربز' : 'Carbs'} value={`${Math.round(dailyNutrition.totals.carbs)}g`} color="text-amber-500" />
+            <NutrientPill label={isRTL ? 'دهون' : 'Fat'} value={`${Math.round(dailyNutrition.totals.fat)}g`} color="text-red-400" />
+          </div>
+        </div>
+      )}
+
+      {/* Personal Trainer Section */}
+      <div>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-lg font-bold">{isRTL ? 'المدرب الشخصي' : 'Personal Trainer'}</h3>
+          <Link href="/trainers" className="text-xs text-muted-foreground hover:text-primary">
+            {isRTL ? 'شوف الكل' : 'See All'}
+          </Link>
+        </div>
+        <Link href="/trainers" className="flex items-center gap-3 rounded-2xl border border-border/50 bg-muted/30 p-4">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+            <span className="text-lg">{'\uD83C\uDFCB\uFE0F'}</span>
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="font-semibold text-sm">{isRTL ? 'ابحث عن مدربك' : 'Find Your Trainer'}</p>
+            <p className="text-xs text-muted-foreground truncate">
+              {isRTL ? 'مدربين معتمدين جاهزين يساعدوك' : 'Certified trainers ready to help'}
+            </p>
+          </div>
+          <ChevronRight className={cn('h-5 w-5 text-muted-foreground shrink-0', isRTL && 'rotate-180')} />
+        </Link>
       </div>
     </div>
   );
 }
 
-/* ---- Weekly Activity Bar Chart ---- */
-const DAYS_EN = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-const DAYS_AR = ['اث', 'ثل', 'أر', 'خم', 'جم', 'سب', 'أح'];
-
-function WeeklyChart({ weeklyStats, isRTL }: { weeklyStats: WeeklySummary | null; isRTL: boolean }) {
-  const today = new Date().getDay(); // 0=Sun
-  const todayIdx = today === 0 ? 6 : today - 1; // convert to Mon=0
-  const labels = isRTL ? DAYS_AR : DAYS_EN;
-
-  // Placeholder until API returns daily breakdown
-  const completed = weeklyStats?.workoutsCompleted ?? 0;
-  const data = labels.map((day, i) => ({
-    day,
-    minutes: i < completed ? 30 + (i * 12 % 45) : (i <= todayIdx ? 10 : 0),
-    isToday: i === todayIdx,
-  }));
-
+/* ---- Workout Card Component ---- */
+function WorkoutCard({ name, duration, sets, reps, href, isRTL }: {
+  name: string;
+  duration: number;
+  sets: number;
+  reps: number;
+  href: string;
+  isRTL: boolean;
+}) {
   return (
-    <div className="h-[180px] w-full mt-2">
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={data} barCategoryGap="25%">
-          <XAxis
-            dataKey="day"
-            axisLine={false}
-            tickLine={false}
-            tick={{ fontSize: 12, fill: 'hsl(var(--muted-foreground))' }}
-          />
-          <YAxis hide />
-          <Bar dataKey="minutes" radius={[6, 6, 0, 0]}>
-            {data.map((entry, idx) => (
-              <Cell
-                key={idx}
-                fill={entry.isToday ? '#f97316' : 'hsl(var(--muted-foreground) / 0.2)'}
-              />
-            ))}
-          </Bar>
-        </BarChart>
-      </ResponsiveContainer>
+    <Link href={href} className="shrink-0 w-40 rounded-2xl border border-border/50 bg-muted/30 overflow-hidden">
+      {/* Photo placeholder — dark gradient */}
+      <div className="h-24 bg-gradient-to-br from-secondary to-secondary/80 relative">
+        <div className="absolute inset-0 bg-[url('/images/workout-placeholder.jpg')] bg-cover bg-center opacity-30" />
+      </div>
+      <div className="p-3">
+        <p className="text-xs font-semibold truncate">{name}</p>
+        <div className="flex items-center gap-2 mt-1.5 text-[10px] text-muted-foreground">
+          <span className="flex items-center gap-0.5">
+            <Clock className="h-3 w-3" /> {duration} {isRTL ? 'د' : 'min'}
+          </span>
+          <span>{sets} x {reps} {isRTL ? 'تكرار' : 'reps'}</span>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+/* ---- Nutrient Pill ---- */
+function NutrientPill({ label, value, color }: { label: string; value: string | number; color: string }) {
+  return (
+    <div className="text-center">
+      <p className={cn('text-sm font-bold', color)}>{value}</p>
+      <p className="text-[10px] text-muted-foreground">{label}</p>
+    </div>
+  );
+}
+
+/* ---- Skeleton Loading ---- */
+function DashboardSkeleton() {
+  return (
+    <div className="space-y-6 animate-pulse">
+      <div className="flex items-center justify-between">
+        <div>
+          <div className="h-4 w-24 rounded bg-muted" />
+          <div className="h-7 w-36 rounded bg-muted mt-2" />
+        </div>
+        <div className="h-11 w-11 rounded-full bg-muted" />
+      </div>
+      <div className="h-12 rounded-2xl bg-muted" />
+      <div className="h-48 rounded-3xl bg-muted" />
+      <div className="h-6 w-32 rounded bg-muted" />
+      <div className="flex gap-2">
+        {[1, 2, 3, 4].map(i => <div key={i} className="h-8 w-16 rounded-full bg-muted" />)}
+      </div>
+      <div className="flex gap-3">
+        {[1, 2].map(i => <div key={i} className="h-40 w-40 rounded-2xl bg-muted" />)}
+      </div>
     </div>
   );
 }

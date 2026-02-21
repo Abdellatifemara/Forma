@@ -37,7 +37,7 @@ export function StatCard({
               </p>
             )}
           </div>
-          <div className="rounded-xl bg-forma-teal/10 p-3 text-forma-teal">
+          <div className="rounded-xl bg-forma-orange/10 p-3 text-forma-orange">
             <Icon className="h-6 w-6" />
           </div>
         </div>

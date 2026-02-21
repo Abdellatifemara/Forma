@@ -181,7 +181,7 @@ export default function WorkoutPreferencesPage() {
                   key={eq.value}
                   variant={selected ? 'default' : 'outline'}
                   className={`cursor-pointer text-sm py-1.5 px-3 ${
-                    selected ? 'bg-forma-teal hover:bg-forma-teal/80 text-white' : 'hover:bg-muted'
+                    selected ? 'bg-forma-orange hover:bg-forma-orange/80 text-white' : 'hover:bg-muted'
                   }`}
                   onClick={() => toggleEquipment(eq.value)}
                 >

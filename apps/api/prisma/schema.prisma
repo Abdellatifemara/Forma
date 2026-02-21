@@ -73,6 +73,7 @@ model User {
   nutritionProfile      UserNutritionProfile?
   trainingHistory       UserTrainingHistory?
   workoutFeedback       WorkoutFeedback[]
+  healthDataLogs        HealthDataLog[]
   workoutLogs           WorkoutLog[]
   workoutPlans          WorkoutPlan[]
   receivedMessages      Message[]                 @relation("ReceivedMessages")
@@ -1486,6 +1487,16 @@ enum EquipmentType {
   BOXING_GLOVES
   PADS
   SHIN_GUARDS
+  ASSAULT_BIKE
+  PLYO_BOX
+  BATTLE_ROPES
+  SLED
+  WALL_BALL
+  RINGS
+  ROPE
+  GHD
+  SKI_ERG
+  MEDICINE_BALL
 }
 
 enum ExerciseCategory {
@@ -1500,6 +1511,7 @@ enum ExerciseCategory {
   PILATES
   MOBILITY
   MARTIAL_ARTS
+  CROSSFIT
 }
 
 enum VideoCategory {
@@ -1763,6 +1775,7 @@ enum TrainingStyle {
   POWERLIFTING
   BODYBUILDING
   CALISTHENICS
+  CROSSFIT
 }
 
 enum SplitType {
@@ -1771,6 +1784,7 @@ enum SplitType {
   PUSH_PULL_LEGS
   BRO_SPLIT
   HYBRID
+  CROSSFIT_WOD
 }
 
 enum RepRange {
@@ -1836,6 +1850,30 @@ model HealthMetric {
   @@index([userId])
   @@index([type])
   @@index([date])
+}
+
+model HealthDataLog {
+  id               String   @id @default(cuid())
+  userId           String
+  hrv              Float?
+  restingHeartRate Float?
+  sleepHours       Float?
+  sleepQuality     Float?
+  sleepDeep        Float? // hours of deep sleep
+  sleepRem         Float? // hours of REM sleep
+  sleepLight       Float? // hours of light sleep
+  sleepAwake       Float? // hours awake during sleep
+  steps            Int?
+  activeCalories   Float?
+  stressLevel      Float?
+  source           String // apple_health, google_fit, fitbit, garmin, manual
+  recordedAt       DateTime @default(now())
+  createdAt        DateTime @default(now())
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, source, recordedAt])
+  @@index([userId])
+  @@index([recordedAt])
 }
 
 enum HealthMetricType {

@@ -27,8 +27,8 @@ import { useLanguage } from '@/lib/i18n';
 const surveyCategories: Record<string, { icon: React.ReactNode; color: string; bgColor: string }> = {
   fitness_profile: {
     icon: <Activity className="h-6 w-6" />,
-    color: 'text-cyan-400',
-    bgColor: 'bg-cyan-500/20'
+    color: 'text-blue-400',
+    bgColor: 'bg-blue-500/20'
   },
   body_goals: {
     icon: <Target className="h-6 w-6" />,
@@ -127,7 +127,7 @@ export default function PersonalizationPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(6,182,212,0.15),transparent_50%)]" />
         <div className="relative">
           <div className="flex items-center gap-4 mb-4">
-            <div className="p-3 rounded-2xl bg-gradient-to-br from-cyan-500 to-purple-500">
+            <div className="p-3 rounded-2xl bg-primary">
               <ClipboardList className="h-8 w-8 text-white" />
             </div>
             <div>
@@ -146,7 +146,7 @@ export default function PersonalizationPage() {
             </div>
             <div className="h-3 bg-muted rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full transition-all duration-500"
+                className="h-full bg-primary rounded-full transition-all duration-500"
                 style={{ width: `${progress}%` }}
               />
             </div>

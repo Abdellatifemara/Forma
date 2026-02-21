@@ -27,7 +27,7 @@ const PLANS = {
         'Full exercise library (3,400+)',
       ],
       icon: Zap,
-      color: 'from-forma-teal to-cyan-400',
+      color: 'from-forma-orange to-blue-400',
     },
     {
       tier: 'PREMIUM_PLUS',
@@ -66,7 +66,7 @@ const PLANS = {
         'مكتبة تمارين كاملة (3,400+)',
       ],
       icon: Zap,
-      color: 'from-forma-teal to-cyan-400',
+      color: 'from-forma-orange to-blue-400',
     },
     {
       tier: 'PREMIUM_PLUS',
@@ -141,7 +141,7 @@ export default function SubscriptionPage() {
                 currentTier === 'PREMIUM_PLUS'
                   ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white'
                   : currentTier === 'PREMIUM'
-                  ? 'bg-forma-teal text-white'
+                  ? 'bg-forma-orange text-white'
                   : 'bg-muted'
               }`}
             >
@@ -182,7 +182,7 @@ export default function SubscriptionPage() {
             <Card
               key={plan.tier}
               className={`relative overflow-hidden ${
-                isCurrent ? 'ring-2 ring-forma-teal' : ''
+                isCurrent ? 'ring-2 ring-forma-orange' : ''
               }`}
             >
               {plan.tier === 'PREMIUM_PLUS' && (

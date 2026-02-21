@@ -83,7 +83,7 @@ export default function TermsPage() {
           <h2 className="text-2xl font-semibold mt-8 mb-4">9. Contact</h2>
           <p>
             If you have any questions about these Terms, please contact us at{' '}
-            <a href="mailto:support@forma.eg" className="text-forma-teal hover:underline">
+            <a href="mailto:support@forma.eg" className="text-forma-orange hover:underline">
               support@forma.eg
             </a>
           </p>

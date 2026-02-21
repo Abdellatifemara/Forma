@@ -161,7 +161,7 @@ export default function CreateWorkoutPlanPage() {
   };
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       <div>
         <h1 className="text-2xl font-bold">{isAr ? 'إنشاء خطة تمرين' : 'Create Workout Plan'}</h1>
         <p className="text-muted-foreground">{isAr ? 'ابني برنامج تدريبك المخصص من الصفر.' : 'Build your own custom training program from scratch.'}</p>

@@ -13,7 +13,7 @@ export default function ContactContent() {
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-center mb-8">{isAr ? 'تواصل معانا' : 'Contact Us'}</h1>
       {plan && (
-        <p className="text-center text-forma-teal mb-4">
+        <p className="text-center text-forma-orange mb-4">
           {isAr
             ? `مهتم بباقة ${plan.charAt(0).toUpperCase() + plan.slice(1)}`
             : `Interested in the ${plan.charAt(0).toUpperCase() + plan.slice(1)} plan`}

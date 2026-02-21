@@ -142,7 +142,7 @@ export default function LogWorkoutPage() {
   };
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
+    <div className="space-y-6 pb-20">
       <div>
         <h1 className="text-2xl font-bold">
           {isAr ? 'تسجيل تمرين' : 'Log a Workout'}

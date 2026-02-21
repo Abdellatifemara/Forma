@@ -1,23 +1,37 @@
-import { Injectable, BadRequestException, ForbiddenException } from '@nestjs/common';
-import { v2 as cloudinary, UploadApiResponse, UploadApiErrorResponse } from 'cloudinary';
+import { Injectable, Inject, BadRequestException, ForbiddenException } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { S3Client, PutObjectCommand, DeleteObjectCommand } from '@aws-sdk/client-s3';
+import { randomUUID } from 'crypto';
 import { PrismaService } from '../prisma/prisma.service';
-
-export type CloudinaryResponse = UploadApiResponse | UploadApiErrorResponse;
-
-interface ModerationResult {
-  flagged: boolean;
-  categories: string[];
-  confidence: number;
-}
+import { R2_CLIENT } from './r2.provider';
 
 @Injectable()
 export class UploadService {
-  constructor(private readonly prisma: PrismaService) {}
+  private readonly bucketName: string;
+  private readonly publicUrl: string;
+
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly configService: ConfigService,
+    @Inject(R2_CLIENT) private readonly r2: S3Client | null,
+  ) {
+    this.bucketName = this.configService.get<string>('R2_BUCKET_NAME') || 'forma-media';
+    this.publicUrl = this.configService.get<string>('R2_PUBLIC_URL') || '';
+  }
+
+  private getFileUrl(key: string): string {
+    if (this.publicUrl) {
+      return `${this.publicUrl}/${key}`;
+    }
+    // Fallback: R2 public bucket URL
+    const accountId = this.configService.get<string>('R2_ACCOUNT_ID');
+    return `https://${this.bucketName}.${accountId}.r2.cloudflarestorage.com/${key}`;
+  }
 
   async uploadImage(
     file: Express.Multer.File,
     userId: string,
-  ): Promise<{ url: string; publicId: string; moderated: boolean }> {
+  ): Promise<{ url: string; key: string }> {
     if (!file) {
       throw new BadRequestException('No file provided');
     }
@@ -32,7 +46,7 @@ export class UploadService {
       throw new BadRequestException('File size exceeds 10MB limit');
     }
 
-    // Check if user is banned from uploading
+    // Check ban
     const user = await this.prisma.user.findUnique({
       where: { id: userId },
       select: { bannedAt: true, uploadBanReason: true },
@@ -44,102 +58,62 @@ export class UploadService {
       );
     }
 
-    return new Promise((resolve, reject) => {
-      const uploadStream = cloudinary.uploader.upload_stream(
-        {
-          folder: `forma/chat/images/${userId}`,
-          resource_type: 'image',
-          transformation: [
-            { width: 1200, height: 1200, crop: 'limit' },
-            { quality: 'auto' },
-            { format: 'auto' },
-          ],
-        },
-        async (error, result) => {
-          if (error) {
-            reject(new BadRequestException(`Upload failed: ${error.message}`));
-          } else if (result) {
-            resolve({
-              url: result.secure_url,
-              publicId: result.public_id,
-              moderated: false,
-            });
-          }
-        },
-      );
+    const ext = file.mimetype.split('/')[1] || 'jpg';
+    const key = `images/${userId}/${randomUUID()}.${ext}`;
 
-      uploadStream.end(file.buffer);
-    });
+    await this.putObject(key, file.buffer, file.mimetype);
+
+    return { url: this.getFileUrl(key), key };
   }
 
-  // Log content violation for review
-  private async logContentViolation(
+  async uploadAvatar(
+    file: Express.Multer.File,
     userId: string,
-    publicId: string,
-    reason: string,
-  ): Promise<void> {
-    try {
-      await this.prisma.contentViolation.create({
-        data: {
-          userId,
-          resourceId: publicId,
-          type: 'IMAGE',
-          reason,
-          detectedAt: new Date(),
-        },
-      });
-    } catch (error) {
-      console.error('Failed to log content violation:', error);
+  ): Promise<{ url: string; key: string }> {
+    if (!file) {
+      throw new BadRequestException('No file provided');
     }
-  }
 
-  // Check violation count and ban user if necessary
-  private async checkAndBanUser(userId: string): Promise<void> {
-    try {
-      const violationCount = await this.prisma.contentViolation.count({
-        where: {
-          userId,
-          createdAt: {
-            gte: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), // Last 30 days
-          },
-        },
-      });
-
-      // Ban after 3 violations in 30 days
-      if (violationCount >= 3) {
-        await this.prisma.user.update({
-          where: { id: userId },
-          data: {
-            bannedAt: new Date(),
-            uploadBanReason: 'Multiple content policy violations',
-          },
-        });
-      }
-    } catch (error) {
-      console.error('Failed to check/ban user:', error);
+    const allowedMimeTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
+    if (!allowedMimeTypes.includes(file.mimetype)) {
+      throw new BadRequestException('Invalid file type. Only JPEG, PNG, GIF, and WebP are allowed.');
     }
+
+    const maxSize = 5 * 1024 * 1024; // 5MB
+    if (file.size > maxSize) {
+      throw new BadRequestException('File size exceeds 5MB limit');
+    }
+
+    const ext = file.mimetype.split('/')[1] || 'jpg';
+    const key = `avatars/${userId}.${ext}`;
+
+    await this.putObject(key, file.buffer, file.mimetype, 'public-read');
+
+    const url = this.getFileUrl(key);
+
+    // Update user avatar in DB
+    await this.prisma.user.update({
+      where: { id: userId },
+      data: { avatarUrl: url },
+    });
+
+    return { url, key };
   }
 
   async uploadVoice(
     file: Express.Multer.File,
     userId: string,
-  ): Promise<{ url: string; publicId: string; duration?: number }> {
+  ): Promise<{ url: string; key: string }> {
     if (!file) {
       throw new BadRequestException('No file provided');
     }
 
     const allowedMimeTypes = [
-      'audio/webm',
-      'audio/mp4',
-      'audio/mpeg',
-      'audio/ogg',
-      'audio/wav',
-      'audio/x-m4a',
+      'audio/webm', 'audio/mp4', 'audio/mpeg',
+      'audio/ogg', 'audio/wav', 'audio/x-m4a',
     ];
     if (!allowedMimeTypes.includes(file.mimetype)) {
-      throw new BadRequestException(
-        'Invalid file type. Only WebM, MP4, MP3, OGG, WAV, and M4A audio are allowed.',
-      );
+      throw new BadRequestException('Invalid file type. Only WebM, MP4, MP3, OGG, WAV, and M4A audio are allowed.');
     }
 
     const maxSize = 25 * 1024 * 1024; // 25MB
@@ -147,34 +121,18 @@ export class UploadService {
       throw new BadRequestException('File size exceeds 25MB limit');
     }
 
-    return new Promise((resolve, reject) => {
-      const uploadStream = cloudinary.uploader.upload_stream(
-        {
-          folder: `forma/chat/voice/${userId}`,
-          resource_type: 'video', // Cloudinary uses 'video' for audio files
-          format: 'mp3',
-        },
-        (error, result) => {
-          if (error) {
-            reject(new BadRequestException(`Upload failed: ${error.message}`));
-          } else if (result) {
-            resolve({
-              url: result.secure_url,
-              publicId: result.public_id,
-              duration: result.duration,
-            });
-          }
-        },
-      );
+    const ext = file.originalname?.split('.').pop() || 'webm';
+    const key = `voice/${userId}/${randomUUID()}.${ext}`;
 
-      uploadStream.end(file.buffer);
-    });
+    await this.putObject(key, file.buffer, file.mimetype);
+
+    return { url: this.getFileUrl(key), key };
   }
 
   async uploadPdf(
     file: Express.Multer.File,
     userId: string,
-  ): Promise<{ url: string; publicId: string; pages?: number }> {
+  ): Promise<{ url: string; key: string }> {
     if (!file) {
       throw new BadRequestException('No file provided');
     }
@@ -188,35 +146,45 @@ export class UploadService {
       throw new BadRequestException('File size exceeds 10MB limit');
     }
 
-    return new Promise((resolve, reject) => {
-      const uploadStream = cloudinary.uploader.upload_stream(
-        {
-          folder: `forma/programs/pdfs/${userId}`,
-          resource_type: 'raw', // PDFs are raw files
-          format: 'pdf',
-        },
-        (error, result) => {
-          if (error) {
-            reject(new BadRequestException(`Upload failed: ${error.message}`));
-          } else if (result) {
-            resolve({
-              url: result.secure_url,
-              publicId: result.public_id,
-              pages: (result as any).pages,
-            });
-          }
-        },
-      );
+    const key = `pdfs/${userId}/${randomUUID()}.pdf`;
 
-      uploadStream.end(file.buffer);
-    });
+    await this.putObject(key, file.buffer, file.mimetype);
+
+    return { url: this.getFileUrl(key), key };
   }
 
-  async deleteFile(publicId: string, resourceType: 'image' | 'video' | 'raw' = 'image'): Promise<void> {
+  async deleteFile(key: string): Promise<void> {
+    if (!this.r2) return;
+
     try {
-      await cloudinary.uploader.destroy(publicId, { resource_type: resourceType });
+      await this.r2.send(
+        new DeleteObjectCommand({
+          Bucket: this.bucketName,
+          Key: key,
+        }),
+      );
     } catch (error) {
-      console.error('Failed to delete file from Cloudinary:', error);
+      console.error('Failed to delete file from R2:', error);
     }
+  }
+
+  private async putObject(
+    key: string,
+    body: Buffer,
+    contentType: string,
+    _acl?: string,
+  ): Promise<void> {
+    if (!this.r2) {
+      throw new BadRequestException('Storage not configured. Contact support.');
+    }
+
+    await this.r2.send(
+      new PutObjectCommand({
+        Bucket: this.bucketName,
+        Key: key,
+        Body: body,
+        ContentType: contentType,
+      }),
+    );
   }
 }

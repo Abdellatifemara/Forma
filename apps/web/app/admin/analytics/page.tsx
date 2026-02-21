@@ -109,8 +109,8 @@ export default function AdminAnalyticsPage() {
         <Card>
           <CardContent className="pt-6">
             <div className="flex items-center justify-between">
-              <div className="rounded-lg bg-forma-teal/10 p-2">
-                <Users className="h-5 w-5 text-forma-teal" />
+              <div className="rounded-lg bg-forma-orange/10 p-2">
+                <Users className="h-5 w-5 text-forma-orange" />
               </div>
               <Badge
                 variant={analytics?.userChange && analytics.userChange >= 0 ? 'forma' : 'secondary'}
@@ -213,7 +213,7 @@ export default function AdminAnalyticsPage() {
                     return (
                       <div key={data.month} className="flex flex-1 flex-col items-center gap-2">
                         <div
-                          className="w-full rounded-t-lg bg-forma-teal transition-all"
+                          className="w-full rounded-t-lg bg-forma-orange transition-all"
                           style={{ height: `${(data.users / maxUsers) * 100}%`, minHeight: '4px' }}
                         />
                         <span className="text-sm text-muted-foreground">{data.month}</span>
@@ -330,8 +330,8 @@ export default function AdminAnalyticsPage() {
               {analytics?.retentionRates && analytics.retentionRates.length > 0 ? (
                 analytics.retentionRates.map((item) => (
                   <div key={item.period} className="text-center">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-forma-teal/10">
-                      <span className="text-lg font-bold text-forma-teal">{item.rate}%</span>
+                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-forma-orange/10">
+                      <span className="text-lg font-bold text-forma-orange">{item.rate}%</span>
                     </div>
                     <p className="mt-2 text-sm text-muted-foreground">{item.period}</p>
                   </div>

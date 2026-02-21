@@ -75,7 +75,7 @@ const mealColors = {
   BREAKFAST: 'from-orange-500 to-yellow-500',
   LUNCH: 'from-green-500 to-emerald-500',
   DINNER: 'from-purple-500 to-pink-500',
-  SNACK: 'from-cyan-500 to-blue-500',
+  SNACK: 'from-blue-500 to-blue-600',
 };
 
 export default function NutritionPage() {
@@ -148,22 +148,49 @@ export default function NutritionPage() {
 
   if (dailyLoading) {
     return (
-      <div className="flex min-h-[50vh] items-center justify-center lg:ml-64">
-        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      <div className="space-y-4 pb-20">
+        {/* Calorie ring skeleton */}
+        <div className="rounded-2xl border border-border/60 bg-white dark:bg-card p-6">
+          <div className="flex items-center justify-between">
+            <div className="space-y-2">
+              <div className="h-4 w-24 rounded-lg animate-shimmer" />
+              <div className="h-8 w-20 rounded-lg animate-shimmer" />
+              <div className="h-3 w-32 rounded-lg animate-shimmer" />
+            </div>
+            <div className="h-28 w-28 rounded-full animate-shimmer" />
+          </div>
+        </div>
+        {/* Macro bars skeleton */}
+        <div className="grid grid-cols-3 gap-3">
+          {[1, 2, 3].map(i => (
+            <div key={i} className="rounded-2xl border border-border/60 bg-white dark:bg-card p-4">
+              <div className="h-3 w-12 rounded animate-shimmer mb-2" />
+              <div className="h-5 w-16 rounded animate-shimmer mb-2" />
+              <div className="h-2 w-full rounded-full animate-shimmer" />
+            </div>
+          ))}
+        </div>
+        {/* Meal sections skeleton */}
+        {[1, 2, 3].map(i => (
+          <div key={i} className="rounded-2xl border border-border/60 bg-white dark:bg-card p-4">
+            <div className="flex items-center gap-3">
+              <div className="h-10 w-10 rounded-xl animate-shimmer" />
+              <div className="flex-1 space-y-2">
+                <div className="h-4 w-24 rounded animate-shimmer" />
+                <div className="h-3 w-16 rounded animate-shimmer" />
+              </div>
+              <div className="h-8 w-8 rounded-lg animate-shimmer" />
+            </div>
+          </div>
+        ))}
       </div>
     );
   }
 
   return (
-    <div className="space-y-6 pb-20 lg:ml-64 lg:pb-6">
-      {/* Animated Background */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none lg:left-64">
-        <div className="absolute top-20 -right-20 w-64 h-64 bg-green-500/10 rounded-full blur-[100px]" />
-        <div className="absolute bottom-40 -left-20 w-64 h-64 bg-orange-500/10 rounded-full blur-[100px]" />
-      </div>
-
+    <div className="space-y-6 pb-20">
       {/* Header */}
-      <div className="relative z-10 flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold">{t.nutrition.title}</h1>
           <p className="text-muted-foreground">{isAr ? 'تابع أكلك اليومي' : 'Track your daily intake'}</p>
@@ -175,7 +202,7 @@ export default function NutritionPage() {
               {t.nutrition.logMeal}
             </Button>
           </DialogTrigger>
-          <DialogContent className="glass border-border/50 sm:max-w-md">
+          <DialogContent className="rounded-2xl border border-border/50 bg-card sm:max-w-md">
             <DialogHeader>
               <DialogTitle className="flex items-center gap-2">
                 <Apple className="h-5 w-5 text-primary" />
@@ -319,7 +346,7 @@ export default function NutritionPage() {
 
       {/* Error Message */}
       {dailyError && (
-        <Card className="glass border-yellow-500/30 bg-yellow-500/5">
+        <Card className="rounded-2xl border border-yellow-500/30 bg-yellow-500/5">
           <CardContent className="p-4 flex items-center gap-3">
             <Zap className="h-5 w-5 text-yellow-500" />
             <p className="text-sm text-yellow-500">
@@ -330,9 +357,9 @@ export default function NutritionPage() {
       )}
 
       {/* Main Stats */}
-      <div className="relative z-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {/* Calorie Ring */}
-        <Card className="glass border-border/50 md:col-span-2">
+        <Card className="rounded-2xl border border-border/50 bg-card md:col-span-2">
           <CardContent className="p-6">
             <div className="flex items-center gap-6">
               <div className="relative w-32 h-32">
@@ -395,7 +422,7 @@ export default function NutritionPage() {
         </Card>
 
         {/* Quick Stats */}
-        <Card className="glass border-border/50">
+        <Card className="rounded-2xl border border-border/50 bg-card">
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm text-muted-foreground">{t.nutrition.protein}</span>
@@ -417,7 +444,7 @@ export default function NutritionPage() {
           </CardContent>
         </Card>
 
-        <Card className="glass border-border/50">
+        <Card className="rounded-2xl border border-border/50 bg-card">
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-4">
               <span className="text-sm text-muted-foreground">{t.nutrition.carbs}</span>
@@ -441,8 +468,8 @@ export default function NutritionPage() {
       </div>
 
       {/* Fat & Water Row */}
-      <div className="relative z-10 grid gap-4 md:grid-cols-2">
-        <Card className="glass border-border/50">
+      <div className="grid gap-4 md:grid-cols-2">
+        <Card className="rounded-2xl border border-border/50 bg-card">
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
@@ -457,7 +484,7 @@ export default function NutritionPage() {
             </div>
             <div className="h-2 bg-muted/30 rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"
+                className="h-full bg-gradient-to-r from-blue-500 to-blue-500 rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: `${fatProgress}%` }}
                 transition={{ duration: 1, delay: 0.3 }}
@@ -466,16 +493,16 @@ export default function NutritionPage() {
           </CardContent>
         </Card>
 
-        <Card className="glass border-border/50">
+        <Card className="rounded-2xl border border-border/50 bg-card">
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
-                <div className="p-2 rounded-lg bg-cyan-500/20">
-                  <Droplet className="h-4 w-4 text-cyan-400" />
+                <div className="p-2 rounded-lg bg-blue-500/20">
+                  <Droplet className="h-4 w-4 text-blue-400" />
                 </div>
                 <span className="font-medium">{t.health.water}</span>
               </div>
-              <Badge variant="outline" className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30">
+              <Badge variant="outline" className="bg-blue-500/10 text-blue-400 border-blue-500/30">
                 {waterGlasses} / {defaultGoals.water} {isAr ? 'كوباية' : 'glasses'}
               </Badge>
             </div>
@@ -487,7 +514,7 @@ export default function NutritionPage() {
                   className={cn(
                     "flex-1 h-8 rounded-lg transition-all",
                     i < waterGlasses
-                      ? "bg-gradient-to-t from-cyan-500 to-blue-500"
+                      ? "bg-gradient-to-t from-blue-500 to-blue-600"
                       : "bg-muted/30 hover:bg-muted/50"
                   )}
                 />
@@ -498,7 +525,7 @@ export default function NutritionPage() {
       </div>
 
       {/* Today's Meals */}
-      <div className="relative z-10 space-y-4">
+      <div className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold">{t.nutrition.today}</h2>
           <Badge variant="outline" className="text-xs">
@@ -522,7 +549,7 @@ export default function NutritionPage() {
                 onOpenChange={() => setExpandedMeal(expandedMeal === meal.type ? null : meal.type)}
               >
                 <Card className={cn(
-                  "glass border-border/50 overflow-hidden transition-all",
+                  "rounded-2xl border border-border/50 bg-card overflow-hidden transition-all",
                   !meal.notLogged && "border-green-500/30"
                 )}>
                   {/* Gradient accent */}
@@ -619,7 +646,7 @@ export default function NutritionPage() {
       </div>
 
       {/* Daily Insight */}
-      <Card className="relative z-10 glass border-primary/20 bg-primary/5">
+      <Card className="rounded-2xl border border-primary/20 bg-primary/5">
         <CardContent className="p-6">
           <div className="flex items-start gap-4">
             <div className="p-3 rounded-xl bg-primary/20">
