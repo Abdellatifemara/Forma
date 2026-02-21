@@ -10,6 +10,7 @@ import { aiApi } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
 import Link from 'next/link';
 import GuidedChat from '@/components/chat/guided-chat';
+import { ErrorBoundary } from '@/components/error-boundary';
 
 interface ChatMessage {
   id: string;
@@ -358,7 +359,34 @@ export default function ChatPage() {
         </p>
       </div>
 
-      {isPremiumPlus ? <FreeChat tier={tier!} /> : <GuidedChat />}
+      <ErrorBoundary
+        fallback={
+          <ChatErrorFallback isAr={isAr} onRetry={() => window.location.reload()} />
+        }
+      >
+        {isPremiumPlus ? <FreeChat tier={tier!} /> : <GuidedChat />}
+      </ErrorBoundary>
+    </div>
+  );
+}
+
+function ChatErrorFallback({ isAr, onRetry }: { isAr: boolean; onRetry: () => void }) {
+  return (
+    <div className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-border/60 bg-card p-8 text-center">
+      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-destructive/10">
+        <AlertCircle className="h-7 w-7 text-destructive" />
+      </div>
+      <div>
+        <h3 className="font-semibold mb-1">
+          {isAr ? 'حصل مشكلة في الشات' : 'Chat encountered an error'}
+        </h3>
+        <p className="text-sm text-muted-foreground">
+          {isAr ? 'جرّب تاني أو ارجع للصفحة الرئيسية' : 'Try again or go back to the dashboard'}
+        </p>
+      </div>
+      <Button onClick={onRetry} className="btn-primary">
+        {isAr ? 'حاول تاني' : 'Try Again'}
+      </Button>
     </div>
   );
 }

@@ -304,16 +304,14 @@ export class ExercisesService {
   }
 
   async getMuscleGroupCounts(): Promise<{ muscle: MuscleGroup; count: number }[]> {
-    const muscles = Object.values(MuscleGroup);
-    const counts = await Promise.all(
-      muscles.map(async (muscle) => ({
-        muscle,
-        count: await this.prisma.exercise.count({
-          where: { primaryMuscle: muscle },
-        }),
-      })),
-    );
+    const groups = await this.prisma.exercise.groupBy({
+      by: ['primaryMuscle'],
+      _count: { id: true },
+    });
 
-    return counts.filter((c) => c.count > 0).sort((a, b) => b.count - a.count);
+    return groups
+      .map((g) => ({ muscle: g.primaryMuscle, count: g._count.id }))
+      .filter((c) => c.count > 0)
+      .sort((a, b) => b.count - a.count);
   }
 }

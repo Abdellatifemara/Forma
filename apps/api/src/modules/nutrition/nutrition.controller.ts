@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Delete, Param, Query, Body, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Delete, Param, Query, Body, UseGuards, UseInterceptors } from '@nestjs/common';
 import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { NutritionService } from './nutrition.service';
@@ -7,6 +7,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { Public } from '../auth/decorators/public.decorator';
 import { User, MealType } from '@prisma/client';
+import { HttpCacheTTL, CacheControlInterceptor } from '../../common/interceptors/cache-control.interceptor';
 
 @ApiTags('nutrition')
 @Controller('nutrition')
@@ -51,6 +52,8 @@ export class NutritionController {
   @ApiOperation({ summary: 'Get food categories with counts' })
   @CacheKey('get_food_categories')
   @CacheTTL(3600)
+  @UseInterceptors(CacheControlInterceptor)
+  @HttpCacheTTL(3600)
   async getCategories() {
     return this.nutritionService.getCategories();
   }

@@ -42,6 +42,7 @@ import {
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
 import { useDailyNutrition, useFoodSearch } from '@/hooks/use-nutrition';
+import { useDebounce } from '@/hooks/use-debounce';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '@/lib/i18n';
@@ -83,11 +84,12 @@ export default function NutritionPage() {
   const { t, language } = useLanguage();
   const isAr = language === 'ar';
   const [searchQuery, setSearchQuery] = useState('');
+  const debouncedSearch = useDebounce(searchQuery, 300);
   const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
   const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
   const [waterGlasses, setWaterGlasses] = useState(6);
   const { data: dailyData, isLoading: dailyLoading, error: dailyError } = useDailyNutrition();
-  const { data: searchResults, isLoading: searchLoading } = useFoodSearch(searchQuery);
+  const { data: searchResults, isLoading: searchLoading } = useFoodSearch(debouncedSearch);
 
   // Calculate daily totals from API data or use defaults
   const totals = dailyData?.totals || { calories: 0, protein: 0, carbs: 0, fat: 0 };

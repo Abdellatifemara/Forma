@@ -805,34 +805,32 @@ STYLE RULES:
 
   private async broadFoodSearch(query: string, isAr: boolean): Promise<ChatResponse | null> {
     // Extract potential food-related keywords from the query
-    const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 2);
+    const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 2).slice(0, 5);
     if (words.length === 0) return null;
 
     try {
-      for (const word of words) {
-        const foods = await this.prisma.food.findMany({
-          where: {
-            OR: [
-              { nameEn: { contains: word, mode: 'insensitive' } },
-              { nameAr: { contains: word, mode: 'insensitive' } },
-            ],
-          },
-          take: 3,
-          select: {
-            nameEn: true,
-            nameAr: true,
-            calories: true,
-            proteinG: true,
-            carbsG: true,
-            fatG: true,
-            servingSizeG: true,
-            servingUnit: true,
-          },
-        });
+      const foods = await this.prisma.food.findMany({
+        where: {
+          OR: words.flatMap(word => [
+            { nameEn: { contains: word, mode: 'insensitive' as const } },
+            { nameAr: { contains: word, mode: 'insensitive' as const } },
+          ]),
+        },
+        take: 3,
+        select: {
+          nameEn: true,
+          nameAr: true,
+          calories: true,
+          proteinG: true,
+          carbsG: true,
+          fatG: true,
+          servingSizeG: true,
+          servingUnit: true,
+        },
+      });
 
-        if (foods.length > 0) {
-          return this.formatFoodResults(foods, word, isAr);
-        }
+      if (foods.length > 0) {
+        return this.formatFoodResults(foods, words[0], isAr);
       }
     } catch {
       // Fall through
@@ -842,39 +840,37 @@ STYLE RULES:
   }
 
   private async broadExerciseSearch(query: string, isAr: boolean): Promise<ChatResponse | null> {
-    const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+    const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 3).slice(0, 5);
     if (words.length === 0) return null;
 
     try {
-      for (const word of words) {
-        const exercises = await this.prisma.exercise.findMany({
-          where: {
-            OR: [
-              { nameEn: { contains: word, mode: 'insensitive' } },
-              { nameAr: { contains: word, mode: 'insensitive' } },
-            ],
-          },
-          take: 3,
-          select: {
-            nameEn: true,
-            nameAr: true,
-            primaryMuscle: true,
-            difficulty: true,
-          },
+      const exercises = await this.prisma.exercise.findMany({
+        where: {
+          OR: words.flatMap(word => [
+            { nameEn: { contains: word, mode: 'insensitive' as const } },
+            { nameAr: { contains: word, mode: 'insensitive' as const } },
+          ]),
+        },
+        take: 3,
+        select: {
+          nameEn: true,
+          nameAr: true,
+          primaryMuscle: true,
+          difficulty: true,
+        },
+      });
+
+      if (exercises.length > 0) {
+        const header = isAr ? '🏋️ تمارين مرتبطة:\n\n' : '🏋️ Related exercises:\n\n';
+        const lines = exercises.map((ex, i) => {
+          const name = isAr ? ex.nameAr : ex.nameEn;
+          return `${i + 1}. **${name}** — ${ex.primaryMuscle.replace(/_/g, ' ').toLowerCase()} (${ex.difficulty.toLowerCase()})`;
         });
 
-        if (exercises.length > 0) {
-          const header = isAr ? '🏋️ تمارين مرتبطة:\n\n' : '🏋️ Related exercises:\n\n';
-          const lines = exercises.map((ex, i) => {
-            const name = isAr ? ex.nameAr : ex.nameEn;
-            return `${i + 1}. **${name}** — ${ex.primaryMuscle.replace(/_/g, ' ').toLowerCase()} (${ex.difficulty.toLowerCase()})`;
-          });
-
-          return {
-            response: header + lines.join('\n'),
-            source: 'exercise_search',
-          };
-        }
+        return {
+          response: header + lines.join('\n'),
+          source: 'exercise_search',
+        };
       }
     } catch {
       // Fall through

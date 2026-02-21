@@ -721,46 +721,58 @@ export class WorkoutsService {
       },
     });
 
-    // Log each exercise
+    // Batch-resolve all exercises upfront (instead of N+1 per exercise)
+    const exerciseIds = dto.exercises.map(e => e.exerciseId).filter(Boolean) as string[];
+    const exerciseNames = dto.exercises.filter(e => !e.exerciseId && e.name).map(e => e.name!);
+
+    const [byId, byName] = await Promise.all([
+      exerciseIds.length > 0
+        ? this.prisma.exercise.findMany({ where: { id: { in: exerciseIds } }, select: { id: true } })
+        : [],
+      exerciseNames.length > 0
+        ? this.prisma.exercise.findMany({
+            where: { nameEn: { in: exerciseNames, mode: 'insensitive' } },
+            select: { id: true, nameEn: true },
+          })
+        : [],
+    ]);
+
+    const idLookup = new Set(byId.map(e => e.id));
+    const nameLookup = new Map(byName.map(e => [e.nameEn.toLowerCase(), e.id]));
+
+    // Log each exercise and its sets
     let totalVolume = 0;
 
     for (const exercise of dto.exercises) {
-      // Try to find exercise by ID or name
-      let exerciseRecord = null;
+      let resolvedId: string | null = null;
 
-      if (exercise.exerciseId) {
-        exerciseRecord = await this.prisma.exercise.findUnique({
-          where: { id: exercise.exerciseId },
-        });
+      if (exercise.exerciseId && idLookup.has(exercise.exerciseId)) {
+        resolvedId = exercise.exerciseId;
+      } else if (exercise.name) {
+        resolvedId = nameLookup.get(exercise.name.toLowerCase()) || null;
       }
 
-      if (!exerciseRecord && exercise.name) {
-        exerciseRecord = await this.prisma.exercise.findFirst({
-          where: { nameEn: { contains: exercise.name, mode: 'insensitive' } },
-        });
-      }
+      if (!resolvedId) continue;
 
-      if (exerciseRecord) {
-        const exerciseLog = await this.prisma.exerciseLog.create({
-          data: {
-            workoutLogId: log.id,
-            exerciseId: exerciseRecord.id,
-          },
-        });
+      const exerciseLog = await this.prisma.exerciseLog.create({
+        data: {
+          workoutLogId: log.id,
+          exerciseId: resolvedId,
+        },
+      });
 
-        // Log each set
-        for (let i = 0; i < exercise.sets.length; i++) {
-          const set = exercise.sets[i];
-          await this.prisma.setLog.create({
-            data: {
-              exerciseLogId: exerciseLog.id,
-              setNumber: i + 1,
-              reps: set.reps,
-              weightKg: set.weightKg,
-            },
-          });
-          totalVolume += (set.weightKg || 0) * set.reps;
-        }
+      // Batch-create all sets at once
+      const setData = exercise.sets.map((set, i) => ({
+        exerciseLogId: exerciseLog.id,
+        setNumber: i + 1,
+        reps: set.reps,
+        weightKg: set.weightKg,
+      }));
+
+      await this.prisma.setLog.createMany({ data: setData });
+
+      for (const set of exercise.sets) {
+        totalVolume += (set.weightKg || 0) * set.reps;
       }
     }
 

@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Param, Query, UseGuards, UseInterceptors } from '@nestjs/common';
 import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiParam } from '@nestjs/swagger';
 import { ExercisesService } from './exercises.service';
@@ -7,6 +7,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { Public } from '../auth/decorators/public.decorator';
 import { User, MuscleGroup } from '@prisma/client';
+import { HttpCacheTTL, CacheControlInterceptor } from '../../common/interceptors/cache-control.interceptor';
 
 @ApiTags('exercises')
 @Controller('exercises')
@@ -19,6 +20,8 @@ export class ExercisesController {
   @ApiResponse({ status: 200, description: 'Returns paginated exercise list' })
   @CacheKey('search_exercises')
   @CacheTTL(300)
+  @UseInterceptors(CacheControlInterceptor)
+  @HttpCacheTTL(3600)
   async search(@Query() searchDto: SearchExercisesDto) {
     return this.exercisesService.search(searchDto);
   }
@@ -29,6 +32,8 @@ export class ExercisesController {
   @ApiResponse({ status: 200, description: 'Returns muscle groups with counts' })
   @CacheKey('get_muscle_group_counts')
   @CacheTTL(3600)
+  @UseInterceptors(CacheControlInterceptor)
+  @HttpCacheTTL(3600)
   async getMuscleGroupCounts() {
     return this.exercisesService.getMuscleGroupCounts();
   }

@@ -624,3 +624,63 @@ h1, h2, h3, h4, h5, h6 {
 .sparkline-dot:hover {
   r: 5;
 }
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+
+/* Absolute center — grid shortcut */
+.absolute-center {
+  display: grid;
+  place-items: center;
+}
+
+/* ============================================
+   SCROLL SNAP — horizontal card carousels
+   ============================================ */
+
+.scroll-snap-x {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-snap-x::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-snap-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   MEDIA PLACEHOLDERS — CLS prevention
+   ============================================ */
+
+.media-placeholder-16-9 {
+  aspect-ratio: 16 / 9;
+  @apply bg-muted rounded-xl overflow-hidden;
+}
+
+.media-placeholder-4-3 {
+  aspect-ratio: 4 / 3;
+  @apply bg-muted rounded-xl overflow-hidden;
+}
+
+.media-placeholder-square {
+  aspect-ratio: 1 / 1;
+  @apply bg-muted rounded-xl overflow-hidden;
+}
+
+/* ============================================
+   DESKTOP SIDEBAR
+   ============================================ */
+
+.sidebar-desktop {
+  @apply fixed top-0 bottom-0 z-40 w-64 border-e border-border/50 bg-background;
+  start: 0;
+}
