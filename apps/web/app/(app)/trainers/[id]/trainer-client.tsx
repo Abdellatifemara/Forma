@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
   ArrowLeft,
@@ -50,6 +50,7 @@ export default function TrainerDetailPage() {
   const { t, language } = useLanguage();
   const isAr = language === 'ar';
   const params = useParams();
+  const router = useRouter();
   const id = params.id as string;
   const [trainer, setTrainer] = useState<Trainer | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -57,7 +58,16 @@ export default function TrainerDetailPage() {
   const [showBookingDialog, setShowBookingDialog] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<'hourly' | 'monthly'>('monthly');
 
+  // Redirect placeholder routes (static export artifact)
   useEffect(() => {
+    if (id === '_placeholder' || id === '_placeholder_') {
+      router.replace('/trainers');
+    }
+  }, [id, router]);
+
+  useEffect(() => {
+    if (id === '_placeholder' || id === '_placeholder_') return;
+
     async function loadTrainer() {
       try {
         setIsLoading(true);
@@ -83,21 +93,20 @@ export default function TrainerDetailPage() {
 
   if (error || !trainer) {
     return (
-      <div className="space-y-4 pb-20">
-        <Button variant="ghost" size="sm" asChild>
+      <div className="flex flex-col items-center justify-center min-h-[50vh] text-center pb-20">
+        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-muted">
+          <Users className="h-10 w-10 text-muted-foreground" />
+        </div>
+        <h2 className="text-xl font-bold mb-2">{isAr ? 'المدرب غير متاح' : 'Trainer Unavailable'}</h2>
+        <p className="text-muted-foreground max-w-xs mb-6">
+          {isAr ? 'بروفايل المدرب ده مش متاح حالياً. ممكن تتصفح المدربين المتاحين.' : 'This trainer profile is currently unavailable. Browse our available trainers.'}
+        </p>
+        <Button className="btn-primary" asChild>
           <Link href="/trainers">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            {t.common.back}
+            {isAr ? 'تصفح المدربين' : 'Browse Trainers'}
           </Link>
         </Button>
-        <div className="flex flex-col items-center justify-center min-h-[40vh] text-center">
-          <AlertCircle className="h-12 w-12 text-destructive mb-4" />
-          <h2 className="text-xl font-semibold mb-2">{isAr ? 'المدرب مش موجود' : 'Trainer not found'}</h2>
-          <p className="text-muted-foreground">{error || (isAr ? 'بروفايل المدرب ده مش متاح' : 'This trainer profile is not available')}</p>
-          <Button variant="outline" className="mt-4" asChild>
-            <Link href="/trainers">{t.trainers.findTrainer}</Link>
-          </Button>
-        </div>
       </div>
     );
   }

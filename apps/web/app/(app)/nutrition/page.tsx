@@ -87,6 +87,7 @@ export default function NutritionPage() {
   const debouncedSearch = useDebounce(searchQuery, 300);
   const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
   const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
+  const [logDialogOpen, setLogDialogOpen] = useState(false);
   const [waterGlasses, setWaterGlasses] = useState(6);
   const { data: dailyData, isLoading: dailyLoading, error: dailyError } = useDailyNutrition();
   const { data: searchResults, isLoading: searchLoading } = useFoodSearch(debouncedSearch);
@@ -197,7 +198,7 @@ export default function NutritionPage() {
           <h1 className="text-3xl font-bold">{t.nutrition.title}</h1>
           <p className="text-muted-foreground">{isAr ? 'تابع أكلك اليومي' : 'Track your daily intake'}</p>
         </div>
-        <Dialog>
+        <Dialog open={logDialogOpen} onOpenChange={(open) => { setLogDialogOpen(open); if (!open) setSelectedMealType(null); }}>
           <DialogTrigger asChild>
             <Button className="btn-primary">
               <Plus className="mr-2 h-4 w-4" />
@@ -266,23 +267,25 @@ export default function NutritionPage() {
                         <div className="flex items-center justify-center py-4">
                           <Loader2 className="h-5 w-5 animate-spin text-primary" />
                         </div>
-                      ) : searchResults && searchResults.length > 0 ? (
+                      ) : (() => {
+                        const foods = Array.isArray(searchResults) ? searchResults : searchResults?.foods || [];
+                        return foods.length > 0 ? (
                         <div className="max-h-48 space-y-2 overflow-y-auto">
-                          {searchResults.map((food) => (
+                          {foods.map((food: any) => (
                             <div
                               key={food.id}
                               className="flex cursor-pointer items-center justify-between rounded-xl border border-border/50 p-3 hover:bg-primary/5 hover:border-primary/30 transition-all"
                             >
                               <div>
-                                <span className="font-medium">{food.name}</span>
-                                {food.brand && (
+                                <span className="font-medium">{food.nameEn || food.name}</span>
+                                {(food.brandEn || food.brand) && (
                                   <span className="ml-2 text-xs text-muted-foreground">
-                                    ({food.brand})
+                                    ({food.brandEn || food.brand})
                                   </span>
                                 )}
                               </div>
                               <Badge variant="outline" className="text-xs">
-                                {food.calories} kcal
+                                {Math.round(food.calories)} kcal
                               </Badge>
                             </div>
                           ))}
@@ -291,7 +294,8 @@ export default function NutritionPage() {
                         <p className="py-4 text-center text-sm text-muted-foreground">
                           {t.nutrition.noResults}
                         </p>
-                      )}
+                      );
+                      })()}
                     </div>
                   )}
 
@@ -562,8 +566,6 @@ export default function NutritionPage() {
                         </div>
                         <div className="flex items-center gap-3">
                           {meal.notLogged ? (
-                            <Dialog>
-                              <DialogTrigger asChild>
                                 <Button
                                   variant="outline"
                                   size="sm"
@@ -571,13 +573,12 @@ export default function NutritionPage() {
                                   onClick={(e) => {
                                     e.stopPropagation();
                                     setSelectedMealType(meal.type);
+                                    setLogDialogOpen(true);
                                   }}
                                 >
                                   <Plus className="mr-1 h-4 w-4" />
                                   {isAr ? 'سجّل' : 'Log'}
                                 </Button>
-                              </DialogTrigger>
-                            </Dialog>
                           ) : (
                             <>
                               <div className="text-right">

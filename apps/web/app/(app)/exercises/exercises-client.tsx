@@ -95,6 +95,28 @@ const equipmentToEnum: Record<string, string> = {
 
 const difficultyLevels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
 
+// Map frontend category IDs → backend ExerciseCategory enum
+const categoryToEnum: Record<string, string> = {
+  gym: 'STRENGTH',
+  crossfit: 'CROSSFIT',
+  boxing: 'MARTIAL_ARTS',
+  kickboxing: 'MARTIAL_ARTS',
+  bjj: 'MARTIAL_ARTS',
+  wrestling: 'MARTIAL_ARTS',
+  mma: 'MARTIAL_ARTS',
+  yoga: 'YOGA',
+  swimming: 'CARDIO',
+  olympic: 'OLYMPIC',
+  calisthenics: 'CALISTHENICS',
+  mobility: 'MOBILITY',
+  sport: 'PLYOMETRIC',
+  preworkout: 'CARDIO',
+};
+
+/** Strip markdown bold markers and clean up text for display */
+const stripMarkdown = (text: string): string =>
+  text.replace(/\*\*(.*?)\*\*/g, '$1').replace(/__(.*?)__/g, '$1').replace(/\*(.*?)\*/g, '$1');
+
 const getMuscleLabel = (value: string) => {
   const muscle = muscleGroups.find(m => m.value === value);
   return muscle?.label || value;
@@ -273,7 +295,8 @@ function ExercisesPageContent() {
       setIsLoading(true);
       try {
         const params: Record<string, any> = {
-          query: (selectedCategory ? selectedCategory.searchTags[0] : searchQuery) || undefined,
+          query: selectedCategory ? undefined : searchQuery || undefined,
+          category: selectedCategory ? categoryToEnum[selectedCategory.id] : undefined,
           primaryMuscle: muscleFilter !== 'All' ? muscleFilter : undefined,
           equipment: equipmentFilter !== 'All' ? [equipmentToEnum[equipmentFilter]] : undefined,
           difficulty: difficultyFilter !== 'All' ? difficultyFilter.toUpperCase() : undefined,
@@ -606,7 +629,7 @@ function ExercisesPageContent() {
                   <div>
                     <h4 className="mb-2 font-semibold">{t.exercises.details}</h4>
                     <p className="text-muted-foreground">
-                      {selectedExercise.descriptionEn || (selectedExercise as any).description}
+                      {stripMarkdown(selectedExercise.descriptionEn || (selectedExercise as any).description || '')}
                     </p>
                   </div>
                 )}
@@ -621,7 +644,7 @@ function ExercisesPageContent() {
                           <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-medium text-primary">
                             {index + 1}
                           </span>
-                          <span className="text-muted-foreground">{instruction}</span>
+                          <span className="text-muted-foreground">{stripMarkdown(instruction)}</span>
                         </li>
                       ))}
                     </ol>
@@ -636,7 +659,7 @@ function ExercisesPageContent() {
                       {(selectedExercise.tipsEn || (selectedExercise as any).tips || []).map((tip: string, index: number) => (
                         <li key={index} className="flex items-start gap-2 text-muted-foreground">
                           <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                          {tip}
+                          {stripMarkdown(tip)}
                         </li>
                       ))}
                     </ul>

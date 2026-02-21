@@ -8,6 +8,7 @@ import {
   Dumbbell,
   Utensils,
   BarChart3,
+  MessageSquare,
   User,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -39,8 +40,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   const navLinks = [
     { href: '/dashboard', icon: Home, label: t.layout.home },
-    { href: '/progress', icon: BarChart3, label: t.layout.progress },
     { href: '/workouts', icon: Dumbbell, label: t.layout.workouts },
+    { href: '/chat', icon: MessageSquare, label: t.layout.coach },
     { href: '/nutrition', icon: Utensils, label: t.layout.nutrition },
     { href: '/profile', icon: User, label: t.layout.profile },
   ];
@@ -59,7 +60,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         {/* Nav Links */}
         <nav className="flex-1 px-3 py-4 space-y-1">
-          {navLinks.map((link) => {
+          {[...navLinks, { href: '/progress', icon: BarChart3, label: t.layout.progress }].map((link) => {
             const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
             return (
               <Link

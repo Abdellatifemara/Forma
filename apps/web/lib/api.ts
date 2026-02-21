@@ -356,7 +356,7 @@ export const exercisesApi = {
 // Nutrition API
 export const nutritionApi = {
   searchFoods: (query: string) =>
-    api.get<Food[]>('/nutrition/foods', { query }),
+    api.get<{ foods: Food[]; total: number }>('/nutrition/foods', { query }),
 
   logMeal: (data: MealLogData) => api.post<MealLog>('/nutrition/meals', data),
 

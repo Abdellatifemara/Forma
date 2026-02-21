@@ -111,8 +111,17 @@ export default function ActiveWorkoutPage() {
   const [showFinishDialog, setShowFinishDialog] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
 
+  // Redirect placeholder routes (static export artifact)
+  useEffect(() => {
+    if (workoutId === '_placeholder' || workoutId === '_placeholder_') {
+      router.replace('/workouts');
+    }
+  }, [workoutId, router]);
+
   // Fetch workout data and start session
   useEffect(() => {
+    if (workoutId === '_placeholder' || workoutId === '_placeholder_') return;
+
     async function initializeWorkout() {
       setIsLoading(true);
       setError(null);
@@ -426,13 +435,15 @@ export default function ActiveWorkoutPage() {
   if (error || !workout) {
     return (
       <div className="flex h-[60vh] items-center justify-center">
-        <div className="text-center">
-          <AlertCircle className="h-12 w-12 text-destructive mx-auto mb-4" />
-          <p className="text-lg font-medium mb-2">{isAr ? 'فشل تحميل التمرين' : 'Failed to load workout'}</p>
-          <p className="text-muted-foreground mb-4">{error || (isAr ? 'التمرين مش موجود' : 'Workout not found')}</p>
-          <Button onClick={() => router.push('/workouts')}>
+        <div className="text-center max-w-sm mx-auto">
+          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-muted">
+            <Dumbbell className="h-10 w-10 text-muted-foreground" />
+          </div>
+          <h2 className="text-xl font-bold mb-2">{isAr ? 'التمرين غير متاح' : 'Workout Unavailable'}</h2>
+          <p className="text-muted-foreground mb-6">{isAr ? 'التمرين ده مش موجود أو اتحذف. اختار تمرين من صفحة التمارين.' : 'This workout doesn\'t exist or has been removed. Choose a workout from the workouts page.'}</p>
+          <Button className="btn-primary" onClick={() => router.push('/workouts')}>
             <ArrowLeft className="mr-2 h-4 w-4" />
-            {isAr ? 'رجوع للتمارين' : 'Back to Workouts'}
+            {isAr ? 'اختار تمرين' : 'Browse Workouts'}
           </Button>
         </div>
       </div>
