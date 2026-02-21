@@ -787,7 +787,7 @@ export const TIER_COMPARISON_HIGHLIGHTS = {
     'Cancel anytime',
   ],
   PREMIUM: [
-    'Everything in Free, plus:',
+    'All Trial features, plus:',
     'Unlimited food logging & tracking',
     'Custom workout plans (10)',
     'Advanced analytics & charts',
@@ -821,7 +821,7 @@ export const TIER_COMPARISON_HIGHLIGHTS_AR = {
     'إلغاء في أي وقت',
   ],
   PREMIUM: [
-    'كل شيء في المجاني، بالإضافة إلى:',
+    'كل مميزات التجربة، بالإضافة إلى:',
     'تسجيل طعام وتتبع غير محدود',
     'خطط تمارين مخصصة (10)',
     'تحليلات ورسوم بيانية متقدمة',

@@ -1486,6 +1486,17 @@ interface FastingProfile {
 }
 
 // Types
+interface UserSubscription {
+  id: string;
+  tier: 'FREE' | 'PREMIUM' | 'PREMIUM_PLUS';
+  status: 'ACTIVE' | 'CANCELLED' | 'EXPIRED' | 'TRIAL';
+  priceEGP?: number;
+  billingCycle?: string;
+  startDate?: string;
+  endDate?: string;
+  trialEndDate?: string;
+}
+
 interface User {
   id: string;
   email: string;
@@ -1495,7 +1506,7 @@ interface User {
   avatarUrl?: string;
   avatar?: string; // Alias for avatarUrl
   role: 'USER' | 'TRAINER' | 'ADMIN' | 'user' | 'trainer' | 'admin';
-  subscription?: 'free' | 'pro' | 'elite';
+  subscription?: UserSubscription | null;
   createdAt: string;
   displayName?: string;
   language?: string;

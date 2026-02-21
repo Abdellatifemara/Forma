@@ -74,7 +74,7 @@ export default function PricingPage() {
     setExpandedCategories(newSet);
   };
 
-  const tiers: SubscriptionTier[] = ['FREE', 'PREMIUM', 'PREMIUM_PLUS'];
+  const tiers: SubscriptionTier[] = ['PREMIUM', 'PREMIUM_PLUS'];
 
   const getPrice = (tier: SubscriptionTier) => {
     const pricing = SUBSCRIPTION_TIERS[tier].pricing;
@@ -141,8 +141,8 @@ export default function PricingPage() {
     <div className="min-h-screen bg-background">
       {/* Background effects */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-500/10 rounded-full blur-[128px]" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/10 rounded-full blur-[128px]" />
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/10 rounded-full blur-[128px]" />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-forma-navy/10 rounded-full blur-[128px]" />
       </div>
 
       <div className="relative z-10 container py-12">
@@ -200,7 +200,7 @@ export default function PricingPage() {
         </div>
 
         {/* Pricing cards header */}
-        <div className="grid grid-cols-4 gap-4 mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-lg py-4 border-b border-border/50">
+        <div className="grid grid-cols-3 gap-4 mb-8 sticky top-0 z-20 bg-background/80 backdrop-blur-lg py-4 border-b border-border/50">
           <div className="text-sm text-muted-foreground font-medium">
             {isAr ? 'المميزات' : 'Features'}
           </div>
@@ -214,13 +214,13 @@ export default function PricingPage() {
                 key={tier}
                 className={cn(
                   'text-center p-4 rounded-xl',
-                  isPremium && 'bg-blue-500/10 border border-blue-500/30',
-                  isPremiumPlus && 'bg-purple-500/10 border border-purple-500/30'
+                  isPremium && 'bg-primary/10 border border-primary/30',
+                  isPremiumPlus && 'bg-forma-navy/10 border border-forma-navy/30'
                 )}
               >
                 <div className="flex items-center justify-center gap-2 mb-2">
-                  {isPremium && <Zap className="h-5 w-5 text-blue-500" />}
-                  {isPremiumPlus && <Crown className="h-5 w-5 text-purple-500" />}
+                  {isPremium && <Zap className="h-5 w-5 text-primary" />}
+                  {isPremiumPlus && <Crown className="h-5 w-5 text-forma-navy dark:text-forma-navy-light" />}
                   <h3 className="font-bold text-lg">{tierInfo.name}</h3>
                 </div>
                 <div className="mb-3">
@@ -239,16 +239,16 @@ export default function PricingPage() {
                   size="sm"
                   className={cn(
                     'w-full',
-                    isPremium && 'bg-gradient-to-r from-blue-500 to-blue-600 text-white',
-                    isPremiumPlus && 'bg-gradient-to-r from-purple-500 to-pink-500 text-white'
+                    isPremium && 'bg-gradient-to-r from-forma-orange to-forma-orange-dark text-white',
+                    isPremiumPlus && 'bg-gradient-to-r from-forma-navy to-forma-navy-light text-white'
                   )}
                   variant={!isPremium && !isPremiumPlus ? 'outline' : 'default'}
                   asChild
                 >
                   <Link href={`/signup?plan=${tier.toLowerCase()}`}>
-                    {tier === 'FREE'
-                      ? (isAr ? 'ابدأ مجاناً' : 'Start Free')
-                      : (isAr ? 'ابدأ دلوقتي' : 'Get Started')}
+                    {isPremium
+                      ? (isAr ? 'ابدأ تجربة 7 أيام' : 'Start 7-Day Trial')
+                      : (isAr ? 'انضم لـ VIP' : 'Join VIP')}
                   </Link>
                 </Button>
               </div>
@@ -302,7 +302,7 @@ export default function PricingPage() {
                       <div
                         key={feature.id}
                         className={cn(
-                          'grid grid-cols-4 gap-4 p-4 items-center',
+                          'grid grid-cols-3 gap-4 p-4 items-center',
                           idx !== features.length - 1 && 'border-b border-border/30'
                         )}
                       >
@@ -326,8 +326,8 @@ export default function PricingPage() {
                                   <Check
                                     className={cn(
                                       'h-5 w-5',
-                                      isPremiumPlus && 'text-purple-500',
-                                      isPremium && 'text-blue-500',
+                                      isPremiumPlus && 'text-forma-navy dark:text-forma-navy-light',
+                                      isPremium && 'text-primary',
                                       !isPremium && !isPremiumPlus && 'text-green-500'
                                     )}
                                   />
@@ -360,20 +360,17 @@ export default function PricingPage() {
             </h2>
             <p className="text-muted-foreground mb-6">
               {isAr
-                ? 'انضم لآلاف المصريين...'
-                : 'Join thousands of Egyptians already achieving their fitness goals with Forma.'}
+                ? 'ابدأ تجربتك المجانية لمدة 7 أيام. بدون عقود، إلغاء في أي وقت.'
+                : 'Start your 7-day free trial. No contracts, cancel anytime.'}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/signup">{isAr ? 'ابدأ مجاناً' : 'Start Free'}</Link>
-              </Button>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-blue-500 to-blue-600 text-white"
+                className="bg-gradient-to-r from-forma-orange to-forma-orange-dark text-white"
                 asChild
               >
                 <Link href="/signup?plan=premium">
-                  {isAr ? 'اشترك في بريميوم' : 'Get Premium'}
+                  {isAr ? 'ابدأ تجربة 7 أيام' : 'Start 7-Day Trial'}
                 </Link>
               </Button>
             </div>

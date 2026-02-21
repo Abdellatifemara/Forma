@@ -327,7 +327,7 @@ export default function SettingsPage() {
                   <CardDescription>{t.settings.subscription.subtitle}</CardDescription>
                 </div>
                 <Badge variant="forma" className="text-sm">
-                  {(user?.subscription || 'FREE').toUpperCase()}
+                  {user?.subscription?.tier || 'FREE'}
                 </Badge>
               </div>
             </CardHeader>
@@ -337,18 +337,21 @@ export default function SettingsPage() {
                   <CreditCard className="h-5 w-5 text-muted-foreground" />
                   <div>
                     <p className="font-medium">
-                      {user?.subscription === 'pro' ? t.settings.subscription.proPlan :
-                       user?.subscription === 'elite' ? t.settings.subscription.elitePlan : t.settings.subscription.freePlan}
+                      {user?.subscription?.tier === 'PREMIUM' ? t.settings.subscription.proPlan
+                        : user?.subscription?.tier === 'PREMIUM_PLUS' ? t.settings.subscription.elitePlan
+                        : t.settings.subscription.freePlan}
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      {user?.subscription === 'free' || !user?.subscription
+                      {(!user?.subscription?.tier || user.subscription.tier === 'FREE')
                         ? t.settings.subscription.upgradePrompt
                         : t.settings.subscription.activeSubscription}
                     </p>
                   </div>
                 </div>
                 <Button variant="outline" size="sm">
-                  {user?.subscription === 'free' || !user?.subscription ? t.settings.subscription.upgrade : t.settings.subscription.manage}
+                  {(!user?.subscription?.tier || user.subscription.tier === 'FREE')
+                    ? t.settings.subscription.upgrade
+                    : t.settings.subscription.manage}
                 </Button>
               </div>
 

@@ -96,11 +96,9 @@ export default function SubscriptionPage() {
   const isAr = language === 'ar';
   const plans = PLANS[isAr ? 'ar' : 'en'];
 
-  // Map backend subscription values to display tiers
+  // Extract tier from subscription object
   const subValue = userData?.user?.subscription;
-  const currentTier = subValue === 'elite' ? 'PREMIUM_PLUS'
-    : subValue === 'pro' ? 'PREMIUM'
-    : 'FREE';
+  const currentTier = subValue?.tier || 'FREE';
 
   const tierLabel = {
     FREE: isAr ? 'تجربة مجانية' : 'Free Trial',

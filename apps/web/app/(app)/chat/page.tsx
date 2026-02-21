@@ -320,7 +320,7 @@ export default function ChatPage() {
   useEffect(() => {
     aiApi.getChatUsage()
       .then(stats => { setTier(stats.tier || 'FREE'); setLoading(false); })
-      .catch(() => { setTier('PREMIUM'); setLoading(false); });
+      .catch(() => { setTier('FREE'); setLoading(false); });
   }, []);
 
   if (loading) {

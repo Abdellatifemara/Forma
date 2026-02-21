@@ -11,6 +11,8 @@ import {
   Flame,
   Heart,
   Activity,
+  Sparkles,
+  ArrowRight,
 } from 'lucide-react';
 import { useLanguage } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
@@ -108,6 +110,27 @@ export default function DashboardPage() {
           </Avatar>
         </Link>
       </div>
+
+      {/* Upgrade Banner — for free/trial users */}
+      {(!user?.subscription || (typeof user.subscription === 'object' && (!user.subscription.tier || user.subscription.tier === 'FREE'))) && (
+        <Link
+          href="/profile/subscription"
+          className="flex items-center gap-3 rounded-2xl bg-gradient-to-r from-forma-orange/10 to-amber-500/10 border border-forma-orange/20 p-4 transition-colors hover:bg-forma-orange/15"
+        >
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-forma-orange/20">
+            <Sparkles className="h-5 w-5 text-forma-orange" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-semibold">
+              {isRTL ? 'رقّي لبريميوم' : 'Upgrade to Premium'}
+            </p>
+            <p className="text-xs text-muted-foreground">
+              {isRTL ? 'كوتش ذكي، برامج تمارين، وأكتر!' : 'AI coach, workout programs, and more!'}
+            </p>
+          </div>
+          <ArrowRight className={cn('h-4 w-4 text-forma-orange shrink-0', isRTL && 'rotate-180')} />
+        </Link>
+      )}
 
       {/* Search Bar */}
       <div className="relative">

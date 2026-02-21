@@ -26,21 +26,37 @@ export function useSubscription() {
     staleTime: 5 * 60 * 1000, // 5 minutes
   });
 
-  // Map old subscription format to new, or default to FREE
-  const mapTier = (sub: string | undefined): SubscriptionTier => {
+  // Extract tier from subscription object or string (backward compat)
+  const mapTier = (sub: any): SubscriptionTier => {
     if (!sub) return 'FREE';
-    const tierMap: Record<string, SubscriptionTier> = {
-      'free': 'FREE',
-      'pro': 'PREMIUM',
-      'elite': 'PREMIUM_PLUS',
-      'FREE': 'FREE',
-      'PREMIUM': 'PREMIUM',
-      'PREMIUM_PLUS': 'PREMIUM_PLUS',
-    };
-    return tierMap[sub] || 'FREE';
+
+    // If subscription is an object with .tier (from API)
+    if (typeof sub === 'object' && sub.tier) {
+      const tierMap: Record<string, SubscriptionTier> = {
+        'FREE': 'FREE',
+        'PREMIUM': 'PREMIUM',
+        'PREMIUM_PLUS': 'PREMIUM_PLUS',
+      };
+      return tierMap[sub.tier] || 'FREE';
+    }
+
+    // Legacy string format fallback
+    if (typeof sub === 'string') {
+      const tierMap: Record<string, SubscriptionTier> = {
+        'free': 'FREE',
+        'pro': 'PREMIUM',
+        'elite': 'PREMIUM_PLUS',
+        'FREE': 'FREE',
+        'PREMIUM': 'PREMIUM',
+        'PREMIUM_PLUS': 'PREMIUM_PLUS',
+      };
+      return tierMap[sub] || 'FREE';
+    }
+
+    return 'FREE';
   };
 
-  const tier = mapTier(user?.subscription as string | undefined);
+  const tier = mapTier(user?.subscription);
   const tierInfo = SUBSCRIPTION_TIERS[tier];
   const subscription: UserSubscription = {
     tier,

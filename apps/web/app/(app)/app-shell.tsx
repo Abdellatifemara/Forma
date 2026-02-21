@@ -49,14 +49,14 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     <div className={cn('min-h-screen bg-background', isRTL && 'font-cairo')}>
       {/* Main Content — no top header, Flexcore style */}
       <main className="pb-20">
-        <div className="mx-auto max-w-lg px-4 py-4">
+        <div className="mx-auto max-w-lg md:max-w-3xl lg:max-w-5xl px-4 py-4">
           {children}
         </div>
       </main>
 
       {/* Bottom Navigation — Flexcore style */}
       <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-border/50 bg-background/95 backdrop-blur-sm safe-bottom">
-        <div className="mx-auto flex max-w-lg items-center justify-around px-2 py-2">
+        <div className="mx-auto flex max-w-lg md:max-w-3xl lg:max-w-5xl items-center justify-around px-2 py-2">
           {navLinks.map((link) => {
             const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
             return (

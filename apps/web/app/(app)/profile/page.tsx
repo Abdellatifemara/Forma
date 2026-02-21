@@ -37,7 +37,7 @@ function getMenuItems(isAr: boolean) {
       section: isAr ? 'الحساب' : 'Account',
       items: [
         { icon: User, label: isAr ? 'تعديل الملف' : 'Edit Profile', href: '/profile/edit' },
-        { icon: CreditCard, label: isAr ? 'الاشتراك' : 'Subscription', href: '/profile/subscription', badge: isAr ? 'برو' : 'Pro' },
+        { icon: CreditCard, label: isAr ? 'الاشتراك' : 'Subscription', href: '/profile/subscription' },
         { icon: Lock, label: isAr ? 'الخصوصية والأمان' : 'Privacy & Security', href: '/profile/security' },
       ],
     },
@@ -220,10 +220,19 @@ export default function ProfilePage() {
             </Avatar>
             <div className="flex-1">
               <div className="flex items-center gap-2">
-                <h1 className="text-xl font-bold">{user?.name || (isAr ? 'مستخدم' : 'User')}</h1>
-                {user?.subscription && user.subscription !== 'free' && (
-                  <Badge variant="forma">{user.subscription === 'pro' ? (isAr ? 'برو' : 'Pro') : (isAr ? 'إيليت' : 'Elite')}</Badge>
-                )}
+                <h1 className="text-xl font-bold">
+                  {user?.name || (user?.firstName ? `${user.firstName} ${user.lastName || ''}`.trim() : (isAr ? 'مستخدم' : 'User'))}
+                </h1>
+                {(() => {
+                  const sub = user?.subscription;
+                  const subTier = sub ? (typeof sub === 'object' ? sub.tier : String(sub)) : null;
+                  if (!subTier || subTier === 'FREE') return null;
+                  return (
+                    <Badge variant="forma">
+                      {subTier === 'PREMIUM' ? (isAr ? 'بريميوم' : 'Premium') : subTier === 'PREMIUM_PLUS' ? (isAr ? 'بريميوم+' : 'Premium+') : subTier}
+                    </Badge>
+                  );
+                })()}
               </div>
               <p className="text-muted-foreground">{user?.email || ''}</p>
               <p className="mt-1 text-sm text-muted-foreground">{formatMemberSince()}</p>
@@ -321,7 +330,7 @@ export default function ProfilePage() {
                     <span>{item.label}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    {'badge' in item && item.badge && <Badge variant="forma">{item.badge}</Badge>}
+                    {'badge' in item && (item as any).badge && <Badge variant="forma">{(item as any).badge as string}</Badge>}
                     <ChevronRight className="h-4 w-4 text-muted-foreground" />
                   </div>
                 </>
