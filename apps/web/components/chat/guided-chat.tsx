@@ -410,9 +410,27 @@ export default function GuidedChat() {
   const isAr = language === 'ar';
   const router = useRouter();
 
-  const [currentStateId, setCurrentStateId] = useState(INITIAL_STATE);
-  const [history, setHistory] = useState<ChatEntry[]>([]);
-  const [stateStack, setStateStack] = useState<string[]>([]);
+  // Restore session from sessionStorage (persists across in-app navigation)
+  const restored = useRef(false);
+  const [currentStateId, setCurrentStateId] = useState(() => {
+    if (typeof window === 'undefined') return INITIAL_STATE;
+    try { return sessionStorage.getItem('forma-chat-state') || INITIAL_STATE; } catch { return INITIAL_STATE; }
+  });
+  const [history, setHistory] = useState<ChatEntry[]>(() => {
+    if (typeof window === 'undefined') return [];
+    try {
+      const saved = sessionStorage.getItem('forma-chat-history');
+      if (saved) { restored.current = true; return JSON.parse(saved); }
+    } catch {}
+    return [];
+  });
+  const [stateStack, setStateStack] = useState<string[]>(() => {
+    if (typeof window === 'undefined') return [];
+    try {
+      const saved = sessionStorage.getItem('forma-chat-stack');
+      return saved ? JSON.parse(saved) : [];
+    } catch { return []; }
+  });
   const [pendingAction, setPendingAction] = useState<{ action: StateAction; nextState: string } | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [userTier, setUserTier] = useState<'TRIAL' | 'PREMIUM' | 'PREMIUM_PLUS'>('PREMIUM');
@@ -423,8 +441,17 @@ export default function GuidedChat() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Time-aware welcome message on first load
-  const [welcomed, setWelcomed] = useState(false);
+  // Time-aware welcome message on first load (only if no restored session)
+  const [welcomed, setWelcomed] = useState(() => restored.current);
+
+  // Persist chat state to sessionStorage on every change
+  useEffect(() => {
+    try {
+      sessionStorage.setItem('forma-chat-state', currentStateId);
+      sessionStorage.setItem('forma-chat-history', JSON.stringify(history.slice(-50))); // keep last 50 messages
+      sessionStorage.setItem('forma-chat-stack', JSON.stringify(stateStack.slice(-20)));
+    } catch {}
+  }, [currentStateId, history, stateStack]);
 
   // Fetch user subscription tier
   useEffect(() => {
@@ -434,7 +461,7 @@ export default function GuidedChat() {
     }).catch(() => {}); // Default to PREMIUM on error
   }, []);
 
-  // Show time-aware welcome on mount
+  // Show time-aware welcome on mount (only for new sessions)
   useEffect(() => {
     if (welcomed) return;
     setWelcomed(true);
@@ -574,6 +601,11 @@ export default function GuidedChat() {
     setStateStack([]);
     setPendingAction(null);
     setHistory([]);
+    try {
+      sessionStorage.removeItem('forma-chat-state');
+      sessionStorage.removeItem('forma-chat-history');
+      sessionStorage.removeItem('forma-chat-stack');
+    } catch {}
   }, []);
 
   // Smart text input — match natural language to states
