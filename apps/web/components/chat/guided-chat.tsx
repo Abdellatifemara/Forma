@@ -11,7 +11,9 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/lib/i18n';
 import { getState, INITIAL_STATE } from '@/lib/chat';
 import type { ChatState, ChatOption, StateAction, GptEnhancedConfig } from '@/lib/chat/types';
+import { matchIntent, getSuggestions } from '@/lib/chat/intent-matcher';
 import { useRouter } from 'next/navigation';
+import { Send } from 'lucide-react';
 import {
   api,
   aiApi,
@@ -363,8 +365,11 @@ export default function GuidedChat() {
   const [isLoading, setIsLoading] = useState(false);
   const [userTier, setUserTier] = useState<'TRIAL' | 'PREMIUM' | 'PREMIUM_PLUS'>('PREMIUM');
 
+  const [textInput, setTextInput] = useState('');
+  const [suggestions, setSuggestions] = useState<Array<{ label: string; labelAr: string; stateId: string }>>([]);
   const bottomRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   // Fetch user subscription tier
   useEffect(() => {
@@ -504,6 +509,75 @@ export default function GuidedChat() {
     setPendingAction(null);
     setHistory([]);
   }, []);
+
+  // Smart text input — match natural language to states
+  const handleTextSubmit = useCallback(() => {
+    const text = textInput.trim();
+    if (!text) return;
+
+    // Add user message to chat
+    setHistory(prev => [...prev, {
+      id: `user-${Date.now()}`, type: 'user', text,
+      timestamp: Date.now(),
+    }]);
+    setTextInput('');
+    setSuggestions([]);
+
+    // Match intent
+    const match = matchIntent(text, currentStateId);
+
+    if (match) {
+      // Handle special __BACK__ state
+      if (match.stateId === '__BACK__') {
+        handleBack();
+        return;
+      }
+
+      // Show bot response
+      if (match.response) {
+        const msg = isAr ? match.response.ar : match.response.en;
+        setTimeout(() => {
+          setHistory(prev => [...prev, {
+            id: `bot-${Date.now()}`, type: 'bot', text: msg,
+            stateId: match.stateId, domain: 'root', timestamp: Date.now(),
+          }]);
+        }, 300);
+      }
+
+      // Navigate if there's a route
+      if (match.action?.route) {
+        setTimeout(() => router.push(match.action!.route), 600);
+      }
+
+      // Transition to matched state (with safety check)
+      try {
+        getState(match.stateId); // verify it exists
+        setTimeout(() => transitionTo(match.stateId), 400);
+      } catch {
+        // State doesn't exist, just show the response
+      }
+    } else {
+      // No match — show helpful message
+      setTimeout(() => {
+        setHistory(prev => [...prev, {
+          id: `bot-${Date.now()}`, type: 'bot',
+          text: isAr
+            ? 'مش فاهم تمام 😅 جرب اختار من الخيارات تحت، أو قولي حاجة زي "ابدأ تمرين" أو "غير اسمي"'
+            : "I didn't quite get that 😅 Try picking from the options below, or say something like \"start workout\" or \"change my name\"",
+          stateId: currentStateId, domain: 'root', timestamp: Date.now(),
+        }]);
+      }, 300);
+    }
+  }, [textInput, currentStateId, isAr, router, transitionTo, handleBack]);
+
+  // Update suggestions as user types
+  useEffect(() => {
+    if (textInput.trim().length >= 2) {
+      setSuggestions(getSuggestions(textInput, 3));
+    } else {
+      setSuggestions([]);
+    }
+  }, [textInput]);
 
   if (!currentState) return null;
 
@@ -744,6 +818,69 @@ export default function GuidedChat() {
           </div>
         </div>
       )}
+
+      {/* ─── Smart Text Input ─── */}
+      <div className="border-t border-border/60 bg-white dark:bg-card">
+        {/* Autocomplete suggestions */}
+        {suggestions.length > 0 && (
+          <div className="px-3 pt-2 flex flex-wrap gap-1.5">
+            {suggestions.map((s, i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  setTextInput('');
+                  setSuggestions([]);
+                  // Simulate typing and submitting
+                  setHistory(prev => [...prev, {
+                    id: `user-${Date.now()}`, type: 'user',
+                    text: isAr ? s.labelAr : s.label,
+                    timestamp: Date.now(),
+                  }]);
+                  try {
+                    getState(s.stateId);
+                    const match = matchIntent(isAr ? s.labelAr : s.label, currentStateId);
+                    if (match?.response) {
+                      setTimeout(() => {
+                        setHistory(prev => [...prev, {
+                          id: `bot-${Date.now()}`, type: 'bot',
+                          text: isAr ? match.response!.ar : match.response!.en,
+                          stateId: s.stateId, domain: 'root', timestamp: Date.now(),
+                        }]);
+                      }, 200);
+                    }
+                    if (match?.action?.route) {
+                      setTimeout(() => router.push(match.action!.route), 500);
+                    }
+                    setTimeout(() => transitionTo(s.stateId), 300);
+                  } catch {}
+                }}
+                className="text-[11px] px-2.5 py-1 rounded-full bg-primary/8 text-primary hover:bg-primary/15 transition-colors"
+              >
+                {isAr ? s.labelAr : s.label}
+              </button>
+            ))}
+          </div>
+        )}
+        <div className="flex items-center gap-2 p-3">
+          <input
+            ref={inputRef}
+            type="text"
+            value={textInput}
+            onChange={(e) => setTextInput(e.target.value)}
+            onKeyDown={(e) => { if (e.key === 'Enter') handleTextSubmit(); }}
+            placeholder={isAr ? 'اكتب أي حاجة... مثلاً "غير اسمي"' : 'Type anything... e.g. "change my name"'}
+            className="flex-1 bg-muted/50 border border-border/50 rounded-xl px-3.5 py-2.5 text-[13px] placeholder:text-muted-foreground/60 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary/50 transition-all"
+            dir={isAr ? 'rtl' : 'ltr'}
+          />
+          <button
+            onClick={handleTextSubmit}
+            disabled={!textInput.trim() || isLoading}
+            className="h-10 w-10 rounded-xl bg-primary text-white flex items-center justify-center hover:bg-primary/90 disabled:opacity-40 disabled:cursor-not-allowed transition-all active:scale-95"
+          >
+            <Send className={`h-4 w-4 ${isAr ? 'rotate-180' : ''}`} />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
