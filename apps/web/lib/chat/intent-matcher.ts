@@ -57,6 +57,34 @@ function fixTypos(text: string): string {
   return words.map(w => TYPO_MAP[w] || w).join(' ');
 }
 
+// ─── Noise Prefix Stripping ─────────────────────────────────
+// "show me chest exercises" → "chest exercises"
+// "I want to log my meal" → "log my meal"
+// "can you find me back workouts" → "back workouts"
+const NOISE_PREFIXES = [
+  'show me', 'give me', 'find me', 'get me', 'take me to', 'open',
+  'i want to', 'i want', 'i need to', 'i need', 'i wanna', "i'd like to", "i'd like",
+  'can you', 'could you', 'please', 'can i', 'how do i', 'how to',
+  'let me', "let's", 'lets', 'help me', 'help me with',
+  'go to', 'navigate to', 'switch to',
+  // Arabic noise
+  'عايز', 'عاوز', 'محتاج', 'ممكن', 'خليني', 'وريني', 'هاتلي',
+  // Franco
+  '3ayez', '3awez', 'me7tag', 'momken', '5aliny', 'wareny', 'hatly',
+];
+
+function stripNoise(text: string): string {
+  let result = text;
+  for (const prefix of NOISE_PREFIXES) {
+    if (result.startsWith(prefix + ' ')) {
+      result = result.slice(prefix.length).trim();
+    }
+  }
+  // Also strip trailing "please" / "من فضلك"
+  result = result.replace(/\s+please$/i, '').replace(/\s+من فضلك$/, '').replace(/\s+plz$/i, '');
+  return result;
+}
+
 // ─── Simple English Stemming ─────────────────────────────────
 // Strips common suffixes so "exercising" matches "exercise", "logged" matches "log"
 function simpleStem(word: string): string {
@@ -1262,11 +1290,13 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   let normalized = text.toLowerCase().trim();
   if (normalized.length < 2) return null;
 
-  // Apply typo corrections
+  // Apply typo corrections, then strip conversational noise
   normalized = fixTypos(normalized);
+  const stripped = stripNoise(normalized); // "show me chest exercises" → "chest exercises"
 
   // Also create a stemmed version for fallback matching
   const stemmed = stemText(normalized);
+  const stemmedStripped = stemText(stripped);
 
   // Extract numbers/units from text
   const extractedParams = extractNumbers(normalized);
@@ -1277,34 +1307,35 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   for (const rule of INTENT_RULES) {
     let score = 0;
 
-    // Check English keywords (exact substring match)
+    // Check English keywords (against both original and stripped text)
     for (const kw of rule.keywords) {
       const kwLower = kw.toLowerCase();
-      if (normalized.includes(kwLower)) {
+      if (normalized.includes(kwLower) || stripped.includes(kwLower)) {
         const kwLen = kw.split(' ').length;
         score = Math.max(score, kwLen * 2 + (rule.priority || 0));
       }
-      // Stemmed fallback: if no exact match, try stemmed versions
-      else if (stemmed.includes(simpleStem(kwLower))) {
+      // Stemmed fallback: try stemmed versions of both
+      else if (stemmed.includes(simpleStem(kwLower)) || stemmedStripped.includes(simpleStem(kwLower))) {
         const kwLen = kw.split(' ').length;
         score = Math.max(score, kwLen * 1.5 + (rule.priority || 0) * 0.8);
       }
     }
 
-    // Check Arabic keywords
+    // Check Arabic keywords (against both original and stripped)
     if (rule.keywordsAr) {
       for (const kw of rule.keywordsAr) {
-        if (normalized.includes(kw)) {
+        if (normalized.includes(kw) || stripped.includes(kw)) {
           const kwLen = kw.split(' ').length;
           score = Math.max(score, kwLen * 2 + (rule.priority || 0));
         }
       }
     }
 
-    // Check Franco-Arab / Arabizi keywords
+    // Check Franco-Arab / Arabizi keywords (against both)
     if (rule.keywordsFranco) {
       for (const kw of rule.keywordsFranco) {
-        if (normalized.includes(kw.toLowerCase())) {
+        const kwLower = kw.toLowerCase();
+        if (normalized.includes(kwLower) || stripped.includes(kwLower)) {
           const kwLen = kw.split(' ').length;
           score = Math.max(score, kwLen * 2 + (rule.priority || 0));
         }

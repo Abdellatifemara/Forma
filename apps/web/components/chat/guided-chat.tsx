@@ -610,6 +610,51 @@ export default function GuidedChat() {
         }, 300);
       }
 
+      // Auto-execute API actions when extracted params are available
+      if (match.extractedParams) {
+        const p = match.extractedParams;
+        // Auto-log weight if value extracted
+        if (p.weight && match.stateId === 'PR_LOG_WEIGHT') {
+          setIsLoading(true);
+          callApi('write', '/progress/weight', { value: p.weight, weight: p.weight })
+            .then(() => {
+              setHistory(prev => [...prev, {
+                id: `data-${Date.now()}`, type: 'data',
+                text: isAr ? `تم تسجيل وزنك: ${p.weight} كيلو` : `Weight logged: ${p.weight} kg`,
+                timestamp: Date.now(), success: true,
+              }]);
+            })
+            .catch(() => {
+              setHistory(prev => [...prev, {
+                id: `data-${Date.now()}`, type: 'data',
+                text: isAr ? 'حصل خطأ في تسجيل الوزن' : 'Failed to log weight',
+                timestamp: Date.now(), success: false,
+              }]);
+            })
+            .finally(() => setIsLoading(false));
+        }
+        // Auto-log water if value extracted
+        if (p.water_ml && match.stateId === 'NT_LOG_WATER') {
+          setIsLoading(true);
+          callApi('write', '/nutrition/log-water', { ml: p.water_ml })
+            .then(() => {
+              setHistory(prev => [...prev, {
+                id: `data-${Date.now()}`, type: 'data',
+                text: isAr ? `تم تسجيل ${p.water_ml} مل مية` : `Logged ${p.water_ml} ml water`,
+                timestamp: Date.now(), success: true,
+              }]);
+            })
+            .catch(() => {
+              setHistory(prev => [...prev, {
+                id: `data-${Date.now()}`, type: 'data',
+                text: isAr ? 'حصل خطأ في تسجيل المية' : 'Failed to log water',
+                timestamp: Date.now(), success: false,
+              }]);
+            })
+            .finally(() => setIsLoading(false));
+        }
+      }
+
       // Navigate if there's a route
       if (match.action?.route) {
         setTimeout(() => router.push(match.action!.route), 600);
