@@ -43,7 +43,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useUser, useUpdateProfile } from '@/hooks/use-user';
 import { useToast } from '@/hooks/use-toast';
-import { removeAuthCookie, uploadApi } from '@/lib/api';
+import { removeAuthCookie, uploadApi, authApi } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
 
 export default function SettingsPage() {
@@ -709,14 +709,33 @@ export default function SettingsPage() {
             </Button>
             <Button
               variant="forma"
-              disabled={!passwordForm.current || !passwordForm.new || passwordForm.new !== passwordForm.confirm}
-              onClick={() => {
-                toast({ title: t.settings.support.comingSoon, description: t.settings.support.passwordChangeSoon });
-                setShowPasswordDialog(false);
-                setPasswordForm({ current: '', new: '', confirm: '' });
+              disabled={!passwordForm.current || !passwordForm.new || passwordForm.new !== passwordForm.confirm || isSaving}
+              onClick={async () => {
+                setIsSaving(true);
+                try {
+                  await authApi.changePassword(passwordForm.current, passwordForm.new);
+                  toast({ title: t.settings.security.updatePassword, description: lang === 'ar' ? 'تم تغيير كلمة المرور بنجاح' : 'Password changed successfully' });
+                  setShowPasswordDialog(false);
+                  setPasswordForm({ current: '', new: '', confirm: '' });
+                } catch (err: any) {
+                  toast({
+                    title: lang === 'ar' ? 'خطأ' : 'Error',
+                    description: err.message || (lang === 'ar' ? 'فشل تغيير كلمة المرور' : 'Failed to change password'),
+                    variant: 'destructive',
+                  });
+                } finally {
+                  setIsSaving(false);
+                }
               }}
             >
-              {t.settings.security.updatePassword}
+              {isSaving ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  {lang === 'ar' ? 'جاري التغيير...' : 'Updating...'}
+                </>
+              ) : (
+                t.settings.security.updatePassword
+              )}
             </Button>
           </DialogFooter>
         </DialogContent>

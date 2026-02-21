@@ -15,6 +15,8 @@ model User {
   email                 String                    @unique
   phone                 String?                   @unique
   passwordHash          String?
+  passwordResetToken    String?                   @unique
+  passwordResetExpires  DateTime?
   googleId              String?                   @unique
   appleId               String?                   @unique
   firstName             String
