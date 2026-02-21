@@ -572,17 +572,11 @@ function ExercisesPageContent() {
               </DialogHeader>
 
               <div className="space-y-6">
-                {/* Video Placeholder */}
+                {/* Video section — will show exercise demo videos when available */}
                 <div className="relative aspect-video overflow-hidden rounded-lg bg-muted">
-                  <div className="flex h-full items-center justify-center">
-                    <Button
-                      className="btn-primary"
-                      size="lg"
-                      onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'فيديوهات التمارين هتكون متاحة قريباً' : 'Exercise videos will be available soon' })}
-                    >
-                      <Play className="mr-2 h-5 w-5" />
-                      {isAr ? 'شاهد العرض' : 'Watch Demo'}
-                    </Button>
+                  <div className="flex h-full flex-col items-center justify-center text-muted-foreground">
+                    <Play className="h-10 w-10 mb-2 opacity-40" />
+                    <p className="text-sm">{isAr ? 'فيديو العرض' : 'Demo Video'}</p>
                   </div>
                 </div>
 
@@ -667,12 +661,15 @@ function ExercisesPageContent() {
                   </div>
                 )}
 
-                {/* Action Button */}
+                {/* Action Button — links to workout creation */}
                 <Button
                   className="w-full btn-primary"
-                  onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'إضافة سريعة للتمرين هتكون متاحة قريباً' : 'Quick add to workout will be available soon' })}
+                  onClick={() => {
+                    setSelectedExercise(null);
+                    window.location.href = '/workouts/create';
+                  }}
                 >
-                  {isAr ? 'أضف للتمرين' : 'Add to Workout'}
+                  {isAr ? 'إنشاء تمرين' : 'Create Workout'}
                 </Button>
               </div>
             </>

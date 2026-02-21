@@ -2920,6 +2920,60 @@ export const healthMetricsApi = {
     api.delete<{ success: boolean }>(`/health-metrics/${id}`),
 };
 
+// Health Data API (WHOOP-style wearable data from /health-data endpoints)
+export interface ReadinessScore {
+  score: number;
+  status: 'optimal' | 'good' | 'moderate' | 'low' | 'rest';
+  recommendation: string;
+  recommendationAr: string;
+  factors: { name: string; value: number; impact: 'positive' | 'neutral' | 'negative'; weight: number }[];
+  suggestedWorkoutIntensity: 'high' | 'moderate' | 'light' | 'rest';
+}
+
+export interface StrainData {
+  strain: number;
+  level: 'light' | 'moderate' | 'high' | 'overreaching';
+  breakdown: { activeCalories: number; workoutCalories: number; workoutCount: number; totalVolumeKg: number };
+}
+
+export interface SleepData {
+  totalHours: number | null;
+  quality: number | null;
+  stages: {
+    deep: { hours: number; percentage: number };
+    rem: { hours: number; percentage: number };
+    light: { hours: number; percentage: number };
+    awake: { hours: number; percentage: number };
+  } | null;
+  trend: { date: string; hours: number | null; quality: number | null }[];
+}
+
+export interface ReadinessTrend {
+  daily: { date: string; score: number; status: string }[];
+  average: number | null;
+  trend: 'improving' | 'declining' | 'stable';
+  bestDay: string | null;
+  insight: string;
+  insightAr: string;
+}
+
+export const healthDataApi = {
+  getReadiness: () =>
+    api.get<ReadinessScore>('/health-data/readiness'),
+
+  getReadinessTrend: (days: number = 7) =>
+    api.get<ReadinessTrend>('/health-data/readiness/trend', { days: String(days) }),
+
+  getStrain: () =>
+    api.get<StrainData>('/health-data/strain'),
+
+  getSleep: () =>
+    api.get<SleepData>('/health-data/sleep'),
+
+  getSummary: (period: 'week' | 'month' = 'week') =>
+    api.get<any>('/health-data/summary', { period }),
+};
+
 // Daily Check-In Types
 interface DailyCheckIn {
   id: string;

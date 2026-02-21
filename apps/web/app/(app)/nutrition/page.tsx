@@ -134,7 +134,7 @@ export default function NutritionPage() {
       seen.add(f.name);
       return true;
     });
-    return unique.length > 0 ? unique.slice(0, 5) : defaultRecentFoods;
+    return unique.slice(0, 5);
   })();
 
   // Progress calculations
@@ -293,26 +293,9 @@ export default function NutritionPage() {
                     </div>
                   )}
 
-                  <div className="grid grid-cols-2 gap-2">
-                    <Button
-                      variant="outline"
-                      className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5"
-                      onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'مسح الأكل هيكون متاح قريباً' : 'Food scanning will be available soon' })}
-                    >
-                      <Camera className="mb-2 h-5 w-5 text-primary" />
-                      <span className="text-xs">{isAr ? 'مسح الطعام' : 'Scan Food'}</span>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="h-auto flex-col py-4 border-border/50 hover:border-primary/50 hover:bg-primary/5"
-                      onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'مسح الباركود هيكون متاح قريباً' : 'Barcode scanning will be available soon' })}
-                    >
-                      <Barcode className="mb-2 h-5 w-5 text-primary" />
-                      <span className="text-xs">{isAr ? 'مسح الباركود' : 'Scan Barcode'}</span>
-                    </Button>
-                  </div>
+                  {/* Scan buttons — requires mobile app camera, hidden on web */}
 
-                  {searchQuery.length < 2 && (
+                  {searchQuery.length < 2 && recentFoods.length > 0 && (
                     <div>
                       <p className="mb-2 text-sm font-medium">{t.nutrition.recentFoods}</p>
                       <div className="space-y-2">
@@ -336,6 +319,11 @@ export default function NutritionPage() {
                         ))}
                       </div>
                     </div>
+                  )}
+                  {searchQuery.length < 2 && recentFoods.length === 0 && (
+                    <p className="text-sm text-muted-foreground text-center py-4">
+                      {isAr ? 'ابحث عن طعام لإضافته إلى وجبتك' : 'Search for a food to add to your meal'}
+                    </p>
                   )}
                 </>
               )}

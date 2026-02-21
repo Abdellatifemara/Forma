@@ -139,13 +139,8 @@ export default function ProgressPage() {
       ].filter((m) => m.value !== undefined && m.value !== null)
     : [];
 
-  // Progress photos placeholder
-  const progressPhotos = [
-    { date: isAr ? 'قريباً' : 'Coming Soon', label: isAr ? 'أسبوع ٤' : 'Week 4' },
-    { date: isAr ? 'قريباً' : 'Coming Soon', label: isAr ? 'أسبوع ٣' : 'Week 3' },
-    { date: isAr ? 'قريباً' : 'Coming Soon', label: isAr ? 'أسبوع ٢' : 'Week 2' },
-    { date: isAr ? 'قريباً' : 'Coming Soon', label: isAr ? 'أسبوع ١' : 'Week 1' },
-  ];
+  // Progress photos — will be populated from R2 uploads
+  const progressPhotos: { date: string; label: string; url?: string }[] = [];
 
   return (
     <div className="space-y-6 pb-20">
@@ -605,33 +600,34 @@ export default function ProgressPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-base font-semibold">{t.progress.photos}</CardTitle>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'صور التقدم هتكون متاحة قريباً' : 'Progress photos will be available soon' })}
-              >
-                <Camera className="mr-2 h-4 w-4" />
-                {t.progress.addPhoto}
-              </Button>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                {progressPhotos.map((photo, index) => (
-                  <div
-                    key={index}
-                    className="aspect-[3/4] cursor-pointer rounded-lg bg-muted transition-transform hover:scale-105"
-                  >
-                    <div className="flex h-full flex-col items-center justify-center">
-                      <Camera className="h-8 w-8 text-muted-foreground" />
-                      <p className="mt-2 text-sm font-medium">{photo.label}</p>
-                      <p className="text-xs text-muted-foreground">{photo.date}</p>
+              {progressPhotos.length > 0 ? (
+                <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                  {progressPhotos.map((photo, index) => (
+                    <div
+                      key={index}
+                      className="aspect-[3/4] cursor-pointer rounded-lg bg-muted transition-transform hover:scale-105"
+                    >
+                      <div className="flex h-full flex-col items-center justify-center">
+                        <Camera className="h-8 w-8 text-muted-foreground" />
+                        <p className="mt-2 text-sm font-medium">{photo.label}</p>
+                        <p className="text-xs text-muted-foreground">{photo.date}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-              <p className="mt-4 text-center text-sm text-muted-foreground">
-                {isAr ? 'خاصية صور التقدم هتكون متاحة قريباً' : 'Progress photos feature coming soon'}
-              </p>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex flex-col items-center justify-center py-12 text-muted-foreground">
+                  <Camera className="h-12 w-12 mb-3 opacity-40" />
+                  <p className="text-sm font-medium">
+                    {isAr ? 'لا توجد صور تقدم بعد' : 'No progress photos yet'}
+                  </p>
+                  <p className="text-xs mt-1">
+                    {isAr ? 'ستتمكن من رفع صور التقدم من التطبيق' : 'Upload progress photos from the mobile app'}
+                  </p>
+                </div>
+              )}
             </CardContent>
           </Card>
         </TabsContent>

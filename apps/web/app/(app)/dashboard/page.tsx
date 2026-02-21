@@ -13,6 +13,7 @@ import {
   Activity,
   Sparkles,
   ArrowRight,
+  Dumbbell,
 } from 'lucide-react';
 import { useLanguage } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
@@ -213,23 +214,16 @@ export default function DashboardPage() {
               href={`/workouts/${todayWorkout.id}`}
               isRTL={isRTL}
             />
-          ) : null}
-          <WorkoutCard
-            name={isRTL ? 'برنامج الصدر' : 'Chest Program'}
-            duration={12}
-            sets={3}
-            reps={15}
-            href="/workouts"
-            isRTL={isRTL}
-          />
-          <WorkoutCard
-            name={isRTL ? 'برنامج الذراعين' : 'Arms Program'}
-            duration={16}
-            sets={3}
-            reps={12}
-            href="/workouts"
-            isRTL={isRTL}
-          />
+          ) : (
+            <Link
+              href="/workouts"
+              className="flex min-w-[200px] flex-col items-center justify-center rounded-2xl border-2 border-dashed border-border/50 p-6 text-center hover:border-primary/40 hover:bg-primary/5 transition-all"
+            >
+              <Dumbbell className="h-8 w-8 text-muted-foreground mb-2" />
+              <p className="text-sm font-medium">{isRTL ? 'تصفح التمارين' : 'Browse Workouts'}</p>
+              <p className="text-xs text-muted-foreground mt-1">{isRTL ? 'اختر برنامجك' : 'Pick a program'}</p>
+            </Link>
+          )}
         </div>
       </div>
 

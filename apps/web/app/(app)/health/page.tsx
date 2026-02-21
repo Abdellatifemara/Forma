@@ -41,7 +41,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { healthMetricsApi, type HealthMetricType, type CreateHealthMetricData } from '@/lib/api';
+import { healthMetricsApi, healthDataApi, type HealthMetricType, type CreateHealthMetricData, type SleepData } from '@/lib/api';
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/lib/i18n';
 import { useSubscription } from '@/hooks/use-subscription';
@@ -158,14 +158,17 @@ function StrainGauge({ strain, maxStrain = 21 }: { strain: number; maxStrain?: n
    Shows REM / Deep / Light / Awake segments
    ========================================================= */
 
-function SleepBreakdown({ totalHours, isAr }: { totalHours: number; isAr: boolean }) {
-  // Mock ratios until API supports sleep stages
-  const stages = {
-    rem: { pct: 0.22, color: 'bg-purple-500', label: isAr ? 'REM' : 'REM' },
-    deep: { pct: 0.18, color: 'bg-blue-600', label: isAr ? '\u0639\u0645\u064A\u0642' : 'Deep' },
-    light: { pct: 0.50, color: 'bg-sky-400', label: isAr ? '\u062E\u0641\u064A\u0641' : 'Light' },
-    awake: { pct: 0.10, color: 'bg-muted-foreground/30', label: isAr ? '\u0645\u0633\u062A\u064A\u0642\u0638' : 'Awake' },
-  };
+function SleepBreakdown({ totalHours, sleepStages, isAr }: { totalHours: number; sleepStages?: SleepData['stages'] | null; isAr: boolean }) {
+  const hasRealStages = sleepStages && (sleepStages.deep.hours > 0 || sleepStages.rem.hours > 0);
+
+  const stages = hasRealStages
+    ? {
+        rem: { pct: sleepStages.rem.percentage / 100, hours: sleepStages.rem.hours, color: 'bg-purple-500', label: isAr ? 'REM' : 'REM' },
+        deep: { pct: sleepStages.deep.percentage / 100, hours: sleepStages.deep.hours, color: 'bg-blue-600', label: isAr ? '\u0639\u0645\u064A\u0642' : 'Deep' },
+        light: { pct: sleepStages.light.percentage / 100, hours: sleepStages.light.hours, color: 'bg-sky-400', label: isAr ? '\u062E\u0641\u064A\u0641' : 'Light' },
+        awake: { pct: sleepStages.awake.percentage / 100, hours: sleepStages.awake.hours, color: 'bg-muted-foreground/30', label: isAr ? '\u0645\u0633\u062A\u064A\u0642\u0638' : 'Awake' },
+      }
+    : null;
 
   return (
     <div>
@@ -174,28 +177,36 @@ function SleepBreakdown({ totalHours, isAr }: { totalHours: number; isAr: boolea
         <span className="text-sm text-muted-foreground">{isAr ? '\u0633\u0627\u0639\u0627\u062A' : 'hours'}</span>
       </div>
 
-      {/* Stacked bar */}
-      <div className="flex h-7 rounded-full overflow-hidden">
-        {Object.entries(stages).map(([key, stage]) => (
-          <div
-            key={key}
-            className={cn('transition-all duration-700', stage.color)}
-            style={{ width: `${stage.pct * 100}%` }}
-          />
-        ))}
-      </div>
-
-      {/* Legend */}
-      <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3">
-        {Object.entries(stages).map(([key, stage]) => (
-          <div key={key} className="flex items-center gap-1.5">
-            <div className={cn('h-2.5 w-2.5 rounded-full', stage.color)} />
-            <span className="text-xs text-muted-foreground">
-              {stage.label} {(stage.pct * totalHours).toFixed(1)}h
-            </span>
+      {stages ? (
+        <>
+          {/* Stacked bar */}
+          <div className="flex h-7 rounded-full overflow-hidden">
+            {Object.entries(stages).map(([key, stage]) => (
+              <div
+                key={key}
+                className={cn('transition-all duration-700', stage.color)}
+                style={{ width: `${stage.pct * 100}%` }}
+              />
+            ))}
           </div>
-        ))}
-      </div>
+
+          {/* Legend */}
+          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3">
+            {Object.entries(stages).map(([key, stage]) => (
+              <div key={key} className="flex items-center gap-1.5">
+                <div className={cn('h-2.5 w-2.5 rounded-full', stage.color)} />
+                <span className="text-xs text-muted-foreground">
+                  {stage.label} {stage.hours.toFixed(1)}h
+                </span>
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <p className="text-xs text-muted-foreground mt-2">
+          {isAr ? 'قم بمزامنة جهازك لرؤية مراحل النوم' : 'Sync your wearable to see sleep stages'}
+        </p>
+      )}
     </div>
   );
 }
@@ -747,14 +758,44 @@ function HealthDashboard() {
     queryFn: () => healthMetricsApi.getDashboard(),
   });
 
-  // Mock data for demo — will be replaced by real API data
-  const recoveryScore = 72;
-  const strainScore = 12.4;
-  const sleepHours = 7.2;
-  const restingHR = 58;
-  const hrvData = [42, 48, 45, 52, 50, 55, 53]; // 7-day mock
-  const hrvLatest = hrvData[hrvData.length - 1];
-  const hrvTrend = hrvData[hrvData.length - 1] - hrvData[0];
+  // Real wearable data from /health-data endpoints
+  const { data: readiness } = useQuery({
+    queryKey: ['health-data-readiness'],
+    queryFn: () => healthDataApi.getReadiness(),
+  });
+
+  const { data: strain } = useQuery({
+    queryKey: ['health-data-strain'],
+    queryFn: () => healthDataApi.getStrain(),
+  });
+
+  const { data: sleepData } = useQuery({
+    queryKey: ['health-data-sleep'],
+    queryFn: () => healthDataApi.getSleep(),
+  });
+
+  const { data: readinessTrend } = useQuery({
+    queryKey: ['health-data-readiness-trend'],
+    queryFn: () => healthDataApi.getReadinessTrend(7),
+  });
+
+  // Derive display values from real API data (fallback to defaults for empty state)
+  const recoveryScore = readiness?.score ?? 0;
+  const strainScore = strain?.strain ?? 0;
+  const sleepHours = sleepData?.totalHours ?? 0;
+
+  // Get resting HR from readiness factors or latest health metric
+  const rhrFactor = readiness?.factors?.find(f => f.name === 'Resting Heart Rate');
+  const restingHR = rhrFactor?.value ?? 0;
+
+  // HRV from readiness trend daily scores, or from factors
+  const hrvFromTrend = readinessTrend?.daily?.map(d => d.score) ?? [];
+  const hrvFactor = readiness?.factors?.find(f => f.name === 'Heart Rate Variability');
+  const hrvLatest = hrvFactor?.value ?? (hrvFromTrend.length > 0 ? hrvFromTrend[hrvFromTrend.length - 1] : 0);
+  const hrvData = hrvFromTrend.length > 0 ? hrvFromTrend : [hrvLatest];
+  const hrvTrend = hrvData.length >= 2 ? hrvData[hrvData.length - 1] - hrvData[0] : 0;
+
+  const hasWearableData = readiness?.factors && readiness.factors.length > 0;
 
   const handleAddMetric = (type: HealthMetricType) => {
     setSelectedMetricType(type);
@@ -831,7 +872,7 @@ function HealthDashboard() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <SleepBreakdown totalHours={sleepHours} isAr={isAr} />
+            <SleepBreakdown totalHours={sleepHours} sleepStages={sleepData?.stages} isAr={isAr} />
           </CardContent>
         </Card>
 
