@@ -5842,6 +5842,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'health',
   },
 
+  // ── v40: Collagen Supplements ────────────────────────
+  {
+    keywords: ['collagen supplement', 'collagen for joints', 'collagen protein', 'collagen skin', 'collagen gym', 'type 1 collagen', 'type 2 collagen', 'bone broth collagen'],
+    keywordsAr: ['مكمل كولاجين', 'كولاجين للمفاصل', 'كولاجين بروتين', 'كولاجين بشرة', 'كولاجين والجيم', 'شوربة عظام كولاجين'],
+    keywordsFranco: ['mokammel collagen', 'collagen lel mafasel', 'collagen protein', 'collagen bashara', 'collagen wel gym', 'shorbet 3adam collagen'],
+    stateId: 'SU_MENU',
+    response: { en: 'Collagen Supplements: TYPES: Type I (skin, hair, nails, tendons — most common), Type II (cartilage, joints), Type III (skin elasticity, organs). DOSE: 10-15g/day for joint/skin benefits. TIMING: Any time, but with vitamin C (boosts absorption 50%+). EVIDENCE: Good for joint pain (especially with exercise), skin hydration, nail strength. Less evidence for muscle building — it\'s incomplete protein (low in leucine). FOOD SOURCES: Bone broth (best natural source — Egyptian kawarea3/mombar!), chicken skin, fish skin, egg whites. COST in Egypt: 300-600 LE/month for quality collagen. ALTERNATIVE: Just eat gelatin (gello) — same amino acids, much cheaper. Or make bone broth at home. Takes 8-12 weeks to see results. Best combo: collagen + vitamin C + exercise = maximum benefit for joints!', ar: 'مكملات الكولاجين: الأنواع: نوع 1 (بشرة، شعر، أظافر، أوتار)، نوع 2 (غضاريف، مفاصل)، نوع 3 (مرونة البشرة). الجرعة: 10-15g/يوم. التوقيت: أي وقت بس مع فيتامين C (يرفع الامتصاص 50%+). الدليل: كويس لألم المفاصل، ترطيب البشرة، قوة الأظافر. أقل دليل لبناء العضلات — بروتين ناقص. مصادر طبيعية: شوربة عظام (أفضل مصدر — كوارع ومممبار مصري!)، جلد فراخ، بياض بيض. التكلفة في مصر: 300-600 جنيه/شهر. بديل: كل جيلاتين — نفس الأحماض الأمينية وأرخص بكتير. أو اعمل شوربة عظام في البيت. بياخد 8-12 أسبوع تشوف نتايج. أفضل خلطة: كولاجين + فيتامين C + تمارين!' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
+  // ── v40: Electrolytes Deep Dive ────────────────────────
+  {
+    keywords: ['electrolytes', 'electrolyte supplement', 'sodium potassium magnesium', 'electrolyte drink', 'muscle cramps electrolytes', 'lmnt', 'electrolyte balance'],
+    keywordsAr: ['إلكتروليتس', 'مكمل إلكتروليت', 'صوديوم بوتاسيوم ماغنيسيوم', 'مشروب إلكتروليت', 'تقلصات العضلات', 'توازن الأملاح'],
+    keywordsFranco: ['electrolytes', 'mokammel electrolyte', 'sodium potassium magnesium', 'mashroob electrolyte', 'ta2alosat el 3adalat'],
+    stateId: 'SU_MENU',
+    response: { en: 'Electrolytes for Athletes: THE BIG 3: Sodium (most lost in sweat — 1000-3000mg/day for active people), Potassium (helps muscle contraction — 3500-4700mg/day), Magnesium (muscle relaxation, sleep — 400-600mg/day). SIGNS of deficiency: Cramps, fatigue, dizziness, headaches, poor performance. DIY electrolyte drink: 1L water + 1/4 tsp salt + 1/4 tsp potassium salt + squeeze of lemon + splash of juice. WHEN: During long workouts (60min+), in heat, during fasting (Ramadan!). FOOD sources: Banana (potassium), pickles (sodium), avocado (potassium + magnesium), coconut water, yogurt. Egyptian: salt on cucumbers, lemon water, ayran (laban). SUPPLEMENTS: LMNT, Nuun, or just pink Himalayan salt in water. Don\'t over-supplement sodium if you have blood pressure issues!', ar: 'إلكتروليتس للرياضيين: الـ3 الكبار: صوديوم (أكتر حاجة بتتفقد في العرق — 1000-3000mg/يوم للنشيطين)، بوتاسيوم (تقلص العضلات — 3500-4700mg/يوم)، ماغنيسيوم (استرخاء العضلات، نوم — 400-600mg/يوم). علامات النقص: تقلصات، تعب، دوخة، صداع، أداء ضعيف. مشروب DIY: 1 لتر مية + ربع معلقة ملح + ربع معلقة بوتاسيوم + ليمونة + شوية عصير. امتى: تمارين طويلة (+60 دقيقة)، في الحر، في الصيام (رمضان!). أكل: موز (بوتاسيوم)، مخلل (صوديوم)، أفوكادو، مية جوز هند، زبادي. مصري: ملح على خيار، ليمون بمية، عيران (لبن). مكملات: LMNT أو ملح هيمالايا في المية!' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
+  // ── v40: Workout Splits Compared ────────────────────────
+  {
+    keywords: ['workout split comparison', 'best workout split', 'bro split vs ppl', 'upper lower vs ppl', 'full body vs split', 'which split best', '3 day vs 6 day split'],
+    keywordsAr: ['مقارنة التقسيمات', 'أفضل تقسيم تمارين', 'برو سبلت ولا PPL', 'أب لو ولا PPL', 'فول بادي ولا سبلت', 'أفضل سبلت'],
+    keywordsFranco: ['mo2arnet el ta2seemat', 'afdal ta2seem tamreen', 'bro split wala ppl', 'upper lower wala ppl', 'full body wala split'],
+    stateId: 'WK_MENU',
+    response: { en: 'Workout Split Comparison: FULL BODY 3x/week: Each muscle 3x/week. BEST for beginners, time-limited. Takes 60-75min. UPPER/LOWER 4x/week: Each muscle 2x/week. Great for intermediates. 45-60min sessions. PPL 6x/week: Push/Pull/Legs 2x. Each muscle 2x/week with more volume. Best for dedicated lifters. 60-75min. BRO SPLIT 5x/week: One muscle/day. Each muscle 1x/week. Popular but LEAST optimal for natural lifters (protein synthesis drops after 48-72hrs). ARNOLD SPLIT: Chest+Back, Shoulders+Arms, Legs. 6x/week, each 2x. RANKING for muscle growth: PPL = Upper/Lower > Full Body > Arnold > Bro Split. RANKING for time efficiency: Full Body > Upper/Lower > PPL > Bro Split. PICK based on: How many days can you train? 3 = Full Body. 4 = Upper/Lower. 5-6 = PPL.', ar: 'مقارنة تقسيمات التمرين: فول بادي 3 مرات/أسبوع: كل عضلة 3 مرات. الأفضل للمبتدئين والوقت المحدود. 60-75 دقيقة. أب/لو 4 مرات/أسبوع: كل عضلة مرتين. ممتاز للمتوسطين. 45-60 دقيقة. PPL 6 مرات/أسبوع: دفع/سحب/رجل مرتين. كل عضلة مرتين بفوليوم أكتر. الأفضل للملتزمين. 60-75 دقيقة. برو سبلت 5 مرات: عضلة/يوم. كل عضلة مرة/أسبوع. شعبي بس الأقل فعالية للناتشورال. ترتيب لنمو العضلات: PPL = أب/لو > فول بادي > أرنولد > برو سبلت. ترتيب لتوفير الوقت: فول بادي > أب/لو > PPL. اختار حسب: كام يوم تقدر تتمرن؟ 3 = فول بادي. 4 = أب/لو. 5-6 = PPL.' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v40: Rep Ranges Explained ────────────────────────
+  {
+    keywords: ['rep range', 'how many reps', 'rep range for muscle', 'strength vs hypertrophy reps', 'high reps vs low reps', '5x5 vs 3x10', 'best rep range', 'reps for size'],
+    keywordsAr: ['عدد التكرارات', 'كام تكرار', 'تكرارات العضلات', 'قوة ولا حجم تكرارات', 'تكرارات عالية ولا قليلة'],
+    keywordsFranco: ['3adad el takrarat', 'kam takrar', 'takrarat el 3adalat', '2owa wala 7agm takrarat', 'takrarat 3alya wala 2aleela'],
+    stateId: 'WK_MENU',
+    response: { en: 'Rep Ranges Explained: STRENGTH (1-5 reps): Heavy weight, long rest (3-5min). Builds neural efficiency + strength. Best exercises: squat, bench, deadlift. HYPERTROPHY (6-12 reps): Moderate weight, moderate rest (60-90sec). Maximizes muscle growth. Best for most exercises. ENDURANCE (12-20+ reps): Light weight, short rest (30-60sec). Muscle endurance + pump. Good for isolation exercises. THE TRUTH: ALL rep ranges build muscle if taken close to failure! But 6-12 is most efficient. OPTIMAL APPROACH: Start with heavy compound (5x5 bench), then moderate isolation (3x10 flyes), finish with pump work (3x15 cables). This covers ALL ranges in one workout. SETS per muscle: 10-20 sets/week for growth. Beginners: 10-12. Advanced: 15-20. More than 20 = diminishing returns.', ar: 'نطاقات التكرارات: قوة (1-5 تكرارات): وزن تقيل، راحة طويلة (3-5 دقائق). بيبني كفاءة عصبية + قوة. أفضل تمارين: سكوات، بنش، ديدلفت. تضخم (6-12 تكرار): وزن متوسط، راحة متوسطة (60-90 ثانية). أقصى نمو عضلات. الأفضل لأغلب التمارين. تحمل (12-20+): وزن خفيف، راحة قصيرة (30-60 ثانية). تحمل عضلي + بامب. كويس للعزل. الحقيقة: كل النطاقات بتبني عضلات لو قربت من الفشل! بس 6-12 الأكفأ. النظام الأمثل: ابدأ بكومباوند تقيل (5×5 بنش)، بعدين عزل متوسط (3×10 فلايز)، خلص ببامب (3×15 كابل). سيتات/عضلة: 10-20 سيت/أسبوع. مبتدئ: 10-12. متقدم: 15-20.' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v40: Muscle Imbalance ────────────────────────
+  {
+    keywords: ['muscle imbalance', 'one arm bigger', 'uneven muscles', 'left right imbalance', 'asymmetry fix', 'dominant side stronger', 'muscle symmetry'],
+    keywordsAr: ['عدم توازن العضلات', 'ذراع أكبر من التاني', 'عضلات غير متساوية', 'عدم تماثل', 'جنب أقوى من التاني'],
+    keywordsFranco: ['3adam twazon el 3adalat', 'dera3 akbar men el tany', '3adalat mesh metsaweya', '3adam tamathol', 'ganb a2wa men el tany'],
+    stateId: 'WK_MENU',
+    response: { en: 'Fixing Muscle Imbalances: COMMON: Right arm bigger (if right-handed), left pec bigger, one leg stronger. CAUSES: Dominant side does more work, poor form, injury compensation. FIX: 1) Use UNILATERAL exercises (dumbbell press instead of barbell, single-leg work). 2) Start with weak side — do 10 reps with left, then match with right (don\'t do more). 3) Add 1-2 extra sets for the weaker side. 4) Use mirrors or video to check form. 5) Be patient — takes 4-8 weeks to see improvements. VISUAL imbalance vs STRENGTH imbalance: if one side is 10%+ weaker, fix it. If it just looks slightly different, that\'s normal — no one is perfectly symmetrical. DON\'T: Avoid heavy bilateral exercises completely. DO: Mix bilateral and unilateral work 50/50.', ar: 'إصلاح عدم توازن العضلات: الشائع: ذراع يمين أكبر (لو يمناوي)، صدر شمال أكبر، رجل أقوى. الأسباب: الجنب المسيطر بيشتغل أكتر، فورم سيء، تعويض إصابة. الحل: 1) استخدم تمارين يوناي لاترال (دمبل برس بدل بار، رجل واحدة). 2) ابدأ بالجنب الضعيف — 10 تكرارات بالشمال، بعدين طابق باليمين (متزودش). 3) أضف 1-2 سيت زيادة للجنب الضعيف. 4) استخدم المراية أو فيديو تشيك الفورم. 5) اصبر — 4-8 أسابيع تشوف تحسن. عدم توازن بصري مقابل قوة: لو جنب أضعف 10%+ صلحه. لو شكلاً مختلف شوية، ده عادي — محدش متماثل تماماً. متتجنبش تمارين ثنائية، اخلط 50/50.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v40: Healthy Snacking Guide ────────────────────────
+  {
+    keywords: ['healthy snack', 'healthy snacking', 'snack ideas gym', 'protein snack', 'low calorie snack', '100 calorie snack', 'snack between meals', 'guilt free snack'],
+    keywordsAr: ['سناك صحي', 'أفكار سناكات', 'سناك بروتين', 'سناك قليل سعرات', 'سناك بين الوجبات', 'سناك بدون ذنب'],
+    keywordsFranco: ['snack se77y', 'afkar snacks', 'snack protein', 'snack 2aleel so3rat', 'snack been el wagabat'],
+    stateId: 'NU_MENU',
+    response: { en: 'Healthy Snacking Guide: HIGH PROTEIN (<200cal): Greek yogurt + berries (150cal, 15g protein), boiled eggs x2 (140cal, 12g), protein bar (200cal, 20g), cottage cheese + cucumber (120cal, 14g), turkey slices + mustard (100cal, 15g). LOW CALORIE (<100cal): Apple slices (80cal), cucumber + hummus (90cal), rice cakes (70cal), air-popped popcorn (90cal), carrots + ranch (80cal). EGYPTIAN FAVORITES: Roasted lupini (termes) — 120cal, 10g protein per cup. Roasted chickpeas — 130cal, 7g protein. Foul sandwich (small) — 200cal, 12g protein. Cucumber + salt + lemon — basically free calories. TIMING: Eat a protein snack 1-2hrs before gym. Post-gym: fruit + protein within 30min. AVOID: Chips, candy, sugary biscuits — empty calories that spike then crash.', ar: 'دليل السناكات الصحية: عالي البروتين (-200 سعرة): زبادي يوناني + فواكه (150 سعرة، 15g بروتين)، 2 بيض مسلوق (140، 12g)، بروتين بار (200، 20g)، جبنة قريش + خيار (120، 14g). قليل السعرات (-100): تفاحة (80)، خيار + حمص (90)، رايس كيك (70)، فشار (90)، جزر (80). مصري: ترمس محمص — 120 سعرة، 10g بروتين/كوب. حمص محمص — 130، 7g. سندوتش فول صغير — 200، 12g. خيار + ملح + ليمون — سعرات تقريباً صفر. التوقيت: سناك بروتين 1-2 ساعة قبل الجيم. بعد الجيم: فاكهة + بروتين في 30 دقيقة. تجنب: شيبسي، حلويات، بسكويت — سعرات فارغة!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v40: Bodyweight vs Weights ────────────────────────
+  {
+    keywords: ['bodyweight vs weights', 'calisthenics vs gym', 'bodyweight enough muscle', 'can build muscle without weights', 'home exercise vs gym', 'free weights vs machines vs bodyweight'],
+    keywordsAr: ['وزن الجسم ولا أوزان', 'كاليسثنكس ولا جيم', 'بناء عضلات بدون أوزان', 'تمارين بيتي ولا جيم', 'حديد ولا وزن جسم'],
+    keywordsFranco: ['wazn el gesm wala awzan', 'calisthenics wala gym', 'bena2 3adalat bedoon awzan', 'tamreen bety wala gym', '7adeed wala wazn gesm'],
+    stateId: 'WK_MENU',
+    response: { en: 'Bodyweight vs Weights: BODYWEIGHT PROS: Free, anywhere, great for relative strength, impressive skills (muscle-ups, planche, handstand). CONS: Hard to progressively overload (must get creative), legs are limited (pistol squats only go so far). WEIGHTS PROS: Easy progressive overload (just add weight), target specific muscles, faster hypertrophy. CONS: Need gym/equipment, cost money. THE TRUTH: Both build muscle! Bodyweight is enough for a great physique up to intermediate level. For MAXIMUM size, weights are superior (especially for legs). BEST APPROACH: Combine both! Pull-ups + weighted pull-ups, push-ups → dumbbell press, pistol squats + barbell squats. Can you get jacked with just bodyweight? YES — look at gymnasts. But it takes longer and requires more creativity.', ar: 'وزن الجسم مقابل الأوزان: وزن الجسم: مجاني، في أي مكان، قوة نسبية ممتازة، مهارات مبهرة (ماصل أب، بلانش). العيوب: صعب تزود الحمل (لازم إبداع)، الرجل محدودة. الأوزان: سهل تزود الحمل (زود الوزن)، استهداف عضلات محددة، تضخم أسرع. العيوب: محتاج جيم/معدات. الحقيقة: الاتنين بيبنوا عضلات! وزن الجسم كافي لجسم ممتاز لحد المتوسط. للحجم الأقصى، الأوزان أفضل (خصوصاً الرجل). أفضل طريقة: اخلط الاتنين! عقلة + عقلة بوزن، ضغط → دمبل برس، بيستول سكوات + باربل سكوات. تقدر تبقى ضخم بوزن الجسم؟ أيوا — شوف لاعبي الجمباز. بس بياخد وقت أكتر وإبداع أكتر.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
