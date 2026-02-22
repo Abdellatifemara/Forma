@@ -7164,6 +7164,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v63: Cooldown + Deload Protocol + RPE Scale + 1RM Calculator + Training Journal ──
+  {
+    keywords: ['cooldown', 'cool down', 'after workout stretch', 'post workout stretch', 'end of workout', 'cooldown routine', 'static stretch after'],
+    keywordsAr: ['تبريد', 'كول داون', 'إطالة بعد التمرين', 'تمديد بعد التمرين', 'نهاية التمرين'],
+    keywordsFranco: ['cooldown', 'cool down', 'post workout stretch', 'after workout stretch'],
+    stateId: 'info_cooldown_routine',
+    response: { en: 'Cooldown Routine (5-10 minutes): WHY COOLDOWN: Gradually lowers heart rate, reduces blood pooling in muscles, begins recovery process, reduces dizziness after intense training, improves flexibility when muscles are warm. PHASE 1 — Light Cardio (2-3 min): Slow walk or very light cycling. Bring heart rate down gradually. DO NOT just sit down after heavy training! PHASE 2 — Static Stretching (5-7 min): Hold each stretch 20-30 seconds. UPPER BODY: Chest doorway stretch, cross-body shoulder stretch, overhead tricep stretch, bicep wall stretch, neck side bends. LOWER BODY: Standing quad stretch, hamstring stretch (toe touch), hip flexor lunge stretch, calf stretch against wall, pigeon pose (glutes), seated butterfly (inner thighs). BACK: Child\'s pose, cat-cow stretch, spinal twist lying down. BREATHING: Deep breathing during stretches — inhale through nose (4 seconds), exhale through mouth (6 seconds). SKIP STATIC STRETCHING BEFORE WORKOUT: Research shows static stretching BEFORE lifting can reduce strength. Save it for AFTER. Dynamic stretching goes BEFORE, static goes AFTER.', ar: 'روتين التبريد (5-10 دقائق): ليه التبريد: بينزّل معدل القلب تدريجياً، بيقلل تجمع الدم في العضلات، بيبدأ الريكفري، بيقلل الدوخة. المرحلة 1 — كارديو خفيف (2-3 دق): مشي بطيء أو دراجة. نزّل معدل القلب تدريجياً. ما تقعدش على طول بعد تمرين تقيل! المرحلة 2 — إطالة ثابتة (5-7 دق): امسك كل إطالة 20-30 ثانية. جسم علوي: إطالة صدر، كتف، ترايسبس، بايسبس. جسم سفلي: كواد، هامسترنج، هيب فليكسور، سمانة، جلوت. ظهر: تشايلد بوز، كات-كاو، سباينال تويست. التنفس: عميق — شهيق من الأنف (4 ثواني)، زفير من الفم (6 ثواني). إطالة ثابتة قبل التمرين بتقلل القوة — خليها بعد!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['deload week protocol', 'deload how to', 'deload frequency', 'when to deload', 'deload signs', 'deload volume', 'deload intensity', 'active recovery week'],
+    keywordsAr: ['بروتوكول ديلود', 'إزاي تعمل ديلود', 'تكرار ديلود', 'امتى ديلود', 'علامات ديلود'],
+    keywordsFranco: ['deload week', 'deload how to', 'when to deload', 'deload protocol'],
+    stateId: 'info_deload_protocol',
+    response: { en: 'Deload Week Protocol — Complete Guide: WHAT IS A DELOAD: A planned reduction in training stress (volume, intensity, or both) to allow recovery and supercompensation. NOT a week off — you still train, just lighter. WHEN TO DELOAD: Every 4-6 weeks of hard training (planned). Signs you NEED one: strength declining, constant fatigue, joint aches, poor sleep, dreading workouts, mood changes, elevated resting heart rate. HOW TO DELOAD — 3 OPTIONS: 1) REDUCE VOLUME: Keep weight the same, cut sets by 40-50%. If normally 4 sets, do 2 sets. 2) REDUCE INTENSITY: Keep sets the same, reduce weight by 40-50%. Focus on form and mind-muscle connection. 3) REDUCE BOTH: Cut weight by 30% and sets by 30%. Most common approach. WHAT TO DO DURING DELOAD: Focus on mobility work, light cardio, technique practice, address weak points with light weight. Eat at maintenance (not deficit). Sleep more. WHAT NOT TO DO: Skip the gym entirely (some movement is beneficial), use it as a cheat week for diet, jump into heavy training the day after deload ends. RESULTS: You should feel refreshed, stronger, and motivated to train hard again. If not, you may need a full rest week.', ar: 'بروتوكول أسبوع الديلود: ايه هو: تقليل مخطط في ضغط التدريب (حجم، شدة، أو الاتنين) عشان الريكفري. مش أسبوع إجازة — بتتمرن بس أخف. امتى تعمل ديلود: كل 4-6 أسابيع. علامات: قوة بتنزل، تعب مستمر، ألم مفاصل، نوم وحش، مش عايز تتمرن. إزاي — 3 خيارات: 1) قلل الحجم: نفس الوزن، قص المجموعات 40-50%. 2) قلل الشدة: نفس المجموعات، قلل الوزن 40-50%. 3) قلل الاتنين: 30% أقل من كل حاجة. خلال الديلود: موبيليتي، كارديو خفيف، ممارسة التكنيك. كُل عند الصيانة (مش عجز). نام أكتر. النتيجة: لازم تحس بانتعاش وقوة ورغبة تتمرن تاني.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['rpe scale', 'rpe training', 'rate of perceived exertion', 'rpe meaning', 'rpe 8', 'rpe 9', 'rpe 10', 'rir', 'reps in reserve', 'how hard to train'],
+    keywordsAr: ['مقياس RPE', 'RPE تدريب', 'معدل الجهد المدرك', 'RPE معنى', 'كم أتعب'],
+    keywordsFranco: ['rpe', 'rpe scale', 'reps in reserve', 'rir', 'how hard to train'],
+    stateId: 'info_rpe_scale',
+    response: { en: 'RPE Scale & Reps in Reserve (RIR): RPE (Rate of Perceived Exertion) — how hard a set feels on a 1-10 scale. RPE 10: Maximum effort, could NOT do another rep. (0 RIR). RPE 9: Very hard, MAYBE 1 more rep with good form. (1 RIR). RPE 8: Hard, could do 2 more reps. (2 RIR). RPE 7: Moderate, could do 3 more reps. (3 RIR). RPE 6: Warm-up feel, 4+ reps left. HOW TO USE IN TRAINING: STRENGTH WORK (compounds): RPE 7-9. Most sets at RPE 8 (2 reps in reserve). HYPERTROPHY (isolation): RPE 8-10. Take isolation exercises closer to failure. WARM-UP SETS: RPE 5-6. DELOAD: RPE 6-7. WHY NOT GO TO RPE 10 EVERY SET? Training to failure every set causes excessive fatigue, increases injury risk, and does NOT build more muscle than RPE 8-9 in most cases. Save RPE 10 for the LAST set of an exercise or test days. THE SWEET SPOT: Most of your training should be RPE 7-9. This gives you the stimulus for growth while managing fatigue and reducing injury risk.', ar: 'مقياس RPE وعدات الاحتياطي (RIR): RPE — قد ايه المجموعة صعبة على مقياس 1-10. RPE 10: أقصى جهد، مش قادر عدة تانية (0 احتياطي). RPE 9: صعب جداً، يمكن عدة واحدة كمان (1 احتياطي). RPE 8: صعب، تقدر 2 عدة كمان (2 احتياطي). RPE 7: متوسط، 3 عدات كمان. إزاي تستخدمه: قوة (كومباوند): RPE 7-9. تضخيم (عزل): RPE 8-10. ليه مش RPE 10 كل مجموعة؟ التدريب لحد الفشل كل مجموعة بيسبب تعب زيادة وخطر إصابة أعلى ومش بيبني عضل أكتر من RPE 8-9. وفّر RPE 10 لآخر مجموعة بس. المنطقة المثالية: معظم تدريبك RPE 7-9.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['1rm calculator', 'one rep max', 'calculate max', 'estimate 1rm', 'max lift calculator', 'training max', 'e1rm', 'estimated max'],
+    keywordsAr: ['حاسبة 1RM', 'ون ريب ماكس', 'حساب الماكس', 'تقدير الماكس', 'أقصى رفعة'],
+    keywordsFranco: ['1rm calculator', 'one rep max', 'calculate max', 'max lift'],
+    stateId: 'info_1rm_calculator',
+    response: { en: '1RM (One Rep Max) Calculator & Guide: FORMULA (Epley): 1RM = Weight × (1 + Reps/30). EXAMPLE: If you bench 80kg for 8 reps: 1RM = 80 × (1 + 8/30) = 80 × 1.267 = ~101kg. PERCENTAGE CHART: 100% 1RM = 1 rep. 95% = 2 reps. 90% = 3-4 reps. 85% = 5-6 reps. 80% = 7-8 reps. 75% = 9-10 reps. 70% = 11-13 reps. 65% = 14-16 reps. TRAINING MAX vs TRUE MAX: Use 90% of calculated 1RM as your "training max" — this accounts for bad days and reduces injury risk. Programs like 5/3/1 use training max for all calculations. WHEN TO TEST 1RM: Only test true 1RM every 8-12 weeks, after a deload. Always with a spotter. Warm up thoroughly. Work up in singles: 70% x1, 80% x1, 90% x1, 95% x1, attempt 100%+. DO NOT test 1RM if: tired, stressed, sick, injured, or without a spotter. BETTER APPROACH: Use calculated/estimated 1RM from rep tests. Bench 5 reps and calculate. Safer and nearly as accurate.', ar: 'حاسبة ون ريب ماكس (1RM): المعادلة (إيبلي): 1RM = الوزن × (1 + العدات/30). مثال: بنش 80كج × 8 عدات: 1RM = 80 × (1 + 8/30) = ~101كج. جدول النسب: 100% = 1 عدة. 95% = 2 عدات. 90% = 3-4 عدات. 85% = 5-6 عدات. 80% = 7-8. 75% = 9-10. ترينينج ماكس ضد الماكس الحقيقي: استخدم 90% من الـ1RM المحسوب كـ"ترينينج ماكس". امتى تختبر: كل 8-12 أسبوع، بعد ديلود، دايماً مع سبوتر. سخّن كويس. الأفضل: استخدم 1RM محسوب من اختبار عدات. أأمن وتقريباً نفس الدقة.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['training journal', 'workout log app', 'track workouts', 'workout diary', 'training log book', 'why log workouts', 'progressive overload tracking'],
+    keywordsAr: ['دفتر تدريب', 'تسجيل تمارين', 'تتبع تمارين', 'يوميات تمرين', 'ليه أسجل التمارين'],
+    keywordsFranco: ['training journal', 'workout log', 'track workouts', 'training diary'],
+    stateId: 'info_training_journal',
+    response: { en: 'Training Journal — Why and How to Track Workouts: WHY LOG: Progressive overload is THE key to muscle growth. If you do not track, you do not know if you are progressing. Memory is unreliable — "I think I did 80kg last week" is not good enough. Data reveals patterns (what works, what doesn\'t). Keeps you accountable and motivated. WHAT TO TRACK: Exercise name, sets, reps, weight, RPE/difficulty. Rest time (if relevant). Notes (felt strong, knee bothered, new PR). Body weight (weekly). Sleep hours the night before. METHODS: 1) This app! Use Forma\'s workout logging feature. 2) Simple notebook — many pros still use pen and paper. 3) Notes app on phone — quick and always available. HOW TO USE YOUR LOG: Compare this week vs last week. Are you doing more weight, more reps, or more sets? If all three are stagnant for 2+ weeks, change something. Review every 4-6 weeks for trends. MINIMUM VIABLE LOG: Exercise, weight, reps. That is it. Do not overcomplicate it. The best log is one you actually use consistently!', ar: 'دفتر التدريب — ليه وإزاي تسجل التمارين: ليه: البروجرسيف أوفرلود هو المفتاح لنمو العضل. لو مش بتسجل، مش هتعرف لو بتتقدم. الذاكرة مش موثوقة. البيانات بتكشف أنماط. ايه تسجل: اسم التمرين، مجموعات، عدات، وزن، صعوبة. ملاحظات (حسيت بقوة، ركبة وجعت، PR جديد). وزن الجسم (أسبوعياً). ساعات النوم. الطرق: 1) التطبيق ده! استخدم ميزة تسجيل التمارين في فورما. 2) دفتر — كتير محترفين بيستخدموا ورق وقلم. 3) ملاحظات الموبايل. إزاي تستخدم السجل: قارن الأسبوع ده بالأسبوع اللي فات. لو كل حاجة واقفة 2+ أسبوع، غيّر حاجة. الحد الأدنى: تمرين، وزن، عدات. كده وبس. أفضل سجل هو اللي بتستخدمه فعلاً!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
