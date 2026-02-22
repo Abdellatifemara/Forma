@@ -332,6 +332,27 @@ const TYPO_MAP: Record<string, string> = {
   'turky': 'turkey', 'terkey': 'turkey',
   'sourcream': 'sour cream', 'sourecream': 'sour cream',
   'granoala': 'granola', 'granolla': 'granola',
+  // v57 NLP Round 4 — more typos
+  'latreral': 'lateral', 'laterall': 'lateral', 'latteral': 'lateral',
+  'shrugg': 'shrug', 'shurgs': 'shrugs', 'shurgg': 'shrug',
+  'forarm': 'forearm', 'forarms': 'forearms', 'forerams': 'forearms',
+  'pendaly': 'pendlay', 'pednlay': 'pendlay',
+  'zerchur': 'zercher', 'zerchar': 'zercher', 'zerchr': 'zercher',
+  'bulgairan': 'bulgarian', 'bulgrian': 'bulgarian',
+  'landmin': 'landmine', 'lanmine': 'landmine',
+  'crossver': 'crossover', 'crosover': 'crossover',
+  'pullvoer': 'pullover', 'puolver': 'pullover',
+  'uprite': 'upright', 'uprgiht': 'upright',
+  'tempoo': 'tempo', 'timpo': 'tempo',
+  'battel': 'battle', 'batel': 'battle',
+  'farmar': 'farmer', 'farmr': 'farmer',
+  'hamstrng': 'hamstring', 'hamstrnig': 'hamstring', 'hamstrig': 'hamstring',
+  'seeted': 'seated', 'sitted': 'seated',
+  'kosharee': 'koshari', 'koshry': 'koshari',
+  'shawerma': 'shawarma', 'shawrma': 'shawarma', 'sharwama': 'shawarma',
+  'fiteer': 'feteer', 'feteir': 'feteer', 'fiter': 'feteer',
+  'mulokheya': 'molokhiya', 'molkhia': 'molokhiya', 'molokhea': 'molokhiya',
+  'mahshy': 'mahshi', 'mashee': 'mahshi', 'mahshe': 'mahshi',
 };
 
 function fixTypos(text: string): string {
@@ -874,6 +895,19 @@ const FOOD_NAMES: string[] = [
   'عطايف', 'فتير مشلتت', 'بيض بالبسطرمة', 'كبدة اسكندراني',
   'حواوشي رول', 'فول بالطحينة', 'كشري سبيشال',
   'شوربة عدس', 'شوربة فراخ', 'سلطة خضرا', 'سلطة فواكه',
+  // v57: Egyptian street food & snacks
+  'taameya', 'falafel egyptian', 'ful medames', 'besara',
+  'baladi bread', 'eish baladi', 'eish fino', 'eish shamsi',
+  'feteer meshaltet', 'goulash', 'hawawshi', 'liver sandwich',
+  'brain sandwich', 'molokhiya', 'bamia', 'wara enab',
+  'macarona bechamel', 'kofta', 'kebab', 'shish tawook',
+  'fattah', 'roz moammar', 'fatta', 'freek',
+  'basbousa', 'kunafa', 'qatayef', 'om ali',
+  'zalabya', 'luqmat el qadi', 'baklava', 'halawa tahinia',
+  'mesaqqaa', 'moussaka egyptian', 'torly', 'sayadeya',
+  'fesikh', 'renga', 'sardine egyptian', 'ringa',
+  'sugarcane juice', 'asab', 'qamar el din', 'tamr hindi',
+  'karkade', 'sahlab', 'yansoon', 'helba',
 ];
 
 function detectFoodQuery(text: string): string | null {
@@ -6873,6 +6907,26 @@ const INTENT_RULES: IntentRule[] = [
     response: { en: 'Shrug Variations for Massive Traps: BARBELL SHRUG: Classic. Hold bar in front, shrug straight up (not forward/back). Heavy weight, 3x10-15. DUMBBELL SHRUG: Better ROM than barbell (arms at sides, not front). Can go heavier per arm. Slight rotation at top for extra contraction. BEHIND-BACK BARBELL SHRUG: Bar behind you (Smith machine works great). Hits traps from different angle. Opens up the chest. TRAP BAR SHRUG: Neutral grip, can go VERY heavy. Arguably the best shrug variation. CABLE SHRUG: Constant tension. Low cable behind you or in front. TECHNIQUE TIPS: Hold at top for 2-3 seconds (squeeze!). Do NOT roll shoulders (circular motion) — straight up and down only! Rolling adds zero benefit and risks shoulder injury. Go heavy but controlled. PROGRAMMING: 3-4 sets of 10-15 reps. Train traps 2x/week. BUT REMEMBER: Deadlifts, rows, and farmer walks already build huge traps. Many people with massive traps never do shrugs!', ar: 'شراج لتراب ضخمة: باربل شراج: كلاسيكي. امسك البار قدامك، ارفع لفوق. تقيل، 3×10-15. دمبل شراج: مدى حركة أفضل، ذراعين على الجنب. لفة خفيفة فوق لضغط أكتر. شراج خلف الظهر: البار وراك (سميث ماشين). بيضرب من زاوية مختلفة. تراب بار شراج: قبضة محايدة، تقدر تروح تقيل جداً. نصايح: امسك فوق 2-3 ثواني! ما تلفّش الكتف في دايرة — فوق وتحت بس! اللف بيضيف صفر ومحتمل إصابة كتف. البرنامج: 3-4 × 10-15. درّب تراب 2×/أسبوع. بس تفتكر: ديدلفت ورو وفارمرز ووك بيبنوا تراب ضخمة بالفعل!' },
     priority: 7,
     domain: 'workout',
+  },
+
+  // ── v57: Egyptian Street Food Calories Deep Dive + Healthy Egyptian Snack Guide ──
+  {
+    keywords: ['egyptian street food healthy', 'taameya calories', 'falafel egypt calories', 'hawawshi calories', 'liver sandwich calories', 'koshary healthy', 'egyptian food macros', 'street food egypt diet'],
+    keywordsAr: ['سعرات أكل الشارع', 'طعمية سعرات', 'حواوشي سعرات', 'كبدة سندوتش سعرات', 'أكل شارع مصري دايت'],
+    keywordsFranco: ['ta3meya calories', 'hawawshi calories', 'kebda sandwich', 'egyptian street food'],
+    stateId: 'info_egyptian_street_food_guide',
+    response: { en: 'Egyptian Street Food — Complete Fitness Guide: TAAMEYA (Egyptian Falafel): 2 pieces = ~120 cal, 4g protein, 15g carbs, 5g fat. Made from fava beans (not chickpeas like Levantine). BETTER CHOICE: Baked or air-fried taameya cuts fat by 60%. KOSHARY (medium): ~550-650 cal, 18g protein, 95g carbs, 12g fat. High carb but great post-workout. Ask for extra lentils, less rice. HAWAWSHI: ~400-500 cal per piece. High fat from the bread and meat. BETTER: Ask for eish baladi instead of fino, less fat in the meat. LIVER SANDWICH (kebda): ~350 cal. Liver is rich in iron, B12, and vitamin A. Great for athletes. SHAWARMA: ~450-550 cal per sandwich. High protein but high fat. Ask for no garlic sauce (toum adds 200+ cal). FUL MEDAMES: ~300-350 cal per plate. 18g protein! Excellent cheap protein source. BRAIN SANDWICH (mokh): ~400 cal, very high cholesterol — limit to once/week. BEST CHOICES FOR FITNESS: Ful (protein), grilled kebab/kofta (protein), liver (iron/B12), koshary post-workout (carbs).', ar: 'أكل الشارع المصري — دليل اللياقة: طعمية: 2 قرصين = ~120 سعرة، 4ج بروتين، 15ج كربوهيدرات. مصنوعة من فول (مش حمص). الأفضل: مشوية أو آير فراير بتقلل الدهن 60%. كشري (وسط): ~550-650 سعرة، 18ج بروتين، 95ج كربوهيدرات. عالي كارب بس ممتاز بعد التمرين. اطلب عدس زيادة. حواوشي: ~400-500 سعرة/حتة. عالي دهون. اطلب عيش بلدي بدل فينو. كبدة سندوتش: ~350 سعرة. غنية بالحديد وB12 وفيتامين A. شاورما: ~450-550 سعرة. بروتين عالي بس دهون عالية. اطلب من غير ثومية (+200 سعرة). فول: ~300-350 سعرة، 18ج بروتين! أفضل مصدر بروتين رخيص. أفضل الخيارات للفتنس: فول (بروتين)، كباب/كفتة مشوي (بروتين)، كبدة (حديد/B12)، كشري بعد التمرين (كربوهيدرات).' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['healthy egyptian snack', 'egyptian snack diet', 'healthy snack egypt', 'ترمس', 'lupini beans', 'sweet potato egypt', 'batata', 'sugarcane juice', 'asab', 'karkade healthy', 'sahlab', 'egyptian drinks healthy'],
+    keywordsAr: ['سناك مصري صحي', 'ترمس سعرات', 'بطاطا', 'عصير قصب', 'كركديه', 'سحلب', 'ينسون', 'حلبة'],
+    keywordsFranco: ['termes', 'batata', '3asab', 'karkade', 'sahlab', 'yansoon', 'helba'],
+    stateId: 'info_healthy_egyptian_snacks',
+    response: { en: 'Healthy Egyptian Snacks & Drinks: SNACKS: LUPINI BEANS (Termes): ~120 cal/cup, 13g protein, 10g fiber! AMAZING gym snack — high protein, high fiber, dirt cheap. Eat them between meals. SWEET POTATO (Batata): ~115 cal/medium. Complex carbs, vitamin A, fiber. Great pre-workout. Roasted sweet potato carts are everywhere in winter. ROASTED CORN (Dora): ~90 cal/ear. Whole grain, decent fiber. ROASTED CHICKPEAS (Hommos Sham): ~130 cal/handful. Crunchy, high protein snack. DRINKS: SUGARCANE JUICE (Asab): ~180 cal/cup. Natural energy, no added sugar. Great pre-workout. KARKADE: ~5 cal/cup (unsweetened). Rich in antioxidants, lowers blood pressure. SAHLAB: ~150 cal/cup with milk. Warming winter drink, good source of calcium. YANSOON (Anise): ~0 cal. Aids digestion, calms stomach. HELBA (Fenugreek): ~0 cal. Boosts testosterone naturally, aids digestion. AVOID: Sugary versions of these drinks (they add 200+ cal of sugar). Ask for "bidoon sukkar" (without sugar).', ar: 'سناكات ومشروبات مصرية صحية: سناكات: ترمس: ~120 سعرة/كوب، 13ج بروتين، 10ج ألياف! سناك جيم مذهل — بروتين عالي، ألياف، رخيص. بطاطا: ~115 سعرة/واحدة. كربوهيدرات معقدة، فيتامين A. بري ووركاوت ممتاز. ذرة مشوية: ~90 سعرة/كوز. حبوب كاملة. حمص شام: ~130 سعرة/حفنة. كرنشي، بروتين عالي. مشروبات: عصير قصب: ~180 سعرة/كوب. طاقة طبيعية. كركديه: ~5 سعرات (بدون سكر). مضادات أكسدة. سحلب: ~150 سعرة/كوب. كالسيوم. ينسون: ~0 سعرة. بيساعد الهضم. حلبة: ~0 سعرة. بتزود التستوستيرون طبيعياً. تجنب: النسخ المسكرة من المشروبات (+200 سعرة سكر). اطلب "بدون سكر".' },
+    priority: 8,
+    domain: 'nutrition',
   },
 
   // ── Notification / Reminder Patterns ────────────────────────
