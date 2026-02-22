@@ -10203,6 +10203,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── Egyptian Meat & Street Food Macros ────────────────────────
+  {
+    keywords: ['shawarma', 'shawerma', 'chicken shawarma', 'meat shawarma', 'shawarma wrap', 'shawarma calories', 'shawarma macros', 'shawarma healthy'],
+    keywordsAr: ['شاورما', 'شاورما فراخ', 'شاورما لحمة', 'سعرات الشاورما', 'شاورما دايت', 'شاورما صحية'],
+    keywordsFranco: ['shawarma', 'shawerma', 'sha2rma', 'shawarma diet', 'shawarma calories'],
+    stateId: 'nutrition_shawarma_deep',
+    response: { en: 'Chicken shawarma sandwich (~250g): ~450-550 cal, 28g protein, 40g carbs, 20g fat. Meat shawarma: ~550-700 cal, 25g protein, 40g carbs, 30g fat. The bread and sauces add most carbs/fat. Gym-friendly hack: ask for shawarma plate (no bread), extra chicken, light garlic sauce. A plate with salad can be 350 cal, 35g protein. Grilled chicken shawarma is one of the better fast food options for lifters.', ar: 'ساندويتش شاورما فراخ (~٢٥٠ جرام): ~٤٥٠-٥٥٠ سعرة، ٢٨ جرام بروتين، ٤٠ جرام كارب، ٢٠ جرام دهون. شاورما لحمة: ~٥٥٠-٧٠٠ سعرة. العيش والصوصات بتزود الكارب/الدهون. حيلة الجيم: اطلب طبق شاورما (بدون عيش)، فراخ زيادة، ثومية خفيفة. طبق مع سلطة = ٣٥٠ سعرة، ٣٥ جرام بروتين.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['kofta', 'kofta grill', 'kofta calories', 'kofta macros', 'grilled kofta', 'kebab', 'kebab macros', 'tikka', 'tikka macros'],
+    keywordsAr: ['كفتة', 'كفتة مشوية', 'سعرات الكفتة', 'كباب', 'تكة', 'سعرات الكباب', 'كفتة دايت'],
+    keywordsFranco: ['kofta', 'kofta mashweya', 'kebab', 'tikka', 'kofta calories', 'kofta diet'],
+    stateId: 'nutrition_kofta_deep',
+    response: { en: 'Grilled kofta (2 skewers ~150g): ~300 cal, 22g protein, 3g carbs, 22g fat. Grilled kebab (2 skewers): ~280 cal, 25g protein, 2g carbs, 18g fat. Tikka (chicken, 200g): ~250 cal, 40g protein, 2g carbs, 8g fat. Tikka is the clear winner for protein-to-calorie ratio! Kofta/kebab have more fat from the ground meat. Pair with rice and salad for a complete post-workout meal. Avoid fried kofta — nearly doubles the calories.', ar: 'كفتة مشوية (٢ سيخ ~١٥٠ جرام): ~٣٠٠ سعرة، ٢٢ جرام بروتين، ٣ جرام كارب، ٢٢ جرام دهون. كباب مشوي (٢ سيخ): ~٢٨٠ سعرة، ٢٥ جرام بروتين. تكة فراخ (٢٠٠ جرام): ~٢٥٠ سعرة، ٤٠ جرام بروتين! التكة أفضل نسبة بروتين للسعرات. الكفتة والكباب فيهم دهون أكتر. تجنب الكفتة المقلية — السعرات بتتضاعف تقريباً.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['mahshi', 'stuffed vegetables', 'stuffed grape leaves', 'warak enab', 'mahshi calories', 'mahshi macros', 'stuffed peppers', 'stuffed zucchini'],
+    keywordsAr: ['محشي', 'ورق عنب', 'محشي كوسة', 'محشي فلفل', 'محشي كرنب', 'سعرات المحشي', 'محشي دايت'],
+    keywordsFranco: ['ma7shi', 'mahshi', 'wara2 3enab', 'ma7shi calories', 'ma7shi kosa', 'ma7shi diet'],
+    stateId: 'nutrition_mahshi_deep',
+    response: { en: 'Mahshi (stuffed vegetables, 6-8 pieces): ~350-450 cal, 8g protein, 55g carbs, 14g fat. Warak enab (grape leaves, 8-10 rolls): ~300-400 cal, 6g protein, 45g carbs, 15g fat. Mostly rice with some fat from cooking. Low protein — add grilled chicken or meat on the side. The vegetables (zucchini, peppers, cabbage) add fiber and vitamins. Lighter option: mahshi without extra oil/ghee, and use brown rice for more fiber.', ar: 'المحشي (٦-٨ قطع): ~٣٥٠-٤٥٠ سعرة، ٨ جرام بروتين، ٥٥ جرام كارب، ١٤ جرام دهون. ورق عنب (٨-١٠ لفات): ~٣٠٠-٤٠٠ سعرة. معظمه أرز مع دهون الطبخ. بروتين قليل — ضيف فراخ أو لحمة مشوية جنبه. الخضار (كوسة، فلفل، كرنب) بتزود الألياف والفيتامينات. أخف: محشي بدون زيت زيادة وأرز بني.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['hawawshi', 'hawawshy', 'egyptian meat pie', 'hawawshi calories', 'hawawshi macros', 'hawawshi healthy', 'baked hawawshi'],
+    keywordsAr: ['حواوشي', 'سعرات الحواوشي', 'حواوشي في الفرن', 'حواوشي دايت', 'حواوشي صحي', 'حواوشي مشوي'],
+    keywordsFranco: ['7awawshi', 'hawawshi', 'hawawshy', '7awawshy', 'hawawshi calories', 'hawawshi diet'],
+    stateId: 'nutrition_hawawshi_deep',
+    response: { en: 'Hawawshi (1 piece ~200g): ~550-700 cal, 22g protein, 40g carbs, 35g fat. Very calorie-dense due to the fatty ground meat and bread soaking up oil. Healthier version: use lean ground beef (90/10), bake in the oven instead of frying, use whole wheat bread. Baked hawawshi: ~400 cal, 25g protein, 35g carbs, 18g fat. Still not a diet food, but much better. Good for bulking days!', ar: 'الحواوشي (قطعة ~٢٠٠ جرام): ~٥٥٠-٧٠٠ سعرة، ٢٢ جرام بروتين، ٤٠ جرام كارب، ٣٥ جرام دهون. سعرات عالية بسبب اللحمة الدسمة والعيش بيشرب الزيت. نسخة أصح: استخدم لحمة مفرومة قليلة الدهن، اشويه في الفرن بدل القلي، استخدم عيش سن. حواوشي في الفرن: ~٤٠٠ سعرة. كويس لأيام البالك!' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['fattah', 'fatta', 'fattah calories', 'fattah macros', 'fattah healthy', 'eid fattah', 'fattah rice', 'fatta bil la7ma'],
+    keywordsAr: ['فتة', 'فتة لحمة', 'سعرات الفتة', 'فتة العيد', 'فتة بالخل', 'فتة صحية'],
+    keywordsFranco: ['fatta', 'fattah', 'fatta calories', 'fatta bel la7ma', 'fatta el 3eid', 'fattah diet'],
+    stateId: 'nutrition_fattah_deep',
+    response: { en: 'Fattah (1 plate ~350g): ~700-900 cal, 30g protein, 75g carbs, 35g fat. It\'s bread soaked in broth + rice + meat + vinegar garlic sauce. Very calorie-dense. The fried bread base is the main calorie bomb. Lighter version: skip the fried bread, use rice only, lean meat, less ghee. Even "healthy" fattah is still 500+ cal. Best saved for Eid celebrations — enjoy it once, don\'t eat 3 plates. Pair with salad to add fiber.', ar: 'الفتة (طبق ~٣٥٠ جرام): ~٧٠٠-٩٠٠ سعرة، ٣٠ جرام بروتين، ٧٥ جرام كارب، ٣٥ جرام دهون. عيش محمر في مرقة + أرز + لحمة + صلصة خل وثوم. سعرات عالية جداً. العيش المقلي هو مصدر السعرات الرئيسي. نسخة أخف: شيل العيش المقلي، أرز بس، لحمة قليلة الدهن، سمن أقل. خليها للعيد — استمتع بطبق واحد بس.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
