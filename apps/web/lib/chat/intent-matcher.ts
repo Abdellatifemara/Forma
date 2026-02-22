@@ -5446,6 +5446,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v35: Pre-Workout Meals ─────────────────────────────────
+  {
+    keywords: ['pre workout meal', 'what to eat before workout', 'eat before gym', 'pre workout food', 'best meal before training', 'fasted training'],
+    keywordsAr: ['وجبة قبل التمرين', 'اكل ايه قبل التمرين', 'اكل قبل الجيم', 'أكل قبل التدريب', 'تمرين صايم'],
+    keywordsFranco: ['wagba 2abl el tamreen', 'akol eih 2abl el tamreen', 'akl 2abl el gym', 'tamreen sayem'],
+    stateId: 'NT_MENU',
+    response: { en: 'Pre-workout meals: 2-3 HRS BEFORE (full meal): Chicken + rice + veggies. Oats + eggs + banana. Ful + bread + eggs (Egyptian classic!). 30-60 MIN BEFORE (snack): Banana + PB. Rice cake + honey. Dates + coffee. FASTED TRAINING: OK for fat loss cardio, NOT ideal for strength (you\'ll be weaker). Key nutrients: Carbs (energy) + Protein (muscle protection). Avoid: heavy fats (slow digestion), fiber-heavy foods (stomach issues), spicy food. Coffee 30min before = 5-10% performance boost!', ar: 'وجبات قبل التمرين: 2-3 ساعات قبل (وجبة كاملة): فراخ + رز + خضار. شوفان + بيض + موز. فول + عيش + بيض (كلاسيك مصري!). 30-60 دقيقة قبل (سناك): موز + زبدة فول سوداني. رايس كيك + عسل. بلح + قهوة. تمرين صايم: أوكي لكارديو حرق دهون، مش مثالي للقوة (هتبقى أضعف). مغذيات مهمة: كارب (طاقة) + بروتين (حماية العضل). تجنب: دهون تقيلة (هضم بطيء)، أكل عالي الألياف (مشاكل معدة)، أكل حار. قهوة 30 دقيقة قبل = 5-10% تحسن أداء!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v35: Post-Workout Meals ───────────────────────────────────
+  {
+    keywords: ['post workout meal', 'what to eat after workout', 'eat after gym', 'post workout food', 'after training meal', 'recovery meal'],
+    keywordsAr: ['وجبة بعد التمرين', 'اكل ايه بعد التمرين', 'اكل بعد الجيم', 'وجبة ريكفري'],
+    keywordsFranco: ['wagba ba3d el tamreen', 'akol eih ba3d el tamreen', 'akl ba3d el gym', 'wagba recovery'],
+    stateId: 'NT_MENU',
+    response: { en: 'Post-workout meals: EAT WITHIN 2 HOURS. Ideal ratio: 1:1 to 1:2 protein:carbs. QUICK OPTIONS: Protein shake + banana (fastest). Chicken + rice (classic). Eggs + toast. Greek yogurt + granola + honey. EGYPTIAN: Ful + bread + eggs. Koshary (carb reload!). Grilled chicken shawarma + rice. POST-WORKOUT DON\'Ts: Don\'t skip eating (recovery suffers), don\'t eat only protein (need carbs for glycogen), don\'t fast for hours after. Fat is OK but don\'t overdo it (slows absorption slightly). Your post-workout meal is the MOST important meal of the day!', ar: 'وجبات بعد التمرين: كل خلال ساعتين. النسبة المثالية: 1:1 إلى 1:2 بروتين:كارب. خيارات سريعة: بروتين شيك + موز (أسرع). فراخ + رز (كلاسيك). بيض + توست. زبادي يوناني + جرانولا + عسل. مصري: فول + عيش + بيض. كشري (إعادة تحميل كارب!). شاورما فراخ مشوي + رز. متعملش: تسكب الأكل (الريكفري بيتأثر)، تاكل بروتين بس (محتاج كارب للجلايكوجين)، تصوم ساعات بعد التمرين. الدهون أوكي بس متكترش (بتبطئ الامتصاص شوية). وجبة بعد التمرين أهم وجبة في اليوم!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v35: Cheat Day Strategy ───────────────────────────────────
+  {
+    keywords: ['cheat day', 'cheat meal', 'refeed day', 'can i eat junk food', 'diet break', 'free meal', 'eat whatever i want'],
+    keywordsAr: ['يوم فري', 'وجبة فري', 'يوم ريفيد', 'ممكن اكل جانك', 'استراحة دايت', 'اكل اي حاجة'],
+    keywordsFranco: ['yom free', 'wagba free', 'yom refeed', 'momken akol junk', 'estra7et diet', 'akol ay 7aga'],
+    stateId: 'NT_MENU',
+    response: { en: 'Cheat/refeed strategy: REFEED (better): Planned high-carb day at maintenance or slight surplus. Keeps metabolism up, refills glycogen, psychological break. Do 1x/week during a cut. CHEAT MEAL (not cheat day!): 1 meal where you eat what you want. Don\'t turn it into a 5000 calorie binge. RULES: 1) Earn it (be consistent 6 days) 2) One meal, not one day 3) Still hit protein target 4) Enjoy without guilt 5) Get back on track next meal (not "Monday"). BEST TIMING: After hardest workout of the week. A strategic refeed is a tool, not a failure!', ar: 'استراتيجية الفري/الريفيد: ريفيد (أفضل): يوم كارب عالي مخطط عند الميتننس أو فائض خفيف. بيحافظ على الحرق، بيملأ الجلايكوجين، استراحة نفسية. مرة/أسبوع في التنشيف. وجبة فري (مش يوم فري!): وجبة واحدة تاكل فيها اللي عايزه. متحولهاش لبينج 5000 سعرة. قواعد: 1) استحقها (التزم 6 أيام) 2) وجبة مش يوم 3) حقق هدف البروتين برضو 4) استمتع بدون ذنب 5) ارجع للمسار الوجبة الجاية (مش "الاتنين"). أفضل توقيت: بعد أصعب تمرين في الأسبوع. الريفيد الاستراتيجي أداة مش فشل!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v35: Cutting without Losing Muscle ────────────────────────
+  {
+    keywords: ['cut without losing muscle', 'preserve muscle cutting', 'lose fat keep muscle', 'cutting tips', 'how to cut properly', 'mini cut'],
+    keywordsAr: ['تنشيف بدون خسارة عضل', 'حافظ على العضل تنشيف', 'خسارة دهون بدون عضل', 'نصايح تنشيف', 'ميني كت'],
+    keywordsFranco: ['tanshif bdoon 5osaret 3adal', '7afez 3ala el 3adal tanshif', '5osaret dohon bdoon 3adal', 'nasa2e7 tanshif', 'mini cut'],
+    stateId: 'NT_MENU',
+    response: { en: 'Cutting without losing muscle: 1) Moderate deficit (500 cal max, NOT 1000) 2) HIGH protein (2.3-2.8g/kg — higher than bulking!) 3) Keep lifting heavy (don\'t switch to "light weight high reps" myth) 4) Reduce volume slightly (80% of bulking volume) 5) Prioritize sleep (7-9hrs) 6) Don\'t add excessive cardio (2-3x/week is enough) 7) Slow cut: 0.5-0.7% bodyweight loss per week 8) Refeed 1x/week (high carb day). MINI CUT: Aggressive 3-4 week cut (750 cal deficit) then return to maintenance. Lose 0.5-1kg/week on a proper cut. Muscle loss is minimal if protein is high!', ar: 'تنشيف بدون خسارة عضل: 1) عجز معتدل (500 سعرة ماكس مش 1000) 2) بروتين عالي (2.3-2.8ج/كج — أعلى من التضخيم!) 3) فضل ارفع ثقيل (متحولش ل"وزن خفيف تكرارات عالية" خرافة) 4) قلل الحجم شوية (80% من حجم التضخيم) 5) أولوية النوم (7-9 ساعات) 6) متضيفش كارديو مفرط (2-3 مرات/أسبوع كفاية) 7) تنشيف بطيء: 0.5-0.7% من الوزن/أسبوع 8) ريفيد مرة/أسبوع (يوم كارب عالي). ميني كت: تنشيف عدواني 3-4 أسابيع (750 سعرة عجز) بعدين ارجع ميتننس. خسارة 0.5-1كج/أسبوع في تنشيف صح. خسارة العضل قليلة لو البروتين عالي!' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+
+  // ── v35: Egyptian Gym Slang Dictionary ────────────────────────
+  {
+    keywords: ['gym slang', 'gym terms', 'gym vocabulary', 'what does pr mean', 'what does rep mean', 'fitness terms', 'bodybuilding terms'],
+    keywordsAr: ['مصطلحات جيم', 'كلمات جيم', 'مصطلحات كمال اجسام', 'يعني ايه بي آر', 'يعني ايه ريب'],
+    keywordsFranco: ['mostal7at gym', 'kalemat gym', 'mostal7at kamal agsam', 'ya3ny eih PR', 'ya3ny eih rep'],
+    stateId: 'QA_MENU',
+    response: { en: 'Gym slang dictionary: REP = one repetition. SET = group of reps. PR = Personal Record (best ever). 1RM = 1 Rep Max (heaviest you can lift once). AMRAP = As Many Reps As Possible. SUPERSET = two exercises back to back. DROP SET = reduce weight, continue without rest. RPE = Rate of Perceived Exertion (1-10). RIR = Reps In Reserve. PUMP = blood flow making muscles look bigger. DOMS = Delayed Onset Muscle Soreness. GAINS = muscle growth. CUT = fat loss phase. BULK = muscle building phase. NATTY = natural (no steroids). Egyptian slang: "تحميل" = loading, "تنشيف" = cutting, "تضخيم" = bulking!', ar: 'قاموس مصطلحات الجيم: REP = تكرار واحد. SET = مجموعة تكرارات. PR = رقم شخصي (أفضل أداء). 1RM = أقصى تكرار واحد. AMRAP = أكتر عدد تكرارات ممكنة. SUPERSET = تمرينين ورا بعض. DROP SET = قلل الوزن واستمر بدون راحة. RPE = مقياس الجهد (1-10). RIR = تكرارات متبقية. PUMP = تدفق الدم بيكبر العضلة مؤقتاً. DOMS = ألم العضلات المتأخر. GAINS = نمو عضلي. CUT = مرحلة خسارة دهون. BULK = مرحلة بناء عضل. NATTY = ناتشورال (بدون منشطات). مصطلحات مصرية: تحميل = زيادة الوزن، تنشيف = cutting، تضخيم = bulking!' },
+    priority: 7,
+    domain: 'root',
+  },
+
+  // ── v35: Wrist Pain & Exercises ───────────────────────────────
+  {
+    keywords: ['wrist pain', 'wrist pain gym', 'wrist pain bench', 'wrist pain push up', 'wrist exercises', 'wrist strengthening', 'carpal tunnel gym'],
+    keywordsAr: ['ألم معصم', 'ألم رسغ جيم', 'ألم رسغ بنش', 'ألم رسغ ضغط', 'تمارين معصم', 'تقوية المعصم'],
+    keywordsFranco: ['alam me3sam', 'alam rosg gym', 'alam rosg bench', 'alam rosg dagt', 'tamareen me3sam', 'ta2weyet el me3sam'],
+    stateId: 'HP_MENU',
+    response: { en: 'Wrist pain solutions: BENCH PRESS: Keep wrists straight (not bent back), bar sits on heel of palm, use wrist wraps for heavy sets. PUSH-UPS: Use push-up handles or fists (neutral wrist). CURLS: Don\'t bend wrist excessively at top. STRENGTHENING: Wrist curls (light, 3x20), reverse wrist curls, rice bucket exercises (dig hands in rice bucket). STRETCHES: Prayer stretch, reverse prayer, wrist circles. PREVENTION: Warm up wrists before pressing, avoid excessive wrist flexion under load. If pain persists >2 weeks with swelling, see a doctor — could be a TFCC or tendon issue.', ar: 'حلول ألم المعصم: بنش بريس: خلي المعصم مستقيم (مش مثني لورا)، البار على كعب الكف، استخدم ريست راب للسيتات الثقيلة. ضغط: استخدم مقابض أو القبضة (معصم محايد). كيرلز: متثنيش المعصم بزيادة في القمة. تقوية: ريست كيرل (خفيف، 3×20)، ريفرس ريست كيرل، تمارين دلو الأرز (ادخل إيدك في دلو أرز). استرتش: بريير ستريتش، ريفرس بريير، دوائر معصم. وقاية: سخن المعصم قبل الدفع، تجنب ثني المعصم المفرط تحت حمل. لو الألم مستمر >أسبوعين مع تورم، روح دكتور.' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v35: Alcohol and Fitness ──────────────────────────────────
+  {
+    keywords: ['alcohol and gains', 'drinking and muscle', 'beer and gym', 'alcohol calories', 'drinking and fitness', 'alcohol and fat loss', 'can i drink and workout'],
+    keywordsAr: ['كحول ومكاسب', 'شرب وعضلات', 'بيرة وجيم', 'سعرات الكحول', 'شرب ولياقة'],
+    keywordsFranco: ['ko7ol w makaseb', 'shorb w 3adalat', 'beera w gym', 'so3rat el ko7ol', 'shorb w leya2a'],
+    stateId: 'NT_MENU',
+    response: { en: 'Alcohol and fitness: THE TRUTH: Alcohol is the 4th macronutrient (7 cal/gram, 0 nutrients). EFFECTS: Reduces protein synthesis by 20-30%, disrupts sleep quality, increases cortisol, dehydrates you, lowers testosterone for 24-72hrs. DAMAGE CONTROL: If you drink: 1) Limit to 1-2 drinks 2) Avoid binge drinking (most damage) 3) Eat protein-rich food before/with 4) Extra water (1 glass per drink) 5) Never train hungover (injury risk). CALORIES: Beer ~150cal, wine ~120cal, spirits ~100cal + mixer. Occasional drinking = minimal impact. Regular = significant gains killer.', ar: 'الكحول واللياقة: الحقيقة: الكحول هو الماكرو الرابع (7 سعرات/جرام، 0 مغذيات). التأثيرات: بيقلل بناء البروتين 20-30%، بيخرب جودة النوم، بيزود الكورتيزول، بيجفف الجسم، بينزل التستوستيرون 24-72 ساعة. تقليل الضرر: لو بتشرب: 1) حدد 1-2 كوب 2) تجنب الإفراط (أكبر ضرر) 3) كل بروتين قبل/مع 4) مية زيادة (كوب لكل كوب كحول) 5) أبداً تتمرن وانت هانج أوفر (خطر إصابة). السعرات: بيرة ~150 سعرة، نبيذ ~120 سعرة. شرب أحياناً = تأثير قليل. منتظم = قاتل مكاسب كبير.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
