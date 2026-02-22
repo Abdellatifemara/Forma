@@ -7963,6 +7963,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v80 MILESTONE: PPL Split + Bro Split + Arnold Split + 5x5 StrongLifts + Gym Motivation ──
+  {
+    keywords: ['ppl split', 'push pull legs', 'ppl routine', 'ppl program', 'push pull legs plan', 'ppl 6 day', 'ppl best split'],
+    keywordsAr: ['بي بي إل', 'بوش بول ليجز', 'سبليت PPL', 'برنامج PPL'],
+    keywordsFranco: ['PPL', 'push pull legs', 'PPL split', 'PPL routine', 'PPL 6 day'],
+    stateId: 'info_ppl_split',
+    response: { en: 'PPL (Push Pull Legs) — The Most Popular Split: SCHEDULE: Mon: Push. Tue: Pull. Wed: Legs. Thu: Push. Fri: Pull. Sat: Legs. Sun: Rest. WHY PPL IS KING: Each muscle trained 2x/week (optimal frequency). Logical grouping (pushing muscles together, pulling together). Good volume per session. Enough recovery between sessions. PUSH: Chest, shoulders, triceps (see Push Day routine). PULL: Back, biceps, rear delts (see Pull Day routine). LEGS: Quads, hamstrings, glutes, calves (see Leg Day routine). TIPS FOR PPL: Day 1 of each pair = heavier (strength focus, lower reps). Day 2 = lighter (hypertrophy focus, higher reps, different exercises). Example: Push 1 = Barbell Bench 4x5. Push 2 = DB Bench 3x10. WHO IS THIS FOR: Intermediate-advanced lifters who can train 6 days/week. Best split for maximum muscle growth. Requires time commitment. NOT FOR: Beginners (too much volume, not enough recovery). People who can only train 3-4 days (use Upper/Lower instead). PPL vs BRO SPLIT: PPL hits everything 2x/week. Bro split hits everything 1x/week. Science clearly favors 2x/week frequency for natural lifters.', ar: 'PPL (بوش بول ليجز) — أشهر سبليت: الجدول: اثنين: دفع. تلات: سحب. أربع: رجل. خميس: دفع. جمعة: سحب. سبت: رجل. أحد: راحة. ليه PPL ملك: كل عضلة 2 مرات/أسبوع. تجميع منطقي. فوليوم كويس. ريكفري كافي. لمين: متوسط-متقدم يقدر يتمرن 6 أيام. أحسن سبليت لأقصى نمو. مش لـ: مبتدئين (فوليوم كتير). ناس بتتمرن 3-4 أيام بس. PPL ضد برو سبليت: PPL بيضرب كل حاجة 2 مرات/أسبوع. العلم بيفضّل 2 مرات للطبيعي.' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['bro split', 'bro split routine', 'body part split', '5 day split', 'one muscle per day', 'chest day back day', 'traditional split', 'bro split vs ppl'],
+    keywordsAr: ['برو سبليت', 'عضلة واحدة يومياً', '5 أيام سبليت', 'يوم صدر يوم ظهر', 'سبليت تقليدي'],
+    keywordsFranco: ['bro split', '5 day split', 'body part split', 'one muscle per day'],
+    stateId: 'info_bro_split',
+    response: { en: 'Bro Split — One Muscle Per Day: CLASSIC SCHEDULE: Mon: Chest. Tue: Back. Wed: Shoulders. Thu: Arms. Fri: Legs. Sat-Sun: Rest. EXAMPLE CHEST DAY: Bench Press 4x8, Incline DB Press 3x10, Cable Fly 3x12, Pec Deck 3x12, Dips 3x12. Total: 16 sets for chest. THE GOOD: Very high volume per muscle per session. Great pump (lots of blood flow to one area). Simple to plan. Good for advanced lifters on steroids (they recover faster). THE BAD: Each muscle only trained 1x/week (science shows 2x is better for naturals). Long time between training same muscle. May lead to excessive soreness. Suboptimal for natural lifters. WHEN BRO SPLIT WORKS: If you enjoy it and stay consistent (consistency > optimal). If you are advanced and need high volume per session. If you are enhanced (recovery is faster). VERDICT FOR MOST PEOPLE: PPL or Upper/Lower is scientifically superior for natural lifters. But an imperfect program done consistently beats a perfect program done inconsistently. If bro split keeps you in the gym, do it.', ar: 'برو سبليت — عضلة واحدة كل يوم: الجدول الكلاسيكي: اثنين: صدر. تلات: ظهر. أربع: كتف. خميس: ذراعين. جمعة: رجل. الجيد: فوليوم عالي جداً/عضلة/جلسة. بامب ممتاز. بسيط. كويس للمتقدمين على ستيرويدز. السيء: كل عضلة مرة/أسبوع بس (العلم بيقول 2 أحسن). وقت طويل بين تدريب نفس العضلة. لمعظم الناس: PPL أو علوي/سفلي أفضل علمياً للطبيعي. بس برنامج غير مثالي بانتظام أحسن من برنامج مثالي متقطع.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['arnold split', 'arnold routine', 'arnold schwarzenegger workout', 'arnold program', '6 day arnold', 'classic bodybuilding split'],
+    keywordsAr: ['سبليت أرنولد', 'روتين أرنولد', 'تمرين أرنولد شوارزنجر', 'برنامج أرنولد'],
+    keywordsFranco: ['arnold split', 'arnold routine', 'arnold program', 'arnold workout'],
+    stateId: 'info_arnold_split',
+    response: { en: 'Arnold Split — The Classic 6-Day Split: SCHEDULE: Mon: Chest + Back. Tue: Shoulders + Arms. Wed: Legs. Thu: Chest + Back. Fri: Shoulders + Arms. Sat: Legs. Sun: Rest. WHY CHEST + BACK TOGETHER: Antagonist supersets (push then pull) = great pump. More efficient (rest one while working the other). Arnold\'s favorite method. EXAMPLE CHEST + BACK DAY: Bench Press 4x8 → superset with Chin-ups 4x8. Incline DB Press 3x10 → superset with Barbell Row 3x10. Cable Fly 3x12 → superset with Seated Row 3x12. Dumbbell Pullover 3x12 (works both!). EXAMPLE SHOULDERS + ARMS: Overhead Press 4x8. Lateral Raise 4x12. Barbell Curl 3x10 → superset with Tricep Pushdown 3x10. Incline Curl 3x12 → superset with Overhead Extension 3x12. Reverse Curl 3x12. WHO IS THIS FOR: Intermediate-advanced lifters. People who like supersets and intensity. Those who want a classic bodybuilding approach. ADVANTAGE OVER PPL: Chest and back paired = better pump and time-efficient. Shoulders and arms get their own day (more direct work). DISADVANTAGE: Still 6 days/week commitment. May be too much volume for some naturals.', ar: 'سبليت أرنولد — الكلاسيكي 6 أيام: الجدول: اثنين: صدر + ظهر. تلات: كتف + ذراعين. أربع: رجل. ده بيتكرر. ليه صدر + ظهر مع بعض: سوبرسيتس متضادة = بامب ممتاز. أكفأ. مثال صدر + ظهر: بنش 4×8 ← سوبرسيت مع تشن أب 4×8. إنكلاين دمبل 3×10 ← تجديف 3×10. مثال كتف + ذراعين: أوفرهيد بريس 4×8. لاترال ريز 4×12. باي كيرل ← سوبرسيت مع تراي بوش داون. لمين: متوسط-متقدم. بيحبوا السوبرسيتس.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['stronglifts', '5x5 program', 'stronglifts 5x5', 'starting strength', '5x5 routine', 'beginner strength program', 'linear progression', 'novice program'],
+    keywordsAr: ['سترونجليفتس', 'برنامج 5×5', '5×5 روتين', 'برنامج قوة مبتدئين', 'تقدم خطي'],
+    keywordsFranco: ['stronglifts', '5x5 program', '5x5 routine', 'beginner strength', 'linear progression'],
+    stateId: 'info_stronglifts_5x5',
+    response: { en: 'StrongLifts 5x5 — Best Beginner Strength Program: THE PROGRAM: Only 2 workouts, alternating: Workout A: Squat 5x5, Bench Press 5x5, Barbell Row 5x5. Workout B: Squat 5x5, Overhead Press 5x5, Deadlift 1x5. SCHEDULE: Mon: A. Wed: B. Fri: A. Next week: B, A, B. Alternating forever. PROGRESSION: Start with empty bar (20kg). Add 2.5kg EVERY session (upper body) and 5kg (lower body). This means in 3 months you could be squatting 100kg+. HOW IT WORKS: Compound movements only (the exercises that matter most). Linear progression (adding weight every session). High frequency (squat 3x/week). Low volume per session but high frequency = optimal for beginners. WHEN TO STOP: When you can no longer add weight every session (usually 3-6 months). At that point, switch to an intermediate program (531, GZCLP, or PPL). COMMON MISTAKES: Starting too heavy (ego). Skipping sessions. Adding exercises (don\'t — the program works as-is). Not eating enough (you MUST eat in surplus for strength gains). RESULTS: Average beginner after 3-4 months: Squat 80-120kg, Bench 50-80kg, Deadlift 100-140kg, OHP 40-60kg. These are real, achievable numbers if you follow the program and eat.', ar: 'سترونجليفتس 5×5 — أحسن برنامج قوة للمبتدئين: البرنامج: تمرين A: سكوات 5×5، بنش 5×5، تجديف 5×5. تمرين B: سكوات 5×5، أوفرهيد بريس 5×5، ديدليفت 1×5. الجدول: اثنين A. أربع B. جمعة A. الأسبوع الجاي العكس. التقدم: ابدأ بالبار الفاضي (20كجم). زوّد 2.5كجم كل جلسة (علوي) و5كجم (سفلي). في 3 شهور ممكن تسكوت 100كجم+. امتى توقف: لما مش تقدر تزوّد كل جلسة (3-6 شهور). ساعتها غيّر لبرنامج متوسط. أخطاء شائعة: بداية تقيلة. تسكيب جلسات. إضافة تمارين (ما تعملش). نتائج بعد 3-4 شهور: سكوات 80-120كجم، بنش 50-80كجم.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['gym motivation', 'no motivation gym', 'lazy gym', 'dont want gym', 'stay motivated gym', 'gym discipline', 'gym consistency', 'quit gym', 'giving up gym'],
+    keywordsAr: ['تحفيز جيم', 'مفيش حماس', 'كسلان جيم', 'مش عايز جيم', 'انتظام جيم', 'هسيب الجيم'],
+    keywordsFranco: ['gym motivation', 'no motivation', 'kaslan gym', 'msh 3ayez gym', 'gym discipline'],
+    stateId: 'info_gym_motivation',
+    response: { en: 'Gym Motivation — How to Never Miss a Workout: THE TRUTH: Motivation is TEMPORARY. It comes and goes. You will NOT always feel motivated. The answer is DISCIPLINE — doing it regardless of how you feel. STRATEGIES THAT WORK: 1) LOWER THE BAR: "I\'ll just go for 15 minutes." Once you\'re there, you\'ll stay. The hardest part is showing up. 2) NEVER MISS TWICE: Miss once? Okay. Miss twice in a row? That\'s a habit forming. Never let it happen. 3) SCHEDULE IT: Put gym in your calendar like a meeting. Non-negotiable. Same time every day. 4) PREP THE NIGHT BEFORE: Gym bag packed, clothes ready, pre-workout measured. Remove all friction. 5) FIND A GYM PARTNER: Accountability is powerful. Hard to skip when someone is waiting. 6) TRACK PROGRESS: When you see numbers going up, you WANT to go. That\'s why logging matters. 7) PAY FOR A COMMITMENT: Annual membership (you\'ll go because you paid). Personal trainer sessions (you\'ll go because they\'re expecting you). ON BAD DAYS: "The workout you don\'t want to do is the one you need most." Just go. Do ANYTHING. A bad workout is infinitely better than no workout. LONG-TERM: After 3-6 months, gym becomes a HABIT. You\'ll feel weird NOT going. That\'s the goal — make it automatic, not emotional.', ar: 'تحفيز الجيم — ازاي ما تسكبش تمرين: الحقيقة: التحفيز مؤقت. بييجي ويروح. الإجابة: الانضباط — تعمله بغض النظر عن إحساسك. استراتيجيات بتشتغل: 1) قلل المطلوب: "هروح 15 دقيقة بس." لما توصل هتكمل. 2) ما تسكبش مرتين: مرة عادي. مرتين ورا بعض = عادة سيئة بتتكوّن. 3) حط ميعاد: في الأجندا زي اجتماع. غير قابل للنقاش. 4) جهّز من بالليل: شنطة جاهزة، لبس جاهز. 5) دوّر على بارتنر: المحاسبة قوية. 6) تابع التقدم: لما تشوف الأرقام بتزيد، هتعوز تروح. الأيام الوحشة: "التمرين اللي مش عايز تعمله هو اللي أنت محتاجه أكتر." روح. اعمل أي حاجة. تمرين وحش أحسن لا نهائي من مفيش تمرين. على المدى الطويل: بعد 3-6 شهور، الجيم بيبقى عادة.' },
+    priority: 8,
+    domain: 'health',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
