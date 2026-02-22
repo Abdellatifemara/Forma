@@ -5600,6 +5600,72 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v37: Yoga for Lifters ──────────────────────────────────
+  {
+    keywords: ['yoga for lifters', 'yoga and gym', 'yoga for muscle', 'yoga for flexibility', 'yoga recovery', 'yoga benefits gym'],
+    keywordsAr: ['يوجا لرافعي الأثقال', 'يوجا وجيم', 'يوجا للعضلات', 'يوجا للمرونة', 'يوجا للريكفري'],
+    keywordsFranco: ['yoga le raf3y el as2al', 'yoga w gym', 'yoga lel 3adalat', 'yoga lel morona', 'yoga lel recovery'],
+    stateId: 'WK_MENU',
+    response: { en: 'Yoga for lifters: WHY: Improves flexibility (deeper squats, better ROM), reduces injury, aids recovery, improves breathing/bracing. BEST POSES: Downward dog (hamstrings/calves), pigeon (hip opener), child\'s pose (back/lats), cobra (hip flexors), warrior 2 (hip mobility), thread the needle (thoracic rotation). ROUTINE: 15-20min on rest days, or 10min post-workout. Not a replacement for lifting, but an excellent complement. You DON\'T need to be flexible to start yoga — that\'s like saying you\'re too dirty to shower!', ar: 'يوجا لرافعي الأثقال: ليه: بتحسن المرونة (سكوات أعمق، نطاق أفضل)، بتقلل الإصابات، بتساعد الريكفري، بتحسن التنفس/الشد. أفضل أوضاع: داونورد دوج (خلفية/سمانة)، بيجون (فتح الوسط)، تشايلدز بوز (ظهر/لاتس)، كوبرا (هيب فليكسور)، واريور 2 (موبيليتي وسط)، ثريد ذا نيدل (دوران صدري). الروتين: 15-20 دقيقة في أيام الراحة، أو 10 دقايق بعد التمرين. مش بديل للحديد بس مكمل ممتاز. مش محتاج تكون مرن عشان تبدأ يوجا — ده زي ما تقول انت وسخ عشان تستحمى!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v37: Running for Gym-Goers ────────────────────────────────
+  {
+    keywords: ['running and gym', 'running for lifters', 'should i run', 'running kills gains', 'cardio and muscle', 'couch to 5k', 'how to start running'],
+    keywordsAr: ['جري وجيم', 'جري لرافعي الأثقال', 'لازم اجري', 'الجري بيقتل المكاسب', 'كارديو وعضل', 'ازاي ابدأ جري'],
+    keywordsFranco: ['gary w gym', 'gary le raf3y el as2al', 'lazem agry', 'el gary bey2tel el makaseb', 'ezay abda2 gary'],
+    stateId: 'WK_MENU',
+    response: { en: 'Running + lifting guide: MYTH: "Running kills gains" — only if you run marathons or don\'t eat enough. IDEAL: 2-3 runs/week, 20-30min each. Run AFTER lifting or on separate days (never before heavy legs). BEGINNER PLAN: Week 1-2: Walk 5min → jog 1min → walk 1min, repeat 20min. Week 3-4: Jog 3min → walk 1min. Week 5+: Jog 10-15min continuous. TIPS: Good shoes matter (invest 500-800 LE), easy pace (can hold conversation), increase distance 10%/week max. EAT MORE if you add running to compensate for extra burn. Running improves heart health, mental health, and endurance for lifting!', ar: 'دليل الجري + الحديد: خرافة: "الجري بيقتل المكاسب" — بس لو بتجري ماراثونات أو مش بتاكل كفاية. المثالي: 2-3 مرات جري/أسبوع، 20-30 دقيقة. اجري بعد الحديد أو في أيام منفصلة (أبداً قبل يوم رجل ثقيل). خطة مبتدئ: أسبوع 1-2: مشي 5 دقايق → هرولة دقيقة → مشي دقيقة، كرر 20 دقيقة. أسبوع 3-4: هرولة 3 دقايق → مشي دقيقة. أسبوع 5+: هرولة 10-15 دقيقة متواصلة. نصايح: حذاء كويس مهم (500-800 جنيه)، سرعة سهلة (تقدر تتكلم)، زود المسافة 10%/أسبوع ماكس. كل أكتر لو ضيفت جري لتعويض الحرق الإضافي.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v37: Mind-Muscle Connection ────────────────────────────────
+  {
+    keywords: ['mind muscle connection', 'feel the muscle', 'cant feel the muscle', 'muscle activation', 'focus on muscle', 'squeeze the muscle'],
+    keywordsAr: ['تواصل عقلي عضلي', 'حس بالعضلة', 'مش حاسس بالعضلة', 'تفعيل العضلة', 'ركز على العضلة'],
+    keywordsFranco: ['tawasol 3a2ly 3adaly', '7es bel 3adala', 'msh 7ases bel 3adala', 'taf3eel el 3adala', 'rakez 3ala el 3adala'],
+    stateId: 'WK_MENU',
+    response: { en: 'Mind-muscle connection (MMC): SCIENCE: Studies show 12% more muscle activation when you focus on the target muscle. HOW: 1) Slow down the rep (2-3sec negative) 2) Lighter weight with more control 3) Pre-activation: flex the muscle before the set 4) Close your eyes for isolation exercises 5) Touch the muscle between sets 6) Think about SQUEEZING, not just moving weight. WHERE IT MATTERS MOST: Isolation exercises (laterals, curls, flyes). LESS IMPORTANT for: Heavy compounds (just focus on moving the weight). It takes practice — start with bicep curls (easiest to feel) and build from there!', ar: 'التواصل العقلي العضلي (MMC): العلم: دراسات أثبتت 12% تفعيل عضلي أكتر لما تركز على العضلة المستهدفة. ازاي: 1) بطئ التكرار (2-3ث سلبي) 2) وزن أخف بتحكم أكتر 3) تفعيل مسبق: شد العضلة قبل السيت 4) غمض عينيك في تمارين العزل 5) لمس العضلة بين السيتات 6) فكر في العصر مش مجرد تحريك الوزن. أكتر أهمية في: تمارين العزل (لاترالز، كيرلز، فلايز). أقل أهمية في: المركبات الثقيلة (ركز على تحريك الوزن). محتاج تمرين — ابدأ بالبايسبس كيرل (أسهل تحس بيها) واتدرج!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v37: Sodium & Water Retention ─────────────────────────────
+  {
+    keywords: ['sodium', 'salt and water retention', 'bloated', 'water weight', 'puffy face', 'retaining water', 'how to reduce bloating'],
+    keywordsAr: ['صوديوم', 'ملح واحتباس مية', 'منتفخ', 'وزن مية', 'وش منتفخ', 'احتباس مية', 'تقليل الانتفاخ'],
+    keywordsFranco: ['sodium', 'mel7 w e7tebas maya', 'montefekh', 'wazn maya', 'wesh montefekh', 'e7tebas maya', 'ta2leel el entefakh'],
+    stateId: 'HP_MENU',
+    response: { en: 'Sodium & water retention: WHY you retain water: 1) High sodium meal (can add 1-3kg overnight!) 2) Starting creatine 3) Carb loading 4) Menstrual cycle 5) Stress/cortisol 6) Flying/travel. HOW TO REDUCE: 1) Drink MORE water (counterintuitive but works) 2) Potassium-rich foods (banana, potato, spinach) 3) Reduce sodium to ~2300mg/day 4) Sweat (sauna, walking) 5) Time (usually resolves in 2-3 days). IMPORTANT: Water weight is NOT fat. Don\'t panic after a salty meal — your actual body fat didn\'t change. Egyptian food tends to be high sodium — be mindful of added salt.', ar: 'الصوديوم واحتباس المية: ليه بتحتبس مية: 1) وجبة عالية الصوديوم (ممكن تضيف 1-3كج بين يوم وليلة!) 2) بداية الكرياتين 3) تحميل كارب 4) الدورة الشهرية 5) التوتر/الكورتيزول 6) السفر بالطيران. ازاي تقلل: 1) اشرب مية أكتر (عكس المتوقع بس بيشتغل) 2) أكل غني بالبوتاسيوم (موز، بطاطس، سبانخ) 3) قلل الصوديوم لـ~2300مج/يوم 4) تعرق (ساونا، مشي) 5) الوقت (عادة بيتحل في 2-3 أيام). مهم: وزن المية مش دهون. متخضش بعد وجبة مالحة — الدهون الفعلية متغيرتش. الأكل المصري بيبقى عالي الصوديوم — خلي بالك من الملح الزيادة.' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v37: Bulking Meal Plan ────────────────────────────────────
+  {
+    keywords: ['bulking meal plan', 'mass building diet', 'weight gain meal plan', '3000 calorie meal plan', 'bulking food', 'clean bulk diet'],
+    keywordsAr: ['خطة أكل تضخيم', 'دايت بناء كتلة', 'خطة زيادة وزن', 'خطة 3000 سعرة', 'أكل تضخيم'],
+    keywordsFranco: ['5ettet akl tadkheem', 'diet bena2 kotla', '5ettet zyada wazn', '5ettet 3000 so3ra', 'akl tadkheem'],
+    stateId: 'NT_MENU',
+    response: { en: 'Bulking meal plan (3000 cal): BREAKFAST: 4 eggs + oats 80g + banana + milk (700 cal, 45g P). SNACK: PB sandwich + shake (500 cal, 35g P). LUNCH: Chicken 250g + rice 2 cups + veggies + olive oil (800 cal, 55g P). SNACK: Yogurt + granola + honey + nuts (400 cal, 25g P). DINNER: Beef 200g + pasta + salad (600 cal, 45g P). TOTAL: ~3000 cal, ~205g protein. Egyptian version: Ful + eggs breakfast, koshary + chicken lunch, grilled meat dinner. KEY: Eat consistently (same times daily), never skip meals, keep a food log. If not gaining: add 200 cal/week!', ar: 'خطة تضخيم (3000 سعرة): فطار: 4 بيض + شوفان 80ج + موز + لبن (700 سعرة، 45ج بروتين). سناك: سندوتش زبدة فول سوداني + شيك (500 سعرة، 35ج). غدا: فراخ 250ج + رز كوبين + خضار + زيت زيتون (800 سعرة، 55ج). سناك: زبادي + جرانولا + عسل + مكسرات (400 سعرة، 25ج). عشا: لحمة 200ج + مكرونة + سلطة (600 سعرة، 45ج). الإجمالي: ~3000 سعرة، ~205ج بروتين. النسخة المصرية: فول + بيض فطار، كشري + فراخ غدا، لحمة مشوية عشا. المفتاح: كل بانتظام (نفس الأوقات يومياً)، متعديش وجبات، سجل أكلك. مش بتزود: ضيف 200 سعرة/أسبوع!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v37: Training Frequency per Muscle ────────────────────────
+  {
+    keywords: ['how often train muscle', 'training frequency', 'train muscle twice week', 'once a week enough', 'muscle recovery time', 'how many times train'],
+    keywordsAr: ['كام مرة امرن العضلة', 'تكرار التدريب', 'تمرين العضلة مرتين', 'مرة في الأسبوع كفاية', 'وقت ريكفري العضلة'],
+    keywordsFranco: ['kam marra amarren el 3adala', 'takrar el tadreeb', 'tamreen el 3adala marteen', 'marra fel osbo3 kefaya'],
+    stateId: 'WK_MENU',
+    response: { en: 'Training frequency: SCIENCE says 2x/week per muscle is OPTIMAL (vs 1x). WHY: Protein synthesis is elevated 24-48hrs after training — hitting muscle 2x catches 2 growth windows. RECOVERY TIME: Small muscles (biceps, triceps, shoulders): 48-72hrs. Large muscles (legs, back, chest): 72-96hrs. PRACTICAL: Full body 3x/week = each muscle 3x (beginner). Upper/Lower 4x = each muscle 2x (intermediate). PPL 6x = each muscle 2x (advanced). CAN you train daily? Yes, but different muscles each day. More isn\'t always better — recovery matters as much as training!', ar: 'تكرار التدريب: العلم بيقول مرتين/أسبوع لكل عضلة هو الأمثل (مقارنة بمرة). ليه: بناء البروتين مرتفع 24-48 ساعة بعد التمرين — تمرين العضلة مرتين بيمسك نافذتين نمو. وقت الريكفري: عضلات صغيرة (باي، تراي، كتف): 48-72 ساعة. عضلات كبيرة (رجل، ظهر، صدر): 72-96 ساعة. عملياً: فول بادي 3 مرات/أسبوع = كل عضلة 3 مرات (مبتدئ). أب/لو 4 مرات = كل عضلة مرتين (متوسط). PPL 6 مرات = كل عضلة مرتين (متقدم). تقدر تتمرن يومياً؟ أيوا بس عضلات مختلفة. أكتر مش دايماً أفضل — الريكفري مهم زي التمرين!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
