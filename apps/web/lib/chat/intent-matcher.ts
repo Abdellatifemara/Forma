@@ -6467,6 +6467,61 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v49: Cable Exercises Guide ────────────────────────
+  {
+    keywords: ['cable exercises', 'cable workout', 'cable machine exercises', 'cable chest', 'cable back', 'cable shoulder', 'cable arm', 'best cable exercises'],
+    keywordsAr: ['تمارين كابل', 'تمرين كابل', 'ماشين كابل', 'كابل صدر', 'كابل ظهر', 'كابل كتف', 'كابل ذراع', 'أفضل تمارين كابل'],
+    keywordsFranco: ['tamreen cable', 'tamreen cable machine', 'cable sadr', 'cable dahr', 'cable ketf', 'cable dera3', 'afdal tamreen cable'],
+    stateId: 'WK_MENU',
+    response: { en: 'Cable Exercises Guide: WHY CABLES: Constant tension throughout the full ROM (unlike free weights where tension varies). Great for isolation, mind-muscle connection, and pump. CHEST: Cable flyes (high, mid, low), cable crossover, cable press. BACK: Cable rows (seated, standing), straight arm pulldown, face pulls, single arm cable row. SHOULDERS: Cable lateral raise (best lateral raise variation!), cable front raise, cable upright row, face pulls. ARMS: Cable curl (rope, bar, single), cable tricep pushdown (rope, bar, V-bar), overhead cable extension. LEGS: Cable pull-through, cable kickback, cable hip abduction. CORE: Cable woodchop, pallof press, cable crunch. PRO TIP: Cable lateral raises and cable curls have a completely different resistance curve than dumbbells — do BOTH versions!', ar: 'دليل تمارين الكابل: ليه كابل: توتر مستمر طول مدى الحركة (عكس الأوزان الحرة). ممتاز للعزل والماند-ماصل كونكشن والبامب. صدر: كابل فلاي (عالي، وسط، واطي)، كروسأوفر، كابل برس. ظهر: كابل رو (جالس، واقف)، ستريت آرم بولداون، فيس بول، سنجل آرم. أكتاف: كابل لاترال رايز (أفضل فرسيون!)، كابل فرونت رايز، فيس بول. ذراع: كابل كيرل (حبل، بار، سنجل)، كابل تراي بوشداون (حبل، بار، V-بار)، أوفرهيد إكستنشن. رجل: كابل بول-ثرو، كابل كيك باك. كور: كابل وودتشوب، بالوف برس، كابل كرانش. نصيحة: كابل لاترال رايز وكابل كيرل ليهم منحنى مقاومة مختلف تماماً عن الدمبل — اعمل الاتنين!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v49: Lat Pulldown vs Pull-Up ────────────────────────
+  {
+    keywords: ['lat pulldown vs pull up', 'pull up or lat pulldown', 'lat pulldown form', 'lat pulldown grip', 'wide grip lat pulldown', 'close grip lat pulldown', 'lat pulldown benefits'],
+    keywordsAr: ['لات بولداون ولا عقلة', 'عقلة ولا لات بولداون', 'فورم اللات بولداون', 'قبضة اللات بولداون'],
+    keywordsFranco: ['lat pulldown wala 3a2la', '3a2la wala lat pulldown', 'form el lat pulldown', '2abdet el lat pulldown'],
+    stateId: 'WK_MENU',
+    response: { en: 'Lat Pulldown vs Pull-Up: PULL-UP WINS: More muscle activation (stabilizers work), functional strength, better hormonal response, free (just need a bar). PULLDOWN WINS: Adjustable weight (can go lighter for beginners or heavier for advanced), easier to do drop sets, multiple grip attachments, less technique-dependent. GRIPS: Wide grip = more outer lat width. Close/neutral grip = more lat thickness + bicep. Reverse grip (underhand) = more bicep involvement + lower lats. FORM (pulldown): Lean back slightly (15°), chest up, pull to upper chest (not behind neck!), squeeze at bottom, control the return. Common mistakes: using momentum, pulling to face, leaning too far back. BEST APPROACH: Pull-ups as main exercise, lat pulldown for extra volume. Can\'t do pull-ups? Use pulldown to build up to bodyweight, then switch.', ar: 'لات بولداون مقابل العقلة: العقلة أفضل في: تنشيط عضلي أكتر (عضلات الثبات بتشتغل)، قوة وظيفية. اللات بولداون أفضل في: وزن قابل للتعديل (أخف للمبتدئين أو أتقل)، دروب سيتات أسهل، أكتر من قبضة. القبضات: واسعة = عرض اللاتس. ضيقة/نيوترال = سمك اللاتس + باي. عكسية = باي أكتر + لاتس سفلي. الفورم: مل ورا شوية (15°)، صدر لفوق، اسحب لأعلى الصدر (مش ورا الرقبة!)، اعصر تحت، ارجع بتحكم. أخطاء: استخدام الزخم، سحب للوش، ميلان كتير. أفضل طريقة: عقلة كتمرين أساسي، لات بولداون للفوليوم الزيادة.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v49: Calf Training ────────────────────────
+  {
+    keywords: ['calf training', 'calf exercises', 'calf raise', 'stubborn calves', 'grow calves', 'calf workout', 'small calves', 'calf genetics'],
+    keywordsAr: ['تمارين السمانة', 'تمرين كاف', 'كاف رايز', 'سمانة صعبة', 'تكبير السمانة', 'سمانة صغيرة', 'جينات السمانة'],
+    keywordsFranco: ['tamreen el semana', 'tamreen calf', 'calf raise', 'semana sa3ba', 'takbeer el semana', 'semana soghayara'],
+    stateId: 'WK_MENU',
+    response: { en: 'Calf Training Guide: WHY ARE CALVES STUBBORN? They walk thousands of steps daily (already adapted to high reps). Need HEAVY weight + FULL ROM + HIGH FREQUENCY. EXERCISES: Standing calf raise (targets gastrocnemius — the big muscle), seated calf raise (targets soleus — the flat muscle underneath). Do BOTH! FORM: Full stretch at bottom (2sec pause), full contraction at top (2sec squeeze). No bouncing! VOLUME: 12-20 sets per week (yes, that much!). Train calves 3-4x/week (they recover fast). REP RANGE: Mix heavy (6-8 reps) and light (15-20 reps). GENETICS: Calves are largely genetic (muscle belly length). If you have high calves, they\'ll look small even when strong. But you can still maximize what you have. TRAINING TRICKS: Train calves FIRST in your workout (priority principle), do unilateral work if one is smaller, try barefoot calf raises for better activation.', ar: 'دليل تمارين السمانة: ليه السمانة صعبة؟ بتمشي آلاف الخطوات يومياً (متأقلمة على التكرارات العالية). محتاجة وزن تقيل + مدى حركة كامل + تكرار عالي. التمارين: كاف رايز واقف (بتستهدف الجاستروكنيميوس — العضلة الكبيرة)، كاف رايز جالس (بتستهدف السولييس — العضلة المسطحة تحت). اعمل الاتنين! الفورم: استريتش كامل تحت (2 ثانية)، انقباض كامل فوق (2 ثانية عصر). بدون طرطقة! الفوليوم: 12-20 سيت/أسبوع (أيوا بالكتر ده!). درب السمانة 3-4 مرات/أسبوع (بتتعافى بسرعة). التكرارات: خلط تقيل (6-8) وخفيف (15-20). الجينات: السمانة جينية بشكل كبير. لو سمانتك عالية، هتبان صغيرة حتى لو قوية. بس تقدر تعظم اللي عندك.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v49: Trap Training ────────────────────────
+  {
+    keywords: ['trap training', 'trap exercises', 'shrugs', 'upper trap workout', 'how to grow traps', 'trap workout', 'farmers carry traps', 'big traps'],
+    keywordsAr: ['تمارين الترابيزيس', 'شروجز', 'تكبير الترابيزيس', 'تمرين الترابس', 'فارمرز كاري'],
+    keywordsFranco: ['tamreen el trapezius', 'shrugs', 'takbeer el trapezius', 'tamreen el traps', 'farmers carry'],
+    stateId: 'WK_MENU',
+    response: { en: 'Trap Training Guide: ANATOMY: Traps have 3 parts — Upper (shrugs), Mid (rows), Lower (Y-raises). Most people only train upper. EXERCISES: Upper: Barbell shrugs (heavy, 3x12-15), dumbbell shrugs, trap bar shrugs. Mid: Face pulls, cable rows with squeeze, chest-supported rows. Lower: Prone Y-raises, cable Y-raises. BEST MASS BUILDERS: Heavy deadlifts (traps work hard as stabilizers), farmer walks (grip + traps), rack pulls (overloaded partial deadlift). FORM FOR SHRUGS: Straight up and down (don\'t roll shoulders — it\'s a myth that doesn\'t add benefit and risks injury). Hold at top 2sec, squeeze hard. Heavy weight, controlled reps. FREQUENCY: Train traps 2-3x/week (small muscle, recovers fast). Can superset shrugs with any exercise. SECRET: Heavy deadlifts alone build impressive traps — many powerlifters have huge traps without ever doing shrugs!', ar: 'دليل تمارين الترابيزيس: التشريح: الترابس لها 3 أجزاء — علوي (شروجز)، وسط (رو)، سفلي (Y-رايز). أغلب الناس بتدرب العلوي بس. التمارين: علوي: باربل شروجز (تقيل، 3×12-15)، دمبل شروجز. وسط: فيس بولز، كابل رو بعصرة. سفلي: Y-رايز مكبوب. أفضل بناة الحجم: ديدلفت تقيل (الترابس بتشتغل كمثبتات)، فارمرز ووك (قبضة + ترابس)، راك بولز. الفورم للشروجز: فوق وتحت على طول (متلفش الكتف — خرافة ومش بتزود حاجة وبتخاطر بالإصابة). امسك فوق 2 ثانية، اعصر بقوة. التكرار: 2-3 مرات/أسبوع. سيكريت: الديدلفت التقيل لوحده بيبني ترابس مبهرة — لاعبي باورليفتنج كتير عندهم ترابس ضخمة بدون شروجز!' },
+    priority: 6,
+    domain: 'workout',
+  },
+
+  // ── v49: Rear Delt Training ────────────────────────
+  {
+    keywords: ['rear delt', 'rear delt exercises', 'rear deltoid', 'reverse flye', 'rear delt fly', 'posterior deltoid', 'back of shoulder', 'rear delt neglected'],
+    keywordsAr: ['الديلت الخلفي', 'تمارين الديلت الخلفي', 'فلاي عكسي', 'خلف الكتف', 'الديلت الخلفي المهمل'],
+    keywordsFranco: ['el delt el 5alfy', 'tamreen el delt el 5alfy', 'fly 3aksy', '5alf el ketf', 'el delt el 5alfy el mohmal'],
+    stateId: 'WK_MENU',
+    response: { en: 'Rear Delt Training — The MOST neglected muscle: WHY: 90% of gym-goers have underdeveloped rear delts because they focus on pressing (front/side delts) and ignore pulling (rear). This causes shoulder imbalance and injury risk. EXERCISES: Face pulls (cable or band — #1 rear delt exercise), reverse cable flyes, reverse pec deck, bent-over dumbbell reverse flyes, prone Y-raises, band pull-aparts. VOLUME: 15-25 sets/week (they need a LOT of work to catch up). REP RANGE: 12-20 reps (rear delts respond better to higher reps with squeeze). FREQUENCY: Every upper body day + can add daily band work. FORM: Light weight, SLOW controlled reps, squeeze at peak contraction 2sec. Don\'t use momentum. DAILY MAINTENANCE: 100 band pull-aparts every day (takes 5min). Within weeks your posture improves and shoulders look more 3D!', ar: 'تمارين الديلت الخلفي — أكثر عضلة مهملة: ليه: 90% من ناس الجيم عندها ديلت خلفي ضعيف لأنهم بيركزوا على الدفع (ديلت أمامي/جانبي) وبيتجاهلوا السحب. ده بيسبب خلل في الكتف وخطر إصابة. التمارين: فيس بولز (كابل أو باند — تمرين رقم 1)، ريفرس كابل فلاي، ريفرس بيك ديك، بنت أوفر دمبل ريفرس فلاي، باند بول أبارتس. الفوليوم: 15-25 سيت/أسبوع (محتاجين شغل كتير يلحقوا). التكرارات: 12-20 (الديلت الخلفي بيستجيب أفضل لتكرارات عالية مع عصر). التكرار: كل يوم أب بادي + ممكن تضيف باند يومياً. الفورم: وزن خفيف، بطيء ومتحكم، اعصر 2 ثانية. صيانة يومية: 100 باند بول أبارت/يوم (5 دقائق). في أسابيع الوقفة بتتحسن والأكتاف بتبان 3D!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
