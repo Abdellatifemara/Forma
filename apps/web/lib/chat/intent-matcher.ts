@@ -6929,6 +6929,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v58: Supplement Brands Egypt + Protein Types + BCAA vs EAA + Pre-Workout + Mass Gainer ──
+  {
+    keywords: ['supplement brand egypt', 'best supplement egypt', 'protein brand egypt', 'supplement store egypt', 'buy supplements egypt', 'supplement price egypt', 'original supplement egypt', 'fake supplement egypt'],
+    keywordsAr: ['براند سبلمنت مصر', 'أفضل مكملات مصر', 'براند بروتين مصر', 'محل مكملات مصر', 'سعر مكملات مصر', 'مكملات أصلية مصر'],
+    keywordsFranco: ['supplement brand masr', 'protein brand masr', 'best supplement egypt'],
+    stateId: 'info_supplement_brands_egypt',
+    response: { en: 'Supplement Brands in Egypt — Complete Guide: TRUSTED BRANDS: Optimum Nutrition (ON) — Gold Standard Whey is the #1 seller worldwide. Reliable quality. MuscleTech — NitroTech is popular, good value. Dymatize — ISO100 is one of the purest whey isolates. BSN — Syntha-6 is great-tasting but higher fat/carb. Kevin Levrone — Popular in Egypt, good value. Rule1 — Clean formulas, gaining popularity. WHERE TO BUY: iHerb (online, ships to Egypt), Body & Soul stores, MaxMuscle, GNC Egypt, The Supplement Store. AVOID: Buying from random social media sellers (high fake rate), unmarked containers, supplements without hologram seals. HOW TO SPOT FAKES: Check hologram/QR code, compare with official brand photos, check manufacture date, buy from authorized retailers only. PRICE RANGES: Whey Protein (5lb): 2000-3500 LE. Creatine (300g): 400-800 LE. Pre-Workout: 800-1500 LE. BCAA: 600-1200 LE. Note: Egyptian customs sometimes delays shipments, plan ahead!', ar: 'براندات المكملات في مصر — دليل كامل: براندات موثوقة: أوبتيمم نيوتريشن (ON) — جولد ستاندرد واي #1 عالمياً. ماسل تك — نايتروتك مشهور، قيمة كويسة. ديماتايز — ISO100 من أنقى الواي أيزوليت. BSN — سينثا-6 طعم جميل بس دهون/كارب أعلى. كيفن ليفرون — مشهور في مصر. فين تشتري: iHerb (أونلاين)، بودي آند سول، ماكس ماسل، GNC مصر. تجنب: الشراء من سوشيال ميديا عشوائي (نسبة فيك عالية). إزاي تكتشف الفيك: هولوجرام/QR كود، قارن مع صور الشركة، تاريخ الصنع، اشتري من موزعين معتمدين بس. الأسعار: واي بروتين (5lb): 2000-3500 ج. كرياتين (300ج): 400-800 ج. بري ووركاوت: 800-1500 ج.' },
+    priority: 8,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['protein powder types', 'whey concentrate', 'whey isolate', 'whey hydrolysate', 'casein protein', 'plant protein powder', 'egg protein powder', 'protein powder difference'],
+    keywordsAr: ['أنواع بروتين', 'واي كونسنتريت', 'واي أيزوليت', 'واي هيدروليزيت', 'كاسين', 'بروتين نباتي', 'فرق بروتين'],
+    keywordsFranco: ['protein types', 'whey concentrate', 'whey isolate', 'casein', 'plant protein'],
+    stateId: 'info_protein_powder_types',
+    response: { en: 'Protein Powder Types Explained: WHEY CONCENTRATE: 70-80% protein, cheapest, good taste, some lactose. Best for budget. 25g scoop = ~120 cal. WHEY ISOLATE: 90%+ protein, less lactose, faster absorption, lower fat/carb. Best for cutting/lactose sensitivity. 25g scoop = ~100 cal. WHEY HYDROLYSATE: Pre-digested, fastest absorption, most expensive. Best for post-workout. Bitter taste. CASEIN: Slow-digesting (6-8 hours). Best before bed. Makes you feel full. Great for cutting. Can mix thick like pudding. EGG WHITE PROTEIN: Dairy-free, complete amino profile, moderate absorption speed. Good for dairy allergy. PLANT PROTEIN (Pea/Rice/Hemp): Vegan-friendly. Pea protein is closest to whey in quality. Mix pea+rice for complete amino profile. May need larger serving for equivalent protein. SOY PROTEIN: Complete protein, controversial (phytoestrogens). Fine in moderation. BEST OVERALL VALUE: Whey concentrate if you tolerate dairy. Whey isolate if lactose is an issue. Casein before bed is a game-changer for muscle building!', ar: 'أنواع مسحوق البروتين: واي كونسنتريت: 70-80% بروتين، أرخص، طعم كويس، فيه لاكتوز. الأفضل للميزانية. واي أيزوليت: 90%+ بروتين، لاكتوز أقل، امتصاص أسرع. الأفضل للكاتنج/حساسية لاكتوز. واي هيدروليزيت: مهضوم مسبقاً، أسرع امتصاص، أغلى. طعم مُر. كاسين: بطيء الهضم (6-8 ساعات). الأفضل قبل النوم. بيحسسك بالشبع. بروتين بيض: خالي ألبان، بروفايل أمينو كامل. بروتين نباتي: بازلاء+أرز للبروفايل الكامل. أفضل قيمة: واي كونسنتريت لو بتتحمل الألبان. كاسين قبل النوم جيم تشينجر!' },
+    priority: 7,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['bcaa vs eaa', 'bcaa worth it', 'eaa supplement', 'bcaa supplement', 'amino acid supplement', 'bcaa necessary', 'essential amino acids', 'branched chain amino acids'],
+    keywordsAr: ['BCAA ضد EAA', 'بي سي ايه ايه', 'اي ايه ايه', 'أحماض أمينية', 'أمينو أسيد', 'BCAA مهم'],
+    keywordsFranco: ['bcaa vs eaa', 'bcaa', 'eaa', 'amino acid'],
+    stateId: 'info_bcaa_vs_eaa',
+    response: { en: 'BCAA vs EAA — The Real Truth: BCAA (Branched-Chain Amino Acids): Leucine, Isoleucine, Valine. 3 of the 9 essential amino acids. EAA (Essential Amino Acids): ALL 9 essential amino acids (including the 3 BCAAs). THE VERDICT: If you eat enough protein (1.6-2.2g/kg), YOU DO NOT NEED EITHER! Your protein shakes and food already contain all the BCAAs and EAAs you need. BCAAs alone do NOT build muscle — you need ALL essential amino acids present. IF YOU MUST CHOOSE: EAA > BCAA every time. EAAs contain everything BCAAs have PLUS the other 6 essential amino acids. WHEN BCAA/EAA MIGHT HELP: Fasted training (training on empty stomach), very long training sessions (2+ hours), if you are not hitting daily protein targets, during extreme caloric deficit. SAVE YOUR MONEY: Spend on whey protein, creatine, and real food FIRST. BCAAs are the most overhyped supplement in the industry!', ar: 'BCAA ضد EAA — الحقيقة: BCAA: لوسين، أيزولوسين، فالين. 3 من 9 أحماض أمينية أساسية. EAA: كل الـ9 أحماض أمينية أساسية (شاملة الـ3 BCAAs). الحكم: لو بتاكل بروتين كفاية (1.6-2.2ج/كج)، مش محتاجهم! الشيكات والأكل فيهم كل الـBCAAs والـEAAs. BCAAs لوحدهم مش بيبنوا عضل — محتاج كل الأحماض الأساسية. لو لازم تختار: EAA > BCAA دايماً. EAAs فيهم كل حاجة في BCAA + 6 أحماض تانية. امتى ممكن يفيدوا: تدريب صايم، جلسات طويلة جداً (+2 ساعة)، مش بتوصل للبروتين اليومي. وفّر فلوسك: اصرف على واي بروتين، كرياتين، وأكل حقيقي الأول!' },
+    priority: 7,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['pre workout ingredients', 'caffeine pre workout', 'beta alanine', 'citrulline', 'pre workout label', 'pre workout what to look for', 'proprietary blend', 'pump supplement'],
+    keywordsAr: ['مكونات بري ووركاوت', 'كافيين بري ووركاوت', 'بيتا ألانين', 'سيترولين', 'مكونات ما قبل التمرين'],
+    keywordsFranco: ['pre workout ingredients', 'beta alanine', 'citrulline', 'caffeine pre workout'],
+    stateId: 'info_pre_workout_ingredients',
+    response: { en: 'Pre-Workout Ingredients — What Actually Works: TIER 1 (PROVEN): Caffeine (200-400mg) — energy, focus, performance. The #1 performance enhancer. Citrulline Malate (6-8g) — massive pumps, reduces fatigue, improves blood flow. Beta-Alanine (3.2-6.4g) — reduces "burn" feeling, improves endurance. The tingling is normal! Creatine (3-5g) — can be in pre-workout, but timing does not matter. TIER 2 (HELPFUL): Betaine (2.5g) — strength and power output. Alpha-GPC (300-600mg) — focus and mind-muscle connection. Tyrosine (500-2000mg) — focus under stress. RED FLAGS: "Proprietary blend" — hides actual dosages (they are underdosing). More than 400mg caffeine — dangerous, unnecessary. DMAA/DMHA — banned stimulants, risky. Excessive artificial colors. DIY PRE-WORKOUT (cheaper): 200mg caffeine pill + 6g citrulline malate + 3g beta-alanine. Costs 1/3 the price of branded pre-workouts! TIMING: Take 20-30 minutes before training.', ar: 'مكونات البري ووركاوت — ايه اللي بيشتغل فعلاً: مستوى 1 (مثبت): كافيين (200-400مج) — طاقة، تركيز، أداء. #1 محسن أداء. سيترولين ملات (6-8ج) — بامب ضخم، بيقلل التعب. بيتا ألانين (3.2-6.4ج) — بيقلل الحرقان، بيحسن التحمل. الوخز طبيعي! كرياتين (3-5ج) — ممكن يكون في البري ووركاوت. مستوى 2: بيتاين (2.5ج)، ألفا-GPC (300-600مج)، تيروسين (500-2000مج). علامات حمراء: "Proprietary blend" — بيخبّي الجرعات الحقيقية. أكتر من 400مج كافيين — خطير. DMAA/DMHA — منشطات محظورة. DIY بري ووركاوت (أرخص): حباية كافيين 200مج + 6ج سيترولين + 3ج بيتا ألانين. بتكلف ثلث سعر البراندات!' },
+    priority: 7,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['mass gainer', 'weight gainer', 'mass gainer worth it', 'serious mass', 'mass gainer vs whey', 'mass gainer homemade', 'gain weight supplement'],
+    keywordsAr: ['ماس جينر', 'ويت جينر', 'ماس جينر يستاهل', 'زيادة وزن مكمل', 'ماس جينر ولا واي'],
+    keywordsFranco: ['mass gainer', 'weight gainer', 'serious mass', 'mass gainer vs whey'],
+    stateId: 'info_mass_gainer',
+    response: { en: 'Mass Gainer — Is It Worth It? WHAT IT IS: High-calorie protein powder. Usually 1000-1500 calories per serving with 50-60g protein, 200-250g carbs, and some fat. WHO NEEDS IT: Hardgainers who genuinely cannot eat enough food, people with very fast metabolisms, athletes needing 4000+ calories/day. WHO DOES NOT NEED IT: Most people! If you can eat real food, EAT REAL FOOD. Mass gainers are mostly maltodextrin (cheap sugar). PROBLEMS: Mostly sugar/maltodextrin (50-70% of calories), expensive for what you get, can cause bloating and digestive issues, artificial ingredients. HOMEMADE MASS GAINER (BETTER): Blend: 2 cups milk + 1 scoop whey + 1 banana + 2 tbsp peanut butter + 1/2 cup oats + 1 tbsp honey = ~900 calories, 50g protein, better nutrition! Costs 1/4 the price. IN EGYPT: Budget option — blend ful (fava beans), rice, banana, milk, and a scoop of whey. High calorie, high protein, very cheap! VERDICT: Save your money. Make your own calorie-dense shakes with real food.', ar: 'ماس جينر — يستاهل؟ ايه هو: مسحوق بروتين عالي السعرات. عادة 1000-1500 سعرة/جرعة مع 50-60ج بروتين، 200-250ج كربوهيدرات. مين محتاجه: هاردجينرز اللي فعلاً مش قادرين ياكلوا كفاية، ميتابوليزم سريع جداً. مين مش محتاجه: معظم الناس! لو تقدر تاكل أكل حقيقي، كُل أكل حقيقي. الماس جينر معظمه مالتوديكسترين (سكر رخيص). ماس جينر منزلي (أحسن): خلاط: 2 كوب لبن + سكوب واي + موزة + 2 ملعقة زبدة فول سوداني + نص كوب شوفان + ملعقة عسل = ~900 سعرة، 50ج بروتين! بيكلف ربع السعر. في مصر: فول + أرز + موزة + لبن + سكوب واي. سعرات عالية، بروتين عالي، رخيص جداً! الحكم: وفّر فلوسك. اعمل شيكات كثيفة السعرات بأكل حقيقي.' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
