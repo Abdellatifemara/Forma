@@ -5919,6 +5919,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v41: Omega-3 Guide ────────────────────────
+  {
+    keywords: ['omega 3', 'fish oil', 'omega 3 benefits', 'fish oil supplement', 'epa dha', 'omega 3 dosage', 'omega 3 muscle', 'omega 3 joints'],
+    keywordsAr: ['أوميغا 3', 'زيت سمك', 'فوائد أوميغا 3', 'مكمل زيت سمك', 'جرعة أوميغا 3', 'أوميغا 3 والعضلات'],
+    keywordsFranco: ['omega 3', 'zeet samak', 'fawa2ed omega 3', 'mokammel zeet samak', 'gar3et omega 3'],
+    stateId: 'SU_MENU',
+    response: { en: 'Omega-3 (Fish Oil) Guide: WHY: Reduces inflammation (faster recovery), improves joint health, boosts brain function, may increase muscle protein synthesis. DOSE: 2-3g combined EPA+DHA daily (not total fish oil — check the label!). EPA = anti-inflammatory, DHA = brain health. WHEN: With a fatty meal (better absorption). SOURCES: Fatty fish 2-3x/week (salmon, sardines, mackerel) OR supplement. QUALITY: Look for "triglyceride form" not "ethyl ester". Store in fridge. If it smells very fishy = rancid. COST in Egypt: Good brands 200-400 LE/month. ALTERNATIVES: Algae-based omega-3 (vegan), walnuts, flaxseed, chia seeds (but conversion to EPA/DHA is only 5-10%). Egyptian option: sardines (sardeen) are cheap and loaded with omega-3! Can + rice = easy meal.', ar: 'دليل أوميغا-3 (زيت السمك): ليه: يقلل الالتهاب (ريكفري أسرع)، يحسن المفاصل، يعزز المخ، ممكن يزود بناء البروتين العضلي. الجرعة: 2-3g EPA+DHA مجتمعين/يوم (مش إجمالي زيت السمك — اقرأ الليبل!). EPA = مضاد التهاب، DHA = صحة المخ. امتى: مع وجبة فيها دهون (امتصاص أفضل). المصادر: سمك دهني 2-3 مرات/أسبوع (سلمون، سردين، ماكريل) أو مكمل. الجودة: دور على "triglyceride form". خزنه في التلاجة. لو ريحته سمك قوية = فاسد. في مصر: 200-400 جنيه/شهر. بديل: أوميغا نباتي، جوز، بذر كتان (بس التحويل 5-10% بس). مصري: السردين رخيص ومليان أوميغا-3! علبة + رز = وجبة سهلة.' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
+  // ── v41: Gut Health & Probiotics ────────────────────────
+  {
+    keywords: ['gut health', 'probiotics', 'gut microbiome', 'digestive health gym', 'bloating gym', 'probiotic supplement', 'fermented foods', 'gut and muscle'],
+    keywordsAr: ['صحة الأمعاء', 'بروبيوتيك', 'ميكروبيوم', 'هضم والجيم', 'انتفاخ والجيم', 'أطعمة مخمرة', 'أمعاء وعضلات'],
+    keywordsFranco: ['se77et el am3a2', 'probiotic', 'microbiome', 'hadm wel gym', 'entefakh wel gym', 'at3ema mo5amara'],
+    stateId: 'HE_MENU',
+    response: { en: 'Gut Health for Athletes: WHY it matters: 70% of immune system is in your gut. Poor gut = poor nutrient absorption = wasted protein/supplements. PROBIOTICS: Lactobacillus and Bifidobacterium strains. Dose: 10-30 billion CFU/day. Take with food. FOOD SOURCES: Yogurt (zabadi — Egyptian staple!), kefir, sauerkraut, kimchi, pickles (turshi), kombucha. PREBIOTICS (feed good bacteria): Garlic, onion, bananas, oats, asparagus. KILLERS: Antibiotics (take probiotics 2hrs apart), excess sugar, alcohol, stress, artificial sweeteners. BLOATING FIX: Eat slower, chew more, reduce gas-producing foods (beans — soak overnight), try digestive enzymes, peppermint tea. Egyptian gut health: ful medames has fiber + prebiotics, zabadi is probiotic, lemon water aids digestion!', ar: 'صحة الأمعاء للرياضيين: ليه مهمة: 70% من المناعة في الأمعاء. أمعاء سيئة = امتصاص ضعيف = بروتين/مكملات ضايعة. بروبيوتيك: Lactobacillus و Bifidobacterium. الجرعة: 10-30 مليار CFU/يوم. مع الأكل. مصادر: زبادي (أساس مصري!)، كفير، مخلل، كيمتشي، كمبوتشا. بريبيوتيك (يغذي البكتيريا الكويسة): ثوم، بصل، موز، شوفان. قاتلات الأمعاء: مضادات حيوية (خد بروبيوتيك بعدها بساعتين)، سكر زيادة، كحول، توتر. علاج الانتفاخ: كل أبطأ، امضغ أكتر، قلل الأكل اللي بيعمل غازات (فول — انقعه بالليل)، جرب إنزيمات هاضمة، شاي نعناع. مصري: الفول فيه ألياف + بريبيوتيك، الزبادي بروبيوتيك، ليمون بيساعد الهضم!' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v41: Training Log Importance ────────────────────────
+  {
+    keywords: ['training log', 'workout journal', 'track workouts', 'workout diary', 'training notebook', 'log my lifts', 'progressive overload tracking'],
+    keywordsAr: ['سجل التمرين', 'تتبع التمارين', 'دفتر التمرين', 'تسجيل الأوزان', 'تتبع التقدم'],
+    keywordsFranco: ['segel el tamreen', 'tatabo3 el tamreen', 'daftar el tamreen', 'tasgeel el awzan', 'tatabo3 el ta2adom'],
+    stateId: 'WK_MENU',
+    response: { en: 'Why You NEED a Training Log: Without tracking, you\'re guessing. Most people lift the SAME weight for months without realizing it. WHAT TO LOG: Exercise, weight, sets, reps, RPE (difficulty 1-10), rest time, notes (felt easy/hard/painful). HOW: App (this app!), phone notes, or physical notebook (some prefer writing). REVIEW: Check last session BEFORE training. Goal: beat it by 1 rep or 2.5kg. THIS is progressive overload. BENEFITS: See patterns (always tired on Mondays?), prevent plateaus (know exactly when to increase), motivation (seeing progress over months is powerful), injury prevention (notice if a weight suddenly feels heavier). PRO TIP: Take progress photos monthly — the mirror lies, photos don\'t. Rate each session 1-10 to track overall fatigue/recovery.', ar: 'ليه محتاج سجل تمرين: بدون تتبع، إنت بتخمن. أغلب الناس بترفع نفس الوزن لشهور من غير ما تاخد بالها. سجل إيه: التمرين، الوزن، السيتات، التكرارات، الصعوبة (1-10)، وقت الراحة، ملاحظات. إزاي: أبلكيشن (التطبيق ده!)، نوتس الموبايل، أو دفتر (في ناس بتحب الكتابة). المراجعة: شوف آخر حصة قبل التمرين. الهدف: اتغلب عليها بتكرار أو 2.5 كيلو. ده البروجرسف أوفرلود. الفوائد: شوف الأنماط (دايماً تعبان الاتنين؟)، امنع البلاتو، تحفيز (شوف التقدم)، منع الإصابات. نصيحة: صور تقدم شهرياً — المراية بتكدب، الصور لا. قيم كل حصة 1-10.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v41: Body Fat Percentage ────────────────────────
+  {
+    keywords: ['body fat percentage', 'how to measure body fat', 'body fat calculator', 'body fat levels', 'essential body fat', 'body fat for abs', 'dexa scan', 'body fat caliper'],
+    keywordsAr: ['نسبة الدهون', 'قياس نسبة الدهون', 'حاسبة الدهون', 'مستويات الدهون', 'دهون أساسية', 'دهون للأبز', 'نسبة الدهون للبطن'],
+    keywordsFranco: ['nesbet el dohon', '2eyas nesbet el dohon', '7asbet el dohon', 'mostaweyat el dohon', 'dohon lel abs'],
+    stateId: 'HE_MENU',
+    response: { en: 'Body Fat Percentage Guide: MEN: 3-5% (competition stage — unsustainable), 6-9% (visible abs, very lean), 10-14% (lean, abs visible, healthy), 15-19% (fit, some ab outline), 20-24% (average), 25%+ (overweight). WOMEN: Add 8-10% to each range (women need more essential fat). FOR ABS: Men need ~12% or less, women ~20% or less. MEASUREMENT: DEXA scan (gold standard — 500-1000 LE in Egypt), InBody machine (good, available at many gyms), calipers (decent if done by trained person), Navy method (tape measure — free but rough). VISUAL: Compare photos online at each percentage range. RATE OF LOSS: 0.5-1% body fat per month is realistic. Faster = muscle loss risk. DON\'T obsess over numbers — the mirror and how you feel matter more. InBody at Egyptian gyms is usually ~50-100 LE per test.', ar: 'دليل نسبة الدهون: رجال: 3-5% (مسابقات — مش مستدام)، 6-9% (أبز واضح، لين جداً)، 10-14% (لين، أبز واضح، صحي)، 15-19% (فت، شكل أبز)، 20-24% (متوسط)، 25%+ (زيادة وزن). سيدات: أضيفي 8-10% لكل نطاق. للأبز: رجال ~12% أو أقل، سيدات ~20% أو أقل. القياس: DEXA (الأفضل — 500-1000 جنيه)، InBody (كويس، متوفر في جيمات كتير)، كاليبر (كويس لو حد متدرب)، طريقة البحرية (شريط قياس). معدل النزول: 0.5-1% شهرياً واقعي. أسرع = خطر فقدان عضلات. متتعلقش بالأرقام — المراية وإحساسك أهم. InBody في الجيمات المصرية ~50-100 جنيه/تحليل.' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v41: Carb Cycling ────────────────────────
+  {
+    keywords: ['carb cycling', 'high carb low carb days', 'carb cycling plan', 'carb cycling fat loss', 'carb cycling muscle', 'cycle carbs', 'carb manipulation'],
+    keywordsAr: ['تدوير الكاربوهيدرات', 'أيام كارب عالي وقليل', 'خطة تدوير الكارب', 'تدوير الكارب والدهون', 'تدوير الكارب والعضلات'],
+    keywordsFranco: ['tadweer el carb', 'ayam carb 3aly w 2aleel', 'khetat tadweer el carb', 'tadweer el carb wel dohon'],
+    stateId: 'NU_MENU',
+    response: { en: 'Carb Cycling Guide: CONCEPT: Alternate between high-carb and low-carb days based on training. HIGH CARB days (training days): 2-3g/kg bodyweight. Fuel workouts + recovery. Focus: rice, oats, sweet potato, pasta, bread, fruits. LOW CARB days (rest days): 0.5-1g/kg. Body uses fat for fuel. Focus: protein, fats, vegetables. MODERATE days: 1-1.5g/kg. Light training or active recovery. SAMPLE (80kg male): High = 200-240g carbs, Low = 40-80g, Moderate = 120-160g. SCHEDULE: Training 4x/week: Mon(H), Tue(H), Wed(L), Thu(H), Fri(H), Sat(L), Sun(L). KEEP CONSTANT: Protein (2g/kg every day), adjust fats inversely to carbs. BENEFITS: Better fat loss while preserving muscle, hormonal benefits (leptin reset), mental break from strict dieting. NOT for beginners — master basic nutrition first!', ar: 'دليل تدوير الكاربوهيدرات: المفهوم: بدّل بين أيام كارب عالي وقليل حسب التمرين. أيام كارب عالي (أيام التمرين): 2-3g/كيلو من وزنك. وقود للتمرين والريكفري. ركز: رز، شوفان، بطاطا حلوة، مكرونة، خبز، فواكه. أيام كارب قليل (أيام الراحة): 0.5-1g/كيلو. الجسم بيستخدم الدهون. ركز: بروتين، دهون، خضار. مثال (80 كيلو ذكر): عالي = 200-240g كارب، قليل = 40-80g، متوسط = 120-160g. الجدول: تمرين 4 مرات/أسبوع: اتنين(ع)، تلات(ع)، أربع(ق)، خميس(ع)، جمعة(ع)، سبت(ق)، حد(ق). ثابت: البروتين (2g/كيلو كل يوم). الفوائد: نزول دهون أفضل مع الحفاظ على العضلات. مش للمبتدئين — اتعلم التغذية الأساسية الأول!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v41: Kettlebell Training ────────────────────────
+  {
+    keywords: ['kettlebell workout', 'kettlebell training', 'kettlebell exercises', 'kettlebell swing', 'kettlebell for fat loss', 'kettlebell beginner', 'turkish get up'],
+    keywordsAr: ['تمرين كيتل بيل', 'تدريب كيتل بيل', 'تمارين كيتل بيل', 'كيتل بيل سوينج', 'كيتل بيل للدهون', 'كيتل بيل مبتدئ'],
+    keywordsFranco: ['tamreen kettlebell', 'tadreeb kettlebell', 'tamreen kettlebell swing', 'kettlebell lel dohon', 'kettlebell mobtade2'],
+    stateId: 'WK_MENU',
+    response: { en: 'Kettlebell Training Guide: TOP EXERCISES: 1) Kettlebell Swing (king of KB — full body, cardio + strength). 2) Turkish Get-Up (full body, stability, mobility). 3) Goblet Squat (legs + core). 4) KB Clean & Press (shoulders + full body). 5) KB Row (back). 6) KB Deadlift (posterior chain). BEGINNER WEIGHT: Men 12-16kg, Women 8-12kg. PROGRAM: 3x/week, 30min: 10 swings x 10 sets (100 total), 3x5 TGU each side, 3x10 goblet squats, 3x8 clean & press. BENEFITS: Cardio + strength in one, burns more calories than traditional lifting per minute, great for home/travel, improves grip and core. CALORIE BURN: KB swings burn ~20 cal/min (running = 10 cal/min). CAUTION: Learn the hip hinge FIRST. Bad swing form = back injury. Start light, nail technique, then add weight.', ar: 'دليل تمارين الكيتل بيل: أفضل التمارين: 1) كيتل بيل سوينج (ملك الكيتل بيل — كامل الجسم). 2) تركش جيت أب (كامل الجسم، ثبات). 3) جوبلت سكوات (رجل + كور). 4) كلين أند برس (أكتاف + كامل). 5) كيتل بيل رو (ظهر). 6) كيتل بيل ديدلفت. وزن المبتدئ: رجال 12-16 كيلو، سيدات 8-12 كيلو. البرنامج: 3 مرات/أسبوع، 30 دقيقة: 10 سوينج × 10 سيتات (100 إجمالي)، 3×5 TGU كل جنب، 3×10 جوبلت سكوات. الفوائد: كارديو + قوة في واحد، حرق سعرات أكتر من الحديد التقليدي، ممتاز للبيت/السفر. حرق: سوينج ~20 سعرة/دقيقة (جري = 10 سعرة/دقيقة). تحذير: اتعلم الهيب هينج الأول. سوينج بفورم سيء = إصابة ظهر!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v41: Egyptian Healthy Restaurants ────────────────────────
+  {
+    keywords: ['healthy restaurant egypt', 'healthy eating out egypt', 'healthy food cairo', 'healthy restaurant cairo', 'diet restaurant egypt', 'meal delivery cairo', 'healthy food delivery egypt'],
+    keywordsAr: ['مطعم صحي مصر', 'أكل صحي بره مصر', 'أكل صحي القاهرة', 'مطعم دايت', 'توصيل أكل صحي', 'مطعم دايت القاهرة'],
+    keywordsFranco: ['mat3am se77y masr', 'akl se77y bara masr', 'akl se77y el 2ahera', 'mat3am diet', 'tawseel akl se77y'],
+    stateId: 'NU_MENU',
+    response: { en: 'Healthy Eating in Egypt: RESTAURANT TIPS: Grilled (mashwi) > fried always. Ask for salad instead of rice as side. Skip the bread basket. Grilled chicken/fish + salad = safe bet anywhere. HEALTHY CHAINS: Many meal prep companies now in Cairo/Alex — search for "healthy meal delivery" on Instagram. TRADITIONAL HEALTHY: Grilled kofta + salad, grilled fish (samak mashwi), foul without too much oil, taameya (baked not fried), lentil soup (shorbeit 3ads), fattoush salad. ORDERING SMART: Ask for sauces on the side, no butter/ghee, grilled not fried, extra vegetables. PORTIONS: Egyptian restaurants serve HUGE portions — take half home. Sharing is even better. STREET FOOD hack: Sweet potato cart (batata) = ~150cal, filling, cheap. Corn on the cob (dora) = ~100cal. Both are better than koshari for dieting!', ar: 'الأكل الصحي في مصر: نصائح المطاعم: مشوي > مقلي دايماً. اطلب سلطة بدل الرز. سكيب العيش. فراخ/سمك مشوي + سلطة = آمن في أي مكان. سلاسل صحية: شركات ميل بريب كتير في القاهرة/إسكندرية — دور على "healthy meal delivery" على إنستا. تقليدي صحي: كفتة مشوية + سلطة، سمك مشوي، فول بدون زيت كتير، طعمية مشوية (مش مقلية)، شوربة عدس، فتوش. اطلب ذكي: الصوصات على جنب، بدون سمنة، مشوي مش مقلي، خضار زيادة. الأحجام: المطاعم المصرية بتقدم كميات كبيرة — خد النص للبيت. الشير أفضل. ستريت فود هاك: عربية البطاطا = ~150 سعرة، مشبعة، رخيصة. دورة = ~100 سعرة. الاتنين أفضل من الكشري للدايت!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
