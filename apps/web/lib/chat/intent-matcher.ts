@@ -5138,6 +5138,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v31: Superfoods Reality Check ──────────────────────────
+  {
+    keywords: ['superfoods', 'best foods health', 'healthiest food', 'power foods', 'miracle food', 'superfood list'],
+    keywordsAr: ['سوبرفود', 'أفضل أكل صحي', 'أصح أكل', 'أكل معجزة', 'قائمة سوبرفود'],
+    keywordsFranco: ['superfood', 'afdal akl se7y', 'as7 akl', 'akl mo3giza', '2a2met superfood'],
+    stateId: 'NT_MENU',
+    response: { en: 'Superfoods (evidence-based): REAL powerhouses: Eggs (nature\'s multivitamin), salmon (omega-3 king), blueberries (antioxidants), spinach, sweet potato, Greek yogurt, oats, almonds, avocado, broccoli. OVERHYPED: acai (fine but not magic), goji berries (expensive, just eat any berries), spirulina (minimal real benefit), activated charcoal (useless). EGYPTIAN SUPERFOODS: Ful medames (protein + fiber), molokheya (iron), tahini (healthy fats), dates (natural energy). Truth: No single food is "super" — a balanced diet beats any superfood!', ar: 'سوبرفود (حسب الأدلة): القوة الحقيقية: بيض (ملتي فيتامين الطبيعة)، سلمون (ملك الأوميجا-3)، توت أزرق (مضادات أكسدة)، سبانخ، بطاطا، زبادي يوناني، شوفان، لوز، أفوكادو، بروكلي. مبالغ فيهم: أساي (كويس بس مش سحر)، توت جوجي (غالي، كل أي توت)، سبيرولينا (فايدة قليلة)، فحم منشط (مفيش فايدة). سوبرفود مصري: فول (بروتين + ألياف)، ملوخية (حديد)، طحينة (دهون صحية)، بلح (طاقة طبيعية). الحقيقة: مفيش أكل واحد "سوبر" — نظام متوازن بيغلب أي سوبرفود!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v31: Periodization Deep Dive ──────────────────────────────
+  {
+    keywords: ['periodization', 'training phases', 'mesocycle', 'macrocycle', 'microcycle', 'training block', 'program design', 'how to program'],
+    keywordsAr: ['دورية التدريب', 'مراحل التدريب', 'ميزوسايكل', 'ماكروسايكل', 'تصميم برنامج'],
+    keywordsFranco: ['dawreyet el tadreeb', 'mara7el el tadreeb', 'mesocycle', 'macrocycle', 'tasmeem barnameg'],
+    stateId: 'WK_MENU',
+    response: { en: 'Periodization (programming science): MICROCYCLE: 1 week of training. MESOCYCLE: 4-6 week block with specific goal. MACROCYCLE: 3-12 month plan. COMMON MODELS: Linear (beginner): add weight every session. Undulating (intermediate): vary reps week to week (8→12→5). Block (advanced): 4 weeks hypertrophy → 4 weeks strength → 2 weeks peaking. DELOAD: Every 4-6 weeks, cut volume 40-50%. PRACTICAL: Run each mesocycle 4-6 weeks, change rep ranges, then deload. The BEST program is the one you follow consistently for 8+ weeks!', ar: 'الدورية (علم البرمجة): ميكروسايكل: أسبوع تدريب. ميزوسايكل: بلوك 4-6 أسابيع بهدف محدد. ماكروسايكل: خطة 3-12 شهر. نماذج شائعة: خطي (مبتدئ): زود الوزن كل جلسة. متموج (متوسط): نوع التكرارات أسبوعياً (8→12→5). بلوك (متقدم): 4 أسابيع هايبرتروفي → 4 أسابيع قوة → 2 أسابيع ذروة. ديلود: كل 4-6 أسابيع، قلل الحجم 40-50%. عملياً: شغل كل ميزوسايكل 4-6 أسابيع، غير نطاق التكرارات، بعدين ديلود. أفضل برنامج هو اللي بتلتزم بيه 8+ أسابيع!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v31: Knee Health ──────────────────────────────────────────
+  {
+    keywords: ['knee health', 'knee pain squat', 'knee injury prevention', 'bad knees workout', 'knee strengthening', 'patella pain', 'knee clicking'],
+    keywordsAr: ['صحة الركبة', 'ألم ركبة سكوات', 'منع إصابة ركبة', 'تمرين ركبة ضعيفة', 'تقوية الركبة', 'طقطقة ركبة'],
+    keywordsFranco: ['se7et el rokba', 'alam rokba squat', 'man3 esabet rokba', 'tamreen rokba da3ifa', 'ta2weyet el rokba', 'ta2ta2et rokba'],
+    stateId: 'HP_MENU',
+    response: { en: 'Knee health guide: STRENGTHENING: 1) Terminal knee extensions (TKEs with band) — #1 exercise 2) Wall sits (3x30-60sec) 3) Step-ups (controlled) 4) Leg press (short ROM if painful) 5) VMO focus: partial squats with heels elevated. IF KNEES CLICK: Painless clicking is usually NORMAL (gas bubbles). Painful clicking = see doctor. SQUAT TIPS: Knees CAN go past toes (it\'s a myth), warm up with bodyweight squats, use squat shoes or heel elevation. AVOID: Deep jump landings, running on hard surfaces, leg extensions at full load if painful.', ar: 'دليل صحة الركبة: تقوية: 1) TKEs بباند — التمرين رقم 1 2) وول سيت (3×30-60ث) 3) ستيب اب (متحكم) 4) ليج بريس (نطاق قصير لو مؤلم) 5) تركيز VMO: سكوات جزئي بالكعب مرفوع. لو الركبة بتطقطق: الطقطقة بدون ألم عادة طبيعية (فقاعات غاز). طقطقة مؤلمة = روح دكتور. نصايح سكوات: الركبة ممكن تعدي الصوابع (خرافة)، سخن بسكوات بوزن الجسم، استخدم حذاء سكوات أو كعب مرفوع. تجنب: نط من ارتفاع، جري على أسطح صلبة، ليج اكستنشن بحمل كامل لو مؤلم.' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v31: Shoulder Health ──────────────────────────────────────
+  {
+    keywords: ['shoulder health', 'shoulder impingement', 'rotator cuff exercise', 'shoulder warmup', 'shoulder pain bench', 'shoulder rehab'],
+    keywordsAr: ['صحة الكتف', 'انضغاط الكتف', 'تمرين الكفة المدورة', 'إحماء الكتف', 'ألم كتف بنش', 'تأهيل كتف'],
+    keywordsFranco: ['se7et el ketf', 'endeghat el ketf', 'tamreen el kofa el mdawara', 'e7ma2 el ketf', 'alam ketf bench', 'ta2heel ketf'],
+    stateId: 'HP_MENU',
+    response: { en: 'Shoulder health (prevent & fix): WARM-UP (every session): Band pull-aparts 2x15, external rotations 2x15, face pulls 2x15, arm circles. STRENGTHENING: External rotations (cable or band), prone Y-T-W raises, serratus wall slides. COMMON ISSUES: Impingement = pain at ~90° lifting. Fix: avoid upright rows, reduce incline pressing, add rear delt work. BENCH PRESS: Retract scapula, arch slightly, touch below nipple line, elbows at 45° (not 90°). BALANCE: For every pressing exercise, do a pulling exercise. Shoulders are the most injured joint in the gym — prevention is key!', ar: 'صحة الكتف (منع وعلاج): إحماء (كل جلسة): باند بول اباتر 2×15، اكسترنال روتيشن 2×15، فيس بولز 2×15، دوائر ذراع. تقوية: اكسترنال روتيشن (كابل أو باند)، Y-T-W ريز، سيراتس وول سلايدز. مشاكل شائعة: انضغاط = ألم عند رفع ~90°. العلاج: تجنب أبرايت رو، قلل إنكلاين بريس، ضيف ريس ديلت. بنش بريس: ارجع اللوح، قوس خفيف، لمس تحت خط الحلمة، كوع 45° (مش 90°). توازن: لكل تمرين دفع، اعمل تمرين سحب. الكتف أكتر مفصل بيتصاب في الجيم — الوقاية هي المفتاح!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v31: Recovery Methods Ranked ──────────────────────────────
+  {
+    keywords: ['best recovery method', 'recovery ranked', 'ice bath vs sauna', 'foam rolling benefits', 'massage gun', 'recovery tools', 'how to recover faster'],
+    keywordsAr: ['أفضل طريقة ريكفري', 'ريكفري مرتب', 'آيس باث ولا ساونا', 'فوم رول', 'مساج جان', 'أدوات ريكفري'],
+    keywordsFranco: ['afdal tare2a recovery', 'recovery morattab', 'ice bath wala sauna', 'foam roll', 'massage gun', 'adawat recovery'],
+    stateId: 'HP_MENU',
+    response: { en: 'Recovery methods ranked (by evidence): TIER 1 (must-do): Sleep 7-9hrs, adequate protein (2g/kg), hydration, rest days. TIER 2 (helpful): Walking on rest days, light stretching, foam rolling (reduces soreness 20-30%). TIER 3 (nice to have): Contrast showers (hot/cold), massage/massage gun, sauna (20min post-workout). TIER 4 (overhyped): Ice baths (may reduce muscle growth!), compression garments (minimal effect), cryotherapy (expensive, minimal evidence). SAVE YOUR MONEY on fancy recovery tools — sleep and food are 80% of recovery!', ar: 'طرق الريكفري مرتبة (حسب الأدلة): فئة 1 (لازم): نوم 7-9 ساعات، بروتين كافي (2ج/كج)، مية، أيام راحة. فئة 2 (مفيد): مشي في أيام الراحة، استرتش خفيف، فوم رول (بيقلل الشد 20-30%). فئة 3 (حلو لو متاح): دش متباين (ساخن/بارد)، مساج/مساج جان، ساونا (20 دقيقة بعد التمرين). فئة 4 (مبالغ فيه): آيس باث (ممكن يقلل نمو العضل!)، ملابس ضغط (تأثير قليل)، كرايوثيرابي (غالي، أدلة قليلة). وفر فلوسك على أدوات ريكفري فاخرة — النوم والأكل 80% من الريكفري!' },
+    priority: 8,
+    domain: 'recovery',
+  },
+
+  // ── v31: Egyptian Budget Protein ──────────────────────────────
+  {
+    keywords: ['cheap protein egypt', 'protein on budget', 'affordable protein', 'protein for poor', 'cheapest protein source egypt', 'budget muscle building'],
+    keywordsAr: ['بروتين رخيص مصر', 'بروتين باقل تكلفة', 'بروتين اقتصادي', 'أرخص بروتين مصر', 'بناء عضل بميزانية'],
+    keywordsFranco: ['protein re5ees masr', 'protein ba2al taklefa', 'protein e2tesady', 'ar5as protein masr', 'bena2 3adal be mizaneya'],
+    stateId: 'NT_MENU',
+    response: { en: 'Budget protein in Egypt (cost per 30g protein): 1) EGGS: ~15 LE (5 eggs) — BEST value 2) FUL MEDAMES: ~5-10 LE/plate (incomplete, add bread) 3) CHICKEN (frozen): ~25 LE (150g) 4) CANNED TUNA: ~25 LE (1 can) 5) LENTILS: ~10 LE (1 cup cooked, incomplete) 6) MILK: ~15 LE (500ml) 7) CHEESE (white): ~15 LE (100g). BUDGET DAY: Breakfast: 4 eggs + bread (20 LE). Lunch: chicken 200g + rice (35 LE). Dinner: tuna + salad (30 LE). Snack: ful plate (10 LE). TOTAL: ~95 LE for 150g+ protein! That\'s ~2850 LE/month.', ar: 'بروتين اقتصادي في مصر (التكلفة لكل 30ج بروتين): 1) بيض: ~15 جنيه (5 بيضات) — أفضل قيمة 2) فول: ~5-10 جنيه/طبق (ناقص، ضيف عيش) 3) فراخ (فروزن): ~25 جنيه (150ج) 4) تونة معلبة: ~25 جنيه (علبة) 5) عدس: ~10 جنيه (كوب مطبوخ، ناقص) 6) لبن: ~15 جنيه (500مل) 7) جبنة (بيضا): ~15 جنيه (100ج). يوم اقتصادي: فطار: 4 بيض + عيش (20 جنيه). غدا: فراخ 200ج + رز (35 جنيه). عشا: تونة + سلطة (30 جنيه). سناك: طبق فول (10 جنيه). الإجمالي: ~95 جنيه ل150ج+ بروتين! يعني ~2850 جنيه/شهر.' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+
+  // ── v31: Workout Accessories Guide ────────────────────────────
+  {
+    keywords: ['gym accessories', 'workout gloves', 'lifting straps', 'wrist wraps', 'knee sleeves', 'gym bag essentials', 'what to bring gym'],
+    keywordsAr: ['اكسسوارات جيم', 'جلافز جيم', 'ستراب رفع', 'ريست راب', 'كني سليفز', 'أساسيات شنطة الجيم'],
+    keywordsFranco: ['accessories gym', 'gloves gym', 'straps raf3', 'wrist wraps', 'knee sleeves', 'asasyat shantet el gym'],
+    stateId: 'QA_MENU',
+    response: { en: 'Gym accessories (actually worth buying): ESSENTIAL: Water bottle, towel, good shoes (flat for lifting). RECOMMENDED: Lifting straps (for heavy pulls, ~50 LE), wrist wraps (bench/OHP, ~80 LE), knee sleeves (squats, ~200 LE), lifting belt (heavy compounds, ~300 LE). OPTIONAL: Chalk/liquid chalk (grip, ~50 LE), resistance bands (~100 LE). NOT WORTH IT: Gloves (weaken grip), fancy shakers (any bottle works), most "fitness" clothing (wear anything comfortable). GYM BAG: water, towel, headphones, change of clothes, protein shake.', ar: 'اكسسوارات الجيم (اللي تستاهل الشرا): أساسي: بزازة مية، منشفة، حذاء كويس (فلات للحديد). موصى به: ستراب رفع (للسحب الثقيل، ~50 جنيه)، ريست راب (بنش/OHP، ~80 جنيه)، كني سليفز (سكوات، ~200 جنيه)، حزام رفع (مركبات ثقيلة، ~300 جنيه). اختياري: طباشير (قبضة، ~50 جنيه)، باند مقاومة (~100 جنيه). متستهلش: جلافز (بتضعف القبضة)، شيكرز فاخرة (أي بزازة تمشي)، هدوم "فيتنس" غالية (البس أي حاجة مريحة). شنطة الجيم: مية، منشفة، سماعات، هدوم تغيير، بروتين شيك.' },
+    priority: 7,
+    domain: 'root',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
