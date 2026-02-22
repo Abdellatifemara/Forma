@@ -174,7 +174,7 @@ function FreeChat({ tier }: { tier: string }) {
     setMounted(true);
   }, []);
 
-  useEffect(() => { aiApi.getChatUsage().then(stats => setUsageStats(stats)).catch(() => {}); }, [messages.length]);
+  useEffect(() => { aiApi.getChatUsage().then(stats => setUsageStats(stats)).catch(() => {}); }, []);
   useEffect(() => { if (mounted) bottomRef.current?.scrollIntoView({ behavior: 'smooth' }); }, [messages, mounted]);
   useEffect(() => {
     if (mounted && messages.length > 0) {
