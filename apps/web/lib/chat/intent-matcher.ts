@@ -5215,6 +5215,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'root',
   },
 
+  // ── v32: HIIT Workouts ─────────────────────────────────────
+  {
+    keywords: ['hiit workout', 'hiit routine', 'hiit exercises', 'tabata', 'interval training', 'hiit for fat loss', 'best hiit workout'],
+    keywordsAr: ['تمرين هيت', 'روتين هيت', 'تابتا', 'تمرين فواصل', 'هيت لحرق الدهون'],
+    keywordsFranco: ['tamreen HIIT', 'routine HIIT', 'tabata', 'tamreen fawasel', 'HIIT le 7ar2 el dohon'],
+    stateId: 'WK_MENU',
+    response: { en: 'HIIT workouts: BEGINNER (20min): 30sec work / 30sec rest × 10 rounds. Exercises: jumping jacks, bodyweight squats, push-ups, mountain climbers. INTERMEDIATE (25min): 40sec work / 20sec rest × 12 rounds. Add: burpees, jump squats, plank jacks. TABATA (4min killer): 20sec max effort / 10sec rest × 8 rounds. ADVANCED: 45sec work / 15sec rest + weighted exercises. FREQUENCY: 2-3x/week MAX (not daily — needs recovery). HIIT after weights, not before. Burns 25-30% more calories than steady cardio + EPOC (afterburn effect lasts 24-48hrs)!', ar: 'تمارين HIIT: مبتدئ (20 دقيقة): 30ث شغل / 30ث راحة × 10 جولات. تمارين: جامبنج جاك، سكوات، ضغط، ماونتن كلايمرز. متوسط (25 دقيقة): 40ث شغل / 20ث راحة × 12 جولة. ضيف: بيربي، جامب سكوات، بلانك جاك. تاباتا (4 دقايق قاتلة): 20ث ماكس / 10ث راحة × 8 جولات. متقدم: 45ث شغل / 15ث راحة + تمارين بوزن. التكرار: 2-3 مرات/أسبوع ماكس (مش يومي — محتاج ريكفري). HIIT بعد الحديد مش قبل. بيحرق 25-30% أكتر من كارديو ثابت + EPOC (تأثير الاحتراق بيستمر 24-48 ساعة)!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v32: Training While Sick ──────────────────────────────────
+  {
+    keywords: ['workout while sick', 'train with cold', 'gym when sick', 'exercise with flu', 'should i train sick', 'neck rule'],
+    keywordsAr: ['تمرين وانا عيان', 'تمرين مع برد', 'جيم وانا عيان', 'تمرين مع انفلونزا', 'اتمرن وانا تعبان'],
+    keywordsFranco: ['tamreen w ana 3ayan', 'tamreen ma3 bard', 'gym w ana 3ayan', 'tamreen ma3 enflwanza', 'atmarren w ana ta3ban'],
+    stateId: 'HP_MENU',
+    response: { en: 'Training while sick — the NECK RULE: ABOVE the neck (runny nose, mild sore throat, sneezing): Light exercise OK (walk, light lift at 50%). BELOW the neck (chest congestion, body aches, fever, fatigue): ABSOLUTE REST. NO training with fever — your heart rate is already elevated. FLU: REST completely, you risk myocarditis (heart inflammation). RETURN: Start at 50% intensity, build back over 1 week. HYDRATE extra. Don\'t be a hero — 3-5 days of rest won\'t kill your gains, but training sick can make you worse for weeks!', ar: 'التمرين وانت عيان — قاعدة الرقبة: فوق الرقبة (رشح، زور خفيف، عطس): تمرين خفيف أوكي (مشي، حديد خفيف 50%). تحت الرقبة (كحة صدر، آلام جسم، حرارة، إرهاق): راحة تامة. مفيش تمرين مع حرارة — نبض القلب بالفعل عالي. انفلونزا: ريح خالص، فيه خطر التهاب عضلة القلب. الرجوع: ابدأ 50% شدة، رجع تدريجياً خلال أسبوع. اشرب مية زيادة. متبقاش بطل — 3-5 أيام راحة مش هتضر مكاسبك، بس التمرين وانت عيان ممكن يوقفك أسابيع!' },
+    priority: 9,
+    domain: 'health',
+  },
+
+  // ── v32: Egyptian Healthy Snacks ──────────────────────────────
+  {
+    keywords: ['healthy snacks egypt', 'egyptian healthy snacks', 'gym snacks egypt', 'protein snacks egypt', 'snack ideas fitness'],
+    keywordsAr: ['سناك صحي مصر', 'سناك مصري صحي', 'سناك جيم', 'سناك بروتين مصر', 'أفكار سناك'],
+    keywordsFranco: ['snack se7y masr', 'snack masry se7y', 'snack gym', 'snack protein masr', 'afkar snack'],
+    stateId: 'NT_MENU',
+    response: { en: 'Healthy Egyptian snacks: HIGH PROTEIN: Boiled eggs (2-3), ful sandwich (small), labneh with cucumber, cheese triangle + bread, canned tuna. ENERGY: Dates + peanut butter, lupini (tirmis) — amazing protein!, mixed nuts (loz + soudany), fruit + yogurt. PRE-WORKOUT: Banana + coffee, dates + water, small koshari. POST-WORKOUT: Eggs + bread, protein shake, yogurt + honey + oats. AVOID: Chipsy, 3aseer manga (sugar bomb), croissant (empty calories), feteer (pure fat). Most Egyptian street snacks (tirmis, sweet potato) are actually healthy!', ar: 'سناك مصري صحي: عالي البروتين: بيض مسلوق (2-3)، سندوتش فول (صغير)، لبنة بخيار، مثلث جبنة + عيش، تونة. طاقة: بلح + زبدة فول سوداني، ترمس — بروتين مذهل!، مكسرات (لوز + سوداني)، فاكهة + زبادي. قبل التمرين: موزة + قهوة، بلح + مية، كشري صغير. بعد التمرين: بيض + عيش، بروتين شيك، زبادي + عسل + شوفان. تجنب: شيبسي، عصير مانجو (سكر صافي)، كرواسون (سعرات فاضية)، فطير (دهون صافية). أغلب سناك الشارع المصري (ترمس، بطاطا) صحي فعلاً!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v32: Foam Rolling Guide ───────────────────────────────────
+  {
+    keywords: ['foam rolling', 'how to foam roll', 'foam roller routine', 'foam rolling benefits', 'foam rolling muscles', 'trigger point', 'myofascial release'],
+    keywordsAr: ['فوم رول', 'ازاي استخدم فوم رول', 'روتين فوم رول', 'فوائد فوم رول', 'نقاط تريجر'],
+    keywordsFranco: ['foam roll', 'ezay asta5dem foam roll', 'routine foam roll', 'fawa2ed foam roll', 'no2at trigger'],
+    stateId: 'HP_MENU',
+    response: { en: 'Foam rolling guide: HOW: Roll slowly (1 inch/second), pause on tender spots 30-60sec. PRESSURE: Moderate (6-7/10 pain). WHEN: Before workout (30sec/muscle, increases blood flow) and after (60sec/muscle, reduces soreness). KEY AREAS: Quads, hamstrings, IT band (side of thigh), glutes, upper back, lats, calves. AVOID: Lower back (use a ball), neck, directly on joints/bones. TYPES: Smooth foam (beginner), textured (intermediate), PVC/hard (advanced). Budget: ~150-300 LE in Egypt. Reduces DOMS by 20-30% and improves flexibility!', ar: 'دليل الفوم رول: ازاي: لف ببطء (2سم/ثانية)، وقف على المناطق المؤلمة 30-60ث. الضغط: متوسط (6-7/10 ألم). امتى: قبل التمرين (30ث/عضلة، بيزود الدم) وبعده (60ث/عضلة، بيقلل الشد). مناطق رئيسية: كواد، خلفية، IT باند (جنب الفخد)، أرداف، ظهر علوي، لاتس، سمانة. تجنب: أسفل الظهر (استخدم كرة)، الرقبة، المفاصل/العظم مباشرة. أنواع: فوم ناعم (مبتدئ)، محبب (متوسط)، PVC/صلب (متقدم). السعر: ~150-300 جنيه في مصر. بيقلل الشد 20-30% وبيحسن المرونة!' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v32: Protein Shake Recipes ────────────────────────────────
+  {
+    keywords: ['protein shake recipe', 'smoothie recipe', 'post workout shake', 'homemade protein shake', 'shake without protein powder', 'best protein shake'],
+    keywordsAr: ['وصفة بروتين شيك', 'وصفة سموذي', 'شيك بعد التمرين', 'شيك بروتين بيتي', 'شيك بدون بودر'],
+    keywordsFranco: ['wasfa protein shake', 'wasfa smoothie', 'shake ba3d el tamreen', 'shake protein beity', 'shake bdoon powder'],
+    stateId: 'NT_MENU',
+    response: { en: 'Protein shake recipes: CLASSIC: 1 scoop whey + 1 banana + 200ml milk + ice (350 cal, 35g P). CHOCOLATE PB: 1 scoop chocolate whey + 1 tbsp PB + 200ml milk + ice (400 cal, 38g P). OATS SHAKE: 1 scoop whey + 40g oats + 1 banana + 250ml milk (500 cal, 40g P). NO POWDER: 2 eggs + 1 banana + 200ml milk + 1 tbsp honey + cocoa (350 cal, 20g P). GREEK YOGURT: 200g Greek yogurt + berries + honey + oats (300 cal, 25g P). Egyptian special: Sahlab + whey + cinnamon + milk = warm protein drink for winter!', ar: 'وصفات بروتين شيك: كلاسيك: سكوب واي + موزة + 200مل لبن + ثلج (350 سعرة، 35ج بروتين). شوكلت PB: سكوب واي شوكلت + ملعقة زبدة فول سوداني + 200مل لبن + ثلج (400 سعرة، 38ج). شوفان شيك: سكوب واي + 40ج شوفان + موزة + 250مل لبن (500 سعرة، 40ج). بدون بودر: 2 بيضة + موزة + 200مل لبن + ملعقة عسل + كاكاو (350 سعرة، 20ج). زبادي يوناني: 200ج زبادي + توت + عسل + شوفان (300 سعرة، 25ج). سبيشال مصري: سحلب + واي + قرفة + لبن = مشروب بروتين دافي للشتاء!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v32: Gym After Surgery/Medical ────────────────────────────
+  {
+    keywords: ['gym after surgery', 'exercise after operation', 'return to gym after injury', 'post surgery workout', 'training after hospital'],
+    keywordsAr: ['جيم بعد عملية', 'تمرين بعد جراحة', 'رجوع للجيم بعد إصابة', 'تمرين بعد المستشفى'],
+    keywordsFranco: ['gym ba3d 3amaleya', 'tamreen ba3d gera7a', 'rogo3 lel gym ba3d esaba', 'tamreen ba3d el mostashfa'],
+    stateId: 'HP_MENU',
+    response: { en: 'Return to gym after surgery: RULE #1: Get WRITTEN clearance from your surgeon/doctor. GENERAL TIMELINE: Minor surgery (laparoscopic): 2-4 weeks. Major abdominal: 6-12 weeks. Orthopedic: varies (follow PT plan). RETURN PLAN: Week 1-2: Walking only. Week 3-4: Light machines, 50% weight. Week 5-8: Gradually increase to normal. NEVER: Lift heavy before cleared, rush the timeline, ignore pain. Work with a physiotherapist if available. Your body healed the wound but internal recovery takes longer. Patience = no setbacks!', ar: 'الرجوع للجيم بعد العملية: قاعدة رقم 1: خد موافقة مكتوبة من الجراح/الدكتور. جدول عام: عملية بسيطة (منظار): 2-4 أسابيع. بطن كبرى: 6-12 أسبوع. عظام: بيختلف (اتبع خطة العلاج الطبيعي). خطة الرجوع: أسبوع 1-2: مشي بس. أسبوع 3-4: أجهزة خفيفة، 50% وزن. أسبوع 5-8: زود تدريجياً للعادي. أبداً: ترفع ثقيل قبل الإذن، تستعجل الجدول، تتجاهل الألم. اشتغل مع أخصائي علاج طبيعي لو متاح. الجسم شفى الجرح بس التعافي الداخلي بياخد أكتر. الصبر = مفيش انتكاسات!' },
+    priority: 9,
+    domain: 'health',
+  },
+
+  // ── v32: Fitness for Couples ──────────────────────────────────
+  {
+    keywords: ['couple workout', 'workout with partner', 'gym with girlfriend', 'gym with wife', 'couples fitness', 'partner exercises'],
+    keywordsAr: ['تمرين زوجين', 'تمرين مع شريك', 'جيم مع حبيبتي', 'جيم مع زوجتي', 'لياقة أزواج'],
+    keywordsFranco: ['tamreen zogein', 'tamreen ma3 shareek', 'gym ma3 7abibty', 'gym ma3 zogty', 'leya2et azwag'],
+    stateId: 'QA_MENU',
+    response: { en: 'Couple workouts: BENEFITS: Built-in accountability, more fun, shared goals. PARTNER EXERCISES: Medicine ball throws, partner resisted band work, wheelbarrow walks, partner sit-up with ball toss. SEPARATE BUT TOGETHER: Train at same time but different programs (his upper body while she does lower). TIPS: 1) Don\'t force matching weights 2) Support, don\'t criticize form (leave that to trainers) 3) Celebrate each other\'s PRs 4) Meal prep together (biggest benefit!) 5) Respect different goals/pace. Many Egyptian couples train together now — it\'s becoming normalized and it\'s great!', ar: 'تمارين الأزواج: فوائد: التزام متبادل، أمتع، أهداف مشتركة. تمارين شريك: رمي كرة طبية، باند مع مقاومة شريك، ووكس. منفصل بس مع بعض: تمرنوا نفس الوقت بس برامج مختلفة (هو أب بادي وهي لو بادي). نصايح: 1) متفرضش نفس الأوزان 2) ادعم متنتقدش الفورم (سيبها للمدرب) 3) احتفلوا بإنجازات بعض 4) حضروا الأكل مع بعض (أكبر فايدة!) 5) احترموا أهداف وسرعة مختلفة. أزواج مصريين كتير بيتمرنوا مع بعض دلوقتي — بقت حاجة عادية وحلوة!' },
+    priority: 6,
+    domain: 'root',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
