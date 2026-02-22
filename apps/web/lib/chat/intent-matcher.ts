@@ -6643,6 +6643,50 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v52: Lateral Raise Mastery ────────────────────────
+  {
+    keywords: ['lateral raise', 'lateral raise form', 'side raise', 'lateral raise technique', 'lateral raise mistakes', 'shoulder width', 'side delt exercise', 'cable lateral raise'],
+    keywordsAr: ['لاترال رايز', 'فورم اللاترال رايز', 'سايد رايز', 'تكنيك اللاترال رايز', 'أخطاء اللاترال رايز', 'عرض الكتف'],
+    keywordsFranco: ['lateral raise', 'form el lateral raise', 'side raise', 'technique el lateral raise', 'akhTa2 el lateral raise', '3ard el ketf'],
+    stateId: 'WK_MENU',
+    response: { en: 'Lateral Raise Mastery — The #1 exercise for WIDE shoulders: FORM: Slight forward lean (10-15°), thumbs slightly down or neutral (pour water from a jug), lift to shoulder height, lead with ELBOWS not hands, controlled negative. COMMON MISTAKES: Going too heavy (ego lifting — use LIGHT weight!), swinging body, lifting above shoulders (traps take over), straight arms (slight bend at elbows). VARIATIONS: Dumbbell (most common), cable lateral raise (constant tension — SUPERIOR), machine lateral raise, band lateral raise. VOLUME: Shoulders need lots of volume — 15-25 sets/week for side delts. 3-5x15-20 reps (higher reps work better for lateral raises). FREQUENCY: Hit side delts 3-4x/week minimum. Can do them every workout. SECRET: Cable lateral raises with a LEAN (lean away from cable, single arm) = the best lateral raise variation. Constant tension in the stretched position where dumbbells have zero tension.', ar: 'إتقان اللاترال رايز — تمرين رقم 1 للأكتاف العريضة: الفورم: ميل خفيف لقدام (10-15°)، إبهام شوية لتحت أو نيوترال، ارفع لمستوى الكتف، قود بالكوع مش الإيد، سلبية متحكمة. أخطاء شائعة: وزن تقيل أوي (إيجو — استخدم خفيف!)، تأرجح الجسم، رفع فوق الكتف (الترابس بتاخد)، ذراع مستقيم. الفرسيونات: دمبل (الأشهر)، كابل لاترال رايز (توتر مستمر — أفضل)، ماشين، باند. الفوليوم: الأكتاف محتاجة فوليوم كبير — 15-25 سيت/أسبوع للسايد ديلت. 3-5×15-20 (تكرارات عالية أفضل). التكرار: 3-4 مرات/أسبوع أقل حد. سيكريت: كابل لاترال رايز بميلان (مل بعيد عن الكابل، ذراع واحد) = أفضل فرسيون.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v52: Bicep Curl Variations ────────────────────────
+  {
+    keywords: ['bicep curl variations', 'best bicep exercise', 'bicep workout', 'hammer curl', 'preacher curl', 'incline curl', 'concentration curl', 'ez bar curl', 'biggest biceps'],
+    keywordsAr: ['تنويعات كيرل الباي', 'أفضل تمرين باي', 'تمرين الباي', 'هامر كيرل', 'بريتشر كيرل', 'إنكلاين كيرل', 'أكبر باي'],
+    keywordsFranco: ['tanwe3at curl el bicep', 'afdal tamreen bicep', 'tamreen el bicep', 'hammer curl', 'preacher curl', 'incline curl', 'akbar bicep'],
+    stateId: 'WK_MENU',
+    response: { en: 'Bicep Curl Variations Guide: BARBELL CURL: Most weight possible, overall bicep mass. EZ BAR CURL: Easier on wrists, same benefit. DUMBBELL CURL: Fix imbalances, greater supination at top. HAMMER CURL: Targets brachialis (makes arms look wider from front) + brachioradialis (forearm). Do these! INCLINE CURL: Dumbbells on 45° bench — BEST stretch position for long head (peak). PREACHER CURL: Eliminates cheating, great for short head (inner bicep). CONCENTRATION CURL: Maximum mind-muscle connection, great finisher. CABLE CURL: Constant tension throughout ROM. BEST PROGRAM: Pick 2-3 variations per week. Focus on: 1 stretch exercise (incline curl), 1 heavy exercise (barbell/EZ), 1 isolation (preacher/concentration). VOLUME: 10-16 sets/week. TRUTH: Biceps are small muscles — they don\'t need as much work as you think. Heavy back work (rows, pull-ups) already trains them!', ar: 'دليل تنويعات كيرل الباي: باربل كيرل: أكتر وزن ممكن، حجم باي عام. EZ بار: أرحم على الريست. دمبل كيرل: يصلح عدم التوازن. هامر كيرل: يستهدف البراكياليس (يخلي الذراع عريض من قدام) + الساعد. اعملهم! إنكلاين كيرل: دمبلز على بنش 45° — أفضل استريتش للهيد الطويل (القمة). بريتشر كيرل: يلغي الغش، للهيد القصير. كونسنتريشن كيرل: أقصى ماند-ماصل كونكشن. كابل كيرل: توتر مستمر. أفضل برنامج: اختار 2-3 فرسيونات/أسبوع. ركز على: 1 استريتش (إنكلاين)، 1 تقيل (باربل/EZ)، 1 عزل (بريتشر). الفوليوم: 10-16 سيت/أسبوع. الحقيقة: الباي عضلة صغيرة — تمارين الظهر (رو، عقلة) أساساً بتدربها!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v52: Tricep Training Guide ────────────────────────
+  {
+    keywords: ['tricep exercises', 'tricep workout', 'best tricep exercise', 'skull crusher', 'tricep pushdown', 'overhead extension', 'close grip bench tricep', 'bigger arms tricep'],
+    keywordsAr: ['تمارين التراي', 'تمرين التراي', 'أفضل تمرين تراي', 'سكل كراشر', 'تراي بوشداون', 'أوفرهيد إكستنشن', 'ذراع أكبر تراي'],
+    keywordsFranco: ['tamreen el tricep', 'afdal tamreen tricep', 'skull crusher', 'tricep pushdown', 'overhead extension', 'dera3 akbar tricep'],
+    stateId: 'WK_MENU',
+    response: { en: 'Tricep Training Guide: ANATOMY: Triceps = 2/3 of your arm! 3 heads — long head (biggest, needs overhead work), lateral head (horseshoe shape, pushdowns), medial head (stabilizer). KEY EXERCISES: Long head: Overhead cable extension, skull crushers, incline DB extension. Lateral head: Cable pushdown (rope or bar), kickbacks. ALL heads: Close grip bench press, dips. BEST MASS BUILDERS: Close grip bench press (heavy compound), overhead cable extension (stretch under load), weighted dips. PROGRAM: 10-16 sets/week. Pick 1 overhead (stretch) + 1 pushdown + 1 compound. Example: 3x10 overhead cable, 3x12 rope pushdown, 4x8 close grip bench. SECRET: The long head (overhead exercises) is most neglected but biggest. Prioritize overhead work! PRESSING already trains triceps (bench, OHP, dips) — count those sets. Your arm size is 2/3 tricep, 1/3 bicep. Want bigger arms? Train triceps MORE!', ar: 'دليل تمارين التراي: التشريح: التراي = ثلثين ذراعك! 3 رؤوس — طويل (الأكبر، محتاج أوفرهيد)، جانبي (شكل حدوة الحصان، بوشداون)، وسطي. تمارين أساسية: الرأس الطويل: أوفرهيد كابل إكستنشن، سكل كراشر، إنكلاين DB إكستنشن. الجانبي: كابل بوشداون (حبل أو بار)، كيك باك. الكل: كلوز جريب بنش، ديبس. أفضل بناة الحجم: كلوز جريب بنش (كومباوند تقيل)، أوفرهيد كابل (استريتش تحت حمل)، ديبس بوزن. البرنامج: 10-16 سيت/أسبوع. اختار 1 أوفرهيد + 1 بوشداون + 1 كومباوند. سيكريت: الرأس الطويل (تمارين أوفرهيد) أكتر مهمل بس أكبر. عايز ذراع أكبر؟ درب التراي أكتر — التراي ثلثين!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v52: Core Training Beyond Crunches ────────────────────────
+  {
+    keywords: ['core training', 'core exercises', 'core workout', 'plank alternatives', 'anti rotation', 'pallof press', 'ab wheel', 'hanging leg raise', 'core for strength'],
+    keywordsAr: ['تمارين الكور', 'تمرين الكور', 'بدائل البلانك', 'تمارين مضادة للدوران', 'عجلة البطن', 'رفع الرجل معلق', 'كور للقوة'],
+    keywordsFranco: ['tamreen el core', 'badayel el plank', 'tamreen modad lel dawaran', '3agalet el batn', 'raf3 el regl mo3alla2', 'core lel 2owa'],
+    stateId: 'WK_MENU',
+    response: { en: 'Core Training Beyond Crunches: ANTI-EXTENSION (resist arching): Plank, ab wheel rollout, dead bugs, body saws. ANTI-ROTATION (resist twisting): Pallof press (cable/band — incredible exercise), single-arm farmer carries, bird dogs. ANTI-LATERAL FLEXION (resist bending sideways): Suitcase carry, side plank, single-arm overhead press. FLEXION (traditional): Hanging leg raises (#1 ab exercise!), cable crunches, reverse crunches. ROTATION: Cable woodchops, Russian twists (with weight), medicine ball throws. BEST PROGRAM: 2-3 core exercises per session, 3x/week. Pick one from each category: 1) Hanging leg raise 3x10-15, 2) Pallof press 3x12 each side, 3) Ab wheel rollout 3x8-12. COMPOUND LIFTS train core: Squats, deadlifts, overhead press all require massive core activation. If you do these, you need LESS direct core work. ABS ARE MADE IN THE KITCHEN: Core training builds the muscle, but low body fat reveals them!', ar: 'تمارين الكور بعد الكرانش: مضاد الإكستنشن (مقاومة التقوس): بلانك، عجلة البطن، ديد باجز. مضاد الدوران (مقاومة اللف): بالوف برس (كابل/باند — تمرين مذهل)، فارمرز كاري بذراع واحد. مضاد الميلان الجانبي: سوتكيس كاري، سايد بلانك. ثني (تقليدي): رفع الرجل معلق (تمرين بطن رقم 1!)، كابل كرانش، ريفرس كرانش. دوران: كابل وودتشوب، روشن تويست. أفضل برنامج: 2-3 تمارين كور/حصة، 3 مرات/أسبوع. اختار واحد من كل فئة: 1) رفع رجل معلق 3×10-15، 2) بالوف برس 3×12 كل جنب، 3) عجلة بطن 3×8-12. الكومباوند بتدرب الكور: سكوات، ديدلفت، OHP كلهم محتاجين تنشيط كور. الأبز بتتعمل في المطبخ: الكور بيبني العضلة، بس نسبة الدهون المنخفضة بتوريها!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
