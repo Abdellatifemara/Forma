@@ -6976,6 +6976,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'supplements',
   },
 
+  // ── v59: Home Gym Equipment + Resistance Bands + TRX + Kettlebell Sizes + Recovery Tools ──
+  {
+    keywords: ['home gym equipment', 'home gym setup', 'home gym essentials', 'build home gym', 'home gym budget', 'garage gym', 'home gym what to buy', 'home workout equipment'],
+    keywordsAr: ['معدات جيم منزلي', 'جيم في البيت', 'أدوات تمرين منزلي', 'بناء جيم منزلي', 'جيم بيت ميزانية'],
+    keywordsFranco: ['home gym', 'garage gym', 'home gym setup', 'home gym equipment'],
+    stateId: 'info_home_gym_equipment',
+    response: { en: 'Home Gym Equipment — Priority Buy Order: TIER 1 (Essential, start here): Adjustable Dumbbells (up to 40kg) — can do literally hundreds of exercises. Pull-Up Bar (doorframe) — back, biceps, core, cheap. Resistance Bands (set of 5) — warm-ups, assistance, full workouts. COST: ~2000-4000 LE. TIER 2 (Level up): Adjustable Bench (flat/incline) — opens up bench press, incline work, rows. Kettlebell (16kg or 24kg) — swings, cleans, snatches, goblet squats. Yoga Mat — floor exercises, stretching, core work. COST: ~3000-5000 LE. TIER 3 (Serious home gym): Olympic Barbell + Weight Plates — squat, deadlift, bench, rows, overhead press. Power Rack/Squat Stand — safe heavy lifting. COST: ~8000-15000 LE. TIER 4 (Dream gym): Cable pulley system, trap bar, GHD, rower/bike. SPACE: Minimum 2x3 meters for basic setup. 3x4 meters for rack + bench. FLOORING: Horse stall mats (rubber) from hardware stores — cheapest option for protection. IN EGYPT: Check OLX for used equipment, Big Sports stores, Decathlon Egypt.', ar: 'معدات جيم منزلي — ترتيب الشراء: مستوى 1 (أساسي): دمبل قابل للتعديل (لحد 40كج) — تقدر تعمل مئات التمارين. عقلة باب — ظهر، بايسبس، كور، رخيصة. حبال مقاومة (مجموعة 5) — إحماء، مساعدة، تمارين كاملة. التكلفة: ~2000-4000 ج. مستوى 2: بنش قابل للتعديل، كيتلبل (16 أو 24كج)، مات يوجا. التكلفة: ~3000-5000 ج. مستوى 3: بار أوليمبي + أوزان — سكوات، ديدلفت، بنش. باور راك. التكلفة: ~8000-15000 ج. المساحة: 2×3 متر للأساسي. 3×4 متر للراك + بنش. في مصر: OLX للمستعمل، بيج سبورتس، ديكاتلون مصر.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['resistance band level', 'band color', 'resistance band weight', 'which band', 'band tension', 'mini band', 'pull up band', 'loop band', 'tube band'],
+    keywordsAr: ['مستوى حبل مقاومة', 'لون باند', 'وزن باند', 'حبل مقاومة أي واحد', 'باند مقاومة'],
+    keywordsFranco: ['resistance band level', 'band color', 'which band', 'mini band'],
+    stateId: 'info_resistance_band_levels',
+    response: { en: 'Resistance Band Guide — Colors & Levels: LOOP BANDS (long, for pull-up assistance & strength): Yellow/Tan: 5-15 lbs — warm-ups, mobility. Red: 15-35 lbs — light assistance, upper body. Black: 25-65 lbs — medium, pull-up assistance for beginners. Purple: 40-80 lbs — heavy, squat assistance, heavy rows. Green: 50-120 lbs — extra heavy, strong individuals, heavy deadlift bands. MINI BANDS (small loops, for glute activation): Light (yellow/green) — warm-ups, rehab. Medium (red/blue) — glute activation, lateral walks. Heavy (black) — strong individuals, heavy glute work. TUBE BANDS (with handles): Same color coding, good for mimicking cable exercises at home. HOW TO USE: Warm-up: light band before every workout (shoulder dislocates, pull-aparts, monster walks). Assistance: loop band for pull-ups, dips. Resistance: add band to barbell (accommodating resistance). Full workout: can replace dumbbells when traveling. LIFESPAN: Replace when you see tears, white marks, or thinning. Usually 1-2 years with regular use.', ar: 'دليل أحبال المقاومة — الألوان والمستويات: أحبال لوب (طويلة): أصفر: 5-15 رطل — إحماء. أحمر: 15-35 رطل — مساعدة خفيفة. أسود: 25-65 رطل — متوسط، مساعدة بول أب للمبتدئين. بنفسجي: 40-80 رطل — تقيل. أخضر: 50-120 رطل — تقيل جداً. ميني باند (صغيرة، لتنشيط الجلوت): خفيف — إحماء. متوسط — تنشيط جلوت. تقيل — أقوياء. الاستخدام: إحماء: باند خفيف قبل كل تمرين. مساعدة: لوب باند للبول أب. مقاومة: زوّد باند على البار. العمر: بدّل لما تشوف تمزق أو علامات بيضا. عادة 1-2 سنة.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['trx training', 'trx exercise', 'suspension training', 'suspension trainer', 'trx workout', 'trx at home', 'trx row', 'trx push up'],
+    keywordsAr: ['تي آر إكس', 'تدريب معلق', 'TRX تمرين', 'حبال TRX', 'سسبنشن ترينر'],
+    keywordsFranco: ['trx', 'trx training', 'suspension training', 'trx workout'],
+    stateId: 'info_trx_training',
+    response: { en: 'TRX & Suspension Training Guide: WHAT IT IS: Two adjustable straps anchored to a door/ceiling/tree. Uses your bodyweight at various angles. BEST EXERCISES: UPPER BODY: TRX Row (back) — lean back, pull chest to handles. TRX Push-Up (chest) — feet in straps or hands on handles. TRX Fly (chest) — arms wide, squeeze together. TRX Bicep Curl — face anchor, curl yourself up. TRX Tricep Extension — face away, extend arms. LOWER BODY: TRX Pistol Squat — hold straps for balance. TRX Lunge — rear foot in strap. TRX Hamstring Curl — lie down, heels in straps. CORE: TRX Plank — feet in straps, unstable surface = harder core. TRX Pike — feet in straps, pike hips up. TRX Mountain Climbers — feet in straps. WHY TRX IS GREAT: Portable (travel-friendly), works core on EVERY exercise (instability), adjustable difficulty (change body angle), joint-friendly, full body workout in 30 minutes. PROGRAMMING: Full body 3x/week, 3 sets of 10-15 per exercise, minimal rest. Perfect for home or travel.', ar: 'دليل TRX والتدريب المعلق: ايه هو: حبلين قابلين للتعديل مثبتين في باب/سقف/شجرة. بيستخدم وزن جسمك. أفضل التمارين: جسم علوي: TRX رو (ظهر)، TRX بوش أب (صدر)، TRX فلاي (صدر)، TRX بايسبس كيرل، TRX ترايسبس إكستنشن. جسم سفلي: TRX بيستول سكوات، TRX لنج، TRX هامسترنج كيرل. كور: TRX بلانك، TRX بايك، TRX ماونتن كلايمبر. ليه TRX ممتاز: محمول (صديق للسفر)، بيشتغل كور في كل تمرين، صعوبة قابلة للتعديل، صديق للمفاصل، تمرين كامل الجسم في 30 دقيقة. البرنامج: فول بودي 3×/أسبوع، 3 × 10-15.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['kettlebell size', 'kettlebell weight', 'which kettlebell', 'kettlebell beginner', 'kettlebell swing', 'kettlebell clean', 'kettlebell snatch', 'turkish getup', 'kettlebell program'],
+    keywordsAr: ['حجم كيتلبل', 'وزن كيتلبل', 'أي كيتلبل', 'كيتلبل مبتدئ', 'كيتلبل سوينج'],
+    keywordsFranco: ['kettlebell size', 'kettlebell weight', 'kettlebell beginner', 'kettlebell swing'],
+    stateId: 'info_kettlebell_sizes',
+    response: { en: 'Kettlebell Size Guide & Programming: STARTING WEIGHTS: Men: 16kg (most men), 12kg (beginners/lightweight). Women: 8kg (beginners), 12kg (athletic women). PROGRESSION: Men: 16 → 20 → 24 → 32kg. Women: 8 → 12 → 16 → 20kg. TOP 5 KETTLEBELL EXERCISES: 1) KETTLEBELL SWING — king of kettlebell exercises. Works glutes, hamstrings, core, conditioning. 2) TURKISH GET-UP — full body mobility and stability. Do 1-3 per side, slowly. 3) GOBLET SQUAT — hold KB at chest, squat deep. Perfect squat teacher. 4) CLEAN & PRESS — explosive pull to rack position, then press overhead. 5) KETTLEBELL SNATCH — swing to overhead in one motion. Advanced but incredible for conditioning. SIMPLE & SINISTER PROGRAM (Pavel Tsatsouline): 100 one-arm swings (10x10) + 10 Turkish get-ups (5 per side). Takes 20-30 minutes. Do it daily. This program alone will transform your body. QUALITY MATTERS: Cast iron or competition steel. Avoid vinyl-coated. Good brands: Rogue, Kettlebell Kings, Rep Fitness.', ar: 'دليل أحجام الكيتلبل والبرمجة: أوزان البداية: رجال: 16كج (معظم)، 12كج (مبتدئين). سيدات: 8كج (مبتدئات)، 12كج (رياضيات). التطور: رجال: 16 → 20 → 24 → 32كج. أفضل 5 تمارين: 1) سوينج — ملك تمارين الكيتلبل. جلوت، هامسترنج، كور. 2) تركش جت أب — موبيليتي وثبات كامل الجسم. 3) جوبلت سكوات — KBعلى الصدر، سكوات عميق. 4) كلين آند برس — سحب انفجاري ثم ضغط فوق. 5) سناتش — سوينج لفوق الراس. برنامج Simple & Sinister: 100 سوينج ذراع واحدة + 10 تركش جت أب. 20-30 دقيقة يومياً. البرنامج ده لوحده هيغيرك!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['foam roller', 'massage gun', 'lacrosse ball', 'recovery tool', 'percussion massager', 'theragun', 'massage ball', 'trigger point tool', 'self massage'],
+    keywordsAr: ['فوم رولر', 'مسدس مساج', 'كرة لاكروس', 'أدوات ريكفري', 'ثيراجن', 'كرة مساج', 'مساج ذاتي'],
+    keywordsFranco: ['foam roller', 'massage gun', 'theragun', 'lacrosse ball', 'recovery tool'],
+    stateId: 'info_recovery_tools',
+    response: { en: 'Recovery Tools Guide: FOAM ROLLER: Best for large muscle groups (quads, hamstrings, back, IT band). Roll slowly (1 inch per second), spend 30-60 seconds per area. Pause on tender spots. Types: smooth (beginner), textured (intermediate), PVC pipe (advanced/cheap). LACROSSE BALL: Best for small, deep areas — glutes, upper back between shoulder blades, feet, calves. Place ball on tender spot, apply pressure, hold 30-60 seconds. Tennis ball is softer alternative. MASSAGE GUN (Theragun, Hypervolt): Best for quick relief, pre-workout activation, and general soreness. Use on low-medium speed for 30-60 seconds per muscle. Do NOT use on bones, joints, or the spine. WHICH TO BUY FIRST: Foam roller (300-500 LE) — most versatile. Lacrosse ball (50-100 LE) — cheapest, great for trigger points. Massage gun (1500-5000 LE) — luxury but worth it if budget allows. WHEN TO USE: Pre-workout (increases blood flow), post-workout (reduces soreness), before bed (relaxation), rest days (recovery). 5-10 minutes is enough!', ar: 'دليل أدوات الريكفري: فوم رولر: الأفضل لعضلات كبيرة (كواد، هامسترنج، ظهر). لف ببطء، 30-60 ثانية/منطقة. وقّف على النقاط المؤلمة. كرة لاكروس: الأفضل لمناطق صغيرة وعميقة — جلوت، ضهر علوي، قدم. ضع الكرة على النقطة، اضغط، 30-60 ثانية. مسدس مساج: الأفضل للراحة السريعة. استخدم على سرعة منخفضة-متوسطة 30-60 ثانية/عضلة. ما تستخدمهش على العظام أو المفاصل. الترتيب: فوم رولر (300-500 ج) — الأكتر تنوعاً. كرة لاكروس (50-100 ج) — الأرخص. مسدس مساج (1500-5000 ج) — رفاهية بس يستاهل. الوقت: قبل التمرين، بعد التمرين، قبل النوم، أيام الراحة. 5-10 دقائق كفاية!' },
+    priority: 7,
+    domain: 'recovery',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
