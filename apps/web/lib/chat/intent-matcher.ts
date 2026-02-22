@@ -10109,6 +10109,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── Recovery & Muscle Soreness ────────────────────────
+  {
+    keywords: ['cool down', 'cooldown', 'after workout', 'post workout stretch', 'static stretch', 'stretching routine', 'flexibility routine'],
+    keywordsAr: ['تهدئة', 'بعد التمرين', 'إطالات', 'مرونة', 'استرتش', 'إطالات ثابتة'],
+    keywordsFranco: ['cool down', 'ba3d el tamrin', 'etalat', 'morona', 'stretch', 'stretching'],
+    stateId: 'workout_cooldown_guide',
+    response: { en: 'Post-workout cool down (10-15 min): 1) 5 min light walking or cycling to bring heart rate down, 2) Static stretches: hold each 30-60 seconds — hamstrings, quads, hip flexors, chest, lats, shoulders, 3) Deep breathing: 2 min diaphragmatic breathing for parasympathetic activation. Static stretching AFTER training improves flexibility without reducing strength. Focus extra on muscles you just trained.', ar: 'التهدئة بعد التمرين (١٠-١٥ دقيقة): ١) مشي خفيف ٥ دقايق لتنزيل نبض القلب، ٢) إطالات ثابتة: امسك كل واحدة ٣٠-٦٠ ثانية — هامسترنج، كوادز، فليكسورز، صدر، ظهر، كتف، ٣) تنفس عميق ٢ دقيقة. الإطالات الثابتة بعد التمرين بتحسن المرونة من غير ما تأثر على القوة.' },
+    priority: 5,
+    domain: 'recovery',
+  },
+  {
+    keywords: ['foam roll', 'foam roller', 'foam rolling', 'myofascial release', 'self massage', 'massage gun', 'trigger point', 'muscle knots', 'lacrosse ball'],
+    keywordsAr: ['فوم رولر', 'فوم رول', 'تدليك', 'مساج', 'عقد عضلية', 'مسدس التدليك', 'تحرير عضلي'],
+    keywordsFranco: ['foam roller', 'foam roll', 'massage', 'tadlik', 'massage gun', 'trigger point'],
+    stateId: 'workout_foam_rolling',
+    response: { en: 'Foam rolling (self-myofascial release): roll slowly over tight areas for 30-60 seconds per muscle group. Pause on tender spots (trigger points) for 20-30 seconds. Best areas: IT band, quads, glutes, upper back, calves, lats. Before training: light rolling improves mobility. After training: deeper rolling aids recovery. Massage guns work similarly — use on low-medium setting, 30-60 seconds per area. AVOID rolling directly on joints, spine, or injured areas.', ar: 'الفوم رولر: اتحرك ببطء على المناطق المشدودة ٣٠-٦٠ ثانية لكل عضلة. وقف على النقط الحساسة ٢٠-٣٠ ثانية. أحسن أماكن: الفخذ، الأرداف، أعلى الظهر، السمانة. قبل التمرين: رول خفيف. بعد التمرين: رول أعمق. مسدس التدليك نفس الفكرة — ٣٠-٦٠ ثانية لكل منطقة. متعملش رول على المفاصل أو العمود الفقري.' },
+    priority: 5,
+    domain: 'recovery',
+  },
+  {
+    keywords: ['doms', 'muscle soreness', 'sore muscles', 'delayed onset', 'can\'t walk', 'too sore', 'soreness after gym', 'why am i sore', 'muscles hurt'],
+    keywordsAr: ['ألم عضلي', 'عضلاتي بتوجعني', 'مش قادر أمشي', 'تعب العضلات', 'وجع بعد التمرين', 'جسمي بيوجعني'],
+    keywordsFranco: ['doms', 'muscle soreness', '3adalaty bet-waga3ny', 'msh ader amshi', 'waga3 ba3d el tamrin', 'gesmy beyowga3ny'],
+    stateId: 'recovery_doms_explained',
+    response: { en: 'DOMS (Delayed Onset Muscle Soreness) peaks 24-72 hours after training. It\'s caused by micro-tears in muscle fibers — this is NORMAL and means your muscles are adapting. DOMS does NOT indicate a good workout — it decreases as you adapt. To manage: light movement (walking, easy cardio), foam rolling, adequate protein, good sleep, hot/cold therapy. You CAN train through mild DOMS. If soreness lasts 5+ days, you did too much volume.', ar: 'الـ DOMS (ألم العضلات المتأخر) بيوصل ذروته بعد ٢٤-٧٢ ساعة من التمرين. بيحصل بسبب تمزقات دقيقة في الألياف العضلية — ده طبيعي ومعناه إن العضلات بتتكيف. الألم مش معناه إن التمرين كان كويس — بيقل مع الوقت. للتعامل: حركة خفيفة، فوم رولر، بروتين كافي، نوم كويس. تقدر تتمرن مع ألم خفيف. لو الألم فضل ٥+ أيام، كنت عملت حجم زيادة.' },
+    priority: 5,
+    domain: 'recovery',
+  },
+  {
+    keywords: ['overtraining', 'overtrained', 'under recovery', 'overreaching', 'burnout gym', 'too much training', 'training too much', 'gym addiction', 'rest day guilt'],
+    keywordsAr: ['إفراط في التمرين', 'تمرين زيادة', 'استشفاء ناقص', 'إرهاق', 'احتراق', 'بتمرن كتير', 'راحة'],
+    keywordsFranco: ['overtraining', 'overtrained', 'tamrin zyada', 'estesfha2 na2es', 'ba-tamren ktir', 'rest day'],
+    stateId: 'recovery_overtraining',
+    response: { en: 'True overtraining is rare — most people are UNDER-RECOVERING. Signs: persistent fatigue, declining strength, elevated resting HR, poor sleep, mood changes, frequent illness, nagging injuries, loss of motivation. Causes: too much volume + insufficient sleep + poor nutrition + life stress. Fix: 1) Take a full deload week, 2) Sleep 8+ hours, 3) Eat at maintenance or surplus, 4) Manage stress. Rest days are GROWTH days — muscles grow during recovery, not during training.', ar: 'الإفراط الحقيقي في التمرين نادر — معظم الناس مش بيستشفوا كفاية. العلامات: تعب مستمر، القوة بتقل، النوم وحش، المزاج سيئ، إصابات متكررة. الأسباب: حجم تدريبي كبير + نوم قليل + أكل ناقص + ضغط نفسي. الحل: ١) ديلود أسبوع كامل، ٢) نوم ٨+ ساعات، ٣) كل كفاية، ٤) قلل الضغط. أيام الراحة أيام نمو — العضلات بتنمو في الراحة مش في التمرين.' },
+    priority: 5,
+    domain: 'recovery',
+  },
+  {
+    keywords: ['ice bath', 'cold plunge', 'cold shower', 'cold exposure', 'cold therapy', 'cryotherapy', 'sauna', 'heat therapy', 'contrast therapy', 'hot cold'],
+    keywordsAr: ['حمام ثلج', 'ماء بارد', 'دش بارد', 'علاج بالبرد', 'ساونا', 'علاج بالحرارة', 'حمام ساخن'],
+    keywordsFranco: ['ice bath', 'cold shower', 'dosh bared', 'sauna', 'cold plunge', 'mayah barda'],
+    stateId: 'recovery_cold_heat_therapy',
+    response: { en: 'Cold exposure (ice bath 10-15°C, 5-10 min): reduces inflammation, improves mood and alertness. BUT — avoid immediately after strength training as it may blunt muscle growth. Best on rest days or after cardio. Cold showers (30-60s) give some benefits. Sauna (80-100°C, 15-20 min): improves cardiovascular health, heat shock proteins aid recovery, great for relaxation. Contrast therapy (alternate hot/cold): best of both worlds for recovery.', ar: 'التعرض للبرد (حمام ثلج ١٠-١٥°م، ٥-١٠ دقايق): بيقلل الالتهابات وبيحسن المزاج. بس تجنبه بعد تمرين القوة مباشرة لأنه ممكن يقلل نمو العضلات. الأفضل في أيام الراحة أو بعد الكارديو. الدش البارد (٣٠-٦٠ ثانية) ليه فوايد. الساونا (٨٠-١٠٠°م، ١٥-٢٠ دقيقة): بتحسن صحة القلب والاستشفاء.' },
+    priority: 5,
+    domain: 'recovery',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
