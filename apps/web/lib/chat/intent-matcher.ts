@@ -301,6 +301,37 @@ const TYPO_MAP: Record<string, string> = {
   'testosteron': 'testosterone', 'testosteroen': 'testosterone',
   'cardoi': 'cardio', 'cradio': 'cardio', 'cadrio': 'cardio',
   'motivaton': 'motivation', 'motiviation': 'motivation',
+  // v43: More typos — supplements & health
+  'vitamn': 'vitamin', 'vitmin': 'vitamin', 'viatmin': 'vitamin',
+  'magneisum': 'magnesium', 'magnesim': 'magnesium', 'magnisium': 'magnesium',
+  'calicum': 'calcium', 'calcuim': 'calcium',
+  'potasium': 'potassium', 'potassuim': 'potassium',
+  'electrolites': 'electrolytes', 'electolytes': 'electrolytes',
+  'colegen': 'collagen', 'colagen': 'collagen', 'collagin': 'collagen',
+  'probiotc': 'probiotic', 'probioitc': 'probiotic',
+  'melatonin': 'melatonin', 'melatonn': 'melatonin',
+  'ashwaghanda': 'ashwagandha', 'ashwagnda': 'ashwagandha',
+  'glucosamine': 'glucosamine', 'glucoseamine': 'glucosamine',
+  // v43: More exercise typos
+  'benchpresss': 'bench press', 'benhpress': 'bench press',
+  'deadliftt': 'deadlift', 'dedlift': 'deadlift', 'daedlift': 'deadlift',
+  'pullupss': 'pull ups', 'pullaps': 'pull ups', 'pulups': 'pull ups',
+  'chinup': 'chin up', 'chinups': 'chin ups',
+  'dips': 'dip', 'dipss': 'dips',
+  'shurg': 'shrug', 'shrugs': 'shrugs',
+  'skullcrusher': 'skull crusher', 'skullcrushers': 'skull crushers',
+  'hamercurl': 'hammer curl', 'hammercurl': 'hammer curl',
+  'tbar row': 't-bar row', 'tbarrow': 't-bar row',
+  // v43: More food typos
+  'cottege cheese': 'cottage cheese', 'cotage cheese': 'cottage cheese',
+  'eddame': 'edamame', 'edamami': 'edamame',
+  'brussel sprouts': 'brussels sprouts', 'bruselsprouts': 'brussels sprouts',
+  'tahina': 'tahini', 'tahine': 'tahini',
+  'fetacheese': 'feta cheese', 'fettacheese': 'feta cheese',
+  'shrip': 'shrimp', 'shrimps': 'shrimp',
+  'turky': 'turkey', 'terkey': 'turkey',
+  'sourcream': 'sour cream', 'sourecream': 'sour cream',
+  'granoala': 'granola', 'granolla': 'granola',
 };
 
 function fixTypos(text: string): string {
@@ -6071,6 +6102,50 @@ const INTENT_RULES: IntentRule[] = [
     response: { en: 'Leg Press vs Squat: SQUAT WINS for: Overall muscle activation (quads, glutes, hamstrings, core, back ALL work), functional strength, hormone response (more testosterone/GH release), athletic performance, core strength. LEG PRESS WINS for: Isolating quads, safe heavy loading (no spinal compression), easier to learn, good for high reps, people with back injuries. THE ANSWER: Do BOTH! Squat as your primary compound, leg press as accessory for extra quad volume. CAN\'T SQUAT? (back injury, mobility issues): Leg press + Romanian deadlift + lunges = covers everything squat does. WEIGHT COMPARISON: You can leg press 2-3x your squat weight (less stabilization needed). Don\'t compare the two. FORM TIP: Leg press — don\'t let knees cave in, don\'t go too deep (lower back lifts off pad = too deep), feet shoulder width.', ar: 'ليج برس مقابل سكوات: السكوات أفضل في: تنشيط العضلات الكلي (كوادز، جلوتس، هامسترينج، كور، ظهر كلهم)، قوة وظيفية، استجابة هرمونية، أداء رياضي، قوة الكور. الليج برس أفضل في: عزل الكوادز، تحميل آمن (بدون ضغط على العمود الفقري)، أسهل في التعلم، كويس للتكرارات العالية، ناس عندها إصابات ظهر. الإجابة: اعمل الاتنين! سكوات كتمرين أساسي، ليج برس كإضافة. مش قادر تعمل سكوات؟ (إصابة ظهر): ليج برس + رومانيان ديدلفت + لانجز = بيغطوا كل حاجة. مقارنة الأوزان: بتقدر تعمل ليج برس 2-3 أضعاف السكوات (ثبات أقل مطلوب). متقارنش. نصيحة فورم: متخليش الركب تدخل جوا، متنزلش أوي!' },
     priority: 7,
     domain: 'workout',
+  },
+
+  // ── v43: Bench Press Mastery ────────────────────────
+  {
+    keywords: ['bench press guide', 'bench press form', 'bench press technique', 'how to bench', 'bench press tips', 'increase bench press', 'bench press program', 'bench press stuck'],
+    keywordsAr: ['دليل البنش برس', 'فورم البنش', 'تكنيك البنش', 'ازاي اعمل بنش', 'نصائح البنش', 'زيادة البنش', 'برنامج بنش'],
+    keywordsFranco: ['daleel el bench press', 'form el bench', 'technique el bench', 'ezay a3mel bench', 'nasa2e7 el bench', 'zyada el bench'],
+    stateId: 'WK_MENU',
+    response: { en: 'Bench Press Mastery: SETUP: Feet flat, arch in lower back (natural, not extreme), shoulder blades squeezed together, grip 1.5x shoulder width, wrists straight. BAR PATH: Lower to nipple line, press up and slightly back (J-curve). BREATHING: Big breath at top, hold during descent, exhale on push. COMMON MISTAKES: Bouncing off chest, flared elbows (keep 45-75°), lifting butt off bench, half reps. PLATEAU BREAKERS: Pause reps (3sec on chest), close grip bench, floor press, incline work, more tricep volume. STANDARDS: Beginner 0.5x bodyweight, intermediate 1x, advanced 1.5x, elite 2x. PROGRAM: Bench 2x/week — Day 1 heavy (5x5), Day 2 volume (4x8-10). Increase 2.5kg every 1-2 weeks. Egyptian gyms: Don\'t be afraid to ask for a spot — it\'s expected!', ar: 'إتقان البنش برس: الإعداد: رجلين مفرودة، قوس طبيعي في أسفل الظهر، لوحي الكتف مضمومين، قبضة 1.5× عرض الكتف، ريست مستقيم. مسار البار: انزله لخط الحلمة، ادفع لفوق وشوية ورا (J-curve). التنفس: نفس كبير فوق، امسكه أثناء النزول، ازفر وأنت بتدفع. أخطاء شائعة: طرطقة البار على الصدر، كوع مفتوح أوي، رفع الباسن. كسر البلاتو: ريبس موقفة (3 ثواني على الصدر)، كلوز جريب بنش، فلور برس، إنكلاين. المعايير: مبتدئ 0.5× وزنك، متوسط 1×، متقدم 1.5×، نخبة 2×. البرنامج: بنش مرتين/أسبوع — يوم تقيل (5×5)، يوم فوليوم (4×8-10).' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v43: Deadlift Mastery ────────────────────────
+  {
+    keywords: ['deadlift guide', 'deadlift form', 'deadlift technique', 'how to deadlift', 'deadlift tips', 'increase deadlift', 'deadlift program', 'sumo vs conventional'],
+    keywordsAr: ['دليل الديدلفت', 'فورم الديدلفت', 'تكنيك الديدلفت', 'ازاي اعمل ديدلفت', 'نصائح الديدلفت', 'زيادة الديدلفت', 'سومو ولا كونفنشنال'],
+    keywordsFranco: ['daleel el deadlift', 'form el deadlift', 'technique el deadlift', 'ezay a3mel deadlift', 'nasa2e7 el deadlift', 'sumo wala conventional'],
+    stateId: 'WK_MENU',
+    response: { en: 'Deadlift Mastery: SETUP: Feet hip-width (conventional), bar over mid-foot, grip just outside legs, chest up, hips between shoulders and knees. PULL: Push the floor away, keep bar close to body (drag up shins/thighs), lock out hips and knees together. SUMO vs CONVENTIONAL: Sumo = wider stance, hands inside legs, more quads. Conventional = hip-width, hands outside, more back/hamstrings. Neither is cheating — pick what fits your body. COMMON MISTAKES: Rounding lower back (DANGEROUS), bar drifting forward, jerking the bar, hitching at lockout. STANDARDS: Beginner 1x BW, intermediate 1.5x, advanced 2x, elite 2.5x+. ACCESSORIES: Deficit deadlifts (stand on plate), pause deadlifts, Romanian deadlifts, block pulls. PROGRAM: Deadlift 1-2x/week. Don\'t go heavy every session — alternate heavy (3x3) and volume (4x6).', ar: 'إتقان الديدلفت: الإعداد: رجلين بعرض الهيب (كونفنشنال)، البار فوق نص القدم، قبضة برة الرجلين، صدر لفوق. السحب: ادفع الأرض بعيد، البار قريب من الجسم، اقفل الهيب والركب مع بعض. سومو مقابل كونفنشنال: سومو = ستانس واسع، إيدين جوا الرجلين، كوادز أكتر. كونفنشنال = عرض الهيب، إيدين برا، ظهر/هامسترينج أكتر. ولا واحد غش. أخطاء شائعة: تدوير أسفل الظهر (خطر!)، البار بيبعد، سحب مفاجئ. المعايير: مبتدئ 1× وزنك، متوسط 1.5×، متقدم 2×، نخبة 2.5×+. تمارين مساعدة: ديفيسيت ديدلفت، بوز ديدلفت، رومانيان. البرنامج: ديدلفت 1-2/أسبوع. متروحش تقيل كل حصة.' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v43: Pull-Up Progression ────────────────────────
+  {
+    keywords: ['pull up progression', 'cant do pull ups', 'first pull up', 'how to do pull ups', 'pull up for beginners', 'pull up alternative', 'assisted pull up', 'more pull ups'],
+    keywordsAr: ['تدرج العقلة', 'مش قادر اعمل عقلة', 'أول عقلة', 'ازاي اعمل عقلة', 'عقلة للمبتدئين', 'بديل العقلة', 'عقلة بمساعدة'],
+    keywordsFranco: ['tadarog el 3a2la', 'mesh 2ader a3mel 3a2la', 'awel 3a2la', 'ezay a3mel 3a2la', '3a2la lel mobtade2een', 'badeel el 3a2la'],
+    stateId: 'WK_MENU',
+    response: { en: 'Pull-Up Progression (0 to 20+ reps!): LEVEL 0 (can\'t do 1): Dead hangs (build to 30sec), inverted rows (under a bar/table), band-assisted pull-ups, negative pull-ups (jump up, lower slowly 5sec). Do these 3x/week. LEVEL 1 (1-5 reps): Grease the groove — do singles/doubles throughout the day. 5x3 with rest. Band-assisted for more volume. LEVEL 2 (5-10 reps): 4x6-8, add chin-ups variation, focus on lat pulldowns for volume. LEVEL 3 (10-15 reps): Weighted pull-ups! Start with 5kg, work up. 5x5 weighted + 3xmax bodyweight. LEVEL 4 (15+): Muscle-ups, L-sit pull-ups, archer pull-ups, typewriter pull-ups. GRIP: Pull-ups (overhand) = more back. Chin-ups (underhand) = more biceps. Neutral grip = easiest on shoulders. MOST people can get their first pull-up in 4-8 weeks with consistent training!', ar: 'تدرج العقلة (من 0 لـ20+ تكرار!): مستوى 0 (مش قادر تعمل واحدة): تعليق (اوصل لـ30 ثانية)، صفوف مقلوبة (تحت بار/ترابيزة)، عقلة بباند، عقلة سلبية (اقفز فوق، انزل ببطء 5 ثواني). 3 مرات/أسبوع. مستوى 1 (1-5): تكرارات فردية على مدار اليوم. 5×3 مع راحة. مستوى 2 (5-10): 4×6-8، أضف تشين أبس، لات بولداون. مستوى 3 (10-15): عقلة بوزن! ابدأ بـ5 كيلو. 5×5 بوزن + 3× ماكس. مستوى 4 (15+): ماصل أب، L-sit، آرتشر. القبضة: عقلة (أوفرهاند) = ظهر أكتر. تشين أب (أندرهاند) = باي أكتر. أغلب الناس تقدر تعمل أول عقلة في 4-8 أسابيع!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v43: Water Intake Calculator ────────────────────────
+  {
+    keywords: ['water intake', 'how much water', 'water calculator', 'water per day', 'water for gym', 'dehydration signs', 'water and muscle', 'water weight loss'],
+    keywordsAr: ['كمية المية', 'كام لتر مية', 'حاسبة المية', 'مية في اليوم', 'مية والجيم', 'علامات الجفاف', 'مية والعضلات'],
+    keywordsFranco: ['kamyet el maya', 'kam letr maya', '7asbet el maya', 'maya fel yom', 'maya wel gym', '3alamat el gafaf', 'maya wel 3adalat'],
+    stateId: 'HE_MENU',
+    response: { en: 'Water Intake Guide: FORMULA: Body weight (kg) × 0.033 = liters per day. Example: 80kg × 0.033 = 2.6L/day BASE. ADD: +500ml per hour of exercise, +500ml in hot weather (Egyptian summer!), +250ml per cup of coffee. SIGNS OF DEHYDRATION: Dark urine (aim for light yellow), headache, fatigue, dizziness, dry mouth, reduced performance (2% dehydration = 10-20% performance drop!). MUSCLE: Muscle is 75% water. Dehydrated muscles = weaker, slower recovery, more cramps. WEIGHT LOSS: Drinking 500ml before meals reduces appetite. Cold water burns slightly more calories (body heats it up). TIMING: 500ml upon waking, sip throughout day, 500ml 30min before gym, 200ml every 15-20min during gym, 500ml+ after. DON\'T: Chug 2L at once (your body can only absorb ~250ml per 15min). Egyptian tip: carry a bottle EVERYWHERE — the heat dehydrates you faster than you think!', ar: 'دليل شرب المية: المعادلة: وزنك (كيلو) × 0.033 = لتر/يوم. مثال: 80 × 0.033 = 2.6 لتر/يوم أساسي. أضف: +500ml لكل ساعة تمرين، +500ml في الحر (الصيف المصري!)، +250ml لكل كوب قهوة. علامات الجفاف: بول غامق (استهدف أصفر فاتح)، صداع، تعب، دوخة، فم ناشف، أداء أقل (2% جفاف = 10-20% نقص أداء!). العضلات: العضلة 75% مية. عضلات مجففة = أضعف، ريكفري أبطأ، تقلصات أكتر. نزول الوزن: 500ml قبل الأكل يقلل الشهية. التوقيت: 500ml لما تصحى، رشفات طول اليوم، 500ml قبل الجيم بنص ساعة، 200ml كل 15-20 دقيقة، 500ml+ بعد. متشربش 2 لتر مرة واحدة (جسمك بيمتص ~250ml كل 15 دقيقة). نصيحة: شيل إزازة معاك في كل مكان!' },
+    priority: 8,
+    domain: 'health',
   },
 
   // ── Notification / Reminder Patterns ────────────────────────
