@@ -1,0 +1,814 @@
+[
+  {
+    "id": "prog-specialty-001",
+    "name_en": "Yoga for Beginners - 4 Week Program",
+    "name_ar": "يوغا للمبتدئين - برنامج 4 أسابيع",
+    "description_en": "Introduction to yoga with daily sessions building from basic poses to flowing sequences. Perfect for flexibility, stress relief, and body awareness.",
+    "description_ar": "مقدمة في اليوغا مع جلسات يومية تبدأ من الأوضاع الأساسية إلى التسلسلات المتدفقة. مثالي للمرونة وتخفيف التوتر والوعي بالجسم.",
+    "difficulty": "beginner",
+    "duration_weeks": 4,
+    "days_per_week": 4,
+    "goal": "flexibility",
+    "tags": ["yoga", "flexibility", "beginner", "stress_relief"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Foundation Flow",
+        "name_ar": "تدفق الأساسيات",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Cat-Cow Stretch", "sets": 1, "reps": "10 cycles"},
+          {"name": "Downward Facing Dog", "sets": 1, "reps": "30s hold"},
+          {"name": "Warrior I", "sets": 1, "reps": "30s each side"},
+          {"name": "Warrior II", "sets": 1, "reps": "30s each side"},
+          {"name": "Triangle Pose", "sets": 1, "reps": "30s each side"},
+          {"name": "Child's Pose", "sets": 1, "reps": "60s"},
+          {"name": "Corpse Pose", "sets": 1, "reps": "3 min"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Core & Balance",
+        "name_ar": "كور وتوازن",
+        "target_muscles": ["core", "legs"],
+        "exercises": [
+          {"name": "Sun Salutation A", "sets": 3, "reps": "1 flow"},
+          {"name": "Tree Pose", "sets": 1, "reps": "30s each side"},
+          {"name": "Chair Pose", "sets": 1, "reps": "30s"},
+          {"name": "Boat Pose", "sets": 3, "reps": "15s hold"},
+          {"name": "Bridge Pose", "sets": 3, "reps": "20s hold"},
+          {"name": "Reclined Spinal Twist", "sets": 1, "reps": "30s each side"},
+          {"name": "Legs Up The Wall", "sets": 1, "reps": "3 min"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Hip Openers & Flexibility",
+        "name_ar": "فتح الحوض والمرونة",
+        "target_muscles": ["hips", "hamstrings"],
+        "exercises": [
+          {"name": "Cat-Cow Stretch", "sets": 1, "reps": "10 cycles"},
+          {"name": "Garland Pose / Deep Squat", "sets": 1, "reps": "45s"},
+          {"name": "Pigeon Pose", "sets": 1, "reps": "45s each side"},
+          {"name": "Happy Baby Pose", "sets": 1, "reps": "45s"},
+          {"name": "Seated Forward Fold", "sets": 1, "reps": "45s"},
+          {"name": "Standing Forward Fold", "sets": 1, "reps": "30s"},
+          {"name": "Corpse Pose", "sets": 1, "reps": "5 min"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Strength & Backbends",
+        "name_ar": "قوة وانحناءات خلفية",
+        "target_muscles": ["back", "shoulders", "chest"],
+        "exercises": [
+          {"name": "Sun Salutation B", "sets": 3, "reps": "1 flow"},
+          {"name": "Plank Pose", "sets": 3, "reps": "30s hold"},
+          {"name": "Cobra Pose", "sets": 3, "reps": "15s hold"},
+          {"name": "Locust Pose", "sets": 3, "reps": "15s hold"},
+          {"name": "Camel Pose", "sets": 2, "reps": "15s hold"},
+          {"name": "Side Plank", "sets": 2, "reps": "15s each side"},
+          {"name": "Child's Pose", "sets": 1, "reps": "60s"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-002",
+    "name_en": "Swimming Fitness - 6 Week Endurance",
+    "name_ar": "لياقة السباحة - برنامج 6 أسابيع للتحمل",
+    "description_en": "Progressive swimming program building from 500m to 2000m+ sessions. Includes all four strokes and drills for technique improvement.",
+    "description_ar": "برنامج سباحة تدريجي يبني من 500 متر إلى أكثر من 2000 متر في الجلسة. يشمل الأربع ضربات وتمارين لتحسين التقنية.",
+    "difficulty": "intermediate",
+    "duration_weeks": 6,
+    "days_per_week": 3,
+    "goal": "endurance",
+    "tags": ["swimming", "cardio", "endurance", "technique"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Freestyle Focus",
+        "name_ar": "تركيز على الحرة",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Freestyle / Front Crawl", "sets": 4, "reps": "100m"},
+          {"name": "Kickboard Drills", "sets": 4, "reps": "50m"},
+          {"name": "Pull Buoy Drills", "sets": 4, "reps": "50m"},
+          {"name": "Pool Sprint Intervals", "sets": 6, "reps": "25m"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Mixed Strokes",
+        "name_ar": "ضربات مختلطة",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Backstroke", "sets": 4, "reps": "50m"},
+          {"name": "Breaststroke", "sets": 4, "reps": "50m"},
+          {"name": "Freestyle / Front Crawl", "sets": 4, "reps": "100m"},
+          {"name": "Treading Water", "sets": 3, "reps": "1 min"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Endurance & Speed",
+        "name_ar": "تحمل وسرعة",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Freestyle / Front Crawl", "sets": 1, "reps": "400m continuous"},
+          {"name": "Pool Sprint Intervals", "sets": 8, "reps": "25m"},
+          {"name": "Backstroke", "sets": 4, "reps": "50m"},
+          {"name": "Dolphin Kick Drills", "sets": 4, "reps": "25m"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-003",
+    "name_en": "CrossFit-Style WOD Program - 8 Weeks",
+    "name_ar": "برنامج كروسفت WOD - 8 أسابيع",
+    "description_en": "High-intensity functional fitness program combining weightlifting, gymnastics, and metabolic conditioning. Varied workouts daily.",
+    "description_ar": "برنامج لياقة وظيفية عالي الكثافة يجمع بين رفع الأثقال والجمباز والتكييف الأيضي. تمارين متنوعة يومياً.",
+    "difficulty": "advanced",
+    "duration_weeks": 8,
+    "days_per_week": 5,
+    "goal": "general_fitness",
+    "tags": ["crossfit", "functional", "HIIT", "WOD"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Strength + AMRAP",
+        "name_ar": "قوة + أقصى تكرارات",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Back Squat", "sets": 5, "reps": 5},
+          {"name": "Strict Press", "sets": 5, "reps": 5},
+          {"name": "Pull-Up", "sets": 3, "reps": "max"},
+          {"name": "Box Jump", "sets": 3, "reps": 15},
+          {"name": "Kettlebell Swing", "sets": 3, "reps": 20},
+          {"name": "Burpee", "sets": 3, "reps": 10}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Olympic Lifts + Metcon",
+        "name_ar": "رفع أولمبي + ميتكون",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Power Clean", "sets": 5, "reps": 3},
+          {"name": "Front Squat", "sets": 4, "reps": 5},
+          {"name": "Thruster", "sets": 3, "reps": 10},
+          {"name": "Rowing Machine", "sets": 3, "reps": "500m"},
+          {"name": "Toes to Bar", "sets": 3, "reps": 10}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Gymnastics + Cardio",
+        "name_ar": "جمباز + كارديو",
+        "target_muscles": ["upper_body", "core"],
+        "exercises": [
+          {"name": "Handstand Push-Up", "sets": 5, "reps": 5},
+          {"name": "Ring Dips", "sets": 3, "reps": 10},
+          {"name": "Muscle-Up (Bar)", "sets": 5, "reps": 3},
+          {"name": "Double Under", "sets": 5, "reps": 30},
+          {"name": "L-Sit Hold", "sets": 3, "reps": "15s"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Deadlift + Chipper",
+        "name_ar": "ديدليفت + شيبر",
+        "target_muscles": ["posterior_chain"],
+        "exercises": [
+          {"name": "Deadlift", "sets": 5, "reps": 5},
+          {"name": "Romanian Deadlift", "sets": 3, "reps": 8},
+          {"name": "Wall Ball", "sets": 3, "reps": 20},
+          {"name": "Box Jump", "sets": 3, "reps": 15},
+          {"name": "Assault Bike", "sets": 3, "reps": "30s max effort"}
+        ]
+      },
+      {
+        "day": 5,
+        "name_en": "Hero WOD Day",
+        "name_ar": "يوم تمرين البطل",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Clean and Jerk", "sets": 5, "reps": 3},
+          {"name": "Pull-Up", "sets": 5, "reps": 10},
+          {"name": "Push-Up", "sets": 5, "reps": 20},
+          {"name": "Air Squat", "sets": 5, "reps": 30},
+          {"name": "Running", "sets": 1, "reps": "800m"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-004",
+    "name_en": "Couples Workout - Train Together",
+    "name_ar": "تمرين للأزواج - تدربوا معاً",
+    "description_en": "Partner-based workout program designed for couples to train together. Includes assisted exercises, shared equipment work, and motivational partner drills.",
+    "description_ar": "برنامج تمرين قائم على الشريك مصمم للأزواج للتدرب معاً. يشمل تمارين مساعدة وعمل مشترك على المعدات وتمارين تحفيزية.",
+    "difficulty": "intermediate",
+    "duration_weeks": 4,
+    "days_per_week": 3,
+    "goal": "general_fitness",
+    "tags": ["couples", "partner", "fun", "teamwork"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Body Partners",
+        "name_ar": "جزء علوي مع الشريك",
+        "target_muscles": ["chest", "back", "shoulders"],
+        "exercises": [
+          {"name": "Medicine Ball Chest Pass", "sets": 3, "reps": 15},
+          {"name": "Partner Resistance Push-Up", "sets": 3, "reps": 10},
+          {"name": "Band Row (Facing Partner)", "sets": 3, "reps": 12},
+          {"name": "High Five Plank", "sets": 3, "reps": "30s"},
+          {"name": "Dumbbell Shoulder Press (Alternate)", "sets": 3, "reps": 10},
+          {"name": "Partner Sit-Up with Ball Toss", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Lower Body & Cardio Partners",
+        "name_ar": "جزء سفلي وكارديو مع الشريك",
+        "target_muscles": ["legs", "glutes", "cardio"],
+        "exercises": [
+          {"name": "Partner Wall Sit (Back to Back)", "sets": 3, "reps": "30s"},
+          {"name": "Squat & High Five", "sets": 3, "reps": 15},
+          {"name": "Lunge Walk Together", "sets": 3, "reps": "20 steps each"},
+          {"name": "Partner Leg Throw", "sets": 3, "reps": 12},
+          {"name": "Sprint Race (20m)", "sets": 5, "reps": "1 sprint"},
+          {"name": "Wheelbarrow Walk", "sets": 3, "reps": "15m each"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Full Body HIIT Partners",
+        "name_ar": "HIIT كامل الجسم مع الشريك",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Burpee (Alternate with Partner)", "sets": 5, "reps": 10},
+          {"name": "Medicine Ball Slam (Share)", "sets": 3, "reps": 15},
+          {"name": "Partner Plank Hold Contest", "sets": 3, "reps": "max time"},
+          {"name": "Jump Squat (In Sync)", "sets": 3, "reps": 15},
+          {"name": "Battle Rope (Alternate)", "sets": 3, "reps": "30s each"},
+          {"name": "Stretching Together", "sets": 1, "reps": "5 min"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-005",
+    "name_en": "Military Fitness Test Prep - 8 Weeks",
+    "name_ar": "إعداد لاختبار اللياقة العسكرية - 8 أسابيع",
+    "description_en": "Prepare for military physical fitness tests. Focus on push-ups, sit-ups, running, and overall endurance. Covers Egyptian military academy standards.",
+    "description_ar": "استعداد لاختبارات اللياقة البدنية العسكرية. التركيز على الضغط والبطن والجري والتحمل العام. يغطي معايير الأكاديمية العسكرية المصرية.",
+    "difficulty": "intermediate",
+    "duration_weeks": 8,
+    "days_per_week": 5,
+    "goal": "military_fitness",
+    "tags": ["military", "endurance", "push_ups", "running", "egypt"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Push-Up & Upper Body Endurance",
+        "name_ar": "ضغط وتحمل الجزء العلوي",
+        "target_muscles": ["chest", "triceps", "shoulders"],
+        "exercises": [
+          {"name": "Push-Up (Wide)", "sets": 5, "reps": "max"},
+          {"name": "Diamond Push-Up", "sets": 3, "reps": "max"},
+          {"name": "Dips (Parallel Bars)", "sets": 3, "reps": "max"},
+          {"name": "Pull-Up", "sets": 5, "reps": "max"},
+          {"name": "Plank", "sets": 3, "reps": "60s"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Running Intervals",
+        "name_ar": "جري متقطع",
+        "target_muscles": ["legs", "cardio"],
+        "exercises": [
+          {"name": "Running (Warmup)", "sets": 1, "reps": "800m easy"},
+          {"name": "Sprint (200m)", "sets": 6, "reps": "200m"},
+          {"name": "Running (Steady)", "sets": 1, "reps": "1600m"},
+          {"name": "Cool Down Jog", "sets": 1, "reps": "400m"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Core & Sit-Up Endurance",
+        "name_ar": "كور وتحمل البطن",
+        "target_muscles": ["core"],
+        "exercises": [
+          {"name": "Sit-Up", "sets": 5, "reps": "max"},
+          {"name": "Leg Raise", "sets": 3, "reps": 20},
+          {"name": "Flutter Kicks", "sets": 3, "reps": "30s"},
+          {"name": "Russian Twist", "sets": 3, "reps": 20},
+          {"name": "Plank", "sets": 3, "reps": "90s"},
+          {"name": "Mountain Climber", "sets": 3, "reps": "30s"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Long Distance Run",
+        "name_ar": "جري مسافة طويلة",
+        "target_muscles": ["legs", "cardio"],
+        "exercises": [
+          {"name": "Running (Warmup)", "sets": 1, "reps": "400m"},
+          {"name": "Running (Steady Pace)", "sets": 1, "reps": "5km"},
+          {"name": "Cool Down Walk", "sets": 1, "reps": "400m"},
+          {"name": "Stretching", "sets": 1, "reps": "10 min"}
+        ]
+      },
+      {
+        "day": 5,
+        "name_en": "Full Test Simulation",
+        "name_ar": "محاكاة الاختبار الكامل",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Push-Up (2 min max)", "sets": 1, "reps": "max in 2 min"},
+          {"name": "Sit-Up (2 min max)", "sets": 1, "reps": "max in 2 min"},
+          {"name": "Pull-Up", "sets": 1, "reps": "max"},
+          {"name": "Running (Timed 3km)", "sets": 1, "reps": "3km for time"},
+          {"name": "Rope Climb", "sets": 3, "reps": 1}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-006",
+    "name_en": "TRX Total Body - 4 Weeks",
+    "name_ar": "TRX كامل الجسم - 4 أسابيع",
+    "description_en": "Complete TRX suspension training program. Build strength, stability, and core power using only a TRX system. Great for travel or home gyms.",
+    "description_ar": "برنامج تدريب معلق TRX كامل. بناء القوة والثبات وقوة الكور باستخدام نظام TRX فقط. ممتاز للسفر أو الجيم المنزلي.",
+    "difficulty": "intermediate",
+    "duration_weeks": 4,
+    "days_per_week": 4,
+    "goal": "strength",
+    "tags": ["TRX", "suspension", "home", "travel", "bodyweight"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "TRX Upper Push",
+        "name_ar": "TRX دفع علوي",
+        "target_muscles": ["chest", "shoulders", "triceps"],
+        "exercises": [
+          {"name": "TRX Chest Press", "sets": 4, "reps": 12},
+          {"name": "TRX Tricep Extension", "sets": 3, "reps": 12},
+          {"name": "TRX Atomic Push-Up", "sets": 3, "reps": 8},
+          {"name": "TRX Y Fly", "sets": 3, "reps": 12},
+          {"name": "TRX Plank", "sets": 3, "reps": "30s"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "TRX Legs",
+        "name_ar": "TRX أرجل",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "TRX Squat", "sets": 4, "reps": 15},
+          {"name": "TRX Lunge", "sets": 3, "reps": "10 each leg"},
+          {"name": "TRX Hamstring Curl", "sets": 3, "reps": 12},
+          {"name": "TRX Pistol Squat", "sets": 3, "reps": "6 each leg"},
+          {"name": "TRX Mountain Climber", "sets": 3, "reps": "30s"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "TRX Upper Pull",
+        "name_ar": "TRX سحب علوي",
+        "target_muscles": ["back", "biceps"],
+        "exercises": [
+          {"name": "TRX Row", "sets": 4, "reps": 12},
+          {"name": "TRX Bicep Curl", "sets": 3, "reps": 12},
+          {"name": "TRX Y Fly", "sets": 3, "reps": 12},
+          {"name": "TRX Fallout", "sets": 3, "reps": 8},
+          {"name": "TRX Side Plank", "sets": 2, "reps": "20s each side"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "TRX Core & Full Body",
+        "name_ar": "TRX كور وكامل الجسم",
+        "target_muscles": ["core", "full_body"],
+        "exercises": [
+          {"name": "TRX Pike", "sets": 3, "reps": 10},
+          {"name": "TRX Mountain Climber", "sets": 3, "reps": "30s"},
+          {"name": "TRX Chest Press", "sets": 3, "reps": 12},
+          {"name": "TRX Row", "sets": 3, "reps": 12},
+          {"name": "TRX Squat", "sets": 3, "reps": 15},
+          {"name": "TRX Plank", "sets": 3, "reps": "45s"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-007",
+    "name_en": "Resistance Band Only - Full Program 4 Weeks",
+    "name_ar": "باند فقط - برنامج كامل 4 أسابيع",
+    "description_en": "Complete training program using only resistance bands. Perfect for home workouts, travel, or those who can't access a gym. Builds real muscle with progressive resistance.",
+    "description_ar": "برنامج تدريبي كامل باستخدام أحزمة المقاومة فقط. مثالي للتمرين في البيت أو السفر أو لمن لا يستطيع الوصول للجيم.",
+    "difficulty": "beginner",
+    "duration_weeks": 4,
+    "days_per_week": 4,
+    "goal": "muscle_building",
+    "tags": ["band", "home", "travel", "no_gym", "beginner"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Band Push Day",
+        "name_ar": "يوم دفع بالباند",
+        "target_muscles": ["chest", "shoulders", "triceps"],
+        "exercises": [
+          {"name": "Band Chest Press", "sets": 4, "reps": 15},
+          {"name": "Band Chest Fly", "sets": 3, "reps": 15},
+          {"name": "Band Overhead Press", "sets": 4, "reps": 12},
+          {"name": "Band Lateral Raise", "sets": 3, "reps": 15},
+          {"name": "Band Tricep Pushdown", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Band Pull Day",
+        "name_ar": "يوم سحب بالباند",
+        "target_muscles": ["back", "biceps"],
+        "exercises": [
+          {"name": "Band Row (Seated)", "sets": 4, "reps": 12},
+          {"name": "Band Lat Pulldown", "sets": 4, "reps": 12},
+          {"name": "Band Face Pull", "sets": 3, "reps": 15},
+          {"name": "Band Pull-Apart", "sets": 3, "reps": 15},
+          {"name": "Band Bicep Curl", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Band Legs",
+        "name_ar": "يوم أرجل بالباند",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "Band Squat", "sets": 4, "reps": 15},
+          {"name": "Band Deadlift", "sets": 4, "reps": 12},
+          {"name": "Band Glute Bridge", "sets": 3, "reps": 15},
+          {"name": "Band Monster Walk", "sets": 3, "reps": "20 steps"},
+          {"name": "Band Good Morning", "sets": 3, "reps": 12},
+          {"name": "Band Crab Walk", "sets": 3, "reps": "20 steps"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Band Core & Full Body",
+        "name_ar": "كور وكامل الجسم بالباند",
+        "target_muscles": ["core", "full_body"],
+        "exercises": [
+          {"name": "Band Pallof Press", "sets": 3, "reps": "12 each side"},
+          {"name": "Band Woodchop", "sets": 3, "reps": "12 each side"},
+          {"name": "Band Chest Press", "sets": 3, "reps": 12},
+          {"name": "Band Row (Seated)", "sets": 3, "reps": 12},
+          {"name": "Band Squat", "sets": 3, "reps": 15},
+          {"name": "Band Overhead Press", "sets": 3, "reps": 12}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-008",
+    "name_en": "Calisthenics Progression - 12 Weeks",
+    "name_ar": "كاليسثينكس تقدمي - 12 أسبوع",
+    "description_en": "Master bodyweight skills from push-ups to muscle-ups, handstands, and human flag. Progressive overload through leverage changes.",
+    "description_ar": "إتقان مهارات وزن الجسم من الضغط إلى الماسل أب والوقوف على اليدين والعلم البشري. حمل تدريجي من خلال تغيير الرافعة.",
+    "difficulty": "advanced",
+    "duration_weeks": 12,
+    "days_per_week": 4,
+    "goal": "skill",
+    "tags": ["calisthenics", "bodyweight", "skill", "advanced", "street_workout"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Push Skills",
+        "name_ar": "مهارات الدفع",
+        "target_muscles": ["chest", "shoulders", "triceps"],
+        "exercises": [
+          {"name": "Handstand Wall Hold", "sets": 5, "reps": "30s"},
+          {"name": "Handstand Push-Up (Wall)", "sets": 4, "reps": 5},
+          {"name": "Pseudo Planche Push-Up", "sets": 3, "reps": 8},
+          {"name": "Dips (Parallel Bars)", "sets": 4, "reps": 10},
+          {"name": "Pike Push-Up", "sets": 3, "reps": 10},
+          {"name": "L-Sit Hold", "sets": 3, "reps": "15s"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Pull Skills",
+        "name_ar": "مهارات السحب",
+        "target_muscles": ["back", "biceps"],
+        "exercises": [
+          {"name": "Muscle-Up (Bar)", "sets": 5, "reps": 3},
+          {"name": "Pull-Up (Weighted)", "sets": 4, "reps": 8},
+          {"name": "Archer Pull-Up", "sets": 3, "reps": "5 each side"},
+          {"name": "Front Lever Tuck Hold", "sets": 5, "reps": "10s"},
+          {"name": "Chin-Up (Slow Negative)", "sets": 3, "reps": 5}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Legs & Plyo",
+        "name_ar": "أرجل وبليو",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "Pistol Squat", "sets": 4, "reps": "5 each leg"},
+          {"name": "Nordic Hamstring Curl", "sets": 3, "reps": 6},
+          {"name": "Box Jump (High)", "sets": 4, "reps": 5},
+          {"name": "Bulgarian Split Squat", "sets": 3, "reps": "10 each leg"},
+          {"name": "Single Leg Calf Raise", "sets": 3, "reps": 15},
+          {"name": "Broad Jump", "sets": 4, "reps": 5}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Core & Static Holds",
+        "name_ar": "كور وثبات",
+        "target_muscles": ["core"],
+        "exercises": [
+          {"name": "Dragon Flag", "sets": 3, "reps": 5},
+          {"name": "Front Lever Tuck Hold", "sets": 5, "reps": "10s"},
+          {"name": "Back Lever Tuck Hold", "sets": 5, "reps": "10s"},
+          {"name": "Hanging Windshield Wipers", "sets": 3, "reps": "6 each side"},
+          {"name": "Planche Lean", "sets": 5, "reps": "10s"},
+          {"name": "Human Flag Attempt", "sets": 5, "reps": "5s"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-009",
+    "name_en": "Desk Worker Posture Fix - 6 Weeks",
+    "name_ar": "إصلاح وضعية الجلوس - 6 أسابيع",
+    "description_en": "Fix rounded shoulders, forward head, tight hips, and weak glutes from sitting all day. Combination of strengthening and stretching for office workers.",
+    "description_ar": "إصلاح الأكتاف المستديرة والرأس للأمام وضيق الحوض وضعف الإليتين من الجلوس طوال اليوم. مزيج من التقوية والتمدد لموظفي المكاتب.",
+    "difficulty": "beginner",
+    "duration_weeks": 6,
+    "days_per_week": 3,
+    "goal": "posture",
+    "tags": ["posture", "desk_worker", "office", "rehab", "beginner"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Body Posture",
+        "name_ar": "وضعية الجزء العلوي",
+        "target_muscles": ["upper_back", "shoulders", "neck"],
+        "exercises": [
+          {"name": "Chin Tucks", "sets": 3, "reps": 10},
+          {"name": "Wall Slides (Scapular)", "sets": 3, "reps": 12},
+          {"name": "Prone Y Raise", "sets": 3, "reps": 12},
+          {"name": "Prone T Raise", "sets": 3, "reps": 12},
+          {"name": "Doorway Chest Stretch", "sets": 2, "reps": "30s"},
+          {"name": "Band Face Pull", "sets": 3, "reps": 15},
+          {"name": "Band Pull-Apart", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Hip & Lower Body",
+        "name_ar": "حوض وجزء سفلي",
+        "target_muscles": ["hips", "glutes", "core"],
+        "exercises": [
+          {"name": "Hip Flexor Stretch (Kneeling)", "sets": 2, "reps": "30s each side"},
+          {"name": "Piriformis Stretch", "sets": 2, "reps": "30s each side"},
+          {"name": "Clamshell Exercise", "sets": 3, "reps": 15},
+          {"name": "Glute Bridge", "sets": 3, "reps": 15},
+          {"name": "Band Monster Walk", "sets": 3, "reps": "20 steps"},
+          {"name": "Dead Bug (Rehab Version)", "sets": 3, "reps": "10 each side"},
+          {"name": "Cat-Cow Stretch", "sets": 1, "reps": "10 cycles"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Full Body Mobility",
+        "name_ar": "مرونة كامل الجسم",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Foam Roller Thoracic Extension", "sets": 1, "reps": "60s"},
+          {"name": "Chin Tucks", "sets": 2, "reps": 10},
+          {"name": "Wall Slides (Scapular)", "sets": 2, "reps": 12},
+          {"name": "Garland Pose / Deep Squat", "sets": 2, "reps": "30s"},
+          {"name": "Hip Flexor Stretch (Kneeling)", "sets": 2, "reps": "30s each"},
+          {"name": "Hamstring Stretch (Supine with Strap)", "sets": 2, "reps": "30s each"},
+          {"name": "Pigeon Pose", "sets": 1, "reps": "45s each side"},
+          {"name": "Wrist Flexor Stretch", "sets": 2, "reps": "30s each"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-010",
+    "name_en": "Football/Soccer Conditioning - 6 Weeks",
+    "name_ar": "تكييف كرة القدم - 6 أسابيع",
+    "description_en": "Sport-specific conditioning for football/soccer players. Focus on sprint speed, agility, leg power, and match endurance. Popular in Egyptian football culture.",
+    "description_ar": "تكييف خاص بكرة القدم. التركيز على سرعة السبرنت والرشاقة وقوة الأرجل وتحمل المباراة. شائع في ثقافة كرة القدم المصرية.",
+    "difficulty": "intermediate",
+    "duration_weeks": 6,
+    "days_per_week": 4,
+    "goal": "sport_specific",
+    "tags": ["football", "soccer", "sport", "speed", "agility", "egypt"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Speed & Agility",
+        "name_ar": "سرعة ورشاقة",
+        "target_muscles": ["legs", "cardio"],
+        "exercises": [
+          {"name": "Sprint (30m)", "sets": 8, "reps": "1 sprint"},
+          {"name": "Shuttle Run (5-10-5)", "sets": 6, "reps": "1 drill"},
+          {"name": "Ladder Drills", "sets": 4, "reps": "30s"},
+          {"name": "Cone Drills (T-Drill)", "sets": 4, "reps": "1 drill"},
+          {"name": "Broad Jump", "sets": 4, "reps": 5},
+          {"name": "Single Leg Hop", "sets": 3, "reps": "10 each leg"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Leg Strength",
+        "name_ar": "قوة الأرجل",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "Back Squat", "sets": 4, "reps": 8},
+          {"name": "Romanian Deadlift", "sets": 3, "reps": 10},
+          {"name": "Bulgarian Split Squat", "sets": 3, "reps": "10 each leg"},
+          {"name": "Leg Press", "sets": 3, "reps": 12},
+          {"name": "Nordic Hamstring Curl", "sets": 3, "reps": 6},
+          {"name": "Calf Raise", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Match Endurance",
+        "name_ar": "تحمل المباراة",
+        "target_muscles": ["cardio", "full_body"],
+        "exercises": [
+          {"name": "Interval Running (Fartlek)", "sets": 1, "reps": "20 min"},
+          {"name": "Sprint (60m)", "sets": 6, "reps": "1 sprint"},
+          {"name": "Recovery Jog", "sets": 6, "reps": "200m"},
+          {"name": "Core Circuit (Plank + Russian Twist + Leg Raise)", "sets": 3, "reps": "45s each"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Power & Core",
+        "name_ar": "قوة انفجارية وكور",
+        "target_muscles": ["core", "legs"],
+        "exercises": [
+          {"name": "Box Jump", "sets": 4, "reps": 8},
+          {"name": "Medicine Ball Slam", "sets": 3, "reps": 12},
+          {"name": "Kettlebell Swing", "sets": 3, "reps": 15},
+          {"name": "Hanging Leg Raise", "sets": 3, "reps": 12},
+          {"name": "Russian Twist", "sets": 3, "reps": 20},
+          {"name": "Plank", "sets": 3, "reps": "60s"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-011",
+    "name_en": "Post-Pregnancy Return to Fitness - 8 Weeks",
+    "name_ar": "العودة للياقة بعد الولادة - 8 أسابيع",
+    "description_en": "Safe, gradual return to exercise after pregnancy (cleared by doctor). Focus on pelvic floor, core reconstruction, and gentle full-body strengthening.",
+    "description_ar": "عودة آمنة وتدريجية للتمرين بعد الولادة (بموافقة الطبيب). التركيز على قاع الحوض وإعادة بناء الكور وتقوية لطيفة لكامل الجسم.",
+    "difficulty": "beginner",
+    "duration_weeks": 8,
+    "days_per_week": 3,
+    "goal": "recovery",
+    "tags": ["postpartum", "women", "recovery", "pelvic_floor", "gentle"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Pelvic Floor & Core Rehab",
+        "name_ar": "تأهيل قاع الحوض والكور",
+        "target_muscles": ["core", "pelvic_floor"],
+        "exercises": [
+          {"name": "Pelvic Tilt (Supine)", "sets": 3, "reps": 15},
+          {"name": "Kegel Exercises", "sets": 3, "reps": "10 holds x 5s"},
+          {"name": "Dead Bug (Rehab Version)", "sets": 3, "reps": "8 each side"},
+          {"name": "Glute Bridge", "sets": 3, "reps": 12},
+          {"name": "Bird Dog (Rehab Version)", "sets": 3, "reps": "8 each side"},
+          {"name": "Cat-Cow Stretch", "sets": 1, "reps": "10 cycles"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Gentle Upper Body",
+        "name_ar": "جزء علوي لطيف",
+        "target_muscles": ["back", "shoulders", "arms"],
+        "exercises": [
+          {"name": "Wall Push-Up", "sets": 3, "reps": 12},
+          {"name": "Band Row (Seated)", "sets": 3, "reps": 12},
+          {"name": "Band Bicep Curl", "sets": 3, "reps": 12},
+          {"name": "Band Lateral Raise", "sets": 3, "reps": 12},
+          {"name": "Doorway Chest Stretch", "sets": 2, "reps": "30s"},
+          {"name": "Chin Tucks", "sets": 2, "reps": 10}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Lower Body & Walking",
+        "name_ar": "جزء سفلي ومشي",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "Bodyweight Squat", "sets": 3, "reps": 12},
+          {"name": "Clamshell Exercise", "sets": 3, "reps": 15},
+          {"name": "Hip Abduction (Side Lying)", "sets": 3, "reps": 12},
+          {"name": "Calf Raises (Wall Support)", "sets": 3, "reps": 15},
+          {"name": "Walking", "sets": 1, "reps": "15 min"},
+          {"name": "Hip Flexor Stretch (Kneeling)", "sets": 2, "reps": "30s each"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-specialty-012",
+    "name_en": "Arm Specialization - 4 Weeks (Egyptian Style)",
+    "name_ar": "تخصص ذراعين - 4 أسابيع (ستايل مصري)",
+    "description_en": "Dedicated arm training program popular in Egyptian gyms. Hit biceps and triceps multiple times per week with high volume. Because everyone wants big arms.",
+    "description_ar": "برنامج تدريب ذراعين مخصص شائع في الجيمات المصرية. ضرب البايسبس والترايسبس عدة مرات في الأسبوع بحجم عالي. لأن الكل عايز ذراع كبير.",
+    "difficulty": "intermediate",
+    "duration_weeks": 4,
+    "days_per_week": 5,
+    "goal": "muscle_building",
+    "tags": ["arms", "biceps", "triceps", "bro_split", "egypt", "volume"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Chest & Triceps (Heavy)",
+        "name_ar": "صدر وترايسبس (ثقيل)",
+        "target_muscles": ["chest", "triceps"],
+        "exercises": [
+          {"name": "Bench Press", "sets": 4, "reps": 8},
+          {"name": "Incline Dumbbell Press", "sets": 3, "reps": 10},
+          {"name": "Cable Fly", "sets": 3, "reps": 12},
+          {"name": "Close Grip Bench Press", "sets": 4, "reps": 10},
+          {"name": "Skull Crusher", "sets": 3, "reps": 12},
+          {"name": "Tricep Rope Pushdown", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Back & Biceps (Heavy)",
+        "name_ar": "ظهر وبايسبس (ثقيل)",
+        "target_muscles": ["back", "biceps"],
+        "exercises": [
+          {"name": "Barbell Row", "sets": 4, "reps": 8},
+          {"name": "Lat Pulldown", "sets": 3, "reps": 10},
+          {"name": "Seated Cable Row", "sets": 3, "reps": 10},
+          {"name": "Barbell Curl", "sets": 4, "reps": 10},
+          {"name": "Hammer Curl", "sets": 3, "reps": 12},
+          {"name": "Preacher Curl", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Shoulders & Arms (Volume)",
+        "name_ar": "أكتاف وذراعين (حجم)",
+        "target_muscles": ["shoulders", "biceps", "triceps"],
+        "exercises": [
+          {"name": "Overhead Press", "sets": 4, "reps": 10},
+          {"name": "Lateral Raise", "sets": 4, "reps": 15},
+          {"name": "Face Pull", "sets": 3, "reps": 15},
+          {"name": "EZ Bar Curl", "sets": 4, "reps": 12},
+          {"name": "Concentration Curl", "sets": 3, "reps": 12},
+          {"name": "Overhead Tricep Extension", "sets": 4, "reps": 12},
+          {"name": "Dips", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Legs",
+        "name_ar": "أرجل",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "Back Squat", "sets": 4, "reps": 10},
+          {"name": "Leg Press", "sets": 3, "reps": 12},
+          {"name": "Romanian Deadlift", "sets": 3, "reps": 10},
+          {"name": "Leg Extension", "sets": 3, "reps": 12},
+          {"name": "Leg Curl", "sets": 3, "reps": 12},
+          {"name": "Calf Raise", "sets": 4, "reps": 15}
+        ]
+      },
+      {
+        "day": 5,
+        "name_en": "Arms Blast Day",
+        "name_ar": "يوم ذراعين مكثف",
+        "target_muscles": ["biceps", "triceps", "forearms"],
+        "exercises": [
+          {"name": "Barbell Curl (21s)", "sets": 3, "reps": "21 (7-7-7)"},
+          {"name": "Spider Curl", "sets": 3, "reps": 12},
+          {"name": "Reverse Curl", "sets": 3, "reps": 12},
+          {"name": "Close Grip Bench Press", "sets": 3, "reps": 10},
+          {"name": "Cable Kickback", "sets": 3, "reps": 12},
+          {"name": "Dip (Weighted)", "sets": 3, "reps": 10},
+          {"name": "Wrist Curl", "sets": 3, "reps": 15}
+        ]
+      }
+    ]
+  }
+]

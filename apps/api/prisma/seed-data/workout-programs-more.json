@@ -1,0 +1,536 @@
+[
+  {
+    "id": "ramadan-workout-3day",
+    "name_en": "Ramadan Workout Plan (3 Days)",
+    "name_ar": "برنامج تمارين رمضان ٣ أيام",
+    "description_en": "Designed for fasting athletes. Short, intense sessions before iftar. No heavy deadlifts or squats while fasting. Focus on maintaining muscle during Ramadan.",
+    "description_ar": "مصمم للرياضيين الصائمين. جلسات قصيرة ومكثفة قبل الفطار. بدون ديدليفت أو سكوات ثقيل أثناء الصيام. التركيز على الحفاظ على العضل في رمضان.",
+    "difficulty": "INTERMEDIATE",
+    "duration_weeks": 4,
+    "days_per_week": 3,
+    "goal": "MUSCLE_MAINTENANCE",
+    "tags": ["ramadan", "fasting", "maintenance", "short-sessions"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Body (Before Iftar)",
+        "name_ar": "جزء علوي (قبل الفطار)",
+        "target_muscles": ["chest", "back", "shoulders"],
+        "exercises": [
+          {"name": "Incline Dumbbell Press", "sets": 3, "reps": "10-12"},
+          {"name": "Lat Pulldown", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Shoulder Press", "sets": 3, "reps": "10-12"},
+          {"name": "Cable Flyes", "sets": 2, "reps": "12-15"},
+          {"name": "Seated Cable Row", "sets": 2, "reps": "12-15"}
+        ],
+        "notes": "Train 30-45 min before iftar. Drink water immediately after."
+      },
+      {
+        "day": 2,
+        "name_en": "Lower Body (Before Iftar)",
+        "name_ar": "جزء سفلي (قبل الفطار)",
+        "target_muscles": ["quadriceps", "hamstrings", "glutes"],
+        "exercises": [
+          {"name": "Leg Press", "sets": 3, "reps": "10-12"},
+          {"name": "Romanian Deadlift (light)", "sets": 3, "reps": "10-12"},
+          {"name": "Leg Extension", "sets": 2, "reps": "12-15"},
+          {"name": "Leg Curl", "sets": 2, "reps": "12-15"},
+          {"name": "Calf Raise", "sets": 3, "reps": "15-20"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Arms + Core (After Iftar)",
+        "name_ar": "ذراع + بطن (بعد الفطار)",
+        "target_muscles": ["biceps", "triceps", "core"],
+        "exercises": [
+          {"name": "Barbell Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Triceps Rope Pushdown", "sets": 3, "reps": "10-12"},
+          {"name": "Hammer Curl", "sets": 2, "reps": "12"},
+          {"name": "Skull Crushers", "sets": 2, "reps": "12"},
+          {"name": "Hanging Leg Raise", "sets": 3, "reps": "12"},
+          {"name": "Cable Crunch", "sets": 3, "reps": "15"}
+        ],
+        "notes": "Train 1-2 hours after iftar when food has settled."
+      }
+    ]
+  },
+  {
+    "id": "bulking-program-5day",
+    "name_en": "Bulking Program (5 Days, Mass Building)",
+    "name_ar": "برنامج تضخيم ٥ أيام",
+    "description_en": "High volume program designed for muscle mass gains. Calorie surplus recommended (300-500 calories above maintenance). Heavy compound lifts with isolation work.",
+    "description_ar": "برنامج حجم عالي مصمم لزيادة الكتلة العضلية. يُنصح بزيادة سعرات (٣٠٠-٥٠٠ سعرة فوق الحاجة). رفعات مركبة ثقيلة مع تمارين عزل.",
+    "difficulty": "INTERMEDIATE",
+    "duration_weeks": 12,
+    "days_per_week": 5,
+    "goal": "MUSCLE_BUILDING",
+    "tags": ["bulking", "mass", "volume", "calorie-surplus"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Chest + Triceps",
+        "name_ar": "صدر + تراي",
+        "target_muscles": ["chest", "triceps"],
+        "exercises": [
+          {"name": "Flat Barbell Bench Press", "sets": 5, "reps": "5-8"},
+          {"name": "Incline Dumbbell Press", "sets": 4, "reps": "8-10"},
+          {"name": "Weighted Dips", "sets": 3, "reps": "8-10"},
+          {"name": "Cable Crossover", "sets": 3, "reps": "12-15"},
+          {"name": "Close Grip Bench Press", "sets": 3, "reps": "8-10"},
+          {"name": "Overhead Triceps Extension", "sets": 3, "reps": "10-12"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Back + Biceps",
+        "name_ar": "ظهر + باي",
+        "target_muscles": ["back", "biceps"],
+        "exercises": [
+          {"name": "Deadlift", "sets": 4, "reps": "5"},
+          {"name": "Weighted Pull-Ups", "sets": 4, "reps": "6-8"},
+          {"name": "Bent Over Barbell Row", "sets": 4, "reps": "6-8"},
+          {"name": "T-Bar Row", "sets": 3, "reps": "8-10"},
+          {"name": "Barbell Curl", "sets": 4, "reps": "8-10"},
+          {"name": "Preacher Curl", "sets": 3, "reps": "10-12"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Legs (Quad Focus)",
+        "name_ar": "رجل (تركيز أمامي)",
+        "target_muscles": ["quadriceps", "calves"],
+        "exercises": [
+          {"name": "Barbell Back Squat", "sets": 5, "reps": "5-8"},
+          {"name": "Front Squat", "sets": 3, "reps": "8-10"},
+          {"name": "Leg Press", "sets": 4, "reps": "10-12"},
+          {"name": "Leg Extension", "sets": 3, "reps": "12-15"},
+          {"name": "Walking Lunges", "sets": 3, "reps": "12 each"},
+          {"name": "Standing Calf Raise", "sets": 5, "reps": "15-20"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Shoulders + Traps",
+        "name_ar": "أكتاف + ترابيس",
+        "target_muscles": ["shoulders", "traps"],
+        "exercises": [
+          {"name": "Standing Barbell Overhead Press", "sets": 5, "reps": "5-8"},
+          {"name": "Dumbbell Lateral Raise", "sets": 5, "reps": "12-15"},
+          {"name": "Reverse Pec Deck", "sets": 4, "reps": "12-15"},
+          {"name": "Face Pulls", "sets": 3, "reps": "15-20"},
+          {"name": "Barbell Shrugs", "sets": 4, "reps": "10-12"},
+          {"name": "Upright Row (cable)", "sets": 3, "reps": "10-12"}
+        ]
+      },
+      {
+        "day": 5,
+        "name_en": "Legs (Hamstring + Glute Focus)",
+        "name_ar": "رجل (تركيز خلفي ومؤخرة)",
+        "target_muscles": ["hamstrings", "glutes"],
+        "exercises": [
+          {"name": "Romanian Deadlift", "sets": 4, "reps": "8-10"},
+          {"name": "Hip Thrust (Barbell)", "sets": 4, "reps": "10-12"},
+          {"name": "Bulgarian Split Squat", "sets": 3, "reps": "10 each"},
+          {"name": "Lying Leg Curl", "sets": 4, "reps": "10-12"},
+          {"name": "Glute Bridge (Banded)", "sets": 3, "reps": "15"},
+          {"name": "Seated Calf Raise", "sets": 4, "reps": "15-20"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "senior-fitness-3day",
+    "name_en": "Senior Fitness Program (3 Days, 50+)",
+    "name_ar": "برنامج لياقة لكبار السن ٣ أيام (٥٠+)",
+    "description_en": "Safe, effective program for adults over 50. Focus on joint health, balance, bone density, and functional strength. Low impact with modifications available.",
+    "description_ar": "برنامج آمن وفعال للبالغين فوق ٥٠ سنة. تركيز على صحة المفاصل والتوازن وكثافة العظام والقوة الوظيفية. تأثير منخفض مع تعديلات متاحة.",
+    "difficulty": "BEGINNER",
+    "duration_weeks": 8,
+    "days_per_week": 3,
+    "goal": "GENERAL_FITNESS",
+    "tags": ["senior", "50+", "joint-health", "safe", "functional"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Full Body A (Machine Focus)",
+        "name_ar": "كامل الجسم أ (أجهزة)",
+        "target_muscles": ["all"],
+        "exercises": [
+          {"name": "Leg Press (light)", "sets": 3, "reps": "12-15"},
+          {"name": "Chest Press Machine", "sets": 3, "reps": "12-15"},
+          {"name": "Lat Pulldown (light)", "sets": 3, "reps": "12-15"},
+          {"name": "Shoulder Press Machine", "sets": 2, "reps": "12-15"},
+          {"name": "Seated Leg Curl", "sets": 2, "reps": "12-15"},
+          {"name": "Standing Calf Raise", "sets": 2, "reps": "15"},
+          {"name": "Wall Sit", "sets": 2, "reps": "20-30 sec"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Balance + Core",
+        "name_ar": "توازن + كور",
+        "target_muscles": ["core", "balance"],
+        "exercises": [
+          {"name": "Single Leg Stand (each side)", "sets": 3, "reps": "30 sec"},
+          {"name": "Bird Dog", "sets": 3, "reps": "8 each"},
+          {"name": "Seated Cable Row (light)", "sets": 3, "reps": "12-15"},
+          {"name": "Plank (modified, on knees)", "sets": 3, "reps": "20-30 sec"},
+          {"name": "Farmer's Walk (light)", "sets": 3, "reps": "30 sec"},
+          {"name": "Cat-Cow Stretch", "sets": 2, "reps": "10"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Full Body B (Free Weights + Bands)",
+        "name_ar": "كامل الجسم ب (أوزان حرة + باندز)",
+        "target_muscles": ["all"],
+        "exercises": [
+          {"name": "Goblet Squat", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Bench Press (light)", "sets": 3, "reps": "12"},
+          {"name": "Seated Dumbbell Row", "sets": 3, "reps": "12"},
+          {"name": "Resistance Band Shoulder Press", "sets": 2, "reps": "12-15"},
+          {"name": "Resistance Band Bicep Curl", "sets": 2, "reps": "12-15"},
+          {"name": "Step-Ups (low step)", "sets": 2, "reps": "10 each"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hiit-cardio-4day",
+    "name_en": "HIIT + Cardio Fat Burn (4 Days)",
+    "name_ar": "تمارين HIIT وكارديو حرق دهون ٤ أيام",
+    "description_en": "High Intensity Interval Training combined with steady state cardio. Burns maximum fat in minimum time. 30-40 minute sessions.",
+    "description_ar": "تمارين عالية الشدة بالتبادل مع كارديو ثابت. أقصى حرق للدهون في أقل وقت. جلسات ٣٠-٤٠ دقيقة.",
+    "difficulty": "INTERMEDIATE",
+    "duration_weeks": 6,
+    "days_per_week": 4,
+    "goal": "FAT_LOSS",
+    "tags": ["hiit", "cardio", "fat-burn", "high-intensity"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "HIIT Circuit A",
+        "name_ar": "سيركت HIIT أ",
+        "target_muscles": ["full body", "cardio"],
+        "exercises": [
+          {"name": "Burpees", "sets": 4, "reps": "30 sec on, 30 sec off"},
+          {"name": "Mountain Climbers", "sets": 4, "reps": "30 sec on, 30 sec off"},
+          {"name": "Jump Squats", "sets": 4, "reps": "30 sec on, 30 sec off"},
+          {"name": "High Knees", "sets": 4, "reps": "30 sec on, 30 sec off"},
+          {"name": "Push-Ups", "sets": 4, "reps": "30 sec on, 30 sec off"},
+          {"name": "Plank Jacks", "sets": 4, "reps": "30 sec on, 30 sec off"}
+        ],
+        "notes": "3 rounds total with 2 min rest between rounds"
+      },
+      {
+        "day": 2,
+        "name_en": "Steady State Cardio (40 min)",
+        "name_ar": "كارديو ثابت ٤٠ دقيقة",
+        "target_muscles": ["cardio"],
+        "exercises": [
+          {"name": "Treadmill Walk/Jog (incline 5-10%)", "sets": 1, "reps": "20 min"},
+          {"name": "Cycling (moderate)", "sets": 1, "reps": "20 min"}
+        ],
+        "notes": "Keep heart rate at 60-70% of max. Zone 2 cardio."
+      },
+      {
+        "day": 3,
+        "name_en": "HIIT Circuit B (Weights)",
+        "name_ar": "سيركت HIIT ب (أوزان)",
+        "target_muscles": ["full body"],
+        "exercises": [
+          {"name": "Kettlebell Swing", "sets": 5, "reps": "30 sec on, 30 sec off"},
+          {"name": "Dumbbell Thruster", "sets": 5, "reps": "30 sec on, 30 sec off"},
+          {"name": "Battle Ropes", "sets": 5, "reps": "30 sec on, 30 sec off"},
+          {"name": "Box Jumps", "sets": 5, "reps": "30 sec on, 30 sec off"},
+          {"name": "Renegade Row", "sets": 5, "reps": "30 sec on, 30 sec off"}
+        ],
+        "notes": "2-3 rounds with 2 min rest between rounds"
+      },
+      {
+        "day": 4,
+        "name_en": "Active Recovery + Stretching",
+        "name_ar": "استشفاء نشط + إطالة",
+        "target_muscles": ["flexibility", "recovery"],
+        "exercises": [
+          {"name": "Light Walk", "sets": 1, "reps": "15 min"},
+          {"name": "Foam Rolling (full body)", "sets": 1, "reps": "10 min"},
+          {"name": "Hip Flexor Stretch", "sets": 2, "reps": "30 sec each"},
+          {"name": "Pigeon Pose", "sets": 2, "reps": "30 sec each"},
+          {"name": "Child's Pose", "sets": 2, "reps": "30 sec"},
+          {"name": "Downward Dog", "sets": 2, "reps": "30 sec"},
+          {"name": "Cat-Cow", "sets": 2, "reps": "10"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "body-recomp-4day",
+    "name_en": "Body Recomposition (4 Days)",
+    "name_ar": "إعادة تكوين الجسم ٤ أيام",
+    "description_en": "Build muscle and lose fat simultaneously. Eat at maintenance calories with high protein (1.6-2g/kg). Heavy compound movements with strategic cardio.",
+    "description_ar": "بناء عضل وحرق دهون في نفس الوقت. كل سعرات الحفاظ مع بروتين عالي (١.٦-٢ جرام/كجم). تمارين مركبة ثقيلة مع كارديو استراتيجي.",
+    "difficulty": "INTERMEDIATE",
+    "duration_weeks": 16,
+    "days_per_week": 4,
+    "goal": "BODY_RECOMPOSITION",
+    "tags": ["recomp", "build-and-burn", "maintenance", "balanced"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Strength + Cardio Finisher",
+        "name_ar": "قوة جزء علوي + كارديو",
+        "target_muscles": ["chest", "back", "shoulders"],
+        "exercises": [
+          {"name": "Bench Press", "sets": 4, "reps": "5-6"},
+          {"name": "Barbell Row", "sets": 4, "reps": "5-6"},
+          {"name": "Overhead Press", "sets": 3, "reps": "6-8"},
+          {"name": "Pull-Ups", "sets": 3, "reps": "max"},
+          {"name": "Cable Flyes", "sets": 2, "reps": "12-15"},
+          {"name": "Treadmill Incline Walk", "sets": 1, "reps": "10 min"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Lower Strength + Cardio Finisher",
+        "name_ar": "قوة جزء سفلي + كارديو",
+        "target_muscles": ["quadriceps", "hamstrings", "glutes"],
+        "exercises": [
+          {"name": "Barbell Squat", "sets": 4, "reps": "5-6"},
+          {"name": "Romanian Deadlift", "sets": 3, "reps": "6-8"},
+          {"name": "Walking Lunges", "sets": 3, "reps": "10 each"},
+          {"name": "Leg Press", "sets": 3, "reps": "10-12"},
+          {"name": "Calf Raise", "sets": 3, "reps": "15"},
+          {"name": "Cycling", "sets": 1, "reps": "10 min"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Upper Hypertrophy + Cardio",
+        "name_ar": "تضخيم جزء علوي + كارديو",
+        "target_muscles": ["chest", "back", "arms"],
+        "exercises": [
+          {"name": "Incline Dumbbell Press", "sets": 3, "reps": "10-12"},
+          {"name": "Seated Cable Row", "sets": 3, "reps": "10-12"},
+          {"name": "Lateral Raise", "sets": 3, "reps": "12-15"},
+          {"name": "Lat Pulldown", "sets": 3, "reps": "10-12"},
+          {"name": "Barbell Curl", "sets": 2, "reps": "10-12"},
+          {"name": "Triceps Pushdown", "sets": 2, "reps": "10-12"},
+          {"name": "HIIT Sprints on Bike", "sets": 6, "reps": "20 sec on, 40 sec off"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Lower Hypertrophy + Cardio",
+        "name_ar": "تضخيم جزء سفلي + كارديو",
+        "target_muscles": ["quadriceps", "hamstrings", "glutes", "core"],
+        "exercises": [
+          {"name": "Front Squat", "sets": 3, "reps": "8-10"},
+          {"name": "Hip Thrust", "sets": 3, "reps": "10-12"},
+          {"name": "Leg Extension", "sets": 3, "reps": "12-15"},
+          {"name": "Leg Curl", "sets": 3, "reps": "12-15"},
+          {"name": "Ab Wheel Rollout", "sets": 3, "reps": "10"},
+          {"name": "Hanging Leg Raise", "sets": 3, "reps": "12"},
+          {"name": "Stairmaster", "sets": 1, "reps": "10 min"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dumbbell-only-4day",
+    "name_en": "Dumbbell Only Program (4 Days)",
+    "name_ar": "برنامج دمبل فقط ٤ أيام",
+    "description_en": "Only need dumbbells? This program covers everything. Great for home gyms or crowded gyms where barbells are taken.",
+    "description_ar": "محتاج دمبلز بس؟ البرنامج ده بيغطي كل حاجة. ممتاز للجيم المنزلي أو لما الجيم مزدحم والبار مش فاضي.",
+    "difficulty": "BEGINNER",
+    "duration_weeks": 8,
+    "days_per_week": 4,
+    "goal": "MUSCLE_BUILDING",
+    "tags": ["dumbbell-only", "home-gym", "accessible"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Chest + Triceps (Dumbbells)",
+        "name_ar": "صدر + تراي (دمبلز)",
+        "target_muscles": ["chest", "triceps"],
+        "exercises": [
+          {"name": "Dumbbell Flat Bench Press", "sets": 4, "reps": "8-10"},
+          {"name": "Dumbbell Incline Press", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Flyes", "sets": 3, "reps": "12-15"},
+          {"name": "Dumbbell Pullover", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Overhead Triceps Extension", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Kickback", "sets": 2, "reps": "12-15"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Back + Biceps (Dumbbells)",
+        "name_ar": "ظهر + باي (دمبلز)",
+        "target_muscles": ["back", "biceps"],
+        "exercises": [
+          {"name": "Single Arm Dumbbell Row", "sets": 4, "reps": "8-10 each"},
+          {"name": "Dumbbell Romanian Deadlift", "sets": 4, "reps": "8-10"},
+          {"name": "Dumbbell Reverse Flye", "sets": 3, "reps": "12-15"},
+          {"name": "Dumbbell Shrugs", "sets": 3, "reps": "12"},
+          {"name": "Dumbbell Bicep Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Hammer Curl", "sets": 3, "reps": "10-12"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Legs (Dumbbells)",
+        "name_ar": "رجل (دمبلز)",
+        "target_muscles": ["quadriceps", "hamstrings", "glutes", "calves"],
+        "exercises": [
+          {"name": "Dumbbell Goblet Squat", "sets": 4, "reps": "10-12"},
+          {"name": "Dumbbell Bulgarian Split Squat", "sets": 3, "reps": "10 each"},
+          {"name": "Dumbbell Stiff Leg Deadlift", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Walking Lunges", "sets": 3, "reps": "12 each"},
+          {"name": "Dumbbell Calf Raise", "sets": 4, "reps": "15-20"},
+          {"name": "Dumbbell Hip Thrust", "sets": 3, "reps": "12-15"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Shoulders + Arms (Dumbbells)",
+        "name_ar": "أكتاف + ذراع (دمبلز)",
+        "target_muscles": ["shoulders", "biceps", "triceps"],
+        "exercises": [
+          {"name": "Dumbbell Arnold Press", "sets": 4, "reps": "8-10"},
+          {"name": "Dumbbell Lateral Raise", "sets": 4, "reps": "12-15"},
+          {"name": "Dumbbell Front Raise", "sets": 3, "reps": "12"},
+          {"name": "Dumbbell Concentration Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Skull Crusher", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Wrist Curl", "sets": 2, "reps": "15-20"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "resistance-band-3day",
+    "name_en": "Resistance Band Program (3 Days)",
+    "name_ar": "برنامج باند المقاومة ٣ أيام",
+    "description_en": "Full program using only resistance bands. Perfect for travel, hotel rooms, or outdoor training. Adjustable intensity by band thickness.",
+    "description_ar": "برنامج كامل باستخدام باندز المقاومة بس. مثالي للسفر أو الفندق أو التمرين في الهواء الطلق. شدة قابلة للتعديل بسمك الباند.",
+    "difficulty": "BEGINNER",
+    "duration_weeks": 6,
+    "days_per_week": 3,
+    "goal": "GENERAL_FITNESS",
+    "tags": ["resistance-band", "travel", "portable", "outdoor"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Body (Bands)",
+        "name_ar": "جزء علوي (باندز)",
+        "target_muscles": ["chest", "back", "shoulders", "arms"],
+        "exercises": [
+          {"name": "Band Push-Up (band across back)", "sets": 3, "reps": "12-15"},
+          {"name": "Band Lat Pulldown (anchor high)", "sets": 3, "reps": "12-15"},
+          {"name": "Band Shoulder Press", "sets": 3, "reps": "12-15"},
+          {"name": "Band Face Pull", "sets": 3, "reps": "15-20"},
+          {"name": "Band Bicep Curl", "sets": 3, "reps": "12-15"},
+          {"name": "Band Tricep Pushdown", "sets": 3, "reps": "12-15"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Lower Body (Bands)",
+        "name_ar": "جزء سفلي (باندز)",
+        "target_muscles": ["quadriceps", "hamstrings", "glutes"],
+        "exercises": [
+          {"name": "Band Squat", "sets": 3, "reps": "15-20"},
+          {"name": "Band Romanian Deadlift", "sets": 3, "reps": "12-15"},
+          {"name": "Band Lateral Walk", "sets": 3, "reps": "15 each"},
+          {"name": "Band Kickback", "sets": 3, "reps": "12-15 each"},
+          {"name": "Band Leg Curl", "sets": 3, "reps": "12-15"},
+          {"name": "Band Calf Raise", "sets": 3, "reps": "20"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Full Body (Bands)",
+        "name_ar": "كامل الجسم (باندز)",
+        "target_muscles": ["all"],
+        "exercises": [
+          {"name": "Band Thruster (squat to press)", "sets": 3, "reps": "12"},
+          {"name": "Band Row", "sets": 3, "reps": "12-15"},
+          {"name": "Band Chest Press", "sets": 3, "reps": "12-15"},
+          {"name": "Band Lateral Raise", "sets": 3, "reps": "15"},
+          {"name": "Band Glute Bridge", "sets": 3, "reps": "15-20"},
+          {"name": "Band Ab Crunch", "sets": 3, "reps": "15-20"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "abs-core-4day",
+    "name_en": "6-Pack Abs Program (4 Days)",
+    "name_ar": "برنامج سكس باك ٤ أيام",
+    "description_en": "Dedicated core program to develop visible abs. Combine with calorie deficit for results. Targets upper abs, lower abs, obliques, and deep core.",
+    "description_ar": "برنامج مخصص لتطوير عضلات البطن الظاهرة. ادمجه مع عجز سعرات للنتائج. يستهدف البطن العلوي والسفلي والجوانب والكور العميق.",
+    "difficulty": "INTERMEDIATE",
+    "duration_weeks": 8,
+    "days_per_week": 4,
+    "goal": "CORE_STRENGTH",
+    "tags": ["abs", "core", "six-pack", "definition"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Abs + Deep Core",
+        "name_ar": "بطن علوي + كور عميق",
+        "target_muscles": ["upper abs", "transverse abdominis"],
+        "exercises": [
+          {"name": "Cable Crunch", "sets": 4, "reps": "15-20"},
+          {"name": "Ab Crunch Machine", "sets": 3, "reps": "12-15"},
+          {"name": "Decline Crunch", "sets": 3, "reps": "15"},
+          {"name": "Dead Bug", "sets": 3, "reps": "10 each"},
+          {"name": "Plank", "sets": 3, "reps": "45-60 sec"},
+          {"name": "Vacuum Hold", "sets": 3, "reps": "15-20 sec"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Lower Abs",
+        "name_ar": "بطن سفلي",
+        "target_muscles": ["lower abs", "hip flexors"],
+        "exercises": [
+          {"name": "Hanging Leg Raise", "sets": 4, "reps": "12-15"},
+          {"name": "Reverse Crunch", "sets": 3, "reps": "15-20"},
+          {"name": "Flutter Kicks", "sets": 3, "reps": "30 sec"},
+          {"name": "Lying Leg Raise", "sets": 3, "reps": "15"},
+          {"name": "Mountain Climbers (slow)", "sets": 3, "reps": "20"},
+          {"name": "V-Up", "sets": 3, "reps": "12"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Obliques",
+        "name_ar": "عضلات جانبية",
+        "target_muscles": ["obliques"],
+        "exercises": [
+          {"name": "Cable Woodchop", "sets": 3, "reps": "12 each"},
+          {"name": "Russian Twist", "sets": 3, "reps": "20"},
+          {"name": "Side Plank", "sets": 3, "reps": "30-45 sec each"},
+          {"name": "Bicycle Crunch", "sets": 3, "reps": "20"},
+          {"name": "Pallof Press", "sets": 3, "reps": "10 each"},
+          {"name": "Suitcase Carry", "sets": 3, "reps": "30 sec each"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Core Stability + Anti-Rotation",
+        "name_ar": "استقرار الكور + مضاد الدوران",
+        "target_muscles": ["full core"],
+        "exercises": [
+          {"name": "Ab Wheel Rollout", "sets": 3, "reps": "10-12"},
+          {"name": "Hollow Body Hold", "sets": 3, "reps": "20-30 sec"},
+          {"name": "Bird Dog", "sets": 3, "reps": "10 each"},
+          {"name": "Pallof Press (rotational)", "sets": 3, "reps": "10 each"},
+          {"name": "Bear Crawl", "sets": 3, "reps": "30 sec"},
+          {"name": "Plank with Arm Reach", "sets": 3, "reps": "8 each"}
+        ]
+      }
+    ]
+  }
+]

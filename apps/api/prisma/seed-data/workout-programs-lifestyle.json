@@ -1,0 +1,341 @@
+[
+  {
+    "id": "prog-life-001",
+    "name_en": "Ramadan Training Program — 4-Day",
+    "name_ar": "برنامج تمرين رمضان — 4 أيام",
+    "description_en": "Optimized program for training during Ramadan. Shorter sessions (35-40 min), moderate intensity. Train 1-2 hours after Iftar. Focus on maintaining muscle, not building. Reduced volume but smart exercise selection.",
+    "description_ar": "برنامج محسّن للتمرين في رمضان. جلسات أقصر (35-40 دقيقة)، شدة معتدلة. تمرن بعد الإفطار بـ 1-2 ساعة. ركّز على الحفاظ على العضلات مش البناء.",
+    "difficulty": "intermediate",
+    "duration_weeks": 4,
+    "days_per_week": 4,
+    "goal": "muscle_maintenance",
+    "tags": ["ramadan", "fasting", "maintenance", "short_sessions", "egyptian"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Chest & Triceps (Light Volume)",
+        "name_ar": "صدر وتراي (حجم خفيف)",
+        "target_muscles": ["chest", "triceps"],
+        "exercises": [
+          {"name": "Bench Press", "sets": 3, "reps": "8-10"},
+          {"name": "Incline Dumbbell Press", "sets": 3, "reps": "10-12"},
+          {"name": "Cable Crossover", "sets": 3, "reps": "12-15"},
+          {"name": "Tricep Pushdown (Rope)", "sets": 3, "reps": "10-12"},
+          {"name": "Overhead Tricep Extension", "sets": 2, "reps": "10-12"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Back & Biceps (Light Volume)",
+        "name_ar": "ضهر وباي (حجم خفيف)",
+        "target_muscles": ["back", "biceps"],
+        "exercises": [
+          {"name": "Lat Pulldown", "sets": 3, "reps": "10-12"},
+          {"name": "Seated Cable Row", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Row", "sets": 3, "reps": "10 each"},
+          {"name": "Barbell Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Hammer Curl", "sets": 2, "reps": "10-12"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Legs (Moderate)",
+        "name_ar": "رجل (معتدل)",
+        "target_muscles": ["quadriceps", "hamstrings", "glutes"],
+        "exercises": [
+          {"name": "Leg Press", "sets": 4, "reps": "10-12"},
+          {"name": "Romanian Deadlift", "sets": 3, "reps": "10-12"},
+          {"name": "Leg Extension", "sets": 3, "reps": "12-15"},
+          {"name": "Leg Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Calf Raise (Standing)", "sets": 3, "reps": "15-20"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Shoulders & Abs",
+        "name_ar": "كتف وبطن",
+        "target_muscles": ["shoulders", "core"],
+        "exercises": [
+          {"name": "Overhead Press", "sets": 3, "reps": "8-10"},
+          {"name": "Lateral Raise", "sets": 3, "reps": "12-15"},
+          {"name": "Face Pull", "sets": 3, "reps": "15"},
+          {"name": "Cable Crunch", "sets": 3, "reps": "12-15"},
+          {"name": "Plank", "sets": 3, "reps": "45s"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-life-002",
+    "name_en": "Over 40 Training Program — 3-Day Full Body",
+    "name_ar": "برنامج فوق 40 سنة — 3 أيام فول بودي",
+    "description_en": "Joint-friendly program for those over 40. Focus on compound movements with moderate loads, more warm-up, longer rest periods. Includes mobility work. Builds strength and maintains muscle mass with lower injury risk.",
+    "description_ar": "برنامج صديق للمفاصل لمن فوق 40 سنة. تركيز على تمارين مركبة بأوزان معتدلة، إحماء أكتر، راحة أطول. بيبني قوة ويحافظ على العضلات بإصابات أقل.",
+    "difficulty": "beginner",
+    "duration_weeks": 12,
+    "days_per_week": 3,
+    "goal": "health_longevity",
+    "tags": ["over_40", "joint_friendly", "health", "longevity", "full_body"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Full Body A (Strength)",
+        "name_ar": "فول بودي A (قوة)",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Warm-Up: 10 min walk + dynamic stretches", "sets": 1, "reps": "10 min"},
+          {"name": "Goblet Squat", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Bench Press", "sets": 3, "reps": "10-12"},
+          {"name": "Seated Cable Row", "sets": 3, "reps": "10-12"},
+          {"name": "Leg Press", "sets": 3, "reps": "12-15"},
+          {"name": "Face Pull", "sets": 3, "reps": 15},
+          {"name": "Plank", "sets": 3, "reps": "30s"},
+          {"name": "Cooldown: 5 min stretch", "sets": 1, "reps": "5 min"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Full Body B (Hypertrophy)",
+        "name_ar": "فول بودي B (تضخيم)",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Warm-Up: 10 min bike + mobility", "sets": 1, "reps": "10 min"},
+          {"name": "Leg Curl", "sets": 3, "reps": "12-15"},
+          {"name": "Incline Dumbbell Press", "sets": 3, "reps": "10-12"},
+          {"name": "Lat Pulldown", "sets": 3, "reps": "10-12"},
+          {"name": "Lateral Raise", "sets": 3, "reps": "12-15"},
+          {"name": "Dumbbell Curl", "sets": 2, "reps": "12-15"},
+          {"name": "Tricep Pushdown", "sets": 2, "reps": "12-15"},
+          {"name": "Cooldown: Foam rolling", "sets": 1, "reps": "5 min"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Full Body C (Functional)",
+        "name_ar": "فول بودي C (وظيفي)",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Warm-Up: 10 min walk + band activation", "sets": 1, "reps": "10 min"},
+          {"name": "Trap Bar Deadlift (or DB RDL)", "sets": 3, "reps": "8-10"},
+          {"name": "Push-Up (or Dumbbell Press)", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Row", "sets": 3, "reps": "10 each"},
+          {"name": "Step-Up", "sets": 3, "reps": "8 each"},
+          {"name": "Band Pull-Apart", "sets": 3, "reps": 20},
+          {"name": "Bird Dog", "sets": 3, "reps": "8 each side"},
+          {"name": "Cooldown: Full body stretch", "sets": 1, "reps": "5 min"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-life-003",
+    "name_en": "Desk Worker Posture Fix — 3-Day",
+    "name_ar": "إصلاح وضعية الجلوس — 3 أيام",
+    "description_en": "Fixes common posture problems from sitting all day: rounded shoulders, forward head, tight hip flexors, weak glutes. Strengthens the posterior chain, opens the chest, and mobilizes the thoracic spine.",
+    "description_ar": "بيصلح مشاكل الوضعية الشائعة من الجلوس طول اليوم: أكتاف لقدام، رأس للأمام، هيب فليكسور مشدود، إلية ضعيفة.",
+    "difficulty": "beginner",
+    "duration_weeks": 8,
+    "days_per_week": 3,
+    "goal": "posture_correction",
+    "tags": ["posture", "desk_worker", "office", "rehab", "mobility"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Posterior Chain Strengthening",
+        "name_ar": "تقوية السلسلة الخلفية",
+        "target_muscles": ["upper_back", "rear_delt", "glutes", "hamstrings"],
+        "exercises": [
+          {"name": "Band Pull-Apart", "sets": 3, "reps": 20},
+          {"name": "Face Pull", "sets": 3, "reps": 15},
+          {"name": "Seated Cable Row (Squeeze 2s)", "sets": 3, "reps": 12},
+          {"name": "Romanian Deadlift", "sets": 3, "reps": 10},
+          {"name": "Glute Bridge", "sets": 3, "reps": 15},
+          {"name": "Prone Y-T-W Raise", "sets": 2, "reps": "8 each"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Mobility & Stretching",
+        "name_ar": "مرونة وإطالة",
+        "target_muscles": ["hip_flexors", "chest", "thoracic_spine"],
+        "exercises": [
+          {"name": "Chest Doorway Stretch", "sets": 3, "reps": "30s each"},
+          {"name": "Hip Flexor Lunge Stretch", "sets": 3, "reps": "30s each"},
+          {"name": "Thoracic Spine Rotation (Seated)", "sets": 3, "reps": "10 each"},
+          {"name": "Thread the Needle Stretch", "sets": 3, "reps": "8 each"},
+          {"name": "Neck Side Stretch", "sets": 2, "reps": "20s each"},
+          {"name": "World's Greatest Stretch", "sets": 2, "reps": "5 each side"},
+          {"name": "Cat-Cow Stretch", "sets": 3, "reps": 10},
+          {"name": "Child's Pose", "sets": 2, "reps": "30s hold"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Full Body Corrective Strength",
+        "name_ar": "قوة تصحيحية فول بودي",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Goblet Squat (Deep, Pause)", "sets": 3, "reps": 10},
+          {"name": "Incline Dumbbell Press", "sets": 3, "reps": 12},
+          {"name": "Barbell Row (Overhand)", "sets": 3, "reps": 10},
+          {"name": "Overhead Press (Light)", "sets": 3, "reps": 10},
+          {"name": "Dead Bug", "sets": 3, "reps": "8 each side"},
+          {"name": "Single Leg Glute Bridge", "sets": 3, "reps": "10 each"},
+          {"name": "Wall Slides", "sets": 3, "reps": 10}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-life-004",
+    "name_en": "Powerlifting Peaking Program — 4-Day",
+    "name_ar": "برنامج باورلفتنج بيكنج — 4 أيام",
+    "description_en": "8-week peaking cycle for powerlifting. Increases intensity weekly while decreasing volume. Culminates in a test/competition week. For intermediate-advanced lifters with at least 1 year of consistent training.",
+    "description_ar": "دورة بيكنج 8 أسابيع للباورلفتنج. بتزود الشدة أسبوعياً وتقلل الحجم. بتنتهي بأسبوع اختبار/مسابقة. للمتوسط-المتقدم مع سنة تمرين على الأقل.",
+    "difficulty": "advanced",
+    "duration_weeks": 8,
+    "days_per_week": 4,
+    "goal": "strength_peak",
+    "tags": ["powerlifting", "peaking", "strength", "advanced", "competition"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Heavy Squat + Accessories",
+        "name_ar": "سكوات ثقيل + إكسسوري",
+        "target_muscles": ["quadriceps", "glutes", "core"],
+        "exercises": [
+          {"name": "Barbell Back Squat", "sets": 5, "reps": "Week 1-2: 5×5@75%, Week 3-4: 4×4@80%, Week 5-6: 3×3@85%, Week 7: 2×2@90%, Week 8: Test 1RM"},
+          {"name": "Pause Squat", "sets": 3, "reps": "3@70%"},
+          {"name": "Leg Press", "sets": 3, "reps": "8-10"},
+          {"name": "Romanian Deadlift (Light)", "sets": 3, "reps": 8},
+          {"name": "Plank (Weighted)", "sets": 3, "reps": "30s"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Heavy Bench + Accessories",
+        "name_ar": "بنش ثقيل + إكسسوري",
+        "target_muscles": ["chest", "triceps", "shoulders"],
+        "exercises": [
+          {"name": "Bench Press", "sets": 5, "reps": "Week 1-2: 5×5@75%, Week 3-4: 4×4@80%, Week 5-6: 3×3@85%, Week 7: 2×2@90%, Week 8: Test 1RM"},
+          {"name": "Close-Grip Bench Press", "sets": 3, "reps": "6-8"},
+          {"name": "Dumbbell Incline Press", "sets": 3, "reps": "8-10"},
+          {"name": "Tricep Pushdown", "sets": 3, "reps": "10-12"},
+          {"name": "Face Pull", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Heavy Deadlift + Accessories",
+        "name_ar": "ديدلفت ثقيل + إكسسوري",
+        "target_muscles": ["posterior_chain", "back", "grip"],
+        "exercises": [
+          {"name": "Conventional Deadlift", "sets": 4, "reps": "Week 1-2: 4×5@75%, Week 3-4: 4×3@82%, Week 5-6: 3×2@88%, Week 7: 2×1@93%, Week 8: Test 1RM"},
+          {"name": "Deficit Deadlift (Light)", "sets": 3, "reps": "3@65%"},
+          {"name": "Barbell Row", "sets": 3, "reps": "6-8"},
+          {"name": "Pull-Up (Weighted)", "sets": 3, "reps": "5-8"},
+          {"name": "Farmer's Walk", "sets": 3, "reps": "30m"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Volume Day (Light)",
+        "name_ar": "يوم حجم (خفيف)",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Front Squat", "sets": 3, "reps": "5@65%"},
+          {"name": "Overhead Press", "sets": 4, "reps": "6-8"},
+          {"name": "Dumbbell Row", "sets": 3, "reps": "10 each"},
+          {"name": "Leg Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Lateral Raise", "sets": 3, "reps": "12-15"},
+          {"name": "Ab Wheel Rollout", "sets": 3, "reps": 10}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-life-005",
+    "name_en": "Bodybuilding Contest Prep — 5-Day",
+    "name_ar": "تحضير مسابقة كمال أجسام — 5 أيام",
+    "description_en": "12-week contest preparation program. High volume, moderate intensity. Designed for the cutting phase leading to competition. Includes cardio recommendations. Assumes you're in a calorie deficit.",
+    "description_ar": "برنامج تحضير للمسابقة 12 أسبوع. حجم عالي، شدة معتدلة. مصمم لمرحلة التنشيف قبل البطولة. بيفترض إنك في عجز سعرات.",
+    "difficulty": "advanced",
+    "duration_weeks": 12,
+    "days_per_week": 5,
+    "goal": "contest_prep",
+    "tags": ["bodybuilding", "contest", "cutting", "advanced", "competition"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Chest & Side Delts",
+        "name_ar": "صدر وكتف جانبي",
+        "target_muscles": ["chest", "lateral_deltoid"],
+        "exercises": [
+          {"name": "Incline Barbell Press", "sets": 4, "reps": "8-10"},
+          {"name": "Flat Dumbbell Press", "sets": 4, "reps": "10-12"},
+          {"name": "Cable Crossover (Low to High)", "sets": 3, "reps": "12-15"},
+          {"name": "Pec Deck", "sets": 3, "reps": "12-15"},
+          {"name": "Lateral Raise (Cable)", "sets": 4, "reps": "12-15"},
+          {"name": "Lateral Raise (Dumbbell, Drop Set)", "sets": 3, "reps": "12+8+6"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Back & Rear Delts",
+        "name_ar": "ضهر وكتف خلفي",
+        "target_muscles": ["back", "rear_deltoid"],
+        "exercises": [
+          {"name": "Pull-Up (Weighted or BW)", "sets": 4, "reps": "8-10"},
+          {"name": "Barbell Row", "sets": 4, "reps": "8-10"},
+          {"name": "Seated Cable Row (Close Grip)", "sets": 3, "reps": "10-12"},
+          {"name": "Straight Arm Pulldown", "sets": 3, "reps": "12-15"},
+          {"name": "Rear Delt Fly (Machine)", "sets": 4, "reps": "12-15"},
+          {"name": "Face Pull", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Legs (Quad Focus)",
+        "name_ar": "رجل (تركيز كواد)",
+        "target_muscles": ["quadriceps", "calves"],
+        "exercises": [
+          {"name": "Barbell Squat", "sets": 4, "reps": "8-10"},
+          {"name": "Hack Squat", "sets": 3, "reps": "10-12"},
+          {"name": "Leg Extension", "sets": 4, "reps": "12-15"},
+          {"name": "Walking Lunge", "sets": 3, "reps": "12 each"},
+          {"name": "Seated Calf Raise", "sets": 4, "reps": "15-20"},
+          {"name": "Standing Calf Raise", "sets": 3, "reps": "12-15"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Arms",
+        "name_ar": "ذراعين",
+        "target_muscles": ["biceps", "triceps"],
+        "exercises": [
+          {"name": "Barbell Curl", "sets": 4, "reps": "8-10"},
+          {"name": "Close-Grip Bench Press", "sets": 4, "reps": "8-10"},
+          {"name": "Incline Dumbbell Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Overhead Tricep Extension (Cable)", "sets": 3, "reps": "10-12"},
+          {"name": "Hammer Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Tricep Pushdown (Rope)", "sets": 3, "reps": "12-15"},
+          {"name": "Concentration Curl", "sets": 2, "reps": "12-15"}
+        ]
+      },
+      {
+        "day": 5,
+        "name_en": "Legs (Hamstring & Glute Focus)",
+        "name_ar": "رجل (تركيز هامسترينج وإلية)",
+        "target_muscles": ["hamstrings", "glutes"],
+        "exercises": [
+          {"name": "Romanian Deadlift", "sets": 4, "reps": "8-10"},
+          {"name": "Leg Curl (Lying)", "sets": 4, "reps": "10-12"},
+          {"name": "Hip Thrust", "sets": 4, "reps": "10-12"},
+          {"name": "Bulgarian Split Squat", "sets": 3, "reps": "10 each"},
+          {"name": "Glute Kickback (Cable)", "sets": 3, "reps": "12-15 each"},
+          {"name": "Standing Calf Raise", "sets": 4, "reps": "12-15"}
+        ]
+      }
+    ]
+  }
+]

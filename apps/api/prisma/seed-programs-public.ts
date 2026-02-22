@@ -5,15 +5,22 @@ import * as path from 'path';
 const prisma = new PrismaClient();
 
 interface JsonProgram {
-  id: string;
-  name_en: string;
-  name_ar: string;
+  id?: string;
+  // snake_case format (popular, advanced, home, etc.)
+  name_en?: string;
+  name_ar?: string;
+  description_en?: string;
+  description_ar?: string;
+  duration_weeks?: number;
+  // camelCase format (extended)
+  nameEn?: string;
+  nameAr?: string;
+  descriptionEn?: string;
+  descriptionAr?: string;
+  durationWeeks?: number;
   category?: string;
   difficulty?: string;
-  duration_weeks: number;
   days_per_week?: number;
-  description_en: string;
-  description_ar: string;
   tags?: string[];
 }
 
@@ -92,23 +99,36 @@ async function main() {
     const raw = fs.readFileSync(filePath, 'utf-8');
     let programs: JsonProgram[];
     try {
-      programs = JSON.parse(raw);
+      const parsed = JSON.parse(raw);
+      // Handle both flat arrays and { basePrograms: [...] } format
+      if (Array.isArray(parsed)) {
+        programs = parsed;
+      } else if (parsed?.basePrograms && Array.isArray(parsed.basePrograms)) {
+        programs = parsed.basePrograms;
+      } else {
+        console.log(`⚠️  Unrecognized format: ${fileName}`);
+        continue;
+      }
     } catch {
       console.log(`⚠️  Invalid JSON: ${fileName}`);
-      continue;
-    }
-
-    if (!Array.isArray(programs)) {
-      console.log(`⚠️  Not an array: ${fileName}`);
       continue;
     }
 
     console.log(`📂 ${fileName} — ${programs.length} programs`);
 
     for (const prog of programs) {
+      // Normalize both snake_case and camelCase formats
+      const nameEn = prog.name_en || prog.nameEn;
+      const nameAr = prog.name_ar || prog.nameAr;
+      const descEn = prog.description_en || prog.descriptionEn;
+      const descAr = prog.description_ar || prog.descriptionAr;
+      const weeks = prog.duration_weeks || prog.durationWeeks || 4;
+
+      if (!nameEn) continue;
+
       // Skip if already exists (by name)
       const existing = await prisma.trainerProgram.findFirst({
-        where: { nameEn: prog.name_en, trainerId },
+        where: { nameEn, trainerId },
       });
 
       if (existing) {
@@ -119,11 +139,11 @@ async function main() {
       await prisma.trainerProgram.create({
         data: {
           trainerId,
-          nameEn: prog.name_en,
-          nameAr: prog.name_ar || null,
-          descriptionEn: prog.description_en || null,
-          descriptionAr: prog.description_ar || null,
-          durationWeeks: prog.duration_weeks || 4,
+          nameEn,
+          nameAr: nameAr || null,
+          descriptionEn: descEn || null,
+          descriptionAr: descAr || null,
+          durationWeeks: weeks,
           isTemplate: true,
           status: 'ACTIVE',
           sourceType: 'system',

@@ -1,0 +1,474 @@
+[
+  {
+    "id": "prog-adv-001",
+    "name_en": "Egyptian Classic 6-Day Bro Split (Advanced)",
+    "name_ar": "تقسيمة مصرية كلاسيكية 6 أيام (متقدم)",
+    "description_en": "The ultimate Egyptian gym bro split. One muscle per day with high volume. The split every Egyptian gym-goer knows: Chest, Back, Shoulders, Arms, Legs, Weak Point. Proven by decades of Egyptian bodybuilding culture.",
+    "description_ar": "التقسيمة المصرية الأصلية. عضلة واحدة في اليوم بحجم عالي. التقسيمة اللي كل واحد في الجيم المصري يعرفها: صدر، ظهر، أكتاف، ذراعين، رجل، نقطة ضعف. مثبتة بعقود من ثقافة بناء الأجسام المصرية.",
+    "difficulty": "advanced",
+    "duration_weeks": 8,
+    "days_per_week": 6,
+    "goal": "muscle_building",
+    "tags": ["bro_split", "advanced", "volume", "egyptian", "classic", "bodybuilding"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Chest Day",
+        "name_ar": "يوم الصدر",
+        "target_muscles": ["chest"],
+        "exercises": [
+          {"name": "Flat Barbell Bench Press", "sets": 5, "reps": "12,10,8,6,6"},
+          {"name": "Incline Dumbbell Press", "sets": 4, "reps": 10},
+          {"name": "Decline Barbell Press", "sets": 3, "reps": 10},
+          {"name": "Cable Crossover (High to Low)", "sets": 3, "reps": 12},
+          {"name": "Cable Crossover (Low to High)", "sets": 3, "reps": 12},
+          {"name": "Pec Deck / Chest Fly Machine", "sets": 3, "reps": 15},
+          {"name": "Push-Up (Burnout)", "sets": 2, "reps": "max"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Back Day",
+        "name_ar": "يوم الظهر",
+        "target_muscles": ["back"],
+        "exercises": [
+          {"name": "Deadlift", "sets": 4, "reps": "8,6,5,5"},
+          {"name": "Barbell Row", "sets": 4, "reps": 10},
+          {"name": "Lat Pulldown (Wide Grip)", "sets": 4, "reps": 12},
+          {"name": "Seated Cable Row (Close Grip)", "sets": 3, "reps": 12},
+          {"name": "T-Bar Row", "sets": 3, "reps": 10},
+          {"name": "Straight Arm Pulldown", "sets": 3, "reps": 12},
+          {"name": "Hyperextension", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Shoulders Day",
+        "name_ar": "يوم الأكتاف",
+        "target_muscles": ["shoulders"],
+        "exercises": [
+          {"name": "Seated Dumbbell Shoulder Press", "sets": 4, "reps": "10,8,8,6"},
+          {"name": "Dumbbell Lateral Raise", "sets": 4, "reps": 15},
+          {"name": "Cable Lateral Raise", "sets": 3, "reps": 15},
+          {"name": "Cable Face Pull", "sets": 3, "reps": 15},
+          {"name": "Rear Delt Fly Machine", "sets": 3, "reps": 15},
+          {"name": "Barbell Front Raise", "sets": 3, "reps": 12},
+          {"name": "Dumbbell Shrugs", "sets": 4, "reps": 15}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Arms Day (Bi + Tri)",
+        "name_ar": "يوم الذراعين (باي + تراي)",
+        "target_muscles": ["biceps", "triceps"],
+        "exercises": [
+          {"name": "EZ Bar Curl", "sets": 4, "reps": 10},
+          {"name": "Close Grip Bench Press", "sets": 4, "reps": 10},
+          {"name": "Dumbbell Hammer Curl", "sets": 3, "reps": 12},
+          {"name": "Skull Crusher", "sets": 3, "reps": 12},
+          {"name": "Preacher Curl", "sets": 3, "reps": 12},
+          {"name": "Cable Tricep Pushdown (Rope)", "sets": 3, "reps": 15},
+          {"name": "Concentration Curl", "sets": 3, "reps": 12},
+          {"name": "Overhead Dumbbell Tricep Extension", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 5,
+        "name_en": "Legs Day",
+        "name_ar": "يوم الرجل",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "Back Squat", "sets": 5, "reps": "12,10,8,6,6"},
+          {"name": "Leg Press", "sets": 4, "reps": 12},
+          {"name": "Romanian Deadlift", "sets": 4, "reps": 10},
+          {"name": "Leg Extension Machine", "sets": 3, "reps": 15},
+          {"name": "Leg Curl Machine (Lying)", "sets": 3, "reps": 12},
+          {"name": "Hip Adductor Machine", "sets": 3, "reps": 15},
+          {"name": "Calf Raise Machine (Standing)", "sets": 5, "reps": 20}
+        ]
+      },
+      {
+        "day": 6,
+        "name_en": "Weak Point / Lagging Muscle",
+        "name_ar": "نقطة ضعف / عضلة متأخرة",
+        "target_muscles": ["varies"],
+        "exercises": [
+          {"name": "Choose 6-8 exercises for your weakest muscle group", "sets": 4, "reps": "10-15"},
+          {"name": "Focus on mind-muscle connection", "sets": 0, "reps": "slow tempo"},
+          {"name": "Include 2 compound + 4 isolation", "sets": 0, "reps": ""},
+          {"name": "Abs circuit: Plank + Leg Raise + Russian Twist", "sets": 3, "reps": "45s each"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-adv-002",
+    "name_en": "Arnold Split - 6 Day Classic",
+    "name_ar": "تقسيمة أرنولد - 6 أيام كلاسيك",
+    "description_en": "The legendary Arnold Schwarzenegger's training split. Chest+Back, Shoulders+Arms, Legs repeated twice a week. High volume, old-school bodybuilding at its finest.",
+    "description_ar": "تقسيمة أرنولد شوارزنيجر الأسطورية. صدر+ظهر، أكتاف+ذراعين، رجل مكررة مرتين في الأسبوع. حجم عالي، بناء أجسام كلاسيكي في أفضل حالاته.",
+    "difficulty": "advanced",
+    "duration_weeks": 8,
+    "days_per_week": 6,
+    "goal": "muscle_building",
+    "tags": ["arnold", "classic", "volume", "bodybuilding", "old_school"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Chest + Back",
+        "name_ar": "صدر + ظهر",
+        "target_muscles": ["chest", "back"],
+        "exercises": [
+          {"name": "Flat Barbell Bench Press", "sets": 5, "reps": 10},
+          {"name": "Pull-Up (Wide Grip)", "sets": 5, "reps": "max"},
+          {"name": "Incline Dumbbell Press", "sets": 4, "reps": 10},
+          {"name": "Barbell Row", "sets": 4, "reps": 10},
+          {"name": "Dumbbell Fly (Flat)", "sets": 3, "reps": 12},
+          {"name": "T-Bar Row", "sets": 3, "reps": 10},
+          {"name": "Dips", "sets": 3, "reps": "max"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Shoulders + Arms",
+        "name_ar": "أكتاف + ذراعين",
+        "target_muscles": ["shoulders", "biceps", "triceps"],
+        "exercises": [
+          {"name": "Arnold Press", "sets": 4, "reps": 10},
+          {"name": "Lateral Raise", "sets": 4, "reps": 15},
+          {"name": "Barbell Curl (Standing)", "sets": 4, "reps": 10},
+          {"name": "Close Grip Bench Press", "sets": 4, "reps": 10},
+          {"name": "Incline Dumbbell Curl", "sets": 3, "reps": 12},
+          {"name": "Cable Tricep Pushdown", "sets": 3, "reps": 12},
+          {"name": "Reverse Curl", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Legs",
+        "name_ar": "رجل",
+        "target_muscles": ["legs"],
+        "exercises": [
+          {"name": "Back Squat", "sets": 5, "reps": 10},
+          {"name": "Front Squat", "sets": 3, "reps": 10},
+          {"name": "Leg Press", "sets": 4, "reps": 12},
+          {"name": "Leg Curl Machine (Lying)", "sets": 4, "reps": 12},
+          {"name": "Leg Extension Machine", "sets": 3, "reps": 15},
+          {"name": "Stiff-Leg Deadlift", "sets": 3, "reps": 10},
+          {"name": "Calf Raise Machine (Standing)", "sets": 5, "reps": 20}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Chest + Back (Volume)",
+        "name_ar": "صدر + ظهر (حجم)",
+        "target_muscles": ["chest", "back"],
+        "exercises": [
+          {"name": "Incline Barbell Bench Press", "sets": 4, "reps": 10},
+          {"name": "Chin-Up", "sets": 4, "reps": "max"},
+          {"name": "Cable Crossover", "sets": 3, "reps": 15},
+          {"name": "Seated Cable Row", "sets": 3, "reps": 12},
+          {"name": "Pec Deck", "sets": 3, "reps": 15},
+          {"name": "Lat Pulldown (Close Grip)", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 5,
+        "name_en": "Shoulders + Arms (Volume)",
+        "name_ar": "أكتاف + ذراعين (حجم)",
+        "target_muscles": ["shoulders", "biceps", "triceps"],
+        "exercises": [
+          {"name": "Seated Barbell Press", "sets": 4, "reps": 10},
+          {"name": "Upright Row", "sets": 3, "reps": 12},
+          {"name": "Hammer Curl", "sets": 3, "reps": 12},
+          {"name": "Skull Crusher", "sets": 3, "reps": 12},
+          {"name": "Cable Curl", "sets": 3, "reps": 15},
+          {"name": "Overhead Tricep Extension (Cable)", "sets": 3, "reps": 15},
+          {"name": "Rear Delt Fly", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 6,
+        "name_en": "Legs (Volume)",
+        "name_ar": "رجل (حجم)",
+        "target_muscles": ["legs"],
+        "exercises": [
+          {"name": "Hack Squat Machine", "sets": 4, "reps": 12},
+          {"name": "Walking Lunge", "sets": 3, "reps": "12 each leg"},
+          {"name": "Romanian Deadlift", "sets": 4, "reps": 10},
+          {"name": "Leg Extension Machine", "sets": 3, "reps": 15},
+          {"name": "Leg Curl Machine (Seated)", "sets": 3, "reps": 12},
+          {"name": "Calf Raise Machine (Seated)", "sets": 5, "reps": 20}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-adv-003",
+    "name_en": "5/3/1 Strength Program - 4 Day",
+    "name_ar": "برنامج 5/3/1 قوة - 4 أيام",
+    "description_en": "Jim Wendler's proven 5/3/1 strength program. Focus on the big 4 lifts (squat, bench, deadlift, overhead press) with submaximal training and slow progression. Build real strength that lasts.",
+    "description_ar": "برنامج جيم ويندلر 5/3/1 المثبت للقوة. التركيز على الـ 4 رفعات الكبيرة (سكوات، بنش، ديدليفت، أوفرهيد بريس) بتمرين تحت الأقصى وتقدم بطيء. بناء قوة حقيقية تدوم.",
+    "difficulty": "intermediate",
+    "duration_weeks": 12,
+    "days_per_week": 4,
+    "goal": "strength",
+    "tags": ["531", "strength", "powerlifting", "compound", "proven"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Squat Day",
+        "name_ar": "يوم السكوات",
+        "target_muscles": ["legs", "core"],
+        "exercises": [
+          {"name": "Back Squat (5/3/1)", "sets": 3, "reps": "5/3/1 (see program)"},
+          {"name": "Back Squat (BBB 5x10)", "sets": 5, "reps": 10},
+          {"name": "Leg Press", "sets": 3, "reps": 12},
+          {"name": "Leg Curl Machine", "sets": 3, "reps": 12},
+          {"name": "Hanging Leg Raise", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Bench Press Day",
+        "name_ar": "يوم البنش بريس",
+        "target_muscles": ["chest", "triceps"],
+        "exercises": [
+          {"name": "Bench Press (5/3/1)", "sets": 3, "reps": "5/3/1 (see program)"},
+          {"name": "Bench Press (BBB 5x10)", "sets": 5, "reps": 10},
+          {"name": "Dumbbell Row", "sets": 4, "reps": 10},
+          {"name": "Dips", "sets": 3, "reps": "max"},
+          {"name": "Face Pull", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Deadlift Day",
+        "name_ar": "يوم الديدليفت",
+        "target_muscles": ["back", "hamstrings"],
+        "exercises": [
+          {"name": "Deadlift (5/3/1)", "sets": 3, "reps": "5/3/1 (see program)"},
+          {"name": "Deadlift (BBB 5x10)", "sets": 5, "reps": 10},
+          {"name": "Good Morning", "sets": 3, "reps": 10},
+          {"name": "Pull-Up", "sets": 3, "reps": "max"},
+          {"name": "Ab Wheel Rollout", "sets": 3, "reps": 10}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Overhead Press Day",
+        "name_ar": "يوم الأوفرهيد بريس",
+        "target_muscles": ["shoulders", "triceps"],
+        "exercises": [
+          {"name": "Overhead Press (5/3/1)", "sets": 3, "reps": "5/3/1 (see program)"},
+          {"name": "Overhead Press (BBB 5x10)", "sets": 5, "reps": 10},
+          {"name": "Chin-Up", "sets": 4, "reps": "max"},
+          {"name": "Lateral Raise", "sets": 3, "reps": 15},
+          {"name": "Plank", "sets": 3, "reps": "60s"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-adv-004",
+    "name_en": "Women's Glute Builder - 4 Day",
+    "name_ar": "برنامج بناء الإلية للنساء - 4 أيام",
+    "description_en": "Glute-focused program designed for women who want to build a strong, round glute. Combines hip thrusts, squats, and targeted isolation work. Very popular in Egyptian women's fitness culture.",
+    "description_ar": "برنامج مركز على الإلية مصمم للنساء اللي عايزين يبنوا إلية قوية ومشدودة. يجمع بين الهيب ثراست والسكوات وتمارين عزل مستهدفة. شائع جداً في ثقافة اللياقة النسائية المصرية.",
+    "difficulty": "intermediate",
+    "duration_weeks": 8,
+    "days_per_week": 4,
+    "goal": "glute_building",
+    "tags": ["women", "glutes", "booty", "hip_thrust", "popular"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Glute Focus (Heavy)",
+        "name_ar": "إلية (ثقيل)",
+        "target_muscles": ["glutes", "hamstrings"],
+        "exercises": [
+          {"name": "Barbell Hip Thrust", "sets": 4, "reps": 10},
+          {"name": "Back Squat", "sets": 4, "reps": 10},
+          {"name": "Romanian Deadlift", "sets": 3, "reps": 12},
+          {"name": "Cable Kickback (Glute)", "sets": 3, "reps": "12 each leg"},
+          {"name": "Hip Abductor Machine", "sets": 3, "reps": 15},
+          {"name": "Band Glute Bridge", "sets": 3, "reps": 20}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Upper Body",
+        "name_ar": "جزء علوي",
+        "target_muscles": ["back", "shoulders", "arms"],
+        "exercises": [
+          {"name": "Lat Pulldown", "sets": 4, "reps": 12},
+          {"name": "Seated Cable Row", "sets": 3, "reps": 12},
+          {"name": "Shoulder Press Machine", "sets": 3, "reps": 12},
+          {"name": "Lateral Raise", "sets": 3, "reps": 15},
+          {"name": "Cable Bicep Curl", "sets": 3, "reps": 12},
+          {"name": "Cable Tricep Pushdown", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Glute + Legs (Volume)",
+        "name_ar": "إلية + رجل (حجم)",
+        "target_muscles": ["glutes", "legs"],
+        "exercises": [
+          {"name": "Sumo Deadlift", "sets": 4, "reps": 10},
+          {"name": "Bulgarian Split Squat", "sets": 3, "reps": "10 each leg"},
+          {"name": "Leg Press (Feet High and Wide)", "sets": 3, "reps": 15},
+          {"name": "Leg Curl Machine", "sets": 3, "reps": 12},
+          {"name": "Band Monster Walk", "sets": 3, "reps": "20 steps"},
+          {"name": "Clamshell Exercise", "sets": 3, "reps": 15},
+          {"name": "Stairmaster", "sets": 1, "reps": "10 min"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Full Body + Core",
+        "name_ar": "كامل الجسم + كور",
+        "target_muscles": ["full_body", "core"],
+        "exercises": [
+          {"name": "Hip Thrust (Single Leg)", "sets": 3, "reps": "10 each leg"},
+          {"name": "Goblet Squat", "sets": 3, "reps": 15},
+          {"name": "Push-Up", "sets": 3, "reps": 12},
+          {"name": "TRX Row", "sets": 3, "reps": 12},
+          {"name": "Plank", "sets": 3, "reps": "45s"},
+          {"name": "Russian Twist", "sets": 3, "reps": 20},
+          {"name": "Dead Bug", "sets": 3, "reps": "10 each side"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-adv-005",
+    "name_en": "PHUL (Power Hypertrophy Upper Lower) - 4 Day",
+    "name_ar": "PHUL (قوة + تضخيم علوي سفلي) - 4 أيام",
+    "description_en": "Combines heavy power days with hypertrophy days. Upper Power, Lower Power, Upper Hypertrophy, Lower Hypertrophy. Best of both worlds — build strength AND size.",
+    "description_ar": "يجمع بين أيام القوة الثقيلة وأيام التضخيم. علوي قوة، سفلي قوة، علوي تضخيم، سفلي تضخيم. أفضل العالمين — بناء قوة وحجم.",
+    "difficulty": "intermediate",
+    "duration_weeks": 8,
+    "days_per_week": 4,
+    "goal": "strength_hypertrophy",
+    "tags": ["PHUL", "power", "hypertrophy", "upper_lower", "balanced"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Power",
+        "name_ar": "علوي قوة",
+        "target_muscles": ["chest", "back", "shoulders"],
+        "exercises": [
+          {"name": "Barbell Bench Press", "sets": 4, "reps": "5,5,3,3"},
+          {"name": "Barbell Row", "sets": 4, "reps": "5,5,3,3"},
+          {"name": "Overhead Press", "sets": 3, "reps": 5},
+          {"name": "Weighted Pull-Up", "sets": 3, "reps": 5},
+          {"name": "Barbell Curl", "sets": 2, "reps": 8},
+          {"name": "Skull Crusher", "sets": 2, "reps": 8}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Lower Power",
+        "name_ar": "سفلي قوة",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "Back Squat", "sets": 4, "reps": "5,5,3,3"},
+          {"name": "Deadlift", "sets": 3, "reps": "5,5,3"},
+          {"name": "Leg Press", "sets": 3, "reps": 8},
+          {"name": "Leg Curl Machine", "sets": 3, "reps": 8},
+          {"name": "Calf Raise (Standing)", "sets": 4, "reps": 10}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Upper Hypertrophy",
+        "name_ar": "علوي تضخيم",
+        "target_muscles": ["chest", "back", "shoulders", "arms"],
+        "exercises": [
+          {"name": "Incline Dumbbell Press", "sets": 4, "reps": 12},
+          {"name": "Lat Pulldown", "sets": 4, "reps": 12},
+          {"name": "Dumbbell Lateral Raise", "sets": 4, "reps": 15},
+          {"name": "Cable Fly", "sets": 3, "reps": 15},
+          {"name": "Seated Cable Row", "sets": 3, "reps": 12},
+          {"name": "Dumbbell Curl", "sets": 3, "reps": 12},
+          {"name": "Cable Tricep Pushdown", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Lower Hypertrophy",
+        "name_ar": "سفلي تضخيم",
+        "target_muscles": ["legs", "glutes"],
+        "exercises": [
+          {"name": "Front Squat", "sets": 4, "reps": 12},
+          {"name": "Romanian Deadlift", "sets": 4, "reps": 12},
+          {"name": "Leg Extension", "sets": 3, "reps": 15},
+          {"name": "Leg Curl", "sets": 3, "reps": 15},
+          {"name": "Walking Lunge", "sets": 3, "reps": "12 each leg"},
+          {"name": "Calf Raise (Seated)", "sets": 4, "reps": 15}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-adv-006",
+    "name_en": "German Volume Training (GVT) - 4 Day",
+    "name_ar": "تدريب الحجم الألماني (GVT) - 4 أيام",
+    "description_en": "10 sets of 10 reps. The most brutal hypertrophy program ever designed. Uses just 2-3 exercises per session at 60% 1RM with strict 60-90 second rest. Not for the faint-hearted.",
+    "description_ar": "10 عدات من 10 تكرارات. أقسى برنامج تضخيم اتصمم. يستخدم 2-3 تمارين بس في الجلسة على 60% من أقصى وزن براحة 60-90 ثانية. مش للضعفاء.",
+    "difficulty": "advanced",
+    "duration_weeks": 6,
+    "days_per_week": 4,
+    "goal": "hypertrophy",
+    "tags": ["GVT", "volume", "10x10", "hypertrophy", "brutal"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Chest & Back (10x10)",
+        "name_ar": "صدر وظهر (10x10)",
+        "target_muscles": ["chest", "back"],
+        "exercises": [
+          {"name": "Flat Dumbbell Press", "sets": 10, "reps": 10},
+          {"name": "Chin-Up (or Lat Pulldown)", "sets": 10, "reps": 10},
+          {"name": "Dumbbell Fly", "sets": 3, "reps": 12},
+          {"name": "Seated Cable Row", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Legs (10x10)",
+        "name_ar": "رجل (10x10)",
+        "target_muscles": ["legs"],
+        "exercises": [
+          {"name": "Back Squat", "sets": 10, "reps": 10},
+          {"name": "Leg Curl Machine", "sets": 10, "reps": 10},
+          {"name": "Calf Raise", "sets": 3, "reps": 20}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Shoulders & Arms (10x10)",
+        "name_ar": "أكتاف وذراعين (10x10)",
+        "target_muscles": ["shoulders", "biceps", "triceps"],
+        "exercises": [
+          {"name": "Dumbbell Shoulder Press", "sets": 10, "reps": 10},
+          {"name": "Barbell Curl", "sets": 10, "reps": 10},
+          {"name": "Lateral Raise", "sets": 3, "reps": 15},
+          {"name": "Cable Tricep Pushdown", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Posterior Chain (10x10)",
+        "name_ar": "سلسلة خلفية (10x10)",
+        "target_muscles": ["back", "hamstrings", "glutes"],
+        "exercises": [
+          {"name": "Romanian Deadlift", "sets": 10, "reps": 10},
+          {"name": "Barbell Row", "sets": 10, "reps": 10},
+          {"name": "Hip Thrust", "sets": 3, "reps": 12}
+        ]
+      }
+    ]
+  }
+]

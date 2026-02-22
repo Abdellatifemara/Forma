@@ -1,0 +1,400 @@
+[
+  {
+    "id": "prog-home-001",
+    "name_en": "Complete Home Workout — No Equipment 4-Day",
+    "name_ar": "تمرين بيت كامل — بدون معدات 4 أيام",
+    "description_en": "Full body transformation program using only bodyweight. Perfect for when you can't get to the gym. Covers all muscle groups with progressive overload through tempo and rep manipulation.",
+    "description_ar": "برنامج تحول كامل بوزن الجسم فقط. مثالي لما مش قادر تروح الجيم. بيغطي كل العضلات مع تحميل تصاعدي من خلال التمبو والتكرارات.",
+    "difficulty": "beginner",
+    "duration_weeks": 8,
+    "days_per_week": 4,
+    "goal": "general_fitness",
+    "tags": ["home", "no_equipment", "bodyweight", "beginner", "full_body"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Body Push",
+        "name_ar": "جزء علوي دفع",
+        "target_muscles": ["chest", "shoulders", "triceps"],
+        "exercises": [
+          {"name": "Push-Up (Standard)", "sets": 4, "reps": "15-20"},
+          {"name": "Pike Push-Up", "sets": 3, "reps": "8-12"},
+          {"name": "Diamond Push-Up", "sets": 3, "reps": "10-15"},
+          {"name": "Decline Push-Up (Feet Elevated)", "sets": 3, "reps": "10-15"},
+          {"name": "Tricep Dip (Chair)", "sets": 3, "reps": "12-15"},
+          {"name": "Plank", "sets": 3, "reps": "45s hold"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Lower Body",
+        "name_ar": "جزء سفلي",
+        "target_muscles": ["quadriceps", "hamstrings", "glutes", "calves"],
+        "exercises": [
+          {"name": "Bodyweight Squat (Slow Tempo 3-1-1)", "sets": 4, "reps": 20},
+          {"name": "Bulgarian Split Squat (Chair)", "sets": 3, "reps": "10 each leg"},
+          {"name": "Glute Bridge", "sets": 4, "reps": 20},
+          {"name": "Reverse Lunge", "sets": 3, "reps": "12 each leg"},
+          {"name": "Wall Sit", "sets": 3, "reps": "45s hold"},
+          {"name": "Calf Raise (On Step)", "sets": 4, "reps": 25},
+          {"name": "Jump Squat", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Upper Body Pull + Core",
+        "name_ar": "جزء علوي سحب + كور",
+        "target_muscles": ["back", "biceps", "core"],
+        "exercises": [
+          {"name": "Inverted Row (Under Table)", "sets": 4, "reps": 12},
+          {"name": "Superman Hold", "sets": 3, "reps": "15 (2s hold)"},
+          {"name": "Door Frame Row (Towel)", "sets": 3, "reps": 12},
+          {"name": "Water Jug Curl", "sets": 3, "reps": 15},
+          {"name": "Bicycle Crunch", "sets": 3, "reps": "15 each side"},
+          {"name": "Leg Raise (Lying)", "sets": 3, "reps": 15},
+          {"name": "Side Plank", "sets": 3, "reps": "30s each side"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Full Body HIIT",
+        "name_ar": "فول بودي HIIT",
+        "target_muscles": ["full_body", "cardio"],
+        "exercises": [
+          {"name": "Burpee", "sets": 4, "reps": 10},
+          {"name": "Mountain Climber", "sets": 4, "reps": "30s"},
+          {"name": "Jump Squat", "sets": 4, "reps": 12},
+          {"name": "Push-Up", "sets": 3, "reps": 15},
+          {"name": "High Knees", "sets": 4, "reps": "30s"},
+          {"name": "Jumping Jacks", "sets": 3, "reps": "30s"},
+          {"name": "Bear Crawl", "sets": 3, "reps": "20m"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-home-002",
+    "name_en": "Home Glute Builder — Women's 4-Day",
+    "name_ar": "بناء الإلية في البيت — برنامج نسائي 4 أيام",
+    "description_en": "Glute-focused home program designed for women. No equipment needed. Targets glutes from all angles with high volume and progressive overload. Includes lower body, upper body, and a dedicated glute day.",
+    "description_ar": "برنامج إلية مركز للبيت مصمم للنساء. بدون معدات. بيستهدف الإلية من كل الزوايا بحجم عالي.",
+    "difficulty": "beginner",
+    "duration_weeks": 8,
+    "days_per_week": 4,
+    "goal": "glute_building",
+    "tags": ["home", "women", "glutes", "bodyweight", "no_equipment"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Glute Focus Day",
+        "name_ar": "يوم إلية",
+        "target_muscles": ["glutes", "hamstrings"],
+        "exercises": [
+          {"name": "Glute Bridge", "sets": 4, "reps": 20},
+          {"name": "Single Leg Glute Bridge", "sets": 3, "reps": "12 each"},
+          {"name": "Donkey Kick", "sets": 3, "reps": "15 each"},
+          {"name": "Fire Hydrant", "sets": 3, "reps": "15 each"},
+          {"name": "Reverse Lunge", "sets": 3, "reps": "12 each"},
+          {"name": "Sumo Squat (Wide)", "sets": 4, "reps": 20},
+          {"name": "Hip Thrust (Shoulders on Couch)", "sets": 4, "reps": 15}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Upper Body + Core",
+        "name_ar": "جزء علوي + كور",
+        "target_muscles": ["chest", "back", "shoulders", "core"],
+        "exercises": [
+          {"name": "Push-Up (Knees if needed)", "sets": 3, "reps": 12},
+          {"name": "Pike Push-Up", "sets": 3, "reps": 8},
+          {"name": "Inverted Row (Under Table)", "sets": 3, "reps": 10},
+          {"name": "Superman Hold", "sets": 3, "reps": 15},
+          {"name": "Plank", "sets": 3, "reps": "30s"},
+          {"name": "Bicycle Crunch", "sets": 3, "reps": "15 each"},
+          {"name": "V-Up", "sets": 3, "reps": 10}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Legs + Glute Volume",
+        "name_ar": "رجل + حجم إلية",
+        "target_muscles": ["quadriceps", "glutes", "calves"],
+        "exercises": [
+          {"name": "Bodyweight Squat", "sets": 4, "reps": 20},
+          {"name": "Bulgarian Split Squat", "sets": 3, "reps": "10 each"},
+          {"name": "Step-Up (Chair)", "sets": 3, "reps": "10 each"},
+          {"name": "Wall Sit", "sets": 3, "reps": "45s"},
+          {"name": "Calf Raise (On Step)", "sets": 4, "reps": 20},
+          {"name": "Glute Bridge with Pause (3s top)", "sets": 3, "reps": 15},
+          {"name": "Curtsy Lunge", "sets": 3, "reps": "10 each"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Full Body + Cardio",
+        "name_ar": "فول بودي + كارديو",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Squat to Push-Up", "sets": 3, "reps": 10},
+          {"name": "High Knees", "sets": 4, "reps": "30s"},
+          {"name": "Jumping Jacks", "sets": 3, "reps": "30s"},
+          {"name": "Mountain Climber", "sets": 3, "reps": "30s"},
+          {"name": "Glute Bridge", "sets": 3, "reps": 20},
+          {"name": "Push-Up", "sets": 3, "reps": 10},
+          {"name": "Plank", "sets": 3, "reps": "45s"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-home-003",
+    "name_en": "Kettlebell Only — Full Body 3-Day",
+    "name_ar": "كيتلبل فقط — فول بودي 3 أيام",
+    "description_en": "Complete program using only one kettlebell. Builds strength, burns fat, and improves conditioning. Great for home gym or when traveling. Each session is 35-40 minutes.",
+    "description_ar": "برنامج كامل بكيتلبل واحد فقط. بيبني قوة ويحرق دهون ويحسن اللياقة. ممتاز للبيت أو السفر. كل جلسة 35-40 دقيقة.",
+    "difficulty": "intermediate",
+    "duration_weeks": 6,
+    "days_per_week": 3,
+    "goal": "strength_conditioning",
+    "tags": ["kettlebell", "home", "minimal_equipment", "fat_loss", "conditioning"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Strength Focus",
+        "name_ar": "تركيز قوة",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Kettlebell Goblet Squat", "sets": 4, "reps": 12},
+          {"name": "Kettlebell Press (Single Arm)", "sets": 4, "reps": "8 each"},
+          {"name": "Kettlebell Row (Single Arm)", "sets": 4, "reps": "10 each"},
+          {"name": "Kettlebell Sumo Deadlift", "sets": 4, "reps": 12},
+          {"name": "Kettlebell Floor Press", "sets": 3, "reps": "10 each"},
+          {"name": "Kettlebell Halo", "sets": 3, "reps": "8 each direction"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Power & Explosiveness",
+        "name_ar": "قوة وانفجار",
+        "target_muscles": ["full_body", "posterior_chain"],
+        "exercises": [
+          {"name": "Kettlebell Swing (Two-Handed)", "sets": 5, "reps": 15},
+          {"name": "Kettlebell Clean", "sets": 4, "reps": "8 each"},
+          {"name": "Kettlebell Thruster", "sets": 4, "reps": 10},
+          {"name": "Kettlebell High Pull", "sets": 3, "reps": "10 each"},
+          {"name": "Kettlebell Swing (One-Handed)", "sets": 3, "reps": "12 each"},
+          {"name": "Kettlebell Farmer's Walk", "sets": 3, "reps": "40m"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Conditioning Circuit",
+        "name_ar": "دائرة لياقة",
+        "target_muscles": ["full_body", "cardio"],
+        "exercises": [
+          {"name": "Kettlebell Swing", "sets": 1, "reps": "30s on / 30s off × 10"},
+          {"name": "Kettlebell Goblet Squat", "sets": 1, "reps": "30s on / 30s off × 5"},
+          {"name": "Kettlebell Renegade Row", "sets": 3, "reps": "8 each"},
+          {"name": "Kettlebell Around the World", "sets": 3, "reps": "10 each"},
+          {"name": "Kettlebell Swing to Squat", "sets": 4, "reps": 12},
+          {"name": "Kettlebell Turkish Get-Up", "sets": 2, "reps": "3 each side"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-home-004",
+    "name_en": "Resistance Band Full Body — 4-Day",
+    "name_ar": "باند مقاومة فول بودي — 4 أيام",
+    "description_en": "Complete training program using only resistance bands. Covers push, pull, and legs. Perfect for home, travel, or as a deload week from heavy lifting.",
+    "description_ar": "برنامج تدريب كامل بأشرطة المقاومة فقط. بيغطي دفع وسحب ورجل. مثالي للبيت أو السفر.",
+    "difficulty": "beginner",
+    "duration_weeks": 6,
+    "days_per_week": 4,
+    "goal": "muscle_tone",
+    "tags": ["band", "home", "minimal_equipment", "beginner", "travel"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Upper Push",
+        "name_ar": "علوي دفع",
+        "target_muscles": ["chest", "shoulders", "triceps"],
+        "exercises": [
+          {"name": "Band Chest Press", "sets": 4, "reps": 15},
+          {"name": "Band Chest Fly", "sets": 3, "reps": 15},
+          {"name": "Band Overhead Press", "sets": 4, "reps": 12},
+          {"name": "Band Lateral Raise", "sets": 3, "reps": 15},
+          {"name": "Band Tricep Pushdown", "sets": 3, "reps": 15},
+          {"name": "Band Face Pull", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Legs",
+        "name_ar": "رجل",
+        "target_muscles": ["quadriceps", "hamstrings", "glutes"],
+        "exercises": [
+          {"name": "Band Squat", "sets": 4, "reps": 15},
+          {"name": "Band Deadlift", "sets": 4, "reps": 12},
+          {"name": "Band Glute Bridge", "sets": 4, "reps": 15},
+          {"name": "Band Monster Walk", "sets": 3, "reps": "12 each direction"},
+          {"name": "Band Crab Walk", "sets": 3, "reps": "10 each direction"},
+          {"name": "Band Good Morning", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Upper Pull",
+        "name_ar": "علوي سحب",
+        "target_muscles": ["back", "biceps", "rear_delt"],
+        "exercises": [
+          {"name": "Band Lat Pulldown", "sets": 4, "reps": 15},
+          {"name": "Band Row", "sets": 4, "reps": 12},
+          {"name": "Band Pull-Apart", "sets": 3, "reps": 20},
+          {"name": "Band Bicep Curl", "sets": 3, "reps": 15},
+          {"name": "Band Face Pull", "sets": 3, "reps": 15},
+          {"name": "Band Reverse Fly", "sets": 3, "reps": 15}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Full Body + Core",
+        "name_ar": "فول بودي + كور",
+        "target_muscles": ["full_body", "core"],
+        "exercises": [
+          {"name": "Band Squat to Press", "sets": 3, "reps": 12},
+          {"name": "Band Deadlift", "sets": 3, "reps": 12},
+          {"name": "Band Chest Press", "sets": 3, "reps": 12},
+          {"name": "Band Row", "sets": 3, "reps": 12},
+          {"name": "Band Pallof Press", "sets": 3, "reps": "10 each side"},
+          {"name": "Band Woodchop", "sets": 3, "reps": "10 each side"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-home-005",
+    "name_en": "Boxing Home Workout — 4-Day Conditioning",
+    "name_ar": "تمرين بوكسنج في البيت — 4 أيام لياقة",
+    "description_en": "Boxing-inspired conditioning program you can do at home with no equipment. Burns massive calories, builds endurance, and tones your whole body. Great for stress relief too.",
+    "description_ar": "برنامج لياقة مستوحى من الملاكمة تعمله في البيت بدون معدات. بيحرق سعرات كتير ويبني تحمل ويشد الجسم كله.",
+    "difficulty": "intermediate",
+    "duration_weeks": 6,
+    "days_per_week": 4,
+    "goal": "fat_loss",
+    "tags": ["boxing", "home", "no_equipment", "cardio", "fat_loss", "conditioning"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Boxing Fundamentals",
+        "name_ar": "أساسيات الملاكمة",
+        "target_muscles": ["shoulders", "core", "cardio"],
+        "exercises": [
+          {"name": "Jump Rope (or Shadow Jump)", "sets": 3, "reps": "3 min"},
+          {"name": "Shadow Boxing", "sets": 4, "reps": "3 min rounds"},
+          {"name": "Jab-Cross Combo", "sets": 4, "reps": "1 min"},
+          {"name": "Slip and Counter", "sets": 3, "reps": "2 min"},
+          {"name": "Push-Up", "sets": 3, "reps": 15},
+          {"name": "Plank", "sets": 3, "reps": "45s"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Legs & Conditioning",
+        "name_ar": "رجل ولياقة",
+        "target_muscles": ["legs", "cardio"],
+        "exercises": [
+          {"name": "Jump Squat", "sets": 4, "reps": 12},
+          {"name": "Bodyweight Lunge (Walking)", "sets": 3, "reps": "12 each"},
+          {"name": "Defensive Slide", "sets": 4, "reps": "30s"},
+          {"name": "High Knees", "sets": 4, "reps": "30s"},
+          {"name": "Mountain Climber", "sets": 4, "reps": "30s"},
+          {"name": "Burpee", "sets": 3, "reps": 10},
+          {"name": "Calf Raise", "sets": 3, "reps": 20}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Combo Training",
+        "name_ar": "تمرين كومبوهات",
+        "target_muscles": ["full_body", "cardio"],
+        "exercises": [
+          {"name": "Shadow Boxing", "sets": 2, "reps": "3 min"},
+          {"name": "1-2-3 Combo (Jab-Cross-Hook)", "sets": 5, "reps": "1 min"},
+          {"name": "Bob and Weave", "sets": 3, "reps": "1 min"},
+          {"name": "Sprawl", "sets": 3, "reps": 10},
+          {"name": "Push-Up (Diamond)", "sets": 3, "reps": 10},
+          {"name": "Bicycle Crunch", "sets": 3, "reps": "15 each"},
+          {"name": "V-Up", "sets": 3, "reps": 12}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "HIIT Fight Conditioning",
+        "name_ar": "HIIT لياقة قتالية",
+        "target_muscles": ["full_body", "cardio"],
+        "exercises": [
+          {"name": "Round 1: Shadow Boxing + Burpees", "sets": 1, "reps": "3 min shadow, 10 burpees × 3"},
+          {"name": "Round 2: Jab-Cross-Squat Combo", "sets": 4, "reps": "1 min on / 30s off"},
+          {"name": "Round 3: High Knees + Mountain Climbers", "sets": 4, "reps": "30s each"},
+          {"name": "Round 4: Push-Up Tabata", "sets": 1, "reps": "20s work / 10s rest × 8"},
+          {"name": "Cooldown: Stretching", "sets": 1, "reps": "5 min"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-home-006",
+    "name_en": "Beginner 12-Week Transformation — Full Body 3-Day",
+    "name_ar": "تحول المبتدئين 12 أسبوع — فول بودي 3 أيام",
+    "description_en": "The perfect program for complete beginners. 3 full body sessions per week, focusing on learning basic movements and building a foundation. Weeks 1-4: learn movements. Weeks 5-8: increase intensity. Weeks 9-12: push performance.",
+    "description_ar": "البرنامج المثالي للمبتدئين تماماً. 3 جلسات فول بودي في الأسبوع، بتركز على تعلم الحركات الأساسية وبناء أساس. أسبوع 1-4: تعلم. 5-8: زيادة شدة. 9-12: أداء.",
+    "difficulty": "beginner",
+    "duration_weeks": 12,
+    "days_per_week": 3,
+    "goal": "beginner_transformation",
+    "tags": ["beginner", "transformation", "full_body", "gym", "foundation"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Full Body A",
+        "name_ar": "فول بودي A",
+        "target_muscles": ["chest", "back", "legs", "shoulders"],
+        "exercises": [
+          {"name": "Barbell Squat (or Goblet Squat)", "sets": 3, "reps": "8-10"},
+          {"name": "Bench Press (or Push-Up)", "sets": 3, "reps": "8-10"},
+          {"name": "Barbell Row", "sets": 3, "reps": "8-10"},
+          {"name": "Overhead Press", "sets": 3, "reps": "8-10"},
+          {"name": "Plank", "sets": 3, "reps": "30s"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Full Body B",
+        "name_ar": "فول بودي B",
+        "target_muscles": ["legs", "chest", "back", "arms"],
+        "exercises": [
+          {"name": "Romanian Deadlift", "sets": 3, "reps": "8-10"},
+          {"name": "Incline Dumbbell Press", "sets": 3, "reps": "10-12"},
+          {"name": "Lat Pulldown", "sets": 3, "reps": "10-12"},
+          {"name": "Leg Press", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Curl + Tricep Pushdown (Superset)", "sets": 3, "reps": "12 each"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Full Body C",
+        "name_ar": "فول بودي C",
+        "target_muscles": ["full_body"],
+        "exercises": [
+          {"name": "Leg Press", "sets": 3, "reps": "10-12"},
+          {"name": "Dumbbell Bench Press", "sets": 3, "reps": "10-12"},
+          {"name": "Seated Cable Row", "sets": 3, "reps": "10-12"},
+          {"name": "Lateral Raise", "sets": 3, "reps": "12-15"},
+          {"name": "Leg Curl", "sets": 3, "reps": "10-12"},
+          {"name": "Hanging Leg Raise (or Lying)", "sets": 3, "reps": 10}
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "prog-end-001",
+    "name_en": "Couch to 5K — Running Program",
+    "name_ar": "من الكنبة لـ 5 كيلو — برنامج جري",
+    "description_en": "8-week program to go from zero running to completing 5K. Alternates walking and running, gradually increasing run time. 3 sessions per week. Perfect for absolute beginners who want to start running.",
+    "description_ar": "برنامج 8 أسابيع من الصفر لإكمال 5 كيلو جري. بيتبادل بين المشي والجري مع زيادة تدريجية. 3 جلسات في الأسبوع. مثالي للمبتدئين تماماً.",
+    "difficulty": "beginner",
+    "duration_weeks": 8,
+    "days_per_week": 3,
+    "goal": "running_endurance",
+    "tags": ["running", "cardio", "beginner", "5k", "endurance", "home_workout"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Run Session A",
+        "name_ar": "جلسة جري A",
+        "target_muscles": ["cardio", "legs"],
+        "exercises": [
+          {"name": "Warm-Up Walk", "sets": 1, "reps": "5 min"},
+          {"name": "Week 1-2: Walk 90s / Jog 60s × 8", "sets": 1, "reps": "20 min"},
+          {"name": "Week 3-4: Walk 60s / Jog 90s × 8", "sets": 1, "reps": "20 min"},
+          {"name": "Week 5-6: Walk 60s / Jog 3 min × 5", "sets": 1, "reps": "20 min"},
+          {"name": "Week 7-8: Jog 5 min / Walk 1 min × 4, then continuous", "sets": 1, "reps": "25-30 min"},
+          {"name": "Cooldown Walk + Stretch", "sets": 1, "reps": "5 min"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Run Session B",
+        "name_ar": "جلسة جري B",
+        "target_muscles": ["cardio", "legs"],
+        "exercises": [
+          {"name": "Same as Day 1 but slightly longer intervals", "sets": 1, "reps": "See progression above"},
+          {"name": "Post-run: Leg stretches (quad, hamstring, calf)", "sets": 1, "reps": "5 min"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Run Session C (Long Run)",
+        "name_ar": "جلسة جري C (طويلة)",
+        "target_muscles": ["cardio", "legs", "endurance"],
+        "exercises": [
+          {"name": "Same intervals but add 5 min total time", "sets": 1, "reps": "See progression"},
+          {"name": "Week 8 goal: 30 min continuous jog (≈5K)", "sets": 1, "reps": "30 min"},
+          {"name": "Full body stretch", "sets": 1, "reps": "10 min"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-end-002",
+    "name_en": "MMA/Boxing Conditioning — 4-Day",
+    "name_ar": "تكييف MMA/بوكسنج — 4 أيام",
+    "description_en": "Brutal conditioning program for fighters and people who want to train like one. Combines boxing drills, bodyweight exercises, and strength work. Burns massive calories. Each session is 45-60 minutes of high intensity.",
+    "description_ar": "برنامج تكييف قاسي للمقاتلين ومن يريد التمرن مثلهم. يجمع بين تمارين ملاكمة وتمارين بوزن الجسم وقوة. يحرق سعرات كتير. كل جلسة 45-60 دقيقة شدة عالية.",
+    "difficulty": "advanced",
+    "duration_weeks": 8,
+    "days_per_week": 4,
+    "goal": "fight_conditioning",
+    "tags": ["boxing", "mma", "conditioning", "cardio", "fat_loss", "advanced"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Boxing Skill + Upper Body",
+        "name_ar": "مهارة ملاكمة + جزء علوي",
+        "target_muscles": ["shoulders", "core", "chest", "triceps"],
+        "exercises": [
+          {"name": "Jump Rope", "sets": 3, "reps": "3 min rounds"},
+          {"name": "Shadow Boxing", "sets": 3, "reps": "3 min rounds"},
+          {"name": "Heavy Bag Work (Combos)", "sets": 5, "reps": "3 min rounds"},
+          {"name": "Push-Up", "sets": 3, "reps": 20},
+          {"name": "Dumbbell Shoulder Press", "sets": 3, "reps": 10},
+          {"name": "Pull-Up", "sets": 3, "reps": "max"},
+          {"name": "Plank", "sets": 3, "reps": "45s"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Legs + Power",
+        "name_ar": "رجل + قوة انفجارية",
+        "target_muscles": ["quadriceps", "glutes", "hamstrings", "calves"],
+        "exercises": [
+          {"name": "Box Jump", "sets": 4, "reps": 8},
+          {"name": "Barbell Squat", "sets": 4, "reps": "6-8"},
+          {"name": "Romanian Deadlift", "sets": 3, "reps": 8},
+          {"name": "Jump Squat", "sets": 3, "reps": 12},
+          {"name": "Defensive Slide", "sets": 4, "reps": "30s"},
+          {"name": "Sprawl", "sets": 3, "reps": 10},
+          {"name": "Stair Sprint (or Hill)", "sets": 6, "reps": "30s"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Kickboxing + Core",
+        "name_ar": "كيك بوكسنج + كور",
+        "target_muscles": ["full_body", "core", "hips"],
+        "exercises": [
+          {"name": "Shadow Boxing (include kicks)", "sets": 3, "reps": "3 min"},
+          {"name": "Kickboxing Combo (Punch-Punch-Kick)", "sets": 5, "reps": "2 min rounds"},
+          {"name": "Knee Strike (Heavy Bag)", "sets": 3, "reps": "12 each leg"},
+          {"name": "Roundhouse Kick (Bag)", "sets": 3, "reps": "10 each leg"},
+          {"name": "Medicine Ball Rotational Throw", "sets": 3, "reps": "8 each side"},
+          {"name": "Hanging Leg Raise", "sets": 3, "reps": 12},
+          {"name": "Russian Twist", "sets": 3, "reps": "15 each side"}
+        ]
+      },
+      {
+        "day": 4,
+        "name_en": "Fight Conditioning Circuit",
+        "name_ar": "دائرة تكييف قتالي",
+        "target_muscles": ["full_body", "cardio"],
+        "exercises": [
+          {"name": "Circuit (5 rounds, 30s work / 15s rest):", "sets": 5, "reps": "See below"},
+          {"name": "— Burpees", "sets": 5, "reps": "30s"},
+          {"name": "— Shadow Boxing", "sets": 5, "reps": "30s"},
+          {"name": "— Mountain Climbers", "sets": 5, "reps": "30s"},
+          {"name": "— Sprawls", "sets": 5, "reps": "30s"},
+          {"name": "— Jump Rope", "sets": 5, "reps": "30s"},
+          {"name": "— Plank", "sets": 5, "reps": "30s"},
+          {"name": "Rest 2 min between rounds", "sets": 1, "reps": "—"},
+          {"name": "Cooldown: 10 min stretching", "sets": 1, "reps": "10 min"}
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prog-end-003",
+    "name_en": "HIIT Fat Burner — 3-Day (30 minutes each)",
+    "name_ar": "HIIT حارق دهون — 3 أيام (30 دقيقة)",
+    "description_en": "Quick and effective HIIT program for busy people. Each session is 30 minutes including warm-up and cool-down. No equipment needed. Can be done at home or park. Burns 300-500 calories per session.",
+    "description_ar": "برنامج HIIT سريع وفعال للمشغولين. كل جلسة 30 دقيقة بالإحماء والتبريد. بدون معدات. ممكن في البيت أو الحديقة. بيحرق 300-500 سعرة في الجلسة.",
+    "difficulty": "intermediate",
+    "duration_weeks": 6,
+    "days_per_week": 3,
+    "goal": "fat_loss",
+    "tags": ["hiit", "fat_loss", "quick", "no_equipment", "home_workout", "busy"],
+    "days": [
+      {
+        "day": 1,
+        "name_en": "Lower Body HIIT",
+        "name_ar": "HIIT جزء سفلي",
+        "target_muscles": ["legs", "glutes", "cardio"],
+        "exercises": [
+          {"name": "Warm-Up: Jumping Jacks", "sets": 1, "reps": "2 min"},
+          {"name": "Tabata 1 (20s work / 10s rest × 8): Jump Squats", "sets": 1, "reps": "4 min"},
+          {"name": "Rest", "sets": 1, "reps": "1 min"},
+          {"name": "Tabata 2: Walking Lunges", "sets": 1, "reps": "4 min"},
+          {"name": "Rest", "sets": 1, "reps": "1 min"},
+          {"name": "Tabata 3: High Knees", "sets": 1, "reps": "4 min"},
+          {"name": "Rest", "sets": 1, "reps": "1 min"},
+          {"name": "Tabata 4: Glute Bridges (Fast)", "sets": 1, "reps": "4 min"},
+          {"name": "Cooldown: Stretching", "sets": 1, "reps": "5 min"}
+        ]
+      },
+      {
+        "day": 2,
+        "name_en": "Upper Body HIIT",
+        "name_ar": "HIIT جزء علوي",
+        "target_muscles": ["chest", "shoulders", "arms", "cardio"],
+        "exercises": [
+          {"name": "Warm-Up: Arm Circles + Light Jog", "sets": 1, "reps": "2 min"},
+          {"name": "Tabata 1: Push-Ups", "sets": 1, "reps": "4 min"},
+          {"name": "Rest", "sets": 1, "reps": "1 min"},
+          {"name": "Tabata 2: Mountain Climbers", "sets": 1, "reps": "4 min"},
+          {"name": "Rest", "sets": 1, "reps": "1 min"},
+          {"name": "Tabata 3: Pike Push-Up", "sets": 1, "reps": "4 min"},
+          {"name": "Rest", "sets": 1, "reps": "1 min"},
+          {"name": "Tabata 4: Plank to Push-Up", "sets": 1, "reps": "4 min"},
+          {"name": "Cooldown: Upper body stretches", "sets": 1, "reps": "5 min"}
+        ]
+      },
+      {
+        "day": 3,
+        "name_en": "Full Body HIIT",
+        "name_ar": "HIIT فول بودي",
+        "target_muscles": ["full_body", "cardio"],
+        "exercises": [
+          {"name": "Warm-Up: Jumping Jacks", "sets": 1, "reps": "2 min"},
+          {"name": "EMOM (Every Min on the Min) × 20 min:", "sets": 1, "reps": "20 min"},
+          {"name": "Min 1: 10 Burpees", "sets": 1, "reps": "10"},
+          {"name": "Min 2: 15 Air Squats", "sets": 1, "reps": "15"},
+          {"name": "Min 3: 12 Push-Ups", "sets": 1, "reps": "12"},
+          {"name": "Min 4: 20 Mountain Climbers", "sets": 1, "reps": "20"},
+          {"name": "Min 5: 10 Jump Lunges", "sets": 1, "reps": "10"},
+          {"name": "(Repeat 4 times)", "sets": 1, "reps": "—"},
+          {"name": "Cooldown: Full body stretch", "sets": 1, "reps": "5 min"}
+        ]
+      }
+    ]
+  }
+]
