@@ -4515,6 +4515,94 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'supplements',
   },
 
+  // ── v25: Pregnancy & Postpartum Fitness ────────────────────
+  {
+    keywords: ['pregnancy workout', 'pregnant exercise', 'postpartum fitness', 'after birth workout', 'pelvic floor', 'diastasis recti', 'exercise while pregnant'],
+    keywordsAr: ['تمرين حمل', 'رياضة للحامل', 'رياضة بعد الولادة', 'قاع الحوض', 'انفصال عضلات البطن'],
+    keywordsFranco: ['tamreen 7aml', 'reyada lel 7amel', 'reyada ba3d el welada', '2a3 el 7od', 'enfsal 3adalat el batn'],
+    stateId: 'HP_MENU',
+    response: { en: 'Pregnancy fitness: SAFE: walking, swimming, prenatal yoga, light weights (modify as belly grows). AVOID: lying flat after 1st trimester, contact sports, heavy lifting, hot yoga. Pelvic floor: Kegels daily (10x10sec holds, 3 sets). POSTPARTUM: Wait 6 weeks (12 for C-section), start with walks + pelvic floor. Diastasis recti: avoid crunches, do dead bugs + bird dogs + breathing exercises. Always get doctor clearance! Every pregnancy is different.', ar: 'لياقة الحمل: آمن: مشي، سباحة، يوجا حوامل، أوزان خفيفة (عدل مع كبر البطن). تجنب: الرقود على الظهر بعد أول 3 شهور، رياضات تلامس، رفع ثقيل، هوت يوجا. قاع الحوض: كيجل يومياً (10×10ث، 3 سيتات). بعد الولادة: استنى 6 أسابيع (12 لقيصري)، ابدأ بمشي + قاع حوض. انفصال عضلات البطن: تجنب كرانشز، اعمل ديد باجز + بيرد دوجز + تمارين تنفس. خد موافقة الدكتور دايماً! كل حمل مختلف.' },
+    priority: 9,
+    domain: 'health',
+  },
+
+  // ── v25: Senior Fitness (60+) ─────────────────────────────────
+  {
+    keywords: ['senior workout', 'elderly exercise', 'over 60 training', 'old age fitness', 'grandparent exercise', 'aging fitness', 'exercise for old'],
+    keywordsAr: ['تمرين كبار السن', 'رياضة لكبار السن', 'تمرين فوق 60', 'لياقة كبار', 'رياضة المسنين'],
+    keywordsFranco: ['tamreen kobar el sen', 'reyada le kobar el sen', 'tamreen fo2 60', 'leya2et kobar'],
+    stateId: 'WK_MENU',
+    response: { en: 'Senior fitness (60+): PRIORITY: 1) Balance training (single leg stand, tai chi) — prevents falls 2) Resistance training 2-3x/week (machines are safer than free weights) 3) Walking 30min daily 4) Flexibility (chair yoga, stretching) 5) Grip strength (squeeze ball). Start LIGHT, progress slowly. Protein: 1.2-1.6g/kg (higher than younger adults!). Social exercise (group classes, walking groups) improves adherence. It\'s NEVER too late to start — studies show muscle growth even at 90+!', ar: 'لياقة كبار السن (60+): أولوية: 1) تمارين توازن (وقوف رجل واحدة، تاي تشي) — بيمنع الوقوع 2) تمارين مقاومة 2-3 مرات/أسبوع (الأجهزة أأمن من الأوزان الحرة) 3) مشي 30 دقيقة يومياً 4) مرونة (يوجا كرسي، استرتش) 5) قوة القبضة (كرة ضغط). ابدأ خفيف، تدرج ببطء. بروتين: 1.2-1.6ج/كج (أعلى من الشباب!). رياضة جماعية (كلاسات، مجموعات مشي) بتحسن الالتزام. مفيش وقت متأخر — دراسات أثبتت نمو عضلي حتى في التسعينات!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v25: Bodyweight Progressions ──────────────────────────────
+  {
+    keywords: ['bodyweight progression', 'calisthenics progression', 'push up progression', 'pull up progression', 'cant do pull up', 'pistol squat', 'handstand progression'],
+    keywordsAr: ['تدرج تمارين الجسم', 'تدرج كاليسثنكس', 'تدرج ضغط', 'تدرج عقلة', 'مش قادر اعمل عقلة', 'بيستول سكوات'],
+    keywordsFranco: ['tadrog tamreen el gesm', 'tadrog calisthenics', 'tadrog dagt', 'tadrog 3a2la', 'msh 2ader a3mel 3a2la', 'pistol squat'],
+    stateId: 'WK_MENU',
+    response: { en: 'Bodyweight progressions: PUSH-UP: wall → incline → knee → full → archer → one-arm. PULL-UP: dead hang → band assisted → negatives (5sec) → half → full → weighted. SQUAT: assisted → full → Bulgarian split → pistol. DIPS: bench dips → parallel bars → weighted. L-SIT: tuck → one leg → full. HANDSTAND: wall walks → stomach to wall → freestanding. Key: Master each level for 3x10 before progressing. Film yourself to check form!', ar: 'تدرج تمارين الجسم: ضغط: حيطة → مائل → ركبة → كامل → آرتشر → يد واحدة. عقلة: ديد هانج → باند مساعد → سلبي (5ث) → نص → كامل → بوزن. سكوات: بمساعدة → كامل → بلغاري → بيستول. ديبس: بنش ديبس → بارالل بار → بوزن. ال-سيت: تك → رجل واحدة → كامل. هاند ستاند: مشي حيطة → بطن للحيطة → حر. المفتاح: اتقن كل مستوى 3×10 قبل التدرج. صور نفسك تشيك على الفورم!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v25: Protein Timing & Distribution ────────────────────────
+  {
+    keywords: ['protein timing', 'when to eat protein', 'protein before bed', 'anabolic window', 'protein distribution', 'protein per meal', 'casein before bed'],
+    keywordsAr: ['توقيت البروتين', 'امتى اكل بروتين', 'بروتين قبل النوم', 'نافذة الأنابوليك', 'توزيع البروتين'],
+    keywordsFranco: ['taw2eet el protein', 'emta akol protein', 'protein 2abl el nom', 'nafzet el anabolic', 'tawzee3 el protein'],
+    stateId: 'NT_MENU',
+    response: { en: 'Protein timing science: 1) "Anabolic window" is a myth — total daily protein matters MORE 2) Distribute evenly: 30-50g per meal, 4-5 meals 3) Pre-workout (1-2hrs before): 25-40g protein + carbs 4) Post-workout (within 2hrs): 25-40g protein + carbs 5) Before bed: casein protein or cottage cheese (slow release, 8hrs of muscle building) 6) Morning: break the fast with protein. Your body can use 40g+ per meal — the "30g limit" is outdated!', ar: 'علم توقيت البروتين: 1) "نافذة الأنابوليك" خرافة — إجمالي البروتين اليومي أهم 2) وزع بالتساوي: 30-50ج في الوجبة، 4-5 وجبات 3) قبل التمرين (1-2 ساعة): 25-40ج بروتين + كارب 4) بعد التمرين (خلال ساعتين): 25-40ج بروتين + كارب 5) قبل النوم: كازين أو جبنة قريش (بطيء الإفراز، 8 ساعات بناء عضلي) 6) الصبح: اكسر الصيام ببروتين. جسمك يقدر يستخدم 40ج+ في الوجبة — حد "30ج" قديم!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v25: Egyptian Supplement Market ────────────────────────────
+  {
+    keywords: ['supplement brand egypt', 'best protein egypt', 'where to buy supplements egypt', 'supplement store egypt', 'whey price egypt', 'optimum nutrition egypt'],
+    keywordsAr: ['أفضل بروتين مصر', 'فين اشتري مكملات', 'محل مكملات', 'سعر الواي مصر', 'ماركات مكملات مصر'],
+    keywordsFranco: ['afdal protein masr', 'fen ashtary mokamalat', 'ma7al mokamalat', 'se3r el whey masr', 'markat mokamalat masr'],
+    stateId: 'SP_MENU',
+    response: { en: 'Egypt supplement market 2024: TOP brands: Optimum Nutrition (ON) Gold Standard (~2000-2500 LE/5lb), Dymatize ISO 100 (~2200 LE), Kevin Levrone (~1500-1800 LE). BUDGET: Rule 1, EVL, Applied Nutrition (~1200-1500 LE). WHERE TO BUY: iHerb (reliable, takes 1-2 weeks), local stores (Sports Zone, Care Supplements), Facebook groups (check authenticity!). BEWARE: fake supplements are common — check holograms, seals, batch numbers. Always buy sealed!', ar: 'سوق المكملات المصري 2024: أفضل ماركات: أوبتمم نيوتريشن (ON) جولد ستاندرد (~2000-2500 جنيه/5 باوند)، ديماتيز ISO 100 (~2200 جنيه)، كيفن ليفرون (~1500-1800 جنيه). اقتصادي: Rule 1، EVL، أبلايد نيوتريشن (~1200-1500 جنيه). فين تشتري: iHerb (موثوق، 1-2 أسبوع)، محلات محلية (سبورتس زون، كير سبليمنتس)، جروبات فيسبوك (شيك الأصالة!). احذر: المكملات المضروبة كتير — شيك الهولوجرام، الختم، رقم الباتش. اشتري مقفول دايماً!' },
+    priority: 8,
+    domain: 'supplements',
+  },
+
+  // ── v25: Gym Etiquette Deep Dive ──────────────────────────────
+  {
+    keywords: ['gym etiquette', 'gym manners', 'gym rules', 'sharing equipment', 'gym towel', 'rerack weights', 'gym respect'],
+    keywordsAr: ['آداب الجيم', 'قوانين الجيم', 'مشاركة الأجهزة', 'منشفة الجيم', 'رجع الأوزان'],
+    keywordsFranco: ['adab el gym', '2awaneen el gym', 'mosharka el agheza', 'manshafet el gym', 'raga3 el awzan'],
+    stateId: 'QA_MENU',
+    response: { en: 'Gym etiquette (Golden rules): 1) RERACK your weights (always!) 2) Wipe equipment after use (carry a towel) 3) Don\'t hog machines during peak hours (share, work in) 4) Ask "how many sets left?" not just stand and stare 5) Don\'t give unsolicited advice 6) Keep phone calls outside 7) Don\'t block the mirror or dumbbell rack 8) 3 minutes max rest during busy hours 9) Respect others\' space and headphones = "don\'t talk to me" 10) In Egypt: greeting everyone is nice but keep it brief!', ar: 'آداب الجيم (القواعد الذهبية): 1) رجع الأوزان مكانها (دايماً!) 2) امسح الجهاز بعد الاستخدام (شيل منشفة) 3) متحجزش الأجهزة في وقت الزحمة (شارك، اتبادل) 4) اسأل "فاضلك كام سيت؟" متقفش تتفرج 5) متديش نصايح محدش طلبها 6) المكالمات برا 7) متقفش قدام المراية أو رف الدمبلز 8) راحة 3 دقايق ماكس وقت الزحمة 9) احترم مساحة الناس وسماعات = "متكلمنيش" 10) في مصر: السلام حلو بس خليه سريع!' },
+    priority: 7,
+    domain: 'root',
+  },
+
+  // ── v25: Training Splits Explained ────────────────────────────
+  {
+    keywords: ['training split', 'workout split', 'bro split', 'ppl', 'push pull legs', 'upper lower', 'full body vs split', 'how many days'],
+    keywordsAr: ['تقسيم التمرين', 'سبليت', 'برو سبليت', 'بوش بول ليج', 'اب لو', 'فول بادي', 'كام يوم اتمرن'],
+    keywordsFranco: ['ta2seem el tamreen', 'split', 'bro split', 'push pull legs', 'upper lower', 'full body', 'kam yom atmarren'],
+    stateId: 'WK_MENU',
+    response: { en: 'Training splits: 2-3 days → FULL BODY (best for beginners, hits everything 2-3x/week). 4 days → UPPER/LOWER (great balance, each muscle 2x/week). 5-6 days → PPL Push/Pull/Legs (advanced, each muscle 2x/week). BRO SPLIT (chest day, back day, etc.) → 1x/week per muscle, least optimal for growth. BEST for most people: PPL or Upper/Lower. Egyptian gyms: most are open daily, so PPL works great. Rest at least 1 day/week!', ar: 'تقسيمات التمرين: 2-3 أيام → فول بادي (الأفضل للمبتدئين، كل عضلة 2-3 مرات/أسبوع). 4 أيام → أب/لو (توازن ممتاز، كل عضلة مرتين/أسبوع). 5-6 أيام → PPL بوش/بول/ليج (متقدم، كل عضلة مرتين/أسبوع). برو سبليت (يوم صدر، يوم ظهر، إلخ) → مرة/أسبوع لكل عضلة، أقل فعالية للنمو. الأفضل لأغلب الناس: PPL أو أب/لو. جيمات مصر: أغلبها مفتوح يومياً، PPL بيشتغل كويس. ريح يوم واحد على الأقل/أسبوع!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v25: Water & Electrolyte Deep Dive ────────────────────────
+  {
+    keywords: ['how much water', 'water intake', 'electrolytes', 'dehydration signs', 'sodium workout', 'salt before workout', 'water during workout'],
+    keywordsAr: ['كمية المية', 'شرب مية', 'أملاح', 'علامات الجفاف', 'ملح قبل التمرين', 'مية أثناء التمرين'],
+    keywordsFranco: ['kameyet el maya', 'shorb maya', 'amla7', '3alamat el gafaf', 'mel7 2abl el tamreen', 'maya asna2 el tamreen'],
+    stateId: 'HP_MENU',
+    response: { en: 'Water & electrolytes: DAILY: 35ml per kg bodyweight (80kg = 2.8L minimum). ADD 500ml per hour of exercise. SIGNS of dehydration: dark urine, headache, fatigue, cramps. ELECTROLYTES: sodium (most important for gym), potassium, magnesium. Pre-workout hack: pinch of salt in water (cheap, effective). During workout: sip every 15min. In Egypt summer heat: add 1L extra daily. After workout: replace 150% of sweat lost. Urine color should be light yellow — not clear (over-hydrated) or dark!', ar: 'المية والأملاح: يومياً: 35مل لكل كج وزن (80كج = 2.8 لتر على الأقل). ضيف 500مل لكل ساعة تمرين. علامات الجفاف: بول غامق، صداع، تعب، تقلصات. أملاح: صوديوم (الأهم للجيم)، بوتاسيوم، ماغنسيوم. ترك قبل التمرين: رشة ملح في المية (رخيص وفعال). أثناء التمرين: رشفة كل 15 دقيقة. في حر مصر: ضيف لتر إضافي يومياً. بعد التمرين: عوض 150% من العرق. لون البول لازم يكون أصفر فاتح — مش شفاف (مية زيادة) أو غامق!' },
+    priority: 7,
+    domain: 'health',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
