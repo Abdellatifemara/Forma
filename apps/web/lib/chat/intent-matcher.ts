@@ -10344,6 +10344,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── Carb Sources Deep Dive ────────────────────────
+  {
+    keywords: ['rice', 'white rice', 'brown rice', 'rice macros', 'rice calories', 'rice bodybuilding', 'basmati', 'rice vs potato', 'how much rice'],
+    keywordsAr: ['أرز', 'أرز أبيض', 'أرز بني', 'سعرات الأرز', 'أرز للجيم', 'بسمتي', 'أرز ولا بطاطس', 'كام أرز'],
+    keywordsFranco: ['roz', 'orz', 'rice', 'roz abyad', 'roz boni', 'roz calories', 'basmati', 'kam roz'],
+    stateId: 'nutrition_rice_deep',
+    response: { en: 'Rice (100g cooked): White = 130 cal, 2.7g protein, 28g carbs. Brown = 112 cal, 2.3g protein, 24g carbs + 1.8g fiber. Basmati has lower glycemic index than short-grain. 1 cup cooked = ~200 cal. Brown rice has more fiber, vitamins, and minerals, but white rice digests faster (better post-workout). For bodybuilding: white rice post-workout, brown rice other meals. Egyptian tip: 1 cup rice + chicken breast = perfect gym meal.', ar: 'الأرز (١٠٠ جرام مطبوخ): أبيض = ١٣٠ سعرة، ٢.٧ جرام بروتين، ٢٨ جرام كارب. بني = ١١٢ سعرة + ١.٨ جرام ألياف. البسمتي مؤشره السكري أقل. كوب مطبوخ = ~٢٠٠ سعرة. الأرز البني فيه ألياف وفيتامينات أكتر، بس الأبيض بيتهضم أسرع (أفضل بعد التمرين). للبادي بلدنج: أبيض بعد التمرين، بني باقي اليوم.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['oats', 'oatmeal', 'oat macros', 'oat calories', 'overnight oats', 'oat protein', 'oat bodybuilding', 'rolled oats', 'instant oats'],
+    keywordsAr: ['شوفان', 'سعرات الشوفان', 'شوفان بروتين', 'شوفان للجيم', 'شوفان بالليل', 'شوفان بالحليب', 'شوفان صحي'],
+    keywordsFranco: ['shoufan', 'oats', 'oatmeal', 'shoufan calories', 'shoufan protein', 'shoufan lel gym'],
+    stateId: 'nutrition_oats_deep',
+    response: { en: 'Oats (100g dry): 389 cal, 16.9g protein, 66g carbs, 6.9g fat, 10.6g fiber. One of the BEST carb sources for fitness. High protein for a grain, tons of fiber, slow-digesting. Overnight oats: oats + Greek yogurt + milk + berries + honey = 400 cal, 25g protein breakfast. Pre-workout (1-2hr before): oats + banana + honey. Post-workout: oats + protein powder + peanut butter. Rolled oats > instant (less processed, lower GI).', ar: 'الشوفان (١٠٠ جرام جاف): ٣٨٩ سعرة، ١٦.٩ جرام بروتين، ٦٦ جرام كارب، ١٠.٦ جرام ألياف. من أفضل مصادر الكارب للفيتنس. بروتين عالي لحبوب، ألياف كتير، هضم بطيء. شوفان بالليل: شوفان + زبادي يوناني + لبن + فواكه + عسل = ٤٠٠ سعرة، ٢٥ جرام بروتين فطار. قبل التمرين: شوفان + موز + عسل.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['sweet potato', 'batata', 'sweet potato macros', 'sweet potato calories', 'sweet potato vs potato', 'baked sweet potato', 'yam'],
+    keywordsAr: ['بطاطا', 'بطاطا حلوة', 'سعرات البطاطا', 'بطاطا مشوية', 'بطاطا ولا أرز', 'بطاطا للجيم'],
+    keywordsFranco: ['batata', 'sweet potato', 'batata 7elwa', 'batata calories', 'batata mashweya', 'batata lel gym'],
+    stateId: 'nutrition_sweet_potato_deep',
+    response: { en: 'Sweet potato (100g baked): 90 cal, 2g protein, 21g carbs, 0.1g fat, 3.3g fiber. Regular potato (100g baked): 93 cal, 2.5g protein, 21g carbs, 0.1g fat. Nutritionally VERY similar! Sweet potato has more vitamin A and slightly more fiber. Regular potato has more potassium. Both are excellent gym carbs. Sweet potato is NOT magically healthier. Baked/boiled best — frying adds 200+ cal. 200g sweet potato + chicken = perfect pre-workout meal 2hr before.', ar: 'البطاطا الحلوة (١٠٠ جرام مشوية): ٩٠ سعرة، ٢ جرام بروتين، ٢١ جرام كارب، ٣.٣ جرام ألياف. البطاطس العادية (١٠٠ جرام): ٩٣ سعرة — متشابهين جداً! البطاطا فيها فيتامين A أكتر. البطاطس فيها بوتاسيوم أكتر. الاتنين كارب ممتاز للجيم. البطاطا مش سحرية. مشوية/مسلوقة الأفضل — القلي بيزود ٢٠٠+ سعرة.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['bread', 'baladi bread', 'fino bread', 'toast bread', 'whole wheat bread', 'bread macros', 'bread calories', 'bread bodybuilding', 'aish'],
+    keywordsAr: ['عيش', 'عيش بلدي', 'عيش فينو', 'عيش توست', 'عيش سن', 'سعرات العيش', 'عيش للجيم', 'خبز'],
+    keywordsFranco: ['3eish', 'aish', 'aish baladi', 'aish fino', 'aish toast', 'aish son', '3eish calories', 'khobz'],
+    stateId: 'nutrition_bread_deep',
+    response: { en: 'Egyptian bread comparison: Aish Baladi (1 loaf ~90g): 210 cal, 7g protein, 42g carbs, 1g fat — BEST choice, whole grain, high fiber. Aish Fino (1 roll ~60g): 170 cal, 5g protein, 30g carbs, 3g fat — refined, less fiber. Toast (2 slices): 140 cal, 4g protein, 26g carbs. Aish Shamsi: similar to baladi. For gym: baladi is king — cheap, nutritious, high fiber, pairs with everything. Avoid fino if cutting. Whole wheat toast is a good alternative.', ar: 'مقارنة العيش المصري: عيش بلدي (رغيف ~٩٠ جرام): ٢١٠ سعرة، ٧ جرام بروتين، ٤٢ جرام كارب — الأفضل، حبة كاملة، ألياف عالية. عيش فينو (واحدة ~٦٠ جرام): ١٧٠ سعرة — مكرر، ألياف أقل. توست (٢ شريحة): ١٤٠ سعرة. للجيم: البلدي هو الملك — رخيص، مغذي، ألياف عالية. تجنب الفينو في التنشيف. التوست السن بديل كويس.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['pasta', 'macaroni', 'spaghetti', 'pasta macros', 'pasta calories', 'pasta bodybuilding', 'whole wheat pasta', 'pasta protein'],
+    keywordsAr: ['مكرونة', 'باستا', 'سباغيتي', 'سعرات المكرونة', 'مكرونة للجيم', 'مكرونة سن', 'مكرونة بروتين'],
+    keywordsFranco: ['makarona', 'pasta', 'spaghetti', 'makarona calories', 'makarona lel gym', 'makarona son'],
+    stateId: 'nutrition_pasta_deep',
+    response: { en: 'Pasta (100g cooked): 131 cal, 5g protein, 25g carbs, 1.1g fat. Whole wheat pasta: 124 cal, 5.3g protein, 23.5g carbs + more fiber. Higher protein than rice! Al dente pasta has lower glycemic index than overcooked. Gym meal: 200g pasta + 150g chicken breast + tomato sauce = 550 cal, 45g protein. Post-workout: regular pasta (faster carbs). Other meals: whole wheat. Macaroni béchamel (Egyptian): ~400 cal per serving — the béchamel adds fat.', ar: 'المكرونة (١٠٠ جرام مطبوخة): ١٣١ سعرة، ٥ جرام بروتين، ٢٥ جرام كارب. مكرونة سن: ١٢٤ سعرة + ألياف أكتر. بروتين أعلى من الأرز! المكرونة "سنية" (al dente) مؤشرها السكري أقل. وجبة جيم: ٢٠٠ جرام مكرونة + ١٥٠ جرام صدر فرخة + صلصة = ٥٥٠ سعرة، ٤٥ جرام بروتين. مكرونة بشاميل: ~٤٠٠ سعرة — البشاميل بيزود الدهون.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
