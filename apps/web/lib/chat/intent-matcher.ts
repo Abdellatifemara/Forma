@@ -10485,6 +10485,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── Exercise Form Cues (Machines & Isolation) ────────────────────────
+  {
+    keywords: ['lat pulldown', 'lat pulldown form', 'lat pull down', 'pulldown technique', 'pulldown mistakes', 'wide grip pulldown', 'close grip pulldown'],
+    keywordsAr: ['لات بول داون', 'سحب علوي', 'تمرين الظهر العلوي', 'سحب أمامي', 'فورم السحب'],
+    keywordsFranco: ['lat pulldown', 'lat pull down', 'sa7b 3olwy', 'pulldown form', 'sa7b amami'],
+    stateId: 'exercise_lat_pulldown_form',
+    response: { en: 'Lat Pulldown form: 1) Grip slightly wider than shoulders, 2) Lean back 15-20° (not more!), 3) Pull the bar to upper chest, NOT behind neck, 4) Drive elbows DOWN and BACK — think "put elbows in back pockets", 5) Squeeze lats at bottom for 1 second, 6) Control the negative — don\'t let it fly up. Common mistakes: using too much momentum, pulling with biceps, leaning too far back. Wide grip = more width. Close grip/V-bar = more thickness.', ar: 'فورم اللات بول داون: ١) مسكة أوسع من الكتف شوية، ٢) ميل لورا ١٥-٢٠° بس، ٣) اسحب البار لأعلى الصدر — مش ورا الرقبة!، ٤) وجه الكوع لتحت ولورا — فكر "حط كوعك في جيب البنطلون"، ٥) اعصر اللاتس في الأسفل ثانية، ٦) تحكم في النزول — متسيبوش يطلع بسرعة. أخطاء شائعة: مومنتم زيادة، السحب بالباي.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['cable fly', 'cable crossover', 'cable fly form', 'chest fly', 'pec fly', 'cable chest', 'cable fly technique', 'fly exercise'],
+    keywordsAr: ['كابل فلاي', 'كروس أوفر', 'فلاي صدر', 'تمرين الصدر كابل', 'فورم الفلاي'],
+    keywordsFranco: ['cable fly', 'cable crossover', 'kros over', 'fly sadr', 'cable chest'],
+    stateId: 'exercise_cable_fly_form',
+    response: { en: 'Cable Fly form: 1) Set cables at shoulder height (mid fly) or high (high-to-low) or low (low-to-high), 2) Step forward slightly for stretch, 3) Slight bend in elbows — keep it LOCKED throughout, 4) Squeeze chest together like hugging a tree, 5) Don\'t let handles go behind shoulders (injury risk), 6) Slow negative, squeeze at peak. High-to-low = lower chest. Low-to-high = upper chest. Mid = overall chest. Use light-moderate weight, this is an isolation move.', ar: 'فورم الكابل فلاي: ١) الكابل على مستوى الكتف (أو عالي أو واطي حسب الجزء)، ٢) خطوة للأمام عشان التمدد، ٣) ثني خفيف في الكوع — خليه ثابت طول التكرار، ٤) اعصر الصدر كأنك بتحضن شجرة، ٥) متخليش الإيد تروح ورا الكتف (إصابة!)، ٦) نزول بطيء وعصرة في القمة. عالي لواطي = صدر سفلي. واطي لعالي = صدر علوي. وزن خفيف-متوسط.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['leg press', 'leg press form', 'leg press technique', 'leg press mistakes', 'leg press foot placement', '45 degree leg press', 'leg press depth'],
+    keywordsAr: ['ليج بريس', 'ضغط أرجل', 'فورم الليج بريس', 'تمرين رجل بالجهاز', 'وضع القدم في الليج بريس'],
+    keywordsFranco: ['leg press', 'leg bres', 'daght argl', 'leg press form', 'leg press foot'],
+    stateId: 'exercise_leg_press_form',
+    response: { en: 'Leg Press form: 1) Feet shoulder-width on platform, 2) Lower until knees at 90° — DON\'T let lower back round off the pad, 3) Push through WHOLE foot, not just toes, 4) Don\'t fully lock out knees at top, 5) Keep knees tracking over toes, not caving in. Foot placement: High = more glutes/hamstrings. Low = more quads. Wide = more inner thigh. Narrow = more outer quads. NEVER use the safety catches as a place to rest the weight uncontrolled.', ar: 'فورم الليج بريس: ١) القدمين بعرض الكتف على المنصة، ٢) انزل لحد ما الركبة ٩٠° — متخليش أسفل الظهر يرفع من المقعد!، ٣) ادفع بالقدم كلها مش الأصابع بس، ٤) متقفلش الركبة بالكامل فوق، ٥) خلي الركبة تتبع اتجاه الأصابع. وضع القدم: عالي = أرداف أكتر. واطي = كوادز أكتر. واسع = داخل الفخذ. ضيق = خارج الفخذ.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['leg curl', 'hamstring curl', 'lying leg curl', 'seated leg curl', 'leg curl form', 'hamstring exercise', 'leg curl technique'],
+    keywordsAr: ['ليج كيرل', 'تمرين هامسترنج', 'ثني الرجل', 'فورم الليج كيرل', 'تمرين خلفي'],
+    keywordsFranco: ['leg curl', 'hamstring curl', 'leg kerl', 'tany regl', 'hamstring tamrin'],
+    stateId: 'exercise_leg_curl_form',
+    response: { en: 'Leg Curl form (lying): 1) Pad just above ankles/Achilles, 2) Squeeze hamstrings to curl heels toward glutes, 3) Don\'t lift hips off the bench, 4) Slow negative — 3 seconds down, 5) Full range of motion. Seated leg curl: 1) Thigh pad snug on quads, 2) Back pad supporting you, 3) Curl heels under the seat. Seated hits hamstrings at a longer muscle length = better for growth. Do both variations if possible. 3-4 sets of 10-15 reps.', ar: 'فورم الليج كيرل (نايم): ١) الوسادة فوق الكاحل، ٢) اعصر الهامسترنج وارفع الكعب ناحية الأرداف، ٣) متفعش الحوض من البنش، ٤) نزول بطيء — ٣ ثواني، ٥) مدى حركة كامل. ليج كيرل قاعد: ١) الوسادة على الكوادز، ٢) ثني الكعب تحت الكرسي. القاعد بيشغل الهامسترنج بطول أكتر = نمو أفضل. اعمل الاتنين لو تقدر. ٣-٤ سيتات × ١٠-١٥ تكرار.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['calf raise', 'calf exercise', 'calf raises', 'standing calf raise', 'seated calf raise', 'calf training', 'bigger calves', 'calf form'],
+    keywordsAr: ['تمرين سمانة', 'رفع سمانة', 'سمانة أكبر', 'تمرين بطة الساق', 'فورم السمانة', 'سمانة واقف', 'سمانة قاعد'],
+    keywordsFranco: ['calf raise', 'tamrin samana', 'samana akbar', 'calf tamrin', 'samana wa2ef', 'samana 2a3ed'],
+    stateId: 'exercise_calf_raise_form',
+    response: { en: 'Calf Raise form: 1) Balls of feet on edge of platform, heels hanging, 2) Full stretch at bottom — heels below platform level, 3) Push up onto tiptoes, squeeze HARD at top for 2 seconds, 4) Slow negative (3 seconds down). Standing calf raise: targets gastrocnemius (bigger outer calf). Seated calf raise: targets soleus (deeper muscle, wider look). Do BOTH. Calves respond to HIGH reps: 15-25 reps, 4-6 sets, 3x/week minimum. Genetics play a role but most people just don\'t train them enough.', ar: 'فورم رفع السمانة: ١) مقدمة القدم على حافة المنصة، الكعب معلق، ٢) تمدد كامل في الأسفل — الكعب تحت مستوى المنصة، ٣) ادفع لفوق على الأصابع، اعصر بقوة فوق ٢ ثانية، ٤) نزول بطيء (٣ ثواني). واقف: بيستهدف الجاستروك (الجزء الخارجي الكبير). قاعد: بيستهدف السوليوس (العضلة العميقة). اعمل الاتنين. السمانة بتستجيب لتكرارات عالية: ١٥-٢٥ تكرار، ٤-٦ سيتات، ٣ مرات/أسبوع.' },
+    priority: 6,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
