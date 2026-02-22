@@ -1,4 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { PrismaService } from '../prisma/prisma.service';
 import { AiService } from './ai.service';
 import { Prisma, SubscriptionTier } from '@prisma/client';
@@ -56,6 +57,65 @@ const PROGRAM_PATTERNS = /(?:give me|i (?:want|need)|suggest|recommend|create|ma
 
 // Supplement patterns
 const SUPPLEMENT_PATTERNS = /(?:supplement|creatine|protein powder|whey|bcaa|pre.?workout|مكمل|كرياتين|واي بروتين|بي سي ايه)/i;
+
+// Navigation / action patterns — handle locally, don't send to GPT
+const NAVIGATION_PATTERNS: Array<{ pattern: RegExp; responseEn: string; responseAr: string }> = [
+  {
+    pattern: /(?:change|edit|update)\s+(?:my\s+)?(?:name|profile|info|picture|photo|avatar)|غير\s*(?:اسمي|صورتي|بياناتي)|عايز\s*(?:اغير|اعدل)\s*(?:اسمي|صورتي)/i,
+    responseEn: '📝 To change your name or profile, go to **[Settings](/settings)** → Profile section. You can update your name, photo, and other info there.',
+    responseAr: '📝 عشان تغير اسمك أو بياناتك، روح **[الإعدادات](/settings)** → قسم البروفايل. تقدر تعدل اسمك وصورتك وباقي البيانات هناك.',
+  },
+  {
+    pattern: /^(?:settings?|preferences?|الإعدادات|اعدادات|ضبط)[\s!?.]*$/i,
+    responseEn: '⚙️ Head to **[Settings](/settings)** to update your profile, language, workout preferences, and more.',
+    responseAr: '⚙️ روح **[الإعدادات](/settings)** عشان تعدل بروفايلك واللغة وتفضيلات التمارين.',
+  },
+  {
+    pattern: /^(?:workouts?|my\s*workouts?|تمارين|تمريناتي|التمارين)[\s!?.]*$/i,
+    responseEn: '🏋️ Check out your **[Workouts](/workouts)** page to view, create, or log workouts.',
+    responseAr: '🏋️ روح صفحة **[التمارين](/workouts)** عشان تشوف أو تعمل أو تسجل تمارينك.',
+  },
+  {
+    pattern: /^(?:nutrition|food|meals?|أكل|تغذية|وجبات|الأكل|التغذية)[\s!?.]*$/i,
+    responseEn: '🥗 Your **[Nutrition](/nutrition)** page has meal tracking, food search, and daily macros.',
+    responseAr: '🥗 صفحة **[التغذية](/nutrition)** فيها تتبع الوجبات والبحث عن أكل والماكروز اليومية.',
+  },
+  {
+    pattern: /^(?:progress|my\s*progress|تقدم|تقدمي|التقدم)[\s!?.]*$/i,
+    responseEn: '📊 Track your journey on the **[Progress](/progress)** page — weight, measurements, and goals.',
+    responseAr: '📊 تابع رحلتك في صفحة **[التقدم](/progress)** — الوزن والقياسات والأهداف.',
+  },
+  {
+    pattern: /^(?:dashboard|home|الرئيسية|هوم|الداشبورد)[\s!?.]*$/i,
+    responseEn: '🏠 Your **[Dashboard](/dashboard)** shows today\'s summary — workouts, nutrition, and quick actions.',
+    responseAr: '🏠 **[الداشبورد](/dashboard)** بيوريك ملخص اليوم — تمارين وتغذية وأكشنز سريعة.',
+  },
+  {
+    pattern: /^(?:achievements?|badges?|إنجازات|انجازاتي|الإنجازات)[\s!?.]*$/i,
+    responseEn: '🏆 Check your **[Achievements](/achievements)** to see badges and milestones you\'ve unlocked!',
+    responseAr: '🏆 شوف **[إنجازاتك](/achievements)** عشان تشوف الشارات والمراحل اللي فتحتها!',
+  },
+  {
+    pattern: /(?:change|switch)\s+(?:language|lang|to\s+(?:arabic|english))|غير\s*(?:اللغة|لغة)|عايز\s*(?:انجليزي|عربي)/i,
+    responseEn: '🌍 Go to **[Settings](/settings)** → Preferences tab to switch your language.',
+    responseAr: '🌍 روح **[الإعدادات](/settings)** → التفضيلات عشان تغير اللغة.',
+  },
+  {
+    pattern: /(?:log\s*(?:out|off)|sign\s*out|خروج|logout|سجل\s*خروج)/i,
+    responseEn: '👋 To log out, go to **[Settings](/settings)** and scroll to the bottom.',
+    responseAr: '👋 عشان تسجل خروج، روح **[الإعدادات](/settings)** وانزل لتحت.',
+  },
+  {
+    pattern: /(?:subscription|plan|pricing|upgrade|باقة|اشتراك|الباقة|ترقية|سعر)/i,
+    responseEn: '💎 Manage your subscription in **[Settings](/settings)** → Account tab. Your current plan and upgrade options are there.',
+    responseAr: '💎 تقدر تدير اشتراكك من **[الإعدادات](/settings)** → حسابي. هتلاقي باقتك الحالية وخيارات الترقية.',
+  },
+  {
+    pattern: /(?:water|hydration|شرب|ماية|مية|هيدريشن)/i,
+    responseEn: '💧 Track your water intake on the **[Nutrition](/nutrition)** page — tap the water glasses to log!',
+    responseAr: '💧 تابع شرب المية من صفحة **[التغذية](/nutrition)** — دوس على الكبايات عشان تسجل!',
+  },
+];
 
 const GREETING_RESPONSES_EN = [
   "Hey! 💪 What's up? Need help with workouts, nutrition, or anything fitness?",
@@ -120,6 +180,7 @@ export class ChatPipelineService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly aiService: AiService,
+    private readonly configService: ConfigService,
   ) {}
 
   /**
@@ -142,6 +203,13 @@ export class ChatPipelineService {
     if (localResponse) {
       this.logger.debug(`Local match for user ${userId}: ${localResponse.source}`);
       return localResponse;
+    }
+
+    // ── Step 1b: Navigation / action patterns (free, instant) ──
+    for (const nav of NAVIGATION_PATTERNS) {
+      if (nav.pattern.test(trimmed)) {
+        return { response: isAr ? nav.responseAr : nav.responseEn, source: 'local' };
+      }
     }
 
     // ── Load user context for DB searches ──
@@ -635,6 +703,13 @@ export class ChatPipelineService {
   ): Promise<ChatResponse> {
     const isAr = request.language === 'ar';
 
+    // If OpenAI not configured, fall back to curated response instead of crashing
+    const apiKey = this.configService?.get<string>('OPENAI_API_KEY');
+    if (!apiKey) {
+      this.logger.warn('OPENAI_API_KEY not configured — falling back to curated response');
+      return this.buildCuratedResponse(request.message, userCtx, isAr);
+    }
+
     // Build rich system prompt with user context
     const systemPrompt = this.buildSystemPrompt(userCtx, isAr);
 
@@ -660,13 +735,9 @@ export class ChatPipelineService {
         source: 'ai',
       };
     } catch (error) {
-      this.logger.error('GPT call failed:', error);
-      return {
-        response: isAr
-          ? 'عذراً، في مشكلة تقنية دلوقتي. جرب تاني كمان شوية.'
-          : 'Sorry, there\'s a technical issue right now. Please try again in a moment.',
-        source: 'ai',
-      };
+      this.logger.error('GPT call failed — falling back to curated response');
+      // Fall back to curated response instead of showing error
+      return this.buildCuratedResponse(request.message, userCtx, isAr);
     }
   }
 
