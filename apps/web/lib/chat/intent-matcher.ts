@@ -7117,6 +7117,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v62: Egyptian Protein Ranked + BB Competition + Soreness + Frequency + Warm-Up ──
+  {
+    keywords: ['egyptian protein sources', 'cheap protein egypt', 'best protein egypt', 'protein sources egypt', 'budget protein egypt', 'egyptian protein food', 'affordable protein'],
+    keywordsAr: ['مصادر بروتين مصرية', 'بروتين رخيص مصر', 'أفضل بروتين مصر', 'بروتين ميزانية مصر'],
+    keywordsFranco: ['egyptian protein', 'cheap protein egypt', 'budget protein masr'],
+    stateId: 'info_egyptian_protein_ranked',
+    response: { en: 'Egyptian Protein Sources — Ranked by Cost-Effectiveness: TIER 1 (CHEAPEST per gram protein): 1) Eggs — ~1.5 LE/egg, 6g protein each. 10 eggs = 60g protein for 15 LE. THE KING of budget protein! 2) Ful Medames (Fava Beans) — ~3-5 LE/plate, 18-20g protein. 3) Lentils (Ads) — ~15 LE/kg dry, 25g protein per cup cooked. 4) Canned Tuna — ~15-20 LE/can, 25-30g protein. 5) White Cheese (Gibna Beida) — ~40-50 LE/kg, 20g protein per 100g. TIER 2 (MODERATE): 6) Chicken Breast — ~80-100 LE/kg, 31g protein per 100g. Buy whole chicken cheaper, debone yourself. 7) Milk (Laban) — ~15-20 LE/liter, 8g protein per cup. 8) Yogurt (Zabadi) — ~5-8 LE/cup, 10g protein. 9) Liver (Kebda) — ~60-80 LE/kg, 26g protein, rich in iron/B12. TIER 3 (PREMIUM): 10) Beef — ~200-300 LE/kg. 11) Fish — ~80-150 LE/kg. 12) Whey Protein — ~2000-3500 LE/5lb. DAILY BUDGET PLAN: 6 eggs (36g) + ful plate (18g) + chicken breast 200g (62g) + milk 2 cups (16g) + white cheese 100g (20g) = 152g protein for ~60-80 LE!', ar: 'مصادر البروتين المصرية — مرتبة حسب التكلفة: مستوى 1 (الأرخص): 1) بيض — ~1.5 ج/بيضة، 6ج بروتين. 10 بيضات = 60ج بروتين بـ15 ج. ملك البروتين الرخيص! 2) فول — ~3-5 ج/طبق، 18-20ج بروتين. 3) عدس — ~15 ج/كيلو جاف، 25ج بروتين/كوب. 4) تونة — ~15-20 ج/علبة، 25-30ج بروتين. 5) جبنة بيضا — ~40-50 ج/كج، 20ج بروتين/100ج. مستوى 2: 6) صدور فراخ — ~80-100 ج/كج، 31ج/100ج. 7) لبن — ~15-20 ج/لتر. 8) زبادي — ~5-8 ج/كوب. 9) كبدة — ~60-80 ج/كج. خطة يومية: 6 بيضات (36ج) + فول (18ج) + صدر فراخ 200ج (62ج) + لبن 2 كوب (16ج) + جبنة بيضا 100ج (20ج) = 152ج بروتين بـ60-80 ج بس!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['bodybuilding competition egypt', 'physique competition', 'first competition', 'bodybuilding show', 'contest prep egypt', 'ifbb egypt', 'nabba egypt', 'stage ready'],
+    keywordsAr: ['مسابقة كمال أجسام مصر', 'بطولة فيزيك', 'أول بطولة', 'تحضير بطولة', 'IFBB مصر'],
+    keywordsFranco: ['bodybuilding competition egypt', 'physique competition', 'contest prep', 'ifbb egypt'],
+    stateId: 'info_bb_competition_egypt',
+    response: { en: 'Bodybuilding Competition in Egypt — Complete Guide: FEDERATIONS: IFBB Egypt (International Federation of Bodybuilding) — the biggest, most recognized. NABBA — another option. Egyptian Bodybuilding Federation — local events. CATEGORIES: Classic Physique — old-school aesthetics, weight cap based on height. Men\'s Physique — board shorts, focus on upper body. Bodybuilding — maximum size and conditioning. Bikini/Wellness (Women) — growing category in Egypt. PREP TIMELINE: 16-24 weeks of dieting. Start at ~15% body fat (men) to end at 5-7%. Diet progressively (reduce ~250 cal every 2-3 weeks). Increase cardio gradually (30-60 min daily by show day). Peak week: carb load, water manipulation. COSTS: Registration: 500-1500 LE per category. Tanning: 1000-2000 LE. Posing trunks/suit: 500-2000 LE. Competition diet: significantly higher food costs. Coaching (optional): 2000-5000 LE/month. ADVICE: Do NOT compete your first year training. Minimum 2-3 years of serious training. Hire an experienced prep coach. Your first show is a learning experience — enjoy it!', ar: 'بطولة كمال أجسام في مصر: الاتحادات: IFBB مصر — الأكبر والأكتر اعتراف. NABBA. اتحاد كمال الأجسام المصري. الفئات: كلاسيك فيزيك — جماليات كلاسيكية. مينز فيزيك — شورت، جسم علوي. بودي بيلدنج — أقصى حجم. بيكيني/ويلنس (سيدات). مدة التحضير: 16-24 أسبوع دايت. ابدأ ~15% دهون (رجال) لتوصل 5-7%. التكاليف: تسجيل: 500-1500 ج. تان: 1000-2000 ج. بوزنج: 500-2000 ج. كوتشنج: 2000-5000 ج/شهر. نصيحة: ما تنافسش أول سنة تدريب. أقل 2-3 سنين تدريب جاد. اتعاقد مع كوتش تحضير.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['muscle soreness guide', 'doms complete', 'soreness good or bad', 'no soreness no growth', 'too sore to train', 'soreness after workout', 'reduce muscle soreness'],
+    keywordsAr: ['دليل ألم العضلات', 'DOMS كامل', 'ألم كويس ولا وحش', 'مفيش ألم مفيش نمو', 'ألم زيادة'],
+    keywordsFranco: ['muscle soreness', 'doms', 'soreness good or bad', 'too sore', 'reduce soreness'],
+    stateId: 'info_muscle_soreness_complete',
+    response: { en: 'Complete Muscle Soreness Guide: DOMS (Delayed Onset Muscle Soreness): Peaks 24-72 hours after exercise. Caused by micro-tears in muscle fibers during eccentric (lowering) movements. IS SORENESS = GOOD WORKOUT? NO! Soreness is NOT an indicator of growth. You can build muscle WITHOUT getting sore. Soreness means you did something your body is not used to — not that the workout was better. WHEN SORENESS IS NORMAL: New exercises, returning after a break, increasing weight or volume, eccentric-focused training. HOW TO REDUCE: Light movement (walk, swim — active recovery), foam rolling, proper warm-up, adequate sleep (7-9 hours), stay hydrated, protein intake (1.6-2.2g/kg), cold shower or contrast therapy. WHEN TO WORRY: Sharp pain (not dull ache), pain that gets worse over days (should improve), pain in joints (not muscles), one-sided pain in unusual areas, very dark urine after training (possible rhabdomyolysis — seek medical help!). CAN YOU TRAIN WHILE SORE? YES, if it is mild-moderate DOMS. Light training can actually help. DO NOT train if pain is sharp, joint-related, or gets worse during exercise.', ar: 'دليل ألم العضلات الكامل: DOMS: بيوصل الذروة 24-72 ساعة بعد التمرين. بسبب تمزقات دقيقة في ألياف العضل. الألم = تمرين كويس؟ لا! الألم مش مؤشر على النمو. ممكن تبني عضل من غير ألم. إزاي تقلل: حركة خفيفة، فوم رولنج، إحماء صح، نوم كافي (7-9 ساعات)، ترطيب، بروتين كافي. امتى تقلق: ألم حاد (مش خفيف)، ألم بيزيد مع الأيام، ألم في المفاصل، بول غامق جداً بعد التمرين (ممكن رابدوميوليسيس — روح دكتور!). تقدر تتمرن وانت مؤلم؟ أيوا لو DOMS خفيف-متوسط. ما تتمرنش لو الألم حاد أو في المفاصل.' },
+    priority: 7,
+    domain: 'recovery',
+  },
+  {
+    keywords: ['training frequency body part', 'how often train chest', 'how often train legs', 'how often train back', 'muscle group frequency', 'train once or twice week', 'bro split vs ppl', 'optimal frequency'],
+    keywordsAr: ['تكرار تدريب عضلة', 'كم مرة أدرب صدر', 'كم مرة أدرب رجل', 'كم مرة أدرب ظهر', 'مرة ولا مرتين أسبوع'],
+    keywordsFranco: ['training frequency', 'how often train', 'once or twice week', 'bro split vs ppl'],
+    stateId: 'info_training_frequency_bodypart',
+    response: { en: 'Training Frequency Per Body Part: THE RESEARCH: Training each muscle 2x/week is SUPERIOR to 1x/week for muscle growth (meta-analysis by Schoenfeld). However, 3x/week shows diminishing returns for most people. OPTIMAL FREQUENCY BY MUSCLE: LARGE MUSCLES (Chest, Back, Legs): 2x/week — they can handle more volume and need more recovery. MEDIUM MUSCLES (Shoulders, Arms): 2-3x/week — they recover faster and can be trained more often. SMALL MUSCLES (Calves, Forearms, Abs): 3-4x/week — very fast recovery, need frequent stimulation. HOW SPLITS DELIVER THIS: PPL (Push/Pull/Legs) 6 days: Everything 2x/week. UPPER/LOWER 4 days: Everything 2x/week. BRO SPLIT 5 days: Everything 1x/week (less optimal but higher volume per session). FULL BODY 3 days: Everything 3x/week (lower volume per session). BEST FOR BEGINNERS: Full body 3x/week. BEST FOR INTERMEDIATE: Upper/Lower or PPL. BEST FOR ADVANCED: PPL or specialized split. THE KEY: Total weekly VOLUME matters more than frequency. 10 sets/week per muscle is the minimum for growth. 15-20 sets is optimal for most people.', ar: 'تكرار التدريب لكل عضلة: البحث: تدريب كل عضلة 2×/أسبوع أفضل من 1×/أسبوع لنمو العضل. التكرار الأمثل: عضلات كبيرة (صدر، ظهر، رجل): 2×/أسبوع. عضلات متوسطة (كتف، ذراع): 2-3×/أسبوع. عضلات صغيرة (سمانة، ساعد، بطن): 3-4×/أسبوع. السبليتات: PPL 6 أيام: كل حاجة 2×/أسبوع. أبر/لور 4 أيام: كل حاجة 2×/أسبوع. برو سبليت 5 أيام: كل حاجة 1×/أسبوع. فول بودي 3 أيام: كل حاجة 3×/أسبوع. للمبتدئين: فول بودي 3×. للمتوسط: أبر/لور أو PPL. الحجم الأسبوعي أهم من التكرار. 10-20 مجموعة/أسبوع/عضلة.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['complete warm up', 'warm up routine', 'dynamic warm up', 'how to warm up', 'warm up before lifting', 'warm up sets', 'general warm up', 'specific warm up'],
+    keywordsAr: ['إحماء كامل', 'روتين إحماء', 'إحماء ديناميكي', 'إزاي تسخن', 'إحماء قبل الحديد'],
+    keywordsFranco: ['warm up routine', 'dynamic warm up', 'how to warm up', 'warm up before lifting'],
+    stateId: 'info_complete_warmup',
+    response: { en: 'Complete Warm-Up Routine (10 minutes): PHASE 1 — General Warm-Up (3-5 min): Get blood flowing. Light cardio: jump rope, jogging in place, jumping jacks, rowing machine. Heart rate should increase, light sweat. PHASE 2 — Dynamic Stretching (3-5 min): Arm circles (10 each direction). Leg swings (front/back, side/side — 10 each). Hip circles (10 each direction). Walking lunges (10 total). Inchworms (5 reps). World\'s greatest stretch (3 each side). Cat-cow (10 reps). PHASE 3 — Movement-Specific Warm-Up (2-3 min): Before squats: bodyweight squats, goblet squat with light weight. Before bench: push-ups, band pull-aparts, shoulder dislocates. Before deadlift: hip hinges, RDL with empty bar, glute bridges. WARM-UP SETS: Work up to working weight gradually. Example for 100kg squat: Empty bar x10, 40kg x8, 60kg x5, 80kg x3, then working sets at 100kg. NEVER SKIP WARM-UP! Injury risk increases 2-3x when skipping warm-up. 10 minutes of warm-up saves months of recovery from injury.', ar: 'روتين إحماء كامل (10 دقائق): المرحلة 1 — إحماء عام (3-5 دق): تدفق الدم. كارديو خفيف: نط حبل، جري مكان، جامبنج جاكس. المرحلة 2 — إطالة ديناميكية (3-5 دق): دوائر ذراع (10 كل اتجاه)، أرجحة رجل (10 كل اتجاه)، دوائر حوض، لنجز (10)، إنشوورمز (5)، world\'s greatest stretch (3 كل جنب). المرحلة 3 — إحماء خاص بالحركة (2-3 دق): قبل سكوات: سكوات بودي ويت. قبل بنش: بوش أبز، باند بول أبارتس. قبل ديدلفت: هيب هينج، RDL ببار فاضي. مجموعات إحماء: ادّي بالتدريج. مثال سكوات 100كج: بار فاضي ×10، 40 ×8، 60 ×5، 80 ×3، بعدين مجموعات الشغل. ما تسيبش الإحماء أبداً! 10 دقائق إحماء بتوفر شهور ريكفري من إصابة.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
