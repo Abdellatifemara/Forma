@@ -6734,6 +6734,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v54: Box Squat + Front Squat + Zercher + Leg Press Feet + Pendlay Row ──
+  {
+    keywords: ['box squat', 'squat to box', 'box squat technique', 'squat box height', 'pause squat box'],
+    keywordsAr: ['بوكس سكوات', 'سكوات على البوكس', 'سكوات صندوق'],
+    keywordsFranco: ['box squat', 'box skwat', 'squat box'],
+    stateId: 'info_box_squat',
+    response: { en: 'Box Squat Guide: Used by Westside Barbell — the strongest gym in the world! WHY BOX SQUAT: Teaches proper squat depth (consistent every rep), breaks up the eccentric/concentric chain (builds explosive power), reduces knee stress, teaches you to sit BACK. HOW TO: 1) Set box to parallel or slightly below. 2) Squat down slowly (2-3 seconds), SIT on box completely (brief pause). 3) Explode up without rocking forward. 4) Stance should be wider than regular squat. COMMON MISTAKES: Plopping onto box (control the descent!), rocking forward to stand (use glutes/hamstrings), box too high (defeats the purpose). PROGRAMMING: Replace back squat 1x/week. Work up to heavy sets of 3-5. Great for powerlifters building squat strength out of the hole. VARIATIONS: Low box (below parallel) for extra ROM, high box for quarter squat power work, foam box for beginners.', ar: 'دليل بوكس سكوات: بيستخدمه ويستسايد باربل — أقوى جيم في العالم! ليه بوكس سكوات: بيعلّم عمق سكوات مظبوط، بيكسر سلسلة الإيسنتريك/كونسنتريك (قوة انفجارية)، بيقلل ضغط الركبة. الطريقة: 1) البوكس على مستوى الباراليل. 2) انزل ببطء، اقعد كامل (وقفة قصيرة). 3) انفجر لفوق من غير تأرجح. 4) وقفة أوسع. أخطاء: السقوط على البوكس، التأرجح للأمام. البرنامج: بدّل باك سكوات مرة/أسبوع، مجموعات تقيلة 3-5 عدات.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['front squat', 'front squat technique', 'front squat grip', 'front rack', 'clean grip squat', 'cross arm squat', 'front squat vs back squat', 'front squat wrist pain'],
+    keywordsAr: ['فرونت سكوات', 'سكوات أمامي', 'سكوات فرونت', 'قبضة فرونت سكوات'],
+    keywordsFranco: ['front squat', 'front skwat', 'clean grip squat'],
+    stateId: 'info_front_squat',
+    response: { en: 'Front Squat Mastery: Hits quads 20% MORE than back squat! GRIP OPTIONS: 1) Clean Grip (best) — fingers under bar, elbows HIGH. Requires wrist mobility. 2) Cross-Arm Grip — easier but less stable. 3) Strap-Assisted — loop straps around bar, hold straps. Great for wrist issues. KEY TECHNIQUE: Elbows must stay HIGH — imagine pushing ceiling with elbows. The moment elbows drop, bar rolls forward. Keep torso very upright. BENEFITS OVER BACK SQUAT: More quad dominant, forces better posture, easier on lower back, builds core strength, essential for Olympic lifts. PROGRAMMING: 3-5 sets of 3-6 reps. Front squat should be ~85% of back squat. MOBILITY WORK: Wrist stretches, thoracic spine extensions, front rack holds with empty bar.', ar: 'فرونت سكوات: بيضرب الكواد 20% أكتر من باك سكوات! القبضات: 1) كلين جريب (الأفضل) — صوابع تحت البار، كوع عالي. 2) كروس آرم — أسهل بس أقل ثبات. 3) بالأشرطة — لو عندك مشاكل رسغ. التكنيك: الكوع لازم يفضل عالي. الجذع معتدل جداً. الفوائد: كواد أكتر، وقفة أحسن، أسهل عالضهر السفلي، بيبني كور. البرنامج: 3-5 × 3-6 عدات. ~85% من الباك سكوات.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['zercher squat', 'zercher carry', 'zercher deadlift', 'zercher hold', 'elbow squat'],
+    keywordsAr: ['زيرشر سكوات', 'سكوات بالكوع', 'زيرتشر'],
+    keywordsFranco: ['zercher', 'zercher squat', 'zercher carry'],
+    stateId: 'info_zercher_squat',
+    response: { en: 'Zercher Squat — The Forgotten Strength Builder: Bar sits in the crook of your elbows! HOW TO: Pick bar off low pins or deadlift it up, cradle in elbow crease, squat down. Keep torso VERY upright, elbows close to body. WHY DO IT: Incredible core activation (more than front squat), builds massive upper back, teaches perfect squat mechanics, no spotter needed. Great for people with shoulder problems who cannot hold a bar on their back. PAIN MANAGEMENT: Yes, it hurts on your elbows at first! Use a bar pad or wrap a towel. You get used to it in 2-3 sessions. PROGRAMMING: 3-4 sets of 5-8 reps. Start light. VARIATIONS: Zercher Carry (walk with bar in elbow crease — insane core), Zercher Deadlift (pick from floor — brutal).', ar: 'زيرشر سكوات — بناء القوة المنسي: البار في ثنية الكوع! الطريقة: ارفع البار من بنز منخفض، احتضنه في الكوع، واعمل سكوات. ليه: تنشيط كور مذهل، ضهر علوي ضخم، ميكانيكس سكوات مثالية. ممتاز للناس اللي عندها مشاكل كتف. الألم: أيوا بيوجع! استخدم باد أو فوطة. بتتعود في 2-3 جلسات. البرنامج: 3-4 × 5-8 عدات.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['leg press foot placement', 'leg press feet position', 'leg press high feet', 'leg press low feet', 'leg press narrow stance', 'leg press wide stance', 'leg press tips'],
+    keywordsAr: ['وضع القدم ليج برس', 'قدم ليج برس', 'ليج برس وقفة'],
+    keywordsFranco: ['leg press feet', 'leg press foot', 'leg press stance'],
+    stateId: 'info_leg_press_foot_placement',
+    response: { en: 'Leg Press Foot Placement Guide — DIFFERENT POSITIONS HIT DIFFERENT MUSCLES: HIGH & WIDE: More glutes and hamstrings. Push through heels. STANDARD (middle, shoulder width): Balanced quad/glute/hamstring. The all-rounder. LOW & NARROW: Maximum quad activation! Push through toes. Caution: more knee stress. WIDE STANCE (sumo): Inner thighs (adductors) + glutes. SINGLE LEG: Fix imbalances. SAFETY TIPS: Never let knees cave inward! Always keep lower back pressed against pad. Do NOT lock out knees at top. Never go so deep that lower back lifts off pad. WEIGHT GUIDE: Most people can leg press 2-3x what they squat. But ego lifting is the #1 gym fail — use full range of motion with moderate weight!', ar: 'وضع القدم على الليج برس — مواضع مختلفة بتضرب عضلات مختلفة: عالي وواسع: جلوت وهامسترنج. ادفع من الكعب. قياسي: كواد/جلوت/هامسترنج متوازن. منخفض وضيق: كواد ماكسيمم! ادفع من صوابع الرجل. واسع (سومو): فخذ داخلي + جلوت. رجل واحدة: إصلاح عدم التوازن. أمان: الركبة ما تميلش للداخل! الضهر ملصوق بالباد. ما تقفلش الركبة فوق.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['pendlay row', 'strict row', 'barbell row from floor', 'dead stop row', 'pendlay vs bent over row', 'glenn pendlay'],
+    keywordsAr: ['بندلاي رو', 'رو من الأرض', 'ستريكت رو', 'ديد ستوب رو'],
+    keywordsFranco: ['pendlay row', 'pendlay', 'strict row', 'dead stop row'],
+    stateId: 'info_pendlay_row',
+    response: { en: 'Pendlay Row — The Strict Barbell Row: Named after Glenn Pendlay. HOW IT DIFFERS FROM BENT-OVER ROW: Bar starts and returns to FLOOR every rep (dead stop). Torso stays PARALLEL to floor (no cheating). Each rep starts from dead stop (no momentum). TECHNIQUE: 1) Deadlift position, grip wider than shoulder width. 2) Back flat, torso parallel. 3) Explosively row to lower chest. 4) Lower bar to floor. 5) Reset, repeat. No bouncing! BENEFITS: Eliminates momentum, builds explosive pulling power, better for back thickness, great carryover to deadlift. PROGRAMMING: 3-5 sets of 3-6 reps. Use as primary back movement on strength days. Overhand grip always. Go heavy!', ar: 'بندلاي رو — الباربل رو الصارم: مسمي على جلين بندلاي. الفرق: البار بيبدأ ويرجع الأرض كل عدة. الجذع موازي للأرض. كل عدة من ديد ستوب. التكنيك: وضع ديدلفت، قبضة أوسع، ضهر مفرود، ارو بقوة. الفوائد: بيلغي المومنتم، بيبني قوة سحب انفجارية، أفضل لسمك الظهر. البرنامج: 3-5 × 3-6 عدات. أوفرهاند دايماً. روح تقيل!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
