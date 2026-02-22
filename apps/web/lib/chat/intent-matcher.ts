@@ -4896,6 +4896,94 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'root',
   },
 
+  // ── v28: Ab Training Deep Dive ─────────────────────────────
+  {
+    keywords: ['ab workout', 'abs exercises', 'how to get abs', 'six pack workout', 'visible abs', 'lower abs', 'core workout'],
+    keywordsAr: ['تمرين بطن', 'تمارين بطن', 'ازاي ابان سكس باك', 'تمرين سكس باك', 'بطن سفلي', 'تمرين كور'],
+    keywordsFranco: ['tamreen batn', 'tamareen batn', 'ezay aban six pack', 'tamreen six pack', 'batn sofli', 'tamreen core'],
+    stateId: 'WK_MENU',
+    response: { en: 'Abs deep dive: TRUTH: Abs are made in the kitchen! You need ~12-15% body fat (men) or ~18-22% (women) for visible abs. EXERCISES: Upper abs: crunches, cable crunches. Lower abs: hanging leg raises, reverse crunches. Obliques: Russian twists, side planks, woodchops. PROGRAM: 3-4 ab exercises, 3x15-20, 3x/week. KEY: 1) You CANNOT spot reduce belly fat 2) Heavy compounds (squats, deadlifts) train core too 3) Diet is 80% of getting abs visible 4) Weighted ab work builds thicker abs 5) Plank variations > 100 crunches!', ar: 'تمرين بطن متعمق: الحقيقة: البطن بتتعمل في المطبخ! محتاج ~12-15% دهون (رجال) أو ~18-22% (ستات) لبطن واضح. التمارين: بطن علوي: كرانش، كابل كرانش. بطن سفلي: رفع رجل معلق، ريفرس كرانش. أوبليكس: روشن تويست، سايد بلانك، وودتشوب. البرنامج: 3-4 تمارين، 3×15-20، 3 مرات/أسبوع. المفتاح: 1) مش هتخسر دهون من البطن بس 2) التمارين المركبة (سكوات، ديدلفت) بتمرن الكور برضو 3) الأكل 80% من إظهار البطن 4) بطن بوزن بيبني عضلات أسمك 5) بلانك > 100 كرانش!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v28: Meal Frequency & Timing ──────────────────────────────
+  {
+    keywords: ['how many meals', 'meal frequency', 'how often eat', 'eating schedule', 'meal timing', 'eat every 3 hours', 'number of meals'],
+    keywordsAr: ['كام وجبة', 'عدد الوجبات', 'كل كام ساعة', 'جدول الأكل', 'توقيت الوجبات'],
+    keywordsFranco: ['kam wagba', '3adad el wagabat', 'kol kam sa3a', 'gadwal el akl', 'taw2eet el wagabat'],
+    stateId: 'NT_MENU',
+    response: { en: 'Meal frequency myths vs facts: MYTH: "You must eat every 3 hours." FACT: Total daily intake matters more than frequency. BUT: For muscle building, 4-5 meals works better (30-50g protein each). For fat loss: whatever you can sustain (3-6 meals). Intermittent fasting: fine for fat loss, not ideal for max muscle growth. PRACTICAL: Most people do well with 3 meals + 1-2 snacks. Pre and post workout meals matter most. Don\'t overthink it — consistency beats perfection!', ar: 'خرافات وحقائق تكرار الوجبات: خرافة: "لازم تاكل كل 3 ساعات." حقيقة: الإجمالي اليومي أهم من التكرار. بس: لبناء العضل، 4-5 وجبات أفضل (30-50ج بروتين لكل). لخسارة الدهون: أي حاجة تقدر تلتزم بيها (3-6 وجبات). صيام متقطع: كويس لخسارة الدهون، مش مثالي لأقصى نمو عضلي. عملياً: أغلب الناس بيمشوا كويس ب3 وجبات + 1-2 سناك. وجبات قبل وبعد التمرين الأهم. متفكرش كتير — الالتزام بيغلب الكمال!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v28: Progressive Overload Explained ───────────────────────
+  {
+    keywords: ['progressive overload', 'how to progressive overload', 'add weight', 'get stronger', 'increase weight', 'overload principle'],
+    keywordsAr: ['حمل تصاعدي', 'ازاي ازود الحمل', 'زود وزن', 'ازاي اقوى', 'زيادة الوزن في التمرين'],
+    keywordsFranco: ['7aml tasa3ody', 'ezay azawed el 7aml', 'zawed wazn', 'ezay a2wa', 'zyada el wazn fel tamreen'],
+    stateId: 'WK_MENU',
+    response: { en: 'Progressive overload (the #1 muscle building principle): WAYS to overload: 1) More weight (primary) — add 2.5kg when you hit all reps 2) More reps — 8→10→12 then increase weight, drop back to 8 3) More sets — add 1 set per exercise per week 4) Better form — slower negatives, fuller ROM 5) Less rest (for endurance) 6) More frequency. TRACK EVERYTHING: Log weights, reps, sets. If you\'re not progressing, you\'re not growing. Double progression method: 3x8-12 → when you hit 3x12, add weight, go back to 3x8.', ar: 'الحمل التصاعدي (مبدأ رقم 1 لبناء العضل): طرق الحمل: 1) وزن أكتر (الأساسي) — زود 2.5كج لما تعمل كل التكرارات 2) تكرارات أكتر — 8→10→12 بعدين زود الوزن، ارجع ل8 3) سيتات أكتر — ضيف سيت لكل تمرين/أسبوع 4) فورم أفضل — سلبي أبطأ، نطاق أكمل 5) راحة أقل (للتحمل) 6) تكرار أكتر. سجل كل حاجة: أوزان، تكرارات، سيتات. لو مش بتتقدم، مش هتكبر. طريقة التدرج المزدوج: 3×8-12 → لما توصل 3×12، زود الوزن، ارجع ل3×8.' },
+    priority: 9,
+    domain: 'workout',
+  },
+
+  // ── v28: Creatine Deep Dive ───────────────────────────────────
+  {
+    keywords: ['creatine guide', 'creatine loading', 'creatine monohydrate', 'creatine safe', 'creatine side effects', 'best creatine', 'how to take creatine'],
+    keywordsAr: ['دليل كرياتين', 'تحميل كرياتين', 'كرياتين مونوهيدرات', 'كرياتين آمن', 'أضرار كرياتين', 'أفضل كرياتين'],
+    keywordsFranco: ['daleel creatine', 'ta7meel creatine', 'creatine monohydrate', 'creatine amen', 'adrar creatine', 'afdal creatine'],
+    stateId: 'SP_MENU',
+    response: { en: 'Creatine complete guide: WHAT: Most researched supplement ever. DOSE: 5g/day, every day (training + rest days). Loading phase: optional (20g/day for 5 days). TYPE: Creatine monohydrate = best & cheapest. No need for HCL, buffered, etc. TIMING: Any time (before/after workout or with a meal). SAFETY: 100+ studies confirm safe for healthy adults. Water retention: 1-3kg initially (in muscles, not fat). MYTH: "Damages kidneys" — ZERO evidence in healthy people. PRICE in Egypt: ~200-400 LE for 60 servings. It works for EVERYONE!', ar: 'دليل الكرياتين الكامل: إيه: أكتر مكمل مدروس في التاريخ. الجرعة: 5ج/يوم، كل يوم (تمرين + راحة). فترة تحميل: اختيارية (20ج/يوم ل5 أيام). النوع: كرياتين مونوهيدرات = الأفضل والأرخص. مش محتاج HCL أو بافرد. التوقيت: أي وقت (قبل/بعد التمرين أو مع وجبة). الأمان: 100+ دراسة أكدت آمن للأصحاء. احتباس مية: 1-3كج في الأول (في العضلات، مش دهون). خرافة: "بيضر الكلى" — صفر دليل في الأصحاء. السعر في مصر: ~200-400 جنيه ل60 جرعة. بيشتغل مع كل الناس!' },
+    priority: 8,
+    domain: 'supplements',
+  },
+
+  // ── v28: Gym Anxiety ──────────────────────────────────────────
+  {
+    keywords: ['gym anxiety', 'scared of gym', 'gym intimidating', 'nervous gym', 'embarrassed gym', 'people watching gym', 'gym confidence'],
+    keywordsAr: ['قلق الجيم', 'خايف من الجيم', 'الجيم مخيف', 'متوتر من الجيم', 'كسوف في الجيم', 'الناس بتتفرج عليا'],
+    keywordsFranco: ['2ala2 el gym', '5ayef men el gym', 'el gym mo5eef', 'metwatar men el gym', 'kasoof fel gym', 'el nas betetfarag 3alaya'],
+    stateId: 'QA_MENU',
+    response: { en: 'Gym anxiety tips: 1) TRUTH: Nobody is watching you — everyone is focused on themselves 2) Go during off-peak hours (early AM, late PM) 3) Have a written plan (no wandering) 4) Wear headphones (barrier signal) 5) Start with machines (easier, no setup) 6) Watch YouTube tutorials before trying new exercises 7) Everyone was a beginner once — even the biggest guys 8) Gym regulars are usually the NICEST people 9) In Egyptian gyms: people are generally friendly and will help if asked 10) First 2 weeks are hardest — after that it becomes your comfort zone!', ar: 'نصايح لقلق الجيم: 1) الحقيقة: محدش بيتفرج عليك — كلهم مشغولين بنفسهم 2) روح في أوقات هادية (الصبح بدري، بالليل متأخر) 3) خد خطة مكتوبة (متلفش) 4) البس سماعات (إشارة حاجز) 5) ابدأ بالأجهزة (أسهل، مفيش سيتاب) 6) اتفرج على يوتيوب قبل ما تجرب تمارين جديدة 7) كلهم كانوا مبتدئين — حتى أكبر واحد 8) ناس الجيم الثابتين عادة ألطف الناس 9) في جيمات مصر: الناس ودودة وهتساعد لو سألت 10) أول أسبوعين الأصعب — بعديها بيبقى منطقة راحتك!' },
+    priority: 8,
+    domain: 'root',
+  },
+
+  // ── v28: Egyptian Gym Pricing Guide ───────────────────────────
+  {
+    keywords: ['gym price egypt', 'gym membership cost', 'how much gym egypt', 'cheap gym egypt', 'gym fees', 'gym subscription price'],
+    keywordsAr: ['سعر الجيم مصر', 'اشتراك الجيم كام', 'جيم رخيص', 'مصاريف الجيم', 'سعر اشتراك جيم'],
+    keywordsFranco: ['se3r el gym masr', 'eshtrak el gym kam', 'gym re5ees', 'masareef el gym', 'se3r eshtrak gym'],
+    stateId: 'QA_MENU',
+    response: { en: 'Egyptian gym pricing (2024): BUDGET (300-600 LE/mo): Neighborhood gyms, basic equipment, usually crowded. MID-RANGE (800-1500 LE/mo): Better equipment, AC, classes (Gold\'s, PowerHouse). PREMIUM (2000-5000 LE/mo): Full amenities, pool, spa, classes (Oxygen, Golds VIP). HOME: Basic setup ~3000-5000 LE (adjustable dumbbells + bench). Best value: mid-range gym with good equipment + a buddy. Ask about student discounts, annual plans (usually 20-30% off), and family memberships!', ar: 'أسعار الجيم في مصر (2024): اقتصادي (300-600 جنيه/شهر): جيمات الحي، معدات أساسية، عادة مزدحمة. متوسط (800-1500 جنيه/شهر): معدات أفضل، تكييف، كلاسات (جولدز، باورهاوس). بريميوم (2000-5000 جنيه/شهر): كل المميزات، حمام سباحة، سبا، كلاسات (أوكسجن، جولدز VIP). بيت: سيتاب أساسي ~3000-5000 جنيه (دمبلز قابلة للتعديل + بنش). أفضل قيمة: جيم متوسط بمعدات كويسة + صاحب. اسأل عن خصومات طلاب، خطط سنوية (عادة 20-30% أقل)، واشتراكات عائلية!' },
+    priority: 7,
+    domain: 'root',
+  },
+
+  // ── v28: Sleep & Recovery Deep Dive ────────────────────────────
+  {
+    keywords: ['sleep for muscle', 'how much sleep gym', 'sleep and recovery', 'sleep quality', 'better sleep', 'insomnia workout', 'nap for recovery'],
+    keywordsAr: ['نوم للعضل', 'كام ساعة نوم', 'نوم وريكفري', 'جودة النوم', 'نوم أفضل', 'أرق', 'قيلولة'],
+    keywordsFranco: ['nom lel 3adal', 'kam sa3a nom', 'nom w recovery', 'gawdet el nom', 'nom afdal', 'ara2', '2ayloola'],
+    stateId: 'HP_MENU',
+    response: { en: 'Sleep & muscle growth: 7-9 hours is ESSENTIAL (growth hormone peaks during deep sleep). TIPS for better sleep: 1) Same bedtime daily (±30min) 2) No screens 1hr before bed 3) Cool room (18-20°C) 4) No caffeine after 2pm 5) Magnesium before bed (300-400mg) 6) Dark room (blackout curtains) 7) No heavy meals 2hrs before bed. NAPS: 20min power nap = amazing for recovery (don\'t exceed 30min or you\'ll feel groggy). Poor sleep = 60% less testosterone, worse recovery, more injuries. PRIORITIZE SLEEP!', ar: 'النوم ونمو العضل: 7-9 ساعات ضروري (هرمون النمو بيبلغ الذروة في النوم العميق). نصايح لنوم أفضل: 1) نفس معاد النوم يومياً (±30 دقيقة) 2) مفيش شاشات ساعة قبل النوم 3) أوضة باردة (18-20°C) 4) بلاش كافيين بعد 2 الضهر 5) ماغنسيوم قبل النوم (300-400مج) 6) أوضة مظلمة (ستاير عاتمة) 7) مفيش أكل تقيل ساعتين قبل النوم. قيلولة: 20 دقيقة = ممتازة للريكفري (متعديش 30 دقيقة). نوم سيئ = 60% أقل تستوستيرون، ريكفري أسوأ، إصابات أكتر. الأولوية للنوم!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v28: Protein Sources Ranked ───────────────────────────────
+  {
+    keywords: ['best protein source', 'protein sources ranked', 'cheapest protein', 'protein foods list', 'high protein foods', 'protein per pound'],
+    keywordsAr: ['أفضل مصدر بروتين', 'مصادر بروتين مرتبة', 'أرخص بروتين', 'أكل عالي البروتين', 'قائمة أكل بروتين'],
+    keywordsFranco: ['afdal masdar protein', 'masader protein morattaba', 'ar5as protein', 'akl 3aly el protein', '2a2met akl protein'],
+    stateId: 'NT_MENU',
+    response: { en: 'Protein sources ranked by quality: TIER 1 (complete, high bioavailability): Eggs (whole), whey protein, chicken breast, fish (salmon, tuna), beef. TIER 2: Greek yogurt, cottage cheese, turkey, shrimp, milk. TIER 3: Lentils + rice (combined = complete), chickpeas, tofu, tempeh. CHEAPEST in Egypt: Eggs (~90LE/30), chicken (frozen ~150LE/kg), tuna cans (~25LE), ful medames (~5LE/plate), lentils (~30LE/kg), milk (~30LE/L). Budget target: aim for eggs + chicken + ful as protein staples!', ar: 'مصادر البروتين مرتبة بالجودة: فئة 1 (كامل، امتصاص عالي): بيض (كامل)، واي بروتين، صدر فراخ، سمك (سلمون، تونة)، لحم بقري. فئة 2: زبادي يوناني، جبنة قريش، ديك رومي، جمبري، لبن. فئة 3: عدس + رز (مع بعض = كامل)، حمص، توفو، تمبيه. الأرخص في مصر: بيض (~90 جنيه/30)، فراخ (فروزن ~150 جنيه/كج)، تونة (~25 جنيه/علبة)، فول (~5 جنيه/طبق)، عدس (~30 جنيه/كج)، لبن (~30 جنيه/لتر). هدف اقتصادي: ركز على بيض + فراخ + فول كأساس بروتين!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
