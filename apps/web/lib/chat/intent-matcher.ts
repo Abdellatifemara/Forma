@@ -1961,6 +1961,106 @@ function getDomainFromState(stateId: string): string {
 }
 
 /**
+ * Normalize Arabic text — handle common spelling variations:
+ * ة↔ه at end, ى↔ي, أ↔ا↔إ, etc.
+ */
+function normalizeArabic(text: string): string {
+  return text
+    .replace(/[أإآ]/g, 'ا')   // all hamza forms → bare alef
+    .replace(/ة$/g, 'ه')       // taa marbuta → ha at end
+    .replace(/ة\s/g, 'ه ')     // taa marbuta before space → ha
+    .replace(/ى$/g, 'ي')       // alef maqsura → ya at end
+    .replace(/ؤ/g, 'و')        // waw hamza → waw
+    .replace(/ئ/g, 'ي');        // ya hamza → ya
+}
+
+/**
+ * Implicit context: when user types just a number in a domain, infer the intent.
+ * "85" in health/progress → log weight 85 kg
+ * "500" in nutrition → log 500 ml water
+ * "300" in nutrition → look up 300 calorie meal
+ */
+function handleImplicitNumber(text: string, currentDomain: string): IntentMatch | null {
+  const numOnly = text.match(/^\d+(?:\.\d+)?$/);
+  if (!numOnly) return null;
+  const num = parseFloat(numOnly[0]);
+
+  if ((currentDomain === 'health' || currentDomain === 'progress') && num >= 30 && num <= 300) {
+    return {
+      stateId: 'PR_LOG_WEIGHT',
+      confidence: 0.8,
+      response: { en: `Logging your weight: ${num} kg`, ar: `بسجل وزنك: ${num} كيلو` },
+      extractedParams: { weight: String(num) },
+    };
+  }
+  if (currentDomain === 'nutrition' && num >= 100 && num <= 3000) {
+    // Could be water (100-1000 ml) or calories
+    if (num <= 1000) {
+      return {
+        stateId: 'NT_LOG_WATER',
+        confidence: 0.7,
+        response: { en: `Logging ${num} ml of water`, ar: `بسجل ${num} مل مية` },
+        extractedParams: { water_ml: String(num) },
+      };
+    }
+  }
+  return null;
+}
+
+/**
+ * Smart meal type from time of day — used when logging meals.
+ */
+export function getDefaultMealType(): 'BREAKFAST' | 'LUNCH' | 'DINNER' | 'SNACK' {
+  const hour = new Date().getHours();
+  if (hour >= 5 && hour < 11) return 'BREAKFAST';
+  if (hour >= 11 && hour < 16) return 'LUNCH';
+  if (hour >= 16 && hour < 21) return 'DINNER';
+  return 'SNACK';
+}
+
+/**
+ * Time-relative context responses
+ */
+function handleTimeQuery(text: string, isCurrentlyAr: boolean): IntentMatch | null {
+  const lower = text.toLowerCase();
+  const hour = new Date().getHours();
+
+  // "is it too late to train"
+  if (lower.match(/too late.*(?:train|workout|exercise|gym)/) || lower.match(/(?:اتمرن|تمرين).*متأخر/) || lower.match(/late.*(?:at2amen|tamreen)/)) {
+    if (hour >= 22 || hour < 5) {
+      return {
+        stateId: 'WK_MENU',
+        confidence: 0.8,
+        response: { en: "It's pretty late. A light session is fine, but intense workouts may affect sleep. Try stretching or yoga instead.", ar: 'الوقت متأخر شوية. تمرين خفيف ماشي، بس تمرين جامد ممكن يأثر على النوم. جرب استرتش أو يوجا.' },
+      };
+    }
+    return {
+      stateId: 'WK_TODAY',
+      confidence: 0.8,
+      action: { type: 'navigate' as const, route: '/workouts' },
+      response: { en: "Not at all! You still have time for a great workout. Let's go:", ar: 'لأ خالص! لسه عندك وقت لتمرين جامد. يلا:' },
+    };
+  }
+
+  // "when should I eat" / "what time"
+  if (lower.match(/when.*eat|what time.*eat|امتى.*آكل|وقت الأكل/) || lower.match(/emta.*akol/)) {
+    const meals = [];
+    if (hour < 10) meals.push(isCurrentlyAr ? 'فطار دلوقتي' : 'Breakfast now');
+    else if (hour < 14) meals.push(isCurrentlyAr ? 'غدا دلوقتي' : 'Lunch now');
+    else if (hour < 18) meals.push(isCurrentlyAr ? 'سناك خفيف' : 'Light snack');
+    else meals.push(isCurrentlyAr ? 'عشا خفيف' : 'Light dinner');
+
+    return {
+      stateId: 'NT_SUGGEST',
+      confidence: 0.75,
+      response: { en: `Based on the time: ${meals[0]}. Space meals 3-4 hours apart. Pre-workout: eat 1-2h before training.`, ar: `بناءً على الوقت: ${meals[0]}. باعد بين الوجبات 3-4 ساعات. قبل التمرين: كل قبلها بساعة-ساعتين.` },
+    };
+  }
+
+  return null;
+}
+
+/**
  * Match user text to the best intent.
  * Context-aware: boosts matches relevant to the current domain.
  * Returns null if no confident match found.
@@ -1969,9 +2069,10 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   let normalized = text.toLowerCase().trim();
   if (normalized.length < 2) return null;
 
-  // Pipeline: typos → synonyms → noise strip → stem
+  // Pipeline: typos → synonyms → Arabic normalize → noise strip → stem
   normalized = fixTypos(normalized);
   normalized = expandSynonyms(normalized);
+  normalized = normalizeArabic(normalized);
   const stripped = stripNoise(normalized); // "show me chest exercises" → "chest exercises"
 
   // Also create a stemmed version for fallback matching
@@ -1993,6 +2094,15 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
       }
     }
   }
+
+  // ── Implicit number in context: bare "85" in health domain → log weight
+  const currentDomain = getDomainFromState(currentStateId);
+  const implicitResult = handleImplicitNumber(stripped, currentDomain);
+  if (implicitResult) return implicitResult;
+
+  // ── Time-relative queries: "is it too late to train", "when should I eat"
+  const timeResult = handleTimeQuery(normalized, /[\u0600-\u06FF]/.test(text));
+  if (timeResult) return timeResult;
 
   // ── Direct exercise name → route to exercise search
   const exerciseQuery = detectExerciseQuery(stripped);
@@ -2016,7 +2126,6 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
     };
   }
 
-  const currentDomain = getDomainFromState(currentStateId);
   const result: { bestMatch: { rule: IntentRule; score: number } | null } = { bestMatch: null };
 
   // Score a text against all rules
