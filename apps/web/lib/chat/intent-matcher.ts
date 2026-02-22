@@ -4287,6 +4287,126 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v23: Travel Fitness ─────────────────────────────────────
+  {
+    keywords: ['travel workout', 'hotel workout', 'workout while traveling', 'gym while traveling', 'vacation workout'],
+    keywordsAr: ['تمرين سفر', 'تمرين فندق', 'تمرين وانا مسافر', 'جيم وانا مسافر'],
+    keywordsFranco: ['tamreen safar', 'tamreen fondo2', 'tamreen wana msafer', 'gym wana msafer'],
+    stateId: 'WK_MENU',
+    response: { en: 'Travel workout (no equipment): 1) Push-ups ×15 ×4 2) Bodyweight squats ×20 ×4 3) Lunges ×12/leg ×3 4) Planks 60sec ×3 5) Chair dips ×15 ×3 6) Burpees ×10 ×3. Full body in 25min! Pack resistance bands — they weigh nothing and add tons of options. Hotel room = your gym!', ar: 'تمرين السفر (بدون معدات): 1) بوش اب ×15 ×4 2) سكوات بوزن الجسم ×20 ×4 3) لانجز ×12/رجل ×3 4) بلانك 60ث ×3 5) ديبس كرسي ×15 ×3 6) بيربيز ×10 ×3. فل بودي في 25 دقيقة! خد باندات مقاومة — وزنها صفر وبتفتح خيارات كتير. أوضة الفندق = جيمك!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['jet lag workout', 'jet lag recovery', 'time zone training', 'travel fatigue gym'],
+    keywordsAr: ['جت لاج', 'جت لاج وتمرين', 'إرهاق سفر'],
+    keywordsFranco: ['jet lag', 'jet lag we tamreen', 'erha2 safar'],
+    stateId: 'RC_MENU',
+    response: { en: 'Jet lag recovery: 1) Light exercise (walk 30min in sunlight) 2) Don\'t train heavy first 24-48hrs 3) Hydrate extra (flying dehydrates) 4) Adjust meals to local time immediately 5) Sunlight exposure resets your clock 6) Melatonin 0.5-1mg at local bedtime. Give yourself 1 day per timezone crossed to fully adjust.', ar: 'ريكفري الجت لاج: 1) تمرين خفيف (مشي 30 دقيقة في الشمس) 2) متتمرنش ثقيل أول 24-48 ساعة 3) اشرب ميه زيادة (الطيران بيجفف) 4) ظبط الأكل على التوقيت المحلي فوراً 5) الشمس بتظبط الساعة البيولوجية 6) ميلاتونين 0.5-1مج وقت النوم المحلي. خد يوم لكل منطقة زمنية عديتها.' },
+    priority: 6,
+    domain: 'recovery',
+  },
+
+  // ── v23: Time Management ────────────────────────────────────
+  {
+    keywords: ['short workout', 'quick workout', 'no time for gym', 'busy schedule workout', '15 minute workout', '20 minute workout'],
+    keywordsAr: ['تمرين قصير', 'تمرين سريع', 'مفيش وقت للجيم', 'تمرين 15 دقيقة', 'تمرين 20 دقيقة'],
+    keywordsFranco: ['tamreen 2osayar', 'tamreen sari3', 'mafesh wa2t lel gym', 'tamreen 15 de2i2a'],
+    stateId: 'WK_MENU',
+    response: { en: 'Time-efficient workouts: 15min: pick 3 compound exercises, 3 sets each, superset them. 20min: 4 exercises, 3 sets, 60sec rest. 30min: full program with warm-up. Key: supersets (save 40% time), minimal rest (60-90sec), compound movements only. Short workouts > skipped workouts. Something is ALWAYS better than nothing!', ar: 'تمارين موفرة للوقت: 15 دقيقة: اختار 3 تمارين compound، 3 سيتات كل واحد، سوبرسيت. 20 دقيقة: 4 تمارين، 3 سيتات، 60ث راحة. 30 دقيقة: برنامج كامل مع تسخين. المفتاح: سوبرسيت (بيوفروا 40% وقت)، راحة قليلة (60-90ث)، compound بس. تمرين قصير أحسن من تمرين ملغي!' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['morning workout', 'workout before work', 'fajr workout', 'early morning gym', 'am workout'],
+    keywordsAr: ['تمرين الصبح', 'تمرين قبل الشغل', 'تمرين بدري', 'جيم الصبح'],
+    keywordsFranco: ['tamreen el sob7', 'tamreen 2abl el shogl', 'tamreen badry', 'gym el sob7'],
+    stateId: 'WK_MENU',
+    response: { en: 'Morning workout tips: 1) Sleep in gym clothes (seriously!) 2) Prep everything night before 3) Eat something small (banana, dates) or train fasted 4) Extra warm-up needed (body is cold) 5) Caffeine 30min before 6) You\'ll have MORE energy throughout the day. Morning lifters are more consistent — fewer excuses to skip!', ar: 'نصائح تمرين الصبح: 1) نام بهدوم الجيم (بجد!) 2) حضر كل حاجة بالليل 3) كل حاجة صغيرة (موزة، تمر) أو تمرن صايم 4) تسخين أكتر (الجسم بارد) 5) كافيين قبل ب30 دقيقة 6) هيبقى عندك طاقة أكتر طول اليوم. اللي بيتمرنوا الصبح أكتر التزاماً — أعذار أقل لتفويت!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['night workout', 'late workout', 'workout after work', 'gym at night', 'evening workout'],
+    keywordsAr: ['تمرين بالليل', 'تمرين متأخر', 'تمرين بعد الشغل', 'جيم بالليل'],
+    keywordsFranco: ['tamreen beleil', 'tamreen meta25er', 'tamreen ba3d el shogl', 'gym beleil'],
+    stateId: 'WK_MENU',
+    response: { en: 'Evening workout tips: 1) Strength peaks 4-7pm (body temperature highest) 2) Good stress relief after work 3) Avoid intense training 2hrs before bed (disrupts sleep) 4) Have a pre-workout meal 1-2hrs before 5) Skip caffeine after 4pm. Both AM & PM work — pick what you\'ll do CONSISTENTLY. The best time = the time you actually go!', ar: 'نصائح تمرين بالليل: 1) القوة بتوصل الذروة 4-7 مساءً (حرارة الجسم الأعلى) 2) بيريح من ضغط الشغل 3) بلاش تمرين مكثف ساعتين قبل النوم (بيبوظ النوم) 4) كل وجبة قبل ب1-2 ساعة 5) بلاش كافيين بعد 4 العصر. الصبح والمسا الاتنين كويسين — اختار اللي هتلتزم بيه. أحسن وقت = الوقت اللي بتروح فيه فعلاً!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v23: Blood Work & Lab Tests ─────────────────────────────
+  {
+    keywords: ['blood work', 'lab test', 'blood test gym', 'what blood test', 'health check gym', 'check hormones'],
+    keywordsAr: ['تحاليل دم', 'تحليل دم', 'تحاليل الجيم', 'فحص هرمونات'],
+    keywordsFranco: ['ta7alil dam', 'ta7lil dam', 'ta7alil el gym', 'fa7s hormonat'],
+    stateId: 'HL_MENU',
+    response: { en: 'Blood work for athletes (get annually): 1) CBC (general health) 2) Testosterone (total + free) 3) Thyroid (TSH, T3, T4) 4) Vitamin D 5) Iron/ferritin 6) Lipid panel (cholesterol) 7) Liver + kidney function 8) Fasting glucose + HbA1c 9) CRP (inflammation). Cost in Egypt: ~500-1500 LE for full panel. Knowledge = power!', ar: 'تحاليل الدم للرياضيين (اعملها سنوياً): 1) صورة دم كاملة 2) تستوستيرون (كلي + حر) 3) غدة درقية (TSH, T3, T4) 4) فيتامين D 5) حديد/فيريتين 6) دهون (كولسترول) 7) وظائف كبد + كلى 8) سكر صايم + HbA1c 9) CRP (التهاب). التكلفة في مصر: ~500-1500 جنيه للفحص الكامل. المعرفة = قوة!' },
+    priority: 8,
+    domain: 'health',
+  },
+  {
+    keywords: ['vitamin d deficiency', 'low vitamin d', 'vitamin d level', 'vitamin d egypt', 'sunshine vitamin'],
+    keywordsAr: ['نقص فيتامين دي', 'فيتامين دي منخفض', 'مستوى فيتامين دي'],
+    keywordsFranco: ['na2s vitamin d', 'vitamin d mon5afed', 'mostawa vitamin d'],
+    stateId: 'HL_MENU',
+    response: { en: 'Vitamin D in Egypt: Despite sunshine, 60-80% of Egyptians are deficient! Why: indoor lifestyle, dark skin needs more sun, avoiding sun. Optimal level: 40-60 ng/mL. Supplement: 2000-4000 IU/day with fat. Benefits for gym: bone strength, testosterone, immune function, mood, muscle recovery. Get tested!', ar: 'فيتامين D في مصر: رغم الشمس، 60-80% من المصريين عندهم نقص! ليه: حياة داخلية، البشرة الداكنة محتاجة شمس أكتر. المستوى المثالي: 40-60 ng/mL. المكمل: 2000-4000 وحدة/يوم مع دهون. فوايد للجيم: قوة عظام، تستوستيرون، مناعة، مزاج، ريكفري عضلات. اعمل تحليل!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v23: Advanced Nutrition Concepts ─────────────────────────
+  {
+    keywords: ['reverse diet', 'reverse dieting', 'metabolic damage', 'after diet what', 'post diet'],
+    keywordsAr: ['ريفرس دايت', 'بعد الدايت', 'ضرر الأيض', 'تدمير الأيض'],
+    keywordsFranco: ['reverse diet', 'ba3d el diet', 'darar el ayed', 'tadmir el ayed'],
+    stateId: 'NT_MENU',
+    response: { en: 'Reverse dieting: After cutting, DON\'T jump back to high calories (you\'ll gain fat fast). Instead: add 50-100 cal/week until you reach maintenance. Takes 8-16 weeks. This rebuilds your metabolism, minimizes fat regain, and sets you up for your next bulk. Patience here = long-term success!', ar: 'ريفرس دايت: بعد التنشيف، متقفزش للكالوريز العالية فجأة (هتزود دهون بسرعة). بدلاً: زود 50-100 كالوري/أسبوع لحد ما توصل الصيانة. بياخد 8-16 أسبوع. ده بيعيد بناء الأيض، بيقلل استرداد الدهون، وبيجهزك للبالك الجاي. الصبر هنا = نجاح طويل المدى!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['metabolic adaptation', 'metabolism slow', 'slow metabolism', 'metabolism broken', 'starvation mode'],
+    keywordsAr: ['تكيف أيضي', 'الأيض بطيء', 'أيض بطيء', 'وضع المجاعة'],
+    keywordsFranco: ['takyf aydy', 'el ayed bati2', 'ayed bati2', 'wad3 el maga3a'],
+    stateId: 'NT_MENU',
+    response: { en: '"Starvation mode" is a myth but metabolic adaptation IS real. When you diet, your body burns fewer calories (NEAT drops, hormones adjust). It\'s 5-15% at most, NOT enough to stop fat loss. Fix: 1) Diet breaks (2 weeks at maintenance every 8-12 weeks) 2) Keep protein high 3) Maintain activity 4) Reverse diet after cutting.', ar: '"وضع المجاعة" خرافة بس التكيف الأيضي حقيقي. لما بتعمل دايت، جسمك بيحرق أقل (الحركة بتقل، الهرمونات بتتغير). ده 5-15% بالماكس، مش كفاية يوقف خسارة الدهون. الحل: 1) بريكات دايت (أسبوعين صيانة كل 8-12 أسبوع) 2) بروتين عالي 3) حافظ على النشاط 4) ريفرس دايت بعد التنشيف.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['food scale', 'weighing food', 'how to weigh food', 'portion accuracy', 'food measuring'],
+    keywordsAr: ['ميزان أكل', 'وزن الأكل', 'ازاي اوزن الأكل', 'دقة الحصص'],
+    keywordsFranco: ['mizan akl', 'wazn el akl', 'ezay awazn el akl', 'de2et el 7osas'],
+    stateId: 'NT_MENU',
+    response: { en: 'Food scale = game changer for tracking macros! Buy a digital kitchen scale (~100-200 LE). Weigh EVERYTHING raw when possible. Eyeballing portions can be off by 30-50%! Quick guide: Palm of hand ≈ 100g protein. Fist ≈ 1 cup carbs. Thumb ≈ 1 tbsp fat. But nothing beats a scale for accuracy!', ar: 'ميزان الأكل = فرق كبير لتتبع الماكروز! اشتري ميزان مطبخ ديجيتال (~100-200 جنيه). وزن كل حاجة نيئة لو ممكن. تقدير الحصص بالعين ممكن يغلط 30-50%! دليل سريع: كف اليد ≈ 100ج بروتين. القبضة ≈ كوب كارب. الإبهام ≈ ملعقة دهون. بس مفيش بديل عن الميزان للدقة!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v23: Grip Strength & Forearms ───────────────────────────
+  {
+    keywords: ['grip strength', 'weak grip', 'grip training', 'forearm training', 'cant hold weight', 'grip exercises'],
+    keywordsAr: ['قوة القبضة', 'قبضة ضعيفة', 'تمرين القبضة', 'تمرين الساعد'],
+    keywordsFranco: ['2owet el 2abda', '2abda da3ifa', 'tamreen el 2abda', 'tamreen el sa3ed'],
+    stateId: 'WK_MENU',
+    response: { en: 'Grip strength training: 1) Dead hangs (30-60sec, 3 sets) 2) Farmer walks (heavy, 30m) 3) Wrist curls + reverse curls 4) Plate pinches (hold 2 plates smooth side out) 5) Towel pull-ups 6) Fat grips on dumbbells. Do 2-3 grip exercises at end of pulling days. Strong grip = stronger deadlift, rows, and pulls!', ar: 'تمرين قوة القبضة: 1) ديد هانج (30-60ث، 3 سيتات) 2) فارمر ووك (ثقيل، 30م) 3) ريست كيرل + ريفرس كيرل 4) بليت بينش (امسك طبقين الناحية الملساء برا) 5) بول اب بمنشفة 6) فات جريبز على دمبلز. 2-3 تمارين قبضة آخر أيام السحب. قبضة قوية = ديدلفت ورو وسحب أقوى!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v23: Mindset & Discipline ───────────────────────────────
+  {
+    keywords: ['discipline', 'consistency', 'how to be consistent', 'stick to routine', 'habit building'],
+    keywordsAr: ['انضباط', 'التزام', 'ازاي التزم', 'حافظ على الروتين', 'بناء عادات'],
+    keywordsFranco: ['endebat', 'eltezam', 'ezay altezem', '7afez 3ala el routine', 'bena2 3adat'],
+    stateId: 'QA_MENU',
+    response: { en: 'Building discipline: 1) Start small (just 20min, 3x/week) 2) Never miss 2 days in a row 3) Track everything (what gets measured gets managed) 4) Make it a non-negotiable appointment 5) Remove decisions (same time, same gym, pre-planned workout) 6) Celebrate small wins. It takes 66 days to build a habit. You\'re not lazy — you just haven\'t built the system yet!', ar: 'بناء الانضباط: 1) ابدأ صغير (20 دقيقة بس، 3 مرات/أسبوع) 2) متفوتش يومين ورا بعض أبداً 3) سجل كل حاجة (اللي بيتقاس بيتدار) 4) خليه موعد ثابت 5) شيل القرارات (نفس الوقت، نفس الجيم، تمرين محضر) 6) احتفل بالإنجازات الصغيرة. بياخد 66 يوم تبني عادة. مش كسلان — بس لسه مبنيتش النظام!' },
+    priority: 8,
+    domain: 'root',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
