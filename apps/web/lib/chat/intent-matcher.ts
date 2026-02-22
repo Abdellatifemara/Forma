@@ -7023,6 +7023,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'recovery',
   },
 
+  // ── v60: Egyptian Gym Culture + Workout Partner + Peak Hours + Ramadan Training + Meal Timing ──
+  {
+    keywords: ['gym etiquette egypt', 'gym rules egypt', 'egyptian gym culture', 'gym behavior', 'gym manners', 'gym courtesy', 'wipe equipment', 'rerack weights'],
+    keywordsAr: ['آداب الجيم مصر', 'قوانين الجيم', 'ثقافة جيم مصرية', 'سلوك الجيم', 'أخلاق الجيم'],
+    keywordsFranco: ['gym etiquette', 'gym rules egypt', 'gym manners', 'gym culture egypt'],
+    stateId: 'info_gym_etiquette_egypt',
+    response: { en: 'Gym Etiquette — Egypt Edition: DO: Re-rack your weights ALWAYS (biggest complaint in Egyptian gyms!). Wipe equipment after use (bring a small towel). Let people work in during your rest periods. Ask before taking someone\'s equipment. Use headphones (not everyone wants to hear your music). Put your phone on silent. Shower/deodorant before the gym (for everyone\'s sake). DON\'T: Sit on equipment scrolling your phone between sets (rest away from the machine). Slam weights unless you\'re lifting VERY heavy. Give unsolicited advice (ask first: "would you like a tip?"). Record other people without permission. Block the dumbbell rack while curling (step back!). Hog multiple machines during peak hours. Leave sweat puddles. EGYPTIAN GYM SPECIFIC: Most Egyptian gyms have a friendly "ya basha" culture — embrace it. Tip the guy at the front desk during holidays (Eid). Peak hours are 5-8 PM — go early morning (6-8 AM) for empty gym. Many gyms close during prayer times on Fridays.', ar: 'آداب الجيم — نسخة مصرية: لازم: رجّع الأوزان مكانها دايماً (أكبر شكوى في الجيمات المصرية!). امسح المعدات بعد الاستخدام (خد فوطة صغيرة). خلي الناس تشتغل في الراحة بتاعتك. اسأل قبل ما تاخد حاجة حد بيستخدمها. استخدم سماعات. ما تعملش: تقعد على المعدات تسكرول فونك. تنزل الأوزان بعنف. تدي نصايح من غير ما حد يطلب. تصوّر حد من غير إذن. تقف قدام الراك وانت بتعمل كيرل. تحجز أكتر من ماشين في أوقات الذروة. خاص بمصر: الجيمات المصرية فيها ثقافة "يا باشا" ودية. كافئ اللي عند الباب في الأعياد. الذروة 5-8 مساءً — روح الصبح بدري (6-8) لجيم فاضي. كتير جيمات بتقفل وقت صلاة الجمعة.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['workout partner', 'training partner', 'gym buddy', 'gym partner', 'training with friend', 'spotter partner', 'accountability partner'],
+    keywordsAr: ['بارتنر تمرين', 'شريك تدريب', 'صاحب جيم', 'بادي جيم', 'سبوتر'],
+    keywordsFranco: ['workout partner', 'gym buddy', 'training partner', 'gym partner'],
+    stateId: 'info_workout_partner',
+    response: { en: 'Workout Partner Guide — The Right Partner Makes You 30% Stronger: BENEFITS: Built-in spotter (safer heavy lifts), accountability (you show up even when unmotivated), forced reps and drop sets become possible, friendly competition pushes you harder, more fun = more consistent. HOW TO FIND: Same gym, similar schedule, similar strength level (within 20% of your lifts), compatible personality. Ask someone you see regularly at the gym. RULES: Be on time (respect their schedule). Match intensity (both go hard). Spot properly (don\'t touch the bar unless needed). Limit rest times (don\'t chat for 5 minutes between sets). Alternate exercises smoothly. Give honest feedback. Don\'t compare — encourage. WHEN TO TRAIN ALONE: Deload weeks, competition prep, when you need focused/quiet sessions, if partner becomes unreliable. WARNING SIGNS: Partner always late, talks more than lifts, skips sessions, competitive in a negative way, gives bad advice. RED FLAG: If your workouts are LONGER but LESS intense with a partner, train alone.', ar: 'دليل شريك التمرين — الشريك الصح بيقويك 30%: الفوائد: سبوتر جاهز (أأمن للرفع التقيل)، محاسبة (بتروح حتى لما مش متحمس)، فورسد ربز ودروب سيتس ممكنين. إزاي تلاقي: نفس الجيم، نفس المواعيد، مستوى قوة قريب (في حدود 20% من رفعاتك). القوانين: وصّل في الميعاد. طابق الشدة. سبوت صح (ما تلمسش البار غير لما لازم). قلل الراحة. ما تقارنش — شجّع. امتى تتمرن لوحدك: ديلود، تحضير مسابقة، جلسات مركزة. علامات تحذير: الشريك دايماً متأخر، بيتكلم أكتر ما بيتمرن، بيسيب جلسات. علامة حمرا: لو تمريناتك أطول بس أقل شدة مع شريك — اتمرن لوحدك.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['gym peak hours', 'best time gym', 'gym empty', 'gym busy', 'when to go gym', 'gym time egypt', 'morning vs evening gym', 'best workout time'],
+    keywordsAr: ['أوقات ذروة الجيم', 'أحسن وقت جيم', 'جيم فاضي', 'جيم زحمة', 'وقت تمرين مصر'],
+    keywordsFranco: ['gym peak hours', 'best time gym', 'gym empty', 'gym busy egypt'],
+    stateId: 'info_gym_peak_hours',
+    response: { en: 'Best Time to Go to the Gym — Egypt Edition: PEAK HOURS (avoid if you can): 5:00-8:00 PM — most crowded, after work rush. Saturday/Friday late morning — weekend warriors. EMPTY GYM HOURS: 6:00-8:00 AM — early birds, almost empty (except January). 1:00-3:00 PM — lunch time, dead empty. 9:00-11:00 PM — late night, quiet but some gyms close at 11. MORNING VS EVENING TRAINING: MORNING PROS: Empty gym, boosts energy all day, more consistent (fewer scheduling conflicts), better for fat loss (fasted optional). MORNING CONS: Need proper warm-up (body is cold), might be weaker initially, need to wake up earlier. EVENING PROS: Naturally warmer muscles, peak strength (testosterone highest mid-afternoon), good stress relief after work, more food in your system. EVENING CONS: Crowded gym, might interfere with sleep, schedule more unpredictable. VERDICT: The best time is WHENEVER YOU CAN GO CONSISTENTLY. A 6 AM workout you do every day beats a "perfect" 5 PM workout you skip half the time.', ar: 'أحسن وقت للجيم — نسخة مصرية: أوقات الذروة (حاول تتجنبها): 5:00-8:00 مساءً — أكتر زحمة، بعد الشغل. سبت/جمعة الصبح المتأخر — محاربي الويكند. الجيم فاضي: 6:00-8:00 صباحاً — شبه فاضي (ماعدا يناير). 1:00-3:00 ظهراً — وقت الغداء، فاضي خالص. 9:00-11:00 مساءً — متأخر، هادي. الصبح ضد بالليل: الصبح: جيم فاضي، طاقة طول اليوم، أكتر انتظام. بالليل: عضلات أدفأ، قوة قصوى، راحة من ضغط الشغل. الحكم: أحسن وقت هو اللي تقدر تروحه بانتظام!' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['training ramadan', 'workout ramadan', 'gym ramadan', 'exercise fasting', 'ramadan muscle', 'ramadan gains', 'iftar workout', 'suhoor workout', 'fasting training schedule'],
+    keywordsAr: ['تمرين رمضان', 'جيم رمضان', 'تدريب صيام', 'رمضان عضلات', 'رمضان مكاسب', 'إفطار تمرين', 'سحور تمرين'],
+    keywordsFranco: ['ramadan training', 'gym ramadan', 'workout fasting', 'iftar workout', 'suhoor workout'],
+    stateId: 'info_ramadan_training_deep',
+    response: { en: 'Training During Ramadan — Complete Strategy: BEST TRAINING TIMES: OPTION 1: 30-60 minutes BEFORE Iftar — train fasted, break fast immediately after with protein shake + dates. Best for fat loss. OPTION 2: 1-2 hours AFTER Iftar — you have food in your system, more energy. Best for strength. OPTION 3: After Taraweeh prayer (11 PM) — late but you can eat before and after. WHAT TO CHANGE: Reduce volume by 20-30% (less sets, same weight). Focus on compound movements (more efficient). Shorten workouts to 45 minutes max. Keep intensity high but reduce total volume. Drop cardio or minimize it. NUTRITION: Suhoor: Slow-digesting protein (eggs, cheese), complex carbs (oats, bread), healthy fats (nuts), water. Iftar: Start with dates + water, then protein shake, then full meal 30 minutes later. Between Iftar & Suhoor: Get 1.5-2g protein/kg in 2-3 meals. Hydrate aggressively (3+ liters). SUPPLEMENTS: Creatine with Suhoor, protein shake at Iftar, multivitamin. REALISTIC GOAL: Maintain muscle and strength. Do NOT expect to gain during Ramadan — maintenance IS success!', ar: 'التدريب في رمضان — استراتيجية كاملة: أفضل أوقات التمرين: خيار 1: 30-60 دقيقة قبل الإفطار — تمرين صايم، افطر فوراً بشيك بروتين + تمر. الأفضل لحرق الدهون. خيار 2: 1-2 ساعة بعد الإفطار — عندك طاقة. الأفضل للقوة. خيار 3: بعد التراويح (11 مساءً). التغييرات: قلل الحجم 20-30%. ركّز على تمارين مركبة. قصّر التمرين لـ45 دقيقة. خلي الشدة عالية بس قلل الحجم الكلي. التغذية: سحور: بروتين بطيء الهضم (بيض، جبنة)، كربوهيدرات معقدة (شوفان)، دهون صحية (مكسرات)، مية. إفطار: ابدأ بتمر + مية، شيك بروتين، وجبة كاملة بعد 30 دقيقة. الهدف الواقعي: حافظ على العضل والقوة. ما تتوقعش مكاسب في رمضان — الحفاظ هو النجاح!' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['pre workout meal timing', 'eat before workout', 'how long before workout eat', 'food before training', 'meal timing exercise', 'fasted vs fed workout', 'empty stomach workout'],
+    keywordsAr: ['وجبة قبل التمرين توقيت', 'أكل قبل التمرين', 'كم قبل التمرين آكل', 'أكل قبل التدريب', 'معدة فاضية تمرين'],
+    keywordsFranco: ['pre workout meal timing', 'eat before workout', 'how long before gym eat', 'fasted workout'],
+    stateId: 'info_meal_timing_exercise',
+    response: { en: 'Pre-Workout Meal Timing Guide: 3-4 HOURS BEFORE: Full meal (rice/pasta + chicken/fish + vegetables). This is ideal but not always practical. 1-2 HOURS BEFORE: Medium meal — sandwich, oatmeal with protein, rice cakes with peanut butter. Moderate carbs + protein, low fat (fat slows digestion). 30-60 MINUTES BEFORE: Light snack — banana, dates, rice cakes, protein bar, small shake. Quick-digesting carbs are key. 15-30 MINUTES BEFORE: Only liquids — sports drink, small juice, pre-workout shake. FASTED TRAINING: Works fine for fat loss but you may lose strength. If fasted, have BCAAs/EAAs before training. WORST IDEA: Eating a large fatty meal right before training (heavy digestion = nausea, cramping, poor performance). PERSONAL EXPERIMENTATION: Everyone digests differently. Some people can eat 30 minutes before and feel fine, others need 2+ hours. Test and find YOUR sweet spot. GOLDEN RULE: Never try a new food right before an important workout or competition!', ar: 'دليل توقيت وجبة ما قبل التمرين: 3-4 ساعات قبل: وجبة كاملة (أرز/مكرونة + فراخ/سمك + خضار). مثالي بس مش دايماً عملي. 1-2 ساعة قبل: وجبة متوسطة — سندوتش، شوفان مع بروتين، رايس كيك مع زبدة فول سوداني. كربوهيدرات + بروتين، دهون قليلة. 30-60 دقيقة قبل: سناك خفيف — موزة، تمر، رايس كيك، بروتين بار. كربوهيدرات سريعة الهضم. 15-30 دقيقة قبل: سوائل بس. تمرين صايم: كويس لحرق الدهون بس ممكن تخسر قوة. أسوأ فكرة: وجبة تقيلة دهنية قبل التمرين مباشرة. القاعدة الذهبية: ما تجربش أكل جديد قبل تمرين مهم!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
