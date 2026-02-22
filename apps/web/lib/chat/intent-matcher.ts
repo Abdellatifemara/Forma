@@ -10532,6 +10532,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── Isolation Exercise Form Cues ────────────────────────
+  {
+    keywords: ['bicep curl', 'bicep curl form', 'barbell curl', 'dumbbell curl', 'ez bar curl', 'hammer curl', 'preacher curl', 'curl form', 'curl technique'],
+    keywordsAr: ['تمرين باي', 'كيرل', 'بايسبس كيرل', 'فورم الكيرل', 'باربل كيرل', 'دمبل كيرل', 'هامر كيرل', 'بريشر كيرل'],
+    keywordsFranco: ['bicep curl', 'bayseps kerl', 'curl form', 'barbell curl', 'dumbbell curl', 'hammer curl', 'preacher curl'],
+    stateId: 'exercise_bicep_curl_form',
+    response: { en: 'Bicep Curl form: 1) Elbows pinned to sides — don\'t swing them forward, 2) Full extension at bottom, full squeeze at top, 3) Control the negative (3 sec down), 4) Don\'t lean back or use momentum. Variations: Barbell curl = heavy overload. EZ bar = easier on wrists. Dumbbell = each arm works independently. Hammer curl = brachialis + forearms. Preacher curl = eliminates cheating, peak contraction. Incline dumbbell curl = best stretch. Do 2-3 variations per arm day.', ar: 'فورم الكيرل: ١) الكوع ملزوق في جنبك — متأرجحوش للأمام، ٢) فرد كامل تحت وعصرة كاملة فوق، ٣) تحكم في النزول (٣ ثواني)، ٤) متتكيش ورا أو تستخدم مومنتم. أنواع: باربل كيرل = حمل تقيل. EZ بار = أريح على الرسغ. دمبل = كل إيد لوحدها. هامر كيرل = براكياليس + ساعد. بريشر كيرل = بيمنع الغش. اعمل ٢-٣ تمارين في يوم الباي.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['tricep', 'tricep exercise', 'tricep pushdown', 'skull crusher', 'overhead extension', 'tricep dip', 'tricep form', 'close grip bench', 'tricep kickback'],
+    keywordsAr: ['تمرين تراي', 'تراي بوش داون', 'سكال كراشر', 'تمديد علوي', 'فورم التراي', 'كلوز جريب بنش'],
+    keywordsFranco: ['tricep', 'tray', 'pushdown', 'skull crusher', 'overhead extension', 'tricep form', 'close grip bench'],
+    stateId: 'exercise_tricep_form',
+    response: { en: 'Tricep training: Pushdown (rope/bar): elbows pinned, push down and APART at bottom, squeeze. Skull crusher: lower bar to forehead level, elbows pointing ceiling, don\'t flare. Overhead extension: deep stretch behind head, elbows pointing forward. Close-grip bench: hands shoulder-width, elbows tucked. The long head (biggest part) is best hit with OVERHEAD movements. For maximum tricep size: 1 overhead + 1 pushdown + 1 compound = complete tricep development.', ar: 'تمارين التراي: بوش داون (حبل/بار): الكوع ثابت، ادفع لتحت وافتح في الأسفل. سكال كراشر: نزل البار لمستوى الجبهة، الكوع للسقف. تمديد علوي: تمدد عميق ورا الرأس، الكوع للأمام. كلوز جريب بنش: الإيدين بعرض الكتف، الكوع مضموم. الرأس الطويل (أكبر جزء) بيتشغل أفضل بتمارين فوق الرأس. لأقصى حجم: تمرين علوي + بوش داون + مركب.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['lateral raise', 'side raise', 'shoulder fly', 'lateral raise form', 'lateral raise technique', 'medial delt', 'side delt', 'wider shoulders'],
+    keywordsAr: ['رفع جانبي', 'لاترال ريز', 'سايد ريز', 'تمرين الكتف الجانبي', 'فورم الرفع الجانبي', 'كتف أوسع'],
+    keywordsFranco: ['lateral raise', 'side raise', 'lateral riz', 'katf ganby', 'katf awsa3', 'side delt'],
+    stateId: 'exercise_lateral_raise_form',
+    response: { en: 'Lateral Raise form: 1) Slight lean forward, slight bend in elbows, 2) Raise to shoulder height — NOT above (traps take over), 3) Lead with elbows, not hands — think "pouring water from a pitcher", 4) Pinky slightly higher than thumb at top, 5) SLOW negative — don\'t just drop the weight, 6) Use light weight (ego check!). Cable lateral raise: constant tension, superior to dumbbells. Do these 3-4x/week for wider shoulders. Most underrated exercise for aesthetics.', ar: 'فورم الرفع الجانبي: ١) ميل خفيف للأمام، ثني خفيف في الكوع، ٢) ارفع لمستوى الكتف — مش أعلى (التراب بياخد)، ٣) قود بالكوع مش الإيد — فكر "بتسكب ماء"، ٤) الخنصر أعلى من الإبهام فوق، ٥) نزول بطيء، ٦) استخدم وزن خفيف (سيب الإيجو!). كابل لاترال ريز: شد مستمر، أفضل من الدمبل. اعملها ٣-٤ مرات/أسبوع عشان كتف أعرض.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['face pull', 'face pulls', 'face pull form', 'rear delt', 'rear delt exercise', 'face pull technique', 'external rotation', 'shoulder health'],
+    keywordsAr: ['فيس بول', 'تمرين الكتف الخلفي', 'ريير ديلت', 'فورم الفيس بول', 'صحة الكتف', 'دوران خارجي'],
+    keywordsFranco: ['face pull', 'fes bol', 'rear delt', 'katf 5alfy', 'face pull form', 'se7et el katf'],
+    stateId: 'exercise_face_pull_form',
+    response: { en: 'Face Pull form: 1) Cable at face height, rope attachment, 2) Pull toward face, separating hands at end, 3) Elbows HIGH — at or above shoulder level, 4) Externally rotate at the end (hands above elbows), 5) Squeeze rear delts and hold 1-2 seconds, 6) Light weight, high reps (15-25). This is the #1 exercise for shoulder health and posture. Counteracts all the pressing movements. Do them EVERY training day. Prevents rotator cuff injuries and rounds out your shoulder.', ar: 'فورم الفيس بول: ١) الكابل على مستوى الوش، حبل، ٢) اسحب ناحية الوش مع فتح الإيدين في الآخر، ٣) الكوع عالي — على مستوى الكتف أو أعلى، ٤) دوران خارجي في النهاية (الإيد أعلى من الكوع)، ٥) اعصر الكتف الخلفي ثانية-٢، ٦) وزن خفيف، تكرارات عالية (١٥-٢٥). التمرين #١ لصحة الكتف والقوام. اعمله كل يوم تدريب!' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['shrug', 'shrugs', 'trap exercise', 'trapezius', 'barbell shrug', 'dumbbell shrug', 'shrug form', 'bigger traps', 'neck exercise'],
+    keywordsAr: ['شراج', 'تمرين تراب', 'ترابيزيوس', 'فورم الشراج', 'تراب أكبر', 'تمرين الرقبة'],
+    keywordsFranco: ['shrug', 'shrag', 'trap tamrin', 'shrug form', 'trap akbar', 'ra2aba tamrin'],
+    stateId: 'exercise_shrug_form',
+    response: { en: 'Shrug form: 1) Straight up and slightly back — not rolling in circles (myth!), 2) Hold at top for 2 seconds, squeeze traps HARD, 3) Full stretch at bottom — let shoulders drop completely, 4) Heavy weight is OK but maintain control. Barbell shrugs: heavier loading. Dumbbell shrugs: more range of motion. Behind-the-back barbell shrug: hits upper traps differently. For big traps: also do farmer\'s walks, deadlifts, and face pulls — these all build traps. Shrugs alone aren\'t enough.', ar: 'فورم الشراج: ١) ارفع لفوق وشوية لورا — متلفش في دواير (خرافة!)، ٢) امسك فوق ٢ ثانية واعصر التراب بقوة، ٣) تمدد كامل تحت — سيب الكتف تنزل تماماً، ٤) الوزن التقيل مسموح بس بتحكم. باربل شراج: حمل أتقل. دمبل شراج: مدى حركة أكتر. للتراب الكبير: اعمل كمان فارمر ووك، ديدلفت، وفيس بول — كلهم بيبنوا التراب. الشراج لوحده مش كفاية.' },
+    priority: 6,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
