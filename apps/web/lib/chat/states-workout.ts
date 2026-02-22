@@ -527,9 +527,15 @@ export const workoutStates: ChatState[] = [
     },
     back: 'WK_MENU',
     options: [
-      { id: 'wkc1', label: { en: 'Chest & Shoulders Day', ar: 'يوم صدر وكتف' }, icon: '💪', nextState: 'WK_CREATE_PUSH' },
-      { id: 'wkc2', label: { en: 'Back & Biceps Day', ar: 'يوم ضهر وباي' }, icon: '🏋️', nextState: 'WK_CREATE_PULL' },
-      { id: 'wkc3', label: { en: 'Leg Day', ar: 'Leg Day (رجل)' }, icon: '🦵', nextState: 'WK_CREATE_LEGS' },
+      // Egyptian gym splits (most popular in Egypt)
+      { id: 'wkc_chest', label: { en: 'Chest Day', ar: 'يوم صدر' }, icon: '🫁', nextState: 'WK_CREATE_CHEST' },
+      { id: 'wkc_back', label: { en: 'Back Day', ar: 'يوم ضهر' }, icon: '🔙', nextState: 'WK_CREATE_BACK' },
+      { id: 'wkc_shoulders', label: { en: 'Shoulder Day', ar: 'يوم كتف' }, icon: '🏋️', nextState: 'WK_CREATE_SHOULDERS' },
+      { id: 'wkc_arms', label: { en: 'Arms Day', ar: 'يوم دراع' }, icon: '💪', nextState: 'WK_CREATE_ARMS' },
+      { id: 'wkc3', label: { en: 'Leg Day', ar: 'يوم رجل' }, icon: '🦵', nextState: 'WK_CREATE_LEGS' },
+      // Combined splits
+      { id: 'wkc1', label: { en: 'Chest & Shoulders', ar: 'صدر وكتف' }, icon: '💪', nextState: 'WK_CREATE_PUSH' },
+      { id: 'wkc2', label: { en: 'Back & Biceps', ar: 'ضهر وباي' }, icon: '🏋️', nextState: 'WK_CREATE_PULL' },
       { id: 'wkc4', label: { en: 'Upper Body', ar: 'جزء علوي' }, icon: '💪', nextState: 'WK_CREATE_UPPER' },
       { id: 'wkc5', label: { en: 'Lower Body', ar: 'جزء سفلي' }, icon: '🦵', nextState: 'WK_CREATE_LOWER' },
       { id: 'wkc6', label: { en: 'Full Body', ar: 'Full Body' }, icon: '🏃', nextState: 'WK_CREATE_FULL' },
@@ -539,12 +545,16 @@ export const workoutStates: ChatState[] = [
     ],
   },
 
-  // Workout creation for each split (7 states)
-  ...(['PUSH', 'PULL', 'LEGS', 'UPPER', 'LOWER', 'FULL', 'CORE'] as const).map(split => {
+  // Workout creation for each split (11 states — 4 Egyptian + 7 combined)
+  ...(['CHEST', 'BACK', 'SHOULDERS', 'ARMS', 'PUSH', 'PULL', 'LEGS', 'UPPER', 'LOWER', 'FULL', 'CORE'] as const).map(split => {
     const names: Record<string, { en: string; ar: string }> = {
+      CHEST: { en: 'Chest Day', ar: 'يوم صدر' },
+      BACK: { en: 'Back Day', ar: 'يوم ضهر' },
+      SHOULDERS: { en: 'Shoulder Day', ar: 'يوم كتف' },
+      ARMS: { en: 'Arms Day', ar: 'يوم دراع' },
       PUSH: { en: 'Chest & Shoulders', ar: 'صدر وكتف' },
       PULL: { en: 'Back & Biceps', ar: 'ضهر وباي' },
-      LEGS: { en: 'Leg Day', ar: 'Leg Day' },
+      LEGS: { en: 'Leg Day', ar: 'يوم رجل' },
       UPPER: { en: 'Upper Body', ar: 'جزء علوي' },
       LOWER: { en: 'Lower Body', ar: 'جزء سفلي' },
       FULL: { en: 'Full Body', ar: 'Full Body' },

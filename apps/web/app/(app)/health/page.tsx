@@ -19,7 +19,6 @@ import {
   ChevronRight,
   Zap,
   Brain,
-  Crown,
   Sparkles,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -44,7 +43,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { healthMetricsApi, healthDataApi, type HealthMetricType, type CreateHealthMetricData, type SleepData } from '@/lib/api';
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/lib/i18n';
-import { useSubscription } from '@/hooks/use-subscription';
 import Link from 'next/link';
 
 /* =========================================================
@@ -356,48 +354,53 @@ function WeightChart({ isAr }: { isAr: boolean }) {
 
 function ConnectDeviceCTA({ isAr }: { isAr: boolean }) {
   const devices = [
-    { name: 'Apple Health', icon: '🍎', available: true },
-    { name: 'Google Fit', icon: '💚', available: true },
-    { name: 'WHOOP', icon: '💪', available: false },
-    { name: 'Garmin', icon: '🏃', available: false },
-    { name: 'OURA', icon: '💍', available: false },
+    { name: 'Apple Health', icon: '🍎' },
+    { name: 'Google Fit', icon: '💚' },
+    { name: 'WHOOP', icon: '💪' },
+    { name: 'Garmin', icon: '🏃' },
+    { name: 'OURA', icon: '💍' },
+    { name: 'Fitbit', icon: '⌚' },
+    { name: 'Samsung Health', icon: '📱' },
+    { name: 'Apple Watch', icon: '⌚' },
   ];
 
   return (
-    <Card className="card-premium border-dashed border-2 border-primary/20">
+    <Card className="card-premium border-dashed border-2 border-amber-500/20">
       <CardContent className="p-6 text-center">
-        <div className="mx-auto w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
-          <Smartphone className="h-7 w-7 text-primary" />
+        <div className="flex items-center justify-center gap-2 mb-3">
+          <div className="mx-auto w-14 h-14 rounded-2xl bg-amber-500/10 flex items-center justify-center">
+            <Smartphone className="h-7 w-7 text-amber-500" />
+          </div>
         </div>
-        <h3 className="font-semibold text-lg mb-1">
-          {isAr ? 'وصّل جهازك' : 'Connect Your Device'}
-        </h3>
+        <div className="flex items-center justify-center gap-2 mb-1">
+          <h3 className="font-semibold text-lg">
+            {isAr ? 'وصّل جهازك' : 'Connect Your Device'}
+          </h3>
+          <span className="text-[10px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-full px-2 py-0.5">
+            {isAr ? 'تجريبي' : 'BETA'}
+          </span>
+        </div>
         <p className="text-sm text-muted-foreground mb-4">
           {isAr
-            ? 'وصّل ساعتك الذكية عشان تتابع صحتك تلقائي'
-            : 'Sync your wearable for automatic health tracking'}
+            ? 'سجّل جهازك — الربط التلقائي هيبقى متاح مع التطبيق الموبايل. دلوقتي تقدر تسجّل بياناتك يدوي.'
+            : 'Register your device — auto-sync coming with the mobile app. For now, log your data manually.'}
         </p>
-        <div className="flex justify-center gap-3 mb-4">
+        <div className="flex flex-wrap justify-center gap-3 mb-4">
           {devices.map((d) => (
             <div key={d.name} className="relative flex flex-col items-center gap-1">
-              <div className={cn(
-                "h-10 w-10 rounded-xl flex items-center justify-center text-lg",
-                d.available ? "bg-muted" : "bg-muted/50 opacity-60"
-              )}>
+              <div className="h-10 w-10 rounded-xl flex items-center justify-center text-lg bg-muted">
                 {d.icon}
               </div>
               <span className="text-[10px] text-muted-foreground">{d.name}</span>
-              {!d.available && (
-                <span className="absolute -top-1 -right-1 text-[8px] bg-muted-foreground/20 text-muted-foreground rounded-full px-1.5 py-0.5 font-medium">
-                  {isAr ? 'قريباً' : 'Soon'}
-                </span>
-              )}
             </div>
           ))}
         </div>
-        <p className="text-xs text-muted-foreground mb-3">
-          {isAr ? 'متاح حالياً: Apple Health و Google Fit. باقي الأجهزة قريباً!' : 'Currently available: Apple Health & Google Fit. More devices coming soon!'}
-        </p>
+        <Button variant="outline" className="border-amber-500/30 text-amber-600 dark:text-amber-400 hover:bg-amber-500/10" asChild>
+          <Link href="/chat">
+            <Sparkles className="h-4 w-4 me-2" />
+            {isAr ? 'وصّل من الشات' : 'Connect via Chat'}
+          </Link>
+        </Button>
       </CardContent>
     </Card>
   );
@@ -662,95 +665,9 @@ function AddMetricDialog({
    MAIN HEALTH PAGE
    ========================================================= */
 
-/* =========================================================
-   PREMIUM+ TEASER — shown to non-Premium+ users
-   ========================================================= */
-
-function HealthTeaser({ isAr }: { isAr: boolean }) {
-  return (
-    <div className="space-y-6 pb-20 lg:pb-8">
-      <div>
-        <h1 className="text-3xl font-bold">{isAr ? 'لوحة الصحة' : 'Health Dashboard'}</h1>
-        <p className="text-muted-foreground">
-          {isAr ? 'تتبع صحتك الكاملة مع Premium+' : 'Track your complete health with Premium+'}
-        </p>
-      </div>
-
-      {/* Blurred preview */}
-      <div className="relative overflow-hidden rounded-2xl">
-        <div className="blur-sm pointer-events-none select-none opacity-50 space-y-4 p-1">
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="card-premium md:row-span-2">
-              <CardContent className="flex flex-col items-center py-8">
-                <RecoveryRing score={72} />
-                <div className="grid grid-cols-2 gap-4 mt-6 w-full">
-                  <div className="text-center p-3 rounded-xl bg-muted/50">
-                    <p className="text-lg font-bold">53</p>
-                    <p className="text-xs text-muted-foreground">HRV (ms)</p>
-                  </div>
-                  <div className="text-center p-3 rounded-xl bg-muted/50">
-                    <p className="text-lg font-bold">58</p>
-                    <p className="text-xs text-muted-foreground">RHR (bpm)</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="card-premium">
-              <CardContent className="py-6">
-                <StrainGauge strain={12.4} />
-              </CardContent>
-            </Card>
-            <Card className="card-premium">
-              <CardContent className="py-6">
-                <SleepBreakdown totalHours={7.2} isAr={isAr} />
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
-        {/* Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/80 backdrop-blur-sm rounded-2xl">
-          <div className="p-3 rounded-full bg-purple-500/10 mb-4">
-            <Crown className="h-8 w-8 text-purple-500" />
-          </div>
-          <h3 className="font-bold text-xl mb-2">
-            {isAr ? 'ارتقِ إلى Premium+' : 'Upgrade to Premium+'}
-          </h3>
-          <p className="text-sm text-muted-foreground mb-4 max-w-sm text-center px-4">
-            {isAr
-              ? 'تتبع التعافي، الإجهاد، النوم، HRV، ونبض القلب. وصّل ساعتك الذكية للمتابعة التلقائية.'
-              : 'Track recovery, strain, sleep, HRV, and heart rate. Connect your smartwatch for automatic syncing.'}
-          </p>
-          <div className="flex flex-col items-center gap-2">
-            <Button
-              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600"
-              asChild
-            >
-              <Link href="/signup?plan=premium_plus">
-                <Sparkles className="h-4 w-4 mr-2" />
-                {isAr ? 'ابدأ Premium+' : 'Get Premium+'}
-              </Link>
-            </Button>
-            <p className="text-xs text-muted-foreground">
-              {isAr ? 'ابتداءً من 999 جنيه/شهر' : 'Starting at 999 EGP/month'}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default function HealthPage() {
-  const { language } = useLanguage();
-  const isAr = language === 'ar';
-  const { isPremiumPlus, isLoading: subLoading } = useSubscription();
-
-  // Show teaser for non-Premium+ users
-  if (!subLoading && !isPremiumPlus) {
-    return <HealthTeaser isAr={isAr} />;
-  }
-
+  // Health dashboard available to all tiers — experimental feature
   return <HealthDashboard />;
 }
 
@@ -812,6 +729,23 @@ function HealthDashboard() {
 
   return (
     <div className={cn('space-y-6 pb-20 lg:pb-8', isAr && 'text-right font-cairo')}>
+      {/* Experimental Banner */}
+      <div className="flex items-center gap-3 rounded-xl border border-amber-500/30 bg-amber-500/5 p-4">
+        <div className="p-2 rounded-lg bg-amber-500/10">
+          <Sparkles className="h-5 w-5 text-amber-500" />
+        </div>
+        <div className="flex-1">
+          <p className="text-sm font-semibold text-amber-600 dark:text-amber-400">
+            {isAr ? 'ميزة تجريبية' : 'Experimental Feature'}
+          </p>
+          <p className="text-xs text-muted-foreground">
+            {isAr
+              ? 'لوحة الصحة وربط الأجهزة في مرحلة تجريبية. البيانات اليدوية شغّالة. ربط الأجهزة الذكية قريباً مع التطبيق الموبايل.'
+              : 'Health dashboard & device sync are experimental. Manual data entry works now. Smartwatch sync coming with the mobile app.'}
+          </p>
+        </div>
+      </div>
+
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
