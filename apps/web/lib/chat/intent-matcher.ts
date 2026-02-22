@@ -10015,6 +10015,62 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── Gym Techniques & Training Methods ────────────────────────
+  {
+    keywords: ['superset', 'super set', 'supersets', 'back to back', 'paired sets', 'antagonist superset', 'agonist superset'],
+    keywordsAr: ['سوبر سيت', 'سوبرسيت', 'تمرين متتالي', 'تمارين متتالية', 'تمارين ورا بعض'],
+    keywordsFranco: ['superset', 'super set', 'sober set', 'tamarin wara ba3d'],
+    stateId: 'workout_superset_guide',
+    response: { en: 'Supersets pair two exercises back-to-back with no rest between them. Antagonist supersets (e.g., biceps + triceps) save time and boost work capacity. Agonist supersets (e.g., two chest exercises) increase muscle fatigue for growth. Rest 60-90s between superset pairs. Great for cutting training time in half while maintaining volume.', ar: 'السوبر سيت هو إنك تعمل تمرينين ورا بعض من غير راحة بينهم. ممكن تمرينين لعضلات متعاكسة (باي + تراي) أو لنفس العضلة. استريح ٦٠-٩٠ ثانية بين كل جولة سوبر سيت. طريقة ممتازة توفر وقت وتزود الحجم التدريبي.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['dropset', 'drop set', 'dropsets', 'strip set', 'descending set', 'run the rack', 'mechanical dropset'],
+    keywordsAr: ['دروب سيت', 'دروبسيت', 'تنزيل الوزن', 'تخفيف الوزن', 'سيت نازل'],
+    keywordsFranco: ['dropset', 'drop set', 'drob set', 'nazzel el wazn', 'strip set'],
+    stateId: 'workout_dropset_guide',
+    response: { en: 'Drop sets: perform a set to failure, immediately reduce weight 20-30%, continue to failure again. Repeat 2-3 drops. Mechanical drop sets change the exercise angle instead of weight (e.g., incline → flat → decline press). Use drop sets on the LAST set of an exercise, 1-2 exercises per workout. Amazing for hypertrophy but very fatiguing — don\'t overuse.', ar: 'الدروب سيت: اعمل سيت لحد الفشل، نزل الوزن ٢٠-٣٠٪ وكمل تاني لحد الفشل. كرر ٢-٣ مرات. استخدمه في آخر سيت بس في ١-٢ تمرين في الجلسة. ممتاز للتضخيم بس بيتعب جداً — متكترش منه.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['giant set', 'giant sets', 'giantset', 'tri set', 'tri-set', 'triset', 'circuit training', 'circuit'],
+    keywordsAr: ['جاينت سيت', 'تراي سيت', 'دايرة تدريبية', 'سيركت', 'تمارين دائرية'],
+    keywordsFranco: ['giant set', 'tri set', 'circuit', 'da2ery', 'tamarin da2ereya'],
+    stateId: 'workout_giant_set_guide',
+    response: { en: 'Tri-sets: 3 exercises back-to-back. Giant sets: 4+ exercises in a row. Both target the same muscle group from different angles for maximum pump and metabolic stress. Example giant set for shoulders: lateral raise → front raise → rear delt fly → overhead press. Rest 2-3 minutes between rounds. Brutal but effective for hypertrophy and conditioning.', ar: 'التراي سيت: ٣ تمارين ورا بعض. الجاينت سيت: ٤ تمارين أو أكتر. كلهم بيستهدفوا نفس العضلة من زوايا مختلفة. مثال للكتف: رفع جانبي → رفع أمامي → ذبابة خلفي → ضغط علوي. استريح ٢-٣ دقايق بين الجولات.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['rest pause', 'rest-pause', 'rest pause set', 'cluster set', 'cluster sets', 'myo reps', 'myo-reps'],
+    keywordsAr: ['ريست بوز', 'كلاستر سيت', 'ميو ريبس', 'راحة قصيرة وكمل'],
+    keywordsFranco: ['rest pause', 'rest boz', 'cluster set', 'myo reps'],
+    stateId: 'workout_rest_pause',
+    response: { en: 'Rest-pause: do a set near failure, rest 10-15 seconds, squeeze out 2-3 more reps. Repeat 2-3 times. Cluster sets: break a heavy set of 6 into 3×2 with 15-20s rest between. Myo-reps: activation set to near failure, then 3-5 mini-sets of 3-5 reps with 10-15s rest. All methods accumulate more effective reps in less time.', ar: 'الريست بوز: اعمل سيت لحد قبل الفشل، استريح ١٠-١٥ ثانية، كمل ٢-٣ تكرارات. كرر ٢-٣ مرات. الكلاستر سيت: قسم سيت تقيل على مجموعات صغيرة مع ١٥-٢٠ ثانية راحة. كل الطرق دي بتزود عدد التكرارات الفعالة في وقت أقل.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['progressive overload', 'add weight', 'increase weight', 'progression', 'linear progression', 'double progression', 'how to progress', 'get stronger'],
+    keywordsAr: ['زيادة تدريجية', 'زود الوزن', 'تطور', 'تقدم', 'ازاي اقوى', 'زيادة الحمل'],
+    keywordsFranco: ['progressive overload', 'zawed el wazn', 'ezay a2wa', 'progression', 'zyada tadregeya'],
+    stateId: 'workout_progressive_overload',
+    response: { en: 'Progressive overload is THE key to muscle growth. Ways to progress: 1) Add weight (2.5-5kg when you hit top of rep range), 2) Add reps (8→10→12 then increase weight), 3) Add sets (more volume over time), 4) Improve form/tempo, 5) Reduce rest time. Double progression: work within a rep range (8-12), when you hit 12 on all sets, increase weight and start at 8 again.', ar: 'الزيادة التدريجية هي مفتاح بناء العضلات. طرق التقدم: ١) زود الوزن (٢.٥-٥ كيلو لما توصل لأعلى عدد تكرارات)، ٢) زود التكرارات، ٣) زود السيتات، ٤) حسن الفورم والإيقاع، ٥) قلل وقت الراحة. التقدم المزدوج: اشتغل في نطاق (٨-١٢)، لما توصل ١٢ في كل السيتات، زود الوزن وابدأ من ٨ تاني.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['tempo training', 'time under tension', 'tut', 'slow eccentric', 'eccentric training', 'negative reps', 'negatives', 'slow reps'],
+    keywordsAr: ['تمبو', 'وقت تحت الشد', 'تكرارات بطيئة', 'نيجاتيف', 'إيقاع التمرين', 'نزول بطيء'],
+    keywordsFranco: ['tempo', 'time under tension', 'slow reps', 'negatives', 'negative', 'nozol bate2'],
+    stateId: 'workout_tempo_training',
+    response: { en: 'Tempo training controls the speed of each rep phase. Written as 4 numbers (e.g., 3-1-2-0): eccentric-pause at bottom-concentric-pause at top. Slow eccentrics (3-4 seconds lowering) increase muscle damage and growth. Negatives: use heavier weight and focus only on the lowering phase (with a spotter). Time under tension of 40-70 seconds per set is ideal for hypertrophy.', ar: 'تدريب التمبو بيتحكم في سرعة كل مرحلة من التكرار. النزول البطيء (٣-٤ ثواني) بيزود تلف العضلات والنمو. النيجاتيف: استخدم وزن أتقل وركز على النزول بس (مع حد يساعدك). وقت تحت الشد ٤٠-٧٠ ثانية في السيت مثالي للتضخيم.' },
+    priority: 5,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
