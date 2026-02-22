@@ -7399,6 +7399,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'progress',
   },
 
+  // ── v68: Magnesium + Potassium + Hydration Calc + Egyptian Meal Prep + Protein Snacks ──
+  {
+    keywords: ['magnesium supplement', 'magnesium for sleep', 'magnesium for muscle', 'magnesium deficiency', 'magnesium types', 'magnesium glycinate', 'magnesium citrate', 'magnesium cramps'],
+    keywordsAr: ['مغنيسيوم مكمل', 'مغنيسيوم للنوم', 'مغنيسيوم للعضل', 'نقص مغنيسيوم', 'أنواع مغنيسيوم'],
+    keywordsFranco: ['magnesium', 'magnesium supplement', 'magnesium sleep', 'magnesium cramps'],
+    stateId: 'info_magnesium_guide',
+    response: { en: 'Magnesium — The #1 Deficiency in Athletes: WHY YOU NEED IT: Involved in 300+ enzymatic reactions. Crucial for muscle contraction, nerve function, sleep quality, and recovery. 50-80% of people are deficient! TYPES (important!): Magnesium Glycinate — BEST for sleep and relaxation. High absorption, gentle on stomach. Magnesium Citrate — good for general use, mild laxative effect. Magnesium Oxide — cheapest but worst absorption (only 4%). Avoid. Magnesium Threonate — best for brain/cognitive function. Magnesium Malate — good for energy and muscle performance. DOSAGE: 200-400mg elemental magnesium daily. Take before bed for sleep benefits. SIGNS OF DEFICIENCY: Muscle cramps (especially calves at night), poor sleep, anxiety, twitching eyelids, fatigue, headaches. FOOD SOURCES: Dark chocolate (70%+), spinach, almonds, avocado, bananas, pumpkin seeds. IN EGYPT: Magnesium glycinate available at iHerb or local pharmacies. Very affordable supplement. TIMING: Take 30-60 minutes before bed. Combine with zinc (ZMA formula) for enhanced sleep and recovery.', ar: 'المغنيسيوم — النقص #1 عند الرياضيين: ليه محتاجه: مشارك في 300+ تفاعل إنزيمي. ضروري لانقباض العضل، وظيفة الأعصاب، جودة النوم، الريكفري. 50-80% من الناس ناقصين! الأنواع: جلايسينات — الأفضل للنوم والاسترخاء. سيترات — كويس للاستخدام العام. أوكسايد — أرخص بس أسوأ امتصاص (4% بس). تجنبه. ثريونيت — الأفضل للمخ. ملات — كويس للطاقة والأداء العضلي. الجرعة: 200-400مج يومياً. خده قبل النوم. علامات النقص: تشنجات عضلية (خاصة السمانة بالليل)، نوم وحش، قلق، رعشة جفن، تعب. مصادر غذائية: شوكولاتة داكنة، سبانخ، لوز، أفوكادو، موز. التوقيت: 30-60 دقيقة قبل النوم. ادمجه مع زنك (ZMA).' },
+    priority: 7,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['potassium', 'potassium supplement', 'potassium food', 'potassium deficiency', 'potassium cramps', 'electrolyte balance', 'sodium potassium ratio', 'banana potassium'],
+    keywordsAr: ['بوتاسيوم', 'مكمل بوتاسيوم', 'بوتاسيوم أكل', 'نقص بوتاسيوم', 'بوتاسيوم تشنجات'],
+    keywordsFranco: ['potassium', 'potassium supplement', 'potassium cramps', 'banana potassium'],
+    stateId: 'info_potassium_guide',
+    response: { en: 'Potassium — Essential for Athletes: WHY: Regulates fluid balance, muscle contractions, nerve signals, and blood pressure. Athletes lose potassium through sweat. DAILY NEED: 3500-4700mg/day (most people get only 50% of this!). BEST FOOD SOURCES: Potato (1 medium = 900mg — MORE than banana!), banana (422mg), sweet potato (540mg), spinach (840mg/cup cooked), avocado (485mg), coconut water (600mg), yogurt (380mg), lentils (730mg/cup). IN EGYPT: Ful medames is rich in potassium! So is molokhiya, bamia, and most Egyptian cooked vegetables. DEFICIENCY SIGNS: Muscle cramps and weakness, fatigue, irregular heartbeat, constipation, tingling/numbness. SUPPLEMENT WARNING: Do NOT take high-dose potassium supplements without medical supervision! Too much potassium (hyperkalemia) can be dangerous for the heart. Get potassium from FOOD first. Only supplement if blood work shows deficiency. POTASSIUM vs SODIUM: Balance matters. High sodium + low potassium = high blood pressure. Aim for 2:1 potassium-to-sodium ratio. Reduce processed food (high sodium) and increase vegetables/fruits (high potassium).', ar: 'البوتاسيوم — أساسي للرياضيين: ليه: بينظم توازن السوائل، انقباضات العضل، إشارات الأعصاب، ضغط الدم. الاحتياج: 3500-4700مج/يوم (معظم الناس بياخدوا 50% بس!). أفضل المصادر: بطاطس (واحدة = 900مج — أكتر من الموز!)، موزة (422مج)، بطاطا (540مج)، سبانخ (840مج/كوب)، أفوكادو (485مج)، مية جوز هند (600مج). في مصر: الفول غني بالبوتاسيوم! وكمان الملوخية، البامية. علامات النقص: تشنجات، تعب، ضربات قلب غير منتظمة. تحذير: ما تاخدش مكملات بوتاسيوم جرعة عالية من غير إشراف طبي! البوتاسيوم الزيادة خطير على القلب. خد من الأكل الأول.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['hydration calculator', 'how much water', 'water intake', 'water per day', 'hydration for workout', 'dehydration signs', 'water weight training', 'electrolyte drink'],
+    keywordsAr: ['حاسبة ترطيب', 'كم مية', 'شرب مية', 'مية في اليوم', 'ترطيب تمرين', 'علامات جفاف'],
+    keywordsFranco: ['hydration calculator', 'how much water', 'water per day', 'dehydration signs'],
+    stateId: 'info_hydration_calculator',
+    response: { en: 'Hydration Calculator & Guide: FORMULA: Body weight (kg) × 0.033 = liters per day. 80kg person = ~2.6 liters MINIMUM. ADD for exercise: +500ml per 30 minutes of training. ADD for heat: +500ml-1L in Egyptian summer. ADD for caffeine: +250ml per cup of coffee. DEHYDRATION SIGNS: Dark yellow urine (should be pale straw), dry mouth, headache, dizziness, fatigue, reduced performance (even 2% dehydration = 10-20% performance drop!). TIMING: Morning: 500ml right after waking (you are dehydrated from sleep). Pre-workout: 500ml 30 minutes before training. During workout: 200-300ml every 15-20 minutes. Post-workout: 500ml+ (weigh yourself before/after to know exact loss). Throughout day: sip regularly, don\'t chug large amounts at once. WHAT TO DRINK: Water is sufficient for training under 60 minutes. Over 60 minutes: add electrolytes (sodium, potassium, magnesium). DIY sports drink: 1L water + 1/4 tsp salt + squeeze of lemon + 1 tbsp honey. URINE COLOR CHART: Clear = overhydrated (reduce). Pale yellow = perfect. Dark yellow = dehydrated (drink more). Brown = severely dehydrated (medical attention).', ar: 'حاسبة الترطيب: المعادلة: وزن الجسم (كج) × 0.033 = لترات/يوم. 80كج = ~2.6 لتر كحد أدنى. زوّد للتمرين: +500مل كل 30 دقيقة. زوّد للحرارة: +500مل-1لتر في صيف مصر. علامات الجفاف: بول أصفر غامق، فم جاف، صداع، دوخة، تعب، أداء منخفض (2% جفاف = 10-20% انخفاض أداء!). التوقيت: الصبح: 500مل بعد الصحيان. قبل التمرين: 500مل. خلال التمرين: 200-300مل كل 15-20 دقيقة. بعد التمرين: 500مل+. مشروب رياضي منزلي: 1لتر مية + ¼ ملعقة ملح + عصير ليمون + ملعقة عسل.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['egyptian meal prep', 'meal prep egypt', 'budget meal prep', 'weekly meal prep', 'bulk cooking', 'meal prep containers', 'meal prep bodybuilding egypt'],
+    keywordsAr: ['تحضير وجبات مصري', 'ميل بريب مصر', 'تحضير أسبوعي', 'طبخ بالجملة', 'ميل بريب ميزانية'],
+    keywordsFranco: ['meal prep egypt', 'meal prep budget', 'weekly meal prep', 'bulk cooking egypt'],
+    stateId: 'info_egyptian_meal_prep',
+    response: { en: 'Egyptian Meal Prep for Fitness — Budget-Friendly: WEEKLY PREP (Sunday): PROTEIN: Grill 2kg chicken breast (portion into 200g containers). Hard-boil 30 eggs (for the week). Cook 1kg lentils. Open 7 cans of tuna. CARBS: Cook large pot of rice (portion into containers). Make a batch of sweet potatoes (bake whole). Buy whole wheat bread for the week. VEGETABLES: Roast large tray of mixed vegetables. Prep raw salads (keep dressing separate). BUDGET DAILY PLAN: Breakfast (10 LE): 3 eggs + 2 bread + cheese. Snack (5 LE): 2 hard-boiled eggs. Lunch (30 LE): 200g chicken + rice + vegetables. Snack (10 LE): Tuna can + bread. Dinner (15 LE): Lentil soup + bread + salad. TOTAL: ~70 LE/day = ~2100 LE/month for CLEAN bodybuilding food! MACROS: ~150g protein, ~250g carbs, ~60g fat = ~2100 cal. CONTAINERS: Buy 14 containers from Carrefour/Kazyon (keep 7 in fridge, 7 in freezer). Label with day. TIPS: Cook in bulk on weekends. Use freezer for meals 4-7. Season differently (keeps it interesting).', ar: 'ميل بريب مصري للياقة — ميزانية: تحضير أسبوعي (الأحد): بروتين: اشوي 2كج صدور فراخ (قسمها في علب 200ج). اسلق 30 بيضة. اطبخ 1كج عدس. افتح 7 علب تونة. كربوهيدرات: اطبخ حلة أرز كبيرة. اعمل بطاطا (اشويها كاملة). اشتري عيش سن. خضار: اشوي صينية خضار مشكل. حضّر سلطات. خطة يومية بالميزانية: فطار (10ج): 3 بيض + 2 عيش + جبنة. سناك (5ج): 2 بيض مسلوق. غداء (30ج): 200ج فراخ + أرز + خضار. سناك (10ج): تونة + عيش. عشاء (15ج): شوربة عدس + عيش + سلطة. الإجمالي: ~70ج/يوم = ~2100ج/شهر لأكل كمال أجسام نظيف! الماكروز: ~150ج بروتين، ~250ج كارب، ~60ج دهون = ~2100 سعرة.' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['high protein snack', 'protein snack', 'gym snack', 'healthy snack protein', 'quick protein', 'snack between meals', 'protein on the go'],
+    keywordsAr: ['سناك بروتين', 'سناك جيم', 'سناك صحي بروتين', 'بروتين سريع', 'سناك بين الوجبات'],
+    keywordsFranco: ['protein snack', 'gym snack', 'high protein snack', 'quick protein'],
+    stateId: 'info_protein_snacks',
+    response: { en: 'High-Protein Snacks — Quick & Easy: GRAB AND GO: Hard-boiled eggs (6g each) — prep 10 on Sunday. Greek yogurt (15-20g per cup) — add honey and nuts. String cheese (7g each) — portable, no prep. Protein bar (20-30g) — convenient but check sugar content. Beef/chicken jerky (15g per serving) — expensive but travel-friendly. PREP-REQUIRED: Cottage cheese + fruit (14g per half cup). Tuna on rice cakes (25g per can). Turkey/chicken roll-ups (deli meat wrapped around cheese). Protein shake (25-50g) — fastest option. Edamame (17g per cup) — great if you can find them. EGYPTIAN-SPECIFIC: Lupini beans/termes (13g per cup — BEST cheap option). White cheese + tomato (20g per 100g cheese). Ful medames small plate (18g). Falafel/taameya (less protein, but filling). Labneh on bread (10g per serving). BUDGET RANKING: 1) Eggs (cheapest per gram protein). 2) Lupini/termes. 3) White cheese. 4) Canned tuna. 5) Greek yogurt. AIM: 20-40g protein per snack, 2-3 snacks between main meals.', ar: 'سناكات عالية البروتين: جاهزة للأخذ: بيض مسلوق (6ج كل واحدة) — حضّر 10 يوم الأحد. زبادي يوناني (15-20ج/كوب). جبنة خيط (7ج). بروتين بار (20-30ج). محتاجة تحضير: جبنة قريش + فاكهة (14ج/نص كوب). تونة على رايس كيك (25ج/علبة). شيك بروتين (25-50ج) — أسرع خيار. مصري: ترمس (13ج/كوب — أفضل خيار رخيص!). جبنة بيضا + طماطم (20ج/100ج). فول طبق صغير (18ج). لبنة على عيش (10ج). ترتيب الميزانية: 1) بيض (أرخص بروتين). 2) ترمس. 3) جبنة بيضا. 4) تونة. 5) زبادي يوناني. الهدف: 20-40ج بروتين/سناك، 2-3 سناكات بين الوجبات الرئيسية.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
