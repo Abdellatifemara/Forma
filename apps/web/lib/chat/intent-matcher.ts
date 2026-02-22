@@ -5369,6 +5369,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'root',
   },
 
+  // ── v34: Functional Training ───────────────────────────────
+  {
+    keywords: ['functional training', 'functional fitness', 'real world strength', 'functional exercises', 'everyday fitness', 'functional movement'],
+    keywordsAr: ['تمرين وظيفي', 'لياقة وظيفية', 'قوة حقيقية', 'تمارين وظيفية', 'حركة وظيفية'],
+    keywordsFranco: ['tamreen wazefy', 'leya2a wazefeya', '2owa 7a2e2eya', 'tamareen wazefeya'],
+    stateId: 'WK_MENU',
+    response: { en: 'Functional training: Exercises that improve real-life movement. TOP EXERCISES: Squats (sitting/standing), deadlifts (picking things up), overhead press (putting things on shelves), farmer walks (carrying groceries), Turkish get-up (getting off floor), lunges (stairs), push-ups, rows. PROGRAM: Combine 4-5 functional moves, 3x10-15, 3x/week. ADD: balance work (single leg), rotation (wood chops), carrying (farmer walks). Great for: injury prevention, aging well, sport performance. It\'s NOT just CrossFit — functional training is for everyone!', ar: 'التمرين الوظيفي: تمارين بتحسن الحركة في الحياة اليومية. أفضل التمارين: سكوات (قعود/وقوف)، ديدلفت (رفع حاجات)، أوفرهيد بريس (حط حاجات على الرف)، فارمر ووك (شيل أكياس)، تركش جت اب (قوم من الأرض)، لانجز (سلالم)، ضغط، رو. البرنامج: ادمج 4-5 تمارين وظيفية، 3×10-15، 3 مرات/أسبوع. ضيف: توازن (رجل واحدة)، دوران (وود تشوب)، حمل (فارمر ووك). ممتاز لـ: منع إصابات، شيخوخة صحية، أداء رياضي. مش كروس فيت بس — التمرين الوظيفي للكل!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v34: Mobility vs Flexibility ──────────────────────────────
+  {
+    keywords: ['mobility vs flexibility', 'what is mobility', 'mobility work', 'mobility routine', 'flexibility vs mobility', 'joint mobility'],
+    keywordsAr: ['المرونة مقابل الحركية', 'ايه الموبيليتي', 'تمارين موبيليتي', 'روتين موبيليتي', 'حركية المفاصل'],
+    keywordsFranco: ['mobility vs flexibility', 'eih el mobility', 'tamareen mobility', 'routine mobility', '7arakeyet el mafasel'],
+    stateId: 'WK_MENU',
+    response: { en: 'Mobility vs Flexibility: FLEXIBILITY = passive range (how far a muscle can stretch). MOBILITY = active range (how far you can move a joint with CONTROL). You need BOTH! MOBILITY ROUTINE (10min daily): 1) CARs (Controlled Articular Rotations) for each joint 2) Hip 90/90 switches 3) World\'s greatest stretch 4) Thoracic spine rotations 5) Ankle rocks 6) Shoulder pass-throughs with band. WHEN: Morning or pre-workout. CAN\'T squat deep? It\'s usually ankle or hip MOBILITY, not flexibility. Mobility work > static stretching for gym performance!', ar: 'موبيليتي مقابل فلكسبيليتي: المرونة = نطاق سلبي (قد ايه العضلة بتتمد). الحركية = نطاق نشط (قد ايه تقدر تحرك المفصل بتحكم). محتاج الاتنين! روتين موبيليتي (10 دقايق يومياً): 1) CARs (دوائر مفصلية متحكمة) لكل مفصل 2) هيب 90/90 3) أعظم استرتش في العالم 4) دورانات العمود الصدري 5) حركات الكاحل 6) شولدر باس ثرو بباند. امتى: الصبح أو قبل التمرين. مش قادر تنزل سكوات عميق؟ عادة موبيليتي الكاحل أو الوسط مش المرونة. تمارين الموبيليتي > الاسترتش الثابت لأداء الجيم!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v34: High Protein Breakfast ───────────────────────────────
+  {
+    keywords: ['high protein breakfast', 'protein breakfast ideas', 'best breakfast gym', 'breakfast for muscle', 'quick protein breakfast', 'what to eat morning'],
+    keywordsAr: ['فطار عالي البروتين', 'أفكار فطار بروتين', 'أفضل فطار جيم', 'فطار للعضل', 'فطار سريع بروتين'],
+    keywordsFranco: ['fatar 3aly el protein', 'afkar fatar protein', 'afdal fatar gym', 'fatar lel 3adal', 'fatar saree3 protein'],
+    stateId: 'NT_MENU',
+    response: { en: 'High protein breakfasts: QUICK (5min): 3-4 eggs any style + toast (25g P). Overnight oats + protein powder + PB (35g P). Greek yogurt + berries + nuts (25g P). EGYPTIAN STYLE: Ful medames + 2 boiled eggs + bread (35g P). Eggs with basterma (30g P). Cheese + eggs scramble (28g P). ON THE GO: Protein shake + banana (30g P). Ful sandwich from cart + boiled eggs (30g P). MEAL PREP: Egg muffins (make 12 on Sunday). KEY: 30g+ protein at breakfast = better muscle building, less hunger all day, more energy!', ar: 'فطار عالي البروتين: سريع (5 دقايق): 3-4 بيض أي طريقة + توست (25ج). أوفرنايت أوتس + بودر بروتين + زبدة فول سوداني (35ج). زبادي يوناني + توت + مكسرات (25ج). على الطريقة المصرية: فول + 2 بيض مسلوق + عيش (35ج). بيض بالبسطرمة (30ج). بيض مقلقل بجبنة (28ج). على الماشي: بروتين شيك + موزة (30ج). سندوتش فول من العربية + بيض مسلوق (30ج). ميل بريب: مافن بيض (اعمل 12 يوم الأحد). المفتاح: 30ج+ بروتين في الفطار = بناء عضل أفضل، جوع أقل طول اليوم، طاقة أكتر!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v34: Egyptian Street Food Calories ────────────────────────
+  {
+    keywords: ['street food calories egypt', 'koshari calories', 'ful calories', 'shawarma calories', 'egyptian food calories', 'hawawshi calories'],
+    keywordsAr: ['سعرات أكل الشارع', 'سعرات كشري', 'سعرات فول', 'سعرات شاورما', 'سعرات الأكل المصري', 'سعرات حواوشي'],
+    keywordsFranco: ['so3rat akl el share3', 'so3rat koshary', 'so3rat fool', 'so3rat shawarma', 'so3rat el akl el masry', 'so3rat 7awawshy'],
+    stateId: 'NT_MENU',
+    response: { en: 'Egyptian street food calories: Ful plate: ~300-400 cal (great protein!). Koshari (regular): ~600-800 cal. Taameya sandwich: ~350-450 cal. Shawarma sandwich: ~500-700 cal. Hawawshi: ~600-800 cal (high fat). Feteer meshaltet: ~800-1200 cal (fat bomb!). Liver (kebda) sandwich: ~400-500 cal. Grilled kofta plate: ~500-600 cal. Sweet potato (batata): ~200-300 cal. Tirmis (cup): ~150 cal (protein goldmine!). BEST choices: Ful, grilled anything, tirmis, batata. WORST: Feteer, fried taameya, heavy koshari. Egyptian food CAN be healthy — choose wisely!', ar: 'سعرات أكل الشارع المصري: طبق فول: ~300-400 سعرة (بروتين ممتاز!). كشري (عادي): ~600-800 سعرة. سندوتش طعمية: ~350-450 سعرة. سندوتش شاورما: ~500-700 سعرة. حواوشي: ~600-800 سعرة (دهون عالية). فطير مشلتت: ~800-1200 سعرة (قنبلة دهون!). سندوتش كبدة: ~400-500 سعرة. طبق كفتة مشوية: ~500-600 سعرة. بطاطا: ~200-300 سعرة. ترمس (كوباية): ~150 سعرة (منجم بروتين!). أفضل اختيارات: فول، أي حاجة مشوية، ترمس، بطاطا. أسوأ: فطير، طعمية مقلية، كشري تقيل. الأكل المصري ممكن يكون صحي — اختار بذكاء!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v34: Deload Week Guide ────────────────────────────────────
+  {
+    keywords: ['deload', 'deload week', 'how to deload', 'when to deload', 'recovery week', 'light week', 'should i deload'],
+    keywordsAr: ['ديلود', 'أسبوع ديلود', 'ازاي اديلود', 'امتى اديلود', 'أسبوع ريكفري', 'أسبوع خفيف'],
+    keywordsFranco: ['deload', 'osbo3 deload', 'ezay adeload', 'emta adeload', 'osbo3 recovery', 'osbo3 5afeef'],
+    stateId: 'WK_MENU',
+    response: { en: 'Deload guide: WHAT: 1 week of reduced training to recover. WHEN: Every 4-6 weeks, or when: strength plateaus, joint pain, poor sleep, dreading gym. HOW: Option A: Same exercises, 50% weight, same reps. Option B: Same weight, 50% sets. Option C: Completely different light activities (swimming, yoga). WHAT NOT TO DO: Skip gym entirely (active recovery is better), eat at huge deficit (recovery needs fuel). AFTER DELOAD: You should feel refreshed, stronger, and motivated. Think of it like sharpening an axe — you cut MORE wood after. Deloading is NOT weakness!', ar: 'دليل الديلود: إيه: أسبوع تمرين مخفف للريكفري. امتى: كل 4-6 أسابيع، أو لما: القوة تقف، ألم مفاصل، نوم سيئ، مش عايز تتمرن. ازاي: خيار أ: نفس التمارين، 50% وزن، نفس التكرارات. خيار ب: نفس الوزن، 50% سيتات. خيار ج: أنشطة خفيفة مختلفة (سباحة، يوجا). متعملش: تقطع الجيم خالص (ريكفري نشيط أفضل)، تقلل الأكل بزيادة (الريكفري محتاج وقود). بعد الديلود: لازم تحس بانتعاش، قوة، وتحفيز. فكر فيه زي تسنين الفأس — بتقطع خشب أكتر بعدها. الديلود مش ضعف!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v34: Ectomorph / Hard Gainer ──────────────────────────────
+  {
+    keywords: ['ectomorph', 'hard gainer', 'cant gain weight', 'too skinny', 'fast metabolism', 'how to gain weight', 'skinny guy gym'],
+    keywordsAr: ['إكتومورف', 'صعب الزيادة', 'مش قادر ازود وزن', 'نحيف جداً', 'أيض سريع', 'ازاي ازود وزن'],
+    keywordsFranco: ['ectomorph', 'sa3b el zyada', 'msh 2ader azawed wazn', 'ne7eef gedan', 'ayd saree3', 'ezay azawed wazn'],
+    stateId: 'NT_MENU',
+    response: { en: 'Hard gainer guide: TRUTH: You\'re not eating enough. Track calories for 1 week — you\'ll be shocked how little you eat. CALORIE BOOST: 1) Eat 500-700+ cal surplus 2) Eat every 3 hours (5-6 meals) 3) Drink calories (shakes: milk + oats + PB + banana + whey = 700cal) 4) Add olive oil to meals (120cal/tbsp) 5) Nuts as snacks (handful = 200cal). TRAINING: Focus on heavy compounds (squat, bench, deadlift, OHP), 3-4x/week, progressive overload. Don\'t do excessive cardio. Egyptian hack: Koshari + protein shake post-workout = massive calorie boost!', ar: 'دليل صعب الزيادة: الحقيقة: مش بتاكل كفاية. تتبع السعرات أسبوع — هتتفاجئ قد ايه بتاكل قليل. زيادة السعرات: 1) كل فائض 500-700+ سعرة 2) كل كل 3 ساعات (5-6 وجبات) 3) اشرب سعرات (شيك: لبن + شوفان + زبدة فول سوداني + موز + واي = 700 سعرة) 4) ضيف زيت زيتون للأكل (120 سعرة/ملعقة) 5) مكسرات سناك (حفنة = 200 سعرة). التمرين: ركز على المركبات الثقيلة (سكوات، بنش، ديدلفت، OHP)، 3-4 مرات/أسبوع، حمل تصاعدي. متعملش كارديو كتير. ترك مصري: كشري + بروتين شيك بعد التمرين = دفعة سعرات ضخمة!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v34: Gym Time Optimization ────────────────────────────────
+  {
+    keywords: ['gym time', 'efficient workout', 'fast workout', 'save time gym', 'busy schedule workout', '30 minute workout', 'quick gym session'],
+    keywordsAr: ['وقت الجيم', 'تمرين فعال', 'تمرين سريع', 'وفر وقت جيم', 'تمرين جدول مشغول', 'تمرين 30 دقيقة'],
+    keywordsFranco: ['wa2t el gym', 'tamreen fa3al', 'tamreen saree3', 'wafar wa2t gym', 'tamreen gadwal mashghool', 'tamreen 30 de2e2a'],
+    stateId: 'WK_MENU',
+    response: { en: 'Time-efficient gym strategies: 1) SUPERSETS: Pair opposing muscles (chest/back, biceps/triceps) — cut time 30% 2) REST-PAUSE: 1 set to failure, rest 15sec, more reps, rest 15sec, more reps — 3 sets in 1 3) DROP SETS: No rest, just reduce weight 3-4 times 4) COMPOUND FOCUS: Squat, bench, deadlift, OHP = whole body in 4 exercises 5) Timer: 90sec max rest between sets 6) Pre-plan: Write workout before arriving 7) Avoid peak hours (6-8pm). 30 MINUTE WORKOUT: 3 compound exercises, 3x8-10, supersetted = effective full body!', ar: 'استراتيجيات جيم موفرة للوقت: 1) سوبرسيتس: ادمج عضلات متقابلة (صدر/ظهر، باي/تراي) — وفر 30% وقت 2) ريست-بوز: سيت للفشل، راحة 15ث، تكرارات أكتر، راحة 15ث، تكرارات — 3 سيتات في 1 3) دروب سيتس: بدون راحة، قلل الوزن 3-4 مرات 4) تركيز مركبات: سكوات، بنش، ديدلفت، OHP = جسم كامل في 4 تمارين 5) تايمر: 90ث ماكس راحة 6) خطط قبل: اكتب التمرين قبل ما تروح 7) تجنب وقت الزحمة (6-8 مساءً). تمرين 30 دقيقة: 3 تمارين مركبة، 3×8-10، سوبرسيت = فول بادي فعال!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
