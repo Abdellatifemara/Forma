@@ -6412,6 +6412,61 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'progress',
   },
 
+  // ── v48: Myofascial Release ────────────────────────
+  {
+    keywords: ['myofascial release', 'trigger point', 'muscle knot', 'self massage', 'lacrosse ball massage', 'foam roll deep', 'tissue release', 'muscle tightness relief'],
+    keywordsAr: ['تحرير اللفافة العضلية', 'نقاط الزناد', 'عقد عضلية', 'تدليك ذاتي', 'كرة تنس تدليك', 'شد العضلات'],
+    keywordsFranco: ['ta7reer el lafafa el 3adaleya', 'no2at el zenad', '3o2ad 3adaleya', 'tadleek zaty', 'koret tennis tadleek'],
+    stateId: 'RE_MENU',
+    response: { en: 'Myofascial Release Guide: WHAT: Breaking up adhesions (knots) in muscle fascia to restore mobility and reduce pain. TOOLS: Foam roller (large areas — quads, back, IT band), lacrosse ball (targeted — glutes, shoulders, feet), massage gun (vibration therapy), tennis ball (gentler option). TECHNIQUE: Roll slowly, find tender spot, STAY on it 30-60sec (breathe through the discomfort), move to next spot. Don\'t roll directly on bones or joints. AREAS: IT band (runners), upper back (desk workers), hip flexors (everyone!), calves (runners), pec minor (forward shoulders). TIMING: Before workout = increase mobility (light rolling 2min per area). After workout = reduce soreness (deeper rolling 3-5min). REST DAYS: Full body rolling session 15-20min = amazing recovery. DON\'T: Roll your lower back directly (use lacrosse ball on spinal erectors instead), roll inflamed/injured areas, roll too aggressively (pain 6-7/10 max).', ar: 'دليل تحرير اللفافة: إيه: فك الالتصاقات (العقد) في لفافة العضلات لاستعادة الحركة وتقليل الألم. الأدوات: فوم رولر (مناطق كبيرة — كوادز، ظهر)، كرة لاكروس (مستهدفة — جلوتس، أكتاف، قدم)، مسدس تدليك، كرة تنس (ألطف). التكنيك: اتدحرج ببطء، لاقي النقطة المؤلمة، فضل عليها 30-60 ثانية (اتنفس)، انقل للنقطة التالية. الأماكن: IT band (عدائين)، أعلى الظهر (موظفين مكتب)، هيب فليكسورز (الكل!)، سمانة، صدر صغير. التوقيت: قبل التمرين = زيادة الحركة (رولنج خفيف 2 دقيقة). بعد التمرين = تقليل الوجع (أعمق 3-5 دقائق). أيام الراحة: جلسة كاملة 15-20 دقيقة = ريكفري ممتاز.' },
+    priority: 7,
+    domain: 'recovery',
+  },
+
+  // ── v48: Active Recovery ────────────────────────
+  {
+    keywords: ['active recovery', 'active rest day', 'recovery workout', 'light exercise recovery', 'recovery walk', 'recovery swim', 'what to do rest day'],
+    keywordsAr: ['ريكفري نشط', 'يوم راحة نشط', 'تمرين ريكفري', 'تمرين خفيف ريكفري', 'مشي ريكفري', 'ايه اعمل يوم الراحة'],
+    keywordsFranco: ['recovery nasheT', 'yom ra7a nasheT', 'tamreen recovery', 'tamreen 5afeef recovery', 'mashy recovery', 'eh a3mel yom el ra7a'],
+    stateId: 'RE_MENU',
+    response: { en: 'Active Recovery Guide: WHAT: Light movement on rest days to promote blood flow and healing WITHOUT adding training stress. BEST ACTIVITIES: Walking (30-45min — the KING of active recovery), light swimming, yoga/stretching, cycling at easy pace, foam rolling, mobility work. INTENSITY: RPE 3-4/10 (should be able to hold a conversation easily). Heart rate stays below 120bpm. WHY IT WORKS: Increased blood flow delivers nutrients to damaged muscles, removes waste products, reduces DOMS, improves mood. WHAT NOT TO DO: "Active recovery" that\'s actually a workout (CrossFit "recovery WOD" is NOT recovery). Don\'t turn it into training. FREQUENCY: 1-2 active recovery days per week. Complete rest (do nothing) is also fine sometimes — listen to your body. Egyptian style: A walk along the Nile or corniche = perfect active recovery!', ar: 'دليل الريكفري النشط: إيه: حركة خفيفة في أيام الراحة لتعزيز تدفق الدم والشفاء بدون إضافة ضغط تدريبي. أفضل الأنشطة: مشي (30-45 دقيقة — ملك الريكفري النشط)، سباحة خفيفة، يوغا/استريتش، عجلة بسرعة سهلة، فوم رولنج، حركة. الشدة: RPE 3-4/10 (لازم تقدر تتكلم بسهولة). نبض القلب تحت 120. ليه بيشتغل: تدفق دم أكتر بيوصل مغذيات للعضلات المتضررة، بيشيل الفضلات، بيقلل الـDOMS، بيحسن المزاج. متعملش: "ريكفري نشط" اللي فعلاً تمرين. متحولهوش لتدريب. التكرار: 1-2 يوم/أسبوع. الراحة الكاملة برضو كويسة أحياناً. على الطريقة المصرية: مشي على النيل أو الكورنيش = ريكفري نشط مثالي!' },
+    priority: 7,
+    domain: 'recovery',
+  },
+
+  // ── v48: Cold Plunge Science ────────────────────────
+  {
+    keywords: ['cold plunge', 'ice bath', 'cold water immersion', 'cold shower benefits', 'cold therapy', 'cold exposure', 'wim hof', 'cold plunge recovery'],
+    keywordsAr: ['حمام ثلج', 'غطس بارد', 'مية باردة ريكفري', 'دش بارد فوائد', 'علاج البرد', 'التعرض للبرد', 'ريكفري بارد'],
+    keywordsFranco: ['7amam talg', 'ghaTas bared', 'maya barda recovery', 'dosh bared fawa2ed', '3elag el bard', 'recovery bared'],
+    stateId: 'RE_MENU',
+    response: { en: 'Cold Plunge/Ice Bath Science: BENEFITS: Reduces inflammation, decreases DOMS (muscle soreness), boosts alertness (norepinephrine spike 200-300%), improves mood, may boost immune function. PROTOCOL: Water 10-15°C (50-59°F), 2-5 minutes (build up gradually), 2-4x/week. Start with cold showers (last 30sec cold, build to 2min). TIMING: NOT immediately after strength training (if you want muscle growth — cold blunts hypertrophy signals). Best: 4+ hours after training, or on rest days. GOOD FOR: After endurance training, between competition rounds, general recovery and mental toughness. CONTRAINDICATIONS: Heart conditions, Raynaud\'s, pregnancy. COLD SHOWERS: 80% of the benefits, 0% of the cost. End every shower with 1-2min cold. The mental toughness benefit alone is worth it. HUBERMAN protocol: 11 minutes total cold exposure per week (spread across 2-4 sessions).', ar: 'علم الغطس البارد/حمام الثلج: الفوائد: يقلل الالتهاب، يقلل وجع العضلات (DOMS)، يزود الصحيان (ارتفاع النورإبينفرين 200-300%)، يحسن المزاج، ممكن يعزز المناعة. البروتوكول: مية 10-15° مئوية، 2-5 دقائق (زود تدريجياً)، 2-4 مرات/أسبوع. ابدأ بالدش البارد (آخر 30 ثانية بارد، زود لـ2 دقيقة). التوقيت: مش مباشرة بعد تمرين القوة (لو عايز نمو عضلات — البرد بيقلل إشارات التضخم). الأفضل: 4+ ساعات بعد التمرين، أو أيام الراحة. كويس لـ: بعد تمرين التحمل، بين جولات المنافسة، ريكفري عام. موانع: أمراض القلب، رينودز، حمل. الدش البارد: 80% من الفوائد، 0% من التكلفة. خلص كل دش بـ1-2 دقيقة بارد!' },
+    priority: 7,
+    domain: 'recovery',
+  },
+
+  // ── v48: Static vs Dynamic Stretching ────────────────────────
+  {
+    keywords: ['static vs dynamic stretching', 'when to stretch', 'stretching before workout', 'stretching after workout', 'dynamic warm up', 'static stretch harm', 'best stretching routine'],
+    keywordsAr: ['استريتش ثابت ولا ديناميك', 'امتى اعمل استريتش', 'استريتش قبل التمرين', 'استريتش بعد التمرين', 'إحماء ديناميك', 'أفضل روتين استريتش'],
+    keywordsFranco: ['stretch sabet wala dynamic', 'emta a3mel stretch', 'stretch 2abl el tamreen', 'stretch ba3d el tamreen', 'e7ma2 dynamic', 'afdal routine stretch'],
+    stateId: 'WK_MENU',
+    response: { en: 'Static vs Dynamic Stretching: BEFORE workout = DYNAMIC (movement-based): Arm circles, leg swings, hip circles, walking lunges, high knees, butt kicks, bodyweight squats. 5-10min. WHY: Activates muscles, increases blood flow, prepares joints. AFTER workout = STATIC (hold stretches): Hold each stretch 30-60sec. Hamstrings, quads, hip flexors, chest, shoulders, calves. WHY: Improves flexibility over time, promotes relaxation. STATIC BEFORE WORKOUT = BAD: Reduces power output by 5-8% and increases injury risk (stretching cold muscles). EXCEPTION: If a muscle is extremely tight and limiting your ROM for an exercise, a brief static stretch (15sec) is OK. MOBILITY ≠ FLEXIBILITY: Mobility = active control of range of motion (what you want). Flexibility = passive range (what stretching gives). Best approach: Dynamic warm-up → Workout → Static cool-down → Foam roll.', ar: 'استريتش ثابت مقابل ديناميك: قبل التمرين = ديناميك (حركي): دوائر ذراع، أرجحة رجل، دوائر هيب، لانجز ماشي، ركب عالية. 5-10 دقائق. ليه: بينشط العضلات، يزود تدفق الدم، يجهز المفاصل. بعد التمرين = ثابت (استريتش ممسوك): امسك كل استريتش 30-60 ثانية. هامسترينج، كوادز، هيب فليكسورز، صدر، أكتاف. ليه: يحسن المرونة، يعزز الاسترخاء. ثابت قبل التمرين = سيء: يقلل القوة 5-8% ويزود خطر الإصابة. موبيليتي ≠ مرونة: الموبيليتي = تحكم نشط في مدى الحركة (اللي عايزه). المرونة = مدى سلبي. أفضل نظام: إحماء ديناميك → تمرين → استريتش ثابت → فوم رول.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v48: Complete Warm-Up Protocol ────────────────────────
+  {
+    keywords: ['warm up protocol', 'gym warm up', 'how to warm up', 'warm up routine', 'warm up before lifting', 'proper warm up', 'warm up sets', 'ramping sets'],
+    keywordsAr: ['بروتوكول الإحماء', 'إحماء الجيم', 'ازاي اسخن', 'روتين إحماء', 'إحماء قبل الحديد', 'إحماء صح', 'سيتات إحماء'],
+    keywordsFranco: ['protocol el e7ma2', 'e7ma2 el gym', 'ezay asa55an', 'routine e7ma2', 'e7ma2 2abl el 7adeed', 'e7ma2 sa7', 'sets e7ma2'],
+    stateId: 'WK_MENU',
+    response: { en: 'Complete Warm-Up Protocol: PHASE 1 — General (3-5min): Light cardio (walking, cycling, rowing) to raise body temperature. Heart rate up, light sweat. PHASE 2 — Dynamic Mobility (5min): Joint circles (neck, shoulders, hips, ankles), leg swings, arm circles, hip openers, bodyweight squats. Focus on muscles you\'ll train. PHASE 3 — Specific Warm-Up (ramp-up sets): Before your first exercise, do ascending weight sets. Example for 100kg bench: Empty bar × 15, 40kg × 10, 60kg × 5, 80kg × 3, 90kg × 1, then 100kg work sets. REST between warm-up sets: 30-60sec (not long). WHY: Activates motor units, reinforces movement patterns, prevents injury. TOTAL TIME: 10-15 minutes. SKIP warm-up at your own risk — the #1 cause of gym injuries is lifting heavy without warming up. Cold muscles tear. Warm muscles perform.', ar: 'بروتوكول إحماء كامل: مرحلة 1 — عام (3-5 دقائق): كارديو خفيف (مشي، عجلة) لرفع حرارة الجسم. نبض يرتفع، عرق خفيف. مرحلة 2 — موبيليتي ديناميك (5 دقائق): دوائر مفاصل (رقبة، أكتاف، هيب)، أرجحة رجل، دوائر ذراع، سكوات بوزن الجسم. ركز على العضلات اللي هتتمرنها. مرحلة 3 — إحماء خاص (سيتات صاعدة): قبل أول تمرين، اعمل سيتات بأوزان صاعدة. مثال لبنش 100 كيلو: بار فاضي × 15، 40 كيلو × 10، 60 × 5، 80 × 3، 90 × 1، بعدين 100 شغل. الراحة بين سيتات الإحماء: 30-60 ثانية. ليه: بينشط الوحدات الحركية، بيعزز أنماط الحركة، بيمنع الإصابة. الإجمالي: 10-15 دقيقة. تسكيب الإحماء = السبب رقم 1 لإصابات الجيم. عضلات باردة بتتقطع. عضلات سخنة بتؤدي.' },
+    priority: 8,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
