@@ -4603,6 +4603,116 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'health',
   },
 
+  // ── v26: Chest Training Deep Dive ──────────────────────────
+  {
+    keywords: ['chest workout', 'how to grow chest', 'chest exercises', 'bench press form', 'incline bench', 'chest fly', 'upper chest', 'lower chest'],
+    keywordsAr: ['تمرين صدر', 'ازاي اكبر الصدر', 'تمارين صدر', 'فورم بنش بريس', 'صدر علوي', 'صدر سفلي'],
+    keywordsFranco: ['tamreen sadr', 'ezay akabar el sadr', 'tamareen sadr', 'form bench press', 'sadr 3olwy', 'sadr sofli'],
+    stateId: 'WK_MENU',
+    response: { en: 'Chest training deep dive: UPPER CHEST: incline bench 30° (barbell or DB), incline flyes, landmine press. MID CHEST: flat bench press, DB press, cable crossover (mid). LOWER CHEST: decline press, dips (lean forward), high-to-low cable fly. KEY TIPS: 1) Retract scapula ("put shoulder blades in back pockets") 2) Arch slightly for more chest activation 3) Full ROM — touch chest on bench 4) 12-20 sets/week total 5) Mind-muscle connection: squeeze at top. Most Egyptian gym bros overtrain chest — quality > quantity!', ar: 'تمرين صدر متعمق: صدر علوي: بنش مائل 30° (بار أو دمبل)، فلاي مائل، لاندماين بريس. صدر وسط: فلات بنش، دمبل بريس، كابل كروس أوفر (وسط). صدر سفلي: ديكلاين بريس، ديبس (ميل لقدام)، كابل فلاي من فوق لتحت. نصايح مهمة: 1) ارجع الأكتاف لورا ("حط اللوح في جيبك الخلفي") 2) قوس خفيف لتفعيل الصدر أكتر 3) نطاق حركة كامل — لمس الصدر 4) 12-20 سيت/أسبوع إجمالي 5) تواصل عضلي: اعصر في الأعلى. أغلب شباب الجيم في مصر بيبالغوا في الصدر — الجودة > الكمية!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v26: Back Training Deep Dive ──────────────────────────────
+  {
+    keywords: ['back workout', 'how to grow back', 'back exercises', 'lat pulldown', 'row form', 'back width', 'back thickness', 'v taper'],
+    keywordsAr: ['تمرين ظهر', 'ازاي اكبر الظهر', 'تمارين ظهر', 'لات بول داون', 'عرض الظهر', 'سمك الظهر'],
+    keywordsFranco: ['tamreen dahr', 'ezay akabar el dahr', 'tamareen dahr', 'lat pulldown', '3ard el dahr', 'somk el dahr'],
+    stateId: 'WK_MENU',
+    response: { en: 'Back training deep dive: WIDTH (lats): wide grip pulldowns, pull-ups, straight arm pulldowns. THICKNESS (traps/rhomboids): barbell rows, T-bar rows, seated cable rows (close grip). LOWER BACK: deadlifts (conventional/RDL), back extensions, good mornings. KEY TIPS: 1) Pull with ELBOWS, not hands 2) Squeeze shoulder blades together 3) Controlled negatives (2-3sec) 4) Mix grip widths and angles 5) Deadlift 1x/week is enough 6) 15-22 sets/week for advanced. V-taper = wide lats + small waist. Most underrated exercise: face pulls!', ar: 'تمرين ظهر متعمق: عرض (لاتس): بول داون واسع، عقلة، سترايت آرم بول داون. سمك (ترابس/رومبويدز): بنت أوفر رو، تي بار رو، سيتد كابل رو (ضيق). أسفل الظهر: ديدلفت (عادي/RDL)، باك اكستنشن، جود مورنينج. نصايح: 1) اسحب بالكوع مش الإيد 2) اعصر اللوح مع بعض 3) سلبي متحكم (2-3ث) 4) نوع في عرض القبضة والزوايا 5) ديدلفت مرة/أسبوع كفاية 6) 15-22 سيت/أسبوع للمتقدم. في-تيبر = لاتس عريض + وسط صغير. أكتر تمرين محدش بيعمله: فيس بولز!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v26: Leg Training Deep Dive ───────────────────────────────
+  {
+    keywords: ['leg workout', 'leg day', 'how to grow legs', 'squat form', 'leg press', 'hamstring', 'quad exercise', 'calf training', 'skip leg day'],
+    keywordsAr: ['تمرين رجل', 'يوم رجل', 'ازاي اكبر الرجل', 'فورم سكوات', 'ليج بريس', 'عضلة خلفية', 'كواد', 'سمانة'],
+    keywordsFranco: ['tamreen regl', 'yom regl', 'ezay akabar el regl', 'form squat', 'leg press', '3adala 5alfeya', 'quad', 'semana'],
+    stateId: 'WK_MENU',
+    response: { en: 'Leg training deep dive: QUADS: squats, leg press, leg extensions, Bulgarian split squats, hack squats. HAMSTRINGS: RDL, lying leg curls, seated leg curls, good mornings. GLUTES: hip thrusts, sumo deadlifts, lunges, step-ups. CALVES: standing calf raises (heavy, full ROM), seated calf raises (bent knee). KEY: 1) Squat depth: parallel minimum (hip crease at knee level) 2) Knees CAN go past toes 3) 15-20 sets/week per group 4) Train calves 3-4x/week (stubborn muscle) 5) Never skip leg day — it boosts testosterone! The "never skip leg day" meme is real!', ar: 'تمرين رجل متعمق: كواد: سكوات، ليج بريس، ليج اكستنشن، بلغاري سبليت، هاك سكوات. خلفية: RDL، لاينج ليج كيرل، سيتد ليج كيرل، جود مورنينج. أرداف: هيب ثرست، سومو ديدلفت، لانجز، ستيب اب. سمانة: كاف ريزز واقف (ثقيل، نطاق كامل)، سيتد كاف ريز (ركبة مثنية). المفتاح: 1) عمق السكوات: بارالل على الأقل 2) الركبة ممكن تعدي الصوابع 3) 15-20 سيت/أسبوع لكل مجموعة 4) سمانة 3-4 مرات/أسبوع (عضلة عنيدة) 5) متعديش يوم الرجل — بيرفع التستوستيرون! الميم "متعديش يوم الرجل" حقيقي!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v26: Supplement Stacking ───────────────────────────────────
+  {
+    keywords: ['supplement stack', 'what supplements together', 'beginner supplement stack', 'advanced supplement stack', 'supplement combo'],
+    keywordsAr: ['ستاك مكملات', 'مكملات مع بعض', 'ستاك مبتدئ', 'ستاك متقدم', 'كومبو مكملات'],
+    keywordsFranco: ['stack mokamalat', 'mokamalat ma3 ba3d', 'stack mobtade2', 'stack mota2adem', 'combo mokamalat'],
+    stateId: 'SP_MENU',
+    response: { en: 'Supplement stacks: BEGINNER (3 essentials): Whey protein + Creatine (5g/day) + Multivitamin. INTERMEDIATE: Add Omega-3, Vitamin D (5000IU), Magnesium. ADVANCED: Add pre-workout, ZMA (sleep), ashwagandha (stress/test), citrulline (pump). BUDGET Egyptian stack: Whey (Rule 1 ~1200LE) + Creatine (Universal ~300LE) + Vitamin D (pharmacy ~50LE) = ~1550LE/month for basics. DON\'T waste money on: BCAAs (if you have whey), mass gainers (just eat more), test boosters (mostly useless).', ar: 'ستاكات المكملات: مبتدئ (3 أساسيات): واي بروتين + كرياتين (5ج/يوم) + ملتي فيتامين. متوسط: ضيف أوميجا-3، فيتامين د (5000IU)، ماغنسيوم. متقدم: ضيف بري وركاوت، ZMA (نوم)، أشواغاندا (توتر/تست)، سيترولين (بامب). ستاك مصري اقتصادي: واي (Rule 1 ~1200جنيه) + كرياتين (يونيفرسال ~300جنيه) + فيتامين د (صيدلية ~50جنيه) = ~1550جنيه/شهر للأساسيات. متصرفش فلوس على: BCAAs (لو معاك واي)، ماس جينر (كل أكتر بس)، تست بوستر (مفيش فايدة).' },
+    priority: 8,
+    domain: 'supplements',
+  },
+
+  // ── v26: Body Recomposition ───────────────────────────────────
+  {
+    keywords: ['body recomp', 'recomposition', 'lose fat gain muscle same time', 'build muscle lose fat', 'maingaining', 'lean bulk'],
+    keywordsAr: ['إعادة تكوين الجسم', 'خسارة دهون وبناء عضل', 'ريكومب', 'بناء عضل وحرق دهون', 'لين بالك'],
+    keywordsFranco: ['e3adet takween el gesm', '5asaret dohon w bena2 3adal', 'recomp', 'lean bulk'],
+    stateId: 'NT_MENU',
+    response: { en: 'Body recomp (lose fat + gain muscle): WHO it works for: beginners, overweight, returning after break. HOW: Eat at maintenance or slight deficit (-200 cal), HIGH protein (2-2.5g/kg), train hard 4-5x/week, prioritize sleep. Timeline: slow (3-6 months for visible results). Lean bulk alternative: surplus of +200-300 cal (gain 0.5-1kg/month). Dirty bulk (eating everything): NOT recommended — you\'ll gain too much fat. Track progress with photos + measurements, NOT just the scale!', ar: 'ريكومب (خسارة دهون + بناء عضل): لمين بيشتغل: مبتدئين، وزن زيادة، راجع بعد انقطاع. ازاي: كل ميتننس أو عجز خفيف (-200 سعرة)، بروتين عالي (2-2.5ج/كج)، تمرن بجد 4-5 مرات/أسبوع، أولوية النوم. المدة: بطيء (3-6 شهور لنتايج واضحة). لين بالك بديل: فائض +200-300 سعرة (زيادة 0.5-1كج/شهر). ديرتي بالك (أكل كل حاجة): مش محبذ — هتزود دهون كتير. تابع التقدم بصور + قياسات، مش الميزان بس!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v26: Pain vs Soreness ─────────────────────────────────────
+  {
+    keywords: ['pain vs soreness', 'sharp pain workout', 'is this pain normal', 'when to stop exercise', 'injury vs doms', 'should i train sore'],
+    keywordsAr: ['ألم ولا شد', 'ألم حاد', 'الألم ده طبيعي', 'امتى اوقف تمرين', 'إصابة ولا دومز', 'اتمرن وانا متكسر'],
+    keywordsFranco: ['alam wala shad', 'alam 7ad', 'el alam da tabi3y', 'emta awa2af tamreen', 'esaba wala doms', 'atmarren w ana metkaser'],
+    stateId: 'HP_MENU',
+    response: { en: 'Pain vs Soreness: NORMAL DOMS: dull ache, both sides equally, peaks 24-48hrs, improves with movement. RED FLAGS (stop training): sharp/stabbing pain, one side only, pain during exercise, swelling, clicking/popping, numbness/tingling, pain that worsens with movement. TRAIN SORE? Light training helps! But reduce weight 30-50%. If pain is 7+/10, REST. Rule of thumb: muscle soreness = train lighter, joint/tendon pain = REST and see a doctor if >1 week.', ar: 'ألم ولا شد عضلي: دومز طبيعي: ألم خفيف، الناحيتين متساوي، الذروة 24-48 ساعة، بيتحسن بالحركة. علامات خطر (وقف التمرين): ألم حاد/طعن، ناحية واحدة بس، ألم أثناء التمرين، تورم، طقطقة/طرقعة، تنميل، ألم بيزيد مع الحركة. اتمرن وانت متكسر؟ تمرين خفيف بيساعد! بس قلل الوزن 30-50%. لو الألم 7+/10، ريح. قاعدة عامة: شد عضلي = تمرن أخف، ألم مفصل/وتر = ريح وروح دكتور لو >أسبوع.' },
+    priority: 9,
+    domain: 'health',
+  },
+
+  // ── v26: Workout Music & Performance ──────────────────────────
+  {
+    keywords: ['workout music', 'gym playlist', 'music for training', 'best gym songs', 'music motivation', 'headphones gym'],
+    keywordsAr: ['موسيقى تمرين', 'بلايليست جيم', 'أغاني جيم', 'موسيقى تحفيز', 'سماعات جيم'],
+    keywordsFranco: ['mosee2a tamreen', 'playlist gym', 'aghany gym', 'mosee2a ta7feez', 'sama3at gym'],
+    stateId: 'QA_MENU',
+    response: { en: 'Music & workout performance: Studies show music improves performance 5-15%! BPM guide: Warm-up: 100-120 BPM. Strength training: 130-150 BPM. HIIT/Cardio: 150-180 BPM. Stretching: 80-100 BPM. Genres that work: hip hop, EDM, metal, Arabic shaabi/mahraganat (high energy!). Noise-canceling headphones = focus mode (people won\'t interrupt). Save your PR playlist for heavy sets. Tip: create separate playlists for different workout types!', ar: 'الموسيقى وأداء التمرين: دراسات أثبتت إن الموسيقى بتحسن الأداء 5-15%! دليل BPM: إحماء: 100-120. حديد: 130-150. HIIT/كارديو: 150-180. استرتش: 80-100. أنواع بتشتغل: هيب هوب، EDM، ميتال، شعبي/مهرجانات (طاقة عالية!). سماعات نويز كانسلينج = وضع التركيز (محدش هيزعجك). خلي بلايليست البي آر للسيتات الثقيلة. نصيحة: اعمل بلايليستات مختلفة لأنواع التمرين!' },
+    priority: 6,
+    domain: 'root',
+  },
+
+  // ── v26: Egyptian Street Workout & Parks ──────────────────────
+  {
+    keywords: ['street workout egypt', 'outdoor gym egypt', 'calisthenics egypt', 'park workout', 'free workout egypt', 'outdoor exercise'],
+    keywordsAr: ['ستريت وركاوت مصر', 'جيم برا', 'كاليسثنكس مصر', 'تمرين حديقة', 'تمرين مجاني', 'تمرين في الشارع'],
+    keywordsFranco: ['street workout masr', 'gym barra', 'calisthenics masr', 'tamreen 7adee2a', 'tamreen magany', 'tamreen fel share3'],
+    stateId: 'WK_MENU',
+    response: { en: 'Street workout in Egypt: SPOTS: Corniche (Alex & Cairo), Al-Azhar Park, public gardens with bars, beach areas (North Coast summer). EQUIPMENT: Pull-up bars, parallel bars, benches = full workout! ROUTINE: Pull-ups, dips, push-ups, muscle-ups, leg raises, pistol squats. COMMUNITY: Egyptian calisthenics community is growing — check Instagram/Facebook groups. Best time: early morning (avoid heat). FREE alternative to gym! Combine with running on Corniche for complete fitness.', ar: 'ستريت وركاوت في مصر: أماكن: كورنيش (اسكندرية والقاهرة)، حديقة الأزهر، حدائق عامة فيها بارات، أماكن بحر (ساحل صيف). معدات: عقلة، بارالل بار، كراسي = تمرين كامل! روتين: عقلة، ديبس، ضغط، ماسل اب، رفع رجل، بيستول سكوات. مجتمع: مجتمع الكاليسثنكس المصري بيكبر — شيك انستجرام/فيسبوك. أفضل وقت: الصبح بدري (تجنب الحر). بديل مجاني للجيم! ادمجه مع جري على الكورنيش لياقة كاملة.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v26: Shoulder Training Deep Dive ──────────────────────────
+  {
+    keywords: ['shoulder workout', 'how to grow shoulders', 'deltoid exercises', 'lateral raise', 'overhead press', 'rear delt', 'shoulder width', 'boulder shoulders'],
+    keywordsAr: ['تمرين كتف', 'ازاي اكبر الكتف', 'تمارين كتف', 'لاترال ريز', 'أوفرهيد بريس', 'كتف خلفي', 'عرض الكتف'],
+    keywordsFranco: ['tamreen ketf', 'ezay akabar el ketf', 'tamareen ketf', 'lateral raise', 'overhead press', 'ketf 5alfy', '3ard el ketf'],
+    stateId: 'WK_MENU',
+    response: { en: 'Shoulder training deep dive: FRONT DELT: overhead press (barbell/DB), front raises (already hit in chest work). SIDE DELT (key for width!): lateral raises (lean slightly, lift with elbows), cable laterals, machine laterals. REAR DELT: face pulls, reverse flyes, rear delt machine. KEY: 1) Side delts need HIGH volume (15-25 sets/week) 2) Light weight + high reps (15-25) for laterals 3) Don\'t ego lift laterals — use 5-10kg 4) Overhead press: moderate weight, full ROM 5) Rear delts every training day (3x15). Wide shoulders = V-taper illusion!', ar: 'تمرين كتف متعمق: أمامي: أوفرهيد بريس (بار/دمبل)، فرونت ريز (بيتمرن من تمرين الصدر). جانبي (المفتاح للعرض!): لاترال ريز (ميل شوية، ارفع بالكوع)، كابل لاترال، ماشين لاترال. خلفي: فيس بولز، ريفرس فلاي، ماشين رير ديلت. المفتاح: 1) الكتف الجانبي محتاج حجم عالي (15-25 سيت/أسبوع) 2) وزن خفيف + تكرارات عالية (15-25) للاترالز 3) متعاندش في وزن اللاترالز — استخدم 5-10كج 4) أوفرهيد بريس: وزن متوسط، نطاق كامل 5) كتف خلفي كل يوم تمرين (3×15). كتف عريض = خداع في-تيبر!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v26: Arm Training (Biceps & Triceps) ──────────────────────
+  {
+    keywords: ['arm workout', 'bicep workout', 'tricep workout', 'how to grow arms', 'bigger arms', 'bicep curl', 'arm day', 'arm exercises'],
+    keywordsAr: ['تمرين ذراع', 'تمرين باي', 'تمرين تراي', 'ازاي اكبر الدراع', 'دراع اكبر', 'بايسبس كيرل', 'يوم دراع'],
+    keywordsFranco: ['tamreen dera3', 'tamreen bicep', 'tamreen tricep', 'ezay akabar el dera3', 'dera3 akbar', 'bicep curl', 'yom dera3'],
+    stateId: 'WK_MENU',
+    response: { en: 'Arm training: BICEPS (2 heads): long head = incline curls, hammer curls. Short head = preacher curls, spider curls. Best overall: barbell curl, DB curl. TRICEPS (2/3 of arm size!): long head = overhead extension, skull crushers. Lateral head = pushdowns, close grip bench. KEY TIPS: 1) Triceps = 2/3 of arm — train them MORE 2) 10-15 sets/week each 3) Full ROM + squeeze at peak 4) Progressive overload still applies (don\'t just pump) 5) Cheat curls are okay occasionally for overload 6) Train arms 2x/week minimum for growth!', ar: 'تمرين دراع: باي (رأسين): طويل = إنكلاين كيرل، هامر كيرل. قصير = بريشر كيرل، سبايدر كيرل. الأفضل عموماً: باربل كيرل، دمبل كيرل. تراي (ثلثين حجم الدراع!): طويل = أوفرهيد اكستنشن، سكل كراشرز. جانبي = بوشداون، كلوز جريب بنش. نصايح: 1) التراي = ثلثين الدراع — مرنه أكتر 2) 10-15 سيت/أسبوع لكل 3) نطاق كامل + عصر في القمة 4) الحمل التصاعدي مهم (مش بس بامب) 5) تشييتنج كيرلز أوكي أحياناً للحمل الزايد 6) مرن الدراع مرتين/أسبوع على الأقل للنمو!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
