@@ -10579,6 +10579,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── Hormones & Fitness ────────────────────────
+  {
+    keywords: ['testosterone', 'boost testosterone', 'low testosterone', 'natural testosterone', 'test levels', 'testosterone food', 'testosterone exercise', 'testosterone sleep'],
+    keywordsAr: ['تستوستيرون', 'زيادة التستوستيرون', 'تستوستيرون طبيعي', 'هرمون الذكورة', 'رفع التستوستيرون'],
+    keywordsFranco: ['testosterone', 'testosteron', 'zyada testosterone', 'taby3y testosterone', 'hormon el zokora'],
+    stateId: 'health_testosterone_natural',
+    response: { en: 'Boost testosterone naturally: 1) Sleep 7-9 hours (biggest factor!), 2) Compound lifts heavy (squat, deadlift, bench), 3) Maintain 15-20% body fat (too lean OR too fat lowers T), 4) Zinc and vitamin D (supplement if deficient), 5) Minimize alcohol, 6) Manage stress (cortisol kills T), 7) Eat enough fats (0.8-1g per kg), 8) Don\'t overtrain. Foods: eggs, red meat, oysters, garlic, ginger, pomegranate. Avoid: soy excess, processed foods, excessive sugar. Get blood work done to check levels.', ar: 'زيادة التستوستيرون طبيعياً: ١) نوم ٧-٩ ساعات (أهم عامل!)، ٢) تمارين مركبة تقيلة (سكوات، ديدلفت، بنش)، ٣) حافظ على ١٥-٢٠٪ دهون (نحيف زيادة أو تخين بيقلل T)، ٤) زنك وفيتامين D، ٥) قلل الكحول، ٦) تحكم في الضغط (الكورتيزول بيقتل T)، ٧) كل دهون كفاية، ٨) متفرطش في التمرين. أكلات: بيض، لحمة حمرا، محار، ثوم، زنجبيل. اعمل تحليل دم.' },
+    priority: 6,
+    domain: 'health',
+  },
+  {
+    keywords: ['cortisol', 'stress hormone', 'lower cortisol', 'cortisol and muscle', 'cortisol and fat', 'stress and gym', 'stress belly fat'],
+    keywordsAr: ['كورتيزول', 'هرمون الضغط', 'تقليل الكورتيزول', 'كورتيزول والعضلات', 'كورتيزول والدهون', 'ضغط وجيم'],
+    keywordsFranco: ['cortisol', 'kortizon', 'stress hormone', 'ta2lil cortisol', 'stress w gym', 'stress belly'],
+    stateId: 'health_cortisol_management',
+    response: { en: 'Cortisol (stress hormone) kills gains when chronically high: breaks down muscle, stores belly fat, impairs recovery, disrupts sleep. Lower it: 1) Sleep 7-9 hours, 2) Don\'t train more than 60-75 min (cortisol spikes after), 3) Meditation/deep breathing 10 min/day, 4) Don\'t crash diet (extreme deficit raises cortisol), 5) Vitamin C (1000mg), magnesium, ashwagandha (proven to lower cortisol 30%), 6) Walk in nature, 7) Limit caffeine after 2pm.', ar: 'الكورتيزول (هرمون الضغط) لما بيكون عالي باستمرار بيهدم العضلات، بيخزن دهون البطن، بيعطل الاستشفاء. تقليله: ١) نوم ٧-٩ ساعات، ٢) متتمرنش أكتر من ٦٠-٧٥ دقيقة، ٣) تأمل/تنفس عميق ١٠ دقايق/يوم، ٤) متعملش دايت قاسي، ٥) فيتامين C، ماغنسيوم، أشواغاندا (مثبت إنها بتقلل الكورتيزول ٣٠٪)، ٦) امشي في الطبيعة، ٧) كافيين قبل ٢ الظهر بس.' },
+    priority: 5,
+    domain: 'health',
+  },
+  {
+    keywords: ['growth hormone', 'hgh', 'human growth hormone', 'boost growth hormone', 'growth hormone natural', 'growth hormone sleep', 'gh release'],
+    keywordsAr: ['هرمون النمو', 'زيادة هرمون النمو', 'هرمون النمو طبيعي', 'هرمون النمو والنوم'],
+    keywordsFranco: ['growth hormone', 'hgh', 'hormon el nomo', 'zyada hormon el nomo', 'gh'],
+    stateId: 'health_growth_hormone',
+    response: { en: 'Growth hormone (GH) boosts fat burning, muscle recovery, and tissue repair. Natural ways to increase: 1) Deep sleep (70% of GH released during deep sleep — sleep is #1!), 2) Intense exercise (heavy compound lifts, HIIT), 3) Intermittent fasting (16:8 increases GH 300-500%), 4) Reduce sugar (insulin suppresses GH), 5) Cold exposure, 6) Lose body fat (less fat = more GH), 7) GABA supplement before bed. Don\'t eat 2-3 hours before sleep (insulin blocks GH pulse).', ar: 'هرمون النمو (GH) بيزود حرق الدهون واستشفاء العضلات. طرق زيادته طبيعياً: ١) نوم عميق (٧٠٪ من GH بيتفرز في النوم العميق!)، ٢) تمرين مكثف (حديد تقيل، HIIT)، ٣) صيام متقطع (١٦:٨ بيزود GH ٣٠٠-٥٠٠٪)، ٤) قلل السكر (الأنسولين بيكبح GH)، ٥) تعرض للبرد، ٦) قلل الدهون. متاكلش ٢-٣ ساعات قبل النوم (الأنسولين بيمنع نبضة GH).' },
+    priority: 5,
+    domain: 'health',
+  },
+  {
+    keywords: ['insulin', 'insulin sensitivity', 'insulin resistance', 'blood sugar', 'glucose', 'glycemic index', 'gi', 'insulin and muscle', 'insulin and fat'],
+    keywordsAr: ['أنسولين', 'حساسية الأنسولين', 'مقاومة الأنسولين', 'سكر الدم', 'جلوكوز', 'مؤشر السكر'],
+    keywordsFranco: ['insulin', 'insulin sensitivity', 'insulin resistance', 'sokar el dam', 'glycemic index'],
+    stateId: 'health_insulin_sensitivity',
+    response: { en: 'Insulin is THE storage hormone — it shuttles nutrients into cells. Good insulin sensitivity = muscle gets nutrients. Poor sensitivity (resistance) = fat storage. Improve sensitivity: 1) Exercise (especially weight training — muscles become "sponges"), 2) Eat fiber with every meal, 3) Walk 10-15 min after meals, 4) Reduce processed carbs and sugar, 5) Apple cider vinegar before carb meals, 6) Cinnamon (1/2 tsp daily), 7) Sleep 7-9 hours. Post-workout is BEST time for carbs — insulin sensitivity peaks.', ar: 'الأنسولين هرمون التخزين — بيوصل المغذيات للخلايا. حساسية أنسولين كويسة = العضلات بتاخد المغذيات. مقاومة = تخزين دهون. تحسين الحساسية: ١) تمارين (خصوصاً حديد)، ٢) كل ألياف مع كل وجبة، ٣) امشي ١٠-١٥ دقيقة بعد الأكل، ٤) قلل الكارب المعالج والسكر، ٥) خل تفاح قبل الكارب، ٦) قرفة (نص معلقة/يوم)، ٧) نوم ٧-٩ ساعات. بعد التمرين أفضل وقت للكارب!' },
+    priority: 5,
+    domain: 'health',
+  },
+  {
+    keywords: ['estrogen', 'estrogen balance', 'estrogen and men', 'gyno', 'gynecomastia', 'man boobs', 'chest fat', 'anti estrogen', 'estrogen food'],
+    keywordsAr: ['استروجين', 'توازن الاستروجين', 'جاينو', 'تثدي', 'صدر دهون', 'استروجين عند الرجال'],
+    keywordsFranco: ['estrogen', 'gyno', 'gayno', 'man boobs', 'sadr dohon', 'anti estrogen'],
+    stateId: 'health_estrogen_balance',
+    response: { en: 'Estrogen balance for men: too high estrogen causes water retention, fat storage (especially chest/hips), mood issues, and gynecomastia. Manage naturally: 1) Lose body fat (fat cells produce estrogen!), 2) Eat cruciferous vegetables (broccoli, cauliflower — contain DIM), 3) Limit alcohol (raises estrogen), 4) Avoid plastic containers for hot food (xenoestrogens), 5) Zinc supplementation, 6) Good sleep. If you suspect high estrogen, get blood work: estradiol (E2) test. Don\'t take anti-estrogen supplements without medical guidance.', ar: 'توازن الاستروجين للرجال: استروجين عالي بيسبب احتباس ماء، تخزين دهون (خصوصاً الصدر/الورك)، مشاكل مزاج، وتثدي. التحكم طبيعياً: ١) قلل الدهون (الخلايا الدهنية بتنتج استروجين!)، ٢) كل خضروات صليبية (بروكلي، قرنبيط)، ٣) قلل الكحول، ٤) تجنب البلاستيك للأكل السخن، ٥) زنك، ٦) نوم كويس. لو شاكك: تحليل استراديول (E2). متاخدش مكملات ضد الاستروجين بدون طبيب.' },
+    priority: 5,
+    domain: 'health',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
