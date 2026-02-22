@@ -5996,6 +5996,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v42: Multivitamins ────────────────────────
+  {
+    keywords: ['multivitamin', 'daily vitamin', 'multivitamin for gym', 'do i need multivitamin', 'best multivitamin', 'vitamin deficiency gym', 'essential vitamins'],
+    keywordsAr: ['ملتي فيتامين', 'فيتامين يومي', 'ملتي فيتامين للجيم', 'محتاج ملتي فيتامين', 'أفضل ملتي فيتامين', 'نقص فيتامينات'],
+    keywordsFranco: ['multi vitamin', 'vitamin yawmy', 'multi vitamin lel gym', 'me7tag multi vitamin', 'afdal multi vitamin', 'na2s vitamins'],
+    stateId: 'SU_MENU',
+    response: { en: 'Multivitamins for Athletes: DO YOU NEED ONE? If your diet is varied and balanced, probably not. But most people\'s diets are NOT perfect. KEY vitamins for gym: Vitamin D (most people deficient — 2000-5000 IU/day), Magnesium (400mg — muscle/sleep), Zinc (15-30mg — testosterone, immunity), B vitamins (energy metabolism), Iron (women especially). WHEN: With breakfast (fat-soluble vitamins need food). BRANDS: In Egypt: Centrum, Opti-Men, Animal Pak (expensive but complete). Budget: Just get Vitamin D + Magnesium + Zinc separately (cheaper and more effective). AVOID: Mega-dose vitamins (more is NOT better), cheap gas station brands. FOOD FIRST: Eggs (B12, D), liver (iron, A, B12), oranges (C), nuts (E, Mg), dairy (calcium, D). Blood test every 6 months = best way to know what you actually need.', ar: 'ملتي فيتامين للرياضيين: محتاج واحد؟ لو أكلك متنوع ومتوازن، غالباً لا. بس أغلب الناس أكلها مش كامل. فيتامينات مهمة للجيم: فيتامين D (أغلب الناس ناقصين — 2000-5000 IU/يوم)، ماغنيسيوم (400mg — عضلات/نوم)، زنك (15-30mg — تستوستيرون، مناعة)، فيتامينات B (طاقة)، حديد (خصوصاً السيدات). امتى: مع الفطار (الفيتامينات الدهنية محتاجة أكل). في مصر: سنتروم، أوبتي-من، أنيمال باك. بادجت: خد فيتامين D + ماغنيسيوم + زنك لوحدهم (أرخص وأفعل). تجنب: جرعات عالية (أكتر مش أفضل)، ماركات رخيصة. الأكل الأول: بيض (B12, D)، كبدة (حديد، A)، برتقال (C)، مكسرات (E, Mg). تحليل دم كل 6 شهور = أفضل طريقة تعرف إنت محتاج إيه.' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
+  // ── v42: Pre-Workout Supplements Deep Dive ────────────────────────
+  {
+    keywords: ['pre workout supplement', 'best pre workout', 'pre workout ingredients', 'c4 pre workout', 'pre workout side effects', 'pre workout crash', 'stimulant pre workout', 'pre workout egypt'],
+    keywordsAr: ['مكمل بري وركاوت', 'أفضل بري وركاوت', 'مكونات البري وركاوت', 'أعراض البري وركاوت', 'بري وركاوت مصر'],
+    keywordsFranco: ['mokammel pre workout', 'afdal pre workout', 'mokawwenat el pre workout', 'a3rad el pre workout', 'pre workout masr'],
+    stateId: 'SU_MENU',
+    response: { en: 'Pre-Workout Deep Dive: KEY INGREDIENTS (what actually works): Caffeine (150-300mg — energy, focus), Citrulline Malate (6-8g — pump, blood flow), Beta-Alanine (3-5g — endurance, the tingles), Creatine (5g — but take daily not just pre), Tyrosine (1-2g — focus). RED FLAGS: Proprietary blends (hide doses), too much caffeine (>400mg), DMAA/DMHA (banned stimulants — heart risk). TIMING: 20-30min before training. TOLERANCE: Cycle off every 6-8 weeks (2 weeks off) to reset tolerance. CRASH: Usually from too much caffeine + sugar crash. Fix: lower dose, eat carbs before. COST in Egypt: 400-800 LE per tub (30 servings). BUDGET ALTERNATIVE: Black coffee + banana = works 80% as well for free. Or make your own: caffeine pill + citrulline powder + beta-alanine.', ar: 'بري وركاوت بالتفصيل: المكونات الرئيسية (اللي فعلاً بتشتغل): كافيين (150-300mg — طاقة، تركيز)، سيترولين (6-8g — بامب)، بيتا ألانين (3-5g — تحمل، الوخز)، كرياتين (5g — بس خده يومياً مش بس قبل)، تيروسين (1-2g — تركيز). علامات حمراء: خلطات سرية (بتخفي الجرعات)، كافيين زيادة (+400mg)، DMAA/DMHA (منبهات ممنوعة — خطر قلب). التوقيت: 20-30 دقيقة قبل. التحمل: ريست كل 6-8 أسابيع (أسبوعين أوف). في مصر: 400-800 جنيه/علبة. بديل رخيص: قهوة سوداء + موزة = بتشتغل 80% ومجاناً. أو اعمل بتاعك: حبة كافيين + سيترولين بودر + بيتا ألانين.' },
+    priority: 8,
+    domain: 'supplements',
+  },
+
+  // ── v42: Post-Workout Nutrition Window ────────────────────────
+  {
+    keywords: ['post workout nutrition', 'anabolic window', 'post workout meal', 'what to eat after gym', 'protein after workout', 'post workout shake', '30 minute window'],
+    keywordsAr: ['تغذية بعد التمرين', 'النافذة الأنابولية', 'وجبة بعد التمرين', 'اكل ايه بعد الجيم', 'بروتين بعد التمرين', 'شيك بعد التمرين'],
+    keywordsFranco: ['taghzeya ba3d el tamreen', 'el nafza el anabolic', 'wagba ba3d el tamreen', 'akol eh ba3d el gym', 'protein ba3d el tamreen'],
+    stateId: 'NU_MENU',
+    response: { en: 'Post-Workout Nutrition: THE MYTH: "You MUST eat within 30 minutes or lose gains!" REALITY: The anabolic window is more like 2-3 HOURS (if you ate pre-workout). If you trained fasted, then yes — eat within 60min. WHAT TO EAT: Protein (30-40g) + Fast carbs (50-80g). WHY carbs: Replenish glycogen, spike insulin (drives amino acids into muscles). BEST OPTIONS: Whey shake + banana (fastest), chicken + rice (solid meal), Greek yogurt + honey + oats, chocolate milk (surprisingly good). WORST: Nothing for 3+ hours, fatty meals (slow digestion), fiber-heavy meals. EGYPTIAN POST-WORKOUT: Foul sandwich + banana, koshari (high carb — good post-workout actually!), eggs + bread + honey. HYDRATION: Drink 500ml+ water. Add salt if you sweated a lot. Total daily protein matters MORE than timing!', ar: 'تغذية بعد التمرين: الخرافة: "لازم تاكل في 30 دقيقة وإلا هتخسر المكاسب!" الحقيقة: النافذة الأنابولية حوالي 2-3 ساعات (لو أكلت قبل التمرين). لو تمرنت صايم، أيوا — كل في 60 دقيقة. الأكل المطلوب: بروتين (30-40g) + كارب سريع (50-80g). ليه كارب: يملى الجلايكوجين، يرفع الأنسولين (يوصل الأمينو أسيد للعضلات). أفضل الخيارات: واي شيك + موزة (الأسرع)، فراخ + رز، زبادي يوناني + عسل + شوفان، لبن شوكولاتة (كويس فعلاً). الأسوأ: مفيش أكل 3+ ساعات، أكل دهني (هضم بطيء). مصري بعد التمرين: سندوتش فول + موزة، كشري (كارب عالي — كويس بعد التمرين!)، بيض + عيش + عسل. إجمالي البروتين اليومي أهم من التوقيت!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v42: Reverse Dieting ────────────────────────
+  {
+    keywords: ['reverse diet', 'reverse dieting', 'after diet what', 'diet recovery', 'metabolic adaptation reverse', 'add calories back', 'post diet plan'],
+    keywordsAr: ['ريفرس دايت', 'دايت عكسي', 'بعد الدايت', 'استعادة الميتابوليزم', 'رجوع السعرات', 'بعد الكت'],
+    keywordsFranco: ['reverse diet', 'diet 3aksy', 'ba3d el diet', 'este3adet el metabolism', 'rogo3 el so3rat'],
+    stateId: 'NU_MENU',
+    response: { en: 'Reverse Dieting: WHAT: Gradually increasing calories after a cut/diet to restore metabolism without gaining fat rapidly. WHY: After dieting, your metabolism is suppressed (adaptive thermogenesis). Jumping back to normal calories = rapid fat gain. HOW: Add 50-100 calories per week (mainly from carbs). Example: Cut at 1800cal → Week 1: 1900 → Week 2: 2000 → continue until maintenance (~2500+). DURATION: 8-16 weeks (slow but worth it). SIGNS it\'s working: Energy increasing, sleep improving, gym performance returning, weight stable or slight increase (mostly water/glycogen). MONITOR: Weight daily, average weekly. Expect 1-2kg water weight in first 2 weeks (not fat!). COMMON MISTAKE: Going from 1500cal diet straight to 2500cal = fat gain. Always reverse gradually. This is how bodybuilders maintain their physiques year-round!', ar: 'ريفرس دايت: إيه: زيادة السعرات تدريجياً بعد الكت/الدايت لاستعادة الحرق بدون زيادة دهون سريعة. ليه: بعد الدايت، الحرق بيقل (تكيف حراري). القفز مباشرة لسعرات عادية = زيادة دهون سريعة. إزاي: أضف 50-100 سعرة/أسبوع (غالباً من الكارب). مثال: كت عند 1800 → أسبوع 1: 1900 → أسبوع 2: 2000 → كمل لحد الصيانة (~2500+). المدة: 8-16 أسبوع (بطيء بس يستاهل). علامات النجاح: طاقة بتزيد، نوم بيتحسن، أداء الجيم بيرجع، وزن ثابت أو زيادة بسيطة (مية/جلايكوجين). غلطة شائعة: من 1500 سعرة دايركت لـ2500 = زيادة دهون. دايماً ريفرس تدريجي!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v42: Lifting Gear Guide ────────────────────────
+  {
+    keywords: ['lifting belt guide', 'wrist wraps guide', 'knee sleeves', 'lifting shoes', 'gym gear guide', 'when to use belt', 'weightlifting belt', 'lifting straps when'],
+    keywordsAr: ['دليل حزام الرفع', 'ريست رابس', 'ركبة سليفز', 'جزمة رفع', 'أدوات الجيم', 'امتى استخدم حزام', 'ليفتنج سترابس'],
+    keywordsFranco: ['daleel 7ezam el raf3', 'wrist wraps', 'rokba sleeves', 'gazmet raf3', 'adawat el gym', 'emta asta5dem 7ezam'],
+    stateId: 'WK_MENU',
+    response: { en: 'Lifting Gear Guide: BELT: Use for heavy squats/deads (80%+ 1RM). Increases intra-abdominal pressure = safer spine. DON\'T use for everything — train beltless for core strength. Types: lever (quick), prong (adjustable). 10mm width recommended. WRIST WRAPS: For heavy pressing (bench, OHP). Supports wrist joint. Don\'t wrap too tight. KNEE SLEEVES: Warmth + mild support. Use for squats. NOT a substitute for proper form. Neoprene 7mm recommended. LIFTING STRAPS: For heavy pulls (deadlift, rows, shrugs). Use when grip fails before target muscle. DON\'T rely on them — train grip too. SHOES: Flat sole for deadlifts (Converse work), raised heel for squats (weightlifting shoes), cushioned for cardio. COST in Egypt: Belt 200-500 LE, wraps 100-200, sleeves 200-400, straps 50-150. Buy from local gym shops or import from Amazon.', ar: 'دليل أدوات الرفع: الحزام: استخدمه للسكوات/ديدلفت التقيل (80%+ من الماكس). يزود الضغط داخل البطن = عمود فقري آمن. متستخدمهوش لكل حاجة — تمرن بدونه لقوة الكور. الأنواع: lever (سريع)، prong (قابل للضبط). 10mm عرض. ريست رابس: للضغط التقيل (بنش، OHP). يدعم مفصل الريست. متشدهمش أوي. نيي سليفز: دفا + دعم خفيف. للسكوات. 7mm نيوبرين. ليفتنج سترابس: للسحب التقيل (ديدلفت، رو). استخدمهم لما القبضة تفشل. متعتمدش عليهم — درب القبضة برضو. الجزم: فلات للديدلفت (كونفرس)، كعب عالي للسكوات، كوشن للكارديو. في مصر: حزام 200-500، رابس 100-200، سليفز 200-400، سترابس 50-150.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v42: Shoulder Warm-Up Protocol ────────────────────────
+  {
+    keywords: ['shoulder warm up', 'shoulder warmup', 'rotator cuff warm up', 'shoulder prehab', 'band pull apart', 'shoulder dislocates', 'warm up before bench'],
+    keywordsAr: ['إحماء الكتف', 'تسخين الكتف', 'إحماء الروتيتور كاف', 'إحماء قبل البنش', 'باند بول أبارت'],
+    keywordsFranco: ['e7ma2 el ketf', 'taskeen el ketf', 'e7ma2 el rotator cuff', 'e7ma2 2abl el bench', 'band pull apart'],
+    stateId: 'WK_MENU',
+    response: { en: 'Shoulder Warm-Up Protocol (DO THIS before every upper body day!): 1) Band pull-aparts: 3x15 (rear delts, external rotation). 2) Band dislocates: 2x10 (full ROM, go slow). 3) Face pulls with band: 2x15 (rear delts + external rotation). 4) Arm circles: 30sec each direction. 5) Wall slides: 2x10 (scapular mobility). 6) Light dumbbell external rotation: 2x12 each arm (2-3kg). TOTAL TIME: 5-7 minutes. WHY: Rotator cuff is the #1 injury in gyms. Cold shoulders + heavy pressing = torn rotator cuff. BEFORE BENCH: Do the warm-up above, then light bench (empty bar x 15, 40% x 10, 60% x 5, 80% x 3, then work sets). DAILY: Even on non-gym days, do 50 band pull-aparts. Your shoulders will thank you at 40!', ar: 'بروتوكول إحماء الكتف (اعمله قبل كل يوم أب بادي!): 1) باند بول أبارتس: 3×15. 2) باند ديسلوكيتس: 2×10 (ببطء). 3) فيس بولز بالباند: 2×15. 4) دوائر الذراع: 30 ثانية كل اتجاه. 5) وول سلايدز: 2×10. 6) إكسترنال روتيشن بدمبل خفيف: 2×12 كل ذراع (2-3 كيلو). الإجمالي: 5-7 دقائق. ليه: الروتيتور كاف أكتر إصابة في الجيم. أكتاف باردة + ضغط تقيل = قطع الروتيتور كاف. قبل البنش: اعمل الإحماء ده، بعدين بنش خفيف (بار فاضي ×15، 40% ×10، 60% ×5، 80% ×3، بعدين السيتات). يومياً: حتى في أيام الراحة، 50 باند بول أبارت. أكتافك هتشكرك لما توصل 40!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v42: Leg Press vs Squat ────────────────────────
+  {
+    keywords: ['leg press vs squat', 'squat vs leg press', 'leg press or squat', 'leg press enough', 'can leg press replace squat', 'leg press benefits', 'squat replacement'],
+    keywordsAr: ['ليج برس ولا سكوات', 'سكوات ولا ليج برس', 'ليج برس كفاية', 'ليج برس بدل سكوات', 'فوائد الليج برس'],
+    keywordsFranco: ['leg press wala squat', 'squat wala leg press', 'leg press kefaya', 'leg press badal squat', 'fawa2ed el leg press'],
+    stateId: 'WK_MENU',
+    response: { en: 'Leg Press vs Squat: SQUAT WINS for: Overall muscle activation (quads, glutes, hamstrings, core, back ALL work), functional strength, hormone response (more testosterone/GH release), athletic performance, core strength. LEG PRESS WINS for: Isolating quads, safe heavy loading (no spinal compression), easier to learn, good for high reps, people with back injuries. THE ANSWER: Do BOTH! Squat as your primary compound, leg press as accessory for extra quad volume. CAN\'T SQUAT? (back injury, mobility issues): Leg press + Romanian deadlift + lunges = covers everything squat does. WEIGHT COMPARISON: You can leg press 2-3x your squat weight (less stabilization needed). Don\'t compare the two. FORM TIP: Leg press — don\'t let knees cave in, don\'t go too deep (lower back lifts off pad = too deep), feet shoulder width.', ar: 'ليج برس مقابل سكوات: السكوات أفضل في: تنشيط العضلات الكلي (كوادز، جلوتس، هامسترينج، كور، ظهر كلهم)، قوة وظيفية، استجابة هرمونية، أداء رياضي، قوة الكور. الليج برس أفضل في: عزل الكوادز، تحميل آمن (بدون ضغط على العمود الفقري)، أسهل في التعلم، كويس للتكرارات العالية، ناس عندها إصابات ظهر. الإجابة: اعمل الاتنين! سكوات كتمرين أساسي، ليج برس كإضافة. مش قادر تعمل سكوات؟ (إصابة ظهر): ليج برس + رومانيان ديدلفت + لانجز = بيغطوا كل حاجة. مقارنة الأوزان: بتقدر تعمل ليج برس 2-3 أضعاف السكوات (ثبات أقل مطلوب). متقارنش. نصيحة فورم: متخليش الركب تدخل جوا، متنزلش أوي!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
