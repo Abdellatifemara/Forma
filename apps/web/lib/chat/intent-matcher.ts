@@ -10297,6 +10297,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── Egyptian Dairy & Protein Sources ────────────────────────
+  {
+    keywords: ['eggs', 'egg macros', 'boiled eggs', 'scrambled eggs', 'egg whites', 'omelette', 'how many eggs', 'eggs per day', 'egg cholesterol'],
+    keywordsAr: ['بيض', 'سعرات البيض', 'بيض مسلوق', 'بيض مقلي', 'بياض البيض', 'أومليت', 'كام بيضة', 'بيض في اليوم', 'كولسترول البيض'],
+    keywordsFranco: ['beid', 'eggs', 'beid maslo2', 'beid ma2li', 'omelette', 'kam beida', 'beid fel yom'],
+    stateId: 'nutrition_eggs_deep',
+    response: { en: 'Eggs are the GOAT of protein sources. 1 whole egg: 70 cal, 6g protein, 0.5g carbs, 5g fat. 1 egg white: 17 cal, 3.6g protein, 0g fat. Boiled = best (no added fat). Scrambled with oil: +45 cal per egg. 3-4 whole eggs/day is perfectly safe — the cholesterol myth is debunked. For cutting: 2 whole + 3-4 whites = 200 cal, 30g protein. Post-workout: whole eggs are actually better for muscle protein synthesis than whites alone.', ar: 'البيض أحسن مصدر بروتين. بيضة كاملة: ٧٠ سعرة، ٦ جرام بروتين، ٥ جرام دهون. بياض بيضة: ١٧ سعرة، ٣.٦ جرام بروتين. مسلوق = الأفضل. ٣-٤ بيضات كاملة/يوم آمن تماماً — خرافة الكولسترول اتفندت. للتنشيف: ٢ كاملة + ٣-٤ بياض = ٢٠٠ سعرة، ٣٠ جرام بروتين. البيض الكامل أفضل لبناء العضلات من البياض لوحده.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['white cheese', 'gibna beda', 'feta cheese', 'egyptian cheese', 'cheese macros', 'cheese protein', 'cottage cheese', 'cheese bodybuilding'],
+    keywordsAr: ['جبنة بيضا', 'جبنة قريش', 'جبنة فيتا', 'سعرات الجبنة', 'بروتين الجبنة', 'جبنة دايت', 'جبنة للجيم'],
+    keywordsFranco: ['gebna beda', 'gebna 2arish', 'feta', 'gebna calories', 'gebna diet', 'cottage cheese'],
+    stateId: 'nutrition_cheese_deep',
+    response: { en: 'Egyptian cheese comparison: Gibna Areesh (cottage): 100g = 98 cal, 11g protein, 3g carbs, 4g fat — BEST for diet! Gibna Beyda (white/feta): 100g = 264 cal, 14g protein, 4g carbs, 21g fat. Gibna Rumi: 100g = 387 cal, 25g protein, 2g carbs, 31g fat. For cutting: stick to areesh — highest protein-to-calorie ratio. For bulking: rumi adds easy calories. Pair areesh with honey or tomatoes for a protein-packed snack.', ar: 'مقارنة الجبن المصري: جبنة قريش: ١٠٠ جرام = ٩٨ سعرة، ١١ جرام بروتين — الأفضل للدايت! جبنة بيضا: ١٠٠ جرام = ٢٦٤ سعرة، ١٤ جرام بروتين، ٢١ جرام دهون. جبنة رومي: ١٠٠ جرام = ٣٨٧ سعرة، ٢٥ جرام بروتين، ٣١ جرام دهون. للتنشيف: القريش — أعلى نسبة بروتين للسعرات. القريش مع عسل أو طماطم سناك ممتاز.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['yogurt', 'zabadi', 'greek yogurt', 'laban', 'laban rayeb', 'yogurt macros', 'yogurt protein', 'yogurt bodybuilding', 'best yogurt'],
+    keywordsAr: ['زبادي', 'لبن رايب', 'زبادي يوناني', 'سعرات الزبادي', 'بروتين الزبادي', 'زبادي للجيم', 'لبن'],
+    keywordsFranco: ['zabadi', 'laban rayeb', 'greek yogurt', 'zabadi calories', 'zabadi lel gym', 'laban'],
+    stateId: 'nutrition_yogurt_deep',
+    response: { en: 'Yogurt comparison: Regular zabadi (100g): 60 cal, 3.5g protein. Greek yogurt (100g): 97 cal, 9g protein — nearly 3x the protein! Laban rayeb (100g): 40 cal, 3g protein. Greek yogurt is the gym champion. Add honey + nuts for a 200 cal, 15g protein snack. Before bed: Greek yogurt with casein-like slow digestion is perfect. Egyptian brands: Juhayna, Labanita, FAGE. Mix with protein powder for a protein pudding (40g protein!).', ar: 'مقارنة الزبادي: زبادي عادي (١٠٠ جرام): ٦٠ سعرة، ٣.٥ جرام بروتين. زبادي يوناني (١٠٠ جرام): ٩٧ سعرة، ٩ جرام بروتين — تقريباً ٣ أضعاف! لبن رايب (١٠٠ جرام): ٤٠ سعرة، ٣ جرام بروتين. الزبادي اليوناني بطل الجيم. ضيف عسل + مكسرات = سناك ٢٠٠ سعرة، ١٥ جرام بروتين. قبل النوم: زبادي يوناني مثالي لهضم بطيء.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['chicken breast', 'chicken macros', 'chicken protein', 'grilled chicken', 'chicken thigh', 'chicken vs beef', 'best meat protein'],
+    keywordsAr: ['صدر فرخة', 'فراخ مشوية', 'بروتين الفراخ', 'صدور دجاج', 'فخاد فراخ', 'فراخ ولا لحمة', 'أحسن لحمة بروتين'],
+    keywordsFranco: ['sadr far5a', 'fara5 mashweya', 'chicken breast', 'protein el fara5', 'f5ad fara5'],
+    stateId: 'nutrition_chicken_deep',
+    response: { en: 'Chicken breast (100g cooked): 165 cal, 31g protein, 0g carbs, 3.6g fat — king of lean protein! Chicken thigh (100g, skin on): 229 cal, 24g protein, 16g fat. Thigh without skin: 177 cal, 26g protein, 8g fat. Egyptian pricing makes chicken breast the most affordable protein per gram. Meal prep tip: cook 1kg chicken breast on Sunday, portion into 5 containers with rice and veggies. Each = 400 cal, 40g protein.', ar: 'صدر فرخة (١٠٠ جرام مطبوخ): ١٦٥ سعرة، ٣١ جرام بروتين، ٣.٦ جرام دهون — ملك البروتين! فخد فرخة (١٠٠ جرام بالجلد): ٢٢٩ سعرة، ٢٤ جرام بروتين. بدون جلد: ١٧٧ سعرة، ٢٦ جرام بروتين. الفراخ في مصر أرخص بروتين بالجرام. نصيحة: اطبخ ١ كيلو صدور يوم الأحد، قسمهم ٥ حصص مع أرز وخضار. كل واحدة = ٤٠٠ سعرة، ٤٠ جرام بروتين.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['tuna', 'canned tuna', 'tuna macros', 'tuna protein', 'tuna calories', 'tuna in oil', 'tuna in water', 'tuna bodybuilding', 'tuna mercury'],
+    keywordsAr: ['تونة', 'تونة معلبة', 'سعرات التونة', 'بروتين التونة', 'تونة بالزيت', 'تونة بالماء', 'تونة للجيم', 'تونة زئبق'],
+    keywordsFranco: ['tuna', 'tona', 'tuna calories', 'tuna protein', 'tona bel zeit', 'tona bel mayah'],
+    stateId: 'nutrition_tuna_deep',
+    response: { en: 'Tuna in water (1 can ~170g drained): 180 cal, 40g protein, 0g carbs, 1g fat — incredible protein density! Tuna in oil (drained): 280 cal, 38g protein, 12g fat. Water-packed is better for cutting. Budget bodybuilding staple in Egypt. Mercury concern: limit to 3-4 cans per week. Mix with areesh cheese + lemon for a 250 cal, 50g protein meal. Or make tuna salad with Greek yogurt instead of mayo.', ar: 'التونة بالماء (علبة ~١٧٠ جرام مصفاة): ١٨٠ سعرة، ٤٠ جرام بروتين، ١ جرام دهون — كثافة بروتين مذهلة! التونة بالزيت (مصفاة): ٢٨٠ سعرة، ٣٨ جرام بروتين. بالماء أفضل للتنشيف. أساسي للبادي بلدنج في مصر وسعره كويس. حد أقصى: ٣-٤ علب في الأسبوع (زئبق). اخلطها مع قريش + ليمون = ٢٥٠ سعرة، ٥٠ جرام بروتين.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
