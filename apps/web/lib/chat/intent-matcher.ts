@@ -239,10 +239,15 @@ const NOISE_PREFIXES = [
   'can you', 'could you', 'please', 'can i', 'how do i', 'how to',
   'let me', "let's", 'lets', 'help me', 'help me with',
   'go to', 'navigate to', 'switch to',
+  // Filler words/starters
+  'yo', 'bro', 'dude', 'man', 'listen', 'btw', 'by the way', 'basically',
+  'actually', 'so', 'well', 'ok so', 'alright', 'hey',
   // Arabic noise
   'عايز', 'عاوز', 'محتاج', 'ممكن', 'خليني', 'وريني', 'هاتلي',
+  'يعني', 'طيب', 'خلاص', 'بص',
   // Franco
   '3ayez', '3awez', 'me7tag', 'momken', '5aliny', 'wareny', 'hatly',
+  'ya3ny', 'tayeb', '5alas', 'bos',
 ];
 
 function stripNoise(text: string): string {
@@ -675,6 +680,15 @@ function parseFoodPortion(text: string): FoodPortion | null {
     const food = aFood[1].trim();
     if (FOOD_NAMES.some(f => food.includes(f) || f.includes(food))) {
       return { food, quantity: '1' };
+    }
+  }
+
+  // Pattern: "a plate of X", "a bowl of Y", "a cup of Z", "طبق كشري"
+  const servingMatch = lower.match(/(?:a |one )?(plate|bowl|cup|handful|glass|bottle|can|طبق|طاسة|كوب|قطعة|علبة|ازازة)\s+(?:of\s+)?(.+)/);
+  if (servingMatch) {
+    const food = servingMatch[2].trim();
+    if (FOOD_NAMES.some(f => food.includes(f) || f.includes(food))) {
+      return { food, quantity: '1', unit: servingMatch[1] };
     }
   }
 
@@ -1248,6 +1262,70 @@ const INTENT_RULES: IntentRule[] = [
     stateId: 'WK_FORM_MENU',
     response: { en: "Let's check your form:", ar: 'يلا نشوف الفورم:' },
     priority: 8,
+    domain: 'workout',
+  },
+
+  // ── Exercise Form Cues (v14) ─────────────────────────────────
+  {
+    keywords: ['squat form', 'how to squat', 'squat technique', 'squat cues'],
+    keywordsAr: ['فورم السكوات', 'ازاي اعمل سكوات'],
+    keywordsFranco: ['form el squat', 'ezay a3mel squat'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: 'Squat cues: 1) Feet shoulder-width, toes slightly out 2) Brace core, deep breath 3) Sit back like a chair 4) Knees track over toes 5) Drive through full foot 6) Chest up, back neutral', ar: 'فورم السكوات: 1) القدم بعرض الكتف، الأصابع للبرا شوية 2) شد الكور، خد نفس عميق 3) قعد ورا زي الكرسي 4) الركبة في اتجاه الأصابع 5) ادفع بالقدم كلها 6) صدرك لفوق، الضهر مستقيم' },
+    priority: 10,
+    domain: 'workout',
+  },
+  {
+    keywords: ['deadlift form', 'how to deadlift', 'deadlift technique', 'deadlift cues'],
+    keywordsAr: ['فورم الديدلفت', 'ازاي اعمل ديدلفت'],
+    keywordsFranco: ['form el deadlift', 'ezay a3mel deadlift'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: 'Deadlift cues: 1) Bar over mid-foot 2) Hip-width stance 3) Grip just outside knees 4) Flat back, chest up 5) Push floor away 6) Lock hips at top, don\'t hyperextend 7) Lower in reverse', ar: 'فورم الديدلفت: 1) البار فوق نص القدم 2) القدم بعرض الحوض 3) امسك البار برا الركبة 4) ضهر مفرود، صدر لفوق 5) ادفع الأرض بعيد 6) اقفل الحوض فوق من غير ما تعمل قوس' },
+    priority: 10,
+    domain: 'workout',
+  },
+  {
+    keywords: ['bench press form', 'how to bench', 'bench technique', 'bench cues'],
+    keywordsAr: ['فورم البنش', 'ازاي اعمل بنش'],
+    keywordsFranco: ['form el bench', 'ezay a3mel bench'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: 'Bench press cues: 1) Eyes under bar 2) Arch back slightly, retract shoulder blades 3) Feet flat on floor 4) Grip 1.5x shoulder width 5) Lower to mid-chest 6) Drive through feet, push up & slightly back', ar: 'فورم البنش: 1) العين تحت البار 2) قوّس ضهرك شوية، ارجع الكتف لورا 3) القدم مسطحة على الأرض 4) امسك 1.5 عرض الكتف 5) نزّل لنص الصدر 6) ادفع من الرجل واضغط لفوق' },
+    priority: 10,
+    domain: 'workout',
+  },
+  {
+    keywords: ['pull up form', 'how to pull up', 'pull up technique', 'pullup form'],
+    keywordsAr: ['فورم العقلة', 'ازاي اعمل عقلة', 'فورم بول اب'],
+    keywordsFranco: ['form el pull up', 'ezay a3mel 3a2la'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: 'Pull-up cues: 1) Dead hang, shoulder-width grip 2) Engage lats (think: put shoulder blades in back pockets) 3) Pull elbows to hips 4) Chin over bar 5) Lower controlled. Can\'t do one? Start with negatives or band-assisted!', ar: 'فورم العقلة: 1) ابدأ من وضع التعلق 2) فعّل اللاتس (فكر: حط الكتف في جيبك الخلفي) 3) اسحب الكوع للحوض 4) الدقن فوق البار 5) انزل ببطء. مش قادر تعمل واحدة؟ ابدأ بالنيجاتيف أو بالباند!' },
+    priority: 10,
+    domain: 'workout',
+  },
+  {
+    keywords: ['overhead press form', 'how to ohp', 'shoulder press form', 'ohp technique'],
+    keywordsAr: ['فورم الأوفرهيد', 'ازاي اعمل شولدر بريس'],
+    keywordsFranco: ['form el overhead', 'ezay a3mel shoulder press'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: 'OHP cues: 1) Feet hip-width 2) Bar at collarbone level 3) Brace core, squeeze glutes 4) Press up & slightly back (clear your head) 5) Lock out overhead 6) Bar over mid-foot at top', ar: 'فورم الأوفرهيد: 1) القدم بعرض الحوض 2) البار عند الترقوة 3) شد الكور والجلوت 4) اضغط لفوق وورا شوية (عدّي الراس) 5) اقفل فوق 6) البار فوق نص القدم' },
+    priority: 10,
+    domain: 'workout',
+  },
+  {
+    keywords: ['hip thrust form', 'how to hip thrust', 'glute bridge form'],
+    keywordsAr: ['فورم الهيب ثراست', 'ازاي اعمل هيب ثراست'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: 'Hip thrust cues: 1) Upper back on bench 2) Bar on hip crease (use pad) 3) Feet shoulder-width, knees 90° at top 4) Drive through heels 5) Squeeze glutes hard at top 6) Chin tucked (don\'t hyperextend neck)', ar: 'فورم الهيب ثراست: 1) أعلى الضهر على البنش 2) البار على الحوض (استخدم باد) 3) القدم بعرض الكتف 4) ادفع بالكعب 5) اعصر الجلوت فوق 6) الدقن لتحت (متمدش رقبتك)' },
+    priority: 10,
+    domain: 'workout',
+  },
+  {
+    keywords: ['row form', 'barbell row form', 'how to row', 'row technique'],
+    keywordsAr: ['فورم الرو', 'ازاي اعمل رو'],
+    keywordsFranco: ['form el row', 'ezay a3mel row'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: 'Row cues: 1) Hinge at hips, 45° torso 2) Let arms hang straight 3) Pull to lower chest/upper abs 4) Squeeze shoulder blades together 5) Lower controlled 6) Don\'t use momentum — if you jerk, lower the weight', ar: 'فورم الرو: 1) اتكي من الحوض، الجسم 45 درجة 2) سيب الدراع يتعلق 3) اسحب لأسفل الصدر/فوق البطن 4) اعصر الكتف لبعض 5) نزّل ببطء 6) متستخدمش سوينج — لو بتهز، خفف الوزن' },
+    priority: 10,
     domain: 'workout',
   },
 
