@@ -5061,6 +5061,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v30: Glute Training Deep Dive ──────────────────────────
+  {
+    keywords: ['glute workout', 'how to grow glutes', 'butt workout', 'hip thrust', 'glute exercises', 'flat butt', 'bigger glutes', 'glute activation'],
+    keywordsAr: ['تمرين أرداف', 'ازاي اكبر الأرداف', 'تمرين مؤخرة', 'هيب ثرست', 'تمارين أرداف', 'تفعيل الأرداف'],
+    keywordsFranco: ['tamreen ardaf', 'ezay akabar el ardaf', 'tamreen mo2a5ra', 'hip thrust', 'tamareen ardaf', 'taf3eel el ardaf'],
+    stateId: 'WK_MENU',
+    response: { en: 'Glute training deep dive: TOP exercises: 1) Hip thrusts (THE best, go heavy) 2) Bulgarian split squats (deep, knee over toe) 3) Sumo deadlifts 4) Cable kickbacks 5) Lunges (walking or reverse) 6) Glute bridges (warm-up). ACTIVATION: Before leg day, do banded walks + clamshells (2x15). Volume: 15-20 sets/week. Train glutes 2-3x/week. KEY: Mind-muscle connection is CRITICAL — squeeze at top for 1sec. Most people don\'t grow glutes because they let quads take over. Go deep on squats & lunges!', ar: 'تمرين أرداف متعمق: أفضل تمارين: 1) هيب ثرست (الأفضل، ثقيل) 2) بلغاري سبليت (عميق، ركبة فوق الصوابع) 3) سومو ديدلفت 4) كابل كيكباك 5) لانجز (مشي أو عكسي) 6) جلوت بريدج (إحماء). تفعيل: قبل يوم الرجل، باند ووكس + كلامشلز (2×15). حجم: 15-20 سيت/أسبوع. مرن الأرداف 2-3 مرات/أسبوع. المفتاح: التواصل العضلي ضروري — اعصر في القمة ثانية. أغلب الناس مش بتكبر أرداف لأن الكواد بتاخد الشغل. انزل عميق في السكوات واللانجز!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v30: Trap & Neck Training ─────────────────────────────────
+  {
+    keywords: ['trap workout', 'how to grow traps', 'shrug exercise', 'trapezius training', 'neck training', 'bigger neck', 'yoke training'],
+    keywordsAr: ['تمرين ترابس', 'ازاي اكبر الترابس', 'شراج', 'تمرين رقبة', 'رقبة أكبر'],
+    keywordsFranco: ['tamreen traps', 'ezay akabar el traps', 'shrug', 'tamreen ra2ba', 'ra2ba akbar'],
+    stateId: 'WK_MENU',
+    response: { en: 'Traps & neck training: UPPER TRAPS: barbell shrugs (heavy, hold at top 2sec), DB shrugs, face pulls. MID TRAPS: chest-supported rows, band pull-aparts. LOWER TRAPS: Y-raises, prone I-T-Y raises. NECK: neck curls (plate on forehead), neck extensions (plate on back of head), neck harness. Train neck 2-3x/week, 3x15-20 each direction. IMPORTANT: Start neck training LIGHT — it\'s a small muscle group. Traps respond to heavy weight + high reps. Deadlifts and farmer walks hit traps hard too!', ar: 'تمرين ترابس ورقبة: ترابس علوي: شراج بار (ثقيل، امسك في القمة 2ث)، شراج دمبل، فيس بولز. ترابس وسط: رو بسند الصدر، باند بول اباتر. ترابس سفلي: واي ريز، I-T-Y ريز. رقبة: نيك كيرل (بلاط على الجبهة)، نيك اكستنشن (بلاط على الخلف)، نيك هارنس. مرن الرقبة 2-3 مرات/أسبوع، 3×15-20 كل اتجاه. مهم: ابدأ تمرين الرقبة خفيف — مجموعة عضلية صغيرة. الترابس بتستجيب للوزن الثقيل + تكرارات عالية. الديدلفت وفارمر ووك بيشغلوا الترابس برضو!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v30: Muscle Memory ────────────────────────────────────────
+  {
+    keywords: ['muscle memory', 'lost gains', 'regain muscle', 'coming back to gym', 'returning to training', 'took a break'],
+    keywordsAr: ['ذاكرة العضلات', 'خسرت المكاسب', 'استرجاع العضل', 'راجع للجيم', 'راجع للتمرين', 'أخذت بريك'],
+    keywordsFranco: ['zakret el 3adalat', '5asart el makaseb', 'esterg3a el 3adal', 'rage3 lel gym', 'rage3 lel tamreen', 'a5adt break'],
+    stateId: 'QA_MENU',
+    response: { en: 'Muscle memory is REAL! Science: When you build muscle, your cells gain extra nuclei (myonuclei) that STAY even when muscles shrink. Coming back? You\'ll regain muscle 2-3x faster than building it the first time. PLAN: Week 1-2: 50% of previous weights, 3x/week full body. Week 3-4: 70-80%, introduce your old split. Week 5+: Back to normal. KEY: 1) Don\'t jump back to old weights (injury risk!) 2) Soreness will be intense at first — that\'s normal 3) Most gains return in 2-3 months 4) Muscle memory lasts years, possibly decades!', ar: 'ذاكرة العضلات حقيقية! العلم: لما تبني عضل، الخلايا بتكسب نوى إضافية (ميونيوكلاي) بتفضل حتى لو العضلات صغرت. راجع؟ هتسترجع العضل 2-3 أضعاف أسرع من أول مرة. الخطة: أسبوع 1-2: 50% من أوزانك القديمة، 3 مرات/أسبوع فول بادي. أسبوع 3-4: 70-80%، رجع السبليت القديم. أسبوع 5+: عادي. المفتاح: 1) متقفزش لأوزانك القديمة (خطر إصابة!) 2) الشد هيبقى قوي في الأول — طبيعي 3) أغلب المكاسب بترجع في 2-3 شهور 4) ذاكرة العضلات بتستمر سنين!' },
+    priority: 8,
+    domain: 'root',
+  },
+
+  // ── v30: Calorie Deficit/Surplus Calculator ───────────────────
+  {
+    keywords: ['calorie deficit', 'how much deficit', 'calorie surplus', 'how much surplus', 'cutting calories', 'bulking calories', 'maintenance calories'],
+    keywordsAr: ['عجز سعرات', 'كام عجز', 'فائض سعرات', 'كام فائض', 'سعرات التنشيف', 'سعرات التضخيم', 'سعرات الميتننس'],
+    keywordsFranco: ['3agz so3rat', 'kam 3agz', 'fa2ed so3rat', 'kam fa2ed', 'so3rat el tanshif', 'so3rat el tadkheem', 'so3rat el maintenance'],
+    stateId: 'NT_MENU',
+    response: { en: 'Calorie targets: CUTTING (fat loss): 500 cal deficit = ~0.5kg/week loss. Aggressive: 750-1000 deficit (fast but lose some muscle). NEVER go below BMR. BULKING (muscle gain): 200-300 surplus = lean bulk (~0.25-0.5kg/month). 500+ surplus = faster but more fat. MAINTENANCE: TDEE (your daily burn). QUICK ESTIMATE: Bodyweight (kg) × 28-33 = maintenance range. ×24-26 = cutting. ×35-38 = bulking. Track for 2 weeks, then adjust based on scale + mirror. No calculator is perfect — your body is the real data!', ar: 'أهداف السعرات: تنشيف (خسارة دهون): عجز 500 سعرة = ~0.5كج/أسبوع خسارة. عدواني: 750-1000 عجز (سريع بس هتخسر عضل). أبداً تحت BMR. تضخيم (بناء عضل): فائض 200-300 = لين بالك (~0.25-0.5كج/شهر). 500+ فائض = أسرع بس دهون أكتر. ميتننس: TDEE (حرقك اليومي). تقدير سريع: الوزن (كج) × 28-33 = ميتننس. ×24-26 = تنشيف. ×35-38 = تضخيم. تتبع لأسبوعين بعدين عدل حسب الميزان + المراية. مفيش حاسبة كاملة — جسمك هو الداتا الحقيقية!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v30: Fitness Influencer Warning ───────────────────────────
+  {
+    keywords: ['fitness influencer', 'fake natty', 'natural limit', 'social media fitness', 'steroids', 'anabolic', 'trt', 'ped'],
+    keywordsAr: ['مؤثر فيتنس', 'فيك ناتشورال', 'حد النمو الطبيعي', 'سوشيال ميديا فيتنس', 'ستيرويد', 'منشطات'],
+    keywordsFranco: ['mo2aser fitness', 'fake natural', '7ad el nomo el tabi3y', 'social media fitness', 'steroid', 'monashetat'],
+    stateId: 'QA_MENU',
+    response: { en: 'Social media fitness reality check: 1) Most "transformation" posts are lighting, angles, pump, and timing 2) Many influencers are NOT natural (and won\'t admit it) 3) Natural limits: ~0.5-1kg muscle/month for beginners, less with experience 4) FFMI >25 is suspicious for naturals 5) Don\'t compare 1 year of training to someone\'s 10+ years 6) Supplements won\'t give you an influencer body 7) Genetics play a huge role in shape/insertions. Focus on YOUR progress, not others. The best physique is one built naturally with patience!', ar: 'فحص واقع فيتنس السوشيال ميديا: 1) أغلب بوستات "التحول" إضاءة وزوايا وبامب وتوقيت 2) مؤثرين كتير مش ناتشورال (ومش هيعترفوا) 3) حدود ناتشورال: ~0.5-1كج عضل/شهر للمبتدئين، أقل مع الخبرة 4) FFMI فوق 25 مشبوه للناتشورال 5) متقارنش سنة تمرين بـ10+ سنين لحد تاني 6) المكملات مش هتديك جسم مؤثر 7) الجينات ليها دور كبير في الشكل. ركز على تقدمك انت مش غيرك. أحلى جسم هو اللي اتبني ناتشورال بصبر!' },
+    priority: 8,
+    domain: 'root',
+  },
+
+  // ── v30: Egyptian Summer Fitness ──────────────────────────────
+  {
+    keywords: ['summer workout', 'summer body', 'beach body', 'summer diet', 'summer cut', 'hot weather workout', 'training in heat'],
+    keywordsAr: ['تمرين صيف', 'جسم صيف', 'جسم بحر', 'دايت صيف', 'تنشيف صيف', 'تمرين في الحر'],
+    keywordsFranco: ['tamreen seif', 'gesm seif', 'gesm ba7r', 'diet seif', 'tanshif seif', 'tamreen fel 7ar'],
+    stateId: 'QA_MENU',
+    response: { en: 'Egyptian summer fitness: TIMELINE: Start cutting 12-16 weeks before summer (March for June beach). TRAINING IN HEAT: 1) Train early AM or late PM (avoid 12-4pm) 2) Extra 1-2L water daily 3) Wear breathable clothes 4) Electrolytes are crucial (salt + potassium) 5) Outdoor runs: sunrise or sunset only. SUMMER DIET: Light meals, more salads, fruit smoothies, grilled proteins. North Coast prep: Start cutting April, maintain in June/July. Don\'t crash diet — you\'ll lose muscle and look worse. Consistent 500cal deficit for 3 months = beach ready!', ar: 'لياقة الصيف المصري: التوقيت: ابدأ التنشيف 12-16 أسبوع قبل الصيف (مارس لبحر يونيو). تمرين في الحر: 1) تمرن الصبح بدري أو بالليل (تجنب 12-4 الضهر) 2) لتر-2 مية إضافي يومياً 3) البس هدوم تسمح بالتهوية 4) الأملاح مهمة (ملح + بوتاسيوم) 5) جري في الشارع: شروق أو غروب بس. أكل الصيف: وجبات خفيفة، سلطات أكتر، سموذي فواكه، بروتين مشوي. تحضير الساحل: ابدأ التنشيف أبريل، حافظ في يونيو/يوليو. متعملش كراش دايت — هتخسر عضل وهتبان أوحش. عجز 500 سعرة ثابت 3 شهور = جاهز للبحر!' },
+    priority: 7,
+    domain: 'root',
+  },
+
+  // ── v30: Stretching Deep Dive ─────────────────────────────────
+  {
+    keywords: ['stretching routine', 'full body stretch', 'how to stretch', 'stretching benefits', 'daily stretching', 'should i stretch', 'stretching for flexibility'],
+    keywordsAr: ['روتين استرتش', 'استرتش كامل', 'ازاي استرتش', 'فوائد الاسترتش', 'استرتش يومي', 'لازم استرتش'],
+    keywordsFranco: ['routine stretch', 'stretch kamel', 'ezay astretch', 'fawa2ed el stretch', 'stretch yawmy', 'lazem astretch'],
+    stateId: 'WK_MENU',
+    response: { en: 'Stretching guide: TYPES: Dynamic (before workout) = movement-based: leg swings, arm circles, hip rotations. Static (after workout) = hold 30sec: hamstring stretch, quad stretch, chest doorway stretch, shoulder stretch. DAILY ROUTINE (10min): Neck rolls → Shoulder circles → Cat-cow → Hip circles → Hamstring stretch → Quad stretch → Calf stretch → Chest stretch. BENEFITS: Better ROM, less injury risk, reduced soreness, better posture. Hold each stretch 30sec, don\'t bounce. Breathe deeply. Stretch tight areas 2x daily for results!', ar: 'دليل الاسترتش: أنواع: ديناميكي (قبل التمرين) = حركي: لفات رجل، دوائر ذراع، دوائر وسط. ثابت (بعد التمرين) = امسك 30ث: استرتش خلفية، كواد، صدر، كتف. روتين يومي (10 دقايق): دوائر رقبة → دوائر كتف → كات-كاو → دوائر وسط → استرتش خلفية → استرتش كواد → استرتش سمانة → استرتش صدر. فوائد: نطاق حركة أفضل، إصابات أقل، شد أقل، قوام أفضل. امسك كل استرتش 30ث، متنطش. اتنفس عميق. استرتش المناطق المشدودة مرتين/يوم لنتايج!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
