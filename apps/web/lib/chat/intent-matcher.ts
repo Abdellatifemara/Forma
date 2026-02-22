@@ -7352,6 +7352,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v67: Egyptian BB Legends + Workout Music + Training Injury + Gym Membership + Fitness Photos ──
+  {
+    keywords: ['egyptian bodybuilder', 'big ramy', 'mamdouh elssbiay', 'egyptian fitness icon', 'egypt olympia', 'egyptian champion', 'egyptian physique'],
+    keywordsAr: ['بيج رامي', 'ممدوح السبيعي', 'أبطال كمال أجسام مصر', 'أيقونة فتنس مصرية', 'أولمبيا مصر'],
+    keywordsFranco: ['big ramy', 'egyptian bodybuilder', 'mamdouh', 'egypt olympia'],
+    stateId: 'info_egyptian_bb_legends',
+    response: { en: 'Egyptian Bodybuilding Legends: BIG RAMY (Mamdouh Elssbiay): Mr. Olympia 2020 and 2021! Born in a small village, started as a fisherman. 300+ pounds on stage. Put Egypt on the bodybuilding map forever. His story: went from nothing to the GREATEST bodybuilder in the world. Proof that Egyptian genetics are among the best for bodybuilding. TRAINING STYLE: Known for insane volume — 30+ sets per body part, extremely heavy weights. His leg days are legendary. DIET: 7000+ calories during off-season, 5+ meals/day plus shakes. OTHER EGYPTIAN STARS: Several Egyptian athletes competing in IFBB Pro shows, growing NPC and amateur scene. WHAT WE CAN LEARN: Consistency (Ramy trained 6 days/week for 10+ years). Start wherever you are (he started with basic gym equipment). Nutrition is 80% of the battle. Trust the process — results take years, not months. Egyptian genetics respond well to heavy training. GYMS HE TRAINED AT: Oxygen Gym Kuwait (peak career), various gyms in Egypt. His success inspired a MASSIVE wave of gym culture in Egypt!', ar: 'أساطير كمال الأجسام المصرية: بيج رامي (ممدوح السبيعي): مستر أولمبيا 2020 و2021! اتولد في قرية صغيرة، بدأ صياد سمك. 300+ رطل على المسرح. حط مصر على خريطة كمال الأجسام للأبد. قصته: من لا شيء لأعظم لاعب كمال أجسام في العالم. دليل إن الجينات المصرية من أفضل الجينات. الدايت: 7000+ سعرة في الأوف سيزون. اللي نتعلمه: الانتظام (رامي تدرب 6 أيام/أسبوع لـ10+ سنين). ابدأ من أي مكان. التغذية 80% من المعركة. ثق في العملية — النتايج بتاخد سنين مش شهور. نجاحه ألهم موجة ضخمة من ثقافة الجيم في مصر!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['workout music', 'gym music', 'bpm workout', 'best gym songs', 'music for lifting', 'music tempo workout', 'playlist gym', 'music motivation'],
+    keywordsAr: ['موسيقى تمرين', 'أغاني جيم', 'بلاي ليست جيم', 'موسيقى تحفيز', 'إيقاع تمرين'],
+    keywordsFranco: ['workout music', 'gym music', 'gym playlist', 'music for lifting'],
+    stateId: 'info_workout_music',
+    response: { en: 'Workout Music — The Science of BPM: RESEARCH SHOWS: Music improves performance by 5-15%, reduces perceived effort, and increases endurance. BPM GUIDE BY ACTIVITY: WARM-UP: 100-120 BPM (moderate tempo, easing in). STRENGTH TRAINING: 120-140 BPM (heavy lifts, controlled movements). HIIT/CARDIO: 140-180 BPM (fast, high energy). COOLDOWN/STRETCHING: 60-100 BPM (calm, relaxing). GENRE RECOMMENDATIONS: Heavy Metal/Hard Rock — best for heavy lifting (Metallica, AC/DC, Disturbed). Hip Hop/Rap — great for strength work (Eminem, DMX, Migos). EDM/Electronic — perfect for cardio and HIIT (high BPM). Arabic Trap/Mahraganat — popular in Egyptian gyms, high energy! Pop — versatile, good steady tempo. Classical — surprisingly good for focused, technical lifts. PRO TIPS: Create separate playlists for different workout types. Noise-canceling earphones are worth the investment. Wireless > wired (no catching on equipment). Save your "hype songs" for PR attempts and heavy sets. Music is PERSONAL — what motivates YOU is the right choice.', ar: 'موسيقى التمرين — علم الـBPM: البحث بيقول: الموسيقى بتحسن الأداء 5-15%، بتقلل الإحساس بالجهد، بتزود التحمل. دليل الـBPM: إحماء: 100-120 BPM. قوة: 120-140 BPM. HIIT/كارديو: 140-180 BPM. تبريد: 60-100 BPM. أنواع: هيفي ميتال — الأفضل للرفع التقيل. هيب هوب — ممتاز للقوة. EDM — مثالي للكارديو. مهرجانات/تراب عربي — مشهور في الجيمات المصرية! نصايح: اعمل بلاي ليستات منفصلة لأنواع التمارين المختلفة. سماعات لاسلكية أحسن (مش بتتعلق في المعدات). وفّر أغانيك المحفزة لمحاولات الـPR.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['train with injury', 'workout around injury', 'modified exercise', 'train injured', 'gym with pain', 'exercise modification', 'work around injury'],
+    keywordsAr: ['تمرين مع إصابة', 'تمرين حوالين إصابة', 'تمرين معدّل', 'جيم وألم', 'تعديل تمرين'],
+    keywordsFranco: ['train injured', 'workout injury', 'gym with pain', 'exercise modification'],
+    stateId: 'info_training_through_injury',
+    response: { en: 'Training Through Injury — Smart Modifications: RULE #1: Get diagnosed first! See a doctor or physiotherapist before training through any injury. GENERAL PRINCIPLES: Pain ≠ danger always, but SHARP pain = STOP. Train the UNINJURED parts (upper body injury? Train legs hard!). Modify, do not eliminate. Reduce weight, increase reps. Use machines instead of free weights (more controlled). COMMON INJURY MODIFICATIONS: SHOULDER INJURY: Avoid overhead pressing → do landmine press, floor press, or machine press. Avoid wide grip → use neutral grip. Replace barbell bench → dumbbell (more shoulder-friendly ROM). KNEE INJURY: Avoid deep squats → do leg press with limited ROM, leg extensions (light), wall sits. Replace running → swimming, cycling, elliptical. LOWER BACK INJURY: Avoid deadlifts from floor → do rack pulls, trap bar deadlift, back extensions (light). Replace barbell squats → belt squat, leg press. WRIST INJURY: Use straps for pulling, modify push-ups to fist push-ups, use machines. PSYCHOLOGY: Injury is NOT the end. Many people come back STRONGER because they finally address weaknesses. Stay positive, be patient, follow rehab protocol.', ar: 'التدريب مع إصابة — تعديلات ذكية: القاعدة #1: اتشخص الأول! روح دكتور أو فيزيوثيرابست. مبادئ: ألم حاد = وقّف. درّب الأجزاء غير المصابة. عدّل، ما تلغيش. قلل الوزن، زوّد العدات. استخدم ماشين بدل فري ويت. تعديلات شائعة: إصابة كتف: تجنب أوفرهيد → لاندماين برس، فلور برس. إصابة ركبة: تجنب سكوات عميق → ليج برس ROM محدود. استبدل الجري → سباحة، دراجة. إصابة ضهر سفلي: تجنب ديدلفت → راك بول، تراب بار. النفسية: الإصابة مش النهاية. كتير بيرجعوا أقوى!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['gym membership egypt', 'gym price egypt', 'gym cost egypt', 'best gym egypt', 'gym comparison', 'gym deal', 'gym contract', 'gym cairo', 'gym alexandria'],
+    keywordsAr: ['اشتراك جيم مصر', 'سعر جيم مصر', 'تكلفة جيم مصر', 'أفضل جيم مصر', 'مقارنة جيمات', 'جيم القاهرة'],
+    keywordsFranco: ['gym membership egypt', 'gym price masr', 'best gym egypt', 'gym cairo'],
+    stateId: 'info_gym_membership_egypt',
+    response: { en: 'Gym Membership Guide — Egypt 2025-2026: PRICE RANGES: Budget gyms: 300-600 LE/month (basic equipment, may be crowded). Mid-range: 600-1500 LE/month (good equipment, AC, decent space). Premium: 1500-3000 LE/month (full equipment, pool, sauna, classes). Luxury/Club: 3000-10000+ LE/month (Wadi Degla, Gold\'s Gym, etc.). WHAT TO LOOK FOR: Equipment variety (enough benches, racks, dumbbells), AC (crucial in Egyptian summer!), cleanliness, peak hour crowding, trainer quality, operating hours, locker rooms, parking. RED FLAGS: No AC, rusty equipment, no cleaning staff, overcrowded at all hours, high-pressure sales tactics, hidden fees, long contract with no cancellation. NEGOTIATION TIPS: Never pay the first price offered! Ask for annual rate (significant discount). Go at end of month (sales quotas). Bring a friend (group discounts). Ask about corporate rates. Many gyms have student discounts. BEST VALUE: Annual membership paid upfront is cheapest per month. Try a day pass first before committing. CHAINS IN EGYPT: Gold\'s Gym, Samia Allouba, Golds, Fitness First, Smart Gym, plus many independent gyms.', ar: 'دليل اشتراك الجيم — مصر 2025-2026: نطاق الأسعار: جيم ميزانية: 300-600 ج/شهر (معدات أساسية). متوسط: 600-1500 ج/شهر (معدات كويسة، تكييف). بريميم: 1500-3000 ج/شهر (معدات كاملة، حمام سباحة، ساونا). لاكشري: 3000-10000+ ج/شهر (وادي دجلة، جولدز). ايه تدور عليه: تنوع معدات، تكييف (مهم في صيف مصر!)، نظافة، زحمة أوقات الذروة. علامات حمراء: مفيش تكييف، معدات صدية، مفيش نظافة. نصايح تفاوض: ما تدفعش أول سعر! اسأل عن السنوي (خصم كبير). روح آخر الشهر. خد صاحبك (خصم مجموعة). اسأل عن خصم طلبة.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['progress photos', 'fitness photography', 'transformation photo', 'before after photo', 'physique photo', 'body photo tips', 'lighting muscles', 'progress picture'],
+    keywordsAr: ['صور تقدم', 'تصوير فتنس', 'صور تحول', 'قبل وبعد', 'صور جسم', 'إضاءة عضلات'],
+    keywordsFranco: ['progress photos', 'fitness photo', 'transformation photo', 'before after', 'physique photo'],
+    stateId: 'info_fitness_photography',
+    response: { en: 'Progress Photos & Physique Photography: WHY TRACK WITH PHOTOS: Scale lies (water weight, muscle gain). Photos show the REAL change. Compare monthly, not daily. Take photos even when you do not feel like it — future you will be grateful! HOW TO TAKE CONSISTENT PHOTOS: Same time of day (morning, after bathroom, before eating). Same lighting (natural light from front or side). Same location and angles. POSES: Front relaxed, front flex, side relaxed, side flex, back relaxed, back flex. Wear same clothing (shorts/sports bra). LIGHTING TIPS: Overhead light creates shadows that show muscle definition. Side lighting shows depth and muscle shape. Avoid direct flash (flattens everything). Natural window light from the side is best. THE "GYM PUMP" PHOTO: Right after training, muscles are pumped with blood = look bigger. This is your best-looking window. Pump + overhead lighting + slight flex = best physique photo. REALISTIC EXPECTATIONS: Social media photos are in PERFECT conditions. Do not compare your everyday look to someone\'s perfect pump + lighting + pose + filter + angle. Your progress photos are for YOU — not for comparison with others.', ar: 'صور التقدم وتصوير الفيزيك: ليه تتابع بالصور: الميزان بيكذب (مية، عضل). الصور بتوري التغيير الحقيقي. قارن شهرياً مش يومياً. إزاي تاخد صور متسقة: نفس الوقت (الصبح، بعد الحمام، قبل الأكل). نفس الإضاءة (طبيعية من الأمام أو الجنب). نفس المكان والزوايا. البوزات: أمامي مرتاح، أمامي فلكس، جانبي، خلفي. نفس الهدوم. نصايح الإضاءة: الضوء العلوي بيعمل ظلال بتوري تعريف العضل. الضوء الجانبي بيوري العمق. ضوء نافذة طبيعي من الجنب هو الأفضل. صورة البامب: بعد التمرين مباشرة + إضاءة علوية + فلكس خفيف = أحسن صورة. الواقعية: صور السوشيال ميديا في ظروف مثالية. ما تقارنش نفسك بأحسن ظروف حد تاني.' },
+    priority: 6,
+    domain: 'progress',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
