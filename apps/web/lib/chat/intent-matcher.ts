@@ -6687,6 +6687,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v53: Hamstring Training + Bulgarian Split Squat + Landmine + Battle Ropes + Farmer Walk ──
+  {
+    keywords: ['hamstring training', 'hamstring exercise', 'hamstring curl', 'lying leg curl', 'seated leg curl', 'nordic curl', 'hamstring tear', 'hamstring injury', 'stiff leg deadlift', 'good morning exercise', 'glute ham raise', 'hamstring stretch'],
+    keywordsAr: ['تمارين هامسترنج', 'عضلة خلفية', 'كيرل رجل', 'سترنج ليج', 'نوردك كيرل', 'شد خلفي'],
+    keywordsFranco: ['hamstring', 'leg curl', 'nordic curl', 'stiff leg', 'good morning', 'glute ham'],
+    stateId: 'info_hamstring_training',
+    response: { en: 'Hamstring Training Priority: Your hamstrings are one of the MOST undertrained muscles! Most people do 2x more quad work. BEST EXERCISES RANKED: 1) Nordic Curls — gold standard, eccentric king, prevents injuries. 2) Romanian Deadlift — heavy hip hinge, stretches hamstrings under load. 3) Lying Leg Curl — classic isolation, great mind-muscle connection. 4) Seated Leg Curl — hits hamstrings at different angle (knee flexion focused). 5) Stiff-Leg Deadlift — similar to RDL but more hamstring stretch. 6) Good Mornings — underrated, great for posterior chain. 7) Glute-Ham Raise — bodyweight torture, builds insane hamstrings. TRAINING TIPS: Hamstrings respond to BOTH heavy weight (6-8 reps RDL) AND high reps (15-20 leg curls). Train hamstrings 2x/week minimum. INJURY PREVENTION: Hamstring tears are the #1 sports injury. Nordic curls reduce hamstring injuries by 51%! Always warm up with light leg curls before heavy movements.', ar: 'تدريب الهامسترنج: الهامسترنج من أكتر العضلات اللي بيتم تجاهلها! معظم الناس بتعمل ضعف شغل الكواد. أفضل التمارين: 1) نوردك كيرل — المعيار الذهبي، ملك الإيسنتريك، بيمنع الإصابات. 2) رومانيان ديدلفت — هيب هينج تقيل، بيمط الهامسترنج تحت حمل. 3) لاينج ليج كيرل — عزل كلاسيكي. 4) سيتد ليج كيرل — بيضرب من زاوية مختلفة. 5) ستيف ليج ديدلفت — زي الـRDL بس مط أكتر. 6) جود مورنينج — مستهان بيه، عظيم للبوستيريور تشين. 7) جلوت هام رايز — بودي ويت تعذيب! نصايح: الهامسترنج بيستجيب لوزن تقيل (6-8 عدات RDL) وعدات عالية (15-20 كيرل). درّب 2 مرات/أسبوع. الوقاية: نوردك كيرلز بتقلل إصابات الهامسترنج 51%!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['bulgarian split squat', 'split squat', 'rear foot elevated', 'single leg squat', 'bulgarian lunge', 'elevated split squat'],
+    keywordsAr: ['بلغاري سبليت سكوات', 'سبليت سكوات', 'سكوات رجل واحدة', 'لنج مرتفع'],
+    keywordsFranco: ['bulgarian', 'split squat', 'rear foot elevated', 'single leg'],
+    stateId: 'info_bulgarian_split_squat',
+    response: { en: 'Bulgarian Split Squat Mastery: The KING of single-leg exercises! WHY IT IS SPECIAL: Fixes muscle imbalances between legs, requires zero spotter, builds incredible quad and glute strength, improves balance and stability. HOW TO DO IT: 1) Stand 2-3 feet from a bench, place rear foot on bench (laces down). 2) Lower until front thigh is parallel or below. 3) Drive through front heel to stand. 4) Keep torso slightly forward, core tight. COMMON MISTAKES: Standing too close to bench (knee pain), standing too far (hip flexor stretch), rear foot too active (should be passive support), leaning too far forward. PROGRAMMING: 3-4 sets of 8-12 each leg. Start with bodyweight, progress to dumbbells, then barbell. PRO TIPS: Elevate front foot on a small plate for extra ROM. Pause at bottom for 2 seconds to build strength out of the hole. This exercise can REPLACE back squats if you have back issues!', ar: 'بلغاري سبليت سكوات: ملك تمارين الرجل الواحدة! ليه مميز: بيصلح عدم التوازن بين الرجلين، مش محتاج سبوتر، بيبني كواد وجلوت مذهل. الطريقة: 1) قف 2-3 أقدام من البنش، حط رجلك الخلفية عالبنش. 2) انزل لحد ما الفخذ الأمامي يبقى موازي أو تحت. 3) ادفع من الكعب الأمامي. 4) خلي الجذع مائل للأمام قليلاً. أخطاء شائعة: الوقوف قريب جداً (ألم ركبة)، بعيد جداً (مط هيب فليكسور)، الرجل الخلفية نشيطة زيادة. البرنامج: 3-4 مجموعات × 8-12 كل رجل. ابدأ بودي ويت، تطور لدمبل، بعدين باربل. نصيحة: ارفع الرجل الأمامية على طبق صغير لمدى حركة أكبر!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['landmine exercise', 'landmine press', 'landmine row', 'landmine squat', 'landmine rotation', 't bar', 'landmine attachment', 'angled barbell'],
+    keywordsAr: ['لاندماين', 'لاند ماين', 'تي بار', 'لاندمين برس', 'لاندمين رو'],
+    keywordsFranco: ['landmine', 'tbar', 't-bar', 'landmine press', 'landmine row'],
+    stateId: 'info_landmine_exercises',
+    response: { en: 'Landmine Exercise Guide: One of the most VERSATILE gym setups! Just stick a barbell in a corner or landmine attachment. BEST EXERCISES: UPPER BODY: 1) Landmine Press — shoulder-friendly pressing, great for people with shoulder pain. 2) Landmine Row — amazing back builder, less lower back stress than bent-over row. 3) Meadows Row — one-arm row with landmine, insane lat pump. LOWER BODY: 4) Landmine Squat — front-loaded, teaches perfect squat form. 5) Landmine RDL — single-leg variation, builds stability. CORE: 6) Landmine Rotation — anti-rotation powerhouse, builds obliques. 7) Landmine Rainbow — standing core rotation. FULL BODY: 8) Landmine Thruster — squat to press, incredible conditioning. WHY USE LANDMINE: Arc of motion is joint-friendly, works great for shoulder rehab, can train everything with one barbell, perfect for home gyms. PROGRAMMING: Use landmine as accessory work, 3x10-15, after main compounds.', ar: 'دليل تمارين اللاندماين: واحد من أكتر الأدوات تنوعاً في الجيم! حط البار في زاوية أو أتاتشمنت. أفضل التمارين: جسم علوي: 1) لاندماين برس — ضغط صديق للكتف. 2) لاندماين رو — بناء ظهر مذهل. 3) ميدوز رو — رو بذراع واحدة، بامب لاتس جنوني. جسم سفلي: 4) لاندماين سكوات — محمّل من الأمام، بيعلم فورم سكوات مثالي. 5) لاندماين RDL — رجل واحدة. كور: 6) لاندماين روتيشن — بيبني الأوبليكس. كامل الجسم: 7) لاندماين ثراستر — سكوات + برس. ليه تستخدم لاندماين: مسار الحركة صديق للمفاصل، ممتاز لإعادة تأهيل الكتف، تقدر تدرب كل حاجة ببار واحد!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['battle rope', 'battle ropes', 'battling ropes', 'rope exercise', 'rope slam', 'rope wave', 'conditioning rope'],
+    keywordsAr: ['باتل روب', 'حبال التمرين', 'روب سلام', 'حبال باتل'],
+    keywordsFranco: ['battle rope', 'battle ropes', 'rope slam', 'rope wave'],
+    stateId: 'info_battle_ropes',
+    response: { en: 'Battle Ropes Guide: The ultimate conditioning tool! Burns 10-12 calories per minute. BASIC MOVEMENTS: 1) Alternating Waves — bread and butter move, works arms and shoulders. 2) Double Waves — both arms together, more power. 3) Slams — lift high, slam down, works entire body. 4) Circles — inward/outward circles, shoulder endurance. 5) Snakes — side-to-side waves along the floor. WORKOUTS: BEGINNER: 20 seconds on, 40 seconds off, 8 rounds. INTERMEDIATE: 30 seconds on, 30 seconds off, 10 rounds. ADVANCED: 40 seconds on, 20 seconds off, 12 rounds (Tabata style). BENEFITS: Low impact on joints, burns massive calories, improves grip strength, builds shoulder endurance, great for HIIT finishers. TIPS: Stand in athletic stance (slight squat), keep core tight, use full arm range of motion. Do battle ropes at END of workout as a 5-10 minute finisher. COMBO: Alternate between ropes and burpees for the ultimate conditioning session!', ar: 'دليل باتل روب: أداة الكونديشنينج النهائية! بتحرق 10-12 سعرة/دقيقة. الحركات الأساسية: 1) ويفز متبادلة — الحركة الأساسية. 2) ويفز مزدوجة — الذراعين معاً، قوة أكتر. 3) سلام — ارفع عالي، انزل بقوة. 4) دوائر — للداخل/للخارج، تحمل كتف. 5) ثعابين — موجات جانبية. التمارين: مبتدئ: 20 ثانية شغل، 40 راحة، 8 جولات. متوسط: 30/30، 10 جولات. متقدم: 40/20، 12 جولة تاباتا. الفوائد: تأثير منخفض على المفاصل، حرق سعرات ضخم، تحسين قوة القبضة. نصايح: وقفة رياضية (سكوات خفيف)، كور مشدود. استخدم الروب آخر التمرين كـfinisher 5-10 دقائق!' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['farmer walk', 'farmer carry', 'farmers walk', 'loaded carry', 'suitcase carry', 'trap bar carry', 'carry exercise'],
+    keywordsAr: ['فارمرز ووك', 'فارمرز كاري', 'حمل ومشي', 'سوتكيس كاري', 'كاري تمرين'],
+    keywordsFranco: ['farmer walk', 'farmer carry', 'loaded carry', 'suitcase carry'],
+    stateId: 'info_farmer_walks',
+    response: { en: 'Farmer Walk & Loaded Carries: The most FUNCTIONAL exercise you are probably NOT doing! VARIATIONS: 1) Farmer Walk (both hands) — grip, traps, core, everything. Walk tall, short steps, squeeze the handles. 2) Suitcase Carry (one hand) — insane oblique and anti-lateral flexion work. 3) Overhead Carry (one or both arms) — shoulder stability, core activation. 4) Rack Carry (kettlebells in front rack) — core endurance, upper back. 5) Trap Bar Carry — heaviest variation, use for maximal loading. BENEFITS: Builds grip strength (translates to ALL lifts), works traps and upper back without shrugs, incredible core training, improves posture, great conditioning. PROGRAMMING: 3-4 sets of 30-40 meter walks (or 30-45 seconds). Start with 50% bodyweight total (25% each hand), progress to bodyweight total. WHEN TO DO: End of workout, or between sets of other exercises (supersets). Dan John (legendary strength coach) says: "Loaded carries do more to increase total body strength than any other single thing."', ar: 'فارمرز ووك وحمل الأوزان: أكتر تمرين وظيفي ممكن مش بتعمله! الأنواع: 1) فارمرز ووك (إيدين) — قبضة، تراب، كور، كل حاجة. امشي طويل، خطوات قصيرة. 2) سوتكيس كاري (إيد واحدة) — أوبليك وكور مجنون. 3) أوفرهيد كاري — استقرار كتف، تنشيط كور. 4) راك كاري (كيتلبل أمامي) — تحمل كور، ضهر علوي. 5) تراب بار كاري — أتقل فارييشن. الفوائد: بيبني قوة قبضة (بتنتقل لكل التمارين)، بيشتغل تراب وضهر علوي، كور مذهل، بيحسن الوقفة. البرنامج: 3-4 مجموعات × 30-40 متر (أو 30-45 ثانية). ابدأ بنص وزن جسمك، تطور لوزن جسمك الكامل. الوقت: آخر التمرين أو سوبرست.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
