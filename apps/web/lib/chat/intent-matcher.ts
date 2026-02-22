@@ -4984,6 +4984,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v29: Counting Calories Without a Scale ─────────────────
+  {
+    keywords: ['count calories without scale', 'estimate calories', 'eyeball portions', 'hand portion guide', 'calorie counting easy', 'track without measuring'],
+    keywordsAr: ['حساب سعرات بدون ميزان', 'تقدير السعرات', 'حصص بالعين', 'دليل حصص اليد', 'عد سعرات سهل'],
+    keywordsFranco: ['7esab so3rat bdoon mizan', 'ta2deer el so3rat', '7esas bel 3ein', 'daleel 7esas el eid'],
+    stateId: 'NT_MENU',
+    response: { en: 'Calorie counting without a scale (hand method): PROTEIN: Palm of hand = ~25-30g protein (chicken, fish, meat). CARBS: Cupped hand = ~1 serving carbs (~30g). VEGGIES: Fist = ~1 cup veggies. FATS: Thumb = ~1 tbsp fat (~14g). QUICK MEAL: 1 palm protein + 1 cupped hand carbs + 1 fist veggies + 1 thumb fat ≈ 400-500 cal. For men: double protein and carbs. Use MyFitnessPal app for exact tracking. The hand method is 80% accurate — good enough for most people!', ar: 'عد السعرات بدون ميزان (طريقة اليد): بروتين: كف اليد = ~25-30ج بروتين (فراخ، سمك، لحمة). كارب: اليد مقعرة = ~حصة كارب (~30ج). خضار: القبضة = ~كوب خضار. دهون: الإبهام = ~ملعقة دهون (~14ج). وجبة سريعة: كف بروتين + كف مقعر كارب + قبضة خضار + إبهام دهون ≈ 400-500 سعرة. للرجال: ضعف البروتين والكارب. استخدم ماي فيتنس بال للتتبع الدقيق. طريقة اليد دقة 80% — كفاية لأغلب الناس!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v29: Eating Disorders Awareness ───────────────────────────
+  {
+    keywords: ['eating disorder', 'anorexia', 'bulimia', 'binge eating', 'orthorexia', 'unhealthy relationship food', 'obsessed with food'],
+    keywordsAr: ['اضطراب أكل', 'أنوركسيا', 'بوليميا', 'شراهة أكل', 'هوس بالأكل', 'علاقة غير صحية بالأكل'],
+    keywordsFranco: ['edterab akl', 'anorexia', 'bulimia', 'sharaha akl', 'hawas bel akl', '3ala2a gher se7eya bel akl'],
+    stateId: 'HP_MENU',
+    response: { en: 'Eating disorders — important awareness: WARNING SIGNS: obsessive calorie counting, fear of certain foods, binge-restrict cycles, excessive exercise to "earn" food, feeling guilty after eating. IF THIS IS YOU: 1) You are NOT alone 2) This is a medical condition, not weakness 3) Talk to a mental health professional 4) Fitness should ADD to your life, not control it. In Egypt: seek help from a therapist (online therapy is available). The fitness industry can be toxic — abs are not worth your mental health. Recovery is possible!', ar: 'اضطرابات الأكل — توعية مهمة: علامات تحذير: هوس بعد السعرات، خوف من أكل معين، دورات إفراط-حرمان، تمرين مفرط "لتعويض" الأكل، ذنب بعد الأكل. لو ده انت: 1) مش لوحدك 2) ده حالة طبية مش ضعف 3) اتكلم مع متخصص صحة نفسية 4) الفيتنس لازم يضيف لحياتك مش يتحكم فيها. في مصر: اطلب مساعدة من معالج نفسي (علاج أونلاين متاح). صناعة الفيتنس ممكن تكون سامة — البطن مش تستاهل صحتك النفسية. التعافي ممكن!' },
+    priority: 10,
+    domain: 'health',
+  },
+
+  // ── v29: Resistance Bands Guide ───────────────────────────────
+  {
+    keywords: ['resistance band', 'band exercises', 'band workout', 'elastic band', 'tube band', 'band vs weights', 'resistance band routine'],
+    keywordsAr: ['باند مقاومة', 'تمارين باند', 'تمرين باند', 'باند مطاط', 'باند ولا أوزان'],
+    keywordsFranco: ['band mo2awama', 'tamareen band', 'tamreen band', 'band matat', 'band wala awzan'],
+    stateId: 'WK_MENU',
+    response: { en: 'Resistance bands guide: TYPES: Loop bands (for legs/glutes), tube bands (with handles, like cable machine), mini bands (warm-up/activation). EXERCISES: Banded squats, hip thrusts, lateral walks, pull-aparts, face pulls, bicep curls, tricep extensions, banded push-ups. ADVANTAGES: Cheap (~100-300 LE set), portable, progressive resistance (hardest at peak contraction). PROGRAM: Can do a full workout: 4 exercises, 3x15-20. Best USE: warm-up activation (especially glutes), travel workouts, rehab, and adding resistance to bodyweight moves!', ar: 'دليل باند المقاومة: أنواع: لوب باندز (للرجل/أرداف)، تيوب باندز (بمقابض، زي الكابل)، ميني باندز (إحماء/تفعيل). تمارين: سكوات بباند، هيب ثرست، لاترال ووك، بول اباتر، فيس بولز، بايسبس كيرل، ترايسبس اكستنشن، ضغط بباند. مميزات: رخيصة (~100-300 جنيه الطقم)، متنقلة، مقاومة تصاعدية (أصعب في الذروة). برنامج: تمرين كامل: 4 تمارين، 3×15-20. أفضل استخدام: تفعيل إحماء (خصوصاً أرداف)، تمرين سفر، تأهيل، وإضافة مقاومة لتمارين الجسم!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v29: Workout Duration ─────────────────────────────────────
+  {
+    keywords: ['how long workout', 'workout duration', 'how long should i train', 'optimal training time', 'how many hours gym', 'workout length'],
+    keywordsAr: ['مدة التمرين', 'كام ساعة تمرين', 'كام ساعة في الجيم', 'وقت التمرين الأمثل', 'طول التمرين'],
+    keywordsFranco: ['modet el tamreen', 'kam sa3a tamreen', 'kam sa3a fel gym', 'wa2t el tamreen el amsal', 'tool el tamreen'],
+    stateId: 'QA_MENU',
+    response: { en: 'Optimal workout duration: 45-75 minutes is the sweet spot. WHY: After 60-90min, cortisol rises (stress hormone, catabolic). BREAKDOWN: 10min warm-up + 45-60min lifting + 5-10min cool-down. If you\'re in the gym 2+ hours, you\'re either resting too long, talking too much, or doing too much volume. QUALITY > QUANTITY. Rest times: compounds 2-3min, isolation 1-2min. Cardio: separate from weights or after (never before heavy lifting). If short on time: 30min of focused training beats 90min of distracted training!', ar: 'مدة التمرين المثالية: 45-75 دقيقة هي الأفضل. ليه: بعد 60-90 دقيقة، الكورتيزول بيرتفع (هرمون توتر، هدام). التوزيع: 10 دقايق إحماء + 45-60 دقيقة حديد + 5-10 دقايق تبريد. لو في الجيم ساعتين+، يا بتريح كتير، يا بتتكلم كتير، يا حجم زيادة. الجودة > الكمية. أوقات الراحة: مركبات 2-3 دقايق، عزل 1-2 دقيقة. كارديو: منفصل عن الحديد أو بعده (أبداً قبل الحديد الثقيل). لو الوقت ضيق: 30 دقيقة مركزة أفضل من 90 دقيقة مشتتة!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v29: Egyptian Bodybuilding Legends ─────────────────────────
+  {
+    keywords: ['big ramy workout', 'egyptian bodybuilder', 'mamdouh elssbiay', 'bodybuilding egypt', 'mr olympia egypt', 'famous bodybuilder egypt'],
+    keywordsAr: ['تمرين بيج رامي', 'لاعب كمال أجسام مصري', 'ممدوح السبيعي', 'كمال أجسام مصر', 'مستر أولمبيا مصر'],
+    keywordsFranco: ['tamreen big ramy', 'la3eb kamal agsam masry', 'mamdou7 el sebie3y', 'kamal agsam masr', 'mr olympia masr'],
+    stateId: 'QA_MENU',
+    response: { en: 'Egyptian bodybuilding: Big Ramy (Mamdouh Elssbiay) — 2x Mr. Olympia (2020, 2021)! From a small town in Egypt to the biggest stage. His training: High volume, 5-6 days/week, focus on heavy compounds + isolation. Diet: 6000+ calories, 400g+ protein daily. Egypt has a STRONG bodybuilding culture — many local and regional champions. Other Egyptian pros: Alaa Makka, Mohamed Shaaban. The sport is growing in Egypt with more gyms, competitions, and awareness. Be inspired but remember: pros use methods not suitable for natural athletes!', ar: 'كمال الأجسام المصري: بيج رامي (ممدوح السبيعي) — مستر أولمبيا مرتين (2020، 2021)! من بلد صغيرة في مصر لأكبر مسرح. تمرينه: حجم عالي، 5-6 أيام/أسبوع، تركيز على المركبات الثقيلة + العزل. الأكل: 6000+ سعرة، 400+ جرام بروتين يومياً. مصر عندها ثقافة كمال أجسام قوية — بطولات محلية وإقليمية كتير. مصريين محترفين تانيين: علاء مكة، محمد شعبان. الرياضة بتكبر في مصر مع جيمات ومسابقات وتوعية أكتر. اتحمس بس افتكر: المحترفين بيستخدموا طرق مش مناسبة للناتشورال!' },
+    priority: 7,
+    domain: 'root',
+  },
+
+  // ── v29: Posture Correction Complete ───────────────────────────
+  {
+    keywords: ['fix posture', 'bad posture', 'rounded shoulders', 'forward head', 'anterior pelvic tilt', 'kyphosis', 'desk posture', 'hunchback'],
+    keywordsAr: ['تصليح القوام', 'قوام سيئ', 'أكتاف مقوسة', 'رقبة للأمام', 'ميلان الحوض', 'تحدب', 'قوام المكتب'],
+    keywordsFranco: ['taslee7 el 2awam', '2awam say2', 'aktaf me2awasa', 'ra2ba lelodam', 'mayalan el 7od', 'ta7adob', '2awam el maktab'],
+    stateId: 'HP_MENU',
+    response: { en: 'Posture correction guide: ROUNDED SHOULDERS: Strengthen: face pulls, band pull-aparts, rear delt flyes. Stretch: doorway stretch, pec stretch. FORWARD HEAD: Chin tucks (10x30sec daily), neck stretches. ANTERIOR PELVIC TILT: Strengthen: glute bridges, dead bugs, RKC planks. Stretch: hip flexors (couch stretch). DAILY HABITS: 1) Screen at eye level 2) Stand every 30min 3) Shoulders back cue 4) Strengthen your back MORE than chest 5) Sleep on your back. Fix takes 4-8 weeks of daily work. Most gym bros have bad posture from too much bench, not enough rows!', ar: 'دليل تصليح القوام: أكتاف مقوسة: قوي: فيس بولز، باند بول اباتر، رير ديلت فلاي. استرتش: ستريتش الباب، بيك ستريتش. رقبة للأمام: تشن تك (10×30ث يومياً)، ستريتش الرقبة. ميلان الحوض: قوي: جلوت بريدج، ديد باجز، RKC بلانك. استرتش: هيب فليكسور (كاوتش ستريتش). عادات يومية: 1) الشاشة على مستوى العين 2) قف كل 30 دقيقة 3) ارجع كتفك 4) قوي ظهرك أكتر من صدرك 5) نام على ظهرك. التصليح بياخد 4-8 أسابيع عمل يومي. أغلب شباب الجيم قوامهم وحش من بنش كتير وسحب قليل!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v29: Pre-Made Meal Plans ──────────────────────────────────
+  {
+    keywords: ['meal plan', 'give me meal plan', 'diet plan', 'what to eat daily', 'sample meal plan', 'easy meal plan', 'weekly meal plan'],
+    keywordsAr: ['خطة أكل', 'اديني خطة أكل', 'خطة دايت', 'اكل ايه كل يوم', 'نموذج خطة أكل', 'خطة أسبوعية'],
+    keywordsFranco: ['5ettet akl', 'edeny 5ettet akl', '5ettet diet', 'akol eih kol yom', 'namozag 5ettet akl'],
+    stateId: 'NT_MENU',
+    response: { en: 'Sample 2000 cal meal plan (cutting): BREAKFAST: 3 eggs + 2 toast + veggies (450 cal, 30g P). SNACK: Greek yogurt + handful almonds (250 cal, 20g P). LUNCH: Grilled chicken 200g + rice 1 cup + salad (550 cal, 45g P). SNACK: Protein shake + banana (300 cal, 30g P). DINNER: Fish 200g + sweet potato + veggies (450 cal, 35g P). TOTAL: ~2000 cal, ~160g protein. Egyptian version: Swap breakfast for ful + eggs, lunch for grilled chicken + rice + salad, dinner for fish + sweet potato. Adjust portions for your calorie target!', ar: 'نموذج خطة 2000 سعرة (تنشيف): فطار: 3 بيض + 2 توست + خضار (450 سعرة، 30ج بروتين). سناك: زبادي يوناني + حفنة لوز (250 سعرة، 20ج). غدا: فراخ مشوية 200ج + رز كوب + سلطة (550 سعرة، 45ج). سناك: بروتين شيك + موزة (300 سعرة، 30ج). عشا: سمك 200ج + بطاطا + خضار (450 سعرة، 35ج). الإجمالي: ~2000 سعرة، ~160ج بروتين. النسخة المصرية: بدل الفطار فول + بيض، الغدا فراخ مشوية + رز + سلطة، العشا سمك + بطاطا. عدل الحصص حسب هدفك!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
