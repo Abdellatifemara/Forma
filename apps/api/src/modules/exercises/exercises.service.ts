@@ -76,29 +76,32 @@ export class ExercisesService {
     const pageSize = dto.pageSize || 20;
     const skip = (page - 1) * pageSize;
 
-    // Build where clause
+    // Build where clause using AND array to avoid OR overwrites
     const where: Prisma.ExerciseWhereInput = {};
+    const andClauses: Prisma.ExerciseWhereInput[] = [];
 
     // Text search
     if (dto.query) {
       const searchTerm = dto.query.toLowerCase();
-      where.OR = [
-        { nameEn: { contains: searchTerm, mode: 'insensitive' } },
-        { nameAr: { contains: searchTerm, mode: 'insensitive' } },
-        { descriptionEn: { contains: searchTerm, mode: 'insensitive' } },
-      ];
+      andClauses.push({
+        OR: [
+          { nameEn: { contains: searchTerm, mode: 'insensitive' } },
+          { nameAr: { contains: searchTerm, mode: 'insensitive' } },
+          { descriptionEn: { contains: searchTerm, mode: 'insensitive' } },
+        ],
+      });
     }
 
-    // Muscle group filter
+    // Muscle group filter — primaryMuscle takes priority
     if (dto.primaryMuscle) {
       where.primaryMuscle = dto.primaryMuscle;
-    }
-
-    if (dto.muscleGroups && dto.muscleGroups.length > 0) {
-      where.OR = [
-        { primaryMuscle: { in: dto.muscleGroups } },
-        { secondaryMuscles: { hasSome: dto.muscleGroups } },
-      ];
+    } else if (dto.muscleGroups && dto.muscleGroups.length > 0) {
+      andClauses.push({
+        OR: [
+          { primaryMuscle: { in: dto.muscleGroups } },
+          { secondaryMuscles: { hasSome: dto.muscleGroups } },
+        ],
+      });
     }
 
     // Equipment filter
@@ -120,6 +123,11 @@ export class ExercisesService {
     // Category filter
     if (dto.category) {
       where.category = dto.category;
+    }
+
+    // Combine AND clauses
+    if (andClauses.length > 0) {
+      where.AND = andClauses;
     }
 
     // Build orderBy

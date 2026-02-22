@@ -674,6 +674,29 @@ export class ChatPipelineService {
     const name = userCtx.firstName;
     const goal = userCtx.fitnessGoal?.replace(/_/g, ' ').toLowerCase() || 'fitness';
 
+    // Premium+ users hitting this = GPT fallback (key missing or error)
+    if (userCtx.tier === 'PREMIUM_PLUS') {
+      if (isAr) {
+        return {
+          response: `${name}، الذكاء الاصطناعي مش متاح حالياً. جرب تاني كمان شوية!\n\n` +
+            'في الوقت ده أقدر أساعدك بالتالي:\n' +
+            '• اسألني عن أي **أكل** وهقولك السعرات والماكروز\n' +
+            '• اسألني عن أي **تمرين** وهوريك ازاي تعمله صح\n' +
+            '• اكتب "**برنامج**" وهقترحلك برامج تمارين',
+          source: 'local',
+        };
+      }
+      return {
+        response: `${name}, AI coaching is temporarily unavailable. Please try again shortly!\n\n` +
+          'In the meantime, I can help with:\n' +
+          '• Ask about any **food** and I\'ll show you calories & macros\n' +
+          '• Ask about any **exercise** and I\'ll show you how to do it\n' +
+          '• Type "**program**" and I\'ll suggest workout programs',
+        source: 'local',
+      };
+    }
+
+    // Premium users — suggest upgrade
     if (isAr) {
       return {
         response: `${name}، سؤال حلو! بالنسبة لهدفك (${goal}), أقدر أساعدك بالتالي:\n\n` +

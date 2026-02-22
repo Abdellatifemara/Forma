@@ -10,6 +10,7 @@ import {
   BarChart3,
   MessageSquare,
   User,
+  Heart,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/lib/i18n';
@@ -60,7 +61,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
         {/* Nav Links */}
         <nav className="flex-1 px-3 py-4 space-y-1">
-          {[...navLinks, { href: '/progress', icon: BarChart3, label: t.layout.progress }].map((link) => {
+          {[...navLinks, { href: '/progress', icon: BarChart3, label: t.layout.progress }, { href: '/health', icon: Heart, label: t.layout.health }].map((link) => {
             const isActive = pathname === link.href || pathname.startsWith(link.href + '/');
             return (
               <Link
