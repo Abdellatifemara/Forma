@@ -10720,6 +10720,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── Supplement Deep Dives ────────────────────────
+  {
+    keywords: ['creatine', 'creatine monohydrate', 'creatine safe', 'creatine loading', 'creatine side effects', 'creatine dose', 'creatine and hair', 'creatine water'],
+    keywordsAr: ['كرياتين', 'كرياتين مونوهيدرات', 'كرياتين آمن', 'جرعة الكرياتين', 'كرياتين والشعر', 'كرياتين ومية'],
+    keywordsFranco: ['creatine', 'keratin', 'creatine aman', 'creatine dose', 'creatine w el sha3r', 'creatine loading'],
+    stateId: 'supplements_creatine_deep',
+    response: { en: 'Creatine is THE most researched and effective supplement. Creatine monohydrate is the gold standard — don\'t pay more for "fancy" forms. Dose: 3-5g daily, EVERY day (training and rest days). Loading phase optional (20g/day for 5 days speeds saturation). Side effects: 1-2kg water weight (muscle, not fat). Hair loss: weak evidence, likely genetic predisposition. Safe for kidneys in healthy people. Mix with anything. Timing doesn\'t matter much. Available in Egypt at supplement stores. ~200-300 LE for 2 months supply.', ar: 'الكرياتين أكتر مكمل مدروس وفعال. كرياتين مونوهيدرات هو المعيار الذهبي — متدفعش أكتر لأنواع "فاخرة". الجرعة: ٣-٥ جرام يومياً، كل يوم. مرحلة التحميل اختيارية (٢٠ جرام/يوم لـ٥ أيام بتسرع التشبع). آثار جانبية: ١-٢ كيلو ماء (في العضلات مش دهون). تساقط الشعر: أدلة ضعيفة، على الأرجح وراثي. آمن على الكلى في الأصحاء. اخلطه مع أي حاجة. ~٢٠٠-٣٠٠ جنيه لشهرين.' },
+    priority: 7,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['whey protein', 'protein powder', 'whey isolate', 'whey concentrate', 'casein', 'protein shake', 'best protein powder', 'protein powder egypt'],
+    keywordsAr: ['واي بروتين', 'بروتين بودرة', 'واي ايزوليت', 'واي كونسنتريت', 'كازين', 'شيك بروتين', 'أحسن بروتين بودرة'],
+    keywordsFranco: ['whey protein', 'protein powder', 'whey isolate', 'whey concentrate', 'casein', 'a7san protein'],
+    stateId: 'supplements_whey_deep',
+    response: { en: 'Protein powder types: Whey Concentrate: 80% protein, cheapest, contains some lactose — best value. Whey Isolate: 90%+ protein, less lactose, more expensive — good for lactose sensitive. Casein: slow-digesting (6-8hr), perfect before bed. Plant protein: pea/rice blend for vegans. Dose: 1-2 scoops/day to reach protein goal. Don\'t REPLACE meals — supplement them. In Egypt: ON Gold Standard, Dymatize ISO100, local brands like Protein Egypt. Budget: ~800-1500 LE for 2lb. Check for fake products!', ar: 'أنواع بروتين البودرة: واي كونسنتريت: ٨٠٪ بروتين، أرخص، فيه لاكتوز — أفضل قيمة. واي ايزوليت: ٩٠٪+ بروتين، لاكتوز أقل، أغلى. كازين: هضم بطيء (٦-٨ ساعات)، مثالي قبل النوم. الجرعة: ١-٢ سكوب/يوم لتوصل هدف البروتين. متستبدلش الوجبات — كملها. في مصر: ON جولد ستاندرد، ديماتايز ISO100. ميزانية: ~٨٠٠-١٥٠٠ جنيه لـ2lb. انتبه للمنتجات المغشوشة!' },
+    priority: 7,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['bcaa', 'amino acids', 'eaa', 'essential amino acids', 'bcaa worth it', 'bcaa during workout', 'intra workout', 'amino supplement'],
+    keywordsAr: ['بي سي ايه ايه', 'أحماض أمينية', 'أحماض أمينية أساسية', 'بي سي ايه ايه يستاهل', 'أمينو أثناء التمرين'],
+    keywordsFranco: ['bcaa', 'amino acids', 'eaa', 'bcaa yestahl', 'amino athna2 el tamrin', 'intra workout'],
+    stateId: 'supplements_bcaa_deep',
+    response: { en: 'BCAA (Branched Chain Amino Acids): leucine, isoleucine, valine. The truth: if you eat enough protein (1.6-2g/kg), BCAAs are UNNECESSARY. Whey protein already contains all BCAAs. Save your money. EAA (Essential Amino Acids) are slightly better since they include all 9 essential aminos. When BCAAs/EAAs might help: fasted training, very long workouts (2hr+), or if you can\'t reach protein goals from food. Otherwise: just eat protein and save 300-500 LE. Marketing > science for BCAAs.', ar: 'الـ BCAA (أحماض أمينية متفرعة السلسلة): لوسين، ايزولوسين، فالين. الحقيقة: لو بتاكل بروتين كفاية (١.٦-٢ جرام/كيلو)، الـ BCAA مش لازمة. الواي بروتين فيه كل الـ BCAAs أصلاً. وفر فلوسك. الـ EAA أحسن شوية لأنها فيها الـ٩ أحماض الأساسية كلها. امتى الـ BCAA ممكن يفيد: تمرين صايم، تمارين طويلة جداً (٢ ساعة+). غير كده: كل بروتين ووفر ٣٠٠-٥٠٠ جنيه.' },
+    priority: 6,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['pre workout', 'pre-workout', 'preworkout', 'pre workout supplement', 'caffeine gym', 'c4', 'pre workout safe', 'pre workout side effects', 'pre workout tingling'],
+    keywordsAr: ['بري وورك اوت', 'مكمل قبل التمرين', 'كافيين جيم', 'بري وورك اوت آمن', 'وخز البري وورك اوت'],
+    keywordsFranco: ['pre workout', 'preworkout', 'pre work out', 'caffeine gym', 'pre workout aman', 'pre workout tingling'],
+    stateId: 'supplements_preworkout_deep',
+    response: { en: 'Pre-workout supplements: key ingredients: Caffeine (150-300mg — energy, focus), Beta-alanine (tingles are normal!), Citrulline (pumps, blood flow), Creatine (sometimes included). Side effects: jitters, insomnia (don\'t take after 4pm), tingling (harmless), elevated heart rate. CHEAPER ALTERNATIVE: black coffee (200mg caffeine) + 5g creatine = nearly as effective for 1/10th the price. Don\'t develop tolerance — cycle 4 weeks on, 1 week off. Don\'t exceed 400mg caffeine daily. Never "dry scoop" — dangerous.', ar: 'مكملات قبل التمرين: مكونات رئيسية: كافيين (١٥٠-٣٠٠ مج — طاقة وتركيز)، بيتا ألانين (الوخز طبيعي!)، سيترولين (بامب ودورة دموية). آثار جانبية: توتر، أرق (متاخدوش بعد ٤ المسا)، وخز، نبض عالي. بديل أرخص: قهوة سودا (٢٠٠ مج كافيين) + ٥ جرام كرياتين = تقريباً نفس الفعالية بـ١/١٠ السعر. متاخدوش كل يوم — ٤ أسابيع ثم أسبوع راحة.' },
+    priority: 6,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['multivitamin', 'vitamin supplement', 'daily vitamin', 'do i need vitamins', 'best multivitamin', 'vitamin d', 'zinc supplement', 'magnesium supplement'],
+    keywordsAr: ['ملتي فيتامين', 'مكمل فيتامينات', 'فيتامين يومي', 'محتاج فيتامينات', 'أحسن ملتي فيتامين', 'فيتامين د', 'زنك', 'ماغنسيوم'],
+    keywordsFranco: ['multivitamin', 'vitamin supplement', 'me7tag vitamins', 'a7san multivitamin', 'vitamin d', 'zinc', 'magnesium'],
+    stateId: 'supplements_vitamins_deep',
+    response: { en: 'Essential supplements ranked by importance: 1) Vitamin D (2000-4000 IU/day) — most Egyptians are deficient despite the sun! 2) Omega-3 fish oil (2-3g EPA+DHA) — anti-inflammatory, joint health, 3) Magnesium (200-400mg before bed) — sleep, recovery, muscle cramps, 4) Zinc (15-30mg) — testosterone, immunity, 5) Multivitamin — insurance policy if diet isn\'t perfect. Get blood work to check what YOU actually need. Food first, supplements second. Don\'t mega-dose — more isn\'t always better.', ar: 'مكملات أساسية بالترتيب: ١) فيتامين D (٢٠٠٠-٤٠٠٠ وحدة/يوم) — معظم المصريين ناقصين رغم الشمس!، ٢) أوميجا-٣ زيت سمك (٢-٣ جرام) — مضاد التهاب، صحة المفاصل، ٣) ماغنسيوم (٢٠٠-٤٠٠ مج قبل النوم) — نوم، استشفاء، تشنجات، ٤) زنك (١٥-٣٠ مج) — تستوستيرون، مناعة، ٥) ملتي فيتامين — تأمين لو الأكل مش كامل. اعمل تحليل دم عشان تعرف إنت محتاج إيه.' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
