@@ -7728,6 +7728,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'recovery',
   },
 
+  // ── v75: Wrist Wraps + Lifting Belt + Knee Sleeves + Gym Shoes + Workout Log App ──
+  {
+    keywords: ['wrist wrap', 'wrist support gym', 'wrist wrap bench', 'wrist strap gym', 'when use wrist wrap', 'wrist protection gym'],
+    keywordsAr: ['رباط معصم', 'دعم معصم جيم', 'رباط معصم بنش', 'حماية معصم'],
+    keywordsFranco: ['wrist wrap', 'wrist support', 'wrist strap gym', 'wrist protection'],
+    stateId: 'info_wrist_wraps',
+    response: { en: 'Wrist Wraps — When & How to Use: WHAT THEY DO: Provide support and stability to the wrist joint during pressing movements. Reduce wrist pain and prevent hyperextension. WHEN TO USE: Heavy bench press (especially above 80% 1RM). Overhead press. Heavy dumbbell press. Front squats (if wrists hurt). Handstand push-ups. WHEN NOT TO USE: Light warm-up sets, pulling exercises, curls, anything under 70% 1RM. Using them all the time weakens your wrists. HOW TO WRAP: Start from the inner wrist. Wrap around 2-3 times, covering the wrist joint. Not too tight (should be able to make a fist). Loop around thumb to anchor, then remove thumb loop during set. TYPES: Stiff wraps (18-24 inches): Maximum support, competition lifters. Flexible wraps (12-18 inches): Good for general training. Cotton wraps: Light support, most comfortable. BRANDS AVAILABLE IN EGYPT: Generic wraps from gym stores (50-150 LE). Online: Rogue, SBD, Inzer (imported, 500-1500 LE). TIP: Only use wraps when you NEED them (heavy sets). Train without them on lighter days to build natural wrist strength.', ar: 'رباط المعصم — امتى وازاي: بيعمل ايه: بيديك ثبات ودعم لمفصل المعصم أثناء تمارين الضغط. امتى تستخدم: بنش تقيل (فوق 80% 1RM). أوفرهيد بريس. دمبل بريس تقيل. فرونت سكوات. امتى لأ: وزن خفيف، تمارين سحب، كيرل. استخدامهم طول الوقت بيضعّف معصمك. ازاي تلف: ابدأ من الداخل. لف 2-3 لفات حوالين المفصل. مش ضيق أوي. في مصر: رباطات عادية من محلات الجيم 50-150 ج. أونلاين: روج، SBD (مستوردة). نصيحة: استخدم بس لما محتاج (سيتات تقيلة).' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['lifting belt', 'weight belt', 'when use belt', 'belt squat', 'belt deadlift', 'belt size', 'how tight belt', 'belt breathing', 'belt bracing'],
+    keywordsAr: ['حزام رفع', 'حزام أثقال', 'امتى أستخدم حزام', 'حزام سكوات', 'حزام ديدليفت', 'مقاس حزام'],
+    keywordsFranco: ['lifting belt', 'weight belt', 'belt squat', 'belt deadlift', 'emta belt'],
+    stateId: 'info_lifting_belt',
+    response: { en: 'Lifting Belt — Complete Guide: WHAT IT DOES: Does NOT support your back directly. Instead, gives your abs something to push AGAINST, increasing intra-abdominal pressure (IAP). This makes your core MORE stable, not less. Research shows 5-15% more weight can be lifted with a belt. WHEN TO USE: Squats above 80% 1RM. Deadlifts above 80% 1RM. Heavy overhead press. Heavy barbell rows. WHEN NOT TO USE: Warm-up sets, machine exercises, isolation work, light training. Belt is a performance tool, not a crutch. HOW TO USE: Place belt on your waist (above hip bones, below ribs). Tighten so you can fit one finger between belt and stomach. Take a BIG breath into your belly, push abs OUT against the belt. This is "bracing" — the whole point of the belt. Hold breath through the hardest part of the rep (Valsalva maneuver). TYPES: Lever belt (10-13mm): Easiest to use, consistent tightness. Prong belt (single or double): Classic, adjustable. Velcro belt: Light support, good for CrossFit/general. WIDTH: 4-inch width (standard powerlifting) for most people. 3-inch may be better if you are short or find 4-inch uncomfortable. IN EGYPT: Basic belts 200-500 LE. Quality leather belts (Rogue, SBD) 1500-3000 LE imported.', ar: 'حزام الرفع — دليل كامل: بيعمل ايه: مش بيدعم ظهرك مباشرة. بيديك حاجة تضغط عليها بالبطن = ثبات كور أكتر. 5-15% وزن أكتر بالحزام. امتى: سكوات فوق 80%. ديدليفت فوق 80%. أوفرهيد بريس تقيل. ازاي: حطه على الوسط. خد نفس كبير في البطن، ادفع البطن بره ضد الحزام. ده "البرايسينج". امسك النفس خلال الجزء الصعب. الأنواع: ليفر بيلت: أسهل. برونج: كلاسيك. فيلكرو: خفيف. في مصر: أحزمة عادية 200-500 ج. جلد عالي الجودة 1500-3000 ج مستوردة.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['knee sleeve', 'knee support gym', 'knee wrap', 'knee brace squat', 'knee pain squat', 'knee protection gym', 'knee compression', 'neoprene knee'],
+    keywordsAr: ['دعامة ركبة', 'دعم ركبة جيم', 'رباط ركبة', 'حماية ركبة', 'ألم ركبة سكوات', 'ضغط ركبة'],
+    keywordsFranco: ['knee sleeve', 'knee support', 'knee wrap', 'knee brace squat', 'knee pain gym'],
+    stateId: 'info_knee_sleeves',
+    response: { en: 'Knee Sleeves — Do You Need Them? WHAT THEY DO: Compression keeps knee joint warm. Reduces pain and swelling. Provides proprioceptive feedback (awareness of knee position). May add 5-10% to squat through elastic rebound. SLEEVES vs WRAPS: Sleeves: Pull on, consistent compression, allowed in most competitions. Good for general training. Wraps: Wind around knee, much tighter, can add 20-50 lbs to squat. Competition-specific. WHO NEEDS THEM: Anyone squatting heavy regularly. People with minor knee discomfort. Lifters over 30 (joints appreciate the warmth). People training in cold gyms. WHO DOESN\'T: Complete beginners (build strength first). People using them as a crutch for bad form. Anyone with serious knee injury (see a doctor first). SIZING: Should be snug but not painfully tight. You should be able to pull them on without help. If they slide down during squats, too loose. THICKNESS: 5mm: Light support, CrossFit, general training. 7mm: Standard powerlifting, best all-around. BRANDS: SBD (premium, 2000+ LE), Rehband (solid, 1500+ LE), Generic neoprene (200-500 LE — these work fine for most people!). TIP: Warm up without sleeves, put them on for working sets.', ar: 'دعامات الركبة — محتاجها؟ بتعمل ايه: ضغط بيخلي المفصل دافي. بتقلل الألم والتورم. ممكن تضيف 5-10% للسكوات. سليفز ولا رابز: سليفز: بتتسحب، ضغط ثابت. رابز: بتتلف، أضيق بكتير. مين محتاج: أي حد بيعمل سكوات تقيل. ناس عندها وجع ركبة خفيف. فوق 30 سنة. المقاس: لازم يكون ضيق بس مش مؤلم. السُمك: 5مم خفيف. 7مم معياري. في مصر: عادية 200-500 ج (كويسة لأغلب الناس!).' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['gym shoes', 'squat shoes', 'deadlift shoes', 'lifting shoes', 'best shoes gym', 'flat shoes gym', 'converse gym', 'workout shoes', 'running shoes gym bad'],
+    keywordsAr: ['جزم جيم', 'جزمة سكوات', 'جزمة ديدليفت', 'جزمة رفع', 'أحسن جزمة جيم', 'جزمة فلات جيم'],
+    keywordsFranco: ['gym shoes', 'squat shoes', 'deadlift shoes', 'a7san gazma gym', 'flat shoes gym'],
+    stateId: 'info_gym_shoes',
+    response: { en: 'Gym Shoes — What to Wear for Each Exercise: WHY RUNNING SHOES ARE BAD FOR LIFTING: Cushioned soles compress under heavy weight = unstable. Elevated heel shifts your weight forward. Energy leaks into the cushion instead of into the ground. BEST FOR SQUATS: 1) Squat/weightlifting shoes (elevated hard heel): Best for high-bar squat, Olympic lifts. Helps ankle mobility. 1500-3000 LE imported. 2) Flat shoes (Converse Chuck Taylor, Vans): Great for low-bar squat, budget option. 300-600 LE. BEST FOR DEADLIFTS: 1) Deadlift slippers/socks: Thinnest possible = shortest bar path. 2) Flat shoes (Converse, Vans): Good alternative. 3) Barefoot (if gym allows): Actually ideal for deadlifts. AVOID for deadlifts: Anything with a heel raise. BEST ALL-AROUND: Flat-soled shoes (Converse, Vans, Nike Metcon, Reebok Nano). Good for all exercises. Nike Metcon / Reebok Nano are designed for gym training. 1000-2000 LE. IN EGYPT: Converse All-Stars are the best budget gym shoe. Available everywhere, 500-700 LE. Ask for the basic canvas version. Alternatively, any flat-soled canvas shoe works.', ar: 'جزم الجيم — ايه تلبس لكل تمرين: ليه جزم الجري غلط للرفع: النعل المبطّن بيضغط = مش ثابت. الكعب العالي بيحرك وزنك لقدام. للسكوات: 1) جزمة رفع أثقال (كعب صلب): الأحسن لهاي بار. 1500-3000 ج. 2) فلات (كونفرس): ممتاز للو بار. 300-600 ج. للديدليفت: 1) جوارب/سليبر: أرفع ممكن. 2) فلات (كونفرس). 3) حافي (لو الجيم سامح). الأفضل عموماً: كونفرس، فانز، نايك ميتكون. في مصر: كونفرس أول ستارز أحسن جزمة جيم بسعر كويس. 500-700 ج.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['workout log', 'training log app', 'track workout', 'training diary', 'gym journal', 'track progress gym', 'log exercises', 'record workout'],
+    keywordsAr: ['سجل تمارين', 'تتبع تمرين', 'يوميات تدريب', 'سجل جيم', 'تتبع تقدم جيم'],
+    keywordsFranco: ['workout log', 'training log', 'track workout', 'gym journal', 'record workout'],
+    stateId: 'info_workout_log',
+    response: { en: 'Workout Logging — Why & How to Track: WHY LOG: Progressive overload requires knowing last session\'s numbers. Prevents "just winging it" (the #1 reason people don\'t progress). Identifies plateaus early. Motivating to see progress over weeks/months. WHAT TO LOG: Exercise name, weight, sets, reps, RPE/RIR. Rest time (optional but helpful). Notes (felt strong, shoulder twinge, etc.). Body weight (weekly). HOW TO LOG: This app (Forma) tracks your workouts automatically when you log them! Alternatively: Simple notes app on phone — just type weight x reps for each set. Spreadsheet (Google Sheets) — great for seeing trends. Paper notebook — some people prefer this, totally valid. WHAT TO LOOK FOR: Are weights going up week to week? If not, why? Are you completing more reps at same weight? Are you recovering well between sessions? Any persistent pain or discomfort? GOLDEN RULES: Log DURING the set rest period (don\'t rely on memory). Be honest — don\'t round up or exaggerate. Compare like-for-like (same exercise, same form). Focus on monthly trends, not daily fluctuations. A "bad" week logged is more valuable than a "good" week untracked.', ar: 'سجل التمارين — ليه وازاي: ليه تسجّل: التحميل التدريجي محتاج تعرف أرقام آخر جلسة. بيمنع "أعمل أي حاجة". بيكشف الثبات بدري. محفّز لما تشوف التقدم. ايه تسجّل: اسم التمرين، الوزن، المجموعات، العدات، RPE. ملاحظات. الوزن أسبوعياً. ازاي: تطبيق فورما بيتتبع تمارينك أوتوماتيك! أو: تطبيق نوتز. جوجل شيتس. دفتر ورقي. ايه تدور عليه: الأوزان بتزيد أسبوعياً؟ عدات أكتر بنفس الوزن؟ قواعد ذهبية: سجّل أثناء الراحة (ما تعتمدش على الذاكرة). كُن صادق. قارن مثل بمثل.' },
+    priority: 6,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
