@@ -10156,6 +10156,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'recovery',
   },
 
+  // ── Egyptian Food Macros Deep Dive ────────────────────────
+  {
+    keywords: ['koshari', 'koshary', 'kushari', 'koshari macros', 'koshari calories', 'koshari protein', 'is koshari healthy', 'koshari diet'],
+    keywordsAr: ['كشري', 'كوشري', 'سعرات الكشري', 'بروتين الكشري', 'الكشري صحي', 'كشري دايت'],
+    keywordsFranco: ['koshari', 'koshary', 'kushari', 'koshari macros', 'koshari diet', 'el koshary'],
+    stateId: 'nutrition_koshari_deep',
+    response: { en: 'Koshari (1 plate ~400g): ~550-650 cal, 18g protein, 95g carbs, 12g fat. High carb, moderate fiber from lentils. To make it gym-friendly: ask for extra lentils (more protein), less rice, light on the oil/sauce. A small plate post-workout is actually decent for glycogen replenishment. Avoid large portions if cutting. The tomato sauce adds vitamins but also sugar. Chickpeas add protein and fiber.', ar: 'الكشري (طبق ~٤٠٠ جرام): ~٥٥٠-٦٥٠ سعرة، ١٨ جرام بروتين، ٩٥ جرام كارب، ١٢ جرام دهون. كارب عالي، ألياف متوسطة من العدس. عشان يبقى gym-friendly: اطلب عدس زيادة، أرز أقل، زيت خفيف. طبق صغير بعد التمرين كويس لملء الجليكوجين. تجنب الأطباق الكبيرة في التنشيف.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['foul', 'ful', 'foul medames', 'fava beans', 'foul calories', 'foul protein', 'foul macros', 'beans breakfast'],
+    keywordsAr: ['فول', 'فول مدمس', 'سعرات الفول', 'بروتين الفول', 'فول بالزيت', 'فول بالطحينة'],
+    keywordsFranco: ['fool', 'foul', 'ful medames', 'foul macros', 'foul calories', 'foul bel zeit'],
+    stateId: 'nutrition_foul_deep',
+    response: { en: 'Foul medames (1 bowl ~250g): ~280 cal, 16g protein, 38g carbs, 6g fat (without oil). With 1 tbsp oil: add 120 cal, 14g fat. With tahini: add 90 cal, 8g fat. Excellent plant protein source! High fiber keeps you full. Best gym breakfast: foul + 2 eggs + whole wheat bread = 500 cal, 35g protein. Skip the extra oil if cutting. Add lemon for vitamin C (helps iron absorption from the beans).', ar: 'الفول المدمس (طبق ~٢٥٠ جرام): ~٢٨٠ سعرة، ١٦ جرام بروتين، ٣٨ جرام كارب، ٦ جرام دهون (بدون زيت). مع معلقة زيت: +١٢٠ سعرة. مع طحينة: +٩٠ سعرة. مصدر بروتين نباتي ممتاز! أحسن فطار للجيم: فول + ٢ بيض + عيش بلدي = ٥٠٠ سعرة، ٣٥ جرام بروتين. شيل الزيت الزيادة لو بتنشف. حط ليمون عشان فيتامين C.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['taameya', 'taamiya', 'falafel', 'egyptian falafel', 'taameya calories', 'falafel macros', 'fried falafel', 'baked falafel'],
+    keywordsAr: ['طعمية', 'فلافل', 'سعرات الطعمية', 'طعمية مشوية', 'طعمية مقلية', 'طعمية في الفرن'],
+    keywordsFranco: ['ta3meya', 'taamiya', 'falafel', 'ta3meya calories', 'ta3meya mashweya'],
+    stateId: 'nutrition_taameya_deep',
+    response: { en: 'Taameya/Falafel (1 piece ~35g): fried = ~90 cal, 3g protein, 8g carbs, 5g fat. A sandwich (4-5 pieces) = ~450-550 cal. The frying adds significant fat. Healthier option: bake or air-fry — saves ~40% calories. Made from fava beans (Egyptian) or chickpeas (Levantine). Good fiber and plant protein. Best strategy: baked taameya + salad + tahini for a balanced meal around 400 cal.', ar: 'الطعمية (قرص ~٣٥ جرام): مقلية = ~٩٠ سعرة، ٣ جرام بروتين، ٨ جرام كارب، ٥ جرام دهون. ساندويتش (٤-٥ أقراص) = ~٤٥٠-٥٥٠ سعرة. القلي بيزود الدهون كتير. الأصح: اشويها في الفرن أو الـ air fryer — بتوفر ~٤٠٪ سعرات. أحسن طريقة: طعمية في الفرن + سلطة + طحينة = وجبة متوازنة ~٤٠٠ سعرة.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['molokhia', 'molokhiya', 'mulukhiyah', 'jute leaf', 'molokhia calories', 'molokhia macros', 'molokhia healthy'],
+    keywordsAr: ['ملوخية', 'سعرات الملوخية', 'ملوخية صحية', 'ملوخية خضرا', 'ملوخية ناشفة'],
+    keywordsFranco: ['molo5eya', 'molokhia', 'molo5eyya', 'molo5eya calories'],
+    stateId: 'nutrition_molokhia_deep',
+    response: { en: 'Molokhia (1 bowl ~250g cooked): ~120 cal, 5g protein, 12g carbs, 6g fat (with ghee). Without ghee/oil: only ~50 cal. Super nutritious — high in vitamin A, C, E, iron, calcium, and fiber. The leafy green itself is very low calorie. The calories come from cooking fat (ghee/butter). Gym-friendly version: cook with minimal oil, serve with grilled chicken breast and brown rice. One of Egypt\'s healthiest traditional dishes!', ar: 'الملوخية (طبق ~٢٥٠ جرام مطبوخة): ~١٢٠ سعرة، ٥ جرام بروتين، ١٢ جرام كارب، ٦ جرام دهون (بالسمن). بدون سمن: ~٥٠ سعرة بس. مغذية جداً — فيتامين A, C, E، حديد، كالسيوم، ألياف. السعرات بتيجي من السمن. نسخة الجيم: اطبخها بزيت قليل، مع صدر فرخة مشوية وأرز بني. من أصح الأكلات المصرية التقليدية!' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['fiteer', 'feteer', 'feteer meshaltet', 'fiteer meshaltet', 'fiteer calories', 'feteer macros', 'egyptian pastry', 'layered pie'],
+    keywordsAr: ['فطير', 'فطير مشلتت', 'سعرات الفطير', 'فطير بالسكر', 'فطير بالجبنة', 'فطير مصري'],
+    keywordsFranco: ['feteer', 'fiteer', 'feteer meshaltet', 'fiteer calories', 'feteer bel gebna'],
+    stateId: 'nutrition_fiteer_deep',
+    response: { en: 'Feteer Meshaltet (1 slice ~150g): ~450-550 cal, 8g protein, 45g carbs, 28g fat. It\'s essentially layers of dough with tons of ghee/butter — very calorie-dense. A whole feteer can be 2000+ cal. NOT diet-friendly. If you must indulge: 1 small slice max, ideally on a high-carb training day. The cheese version (feteer bil gebna) adds protein but also more calories. Save it for cheat meals or post-competition celebrations.', ar: 'الفطير المشلتت (قطعة ~١٥٠ جرام): ~٤٥٠-٥٥٠ سعرة، ٨ جرام بروتين، ٤٥ جرام كارب، ٢٨ جرام دهون. طبقات عجين بسمن كتير — سعرات عالية جداً. فطيرة كاملة ممكن ٢٠٠٠+ سعرة. مش مناسب للدايت. لو لازم: قطعة صغيرة بس، ويفضل يوم تمرين بكارب عالي. الفطير بالجبنة فيه بروتين أكتر بس سعرات أكتر كمان. خليه للـ cheat meal.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
