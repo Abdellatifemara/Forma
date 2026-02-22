@@ -10673,6 +10673,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'health',
   },
 
+  // ── Gym Lifestyle & Beginner Guide ────────────────────────
+  {
+    keywords: ['gym etiquette', 'gym rules', 'gym manners', 'wipe equipment', 'rerack weights', 'gym behavior', 'sharing equipment', 'phone in gym'],
+    keywordsAr: ['آداب الجيم', 'قواعد الجيم', 'سلوك في الجيم', 'نظافة الأجهزة', 'رجع الأوزان', 'مشاركة الأجهزة'],
+    keywordsFranco: ['gym etiquette', 'adab el gym', 'awa3ed el gym', 'nzafa el aghza', 'rega3 el awzan'],
+    stateId: 'workout_gym_etiquette',
+    response: { en: 'Gym etiquette rules: 1) ALWAYS rerack your weights (seriously!), 2) Wipe equipment after use, 3) Don\'t curl in the squat rack, 4) Don\'t hog equipment — allow working in, 5) Don\'t stand directly in front of the dumbbell rack, 6) Keep phone calls outside, 7) Don\'t give unsolicited advice, 8) Use deodorant, 9) Don\'t drop weights unnecessarily, 10) Respect people\'s rest time between sets, 11) Don\'t record people without permission. Following these makes the gym better for everyone.', ar: 'آداب الجيم: ١) رجع الأوزان مكانها (بجد!)، ٢) نظف الجهاز بعد الاستخدام، ٣) متعملش كيرل في الباور راك، ٤) متحجزش الجهاز — سيب حد يشتغل معاك، ٥) متقفش قدام الدمبل راك، ٦) المكالمات برا، ٧) متديش نصايح محدش طلبها، ٨) استخدم ديودورانت، ٩) متوقعش الأوزان من غير سبب، ١٠) احترم وقت راحة الناس، ١١) متصورش حد من غير إذن.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['gym anxiety', 'scared of gym', 'intimidated gym', 'nervous gym', 'first time gym anxiety', 'gym fear', 'gymtimidation', 'shy at gym'],
+    keywordsAr: ['خوف من الجيم', 'قلق الجيم', 'متوتر في الجيم', 'خجل في الجيم', 'أول مرة جيم خايف', 'رهبة الجيم'],
+    keywordsFranco: ['5ayef men el gym', '2ala2 el gym', 'motawatar fel gym', '5agel fel gym', 'awal mara gym 5ayef'],
+    stateId: 'workout_gym_anxiety',
+    response: { en: 'Gym anxiety is VERY common — even experienced lifters had it. Reality check: 1) Nobody is watching you — everyone is focused on themselves, 2) Everyone started as a beginner, 3) Most gym people are actually helpful. Tips: Go during off-peak hours first (early morning, late night). Have a written plan (our app helps!). Wear headphones. Start with machines (easier, less intimidating). Bring a friend. Remember: the hardest part is walking through the door. After 2 weeks, it becomes your second home.', ar: 'قلق الجيم شائع جداً — حتى اللي بيتمرنوا من زمان حسوا بيه. الحقيقة: ١) محدش بيتفرج عليك — كلهم مركزين في نفسهم، ٢) كلهم كانوا مبتدئين، ٣) معظم ناس الجيم بتساعد. نصايح: روح في وقت فاضي (الصبح بدري، بالليل متأخر). جهز خطة (التطبيق بيساعدك!). البس سماعات. ابدأ بالأجهزة (أسهل). خد حد معاك. أصعب جزء هو إنك تدخل الباب. بعد أسبوعين هيبقى بيتك التاني.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['first day gym', 'first gym workout', 'beginner gym', 'starting gym', 'new to gym', 'gym starter', 'what to do first day', 'complete beginner'],
+    keywordsAr: ['أول يوم جيم', 'أول تمرين', 'مبتدئ جيم', 'ابدأ جيم', 'جديد في الجيم', 'اعمل إيه أول يوم'],
+    keywordsFranco: ['awal yom gym', 'awal tamrin', 'mobtade2 gym', 'abda2 gym', 'gedid fel gym', 'a3ml eh awal yom'],
+    stateId: 'workout_first_day_gym',
+    response: { en: 'First day at the gym: 1) Wear comfortable clothes and athletic shoes, 2) Bring water bottle and towel, 3) Start with 10 min cardio warm-up, 4) Do full body machine workout: leg press, chest press, lat pulldown, shoulder press, cable row — 3 sets of 12-15 reps each, light weight, 5) Learn proper form on each machine (ask staff!), 6) Finish with 5 min cool down. DON\'T try to lift heavy on day 1. DON\'T do advanced exercises. Focus on learning movements. Use the Forma app to track everything!', ar: 'أول يوم في الجيم: ١) البس هدوم مريحة وجزمة رياضية، ٢) خد زجاجة ماء وفوطة، ٣) ابدأ بـ١٠ دقايق كارديو تسخين، ٤) اعمل فول بادي على الأجهزة: ليج بريس، تشست بريس، لات بول داون، شولدر بريس، كابل رو — ٣ سيتات × ١٢-١٥ تكرار، وزن خفيف، ٥) اتعلم الفورم الصح (اسأل المدرب!)، ٦) تهدئة ٥ دقايق. متحاولش ترفع تقيل أول يوم!' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['track progress', 'measure progress', 'progress photos', 'gym progress', 'how to track', 'progress tracking', 'body measurements', 'am i making progress'],
+    keywordsAr: ['تتبع التقدم', 'قياس التقدم', 'صور تقدم', 'تقدم الجيم', 'ازاي أتابع', 'قياسات الجسم', 'أنا بتقدم'],
+    keywordsFranco: ['track progress', 'track ta2adom', 'sowar ta2adom', 'gym progress', 'ezay atab3', '2eyasat el gesm'],
+    stateId: 'workout_track_progress',
+    response: { en: 'How to track gym progress (do ALL of these): 1) LOG YOUR WORKOUTS — weight, reps, sets (use Forma app!), 2) Weekly weigh-ins: same time, morning, after bathroom, 3) Progress photos: monthly, same lighting/angle/time, front/side/back, 4) Body measurements: monthly — chest, waist, hips, arms, thighs, 5) Strength benchmarks: track your 1RM or rep PRs on key lifts. DON\'T rely on scale alone — you can gain muscle and lose fat (weight stays same but you look better). Take progress seriously — what gets measured gets improved.', ar: 'تتبع التقدم في الجيم (اعمل كل دول): ١) سجل تمارينك — وزن، تكرارات، سيتات (استخدم تطبيق Forma!)، ٢) وزن أسبوعي: نفس الوقت، الصبح، بعد الحمام، ٣) صور تقدم: شهرياً، نفس الإضاءة/الزاوية، أمام/جنب/ورا، ٤) قياسات: شهرياً — صدر، وسط، أرداف، ذراع، فخذ، ٥) معايير القوة: تتبع أفضل أداء. متعتمدش على الميزان بس — ممكن تبني عضلات وتخس دهون (الوزن ثابت بس شكلك أحسن).' },
+    priority: 6,
+    domain: 'progress',
+  },
+  {
+    keywords: ['workout structure', 'how to structure workout', 'exercise order', 'workout order', 'which exercise first', 'program structure', 'workout plan structure'],
+    keywordsAr: ['ترتيب التمارين', 'هيكل التمرين', 'ترتيب الجلسة', 'أي تمرين الأول', 'بنية البرنامج'],
+    keywordsFranco: ['tartib el tamarin', 'haykal el tamrin', 'tartib el galsa', 'ay tamrin el awal', 'workout structure'],
+    stateId: 'workout_structure_guide',
+    response: { en: 'Optimal workout structure: 1) WARM UP (10-15 min), 2) COMPOUND LIFTS first (squat, bench, deadlift, OHP, rows) — when you\'re freshest and strongest, 3) SECONDARY compounds (lunges, dips, pull-ups), 4) ISOLATION exercises (curls, lateral raises, leg curls), 5) ABS/CORE (planks, cable crunches), 6) COOL DOWN (5-10 min stretching). Total workout: 45-75 minutes. Always do heavy compounds BEFORE isolation. Never do arms before back day (biceps fatigued). Most important exercises get priority placement.', ar: 'ترتيب التمرين الأمثل: ١) تسخين (١٠-١٥ دقيقة)، ٢) تمارين مركبة الأول (سكوات، بنش، ديدلفت، OHP، تجديف) — وأنت فريش وقوي، ٣) مركبات ثانوية (لنج، ديبس، عقلة)، ٤) تمارين عزل (كيرل، رفع جانبي)، ٥) بطن/كور، ٦) تهدئة (٥-١٠ دقايق إطالات). إجمالي: ٤٥-٧٥ دقيقة. دايماً المركب قبل العزل. متعملش باي قبل يوم ظهر.' },
+    priority: 6,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
