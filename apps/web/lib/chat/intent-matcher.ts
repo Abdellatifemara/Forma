@@ -475,6 +475,48 @@ function detectFoodQuery(text: string): string | null {
   return null;
 }
 
+// ─── Multi-Food Detection ──────────────────────────────────────
+// "rice and chicken and salad" → ["rice", "chicken", "salad"]
+// "eggs, toast, and juice" → ["eggs", "toast", "juice"]
+function detectMultipleFoods(text: string): string[] {
+  const lower = text.toLowerCase();
+  const parts = lower.split(/\s*(?:and|&|,|و|with|مع|w)\s*/);
+  const foods: string[] = [];
+  for (const part of parts) {
+    const trimmed = part.trim();
+    if (trimmed.length < 2) continue;
+    // Check if this part contains a known food
+    const food = FOOD_NAMES.find(f =>
+      trimmed === f || trimmed.startsWith(f + ' ') || trimmed.endsWith(' ' + f) || trimmed.includes(' ' + f + ' ')
+    );
+    if (food) foods.push(food);
+    else if (FOOD_NAMES.includes(trimmed)) foods.push(trimmed);
+  }
+  return foods;
+}
+
+// ─── Food Comparison Detection ─────────────────────────────────
+// "chicken vs beef", "rice or pasta", "فول ولا بيض"
+function detectFoodComparison(text: string): { food1: string; food2: string } | null {
+  const lower = text.toLowerCase();
+  const vsMatch = lower.match(/(.+?)\s+(?:vs\.?|versus|or|compared to|ولا|wala|better than|احسن من|a7san men)\s+(.+)/);
+  if (!vsMatch) return null;
+  const left = vsMatch[1].trim();
+  const right = vsMatch[2].trim();
+  const food1 = FOOD_NAMES.find(f => left.includes(f) || f.includes(left));
+  const food2 = FOOD_NAMES.find(f => right.includes(f) || f.includes(right));
+  if (food1 && food2) return { food1, food2 };
+  return null;
+}
+
+// ─── Meal Quality Assessment ────────────────────────────────────
+// "is rice and chicken good", "is this a good meal"
+function detectMealQualityQuery(text: string): boolean {
+  const lower = text.toLowerCase();
+  return /(?:is (?:this |it )?(?:a )?good|is (?:this |it )?healthy|هل ده كويس|كويس|صحي|ده صح|da kwais|se7y)/.test(lower)
+    && /(?:meal|food|أكل|وجبة|akl|wagba)/.test(lower);
+}
+
 // ─── Portion-Aware Food Parsing ─────────────────────────────────
 // Detects "3 eggs", "200g chicken", "a plate of koshari", "كيلو فراخ"
 interface FoodPortion {
@@ -1597,6 +1639,42 @@ const INTENT_RULES: IntentRule[] = [
     priority: 8,
     domain: 'supplements',
   },
+  {
+    keywords: ['how to take creatine', 'creatine dosage', 'creatine loading', 'when to take creatine'],
+    keywordsAr: ['ازاي اخد كرياتين', 'جرعة الكرياتين', 'اخد كرياتين امتى'],
+    keywordsFranco: ['ezay a5od creatine', 'ger3et el creatine'],
+    stateId: 'SP_MENU',
+    response: { en: 'Creatine: 5g daily, every day (even rest days). No loading needed. Mix in water/shake. Take anytime — timing doesn\'t matter much.', ar: 'كرياتين: 5 جرام يومياً، كل يوم (حتى أيام الراحة). مش محتاج لودنج. حطه في مية/شيك. في أي وقت — التوقيت مش مهم أوي.' },
+    priority: 9,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['which whey', 'best whey', 'whey isolate', 'whey concentrate', 'protein brand'],
+    keywordsAr: ['احسن واي', 'واي ايزوليت', 'واي كونسنتريت'],
+    keywordsFranco: ['a7san whey', 'whey isolate', 'whey concentrate'],
+    stateId: 'SP_MENU',
+    response: { en: 'Isolate: purer (90%+ protein), less lactose, more expensive. Concentrate: 70-80% protein, cheaper, fine for most people. Both work — pick what fits your budget!', ar: 'ايزوليت: أنقى (90%+ بروتين)، لاكتوز أقل، أغلى. كونسنتريت: 70-80% بروتين، أرخص، كويس لمعظم الناس. الاتنين شغالين — اختار حسب ميزانيتك!' },
+    priority: 8,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['vitamin d', 'vitamin d3', 'sunshine vitamin', 'do i need vitamin d'],
+    keywordsAr: ['فيتامين دي', 'فيتامين د'],
+    keywordsFranco: ['vitamin d', 'vitamin d3'],
+    stateId: 'SP_MENU',
+    response: { en: 'Vitamin D: Most people are deficient. 2000-4000 IU daily with a fatty meal. Important for bones, immunity, and muscle function. Get tested!', ar: 'فيتامين دي: معظم الناس عندهم نقص. 2000-4000 وحدة يومياً مع وجبة فيها دهون. مهم للعظام والمناعة والعضلات. اعمل تحليل!' },
+    priority: 8,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['omega 3', 'fish oil', 'omega benefits', 'do i need omega'],
+    keywordsAr: ['أوميجا 3', 'زيت سمك', 'فوايد الأوميجا'],
+    keywordsFranco: ['omega 3', 'fish oil', 'fawayed el omega'],
+    stateId: 'SP_MENU',
+    response: { en: 'Omega-3: Anti-inflammatory, heart health, joint support. 1-3g EPA+DHA daily. Best from fatty fish (2-3x/week) or a quality fish oil supplement.', ar: 'أوميجا 3: مضاد التهابات، صحة القلب، دعم المفاصل. 1-3 جرام EPA+DHA يومياً. أحسن من السمك الدهني (2-3 مرات/أسبوع) أو مكمل زيت سمك كويس.' },
+    priority: 8,
+    domain: 'supplements',
+  },
 
   // ══════════════════════════════════════════════════════════
   // ── Devices ───────────────────────────────────────────────
@@ -2073,6 +2151,109 @@ const INTENT_RULES: IntentRule[] = [
   },
 
   // ══════════════════════════════════════════════════════════
+  // ── Egyptian Food Intelligence (v12) ──────────────────────
+  // ══════════════════════════════════════════════════════════
+  {
+    keywords: ['molokhia', 'molokheia', 'molokhiya', 'molokheya', 'jute leaves'],
+    keywordsAr: ['ملوخية', 'ملوخيه'],
+    keywordsFranco: ['molo5eya', 'molo5ia'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Molokhia: ~50 cal/cup, rich in iron, calcium, vitamins A & C. Low cal but paired with rice + chicken = full meal. Searching...', ar: 'ملوخية: ~50 سعر/كوب، غنية بالحديد والكالسيوم وفيتامين A و C. سعرات قليلة بس مع أرز + فراخ = وجبة كاملة. بدور...' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['mahshi', 'stuffed grape leaves', 'stuffed peppers', 'stuffed vegetables', 'wara2 enab'],
+    keywordsAr: ['محشي', 'ورق عنب', 'محشي كرنب', 'محشي فلفل'],
+    keywordsFranco: ['ma7shy', 'wara2 3enab'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Mahshi (stuffed veggies): ~150-200 cal per portion. Great source of fiber + carbs. Rice-stuffed grape leaves are a classic!', ar: 'محشي: ~150-200 سعر للحصة. مصدر ممتاز للألياف والكارب. ورق العنب كلاسيك!' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['fattah', 'fattet hummus', 'egyptian fattah'],
+    keywordsAr: ['فتة', 'فتة الحمص', 'فتة لحمة'],
+    keywordsFranco: ['fatta', 'fattet'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Fattah: High calorie (~400-600/portion) — rice, bread, meat, garlic vinegar sauce. Great post-workout if you need a caloric surplus!', ar: 'فتة: سعرات عالية (~400-600/حصة) — أرز، عيش، لحمة، صلصة خل وتوم. ممتازة بعد التمرين لو محتاج سعرات زيادة!' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['hawawshi', 'hawawshy'],
+    keywordsAr: ['حواوشي'],
+    keywordsFranco: ['7awawshy', 'hawawshy'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Hawawshi: ~350-500 cal per piece. High protein from minced meat + carbs from bread. Consider half portion if cutting!', ar: 'حواوشي: ~350-500 سعر لكل واحدة. بروتين عالي من اللحمة المفرومة + كارب من العيش. خد نص واحدة لو بتنشف!' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['fiteer', 'feteer', 'egyptian pie', 'fiteer meshaltet'],
+    keywordsAr: ['فطير', 'فطير مشلتت'],
+    keywordsFranco: ['feteer', 'fiteer meshaltet'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Fiteer: Very high calorie (~500-800/piece) — layers of butter and dough. Occasional treat, not daily. Savory fiteer with cheese is better than sweet.', ar: 'فطير: سعرات عالية جداً (~500-800/قطعة) — طبقات سمنة وعجينة. يبقى ترييت مش يومي. الفطير المالح بالجبنة أحسن من الحلو.' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['shawarma calories', 'shawarma healthy', 'is shawarma ok'],
+    keywordsAr: ['سعرات الشاورما', 'الشاورما صحية'],
+    keywordsFranco: ['so3rat el shawarma', 'shawarma se7ya'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Shawarma: ~400-600 cal/sandwich. Chicken shawarma is leaner (~25g protein). Skip the garlic sauce for fewer calories. Ask for extra veggies!', ar: 'شاورما: ~400-600 سعر/ساندويتش. شاورما فراخ أخف (~25 جرام بروتين). سيب صلصة الثوم لسعرات أقل. اطلب خضار زيادة!' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['liver', 'liver healthy', 'kibda', 'liver calories'],
+    keywordsAr: ['كبدة', 'كبدة صحية', 'سعرات الكبدة'],
+    keywordsFranco: ['kebda', 'kibda'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Liver (kibda): ~135 cal/100g, 20g protein. Incredibly rich in iron, B12, vitamin A. One of the most nutrient-dense foods! Great for bulking.', ar: 'كبدة: ~135 سعر/100 جرام، 20 جرام بروتين. غنية جداً بالحديد وB12 وفيتامين A. من أغنى الأكلات بالعناصر الغذائية! ممتازة للبلك.' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['koshari healthy', 'koshari calories', 'koshary calories', 'is koshari good'],
+    keywordsAr: ['سعرات الكشري', 'الكشري صحي'],
+    keywordsFranco: ['so3rat el koshary', 'koshary se7y'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Koshari: ~500-700 cal/plate. Good carb source (rice + pasta + lentils). Add more lentils for protein! A vegan-friendly Egyptian classic.', ar: 'كشري: ~500-700 سعر/طبق. مصدر كارب كويس (أرز + مكرونة + عدس). زود العدس لبروتين أكتر! كلاسيك مصري مناسب للنباتيين.' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['foul calories', 'ful calories', 'is foul healthy', 'foul protein', 'ful medames healthy'],
+    keywordsAr: ['سعرات الفول', 'الفول صحي', 'بروتين الفول'],
+    keywordsFranco: ['so3rat el fool', 'el fool se7y'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Ful Medames: ~230 cal/cup, 13g protein, 33g carbs, 8g fiber. Cheap, filling, and nutritious! Add eggs for a complete amino acid profile.', ar: 'فول مدمس: ~230 سعر/كوب، 13 جرام بروتين، 33 جرام كارب، 8 جرام ألياف. رخيص ومشبع ومغذي! ضيف بيض للبروتين الكامل.' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['ta3meya calories', 'taameya calories', 'falafel healthy', 'falafel calories'],
+    keywordsAr: ['سعرات الطعمية', 'الطعمية صحية'],
+    keywordsFranco: ['so3rat el ta3meya', 'ta3meya se7ya'],
+    stateId: 'NT_SEARCH',
+    route: '/nutrition',
+    response: { en: 'Taameya/Falafel: ~60 cal per piece (fried), ~40 if baked/air-fried. Made from fava beans — decent protein. Bake for a healthier option!', ar: 'طعمية: ~60 سعر للواحدة (مقلية)، ~40 لو مشوية/اير فراير. من الفول — بروتين معقول. اشويها لخيار أصح!' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+
   // ── Deep Nutrition Coverage (v11) ──────────────────────────
   // ══════════════════════════════════════════════════════════
   {
@@ -2716,6 +2897,47 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   // ── Time-relative queries: "is it too late to train", "when should I eat"
   const timeResult = handleTimeQuery(normalized, /[\u0600-\u06FF]/.test(text));
   if (timeResult) return timeResult;
+
+  // ── Food comparison: "chicken vs beef", "rice or pasta"
+  const foodComp = detectFoodComparison(stripped);
+  if (foodComp) {
+    return {
+      stateId: 'NT_SEARCH',
+      confidence: 0.85,
+      action: { type: 'navigate', route: `/nutrition?search=${encodeURIComponent(foodComp.food1)}` },
+      response: {
+        en: `Comparing ${foodComp.food1} vs ${foodComp.food2} — both are good options! Let me show the nutritional breakdown:`,
+        ar: `مقارنة ${foodComp.food1} مع ${foodComp.food2} — الاتنين خيارات كويسة! خليني أوريك التفاصيل الغذائية:`,
+      },
+    };
+  }
+
+  // ── Meal quality assessment: "is rice and chicken a good meal"
+  if (detectMealQualityQuery(stripped)) {
+    const foods = detectMultipleFoods(stripped);
+    const foodList = foods.length > 0 ? foods.join(', ') : 'your meal';
+    return {
+      stateId: 'NT_CALC',
+      confidence: 0.75,
+      response: {
+        en: `Let me evaluate ${foodList}. A balanced meal should have: protein (30%), carbs (40%), fats (30%), plus vegetables. Let me check:`,
+        ar: `خليني أقيّم ${foodList}. الوجبة المتوازنة لازم فيها: بروتين (30%)، كارب (40%)، دهون (30%)، وخضار. هشوفلك:`,
+      },
+    };
+  }
+
+  // ── Multi-food meal detection: "I ate rice and chicken and salad"
+  const multiFoods = detectMultipleFoods(stripped);
+  if (multiFoods.length >= 2 && !extractedParams.weight && !extractedParams.water_ml) {
+    const foodList = multiFoods.join(', ');
+    return {
+      stateId: 'NT_LOG_MEAL',
+      confidence: 0.8,
+      action: { type: 'navigate', route: `/nutrition?search=${encodeURIComponent(multiFoods[0])}` },
+      response: { en: `Got it! Logging: ${foodList}. Let me find the nutritional info:`, ar: `تمام! بسجل: ${foodList}. هجبلك المعلومات الغذائية:` },
+      extractedParams: { foods: multiFoods.join(',') },
+    };
+  }
 
   // ── Exercise alternative detection: "easier than deadlift", "can't do pull ups"
   const altQuery = detectExerciseAlternative(stripped);
