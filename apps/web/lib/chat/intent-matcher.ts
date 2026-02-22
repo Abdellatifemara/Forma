@@ -10626,6 +10626,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'health',
   },
 
+  // ── Women's Fitness ────────────────────────
+  {
+    keywords: ['women weight training', 'women lifting', 'women gym', 'girls gym', 'female bodybuilding', 'women bulk', 'women get bulky', 'lifting makes women bulky'],
+    keywordsAr: ['بنات وحديد', 'بنات جيم', 'ستات جيم', 'حديد للبنات', 'بنات تتضخم', 'تمارين حديد للستات'],
+    keywordsFranco: ['banat w 7adid', 'banat gym', 'setat gym', 'girls gym', 'banat tetda5am', 'lifting banat'],
+    stateId: 'health_women_lifting',
+    response: { en: 'MYTH BUSTED: Women will NOT get bulky from lifting weights. Women have 15-20x less testosterone than men — it\'s physiologically very difficult to build "bulky" muscle. What weight training DOES for women: tones and shapes (that "toned" look IS muscle), burns fat more efficiently, strengthens bones (prevents osteoporosis), boosts metabolism, improves mood. Women should lift HEAVY — light pink dumbbells don\'t do much. Same exercises as men: squat, deadlift, bench, rows. Train 3-5x/week.', ar: 'خرافة اتفندت: البنات مش هتتضخم من الحديد. البنات عندهم تستوستيرون أقل ١٥-٢٠ مرة من الرجالة — صعب جداً فسيولوجياً تبني عضلات "ضخمة". الحديد بيعمل إيه للبنات: بيشكل ويرسم الجسم (شكل "التونينج" ده عضلات!)، بيحرق دهون أحسن، بيقوي العظام، بيرفع الأيض، بيحسن المزاج. البنات لازم ترفع تقيل! نفس التمارين: سكوات، ديدلفت، بنش. ٣-٥ مرات/أسبوع.' },
+    priority: 6,
+    domain: 'health',
+  },
+  {
+    keywords: ['period gym', 'menstrual cycle gym', 'period workout', 'period exercise', 'training on period', 'menstruation exercise', 'cycle training', 'pms gym'],
+    keywordsAr: ['الدورة والجيم', 'الدورة الشهرية والتمرين', 'تمرين وقت الدورة', 'الحيض والتمرين', 'جيم وقت الدورة'],
+    keywordsFranco: ['el dawra w el gym', 'period gym', 'tamrin wa2t el dawra', 'dawra shahriya w tamrin'],
+    stateId: 'health_period_training',
+    response: { en: 'Training with your menstrual cycle: FOLLICULAR PHASE (day 1-14, period + after): estrogen rising, energy up — best time for heavy lifting and PR attempts! OVULATION (day 14): peak strength, but higher injury risk (estrogen affects ligaments). LUTEAL PHASE (day 15-28): progesterone up, energy lower, body temp higher — reduce intensity, focus on moderate weights and cardio. PERIOD (day 1-5): exercise HELPS cramps! Light-moderate training is fine. Listen to your body — some women are stronger on their period.', ar: 'التمرين مع الدورة الشهرية: المرحلة الجرابية (يوم ١-١٤): الاستروجين بيزيد، الطاقة عالية — أحسن وقت للحديد التقيل! التبويض (يوم ١٤): أعلى قوة، بس خطر إصابة أعلى. المرحلة الأصفرية (يوم ١٥-٢٨): البروجسترون بيزيد، الطاقة أقل — قللي الشدة. الدورة (يوم ١-٥): التمرين بيساعد على التقلصات! تمرين خفيف-متوسط كويس. اسمعي جسمك.' },
+    priority: 6,
+    domain: 'health',
+  },
+  {
+    keywords: ['pregnancy exercise', 'pregnant gym', 'exercise while pregnant', 'pregnancy workout', 'safe exercise pregnant', 'prenatal fitness'],
+    keywordsAr: ['تمرين والحمل', 'جيم وأنا حامل', 'رياضة أثناء الحمل', 'تمارين للحامل', 'رياضة آمنة للحامل'],
+    keywordsFranco: ['tamrin w el 7aml', 'gym w ana 7amel', 'reyada athna2 el 7aml', 'tamarin lel 7amel'],
+    stateId: 'health_pregnancy_exercise',
+    response: { en: '⚠️ ALWAYS consult your doctor first! General guidelines: Exercise during pregnancy is generally SAFE and recommended. Safe activities: walking, swimming, prenatal yoga, light weights, pelvic floor exercises. Avoid: contact sports, lying flat on back (after 1st trimester), heavy maximal lifts, exercises with fall risk, hot yoga. Benefits: easier labor, less gestational diabetes, better mood, faster recovery. Keep heart rate moderate. Stay hydrated. If you were active before pregnancy, you can usually continue (modified).', ar: '⚠️ استشيري طبيبك أولاً! إرشادات عامة: التمرين أثناء الحمل آمن ومنصوح بيه. أنشطة آمنة: مشي، سباحة، يوجا حمل، أوزان خفيفة، تمارين قاع الحوض. تجنبي: رياضات تلامس، الاستلقاء على الظهر (بعد الثلث الأول)، أوزان قصوى، تمارين فيها خطر سقوط. فوائد: ولادة أسهل، سكري حمل أقل، مزاج أحسن. خلي النبض معتدل. اشربي ماء كتير.' },
+    priority: 7,
+    domain: 'health',
+  },
+  {
+    keywords: ['postpartum', 'after birth fitness', 'after pregnancy gym', 'post baby body', 'postpartum exercise', 'diastasis recti', 'post birth workout'],
+    keywordsAr: ['بعد الولادة', 'رياضة بعد الولادة', 'جيم بعد الولادة', 'جسم بعد الحمل', 'انفراق المستقيم'],
+    keywordsFranco: ['ba3d el welada', 'reyada ba3d el welada', 'gym ba3d el welada', 'gesm ba3d el 7aml'],
+    stateId: 'health_postpartum_fitness',
+    response: { en: '⚠️ Get doctor clearance (usually 6 weeks, 8-12 for C-section). Start with: pelvic floor exercises (Kegels), gentle walking, breathing exercises. Check for diastasis recti (abdominal separation) — AVOID crunches if present. Weeks 6-12: add light weights, bodyweight exercises. 3-6 months: gradually return to normal training. Don\'t rush it — your body just did something incredible. Breastfeeding increases calorie needs (+300-500 cal). Stay hydrated. Core rehabilitation before heavy lifting.', ar: '⚠️ خدي موافقة الطبيب (عادة ٦ أسابيع، ٨-١٢ للقيصرية). ابدأي بـ: تمارين قاع الحوض (كيجل)، مشي خفيف، تمارين تنفس. افحصي انفراق المستقيم — تجنبي الكرانشز لو موجود. أسابيع ٦-١٢: أوزان خفيفة، تمارين وزن الجسم. ٣-٦ شهور: ارجعي تدريجياً للتمرين العادي. متستعجليش — جسمك عمل حاجة مذهلة. الرضاعة بتزود الاحتياج +٣٠٠-٥٠٠ سعرة.' },
+    priority: 7,
+    domain: 'health',
+  },
+  {
+    keywords: ['women body fat', 'female body composition', 'women body fat percentage', 'ideal body fat women', 'women cutting', 'women bulking', 'women muscle', 'toning'],
+    keywordsAr: ['نسبة دهون البنات', 'تكوين الجسم للبنات', 'نسبة دهون مثالية للستات', 'تنشيف بنات', 'تضخيم بنات', 'تونينج'],
+    keywordsFranco: ['nesbet dohon el banat', 'body fat banat', 'ideal body fat setat', 'tanshif banat', 'toning'],
+    stateId: 'health_women_body_composition',
+    response: { en: 'Women\'s body fat ranges: Essential: 10-13% (dangerous, competition only). Athletes: 14-20%. Fitness: 21-24%. Average: 25-31%. Obese: 32%+. Women NEED higher body fat than men (hormones, reproductive health). Below 15-17% can cause period loss (amenorrhea) — this is a serious health concern. "Toned" look = 18-22% body fat with muscle. Women should eat in a smaller deficit than men when cutting: 300-400 cal deficit max. Build muscle first (eat at maintenance or slight surplus), then cut.', ar: 'نسب دهون البنات: ضروري: ١٠-١٣٪ (خطر، للمسابقات بس). رياضيات: ١٤-٢٠٪. فيتنس: ٢١-٢٤٪. متوسط: ٢٥-٣١٪. بدانة: ٣٢٪+. البنات محتاجين دهون أعلى من الرجالة (هرمونات، صحة إنجابية). أقل من ١٥-١٧٪ ممكن يوقف الدورة — ده خطر. شكل "التونينج" = ١٨-٢٢٪ دهون مع عضلات. البنات لازم عجز سعرات أقل: ٣٠٠-٤٠٠ حد أقصى. ابني عضلات الأول، بعدين نشفي.' },
+    priority: 6,
+    domain: 'health',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
