@@ -10071,6 +10071,44 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── RPE, Deload & Training Splits ────────────────────────
+  {
+    keywords: ['rpe', 'rate of perceived exertion', 'rir', 'reps in reserve', 'how hard', 'intensity rating', 'effort level', 'training intensity'],
+    keywordsAr: ['آر بي إي', 'مجهود', 'شدة التمرين', 'كام تكرار فاضل', 'صعوبة التمرين'],
+    keywordsFranco: ['rpe', 'rir', 'sheddah', 'kam tekrar fadel', 'so3obet el tamrin'],
+    stateId: 'workout_rpe_rir',
+    response: { en: 'RPE (Rate of Perceived Exertion) scale 1-10 measures how hard a set feels. RPE 7 = could do 3 more reps. RPE 8 = 2 reps left. RPE 9 = 1 rep left. RPE 10 = absolute failure. RIR (Reps in Reserve) is the inverse. For hypertrophy: train at RPE 7-9 (1-3 RIR). For strength: RPE 8-9.5. Beginners should stay at RPE 7-8 to learn form. Never go RPE 10 on compound lifts without a spotter.', ar: 'الـ RPE مقياس من ١-١٠ بيقيس صعوبة السيت. RPE 7 = تقدر تعمل ٣ تكرارات كمان. RPE 8 = فاضل ٢. RPE 9 = فاضل ١. RPE 10 = فشل كامل. للتضخيم: اتمرن RPE 7-9. للقوة: RPE 8-9.5. المبتدئين يفضلوا RPE 7-8 عشان يتعلموا الفورم الصح.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['deload', 'deload week', 'recovery week', 'light week', 'reduce volume', 'active recovery week', 'when to deload', 'need a break'],
+    keywordsAr: ['ديلود', 'أسبوع راحة', 'أسبوع خفيف', 'تقليل الحمل', 'محتاج راحة', 'أسبوع استشفاء'],
+    keywordsFranco: ['deload', 'osbo3 ra7a', 'osbo3 5afif', 'ta2lil el 7eml', 'me7tag ra7a'],
+    stateId: 'workout_deload_guide',
+    response: { en: 'Deload every 4-8 weeks: reduce volume 40-50% OR intensity 10-15% for one week. Signs you need a deload: joints aching, sleep worsening, strength plateau 2+ weeks, dreading the gym, increased resting heart rate. During deload: keep going to the gym but use lighter weights, fewer sets. DON\'T skip the gym entirely — active recovery is better than complete rest. You\'ll come back stronger.', ar: 'اعمل ديلود كل ٤-٨ أسابيع: قلل الحجم ٤٠-٥٠٪ أو الشدة ١٠-١٥٪ لمدة أسبوع. علامات إنك محتاج ديلود: المفاصل بتوجعك، النوم وحش، القوة واقفة ٢ أسبوع+، مش عايز تروح الجيم. في الديلود روح الجيم بس بأوزان أخف وسيتات أقل. هترجع أقوى.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['training split', 'workout split', 'bro split', 'ppl', 'push pull legs', 'upper lower', 'full body split', 'best split', 'how many days', 'which split'],
+    keywordsAr: ['تقسيم التمارين', 'سبليت', 'برو سبليت', 'بوش بول ليجز', 'أبر لور', 'فول بادي', 'أحسن تقسيمة', 'كام يوم في الأسبوع'],
+    keywordsFranco: ['split', 'bro split', 'ppl', 'push pull legs', 'upper lower', 'full body', 'a7san split', 'kam yom fel osbo3'],
+    stateId: 'workout_split_comparison',
+    response: { en: 'Training splits compared: Full Body (3x/week) — best for beginners, hits each muscle 3x/week. Upper/Lower (4x) — great balance of frequency and volume. PPL (6x) — high frequency, ideal for intermediate+. Bro Split (5-6x, 1 muscle/day) — high volume per muscle but low frequency. Arnold Split (6x: chest+back, shoulders+arms, legs) — classic hybrid. For most people: Upper/Lower or PPL gives the best results.', ar: 'مقارنة السبليتات: فول بادي (٣ أيام) — الأفضل للمبتدئين. أبر/لور (٤ أيام) — توازن ممتاز. PPL (٦ أيام) — تردد عالي، للمتوسطين+. برو سبليت (٥-٦ أيام، عضلة/يوم) — حجم كبير بس تردد قليل. لمعظم الناس: أبر/لور أو PPL هيدوا أحسن نتايج.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['warm up', 'warmup', 'warm-up', 'how to warm up', 'before workout', 'pre workout routine', 'dynamic stretch', 'activation exercises'],
+    keywordsAr: ['تسخين', 'إحماء', 'قبل التمرين', 'ازاي اسخن', 'تسخين ديناميكي', 'تنشيط العضلات'],
+    keywordsFranco: ['warm up', 'warmup', 'tas5in', 'e7ma2', '2abl el tamrin', 'dynamic stretch'],
+    stateId: 'workout_warmup_guide',
+    response: { en: 'Proper warm-up (10-15 min): 1) General: 5 min light cardio (bike, rowing, jump rope), 2) Dynamic stretches: leg swings, arm circles, hip circles, 3) Activation: band pull-aparts, glute bridges, face pulls, 4) Specific: 2-3 ramp-up sets of your first exercise (50%×8, 70%×5, 85%×3). NEVER static stretch before lifting — save that for after. A good warm-up prevents injury and improves performance.', ar: 'التسخين الصح (١٠-١٥ دقيقة): ١) كارديو خفيف ٥ دقايق، ٢) إطالات ديناميكية: أرجحة الرجل، دوائر الذراع، ٣) تنشيط: باند بول أبارت، جلوت بريدج، ٤) تسخين تخصصي: ٢-٣ سيتات تدريجية من أول تمرين (٥٠٪×٨، ٧٠٪×٥، ٨٥٪×٣). متعملش إطالات ثابتة قبل الحديد — دي بعد التمرين.' },
+    priority: 5,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
