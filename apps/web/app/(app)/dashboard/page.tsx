@@ -93,7 +93,7 @@ export default function DashboardPage() {
   const filters = isRTL ? MUSCLE_GROUPS_AR : MUSCLE_GROUPS;
 
   return (
-    <div className={cn('space-y-6', isRTL && 'text-right')}>
+    <div className={cn('space-y-6', isRTL && 'font-cairo')}>
       {/* Header — Greeting + Avatar */}
       <div className="flex items-center justify-between">
         <div>
@@ -129,7 +129,7 @@ export default function DashboardPage() {
               {isRTL ? 'كوتش ذكي، برامج تمارين، وأكتر!' : 'AI coach, workout programs, and more!'}
             </p>
           </div>
-          <ArrowRight className={cn('h-4 w-4 text-forma-orange shrink-0', isRTL && 'rotate-180')} />
+          <ArrowRight className={cn('h-4 w-4 text-forma-orange shrink-0', false)} />
         </Link>
       )}
 
@@ -151,7 +151,7 @@ export default function DashboardPage() {
       {/* Hero Banner — Gym photo with overlay */}
       <div className="relative overflow-hidden rounded-3xl bg-secondary h-48">
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent dark:from-black/90 dark:via-black/60" />
-        <div className="absolute inset-0 bg-[url('/images/gym-hero.jpg')] bg-cover bg-center opacity-60 dark:opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-forma-orange/20" />
         <div className="relative h-full flex flex-col justify-end p-5">
           <h2 className="text-xl font-bold text-white leading-tight">
             {isRTL ? 'أقوى مع كل تمرين،' : 'Stronger every rep,'}
@@ -282,7 +282,7 @@ export default function DashboardPage() {
               {isRTL ? 'مدربين معتمدين جاهزين يساعدوك' : 'Certified trainers ready to help'}
             </p>
           </div>
-          <ChevronRight className={cn('h-5 w-5 text-muted-foreground shrink-0', isRTL && 'rotate-180')} />
+          <ChevronRight className={cn('h-5 w-5 text-muted-foreground shrink-0', false)} />
         </Link>
       </div>
     </div>
@@ -302,7 +302,7 @@ function WorkoutCard({ name, duration, sets, reps, href, isRTL }: {
     <Link href={href} className="shrink-0 w-40 rounded-2xl border border-border/50 bg-muted/30 overflow-hidden">
       {/* Photo placeholder — dark gradient */}
       <div className="h-24 bg-gradient-to-br from-secondary to-secondary/80 relative">
-        <div className="absolute inset-0 bg-[url('/images/workout-placeholder.jpg')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-forma-orange/10" />
       </div>
       <div className="p-3">
         <p className="text-xs font-semibold truncate">{name}</p>

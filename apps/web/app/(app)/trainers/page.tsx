@@ -59,7 +59,7 @@ export default function TrainersMarketplacePage() {
       try {
         setIsLoading(true);
         const response = await trainersApi.getMarketplace();
-        setTrainers(response.data || []);
+        setTrainers(response.data || (response as any).trainers || []);
       } catch (err) {
         // Error handled
         setError(err instanceof Error ? err.message : 'LOAD_FAILED');
@@ -88,21 +88,22 @@ export default function TrainersMarketplacePage() {
             s.toLowerCase().includes(sp.en.toLowerCase())
           )
         );
-      const matchesPrice = (trainer.hourlyRate || 0) >= priceRange[0] && (trainer.hourlyRate || 0) <= priceRange[1];
+      const price = (trainer.hourlyRate || (trainer as any).monthlyPrice || 0);
+      const matchesPrice = price >= priceRange[0] && price <= priceRange[1];
       return matchesSearch && matchesSpecialization && matchesPrice;
     })
     .sort((a, b) => {
       switch (sortBy) {
         case 'rating':
-          return (b.rating || 0) - (a.rating || 0);
+          return ((b as any).averageRating || b.rating || 0) - ((a as any).averageRating || a.rating || 0);
         case 'reviews':
-          return (b.reviewCount || 0) - (a.reviewCount || 0);
+          return ((b as any).totalReviews || b.reviewCount || 0) - ((a as any).totalReviews || a.reviewCount || 0);
         case 'price_low':
-          return (a.hourlyRate || 0) - (b.hourlyRate || 0);
+          return (a.hourlyRate || (a as any).monthlyPrice || 0) - (b.hourlyRate || (b as any).monthlyPrice || 0);
         case 'price_high':
-          return (b.hourlyRate || 0) - (a.hourlyRate || 0);
+          return (b.hourlyRate || (b as any).monthlyPrice || 0) - (a.hourlyRate || (a as any).monthlyPrice || 0);
         case 'experience':
-          return (b.experience || 0) - (a.experience || 0);
+          return ((b as any).yearsExperience || b.experience || 0) - ((a as any).yearsExperience || a.experience || 0);
         default:
           return 0;
       }
@@ -110,7 +111,7 @@ export default function TrainersMarketplacePage() {
 
   // Trusted Partners first, then top-rated, then rest
   const trustedPartners = filteredTrainers.filter((tr) => tr.tier === 'TRUSTED_PARTNER');
-  const featuredTrainers = filteredTrainers.filter((tr) => tr.tier !== 'TRUSTED_PARTNER' && tr.verified && (tr.rating || 0) >= 4.5);
+  const featuredTrainers = filteredTrainers.filter((tr) => tr.tier !== 'TRUSTED_PARTNER' && (tr.verified || (tr as any).verifiedAt) && ((tr as any).averageRating || tr.rating || 0) >= 4.5);
   const regularTrainers = filteredTrainers.filter((tr) => !trustedPartners.includes(tr) && !featuredTrainers.includes(tr));
 
   if (isLoading) {
@@ -335,6 +336,12 @@ function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: 
   const initials = name.split(' ').map(n => n[0]).join('').toUpperCase();
   const isTrusted = trusted || trainer.tier === 'TRUSTED_PARTNER';
 
+  // Normalize backend field names
+  const rating = trainer.rating ?? (trainer as any).averageRating ?? 0;
+  const reviewCount = trainer.reviewCount ?? (trainer as any).totalReviews ?? 0;
+  const experience = trainer.experience ?? (trainer as any).yearsExperience ?? 0;
+  const hourlyRate = trainer.hourlyRate ?? (trainer as any).monthlyPrice ?? 0;
+
   return (
     <Link href={`/trainers/${trainer.id}`}>
       <Card className={`cursor-pointer transition-all hover:border-primary/50 ${isTrusted ? 'border-amber-500/40 bg-amber-500/5' : featured ? 'border-yellow-500/30 bg-yellow-500/5' : ''}`}>
@@ -374,25 +381,25 @@ function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: 
               </div>
               <div className="flex items-center justify-between text-sm">
                 <div className="flex items-center gap-4">
-                  {(trainer.rating ?? 0) > 0 && (
+                  {rating > 0 && (
                     <span className="flex items-center gap-1">
                       <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
-                      {(trainer.rating ?? 0).toFixed(1)}
-                      {(trainer.reviewCount ?? 0) > 0 && (
-                        <span className="text-muted-foreground">({trainer.reviewCount})</span>
+                      {rating.toFixed(1)}
+                      {reviewCount > 0 && (
+                        <span className="text-muted-foreground">({reviewCount})</span>
                       )}
                     </span>
                   )}
-                  {(trainer.experience ?? 0) > 0 && (
+                  {experience > 0 && (
                     <span className="flex items-center gap-1 text-muted-foreground">
                       <Award className="h-4 w-4" />
-                      {trainer.experience}{isAr ? ' سنة خبرة' : 'y exp'}
+                      {experience}{isAr ? ' سنة خبرة' : 'y exp'}
                     </span>
                   )}
                 </div>
-                {(trainer.hourlyRate ?? 0) > 0 && (
+                {hourlyRate > 0 && (
                   <span className="font-semibold text-primary">
-                    {trainer.hourlyRate} {isAr ? 'ج.م/ساعة' : 'EGP/hr'}
+                    {hourlyRate} {isAr ? 'ج.م/شهر' : 'EGP/mo'}
                   </span>
                 )}
               </div>
