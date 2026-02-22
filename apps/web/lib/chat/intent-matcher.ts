@@ -4167,6 +4167,126 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v22: Breathing Techniques ─────────────────────────────────
+  {
+    keywords: ['breathing technique', 'how to breathe gym', 'breathing during exercise', 'valsalva', 'bracing technique'],
+    keywordsAr: ['تقنية تنفس', 'ازاي اتنفس في الجيم', 'تنفس أثناء التمرين', 'فالسالفا'],
+    keywordsFranco: ['te2neyet tanafos', 'ezay atnafes fe el gym', 'tanafos asna2 el tamreen'],
+    stateId: 'WK_MENU',
+    response: { en: 'Breathing for lifting: Compound lifts (squat, deadlift): big belly breath in, brace core, hold during rep, exhale at top. This is the Valsalva maneuver — creates intra-abdominal pressure. Isolation exercises: exhale on effort (pushing/pulling), inhale on the eccentric. Never hold breath for 3+ reps straight!', ar: 'التنفس للرفع: التمارين المركبة (سكوات، ديدلفت): نفس كبير في البطن، شد الكور، امسك أثناء التكرار، ازفر في الأعلى. ده الفالسالفا — بيعمل ضغط داخلي. تمارين العزل: ازفر مع المجهود (دفع/سحب)، خد نفس في النزول. متمسكش نفسك 3+ تكرارات متواصلة!' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['box breathing', 'deep breathing exercise', 'breathing for anxiety', '4 7 8 breathing', 'calm breathing'],
+    keywordsAr: ['تنفس صندوقي', 'تمرين تنفس عميق', 'تنفس للقلق', 'تنفس 4 7 8'],
+    keywordsFranco: ['tanafos sondo2y', 'tamreen tanafos 3amiq', 'tanafos lel 2ala2'],
+    stateId: 'HL_MENU',
+    response: { en: 'Calming breathing techniques: 1) Box breathing: 4sec in, 4sec hold, 4sec out, 4sec hold — Navy SEALs use this! 2) 4-7-8: inhale 4sec, hold 7sec, exhale 8sec — great before sleep 3) Physiological sigh: double inhale through nose, long exhale through mouth — instant calm. Do 5-10 cycles.', ar: 'تقنيات تنفس مهدئة: 1) تنفس صندوقي: 4ث شهيق، 4ث ثبات، 4ث زفير، 4ث ثبات — بيستخدمه Navy SEALs! 2) 4-7-8: شهيق 4ث، ثبات 7ث، زفير 8ث — ممتاز قبل النوم 3) تنهيدة فسيولوجية: شهيق مزدوج من الأنف، زفير طويل من الفم — هدوء فوري. 5-10 دورات.' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v22: Training Logs & Progress ───────────────────────────
+  {
+    keywords: ['how to track progress', 'track workouts', 'training journal', 'log workouts', 'workout diary'],
+    keywordsAr: ['ازاي اتابع تقدمي', 'تتبع التمارين', 'مذكرة تدريب', 'تسجيل التمارين'],
+    keywordsFranco: ['ezay atabe3 ta2adomy', 'tatabo3 el tamarin', 'mozkera tadrib'],
+    stateId: 'PR_MENU',
+    response: { en: 'Track progress like a pro: 1) Log every workout (exercises, sets, reps, weight) — use this app! 2) Take progress photos monthly (same lighting, pose, time) 3) Weigh weekly (same day/time, track average) 4) Track strength PRs 5) Measure body parts monthly (arms, chest, waist, thighs). Data = motivation!', ar: 'تابع تقدمك زي البرو: 1) سجل كل تمرين (تمارين، سيتات، تكرارات، وزن) — استخدم الأبلكيشن! 2) صور تقدم شهرية (نفس الإضاءة، الوضع، الوقت) 3) اتوزن أسبوعياً (نفس اليوم/الوقت، تابع المتوسط) 4) تابع الأرقام الشخصية 5) قيس أجزاء الجسم شهرياً (ذراع، صدر، وسط، فخذ). البيانات = تحفيز!' },
+    priority: 8,
+    domain: 'progress',
+  },
+  {
+    keywords: ['pr', 'personal record', 'new pr', 'hit a pr', 'personal best', 'one rep max', '1rm'],
+    keywordsAr: ['رقم شخصي', 'بي آر', 'رقم جديد', 'أعلى وزن'],
+    keywordsFranco: ['ra2m sha5sy', 'pr', 'ra2m gedid', 'a3la wazn'],
+    stateId: 'WK_LOG',
+    response: { en: 'Congrats on chasing PRs! Track them here. Estimate your 1RM: Weight × (1 + Reps/30). Example: 100kg × 5 reps ≈ 117kg 1RM. Focus on PRs in the 3-8 rep range for safety. Don\'t test true 1RM more than every 8-12 weeks!', ar: 'مبروك على مطاردة الأرقام! سجلهم هنا. قدر الـ1RM: الوزن × (1 + التكرارات/30). مثال: 100 كيلو × 5 تكرارات ≈ 117 كيلو 1RM. ركز على أرقام في نطاق 3-8 تكرارات للأمان. متختبرش 1RM حقيقي أكتر من كل 8-12 أسبوع!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['body measurement', 'measure arms', 'measure chest', 'measure waist', 'tape measure body'],
+    keywordsAr: ['قياس الجسم', 'قياس الدراع', 'قياس الصدر', 'قياس الوسط'],
+    keywordsFranco: ['2eyas el gesm', '2eyas el dra3', '2eyas el sadr', '2eyas el wast'],
+    stateId: 'PR_MENU',
+    response: { en: 'Body measurement guide: Arms: flexed, widest point. Chest: under armpits, tape over nipples. Waist: at navel, relaxed. Hips: widest point. Thighs: midpoint. Calves: widest point. Measure same time monthly (AM, before food). Track in this app for charts!', ar: 'دليل قياس الجسم: الذراع: مشدود، أعرض نقطة. الصدر: تحت الإبط، الشريط فوق الصدر. الوسط: عند السرة، مرتاح. الورك: أعرض نقطة. الفخذ: نقطة المنتصف. السمانة: أعرض نقطة. قيس نفس الوقت شهرياً (الصبح، قبل الأكل). تابع في الأبلكيشن!' },
+    priority: 7,
+    domain: 'progress',
+  },
+
+  // ── v22: Genetic Potential & Natural Limits ─────────────────
+  {
+    keywords: ['genetic potential', 'natural limit', 'how much muscle can i build', 'genetic limit', 'maximum muscle naturally'],
+    keywordsAr: ['إمكانات وراثية', 'الحد الطبيعي', 'كام عضلات ممكن', 'الحد الجيني'],
+    keywordsFranco: ['emkanat werasya', 'el 7ad el tabi3y', 'kam 3adalat momken', 'el 7ad el giny'],
+    stateId: 'QA_MENU',
+    response: { en: 'Natural muscle-building limits (research-based): Year 1: 8-12kg. Year 2: 4-6kg. Year 3: 2-3kg. Year 4+: 1-2kg. Total lifetime: ~20-25kg of muscle for avg male. Genetics affect: muscle insertions, frame size, testosterone, fiber type, recovery speed. But EVERYONE can make amazing progress with consistency!', ar: 'حدود بناء العضلات الطبيعية (مبنية على أبحاث): السنة 1: 8-12 كيلو. السنة 2: 4-6 كيلو. السنة 3: 2-3 كيلو. السنة 4+: 1-2 كيلو. المجموع: ~20-25 كيلو عضلات للرجل المتوسط. الجينات بتأثر على: شكل العضلات، حجم الهيكل، التستوستيرون، نوع الألياف، سرعة الريكفري. بس كل واحد يقدر يعمل تقدم مذهل بالالتزام!' },
+    priority: 7,
+    domain: 'root',
+  },
+  {
+    keywords: ['ectomorph', 'endomorph', 'mesomorph', 'body type', 'somatotype', 'skinny hard gainer'],
+    keywordsAr: ['إكتومورف', 'إندومورف', 'ميزومورف', 'نوع الجسم', 'نحيف صعب أزود'],
+    keywordsFranco: ['ectomorph', 'endomorph', 'mesomorph', 'no3 el gesm', 'na7if sa3b azawed'],
+    stateId: 'QA_MENU',
+    response: { en: 'Body types are OVERSIMPLIFIED! "Ectomorph/Mesomorph/Endomorph" isn\'t real science — it\'s a spectrum. Skinny? You just need more calories. Chunky? You just need less. "Hard gainer" usually = not eating enough. Track your food for a week — you\'ll be surprised. ANYONE can build muscle with proper training + nutrition!', ar: 'أنواع الأجسام مبسطة أكتر من اللازم! "إكتو/ميزو/إندومورف" مش علم حقيقي — ده طيف. نحيف؟ محتاج كالوريز أكتر. ممتلئ؟ محتاج أقل. "صعب الزيادة" عادةً = مش بياكل كفاية. تابع أكلك أسبوع — هتتفاجأ. أي حد يقدر يبني عضلات بتمرين + تغذية صح!' },
+    priority: 7,
+    domain: 'root',
+  },
+
+  // ── v22: Training Partners & Community ───────────────────────
+  {
+    keywords: ['training partner', 'gym partner', 'gym buddy', 'workout partner', 'need a spotter'],
+    keywordsAr: ['بارتنر تمرين', 'زميل جيم', 'بدي جيم', 'محتاج سبوتر'],
+    keywordsFranco: ['partner tamreen', 'zamil gym', 'buddy gym', 'me7tag spotter'],
+    stateId: 'QA_MENU',
+    response: { en: 'Training partner benefits: 1) Accountability (show up!) 2) Motivation & competition 3) Safety (spotting on heavy lifts) 4) Learn from each other. Find one: gym regulars who train similar times, similar level & goals. Rules: match schedules, communicate honestly, push each other but respect limits!', ar: 'فوايد بارتنر التمرين: 1) مسؤولية (تروح!) 2) تحفيز ومنافسة 3) أمان (سبوتنج في الرفع الثقيل) 4) تعلم من بعض. لاقي واحد: ناس بتتمرن نفس الأوقات، نفس المستوى والأهداف. قواعد: نظموا المواعيد، اتكلموا بصراحة، ادفعوا بعض بس احترموا الحدود!' },
+    priority: 6,
+    domain: 'root',
+  },
+
+  // ── v22: Supplement Safety & Quality ────────────────────────
+  {
+    keywords: ['fake supplement', 'counterfeit supplement', 'how to check supplement', 'supplement quality', 'supplement real or fake'],
+    keywordsAr: ['مكمل مغشوش', 'مكمل مضروب', 'ازاي اتأكد من المكمل', 'جودة المكمل'],
+    keywordsFranco: ['mokamel maghsoosh', 'mokamel madrob', 'ezay at2aked men el mokamel', 'godet el mokamel'],
+    stateId: 'SP_MENU',
+    response: { en: 'Spot fake supplements: 1) Check hologram/seal (scratch to verify) 2) Batch number + expiry date must be printed (not sticker) 3) Scan barcode with manufacturer\'s app 4) Buy from authorized dealers only 5) If price is too good = probably fake 6) Check weight (fakes are often lighter). In Egypt: buy from verified stores, avoid Facebook sellers!', ar: 'اكتشف المكملات المضروبة: 1) شيك الهولوجرام (اخدشه للتأكد) 2) رقم الدفعة + الصلاحية لازم مطبوعة (مش ستيكر) 3) امسح الباركود بأبلكيشن الشركة 4) اشتري من موزعين معتمدين بس 5) لو السعر حلو أوي = غالباً مضروب 6) شيك الوزن (المضروب أخف عادةً). في مصر: اشتري من محلات موثوقة، بلاش بياعين فيسبوك!' },
+    priority: 8,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['when to take supplements', 'supplement schedule', 'supplement timing', 'morning supplements', 'night supplements'],
+    keywordsAr: ['امتى اخد المكملات', 'جدول المكملات', 'توقيت المكملات'],
+    keywordsFranco: ['emta a5od el mokamelat', 'gadwal el mokamelat', 'taw2it el mokamelat'],
+    stateId: 'SP_MENU',
+    response: { en: 'Supplement timing: MORNING: Vitamin D + Omega-3 (with breakfast/fats). PRE-WORKOUT (30min): caffeine, citrulline, beta-alanine. POST-WORKOUT: whey protein + creatine. BEFORE BED: magnesium glycinate, ZMA, casein. ANYTIME: creatine (daily, timing doesn\'t matter much), multivitamin (with food).', ar: 'توقيت المكملات: الصبح: فيتامين D + أوميجا 3 (مع الفطار/دهون). قبل التمرين (30 دقيقة): كافيين، سيترولين، بيتا ألانين. بعد التمرين: واي بروتين + كرياتين. قبل النوم: ماغنيسيوم جلايسينات، ZMA، كازين. أي وقت: كرياتين (يومياً، التوقيت مش مهم أوي)، ملتيفيتامين (مع أكل).' },
+    priority: 8,
+    domain: 'supplements',
+  },
+
+  // ── v22: Quick Fitness Tests ─────────────────────────────────
+  {
+    keywords: ['fitness test', 'how fit am i', 'test my fitness', 'benchmark workout', 'fitness level test'],
+    keywordsAr: ['اختبار لياقة', 'اد ايه لياقتي', 'اختبر لياقتي'],
+    keywordsFranco: ['e5tebar leya2a', 'ad eh leya2ty', 'e5taber leya2ty'],
+    stateId: 'WK_MENU',
+    response: { en: 'Quick fitness benchmarks: Push-ups (1min): <20=beginner, 20-40=intermediate, 40+=advanced. Plank hold: <30sec=beginner, 30-90sec=intermediate, 90+sec=advanced. 1 mile run: >12min=beginner, 8-12=intermediate, <8=advanced. Bodyweight squat (1min): <20=beginner, 20-40=intermediate, 40+=advanced. Test monthly!', ar: 'معايير اللياقة السريعة: بوش اب (1 دقيقة): أقل من 20=مبتدئ، 20-40=متوسط، 40+=متقدم. بلانك: أقل من 30ث=مبتدئ، 30-90ث=متوسط، 90+ث=متقدم. ميل جري: أكتر من 12 دقيقة=مبتدئ، 8-12=متوسط، أقل من 8=متقدم. سكوات بوزن الجسم (1 دقيقة): أقل من 20=مبتدئ، 20-40=متوسط، 40+=متقدم. اختبر شهرياً!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['strength standards', 'how strong should i be', 'bench press standard', 'squat standard', 'deadlift standard'],
+    keywordsAr: ['معايير القوة', 'كام لازم ارفع', 'معيار البنش', 'معيار السكوات'],
+    keywordsFranco: ['ma3ayir el 2owa', 'kam lazem arfa3', 'me3yar el bench', 'me3yar el squat'],
+    stateId: 'WK_MENU',
+    response: { en: 'Strength standards (× bodyweight): BEGINNER: Bench 0.5×, Squat 0.75×, Deadlift 1×. INTERMEDIATE: Bench 1×, Squat 1.5×, Deadlift 1.75×. ADVANCED: Bench 1.5×, Squat 2×, Deadlift 2.5×. ELITE: Bench 2×, Squat 2.5×, Deadlift 3×. These take years — enjoy the journey!', ar: 'معايير القوة (× وزن الجسم): مبتدئ: بنش 0.5×، سكوات 0.75×، ديدلفت 1×. متوسط: بنش 1×، سكوات 1.5×، ديدلفت 1.75×. متقدم: بنش 1.5×، سكوات 2×، ديدلفت 2.5×. نخبة: بنش 2×، سكوات 2.5×، ديدلفت 3×. دول بياخدوا سنين — استمتع بالرحلة!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
