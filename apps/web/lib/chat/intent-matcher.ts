@@ -7916,6 +7916,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v79: Pull Day + Push Day + Leg Day + Upper Lower + Full Body Routine ──
+  {
+    keywords: ['pull day', 'pull workout', 'pull day routine', 'back bicep day', 'pull exercises', 'best pull day', 'pull day plan'],
+    keywordsAr: ['يوم سحب', 'تمرين سحب', 'روتين سحب', 'يوم ظهر باي'],
+    keywordsFranco: ['pull day', 'pull workout', 'back bicep day', 'pull routine'],
+    stateId: 'info_pull_day',
+    response: { en: 'The Perfect Pull Day Routine: MUSCLES WORKED: Back (lats, rhomboids, traps), biceps, rear delts, forearms. WARM-UP (5 min): Band pull-aparts 2x15, face pulls 2x15, scapular pull-ups 2x8. THE WORKOUT: 1) Barbell Row OR Weighted Pull-Up: 4x6-8 (heavy compound, start here when fresh). 2) Lat Pulldown (wide grip): 3x10-12 (vertical pulling for lat width). 3) Seated Cable Row (close grip): 3x10-12 (horizontal pulling for lat thickness). 4) Dumbbell Row: 3x10-12 each arm (unilateral work, fixes imbalances). 5) Face Pull: 3x15-20 (rear delts + rotator cuff health — NEVER skip). 6) Barbell/EZ Bar Curl: 3x10-12 (bicep mass builder). 7) Hammer Curl or Incline Curl: 3x12-15 (bicep long head + brachialis). TOTAL: ~23 sets, 45-60 minutes. TIPS: Pull with elbows, not hands. Use straps on heavy rows if grip fails before back. Superset face pulls with curls to save time. Progressive overload on compounds — isolation exercises increase by feel. FREQUENCY: Do this workout 2x per week in a PPL split for optimal growth.', ar: 'يوم السحب المثالي: العضلات: ظهر (لاتس، رومبويدز، ترابز)، باي، ديلت خلفي. إحماء: باند بول أبارتس 2×15، فيس بول 2×15. التمرين: 1) تجديف بار أو بول أب بوزن: 4×6-8. 2) لات بول داون: 3×10-12. 3) كابل رو: 3×10-12. 4) دمبل رو: 3×10-12 كل إيد. 5) فيس بول: 3×15-20 (ما تتنازلش عنه). 6) باي كيرل: 3×10-12. 7) هامر كيرل: 3×12-15. الإجمالي: ~23 سيت، 45-60 دقيقة. نصائح: اسحب بالكوع. استخدم حزام إيد لو القبضة بتفشل. 2 مرات/أسبوع في PPL.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['push day', 'push workout', 'push day routine', 'chest shoulder tricep', 'push exercises', 'best push day', 'push day plan'],
+    keywordsAr: ['يوم دفع', 'تمرين دفع', 'روتين دفع', 'يوم صدر كتف تراي'],
+    keywordsFranco: ['push day', 'push workout', 'chest shoulder tricep day', 'push routine'],
+    stateId: 'info_push_day',
+    response: { en: 'The Perfect Push Day Routine: MUSCLES WORKED: Chest, shoulders (front + side delts), triceps. WARM-UP (5 min): Band dislocates 2x15, light cable flies 2x15, rotator cuff warm-up. THE WORKOUT: 1) Barbell Bench Press: 4x6-8 (main compound, go heavy). 2) Incline Dumbbell Press: 3x8-12 (upper chest, DB allows better stretch). 3) Machine/Cable Fly: 3x12-15 (chest isolation, full squeeze at peak). 4) Overhead Press (seated DB or barbell): 3x8-12 (shoulder mass). 5) Lateral Raise: 4x12-15 (side delts for width — higher volume needed). 6) Tricep Pushdown (rope): 3x12-15 (lateral head). 7) Overhead Tricep Extension: 3x12-15 (long head). TOTAL: ~23 sets, 45-60 minutes. TIPS: Bench press: retract scapulae, arch back, feet planted. Lateral raises: slight lean forward, lead with pinky. Triceps: don\'t ego lift — full ROM and squeeze. VARIATIONS: Swap barbell bench for DB bench every few weeks. Swap overhead press for Arnold press. Add dips as finisher for extra chest/tricep work.', ar: 'يوم الدفع المثالي: العضلات: صدر، كتف (أمامي + جانبي)، تراي. إحماء: باند ديسلوكيتس 2×15، كابل فلاي خفيف 2×15. التمرين: 1) بنش بريس: 4×6-8 (تقيل). 2) إنكلاين دمبل بريس: 3×8-12. 3) كابل فلاي: 3×12-15. 4) أوفرهيد بريس: 3×8-12. 5) لاترال ريز: 4×12-15 (فوليوم عالي). 6) ترايسيب بوش داون: 3×12-15. 7) أوفرهيد ترايسيب إكستنشن: 3×12-15. الإجمالي: ~23 سيت، 45-60 دقيقة. نصائح: بنش — ارجّع اللوحات، قوّس الظهر. لاترال ريز — ميل شوية لقدام.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['leg day', 'leg workout', 'leg day routine', 'leg day plan', 'quad exercises', 'leg day exercises', 'best leg day', 'skip leg day'],
+    keywordsAr: ['يوم رجل', 'تمرين رجل', 'روتين رجل', 'خطة يوم رجل', 'تمارين كواد'],
+    keywordsFranco: ['leg day', 'leg workout', 'leg routine', 'regl day', 'skip leg day'],
+    stateId: 'info_leg_day',
+    response: { en: 'The Perfect Leg Day Routine: MUSCLES WORKED: Quads, hamstrings, glutes, calves. WARM-UP (5 min): 5 min bike/walk, leg swings, bodyweight squats 2x15. THE WORKOUT: 1) Barbell Back Squat: 4x6-8 (king of leg exercises, go heavy). 2) Romanian Deadlift: 3x8-12 (hamstrings + glutes — don\'t skip!). 3) Leg Press: 3x10-12 (quad focus, feet placement matters: high = glutes, low = quads). 4) Walking Lunges: 3x12 each leg (balance + stability + glute activation). 5) Leg Extension: 3x12-15 (quad isolation, squeeze at top). 6) Leg Curl: 3x12-15 (hamstring isolation). 7) Calf Raises (standing or seated): 4x15-20 (high reps, full ROM, pause at bottom). TOTAL: ~23 sets, 50-70 minutes. WHY YOU SHOULDN\'T SKIP LEG DAY: Legs are 50%+ of your body mass. Squats and deadlifts release the most testosterone and growth hormone. Chicken legs look ridiculous no matter how big your upper body is. Strong legs = better at every sport. TIPS: Squat depth matters — at least parallel. RDLs: feel the hamstring stretch, don\'t just hinge. Calves need high reps and full range of motion (they\'re stubborn muscles).', ar: 'يوم الرجل المثالي: العضلات: كواد، هامسترنج، جلوتس، سمانة. إحماء: 5 دقائق مشي/عجلة، سوينج رجل. التمرين: 1) باك سكوات: 4×6-8 (ملك تمارين الرجل). 2) رومانيان ديدليفت: 3×8-12 (هامسترنج + جلوتس). 3) ليج بريس: 3×10-12. 4) لنج: 3×12 كل رجل. 5) ليج إكستنشن: 3×12-15. 6) ليج كيرل: 3×12-15. 7) كالف ريز: 4×15-20 (عدات عالية، مدى كامل). ليه ما تسكبش يوم الرجل: الرجل 50%+ من كتلة جسمك. السكوات والديدليفت بيفرزوا أكتر تستوستيرون. رجل فراخ شكلها وحش مهما صدرك كبير. نصائح: السكوات لازم موازي على الأقل. الكالف محتاج عدات عالية ومدى كامل.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['upper lower split', 'upper lower routine', 'upper lower plan', 'upper lower vs ppl', 'upper body day', 'lower body day', '4 day split'],
+    keywordsAr: ['علوي سفلي', 'سبليت علوي سفلي', 'روتين علوي سفلي', '4 أيام سبليت'],
+    keywordsFranco: ['upper lower', 'upper lower split', 'upper lower vs PPL', '4 day split'],
+    stateId: 'info_upper_lower',
+    response: { en: 'Upper/Lower Split — 4-Day Program: SCHEDULE: Mon: Upper. Tue: Lower. Wed: Rest. Thu: Upper. Fri: Lower. Sat-Sun: Rest. UPPER DAY 1 (Strength Focus): Bench Press 4x5, Barbell Row 4x5, Overhead Press 3x8, Lat Pulldown 3x10, Lateral Raise 3x15, Tricep Pushdown 3x12, Bicep Curl 3x12. LOWER DAY 1 (Strength Focus): Back Squat 4x5, Romanian Deadlift 3x8, Leg Press 3x10, Leg Curl 3x12, Calf Raises 4x15. UPPER DAY 2 (Hypertrophy): Incline DB Press 3x10, Cable Row 3x12, DB Shoulder Press 3x12, Face Pull 3x15, Cable Fly 3x15, Hammer Curl 3x12, Overhead Tricep 3x12. LOWER DAY 2 (Hypertrophy): Front Squat or Hack Squat 3x10, Deadlift 3x5, Walking Lunges 3x12, Leg Extension 3x15, Leg Curl 3x15, Calf Raises 4x20. WHO IS THIS FOR: Intermediate lifters who can train 4 days/week. Great balance of frequency (everything 2x/week) and recovery. Better than bro split for natural lifters. UPPER/LOWER vs PPL: UL = 4 days, better for busy people. PPL = 6 days, more volume per muscle.', ar: 'سبليت علوي/سفلي — برنامج 4 أيام: الجدول: اثنين: علوي. تلات: سفلي. أربع: راحة. خميس: علوي. جمعة: سفلي. علوي يوم 1 (قوة): بنش 4×5، تجديف 4×5، أوفرهيد بريس 3×8. سفلي يوم 1 (قوة): سكوات 4×5، RDL 3×8، ليج بريس 3×10. علوي يوم 2 (حجم): إنكلاين دمبل 3×10، كابل رو 3×12. سفلي يوم 2 (حجم): فرونت سكوات 3×10، ديدليفت 3×5، لنج 3×12. لمين: متوسطين يقدروا يتمرنوا 4 أيام. توازن ممتاز بين التكرار والراحة. أحسن من برو سبليت للطبيعي.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['full body routine', 'full body workout', 'full body plan', 'full body 3 day', 'full body vs split', 'full body beginner', 'total body workout'],
+    keywordsAr: ['تمرين كامل الجسم', 'فول بودي', 'روتين كامل', 'فول بودي 3 أيام', 'فول بودي ولا سبليت'],
+    keywordsFranco: ['full body', 'full body workout', 'full body plan', 'full body vs split'],
+    stateId: 'info_full_body_routine',
+    response: { en: 'Full Body Routine — 3 Days Per Week: SCHEDULE: Mon: Full Body A. Wed: Full Body B. Fri: Full Body C. WORKOUT A: Squat 3x8, Bench Press 3x8, Barbell Row 3x8, Overhead Press 2x10, Bicep Curl 2x12, Calf Raises 3x15. WORKOUT B: Deadlift 3x5, Incline DB Press 3x10, Lat Pulldown 3x10, Lateral Raise 3x15, Tricep Pushdown 2x12, Leg Curl 3x12. WORKOUT C: Front Squat 3x8, DB Bench Press 3x10, Cable Row 3x10, Face Pull 3x15, Hammer Curl 2x12, Plank 3x45sec. WHO IS THIS FOR: Beginners (first 6-12 months — the BEST split for newbies). Busy people who can only train 3 days. Older lifters (recovery matters more). People returning from a break. ADVANTAGES: Each muscle trained 3x/week (highest frequency). Less time in gym (3 vs 5-6 sessions). Simpler to follow. Burns more calories per session. DISADVANTAGES: Less volume per muscle group per session. Can feel rushed. Hard to add lots of isolation work. PROGRESSION: Add 2.5kg to upper body lifts every 1-2 weeks. Add 5kg to lower body lifts every 1-2 weeks. When you stall, switch to intermediate program (Upper/Lower or PPL).', ar: 'تمرين كامل الجسم — 3 أيام: الجدول: اثنين: A. أربع: B. جمعة: C. تمرين A: سكوات 3×8، بنش 3×8، تجديف 3×8، أوفرهيد بريس 2×10. تمرين B: ديدليفت 3×5، إنكلاين دمبل 3×10، لات بول داون 3×10. تمرين C: فرونت سكوات 3×8، دمبل بنش 3×10، كابل رو 3×10. لمين: مبتدئين (أول 6-12 شهر — أحسن سبليت). مشغولين (3 أيام بس). كبار السن. العائدين بعد انقطاع. المميزات: كل عضلة 3 مرات/أسبوع. وقت أقل في الجيم. أبسط. التقدم: زوّد 2.5كجم للعلوي كل 1-2 أسبوع. 5كجم للسفلي.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
