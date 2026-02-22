@@ -4407,6 +4407,114 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'root',
   },
 
+  // ── v24: Diabetes & Fitness ─────────────────────────────────
+  {
+    keywords: ['diabetes workout', 'diabetic exercise', 'blood sugar exercise', 'type 2 diabetes gym', 'insulin resistance workout', 'sugar patient gym'],
+    keywordsAr: ['تمرين سكر', 'رياضة لمريض السكر', 'سكر ورياضة', 'مقاومة الأنسولين', 'سكري وتمرين'],
+    keywordsFranco: ['tamreen sokkar', 'reyada le marid el sokkar', 'sokkar w reyada', 'mo2awmet el insulin'],
+    stateId: 'HP_MENU',
+    response: { en: 'Exercise with diabetes: 1) Best: walking 30min + resistance training 3x/week 2) Check blood sugar before training (avoid if <100 or >300 mg/dL) 3) Keep fast carbs nearby (juice, dates) for lows 4) Resistance training IMPROVES insulin sensitivity 5) Post-workout: blood sugar drops 2-72hrs 6) Morning exercise = better all-day glucose control. Always consult your doctor first!', ar: 'تمرين مع السكر: 1) الأفضل: مشي 30 دقيقة + حديد 3 مرات/أسبوع 2) قيس السكر قبل التمرين (متتمرنش لو <100 أو >300) 3) خلي كارب سريع جنبك (عصير، تمر) للانخفاض 4) تمارين الحديد بتحسن حساسية الأنسولين 5) بعد التمرين: السكر بينزل 2-72 ساعة 6) تمرين الصبح = تحكم أفضل في السكر طول اليوم. استشير دكتورك الأول!' },
+    priority: 8,
+    domain: 'health',
+  },
+  {
+    keywords: ['diabetes diet', 'diabetic food', 'low glycemic', 'glycemic index', 'blood sugar food', 'sugar free diet'],
+    keywordsAr: ['أكل سكر', 'أكل لمريض السكر', 'مؤشر جلايسيمي', 'أكل بدون سكر', 'نظام سكري'],
+    keywordsFranco: ['akl sokkar', 'akl le marid el sokkar', 'low glycemic', 'nizam sokkary'],
+    stateId: 'NT_MENU',
+    response: { en: 'Diabetic nutrition tips: LOW glycemic foods: oats, sweet potato, brown rice, lentils, most vegetables. AVOID: white bread, sugary drinks, fruit juice, white rice (large portions). GOOD combos: protein + fiber with every meal slows glucose spike. Egyptian picks: ful medames (great!), grilled chicken + salad, lentil soup. Eat smaller, more frequent meals. Time carbs around workouts for better control.', ar: 'نصايح أكل السكر: أكل جلايسيمي منخفض: شوفان، بطاطا، رز بني، عدس، خضار. تجنب: عيش أبيض، مشروبات سكر، عصير فاكهة، رز أبيض (كميات كبيرة). كومبو كويس: بروتين + ألياف مع كل وجبة بيبطئ ارتفاع السكر. اختيارات مصرية: فول (ممتاز!)، فراخ مشوية + سلطة، شوربة عدس. كل وجبات أصغر وأكتر. وقت الكارب حوالين التمرين لتحكم أفضل.' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v24: Heart Health & Training ──────────────────────────────
+  {
+    keywords: ['heart health', 'cardio for heart', 'heart rate training', 'high blood pressure exercise', 'hypertension workout', 'cholesterol exercise'],
+    keywordsAr: ['صحة القلب', 'كارديو للقلب', 'ضغط عالي وتمرين', 'كوليسترول', 'ضغط دم مرتفع'],
+    keywordsFranco: ['se7et el 2alb', 'cardio lel 2alb', 'dagt 3aly w tamreen', 'cholesterol'],
+    stateId: 'HP_MENU',
+    response: { en: 'Heart-healthy training: 1) Zone 2 cardio (can talk, slightly breathless) 150min/week = gold standard 2) Resistance training LOWERS blood pressure (moderate weight, higher reps) 3) Avoid heavy Valsalva with hypertension 4) Walking 10k steps/day reduces heart disease 30% 5) Omega-3, fiber, less sodium = dietary priorities 6) Morning exercise = best for blood pressure. Get clearance from cardiologist if you have conditions!', ar: 'تمرين لصحة القلب: 1) كارديو زون 2 (تقدر تتكلم، نفسك يقطع شوية) 150 دقيقة/أسبوع = المعيار الذهبي 2) تمارين الحديد بتنزل الضغط (وزن متوسط، تكرارات أعلى) 3) تجنب فالسالفا الثقيل مع الضغط العالي 4) مشي 10 آلاف خطوة/يوم بيقلل أمراض القلب 30% 5) أوميجا-3، ألياف، ملح أقل = أولويات الأكل 6) تمرين الصبح = الأفضل للضغط. خد موافقة دكتور القلب لو عندك حالات!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v24: Joint Health & Longevity ─────────────────────────────
+  {
+    keywords: ['joint health', 'joint pain workout', 'knee pain gym', 'shoulder pain exercise', 'elbow pain', 'joint supplements', 'glucosamine'],
+    keywordsAr: ['صحة المفاصل', 'ألم مفاصل', 'ألم ركبة', 'ألم كتف', 'ألم كوع', 'مكملات مفاصل', 'جلوكوزامين'],
+    keywordsFranco: ['se7et el mafasel', 'alam mafasel', 'alam rokba', 'alam ketf', 'alam ko3', 'glucosamine'],
+    stateId: 'HP_MENU',
+    response: { en: 'Joint health: 1) Warm up 5-10min (always!) 2) Full ROM exercises strengthen joints 3) Collagen (10g/day) + Vitamin C shown to help 4) Glucosamine + chondroitin: mixed evidence, try 3 months 5) Fish oil reduces inflammation 6) Knee pain: strengthen VMO (leg extensions, wall sits) 7) Shoulder: face pulls + band external rotations daily 8) Elbow: wrist curls + eccentric work. Reduce load on painful joints, don\'t stop training entirely!', ar: 'صحة المفاصل: 1) إحماء 5-10 دقايق (دايماً!) 2) تمارين نطاق حركة كامل بتقوي المفاصل 3) كولاجين (10ج/يوم) + فيتامين سي بيساعد 4) جلوكوزامين + كوندرويتين: أدلة مختلطة، جرب 3 شهور 5) زيت السمك بيقلل الالتهاب 6) ألم ركبة: قوي VMO (ليج اكستنشن، وول سيت) 7) كتف: فيس بولز + باند اكسترنال روتيشن يومياً 8) كوع: ريست كيرلز + عمل إكسنتريك. قلل الحمل على المفاصل المؤلمة، متوقفش تمرين خالص!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v24: Swimming Programs ────────────────────────────────────
+  {
+    keywords: ['swimming workout', 'swim training', 'pool workout', 'swimming for fat loss', 'learn swimming', 'swimming technique'],
+    keywordsAr: ['تمرين سباحة', 'برنامج سباحة', 'تمرين حمام سباحة', 'سباحة لحرق الدهون', 'تعلم سباحة'],
+    keywordsFranco: ['tamreen seba7a', 'barnameg seba7a', 'tamreen 7amam seba7a', 'seba7a le 7ar2 el dohon', 'et3alem seba7a'],
+    stateId: 'WK_MENU',
+    response: { en: 'Swimming workouts: BEGINNER: 20min, 25m laps with rest, focus on breathing. INTERMEDIATE: 30-40min, 4x100m freestyle + 4x50m backstroke + 200m kick. ADVANCED: 60min, 10x100m intervals (1:30 rest), mixed strokes + pull buoy sets. Swimming burns 400-700 cal/hr! Great for joints (zero impact). For fat loss: swim 3-4x/week + strength train 2x. Egyptian pools: most clubs have 25m pools, check Cairo/Alex sports clubs.', ar: 'تمارين سباحة: مبتدئ: 20 دقيقة، لفات 25م مع راحة، ركز على التنفس. متوسط: 30-40 دقيقة، 4×100م فري + 4×50م ظهر + 200م رجل. متقدم: 60 دقيقة، 10×100م فواصل (1:30 راحة)، ستايلات مختلفة + بول بوي. السباحة بتحرق 400-700 سعرة/ساعة! ممتازة للمفاصل (صفر تأثير). لحرق الدهون: اسبح 3-4 مرات/أسبوع + حديد مرتين. حمامات مصر: أغلب الأندية فيها 25م، شيك على أندية القاهرة/اسكندرية.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v24: Warm-up & Cool-down Protocols ────────────────────────
+  {
+    keywords: ['warm up', 'warmup routine', 'how to warm up', 'dynamic warmup', 'cool down', 'cooldown', 'stretching before workout'],
+    keywordsAr: ['إحماء', 'روتين إحماء', 'ازاي اسخن', 'إحماء ديناميكي', 'تبريد', 'استرتش قبل التمرين'],
+    keywordsFranco: ['e7ma2', 'routine e7ma2', 'ezay asa5an', 'e7ma2 dynamic', 'tabreed', 'stretch 2abl el tamreen'],
+    stateId: 'WK_MENU',
+    response: { en: 'Warm-up protocol (10min): 1) Light cardio 3min (jump rope/bike) 2) Dynamic stretches: leg swings, arm circles, hip circles 3) Movement prep: bodyweight squats, lunges, push-ups 4) Activation: band work for target muscles 5) Ramp-up sets (50%, 70%, 85% of working weight). Cool-down (5-10min): 1) Walk 3min 2) Static stretches 30sec each (only AFTER training) 3) Foam roll tight areas. NEVER skip warm-up — injury risk 3x higher without it!', ar: 'بروتوكول الإحماء (10 دقايق): 1) كارديو خفيف 3 دقايق (حبل/عجلة) 2) استرتش ديناميكي: لفات رجل، دوائر ذراع، دوائر وسط 3) تحضير حركة: سكوات بوزن الجسم، لانجز، بوش اب 4) تفعيل: باند للعضلات المستهدفة 5) سيتات تصاعدية (50%، 70%، 85% من وزن الشغل). التبريد (5-10 دقايق): 1) مشي 3 دقايق 2) استرتش ثابت 30ث لكل عضلة (بعد التمرين بس) 3) فوم رول للمناطق المشدودة. متعديش الإحماء أبداً — خطر الإصابة 3 أضعاف بدونه!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v24: Plateau Breaking ─────────────────────────────────────
+  {
+    keywords: ['plateau', 'stuck', 'not gaining', 'no progress', 'not losing weight', 'hit a wall', 'stalled', 'stopped gaining'],
+    keywordsAr: ['ثبات', 'واقف', 'مش بزيد', 'مفيش تقدم', 'مش بخس', 'توقف', 'مش بتغير'],
+    keywordsFranco: ['sabat', 'wa2ef', 'msh bazeed', 'mafesh ta2adom', 'msh ba5as', 'tawa2of'],
+    stateId: 'QA_MENU',
+    response: { en: 'Breaking plateaus: STRENGTH: 1) Deload week (50% volume) 2) Change rep ranges (5→12 or 12→5) 3) Add pauses/tempos 4) Different exercise variations. WEIGHT LOSS: 1) Diet break (eat at maintenance 1-2 weeks) 2) Increase NEAT (steps, stairs) 3) Refeed days (high carb) 4) Check sleep & stress. MUSCLE: 1) Progressive overload (more weight/reps/sets) 2) New stimulus (cables→free weights) 3) More protein 4) Better recovery. Plateaus are NORMAL — usually break in 2-4 weeks!', ar: 'كسر الثبات: قوة: 1) أسبوع ديلود (50% حجم) 2) غير نطاق التكرارات (5→12 أو 12→5) 3) ضيف وقفات/تيمبو 4) تمارين مختلفة. خسارة وزن: 1) استراحة دايت (كل ميتننس 1-2 أسبوع) 2) زود NEAT (خطوات، سلالم) 3) أيام ريفيد (كارب عالي) 4) شيك على النوم والتوتر. عضلات: 1) حمل تصاعدي (وزن/تكرارات/سيتات أكتر) 2) محفز جديد (كابل→أوزان حرة) 3) بروتين أكتر 4) ريكفري أفضل. الثبات طبيعي — عادة بيتكسر في 2-4 أسابيع!' },
+    priority: 9,
+    domain: 'root',
+  },
+
+  // ── v24: Military/Police Fitness Tests ────────────────────────
+  {
+    keywords: ['military fitness', 'army test', 'police fitness test', 'military training', 'army workout', 'boot camp', 'military press up'],
+    keywordsAr: ['لياقة عسكرية', 'اختبار جيش', 'اختبار شرطة', 'تمرين عسكري', 'معسكر تدريب'],
+    keywordsFranco: ['leya2a 3askareya', 'e5tebar geish', 'e5tebar shorta', 'tamreen 3askary', 'mo3askar tadreeb'],
+    stateId: 'WK_MENU',
+    response: { en: 'Military fitness prep: Egyptian military test typically: push-ups (2min), sit-ups (2min), 1.5-mile run. Training plan: 1) Push-ups: grease the groove (sets throughout day, 50% max) 2) Sit-ups: 5x30 daily 3) Running: 3x/week (1 long run, 1 intervals, 1 tempo) 4) Add pull-ups, burpees, bear crawls for GPP 5) Practice the EXACT test format weekly. Target: 50+ push-ups, 50+ sit-ups, run under 12min. Start 8 weeks before test!', ar: 'تحضير لياقة عسكرية: اختبار الجيش المصري عادة: ضغط (2 دقيقة)، بطن (2 دقيقة)، جري 1.5 ميل. خطة تدريب: 1) ضغط: سيتات على مدار اليوم (50% من الماكس) 2) بطن: 5×30 يومياً 3) جري: 3 مرات/أسبوع (جرية طويلة، فواصل، تيمبو) 4) ضيف عقلة، بيربي، بير كرول 5) تمرن على شكل الاختبار بالظبط أسبوعياً. الهدف: 50+ ضغط، 50+ بطن، جري تحت 12 دقيقة. ابدأ قبل الاختبار 8 أسابيع!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v24: Home Cooking Healthy ─────────────────────────────────
+  {
+    keywords: ['healthy cooking', 'how to cook healthy', 'meal prep tips', 'cooking methods healthy', 'air fryer', 'steam food', 'best cooking method'],
+    keywordsAr: ['طبخ صحي', 'ازاي اطبخ صحي', 'نصايح ميل بريب', 'طرق طبخ صحية', 'اير فراير', 'أكل مسلوق'],
+    keywordsFranco: ['tab5 se7y', 'ezay atbo5 se7y', 'nasa2e7 meal prep', 'toro2 tab5 se7eya', 'air fryer', 'akl masloo2'],
+    stateId: 'NT_MENU',
+    response: { en: 'Healthy cooking methods (ranked): 1) Grilling/Broiling — adds flavor, no extra fat 2) Air frying — 80% less oil than deep frying 3) Steaming — preserves most nutrients 4) Baking — hands-off, good for batch prep 5) Sautéing with spray oil — quick, minimal fat. AVOID: deep frying, heavy cream sauces. Meal prep tips: Cook protein in bulk Sunday, prep veggies in containers, freeze portions. Air fryer is a GAME CHANGER for Egyptian food (kofta, chicken, potatoes taste great with zero oil)!', ar: 'طرق الطبخ الصحي (مرتبة): 1) شوي/جريل — نكهة بدون دهون إضافية 2) اير فراير — 80% زيت أقل من القلي 3) سلق بالبخار — بيحافظ على المغذيات 4) فرن — سهل، كويس للتحضير بالكمية 5) تشويح بسبراي زيت — سريع، دهون قليلة. تجنب: قلي غطس، صوصات كريمة. نصايح ميل بريب: اطبخ بروتين بالكمية الأحد، حضر خضار في علب، فريز حصص. الاير فراير = غير اللعبة للأكل المصري (كفتة، فراخ، بطاطس طعمهم حلو بدون زيت)!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v24: Caffeine & Pre-workout ───────────────────────────────
+  {
+    keywords: ['caffeine', 'coffee before workout', 'pre workout supplement', 'how much caffeine', 'caffeine tolerance', 'caffeine cycling'],
+    keywordsAr: ['كافيين', 'قهوة قبل التمرين', 'بري وركاوت', 'كمية الكافيين', 'تحمل الكافيين'],
+    keywordsFranco: ['caffeine', '2ahwa 2abl el tamreen', 'pre workout', 'kameyet el caffeine', 'ta7amol el caffeine'],
+    stateId: 'SP_MENU',
+    response: { en: 'Caffeine for training: Optimal dose: 3-6mg/kg bodyweight (200-400mg for most). Take 30-45min before training. Benefits: +strength, +endurance, +focus, +fat burning. Tolerance builds in 2-3 weeks → cycle off 1-2 weeks every 2 months. Coffee = 80-100mg per cup. Pre-workout: 150-300mg + other ingredients. AVOID: after 2pm (kills sleep), don\'t exceed 400mg/day. Egyptian coffee (ahwa) is great pre-workout! Nescafé = weaker (~60mg).', ar: 'الكافيين للتمرين: الجرعة المثالية: 3-6مج/كج وزن (200-400مج لأغلب الناس). خده 30-45 دقيقة قبل التمرين. فوايد: +قوة، +تحمل، +تركيز، +حرق دهون. التحمل بيزيد في 2-3 أسابيع → وقفه 1-2 أسبوع كل شهرين. القهوة = 80-100مج في الفنجان. بري وركاوت: 150-300مج + مكونات تانية. تجنب: بعد 2 الضهر (بيضرب النوم)، متعديش 400مج/يوم. القهوة المصرية ممتازة قبل التمرين! النسكافيه = أضعف (~60مج).' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
