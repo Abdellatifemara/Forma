@@ -10391,6 +10391,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── Healthy Fats Deep Dive ────────────────────────
+  {
+    keywords: ['peanut butter', 'pb', 'peanut butter macros', 'peanut butter calories', 'almond butter', 'nut butter', 'peanut butter bodybuilding'],
+    keywordsAr: ['زبدة فول سوداني', 'بينت بتر', 'سعرات زبدة الفول السوداني', 'زبدة لوز', 'فول سوداني للجيم'],
+    keywordsFranco: ['peanut butter', 'pint bater', 'zobd fool sudani', 'peanut butter calories', 'peanut butter lel gym'],
+    stateId: 'nutrition_peanut_butter_deep',
+    response: { en: 'Peanut butter (2 tbsp ~32g): 190 cal, 7g protein, 7g carbs, 16g fat. Almond butter: 196 cal, 7g protein, 6g carbs, 18g fat. Choose natural (ingredients: just peanuts, salt). Avoid brands with added sugar/palm oil. Perfect for bulking — easy way to add 200+ cal. Pre-bed snack: PB + banana + Greek yogurt. Post-workout: PB + oats + protein shake. In Egypt: look for imported natural PB or grind your own at health stores.', ar: 'زبدة الفول السوداني (٢ معلقة ~٣٢ جرام): ١٩٠ سعرة، ٧ جرام بروتين، ١٦ جرام دهون. زبدة اللوز: ١٩٦ سعرة. اختار الطبيعية (المكونات: فول سوداني وملح بس). تجنب اللي فيها سكر/زيت نخيل. ممتازة للبالك — طريقة سهلة تزود ٢٠٠+ سعرة. سناك قبل النوم: PB + موز + زبادي يوناني. في مصر: دور على الطبيعية أو اطحنها في محلات الصحة.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['nuts', 'almonds', 'walnuts', 'cashews', 'pistachios', 'nut macros', 'nut calories', 'nuts bodybuilding', 'best nuts', 'mixed nuts'],
+    keywordsAr: ['مكسرات', 'لوز', 'عين جمل', 'كاجو', 'فستق', 'سعرات المكسرات', 'مكسرات للجيم', 'أحسن مكسرات'],
+    keywordsFranco: ['meksarat', 'loz', '3ein gamal', 'cashew', 'fosto2', 'meksarat calories', 'meksarat lel gym'],
+    stateId: 'nutrition_nuts_deep',
+    response: { en: 'Nuts per 30g (small handful): Almonds: 170 cal, 6g protein, 15g fat — best overall. Walnuts: 185 cal, 4g protein, 18g fat — highest omega-3. Cashews: 155 cal, 5g protein, 12g fat — lowest fat nut. Pistachios: 160 cal, 6g protein, 13g fat — most filling (shell slows eating). Best for gym: almonds and pistachios. Pre-bed: walnuts (omega-3 + melatonin). Danger: nuts are VERY easy to overeat — always portion them out, don\'t eat from the bag!', ar: 'المكسرات في ٣٠ جرام (حفنة صغيرة): لوز: ١٧٠ سعرة، ٦ جرام بروتين — الأفضل عموماً. عين جمل: ١٨٥ سعرة — أعلى أوميجا-٣. كاجو: ١٥٥ سعرة — أقل دهون. فستق: ١٦٠ سعرة — الأكتر إشباعاً (القشر بيبطئك). للجيم: لوز وفستق. قبل النوم: عين جمل. خطر: المكسرات سهل جداً تاكل منها كتير — دايماً قسمها حصص، متاكلش من الكيس!' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['olive oil', 'cooking oil', 'coconut oil', 'oil macros', 'oil calories', 'healthy oil', 'best cooking oil', 'ghee vs oil', 'oil bodybuilding'],
+    keywordsAr: ['زيت زيتون', 'زيت طبخ', 'زيت جوز الهند', 'سعرات الزيت', 'أصح زيت', 'سمن ولا زيت', 'زيت للطبخ'],
+    keywordsFranco: ['zeit zeitoun', 'zeit tabb5', 'coconut oil', 'zeit calories', 'a7san zeit', 'samna wala zeit'],
+    stateId: 'nutrition_oils_deep',
+    response: { en: 'All oils: 120 cal per tablespoon (14g), 14g fat. The difference is fat TYPE. Olive oil: 73% monounsaturated — best for health, use for salads and low-heat cooking. Coconut oil: 82% saturated — not as healthy as marketed. Ghee (samna): saturated, great flavor, high smoke point. For cooking: olive oil or avocado oil. For high heat: ghee or avocado oil. MEASURE your oil — a "splash" could be 200-400 cal. Use spray oil to reduce calories.', ar: 'كل الزيوت: ١٢٠ سعرة في المعلقة (١٤ جرام)، ١٤ جرام دهون. الفرق في نوع الدهون. زيت زيتون: ٧٣٪ أحادي غير مشبع — الأفضل للصحة. زيت جوز الهند: ٨٢٪ مشبع — مش صحي زي ما بيقولوا. السمن: دهون مشبعة، طعم حلو، يتحمل حرارة عالية. للطبخ: زيت زيتون أو أفوكادو. قيس الزيت — "شوية" ممكن تبقى ٢٠٠-٤٠٠ سعرة. استخدم سبراي.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['avocado', 'avocado macros', 'avocado calories', 'avocado healthy', 'avocado bodybuilding', 'avocado fat', 'avocado protein'],
+    keywordsAr: ['أفوكادو', 'سعرات الأفوكادو', 'أفوكادو صحي', 'أفوكادو للجيم', 'دهون الأفوكادو'],
+    keywordsFranco: ['avocado', 'avokado', 'avocado calories', 'avocado macros', 'avocado lel gym'],
+    stateId: 'nutrition_avocado_deep',
+    response: { en: 'Avocado (1 medium ~150g): 240 cal, 3g protein, 12g carbs, 22g fat, 10g fiber. The fat is mostly monounsaturated (heart-healthy). Also has potassium (more than bananas!), vitamin K, E, B6, and folate. Great for bulking — easy calories from healthy fats. For cutting: limit to 1/4 or 1/2 avocado. Avocado toast: 350-400 cal with bread and egg. Smoothie: avocado + protein powder + banana = creamy and nutritious. Available in Egypt but can be pricey.', ar: 'الأفوكادو (واحدة متوسطة ~١٥٠ جرام): ٢٤٠ سعرة، ٣ جرام بروتين، ١٢ جرام كارب، ٢٢ جرام دهون، ١٠ جرام ألياف. الدهون أغلبها أحادية غير مشبعة (صحية للقلب). فيه بوتاسيوم (أكتر من الموز!)، فيتامين K, E, B6. كويس للبالك — سعرات سهلة من دهون صحية. للتنشيف: ربع أو نص أفوكادو بس. متوفر في مصر بس غالي شوية.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['seeds', 'chia seeds', 'flax seeds', 'sunflower seeds', 'pumpkin seeds', 'seed macros', 'seed calories', 'seeds bodybuilding', 'lob'],
+    keywordsAr: ['بذور', 'بذور شيا', 'بذور كتان', 'لب', 'لب أبيض', 'لب سوبر', 'سعرات البذور', 'بذور قرع'],
+    keywordsFranco: ['seeds', 'chia seeds', 'flax seeds', 'lob', 'lob abyad', 'lob sober', 'seeds calories', 'bezor'],
+    stateId: 'nutrition_seeds_deep',
+    response: { en: 'Seeds per 30g: Chia: 137 cal, 4.7g protein, 12g carbs, 8.7g fat + 10.6g fiber — fiber champion! Flaxseed: 150 cal, 5.1g protein, 8.1g carbs, 11.8g fat — highest omega-3 plant source. Pumpkin seeds (lob abyad): 151 cal, 7g protein, 5g carbs, 13g fat — highest protein seed. Sunflower seeds: 164 cal, 5.8g protein. Lob sober (Egyptian watermelon seeds): 158 cal, 8g protein — great Egyptian snack! Add chia/flax to smoothies and oats for omega-3.', ar: 'البذور في ٣٠ جرام: شيا: ١٣٧ سعرة، ٤.٧ جرام بروتين + ١٠.٦ جرام ألياف — بطل الألياف! كتان: ١٥٠ سعرة — أعلى مصدر نباتي أوميجا-٣. لب أبيض (قرع): ١٥١ سعرة، ٧ جرام بروتين — أعلى بروتين. لب سوبر: ١٥٨ سعرة، ٨ جرام بروتين — سناك مصري ممتاز! ضيف شيا/كتان على السموذي والشوفان عشان أوميجا-٣.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
