@@ -43,7 +43,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
-import { useDailyNutrition, useFoodSearch } from '@/hooks/use-nutrition';
+import { useDailyNutrition, useFoodSearch, useLogMeal } from '@/hooks/use-nutrition';
 import { useDebounce } from '@/hooks/use-debounce';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
@@ -90,10 +90,26 @@ export default function NutritionPage() {
   const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
   const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
   const [logDialogOpen, setLogDialogOpen] = useState(false);
-  const [waterGlasses, setWaterGlasses] = useState(6);
+  const [waterGlasses, setWaterGlasses] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const today = new Date().toISOString().slice(0, 10);
+      const saved = localStorage.getItem(`forma_water_${today}`);
+      return saved ? parseInt(saved, 10) : 0;
+    }
+    return 0;
+  });
   const [selectedFood, setSelectedFood] = useState<any>(null);
+  const [isLogging, setIsLogging] = useState(false);
   const { data: dailyData, isLoading: dailyLoading, error: dailyError } = useDailyNutrition();
   const { data: searchResults, isLoading: searchLoading } = useFoodSearch(debouncedSearch);
+  const logMealMutation = useLogMeal();
+
+  // Persist water to localStorage
+  const updateWater = (glasses: number) => {
+    setWaterGlasses(glasses);
+    const today = new Date().toISOString().slice(0, 10);
+    localStorage.setItem(`forma_water_${today}`, String(glasses));
+  };
 
   // Calculate daily totals from API data or use defaults
   const totals = dailyData?.totals || { calories: 0, protein: 0, carbs: 0, fat: 0 };
@@ -271,7 +287,15 @@ export default function NutritionPage() {
                           <Loader2 className="h-5 w-5 animate-spin text-primary" />
                         </div>
                       ) : (() => {
-                        const foods = Array.isArray(searchResults) ? searchResults : searchResults?.foods || [];
+                        const rawFoods = Array.isArray(searchResults) ? searchResults : searchResults?.foods || [];
+                        // Deduplicate by name — DB may have duplicate entries
+                        const seenNames = new Set<string>();
+                        const foods = rawFoods.filter((f: any) => {
+                          const key = (f.nameEn || f.name || '').toLowerCase().trim();
+                          if (seenNames.has(key)) return false;
+                          seenNames.add(key);
+                          return true;
+                        });
                         return foods.length > 0 ? (
                         <div className="max-h-64 space-y-2 overflow-y-auto">
                           {foods.map((food: any) => (
@@ -289,7 +313,7 @@ export default function NutritionPage() {
                                   </div>
                                 )}
                                 <div>
-                                  <span className="font-medium text-sm">{food.nameEn || food.name}</span>
+                                  <span className="font-medium text-sm">{isAr ? (food.nameAr || food.nameEn || food.name) : (food.nameEn || food.name)}</span>
                                   {(food.brandEn || food.brand) && (
                                     <p className="text-xs text-muted-foreground">{food.brandEn || food.brand}</p>
                                   )}
@@ -523,7 +547,7 @@ export default function NutritionPage() {
               {Array.from({ length: defaultGoals.water }).map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => setWaterGlasses(i + 1)}
+                  onClick={() => updateWater(i + 1)}
                   className={cn(
                     "flex-1 h-8 rounded-lg transition-all",
                     i < waterGlasses
@@ -812,12 +836,31 @@ export default function NutritionPage() {
               {selectedMealType && (
                 <Button
                   className="w-full btn-primary"
-                  onClick={() => {
-                    toast({ title: isAr ? 'تم إضافة الطعام' : 'Food added', description: selectedFood.nameEn });
-                    setSelectedFood(null);
+                  disabled={isLogging}
+                  onClick={async () => {
+                    setIsLogging(true);
+                    try {
+                      await logMealMutation.mutateAsync({
+                        mealType: selectedMealType.toLowerCase() as 'breakfast' | 'lunch' | 'dinner' | 'snack',
+                        foods: [{ foodId: selectedFood.id, servings: 1 }],
+                      });
+                      toast({ title: isAr ? 'تم إضافة الطعام' : 'Food added', description: selectedFood.nameEn || selectedFood.name });
+                      setSelectedFood(null);
+                      setSearchQuery('');
+                      setLogDialogOpen(false);
+                      setSelectedMealType(null);
+                    } catch {
+                      toast({ title: isAr ? 'حصل مشكلة' : 'Error', description: isAr ? 'مقدرناش نضيف الأكل' : 'Could not log food', variant: 'destructive' });
+                    } finally {
+                      setIsLogging(false);
+                    }
                   }}
                 >
-                  <Plus className="mr-2 h-4 w-4" />
+                  {isLogging ? (
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  ) : (
+                    <Plus className="mr-2 h-4 w-4" />
+                  )}
                   {isAr ? 'أضف للوجبة' : 'Add to Meal'}
                 </Button>
               )}

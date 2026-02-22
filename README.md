@@ -1,91 +1,59 @@
-# Forma - Shape Your Future
+# Forma - Shape Your Future | فورما - شكّل مستقبلك
 
-Egyptian Fitness Application - AI-powered workout and nutrition tracking.
+Egyptian-first AI fitness platform. Bilingual (EN/AR), culturally aware, affordable.
 
-## Project Structure
+**Live:** [formaeg.com](https://formaeg.com) | **API:** [api.formaeg.com](https://api.formaeg.com)
 
-```
-forma/
-├── apps/
-│   ├── api/          # NestJS Backend API
-│   ├── mobile/       # React Native (Expo) Mobile App
-│   └── web/          # Next.js Web Application
-├── packages/
-│   ├── shared/       # Shared utilities
-│   └── types/        # Shared TypeScript types
-├── docs/             # Documentation
-├── scripts/          # Build and utility scripts
-└── data/             # Data files
-```
+## Stack
 
-## Tech Stack
+- **Frontend:** Next.js 14 → Cloudflare Workers
+- **Backend:** NestJS + Prisma → VPS (PM2)
+- **Database:** PostgreSQL 16 + PgBouncer + Redis
+- **AI Chat:** State machine (180+ states) + intent matcher (280+ rules)
+- **Auth:** Supabase | **Storage:** Cloudflare R2 | **Email:** Resend
 
-### Backend (apps/api)
-- **Framework:** NestJS
-- **Database:** PostgreSQL with Prisma ORM
-- **Vector Search:** pgvector for semantic search
-- **Cache:** Redis
-- **Authentication:** JWT with Passport.js
-
-### Mobile (apps/mobile)
-- **Framework:** React Native with Expo
-- **State:** Zustand
-- **Animations:** Reanimated 3
-- **Local DB:** WatermelonDB
-
-### Web (apps/web)
-- **Framework:** Next.js 14+
-- **Styling:** Tailwind CSS
-- **Components:** shadcn/ui
-
-## Getting Started
-
-### Prerequisites
-- Node.js 18+
-- PostgreSQL 15+ with pgvector extension
-- Redis (optional, for caching)
-
-### Installation
+## Quick Start
 
 ```bash
-# Install dependencies
+# Install
 npm install
 
-# Set up environment
-cp apps/api/.env.example apps/api/.env.local
-# Edit .env.local with your database credentials
+# API
+cd apps/api
+cp .env.example .env.local    # configure DB credentials
+npx prisma generate && npx prisma migrate deploy
+npm run start:dev
 
-# Generate Prisma client
-npm run db:generate
-
-# Run migrations
-npm run db:migrate
-
-# Seed the database
-npm run db:seed
-
-# Start development server
-npm run dev:api
+# Web
+cd apps/web
+npm run dev
 ```
 
-## API Documentation
+## Deploy
 
-Once the server is running, visit http://localhost:3001/docs for Swagger documentation.
+```bash
+# Frontend → Cloudflare
+npx wrangler deploy
 
-## Features
+# API → VPS
+ssh deploy@82.38.64.61
+cd /var/www/apps/forma/api-repo && git pull
+cd apps/api && npx prisma generate && npx nest build && pm2 restart forma-api
+```
 
-- 3,000+ exercises with Arabic translations
-- Egyptian food database
-- AI-powered workout generation
-- Trainer marketplace
-- Progress tracking with charts
-- RTL Arabic support
+## Project Status
 
-## Brand
+See [PROJECT_STATUS.md](PROJECT_STATUS.md) for full status, goals, and tracker.
 
-- **Name:** Forma
-- **Tagline:** Shape Your Future / شكّل مستقبلك
-- **Primary Color:** #00D4AA (Forma Teal)
+## Structure
+
+```
+apps/api/     NestJS backend (40+ modules)
+apps/web/     Next.js frontend
+docs/         Reference data (exercises, food, research)
+localization/ Arabic translations
+scripts/      Utilities
+```
 
 ## License
 

@@ -81,7 +81,6 @@ export default function RootLayout({
           try {
             var l = localStorage.getItem('forma-lang');
             if (l === 'ar') {
-              document.documentElement.dir = 'rtl';
               document.documentElement.lang = 'ar';
               document.body.style.fontFamily = 'Cairo, sans-serif';
             }
