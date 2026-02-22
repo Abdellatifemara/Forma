@@ -5754,6 +5754,94 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v39: Blood Sugar & Training ────────────────────────
+  {
+    keywords: ['blood sugar training', 'blood sugar workout', 'glucose exercise', 'insulin sensitivity exercise', 'blood sugar crash gym', 'glycemic control', 'pre diabetic exercise'],
+    keywordsAr: ['سكر الدم والتمرين', 'جلوكوز وتمارين', 'حساسية الأنسولين', 'هبوط السكر في الجيم', 'سكر قبل السكري'],
+    keywordsFranco: ['sokkar el dam wel tamreen', 'glucose w tamreen', '7asaseyet el insulin', 'hobot el sokkar fel gym'],
+    stateId: 'HE_MENU',
+    response: { en: 'Blood Sugar & Training: Exercise is the BEST insulin sensitizer — muscles absorb glucose without insulin during exercise! BEST training for blood sugar: resistance training 3-4x/week (biggest impact), walking 15min after meals (drops glucose 30%+), HIIT 2x/week. TIMING: Train 1-3hrs after a meal (stable blood sugar). Eat complex carbs + protein 1hr before. WARNING signs during training: dizziness, shakiness, cold sweat, confusion = LOW blood sugar → eat fast-acting sugar (dates, juice). Post-workout: eat within 30min. FOODS that stabilize: oats, sweet potato, lentils, chickpeas (all low GI). Egyptian foods: ful medames = excellent low GI meal! Fenugreek (helba) proven to lower blood sugar.', ar: 'سكر الدم والتمرين: التمارين أفضل محسن لحساسية الأنسولين — العضلات بتمتص الجلوكوز بدون أنسولين أثناء التمرين! أفضل تمرين للسكر: حديد 3-4 مرات/أسبوع (أكبر تأثير)، مشي 15 دقيقة بعد الأكل (بينزل الجلوكوز 30%+)، HIIT مرتين/أسبوع. التوقيت: تمرن 1-3 ساعات بعد الأكل. كل كارب معقد + بروتين ساعة قبل. علامات تحذير: دوخة، رعشة، عرق بارد = سكر واطي → كل سكر سريع (بلح، عصير). بعد التمرين: كل في 30 دقيقة. أكل مصري ممتاز: فول مدمس = وجبة ممتازة! الحلبة مثبتة علمياً إنها بتخفض السكر.' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v39: Caffeine Alternatives ────────────────────────
+  {
+    keywords: ['caffeine alternative', 'pre workout without caffeine', 'no caffeine energy', 'stim free', 'caffeine sensitivity', 'too much caffeine', 'energy without coffee'],
+    keywordsAr: ['بديل الكافيين', 'بري وركاوت بدون كافيين', 'طاقة بدون كافيين', 'حساسية الكافيين', 'طاقة بدون قهوة'],
+    keywordsFranco: ['badeel el caffeine', 'pre workout bedoon caffeine', 'ta2a bedoon caffeine', '7asaseyet el caffeine', 'ta2a bedoon ahwa'],
+    stateId: 'SU_MENU',
+    response: { en: 'Caffeine Alternatives for Energy: NATURAL: Beetroot juice (30min before — boosts NO, proven performance enhancer), green tea (L-theanine = calm energy), yerba mate, ginger tea. SUPPLEMENTS: Citrulline malate (6-8g — huge pump, no stim), beta-alanine (3g — tingling = working), B vitamins, rhodiola rosea (adaptogen), cordyceps mushroom. PRE-WORKOUT: Cold shower/face splash (instant alertness), dynamic warm-up 10min, upbeat music (proven to boost performance 5-15%), nasal breathing. FOOD: Banana + peanut butter 30min before, dates + almonds, apple (natural sugar + fiber = sustained energy). If you\'re caffeine-sensitive: max 200mg/day, none after noon. Egyptian option: karkadeh (hibiscus) cold = refreshing and has antioxidants!', ar: 'بدائل الكافيين للطاقة: طبيعي: عصير بنجر (30 دقيقة قبل — يرفع NO، مثبت علمياً)، شاي أخضر (L-theanine = طاقة هادئة)، زنجبيل. مكملات: سيترولين (6-8g — بامب بدون منبه)، بيتا ألانين (3g)، فيتامين B، روديولا روزيا. بري-وركاوت بدون كافيين: دش بارد/مية باردة على الوش (صحيان فوري)، إحماء ديناميك 10 دقائق، موسيقى حماسية (مثبتة ترفع الأداء 5-15%). أكل: موزة + زبدة فول سوداني قبل 30 دقيقة، بلح + لوز، تفاحة. لو حساس للكافيين: ماكس 200mg/يوم، مفيش بعد الضهر. مصري: كركديه بارد = منعش وفيه مضادات أكسدة!' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
+  // ── v39: Egyptian Gym Culture ────────────────────────
+  {
+    keywords: ['egyptian gym culture', 'gym in egypt', 'gym culture egypt', 'egyptian bodybuilding', 'gym cairo', 'gym alexandria', 'gym membership egypt'],
+    keywordsAr: ['ثقافة الجيم في مصر', 'الجيم في مصر', 'كمال أجسام مصري', 'جيم القاهرة', 'جيم اسكندرية', 'اشتراك جيم مصر'],
+    keywordsFranco: ['sa2afet el gym fe masr', 'el gym fe masr', 'kamal agsam masry', 'gym el 2ahera', 'gym eskendereya'],
+    stateId: 'WK_MENU',
+    response: { en: 'Egyptian Gym Culture: TYPES: Budget gyms (200-500 LE/mo — basic equipment, crowded), mid-range (500-1500 LE — good equipment, AC), premium (1500-3000+ LE — Gold\'s, Oxygen, Body Masters — all amenities). PEAK HOURS: 5-8pm (avoid if possible), best times: 6-9am or 9-11pm. CULTURE: Very friendly, people help each other, but can be loud. Spotting culture is strong — don\'t hesitate to ask. SUPPLEMENTS: Mostly available but expensive — shop from iHerb or local stores like Protein House, Supreme Nutrition. FOOD: Gym buffers (street food) post-workout is a thing — foul sandwiches, shawarma, koshari. Egyptian bodybuilding legends: Big Ramy (Mr. Olympia 2020, 2021), Mamdouh Elssbiay. Community is growing FAST especially among youth!', ar: 'ثقافة الجيم في مصر: الأنواع: جيمات بادجت (200-500 جنيه/شهر — معدات بسيطة، زحمة)، متوسطة (500-1500 — معدات كويسة، تكييف)، بريميوم (1500-3000+ — جولدز، أكسجين — كل الخدمات). أوقات الذروة: 5-8 مساءً (تجنبها لو تقدر)، أفضل: 6-9 صباحاً أو 9-11 بالليل. الثقافة: ودودة جداً، الناس بتساعد بعض، بس ممكن يكون في دوشة. ثقافة السبوتنج قوية. المكملات: متوفرة بس غالية — اشتري من iHerb أو محلات زي بروتين هاوس. الأكل: بوفيه الجيم بعد التمرين حاجة مصرية — سندوتشات فول، شاورما، كشري. أساطير مصرية: بيج رامي (مستر أولمبيا 2020، 2021). المجتمع بيكبر بسرعة!' },
+    priority: 6,
+    domain: 'workout',
+  },
+
+  // ── v39: Protein Quality Ranking ────────────────────────
+  {
+    keywords: ['best protein source', 'protein quality ranking', 'complete protein', 'protein bioavailability', 'best protein for muscle', 'protein absorption rate', 'pdcaas'],
+    keywordsAr: ['أفضل مصدر بروتين', 'ترتيب جودة البروتين', 'بروتين كامل', 'امتصاص البروتين', 'أفضل بروتين للعضلات'],
+    keywordsFranco: ['afdal masdar protein', 'tarteeb gawdet el protein', 'protein kamel', 'emtesas el protein', 'afdal protein lel 3adalat'],
+    stateId: 'NU_MENU',
+    response: { en: 'Protein Quality Ranking (PDCAAS/DIAAS score): TIER 1 (highest): Whey protein isolate (1.0), eggs (1.0), milk/casein (1.0), chicken breast (0.95). TIER 2: Beef (0.92), fish (0.90-0.95), Greek yogurt (0.95), cottage cheese. TIER 3: Soy protein (0.91), pea protein (0.89), quinoa (0.81). TIER 4: Rice protein (0.65 — combine with pea for 0.9+), beans/lentils (0.60-0.70), nuts (0.50-0.60). ABSORPTION RATE: Whey = 8-10g/hr (fast), egg = 3g/hr, casein = 6g/hr (slow), meat = 3-5g/hr. FOR MUSCLE: 0.4g/kg protein per meal, 4-5 meals = optimal. Egyptian budget: eggs (cheapest complete protein), ful + bread (combined = complete), chicken thighs > breast (cheaper, same protein).', ar: 'ترتيب جودة البروتين: تيير 1 (الأعلى): واي بروتين آيزوليت (1.0)، بيض (1.0)، لبن/كازين (1.0)، صدر فراخ (0.95). تيير 2: لحمة (0.92)، سمك (0.90-0.95)، زبادي يوناني (0.95). تيير 3: بروتين صويا (0.91)، بروتين بازلاء (0.89)، كينوا (0.81). تيير 4: بروتين أرز (0.65 — اخلطه مع بازلاء)، فاصوليا/عدس (0.60-0.70)، مكسرات (0.50-0.60). سرعة الامتصاص: واي = 8-10g/ساعة (سريع)، بيض = 3g/ساعة، كازين = 6g/ساعة (بطيء). ميزانية مصرية: البيض (أرخص بروتين كامل)، فول + عيش (مع بعض = كامل)، ورك فراخ أرخص من الصدر ونفس البروتين!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v39: Training in Heat ────────────────────────
+  {
+    keywords: ['training in heat', 'workout hot weather', 'exercise summer heat', 'gym no ac', 'outdoor workout heat', 'heat exhaustion exercise', 'dehydration training'],
+    keywordsAr: ['تمرين في الحر', 'تمرين صيف', 'جيم بدون تكييف', 'تمرين خارجي في الحر', 'ضربة شمس تمرين', 'جفاف والتمرين'],
+    keywordsFranco: ['tamreen fel 7ar', 'tamreen seif', 'gym bedoon takyeef', 'tamreen 5argy fel 7ar', 'darbet shams', 'gafaf wel tamreen'],
+    stateId: 'WK_MENU',
+    response: { en: 'Training in Heat (Essential for Egypt!): HYDRATION: Drink 500ml 2hrs before, 200ml every 15-20min during, 500ml+ after. Add electrolytes (pinch of salt + lemon in water). WARNING SIGNS: Dizziness, nausea, headache, stopping sweat (DANGER!) = stop immediately, cool down, hydrate. ADJUSTMENTS: Reduce intensity 10-20%, longer rest periods, shorter sessions (45min vs 75min). TIMING: Train early (6-8am) or late (8-10pm) in Egyptian summer. CLOTHING: Light, loose, moisture-wicking. Wet towel on neck. NUTRITION: Watermelon, cucumber, oranges — high water content. Cold showers before training can help. ACCLIMATIZATION: Takes 7-14 days — gradually increase duration. Indoor tip: Even gym without AC — bring a fan, wet towel, extra water. Egyptian summer = 40°C+ — respect the heat!', ar: 'تمرين في الحر (ضروري في مصر!): ترطيب: اشرب 500ml قبل ساعتين، 200ml كل 15-20 دقيقة، 500ml+ بعد. أضف إلكتروليتس (رشة ملح + ليمون). علامات تحذير: دوخة، غثيان، صداع، توقف العرق (خطر!) = وقف فوراً وبرد واشرب. تعديلات: قلل الشدة 10-20%، راحة أطول، وقت أقصر. التوقيت: تمرن بدري (6-8 صباحاً) أو متأخر (8-10 مساءً) في الصيف. الملابس: خفيفة، واسعة. فوطة مبللة على الرقبة. الأكل: بطيخ، خيار، برتقان — مية كتير. تأقلم: بياخد 7-14 يوم. حتى الجيم بدون تكييف — جيب مروحة، فوطة مبللة، مية زيادة. الصيف المصري = 40°+ — احترم الحر!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v39: Intermittent Fasting Types ────────────────────────
+  {
+    keywords: ['intermittent fasting types', 'fasting methods', '16 8 vs 20 4', 'omad diet', 'warrior diet', 'eat stop eat', '5 2 fasting', 'alternate day fasting', 'best fasting method'],
+    keywordsAr: ['أنواع الصيام المتقطع', 'طرق الصيام', 'صيام 16 8', 'وجبة واحدة في اليوم', 'أفضل طريقة صيام'],
+    keywordsFranco: ['anwa3 el seyam el mota2ate3', 'toro2 el seyam', 'seyam 16 8', 'wagba wa7da fel yom', 'afdal tare2a seyam'],
+    stateId: 'NU_MENU',
+    response: { en: 'Intermittent Fasting Types: 16:8 (most popular): Fast 16hrs, eat in 8hr window (e.g. 12pm-8pm). Best for beginners, easy to maintain. 18:6: Stricter — eat 6hr window. More fat loss but harder. 20:4 (Warrior): Eat in 4hr window — usually one big meal + snack. OMAD: One Meal A Day — hard to get enough protein (not recommended for muscle building). 5:2: Eat normal 5 days, very low cal (500-600) 2 days. Alternate Day: Eat normally one day, fast/very low the next. BEST FOR MUSCLE: 16:8 — enough eating time for 3 protein meals. WORST FOR MUSCLE: OMAD — impossible to eat 150g+ protein in one sitting. EGYPTIAN TIP: During Ramadan, you\'re basically doing 14:10 or 16:8 — use it as your fasting protocol! Break fast with dates + water, then protein meal.', ar: 'أنواع الصيام المتقطع: 16:8 (الأشهر): صوم 16 ساعة، كل في 8 ساعات (مثلاً 12-8 مساءً). الأسهل للمبتدئين. 18:6: أصعب — 6 ساعات أكل. نزول دهون أكتر بس أصعب. 20:4 (ووريور): 4 ساعات أكل — وجبة كبيرة + سناك. OMAD: وجبة واحدة/يوم — صعب تاخد بروتين كفاية. 5:2: أكل عادي 5 أيام، كالوريز قليلة يومين. يوم ويوم: أكل عادي يوم، صيام اليوم اللي بعده. الأفضل للعضلات: 16:8 — وقت كافي لـ3 وجبات بروتين. الأسوأ للعضلات: OMAD — مستحيل 150g+ بروتين في وجبة. نصيحة مصرية: في رمضان إنت أساساً بتعمل 14:10 أو 16:8 — استغلها! افطر على بلح + مية، بعدين وجبة بروتين.' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v39: Grip Strength Deep Dive ────────────────────────
+  {
+    keywords: ['grip strength training', 'grip exercises', 'forearm workout', 'improve grip', 'deadlift grip', 'farmers walk', 'grip strength test', 'weak grip'],
+    keywordsAr: ['تمارين القبضة', 'تمرين الساعد', 'تحسين القبضة', 'قبضة الديدلفت', 'فارمرز ووك', 'قبضة ضعيفة'],
+    keywordsFranco: ['tamreen el 2abda', 'tamreen el sa3ed', 'ta7seen el 2abda', '2abdet el deadlift', 'farmers walk', '2abda da3eefa'],
+    stateId: 'WK_MENU',
+    response: { en: 'Grip Strength Training: WHY: Strong grip = more weight on deadlifts, rows, pull-ups. Weak grip limits EVERYTHING. EXERCISES: Dead hangs (hang from bar, build to 60sec), farmer walks (heavy dumbbells, walk 40m), plate pinches (pinch plates together), wrist curls, towel pull-ups (wrap towel over bar). TOOLS: Hand grippers (CoC — start with Trainer or 1), fat gripz on barbells, rice bucket training. PROGRAM: Train grip 2-3x/week after main workout. Set 1: Dead hang max time. Set 2: Farmer walk 3x40m. Set 3: Plate pinch 3x30sec. STANDARDS: Beginner 40kg, intermediate 60kg, advanced 80kg+ per hand (gripper). DEADLIFT TIP: Use double overhand as long as possible, switch to mixed grip only for max sets. Hook grip hurts but works. Straps for volume work are fine!', ar: 'تمارين القبضة: ليه: قبضة قوية = وزن أكتر في الديدلفت والرو والعقلة. قبضة ضعيفة بتحد كل حاجة. التمارين: تعليق (اتعلق من البار، اوصل لـ60 ثانية)، فارمرز ووك (دمبلز تقيلة، امشي 40 متر)، قرصة الأطباق، رست كيرلز، عقلة بفوطة. أدوات: جريبرز يد (ابدأ بالتريننر)، فات جريبز على البار، تمرين الأرز. البرنامج: درب القبضة 2-3 مرات/أسبوع بعد التمرين الأساسي. سيت 1: تعليق أقصى وقت. سيت 2: فارمرز ووك 3×40م. سيت 3: قرصة أطباق 3×30 ثانية. نصيحة ديدلفت: استخدم قبضة عادية أطول فترة ممكنة، ميكسد جريب للماكس بس. هوك جريب يوجع بس يشتغل!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v39: Sleep Optimization Advanced ────────────────────────
+  {
+    keywords: ['sleep optimization', 'sleep quality improve', 'deep sleep increase', 'rem sleep', 'sleep supplements', 'sleep and muscle growth', 'insomnia gym', 'sleep schedule'],
+    keywordsAr: ['تحسين النوم', 'جودة النوم', 'نوم عميق', 'نوم وبناء عضلات', 'مكملات النوم', 'أرق والجيم', 'جدول النوم'],
+    keywordsFranco: ['ta7seen el noom', 'gawdet el noom', 'noom 3amee2', 'noom w bena2 3adalat', 'mokammelat el noom', 'ara2 wel gym'],
+    stateId: 'HE_MENU',
+    response: { en: 'Sleep Optimization for Gains: WHY: 95% of growth hormone is released during deep sleep. Poor sleep = 60% less testosterone, more cortisol, more fat storage, worse recovery. PROTOCOL: Same bedtime ±30min every day (even weekends). Room: 18-20°C, pitch dark, no screens 30min before. SUPPLEMENTS: Magnesium glycinate (400mg — #1 sleep supplement), melatonin (0.5-3mg only if needed), L-theanine (200mg — calming), glycine (3g), tart cherry juice (natural melatonin). AVOID: Caffeine after 2pm, heavy meals 2hrs before bed, alcohol (kills REM sleep), intense training 2-3hrs before bed. NAPS: 20min power nap = good. 60-90min = full cycle. Avoid naps after 3pm. TARGET: 7-9 hours. Track with smartwatch or Oura ring. Egyptian tip: afternoon nap culture (qaylula) is actually scientifically optimal — 20min after Dhuhr!', ar: 'تحسين النوم للمكاسب: ليه: 95% من هرمون النمو بيتفرز أثناء النوم العميق. نوم سيء = 60% تستوستيرون أقل، كورتيزول أكتر، دهون أكتر. البروتوكول: نفس ميعاد النوم ±30 دقيقة كل يوم. الأوضة: 18-20°، ضلمة تامة، بدون شاشات 30 دقيقة قبل. المكملات: ماغنيسيوم جلايسينات (400mg — أفضل مكمل نوم)، ميلاتونين (0.5-3mg لو محتاج)، L-theanine (200mg)، جلايسين (3g). تجنب: كافيين بعد 2 الضهر، أكل تقيل ساعتين قبل النوم، كحول (يقتل النوم العميق)، تمرين شديد 2-3 ساعات قبل النوم. القيلولة: 20 دقيقة = ممتازة. 60-90 دقيقة = دورة كاملة. الهدف: 7-9 ساعات. القيلولة المصرية بعد الضهر فعلاً مثبتة علمياً!' },
+    priority: 8,
+    domain: 'health',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
