@@ -8433,6 +8433,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v90: Cardio Types, HIIT vs LISS, Jump Rope, Stairmaster, Swimming ──
+  {
+    keywords: ['cardio', 'cardio types', 'best cardio', 'cardio for fat loss', 'cardio kills gains', 'cardio muscle', 'how much cardio', 'cardio bodybuilding', 'cardio health', 'cardiovascular', 'aerobic', 'cardio options', 'which cardio'],
+    keywordsAr: ['كارديو', 'أنواع الكارديو', 'أحسن كارديو', 'كارديو حرق دهون', 'كارديو والعضلات', 'كام كارديو', 'كارديو للقلب', 'تمارين هوائية'],
+    keywordsFranco: ['cardio', 'anwa3 cardio', 'a7san cardio', 'cardio fat loss'],
+    stateId: 'cardio_types_guide',
+    response: { en: 'Cardio Types — Complete Guide: THE BIG 6: 1) Walking (easiest, least fatigue, 300-400 cal/hr). 2) Running/Jogging (high calorie burn 600-800/hr, joint impact). 3) Cycling (low impact, great for legs, 400-600/hr). 4) Swimming (full body, zero impact, 500-700/hr). 5) Rowing (full body, builds back, 600-800/hr). 6) Jump Rope (extremely efficient, 700-1000/hr). DOES CARDIO KILL GAINS? No — IF done right. Rules: Keep intense cardio separate from leg day (6+ hours apart). Limit to 2-3 sessions/week if bulking. Walking doesn\'t count as "cardio stress" — do unlimited. Eat back cardio calories if trying to maintain/gain. FOR FAT LOSS: Best = whatever you\'ll actually do consistently. Walking 10K steps/day > 3 HIIT sessions you hate and skip. Start with 2x/week, increase as needed. HOW MUCH: Minimum for health: 150 min/week moderate OR 75 min/week vigorous. For fat loss: 3-5x/week, 20-45 min. For bodybuilding: 2-3x/week, 20-30 min (just enough for health + appetite).', ar: 'أنواع الكارديو — دليل كامل: الـ6 الكبار: 1) مشي (أسهل، أقل إرهاق، 300-400 سعر/ساعة). 2) جري (حرق عالي 600-800/ساعة، ضغط على المفاصل). 3) عجلة (قليل التأثير، حلو للرجل، 400-600/ساعة). 4) سباحة (جسم كامل، صفر تأثير، 500-700/ساعة). 5) تجديف (جسم كامل، بيبني الضهر). 6) حبل (فعّال جداً، 700-1000/ساعة). الكارديو بيقتل العضلات؟ لا — لو اتعمل صح. قواعد: افصل الكارديو القوي عن يوم الرجل 6+ ساعات. حدد 2-3 مرات/أسبوع لو بتضخّم. المشي مش كارديو — امشي زي ما تحب. للحرق: أحسن كارديو = اللي هتعمله باستمرار. 10K خطوة/يوم > 3 جلسات HIIT بتكسلها.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['hiit', 'liss', 'hiit vs liss', 'high intensity interval', 'low intensity steady state', 'interval training', 'hiit workout', 'liss cardio', 'tabata', 'sprint intervals', 'hiit fat loss', 'afterburn', 'epoc'],
+    keywordsAr: ['هيت', 'ليس', 'هيت ولا ليس', 'تمرين متقطع', 'انتيرفال', 'تاباتا', 'سبرنت', 'حرق بعد التمرين'],
+    keywordsFranco: ['hiit', 'liss', 'hiit wla liss', 'interval', 'tabata', 'sprint'],
+    stateId: 'hiit_vs_liss_guide',
+    response: { en: 'HIIT vs LISS — Which Is Better? HIIT (High Intensity Interval Training): What: Short bursts of max effort + rest periods. Example: 30s sprint, 60s walk × 8-10 rounds. Pros: Time-efficient (20 min done). EPOC afterburn (extra 50-80 cal post-workout). Improves VO2 max fast. Fun/challenging. Cons: Very fatiguing (impacts lifting recovery). High injury risk if form breaks down. Can\'t do daily. Needs 48h recovery. LISS (Low Intensity Steady State): What: Sustained moderate effort 30-60 min. Example: Walking 3.5-4 mph, cycling Zone 2. Pros: Minimal fatigue/recovery impact. Can do daily. Builds aerobic base. Less injury risk. Great for active recovery days. Easy while watching TV/podcast. Cons: Time-consuming. Less calorie burn per minute. Can get boring. THE ANSWER: Do BOTH. LISS as your base (3-5x/week walking). HIIT 1-2x/week for efficiency. If you can only pick ONE: LISS wins for bodybuilders (less fatigue). HIIT wins for time-crunched people. SAMPLE WEEK: Mon/Wed/Fri: Lift. Tue: HIIT 20 min. Thu: LISS 40 min. Sat: LISS walk 60 min. Sun: Rest.', ar: 'HIIT ولا LISS — أيهم أحسن؟ HIIT (تمرين متقطع عالي الشدة): إيه هو: جهد أقصى قصير + راحة. مثال: 30ث سبرنت، 60ث مشي × 8-10 جولات. مميزات: سريع (20 دقيقة). حرق بعد التمرين 50-80 سعر إضافي. عيوب: مرهق جداً. خطر إصابة. محتاج 48 ساعة راحة. LISS (كارديو ثابت خفيف): إيه هو: جهد متوسط 30-60 دقيقة. مثال: مشي، عجلة زون 2. مميزات: إرهاق قليل. تقدر تعمله يومياً. قليل الإصابات. عيوب: بياخد وقت. الإجابة: اعمل الاتنين! LISS كقاعدة (3-5 مرات مشي). HIIT 1-2 مرة/أسبوع. لو لازم واحد: LISS لبناء العضلات. HIIT للوقت القليل.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['jump rope', 'skipping rope', 'jumping rope', 'skip rope', 'rope workout', 'boxer skip', 'double unders', 'jump rope fat loss', 'jump rope benefits', 'حبل', 'نط الحبل'],
+    keywordsAr: ['نط الحبل', 'حبل', 'تمرين الحبل', 'نطيط', 'سكيبنج', 'حبل القفز'],
+    keywordsFranco: ['nat el 7abl', '7abl', 'skipping', 'jump rope', 'nateet'],
+    stateId: 'jump_rope_guide',
+    response: { en: 'Jump Rope — The Most Underrated Cardio: WHY: Burns 700-1000 cal/hr (more than running). Improves coordination, footwork, rhythm. Portable — take it anywhere. Builds calves, shoulders, forearms. Used by boxers for centuries (there\'s a reason). GETTING STARTED: Rope Length: Stand on center, handles should reach armpits. Surface: Rubber mat or wood floor (NOT concrete). Form: Elbows at sides, wrists do the work, slight knee bend, balls of feet. BEGINNER PROGRAM (Week 1-4): Week 1: 30s jump, 30s rest × 10 (10 min total). Week 2: 45s jump, 30s rest × 10. Week 3: 60s jump, 30s rest × 10. Week 4: 60s jump, 15s rest × 12. TECHNIQUES: 1) Basic Bounce (master this first). 2) Alternate Foot (like running in place). 3) Boxer Skip (shift weight side to side). 4) High Knees (cardio killer). 5) Double Unders (advanced — rope passes twice per jump). SAMPLE HIIT: 30s fast, 10s rest × 8 (Tabata protocol). COMMON MISTAKES: Jumping too high (1-2 inches is enough). Using arms instead of wrists. Wrong rope length. Doing it on concrete (joint killer).', ar: 'نط الحبل — أقوى كارديو متقدّرش: ليه: بيحرق 700-1000 سعر/ساعة (أكتر من الجري). بيحسّن التنسيق والإيقاع. محمول — خده في أي مكان. بيبني سمانة وكتف ودراع. للمبتدئين: طول الحبل: قف على النص، المقابض توصل للإبط. السطح: مطاط أو خشب (مش أسمنت). الفورم: كوع جنب الجسم، الرسغ يعمل الشغل. برنامج مبتدئ: أسبوع 1: 30ث نط، 30ث راحة × 10. أسبوع 2: 45ث × 10. أسبوع 3: 60ث × 10. أسبوع 4: 60ث نط، 15ث راحة × 12. تقنيات: 1) بيسك باونس. 2) قدم بالتناوب. 3) بوكسر سكيب. 4) ركب عالية. 5) دبل اندرز.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['stairmaster', 'stepmill', 'stair climber', 'stair machine', 'stairs cardio', 'stair workout', 'step machine', 'climbing stairs', 'stairmaster glutes', 'stairmaster fat loss'],
+    keywordsAr: ['ستيرماستر', 'سلالم', 'ماكينة السلالم', 'درج', 'تمرين سلالم', 'طالع سلالم'],
+    keywordsFranco: ['stairmaster', 'salalm', 'darag', 'stair machine', 'step machine'],
+    stateId: 'stairmaster_guide',
+    response: { en: 'Stairmaster/Stepmill — Glute Builder + Fat Burner: WHY IT\'S ELITE: Burns 500-700 cal/hr. Builds glutes, quads, hamstrings, calves WHILE doing cardio. Low impact on joints (no pounding). Simulates real-world activity (stairs, hiking). HOW TO USE: Stand upright (DON\'T lean on handles — biggest mistake). Light touch on rails for balance only. Drive through heels for glute focus. Drive through toes for quad focus. PROGRAMS: Fat Loss: Level 5-7, 30-45 min steady state. HIIT: 1 min fast (Level 10+), 1 min slow (Level 4) × 15. Glute Focus: Skip a step (bigger ROM), Level 6-8, 20 min. Endurance: Level 4-5, 60 min (marathon training). LEVEL GUIDE: 1-3: Warm up / Active recovery. 4-6: Moderate (conversation pace). 7-9: Hard (breathing heavy). 10-12: Very hard (can\'t talk). 13+: Sprint (unsustainable). PRO TIPS: Don\'t hold on (burns 20% fewer calories). Keep posture upright. For glutes: lean SLIGHTLY forward from hips, not back. Pair with hip thrusts on leg day for maximum glute growth.', ar: 'ستيرماستر — بناء الجلوتس + حرق الدهون: ليه مميز: بيحرق 500-700 سعر/ساعة. بيبني جلوتس وكوادز وسمانة أثناء الكارديو. قليل التأثير على المفاصل. إزاي تستخدمه: قف مستقيم (ما تستندش على المقابض). لمسة خفيفة للتوازن بس. ادفع بالكعب لتركيز الجلوتس. ادفع بصوابعك لتركيز الكوادز. برامج: حرق دهون: ليفل 5-7، 30-45 دقيقة. HIIT: دقيقة سريع ليفل 10+، دقيقة بطيء × 15. جلوتس: خطّي درجة (مدى أوسع)، ليفل 6-8، 20 دقيقة. نصائح: ما تمسكش المقابض (بيحرق 20% أقل). حافظ على وقفتك.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['swimming', 'swim workout', 'swimming fitness', 'pool workout', 'swimming muscle', 'swimming fat loss', 'swim training', 'laps', 'freestyle', 'backstroke', 'breaststroke', 'butterfly stroke', 'swimming body'],
+    keywordsAr: ['سباحة', 'تمرين سباحة', 'سباحة والعضلات', 'حمام سباحة', 'سباحة حرق دهون', 'فري ستايل', 'باك ستروك', 'حمام السباحة'],
+    keywordsFranco: ['seba7a', 'swimming', '7amam seba7a', 'pool', 'swim', 'laps'],
+    stateId: 'swimming_fitness_guide',
+    response: { en: 'Swimming for Fitness — Complete Guide: WHY SWIM: Zero impact (perfect for injuries/joint issues). Full body workout (every stroke uses arms, core, legs). Burns 400-700 cal/hr depending on intensity. Builds lean, athletic physique ("swimmer body"). Improves lung capacity & cardiovascular health. STROKE BREAKDOWN: Freestyle/Crawl: Best all-around. Lats, shoulders, triceps, core. Most efficient stroke. Backstroke: Great for posture. Back, shoulders, core. Easy on neck. Breaststroke: Inner thighs, chest, shoulders. Slowest but easiest. Butterfly: HARDEST. Full body power. Chest, lats, core, shoulders. BEGINNER PROGRAM: Week 1-2: 4×50m freestyle + 30s rest between sets. Week 3-4: 6×50m + 20s rest. Week 5-6: 4×100m + 30s rest. Week 7-8: 6×100m + 20s rest. Goal: Build to 1000-1500m continuous. SWIMMING + GYM: Swim on non-lifting days. Prioritize weights if muscle building is goal. Swimming is EXCELLENT active recovery. Don\'t count swimming as "enough" for back/shoulder training — different stimulus. EGYPTIAN NOTE: Most clubs in Cairo/Alex have pools. Wadi Degla, Gezira, Shooting Club all have lap pools.', ar: 'السباحة للياقة — دليل كامل: ليه تسبح: صفر تأثير على المفاصل. تمرين جسم كامل. بتحرق 400-700 سعر/ساعة. بتبني جسم رياضي. بتحسّن الرئة والقلب. الضربات: فري ستايل: أحسن شامل. لاتس، كتف، تراي، كور. باك ستروك: حلو للوقفة. ضهر، كتف، كور. بريست ستروك: فخذ داخلي، صدر. أبطأ بس أسهل. باترفلاي: الأصعب. جسم كامل. برنامج مبتدئ: أسبوع 1-2: 4×50م فري + 30ث راحة. أسبوع 3-4: 6×50م + 20ث. أسبوع 5-6: 4×100م + 30ث. أسبوع 7-8: 6×100م + 20ث. الهدف: 1000-1500م متواصل. ملاحظة مصرية: معظم الأندية في مصر فيها حمامات سباحة — وادي دجلة، الجزيرة، الشوتنج.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
