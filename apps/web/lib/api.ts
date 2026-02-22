@@ -383,6 +383,14 @@ export const progressApi = {
   getStrengthPRs: () => api.get<StrengthPR[]>('/progress/prs'),
 
   getLatest: () => api.get<LatestProgress>('/progress/latest'),
+
+  // Progress Photos
+  getPhotos: () => api.get<any[]>('/progress/photos'),
+
+  createPhoto: (data: { imageUrl: string; label?: string; notes?: string }) =>
+    api.post<any>('/progress/photos', data),
+
+  deletePhoto: (id: string) => api.delete<void>(`/progress/photos/${id}`),
 };
 
 // Stats API

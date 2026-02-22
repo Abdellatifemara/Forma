@@ -389,35 +389,6 @@ export default function SettingsPage() {
                 <ChevronRight className="h-5 w-5 text-muted-foreground" />
               </div>
 
-              <div className="flex items-center justify-between rounded-lg border p-4">
-                <div className="flex items-center gap-3">
-                  <Shield className="h-5 w-5 text-muted-foreground" />
-                  <div>
-                    <p className="font-medium">{t.settings.security.twoFactor}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {t.settings.security.twoFactorDesc}
-                    </p>
-                  </div>
-                </div>
-                <Button variant="outline" size="sm">
-                  {t.settings.security.enable}
-                </Button>
-              </div>
-
-              <div className="flex items-center justify-between rounded-lg border p-4">
-                <div className="flex items-center gap-3">
-                  <Smartphone className="h-5 w-5 text-muted-foreground" />
-                  <div>
-                    <p className="font-medium">{t.settings.security.activeSessions}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {t.settings.security.activeSessionsDesc}
-                    </p>
-                  </div>
-                </div>
-                <Button variant="outline" size="sm">
-                  {t.settings.security.viewAll}
-                </Button>
-              </div>
             </CardContent>
           </Card>
         </TabsContent>
@@ -485,25 +456,6 @@ export default function SettingsPage() {
                 </Select>
               </div>
 
-              <Separator />
-
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium">{t.settings.language.units}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {t.settings.language.unitsDesc}
-                  </p>
-                </div>
-                <Select value={unit} onValueChange={setUnit}>
-                  <SelectTrigger className="w-40">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="metric">{t.settings.language.metric}</SelectItem>
-                    <SelectItem value="imperial">{t.settings.language.imperial}</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
             </CardContent>
           </Card>
 

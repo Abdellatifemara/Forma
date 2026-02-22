@@ -23,6 +23,8 @@ import {
   Target,
   ChevronDown,
   Check,
+  Pill,
+  Lock,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -651,6 +653,41 @@ export default function NutritionPage() {
             </motion.div>
           );
         })}
+      </div>
+
+      {/* Supplements Section */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-bold flex items-center gap-2">
+            <Pill className="h-5 w-5 text-forma-orange" />
+            {isAr ? 'المكملات' : 'Supplements'}
+          </h2>
+        </div>
+        <Card className="rounded-2xl border border-border/50 bg-card">
+          <CardContent className="p-6">
+            <div className="flex flex-col items-center justify-center py-6 text-center">
+              <div className="p-3 rounded-xl bg-forma-orange/10 mb-4">
+                <Lock className="h-6 w-6 text-forma-orange" />
+              </div>
+              <h3 className="font-semibold mb-2">
+                {isAr ? 'المكملات مع الكوتش' : 'Supplements with your Coach'}
+              </h3>
+              <p className="text-sm text-muted-foreground max-w-xs">
+                {isAr
+                  ? 'الكوتش هيقترحلك المكملات المناسبة ليك بناءً على أهدافك وبرنامجك التدريبي. كلّمه من الشات!'
+                  : 'Your coach will recommend the right supplements based on your goals and training program. Chat with your coach to get started!'}
+              </p>
+              <Button
+                variant="outline"
+                size="sm"
+                className="mt-4 border-forma-orange/50 text-forma-orange hover:bg-forma-orange/10"
+                onClick={() => window.location.href = '/chat'}
+              >
+                {isAr ? 'كلّم الكوتش' : 'Talk to Coach'}
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Daily Insight */}

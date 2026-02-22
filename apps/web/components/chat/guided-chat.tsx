@@ -24,6 +24,7 @@ import {
   healthMetricsApi,
   programsApi,
   userProfileApi,
+  subscriptionsApi,
 } from '@/lib/api';
 
 // ─── Domain Config ─────────────────────────────────────────
@@ -153,14 +154,14 @@ async function callApi(
     if (params?.equipment) searchParams.equipment = params.equipment;
     if (params?.difficulty) searchParams.difficulty = params.difficulty;
     if (params?.category) searchParams.category = params.category;
-    searchParams.limit = '10';
+    searchParams.pageSize = '10';
     return exercisesApi.search(searchParams as any);
   }
   if (endpoint.startsWith('/exercises/muscle/')) {
     return exercisesApi.getByMuscle(endpoint.split('/').pop()!);
   }
   if (endpoint === '/foods') {
-    const searchParams: Record<string, string> = { limit: '10' };
+    const searchParams: Record<string, string> = { pageSize: '10' };
     if (params?.category) searchParams.category = params.category;
     if (params?.isEgyptian) searchParams.isEgyptian = params.isEgyptian;
     if (params?.highProtein) searchParams.highProtein = params.highProtein;
@@ -263,7 +264,7 @@ async function executeGptEnhanced(config: GptEnhancedConfig, isAr: boolean): Pro
           data = await api.get('/users/me/injuries');
           break;
         case 'subscription':
-          data = await api.get('/users/me/subscription');
+          data = await subscriptionsApi.getMySubscription();
           break;
         default:
           data = null;
@@ -464,7 +465,7 @@ export default function GuidedChat() {
 
   // Fetch user subscription tier
   useEffect(() => {
-    api.get('/users/me/subscription').then((sub: any) => {
+    subscriptionsApi.getMySubscription().then((sub: any) => {
       if (sub?.tier) setUserTier(sub.tier);
       else if (sub?.plan) setUserTier(sub.plan.toUpperCase().replace('+', '_PLUS'));
     }).catch(() => {}); // Default to PREMIUM on error
@@ -552,7 +553,14 @@ export default function GuidedChat() {
     }
 
     // GPT-enhanced nodes (Premium+ only) — targeted AI call at leaf states
-    if (currentState.gptEnhanced) {
+    if (currentState.gptEnhanced && userTier !== 'PREMIUM_PLUS') {
+      setHistory(prev => [...prev, {
+        id: `lock-${Date.now()}`, type: 'data' as const,
+        text: isAr ? '🔒 الميزة دي متاحة لمشتركين Premium+ بس. رقّي اشتراكك عشان تستخدم الذكاء الاصطناعي.' : '🔒 This feature is available for Premium+ subscribers only. Upgrade to unlock AI-powered insights.',
+        timestamp: Date.now(), success: false,
+      }]);
+    }
+    if (currentState.gptEnhanced && userTier === 'PREMIUM_PLUS') {
       setIsLoading(true);
       executeGptEnhanced(currentState.gptEnhanced, isAr)
         .then(response => {

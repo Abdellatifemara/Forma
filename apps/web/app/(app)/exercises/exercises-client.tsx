@@ -111,6 +111,7 @@ const categoryToEnum: Record<string, string> = {
   mobility: 'MOBILITY',
   sport: 'PLYOMETRIC',
   preworkout: 'CARDIO',
+  postworkout: 'CARDIO',
 };
 
 /** Strip markdown bold markers and clean up text for display */
@@ -291,6 +292,14 @@ function ExercisesPageContent() {
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
 
   useEffect(() => {
+    // Don't fetch unless user has selected a category, typed a search, or applied a filter
+    const hasActiveSearch = selectedCategory || searchQuery || muscleFilter !== 'All' || equipmentFilter !== 'All' || difficultyFilter !== 'All';
+    if (!hasActiveSearch) {
+      setExercises([]);
+      setIsLoading(false);
+      return;
+    }
+
     async function searchExercises() {
       setIsLoading(true);
       try {
@@ -300,6 +309,7 @@ function ExercisesPageContent() {
           primaryMuscle: muscleFilter !== 'All' ? muscleFilter : undefined,
           equipment: equipmentFilter !== 'All' ? [equipmentToEnum[equipmentFilter]] : undefined,
           difficulty: difficultyFilter !== 'All' ? difficultyFilter.toUpperCase() : undefined,
+          pageSize: '20',
         };
         const response = await exercisesApi.search(params);
         const exerciseData = response.data || (response as any).exercises || [];
@@ -395,7 +405,6 @@ function ExercisesPageContent() {
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
-                if (selectedCategory) setSelectedCategory(null);
               }}
               className="pl-9"
             />
@@ -512,21 +521,21 @@ function ExercisesPageContent() {
       </div>
 
       {/* Results Count */}
-      {(selectedCategory || searchQuery) && (
+      {(selectedCategory || searchQuery || muscleFilter !== 'All' || equipmentFilter !== 'All' || difficultyFilter !== 'All') && (
         <p className="text-sm text-muted-foreground">
           {isAr ? `عرض ${exercises.length} تمرين` : `Showing ${exercises.length} exercises`}
         </p>
       )}
 
       {/* Loading */}
-      {isLoading && (selectedCategory || searchQuery) && (
+      {isLoading && (selectedCategory || searchQuery || muscleFilter !== 'All') && (
         <div className="flex justify-center py-12">
           <Loader2 className="h-8 w-8 animate-spin text-primary" />
         </div>
       )}
 
       {/* Exercise Grid */}
-      {!isLoading && (selectedCategory || searchQuery) && (
+      {!isLoading && (selectedCategory || searchQuery || muscleFilter !== 'All' || equipmentFilter !== 'All' || difficultyFilter !== 'All') && exercises.length > 0 && (
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {exercises.map((exercise) => (
             <Card
@@ -564,7 +573,7 @@ function ExercisesPageContent() {
         </div>
       )}
 
-      {!isLoading && (selectedCategory || searchQuery) && exercises.length === 0 && (
+      {!isLoading && (selectedCategory || searchQuery || muscleFilter !== 'All' || equipmentFilter !== 'All' || difficultyFilter !== 'All') && exercises.length === 0 && (
         <div className="flex flex-col items-center justify-center py-12 text-center">
           <Dumbbell className="h-12 w-12 text-muted-foreground" />
           <h3 className="mt-4 text-lg font-semibold">{t.exercises.noExercises}</h3>

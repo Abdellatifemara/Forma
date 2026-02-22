@@ -354,10 +354,13 @@ export default function ChatPage() {
         <p className="text-[11px] text-muted-foreground">
           {isPremiumPlus
             ? (isAr ? 'اكتب أي سؤال وأنا هجاوبك' : 'Ask me anything')
-            : (isAr ? 'اختار من الخيارات' : 'Pick from the options')
+            : (isAr ? 'اختار من الخيارات أو اكتب' : 'Pick options or type')
           }
         </p>
       </div>
+      <p className="text-[10px] text-muted-foreground/60 mb-2 text-center">
+        {isAr ? 'النصائح دي للإرشاد فقط — استشير طبيبك قبل أي تغيير كبير' : 'Tips are for guidance only — consult your doctor before major changes'}
+      </p>
 
       <ErrorBoundary
         fallback={

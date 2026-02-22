@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Camera,
   Plus,
@@ -10,6 +10,9 @@ import {
   Ruler,
   Loader2,
   Minus,
+  Trash2,
+  Upload,
+  Moon,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -34,6 +37,7 @@ import {
 } from '@/hooks/use-progress';
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '@/lib/i18n';
+import { progressApi, uploadApi, healthMetricsApi } from '@/lib/api';
 
 function formatDate(dateString: string, lang: string = 'en'): string {
   const date = new Date(dateString);
@@ -139,8 +143,55 @@ export default function ProgressPage() {
       ].filter((m) => m.value !== undefined && m.value !== null)
     : [];
 
-  // Progress photos — will be populated from R2 uploads
-  const progressPhotos: { date: string; label: string; url?: string }[] = [];
+  // Progress photos from API
+  const [progressPhotos, setProgressPhotos] = useState<any[]>([]);
+  const [photosLoading, setPhotosLoading] = useState(false);
+  const [uploading, setUploading] = useState(false);
+
+  useEffect(() => {
+    async function fetchPhotos() {
+      setPhotosLoading(true);
+      try {
+        const photos = await progressApi.getPhotos();
+        setProgressPhotos(photos || []);
+      } catch {
+        // no photos yet
+      } finally {
+        setPhotosLoading(false);
+      }
+    }
+    fetchPhotos();
+  }, []);
+
+  const handlePhotoUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setUploading(true);
+    try {
+      const uploadResult = await uploadApi.uploadImage(file);
+      const photo = await progressApi.createPhoto({
+        imageUrl: uploadResult.url,
+        label: new Date().toLocaleDateString(language === 'ar' ? 'ar-EG' : 'en-US'),
+      });
+      setProgressPhotos(prev => [photo, ...prev]);
+      toast({ title: isAr ? 'تم رفع الصورة' : 'Photo uploaded' });
+    } catch {
+      toast({ title: isAr ? 'فشل رفع الصورة' : 'Upload failed', variant: 'destructive' });
+    } finally {
+      setUploading(false);
+      e.target.value = '';
+    }
+  };
+
+  const handleDeletePhoto = async (photoId: string) => {
+    try {
+      await progressApi.deletePhoto(photoId);
+      setProgressPhotos(prev => prev.filter(p => p.id !== photoId));
+      toast({ title: isAr ? 'تم حذف الصورة' : 'Photo deleted' });
+    } catch {
+      toast({ title: isAr ? 'فشل الحذف' : 'Delete failed', variant: 'destructive' });
+    }
+  };
 
   return (
     <div className="space-y-6 pb-20">
@@ -402,6 +453,7 @@ export default function ProgressPage() {
           <TabsTrigger value="weight">{t.progress.weight}</TabsTrigger>
           <TabsTrigger value="measurements">{t.progress.measurements}</TabsTrigger>
           <TabsTrigger value="strength">{t.progress.strength}</TabsTrigger>
+          <TabsTrigger value="health">{isAr ? 'الصحة' : 'Health'}</TabsTrigger>
           <TabsTrigger value="photos">{t.progress.photos}</TabsTrigger>
         </TabsList>
 
@@ -596,24 +648,53 @@ export default function ProgressPage() {
           </Card>
         </TabsContent>
 
+        <TabsContent value="health" className="space-y-4">
+          <HealthGraphsSection isAr={isAr} />
+        </TabsContent>
+
         <TabsContent value="photos" className="space-y-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-base font-semibold">{t.progress.photos}</CardTitle>
+              <label className="cursor-pointer">
+                <input type="file" accept="image/*" className="hidden" onChange={handlePhotoUpload} disabled={uploading} />
+                <Button variant="forma" size="sm" asChild disabled={uploading}>
+                  <span>
+                    {uploading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Upload className="mr-2 h-4 w-4" />}
+                    {isAr ? 'ارفع صورة' : 'Upload Photo'}
+                  </span>
+                </Button>
+              </label>
             </CardHeader>
             <CardContent>
-              {progressPhotos.length > 0 ? (
+              {photosLoading ? (
+                <div className="flex justify-center py-8">
+                  <Loader2 className="h-8 w-8 animate-spin text-forma-orange" />
+                </div>
+              ) : progressPhotos.length > 0 ? (
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                  {progressPhotos.map((photo, index) => (
+                  {progressPhotos.map((photo) => (
                     <div
-                      key={index}
-                      className="aspect-[3/4] cursor-pointer rounded-lg bg-muted transition-transform hover:scale-105"
+                      key={photo.id}
+                      className="group relative aspect-[3/4] rounded-lg overflow-hidden bg-muted"
                     >
-                      <div className="flex h-full flex-col items-center justify-center">
-                        <Camera className="h-8 w-8 text-muted-foreground" />
-                        <p className="mt-2 text-sm font-medium">{photo.label}</p>
-                        <p className="text-xs text-muted-foreground">{photo.date}</p>
+                      <img
+                        src={photo.photoUrl || photo.imageUrl}
+                        alt={photo.angle || photo.label || 'Progress'}
+                        className="h-full w-full object-cover"
+                      />
+                      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-2">
+                        <p className="text-xs text-white font-medium">{photo.angle || photo.label || ''}</p>
+                        <p className="text-[10px] text-white/70">
+                          {new Date(photo.loggedAt || photo.createdAt).toLocaleDateString(isAr ? 'ar-EG' : 'en-US', { month: 'short', day: 'numeric' })}
+                        </p>
                       </div>
+                      <button
+                        onClick={() => handleDeletePhoto(photo.id)}
+                        className="absolute top-2 right-2 p-1.5 rounded-full bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <Trash2 className="h-3 w-3" />
+                      </button>
                     </div>
                   ))}
                 </div>
@@ -621,10 +702,10 @@ export default function ProgressPage() {
                 <div className="flex flex-col items-center justify-center py-12 text-muted-foreground">
                   <Camera className="h-12 w-12 mb-3 opacity-40" />
                   <p className="text-sm font-medium">
-                    {isAr ? 'لا توجد صور تقدم بعد' : 'No progress photos yet'}
+                    {isAr ? 'مفيش صور تقدم لسه' : 'No progress photos yet'}
                   </p>
                   <p className="text-xs mt-1">
-                    {isAr ? 'ستتمكن من رفع صور التقدم من التطبيق' : 'Upload progress photos from the mobile app'}
+                    {isAr ? 'ارفع أول صورة عشان تتابع تقدمك' : 'Upload your first photo to track your progress'}
                   </p>
                 </div>
               )}
@@ -632,6 +713,202 @@ export default function ProgressPage() {
           </Card>
         </TabsContent>
       </Tabs>
+    </div>
+  );
+}
+
+/* ---- Health Graphs Section (Whoop-style) ---- */
+function HealthGraphsSection({ isAr }: { isAr: boolean }) {
+  const [sleepData, setSleepData] = useState<any[]>([]);
+  const [heartData, setHeartData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchHealthData() {
+      setLoading(true);
+      try {
+        const [sleep, hr] = await Promise.all([
+          healthMetricsApi.getByType('SLEEP_HOURS', 14).catch(() => []),
+          healthMetricsApi.getByType('HEART_RATE_RESTING', 14).catch(() => []),
+        ]);
+        setSleepData(sleep || []);
+        setHeartData(hr || []);
+      } catch {
+        // no data
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchHealthData();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center py-12">
+        <Loader2 className="h-8 w-8 animate-spin text-forma-orange" />
+      </div>
+    );
+  }
+
+  const hasAnyData = sleepData.length > 0 || heartData.length > 0;
+
+  if (!hasAnyData) {
+    return (
+      <Card>
+        <CardContent className="flex flex-col items-center justify-center py-12 text-muted-foreground">
+          <TrendingUp className="h-12 w-12 mb-3 opacity-40" />
+          <p className="text-sm font-medium">
+            {isAr ? 'مفيش بيانات صحية لسه' : 'No health data yet'}
+          </p>
+          <p className="text-xs mt-1">
+            {isAr ? 'سجّل بيانات النوم ونبض القلب من صفحة الصحة' : 'Log sleep & heart rate from the Health page'}
+          </p>
+        </CardContent>
+      </Card>
+    );
+  }
+
+  return (
+    <div className="space-y-4">
+      {/* Sleep Hours — Whoop-style bar chart */}
+      {sleepData.length > 0 && (
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-base font-semibold flex items-center gap-2">
+              <div className="p-1.5 rounded-lg bg-purple-500/10">
+                <Moon className="h-4 w-4 text-purple-500" />
+              </div>
+              {isAr ? 'ساعات النوم' : 'Sleep Hours'}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <WhoopBarChart data={sleepData} color="#A855F7" unit={isAr ? 'س' : 'h'} isAr={isAr} />
+          </CardContent>
+        </Card>
+      )}
+
+      {/* Resting Heart Rate — Whoop-style line */}
+      {heartData.length > 0 && (
+        <Card>
+          <CardHeader className="pb-2">
+            <CardTitle className="text-base font-semibold flex items-center gap-2">
+              <div className="p-1.5 rounded-lg bg-red-500/10">
+                <Scale className="h-4 w-4 text-red-500" />
+              </div>
+              {isAr ? 'نبض الراحة' : 'Resting Heart Rate'}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <WhoopLineChart data={heartData} color="#EF4444" unit="bpm" isAr={isAr} />
+          </CardContent>
+        </Card>
+      )}
+    </div>
+  );
+}
+
+/* ---- Whoop-style Bar Chart ---- */
+function WhoopBarChart({ data, color, unit, isAr }: { data: any[]; color: string; unit: string; isAr: boolean }) {
+  const sorted = [...data].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  const values = sorted.map(d => d.value);
+  const max = Math.max(...values, 1);
+  const avg = values.reduce((s, v) => s + v, 0) / values.length;
+
+  return (
+    <div>
+      <div className="flex items-baseline gap-2 mb-3">
+        <span className="text-3xl font-bold" style={{ color }}>{values[values.length - 1]?.toFixed(1)}</span>
+        <span className="text-sm text-muted-foreground">{unit}</span>
+        <span className="text-xs text-muted-foreground ms-2">
+          {isAr ? `المتوسط: ${avg.toFixed(1)}` : `Avg: ${avg.toFixed(1)}`}
+        </span>
+      </div>
+      <div className="flex items-end gap-1 h-24">
+        {sorted.map((entry, i) => {
+          const pct = (entry.value / max) * 100;
+          const isLast = i === sorted.length - 1;
+          return (
+            <div key={i} className="flex-1 flex flex-col items-center gap-1">
+              <div
+                className="w-full rounded-t-sm transition-all duration-500"
+                style={{
+                  height: `${pct}%`,
+                  backgroundColor: isLast ? color : `${color}60`,
+                  minHeight: 4,
+                }}
+              />
+            </div>
+          );
+        })}
+      </div>
+      <div className="flex justify-between mt-1.5 px-0.5">
+        {sorted.length > 0 && (
+          <>
+            <span className="text-[10px] text-muted-foreground">
+              {new Date(sorted[0].date).toLocaleDateString(isAr ? 'ar-EG' : 'en-US', { month: 'short', day: 'numeric' })}
+            </span>
+            <span className="text-[10px] text-muted-foreground">
+              {new Date(sorted[sorted.length - 1].date).toLocaleDateString(isAr ? 'ar-EG' : 'en-US', { month: 'short', day: 'numeric' })}
+            </span>
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ---- Whoop-style Line Chart ---- */
+function WhoopLineChart({ data, color, unit, isAr }: { data: any[]; color: string; unit: string; isAr: boolean }) {
+  const sorted = [...data].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  const values = sorted.map(d => d.value);
+  if (values.length < 2) return null;
+
+  const min = Math.min(...values) - 2;
+  const max = Math.max(...values) + 2;
+  const range = max - min || 1;
+  const avg = values.reduce((s, v) => s + v, 0) / values.length;
+
+  const W = 300;
+  const H = 80;
+  const PAD = 8;
+  const innerW = W - PAD * 2;
+  const innerH = H - PAD * 2;
+
+  const points = values.map((v, i) => ({
+    x: PAD + (i / (values.length - 1)) * innerW,
+    y: PAD + innerH - ((v - min) / range) * innerH,
+  }));
+
+  const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+  const areaPath = `${linePath} L${points[points.length - 1].x.toFixed(1)},${H - PAD} L${PAD},${H - PAD} Z`;
+
+  return (
+    <div>
+      <div className="flex items-baseline gap-2 mb-3">
+        <span className="text-3xl font-bold" style={{ color }}>{values[values.length - 1]}</span>
+        <span className="text-sm text-muted-foreground">{unit}</span>
+        <span className="text-xs text-muted-foreground ms-2">
+          {isAr ? `المتوسط: ${avg.toFixed(0)}` : `Avg: ${avg.toFixed(0)}`}
+        </span>
+      </div>
+      <svg viewBox={`0 0 ${W} ${H}`} className="w-full" preserveAspectRatio="xMidYMid meet">
+        {/* Area fill */}
+        <path d={areaPath} fill={`${color}15`} />
+        {/* Line */}
+        <path d={linePath} fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        {/* Dots */}
+        {points.map((p, i) => (
+          <circle key={i} cx={p.x} cy={p.y} r="3.5" fill="white" stroke={color} strokeWidth="2" />
+        ))}
+      </svg>
+      <div className="flex justify-between mt-1 px-0.5">
+        <span className="text-[10px] text-muted-foreground">
+          {new Date(sorted[0].date).toLocaleDateString(isAr ? 'ar-EG' : 'en-US', { month: 'short', day: 'numeric' })}
+        </span>
+        <span className="text-[10px] text-muted-foreground">
+          {new Date(sorted[sorted.length - 1].date).toLocaleDateString(isAr ? 'ar-EG' : 'en-US', { month: 'short', day: 'numeric' })}
+        </span>
+      </div>
     </div>
   );
 }

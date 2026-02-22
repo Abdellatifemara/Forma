@@ -2,22 +2,28 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, Loader2, Check, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Loader2, Check, AlertCircle, Camera } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { useUser, useUpdateProfile } from '@/hooks/use-user';
 import { useLanguage } from '@/lib/i18n';
+import { uploadApi } from '@/lib/api';
+import { useToast } from '@/hooks/use-toast';
 
 export default function EditProfilePage() {
   const router = useRouter();
   const { language } = useLanguage();
   const isAr = language === 'ar';
   const { data: userData, isLoading: userLoading } = useUser();
+  const { toast } = useToast();
   const updateProfile = useUpdateProfile();
+  const [avatarUploading, setAvatarUploading] = useState(false);
+  const [avatarPreview, setAvatarPreview] = useState<string | null>(null);
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -78,6 +84,58 @@ export default function EditProfilePage() {
         </Button>
         <h1 className="text-2xl font-bold">{isAr ? 'تعديل الملف' : 'Edit Profile'}</h1>
       </div>
+
+      {/* Avatar Upload */}
+      <Card>
+        <CardContent className="p-6">
+          <div className="flex items-center gap-6">
+            <div className="relative group">
+              <Avatar className="h-24 w-24">
+                {(avatarPreview || userData?.user?.avatarUrl || userData?.user?.avatar) && (
+                  <AvatarImage src={avatarPreview || userData?.user?.avatarUrl || userData?.user?.avatar} />
+                )}
+                <AvatarFallback className="text-3xl bg-forma-orange text-white">
+                  {userData?.user?.name?.[0]?.toUpperCase() || userData?.user?.firstName?.[0]?.toUpperCase() || 'U'}
+                </AvatarFallback>
+              </Avatar>
+              <label className="absolute inset-0 flex items-center justify-center bg-black/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
+                <input
+                  type="file"
+                  accept="image/*"
+                  className="hidden"
+                  disabled={avatarUploading}
+                  onChange={async (e) => {
+                    const file = e.target.files?.[0];
+                    if (!file) return;
+                    setAvatarUploading(true);
+                    try {
+                      const result = await uploadApi.uploadAvatar(file);
+                      setAvatarPreview(result.url);
+                      toast({ title: isAr ? 'تم رفع الصورة' : 'Photo uploaded' });
+                    } catch {
+                      toast({ title: isAr ? 'فشل رفع الصورة' : 'Upload failed', variant: 'destructive' });
+                    } finally {
+                      setAvatarUploading(false);
+                      e.target.value = '';
+                    }
+                  }}
+                />
+                {avatarUploading ? (
+                  <Loader2 className="h-6 w-6 text-white animate-spin" />
+                ) : (
+                  <Camera className="h-6 w-6 text-white" />
+                )}
+              </label>
+            </div>
+            <div>
+              <h3 className="font-semibold">{isAr ? 'صورة الملف الشخصي' : 'Profile Photo'}</h3>
+              <p className="text-sm text-muted-foreground">
+                {isAr ? 'اضغط على الصورة لتغييرها' : 'Click the photo to change it'}
+              </p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {error && (
         <div className="flex items-center gap-2 rounded-lg bg-destructive/10 p-4 text-destructive">

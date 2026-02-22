@@ -670,11 +670,19 @@ export const EXERCISE_CATEGORIES: ExerciseCategory[] = [
   },
   {
     id: 'preworkout',
-    name: 'Pre & Post Workout',
-    nameAr: 'قبل وبعد التمرين',
+    name: 'Pre-Workout',
+    nameAr: 'قبل التمرين',
     icon: 'Zap',
     minimumTier: 'FREE',
-    searchTags: ['preworkout', 'pre-workout', 'post-workout', 'supplement', 'warmup', 'cooldown'],
+    searchTags: ['preworkout', 'pre-workout', 'warmup', 'activation', 'dynamic stretch'],
+  },
+  {
+    id: 'postworkout',
+    name: 'Post-Workout',
+    nameAr: 'بعد التمرين',
+    icon: 'Heart',
+    minimumTier: 'FREE',
+    searchTags: ['postworkout', 'post-workout', 'cooldown', 'recovery', 'static stretch'],
   },
   // ---- PREMIUM+ (specialty) ----
   {

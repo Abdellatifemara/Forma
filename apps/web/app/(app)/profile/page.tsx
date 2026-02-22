@@ -213,7 +213,9 @@ export default function ProfilePage() {
         <CardContent className="p-6">
           <div className="flex items-center gap-4">
             <Avatar className="h-20 w-20">
-              {user?.avatar && <AvatarImage src={user.avatar} alt={user.name || (isAr ? 'مستخدم' : 'User')} />}
+              {(user?.avatarUrl || user?.avatar) && (
+                <AvatarImage src={user.avatarUrl || user.avatar} alt={user.name || (isAr ? 'مستخدم' : 'User')} />
+              )}
               <AvatarFallback className="text-2xl bg-forma-orange text-white">
                 {getInitials()}
               </AvatarFallback>

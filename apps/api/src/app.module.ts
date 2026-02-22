@@ -36,6 +36,8 @@ import { CheckInsModule } from './modules/check-ins/check-ins.module';
 import { ScheduledCallsModule } from './modules/scheduled-calls/scheduled-calls.module';
 import { EmailModule } from './modules/email/email.module';
 import { ErrorReportingModule } from './modules/error-reporting/error-reporting.module';
+import { DevicesModule } from './modules/devices/devices.module';
+import { NotificationsModule } from './modules/notifications/notifications.module';
 
 @Module({
   imports: [
@@ -101,6 +103,8 @@ import { ErrorReportingModule } from './modules/error-reporting/error-reporting.
     CheckInsModule,
     ScheduledCallsModule,
     ErrorReportingModule,
+    DevicesModule,
+    NotificationsModule,
   ],
   providers: [
     {

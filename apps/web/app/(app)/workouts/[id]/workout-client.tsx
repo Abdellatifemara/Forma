@@ -116,7 +116,7 @@ export default function ActiveWorkoutPage() {
   // Redirect placeholder routes (static export artifact)
   useEffect(() => {
     if (isPlaceholder) {
-      window.location.href = '/workouts';
+      window.location.href = '/workouts' + window.location.search;
     }
   }, [isPlaceholder]);
 

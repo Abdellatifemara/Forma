@@ -121,7 +121,7 @@ export default function AchievementsPage() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2">
-                      <h3 className="font-semibold">{achievement.title}</h3>
+                      <h3 className="font-semibold">{isAr ? ((achievement as any).titleAr || achievement.title) : achievement.title}</h3>
                       {achievement.unlocked && (
                         <Badge variant="forma" className="text-xs">
                           {t.achievements.unlocked}
@@ -129,7 +129,7 @@ export default function AchievementsPage() {
                       )}
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      {achievement.description}
+                      {isAr ? ((achievement as any).descriptionAr || achievement.description) : achievement.description}
                     </p>
                     {achievement.xpReward > 0 && (
                       <p className="mt-1 text-xs text-forma-orange">

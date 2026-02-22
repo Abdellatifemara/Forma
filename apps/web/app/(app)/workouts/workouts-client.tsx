@@ -442,7 +442,7 @@ function WorkoutsContent() {
         </div>
       )}
 
-      {/* Quick Action: Voice Coach */}
+      {/* Quick Action: Voice Coach — Coming Soon */}
       {showVoiceCoach && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="w-full max-w-lg animate-scale-in">
@@ -454,25 +454,15 @@ function WorkoutsContent() {
                 <X className="w-5 h-5 text-white" />
               </button>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center">
-                  <Mic className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h2 className="text-xl font-bold text-gray-900 dark:text-white">{isAr ? 'مدرب صوتي' : 'Voice Coach'}</h2>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">{isAr ? 'تمرن من غير ما تمسك الموبايل' : 'Hands-free workout guidance'}</p>
-                </div>
+            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Mic className="w-8 h-8 text-white" />
               </div>
-              <WorkoutWithVoiceCoach
-                exercises={[
-                  { name: 'Squats', sets: 3, reps: 12 },
-                  { name: 'Push-ups', sets: 3, reps: 10 },
-                  { name: 'Lunges', sets: 3, reps: 10 },
-                  { name: 'Plank', sets: 3, reps: 30 },
-                ]}
-                language={isAr ? 'ar' : 'en'}
-              />
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{isAr ? 'مدرب صوتي' : 'Voice Coach'}</h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{isAr ? 'قريباً! هنضيف المدرب الصوتي في التحديث الجاي.' : 'Coming soon! Voice coach will be available in the next update.'}</p>
+              <Button variant="outline" onClick={closeQuickAction}>
+                {isAr ? 'تمام' : 'Got it'}
+              </Button>
             </div>
           </div>
         </div>

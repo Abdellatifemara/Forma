@@ -356,10 +356,11 @@ function WeightChart({ isAr }: { isAr: boolean }) {
 
 function ConnectDeviceCTA({ isAr }: { isAr: boolean }) {
   const devices = [
-    { name: 'Apple Watch', icon: '⌚' },
-    { name: 'WHOOP', icon: '💪' },
-    { name: 'Garmin', icon: '🏃' },
-    { name: 'OURA', icon: '💍' },
+    { name: 'Apple Health', icon: '🍎', available: true },
+    { name: 'Google Fit', icon: '💚', available: true },
+    { name: 'WHOOP', icon: '💪', available: false },
+    { name: 'Garmin', icon: '🏃', available: false },
+    { name: 'OURA', icon: '💍', available: false },
   ];
 
   return (
@@ -369,27 +370,34 @@ function ConnectDeviceCTA({ isAr }: { isAr: boolean }) {
           <Smartphone className="h-7 w-7 text-primary" />
         </div>
         <h3 className="font-semibold text-lg mb-1">
-          {isAr ? '\u0648\u0635\u0651\u0644 \u062C\u0647\u0627\u0632\u0643' : 'Connect Your Device'}
+          {isAr ? 'وصّل جهازك' : 'Connect Your Device'}
         </h3>
         <p className="text-sm text-muted-foreground mb-4">
           {isAr
-            ? '\u0648\u0635\u0651\u0644 \u0633\u0627\u0639\u062A\u0643 \u0627\u0644\u0630\u0643\u064A\u0629 \u0639\u0634\u0627\u0646 \u062A\u062A\u0627\u0628\u0639 \u0635\u062D\u062A\u0643 \u062A\u0644\u0642\u0627\u0626\u064A'
+            ? 'وصّل ساعتك الذكية عشان تتابع صحتك تلقائي'
             : 'Sync your wearable for automatic health tracking'}
         </p>
         <div className="flex justify-center gap-3 mb-4">
           {devices.map((d) => (
-            <div key={d.name} className="flex flex-col items-center gap-1">
-              <div className="h-10 w-10 rounded-xl bg-muted flex items-center justify-center text-lg">
+            <div key={d.name} className="relative flex flex-col items-center gap-1">
+              <div className={cn(
+                "h-10 w-10 rounded-xl flex items-center justify-center text-lg",
+                d.available ? "bg-muted" : "bg-muted/50 opacity-60"
+              )}>
                 {d.icon}
               </div>
               <span className="text-[10px] text-muted-foreground">{d.name}</span>
+              {!d.available && (
+                <span className="absolute -top-1 -right-1 text-[8px] bg-muted-foreground/20 text-muted-foreground rounded-full px-1.5 py-0.5 font-medium">
+                  {isAr ? 'قريباً' : 'Soon'}
+                </span>
+              )}
             </div>
           ))}
         </div>
-        <Button className="btn-primary">
-          <Plus className="h-4 w-4 me-2" />
-          {isAr ? '\u0631\u0628\u0637 \u062C\u0647\u0627\u0632' : 'Connect Device'}
-        </Button>
+        <p className="text-xs text-muted-foreground mb-3">
+          {isAr ? 'متاح حالياً: Apple Health و Google Fit. باقي الأجهزة قريباً!' : 'Currently available: Apple Health & Google Fit. More devices coming soon!'}
+        </p>
       </CardContent>
     </Card>
   );

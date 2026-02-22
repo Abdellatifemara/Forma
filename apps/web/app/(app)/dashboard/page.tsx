@@ -104,7 +104,7 @@ export default function DashboardPage() {
         </div>
         <Link href="/profile">
           <Avatar className="h-11 w-11 border-2 border-border">
-            <AvatarImage src={user?.avatarUrl || undefined} />
+            <AvatarImage src={user?.avatarUrl || user?.avatar || undefined} />
             <AvatarFallback className="bg-muted text-foreground font-semibold">
               {userName.charAt(0).toUpperCase()}
             </AvatarFallback>
@@ -208,9 +208,9 @@ export default function DashboardPage() {
           {todayWorkout ? (
             <WorkoutCard
               name={todayWorkout.name || (isRTL ? 'تمرين اليوم' : "Today's Workout")}
-              duration={45}
-              sets={todayWorkout.exercises?.length || 4}
-              reps={12}
+              duration={Math.round((todayWorkout.exercises?.length || 4) * 8)}
+              sets={todayWorkout.exercises?.reduce((sum: number, ex: any) => sum + (ex.sets || 3), 0) || 12}
+              reps={todayWorkout.exercises?.length || 4}
               href={`/workouts/${todayWorkout.id}`}
               isRTL={isRTL}
             />
@@ -308,9 +308,9 @@ function WorkoutCard({ name, duration, sets, reps, href, isRTL }: {
         <p className="text-xs font-semibold truncate">{name}</p>
         <div className="flex items-center gap-2 mt-1.5 text-[10px] text-muted-foreground">
           <span className="flex items-center gap-0.5">
-            <Clock className="h-3 w-3" /> {duration} {isRTL ? 'د' : 'min'}
+            <Clock className="h-3 w-3" /> ~{duration} {isRTL ? 'د' : 'min'}
           </span>
-          <span>{sets} x {reps} {isRTL ? 'تكرار' : 'reps'}</span>
+          <span>{sets} {isRTL ? 'مجموعة' : 'sets'} · {reps} {isRTL ? 'تمرين' : 'ex'}</span>
         </div>
       </div>
     </Link>

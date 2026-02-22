@@ -76,6 +76,8 @@ model User {
   trainingHistory       UserTrainingHistory?
   workoutFeedback       WorkoutFeedback[]
   healthDataLogs        HealthDataLog[]
+  connectedDevices      ConnectedDevice[]
+  notificationReminders NotificationReminder[]
   workoutLogs           WorkoutLog[]
   workoutPlans          WorkoutPlan[]
   receivedMessages      Message[]                 @relation("ReceivedMessages")
@@ -2056,4 +2058,40 @@ model TrainerClientNote {
   @@index([trainerId])
   @@index([clientId])
   @@index([createdAt])
+}
+
+// Connected wearable devices
+model ConnectedDevice {
+  id            String   @id @default(cuid())
+  userId        String
+  deviceType    String   // apple_health, google_fit, whoop, oura, fitbit, garmin
+  displayName   String?
+  mockToken     String?  // placeholder until real OAuth per-device
+  syncFrequency String   @default("auto") // auto, hourly, daily, manual
+  permissions   String   @default("all")  // all, sleep, heart, workouts — comma-separated
+  isActive      Boolean  @default(true)
+  lastSyncAt    DateTime?
+  connectedAt   DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, deviceType])
+  @@index([userId])
+}
+
+// Notification reminders (bedtime, workout, etc.)
+model NotificationReminder {
+  id         String   @id @default(cuid())
+  userId     String
+  type       String   // bedtime, workout, hydration, meal
+  enabled    Boolean  @default(true)
+  time       String?  // HH:mm format
+  days       String?  // comma-separated: mon,tue,wed,thu,fri,sat,sun
+  message    String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, type])
+  @@index([userId])
 }

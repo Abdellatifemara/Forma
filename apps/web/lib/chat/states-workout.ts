@@ -527,8 +527,8 @@ export const workoutStates: ChatState[] = [
     },
     back: 'WK_MENU',
     options: [
-      { id: 'wkc1', label: { en: 'Push Day (Chest/Shoulders/Tri)', ar: 'Push Day (صدر/كتف/تراي)' }, icon: '💪', nextState: 'WK_CREATE_PUSH' },
-      { id: 'wkc2', label: { en: 'Pull Day (Back/Biceps)', ar: 'Pull Day (ضهر/باي)' }, icon: '🏋️', nextState: 'WK_CREATE_PULL' },
+      { id: 'wkc1', label: { en: 'Chest & Shoulders Day', ar: 'يوم صدر وكتف' }, icon: '💪', nextState: 'WK_CREATE_PUSH' },
+      { id: 'wkc2', label: { en: 'Back & Biceps Day', ar: 'يوم ضهر وباي' }, icon: '🏋️', nextState: 'WK_CREATE_PULL' },
       { id: 'wkc3', label: { en: 'Leg Day', ar: 'Leg Day (رجل)' }, icon: '🦵', nextState: 'WK_CREATE_LEGS' },
       { id: 'wkc4', label: { en: 'Upper Body', ar: 'جزء علوي' }, icon: '💪', nextState: 'WK_CREATE_UPPER' },
       { id: 'wkc5', label: { en: 'Lower Body', ar: 'جزء سفلي' }, icon: '🦵', nextState: 'WK_CREATE_LOWER' },
@@ -542,8 +542,8 @@ export const workoutStates: ChatState[] = [
   // Workout creation for each split (7 states)
   ...(['PUSH', 'PULL', 'LEGS', 'UPPER', 'LOWER', 'FULL', 'CORE'] as const).map(split => {
     const names: Record<string, { en: string; ar: string }> = {
-      PUSH: { en: 'Push Day', ar: 'Push Day' },
-      PULL: { en: 'Pull Day', ar: 'Pull Day' },
+      PUSH: { en: 'Chest & Shoulders', ar: 'صدر وكتف' },
+      PULL: { en: 'Back & Biceps', ar: 'ضهر وباي' },
       LEGS: { en: 'Leg Day', ar: 'Leg Day' },
       UPPER: { en: 'Upper Body', ar: 'جزء علوي' },
       LOWER: { en: 'Lower Body', ar: 'جزء سفلي' },
