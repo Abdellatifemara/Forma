@@ -6522,6 +6522,72 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v50: Egyptian Food Calorie Deep Dive ────────────────────────
+  {
+    keywords: ['egyptian food calories', 'koshari calories', 'ful calories', 'taameya calories', 'molokhia calories', 'hawawshi calories', 'fiteer calories', 'mahshi calories'],
+    keywordsAr: ['سعرات الأكل المصري', 'سعرات الكشري', 'سعرات الفول', 'سعرات الطعمية', 'سعرات الملوخية', 'سعرات الحواوشي', 'سعرات الفطير', 'سعرات المحشي'],
+    keywordsFranco: ['so3rat el akl el masry', 'so3rat el koshari', 'so3rat el foul', 'so3rat el ta3meya', 'so3rat el molokhia', 'so3rat el hawawshi'],
+    stateId: 'NU_MENU',
+    response: { en: 'Egyptian Food Calories: KOSHARI (plate): 600-800cal, 15-20g protein — high carb, post-workout OK. FUL MEDAMES (plate): 300-400cal, 15g protein — great low GI meal. TAAMEYA (5 pieces): 350-400cal, 10g protein — fried = calorie dense. Baked = 200cal. MOLOKHIA + rice + chicken: 500-600cal, 35g protein — excellent balanced meal! HAWAWSHI: 450-600cal, 25g protein — high fat from bread. FITEER MESHALTET: 500-700cal per piece (mostly fat + carbs). MAHSHI (10 pieces): 300-400cal — surprisingly moderate. GRILLED CHICKEN (quarter): 250-300cal, 35g protein — best option for diet! SHAWARMA (sandwich): 400-500cal. KOFTA MASHWIYA (5 pieces): 350-400cal, 30g protein. KEBAB: 400-450cal, 35g protein. PRO TIP: Grilled > fried always. Ask for less oil. Egyptian food CAN be healthy — it\'s all about preparation!', ar: 'سعرات الأكل المصري: كشري (طبق): 600-800 سعرة، 15-20g بروتين — كارب عالي، كويس بعد التمرين. فول مدمس (طبق): 300-400، 15g بروتين — وجبة GI منخفض ممتازة. طعمية (5 حبات): 350-400 — مقلية = سعرات كتير. مشوية = 200. ملوخية + رز + فراخ: 500-600، 35g بروتين — وجبة متوازنة ممتازة! حواوشي: 450-600، 25g بروتين. فطير مشلتت: 500-700/قطعة. محشي (10 حبات): 300-400 — مفاجأة! فراخ مشوية (ربع): 250-300، 35g بروتين — أفضل خيار للدايت! شاورما: 400-500. كفتة مشوية (5 حبات): 350-400، 30g. كباب: 400-450، 35g. نصيحة: مشوي > مقلي دايماً. قلل الزيت. الأكل المصري ممكن يكون صحي — كله في طريقة التحضير!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v50: Supplement Timing Optimization ────────────────────────
+  {
+    keywords: ['supplement timing', 'when to take supplements', 'supplement schedule', 'morning supplements', 'night supplements', 'supplements with food', 'supplement stack timing'],
+    keywordsAr: ['توقيت المكملات', 'امتى اخد المكملات', 'جدول المكملات', 'مكملات الصبح', 'مكملات بالليل', 'مكملات مع الأكل'],
+    keywordsFranco: ['taw2eet el mokammelat', 'emta akhod el mokammelat', 'gadwal el mokammelat', 'mokammelat el sob7', 'mokammelat belleel'],
+    stateId: 'SU_MENU',
+    response: { en: 'Supplement Timing Cheat Sheet: MORNING (with breakfast): Multivitamin, Vitamin D, Fish Oil, B vitamins, Iron (if needed). WHY: Fat-soluble vitamins need food, B vitamins give energy. PRE-WORKOUT (30min before): Caffeine/pre-workout, citrulline, beta-alanine. Creatine (anytime daily — timing doesn\'t matter much). POST-WORKOUT (within 1hr): Whey protein, creatine (if not taken pre). EVENING (with dinner): Zinc, Vitamin D (if not morning). BEFORE BED: Magnesium glycinate (#1 sleep supplement), ZMA, casein protein (slow release overnight), melatonin (if needed). DON\'T COMBINE: Iron + calcium (compete for absorption — take 2hrs apart), zinc + iron (same issue), fiber supplements + any pill (fiber blocks absorption). EMPTY STOMACH: Iron, probiotics. WITH FAT: Vitamin D, A, E, K, fish oil. CONSISTENCY > TIMING: Taking supplements daily matters more than perfect timing!', ar: 'شيت توقيت المكملات: الصبح (مع الفطار): ملتي فيتامين، فيتامين D، زيت سمك، فيتامينات B، حديد (لو محتاج). ليه: الفيتامينات الدهنية محتاجة أكل، B بتدي طاقة. قبل التمرين (30 دقيقة): كافيين/بري-وركاوت، سيترولين، بيتا ألانين. كرياتين (أي وقت يومياً). بعد التمرين (في ساعة): واي بروتين، كرياتين (لو مخدتهوش قبل). المساء (مع العشا): زنك، فيتامين D (لو مش الصبح). قبل النوم: ماغنيسيوم جلايسينات (أفضل مكمل نوم)، ZMA، كازين بروتين (بطيء)، ميلاتونين (لو محتاج). متجمعش: حديد + كالسيوم (2 ساعة بينهم)، زنك + حديد. معدة فاضية: حديد، بروبيوتيك. مع دهون: فيتامين D, A, E, K. الاستمرارية أهم من التوقيت!' },
+    priority: 8,
+    domain: 'supplements',
+  },
+
+  // ── v50: Protein Bar Guide ────────────────────────
+  {
+    keywords: ['protein bar', 'protein bar review', 'best protein bar', 'protein bar healthy', 'protein bar vs shake', 'protein bar ingredients', 'protein bar egypt'],
+    keywordsAr: ['بروتين بار', 'أفضل بروتين بار', 'بروتين بار صحي', 'بروتين بار ولا شيك', 'بروتين بار مصر'],
+    keywordsFranco: ['protein bar', 'afdal protein bar', 'protein bar se77y', 'protein bar wala shake', 'protein bar masr'],
+    stateId: 'NU_MENU',
+    response: { en: 'Protein Bar Guide: WHAT TO LOOK FOR: 20g+ protein, <10g sugar, <250cal, short ingredient list, real food ingredients. RED FLAGS: "Protein bar" with 5g protein and 30g sugar = candy bar in disguise. Sugar alcohols (maltitol) can cause bloating. GOOD BRANDS: Quest (20g protein, 1g sugar), Built Bar, Grenade Carb Killa, ONE bars, Barebells. BUDGET: Making your own is cheapest — oats + whey + peanut butter + honey, mix, refrigerate, cut into bars. IN EGYPT: Protein bars are expensive (80-150 LE each!). Better options: DIY bars, or just eat dates + almonds + whey protein mixed together. PROTEIN BAR vs SHAKE: Bars are more convenient (pocket-friendly), more satisfying (chewing), but more expensive and often have fillers. Shakes are cheaper per gram of protein. USE BARS: When traveling, emergency snack, between classes/meetings.', ar: 'دليل البروتين بار: اللي تدور عليه: 20g+ بروتين، أقل من 10g سكر، أقل من 250 سعرة، مكونات حقيقية. علامات حمراء: "بروتين بار" بـ5g بروتين و30g سكر = شوكولاتة متنكرة. سكر كحولي (مالتيتول) بيعمل انتفاخ. في مصر: البروتين بارز غالية (80-150 جنيه/واحد!). بدائل أفضل: اعمل بارز بنفسك — شوفان + واي + زبدة فول سوداني + عسل، اخلط، حط في التلاجة، قطعهم بارز. أو كل بلح + لوز + واي بروتين مخلوطين. بروتين بار مقابل شيك: البارز أسهل في الحمل، أكثر إشباع (المضغ)، بس أغلى وفيها فيلرز. الشيكز أرخص لكل جرام بروتين. استخدم بارز: في السفر، سناك طوارئ، بين المحاضرات.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v50: Healthy Fast Food Ordering ────────────────────────
+  {
+    keywords: ['healthy fast food', 'diet fast food', 'healthy mcdonalds', 'healthy kfc', 'fast food macros', 'gym fast food', 'fast food protein', 'healthy ordering'],
+    keywordsAr: ['فاست فود صحي', 'دايت فاست فود', 'صحي ماكدونالدز', 'صحي كنتاكي', 'فاست فود والجيم', 'طلب صحي'],
+    keywordsFranco: ['fast food se77y', 'diet fast food', 'se77y mcdonalds', 'se77y kfc', 'fast food wel gym', 'Talab se77y'],
+    stateId: 'NU_MENU',
+    response: { en: 'Healthy Fast Food Ordering: MCDONALD\'S: Grilled chicken sandwich (no mayo) = 350cal, 30g protein. Chicken salad = 200cal. Avoid: Big Mac (550cal), large fries (490cal). KFC: Grilled chicken pieces = 200cal each, 25g protein. Strip the skin = save 100cal. Avoid: crispy bucket, coleslaw. HARDEE\'S: Grilled chicken sandwich, small burger (no sauces). SUBWAY/SIMILAR: Any 6" on wheat with double protein, all veggies, mustard = 400-500cal, 40g protein. Skip the cheese and mayo. PIZZA: 2 slices thin crust with veggies = acceptable. Avoid stuffed crust, extra cheese. GENERAL RULES: Grilled > fried, water > soda (save 200+ cal), skip the fries or share, ask for sauces on the side, double protein when available. Egyptian chains: El-Shabrawy grilled kofta, Zooba bowl options, GAD foul sandwich (hold the oil).', ar: 'طلب فاست فود صحي: ماكدونالدز: ساندوتش فراخ مشوي (بدون مايو) = 350 سعرة، 30g بروتين. سلطة فراخ = 200. تجنب: بيج ماك (550)، فرايز كبير (490). كنتاكي: قطع فراخ مشوية = 200 سعرة، 25g بروتين. شيل الجلد = وفر 100 سعرة. تجنب: باكت كريسبي. صب واي: 6" على قمح مع دبل بروتين + كل الخضار + مسطردة = 400-500، 40g. سكيب الجبنة والمايو. بيتزا: 2 سلايس ثن كراست بخضار = مقبول. قواعد عامة: مشوي > مقلي، مية > صودا (وفر 200+ سعرة)، سكيب الفرايز أو شارك، صوصات على جنب، دبل بروتين لو متاح. مصري: الشبراوي كفتة مشوية، زوبا أطباق، جاد سندوتش فول (بدون زيت كتير).' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v50: Training Age Concept ────────────────────────
+  {
+    keywords: ['training age', 'beginner intermediate advanced', 'how long to build muscle', 'newbie gains', 'beginner gains', 'muscle building timeline', 'natural muscle potential', 'genetic potential'],
+    keywordsAr: ['عمر التدريب', 'مبتدئ متوسط متقدم', 'كام سنة أبني عضلات', 'مكاسب المبتدئين', 'جدول بناء العضلات', 'الحد الجيني'],
+    keywordsFranco: ['3omr el tadreeb', 'mobtade2 motawaset mota2adem', 'kam sana abny 3adalat', 'makaaseb el mobtade2een', 'el 7ad el geny'],
+    stateId: 'WK_MENU',
+    response: { en: 'Training Age & Muscle Potential: BEGINNER (0-1 year): "Newbie gains" — can gain 8-12kg muscle in first year with good training/diet. Everything works! Focus on form and compound lifts. INTERMEDIATE (1-3 years): Gains slow to 4-6kg/year. Need better programming, nutrition tracking, progressive overload. ADVANCED (3-5+ years): 1-2kg muscle/year. Very precise training/diet needed. Small improvements feel huge. ELITE (5-10+ years): 0.5-1kg/year. Near genetic potential. GENETIC POTENTIAL (natural): Most men can gain 18-25kg total muscle over a lifetime of training (women: 10-14kg). Models like Alan Aragon, Lyle McDonald, and Jeff Nippard all agree on these ranges. STEROID users: Bypass these limits but with health consequences. PRACTICAL: If you\'ve been training 2 years and gained 10kg muscle — you\'re doing GREAT. Don\'t compare to enhanced lifters!', ar: 'عمر التدريب والحد العضلي: مبتدئ (0-1 سنة): "مكاسب المبتدئين" — ممكن تكسب 8-12 كيلو عضل في أول سنة مع تمرين/أكل كويس. كل حاجة بتشتغل! ركز على الفورم والكومباوند. متوسط (1-3 سنين): المكاسب بتبطأ لـ4-6 كيلو/سنة. محتاج برمجة أفضل، تتبع تغذية. متقدم (3-5+ سنين): 1-2 كيلو عضل/سنة. تمرين/أكل دقيق جداً. نخبة (5-10+): 0.5-1 كيلو/سنة. قريب من الحد الجيني. الحد الجيني (ناتشورال): أغلب الرجال يقدروا يكسبوا 18-25 كيلو عضل إجمالي (سيدات: 10-14 كيلو). عملياً: لو بتتمرن سنتين وكسبت 10 كيلو عضل — إنت بتعمل ممتاز. متقارنش نفسك بالمعززين!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v50: Fitness Myths Egypt ────────────────────────
+  {
+    keywords: ['fitness myths egypt', 'gym myths arabic', 'egyptian gym myths', 'common gym mistakes egypt', 'gym broscience', 'gym lies', 'bodybuilding myths'],
+    keywordsAr: ['خرافات الفيتنس مصر', 'خرافات الجيم', 'أخطاء الجيم المصري', 'كلام الجيم الغلط', 'بروساينس', 'أكاذيب الجيم'],
+    keywordsFranco: ['khorafat el fitness masr', 'khorafat el gym', 'akhTa2 el gym el masry', 'kalam el gym el ghalaT', 'broscience'],
+    stateId: 'WK_MENU',
+    response: { en: 'Egyptian Gym Myths DEBUNKED: MYTH: "Creatine is a steroid" — FALSE. It\'s naturally in meat, 100% legal, most studied supplement. MYTH: "Women who lift get bulky" — FALSE. Women have 10x less testosterone. Lifting makes women TONED not bulky. MYTH: "Protein powder damages kidneys" — FALSE (in healthy people). MYTH: "You must eat every 3 hours" — FALSE. Total daily intake matters more. MYTH: "Carbs after 6pm make you fat" — FALSE. Total calories matter, not timing. MYTH: "More sweat = more fat loss" — FALSE. Sweat = temperature regulation, not fat burning. MYTH: "Spot reduction works" — FALSE. Can\'t target belly fat with ab exercises. MYTH: "No pain no gain" — DANGEROUS. Pain means injury, not progress. MYTH: "You need supplements to build muscle" — FALSE. Food first, supplements are bonus. MYTH: "Heavy lifting stunts growth in teens" — FALSE (with proper form). Egyptian specific: "البروتين هيخلي كليتك تقع" — مش حقيقي!', ar: 'خرافات الجيم المصرية: خرافة: "الكرياتين ستيرويد" — غلط. موجود طبيعياً في اللحمة، قانوني 100%، أكتر مكمل مدروس. خرافة: "الستات اللي بترفع حديد بتبقى ضخمة" — غلط. الستات عندها 10 أضعاف أقل تستوستيرون. الحديد بيخلي الجسم مشدود مش ضخم. خرافة: "البروتين بيضر الكلى" — غلط (في الأصحاء). خرافة: "لازم تاكل كل 3 ساعات" — غلط. الإجمالي اليومي أهم. خرافة: "كارب بعد 6 مساءً بيتخن" — غلط. إجمالي السعرات أهم. خرافة: "عرق أكتر = دهون أقل" — غلط. العرق = تنظيم حرارة. خرافة: "تنشيف البطن بتمارين بطن" — غلط. مفيش تنشيف موضعي. خرافة: "لازم مكملات تبني عضلات" — غلط. الأكل أولاً. خرافة: "البروتين هيخلي كليتك تقع" — مش حقيقي في الأصحاء!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
