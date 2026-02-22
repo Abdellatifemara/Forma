@@ -6148,6 +6148,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'health',
   },
 
+  // ── v44: Squat Mastery ────────────────────────
+  {
+    keywords: ['squat guide', 'squat form', 'squat technique', 'how to squat', 'squat tips', 'increase squat', 'squat depth', 'squat knee pain', 'low bar vs high bar'],
+    keywordsAr: ['دليل السكوات', 'فورم السكوات', 'تكنيك السكوات', 'ازاي اعمل سكوات', 'نصائح السكوات', 'عمق السكوات', 'ألم ركبة سكوات'],
+    keywordsFranco: ['daleel el squat', 'form el squat', 'technique el squat', 'ezay a3mel squat', 'nasa2e7 el squat', '3om2 el squat'],
+    stateId: 'WK_MENU',
+    response: { en: 'Squat Mastery: SETUP: Feet shoulder-width or slightly wider, toes pointed out 15-30°. HIGH BAR (on traps): More quad-dominant, more upright torso. Most common. LOW BAR (on rear delts): More hip/hamstring, can lift more weight. Powerlifting style. DEPTH: Hip crease below knee = parallel (minimum for full benefit). ATG (ass to grass) = more quad/glute but needs mobility. BREATHING: Big breath into belly (Valsalva), brace core, squat down, push up, exhale at top. MISTAKES: Knees caving in (push them OUT), butt wink at bottom (work on hip mobility), heels lifting (elevate heels or get squat shoes), leaning too far forward. STANDARDS: Beginner 0.75x BW, intermediate 1.25x, advanced 1.75x, elite 2.5x. ACCESSORIES: Pause squats, front squats, Bulgarian split squats, leg press.', ar: 'إتقان السكوات: الإعداد: رجلين بعرض الكتف أو أوسع شوية، أصابع برا 15-30°. هاي بار (على التراب): كوادز أكتر، جسم أكثر استقامة. لو بار (على الديلت الخلفي): هيب/هامسترينج أكتر، ترفع وزن أكتر. العمق: الهيب تحت الركبة = بارالل (أقل حد). ATG = كوادز/جلوتس أكتر بس محتاج مرونة. التنفس: نفس كبير في البطن، شد الكور، انزل، ادفع، ازفر فوق. أخطاء: الركب بتدخل جوا (ادفعهم برا!)، باط وينك (شغل على مرونة الهيب)، الكعب بيتشال (ارفع الكعب أو جيب جزمة سكوات). المعايير: مبتدئ 0.75× وزنك، متوسط 1.25×، متقدم 1.75×، نخبة 2.5×.' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v44: Overhead Press Guide ────────────────────────
+  {
+    keywords: ['overhead press guide', 'ohp form', 'shoulder press form', 'military press', 'standing press', 'how to overhead press', 'ohp tips', 'increase ohp'],
+    keywordsAr: ['دليل الأوفرهيد برس', 'فورم الشولدر برس', 'الميليتاري برس', 'ازاي اعمل أوفرهيد', 'نصائح الشولدر برس'],
+    keywordsFranco: ['daleel el overhead press', 'form el shoulder press', 'el military press', 'ezay a3mel overhead', 'nasa2e7 el shoulder press'],
+    stateId: 'WK_MENU',
+    response: { en: 'Overhead Press Guide: SETUP: Feet hip-width, bar in front rack (on front delts, elbows slightly in front), grip just outside shoulders. PRESS: Take a breath, brace, press straight up. Move head THROUGH (lean torso forward slightly once bar passes face). Lock out overhead, bar over mid-foot. COMMON MISTAKES: Pressing in front (should be straight up), excessive back lean (turns into incline press), not locking out, grip too wide. WHY IT\'S HARD: OHP is the slowest progressing big lift. A 1-plate (60kg) OHP is genuinely impressive. PROGRESSION: Micro-load (1.25kg per side), push press to overload (use legs for assistance), Z-press (seated on floor — brutal core work). STANDARDS: Beginner 0.35x BW, intermediate 0.65x, advanced 1x, elite 1.25x. ACCESSORIES: Lateral raises, face pulls, dumbbell press, Arnold press.', ar: 'دليل الأوفرهيد برس: الإعداد: رجلين بعرض الهيب، البار في الفرونت راك (على الديلت الأمامي)، قبضة أوسع شوية من الكتف. الدفع: خد نفس، شد الكور، ادفع لفوق على طول. مرر الراس (مل الجسم شوية لقدام لما البار يعدي الوش). اقفل فوق. أخطاء: الدفع لقدام (لازم لفوق)، ميلان الظهر أوي (بيتحول لإنكلاين)، مش بتقفل فوق، قبضة واسعة أوي. ليه صعب: أبطأ رفعة في التقدم. بلاتة واحدة (60 كيلو) مبهرة فعلاً. التقدم: ميكرو-لود (1.25 كيلو/جنب)، بوش برس (استخدم الرجل للمساعدة). المعايير: مبتدئ 0.35× وزنك، متوسط 0.65×، متقدم 1×.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v44: Face Pull Importance ────────────────────────
+  {
+    keywords: ['face pull', 'face pulls', 'face pull benefits', 'face pull form', 'face pull for posture', 'rear delt exercise', 'face pull alternative', 'why face pulls'],
+    keywordsAr: ['فيس بول', 'فوائد الفيس بول', 'فورم الفيس بول', 'فيس بول للوقفة', 'تمرين الديلت الخلفي', 'ليه فيس بول'],
+    keywordsFranco: ['face pull', 'fawa2ed el face pull', 'form el face pull', 'face pull lel wa2fa', 'tamreen el delt el 5alfy', 'leh face pull'],
+    stateId: 'WK_MENU',
+    response: { en: 'Face Pulls — The MOST IMPORTANT Exercise You\'re Not Doing! WHY: Fixes forward shoulder posture (from phone/desk use), prevents shoulder injuries, balances pushing with pulling, strengthens rotator cuff. HOW: Cable at face height, rope attachment, pull to forehead/ears, externally rotate at end (hands end up beside ears, thumbs pointing back). Keep elbows HIGH. 3x15-20 reps with light weight — this is NOT a strength exercise. WHEN: Every upper body day. Some people do them daily (100 reps total). BENEFITS: Better posture, healthier shoulders, better bench press (stable shoulders), less neck pain. ALTERNATIVES: Band pull-aparts, reverse cable flyes, prone Y-raises. Jeff Cavaliere (Athlean-X) calls them "the most important exercise in the gym" and he\'s RIGHT. If you only add ONE exercise to your routine, make it face pulls!', ar: 'فيس بولز — أهم تمرين مش بتعمله! ليه: يصلح الأكتاف المتقدمة (من الموبايل/المكتب)، يمنع إصابات الكتف، يوازن الدفع بالسحب، يقوي الروتيتور كاف. إزاي: كابل على مستوى الوش، حبل، اسحب للجبهة/الأذن، دور للخارج في النهاية (الإيدين بجنب الأذن). خلي الكوع عالي. 3×15-20 تكرار بوزن خفيف — ده مش تمرين قوة. امتى: كل يوم أب بادي. بعض الناس بيعملوه يومياً (100 تكرار). الفوائد: وقفة أفضل، أكتاف أصح، بنش برس أفضل (أكتاف ثابتة)، ألم رقبة أقل. بدائل: باند بول أبارتس، ريفرس كابل فلاي. لو هتضيف تمرين واحد بس، خليه فيس بول!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v44: Dumbbell vs Barbell ────────────────────────
+  {
+    keywords: ['dumbbell vs barbell', 'barbell vs dumbbell', 'dumbbell or barbell', 'which is better dumbbell', 'dumbbell benefits', 'barbell advantages', 'free weights comparison'],
+    keywordsAr: ['دمبل ولا بار', 'بار ولا دمبل', 'أيهما أفضل دمبل', 'فوائد الدمبل', 'مميزات البار', 'مقارنة الأوزان الحرة'],
+    keywordsFranco: ['dumbbell wala barbell', 'barbell wala dumbbell', 'ayhoma afdal dumbbell', 'fawa2ed el dumbbell', 'momayezat el bar'],
+    stateId: 'WK_MENU',
+    response: { en: 'Dumbbell vs Barbell: BARBELL PROS: Heavier loads possible (more strength), easier to progressive overload (add 2.5kg), better for competition lifts. BARBELL CONS: Can hide imbalances, less ROM on some exercises, requires more equipment. DUMBBELL PROS: Fix imbalances (each side works independently), greater ROM (deeper stretch on presses), more joint-friendly, need less equipment, more exercise variety. DUMBBELL CONS: Harder to go very heavy (setup is harder), can\'t do some exercises (heavy squats, deadlifts). THE ANSWER: Use BOTH! Barbell for main compound lifts (squat, bench, deadlift, OHP) — they\'re superior for strength/power. Dumbbells for accessory work (flyes, lateral raises, rows, lunges) — they\'re superior for isolation/ROM. BEGINNER? Start with dumbbells (safer, build stabilizers), add barbell after 2-3 months.', ar: 'دمبل مقابل بار: مميزات البار: أوزان أتقل (قوة أكتر)، سهل تزود الحمل (2.5 كيلو)، أفضل للرفعات التنافسية. عيوب البار: يخفي عدم التوازن، مدى حركة أقل. مميزات الدمبل: يصلح عدم التوازن (كل جنب مستقل)، مدى حركة أكبر (ستريتش أعمق)، أرحم على المفاصل، تمارين أكتر. عيوب الدمبل: صعب تروح تقيل أوي، مش كل التمارين ممكنة. الإجابة: استخدم الاتنين! بار للكومباوند الأساسية (سكوات، بنش، ديدلفت، OHP) — أفضل للقوة. دمبل للتمارين المساعدة (فلاي، لاترال رايز، رو، لانجز) — أفضل للعزل. مبتدئ؟ ابدأ بالدمبل (أأمن، يبني الثبات)، أضف البار بعد 2-3 شهور.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v44: Smith Machine Guide ────────────────────────
+  {
+    keywords: ['smith machine', 'smith machine good or bad', 'smith machine vs free weights', 'smith machine squat', 'smith machine bench', 'smith machine exercises'],
+    keywordsAr: ['سميث ماشين', 'سميث ماشين كويس ولا وحش', 'سميث ماشين ولا فري ويتس', 'سكوات سميث', 'بنش سميث', 'تمارين سميث'],
+    keywordsFranco: ['smith machine', 'smith machine kwyes wala we7esh', 'smith machine wala free weights', 'squat smith', 'bench smith'],
+    stateId: 'WK_MENU',
+    response: { en: 'Smith Machine — Good or Bad? IT DEPENDS! GOOD FOR: Beginners learning movement patterns (safer), calf raises (great actually), reverse lunges, hip thrusts (easy setup), high-rep burnout sets, training alone without spotter, rehabilitation. BAD FOR: Replacing all free weights (locks you into fixed bar path, reduces stabilizer activation). THE TRUTH: Smith machine is a TOOL, not inherently good or bad. Use it strategically. Don\'t make it your only equipment. BEST exercises on Smith: Hip thrusts, calf raises, reverse lunges, inverted rows. OKAY on Smith: Bench press (for variety), shoulder press (if shoulder issues), squats (for high reps). AVOID on Smith: Deadlifts (completely wrong bar path), barbell rows (unnatural). Rule of thumb: Free weights 70% of your training, machines/Smith 30% for variety and isolation.', ar: 'سميث ماشين — كويس ولا وحش؟ حسب الاستخدام! كويس لـ: المبتدئين (أأمن)، كاف رايز (ممتازة فعلاً)، ريفرس لانجز، هيب ثرست (إعداد سهل)، سيتات بيرن أوت، التمرين لوحدك بدون سبوتر. وحش لـ: تبديل كل الفري ويتس (يحبسك في مسار ثابت، يقلل تنشيط عضلات الثبات). الحقيقة: السميث أداة، مش كويسة أو وحشة بذاتها. استخدمها بذكاء. أفضل تمارين سميث: هيب ثرست، كاف رايز، ريفرس لانجز. مقبول: بنش (للتنويع)، شولدر برس. تجنب: ديدلفت (مسار غلط)، باربل رو. القاعدة: فري ويتس 70%، ماشينز/سميث 30%.' },
+    priority: 6,
+    domain: 'workout',
+  },
+
+  // ── v44: Hip Thrust Guide ────────────────────────
+  {
+    keywords: ['hip thrust guide', 'hip thrust form', 'hip thrust benefits', 'glute bridge vs hip thrust', 'barbell hip thrust', 'hip thrust for glutes', 'how to hip thrust'],
+    keywordsAr: ['دليل الهيب ثرست', 'فورم الهيب ثرست', 'فوائد الهيب ثرست', 'جلوت بريدج ولا هيب ثرست', 'هيب ثرست للجلوتس'],
+    keywordsFranco: ['daleel el hip thrust', 'form el hip thrust', 'fawa2ed el hip thrust', 'glute bridge wala hip thrust', 'hip thrust lel glutes'],
+    stateId: 'WK_MENU',
+    response: { en: 'Hip Thrust Guide: THE BEST glute exercise — period. Bret Contreras (Glute Guy) has the research to prove it. SETUP: Upper back on bench, feet flat (shin vertical at top), barbell across hip crease (use pad!). MOVEMENT: Drive hips up, squeeze glutes HARD at top (2sec hold), lower controlled. Chin tucked, look forward. MISTAKES: Hyperextending lower back (stop when hips are level), feet too close (more hamstring), feet too far (less glute). WEIGHT: Start bodyweight (glute bridge on floor), then add barbell. Most women can hip thrust more than they squat. STANDARDS: Beginner bodyweight, intermediate 60-80kg, advanced 100-120kg, elite 150kg+. PROGRAM: 2x/week, 4x8-12 heavy + 3x15-20 lighter. ALTERNATIVES: Glute bridge, single-leg hip thrust, cable pull-through, Romanian deadlift. Smith machine hip thrust is actually excellent for beginners!', ar: 'دليل الهيب ثرست: أفضل تمرين للجلوتس — بدون منافس. الإعداد: أعلى الظهر على البنش، رجلين مفرودة (الساق عمودي فوق)، البار على الهيب (استخدم باد!). الحركة: ادفع الهيب لفوق، اعصر الجلوتس بقوة فوق (2 ثانية)، انزل بتحكم. الذقن مطوية، بص لقدام. أخطاء: ميلان الظهر أوي (وقف لما الهيب يبقى مستوي)، رجلين قريبة أوي (هامسترينج أكتر)، رجلين بعيدة (جلوتس أقل). الوزن: ابدأ بوزن الجسم (جلوت بريدج على الأرض)، بعدين أضف بار. المعايير: مبتدئ بوزن الجسم، متوسط 60-80 كيلو، متقدم 100-120. البرنامج: مرتين/أسبوع، 4×8-12 تقيل + 3×15-20 خفيف. سميث ماشين هيب ثرست ممتاز للمبتدئين!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v44: Romanian Deadlift Guide ────────────────────────
+  {
+    keywords: ['romanian deadlift', 'rdl form', 'rdl guide', 'romanian deadlift vs deadlift', 'rdl for hamstrings', 'stiff leg deadlift', 'rdl tips', 'how to rdl'],
+    keywordsAr: ['رومانيان ديدلفت', 'فورم الـRDL', 'دليل الرومانيان', 'رومانيان ولا ديدلفت', 'RDL للهامسترينج', 'ستيف ليج ديدلفت'],
+    keywordsFranco: ['romanian deadlift', 'form el RDL', 'daleel el romanian', 'romanian wala deadlift', 'RDL lel hamstring', 'stiff leg deadlift'],
+    stateId: 'WK_MENU',
+    response: { en: 'Romanian Deadlift (RDL) Guide: PURPOSE: Best hamstring + glute exercise. Unlike conventional deadlift (from floor), RDL starts from standing. FORM: Stand tall with bar, slight knee bend (keep it fixed!), push hips BACK (like closing a door with your butt), lower bar along thighs, feel deep hamstring stretch, reverse when you can\'t go lower without rounding back (usually mid-shin). SQUEEZE glutes to stand up. MISTAKES: Bending knees too much (becomes a squat), rounding back, bar drifting away from legs, going too deep (lower back rounds). RDL vs CONVENTIONAL: RDL = more hamstring/glute focus, starts standing, hip hinge only. Conventional = starts from floor, full body. STIFF LEG vs RDL: Stiff leg = straighter legs, more stretch. RDL = slight bend, more control. PROGRAM: 3-4x8-12, leg day or pull day. Great superset with leg curls.', ar: 'دليل الرومانيان ديدلفت (RDL): الهدف: أفضل تمرين هامسترينج + جلوتس. على عكس الديدلفت العادي (من الأرض)، الRDL بيبدأ واقف. الفورم: وقف مستقيم بالبار، ثني ركبة خفيف (ثابت!)، ادفع الهيب لورا (زي ما بتقفل باب بطيزك)، نزل البار على الفخذ، حس بالاستريتش في الهامسترينج، ارجع لما متقدرش تنزل أكتر (عادةً نص الساق). اعصر الجلوتس وانت طالع. أخطاء: ثني الركبة كتير (بيتحول لسكوات)، تدوير الظهر، البار بيبعد عن الرجل. RDL مقابل الكونفنشنال: RDL = هامسترينج/جلوتس أكتر، يبدأ واقف. الكونفنشنال = من الأرض، كامل الجسم. البرنامج: 3-4×8-12، يوم الرجل أو يوم السحب. سوبرسيت ممتاز مع ليج كيرل.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
