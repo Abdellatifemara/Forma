@@ -404,6 +404,15 @@ function getContextualPlaceholder(domain: string, isAr: boolean): string {
   return (hints[domain] || hints.root)[isAr ? 'ar' : 'en'];
 }
 
+// ─── Relative Time ──────────────────────────────────────────
+function timeAgo(timestamp: number): string {
+  const diff = Math.floor((Date.now() - timestamp) / 1000);
+  if (diff < 60) return '';
+  if (diff < 3600) return `${Math.floor(diff / 60)}m`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h`;
+  return '';
+}
+
 // ─── Main Guided Chat Component ────────────────────────────
 export default function GuidedChat() {
   const { t, language } = useLanguage();
@@ -480,8 +489,14 @@ export default function GuidedChat() {
     try { getState(currentStateId); } catch { setCurrentStateId(INITIAL_STATE); }
   }, [currentStateId]);
 
+  // Smart auto-scroll: only scroll if user is near the bottom (not reading old messages)
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    const container = scrollRef.current;
+    if (!container) { bottomRef.current?.scrollIntoView({ behavior: 'smooth' }); return; }
+    const isNearBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 120;
+    if (isNearBottom) {
+      bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
   }, [history, pendingAction, isLoading]);
 
   // ─── Actions ──────────────────────────────────────────
@@ -835,6 +850,9 @@ export default function GuidedChat() {
                     </div>
                     <div className="bg-muted/60 rounded-2xl rounded-tl-md px-3.5 py-2.5 max-w-[85%]">
                       <p className="text-[13px] leading-relaxed whitespace-pre-wrap">{entry.text}</p>
+                      {timeAgo(entry.timestamp) && (
+                        <p className="text-[10px] text-muted-foreground/50 mt-1">{timeAgo(entry.timestamp)}</p>
+                      )}
                     </div>
                   </div>
                 </div>

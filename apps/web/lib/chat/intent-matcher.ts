@@ -1375,7 +1375,7 @@ const INTENT_RULES: IntentRule[] = [
     priority: 1,
   },
   {
-    keywords: ['back', 'go back', 'return', 'previous'],
+    keywords: ['go back', 'return', 'previous', 'go back please', 'never mind', 'nevermind'],
     keywordsAr: ['رجوع', 'ارجع', 'السابق'],
     keywordsFranco: ['erga3', 'rogo3'],
     stateId: '__BACK__',
