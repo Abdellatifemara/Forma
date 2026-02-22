@@ -34,23 +34,42 @@ interface IntentRule {
 
 // ─── Common Typo Map (fuzzy matching) ───────────────────────
 const TYPO_MAP: Record<string, string> = {
-  'exersice': 'exercise', 'exercize': 'exercise', 'excercise': 'exercise',
-  'workou': 'workout', 'workotu': 'workout', 'wrokout': 'workout',
-  'nutrtion': 'nutrition', 'nutriton': 'nutrition',
-  'protien': 'protein', 'protine': 'protein',
-  'calroies': 'calories', 'caloreis': 'calories', 'caloris': 'calories',
-  'squatt': 'squat', 'deadlfit': 'deadlift', 'benchpress': 'bench press',
-  'scheudle': 'schedule', 'schedual': 'schedule',
-  'suplement': 'supplement', 'supplment': 'supplement',
-  'creatien': 'creatine', 'creatin': 'creatine',
-  'streching': 'stretching', 'strech': 'stretch',
-  'progrss': 'progress', 'progres': 'progress',
-  'recvery': 'recovery', 'recovry': 'recovery',
-  'shoudler': 'shoulder', 'sholder': 'shoulder',
+  // Exercise variants
+  'exersice': 'exercise', 'exercize': 'exercise', 'excercise': 'exercise', 'excersize': 'exercise',
+  'exersize': 'exercise', 'excersise': 'exercise', 'exercis': 'exercise',
+  'workou': 'workout', 'workotu': 'workout', 'wrokout': 'workout', 'wokrout': 'workout',
+  'worout': 'workout', 'wroklout': 'workout',
+  // Nutrition
+  'nutrtion': 'nutrition', 'nutriton': 'nutrition', 'nutitrion': 'nutrition',
+  'protien': 'protein', 'protine': 'protein', 'protin': 'protein', 'proteing': 'protein',
+  'calroies': 'calories', 'caloreis': 'calories', 'caloris': 'calories', 'calries': 'calories',
+  'calores': 'calories', 'caloriees': 'calories',
+  // Exercises
+  'squatt': 'squat', 'sqaut': 'squat', 'sqauts': 'squats',
+  'deadlfit': 'deadlift', 'deadlif': 'deadlift', 'deadlit': 'deadlift',
+  'benchpress': 'bench press', 'benshpress': 'bench press',
+  'pullup': 'pull ups', 'pushup': 'push up',
+  // General
+  'scheudle': 'schedule', 'schedual': 'schedule', 'shedule': 'schedule',
+  'suplement': 'supplement', 'supplment': 'supplement', 'suppliment': 'supplement',
+  'creatien': 'creatine', 'creatin': 'creatine', 'creatinee': 'creatine',
+  'streching': 'stretching', 'strech': 'stretch', 'streatch': 'stretch',
+  'progrss': 'progress', 'progres': 'progress', 'progess': 'progress',
+  'recvery': 'recovery', 'recovry': 'recovery', 'recovey': 'recovery',
+  'shoudler': 'shoulder', 'sholder': 'shoulder', 'shouder': 'shoulder',
   'bicep': 'biceps', 'tricep': 'triceps',
-  'weigth': 'weight', 'wieght': 'weight',
-  'histry': 'history', 'histroy': 'history',
-  'teh': 'the', 'taht': 'that',
+  'weigth': 'weight', 'wieght': 'weight', 'wight': 'weight', 'weght': 'weight',
+  'histry': 'history', 'histroy': 'history', 'histori': 'history',
+  'teh': 'the', 'taht': 'that', 'adn': 'and', 'hte': 'the',
+  // Body parts
+  'stomache': 'stomach', 'abdominals': 'abs', 'abdominal': 'abs',
+  'sholders': 'shoulders', 'shouldrs': 'shoulders',
+  'hamstirng': 'hamstring', 'harmstring': 'hamstring',
+  // App-related
+  'subcription': 'subscription', 'subsciption': 'subscription',
+  'prefernces': 'preferences', 'preferances': 'preferences',
+  'dashbaord': 'dashboard', 'dahsboard': 'dashboard',
+  'pasword': 'password', 'passowrd': 'password', 'passwrod': 'password',
 };
 
 function fixTypos(text: string): string {
@@ -107,6 +126,35 @@ function stemText(text: string): string {
   return text.split(/\s+/).map(w => simpleStem(w)).join(' ');
 }
 
+// ─── Arabic Number Words ─────────────────────────────────────
+// Converts Arabic number words to digits: "خمسة وتمانين" → 85
+const AR_NUMBERS: Record<string, number> = {
+  'واحد': 1, 'اتنين': 2, 'تلاتة': 3, 'اربعة': 4, 'خمسة': 5,
+  'ستة': 6, 'سبعة': 7, 'تمنية': 8, 'تمانية': 8, 'تسعة': 9, 'عشرة': 10,
+  'عشر': 10, 'عشرين': 20, 'تلاتين': 30, 'اربعين': 40, 'خمسين': 50,
+  'ستين': 60, 'سبعين': 70, 'تمانين': 80, 'تسعين': 90, 'مية': 100, 'ميتين': 200,
+  // Franco-Arab number words
+  'wa7ed': 1, 'etnin': 2, 'talata': 3, 'arba3a': 4, '5amsa': 5,
+  'setta': 6, 'sab3a': 7, 'tamanya': 8, 'tes3a': 9, '3ashara': 10,
+  '3eshrin': 20, 'talateen': 30, 'arba3in': 40, '5amseen': 50,
+  'settin': 60, 'sab3in': 70, 'tamanin': 80, 'tes3in': 90, 'meyya': 100,
+};
+
+function parseArabicNumber(text: string): number | null {
+  // Try compound: "خمسة وتمانين" → 5 + 80 = 85
+  let total = 0;
+  let found = false;
+  const words = text.split(/[\s,و]+/);
+  for (const w of words) {
+    const trimmed = w.trim();
+    if (AR_NUMBERS[trimmed] !== undefined) {
+      total += AR_NUMBERS[trimmed];
+      found = true;
+    }
+  }
+  return found ? total : null;
+}
+
 // ─── Number Extraction ──────────────────────────────────────
 // Extracts numbers + units from text (e.g., "85 kg", "500 ml", "3 sets")
 function extractNumbers(text: string): Record<string, string> {
@@ -116,6 +164,15 @@ function extractNumbers(text: string): Record<string, string> {
   const weightMatch = text.match(/(\d+(?:\.\d+)?)\s*(?:kg|kilo|كيلو)/i) ||
     text.match(/(?:weigh|weight|وزني|وزن)\s*(?:is\s*)?(\d+(?:\.\d+)?)/i);
   if (weightMatch) params.weight = weightMatch[1];
+
+  // Arabic word numbers for weight: "وزني خمسة وتمانين كيلو"
+  if (!params.weight) {
+    const arWeightMatch = text.match(/(?:وزني|وزن|weigh|weight)\s+(.+?)(?:\s*(?:kg|kilo|كيلو)|\s*$)/i);
+    if (arWeightMatch) {
+      const num = parseArabicNumber(arWeightMatch[1]);
+      if (num && num >= 30 && num <= 300) params.weight = String(num);
+    }
+  }
 
   // Water: "500 ml", "500ml", "2 liters", "لتر"
   const waterMatch = text.match(/(\d+)\s*(?:ml|مل)/i) ||
@@ -1791,6 +1848,35 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'programs',
   },
 
+  // ── Mood Detection ──────────────────────────────────────────
+  {
+    keywords: ['feeling great', 'feel amazing', 'pumped', 'excited', 'i feel good', 'feeling strong', 'feeling motivated'],
+    keywordsAr: ['حاسس اني كويس', 'متحمس', 'جاهز', 'قوي النهارده', 'نشيط'],
+    keywordsFranco: ['7ases eny kwais', 'mot7ames', 'gahez', '2awi el naharda'],
+    stateId: 'WK_TODAY',
+    route: '/workouts',
+    response: { en: "Love the energy! Let's channel it into a great workout:", ar: 'حبيت الطاقة دي! يلا نستغلها في تمرين جامد:' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['feeling down', 'feeling sad', 'depressed', 'not feeling well', 'bad day', 'bad mood', 'upset'],
+    keywordsAr: ['حاسس اني مش كويس', 'مكتئب', 'زعلان', 'يوم وحش', 'مضايق'],
+    keywordsFranco: ['7ases eny msh kwais', 'za3lan', 'yom we7esh', 'mday2'],
+    stateId: 'QA_MENU',
+    response: { en: "Sorry to hear that. Exercise is a great mood booster! Even a 15-min walk helps. Or just tell me what you need:", ar: 'سلامتك. التمرين بيحسن المزاج جداً! حتى 15 دقيقة مشي بتفرق. أو قولي محتاج ايه:' },
+    priority: 6,
+  },
+  {
+    keywords: ['hungry after workout', 'starving', 'so hungry', 'extremely hungry', 'need food now'],
+    keywordsAr: ['جعان جداً', 'مجوع', 'محتاج آكل دلوقتي'],
+    keywordsFranco: ['ga3an gdn', 'megawa3', 'me7tag akol delwa2ty'],
+    stateId: 'NT_POST_WORKOUT',
+    response: { en: "Post-workout hunger is normal! Your body needs fuel to recover. Let's get you fed:", ar: 'الجوع بعد التمرين طبيعي! جسمك محتاج وقود للريكفري. يلا ناكلك:' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
   // ── Egyptian Context (Gym Culture) ─────────────────────────
   {
     keywords: ['gym near me', 'find gym', 'best gym', 'gym recommendation'],
@@ -2096,6 +2182,81 @@ export function getSuggestions(text: string, limit = 3): Array<{ label: string; 
 
   return matches
     .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map(({ label, labelAr, stateId }) => ({ label, labelAr, stateId }));
+}
+
+/**
+ * "Did you mean?" — Levenshtein-based fuzzy suggestions when matchIntent returns null.
+ * Returns top 2-3 closest keyword matches across all rules.
+ */
+export function getDidYouMean(text: string, limit = 2): Array<{ label: string; labelAr: string; stateId: string }> {
+  const normalized = fixTypos(text.toLowerCase().trim());
+  if (normalized.length < 3) return [];
+
+  const words = normalized.split(/\s+/);
+
+  // Simple Levenshtein distance (max check length 20 to avoid perf issues)
+  function levenshtein(a: string, b: string): number {
+    if (a.length > 20 || b.length > 20) return 999;
+    const m = a.length, n = b.length;
+    const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+    for (let i = 0; i <= m; i++) dp[i][0] = i;
+    for (let j = 0; j <= n; j++) dp[0][j] = j;
+    for (let i = 1; i <= m; i++) {
+      for (let j = 1; j <= n; j++) {
+        dp[i][j] = Math.min(
+          dp[i - 1][j] + 1,
+          dp[i][j - 1] + 1,
+          dp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1),
+        );
+      }
+    }
+    return dp[m][n];
+  }
+
+  const candidates: Array<{ label: string; labelAr: string; stateId: string; dist: number }> = [];
+  const seen = new Set<string>();
+
+  for (const rule of INTENT_RULES) {
+    if (!rule.response || seen.has(rule.stateId)) continue;
+
+    let bestDist = 999;
+    for (const kw of rule.keywords) {
+      const kwLower = kw.toLowerCase();
+      // Check each word against each keyword word
+      for (const w of words) {
+        if (w.length >= 3) {
+          const kwWords = kwLower.split(/\s+/);
+          for (const kww of kwWords) {
+            if (kww.length >= 3) {
+              const d = levenshtein(w, kww);
+              bestDist = Math.min(bestDist, d);
+            }
+          }
+        }
+      }
+      // Also check full phrase distance for short inputs
+      if (normalized.length <= 15 && kwLower.length <= 15) {
+        bestDist = Math.min(bestDist, levenshtein(normalized, kwLower));
+      }
+    }
+
+    // Only suggest if edit distance is small enough (max 2 for short words, 3 for longer)
+    const threshold = normalized.length <= 5 ? 2 : 3;
+    if (bestDist <= threshold) {
+      seen.add(rule.stateId);
+      candidates.push({
+        label: rule.response.en.replace(/[.!:]$/, ''),
+        labelAr: rule.response.ar.replace(/[.!:]$/, ''),
+        stateId: rule.stateId,
+        dist: bestDist,
+      });
+    }
+  }
+
+  return candidates
+    .sort((a, b) => a.dist - b.dist)
     .slice(0, limit)
     .map(({ label, labelAr, stateId }) => ({ label, labelAr, stateId }));
 }

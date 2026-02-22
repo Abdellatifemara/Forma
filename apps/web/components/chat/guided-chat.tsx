@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/lib/i18n';
 import { getState, INITIAL_STATE } from '@/lib/chat';
 import type { ChatState, ChatOption, StateAction, GptEnhancedConfig } from '@/lib/chat/types';
-import { matchIntent, getSuggestions, getFollowUpSuggestions } from '@/lib/chat/intent-matcher';
+import { matchIntent, getSuggestions, getFollowUpSuggestions, getDidYouMean } from '@/lib/chat/intent-matcher';
 import { useRouter } from 'next/navigation';
 import { Send } from 'lucide-react';
 import {
@@ -715,25 +715,43 @@ export default function GuidedChat() {
         // State doesn't exist, just show the response
       }
     } else {
-      // No match — show domain-aware helpful message
-      const domainHints: Record<string, { en: string; ar: string }> = {
-        workout: { en: 'Try "chest exercises", "skip today", or "log workout"', ar: 'جرب "تمارين صدر" أو "اسكب النهارده" أو "سجل تمرين"' },
-        nutrition: { en: 'Try "log meal", "high protein foods", or "what to eat"', ar: 'جرب "سجل وجبة" أو "أكل بروتين عالي" أو "آكل ايه"' },
-        health: { en: 'Try "log weight", "sleep data", or "heart rate"', ar: 'جرب "سجل الوزن" أو "بيانات النوم" أو "نبض القلب"' },
-        settings: { en: 'Try "change password", "edit profile", or "subscription"', ar: 'جرب "غير الباسورد" أو "عدل البروفايل" أو "الاشتراك"' },
-      };
+      // No match — try "did you mean?" then domain-aware fallback
+      const didYouMean = getDidYouMean(text, 2);
       const currentDomain = currentState?.domain || 'root';
-      const hint = domainHints[currentDomain];
-      const fallbackEn = hint ? `I didn't quite get that. ${hint.en}` : 'I didn\'t quite get that. Try "start workout", "log meal", or "change my name"';
-      const fallbackAr = hint ? `مش فاهم تمام. ${hint.ar}` : 'مش فاهم تمام. جرب "ابدأ تمرين" أو "سجل وجبة" أو "غير اسمي"';
 
-      setTimeout(() => {
-        setHistory(prev => [...prev, {
-          id: `bot-${Date.now()}`, type: 'bot',
-          text: isAr ? fallbackAr : fallbackEn,
-          stateId: currentStateId, domain: currentDomain, timestamp: Date.now(),
-        }]);
-      }, 300);
+      if (didYouMean.length > 0) {
+        // Show "did you mean?" with clickable suggestions
+        const dymLabels = didYouMean.map(d => `"${isAr ? d.labelAr : d.label}"`).join(isAr ? ' أو ' : ' or ');
+        const fallbackMsg = isAr
+          ? `مش فاهم تمام. قصدك ${dymLabels}؟`
+          : `I didn't quite get that. Did you mean ${dymLabels}?`;
+
+        setTimeout(() => {
+          setHistory(prev => [...prev, {
+            id: `bot-${Date.now()}`, type: 'bot',
+            text: fallbackMsg,
+            stateId: currentStateId, domain: currentDomain, timestamp: Date.now(),
+          }]);
+        }, 300);
+      } else {
+        const domainHints: Record<string, { en: string; ar: string }> = {
+          workout: { en: 'Try "chest exercises", "skip today", or "log workout"', ar: 'جرب "تمارين صدر" أو "اسكب النهارده" أو "سجل تمرين"' },
+          nutrition: { en: 'Try "log meal", "high protein foods", or "what to eat"', ar: 'جرب "سجل وجبة" أو "أكل بروتين عالي" أو "آكل ايه"' },
+          health: { en: 'Try "log weight", "sleep data", or "heart rate"', ar: 'جرب "سجل الوزن" أو "بيانات النوم" أو "نبض القلب"' },
+          settings: { en: 'Try "change password", "edit profile", or "subscription"', ar: 'جرب "غير الباسورد" أو "عدل البروفايل" أو "الاشتراك"' },
+        };
+        const hint = domainHints[currentDomain];
+        const fallbackEn = hint ? `I didn't quite get that. ${hint.en}` : 'I didn\'t quite get that. Try "start workout", "log meal", or "change my name"';
+        const fallbackAr = hint ? `مش فاهم تمام. ${hint.ar}` : 'مش فاهم تمام. جرب "ابدأ تمرين" أو "سجل وجبة" أو "غير اسمي"';
+
+        setTimeout(() => {
+          setHistory(prev => [...prev, {
+            id: `bot-${Date.now()}`, type: 'bot',
+            text: isAr ? fallbackAr : fallbackEn,
+            stateId: currentStateId, domain: currentDomain, timestamp: Date.now(),
+          }]);
+        }, 300);
+      }
     }
   }, [textInput, currentStateId, isAr, router, transitionTo, handleBack]);
 
