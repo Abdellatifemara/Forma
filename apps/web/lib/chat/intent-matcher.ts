@@ -8339,6 +8339,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v88: Gym Fashion + Gym Bag Essentials + Pre-Workout Routine + Post-Workout Routine + Gym Do's and Don'ts ──
+  {
+    keywords: ['gym fashion', 'gym clothes', 'what wear gym', 'gym outfit', 'gym clothing', 'gym wear', 'tank top gym', 'gym clothes budget'],
+    keywordsAr: ['لبس جيم', 'ملابس جيم', 'ايه ألبس جيم', 'أوتفت جيم', 'تانك توب جيم'],
+    keywordsFranco: ['gym clothes', 'gym fashion', 'eh albis gym', 'gym outfit', 'gym wear'],
+    stateId: 'info_gym_fashion',
+    response: { en: 'Gym Clothing — What to Wear for Performance: ESSENTIALS: T-shirt or tank top: Moisture-wicking fabric (polyester/nylon blend). Cotton is fine for light training but holds sweat. Dark colors hide sweat stains better. Shorts or joggers: Shorts for leg day (need to see knees for form). Joggers for comfort. Should allow full range of motion. Underwear: Compression shorts or boxer briefs (support matters during squats). Socks: Athletic socks with arch support. Mid-calf for deadlifts (protects shins). Shoes: See our Gym Shoes guide (flat soles for lifting). WHAT TO AVOID: Jeans (restrict movement). Sandals/flip-flops (dangerous). Loose jewelry (catches on equipment). Very baggy clothes (can catch on machines). Too much cologne/perfume (you\'re in a shared space). BUDGET IN EGYPT: Decathlon: Best value gym clothing (80-200 LE per item). Nike/Adidas outlets: 150-400 LE per item. Local markets: Very cheap (30-80 LE) but quality varies. Shein/online: Good deals on gym wear. DON\'T OVERTHINK IT: Nobody cares what you wear. Comfort and functionality > fashion. A basic t-shirt and shorts works perfectly fine.', ar: 'لبس الجيم — ايه تلبس: الأساسيات: تي شيرت أو تانك توب: قماش بيطرد العرق. ألوان غامقة بتخفي العرق. شورت أو جوجر: شورت ليوم الرجل. جوجر للراحة. جوارب رياضية. جزم: شوف دليل جزم الجيم. تجنب: جينز، شبشب، مجوهرات. في مصر: ديكاتلون: أحسن قيمة (80-200ج). نايك/أديداس أوتلت: 150-400ج. أسواق محلية: رخيصة (30-80ج). ما تفكرش كتير: محدش بيهتم بلبسك. الراحة > الموضة.' },
+    priority: 4,
+    domain: 'health',
+  },
+  {
+    keywords: ['gym bag', 'gym bag essentials', 'what bring gym', 'gym bag checklist', 'gym essentials', 'gym accessories', 'gym bag pack'],
+    keywordsAr: ['شنطة جيم', 'أساسيات شنطة', 'ايه أخد الجيم', 'قائمة شنطة جيم', 'إكسسوارات جيم'],
+    keywordsFranco: ['gym bag', 'gym bag essentials', 'eh akhod el gym', 'gym checklist'],
+    stateId: 'info_gym_bag',
+    response: { en: 'Gym Bag Essentials — Complete Checklist: MUST-HAVE: Water bottle (1L minimum). Towel (for wiping equipment and face). Phone + earbuds (music, workout log, timer). Gym lock (if your gym has lockers). Change of clothes (if going somewhere after). TRAINING GEAR: Lifting gloves or chalk (for grip). Wrist wraps (for heavy pressing). Belt (for heavy squats/deadlifts). Resistance band (for warm-up/activation). Notebook/pen (old-school workout log). NUTRITION: Protein shaker + protein powder. Pre-workout snack (banana, dates, protein bar). Post-workout snack (if not eating immediately). HYGIENE: Deodorant. Shower flip-flops. Body wash/shampoo (travel size). Extra pair of socks. Hand sanitizer. NICE TO HAVE: Foam roller (mini travel size). Lacrosse ball (for trigger points). Lifting straps (for heavy pulls). Knee sleeves. Jump rope (for warm-up cardio). Timer app on phone. BUDGET GYM BAG IN EGYPT: Basic duffel bag (100-200 LE from any market). Shaker bottle (30-50 LE). Basic towel (20-40 LE). Total starter kit: under 300 LE.', ar: 'أساسيات شنطة الجيم: لازم: زجاجة مية (1 لتر). فوطة. موبايل + سماعة. قفل (لو الجيم فيه لوكر). لبس تبديل. أدوات تمرين: قفازات أو طباشير. رباط معصم. حزام. باند. شيكر + بودرة. سناك (موزة، بلح). نظافة: مزيل عرق. شبشب دش. صابون. الميزانية في مصر: شنطة بسيطة 100-200ج. شيكر 30-50ج. فوطة 20-40ج. إجمالي: تحت 300ج.' },
+    priority: 4,
+    domain: 'health',
+  },
+  {
+    keywords: ['pre workout routine', 'before gym routine', 'gym warm up routine', 'what do before gym', 'pre gym ritual', 'gym preparation', 'before training routine'],
+    keywordsAr: ['روتين قبل التمرين', 'قبل الجيم', 'تحضير قبل الجيم', 'إحماء روتين', 'قبل التدريب'],
+    keywordsFranco: ['pre workout routine', 'before gym', 'warm up routine', 'before training'],
+    stateId: 'info_pre_workout_routine',
+    response: { en: 'Pre-Workout Routine — The Perfect 30 Minutes Before Training: 60-90 MINUTES BEFORE: Eat a meal with protein + carbs (30g P + 50g C). Examples: chicken + rice, eggs + oats, PB toast + shake. 30-45 MINUTES BEFORE: Caffeine if you use it (coffee or pre-workout). 500ml water. Use the bathroom. 10 MINUTES BEFORE (At the Gym): STEP 1 — General warm-up (3-5 min): Light cardio (bike, walk, jump rope). Get blood flowing, raise body temperature. STEP 2 — Dynamic stretches (3-5 min): Target muscles you\'ll train today. Arm circles (upper body days). Leg swings (leg day). Hip circles. Torso twists. STEP 3 — Activation exercises (3-5 min): Band pull-aparts (every session — shoulder health). Glute bridges (leg day). Face pulls (push day). Scapular push-ups (push day). STEP 4 — Warm-up sets of first exercise: Empty bar x 10. 50% working weight x 8. 70% x 5. 85% x 3. Then working sets. TOTAL: 10-15 minutes. Worth every second — reduces injury risk by 50%+ and improves performance.', ar: 'روتين قبل التمرين — 30 دقيقة مثالية: 60-90 دقيقة قبل: كُل بروتين + كارب (30ج + 50ج). 30-45 دقيقة قبل: كافيين لو بتستخدم. 500مل مية. في الجيم (10 دقائق): خطوة 1 — إحماء عام (3-5 دقائق): كارديو خفيف. خطوة 2 — تمدد ديناميكي (3-5 دقائق): دوائر ذراع، سوينج رجل، دوائر ورك. خطوة 3 — تمارين تنشيط (3-5 دقائق): باند بول أبارتس (كل جلسة!). جلوت بريدج (يوم رجل). خطوة 4 — سيتات إحماء: بار فاضي ×10. 50% ×8. 70% ×5. 85% ×3. الإجمالي: 10-15 دقيقة. بتقلل الإصابات 50%+.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['post workout routine', 'after gym routine', 'after training routine', 'gym cool down', 'what do after gym', 'post gym', 'after workout steps'],
+    keywordsAr: ['روتين بعد التمرين', 'بعد الجيم', 'تهدئة بعد التمرين', 'ايه أعمل بعد الجيم', 'بعد التدريب'],
+    keywordsFranco: ['post workout routine', 'after gym', 'cool down routine', 'after training'],
+    stateId: 'info_post_workout_routine',
+    response: { en: 'Post-Workout Routine — Maximize Your Recovery: IMMEDIATELY AFTER LAST SET: Cool down: 5 minutes easy walking or light cycling (brings heart rate down gradually). STRETCHING (5-10 min): Static stretches for muscles trained (hold each 30 seconds). Focus on: hip flexors, hamstrings, chest, lats, shoulders. Only stretch AFTER training, not before (static stretching before can reduce strength). FOAM ROLLING (Optional, 5 min): Roll trained muscles 1-2 minutes each. Helps reduce DOMS (delayed onset muscle soreness). WITHIN 30-60 MINUTES: Protein shake or high-protein meal (30-40g protein). Fast carbs are good post-workout (fruit, rice, bread — replenishes glycogen). Total post-workout meal: 30-40g protein + 50-80g carbs. HYDRATION: Drink 500ml-1L water in the hour after training. More if you sweated heavily. Add electrolytes if session was 60+ minutes. WITHIN 2-3 HOURS: Full meal with protein, carbs, and vegetables. This is when muscle repair peaks — feed it. REST OF THE DAY: Stay lightly active (don\'t sit all day after training). Get to bed on time (recovery happens during sleep). WHAT NOT TO DO: Skip eating (worst mistake for gains). Immediate heavy meal (nausea risk). Alcohol (impairs protein synthesis by 30%+).', ar: 'روتين بعد التمرين: بعد آخر سيت: تهدئة: 5 دقائق مشي خفيف. تمدد (5-10 دقائق): تمدد ثابت للعضلات اللي اتمرنت (30 ثانية كل واحد). فوم رولينج (اختياري): 1-2 دقيقة كل عضلة. خلال 30-60 دقيقة: شيك بروتين أو وجبة (30-40ج بروتين). كارب سريع بعد التمرين كويس (فواكه، أرز). ترطيب: 500مل-1 لتر مية. خلال 2-3 ساعات: وجبة كاملة. ما تعملش: تسكب الأكل (أسوأ غلطة). كحول (بيضعّف بناء البروتين 30%+).' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['gym dos donts', 'gym rules', 'gym mistakes', 'gym tips beginner', 'gym commandments', 'gym common mistakes', 'what not do gym'],
+    keywordsAr: ['قواعد الجيم', 'أخطاء الجيم', 'نصائح جيم', 'ايه تعمل وما تعملش', 'أخطاء شائعة جيم'],
+    keywordsFranco: ['gym rules', 'gym mistakes', 'gym dos donts', 'gym tips', 'what not do gym'],
+    stateId: 'info_gym_dos_donts',
+    response: { en: 'Gym Do\'s and Don\'ts — The Complete List: DO\'S: 1) Follow a structured program (don\'t improvise). 2) Track your workouts (progressive overload needs data). 3) Warm up properly (10 min saves you months of injury). 4) Use full range of motion (half reps = half results). 5) Prioritize compound movements (squat, bench, deadlift, rows, OHP). 6) Eat enough protein (2g/kg bodyweight). 7) Sleep 7-9 hours (this is when gains happen). 8) Wipe equipment after use. 9) Re-rack your weights (universal gym law). 10) Ask for help when unsure (better than getting injured). DON\'TS: 1) Don\'t ego lift (nobody cares how much you lift). 2) Don\'t skip leg day (chicken legs look ridiculous). 3) Don\'t do only cardio (you won\'t get the body you want). 4) Don\'t compare yourself to others (especially social media). 5) Don\'t train through sharp pain (pain ≠ gain). 6) Don\'t rely on supplements (food first, always). 7) Don\'t curl in the squat rack (this is a war crime). 8) Don\'t give unsolicited advice. 9) Don\'t take steroids as a beginner (or probably ever). 10) Don\'t quit after 2 weeks because you don\'t see results (give it 3-6 months minimum). THE GOLDEN RULE: Consistency beats everything. The best program, diet, and supplements mean nothing without showing up 3-5x per week for years.', ar: 'قواعد الجيم — اعمل وما تعملش: اعمل: 1) اتبع برنامج منظم. 2) سجّل تمارينك. 3) سخّن كويس. 4) مدى حركة كامل. 5) حركات مركبة أولاً. 6) بروتين كفاية 2ج/كجم. 7) نوم 7-9 ساعات. 8) امسح الجهاز. 9) رجّع الأوزان. 10) اسأل لو مش متأكد. ما تعملش: 1) ما ترفعش بالإيجو. 2) ما تسكبش يوم الرجل. 3) ما تعملش كارديو بس. 4) ما تقارنش نفسك. 5) ما تكملش في ألم حاد. 6) ما تعتمدش على المكملات. 7) ما تعملش كيرل في راك السكوات. 8) ما تديش نصيحة محدش طلبها. 9) ما تستخدمش ستيرويدز. 10) ما تستسلمش بعد أسبوعين. القاعدة الذهبية: الانتظام بيفوق كل حاجة.' },
+    priority: 8,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
