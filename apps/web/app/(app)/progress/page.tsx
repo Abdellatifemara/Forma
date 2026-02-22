@@ -83,14 +83,26 @@ export default function ProgressPage() {
 
   const handleLogWeight = async () => {
     const weight = parseFloat(weightInput);
-    if (isNaN(weight) || weight <= 0) return;
+    if (isNaN(weight) || weight < 20 || weight > 500) {
+      toast({
+        title: isAr ? 'وزن غلط' : 'Invalid weight',
+        description: isAr ? 'الوزن لازم يكون بين 20 و 500 كيلو' : 'Weight must be between 20 and 500 kg',
+        variant: 'destructive',
+      });
+      return;
+    }
 
     try {
       await logWeight.mutateAsync({ weight });
       setWeightInput('');
       setLogDialogOpen(false);
-    } catch (error) {
-      // Error handled
+      toast({ title: isAr ? 'تم تسجيل الوزن' : 'Weight logged', description: `${weight} kg` });
+    } catch {
+      toast({
+        title: isAr ? 'حصل مشكلة' : 'Error',
+        description: isAr ? 'مقدرناش نسجل الوزن' : 'Could not log weight. Try again.',
+        variant: 'destructive',
+      });
     }
   };
 
@@ -118,8 +130,13 @@ export default function ProgressPage() {
         thighs: '',
       });
       setLogDialogOpen(false);
-    } catch (error) {
-      // Error handled
+      toast({ title: isAr ? 'تم تسجيل القياسات' : 'Measurements logged' });
+    } catch {
+      toast({
+        title: isAr ? 'حصل مشكلة' : 'Error',
+        description: isAr ? 'مقدرناش نسجل القياسات' : 'Could not log measurements. Try again.',
+        variant: 'destructive',
+      });
     }
   };
 
@@ -228,6 +245,8 @@ export default function ProgressPage() {
                   id="weight"
                   type="number"
                   step="0.1"
+                  min="20"
+                  max="500"
                   placeholder={isAr ? 'مثلاً ٧٥.٥' : 'e.g., 75.5'}
                   value={weightInput}
                   onChange={(e) => setWeightInput(e.target.value)}
