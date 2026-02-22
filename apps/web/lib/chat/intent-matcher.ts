@@ -6828,6 +6828,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v56: Forearm Training + Seated vs Cable Row + Dip Types + Upright Row + Shrugs ──
+  {
+    keywords: ['forearm training', 'wrist curl', 'forearm exercise', 'reverse wrist curl', 'forearm size', 'grip training', 'forearm workout', 'wrist roller', 'forearm curl'],
+    keywordsAr: ['تمارين ساعد', 'كيرل رسغ', 'تدريب ساعد', 'ريفرس ريست كيرل', 'حجم الساعد'],
+    keywordsFranco: ['forearm', 'wrist curl', 'forearm exercise', 'grip training'],
+    stateId: 'info_forearm_training',
+    response: { en: 'Forearm Training Guide: BEST EXERCISES: 1) Wrist Curls — seated, forearms on thighs, curl barbell/dumbbells up. 3x15-20. 2) Reverse Wrist Curls — same position, palms facing down. Builds brachioradialis (the big visible forearm muscle). 3) Farmer Walks — the KING of grip training. Heavy carries build forearms like nothing else. 4) Wrist Roller — roll weight up and down on a stick. Insane forearm pump. 5) Dead Hangs — just hang from a pull-up bar. 30-60 seconds. Builds grip endurance. 6) Towel Pull-Ups — wrap towel around bar, grip towel to do pull-ups. Brutal grip. 7) Plate Pinch — hold two plates together (smooth side out) for time. INDIRECT TRAINING: Deadlifts, rows, pull-ups, and any pulling exercise already trains forearms. Many people never need direct forearm work! PROGRAMMING: 2-3 exercises, 3x15-20, at the END of your workout (never before — you need grip for other lifts). Train forearms 2-3x/week. They recover fast because they are used all day.', ar: 'دليل تدريب الساعد: أفضل التمارين: 1) ريست كيرل — قاعد، الساعد على الفخذ، كيرل بار/دمبل. 3×15-20. 2) ريفرس ريست كيرل — نفس الوضع، الكف تحت. بيبني البراكيوراديالس. 3) فارمرز ووك — ملك تدريب القبضة. 4) ريست رولر — لف الوزن فوق وتحت. 5) ديد هانج — اتعلق من البار 30-60 ثانية. 6) تاول بول أب — لف فوطة على البار. 7) بليت بينش — امسك طبقين معاً. تدريب غير مباشر: ديدلفت، رو، بول أب كلهم بيدربوا الساعد. البرنامج: 2-3 تمارين، 3×15-20، آخر التمرين. 2-3 مرات/أسبوع.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['seated row', 'cable row', 'seated cable row', 'low row', 'chest supported row', 'seated row vs', 'row machine', 'close grip row', 'wide grip row'],
+    keywordsAr: ['سيتد رو', 'كابل رو', 'رو قاعد', 'لو رو', 'رو ماشين', 'رو ضيق', 'رو واسع'],
+    keywordsFranco: ['seated row', 'cable row', 'low row', 'row machine'],
+    stateId: 'info_seated_row_guide',
+    response: { en: 'Seated Row & Cable Row Guide: GRIP VARIATIONS CHANGE EVERYTHING: CLOSE GRIP (V-handle): More lat focus, thicker back. Pull to lower chest. WIDE GRIP (straight bar): More upper back, rear delts, rhomboids. Pull to upper abs. NEUTRAL GRIP (parallel handles): Balanced, easiest on shoulders. Pull to mid-stomach. UNDERHAND GRIP: More bicep involvement, great lat stretch. TECHNIQUE: Sit tall, slight lean back at the pull (10-15 degrees max), squeeze shoulder blades together at peak, control the return. NEVER round your lower back! CHEST-SUPPORTED ROW: Even stricter — removes any cheating. Great for pure back isolation. COMMON MISTAKES: Using too much body swing, not squeezing at peak, pulling with biceps instead of back, going too heavy. PROGRAMMING: 3-4 sets of 8-12 (heavier) or 12-15 (lighter, more squeeze). Use different grips each back day for complete development.', ar: 'دليل السيتد رو والكابل رو: القبضات بتغير كل حاجة! قبضة ضيقة (V-هاندل): لاتس أكتر، ظهر أسمك. قبضة واسعة (بار مستقيم): ظهر علوي، رير دلت. قبضة محايدة: متوازن، أسهل على الكتف. أندرهاند: بايسبس أكتر، مط لاتس. التكنيك: اقعد طويل، ميلان خفيف (10-15 درجة)، اضغط اللوحين معاً، تحكم في الرجوع. ما تلفّش ضهرك السفلي! أخطاء: سوينج كتير، مش بتضغط عند القمة، بتسحب بالبايسبس. البرنامج: 3-4 × 8-12 أو 12-15.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['chest dip vs tricep dip', 'dip for chest', 'dip for triceps', 'dip lean forward', 'dip upright', 'dip variation', 'parallel bar dip', 'weighted dip form'],
+    keywordsAr: ['ديب صدر', 'ديب ترايسبس', 'ديب ميلان', 'ديب معتدل', 'فرق ديب صدر وترايسبس'],
+    keywordsFranco: ['chest dip', 'tricep dip', 'dip lean', 'dip form'],
+    stateId: 'info_chest_vs_tricep_dip',
+    response: { en: 'Chest Dip vs Tricep Dip — Same Exercise, Different Technique: FOR CHEST: Lean forward 30-45 degrees, wider grip, elbows flare out slightly, lower deep (past 90 degrees), look down. Feel the stretch across your chest. FOR TRICEPS: Stay upright (vertical torso), narrower grip, elbows tucked close to body, lower to 90 degrees only, look forward. Feel the burn in the back of your arms. WEIGHTED DIPS: Once you can do 15+ bodyweight dips cleanly, add weight using a dip belt, dumbbell between feet, or weighted vest. Progress by 2.5-5kg per week. ALTERNATIVES IF DIPS HURT: Machine-assisted dips, bench dips (feet elevated), close-grip push-ups. PROGRAMMING: CHEST DAY: 3-4 sets of 8-12 (leaning forward). TRICEP DAY: 3-4 sets of 10-15 (upright). Arnold said dips are "the upper body squat" — they build incredible pressing strength!', ar: 'ديب صدر ضد ديب ترايسبس — نفس التمرين، تكنيك مختلف! للصدر: مِل للأمام 30-45 درجة، قبضة أوسع، الكوع يطلع بره شوية، انزل عميق. للترايسبس: ابقى معتدل (عمودي)، قبضة أضيق، الكوع ملزوق بالجسم، انزل لـ90 درجة بس. ديب بأوزان: لما تعمل 15+ ديب بودي ويت نضيف، زوّد وزن بحزام أو دمبل بين رجلك. زوّد 2.5-5 كيلو/أسبوع. البرنامج: يوم صدر: 3-4 × 8-12 (ميلان). يوم ترايسبس: 3-4 × 10-15 (معتدل).' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['upright row', 'upright row safe', 'upright row shoulder impingement', 'upright row alternative', 'upright row dangerous', 'barbell upright row'],
+    keywordsAr: ['أبرايت رو', 'رو عمودي', 'أبرايت رو آمن', 'أبرايت رو خطير', 'أبرايت رو بديل'],
+    keywordsFranco: ['upright row', 'upright row safe', 'upright row dangerous'],
+    stateId: 'info_upright_row_safety',
+    response: { en: 'Upright Row — The Controversial Exercise: WHY SOME SAY IT IS DANGEROUS: Internally rotates the shoulder under load, can cause shoulder impingement (supraspinatus gets pinched). Most at risk when pulling above nipple height with narrow grip. HOW TO DO IT SAFELY: 1) Use a WIDE grip (1.5x shoulder width) — reduces impingement risk significantly. 2) Never pull higher than chest/nipple level. 3) Use dumbbells or cables instead of barbell (allows natural arm path). 4) Lead with ELBOWS, not hands. 5) If any sharp shoulder pain — STOP immediately. SAFER ALTERNATIVES: Cable lateral raises, dumbbell lateral raises, face pulls, high pulls (snatch grip). VERDICT: Upright rows CAN be safe with wide grip and controlled ROM. But if you have ANY shoulder issues, skip them entirely — there are plenty of better exercises for delts and traps.', ar: 'أبرايت رو — التمرين المثير للجدل: ليه بيقولوا خطير: بيعمل دوران داخلي للكتف تحت حمل، ممكن يسبب اصطدام كتف. أخطر لما تسحب فوق مستوى الصدر بقبضة ضيقة. إزاي تعمله بأمان: 1) قبضة واسعة (1.5× عرض الكتف). 2) ما تسحبش فوق مستوى الصدر. 3) استخدم دمبل أو كابل بدل بار. 4) قود بالكوع مش الإيد. 5) لو أي ألم حاد — وقّف فوراً. بدائل أأمن: كابل لاترال رايز، فيس بول، هاي بول. الحكم: الأبرايت رو ممكن يكون آمن بقبضة واسعة. بس لو عندك أي مشكلة كتف — سيبه!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['shrug exercise', 'barbell shrug', 'dumbbell shrug', 'trap shrug', 'shrug variations', 'shrug form', 'behind back shrug', 'farmers shrug'],
+    keywordsAr: ['شراج', 'باربل شراج', 'دمبل شراج', 'تراب شراج', 'شراج فارييشن'],
+    keywordsFranco: ['shrug', 'shrugs', 'barbell shrug', 'dumbbell shrug', 'trap shrug'],
+    stateId: 'info_shrug_variations',
+    response: { en: 'Shrug Variations for Massive Traps: BARBELL SHRUG: Classic. Hold bar in front, shrug straight up (not forward/back). Heavy weight, 3x10-15. DUMBBELL SHRUG: Better ROM than barbell (arms at sides, not front). Can go heavier per arm. Slight rotation at top for extra contraction. BEHIND-BACK BARBELL SHRUG: Bar behind you (Smith machine works great). Hits traps from different angle. Opens up the chest. TRAP BAR SHRUG: Neutral grip, can go VERY heavy. Arguably the best shrug variation. CABLE SHRUG: Constant tension. Low cable behind you or in front. TECHNIQUE TIPS: Hold at top for 2-3 seconds (squeeze!). Do NOT roll shoulders (circular motion) — straight up and down only! Rolling adds zero benefit and risks shoulder injury. Go heavy but controlled. PROGRAMMING: 3-4 sets of 10-15 reps. Train traps 2x/week. BUT REMEMBER: Deadlifts, rows, and farmer walks already build huge traps. Many people with massive traps never do shrugs!', ar: 'شراج لتراب ضخمة: باربل شراج: كلاسيكي. امسك البار قدامك، ارفع لفوق. تقيل، 3×10-15. دمبل شراج: مدى حركة أفضل، ذراعين على الجنب. لفة خفيفة فوق لضغط أكتر. شراج خلف الظهر: البار وراك (سميث ماشين). بيضرب من زاوية مختلفة. تراب بار شراج: قبضة محايدة، تقدر تروح تقيل جداً. نصايح: امسك فوق 2-3 ثواني! ما تلفّش الكتف في دايرة — فوق وتحت بس! اللف بيضيف صفر ومحتمل إصابة كتف. البرنامج: 3-4 × 10-15. درّب تراب 2×/أسبوع. بس تفتكر: ديدلفت ورو وفارمرز ووك بيبنوا تراب ضخمة بالفعل!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
