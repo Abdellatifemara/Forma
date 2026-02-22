@@ -109,9 +109,13 @@ export default function ProgressPage() {
   const handleLogMeasurements = async () => {
     const data: Record<string, number> = {};
 
+    const maxLimits: Record<string, number> = {
+      weight: 500, bodyFat: 100, chest: 250, waist: 250, hips: 250, arms: 100,
+    };
     Object.entries(measurementInputs).forEach(([key, value]) => {
       const num = parseFloat(value);
-      if (!isNaN(num) && num > 0) {
+      const max = maxLimits[key] || 500;
+      if (!isNaN(num) && num > 0 && num <= max) {
         data[key] = num;
       }
     });

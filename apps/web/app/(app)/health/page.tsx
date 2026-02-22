@@ -576,9 +576,11 @@ function AddMetricDialog({
 
   const handleSubmit = () => {
     if (!type || !value) return;
+    const numVal = parseFloat(value);
+    if (isNaN(numVal) || numVal <= 0 || numVal > 10000) return;
     addMutation.mutate({
       type: type as HealthMetricType,
-      value: parseFloat(value),
+      value: numVal,
       unit: selectedMetric?.unit || '',
       date,
     });

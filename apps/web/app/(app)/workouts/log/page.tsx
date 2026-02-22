@@ -96,8 +96,9 @@ export default function LogWorkoutPage() {
       return;
     }
 
-    if (!duration || parseInt(duration) <= 0) {
-      setError(isAr ? 'أدخل مدة صحيحة' : 'Please enter a valid duration');
+    const durationNum = parseInt(duration);
+    if (!duration || isNaN(durationNum) || durationNum <= 0 || durationNum > 720) {
+      setError(isAr ? 'المدة لازم تكون بين 1 و 720 دقيقة' : 'Duration must be between 1 and 720 minutes');
       return;
     }
 
@@ -112,18 +113,22 @@ export default function LogWorkoutPage() {
 
     try {
       await workoutsApi.logWorkout({
-        name: workoutName,
-        durationMinutes: parseInt(duration),
+        name: workoutName.trim().slice(0, 200),
+        durationMinutes: durationNum,
         exercises: validExercises.map((ex) => ({
-          name: ex.name,
+          name: ex.name.trim().slice(0, 200),
           sets: ex.sets
             .filter((s) => s.reps)
-            .map((s) => ({
-              reps: parseInt(s.reps) || 0,
-              weightKg: s.weight ? parseFloat(s.weight) : undefined,
-            })),
+            .map((s) => {
+              const reps = Math.min(Math.max(parseInt(s.reps) || 0, 0), 1000);
+              const weight = s.weight ? parseFloat(s.weight) : undefined;
+              return {
+                reps,
+                weightKg: weight && !isNaN(weight) && weight > 0 && weight <= 500 ? weight : undefined,
+              };
+            }),
         })),
-        notes: notes || undefined,
+        notes: notes ? notes.trim().slice(0, 2000) : undefined,
       });
 
       router.push('/workouts');

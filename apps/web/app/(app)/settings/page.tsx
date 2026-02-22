@@ -86,8 +86,8 @@ export default function SettingsPage() {
     setIsSaving(true);
     try {
       await updateProfile.mutateAsync({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
+        firstName: formData.firstName.trim().slice(0, 100),
+        lastName: formData.lastName.trim().slice(0, 100),
         language,
         measurementUnit: unit,
       });
@@ -288,6 +288,7 @@ export default function SettingsPage() {
                   <Input
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                    maxLength={100}
                     className="mt-1.5"
                   />
                 </div>
@@ -296,6 +297,7 @@ export default function SettingsPage() {
                   <Input
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                    maxLength={100}
                     className="mt-1.5"
                   />
                 </div>
