@@ -8057,6 +8057,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v82: Plate Math + Gym Timer + Spotter Guide + Gym Music + Training Partner ──
+  {
+    keywords: ['plate math', 'plate calculator', 'bar weight', 'how much bar', 'plates on bar', 'plate loading', 'barbell weight', 'olympic bar weight', 'plate combination'],
+    keywordsAr: ['حساب أطباق', 'وزن البار', 'كام طبق', 'تحميل أطباق', 'بار أوليمبي وزن'],
+    keywordsFranco: ['plate math', 'bar weight', 'plates on bar', 'kam plate'],
+    stateId: 'info_plate_math',
+    response: { en: 'Plate Math — Quick Reference Guide: BAR WEIGHTS: Olympic barbell: 20kg (45 lbs). Women\'s Olympic bar: 15kg (35 lbs). EZ curl bar: 7-10kg. Smith machine bar: 15-25kg (varies, ask your gym). Trap/hex bar: 20-25kg. STANDARD PLATES (per side): 20kg (red) — biggest plate. 15kg (yellow). 10kg (green). 5kg (white). 2.5kg (small). 1.25kg (micro plate — for small increases). QUICK PLATE MATH (total weight = bar + both sides): Bar + 20 each side = 60kg. Bar + 20+10 each side = 80kg. Bar + 20+20 each side = 100kg. Bar + 20+20+10 each side = 120kg. Bar + 20+20+20 each side = 140kg. QUICK REFERENCE TABLE: 40kg = bar + 10 each side. 50kg = bar + 15 each side. 60kg = bar + 20 each side. 70kg = bar + 25 each side (20+5). 80kg = bar + 30 each side (20+10). 100kg = bar + 40 each side (20+20). TIPS: Always use clips/collars to secure plates. Load evenly (same on both sides). If your gym uses lbs plates: 45 lbs = ~20kg. For micro-loading: buy 0.5kg or 1.25kg plates (gym might not have them).', ar: 'حساب الأطباق — مرجع سريع: أوزان البار: أوليمبي: 20كجم. نسائي: 15كجم. EZ: 7-10كجم. سميث: 15-25كجم. الأطباق (لكل جانب): 20كجم (أحمر). 15كجم (أصفر). 10كجم (أخضر). 5كجم (أبيض). 2.5كجم. حساب سريع: بار + 20 كل جنب = 60كجم. بار + 30 كل جنب = 80كجم. بار + 40 كل جنب = 100كجم. جدول سريع: 40 = بار + 10 كل جنب. 60 = بار + 20. 80 = بار + 30. 100 = بار + 40. نصائح: استخدم مشابك. حمّل بالتساوي.' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['rest timer', 'how long rest', 'rest between sets', 'rest period', 'rest time gym', 'timer gym', 'rest too long', 'rest too short'],
+    keywordsAr: ['مؤقت راحة', 'كام دقيقة راحة', 'راحة بين المجموعات', 'وقت راحة جيم'],
+    keywordsFranco: ['rest timer', 'rest between sets', 'rest period gym', 'kam de2ee2a ra7a'],
+    stateId: 'info_rest_timer',
+    response: { en: 'Rest Periods — How Long Between Sets: STRENGTH (1-5 reps, heavy): 3-5 minutes rest. Your nervous system needs full recovery. Rushing = failed reps = less progress. HYPERTROPHY (6-12 reps): 60-90 seconds rest. This creates metabolic stress (the "burn") which drives growth. Keeps pump going. Still allows enough recovery for next set. ENDURANCE (12-20 reps): 30-60 seconds rest. Keeps heart rate elevated. Burns more calories. Good for conditioning. COMPOUND vs ISOLATION: Compound (squat, bench, deadlift): Longer rest (2-3 min minimum). These tax your whole body. Isolation (curls, lateral raises): Shorter rest (60-90 sec). Less systemic fatigue. SUPERSETS: 0 seconds between exercises in the superset. 60-90 seconds between rounds. Great time-saver. COMMON MISTAKES: Resting too short on heavy compounds (sacrifices strength). Resting too long on isolation (wastes time, lose pump). Scrolling phone for 5 minutes between sets (we all do it, stop it). PRACTICAL TIP: Use your phone timer or this app to time rests. Start the timer as soon as you finish the set. When it beeps, START your next set (don\'t start walking to the rack).', ar: 'فترات الراحة — كام بين السيتات: قوة (1-5 عدات): 3-5 دقائق. الجهاز العصبي محتاج استرداد كامل. حجم (6-12 عدة): 60-90 ثانية. بيعمل إجهاد أيضي (الحرقان) اللي بيحفّز النمو. تحمل (12-20 عدة): 30-60 ثانية. بيخلي معدل القلب عالي. حركات مركبة: راحة أطول (2-3 دقائق). عزل: أقصر (60-90 ثانية). أخطاء شائعة: راحة قصيرة في المركبات التقيلة. راحة طويلة في العزل. سكرولينج الموبايل 5 دقائق. نصيحة: استخدم مؤقت الموبايل أو التطبيق ده.' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['spotter', 'gym spotter', 'how spot bench', 'need spotter', 'spot squat', 'spotting technique', 'ask for spot', 'gym partner spot'],
+    keywordsAr: ['سبوتر', 'مساعد جيم', 'سبوت بنش', 'محتاج سبوتر', 'تقنية سبوتنج'],
+    keywordsFranco: ['spotter', 'gym spotter', 'spot bench', 'need spotter', 'spotting technique'],
+    stateId: 'info_spotter_guide',
+    response: { en: 'Spotting Guide — How to Spot & Get Spotted Safely: WHEN YOU NEED A SPOTTER: Bench press (ALWAYS on heavy sets — this is the one exercise that can kill you). Heavy squats (if no safety bars/pins). Heavy overhead press. Any max attempt or PR attempt. HOW TO ASK: "Hey, can you give me a spot?" Tell them: how many reps you\'re going for, whether you want a lift-off, when to help (don\'t touch the bar unless I say or it stops moving). HOW TO SPOT BENCH: Stand behind the bench, overhand grip on bar. Help with lift-off if asked (assist bar from rack to lockout). Hands hover 1 inch from bar — DON\'T touch it during the set. Only grab when: the bar stops moving up, the lifter says "help," or the bar starts going back down. If you need to help: pull the bar up smoothly to the rack. NEVER jerk it. HOW TO SPOT SQUAT: Stand behind the lifter, arms under their armpits. If they fail: wrap arms around their chest and help them stand up. Alternatively: spot from the side, one hand under their chest, one supporting the bar. SPOTTING MISTAKES: Grabbing the bar too early (lets lifter cheat). Doing a "bicep curl spot" (pulling too much). Not paying attention (don\'t look at your phone while spotting!). Upright row grip on bar (dangerous for both people).', ar: 'دليل السبوتنج: امتى محتاج سبوتر: بنش بريس (دايماً في السيتات التقيلة — ده التمرين اللي ممكن يقتلك). سكوات تقيل (لو مفيش سيفتي بارز). أوفرهيد بريس تقيل. ازاي تطلب: "ممكن تديني سبوت؟" قوله: كام عدة عايز، عايز لفت أوف ولا لأ، امتى يساعد. ازاي تسبوت بنش: قف ورا البنش. إيديك فوق البار — ما تلمسش البار أثناء السيت. بس لما: البار يوقف، الرافع يقول "ساعدني"، أو البار يبدأ ينزل. ازاي تسبوت سكوات: قف ورا الرافع، ذراعيك تحت إباطهم. أخطاء: تمسك البار بدري. تسحب كتير. ما تبصش على الموبايل وانت بتسبوت!' },
+    priority: 5,
+    domain: 'workout',
+  },
+  {
+    keywords: ['workout music', 'gym playlist', 'music for gym', 'best gym music', 'workout songs', 'music tempo gym', 'heavy metal gym', 'rap gym', 'arabic gym music'],
+    keywordsAr: ['موسيقى تمرين', 'بلايليست جيم', 'أغاني جيم', 'أحسن موسيقى جيم', 'أغاني عربي جيم'],
+    keywordsFranco: ['workout music', 'gym playlist', 'gym songs', 'music gym', 'arabic gym music'],
+    stateId: 'info_workout_music_deep',
+    response: { en: 'Workout Music — The Science of the Perfect Playlist: THE SCIENCE: Music at 120-140 BPM increases workout intensity by 15%. Familiar songs boost performance more than new ones. Lyrics you relate to increase motivation. Bass-heavy music increases strength output. BPM GUIDE: Warm-up/stretching: 100-120 BPM (chill, building up). Strength training: 120-140 BPM (driving, powerful). HIIT/Cardio: 140-170 BPM (fast, aggressive). Cool-down: 80-100 BPM (calming). GENRES THAT WORK: Heavy metal/rock: Best for heavy lifting (Metallica, AC/DC, Disturbed). Hip-hop/Rap: Great for compound lifts (Eminem, DMX, Travis Scott). EDM/Electronic: Perfect for HIIT and cardio (deadmau5, Skrillex). Pop (uptempo): Good for general training. Arabic: Mahraganat is perfect gym energy (Oka w Ortega, Wezza, etc.). Shaabi has great rhythm for lifting. Egyptian rap scene is growing (Abyusif, Marwan Pablo). TIPS: Use wireless earbuds (no cord catching on equipment). Build separate playlists for different training types. Don\'t play music so loud you can\'t hear your gym surroundings. Some people prefer no music — that\'s fine too (meditative lifting).', ar: 'موسيقى التمرين — بلايليست مثالية: العلم: موسيقى 120-140 BPM بتزود شدة التمرين 15%. الأغاني المألوفة بتحسن الأداء. البيس بيزود القوة. دليل BPM: إحماء: 100-120. قوة: 120-140. HIIT/كارديو: 140-170. تهدئة: 80-100. الأنواع: هيفي ميتال/روك: أحسن للرفع التقيل. هيب هوب/راب: ممتاز للحركات المركبة. EDM: مثالي لـHIIT. عربي: مهرجانات = طاقة جيم مثالية. شعبي ريدمه ممتاز. راب مصري (أبيوسف، مروان بابلو). نصائح: سماعات لاسلكية. بلايليستات منفصلة لأنواع التمرين.' },
+    priority: 5,
+    domain: 'health',
+  },
+  {
+    keywords: ['training partner', 'gym buddy', 'workout partner', 'gym friend', 'train alone vs partner', 'find gym partner', 'gym partner benefits'],
+    keywordsAr: ['شريك تمرين', 'صاحب جيم', 'بارتنر جيم', 'تتمرن لوحدك ولا مع حد', 'دور على بارتنر'],
+    keywordsFranco: ['gym buddy', 'training partner', 'workout partner', 'gym friend', 'train alone vs partner'],
+    stateId: 'info_training_partner_deep',
+    response: { en: 'Training Partner — Benefits & How to Find One: BENEFITS: Accountability (hardest to skip when someone is waiting). Built-in spotter (safer heavy lifts). Motivation (competitive energy, pushing each other). More fun (time passes faster). Form check (they can watch your technique). SOLO BENEFITS: Flexible schedule, your pace, no compromises, focus on yourself. IDEAL PARTNER: Similar strength level (within 20%). Same schedule availability. Same goals (both want to train seriously). Reliable (won\'t cancel constantly). Positive attitude (no negativity in the gym). HOW TO FIND ONE: Ask someone at your gym who trains at similar times. Post in gym WhatsApp groups. Ask gym staff to introduce you. Local fitness communities on social media. This app\'s community features (coming soon!). PARTNER RULES: Agree on workout plan before session. Don\'t talk excessively between sets. Respect each other\'s time. Be honest about spotting (don\'t lie about bad form). If the partnership isn\'t working, it\'s okay to train solo again. BEST PARTNER WORKOUTS: Supersets (one works while other rests). Forced reps on last set. Competitive challenges (who can do more push-ups, etc.). Drop set assistance.', ar: 'شريك التمرين — الفوايد وازاي تلاقي: الفوايد: محاسبة (صعب تسكب لما حد مستنيك). سبوتر جاهز. تحفيز (طاقة تنافسية). وقت أسرع. الشريك المثالي: نفس مستوى القوة تقريباً. نفس الجدول. نفس الأهداف. ملتزم. إيجابي. ازاي تلاقي: اسأل حد في الجيم بيتمرن نفس وقتك. جروبات واتساب الجيم. اسأل الإدارة. سوشيال ميديا. قواعد: اتفقوا على الخطة قبل. ما تتكلموش كتير بين السيتات. لو الشراكة مش شغالة، عادي ترجع لوحدك.' },
+    priority: 5,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
