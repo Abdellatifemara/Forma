@@ -6346,6 +6346,72 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v47: Mindful Eating ────────────────────────
+  {
+    keywords: ['mindful eating', 'eat slowly', 'intuitive eating', 'mindful nutrition', 'eat without distraction', 'hunger cues', 'fullness signals', 'eating awareness'],
+    keywordsAr: ['أكل واعي', 'كل ببطء', 'أكل حدسي', 'تغذية واعية', 'أكل بدون تشتت', 'إشارات الجوع', 'إشارات الشبع'],
+    keywordsFranco: ['akl wa3y', 'kol bebot2', 'akl 7adsy', 'taghzeya wa3eya', 'akl bedoon tashattot', 'esharat el go3'],
+    stateId: 'NU_MENU',
+    response: { en: 'Mindful Eating Guide: WHAT: Paying full attention to eating — taste, texture, hunger/fullness signals. Not about WHAT you eat, but HOW. PRACTICE: 1) No screens while eating (phone, TV — they cause overeating by 25-50%!). 2) Chew 20-30 times per bite (digestion starts in mouth). 3) Put fork down between bites. 4) Eat from plates, not packages. 5) Before eating, ask: "Am I hungry or bored/stressed/tired?" HUNGER SCALE: 1-3 = eat now, 4-6 = comfortable, 7-10 = too full. Start eating at 3, stop at 7. BENEFITS: Eat less naturally (no calorie counting needed), better digestion, enjoy food more, reduce binge eating. It takes 20 MINUTES for your brain to register fullness — eating slowly literally means eating less. Try it for one meal today!', ar: 'دليل الأكل الواعي: إيه: الانتباه الكامل للأكل — الطعم، الملمس، إشارات الجوع/الشبع. مش عن إيه بتاكل، بس إزاي. الممارسة: 1) بدون شاشات أثناء الأكل (موبايل، تلفزيون — بيزودوا الأكل 25-50%!). 2) امضغ 20-30 مرة/لقمة (الهضم بيبدأ في الفم). 3) حط الشوكة بين اللقم. 4) كل من أطباق مش من الأكياس. 5) قبل الأكل، اسأل: "أنا جعان ولا زهقان/متوتر/تعبان؟" مقياس الجوع: 1-3 = كل دلوقتي، 4-6 = مرتاح، 7-10 = ممتلئ أوي. ابدأ عند 3، وقف عند 7. الفوائد: كل أقل طبيعياً، هضم أفضل، استمتع بالأكل أكتر. المخ بياخد 20 دقيقة يسجل الشبع — الأكل ببطء فعلاً يعني أكل أقل!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v47: Emotional Eating ────────────────────────
+  {
+    keywords: ['emotional eating', 'stress eating', 'binge eating', 'comfort food', 'eat when sad', 'eat when bored', 'food and emotions', 'stop binge eating'],
+    keywordsAr: ['أكل عاطفي', 'أكل توتر', 'أكل بنهم', 'أكل راحة', 'أكل لما زعلان', 'أكل لما زهقان', 'أكل ومشاعر'],
+    keywordsFranco: ['akl 3atefy', 'akl tawator', 'akl benahm', 'akl ra7a', 'akl lama za3lan', 'akl lama zah2an', 'akl w masha3er'],
+    stateId: 'HE_MENU',
+    response: { en: 'Emotional Eating: SIGNS: Eating when not hungry, eating to feel better, craving specific comfort foods, eating until uncomfortably full, guilt after eating. TRIGGERS: Stress, boredom, sadness, loneliness, fatigue, celebration. STRATEGIES: 1) Pause 10min before eating — the craving may pass. 2) Drink water first (thirst mimics hunger). 3) Journal what you feel before eating. 4) Find non-food comfort: walk, call friend, shower, exercise. 5) Don\'t keep trigger foods at home. 6) Sleep more (sleep deprivation increases cravings). 7) Don\'t restrict too much (extreme diets cause binges). PROFESSIONAL HELP: If you binge eat regularly (3+ times/week), feel out of control, purge after eating — seek a therapist who specializes in eating disorders. This is NOT weakness — it\'s a condition that needs proper help. You\'re not alone.', ar: 'الأكل العاطفي: العلامات: أكل وأنت مش جعان، أكل عشان تحس بتحسن، اشتهاء أكل راحة محدد، أكل لحد الامتلاء، ذنب بعد الأكل. المحفزات: توتر، زهق، حزن، وحدة، تعب، احتفال. الاستراتيجيات: 1) وقف 10 دقائق قبل الأكل — الاشتهاء ممكن يعدي. 2) اشرب مية الأول (العطش بيقلد الجوع). 3) اكتب إحساسك قبل الأكل. 4) لاقي راحة غير الأكل: امشي، كلم حد، خد دش، اتمرن. 5) متخليش أكل الإثارة في البيت. 6) نام أكتر (قلة النوم بتزود الاشتهاء). 7) متحرمش نفسك أوي (الدايت القاسي بيسبب بنج). مساعدة متخصصة: لو بتاكل بنهم بانتظام (3+ مرات/أسبوع)، حس إنك فاقد السيطرة — روح معالج متخصص. ده مش ضعف — ده حالة محتاجة مساعدة. مش لوحدك.' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v47: Body Dysmorphia ────────────────────────
+  {
+    keywords: ['body dysmorphia', 'body image issues', 'never big enough', 'bigorexia', 'muscle dysmorphia', 'hate my body', 'not muscular enough', 'body image gym'],
+    keywordsAr: ['تشوه صورة الجسم', 'مشاكل صورة الجسم', 'مش كبير كفاية', 'بيجوريكسيا', 'بكره جسمي', 'مش عضلي كفاية'],
+    keywordsFranco: ['tashawoh soret el gesm', 'mashakl soret el gesm', 'mesh kebeer kefaya', 'bigorexia', 'bakrah gesmy', 'mesh 3adaly kefaya'],
+    stateId: 'HE_MENU',
+    response: { en: 'Body Dysmorphia in Fitness: WHAT: Seeing yourself as smaller/fatter than you actually are. "Bigorexia" = muscle dysmorphia (common in gym-goers). SIGNS: Never satisfied with size despite being muscular, comparing yourself to everyone, avoiding mirrors or checking obsessively, skipping social events because of body, considering steroids despite risks, training through injuries to not "lose gains", extreme distress about missing gym days. THE TRUTH: You ARE making progress — your brain is lying to you. Social media shows the top 0.1% with perfect lighting and angles. WHAT HELPS: Take progress photos (objective evidence), focus on STRENGTH numbers (not just looks), limit social media comparison, talk to someone you trust. PROFESSIONAL: If it affects your daily life, relationships, or mental health — see a therapist. This affects men as much as women. Fitness should IMPROVE your life, not control it.', ar: 'تشوه صورة الجسم في الفيتنس: إيه: شايف نفسك أصغر/أتخن مما إنت فعلاً. "بيجوريكسيا" = تشوه عضلي (شائع في الجيم). العلامات: مش راضي أبداً عن حجمك رغم إنك عضلي، بتقارن نفسك بكل الناس، بتتجنب المراية أو بتتفحصها بهوس، بتلغي مناسبات بسبب جسمك، بتفكر في ستيرويدز رغم المخاطر. الحقيقة: إنت فعلاً بتتقدم — مخك بيكدب عليك. السوشيال ميديا بتوريك الـ0.1% الأعلى بإضاءة وزوايا مثالية. اللي بيساعد: صور تقدم (دليل موضوعي)، ركز على أرقام القوة (مش الشكل بس)، قلل مقارنة السوشيال، اتكلم مع حد تثق فيه. متخصص: لو بيأثر على حياتك — روح معالج. ده بيأثر على الرجالة زي الستات. الفيتنس لازم يحسن حياتك مش يسيطر عليها.' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v47: Discipline vs Motivation ────────────────────────
+  {
+    keywords: ['discipline vs motivation', 'stay consistent gym', 'gym consistency', 'how to be disciplined', 'motivation fades', 'build gym habit', 'consistency tips', 'never miss gym'],
+    keywordsAr: ['انضباط ولا تحفيز', 'استمرارية الجيم', 'ازاي ابقى منضبط', 'التحفيز بيروح', 'عادة الجيم', 'نصائح الاستمرارية'],
+    keywordsFranco: ['endebaT wala ta7feez', 'estemrareyet el gym', 'ezay ab2a mondabeT', 'el ta7feez beyro7', '3adet el gym', 'nasa2e7 el estemrareya'],
+    stateId: 'WK_MENU',
+    response: { en: 'Discipline vs Motivation: MOTIVATION gets you started, DISCIPLINE keeps you going. Motivation is a feeling — it comes and goes. Discipline is a CHOICE — it\'s showing up regardless of how you feel. HOW TO BUILD DISCIPLINE: 1) "2-minute rule" — just show up and do 2 minutes. Once you\'re there, you\'ll train. 2) Never miss twice in a row (miss Monday? MUST go Tuesday). 3) Schedule gym like a meeting — non-negotiable. 4) Prepare the night before (gym bag packed, clothes out). 5) Find a gym buddy (accountability). 6) Track everything (seeing progress is motivating). 7) Lower the bar on bad days (light workout > no workout). 8) Remember your WHY (health, confidence, strength — not just looks). TRUTH: The most successful people in the gym aren\'t the most motivated — they\'re the most consistent. 80% of results come from just SHOWING UP regularly.', ar: 'الانضباط مقابل التحفيز: التحفيز بيبدأك، الانضباط بيكملك. التحفيز إحساس — بييجي ويروح. الانضباط اختيار — بتحضر بغض النظر عن إحساسك. إزاي تبني الانضباط: 1) "قاعدة الدقيقتين" — بس روح واعمل دقيقتين. لما توصل هتتمرن. 2) متفوتش مرتين ورا بعض (فوت الاتنين؟ لازم تروح التلات). 3) حدد الجيم زي ميتنج — مش قابل للتفاوض. 4) جهز بالليل (شنطة جاهزة، هدوم جاهزة). 5) لاقي صاحب جيم (مسؤولية). 6) سجل كل حاجة (التقدم بيحفز). 7) قلل المعيار في الأيام الصعبة (تمرين خفيف > مفيش تمرين). 8) فتكر ليه (صحة، ثقة، قوة). الحقيقة: أنجح الناس في الجيم مش الأكثر تحفيزاً — هم الأكثر استمرارية.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v47: Goal Setting SMART ────────────────────────
+  {
+    keywords: ['fitness goal setting', 'smart goals fitness', 'gym goals', 'realistic fitness goals', 'set fitness goals', 'goal timeline fitness', 'fitness expectations'],
+    keywordsAr: ['تحديد أهداف فيتنس', 'أهداف ذكية فيتنس', 'أهداف الجيم', 'أهداف واقعية', 'وضع أهداف', 'جدول أهداف'],
+    keywordsFranco: ['ta7deed ahdaf fitness', 'ahdaf zakeya fitness', 'ahdaf el gym', 'ahdaf wa2e3eya', 'wad3 ahdaf', 'gadwal ahdaf'],
+    stateId: 'WK_MENU',
+    response: { en: 'Fitness Goal Setting (SMART): SPECIFIC: "Lose 5kg" not "lose weight". MEASURABLE: Track with numbers/photos. ACHIEVABLE: 0.5-1kg fat loss/week, 0.25-0.5kg muscle gain/month (natural). RELEVANT: Aligned with YOUR life (not someone else\'s). TIME-BOUND: "By June 1st" not "someday". REALISTIC TIMELINES: Visible abs: 3-12 months (depends on starting body fat). First pull-up: 4-8 weeks. Bench press bodyweight: 6-12 months. Lose 10kg: 3-5 months (healthy pace). Gain 5kg muscle: 6-12 months (beginner), 12-24 months (intermediate). MISTAKE: Setting too many goals. Pick ONE primary goal and 1-2 secondary. PROGRESS ISN\'T LINEAR: Expect plateaus, bad weeks, and setbacks. What matters is the overall trend over months, not daily fluctuations. Review and adjust goals every 4-6 weeks.', ar: 'تحديد أهداف الفيتنس (SMART): محدد: "خس 5 كيلو" مش "خس". قابل للقياس: تتبع بأرقام/صور. قابل للتحقيق: 0.5-1 كيلو دهون/أسبوع، 0.25-0.5 كيلو عضل/شهر (ناتشورال). مرتبط: متوافق مع حياتك (مش حياة حد تاني). محدد بوقت: "بحلول 1 يونيو" مش "يوم ما". جداول واقعية: أبز واضح: 3-12 شهر. أول عقلة: 4-8 أسابيع. بنش وزنك: 6-12 شهر. خسارة 10 كيلو: 3-5 شهور. اكتساب 5 كيلو عضل: 6-12 شهر (مبتدئ). غلطة: تحديد أهداف كتير. اختار هدف أساسي و1-2 ثانوي. التقدم مش خطي: توقع بلاتو وأسابيع صعبة. المهم الاتجاه العام على الشهور. راجع وعدل الأهداف كل 4-6 أسابيع.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v47: Progress Photos Guide ────────────────────────
+  {
+    keywords: ['progress photos', 'progress picture', 'body transformation photo', 'how to take progress photo', 'before after photo', 'track body changes', 'physique photo'],
+    keywordsAr: ['صور التقدم', 'صورة التحول', 'ازاي اصور تقدم', 'صور قبل وبعد', 'تتبع تغييرات الجسم', 'صور الفيزيك'],
+    keywordsFranco: ['sowar el ta2adom', 'soret el ta7awol', 'ezay asawer ta2adom', 'sowar 2abl w ba3d', 'tatabo3 taghyeerat el gesm'],
+    stateId: 'PR_MENU',
+    response: { en: 'Progress Photos Guide: WHY: The mirror lies (you see yourself daily, changes seem invisible). Photos are OBJECTIVE evidence. HOW: Same lighting, same location, same time of day (morning, fasted = most consistent), same poses (front relaxed, front flexed, side, back). FREQUENCY: Every 2-4 weeks (not daily!). TIPS: Natural lighting > gym lighting (gyms have flattering lights). Use a timer or phone tripod. Wear same underwear/shorts. POSES: Front relaxed, front double biceps, side chest, back double biceps, back lat spread. COMPARING: Put photos side by side (same month = same row). Look at 3-month intervals for real changes. DON\'T share on social media if it affects your mental health. These are FOR YOU. WEIGHT vs PHOTOS: Scale can stay same while body transforms (muscle replaces fat). Photos show what the scale can\'t.', ar: 'دليل صور التقدم: ليه: المراية بتكدب (بتشوف نفسك يومياً، التغييرات بتبان مش ملحوظة). الصور دليل موضوعي. إزاي: نفس الإضاءة، نفس المكان، نفس الوقت (الصبح صايم = أثبت)، نفس الأوضاع (أمام مرتاح، أمام فليكس، جنب، ورا). التكرار: كل 2-4 أسابيع (مش يومياً!). نصائح: إضاءة طبيعية > إضاءة الجيم (الجيمات فيها إضاءة حلوة). استخدم تايمر أو حامل. البس نفس الشورت. الأوضاع: أمام مرتاح، دبل بايسبس أمام، صدر جنب، دبل بايسبس ورا. المقارنة: حط الصور جنب بعض. شوف فترات 3 شهور للتغيير الحقيقي. الميزان ممكن يفضل ثابت والجسم يتغير (العضل بيحل محل الدهن). الصور بتوري اللي الميزان مش بيوريه.' },
+    priority: 7,
+    domain: 'progress',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
