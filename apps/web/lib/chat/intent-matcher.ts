@@ -6,8 +6,10 @@
  *
  * Supports: English, Arabic (Egyptian dialect), Franco-Arab (Arabizi)
  *
- * v6 — 200+ intent rules, compound queries, synonym expansion, follow-ups,
- *       food name detection, fitness Q&A, contextual Egyptian patterns
+ * v11 — 280+ intent rules, compound queries, synonym expansion, follow-ups,
+ *        food name detection, fitness Q&A, contextual Egyptian patterns,
+ *        portion-aware food parsing, cooking method queries, exercise alternatives,
+ *        deep nutrition/exercise/food coverage
  */
 
 export interface IntentMatch {
@@ -84,6 +86,27 @@ const TYPO_MAP: Record<string, string> = {
   'stomache': 'stomach', 'abdominals': 'abs', 'abdominal': 'abs',
   'sholders': 'shoulders', 'shouldrs': 'shoulders',
   'hamstirng': 'hamstring', 'harmstring': 'hamstring',
+  // Food typos
+  'chiken': 'chicken', 'chickin': 'chicken', 'chciken': 'chicken',
+  'brocoli': 'broccoli', 'brocolli': 'broccoli', 'broccolli': 'broccoli',
+  'avacado': 'avocado', 'avocato': 'avocado', 'avacato': 'avocado',
+  'bananana': 'banana', 'bannana': 'banana',
+  'yougurt': 'yogurt', 'yoghurt': 'yogurt', 'yougrt': 'yogurt',
+  'samon': 'salmon', 'salamon': 'salmon',
+  'omlet': 'omelette', 'omlette': 'omelette', 'omelet': 'omelette',
+  'snadwich': 'sandwich', 'sandwhich': 'sandwich', 'sanwich': 'sandwich',
+  'smoothe': 'smoothie', 'smootie': 'smoothie',
+  'qunioa': 'quinoa', 'qinoa': 'quinoa',
+  'koshri': 'koshari', 'kushary': 'koshari', 'kushri': 'koshari',
+  'molukhia': 'molokhia', 'molokhya': 'molokhia',
+  'hummous': 'hummus', 'homos': 'hummus', 'homus': 'hummus',
+  // Exercise typos
+  'burpees': 'burpee', 'birpee': 'burpee',
+  'plnk': 'plank', 'plnak': 'plank',
+  'luneg': 'lunge', 'longue': 'lunge',
+  'cruntch': 'crunch', 'curnch': 'crunch',
+  'shuolder': 'shoulder', 'bicpes': 'biceps', 'tirpceps': 'triceps',
+  'latreal': 'lateral', 'laterla': 'lateral',
   // App-related
   'subcription': 'subscription', 'subsciption': 'subscription',
   'prefernces': 'preferences', 'preferances': 'preferences',
@@ -255,6 +278,26 @@ const SYNONYMS: Record<string, string> = {
   'بطني': 'بطن', 'كرشي': 'بطن', 'كرش': 'بطن',
   'دراعي': 'دراع', 'رجلي': 'رجل', 'كتفي': 'كتف',
   'ضهري': 'ضهر', 'صدري': 'صدر',
+  // Food synonyms
+  'oatmeal': 'oats', 'porridge': 'oats',
+  'greek yogurt': 'yogurt', 'plain yogurt': 'yogurt',
+  'sweet potatoes': 'sweet potato', 'yams': 'sweet potato',
+  'protein powder': 'whey', 'whey protein': 'whey',
+  'mass gainer': 'whey', 'weight gainer': 'whey',
+  'breast': 'chicken breast', 'chicken breast': 'chicken',
+  'mince': 'ground beef', 'minced beef': 'ground beef', 'minced meat': 'ground beef',
+  'tuna can': 'tuna', 'canned tuna': 'tuna',
+  'skim milk': 'milk', 'whole milk': 'milk', 'low fat milk': 'milk',
+  'brown bread': 'whole wheat bread', 'white bread': 'bread',
+  'chips': 'fries', 'french fries': 'fries',
+  'soda': 'soft drink', 'pop': 'soft drink', 'cola': 'soft drink',
+  // Exercise synonyms
+  'chin ups': 'pull ups', 'wide grip pulldown': 'lat pulldown',
+  'seated row': 'cable row', 'low row': 'cable row',
+  'rope pushdown': 'tricep pushdown', 'v bar pushdown': 'tricep pushdown',
+  'leg raise': 'hanging leg raise', 'knee raise': 'hanging leg raise',
+  'hyper extension': 'back extension', 'back raise': 'back extension',
+  'glute ham raise': 'nordic curl', 'ghr': 'nordic curl',
   // Franco slang
   'batny': 'batn', 'karshy': 'batn', 'dra3y': 'dra3',
 };
@@ -295,18 +338,51 @@ const NEGATION_OVERRIDES: Array<{ pattern: RegExp; stateId: string; response: { 
 
 // ─── Common Exercise Names (for direct exercise search) ──────
 const EXERCISE_NAMES: string[] = [
+  // Compound lifts
   'bench press', 'squat', 'deadlift', 'overhead press', 'barbell row', 'pull up',
-  'lat pulldown', 'cable fly', 'dumbbell curl', 'hammer curl', 'tricep pushdown',
-  'skull crusher', 'leg press', 'leg extension', 'leg curl', 'calf raise',
-  'lateral raise', 'face pull', 'cable row', 't-bar row', 'pendlay row',
-  'romanian deadlift', 'hip thrust', 'lunges', 'lunge', 'step up',
-  'dips', 'push up', 'pushup', 'plank', 'crunch', 'sit up',
-  'cable crossover', 'pec deck', 'incline press', 'decline press',
-  'preacher curl', 'concentration curl', 'cable curl', 'tricep extension',
   'front squat', 'goblet squat', 'bulgarian split squat', 'hack squat',
   'good morning', 'rack pull', 'farmers walk', 'shrug', 'upright row',
   'arnold press', 'military press', 'clean and jerk', 'snatch', 'power clean',
+  'sumo deadlift', 'trap bar deadlift', 'deficit deadlift', 'pause squat',
+  // Chest
+  'cable fly', 'cable crossover', 'pec deck', 'incline press', 'decline press',
+  'dumbbell fly', 'incline dumbbell press', 'decline dumbbell press', 'chest dip',
+  'svend press', 'landmine press',
+  // Back
+  'lat pulldown', 'cable row', 't-bar row', 'pendlay row', 'bent over row',
+  'meadows row', 'seal row', 'chest supported row', 'single arm row',
+  'straight arm pulldown', 'pullover',
+  // Arms
+  'dumbbell curl', 'hammer curl', 'tricep pushdown', 'skull crusher',
+  'preacher curl', 'concentration curl', 'cable curl', 'tricep extension',
+  'bayesian curl', 'spider curl', 'incline curl', 'ez bar curl',
+  'overhead tricep extension', 'tricep kickback', 'close grip bench press',
+  'reverse curl', 'wrist curl', 'zottman curl',
+  // Legs
+  'leg press', 'leg extension', 'leg curl', 'calf raise',
+  'romanian deadlift', 'hip thrust', 'lunges', 'lunge', 'step up',
+  'walking lunge', 'reverse lunge', 'sissy squat', 'pistol squat',
+  'nordic curl', 'glute bridge', 'hip abduction', 'hip adduction',
+  'seated calf raise', 'donkey calf raise', 'leg press calf raise',
+  // Shoulders
+  'lateral raise', 'face pull', 'rear delt fly', 'front raise',
+  'cable lateral raise', 'reverse pec deck', 'lu raise',
+  // Core
+  'plank', 'crunch', 'sit up', 'russian twist', 'hanging leg raise',
+  'cable crunch', 'ab rollout', 'dead bug', 'pallof press',
+  'woodchopper', 'dragon flag', 'v up', 'bicycle crunch', 'toe touch',
+  'side plank', 'copenhagen plank',
+  // Bodyweight/Calisthenics
+  'dips', 'push up', 'pushup', 'diamond push up', 'pike push up',
+  'handstand push up', 'muscle up', 'l sit', 'pistol squat',
   'box jump', 'burpee', 'mountain climber', 'battle rope', 'kettlebell swing',
+  'jump squat', 'jump lunge', 'tuck jump', 'broad jump',
+  // Sport-specific
+  'sled push', 'sled pull', 'tire flip', 'rope climb', 'bear crawl',
+  'wall ball', 'thrusters', 'man maker', 'devil press',
+  // Mobility/Rehab
+  'band pull apart', 'wall slide', 'cat cow', 'bird dog', 'clamshell',
+  'fire hydrant', 'world greatest stretch', 'foam roll',
 ];
 
 function detectExerciseQuery(text: string): string | null {
@@ -321,22 +397,68 @@ function detectExerciseQuery(text: string): string | null {
 
 // ─── Common Food Names (for direct food search detection) ────
 const FOOD_NAMES: string[] = [
-  // Egyptian staples
-  'rice', 'chicken', 'eggs', 'egg', 'bread', 'beans', 'lentils', 'pasta', 'oats', 'milk',
-  'yogurt', 'cheese', 'tuna', 'salmon', 'beef', 'meat', 'fish', 'shrimp', 'turkey',
-  'potato', 'potatoes', 'sweet potato', 'banana', 'apple', 'orange', 'dates', 'avocado',
-  'peanut butter', 'almonds', 'nuts', 'honey', 'olive oil',
+  // Proteins
+  'chicken', 'chicken breast', 'chicken thigh', 'grilled chicken',
+  'eggs', 'egg', 'boiled eggs', 'scrambled eggs', 'fried eggs', 'egg whites',
+  'beef', 'meat', 'steak', 'ground beef', 'minced meat', 'liver',
+  'fish', 'salmon', 'tuna', 'tilapia', 'shrimp', 'prawns', 'sardines', 'mackerel',
+  'turkey', 'turkey breast', 'duck',
+  // Dairy
+  'milk', 'yogurt', 'greek yogurt', 'cheese', 'cottage cheese', 'cream cheese',
+  'mozzarella', 'cheddar', 'feta', 'labneh', 'butter', 'ghee',
+  // Grains & Carbs
+  'rice', 'brown rice', 'white rice', 'bread', 'whole wheat bread', 'toast',
+  'pasta', 'oats', 'oatmeal', 'quinoa', 'couscous', 'corn', 'tortilla',
+  'cereal', 'granola', 'rice cake',
+  // Legumes
+  'beans', 'lentils', 'chickpeas', 'hummus', 'black beans', 'kidney beans',
+  // Vegetables
+  'potato', 'potatoes', 'sweet potato', 'broccoli', 'spinach', 'kale',
+  'cucumber', 'tomato', 'lettuce', 'carrots', 'peppers', 'onion', 'garlic',
+  'zucchini', 'eggplant', 'cauliflower', 'green beans', 'peas', 'mushrooms',
+  'cabbage', 'celery', 'asparagus', 'beets',
+  // Fruits
+  'banana', 'apple', 'orange', 'dates', 'avocado', 'mango', 'watermelon',
+  'grapes', 'strawberry', 'blueberry', 'pineapple', 'kiwi', 'pomegranate',
+  'fig', 'guava', 'peach', 'pear', 'lemon', 'grapefruit', 'coconut',
+  // Nuts & Seeds
+  'peanut butter', 'almonds', 'nuts', 'walnuts', 'cashews', 'pistachios',
+  'chia seeds', 'flax seeds', 'sunflower seeds', 'pumpkin seeds', 'tahini',
+  // Fats & Oils
+  'honey', 'olive oil', 'coconut oil',
   // Egyptian dishes
   'foul', 'ful', 'koshari', 'koshary', 'taameya', 'falafel', 'molokhia', 'bamia',
   'mahshi', 'shawarma', 'kebab', 'kofta', 'feteer', 'hawawshi', 'besarah', 'fattah',
-  'roz bel laban', 'om ali', 'konafa', 'basbousa', 'fiteer',
+  'roz bel laban', 'om ali', 'konafa', 'basbousa', 'fiteer', 'kushari',
+  'ful medames', 'ta3meya', 'molokheya', 'macarona bechamel', 'mombar',
+  'kaware3', 'kabab halla', 'torly', 'shakshuka', 'menemen',
+  // Egyptian street food
+  'batates', 'sweet corn', 'tirmis', 'sobia', 'kharoub', 'tamr hindi',
+  'sugarcane juice', 'licorice', 'sahlab', 'halabessa',
+  // Egyptian desserts
+  'kunafa', 'qatayef', 'zalabya', 'balah el sham', 'baklava', 'halawa',
+  'meshabek', 'gullash', 'rice pudding',
+  // Fast food
+  'pizza', 'burger', 'fries', 'fried chicken', 'nuggets', 'hot dog',
+  'sandwich', 'wrap', 'sub', 'sushi', 'ramen',
+  // Drinks
+  'coffee', 'tea', 'green tea', 'juice', 'smoothie', 'protein shake',
+  'water', 'lemonade', 'hibiscus', 'karkade',
   // Supplements
   'whey', 'casein', 'bcaa', 'glutamine', 'multivitamin', 'omega 3', 'fish oil',
-  'zinc', 'vitamin d', 'vitamin c', 'magnesium', 'collagen',
+  'zinc', 'vitamin d', 'vitamin c', 'magnesium', 'collagen', 'creatine',
+  'pre workout', 'mass gainer', 'protein bar',
   // Arabic food names
   'فول', 'كشري', 'طعمية', 'ملوخية', 'بامية', 'محشي', 'شاورما', 'كباب', 'كفتة',
   'فتة', 'أرز', 'فراخ', 'بيض', 'عيش', 'جبنة', 'زبادي', 'تونة', 'لحمة', 'سمك',
   'بطاطس', 'موز', 'تفاح', 'برتقال', 'بلح', 'عسل', 'شوفان', 'لبن', 'مكرونة',
+  'فتير', 'حواوشي', 'كنافة', 'بسبوسة', 'قطايف', 'بقلاوة', 'أم علي',
+  'شكشوكة', 'فول مدمس', 'بصارة', 'ممبار', 'كوارع', 'مسقعة',
+  'سلطة', 'فاكهة', 'خضار', 'ورق عنب', 'بابا غنوج',
+  'كبدة', 'سجق', 'بسطرمة', 'لانشون', 'جمبري', 'كابوريا',
+  'دقة', 'مش', 'حلاوة طحينية', 'عسل اسود',
+  // Franco food names
+  'fool', 'koshary', 'ta3meya', 'molo5eya', 'ma7shy', 'konafa',
 ];
 
 function detectFoodQuery(text: string): string | null {
@@ -350,6 +472,120 @@ function detectFoodQuery(text: string): string | null {
   // "how many calories in X" pattern — extract X
   const calorieIn = lower.match(/(?:calories? in|سعرات? في|كام سعر(?:ة)? في)\s+(.+)/);
   if (calorieIn) return calorieIn[1].trim();
+  return null;
+}
+
+// ─── Portion-Aware Food Parsing ─────────────────────────────────
+// Detects "3 eggs", "200g chicken", "a plate of koshari", "كيلو فراخ"
+interface FoodPortion {
+  food: string;
+  quantity?: string;
+  unit?: string;
+}
+
+function parseFoodPortion(text: string): FoodPortion | null {
+  const lower = text.toLowerCase();
+
+  // Pattern: <number> <unit> <food> → "200g chicken", "500ml milk", "2 scoops whey"
+  const numUnitFood = lower.match(/(\d+(?:\.\d+)?)\s*(g|gm|gram|grams|kg|kilo|ml|liter|litre|cup|cups|tbsp|tsp|scoop|scoops|piece|pieces|slice|slices|plate|plates|serving|servings|حتة|حتت|طبق|معلقة|كوب|كيلو|جرام)\s+(?:of\s+)?(.+)/);
+  if (numUnitFood) {
+    const food = numUnitFood[3].trim();
+    if (FOOD_NAMES.some(f => food.includes(f) || f.includes(food))) {
+      return { food, quantity: numUnitFood[1], unit: numUnitFood[2] };
+    }
+  }
+
+  // Pattern: <number> <food> → "3 eggs", "2 bananas"
+  const numFood = lower.match(/^(\d+)\s+(.+)/);
+  if (numFood) {
+    const food = numFood[2].trim();
+    if (FOOD_NAMES.some(f => food.includes(f) || f.includes(food))) {
+      return { food, quantity: numFood[1] };
+    }
+  }
+
+  // Pattern: "a/an <food>" → "a banana", "an apple"
+  const aFood = lower.match(/^(?:a|an)\s+(.+)/);
+  if (aFood) {
+    const food = aFood[1].trim();
+    if (FOOD_NAMES.some(f => food.includes(f) || f.includes(food))) {
+      return { food, quantity: '1' };
+    }
+  }
+
+  // Arabic: "طبق كشري", "كيلو فراخ", "٣ بيضات"
+  const arPortion = text.match(/(\d+|[٠-٩]+)\s*(.+)/);
+  if (arPortion) {
+    const food = arPortion[2].trim();
+    if (FOOD_NAMES.some(f => food.includes(f) || f.includes(food))) {
+      return { food, quantity: arPortion[1] };
+    }
+  }
+
+  return null;
+}
+
+// ─── Cooking Method Detection ────────────────────────────────────
+// "grilled vs fried chicken", "boiled eggs or scrambled", "مشوي ولا مقلي"
+const COOKING_METHODS: Record<string, string> = {
+  'grilled': 'grilled', 'grilling': 'grilled', 'مشوي': 'grilled',
+  'fried': 'fried', 'frying': 'fried', 'deep fried': 'fried', 'مقلي': 'fried',
+  'boiled': 'boiled', 'مسلوق': 'boiled',
+  'baked': 'baked', 'في الفرن': 'baked',
+  'steamed': 'steamed', 'مطهي بالبخار': 'steamed',
+  'raw': 'raw', 'ني': 'raw',
+  'roasted': 'roasted', 'محمص': 'roasted',
+  'sauteed': 'sauteed', 'مشوح': 'sauteed',
+  'air fried': 'air fried', 'اير فراير': 'air fried',
+};
+
+function detectCookingMethodQuery(text: string): { method1: string; method2?: string; food?: string } | null {
+  const lower = text.toLowerCase();
+  // "grilled vs fried chicken" or "مشوي ولا مقلي فراخ"
+  const vsMatch = lower.match(/(\w+)\s+(?:vs|versus|or|ولا|wala|vs\.)\s+(\w+)\s*(.*)/);
+  if (vsMatch) {
+    const m1 = COOKING_METHODS[vsMatch[1]];
+    const m2 = COOKING_METHODS[vsMatch[2]];
+    if (m1 && m2) return { method1: m1, method2: m2, food: vsMatch[3]?.trim() || undefined };
+  }
+  // "is grilled chicken healthier" or "calories in fried eggs"
+  for (const [keyword, method] of Object.entries(COOKING_METHODS)) {
+    if (lower.includes(keyword)) {
+      const foodAfter = lower.split(keyword)[1]?.trim();
+      if (foodAfter) {
+        const food = FOOD_NAMES.find(f => foodAfter.includes(f));
+        if (food) return { method1: method, food };
+      }
+    }
+  }
+  return null;
+}
+
+// ─── Exercise Alternative Detection ──────────────────────────────
+// "easier than deadlift", "alternative to bench press", "بديل للسكوات"
+function detectExerciseAlternative(text: string): { exercise: string; type: 'easier' | 'harder' | 'alternative' } | null {
+  const lower = text.toLowerCase();
+  // "easier than X", "alternative to X", "can't do X"
+  const easierMatch = lower.match(/(?:easier|simpler|lighter|beginner|اسهل|أسهل|بديل أسهل)\s+(?:than|for|version|من)\s+(.+)/);
+  if (easierMatch) {
+    const ex = EXERCISE_NAMES.find(e => easierMatch[1].includes(e));
+    if (ex) return { exercise: ex, type: 'easier' };
+  }
+  const harderMatch = lower.match(/(?:harder|advanced|heavier|اصعب|أصعب|بديل أصعب)\s+(?:than|version|من)\s+(.+)/);
+  if (harderMatch) {
+    const ex = EXERCISE_NAMES.find(e => harderMatch[1].includes(e));
+    if (ex) return { exercise: ex, type: 'harder' };
+  }
+  const altMatch = lower.match(/(?:alternative|replace|substitute|instead of|swap|بديل|بديل لـ|بدل)\s+(?:to|for|of)?\s*(.+)/);
+  if (altMatch) {
+    const ex = EXERCISE_NAMES.find(e => altMatch[1].includes(e));
+    if (ex) return { exercise: ex, type: 'alternative' };
+  }
+  const cantMatch = lower.match(/(?:can'?t do|unable to|مش قادر|مقدرش)\s+(.+)/);
+  if (cantMatch) {
+    const ex = EXERCISE_NAMES.find(e => cantMatch[1].includes(e));
+    if (ex) return { exercise: ex, type: 'easier' };
+  }
   return null;
 }
 
@@ -1836,6 +2072,316 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ══════════════════════════════════════════════════════════
+  // ── Deep Nutrition Coverage (v11) ──────────────────────────
+  // ══════════════════════════════════════════════════════════
+  {
+    keywords: ['lunch ideas', 'what for lunch', 'lunch meal', 'lunch options'],
+    keywordsAr: ['غدا ايه', 'اتغدى ايه', 'وجبة غدا'],
+    keywordsFranco: ['ghadda eh', 'etghadda eh', 'lunch'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Lunch ideas:', ar: 'أفكار غدا:' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['dinner ideas', 'what for dinner', 'dinner meal', 'dinner options', 'evening meal'],
+    keywordsAr: ['عشا ايه', 'اتعشى ايه', 'وجبة عشا'],
+    keywordsFranco: ['3asha eh', 'et3asha eh', 'dinner'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Dinner ideas:', ar: 'أفكار عشا:' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['food for energy', 'energy foods', 'need energy', 'feel weak', 'low energy food'],
+    keywordsAr: ['أكل للطاقة', 'محتاج طاقة', 'حاسس بضعف'],
+    keywordsFranco: ['akl lel ta2a', 'me7tag ta2a'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Energy-boosting foods: complex carbs (oats, sweet potato), bananas, dates, nuts. Need something quick or a full meal?', ar: 'أكل يزود الطاقة: كربوهيدرات معقدة (شوفان، بطاطا)، موز، بلح، مكسرات. محتاج حاجة سريعة ولا وجبة كاملة؟' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['bloated', 'bloating', 'gas', 'stomach issues', 'digestion', 'digestive problems'],
+    keywordsAr: ['انتفاخ', 'غازات', 'هضم', 'معدتي'],
+    keywordsFranco: ['ente5a5', 'ghazat', 'hadm', 'ma3dety'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'For bloating: avoid carbonated drinks, eat slowly, reduce dairy if intolerant, try ginger tea. High-fiber foods help long-term.', ar: 'للانتفاخ: تجنب المشروبات الغازية، كل ببطء، قلل الألبان لو عندك حساسية، جرب شاي الزنجبيل. الألياف بتساعد على المدى الطويل.' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['high fiber', 'fiber foods', 'constipation', 'need fiber'],
+    keywordsAr: ['ألياف', 'أكل فيه ألياف', 'امساك'],
+    keywordsFranco: ['alyaf', 'emsak'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'High-fiber foods: oats, beans, lentils, broccoli, berries, whole grains, chia seeds. Aim for 25-35g/day.', ar: 'أكل فيه ألياف: شوفان، فول، عدس، بروكلي، توت، حبوب كاملة، بذور شيا. حاول 25-35 جرام يومياً.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['iron rich', 'iron foods', 'anemia', 'low iron'],
+    keywordsAr: ['حديد', 'أكل فيه حديد', 'انيميا'],
+    keywordsFranco: ['7adid', 'anemia'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Iron-rich foods: red meat, liver, spinach, lentils, eggs, dark chocolate. Pair with vitamin C for better absorption!', ar: 'أكل فيه حديد: لحمة حمرا، كبدة، سبانخ، عدس، بيض، شوكولاتة دارك. كل معاهم فيتامين سي للامتصاص!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['calcium', 'calcium foods', 'bones', 'bone health'],
+    keywordsAr: ['كالسيوم', 'أكل فيه كالسيوم', 'عظام'],
+    keywordsFranco: ['calcium', '3edam'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Calcium-rich: milk, yogurt, cheese, sardines (with bones), broccoli, almonds, fortified foods.', ar: 'غني بالكالسيوم: لبن، زبادي، جبنة، سردين (بالعظم)، بروكلي، لوز، أكل مدعم.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['healthy fats', 'good fats', 'omega', 'fat sources'],
+    keywordsAr: ['دهون صحية', 'دهون مفيدة', 'أوميجا'],
+    keywordsFranco: ['do7oon se7ya', 'omega'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Healthy fats: avocado, olive oil, nuts, salmon, eggs, dark chocolate. 20-35% of daily calories should come from fat.', ar: 'دهون صحية: أفوكادو، زيت زيتون، مكسرات، سلمون، بيض، شوكولاتة دارك. 20-35% من سعراتك لازم من الدهون.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['complex carbs', 'good carbs', 'slow carbs', 'carb sources'],
+    keywordsAr: ['كربوهيدرات معقدة', 'كارب مفيد', 'مصادر كارب'],
+    keywordsFranco: ['carb mofid', 'complex carbs'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Best carb sources: oats, sweet potato, brown rice, quinoa, whole wheat bread, beans, lentils. These digest slowly and keep you full.', ar: 'أحسن مصادر كارب: شوفان، بطاطا حلوة، أرز بني، كينوا، عيش سن، فول، عدس. بتتهضم ببطء وبتشبعك.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['protein sources', 'where to get protein', 'protein foods list', 'best protein foods'],
+    keywordsAr: ['مصادر بروتين', 'بروتين منين', 'أكل فيه بروتين'],
+    keywordsFranco: ['masader protein', 'protein mnin'],
+    stateId: 'NT_HIGH_PROTEIN',
+    response: { en: 'Top protein sources: chicken (31g/100g), eggs (6g each), tuna (26g/can), Greek yogurt (10g/cup), lentils (9g/cup), cottage cheese (14g/cup).', ar: 'أفضل مصادر بروتين: فراخ (31جم/100جم)، بيض (6جم لكل واحدة)، تونة (26جم/علبة)، زبادي يوناني (10جم/كوب)، عدس (9جم/كوب)، جبنة قريش (14جم/كوب).' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['how to count macros', 'macro counting', 'track macros', 'count calories'],
+    keywordsAr: ['ازاي احسب الماكرو', 'حساب الماكرو', 'ازاي اعد سعرات'],
+    keywordsFranco: ['ezay a7seb el macros', '7esab el macros'],
+    stateId: 'NT_CALC',
+    response: { en: 'Quick macro guide: 1) Calculate TDEE 2) Set protein (2g/kg body weight) 3) Set fat (25% of cals) 4) Fill rest with carbs. Use our tracker to log!', ar: 'دليل سريع: 1) احسب TDEE 2) حدد بروتين (2جم/كيلو وزن) 3) حدد دهون (25% من السعرات) 4) الباقي كارب. استخدم التراكر بتاعنا!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['refeed', 'refeed day', 'carb refeed', 'high carb day', 'diet break'],
+    keywordsAr: ['ريفيد', 'يوم كارب عالي', 'بريك دايت'],
+    keywordsFranco: ['refeed', 'yom carb 3aly'],
+    stateId: 'NT_PLAN_MENU',
+    response: { en: 'Refeed days: eat at maintenance or slight surplus with high carbs (60%+). Helps leptin, mood, and gym performance. Usually 1-2x/week during a cut.', ar: 'أيام الريفيد: كل عند الصيانة أو فوقها شوية مع كارب عالي (60%+). بيساعد في اللبتين والمزاج والأداء. عادةً 1-2 مرة في الأسبوع وقت الكت.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['water weight', 'water retention', 'retaining water', 'puffy', 'weight fluctuation'],
+    keywordsAr: ['مية زيادة', 'احتباس مية', 'وزني زاد فجأة'],
+    keywordsFranco: ['mayya zeyada', 'e7tebas mayya'],
+    stateId: 'PR_MENU',
+    response: { en: 'Water weight fluctuates 1-3 kg daily. High sodium, carbs, stress, and menstrual cycle cause it. Don\'t panic — track weekly averages instead.', ar: 'وزن المية بيتغير 1-3 كيلو يومياً. الملح والكارب والضغط بيسببوا ده. متقلقش — تابع المتوسط الأسبوعي.' },
+    priority: 7,
+    domain: 'progress',
+  },
+  {
+    keywords: ['meal timing', 'when to eat', 'eating window', 'nutrient timing'],
+    keywordsAr: ['مواعيد الأكل', 'آكل امتى', 'نافذة الأكل'],
+    keywordsFranco: ['mawa3id el akl', 'akol emta'],
+    stateId: 'NT_PLAN_MENU',
+    response: { en: 'Meal timing tips: 1) Pre-workout: carbs + protein 1-2h before 2) Post-workout: protein within 2h 3) Space meals 3-4h apart 4) Total daily intake matters most!', ar: 'نصايح مواعيد الأكل: 1) قبل التمرين: كارب + بروتين قبلها 1-2 ساعة 2) بعد التمرين: بروتين خلال ساعتين 3) فرق بين الوجبات 3-4 ساعات 4) المجموع اليومي أهم حاجة!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['food allergy', 'lactose intolerant', 'gluten free', 'dairy free', 'allergies'],
+    keywordsAr: ['حساسية أكل', 'حساسية لاكتوز', 'خالي من الجلوتين', 'حساسية'],
+    keywordsFranco: ['7asaseya akl', 'lactose', 'gluten free'],
+    stateId: 'NT_ALTERNATIVES',
+    response: { en: 'I can help find alternatives! What are you allergic to or avoiding? Dairy-free, gluten-free, nut-free — we have options.', ar: 'أقدر أساعدك تلاقي بدائل! عندك حساسية من ايه؟ بدون ألبان، بدون جلوتين، بدون مكسرات — عندنا خيارات.' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['vegan', 'vegetarian', 'plant based', 'no meat', 'vegan protein'],
+    keywordsAr: ['نباتي', 'بدون لحوم', 'بروتين نباتي'],
+    keywordsFranco: ['nabaty', 'vegan', 'plant based'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Plant-based protein sources: lentils (18g/cup), chickpeas (15g/cup), tofu (20g/cup), tempeh (31g/cup), quinoa (8g/cup), nuts, seeds. Combine for complete amino acids!', ar: 'مصادر بروتين نباتي: عدس (18جم/كوب)، حمص (15جم/كوب)، توفو (20جم/كوب)، كينوا (8جم/كوب)، مكسرات، بذور. نوع بينهم للأحماض الأمينية الكاملة!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['grocery list', 'shopping list', 'what to buy', 'supermarket', 'food to buy'],
+    keywordsAr: ['قائمة مشتريات', 'اشتري ايه', 'السوبر ماركت', 'هشتري ايه'],
+    keywordsFranco: ['2a2emet moshtaryat', 'eshtary eh', 'supermarket'],
+    stateId: 'NT_PLAN_MENU',
+    response: { en: 'Fitness grocery essentials: chicken breast, eggs, oats, rice, sweet potato, broccoli, bananas, nuts, Greek yogurt, olive oil. Want a detailed weekly list?', ar: 'أساسيات شراء الفتنس: صدور فراخ، بيض، شوفان، أرز، بطاطا حلوة، بروكلي، موز، مكسرات، زبادي يوناني، زيت زيتون. عايز قائمة أسبوعية مفصلة؟' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['eat out', 'eating out', 'restaurant', 'restaurant food', 'dining out'],
+    keywordsAr: ['آكل برا', 'مطعم', 'أكل مطاعم', 'هآكل برا'],
+    keywordsFranco: ['akol barra', 'mat3am', 'akl mata3em'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Eating out tips: Choose grilled over fried. Ask for sauce on the side. Skip the bread basket. Pick protein + veggies. Track your best estimate!', ar: 'نصايح الأكل برا: اختار مشوي مش مقلي. اطلب الصوص على جنب. سيب العيش. اختار بروتين + خضار. سجل أقرب تقدير!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  // ── Deep Exercise Coverage (v11) ──────────────────────────
+  // ══════════════════════════════════════════════════════════
+  {
+    keywords: ['trx', 'trx exercises', 'suspension training', 'suspension exercises'],
+    keywordsAr: ['تي ار اكس', 'تمارين تعليق'],
+    keywordsFranco: ['trx', 'suspension'],
+    stateId: 'WK_FIND_EQUIP',
+    route: '/exercises?equipment=TRX',
+    response: { en: 'TRX / Suspension exercises:', ar: 'تمارين الـ TRX:' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['smith machine', 'smith exercises'],
+    keywordsAr: ['سميث', 'مكنة سميث'],
+    keywordsFranco: ['smith machine', 'smith'],
+    stateId: 'WK_FIND_EQUIP',
+    route: '/exercises?equipment=SMITH_MACHINE',
+    response: { en: 'Smith machine exercises:', ar: 'تمارين مكنة السميث:' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['full body workout', 'total body', 'full body routine'],
+    keywordsAr: ['تمرين كل الجسم', 'فل بودي'],
+    keywordsFranco: ['full body', 'tamreen kol el gesm'],
+    stateId: 'WK_CREATE',
+    response: { en: "Full body workouts hit everything in one session — great for 3x/week schedules:", ar: 'تمارين الفل بودي بتشتغل على كل حاجة في جلسة واحدة — ممتازة لجداول 3 مرات في الأسبوع:' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['upper body', 'upper body workout', 'upper day'],
+    keywordsAr: ['جزء علوي', 'تمرين علوي', 'يوم علوي'],
+    keywordsFranco: ['upper body', 'yom 3olwy'],
+    stateId: 'WK_CREATE',
+    response: { en: 'Upper body day: chest, back, shoulders, arms all in one session:', ar: 'يوم الجزء العلوي: صدر، ضهر، كتف، دراع في جلسة واحدة:' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['lower body', 'lower body workout', 'lower day'],
+    keywordsAr: ['جزء سفلي', 'تمرين سفلي', 'يوم سفلي'],
+    keywordsFranco: ['lower body', 'yom sofly'],
+    stateId: 'WK_CREATE',
+    response: { en: 'Lower body day: quads, hamstrings, glutes, calves:', ar: 'يوم الجزء السفلي: أمامية، خلفية، جلوت، سمانة:' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['muscle mind connection', 'mind muscle', 'feel the muscle', 'activation'],
+    keywordsAr: ['الاحساس بالعضلة', 'مش حاسس بالعضلة', 'تفعيل العضلة'],
+    keywordsFranco: ['el e7sas bel 3adala', 'msh 7ases bel 3adala'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: 'Tips for mind-muscle connection: 1) Lighter weight, slower reps 2) Squeeze at peak contraction 3) Watch the muscle in mirror 4) Touch the muscle during sets.', ar: 'نصايح للإحساس بالعضلة: 1) وزن أخف، تكرارات أبطأ 2) اعصر عند القمة 3) اتفرج على العضلة في المرايا 4) امسك العضلة وأنت بتتمرن.' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['progressive overload', 'how to get stronger', 'increase weight', 'progress in gym'],
+    keywordsAr: ['زيادة تدريجية', 'ازاي ازود الوزن', 'التقدم في الجيم'],
+    keywordsFranco: ['progressive overload', 'ezay azawed el wazn'],
+    stateId: 'WK_MENU',
+    response: { en: 'Progressive overload methods: 1) Add weight (2.5kg) 2) Add reps 3) Add sets 4) Slow the tempo 5) Reduce rest time. Aim for small progress weekly!', ar: 'طرق الزيادة التدريجية: 1) زود وزن (2.5 كيلو) 2) زود تكرارات 3) زود سيتات 4) بطّء السرعة 5) قلل الراحة. استهدف تقدم صغير كل أسبوع!' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['chest not growing', 'weak chest', 'chest lagging', 'flat chest'],
+    keywordsAr: ['صدري مش بيكبر', 'صدري ضعيف'],
+    keywordsFranco: ['sadry msh byekbar', 'sadry da3if'],
+    stateId: 'WK_FIND_MUSCLE',
+    route: '/exercises?muscle=CHEST',
+    response: { en: 'Chest growth tips: 1) Focus on stretch at bottom 2) Try incline dumbbell press 3) Cable flies for constant tension 4) Slow eccentric (3-sec negative)', ar: 'نصايح لنمو الصدر: 1) ركز على الاستطالة في الأسفل 2) جرب انكلاين دمبل 3) كابل فلاي للضغط المستمر 4) تكرار بطيء (3 ثوان نزول)' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['back not growing', 'weak back', 'back lagging', 'narrow back', 'wider back', 'v taper'],
+    keywordsAr: ['ضهري مش بيكبر', 'ضهري ضعيف', 'عايز ضهر عريض'],
+    keywordsFranco: ['dahry msh byekbar', 'dahry da3if', '3ayez dahr 3arid'],
+    stateId: 'WK_FIND_MUSCLE',
+    route: '/exercises?muscle=BACK',
+    response: { en: 'Back width: lat pulldowns, pull-ups, wide rows. Back thickness: barbell rows, T-bar rows, deadlifts. Focus on pulling with elbows, not hands!', ar: 'عرض الضهر: لات بولداون، عقلة، تجديف واسع. سُمك الضهر: باربل رو، T-بار رو، ديدلفت. ركز على الشد بالكوع مش الإيد!' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['arms not growing', 'weak arms', 'bigger arms', 'arm size', 'grow arms'],
+    keywordsAr: ['دراعي مش بيكبر', 'دراعي ضعيف', 'عايز دراع كبير'],
+    keywordsFranco: ['dra3y msh byekbar', '3ayez dra3 kbir'],
+    stateId: 'WK_FIND_MUSCLE',
+    route: '/exercises?muscle=BICEPS',
+    response: { en: 'Arm growth: triceps are 2/3 of arm size! Hit both: heavy compounds (close-grip bench, dips) + isolation (curls, pushdowns). Train arms 2-3x/week.', ar: 'نمو الدراع: التراي ⅔ من حجم الدراع! اشتغل على الاتنين: مركبات ثقيلة (بنش ضيق، ديبس) + عزل (كيرل، بوشداون). مرن الدراع 2-3 مرات في الأسبوع.' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['shoulder pain', 'shoulder hurts', 'rotator cuff', 'shoulder injury'],
+    keywordsAr: ['كتفي بيوجعني', 'ألم كتف', 'إصابة كتف'],
+    keywordsFranco: ['ketfy byewga3ny', 'alam ketf'],
+    stateId: 'WK_SKIP_INJURY',
+    response: { en: 'Shoulder pain: 1) Skip overhead pressing temporarily 2) Do band pull-aparts & face pulls daily 3) Strengthen rotator cuff 4) See a physiotherapist if persistent.', ar: 'وجع الكتف: 1) سيب الأوفرهيد مؤقتاً 2) اعمل باند بول أبارت وفيس بول يومياً 3) قوّي الروتيتور كف 4) روح لعلاج طبيعي لو مستمر.' },
+    priority: 9,
+    domain: 'workout',
+  },
+  {
+    keywords: ['knee pain', 'knee hurts', 'knee injury', 'bad knees'],
+    keywordsAr: ['ركبتي بتوجعني', 'ألم ركبة'],
+    keywordsFranco: ['rokbety betwga3ny', 'alam rokba'],
+    stateId: 'WK_SKIP_INJURY',
+    response: { en: 'Knee pain: 1) Skip deep squats temporarily 2) Do leg press with limited range 3) Strengthen VMO (terminal knee extensions) 4) See a physio if it persists.', ar: 'وجع الركبة: 1) سيب السكوات العميق مؤقتاً 2) ليج بريس بمدى محدود 3) قوّي العضلة فوق الركبة 4) روح لعلاج طبيعي لو مستمر.' },
+    priority: 9,
+    domain: 'workout',
+  },
+  {
+    keywords: ['lower back pain', 'back pain', 'back hurts', 'spine'],
+    keywordsAr: ['ضهري بيوجعني', 'ألم في الضهر', 'أسفل الضهر'],
+    keywordsFranco: ['dahry byewga3ny', 'alam fel dahr'],
+    stateId: 'WK_SKIP_INJURY',
+    response: { en: 'Lower back pain: 1) Stop deadlifts/squats temporarily 2) Do cat-cow, bird-dog, dead bugs daily 3) Strengthen core 4) Check your bracing technique. See a doctor if severe.', ar: 'وجع أسفل الضهر: 1) وقف ديدلفت/سكوات مؤقتاً 2) اعمل كات-كاو، بيرد-دوج، ديد باجز يومياً 3) قوّي الكور 4) شيك على البريسينج بتاعك. روح لدكتور لو شديد.' },
+    priority: 9,
+    domain: 'workout',
+  },
+  {
+    keywords: ['how to warm up for', 'warmup for', 'warm up before squat', 'warm up before deadlift', 'warm up before bench'],
+    keywordsAr: ['تسخين قبل', 'ازاي اسخن'],
+    keywordsFranco: ['tas5in 2abl', 'ezay asa5an'],
+    stateId: 'WK_PRE',
+    response: { en: 'Warm-up protocol: 5 min light cardio → dynamic stretches → 2-3 warm-up sets (50%, 70%, 85% of working weight). Never skip warm-ups!', ar: 'بروتوكول التسخين: 5 دقايق كارديو خفيف → استطالة ديناميكية → 2-3 سيتات تسخين (50%، 70%، 85% من وزن التمرين). متفوتش التسخين أبداً!' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['train fasted', 'fasted workout', 'workout empty stomach', 'train hungry'],
+    keywordsAr: ['اتمرن صايم', 'تمرين وأنا صايم', 'اتمرن على معدة فاضية'],
+    keywordsFranco: ['at2amen sayem', 'tamreen wa ana sayem'],
+    stateId: 'NT_PRE_WORKOUT',
+    response: { en: 'Fasted training is fine for light cardio but not ideal for heavy lifting. If you must, have BCAAs or a small protein shake. Better: eat a small meal 1h before.', ar: 'التمرين صايم ماشي للكارديو الخفيف بس مش مثالي للأوزان. لو لازم، خد BCAAs أو شيك بروتين صغير. أحسن: كل وجبة صغيرة قبلها بساعة.' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
@@ -2171,6 +2717,56 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   const timeResult = handleTimeQuery(normalized, /[\u0600-\u06FF]/.test(text));
   if (timeResult) return timeResult;
 
+  // ── Exercise alternative detection: "easier than deadlift", "can't do pull ups"
+  const altQuery = detectExerciseAlternative(stripped);
+  if (altQuery) {
+    const typeLabel = altQuery.type === 'easier' ? 'easier alternatives' : altQuery.type === 'harder' ? 'advanced variations' : 'alternatives';
+    const typeLabelAr = altQuery.type === 'easier' ? 'بدائل أسهل' : altQuery.type === 'harder' ? 'تمارين أصعب' : 'بدائل';
+    return {
+      stateId: 'WK_FIND',
+      confidence: 0.8,
+      action: { type: 'navigate', route: `/exercises?search=${encodeURIComponent(altQuery.exercise)}` },
+      response: { en: `Finding ${typeLabel} for ${altQuery.exercise}:`, ar: `بدور على ${typeLabelAr} لـ ${altQuery.exercise}:` },
+    };
+  }
+
+  // ── Cooking method comparison: "grilled vs fried chicken"
+  const cookQuery = detectCookingMethodQuery(stripped);
+  if (cookQuery) {
+    const foodName = cookQuery.food || 'food';
+    if (cookQuery.method2) {
+      return {
+        stateId: 'NT_SEARCH',
+        confidence: 0.8,
+        action: { type: 'navigate', route: `/nutrition?search=${encodeURIComponent(cookQuery.method1 + ' ' + foodName)}` },
+        response: {
+          en: `${cookQuery.method1} is almost always lower calorie than ${cookQuery.method2}. Grilled/baked > fried. Let me show the numbers:`,
+          ar: `${cookQuery.method1} تقريباً دايماً سعرات أقل من ${cookQuery.method2}. مشوي/في الفرن > مقلي. خليني اوريك الأرقام:`,
+        },
+      };
+    }
+    return {
+      stateId: 'NT_SEARCH',
+      confidence: 0.75,
+      action: { type: 'navigate', route: `/nutrition?search=${encodeURIComponent(cookQuery.method1 + ' ' + foodName)}` },
+      response: { en: `Looking up ${cookQuery.method1} ${foodName}:`, ar: `بدور على ${foodName} ${cookQuery.method1}:` },
+    };
+  }
+
+  // ── Portion-aware food parsing: "3 eggs", "200g chicken"
+  const portionQuery = parseFoodPortion(stripped);
+  if (portionQuery && !extractedParams.weight && !extractedParams.water_ml) {
+    const unitStr = portionQuery.unit ? ` ${portionQuery.unit}` : '';
+    const qtyStr = portionQuery.quantity || '';
+    return {
+      stateId: 'NT_LOG_MEAL',
+      confidence: 0.8,
+      action: { type: 'navigate', route: `/nutrition?search=${encodeURIComponent(portionQuery.food)}` },
+      response: { en: `Got it! ${qtyStr}${unitStr} ${portionQuery.food} — let me log that:`, ar: `تمام! ${qtyStr}${unitStr} ${portionQuery.food} — هسجلها:` },
+      extractedParams: { food: portionQuery.food, quantity: qtyStr, unit: portionQuery.unit || '' },
+    };
+  }
+
   // ── Direct exercise name → route to exercise search
   const exerciseQuery = detectExerciseQuery(stripped);
   if (exerciseQuery) {
@@ -2345,6 +2941,16 @@ function generateTip(stateId: string, domain?: string): { en: string; ar: string
       tip: { en: 'Tip: Drink 500ml water first thing in the morning to kickstart hydration.', ar: 'نصيحة: اشرب 500مل مية أول ما تصحى علشان تبدأ الترطيب.' } },
     { condition: () => domain === 'supplements',
       tip: { en: 'Tip: Supplements support a good diet — they don\'t replace it.', ar: 'نصيحة: المكملات بتدعم الأكل الكويس — مش بتبدله.' } },
+    { condition: () => domain === 'nutrition' && stateId.includes('SUGGEST'),
+      tip: { en: 'Tip: Eat the rainbow — different colored foods provide different micronutrients.', ar: 'نصيحة: كل ألوان مختلفة — كل لون فيه فيتامينات مختلفة.' } },
+    { condition: () => domain === 'nutrition' && stateId.includes('EGYPTIAN'),
+      tip: { en: 'Tip: Egyptian foul (ful) has ~13g protein per cup — great cheap protein source!', ar: 'نصيحة: الفول فيه ~13 جرام بروتين في الكوب — مصدر بروتين رخيص وممتاز!' } },
+    { condition: () => domain === 'workout' && stateId.includes('FIND'),
+      tip: { en: 'Tip: Compound exercises give you more bang for your buck — squats, deadlifts, bench, rows.', ar: 'نصيحة: التمارين المركبة بتشتغل على عضلات أكتر — سكوات، ديدلفت، بنش، رو.' } },
+    { condition: () => domain === 'workout' && stateId.includes('FORM'),
+      tip: { en: 'Tip: Film yourself from the side to check your form. Small fixes = big gains.', ar: 'نصيحة: صوّر نفسك من الجنب وشيك على الفورم. تعديلات صغيرة = مكاسب كبيرة.' } },
+    { condition: () => stateId.includes('MEAL') || stateId.includes('FOOD'),
+      tip: { en: 'Tip: Chewing slowly helps digestion and makes you feel fuller with less food.', ar: 'نصيحة: المضغ ببطء بيساعد في الهضم وبيخليك تشبع من أكل أقل.' } },
   ];
 
   const matching = tips.filter(t => t.condition());
