@@ -193,6 +193,56 @@ function expandSynonyms(text: string): string {
   return result;
 }
 
+// ─── Negation Detection ──────────────────────────────────────
+// Detect negative intent: "I don't want to train" should NOT match "start workout"
+const NEGATION_PATTERNS = [
+  /\b(?:don'?t|do not|no|not|never|stop|cancel|skip|avoid)\b/,
+  /\b(?:مش عايز|مش محتاج|مش هـ|لأ|الغي|مش|ماعايزش)\b/,
+  /\b(?:mesh 3ayez|msh me7tag|la2|mesh|cancel)\b/,
+];
+
+function hasNegation(text: string): boolean {
+  return NEGATION_PATTERNS.some(p => p.test(text));
+}
+
+// Map negation + topic → correct state (instead of positive match)
+const NEGATION_OVERRIDES: Array<{ pattern: RegExp; stateId: string; response: { en: string; ar: string } }> = [
+  { pattern: /(?:don'?t|not|no|skip|مش عايز|مش هـ|mesh 3ayez)\s*(?:want to |wanna )?\s*(?:train|workout|exercise|اتمرن|at2amen|tamreen)/i,
+    stateId: 'WK_SKIP_REASON', response: { en: "No worries! What's the reason?", ar: 'مفيش مشكلة! ايه السبب؟' } },
+  { pattern: /(?:don'?t|not|no|مش عايز|mesh 3ayez)\s*(?:want to |wanna )?\s*(?:eat|food|meal|آكل|akol)/i,
+    stateId: 'NT_SUGGEST', response: { en: "Not hungry? Here are some light options:", ar: 'مش جعان؟ دي أكلات خفيفة:' } },
+  { pattern: /(?:stop|cancel|remove|delete|الغي|امسح|emsah)\s*(?:my )?\s*(?:subscription|plan|اشتراك|eshterak)/i,
+    stateId: 'ST_SUBSCRIPTION', response: { en: 'Opening subscription settings...', ar: 'بفتحلك إعدادات الاشتراك...' } },
+  { pattern: /(?:stop|cancel|الغي|وقف)\s*(?:my )?\s*(?:program|plan|برنامج|barnameg)/i,
+    stateId: 'PG_ACTIVE', response: { en: 'Let me show your active program options:', ar: 'هوريك خيارات برنامجك النشط:' } },
+];
+
+// ─── Common Exercise Names (for direct exercise search) ──────
+const EXERCISE_NAMES: string[] = [
+  'bench press', 'squat', 'deadlift', 'overhead press', 'barbell row', 'pull up',
+  'lat pulldown', 'cable fly', 'dumbbell curl', 'hammer curl', 'tricep pushdown',
+  'skull crusher', 'leg press', 'leg extension', 'leg curl', 'calf raise',
+  'lateral raise', 'face pull', 'cable row', 't-bar row', 'pendlay row',
+  'romanian deadlift', 'hip thrust', 'lunges', 'lunge', 'step up',
+  'dips', 'push up', 'pushup', 'plank', 'crunch', 'sit up',
+  'cable crossover', 'pec deck', 'incline press', 'decline press',
+  'preacher curl', 'concentration curl', 'cable curl', 'tricep extension',
+  'front squat', 'goblet squat', 'bulgarian split squat', 'hack squat',
+  'good morning', 'rack pull', 'farmers walk', 'shrug', 'upright row',
+  'arnold press', 'military press', 'clean and jerk', 'snatch', 'power clean',
+  'box jump', 'burpee', 'mountain climber', 'battle rope', 'kettlebell swing',
+];
+
+function detectExerciseQuery(text: string): string | null {
+  const lower = text.toLowerCase();
+  for (const ex of EXERCISE_NAMES) {
+    if (lower === ex || lower.includes(ex)) {
+      return ex;
+    }
+  }
+  return null;
+}
+
 // ─── Common Food Names (for direct food search detection) ────
 const FOOD_NAMES: string[] = [
   // Egyptian staples
@@ -1661,6 +1711,105 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ══════════════════════════════════════════════════════════
+  // ── Contextual Workout Queries ─────────────────────────────
+  // ══════════════════════════════════════════════════════════
+  {
+    keywords: ['how many sets', 'sets and reps', 'how many reps', 'rep range', 'set range'],
+    keywordsAr: ['كام سيت', 'كام تكرار', 'عدد السيتات', 'عدد التكرارات'],
+    keywordsFranco: ['kam set', 'kam tekrar'],
+    stateId: 'WK_MENU',
+    response: { en: 'General guide: Strength 3-5 reps x 4-5 sets. Hypertrophy 8-12 reps x 3-4 sets. Endurance 15-20 reps x 2-3 sets.', ar: 'دليل عام: قوة 3-5 تكرارات × 4-5 سيتات. تضخيم 8-12 تكرار × 3-4 سيتات. تحمل 15-20 تكرار × 2-3 سيتات.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['how long should i rest', 'rest between sets', 'rest time', 'rest period'],
+    keywordsAr: ['اريح كام', 'وقت الراحة بين السيتات', 'فترة الراحة'],
+    keywordsFranco: ['are7 kam', 'wa2t el ra7a'],
+    stateId: 'WK_MENU',
+    response: { en: 'Rest between sets: Strength 2-5 min. Hypertrophy 60-90 sec. Endurance 30-60 sec. Compounds need more rest than isolation.', ar: 'الراحة بين السيتات: قوة 2-5 دقايق. تضخيم 60-90 ثانية. تحمل 30-60 ثانية. التمارين المركبة محتاجة راحة أكتر.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['train same muscle twice', 'hit muscle twice', 'frequency per muscle', 'how often per muscle'],
+    keywordsAr: ['امرن نفس العضلة مرتين', 'العضلة في الاسبوع'],
+    keywordsFranco: ['amaren nafs el 3adala marteen'],
+    stateId: 'PG_MENU',
+    response: { en: 'Research shows 2x/week per muscle group is optimal for growth. PPL or Upper/Lower splits allow this naturally.', ar: 'الأبحاث بتقول مرتين في الأسبوع لكل عضلة أحسن للنمو. PPL أو Upper/Lower بيوفروا ده بشكل طبيعي.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['do i need a belt', 'lifting belt', 'when to use belt', 'weight belt'],
+    keywordsAr: ['محتاج حزام', 'حزام الأوزان', 'البلت'],
+    keywordsFranco: ['me7tag 7ezam', 'el belt'],
+    stateId: 'WK_MENU',
+    response: { en: 'Belts help at 80%+ of your max on squats, deadlifts, overhead press. Not needed for everything. Learn to brace naturally first!', ar: 'الحزام بيساعد عند 80%+ من أقصى وزنك في السكوات والديدلفت والأوفرهيد. مش لازم لكل حاجة. اتعلم البريسينج الطبيعي الأول!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['should i do cardio', 'cardio kills gains', 'cardio and muscle', 'too much cardio'],
+    keywordsAr: ['اعمل كارديو', 'الكارديو بيأثر على العضل', 'كارديو كتير'],
+    keywordsFranco: ['a3mel cardio', 'cardio keter'],
+    stateId: 'WK_FIND_TYPE',
+    response: { en: "Cardio doesn't kill gains if managed right. 2-3 sessions of 20-30 min LISS or 1-2 HIIT sessions. Keep it moderate!", ar: 'الكارديو مش بيقتل العضل لو اتعمل صح. 2-3 جلسات 20-30 دقيقة LISS أو 1-2 HIIT. خليه معتدل!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── Notification / Reminder Patterns ────────────────────────
+  {
+    keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
+    keywordsAr: ['فكرني', 'تنبيه', 'منبه', 'ريمايندر'],
+    keywordsFranco: ['fakkarny', 'tanbeeh', 'reminder'],
+    stateId: 'ST_MENU',
+    response: { en: 'Reminders coming soon! For now, check your phone reminders app.', ar: 'التذكيرات جاية قريب! حالياً استخدم تطبيق المنبهات في تليفونك.' },
+    priority: 6,
+    domain: 'settings',
+  },
+
+  // ── Comparison / Versus Patterns ───────────────────────────
+  {
+    keywords: ['whey vs casein', 'whey or casein', 'which protein', 'best protein powder'],
+    keywordsAr: ['واي ولا كازين', 'احسن بروتين باودر'],
+    keywordsFranco: ['whey wala casein', 'a7san protein powder'],
+    stateId: 'SP_MENU',
+    response: { en: 'Whey: fast absorbing (post-workout). Casein: slow release (before bed). Both great — depends on timing!', ar: 'واي: سريع الامتصاص (بعد التمرين). كازين: بطيء (قبل النوم). الاتنين ممتازين — حسب التوقيت!' },
+    priority: 8,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['full body vs split', 'full body or split', 'which is better', 'best workout split'],
+    keywordsAr: ['فل بودي ولا سبليت', 'ايه احسن سبليت'],
+    keywordsFranco: ['full body wala split', 'eh a7san split'],
+    stateId: 'PG_MENU',
+    response: { en: 'Beginners: Full Body 3x/week. Intermediate: Upper/Lower or PPL. Advanced: PPL 6 days. All work — consistency matters most!', ar: 'مبتدئين: فل بودي 3 مرات. متوسط: Upper/Lower أو PPL. متقدم: PPL 6 أيام. كلهم شغالين — الالتزام هو الأهم!' },
+    priority: 7,
+    domain: 'programs',
+  },
+
+  // ── Egyptian Context (Gym Culture) ─────────────────────────
+  {
+    keywords: ['gym near me', 'find gym', 'best gym', 'gym recommendation'],
+    keywordsAr: ['جيم قريب', 'اقرب جيم', 'احسن جيم'],
+    keywordsFranco: ['gym 2orayeb', 'a2rab gym', 'a7san gym'],
+    stateId: 'ROOT',
+    response: { en: "I can't search for gyms yet, but I can help you train anywhere! Try home workouts:", ar: 'مش بقدر ادور على جيمات لسه، بس أقدر أساعدك تتمرن في أي مكان! جرب تمارين البيت:' },
+    priority: 5,
+  },
+  {
+    keywords: ['personal trainer', 'find trainer', 'need coach', 'pt', 'hire trainer'],
+    keywordsAr: ['مدرب خاص', 'عايز مدرب', 'بي تي'],
+    keywordsFranco: ['modareb 5as', '3ayez modareb', 'pt'],
+    stateId: 'ROOT',
+    route: '/trainers',
+    response: { en: "Check out our trainers page!", ar: 'شوف صفحة المدربين!' },
+    priority: 7,
+  },
+
   // ── Common greetings & polite phrases ─────────────────────
   {
     keywords: ['thanks', 'thank you', 'thx', 'appreciate it', 'great', 'awesome', 'perfect', 'nice', 'cool'],
@@ -1746,7 +1895,31 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   // Extract numbers/units from text
   const extractedParams = extractNumbers(normalized);
 
-  // Check for direct food name — route to food search
+  // ── Negation check: "I don't want to train" → skip, not start workout
+  if (hasNegation(normalized)) {
+    for (const override of NEGATION_OVERRIDES) {
+      if (override.pattern.test(normalized)) {
+        return {
+          stateId: override.stateId,
+          confidence: 0.85,
+          response: override.response,
+        };
+      }
+    }
+  }
+
+  // ── Direct exercise name → route to exercise search
+  const exerciseQuery = detectExerciseQuery(stripped);
+  if (exerciseQuery) {
+    return {
+      stateId: 'WK_FIND',
+      confidence: 0.75,
+      action: { type: 'navigate', route: `/exercises?search=${encodeURIComponent(exerciseQuery)}` },
+      response: { en: `Searching for "${exerciseQuery}":`, ar: `بدور على "${exerciseQuery}":` },
+    };
+  }
+
+  // ── Direct food name → route to food search
   const foodQuery = detectFoodQuery(stripped);
   if (foodQuery && !extractedParams.weight && !extractedParams.water_ml) {
     return {
