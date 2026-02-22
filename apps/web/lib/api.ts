@@ -755,6 +755,9 @@ interface GeneratedWorkoutPlan {
 
 // Programs API (Trainer programs)
 export const programsApi = {
+  // Browse public template programs (no auth required)
+  browse: () => api.get<TrainerProgramSummary[]>('/programs/browse'),
+
   // Get all programs for current trainer
   getAll: () => api.get<TrainerProgramSummary[]>('/programs'),
 

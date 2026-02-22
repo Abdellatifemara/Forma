@@ -213,7 +213,7 @@ async function callApi(
     return progressApi.getWeightHistory();
   }
   if (endpoint === '/profile/set-goal') return api.patch('/users/me', { fitnessGoal: params?.goal });
-  if (endpoint === '/programs') return programsApi.getAll();
+  if (endpoint === '/programs') return programsApi.browse();
   if (endpoint === '/programs/active') return workoutsApi.getActivePlan();
   if (endpoint === '/programs/start') return api.post('/workouts/plans/activate', params);
   if (endpoint === '/devices/connect') return api.post('/devices/connect', params);

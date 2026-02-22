@@ -15,6 +15,32 @@ export class ProgramsService {
   constructor(private readonly prisma: PrismaService) {}
 
   /**
+   * Browse public template programs (no auth required)
+   */
+  async findPublicPrograms() {
+    const programs = await this.prisma.trainerProgram.findMany({
+      where: {
+        isTemplate: true,
+        status: 'ACTIVE',
+      },
+      select: {
+        id: true,
+        nameEn: true,
+        nameAr: true,
+        descriptionEn: true,
+        descriptionAr: true,
+        durationWeeks: true,
+        sourceType: true,
+        createdAt: true,
+      },
+      orderBy: { createdAt: 'desc' },
+      take: 50,
+    });
+
+    return programs;
+  }
+
+  /**
    * Get trainer profile ID for a user
    */
   private async getTrainerProfileId(userId: string): Promise<string> {

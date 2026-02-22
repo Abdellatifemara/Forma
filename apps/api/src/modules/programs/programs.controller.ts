@@ -16,13 +16,21 @@ import { CreateProgramDto } from './dto/create-program.dto';
 import { UpdateProgramDto } from './dto/update-program.dto';
 
 @Controller('programs')
-@UseGuards(JwtAuthGuard)
 export class ProgramsController {
   constructor(private readonly programsService: ProgramsService) {}
 
   /**
+   * Browse public template programs (no auth required)
+   */
+  @Get('browse')
+  async browse() {
+    return this.programsService.findPublicPrograms();
+  }
+
+  /**
    * Create a new program
    */
+  @UseGuards(JwtAuthGuard)
   @Post()
   async create(
     @Request() req: { user: { id: string } },
@@ -34,6 +42,7 @@ export class ProgramsController {
   /**
    * Create program from parsed PDF data
    */
+  @UseGuards(JwtAuthGuard)
   @Post('from-pdf')
   async createFromPdf(
     @Request() req: { user: { id: string } },
@@ -49,6 +58,7 @@ export class ProgramsController {
   /**
    * Get all programs for current trainer
    */
+  @UseGuards(JwtAuthGuard)
   @Get()
   async findAll(@Request() req: { user: { id: string } }) {
     return this.programsService.findAllForTrainer(req.user.id);
@@ -57,6 +67,7 @@ export class ProgramsController {
   /**
    * Get single program with full details
    */
+  @UseGuards(JwtAuthGuard)
   @Get(':id')
   async findOne(
     @Request() req: { user: { id: string } },
@@ -68,6 +79,7 @@ export class ProgramsController {
   /**
    * Update a program
    */
+  @UseGuards(JwtAuthGuard)
   @Patch(':id')
   async update(
     @Request() req: { user: { id: string } },
@@ -80,6 +92,7 @@ export class ProgramsController {
   /**
    * Publish a draft program
    */
+  @UseGuards(JwtAuthGuard)
   @Post(':id/publish')
   async publish(
     @Request() req: { user: { id: string } },
@@ -91,6 +104,7 @@ export class ProgramsController {
   /**
    * Archive a program
    */
+  @UseGuards(JwtAuthGuard)
   @Post(':id/archive')
   async archive(
     @Request() req: { user: { id: string } },
@@ -102,6 +116,7 @@ export class ProgramsController {
   /**
    * Duplicate a program
    */
+  @UseGuards(JwtAuthGuard)
   @Post(':id/duplicate')
   async duplicate(
     @Request() req: { user: { id: string } },
@@ -113,6 +128,7 @@ export class ProgramsController {
   /**
    * Delete a program
    */
+  @UseGuards(JwtAuthGuard)
   @Delete(':id')
   async remove(
     @Request() req: { user: { id: string } },
@@ -126,6 +142,7 @@ export class ProgramsController {
   /**
    * Add workout day to program
    */
+  @UseGuards(JwtAuthGuard)
   @Post(':id/days')
   async addWorkoutDay(
     @Request() req: { user: { id: string } },
@@ -138,6 +155,7 @@ export class ProgramsController {
   /**
    * Update workout day
    */
+  @UseGuards(JwtAuthGuard)
   @Patch(':id/days/:dayId')
   async updateWorkoutDay(
     @Request() req: { user: { id: string } },
@@ -151,6 +169,7 @@ export class ProgramsController {
   /**
    * Delete workout day
    */
+  @UseGuards(JwtAuthGuard)
   @Delete(':id/days/:dayId')
   async removeWorkoutDay(
     @Request() req: { user: { id: string } },
@@ -165,6 +184,7 @@ export class ProgramsController {
   /**
    * Add exercise to workout day
    */
+  @UseGuards(JwtAuthGuard)
   @Post(':id/days/:dayId/exercises')
   async addExercise(
     @Request() req: { user: { id: string } },
@@ -187,6 +207,7 @@ export class ProgramsController {
   /**
    * Update exercise
    */
+  @UseGuards(JwtAuthGuard)
   @Patch(':id/exercises/:exerciseId')
   async updateExercise(
     @Request() req: { user: { id: string } },
@@ -208,6 +229,7 @@ export class ProgramsController {
   /**
    * Delete exercise
    */
+  @UseGuards(JwtAuthGuard)
   @Delete(':id/exercises/:exerciseId')
   async removeExercise(
     @Request() req: { user: { id: string } },

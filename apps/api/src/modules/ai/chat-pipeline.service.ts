@@ -681,7 +681,7 @@ export class ChatPipelineService {
           '• اسألني عن أي **تمرين** وهوريك ازاي تعمله صح\n' +
           '• اكتب "**برنامج**" وهقترحلك برامج تمارين\n\n' +
           'أو اشترك في **Premium+** لمحادثات ذكية مخصصة ليك!',
-        source: 'premium_gate',
+        source: 'local',
       };
     }
 
@@ -691,7 +691,7 @@ export class ChatPipelineService {
         '• Ask about any **exercise** and I\'ll show you how to do it\n' +
         '• Type "**program**" and I\'ll suggest workout programs\n\n' +
         'Or upgrade to **Premium+** for fully personalized AI coaching!',
-      source: 'premium_gate',
+      source: 'local',
     };
   }
 

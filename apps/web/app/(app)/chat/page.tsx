@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback, useReducer } from 'react';
-import { Send, Bot, User, Loader2, Sparkles, AlertCircle, Zap, Dumbbell, UtensilsCrossed, BookOpen, MessageSquare, LayoutGrid } from 'lucide-react';
+import { Send, Bot, User, Loader2, Sparkles, AlertCircle, Zap, Dumbbell, UtensilsCrossed, BookOpen, MessageSquare, LayoutGrid, MessagesSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
@@ -308,15 +308,16 @@ function FreeChat({ tier }: { tier: string }) {
 }
 
 // ─── Main Chat Page ─────────────────────────────────────────
-// Premium (299 LE) → Guided Chat (state machine with buttons)
-// Premium+ (999 LE) → Free Chat (type anything, GPT)
-// Trial/Free → Guided Chat (same as Premium)
+// Premium (299 LE) → Guided Chat only
+// Premium+ (999 LE) → Guided Chat (default) + toggle to Free Chat
+// Trial/Free → Guided Chat only
 
 export default function ChatPage() {
   const { language } = useLanguage();
   const isAr = language === 'ar';
   const [tier, setTier] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [chatMode, setChatMode] = useState<'guided' | 'free'>('guided');
 
   useEffect(() => {
     aiApi.getChatUsage()
@@ -336,27 +337,49 @@ export default function ChatPage() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-4">
-      {/* Tier badge — compact */}
+      {/* Header: badge + mode toggle for Premium+ */}
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
-          {isPremiumPlus ? (
-            <Badge className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[11px] border-0 h-6">
-              <MessageSquare className="h-3 w-3 me-1" />
-              {isAr ? 'محادثة حرة' : 'Free Chat'}
-            </Badge>
-          ) : (
-            <Badge className="bg-primary/10 text-primary text-[11px] border-0 h-6">
-              <LayoutGrid className="h-3 w-3 me-1" />
-              {isAr ? 'مساعد ذكي' : 'Smart Guide'}
+          <Badge className="bg-primary/10 text-primary text-[11px] border-0 h-6">
+            <LayoutGrid className="h-3 w-3 me-1" />
+            {isAr ? 'مساعد ذكي' : 'Smart Guide'}
+          </Badge>
+          {isPremiumPlus && (
+            <Badge className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] border-0 h-5 px-1.5">
+              Premium+
             </Badge>
           )}
         </div>
-        <p className="text-[11px] text-muted-foreground">
-          {isPremiumPlus
-            ? (isAr ? 'اكتب أي سؤال وأنا هجاوبك' : 'Ask me anything')
-            : (isAr ? 'اختار من الخيارات أو اكتب' : 'Pick options or type')
-          }
-        </p>
+        {isPremiumPlus ? (
+          <div className="flex items-center bg-muted/60 rounded-lg p-0.5 gap-0.5">
+            <button
+              onClick={() => setChatMode('guided')}
+              className={`flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-medium transition-all ${
+                chatMode === 'guided'
+                  ? 'bg-white dark:bg-card shadow-sm text-foreground'
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              <LayoutGrid className="h-3 w-3" />
+              {isAr ? 'موجّه' : 'Guided'}
+            </button>
+            <button
+              onClick={() => setChatMode('free')}
+              className={`flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-medium transition-all ${
+                chatMode === 'free'
+                  ? 'bg-white dark:bg-card shadow-sm text-foreground'
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              <MessagesSquare className="h-3 w-3" />
+              {isAr ? 'حر' : 'Free'}
+            </button>
+          </div>
+        ) : (
+          <p className="text-[11px] text-muted-foreground">
+            {isAr ? 'اختار من الخيارات أو اكتب' : 'Pick options or type'}
+          </p>
+        )}
       </div>
       <p className="text-[10px] text-muted-foreground/60 mb-2 text-center">
         {isAr ? 'النصائح دي للإرشاد فقط — استشير طبيبك قبل أي تغيير كبير' : 'Tips are for guidance only — consult your doctor before major changes'}
@@ -367,7 +390,7 @@ export default function ChatPage() {
           <ChatErrorFallback isAr={isAr} onRetry={() => window.location.reload()} />
         }
       >
-        {isPremiumPlus ? <FreeChat tier={tier!} /> : <GuidedChat />}
+        {isPremiumPlus && chatMode === 'free' ? <FreeChat tier={tier!} /> : <GuidedChat />}
       </ErrorBoundary>
     </div>
   );
