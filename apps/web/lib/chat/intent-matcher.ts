@@ -5666,6 +5666,94 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v38: Thyroid & Fitness ────────────────────────
+  {
+    keywords: ['thyroid fitness', 'thyroid weight gain', 'hypothyroid exercise', 'hyperthyroid training', 'thyroid diet', 'thyroid metabolism', 'hashimoto exercise'],
+    keywordsAr: ['غدة درقية وتمارين', 'الغدة والوزن', 'هاشيموتو وتمارين', 'خمول الغدة', 'نشاط الغدة', 'الغدة والميتابوليزم'],
+    keywordsFranco: ['ghodda dar2eya w tamreen', 'el ghodda wel wazn', 'hashimoto w tamreen', 'khmol el ghodda'],
+    stateId: 'HE_MENU',
+    response: { en: 'Thyroid & Fitness: HYPOTHYROID (underactive): Weight gain, fatigue, cold sensitivity. Exercise helps! Focus on: strength training 3-4x/week (boosts metabolism), moderate cardio (don\'t overdo — cortisol spikes hurt thyroid). Diet: adequate iodine (fish, dairy, seaweed), selenium (brazil nuts, eggs), zinc. AVOID excess soy, raw cruciferous (cook them). HYPERTHYROID (overactive): Weight loss, rapid heartbeat, anxiety. Lower intensity exercise, avoid overheating. Build muscle to counteract wasting. Both types: medication first (levothyroxine etc), exercise is supplementary. Get TSH, T3, T4 tested every 3-6 months. Many Egyptians have subclinical thyroid issues — check it!', ar: 'الغدة الدرقية والفيتنس: خمول الغدة (هايبوثايرويد): زيادة وزن، تعب، حساسية للبرد. التمارين بتساعد! ركز على: حديد 3-4 مرات/أسبوع (يرفع الحرق)، كارديو معتدل (متبالغش — الكورتيزول بيأذي الغدة). الأكل: يود كفاية (سمك، ألبان)، سيلينيوم (مكسرات برازيلية، بيض)، زنك. ابعد عن الصويا الكتير والقرنبيط النيء (استويه). نشاط الغدة (هايبرثايرويد): نزول وزن، نبض سريع، قلق. تمارين أخف، تجنب الحر الزيادة. الدوا الأول (الثيروكسين)، التمارين تكميلية. اعمل تحليل TSH, T3, T4 كل 3-6 شهور!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v38: Cortisol Management ────────────────────────
+  {
+    keywords: ['cortisol', 'stress hormone', 'cortisol belly fat', 'lower cortisol', 'cortisol and muscle', 'overtraining cortisol', 'cortisol management'],
+    keywordsAr: ['كورتيزول', 'هرمون التوتر', 'كورتيزول ودهون البطن', 'خفض الكورتيزول', 'كورتيزول والعضلات', 'أوفرتريننج وكورتيزول'],
+    keywordsFranco: ['cortisol', 'hormon el tawator', 'cortisol w dohon el batn', 'khafad el cortisol'],
+    stateId: 'HE_MENU',
+    response: { en: 'Cortisol Management: Cortisol is your STRESS hormone. High cortisol = belly fat storage, muscle breakdown, poor sleep, weak immunity. WHAT raises it: overtraining (>90min intense sessions), poor sleep (<6hrs), chronic stress, extreme diets, too much caffeine. HOW to lower: Sleep 7-9hrs (most important!), limit workouts to 45-75min, deload every 4-6 weeks, meditation/deep breathing, vitamin C (1000mg), ashwagandha (300-600mg KSM-66), magnesium glycinate at night, limit caffeine after 2pm. SIGNS of high cortisol: waking tired, belly fat despite diet, getting sick often, losing muscle despite training. Fix sleep first — everything else follows!', ar: 'إدارة الكورتيزول: الكورتيزول هو هرمون التوتر. كورتيزول عالي = تخزين دهون البطن، تكسير عضلات، نوم سيء، مناعة ضعيفة. بيرتفع من: أوفرتريننج (+90 دقيقة مكثفة)، نوم قليل (-6 ساعات)، توتر مزمن، دايت قاسي، كافيين كتير. إزاي تخفضه: نوم 7-9 ساعات (الأهم!)، حدد التمرين 45-75 دقيقة، ديلود كل 4-6 أسابيع، تأمل/تنفس عميق، فيتامين C، أشواغاندا، ماغنيسيوم بالليل، حدد الكافيين بعد 2 الظهر. علامات الكورتيزول العالي: صحيان تعبان، دهون بطن رغم الدايت، مرض كتير!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v38: Acne & Diet ────────────────────────
+  {
+    keywords: ['acne diet', 'acne gym', 'acne protein', 'whey acne', 'pimples workout', 'skin breakout', 'acne supplements', 'clear skin diet'],
+    keywordsAr: ['حبوب البشرة والأكل', 'حبوب الشباب والجيم', 'واي بروتين وحبوب', 'بشرة وتمارين', 'حب الشباب والمكملات'],
+    keywordsFranco: ['7obob el bashara wel akl', '7obob el shabab wel gym', 'whey w 7obob', 'bashara w tamreen'],
+    stateId: 'HE_MENU',
+    response: { en: 'Acne & Fitness: WHEY PROTEIN is the #1 gym-related acne trigger — it spikes insulin and IGF-1. Try switching to: plant protein, egg white protein, or beef protein isolate. HIGH GLYCEMIC foods (white bread, sugar, juice) spike insulin → more sebum → more acne. DAIRY can worsen acne in sensitive people. WHAT HELPS: Zinc (30mg/day — proven acne fighter), omega-3 fish oil, vitamin A, probiotics, green tea. SWEAT from workouts is fine but WASH your face within 30 min post-gym. Don\'t touch your face during workouts. Clean your phone screen. Change pillowcase 2x/week. Egyptian climate tip: humidity + sweat = wash face MORE often!', ar: 'حب الشباب والفيتنس: واي بروتين هو السبب رقم 1 لحبوب الجيم — يرفع الأنسولين و IGF-1. جرب بدائل: بروتين نباتي، بياض بيض، أو بيف بروتين. أكل عالي السكر (عيش أبيض، سكر، عصير) يرفع الأنسولين = زهم أكتر = حبوب أكتر. الألبان ممكن تزود الحبوب. اللي بيساعد: زنك (30mg/يوم — مثبت علمياً)، أوميغا-3، فيتامين A، بروبيوتيك، شاي أخضر. العرق من التمرين عادي بس اغسل وشك خلال 30 دقيقة. متلمسش وشك في الجيم. نضف شاشة موبايلك. غير المخدة مرتين/أسبوع!' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v38: Hair Loss & Supplements ────────────────────────
+  {
+    keywords: ['hair loss gym', 'hair loss creatine', 'hair loss supplements', 'balding gym', 'dht blocker', 'biotin hair', 'hair thinning workout', 'minoxidil'],
+    keywordsAr: ['تساقط الشعر والجيم', 'تساقط الشعر والكرياتين', 'مكملات الشعر', 'صلع والجيم', 'بيوتين وشعر', 'مينوكسيديل'],
+    keywordsFranco: ['tasa2ot el sha3r wel gym', 'tasa2ot el sha3r wel creatine', 'mokammelat el sha3r', 'sal3 wel gym', 'biotin w sha3r'],
+    stateId: 'HE_MENU',
+    response: { en: 'Hair Loss & Gym: CREATINE and hair loss — the ONE study (rugby players) showed DHT increase. NOT conclusive but if you\'re genetically prone, you might skip it. WHAT actually causes gym-related hair loss: extreme calorie deficits (crash diets), low protein intake, iron/zinc/biotin deficiency, high stress/cortisol, steroid use (guaranteed hair loss). WHAT HELPS: biotin (5000mcg/day), zinc (25mg), iron (if deficient), vitamin D, saw palmetto (natural DHT blocker). Minoxidil 5% works but is a lifetime commitment. Finasteride works better but has side effects — see a dermatologist. DON\'T: crash diet, overtrain, or use steroids if you care about your hair!', ar: 'تساقط الشعر والجيم: الكرياتين وتساقط الشعر — دراسة واحدة بس أظهرت زيادة DHT. مش مؤكد بس لو عندك استعداد وراثي، ممكن تتجنبه. اللي فعلاً بيسبب تساقط شعر في الجيم: دايت قاسي (نزول وزن سريع)، بروتين قليل، نقص حديد/زنك/بيوتين، توتر/كورتيزول عالي، ستيرويدز (أكيد هيسقط). اللي بيساعد: بيوتين (5000mcg/يوم)، زنك (25mg)، حديد (لو ناقص)، فيتامين D، سو بالميتو. مينوكسيديل 5% بيشتغل بس التزام مدى الحياة. فيناسترايد أقوى بس له أعراض — روح دكتور جلدية!' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v38: Meal Prep Sunday ────────────────────────
+  {
+    keywords: ['meal prep', 'meal prep sunday', 'food prep', 'weekly meal prep', 'batch cooking', 'meal prep containers', 'how to meal prep', 'prep meals week'],
+    keywordsAr: ['تحضير أكل', 'تحضير وجبات الأسبوع', 'طبخ مسبق', 'ميل بريب', 'تحضير أكل يوم الأحد'],
+    keywordsFranco: ['meal prep', 'ta7deer akl', 'ta7deer wagabat el osbo3', 'tabkh mosaba2', 'meal prep yom el 7ad'],
+    stateId: 'NU_MENU',
+    response: { en: 'Meal Prep Guide: STEP 1: Pick 2-3 proteins (chicken breast, ground beef, eggs), 2-3 carbs (rice, sweet potato, pasta), 2-3 veggies (broccoli, green beans, peppers). STEP 2: Cook in bulk — oven-bake chicken (200°C, 25min), rice cooker, roast veggies. STEP 3: Portion into containers (invest in good glass ones). LASTS: Cooked chicken 4 days, rice 5 days, cooked veggies 4 days in fridge. FREEZER: cooked meals last 2-3 months. EGYPTIAN BUDGET: Cook rice + chicken + salad for the whole week for ~300-400 LE. TIME: 2-3 hours on Sunday saves 5+ hours during the week. PRO TIP: Different sauces/spices each day so you don\'t get bored — same food, different flavor!', ar: 'دليل الميل بريب: خطوة 1: اختار 2-3 بروتينات (فراخ، لحمة مفرومة، بيض)، 2-3 كاربوهيدرات (رز، بطاطا، مكرونة)، 2-3 خضار (بروكلي، فاصوليا، فلفل). خطوة 2: اطبخ كميات كبيرة — فراخ في الفرن (200°، 25 دقيقة)، رز، خضار مشوي. خطوة 3: قسم في علب (استثمر في علب زجاج كويسة). المدة: فراخ مطبوخة 4 أيام، رز 5 أيام، خضار 4 أيام في التلاجة. الفريزر: 2-3 شهور. ميزانية مصرية: رز + فراخ + سلطة للأسبوع كله بـ300-400 جنيه. الوقت: 2-3 ساعات يوم الأحد بتوفر 5+ ساعات في الأسبوع. نصيحة: صوصات/بهارات مختلفة كل يوم!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
+  // ── v38: Protein Pancake Recipes ────────────────────────
+  {
+    keywords: ['protein pancake', 'protein pancakes recipe', 'protein breakfast recipe', 'protein oats recipe', 'protein mug cake', 'healthy pancake', 'oat pancake'],
+    keywordsAr: ['بان كيك بروتين', 'وصفة بان كيك', 'فطار بروتين وصفة', 'شوفان بروتين وصفة', 'بان كيك صحي'],
+    keywordsFranco: ['protein pancake', 'wasfa pancake', 'fetar protein wasfa', 'shofan protein wasfa', 'pancake se77y'],
+    stateId: 'NU_MENU',
+    response: { en: 'Protein Pancake Recipes: CLASSIC: 1 scoop whey + 1/2 cup oats + 1 egg + 1/4 cup milk → blend → cook on medium heat (300cal, 30g protein). BANANA: 1 banana + 2 eggs + 1 scoop protein → mash & mix → cook (280cal, 28g protein). CHOCOLATE: 1 scoop chocolate whey + 2 egg whites + 2 tbsp cocoa + 1/3 cup oats (250cal, 35g protein). MUG CAKE: 1 scoop whey + 1 egg + 2 tbsp flour + splash milk → microwave 90sec (200cal, 28g protein). TOPPINGS: peanut butter, honey, berries, dark chocolate chips. EGYPTIAN STYLE: Add a drizzle of black honey (3asal eswed) for authentic flavor. All can be prepped the night before — just add liquid in the morning!', ar: 'وصفات بان كيك بروتين: كلاسيك: سكوب واي + نص كوب شوفان + بيضة + ربع كوب لبن → خلاط → اطبخ على نار متوسطة (300 سعرة، 30g بروتين). موز: موزة + 2 بيض + سكوب بروتين → اهرس واخلط → اطبخ (280 سعرة، 28g). شوكولاتة: سكوب شوكو واي + 2 بياض بيض + 2 معلقة كاكاو + ثلث كوب شوفان (250 سعرة، 35g). مج كيك: سكوب واي + بيضة + 2 معلقة دقيق + شوية لبن → مايكرويف 90 ثانية (200 سعرة، 28g). تزيين: زبدة فول سوداني، عسل، فواكه، شوكولاتة. على الطريقة المصرية: عسل أسود!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v38: Gym Bag Essentials ────────────────────────
+  {
+    keywords: ['gym bag essentials', 'what to bring gym', 'gym bag checklist', 'gym essentials', 'gym accessories needed', 'gym gear list'],
+    keywordsAr: ['حاجات شنطة الجيم', 'اجيب ايه الجيم', 'أساسيات شنطة الجيم', 'لازم اجيب ايه'],
+    keywordsFranco: ['7agat shantet el gym', 'ageeb eh el gym', 'asasyat shantet el gym', 'lazem ageeb eh'],
+    stateId: 'WK_MENU',
+    response: { en: 'Gym Bag Essentials: MUST-HAVE: Water bottle (1L+), towel, lock for locker, headphones, gym shoes (flat sole for lifting). LIFTING GEAR: Lifting belt (for heavy squats/deads), wrist wraps, lifting straps (for back day), chalk or liquid grip. HYGIENE: Deodorant, face wipes, shower flip flops, extra underwear, mini shampoo. NUTRITION: Protein shaker + scoop, banana or dates for pre-workout, BCAA or creatine. RECOVERY: Foam roller (mini), resistance band, lacrosse ball for trigger points. TECH: Phone armband, Bluetooth earbuds, fitness tracker. EGYPTIAN TIP: Pack dates (balah) — cheapest most effective pre-workout snack. Keep a spare gym outfit in your car/bag always!', ar: 'أساسيات شنطة الجيم: لازم: زجاجة مية (لتر+)، فوطة، قفل لوكر، سماعات، جزمة جيم (فلات للحديد). أدوات الحديد: حزام رفع (للسكوات والديدلفت)، ريست رابس، ليفتنج سترابس (يوم الضهر)، طباشير أو جريب سائل. نظافة: مزيل عرق، مناديل وش، شبشب حمام، ملابس داخلية زيادة. تغذية: شيكر + سكوب بروتين، موزة أو بلح للبري-وركاوت. ريكفري: فوم رولر صغير، باند مقاومة، كرة تنس للعقد. نصيحة مصرية: البلح أرخص وأفضل سناك بري-وركاوت. خلي طقم جيم سبير في العربية!' },
+    priority: 6,
+    domain: 'workout',
+  },
+
+  // ── v38: Egyptian Army/Military Fitness ────────────────────────
+  {
+    keywords: ['egyptian army fitness', 'military fitness egypt', 'army test egypt', 'military training program', 'egyptian army test', 'army physical test', 'تجنيد'],
+    keywordsAr: ['لياقة الجيش المصري', 'تمارين الجيش', 'اختبار اللياقة العسكري', 'تدريب عسكري', 'تجنيد ولياقة', 'اختبار الجيش البدني'],
+    keywordsFranco: ['lya2a el gesh el masry', 'tamreen el gesh', 'e5tebar el lya2a el 3askary', 'tadreeb 3askary', 'tagneed w lya2a'],
+    stateId: 'WK_MENU',
+    response: { en: 'Egyptian Army Fitness: Common tests include: RUNNING: 1.5 mile run (target <12 min), 2km run. PUSH-UPS: 40-60 in 2 minutes. SIT-UPS: 50-70 in 2 minutes. PULL-UPS: 8-15 reps. PREP PROGRAM (8 weeks): Weeks 1-2: Run 2km 3x/week, push-ups 3x20, sit-ups 3x25. Weeks 3-4: Run 3km, push-ups 3x30, sit-ups 3x35, add pull-ups 3x5. Weeks 5-6: Run 4km, push-ups 3x40, sit-ups 3x45, pull-ups 3x8. Weeks 7-8: Run 5km, push-ups 50+, sit-ups 60+, pull-ups 10+. TIPS: Train in boots when possible, practice running on sand, wake up at 5am to simulate army schedule, hydrate well in Egyptian heat. Many اختبار تجنيد include obstacle courses — practice climbing, jumping, crawling!', ar: 'لياقة الجيش المصري: الاختبارات الشائعة: جري: 1.5 ميل (هدف أقل من 12 دقيقة)، 2 كم. ضغط: 40-60 في دقيقتين. بطن: 50-70 في دقيقتين. عقلة: 8-15 تكرار. برنامج تحضير (8 أسابيع): أسبوع 1-2: جري 2 كم 3 مرات/أسبوع، ضغط 3×20، بطن 3×25. أسبوع 3-4: جري 3 كم، ضغط 3×30، بطن 3×35، عقلة 3×5. أسبوع 5-6: جري 4 كم، ضغط 3×40، بطن 3×45، عقلة 3×8. أسبوع 7-8: جري 5 كم، ضغط 50+، بطن 60+، عقلة 10+. نصائح: تمرن بالبوت لما تقدر، جري على رملة، صحي 5 الصبح، اشرب مية كتير في الحر. اختبار التجنيد ممكن يشمل حواجز — تسلق، قفز، زحف!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
