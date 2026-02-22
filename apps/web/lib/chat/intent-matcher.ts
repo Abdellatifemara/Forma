@@ -6225,6 +6225,61 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v45: PCOS & Fitness ────────────────────────
+  {
+    keywords: ['pcos exercise', 'pcos diet', 'pcos fitness', 'pcos weight loss', 'polycystic ovary exercise', 'pcos training', 'pcos insulin resistance'],
+    keywordsAr: ['تكيس المبايض والتمارين', 'تكيس المبايض والدايت', 'تكيس المبايض ونزول الوزن', 'تدريب مع التكيس', 'PCOS والأنسولين'],
+    keywordsFranco: ['takayos el mabayed wel tamreen', 'takayos el mabayed wel diet', 'takayos w nozol el wazn', 'PCOS wel insulin'],
+    stateId: 'HE_MENU',
+    response: { en: 'PCOS & Fitness: PCOS affects 1 in 10 women. KEY CHALLENGE: Insulin resistance makes weight loss harder. BEST EXERCISES: Strength training 3-4x/week (improves insulin sensitivity — THE most important thing), moderate cardio 2-3x (walking, cycling — NOT excessive), yoga/pilates for stress reduction. DIET: Low glycemic foods (avoid sugar spikes), high protein (1.6-2g/kg), anti-inflammatory foods (omega-3, turmeric, berries), moderate carbs (focus on complex carbs). SUPPLEMENTS: Inositol (4g myo-inositol — gold standard for PCOS), vitamin D (often deficient), omega-3, magnesium, NAC. AVOID: Extreme diets (stress worsens PCOS), excessive cardio (raises cortisol), sugar/refined carbs. Egyptian foods that help: ful (low GI), fish, vegetables, olive oil. CONSULT a gynecologist — medication may be needed alongside lifestyle changes.', ar: 'تكيس المبايض والفيتنس: PCOS بيأثر على 1 من كل 10 سيدات. التحدي: مقاومة الأنسولين بتصعب نزول الوزن. أفضل التمارين: حديد 3-4 مرات/أسبوع (يحسن حساسية الأنسولين — أهم حاجة!)، كارديو معتدل 2-3 مرات (مشي، عجلة — مش مبالغ فيه)، يوغا/بيلاتس للتوتر. الأكل: أكل منخفض GI (تجنب السكر)، بروتين عالي (1.6-2g/كيلو)، أكل مضاد للالتهاب (أوميغا-3، كركم، توت). المكملات: إينوسيتول (4g — المعيار الذهبي لـPCOS)، فيتامين D، أوميغا-3، ماغنيسيوم. تجنبي: دايت قاسي (التوتر يزود التكيس)، كارديو مبالغ (يرفع الكورتيزول)، سكر. أكل مصري يساعد: فول (GI منخفض)، سمك، خضار، زيت زيتون. استشيري دكتورة نسا!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v45: Insulin Resistance & Exercise ────────────────────────
+  {
+    keywords: ['insulin resistance', 'insulin resistance exercise', 'insulin resistance diet', 'pre diabetes exercise', 'insulin sensitivity', 'reverse insulin resistance', 'insulin resistance symptoms'],
+    keywordsAr: ['مقاومة الأنسولين', 'مقاومة الأنسولين والتمارين', 'مقاومة الأنسولين والدايت', 'حساسية الأنسولين', 'عكس مقاومة الأنسولين'],
+    keywordsFranco: ['mo2awamet el insulin', 'mo2awamet el insulin wel tamreen', 'mo2awamet el insulin wel diet', '7asaseyet el insulin'],
+    stateId: 'HE_MENU',
+    response: { en: 'Insulin Resistance & Exercise: WHAT: Your cells don\'t respond well to insulin → blood sugar stays high → body makes MORE insulin → fat storage, especially belly. EXERCISE IS THE #1 FIX (better than metformin in some studies!). BEST: Resistance training (muscles absorb glucose without insulin!), walking 15min after meals (drops blood sugar 30%+), HIIT 2x/week. DIET: Protein + fiber with every meal, complex carbs (oats, sweet potato, lentils), avoid sugar/white bread/juice. Eat carbs LAST in a meal (protein and veggies first — proven to reduce glucose spike 30-40%). FASTING: 16:8 IF can help (improves insulin sensitivity). SUPPLEMENTS: Berberine (500mg 2x/day — as effective as metformin in studies), chromium, cinnamon, ALA. Egyptian: Fenugreek (helba) is proven to improve insulin sensitivity. Ful medames = excellent low GI meal!', ar: 'مقاومة الأنسولين والتمارين: إيه: خلاياك مش بتستجيب كويس للأنسولين → السكر بيفضل عالي → الجسم بيعمل أنسولين أكتر → تخزين دهون خصوصاً البطن. التمارين هي الحل رقم 1 (أفضل من الميتفورمين في بعض الدراسات!). الأفضل: حديد (العضلات بتمتص الجلوكوز بدون أنسولين!)، مشي 15 دقيقة بعد الأكل (بينزل السكر 30%+)، HIIT مرتين/أسبوع. الأكل: بروتين + ألياف مع كل وجبة، كارب معقد (شوفان، بطاطا حلوة، عدس). كل الكارب آخر حاجة في الوجبة (بروتين وخضار الأول — مثبت يقلل الارتفاع 30-40%). المكملات: بربارين (500mg مرتين/يوم — بفعالية الميتفورمين)، كروميوم، قرفة. مصري: الحلبة مثبتة تحسن حساسية الأنسولين. الفول ممتاز!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v45: IBS & Gym Diet ────────────────────────
+  {
+    keywords: ['ibs gym', 'ibs diet gym', 'irritable bowel exercise', 'ibs protein', 'ibs bloating gym', 'fodmap gym', 'stomach issues training', 'ibs and working out'],
+    keywordsAr: ['القولون العصبي والجيم', 'القولون والتمارين', 'دايت القولون والجيم', 'بروتين والقولون', 'انتفاخ القولون والتمرين'],
+    keywordsFranco: ['el 2olon el 3asaby wel gym', 'el 2olon wel tamreen', 'diet el 2olon wel gym', 'protein wel 2olon', 'entefakh el 2olon'],
+    stateId: 'HE_MENU',
+    response: { en: 'IBS & Gym: TRIGGERS during training: Too much food before gym, high-fiber pre-workout, whey protein (switch to isolate or plant-based), caffeine, stress/anxiety. SAFE PRE-WORKOUT FOODS: White rice, banana, rice cakes, small protein shake, toast with honey. Eat 2-3hrs before (not 30min). LOW FODMAP protein sources: Chicken, fish, eggs, firm tofu, tempeh, lactose-free dairy. SUPPLEMENTS: Peppermint oil (enteric-coated — reduces bloating), L-glutamine (5g — gut healing), probiotics (specific strains: LGG, Saccharomyces boulardii). EXERCISE HELPS IBS: Moderate exercise reduces symptoms. Walking, yoga, and moderate lifting are best. AVOID: Extreme intensity (blood diverts from gut), heavy deadlifts on bad days, whey concentrate. Egyptian tip: Chamomile tea (baboneg) soothes IBS. Avoid koshari on training days (beans + lentils = FODMAP overload).', ar: 'القولون العصبي والجيم: مثيرات أثناء التمرين: أكل كتير قبل الجيم، ألياف عالية بري-وركاوت، واي بروتين (جرب آيزوليت أو نباتي)، كافيين، توتر. أكل آمن قبل التمرين: رز أبيض، موزة، رايس كيك، شيك بروتين صغير، توست بعسل. كل 2-3 ساعات قبل (مش 30 دقيقة). بروتين Low FODMAP: فراخ، سمك، بيض، توفو. المكملات: زيت نعناع (إنتيرك — يقلل الانتفاخ)، L-glutamine (5g — يعالج الأمعاء)، بروبيوتيك. التمارين بتساعد القولون: تمارين معتدلة بتقلل الأعراض. مشي، يوغا، حديد معتدل الأفضل. تجنب: شدة عالية أوي (الدم بيروح بعيد عن الأمعاء). مصري: شاي بابونج بيهدي القولون. تجنب الكشري يوم التمرين (فول + عدس = FODMAP أوفرلود).' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v45: Kidney Health for Athletes ────────────────────────
+  {
+    keywords: ['kidney health gym', 'high protein kidney', 'protein kidney damage', 'creatine kidney', 'kidney stones gym', 'kidney and supplements', 'is protein bad for kidneys'],
+    keywordsAr: ['صحة الكلى والجيم', 'بروتين عالي والكلى', 'بروتين وضرر الكلى', 'كرياتين والكلى', 'حصوات الكلى', 'مكملات والكلى'],
+    keywordsFranco: ['se77et el kola wel gym', 'protein 3aly wel kola', 'protein w darar el kola', 'creatine wel kola', '7asawat el kola'],
+    stateId: 'HE_MENU',
+    response: { en: 'Kidney Health for Athletes: HIGH PROTEIN & KIDNEYS: In healthy people, 2-3g/kg protein is SAFE (dozens of studies confirm). Only dangerous if you ALREADY have kidney disease. CREATINE & KIDNEYS: Creatine raises creatinine levels (a kidney marker) but does NOT damage healthy kidneys. Studies on athletes using 5g/day for years = no kidney issues. KIDNEY STONE PREVENTION: Drink LOTS of water (2.5-3L+/day), limit oxalates (spinach, nuts, chocolate) if prone, get enough calcium (paradoxically prevents stones), limit sodium. SUPPLEMENTS TO BE CAREFUL WITH: High-dose vitamin C (>2000mg), excessive protein shakes without water, NSAIDs (ibuprofen — avoid daily use). BLOOD TEST: Check creatinine and eGFR annually if using supplements. Egyptian context: Many people use NSAIDs for gym pain — use ice/rest instead. Stay hydrated in summer!', ar: 'صحة الكلى للرياضيين: بروتين عالي والكلى: في الأصحاء، 2-3g/كيلو بروتين آمن (عشرات الدراسات). خطر بس لو عندك مرض كلى بالفعل. الكرياتين والكلى: بيرفع الكرياتينين (مؤشر كلوي) بس مش بيضر كلى صحية. دراسات على رياضيين بـ5g/يوم لسنين = بدون مشاكل. منع حصوات الكلى: اشرب مية كتير (2.5-3 لتر+/يوم)، قلل الأوكسالات (سبانخ، مكسرات، شوكولاتة) لو معرض، خد كالسيوم كفاية، قلل الملح. مكملات بحذر: فيتامين C جرعات عالية (+2000mg)، شيكرات بروتين كتير بدون مية، مسكنات (إيبوبروفين — تجنب الاستخدام اليومي). تحليل دم: اعمل كرياتينين و eGFR سنوياً. مصري: ناس كتير بتاخد مسكنات لألم الجيم — استخدم تلج/راحة بدلها. اشرب مية في الصيف!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v45: Autoimmune & Exercise ────────────────────────
+  {
+    keywords: ['autoimmune exercise', 'autoimmune diet', 'rheumatoid arthritis gym', 'lupus exercise', 'hashimoto gym', 'ms exercise', 'autoimmune protocol', 'exercise with autoimmune'],
+    keywordsAr: ['مناعة ذاتية وتمارين', 'روماتويد والجيم', 'ذئبة حمراء وتمارين', 'هاشيموتو والجيم', 'تصلب متعدد وتمارين', 'بروتوكول المناعة الذاتية'],
+    keywordsFranco: ['mana3a zateya w tamreen', 'rheumatoid wel gym', 'ze2ba 7amra w tamreen', 'hashimoto wel gym', 'tasalob mota3aded w tamreen'],
+    stateId: 'HE_MENU',
+    response: { en: 'Autoimmune Disease & Exercise: GENERAL RULES: Exercise HELPS autoimmune conditions but must be dosed carefully. During FLARES: Light walking, gentle yoga, stretching only. Don\'t push through flares. During REMISSION: Moderate resistance training 3x/week, light cardio, mobility work. INTENSITY: Lower than healthy individuals — RPE 6-7 max (not training to failure). RECOVERY: Extra rest days, 8+ hours sleep critical, manage stress. DIET: Anti-inflammatory (omega-3, turmeric, berries, leafy greens). AIP Protocol: Eliminate grains, dairy, nightshades, eggs, nuts for 30-60 days then reintroduce one by one. SUPPLEMENTS: Vitamin D (critical — most autoimmune patients are deficient), omega-3, turmeric/curcumin, probiotics. SPECIFIC: Hashimoto\'s = moderate exercise OK. RA = low-impact, protect joints. MS = avoid overheating. Lupus = avoid sun, indoor exercise. Always work WITH your doctor, not against your body.', ar: 'أمراض المناعة الذاتية والتمارين: قواعد عامة: التمارين بتساعد بس لازم بحذر. أثناء النوبات: مشي خفيف، يوغا لطيفة، استريتش بس. متدفعش نفسك. أثناء السكون: حديد معتدل 3 مرات/أسبوع، كارديو خفيف، حركة. الشدة: أقل من الأصحاء — RPE 6-7 ماكس (مش للفشل). الريكفري: أيام راحة زيادة، 8+ ساعات نوم ضروري. الأكل: مضاد للالتهاب (أوميغا-3، كركم، توت). بروتوكول AIP: احذف الحبوب، الألبان، الباذنجانيات، البيض، المكسرات 30-60 يوم ثم أرجعهم واحد واحد. المكملات: فيتامين D (مهم جداً — أغلب المرضى ناقصين)، أوميغا-3، كركمين، بروبيوتيك. محدد: هاشيموتو = تمارين معتدلة OK. روماتويد = بدون تأثير عالي. MS = تجنب الحرارة. اشتغل مع الدكتور مش ضد جسمك.' },
+    priority: 7,
+    domain: 'health',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
