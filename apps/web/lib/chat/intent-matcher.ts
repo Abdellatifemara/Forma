@@ -266,6 +266,41 @@ const TYPO_MAP: Record<string, string> = {
   'endurnce': 'endurance', 'endurence': 'endurance',
   'hypertrofy': 'hypertrophy', 'hypertrophie': 'hypertrophy',
   'metabilism': 'metabolism', 'metbolism': 'metabolism',
+  // v27: More food typos
+  'yogart': 'yogurt', 'youghart': 'yogurt', 'yghurt': 'yogurt',
+  'coffe': 'coffee', 'cofee': 'coffee', 'cofffe': 'coffee',
+  'choclat': 'chocolate', 'choklate': 'chocolate',
+  'pumkin': 'pumpkin', 'punkin': 'pumpkin',
+  'cinamon': 'cinnamon', 'cinnammon': 'cinnamon', 'cinemon': 'cinnamon',
+  'coliflower': 'cauliflower', 'cauliflauer': 'cauliflower',
+  'avokado': 'avocado', 'avogado': 'avocado',
+  'grapfruit': 'grapefruit', 'grapefrut': 'grapefruit',
+  'rawberry': 'strawberry', 'strawbry': 'strawberry',
+  'tilaipa': 'tilapia', 'talipia': 'tilapia',
+  'sardeen': 'sardine', 'sardins': 'sardines',
+  'hummos': 'hummus', 'hammous': 'hummus',
+  'felafel': 'falafel', 'falafal': 'falafel',
+  // v27: More exercise typos
+  'sholderpres': 'shoulder press', 'shoulderpress': 'shoulder press',
+  'tricepextension': 'tricep extension', 'tricepext': 'tricep extension',
+  'bicepcurl': 'bicep curl', 'bicecurl': 'bicep curl',
+  'cableraise': 'cable raise', 'cablerow': 'cable row',
+  'romaniandl': 'romanian deadlift', 'rdl': 'romanian deadlift',
+  'inclinepres': 'incline press', 'inclinepress': 'incline press',
+  'declinepres': 'decline press', 'declinepress': 'decline press',
+  'chestfly': 'chest fly', 'chestflies': 'chest flyes',
+  'preachercurl': 'preacher curl', 'preachrcurl': 'preacher curl',
+  // v27: More general typos
+  'streangth': 'strength', 'strengh': 'strength', 'stregth': 'strength',
+  'resistence': 'resistance', 'resistanse': 'resistance',
+  'fatigue': 'fatigue', 'fatigu': 'fatigue',
+  'diarhea': 'diarrhea', 'diarrhoea': 'diarrhea',
+  'absorbtion': 'absorption', 'absorbsion': 'absorption',
+  'deficency': 'deficiency', 'deficiensy': 'deficiency',
+  'hormon': 'hormone', 'hormones': 'hormones',
+  'testosteron': 'testosterone', 'testosteroen': 'testosterone',
+  'cardoi': 'cardio', 'cradio': 'cardio', 'cadrio': 'cardio',
+  'motivaton': 'motivation', 'motiviation': 'motivation',
 };
 
 function fixTypos(text: string): string {
@@ -508,6 +543,28 @@ const SYNONYMS: Record<string, string> = {
   'vit d': 'vitamin d', 'vit c': 'vitamin c', 'vit b': 'vitamin b',
   'multi vitamin': 'multivitamin', 'multi-vitamin': 'multivitamin',
   'protein pwdr': 'whey', 'shake': 'protein shake',
+  // v27: More workout synonyms
+  'warm up': 'warmup', 'cool down': 'cooldown',
+  'strength training': 'resistance training', 'powerlifting': 'strength',
+  'bodybuilding': 'hypertrophy',
+  'progressive overload': 'overload', 'time under tension': 'tut',
+  'rest period': 'rest time', 'rest between sets': 'rest time',
+  'one rep max': '1rm', '1 rep max': '1rm',
+  'personal record': 'pr', 'personal best': 'pr',
+  'conditioning': 'cardio', 'stamina': 'endurance',
+  'plyometric': 'plyo', 'plyometrics': 'plyo',
+  'compound lift': 'compound exercise', 'isolation lift': 'isolation exercise',
+  // v27: More body synonyms
+  'lower back': 'lumbar', 'upper back': 'traps',
+  'hip flexor': 'hip', 'hip flexors': 'hips',
+  'rotator cuff': 'shoulder', 'rotator': 'shoulder',
+  'oblique': 'obliques', 'love handle': 'obliques', 'love handles': 'obliques',
+  'inner thigh': 'adductors', 'outer thigh': 'abductors',
+  // v27: More Egyptian slang
+  'ماشين': 'machine', 'كابل': 'cable', 'بار': 'barbell',
+  'دمبل': 'dumbbell', 'بالط': 'plate', 'ديسك': 'plate',
+  'سيت': 'set', 'ريب': 'rep', 'ريست': 'rest',
+  'ماكس': 'max', 'بي آر': 'pr', 'وارم اب': 'warmup',
 };
 
 function expandSynonyms(text: string): string {
@@ -619,6 +676,24 @@ const EXERCISE_NAMES: string[] = [
   'neck stretch', 'lower back stretch', 'groin stretch',
   'butterfly stretch', 'seated forward fold', 'standing toe touch',
   'doorway stretch', 'wall pec stretch', 'cross body stretch',
+  // v27: More compound movements
+  'zercher squat', 'jefferson squat', 'sissy squat', 'belt squat',
+  'pendlay row', 'yates row', 'meadows row', 'seal row',
+  'floor press', 'pin press', 'board press', 'spoto press',
+  'push press', 'z press', 'viking press', 'log press',
+  'deficit deadlift', 'block pull', 'paused deadlift', 'snatch grip deadlift',
+  // v27: More isolation
+  'concentration curl', 'bayesian curl', 'drag curl', 'scott curl',
+  'jm press', 'tate press', 'california press',
+  'pec deck', 'cable crossover', 'svend press', 'pullover',
+  'leg adduction', 'leg abduction', 'glute kickback', 'donkey kick',
+  'cable crunch', 'ab wheel', 'dragon flag', 'windshield wiper',
+  'neck curl', 'neck extension', 'neck rotation',
+  // v27: More functional
+  'battle ropes', 'sled push', 'sled pull', 'prowler push',
+  'tire flip', 'atlas stone', 'sandbag carry', 'rope climb',
+  'box jump', 'broad jump', 'depth jump', 'tuck jump',
+  'wall ball', 'ball slam', 'medicine ball throw',
 ];
 
 function detectExerciseQuery(text: string): string | null {
@@ -737,6 +812,37 @@ const FOOD_NAMES: string[] = [
   'توت', 'رمان', 'مشمش', 'يوسفي',
   'لوز', 'جوز', 'كاجو', 'فستق', 'بندق', 'سوداني',
   'زبيب', 'مشمش مجفف', 'تين مجفف', 'قراصيا',
+  // v27: More proteins
+  'venison', 'bison', 'elk', 'ostrich', 'quail', 'duck breast',
+  'anchovies', 'mussels', 'oysters', 'scallops', 'crab', 'lobster',
+  'cottage cheese', 'ricotta', 'paneer',
+  // v27: More carb sources
+  'jasmine rice', 'basmati rice', 'arborio rice', 'wild rice',
+  'whole wheat pasta', 'gluten free pasta', 'rice noodles',
+  'sweet potato fries', 'potato wedges', 'mashed potato',
+  'english muffin', 'ciabatta', 'focaccia', 'naan', 'pita',
+  'corn tortilla', 'flour tortilla', 'taco shell',
+  // v27: More veggies
+  'swiss chard', 'collard greens', 'watercress', 'endive',
+  'radicchio', 'kohlrabi', 'parsnip', 'rutabaga', 'daikon',
+  'jicama', 'chayote', 'plantain', 'taro', 'cassava',
+  // v27: More fruits
+  'acai', 'goji berry', 'mulberry', 'boysenberry', 'blackberry',
+  'gooseberry', 'rhubarb', 'kumquat', 'blood orange', 'clementine',
+  // v27: More snacks & processed
+  'protein cookie', 'rice cake', 'popcorn', 'trail mix', 'jerky',
+  'dark chocolate', 'dried mango', 'dried cranberry', 'fruit leather',
+  'pita chips', 'veggie chips', 'seaweed snack',
+  // v27: More Egyptian specific
+  'feteer meshaltet', 'roz bel laban', 'mehallabeyya', 'ataif',
+  'sambousek', 'spring roll', 'cheese roll', 'beid bel basterma',
+  'shakshuka', 'eggs with pastrami', 'foul with tahini',
+  'koshari special', 'alexandrian liver', 'hawawshi roll',
+  // v27: Arabic additions
+  'سمبوسك', 'لقمة القاضي', 'أم علي', 'مهلبية', 'أرز باللبن',
+  'عطايف', 'فتير مشلتت', 'بيض بالبسطرمة', 'كبدة اسكندراني',
+  'حواوشي رول', 'فول بالطحينة', 'كشري سبيشال',
+  'شوربة عدس', 'شوربة فراخ', 'سلطة خضرا', 'سلطة فواكه',
 ];
 
 function detectFoodQuery(text: string): string | null {
@@ -4711,6 +4817,83 @@ const INTENT_RULES: IntentRule[] = [
     response: { en: 'Arm training: BICEPS (2 heads): long head = incline curls, hammer curls. Short head = preacher curls, spider curls. Best overall: barbell curl, DB curl. TRICEPS (2/3 of arm size!): long head = overhead extension, skull crushers. Lateral head = pushdowns, close grip bench. KEY TIPS: 1) Triceps = 2/3 of arm — train them MORE 2) 10-15 sets/week each 3) Full ROM + squeeze at peak 4) Progressive overload still applies (don\'t just pump) 5) Cheat curls are okay occasionally for overload 6) Train arms 2x/week minimum for growth!', ar: 'تمرين دراع: باي (رأسين): طويل = إنكلاين كيرل، هامر كيرل. قصير = بريشر كيرل، سبايدر كيرل. الأفضل عموماً: باربل كيرل، دمبل كيرل. تراي (ثلثين حجم الدراع!): طويل = أوفرهيد اكستنشن، سكل كراشرز. جانبي = بوشداون، كلوز جريب بنش. نصايح: 1) التراي = ثلثين الدراع — مرنه أكتر 2) 10-15 سيت/أسبوع لكل 3) نطاق كامل + عصر في القمة 4) الحمل التصاعدي مهم (مش بس بامب) 5) تشييتنج كيرلز أوكي أحياناً للحمل الزايد 6) مرن الدراع مرتين/أسبوع على الأقل للنمو!' },
     priority: 8,
     domain: 'workout',
+  },
+
+  // ── v27: Injury Prevention ─────────────────────────────────
+  {
+    keywords: ['injury prevention', 'prevent injury', 'avoid injury', 'stay safe gym', 'common gym injuries', 'safe training'],
+    keywordsAr: ['منع الإصابة', 'تجنب الإصابة', 'أمان الجيم', 'إصابات شائعة', 'تمرين آمن'],
+    keywordsFranco: ['man3 el esaba', 'tagannob el esaba', 'aman el gym', 'esabat sha2e3a', 'tamreen amen'],
+    stateId: 'HP_MENU',
+    response: { en: 'Injury prevention (Top 10): 1) ALWAYS warm up (5-10min) 2) Never ego lift — leave 1-2 reps in reserve 3) Use full ROM with control 4) Warm up to working weight (ramp up sets) 5) Deload every 4-6 weeks 6) Fix muscle imbalances (push = pull volume) 7) Stretch AFTER training, not before 8) Sleep 7-9hrs (recovery = injury prevention) 9) If something hurts, STOP — pain is a signal 10) Get a form check (film yourself or ask a trainer). 80% of gym injuries are from ego lifting or bad form!', ar: 'منع الإصابة (أهم 10): 1) إحماء دايماً (5-10 دقايق) 2) متعاندش في الوزن — خلي 1-2 تكرار احتياطي 3) نطاق حركة كامل بتحكم 4) سخن للوزن الشغل (سيتات تصاعدية) 5) ديلود كل 4-6 أسابيع 6) صلح اختلالات العضلات (دفع = سحب في الحجم) 7) استرتش بعد التمرين مش قبل 8) نام 7-9 ساعات (الريكفري = منع إصابة) 9) لو حاجة وجعتك وقف — الألم إشارة 10) شيك على الفورم (صور نفسك أو اسأل مدرب). 80% إصابات الجيم من التعند في الوزن أو الفورم الغلط!' },
+    priority: 9,
+    domain: 'health',
+  },
+
+  // ── v27: Ramadan Fitness ──────────────────────────────────────
+  {
+    keywords: ['ramadan workout', 'ramadan training', 'fasting workout', 'exercise while fasting', 'gym ramadan', 'training fasting'],
+    keywordsAr: ['تمرين رمضان', 'رياضة في رمضان', 'تمرين صيام', 'جيم رمضان', 'تمرين وانا صايم'],
+    keywordsFranco: ['tamreen ramadan', 'reyada fi ramadan', 'tamreen seyam', 'gym ramadan', 'tamreen w ana sayem'],
+    stateId: 'WK_MENU',
+    response: { en: 'Ramadan training guide: BEST TIME: 1-2hrs after iftar (eat, digest, train) or 30min before iftar (light session, break fast immediately after). AVOID: heavy training while fasting (dehydration risk). NUTRITION: Suhoor = slow carbs + protein + healthy fats (oats, eggs, avocado). Iftar = don\'t overeat, start with dates + water, then balanced meal. TRAINING: reduce volume 20-30%, maintain intensity, focus on compounds. Stay hydrated between iftar-suhoor (aim for 2-3L). It\'s okay to reduce frequency to 3-4x/week.', ar: 'دليل تمرين رمضان: أفضل وقت: 1-2 ساعة بعد الإفطار (كل، هضم، تمرن) أو 30 دقيقة قبل الإفطار (جلسة خفيفة، فطر بعدها على طول). تجنب: تمرين ثقيل وانت صايم (خطر جفاف). التغذية: السحور = كارب بطيء + بروتين + دهون صحية (شوفان، بيض، أفوكادو). الإفطار = متاكلش كتير، ابدأ بتمر + مية، بعدين وجبة متوازنة. التمرين: قلل الحجم 20-30%، حافظ على الشدة، ركز على الأساسيات. اشرب بين الإفطار والسحور (2-3 لتر). عادي تقلل ل3-4 مرات/أسبوع.' },
+    priority: 9,
+    domain: 'workout',
+  },
+
+  // ── v27: Ramadan Nutrition Deep Dive ──────────────────────────
+  {
+    keywords: ['ramadan diet', 'ramadan nutrition', 'suhoor meal', 'iftar meal', 'what to eat ramadan', 'ramadan meal plan', 'fasting nutrition'],
+    keywordsAr: ['أكل رمضان', 'تغذية رمضان', 'وجبة سحور', 'وجبة إفطار', 'اكل ايه رمضان', 'خطة أكل رمضان'],
+    keywordsFranco: ['akl ramadan', 'taghzeya ramadan', 'wagbet so7oor', 'wagbet eftar', 'akol eih ramadan'],
+    stateId: 'NT_MENU',
+    response: { en: 'Ramadan meal plan: SUHOOR (must eat!): Option A: Oats + eggs + dates + water. Option B: Ful medames + bread + yogurt. Option C: Cheese + honey + nuts + whole wheat. IFTAR: Start with 3 dates + water → soup → balanced plate (protein + carbs + veggies). BETWEEN: Snack with protein shake + fruits + nuts. KEY: 1) Don\'t skip suhoor 2) Drink 2-3L water (iftar to suhoor) 3) Protein at every eating opportunity 4) Avoid fried foods (sambousa, fried anything!) 5) Don\'t overeat at iftar — small meals work better!', ar: 'خطة أكل رمضان: السحور (لازم تاكل!): خيار أ: شوفان + بيض + تمر + مية. خيار ب: فول + عيش + زبادي. خيار ج: جبنة + عسل + مكسرات + عيش بلدي. الإفطار: ابدأ ب3 تمرات + مية → شوربة → طبق متوازن (بروتين + كارب + خضار). بين الوجبات: سناك بروتين شيك + فاكهة + مكسرات. المفتاح: 1) متعديش السحور 2) اشرب 2-3 لتر مية (من الإفطار للسحور) 3) بروتين في كل فرصة أكل 4) تجنب المقلي (سمبوسة، أي حاجة مقلية!) 5) متاكلش كتير على الإفطار — وجبات صغيرة أفضل!' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+
+  // ── v27: Motivation & Goal Setting ────────────────────────────
+  {
+    keywords: ['motivation', 'no motivation', 'lost motivation', 'goal setting', 'how to set fitness goals', 'keep motivated', 'stay motivated'],
+    keywordsAr: ['تحفيز', 'مفيش تحفيز', 'خسرت التحفيز', 'تحديد أهداف', 'ازاي احدد أهداف', 'فقدت الحماس'],
+    keywordsFranco: ['ta7feez', 'mafesh ta7feez', '5asart el ta7feez', 'ta7deed ahdaf', 'ezay a7aded ahdaf', 'fa2adt el 7amas'],
+    stateId: 'QA_MENU',
+    response: { en: 'Motivation & goals: TRUTH: Motivation is temporary — build SYSTEMS instead. SMART goals: Specific (squat 100kg, not "get strong"), Measurable, Achievable, Relevant, Time-bound. Short-term (4 weeks) + Long-term (6-12 months). TIPS: 1) Track everything (app, photos, measurements) 2) Find a training partner 3) Join a community 4) Set process goals (3x gym/week) not just outcome goals (lose 10kg) 5) Review and adjust monthly 6) Remember: bad workout > no workout. Discipline beats motivation every time!', ar: 'التحفيز والأهداف: الحقيقة: التحفيز مؤقت — ابني أنظمة بدله. أهداف ذكية: محدد (سكوات 100كج، مش "اقوى")، قابل للقياس، قابل للتحقيق، مرتبط، محدد بوقت. قصير المدى (4 أسابيع) + طويل المدى (6-12 شهر). نصايح: 1) سجل كل حاجة (أبلكيشن، صور، قياسات) 2) لاقي شريك تمرين 3) انضم لمجتمع 4) حط أهداف عملية (3 مرات جيم/أسبوع) مش نتيجة بس (خس 10كج) 5) راجع وعدل شهرياً 6) تذكر: تمرين وحش > مفيش تمرين. الانضباط بيغلب التحفيز كل مرة!' },
+    priority: 8,
+    domain: 'root',
+  },
+
+  // ── v27: Beginner's Complete Guide ────────────────────────────
+  {
+    keywords: ['beginner guide', 'new to gym', 'first time gym', 'gym beginner', 'just started gym', 'starting gym', 'gym newbie', 'where to start'],
+    keywordsAr: ['دليل مبتدئ', 'جديد في الجيم', 'أول مرة جيم', 'مبتدئ جيم', 'لسه بادئ', 'ابدأ منين'],
+    keywordsFranco: ['daleel mobtade2', 'gedeed fel gym', 'awal marra gym', 'mobtade2 gym', 'lessa bade2', 'abda2 mneen'],
+    stateId: 'WK_MENU',
+    response: { en: 'Complete beginner guide: WEEK 1-4: Full body 3x/week (Mon/Wed/Fri). Each session: Squat 3x10, Bench 3x10, Row 3x10, OHP 3x10, Deadlift 3x8. Start with just the bar or light dumbbells. Add 2.5kg per week. NUTRITION: Eat protein with every meal, drink 2-3L water. RULES: 1) Form > weight (always!) 2) Rest 2-3min between sets 3) Sleep 7-8hrs 4) Don\'t skip legs 5) Ask gym staff for help 6) Don\'t compare yourself to others. Results take 8-12 weeks — trust the process!', ar: 'دليل المبتدئ الكامل: أسبوع 1-4: فول بادي 3 مرات/أسبوع (اتنين/أربع/جمعة). كل جلسة: سكوات 3×10، بنش 3×10، رو 3×10، OHP 3×10، ديدلفت 3×8. ابدأ بالبار بس أو دمبلز خفيفة. زود 2.5كج كل أسبوع. التغذية: كل بروتين مع كل وجبة، اشرب 2-3 لتر مية. قواعد: 1) الفورم > الوزن (دايماً!) 2) راحة 2-3 دقايق بين السيتات 3) نام 7-8 ساعات 4) متعديش الرجل 5) اسأل موظفين الجيم لو محتاج 6) متقارنش نفسك بحد. النتايج بتاخد 8-12 أسبوع — ثق في العملية!' },
+    priority: 9,
+    domain: 'workout',
+  },
+
+  // ── v27: Home Workout Without Equipment ───────────────────────
+  {
+    keywords: ['home workout', 'no equipment workout', 'bodyweight workout home', 'workout at home', 'no gym', 'cant go gym', 'home exercise'],
+    keywordsAr: ['تمرين بيت', 'تمرين بدون أجهزة', 'تمرين في البيت', 'مش قادر اروح الجيم', 'تمرين بدون معدات'],
+    keywordsFranco: ['tamreen beit', 'tamreen bdoon agheza', 'tamreen fel beit', 'msh 2ader aroo7 el gym', 'tamreen bdoon mo3edat'],
+    stateId: 'WK_MENU',
+    response: { en: 'No-equipment home workout: PUSH: push-ups (wide, diamond, pike, decline). PULL: towel rows (under table), resistance bands. LEGS: squats, lunges, Bulgarian splits, pistol squat progressions. CORE: plank, mountain climbers, leg raises, bicycle crunches. CARDIO: burpees, jumping jacks, high knees, mountain climbers. SAMPLE: 4 rounds of: 15 push-ups, 20 squats, 10 lunges each, 30sec plank, 15 burpees. Rest 60sec between rounds. Do 3-4x/week. Add a backpack with books for resistance!', ar: 'تمرين بيت بدون أجهزة: دفع: ضغط (واسع، دايموند، بايك، ديكلاين). سحب: رو بمنشفة (تحت ترابيزة)، باند مقاومة. رجل: سكوات، لانجز، بلغاري سبليت، بيستول سكوات. كور: بلانك، ماونتن كلايمرز، رفع رجل، بايسكل كرانش. كارديو: بيربي، جامبنج جاك، هاي نيز، ماونتن كلايمرز. نموذج: 4 جولات من: 15 ضغط، 20 سكوات، 10 لانجز لكل رجل، 30ث بلانك، 15 بيربي. راحة 60ث بين الجولات. 3-4 مرات/أسبوع. ضيف شنطة ظهر بكتب للمقاومة!' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v27: Skinny Fat Solution ──────────────────────────────────
+  {
+    keywords: ['skinny fat', 'thin but fat', 'no muscle but fat', 'soft body', 'flabby', 'not muscular but not lean'],
+    keywordsAr: ['نحيف بس فيه دهون', 'سكيني فات', 'جسم طري', 'مفيش عضل بس فيه كرش'],
+    keywordsFranco: ['skinny fat', 'ne7eef bas feeh dohon', 'gesm tary', 'mafesh 3adal bas feeh karsh'],
+    stateId: 'QA_MENU',
+    response: { en: 'Skinny fat solution: Your #1 priority = BUILD MUSCLE (not lose fat first). Why? More muscle = higher metabolism = easier fat loss later. PLAN: 1) Eat at slight surplus (+200-300 cal) 2) HIGH protein (2g/kg bodyweight) 3) Lift weights 4x/week (focus on compounds) 4) Minimal cardio (2x/week, 20min) 5) Progressive overload every week. DON\'T: crash diet (you\'ll look worse), do only cardio (you\'ll stay skinny fat), or try to "tone" (not a real thing). Timeline: 3-6 months of building, then mini-cut if needed.', ar: 'حل السكيني فات: أولويتك رقم 1 = بناء عضل (مش خسارة دهون الأول). ليه؟ عضل أكتر = حرق أعلى = خسارة دهون أسهل بعدين. الخطة: 1) كل بفائض خفيف (+200-300 سعرة) 2) بروتين عالي (2ج/كج) 3) حديد 4 مرات/أسبوع (ركز على المركبات) 4) كارديو قليل (مرتين/أسبوع، 20 دقيقة) 5) حمل تصاعدي كل أسبوع. متعملش: دايت قاسي (هتبان أوحش)، كارديو بس (هتفضل سكيني فات)، أو "تونينج" (مش حاجة حقيقية). المدة: 3-6 شهور بناء، بعدين ميني كت لو محتاج.' },
+    priority: 8,
+    domain: 'root',
   },
 
   // ── Notification / Reminder Patterns ────────────────────────
