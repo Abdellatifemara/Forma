@@ -5292,6 +5292,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'root',
   },
 
+  // ── v33: NEAT & Daily Activity ─────────────────────────────
+  {
+    keywords: ['neat', 'non exercise activity', 'daily steps', 'steps for weight loss', 'fidgeting calories', 'move more', 'active lifestyle'],
+    keywordsAr: ['نشاط يومي', 'خطوات يومية', 'خطوات لخسارة الوزن', 'تحرك أكتر', 'نمط حياة نشيط'],
+    keywordsFranco: ['nashat yawmy', '5otowat yawmeya', '5otowat le 5osaret el wazn', 'et7arrak aktar', 'namat 7ayah nashit'],
+    stateId: 'HP_MENU',
+    response: { en: 'NEAT (Non-Exercise Activity Thermogenesis): Burns 200-800+ calories/day — MORE than your gym session! WAYS to increase NEAT: 1) 10,000 steps daily (burns ~400-500 cal) 2) Take stairs always 3) Stand while on phone 4) Walk after meals (15min = better digestion + glucose control) 5) Park far from entrance 6) Fidget more (yes, it counts!) 7) Walking meetings. NEAT is the SECRET weapon for fat loss — two people with same diet/workout can differ by 500 cal/day based on NEAT alone. Step goal: 8000-12000/day for optimal health!', ar: 'NEAT (حرق النشاط غير الرياضي): بيحرق 200-800+ سعرة/يوم — أكتر من جلسة الجيم! طرق زيادة NEAT: 1) 10,000 خطوة يومياً (بتحرق ~400-500 سعرة) 2) السلالم دايماً 3) قف وانت بتتكلم في التليفون 4) امشي بعد الأكل (15 دقيقة = هضم أفضل + تحكم سكر) 5) اركن بعيد عن المدخل 6) اتحرك أكتر (أيوا، بيحسب!) 7) اجتماعات مشي. NEAT هو السلاح السري لخسارة الدهون — اتنين نفس الأكل/التمرين ممكن يختلفوا 500 سعرة/يوم بسبب NEAT. هدف الخطوات: 8000-12000/يوم لصحة مثالية!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v33: Carb Sources Ranked ──────────────────────────────────
+  {
+    keywords: ['best carbs', 'carb sources', 'healthy carbs', 'complex carbs', 'simple carbs', 'which carbs to eat', 'carbs for workout'],
+    keywordsAr: ['أفضل كارب', 'مصادر كارب', 'كارب صحي', 'كارب معقد', 'كارب بسيط', 'كارب للتمرين'],
+    keywordsFranco: ['afdal carb', 'masader carb', 'carb se7y', 'carb mo3a2ad', 'carb baseet', 'carb lel tamreen'],
+    stateId: 'NT_MENU',
+    response: { en: 'Carb sources ranked: TIER 1 (complex, nutrient-dense): Oats, sweet potato, brown rice, quinoa, lentils, beans. TIER 2 (good): White rice (fine around workouts!), whole wheat bread, pasta, potatoes, fruits. TIER 3 (occasional): White bread, cereal, crackers. AVOID: Sugary drinks, candy, pastries (empty calories). PRE-WORKOUT (1-2hrs): Complex carbs + protein. POST-WORKOUT: Simple carbs OK (white rice, banana) for fast glycogen replenishment. Egyptian picks: Ful + bread, rice, koshari (carb bomb but great post-workout!).', ar: 'مصادر الكارب مرتبة: فئة 1 (معقد، مغذي): شوفان، بطاطا، رز بني، كينوا، عدس، فول. فئة 2 (كويس): رز أبيض (كويس حوالين التمرين!)، عيش بلدي، مكرونة، بطاطس، فواكه. فئة 3 (أحياناً): عيش أبيض، سيريال، كراكرز. تجنب: مشروبات سكر، حلويات، معجنات (سعرات فاضية). قبل التمرين (1-2 ساعة): كارب معقد + بروتين. بعد التمرين: كارب بسيط أوكي (رز أبيض، موز) لتعويض الجلايكوجين. اختيارات مصرية: فول + عيش، رز، كشري (كارب بومب بس ممتاز بعد التمرين!).' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v33: Rest Day Activities ──────────────────────────────────
+  {
+    keywords: ['rest day', 'what to do rest day', 'active recovery', 'off day workout', 'recovery day activities', 'should i rest'],
+    keywordsAr: ['يوم راحة', 'اعمل ايه يوم الراحة', 'ريكفري نشيط', 'يوم أوف', 'نشاط يوم الراحة'],
+    keywordsFranco: ['yom ra7a', 'a3mel eih yom el ra7a', 'recovery nashit', 'yom off', 'nashat yom el ra7a'],
+    stateId: 'WK_MENU',
+    response: { en: 'Rest day guide: ACTIVE RECOVERY (better than doing nothing): 1) Walking 30-60min 2) Light stretching/yoga 3) Swimming (easy laps) 4) Foam rolling 5) Cycling at low intensity. REST DAYS NEEDED: 1-2/week minimum (your muscles GROW during rest, not during training). SIGNS you need more rest: chronic fatigue, strength declining, mood changes, sleep issues, elevated resting heart rate. Rest ≠ lazy. Rest = strategic recovery for better performance. Elite athletes take rest VERY seriously — you should too!', ar: 'دليل يوم الراحة: ريكفري نشيط (أفضل من عدم عمل حاجة): 1) مشي 30-60 دقيقة 2) استرتش خفيف/يوجا 3) سباحة (لفات سهلة) 4) فوم رول 5) عجلة بشدة منخفضة. أيام الراحة المطلوبة: 1-2/أسبوع على الأقل (العضلات بتنمو في الراحة مش التمرين). علامات محتاج راحة أكتر: تعب مزمن، قوة بتنزل، تغيرات مزاج، مشاكل نوم، نبض راحة عالي. الراحة ≠ كسل. الراحة = ريكفري استراتيجي لأداء أفضل. الرياضيين النخبة بياخدوا الراحة بجدية — انت كمان لازم!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v33: Training Volume Guide ────────────────────────────────
+  {
+    keywords: ['training volume', 'how many sets', 'sets per muscle', 'optimal volume', 'too much volume', 'overtraining', 'junk volume'],
+    keywordsAr: ['حجم التدريب', 'كام سيت', 'سيتات لكل عضلة', 'الحجم المثالي', 'حجم زيادة', 'تمرين زيادة'],
+    keywordsFranco: ['7agm el tadreeb', 'kam set', 'sets le kol 3adala', 'el 7agm el mesaly', '7agm zyada', 'tamreen zyada'],
+    stateId: 'WK_MENU',
+    response: { en: 'Training volume guide (sets per muscle per week): BEGINNER: 10-12 sets/muscle/week. INTERMEDIATE: 14-18 sets. ADVANCED: 18-25 sets. MAXIMUM RECOVERABLE VOLUME (MRV): beyond this = junk volume, no growth. SIGNS of too much volume: strength dropping, always tired, joint pain, dreading the gym. START with minimum effective volume and ADD sets over time. Quality sets (close to failure) > lots of easy sets. 1-3 reps from failure = the sweet spot. PRACTICAL: Start at 12 sets/muscle/week, add 1-2 sets every 2 weeks, deload when you stall.', ar: 'دليل حجم التدريب (سيتات لكل عضلة في الأسبوع): مبتدئ: 10-12 سيت/عضلة/أسبوع. متوسط: 14-18 سيت. متقدم: 18-25 سيت. الحد الأقصى القابل للاستشفاء (MRV): بعده = حجم ضايع، مفيش نمو. علامات حجم زيادة: القوة بتنزل، تعبان دايماً، ألم مفاصل، مش عايز تتمرن. ابدأ بأقل حجم فعال وزود سيتات مع الوقت. سيتات جودة (قرب من الفشل) > سيتات كتير سهلة. 1-3 تكرارات من الفشل = المنطقة المثالية. عملياً: ابدأ 12 سيت/عضلة/أسبوع، زود 1-2 سيت كل أسبوعين، ديلود لما تقف.' },
+    priority: 8,
+    domain: 'workout',
+  },
+
+  // ── v33: Natural Testosterone Boost ───────────────────────────
+  {
+    keywords: ['boost testosterone', 'increase testosterone naturally', 'low testosterone', 'testosterone food', 'testosterone exercise', 'testosterone tips'],
+    keywordsAr: ['زيادة التستوستيرون', 'رفع التستوستيرون طبيعي', 'تستوستيرون منخفض', 'أكل للتستوستيرون'],
+    keywordsFranco: ['zyada el testosterone', 'raf3 el testosterone tabi3y', 'testosterone mon5afed', 'akl lel testosterone'],
+    stateId: 'HP_MENU',
+    response: { en: 'Natural testosterone optimization: PROVEN: 1) Sleep 7-9hrs (most important!) 2) Lift heavy compounds (squats, deadlifts) 3) Maintain healthy body fat (12-20%) 4) Zinc (oysters, beef, pumpkin seeds) 5) Vitamin D (3000-5000IU daily) 6) Minimize alcohol 7) Manage stress (cortisol kills testosterone) 8) Eat enough fat (20-35% of calories) 9) Don\'t crash diet 10) Cold showers (mild effect). MYTHS: Soy doesn\'t lower test. Masturbation doesn\'t affect test. No supplement significantly boosts test (save your money). If symptoms persist, get blood work done!', ar: 'تحسين التستوستيرون طبيعياً: مثبت: 1) نوم 7-9 ساعات (الأهم!) 2) رفع ثقيل مركب (سكوات، ديدلفت) 3) حافظ على نسبة دهون صحية (12-20%) 4) زنك (لحمة، بذور قرع) 5) فيتامين د (3000-5000IU يومياً) 6) قلل الكحول 7) تحكم في التوتر (الكورتيزول بيقتل التستوستيرون) 8) كل دهون كافية (20-35% من السعرات) 9) متعملش كراش دايت 10) دش بارد (تأثير خفيف). خرافات: الصويا مش بتنزل التست. مفيش مكمل بيرفع التست بشكل كبير (وفر فلوسك). لو الأعراض مستمرة، اعمل تحليل دم!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v33: Back Pain Prevention ─────────────────────────────────
+  {
+    keywords: ['back pain', 'lower back pain', 'back pain gym', 'back pain deadlift', 'herniated disc', 'slipped disc', 'back pain exercise'],
+    keywordsAr: ['ألم ظهر', 'ألم أسفل الظهر', 'ألم ظهر جيم', 'ألم ظهر ديدلفت', 'انزلاق غضروفي', 'ديسك'],
+    keywordsFranco: ['alam dahr', 'alam asfal el dahr', 'alam dahr gym', 'alam dahr deadlift', 'enzla2 ghodrofy', 'disc'],
+    stateId: 'HP_MENU',
+    response: { en: 'Back pain prevention & management: PREVENTION: 1) Core strengthening (planks, dead bugs, bird dogs) 2) Hip hinge pattern (learn proper deadlift form) 3) Don\'t round lower back under load 4) Strengthen glutes (weak glutes = back takes over) 5) Stretch hip flexors daily. IF YOU HAVE PAIN: McGill Big 3 (curl-up, side plank, bird dog) — evidence-based. Walking is the BEST medicine for back pain. AVOID: Sit-ups/crunches (bad for discs), heavy good mornings, loaded flexion. See a doctor if: pain radiates down legs, numbness/tingling, or pain >2 weeks.', ar: 'منع وإدارة ألم الظهر: الوقاية: 1) تقوية الكور (بلانك، ديد باجز، بيرد دوج) 2) نمط الهيب هينج (اتعلم فورم الديدلفت الصح) 3) متقوسش أسفل الظهر تحت حمل 4) قوي الأرداف (أرداف ضعيفة = الظهر بياخد الحمل) 5) استرتش الهيب فليكسور يومياً. لو عندك ألم: ماكجيل بيج 3 (كيرل اب، سايد بلانك، بيرد دوج) — مثبت علمياً. المشي أفضل دواء لألم الظهر. تجنب: سيت اب/كرانش (سيئة للديسك)، جود مورنينج ثقيل. روح دكتور لو: الألم بيمتد للرجل، تنميل، أو ألم >أسبوعين.' },
+    priority: 9,
+    domain: 'health',
+  },
+
+  // ── v33: Fitness Tracking Apps ────────────────────────────────
+  {
+    keywords: ['fitness app', 'best gym app', 'tracking app', 'calorie tracking app', 'workout log app', 'myfitnesspal', 'strong app'],
+    keywordsAr: ['أبلكيشن فيتنس', 'أفضل أبلكيشن جيم', 'أبلكيشن تتبع', 'أبلكيشن سعرات', 'أبلكيشن تمرين'],
+    keywordsFranco: ['app fitness', 'afdal app gym', 'app tatabo3', 'app so3rat', 'app tamreen'],
+    stateId: 'QA_MENU',
+    response: { en: 'Fitness apps guide: CALORIE TRACKING: MyFitnessPal (best database), Cronometer (most accurate). WORKOUT LOGGING: Strong (clean UI, free tier good), Hevy (social features). STEPS/ACTIVITY: Apple Health, Google Fit, Samsung Health. PROGRAMS: JEFIT, RP Hypertrophy (paid). BUT: You\'re already using FORMA — which combines workout tracking, nutrition, AI coaching, and programs! Our app is designed specifically for the Egyptian market with local foods, Arabic support, and culturally relevant content. Use Forma as your primary app!', ar: 'دليل أبلكيشنات الفيتنس: تتبع سعرات: MyFitnessPal (أكبر داتابيز)، Cronometer (أدق). تسجيل تمرين: Strong (واجهة نظيفة)، Hevy (ميزات اجتماعية). خطوات/نشاط: Apple Health، Google Fit، Samsung Health. برامج: JEFIT، RP Hypertrophy (مدفوع). بس: انت بالفعل بتستخدم FORMA — اللي بيجمع تتبع التمرين، التغذية، كوتشنج ذكي، وبرامج! الأبلكيشن بتاعنا مصمم خصيصاً للسوق المصري بأكل محلي، دعم عربي، ومحتوى ثقافي مناسب. استخدم فورما كأبلكيشنك الأساسي!' },
+    priority: 7,
+    domain: 'root',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
