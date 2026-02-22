@@ -646,7 +646,7 @@ export default function GuidedChat() {
         return;
       }
 
-      // Show bot response
+      // Show bot response + optional tip
       if (match.response) {
         const msg = isAr ? match.response.ar : match.response.en;
         setTimeout(() => {
@@ -654,6 +654,17 @@ export default function GuidedChat() {
             id: `bot-${Date.now()}`, type: 'bot', text: msg,
             stateId: match.stateId, domain: 'root', timestamp: Date.now(),
           }]);
+          // Show contextual tip (if any) with a slight delay
+          if (match.tip) {
+            const tipMsg = isAr ? match.tip.ar : match.tip.en;
+            setTimeout(() => {
+              setHistory(prev => [...prev, {
+                id: `tip-${Date.now()}`, type: 'bot',
+                text: `💡 ${tipMsg}`,
+                stateId: match.stateId, domain: 'root', timestamp: Date.now(),
+              }]);
+            }, 800);
+          }
         }, 300);
       }
 

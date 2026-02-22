@@ -17,6 +17,25 @@ export interface IntentMatch {
   response?: { en: string; ar: string };
   // Extracted parameters from the text (e.g., weight value, water amount)
   extractedParams?: Record<string, string>;
+  // Optional follow-up tip (shown as a subtle hint after the response)
+  tip?: { en: string; ar: string };
+}
+
+// ─── Conversation Topic Tracker ──────────────────────────────
+// Tracks last 3 matched domains for multi-turn context awareness
+const recentDomains: string[] = [];
+
+export function trackDomain(domain: string) {
+  recentDomains.unshift(domain);
+  if (recentDomains.length > 3) recentDomains.pop();
+}
+
+export function getRecentDomains(): string[] {
+  return [...recentDomains];
+}
+
+export function isRepeatingDomain(domain: string): boolean {
+  return recentDomains.length >= 2 && recentDomains[0] === domain && recentDomains[1] === domain;
 }
 
 interface IntentRule {
@@ -1877,6 +1896,54 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── Egyptian Gym Bro Language ───────────────────────────────
+  {
+    keywords: ['pump', 'getting a pump', 'chasing the pump', 'good pump'],
+    keywordsAr: ['بمب', 'الباميب', 'حاسس ببمب'],
+    keywordsFranco: ['pump', 'bamb'],
+    stateId: 'WK_LOG',
+    response: { en: "Great pump! Don't forget to log your workout while the gains are fresh:", ar: 'بمب جامد! متنساش تسجل تمرينك والمكاسب لسه فريش:' },
+    priority: 6,
+    domain: 'workout',
+  },
+  {
+    keywords: ['what muscle today', 'which muscle', 'what body part', 'what should i train today'],
+    keywordsAr: ['امرن ايه النهارده', 'ايه العضلة', 'ايه الجزء'],
+    keywordsFranco: ['amaren eh el naharda', 'eh el 3adala'],
+    stateId: 'WK_TODAY',
+    route: '/workouts',
+    response: { en: "Let me check your program for today's muscle group:", ar: 'هشوفلك البرنامج عضلة ايه النهارده:' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['how much should i lift', 'what weight', 'how heavy', 'right weight for me'],
+    keywordsAr: ['ارفع كام', 'الوزن المناسب', 'كام كيلو ارفع'],
+    keywordsFranco: ['arfa3 kam', 'el wazn el monaseb'],
+    stateId: 'WK_MENU',
+    response: { en: 'Choose a weight where the last 2-3 reps are challenging but form stays clean. If you can do 15+ reps easily, go heavier. If form breaks at rep 5, go lighter.', ar: 'اختار وزن آخر 2-3 تكرارات يبقوا صعبين بس الفورم تمام. لو بتعمل 15+ بسهولة، زود. لو الفورم بيبوظ عند 5، خفف.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['flex', 'show muscles', 'look jacked', 'mirror selfie', 'progress photo', 'progress pic'],
+    keywordsAr: ['فليكس', 'صورة تقدم', 'صورة بروجرس'],
+    keywordsFranco: ['flex', 'soret ta2adom', 'progress pic'],
+    stateId: 'PR_MENU',
+    response: { en: "Progress photos are great motivation! Take one monthly, same lighting, same pose. Let's track your progress:", ar: 'صور التقدم بتحفز جداً! خد صورة كل شهر، نفس الإضاءة، نفس الوضع. يلا نتابع تقدمك:' },
+    priority: 6,
+    domain: 'progress',
+  },
+  {
+    keywords: ['ego lifting', 'ego lift', 'too heavy', 'form broke', 'bad form'],
+    keywordsAr: ['ايجو ليفت', 'فورم وحش', 'وزن تقيل أوي'],
+    keywordsFranco: ['ego lift', 'form we7esh', 'wazn te2il awy'],
+    stateId: 'WK_FORM_MENU',
+    response: { en: "Leave the ego at the door! Lower the weight 10-20%, nail the form, and you'll grow faster. Form > weight always.", ar: 'سيب الإيجو برا الجيم! خفف 10-20%، ظبط الفورم، وهتكبر أسرع. الفورم أهم من الوزن دايماً.' },
+    priority: 8,
+    domain: 'workout',
+  },
+
   // ── Egyptian Context (Gym Culture) ─────────────────────────
   {
     keywords: ['gym near me', 'find gym', 'best gym', 'gym recommendation'],
@@ -2237,13 +2304,52 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
     }
   }
 
+  // Track domain for multi-turn context
+  if (bestMatch.rule.domain) trackDomain(bestMatch.rule.domain);
+
+  // Generate contextual tips based on the matched intent
+  const tip = generateTip(bestMatch.rule.stateId, bestMatch.rule.domain);
+
   return {
     stateId: bestMatch.rule.stateId,
     confidence,
     action: bestMatch.rule.route ? { type: 'navigate', route: bestMatch.rule.route } : undefined,
     response,
     extractedParams: Object.keys(extractedParams).length > 0 ? extractedParams : undefined,
+    tip,
   };
+}
+
+// ─── Contextual Tips ──────────────────────────────────────────
+// Adds a subtle educational tip based on matched intent domain + time
+function generateTip(stateId: string, domain?: string): { en: string; ar: string } | undefined {
+  const hour = new Date().getHours();
+
+  // Only show tips 30% of the time to not be annoying
+  if (Math.random() > 0.3) return undefined;
+
+  const tips: Array<{ condition: () => boolean; tip: { en: string; ar: string } }> = [
+    { condition: () => domain === 'workout' && hour >= 5 && hour < 10,
+      tip: { en: 'Tip: Morning workouts boost metabolism for the entire day!', ar: 'نصيحة: تمارين الصبح بترفع الحرق طول اليوم!' } },
+    { condition: () => domain === 'workout' && hour >= 21,
+      tip: { en: 'Tip: Finish intense workouts 2+ hours before bed for better sleep.', ar: 'نصيحة: خلص التمرين الجامد قبل النوم بساعتين على الأقل.' } },
+    { condition: () => domain === 'nutrition' && stateId.includes('LOG'),
+      tip: { en: 'Tip: Consistent tracking is more important than perfect accuracy.', ar: 'نصيحة: الانتظام في التسجيل أهم من الدقة المطلقة.' } },
+    { condition: () => domain === 'nutrition' && stateId.includes('PROTEIN'),
+      tip: { en: 'Tip: Spread protein across 4-5 meals for optimal absorption (30-40g each).', ar: 'نصيحة: وزع البروتين على 4-5 وجبات للامتصاص الأمثل (30-40 جرام كل وجبة).' } },
+    { condition: () => stateId === 'PR_LOG_WEIGHT',
+      tip: { en: 'Tip: Weigh yourself at the same time each day (morning, empty stomach) for consistency.', ar: 'نصيحة: اوزن نفسك نفس الوقت كل يوم (الصبح، بطن فاضية) للدقة.' } },
+    { condition: () => domain === 'recovery',
+      tip: { en: 'Tip: Sleep 7-9 hours. It\'s when your muscles actually grow!', ar: 'نصيحة: نام 7-9 ساعات. ده الوقت اللي العضلات بتكبر فيه فعلاً!' } },
+    { condition: () => stateId.includes('WATER'),
+      tip: { en: 'Tip: Drink 500ml water first thing in the morning to kickstart hydration.', ar: 'نصيحة: اشرب 500مل مية أول ما تصحى علشان تبدأ الترطيب.' } },
+    { condition: () => domain === 'supplements',
+      tip: { en: 'Tip: Supplements support a good diet — they don\'t replace it.', ar: 'نصيحة: المكملات بتدعم الأكل الكويس — مش بتبدله.' } },
+  ];
+
+  const matching = tips.filter(t => t.condition());
+  if (matching.length === 0) return undefined;
+  return matching[Math.floor(Math.random() * matching.length)].tip;
 }
 
 /**
