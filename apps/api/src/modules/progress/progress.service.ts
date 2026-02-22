@@ -1,6 +1,6 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { LogWeightDto, LogMeasurementsDto } from './dto/progress.dto';
+import { LogWeightDto, LogMeasurementsDto, CreateProgressPhotoDto } from './dto/progress.dto';
 
 @Injectable()
 export class ProgressService {
@@ -210,5 +210,47 @@ export class ProgressService {
           }
         : null,
     };
+  }
+
+  async createPhoto(userId: string, dto: CreateProgressPhotoDto) {
+    return this.prisma.progressPhoto.create({
+      data: {
+        userId,
+        photoUrl: dto.imageUrl,
+        angle: dto.label,
+        notes: dto.notes,
+        sharedWithTrainer: dto.sharedWithTrainer ?? false,
+      },
+    });
+  }
+
+  async getPhotos(userId: string) {
+    return this.prisma.progressPhoto.findMany({
+      where: { userId },
+      orderBy: { loggedAt: 'desc' },
+      select: {
+        id: true,
+        photoUrl: true,
+        thumbnailUrl: true,
+        angle: true,
+        loggedAt: true,
+        notes: true,
+        isPublic: true,
+        sharedWithTrainer: true,
+      },
+    });
+  }
+
+  async deletePhoto(userId: string, photoId: string) {
+    const photo = await this.prisma.progressPhoto.findFirst({
+      where: { id: photoId, userId },
+    });
+
+    if (!photo) {
+      throw new NotFoundException('Photo not found');
+    }
+
+    await this.prisma.progressPhoto.delete({ where: { id: photoId } });
+    return { success: true };
   }
 }

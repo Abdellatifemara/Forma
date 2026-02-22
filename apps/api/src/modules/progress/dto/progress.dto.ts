@@ -1,4 +1,4 @@
-import { IsNumber, IsOptional, IsString, Min, Max, IsDateString } from 'class-validator';
+import { IsNumber, IsOptional, IsString, IsUrl, IsBoolean, Min, Max, IsDateString } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 
 export class LogWeightDto {
@@ -73,4 +73,25 @@ export class LogMeasurementsDto {
   @IsOptional()
   @IsDateString()
   date?: string;
+}
+
+export class CreateProgressPhotoDto {
+  @ApiProperty({ description: 'URL of the uploaded image (from /upload/image)', example: 'https://media.formaeg.com/images/abc/123.jpg' })
+  @IsUrl()
+  imageUrl: string;
+
+  @ApiPropertyOptional({ description: 'Label/angle for the photo', example: 'front' })
+  @IsOptional()
+  @IsString()
+  label?: string;
+
+  @ApiPropertyOptional({ description: 'Notes about the photo' })
+  @IsOptional()
+  @IsString()
+  notes?: string;
+
+  @ApiPropertyOptional({ description: 'Whether to share with trainer', default: false })
+  @IsOptional()
+  @IsBoolean()
+  sharedWithTrainer?: boolean;
 }

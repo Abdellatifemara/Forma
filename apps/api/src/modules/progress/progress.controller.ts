@@ -1,11 +1,11 @@
-import { Controller, Get, Post, Body, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Delete, Body, Param, Query, UseGuards } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { ProgressService } from './progress.service';
 import { AchievementsService } from '../achievements/achievements.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
-import { LogWeightDto, LogMeasurementsDto } from './dto/progress.dto';
+import { LogWeightDto, LogMeasurementsDto, CreateProgressPhotoDto } from './dto/progress.dto';
 
 @ApiTags('progress')
 @ApiBearerAuth()
@@ -65,5 +65,26 @@ export class ProgressController {
   @ApiResponse({ status: 200, description: 'Returns current weight, body fat, and recent changes' })
   async getLatestProgress(@CurrentUser() user: User) {
     return this.progressService.getLatestProgress(user.id);
+  }
+
+  @Post('photos')
+  @ApiOperation({ summary: 'Save a progress photo URL' })
+  @ApiResponse({ status: 201, description: 'Photo record created' })
+  async createPhoto(@CurrentUser() user: User, @Body() dto: CreateProgressPhotoDto) {
+    return this.progressService.createPhoto(user.id, dto);
+  }
+
+  @Get('photos')
+  @ApiOperation({ summary: 'Get all progress photos' })
+  @ApiResponse({ status: 200, description: 'Returns list of progress photos' })
+  async getPhotos(@CurrentUser() user: User) {
+    return this.progressService.getPhotos(user.id);
+  }
+
+  @Delete('photos/:id')
+  @ApiOperation({ summary: 'Delete a progress photo' })
+  @ApiResponse({ status: 200, description: 'Photo deleted' })
+  async deletePhoto(@CurrentUser() user: User, @Param('id') photoId: string) {
+    return this.progressService.deletePhoto(user.id, photoId);
   }
 }
