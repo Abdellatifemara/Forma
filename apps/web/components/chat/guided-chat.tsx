@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/lib/i18n';
 import { getState, INITIAL_STATE } from '@/lib/chat';
 import type { ChatState, ChatOption, StateAction, GptEnhancedConfig } from '@/lib/chat/types';
-import { matchIntent, getSuggestions } from '@/lib/chat/intent-matcher';
+import { matchIntent, getSuggestions, getFollowUpSuggestions } from '@/lib/chat/intent-matcher';
 import { useRouter } from 'next/navigation';
 import { Send } from 'lucide-react';
 import {
@@ -916,6 +916,37 @@ export default function GuidedChat() {
               </div>
             </div>
           )}
+
+          {/* Follow-up suggestions after successful actions */}
+          {!isLoading && !pendingAction && history.length > 2 && (() => {
+            const lastEntry = history[history.length - 1];
+            if (lastEntry?.type === 'data' && lastEntry.success) {
+              const followUps = getFollowUpSuggestions(currentStateId, isAr);
+              if (followUps.length === 0) return null;
+              return (
+                <div className="flex flex-wrap gap-1.5 mt-1 animate-fade-up">
+                  {followUps.map((fu, i) => (
+                    <button
+                      key={i}
+                      onClick={() => {
+                        setHistory(prev => [...prev, {
+                          id: `user-${Date.now()}`, type: 'user', text: fu.label, timestamp: Date.now(),
+                        }]);
+                        try {
+                          getState(fu.stateId);
+                          transitionTo(fu.stateId);
+                        } catch {}
+                      }}
+                      className="text-[11px] px-2.5 py-1 rounded-full border border-primary/20 text-primary hover:bg-primary/8 transition-colors"
+                    >
+                      {fu.label}
+                    </button>
+                  ))}
+                </div>
+              );
+            }
+            return null;
+          })()}
 
           <div ref={bottomRef} />
         </div>

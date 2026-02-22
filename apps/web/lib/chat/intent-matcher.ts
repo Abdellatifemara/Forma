@@ -6,7 +6,8 @@
  *
  * Supports: English, Arabic (Egyptian dialect), Franco-Arab (Arabizi)
  *
- * v2 — 150+ intent rules, context-aware scoring, fuzzy matching, Arabizi
+ * v6 — 200+ intent rules, compound queries, synonym expansion, follow-ups,
+ *       food name detection, fitness Q&A, contextual Egyptian patterns
  */
 
 export interface IntentMatch {
@@ -147,8 +148,122 @@ function extractNumbers(text: string): Record<string, string> {
   return params;
 }
 
+// ─── Synonym Expansion ───────────────────────────────────────
+// Maps casual/slang phrases to canonical keywords for better matching
+const SYNONYMS: Record<string, string> = {
+  'shed weight': 'lose weight', 'drop weight': 'lose weight', 'slim down': 'lose weight',
+  'get lean': 'lose weight', 'shred': 'lose weight', 'trim down': 'lose weight',
+  'gain mass': 'build muscle', 'get jacked': 'build muscle', 'get big': 'build muscle',
+  'get swole': 'build muscle', 'put on muscle': 'build muscle', 'get ripped': 'build muscle',
+  'get shredded': 'lose weight', 'get toned': 'lose weight',
+  'guns': 'biceps', 'pythons': 'biceps', 'pipes': 'biceps',
+  'lats': 'back', 'wing': 'back', 'wings': 'back',
+  'pec': 'chest', 'pecs': 'chest', 'titties': 'chest',
+  'rear delt': 'shoulders', 'front delt': 'shoulders', 'side delt': 'shoulders', 'lateral raise': 'shoulders',
+  'wheels': 'legs', 'pins': 'legs',
+  'tummy': 'abs', 'belly': 'abs', 'stomach': 'abs', 'midsection': 'abs',
+  'nap': 'sleep', 'slept': 'sleep',
+  'cals': 'calories', 'kcal': 'calories',
+  'carb': 'carbs', 'carbohydrate': 'carbs',
+  'fats': 'fat',
+  'supp': 'supplement', 'supps': 'supplements',
+  'preworkout': 'pre workout', 'pre-workout': 'pre workout',
+  'postworkout': 'post workout', 'post-workout': 'post workout',
+  'bench': 'bench press', 'flat bench': 'bench press', 'incline bench': 'chest',
+  'pull up': 'pull ups', 'pullup': 'pull ups', 'chin up': 'pull ups', 'chinup': 'pull ups',
+  'dip': 'dips', 'parallel bar': 'dips',
+  'overhead press': 'ohp', 'military press': 'ohp',
+  'dl': 'deadlift', 'rdl': 'deadlift',
+  'bb': 'barbell', 'db': 'dumbbell',
+  // Arabic slang → standard
+  'بطني': 'بطن', 'كرشي': 'بطن', 'كرش': 'بطن',
+  'دراعي': 'دراع', 'رجلي': 'رجل', 'كتفي': 'كتف',
+  'ضهري': 'ضهر', 'صدري': 'صدر',
+  // Franco slang
+  'batny': 'batn', 'karshy': 'batn', 'dra3y': 'dra3',
+};
+
+function expandSynonyms(text: string): string {
+  let result = text;
+  for (const [alias, canonical] of Object.entries(SYNONYMS)) {
+    if (result.includes(alias)) {
+      result = result.replace(alias, canonical);
+    }
+  }
+  return result;
+}
+
+// ─── Common Food Names (for direct food search detection) ────
+const FOOD_NAMES: string[] = [
+  // Egyptian staples
+  'rice', 'chicken', 'eggs', 'egg', 'bread', 'beans', 'lentils', 'pasta', 'oats', 'milk',
+  'yogurt', 'cheese', 'tuna', 'salmon', 'beef', 'meat', 'fish', 'shrimp', 'turkey',
+  'potato', 'potatoes', 'sweet potato', 'banana', 'apple', 'orange', 'dates', 'avocado',
+  'peanut butter', 'almonds', 'nuts', 'honey', 'olive oil',
+  // Egyptian dishes
+  'foul', 'ful', 'koshari', 'koshary', 'taameya', 'falafel', 'molokhia', 'bamia',
+  'mahshi', 'shawarma', 'kebab', 'kofta', 'feteer', 'hawawshi', 'besarah', 'fattah',
+  'roz bel laban', 'om ali', 'konafa', 'basbousa', 'fiteer',
+  // Supplements
+  'whey', 'casein', 'bcaa', 'glutamine', 'multivitamin', 'omega 3', 'fish oil',
+  'zinc', 'vitamin d', 'vitamin c', 'magnesium', 'collagen',
+  // Arabic food names
+  'فول', 'كشري', 'طعمية', 'ملوخية', 'بامية', 'محشي', 'شاورما', 'كباب', 'كفتة',
+  'فتة', 'أرز', 'فراخ', 'بيض', 'عيش', 'جبنة', 'زبادي', 'تونة', 'لحمة', 'سمك',
+  'بطاطس', 'موز', 'تفاح', 'برتقال', 'بلح', 'عسل', 'شوفان', 'لبن', 'مكرونة',
+];
+
+function detectFoodQuery(text: string): string | null {
+  const lower = text.toLowerCase();
+  // Direct food name match (2+ chars, not a common verb/action)
+  for (const food of FOOD_NAMES) {
+    if (lower === food || lower.startsWith(food + ' ') || lower.endsWith(' ' + food) || lower.includes(' ' + food + ' ')) {
+      return food;
+    }
+  }
+  // "how many calories in X" pattern — extract X
+  const calorieIn = lower.match(/(?:calories? in|سعرات? في|كام سعر(?:ة)? في)\s+(.+)/);
+  if (calorieIn) return calorieIn[1].trim();
+  return null;
+}
+
+// ─── Compound Query Splitter ──────────────────────────────────
+// "chest and triceps" → ["chest", "triceps"]
+// "back and biceps workout" → ["back", "biceps"]
+function splitCompound(text: string): string[] | null {
+  const conjunctions = /\s+(?:and|&|و|w|,)\s+/;
+  if (!conjunctions.test(text)) return null;
+  const parts = text.split(conjunctions).map(s => s.trim()).filter(Boolean);
+  return parts.length >= 2 ? parts : null;
+}
+
+// ─── Follow-up Suggestions ───────────────────────────────────
+// Returns contextual follow-up actions based on what user just did
+export function getFollowUpSuggestions(lastStateId: string, isAr: boolean): Array<{ label: string; stateId: string }> {
+  const suggestions: Array<{ label: string; stateId: string }> = [];
+  const prefix = lastStateId.split('_')[0];
+
+  if (prefix === 'NT' || lastStateId.includes('MEAL') || lastStateId.includes('FOOD')) {
+    suggestions.push({ label: isAr ? 'شوف ملخص اليوم' : 'View daily summary', stateId: 'NT_TODAY' });
+    suggestions.push({ label: isAr ? 'سجل مية' : 'Log water', stateId: 'NT_LOG_WATER' });
+    suggestions.push({ label: isAr ? 'سجل وجبة تانية' : 'Log another meal', stateId: 'NT_LOG_MEAL' });
+  } else if (prefix === 'WK' || lastStateId.includes('WORKOUT')) {
+    suggestions.push({ label: isAr ? 'سجل تمرين' : 'Log workout', stateId: 'WK_LOG' });
+    suggestions.push({ label: isAr ? 'استرتش' : 'Stretch', stateId: 'WK_POST' });
+    suggestions.push({ label: isAr ? 'أكل بعد التمرين' : 'Post-workout meal', stateId: 'NT_POST_WORKOUT' });
+  } else if (prefix === 'PR' || lastStateId.includes('WEIGHT')) {
+    suggestions.push({ label: isAr ? 'شوف تقدمي' : 'View progress', stateId: 'PR_MENU' });
+    suggestions.push({ label: isAr ? 'سجل وجبة' : 'Log meal', stateId: 'NT_LOG_MEAL' });
+  } else if (prefix === 'HL') {
+    suggestions.push({ label: isAr ? 'ريكفري' : 'Recovery status', stateId: 'RC_MENU' });
+    suggestions.push({ label: isAr ? 'سجل وجبة' : 'Log meal', stateId: 'NT_LOG_MEAL' });
+  }
+
+  return suggestions.slice(0, 3);
+}
+
 // ─── Intent Rules ────────────────────────────────────────────
-// 150+ rules organized by domain. Most specific → least specific.
+// 200+ rules organized by domain. Most specific → least specific.
 
 const INTENT_RULES: IntentRule[] = [
   // ══════════════════════════════════════════════════════════
@@ -1349,6 +1464,203 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ══════════════════════════════════════════════════════════
+  // ── Fitness Q&A (Common Questions) ─────────────────────────
+  // ══════════════════════════════════════════════════════════
+  {
+    keywords: ['is creatine safe', 'creatine side effects', 'should i take creatine'],
+    keywordsAr: ['الكرياتين آمن', 'اعراض الكرياتين', 'اخد كرياتين'],
+    keywordsFranco: ['creatine safe', 'a5od creatine'],
+    stateId: 'SP_MENU',
+    response: { en: 'Creatine is one of the most researched supplements — very safe. 5g/day is the standard dose. Let me show you more:', ar: 'الكرياتين من أكتر المكملات اللي اتعمل عليها أبحاث — آمن جداً. 5 جرام يومياً هي الجرعة المعتادة. خليني أوريك أكتر:' },
+    priority: 9,
+    domain: 'supplements',
+  },
+  {
+    keywords: ['how often should i train', 'how many days', 'how many times a week', 'training frequency', 'workout frequency'],
+    keywordsAr: ['اتمرن كام يوم', 'كام مرة في الاسبوع', 'عدد ايام التمرين'],
+    keywordsFranco: ['at2amen kam yom', 'kam mara fel esbo3'],
+    stateId: 'PG_MENU',
+    response: { en: '3-5 days/week is ideal for most people. Beginners: 3 days, Intermediate: 4, Advanced: 5-6. Rest is part of training!', ar: '3-5 أيام في الأسبوع مثالي. مبتدئين: 3 أيام، متوسط: 4، متقدم: 5-6. الراحة جزء من التمرين!' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['how much water should i drink', 'water intake', 'daily water', 'hydration needs'],
+    keywordsAr: ['اشرب كام لتر', 'كمية المية', 'المية اليومية'],
+    keywordsFranco: ['eshrab kam litr', 'kemyet el mayya'],
+    stateId: 'NT_LOG_WATER',
+    response: { en: 'Aim for 2.5-3.5 liters daily. More if you train hard or in hot weather. Track your intake:', ar: 'حاول 2.5-3.5 لتر يومياً. أكتر لو بتتمرن جامد أو الجو حر. سجل شربك:' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['am i overtraining', 'overtraining', 'too much exercise', 'training too much'],
+    keywordsAr: ['بتمرن كتير', 'أوفر ترينينج', 'تمرين زيادة'],
+    keywordsFranco: ['overtraining', 'bat2amen keter'],
+    stateId: 'RC_MENU',
+    response: { en: 'Signs of overtraining: constant fatigue, strength loss, poor sleep, mood changes. Let me check your recovery:', ar: 'علامات الأوفر ترينينج: تعب مستمر، فقدان قوة، نوم وحش، تغيير مزاج. خليني أشوف الريكفري:' },
+    priority: 8,
+    domain: 'recovery',
+  },
+  {
+    keywords: ['best time to workout', 'when to train', 'morning or evening workout', 'what time to exercise'],
+    keywordsAr: ['احسن وقت للتمرين', 'اتمرن امتى', 'الصبح ولا بليل'],
+    keywordsFranco: ['a7san wa2t lel tamreen', 'at2amen emta'],
+    stateId: 'WK_MENU',
+    response: { en: 'The best time to train is whenever you can be consistent! But strength peaks in late afternoon (4-6 PM). Pick what fits your schedule:', ar: 'أحسن وقت للتمرين هو الوقت اللي تقدر تلتزم بيه! بس القوة بتبقى في أعلاها بعد الظهر (4-6 مساءً). اختار اللي يناسب جدولك:' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['how long to see results', 'when will i see results', 'how fast results', 'how long until'],
+    keywordsAr: ['هشوف نتيجة امتى', 'النتايج هتبان امتى', 'كام شهر'],
+    keywordsFranco: ['hashoof nateega emta', 'kam shahr'],
+    stateId: 'PR_MENU',
+    response: { en: 'Strength gains: 2-4 weeks. Visible muscle: 8-12 weeks. Significant transformation: 3-6 months. Consistency is king!', ar: 'زيادة القوة: 2-4 أسابيع. عضل ظاهر: 8-12 أسبوع. تحول كبير: 3-6 شهور. الالتزام هو المفتاح!' },
+    priority: 7,
+    domain: 'progress',
+  },
+  {
+    keywords: ['what should i eat before bed', 'bedtime snack', 'eat before sleep', 'night snack'],
+    keywordsAr: ['آكل ايه قبل النوم', 'سناك قبل النوم', 'أكل بليل'],
+    keywordsFranco: ['akol eh 2abl el nom', 'snack 2abl el nom'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Before bed: casein protein, Greek yogurt, cottage cheese, or a small handful of nuts. Slow-digesting protein helps recovery!', ar: 'قبل النوم: كازين بروتين، زبادي يوناني، جبنة قريش، أو مكسرات قليلة. البروتين البطيء بيساعد في الريكفري!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['muscle not growing', 'plateau', 'stuck', 'no progress', 'not gaining', 'hit a wall'],
+    keywordsAr: ['العضل مش بيكبر', 'واقف في مكاني', 'مفيش تقدم'],
+    keywordsFranco: ['el 3adal msh byekbar', 'wa2ef fe makany', 'mafesh ta2adom'],
+    stateId: 'PR_MENU',
+    response: { en: "Plateaus are normal! Try: 1) Increase volume/intensity 2) Eat more protein 3) Sleep 7-9h 4) Deload then push harder. Let's analyze:", ar: 'الوقفات طبيعية! جرب: 1) زود الحجم/الشدة 2) كل بروتين أكتر 3) نام 7-9 ساعات 4) ديلود وبعدها اضغط أكتر. يلا نحلل:' },
+    priority: 8,
+    domain: 'progress',
+  },
+  {
+    keywords: ['am i eating enough', 'eating too little', 'not eating enough', 'undereating'],
+    keywordsAr: ['باكل كفاية', 'مش باكل كفاية', 'باكل قليل'],
+    keywordsFranco: ['bakol kefaya', 'msh bakol kefaya'],
+    stateId: 'NT_CALC',
+    response: { en: "Let's check! I'll calculate your daily needs based on your profile:", ar: 'يلا نشوف! هحسبلك احتياجك اليومي بناءً على بروفايلك:' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['can i eat junk food', 'cheat meal ok', 'is pizza ok', 'can i have sweets'],
+    keywordsAr: ['اقدر آكل جانك', 'شيت ميل ماشي', 'حلويات ماشي'],
+    keywordsFranco: ['a2dar akol junk', 'cheat meal mashy'],
+    stateId: 'NT_ALTERNATIVES',
+    response: { en: "80/20 rule! If 80% of your diet is clean, 20% flexible is fine. Balance is key. Want healthier alternatives?", ar: 'قاعدة 80/20! لو 80% من أكلك نظيف، 20% مرنة ماشي. التوازن هو المفتاح. عايز بدائل صحية؟' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['how to lose belly fat', 'reduce belly', 'flat stomach', 'lose tummy', 'spot reduce'],
+    keywordsAr: ['ازاي اخس من بطني', 'انزل الكرش', 'بطن مسطح', 'اخس بطن'],
+    keywordsFranco: ['ezay a5as men batny', 'anzal el karsh'],
+    stateId: 'PR_MENU',
+    response: { en: "You can't spot-reduce fat — it comes off everywhere through caloric deficit + strength training. Focus on: diet, compounds lifts, and cardio:", ar: 'مفيش حاجة اسمها تخسيس من مكان معين — الدهون بتنزل من كل الجسم بالعجز الحراري + تمارين المقاومة. ركز على: الأكل، تمارين مركبة، وكارديو:' },
+    priority: 8,
+    domain: 'progress',
+  },
+  {
+    keywords: ['sore muscles', 'doms', 'muscle soreness', 'muscles ache', 'body ache'],
+    keywordsAr: ['عضلاتي بتوجعني', 'تكسير', 'جسمي بيوجعني', 'وجع عضلات'],
+    keywordsFranco: ['3adalaty betwga3ny', 'takseer', 'gesmy beyewga3ny'],
+    stateId: 'RC_MENU',
+    response: { en: 'Muscle soreness (DOMS) is normal 24-72h after training. It means your muscles are adapting! Recovery options:', ar: 'وجع العضلات (DOMS) طبيعي 24-72 ساعة بعد التمرين. ده معناه عضلاتك بتتأقلم! خيارات الريكفري:' },
+    priority: 8,
+    domain: 'recovery',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  // ── Smart Status Queries ───────────────────────────────────
+  // ══════════════════════════════════════════════════════════
+  {
+    keywords: ['am i on track', 'on track', 'how am i doing today', "today's status", 'daily check'],
+    keywordsAr: ['أنا ماشي صح', 'النهارده ايه', 'حالتي النهارده'],
+    keywordsFranco: ['ana mashy sa7', 'el naharda eh'],
+    stateId: 'NT_TODAY',
+    route: '/nutrition',
+    response: { en: "Let me check your daily progress:", ar: 'هشوفلك تقدمك النهارده:' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['what did i eat today', 'meals today', 'food today', 'how much did i eat', "what's left to eat"],
+    keywordsAr: ['أكلت ايه النهارده', 'وجباتي النهارده', 'فاضلي كام'],
+    keywordsFranco: ['akalt eh el naharda', 'wagbaty el naharda', 'fadly kam'],
+    stateId: 'NT_TODAY',
+    route: '/nutrition',
+    response: { en: "Here's what you've eaten today:", ar: 'ده اللي أكلته النهارده:' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['how much protein left', 'remaining protein', 'protein left', 'macros left', 'remaining calories'],
+    keywordsAr: ['فاضلي كام بروتين', 'باقي البروتين', 'فاضلي كام سعر'],
+    keywordsFranco: ['fadly kam protein', 'ba2y el protein'],
+    stateId: 'NT_TODAY',
+    route: '/nutrition',
+    response: { en: "Let me check what's remaining in your daily targets:", ar: 'هشوفلك الباقي من أهدافك اليومية:' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['this week', 'weekly progress', 'week summary', 'this week summary'],
+    keywordsAr: ['الأسبوع ده', 'تقدم الأسبوع', 'ملخص الأسبوع'],
+    keywordsFranco: ['el esbo3 da', 'ta2adom el esbo3'],
+    stateId: 'PR_MENU',
+    route: '/progress',
+    response: { en: "Here's your weekly summary:", ar: 'ده ملخص أسبوعك:' },
+    priority: 8,
+    domain: 'progress',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  // ── More Egyptian Casual Patterns ──────────────────────────
+  // ══════════════════════════════════════════════════════════
+  {
+    keywords: ['want abs', 'get abs', 'see abs', 'six pack abs', 'get a six pack', 'visible abs'],
+    keywordsAr: ['عايز سكس باك', 'عايز بطن', 'ابان بطني'],
+    keywordsFranco: ['3ayez six pack', '3ayez batn', 'aban batny'],
+    stateId: 'WK_FIND_MUSCLE',
+    route: '/exercises?muscle=ABS',
+    response: { en: 'Abs are made in the kitchen (diet) and revealed in the gym! Here are core exercises + nutrition tips:', ar: 'البطن بتتعمل في المطبخ (الدايت) وبتبان في الجيم! دي تمارين بطن + نصايح تغذية:' },
+    priority: 8,
+    domain: 'workout',
+  },
+  {
+    keywords: ['too skinny', 'underweight', 'hard gainer', 'cant gain weight', "can't gain weight", 'skinny'],
+    keywordsAr: ['نحيف', 'وزني قليل', 'مش قادر ازيد', 'هارد جينر'],
+    keywordsFranco: ['na7if', 'wazny 2alil', 'msh 2ader azid', 'hard gainer'],
+    stateId: 'NT_CALC',
+    response: { en: "For gaining: eat in caloric surplus (300-500 above TDEE), high protein, strength training 3-4x/week. Let's calculate your needs:", ar: 'علشان تزيد: كل فوق احتياجك (300-500 فوق TDEE)، بروتين عالي، تمارين مقاومة 3-4 مرات في الأسبوع. يلا نحسب احتياجك:' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['too fat', 'overweight', 'obese', 'need to lose', 'i hate my body', 'so fat'],
+    keywordsAr: ['تخين', 'وزني زيادة', 'سمين', 'لازم اخس', 'مش طايق جسمي'],
+    keywordsFranco: ['te5in', 'wazny zeyada', 'samin', 'lazem a5as'],
+    stateId: 'NT_CALC',
+    response: { en: "No shame — we all start somewhere. Caloric deficit + protein + consistency = results. Let's build your plan:", ar: 'مفيش حرج — كلنا بنبدأ من مكان. عجز حراري + بروتين + التزام = نتايج. يلا نعمل خطتك:' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['protein shake', 'protein smoothie', 'shake recipe', 'smoothie recipe'],
+    keywordsAr: ['بروتين شيك', 'شيك بروتين', 'وصفة شيك'],
+    keywordsFranco: ['protein shake', 'shake recipe'],
+    stateId: 'NT_SUGGEST',
+    response: { en: 'Quick shake: 1 scoop whey + 1 banana + 250ml milk + oats. ~400 cal, 35g protein. More recipes:', ar: 'شيك سريع: سكوب واي + موزة + 250مل لبن + شوفان. ~400 سعر، 35 جرام بروتين. وصفات تانية:' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+
   // ── Common greetings & polite phrases ─────────────────────
   {
     keywords: ['thanks', 'thank you', 'thx', 'appreciate it', 'great', 'awesome', 'perfect', 'nice', 'cool'],
@@ -1422,8 +1734,9 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   let normalized = text.toLowerCase().trim();
   if (normalized.length < 2) return null;
 
-  // Apply typo corrections, then strip conversational noise
+  // Pipeline: typos → synonyms → noise strip → stem
   normalized = fixTypos(normalized);
+  normalized = expandSynonyms(normalized);
   const stripped = stripNoise(normalized); // "show me chest exercises" → "chest exercises"
 
   // Also create a stemmed version for fallback matching
@@ -1433,80 +1746,109 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   // Extract numbers/units from text
   const extractedParams = extractNumbers(normalized);
 
+  // Check for direct food name — route to food search
+  const foodQuery = detectFoodQuery(stripped);
+  if (foodQuery && !extractedParams.weight && !extractedParams.water_ml) {
+    return {
+      stateId: 'NT_SEARCH',
+      confidence: 0.7,
+      action: { type: 'navigate', route: `/nutrition?search=${encodeURIComponent(foodQuery)}` },
+      response: { en: `Looking up "${foodQuery}" for you:`, ar: `بدور على "${foodQuery}":` },
+    };
+  }
+
   const currentDomain = getDomainFromState(currentStateId);
-  let bestMatch: { rule: IntentRule; score: number } | null = null;
+  const result: { bestMatch: { rule: IntentRule; score: number } | null } = { bestMatch: null };
 
-  for (const rule of INTENT_RULES) {
-    let score = 0;
+  // Score a text against all rules
+  function scoreRules(inputText: string, inputStripped: string, inputStemmed: string, inputStemmedStripped: string) {
+    for (const rule of INTENT_RULES) {
+      let score = 0;
 
-    // Check English keywords (against both original and stripped text)
-    for (const kw of rule.keywords) {
-      const kwLower = kw.toLowerCase();
-      if (normalized.includes(kwLower) || stripped.includes(kwLower)) {
-        const kwLen = kw.split(' ').length;
-        score = Math.max(score, kwLen * 2 + (rule.priority || 0));
-      }
-      // Stemmed fallback: try stemmed versions of both
-      else if (stemmed.includes(simpleStem(kwLower)) || stemmedStripped.includes(simpleStem(kwLower))) {
-        const kwLen = kw.split(' ').length;
-        score = Math.max(score, kwLen * 1.5 + (rule.priority || 0) * 0.8);
-      }
-    }
-
-    // Check Arabic keywords (against both original and stripped)
-    if (rule.keywordsAr) {
-      for (const kw of rule.keywordsAr) {
-        if (normalized.includes(kw) || stripped.includes(kw)) {
-          const kwLen = kw.split(' ').length;
-          score = Math.max(score, kwLen * 2 + (rule.priority || 0));
-        }
-      }
-    }
-
-    // Check Franco-Arab / Arabizi keywords (against both)
-    if (rule.keywordsFranco) {
-      for (const kw of rule.keywordsFranco) {
+      // Check English keywords (against both original and stripped text)
+      for (const kw of rule.keywords) {
         const kwLower = kw.toLowerCase();
-        if (normalized.includes(kwLower) || stripped.includes(kwLower)) {
+        if (inputText.includes(kwLower) || inputStripped.includes(kwLower)) {
           const kwLen = kw.split(' ').length;
           score = Math.max(score, kwLen * 2 + (rule.priority || 0));
         }
-      }
-    }
-
-    // Word-level partial matching for short inputs
-    if (score === 0) {
-      const words = normalized.split(/\s+/);
-      const allKeywords = [...rule.keywords, ...(rule.keywordsAr || []), ...(rule.keywordsFranco || [])];
-      for (const kw of allKeywords) {
-        const kwWords = kw.toLowerCase().split(/\s+/);
-        const matchedWords = kwWords.filter(kw => words.some(w => w.includes(kw) || kw.includes(w)));
-        if (matchedWords.length >= Math.ceil(kwWords.length * 0.6)) {
-          score = Math.max(score, matchedWords.length + (rule.priority || 0) * 0.5);
+        // Stemmed fallback: try stemmed versions of both
+        else if (inputStemmed.includes(simpleStem(kwLower)) || inputStemmedStripped.includes(simpleStem(kwLower))) {
+          const kwLen = kw.split(' ').length;
+          score = Math.max(score, kwLen * 1.5 + (rule.priority || 0) * 0.8);
         }
       }
-    }
 
-    // Context boost: same domain gets +3
-    if (score > 0 && rule.domain && rule.domain === currentDomain) {
-      score += 3;
-    }
+      // Check Arabic keywords (against both original and stripped)
+      if (rule.keywordsAr) {
+        for (const kw of rule.keywordsAr) {
+          if (inputText.includes(kw) || inputStripped.includes(kw)) {
+            const kwLen = kw.split(' ').length;
+            score = Math.max(score, kwLen * 2 + (rule.priority || 0));
+          }
+        }
+      }
 
-    // Param-aware boost: if user typed a number related to the rule's domain
-    if (score > 0) {
-      if (extractedParams.weight && (rule.stateId === 'PR_LOG_WEIGHT')) score += 4;
-      if (extractedParams.water_ml && (rule.stateId === 'NT_LOG_WATER')) score += 4;
-      if (extractedParams.steps && (rule.stateId === 'HL_LOG_STEPS')) score += 4;
-      if (extractedParams.duration_min && rule.domain === 'workout') score += 2;
-    }
+      // Check Franco-Arab / Arabizi keywords (against both)
+      if (rule.keywordsFranco) {
+        for (const kw of rule.keywordsFranco) {
+          const kwLower = kw.toLowerCase();
+          if (inputText.includes(kwLower) || inputStripped.includes(kwLower)) {
+            const kwLen = kw.split(' ').length;
+            score = Math.max(score, kwLen * 2 + (rule.priority || 0));
+          }
+        }
+      }
 
-    if (score > 0 && (!bestMatch || score > bestMatch.score)) {
-      bestMatch = { rule, score };
+      // Word-level partial matching for short inputs
+      if (score === 0) {
+        const words = inputText.split(/\s+/);
+        const allKeywords = [...rule.keywords, ...(rule.keywordsAr || []), ...(rule.keywordsFranco || [])];
+        for (const kw of allKeywords) {
+          const kwWords = kw.toLowerCase().split(/\s+/);
+          const matchedWords = kwWords.filter(kw => words.some(w => w.includes(kw) || kw.includes(w)));
+          if (matchedWords.length >= Math.ceil(kwWords.length * 0.6)) {
+            score = Math.max(score, matchedWords.length + (rule.priority || 0) * 0.5);
+          }
+        }
+      }
+
+      // Context boost: same domain gets +3
+      if (score > 0 && rule.domain && rule.domain === currentDomain) {
+        score += 3;
+      }
+
+      // Param-aware boost: if user typed a number related to the rule's domain
+      if (score > 0) {
+        if (extractedParams.weight && (rule.stateId === 'PR_LOG_WEIGHT')) score += 4;
+        if (extractedParams.water_ml && (rule.stateId === 'NT_LOG_WATER')) score += 4;
+        if (extractedParams.steps && (rule.stateId === 'HL_LOG_STEPS')) score += 4;
+        if (extractedParams.duration_min && rule.domain === 'workout') score += 2;
+      }
+
+      if (score > 0 && (!result.bestMatch || score > result.bestMatch.score)) {
+        result.bestMatch = { rule, score };
+      }
     }
   }
 
-  if (!bestMatch || bestMatch.score < 2) return null;
+  // First pass: match against full text
+  scoreRules(normalized, stripped, stemmed, stemmedStripped);
 
+  // Compound query: if "chest and triceps", try matching first part
+  if (!result.bestMatch || result.bestMatch.score < 5) {
+    const parts = splitCompound(stripped);
+    if (parts) {
+      for (const part of parts) {
+        const partStemmed = stemText(part);
+        scoreRules(part, part, partStemmed, partStemmed);
+      }
+    }
+  }
+
+  if (!result.bestMatch || result.bestMatch.score < 2) return null;
+
+  const bestMatch = result.bestMatch;
   const confidence = Math.min(bestMatch.score / 15, 1);
 
   // Build smart response with extracted params
