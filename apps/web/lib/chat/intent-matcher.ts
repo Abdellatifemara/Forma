@@ -7305,6 +7305,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v66: Gym Skincare + Hygiene + Sauna + Cryotherapy + Compression Gear ──
+  {
+    keywords: ['gym skincare', 'acne from gym', 'sweat acne', 'breakout from gym', 'gym face', 'workout skincare', 'sweat skin', 'gym pimples'],
+    keywordsAr: ['بشرة الجيم', 'حبوب من الجيم', 'عرق وحبوب', 'بشرة وتمرين', 'حبوب عرق'],
+    keywordsFranco: ['gym skincare', 'acne gym', 'sweat acne', 'gym pimples', 'workout skincare'],
+    stateId: 'info_gym_skincare',
+    response: { en: 'Gym Skincare — Prevent Breakouts: BEFORE WORKOUT: Remove makeup completely (makeup + sweat = clogged pores). Apply light moisturizer with SPF if training outdoors. Do NOT apply heavy creams/oils before training. DURING WORKOUT: Use a clean towel (not gym towels!) to wipe sweat. Do NOT touch your face with gym hands. Wipe equipment before using (bacteria). AFTER WORKOUT: Wash face within 30 minutes (gentle cleanser, not harsh soap). Shower ASAP (sweat sitting on skin = bacteria growth = acne). Change out of sweaty clothes immediately. Use salicylic acid wash if acne-prone. BODY ACNE: "Bacne" is common in gym-goers. Shower after every session. Use benzoyl peroxide body wash. Wear moisture-wicking fabrics. Change bedsheets 2x/week if you train hard. SUPPLEMENTS THAT CAUSE ACNE: Whey protein can worsen acne (switch to plant protein if affected). High-dose B12 can trigger breakouts. Testosterone boosters. HYDRATION: Drink 3+ liters daily — hydrated skin is healthier skin. IN EGYPT: Use sunscreen even in winter (strong UV). Micellar water is great for quick post-gym face cleanse.', ar: 'بشرة الجيم — امنع الحبوب: قبل التمرين: شيل الميكاب تماماً (ميكاب + عرق = مسام مسدودة). بعد التمرين: اغسل وشك في 30 دقيقة (غسول لطيف). استحمّ بسرعة (العرق على البشرة = بكتيريا = حبوب). غيّر الهدوم المعرّقة فوراً. حبوب الجسم: الظهر شائع في الجيم. استحمّ بعد كل جلسة. استخدم غسول بنزويل بيروكسايد. مكملات بتسبب حبوب: واي بروتين ممكن يزود الحبوب (جرب بروتين نباتي). B12 جرعة عالية. ترطيب: اشرب 3+ لتر يومياً.' },
+    priority: 6,
+    domain: 'health',
+  },
+  {
+    keywords: ['gym hygiene', 'gym bacteria', 'gym infection', 'staph gym', 'ringworm gym', 'gym clean', 'gym germs', 'gym shower', 'athletes foot'],
+    keywordsAr: ['نظافة الجيم', 'بكتيريا الجيم', 'عدوى الجيم', 'فطريات جيم', 'جراثيم جيم', 'استحمام جيم'],
+    keywordsFranco: ['gym hygiene', 'gym bacteria', 'gym infection', 'gym clean', 'gym germs'],
+    stateId: 'info_gym_hygiene',
+    response: { en: 'Gym Hygiene — Stay Healthy While Training: GYM BACTERIA IS REAL: Studies show gym equipment has 362x more bacteria than a toilet seat. Common infections: Staph (MRSA), ringworm, athlete\'s foot, warts. PROTECT YOURSELF: Wipe equipment BEFORE and AFTER use. Bring your own towel (lay on benches). Wash hands before touching your face. Wear flip-flops in showers/locker rooms. Do NOT shave immediately before gym (open cuts = infection risk). Cover any open wounds. Do NOT share towels, water bottles, or personal items. Wash gym clothes after EVERY session (do not rewear!). SHOWER PROTOCOL: Shower within 1 hour of training. Use antibacterial soap on high-bacteria areas (feet, groin, armpits). Dry thoroughly (fungi love moisture). GEAR HYGIENE: Wash gym bag monthly. Air out shoes between sessions (stuff with newspaper). Wash gloves/wraps weekly. Sanitize water bottle daily. WARNING SIGNS: Unusual redness, swelling, warm spots on skin, circular patches (ringworm), persistent itching between toes (athlete\'s foot). See a doctor if these appear!', ar: 'نظافة الجيم — ابقى صحي وانت بتتمرن: البكتيريا حقيقية: الدراسات أثبتت إن معدات الجيم عليها 362× بكتيريا أكتر من التواليت! عدوى شائعة: ستاف، فطريات، قدم رياضي. احمي نفسك: امسح المعدات قبل وبعد الاستخدام. خد فوطتك (حطها على البنشز). اغسل إيديك قبل ما تلمس وشك. البس شبشب في الحمامات. ما تشاركش فوط أو زجاجات مية. اغسل هدوم الجيم بعد كل جلسة. الاستحمام: في أول ساعة. صابون مضاد للبكتيريا. نشّف كويس (الفطريات بتحب الرطوبة). علامات تحذير: احمرار غريب، ورم، بقع دائرية (فطريات)، حكة بين الصوابع. روح دكتور!' },
+    priority: 6,
+    domain: 'health',
+  },
+  {
+    keywords: ['sauna benefits', 'sauna after workout', 'steam room', 'sauna muscle recovery', 'sauna weight loss', 'sauna how long', 'infrared sauna', 'sauna health'],
+    keywordsAr: ['فوائد ساونا', 'ساونا بعد التمرين', 'غرفة بخار', 'ساونا ريكفري', 'ساونا خسارة وزن'],
+    keywordsFranco: ['sauna', 'sauna benefits', 'steam room', 'sauna after workout', 'sauna recovery'],
+    stateId: 'info_sauna_benefits',
+    response: { en: 'Sauna Benefits for Fitness: PROVEN BENEFITS: Improves cardiovascular health (heart rate increases like mild exercise), enhances recovery (increased blood flow to muscles), reduces muscle soreness, improves sleep quality, reduces stress and cortisol, may increase growth hormone (up to 200-300% temporarily). TYPES: Traditional/Finnish sauna (80-100°C dry heat), steam room (40-50°C high humidity), infrared sauna (50-65°C deep heat penetration). PROTOCOL: 15-20 minutes per session, 2-4 sessions per week. Cool down between sessions (cold shower or cold plunge). Hydrate AGGRESSIVELY (drink 500ml+ extra per session). TIMING: AFTER workout is best (helps recovery). Never before a heavy training session (weakens you). WEIGHT LOSS: Any immediate weight loss from sauna is WATER LOSS, not fat. You will regain it when you rehydrate. However, regular sauna use improves cardiovascular health which supports long-term fat loss. CAUTIONS: Do NOT use if dehydrated. Avoid alcohol before/after sauna. Not recommended if you have heart conditions (consult doctor). Leave immediately if you feel dizzy, nauseous, or uncomfortable.', ar: 'فوائد الساونا للياقة: فوائد مثبتة: بتحسن صحة القلب، بتعزز الريكفري (تدفق دم أكتر للعضلات)، بتقلل ألم العضلات، بتحسن النوم، بتقلل الضغط والكورتيزول، ممكن تزود هرمون النمو (200-300% مؤقتاً). الأنواع: فنلندي تقليدي (80-100°C)، غرفة بخار (40-50°C)، إنفراريد (50-65°C). البروتوكول: 15-20 دقيقة/جلسة، 2-4 مرات/أسبوع. تبريد بينهم. اشرب 500مل+ إضافي. التوقيت: بعد التمرين أفضل. خسارة الوزن: أي وزن بينزل فوراً هو مية مش دهون. تحذيرات: ما تستخدمهاش لو مجفف. تجنب الكحول. روح دكتور لو عندك مشاكل قلب.' },
+    priority: 6,
+    domain: 'recovery',
+  },
+  {
+    keywords: ['compression gear', 'compression sleeve', 'compression pants', 'compression benefits', 'knee sleeve', 'elbow sleeve', 'wrist wrap', 'lifting belt', 'gym accessories'],
+    keywordsAr: ['ملابس ضاغطة', 'سليف ركبة', 'سليف كوع', 'رباط رسغ', 'حزام رفع', 'إكسسوارات جيم'],
+    keywordsFranco: ['compression', 'knee sleeve', 'elbow sleeve', 'wrist wrap', 'lifting belt', 'gym accessories'],
+    stateId: 'info_compression_gear',
+    response: { en: 'Gym Gear & Compression Guide: KNEE SLEEVES: 5mm for general training, 7mm for powerlifting. Provide warmth, support, and confidence. NOT the same as knee wraps (wraps add pounds to your squat). Brands: SBD, Rehband, Rogue. ELBOW SLEEVES: Great for bench press and overhead work. Reduces elbow pain during pressing. WRIST WRAPS: Essential for heavy overhead press, bench press. Provides wrist stability. Wrap tight for pressing, loose for pulling. LIFTING BELT: Use for heavy squats, deadlifts, overhead press. Creates intra-abdominal pressure = stronger core. 10mm leather for powerlifting, nylon for general training. Do NOT use a belt for everything (build core strength first). LIFTING STRAPS: For heavy deadlifts, rows, shrugs when grip fails. Do NOT use for every set (train grip too). CHALK: Improves grip massively. Liquid chalk is less messy. Essential for deadlifts and pull-ups. COMPRESSION PANTS/SHIRTS: Improve blood flow, reduce muscle vibration, may speed recovery. More useful for endurance sports than weightlifting. BUY ORDER: Chalk → Knee sleeves → Wrist wraps → Belt → Straps. Total: ~2000-5000 LE for everything.', ar: 'دليل معدات وملابس ضاغطة: سليف ركبة: 5مم للتدريب العام، 7مم للباورلفتنج. بتدي دفا ودعم وثقة. سليف كوع: ممتاز للبنش والأوفرهيد. رباط رسغ: ضروري للأوفرهيد والبنش التقيل. بيدي ثبات رسغ. حزام رفع: للسكوات، ديدلفت، أوفرهيد التقيل. بيخلق ضغط بطني = كور أقوى. ما تستخدمهوش لكل حاجة (ابني قوة كور الأول). ستراب: للديدلفت والرو التقيل لما القبضة تفشل. تشوك: بيحسن القبضة بشكل ضخم. ليكويد تشوك أنظف. ترتيب الشراء: تشوك → سليف ركبة → رباط رسغ → حزام → ستراب. الإجمالي: ~2000-5000 ج لكل حاجة.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['swimming workout', 'swimming for fitness', 'swimming laps', 'swimming calories', 'swimming vs gym', 'pool workout', 'swimming muscle', 'swimming weight loss', 'swimming technique'],
+    keywordsAr: ['تمرين سباحة', 'سباحة للياقة', 'سباحة لابز', 'سباحة سعرات', 'سباحة ضد جيم', 'سباحة عضلات'],
+    keywordsFranco: ['swimming workout', 'swimming fitness', 'swimming calories', 'pool workout', 'swimming vs gym'],
+    stateId: 'info_swimming_workout',
+    response: { en: 'Swimming for Fitness — Complete Guide: CALORIES: 400-700 cal/hour depending on stroke and intensity. Butterfly > Freestyle > Backstroke > Breaststroke. WHY SWIMMING IS UNIQUE: Full body workout (every stroke uses arms, core, legs). Zero impact on joints (perfect for injured/overweight people). Natural resistance in all directions. Improves cardiovascular fitness, flexibility, and lung capacity simultaneously. BEGINNER WORKOUT: 4x25m freestyle (30 sec rest). 4x25m backstroke (30 sec rest). 4x25m kick with board (30 sec rest). 200m easy cooldown. Total: ~600m, 20-25 minutes. INTERMEDIATE: 200m warm-up. 8x50m freestyle (20 sec rest). 4x100m pull (paddles/buoy, 30 sec rest). 8x25m sprint (30 sec rest). 200m cooldown. Total: ~1500m, 35-40 minutes. FOR MUSCLE: Swimming alone does NOT build significant muscle mass (low resistance). Combine with gym training: swim 2-3x/week + lift 3-4x/week. Swimming is EXCELLENT for active recovery on rest days. IN EGYPT: Many gyms include pool access. Wadi Degla, Al Ahly, Gezira Club all have great pools. Outdoor swimming season: April-October.', ar: 'السباحة للياقة — دليل كامل: السعرات: 400-700 سعرة/ساعة حسب النوع والشدة. ليه السباحة مميزة: تمرين كامل الجسم، صفر تأثير على المفاصل، مقاومة طبيعية. تمرين مبتدئ: 4×25م حرة (30 ثانية راحة). 4×25م ظهر. 4×25م ركل بلوحة. 200م تبريد. الإجمالي: ~600م، 20-25 دقيقة. للعضل: السباحة لوحدها مش بتبني عضل كبير. ادمجها مع الجيم: سباحة 2-3×/أسبوع + حديد 3-4×/أسبوع. ممتازة للريكفري النشط في أيام الراحة. في مصر: كتير جيمات فيها حمام سباحة. وادي دجلة، الأهلي، الجزيرة.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
