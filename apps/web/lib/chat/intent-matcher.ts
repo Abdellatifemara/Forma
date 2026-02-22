@@ -26,18 +26,128 @@ export interface IntentMatch {
 // ─── Conversation Topic Tracker ──────────────────────────────
 // Tracks last 3 matched domains for multi-turn context awareness
 const recentDomains: string[] = [];
+// Tracks last 3 matched intents for pronoun resolution & follow-ups
+const recentIntents: Array<{ stateId: string; domain: string; keywords: string[] }> = [];
 
 export function trackDomain(domain: string) {
   recentDomains.unshift(domain);
   if (recentDomains.length > 3) recentDomains.pop();
 }
 
+export function trackIntent(stateId: string, domain: string, keywords: string[]) {
+  recentIntents.unshift({ stateId, domain, keywords });
+  if (recentIntents.length > 3) recentIntents.pop();
+}
+
 export function getRecentDomains(): string[] {
   return [...recentDomains];
 }
 
+export function getRecentIntents() {
+  return [...recentIntents];
+}
+
 export function isRepeatingDomain(domain: string): boolean {
   return recentDomains.length >= 2 && recentDomains[0] === domain && recentDomains[1] === domain;
+}
+
+// ─── Pronoun / Follow-Up Resolution ──────────────────────────
+// "what about for back?" → recognize "what about" as a follow-up pattern
+// "show me more" → repeat last search with different params
+// "how much is it" → refers to last food/exercise mentioned
+const FOLLOW_UP_PATTERNS: Array<{ pattern: RegExp; type: 'swap_topic' | 'more_info' | 'refer_last' }> = [
+  // "what about X", "how about X", "and for X"
+  { pattern: /^(?:what about|how about|and for|and|ok (?:what about|and)|ايه بقى|وايه|طيب و|tayeb w)\s+(.+)/i, type: 'swap_topic' },
+  // "show me more", "more options", "anything else", "more", "تاني"
+  { pattern: /^(?:show me more|more options|anything else|more|تاني|كمان|غيرهم|others|other options)$/i, type: 'more_info' },
+  // "how much is it", "calories in it", "is it healthy"
+  { pattern: /(?:how much|calories|protein|carbs|سعرات|بروتين)\s+(?:is it|in it|in that|فيه|فيها)/i, type: 'refer_last' },
+];
+
+function resolveFollowUp(text: string, currentStateId: string): IntentMatch | null {
+  if (recentIntents.length === 0) return null;
+  const last = recentIntents[0];
+
+  for (const fp of FOLLOW_UP_PATTERNS) {
+    const match = text.match(fp.pattern);
+
+    if (fp.type === 'swap_topic' && match) {
+      // User wants same action but different topic: "what about back?"
+      // Try matching the extracted topic with the previous intent's domain context
+      const newTopic = match[1]?.trim();
+      if (!newTopic) continue;
+
+      // Check if newTopic is a muscle group
+      const muscleGroups: Record<string, string> = {
+        'chest': 'CHEST', 'back': 'BACK', 'legs': 'QUADRICEPS', 'shoulders': 'SHOULDERS',
+        'arms': 'BICEPS', 'biceps': 'BICEPS', 'triceps': 'TRICEPS', 'abs': 'ABS',
+        'glutes': 'GLUTES', 'hamstrings': 'HAMSTRINGS', 'calves': 'CALVES', 'traps': 'TRAPS',
+        'forearms': 'FOREARMS',
+        'صدر': 'CHEST', 'ضهر': 'BACK', 'رجل': 'QUADRICEPS', 'كتف': 'SHOULDERS',
+        'دراع': 'BICEPS', 'بطن': 'ABS',
+      };
+      const muscle = muscleGroups[newTopic.toLowerCase()];
+      if (muscle && last.domain === 'workout') {
+        return {
+          stateId: 'WK_FIND_MUSCLE',
+          confidence: 0.8,
+          action: { type: 'navigate', route: `/exercises?muscle=${muscle}` },
+          response: { en: `Switching to ${newTopic} exercises:`, ar: `بحولك على تمارين ${newTopic}:` },
+        };
+      }
+
+      // Check if newTopic is a food
+      const isFood = FOOD_NAMES.includes(newTopic.toLowerCase());
+      if (isFood && last.domain === 'nutrition') {
+        return {
+          stateId: 'NT_SEARCH',
+          confidence: 0.8,
+          action: { type: 'navigate', route: `/nutrition?search=${encodeURIComponent(newTopic)}` },
+          response: { en: `Looking up ${newTopic}:`, ar: `بدور على ${newTopic}:` },
+        };
+      }
+    }
+
+    if (fp.type === 'more_info' && fp.pattern.test(text)) {
+      // User wants more of the same — return last intent
+      return {
+        stateId: last.stateId,
+        confidence: 0.7,
+        response: { en: 'Here are more options:', ar: 'دي خيارات تانية:' },
+      };
+    }
+
+    if (fp.type === 'refer_last' && fp.pattern.test(text)) {
+      // User referring to last thing mentioned
+      if (last.domain === 'nutrition') {
+        const lastFood = last.keywords[0] || 'that food';
+        return {
+          stateId: 'NT_SEARCH',
+          confidence: 0.75,
+          action: { type: 'navigate', route: `/nutrition?search=${encodeURIComponent(lastFood)}` },
+          response: { en: `Let me get the nutritional details:`, ar: `هجبلك التفاصيل الغذائية:` },
+        };
+      }
+    }
+  }
+  return null;
+}
+
+// ─── Domain-Aware No-Match Hints ────────────────────────────
+// When no match is found, suggest based on current domain
+export function getNoMatchHint(currentStateId: string, isAr: boolean): string {
+  const domain = getDomainFromState(currentStateId);
+  const hints: Record<string, { en: string; ar: string }> = {
+    workout: { en: 'Try asking about a specific muscle (chest, back, legs), exercise, or workout type.', ar: 'جرب تسأل عن عضلة معينة (صدر، ضهر، رجل)، تمرين، أو نوع تمرين.' },
+    nutrition: { en: 'Try asking about a food name, calories, meal suggestions, or your daily intake.', ar: 'جرب تسأل عن اسم أكل، سعرات، اقتراحات وجبات، أو أكلك اليومي.' },
+    health: { en: 'Try asking about sleep, heart rate, body composition, or stress levels.', ar: 'جرب تسأل عن النوم، نبض القلب، تكوين الجسم، أو الضغط.' },
+    supplements: { en: 'Try asking about creatine, protein powder, vitamins, or where to buy.', ar: 'جرب تسأل عن كرياتين، بروتين باودر، فيتامينات، أو فين تشتري.' },
+    progress: { en: 'Try asking about your weight, weekly check-in, or goals.', ar: 'جرب تسأل عن وزنك، التشيك إن الأسبوعي، أو أهدافك.' },
+    recovery: { en: 'Try asking about stretching, foam rolling, ice baths, or how recovered you are.', ar: 'جرب تسأل عن الاسترتش، فوم رولر، حمام تلج، أو حالة الريكفري.' },
+  };
+  const hint = hints[domain];
+  if (hint) return isAr ? hint.ar : hint.en;
+  return isAr ? 'جرب تسأل عن تمارين، أكل، صحة، أو تقدم.' : 'Try asking about workouts, nutrition, health, or progress.';
 }
 
 interface IntentRule {
@@ -298,6 +408,19 @@ const SYNONYMS: Record<string, string> = {
   'leg raise': 'hanging leg raise', 'knee raise': 'hanging leg raise',
   'hyper extension': 'back extension', 'back raise': 'back extension',
   'glute ham raise': 'nordic curl', 'ghr': 'nordic curl',
+  // Quantity shortcuts
+  'half kilo': '500g', 'quarter kilo': '250g', 'double portion': '2 servings',
+  'half plate': '0.5 plate', 'نص كيلو': '500 جرام', 'ربع كيلو': '250 جرام',
+  // Egyptian gym slang
+  'بلانك': 'plank', 'بوش اب': 'push up', 'بول اب': 'pull up',
+  'كيرل': 'curl', 'بريس': 'press', 'رو': 'row', 'فلاي': 'fly',
+  'فليكس': 'flex', 'ريبس': 'reps', 'سيتات': 'sets',
+  'جين': 'gym', 'الجين': 'gym', 'الجيم': 'gym',
+  // Egyptian food slang
+  'سندوتش': 'sandwich', 'سندويتش': 'sandwich',
+  'عصير': 'juice', 'ميلك شيك': 'milkshake',
+  'فريك': 'freekeh', 'بليلة': 'milk with grains',
+  'ترمس': 'lupini beans', 'سوبيا': 'coconut drink',
   // Franco slang
   'batny': 'batn', 'karshy': 'batn', 'dra3y': 'dra3',
 };
@@ -2876,6 +2999,17 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
   // Extract numbers/units from text
   const extractedParams = extractNumbers(normalized);
 
+  // ── Follow-up / pronoun resolution: "what about back?", "show me more"
+  const followUpResult = resolveFollowUp(normalized, currentStateId);
+  if (followUpResult) {
+    if (followUpResult.stateId !== 'ROOT') {
+      const domain = getDomainFromState(followUpResult.stateId);
+      trackDomain(domain);
+      trackIntent(followUpResult.stateId, domain, [stripped]);
+    }
+    return followUpResult;
+  }
+
   // ── Negation check: "I don't want to train" → skip, not start workout
   if (hasNegation(normalized)) {
     for (const override of NEGATION_OVERRIDES) {
@@ -3122,8 +3256,9 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
     }
   }
 
-  // Track domain for multi-turn context
+  // Track domain + intent for multi-turn context
   if (bestMatch.rule.domain) trackDomain(bestMatch.rule.domain);
+  trackIntent(bestMatch.rule.stateId, bestMatch.rule.domain || 'root', bestMatch.rule.keywords.slice(0, 3));
 
   // Generate contextual tips based on the matched intent
   const tip = generateTip(bestMatch.rule.stateId, bestMatch.rule.domain);

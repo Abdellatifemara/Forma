@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/lib/i18n';
 import { getState, INITIAL_STATE } from '@/lib/chat';
 import type { ChatState, ChatOption, StateAction, GptEnhancedConfig } from '@/lib/chat/types';
-import { matchIntent, getSuggestions, getFollowUpSuggestions, getDidYouMean } from '@/lib/chat/intent-matcher';
+import { matchIntent, getSuggestions, getFollowUpSuggestions, getDidYouMean, getNoMatchHint } from '@/lib/chat/intent-matcher';
 import { useRouter } from 'next/navigation';
 import { Send } from 'lucide-react';
 import {
@@ -745,20 +745,15 @@ export default function GuidedChat() {
           }]);
         }, 300);
       } else {
-        const domainHints: Record<string, { en: string; ar: string }> = {
-          workout: { en: 'Try "chest exercises", "skip today", or "log workout"', ar: 'جرب "تمارين صدر" أو "اسكب النهارده" أو "سجل تمرين"' },
-          nutrition: { en: 'Try "log meal", "high protein foods", or "what to eat"', ar: 'جرب "سجل وجبة" أو "أكل بروتين عالي" أو "آكل ايه"' },
-          health: { en: 'Try "log weight", "sleep data", or "heart rate"', ar: 'جرب "سجل الوزن" أو "بيانات النوم" أو "نبض القلب"' },
-          settings: { en: 'Try "change password", "edit profile", or "subscription"', ar: 'جرب "غير الباسورد" أو "عدل البروفايل" أو "الاشتراك"' },
-        };
-        const hint = domainHints[currentDomain];
-        const fallbackEn = hint ? `I didn't quite get that. ${hint.en}` : 'I didn\'t quite get that. Try "start workout", "log meal", or "change my name"';
-        const fallbackAr = hint ? `مش فاهم تمام. ${hint.ar}` : 'مش فاهم تمام. جرب "ابدأ تمرين" أو "سجل وجبة" أو "غير اسمي"';
+        const smartHint = getNoMatchHint(currentStateId, isAr);
+        const fallbackText = isAr
+          ? `مش فاهم تمام. ${smartHint}`
+          : `I didn't quite get that. ${smartHint}`;
 
         setTimeout(() => {
           setHistory(prev => [...prev, {
             id: `bot-${Date.now()}`, type: 'bot',
-            text: isAr ? fallbackAr : fallbackEn,
+            text: fallbackText,
             stateId: currentStateId, domain: currentDomain, timestamp: Date.now(),
           }]);
         }, 300);
