@@ -6781,6 +6781,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v55: Chest Fly + Pullover + Cable Crossover + Machine vs Free Weights + Tempo ──
+  {
+    keywords: ['chest fly', 'dumbbell fly', 'pec fly', 'cable fly', 'machine fly', 'fly exercise', 'flyes', 'pec deck', 'chest fly form', 'fly vs press'],
+    keywordsAr: ['فلاي صدر', 'دمبل فلاي', 'كابل فلاي', 'بك دك', 'فلاي ماشين', 'فلاي تمرين'],
+    keywordsFranco: ['chest fly', 'dumbbell fly', 'cable fly', 'pec deck', 'pec fly'],
+    stateId: 'info_chest_fly',
+    response: { en: 'Chest Fly Variations — The Ultimate Chest Stretch: DUMBBELL FLY: Classic. Lie flat, arms slightly bent, lower wide, squeeze together at top. Problem: No tension at top of movement. CABLE FLY (BEST): Constant tension throughout entire ROM. Set cables high for lower chest, low for upper chest, middle for mid-chest. This is superior to dumbbell flyes! PEC DECK MACHINE: Safest option, perfect for beginners, great mind-muscle connection. INCLINE DUMBBELL FLY: Upper chest focus. Set bench at 30-45 degrees. KEY TECHNIQUE: Never go too heavy on flyes — this is an isolation exercise! Keep slight bend in elbows (not straight arms). Think about hugging a tree. Go slow on the stretch (eccentric). PROGRAMMING: 3-4 sets of 10-15 reps after your pressing movements. Flyes are ACCESSORIES, not main lifts. FLY VS PRESS: Presses build strength and size, flyes improve the stretch and "peak" contraction. You need BOTH!', ar: 'فلاي الصدر: دمبل فلاي: كلاسيكي. نام مفرود، ذراع مثنية قليلاً، انزل واسع، اضغط فوق. مشكلة: مفيش توتر فوق. كابل فلاي (الأفضل): توتر ثابت طول الحركة. كابل عالي لصدر سفلي، منخفض لصدر علوي. بك دك ماشين: الأأمن، مثالي للمبتدئين. إنكلاين دمبل فلاي: صدر علوي. التكنيك: ما تروحش تقيل — تمرين عزل! خلي ثني بسيط في الكوع. فكر إنك بتحضن شجرة. البرنامج: 3-4 × 10-15 عدة بعد الضغط. الفلاي أكسسوري مش رئيسي!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['pullover exercise', 'dumbbell pullover', 'cable pullover', 'pullover chest', 'pullover back', 'pullover lats', 'pullover machine'],
+    keywordsAr: ['بولوفر', 'دمبل بولوفر', 'كابل بولوفر', 'بولوفر صدر', 'بولوفر ظهر'],
+    keywordsFranco: ['pullover', 'dumbbell pullover', 'cable pullover'],
+    stateId: 'info_pullover_exercise',
+    response: { en: 'Pullover Exercise Guide — Chest AND Back in One Movement: DEBATE: Does pullover work chest or back? ANSWER: BOTH! It depends on how you do it. FOR CHEST: Keep arms slightly bent, squeeze chest at top, use a dumbbell lying across a bench. Feel the stretch in your pecs. FOR BACK (LATS): Straighten arms more, focus on pulling with elbows, use cable pullover machine (keeps tension). Feel the stretch in your lats. DUMBBELL PULLOVER: Lie across bench (only shoulders on bench, hips low). Hold one dumbbell with both hands overhead. Lower behind head slowly, then pull back over chest. CABLE PULLOVER: Stand facing cable machine, straight bar or rope attachment, pull down in an arc motion. This is BETTER for lats because of constant tension. PROGRAMMING: 3 sets of 12-15 reps. Great as a finisher for either chest or back day. Arnold Schwarzenegger credited pullovers for his legendary chest development!', ar: 'دليل تمرين البولوفر — صدر وظهر في حركة واحدة! الجدل: بيشتغل صدر ولا ظهر؟ الإجابة: الاتنين! حسب التنفيذ. للصدر: ذراع مثنية قليلاً، اضغط الصدر فوق، دمبل على البنش. للظهر (لاتس): ذراع مفرودة أكتر، اسحب بالكوع، كابل بولوفر (توتر ثابت). دمبل بولوفر: نام عبر البنش، دمبل بالإيدين فوق الراس، نزّل ورا ببطء. كابل بولوفر: واقف قدام الكابل، اسحب لتحت في قوس. البرنامج: 3 × 12-15 عدة. أرنولد شوارزنيجر نسب تطور صدره الأسطوري للبولوفر!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['cable crossover', 'cable chest', 'high cable fly', 'low cable fly', 'mid cable fly', 'cable chest press', 'crossover exercise'],
+    keywordsAr: ['كابل كروس أوفر', 'كابل صدر', 'كروس أوفر', 'كابل فلاي عالي', 'كابل فلاي منخفض'],
+    keywordsFranco: ['cable crossover', 'crossover', 'cable chest'],
+    stateId: 'info_cable_crossover',
+    response: { en: 'Cable Crossover Mastery — 3 Heights, 3 Different Muscles: HIGH CABLES (top): Lower chest and inner chest. Step forward, lean slightly, pull hands down and together. Great for that "lower chest line." MID CABLES (middle): Overall chest. Stand centered, slight lean, bring hands together at chest level. Best all-round chest cable exercise. LOW CABLES (bottom): Upper chest focus. Pull from low to high, like a reverse fly motion but for chest. Great substitute for incline work. TECHNIQUE TIPS: Cross your hands at the peak contraction (one over the other) for extra squeeze. Use one-arm variations for imbalance correction. Pause at peak contraction for 1-2 seconds. COMMON MISTAKES: Going too heavy (this is finesse work!), not leaning forward enough, using momentum instead of chest muscles. PROGRAMMING: 3-4 sets of 12-20 reps (lighter weight, more reps). Perfect finisher after heavy pressing. Cables > dumbbells for flyes because constant tension!', ar: 'كابل كروس أوفر — 3 ارتفاعات، 3 عضلات مختلفة: كابل عالي: صدر سفلي وداخلي. خطوة للأمام، ميلان خفيف، اسحب لتحت. كابل وسط: صدر كامل. قف في النص، اسحب على مستوى الصدر. كابل منخفض: صدر علوي. اسحب من تحت لفوق. نصايح: عدّي إيديك فوق بعض عند القمة لضغط أكتر. استخدم ذراع واحدة لتصحيح عدم التوازن. البرنامج: 3-4 × 12-20 عدة (وزن خفيف، عدات أكتر). فينيشر مثالي بعد ضغط تقيل!' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['machine vs free weights', 'machines or free weights', 'free weights better', 'machines better', 'smith machine vs barbell', 'machine exercises', 'free weight exercises', 'gym machines'],
+    keywordsAr: ['ماشين ولا فري ويت', 'أجهزة ولا أوزان حرة', 'ماشين أحسن', 'فري ويت أحسن', 'أجهزة الجيم'],
+    keywordsFranco: ['machine vs free', 'machines or weights', 'free weights better'],
+    stateId: 'info_machine_vs_free_weights',
+    response: { en: 'Machines vs Free Weights — The Real Answer: BOTH ARE GREAT. Here is when to use each. FREE WEIGHTS WIN: Building overall strength (more stabilizer muscle recruitment), compound movements (squat, bench, deadlift), functional strength, sports performance, home gym (one set of dumbbells = unlimited exercises). MACHINES WIN: Isolation work (targeting specific muscles), safer for beginners (guided path), training around injuries (controlled ROM), training to failure (no spotter needed), time efficiency (quick setup), hypertrophy (constant tension on cable machines). THE BEST APPROACH: Start workout with FREE WEIGHTS (compounds when you are fresh) → Finish with MACHINES (isolation when fatigued). Example chest day: Barbell bench press → Incline dumbbell press → Cable crossover → Pec deck machine. MYTHS DEBUNKED: "Machines are for beginners" — FALSE. Elite bodybuilders use machines extensively. "Free weights are dangerous" — FALSE, with proper form they are perfectly safe.', ar: 'ماشين ضد فري ويت — الإجابة الحقيقية: الاتنين كويسين! امتى تستخدم كل واحد. فري ويت بتكسب: بناء قوة شاملة، حركات مركبة، قوة وظيفية، أداء رياضي. ماشين بتكسب: عزل عضلات، أأمن للمبتدئين، تدريب حوالين إصابات، تدريب لحد الفشل (مش محتاج سبوتر). أفضل طريقة: ابدأ بفري ويت (كومباوند وانت فريش) → خلّص بماشين (عزل وانت تعبان). مثال يوم صدر: بنش برس → إنكلاين دمبل → كابل كروس أوفر → بك دك.' },
+    priority: 7,
+    domain: 'workout',
+  },
+  {
+    keywords: ['tempo training', 'time under tension', 'slow reps', 'eccentric training', 'concentric training', 'tempo lifting', '3010 tempo', '4010 tempo', 'slow negatives', 'controlled reps'],
+    keywordsAr: ['تيمبو تدريب', 'وقت تحت التوتر', 'عدات بطيئة', 'نيجاتيف بطيء', 'إيسنتريك', 'كونسنتريك'],
+    keywordsFranco: ['tempo training', 'time under tension', 'slow reps', 'slow negatives', 'TUT'],
+    stateId: 'info_tempo_training',
+    response: { en: 'Tempo Training & Time Under Tension: HOW TO READ TEMPO: 4 numbers like 3-1-2-0. First number: ECCENTRIC (lowering) = 3 seconds. Second: PAUSE at bottom = 1 second. Third: CONCENTRIC (lifting) = 2 seconds. Fourth: PAUSE at top = 0 seconds. BEST TEMPOS FOR GOALS: HYPERTROPHY: 3-1-2-0 or 4-0-2-0 (40-60 seconds per set). STRENGTH: 2-0-1-0 (fast and explosive). CONTROL/REHAB: 4-2-4-0 (super slow, great for injury recovery). WHY USE TEMPO: Eliminates momentum (no cheating), increases time under tension (key for muscle growth), improves mind-muscle connection, teaches proper form, breaks plateaus. WHEN TO USE: Deload weeks, hypertrophy phases, rehab from injury, learning new exercises. Pro tip: Just slowing down your ECCENTRIC (lowering) by 3 seconds on every exercise will dramatically improve your results. That is the single most impactful tempo change!', ar: 'تيمبو تريننج ووقت تحت التوتر: إزاي تقرأ التيمبو: 4 أرقام زي 3-1-2-0. الأول: إيسنتريك (النزول) = 3 ثواني. التاني: وقفة تحت = 1 ثانية. التالت: كونسنتريك (الرفع) = 2 ثانية. الرابع: وقفة فوق = 0. أفضل تيمبو: تضخيم: 3-1-2-0 أو 4-0-2-0 (40-60 ثانية/مجموعة). قوة: 2-0-1-0 (سريع وانفجاري). تحكم/إعادة تأهيل: 4-2-4-0 (بطيء جداً). ليه: بيلغي المومنتم، بيزود الوقت تحت التوتر، بيحسن الـmind-muscle connection. نصيحة: بطّء النزول 3 ثواني في كل تمرين هيحسن نتايجك بشكل دراماتيكي!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
