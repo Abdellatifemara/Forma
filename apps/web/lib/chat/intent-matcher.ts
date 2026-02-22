@@ -6280,6 +6280,72 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'health',
   },
 
+  // ── v46: Vitamin B12 ────────────────────────
+  {
+    keywords: ['vitamin b12', 'b12 deficiency', 'b12 supplement', 'b12 energy', 'b12 vegan', 'b12 injection', 'b12 and gym', 'b12 fatigue'],
+    keywordsAr: ['فيتامين ب12', 'نقص ب12', 'مكمل ب12', 'ب12 والطاقة', 'ب12 والجيم', 'حقنة ب12', 'ب12 والتعب'],
+    keywordsFranco: ['vitamin b12', 'na2s b12', 'mokammel b12', 'b12 wel ta2a', 'b12 wel gym', '7o2net b12', 'b12 wel ta3ab'],
+    stateId: 'SU_MENU',
+    response: { en: 'Vitamin B12 Guide: WHY: Essential for energy, nerve function, red blood cell formation. Low B12 = fatigue, weakness, brain fog, tingling hands/feet. WHO\'S AT RISK: Vegans/vegetarians (B12 is mainly in animal foods), people over 50, those on metformin or acid blockers. DOSE: 250-1000mcg/day orally, or 1000mcg injection monthly if deficient. FOOD SOURCES: Liver (highest!), beef, sardines, eggs, milk, fortified cereals. TESTING: Blood test — levels should be >400 pg/mL for optimal function (many labs say >200 is "normal" but athletes need higher). FORMS: Methylcobalamin (best absorbed), cyanocobalamin (cheaper, still works). Egyptian context: Liver (kibda) sandwiches are actually an AMAZING B12 source — street food that\'s actually healthy! Cost: B12 supplements are very cheap, 50-100 LE/month.', ar: 'دليل فيتامين ب12: ليه: أساسي للطاقة، وظيفة الأعصاب، تكوين كرات الدم الحمراء. ب12 ناقص = تعب، ضعف، ضبابية ذهنية، تنميل الأيدي/الأرجل. المعرضين: نباتيين (ب12 في الأكل الحيواني)، فوق 50 سنة، اللي على ميتفورمين. الجرعة: 250-1000mcg/يوم بالفم، أو 1000mcg حقنة شهرياً لو ناقص. مصادر الأكل: كبدة (الأعلى!)، لحمة، سردين، بيض، لبن. التحليل: تحليل دم — المستوى لازم يكون +400 pg/mL للرياضيين. الأشكال: ميثيل كوبالامين (أفضل امتصاص)، سيانو كوبالامين (أرخص). مصري: سندوتشات الكبدة مصدر ب12 ممتاز — ستريت فود صحي! التكلفة: مكملات ب12 رخيصة جداً، 50-100 جنيه/شهر.' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
+  // ── v46: Iron Deficiency & Athletes ────────────────────────
+  {
+    keywords: ['iron deficiency', 'iron supplement', 'iron for athletes', 'anemia gym', 'iron and energy', 'low iron symptoms', 'iron rich foods', 'iron absorption'],
+    keywordsAr: ['نقص الحديد', 'مكمل حديد', 'حديد للرياضيين', 'أنيميا والجيم', 'حديد والطاقة', 'أعراض نقص الحديد', 'أكل غني بالحديد'],
+    keywordsFranco: ['na2s el 7adeed', 'mokammel 7adeed', '7adeed lel reyadeyen', 'anemia wel gym', '7adeed wel ta2a', 'a3rad na2s el 7adeed'],
+    stateId: 'HE_MENU',
+    response: { en: 'Iron Deficiency for Athletes: SYMPTOMS: Fatigue, weakness, dizziness, cold hands/feet, pale skin, poor performance, shortness of breath during workouts. ATHLETES are at higher risk (iron loss through sweat, foot-strike hemolysis in runners, heavy menstruation in women). TESTING: Ferritin should be 30-50+ ng/mL (not just "in range"). Many athletes are deficient at "normal" lab ranges. FOOD SOURCES (heme iron — best absorbed): Red meat, liver, organ meats, dark poultry meat. NON-HEME: Spinach, lentils, beans, fortified cereals (pair with vitamin C to boost absorption 3-6x). BLOCKS absorption: Tea/coffee with meals, calcium, dairy. SUPPLEMENT: Iron bisglycinate (gentle on stomach), 25-65mg daily if deficient. Take on empty stomach with vitamin C. Egyptian: Molokhia has decent iron. Liver (kibda) is iron king. Ful + lemon = non-heme iron + vitamin C = good combo!', ar: 'نقص الحديد للرياضيين: الأعراض: تعب، ضعف، دوخة، إيدين/رجلين ساقعة، بشرة شاحبة، أداء ضعيف، نهجان أثناء التمرين. الرياضيين أكثر عرضة (فقد الحديد في العرق، الدورة الشهرية عند النساء). التحليل: فيريتين لازم 30-50+ ng/mL (مش بس "طبيعي"). مصادر (حديد هيمي — أفضل امتصاص): لحمة حمراء، كبدة. مصادر غير هيمية: سبانخ، عدس، فول (كل مع فيتامين C يزود الامتصاص 3-6 مرات). يمنع الامتصاص: شاي/قهوة مع الأكل، كالسيوم، ألبان. المكمل: حديد بايسجلايسينيت (خفيف على المعدة)، 25-65mg/يوم لو ناقص. على معدة فاضية مع فيتامين C. مصري: الملوخية فيها حديد. الكبدة ملك الحديد. فول + ليمون = حديد + فيتامين C = خلطة كويسة!' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v46: Calcium & Bone Health ────────────────────────
+  {
+    keywords: ['calcium supplement', 'bone health', 'calcium for gym', 'osteoporosis prevention', 'calcium rich foods', 'bone density exercise', 'calcium and vitamin d'],
+    keywordsAr: ['مكمل كالسيوم', 'صحة العظام', 'كالسيوم والجيم', 'هشاشة العظام', 'أكل غني بالكالسيوم', 'كثافة العظام'],
+    keywordsFranco: ['mokammel calcium', 'se77et el 3adam', 'calcium wel gym', 'hashashet el 3adam', 'akl ghany bel calcium', 'kasafet el 3adam'],
+    stateId: 'HE_MENU',
+    response: { en: 'Calcium & Bone Health: DAILY NEED: 1000-1200mg/day (most people get only 500-700mg). WHY: Strong bones, muscle contraction, nerve signaling. EXERCISE & BONES: Weight-bearing exercise is THE best thing for bone density! Squats, deadlifts, running, jumping — all build bone. Swimming/cycling don\'t (no impact). FOOD SOURCES: Dairy (yogurt 300mg/cup, milk 300mg/cup, cheese 200mg/oz), sardines with bones, broccoli, almonds, fortified foods. SUPPLEMENT: Calcium citrate (better absorbed) or carbonate (cheaper, take with food). Don\'t take >500mg at once (split doses). ALWAYS pair with Vitamin D (needed for absorption) and Vitamin K2 (directs calcium to bones, not arteries). AVOID: Excessive calcium without K2 (may calcify arteries). Egyptian: Zabadi (yogurt) daily = easy 300mg calcium. Tahini has 130mg per 2 tbsp. Cheese (gibna) is also good.', ar: 'الكالسيوم وصحة العظام: الاحتياج: 1000-1200mg/يوم (أغلب الناس بتاخد 500-700 بس). ليه: عظام قوية، تقلص العضلات، إشارات عصبية. التمارين والعظام: تمارين الحمل الأفضل لكثافة العظام! سكوات، ديدلفت، جري، نط — كلهم بيبنوا عظام. السباحة/العجلة لا (بدون تأثير). مصادر: ألبان (زبادي 300mg/كوب، لبن 300mg/كوب، جبنة 200mg)، سردين بالعظم، بروكلي، لوز. المكمل: كالسيوم سيتريت (أفضل امتصاص) أو كربونيت (أرخص، مع الأكل). متاخدش +500mg مرة واحدة. خده مع فيتامين D (للامتصاص) و K2 (يوجه الكالسيوم للعظام مش الشرايين). مصري: زبادي يومي = 300mg كالسيوم سهلة. الطحينة فيها 130mg لكل 2 معلقة. الجبنة كمان.' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v46: Zinc & Testosterone ────────────────────────
+  {
+    keywords: ['zinc testosterone', 'zinc supplement', 'zinc for gym', 'zinc deficiency', 'zinc and immunity', 'zma supplement', 'zinc dosage', 'zinc rich foods'],
+    keywordsAr: ['زنك وتستوستيرون', 'مكمل زنك', 'زنك والجيم', 'نقص الزنك', 'زنك والمناعة', 'ZMA', 'جرعة الزنك'],
+    keywordsFranco: ['zinc w testosterone', 'mokammel zinc', 'zinc wel gym', 'na2s el zinc', 'zinc wel mana3a', 'ZMA', 'gar3et el zinc'],
+    stateId: 'SU_MENU',
+    response: { en: 'Zinc for Athletes: WHY: Testosterone production, immune function, protein synthesis, wound healing. DEFICIENCY is common in athletes (lost through sweat). Low zinc = lower testosterone, weaker immunity, slower recovery. DOSE: 15-30mg/day (elemental zinc). Don\'t exceed 40mg daily (blocks copper absorption). FORMS: Zinc picolinate or glycinate (best absorbed), zinc oxide (cheapest but worst absorbed). ZMA (Zinc + Magnesium + B6): Popular sleep/recovery supplement. Take at bedtime on empty stomach. DON\'T take zinc with: Iron, calcium, or copper supplements (they compete). Take 2hrs apart. FOOD SOURCES: Oysters (zinc king!), red meat, pumpkin seeds, chickpeas, lentils, dark chocolate. TESTING: Serum zinc level in blood test. Egyptian context: Pumpkin seeds (lob) are a great Egyptian snack high in zinc! Ful (fava beans) also has decent zinc. Cost: Very affordable, 50-100 LE/month.', ar: 'الزنك للرياضيين: ليه: إنتاج تستوستيرون، مناعة، بناء بروتين، شفاء الجروح. النقص شائع في الرياضيين (بيتفقد في العرق). زنك ناقص = تستوستيرون أقل، مناعة أضعف، ريكفري أبطأ. الجرعة: 15-30mg/يوم. متتعداش 40mg (يمنع امتصاص النحاس). الأشكال: زنك بيكولينات أو جلايسينات (أفضل امتصاص)، زنك أوكسيد (أرخص بس أسوأ). ZMA (زنك + ماغنيسيوم + B6): مكمل نوم/ريكفري شعبي. خده قبل النوم على معدة فاضية. متاخدش زنك مع: حديد، كالسيوم، أو نحاس (بيتنافسوا). اتنين ساعة بينهم. مصادر: محار (ملك الزنك!)، لحمة حمراء، لب أبيض، حمص، عدس، شوكولاتة غامقة. مصري: اللب الأبيض سناك مصري غني بالزنك! الفول فيه زنك كويس. التكلفة: رخيص جداً، 50-100 جنيه/شهر.' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
+  // ── v46: Anti-Inflammatory Foods ────────────────────────
+  {
+    keywords: ['anti inflammatory food', 'anti inflammatory diet', 'inflammation diet', 'reduce inflammation', 'inflammatory foods avoid', 'anti inflammation', 'foods that heal'],
+    keywordsAr: ['أكل مضاد للالتهاب', 'دايت مضاد للالتهاب', 'تقليل الالتهاب', 'أكل يسبب التهاب', 'أكل يعالج'],
+    keywordsFranco: ['akl modad lel eltehab', 'diet modad lel eltehab', 'ta2leel el eltehab', 'akl yesabeb eltehab', 'akl ye3aleg'],
+    stateId: 'NU_MENU',
+    response: { en: 'Anti-Inflammatory Foods: TOP ANTI-INFLAMMATORY: Fatty fish (salmon, sardines — omega-3), berries (blueberries, strawberries), leafy greens (spinach, kale), turmeric + black pepper (increases absorption 2000%), ginger, extra virgin olive oil, nuts (walnuts, almonds), dark chocolate (70%+), green tea, tomatoes, avocado. INFLAMMATORY FOODS TO LIMIT: Sugar/refined carbs (white bread, pastries), trans fats (fried foods, margarine), processed meats (sausage, hot dogs), excessive alcohol, seed oils in excess (sunflower, corn oil). WHY IT MATTERS FOR GYM: Chronic inflammation = slower recovery, more soreness, joint pain, worse body composition. Egyptian anti-inflammatory stars: Olive oil, fish, garlic, onion, cumin (kamoon), turmeric (kurkum), hibiscus (karkadeh), fenugreek (helba), black seed (habba sawda).', ar: 'أكل مضاد للالتهاب: الأفضل: سمك دهني (سلمون، سردين — أوميغا-3)، توت (بلوبيري، فراولة)، خضار ورقي (سبانخ)، كركم + فلفل أسود (يزود الامتصاص 2000%)، زنجبيل، زيت زيتون بكر، مكسرات (جوز، لوز)، شوكولاتة غامقة (70%+)، شاي أخضر، طماطم، أفوكادو. أكل التهابي قلله: سكر/كارب مكرر (عيش أبيض، حلويات)، دهون متحولة (مقليات، مارجرين)، لحوم مصنعة (سجق)، كحول كتير. ليه مهم للجيم: التهاب مزمن = ريكفري أبطأ، وجع أكتر، ألم مفاصل. نجوم مصرية مضادة للالتهاب: زيت زيتون، سمك، ثوم، بصل، كمون، كركم، كركديه، حلبة، حبة البركة.' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v46: Detox Myth ────────────────────────
+  {
+    keywords: ['detox diet', 'detox myth', 'juice cleanse', 'body detox', 'liver detox', 'detox tea', 'detox supplement', 'do detox work'],
+    keywordsAr: ['ديتوكس', 'خرافة الديتوكس', 'عصير ديتوكس', 'تنظيف الجسم', 'ديتوكس الكبد', 'شاي ديتوكس', 'هل الديتوكس بيشتغل'],
+    keywordsFranco: ['detox', 'khorafet el detox', '3aseer detox', 'tandeef el gesm', 'detox el kebd', 'shy detox', 'hal el detox beyeshtaghal'],
+    stateId: 'NU_MENU',
+    response: { en: 'Detox Diets: THE TRUTH: Your body already detoxes 24/7 — that\'s what your LIVER and KIDNEYS do. No juice cleanse, tea, or supplement does it better. "DETOX" products are marketing, not science. Juice cleanses: You lose water weight (comes back), miss protein/fiber/fat, feel terrible, lose muscle. Detox teas: Usually just laxatives (senna) — cause dehydration, electrolyte imbalance, dependence. NOT healthy. WHAT ACTUALLY HELPS YOUR LIVER: Eat vegetables (cruciferous especially — broccoli, cauliflower), adequate protein, limit alcohol, stay hydrated, exercise regularly, sleep well, limit processed food. IF YOU WANT TO "RESET": Eat whole foods for 2 weeks (meat, fish, eggs, vegetables, fruits, rice, oats). That\'s it. No magic pills. Save your money and eat real food instead of buying detox products!', ar: 'دايت الديتوكس: الحقيقة: جسمك أساساً بيعمل ديتوكس 24/7 — ده شغل الكبد والكلى. مفيش عصير أو شاي أو مكمل بيعمل أفضل منهم. منتجات "الديتوكس" تسويق مش علم. عصير ديتوكس: بتخسر مية (بترجع)، بتفوتك بروتين/ألياف/دهون، بتحس وحش. شاي ديتوكس: غالباً ملينات (سنا) — بتسبب جفاف، خلل أملاح، اعتماد. مش صحي. اللي فعلاً بيساعد كبدك: كل خضار (بروكلي، قرنبيط)، بروتين كافي، قلل الكحول، اشرب مية، تمرن، نام كويس، قلل الأكل المصنع. لو عايز "ريسيت": كل أكل حقيقي أسبوعين (لحمة، سمك، بيض، خضار، فواكه، رز، شوفان). كده وبس. مفيش حبوب سحرية. وفر فلوسك وكل أكل حقيقي بدل منتجات الديتوكس!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
