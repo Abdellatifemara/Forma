@@ -6588,6 +6588,61 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'workout',
   },
 
+  // ── v51: Dip Exercise Guide ────────────────────────
+  {
+    keywords: ['dip exercise', 'dips guide', 'chest dip', 'tricep dip', 'weighted dips', 'dip form', 'dip alternative', 'bench dip', 'parallel bar dip'],
+    keywordsAr: ['تمرين الديبس', 'دليل الديبس', 'ديبس صدر', 'ديبس تراي', 'ديبس بوزن', 'فورم الديبس', 'بديل الديبس'],
+    keywordsFranco: ['tamreen el dips', 'daleel el dips', 'dips sadr', 'dips tricep', 'dips bewazn', 'form el dips', 'badeel el dips'],
+    stateId: 'WK_MENU',
+    response: { en: 'Dip Exercise Guide: CHEST DIPS: Lean forward 30°+, wider grip, elbows flared slightly. Targets lower chest heavily. TRICEP DIPS: Upright torso, narrower grip, elbows close to body. Targets triceps. FORM: Lower until upper arms parallel to floor (don\'t go deeper if shoulders hurt), push up explosively. Control the negative. BEGINNER: Can\'t do dips? Start with bench dips, then negative dips (jump up, lower slowly 5sec), then band-assisted, then bodyweight. ADVANCED: Weighted dips — belt + chain + plates. One of the BEST upper body mass builders. Some people bench less than they dip (weighted). SETS/REPS: 3-4x8-12 for mass, 5x5 for strength (weighted). CAUTION: If shoulders hurt during dips, DON\'T force it. Some people\'s shoulders aren\'t built for dips. Alternative: Close grip bench press hits similar muscles without shoulder stress.', ar: 'دليل تمرين الديبس: ديبس صدر: مل لقدام 30°+، قبضة أوسع، كوع مفتوح شوية. بيستهدف أسفل الصدر. ديبس تراي: جسم مستقيم، قبضة أضيق، كوع قريب من الجسم. بيستهدف التراي. الفورم: انزل لحد ما الذراع يوازي الأرض (متنزلش أكتر لو الكتف بيوجع)، ادفع لفوق. مبتدئ: مش قادر تعمل ديبس؟ ابدأ ببنش ديبس، بعدين ديبس سلبية (اقفز فوق، انزل ببطء 5 ثواني)، بعدين باند، بعدين بوزن الجسم. متقدم: ديبس بوزن — من أفضل بناة الأب بادي. سيتات: 3-4×8-12 للحجم، 5×5 للقوة (بوزن). تحذير: لو الكتف بيوجع في الديبس، متجبرش نفسك. بديل: كلوز جريب بنش بيضرب عضلات مشابهة بدون ضغط على الكتف.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v51: Incline vs Flat Bench ────────────────────────
+  {
+    keywords: ['incline vs flat bench', 'flat bench or incline', 'incline bench press', 'upper chest exercise', 'incline angle', 'decline bench', 'which bench press best'],
+    keywordsAr: ['إنكلاين ولا فلات بنش', 'فلات بنش ولا إنكلاين', 'إنكلاين بنش برس', 'صدر علوي', 'زاوية الإنكلاين', 'ديكلاين بنش'],
+    keywordsFranco: ['incline wala flat bench', 'flat bench wala incline', 'incline bench press', 'sadr 3olwy', 'zaweyet el incline', 'decline bench'],
+    stateId: 'WK_MENU',
+    response: { en: 'Incline vs Flat Bench: FLAT BENCH: Overall chest development, most weight possible, power/strength focus. Hits mid and lower chest primarily. INCLINE BENCH: Upper chest emphasis (the part most people are underdeveloped). Also more front delt. ANGLE: 15-30° is optimal for upper chest (higher = more shoulder, less chest). 45° is basically a shoulder press. DECLINE BENCH: Lower chest emphasis. Honestly, dips do this better. RECOMMENDATION: Do BOTH! Start with incline (it\'s harder when fresh = better upper chest stimulus), then flat for overall volume. DUMBBELL vs BARBELL incline: Dumbbells allow deeper stretch (more chest activation), barbell allows heavier loading. Do both throughout the week. VOLUME: 8-12 total chest sets per workout. Split: 4-5 sets incline + 4-5 sets flat + 2-3 sets flyes.', ar: 'إنكلاين مقابل فلات بنش: فلات بنش: تطوير الصدر الكلي، أكتر وزن ممكن، قوة. بيضرب الصدر الأوسط والسفلي. إنكلاين بنش: صدر علوي (الجزء اللي أغلب الناس ضعيف فيه). كمان ديلت أمامي. الزاوية: 15-30° مثالي للصدر العلوي (أعلى = كتف أكتر، صدر أقل). 45° أساساً شولدر برس. ديكلاين: صدر سفلي. بصراحة الديبس بتعمل ده أفضل. التوصية: اعمل الاتنين! ابدأ بالإنكلاين (أصعب وأنت فريش = تحفيز أفضل للصدر العلوي)، بعدين فلات للفوليوم. دمبل مقابل بار إنكلاين: الدمبل بتسمح باستريتش أعمق، البار بيسمح بوزن أتقل. الفوليوم: 8-12 سيت صدر/تمرين. قسم: 4-5 إنكلاين + 4-5 فلات + 2-3 فلاي.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v51: Barbell Row Guide ────────────────────────
+  {
+    keywords: ['barbell row guide', 'barbell row form', 'bent over row', 'pendlay row', 'row technique', 'how to barbell row', 'row for back thickness', 'yates row'],
+    keywordsAr: ['دليل الباربل رو', 'فورم الباربل رو', 'بنت أوفر رو', 'بندلاي رو', 'تكنيك الرو', 'ياتس رو'],
+    keywordsFranco: ['daleel el barbell row', 'form el barbell row', 'bent over row', 'pendlay row', 'technique el row', 'yates row'],
+    stateId: 'WK_MENU',
+    response: { en: 'Barbell Row Guide: BENT OVER ROW: Hinge at hips (45-60° torso angle), pull bar to lower chest/upper abs, squeeze shoulder blades together, lower controlled. THE back thickness builder. PENDLAY ROW: Dead stop from floor each rep, explosive pull, torso nearly parallel to floor. More power, strict form. Great for back strength. YATES ROW: More upright (60-70°), underhand grip, pull to hips. More traps and lower lats. Less strict but heavy. FORM MISTAKES: Using momentum (swinging torso), pulling to neck, not squeezing at top, rounding lower back. GRIP: Overhand = more upper back/rhomboids. Underhand = more lats and biceps. WIDTH: Wide = more upper back width. Narrow = more mid-back thickness. PROGRAM: 4x8-10 as main back exercise, or 5x5 heavy (Pendlay style). Row at least as much as you bench — most people don\'t!', ar: 'دليل الباربل رو: بنت أوفر رو: هينج من الهيب (45-60° زاوية الجسم)، اسحب البار لأسفل الصدر/أعلى البطن، اعصر لوحي الكتف مع بعض، انزل بتحكم. باني سمك الظهر. بندلاي رو: توقف كامل من الأرض كل تكرار، سحب انفجاري. قوة أكتر، فورم أصرم. ياتس رو: أكثر استقامة (60-70°)، قبضة عكسية، اسحب للهيب. ترابس ولاتس سفلي أكتر. أخطاء: استخدام الزخم، سحب للرقبة، مش بتعصر فوق، تدوير الظهر. القبضة: أوفرهاند = أعلى الظهر. أندرهاند = لاتس وباي. العرض: واسع = عرض. ضيق = سمك. البرنامج: 4×8-10 كتمرين ظهر أساسي. اعمل رو بقدر ما بتعمل بنش على الأقل — أغلب الناس مش بتعمل كده!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v51: Hack Squat Guide ────────────────────────
+  {
+    keywords: ['hack squat', 'hack squat vs squat', 'hack squat form', 'hack squat benefits', 'hack squat machine', 'hack squat for quads', 'hack squat alternative'],
+    keywordsAr: ['هاك سكوات', 'هاك سكوات ولا سكوات', 'فورم الهاك سكوات', 'فوائد الهاك سكوات', 'هاك سكوات للكوادز'],
+    keywordsFranco: ['hack squat', 'hack squat wala squat', 'form el hack squat', 'fawa2ed el hack squat', 'hack squat lel quads'],
+    stateId: 'WK_MENU',
+    response: { en: 'Hack Squat Guide: WHAT: Machine squat with back supported at an angle. Primarily targets quads (more than regular squat). BENEFITS: Isolates quads better (back supported = less back/core involvement), safer (no balance needed), great for going heavy without spotter, excellent for deep reps. FORM: Feet shoulder-width, lower on platform = more quad. Higher/wider = more glute/hamstring. Back flat against pad, full depth, controlled tempo. HACK vs BARBELL SQUAT: Barbell squat = more muscles worked (better overall), more functional, harder. Hack squat = more quad isolation, safer, easier to learn. PROGRAMMING: After barbell squats as accessory (3x10-12), or as main quad exercise if you can\'t barbell squat (back issues). VARIATIONS: Narrow stance (quad dominant), wide stance (more inner thigh), reverse hack squat (more glute). ALTERNATIVE (no machine): Barbell hack squat (bar behind legs) or sissy squats.', ar: 'دليل الهاك سكوات: إيه: سكوات بماشين والظهر مسنود بزاوية. بيستهدف الكوادز (أكتر من السكوات العادي). الفوائد: عزل كوادز أفضل (الظهر مسنود = ظهر/كور أقل)، أأمن (مفيش توازن)، ممتاز للوزن التقيل بدون سبوتر. الفورم: رجلين بعرض الكتف، أوطى على البلاتفورم = كوادز أكتر. أعلى/أوسع = جلوتس/هامسترينج. ظهر مفرود على الباد، عمق كامل. هاك مقابل باربل سكوات: باربل = عضلات أكتر، أكثر وظيفية، أصعب. هاك = عزل كوادز أكتر، أأمن، أسهل في التعلم. البرمجة: بعد الباربل سكوات كتمرين مساعد (3×10-12)، أو كتمرين كوادز أساسي لو مش قادر تعمل باربل (مشاكل ظهر). الفرسيونات: ستانس ضيق (كوادز)، واسع (داخل الفخذ)، ريفرس هاك (جلوتس).' },
+    priority: 6,
+    domain: 'workout',
+  },
+
+  // ── v51: Leg Extension Safety ────────────────────────
+  {
+    keywords: ['leg extension', 'leg extension safe', 'leg extension bad for knees', 'leg extension form', 'leg extension alternative', 'leg extension vs squat', 'quad isolation'],
+    keywordsAr: ['ليج إكستنشن', 'ليج إكستنشن والركبة', 'ليج إكستنشن آمن', 'فورم الليج إكستنشن', 'بديل ليج إكستنشن', 'عزل الكوادز'],
+    keywordsFranco: ['leg extension', 'leg extension wel rokba', 'leg extension amen', 'form el leg extension', 'badeel leg extension', '3azl el quads'],
+    stateId: 'WK_MENU',
+    response: { en: 'Leg Extension — Safe or Dangerous? THE CONTROVERSY: "Leg extensions are bad for your knees." REALITY: They\'re safe IF done correctly. The concern is shear force on the ACL, but research shows that within normal ROM and weights, it\'s fine for healthy knees. FORM: Adjust pad to sit above ankles (not on feet!), control the weight (no momentum), full extension at top (squeeze quad), slow negative. DON\'T: Go super heavy (this IS an isolation exercise), kick/swing the weight, have the pad too low on your shin. ALTERNATIVES: Sissy squats, Spanish squats (with band), leg press (feet low), front squats. BEST USE: As a finisher after compound exercises (squats, leg press). 3x12-15 with slow eccentric = incredible quad pump. KNEE ISSUES? Use partial ROM (skip the last 30° of extension where most stress occurs), or do only the top half. Always warm up knees first with 2 light sets.', ar: 'ليج إكستنشن — آمنة ولا خطيرة؟ الجدل: "ليج إكستنشن سيئة للركبة." الحقيقة: آمنة لو اتعملت صح. القلق من قوة القص على الـACL، بس الأبحاث بتقول إنها كويسة ضمن المدى الطبيعي لركبة صحية. الفورم: ضبط الباد فوق الكاحل (مش على القدم!)، تحكم في الوزن (بدون زخم)، إكستنشن كامل فوق (اعصر الكواد)، سلبية بطيئة. متعملش: وزن تقيل أوي (ده تمرين عزل)، ترفس الوزن. أفضل استخدام: كفنيشر بعد الكومباوند (سكوات، ليج برس). 3×12-15 ببطء = بامب كوادز مذهل. عندك مشاكل ركبة؟ استخدم مدى حركة جزئي (تجنب آخر 30° من الإكستنشن)، أو اعمل النص العلوي بس. سخن الركبة الأول بسيتين خفيفين.' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
