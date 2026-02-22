@@ -5523,6 +5523,83 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v36: Fiber & Digestive Health ──────────────────────────
+  {
+    keywords: ['fiber', 'how much fiber', 'fiber foods', 'high fiber', 'constipation', 'digestion', 'digestive health', 'bloating gym'],
+    keywordsAr: ['ألياف', 'كمية الألياف', 'أكل عالي الألياف', 'إمساك', 'هضم', 'صحة الجهاز الهضمي', 'انتفاخ'],
+    keywordsFranco: ['alyaf', 'kameyet el alyaf', 'akl 3aly el alyaf', 'emsak', 'hadm', 'entefa5'],
+    stateId: 'NT_MENU',
+    response: { en: 'Fiber guide: TARGET: 25-35g/day (most people get only 15g!). HIGH FIBER FOODS: Oats (4g/cup), lentils (8g/cup), beans (7g/cup), broccoli (5g/cup), berries (8g/cup), chia seeds (10g/oz), sweet potato (4g/medium). BENEFITS: Better digestion, keeps you full longer (great for cutting), feeds gut bacteria, lowers cholesterol. TOO MUCH TOO FAST = bloating/gas — increase gradually over 2 weeks. Egyptian high-fiber: ful (excellent!), lentil soup, whole wheat bread. Drink MORE water as you increase fiber!', ar: 'دليل الألياف: الهدف: 25-35ج/يوم (أغلب الناس بياخدوا 15ج بس!). أكل عالي الألياف: شوفان (4ج/كوب)، عدس (8ج/كوب)، فول (7ج/كوب)، بروكلي (5ج/كوب)، توت (8ج/كوب)، بذور شيا (10ج/أونصة)، بطاطا (4ج/متوسطة). فوائد: هضم أفضل، بتشبع أكتر (ممتاز للتنشيف)، بتغذي بكتيريا الأمعاء، بتنزل الكوليسترول. كتير بسرعة = انتفاخ/غازات — زود تدريجياً خلال أسبوعين. ألياف مصرية: فول (ممتاز!)، شوربة عدس، عيش بلدي. اشرب مية أكتر لما تزود الألياف!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v36: Vitamin D Deep Dive ──────────────────────────────────
+  {
+    keywords: ['vitamin d', 'vitamin d deficiency', 'vitamin d dosage', 'sunshine vitamin', 'vitamin d egypt', 'low vitamin d'],
+    keywordsAr: ['فيتامين د', 'نقص فيتامين د', 'جرعة فيتامين د', 'فيتامين الشمس', 'فيتامين د مصر'],
+    keywordsFranco: ['vitamin d', 'na2s vitamin d', 'gor3et vitamin d', 'vitamin el shams', 'vitamin d masr'],
+    stateId: 'HP_MENU',
+    response: { en: 'Vitamin D (the gym vitamin): WHY: Boosts testosterone, improves strength, bone health, immune function, mood. DEFICIENCY: Extremely common in Egypt (despite the sun!) because: sunscreen, indoor lifestyle, dark skin needs more. DOSE: 2000-5000 IU daily (get blood test first, ideal level: 40-60 ng/mL). Take with a fatty meal (fat-soluble). FOOD SOURCES: Salmon, eggs, fortified milk — but supplementation is usually needed. Cost: ~50-100 LE/month from Egyptian pharmacies. Get tested: ask for "25-OH Vitamin D" blood test. Most athletes are deficient — and it KILLS performance!', ar: 'فيتامين د (فيتامين الجيم): ليه: بيرفع التستوستيرون، بيحسن القوة، صحة العظام، المناعة، المزاج. النقص: شائع جداً في مصر (رغم الشمس!) بسبب: صن سكرين، حياة داخلية، البشرة الغامقة محتاجة أكتر. الجرعة: 2000-5000 وحدة يومياً (اعمل تحليل الأول، المستوى المثالي: 40-60). خده مع وجبة فيها دهون (قابل للذوبان في الدهون). مصادر أكل: سلمون، بيض، لبن مدعم — بس المكمل عادة لازم. التكلفة: ~50-100 جنيه/شهر من الصيدلية. اتحلل: اطلب تحليل "25-OH Vitamin D". أغلب الرياضيين ناقصين — وبيقتل الأداء!' },
+    priority: 8,
+    domain: 'health',
+  },
+
+  // ── v36: Healthy Fats Guide ───────────────────────────────────
+  {
+    keywords: ['healthy fats', 'good fats', 'bad fats', 'fat sources', 'omega 3 foods', 'trans fat', 'saturated fat', 'how much fat daily'],
+    keywordsAr: ['دهون صحية', 'دهون كويسة', 'دهون سيئة', 'مصادر دهون', 'أوميجا 3', 'دهون متحولة', 'كمية الدهون'],
+    keywordsFranco: ['dohon se7eya', 'dohon kwaysa', 'dohon say2a', 'masader dohon', 'omega 3', 'dohon met7awla', 'kameyet el dohon'],
+    stateId: 'NT_MENU',
+    response: { en: 'Fats guide: HEALTHY (eat daily): Olive oil, avocado, nuts, seeds, fatty fish (omega-3), eggs, dark chocolate. MODERATE: Butter, ghee, coconut oil (saturated — not evil, but limit). AVOID: Trans fats (partially hydrogenated oils), deep fried food, margarine. HOW MUCH: 20-35% of total calories (0.8-1g/kg bodyweight minimum). Fat is ESSENTIAL for: testosterone production, vitamin absorption (A, D, E, K), brain health, joint health. Don\'t go below 50g/day. Egyptian picks: olive oil, tahini, nuts, eggs — all great fat sources!', ar: 'دليل الدهون: صحية (كل يومياً): زيت زيتون، أفوكادو، مكسرات، بذور، سمك دهني (أوميجا-3)، بيض، شوكلاتة غامقة. باعتدال: زبدة، سمنة، زيت جوز هند (مشبعة — مش شريرة بس حدد). تجنب: دهون متحولة (زيوت مهدرجة جزئياً)، مقلي غطس، مارجرين. الكمية: 20-35% من إجمالي السعرات (0.8-1ج/كج حد أدنى). الدهون ضرورية لـ: إنتاج التستوستيرون، امتصاص الفيتامينات (A, D, E, K)، صحة الدماغ، صحة المفاصل. متنزلش تحت 50ج/يوم. اختيارات مصرية: زيت زيتون، طحينة، مكسرات، بيض — كلهم مصادر دهون ممتازة!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v36: Exercise Form Checklist ──────────────────────────────
+  {
+    keywords: ['exercise form', 'proper form', 'form check', 'form tips', 'common mistakes gym', 'bad form', 'technique tips'],
+    keywordsAr: ['فورم التمرين', 'فورم صح', 'شيك فورم', 'نصايح فورم', 'أخطاء شائعة جيم', 'فورم غلط'],
+    keywordsFranco: ['form el tamreen', 'form sa7', 'check form', 'nasa2e7 form', 'a5ta2 sha2e3a gym', 'form ghalat'],
+    stateId: 'WK_MENU',
+    response: { en: 'Form checklist for top exercises: SQUAT: Feet shoulder width, toes slightly out, chest up, brace core, hips back then down, knees track over toes, depth to parallel+. BENCH: Feet flat, arch back, retract scapula, bar path J-curve, touch chest, elbows 45°. DEADLIFT: Bar over mid-foot, grip outside knees, chest up, FLAT back, push floor away, lockout with hips. OHP: Squeeze glutes, brace core, press straight up (head through at top). GENERAL: 1) Film yourself 2) Ego = injury 3) Full ROM always 4) Control the negative 5) Breathe (exhale on exertion).', ar: 'شيك ليست الفورم لأهم التمارين: سكوات: قدم بعرض الكتف، صوابع لبرا شوية، صدر مرفوع، شد الكور، الوسط لورا وتحت، الركبة تتبع الصوابع، عمق لبارالل+. بنش: قدم على الأرض، قوس الظهر، ارجع اللوح، مسار البار J، لمس الصدر، كوع 45°. ديدلفت: البار فوق نص القدم، قبضة برا الركبة، صدر مرفوع، ظهر مستقيم، ادفع الأرض، لوك اوت بالوسط. OHP: اعصر الأرداف، شد الكور، اضغط لفوق مستقيم (الراس يعدي في القمة). عام: 1) صور نفسك 2) التعند = إصابة 3) نطاق حركة كامل 4) تحكم في السلبي 5) اتنفس (زفير مع الجهد).' },
+    priority: 9,
+    domain: 'workout',
+  },
+
+  // ── v36: Gym Motivation Quotes ────────────────────────────────
+  {
+    keywords: ['motivational quote', 'gym quote', 'inspire me', 'motivation quote', 'fitness quote', 'i need motivation', 'pump me up'],
+    keywordsAr: ['اقتباس تحفيزي', 'كلام تحفيز', 'حفزني', 'اقتباس جيم', 'محتاج تحفيز', 'حماسني'],
+    keywordsFranco: ['e2tebas ta7feezy', 'kalam ta7feez', '7afezny', 'e2tebas gym', 'me7tag ta7feez', '7amasny'],
+    stateId: 'QA_MENU',
+    response: { en: 'Gym motivation: "The only bad workout is the one that didn\'t happen." "Your body can stand almost anything — it\'s your mind you have to convince." "Don\'t wish for a good body, work for it." "You don\'t have to be great to start, but you have to start to be great." "The pain you feel today will be the strength you feel tomorrow." "Train insane or remain the same." "Discipline is choosing between what you want NOW and what you want MOST." Now go lift something heavy! 💪 Your future self will thank you.', ar: 'تحفيز الجيم: "أسوأ تمرين هو اللي مش حصل." "جسمك يقدر يتحمل أي حاجة تقريباً — عقلك هو اللي محتاج تقنعه." "متتمناش جسم حلو، اشتغل عليه." "مش لازم تكون عظيم عشان تبدأ، بس لازم تبدأ عشان تبقى عظيم." "الألم اللي بتحسه النهاردا هيبقى القوة اللي هتحسها بكرة." "تمرن بجنون أو فضل زي ما انت." "الانضباط هو الاختيار بين اللي عايزه دلوقتي واللي عايزه أكتر." روح ارفع حاجة تقيلة! مستقبلك هيشكرك.' },
+    priority: 6,
+    domain: 'root',
+  },
+
+  // ── v36: Healthy Eating Out ───────────────────────────────────
+  {
+    keywords: ['eating out healthy', 'restaurant healthy', 'healthy restaurant choices', 'eating out diet', 'restaurant macros', 'fast food healthy'],
+    keywordsAr: ['أكل صحي برا', 'مطعم صحي', 'اختيارات صحية مطعم', 'أكل برا ودايت', 'فاست فود صحي'],
+    keywordsFranco: ['akl se7y barra', 'mat3am se7y', 'e5teyarat se7eya mat3am', 'akl barra w diet', 'fast food se7y'],
+    stateId: 'NT_MENU',
+    response: { en: 'Eating out while dieting: GENERAL RULES: 1) Check menu online before going 2) Grilled > fried always 3) Ask for dressing/sauce on the side 4) Protein first, then veggies, then carbs 5) Share dessert (don\'t skip social life for diet!). FAST FOOD: Grilled chicken sandwich (skip fries), salad with grilled protein. EGYPTIAN RESTAURANTS: Grilled kofta/kebab + salad + minimal bread, fish + rice, chicken shawarma (no fries). WORST: Feteer, pizza, deep fried anything. You can eat at 80% of restaurants and stay on track — it\'s about choices, not avoidance!', ar: 'الأكل برا وانت بتعمل دايت: قواعد عامة: 1) شيك المنيو أونلاين قبل ما تروح 2) مشوي > مقلي دايماً 3) اطلب الصوص على جنب 4) بروتين الأول، بعدين خضار، بعدين كارب 5) شارك الحلو (متلغيش الحياة الاجتماعية عشان الدايت!). فاست فود: سندوتش فراخ مشوي (بلاش بطاطس)، سلطة ببروتين مشوي. مطاعم مصرية: كفتة/كباب مشوي + سلطة + عيش قليل، سمك + رز، شاورما فراخ (بلاش بطاطس). الأسوأ: فطير، بيتزا، أي حاجة مقلية. تقدر تاكل في 80% من المطاعم وتفضل في المسار — الموضوع اختيارات مش تجنب!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v36: CrossFit Explained ───────────────────────────────────
+  {
+    keywords: ['crossfit', 'what is crossfit', 'crossfit workout', 'wod', 'crossfit good or bad', 'crossfit vs gym', 'crossfit exercises'],
+    keywordsAr: ['كروس فيت', 'ايه كروس فيت', 'تمرين كروس فيت', 'كروس فيت كويس ولا وحش', 'كروس فيت ولا جيم'],
+    keywordsFranco: ['crossfit', 'eih crossfit', 'tamreen crossfit', 'crossfit kwais wala we7esh', 'crossfit wala gym'],
+    stateId: 'WK_MENU',
+    response: { en: 'CrossFit explained: WHAT: High-intensity functional training combining Olympic lifting, gymnastics, and cardio. GOOD: Community, varied workouts (never boring), great conditioning, builds functional strength. BAD: Injury risk if form suffers for speed, can be expensive, competitive pressure to push too hard. WHO IT\'S FOR: People who like variety, community, and competition. NOT FOR: Bodybuilders focused on aesthetics, those with existing injuries. TYPICAL WOD: "Fran" = 21-15-9 thrusters + pull-ups for time. CrossFit in Egypt is growing — several boxes in Cairo and Alex. Try a free class before committing!', ar: 'كروس فيت شرح: إيه: تمرين وظيفي عالي الشدة بيجمع رفع أولمبي، جمباز، وكارديو. الكويس: مجتمع، تمارين متنوعة (مش مملة أبداً)، كونديشنينج ممتاز، قوة وظيفية. الوحش: خطر إصابة لو الفورم اتأثر بالسرعة، ممكن يكون غالي، ضغط تنافسي. لمين: ناس بتحب التنوع، المجتمع، والمنافسة. مش لـ: لاعبي كمال أجسام بيركزوا على الشكل، اللي عندهم إصابات. WOD نموذجي: "فران" = 21-15-9 ثراسترز + عقلة على الوقت. كروس فيت في مصر بيكبر — بوكسات كتير في القاهرة واسكندرية. جرب كلاس مجاني قبل الالتزام!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
