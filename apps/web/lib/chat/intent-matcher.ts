@@ -3785,6 +3785,142 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'health',
   },
 
+  // ── v20: Macro Counting & Tracking ──────────────────────────
+  {
+    keywords: ['how to count macros', 'count macros', 'macro tracking', 'what are macros', 'macros explained', 'iifym'],
+    keywordsAr: ['ازاي احسب الماكروز', 'حساب الماكروز', 'ايه الماكروز', 'تتبع الماكروز'],
+    keywordsFranco: ['ezay a7seb el macros', '7esab el macros', 'eh el macros', 'tatabo3 el macros'],
+    stateId: 'NT_MENU',
+    response: { en: 'Macro counting 101: Macros = Protein (4 cal/g) + Carbs (4 cal/g) + Fat (9 cal/g). Step 1: Calculate TDEE. Step 2: Set protein (2g/kg). Step 3: Set fat (0.8-1g/kg). Step 4: Fill rest with carbs. Track using this app! IIFYM = "If It Fits Your Macros" — flexible dieting. Accuracy > perfection!', ar: 'حساب الماكروز 101: الماكروز = بروتين (4 كالوري/ج) + كارب (4 كالوري/ج) + دهون (9 كالوري/ج). خطوة 1: احسب TDEE. خطوة 2: حدد البروتين (2ج/كيلو). خطوة 3: حدد الدهون (0.8-1ج/كيلو). خطوة 4: كمل الباقي كارب. تابع بالابلكيشن! IIFYM = دايت مرن. الدقة أهم من الكمال!' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['how much protein', 'protein per day', 'daily protein', 'protein intake', 'protein requirement'],
+    keywordsAr: ['كام بروتين', 'بروتين في اليوم', 'بروتين يومي', 'كمية البروتين'],
+    keywordsFranco: ['kam protein', 'protein fe el yom', 'protein yomy', 'kamyet el protein'],
+    stateId: 'NT_MENU',
+    response: { en: 'Protein needs: General fitness: 1.4-1.6g/kg. Building muscle: 1.6-2.2g/kg. Cutting: 2.0-2.5g/kg (higher to preserve muscle). Example: 80kg person building muscle = 128-176g/day. Spread across 4-5 meals (30-40g each). Protein sources: chicken, fish, eggs, dairy, legumes, whey.', ar: 'احتياج البروتين: لياقة عامة: 1.4-1.6ج/كيلو. بناء عضلات: 1.6-2.2ج/كيلو. تنشيف: 2.0-2.5ج/كيلو (أعلى للحفاظ على العضلات). مثال: 80 كيلو بناء عضلات = 128-176ج/يوم. وزعهم على 4-5 وجبات (30-40ج كل وجبة). مصادر: فراخ، سمك، بيض، ألبان، بقوليات، واي.' },
+    priority: 9,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['how much fat', 'fat per day', 'daily fat', 'fat intake', 'healthy fats how much'],
+    keywordsAr: ['كام دهون', 'دهون في اليوم', 'دهون يومي', 'كمية الدهون'],
+    keywordsFranco: ['kam dohon', 'dohon fe el yom', 'dohon yomy', 'kamyet el dohon'],
+    stateId: 'NT_MENU',
+    response: { en: 'Fat intake: Minimum 0.5g/kg (don\'t go below — hormones need fat!). Optimal: 0.8-1.2g/kg. That\'s 20-35% of total calories. Healthy fats: olive oil, avocado, nuts, fatty fish, eggs. Limit: trans fats (fried food, margarine), excessive saturated fat. Fat doesn\'t make you fat — excess calories do!', ar: 'كمية الدهون: الحد الأدنى 0.5ج/كيلو (متنزلش تحت — الهرمونات محتاجة دهون!). مثالي: 0.8-1.2ج/كيلو. ده 20-35% من إجمالي الكالوريز. دهون صحية: زيت زيتون، أفوكادو، مكسرات، سمك دهني، بيض. قلل: دهون متحولة (مقلي، مارجرين). الدهون مش بتتخن — الكالوريز الزيادة هي اللي بتتخن!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['how much carbs', 'carbs per day', 'daily carbs', 'carb intake', 'are carbs bad'],
+    keywordsAr: ['كام كارب', 'كارب في اليوم', 'كارب يومي', 'الكاربز وحشة'],
+    keywordsFranco: ['kam carb', 'carb fe el yom', 'carb yomy', 'el carbs we7sha'],
+    stateId: 'NT_MENU',
+    response: { en: 'Carbs are NOT the enemy! They\'re your body\'s preferred fuel for intense training. Intake: Bulking: 3-5g/kg. Maintenance: 2-4g/kg. Cutting: 1-3g/kg. Best sources: rice, oats, potatoes, bread, fruits, pasta. Time them around workouts for best performance. Low carb = low energy in the gym!', ar: 'الكاربز مش العدو! هم وقود الجسم المفضل للتمرين المكثف. الكمية: بالكينج: 3-5ج/كيلو. صيانة: 2-4ج/كيلو. تنشيف: 1-3ج/كيلو. أحسن مصادر: رز، شوفان، بطاطس، عيش، فاكهة، مكرونة. وقتهم حوالين التمرين. كارب قليل = طاقة قليلة في الجيم!' },
+    priority: 8,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['fiber intake', 'fiber foods', 'how much fiber', 'constipation diet', 'gut health diet'],
+    keywordsAr: ['ألياف', 'أكل ألياف', 'كام ألياف', 'إمساك', 'صحة الأمعاء'],
+    keywordsFranco: ['alyaf', 'akl alyaf', 'kam alyaf', 'emsak', 'se7et el am3a2'],
+    stateId: 'NT_MENU',
+    response: { en: 'Fiber guide: Target 25-35g/day. High-fiber foods: oats (4g/cup), lentils (15g/cup), broccoli (5g/cup), apples (4g), chia seeds (10g/oz), beans (8-10g/cup). Benefits: better digestion, fullness, blood sugar control. Increase slowly + drink more water or you\'ll get bloated!', ar: 'دليل الألياف: استهدف 25-35ج/يوم. أكل غني بالألياف: شوفان (4ج/كوب)، عدس (15ج/كوب)، بروكلي (5ج/كوب)، تفاح (4ج)، بذور شيا (10ج/أونصة)، فاصوليا (8-10ج/كوب). فوايد: هضم أحسن، شبع، تحكم في السكر. زود ببطء + اشرب ميه أكتر وإلا هتنتفخ!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+
+  // ── v20: Posture & Desk Workers ─────────────────────────────
+  {
+    keywords: ['fix posture', 'bad posture', 'posture correction', 'rounded shoulders', 'forward head', 'desk posture'],
+    keywordsAr: ['تصحيح الوقفة', 'وقفة غلط', 'أكتاف مدورة', 'رقبة مايلة', 'وقفة المكتب'],
+    keywordsFranco: ['tas7i7 el wa2fa', 'wa2fa ghalat', 'aktaf medawara', 'ra2ba mayla', 'wa2fat el maktab'],
+    stateId: 'HL_MENU',
+    response: { en: 'Fix posture: 1) Strengthen back: face pulls, band pull-aparts, rows (3x/week) 2) Stretch chest: doorway stretch 30sec ×3 3) Chin tucks: 15 reps ×3/day (fixes forward head) 4) Wall angels: 10 reps/day 5) Stand up every 30min 6) Screen at eye level. Most posture issues come from weak back + tight chest!', ar: 'صحح الوقفة: 1) قوي الضهر: فيس بولز، باند بول-اپارت، رو (3 مرات/أسبوع) 2) استرتش الصدر: doorway stretch 30ث ×3 3) Chin tucks: 15 ×3/يوم (بيصلح الرأس الأمامي) 4) Wall angels: 10/يوم 5) قوم كل 30 دقيقة 6) الشاشة عند مستوى العين. أغلب مشاكل الوقفة من ضهر ضعيف + صدر مشدود!' },
+    priority: 8,
+    domain: 'health',
+  },
+  {
+    keywords: ['lower back pain', 'back pain desk', 'office back pain', 'sit all day back', 'sciatica exercise'],
+    keywordsAr: ['ألم أسفل الظهر', 'وجع الضهر', 'ألم ضهر المكتب', 'عرق النسا'],
+    keywordsFranco: ['alam asfal el dahr', 'waga3 el dahr', 'alam dahr el maktab', '3er2 el nasa'],
+    stateId: 'HL_MENU',
+    response: { en: 'Lower back pain (desk workers): 1) Bird dogs: 10/side ×3 2) Dead bugs: 10/side ×3 3) Glute bridges: 15 ×3 4) Cat-cow: 10 ×3 5) Hip flexor stretch: 30sec/side. Strengthen core + glutes, stretch hip flexors. AVOID: sit-ups, heavy deadlifts when in pain. If pain persists >2 weeks or radiates to legs, see a doctor!', ar: 'ألم أسفل الضهر (الموظفين): 1) Bird dogs: 10/جانب ×3 2) Dead bugs: 10/جانب ×3 3) Glute bridges: 15 ×3 4) Cat-cow: 10 ×3 5) استرتش hip flexor: 30ث/جانب. قوي الكور + المؤخرة، استرتش hip flexors. بلاش: sit-ups، ديدلفت ثقيل وانت بتوجعك. لو الألم مستمر أكتر من أسبوعين أو بينزل في الرجل، روح دكتور!' },
+    priority: 9,
+    domain: 'health',
+  },
+  {
+    keywords: ['desk exercise', 'office exercise', 'exercise at work', 'stretches at desk', 'work break exercise'],
+    keywordsAr: ['تمارين المكتب', 'تمارين في الشغل', 'استرتش في المكتب'],
+    keywordsFranco: ['tamarin el maktab', 'tamarin fe el shogl', 'stretch fe el maktab'],
+    stateId: 'WK_MENU',
+    response: { en: 'Office exercises (no equipment): Every 30-60min: 1) Desk push-ups ×15 2) Chair squats ×15 3) Wall sit 30sec 4) Neck rolls 5) Wrist circles 6) Stand + calf raises ×20. Stretches: chest stretch in doorway, hip flexor stretch, hamstring stretch against wall. Small movements prevent stiffness!', ar: 'تمارين المكتب (بدون معدات): كل 30-60 دقيقة: 1) بوش اب على المكتب ×15 2) سكوات كرسي ×15 3) وول سيت 30ث 4) دوائر رقبة 5) دوائر رسغ 6) وقف + كاف رايز ×20. استرتش: صدر في الباب، hip flexor، هامسترنج على الحيطة. حركات صغيرة بتمنع التيبس!' },
+    priority: 7,
+    domain: 'workout',
+  },
+
+  // ── v20: Competition Prep (Bodybuilding) ────────────────────
+  {
+    keywords: ['competition prep', 'bodybuilding competition', 'physique competition', 'stage ready', 'show prep'],
+    keywordsAr: ['تحضير بطولة', 'بطولة كمال أجسام', 'بطولة فيزيك', 'جاهز للمسرح'],
+    keywordsFranco: ['ta7dir batola', 'batolt kamal agsam', 'batolt physique', 'gahez lel masra7'],
+    stateId: 'QA_MENU',
+    response: { en: 'Competition prep basics: Start 12-16 weeks out. Phase 1 (12-8w): gradual calorie drop, increase cardio slowly. Phase 2 (8-4w): tighter diet, 4-5 cardio sessions. Phase 3 (4-1w): peak week, water/carb manipulation. GET A COACH for your first show! Prep is mentally and physically extreme — don\'t do it alone.', ar: 'أساسيات تحضير البطولة: ابدأ قبل 12-16 أسبوع. مرحلة 1 (12-8): نزول كالوريز تدريجي، زود الكارديو ببطء. مرحلة 2 (8-4): دايت أضيق، 4-5 حصص كارديو. مرحلة 3 (4-1): بيك ويك، تلاعب ميه/كارب. خد كوتش لأول بطولة! التحضير صعب ذهنياً وبدنياً — متعملهوش لوحدك.' },
+    priority: 8,
+    domain: 'root',
+  },
+  {
+    keywords: ['posing', 'bodybuilding poses', 'how to pose', 'mandatory poses', 'stage posing'],
+    keywordsAr: ['بوزنج', 'وقفات كمال أجسام', 'ازاي اعمل بوز', 'وقفات إجبارية'],
+    keywordsFranco: ['posing', 'wa2fat kamal agsam', 'ezay a3mel pose', 'wa2fat egbarya'],
+    stateId: 'QA_MENU',
+    response: { en: 'Mandatory bodybuilding poses: Front double bicep, Front lat spread, Side chest, Side tricep, Rear double bicep, Rear lat spread, Abdominal & thigh, Most muscular. Practice posing 15-30min daily starting 8 weeks out. Posing IS a workout — it\'s exhausting! Film yourself and compare to pros.', ar: 'وقفات كمال الأجسام الإجبارية: فرونت دبل بايسب، فرونت لات سبريد، سايد تشست، سايد ترايسب، ريار دبل بايسب، ريار لات سبريد، بطن وفخذ، موست ماسكيولر. تمرن على البوزنج 15-30 دقيقة يومياً من 8 أسابيع. البوزنج تمرين بحد ذاته — بيتعب! صور نفسك وقارن بالمحترفين.' },
+    priority: 6,
+    domain: 'root',
+  },
+
+  // ── v20: Gut Health & Digestion ─────────────────────────────
+  {
+    keywords: ['digestive issues gym', 'stomach problems gym', 'gas gym', 'farting gym', 'protein farts', 'bloating protein'],
+    keywordsAr: ['مشاكل هضم', 'معدة في الجيم', 'غازات', 'انتفاخ من البروتين'],
+    keywordsFranco: ['mashakl hadm', 'me3da fe el gym', 'ghazat', 'entefakh men el protein'],
+    stateId: 'HL_MENU',
+    response: { en: 'Gym digestive issues: Protein farts? Switch to whey isolate (less lactose). Bloating? 1) Eat slowly 2) Reduce carbonation 3) Add digestive enzymes 4) Limit sugar alcohols in protein bars 5) Try probiotics. Don\'t train on a full stomach (wait 1-2hrs). Gas is normal with high-protein diets — fiber + water help!', ar: 'مشاكل هضم الجيم: غازات من البروتين؟ جرب واي أيزوليت (لاكتوز أقل). انتفاخ؟ 1) كل ببطء 2) قلل المشروبات الغازية 3) ضيف إنزيمات هاضمة 4) قلل سكريات كحولية في البروتين بارز 5) جرب بروبيوتكس. متتمرنش على معدة ملانة (استنى 1-2 ساعة). الغازات طبيعية مع بروتين عالي — ألياف + ميه بتساعد!' },
+    priority: 7,
+    domain: 'health',
+  },
+  {
+    keywords: ['probiotics', 'gut health', 'microbiome', 'gut bacteria', 'fermented foods'],
+    keywordsAr: ['بروبيوتكس', 'صحة الأمعاء', 'بكتيريا الأمعاء', 'أكل مخمر'],
+    keywordsFranco: ['probiotics', 'se7et el am3a2', 'bacteria el am3a2', 'akl mo5amar'],
+    stateId: 'HL_MENU',
+    response: { en: 'Gut health for athletes: 1) Eat fermented foods daily (yogurt, pickles, kimchi) 2) Diverse fiber sources (veggies, fruits, grains) 3) Prebiotic foods (garlic, onion, banana) 4) Avoid excessive artificial sweeteners 5) Manage stress (gut-brain connection). Healthy gut = better nutrient absorption = better gains!', ar: 'صحة الأمعاء للرياضيين: 1) كل أكل مخمر يومياً (زبادي، مخللات) 2) ألياف متنوعة (خضار، فاكهة، حبوب) 3) بريبيوتكس (ثوم، بصل، موز) 4) قلل المحليات الصناعية 5) قلل التوتر (اتصال أمعاء-مخ). أمعاء صحية = امتصاص أحسن = مكاسب أحسن!' },
+    priority: 7,
+    domain: 'health',
+  },
+
+  // ── v20: Egyptian Gym Pricing & Reality ─────────────────────
+  {
+    keywords: ['gym price egypt', 'gym membership cost', 'how much gym egypt', 'gym fees', 'cheap gym egypt'],
+    keywordsAr: ['سعر الجيم', 'اشتراك الجيم كام', 'كام الجيم في مصر', 'رسوم الجيم'],
+    keywordsFranco: ['se3r el gym', 'eshterak el gym kam', 'kam el gym fe masr', 'rosom el gym'],
+    stateId: 'QA_MENU',
+    response: { en: 'Egypt gym prices (2024-2025): Budget gyms: 200-400 LE/month. Mid-range (Oxygen, etc): 500-800 LE/month. Premium (Gold\'s, etc): 1000-2000+ LE/month. University gyms: cheapest option. Look for: annual deals (save 20-30%), student discounts, off-peak pricing. Quality > fancy — find one close to home!', ar: 'أسعار الجيم في مصر (2024-2025): جيمات رخيصة: 200-400 جنيه/شهر. وسط (Oxygen، الخ): 500-800 جنيه/شهر. بريميوم (Gold\'s، الخ): 1000-2000+ جنيه/شهر. جيمات الجامعة: أرخص اختيار. دور على: عروض سنوية (توفر 20-30%)، خصم طلبة، أسعار أوقات هادية. الجودة أهم من الفخامة — لاقي واحد قريب!' },
+    priority: 6,
+    domain: 'root',
+  },
+  {
+    keywords: ['supplement price egypt', 'whey price egypt', 'where to buy supplements', 'supplement store egypt'],
+    keywordsAr: ['سعر المكملات', 'سعر الواي في مصر', 'اشتري مكملات منين', 'محل مكملات'],
+    keywordsFranco: ['se3r el mokamelat', 'se3r el whey fe masr', 'ashtery mokamelat menen', 'ma7al mokamelat'],
+    stateId: 'SP_MENU',
+    response: { en: 'Supplements in Egypt: Whey protein (2.2kg): 1500-3000 LE. Creatine (500g): 400-800 LE. Buy from: official distributors (iHerb Egypt, care stores), verified gym shops. BEWARE of fakes! Check hologram, batch number, expiry. Never buy open/repackaged supplements. Budget tip: eggs + milk > expensive supplements!', ar: 'المكملات في مصر: واي بروتين (2.2 كيلو): 1500-3000 جنيه. كرياتين (500ج): 400-800 جنيه. اشتري من: موزعين رسميين (iHerb Egypt، محلات care)، محلات جيم موثوقة. حذاري من المضروب! شيك الهولوجرام، رقم الدفعة، الصلاحية. متشتريش مكملات مفتوحة/معاد تغليفها. نصيحة: بيض + لبن أحسن من مكملات غالية!' },
+    priority: 7,
+    domain: 'supplements',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
