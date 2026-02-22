@@ -1541,8 +1541,12 @@ export function matchIntent(text: string, currentStateId: string): IntentMatch |
  * Returns up to `limit` quick-match labels the user might mean.
  */
 export function getSuggestions(text: string, limit = 3): Array<{ label: string; labelAr: string; stateId: string }> {
-  const normalized = text.toLowerCase().trim();
+  let normalized = text.toLowerCase().trim();
   if (normalized.length < 2) return [];
+
+  normalized = fixTypos(normalized);
+  const stripped = stripNoise(normalized);
+  const stemmed = stemText(normalized);
 
   const matches: Array<{ label: string; labelAr: string; stateId: string; score: number }> = [];
   const seen = new Set<string>();
@@ -1552,8 +1556,15 @@ export function getSuggestions(text: string, limit = 3): Array<{ label: string; 
     const allKeywords = [...rule.keywords, ...(rule.keywordsAr || []), ...(rule.keywordsFranco || [])];
 
     for (const kw of allKeywords) {
-      if (kw.toLowerCase().includes(normalized) || normalized.includes(kw.toLowerCase())) {
+      const kwLower = kw.toLowerCase();
+      // Direct match
+      if (kwLower.includes(normalized) || normalized.includes(kwLower) ||
+          kwLower.includes(stripped) || stripped.includes(kwLower)) {
         score = Math.max(score, (rule.priority || 0) + 1);
+      }
+      // Stemmed match
+      else if (simpleStem(kwLower).includes(stemmed) || stemmed.includes(simpleStem(kwLower))) {
+        score = Math.max(score, (rule.priority || 0) * 0.8 + 0.5);
       }
     }
 
