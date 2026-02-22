@@ -7070,6 +7070,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v61: Anabolic Window + Protein Timing + Carb Loading + Water Cut + Refeed Day ──
+  {
+    keywords: ['anabolic window', 'post workout window', '30 minute window', 'protein window', 'nutrient timing myth', 'eat after workout immediately', 'post workout shake timing'],
+    keywordsAr: ['نافذة أنابوليك', 'نافذة ما بعد التمرين', '30 دقيقة بعد التمرين', 'بروتين بعد التمرين فوراً'],
+    keywordsFranco: ['anabolic window', 'protein window', '30 minute window', 'post workout shake timing'],
+    stateId: 'info_anabolic_window',
+    response: { en: 'The Anabolic Window — Truth vs Myth: THE OLD CLAIM: You MUST eat protein within 30 minutes post-workout or you lose your gains. THE TRUTH (backed by research): The "anabolic window" is MUCH wider than 30 minutes — it is 4-6 hours! If you ate a meal 2-3 hours before training, your body is still processing those nutrients after training. So the urgency to eat immediately is overblown. WHEN TIMING ACTUALLY MATTERS: Fasted training — if you trained on empty stomach, YES eat protein within 1 hour. Very long sessions (2+ hours) — glycogen depleted, eat sooner. Multiple training sessions per day — fast recovery between sessions matters. WHAT TO DO: Eat a protein-rich meal within 2-3 hours post-workout. Aim for 30-50g protein and some carbs. A protein shake is convenient but a real meal works just as well. BOTTOM LINE: Total daily protein intake matters FAR more than exact timing. Getting 1.6-2.2g/kg/day trumps worrying about the "window" every time.', ar: 'نافذة الأنابوليك — الحقيقة ضد الخرافة: الادعاء القديم: لازم تاكل بروتين في 30 دقيقة بعد التمرين أو هتخسر مكاسبك. الحقيقة (مدعومة ببحث): النافذة أوسع بكتير — 4-6 ساعات! لو أكلت وجبة قبل التمرين بـ2-3 ساعات، جسمك لسه بيهضم الأكل ده. امتى التوقيت بيفرق فعلاً: تمرين صايم — أيوا كُل بروتين في أول ساعة. جلسات طويلة (+2 ساعة). أكتر من جلسة/يوم. ايه تعمل: كُل وجبة غنية بالبروتين في 2-3 ساعات بعد التمرين. 30-50ج بروتين مع كربوهيدرات. الخلاصة: إجمالي البروتين اليومي بيفرق أكتر بكتير من التوقيت!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['carb loading', 'carb load', 'glycogen loading', 'carb up', 'carb loading before race', 'carb loading before competition', 'pasta party'],
+    keywordsAr: ['تحميل كربوهيدرات', 'كارب لود', 'كارب أب', 'تحميل جلايكوجين'],
+    keywordsFranco: ['carb loading', 'carb load', 'carb up', 'glycogen loading'],
+    stateId: 'info_carb_loading',
+    response: { en: 'Carb Loading Protocol: WHO NEEDS IT: Endurance athletes (marathon, cycling, triathlon), bodybuilding competitors (pre-show), athletes with events lasting 90+ minutes. WHO DOES NOT NEED IT: Regular gym-goers, strength athletes (short bursts), people trying to lose weight. HOW TO DO IT: CLASSIC METHOD (3 days): 3 days before event, increase carbs to 8-12g/kg body weight. For 80kg person = 640-960g carbs/day! Reduce fat to compensate. Reduce training volume. BEST CARB SOURCES: White rice, pasta, bread, potatoes, oats, bananas, sports drinks. Avoid high-fiber carbs (bloating). WHAT HAPPENS: Muscles and liver store extra glycogen (up to 2x normal). You will gain 1-3kg water weight (glycogen holds water). This is temporary and beneficial! COMMON MISTAKES: Not reducing training (you need to rest for storage), too much fiber (GI distress), trying it for the first time on competition day (test it first!), eating junk food instead of clean carbs. IN EGYPT: White rice + aish baladi + pasta = perfect carb loading foods.', ar: 'بروتوكول تحميل الكربوهيدرات: مين محتاجه: رياضيين تحمل (ماراثون، دراجات)، لاعبين كمال أجسام (قبل البطولة)، رياضيين بأحداث +90 دقيقة. مين مش محتاج: ناس الجيم العادية، رياضيين قوة. الطريقة (3 أيام): 3 أيام قبل الحدث، زوّد الكارب لـ8-12ج/كج وزن. لشخص 80كج = 640-960ج كارب/يوم! قلل الدهون. قلل التدريب. أفضل مصادر: أرز أبيض، مكرونة، عيش، بطاطس، شوفان، موز. تجنب الألياف العالية (انتفاخ). في مصر: أرز أبيض + عيش بلدي + مكرونة = أكل تحميل مثالي.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['water manipulation', 'water cut', 'water loading', 'peak week water', 'dehydration competition', 'weight cut water', 'water weight loss', 'sodium manipulation'],
+    keywordsAr: ['تلاعب بالمية', 'قطع مية', 'تحميل مية', 'جفاف مسابقة', 'قطع وزن مية'],
+    keywordsFranco: ['water cut', 'water manipulation', 'water loading', 'sodium cut'],
+    stateId: 'info_water_manipulation',
+    response: { en: 'Water & Sodium Manipulation — ADVANCED COMPETITION TECHNIQUE: WARNING: This is for bodybuilding/weight-class competitions ONLY. Do NOT do this for regular fitness or appearance. It can be DANGEROUS if done incorrectly. THE CONCEPT: Manipulate water and sodium to look lean/make weight class. BASIC PROTOCOL (peak week): Days 7-5: Drink 6-8 liters water, high sodium. Days 4-3: Drink 4-5 liters, moderate sodium. Day 2: Drink 2 liters, low sodium. Day 1 (show day): Sip only, no sodium. WHAT HAPPENS: High water + high sodium trains your body to excrete water. When you cut both, body continues excreting = temporary dehydration = more visible muscles. RISKS: Dehydration, electrolyte imbalance, muscle cramps, kidney stress, fainting, in extreme cases hospitalization. SAFER ALTERNATIVES: Just diet properly for 12-16 weeks. A lean physique with normal hydration looks better than a dehydrated one. NEVER do water cuts for daily life or social media photos.', ar: 'تلاعب المية والصوديوم — تقنية مسابقات متقدمة: تحذير: ده للمسابقات بس! ما تعملهوش للياقة العادية. ممكن يكون خطير! المفهوم: تلاعب بالمية والصوديوم عشان تبان لين/توصل لفئة وزن. البروتوكول: أيام 7-5: اشرب 6-8 لتر، صوديوم عالي. أيام 4-3: 4-5 لتر، صوديوم متوسط. يوم 2: 2 لتر، صوديوم منخفض. يوم العرض: رشف بس. المخاطر: جفاف، خلل إلكتروليت، تشنجات، ضغط كلى، إغماء. البديل الأأمن: دايت صح لمدة 12-16 أسبوع. جسم لين مع ترطيب طبيعي أحسن من جسم مجفف.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['refeed day', 'refeed vs cheat day', 'high carb day', 'diet break', 'refeed protocol', 'strategic overeating', 'diet refeed'],
+    keywordsAr: ['يوم ريفيد', 'ريفيد ضد تشيت داي', 'يوم كارب عالي', 'استراحة دايت', 'بروتوكول ريفيد'],
+    keywordsFranco: ['refeed day', 'refeed vs cheat', 'high carb day', 'diet break'],
+    stateId: 'info_refeed_day',
+    response: { en: 'Refeed Day vs Cheat Day — There IS a Difference: CHEAT DAY: Eat whatever you want, no limits. Often leads to 3000-5000+ calorie binges. Psychological relief but sets you back physically. Can trigger guilt and unhealthy relationship with food. REFEED DAY (BETTER): Strategically increase CARBS to maintenance or slight surplus. Keep protein the same, keep fat low-moderate. Planned and controlled. BENEFITS OF REFEED: Restores leptin levels (hunger hormone that drops during dieting). Replenishes glycogen (better workouts). Psychological break from restriction. Boosts metabolism temporarily. Better sleep. HOW TO DO IT: Increase carbs by 50-100% above diet levels. Keep protein at normal intake. Keep fat low (below 50g). Choose clean carb sources (rice, pasta, oats, potatoes, bread). EXAMPLE: Normal diet = 200g carbs. Refeed = 300-400g carbs. FREQUENCY: Every 7-14 days during a cut. Leaner you are = more frequent refeeds needed. Over 20% body fat = probably do not need refeeds yet. AFTER REFEED: You WILL weigh more the next day (water + glycogen). This is NOT fat gain. It normalizes in 1-2 days.', ar: 'يوم ريفيد ضد تشيت داي — فيه فرق! تشيت داي: كل أي حاجة من غير حدود. غالباً بيوصل 3000-5000+ سعرة. ريفيد داي (أحسن): زوّد الكربوهيدرات بشكل استراتيجي لمستوى الصيانة. خلي البروتين زي ما هو، الدهون منخفضة. مخطط ومنظم. الفوائد: بيرجّع مستويات اللبتين، بيملا الجلايكوجين، راحة نفسية، بيحسن النوم. الطريقة: زوّد الكارب 50-100% فوق مستوى الدايت. بروتين طبيعي. دهون تحت 50ج. مصادر كارب نظيفة (أرز، مكرونة، شوفان). مثال: دايت عادي = 200ج كارب. ريفيد = 300-400ج كارب. التكرار: كل 7-14 يوم في الكاتنج. بعد الريفيد: هتوزن أكتر تاني يوم (مية + جلايكوجين). ده مش زيادة دهون!' },
+    priority: 7,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['intuitive eating', 'intuitive eating fitness', 'listen to body', 'hunger signals', 'eat when hungry', 'no calorie counting', 'intuitive eating muscle'],
+    keywordsAr: ['أكل حدسي', 'استمع لجسمك', 'أكل لما جعان', 'من غير عد سعرات', 'إشارات جوع'],
+    keywordsFranco: ['intuitive eating', 'listen to body', 'no calorie counting', 'eat when hungry'],
+    stateId: 'info_intuitive_eating',
+    response: { en: 'Intuitive Eating for Fitness — Can It Work? WHAT IT IS: Eating based on hunger/fullness signals rather than counting calories or following strict rules. 10 principles including: reject diet mentality, honor hunger, make peace with food, respect fullness. FOR GENERAL HEALTH: YES, it works great! Reduces anxiety around food, improves relationship with eating, sustainable long-term. FOR MUSCLE BUILDING: HARDER. Most people naturally under-eat protein and over-eat carbs/fat. You might need some structure (at minimum, track protein). FOR FAT LOSS: MIXED. Works for people who overeat due to restriction. May not work if you need specific deficit. Some people\'s hunger signals are not calibrated well. BEST APPROACH FOR FITNESS: "Flexible dieting" — track protein and calories loosely, but eat what you enjoy within those ranges. Not full intuitive eating, not strict tracking. THE MIDDLE GROUND IS BEST. WHEN INTUITIVE EATING WORKS: Maintenance phase, people recovering from eating disorders, people burned out from years of dieting, people with healthy hunger signals. WHEN IT DOESN\'T: Competition prep, rapid weight loss needs, people with poor hunger awareness.', ar: 'الأكل الحدسي للياقة — ممكن يشتغل؟ ايه هو: الأكل بناءً على إشارات الجوع/الشبع بدل عد السعرات. للصحة العامة: أيوا بيشتغل! بيقلل القلق حوالين الأكل. لبناء العضل: أصعب. معظم الناس طبيعياً بتاكل بروتين أقل. محتاج على الأقل تتبع البروتين. لخسارة الدهون: مختلط. أفضل طريقة: "دايت مرن" — تتبع بروتين وسعرات بشكل فضفاض، بس كُل اللي بتستمتع بيه. لا أكل حدسي كامل ولا تتبع صارم. النص هو الأفضل.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
