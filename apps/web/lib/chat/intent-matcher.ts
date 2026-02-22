@@ -10438,6 +10438,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── Fruits for Fitness ────────────────────────
+  {
+    keywords: ['banana', 'banana macros', 'banana calories', 'banana pre workout', 'banana post workout', 'banana bodybuilding', 'banana potassium'],
+    keywordsAr: ['موز', 'سعرات الموز', 'موز قبل التمرين', 'موز بعد التمرين', 'موز للجيم', 'بوتاسيوم الموز'],
+    keywordsFranco: ['moz', 'banana', 'moz calories', 'moz 2abl el tamrin', 'moz ba3d el tamrin', 'moz lel gym'],
+    stateId: 'nutrition_banana_deep',
+    response: { en: 'Banana (1 medium ~120g): 105 cal, 1.3g protein, 27g carbs, 0.4g fat. Rich in potassium (422mg), vitamin B6, and natural sugars. THE perfect pre-workout fruit — eat 30 min before training for quick energy. Post-workout: banana + protein shake = ideal combo. Riper bananas = higher GI (faster sugar). Green bananas = more resistant starch (better for gut). Frozen bananas = perfect smoothie base. Cheap and available year-round in Egypt.', ar: 'الموز (واحدة متوسطة ~١٢٠ جرام): ١٠٥ سعرة، ١.٣ جرام بروتين، ٢٧ جرام كارب. غني بالبوتاسيوم (٤٢٢ مج) وفيتامين B6. أفضل فاكهة قبل التمرين — كلها قبل التمرين بـ٣٠ دقيقة. بعد التمرين: موز + بروتين شيك = كومبو مثالي. الموز الناضج = سكر أسرع. الموز الأخضر = نشا مقاوم (أفضل للأمعاء). رخيص ومتوفر طول السنة في مصر.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['dates', 'tamr', 'date macros', 'date calories', 'medjool dates', 'dates pre workout', 'dates bodybuilding', 'dates sugar'],
+    keywordsAr: ['بلح', 'تمر', 'سعرات البلح', 'بلح قبل التمرين', 'بلح للجيم', 'تمر مجدول', 'سكر البلح'],
+    keywordsFranco: ['bala7', 'tamr', 'dates', 'bala7 calories', 'bala7 2abl el tamrin', 'bala7 lel gym'],
+    stateId: 'nutrition_dates_deep',
+    response: { en: 'Dates (3 pieces ~75g): 200 cal, 1.8g protein, 54g carbs, 0.1g fat. Natural sugar bomb — 65-80% sugar by weight. But also: high potassium, magnesium, iron, fiber. Perfect pre-workout: 2-3 dates 30 min before training = instant energy. Ramadan iftar essential. Medjool dates: bigger, softer, more calories (~66 cal each). Regular dates: ~20 cal each. Don\'t overdo it — 3-5 dates/day max. Stuff with almond butter for a 300 cal energy bomb.', ar: 'البلح (٣ حبات ~٧٥ جرام): ٢٠٠ سعرة، ١.٨ جرام بروتين، ٥٤ جرام كارب. قنبلة سكر طبيعية — ٦٥-٨٠٪ سكر. بس كمان: بوتاسيوم، ماغنسيوم، حديد، ألياف عالية. مثالي قبل التمرين: ٢-٣ بلحات قبل بـ٣٠ دقيقة = طاقة فورية. أساسي في رمضان على الإفطار. متكترش — ٣-٥ بلحات/يوم حد أقصى. احشيها بزبدة لوز = قنبلة طاقة ٣٠٠ سعرة.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['watermelon', 'watermelon macros', 'watermelon calories', 'watermelon diet', 'watermelon cutting', 'bat5i5', 'summer fruit gym'],
+    keywordsAr: ['بطيخ', 'سعرات البطيخ', 'بطيخ دايت', 'بطيخ للتنشيف', 'بطيخ صحي', 'بطيخ في الصيف'],
+    keywordsFranco: ['bate5', 'bat5i5', 'watermelon', 'bate5 calories', 'bate5 diet', 'bate5 lel tanshif'],
+    stateId: 'nutrition_watermelon_deep',
+    response: { en: 'Watermelon (200g): only 60 cal, 0.9g protein, 15g carbs, 0.3g fat. 92% water — one of the LOWEST calorie fruits! Perfect for cutting — fills you up with almost no calories. Contains citrulline (improves blood flow, some gym supplements use it). Post-workout in summer: hydrating + fast carbs. The rind has even more citrulline. Egyptian summer staple — eat freely when cutting. Just don\'t eat a whole watermelon (that\'s still 600+ cal!).', ar: 'البطيخ (٢٠٠ جرام): ٦٠ سعرة بس، ٠.٩ جرام بروتين، ١٥ جرام كارب. ٩٢٪ ماء — من أقل الفواكه سعرات! مثالي للتنشيف — بيملاك بسعرات قليلة جداً. فيه سيترولين (بيحسن الدورة الدموية). بعد التمرين في الصيف: ترطيب + كارب سريع. أساسي في صيف مصر — كل براحتك في التنشيف. بس متاكلش بطيخة كاملة (لسه ٦٠٠+ سعرة!).' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['mango', 'mango macros', 'mango calories', 'mango season', 'mango diet', 'mango sugar', 'mango bodybuilding', 'egyptian mango'],
+    keywordsAr: ['مانجو', 'سعرات المانجو', 'مانجو دايت', 'سكر المانجو', 'مانجو مصري', 'عصير مانجو', 'مانجو للجيم'],
+    keywordsFranco: ['manga', 'mango', 'manga calories', 'manga diet', 'manga masry', '3asir manga'],
+    stateId: 'nutrition_mango_deep',
+    response: { en: 'Mango (1 medium ~200g flesh): 130 cal, 1.8g protein, 35g carbs, 0.6g fat. High in vitamin A, C, and fiber. Egyptian mango season (July-September) = some of the world\'s best mangoes. Types: Ewais, Hindi, Sedeka, Keitt. Mango is higher sugar than most fruits — limit to 1 per day on a cut. Great post-workout (fast carbs + vitamins). Mango smoothie + protein powder = delicious. Dried mango: concentrated sugar, avoid while dieting.', ar: 'المانجو (واحدة متوسطة ~٢٠٠ جرام لب): ١٣٠ سعرة، ١.٨ جرام بروتين، ٣٥ جرام كارب. غنية بفيتامين A, C وألياف. موسم المانجو المصري (يوليو-سبتمبر) = من أحسن مانجو في العالم. أنواع: عويسي، هندي، صديقة، كيت. المانجو سكرها أعلى من أغلب الفواكه — واحدة بس في اليوم لو بتنشف. سموذي مانجو + بروتين = لذيذ.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['fruit timing', 'when to eat fruit', 'fruit before workout', 'fruit after workout', 'fruit and gym', 'best fruit gym', 'fruit cutting', 'fruit bulking'],
+    keywordsAr: ['توقيت الفاكهة', 'امتى اكل فاكهة', 'فاكهة قبل التمرين', 'فاكهة بعد التمرين', 'أحسن فاكهة للجيم', 'فاكهة في التنشيف'],
+    keywordsFranco: ['fruit timing', 'emta akol fakha', 'fakha 2abl el tamrin', 'a7san fakha lel gym', 'fakha fel tanshif'],
+    stateId: 'nutrition_fruit_timing',
+    response: { en: 'Fruit timing for gym: PRE-WORKOUT (30-60 min): banana, dates, apple — fast energy. POST-WORKOUT: watermelon, pineapple, grapes — fast carbs + vitamins. MORNING: berries, orange, grapefruit — antioxidants + vitamin C. BEFORE BED: kiwi (improves sleep quality — proven!), cherries (natural melatonin). CUTTING best fruits: watermelon, strawberries, grapefruit (all under 35 cal/100g). BULKING: banana, mango, dates, dried fruit. Avoid fruit juice — eat whole fruit for fiber.', ar: 'توقيت الفاكهة للجيم: قبل التمرين (٣٠-٦٠ دقيقة): موز، بلح، تفاح — طاقة سريعة. بعد التمرين: بطيخ، أناناس، عنب — كارب سريع + فيتامينات. الصبح: توت، برتقال — مضادات أكسدة. قبل النوم: كيوي (بيحسن النوم — مثبت علمياً!). للتنشيف: بطيخ، فراولة، جريب فروت (كلهم أقل من ٣٥ سعرة/١٠٠ جرام). للبالك: موز، مانجو، بلح. تجنب العصير — كل الفاكهة كاملة عشان الألياف.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
