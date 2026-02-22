@@ -10250,6 +10250,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── Egyptian Desserts & Drinks Macros ────────────────────────
+  {
+    keywords: ['kunafa', 'konafa', 'kunefe', 'kunafa calories', 'kunafa macros', 'knafeh', 'cheese kunafa', 'cream kunafa'],
+    keywordsAr: ['كنافة', 'كنافة نابلسية', 'سعرات الكنافة', 'كنافة بالقشطة', 'كنافة بالجبنة', 'كنافة دايت'],
+    keywordsFranco: ['konafa', 'kunafa', 'knafeh', 'konafa calories', 'konafa bel 2eshta', 'konafa bel gebna'],
+    stateId: 'nutrition_kunafa_deep',
+    response: { en: 'Kunafa (1 slice ~150g): ~450-550 cal, 8g protein, 55g carbs, 24g fat. Cheese kunafa: slightly more protein (~12g) but similar calories. The syrup (shira) is pure sugar — that\'s where most carbs come from. The butter-soaked shredded pastry adds massive fat. One slice = about 25% of daily calories for most people. In Ramadan: if you must, ONE small piece after iftar. Don\'t combine with other sweets. No "healthy" version exists — enjoy it rare.', ar: 'الكنافة (قطعة ~١٥٠ جرام): ~٤٥٠-٥٥٠ سعرة، ٨ جرام بروتين، ٥٥ جرام كارب، ٢٤ جرام دهون. الكنافة بالجبنة: بروتين أكتر شوية (~١٢ جرام). الشربات هي سكر صافي. القطعة = حوالي ٢٥٪ من السعرات اليومية. في رمضان: قطعة صغيرة بعد الإفطار بس. متجمعهاش مع حلويات تانية.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['basbousa', 'basboosa', 'semolina cake', 'basbousa calories', 'basbousa macros', 'hareesa sweet', 'namoura'],
+    keywordsAr: ['بسبوسة', 'سعرات البسبوسة', 'بسبوسة دايت', 'هريسة حلو', 'نمورة', 'بسبوسة صحية'],
+    keywordsFranco: ['basbousa', 'basboosa', 'basbousa calories', 'basbousa diet', 'hareesa 7elw'],
+    stateId: 'nutrition_basbousa_deep',
+    response: { en: 'Basbousa (1 piece ~80g): ~300-350 cal, 4g protein, 45g carbs, 14g fat. Made from semolina, sugar, coconut, butter, and soaked in syrup. Very high in simple carbs and fat. "Healthy" basbousa (oat flour, honey, less butter): ~200 cal per piece — better but still a treat. If cutting: avoid entirely. If bulking: can fit 1 piece post-workout when you need fast carbs. The coconut adds some healthy fats and fiber.', ar: 'البسبوسة (قطعة ~٨٠ جرام): ~٣٠٠-٣٥٠ سعرة، ٤ جرام بروتين، ٤٥ جرام كارب، ١٤ جرام دهون. مصنوعة من سميد، سكر، جوز هند، سمن، ومنقوعة في شربات. بسبوسة "صحية" (شوفان، عسل، سمن أقل): ~٢٠٠ سعرة. لو بتنشف: تجنبها. لو بتبلك: قطعة بعد التمرين لما محتاج كارب سريع.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['umm ali', 'om ali', 'um ali', 'bread pudding', 'umm ali calories', 'om ali macros', 'egyptian dessert'],
+    keywordsAr: ['أم علي', 'سعرات أم علي', 'أم علي دايت', 'أم علي صحية'],
+    keywordsFranco: ['om ali', 'umm ali', 'om 3ali', 'om ali calories', 'om ali diet'],
+    stateId: 'nutrition_umm_ali_deep',
+    response: { en: 'Umm Ali (1 bowl ~250g): ~500-650 cal, 12g protein, 55g carbs, 30g fat. Made from puff pastry, milk, cream, nuts, raisins, sugar. The cream and nuts make it extremely calorie-dense. The nuts (almonds, pistachios, cashews) provide some protein and healthy fats. Lighter version: use low-fat milk, skip the cream, less sugar — still ~400 cal. A Ramadan/winter favorite — enjoy sparingly, max 1 small serving.', ar: 'أم علي (طبق ~٢٥٠ جرام): ~٥٠٠-٦٥٠ سعرة، ١٢ جرام بروتين، ٥٥ جرام كارب، ٣٠ جرام دهون. مصنوعة من رقائق العجين، لبن، قشطة، مكسرات، زبيب، سكر. القشطة والمكسرات بتخليها سعرات عالية جداً. نسخة أخف: لبن قليل الدسم، بدون قشطة، سكر أقل — لسه ~٤٠٠ سعرة. استمتع بيها بحصة صغيرة بس.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['sahlab', 'salep', 'sahlep', 'hot sahlab', 'sahlab calories', 'sahlab macros', 'winter drink egypt'],
+    keywordsAr: ['سحلب', 'سعرات السحلب', 'سحلب ساخن', 'سحلب دايت', 'مشروب شتوي'],
+    keywordsFranco: ['sa7lab', 'sahlab', 'sahlep', 'sa7lab calories', 'sa7lab diet'],
+    stateId: 'nutrition_sahlab_deep',
+    response: { en: 'Sahlab (1 cup ~250ml): ~200-300 cal, 5g protein, 35g carbs, 8g fat (with toppings). Plain sahlab base: ~150 cal. The nuts, coconut, cinnamon, and raisins on top add 50-150 cal. Made from milk + sahlab powder (orchid root starch) + sugar. Lighter version: use low-fat milk, skip sugar (use stevia), light toppings = ~120 cal. The milk provides calcium and protein. A decent winter treat if portion-controlled.', ar: 'السحلب (كوب ~٢٥٠ مل): ~٢٠٠-٣٠٠ سعرة، ٥ جرام بروتين، ٣٥ جرام كارب، ٨ جرام دهون (بالتوبنج). سحلب بدون توبنج: ~١٥٠ سعرة. المكسرات وجوز الهند والقرفة والزبيب بتزود ٥٠-١٥٠ سعرة. نسخة أخف: لبن قليل الدسم، بدون سكر (استخدم ستيفيا) = ~١٢٠ سعرة. اللبن بيديك كالسيوم وبروتين.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+  {
+    keywords: ['qamar el din', 'amar el din', 'apricot juice', 'ramadan drink', 'qamar eldin calories', 'dried apricot drink'],
+    keywordsAr: ['قمر الدين', 'عصير قمر الدين', 'سعرات قمر الدين', 'مشروب رمضاني', 'قمر دين'],
+    keywordsFranco: ['amar el din', 'qamar el din', '2amar el din', 'amar el deen', 'qamar eldin calories'],
+    stateId: 'nutrition_qamar_eldin_deep',
+    response: { en: 'Qamar El Din (1 glass ~250ml): ~180-220 cal, 1g protein, 45g carbs, 0g fat. It\'s basically concentrated apricot paste dissolved in water with sugar. Pure simple carbs — very high glycemic index. Good for breaking fast in Ramadan (quick energy). But terrible for dieting due to sugar load. Healthier: dilute more, use less paste, add water/ice. The apricot provides vitamin A and potassium. Limit to 1 glass at iftar.', ar: 'قمر الدين (كوب ~٢٥٠ مل): ~١٨٠-٢٢٠ سعرة، ١ جرام بروتين، ٤٥ جرام كارب، ٠ دهون. معجون مشمش مركز مع ماء وسكر. كارب بسيط — مؤشر سكر عالي. كويس لكسر الصيام في رمضان (طاقة سريعة). بس مش مناسب للدايت. الأصح: خففه أكتر، استخدم معجون أقل. المشمش فيه فيتامين A وبوتاسيوم. كوب واحد بس على الإفطار.' },
+    priority: 6,
+    domain: 'nutrition',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
