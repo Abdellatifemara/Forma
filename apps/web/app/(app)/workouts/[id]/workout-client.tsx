@@ -113,10 +113,12 @@ export default function ActiveWorkoutPage() {
 
   const isPlaceholder = workoutId === '_placeholder' || workoutId === '_placeholder_';
 
-  // Redirect placeholder routes (static export artifact)
+  // Redirect placeholder routes — preserve query params on the workouts page
   useEffect(() => {
     if (isPlaceholder) {
-      window.location.href = '/workouts' + window.location.search;
+      const search = window.location.search;
+      // If there are query params (whatnow, formcheck, voicecoach), redirect to /workouts with them
+      window.location.replace('/workouts' + (search || ''));
     }
   }, [isPlaceholder]);
 
