@@ -7681,6 +7681,53 @@ const INTENT_RULES: IntentRule[] = [
     domain: 'nutrition',
   },
 
+  // ── v74: Sleep Quality + Muscle Cramps + Overtraining Signs + Rest Day Activities + Foam Rolling Guide ──
+  {
+    keywords: ['improve sleep', 'sleep quality gym', 'sleep better', 'sleep for gains', 'sleep and muscle', 'insomnia gym', 'sleep hygiene', 'sleep schedule gym', 'how much sleep gym'],
+    keywordsAr: ['تحسين نوم', 'نوم وجيم', 'نوم أحسن', 'نوم وعضلات', 'أرق جيم', 'نوم صحي', 'جدول نوم'],
+    keywordsFranco: ['sleep better', 'sleep gym', 'improve sleep', 'insomnia gym', 'sleep hygiene'],
+    stateId: 'info_sleep_quality_deep',
+    response: { en: 'Sleep Quality for Maximum Gains — Complete Guide: WHY SLEEP MATTERS: Growth hormone peaks during deep sleep (70% of daily GH released while sleeping). Muscle protein synthesis increases during sleep. Poor sleep = higher cortisol = muscle breakdown + fat storage. 1 week of 5-hour sleep → 10-15% drop in testosterone. HOW MUCH: 7-9 hours for most adults. Athletes may need 8-10 hours. Quality > quantity — 7 hours of deep sleep beats 9 hours of restless sleep. SLEEP HYGIENE PROTOCOL: 1) Same bedtime/wake time daily (even weekends). 2) Dark room — blackout curtains or sleep mask. 3) Cool room (18-20°C). 4) No screens 1 hour before bed. 5) No caffeine after 2PM. 6) No heavy meals 2-3 hours before bed. 7) No intense exercise 3 hours before bed. SUPPLEMENTS: Magnesium glycinate (400mg before bed). Zinc (30mg). Melatonin (0.5-3mg). Ashwagandha — reduces cortisol. IN EGYPT: Biggest sleep killer is phone scrolling at night. Put phone in another room. Second biggest: late-night shisha — nicotine is a stimulant. AC at 20°C makes huge difference.', ar: 'جودة النوم لأقصى مكاسب: ليه النوم مهم: هرمون النمو بيوصل الذروة في النوم العميق (70% بيتفرز وانت نايم). نوم ضعيف = كورتيزول أعلى = تكسير عضلات. أسبوع 5 ساعات نوم ← انخفاض تستوستيرون 10-15%. كام ساعة: 7-9 للبالغين. بروتوكول النوم: 1) نفس ميعاد النوم يومياً. 2) أوضة ضلمة. 3) أوضة باردة (18-20°). 4) بدون شاشات ساعة قبل النوم. 5) بدون كافيين بعد 2 الضهر. مكملات: ماغنسيوم جلايسينات 400مج. زنك 30مج. في مصر: أكبر قاتل نوم هو الموبايل بالليل. شيشة — النيكوتين منبه.' },
+    priority: 7,
+    domain: 'health',
+  },
+  {
+    keywords: ['muscle cramp', 'cramp gym', 'leg cramp', 'cramp during workout', 'why cramp', 'prevent cramp', 'calf cramp', 'muscle spasm gym', 'cramp electrolyte'],
+    keywordsAr: ['تقلص عضلي', 'شد عضلي جيم', 'شد رجل', 'تقلص أثناء التمرين', 'ليه بتشد', 'منع شد عضلي', 'شد سمانة'],
+    keywordsFranco: ['muscle cramp', 'shad 3adaly', 'cramp gym', 'leg cramp', 'calf cramp'],
+    stateId: 'info_muscle_cramps',
+    response: { en: 'Muscle Cramps — Why They Happen & How to Fix: CAUSES: 1) Dehydration — most common. Drink 2-3L daily, more on training days. 2) Electrolyte imbalance — low magnesium, potassium, sodium. Eat bananas, spinach, add salt. 3) Overexertion — pushing too hard. Progressive overload, proper warm-up. 4) Poor circulation. 5) Caffeine excess. IMMEDIATE FIX: Stretch gently. Massage the area. Water with pinch of salt. Apply heat (not ice). PREVENTION: Before training: 500ml water + electrolytes. During: Sip every 15-20 minutes. Daily: Magnesium 400mg, potassium-rich foods, adequate salt. WHEN TO WORRY: Cramps lasting 10+ minutes, at rest, with swelling/numbness, very frequent → see doctor. NIGHT CRAMPS: Usually magnesium/potassium deficiency. Magnesium before bed, banana at night.', ar: 'الشد العضلي — ليه بيحصل: الأسباب: 1) جفاف — أكثر سبب. اشرب 2-3 لتر/يوم. 2) خلل إلكتروليتات. كُل موز، سبانخ، ملح. 3) إجهاد. 4) كافيين كتير. العلاج الفوري: مد العضلة بلطف. مساج. مية + ملح. سخونية. الوقاية: قبل التمرين: 500مل مية. يومياً: ماغنسيوم 400مج. شد بالليل: عادةً نقص ماغنسيوم. خد ماغنسيوم قبل النوم.' },
+    priority: 6,
+    domain: 'health',
+  },
+  {
+    keywords: ['overtraining sign', 'am i overtraining', 'overtraining symptoms', 'too much gym', 'overtrained', 'overtraining recovery', 'burnout gym', 'training too much', 'overreaching'],
+    keywordsAr: ['علامات إفراط تدريب', 'أنا بتمرن كتير', 'أعراض إفراط', 'جيم كتير', 'احتراق جيم', 'تمرين كتير'],
+    keywordsFranco: ['overtraining', 'batamren keteer', 'overtrained', 'too much gym', 'burnout gym'],
+    stateId: 'info_overtraining_signs',
+    response: { en: 'Overtraining Syndrome — Signs & Recovery: WARNING SIGNS: Physical: Persistent fatigue, strength decrease, frequent injuries/illness, poor sleep, elevated resting HR (+5-10 bpm), joint pain. Mental: Loss of motivation, irritability, depression, dreading workouts. Performance: Weights going DOWN, can\'t complete usual workouts, slow recovery. ARE YOU OVERTRAINING? Most gym-goers are UNDER-recovering, not overtraining. True overtraining takes months of extreme volume. What most experience is poor sleep, nutrition, stress management. FIX RECOVERY FIRST: Sleep 7-9 hours, protein 2g/kg, manage stress, deload every 4-6 weeks. IF TRULY OVERTRAINED: 7-14 days off. Return at 50% volume, build back over 2-3 weeks. PREVENTION: Structured program with deloads. Listen to body. Track HRV. Periodize training.', ar: 'متلازمة الإفراط: العلامات: إرهاق مستمر، نزول قوة، إصابات متكررة، نوم ضعيف، نبض عالي. ذهنياً: فقدان حماس، عصبية. أداء: أوزان بتنزل. هل فعلاً بتتمرن زيادة؟ أغلب الناس بتستريح أقل مش بتتمرن زيادة. صلّح النوم والأكل الأول. لو فعلاً مُفرط: راحة 7-14 يوم. ارجع بنص الفوليوم.' },
+    priority: 7,
+    domain: 'health',
+  },
+  {
+    keywords: ['rest day activity', 'what do rest day', 'rest day bored', 'active rest', 'off day gym', 'rest day tips', 'rest day routine', 'recovery day activity'],
+    keywordsAr: ['نشاط يوم راحة', 'ايه أعمل يوم راحة', 'يوم راحة ملل', 'راحة نشطة', 'يوم أوف جيم'],
+    keywordsFranco: ['rest day', 'off day gym', 'rest day bored', 'active rest', 'eh a3mel yom ra7a'],
+    stateId: 'info_rest_day_activities',
+    response: { en: 'Rest Day Activities — Stay Active Without Overtraining: LIGHT MOVEMENT: Walking 30-60 minutes, light cycling/swimming, yoga/stretching 20-30 minutes, foam rolling 10-15 minutes. ACTIVE HOBBIES: Hiking, casual sports, playing with kids, walking the dog. RECOVERY: Sauna/steam 15-20 minutes, cold shower 2-3 minutes, massage, Epsom salt bath. NUTRITION ON REST DAYS: Still eat protein — muscle is BUILT on rest days. Reduce carbs slightly. Keep water high. WHAT NOT TO DO: "Bonus" gym session, running 10K, sitting all day, fasting. MINDSET: Rest days are when gains happen. Training breaks down, rest builds up. 2-3 rest days per week is optimal.', ar: 'نشاطات يوم الراحة: حركة خفيفة: مشي 30-60 دقيقة، عجلة خفيفة، يوجا 20-30 دقيقة، فوم رولينج. ريكفري: ساونا 15-20 دقيقة، دش بارد، مساج. الأكل: كُل بروتينك! العضلات بتتبني يوم الراحة. ما تعملش: جلسة جيم زيادة، قعود طول اليوم. أيام الراحة هي لما المكاسب بتحصل.' },
+    priority: 6,
+    domain: 'recovery',
+  },
+  {
+    keywords: ['foam rolling guide', 'foam roller how', 'foam rolling technique', 'foam roll muscle', 'foam roller pain', 'foam rolling before after', 'which foam roller', 'foam rolling benefits'],
+    keywordsAr: ['فوم رولينج دليل', 'فوم رولر ازاي', 'تقنية فوم رول', 'فوم رولر ألم', 'فوم رولر قبل ولا بعد', 'أي فوم رولر'],
+    keywordsFranco: ['foam rolling', 'foam roller how', 'foam roll technique', 'foam roller pain'],
+    stateId: 'info_foam_rolling_guide',
+    response: { en: 'Foam Rolling — Complete Guide: HOW IT WORKS: Breaks up fascia adhesions, increases blood flow, reduces tension/soreness, improves ROM temporarily. TECHNIQUE: Roll slowly (1 inch/second). Find tender spot → STOP, hold 30-60 seconds. Breathe deeply. 1-2 minutes per muscle. Mild discomfort = good, sharp pain = stop. WHEN: Before workout: 5 minutes (opens ROM). After: 5-10 minutes (reduces DOMS). Rest days: 10-15 minutes full body. BODY PARTS: Quads: face down, hip to knee. IT Band: side lying, hip to knee (hurts!). Hamstrings: sit on roller. Calves: calves on roller. Lats: side lying, arm overhead. Upper back: lie on roller, arms crossed. Glutes: sit, cross ankle over knee. WHICH ROLLER: Soft (white) = beginners. Medium (blue/black) = most people. Hard (textured) = advanced. Lacrosse ball = targeted spots.', ar: 'فوم رولينج — دليل كامل: ازاي بيشتغل: بيكسر التصاقات، بيزود الدم، بيقلل الألم. التقنية: لف ببطء. لما تلاقي نقطة مؤلمة، وقّف 30-60 ثانية. كل عضلة 1-2 دقيقة. امتى: قبل التمرين 5 دقائق. بعده 5-10 دقائق. يوم راحة 10-15 دقيقة. أي رولر: ناعم = مبتدئين. متوسط = أغلب الناس. صلب = متقدمين.' },
+    priority: 6,
+    domain: 'recovery',
+  },
+
   // ── Notification / Reminder Patterns ────────────────────────
   {
     keywords: ['remind me', 'set reminder', 'reminder', 'notify me', 'alarm', 'alert me'],
