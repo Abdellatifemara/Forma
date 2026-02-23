@@ -15,7 +15,6 @@ import {
   Zap,
   Target,
   Flame,
-  Camera,
   Mic,
   Filter,
   X,
@@ -29,9 +28,9 @@ import { WhatNowButton } from '@/components/workouts/what-now';
 import { useLanguage } from '@/lib/i18n';
 import dynamic from 'next/dynamic';
 
-const FormChecker = dynamic(
-  () => import('@/components/workouts/form-checker').then(mod => ({ default: mod.FormChecker })),
-  { ssr: false, loading: () => <div className="fixed inset-0 bg-black z-50 flex items-center justify-center"><div className="text-white">Loading...</div></div> }
+const FitnessTests = dynamic(
+  () => import('@/components/workouts/fitness-tests').then(mod => ({ default: mod.FitnessTests })),
+  { ssr: false }
 );
 import { WorkoutWithVoiceCoach, VoiceCoachToggle, useVoiceCoach } from '@/components/workouts/voice-coach';
 
@@ -44,9 +43,9 @@ const getQuickActions = (isAr: boolean) => [
     gradient: 'from-primary to-orange-600',
   },
   {
-    icon: Camera,
-    title: isAr ? 'تحليل الفورم' : 'Form Check',
-    description: isAr ? 'تحليل فوري لأدائك' : 'Real-time form analysis',
+    icon: Target,
+    title: isAr ? 'اختبارات اللياقة' : 'Fitness Tests',
+    description: isAr ? 'اعرف مستواك' : 'Know your fitness level',
     href: '?formcheck=true',
     gradient: 'from-blue-500 to-blue-500',
   },
@@ -84,8 +83,6 @@ function WorkoutsContent() {
   const showWhatNow = searchParams.get('whatnow') === 'true';
   const showFormCheck = searchParams.get('formcheck') === 'true';
   const showVoiceCoach = searchParams.get('voicecoach') === 'true';
-  const [formCheckExercise, setFormCheckExercise] = useState('squat');
-
   const closeQuickAction = () => {
     router.push('/workouts');
   };
@@ -403,46 +400,16 @@ function WorkoutsContent() {
         </div>
       )}
 
-      {/* Quick Action: Form Check */}
+      {/* Quick Action: Fitness Tests */}
       {showFormCheck && (
-        <div className="fixed inset-0 z-50 bg-black/90 flex flex-col">
-          <div className="p-4 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Camera className="w-6 h-6 text-forma-orange" />
-              <h2 className="text-white text-lg font-semibold">{isAr ? 'تحليل الفورم' : 'Form Check'}</h2>
-            </div>
-            <button
-              onClick={closeQuickAction}
-              className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
-            >
-              <X className="w-5 h-5 text-white" />
-            </button>
-          </div>
-          <div className="px-4 pb-4">
-            <p className="text-white/70 mb-4">{isAr ? 'اختار التمرين عشان نحلل الفورم بتاعك:' : 'Select an exercise to check your form:'}</p>
-            <div className="flex flex-wrap gap-2">
-              {['squat', 'pushup', 'deadlift', 'plank'].map((exercise) => (
-                <button
-                  key={exercise}
-                  onClick={() => setFormCheckExercise(exercise)}
-                  className={`px-4 py-2 rounded-lg capitalize transition-colors ${
-                    formCheckExercise === exercise
-                      ? 'bg-forma-orange text-white'
-                      : 'bg-white/20 text-white hover:bg-white/30'
-                  }`}
-                >
-                  {exercise}
-                </button>
-              ))}
-            </div>
-          </div>
-          <div className="flex-1">
-            <FormChecker exercise={formCheckExercise} onClose={closeQuickAction} />
+        <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm overflow-y-auto">
+          <div className="max-w-lg mx-auto p-4 py-6">
+            <FitnessTests onClose={closeQuickAction} />
           </div>
         </div>
       )}
 
-      {/* Quick Action: Voice Coach — Coming Soon */}
+      {/* Quick Action: Voice Coach */}
       {showVoiceCoach && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="w-full max-w-lg animate-scale-in">
@@ -454,16 +421,16 @@ function WorkoutsContent() {
                 <X className="w-5 h-5 text-white" />
               </button>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Mic className="w-8 h-8 text-white" />
-              </div>
-              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{isAr ? 'مدرب صوتي' : 'Voice Coach'}</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{isAr ? 'قريباً! هنضيف المدرب الصوتي في التحديث الجاي.' : 'Coming soon! Voice coach will be available in the next update.'}</p>
-              <Button variant="outline" onClick={closeQuickAction}>
-                {isAr ? 'تمام' : 'Got it'}
-              </Button>
-            </div>
+            <WorkoutWithVoiceCoach
+              language={isAr ? 'ar' : 'en'}
+              exercises={[
+                { name: isAr ? 'سكوات' : 'Squat', sets: 4, reps: 10 },
+                { name: isAr ? 'بنش بريس' : 'Bench Press', sets: 3, reps: 12 },
+                { name: isAr ? 'ديدليفت' : 'Deadlift', sets: 4, reps: 8 },
+                { name: isAr ? 'شولدر بريس' : 'Shoulder Press', sets: 3, reps: 10 },
+                { name: isAr ? 'بنت أوفر رو' : 'Bent Over Row', sets: 3, reps: 12 },
+              ]}
+            />
           </div>
         </div>
       )}

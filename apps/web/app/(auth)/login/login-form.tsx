@@ -3,13 +3,14 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { Eye, EyeOff, Loader2, AlertCircle, Mail, Lock, ChevronRight, Dumbbell } from 'lucide-react';
+import { Eye, EyeOff, Loader2, AlertCircle, Mail, Lock, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
 import { authApi, setAuthCookie, setRefreshCookie } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
+import { Logo } from '@/components/ui/logo';
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -80,17 +81,10 @@ export default function LoginForm() {
 
   return (
     <div className="w-full max-w-md">
-      {/* Logo with icon */}
+      {/* Logo */}
       <div className="text-center mb-8">
-        <Link href="/" className="inline-block">
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary shadow-lg shadow-primary/25">
-              <Dumbbell className="h-6 w-6 text-white" />
-            </div>
-          </div>
-          <h1 className="text-3xl font-bold tracking-tight">
-            <span className="text-primary">FORMA</span>
-          </h1>
+        <Link href="/" className="inline-flex flex-col items-center gap-2">
+          <Logo size="xl" />
         </Link>
         <p className="text-muted-foreground mt-1.5 text-sm">Your fitness journey starts here</p>
       </div>

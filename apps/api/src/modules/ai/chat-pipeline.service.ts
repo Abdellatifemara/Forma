@@ -61,7 +61,7 @@ const SUPPLEMENT_PATTERNS = /(?:supplement|creatine|protein powder|whey|bcaa|pre
 // Navigation / action patterns — handle locally, don't send to GPT
 const NAVIGATION_PATTERNS: Array<{ pattern: RegExp; responseEn: string; responseAr: string }> = [
   {
-    pattern: /(?:change|edit|update)\s+(?:my\s+)?(?:name|profile|info|picture|photo|avatar)|غير\s*(?:اسمي|صورتي|بياناتي)|عايز\s*(?:اغير|اعدل)\s*(?:اسمي|صورتي)/i,
+    pattern: /(?:change|edit|update)\s+(?:my\s+)?(?:name|profile|info|picture|photo|avatar)|(?:name|profile|info|picture|photo|avatar)\s+(?:change|edit|update)|غير\s*(?:اسمي|صورتي|بياناتي)|عايز\s*(?:اغير|اعدل)\s*(?:اسمي|صورتي)/i,
     responseEn: '📝 To change your name or profile, go to **[Settings](/settings)** → Profile section. You can update your name, photo, and other info there.',
     responseAr: '📝 عشان تغير اسمك أو بياناتك، روح **[الإعدادات](/settings)** → قسم البروفايل. تقدر تعدل اسمك وصورتك وباقي البيانات هناك.',
   },
@@ -198,22 +198,45 @@ export class ChatPipelineService {
     const trimmed = message.trim();
     const isAr = language === 'ar';
 
-    // ── Step 1: Local pattern match (free, instant) ──
-    const localResponse = this.getLocalResponse(trimmed, isAr);
-    if (localResponse) {
-      this.logger.debug(`Local match for user ${userId}: ${localResponse.source}`);
-      return localResponse;
-    }
+    // ── Load user context early (needed for tier-aware decisions) ──
+    const userCtx = await this.loadUserContext(userId);
 
-    // ── Step 1b: Navigation / action patterns (free, instant) ──
+    // ── Step 0: Navigation / action patterns FIRST (highest priority) ──
+    // These should match before exercise/food patterns to avoid misroutes
     for (const nav of NAVIGATION_PATTERNS) {
       if (nav.pattern.test(trimmed)) {
         return { response: isAr ? nav.responseAr : nav.responseEn, source: 'local' };
       }
     }
 
-    // ── Load user context for DB searches ──
-    const userCtx = await this.loadUserContext(userId);
+    // ── Step 1: Local pattern match (free, instant) ──
+    // Premium+ users get GPT-personalized greetings, not generic templates
+    if (userCtx.tier === 'PREMIUM_PLUS') {
+      // Only handle thanks/bye locally — everything else goes to GPT
+      if (THANKS_BYE_PATTERNS.test(trimmed)) {
+        return {
+          response: pickRandom(isAr ? THANKS_RESPONSES_AR : THANKS_RESPONSES_EN),
+          source: 'local',
+        };
+      }
+      if (HELP_PATTERNS.test(trimmed)) {
+        return {
+          response: isAr ? HELP_RESPONSE_AR : HELP_RESPONSE_EN,
+          source: 'local',
+        };
+      }
+      // Greetings for Premium+ → go straight to GPT (Step 8)
+      if (GREETING_PATTERNS.test(trimmed)) {
+        return this.callGPTWithContext(request, userCtx);
+      }
+    } else {
+      // Free/Premium users → use local pattern match
+      const localResponse = this.getLocalResponse(trimmed, isAr);
+      if (localResponse) {
+        this.logger.debug(`Local match for user ${userId}: ${localResponse.source}`);
+        return localResponse;
+      }
+    }
 
     // ── Step 2: Food search ──
     const foodMatch = FOOD_PATTERNS.exec(trimmed);
@@ -726,11 +749,16 @@ export class ChatPipelineService {
   ): Promise<ChatResponse> {
     const isAr = request.language === 'ar';
 
-    // If OpenAI not configured, fall back to curated response instead of crashing
+    // If OpenAI not configured, show clear error to Premium+ users
     const apiKey = this.configService?.get<string>('OPENAI_API_KEY');
     if (!apiKey) {
-      this.logger.warn('OPENAI_API_KEY not configured — falling back to curated response');
-      return this.buildCuratedResponse(request.message, userCtx, isAr);
+      this.logger.warn('OPENAI_API_KEY not configured — AI features unavailable');
+      return {
+        response: isAr
+          ? `${userCtx.firstName}، خدمة الذكاء الاصطناعي مش متاحة حالياً. الفريق التقني شغال عليها وهترجع قريب!\n\nفي الوقت ده أقدر أساعدك في البحث عن أي أكل أو تمرين — جرب اكتب اسم أكلة أو تمرين!`
+          : `${userCtx.firstName}, AI coaching is temporarily unavailable. Our team is working on it and it'll be back soon!\n\nIn the meantime, I can help you search for any food or exercise — try typing a food or exercise name!`,
+        source: 'local',
+      };
     }
 
     // Build rich system prompt with user context

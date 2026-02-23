@@ -88,22 +88,22 @@ export default function TrainersMarketplacePage() {
             s.toLowerCase().includes(sp.en.toLowerCase())
           )
         );
-      const price = (trainer.hourlyRate || (trainer as any).monthlyPrice || 0);
+      const price = trainer.monthlyPrice || trainer.hourlyRate || 0;
       const matchesPrice = price >= priceRange[0] && price <= priceRange[1];
       return matchesSearch && matchesSpecialization && matchesPrice;
     })
     .sort((a, b) => {
       switch (sortBy) {
         case 'rating':
-          return ((b as any).averageRating || b.rating || 0) - ((a as any).averageRating || a.rating || 0);
+          return (b.averageRating || b.rating || 0) - (a.averageRating || a.rating || 0);
         case 'reviews':
-          return ((b as any).totalReviews || b.reviewCount || 0) - ((a as any).totalReviews || a.reviewCount || 0);
+          return (b.totalReviews || b.reviewCount || 0) - (a.totalReviews || a.reviewCount || 0);
         case 'price_low':
-          return (a.hourlyRate || (a as any).monthlyPrice || 0) - (b.hourlyRate || (b as any).monthlyPrice || 0);
+          return (a.monthlyPrice || a.hourlyRate || 0) - (b.monthlyPrice || b.hourlyRate || 0);
         case 'price_high':
-          return (b.hourlyRate || (b as any).monthlyPrice || 0) - (a.hourlyRate || (a as any).monthlyPrice || 0);
+          return (b.monthlyPrice || b.hourlyRate || 0) - (a.monthlyPrice || a.hourlyRate || 0);
         case 'experience':
-          return ((b as any).yearsExperience || b.experience || 0) - ((a as any).yearsExperience || a.experience || 0);
+          return (b.yearsExperience || b.experience || 0) - (a.yearsExperience || a.experience || 0);
         default:
           return 0;
       }
@@ -111,7 +111,7 @@ export default function TrainersMarketplacePage() {
 
   // Trusted Partners first, then top-rated, then rest
   const trustedPartners = filteredTrainers.filter((tr) => tr.tier === 'TRUSTED_PARTNER');
-  const featuredTrainers = filteredTrainers.filter((tr) => tr.tier !== 'TRUSTED_PARTNER' && (tr.verified || (tr as any).verifiedAt) && ((tr as any).averageRating || tr.rating || 0) >= 4.5);
+  const featuredTrainers = filteredTrainers.filter((tr) => tr.tier !== 'TRUSTED_PARTNER' && (tr.verified || tr.verifiedAt) && (tr.averageRating || tr.rating || 0) >= 4.5);
   const regularTrainers = filteredTrainers.filter((tr) => !trustedPartners.includes(tr) && !featuredTrainers.includes(tr));
 
   if (isLoading) {
@@ -337,10 +337,10 @@ function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: 
   const isTrusted = trusted || trainer.tier === 'TRUSTED_PARTNER';
 
   // Normalize backend field names
-  const rating = trainer.rating ?? (trainer as any).averageRating ?? 0;
-  const reviewCount = trainer.reviewCount ?? (trainer as any).totalReviews ?? 0;
-  const experience = trainer.experience ?? (trainer as any).yearsExperience ?? 0;
-  const hourlyRate = trainer.hourlyRate ?? (trainer as any).monthlyPrice ?? 0;
+  const rating = trainer.averageRating ?? trainer.rating ?? 0;
+  const reviewCount = trainer.totalReviews ?? trainer.reviewCount ?? 0;
+  const experience = trainer.yearsExperience ?? trainer.experience ?? 0;
+  const price = trainer.monthlyPrice ?? trainer.hourlyRate ?? 0;
 
   return (
     <Link href={`/trainers/${trainer.id}`}>
@@ -397,9 +397,9 @@ function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: 
                     </span>
                   )}
                 </div>
-                {hourlyRate > 0 && (
+                {price > 0 && (
                   <span className="font-semibold text-primary">
-                    {hourlyRate} {isAr ? 'ج.م/شهر' : 'EGP/mo'}
+                    {price} {isAr ? 'ج.م/شهر' : 'EGP/mo'}
                   </span>
                 )}
               </div>

@@ -694,20 +694,20 @@ export default function NutritionPage() {
                 <Lock className="h-6 w-6 text-forma-orange" />
               </div>
               <h3 className="font-semibold mb-2">
-                {isAr ? 'المكملات مع الكوتش' : 'Supplements with your Coach'}
+                {isAr ? 'المكملات مع المدرب' : 'Supplements with your Trainer'}
               </h3>
               <p className="text-sm text-muted-foreground max-w-xs">
                 {isAr
-                  ? 'الكوتش هيقترحلك المكملات المناسبة ليك بناءً على أهدافك وبرنامجك التدريبي. كلّمه من الشات!'
-                  : 'Your coach will recommend the right supplements based on your goals and training program. Chat with your coach to get started!'}
+                  ? 'المدرب هيقترحلك المكملات المناسبة ليك بناءً على أهدافك وبرنامجك التدريبي. دوّر على مدرب دلوقتي!'
+                  : 'Your trainer will recommend the right supplements based on your goals and training program. Find a trainer to get started!'}
               </p>
               <Button
                 variant="outline"
                 size="sm"
                 className="mt-4 border-forma-orange/50 text-forma-orange hover:bg-forma-orange/10"
-                onClick={() => window.location.href = '/chat'}
+                onClick={() => window.location.href = '/trainers'}
               >
-                {isAr ? 'كلّم الكوتش' : 'Talk to Coach'}
+                {isAr ? 'دوّر على مدرب' : 'Find a Trainer'}
               </Button>
             </div>
           </CardContent>

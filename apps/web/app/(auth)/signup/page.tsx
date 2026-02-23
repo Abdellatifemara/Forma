@@ -25,6 +25,7 @@ import { Label } from '@/components/ui/label';
 import { cn } from '@/lib/utils';
 import { authApi, setAuthCookie, setRefreshCookie } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
+import { Logo } from '@/components/ui/logo';
 
 const passwordRequirements = [
   { label: 'At least 8 characters', test: (p: string) => p.length >= 8 },
@@ -138,10 +139,8 @@ export default function SignupPage() {
     <div className="w-full max-w-md">
       {/* Logo */}
       <div className="text-center mb-8">
-        <Link href="/">
-          <h1 className="text-4xl font-bold text-primary">
-            FORMA
-          </h1>
+        <Link href="/" className="inline-flex flex-col items-center gap-2">
+          <Logo size="xl" />
         </Link>
         <p className="text-muted-foreground mt-2">Your fitness transformation starts here</p>
       </div>

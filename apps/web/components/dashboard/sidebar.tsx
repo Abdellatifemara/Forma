@@ -23,6 +23,7 @@ import { useUser } from '@/hooks/use-user';
 import { removeAuthCookie } from '@/lib/api';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { useLanguage } from '@/lib/i18n';
+import { Logo } from '@/components/ui/logo';
 
 interface SidebarProps {
   type: 'trainer' | 'admin';
@@ -83,10 +84,7 @@ export function Sidebar({ type }: SidebarProps) {
         {/* Logo */}
         <div className="flex h-16 items-center border-b border-border/50 px-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-500 flex items-center justify-center">
-              <Dumbbell className="h-4 w-4 text-white" />
-            </div>
-            <span className="text-xl font-bold">Forma</span>
+            <Logo size="sm" />
           </Link>
           <span className="ms-2 rounded-full bg-primary/10 text-primary px-2 py-0.5 text-xs font-medium capitalize">
             {isAr ? (type === 'trainer' ? 'مدرب' : 'مدير') : type}

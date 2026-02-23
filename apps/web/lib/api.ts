@@ -1875,12 +1875,17 @@ interface Trainer {
   specializations?: string[];
   certifications?: string[];
   experience?: number;
+  yearsExperience?: number;
   rating?: number;
+  averageRating?: number;
   reviewCount?: number;
+  totalReviews?: number;
   clientCount?: number;
   hourlyRate?: number;
   monthlyRate?: number;
+  monthlyPrice?: number;
   verified?: boolean;
+  verifiedAt?: string;
   location?: string;
   languages?: string[];
   availability?: string;
@@ -1912,6 +1917,7 @@ interface Trainer {
   }>;
   tier?: 'REGULAR' | 'TRUSTED_PARTNER';
   acceptingClients?: boolean;
+  _count?: { clients?: number };
 }
 
 interface TrainerSearchParams {

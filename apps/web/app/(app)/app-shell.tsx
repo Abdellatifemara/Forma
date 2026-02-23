@@ -15,6 +15,7 @@ import {
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/lib/i18n';
 import { FormaSpinner } from '@/components/ui/skeleton';
+import { Logo } from '@/components/ui/logo';
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -53,10 +54,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
       <aside className="sidebar-desktop hidden lg:flex flex-col">
         {/* Logo */}
         <div className="flex items-center gap-3 px-6 py-6 border-b border-border/50">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white font-bold text-lg">
-            F
-          </div>
-          <span className="text-lg font-bold tracking-tight">Forma</span>
+          <Logo size="md" />
         </div>
 
         {/* Nav Links */}
