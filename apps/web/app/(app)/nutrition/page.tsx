@@ -39,11 +39,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from '@/components/ui/collapsible';
+// Collapsible removed — using AnimatePresence instead
 import { useDailyNutrition, useFoodSearch, useFoodCategories, useLogMeal } from '@/hooks/use-nutrition';
 import { useDebounce } from '@/hooks/use-debounce';
 import { cn } from '@/lib/utils';
@@ -68,26 +64,24 @@ const defaultRecentFoods = [
   { name: 'Protein Shake', calories: 120, protein: 24, carbs: 3, fat: 1 },
 ];
 
-// Curated food categories for browsing (maps to DB category field)
+// Curated food categories for browsing (values use case-insensitive partial match on DB category)
 const foodCategories = [
-  { label: 'Protein', labelAr: 'بروتين', value: 'protein_sources', icon: '🥩' },
-  { label: 'Meat', labelAr: 'لحوم', value: 'meat', icon: '🍖' },
-  { label: 'Poultry', labelAr: 'فراخ', value: 'poultry', icon: '🍗' },
-  { label: 'Seafood', labelAr: 'مأكولات بحرية', value: 'seafood', icon: '🐟' },
-  { label: 'Eggs', labelAr: 'بيض', value: 'egg', icon: '🥚' },
-  { label: 'Dairy', labelAr: 'ألبان', value: 'dairy', icon: '🥛' },
-  { label: 'Grains', labelAr: 'حبوب', value: 'grain', icon: '🌾' },
-  { label: 'Fruit', labelAr: 'فاكهة', value: 'fruit', icon: '🍎' },
-  { label: 'Vegetables', labelAr: 'خضار', value: 'vegetable', icon: '🥬' },
-  { label: 'Nuts', labelAr: 'مكسرات', value: 'nuts', icon: '🥜' },
-  { label: 'Legumes', labelAr: 'بقوليات', value: 'legume', icon: '🫘' },
-  { label: 'Snacks', labelAr: 'سناكس', value: 'snack', icon: '🍪' },
-  { label: 'Egyptian', labelAr: 'أكل مصري', value: 'egyptian_home', icon: '🇪🇬' },
+  { label: 'Protein', labelAr: 'بروتين', value: 'PROTEIN', icon: '🥩' },
+  { label: 'Dairy', labelAr: 'ألبان', value: 'DAIRY', icon: '🥛' },
+  { label: 'Carbs', labelAr: 'كاربز', value: 'CARBS', icon: '🌾' },
+  { label: 'Fats', labelAr: 'دهون', value: 'FATS', icon: '🥑' },
+  { label: 'Fruit', labelAr: 'فاكهة', value: 'FRUIT', icon: '🍎' },
+  { label: 'Vegetables', labelAr: 'خضار', value: 'VEGETABLE', icon: '🥬' },
+  { label: 'Snacks', labelAr: 'سناكس', value: 'SNACK', icon: '🍪' },
+  { label: 'Egyptian', labelAr: 'أكل مصري', value: 'egyptian', icon: '🇪🇬' },
   { label: 'Fast Food', labelAr: 'فاست فود', value: 'fast_food', icon: '🍔' },
-  { label: 'Shakes', labelAr: 'شيكات', value: 'shake', icon: '🥤' },
-  { label: 'Supplements', labelAr: 'مكملات', value: 'supplement', icon: '💊' },
+  { label: 'Supplements', labelAr: 'مكملات', value: 'SUPPLEMENT', icon: '💊' },
   { label: 'Desserts', labelAr: 'حلويات', value: 'dessert', icon: '🍰' },
-  { label: 'Beverages', labelAr: 'مشروبات', value: 'beverage', icon: '☕' },
+  { label: 'Beverages', labelAr: 'مشروبات', value: 'BEVERAGE', icon: '☕' },
+  { label: 'Street Food', labelAr: 'أكل شارع', value: 'street_food', icon: '🌮' },
+  { label: 'Traditional', labelAr: 'تقليدي', value: 'TRADITIONAL', icon: '🍲' },
+  { label: 'Meal Prep', labelAr: 'تحضير وجبات', value: 'meal_prep', icon: '📦' },
+  { label: 'Keto', labelAr: 'كيتو', value: 'keto', icon: '🥓' },
 ];
 
 const mealIcons = {
@@ -657,7 +651,7 @@ export default function NutritionPage() {
         </Card>
       </div>
 
-      {/* Today's Meals */}
+      {/* Today's Meals — Timeline Style */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-bold">{t.nutrition.today}</h2>
@@ -666,113 +660,159 @@ export default function NutritionPage() {
           </Badge>
         </div>
 
-        {organizedMeals.map((meal, index) => {
-          const Icon = mealIcons[meal.type as keyof typeof mealIcons];
-          const colorClass = mealColors[meal.type as keyof typeof mealColors];
+        <div className="relative">
+          {/* Vertical timeline line */}
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-orange-500/50 via-green-500/30 via-purple-500/30 to-blue-500/30 hidden sm:block" />
 
-          return (
-            <motion.div
-              key={meal.type}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <Collapsible
-                open={expandedMeal === meal.type}
-                onOpenChange={() => setExpandedMeal(expandedMeal === meal.type ? null : meal.type)}
+          {organizedMeals.map((meal, index) => {
+            const Icon = mealIcons[meal.type as keyof typeof mealIcons];
+            const colorClass = mealColors[meal.type as keyof typeof mealColors];
+            const isExpanded = expandedMeal === meal.type;
+
+            return (
+              <motion.div
+                key={meal.type}
+                initial={{ opacity: 0, x: -20, scale: 0.95 }}
+                animate={{ opacity: 1, x: 0, scale: 1 }}
+                transition={{ delay: index * 0.12, type: 'spring', stiffness: 200, damping: 20 }}
+                className="relative sm:ps-14 mb-3 last:mb-0"
               >
-                <Card className={cn(
-                  "rounded-2xl border border-border/50 bg-card overflow-hidden transition-all",
-                  !meal.notLogged && "border-green-500/30"
+                {/* Timeline dot */}
+                <div className={cn(
+                  "hidden sm:flex absolute left-3 top-5 w-7 h-7 items-center justify-center rounded-full ring-4 ring-background z-10 bg-gradient-to-br shadow-lg transition-all duration-300",
+                  colorClass,
+                  !meal.notLogged && "scale-110"
                 )}>
-                  {/* Gradient accent */}
-                  <div className={cn("h-1 bg-gradient-to-r", colorClass)} />
+                  <Icon className="h-3.5 w-3.5 text-white" />
+                </div>
 
-                  <CollapsibleTrigger asChild>
-                    <CardContent className="p-4 cursor-pointer">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-4">
-                          <div className={cn(
-                            "p-3 rounded-xl bg-gradient-to-br",
-                            colorClass
-                          )}>
-                            <Icon className="h-5 w-5 text-white" />
-                          </div>
-                          <div>
+                <div
+                  onClick={() => setExpandedMeal(isExpanded ? null : meal.type)}
+                  className={cn(
+                    "group relative rounded-2xl border bg-card overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-lg",
+                    !meal.notLogged ? "border-green-500/20 shadow-sm" : "border-border/40",
+                    isExpanded && "ring-1 ring-primary/20"
+                  )}
+                >
+                  {/* Subtle gradient overlay */}
+                  <div className={cn("absolute inset-0 opacity-[0.03] bg-gradient-to-br pointer-events-none", colorClass)} />
+
+                  <div className="relative p-4">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className={cn(
+                          "sm:hidden p-2.5 rounded-xl bg-gradient-to-br shadow-sm transition-transform duration-300 group-hover:scale-105",
+                          colorClass
+                        )}>
+                          <Icon className="h-5 w-5 text-white" />
+                        </div>
+                        <div>
+                          <div className="flex items-center gap-2">
                             <h3 className="font-semibold">{meal.name}</h3>
-                            <p className="text-sm text-muted-foreground">{meal.time}</p>
+                            {!meal.notLogged && (
+                              <motion.div
+                                initial={{ scale: 0 }}
+                                animate={{ scale: 1 }}
+                                transition={{ type: 'spring', delay: index * 0.1 + 0.3 }}
+                              >
+                                <Check className="h-4 w-4 text-green-500" />
+                              </motion.div>
+                            )}
                           </div>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          {meal.notLogged ? (
-                                <Button
-                                  variant="outline"
-                                  size="sm"
-                                  className="border-primary/50 hover:bg-primary/10"
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    setSelectedMealType(meal.type);
-                                    setLogDialogOpen(true);
-                                  }}
-                                >
-                                  <Plus className="mr-1 h-4 w-4" />
-                                  {isAr ? 'سجّل' : 'Log'}
-                                </Button>
-                          ) : (
-                            <>
-                              <div className="text-right">
-                                <p className="font-bold text-lg">{Math.round(meal.calories)}</p>
-                                <p className="text-xs text-muted-foreground">kcal</p>
-                              </div>
-                              {meal.foods.length > 0 && (
-                                <ChevronDown className={cn(
-                                  "h-5 w-5 text-muted-foreground transition-transform",
-                                  expandedMeal === meal.type && "rotate-180"
-                                )} />
-                              )}
-                            </>
-                          )}
+                          <p className="text-xs text-muted-foreground">{meal.time}</p>
                         </div>
                       </div>
-                    </CardContent>
-                  </CollapsibleTrigger>
 
-                  <CollapsibleContent>
-                    {meal.foods.length > 0 && (
-                      <div className="px-4 pb-4 space-y-2 border-t border-border/30 pt-4">
-                        {meal.foods.map((foodItem, foodIndex) => (
-                          <motion.div
-                            key={foodIndex}
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: foodIndex * 0.05 }}
-                            className="flex items-center justify-between p-3 rounded-xl bg-muted/20"
+                      <div className="flex items-center gap-3">
+                        {meal.notLogged ? (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="border-primary/30 hover:bg-primary/10 hover:border-primary/50 rounded-xl transition-all"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedMealType(meal.type);
+                              setLogDialogOpen(true);
+                            }}
                           >
-                            <div className="flex items-center gap-3">
-                              <div className="w-2 h-2 rounded-full bg-green-500" />
-                              <span className="font-medium">{foodItem.food?.name || (isAr ? 'طعام' : 'Food')}</span>
+                            <Plus className="me-1 h-4 w-4" />
+                            {isAr ? 'سجّل' : 'Log'}
+                          </Button>
+                        ) : (
+                          <div className="flex items-center gap-2">
+                            <div className="text-end">
+                              <motion.p
+                                className="font-bold text-lg tabular-nums"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: index * 0.1 + 0.2 }}
+                              >
+                                {Math.round(meal.calories)}
+                              </motion.p>
+                              <p className="text-[10px] text-muted-foreground -mt-0.5">kcal</p>
                             </div>
-                            <span className="text-sm text-muted-foreground">
-                              {Math.round((foodItem.food?.calories || 0) * (foodItem.servings || 1))} kcal
-                            </span>
-                          </motion.div>
-                        ))}
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="w-full border border-dashed border-border/50 hover:border-primary/50"
-                        >
-                          <Plus className="mr-2 h-4 w-4" />
-                          {t.nutrition.add}
-                        </Button>
+                            {meal.foods.length > 0 && (
+                              <motion.div
+                                animate={{ rotate: isExpanded ? 180 : 0 }}
+                                transition={{ duration: 0.2 }}
+                              >
+                                <ChevronDown className="h-4 w-4 text-muted-foreground" />
+                              </motion.div>
+                            )}
+                          </div>
+                        )}
                       </div>
+                    </div>
+                  </div>
+
+                  {/* Expanded foods */}
+                  <AnimatePresence>
+                    {isExpanded && meal.foods.length > 0 && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25, ease: 'easeInOut' }}
+                        className="overflow-hidden"
+                      >
+                        <div className="px-4 pb-4 space-y-2 border-t border-border/20 pt-3">
+                          {meal.foods.map((foodItem: any, foodIndex: number) => (
+                            <motion.div
+                              key={foodIndex}
+                              initial={{ opacity: 0, y: 8 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ delay: foodIndex * 0.04 }}
+                              className="flex items-center justify-between p-2.5 rounded-xl bg-muted/20 hover:bg-muted/40 transition-colors"
+                            >
+                              <div className="flex items-center gap-2.5">
+                                <div className={cn("w-1.5 h-1.5 rounded-full bg-gradient-to-r", colorClass)} />
+                                <span className="text-sm font-medium">{foodItem.food?.name || foodItem.food?.nameEn || (isAr ? 'طعام' : 'Food')}</span>
+                              </div>
+                              <span className="text-xs text-muted-foreground tabular-nums">
+                                {Math.round((foodItem.food?.calories || 0) * (foodItem.servings || 1))} kcal
+                              </span>
+                            </motion.div>
+                          ))}
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedMealType(meal.type);
+                              setLogDialogOpen(true);
+                            }}
+                            className="w-full py-2 border border-dashed border-border/40 hover:border-primary/40 rounded-xl text-xs text-muted-foreground hover:text-primary transition-all flex items-center justify-center gap-1.5"
+                          >
+                            <Plus className="h-3.5 w-3.5" />
+                            {t.nutrition.add}
+                          </button>
+                        </div>
+                      </motion.div>
                     )}
-                  </CollapsibleContent>
-                </Card>
-              </Collapsible>
-            </motion.div>
-          );
-        })}
+                  </AnimatePresence>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
 
       {/* Supplements Section */}
@@ -933,7 +973,7 @@ export default function NutritionPage() {
                     setIsLogging(true);
                     try {
                       await logMealMutation.mutateAsync({
-                        mealType: selectedMealType.toLowerCase() as 'breakfast' | 'lunch' | 'dinner' | 'snack',
+                        mealType: selectedMealType.toUpperCase() as 'BREAKFAST' | 'LUNCH' | 'DINNER' | 'SNACK',
                         foods: [{ foodId: selectedFood.id, servings: 1 }],
                       });
                       toast({ title: isAr ? 'تم إضافة الطعام' : 'Food added', description: selectedFood.nameEn || selectedFood.name });

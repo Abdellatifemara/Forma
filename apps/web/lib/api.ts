@@ -1836,7 +1836,7 @@ interface Food {
 }
 
 interface MealLogData {
-  mealType: 'breakfast' | 'lunch' | 'dinner' | 'snack';
+  mealType: 'BREAKFAST' | 'LUNCH' | 'DINNER' | 'SNACK';
   foods: { foodId: string; servings: number }[];
   date?: string;
 }

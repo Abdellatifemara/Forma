@@ -45,7 +45,8 @@ export class NutritionService {
     }
 
     if (category) {
-      where.category = category;
+      // Support case-insensitive category matching and partial match
+      where.category = { contains: category, mode: 'insensitive' };
     }
 
     if (isEgyptian !== undefined) {

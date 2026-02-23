@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Plus, Trash2, Loader2 } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { workoutsApi } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
@@ -31,6 +31,29 @@ export default function LogWorkoutPage() {
   const [exercises, setExercises] = useState<ExerciseEntry[]>([
     { id: 1, name: '', sets: [{ id: 1, reps: '', weight: '' }] },
   ]);
+  // Load prefilled workout from What Now if available
+  useEffect(() => {
+    const saved = sessionStorage.getItem('forma_prefill_workout');
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        if (data.name) setWorkoutName(data.name);
+        if (data.duration) setDuration(data.duration);
+        if (data.exercises?.length > 0) {
+          setExercises(data.exercises.map((ex: any, i: number) => ({
+            id: Date.now() + i,
+            name: ex.name || '',
+            sets: (ex.sets || []).map((s: any, j: number) => ({
+              id: Date.now() + i * 100 + j,
+              reps: s.reps || '',
+              weight: s.weight || '',
+            })),
+          })));
+        }
+        sessionStorage.removeItem('forma_prefill_workout');
+      } catch {}
+    }
+  }, []);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 

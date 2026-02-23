@@ -602,8 +602,22 @@ export function WhatNowButton() {
             {!isRest && (
               <button
                 onClick={() => {
-                  // TODO: Wire to workoutsApi.startWorkout
-                  alert(isAr ? 'قريبًا!' : 'Coming soon!');
+                  // Save workout to sessionStorage and navigate to log page
+                  if (recommendation) {
+                    const exercises = (recommendation.workingSets || recommendation.exercises || []).map((ex: any) => ({
+                      name: ex.name || ex.nameEn || 'Exercise',
+                      sets: Array.from({ length: ex.sets || 3 }, () => ({
+                        reps: String(typeof ex.reps === 'string' ? parseInt(ex.reps) || 10 : ex.reps || 10),
+                        weight: '',
+                      })),
+                    }));
+                    sessionStorage.setItem('forma_prefill_workout', JSON.stringify({
+                      name: recommendation.title || 'AI Workout',
+                      duration: String(recommendation.durationMinutes || 30),
+                      exercises,
+                    }));
+                    window.location.href = '/workouts/log';
+                  }
                 }}
                 className="flex-1 py-3 bg-gradient-to-r from-forma-orange to-orange-600 text-white rounded-xl font-medium hover:from-forma-orange/90 hover:to-orange-700 transition-all flex items-center justify-center gap-2 text-sm shadow-lg"
               >
