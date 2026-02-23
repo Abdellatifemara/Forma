@@ -2354,16 +2354,31 @@ interface RamadanModeData {
 interface WhatNowInput {
   availableMinutes?: number;
   energyLevel?: 'low' | 'medium' | 'high';
-  location?: 'gym' | 'home' | 'outdoor';
+  location?: 'gym' | 'home' | 'outdoor' | 'home_gym' | 'hotel';
 }
 
-interface WhatNowExercise {
-  id: string;
+interface WarmupExercise {
+  name: string;
+  nameAr: string;
+  duration: string;
+  notes?: string;
+}
+
+interface ExerciseBlock {
+  exerciseId?: string;
   name: string;
   nameAr?: string;
+  category: 'compound' | 'isolation' | 'accessory' | 'finisher';
   sets: number;
   reps: string;
-  equipment: string;
+  restSeconds: number;
+  tempo?: string;
+  rpeTarget?: number;
+  notes?: string;
+  notesAr?: string;
+  supersetWith?: string;
+  muscleGroup: string;
+  equipment: string[];
 }
 
 interface WhatNowRecommendation {
@@ -2373,10 +2388,20 @@ interface WhatNowRecommendation {
   description: string;
   descriptionAr: string;
   durationMinutes: number;
+  format: string;
   targetMuscles: string[];
-  exercises: WhatNowExercise[];
+  warmup: { durationMinutes: number; exercises: WarmupExercise[] };
+  workingSets: ExerciseBlock[];
+  cooldown: { durationMinutes: number; exercises: WarmupExercise[] };
+  progressionNotes: string;
+  progressionNotesAr: string;
+  splitType: string;
+  periodizationPhase: string;
+  estimatedCalories: number;
   reason: string;
   reasonAr: string;
+  // Legacy compat: old format had flat exercises array
+  exercises?: { id: string; name: string; nameAr?: string; sets: number; reps: string; equipment: string }[];
 }
 
 // Squad types
@@ -3261,7 +3286,8 @@ export type {
   RamadanSettings,
   RamadanModeData,
   WhatNowInput,
-  WhatNowExercise,
+  WarmupExercise,
+  ExerciseBlock,
   WhatNowRecommendation,
   CreateSquadData,
   Squad,

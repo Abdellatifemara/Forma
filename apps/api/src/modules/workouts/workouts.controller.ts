@@ -116,23 +116,36 @@ export class WorkoutsController {
   async generateWorkout(
     @CurrentUser() user: User,
     @Body() input: {
-      availableMinutes: number;
-      energyLevel: 'low' | 'medium' | 'high';
-      location: 'gym' | 'home' | 'home_gym' | 'outdoor' | 'hotel';
+      availableMinutes?: number;
+      energyLevel?: 'low' | 'medium' | 'high';
+      location?: 'gym' | 'home' | 'home_gym' | 'outdoor' | 'hotel';
       weekNumber?: number;
+      // Chat flow params: split override + exercise count
+      split?: string;
+      exerciseCount?: number;
     },
   ) {
     const profile = await this.workoutGenerator.loadUserProfile(user.id);
     const recentMuscles = await this.workoutGenerator.getRecentMusclesWorked(user.id);
     const now = new Date();
 
+    // Map exercise count to approximate duration if no explicit duration
+    let duration = input.availableMinutes;
+    if (!duration && input.exerciseCount) {
+      if (input.exerciseCount <= 5) duration = 30;
+      else if (input.exerciseCount <= 8) duration = 45;
+      else duration = 60;
+    }
+
     return this.workoutGenerator.generateWorkout(profile, {
       location: (input.location || 'gym') as LocationType,
-      availableMinutes: (input.availableMinutes || 45) as DurationType,
+      availableMinutes: (duration || 45) as DurationType,
       energyLevel: (input.energyLevel || 'medium') as EnergyLevel,
       dayOfWeek: now.getDay() || 7,
       recentMusclesWorked: recentMuscles,
       weekNumber: input.weekNumber || Math.ceil((now.getDate()) / 7),
+      targetSplit: input.split,
+      maxExercises: input.exerciseCount ? Number(input.exerciseCount) : undefined,
     });
   }
 

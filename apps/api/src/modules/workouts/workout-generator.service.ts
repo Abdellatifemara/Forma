@@ -57,6 +57,8 @@ export interface SessionInput {
   dayOfWeek: number; // 1=Mon, 7=Sun
   recentMusclesWorked: string[]; // muscles hit in last 48h
   weekNumber?: number; // for periodization (1-4 typically)
+  targetSplit?: string; // Override: e.g. 'CHEST', 'PUSH', 'UPPER' from chat flow
+  maxExercises?: number; // Override: specific exercise count from chat flow
 }
 
 /** The complete generated workout output */
@@ -352,6 +354,21 @@ const SPLIT_DEFINITIONS: Record<string, string[][]> = {
   ],
 };
 
+/** Direct muscle targeting from chat split selection */
+const CHAT_SPLIT_TO_MUSCLES: Record<string, string[]> = {
+  CHEST:     ['CHEST', 'TRICEPS'],
+  BACK:      ['BACK', 'BICEPS'],
+  SHOULDERS: ['SHOULDERS', 'TRICEPS'],
+  ARMS:      ['BICEPS', 'TRICEPS', 'FOREARMS'],
+  PUSH:      ['CHEST', 'SHOULDERS', 'TRICEPS'],
+  PULL:      ['BACK', 'BICEPS'],
+  LEGS:      ['QUADRICEPS', 'HAMSTRINGS', 'GLUTES', 'CALVES'],
+  UPPER:     ['CHEST', 'BACK', 'SHOULDERS', 'BICEPS', 'TRICEPS'],
+  LOWER:     ['QUADRICEPS', 'HAMSTRINGS', 'GLUTES', 'CALVES'],
+  FULL:      ['CHEST', 'BACK', 'SHOULDERS', 'QUADRICEPS', 'HAMSTRINGS', 'ABS'],
+  CORE:      ['ABS'],
+};
+
 /** Injury → muscles to avoid mapping (comprehensive) */
 const INJURY_MUSCLE_MAP: Record<string, string[]> = {
   NECK:          ['SHOULDERS'],
@@ -619,7 +636,9 @@ export class WorkoutGeneratorService {
     const setsConfig = SETS_BY_EXPERIENCE[profile.experienceLevel];
 
     // Calculate max exercises considering all modifiers
-    let maxExercises = Math.round(dur.maxExercises * energyAdj.maxExerciseModifier);
+    let maxExercises = session.maxExercises
+      ? session.maxExercises // Chat flow override
+      : Math.round(dur.maxExercises * energyAdj.maxExerciseModifier);
     if (isRamadan) maxExercises = Math.max(2, maxExercises - 2);
     maxExercises = Math.max(1, maxExercises);
 
@@ -892,6 +911,11 @@ export class WorkoutGeneratorService {
   }
 
   private determineSplit(profile: UserProfile, session: SessionInput): string {
+    // Chat flow override: user explicitly chose a split (CHEST, PUSH, UPPER, etc.)
+    if (session.targetSplit && CHAT_SPLIT_TO_MUSCLES[session.targetSplit]) {
+      return `CHAT_${session.targetSplit}`;
+    }
+
     // If user has a preferred split, use it
     if (profile.preferredSplit && SPLIT_DEFINITIONS[profile.preferredSplit]) {
       return profile.preferredSplit;
@@ -909,6 +933,14 @@ export class WorkoutGeneratorService {
 
   private selectTargetMuscles(splitType: string, session: SessionInput, profile: UserProfile): string[] {
     const injured = this.getInjuredMuscles(profile.injuries);
+
+    // Chat flow override: direct muscle targeting
+    if (splitType.startsWith('CHAT_')) {
+      const chatKey = splitType.replace('CHAT_', '');
+      const muscles = CHAT_SPLIT_TO_MUSCLES[chatKey] || [];
+      const filtered = muscles.filter(m => !injured.includes(m));
+      return filtered.length > 0 ? filtered : this.pickNeglectedMuscles(session.recentMusclesWorked, injured, 3);
+    }
 
     if (splitType === 'TARGETED') {
       // For short workouts: pick 1-2 neglected muscle groups

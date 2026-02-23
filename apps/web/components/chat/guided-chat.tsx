@@ -520,8 +520,27 @@ export default function GuidedChat() {
     if (!action.endpoint) return;
     setIsLoading(true);
     try {
-      await callApi('write', action.endpoint, action.params);
-      setHistory(prev => [...prev, { id: `data-${Date.now()}`, type: 'data', text: isAr ? 'تم بنجاح' : 'Done successfully', timestamp: Date.now(), success: true }]);
+      const result = await callApi('write', action.endpoint, action.params);
+      // Format workout generation results with details
+      let text = isAr ? 'تم بنجاح' : 'Done successfully';
+      if (action.endpoint === '/workouts/generate' && result?.workingSets) {
+        const exercises = result.workingSets as Array<{ name: string; nameAr?: string; sets: number; reps: string; restSeconds: number; tempo?: string; rpeTarget?: number; category: string }>;
+        const lines = exercises.map((ex: any, i: number) => {
+          const name = isAr ? (ex.nameAr || ex.name) : ex.name;
+          let line = `${i + 1}. ${name} — ${ex.sets}x${ex.reps}`;
+          if (ex.restSeconds) line += ` (${isAr ? 'راحة' : 'rest'} ${ex.restSeconds}s)`;
+          if (ex.tempo) line += ` [${ex.tempo}]`;
+          if (ex.rpeTarget) line += ` RPE ${ex.rpeTarget}`;
+          return line;
+        });
+        const title = isAr ? (result.titleAr || result.title) : result.title;
+        const dur = result.durationMinutes ? ` (${result.durationMinutes} ${isAr ? 'د' : 'min'})` : '';
+        text = `${isAr ? '💪 ' : '💪 '}${title}${dur}\n\n${lines.join('\n')}`;
+        if (result.progressionNotes) {
+          text += `\n\n📈 ${isAr ? (result.progressionNotesAr || result.progressionNotes) : result.progressionNotes}`;
+        }
+      }
+      setHistory(prev => [...prev, { id: `data-${Date.now()}`, type: 'data', text, timestamp: Date.now(), success: true }]);
     } catch (err: any) {
       const errorMsg = err?.message?.includes('401') || err?.message?.includes('403')
         ? (isAr ? 'سجّل دخول الأول' : 'Please log in first')
