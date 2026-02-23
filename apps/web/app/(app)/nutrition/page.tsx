@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Plus,
@@ -24,11 +25,11 @@ import {
   ChevronDown,
   Check,
   Pill,
-  Lock,
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
 import {
   Dialog,
@@ -43,7 +44,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
-import { useDailyNutrition, useFoodSearch, useLogMeal } from '@/hooks/use-nutrition';
+import { useDailyNutrition, useFoodSearch, useFoodCategories, useLogMeal } from '@/hooks/use-nutrition';
 import { useDebounce } from '@/hooks/use-debounce';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
@@ -55,7 +56,7 @@ const defaultGoals = {
   protein: 180,
   carbs: 250,
   fat: 75,
-  water: 8,
+  water: 3, // liters
 };
 
 // Default recent foods shown when no meal history exists
@@ -65,6 +66,28 @@ const defaultRecentFoods = [
   { name: 'Greek Yogurt', calories: 100, protein: 17, carbs: 6, fat: 0 },
   { name: 'Koshari', calories: 758, protein: 18, carbs: 140, fat: 12 },
   { name: 'Protein Shake', calories: 120, protein: 24, carbs: 3, fat: 1 },
+];
+
+// Curated food categories for browsing (maps to DB category field)
+const foodCategories = [
+  { label: 'Protein', labelAr: 'بروتين', value: 'protein_sources', icon: '🥩' },
+  { label: 'Meat', labelAr: 'لحوم', value: 'meat', icon: '🍖' },
+  { label: 'Poultry', labelAr: 'فراخ', value: 'poultry', icon: '🍗' },
+  { label: 'Seafood', labelAr: 'مأكولات بحرية', value: 'seafood', icon: '🐟' },
+  { label: 'Eggs', labelAr: 'بيض', value: 'egg', icon: '🥚' },
+  { label: 'Dairy', labelAr: 'ألبان', value: 'dairy', icon: '🥛' },
+  { label: 'Grains', labelAr: 'حبوب', value: 'grain', icon: '🌾' },
+  { label: 'Fruit', labelAr: 'فاكهة', value: 'fruit', icon: '🍎' },
+  { label: 'Vegetables', labelAr: 'خضار', value: 'vegetable', icon: '🥬' },
+  { label: 'Nuts', labelAr: 'مكسرات', value: 'nuts', icon: '🥜' },
+  { label: 'Legumes', labelAr: 'بقوليات', value: 'legume', icon: '🫘' },
+  { label: 'Snacks', labelAr: 'سناكس', value: 'snack', icon: '🍪' },
+  { label: 'Egyptian', labelAr: 'أكل مصري', value: 'egyptian_home', icon: '🇪🇬' },
+  { label: 'Fast Food', labelAr: 'فاست فود', value: 'fast_food', icon: '🍔' },
+  { label: 'Shakes', labelAr: 'شيكات', value: 'shake', icon: '🥤' },
+  { label: 'Supplements', labelAr: 'مكملات', value: 'supplement', icon: '💊' },
+  { label: 'Desserts', labelAr: 'حلويات', value: 'dessert', icon: '🍰' },
+  { label: 'Beverages', labelAr: 'مشروبات', value: 'beverage', icon: '☕' },
 ];
 
 const mealIcons = {
@@ -86,14 +109,15 @@ export default function NutritionPage() {
   const { t, language } = useLanguage();
   const isAr = language === 'ar';
   const [searchQuery, setSearchQuery] = useState('');
+  const [foodCategoryFilter, setFoodCategoryFilter] = useState<string | null>(null);
   const debouncedSearch = useDebounce(searchQuery, 300);
   const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
   const [expandedMeal, setExpandedMeal] = useState<string | null>(null);
   const [logDialogOpen, setLogDialogOpen] = useState(false);
-  const [waterGlasses, setWaterGlasses] = useState(() => {
+  const [waterMl, setWaterMl] = useState(() => {
     if (typeof window !== 'undefined') {
       const today = new Date().toISOString().slice(0, 10);
-      const saved = localStorage.getItem(`forma_water_${today}`);
+      const saved = localStorage.getItem(`forma_water_ml_${today}`);
       return saved ? parseInt(saved, 10) : 0;
     }
     return 0;
@@ -101,19 +125,38 @@ export default function NutritionPage() {
   const [selectedFood, setSelectedFood] = useState<any>(null);
   const [isLogging, setIsLogging] = useState(false);
   const { data: dailyData, isLoading: dailyLoading, error: dailyError } = useDailyNutrition();
-  const { data: searchResults, isLoading: searchLoading } = useFoodSearch(debouncedSearch);
+  const { data: searchResults, isLoading: searchLoading } = useFoodSearch(debouncedSearch, foodCategoryFilter || undefined);
   const logMealMutation = useLogMeal();
 
-  // Persist water to localStorage
-  const updateWater = (glasses: number) => {
-    setWaterGlasses(glasses);
-    const today = new Date().toISOString().slice(0, 10);
-    localStorage.setItem(`forma_water_${today}`, String(glasses));
+  // Custom goals from localStorage (editable by user)
+  const [customGoals, setCustomGoals] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('forma_nutrition_goals');
+      return saved ? JSON.parse(saved) : null;
+    }
+    return null;
+  });
+  const [goalsDialogOpen, setGoalsDialogOpen] = useState(false);
+
+  const saveCustomGoals = (newGoals: typeof defaultGoals) => {
+    setCustomGoals(newGoals);
+    localStorage.setItem('forma_nutrition_goals', JSON.stringify(newGoals));
+    setGoalsDialogOpen(false);
   };
 
   // Calculate daily totals from API data or use defaults
   const totals = dailyData?.totals || { calories: 0, protein: 0, carbs: 0, fat: 0 };
-  const goals = dailyData?.goals || defaultGoals;
+  const goals = customGoals || dailyData?.goals || defaultGoals;
+
+  // Water tracking in ml — add/subtract 250ml at a time
+  const waterGoalMl = (goals.water || defaultGoals.water) * 1000; // convert L to ml
+  const waterLiters = (waterMl / 1000).toFixed(1);
+  const addWater = (ml: number) => {
+    const newVal = Math.max(0, Math.min(waterMl + ml, 10000));
+    setWaterMl(newVal);
+    const today = new Date().toISOString().slice(0, 10);
+    localStorage.setItem(`forma_water_ml_${today}`, String(newVal));
+  };
   const meals = dailyData?.meals || [];
 
   // Group meals by type
@@ -164,7 +207,7 @@ export default function NutritionPage() {
   const proteinProgress = Math.min((totals.protein / goals.protein) * 100, 100);
   const carbsProgress = Math.min((totals.carbs / goals.carbs) * 100, 100);
   const fatProgress = Math.min((totals.fat / goals.fat) * 100, 100);
-  const waterProgress = Math.min((waterGlasses / defaultGoals.water) * 100, 100);
+  const waterProgress = Math.min((waterMl / waterGoalMl) * 100, 100);
 
   const caloriesRemaining = Math.max(0, goals.calories - totals.calories);
 
@@ -217,7 +260,7 @@ export default function NutritionPage() {
           <h1 className="text-3xl font-bold">{t.nutrition.title}</h1>
           <p className="text-muted-foreground">{isAr ? 'تابع أكلك اليومي' : 'Track your daily intake'}</p>
         </div>
-        <Dialog open={logDialogOpen} onOpenChange={(open) => { setLogDialogOpen(open); if (!open) setSelectedMealType(null); }}>
+        <Dialog open={logDialogOpen} onOpenChange={(open) => { setLogDialogOpen(open); if (!open) { setSelectedMealType(null); setFoodCategoryFilter(null); setSearchQuery(''); } }}>
           <DialogTrigger asChild>
             <Button className="btn-primary">
               <Plus className="mr-2 h-4 w-4" />
@@ -262,24 +305,51 @@ export default function NutritionPage() {
               ) : (
                 <>
                   <div className="flex items-center justify-between">
-                    <Button variant="ghost" size="sm" onClick={() => setSelectedMealType(null)}>
+                    <Button variant="ghost" size="sm" onClick={() => { setSelectedMealType(null); setFoodCategoryFilter(null); setSearchQuery(''); }}>
                       {isAr ? 'رجوع ←' : '← Back'}
                     </Button>
                     <Badge variant="outline">{mealLabels[selectedMealType].label}</Badge>
                   </div>
 
                   <div className="relative">
-                    <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                    <Search className={cn("absolute top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground", isAr ? "right-3" : "left-3")} />
                     <Input
                       placeholder={t.nutrition.searchFoods}
-                      className="pl-10 bg-muted/50 border-border/50"
+                      className={cn("bg-muted/50 border-border/50", isAr ? "pr-10" : "pl-10")}
                       value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
+                      onChange={(e) => { setSearchQuery(e.target.value); if (e.target.value) setFoodCategoryFilter(null); }}
                     />
                   </div>
 
-                  {/* Search Results */}
-                  {searchQuery.length >= 2 && (
+                  {/* Food Category Pills */}
+                  {searchQuery.length < 2 && (
+                    <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar -mx-1 px-1">
+                      {foodCategories.map((cat) => {
+                        const isActive = foodCategoryFilter === cat.value;
+                        return (
+                          <button
+                            key={cat.value}
+                            onClick={() => {
+                              setFoodCategoryFilter(isActive ? null : cat.value);
+                              setSearchQuery('');
+                            }}
+                            className={cn(
+                              'shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition-all whitespace-nowrap flex items-center gap-1',
+                              isActive
+                                ? 'bg-primary text-primary-foreground shadow-sm'
+                                : 'bg-muted/60 text-muted-foreground hover:bg-muted hover:text-foreground'
+                            )}
+                          >
+                            <span>{cat.icon}</span>
+                            {isAr ? cat.labelAr : cat.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+
+                  {/* Search Results / Category Browse Results */}
+                  {(searchQuery.length >= 2 || foodCategoryFilter) && (
                     <div>
                       <p className="mb-2 text-sm font-medium">{isAr ? 'نتايج البحث' : 'Search Results'}</p>
                       {searchLoading ? (
@@ -344,7 +414,7 @@ export default function NutritionPage() {
 
                   {/* Scan buttons — requires mobile app camera, hidden on web */}
 
-                  {searchQuery.length < 2 && recentFoods.length > 0 && (
+                  {searchQuery.length < 2 && !foodCategoryFilter && recentFoods.length > 0 && (
                     <div>
                       <p className="mb-2 text-sm font-medium">{t.nutrition.recentFoods}</p>
                       <div className="space-y-2">
@@ -369,7 +439,7 @@ export default function NutritionPage() {
                       </div>
                     </div>
                   )}
-                  {searchQuery.length < 2 && recentFoods.length === 0 && (
+                  {searchQuery.length < 2 && !foodCategoryFilter && recentFoods.length === 0 && (
                     <p className="text-sm text-muted-foreground text-center py-4">
                       {isAr ? 'ابحث عن طعام لإضافته إلى وجبتك' : 'Search for a food to add to your meal'}
                     </p>
@@ -452,6 +522,12 @@ export default function NutritionPage() {
                     <Target className="h-4 w-4 text-muted-foreground" />
                     <span className="text-muted-foreground">{isAr ? `الهدف: ${goals.calories}` : `Goal: ${goals.calories}`}</span>
                   </div>
+                  <button
+                    onClick={() => setGoalsDialogOpen(true)}
+                    className="text-xs text-primary hover:underline"
+                  >
+                    {isAr ? 'تعديل' : 'Edit'}
+                  </button>
                 </div>
               </div>
             </div>
@@ -540,22 +616,42 @@ export default function NutritionPage() {
                 <span className="font-medium">{t.health.water}</span>
               </div>
               <Badge variant="outline" className="bg-blue-500/10 text-blue-400 border-blue-500/30">
-                {waterGlasses} / {defaultGoals.water} {isAr ? 'كوباية' : 'glasses'}
+                {waterLiters} / {goals.water || defaultGoals.water} {isAr ? 'لتر' : 'L'}
               </Badge>
             </div>
+            {/* Progress bar */}
+            <div className="h-3 rounded-full bg-muted/30 mb-3 overflow-hidden">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300"
+                style={{ width: `${waterProgress}%` }}
+              />
+            </div>
+            {/* Quick add buttons */}
             <div className="flex items-center gap-2">
-              {Array.from({ length: defaultGoals.water }).map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => updateWater(i + 1)}
-                  className={cn(
-                    "flex-1 h-8 rounded-lg transition-all",
-                    i < waterGlasses
-                      ? "bg-gradient-to-t from-blue-500 to-blue-600"
-                      : "bg-muted/30 hover:bg-muted/50"
-                  )}
-                />
-              ))}
+              <button
+                onClick={() => addWater(250)}
+                className="flex-1 h-10 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 text-sm font-medium transition-colors"
+              >
+                +250{isAr ? ' مل' : 'ml'}
+              </button>
+              <button
+                onClick={() => addWater(500)}
+                className="flex-1 h-10 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 text-sm font-medium transition-colors"
+              >
+                +500{isAr ? ' مل' : 'ml'}
+              </button>
+              <button
+                onClick={() => addWater(1000)}
+                className="flex-1 h-10 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 text-sm font-medium transition-colors"
+              >
+                +1{isAr ? ' لتر' : 'L'}
+              </button>
+              <button
+                onClick={() => addWater(-250)}
+                className="h-10 w-10 rounded-xl bg-muted/30 hover:bg-muted/50 text-muted-foreground text-xs font-medium transition-colors flex items-center justify-center"
+              >
+                -
+              </button>
             </div>
           </CardContent>
         </Card>
@@ -686,32 +782,28 @@ export default function NutritionPage() {
             <Pill className="h-5 w-5 text-forma-orange" />
             {isAr ? 'المكملات' : 'Supplements'}
           </h2>
+          <Link href="/chat" className="text-xs text-primary hover:underline">
+            {isAr ? 'اسأل الكوتش' : 'Ask Coach'}
+          </Link>
         </div>
-        <Card className="rounded-2xl border border-border/50 bg-card">
-          <CardContent className="p-6">
-            <div className="flex flex-col items-center justify-center py-6 text-center">
-              <div className="p-3 rounded-xl bg-forma-orange/10 mb-4">
-                <Lock className="h-6 w-6 text-forma-orange" />
-              </div>
-              <h3 className="font-semibold mb-2">
-                {isAr ? 'المكملات مع المدرب' : 'Supplements with your Trainer'}
-              </h3>
-              <p className="text-sm text-muted-foreground max-w-xs">
-                {isAr
-                  ? 'المدرب هيقترحلك المكملات المناسبة ليك بناءً على أهدافك وبرنامجك التدريبي. دوّر على مدرب دلوقتي!'
-                  : 'Your trainer will recommend the right supplements based on your goals and training program. Find a trainer to get started!'}
-              </p>
-              <Button
-                variant="outline"
-                size="sm"
-                className="mt-4 border-forma-orange/50 text-forma-orange hover:bg-forma-orange/10"
-                onClick={() => window.location.href = '/trainers'}
-              >
-                {isAr ? 'دوّر على مدرب' : 'Find a Trainer'}
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="grid grid-cols-2 gap-3">
+          {[
+            { icon: '💪', label: isAr ? 'بروتين' : 'Protein', desc: isAr ? 'بعد التمرين — 25-40جم' : 'Post-workout — 25-40g', color: 'bg-blue-500/10 border-blue-500/20' },
+            { icon: '⚡', label: isAr ? 'كرياتين' : 'Creatine', desc: isAr ? 'يومياً — 5جم' : 'Daily — 5g', color: 'bg-purple-500/10 border-purple-500/20' },
+            { icon: '🔥', label: isAr ? 'بري وركاوت' : 'Pre-Workout', desc: isAr ? 'قبل التمرين ب30 دقيقة' : '30min before training', color: 'bg-orange-500/10 border-orange-500/20' },
+            { icon: '🐟', label: isAr ? 'أوميجا 3' : 'Omega 3', desc: isAr ? 'يومياً — 2-3جم' : 'Daily — 2-3g', color: 'bg-green-500/10 border-green-500/20' },
+          ].map((supp) => (
+            <Link
+              key={supp.label}
+              href="/chat"
+              className={`rounded-2xl border p-4 transition-all hover:shadow-sm ${supp.color}`}
+            >
+              <span className="text-2xl">{supp.icon}</span>
+              <h3 className="font-semibold text-sm mt-2">{supp.label}</h3>
+              <p className="text-[11px] text-muted-foreground mt-0.5">{supp.desc}</p>
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Daily Insight */}
@@ -868,6 +960,78 @@ export default function NutritionPage() {
           )}
         </DialogContent>
       </Dialog>
+
+      {/* Goals Editor Dialog */}
+      <Dialog open={goalsDialogOpen} onOpenChange={setGoalsDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>{isAr ? 'تعديل الأهداف اليومية' : 'Edit Daily Goals'}</DialogTitle>
+            <DialogDescription>
+              {isAr ? 'حدد أهدافك اليومية من السعرات والمغذيات' : 'Set your daily calorie and nutrient targets'}
+            </DialogDescription>
+          </DialogHeader>
+          <GoalsForm
+            initial={goals}
+            onSave={saveCustomGoals}
+            isAr={isAr}
+          />
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
+}
+
+function GoalsForm({
+  initial,
+  onSave,
+  isAr,
+}: {
+  initial: typeof defaultGoals;
+  onSave: (goals: typeof defaultGoals) => void;
+  isAr: boolean;
+}) {
+  const [cal, setCal] = useState(String(initial.calories));
+  const [pro, setPro] = useState(String(initial.protein));
+  const [carb, setCarb] = useState(String(initial.carbs));
+  const [fat, setFat] = useState(String(initial.fat));
+  const [water, setWater] = useState(String(initial.water));
+
+  return (
+    <div className="space-y-4 pt-2">
+      <div className="grid grid-cols-2 gap-3">
+        <div>
+          <Label>{isAr ? 'السعرات (kcal)' : 'Calories (kcal)'}</Label>
+          <Input type="number" value={cal} onChange={(e) => setCal(e.target.value)} />
+        </div>
+        <div>
+          <Label>{isAr ? 'بروتين (جم)' : 'Protein (g)'}</Label>
+          <Input type="number" value={pro} onChange={(e) => setPro(e.target.value)} />
+        </div>
+        <div>
+          <Label>{isAr ? 'كاربز (جم)' : 'Carbs (g)'}</Label>
+          <Input type="number" value={carb} onChange={(e) => setCarb(e.target.value)} />
+        </div>
+        <div>
+          <Label>{isAr ? 'دهون (جم)' : 'Fat (g)'}</Label>
+          <Input type="number" value={fat} onChange={(e) => setFat(e.target.value)} />
+        </div>
+        <div>
+          <Label>{isAr ? 'ماء (لتر)' : 'Water (liters)'}</Label>
+          <Input type="number" step="0.5" value={water} onChange={(e) => setWater(e.target.value)} />
+        </div>
+      </div>
+      <Button
+        className="w-full"
+        onClick={() => onSave({
+          calories: parseInt(cal) || defaultGoals.calories,
+          protein: parseInt(pro) || defaultGoals.protein,
+          carbs: parseInt(carb) || defaultGoals.carbs,
+          fat: parseInt(fat) || defaultGoals.fat,
+          water: parseFloat(water) || defaultGoals.water,
+        })}
+      >
+        {isAr ? 'حفظ الأهداف' : 'Save Goals'}
+      </Button>
     </div>
   );
 }

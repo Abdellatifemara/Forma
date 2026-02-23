@@ -47,3 +47,23 @@ export function useUpdateProfile() {
     },
   });
 }
+
+export function useAssessment() {
+  return useQuery({
+    queryKey: [...userKeys.all, 'assessment'] as const,
+    queryFn: () => usersApi.getAssessment(),
+    staleTime: 5 * 60 * 1000,
+    retry: 1,
+  });
+}
+
+export function useSaveAssessment() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: usersApi.saveAssessment,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: [...userKeys.all, 'assessment'] });
+    },
+  });
+}

@@ -12,6 +12,8 @@ import {
   X,
   SlidersHorizontal,
   ImageIcon,
+  Home,
+  Loader2,
 } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -73,6 +75,20 @@ const difficultyLevels = [
   { label: 'Beginner', labelAr: 'مبتدئ', value: 'Beginner' },
   { label: 'Intermediate', labelAr: 'متوسط', value: 'Intermediate' },
   { label: 'Advanced', labelAr: 'متقدم', value: 'Advanced' },
+];
+
+const exerciseCategories = [
+  { label: 'All', labelAr: 'الكل', value: 'All', icon: '🏋️' },
+  { label: 'Strength', labelAr: 'قوة', value: 'STRENGTH', icon: '💪' },
+  { label: 'Cardio', labelAr: 'كارديو', value: 'CARDIO', icon: '🏃' },
+  { label: 'Calisthenics', labelAr: 'كاليسثنكس', value: 'CALISTHENICS', icon: '🤸' },
+  { label: 'Martial Arts', labelAr: 'فنون قتالية', value: 'MARTIAL_ARTS', icon: '🥊' },
+  { label: 'CrossFit', labelAr: 'كروسفت', value: 'CROSSFIT', icon: '🔥' },
+  { label: 'Yoga', labelAr: 'يوغا', value: 'YOGA', icon: '🧘' },
+  { label: 'Olympic', labelAr: 'أولمبي', value: 'OLYMPIC', icon: '🏅' },
+  { label: 'Flexibility', labelAr: 'مرونة', value: 'FLEXIBILITY', icon: '🤾' },
+  { label: 'Mobility', labelAr: 'حركية', value: 'MOBILITY', icon: '🔄' },
+  { label: 'Plyometric', labelAr: 'بليومتري', value: 'PLYOMETRIC', icon: '⚡' },
 ];
 
 /** Strip markdown bold markers */
@@ -173,22 +189,18 @@ function ExercisesPageContent() {
   const [muscleFilter, setMuscleFilter] = useState(normalizeMuscleParam(initialMuscle));
   const [equipmentFilter, setEquipmentFilter] = useState('All');
   const [difficultyFilter, setDifficultyFilter] = useState('All');
+  const [categoryFilter, setCategoryFilter] = useState('All');
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
+  const [homeAlternatives, setHomeAlternatives] = useState<Exercise[]>([]);
+  const [loadingAlternatives, setLoadingAlternatives] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
 
   const pillsRef = useRef<HTMLDivElement>(null);
+  const catPillsRef = useRef<HTMLDivElement>(null);
 
   // Auto-search when any filter changes
   useEffect(() => {
-    const hasActiveFilter = searchQuery || muscleFilter !== 'All' || equipmentFilter !== 'All' || difficultyFilter !== 'All';
-
-    if (!hasActiveFilter) {
-      setExercises([]);
-      setHasSearched(false);
-      return;
-    }
-
     async function searchExercises() {
       setIsLoading(true);
       setHasSearched(true);
@@ -198,7 +210,8 @@ function ExercisesPageContent() {
           primaryMuscle: muscleFilter !== 'All' ? muscleFilter : undefined,
           equipment: equipmentFilter !== 'All' ? [equipmentFilter] : undefined,
           difficulty: difficultyFilter !== 'All' ? difficultyFilter.toUpperCase() : undefined,
-          pageSize: '30',
+          category: categoryFilter !== 'All' ? categoryFilter : undefined,
+          pageSize: 30,
         };
         const response = await exercisesApi.search(params);
         const exerciseData = response.data || (response as any).exercises || [];
@@ -212,14 +225,43 @@ function ExercisesPageContent() {
 
     const timer = setTimeout(searchExercises, 300);
     return () => clearTimeout(timer);
-  }, [searchQuery, muscleFilter, equipmentFilter, difficultyFilter]);
+  }, [searchQuery, muscleFilter, equipmentFilter, difficultyFilter, categoryFilter]);
 
-  const activeFilterCount = [equipmentFilter, difficultyFilter].filter(f => f !== 'All').length;
+  // Load home alternatives when exercise is selected
+  useEffect(() => {
+    if (!selectedExercise) {
+      setHomeAlternatives([]);
+      return;
+    }
+    // Only show alternatives if the exercise uses gym equipment
+    const eq = Array.isArray(selectedExercise.equipment) ? selectedExercise.equipment : [selectedExercise.equipment];
+    const isAlreadyBodyweight = eq.length === 1 && (eq[0] === 'BODYWEIGHT' || eq[0] === 'NONE');
+    if (isAlreadyBodyweight) {
+      setHomeAlternatives([]);
+      return;
+    }
+
+    setLoadingAlternatives(true);
+    exercisesApi.search({
+      primaryMuscle: selectedExercise.primaryMuscle || undefined,
+      equipment: ['BODYWEIGHT'] as any,
+      pageSize: 4,
+    }).then((res) => {
+      const alts = (res.data || (res as any).exercises || []).filter(
+        (e: Exercise) => e.id !== selectedExercise.id
+      );
+      setHomeAlternatives(alts.slice(0, 3));
+    }).catch(() => setHomeAlternatives([]))
+      .finally(() => setLoadingAlternatives(false));
+  }, [selectedExercise]);
+
+  const activeFilterCount = [equipmentFilter, difficultyFilter, categoryFilter].filter(f => f !== 'All').length;
 
   const clearAllFilters = () => {
     setMuscleFilter('All');
     setEquipmentFilter('All');
     setDifficultyFilter('All');
+    setCategoryFilter('All');
     setSearchQuery('');
   };
 
@@ -267,12 +309,38 @@ function ExercisesPageContent() {
         </Button>
       </div>
 
+      {/* Category Pills — horizontal scroll */}
+      <div className="relative -mx-4 px-4">
+        <div
+          ref={catPillsRef}
+          className="flex gap-2 overflow-x-auto pb-2 no-scrollbar"
+        >
+          {exerciseCategories.map((cat) => {
+            const isActive = categoryFilter === cat.value;
+            return (
+              <button
+                key={cat.value}
+                onClick={() => setCategoryFilter(isActive ? 'All' : cat.value)}
+                className={cn(
+                  'shrink-0 rounded-full px-3 py-2 text-xs font-medium transition-all whitespace-nowrap flex items-center gap-1.5',
+                  isActive
+                    ? 'bg-forma-orange text-white shadow-sm'
+                    : 'bg-muted/60 text-muted-foreground hover:bg-muted hover:text-foreground'
+                )}
+              >
+                <span>{cat.icon}</span>
+                {isAr ? cat.labelAr : cat.label}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
       {/* Muscle Group Pills — horizontal scroll */}
       <div className="relative -mx-4 px-4">
         <div
           ref={pillsRef}
-          className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          className="flex gap-2 overflow-x-auto pb-2 no-scrollbar"
         >
           {muscleGroups.map((muscle) => {
             const isActive = muscleFilter === muscle.value;
@@ -335,9 +403,15 @@ function ExercisesPageContent() {
       )}
 
       {/* Active filter tags */}
-      {(muscleFilter !== 'All' || equipmentFilter !== 'All' || difficultyFilter !== 'All') && (
+      {(muscleFilter !== 'All' || equipmentFilter !== 'All' || difficultyFilter !== 'All' || categoryFilter !== 'All') && (
         <div className="flex items-center gap-2 flex-wrap">
           <span className="text-xs text-muted-foreground">{isAr ? 'الفلاتر:' : 'Filters:'}</span>
+          {categoryFilter !== 'All' && (
+            <Badge variant="secondary" className="gap-1 text-xs">
+              {isAr ? exerciseCategories.find(c => c.value === categoryFilter)?.labelAr : exerciseCategories.find(c => c.value === categoryFilter)?.label}
+              <X className="h-3 w-3 cursor-pointer" onClick={() => setCategoryFilter('All')} />
+            </Badge>
+          )}
           {muscleFilter !== 'All' && (
             <Badge variant="secondary" className="gap-1 text-xs">
               {isAr ? muscleGroups.find(m => m.value === muscleFilter)?.labelAr : muscleGroups.find(m => m.value === muscleFilter)?.label}
@@ -545,6 +619,46 @@ function ExercisesPageContent() {
                           </summary>
                           <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
                         </details>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Home Alternative */}
+                {loadingAlternatives && (
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    {isAr ? 'بنحمّل بدائل منزلية...' : 'Loading home alternatives...'}
+                  </div>
+                )}
+                {!loadingAlternatives && homeAlternatives.length > 0 && (
+                  <div>
+                    <h4 className="mb-3 font-semibold text-sm flex items-center gap-2">
+                      <Home className="h-4 w-4 text-green-500" />
+                      {isAr ? 'البديل في البيت' : 'Do It at Home'}
+                    </h4>
+                    <div className="space-y-2">
+                      {homeAlternatives.map((alt) => (
+                        <button
+                          key={alt.id}
+                          onClick={() => setSelectedExercise(alt)}
+                          className="w-full flex items-center justify-between p-3 rounded-xl border border-border/50 hover:border-green-500/40 hover:bg-green-500/5 transition-all text-start"
+                        >
+                          <div className="flex items-center gap-3">
+                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
+                              <Home className="h-5 w-5 text-green-500" />
+                            </div>
+                            <div>
+                              <p className="font-medium text-sm">
+                                {isAr && alt.nameAr ? stripMarkdown(alt.nameAr) : stripMarkdown(alt.nameEn || (alt as any).name || '')}
+                              </p>
+                              <p className="text-xs text-muted-foreground">
+                                {isAr ? 'بدون معدات' : 'No equipment needed'}
+                              </p>
+                            </div>
+                          </div>
+                          <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                        </button>
                       ))}
                     </div>
                   </div>

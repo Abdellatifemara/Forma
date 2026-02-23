@@ -12,6 +12,68 @@ import {
 // TYPES & INTERFACES
 // ============================================================================
 
+/** Structured injury data from UserInjury table */
+export interface InjuryData {
+  bodyPart: string;
+  side?: string;
+  injuryType: string;
+  severity: 'MILD' | 'MODERATE' | 'SEVERE' | 'RECOVERING' | 'FULLY_HEALED';
+  painLevel: number;
+  painTriggers: string[];
+  avoidMovements: string[];
+  isCurrentlyActive: boolean;
+}
+
+/** Supplement stack from UserNutritionProfile */
+export interface SupplementStack {
+  takesCreatine: boolean;
+  takesPreWorkout: boolean;
+  takesProteinPowder: boolean;
+  takesBetaAlanine: boolean;
+  takesOmega3: boolean;
+  takesMultivitamin: boolean;
+}
+
+/** Readiness calculation result */
+export interface ReadinessResult {
+  score: number;       // 0-100
+  color: 'green' | 'yellow-green' | 'yellow' | 'orange' | 'red';
+  volumeModifier: number;
+  rpeModifier: number;
+  message: string;
+  messageAr: string;
+}
+
+/** Supplement modifiers calculated from stack */
+export interface SupplementModifiers {
+  volumeModifier: number;
+  intensityModifier: number;  // RPE adjustment
+  recoveryModifier: number;
+  notes: string;
+}
+
+/** Injury restrictions calculated from all active injuries */
+export interface InjuryRestrictions {
+  avoidMuscles: string[];        // SEVERE: completely remove
+  reduceMuscles: string[];       // MODERATE: reduce volume
+  modifyMuscles: string[];       // MILD: modify exercises
+  avoidExerciseNames: string[];  // from avoidMovements
+  volumeModifier: number;        // overall volume adjustment
+  rehabExercises: RehabExercise[];
+  modificationNotes: Map<string, string>; // muscleGroup -> note
+}
+
+/** Rehab exercise for the Recovery Corner */
+export interface RehabExercise {
+  name: string;
+  nameAr: string;
+  sets: number;
+  reps: string;
+  targetArea: string;
+  notes: string;
+  notesAr: string;
+}
+
 /** User profile data collected from multiple DB tables */
 export interface UserProfile {
   userId: string;
@@ -28,9 +90,11 @@ export interface UserProfile {
   // Training
   experienceLevel: ExperienceLevel;
   fitnessGoal: GoalType;
-  // Health
+  // Health — legacy string array kept for backward compat
   injuries: string[];
   healthConditions: HealthCondition[];
+  // NEW: Structured injury data from UserInjury table
+  injuryData: InjuryData[];
   // Equipment
   availableEquipment: string[];
   // Preferences
@@ -39,14 +103,24 @@ export interface UserProfile {
   // Fitness tests
   pushUpMax?: number;
   plankHoldSeconds?: number;
+  pullUpMax?: number;
   restingHeartRate?: number;
   // PRs
   prBenchKg?: number;
   prSquatKg?: number;
   prDeadliftKg?: number;
-  // Ramadan
+  // Ramadan / Fasting
   ramadanMode?: boolean;
   ramadanWorkoutTiming?: string;
+  // NEW: Supplement stack
+  supplements: SupplementStack;
+  // NEW: Lifestyle data for readiness
+  sleepHours?: number;
+  sleepQuality?: string;
+  stressLevel?: string;
+  // NEW: Workout history stats
+  workoutLogCount: number;
+  daysSinceLastWorkout: number;
 }
 
 /** Session-specific inputs from the user */
@@ -74,6 +148,8 @@ export interface GeneratedWorkout {
   warmup: WarmupBlock;
   workingSets: ExerciseBlock[];
   cooldown: CooldownBlock;
+  // NEW: Recovery Corner — rehab exercises for injured users
+  rehabBlock?: { exercises: RehabExercise[] };
   progressionNotes: string;
   progressionNotesAr: string;
   splitType: string;
@@ -81,6 +157,23 @@ export interface GeneratedWorkout {
   estimatedCalories: number;
   reason: string;
   reasonAr: string;
+  // NEW: Readiness score from energy/sleep/recovery data
+  readinessScore?: number;
+  readinessColor?: string;
+  readinessMessage?: string;
+  readinessMessageAr?: string;
+  // NEW: Supplement notes
+  supplementNotes?: string;
+  supplementNotesAr?: string;
+  // NEW: Active modifiers summary
+  modifiers?: {
+    bodyType?: string;
+    readiness?: string;
+    supplements?: string;
+    ramadan?: boolean;
+    injuries?: string[];
+    effectiveLevel?: string;
+  };
 }
 
 export interface WarmupBlock {
@@ -110,6 +203,9 @@ export interface ExerciseBlock {
   supersetWith?: string; // name of paired exercise
   muscleGroup: string;
   equipment: string[];
+  // NEW: Injury-specific modification note
+  modificationNote?: string;
+  modificationNoteAr?: string;
 }
 
 export interface CooldownBlock {
@@ -439,6 +535,62 @@ const FITNESS_TEST_THRESHOLDS = {
   },
 };
 
+/** Supplement stack → capacity modifiers (ISSN position stand) */
+const SUPPLEMENT_CAPACITY_MATRIX: Record<string, { volume: number; intensity: number; recovery: number }> = {
+  // key = sorted supplement flags joined by '+'
+  'none':                          { volume: 1.0,  intensity: 0,  recovery: 1.0 },
+  'creatine':                      { volume: 1.10, intensity: 0,  recovery: 1.05 },
+  'preworkout':                    { volume: 1.0,  intensity: 1,  recovery: 1.0 },
+  'creatine+preworkout':           { volume: 1.10, intensity: 1,  recovery: 1.05 },
+  'betaalanine':                   { volume: 1.05, intensity: 0,  recovery: 1.0 },
+  'creatine+betaalanine':          { volume: 1.12, intensity: 0,  recovery: 1.05 },
+  'creatine+betaalanine+preworkout': { volume: 1.15, intensity: 1,  recovery: 1.10 },
+};
+
+/** Injury rehab exercise library (from research file 14) */
+const INJURY_REHAB_MAP: Record<string, RehabExercise[]> = {
+  SHOULDER: [
+    { name: 'Face Pulls', nameAr: 'سحب للوجه', sets: 3, reps: '15', targetArea: 'SHOULDER', notes: 'Light band, focus on external rotation', notesAr: 'باند خفيف، ركّز على الدوران الخارجي' },
+    { name: 'External Rotation', nameAr: 'دوران خارجي', sets: 3, reps: '12 each', targetArea: 'SHOULDER', notes: 'Use light dumbbell or band', notesAr: 'دمبل خفيف أو باند' },
+    { name: 'Wall Slides', nameAr: 'انزلاق على الحيطة', sets: 2, reps: '10', targetArea: 'SHOULDER', notes: 'Keep back flat against wall', notesAr: 'ظهرك على الحيطة' },
+  ],
+  ROTATOR_CUFF: [
+    { name: 'External Rotation', nameAr: 'دوران خارجي', sets: 3, reps: '12 each', targetArea: 'SHOULDER', notes: 'Light resistance, slow tempo', notesAr: 'مقاومة خفيفة، بطيء' },
+    { name: 'Internal Rotation', nameAr: 'دوران داخلي', sets: 3, reps: '12 each', targetArea: 'SHOULDER', notes: 'Use band at elbow height', notesAr: 'باند على مستوى الكوع' },
+  ],
+  KNEE: [
+    { name: 'Terminal Knee Extension (TKE)', nameAr: 'مد الركبة الطرفي', sets: 3, reps: '15 each', targetArea: 'KNEE', notes: 'Band behind knee, extend to lockout', notesAr: 'باند ورا الركبة، افرد لآخرها' },
+    { name: 'Wall Sits', nameAr: 'جلوس على الحيطة', sets: 3, reps: '20-30 sec', targetArea: 'KNEE', notes: 'Knees at 90 degrees, back against wall', notesAr: 'ركبك 90 درجة، ظهرك ع الحيطة' },
+    { name: 'Straight Leg Raises', nameAr: 'رفع الرجل مفرودة', sets: 3, reps: '12 each', targetArea: 'KNEE', notes: 'Strengthen VMO quad muscle', notesAr: 'تقوية عضلة الفخذ الداخلية' },
+  ],
+  ACL: [
+    { name: 'Quarter Squats', nameAr: 'ربع سكوات', sets: 3, reps: '12', targetArea: 'KNEE', notes: 'Shallow depth only, no deep knee bend', notesAr: 'عمق قليل فقط' },
+    { name: 'Terminal Knee Extension (TKE)', nameAr: 'مد الركبة الطرفي', sets: 3, reps: '15 each', targetArea: 'KNEE', notes: 'Band behind knee', notesAr: 'باند ورا الركبة' },
+    { name: 'Single Leg Balance', nameAr: 'توازن على رجل واحدة', sets: 3, reps: '30 sec each', targetArea: 'KNEE', notes: 'Proprioception training', notesAr: 'تدريب التوازن' },
+  ],
+  LOWER_BACK: [
+    { name: 'Bird Dogs', nameAr: 'تمرين الطائر-الكلب', sets: 3, reps: '10 each side', targetArea: 'LOWER_BACK', notes: 'Anti-extension core stability', notesAr: 'ثبات الجذع' },
+    { name: 'McKenzie Press-ups', nameAr: 'ضغط ماكينزي', sets: 3, reps: '10', targetArea: 'LOWER_BACK', notes: 'Relax lower back, push with arms only', notesAr: 'ريّح الظهر، ادفع بالذراعين بس' },
+    { name: 'Glute Bridges', nameAr: 'بريدج للأرداف', sets: 3, reps: '12', targetArea: 'LOWER_BACK', notes: 'Activate glutes, reduce back load', notesAr: 'فعّل الأرداف' },
+  ],
+  SPINE_DISC: [
+    { name: 'Bird Dogs', nameAr: 'تمرين الطائر-الكلب', sets: 3, reps: '10 each side', targetArea: 'LOWER_BACK', notes: 'Anti-extension core stability', notesAr: 'ثبات الجذع' },
+    { name: 'Dead Bugs', nameAr: 'تمرين الحشرة الميتة', sets: 3, reps: '8 each side', targetArea: 'ABS', notes: 'Press lower back into floor', notesAr: 'اضغط ظهرك على الأرض' },
+  ],
+  ELBOW: [
+    { name: 'Wrist Curls', nameAr: 'ثني المعصم', sets: 3, reps: '15', targetArea: 'FOREARMS', notes: 'Very light weight, high reps', notesAr: 'وزن خفيف جدا' },
+    { name: 'Eccentric Wrist Extensions', nameAr: 'مد المعصم', sets: 3, reps: '12', targetArea: 'FOREARMS', notes: 'Slow lowering phase (3 sec)', notesAr: 'مرحلة النزول بطيئة 3 ثواني' },
+  ],
+  HIP: [
+    { name: 'Clamshells', nameAr: 'تمرين الصدفة', sets: 3, reps: '15 each', targetArea: 'HIP', notes: 'Band above knees, feet together', notesAr: 'باند فوق الركب، القدمين مع بعض' },
+    { name: 'Hip Circles on All Fours', nameAr: 'دوائر بالورك', sets: 2, reps: '10 each direction', targetArea: 'HIP', notes: 'Controlled movement', notesAr: 'حركة مضبوطة' },
+  ],
+  ANKLE: [
+    { name: 'Ankle Alphabet', nameAr: 'أبجدية الكاحل', sets: 2, reps: 'Full alphabet', targetArea: 'ANKLE', notes: 'Trace letters with toe', notesAr: 'ارسم حروف بصوابعك' },
+    { name: 'Calf Raises (Slow)', nameAr: 'رفع السمانة بطيء', sets: 3, reps: '15', targetArea: 'CALVES', notes: '3 sec up, 3 sec down', notesAr: '3 ثواني طلوع، 3 نزول' },
+  ],
+};
+
 /** BMI-based training category */
 function getBMICategory(bmi: number): 'underweight' | 'normal' | 'overweight' | 'obese' {
   if (bmi < 18.5) return 'underweight';
@@ -569,29 +721,318 @@ function generateCooldown(durationMin: number, targetMuscles: string[]): Cooldow
 export class WorkoutGeneratorService {
   constructor(private readonly prisma: PrismaService) {}
 
+  // ════════════════════════════════════════════
+  // NEW ALGORITHM METHODS (Plan Phase 1)
+  // ════════════════════════════════════════════
+
+  /**
+   * Calculate readiness score (0-100) from energy, sleep, recovery, stress
+   */
+  calculateReadinessScore(profile: UserProfile, session: SessionInput): ReadinessResult {
+    // Energy level component (0-90)
+    const energyMap: Record<EnergyLevel, number> = { low: 30, medium: 60, high: 90 };
+    const energyScore = energyMap[session.energyLevel];
+
+    // Sleep component (0-95)
+    const sleepHours = profile.sleepHours ?? 7;
+    let sleepScore = 70; // default
+    if (sleepHours < 5) sleepScore = 20;
+    else if (sleepHours < 6) sleepScore = 40;
+    else if (sleepHours < 7) sleepScore = 60;
+    else if (sleepHours < 8) sleepScore = 75;
+    else if (sleepHours < 9) sleepScore = 85;
+    else sleepScore = 95;
+
+    // Muscle recovery component (0-90)
+    const daysSince = profile.daysSinceLastWorkout;
+    let muscleRecovery = 70;
+    if (daysSince === 0) muscleRecovery = 30;
+    else if (daysSince === 1) muscleRecovery = 50;
+    else if (daysSince === 2) muscleRecovery = 70;
+    else muscleRecovery = 90;
+
+    // Stress inverse component (0-90)
+    const stressMap: Record<string, number> = { LOW: 90, MODERATE: 65, HIGH: 40, VERY_HIGH: 20 };
+    const stressScore = stressMap[profile.stressLevel || 'MODERATE'] ?? 60;
+
+    // Weighted sum
+    const score = Math.round(
+      energyScore * 0.25 +
+      sleepScore * 0.30 +
+      muscleRecovery * 0.25 +
+      stressScore * 0.20
+    );
+
+    // Zone mapping
+    let color: ReadinessResult['color'];
+    let volumeModifier: number;
+    let rpeModifier: number;
+    let message: string;
+    let messageAr: string;
+
+    if (score >= 80) {
+      color = 'green';
+      volumeModifier = 1.1;
+      rpeModifier = 1;
+      message = 'Your body is fully recovered — push hard today!';
+      messageAr = 'جسمك مرتاح تماماً — ادفع بقوة النهارده!';
+    } else if (score >= 60) {
+      color = 'yellow-green';
+      volumeModifier = 1.0;
+      rpeModifier = 0;
+      message = 'Good recovery — follow your planned workout.';
+      messageAr = 'تعافي كويس — كمّل التمرين المخطط.';
+    } else if (score >= 40) {
+      color = 'yellow';
+      volumeModifier = 0.85;
+      rpeModifier = -1;
+      message = 'Moderate recovery — we\'ve reduced intensity for you.';
+      messageAr = 'تعافي متوسط — خففنا الشدة عشانك.';
+    } else if (score >= 20) {
+      color = 'orange';
+      volumeModifier = 0.6;
+      rpeModifier = -2;
+      message = 'Your body needs rest. Light session recommended.';
+      messageAr = 'جسمك محتاج راحة. جلسة خفيفة أفضل.';
+    } else {
+      color = 'red';
+      volumeModifier = 0;
+      rpeModifier = -3;
+      message = 'Full rest recommended. Recovery is when you grow.';
+      messageAr = 'راحة كاملة أفضل. التعافي هو وقت النمو.';
+    }
+
+    return { score, color, volumeModifier, rpeModifier, message, messageAr };
+  }
+
+  /**
+   * Calculate effective experience level — min(selfReported, fitnessTest, logBased)
+   * Never expose the override to the user.
+   */
+  calculateEffectiveLevel(profile: UserProfile): ExperienceLevel {
+    const levelOrder: ExperienceLevel[] = ['COMPLETE_BEGINNER', 'BEGINNER', 'NOVICE', 'INTERMEDIATE', 'ADVANCED', 'EXPERT'];
+
+    // Self-reported level
+    const selfIdx = levelOrder.indexOf(profile.experienceLevel);
+
+    // Fitness test derived level
+    let testIdx = selfIdx; // default to self-reported if no tests
+    const gender = profile.gender === 'MALE' ? 'male' : 'female';
+    const thresholds = FITNESS_TEST_THRESHOLDS.pushups[gender];
+    if (profile.pushUpMax !== undefined) {
+      if (profile.pushUpMax < thresholds.poor) testIdx = Math.min(testIdx, 0); // COMPLETE_BEGINNER
+      else if (profile.pushUpMax < thresholds.belowAvg) testIdx = Math.min(testIdx, 1); // BEGINNER
+      else if (profile.pushUpMax < thresholds.average) testIdx = Math.min(testIdx, 2); // NOVICE
+      else if (profile.pushUpMax < thresholds.good) testIdx = Math.min(testIdx, 3); // INTERMEDIATE
+      else testIdx = Math.min(testIdx, 4); // ADVANCED
+    }
+
+    // Log-based level cap
+    let logIdx = 5; // no cap by default
+    if (profile.workoutLogCount === 0) logIdx = 1; // max BEGINNER
+    else if (profile.workoutLogCount < 50) logIdx = 2; // max NOVICE
+    else if (profile.workoutLogCount < 200) logIdx = 3; // max INTERMEDIATE
+    // 200+ = allow anything
+
+    const effectiveIdx = Math.min(selfIdx, testIdx, logIdx);
+    return levelOrder[Math.max(0, effectiveIdx)];
+  }
+
+  /**
+   * Calculate supplement stack modifiers
+   */
+  getSupplementModifiers(stack: SupplementStack, healthConditions: HealthCondition[]): SupplementModifiers {
+    // Build key from active supplements
+    const parts: string[] = [];
+    if (stack.takesCreatine) parts.push('creatine');
+    if (stack.takesBetaAlanine) parts.push('betaalanine');
+    if (stack.takesPreWorkout) parts.push('preworkout');
+
+    const key = parts.length > 0 ? parts.sort().join('+') : 'none';
+    const matrix = SUPPLEMENT_CAPACITY_MATRIX[key] || SUPPLEMENT_CAPACITY_MATRIX['none'];
+
+    let volume = matrix.volume;
+    let intensity = matrix.intensity;
+    let recovery = matrix.recovery;
+    const notes: string[] = [];
+
+    // Health conditions override supplements
+    const hasHypertension = healthConditions.includes('high_bp');
+    const hasHeart = healthConditions.includes('heart');
+
+    if ((hasHypertension || hasHeart) && stack.takesPreWorkout) {
+      intensity = 0; // Zero out pre-workout RPE boost
+      notes.push('Pre-workout intensity boost disabled (blood pressure safety)');
+    }
+
+    // Cap maximums
+    volume = Math.min(volume, 1.20);
+    intensity = Math.min(intensity, 1);
+    recovery = Math.min(recovery, 1.15);
+
+    if (stack.takesCreatine) notes.push('Creatine: +volume capacity');
+    if (stack.takesPreWorkout && intensity > 0) notes.push('Pre-workout: +1 RPE push');
+    if (stack.takesBetaAlanine) notes.push('Beta-alanine: endurance buffer');
+
+    return {
+      volumeModifier: volume,
+      intensityModifier: intensity,
+      recoveryModifier: recovery,
+      notes: notes.join('. '),
+    };
+  }
+
+  /**
+   * Calculate injury restrictions from structured injury data
+   */
+  getInjuryRestrictions(injuries: InjuryData[]): InjuryRestrictions {
+    const avoidMuscles = new Set<string>();
+    const reduceMuscles = new Set<string>();
+    const modifyMuscles = new Set<string>();
+    const avoidExerciseNames = new Set<string>();
+    const rehabExercises: RehabExercise[] = [];
+    const modificationNotes = new Map<string, string>();
+    let volumeModifier = 1.0;
+
+    for (const injury of injuries) {
+      if (!injury.isCurrentlyActive) continue;
+
+      const affectedMuscles = INJURY_MUSCLE_MAP[injury.bodyPart.toUpperCase()] || [];
+
+      // Severity-based handling
+      switch (injury.severity) {
+        case 'SEVERE':
+          affectedMuscles.forEach(m => avoidMuscles.add(m));
+          volumeModifier = Math.min(volumeModifier, 0.5);
+          break;
+        case 'MODERATE':
+          affectedMuscles.forEach(m => reduceMuscles.add(m));
+          volumeModifier = Math.min(volumeModifier, 0.75);
+          for (const m of affectedMuscles) {
+            modificationNotes.set(m, `Modified for ${injury.bodyPart.toLowerCase()} injury — use reduced ROM, lighter load`);
+          }
+          break;
+        case 'MILD':
+        case 'RECOVERING':
+          affectedMuscles.forEach(m => modifyMuscles.add(m));
+          volumeModifier = Math.min(volumeModifier, 0.9);
+          for (const m of affectedMuscles) {
+            modificationNotes.set(m, `Mild ${injury.bodyPart.toLowerCase()} issue — watch form, neutral grip preferred`);
+          }
+          break;
+      }
+
+      // Collect user's avoidMovements
+      for (const mov of (injury.avoidMovements || [])) {
+        avoidExerciseNames.add(mov.toLowerCase());
+      }
+
+      // Add rehab exercises for this injury type
+      const rehabKey = injury.bodyPart.toUpperCase();
+      const rehabs = INJURY_REHAB_MAP[rehabKey];
+      if (rehabs && !rehabExercises.some(r => r.targetArea === rehabKey)) {
+        // Add max 3 rehab exercises per injury area
+        rehabExercises.push(...rehabs.slice(0, 3));
+      }
+    }
+
+    // Remove avoidMuscles from reduce/modify (avoid takes priority)
+    avoidMuscles.forEach(m => { reduceMuscles.delete(m); modifyMuscles.delete(m); });
+
+    return {
+      avoidMuscles: Array.from(avoidMuscles),
+      reduceMuscles: Array.from(reduceMuscles),
+      modifyMuscles: Array.from(modifyMuscles),
+      avoidExerciseNames: Array.from(avoidExerciseNames),
+      volumeModifier,
+      rehabExercises,
+      modificationNotes,
+    };
+  }
+
+  /**
+   * Build rehab block from injury data
+   */
+  buildRehabBlock(injuries: InjuryData[]): { exercises: RehabExercise[] } | undefined {
+    const activeInjuries = injuries.filter(i => i.isCurrentlyActive);
+    if (activeInjuries.length === 0) return undefined;
+
+    const exercises: RehabExercise[] = [];
+    const addedAreas = new Set<string>();
+
+    for (const injury of activeInjuries) {
+      const key = injury.bodyPart.toUpperCase();
+      if (addedAreas.has(key)) continue;
+      addedAreas.add(key);
+
+      const rehabs = INJURY_REHAB_MAP[key];
+      if (rehabs) {
+        exercises.push(...rehabs.slice(0, 2)); // 2 per area, max 4 total
+      }
+      if (exercises.length >= 4) break;
+    }
+
+    return exercises.length > 0 ? { exercises } : undefined;
+  }
+
+  // ════════════════════════════════════════════
+
   /**
    * MAIN ENTRY POINT: Generate a complete, research-based workout
    */
   async generateWorkout(profile: UserProfile, session: SessionInput): Promise<GeneratedWorkout> {
     // ──────────────────────────────────────────────
-    // STEP 0: Should the user rest?
+    // STEP 0: Calculate readiness score
     // ──────────────────────────────────────────────
+    const readiness = this.calculateReadinessScore(profile, session);
+
+    // Red zone = full rest
+    if (readiness.color === 'red') {
+      return {
+        type: 'rest',
+        title: 'Rest Day — Your Body Needs Recovery',
+        titleAr: 'يوم راحة — جسمك محتاج يرتاح',
+        description: 'Your readiness score is very low. Rest is when muscles grow.',
+        descriptionAr: 'نسبة جاهزيتك منخفضة جدا. الراحة هي وقت نمو العضلات.',
+        durationMinutes: 0, format: 'TRADITIONAL', targetMuscles: [],
+        warmup: { durationMinutes: 0, exercises: [] }, workingSets: [],
+        cooldown: { durationMinutes: 0, exercises: [] },
+        progressionNotes: 'Full rest day. Resume training tomorrow.',
+        progressionNotesAr: 'يوم راحة كاملة. كمّل تمرين بكرة.',
+        splitType: 'REST', periodizationPhase: 'deload', estimatedCalories: 0,
+        reason: 'Low readiness score — rest prevents overtraining.',
+        reasonAr: 'نسبة جاهزية منخفضة — الراحة بتمنع الإرهاق.',
+        readinessScore: readiness.score, readinessColor: readiness.color,
+        readinessMessage: readiness.message, readinessMessageAr: readiness.messageAr,
+      };
+    }
+
+    // Backward-compat rest check
     const restCheck = this.checkIfShouldRest(profile, session);
     if (restCheck) return restCheck;
 
     // ──────────────────────────────────────────────
-    // STEP 1: Duration configuration
+    // STEP 1: Calculate effective experience level
+    // ──────────────────────────────────────────────
+    const effectiveLevel = this.calculateEffectiveLevel(profile);
+
+    // ──────────────────────────────────────────────
+    // STEP 2: Duration configuration
     // ──────────────────────────────────────────────
     const dur = DURATION_CONFIG[session.availableMinutes] || DURATION_CONFIG[30];
 
     // ──────────────────────────────────────────────
-    // STEP 2: Apply all modifiers
+    // STEP 3: 6-Layer Modifier Stack
     // ──────────────────────────────────────────────
+    // Layer 1: Body type
     const bodyTypeAdj = BODY_TYPE_ADJUSTMENTS[profile.bodyType || 'MESOMORPH'] || BODY_TYPE_ADJUSTMENTS.MESOMORPH;
-    const energyAdj = ENERGY_ADJUSTMENTS[session.energyLevel];
+    // Layer 2: Readiness (already calculated)
+    // Layer 3: Supplements
+    const suppMods = this.getSupplementModifiers(profile.supplements, profile.healthConditions);
+    // Layer 4: Ramadan
     const isRamadan = profile.ramadanMode || false;
 
-    // Calculate effective RPE cap from health conditions
+    // Layer 5: Health condition caps
     let maxRPE = 10;
     let avoidValsalva = false;
     const avoidCategories: ExerciseCategory[] = [];
@@ -603,15 +1044,29 @@ export class WorkoutGeneratorService {
         avoidCategories.push(...restriction.avoidCategories);
       }
     }
+    // Layer 6: Injury restrictions
+    const injuryRestrictions = this.getInjuryRestrictions(profile.injuryData);
+
+    // Composite energy adjustment
+    const energyAdj = ENERGY_ADJUSTMENTS[session.energyLevel];
 
     // ──────────────────────────────────────────────
-    // STEP 3: Determine split & target muscles
+    // STEP 4: Determine split & target muscles
     // ──────────────────────────────────────────────
-    const splitType = this.determineSplit(profile, session);
-    const targetMuscles = this.selectTargetMuscles(splitType, session, profile);
+    const profileForSplit = { ...profile, experienceLevel: effectiveLevel };
+    const splitType = this.determineSplit(profileForSplit, session);
+    let targetMuscles = this.selectTargetMuscles(splitType, session, profileForSplit);
+
+    // Filter out SEVERE injury muscles
+    if (injuryRestrictions.avoidMuscles.length > 0) {
+      targetMuscles = targetMuscles.filter(m => !injuryRestrictions.avoidMuscles.includes(m));
+      if (targetMuscles.length === 0) {
+        targetMuscles = this.pickNeglectedMuscles(session.recentMusclesWorked, injuryRestrictions.avoidMuscles, 3);
+      }
+    }
 
     // ──────────────────────────────────────────────
-    // STEP 4: Equipment pool for this location
+    // STEP 5: Equipment pool
     // ──────────────────────────────────────────────
     const baseEquipment = EQUIPMENT_BY_LOCATION[session.location] || EQUIPMENT_BY_LOCATION.gym;
     const userEquipment = profile.availableEquipment.length > 0
@@ -619,40 +1074,51 @@ export class WorkoutGeneratorService {
       : baseEquipment;
 
     // ──────────────────────────────────────────────
-    // STEP 5: Fetch exercises from DB
+    // STEP 6: Fetch exercises from DB
     // ──────────────────────────────────────────────
     const exercisesFromDB = await this.fetchExercises(
       targetMuscles,
       userEquipment as EquipmentType[],
-      profile,
+      { ...profile, experienceLevel: effectiveLevel },
       [...new Set(avoidCategories)] as ExerciseCategory[],
     );
 
+    // Filter out exercises in user's avoidMovements list
+    const safeExercises = injuryRestrictions.avoidExerciseNames.length > 0
+      ? exercisesFromDB.filter(ex => {
+          const name = (ex.nameEn || '').toLowerCase();
+          return !injuryRestrictions.avoidExerciseNames.some(avoid => name.includes(avoid));
+        })
+      : exercisesFromDB;
+
     // ──────────────────────────────────────────────
-    // STEP 6: Build exercise blocks with proper sets/reps/rest
+    // STEP 7: Build exercise blocks
     // ──────────────────────────────────────────────
     const goalConfig = REP_RANGES_BY_GOAL[profile.fitnessGoal];
     const restConfig = REST_BY_GOAL[profile.fitnessGoal];
-    const setsConfig = SETS_BY_EXPERIENCE[profile.experienceLevel];
+    const setsConfig = SETS_BY_EXPERIENCE[effectiveLevel];
 
-    // Calculate max exercises considering all modifiers
+    // Max exercises with ALL modifiers
     let maxExercises = session.maxExercises
-      ? session.maxExercises // Chat flow override
+      ? session.maxExercises
       : Math.round(dur.maxExercises * energyAdj.maxExerciseModifier);
     if (isRamadan) maxExercises = Math.max(2, maxExercises - 2);
+    if (readiness.color === 'orange') maxExercises = Math.max(2, Math.round(maxExercises * 0.7));
     maxExercises = Math.max(1, maxExercises);
 
-    // Select and order exercises
     const selectedExercises = this.selectAndOrderExercises(
-      exercisesFromDB,
+      safeExercises,
       targetMuscles,
       maxExercises,
       session.availableMinutes,
       profile.fitnessGoal,
     );
 
-    // Build exercise blocks with proper parameters
-    const format = this.determineFormat(dur, profile, session);
+    const format = this.determineFormat(dur, { ...profile, experienceLevel: effectiveLevel }, session);
+
+    // Apply readiness + supplement RPE modifiers
+    const adjustedMaxRPE = Math.max(5, Math.min(maxRPE, maxRPE + readiness.rpeModifier + suppMods.intensityModifier));
+
     const workingSets = this.buildExerciseBlocks(
       selectedExercises,
       {
@@ -661,7 +1127,7 @@ export class WorkoutGeneratorService {
         setsConfig,
         bodyTypeAdj,
         energyAdj,
-        maxRPE,
+        maxRPE: adjustedMaxRPE,
         avoidValsalva,
         isRamadan,
         format,
@@ -669,20 +1135,33 @@ export class WorkoutGeneratorService {
       },
     );
 
+    // Apply injury modification notes to exercise blocks
+    for (const block of workingSets) {
+      const note = injuryRestrictions.modificationNotes.get(block.muscleGroup);
+      if (note) {
+        block.modificationNote = note;
+        block.modificationNoteAr = note;
+      }
+      if (injuryRestrictions.reduceMuscles.includes(block.muscleGroup)) {
+        block.sets = Math.max(2, block.sets - 1);
+      }
+    }
+
     // ──────────────────────────────────────────────
-    // STEP 7: Warmup & Cooldown
+    // STEP 8: Warmup, Cooldown, Rehab
     // ──────────────────────────────────────────────
     const warmup = generateWarmup(dur.warmupMinutes, targetMuscles, session.location);
     const cooldown = generateCooldown(dur.cooldownMinutes, targetMuscles);
+    const rehabBlock = this.buildRehabBlock(profile.injuryData);
 
     // ──────────────────────────────────────────────
-    // STEP 8: Periodization phase
+    // STEP 9: Periodization
     // ──────────────────────────────────────────────
     const weekNum = session.weekNumber || 1;
-    const periodPhase = this.getPeriodizationPhase(weekNum, profile.experienceLevel, profile.fitnessGoal);
+    const periodPhase = this.getPeriodizationPhase(weekNum, effectiveLevel, profile.fitnessGoal);
 
     // ──────────────────────────────────────────────
-    // STEP 9: Build final output
+    // STEP 10: Build final output with ALL new fields
     // ──────────────────────────────────────────────
     const muscleNames = targetMuscles.map(m => m.charAt(0) + m.slice(1).toLowerCase().replace('_', ' '));
     const muscleNamesAr = targetMuscles.map(m => MUSCLE_AR[m] || m);
@@ -690,25 +1169,48 @@ export class WorkoutGeneratorService {
     const title = this.generateTitle(session.availableMinutes, targetMuscles, format, profile.fitnessGoal);
     const titleAr = this.generateTitleAr(session.availableMinutes, targetMuscles, format, profile.fitnessGoal);
 
+    // Effective duration: cap for Ramadan
+    const effectiveDuration = isRamadan
+      ? Math.min(session.availableMinutes, RAMADAN_ADJUSTMENTS.maxDuration as DurationType)
+      : session.availableMinutes;
+
     return {
-      type: session.availableMinutes < 20 ? 'quick_workout' : 'full_workout',
+      type: effectiveDuration < 20 ? 'quick_workout' : 'full_workout',
       title,
       titleAr,
-      description: this.generateDescription(session, profile, muscleNames, format, periodPhase),
-      descriptionAr: this.generateDescriptionAr(session, profile, muscleNamesAr, format, periodPhase),
-      durationMinutes: session.availableMinutes,
+      description: this.generateDescription(session, { ...profile, experienceLevel: effectiveLevel }, muscleNames, format, periodPhase),
+      descriptionAr: this.generateDescriptionAr(session, { ...profile, experienceLevel: effectiveLevel }, muscleNamesAr, format, periodPhase),
+      durationMinutes: effectiveDuration,
       format,
       targetMuscles,
       warmup,
       workingSets,
       cooldown,
-      progressionNotes: this.getProgressionNotes(profile.experienceLevel, profile.fitnessGoal, weekNum),
-      progressionNotesAr: this.getProgressionNotesAr(profile.experienceLevel, profile.fitnessGoal, weekNum),
+      rehabBlock,
+      progressionNotes: this.getProgressionNotes(effectiveLevel, profile.fitnessGoal, weekNum),
+      progressionNotesAr: this.getProgressionNotesAr(effectiveLevel, profile.fitnessGoal, weekNum),
       splitType,
       periodizationPhase: periodPhase,
-      estimatedCalories: estimateCalories(session.availableMinutes, profile.weightKg, session.energyLevel),
+      estimatedCalories: estimateCalories(effectiveDuration, profile.weightKg, session.energyLevel),
       reason: this.generateReason(targetMuscles, session, profile),
       reasonAr: this.generateReasonAr(targetMuscles, session, profile),
+      // Readiness
+      readinessScore: readiness.score,
+      readinessColor: readiness.color,
+      readinessMessage: readiness.message,
+      readinessMessageAr: readiness.messageAr,
+      // Supplement notes
+      supplementNotes: suppMods.notes || undefined,
+      supplementNotesAr: suppMods.notes || undefined,
+      // Active modifiers summary
+      modifiers: {
+        bodyType: profile.bodyType || undefined,
+        readiness: `${readiness.score}/100 (${readiness.color})`,
+        supplements: suppMods.notes || undefined,
+        ramadan: isRamadan || undefined,
+        injuries: injuryRestrictions.avoidMuscles.length > 0 ? injuryRestrictions.avoidMuscles : undefined,
+        effectiveLevel,
+      },
     };
   }
 
@@ -716,14 +1218,19 @@ export class WorkoutGeneratorService {
    * Load full user profile from DB tables
    */
   async loadUserProfile(userId: string): Promise<UserProfile> {
-    const [user, prefs, bodyComp, training, goals, health, exerciseCap] = await Promise.all([
+    const [user, prefs, bodyComp, training, goals, health, exerciseCap, nutritionProfile, lifestyle, fastingProfile, logCount, lastLog] = await Promise.all([
       this.prisma.user.findUnique({ where: { id: userId } }),
       this.prisma.userAIPreference.findUnique({ where: { userId } }),
       this.prisma.userBodyComposition.findUnique({ where: { userId } }).catch(() => null),
       this.prisma.userTrainingHistory.findUnique({ where: { userId } }).catch(() => null),
       this.prisma.userGoalsProfile.findUnique({ where: { userId } }).catch(() => null),
-      this.prisma.userHealthProfile.findUnique({ where: { userId } }).catch(() => null),
+      this.prisma.userHealthProfile.findUnique({ where: { userId }, include: { injuries: { where: { isCurrentlyActive: true } } } }).catch(() => null),
       this.prisma.userExerciseCapability.findUnique({ where: { userId } }).catch(() => null),
+      this.prisma.userNutritionProfile.findUnique({ where: { userId } }).catch(() => null),
+      this.prisma.userLifestyleProfile.findUnique({ where: { userId } }).catch(() => null),
+      this.prisma.userFastingProfile.findUnique({ where: { userId } }).catch(() => null),
+      this.prisma.workoutLog.count({ where: { userId, status: 'COMPLETED' } }).catch(() => 0),
+      this.prisma.workoutLog.findFirst({ where: { userId, status: 'COMPLETED' }, orderBy: { completedAt: 'desc' }, select: { completedAt: true } }).catch(() => null),
     ]);
 
     if (!user) throw new Error('User not found');
@@ -810,8 +1317,39 @@ export class WorkoutGeneratorService {
       prBenchKg: training?.prBenchPressKg || undefined,
       prSquatKg: training?.prSquatKg || undefined,
       prDeadliftKg: training?.prDeadliftKg || undefined,
-      ramadanMode: prefs?.ramadanModeEnabled || false,
-      ramadanWorkoutTiming: prefs?.ramadanWorkoutTiming || 'after_iftar',
+      ramadanMode: fastingProfile?.ramadanActive || prefs?.ramadanModeEnabled || false,
+      ramadanWorkoutTiming: fastingProfile?.ramadanWorkoutTiming || prefs?.ramadanWorkoutTiming || 'after_iftar',
+      // Structured injury data from health profile
+      injuryData: ((health as any)?.injuries || []).map((inj: any) => ({
+        bodyPart: inj.bodyPart,
+        side: inj.side || undefined,
+        injuryType: inj.injuryType || 'OTHER',
+        severity: inj.severity || 'MILD',
+        painLevel: inj.painLevel || 0,
+        painTriggers: inj.painTriggers || [],
+        avoidMovements: inj.avoidMovements || [],
+        isCurrentlyActive: inj.isCurrentlyActive ?? true,
+      })),
+      // Supplement stack
+      supplements: {
+        takesCreatine: nutritionProfile?.takesCreatine || false,
+        takesPreWorkout: nutritionProfile?.takesPreWorkout || false,
+        takesProteinPowder: nutritionProfile?.takesProteinPowder || false,
+        takesBetaAlanine: (nutritionProfile as any)?.takesBetaAlanine || false,
+        takesOmega3: (nutritionProfile as any)?.takesOmega3 || false,
+        takesMultivitamin: (nutritionProfile as any)?.takeMultivitamin || false,
+      },
+      // Lifestyle
+      sleepHours: lifestyle?.averageSleepHours || undefined,
+      sleepQuality: lifestyle?.sleepQuality || undefined,
+      stressLevel: lifestyle?.currentStressLevel || undefined,
+      // Workout history
+      workoutLogCount: logCount || 0,
+      daysSinceLastWorkout: lastLog?.completedAt
+        ? Math.floor((Date.now() - new Date(lastLog.completedAt).getTime()) / (1000 * 60 * 60 * 24))
+        : 999,
+      // Pull-up max
+      pullUpMax: exerciseCap?.pullUpMaxReps || undefined,
     };
   }
 

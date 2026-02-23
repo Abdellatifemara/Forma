@@ -15,7 +15,6 @@ import {
   Zap,
   Target,
   Flame,
-  Mic,
   Filter,
   X,
 } from 'lucide-react';
@@ -32,8 +31,6 @@ const FitnessTests = dynamic(
   () => import('@/components/workouts/fitness-tests').then(mod => ({ default: mod.FitnessTests })),
   { ssr: false }
 );
-import { WorkoutWithVoiceCoach, VoiceCoachToggle, useVoiceCoach } from '@/components/workouts/voice-coach';
-
 const getQuickActions = (isAr: boolean) => [
   {
     icon: Sparkles,
@@ -48,13 +45,6 @@ const getQuickActions = (isAr: boolean) => [
     description: isAr ? 'اعرف مستواك' : 'Know your fitness level',
     href: '?formcheck=true',
     gradient: 'from-blue-500 to-blue-500',
-  },
-  {
-    icon: Mic,
-    title: isAr ? 'مدرب صوتي' : 'Voice Coach',
-    description: isAr ? 'تمرن من غير ما تمسك الموبايل' : 'Hands-free guidance',
-    href: '?voicecoach=true',
-    gradient: 'from-orange-500 to-red-500',
   },
 ];
 
@@ -82,7 +72,6 @@ function WorkoutsContent() {
   // Quick Action states from URL params
   const showWhatNow = searchParams.get('whatnow') === 'true';
   const showFormCheck = searchParams.get('formcheck') === 'true';
-  const showVoiceCoach = searchParams.get('voicecoach') === 'true';
   const closeQuickAction = () => {
     router.push('/workouts');
   };
@@ -276,21 +265,72 @@ function WorkoutsContent() {
             ))
           )}
 
-          {/* Create Custom Plan Card */}
-          <Card className="border-dashed border-2 bg-transparent hover:border-forma-orange/50 hover:bg-forma-orange/5 transition-all duration-300">
-            <CardContent className="flex flex-col items-center justify-center p-8 text-center">
-              <div className="h-14 w-14 rounded-2xl bg-muted flex items-center justify-center mb-4">
-                <Plus className="h-7 w-7 text-muted-foreground" />
+          {/* Create Specific Plan */}
+          <Card className="border-dashed border-2 bg-transparent hover:border-primary/50 hover:bg-primary/5 transition-all duration-300">
+            <CardContent className="flex flex-col items-center justify-center p-6 text-center">
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-3">
+                <Target className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg mb-1">{isAr ? 'اعمل خطة مخصصة' : 'Create Custom Plan'}</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                {isAr ? 'ابني برنامج تمارينك من الصفر' : 'Build your own workout program from scratch'}
+              <h3 className="font-semibold mb-1">{isAr ? 'خطة مستهدفة' : 'Specific Plan'}</h3>
+              <p className="text-xs text-muted-foreground mb-3">
+                {isAr ? 'اختار هدفك وعضلاتك والخطة جاهزة' : 'Pick your goal & muscles — plan ready'}
               </p>
-              <Button variant="outline" className="rounded-xl" asChild>
-                <Link href="/workouts/create">{isAr ? 'اعمل خطة' : 'Create Plan'}</Link>
+              <Button variant="outline" size="sm" className="rounded-xl" asChild>
+                <Link href="/workouts?whatnow=true">{isAr ? 'ابدأ' : 'Start'}</Link>
               </Button>
             </CardContent>
           </Card>
+
+          {/* Custom Plan */}
+          <Card className="border-dashed border-2 bg-transparent hover:border-forma-orange/50 hover:bg-forma-orange/5 transition-all duration-300">
+            <CardContent className="flex flex-col items-center justify-center p-6 text-center">
+              <div className="h-12 w-12 rounded-2xl bg-forma-orange/10 flex items-center justify-center mb-3">
+                <Plus className="h-6 w-6 text-forma-orange" />
+              </div>
+              <h3 className="font-semibold mb-1">{isAr ? 'خطة مخصصة' : 'Custom Plan'}</h3>
+              <p className="text-xs text-muted-foreground mb-3">
+                {isAr ? 'ابني كل تفصيلة بنفسك من الصفر' : 'Build every detail yourself from scratch'}
+              </p>
+              <Button variant="outline" size="sm" className="rounded-xl" asChild>
+                <Link href="/workouts/create">{isAr ? 'اعمل خطة' : 'Create'}</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Hardcore Mode */}
+          <Card className="border-dashed border-2 bg-transparent hover:border-red-500/50 hover:bg-red-500/5 transition-all duration-300">
+            <CardContent className="flex flex-col items-center justify-center p-6 text-center">
+              <div className="h-12 w-12 rounded-2xl bg-red-500/10 flex items-center justify-center mb-3">
+                <Flame className="h-6 w-6 text-red-500" />
+              </div>
+              <h3 className="font-semibold mb-1">{isAr ? 'وضع الهاردكور' : 'Hardcore Mode'}</h3>
+              <p className="text-xs text-muted-foreground mb-3">
+                {isAr ? 'أقصى شدة. مش لأصحاب القلوب الضعيفة' : 'Max intensity. Not for the faint-hearted'}
+              </p>
+              <Button variant="outline" size="sm" className="rounded-xl border-red-500/30 text-red-500 hover:bg-red-500/10" asChild>
+                <Link href="/workouts?whatnow=true">{isAr ? 'يلا' : 'Let\'s Go'}</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          {/* Trainer CTA */}
+          <Link
+            href="/trainers"
+            className="block rounded-2xl border border-forma-orange/30 bg-gradient-to-r from-forma-orange/5 to-orange-500/5 p-4 transition-all hover:border-forma-orange/50 hover:shadow-md"
+          >
+            <div className="flex items-center gap-4">
+              <div className="h-12 w-12 rounded-2xl bg-forma-orange/10 flex items-center justify-center shrink-0">
+                <span className="text-2xl">🏋️</span>
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-semibold text-sm">{isAr ? 'مدرب شخصي؟' : 'Need a Personal Trainer?'}</h3>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  {isAr ? 'مدربين محترفين يعملولك برنامج مخصص' : 'Pro trainers build you a custom program'}
+                </p>
+              </div>
+              <ChevronRight className="h-5 w-5 text-forma-orange shrink-0" />
+            </div>
+          </Link>
         </TabsContent>
 
         {/* History Tab */}
@@ -409,31 +449,6 @@ function WorkoutsContent() {
         </div>
       )}
 
-      {/* Quick Action: Voice Coach */}
-      {showVoiceCoach && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="w-full max-w-lg animate-scale-in">
-            <div className="flex justify-end mb-2">
-              <button
-                onClick={closeQuickAction}
-                className="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
-              >
-                <X className="w-5 h-5 text-white" />
-              </button>
-            </div>
-            <WorkoutWithVoiceCoach
-              language={isAr ? 'ar' : 'en'}
-              exercises={[
-                { name: isAr ? 'سكوات' : 'Squat', sets: 4, reps: 10 },
-                { name: isAr ? 'بنش بريس' : 'Bench Press', sets: 3, reps: 12 },
-                { name: isAr ? 'ديدليفت' : 'Deadlift', sets: 4, reps: 8 },
-                { name: isAr ? 'شولدر بريس' : 'Shoulder Press', sets: 3, reps: 10 },
-                { name: isAr ? 'بنت أوفر رو' : 'Bent Over Row', sets: 3, reps: 12 },
-              ]}
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 }

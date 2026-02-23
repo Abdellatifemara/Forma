@@ -299,6 +299,11 @@ export const usersApi = {
     api.get<MarketplaceAccess>('/users/me/marketplace-access'),
 
   getMyTrainers: () => api.get<MyTrainer[]>('/users/me/trainers'),
+
+  getAssessment: () => api.get<AssessmentData>('/users/me/assessment'),
+
+  saveAssessment: (data: Partial<AssessmentData>) =>
+    api.put<{ success: boolean; saved: Record<string, boolean> }>('/users/me/assessment', data),
 };
 
 // Workouts API
@@ -355,8 +360,15 @@ export const exercisesApi = {
 
 // Nutrition API
 export const nutritionApi = {
-  searchFoods: (query: string) =>
-    api.get<{ foods: Food[]; total: number }>('/nutrition/foods', { query }),
+  searchFoods: (query: string, category?: string) =>
+    api.get<{ foods: Food[]; total: number }>('/nutrition/foods', {
+      ...(query ? { query } : {}),
+      ...(category ? { category } : {}),
+      pageSize: '50',
+    }),
+
+  getCategories: () =>
+    api.get<{ category: string; count: number }[]>('/nutrition/foods/categories'),
 
   logMeal: (data: MealLogData) => api.post<MealLog>('/nutrition/meals', data),
 
@@ -1598,6 +1610,84 @@ interface MyTrainer {
   startDate: string;
 }
 
+interface AssessmentData {
+  trainingHistory: {
+    totalYearsTraining?: number;
+    currentLevel?: string;
+    preferredTrainingStyle?: string;
+    preferredSplitType?: string;
+    preferredRepRange?: string;
+    sportsBackground?: string[];
+  } | null;
+  fitnessTests: {
+    pushUpMaxReps?: number;
+    plankHoldSeconds?: number;
+    pullUpMaxReps?: number;
+    benchPress1RM?: number;
+    squat1RM?: number;
+    deadlift1RM?: number;
+    bodyweightSquatMaxReps?: number;
+    canTouchToes?: boolean;
+  } | null;
+  healthProfile: {
+    hasHeartCondition?: boolean;
+    hasHighBloodPressure?: boolean;
+    hasDiabetes?: boolean;
+    diabetesType?: number;
+    hasAsthma?: boolean;
+    hasArthritis?: boolean;
+    hasHerniaHistory?: boolean;
+    hadRecentSurgery?: boolean;
+    surgeryDetails?: string;
+    hasDoctorClearance?: boolean;
+  } | null;
+  injuries: {
+    bodyPart?: string;
+    side?: string;
+    injuryType?: string;
+    severity?: string;
+    painLevel?: number;
+    painTriggers?: string[];
+    avoidMovements?: string[];
+    inPhysicalTherapy?: boolean;
+    notes?: string;
+  }[];
+  supplements: {
+    takesProteinPowder?: boolean;
+    proteinPowderType?: string;
+    takesCreatine?: boolean;
+    takesPreWorkout?: boolean;
+    otherSupplements?: string[];
+  } | null;
+  lifestyle: {
+    averageSleepHours?: number;
+    sleepQuality?: string;
+    currentStressLevel?: string;
+    targetWorkoutsPerWeek?: number;
+    maxWorkoutMinutes?: number;
+    preferredWorkoutTime?: string;
+    workType?: string;
+  } | null;
+  fasting: {
+    doesIntermittentFasting?: boolean;
+    ifProtocol?: string;
+    eatingWindowStart?: string;
+    eatingWindowEnd?: string;
+    observesRamadan?: boolean;
+    ramadanActive?: boolean;
+    ramadanWorkoutTiming?: string;
+  } | null;
+  bodyComposition: {
+    currentWeightKg?: number;
+    heightCm?: number;
+    bodyFatPercent?: number;
+    bodyType?: string;
+    waistCm?: number;
+    hipsGlutesCm?: number;
+    chestCm?: number;
+  } | null;
+}
+
 interface WorkoutPlan {
   id: string;
   name: string;
@@ -1724,6 +1814,7 @@ interface ExerciseSearchParams {
   muscleGroups?: string[];
   equipment?: string[];
   difficulty?: string;
+  category?: string;
   page?: number;
   pageSize?: number;
 }
@@ -2379,6 +2470,8 @@ interface ExerciseBlock {
   supersetWith?: string;
   muscleGroup: string;
   equipment: string[];
+  modificationNote?: string;
+  modificationNoteAr?: string;
 }
 
 interface WhatNowRecommendation {
@@ -2400,6 +2493,25 @@ interface WhatNowRecommendation {
   estimatedCalories: number;
   reason: string;
   reasonAr: string;
+  // NEW: Readiness score
+  readinessScore?: number;
+  readinessColor?: string;
+  readinessMessage?: string;
+  readinessMessageAr?: string;
+  // NEW: Rehab block
+  rehabBlock?: { exercises: { name: string; nameAr: string; sets: number; reps: string; targetArea: string; notes: string; notesAr: string }[] };
+  // NEW: Supplement notes
+  supplementNotes?: string;
+  supplementNotesAr?: string;
+  // NEW: Active modifiers
+  modifiers?: {
+    bodyType?: string;
+    readiness?: string;
+    supplements?: string;
+    ramadan?: boolean;
+    injuries?: string[];
+    effectiveLevel?: string;
+  };
   // Legacy compat: old format had flat exercises array
   exercises?: { id: string; name: string; nameAr?: string; sets: number; reps: string; equipment: string }[];
 }

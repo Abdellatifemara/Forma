@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
   ChevronRight,
+  ClipboardList,
   CreditCard,
   Globe,
   HelpCircle,
@@ -38,6 +39,8 @@ function getMenuItems(isAr: boolean) {
       items: [
         { icon: User, label: isAr ? 'تعديل الملف' : 'Edit Profile', href: '/profile/edit' },
         { icon: CreditCard, label: isAr ? 'الاشتراك' : 'Subscription', href: '/profile/subscription' },
+        { icon: Star, label: isAr ? 'مدربي' : 'My Trainer', href: '/trainers', badge: isAr ? 'جديد' : 'NEW' },
+        { icon: ClipboardList, label: isAr ? 'تقييم اللياقة' : 'Fitness Assessment', href: '/profile/assessment', badge: isAr ? 'جديد' : 'NEW' },
         { icon: Lock, label: isAr ? 'الخصوصية والأمان' : 'Privacy & Security', href: '/profile/security' },
       ],
     },

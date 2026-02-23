@@ -28,6 +28,9 @@ import {
   Play,
   Heart,
   Activity,
+  AlertTriangle,
+  Shield,
+  Pill,
 } from 'lucide-react';
 
 const energyLevels = [
@@ -159,6 +162,12 @@ function ExerciseItem({ exercise, index, isAr }: { exercise: ExerciseBlock; inde
       {exercise.notes && (
         <p className="text-[11px] text-muted-foreground italic">
           {isAr ? (exercise.notesAr || exercise.notes) : exercise.notes}
+        </p>
+      )}
+      {exercise.modificationNote && (
+        <p className="text-[11px] text-amber-400/80 italic flex items-center gap-1">
+          <AlertTriangle className="w-3 h-3 shrink-0" />
+          {isAr ? (exercise.modificationNoteAr || exercise.modificationNote) : exercise.modificationNote}
         </p>
       )}
     </div>
@@ -381,6 +390,70 @@ export function WhatNowButton() {
             </p>
           </div>
 
+          {/* Readiness Bar */}
+          {recommendation.readinessScore !== undefined && (
+            <div className="rounded-xl border border-border/50 p-3 space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-medium flex items-center gap-1.5">
+                  <Activity className="w-3.5 h-3.5" />
+                  {isAr ? 'الجاهزية' : 'Readiness'}
+                </span>
+                <span className={`text-xs font-bold ${
+                  recommendation.readinessColor === 'green' ? 'text-green-500' :
+                  recommendation.readinessColor === 'yellow-green' ? 'text-lime-500' :
+                  recommendation.readinessColor === 'yellow' ? 'text-yellow-500' :
+                  recommendation.readinessColor === 'orange' ? 'text-orange-500' :
+                  'text-red-500'
+                }`}>
+                  {recommendation.readinessScore}/100
+                </span>
+              </div>
+              <div className="w-full h-2 bg-muted rounded-full overflow-hidden">
+                <div
+                  className={`h-full rounded-full transition-all ${
+                    recommendation.readinessColor === 'green' ? 'bg-green-500' :
+                    recommendation.readinessColor === 'yellow-green' ? 'bg-lime-500' :
+                    recommendation.readinessColor === 'yellow' ? 'bg-yellow-500' :
+                    recommendation.readinessColor === 'orange' ? 'bg-orange-500' :
+                    'bg-red-500'
+                  }`}
+                  style={{ width: `${recommendation.readinessScore}%` }}
+                />
+              </div>
+              <p className="text-[10px] text-muted-foreground">
+                {isAr ? recommendation.readinessMessageAr : recommendation.readinessMessage}
+              </p>
+            </div>
+          )}
+
+          {/* Modifier Badges */}
+          {recommendation.modifiers && (
+            <div className="flex flex-wrap gap-1.5">
+              {recommendation.modifiers.ramadan && (
+                <span className="px-2 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full text-[10px] font-medium">
+                  {isAr ? 'وضع رمضان' : 'Ramadan Mode'}
+                </span>
+              )}
+              {recommendation.modifiers.injuries && recommendation.modifiers.injuries.length > 0 && (
+                <span className="px-2 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full text-[10px] font-medium flex items-center gap-1">
+                  <AlertTriangle className="w-3 h-3" />
+                  {isAr ? 'معدّل للإصابات' : 'Injury-adapted'}
+                </span>
+              )}
+              {recommendation.modifiers.supplements && (
+                <span className="px-2 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-full text-[10px] font-medium flex items-center gap-1">
+                  <Pill className="w-3 h-3" />
+                  {isAr ? 'معدّل للمكملات' : 'Supplement-adjusted'}
+                </span>
+              )}
+              {recommendation.modifiers.effectiveLevel && recommendation.modifiers.effectiveLevel !== 'BEGINNER' && (
+                <span className="px-2 py-1 bg-muted text-muted-foreground rounded-full text-[10px]">
+                  {recommendation.modifiers.effectiveLevel.toLowerCase().replace('_', ' ')}
+                </span>
+              )}
+            </div>
+          )}
+
           {/* Target Muscles */}
           {recommendation.targetMuscles?.length > 0 && !isRest && (
             <div className="flex flex-wrap gap-1.5">
@@ -467,6 +540,40 @@ export function WhatNowButton() {
                 <WarmupCooldownItem key={i} exercise={ex} isAr={isAr} />
               ))}
             </CollapsibleSection>
+          )}
+
+          {/* Rehab Block (Recovery Corner) */}
+          {recommendation.rehabBlock?.exercises && recommendation.rehabBlock.exercises.length > 0 && (
+            <CollapsibleSection
+              title="Recovery Corner"
+              titleAr="ركن التعافي"
+              icon={Shield}
+              isAr={isAr}
+              badge={`${recommendation.rehabBlock.exercises.length} ${isAr ? 'تمرين' : 'exercises'}`}
+            >
+              <p className="text-[10px] text-muted-foreground mb-2">
+                {isAr ? 'تمارين تأهيلية لإصاباتك — نفّذهم بعد التمرين' : 'Rehab exercises for your injuries — do these post-workout'}
+              </p>
+              {recommendation.rehabBlock.exercises.map((ex, i) => (
+                <div key={i} className="flex items-center justify-between py-1.5 text-sm border-b border-border/30 last:border-0">
+                  <div>
+                    <span className="text-foreground">{isAr ? ex.nameAr : ex.name}</span>
+                    <p className="text-[10px] text-muted-foreground">{isAr ? ex.notesAr : ex.notes}</p>
+                  </div>
+                  <span className="text-muted-foreground text-xs shrink-0 ms-2">{ex.sets}x{ex.reps}</span>
+                </div>
+              ))}
+            </CollapsibleSection>
+          )}
+
+          {/* Supplement Notes */}
+          {recommendation.supplementNotes && (
+            <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-3 flex items-start gap-2">
+              <Pill className="w-3.5 h-3.5 text-blue-400 mt-0.5 shrink-0" />
+              <p className="text-[11px] text-blue-300/80">
+                {isAr ? recommendation.supplementNotesAr : recommendation.supplementNotes}
+              </p>
+            </div>
           )}
 
           {/* Progression Notes (new format) */}

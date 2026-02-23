@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback, useReducer } from 'react';
-import { Send, Bot, User, Loader2, Sparkles, AlertCircle, Zap, Dumbbell, UtensilsCrossed, BookOpen, MessageSquare, LayoutGrid, MessagesSquare } from 'lucide-react';
+import { Send, Bot, User, Loader2, Sparkles, AlertCircle, Zap, Dumbbell, UtensilsCrossed, BookOpen, MessageSquare, LayoutGrid, MessagesSquare, UserCircle, ChevronRight, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
-import { aiApi } from '@/lib/api';
+import { aiApi, usersApi, type MyTrainer } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
 import Link from 'next/link';
 import GuidedChat from '@/components/chat/guided-chat';
@@ -318,11 +318,15 @@ export default function ChatPage() {
   const [tier, setTier] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [chatMode, setChatMode] = useState<'guided' | 'free'>('guided');
+  const [myTrainer, setMyTrainer] = useState<MyTrainer | null>(null);
 
   useEffect(() => {
     aiApi.getChatUsage()
       .then(stats => { setTier(stats.tier || 'FREE'); setLoading(false); })
       .catch(() => { setTier('FREE'); setLoading(false); });
+    usersApi.getMyTrainers()
+      .then(trainers => { if (trainers.length > 0) setMyTrainer(trainers[0]); })
+      .catch(() => {});
   }, []);
 
   if (loading) {
@@ -384,6 +388,51 @@ export default function ChatPage() {
       <p className="text-[10px] text-muted-foreground/60 mb-2 text-center">
         {isAr ? 'النصائح دي للإرشاد فقط — استشير طبيبك قبل أي تغيير كبير' : 'Tips are for guidance only — consult your doctor before major changes'}
       </p>
+
+      {/* Your Trainer Card */}
+      {myTrainer && (
+        <div className="mb-3 rounded-2xl border border-forma-orange/30 bg-forma-orange/5 p-3">
+          <div className="flex items-center gap-3">
+            <Avatar className="h-11 w-11 border-2 border-forma-orange/40">
+              {myTrainer.avatarUrl ? (
+                <AvatarImage src={myTrainer.avatarUrl} alt={myTrainer.name} />
+              ) : null}
+              <AvatarFallback className="bg-forma-orange/10 text-forma-orange font-bold text-sm">
+                {myTrainer.name?.charAt(0)?.toUpperCase() || 'T'}
+              </AvatarFallback>
+            </Avatar>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2">
+                <h3 className="font-semibold text-sm truncate">{myTrainer.name}</h3>
+                {myTrainer.tier === 'TRUSTED_PARTNER' && (
+                  <Star className="h-3.5 w-3.5 text-forma-orange fill-forma-orange shrink-0" />
+                )}
+              </div>
+              <p className="text-[11px] text-muted-foreground truncate">
+                {myTrainer.currentProgram
+                  ? (isAr ? myTrainer.currentProgram.nameAr || myTrainer.currentProgram.name : myTrainer.currentProgram.name)
+                  : (isAr ? 'المدرب بتاعك' : 'Your Trainer')}
+              </p>
+            </div>
+            <div className="flex items-center gap-2 shrink-0">
+              <Link
+                href={`/trainers/${myTrainer.id}`}
+                className="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-forma-orange/10 hover:bg-forma-orange/20 text-forma-orange text-xs font-medium transition-colors"
+              >
+                <UserCircle className="h-3.5 w-3.5" />
+                {isAr ? 'بروفايل' : 'Profile'}
+              </Link>
+              <Link
+                href={`/trainers/${myTrainer.id}?chat=true`}
+                className="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-forma-orange text-white text-xs font-medium hover:bg-forma-orange/90 transition-colors"
+              >
+                <MessageSquare className="h-3.5 w-3.5" />
+                {isAr ? 'محادثة' : 'Chat'}
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
 
       <ErrorBoundary
         fallback={

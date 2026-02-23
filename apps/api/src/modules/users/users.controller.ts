@@ -3,6 +3,7 @@ import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagg
 import { UsersService } from './users.service';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UpdateOnboardingDto } from './dto/update-onboarding.dto';
+import { UpdateAssessmentDto } from './dto/update-assessment.dto';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
@@ -69,6 +70,23 @@ export class UsersController {
     const updated = await this.usersService.updateOnboarding(user.id, onboardingDto);
     const { passwordHash, ...result } = updated;
     return result;
+  }
+
+  @Put('me/assessment')
+  @ApiOperation({ summary: 'Save assessment data (modular — any section can be sent independently)' })
+  @ApiResponse({ status: 200, description: 'Assessment saved successfully' })
+  async saveAssessment(
+    @CurrentUser() user: User,
+    @Body() dto: UpdateAssessmentDto,
+  ) {
+    return this.usersService.saveAssessment(user.id, dto);
+  }
+
+  @Get('me/assessment')
+  @ApiOperation({ summary: 'Get all assessment data' })
+  @ApiResponse({ status: 200, description: 'Returns assessment data' })
+  async getAssessment(@CurrentUser() user: User) {
+    return this.usersService.getAssessment(user.id);
   }
 
   @Get('me/stats')
