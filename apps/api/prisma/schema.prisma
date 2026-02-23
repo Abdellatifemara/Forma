@@ -67,6 +67,7 @@ model User {
   equipment             UserEquipment[]
   equipmentInventory    UserEquipmentInventory?
   exerciseCapability    UserExerciseCapability?
+  fitnessTestResults    FitnessTestResult[]
   fastingProfile        UserFastingProfile?
   goalsProfile          UserGoalsProfile?
   healthProfile         UserHealthProfile?
@@ -1055,6 +1056,19 @@ model UserExerciseCapability {
   overheadPress1RM       Float?
   updatedAt              DateTime @updatedAt
   user                   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model FitnessTestResult {
+  id        String   @id @default(cuid())
+  userId    String
+  testId    String   // e.g. pushup_60s, plank_hold, wall_sit, sit_and_reach, resting_hr, bmi, waist_hip_ratio
+  value     Float
+  rating    String   // poor, below_average, average, good, excellent
+  testedAt  DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, testId])
+  @@index([userId, testedAt])
 }
 
 model UserMovementScreen {

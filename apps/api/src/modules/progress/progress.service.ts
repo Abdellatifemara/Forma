@@ -253,4 +253,45 @@ export class ProgressService {
     await this.prisma.progressPhoto.delete({ where: { id: photoId } });
     return { success: true };
   }
+
+  // ─── Fitness Tests ──────────────────────────────────────────────
+
+  async saveFitnessTest(userId: string, dto: { testId: string; value: number; rating: string }) {
+    return this.prisma.fitnessTestResult.create({
+      data: {
+        userId,
+        testId: dto.testId,
+        value: dto.value,
+        rating: dto.rating,
+      },
+    });
+  }
+
+  async getFitnessTests(userId: string, testId?: string) {
+    return this.prisma.fitnessTestResult.findMany({
+      where: {
+        userId,
+        ...(testId ? { testId } : {}),
+      },
+      orderBy: { testedAt: 'desc' },
+      take: 50,
+    });
+  }
+
+  async getLatestFitnessTests(userId: string) {
+    // Get the most recent result for each test type
+    const all = await this.prisma.fitnessTestResult.findMany({
+      where: { userId },
+      orderBy: { testedAt: 'desc' },
+    });
+
+    const latestByTest = new Map<string, typeof all[0]>();
+    for (const result of all) {
+      if (!latestByTest.has(result.testId)) {
+        latestByTest.set(result.testId, result);
+      }
+    }
+
+    return Array.from(latestByTest.values());
+  }
 }

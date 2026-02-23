@@ -22,6 +22,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
 import { useLanguage } from '@/lib/i18n';
+import { progressApi } from '@/lib/api';
 
 // ─── RATING NORMS ───────────────────────────────────────────────────────────
 // Based on ACSM, Cooper Institute, and NSCA standards
@@ -458,12 +459,24 @@ interface TestResult {
   date: string;
 }
 
-function saveTestResult(result: TestResult) {
+async function saveTestResult(result: TestResult) {
+  // Save to localStorage always (offline fallback)
   const stored = localStorage.getItem('forma_fitness_tests') || '{}';
   const results = JSON.parse(stored);
   if (!results[result.testId]) results[result.testId] = [];
   results[result.testId].push(result);
   localStorage.setItem('forma_fitness_tests', JSON.stringify(results));
+
+  // Also save to DB
+  try {
+    await progressApi.saveFitnessTest({
+      testId: result.testId,
+      value: result.value,
+      rating: result.rating,
+    });
+  } catch {
+    // Silently fail — localStorage has the data
+  }
 }
 
 function getTestHistory(testId: string): TestResult[] {
@@ -567,12 +580,22 @@ function CountdownTimer({
   onComplete,
 }: {
   duration: number;
-  onComplete: () => void;
+  onComplete: (count: number) => void;
 }) {
   const [timeLeft, setTimeLeft] = useState(duration);
   const [isRunning, setIsRunning] = useState(false);
   const [count, setCount] = useState(0);
+  const countRef = useRef(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Keep ref in sync for the interval callback
+  const updateCount = () => {
+    setCount(c => {
+      const next = c + 1;
+      countRef.current = next;
+      return next;
+    });
+  };
 
   const start = () => {
     setIsRunning(true);
@@ -581,12 +604,19 @@ function CountdownTimer({
         if (t <= 1) {
           clearInterval(intervalRef.current!);
           setIsRunning(false);
-          setTimeout(onComplete, 100);
           return 0;
         }
         return t - 1;
       });
     }, 1000);
+  };
+
+  const reset = () => {
+    setIsRunning(false);
+    setTimeLeft(duration);
+    setCount(0);
+    countRef.current = 0;
+    if (intervalRef.current) clearInterval(intervalRef.current);
   };
 
   useEffect(() => {
@@ -612,8 +642,8 @@ function CountdownTimer({
         <div className="flex flex-col items-center gap-4">
           <div className="text-4xl font-bold">{count}</div>
           <Button
-            onClick={() => setCount(c => c + 1)}
-            className="h-20 w-20 rounded-full bg-primary hover:bg-primary/90 text-white text-2xl font-bold shadow-lg"
+            onClick={updateCount}
+            className="h-20 w-20 rounded-full bg-primary hover:bg-primary/90 text-white text-2xl font-bold shadow-lg active:scale-95 transition-transform"
           >
             +1
           </Button>
@@ -629,9 +659,19 @@ function CountdownTimer({
       )}
 
       {!isRunning && timeLeft === 0 && (
-        <div className="text-center">
-          <p className="text-lg font-semibold mb-2">Time&apos;s up!</p>
+        <div className="flex flex-col items-center gap-4">
+          <p className="text-lg font-semibold">Time&apos;s up!</p>
           <p className="text-3xl font-bold text-primary">{count} reps</p>
+          <div className="flex gap-3">
+            <Button onClick={() => onComplete(count)} className="gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6">
+              <CheckCircle2 className="h-4 w-4" />
+              Save Result
+            </Button>
+            <Button onClick={reset} variant="outline" className="gap-2">
+              <RotateCcw className="h-4 w-4" />
+              Retry
+            </Button>
+          </div>
         </div>
       )}
     </div>
@@ -654,7 +694,6 @@ function TestRunner({
   const [result, setResult] = useState<number | null>(null);
   const [manualValue, setManualValue] = useState('');
   const [calcInputs, setCalcInputs] = useState<Record<string, number>>({});
-  const [countdownCount, setCountdownCount] = useState(0);
   const profile = getUserProfile();
   const ageGroup = getAgeGroup(profile.age);
 
@@ -663,14 +702,14 @@ function TestRunner({
     setPhase('result');
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (result === null) return;
     const norms = test.getNorms(profile.gender, ageGroup);
     const testRating = test.id === 'bmi'
       ? getBMIRating(result)
       : getRating(result, norms, test.higherIsBetter);
 
-    saveTestResult({
+    await saveTestResult({
       testId: test.id,
       value: result,
       rating: testRating,
@@ -731,7 +770,7 @@ function TestRunner({
             {test.type === 'timed_count' && (
               <CountdownTimer
                 duration={test.duration || 60}
-                onComplete={() => setPhase('result')}
+                onComplete={handleComplete}
               />
             )}
 

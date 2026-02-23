@@ -412,6 +412,16 @@ export const progressApi = {
     api.post<any>('/progress/photos', data),
 
   deletePhoto: (id: string) => api.delete<void>(`/progress/photos/${id}`),
+
+  // Fitness Tests
+  saveFitnessTest: (data: { testId: string; value: number; rating: string }) =>
+    api.post<any>('/progress/fitness-tests', data),
+
+  getFitnessTests: (testId?: string) =>
+    api.get<any[]>('/progress/fitness-tests', testId ? { testId } : undefined),
+
+  getLatestFitnessTests: () =>
+    api.get<any[]>('/progress/fitness-tests/latest'),
 };
 
 // Stats API

@@ -87,4 +87,33 @@ export class ProgressController {
   async deletePhoto(@CurrentUser() user: User, @Param('id') photoId: string) {
     return this.progressService.deletePhoto(user.id, photoId);
   }
+
+  // ─── Fitness Tests ──────────────────────────────────────────────
+  @Post('fitness-tests')
+  @ApiOperation({ summary: 'Save a fitness test result' })
+  @ApiResponse({ status: 201, description: 'Test result saved' })
+  async saveFitnessTest(
+    @CurrentUser() user: User,
+    @Body() dto: { testId: string; value: number; rating: string },
+  ) {
+    return this.progressService.saveFitnessTest(user.id, dto);
+  }
+
+  @Get('fitness-tests')
+  @ApiOperation({ summary: 'Get fitness test history' })
+  @ApiQuery({ name: 'testId', required: false, type: String })
+  @ApiResponse({ status: 200, description: 'Returns test results' })
+  async getFitnessTests(
+    @CurrentUser() user: User,
+    @Query('testId') testId?: string,
+  ) {
+    return this.progressService.getFitnessTests(user.id, testId);
+  }
+
+  @Get('fitness-tests/latest')
+  @ApiOperation({ summary: 'Get latest result for each fitness test' })
+  @ApiResponse({ status: 200, description: 'Returns latest result per test' })
+  async getLatestFitnessTests(@CurrentUser() user: User) {
+    return this.progressService.getLatestFitnessTests(user.id);
+  }
 }
