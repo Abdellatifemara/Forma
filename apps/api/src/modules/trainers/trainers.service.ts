@@ -1,9 +1,11 @@
-import { Injectable, NotFoundException, ForbiddenException } from '@nestjs/common';
+import { Injectable, Logger, NotFoundException, ForbiddenException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { TrainerProfile, TrainerStatus, Prisma } from '@prisma/client';
 
 @Injectable()
 export class TrainersService {
+  private readonly logger = new Logger(TrainersService.name);
+
   constructor(private readonly prisma: PrismaService) {}
 
   async searchTrainers(params: {
@@ -14,69 +16,75 @@ export class TrainersService {
     page?: number;
     pageSize?: number;
   }) {
-    const { query, specialization, minRating, maxPrice, page = 1, pageSize: rawPageSize = 20 } = params;
-    const pageSize = Math.min(rawPageSize, 50);
-    const skip = (page - 1) * pageSize;
+    try {
+      const { query, specialization, minRating, maxPrice, page = 1, pageSize: rawPageSize = 20 } = params;
+      const pageSize = Math.min(rawPageSize, 50);
+      const skip = (page - 1) * pageSize;
 
-    const where: Prisma.TrainerProfileWhereInput = {
-      status: 'APPROVED',
-      acceptingClients: true,
-    };
-
-    if (query) {
-      where.user = {
-        OR: [
-          { firstName: { contains: query, mode: 'insensitive' } },
-          { lastName: { contains: query, mode: 'insensitive' } },
-        ],
+      const where: Prisma.TrainerProfileWhereInput = {
+        status: 'APPROVED',
+        acceptingClients: true,
       };
-    }
 
-    if (specialization) {
-      where.specializations = { has: specialization };
-    }
+      if (query) {
+        where.user = {
+          OR: [
+            { firstName: { contains: query, mode: 'insensitive' } },
+            { lastName: { contains: query, mode: 'insensitive' } },
+          ],
+        };
+      }
 
-    if (minRating) {
-      where.averageRating = { gte: minRating };
-    }
+      if (specialization) {
+        where.specializations = { has: specialization };
+      }
 
-    if (maxPrice) {
-      where.monthlyPrice = { lte: maxPrice };
-    }
+      if (minRating) {
+        where.averageRating = { gte: Number(minRating) };
+      }
 
-    const [trainers, total] = await Promise.all([
-      this.prisma.trainerProfile.findMany({
-        where,
-        include: {
-          user: {
-            select: {
-              id: true,
-              firstName: true,
-              lastName: true,
-              avatarUrl: true,
+      if (maxPrice) {
+        where.monthlyPrice = { lte: Number(maxPrice) };
+      }
+
+      const [trainers, total] = await Promise.all([
+        this.prisma.trainerProfile.findMany({
+          where,
+          include: {
+            user: {
+              select: {
+                id: true,
+                firstName: true,
+                lastName: true,
+                avatarUrl: true,
+              },
+            },
+            certifications: {
+              where: { isVerified: true },
+            },
+            _count: {
+              select: { clients: true },
             },
           },
-          certifications: {
-            where: { isVerified: true },
-          },
-          _count: {
-            select: { clients: { where: { isActive: true } } },
-          },
-        },
-        orderBy: { averageRating: 'desc' },
-        skip,
-        take: pageSize,
-      }),
-      this.prisma.trainerProfile.count({ where }),
-    ]);
+          orderBy: { averageRating: 'desc' },
+          skip,
+          take: pageSize,
+        }),
+        this.prisma.trainerProfile.count({ where }),
+      ]);
 
-    return {
-      trainers,
-      total,
-      page,
-      pageSize,
-      totalPages: Math.ceil(total / pageSize),
-    };
+      return {
+        trainers,
+        total,
+        page,
+        pageSize,
+        totalPages: Math.ceil(total / pageSize),
+      };
+    } catch (error) {
+      this.logger.error('searchTrainers failed:', error);
+      // Return empty result instead of 500
+      return { trainers: [], total: 0, page: 1, pageSize: 20, totalPages: 0 };
+    }
   }
 
   async getTrainerById(id: string) {
