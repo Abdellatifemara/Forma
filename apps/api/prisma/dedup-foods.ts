@@ -65,17 +65,26 @@ async function main() {
 
     for (const dup of toDelete) {
       // Check if this food is referenced in any food logs
-      const logCount = await prisma.foodLog.count({
+      const logCount = await prisma.mealFood.count({
+        where: { foodId: dup.id },
+      });
+      const plannedCount = await prisma.plannedMealFood.count({
         where: { foodId: dup.id },
       });
 
       if (logCount > 0) {
-        // Don't delete — it's referenced. Update the log to point to the keeper instead.
-        await prisma.foodLog.updateMany({
+        await prisma.mealFood.updateMany({
           where: { foodId: dup.id },
           data: { foodId: keep.id },
         });
-        console.log(`  📎 ${name}: moved ${logCount} logs from ${dup.externalId} → ${keep.externalId}`);
+      }
+      if (plannedCount > 0) {
+        await prisma.plannedMealFood.updateMany({
+          where: { foodId: dup.id },
+          data: { foodId: keep.id },
+        });
+      if (logCount > 0 || plannedCount > 0) {
+        console.log(`  📎 ${name}: moved ${logCount + plannedCount} refs from ${dup.externalId} → ${keep.externalId}`);
       }
 
       await prisma.food.delete({ where: { id: dup.id } });
