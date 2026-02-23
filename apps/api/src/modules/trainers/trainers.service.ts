@@ -25,16 +25,16 @@ export class TrainersService {
       const where: Prisma.TrainerProfileWhereInput = {
         status: 'APPROVED',
         acceptingClients: true,
+        user: {
+          NOT: { email: 'system@forma.fitness' },
+          ...(query ? {
+            OR: [
+              { firstName: { contains: query, mode: 'insensitive' as const } },
+              { lastName: { contains: query, mode: 'insensitive' as const } },
+            ],
+          } : {}),
+        },
       };
-
-      if (query) {
-        where.user = {
-          OR: [
-            { firstName: { contains: query, mode: 'insensitive' } },
-            { lastName: { contains: query, mode: 'insensitive' } },
-          ],
-        };
-      }
 
       if (specialization) {
         where.specializations = { has: specialization };
