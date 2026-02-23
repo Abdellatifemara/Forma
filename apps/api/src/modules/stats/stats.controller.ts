@@ -7,12 +7,20 @@ import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
 
 @ApiTags('stats')
-@ApiBearerAuth()
-@UseGuards(JwtAuthGuard)
 @Controller('stats')
 export class StatsController {
   constructor(private readonly statsService: StatsService) {}
 
+  @Get('public')
+  @ApiOperation({ summary: 'Get public platform stats (no auth)' })
+  @CacheKey('get_public_stats')
+  @CacheTTL(3600)
+  async getPublicStats() {
+    return this.statsService.getPublicStats();
+  }
+
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('weekly')
   @ApiOperation({ summary: 'Get weekly summary stats for dashboard' })
   @ApiResponse({ status: 200, description: 'Returns weekly summary with workouts, nutrition, weight change' })
@@ -22,6 +30,8 @@ export class StatsController {
     return this.statsService.getWeeklySummary(user.id);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('weight-trend')
   @ApiOperation({ summary: 'Get weight trend data for charts' })
   @ApiQuery({ name: 'days', required: false, type: Number, description: 'Number of days (default: 90)' })
@@ -34,6 +44,8 @@ export class StatsController {
     return this.statsService.getWeightTrend(user.id, days || 90);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('volume-trend')
   @ApiOperation({ summary: 'Get volume load trend by muscle group' })
   @ApiQuery({ name: 'weeks', required: false, type: Number, description: 'Number of weeks (default: 8)' })
@@ -46,6 +58,8 @@ export class StatsController {
     return this.statsService.getVolumeLoadTrend(user.id, weeks || 8);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('volume')
   @ApiOperation({ summary: 'Get volume data (alias for volume-trend)' })
   @ApiQuery({ name: 'weeks', required: false, type: Number, description: 'Number of weeks (default: 8)' })
@@ -58,6 +72,8 @@ export class StatsController {
     return this.statsService.getVolumeLoadTrend(user.id, weeks || 8);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('strength')
   @ApiOperation({ summary: 'Get strength trends (estimated 1RM) for major lifts' })
   @CacheKey('get_strength_trends_')
@@ -66,6 +82,8 @@ export class StatsController {
     return this.statsService.getStrengthTrends(user.id);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('muscle-balance')
   @ApiOperation({ summary: 'Get muscle balance radar chart data' })
   @ApiQuery({ name: 'weeks', required: false, type: Number, description: 'Number of weeks (default: 4)' })
@@ -78,6 +96,8 @@ export class StatsController {
     return this.statsService.getMuscleBalance(user.id, weeks || 4);
   }
 
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard)
   @Get('frequency')
   @ApiOperation({ summary: 'Get training frequency heatmap data' })
   @ApiQuery({ name: 'weeks', required: false, type: Number, description: 'Number of weeks (default: 8)' })

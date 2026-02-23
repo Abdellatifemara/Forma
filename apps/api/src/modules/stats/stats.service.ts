@@ -6,6 +6,21 @@ import { MuscleGroup } from '@prisma/client';
 export class StatsService {
   constructor(private readonly prisma: PrismaService) {}
 
+  // Public platform stats (no auth, cached heavily)
+  async getPublicStats() {
+    const [exerciseCount, foodCount, programCount] = await Promise.all([
+      this.prisma.exercise.count(),
+      this.prisma.food.count(),
+      this.prisma.trainerProgram.count({ where: { isTemplate: true, status: 'ACTIVE' } }),
+    ]);
+
+    return {
+      exercises: exerciseCount,
+      foods: foodCount,
+      programs: programCount,
+    };
+  }
+
   // Weekly summary for dashboard
   async getWeeklySummary(userId: string) {
     try {

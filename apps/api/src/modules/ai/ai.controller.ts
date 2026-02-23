@@ -38,6 +38,7 @@ export class AiController {
       userId: user.id,
       message: body.message,
       language: body.language || (user.language === 'ar' ? 'ar' : 'en'),
+      context: body.context,
       conversationHistory: body.conversationHistory,
     });
 

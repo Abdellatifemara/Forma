@@ -10,6 +10,7 @@ export interface ChatRequest {
   userId: string;
   message: string;
   language: 'en' | 'ar';
+  context?: string;
   conversationHistory?: Array<{ role: 'user' | 'assistant'; content: string }>;
 }
 
@@ -762,7 +763,12 @@ export class ChatPipelineService {
     }
 
     // Build rich system prompt with user context
-    const systemPrompt = this.buildSystemPrompt(userCtx, isAr);
+    let systemPrompt = this.buildSystemPrompt(userCtx, isAr);
+
+    // Append frontend gptEnhanced context (output format, specific instructions)
+    if (request.context) {
+      systemPrompt += `\n\n--- Additional Instructions ---\n${request.context}`;
+    }
 
     // Build conversation history for context
     const history = request.conversationHistory || [];

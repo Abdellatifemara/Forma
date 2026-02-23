@@ -40,6 +40,22 @@ const getQuickActions = (isAr: boolean) => [
     gradient: 'from-primary to-orange-600',
   },
   {
+    icon: Calendar,
+    title: isAr ? 'جهّزلي برنامج' : 'Generate Program',
+    description: isAr ? 'برنامج ٤ أسابيع مخصص' : 'Personalized 4-week plan',
+    href: '/workouts/generate',
+    gradient: 'from-emerald-500 to-emerald-600',
+    absolute: true,
+  },
+  {
+    icon: Dumbbell,
+    title: isAr ? 'مكتبة البرامج' : 'Program Library',
+    description: isAr ? 'تصفح ٥٠+ برنامج جاهز' : 'Browse 50+ preset programs',
+    href: '/workouts/programs',
+    gradient: 'from-purple-500 to-purple-600',
+    absolute: true,
+  },
+  {
     icon: Target,
     title: isAr ? 'اختبارات اللياقة' : 'Fitness Tests',
     description: isAr ? 'اعرف مستواك' : 'Know your fitness level',
@@ -146,7 +162,7 @@ function WorkoutsContent() {
         {getQuickActions(isAr).map((action) => (
           <Link
             key={action.title}
-            href={`/workouts${action.href}`}
+            href={(action as any).absolute ? action.href : `/workouts${action.href}`}
             className="group relative overflow-hidden rounded-2xl border bg-card p-4 transition-all duration-300 hover:border-forma-orange/50 hover:shadow-lg hover:-translate-y-1"
           >
             <div className="flex items-center gap-3">

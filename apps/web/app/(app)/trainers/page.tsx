@@ -266,17 +266,43 @@ export default function TrainersMarketplacePage() {
 
       {/* No Trainers Found */}
       {filteredTrainers.length === 0 && (
-        <Card>
-          <CardContent className="py-12 text-center">
-            <Users className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
-            <h3 className="text-lg font-semibold mb-2">{t.trainers.noTrainers}</h3>
-            <p className="text-muted-foreground">
-              {searchQuery || specializationFilter !== 'All'
-                ? (isAr ? 'جرّب تعدّل البحث أو الفلاتر' : 'Try adjusting your search or filters')
-                : (isAr ? 'مفيش مدربين متاحين دلوقتي' : 'No trainers are currently available')}
-            </p>
-          </CardContent>
-        </Card>
+        <div className="space-y-4">
+          {/* Become first trainer CTA */}
+          {!searchQuery && specializationFilter === 'All' && (
+            <Card className="border-2 border-dashed border-forma-orange/30 bg-gradient-to-br from-forma-orange/5 to-orange-500/5">
+              <CardContent className="py-10 text-center">
+                <div className="mx-auto mb-4 h-16 w-16 rounded-2xl bg-forma-orange/10 flex items-center justify-center">
+                  <Award className="h-8 w-8 text-forma-orange" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">
+                  {isAr ? 'كن أول مدرب في فورما!' : "Become Forma's First Trainer!"}
+                </h3>
+                <p className="text-muted-foreground text-sm max-w-sm mx-auto mb-6">
+                  {isAr
+                    ? 'السوق لسه فاضي — سجّل دلوقتي كمدرب معتمد وابدأ استقبل عملاء من أول يوم.'
+                    : 'The marketplace is brand new — register now as a certified trainer and start accepting clients from day one.'}
+                </p>
+                <Button className="bg-forma-orange hover:bg-forma-orange/90 text-white" asChild>
+                  <Link href="/become-trainer">
+                    <Star className="me-2 h-4 w-4" />
+                    {isAr ? 'سجّل كمدرب' : 'Apply as Trainer'}
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          )}
+          {(searchQuery || specializationFilter !== 'All') && (
+            <Card>
+              <CardContent className="py-12 text-center">
+                <Users className="h-12 w-12 mx-auto mb-4 text-muted-foreground/50" />
+                <h3 className="text-lg font-semibold mb-2">{t.trainers.noTrainers}</h3>
+                <p className="text-muted-foreground">
+                  {isAr ? 'جرّب تعدّل البحث أو الفلاتر' : 'Try adjusting your search or filters'}
+                </p>
+              </CardContent>
+            </Card>
+          )}
+        </div>
       )}
 
       {/* Trusted Partners */}

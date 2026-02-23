@@ -423,6 +423,9 @@ export const statsApi = {
 
   getVolumeLoad: (weeks?: number) =>
     api.get<VolumeLoadData>('/stats/volume', weeks ? { weeks: weeks.toString() } : undefined),
+
+  getPublicStats: () =>
+    api.get<{ exercises: number; foods: number; programs: number }>('/stats/public'),
 };
 
 // Trainers API
@@ -1579,6 +1582,7 @@ interface OnboardingData {
   weight?: number;
   height?: number;
   targetWeight?: number;
+  workoutLocation?: string;
 }
 
 interface UpdateProfileData {

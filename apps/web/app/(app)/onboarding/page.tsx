@@ -41,6 +41,7 @@ export default function OnboardingPage() {
     { id: 'body', title: isAr ? 'قياسات الجسم' : 'Body Stats', icon: Scale, description: isAr ? 'عشان نخصصلك البرنامج' : 'Help us personalize' },
     { id: 'activity', title: isAr ? 'مستوى النشاط' : 'Activity Level', icon: Activity, description: isAr ? 'روتينك اليومي' : 'Your daily routine' },
     { id: 'equipment', title: isAr ? 'الأدوات' : 'Equipment', icon: Home, description: isAr ? 'بتتمرن فين؟' : 'Where you train' },
+    { id: 'fitness_test', title: isAr ? 'اختبار سريع' : 'Quick Test', icon: TrendingUp, description: isAr ? 'اختياري — اعرف مستواك' : 'Optional — know your level' },
   ];
 
   const goals = [
@@ -115,6 +116,8 @@ export default function OnboardingPage() {
     activityLevel: '',
     workoutLocation: '',
     equipment: [] as string[],
+    pushups: '',
+    plankSeconds: '',
   });
 
   // Load any stored onboarding data from signup
@@ -171,7 +174,22 @@ export default function OnboardingPage() {
         currentWeightKg: parseFloat(formData.currentWeight),
         targetWeightKg: formData.targetWeight ? parseFloat(formData.targetWeight) : undefined,
         equipment: formData.equipment,
+        workoutLocation: formData.workoutLocation || undefined,
       });
+      // Save fitness test results to localStorage if provided
+      if (formData.pushups || formData.plankSeconds) {
+        const existing = JSON.parse(localStorage.getItem('forma_fitness_tests') || '{}');
+        const now = new Date().toISOString();
+        if (formData.pushups) {
+          if (!existing['pushup_60s']) existing['pushup_60s'] = [];
+          existing['pushup_60s'].push({ testId: 'pushup_60s', value: parseInt(formData.pushups), rating: 'average', date: now });
+        }
+        if (formData.plankSeconds) {
+          if (!existing['plank_hold']) existing['plank_hold'] = [];
+          existing['plank_hold'].push({ testId: 'plank_hold', value: parseInt(formData.plankSeconds), rating: 'average', date: now });
+        }
+        localStorage.setItem('forma_fitness_tests', JSON.stringify(existing));
+      }
       router.push('/dashboard');
     } catch (err) {
       setError(err instanceof Error ? err.message : (isAr ? 'فشل حفظ البيانات' : 'Failed to save profile'));
@@ -191,10 +209,23 @@ export default function OnboardingPage() {
         return !!formData.activityLevel;
       case 4:
         return formData.equipment.length > 0;
+      case 5:
+        return true; // Optional step — always can proceed
       default:
         return false;
     }
   };
+
+  // Calculate estimated daily calories (Mifflin-St Jeor)
+  const estimatedCalories = (() => {
+    const w = parseFloat(formData.currentWeight);
+    const h = parseFloat(formData.height);
+    if (!w || !h) return 0;
+    const age = 25; // Default assumption
+    const bmr = 10 * w + 6.25 * h - 5 * age + 5; // Male default
+    const multiplier = activityLevels.find(l => l.value === formData.activityLevel)?.multiplier || 1.55;
+    return Math.round(bmr * multiplier);
+  })();
 
   return (
     <div className="min-h-screen bg-background">
@@ -251,7 +282,7 @@ export default function OnboardingPage() {
           </div>
 
           {/* Progress Bar */}
-          <div className="mb-8 h-1 bg-muted/30 rounded-full overflow-hidden">
+          <div className="mb-2 h-1 bg-muted/30 rounded-full overflow-hidden">
             <motion.div
               className="h-full bg-primary"
               initial={{ width: 0 }}
@@ -259,6 +290,9 @@ export default function OnboardingPage() {
               transition={{ duration: 0.3 }}
             />
           </div>
+          <p className="text-xs text-muted-foreground text-center mb-6">
+            {isAr ? `الخطوة ${currentStep + 1} من ${steps.length}` : `Step ${currentStep + 1} of ${steps.length}`}
+          </p>
 
           {/* Error Message */}
           {error && (
@@ -546,6 +580,70 @@ export default function OnboardingPage() {
                   </div>
                 </div>
               )}
+              {/* Step 5: Optional Fitness Test */}
+              {currentStep === 5 && (
+                <div className="space-y-6">
+                  <div className="text-center">
+                    <h1 className="text-2xl font-bold mb-2">{isAr ? 'اختبار لياقة سريع' : 'Quick Fitness Test'}</h1>
+                    <p className="text-muted-foreground">{isAr ? 'اختياري — ممكن تعمله بعدين' : 'Optional — you can do this later too'}</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="p-4 rounded-xl border border-border/50 bg-muted/20 space-y-2">
+                      <Label className="text-sm font-medium flex items-center gap-2">
+                        <Dumbbell className="h-4 w-4 text-forma-orange" />
+                        {isAr ? 'كام ضغطة في دقيقة؟' : 'Push-ups in 60 seconds?'}
+                      </Label>
+                      <Input
+                        type="number"
+                        placeholder={isAr ? 'مثال: 20' : 'e.g. 20'}
+                        value={formData.pushups}
+                        onChange={(e) => setFormData({ ...formData, pushups: e.target.value })}
+                        className="bg-background"
+                      />
+                    </div>
+
+                    <div className="p-4 rounded-xl border border-border/50 bg-muted/20 space-y-2">
+                      <Label className="text-sm font-medium flex items-center gap-2">
+                        <Activity className="h-4 w-4 text-blue-500" />
+                        {isAr ? 'بلانك — كام ثانية؟' : 'Plank hold — how many seconds?'}
+                      </Label>
+                      <Input
+                        type="number"
+                        placeholder={isAr ? 'مثال: 45' : 'e.g. 45'}
+                        value={formData.plankSeconds}
+                        onChange={(e) => setFormData({ ...formData, plankSeconds: e.target.value })}
+                        className="bg-background"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Daily Calorie Estimate */}
+                  {estimatedCalories > 0 && (
+                    <div className="p-4 rounded-xl bg-gradient-to-r from-forma-orange/10 to-orange-500/10 border border-forma-orange/20">
+                      <div className="flex items-center gap-3">
+                        <div className="h-10 w-10 rounded-xl bg-forma-orange/20 flex items-center justify-center">
+                          <Flame className="h-5 w-5 text-forma-orange" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-semibold">
+                            {isAr ? 'السعرات اليومية المقدرة' : 'Estimated Daily Calories'}
+                          </p>
+                          <p className="text-2xl font-bold text-forma-orange">{estimatedCalories} kcal</p>
+                          <p className="text-[10px] text-muted-foreground">
+                            {isAr ? 'تقدير مبدئي — هيتحدث بعد كده' : 'Initial estimate — will be refined over time'}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  <p className="text-xs text-center text-muted-foreground">
+                    {isAr ? 'ممكن تسيب الخانات فاضية وتعمل الاختبار بعدين من صفحة التمارين' : 'You can leave these blank and take the tests later from the Workouts page'}
+                  </p>
+                </div>
+              )}
+
             </motion.div>
           </AnimatePresence>
 

@@ -1,13 +1,27 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Dumbbell, Apple, TrendingUp, Users, Camera, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { statsApi } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 
+function formatStat(n: number): string {
+  if (n >= 1000) return `${Math.floor(n / 100) * 100}+`.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  return `${n}+`;
+}
+
 export function Features() {
   const { t, isRTL } = useLanguage();
+  const [liveStats, setLiveStats] = useState<{ exercises: number; foods: number; programs: number } | null>(null);
+
+  useEffect(() => {
+    statsApi.getPublicStats()
+      .then(data => setLiveStats(data))
+      .catch(() => {}); // fallback to hardcoded
+  }, []);
 
   const features = [
     {
@@ -49,8 +63,11 @@ export function Features() {
   ];
 
   const stats = [
-    { value: '3,400+', label: t.features.stats.exercises },
-    { value: '2,100+', label: t.features.stats.foods },
+    { value: liveStats ? formatStat(liveStats.exercises) : '3,400+', label: t.features.stats.exercises },
+    { value: liveStats ? formatStat(liveStats.foods) : '2,100+', label: t.features.stats.foods },
+    ...(liveStats && liveStats.programs > 0
+      ? [{ value: formatStat(liveStats.programs), label: isRTL ? 'برنامج تدريبي' : 'Workout Programs' }]
+      : []),
   ];
 
   return (
@@ -94,7 +111,7 @@ export function Features() {
         </div>
 
         {/* Stats Strip */}
-        <div className={cn('mt-20 grid grid-cols-2 gap-8 max-w-md mx-auto', isRTL && 'font-cairo')}>
+        <div className={cn(`mt-20 grid gap-8 max-w-lg mx-auto`, stats.length === 3 ? 'grid-cols-3' : 'grid-cols-2', isRTL && 'font-cairo')}>
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl font-bold text-orange-500 sm:text-4xl">{stat.value}</div>
