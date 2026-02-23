@@ -2,6 +2,7 @@ import { Controller, Get, Post, Put, Param, Body, Query, UseGuards } from '@nest
 import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { WorkoutsService } from './workouts.service';
+import { WorkoutGeneratorService, DurationType, EnergyLevel, LocationType } from './workout-generator.service';
 import { AchievementsService } from '../achievements/achievements.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
@@ -16,6 +17,7 @@ import { LogWorkoutDto } from './dto/log-workout.dto';
 export class WorkoutsController {
   constructor(
     private readonly workoutsService: WorkoutsService,
+    private readonly workoutGenerator: WorkoutGeneratorService,
     private readonly achievementsService: AchievementsService,
   ) {}
 
@@ -73,17 +75,65 @@ export class WorkoutsController {
   }
 
   @Post('what-now')
-  @ApiOperation({ summary: 'Get smart workout recommendation based on user state and history' })
-  @ApiResponse({ status: 200, description: 'Returns personalized workout recommendation' })
+  @ApiOperation({ summary: 'Get smart workout recommendation based on user state and history (V2 — research-based engine)' })
+  @ApiResponse({ status: 200, description: 'Returns personalized workout recommendation with full structure' })
   async getWhatNow(
     @CurrentUser() user: User,
     @Body() input: {
       availableMinutes?: number;
       energyLevel?: 'low' | 'medium' | 'high';
-      location?: 'gym' | 'home' | 'outdoor';
+      location?: 'gym' | 'home' | 'home_gym' | 'outdoor' | 'hotel';
     },
   ) {
-    return this.workoutsService.getWhatNow(user.id, input);
+    try {
+      const profile = await this.workoutGenerator.loadUserProfile(user.id);
+      const recentMuscles = await this.workoutGenerator.getRecentMusclesWorked(user.id);
+      const now = new Date();
+
+      const generated = await this.workoutGenerator.generateWorkout(profile, {
+        location: (input.location || 'gym') as LocationType,
+        availableMinutes: (input.availableMinutes || 30) as DurationType,
+        energyLevel: (input.energyLevel || 'medium') as EnergyLevel,
+        dayOfWeek: now.getDay() || 7,
+        recentMusclesWorked: recentMuscles,
+        weekNumber: Math.ceil((now.getDate()) / 7),
+      });
+
+      return generated;
+    } catch (err) {
+      // Fallback to legacy engine if new one fails
+      return this.workoutsService.getWhatNow(user.id, {
+        availableMinutes: input.availableMinutes,
+        energyLevel: input.energyLevel as any,
+        location: input.location as any,
+      });
+    }
+  }
+
+  @Post('generate')
+  @ApiOperation({ summary: 'Generate a complete workout plan using the research-based engine' })
+  @ApiResponse({ status: 201, description: 'Returns a fully structured workout with warmup, exercises, cooldown, and progression' })
+  async generateWorkout(
+    @CurrentUser() user: User,
+    @Body() input: {
+      availableMinutes: number;
+      energyLevel: 'low' | 'medium' | 'high';
+      location: 'gym' | 'home' | 'home_gym' | 'outdoor' | 'hotel';
+      weekNumber?: number;
+    },
+  ) {
+    const profile = await this.workoutGenerator.loadUserProfile(user.id);
+    const recentMuscles = await this.workoutGenerator.getRecentMusclesWorked(user.id);
+    const now = new Date();
+
+    return this.workoutGenerator.generateWorkout(profile, {
+      location: (input.location || 'gym') as LocationType,
+      availableMinutes: (input.availableMinutes || 45) as DurationType,
+      energyLevel: (input.energyLevel || 'medium') as EnergyLevel,
+      dayOfWeek: now.getDay() || 7,
+      recentMusclesWorked: recentMuscles,
+      weekNumber: input.weekNumber || Math.ceil((now.getDate()) / 7),
+    });
   }
 
   @Post('start/:workoutId')
