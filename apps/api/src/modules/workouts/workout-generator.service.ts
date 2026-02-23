@@ -121,6 +121,14 @@ export interface UserProfile {
   // NEW: Workout history stats
   workoutLogCount: number;
   daysSinceLastWorkout: number;
+  // NEW: Bilateral measurements for imbalance detection (InBody / tape)
+  leftBicepCm?: number;
+  rightBicepCm?: number;
+  leftThighCm?: number;
+  rightThighCm?: number;
+  leftCalfCm?: number;
+  rightCalfCm?: number;
+  leanMassKg?: number;
 }
 
 /** Session-specific inputs from the user */
@@ -173,6 +181,9 @@ export interface GeneratedWorkout {
     ramadan?: boolean;
     injuries?: string[];
     effectiveLevel?: string;
+    ageCategory?: string;
+    bmiCategory?: string;
+    imbalances?: { muscle: string; weakSide: string; diffPercent: number }[];
   };
 }
 
@@ -618,6 +629,31 @@ function getBodyFatCategory(bf: number, gender: string): 'essential' | 'athletic
   }
 }
 
+/** Age-based training adjustments (research: ACSM, NSCA senior guidelines) */
+const AGE_ADJUSTMENTS: Record<string, { volumeModifier: number; maxRPE: number; avoidExplosive: boolean; notes: string; notesAr: string }> = {
+  youth:    { volumeModifier: 0.8,  maxRPE: 7,  avoidExplosive: false, notes: 'Focus on technique and bodyweight mastery', notesAr: 'ركّز على التكنيك والتمارين بوزن الجسم' },
+  adult:    { volumeModifier: 1.0,  maxRPE: 10, avoidExplosive: false, notes: '', notesAr: '' },
+  mature:   { volumeModifier: 0.9,  maxRPE: 9,  avoidExplosive: false, notes: 'Extended warm-up recommended', notesAr: 'إحماء أطول مستحسن' },
+  senior:   { volumeModifier: 0.75, maxRPE: 7,  avoidExplosive: true,  notes: 'No explosive movements, seated alternatives preferred, monitor BP', notesAr: 'بلاش حركات انفجارية، تمارين قاعد أحسن، راقب الضغط' },
+  elderly:  { volumeModifier: 0.6,  maxRPE: 6,  avoidExplosive: true,  notes: 'Chair-based exercises preferred, balance work essential, no heavy loads', notesAr: 'تمارين على كرسي أفضل، تمارين توازن ضرورية، بلاش أوزان تقيلة' },
+};
+
+function getAgeCategory(age: number): keyof typeof AGE_ADJUSTMENTS {
+  if (age < 16) return 'youth';
+  if (age < 50) return 'adult';
+  if (age < 65) return 'mature';
+  if (age < 75) return 'senior';
+  return 'elderly';
+}
+
+/** BMI-based exercise restrictions */
+const BMI_ADJUSTMENTS: Record<string, { avoidHighImpact: boolean; preferSeated: boolean; maxRPE: number; notes: string; notesAr: string }> = {
+  underweight: { avoidHighImpact: false, preferSeated: false, maxRPE: 10, notes: 'Focus on compounds and progressive overload to gain mass', notesAr: 'ركّز على التمارين المركبة وزيادة الأحمال لزيادة الوزن' },
+  normal:      { avoidHighImpact: false, preferSeated: false, maxRPE: 10, notes: '', notesAr: '' },
+  overweight:  { avoidHighImpact: false, preferSeated: false, maxRPE: 9,  notes: 'Combine resistance with metabolic conditioning', notesAr: 'ادمج تمارين المقاومة مع الكارديو' },
+  obese:       { avoidHighImpact: true,  preferSeated: true,  maxRPE: 8,  notes: 'Low-impact exercises, seated alternatives, avoid jumping/running', notesAr: 'تمارين بدون تأثير على المفاصل، كرسي أفضل، بلاش قفز أو جري' },
+};
+
 /** Estimate daily calorie burn from workout */
 function estimateCalories(durationMin: number, weightKg: number, intensity: EnergyLevel): number {
   // MET-based estimation: resistance training ≈ 3-6 METs
@@ -951,6 +987,59 @@ export class WorkoutGeneratorService {
   }
 
   /**
+   * Detect bilateral muscle imbalances from body measurements (InBody / tape)
+   * Returns muscle groups that need extra unilateral work
+   */
+  detectImbalances(profile: UserProfile): { muscle: string; weakSide: 'left' | 'right'; diffPercent: number }[] {
+    const imbalances: { muscle: string; weakSide: 'left' | 'right'; diffPercent: number }[] = [];
+    const threshold = 5; // 5% difference = significant imbalance
+
+    // Bicep imbalance
+    if (profile.leftBicepCm && profile.rightBicepCm) {
+      const diff = Math.abs(profile.leftBicepCm - profile.rightBicepCm);
+      const avg = (profile.leftBicepCm + profile.rightBicepCm) / 2;
+      const pct = (diff / avg) * 100;
+      if (pct >= threshold) {
+        imbalances.push({
+          muscle: 'BICEPS',
+          weakSide: profile.leftBicepCm < profile.rightBicepCm ? 'left' : 'right',
+          diffPercent: Math.round(pct),
+        });
+      }
+    }
+
+    // Thigh (quad/ham) imbalance
+    if (profile.leftThighCm && profile.rightThighCm) {
+      const diff = Math.abs(profile.leftThighCm - profile.rightThighCm);
+      const avg = (profile.leftThighCm + profile.rightThighCm) / 2;
+      const pct = (diff / avg) * 100;
+      if (pct >= threshold) {
+        imbalances.push({
+          muscle: 'QUADRICEPS',
+          weakSide: profile.leftThighCm < profile.rightThighCm ? 'left' : 'right',
+          diffPercent: Math.round(pct),
+        });
+      }
+    }
+
+    // Calf imbalance
+    if (profile.leftCalfCm && profile.rightCalfCm) {
+      const diff = Math.abs(profile.leftCalfCm - profile.rightCalfCm);
+      const avg = (profile.leftCalfCm + profile.rightCalfCm) / 2;
+      const pct = (diff / avg) * 100;
+      if (pct >= threshold) {
+        imbalances.push({
+          muscle: 'CALVES',
+          weakSide: profile.leftCalfCm < profile.rightCalfCm ? 'left' : 'right',
+          diffPercent: Math.round(pct),
+        });
+      }
+    }
+
+    return imbalances;
+  }
+
+  /**
    * Build rehab block from injury data
    */
   buildRehabBlock(injuries: InjuryData[]): { exercises: RehabExercise[] } | undefined {
@@ -1022,7 +1111,7 @@ export class WorkoutGeneratorService {
     const dur = DURATION_CONFIG[session.availableMinutes] || DURATION_CONFIG[30];
 
     // ──────────────────────────────────────────────
-    // STEP 3: 6-Layer Modifier Stack
+    // STEP 3: 8-Layer Modifier Stack
     // ──────────────────────────────────────────────
     // Layer 1: Body type
     const bodyTypeAdj = BODY_TYPE_ADJUSTMENTS[profile.bodyType || 'MESOMORPH'] || BODY_TYPE_ADJUSTMENTS.MESOMORPH;
@@ -1046,6 +1135,22 @@ export class WorkoutGeneratorService {
     }
     // Layer 6: Injury restrictions
     const injuryRestrictions = this.getInjuryRestrictions(profile.injuryData);
+    // Layer 7: Age-based adjustments (seniors 65+, elderly 75+)
+    const ageCategory = getAgeCategory(profile.age);
+    const ageAdj = AGE_ADJUSTMENTS[ageCategory];
+    maxRPE = Math.min(maxRPE, ageAdj.maxRPE);
+    if (ageAdj.avoidExplosive) {
+      avoidCategories.push('PLYOMETRIC' as ExerciseCategory, 'OLYMPIC' as ExerciseCategory);
+    }
+    // Layer 8: BMI-based adjustments (obese users get low-impact, seated)
+    const bmiCategory = getBMICategory(profile.bmi || 22);
+    const bmiAdj = BMI_ADJUSTMENTS[bmiCategory];
+    maxRPE = Math.min(maxRPE, bmiAdj.maxRPE);
+    if (bmiAdj.avoidHighImpact) {
+      avoidCategories.push('PLYOMETRIC' as ExerciseCategory);
+    }
+    // Imbalance detection (for unilateral exercise selection)
+    const imbalances = this.detectImbalances(profile);
 
     // Composite energy adjustment
     const energyAdj = ENERGY_ADJUSTMENTS[session.energyLevel];
@@ -1098,12 +1203,14 @@ export class WorkoutGeneratorService {
     const restConfig = REST_BY_GOAL[profile.fitnessGoal];
     const setsConfig = SETS_BY_EXPERIENCE[effectiveLevel];
 
-    // Max exercises with ALL modifiers
+    // Max exercises with ALL modifiers (8-layer stack)
     let maxExercises = session.maxExercises
       ? session.maxExercises
       : Math.round(dur.maxExercises * energyAdj.maxExerciseModifier);
     if (isRamadan) maxExercises = Math.max(2, maxExercises - 2);
     if (readiness.color === 'orange') maxExercises = Math.max(2, Math.round(maxExercises * 0.7));
+    // Age-based volume reduction (seniors/elderly)
+    if (ageAdj.volumeModifier < 1.0) maxExercises = Math.max(2, Math.round(maxExercises * ageAdj.volumeModifier));
     maxExercises = Math.max(1, maxExercises);
 
     const selectedExercises = this.selectAndOrderExercises(
@@ -1119,6 +1226,10 @@ export class WorkoutGeneratorService {
     // Apply readiness + supplement RPE modifiers
     const adjustedMaxRPE = Math.max(5, Math.min(maxRPE, maxRPE + readiness.rpeModifier + suppMods.intensityModifier));
 
+    // Calculate periodization phase BEFORE building blocks (so phase affects rep scheme)
+    const weekNum = session.weekNumber || 1;
+    const periodPhase = this.getPeriodizationPhase(weekNum, effectiveLevel, profile.fitnessGoal);
+
     const workingSets = this.buildExerciseBlocks(
       selectedExercises,
       {
@@ -1132,6 +1243,7 @@ export class WorkoutGeneratorService {
         isRamadan,
         format,
         tempo: TEMPO_BY_GOAL[profile.fitnessGoal],
+        periodPhase,
       },
     );
 
@@ -1145,6 +1257,14 @@ export class WorkoutGeneratorService {
       if (injuryRestrictions.reduceMuscles.includes(block.muscleGroup)) {
         block.sets = Math.max(2, block.sets - 1);
       }
+      // Add imbalance notes — prefer unilateral for imbalanced muscles
+      const imbalance = imbalances.find(i => i.muscle === block.muscleGroup);
+      if (imbalance) {
+        const uniNote = `Imbalance detected (${imbalance.weakSide} side ${imbalance.diffPercent}% smaller) — use unilateral version, start with weak side`;
+        const uniNoteAr = `اكتشفنا عدم توازن (الجانب ${imbalance.weakSide === 'left' ? 'الشمال' : 'اليمين'} أصغر ${imbalance.diffPercent}%) — استخدم تمرين يد واحدة، ابدأ بالجانب الضعيف`;
+        block.modificationNote = block.modificationNote ? `${block.modificationNote}. ${uniNote}` : uniNote;
+        block.modificationNoteAr = block.modificationNoteAr ? `${block.modificationNoteAr}. ${uniNoteAr}` : uniNoteAr;
+      }
     }
 
     // ──────────────────────────────────────────────
@@ -1155,13 +1275,7 @@ export class WorkoutGeneratorService {
     const rehabBlock = this.buildRehabBlock(profile.injuryData);
 
     // ──────────────────────────────────────────────
-    // STEP 9: Periodization
-    // ──────────────────────────────────────────────
-    const weekNum = session.weekNumber || 1;
-    const periodPhase = this.getPeriodizationPhase(weekNum, effectiveLevel, profile.fitnessGoal);
-
-    // ──────────────────────────────────────────────
-    // STEP 10: Build final output with ALL new fields
+    // STEP 9: Build final output with ALL new fields
     // ──────────────────────────────────────────────
     const muscleNames = targetMuscles.map(m => m.charAt(0) + m.slice(1).toLowerCase().replace('_', ' '));
     const muscleNamesAr = targetMuscles.map(m => MUSCLE_AR[m] || m);
@@ -1210,6 +1324,9 @@ export class WorkoutGeneratorService {
         ramadan: isRamadan || undefined,
         injuries: injuryRestrictions.avoidMuscles.length > 0 ? injuryRestrictions.avoidMuscles : undefined,
         effectiveLevel,
+        ageCategory: ageCategory !== 'adult' ? ageCategory : undefined,
+        bmiCategory: bmiCategory !== 'normal' ? bmiCategory : undefined,
+        imbalances: imbalances.length > 0 ? imbalances : undefined,
       },
     };
   }
@@ -1217,6 +1334,105 @@ export class WorkoutGeneratorService {
   /**
    * Load full user profile from DB tables
    */
+  /**
+   * Generate a complete 4-week personalized program
+   * Research sources: Arnold Blueprint (weekly undulation), Jordan Peters (progressive phases),
+   * Natural BB (phase cycling), IAFS Lee Haney (periodization)
+   *
+   * Returns an array of 4 weeks × N sessions/week, each with full workout details.
+   */
+  async generateProgram(
+    profile: UserProfile,
+    options: {
+      daysPerWeek: number;          // 3-6
+      minutesPerSession: DurationType;
+      location: LocationType;
+      programName?: string;
+      programNameAr?: string;
+    },
+  ): Promise<{
+    name: string;
+    nameAr: string;
+    description: string;
+    descriptionAr: string;
+    durationWeeks: number;
+    daysPerWeek: number;
+    weeks: Array<{
+      weekNumber: number;
+      phase: string;
+      sessions: GeneratedWorkout[];
+    }>;
+  }> {
+    const { daysPerWeek, minutesPerSession, location } = options;
+
+    // Determine split based on days/week and experience
+    const effectiveLevel = this.calculateEffectiveLevel(profile);
+    let splitType: string;
+    if (daysPerWeek <= 3) splitType = 'FULL_BODY';
+    else if (daysPerWeek === 4) splitType = 'UPPER_LOWER';
+    else if (daysPerWeek === 5) splitType = 'PPL'; // PPL + Upper + Lower
+    else splitType = effectiveLevel === 'ADVANCED' || effectiveLevel === 'EXPERT' ? 'ARNOLD_SPLIT' : 'PPL';
+
+    const splitDef = SPLIT_DEFINITIONS[splitType] || SPLIT_DEFINITIONS.FULL_BODY;
+    const recentMuscles = await this.getRecentMusclesWorked(profile.userId);
+
+    const weeks: Array<{ weekNumber: number; phase: string; sessions: GeneratedWorkout[] }> = [];
+
+    for (let week = 1; week <= 4; week++) {
+      const phase = this.getPeriodizationPhase(week, effectiveLevel, profile.fitnessGoal);
+      const sessions: GeneratedWorkout[] = [];
+
+      for (let day = 0; day < daysPerWeek; day++) {
+        // Rotate through split definition
+        const splitDay = day % splitDef.length;
+        const dayMuscles = splitDef[splitDay];
+
+        // Build session input for this day
+        const sessionInput: SessionInput = {
+          location,
+          availableMinutes: minutesPerSession,
+          energyLevel: 'medium', // Programs assume normal energy
+          dayOfWeek: day + 1,
+          recentMusclesWorked: day === 0 ? recentMuscles : sessions.flatMap(s => s.targetMuscles),
+          weekNumber: week,
+          targetSplit: undefined,
+          maxExercises: undefined,
+        };
+
+        // Generate workout for this session
+        const workout = await this.generateWorkout(profile, sessionInput);
+
+        // Override target muscles to follow the split plan
+        if (workout.type !== 'rest' && workout.type !== 'active_recovery') {
+          workout.targetMuscles = dayMuscles;
+        }
+
+        sessions.push(workout);
+      }
+
+      weeks.push({ weekNumber: week, phase, sessions });
+    }
+
+    // Program metadata
+    const splitLabel = splitType.replace('_', '/').toLowerCase();
+    const name = options.programName || `4-Week ${splitLabel} Program`;
+    const nameAr = options.programNameAr || `برنامج 4 أسابيع — ${splitLabel}`;
+
+    return {
+      name,
+      nameAr,
+      description: `A personalized ${daysPerWeek}-day/week program with ${splitType.replace('_', '/')} split. ` +
+        `Designed for ${effectiveLevel.toLowerCase().replace('_', ' ')} level, goal: ${profile.fitnessGoal.toLowerCase().replace('_', ' ')}. ` +
+        `Each week has a different training phase for maximum adaptation.`,
+      descriptionAr: `برنامج شخصي ${daysPerWeek} أيام/أسبوع بنظام ${splitLabel}. ` +
+        `مصمم لمستوى ${effectiveLevel === 'BEGINNER' ? 'مبتدئ' : effectiveLevel === 'INTERMEDIATE' ? 'متوسط' : 'متقدم'}. ` +
+        `كل أسبوع مرحلة تدريب مختلفة لأقصى تكيّف.`,
+      durationWeeks: 4,
+      daysPerWeek,
+      weeks,
+    };
+  }
+
   async loadUserProfile(userId: string): Promise<UserProfile> {
     const [user, prefs, bodyComp, training, goals, health, exerciseCap, nutritionProfile, lifestyle, fastingProfile, logCount, lastLog] = await Promise.all([
       this.prisma.user.findUnique({ where: { id: userId } }),
@@ -1350,6 +1566,14 @@ export class WorkoutGeneratorService {
         : 999,
       // Pull-up max
       pullUpMax: exerciseCap?.pullUpMaxReps || undefined,
+      // Bilateral measurements for imbalance detection
+      leftBicepCm: bodyComp?.leftBicepCm || undefined,
+      rightBicepCm: bodyComp?.rightBicepCm || undefined,
+      leftThighCm: bodyComp?.leftThighCm || undefined,
+      rightThighCm: bodyComp?.rightThighCm || undefined,
+      leftCalfCm: bodyComp?.leftCalfCm || undefined,
+      rightCalfCm: bodyComp?.rightCalfCm || undefined,
+      leanMassKg: bodyComp?.leanMassKg || undefined,
     };
   }
 
@@ -1709,6 +1933,7 @@ export class WorkoutGeneratorService {
       isRamadan: boolean;
       format: WorkoutFormat;
       tempo: string;
+      periodPhase?: string;
     },
   ): ExerciseBlock[] {
     const blocks: ExerciseBlock[] = [];
@@ -1719,22 +1944,34 @@ export class WorkoutGeneratorService {
         (ex.secondaryMuscles && ex.secondaryMuscles.length >= 1);
       const category: 'compound' | 'isolation' | 'accessory' = isCompound ? 'compound' : (i >= exercises.length - 1 ? 'accessory' : 'isolation');
 
-      // Base sets
+      // Base sets & reps
       let sets = isCompound ? config.setsConfig.compound : config.setsConfig.isolation;
+      let reps = isCompound ? config.goalConfig.compound : config.goalConfig.isolation;
+      let rpe = config.goalConfig.rpeTarget + config.energyAdj.intensityModifier;
+      let techniqueNote = '';
+      let techniqueNoteAr = '';
+
+      // Phase-specific rep scheme override (Arnold undulation, JP HIT, etc.)
+      if (config.periodPhase && !['linear_progression', 'accumulation'].includes(config.periodPhase)) {
+        const phaseScheme = this.getPhaseRepScheme(config.periodPhase, reps, isCompound);
+        if (phaseScheme.sets > 0) sets = phaseScheme.sets; // 0 = use base
+        if (phaseScheme.reps !== reps) reps = phaseScheme.reps;
+        if (phaseScheme.rpe > 0) rpe = phaseScheme.rpe;
+        if (phaseScheme.technique) techniqueNote = phaseScheme.technique;
+        if (phaseScheme.techniqueAr) techniqueNoteAr = phaseScheme.techniqueAr;
+      }
+
+      // Apply energy/body-type/Ramadan modifiers on top
       sets = Math.round(sets * config.energyAdj.volumeModifier);
       if (config.isRamadan) sets = Math.max(2, Math.round(sets * RAMADAN_ADJUSTMENTS.volumeModifier));
       sets = Math.max(1, sets);
-
-      // Base reps
-      const reps = isCompound ? config.goalConfig.compound : config.goalConfig.isolation;
 
       // Base rest
       let rest = isCompound ? config.restConfig.compound : config.restConfig.isolation;
       rest = Math.round(rest * config.bodyTypeAdj.restModifier * config.energyAdj.restModifier);
       if (config.isRamadan) rest = Math.round(rest * RAMADAN_ADJUSTMENTS.restModifier);
 
-      // RPE target
-      let rpe = config.goalConfig.rpeTarget + config.energyAdj.intensityModifier;
+      // RPE target with modifiers
       if (config.isRamadan) rpe += RAMADAN_ADJUSTMENTS.intensityModifier;
       rpe = Math.min(rpe, config.maxRPE);
       rpe = Math.max(5, Math.min(10, rpe));
@@ -1767,6 +2004,7 @@ export class WorkoutGeneratorService {
         rpeTarget: rpe,
         notes: [
           formatNotes,
+          techniqueNote,
           config.avoidValsalva ? 'Breathe continuously — do NOT hold breath' : '',
           isCompound && category === 'compound' ? 'Start with 1-2 warm-up sets at lighter weight' : '',
         ].filter(Boolean).join('. ') || undefined,
@@ -1781,25 +2019,100 @@ export class WorkoutGeneratorService {
     return blocks;
   }
 
+  /**
+   * Get periodization phase — research-backed from PDF analysis:
+   * - Arnold Blueprint: 4-week weekly undulation (12-10-8-6 → 8-6-4-2 → 5×5 → max+backoff)
+   * - Jordan Peters: accumulate → intensify → deload
+   * - Natural BB: 3-week phase cycling (5×5 → 4×8 → 3×12)
+   * - DUP: Daily rep variation within week (heavy/moderate/light)
+   */
   private getPeriodizationPhase(weekNumber: number, experience: ExperienceLevel, goal: GoalType): string {
-    // Beginners: always accumulation (linear progression)
+    // Beginners: always linear progression (add weight each session)
     if (['COMPLETE_BEGINNER', 'BEGINNER'].includes(experience)) {
       return 'linear_progression';
     }
 
-    // 4-week block periodization cycle (research: accumulation → intensification → peak → deload)
+    // 4-week block periodization cycle
     const weekInCycle = ((weekNumber - 1) % 4) + 1;
 
     if (goal === 'INCREASE_STRENGTH') {
       // Strength: accumulation(2w) → intensification(1w) → deload(1w)
+      // Based on powerlifting research + Jordan Peters progressive overload
       if (weekInCycle <= 2) return 'accumulation';
       if (weekInCycle === 3) return 'intensification';
       return 'deload';
     }
 
-    // Hypertrophy/general: accumulation(3w) → deload(1w)
+    if (goal === 'BUILD_MUSCLE') {
+      // Arnold-style weekly undulation for hypertrophy:
+      // Week 1: Volume (12-10-8-6 pyramid)
+      // Week 2: Intensity (8-6-4-2 + strip sets)
+      // Week 3: Density (5×5 straight sets)
+      // Week 4: Peak + Deload (max + backoff 20-15-12)
+      if (weekInCycle === 1) return 'volume';
+      if (weekInCycle === 2) return 'intensity';
+      if (weekInCycle === 3) return 'density';
+      return 'peak_deload';
+    }
+
+    // Fat loss / endurance / general: accumulation(3w) → deload(1w)
     if (weekInCycle <= 3) return 'accumulation';
     return 'deload';
+  }
+
+  /**
+   * Get rep scheme adjustments based on periodization phase
+   * Research source: Arnold Blueprint weekly undulation + Jordan Peters HIT
+   */
+  private getPhaseRepScheme(phase: string, baseReps: string, isCompound: boolean): { reps: string; sets: number; rpe: number; technique?: string; techniqueAr?: string } {
+    switch (phase) {
+      case 'volume':
+        // Arnold Week 1: Pyramid 12-10-8-6 (compounds), 12-10-8 (isolation)
+        return {
+          reps: isCompound ? '12, 10, 8, 6' : '12, 10, 8',
+          sets: isCompound ? 4 : 3,
+          rpe: 7,
+        };
+      case 'intensity':
+        // Arnold Week 2: Heavy pyramid 8-6-4-2 + stripping method
+        return {
+          reps: isCompound ? '8, 6, 4, 2' : '8, 6, 4',
+          sets: isCompound ? 4 : 3,
+          rpe: 9,
+          technique: 'Strip set on last set: reduce weight 20%, 5-10 more reps',
+          techniqueAr: 'ستريب سيت على آخر مجموعة: نقّص الوزن 20%، 5-10 عدات كمان',
+        };
+      case 'density':
+        // Arnold Week 3: 5×5 straight sets (max weight for 5)
+        return {
+          reps: '5',
+          sets: isCompound ? 5 : 4,
+          rpe: 8,
+          technique: '5×5: Same weight all sets, heavy and controlled',
+          techniqueAr: '5×5: نفس الوزن كل السيتات، تقيل ومضبوط',
+        };
+      case 'peak_deload':
+        // Arnold Week 4: One max attempt + high-rep backoff
+        return {
+          reps: isCompound ? '3, 1, 1, 15' : '15, 12, 10',
+          sets: isCompound ? 4 : 3,
+          rpe: isCompound ? 10 : 6,
+          technique: isCompound ? 'Work up to 1RM attempt, then backoff at 60%' : 'Light pump work — focus on contraction',
+          techniqueAr: isCompound ? 'اوصل لأقصى وزن ممكن، بعدها نزّل 60% وكمّل' : 'شغل خفيف — ركّز على الانقباض',
+        };
+      case 'intensification':
+        // Jordan Peters HIT style: 2 work sets to failure
+        return {
+          reps: isCompound ? '5-8' : '10-12',
+          sets: 2,
+          rpe: 10,
+          technique: 'Top set to failure + back-off set to failure (reduce weight 15%)',
+          techniqueAr: 'مجموعة أولى للفشل + مجموعة ثانية بوزن أقل 15% للفشل',
+        };
+      default:
+        // accumulation / linear_progression — use base config
+        return { reps: baseReps, sets: 0, rpe: 0 }; // 0 = use base config
+    }
   }
 
   private getProgressionNotes(exp: ExperienceLevel, goal: GoalType, week: number): string {
@@ -1807,44 +2120,53 @@ export class WorkoutGeneratorService {
       return 'Linear progression: Add 2.5kg to upper body lifts and 5kg to lower body lifts each session when you complete all sets. Focus on form first.';
     }
 
-    if (exp === 'NOVICE' || exp === 'INTERMEDIATE') {
-      const phase = this.getPeriodizationPhase(week, exp, goal);
-      if (phase === 'deload') {
-        return 'Deload week: Reduce volume by 40-50%. Keep same exercises at lighter loads (RPE 6-7). Focus on technique and recovery.';
-      }
-      return 'Undulating periodization: If you completed all reps last session, add 1-2 reps or 2.5kg. Log your RPE for each set.';
-    }
-
-    // Advanced/Expert
     const phase = this.getPeriodizationPhase(week, exp, goal);
-    if (phase === 'deload') {
-      return 'Deload: -40% volume, -10% intensity. Maintain frequency. Focus on movement quality and recovery (sleep, nutrition).';
+
+    switch (phase) {
+      case 'volume':
+        return 'Volume phase (Arnold-style): Pyramid sets 12→10→8→6 on compounds. Focus on progressive overload — beat last week\'s numbers. Log every set.';
+      case 'intensity':
+        return 'Intensity phase: Heavy pyramid 8→6→4→2, strip set on final set. Push hard — this is your growth week. RPE 9.';
+      case 'density':
+        return 'Density phase: 5×5 straight sets — same heavy weight all sets. Focus on bar speed and power. Rest 2-3 min between sets.';
+      case 'peak_deload':
+        return 'Peak + Deload: Test your max on main compound, then light pump work (15-12-10). Celebrate progress, prepare for next cycle.';
+      case 'intensification':
+        return 'Intensification (HIT-style): 2 working sets to FAILURE per exercise. Top set 5-8 reps, back-off set 10-12 reps. Log book everything.';
+      case 'deload':
+        return 'Deload: -40% volume, -10% intensity. Maintain frequency. Focus on movement quality and recovery (sleep, nutrition).';
+      case 'accumulation':
+        return 'Accumulation: Progressive overload through reps or sets. RPE 7-8. Auto-regulate based on daily readiness.';
+      default:
+        return 'Follow the planned workout. Log your sets and RPE for tracking.';
     }
-    if (phase === 'intensification') {
-      return 'Intensification: Increase weight 5-10%, reduce reps by 2-3. RPE 8-9. Use intensity techniques on last set (drop set or rest-pause).';
-    }
-    return 'Accumulation: Progressive overload through reps or sets. RPE 7-8. Auto-regulate based on daily readiness.';
   }
 
   private getProgressionNotesAr(exp: ExperienceLevel, goal: GoalType, week: number): string {
     if (['COMPLETE_BEGINNER', 'BEGINNER'].includes(exp)) {
       return 'تقدم خطي: زوّد 2.5 كيلو على تمارين الجزء العلوي و5 كيلو على السفلي كل جلسة لما تكمّل كل السيتات. ركّز على الفورم الأول.';
     }
-    if (exp === 'NOVICE' || exp === 'INTERMEDIATE') {
-      const phase = this.getPeriodizationPhase(week, exp, goal);
-      if (phase === 'deload') {
-        return 'أسبوع راحة: قلّل الحجم 40-50%. نفس التمارين بأوزان أخف. ركّز على التكنيك والتعافي.';
-      }
-      return 'لو كمّلت كل العدّات المرة اللي فاتت، زوّد 1-2 عدّة أو 2.5 كيلو. سجّل RPE لكل سيت.';
-    }
+
     const phase = this.getPeriodizationPhase(week, exp, goal);
-    if (phase === 'deload') {
-      return 'أسبوع تخفيف: ناقص 40% حجم، ناقص 10% شدة. حافظ على التكرار. ركّز على التعافي (نوم، أكل).';
+
+    switch (phase) {
+      case 'volume':
+        return 'مرحلة الحجم (أسلوب أرنولد): سيتات هرمية 12→10→8→6 على التمارين المركبة. ركّز على زيادة الأحمال — اضرب أرقام الأسبوع اللي فات.';
+      case 'intensity':
+        return 'مرحلة الشدة: هرمي تقيل 8→6→4→2، ستريب سيت على آخر مجموعة. ادفع بقوة — ده أسبوع النمو. RPE 9.';
+      case 'density':
+        return 'مرحلة الكثافة: 5×5 — نفس الوزن التقيل كل السيتات. ركّز على سرعة الرفع والقوة. راحة 2-3 دقائق.';
+      case 'peak_deload':
+        return 'القمة + راحة: جرّب أقصى وزن على التمرين الأساسي، بعدها شغل خفيف (15-12-10). احتفل بتقدمك واستعد للدورة الجاية.';
+      case 'intensification':
+        return 'مرحلة التكثيف (HIT): مجموعتين شغل للفشل لكل تمرين. المجموعة الأولى 5-8 عدات، الثانية 10-12 بوزن أقل.';
+      case 'deload':
+        return 'أسبوع تخفيف: ناقص 40% حجم، ناقص 10% شدة. حافظ على التكرار. ركّز على التعافي (نوم، أكل).';
+      case 'accumulation':
+        return 'مرحلة التراكم: تقدم من خلال العدّات أو السيتات. RPE 7-8. عدّل حسب جاهزيتك اليومية.';
+      default:
+        return 'كمّل التمرين المخطط. سجّل السيتات و RPE للمتابعة.';
     }
-    if (phase === 'intensification') {
-      return 'مرحلة التكثيف: زوّد الوزن 5-10%، قلّل العدّات 2-3. RPE 8-9. استخدم drop set أو rest-pause على آخر سيت.';
-    }
-    return 'مرحلة التراكم: تقدم من خلال العدّات أو السيتات. RPE 7-8. عدّل حسب جاهزيتك اليومية.';
   }
 
   // ──────────────────────────────────────────────

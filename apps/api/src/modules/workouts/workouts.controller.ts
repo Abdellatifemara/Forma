@@ -2,8 +2,9 @@ import { Controller, Get, Post, Put, Param, Body, Query, UseGuards } from '@nest
 import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
 import { WorkoutsService } from './workouts.service';
-import { WorkoutGeneratorService, DurationType, EnergyLevel, LocationType } from './workout-generator.service';
+import { WorkoutGeneratorService, DurationType, EnergyLevel, LocationType, GeneratedWorkout } from './workout-generator.service';
 import { AchievementsService } from '../achievements/achievements.service';
+import { AiService } from '../ai/ai.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
 import { User } from '@prisma/client';
@@ -19,6 +20,7 @@ export class WorkoutsController {
     private readonly workoutsService: WorkoutsService,
     private readonly workoutGenerator: WorkoutGeneratorService,
     private readonly achievementsService: AchievementsService,
+    private readonly aiService: AiService,
   ) {}
 
   @Get('plans')
@@ -147,6 +149,136 @@ export class WorkoutsController {
       targetSplit: input.split,
       maxExercises: input.exerciseCount ? Number(input.exerciseCount) : undefined,
     });
+  }
+
+  @Post('generate-program')
+  @ApiOperation({ summary: 'Generate a complete 4-week personalized program' })
+  @ApiResponse({ status: 201, description: 'Returns a 4-week program with all sessions' })
+  async generateProgram(
+    @CurrentUser() user: User,
+    @Body() input: {
+      daysPerWeek?: number;
+      minutesPerSession?: number;
+      location?: 'gym' | 'home' | 'home_gym' | 'outdoor' | 'hotel';
+      programName?: string;
+      programNameAr?: string;
+    },
+  ) {
+    const profile = await this.workoutGenerator.loadUserProfile(user.id);
+    const days = Math.min(Math.max(input.daysPerWeek || 4, 3), 6);
+    const minutes = input.minutesPerSession || 45;
+
+    return this.workoutGenerator.generateProgram(profile, {
+      daysPerWeek: days,
+      minutesPerSession: minutes as any,
+      location: (input.location || 'gym') as any,
+      programName: input.programName,
+      programNameAr: input.programNameAr,
+    });
+  }
+
+  @Post('generate-premium')
+  @ApiOperation({ summary: 'Premium+ AI-enhanced workout — offline engine + thin GPT review pass' })
+  @ApiResponse({ status: 201, description: 'Returns workout with AI coaching notes and exercise swaps' })
+  async generatePremiumWorkout(
+    @CurrentUser() user: User,
+    @Body() input: {
+      availableMinutes?: number;
+      energyLevel?: 'low' | 'medium' | 'high';
+      location?: 'gym' | 'home' | 'home_gym' | 'outdoor' | 'hotel';
+      goal?: string;
+      split?: string;
+      weekNumber?: number;
+    },
+  ) {
+    // Step 1: Run offline engine (same as /generate)
+    const profile = await this.workoutGenerator.loadUserProfile(user.id);
+    const recentMuscles = await this.workoutGenerator.getRecentMusclesWorked(user.id);
+    const now = new Date();
+    const duration = input.availableMinutes || 45;
+
+    const workout = await this.workoutGenerator.generateWorkout(profile, {
+      location: (input.location || 'gym') as LocationType,
+      availableMinutes: (duration || 45) as DurationType,
+      energyLevel: (input.energyLevel || 'medium') as EnergyLevel,
+      dayOfWeek: now.getDay() || 7,
+      recentMusclesWorked: recentMuscles,
+      weekNumber: input.weekNumber || Math.ceil((now.getDate()) / 7),
+      targetSplit: input.split,
+    });
+
+    // Step 2: If workout is rest/recovery, skip AI
+    if (workout.type === 'rest' || workout.type === 'active_recovery') {
+      return workout;
+    }
+
+    // Step 3: Compress workout into tight AI query
+    // Format: M28/92kg/178cm/24bf/endo/inter|goal:BUILD_MUSCLE|phase:volume
+    // |exercises:BenchPress(4x12-10-8-6),InclineDumbbell(3x10),CableFly(3x12)
+    // |injuries:SHOULDER_MILD|supps:creatine+preworkout|readiness:72/yellow-green
+    try {
+      const compressedProfile = [
+        `${profile.gender === 'MALE' ? 'M' : 'F'}${profile.age}/${Math.round(profile.weightKg)}kg/${Math.round(profile.heightCm)}cm`,
+        profile.bodyFatPercent ? `${Math.round(profile.bodyFatPercent)}bf` : '',
+        profile.bodyType?.toLowerCase() || '',
+        workout.modifiers?.effectiveLevel || profile.experienceLevel.toLowerCase(),
+      ].filter(Boolean).join('/');
+
+      const compressedExercises = workout.workingSets
+        .map(ex => `${ex.name}(${ex.sets}x${ex.reps})`)
+        .join(',');
+
+      const compressedInjuries = profile.injuryData
+        .filter(i => i.isCurrentlyActive)
+        .map(i => `${i.bodyPart}_${i.severity}`)
+        .join(',');
+
+      const compressedSupps = [
+        profile.supplements.takesCreatine ? 'creatine' : '',
+        profile.supplements.takesPreWorkout ? 'preworkout' : '',
+        profile.supplements.takesBetaAlanine ? 'beta-alanine' : '',
+      ].filter(Boolean).join('+');
+
+      const aiPrompt = [
+        `User: ${compressedProfile}`,
+        `Goal: ${profile.fitnessGoal}`,
+        `Phase: ${workout.periodizationPhase}`,
+        `Split: ${workout.splitType} targeting ${workout.targetMuscles.join(',')}`,
+        `Exercises: ${compressedExercises}`,
+        compressedInjuries ? `Injuries: ${compressedInjuries}` : '',
+        compressedSupps ? `Supplements: ${compressedSupps}` : '',
+        `Readiness: ${workout.readinessScore}/100`,
+        `Duration: ${workout.durationMinutes}min at ${input.location || 'gym'}`,
+      ].filter(Boolean).join('|');
+
+      const aiResponse = await this.aiService.callOpenAI(aiPrompt, {
+        systemPrompt: `You are Forma's elite fitness coach. Review this workout and provide BRIEF coaching notes in JSON format ONLY.
+Return EXACTLY this JSON structure (no markdown, no explanation):
+{"coachingNotes":"1-2 sentences of personalized advice","coachingNotesAr":"same in Egyptian Arabic","swapSuggestions":[{"exercise":"name","swapFor":"alternative","reason":"why"}],"intensityTip":"one technique tip for today"}
+Rules: max 100 tokens. Temperature 0. Be specific to THIS user's data. If workout is already optimal, say so briefly.`,
+        maxTokens: 150,
+        temperature: 0,
+      });
+
+      // Parse AI response
+      try {
+        const parsed = JSON.parse(aiResponse.trim());
+        return {
+          ...workout,
+          aiCoachingNotes: parsed.coachingNotes,
+          aiCoachingNotesAr: parsed.coachingNotesAr,
+          aiSwapSuggestions: parsed.swapSuggestions,
+          aiIntensityTip: parsed.intensityTip,
+          aiEnhanced: true,
+        };
+      } catch {
+        // AI response wasn't valid JSON — return workout without AI notes
+        return { ...workout, aiEnhanced: false, aiRawNote: aiResponse };
+      }
+    } catch {
+      // AI call failed — return offline workout as-is
+      return { ...workout, aiEnhanced: false };
+    }
   }
 
   @Post('start/:workoutId')

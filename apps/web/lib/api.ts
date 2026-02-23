@@ -330,6 +330,15 @@ export const workoutsApi = {
   // What Now? Smart Recommendation
   getWhatNow: (data: WhatNowInput) =>
     api.post<WhatNowRecommendation>('/workouts/what-now', data),
+
+  // Generate a complete 4-week personalized program
+  generateProgram: (data: {
+    daysPerWeek?: number;
+    minutesPerSession?: number;
+    location?: 'gym' | 'home' | 'home_gym' | 'outdoor' | 'hotel';
+    programName?: string;
+    programNameAr?: string;
+  }) => api.post<GeneratedProgram>('/workouts/generate-program', data),
 };
 
 // Exercises API
@@ -2513,9 +2522,27 @@ interface WhatNowRecommendation {
     ramadan?: boolean;
     injuries?: string[];
     effectiveLevel?: string;
+    ageCategory?: string;
+    bmiCategory?: string;
+    imbalances?: { muscle: string; weakSide: string; diffPercent: number }[];
   };
   // Legacy compat: old format had flat exercises array
   exercises?: { id: string; name: string; nameAr?: string; sets: number; reps: string; equipment: string }[];
+}
+
+// Generated program (4-week)
+interface GeneratedProgram {
+  name: string;
+  nameAr: string;
+  description: string;
+  descriptionAr: string;
+  durationWeeks: number;
+  daysPerWeek: number;
+  weeks: Array<{
+    weekNumber: number;
+    phase: string;
+    sessions: WhatNowRecommendation[];
+  }>;
 }
 
 // Squad types
@@ -3403,6 +3430,7 @@ export type {
   WarmupExercise,
   ExerciseBlock,
   WhatNowRecommendation,
+  GeneratedProgram,
   CreateSquadData,
   Squad,
   SquadMember,
