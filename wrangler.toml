@@ -1,9 +1,11 @@
-# Cloudflare Workers - Static Assets Configuration
-# Serves the Next.js static export (apps/web/out/) as a Single Page Application
+# Cloudflare Workers - Static Assets + Dynamic Route Rewrites
+# worker.js handles dynamic route rewrites for Next.js static export
+# Static assets served from CDN; Worker runs only for unmatched routes
 
 name = "formaegypt"
+main = "./worker.js"
 compatibility_date = "2026-02-18"
 
 [assets]
 directory = "./apps/web/out"
-not_found_handling = "single-page-application"
+binding = "ASSETS"
