@@ -86,10 +86,18 @@ interface WorkoutSession {
 
 export default function ActiveWorkoutPage() {
   const params = useParams();
-  const workoutId = params.id as string;
   const router = useRouter();
   const { language } = useLanguage();
   const isAr = language === 'ar';
+
+  // On Cloudflare static export, useParams returns '_placeholder'
+  // Read actual ID from URL path instead
+  const [workoutId, setWorkoutId] = useState<string>('');
+  useEffect(() => {
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    const urlId = segments[segments.length - 1] || '';
+    setWorkoutId(urlId && urlId !== '_placeholder' ? urlId : (params.id as string) || '');
+  }, [params.id]);
 
   // Data states
   const [workout, setWorkout] = useState<WorkoutData | null>(null);
@@ -111,20 +119,9 @@ export default function ActiveWorkoutPage() {
   const [showFinishDialog, setShowFinishDialog] = useState(false);
   const [soundEnabled, setSoundEnabled] = useState(true);
 
-  const isPlaceholder = workoutId === '_placeholder' || workoutId === '_placeholder_';
-
-  // Redirect placeholder routes — preserve query params on the workouts page
-  useEffect(() => {
-    if (isPlaceholder) {
-      const search = window.location.search;
-      // If there are query params (whatnow, formcheck), redirect to /workouts with them
-      window.location.replace('/workouts' + (search || ''));
-    }
-  }, [isPlaceholder]);
-
   // Fetch workout data and start session
   useEffect(() => {
-    if (isPlaceholder) return;
+    if (!workoutId || workoutId === '_placeholder') return;
 
     async function initializeWorkout() {
       setIsLoading(true);

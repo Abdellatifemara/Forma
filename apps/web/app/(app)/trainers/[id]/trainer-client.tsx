@@ -51,24 +51,24 @@ export default function TrainerDetailPage() {
   const isAr = language === 'ar';
   const params = useParams();
   const router = useRouter();
-  const id = params.id as string;
   const [trainer, setTrainer] = useState<Trainer | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [showBookingDialog, setShowBookingDialog] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<'hourly' | 'monthly'>('monthly');
 
-  const isPlaceholder = id === '_placeholder' || id === '_placeholder_';
-
-  // Redirect placeholder routes (static export artifact)
+  // On Cloudflare static export, useParams returns '_placeholder'
+  // Read actual ID from URL path instead
+  const [id, setId] = useState<string>('');
   useEffect(() => {
-    if (isPlaceholder) {
-      window.location.href = '/trainers';
-    }
-  }, [isPlaceholder]);
+    const segments = window.location.pathname.split('/').filter(Boolean);
+    // /trainers/:id → segments = ['trainers', ':id']
+    const urlId = segments[segments.length - 1] || '';
+    setId(urlId && urlId !== '_placeholder' ? urlId : (params.id as string) || '');
+  }, [params.id]);
 
   useEffect(() => {
-    if (isPlaceholder) return;
+    if (!id || id === '_placeholder') return;
 
     async function loadTrainer() {
       try {
@@ -76,7 +76,6 @@ export default function TrainerDetailPage() {
         const data = await trainersApi.getById(id);
         setTrainer(data);
       } catch (err) {
-        // Error handled
         setError(err instanceof Error ? err.message : (isAr ? 'فشل تحميل بيانات المدرب' : 'Failed to load trainer'));
       } finally {
         setIsLoading(false);

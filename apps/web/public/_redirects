@@ -8,6 +8,8 @@
 /trainer/programs/:id /trainer/programs/_placeholder.html 200
 # Public trainers
 /trainers/:id /trainers/_placeholder.html 200
+# Workout programs
+/workouts/programs/:id /workouts/programs/_placeholder.html 200
 # Workouts
 /workouts/:id /workouts/_placeholder.html 200
 # Join invite code
