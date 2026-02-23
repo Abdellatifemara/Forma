@@ -1,0 +1,478 @@
+[
+  {
+    "name_en": "Sugar-Free Protein Bar (Generic)",
+    "name_ar": "بار بروتين بدون سكر",
+    "category": "supplement",
+    "serving_size_g": 60,
+    "calories": 200,
+    "protein_g": 20,
+    "carbs_g": 22,
+    "fat_g": 8,
+    "fiber_g": 6,
+    "sugar_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "protein_bar",
+      "sugar_free",
+      "snack",
+      "keto_friendly"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola-bar.jpg"
+  },
+  {
+    "name_en": "Keto Fat Bomb (Coconut + Dark Chocolate)",
+    "name_ar": "كيتو فات بومب (جوز هند + شوكولاتة داكنة)",
+    "category": "snack",
+    "serving_size_g": 30,
+    "calories": 180,
+    "protein_g": 2,
+    "carbs_g": 4,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "sugar_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "fat_bomb",
+      "snack",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Cauliflower Rice (Cooked)",
+    "name_ar": "أرز قرنبيط (مطبوخ)",
+    "category": "vegetable",
+    "serving_size_g": 200,
+    "calories": 50,
+    "protein_g": 3.8,
+    "carbs_g": 8,
+    "fat_g": 0.6,
+    "fiber_g": 4,
+    "vitamin_c_mg": 100,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "low_carb",
+      "rice_alternative",
+      "vegetable"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cauliflower.jpg"
+  },
+  {
+    "name_en": "Zucchini Noodles (Zoodles)",
+    "name_ar": "نودلز كوسة (زودلز)",
+    "category": "vegetable",
+    "serving_size_g": 200,
+    "calories": 34,
+    "protein_g": 2.4,
+    "carbs_g": 6.2,
+    "fat_g": 0.6,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "low_carb",
+      "pasta_alternative",
+      "vegetable"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
+  },
+  {
+    "name_en": "Almond Flour",
+    "name_ar": "دقيق لوز",
+    "category": "flour",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 6,
+    "carbs_g": 6,
+    "fat_g": 15,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "flour",
+      "gluten_free",
+      "baking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/almonds.jpg"
+  },
+  {
+    "name_en": "Coconut Flour",
+    "name_ar": "دقيق جوز هند",
+    "category": "flour",
+    "serving_size_g": 30,
+    "calories": 120,
+    "protein_g": 5,
+    "carbs_g": 18,
+    "fat_g": 4,
+    "fiber_g": 10,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "flour",
+      "gluten_free",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Erythritol Sweetener",
+    "name_ar": "محلي إريثريتول",
+    "category": "sweetener",
+    "serving_size_g": 10,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 10,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "sweetener",
+      "sugar_free",
+      "zero_calorie"
+    ]
+  },
+  {
+    "name_en": "Stevia Drops",
+    "name_ar": "قطرات ستيفيا",
+    "category": "sweetener",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sweetener",
+      "sugar_free",
+      "zero_calorie",
+      "natural"
+    ]
+  },
+  {
+    "name_en": "Gluten-Free Pasta (Rice/Corn)",
+    "name_ar": "مكرونة خالية من الغلوتين",
+    "category": "pasta",
+    "serving_size_g": 80,
+    "calories": 280,
+    "protein_g": 5,
+    "carbs_g": 62,
+    "fat_g": 1,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "gluten_free",
+      "pasta",
+      "celiac"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pasta.jpg"
+  },
+  {
+    "name_en": "Gluten-Free Bread (Rice Flour)",
+    "name_ar": "عيش خالي من الغلوتين",
+    "category": "bread",
+    "serving_size_g": 60,
+    "calories": 160,
+    "protein_g": 2.5,
+    "carbs_g": 30,
+    "fat_g": 3.5,
+    "fiber_g": 1.5,
+    "is_egyptian": false,
+    "tags": [
+      "gluten_free",
+      "bread",
+      "celiac"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Lactose-Free Milk",
+    "name_ar": "حليب خالي من اللاكتوز",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 125,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "calcium_mg": 300,
+    "is_egyptian": false,
+    "tags": [
+      "dairy",
+      "lactose_free",
+      "milk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Vegan Cheese Slices",
+    "name_ar": "جبنة نباتية شرائح",
+    "category": "dairy_alternative",
+    "serving_size_g": 25,
+    "calories": 60,
+    "protein_g": 1,
+    "carbs_g": 5,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "cheese",
+      "plant_based"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Protein Cookie (Single)",
+    "name_ar": "كوكي بروتين (واحدة)",
+    "category": "snack",
+    "serving_size_g": 75,
+    "calories": 250,
+    "protein_g": 18,
+    "carbs_g": 28,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "protein",
+      "cookie",
+      "snack",
+      "treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Protein Brownie (Single)",
+    "name_ar": "براوني بروتين (واحدة)",
+    "category": "snack",
+    "serving_size_g": 60,
+    "calories": 200,
+    "protein_g": 15,
+    "carbs_g": 22,
+    "fat_g": 6,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "protein",
+      "brownie",
+      "snack",
+      "treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brownies.jpg"
+  },
+  {
+    "name_en": "Sugar-Free Jelly (Prepared)",
+    "name_ar": "جيلي بدون سكر (جاهز)",
+    "category": "dessert",
+    "serving_size_g": 200,
+    "calories": 10,
+    "protein_g": 2,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sugar_free",
+      "dessert",
+      "cutting",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Protein Ice Cream (Pint)",
+    "name_ar": "آيس كريم بروتين (باينت)",
+    "category": "dessert",
+    "serving_size_g": 120,
+    "calories": 150,
+    "protein_g": 12,
+    "carbs_g": 20,
+    "fat_g": 3,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "protein",
+      "ice_cream",
+      "treat",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "PB2 Powdered Peanut Butter",
+    "name_ar": "PB2 زبدة فول سوداني بودرة",
+    "category": "nut_butter",
+    "serving_size_g": 12,
+    "calories": 50,
+    "protein_g": 5,
+    "carbs_g": 4,
+    "fat_g": 1.5,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "nut_butter",
+      "low_fat",
+      "cutting",
+      "powder"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
+  },
+  {
+    "name_en": "Shirataki Noodles (Zero Calorie)",
+    "name_ar": "نودلز شيراتاكي (صفر سعرات)",
+    "category": "pasta",
+    "serving_size_g": 200,
+    "calories": 15,
+    "protein_g": 0,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "zero_calorie",
+      "noodle",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/noodles.jpg"
+  },
+  {
+    "name_en": "Egg Whites (Carton, Liquid)",
+    "name_ar": "بياض بيض (كرتونة، سائل)",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 130,
+    "protein_g": 27,
+    "carbs_g": 2,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "eggs",
+      "protein",
+      "low_fat",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg-white.jpg"
+  },
+  {
+    "name_en": "Protein Chips/Crisps",
+    "name_ar": "شيبس بروتين",
+    "category": "snack",
+    "serving_size_g": 30,
+    "calories": 120,
+    "protein_g": 10,
+    "carbs_g": 12,
+    "fat_g": 3.5,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "protein",
+      "chips",
+      "snack",
+      "low_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potato-chips.jpg"
+  },
+  {
+    "name_en": "Bone Broth (Beef)",
+    "name_ar": "مرق عظام بقري",
+    "category": "soup",
+    "serving_size_g": 250,
+    "calories": 40,
+    "protein_g": 10,
+    "carbs_g": 0,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "broth",
+      "protein",
+      "collagen",
+      "gut_health",
+      "keto"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Electrolyte Powder (Sugar-Free)",
+    "name_ar": "بودرة إلكتروليت (بدون سكر)",
+    "category": "supplement",
+    "serving_size_g": 7,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sodium_mg": 500,
+    "potassium_mg": 200,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "electrolyte",
+      "hydration",
+      "keto"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Protein Oatmeal (Instant with Whey)",
+    "name_ar": "شوفان بروتين (فوري مع واي)",
+    "category": "breakfast",
+    "serving_size_g": 60,
+    "calories": 230,
+    "protein_g": 18,
+    "carbs_g": 32,
+    "fat_g": 4,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "protein",
+      "oats",
+      "breakfast",
+      "convenient"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oatmeal.jpg"
+  },
+  {
+    "name_en": "Protein Pudding (Prepared)",
+    "name_ar": "بودنج بروتين (جاهز)",
+    "category": "dessert",
+    "serving_size_g": 200,
+    "calories": 160,
+    "protein_g": 20,
+    "carbs_g": 14,
+    "fat_g": 3,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "protein",
+      "pudding",
+      "dessert",
+      "treat"
+    ]
+  },
+  {
+    "name_en": "Coconut Yogurt (Dairy-Free)",
+    "name_ar": "زبادي جوز هند (بدون ألبان)",
+    "category": "dairy_alternative",
+    "serving_size_g": 150,
+    "calories": 120,
+    "protein_g": 1,
+    "carbs_g": 8,
+    "fat_g": 9,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "tags": [
+      "dairy_free",
+      "yogurt",
+      "vegan",
+      "coconut"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  }
+]

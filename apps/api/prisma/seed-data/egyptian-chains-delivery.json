@@ -1,0 +1,597 @@
+[
+  {
+    "name_en": "Sobhy Kaber Koshary (Regular)",
+    "name_ar": "كشري صبحي كابر عادي",
+    "category": "CARBS",
+    "serving_size_g": 400,
+    "calories": 540,
+    "protein_g": 16,
+    "carbs_g": 88,
+    "fat_g": 14,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "brand_en": "Sobhy Kaber",
+    "brand_ar": "صبحي كابر",
+    "tags": [
+      "koshary",
+      "chain",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Abou Tarek Koshary (Regular)",
+    "name_ar": "كشري أبو طارق عادي",
+    "category": "CARBS",
+    "serving_size_g": 420,
+    "calories": 560,
+    "protein_g": 17,
+    "carbs_g": 92,
+    "fat_g": 14,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "brand_en": "Abou Tarek",
+    "brand_ar": "أبو طارق",
+    "tags": [
+      "koshary",
+      "famous",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "GAD Foul Plate (Regular)",
+    "name_ar": "طبق فول جاد عادي",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 260,
+    "protein_g": 15,
+    "carbs_g": 38,
+    "fat_g": 5,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "brand_en": "GAD",
+    "brand_ar": "جاد",
+    "tags": [
+      "foul",
+      "breakfast",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "GAD Taameya Plate (6 pieces)",
+    "name_ar": "طبق طعمية جاد ٦ حبات",
+    "category": "CARBS",
+    "serving_size_g": 180,
+    "calories": 420,
+    "protein_g": 12,
+    "carbs_g": 36,
+    "fat_g": 26,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "brand_en": "GAD",
+    "brand_ar": "جاد",
+    "tags": [
+      "taameya",
+      "breakfast",
+      "chain"
+    ]
+  },
+  {
+    "name_en": "Mo'men Chicken Sandwich",
+    "name_ar": "ساندوتش فراخ مؤمن",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 450,
+    "protein_g": 28,
+    "carbs_g": 38,
+    "fat_g": 20,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Mo'men",
+    "brand_ar": "مؤمن",
+    "tags": [
+      "sandwich",
+      "chicken",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Mo'men Beef Burger",
+    "name_ar": "برجر لحمة مؤمن",
+    "category": "PROTEIN",
+    "serving_size_g": 280,
+    "calories": 580,
+    "protein_g": 30,
+    "carbs_g": 40,
+    "fat_g": 32,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Mo'men",
+    "brand_ar": "مؤمن",
+    "tags": [
+      "burger",
+      "beef",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Cook Door Crepe Chicken",
+    "name_ar": "كريب فراخ كوك دوور",
+    "category": "PROTEIN",
+    "serving_size_g": 300,
+    "calories": 520,
+    "protein_g": 24,
+    "carbs_g": 46,
+    "fat_g": 26,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Cook Door",
+    "brand_ar": "كوك دوور",
+    "tags": [
+      "crepe",
+      "chicken",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Cook Door Crepe Nutella",
+    "name_ar": "كريب نوتيلا كوك دوور",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 580,
+    "protein_g": 8,
+    "carbs_g": 68,
+    "fat_g": 30,
+    "fiber_g": 2,
+    "sugar_g": 38,
+    "is_egyptian": true,
+    "brand_en": "Cook Door",
+    "brand_ar": "كوك دوور",
+    "tags": [
+      "crepe",
+      "sweet",
+      "nutella",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/crepes.jpg"
+  },
+  {
+    "name_en": "Zooba Hawawshi",
+    "name_ar": "حواوشي زوبا",
+    "category": "PROTEIN",
+    "serving_size_g": 220,
+    "calories": 540,
+    "protein_g": 24,
+    "carbs_g": 38,
+    "fat_g": 32,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Zooba",
+    "brand_ar": "زوبا",
+    "tags": [
+      "hawawshi",
+      "modern-egyptian",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
+  },
+  {
+    "name_en": "Kazouza Liver Sandwich",
+    "name_ar": "ساندوتش كبدة كازوزة",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 380,
+    "protein_g": 20,
+    "carbs_g": 32,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "iron_mg": 6,
+    "is_egyptian": true,
+    "brand_en": "Kazouza",
+    "brand_ar": "كازوزة",
+    "tags": [
+      "liver",
+      "sandwich",
+      "iron",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "El Dahan Kofta Sandwich",
+    "name_ar": "ساندوتش كفتة الدهان",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 520,
+    "protein_g": 22,
+    "carbs_g": 38,
+    "fat_g": 30,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "El Dahan",
+    "brand_ar": "الدهان",
+    "tags": [
+      "kofta",
+      "grilled",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Bazooka Chicken Meal",
+    "name_ar": "وجبة فراخ بازوكا",
+    "category": "PROTEIN",
+    "serving_size_g": 450,
+    "calories": 780,
+    "protein_g": 40,
+    "carbs_g": 60,
+    "fat_g": 40,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "brand_en": "Bazooka",
+    "brand_ar": "بازوكا",
+    "tags": [
+      "chicken",
+      "meal",
+      "fried",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "TBS Chicken Sandwich",
+    "name_ar": "ساندوتش فراخ تي بي إس",
+    "category": "PROTEIN",
+    "serving_size_g": 280,
+    "calories": 550,
+    "protein_g": 30,
+    "carbs_g": 42,
+    "fat_g": 28,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "TBS",
+    "brand_ar": "تي بي إس",
+    "tags": [
+      "chicken",
+      "sandwich",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Buffalo Burger Classic Meal",
+    "name_ar": "وجبة برجر بافلو كلاسيك",
+    "category": "PROTEIN",
+    "serving_size_g": 450,
+    "calories": 850,
+    "protein_g": 35,
+    "carbs_g": 68,
+    "fat_g": 48,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "brand_en": "Buffalo Burger",
+    "brand_ar": "بافلو برجر",
+    "tags": [
+      "burger",
+      "fries",
+      "meal",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Buns & Guns Smash Burger",
+    "name_ar": "سماش برجر بنز أند جنز",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 620,
+    "protein_g": 32,
+    "carbs_g": 38,
+    "fat_g": 38,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Buns & Guns",
+    "brand_ar": "بنز أند جنز",
+    "tags": [
+      "smash-burger",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Kebdet El Prince Liver Sandwich",
+    "name_ar": "ساندوتش كبدة كبدة الأمير",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 360,
+    "protein_g": 22,
+    "carbs_g": 30,
+    "fat_g": 16,
+    "fiber_g": 2,
+    "iron_mg": 7,
+    "is_egyptian": true,
+    "brand_en": "Kebdet El Prince",
+    "brand_ar": "كبدة الأمير",
+    "tags": [
+      "liver",
+      "famous",
+      "street-food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "El Abd Patisserie Eclair (1 piece)",
+    "name_ar": "إكلير العبد حبة",
+    "category": "CARBS",
+    "serving_size_g": 80,
+    "calories": 280,
+    "protein_g": 4,
+    "carbs_g": 30,
+    "fat_g": 16,
+    "fiber_g": 0.5,
+    "sugar_g": 18,
+    "is_egyptian": true,
+    "brand_en": "El Abd",
+    "brand_ar": "العبد",
+    "tags": [
+      "pastry",
+      "eclair",
+      "dessert"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-oil.jpg"
+  },
+  {
+    "name_en": "El Abd Konafa Nabulsia (1 piece)",
+    "name_ar": "كنافة نابلسية العبد حبة",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 520,
+    "protein_g": 12,
+    "carbs_g": 52,
+    "fat_g": 28,
+    "fiber_g": 1,
+    "sugar_g": 30,
+    "is_egyptian": true,
+    "brand_en": "El Abd",
+    "brand_ar": "العبد",
+    "tags": [
+      "konafa",
+      "dessert",
+      "cheese"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
+  },
+  {
+    "name_en": "Etoile Gateau Chocolate (1 slice)",
+    "name_ar": "جاتو شوكولاتة إيتوال سلايس",
+    "category": "CARBS",
+    "serving_size_g": 120,
+    "calories": 450,
+    "protein_g": 6,
+    "carbs_g": 48,
+    "fat_g": 26,
+    "fiber_g": 2,
+    "sugar_g": 34,
+    "is_egyptian": true,
+    "brand_en": "Etoile",
+    "brand_ar": "إيتوال",
+    "tags": [
+      "cake",
+      "chocolate",
+      "dessert"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Mandarine Koueider Basbousa (1 piece)",
+    "name_ar": "بسبوسة مندرين قويدر حبة",
+    "category": "CARBS",
+    "serving_size_g": 100,
+    "calories": 360,
+    "protein_g": 4,
+    "carbs_g": 48,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "sugar_g": 30,
+    "is_egyptian": true,
+    "brand_en": "Mandarine Koueider",
+    "brand_ar": "مندرين قويدر",
+    "tags": [
+      "basbousa",
+      "dessert",
+      "semolina",
+      "famous"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/semolina.jpg"
+  },
+  {
+    "name_en": "Dukes Grilled Chicken Bowl",
+    "name_ar": "دوكس باول فراخ مشوية",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 480,
+    "protein_g": 38,
+    "carbs_g": 42,
+    "fat_g": 18,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "brand_en": "Dukes",
+    "brand_ar": "دوكس",
+    "tags": [
+      "bowl",
+      "healthy",
+      "chicken",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "The Smokery Smoked Salmon Plate",
+    "name_ar": "ذا سموكري طبق سالمون مدخن",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 320,
+    "protein_g": 28,
+    "carbs_g": 12,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "The Smokery",
+    "brand_ar": "ذا سموكري",
+    "tags": [
+      "salmon",
+      "smoked",
+      "healthy",
+      "premium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salmon.jpg"
+  },
+  {
+    "name_en": "Hardee's Angus Thickburger",
+    "name_ar": "هارديز أنجوس ثيك برجر",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 780,
+    "protein_g": 38,
+    "carbs_g": 50,
+    "fat_g": 48,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "brand_en": "Hardee's",
+    "brand_ar": "هارديز",
+    "tags": [
+      "burger",
+      "beef",
+      "fast-food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Chili's Crispy Chicken Crispers",
+    "name_ar": "تشيليز كريسبي تشيكن كريسبرز",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 780,
+    "protein_g": 36,
+    "carbs_g": 52,
+    "fat_g": 44,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "brand_en": "Chili's",
+    "brand_ar": "تشيليز",
+    "tags": [
+      "chicken",
+      "fried",
+      "american"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Chili's Fajita Chicken",
+    "name_ar": "تشيليز فاهيتا فراخ",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 480,
+    "protein_g": 40,
+    "carbs_g": 28,
+    "fat_g": 22,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "brand_en": "Chili's",
+    "brand_ar": "تشيليز",
+    "tags": [
+      "fajita",
+      "chicken",
+      "mexican"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Tikka Village Chicken Tikka Plate",
+    "name_ar": "تكا فيلاج طبق تكا فراخ",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 550,
+    "protein_g": 42,
+    "carbs_g": 40,
+    "fat_g": 24,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "brand_en": "Tikka Village",
+    "brand_ar": "تكا فيلاج",
+    "tags": [
+      "tikka",
+      "chicken",
+      "grilled",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Andrea Grilled Quarter Chicken with Rice",
+    "name_ar": "أندريا ربع فرخة مشوية بالأرز",
+    "category": "PROTEIN",
+    "serving_size_g": 450,
+    "calories": 620,
+    "protein_g": 42,
+    "carbs_g": 55,
+    "fat_g": 24,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Andrea",
+    "brand_ar": "أندريا",
+    "tags": [
+      "chicken",
+      "grilled",
+      "chain",
+      "complete-meal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Abo Haidar Shawarma (Chicken)",
+    "name_ar": "أبو حيدر شاورما فراخ",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 460,
+    "protein_g": 26,
+    "carbs_g": 40,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Abo Haidar",
+    "brand_ar": "أبو حيدر",
+    "tags": [
+      "shawarma",
+      "chicken",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Shaheen Fried Chicken (2 pieces meal)",
+    "name_ar": "شاهين فراخ مقلية وجبة ٢ حتة",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 720,
+    "protein_g": 35,
+    "carbs_g": 55,
+    "fat_g": 38,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "brand_en": "Shaheen",
+    "brand_ar": "شاهين",
+    "tags": [
+      "chicken",
+      "fried",
+      "meal",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  }
+]

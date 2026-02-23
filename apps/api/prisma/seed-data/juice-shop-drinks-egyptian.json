@@ -1,0 +1,289 @@
+[
+  {
+    "name_en": "Fresh Orange Juice (Aseer Borto'an, 1 glass)",
+    "name_ar": "عصير برتقال طازة (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 140,
+    "protein_g": 2,
+    "carbs_g": 33,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "orange",
+      "fresh",
+      "vitamin_c",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Fresh Mango Juice (Aseer Manga, 1 glass)",
+    "name_ar": "عصير مانجو طازة (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 180,
+    "protein_g": 2,
+    "carbs_g": 42,
+    "fat_g": 1,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "mango",
+      "fresh",
+      "summer",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mango.jpg"
+  },
+  {
+    "name_en": "Fresh Guava Juice (Aseer Gawafa, 1 glass)",
+    "name_ar": "عصير جوافة طازة (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 130,
+    "protein_g": 3,
+    "carbs_g": 30,
+    "fat_g": 1,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "guava",
+      "fresh",
+      "vitamin_c",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/guava.jpg"
+  },
+  {
+    "name_en": "Fresh Guava with Milk (Gawafa bel Laban)",
+    "name_ar": "عصير جوافة باللبن (كوب)",
+    "category": "juice",
+    "serving_size_g": 350,
+    "calories": 200,
+    "protein_g": 8,
+    "carbs_g": 34,
+    "fat_g": 5,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "guava",
+      "milk",
+      "protein",
+      "calcium",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/guava.jpg"
+  },
+  {
+    "name_en": "Fresh Banana with Milk (Moz bel Laban)",
+    "name_ar": "عصير موز باللبن (كوب)",
+    "category": "juice",
+    "serving_size_g": 350,
+    "calories": 220,
+    "protein_g": 8,
+    "carbs_g": 40,
+    "fat_g": 5,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "banana",
+      "milk",
+      "protein",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Cocktail Fruit Juice (Mixed, 1 glass)",
+    "name_ar": "كوكتيل عصير فواكه (كوب)",
+    "category": "juice",
+    "serving_size_g": 350,
+    "calories": 250,
+    "protein_g": 4,
+    "carbs_g": 55,
+    "fat_g": 2,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "cocktail",
+      "mixed_fruit",
+      "high_sugar",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Sahlab (Hot Milk Drink, Winter, 1 cup)",
+    "name_ar": "سحلب (مشروب لبن ساخن، شتوي، كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 6,
+    "carbs_g": 30,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "sahlab",
+      "winter",
+      "hot",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Tamar Hindi (Tamarind Juice, 1 glass)",
+    "name_ar": "تمر هندي (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 110,
+    "protein_g": 0,
+    "carbs_g": 28,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "tamarind",
+      "traditional",
+      "ramadan",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Qamar El-Din (Apricot Juice, Ramadan, 1 glass)",
+    "name_ar": "قمر الدين (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 160,
+    "protein_g": 1,
+    "carbs_g": 40,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "qamar_eldin",
+      "apricot",
+      "ramadan",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apricots.jpg"
+  },
+  {
+    "name_en": "Carob Juice (Kharoub, 1 glass)",
+    "name_ar": "خروب (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 100,
+    "protein_g": 1,
+    "carbs_g": 24,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "carob",
+      "kharoub",
+      "traditional",
+      "ramadan",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Doum Juice (Egyptian Palm Fruit, 1 glass)",
+    "name_ar": "دوم (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 80,
+    "protein_g": 1,
+    "carbs_g": 20,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "doum",
+      "palm",
+      "traditional",
+      "blood_pressure",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Erq Sous (Licorice Root, 1 glass)",
+    "name_ar": "عرق سوس (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 50,
+    "protein_g": 0,
+    "carbs_g": 12,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "licorice",
+      "erq_sous",
+      "ramadan",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Lemon Mint (Limonana, 1 glass)",
+    "name_ar": "ليمون بالنعناع (كوب)",
+    "category": "juice",
+    "serving_size_g": 300,
+    "calories": 100,
+    "protein_g": 0,
+    "carbs_g": 25,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "lemon_mint",
+      "refreshing",
+      "summer",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  },
+  {
+    "name_en": "Avocado Smoothie (Juice Shop Style)",
+    "name_ar": "عصير أفوكادو (ستايل محل عصير)",
+    "category": "juice",
+    "serving_size_g": 350,
+    "calories": 280,
+    "protein_g": 5,
+    "carbs_g": 30,
+    "fat_g": 16,
+    "fiber_g": 7,
+    "is_egyptian": false,
+    "tags": [
+      "juice",
+      "avocado",
+      "smoothie",
+      "healthy_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  }
+]

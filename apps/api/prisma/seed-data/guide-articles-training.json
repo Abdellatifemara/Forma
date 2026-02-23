@@ -1,0 +1,74 @@
+[
+  {
+    "id": "guide-train-001",
+    "title_en": "Complete Beginner's Guide to the Gym",
+    "title_ar": "دليل المبتدئ الكامل للجيم",
+    "category": "training",
+    "content_en": "Starting the gym can be intimidating. Here's everything you need to know:\n\n1. **Pick a Program**: Don't wing it. Choose a proven beginner program like Starting Strength, StrongLifts 5x5, or the Reddit PPL. Follow it for at least 12 weeks before changing.\n\n2. **Learn the Big 5**: Master these movements first — Squat, Bench Press, Deadlift, Overhead Press, Barbell Row. These build 80% of your muscle.\n\n3. **Start Light**: Your first 2-3 weeks are about FORM, not weight. Use just the bar (20kg). Film yourself and compare to tutorials.\n\n4. **Progressive Overload**: Add 2.5kg per session for upper body, 5kg for lower body. When you stall, deload 10% and build back up.\n\n5. **Rest Days Matter**: Muscles grow OUTSIDE the gym. Take 1-2 rest days per week. Sleep 7-9 hours.\n\n6. **Track Everything**: Use a notebook or app to log every workout. If you're not tracking, you're guessing.\n\n7. **Gym Etiquette**: Re-rack weights, wipe equipment, don't curl in the squat rack, don't hog machines during peak hours.",
+    "content_ar": "بداية الجيم ممكن تكون مخيفة. هنا كل اللي محتاج تعرفه:\n\n1. **اختار برنامج**: متعملش حاجات عشوائية. اختار برنامج مثبت للمبتدئين زي Starting Strength أو StrongLifts 5x5.\n\n2. **اتعلم الـ Big 5**: اتقن الحركات دي الأول — سكوات، بنش بريس، ديدلفت، أوفرهيد بريس، باربل رو.\n\n3. **ابدأ خفيف**: أول 2-3 أسابيع عن الفورم مش الوزن.\n\n4. **زيادة تدريجية**: زود 2.5 كيلو كل جلسة للعلوي، 5 كيلو للسفلي.\n\n5. **أيام الراحة مهمة**: العضلات بتكبر بره الجيم.\n\n6. **سجل كل حاجة**: استخدم نوتبوك أو أبليكيشن.\n\n7. **إتيكيت الجيم**: رجع الأوزان مكانها، نظف الأجهزة.",
+    "tags": ["beginner", "gym", "guide", "form", "program"]
+  },
+  {
+    "id": "guide-train-002",
+    "title_en": "How to Build a Bulking Diet on an Egyptian Budget",
+    "title_ar": "إزاي تعمل نظام بالك على ميزانية مصرية",
+    "category": "nutrition",
+    "content_en": "Bulking in Egypt doesn't have to be expensive. Here's a sample 3000+ calorie day under 100 LE:\n\n**Breakfast (7 AM)**: Foul + 3 eggs + 2 baladi bread = ~600 cal, 30g protein (~15 LE)\n**Snack (10 AM)**: Banana + 2 tbsp peanut butter = ~300 cal, 10g protein (~10 LE)\n**Lunch (1 PM)**: Rice (200g) + chicken breast (200g) + salad = ~650 cal, 50g protein (~30 LE)\n**Post-workout (5 PM)**: Oats + milk + honey = ~400 cal, 15g protein (~10 LE)\n**Dinner (8 PM)**: Pasta + ground beef + areesh cheese = ~650 cal, 35g protein (~25 LE)\n**Before bed**: Glass of milk + dates = ~300 cal, 10g protein (~8 LE)\n\n**Total: ~2900 cal, 150g protein, ~98 LE**\n\nKey cheap protein sources: Eggs (12 LE/dozen), Foul (cheap), Lentils, Areesh cheese, Canned tuna, Milk, Chicken thighs.",
+    "content_ar": "البالك في مصر مش لازم يكون غالي. نظام 3000+ سعرة بأقل من 100 جنيه:\n\n**فطار**: فول + 3 بيضات + 2 عيش بلدي = ~600 سعرة\n**سناك**: موزة + 2 معلقة زبدة فول سوداني = ~300 سعرة\n**غداء**: أرز (200 جرام) + صدور فراخ (200 جرام) + سلطة = ~650 سعرة\n**بعد التمرين**: شوفان + لبن + عسل = ~400 سعرة\n**عشاء**: مكرونة + لحمة مفرومة + جبنة قريش = ~650 سعرة\n**قبل النوم**: كوب لبن + تمر = ~300 سعرة",
+    "tags": ["bulking", "budget", "egyptian", "diet", "meal_plan"]
+  },
+  {
+    "id": "guide-train-003",
+    "title_en": "The Cutting Guide: How to Lose Fat Without Losing Muscle",
+    "title_ar": "دليل التنشيف: إزاي تنزل دهون من غير ما تخسر عضلات",
+    "category": "nutrition",
+    "content_en": "Cutting is simple but not easy. Follow these rules:\n\n1. **Calorie Deficit**: Eat 300-500 calories below maintenance. No more — aggressive cuts lose muscle.\n\n2. **High Protein**: 2-2.5g per kg bodyweight during a cut. This is non-negotiable.\n\n3. **Keep Training Heavy**: Don't switch to 'light weights, high reps' during a cut. Keep intensity high, reduce volume slightly.\n\n4. **Cardio Smart**: Add 2-3 sessions of LISS (walking, cycling) per week. Avoid excessive HIIT — it's too fatiguing.\n\n5. **Sleep is King**: Fat loss hormones (leptin, ghrelin) are regulated by sleep. Poor sleep = more hunger + less fat loss.\n\n6. **Patience**: Aim for 0.5-1% bodyweight loss per week. A 80kg person should lose 0.4-0.8kg per week.\n\n7. **Diet Breaks**: Every 8-12 weeks, eat at maintenance for 1-2 weeks. This resets metabolic adaptation.\n\nBest Egyptian cutting foods: Gibna areesh, grilled chicken, tuna, egg whites, foul (no oil), lentil soup, grilled fish, vegetables.",
+    "content_ar": "التنشيف بسيط بس مش سهل. اتبع القواعد دي:\n\n1. **عجز سعرات**: كل 300-500 سعرة أقل من الصيانة.\n2. **بروتين عالي**: 2-2.5 جرام لكل كيلو من وزنك أثناء التنشيف.\n3. **حافظ على التمرين بثقل**: متحولش لأوزان خفيفة.\n4. **كارديو ذكي**: أضف 2-3 جلسات مشي.\n5. **النوم هو الملك**: هرمونات الدهون بتتنظم بالنوم.\n6. **الصبر**: هدفك 0.5-1% من وزنك في الأسبوع.\n7. **بريكات**: كل 8-12 أسبوع، كل على الصيانة لمدة أسبوع-اتنين.",
+    "tags": ["cutting", "fat_loss", "diet", "muscle_preservation"]
+  },
+  {
+    "id": "guide-train-004",
+    "title_en": "How to Fix Your Posture (Desk Worker's Guide)",
+    "title_ar": "إزاي تصلح وقفتك (دليل موظف المكتب)",
+    "category": "training",
+    "content_en": "Sitting all day destroys your posture. Here's how to fix it:\n\n**Common Issues**: Forward head, rounded shoulders, anterior pelvic tilt, tight hip flexors.\n\n**Daily Routine (10 min)**:\n- Wall slides: 2x10\n- Face pulls or band pull-aparts: 3x15\n- Dead bugs: 2x10 each side\n- Couch stretch (hip flexors): 2x60 sec each side\n- Thoracic spine rotation: 2x10 each side\n\n**At Your Desk**: Every 30 minutes, stand up and move for 2 minutes. Set a timer.\n\n**Training Focus**: Strengthen: rear delts, rhomboids, lower traps, glutes. Stretch: chest, hip flexors, upper traps.\n\n**Best Exercises**: Face pulls, band pull-aparts, rows, reverse flies, hip thrusts, dead bugs, planks.",
+    "content_ar": "الجلوس طول اليوم بيدمر وقفتك. إزاي تصلحها:\n\n**المشاكل الشائعة**: رأس للأمام، كتف مدور، ميل حوض أمامي، هيب فليكسور مشدود.\n\n**روتين يومي (10 دقائق)**: وول سلايدز، فيس بولز، ديد باجز، كاوتش ستريتش، روتيشن صدري.\n\n**عند المكتب**: كل 30 دقيقة، قوم واتحرك لمدة دقيقتين.",
+    "tags": ["posture", "desk_worker", "mobility", "daily_routine"]
+  },
+  {
+    "id": "guide-train-005",
+    "title_en": "Understanding Macros: Protein, Carbs, and Fat Explained",
+    "title_ar": "فهم الماكروز: البروتين والكاربز والدهون",
+    "category": "nutrition",
+    "content_en": "**Protein (4 cal/g)**: Building block of muscle. Aim for 1.6-2.2g per kg bodyweight. Sources: chicken, eggs, fish, dairy, lentils.\n\n**Carbohydrates (4 cal/g)**: Your body's preferred energy source. Fuel for training. Don't fear carbs. Sources: rice, bread, oats, potatoes, fruit.\n\n**Fat (9 cal/g)**: Essential for hormones (testosterone!). Don't go below 0.5g per kg. Sources: olive oil, nuts, avocado, egg yolks, cheese.\n\n**Typical Split**:\n- Bulking: 30% protein / 45% carbs / 25% fat\n- Cutting: 35% protein / 35% carbs / 30% fat\n- Maintenance: 30% protein / 40% carbs / 30% fat\n\n**Fiber**: Aim for 25-35g daily for digestion and satiety. Egyptian sources: foul, lentils, vegetables, whole wheat bread.\n\n**The Truth**: Total calories matter most. Then protein. Then everything else. Don't overcomplicate it.",
+    "content_ar": "**البروتين (4 سعرات/جرام)**: حجر بناء العضلات. 1.6-2.2 جرام لكل كيلو.\n\n**الكاربوهيدرات (4 سعرات/جرام)**: مصدر الطاقة المفضل لجسمك. متخافش منها.\n\n**الدهون (9 سعرات/جرام)**: ضرورية للهرمونات. متقللش عن 0.5 جرام لكل كيلو.\n\n**الحقيقة**: السعرات الكلية أهم حاجة. بعدين البروتين. متعقدش الأمور.",
+    "tags": ["macros", "protein", "carbs", "fat", "nutrition_basics"]
+  },
+  {
+    "id": "guide-train-006",
+    "title_en": "Women's Strength Training Guide: Myths vs Reality",
+    "title_ar": "دليل تمارين القوة للبنات: خرافات vs حقيقة",
+    "category": "training",
+    "content_en": "**Myth: 'Lifting heavy makes women bulky'**\nReality: Women have 15-20x less testosterone than men. You will NOT accidentally become bulky. You'll get toned, strong, and confident.\n\n**Myth: 'Women should only do cardio'**\nReality: Strength training burns more calories long-term (builds muscle = higher metabolism), strengthens bones, and creates the 'toned' look everyone wants.\n\n**Myth: 'Women need different exercises'**\nReality: The same exercises work for everyone. Squats, deadlifts, hip thrusts, rows, presses.\n\n**Best Exercises for Women**:\n- Hip thrusts (glutes)\n- Romanian deadlifts (hamstrings/glutes)\n- Bulgarian split squats (legs)\n- Lat pulldowns (back)\n- Overhead press (shoulders)\n\n**Key Differences**: Women may recover faster between sets, can handle more volume, and respond well to higher frequencies (3x/week per muscle group).",
+    "content_ar": "**خرافة: 'الأوزان الثقيلة بتخلي البنات ضخمة'**\nالحقيقة: البنات عندهم تستوستيرون أقل 15-20 مرة من الرجالة. مش هتبقي ضخمة بالغلط.\n\n**خرافة: 'البنات لازم يعملوا كارديو بس'**\nالحقيقة: تمارين القوة بتحرق سعرات أكتر على المدى الطويل.\n\n**أحسن تمارين للبنات**: هيب ثراست، رومانيان ديدلفت، بلغاري سبليت سكوات، لات بولداون، أوفرهيد بريس.",
+    "tags": ["women", "strength_training", "myths", "glutes", "beginner"]
+  },
+  {
+    "id": "guide-train-007",
+    "title_en": "Sleep and Recovery: The Missing Piece of Your Fitness",
+    "title_ar": "النوم والاستشفاء: القطعة الناقصة في لياقتك",
+    "category": "recovery",
+    "content_en": "You can train perfectly and eat perfectly, but without proper sleep, you'll make minimal progress.\n\n**Why Sleep Matters**:\n- Growth hormone is released during deep sleep\n- Testosterone peaks during sleep\n- Muscle protein synthesis increases during rest\n- Poor sleep increases cortisol (muscle-wasting hormone)\n\n**How to Sleep Better**:\n1. Consistent sleep/wake times (even weekends)\n2. Dark, cool room (16-19°C)\n3. No screens 30 min before bed\n4. Caffeine cutoff: 2 PM\n5. Magnesium supplement before bed\n\n**Recovery Strategies**:\n- Deload every 4-6 weeks (50-60% normal volume)\n- Active recovery days (walking, yoga, stretching)\n- Adequate hydration (water throughout the day)\n- Foam rolling for 10 min post-workout\n- Don't train same muscle within 48 hours",
+    "content_ar": "تقدر تتمرن وتاكل مثالي، بس بدون نوم كويس، التقدم هيكون قليل.\n\n**ليه النوم مهم**: هرمون النمو بيتفرز وقت النوم العميق. التستوستيرون بيوصل للذروة. بناء البروتين العضلي بيزيد.\n\n**إزاي تنام أحسن**: مواعيد نوم ثابتة، أوضة غامقة وباردة، بدون شاشات قبل النوم بنص ساعة، الكافيين يوقف الساعة 2 الظهر.",
+    "tags": ["sleep", "recovery", "growth_hormone", "testosterone", "deload"]
+  },
+  {
+    "id": "guide-train-008",
+    "title_en": "Injury Prevention: How to Train Safe for Life",
+    "title_ar": "منع الإصابات: إزاي تتمرن بأمان",
+    "category": "training",
+    "content_en": "The fastest way to lose all progress is to get injured. Follow these principles:\n\n1. **Always Warm Up**: 5-10 min of light cardio + dynamic stretching + warm-up sets before heavy work.\n\n2. **Never Ego Lift**: If your form breaks down, the weight is too heavy. Period.\n\n3. **Balance Your Training**: Push/pull ratio should be roughly 1:1. Most people do too much pushing (chest/shoulders) and not enough pulling (back/rear delts).\n\n4. **Don't Skip Mobility**: 10 min daily of hip, shoulder, and thoracic spine mobility prevents most common injuries.\n\n5. **Listen to Your Body**: Sharp pain = STOP immediately. Dull ache after training = normal DOMS. Pain in a joint = check your form.\n\n6. **Common Injury Areas**:\n- Shoulders: Do face pulls, external rotations daily\n- Lower back: Strengthen core, don't round back on deadlifts\n- Knees: Don't let knees cave in on squats, strengthen VMO\n- Wrists: Use wrist wraps for heavy pressing if needed",
+    "content_ar": "أسرع طريقة تخسر كل التقدم إنك تتصاب. اتبع المبادئ دي:\n\n1. **دايمًا سخن**: 5-10 دقائق كارديو خفيف + ستريتش ديناميكي.\n2. **متعملش إيجو لفتنج**: لو الفورم باظ، الوزن زيادة.\n3. **وازن تمرينك**: نسبة دفع/سحب 1:1.\n4. **متسيبش الموبيليتي**: 10 دقائق يوميًا.\n5. **اسمع جسمك**: ألم حاد = وقف فورًا.",
+    "tags": ["injury_prevention", "safety", "warm_up", "mobility", "form"]
+  }
+]

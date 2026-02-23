@@ -1,0 +1,762 @@
+[
+  {
+    "name_en": "Brown Rice (1 cup cooked)",
+    "name_ar": "أرز بني مطبوخ",
+    "category": "CARBS",
+    "serving_size_g": 195,
+    "calories": 218,
+    "protein_g": 4.5,
+    "carbs_g": 46,
+    "fat_g": 1.8,
+    "fiber_g": 3.5,
+    "is_egyptian": true,
+    "tags": [
+      "rice",
+      "whole-grain",
+      "fiber",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brown-rice.jpg"
+  },
+  {
+    "name_en": "Basmati Rice (1 cup cooked)",
+    "name_ar": "أرز بسمتي مطبوخ",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 250,
+    "protein_g": 5,
+    "carbs_g": 53,
+    "fat_g": 0.5,
+    "fiber_g": 0.7,
+    "is_egyptian": true,
+    "tags": [
+      "rice",
+      "aromatic",
+      "carbs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Freekeh (1 cup cooked)",
+    "name_ar": "فريك مطبوخ",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 260,
+    "protein_g": 12,
+    "carbs_g": 48,
+    "fat_g": 2,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "grain",
+      "whole-grain",
+      "fiber",
+      "protein",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bulgur.jpg"
+  },
+  {
+    "name_en": "Bulgur (1 cup cooked)",
+    "name_ar": "برغل مطبوخ",
+    "category": "CARBS",
+    "serving_size_g": 180,
+    "calories": 152,
+    "protein_g": 5.5,
+    "carbs_g": 34,
+    "fat_g": 0.4,
+    "fiber_g": 8.2,
+    "is_egyptian": true,
+    "tags": [
+      "grain",
+      "whole-grain",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bulgur.jpg"
+  },
+  {
+    "name_en": "Quinoa (1 cup cooked)",
+    "name_ar": "كينوا مطبوخة",
+    "category": "CARBS",
+    "serving_size_g": 185,
+    "calories": 222,
+    "protein_g": 8,
+    "carbs_g": 39,
+    "fat_g": 3.6,
+    "fiber_g": 5.2,
+    "iron_mg": 2.8,
+    "is_egyptian": false,
+    "tags": [
+      "grain",
+      "complete-protein",
+      "gluten-free"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/quinoa.jpg"
+  },
+  {
+    "name_en": "Couscous (1 cup cooked)",
+    "name_ar": "كسكسي مطبوخ",
+    "category": "CARBS",
+    "serving_size_g": 160,
+    "calories": 176,
+    "protein_g": 6,
+    "carbs_g": 36,
+    "fat_g": 0.3,
+    "fiber_g": 2.2,
+    "is_egyptian": true,
+    "tags": [
+      "grain",
+      "pasta",
+      "quick"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/couscous.jpg"
+  },
+  {
+    "name_en": "Spaghetti (1 cup cooked)",
+    "name_ar": "مكرونة اسباجتي مطبوخة",
+    "category": "CARBS",
+    "serving_size_g": 140,
+    "calories": 220,
+    "protein_g": 8,
+    "carbs_g": 43,
+    "fat_g": 1.3,
+    "fiber_g": 2.5,
+    "is_egyptian": false,
+    "tags": [
+      "pasta",
+      "carbs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spaghetti.jpg"
+  },
+  {
+    "name_en": "Penne (1 cup cooked)",
+    "name_ar": "مكرونة بيني مطبوخة",
+    "category": "CARBS",
+    "serving_size_g": 140,
+    "calories": 220,
+    "protein_g": 8,
+    "carbs_g": 43,
+    "fat_g": 1.3,
+    "fiber_g": 2.5,
+    "is_egyptian": false,
+    "tags": [
+      "pasta",
+      "carbs"
+    ]
+  },
+  {
+    "name_en": "Whole Wheat Pasta (1 cup cooked)",
+    "name_ar": "مكرونة سمراء مطبوخة",
+    "category": "CARBS",
+    "serving_size_g": 140,
+    "calories": 174,
+    "protein_g": 7.5,
+    "carbs_g": 37,
+    "fat_g": 0.8,
+    "fiber_g": 6.3,
+    "is_egyptian": false,
+    "tags": [
+      "pasta",
+      "whole-grain",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pasta.jpg"
+  },
+  {
+    "name_en": "Vermicelli / Sha'reyya (Dry, 1/4 cup)",
+    "name_ar": "شعرية جافة",
+    "category": "CARBS",
+    "serving_size_g": 30,
+    "calories": 108,
+    "protein_g": 3.5,
+    "carbs_g": 22,
+    "fat_g": 0.3,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "pasta",
+      "rice-topping",
+      "cooking"
+    ]
+  },
+  {
+    "name_en": "Oats (Rolled, 1/2 cup dry)",
+    "name_ar": "شوفان ملفوف",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 150,
+    "protein_g": 5,
+    "carbs_g": 27,
+    "fat_g": 2.5,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "oats",
+      "breakfast",
+      "fiber",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oats.jpg"
+  },
+  {
+    "name_en": "Oat Bran (1/3 cup dry)",
+    "name_ar": "نخالة الشوفان",
+    "category": "CARBS",
+    "serving_size_g": 30,
+    "calories": 73,
+    "protein_g": 4.9,
+    "carbs_g": 19,
+    "fat_g": 2.1,
+    "fiber_g": 4.5,
+    "is_egyptian": false,
+    "tags": [
+      "fiber",
+      "breakfast",
+      "cholesterol-lowering"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oats.jpg"
+  },
+  {
+    "name_en": "Wheat Bran (2 tbsp)",
+    "name_ar": "ردة / نخالة قمح",
+    "category": "CARBS",
+    "serving_size_g": 14,
+    "calories": 31,
+    "protein_g": 2.2,
+    "carbs_g": 9.3,
+    "fat_g": 0.6,
+    "fiber_g": 6.2,
+    "is_egyptian": true,
+    "tags": [
+      "fiber",
+      "digestive",
+      "diet"
+    ]
+  },
+  {
+    "name_en": "Lentils Red (1 cup cooked)",
+    "name_ar": "عدس أحمر مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 230,
+    "protein_g": 18,
+    "carbs_g": 40,
+    "fat_g": 0.8,
+    "fiber_g": 16,
+    "iron_mg": 6.6,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "protein",
+      "iron",
+      "fiber",
+      "vegan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Lentils Brown (1 cup cooked)",
+    "name_ar": "عدس بني مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 226,
+    "protein_g": 18,
+    "carbs_g": 38,
+    "fat_g": 0.8,
+    "fiber_g": 15.6,
+    "iron_mg": 6.6,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "protein",
+      "iron",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Chickpeas (1 cup cooked)",
+    "name_ar": "حمص حب مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 164,
+    "calories": 269,
+    "protein_g": 14.5,
+    "carbs_g": 45,
+    "fat_g": 4.2,
+    "fiber_g": 12.5,
+    "iron_mg": 4.7,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "protein",
+      "fiber",
+      "hummus"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chickpeas.jpg"
+  },
+  {
+    "name_en": "Fava Beans / Ful (1 cup cooked)",
+    "name_ar": "فول مدمس مطبوخ كوب",
+    "category": "PROTEIN",
+    "serving_size_g": 170,
+    "calories": 187,
+    "protein_g": 13,
+    "carbs_g": 33,
+    "fat_g": 0.7,
+    "fiber_g": 9.2,
+    "iron_mg": 2.5,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "ful",
+      "protein",
+      "staple"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
+  },
+  {
+    "name_en": "White Beans (1 cup cooked)",
+    "name_ar": "فاصوليا بيضاء مطبوخة",
+    "category": "PROTEIN",
+    "serving_size_g": 180,
+    "calories": 249,
+    "protein_g": 17,
+    "carbs_g": 45,
+    "fat_g": 0.6,
+    "fiber_g": 11.3,
+    "iron_mg": 5.1,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "protein",
+      "fiber",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/white-beans.jpg"
+  },
+  {
+    "name_en": "Kidney Beans (1 cup cooked)",
+    "name_ar": "فاصوليا حمراء مطبوخة",
+    "category": "PROTEIN",
+    "serving_size_g": 177,
+    "calories": 225,
+    "protein_g": 15,
+    "carbs_g": 40,
+    "fat_g": 0.9,
+    "fiber_g": 13.1,
+    "iron_mg": 3.9,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "protein",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/kidney-beans.jpg"
+  },
+  {
+    "name_en": "Black-Eyed Peas (1 cup cooked)",
+    "name_ar": "لوبيا مطبوخة",
+    "category": "PROTEIN",
+    "serving_size_g": 172,
+    "calories": 200,
+    "protein_g": 13.2,
+    "carbs_g": 36,
+    "fat_g": 0.9,
+    "fiber_g": 11.1,
+    "iron_mg": 4.3,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "protein",
+      "fiber",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peas.jpg"
+  },
+  {
+    "name_en": "Green Split Peas (1 cup cooked)",
+    "name_ar": "بسلة مجروشة مطبوخة",
+    "category": "PROTEIN",
+    "serving_size_g": 196,
+    "calories": 231,
+    "protein_g": 16,
+    "carbs_g": 41,
+    "fat_g": 0.8,
+    "fiber_g": 16.3,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "protein",
+      "fiber",
+      "soup"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peas.jpg"
+  },
+  {
+    "name_en": "Almonds (1/4 cup)",
+    "name_ar": "لوز",
+    "category": "FATS",
+    "serving_size_g": 35,
+    "calories": 207,
+    "protein_g": 7.5,
+    "carbs_g": 7.5,
+    "fat_g": 18,
+    "fiber_g": 4.4,
+    "vitamin_e_mg": 9.3,
+    "calcium_mg": 95,
+    "is_egyptian": true,
+    "tags": [
+      "nuts",
+      "protein",
+      "healthy-fat",
+      "snack",
+      "vitamin-e"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/almonds.jpg"
+  },
+  {
+    "name_en": "Walnuts (1/4 cup halves)",
+    "name_ar": "عين جمل",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 196,
+    "protein_g": 4.6,
+    "carbs_g": 4.1,
+    "fat_g": 19.6,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "nuts",
+      "omega-3",
+      "brain-health",
+      "healthy-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/walnuts.jpg"
+  },
+  {
+    "name_en": "Cashews (1/4 cup)",
+    "name_ar": "كاجو",
+    "category": "FATS",
+    "serving_size_g": 35,
+    "calories": 195,
+    "protein_g": 6.5,
+    "carbs_g": 11,
+    "fat_g": 15.5,
+    "fiber_g": 1.2,
+    "iron_mg": 2.3,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "snack",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cashews.jpg"
+  },
+  {
+    "name_en": "Pistachios (1/4 cup, shelled)",
+    "name_ar": "فستق",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 6,
+    "carbs_g": 8,
+    "fat_g": 14,
+    "fiber_g": 3,
+    "potassium_mg": 310,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "protein",
+      "fiber",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pistachios.jpg"
+  },
+  {
+    "name_en": "Hazelnuts / Bunduq (1/4 cup)",
+    "name_ar": "بندق",
+    "category": "FATS",
+    "serving_size_g": 34,
+    "calories": 213,
+    "protein_g": 5,
+    "carbs_g": 6,
+    "fat_g": 21,
+    "fiber_g": 3.3,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "healthy-fat",
+      "vitamin-e"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hazelnuts.jpg"
+  },
+  {
+    "name_en": "Pine Nuts (2 tbsp)",
+    "name_ar": "صنوبر",
+    "category": "FATS",
+    "serving_size_g": 20,
+    "calories": 135,
+    "protein_g": 2.7,
+    "carbs_g": 2.7,
+    "fat_g": 14,
+    "fiber_g": 0.7,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "garnish",
+      "cooking"
+    ]
+  },
+  {
+    "name_en": "Peanuts (1/4 cup)",
+    "name_ar": "فول سوداني",
+    "category": "FATS",
+    "serving_size_g": 36,
+    "calories": 207,
+    "protein_g": 9.4,
+    "carbs_g": 6,
+    "fat_g": 18,
+    "fiber_g": 3.1,
+    "is_egyptian": true,
+    "tags": [
+      "nuts",
+      "protein",
+      "snack",
+      "cheap"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanuts.jpg"
+  },
+  {
+    "name_en": "Peanut Butter (2 tbsp)",
+    "name_ar": "زبدة فول سوداني",
+    "category": "FATS",
+    "serving_size_g": 32,
+    "calories": 190,
+    "protein_g": 7,
+    "carbs_g": 7,
+    "fat_g": 16,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "spread",
+      "protein",
+      "healthy-fat",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
+  },
+  {
+    "name_en": "Almond Butter (2 tbsp)",
+    "name_ar": "زبدة لوز",
+    "category": "FATS",
+    "serving_size_g": 32,
+    "calories": 196,
+    "protein_g": 7,
+    "carbs_g": 6,
+    "fat_g": 18,
+    "fiber_g": 3.3,
+    "calcium_mg": 110,
+    "is_egyptian": false,
+    "tags": [
+      "spread",
+      "protein",
+      "healthy-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Tahini (2 tbsp)",
+    "name_ar": "طحينة",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 178,
+    "protein_g": 5,
+    "carbs_g": 6,
+    "fat_g": 16,
+    "fiber_g": 1.4,
+    "calcium_mg": 130,
+    "iron_mg": 2.7,
+    "is_egyptian": true,
+    "tags": [
+      "sesame",
+      "condiment",
+      "calcium",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Sunflower Seeds (1/4 cup, shelled)",
+    "name_ar": "لب سوري",
+    "category": "FATS",
+    "serving_size_g": 35,
+    "calories": 207,
+    "protein_g": 7.3,
+    "carbs_g": 7,
+    "fat_g": 18,
+    "fiber_g": 3,
+    "vitamin_e_mg": 12,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "vitamin-e",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sunflower-seeds.jpg"
+  },
+  {
+    "name_en": "Pumpkin Seeds (1/4 cup, shelled)",
+    "name_ar": "لب أبيض",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 8.5,
+    "carbs_g": 4,
+    "fat_g": 14.5,
+    "fiber_g": 1.7,
+    "iron_mg": 4.2,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "iron",
+      "zinc",
+      "protein"
+    ]
+  },
+  {
+    "name_en": "Watermelon Seeds (Leb, 1/4 cup)",
+    "name_ar": "لب عباد (سوبر)",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 160,
+    "protein_g": 8,
+    "carbs_g": 4.5,
+    "fat_g": 13.5,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "snack",
+      "protein",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/watermelon.jpg"
+  },
+  {
+    "name_en": "Chia Seeds (2 tbsp)",
+    "name_ar": "بذور شيا",
+    "category": "FATS",
+    "serving_size_g": 20,
+    "calories": 97,
+    "protein_g": 3.3,
+    "carbs_g": 8.4,
+    "fat_g": 6.1,
+    "fiber_g": 6.9,
+    "calcium_mg": 126,
+    "omega_3_mg": 3500,
+    "is_egyptian": false,
+    "tags": [
+      "seeds",
+      "superfood",
+      "omega-3",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chia-seeds.jpg"
+  },
+  {
+    "name_en": "Flaxseeds (2 tbsp, ground)",
+    "name_ar": "بذور كتان مطحونة",
+    "category": "FATS",
+    "serving_size_g": 14,
+    "calories": 75,
+    "protein_g": 2.6,
+    "carbs_g": 4.1,
+    "fat_g": 6,
+    "fiber_g": 3.8,
+    "omega_3_mg": 3200,
+    "is_egyptian": false,
+    "tags": [
+      "seeds",
+      "omega-3",
+      "fiber",
+      "lignans"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flaxseed.jpg"
+  },
+  {
+    "name_en": "Hemp Seeds (3 tbsp)",
+    "name_ar": "بذور القنب",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 166,
+    "protein_g": 10,
+    "carbs_g": 2.6,
+    "fat_g": 14.6,
+    "fiber_g": 1.2,
+    "iron_mg": 2.4,
+    "is_egyptian": false,
+    "tags": [
+      "seeds",
+      "complete-protein",
+      "omega-3",
+      "omega-6"
+    ]
+  },
+  {
+    "name_en": "Sesame Seeds (2 tbsp)",
+    "name_ar": "سمسم",
+    "category": "FATS",
+    "serving_size_g": 18,
+    "calories": 103,
+    "protein_g": 3.2,
+    "carbs_g": 4.2,
+    "fat_g": 9,
+    "fiber_g": 2.1,
+    "calcium_mg": 176,
+    "iron_mg": 2.6,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "calcium",
+      "iron",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sesame-seeds.jpg"
+  },
+  {
+    "name_en": "Mixed Egyptian Nuts (Leb w Makassarat, 1/4 cup)",
+    "name_ar": "مكسرات مشكلة مصرية",
+    "category": "FATS",
+    "serving_size_g": 35,
+    "calories": 195,
+    "protein_g": 6,
+    "carbs_g": 8,
+    "fat_g": 17,
+    "fiber_g": 2.5,
+    "is_egyptian": true,
+    "tags": [
+      "nuts",
+      "mixed",
+      "snack",
+      "traditional"
+    ]
+  },
+  {
+    "name_en": "Dukkah (Egyptian Spice Nut Mix, 2 tbsp)",
+    "name_ar": "دقة مصرية",
+    "category": "FATS",
+    "serving_size_g": 20,
+    "calories": 100,
+    "protein_g": 4,
+    "carbs_g": 5,
+    "fat_g": 7.5,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "spice-mix",
+      "nuts",
+      "sesame",
+      "traditional"
+    ]
+  }
+]

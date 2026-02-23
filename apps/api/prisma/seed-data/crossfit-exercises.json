@@ -1,0 +1,4611 @@
+[
+  {
+    "id": "cf-kipping-pullup",
+    "name_en": "Kipping Pull-Up",
+    "name_ar": "عقلة كيبنج",
+    "description_en": "Pull-up using hip drive and kip swing for momentum.",
+    "description_ar": "عقلة باستخدام دفع الورك والأرجحة.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "biceps",
+      "core"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Start in dead hang",
+      "Initiate kip swing with shoulders",
+      "Drive hips to bar explosively",
+      "Pull chin over bar"
+    ],
+    "instructions_ar": [
+      "ابدأ من تعليق كامل",
+      "ابدأ الأرجحة بالكتف",
+      "ادفع الورك للبار بقوة",
+      "اسحب الدقن فوق البار"
+    ],
+    "tips_en": [
+      "Master the kip swing first"
+    ],
+    "tips_ar": [
+      "اتقن الأرجحة الأول"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-butterfly-pullup",
+    "name_en": "Butterfly Pull-Up",
+    "name_ar": "عقلة باترفلاي",
+    "description_en": "Fast cycling pull-up using continuous circular motion.",
+    "description_ar": "عقلة سريعة بحركة دائرية مستمرة.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "biceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Start with kip swing",
+      "Create circular pulling pattern",
+      "Keep motion continuous",
+      "Chin over bar each rep"
+    ],
+    "instructions_ar": [
+      "ابدأ بالأرجحة",
+      "اعمل حركة سحب دائرية",
+      "خلي الحركة مستمرة",
+      "الدقن فوق البار كل تكرار"
+    ],
+    "tips_en": [
+      "Learn kipping pull-ups first"
+    ],
+    "tips_ar": [
+      "اتعلم الكيبنج الأول"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-c2b-pullup",
+    "name_en": "Chest-to-Bar Pull-Up",
+    "name_ar": "صدر للبار",
+    "description_en": "Pull-up where chest touches the bar at the top.",
+    "description_ar": "عقلة الصدر بيلمس البار فوق.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "biceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Kip or butterfly swing",
+      "Pull aggressively",
+      "Touch chest to bar",
+      "Control descent"
+    ],
+    "instructions_ar": [
+      "أرجحة كيب أو باترفلاي",
+      "اسحب بقوة",
+      "لمّس الصدر بالبار",
+      "تحكم في النزول"
+    ],
+    "tips_en": [
+      "Bigger kip than regular pull-ups"
+    ],
+    "tips_ar": [
+      "أرجحة أكبر من العقلة العادية"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 8,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-strict-pullup",
+    "name_en": "Strict Pull-Up",
+    "name_ar": "عقلة ستريكت",
+    "description_en": "Pull-up with no kipping or momentum.",
+    "description_ar": "عقلة من غير أرجحة أو زخم.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "biceps"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Dead hang start",
+      "Pull straight up",
+      "Chin over bar",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "ابدأ من تعليق",
+      "اسحب لفوق مباشرة",
+      "الدقن فوق البار",
+      "انزل بتحكم"
+    ],
+    "tips_en": [
+      "Build strict strength before kipping"
+    ],
+    "tips_ar": [
+      "ابني قوة ستريكت قبل الكيبنج"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 8,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "gymnastics",
+      "strength"
+    ]
+  },
+  {
+    "id": "cf-bar-muscleup",
+    "name_en": "Bar Muscle-Up",
+    "name_ar": "بار ماسل أب",
+    "description_en": "Kipping movement to get above the bar in one motion.",
+    "description_ar": "حركة كيبنج للوصول فوق البار في حركة واحدة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Big kip swing",
+      "Pull hips to bar",
+      "Lean over bar aggressively",
+      "Press out to lockout"
+    ],
+    "instructions_ar": [
+      "أرجحة كبيرة",
+      "اسحب الورك للبار",
+      "ميّل فوق البار بقوة",
+      "ادفع للقفل"
+    ],
+    "tips_en": [
+      "The transition is the key — practice on low bar"
+    ],
+    "tips_ar": [
+      "الانتقال هو المفتاح — تمرن على بار واطي"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-ring-muscleup",
+    "name_en": "Ring Muscle-Up",
+    "name_ar": "رينج ماسل أب",
+    "description_en": "Muscle-up performed on gymnastic rings.",
+    "description_ar": "ماسل أب على الحلقات.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "triceps",
+      "chest"
+    ],
+    "equipment": [
+      "rings"
+    ],
+    "difficulty": "expert",
+    "instructions_en": [
+      "False grip on rings",
+      "Kip and pull rings to chest",
+      "Fast transition to dip",
+      "Press to lockout"
+    ],
+    "instructions_ar": [
+      "قبضة فولس جريب",
+      "أرجحة واسحب لصدرك",
+      "انتقال سريع للديب",
+      "ادفع للقفل"
+    ],
+    "tips_en": [
+      "Master false grip and strict ring dips first"
+    ],
+    "tips_ar": [
+      "اتقن الفولس جريب ورينج ديبس ستريكت الأول"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-strict-ring-muscleup",
+    "name_en": "Strict Ring Muscle-Up",
+    "name_ar": "رينج ماسل أب ستريكت",
+    "description_en": "Ring muscle-up with no kipping.",
+    "description_ar": "ماسل أب على الحلقات من غير أرجحة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "triceps",
+      "chest"
+    ],
+    "equipment": [
+      "rings"
+    ],
+    "difficulty": "expert",
+    "instructions_en": [
+      "False grip",
+      "Pull rings to chest strictly",
+      "Transition smoothly",
+      "Press out"
+    ],
+    "instructions_ar": [
+      "فولس جريب",
+      "اسحب الحلقات لصدرك ستريكت",
+      "انتقل بسلاسة",
+      "ادفع لفوق"
+    ],
+    "tips_en": [
+      "Need 15+ strict pull-ups and 15+ strict dips"
+    ],
+    "tips_ar": [
+      "محتاج 15+ عقلة و15+ ديب ستريكت"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 2,
+    "default_duration": null,
+    "default_rest": 150,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-ring-dip",
+    "name_en": "Ring Dip",
+    "name_ar": "رينج ديب",
+    "description_en": "Dip performed on gymnastic rings.",
+    "description_ar": "ديب على الحلقات.",
+    "category": "crossfit",
+    "primary_muscle": "triceps",
+    "secondary_muscles": [
+      "chest",
+      "shoulders"
+    ],
+    "equipment": [
+      "rings"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Support position on rings",
+      "Lower to 90 degrees",
+      "Press to full lockout",
+      "Turn rings out at top"
+    ],
+    "instructions_ar": [
+      "وضع الدعم على الحلقات",
+      "انزل لـ 90 درجة",
+      "ادفع للقفل الكامل",
+      "لف الحلقات لبرا فوق"
+    ],
+    "tips_en": [
+      "Rings turned out at top = full rep"
+    ],
+    "tips_ar": [
+      "الحلقات للبرا فوق = تكرار كامل"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 8,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-strict-hspu",
+    "name_en": "Strict HSPU",
+    "name_ar": "هاند ستاند بوش أب ستريكت",
+    "description_en": "Handstand push-up with no kipping against wall.",
+    "description_ar": "ضغط هاند ستاند من غير كيبنج على الحيطة.",
+    "category": "crossfit",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Kick up to wall",
+      "Lower head to mat",
+      "Press straight up",
+      "Full lockout"
+    ],
+    "instructions_ar": [
+      "اركل لفوق على الحيطة",
+      "نزّل الراس للمات",
+      "ادفع لفوق",
+      "قفل كامل"
+    ],
+    "tips_en": [
+      "Build strict press strength first"
+    ],
+    "tips_ar": [
+      "ابني قوة الضغط الستريكت الأول"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-kipping-hspu",
+    "name_en": "Kipping HSPU",
+    "name_ar": "هاند ستاند بوش أب كيبنج",
+    "description_en": "Handstand push-up using hip drive for momentum.",
+    "description_ar": "ضغط هاند ستاند بدفع الورك.",
+    "category": "crossfit",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Kick to wall in tripod",
+      "Kip hips up aggressively",
+      "Press to lockout",
+      "Control descent"
+    ],
+    "instructions_ar": [
+      "اركل للحيطة في وضع ثلاثي",
+      "ادفع الورك لفوق بقوة",
+      "ادفع للقفل",
+      "تحكم في النزول"
+    ],
+    "tips_en": [
+      "Use an AbMat for head protection"
+    ],
+    "tips_ar": [
+      "استخدم AbMat لحماية الراس"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 8,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-deficit-hspu",
+    "name_en": "Deficit HSPU",
+    "name_ar": "ديفيسيت HSPU",
+    "description_en": "HSPU with hands elevated on plates for extra range.",
+    "description_ar": "HSPU والإيدين مرفوعين على بلاتس لمدى أكبر.",
+    "category": "crossfit",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "expert",
+    "instructions_en": [
+      "Hands on plates/parallettes",
+      "Lower head below hand level",
+      "Press to full lockout",
+      "More ROM than standard"
+    ],
+    "instructions_ar": [
+      "الإيدين على بلاتس",
+      "نزّل الراس تحت مستوى اليد",
+      "ادفع للقفل",
+      "مدى حركة أكبر"
+    ],
+    "tips_en": [
+      "Master strict HSPU before deficit"
+    ],
+    "tips_ar": [
+      "اتقن HSPU ستريكت قبل الديفيسيت"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-toes-to-bar",
+    "name_en": "Toes-to-Bar",
+    "name_ar": "أصابع للبار",
+    "description_en": "Hang from bar and touch toes to bar.",
+    "description_ar": "اتعلق من البار ولمّس أصابع رجلك بالبار.",
+    "category": "crossfit",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors",
+      "back"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Dead hang",
+      "Initiate kip",
+      "Drive toes to bar",
+      "Control back swing"
+    ],
+    "instructions_ar": [
+      "تعليق كامل",
+      "ابدأ الكيب",
+      "ادفع الأصابع للبار",
+      "تحكم في الرجوع"
+    ],
+    "tips_en": [
+      "Use the kip rhythm, don't just crunch"
+    ],
+    "tips_ar": [
+      "استخدم إيقاع الكيب مش بس كرنش"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "gymnastics",
+      "core"
+    ]
+  },
+  {
+    "id": "cf-knees-to-elbows",
+    "name_en": "Knees-to-Elbows",
+    "name_ar": "ركب للكوع",
+    "description_en": "Hanging knee raise to elbow level.",
+    "description_ar": "رفع الركبة للكوع وانت متعلق.",
+    "category": "crossfit",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Hang from bar",
+      "Kip and drive knees up",
+      "Touch knees to elbows",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "اتعلق من البار",
+      "كيب وارفع الركب",
+      "لمّس الركب بالكوع",
+      "انزل بتحكم"
+    ],
+    "tips_en": [
+      "Scale for toes-to-bar"
+    ],
+    "tips_ar": [
+      "تعديل للأصابع للبار"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "gymnastics",
+      "core"
+    ]
+  },
+  {
+    "id": "cf-pistol-squat",
+    "name_en": "Pistol Squat",
+    "name_ar": "بيستول سكوات",
+    "description_en": "Single-leg squat to full depth.",
+    "description_ar": "سكوات برجل واحدة لعمق كامل.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Stand on one leg",
+      "Extend other leg forward",
+      "Squat to full depth",
+      "Stand back up"
+    ],
+    "instructions_ar": [
+      "قف على رجل واحدة",
+      "مد الرجل التانية قدام",
+      "انزل لعمق كامل",
+      "ارجع قوم"
+    ],
+    "tips_en": [
+      "Ankle mobility is usually the limiter"
+    ],
+    "tips_ar": [
+      "مرونة الكاحل عادة هي المشكلة"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-rope-climb-legless",
+    "name_en": "Rope Climb (Legless)",
+    "name_ar": "تسلق الحبل بدون رجل",
+    "description_en": "Climb a rope using only arms.",
+    "description_ar": "تسلق الحبل بالدراعات بس.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "rope"
+    ],
+    "difficulty": "expert",
+    "instructions_en": [
+      "Grip rope high",
+      "Pull up using arms only",
+      "Legs stay straight",
+      "Controlled descent"
+    ],
+    "instructions_ar": [
+      "امسك الحبل عالي",
+      "اسحب بالدراعات بس",
+      "الرجل مستقيمة",
+      "نزول متحكم"
+    ],
+    "tips_en": [
+      "Need strong strict pull-ups first"
+    ],
+    "tips_ar": [
+      "محتاج عقلة ستريكت قوية الأول"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 2,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-rope-climb",
+    "name_en": "Rope Climb",
+    "name_ar": "تسلق الحبل",
+    "description_en": "Climb a rope using arms and leg wrap.",
+    "description_ar": "تسلق الحبل بالدراعات ولف الرجل.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "biceps",
+      "forearms"
+    ],
+    "equipment": [
+      "rope"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Jump to rope",
+      "Wrap feet using J-hook or S-hook",
+      "Stand on feet and reach higher",
+      "Repeat to top"
+    ],
+    "instructions_ar": [
+      "انط للحبل",
+      "لف الرجل بطريقة J أو S",
+      "قف وامسك أعلى",
+      "كرر للفوق"
+    ],
+    "tips_en": [
+      "The foot wrap is everything — practice it"
+    ],
+    "tips_ar": [
+      "لف الرجل هو كل حاجة — تمرن عليه"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-l-sit-rings",
+    "name_en": "L-Sit (Rings)",
+    "name_ar": "L-Sit رينجز",
+    "description_en": "Hold L position on rings.",
+    "description_ar": "تعليق وضع L على الحلقات.",
+    "category": "crossfit",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors",
+      "triceps"
+    ],
+    "equipment": [
+      "rings"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Support on rings",
+      "Lift legs to 90 degrees",
+      "Hold position",
+      "Keep rings turned out"
+    ],
+    "instructions_ar": [
+      "دعم على الحلقات",
+      "ارفع الرجل 90 درجة",
+      "امسك الوضع",
+      "الحلقات للبرا"
+    ],
+    "tips_en": [
+      "Start with tuck L-sit"
+    ],
+    "tips_ar": [
+      "ابدأ بتك L-sit"
+    ],
+    "is_time_based": true,
+    "default_sets": 4,
+    "default_reps": 1,
+    "default_duration": 20,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "gymnastics",
+      "core"
+    ]
+  },
+  {
+    "id": "cf-ring-support-hold",
+    "name_en": "Ring Support Hold",
+    "name_ar": "تعليق دعم رينج",
+    "description_en": "Hold support position at top of rings.",
+    "description_ar": "امسك وضع الدعم فوق الحلقات.",
+    "category": "crossfit",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "rings"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Jump to support",
+      "Lock arms out",
+      "Turn rings out",
+      "Hold steady"
+    ],
+    "instructions_ar": [
+      "انط للدعم",
+      "قفّل الدراعات",
+      "لف الحلقات للبرا",
+      "امسك ثابت"
+    ],
+    "tips_en": [
+      "Foundation for all ring work"
+    ],
+    "tips_ar": [
+      "أساس كل شغل الحلقات"
+    ],
+    "is_time_based": true,
+    "default_sets": 4,
+    "default_reps": 1,
+    "default_duration": 30,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-handstand-walk",
+    "name_en": "Handstand Walk",
+    "name_ar": "مشي على اليد",
+    "description_en": "Walk on hands in handstand position.",
+    "description_ar": "مشي على الإيدين في وضع هاند ستاند.",
+    "category": "crossfit",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "core",
+      "triceps"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "expert",
+    "instructions_en": [
+      "Kick to handstand",
+      "Shift weight side to side",
+      "Walk hands forward",
+      "Keep core tight"
+    ],
+    "instructions_ar": [
+      "اركل لهاند ستاند",
+      "حرّك الوزن يمين وشمال",
+      "امشي بالإيدين",
+      "شد البطن"
+    ],
+    "tips_en": [
+      "Practice wall walks and freestanding holds first"
+    ],
+    "tips_ar": [
+      "تمرن على وول ووك وتعليق حر الأول"
+    ],
+    "is_time_based": true,
+    "default_sets": 4,
+    "default_reps": 1,
+    "default_duration": 30,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "cf-bar-kip-swing",
+    "name_en": "Bar Kip Swing",
+    "name_ar": "أرجحة كيب",
+    "description_en": "Foundation kipping movement on pull-up bar.",
+    "description_ar": "حركة الكيب الأساسية على بار العقلة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Dead hang",
+      "Push shoulders forward (arch)",
+      "Pull shoulders back (hollow)",
+      "Build rhythm"
+    ],
+    "instructions_ar": [
+      "تعليق",
+      "ادفع الكتف قدام (قوس)",
+      "اسحب الكتف ورا (هولو)",
+      "ابني الإيقاع"
+    ],
+    "tips_en": [
+      "Master this before any kipping movement"
+    ],
+    "tips_ar": [
+      "اتقن ده قبل أي حركة كيبنج"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "gymnastics",
+      "beginner"
+    ]
+  },
+  {
+    "id": "cf-clean-and-jerk",
+    "name_en": "Clean & Jerk",
+    "name_ar": "كلين آند جيرك",
+    "description_en": "Full squat clean followed by overhead jerk.",
+    "description_ar": "سكوات كلين كامل ثم جيرك فوق الراس.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Deadlift to mid-thigh",
+      "Explosive hip extension",
+      "Catch in full squat",
+      "Stand, dip, drive, split jerk"
+    ],
+    "instructions_ar": [
+      "ارفع للفخذ",
+      "دفع ورك انفجاري",
+      "استقبل في سكوات كامل",
+      "قوم، انزل، ادفع، سبليت جيرك"
+    ],
+    "tips_en": [
+      "Two separate lifts in one — practice each individually"
+    ],
+    "tips_ar": [
+      "رفعتين في واحدة — تمرن على كل واحدة لوحدها"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 2,
+    "default_duration": null,
+    "default_rest": 150,
+    "tags": [
+      "crossfit",
+      "weightlifting",
+      "olympic"
+    ]
+  },
+  {
+    "id": "cf-power-clean",
+    "name_en": "Power Clean",
+    "name_ar": "باور كلين",
+    "description_en": "Clean caught above parallel (no full squat).",
+    "description_ar": "كلين الاستقبال فوق الموازي (من غير سكوات كامل).",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "back",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Setup with shoulders over bar",
+      "Drive through legs and hips",
+      "Shrug and pull under",
+      "Catch in quarter squat"
+    ],
+    "instructions_ar": [
+      "الكتف فوق البار",
+      "ادفع بالرجل والورك",
+      "ارفع الكتف واسحب تحت",
+      "استقبل في ربع سكوات"
+    ],
+    "tips_en": [
+      "Keep bar close to body"
+    ],
+    "tips_ar": [
+      "خلي البار قريب من الجسم"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-hang-clean",
+    "name_en": "Hang Clean",
+    "name_ar": "هانج كلين",
+    "description_en": "Clean starting from hang position above knee.",
+    "description_ar": "كلين من وضع التعليق فوق الركبة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "back"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Start at hang (above knee)",
+      "Dip and drive hips",
+      "Pull under bar",
+      "Catch in front rack"
+    ],
+    "instructions_ar": [
+      "ابدأ من التعليق",
+      "انزل وادفع الورك",
+      "اسحب تحت البار",
+      "استقبل في فرنت راك"
+    ],
+    "tips_en": [
+      "Great for learning clean timing"
+    ],
+    "tips_ar": [
+      "ممتاز لتعلم توقيت الكلين"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-squat-clean",
+    "name_en": "Squat Clean",
+    "name_ar": "سكوات كلين",
+    "description_en": "Clean caught in full front squat position.",
+    "description_ar": "كلين الاستقبال في فرنت سكوات كامل.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "back",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Pull from floor",
+      "Triple extension",
+      "Pull under fast",
+      "Catch in deep front squat, stand"
+    ],
+    "instructions_ar": [
+      "اسحب من الأرض",
+      "دفع ثلاثي",
+      "اسحب تحت بسرعة",
+      "استقبل في فرنت سكوات عميق وقوم"
+    ],
+    "tips_en": [
+      "Speed under the bar is key"
+    ],
+    "tips_ar": [
+      "السرعة تحت البار هي المفتاح"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 2,
+    "default_duration": null,
+    "default_rest": 150,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-snatch",
+    "name_en": "Snatch",
+    "name_ar": "سناتش",
+    "description_en": "Full squat snatch — bar from floor to overhead in one motion.",
+    "description_ar": "سناتش كامل — البار من الأرض لفوق الراس في حركة واحدة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "back",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Wide grip setup",
+      "Pull to hip",
+      "Explosive extension",
+      "Pull under, catch in overhead squat"
+    ],
+    "instructions_ar": [
+      "قبضة واسعة",
+      "اسحب للورك",
+      "دفع انفجاري",
+      "اسحب تحت واستقبل في OHS"
+    ],
+    "tips_en": [
+      "Most technical lift — drill positions daily"
+    ],
+    "tips_ar": [
+      "أصعب رفعة تقنياً — تمرن على الأوضاع يومياً"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 2,
+    "default_duration": null,
+    "default_rest": 150,
+    "tags": [
+      "crossfit",
+      "weightlifting",
+      "olympic"
+    ]
+  },
+  {
+    "id": "cf-power-snatch",
+    "name_en": "Power Snatch",
+    "name_ar": "باور سناتش",
+    "description_en": "Snatch caught above parallel.",
+    "description_ar": "سناتش الاستقبال فوق الموازي.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Wide grip pull",
+      "Hip extension",
+      "Punch overhead",
+      "Catch standing"
+    ],
+    "instructions_ar": [
+      "سحب بقبضة واسعة",
+      "دفع الورك",
+      "ادفع فوق الراس",
+      "استقبل واقف"
+    ],
+    "tips_en": [
+      "Common in WODs — practice cycling reps"
+    ],
+    "tips_ar": [
+      "شائع في WODs — تمرن على تكرارات متتالية"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-hang-snatch",
+    "name_en": "Hang Snatch",
+    "name_ar": "هانج سناتش",
+    "description_en": "Snatch from hang position.",
+    "description_ar": "سناتش من وضع التعليق.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Hang position above knee",
+      "Dip and drive",
+      "Pull under",
+      "Catch overhead"
+    ],
+    "instructions_ar": [
+      "وضع تعليق فوق الركبة",
+      "انزل وادفع",
+      "اسحب تحت",
+      "استقبل فوق الراس"
+    ],
+    "tips_en": [
+      "Good for snatch timing work"
+    ],
+    "tips_ar": [
+      "كويس لتمرين توقيت السناتش"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-overhead-squat",
+    "name_en": "Overhead Squat",
+    "name_ar": "أوفرهيد سكوات",
+    "description_en": "Squat with barbell locked out overhead.",
+    "description_ar": "سكوات والبار مقفول فوق الراس.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Snatch grip overhead",
+      "Active shoulders",
+      "Squat to full depth",
+      "Keep bar over midfoot"
+    ],
+    "instructions_ar": [
+      "قبضة سناتش فوق الراس",
+      "كتف نشط",
+      "سكوات لعمق كامل",
+      "البار فوق نص القدم"
+    ],
+    "tips_en": [
+      "Mobility is the limiter for most people"
+    ],
+    "tips_ar": [
+      "المرونة هي المشكلة لأغلب الناس"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-thruster",
+    "name_en": "Thruster",
+    "name_ar": "ثرستر",
+    "description_en": "Front squat into push press in one motion.",
+    "description_ar": "فرنت سكوات لبوش بريس في حركة واحدة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Front rack position",
+      "Full front squat",
+      "Drive up explosively",
+      "Press to lockout overhead"
+    ],
+    "instructions_ar": [
+      "وضع فرنت راك",
+      "فرنت سكوات كامل",
+      "ادفع لفوق بقوة",
+      "اضغط للقفل فوق الراس"
+    ],
+    "tips_en": [
+      "Use the hip drive — don't arm press"
+    ],
+    "tips_ar": [
+      "استخدم دفع الورك — متضغطش بالدراع"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 8,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-cluster",
+    "name_en": "Cluster",
+    "name_ar": "كلستر",
+    "description_en": "Squat clean directly into a thruster.",
+    "description_ar": "سكوات كلين مباشرة لثرستر.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Clean to front squat",
+      "Stand and press overhead",
+      "One continuous movement",
+      "Touch and go from floor"
+    ],
+    "instructions_ar": [
+      "كلين لفرنت سكوات",
+      "قوم واضغط فوق الراس",
+      "حركة واحدة مستمرة",
+      "لمس وارجع من الأرض"
+    ],
+    "tips_en": [
+      "Brutal in WODs — pace yourself"
+    ],
+    "tips_ar": [
+      "وحشي في WODs — وزّع مجهودك"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-push-press",
+    "name_en": "Push Press",
+    "name_ar": "بوش بريس",
+    "description_en": "Overhead press using leg drive.",
+    "description_ar": "ضغط فوق الراس بدفع الرجل.",
+    "category": "crossfit",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Front rack",
+      "Dip at knees",
+      "Drive up",
+      "Press to lockout"
+    ],
+    "instructions_ar": [
+      "فرنت راك",
+      "انزل بالركبة",
+      "ادفع لفوق",
+      "اضغط للقفل"
+    ],
+    "tips_en": [
+      "Dip and drive — don't press early"
+    ],
+    "tips_ar": [
+      "انزل وادفع — متضغطش بدري"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 6,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-push-jerk",
+    "name_en": "Push Jerk",
+    "name_ar": "بوش جيرك",
+    "description_en": "Jerk with feet landing in same position.",
+    "description_ar": "جيرك والرجل بتنزل في نفس المكان.",
+    "category": "crossfit",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Dip",
+      "Drive bar up",
+      "Drop under bar",
+      "Land in partial squat, stand"
+    ],
+    "instructions_ar": [
+      "انزل",
+      "ادفع البار لفوق",
+      "انزل تحت البار",
+      "استقبل في نص سكوات وقوم"
+    ],
+    "tips_en": [
+      "Fast elbows — lockout before you land"
+    ],
+    "tips_ar": [
+      "كوع سريع — اقفل قبل ما تنزل"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-split-jerk",
+    "name_en": "Split Jerk",
+    "name_ar": "سبليت جيرك",
+    "description_en": "Jerk landing in split stance.",
+    "description_ar": "جيرك النزول في وضع سبليت.",
+    "category": "crossfit",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Dip and drive",
+      "Split feet front and back",
+      "Lock bar overhead",
+      "Recover to standing"
+    ],
+    "instructions_ar": [
+      "انزل وادفع",
+      "افتح الرجل قدام وورا",
+      "اقفل البار فوق",
+      "ارجع للوقوف"
+    ],
+    "tips_en": [
+      "Front shin vertical, back knee slightly bent"
+    ],
+    "tips_ar": [
+      "الساق الأمامية عمودية، الركبة الخلفية مثنية شوية"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-front-squat",
+    "name_en": "Front Squat",
+    "name_ar": "فرنت سكوات",
+    "description_en": "Squat with barbell in front rack position.",
+    "description_ar": "سكوات والبار في وضع فرنت راك.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Front rack, elbows high",
+      "Squat to full depth",
+      "Drive up through heels",
+      "Keep torso upright"
+    ],
+    "instructions_ar": [
+      "فرنت راك والكوع عالي",
+      "سكوات لعمق كامل",
+      "ادفع من الكعب",
+      "خلي الجذع مستقيم"
+    ],
+    "tips_en": [
+      "Elbows drop = bar drops"
+    ],
+    "tips_ar": [
+      "الكوع ينزل = البار ينزل"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting",
+      "strength"
+    ]
+  },
+  {
+    "id": "cf-back-squat",
+    "name_en": "Back Squat",
+    "name_ar": "باك سكوات",
+    "description_en": "Squat with barbell on upper back.",
+    "description_ar": "سكوات والبار على أعلى الضهر.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Bar on upper traps",
+      "Brace core",
+      "Squat below parallel",
+      "Drive up"
+    ],
+    "instructions_ar": [
+      "البار على الترابس",
+      "شد البطن",
+      "سكوات تحت الموازي",
+      "ادفع لفوق"
+    ],
+    "tips_en": [
+      "King of all exercises"
+    ],
+    "tips_ar": [
+      "ملك كل التمارين"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 150,
+    "tags": [
+      "crossfit",
+      "weightlifting",
+      "strength"
+    ]
+  },
+  {
+    "id": "cf-sumo-deadlift-high-pull",
+    "name_en": "Sumo Deadlift High Pull",
+    "name_ar": "سومو ديدلفت هاي بول",
+    "description_en": "Wide stance deadlift into high pull to chin.",
+    "description_ar": "ديدلفت بوقفة واسعة لسحب عالي للدقن.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "shoulders",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Wide stance, narrow grip",
+      "Deadlift up",
+      "Hip extension drives pull",
+      "Elbows high, bar to chin"
+    ],
+    "instructions_ar": [
+      "وقفة واسعة وقبضة ضيقة",
+      "ديدلفت لفوق",
+      "الورك يدفع السحب",
+      "الكوع عالي والبار للدقن"
+    ],
+    "tips_en": [
+      "One of the 9 foundational CF movements"
+    ],
+    "tips_ar": [
+      "واحد من الـ 9 حركات الأساسية في CF"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 8,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-hang-power-clean",
+    "name_en": "Hang Power Clean",
+    "name_ar": "هانج باور كلين",
+    "description_en": "Power clean from hang position.",
+    "description_ar": "باور كلين من وضع التعليق.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Hang above knee",
+      "Dip and drive hips",
+      "Shrug and pull",
+      "Catch in quarter squat"
+    ],
+    "instructions_ar": [
+      "تعليق فوق الركبة",
+      "انزل وادفع الورك",
+      "ارفع واسحب",
+      "استقبل في ربع سكوات"
+    ],
+    "tips_en": [
+      "Most common clean variation in WODs"
+    ],
+    "tips_ar": [
+      "أشهر نوع كلين في WODs"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-snatch-balance",
+    "name_en": "Snatch Balance",
+    "name_ar": "سناتش بالانس",
+    "description_en": "Drop under bar from behind neck to overhead squat.",
+    "description_ar": "انزل تحت البار من ورا الرقبة لأوفرهيد سكوات.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Bar on back, snatch grip",
+      "Dip slightly",
+      "Drop under fast",
+      "Catch in OHS position"
+    ],
+    "instructions_ar": [
+      "البار على الضهر بقبضة سناتش",
+      "انزل شوية",
+      "انزل تحت بسرعة",
+      "استقبل في وضع OHS"
+    ],
+    "tips_en": [
+      "Builds speed under the bar"
+    ],
+    "tips_ar": [
+      "بيبني السرعة تحت البار"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-snatch-grip-deadlift",
+    "name_en": "Snatch Grip Deadlift",
+    "name_ar": "سناتش جريب ديدلفت",
+    "description_en": "Deadlift with wide snatch grip.",
+    "description_ar": "ديدلفت بقبضة سناتش واسعة.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "hamstrings",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Wide snatch grip",
+      "Pull with flat back",
+      "Full lockout",
+      "Control descent"
+    ],
+    "instructions_ar": [
+      "قبضة سناتش واسعة",
+      "اسحب بضهر مستقيم",
+      "قفل كامل",
+      "نزول متحكم"
+    ],
+    "tips_en": [
+      "Builds pull strength for snatch"
+    ],
+    "tips_ar": [
+      "بيبني قوة السحب للسناتش"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "weightlifting",
+      "accessory"
+    ]
+  },
+  {
+    "id": "cf-rowing-500m",
+    "name_en": "Rowing 500m",
+    "name_ar": "تجديف 500 متر",
+    "description_en": "500-meter rowing sprint.",
+    "description_ar": "سباق تجديف 500 متر.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "quadriceps",
+      "cardio"
+    ],
+    "equipment": [
+      "rowing"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Set monitor to 500m",
+      "Drive with legs first",
+      "Pull handle to chest",
+      "Control return"
+    ],
+    "instructions_ar": [
+      "اضبط الشاشة على 500م",
+      "ادفع بالرجل الأول",
+      "اسحب المقبض لصدرك",
+      "تحكم في الرجوع"
+    ],
+    "tips_en": [
+      "Legs-back-arms on drive, arms-back-legs on return"
+    ],
+    "tips_ar": [
+      "رجل-ضهر-دراع في الدفع، دراع-ضهر-رجل في الرجوع"
+    ],
+    "is_time_based": true,
+    "default_sets": 3,
+    "default_reps": 1,
+    "default_duration": 120,
+    "default_rest": 180,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio"
+    ]
+  },
+  {
+    "id": "cf-rowing-1000m",
+    "name_en": "Rowing 1000m",
+    "name_ar": "تجديف 1000 متر",
+    "description_en": "1000-meter rowing effort.",
+    "description_ar": "تجديف 1000 متر.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "cardio"
+    ],
+    "equipment": [
+      "rowing"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Pace first 500m",
+      "Build second 500m",
+      "Strong finish",
+      "Record split time"
+    ],
+    "instructions_ar": [
+      "وزّع أول 500م",
+      "زوّد تاني 500م",
+      "خلص قوي",
+      "سجّل وقت السبليت"
+    ],
+    "tips_en": [
+      "Negative split is faster than going out hard"
+    ],
+    "tips_ar": [
+      "سبليت سلبي أسرع من الخروج بقوة"
+    ],
+    "is_time_based": true,
+    "default_sets": 2,
+    "default_reps": 1,
+    "default_duration": 240,
+    "default_rest": 300,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio"
+    ]
+  },
+  {
+    "id": "cf-rowing-2000m",
+    "name_en": "Rowing 2000m",
+    "name_ar": "تجديف 2000 متر",
+    "description_en": "2000-meter rowing test — the gold standard.",
+    "description_ar": "اختبار تجديف 2000 متر — المعيار الذهبي.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "cardio"
+    ],
+    "equipment": [
+      "rowing"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Settle into pace first 500m",
+      "Hold splits middle 1000m",
+      "Build last 500m",
+      "Sprint last 200m"
+    ],
+    "instructions_ar": [
+      "استقر في السرعة أول 500م",
+      "حافظ على السبليت في النص",
+      "زوّد آخر 500م",
+      "سبرنت آخر 200م"
+    ],
+    "tips_en": [
+      "Elite males under 6:20, females under 7:20"
+    ],
+    "tips_ar": [
+      "المحترفين رجال تحت 6:20، سيدات تحت 7:20"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 480,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio",
+      "benchmark"
+    ]
+  },
+  {
+    "id": "cf-rowing-cal",
+    "name_en": "Rowing (Calories)",
+    "name_ar": "تجديف (كالوري)",
+    "description_en": "Row for calories on the rower.",
+    "description_ar": "تجديف بالكالوري.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "cardio"
+    ],
+    "equipment": [
+      "rowing"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Set monitor to calories",
+      "Powerful strokes",
+      "Higher pace = more cals",
+      "Full stroke each rep"
+    ],
+    "instructions_ar": [
+      "اضبط الشاشة على كالوري",
+      "ضربات قوية",
+      "سرعة أعلى = كالوري أكتر",
+      "ضربة كاملة كل مرة"
+    ],
+    "tips_en": [
+      "Cals are harder than meters — pace accordingly"
+    ],
+    "tips_ar": [
+      "الكالوري أصعب من الأمتار — وزّع مجهودك"
+    ],
+    "is_time_based": true,
+    "default_sets": 3,
+    "default_reps": 1,
+    "default_duration": 60,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio"
+    ]
+  },
+  {
+    "id": "cf-assault-bike-cal",
+    "name_en": "Assault Bike (Calories)",
+    "name_ar": "أسولت بايك (كالوري)",
+    "description_en": "Assault/Echo bike for calories.",
+    "description_ar": "أسولت بايك بالكالوري.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "cardio"
+    ],
+    "equipment": [
+      "assault_bike"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Seat at proper height",
+      "Push and pull arms",
+      "Drive with legs",
+      "Max effort on intervals"
+    ],
+    "instructions_ar": [
+      "الكرسي بالارتفاع المناسب",
+      "ادفع واسحب بالدراعات",
+      "ادفع بالرجل",
+      "أقصى مجهود في الفترات"
+    ],
+    "tips_en": [
+      "The bike that breaks everyone — respect it"
+    ],
+    "tips_ar": [
+      "العجلة اللي بتكسر الكل — احترمها"
+    ],
+    "is_time_based": true,
+    "default_sets": 4,
+    "default_reps": 1,
+    "default_duration": 60,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio"
+    ]
+  },
+  {
+    "id": "cf-ski-erg-cal",
+    "name_en": "Ski Erg (Calories)",
+    "name_ar": "سكي إيرج (كالوري)",
+    "description_en": "Ski erg machine for calories.",
+    "description_ar": "جهاز السكي بالكالوري.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "shoulders",
+      "cardio"
+    ],
+    "equipment": [
+      "ski_erg"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Stand tall",
+      "Pull handles down",
+      "Hinge at hips",
+      "Drive with lats and core"
+    ],
+    "instructions_ar": [
+      "قف مستقيم",
+      "اسحب المقابض لتحت",
+      "اتني من الورك",
+      "ادفع بالظهر والبطن"
+    ],
+    "tips_en": [
+      "Use your whole body, not just arms"
+    ],
+    "tips_ar": [
+      "استخدم جسمك كله مش الدراعات بس"
+    ],
+    "is_time_based": true,
+    "default_sets": 3,
+    "default_reps": 1,
+    "default_duration": 60,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio"
+    ]
+  },
+  {
+    "id": "cf-double-under",
+    "name_en": "Double-Under",
+    "name_ar": "دبل أندر",
+    "description_en": "Jump rope passing under feet twice per jump.",
+    "description_ar": "نط الحبل بيعدي مرتين تحت الرجل في نطة واحدة.",
+    "category": "crossfit",
+    "primary_muscle": "cardio",
+    "secondary_muscles": [
+      "calves",
+      "shoulders"
+    ],
+    "equipment": [
+      "jump_rope"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Slight bounce",
+      "Wrists spin rope",
+      "Jump slightly higher than single",
+      "Two rotations per jump"
+    ],
+    "instructions_ar": [
+      "نطة خفيفة",
+      "الرسغ يلف الحبل",
+      "انط أعلى شوية من السينجل",
+      "لفتين في النطة"
+    ],
+    "tips_en": [
+      "Wrists not arms — stay relaxed"
+    ],
+    "tips_ar": [
+      "الرسغ مش الدراع — خليك مرتاح"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 50,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "monostructural"
+    ]
+  },
+  {
+    "id": "cf-single-under",
+    "name_en": "Single-Under",
+    "name_ar": "سينجل أندر",
+    "description_en": "Standard jump rope — one pass per jump.",
+    "description_ar": "نط حبل عادي — مرة واحدة في النطة.",
+    "category": "crossfit",
+    "primary_muscle": "cardio",
+    "secondary_muscles": [
+      "calves"
+    ],
+    "equipment": [
+      "jump_rope"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Light bounce on toes",
+      "Wrists turn rope",
+      "Stay relaxed",
+      "Consistent rhythm"
+    ],
+    "instructions_ar": [
+      "نطة خفيفة على الأصابع",
+      "الرسغ يلف الحبل",
+      "خليك مرتاح",
+      "إيقاع ثابت"
+    ],
+    "tips_en": [
+      "3:1 ratio to sub for double-unders in WODs"
+    ],
+    "tips_ar": [
+      "نسبة 3:1 بديل للدبل أندر في WODs"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 100,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "beginner"
+    ]
+  },
+  {
+    "id": "cf-run-200m",
+    "name_en": "Running 200m",
+    "name_ar": "جري 200 متر",
+    "description_en": "200-meter sprint.",
+    "description_ar": "سبرنت 200 متر.",
+    "category": "crossfit",
+    "primary_muscle": "cardio",
+    "secondary_muscles": [
+      "quadriceps",
+      "calves"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Sprint pace",
+      "Pump arms",
+      "Stay on toes",
+      "Push through finish"
+    ],
+    "instructions_ar": [
+      "سرعة سبرنت",
+      "حرّك الدراعات",
+      "على الأصابع",
+      "ادفع للنهاية"
+    ],
+    "tips_en": [
+      "Should take 30-45 seconds"
+    ],
+    "tips_ar": [
+      "لازم ياخد 30-45 ثانية"
+    ],
+    "is_time_based": true,
+    "default_sets": 4,
+    "default_reps": 1,
+    "default_duration": 40,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio"
+    ]
+  },
+  {
+    "id": "cf-run-400m",
+    "name_en": "Running 400m",
+    "name_ar": "جري 400 متر",
+    "description_en": "400-meter run.",
+    "description_ar": "جري 400 متر.",
+    "category": "crossfit",
+    "primary_muscle": "cardio",
+    "secondary_muscles": [
+      "quadriceps",
+      "calves"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Controlled start",
+      "Settle into pace",
+      "Build on back half",
+      "Sprint last 50m"
+    ],
+    "instructions_ar": [
+      "بداية متحكمة",
+      "استقر في السرعة",
+      "زوّد في النص التاني",
+      "سبرنت آخر 50م"
+    ],
+    "tips_en": [
+      "Most common run distance in WODs"
+    ],
+    "tips_ar": [
+      "أشهر مسافة جري في WODs"
+    ],
+    "is_time_based": true,
+    "default_sets": 3,
+    "default_reps": 1,
+    "default_duration": 90,
+    "default_rest": 120,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio"
+    ]
+  },
+  {
+    "id": "cf-run-800m",
+    "name_en": "Running 800m",
+    "name_ar": "جري 800 متر",
+    "description_en": "800-meter run.",
+    "description_ar": "جري 800 متر.",
+    "category": "crossfit",
+    "primary_muscle": "cardio",
+    "secondary_muscles": [
+      "quadriceps"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Pace first 400m",
+      "Hold pace second 400m",
+      "Kick last 200m",
+      "Control breathing"
+    ],
+    "instructions_ar": [
+      "وزّع أول 400م",
+      "حافظ على السرعة تاني 400م",
+      "زوّد آخر 200م",
+      "تحكم في التنفس"
+    ],
+    "tips_en": [
+      "Should feel uncomfortable but sustainable"
+    ],
+    "tips_ar": [
+      "لازم تحس بصعوبة بس تقدر تكمل"
+    ],
+    "is_time_based": true,
+    "default_sets": 2,
+    "default_reps": 1,
+    "default_duration": 210,
+    "default_rest": 180,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio"
+    ]
+  },
+  {
+    "id": "cf-run-1mile",
+    "name_en": "Running 1 Mile",
+    "name_ar": "جري 1 ميل",
+    "description_en": "1-mile run (1600m).",
+    "description_ar": "جري ميل واحد (1600م).",
+    "category": "crossfit",
+    "primary_muscle": "cardio",
+    "secondary_muscles": [
+      "quadriceps",
+      "calves"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Steady pace",
+      "Breathe rhythmically",
+      "Negative split if possible",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "سرعة ثابتة",
+      "تنفس بإيقاع",
+      "سبليت سلبي لو تقدر",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "Sub-7 min is good, sub-6 is great for CF"
+    ],
+    "tips_ar": [
+      "تحت 7 دقايق كويس، تحت 6 ممتاز لكروس فت"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 420,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "monostructural",
+      "cardio",
+      "benchmark"
+    ]
+  },
+  {
+    "id": "cf-burpee",
+    "name_en": "Burpee",
+    "name_ar": "بيربي",
+    "description_en": "Full burpee — chest to floor, jump and clap overhead.",
+    "description_ar": "بيربي كامل — صدر على الأرض، نط وصفق فوق.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "chest",
+      "quadriceps"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Drop to floor, chest down",
+      "Push up",
+      "Jump feet to hands",
+      "Jump and clap overhead"
+    ],
+    "instructions_ar": [
+      "انزل على الأرض والصدر يلمس",
+      "ادفع لفوق",
+      "انط الرجل للإيدين",
+      "انط وصفق فوق"
+    ],
+    "tips_en": [
+      "Standards: chest to floor, full extension + clap at top"
+    ],
+    "tips_ar": [
+      "المعايير: الصدر على الأرض، فرد كامل + تصفيقة فوق"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 15,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "cf-bar-facing-burpee",
+    "name_en": "Bar-Facing Burpee",
+    "name_ar": "بيربي أمام البار",
+    "description_en": "Burpee performed facing barbell, jump over bar.",
+    "description_ar": "بيربي وانت واقف قدام البار، انط فوق البار.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "chest",
+      "quadriceps"
+    ],
+    "equipment": [
+      "bodyweight",
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Face barbell",
+      "Burpee to floor",
+      "Stand up",
+      "Two-foot jump over bar"
+    ],
+    "instructions_ar": [
+      "وجهك للبار",
+      "بيربي على الأرض",
+      "قوم",
+      "انط بالرجلين فوق البار"
+    ],
+    "tips_en": [
+      "Must jump with both feet over the bar"
+    ],
+    "tips_ar": [
+      "لازم تنط بالرجلين فوق البار"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "cf-burpee-box-jump-over",
+    "name_en": "Burpee Box Jump Over",
+    "name_ar": "بيربي بوكس جمب أوفر",
+    "description_en": "Burpee then jump over box — no need to stand on top.",
+    "description_ar": "بيربي ثم نط فوق البوكس — مش لازم تقف فوقه.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps"
+    ],
+    "equipment": [
+      "bodyweight",
+      "plyo_box"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Burpee facing box",
+      "Jump onto or over box",
+      "Land on other side",
+      "Turn and repeat"
+    ],
+    "instructions_ar": [
+      "بيربي قدام البوكس",
+      "انط على أو فوق البوكس",
+      "انزل الناحية التانية",
+      "لف وكرر"
+    ],
+    "tips_en": [
+      "Step over is acceptable in most WODs"
+    ],
+    "tips_ar": [
+      "المشي فوق مقبول في أغلب WODs"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 8,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "cf-box-jump",
+    "name_en": "Box Jump",
+    "name_ar": "بوكس جمب",
+    "description_en": "Two-foot jump onto plyo box, stand to full extension.",
+    "description_ar": "نط بالرجلين على البوكس، قف فرد كامل.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "calves"
+    ],
+    "equipment": [
+      "plyo_box"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Stand facing box",
+      "Swing arms and jump",
+      "Land soft on box",
+      "Stand fully, step down"
+    ],
+    "instructions_ar": [
+      "قف قدام البوكس",
+      "أرجح الدراعات وانط",
+      "انزل ناعم على البوكس",
+      "قف كامل وانزل ماشي"
+    ],
+    "tips_en": [
+      "Step down to save your Achilles"
+    ],
+    "tips_ar": [
+      "انزل ماشي عشان تحمي الأكيليس"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "bodyweight",
+      "plyometric"
+    ]
+  },
+  {
+    "id": "cf-box-step-up",
+    "name_en": "Box Step-Up",
+    "name_ar": "بوكس ستيب أب",
+    "description_en": "Step up onto box one leg at a time.",
+    "description_ar": "اطلع على البوكس رجل رجل.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "plyo_box"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Step one foot on box",
+      "Drive up",
+      "Stand fully on box",
+      "Step down"
+    ],
+    "instructions_ar": [
+      "حط رجل على البوكس",
+      "ادفع لفوق",
+      "قف كامل على البوكس",
+      "انزل"
+    ],
+    "tips_en": [
+      "Good scale for box jumps"
+    ],
+    "tips_ar": [
+      "بديل كويس للبوكس جمب"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "bodyweight",
+      "beginner"
+    ]
+  },
+  {
+    "id": "cf-box-jump-over",
+    "name_en": "Box Jump Over",
+    "name_ar": "بوكس جمب أوفر",
+    "description_en": "Jump over box without standing on top.",
+    "description_ar": "انط فوق البوكس من غير ما تقف عليه.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps"
+    ],
+    "equipment": [
+      "plyo_box"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Face box",
+      "Jump over",
+      "Land on other side",
+      "Turn and repeat"
+    ],
+    "instructions_ar": [
+      "وجهك للبوكس",
+      "انط فوقه",
+      "انزل الناحية التانية",
+      "لف وكرر"
+    ],
+    "tips_en": [
+      "Lateral or forward — check WOD standards"
+    ],
+    "tips_ar": [
+      "جانبي أو قدامي — شوف معايير الـ WOD"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "cf-wall-ball-shot",
+    "name_en": "Wall Ball Shot",
+    "name_ar": "وول بول شوت",
+    "description_en": "Squat with medicine ball, throw to target on wall.",
+    "description_ar": "سكوات بالكرة وارميها على الهدف على الحيطة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "wall_ball"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Hold ball at chest",
+      "Squat below parallel",
+      "Drive up and throw to target",
+      "Catch and repeat"
+    ],
+    "instructions_ar": [
+      "امسك الكرة عند الصدر",
+      "سكوات تحت الموازي",
+      "ادفع لفوق وارمي على الهدف",
+      "امسك وكرر"
+    ],
+    "tips_en": [
+      "Target height: 10ft men, 9ft women"
+    ],
+    "tips_ar": [
+      "ارتفاع الهدف: 10 قدم رجال، 9 قدم سيدات"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 15,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "cf-ghd-situp",
+    "name_en": "GHD Sit-Up",
+    "name_ar": "GHD ست أب",
+    "description_en": "Sit-up on GHD machine with full range of motion.",
+    "description_ar": "ست أب على جهاز GHD بمدى حركة كامل.",
+    "category": "crossfit",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": [
+      "ghd"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Secure feet in GHD",
+      "Lower back over pad",
+      "Touch ground behind",
+      "Sit up and touch toes"
+    ],
+    "instructions_ar": [
+      "ثبّت الرجل في الـ GHD",
+      "نزّل الضهر فوق الباد",
+      "لمّس الأرض ورا",
+      "اقعد ولمّس الأصابع"
+    ],
+    "tips_en": [
+      "Start with small ROM — rhabdo risk is real"
+    ],
+    "tips_ar": [
+      "ابدأ بمدى حركة صغير — خطر رابدو حقيقي"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 15,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "core"
+    ]
+  },
+  {
+    "id": "cf-ghd-hip-extension",
+    "name_en": "GHD Hip Extension",
+    "name_ar": "GHD هيب إكستنشن",
+    "description_en": "Hip extension on GHD machine.",
+    "description_ar": "فرد الورك على جهاز GHD.",
+    "category": "crossfit",
+    "primary_muscle": "hamstrings",
+    "secondary_muscles": [
+      "glutes",
+      "lower_back"
+    ],
+    "equipment": [
+      "ghd"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Hips on pad",
+      "Lower torso down",
+      "Extend hips to parallel",
+      "Squeeze glutes at top"
+    ],
+    "instructions_ar": [
+      "الورك على الباد",
+      "نزّل الجذع",
+      "افرد الورك للموازي",
+      "اضغط الجلوتس فوق"
+    ],
+    "tips_en": [
+      "Great posterior chain builder"
+    ],
+    "tips_ar": [
+      "ممتاز لبناء السلسلة الخلفية"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 15,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "core",
+      "accessory"
+    ]
+  },
+  {
+    "id": "cf-air-squat",
+    "name_en": "Air Squat",
+    "name_ar": "اير سكوات",
+    "description_en": "Bodyweight squat to below parallel.",
+    "description_ar": "سكوات بوزن الجسم تحت الموازي.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Feet shoulder width",
+      "Squat below parallel",
+      "Weight in heels",
+      "Stand fully"
+    ],
+    "instructions_ar": [
+      "الرجل بعرض الكتف",
+      "سكوات تحت الموازي",
+      "الوزن في الكعب",
+      "قف كامل"
+    ],
+    "tips_en": [
+      "One of the 9 foundational CF movements"
+    ],
+    "tips_ar": [
+      "واحد من الـ 9 حركات الأساسية"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 20,
+    "default_duration": null,
+    "default_rest": 45,
+    "tags": [
+      "crossfit",
+      "bodyweight",
+      "beginner"
+    ]
+  },
+  {
+    "id": "cf-walking-lunge",
+    "name_en": "Walking Lunge",
+    "name_ar": "لانج مشي",
+    "description_en": "Alternating forward lunges while walking.",
+    "description_ar": "لانج للأمام بالتبادل وانت ماشي.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Step forward",
+      "Lower back knee to ground",
+      "Drive up",
+      "Step forward with other leg"
+    ],
+    "instructions_ar": [
+      "خطوة للأمام",
+      "نزّل الركبة الخلفية للأرض",
+      "ادفع لفوق",
+      "خطوة بالرجل التانية"
+    ],
+    "tips_en": [
+      "Back knee touches or nearly touches ground"
+    ],
+    "tips_ar": [
+      "الركبة الخلفية تلمس أو تقرب من الأرض"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 20,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "cf-overhead-lunge",
+    "name_en": "Overhead Lunge",
+    "name_ar": "لانج أوفرهيد",
+    "description_en": "Walking lunge with barbell locked out overhead.",
+    "description_ar": "لانج مشي والبار مقفول فوق الراس.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Lockout barbell overhead",
+      "Step into lunge",
+      "Back knee to ground",
+      "Stand and repeat"
+    ],
+    "instructions_ar": [
+      "اقفل البار فوق الراس",
+      "خطوة لانج",
+      "الركبة الخلفية للأرض",
+      "قوم وكرر"
+    ],
+    "tips_en": [
+      "Core stability is everything here"
+    ],
+    "tips_ar": [
+      "ثبات البطن هو كل حاجة هنا"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-hand-release-pushup",
+    "name_en": "Hand-Release Push-Up",
+    "name_ar": "ضغط هاند ريليز",
+    "description_en": "Push-up with hands lifting off floor at bottom.",
+    "description_ar": "ضغط والإيدين بترتفع عن الأرض في الأسفل.",
+    "category": "crossfit",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Lower chest to floor",
+      "Lift hands off floor",
+      "Press back up",
+      "Full lockout"
+    ],
+    "instructions_ar": [
+      "نزّل الصدر للأرض",
+      "ارفع الإيدين عن الأرض",
+      "ادفع لفوق",
+      "قفل كامل"
+    ],
+    "tips_en": [
+      "Ensures full ROM every rep"
+    ],
+    "tips_ar": [
+      "بيضمن مدى حركة كامل كل تكرار"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 15,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "bodyweight"
+    ]
+  },
+  {
+    "id": "cf-abmat-situp",
+    "name_en": "AbMat Sit-Up",
+    "name_ar": "ست أب AbMat",
+    "description_en": "Sit-up with AbMat under lower back, butterfly legs.",
+    "description_ar": "ست أب بالـ AbMat تحت الضهر السفلي والرجل باترفلاي.",
+    "category": "crossfit",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "AbMat under lower back",
+      "Butterfly legs",
+      "Reach overhead at bottom",
+      "Touch toes at top"
+    ],
+    "instructions_ar": [
+      "الـ AbMat تحت الضهر السفلي",
+      "الرجل باترفلاي",
+      "مد للورا في الأسفل",
+      "لمّس الأصابع فوق"
+    ],
+    "tips_en": [
+      "Touch floor behind head, touch toes = 1 rep"
+    ],
+    "tips_ar": [
+      "لمس الأرض ورا الراس، لمس الأصابع = تكرار"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 25,
+    "default_duration": null,
+    "default_rest": 45,
+    "tags": [
+      "crossfit",
+      "core",
+      "beginner"
+    ]
+  },
+  {
+    "id": "cf-v-up",
+    "name_en": "V-Up",
+    "name_ar": "في أب",
+    "description_en": "Simultaneous lift of legs and torso to V shape.",
+    "description_ar": "رفع الرجل والجذع في نفس الوقت لشكل V.",
+    "category": "crossfit",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": [
+      "bodyweight"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Lie flat",
+      "Lift legs and torso simultaneously",
+      "Touch toes",
+      "Lower with control"
+    ],
+    "instructions_ar": [
+      "نام مستوي",
+      "ارفع الرجل والجذع في نفس الوقت",
+      "لمّس الأصابع",
+      "انزل بتحكم"
+    ],
+    "tips_en": [
+      "Keep legs straight"
+    ],
+    "tips_ar": [
+      "خلي الرجل مستقيمة"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 15,
+    "default_duration": null,
+    "default_rest": 45,
+    "tags": [
+      "crossfit",
+      "core"
+    ]
+  },
+  {
+    "id": "cf-deadlift",
+    "name_en": "Deadlift",
+    "name_ar": "ديدلفت",
+    "description_en": "Conventional deadlift from floor to lockout.",
+    "description_ar": "ديدلفت تقليدي من الأرض للقفل.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "hamstrings",
+      "glutes",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Feet hip width",
+      "Grip outside knees",
+      "Flat back, drive through legs",
+      "Full hip lockout"
+    ],
+    "instructions_ar": [
+      "الرجل بعرض الورك",
+      "القبضة برا الركبة",
+      "ضهر مستقيم وادفع بالرجل",
+      "قفل ورك كامل"
+    ],
+    "tips_en": [
+      "Most loaded exercise in CrossFit WODs"
+    ],
+    "tips_ar": [
+      "أتقل تمرين في كروس فت WODs"
+    ],
+    "is_time_based": false,
+    "default_sets": 5,
+    "default_reps": 5,
+    "default_duration": null,
+    "default_rest": 150,
+    "tags": [
+      "crossfit",
+      "strength",
+      "weightlifting"
+    ]
+  },
+  {
+    "id": "cf-farmers-carry",
+    "name_en": "Farmer's Carry",
+    "name_ar": "فارمرز كاري",
+    "description_en": "Walk while holding heavy weights at sides.",
+    "description_ar": "امشي وانت ماسك أوزان تقيلة على الجنب.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "forearms",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbells",
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Pick up weights",
+      "Stand tall",
+      "Walk with control",
+      "Maintain posture"
+    ],
+    "instructions_ar": [
+      "ارفع الأوزان",
+      "قف مستقيم",
+      "امشي بتحكم",
+      "حافظ على الوقفة"
+    ],
+    "tips_en": [
+      "Squeeze grip hard, walk fast"
+    ],
+    "tips_ar": [
+      "اضغط على القبضة وامشي بسرعة"
+    ],
+    "is_time_based": true,
+    "default_sets": 3,
+    "default_reps": 1,
+    "default_duration": 60,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "loaded",
+      "strongman"
+    ]
+  },
+  {
+    "id": "cf-sled-push",
+    "name_en": "Sled Push",
+    "name_ar": "سليد بوش",
+    "description_en": "Push weighted sled across floor.",
+    "description_ar": "ادفع السليد المحمّل على الأرض.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "calves"
+    ],
+    "equipment": [
+      "sled"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Grip handles",
+      "Lean into sled at 45 degrees",
+      "Drive with legs",
+      "Short powerful steps"
+    ],
+    "instructions_ar": [
+      "امسك المقابض",
+      "ميّل على السليد 45 درجة",
+      "ادفع بالرجل",
+      "خطوات قصيرة وقوية"
+    ],
+    "tips_en": [
+      "No eccentric = great for recovery days"
+    ],
+    "tips_ar": [
+      "مفيش فاز سلبي = ممتاز لأيام الاستشفاء"
+    ],
+    "is_time_based": true,
+    "default_sets": 4,
+    "default_reps": 1,
+    "default_duration": 30,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "loaded",
+      "conditioning"
+    ]
+  },
+  {
+    "id": "cf-sled-pull",
+    "name_en": "Sled Pull",
+    "name_ar": "سليد بول",
+    "description_en": "Pull sled toward you using rope or handles.",
+    "description_ar": "اسحب السليد ناحيتك بالحبل أو المقابض.",
+    "category": "crossfit",
+    "primary_muscle": "back",
+    "secondary_muscles": [
+      "biceps",
+      "core"
+    ],
+    "equipment": [
+      "sled",
+      "rope"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Face sled",
+      "Grip rope",
+      "Pull hand over hand",
+      "Keep low center of gravity"
+    ],
+    "instructions_ar": [
+      "وجهك للسليد",
+      "امسك الحبل",
+      "اسحب يد فوق يد",
+      "خلي مركز الثقل واطي"
+    ],
+    "tips_en": [
+      "Great back and grip builder"
+    ],
+    "tips_ar": [
+      "ممتاز لبناء الضهر والقبضة"
+    ],
+    "is_time_based": true,
+    "default_sets": 4,
+    "default_reps": 1,
+    "default_duration": 30,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "loaded",
+      "conditioning"
+    ]
+  },
+  {
+    "id": "cf-turkish-getup",
+    "name_en": "Turkish Get-Up",
+    "name_ar": "تركش جت أب",
+    "description_en": "Stand up from floor with kettlebell locked out overhead.",
+    "description_ar": "قوم من الأرض والكيتل بل مقفول فوق الراس.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "Lie down with KB overhead",
+      "Roll to elbow, then hand",
+      "Sweep leg, kneel",
+      "Stand up, reverse to return"
+    ],
+    "instructions_ar": [
+      "نام والكيتل بل فوق",
+      "لف للكوع ثم اليد",
+      "اسحب الرجل واركع",
+      "قوم وارجع بالعكس"
+    ],
+    "tips_en": [
+      "Slow and controlled — never rush this"
+    ],
+    "tips_ar": [
+      "بطيء ومتحكم — متستعجلش أبداً"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 3,
+    "default_duration": null,
+    "default_rest": 90,
+    "tags": [
+      "crossfit",
+      "loaded",
+      "mobility"
+    ]
+  },
+  {
+    "id": "cf-kb-swing-russian",
+    "name_en": "KB Swing (Russian)",
+    "name_ar": "كيتل بل سوينج روسي",
+    "description_en": "Kettlebell swing to eye level using hip drive.",
+    "description_ar": "كيتل بل سوينج لمستوى العين بدفع الورك.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Hinge at hips",
+      "Swing KB back between legs",
+      "Drive hips forward",
+      "KB to eye level"
+    ],
+    "instructions_ar": [
+      "اتني من الورك",
+      "أرجح الكيتل بل بين الرجل",
+      "ادفع الورك للأمام",
+      "الكيتل بل لمستوى العين"
+    ],
+    "tips_en": [
+      "Hip hinge, not a squat"
+    ],
+    "tips_ar": [
+      "اتني من الورك مش سكوات"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 15,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "loaded"
+    ]
+  },
+  {
+    "id": "cf-kb-swing-american",
+    "name_en": "KB Swing (American)",
+    "name_ar": "كيتل بل سوينج أمريكي",
+    "description_en": "Kettlebell swing all the way overhead.",
+    "description_ar": "كيتل بل سوينج لفوق الراس بالكامل.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "glutes",
+      "shoulders"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Same as Russian start",
+      "Extend hips fully",
+      "Swing KB overhead",
+      "Lock arms at top"
+    ],
+    "instructions_ar": [
+      "نفس بداية الروسي",
+      "افرد الورك كامل",
+      "أرجح الكيتل بل فوق الراس",
+      "اقفل الدراعات فوق"
+    ],
+    "tips_en": [
+      "CrossFit standard — overhead lockout"
+    ],
+    "tips_ar": [
+      "معيار كروس فت — قفل فوق الراس"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "loaded"
+    ]
+  },
+  {
+    "id": "cf-kb-snatch",
+    "name_en": "KB Snatch",
+    "name_ar": "كيتل بل سناتش",
+    "description_en": "One-arm kettlebell snatch from floor to overhead.",
+    "description_ar": "سناتش كيتل بل بدراع واحد من الأرض لفوق.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Swing KB back",
+      "Hip drive",
+      "Pull KB up close to body",
+      "Punch through to lockout"
+    ],
+    "instructions_ar": [
+      "أرجح الكيتل بل للورا",
+      "ادفع الورك",
+      "اسحب الكيتل بل قريب من الجسم",
+      "ادفع للقفل"
+    ],
+    "tips_en": [
+      "Smooth transition at top — don't bang wrist"
+    ],
+    "tips_ar": [
+      "انتقال سلس فوق — متضربش الرسغ"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 8,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "loaded"
+    ]
+  },
+  {
+    "id": "cf-kb-goblet-squat",
+    "name_en": "KB Goblet Squat",
+    "name_ar": "كيتل بل جوبلت سكوات",
+    "description_en": "Squat holding kettlebell at chest.",
+    "description_ar": "سكوات وانت ماسك الكيتل بل عند الصدر.",
+    "category": "crossfit",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "Hold KB at chest",
+      "Squat below parallel",
+      "Elbows between knees",
+      "Drive up"
+    ],
+    "instructions_ar": [
+      "امسك الكيتل بل عند الصدر",
+      "سكوات تحت الموازي",
+      "الكوع بين الركبة",
+      "ادفع لفوق"
+    ],
+    "tips_en": [
+      "Best squat for beginners"
+    ],
+    "tips_ar": [
+      "أفضل سكوات للمبتدئين"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 12,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "loaded",
+      "beginner"
+    ]
+  },
+  {
+    "id": "cf-db-snatch",
+    "name_en": "DB Snatch",
+    "name_ar": "دمبل سناتش",
+    "description_en": "Single dumbbell snatch from floor to overhead.",
+    "description_ar": "سناتش دمبل واحد من الأرض لفوق الراس.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "DB between feet",
+      "Deadlift and drive hips",
+      "Pull DB overhead",
+      "Full lockout, alternate arms"
+    ],
+    "instructions_ar": [
+      "الدمبل بين الرجل",
+      "ديدلفت وادفع الورك",
+      "اسحب الدمبل فوق الراس",
+      "قفل كامل وبدّل الدراع"
+    ],
+    "tips_en": [
+      "Very common in Open WODs"
+    ],
+    "tips_ar": [
+      "شائع جداً في أوبن WODs"
+    ],
+    "is_time_based": false,
+    "default_sets": 4,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "loaded"
+    ]
+  },
+  {
+    "id": "cf-db-thruster",
+    "name_en": "DB Thruster",
+    "name_ar": "دمبل ثرستر",
+    "description_en": "Dumbbell front squat to press.",
+    "description_ar": "فرنت سكوات دمبل لضغط.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbells"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "DBs at shoulders",
+      "Full squat",
+      "Drive up and press",
+      "Lockout overhead"
+    ],
+    "instructions_ar": [
+      "الدمبلز عند الكتف",
+      "سكوات كامل",
+      "ادفع لفوق واضغط",
+      "قفل فوق الراس"
+    ],
+    "tips_en": [
+      "Harder than barbell thruster — each arm works independently"
+    ],
+    "tips_ar": [
+      "أصعب من ثرستر البار — كل دراع بيشتغل لوحده"
+    ],
+    "is_time_based": false,
+    "default_sets": 3,
+    "default_reps": 10,
+    "default_duration": null,
+    "default_rest": 60,
+    "tags": [
+      "crossfit",
+      "loaded"
+    ]
+  },
+  {
+    "id": "cf-battle-ropes",
+    "name_en": "Battle Ropes",
+    "name_ar": "باتل روبس",
+    "description_en": "Alternating or simultaneous rope waves for conditioning.",
+    "description_ar": "موجات حبل متبادلة أو متزامنة للتكييف.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "battle_ropes"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Athletic stance",
+      "Alternate arms up and down",
+      "Create continuous waves",
+      "Maintain intensity"
+    ],
+    "instructions_ar": [
+      "وقفة رياضية",
+      "بدّل الدراعات فوق وتحت",
+      "اعمل موجات مستمرة",
+      "حافظ على الشدة"
+    ],
+    "tips_en": [
+      "Great finisher for any WOD"
+    ],
+    "tips_ar": [
+      "تكملة ممتازة لأي WOD"
+    ],
+    "is_time_based": true,
+    "default_sets": 4,
+    "default_reps": 1,
+    "default_duration": 30,
+    "default_rest": 30,
+    "tags": [
+      "crossfit",
+      "conditioning"
+    ]
+  },
+  {
+    "id": "cf-wod-fran",
+    "name_en": "Fran",
+    "name_ar": "فران",
+    "description_en": "21-15-9 Thrusters (43/30 kg) & Pull-Ups. The most famous CrossFit benchmark.",
+    "description_ar": "21-15-9 ثرسترز (43/30 كجم) وعقلة. أشهر بنشمارك في كروس فت.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "barbell",
+      "pull_up_bar"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "21 Thrusters then 21 Pull-Ups",
+      "15 Thrusters then 15 Pull-Ups",
+      "9 Thrusters then 9 Pull-Ups",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "21 ثرستر ثم 21 عقلة",
+      "15 ثرستر ثم 15 عقلة",
+      "9 ثرستر ثم 9 عقلة",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "Sub-3 min is elite, sub-5 is great"
+    ],
+    "tips_ar": [
+      "تحت 3 دقايق محترف، تحت 5 ممتاز"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 300,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-grace",
+    "name_en": "Grace",
+    "name_ar": "جريس",
+    "description_en": "30 Clean & Jerks for time (61/43 kg).",
+    "description_ar": "30 كلين آند جيرك (61/43 كجم) بأسرع وقت.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "30 Clean & Jerks",
+      "Any style clean, any style jerk",
+      "For time",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "30 كلين آند جيرك",
+      "أي نوع كلين وأي نوع جيرك",
+      "بأسرع وقت",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "Sub-2 min elite, sub-4 great, singles are ok"
+    ],
+    "tips_ar": [
+      "تحت 2 محترف، تحت 4 ممتاز، واحدة واحدة عادي"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 300,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-isabel",
+    "name_en": "Isabel",
+    "name_ar": "إيزابيل",
+    "description_en": "30 Snatches for time (61/43 kg).",
+    "description_ar": "30 سناتش (61/43 كجم) بأسرع وقت.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "30 Snatches for time",
+      "Power or squat snatch",
+      "Touch and go or singles",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "30 سناتش بأسرع وقت",
+      "باور أو سكوات سناتش",
+      "تاتش آند جو أو واحدة واحدة",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "Grace's sister — same format, different lift"
+    ],
+    "tips_ar": [
+      "أخت جريس — نفس الفورمات، رفعة مختلفة"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 300,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-diane",
+    "name_en": "Diane",
+    "name_ar": "ديان",
+    "description_en": "21-15-9 Deadlifts (102/70 kg) & Handstand Push-Ups.",
+    "description_ar": "21-15-9 ديدلفت (102/70 كجم) و HSPU.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "21 Deadlifts then 21 HSPU",
+      "15 Deadlifts then 15 HSPU",
+      "9 Deadlifts then 9 HSPU",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "21 ديدلفت ثم 21 HSPU",
+      "15 ديدلفت ثم 15 HSPU",
+      "9 ديدلفت ثم 9 HSPU",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "Heavy DL + HSPU combo — break sets early"
+    ],
+    "tips_ar": [
+      "ديدلفت تقيل + HSPU — قسّم من بدري"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 480,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-helen",
+    "name_en": "Helen",
+    "name_ar": "هيلين",
+    "description_en": "3 RFT: 400m Run, 21 KB Swings (24/16 kg), 12 Pull-Ups.",
+    "description_ar": "3 راوند: 400م جري، 21 كيتل بل سوينج (24/16 كجم)، 12 عقلة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "cardio",
+      "back"
+    ],
+    "equipment": [
+      "kettlebell",
+      "pull_up_bar"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "400m Run",
+      "21 American KB Swings",
+      "12 Pull-Ups",
+      "3 rounds for time"
+    ],
+    "instructions_ar": [
+      "400م جري",
+      "21 كيتل بل سوينج أمريكي",
+      "12 عقلة",
+      "3 راوند بأسرع وقت"
+    ],
+    "tips_en": [
+      "Sub-8 great, sub-10 good"
+    ],
+    "tips_ar": [
+      "تحت 8 ممتاز، تحت 10 كويس"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 600,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-karen",
+    "name_en": "Karen",
+    "name_ar": "كارين",
+    "description_en": "150 Wall Balls for time (9/6 kg to 10/9 ft target).",
+    "description_ar": "150 وول بول بأسرع وقت (9/6 كجم).",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "wall_ball"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "150 Wall Ball Shots",
+      "9kg/6kg ball",
+      "10ft/9ft target",
+      "For time"
+    ],
+    "instructions_ar": [
+      "150 وول بول شوت",
+      "كرة 9/6 كجم",
+      "هدف 10/9 قدم",
+      "بأسرع وقت"
+    ],
+    "tips_en": [
+      "Mentally break into sets of 25 or 30"
+    ],
+    "tips_ar": [
+      "ذهنياً قسّمها لمجموعات 25 أو 30"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 600,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-cindy",
+    "name_en": "Cindy",
+    "name_ar": "سيندي",
+    "description_en": "AMRAP 20: 5 Pull-Ups, 10 Push-Ups, 15 Air Squats.",
+    "description_ar": "AMRAP 20: 5 عقلة، 10 ضغط، 15 اير سكوات.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "chest",
+      "quadriceps"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "beginner",
+    "instructions_en": [
+      "5 Pull-Ups",
+      "10 Push-Ups",
+      "15 Air Squats",
+      "As many rounds as possible in 20 min"
+    ],
+    "instructions_ar": [
+      "5 عقلة",
+      "10 ضغط",
+      "15 اير سكوات",
+      "أكبر عدد راوندات في 20 دقيقة"
+    ],
+    "tips_en": [
+      "20+ rounds is elite, 15+ is solid"
+    ],
+    "tips_ar": [
+      "20+ راوند محترف، 15+ كويس"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1200,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-annie",
+    "name_en": "Annie",
+    "name_ar": "آني",
+    "description_en": "50-40-30-20-10 Double-Unders & Sit-Ups.",
+    "description_ar": "50-40-30-20-10 دبل أندرز و ست أبز.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "cardio",
+      "abs"
+    ],
+    "equipment": [
+      "jump_rope"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "50 DUs then 50 Sit-Ups",
+      "40 DUs then 40 Sit-Ups",
+      "Continue descending to 10",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "50 دبل أندر ثم 50 ست أب",
+      "40 دبل أندر ثم 40 ست أب",
+      "كمّل نزولاً لـ 10",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "DU trip-ups will kill your time"
+    ],
+    "tips_ar": [
+      "الغلط في الدبل أندر هيضيع وقتك"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 600,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-nancy",
+    "name_en": "Nancy",
+    "name_ar": "نانسي",
+    "description_en": "5 RFT: 400m Run, 15 Overhead Squats (43/30 kg).",
+    "description_ar": "5 راوند: 400م جري، 15 أوفرهيد سكوات (43/30 كجم).",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders",
+      "cardio"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "400m Run",
+      "15 Overhead Squats",
+      "5 rounds for time",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "400م جري",
+      "15 أوفرهيد سكوات",
+      "5 راوند بأسرع وقت",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "OHS after running = mobility nightmare — warm up well"
+    ],
+    "tips_ar": [
+      "OHS بعد الجري = كابوس مرونة — سخّن كويس"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 900,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-mary",
+    "name_en": "Mary",
+    "name_ar": "ماري",
+    "description_en": "AMRAP 20: 5 HSPU, 10 Pistols, 15 Pull-Ups.",
+    "description_ar": "AMRAP 20: 5 HSPU، 10 بيستول، 15 عقلة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "quadriceps",
+      "back"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "5 Handstand Push-Ups",
+      "10 Pistol Squats (alternating)",
+      "15 Pull-Ups",
+      "AMRAP in 20 min"
+    ],
+    "instructions_ar": [
+      "5 هاند ستاند بوش أب",
+      "10 بيستول سكوات (بالتبادل)",
+      "15 عقلة",
+      "أكبر عدد في 20 دقيقة"
+    ],
+    "tips_en": [
+      "The gymnastics version of Cindy"
+    ],
+    "tips_ar": [
+      "نسخة الجمباز من سيندي"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1200,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-murph",
+    "name_en": "Murph",
+    "name_ar": "ميرف",
+    "description_en": "1 Mile Run, 100 Pull-Ups, 200 Push-Ups, 300 Air Squats, 1 Mile Run. With 9/6 kg vest.",
+    "description_ar": "1 ميل جري، 100 عقلة، 200 ضغط، 300 اير سكوات، 1 ميل جري. بالفست 9/6 كجم.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "chest",
+      "quadriceps",
+      "cardio"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "1 Mile Run",
+      "100 Pull-Ups, 200 Push-Ups, 300 Squats (partition as needed)",
+      "1 Mile Run",
+      "With weight vest if possible"
+    ],
+    "instructions_ar": [
+      "1 ميل جري",
+      "100 عقلة، 200 ضغط، 300 سكوات (قسّم زي ما تحب)",
+      "1 ميل جري",
+      "بالفست لو تقدر"
+    ],
+    "tips_en": [
+      "Partition 20 rounds of 5-10-15 is most common"
+    ],
+    "tips_ar": [
+      "تقسيم 20 راوند من 5-10-15 الأشهر"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 2400,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "hero-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-dt",
+    "name_en": "DT",
+    "name_ar": "دي تي",
+    "description_en": "5 RFT: 12 Deadlifts, 9 Hang Power Cleans, 6 Push Jerks (70/47 kg).",
+    "description_ar": "5 راوند: 12 ديدلفت، 9 هانج باور كلين، 6 بوش جيرك (70/47 كجم).",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "12 Deadlifts",
+      "9 Hang Power Cleans",
+      "6 Push Jerks",
+      "5 rounds for time, same bar"
+    ],
+    "instructions_ar": [
+      "12 ديدلفت",
+      "9 هانج باور كلين",
+      "6 بوش جيرك",
+      "5 راوند بأسرع وقت، نفس البار"
+    ],
+    "tips_en": [
+      "Touch and go if possible — don't drop the bar"
+    ],
+    "tips_ar": [
+      "تاتش آند جو لو تقدر — متوقعش البار"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 600,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "hero-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-nate",
+    "name_en": "Nate",
+    "name_ar": "نيت",
+    "description_en": "AMRAP 20: 2 Muscle-Ups, 4 HSPU, 8 KB Swings (32/24 kg).",
+    "description_ar": "AMRAP 20: 2 ماسل أب، 4 HSPU، 8 كيتل بل سوينج (32/24 كجم).",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "shoulders"
+    ],
+    "equipment": [
+      "rings",
+      "kettlebell"
+    ],
+    "difficulty": "expert",
+    "instructions_en": [
+      "2 Muscle-Ups (bar or ring)",
+      "4 Handstand Push-Ups",
+      "8 KB Swings (heavy)",
+      "AMRAP 20 min"
+    ],
+    "instructions_ar": [
+      "2 ماسل أب",
+      "4 هاند ستاند بوش أب",
+      "8 كيتل بل سوينج (تقيل)",
+      "AMRAP 20 دقيقة"
+    ],
+    "tips_en": [
+      "10+ rounds is elite"
+    ],
+    "tips_ar": [
+      "10+ راوند محترف"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1200,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "hero-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-badger",
+    "name_en": "Badger",
+    "name_ar": "بادجر",
+    "description_en": "3 RFT: 30 Squat Cleans (43/30 kg), 30 Pull-Ups, 800m Run.",
+    "description_ar": "3 راوند: 30 سكوات كلين (43/30 كجم)، 30 عقلة، 800م جري.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "back",
+      "cardio"
+    ],
+    "equipment": [
+      "barbell",
+      "pull_up_bar"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "30 Squat Cleans",
+      "30 Pull-Ups",
+      "800m Run",
+      "3 rounds for time"
+    ],
+    "instructions_ar": [
+      "30 سكوات كلين",
+      "30 عقلة",
+      "800م جري",
+      "3 راوند بأسرع وقت"
+    ],
+    "tips_en": [
+      "Long and brutal — break cleans early"
+    ],
+    "tips_ar": [
+      "طويل ووحشي — قسّم الكلينز من بدري"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1800,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "hero-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-fight-gone-bad",
+    "name_en": "Fight Gone Bad",
+    "name_ar": "فايت جون باد",
+    "description_en": "3 RFT: 1 min each — Wall Balls, SDLHP, Box Jumps, Push Press, Row (cal). 1 min rest between rounds.",
+    "description_ar": "3 راوند: دقيقة لكل — وول بول، SDLHP، بوكس جمب، بوش بريس، تجديف. دقيقة راحة بين الراوندات.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "wall_ball",
+      "barbell",
+      "plyo_box",
+      "rowing"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "1 min Wall Balls",
+      "1 min SDLHP",
+      "1 min Box Jumps",
+      "1 min Push Press",
+      "1 min Row cals",
+      "1 min rest, 3 rounds, score = total reps"
+    ],
+    "instructions_ar": [
+      "1 دقيقة وول بول",
+      "1 دقيقة SDLHP",
+      "1 دقيقة بوكس جمب",
+      "1 دقيقة بوش بريس",
+      "1 دقيقة تجديف",
+      "1 دقيقة راحة، 3 راوند، السكور = إجمالي التكرارات"
+    ],
+    "tips_en": [
+      "300+ reps is great"
+    ],
+    "tips_ar": [
+      "300+ تكرار ممتاز"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1020,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "classic"
+    ]
+  },
+  {
+    "id": "cf-wod-filthy-fifty",
+    "name_en": "Filthy Fifty",
+    "name_ar": "فيلثي فيفتي",
+    "description_en": "50 each: Box Jumps, Jumping Pull-Ups, KB Swings, Walking Lunges, K2E, Push Press, Back Extensions, Wall Balls, Burpees, Double-Unders.",
+    "description_ar": "50 لكل: بوكس جمب، عقلة بنط، كيتل بل سوينج، لانج مشي، ركب للكوع، بوش بريس، باك إكستنشن، وول بول، بيربي، دبل أندر.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [],
+    "equipment": [
+      "plyo_box",
+      "pull_up_bar",
+      "kettlebell",
+      "barbell",
+      "wall_ball",
+      "jump_rope"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "50 of each exercise in order",
+      "For time",
+      "Scale weights as needed",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "50 من كل تمرين بالترتيب",
+      "بأسرع وقت",
+      "عدّل الأوزان حسب الحاجة",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "Pace yourself — it's 500 total reps"
+    ],
+    "tips_ar": [
+      "وزّع مجهودك — 500 تكرار إجمالي"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1800,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "classic"
+    ]
+  },
+  {
+    "id": "cf-wod-the-chief",
+    "name_en": "The Chief",
+    "name_ar": "ذا شيف",
+    "description_en": "5 cycles of AMRAP 3: 3 Power Cleans (61/43 kg), 6 Push-Ups, 9 Air Squats. 1 min rest between.",
+    "description_ar": "5 دورات AMRAP 3: 3 باور كلين (61/43 كجم)، 6 ضغط، 9 اير سكوات. دقيقة راحة بينهم.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "chest",
+      "quadriceps"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "AMRAP 3 minutes",
+      "3 Power Cleans, 6 Push-Ups, 9 Squats",
+      "1 min rest",
+      "5 total cycles, score = total rounds"
+    ],
+    "instructions_ar": [
+      "AMRAP 3 دقايق",
+      "3 باور كلين، 6 ضغط، 9 سكوات",
+      "دقيقة راحة",
+      "5 دورات، السكور = إجمالي الراوندات"
+    ],
+    "tips_en": [
+      "Fast cycle = more rounds. Aim for 4+ per cycle"
+    ],
+    "tips_ar": [
+      "دورة سريعة = راوندات أكتر. استهدف 4+ كل دورة"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1200,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "classic"
+    ]
+  },
+  {
+    "id": "cf-wod-kelly",
+    "name_en": "Kelly",
+    "name_ar": "كيلي",
+    "description_en": "5 RFT: 400m Run, 30 Box Jumps (60/50 cm), 30 Wall Balls (9/6 kg).",
+    "description_ar": "5 راوند: 400م جري، 30 بوكس جمب (60/50 سم)، 30 وول بول (9/6 كجم).",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "cardio"
+    ],
+    "equipment": [
+      "plyo_box",
+      "wall_ball"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "400m Run",
+      "30 Box Jumps",
+      "30 Wall Balls",
+      "5 rounds for time"
+    ],
+    "instructions_ar": [
+      "400م جري",
+      "30 بوكس جمب",
+      "30 وول بول",
+      "5 راوند بأسرع وقت"
+    ],
+    "tips_en": [
+      "Step down on box jumps to save your legs"
+    ],
+    "tips_ar": [
+      "انزل ماشي من البوكس عشان ترتاح رجلك"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1800,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "classic"
+    ]
+  },
+  {
+    "id": "cf-wod-king-kong",
+    "name_en": "King Kong",
+    "name_ar": "كينج كونج",
+    "description_en": "3 RFT: 1 Deadlift (206/143 kg), 2 Muscle-Ups, 3 Squat Cleans (113/75 kg), 4 HSPU.",
+    "description_ar": "3 راوند: 1 ديدلفت (206/143 كجم)، 2 ماسل أب، 3 سكوات كلين (113/75 كجم)، 4 HSPU.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell",
+      "rings"
+    ],
+    "difficulty": "expert",
+    "instructions_en": [
+      "1 Deadlift (heavy!)",
+      "2 Muscle-Ups",
+      "3 Squat Cleans",
+      "4 HSPU",
+      "3 rounds for time"
+    ],
+    "instructions_ar": [
+      "1 ديدلفت (تقيل!)",
+      "2 ماسل أب",
+      "3 سكوات كلين",
+      "4 HSPU",
+      "3 راوند بأسرع وقت"
+    ],
+    "tips_en": [
+      "One of the hardest WODs ever created"
+    ],
+    "tips_ar": [
+      "واحد من أصعب WODs في التاريخ"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 900,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "classic"
+    ]
+  },
+  {
+    "id": "cf-wod-amanda",
+    "name_en": "Amanda",
+    "name_ar": "أماندا",
+    "description_en": "9-7-5 Muscle-Ups & Squat Snatches (61/43 kg).",
+    "description_ar": "9-7-5 ماسل أب وسكوات سناتش (61/43 كجم).",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "shoulders"
+    ],
+    "equipment": [
+      "rings",
+      "barbell"
+    ],
+    "difficulty": "expert",
+    "instructions_en": [
+      "9 Muscle-Ups then 9 Snatches",
+      "7 Muscle-Ups then 7 Snatches",
+      "5 Muscle-Ups then 5 Snatches",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "9 ماسل أب ثم 9 سناتش",
+      "7 ماسل أب ثم 7 سناتش",
+      "5 ماسل أب ثم 5 سناتش",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "Sub-5 is elite — very technical WOD"
+    ],
+    "tips_ar": [
+      "تحت 5 محترف — WOD تقني جداً"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 600,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-chelsea",
+    "name_en": "Chelsea",
+    "name_ar": "تشيلسي",
+    "description_en": "EMOM 30: 5 Pull-Ups, 10 Push-Ups, 15 Air Squats.",
+    "description_ar": "كل دقيقة لمدة 30: 5 عقلة، 10 ضغط، 15 اير سكوات.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "chest",
+      "quadriceps"
+    ],
+    "equipment": [
+      "pull_up_bar"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "Every minute on the minute for 30 min",
+      "5 Pull-Ups, 10 Push-Ups, 15 Air Squats",
+      "Rest = remaining time in minute",
+      "Score = rounds completed"
+    ],
+    "instructions_ar": [
+      "كل دقيقة لمدة 30 دقيقة",
+      "5 عقلة، 10 ضغط، 15 سكوات",
+      "الراحة = الباقي من الدقيقة",
+      "السكور = عدد الراوندات المكتملة"
+    ],
+    "tips_en": [
+      "Cindy's EMOM sister — must finish within the minute"
+    ],
+    "tips_ar": [
+      "أخت سيندي الـ EMOM — لازم تخلص في الدقيقة"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 1800,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "classic"
+    ]
+  },
+  {
+    "id": "cf-wod-eva",
+    "name_en": "Eva",
+    "name_ar": "إيفا",
+    "description_en": "5 RFT: 800m Run, 30 KB Swings (32/24 kg), 30 Pull-Ups.",
+    "description_ar": "5 راوند: 800م جري، 30 كيتل بل سوينج (32/24 كجم)، 30 عقلة.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "cardio",
+      "back"
+    ],
+    "equipment": [
+      "kettlebell",
+      "pull_up_bar"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "800m Run",
+      "30 KB Swings (heavy)",
+      "30 Pull-Ups",
+      "5 rounds for time"
+    ],
+    "instructions_ar": [
+      "800م جري",
+      "30 كيتل بل سوينج (تقيل)",
+      "30 عقلة",
+      "5 راوند بأسرع وقت"
+    ],
+    "tips_en": [
+      "Helen's big sister — longer and heavier"
+    ],
+    "tips_ar": [
+      "أخت هيلين الكبيرة — أطول وأتقل"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 2400,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "classic"
+    ]
+  },
+  {
+    "id": "cf-wod-elizabeth",
+    "name_en": "Elizabeth",
+    "name_ar": "إليزابيث",
+    "description_en": "21-15-9 Cleans (61/43 kg) & Ring Dips.",
+    "description_ar": "21-15-9 كلينز (61/43 كجم) ورينج ديبس.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "triceps"
+    ],
+    "equipment": [
+      "barbell",
+      "rings"
+    ],
+    "difficulty": "advanced",
+    "instructions_en": [
+      "21 Cleans then 21 Ring Dips",
+      "15 Cleans then 15 Ring Dips",
+      "9 Cleans then 9 Ring Dips",
+      "Record time"
+    ],
+    "instructions_ar": [
+      "21 كلين ثم 21 رينج ديب",
+      "15 كلين ثم 15 رينج ديب",
+      "9 كلين ثم 9 رينج ديب",
+      "سجّل الوقت"
+    ],
+    "tips_en": [
+      "Squat cleans save energy vs power cleans"
+    ],
+    "tips_ar": [
+      "سكوات كلين بيوفر طاقة أكتر من باور كلين"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 480,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  },
+  {
+    "id": "cf-wod-jackie",
+    "name_en": "Jackie",
+    "name_ar": "جاكي",
+    "description_en": "1000m Row, 50 Thrusters (20/14 kg), 30 Pull-Ups. For time.",
+    "description_ar": "1000م تجديف، 50 ثرستر (20/14 كجم)، 30 عقلة. بأسرع وقت.",
+    "category": "crossfit",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "cardio",
+      "shoulders",
+      "back"
+    ],
+    "equipment": [
+      "rowing",
+      "barbell",
+      "pull_up_bar"
+    ],
+    "difficulty": "intermediate",
+    "instructions_en": [
+      "1000m Row",
+      "50 Thrusters (light)",
+      "30 Pull-Ups",
+      "For time"
+    ],
+    "instructions_ar": [
+      "1000م تجديف",
+      "50 ثرستر (خفيف)",
+      "30 عقلة",
+      "بأسرع وقت"
+    ],
+    "tips_en": [
+      "Don't blow up on the row — save gas for thrusters"
+    ],
+    "tips_ar": [
+      "متستنفذش في التجديف — وفّر للثرسترز"
+    ],
+    "is_time_based": true,
+    "default_sets": 1,
+    "default_reps": 1,
+    "default_duration": 600,
+    "default_rest": 0,
+    "tags": [
+      "crossfit",
+      "benchmark",
+      "wod",
+      "girl-wod"
+    ]
+  }
+]

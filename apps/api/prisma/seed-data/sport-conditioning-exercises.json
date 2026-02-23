@@ -1,0 +1,356 @@
+[
+  {
+    "id": "ex-sc-001",
+    "name_en": "Battle Ropes (Alternating Waves)",
+    "name_ar": "باتل روبس (موجات متبادلة)",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "core",
+      "forearms"
+    ],
+    "equipment": "battle_ropes",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 4,
+    "default_reps": "30 sec",
+    "tags": [
+      "conditioning",
+      "battle_ropes",
+      "cardio",
+      "shoulders",
+      "hiit"
+    ]
+  },
+  {
+    "id": "ex-sc-002",
+    "name_en": "Battle Ropes (Double Slam)",
+    "name_ar": "باتل روبس (سلام مزدوج)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "core",
+      "lats"
+    ],
+    "equipment": "battle_ropes",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 4,
+    "default_reps": "30 sec",
+    "tags": [
+      "conditioning",
+      "battle_ropes",
+      "slam",
+      "power",
+      "hiit"
+    ]
+  },
+  {
+    "id": "ex-sc-004",
+    "name_en": "Sled Drag (Backward)",
+    "name_ar": "سليد دراج (خلفي)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "hamstrings",
+      "calves"
+    ],
+    "equipment": "sled",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 4,
+    "default_reps": "20m",
+    "tags": [
+      "conditioning",
+      "sled_drag",
+      "legs",
+      "knee_health"
+    ]
+  },
+  {
+    "id": "ex-sc-005",
+    "name_en": "Tire Flip",
+    "name_ar": "تاير فليب (قلب إطار)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "traps"
+    ],
+    "equipment": "tire",
+    "difficulty": "advanced",
+    "category": "conditioning",
+    "default_sets": 3,
+    "default_reps": "8",
+    "tags": [
+      "conditioning",
+      "tire_flip",
+      "strongman",
+      "explosive"
+    ]
+  },
+  {
+    "id": "ex-sc-007",
+    "name_en": "Medicine Ball Wall Throw",
+    "name_ar": "ميديسن بول وول ثرو",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders"
+    ],
+    "equipment": "medicine_ball",
+    "difficulty": "beginner",
+    "category": "conditioning",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "conditioning",
+      "med_ball",
+      "wall_ball",
+      "crossfit"
+    ]
+  },
+  {
+    "id": "ex-sc-010",
+    "name_en": "Jump Squat (Bodyweight)",
+    "name_ar": "جامب سكوات",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "calves"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "conditioning",
+    "default_sets": 3,
+    "default_reps": "10",
+    "tags": [
+      "conditioning",
+      "jump_squat",
+      "plyometric",
+      "power"
+    ]
+  },
+  {
+    "id": "ex-sc-011",
+    "name_en": "Assault Bike (Intervals)",
+    "name_ar": "أسولت بايك (فترات)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders",
+      "core"
+    ],
+    "equipment": "assault_bike",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 6,
+    "default_reps": "30 sec on / 30 sec off",
+    "tags": [
+      "conditioning",
+      "assault_bike",
+      "hiit",
+      "cardio"
+    ]
+  },
+  {
+    "id": "ex-sc-012",
+    "name_en": "Rowing Machine (500m Intervals)",
+    "name_ar": "روينج ماشين (500 متر فترات)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "lats",
+      "quadriceps",
+      "core"
+    ],
+    "equipment": "rowing_machine",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 5,
+    "default_reps": "500m",
+    "tags": [
+      "conditioning",
+      "rowing",
+      "hiit",
+      "cardio",
+      "endurance"
+    ]
+  },
+  {
+    "id": "ex-sc-013",
+    "name_en": "Ski Erg (Intervals)",
+    "name_ar": "سكي إيرج (فترات)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "triceps",
+      "core"
+    ],
+    "equipment": "ski_erg",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 5,
+    "default_reps": "30 sec",
+    "tags": [
+      "conditioning",
+      "ski_erg",
+      "hiit",
+      "upper_body_cardio"
+    ]
+  },
+  {
+    "id": "ex-sc-014",
+    "name_en": "Shadow Boxing (3 min rounds)",
+    "name_ar": "شادو بوكسنج (جولات 3 دقائق)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "core",
+      "calves"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "conditioning",
+    "default_sets": 3,
+    "default_reps": "3 min round",
+    "tags": [
+      "conditioning",
+      "boxing",
+      "shadow",
+      "cardio",
+      "warm_up"
+    ]
+  },
+  {
+    "id": "ex-sc-015",
+    "name_en": "Heavy Bag Work (Boxing)",
+    "name_ar": "شغل كيس ملاكمة ثقيل",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "core",
+      "chest",
+      "triceps"
+    ],
+    "equipment": "heavy_bag",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 5,
+    "default_reps": "3 min round",
+    "tags": [
+      "conditioning",
+      "boxing",
+      "heavy_bag",
+      "cardio",
+      "power"
+    ]
+  },
+  {
+    "id": "ex-sc-017",
+    "name_en": "Jump Rope (Regular)",
+    "name_ar": "نط حبل (عادي)",
+    "primary_muscle": "calves",
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": "jump_rope",
+    "difficulty": "beginner",
+    "category": "conditioning",
+    "default_sets": 3,
+    "default_reps": "2 min",
+    "tags": [
+      "conditioning",
+      "jump_rope",
+      "cardio",
+      "coordination",
+      "boxing"
+    ]
+  },
+  {
+    "id": "ex-sc-018",
+    "name_en": "Double-Under Jump Rope",
+    "name_ar": "نط حبل دبل أندر",
+    "primary_muscle": "calves",
+    "secondary_muscles": [
+      "shoulders",
+      "core"
+    ],
+    "equipment": "jump_rope",
+    "difficulty": "advanced",
+    "category": "conditioning",
+    "default_sets": 3,
+    "default_reps": "30",
+    "tags": [
+      "conditioning",
+      "double_under",
+      "crossfit",
+      "coordination"
+    ]
+  },
+  {
+    "id": "ex-sc-022",
+    "name_en": "Kettlebell Clean & Press",
+    "name_ar": "كيتل بيل كلين أند بريس",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "core",
+      "glutes",
+      "triceps"
+    ],
+    "equipment": "kettlebell",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 3,
+    "default_reps": "8 each arm",
+    "tags": [
+      "conditioning",
+      "kettlebell",
+      "clean_press",
+      "full_body"
+    ]
+  },
+  {
+    "id": "ex-sc-024",
+    "name_en": "Sprint Intervals (Track)",
+    "name_ar": "سبرينت فترات (ميدان)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "hamstrings",
+      "glutes",
+      "calves"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "category": "conditioning",
+    "default_sets": 8,
+    "default_reps": "100m sprint",
+    "tags": [
+      "conditioning",
+      "sprint",
+      "hiit",
+      "speed",
+      "athletic"
+    ]
+  },
+  {
+    "id": "ex-sc-025",
+    "name_en": "Prowler Push / Sled Sprint",
+    "name_ar": "بروولر بوش / سليد سبرينت",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "glutes",
+      "core"
+    ],
+    "equipment": "sled",
+    "difficulty": "advanced",
+    "category": "conditioning",
+    "default_sets": 5,
+    "default_reps": "30m",
+    "tags": [
+      "conditioning",
+      "prowler",
+      "sled_sprint",
+      "power",
+      "athletic"
+    ]
+  }
+]

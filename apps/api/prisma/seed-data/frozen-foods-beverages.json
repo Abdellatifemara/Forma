@@ -1,0 +1,867 @@
+[
+  {
+    "name_en": "Americana Chicken Nuggets (10 pieces)",
+    "name_ar": "أمريكانا ناجتس فراخ ١٠ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 460,
+    "protein_g": 18,
+    "carbs_g": 30,
+    "fat_g": 30,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "brand_en": "Americana",
+    "brand_ar": "أمريكانا",
+    "tags": [
+      "frozen",
+      "chicken",
+      "nuggets",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Americana Chicken Strips (200g)",
+    "name_ar": "أمريكانا ستربس فراخ",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 22,
+    "carbs_g": 28,
+    "fat_g": 24,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "brand_en": "Americana",
+    "brand_ar": "أمريكانا",
+    "tags": [
+      "frozen",
+      "chicken",
+      "strips"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Americana Chicken Burger Patty (2 pieces)",
+    "name_ar": "أمريكانا برجر فراخ ٢ حبة",
+    "category": "PROTEIN",
+    "serving_size_g": 140,
+    "calories": 320,
+    "protein_g": 14,
+    "carbs_g": 20,
+    "fat_g": 20,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "brand_en": "Americana",
+    "brand_ar": "أمريكانا",
+    "tags": [
+      "frozen",
+      "chicken",
+      "burger"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Americana Beef Burger Patty (2 pieces)",
+    "name_ar": "أمريكانا برجر لحمة ٢ حبة",
+    "category": "PROTEIN",
+    "serving_size_g": 140,
+    "calories": 380,
+    "protein_g": 16,
+    "carbs_g": 14,
+    "fat_g": 28,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "brand_en": "Americana",
+    "brand_ar": "أمريكانا",
+    "tags": [
+      "frozen",
+      "beef",
+      "burger"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Farm Frites French Fries (200g)",
+    "name_ar": "فارم فريتس بطاطس مقلية",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 320,
+    "protein_g": 4,
+    "carbs_g": 46,
+    "fat_g": 14,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "brand_en": "Farm Frites",
+    "brand_ar": "فارم فريتس",
+    "tags": [
+      "frozen",
+      "fries",
+      "potatoes"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/french-fries.jpg"
+  },
+  {
+    "name_en": "McCain Potato Wedges (200g)",
+    "name_ar": "ماكين بطاطس ودجز",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 340,
+    "protein_g": 4,
+    "carbs_g": 48,
+    "fat_g": 15,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "brand_en": "McCain",
+    "brand_ar": "ماكين",
+    "tags": [
+      "frozen",
+      "potatoes",
+      "wedges"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potatoes.jpg"
+  },
+  {
+    "name_en": "Siniora Mortadella (4 slices)",
+    "name_ar": "سنيورة مرتديلا ٤ شرائح",
+    "category": "PROTEIN",
+    "serving_size_g": 80,
+    "calories": 200,
+    "protein_g": 10,
+    "carbs_g": 4,
+    "fat_g": 16,
+    "fiber_g": 0,
+    "sodium_mg": 600,
+    "is_egyptian": false,
+    "brand_en": "Siniora",
+    "brand_ar": "سنيورة",
+    "tags": [
+      "deli",
+      "processed",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Siniora Turkey Breast Slices (4 slices)",
+    "name_ar": "سنيورة صدر ديك رومي ٤ شرائح",
+    "category": "PROTEIN",
+    "serving_size_g": 80,
+    "calories": 90,
+    "protein_g": 16,
+    "carbs_g": 2,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "sodium_mg": 500,
+    "is_egyptian": false,
+    "brand_en": "Siniora",
+    "brand_ar": "سنيورة",
+    "tags": [
+      "deli",
+      "turkey",
+      "low-fat",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turkey-breast.jpg"
+  },
+  {
+    "name_en": "Siniora Smoked Turkey (4 slices)",
+    "name_ar": "سنيورة ديك رومي مدخن ٤ شرائح",
+    "category": "PROTEIN",
+    "serving_size_g": 80,
+    "calories": 100,
+    "protein_g": 15,
+    "carbs_g": 2,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "brand_en": "Siniora",
+    "brand_ar": "سنيورة",
+    "tags": [
+      "deli",
+      "turkey",
+      "smoked"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turkey-breast.jpg"
+  },
+  {
+    "name_en": "Siniora Roast Beef (4 slices)",
+    "name_ar": "سنيورة روست بيف ٤ شرائح",
+    "category": "PROTEIN",
+    "serving_size_g": 80,
+    "calories": 120,
+    "protein_g": 18,
+    "carbs_g": 1,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "brand_en": "Siniora",
+    "brand_ar": "سنيورة",
+    "tags": [
+      "deli",
+      "beef",
+      "roast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Halwani Bros Hot Dog (4 pieces)",
+    "name_ar": "الحلواني هوت دوج ٤ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 140,
+    "calories": 360,
+    "protein_g": 10,
+    "carbs_g": 6,
+    "fat_g": 32,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "brand_en": "Halwani Bros",
+    "brand_ar": "الحلواني",
+    "tags": [
+      "frozen",
+      "processed",
+      "hot-dog"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hot-dogs.jpg"
+  },
+  {
+    "name_en": "Halwani Bros Chicken Luncheon (4 slices)",
+    "name_ar": "الحلواني لانشون فراخ ٤ شرائح",
+    "category": "PROTEIN",
+    "serving_size_g": 80,
+    "calories": 180,
+    "protein_g": 10,
+    "carbs_g": 6,
+    "fat_g": 13,
+    "fiber_g": 0,
+    "sodium_mg": 550,
+    "is_egyptian": false,
+    "brand_en": "Halwani Bros",
+    "brand_ar": "الحلواني",
+    "tags": [
+      "deli",
+      "luncheon",
+      "chicken"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Kiri Cheese Portions (2 pieces)",
+    "name_ar": "كيري جبنة ٢ حبة",
+    "category": "DAIRY",
+    "serving_size_g": 36,
+    "calories": 100,
+    "protein_g": 3,
+    "carbs_g": 2,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "calcium_mg": 100,
+    "is_egyptian": false,
+    "brand_en": "Kiri",
+    "brand_ar": "كيري",
+    "tags": [
+      "cheese",
+      "spread",
+      "kids",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "La Vache Qui Rit (Laughing Cow, 2 triangles)",
+    "name_ar": "البقرة الضاحكة ٢ مثلث",
+    "category": "DAIRY",
+    "serving_size_g": 36,
+    "calories": 90,
+    "protein_g": 4,
+    "carbs_g": 2,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "calcium_mg": 120,
+    "is_egyptian": false,
+    "brand_en": "La Vache Qui Rit",
+    "brand_ar": "البقرة الضاحكة",
+    "tags": [
+      "cheese",
+      "spread",
+      "triangles"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Panda Cheese (2 triangles)",
+    "name_ar": "جبنة باندا ٢ مثلث",
+    "category": "DAIRY",
+    "serving_size_g": 32,
+    "calories": 80,
+    "protein_g": 3.5,
+    "carbs_g": 2,
+    "fat_g": 6.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "brand_en": "Panda",
+    "brand_ar": "باندا",
+    "tags": [
+      "cheese",
+      "spread",
+      "egyptian-brand"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Red Bull Energy Drink (250ml)",
+    "name_ar": "ريد بول",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 110,
+    "protein_g": 0,
+    "carbs_g": 28,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 27,
+    "caffeine_mg": 80,
+    "is_egyptian": false,
+    "brand_en": "Red Bull",
+    "brand_ar": "ريد بول",
+    "tags": [
+      "energy-drink",
+      "caffeine",
+      "pre-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Red Bull Sugar Free (250ml)",
+    "name_ar": "ريد بول شوجر فري",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 0,
+    "caffeine_mg": 80,
+    "is_egyptian": false,
+    "brand_en": "Red Bull",
+    "brand_ar": "ريد بول",
+    "tags": [
+      "energy-drink",
+      "sugar-free",
+      "caffeine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Monster Energy Original (500ml)",
+    "name_ar": "مونستر إنرجي",
+    "category": "OTHER",
+    "serving_size_g": 500,
+    "calories": 220,
+    "protein_g": 0,
+    "carbs_g": 54,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 54,
+    "caffeine_mg": 160,
+    "is_egyptian": false,
+    "brand_en": "Monster",
+    "brand_ar": "مونستر",
+    "tags": [
+      "energy-drink",
+      "caffeine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Monster Energy Zero Sugar (500ml)",
+    "name_ar": "مونستر زيرو شوجر",
+    "category": "OTHER",
+    "serving_size_g": 500,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 0,
+    "caffeine_mg": 160,
+    "is_egyptian": false,
+    "brand_en": "Monster",
+    "brand_ar": "مونستر",
+    "tags": [
+      "energy-drink",
+      "sugar-free",
+      "caffeine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "V Energy Drink (250ml)",
+    "name_ar": "في إنرجي",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 115,
+    "protein_g": 0,
+    "carbs_g": 28,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 27,
+    "caffeine_mg": 78,
+    "is_egyptian": false,
+    "tags": [
+      "energy-drink",
+      "caffeine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "XL Energy Drink (250ml)",
+    "name_ar": "إكس إل إنرجي",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 112,
+    "protein_g": 0,
+    "carbs_g": 28,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 27,
+    "caffeine_mg": 80,
+    "is_egyptian": false,
+    "brand_en": "XL",
+    "brand_ar": "إكس إل",
+    "tags": [
+      "energy-drink",
+      "caffeine",
+      "popular-egypt"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Power Horse Energy Drink (250ml)",
+    "name_ar": "باور هورس",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 112,
+    "protein_g": 0,
+    "carbs_g": 27,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 27,
+    "caffeine_mg": 80,
+    "is_egyptian": false,
+    "brand_en": "Power Horse",
+    "brand_ar": "باور هورس",
+    "tags": [
+      "energy-drink",
+      "caffeine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Gatorade Original (500ml)",
+    "name_ar": "جاتوريد",
+    "category": "OTHER",
+    "serving_size_g": 500,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 30,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 30,
+    "sodium_mg": 270,
+    "potassium_mg": 75,
+    "is_egyptian": false,
+    "brand_en": "Gatorade",
+    "brand_ar": "جاتوريد",
+    "tags": [
+      "sports-drink",
+      "electrolytes",
+      "hydration"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Gatorade Zero (500ml)",
+    "name_ar": "جاتوريد زيرو",
+    "category": "OTHER",
+    "serving_size_g": 500,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 0,
+    "sodium_mg": 270,
+    "potassium_mg": 75,
+    "is_egyptian": false,
+    "brand_en": "Gatorade",
+    "brand_ar": "جاتوريد",
+    "tags": [
+      "sports-drink",
+      "sugar-free",
+      "electrolytes"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Powerade (500ml)",
+    "name_ar": "باوريد",
+    "category": "OTHER",
+    "serving_size_g": 500,
+    "calories": 100,
+    "protein_g": 0,
+    "carbs_g": 25,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 25,
+    "sodium_mg": 250,
+    "is_egyptian": false,
+    "brand_en": "Powerade",
+    "brand_ar": "باوريد",
+    "tags": [
+      "sports-drink",
+      "electrolytes"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Frozen Mixed Vegetables (1 cup cooked)",
+    "name_ar": "خضار مشكل مجمد كوب مطبوخ",
+    "category": "VEGETABLES",
+    "serving_size_g": 180,
+    "calories": 80,
+    "protein_g": 4,
+    "carbs_g": 14,
+    "fat_g": 0.5,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "vegetables",
+      "convenient"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Frozen Peas (1 cup)",
+    "name_ar": "بسلة مجمدة كوب",
+    "category": "VEGETABLES",
+    "serving_size_g": 160,
+    "calories": 120,
+    "protein_g": 8,
+    "carbs_g": 20,
+    "fat_g": 0.5,
+    "fiber_g": 7,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "peas",
+      "protein-vegetable"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peas.jpg"
+  },
+  {
+    "name_en": "Frozen Broccoli (1 cup)",
+    "name_ar": "بروكلي مجمد كوب",
+    "category": "VEGETABLES",
+    "serving_size_g": 155,
+    "calories": 55,
+    "protein_g": 4,
+    "carbs_g": 10,
+    "fat_g": 0.5,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "broccoli",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Frozen Corn Kernels (1 cup)",
+    "name_ar": "ذرة مجمدة كوب",
+    "category": "CARBS",
+    "serving_size_g": 165,
+    "calories": 130,
+    "protein_g": 4.5,
+    "carbs_g": 28,
+    "fat_g": 1.5,
+    "fiber_g": 3.5,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "corn",
+      "starchy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/corn.jpg"
+  },
+  {
+    "name_en": "Frozen Green Beans (1 cup)",
+    "name_ar": "فاصوليا خضراء مجمدة كوب",
+    "category": "VEGETABLES",
+    "serving_size_g": 150,
+    "calories": 40,
+    "protein_g": 2.5,
+    "carbs_g": 8,
+    "fat_g": 0.3,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "green-beans",
+      "low-calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/green-beans.jpg"
+  },
+  {
+    "name_en": "Frozen Spinach (1 cup cooked)",
+    "name_ar": "سبانخ مجمدة كوب مطبوخ",
+    "category": "VEGETABLES",
+    "serving_size_g": 190,
+    "calories": 65,
+    "protein_g": 6,
+    "carbs_g": 10,
+    "fat_g": 0.5,
+    "fiber_g": 7,
+    "iron_mg": 4,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "spinach",
+      "iron-rich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "Frozen Fish Fillet (Tilapia, 2 pieces)",
+    "name_ar": "سمك بلطي فيليه مجمد ٢ حتة",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 220,
+    "protein_g": 42,
+    "carbs_g": 0,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "frozen",
+      "fish",
+      "tilapia",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tilapia-fillets.jpg"
+  },
+  {
+    "name_en": "Frozen Shrimp (200g)",
+    "name_ar": "جمبري مجمد",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 200,
+    "protein_g": 40,
+    "carbs_g": 2,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "shrimp",
+      "seafood",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/shrimp.jpg"
+  },
+  {
+    "name_en": "Frozen Breaded Shrimp (10 pieces)",
+    "name_ar": "جمبري بانيه مجمد ١٠ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 380,
+    "protein_g": 18,
+    "carbs_g": 30,
+    "fat_g": 20,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "shrimp",
+      "breaded",
+      "fried"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/shrimp.jpg"
+  },
+  {
+    "name_en": "Frozen Pizza Margherita (1/2 pizza)",
+    "name_ar": "بيتزا مارجريتا مجمدة نصف",
+    "category": "CARBS",
+    "serving_size_g": 175,
+    "calories": 420,
+    "protein_g": 16,
+    "carbs_g": 46,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "pizza",
+      "quick-meal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pizza.jpg"
+  },
+  {
+    "name_en": "Frozen Sambousek Cheese (5 pieces)",
+    "name_ar": "سمبوسك جبنة مجمد ٥ حبات",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 380,
+    "protein_g": 10,
+    "carbs_g": 34,
+    "fat_g": 22,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "frozen",
+      "sambousek",
+      "cheese",
+      "fried"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Frozen Sambousek Meat (5 pieces)",
+    "name_ar": "سمبوسك لحمة مجمد ٥ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 150,
+    "calories": 400,
+    "protein_g": 14,
+    "carbs_g": 30,
+    "fat_g": 24,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "frozen",
+      "sambousek",
+      "meat",
+      "fried"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Frozen Spring Rolls (5 pieces)",
+    "name_ar": "سبرنج رول مجمد ٥ حبات",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 350,
+    "protein_g": 8,
+    "carbs_g": 36,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "frozen",
+      "spring-rolls",
+      "appetizer"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spring-rolls.jpg"
+  },
+  {
+    "name_en": "Ice Cream Vanilla (1 scoop)",
+    "name_ar": "آيس كريم فانيليا سكوب",
+    "category": "DAIRY",
+    "serving_size_g": 70,
+    "calories": 140,
+    "protein_g": 2,
+    "carbs_g": 16,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "sugar_g": 14,
+    "is_egyptian": false,
+    "tags": [
+      "ice-cream",
+      "dessert",
+      "dairy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "Ice Cream Chocolate (1 scoop)",
+    "name_ar": "آيس كريم شوكولاتة سكوب",
+    "category": "DAIRY",
+    "serving_size_g": 70,
+    "calories": 150,
+    "protein_g": 2.5,
+    "carbs_g": 18,
+    "fat_g": 7.5,
+    "fiber_g": 0.5,
+    "sugar_g": 15,
+    "is_egyptian": false,
+    "tags": [
+      "ice-cream",
+      "dessert",
+      "chocolate"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "Magnum Classic Ice Cream Bar",
+    "name_ar": "ماجنوم كلاسيك",
+    "category": "DAIRY",
+    "serving_size_g": 86,
+    "calories": 260,
+    "protein_g": 4,
+    "carbs_g": 26,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "sugar_g": 24,
+    "is_egyptian": false,
+    "brand_en": "Magnum",
+    "brand_ar": "ماجنوم",
+    "tags": [
+      "ice-cream",
+      "dessert",
+      "chocolate"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "Cornetto Ice Cream Cone",
+    "name_ar": "كورنيتو",
+    "category": "DAIRY",
+    "serving_size_g": 90,
+    "calories": 220,
+    "protein_g": 3,
+    "carbs_g": 28,
+    "fat_g": 11,
+    "fiber_g": 0.5,
+    "sugar_g": 20,
+    "is_egyptian": false,
+    "brand_en": "Cornetto",
+    "brand_ar": "كورنيتو",
+    "tags": [
+      "ice-cream",
+      "cone",
+      "dessert"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "Mandolin Ice Cream (Egyptian, 1 bar)",
+    "name_ar": "ماندولين آيس كريم",
+    "category": "DAIRY",
+    "serving_size_g": 65,
+    "calories": 130,
+    "protein_g": 2,
+    "carbs_g": 18,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "sugar_g": 14,
+    "is_egyptian": true,
+    "brand_en": "Mandolin",
+    "brand_ar": "ماندولين",
+    "tags": [
+      "ice-cream",
+      "egyptian-brand",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  }
+]

@@ -1,0 +1,798 @@
+[
+  {
+    "id": "rehab-001",
+    "name_en": "Ankle Circles",
+    "name_ar": "دوائر الكاحل",
+    "primary_muscle": "ankles",
+    "secondary_muscles": [
+      "calves"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "10 each direction",
+    "tags": [
+      "rehab",
+      "ankle",
+      "mobility",
+      "warmup"
+    ]
+  },
+  {
+    "id": "rehab-002",
+    "name_en": "Wrist Circles",
+    "name_ar": "دوائر الرسغ",
+    "primary_muscle": "wrists",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "10 each direction",
+    "tags": [
+      "rehab",
+      "wrist",
+      "mobility",
+      "warmup"
+    ]
+  },
+  {
+    "id": "rehab-003",
+    "name_en": "Neck Rotations",
+    "name_ar": "تدوير الرقبة",
+    "primary_muscle": "neck",
+    "secondary_muscles": [
+      "traps"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "10 each direction",
+    "tags": [
+      "rehab",
+      "neck",
+      "mobility",
+      "office_worker"
+    ]
+  },
+  {
+    "id": "rehab-004",
+    "name_en": "Shoulder External Rotation (Band)",
+    "name_ar": "دوران خارجي للكتف (باند)",
+    "primary_muscle": "rotator_cuff",
+    "secondary_muscles": [
+      "rear_deltoid"
+    ],
+    "equipment": "resistance_band",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "shoulder",
+      "rotator_cuff",
+      "prevention"
+    ]
+  },
+  {
+    "id": "rehab-005",
+    "name_en": "Shoulder Internal Rotation (Band)",
+    "name_ar": "دوران داخلي للكتف (باند)",
+    "primary_muscle": "rotator_cuff",
+    "secondary_muscles": [
+      "subscapularis"
+    ],
+    "equipment": "resistance_band",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "shoulder",
+      "rotator_cuff",
+      "prevention"
+    ]
+  },
+  {
+    "id": "rehab-007",
+    "name_en": "Prone Y Raise",
+    "name_ar": "رفع Y على البطن",
+    "primary_muscle": "lower_traps",
+    "secondary_muscles": [
+      "rear_deltoid",
+      "rhomboids"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "rehab",
+      "shoulder",
+      "posture",
+      "upper_back"
+    ]
+  },
+  {
+    "id": "rehab-008",
+    "name_en": "Prone T Raise",
+    "name_ar": "رفع T على البطن",
+    "primary_muscle": "rhomboids",
+    "secondary_muscles": [
+      "rear_deltoid",
+      "middle_traps"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "rehab",
+      "shoulder",
+      "posture",
+      "upper_back"
+    ]
+  },
+  {
+    "id": "rehab-009",
+    "name_en": "Knee Extension (Seated)",
+    "name_ar": "مد الركبة جالساً",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "knee",
+      "quad",
+      "post_surgery"
+    ]
+  },
+  {
+    "id": "rehab-010",
+    "name_en": "Straight Leg Raise (Supine)",
+    "name_ar": "رفع الساق مستقيمة (مستلقي)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "rehab",
+      "knee",
+      "hip",
+      "post_surgery"
+    ]
+  },
+  {
+    "id": "rehab-011",
+    "name_en": "Heel Slides",
+    "name_ar": "انزلاق الكعب",
+    "primary_muscle": "hamstrings",
+    "secondary_muscles": [
+      "quadriceps"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "knee",
+      "ROM",
+      "post_surgery"
+    ]
+  },
+  {
+    "id": "rehab-012",
+    "name_en": "Calf Raises (Wall Support)",
+    "name_ar": "رفع الكعبين (مع سند الحائط)",
+    "primary_muscle": "calves",
+    "secondary_muscles": [
+      "ankles"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "ankle",
+      "calf",
+      "achilles"
+    ]
+  },
+  {
+    "id": "rehab-013",
+    "name_en": "Single Leg Balance",
+    "name_ar": "التوازن على ساق واحدة",
+    "primary_muscle": "ankles",
+    "secondary_muscles": [
+      "core",
+      "calves",
+      "hip_stabilizers"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": "30s each leg",
+    "tags": [
+      "rehab",
+      "balance",
+      "proprioception",
+      "ankle"
+    ]
+  },
+  {
+    "id": "rehab-014",
+    "name_en": "BOSU Ball Balance",
+    "name_ar": "توازن على كرة البوسو",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "ankles",
+      "legs",
+      "hip_stabilizers"
+    ],
+    "equipment": "bosu_ball",
+    "difficulty": "intermediate",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": "30s",
+    "tags": [
+      "rehab",
+      "balance",
+      "proprioception",
+      "core"
+    ]
+  },
+  {
+    "id": "rehab-015",
+    "name_en": "Hip Abduction (Side Lying)",
+    "name_ar": "فتح الفخذ جانبياً (مستلقي)",
+    "primary_muscle": "glute_medius",
+    "secondary_muscles": [
+      "hip_abductors"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "hip",
+      "glute",
+      "ITB"
+    ]
+  },
+  {
+    "id": "rehab-016",
+    "name_en": "Clamshell Exercise",
+    "name_ar": "تمرين الصدفة",
+    "primary_muscle": "glute_medius",
+    "secondary_muscles": [
+      "hip_external_rotators"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "hip",
+      "glute",
+      "knee_stability"
+    ]
+  },
+  {
+    "id": "rehab-017",
+    "name_en": "Hip Flexor Stretch (Kneeling)",
+    "name_ar": "تمدد عضلة الفخذ الأمامية (ركوع)",
+    "primary_muscle": "hip_flexors",
+    "secondary_muscles": [
+      "quadriceps"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "30s each side",
+    "tags": [
+      "rehab",
+      "hip",
+      "stretch",
+      "sitting_syndrome"
+    ]
+  },
+  {
+    "id": "rehab-018",
+    "name_en": "Piriformis Stretch",
+    "name_ar": "تمدد عضلة الكمثرية",
+    "primary_muscle": "piriformis",
+    "secondary_muscles": [
+      "glutes",
+      "hip_external_rotators"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "30s each side",
+    "tags": [
+      "rehab",
+      "hip",
+      "sciatica",
+      "stretch"
+    ]
+  },
+  {
+    "id": "rehab-019",
+    "name_en": "McKenzie Press-Up (Back Extension)",
+    "name_ar": "تمرين ماكنزي للظهر",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "abs"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "rehab",
+      "back",
+      "disc",
+      "mckenzie"
+    ]
+  },
+  {
+    "id": "rehab-020",
+    "name_en": "Pelvic Tilt (Supine)",
+    "name_ar": "إمالة الحوض (مستلقي)",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "lower_back",
+      "glutes"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "back",
+      "core",
+      "pelvic_floor"
+    ]
+  },
+  {
+    "id": "rehab-021",
+    "name_en": "Dead Bug (Rehab Version)",
+    "name_ar": "تمرين الحشرة الميتة (تأهيلي)",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "hip_flexors",
+      "lower_back"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": "10 each side",
+    "tags": [
+      "rehab",
+      "core",
+      "back_pain",
+      "stability"
+    ]
+  },
+  {
+    "id": "rehab-022",
+    "name_en": "Bird Dog (Rehab Version)",
+    "name_ar": "تمرين الكلب الطائر (تأهيلي)",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "lower_back",
+      "glutes",
+      "shoulders"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": "10 each side",
+    "tags": [
+      "rehab",
+      "core",
+      "back_pain",
+      "stability"
+    ]
+  },
+  {
+    "id": "rehab-023",
+    "name_en": "Tennis Ball Foot Roll",
+    "name_ar": "تدليك القدم بكرة تنس",
+    "primary_muscle": "plantar_fascia",
+    "secondary_muscles": [
+      "calves"
+    ],
+    "equipment": "tennis_ball",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 1,
+    "default_reps": "2 min each foot",
+    "tags": [
+      "rehab",
+      "foot",
+      "plantar_fasciitis",
+      "self_massage"
+    ]
+  },
+  {
+    "id": "rehab-024",
+    "name_en": "Towel Scrunches (Foot)",
+    "name_ar": "تجعيد المنشفة بالقدم",
+    "primary_muscle": "foot_intrinsics",
+    "secondary_muscles": [
+      "toes"
+    ],
+    "equipment": "towel",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "foot",
+      "arch",
+      "flat_feet"
+    ]
+  },
+  {
+    "id": "rehab-025",
+    "name_en": "Chin Tucks",
+    "name_ar": "سحب الذقن للخلف",
+    "primary_muscle": "deep_neck_flexors",
+    "secondary_muscles": [
+      "neck"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "rehab",
+      "neck",
+      "posture",
+      "forward_head"
+    ]
+  },
+  {
+    "id": "rehab-026",
+    "name_en": "Doorway Chest Stretch",
+    "name_ar": "تمدد الصدر عند الباب",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "anterior_deltoid",
+      "biceps"
+    ],
+    "equipment": "doorway",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "30s",
+    "tags": [
+      "rehab",
+      "chest",
+      "posture",
+      "stretch"
+    ]
+  },
+  {
+    "id": "rehab-027",
+    "name_en": "Scapular Retraction (Band)",
+    "name_ar": "سحب لوح الكتف للخلف (باند)",
+    "primary_muscle": "rhomboids",
+    "secondary_muscles": [
+      "middle_traps",
+      "rear_deltoid"
+    ],
+    "equipment": "resistance_band",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "posture",
+      "upper_back",
+      "desk_worker"
+    ]
+  },
+  {
+    "id": "rehab-028",
+    "name_en": "Eccentric Calf Lowering (Achilles Rehab)",
+    "name_ar": "نزول كعب بطيء (تأهيل وتر أكيليس)",
+    "primary_muscle": "calves",
+    "secondary_muscles": [
+      "achilles_tendon"
+    ],
+    "equipment": "step",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "achilles",
+      "tendon",
+      "eccentric"
+    ]
+  },
+  {
+    "id": "rehab-029",
+    "name_en": "Isometric Quad Hold (Wall Sit)",
+    "name_ar": "ثبات كواد على الحائط",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": "30s",
+    "tags": [
+      "rehab",
+      "knee",
+      "isometric",
+      "patellar"
+    ]
+  },
+  {
+    "id": "rehab-030",
+    "name_en": "TheraBand Ankle Dorsiflexion",
+    "name_ar": "ثني الكاحل للأعلى (ثيراباند)",
+    "primary_muscle": "tibialis_anterior",
+    "secondary_muscles": [
+      "ankles"
+    ],
+    "equipment": "resistance_band",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "ankle",
+      "shin_splints",
+      "band"
+    ]
+  },
+  {
+    "id": "rehab-031",
+    "name_en": "Foam Roller IT Band",
+    "name_ar": "فوم رولر للـ IT Band",
+    "primary_muscle": "IT_band",
+    "secondary_muscles": [
+      "vastus_lateralis",
+      "hip"
+    ],
+    "equipment": "foam_roller",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 1,
+    "default_reps": "60s each side",
+    "tags": [
+      "rehab",
+      "foam_rolling",
+      "IT_band",
+      "self_massage"
+    ]
+  },
+  {
+    "id": "rehab-032",
+    "name_en": "Foam Roller Thoracic Extension",
+    "name_ar": "فوم رولر للعمود الفقري الصدري",
+    "primary_muscle": "thoracic_spine",
+    "secondary_muscles": [
+      "upper_back",
+      "chest"
+    ],
+    "equipment": "foam_roller",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 1,
+    "default_reps": "60s",
+    "tags": [
+      "rehab",
+      "foam_rolling",
+      "posture",
+      "thoracic"
+    ]
+  },
+  {
+    "id": "rehab-033",
+    "name_en": "Foam Roller Quad Release",
+    "name_ar": "فوم رولر للكواد",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "foam_roller",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 1,
+    "default_reps": "60s each leg",
+    "tags": [
+      "rehab",
+      "foam_rolling",
+      "quad",
+      "self_massage"
+    ]
+  },
+  {
+    "id": "rehab-034",
+    "name_en": "Lacrosse Ball Glute Release",
+    "name_ar": "كرة لاكروس للإلية",
+    "primary_muscle": "glutes",
+    "secondary_muscles": [
+      "piriformis"
+    ],
+    "equipment": "lacrosse_ball",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 1,
+    "default_reps": "60s each side",
+    "tags": [
+      "rehab",
+      "self_massage",
+      "glute",
+      "trigger_point"
+    ]
+  },
+  {
+    "id": "rehab-035",
+    "name_en": "Wrist Flexor Stretch",
+    "name_ar": "تمدد عضلات الرسغ الأمامية",
+    "primary_muscle": "wrist_flexors",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "30s each arm",
+    "tags": [
+      "rehab",
+      "wrist",
+      "carpal_tunnel",
+      "desk_worker"
+    ]
+  },
+  {
+    "id": "rehab-036",
+    "name_en": "Wrist Extensor Stretch",
+    "name_ar": "تمدد عضلات الرسغ الخلفية",
+    "primary_muscle": "wrist_extensors",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "30s each arm",
+    "tags": [
+      "rehab",
+      "wrist",
+      "tennis_elbow",
+      "desk_worker"
+    ]
+  },
+  {
+    "id": "rehab-037",
+    "name_en": "Pendulum Shoulder Swings",
+    "name_ar": "تأرجح الكتف البندولي",
+    "primary_muscle": "shoulder",
+    "secondary_muscles": [
+      "rotator_cuff"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "30s each direction",
+    "tags": [
+      "rehab",
+      "shoulder",
+      "frozen_shoulder",
+      "post_surgery"
+    ]
+  },
+  {
+    "id": "rehab-038",
+    "name_en": "Shoulder Pulley Exercise",
+    "name_ar": "تمرين بكرة الكتف",
+    "primary_muscle": "shoulder",
+    "secondary_muscles": [
+      "deltoid",
+      "rotator_cuff"
+    ],
+    "equipment": "shoulder_pulley",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "rehab",
+      "shoulder",
+      "ROM",
+      "frozen_shoulder"
+    ]
+  },
+  {
+    "id": "rehab-039",
+    "name_en": "Hamstring Stretch (Supine with Strap)",
+    "name_ar": "تمدد خلفي الفخذ (مستلقي بحزام)",
+    "primary_muscle": "hamstrings",
+    "secondary_muscles": [
+      "calves",
+      "lower_back"
+    ],
+    "equipment": "strap",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "30s each leg",
+    "tags": [
+      "rehab",
+      "hamstring",
+      "stretch",
+      "back_pain"
+    ]
+  },
+  {
+    "id": "rehab-040",
+    "name_en": "Nerve Glide - Sciatic",
+    "name_ar": "انزلاق عصبي - عرق النسا",
+    "primary_muscle": "sciatic_nerve",
+    "secondary_muscles": [
+      "hamstrings",
+      "lower_back"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "rehab",
+    "default_sets": 2,
+    "default_reps": "10 each leg",
+    "tags": [
+      "rehab",
+      "nerve",
+      "sciatica",
+      "neural_mobilization"
+    ]
+  }
+]

@@ -1,0 +1,660 @@
+[
+  {
+    "name_en": "Beef Bone Marrow (Roasted, 100g)",
+    "name_ar": "نخاع عظم بقري (مشوي، 100 جرام)",
+    "category": "keto",
+    "serving_size_g": 100,
+    "calories": 450,
+    "protein_g": 7,
+    "carbs_g": 0,
+    "fat_g": 48,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "bone_marrow",
+      "high_fat",
+      "collagen",
+      "premium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Bacon (Turkey, 3 slices — Halal)",
+    "name_ar": "باكون ديك رومي حلال (3 شرائح)",
+    "category": "keto",
+    "serving_size_g": 45,
+    "calories": 90,
+    "protein_g": 10,
+    "carbs_g": 0,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "turkey_bacon",
+      "halal",
+      "protein",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turkey-breast.jpg"
+  },
+  {
+    "name_en": "Cream Cheese (2 tbsp)",
+    "name_ar": "كريم تشيز (2 ملعقة كبيرة)",
+    "category": "keto",
+    "serving_size_g": 30,
+    "calories": 100,
+    "protein_g": 2,
+    "carbs_g": 1,
+    "fat_g": 10,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "cream_cheese",
+      "spread",
+      "high_fat",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cream-cheese.jpg"
+  },
+  {
+    "name_en": "Cheddar Cheese (2 slices, 50g)",
+    "name_ar": "جبنة شيدر (2 شريحة، 50 جرام)",
+    "category": "keto",
+    "serving_size_g": 50,
+    "calories": 200,
+    "protein_g": 12,
+    "carbs_g": 1,
+    "fat_g": 17,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "cheddar",
+      "cheese",
+      "protein",
+      "high_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Mozzarella Cheese (Fresh, 50g)",
+    "name_ar": "جبنة موزاريلا طازجة (50 جرام)",
+    "category": "keto",
+    "serving_size_g": 50,
+    "calories": 140,
+    "protein_g": 10,
+    "carbs_g": 1,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "mozzarella",
+      "cheese",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mozzarella.jpg"
+  },
+  {
+    "name_en": "Parmesan Cheese (Grated, 2 tbsp)",
+    "name_ar": "جبنة بارميزان (مبشورة، 2 ملعقة كبيرة)",
+    "category": "keto",
+    "serving_size_g": 15,
+    "calories": 60,
+    "protein_g": 4,
+    "carbs_g": 0,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "parmesan",
+      "cheese",
+      "topping"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Heavy Cream (2 tbsp)",
+    "name_ar": "كريمة ثقيلة (2 ملعقة كبيرة)",
+    "category": "keto",
+    "serving_size_g": 30,
+    "calories": 100,
+    "protein_g": 1,
+    "carbs_g": 0,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "heavy_cream",
+      "coffee",
+      "fat",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "MCT Oil (1 tbsp)",
+    "name_ar": "زيت MCT (ملعقة كبيرة)",
+    "category": "keto",
+    "serving_size_g": 14,
+    "calories": 130,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "mct_oil",
+      "energy",
+      "brain",
+      "fat_burning"
+    ]
+  },
+  {
+    "name_en": "Bulletproof Coffee (Coffee + Butter + MCT)",
+    "name_ar": "قهوة بولت بروف (قهوة + زبدة + MCT)",
+    "category": "keto",
+    "serving_size_g": 300,
+    "calories": 250,
+    "protein_g": 1,
+    "carbs_g": 0,
+    "fat_g": 28,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "bulletproof_coffee",
+      "energy",
+      "fat",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Olives (Mixed, 50g)",
+    "name_ar": "زيتون مشكل (50 جرام)",
+    "category": "keto",
+    "serving_size_g": 50,
+    "calories": 70,
+    "protein_g": 1,
+    "carbs_g": 2,
+    "fat_g": 7,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "keto",
+      "olives",
+      "healthy_fat",
+      "snack",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Smoked Salmon (50g)",
+    "name_ar": "سالمون مدخن (50 جرام)",
+    "category": "keto",
+    "serving_size_g": 50,
+    "calories": 100,
+    "protein_g": 10,
+    "carbs_g": 0,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "smoked_salmon",
+      "omega3",
+      "protein",
+      "premium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salmon.jpg"
+  },
+  {
+    "name_en": "Beef Jerky (30g)",
+    "name_ar": "بيف جيركي (30 جرام)",
+    "category": "keto",
+    "serving_size_g": 30,
+    "calories": 100,
+    "protein_g": 15,
+    "carbs_g": 3,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "jerky",
+      "protein",
+      "snack",
+      "portable"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Pork Rinds / Chicharrones (30g) — NOT Pork, Chicken Skin Chips",
+    "name_ar": "شيبس جلد فراخ مقرمش (30 جرام)",
+    "category": "keto",
+    "serving_size_g": 30,
+    "calories": 150,
+    "protein_g": 18,
+    "carbs_g": 0,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "chicken_skin",
+      "crispy",
+      "snack",
+      "zero_carb",
+      "halal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Fathead Dough Pizza (1 slice)",
+    "name_ar": "بيتزا فات هيد كيتو (شريحة)",
+    "category": "keto",
+    "serving_size_g": 120,
+    "calories": 280,
+    "protein_g": 16,
+    "carbs_g": 3,
+    "fat_g": 22,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "fathead_pizza",
+      "cheese",
+      "low_carb",
+      "alternative"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pizza.jpg"
+  },
+  {
+    "name_en": "Egg Salad (2 eggs, mayo-free, 1 cup)",
+    "name_ar": "سلطة بيض (2 بيضة، بدون مايونيز، كوب)",
+    "category": "keto",
+    "serving_size_g": 200,
+    "calories": 200,
+    "protein_g": 14,
+    "carbs_g": 4,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "egg_salad",
+      "protein",
+      "low_carb",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Chicken Caesar Salad (No Croutons)",
+    "name_ar": "سيزر سلطة فراخ (بدون خبز)",
+    "category": "keto",
+    "serving_size_g": 300,
+    "calories": 350,
+    "protein_g": 30,
+    "carbs_g": 5,
+    "fat_g": 24,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "caesar",
+      "chicken",
+      "low_carb",
+      "high_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Steak with Butter (200g + 1 tbsp butter)",
+    "name_ar": "ستيك بزبدة (200 جرام + ملعقة زبدة)",
+    "category": "keto",
+    "serving_size_g": 214,
+    "calories": 500,
+    "protein_g": 46,
+    "carbs_g": 0,
+    "fat_g": 34,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "steak",
+      "butter",
+      "protein",
+      "high_fat",
+      "premium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Tuna Stuffed Avocado (1 half)",
+    "name_ar": "أفوكادو محشي تونة (نصف)",
+    "category": "keto",
+    "serving_size_g": 180,
+    "calories": 280,
+    "protein_g": 20,
+    "carbs_g": 6,
+    "fat_g": 20,
+    "fiber_g": 7,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "avocado",
+      "tuna",
+      "healthy_fat",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  },
+  {
+    "name_en": "Cheese Crisps / Cheese Chips (30g)",
+    "name_ar": "شيبس جبنة مقرمشة (30 جرام)",
+    "category": "keto",
+    "serving_size_g": 30,
+    "calories": 130,
+    "protein_g": 10,
+    "carbs_g": 1,
+    "fat_g": 10,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "cheese_crisps",
+      "snack",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Almond Flour (1/4 cup)",
+    "name_ar": "دقيق لوز (ربع كوب)",
+    "category": "keto",
+    "serving_size_g": 28,
+    "calories": 160,
+    "protein_g": 6,
+    "carbs_g": 6,
+    "fat_g": 14,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "almond_flour",
+      "baking",
+      "gluten_free",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/almonds.jpg"
+  },
+  {
+    "name_en": "Coconut Flour (2 tbsp)",
+    "name_ar": "دقيق جوز هند (2 ملعقة كبيرة)",
+    "category": "keto",
+    "serving_size_g": 18,
+    "calories": 60,
+    "protein_g": 2,
+    "carbs_g": 8,
+    "fat_g": 2,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "coconut_flour",
+      "baking",
+      "gluten_free",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Erythritol Sweetener (1 tbsp)",
+    "name_ar": "إريثريتول (محلي، ملعقة كبيرة)",
+    "category": "keto",
+    "serving_size_g": 12,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "erythritol",
+      "sweetener",
+      "zero_calorie",
+      "sugar_free"
+    ]
+  },
+  {
+    "name_en": "Psyllium Husk (1 tbsp)",
+    "name_ar": "قشر سيليوم (ملعقة كبيرة)",
+    "category": "keto",
+    "serving_size_g": 10,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 8,
+    "fat_g": 0,
+    "fiber_g": 7,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "psyllium",
+      "fiber",
+      "baking",
+      "digestion"
+    ]
+  },
+  {
+    "name_en": "Sugar-Free Dark Chocolate (30g, 85%+ Cacao)",
+    "name_ar": "شوكولاتة داكنة بدون سكر (30 جرام، 85%+ كاكاو)",
+    "category": "keto",
+    "serving_size_g": 30,
+    "calories": 160,
+    "protein_g": 3,
+    "carbs_g": 5,
+    "fat_g": 14,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "dark_chocolate",
+      "sugar_free",
+      "antioxidant",
+      "treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Keto Fat Bomb (Chocolate PB, 1 piece)",
+    "name_ar": "فات بومب كيتو (شوكولاتة وزبدة فول سوداني، قطعة)",
+    "category": "keto",
+    "serving_size_g": 25,
+    "calories": 120,
+    "protein_g": 2,
+    "carbs_g": 2,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "fat_bomb",
+      "snack",
+      "high_fat",
+      "dessert"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Stuffed Mushrooms (Cream Cheese, 5 pieces)",
+    "name_ar": "مشروم محشي كريم تشيز (5 حبات)",
+    "category": "keto",
+    "serving_size_g": 200,
+    "calories": 250,
+    "protein_g": 10,
+    "carbs_g": 6,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "mushroom",
+      "cream_cheese",
+      "appetizer",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cream-cheese.jpg"
+  },
+  {
+    "name_en": "Egg Drop Soup (1 bowl)",
+    "name_ar": "شوربة بيض (طبق)",
+    "category": "keto",
+    "serving_size_g": 250,
+    "calories": 80,
+    "protein_g": 8,
+    "carbs_g": 2,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "egg_drop_soup",
+      "low_calorie",
+      "protein",
+      "warm"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Grilled Halloumi Cheese (80g)",
+    "name_ar": "جبنة حلومي مشوية (80 جرام)",
+    "category": "keto",
+    "serving_size_g": 80,
+    "calories": 250,
+    "protein_g": 16,
+    "carbs_g": 2,
+    "fat_g": 20,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "halloumi",
+      "grilled",
+      "cheese",
+      "protein",
+      "high_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Spinach & Feta Omelette (3 eggs)",
+    "name_ar": "أومليت سبانخ وفيتا (3 بيضات)",
+    "category": "keto",
+    "serving_size_g": 250,
+    "calories": 380,
+    "protein_g": 26,
+    "carbs_g": 3,
+    "fat_g": 28,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "omelette",
+      "spinach",
+      "feta",
+      "breakfast",
+      "high_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Cabbage Noodles / Stir Fry (1 cup)",
+    "name_ar": "نودلز كرنب / ستير فراي (كوب)",
+    "category": "keto",
+    "serving_size_g": 150,
+    "calories": 40,
+    "protein_g": 2,
+    "carbs_g": 8,
+    "fat_g": 1,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "cabbage",
+      "noodle_swap",
+      "low_calorie",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cabbage.jpg"
+  },
+  {
+    "name_en": "Lamb Chops (Pan-Seared with Herbs, 3 pieces)",
+    "name_ar": "ريش ضاني بالأعشاب (3 قطع)",
+    "category": "keto",
+    "serving_size_g": 200,
+    "calories": 520,
+    "protein_g": 38,
+    "carbs_g": 0,
+    "fat_g": 40,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "keto",
+      "lamb",
+      "high_fat",
+      "protein",
+      "premium",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lamb-loin-chops.jpg"
+  },
+  {
+    "name_en": "Broccoli Cheese Soup (Keto, 1 bowl)",
+    "name_ar": "شوربة بروكلي بالجبنة كيتو (طبق)",
+    "category": "keto",
+    "serving_size_g": 300,
+    "calories": 280,
+    "protein_g": 12,
+    "carbs_g": 8,
+    "fat_g": 22,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "broccoli_cheese_soup",
+      "warm",
+      "high_fat",
+      "comfort"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Keto Bread (Almond Flour, 1 slice)",
+    "name_ar": "خبز كيتو (دقيق لوز، شريحة)",
+    "category": "keto",
+    "serving_size_g": 40,
+    "calories": 90,
+    "protein_g": 4,
+    "carbs_g": 2,
+    "fat_g": 7,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "keto",
+      "bread",
+      "almond_flour",
+      "low_carb",
+      "alternative"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/almonds.jpg"
+  }
+]

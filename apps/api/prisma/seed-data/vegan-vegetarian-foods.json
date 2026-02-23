@@ -1,0 +1,773 @@
+[
+  {
+    "name_en": "Tofu (Firm, 150g)",
+    "name_ar": "توفو متماسك (150 جرام)",
+    "category": "vegan",
+    "serving_size_g": 150,
+    "calories": 130,
+    "protein_g": 15,
+    "carbs_g": 3,
+    "fat_g": 7,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "tofu",
+      "protein",
+      "soy",
+      "plant_based"
+    ]
+  },
+  {
+    "name_en": "Seitan (Wheat Gluten, 100g)",
+    "name_ar": "سيتان (جلوتين قمح، 100 جرام)",
+    "category": "vegan",
+    "serving_size_g": 100,
+    "calories": 150,
+    "protein_g": 25,
+    "carbs_g": 6,
+    "fat_g": 2,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "seitan",
+      "protein",
+      "gluten",
+      "plant_based"
+    ]
+  },
+  {
+    "name_en": "Plant-Based Burger Patty (Beyond/Impossible Style)",
+    "name_ar": "برجر نباتي (ستايل بيوند/إمبوسيبل)",
+    "category": "vegan",
+    "serving_size_g": 113,
+    "calories": 250,
+    "protein_g": 20,
+    "carbs_g": 5,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "plant_burger",
+      "protein",
+      "alternative"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Soy Milk (1 cup, unsweetened)",
+    "name_ar": "حليب صويا (كوب، بدون سكر)",
+    "category": "vegan",
+    "serving_size_g": 240,
+    "calories": 80,
+    "protein_g": 7,
+    "carbs_g": 4,
+    "fat_g": 4,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "soy_milk",
+      "protein",
+      "calcium",
+      "dairy_free"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Almond Milk (1 cup, unsweetened)",
+    "name_ar": "حليب لوز (كوب، بدون سكر)",
+    "category": "vegan",
+    "serving_size_g": 240,
+    "calories": 30,
+    "protein_g": 1,
+    "carbs_g": 1,
+    "fat_g": 2.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "almond_milk",
+      "low_calorie",
+      "dairy_free",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/almonds.jpg"
+  },
+  {
+    "name_en": "Coconut Milk (Canned, 1/4 cup)",
+    "name_ar": "حليب جوز هند (معلب، ربع كوب)",
+    "category": "vegan",
+    "serving_size_g": 60,
+    "calories": 120,
+    "protein_g": 1,
+    "carbs_g": 2,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "coconut_milk",
+      "cooking",
+      "keto",
+      "high_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Vegan Protein Powder (Pea/Rice Blend, 1 scoop)",
+    "name_ar": "بروتين نباتي (خليط بازلاء/أرز، سكوب)",
+    "category": "vegan",
+    "serving_size_g": 35,
+    "calories": 120,
+    "protein_g": 24,
+    "carbs_g": 2,
+    "fat_g": 2,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "protein_powder",
+      "pea_protein",
+      "plant_based",
+      "post_workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Lentil Bolognese (1 plate)",
+    "name_ar": "بولونيز عدس (طبق)",
+    "category": "vegan",
+    "serving_size_g": 350,
+    "calories": 320,
+    "protein_g": 18,
+    "carbs_g": 50,
+    "fat_g": 4,
+    "fiber_g": 10,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "lentil",
+      "bolognese",
+      "protein",
+      "fiber",
+      "pasta"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Chickpea Curry (Chana Masala, 1 plate)",
+    "name_ar": "كاري حمص (شانا ماسالا، طبق)",
+    "category": "vegan",
+    "serving_size_g": 350,
+    "calories": 350,
+    "protein_g": 14,
+    "carbs_g": 48,
+    "fat_g": 10,
+    "fiber_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "chickpea_curry",
+      "indian",
+      "protein",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chickpeas.jpg"
+  },
+  {
+    "name_en": "Buddha Bowl (Quinoa + Roasted Veggies + Tahini)",
+    "name_ar": "بوذا بول (كينوا + خضار مشوي + طحينة)",
+    "category": "vegan",
+    "serving_size_g": 400,
+    "calories": 420,
+    "protein_g": 14,
+    "carbs_g": 50,
+    "fat_g": 18,
+    "fiber_g": 10,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "buddha_bowl",
+      "quinoa",
+      "healthy",
+      "balanced"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/quinoa.jpg"
+  },
+  {
+    "name_en": "Mushroom Stir Fry with Rice",
+    "name_ar": "ستير فراي مشروم مع أرز",
+    "category": "vegan",
+    "serving_size_g": 400,
+    "calories": 340,
+    "protein_g": 10,
+    "carbs_g": 52,
+    "fat_g": 10,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "mushroom",
+      "stir_fry",
+      "rice"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mushrooms.jpg"
+  },
+  {
+    "name_en": "Black Bean Tacos (3 pieces)",
+    "name_ar": "تاكو فاصوليا سودا (3 قطع)",
+    "category": "vegan",
+    "serving_size_g": 280,
+    "calories": 380,
+    "protein_g": 16,
+    "carbs_g": 55,
+    "fat_g": 10,
+    "fiber_g": 14,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "black_bean",
+      "tacos",
+      "fiber",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/black-beans.jpg"
+  },
+  {
+    "name_en": "Roasted Cauliflower Steak (1 piece)",
+    "name_ar": "ستيك قرنبيط مشوي (قطعة)",
+    "category": "vegan",
+    "serving_size_g": 200,
+    "calories": 120,
+    "protein_g": 4,
+    "carbs_g": 12,
+    "fat_g": 6,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "cauliflower",
+      "roasted",
+      "low_calorie",
+      "keto"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cauliflower.jpg"
+  },
+  {
+    "name_en": "Falafel Wrap (Vegan, with Tahini + Salad)",
+    "name_ar": "لفة فلافل نباتي (بطحينة وسلطة)",
+    "category": "vegan",
+    "serving_size_g": 300,
+    "calories": 420,
+    "protein_g": 14,
+    "carbs_g": 50,
+    "fat_g": 18,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "falafel",
+      "wrap",
+      "tahini",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  },
+  {
+    "name_en": "Spirulina Smoothie (1 cup)",
+    "name_ar": "سموذي سبيرولينا (كوب)",
+    "category": "vegan",
+    "serving_size_g": 300,
+    "calories": 180,
+    "protein_g": 8,
+    "carbs_g": 30,
+    "fat_g": 3,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "spirulina",
+      "superfood",
+      "green",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Jackfruit Pulled 'Meat' (1 cup)",
+    "name_ar": "جاكفروت (بديل لحم، كوب)",
+    "category": "vegan",
+    "serving_size_g": 150,
+    "calories": 100,
+    "protein_g": 2,
+    "carbs_g": 24,
+    "fat_g": 0.5,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "jackfruit",
+      "meat_alternative",
+      "low_calorie"
+    ]
+  },
+  {
+    "name_en": "Coconut Yogurt (1 cup)",
+    "name_ar": "زبادي جوز هند (كوب)",
+    "category": "vegan",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 2,
+    "carbs_g": 12,
+    "fat_g": 14,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "coconut_yogurt",
+      "dairy_free",
+      "probiotics"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Veggie Burger (Homemade, Bean-Based, 1 patty)",
+    "name_ar": "برجر خضار بيتي (فاصوليا، قرص)",
+    "category": "vegan",
+    "serving_size_g": 120,
+    "calories": 200,
+    "protein_g": 10,
+    "carbs_g": 25,
+    "fat_g": 6,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "veggie_burger",
+      "beans",
+      "homemade",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Stuffed Bell Peppers (Vegan, Rice + Beans, 2 halves)",
+    "name_ar": "فلفل محشي نباتي (أرز وفاصوليا، 2 نص)",
+    "category": "vegan",
+    "serving_size_g": 300,
+    "calories": 280,
+    "protein_g": 10,
+    "carbs_g": 48,
+    "fat_g": 5,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "stuffed_pepper",
+      "rice",
+      "beans",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bell-pepper.jpg"
+  },
+  {
+    "name_en": "Vegan Protein Bar (1 bar)",
+    "name_ar": "بروتين بار نباتي (1 بار)",
+    "category": "vegan",
+    "serving_size_g": 55,
+    "calories": 200,
+    "protein_g": 15,
+    "carbs_g": 22,
+    "fat_g": 8,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "protein_bar",
+      "snack",
+      "convenient",
+      "plant_based"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola-bar.jpg"
+  },
+  {
+    "name_en": "Roasted Chickpeas (Snack, 1/2 cup)",
+    "name_ar": "حمص محمص (سناك، نصف كوب)",
+    "category": "vegan",
+    "serving_size_g": 60,
+    "calories": 180,
+    "protein_g": 8,
+    "carbs_g": 26,
+    "fat_g": 4,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "roasted_chickpeas",
+      "snack",
+      "protein",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chickpeas.jpg"
+  },
+  {
+    "name_en": "Banana Oat Pancakes (Vegan, 3 small)",
+    "name_ar": "بان كيك موز وشوفان نباتي (3 صغار)",
+    "category": "vegan",
+    "serving_size_g": 180,
+    "calories": 250,
+    "protein_g": 6,
+    "carbs_g": 45,
+    "fat_g": 5,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "pancakes",
+      "banana",
+      "oats",
+      "breakfast",
+      "no_egg"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Miso Soup (1 bowl)",
+    "name_ar": "شوربة ميسو (طبق)",
+    "category": "vegan",
+    "serving_size_g": 250,
+    "calories": 45,
+    "protein_g": 3,
+    "carbs_g": 5,
+    "fat_g": 1,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "miso",
+      "soup",
+      "japanese",
+      "probiotic",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
+  },
+  {
+    "name_en": "Guacamole (1/4 cup)",
+    "name_ar": "جواكامولي (ربع كوب)",
+    "category": "vegan",
+    "serving_size_g": 60,
+    "calories": 100,
+    "protein_g": 1,
+    "carbs_g": 5,
+    "fat_g": 9,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "guacamole",
+      "avocado",
+      "healthy_fat",
+      "dip"
+    ]
+  },
+  {
+    "name_en": "Peanut Noodles (Thai-Style, 1 plate)",
+    "name_ar": "نودلز بزبدة الفول السوداني (تايلاندي، طبق)",
+    "category": "vegan",
+    "serving_size_g": 350,
+    "calories": 450,
+    "protein_g": 16,
+    "carbs_g": 52,
+    "fat_g": 20,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "peanut_noodles",
+      "thai",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanuts.jpg"
+  },
+  {
+    "name_en": "Sweet Potato & Black Bean Chili (1 bowl)",
+    "name_ar": "تشيلي بطاطا حلوة وفاصوليا سودا (طبق)",
+    "category": "vegan",
+    "serving_size_g": 350,
+    "calories": 300,
+    "protein_g": 12,
+    "carbs_g": 50,
+    "fat_g": 4,
+    "fiber_g": 14,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "chili",
+      "sweet_potato",
+      "black_bean",
+      "fiber",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Overnight Oats (Vegan, with Almond Milk + Chia)",
+    "name_ar": "شوفان ليلي نباتي (بحليب لوز + شيا)",
+    "category": "vegan",
+    "serving_size_g": 300,
+    "calories": 320,
+    "protein_g": 10,
+    "carbs_g": 45,
+    "fat_g": 12,
+    "fiber_g": 10,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "overnight_oats",
+      "chia",
+      "almond_milk",
+      "breakfast",
+      "no_cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/almonds.jpg"
+  },
+  {
+    "name_en": "Molokhia (Vegan Version, No Meat Broth, 1 plate + Rice)",
+    "name_ar": "ملوخية نباتي (بدون مرقة لحم، طبق + أرز)",
+    "category": "vegan",
+    "serving_size_g": 400,
+    "calories": 280,
+    "protein_g": 8,
+    "carbs_g": 48,
+    "fat_g": 6,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "molokhia",
+      "traditional",
+      "plant_based",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "Koshari (Already Vegan, Street Portion)",
+    "name_ar": "كشري (نباتي أصلاً، حجم شارع)",
+    "category": "vegan",
+    "serving_size_g": 400,
+    "calories": 550,
+    "protein_g": 16,
+    "carbs_g": 90,
+    "fat_g": 12,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "koshari",
+      "traditional",
+      "carbs",
+      "cheap",
+      "bulking",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Besara (Green Fava Bean Dip — Already Vegan, 1 bowl)",
+    "name_ar": "بصارة نباتي (طبق)",
+    "category": "vegan",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 12,
+    "carbs_g": 28,
+    "fat_g": 5,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "besara",
+      "fava_beans",
+      "traditional",
+      "protein",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
+  },
+  {
+    "name_en": "Date Energy Balls (Vegan, 3 pieces)",
+    "name_ar": "كرات طاقة تمر نباتي (3 حبات)",
+    "category": "vegan",
+    "serving_size_g": 60,
+    "calories": 180,
+    "protein_g": 4,
+    "carbs_g": 28,
+    "fat_g": 7,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "date_balls",
+      "energy",
+      "snack",
+      "pre_workout",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/dates.jpg"
+  },
+  {
+    "name_en": "Coconut Cream Chia Pudding (1 cup)",
+    "name_ar": "بودنج شيا بكريمة جوز هند (كوب)",
+    "category": "vegan",
+    "serving_size_g": 200,
+    "calories": 280,
+    "protein_g": 6,
+    "carbs_g": 18,
+    "fat_g": 20,
+    "fiber_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "chia_pudding",
+      "coconut",
+      "dessert",
+      "fiber",
+      "omega3"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Stuffed Grape Leaves (Vegan, No Meat, 10 pieces)",
+    "name_ar": "ورق عنب نباتي (بدون لحمة، 10 حبات)",
+    "category": "vegan",
+    "serving_size_g": 250,
+    "calories": 250,
+    "protein_g": 5,
+    "carbs_g": 40,
+    "fat_g": 8,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "grape_leaves",
+      "waraq_enab",
+      "traditional",
+      "plant_based",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/grapes.jpg"
+  },
+  {
+    "name_en": "Lentil Soup with Lemon (Egyptian Vegan, 1 bowl)",
+    "name_ar": "شوربة عدس بالليمون (مصري نباتي، طبق)",
+    "category": "vegan",
+    "serving_size_g": 300,
+    "calories": 200,
+    "protein_g": 14,
+    "carbs_g": 32,
+    "fat_g": 2,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "lentil_soup",
+      "lemon",
+      "protein",
+      "fiber",
+      "cheap",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Hummus with Veggies Plate",
+    "name_ar": "حمص بخضار (طبق)",
+    "category": "vegan",
+    "serving_size_g": 300,
+    "calories": 280,
+    "protein_g": 12,
+    "carbs_g": 32,
+    "fat_g": 12,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "vegan",
+      "hummus",
+      "vegetables",
+      "snack",
+      "fiber",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hummus.jpg"
+  },
+  {
+    "name_en": "Mushroom & Walnut 'Meat' Tacos (3 pieces)",
+    "name_ar": "تاكو مشروم وعين جمل (3 قطع)",
+    "category": "vegan",
+    "serving_size_g": 280,
+    "calories": 380,
+    "protein_g": 12,
+    "carbs_g": 40,
+    "fat_g": 18,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "mushroom",
+      "walnut",
+      "tacos",
+      "meat_alternative"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mushrooms.jpg"
+  },
+  {
+    "name_en": "Vegan Chocolate Mousse (Avocado-Based, 1 cup)",
+    "name_ar": "موس شوكولاتة نباتي (أساس أفوكادو، كوب)",
+    "category": "vegan",
+    "serving_size_g": 150,
+    "calories": 220,
+    "protein_g": 3,
+    "carbs_g": 22,
+    "fat_g": 14,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "chocolate_mousse",
+      "avocado",
+      "dessert",
+      "healthy_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Edamame Salad Bowl (with Quinoa + Sesame)",
+    "name_ar": "بول إيدامامي (مع كينوا وسمسم)",
+    "category": "vegan",
+    "serving_size_g": 350,
+    "calories": 380,
+    "protein_g": 20,
+    "carbs_g": 40,
+    "fat_g": 14,
+    "fiber_g": 10,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "edamame",
+      "quinoa",
+      "protein",
+      "fiber",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/quinoa.jpg"
+  }
+]

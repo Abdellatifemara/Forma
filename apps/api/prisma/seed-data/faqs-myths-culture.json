@@ -1,0 +1,110 @@
+[
+  {
+    "id": "faq-myth-001",
+    "category": "myths",
+    "question_en": "Will lifting weights make women bulky?",
+    "question_ar": "التمارين بالأوزان هتخلي الستات ضخمة؟",
+    "answer_en": "NO — this is the #1 fitness myth. Women have 15-20x less testosterone than men, making it nearly impossible to get 'bulky' from lifting weights. What lifting DOES do for women: builds a toned, shapely body (especially glutes!), burns more fat, strengthens bones (important for osteoporosis prevention), boosts confidence. The women you see who are 'bulky' are either: on steroids, training for 10+ years, or both. Lift heavy, eat right, and you'll look lean and toned — not bulky.",
+    "answer_ar": "لا — ده أكبر خرافة في اللياقة. الستات عندهم تستوستيرون 15-20 مرة أقل من الرجالة، فمستحيل تقريباً تبقوا 'ضخمة' من الأوزان. الأوزان بتعمل إيه للستات: جسم مشدود ومتناسق (خصوصاً الإلية!)، حرق دهون أكتر، تقوية العظام، ثقة أكتر. الستات 'الضخمة' اللي بتشوفيهم: إما بياخدوا منشطات أو بيتمرنوا 10+ سنين. ارفعي أوزان تقيلة وكلي صح وهتبقي مشدودة مش ضخمة.",
+    "tags": ["myth", "women", "bulky", "weightlifting", "important"]
+  },
+  {
+    "id": "faq-myth-002",
+    "category": "myths",
+    "question_en": "Can you turn fat into muscle?",
+    "question_ar": "ممكن أحول الدهون لعضلات؟",
+    "answer_en": "NO — fat and muscle are completely different tissues. You can't convert one into the other. What you CAN do: lose fat and gain muscle simultaneously (body recomposition), especially if you're a beginner, overweight, or returning after a break. This happens when you eat at maintenance or slight deficit with high protein (2g/kg) and train hard. But the fat isn't 'turning into' muscle — fat cells shrink while muscle cells grow.",
+    "answer_ar": "لا — الدهون والعضلات أنسجة مختلفة تماماً. مش ممكن تحول واحد للتاني. اللي ممكن تعمله: تخس دهون وتبني عضلات في نفس الوقت (body recomposition)، خصوصاً لو مبتدئ أو وزنك زيادة أو راجع بعد انقطاع. ده بيحصل لما تاكل عند حد الصيانة أو أقل شوية مع بروتين عالي (2 جرام/كيلو) وتتمرن جامد.",
+    "tags": ["myth", "fat_to_muscle", "body_recomposition", "beginner"]
+  },
+  {
+    "id": "faq-myth-003",
+    "category": "myths",
+    "question_en": "Do I need to eat every 2-3 hours to keep my metabolism high?",
+    "question_ar": "لازم آكل كل 2-3 ساعات عشان أخلي الحرق عالي؟",
+    "answer_en": "NO — meal frequency does NOT significantly affect metabolism. Eating 6 small meals has the same metabolic effect as eating 3 larger meals with the same total calories. The 'stoking the metabolic fire' idea is a myth. What matters: total daily calories and macros. Eat however many meals fits YOUR lifestyle. 3 meals works. 6 meals works. Intermittent fasting with 2 meals works. Pick what's sustainable for you.",
+    "answer_ar": "لا — عدد الوجبات مش بيأثر على الحرق بشكل كبير. أكل 6 وجبات صغيرة ليه نفس تأثير 3 وجبات كبيرة بنفس السعرات الإجمالية. فكرة 'إشعال نار الحرق' خرافة. المهم: إجمالي السعرات والماكروز اليومية. كل عدد وجبات يناسبك. 3 وجبات تمام. 6 وجبات تمام. صيام متقطع بوجبتين تمام. اختار اللي تقدر تلتزم بيه.",
+    "tags": ["myth", "meal_frequency", "metabolism", "practical"]
+  },
+  {
+    "id": "faq-myth-004",
+    "category": "myths",
+    "question_en": "Is cardio necessary for fat loss?",
+    "question_ar": "الكارديو ضروري للتنشيف؟",
+    "answer_en": "NO — you can lose fat without any cardio, purely through diet (calorie deficit). Cardio is a TOOL, not a requirement. It helps by: burning extra calories, improving heart health, and allowing you to eat a bit more while still in deficit. Walking 8,000-10,000 steps daily is the most underrated fat loss tool — it's low stress, doesn't affect recovery, and burns 300-500 extra calories. Better than 30 min of running for most people. If you hate cardio, just walk more and eat in a deficit.",
+    "answer_ar": "لا — ممكن تنشف بدون كارديو خالص، بس من الأكل (عجز سعرات). الكارديو أداة مش شرط. بيساعد في: حرق سعرات إضافية، صحة القلب، والسماح لك تاكل شوية أكتر. المشي 8,000-10,000 خطوة يومياً هو أهم أداة تنشيف ما حدش بياخد باله — مش مرهق، مش بيأثر على الاستشفاء، وبيحرق 300-500 سعرة. أحسن من 30 دقيقة جري لأغلب الناس.",
+    "tags": ["myth", "cardio", "fat_loss", "walking", "steps"]
+  },
+  {
+    "id": "faq-myth-005",
+    "category": "myths",
+    "question_en": "Should I avoid eating at night to lose weight?",
+    "question_ar": "لازم أمنع الأكل بالليل عشان أخس؟",
+    "answer_en": "NO — your body doesn't magically store more fat at night. Total daily calories determine fat loss, not WHEN you eat. Eating at night is fine if it fits your calorie budget. Some people actually perform better eating more at night (especially after evening workouts). The myth comes from: people who eat at night often eat junk/snacks on top of their daily food, which adds calories. It's the EXTRA calories, not the timing.",
+    "answer_ar": "لا — جسمك مش بيخزن دهون أكتر بالليل بطريقة سحرية. إجمالي السعرات اليومية هو اللي بيحدد التنشيف، مش إمتى بتاكل. الأكل بالليل مفيش فيه مشكلة لو في حدود سعراتك. الخرافة جت من: الناس اللي بتاكل بالليل غالباً بتاكل سناكس وجانك فوق أكلها اليومي. الزيادة في السعرات هي المشكلة، مش التوقيت.",
+    "tags": ["myth", "eating_at_night", "timing", "weight_loss"]
+  },
+  {
+    "id": "faq-myth-006",
+    "category": "egyptian_gym",
+    "question_en": "What's the best split for Egyptian gym culture?",
+    "question_ar": "إيه أحسن تقسيمة للجيم في مصر؟",
+    "answer_en": "Egyptian gym culture loves the Bro Split (1 muscle per day, 6 days). While PPL and Upper/Lower are scientifically slightly better, the Bro Split WORKS — especially if you train hard. Most Egyptian bodybuilders built great physiques on it.\n\nBro Split: Chest / Back / Shoulders / Arms / Legs / (Weak point)\nPPL: Push / Pull / Legs / Push / Pull / Legs\nUpper/Lower: Upper / Lower / Rest / Upper / Lower\n\nBest advice: the split you'll actually stick to is the best split. If you love Bro Split and train 6 days, do it. Consistency beats optimization.",
+    "answer_ar": "ثقافة الجيم المصرية بتحب البرو سبليت (عضلة في اليوم، 6 أيام). مع إن PPL و Upper/Lower أحسن علمياً بشكل بسيط، البرو سبليت بيشتغل — خصوصاً لو بتتمرن جامد. أغلب لاعبين كمال الأجسام المصريين بنوا أجسام ممتازة عليه.\n\nبرو سبليت: صدر / ضهر / كتف / ذراع / رجل / (نقطة ضعف)\nPPL: دفع / سحب / رجل × 2\nUpper/Lower: علوي / سفلي / راحة / علوي / سفلي\n\nأحسن نصيحة: التقسيمة اللي هتلتزم بيها هي الأحسن. الاستمرارية بتغلب التحسين.",
+    "tags": ["split", "bro_split", "ppl", "egyptian", "gym_culture"]
+  },
+  {
+    "id": "faq-myth-007",
+    "category": "egyptian_gym",
+    "question_en": "Should I do a 'double split' (training twice a day)?",
+    "question_ar": "أتمرن مرتين في اليوم (دبل سبليت)؟",
+    "answer_en": "Double splits (AM cardio + PM weights, or training 2 muscle groups separately) can work but are NOT necessary for 99% of people. They were popularized by pro bodybuilders who are on performance-enhancing drugs and can recover faster.\n\nWhen it might help: contest prep (extra cardio), very advanced lifters who can't fit enough volume in one session, or professional athletes.\n\nFor most Egyptian gym-goers: one solid 60-75 minute session is more than enough. Recovery is where muscles grow — more is not always better. Focus on training quality, not quantity.",
+    "answer_ar": "الدبل سبليت (كارديو الصبح + أوزان بالليل، أو تمرين عضلتين منفصلين) ممكن يشتغل بس مش ضروري لـ 99% من الناس. اشتهر من لاعبين محترفين اللي بياخدوا منشطات وبيستشفوا أسرع.\n\nإمتى ممكن يفيد: تحضير بطولة، لاعبين متقدمين جداً، أو رياضيين محترفين.\n\nلأغلب رواد الجيم المصريين: جلسة واحدة قوية 60-75 دقيقة أكتر من كافية. الاستشفاء هو وقت نمو العضلات — أكتر مش دايماً أحسن.",
+    "tags": ["double_split", "overtraining", "recovery", "egyptian", "gym_culture"]
+  },
+  {
+    "id": "faq-myth-008",
+    "category": "myths",
+    "question_en": "Do I need to 'confuse' my muscles with different exercises every week?",
+    "question_ar": "لازم أغيّر التمارين كل أسبوع عشان أربك العضلات؟",
+    "answer_en": "NO — 'muscle confusion' is a myth. Muscles don't get 'confused' — they respond to progressive overload (more weight, more reps, more sets over time). Changing exercises constantly means you never get good at any of them and can't track progress.\n\nBest approach: Keep the same core exercises (squat, bench, deadlift, rows, press) for 8-12 weeks. Change only when progress stalls or you have joint issues. You CAN rotate accessory exercises every 4-6 weeks for variety. But the compounds should stay.",
+    "answer_ar": "لا — 'إرباك العضلات' خرافة. العضلات مش بتترتبك — بتستجيب للتحميل التصاعدي (وزن أكتر، تكرارات أكتر، سيتات أكتر مع الوقت). تغيير التمارين باستمرار يعني مش هتتحسن في أي واحد فيهم.\n\nأحسن طريقة: خلي نفس التمارين الأساسية (سكوات، بنش، ديدلفت، رو، برس) لمدة 8-12 أسبوع. غيّر بس لما التقدم يوقف. ممكن تغير تمارين العزل كل 4-6 أسابيع للتنويع.",
+    "tags": ["myth", "muscle_confusion", "progressive_overload", "programming"]
+  },
+  {
+    "id": "faq-myth-009",
+    "category": "myths",
+    "question_en": "Does sweating more mean I'm burning more fat?",
+    "question_ar": "العرق أكتر يعني حرق دهون أكتر؟",
+    "answer_en": "NO — sweat is your body's cooling system, not a fat-burning indicator. You sweat more in hot environments, when you're unfit, or when you're genetically prone to sweating. Fat is burned through breathing (CO2 out) and metabolic processes, not through sweat.\n\nThe 'trash bag/sauna suit' trend in Egyptian gyms is DANGEROUS — it only causes water weight loss which comes back immediately when you drink water, and risks dehydration, heat stroke, and kidney damage. Never wear extra clothing to 'sweat more'.",
+    "answer_ar": "لا — العرق هو نظام تبريد الجسم، مش مؤشر حرق دهون. بتعرق أكتر في الحر أو لما لياقتك ضعيفة أو وراثياً. الدهون بتتحرق عن طريق التنفس والعمليات الحيوية، مش العرق.\n\nموضة لبس الأكياس/بدل الساونا في الجيمات المصرية خطيرة — بتسبب خسارة مية بس بترجع فوراً لما تشرب، وبتخاطر بالجفاف وضربة الشمس وتلف الكلى. ما تلبسش حاجة زيادة عشان 'تعرق أكتر'.",
+    "tags": ["myth", "sweat", "fat_loss", "dangerous", "sauna_suit"]
+  },
+  {
+    "id": "faq-myth-010",
+    "category": "egyptian_gym",
+    "question_en": "How do I deal with gym anxiety as a beginner in Egypt?",
+    "question_ar": "إزاي أتعامل مع القلق من الجيم كمبتدئ؟",
+    "answer_en": "Every single person in the gym started as a beginner — even the biggest guy there. Tips:\n1. Go during off-peak hours (early morning or 2-4 PM)\n2. Have a written plan (saves you from wandering around confused)\n3. Start with machines — they're easier to learn and less intimidating\n4. Use headphones — your own world, your own pace\n5. Remember: nobody is watching you. Seriously. Everyone is focused on their own workout\n6. Egyptian gym culture is actually very welcoming — most big guys LOVE helping beginners. Don't be afraid to ask\n7. Give it 2 weeks. After that, the gym becomes your second home",
+    "answer_ar": "كل واحد في الجيم بدأ مبتدئ — حتى أكبر واحد هناك. نصايح:\n1. روح في أوقات فاضية (الصبح بدري أو 2-4 العصر)\n2. خد خطة مكتوبة (بتوفرك من التوهان)\n3. ابدأ بالماشينات — أسهل في التعلم وأقل رهبة\n4. استخدم سماعات — عالمك الخاص\n5. تذكر: محدش بيبصلك. جد. كل واحد مركز في تمرينه\n6. ثقافة الجيم المصرية ترحيبية جداً — أغلب اللاعبين الكبار بيحبوا يساعدوا المبتدئين\n7. ادي الموضوع أسبوعين. بعدها الجيم بيبقى بيتك التاني",
+    "tags": ["gym_anxiety", "beginner", "motivation", "egyptian", "mental_health"]
+  },
+  {
+    "id": "faq-myth-011",
+    "category": "egyptian_gym",
+    "question_en": "Is it safe to train during the heat in Egypt?",
+    "question_ar": "آمن أتمرن في حر مصر؟",
+    "answer_en": "Indoor gym: Yes, with AC it's fine. Just drink more water.\n\nOutdoor training in summer: Be careful!\n- Train early morning (before 8 AM) or after sunset\n- NEVER train outdoor 12-4 PM in summer\n- Hydrate: drink 500ml+ before outdoor session\n- Wear light, breathable clothing\n- Watch for heat stroke signs: dizziness, nausea, confusion, extreme fatigue\n- Reduce intensity by 10-20% in extreme heat\n- If you feel dizzy or nauseous, STOP immediately, get to shade, drink water\n\nFor Ramadan + summer: extra caution. Keep workouts shorter, hydrate heavily between Iftar and Suhoor.",
+    "answer_ar": "جيم مغلق: أيوا، مع التكييف عادي. بس اشرب مية أكتر.\n\nتمرين برا في الصيف: خلي بالك!\n- تمرن الصبح بدري (قبل 8) أو بعد المغرب\n- ما تتمرنش برا من 12-4 العصر في الصيف أبداً\n- اشرب 500 مل+ قبل جلسة برا\n- البس خفيف يسمح بالتنفس\n- انتبه لعلامات ضربة الشمس: دوخة، غثيان، ارتباك، إرهاق شديد\n- قلل الشدة 10-20% في الحر الشديد\n- لو حسيت بدوخة أو غثيان، وقّف فوراً وروح الظل واشرب مية",
+    "tags": ["heat", "summer", "safety", "outdoor", "egyptian", "hydration"]
+  },
+  {
+    "id": "faq-myth-012",
+    "category": "myths",
+    "question_en": "Is stretching before working out necessary?",
+    "question_ar": "الإطالة قبل التمرين ضرورية؟",
+    "answer_en": "STATIC stretching before lifting: NOT recommended — it can temporarily reduce strength and power by 5-10%. Save static stretches for AFTER your workout.\n\nDYNAMIC stretching before lifting: YES — arm circles, leg swings, hip circles, bodyweight squats, walking lunges. This preps your joints and muscles for the work ahead.\n\nBest warm-up protocol:\n1. 5 min light cardio (walk, bike)\n2. Dynamic stretches for target muscles (2-3 min)\n3. Warm-up sets of your first exercise\n4. Start working sets\n\nAfter workout: Static stretching 5-10 min to cool down and improve flexibility over time.",
+    "answer_ar": "إطالة ثابتة (ستاتك) قبل الحديد: مش منصوح — ممكن تقلل القوة مؤقتاً 5-10%. خلي الإطالة الثابتة لبعد التمرين.\n\nإطالة ديناميكية قبل الحديد: أيوا — دوائر ذراع، تأرجح رجل، دوائر حوض، سكوات بدون وزن. دي بتجهز المفاصل والعضلات.\n\nأحسن إحماء:\n1. 5 دقايق كارديو خفيف\n2. إطالة ديناميكية (2-3 دقايق)\n3. سيتات إحماء لأول تمرين\n4. ابدأ سيتات الشغل\n\nبعد التمرين: إطالة ثابتة 5-10 دقايق.",
+    "tags": ["stretching", "warm_up", "myth", "dynamic", "static", "safety"]
+  }
+]

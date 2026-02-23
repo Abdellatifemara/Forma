@@ -1,0 +1,642 @@
+[
+  {
+    "name_en": "Breadfast Eggs Benedict",
+    "name_ar": "بريدفاست ايجز بينيديكت",
+    "category": "PROTEIN",
+    "serving_size_g": 280,
+    "calories": 480,
+    "protein_g": 22,
+    "carbs_g": 32,
+    "fat_g": 30,
+    "fiber_g": 1.5,
+    "is_egyptian": true,
+    "brand_en": "Breadfast",
+    "brand_ar": "بريدفاست",
+    "tags": [
+      "delivery",
+      "breakfast",
+      "eggs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Breadfast Avocado Toast",
+    "name_ar": "بريدفاست توست افوكادو",
+    "category": "FATS",
+    "serving_size_g": 200,
+    "calories": 320,
+    "protein_g": 8,
+    "carbs_g": 28,
+    "fat_g": 20,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "brand_en": "Breadfast",
+    "brand_ar": "بريدفاست",
+    "tags": [
+      "delivery",
+      "breakfast",
+      "avocado",
+      "trendy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  },
+  {
+    "name_en": "Breadfast Pancakes Stack (3 pieces)",
+    "name_ar": "بريدفاست بانكيك ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 8,
+    "carbs_g": 55,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "sugar_g": 22,
+    "is_egyptian": true,
+    "brand_en": "Breadfast",
+    "brand_ar": "بريدفاست",
+    "tags": [
+      "delivery",
+      "breakfast",
+      "pancakes"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Breadfast Oat Bowl with Berries",
+    "name_ar": "بريدفاست بول شوفان بالتوت",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 300,
+    "protein_g": 10,
+    "carbs_g": 48,
+    "fat_g": 8,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "brand_en": "Breadfast",
+    "brand_ar": "بريدفاست",
+    "tags": [
+      "delivery",
+      "breakfast",
+      "oats",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Breadfast Fresh Orange Juice (500ml)",
+    "name_ar": "بريدفاست عصير برتقال طازج",
+    "category": "BEVERAGES",
+    "serving_size_g": 500,
+    "calories": 225,
+    "protein_g": 3,
+    "carbs_g": 52,
+    "fat_g": 0.5,
+    "fiber_g": 1,
+    "vitamin_c_mg": 150,
+    "is_egyptian": true,
+    "brand_en": "Breadfast",
+    "brand_ar": "بريدفاست",
+    "tags": [
+      "delivery",
+      "juice",
+      "fresh"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Breadfast Croissant Zaatar",
+    "name_ar": "بريدفاست كرواسون زعتر",
+    "category": "CARBS",
+    "serving_size_g": 80,
+    "calories": 280,
+    "protein_g": 5,
+    "carbs_g": 30,
+    "fat_g": 15,
+    "fiber_g": 1.5,
+    "is_egyptian": true,
+    "brand_en": "Breadfast",
+    "brand_ar": "بريدفاست",
+    "tags": [
+      "delivery",
+      "breakfast",
+      "croissant",
+      "zaatar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Breadfast Labneh & Olive Oil",
+    "name_ar": "بريدفاست لبنة بزيت الزيتون",
+    "category": "DAIRY",
+    "serving_size_g": 150,
+    "calories": 240,
+    "protein_g": 8,
+    "carbs_g": 6,
+    "fat_g": 20,
+    "fiber_g": 0,
+    "calcium_mg": 120,
+    "is_egyptian": true,
+    "brand_en": "Breadfast",
+    "brand_ar": "بريدفاست",
+    "tags": [
+      "delivery",
+      "breakfast",
+      "labneh",
+      "healthy-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/olive-oil.jpg"
+  },
+  {
+    "name_en": "Rabbit Meal Prep - Chicken & Rice (Standard Box)",
+    "name_ar": "رابيت وجبة جاهزة - فراخ ورز",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 480,
+    "protein_g": 40,
+    "carbs_g": 50,
+    "fat_g": 10,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "brand_en": "Rabbit",
+    "brand_ar": "رابيت",
+    "tags": [
+      "delivery",
+      "meal-prep",
+      "healthy",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Rabbit Meal Prep - Salmon & Quinoa",
+    "name_ar": "رابيت وجبة جاهزة - سلمون وكينوا",
+    "category": "PROTEIN",
+    "serving_size_g": 380,
+    "calories": 520,
+    "protein_g": 38,
+    "carbs_g": 42,
+    "fat_g": 20,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "brand_en": "Rabbit",
+    "brand_ar": "رابيت",
+    "tags": [
+      "delivery",
+      "meal-prep",
+      "healthy",
+      "omega-3"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salmon.jpg"
+  },
+  {
+    "name_en": "Rabbit Meal Prep - Beef Steak & Sweet Potato",
+    "name_ar": "رابيت وجبة جاهزة - ستيك وبطاطا",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 550,
+    "protein_g": 42,
+    "carbs_g": 45,
+    "fat_g": 20,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "brand_en": "Rabbit",
+    "brand_ar": "رابيت",
+    "tags": [
+      "delivery",
+      "meal-prep",
+      "healthy",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Healthy Option - Grilled Chicken Bowl",
+    "name_ar": "هيلثي اوبشن - بول فراخ مشوية",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 420,
+    "protein_g": 38,
+    "carbs_g": 42,
+    "fat_g": 10,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "delivery",
+      "healthy",
+      "bowl",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Healthy Option - Protein Salad Bowl",
+    "name_ar": "هيلثي اوبشن - سلطة بروتين",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 320,
+    "protein_g": 30,
+    "carbs_g": 18,
+    "fat_g": 14,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "delivery",
+      "salad",
+      "diet",
+      "low-carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Fit Meal - Chicken Breast with Vegetables",
+    "name_ar": "فيت ميل - صدور فراخ بالخضار",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 350,
+    "protein_g": 42,
+    "carbs_g": 15,
+    "fat_g": 12,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "delivery",
+      "diet",
+      "bodybuilding",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Fit Meal - Beef Kofta with Brown Rice",
+    "name_ar": "فيت ميل - كفتة لحم بالرز البني",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 520,
+    "protein_g": 35,
+    "carbs_g": 48,
+    "fat_g": 20,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "delivery",
+      "kofta",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brown-rice.jpg"
+  },
+  {
+    "name_en": "Protein Shake (Gym Smoothie Bar)",
+    "name_ar": "شيك بروتين (بار الجيم)",
+    "category": "DAIRY",
+    "serving_size_g": 400,
+    "calories": 350,
+    "protein_g": 30,
+    "carbs_g": 40,
+    "fat_g": 8,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "shake",
+      "protein",
+      "gym",
+      "post-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Mass Gainer Shake (Gym Smoothie Bar)",
+    "name_ar": "شيك ماس جينر",
+    "category": "DAIRY",
+    "serving_size_g": 500,
+    "calories": 650,
+    "protein_g": 35,
+    "carbs_g": 90,
+    "fat_g": 14,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "shake",
+      "mass-gainer",
+      "gym",
+      "bulking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Poke Bowl (Salmon)",
+    "name_ar": "بوكيه بول سلمون",
+    "category": "PROTEIN",
+    "serving_size_g": 380,
+    "calories": 480,
+    "protein_g": 30,
+    "carbs_g": 52,
+    "fat_g": 16,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "bowl",
+      "salmon",
+      "sushi-grade",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salmon.jpg"
+  },
+  {
+    "name_en": "Buddha Bowl (Vegan)",
+    "name_ar": "بوذا بول نباتي",
+    "category": "CARBS",
+    "serving_size_g": 350,
+    "calories": 380,
+    "protein_g": 14,
+    "carbs_g": 52,
+    "fat_g": 14,
+    "fiber_g": 10,
+    "is_egyptian": false,
+    "tags": [
+      "bowl",
+      "vegan",
+      "healthy",
+      "quinoa"
+    ]
+  },
+  {
+    "name_en": "Açaí Bowl with Granola",
+    "name_ar": "اساي بول بالجرانولا",
+    "category": "FRUITS",
+    "serving_size_g": 350,
+    "calories": 420,
+    "protein_g": 8,
+    "carbs_g": 65,
+    "fat_g": 14,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "bowl",
+      "acai",
+      "breakfast",
+      "antioxidant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola.jpg"
+  },
+  {
+    "name_en": "Caesar Salad with Grilled Chicken",
+    "name_ar": "سلطة سيزر بالفراخ المشوية",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 420,
+    "protein_g": 32,
+    "carbs_g": 18,
+    "fat_g": 25,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "salad",
+      "chicken",
+      "restaurant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Greek Salad",
+    "name_ar": "سلطة يونانية",
+    "category": "VEGETABLES",
+    "serving_size_g": 250,
+    "calories": 220,
+    "protein_g": 8,
+    "carbs_g": 10,
+    "fat_g": 18,
+    "fiber_g": 3,
+    "calcium_mg": 200,
+    "is_egyptian": false,
+    "tags": [
+      "salad",
+      "feta",
+      "olives",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Fattoush Salad",
+    "name_ar": "سلطة فتوش",
+    "category": "VEGETABLES",
+    "serving_size_g": 250,
+    "calories": 180,
+    "protein_g": 4,
+    "carbs_g": 22,
+    "fat_g": 10,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "levantine",
+      "bread-chips"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Tabbouleh",
+    "name_ar": "تبولة",
+    "category": "VEGETABLES",
+    "serving_size_g": 200,
+    "calories": 150,
+    "protein_g": 3.5,
+    "carbs_g": 18,
+    "fat_g": 8,
+    "fiber_g": 4,
+    "vitamin_c_mg": 30,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "parsley",
+      "bulgur",
+      "levantine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Mixed Green Salad with Vinaigrette",
+    "name_ar": "سلطة خضراء بالخل",
+    "category": "VEGETABLES",
+    "serving_size_g": 200,
+    "calories": 80,
+    "protein_g": 2,
+    "carbs_g": 8,
+    "fat_g": 5,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "low-cal",
+      "diet",
+      "starter"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Protein Coffee (Iced, with Whey)",
+    "name_ar": "بروتين كوفي مثلج",
+    "category": "BEVERAGES",
+    "serving_size_g": 350,
+    "calories": 180,
+    "protein_g": 25,
+    "carbs_g": 8,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "protein",
+      "gym",
+      "trendy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Cold Pressed Green Juice",
+    "name_ar": "عصير أخضر كولد بريس",
+    "category": "BEVERAGES",
+    "serving_size_g": 330,
+    "calories": 110,
+    "protein_g": 3,
+    "carbs_g": 22,
+    "fat_g": 0.5,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "juice",
+      "cold-pressed",
+      "detox",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Detox Water (Cucumber, Lemon, Mint)",
+    "name_ar": "ماء ديتوكس (خيار وليمون ونعناع)",
+    "category": "BEVERAGES",
+    "serving_size_g": 500,
+    "calories": 10,
+    "protein_g": 0.3,
+    "carbs_g": 2.5,
+    "fat_g": 0,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "tags": [
+      "water",
+      "detox",
+      "hydration",
+      "zero-cal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cucumber.jpg"
+  },
+  {
+    "name_en": "Manakeesh Zaatar (1 piece)",
+    "name_ar": "مناقيش زعتر",
+    "category": "CARBS",
+    "serving_size_g": 120,
+    "calories": 280,
+    "protein_g": 6,
+    "carbs_g": 35,
+    "fat_g": 13,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "levantine",
+      "breakfast",
+      "zaatar"
+    ]
+  },
+  {
+    "name_en": "Manakeesh Cheese (1 piece)",
+    "name_ar": "مناقيش جبنة",
+    "category": "CARBS",
+    "serving_size_g": 140,
+    "calories": 340,
+    "protein_g": 12,
+    "carbs_g": 32,
+    "fat_g": 18,
+    "fiber_g": 1,
+    "calcium_mg": 250,
+    "is_egyptian": false,
+    "tags": [
+      "levantine",
+      "breakfast",
+      "cheese"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Shawarma Plate Chicken with Garlic Sauce",
+    "name_ar": "طبق شاورما فراخ بالثومية",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 620,
+    "protein_g": 40,
+    "carbs_g": 45,
+    "fat_g": 30,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "shawarma",
+      "garlic-sauce"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Grilled Chicken Caesar Wrap",
+    "name_ar": "سيزر راب فراخ مشوية",
+    "category": "PROTEIN",
+    "serving_size_g": 280,
+    "calories": 440,
+    "protein_g": 28,
+    "carbs_g": 38,
+    "fat_g": 20,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "wrap",
+      "chicken",
+      "restaurant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Fajita Chicken Wrap",
+    "name_ar": "فاهيتا فراخ راب",
+    "category": "PROTEIN",
+    "serving_size_g": 280,
+    "calories": 420,
+    "protein_g": 26,
+    "carbs_g": 40,
+    "fat_g": 18,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "wrap",
+      "fajita",
+      "mexican"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Falafel Wrap (Levantine Style)",
+    "name_ar": "فلافل راب لبناني",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 380,
+    "protein_g": 12,
+    "carbs_g": 42,
+    "fat_g": 18,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "wrap",
+      "falafel",
+      "vegan",
+      "levantine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  }
+]

@@ -1,0 +1,325 @@
+[
+  {
+    "id": "ex-mc-003",
+    "name_en": "Lat Pulldown (Wide Grip)",
+    "name_ar": "لات بولداون (قبضة واسعة)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": "10",
+    "tags": [
+      "cable",
+      "lat_pulldown",
+      "back",
+      "width"
+    ]
+  },
+  {
+    "id": "ex-mc-004",
+    "name_en": "Lat Pulldown (Close Grip, V-Bar)",
+    "name_ar": "لات بولداون (قبضة ضيقة، V بار)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "cable",
+      "lat_pulldown",
+      "close_grip",
+      "back"
+    ]
+  },
+  {
+    "id": "ex-mc-005",
+    "name_en": "Seated Cable Row (V-Bar)",
+    "name_ar": "سيتد كيبل رو (V بار)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rhomboids",
+      "traps"
+    ],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": "10",
+    "tags": [
+      "cable",
+      "seated_row",
+      "back",
+      "thickness"
+    ]
+  },
+  {
+    "id": "ex-mc-009",
+    "name_en": "Cable Tricep Pushdown (Straight Bar)",
+    "name_ar": "كيبل تراي بوشداون (بار مستقيم)",
+    "primary_muscle": "triceps",
+    "secondary_muscles": [],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "cable",
+      "pushdown",
+      "straight_bar",
+      "triceps"
+    ]
+  },
+  {
+    "id": "ex-mc-011",
+    "name_en": "Cable Bicep Curl (Bar)",
+    "name_ar": "كيبل بايسبس كيرل (بار)",
+    "primary_muscle": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "cable",
+      "bicep_curl",
+      "biceps",
+      "isolation"
+    ]
+  },
+  {
+    "id": "ex-mc-024",
+    "name_en": "Pec Deck Fly Machine",
+    "name_ar": "بيك ديك فلاي ماشين",
+    "primary_muscle": "chest",
+    "secondary_muscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "machine",
+      "pec_deck",
+      "chest",
+      "isolation"
+    ]
+  },
+  {
+    "id": "ex-mc-026",
+    "name_en": "Reverse Pec Deck (Rear Delt Machine)",
+    "name_ar": "ريفيرس بيك ديك (ماشين ضهر كتف)",
+    "primary_muscle": "rear_delts",
+    "secondary_muscles": [
+      "rhomboids"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "15",
+    "tags": [
+      "machine",
+      "reverse_pec_deck",
+      "rear_delts",
+      "isolation"
+    ]
+  },
+  {
+    "id": "ex-mc-027",
+    "name_en": "Assisted Pull-Up Machine (Gravitron)",
+    "name_ar": "بول أب مساعد (جرافيترون)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "10",
+    "tags": [
+      "machine",
+      "assisted_pullup",
+      "back",
+      "beginner_friendly"
+    ]
+  },
+  {
+    "id": "ex-mc-029",
+    "name_en": "Cable Pullover",
+    "name_ar": "كيبل بول أوفر",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "cable",
+      "pullover",
+      "lats",
+      "isolation"
+    ]
+  },
+  {
+    "id": "ex-mc-033",
+    "name_en": "Chest Supported Row Machine",
+    "name_ar": "تشيست سبورتد رو ماشين",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "rhomboids",
+      "biceps"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "machine",
+      "chest_supported_row",
+      "back",
+      "isolation"
+    ]
+  },
+  {
+    "id": "ex-mc-034",
+    "name_en": "Ab Crunch Machine",
+    "name_ar": "أب كرانش ماشين",
+    "primary_muscle": "abs",
+    "secondary_muscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "15",
+    "tags": [
+      "machine",
+      "ab_crunch",
+      "abs",
+      "isolation"
+    ]
+  },
+  {
+    "id": "ex-mc-035",
+    "name_en": "Torso Rotation Machine",
+    "name_ar": "تورسو روتيشن ماشين",
+    "primary_muscle": "obliques",
+    "secondary_muscles": [
+      "core"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12 each side",
+    "tags": [
+      "machine",
+      "torso_rotation",
+      "obliques",
+      "core"
+    ]
+  },
+  {
+    "id": "ex-mc-037",
+    "name_en": "Pendlay Row (Barbell, Strict)",
+    "name_ar": "بندلاي رو (بار، ستريكت)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "rhomboids",
+      "biceps",
+      "lower_back"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": "8",
+    "tags": [
+      "barbell",
+      "pendlay_row",
+      "back",
+      "explosive"
+    ]
+  },
+  {
+    "id": "ex-mc-038",
+    "name_en": "Cable Upright Row",
+    "name_ar": "كيبل أبرايت رو",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "traps",
+      "biceps"
+    ],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "cable",
+      "upright_row",
+      "shoulders",
+      "traps"
+    ]
+  },
+  {
+    "id": "ex-mc-039",
+    "name_en": "Cable Front Raise",
+    "name_ar": "كيبل فرنت رايز",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "12",
+    "tags": [
+      "cable",
+      "front_raise",
+      "front_delt",
+      "isolation"
+    ]
+  },
+  {
+    "id": "ex-mc-040",
+    "name_en": "Single Arm Cable Row",
+    "name_ar": "كيبل رو ذراع واحدة",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": "10 each side",
+    "tags": [
+      "cable",
+      "single_arm_row",
+      "back",
+      "unilateral"
+    ]
+  }
+]

@@ -1,0 +1,537 @@
+[
+  {
+    "id": "cfp-foundations",
+    "name_en": "CrossFit Foundations",
+    "name_ar": "أساسيات كروس فت",
+    "description_en": "Learn the 9 foundational CrossFit movements with proper form. Scaled WODs, technique focus, and gradual intensity building. Perfect for athletes new to CrossFit or coming from a traditional gym background.",
+    "description_ar": "اتعلم الـ9 حركات الأساسية في كروس فت بفورم صحيح. تمارين مُعدّلة، تركيز على التكنيك، وزيادة تدريجية في الشدة. مثالي للرياضيين الجداد على كروس فت أو اللي جايين من جيم تقليدي.",
+    "duration_weeks": 4,
+    "days_per_week": 3,
+    "difficulty": "beginner",
+    "goal": "IMPROVE_HEALTH",
+    "training_style": "CROSSFIT",
+    "split_type": "CROSSFIT_WOD",
+    "tags": ["crossfit", "beginner", "foundations", "technique"],
+    "weeks": [
+      {
+        "week": 1,
+        "name_en": "The 9 Foundations",
+        "name_ar": "الحركات الأساسية التسعة",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "Squat + Press Day",
+            "name_ar": "يوم السكوات والضغط",
+            "exercises": [
+              { "name": "Air Squat", "sets": 5, "reps": "10", "rest": 90, "notes_en": "Focus on depth and knee tracking" },
+              { "name": "Front Squat", "sets": 4, "reps": "8", "rest": 90, "notes_en": "Light barbell, elbows high" },
+              { "name": "Shoulder Press", "sets": 4, "reps": "8", "rest": 60, "notes_en": "Strict, no leg drive" },
+              { "name": "Push Press", "sets": 3, "reps": "8", "rest": 60, "notes_en": "Dip and drive" },
+              { "name": "WOD: 3 RFT", "sets": 1, "reps": "1", "rest": 0, "notes_en": "10 Air Squats, 10 Push Press (empty bar), 200m Run" }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "Deadlift + Pull Day",
+            "name_ar": "يوم الديدلفت والسحب",
+            "exercises": [
+              { "name": "Deadlift", "sets": 5, "reps": "5", "rest": 120, "notes_en": "Technique focus, light weight" },
+              { "name": "Sumo Deadlift High Pull", "sets": 4, "reps": "8", "rest": 60, "notes_en": "Hip extension drives the pull" },
+              { "name": "Ring Row", "sets": 4, "reps": "10", "rest": 60, "notes_en": "Scale angle as needed" },
+              { "name": "WOD: AMRAP 8", "sets": 1, "reps": "1", "rest": 0, "notes_en": "5 Deadlifts (light), 10 Ring Rows, 15 Sit-Ups" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "Clean + Thruster Day",
+            "name_ar": "يوم الكلين والثرستر",
+            "exercises": [
+              { "name": "Medicine Ball Clean", "sets": 4, "reps": "8", "rest": 60, "notes_en": "Learn the clean pattern" },
+              { "name": "Thruster", "sets": 4, "reps": "8", "rest": 90, "notes_en": "Empty barbell, smooth transition" },
+              { "name": "Wall Ball Shot", "sets": 3, "reps": "15", "rest": 60, "notes_en": "Full squat depth" },
+              { "name": "WOD: 21-15-9", "sets": 1, "reps": "1", "rest": 0, "notes_en": "Thrusters (empty bar) & Ring Rows (scaled Fran)" }
+            ]
+          }
+        ]
+      },
+      {
+        "week": 2,
+        "name_en": "Building Capacity",
+        "name_ar": "بناء القدرة",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "Gymnastics Intro",
+            "name_ar": "مقدمة الجمباز",
+            "exercises": [
+              { "name": "Kipping Swing", "sets": 5, "reps": "8", "rest": 60, "notes_en": "Build the kip pattern" },
+              { "name": "Push-Up", "sets": 4, "reps": "10", "rest": 60, "notes_en": "Full range of motion" },
+              { "name": "Ring Support Hold", "sets": 4, "reps": "20 sec", "rest": 60, "notes_en": "Stabilize at top" },
+              { "name": "Box Jump (Step-Down)", "sets": 4, "reps": "8", "rest": 60, "notes_en": "Jump up, step down" },
+              { "name": "WOD: Cindy (Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "AMRAP 12: 5 Ring Rows, 10 Push-Ups, 15 Air Squats" }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "Barbell Conditioning",
+            "name_ar": "تكييف البار",
+            "exercises": [
+              { "name": "Power Clean", "sets": 5, "reps": "3", "rest": 120, "notes_en": "Triple extension, catch in quarter squat" },
+              { "name": "Front Squat", "sets": 4, "reps": "5", "rest": 90, "notes_en": "Build up weight slowly" },
+              { "name": "Push Jerk", "sets": 4, "reps": "5", "rest": 90, "notes_en": "Dip, drive, drop under" },
+              { "name": "WOD: DT (Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "3 RFT: 12 Deadlifts, 9 Hang Cleans, 6 Push Jerks (light)" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "Mono + Core",
+            "name_ar": "كارديو + بطن",
+            "exercises": [
+              { "name": "Rowing 500m", "sets": 3, "reps": "1", "rest": 120, "notes_en": "Focus on stroke rate and power" },
+              { "name": "Double-Under Practice", "sets": 5, "reps": "30 sec", "rest": 30, "notes_en": "Or 3x single-unders" },
+              { "name": "GHD Sit-Up", "sets": 3, "reps": "10", "rest": 60, "notes_en": "Controlled range, don't go too deep yet" },
+              { "name": "WOD: Annie (Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "30-20-10 Single-Unders & Sit-Ups" }
+            ]
+          }
+        ]
+      },
+      {
+        "week": 3,
+        "name_en": "Loading Up",
+        "name_ar": "زيادة الأوزان",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "Strength + Metcon",
+            "name_ar": "قوة + ميتكون",
+            "exercises": [
+              { "name": "Back Squat", "sets": 5, "reps": "5", "rest": 120, "notes_en": "Working up to moderate weight" },
+              { "name": "Strict Press", "sets": 4, "reps": "6", "rest": 90, "notes_en": "Build overhead strength" },
+              { "name": "WOD: Helen (Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "3 RFT: 400m Run, 15 KB Swings (16kg), 8 Ring Rows" }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "Olympic Lifting Intro",
+            "name_ar": "مقدمة رفع أثقال أولمبي",
+            "exercises": [
+              { "name": "Snatch Grip Deadlift", "sets": 4, "reps": "5", "rest": 90, "notes_en": "Wide grip, keep bar close" },
+              { "name": "Hang Power Snatch", "sets": 5, "reps": "3", "rest": 120, "notes_en": "From above knee, aggressive hip" },
+              { "name": "Overhead Squat", "sets": 4, "reps": "5", "rest": 90, "notes_en": "Active shoulders, sit deep" },
+              { "name": "WOD: Isabel (Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "30 Power Snatches for time (empty bar or light)" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "Mixed Modal",
+            "name_ar": "تمرين مختلط",
+            "exercises": [
+              { "name": "Burpee", "sets": 3, "reps": "10", "rest": 60, "notes_en": "Full extension at top" },
+              { "name": "Box Jump", "sets": 3, "reps": "10", "rest": 60, "notes_en": "Stand fully at top" },
+              { "name": "Toes-to-Bar (Scaled)", "sets": 3, "reps": "8", "rest": 60, "notes_en": "Knees-to-elbows if needed" },
+              { "name": "WOD: Fight Gone Bad (Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "3 rounds: 1 min Wall Balls, 1 min SDLHP, 1 min Box Jump, 1 min Push Press, 1 min Row (cal), 1 min rest" }
+            ]
+          }
+        ]
+      },
+      {
+        "week": 4,
+        "name_en": "Test Week",
+        "name_ar": "أسبوع الاختبار",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "Benchmark: Fran (Scaled)",
+            "name_ar": "بنشمارك: فران (معدّل)",
+            "exercises": [
+              { "name": "Warm-Up: Thruster Practice", "sets": 3, "reps": "5", "rest": 60, "notes_en": "Build to workout weight" },
+              { "name": "Warm-Up: Pull-Up Practice", "sets": 3, "reps": "5", "rest": 60, "notes_en": "Or ring row" },
+              { "name": "WOD: Fran (Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "21-15-9 Thrusters (light) & Ring Rows. RECORD YOUR TIME!" }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "Benchmark: Grace (Scaled)",
+            "name_ar": "بنشمارك: جريس (معدّل)",
+            "exercises": [
+              { "name": "Warm-Up: Clean & Jerk Practice", "sets": 4, "reps": "3", "rest": 90, "notes_en": "Build to workout weight" },
+              { "name": "WOD: Grace (Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "30 Clean & Jerks for time (light weight). RECORD YOUR TIME!" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "Benchmark: Cindy",
+            "name_ar": "بنشمارك: سيندي",
+            "exercises": [
+              { "name": "Warm-Up: Movement Prep", "sets": 1, "reps": "1", "rest": 0, "notes_en": "5 Pull-Ups, 10 Push-Ups, 15 Air Squats x2" },
+              { "name": "WOD: Cindy (Full or Scaled)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "AMRAP 20: 5 Pull-Ups, 10 Push-Ups, 15 Air Squats. RECORD YOUR ROUNDS!" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cfp-wod-program",
+    "name_en": "CrossFit WOD Program",
+    "name_ar": "برنامج كروس فت WOD",
+    "description_en": "Classic 5-day CrossFit programming: Strength + Metcon, Olympic + Metcon, Gymnastics + Metcon, Endurance, and Hero/Girl WOD day. Designed for intermediate athletes who know the movements and want structured progress.",
+    "description_ar": "برنامج كروس فت كلاسيكي 5 أيام: قوة + ميتكون، رفع أثقال أولمبي + ميتكون، جمباز + ميتكون، تحمّل، ويوم هيرو/جيرل WOD. مصمّم للرياضيين المتوسطين اللي عارفين الحركات وعايزين تقدم منظم.",
+    "duration_weeks": 8,
+    "days_per_week": 5,
+    "difficulty": "intermediate",
+    "goal": "INCREASE_STRENGTH",
+    "training_style": "CROSSFIT",
+    "split_type": "CROSSFIT_WOD",
+    "tags": ["crossfit", "intermediate", "wod", "programming", "5-day"],
+    "weeks": [
+      {
+        "week": 1,
+        "name_en": "Base Building",
+        "name_ar": "بناء القاعدة",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "Strength + Metcon",
+            "name_ar": "قوة + ميتكون",
+            "exercises": [
+              { "name": "Back Squat", "sets": 5, "reps": "5", "rest": 180, "notes_en": "Build to heavy 5. Week 1 = 70% 1RM" },
+              { "name": "Strict Press", "sets": 4, "reps": "6", "rest": 120, "notes_en": "70% 1RM" },
+              { "name": "WOD: 4 RFT", "sets": 1, "reps": "1", "rest": 0, "notes_en": "12 Deadlifts (84/57 kg), 9 Hang Power Cleans, 6 Push Jerks. Target: 10-14 min" }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "Olympic + Metcon",
+            "name_ar": "أولمبي + ميتكون",
+            "exercises": [
+              { "name": "Squat Clean", "sets": 6, "reps": "2", "rest": 120, "notes_en": "Build to heavy double" },
+              { "name": "Clean Pull", "sets": 3, "reps": "3", "rest": 90, "notes_en": "105% of clean weight" },
+              { "name": "WOD: AMRAP 12", "sets": 1, "reps": "1", "rest": 0, "notes_en": "3 Power Cleans (61/43 kg), 6 Push-Ups, 9 Air Squats" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "Gymnastics + Metcon",
+            "name_ar": "جمباز + ميتكون",
+            "exercises": [
+              { "name": "Strict Pull-Up", "sets": 5, "reps": "max", "rest": 120, "notes_en": "Build strict strength" },
+              { "name": "Kipping HSPU Practice", "sets": 4, "reps": "5-8", "rest": 90, "notes_en": "Or pike push-ups on box" },
+              { "name": "Toes-to-Bar", "sets": 4, "reps": "8-12", "rest": 60, "notes_en": "Kipping or strict" },
+              { "name": "WOD: 21-15-9", "sets": 1, "reps": "1", "rest": 0, "notes_en": "Chest-to-Bar Pull-Ups & Thrusters (43/30 kg)" }
+            ]
+          },
+          {
+            "day": 4,
+            "name_en": "Endurance",
+            "name_ar": "تحمّل",
+            "exercises": [
+              { "name": "Rowing 2000m", "sets": 1, "reps": "1", "rest": 300, "notes_en": "Record time. Pace: aim for negative split" },
+              { "name": "Assault Bike", "sets": 4, "reps": "30 sec on / 30 sec off", "rest": 30, "notes_en": "Max effort intervals" },
+              { "name": "WOD: Nancy", "sets": 1, "reps": "1", "rest": 0, "notes_en": "5 RFT: 400m Run, 15 Overhead Squats (43/30 kg)" }
+            ]
+          },
+          {
+            "day": 5,
+            "name_en": "Hero/Girl WOD",
+            "name_ar": "هيرو/جيرل WOD",
+            "exercises": [
+              { "name": "WOD: Helen", "sets": 1, "reps": "1", "rest": 0, "notes_en": "3 RFT: 400m Run, 21 KB Swings (24/16 kg), 12 Pull-Ups. RECORD TIME!" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cfp-competitor",
+    "name_en": "CrossFit Competitor",
+    "name_ar": "كروس فت كومبتيتور",
+    "description_en": "12-week competition prep for advanced athletes. Double sessions (AM strength/skill, PM metcon), heavy Olympic lifting, benchmark testing every 4 weeks, and competition simulation. For athletes targeting the CrossFit Open or local competitions.",
+    "description_ar": "تحضير مسابقات 12 أسبوع للرياضيين المتقدمين. جلستين (صباحي قوة/مهارات، مسائي ميتكون)، رفع أثقال أولمبي تقيل، اختبار بنشمارك كل 4 أسابيع، ومحاكاة مسابقات. للرياضيين اللي بيستهدفوا CrossFit Open أو مسابقات محلية.",
+    "duration_weeks": 12,
+    "days_per_week": 6,
+    "difficulty": "advanced",
+    "goal": "INCREASE_STRENGTH",
+    "training_style": "CROSSFIT",
+    "split_type": "CROSSFIT_WOD",
+    "tags": ["crossfit", "advanced", "competitor", "open-prep", "double-session"],
+    "weeks": [
+      {
+        "week": 1,
+        "name_en": "Baseline Testing",
+        "name_ar": "اختبار القاعدة",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "AM: Max Lifts / PM: Fran",
+            "name_ar": "صباحي: أقصى أوزان / مسائي: فران",
+            "exercises": [
+              { "name": "Back Squat 1RM Test", "sets": 1, "reps": "1", "rest": 300, "notes_en": "Build to 1RM. Record." },
+              { "name": "Strict Press 1RM Test", "sets": 1, "reps": "1", "rest": 300, "notes_en": "Build to 1RM. Record." },
+              { "name": "WOD: Fran", "sets": 1, "reps": "1", "rest": 0, "notes_en": "21-15-9 Thrusters (43/30 kg) & Pull-Ups. RECORD TIME!" }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "AM: Oly Maxes / PM: Grace",
+            "name_ar": "صباحي: أقصى أولمبي / مسائي: جريس",
+            "exercises": [
+              { "name": "Snatch 1RM Test", "sets": 1, "reps": "1", "rest": 300, "notes_en": "Build to 1RM. Record." },
+              { "name": "Clean & Jerk 1RM Test", "sets": 1, "reps": "1", "rest": 300, "notes_en": "Build to 1RM. Record." },
+              { "name": "WOD: Grace", "sets": 1, "reps": "1", "rest": 0, "notes_en": "30 Clean & Jerks (61/43 kg). RECORD TIME!" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "Gymnastics Max / Cardio Test",
+            "name_ar": "جمباز أقصى / اختبار كارديو",
+            "exercises": [
+              { "name": "Max Strict Pull-Ups", "sets": 1, "reps": "max", "rest": 0, "notes_en": "Record number" },
+              { "name": "Max HSPU", "sets": 1, "reps": "max", "rest": 0, "notes_en": "Strict. Record number" },
+              { "name": "Max Unbroken Muscle-Ups", "sets": 1, "reps": "max", "rest": 0, "notes_en": "Bar or Ring. Record." },
+              { "name": "Rowing 2000m Test", "sets": 1, "reps": "1", "rest": 0, "notes_en": "All-out. Record time." },
+              { "name": "WOD: Cindy", "sets": 1, "reps": "1", "rest": 0, "notes_en": "AMRAP 20: 5 Pull-Ups, 10 Push-Ups, 15 Squats. RECORD ROUNDS!" }
+            ]
+          },
+          {
+            "day": 4,
+            "name_en": "AM: Deadlift Max / PM: DT",
+            "name_ar": "صباحي: ديدلفت أقصى / مسائي: DT",
+            "exercises": [
+              { "name": "Deadlift 1RM Test", "sets": 1, "reps": "1", "rest": 300, "notes_en": "Build to 1RM. Record." },
+              { "name": "Front Squat 3RM Test", "sets": 1, "reps": "3", "rest": 300, "notes_en": "Record weight." },
+              { "name": "WOD: DT", "sets": 1, "reps": "1", "rest": 0, "notes_en": "5 RFT: 12 Deadlifts, 9 Hang Cleans, 6 Push Jerks (70/47 kg). RECORD TIME!" }
+            ]
+          },
+          {
+            "day": 5,
+            "name_en": "Mixed Modal + Skills",
+            "name_ar": "مختلط + مهارات",
+            "exercises": [
+              { "name": "Double-Under Test", "sets": 1, "reps": "max in 2 min", "rest": 0, "notes_en": "Record number" },
+              { "name": "Rope Climb Test", "sets": 1, "reps": "max in 3 min", "rest": 0, "notes_en": "Record number" },
+              { "name": "WOD: Murph (Scaled if needed)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "1 Mile Run, 100 Pull-Ups, 200 Push-Ups, 300 Air Squats, 1 Mile Run. Partition as needed. RECORD TIME!" }
+            ]
+          },
+          {
+            "day": 6,
+            "name_en": "Active Recovery + Mobility",
+            "name_ar": "استشفاء نشط + مرونة",
+            "exercises": [
+              { "name": "Light Row/Bike", "sets": 1, "reps": "20 min", "rest": 0, "notes_en": "Easy pace, conversational" },
+              { "name": "Full Body Mobility", "sets": 1, "reps": "20 min", "rest": 0, "notes_en": "Shoulders, hips, ankles, thoracic" },
+              { "name": "Foam Rolling", "sets": 1, "reps": "10 min", "rest": 0, "notes_en": "Focus on problem areas" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cfp-fat-loss",
+    "name_en": "CrossFit for Fat Loss",
+    "name_ar": "كروس فت لحرق الدهون",
+    "description_en": "High-volume metcons with simple, scalable movements. 4 days per week, higher rep ranges, shorter rest periods. Designed to maximize calorie burn while building functional fitness. No complex Olympic lifts — just effective, sweaty workouts.",
+    "description_ar": "ميتكون عالي الحجم بحركات بسيطة وقابلة للتعديل. 4 أيام في الأسبوع، تكرارات أعلى، فترات راحة أقصر. مصمّم لحرق أقصى سعرات حرارية مع بناء لياقة وظيفية. من غير رفع أثقال أولمبي معقد — بس تمارين فعّالة وتعرّق.",
+    "duration_weeks": 6,
+    "days_per_week": 4,
+    "difficulty": "beginner",
+    "goal": "LOSE_WEIGHT",
+    "training_style": "CROSSFIT",
+    "split_type": "CROSSFIT_WOD",
+    "tags": ["crossfit", "fat-loss", "beginner", "metcon", "high-volume"],
+    "weeks": [
+      {
+        "week": 1,
+        "name_en": "Sweat Foundation",
+        "name_ar": "أساس التعرّق",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "Burpee Bonanza",
+            "name_ar": "جنون البيربي",
+            "exercises": [
+              { "name": "Warm-Up: 400m Run", "sets": 1, "reps": "1", "rest": 0, "notes_en": "Easy pace" },
+              { "name": "WOD: AMRAP 20", "sets": 1, "reps": "1", "rest": 0, "notes_en": "5 Burpees, 10 KB Swings (16/12 kg), 15 Air Squats, 200m Run" },
+              { "name": "Finisher: Assault Bike", "sets": 1, "reps": "30 cal", "rest": 0, "notes_en": "For time. Max effort." }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "Rowing Inferno",
+            "name_ar": "جحيم التجديف",
+            "exercises": [
+              { "name": "Rowing Intervals", "sets": 5, "reps": "500m", "rest": 120, "notes_en": "Record each split" },
+              { "name": "WOD: 3 RFT", "sets": 1, "reps": "1", "rest": 0, "notes_en": "21 Wall Balls (9/6 kg), 15 Box Jump Step-Ups, 9 Push-Ups" },
+              { "name": "Core Finisher", "sets": 3, "reps": "20", "rest": 30, "notes_en": "20 Sit-Ups, 20 Russian Twists, 20 Flutter Kicks" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "DB Destruction",
+            "name_ar": "تدمير الدمبل",
+            "exercises": [
+              { "name": "WOD: 5 RFT", "sets": 1, "reps": "1", "rest": 0, "notes_en": "10 DB Thrusters, 10 Burpees, 200m Run" },
+              { "name": "EMOM 10", "sets": 1, "reps": "1", "rest": 0, "notes_en": "Odd: 12 DB Snatches (alternating), Even: 12 Box Jumps" }
+            ]
+          },
+          {
+            "day": 4,
+            "name_en": "The Chipper",
+            "name_ar": "التشيبر",
+            "exercises": [
+              { "name": "WOD: For Time", "sets": 1, "reps": "1", "rest": 0, "notes_en": "50 Double-Unders (or 100 singles), 40 Sit-Ups, 30 KB Swings, 20 Box Jumps, 10 Burpees, 20 Box Jumps, 30 KB Swings, 40 Sit-Ups, 50 Double-Unders" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cfp-strength-hybrid",
+    "name_en": "CrossFit + Strength Hybrid",
+    "name_ar": "كروس فت + قوة هايبرد",
+    "description_en": "Best of both worlds: Linear strength progression (5/3/1 style) combined with daily metcons. Build raw strength while maintaining CrossFit conditioning. 5 days per week — each day starts with heavy compound lifts followed by a short, intense WOD.",
+    "description_ar": "أفضل الاتنين: تقدم قوة خطي (نمط 5/3/1) مع ميتكون يومي. ابني قوة خام مع الحفاظ على لياقة كروس فت. 5 أيام في الأسبوع — كل يوم بيبدأ برفع تقيل بعده WOD قصير ومكثف.",
+    "duration_weeks": 8,
+    "days_per_week": 5,
+    "difficulty": "intermediate",
+    "goal": "INCREASE_STRENGTH",
+    "training_style": "CROSSFIT",
+    "split_type": "CROSSFIT_WOD",
+    "tags": ["crossfit", "strength", "hybrid", "5-3-1", "intermediate"],
+    "weeks": [
+      {
+        "week": 1,
+        "name_en": "Week 1: 5s (65-75-85%)",
+        "name_ar": "الأسبوع 1: خمسات (65-75-85%)",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "Squat + Metcon",
+            "name_ar": "سكوات + ميتكون",
+            "exercises": [
+              { "name": "Back Squat", "sets": 3, "reps": "5", "rest": 180, "notes_en": "65% x5, 75% x5, 85% x5+" },
+              { "name": "Front Squat", "sets": 3, "reps": "8", "rest": 120, "notes_en": "60% of back squat" },
+              { "name": "WOD: AMRAP 10", "sets": 1, "reps": "1", "rest": 0, "notes_en": "10 Thrusters (43/30 kg), 10 Box Jumps, 10 Toes-to-Bar" }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "Press + Metcon",
+            "name_ar": "ضغط + ميتكون",
+            "exercises": [
+              { "name": "Strict Press", "sets": 3, "reps": "5", "rest": 180, "notes_en": "65% x5, 75% x5, 85% x5+" },
+              { "name": "Push Press", "sets": 3, "reps": "5", "rest": 120, "notes_en": "Build to heavy" },
+              { "name": "WOD: 3 RFT", "sets": 1, "reps": "1", "rest": 0, "notes_en": "400m Run, 21 KB Swings (24/16 kg), 12 Pull-Ups" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "Deadlift + Metcon",
+            "name_ar": "ديدلفت + ميتكون",
+            "exercises": [
+              { "name": "Deadlift", "sets": 3, "reps": "5", "rest": 180, "notes_en": "65% x5, 75% x5, 85% x5+" },
+              { "name": "Romanian Deadlift", "sets": 3, "reps": "8", "rest": 120, "notes_en": "Hamstring focus" },
+              { "name": "WOD: 21-15-9", "sets": 1, "reps": "1", "rest": 0, "notes_en": "Deadlifts (102/70 kg), Handstand Push-Ups (or pike)" }
+            ]
+          },
+          {
+            "day": 4,
+            "name_en": "Olympic + Metcon",
+            "name_ar": "أولمبي + ميتكون",
+            "exercises": [
+              { "name": "Power Clean", "sets": 5, "reps": "3", "rest": 120, "notes_en": "Build to heavy triple" },
+              { "name": "Hang Snatch", "sets": 5, "reps": "2", "rest": 120, "notes_en": "Technique focus" },
+              { "name": "WOD: Elizabeth", "sets": 1, "reps": "1", "rest": 0, "notes_en": "21-15-9 Cleans (61/43 kg) & Ring Dips" }
+            ]
+          },
+          {
+            "day": 5,
+            "name_en": "Bench + Long WOD",
+            "name_ar": "بنش + WOD طويل",
+            "exercises": [
+              { "name": "Bench Press", "sets": 3, "reps": "5", "rest": 180, "notes_en": "65% x5, 75% x5, 85% x5+" },
+              { "name": "Weighted Pull-Up", "sets": 4, "reps": "5", "rest": 120, "notes_en": "Build to heavy" },
+              { "name": "WOD: Karen", "sets": 1, "reps": "1", "rest": 0, "notes_en": "150 Wall Balls (9/6 kg) for time" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cfp-open-prep",
+    "name_en": "CrossFit Open Prep",
+    "name_ar": "تحضير كروس فت أوبن",
+    "description_en": "8-week program specifically designed to prepare for the CrossFit Open. Trains common Open movements and time domains: thrusters, chest-to-bar, toes-to-bar, double-unders, muscle-ups, and heavy barbell cycling. Includes weekly Open-style simulation WODs and benchmark retesting.",
+    "description_ar": "برنامج 8 أسابيع مصمّم خصيصاً للتحضير لـ CrossFit Open. بيدرّب الحركات الشائعة في الأوبن والأوقات المستهدفة: ثرسترز، صدر للبار، أصابع للبار، دبل أندرز، ماسل أبز، ودوران البار التقيل. يشمل WODs أسبوعية بنمط الأوبن وإعادة اختبار البنشماركس.",
+    "duration_weeks": 8,
+    "days_per_week": 5,
+    "difficulty": "advanced",
+    "goal": "INCREASE_STRENGTH",
+    "training_style": "CROSSFIT",
+    "split_type": "CROSSFIT_WOD",
+    "tags": ["crossfit", "advanced", "open-prep", "competition", "benchmark"],
+    "weeks": [
+      {
+        "week": 1,
+        "name_en": "Identify Weaknesses",
+        "name_ar": "تحديد نقاط الضعف",
+        "days": [
+          {
+            "day": 1,
+            "name_en": "Thruster + C2B Complex",
+            "name_ar": "ثرسترز + صدر للبار",
+            "exercises": [
+              { "name": "Thruster", "sets": 5, "reps": "3", "rest": 120, "notes_en": "Build to heavy triple. Open weight = 43/30 kg" },
+              { "name": "Chest-to-Bar Pull-Up", "sets": 5, "reps": "5-10", "rest": 90, "notes_en": "Work on cycling efficiency" },
+              { "name": "WOD: Open 14.5 Style", "sets": 1, "reps": "1", "rest": 0, "notes_en": "21-18-15-12-9-6-3 Thrusters (43/30 kg) & Burpees. Cap: 20 min" }
+            ]
+          },
+          {
+            "day": 2,
+            "name_en": "Snatch + TTB",
+            "name_ar": "سناتش + أصابع للبار",
+            "exercises": [
+              { "name": "Power Snatch", "sets": 6, "reps": "2", "rest": 120, "notes_en": "Speed and technique" },
+              { "name": "Toes-to-Bar", "sets": 5, "reps": "10-15", "rest": 60, "notes_en": "Large sets, efficient kip" },
+              { "name": "WOD: AMRAP 7", "sets": 1, "reps": "1", "rest": 0, "notes_en": "3 Power Snatches (61/43 kg), 3 Bar-Facing Burpees, 6+6, 9+9... ascending" }
+            ]
+          },
+          {
+            "day": 3,
+            "name_en": "Gymnastics Skills",
+            "name_ar": "مهارات الجمباز",
+            "exercises": [
+              { "name": "Bar Muscle-Up", "sets": 5, "reps": "3-5", "rest": 120, "notes_en": "Or transitions on low bar" },
+              { "name": "Ring Muscle-Up", "sets": 5, "reps": "2-3", "rest": 120, "notes_en": "Or false grip ring rows + dips" },
+              { "name": "HSPU", "sets": 5, "reps": "5-10", "rest": 90, "notes_en": "Strict or kipping" },
+              { "name": "Double-Under", "sets": 5, "reps": "50", "rest": 60, "notes_en": "Unbroken sets" },
+              { "name": "WOD: AMRAP 20 (Mary)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "5 HSPU, 10 Pistols, 15 Pull-Ups" }
+            ]
+          },
+          {
+            "day": 4,
+            "name_en": "Heavy Barbell Cycling",
+            "name_ar": "دوران البار التقيل",
+            "exercises": [
+              { "name": "Clean & Jerk", "sets": 6, "reps": "2", "rest": 120, "notes_en": "Touch and go from floor" },
+              { "name": "Deadlift", "sets": 3, "reps": "5", "rest": 120, "notes_en": "Heavy, build grip endurance" },
+              { "name": "WOD: 5 RFT (DT)", "sets": 1, "reps": "1", "rest": 0, "notes_en": "12 Deadlifts, 9 Hang Power Cleans, 6 Push Jerks (70/47 kg)" }
+            ]
+          },
+          {
+            "day": 5,
+            "name_en": "Open Simulation #1",
+            "name_ar": "محاكاة أوبن #1",
+            "exercises": [
+              { "name": "WOD: Open-Style Test", "sets": 1, "reps": "1", "rest": 0, "notes_en": "AMRAP 14: 60-cal Row, 50 Toes-to-Bar, 40 Wall Balls (9/6 kg), 30 Cleans (61/43 kg), 20 Muscle-Ups. Score = total reps." }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

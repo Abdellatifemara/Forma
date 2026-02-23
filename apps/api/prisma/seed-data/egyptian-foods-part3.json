@@ -17,7 +17,8 @@
       "Everywhere"
     ],
     "price_egp_min": 15,
-    "price_egp_max": 35
+    "price_egp_max": 35,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
   },
   {
     "id": "EGY0102",
@@ -37,7 +38,8 @@
       "Everywhere"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
   },
   {
     "id": "EGY0103",
@@ -58,7 +60,8 @@
       "Home"
     ],
     "price_egp_min": 25,
-    "price_egp_max": 55
+    "price_egp_max": 55,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/eggplant.jpg"
   },
   {
     "id": "EGY0104",
@@ -79,7 +82,8 @@
       "Supermarkets"
     ],
     "price_egp_min": 25,
-    "price_egp_max": 60
+    "price_egp_max": 60,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hummus.jpg"
   },
   {
     "id": "EGY0106",
@@ -99,7 +103,8 @@
       "Restaurants"
     ],
     "price_egp_min": 35,
-    "price_egp_max": 70
+    "price_egp_max": 70,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
   },
   {
     "id": "EGY0107",
@@ -120,7 +125,8 @@
       "Restaurants"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
   },
   {
     "id": "EGY0108",
@@ -140,7 +146,8 @@
       "Everywhere"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 25
+    "price_egp_max": 25,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tomato.jpg"
   },
   {
     "id": "EGY0109",
@@ -160,7 +167,8 @@
       "Everywhere"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 25
+    "price_egp_max": 25,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
   },
   {
     "id": "EGY0110",
@@ -182,7 +190,8 @@
       "Fast Food"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
   },
   {
     "id": "EGY0111",
@@ -202,7 +211,8 @@
       "Everywhere"
     ],
     "price_egp_min": 5,
-    "price_egp_max": 15
+    "price_egp_max": 15,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
   },
   {
     "id": "EGY0112",
@@ -222,7 +232,8 @@
       "Everywhere"
     ],
     "price_egp_min": 5,
-    "price_egp_max": 15
+    "price_egp_max": 15,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turnip.jpg"
   },
   {
     "id": "EGY0113",
@@ -242,7 +253,8 @@
       "Everywhere"
     ],
     "price_egp_min": 5,
-    "price_egp_max": 15
+    "price_egp_max": 15,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cucumber.jpg"
   },
   {
     "id": "EGY0114",
@@ -263,7 +275,8 @@
       "Specialty shops"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 30
+    "price_egp_max": 30,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
   },
   {
     "id": "EGY0115",
@@ -283,7 +296,8 @@
       "Everywhere"
     ],
     "price_egp_min": 15,
-    "price_egp_max": 40
+    "price_egp_max": 40,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
   },
   {
     "id": "EGY0116",
@@ -325,7 +339,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 15,
-    "price_egp_max": 35
+    "price_egp_max": 35,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/semolina.jpg"
   },
   {
     "id": "EGY0118",
@@ -346,7 +361,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 25,
-    "price_egp_max": 55
+    "price_egp_max": 55,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/semolina.jpg"
   },
   {
     "id": "EGY0119",
@@ -367,7 +383,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 30,
-    "price_egp_max": 65
+    "price_egp_max": 65,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/semolina.jpg"
   },
   {
     "id": "EGY0120",
@@ -388,7 +405,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 35,
-    "price_egp_max": 80
+    "price_egp_max": 80,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
   },
   {
     "id": "EGY0121",
@@ -409,7 +427,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 50,
-    "price_egp_max": 120
+    "price_egp_max": 120,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
   },
   {
     "id": "EGY0122",
@@ -430,7 +449,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 45,
-    "price_egp_max": 100
+    "price_egp_max": 100,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
   },
   {
     "id": "EGY0123",
@@ -451,7 +471,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 40,
-    "price_egp_max": 90
+    "price_egp_max": 90,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
   },
   {
     "id": "EGY0124",
@@ -473,7 +494,8 @@
       "Supermarkets"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 50
+    "price_egp_max": 50,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice-pudding.jpg"
   },
   {
     "id": "EGY0125",
@@ -494,7 +516,8 @@
       "Restaurants"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 50
+    "price_egp_max": 50,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
   },
   {
     "id": "EGY0126",
@@ -515,7 +538,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 40,
-    "price_egp_max": 100
+    "price_egp_max": 100,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/phyllo-dough.jpg"
   },
   {
     "id": "EGY0127",
@@ -536,7 +560,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 5,
-    "price_egp_max": 15
+    "price_egp_max": 15,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
   },
   {
     "id": "EGY0128",
@@ -557,7 +582,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 15,
-    "price_egp_max": 40
+    "price_egp_max": 40,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
   },
   {
     "id": "EGY0129",
@@ -578,7 +604,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 12,
-    "price_egp_max": 35
+    "price_egp_max": 35,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
   },
   {
     "id": "EGY0130",
@@ -599,7 +626,8 @@
       "Street vendors"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 50
+    "price_egp_max": 50,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
   },
   {
     "id": "EGY0131",
@@ -620,7 +648,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 25,
-    "price_egp_max": 60
+    "price_egp_max": 60,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
   },
   {
     "id": "EGY0132",
@@ -640,7 +669,8 @@
       "Everywhere"
     ],
     "price_egp_min": 5,
-    "price_egp_max": 20
+    "price_egp_max": 20,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
   },
   {
     "id": "EGY0133",
@@ -661,7 +691,8 @@
       "Supermarkets"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 30
+    "price_egp_max": 30,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pistachios.jpg"
   },
   {
     "id": "EGY0134",
@@ -682,7 +713,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 30,
-    "price_egp_max": 70
+    "price_egp_max": 70,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
   },
   {
     "id": "EGY0135",
@@ -703,7 +735,8 @@
       "Sweets shops"
     ],
     "price_egp_min": 45,
-    "price_egp_max": 100
+    "price_egp_max": 100,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
   },
   {
     "id": "EGY0136",
@@ -723,7 +756,8 @@
       "Everywhere"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 30
+    "price_egp_max": 30,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
   },
   {
     "id": "EGY0137",
@@ -743,7 +777,8 @@
       "Everywhere"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 25
+    "price_egp_max": 25,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
   },
   {
     "id": "EGY0138",
@@ -764,7 +799,8 @@
       "Health cafes"
     ],
     "price_egp_min": 8,
-    "price_egp_max": 20
+    "price_egp_max": 20,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
   },
   {
     "id": "EGY0139",
@@ -785,7 +821,8 @@
       "Cafes"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 50
+    "price_egp_max": 50,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
   },
   {
     "id": "EGY0140",
@@ -806,7 +843,8 @@
       "Juice shops"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 30
+    "price_egp_max": 30,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
   },
   {
     "id": "EGY0141",
@@ -827,7 +865,8 @@
       "Traditional shops"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 25
+    "price_egp_max": 25,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
   },
   {
     "id": "EGY0142",
@@ -848,7 +887,8 @@
       "Supermarkets"
     ],
     "price_egp_min": 15,
-    "price_egp_max": 35
+    "price_egp_max": 35,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
   },
   {
     "id": "EGY0143",
@@ -869,7 +909,8 @@
       "Juice shops"
     ],
     "price_egp_min": 15,
-    "price_egp_max": 35
+    "price_egp_max": 35,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
   },
   {
     "id": "EGY0144",
@@ -889,7 +930,8 @@
       "Street vendors"
     ],
     "price_egp_min": 10,
-    "price_egp_max": 25
+    "price_egp_max": 25,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
   },
   {
     "id": "EGY0145",
@@ -910,7 +952,8 @@
       "Restaurants"
     ],
     "price_egp_min": 15,
-    "price_egp_max": 40
+    "price_egp_max": 40,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
   },
   {
     "id": "EGY0146",
@@ -931,7 +974,8 @@
       "Restaurants"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 50
+    "price_egp_max": 50,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mango.jpg"
   },
   {
     "id": "EGY0147",
@@ -952,7 +996,8 @@
       "Restaurants"
     ],
     "price_egp_min": 18,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/guava.jpg"
   },
   {
     "id": "EGY0148",
@@ -973,7 +1018,8 @@
       "Restaurants"
     ],
     "price_egp_min": 20,
-    "price_egp_max": 50
+    "price_egp_max": 50,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/strawberries.jpg"
   },
   {
     "id": "EGY0149",
@@ -994,7 +1040,8 @@
       "Juice shops"
     ],
     "price_egp_min": 15,
-    "price_egp_max": 40
+    "price_egp_max": 40,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
   },
   {
     "id": "EGY0150",
@@ -1014,6 +1061,7 @@
       "Juice shops"
     ],
     "price_egp_min": 25,
-    "price_egp_max": 60
+    "price_egp_max": 60,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
   }
 ]

@@ -1,0 +1,402 @@
+[
+  {
+    "name_en": "ORS (Oral Rehydration Solution, 1 packet in 200ml)",
+    "name_ar": "محلول جفاف (كيس في 200 مل)",
+    "category": "medical",
+    "serving_size_g": 200,
+    "calories": 25,
+    "protein_g": 0,
+    "carbs_g": 6,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "ors",
+      "rehydration",
+      "diarrhea",
+      "recovery",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Chicken Broth (Clear, Hospital Style, 1 cup)",
+    "name_ar": "مرقة فراخ صافية (ستايل مستشفى، كوب)",
+    "category": "medical",
+    "serving_size_g": 240,
+    "calories": 30,
+    "protein_g": 4,
+    "carbs_g": 1,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "broth",
+      "clear_liquid",
+      "recovery",
+      "surgery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Toast (Dry, 2 slices — BRAT Diet)",
+    "name_ar": "توست جاف (2 شريحة — حمية BRAT)",
+    "category": "medical",
+    "serving_size_g": 50,
+    "calories": 130,
+    "protein_g": 4,
+    "carbs_g": 24,
+    "fat_g": 1.5,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "toast",
+      "brat_diet",
+      "bland",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread-slices.jpg"
+  },
+  {
+    "name_en": "White Rice (Plain, Soft-Cooked — BRAT Diet, 1 cup)",
+    "name_ar": "أرز أبيض سادة طري (حمية BRAT، كوب)",
+    "category": "medical",
+    "serving_size_g": 200,
+    "calories": 200,
+    "protein_g": 4,
+    "carbs_g": 44,
+    "fat_g": 0.5,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "rice",
+      "brat_diet",
+      "bland",
+      "easy_digest",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/white-rice.jpg"
+  },
+  {
+    "name_en": "Banana (Ripe — BRAT Diet, 1 medium)",
+    "name_ar": "موزة مستوية (حمية BRAT، 1 متوسطة)",
+    "category": "medical",
+    "serving_size_g": 120,
+    "calories": 105,
+    "protein_g": 1,
+    "carbs_g": 27,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "banana",
+      "brat_diet",
+      "potassium",
+      "easy_digest"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Applesauce (BRAT Diet, 1/2 cup)",
+    "name_ar": "صوص تفاح (حمية BRAT، نصف كوب)",
+    "category": "medical",
+    "serving_size_g": 120,
+    "calories": 50,
+    "protein_g": 0,
+    "carbs_g": 14,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "applesauce",
+      "brat_diet",
+      "easy_digest"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apple.jpg"
+  },
+  {
+    "name_en": "Ensure / Nutritional Supplement Drink (1 bottle)",
+    "name_ar": "إنشور / مكمل غذائي سائل (زجاجة)",
+    "category": "medical",
+    "serving_size_g": 237,
+    "calories": 250,
+    "protein_g": 9,
+    "carbs_g": 40,
+    "fat_g": 6,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "ensure",
+      "meal_replacement",
+      "recovery",
+      "elderly"
+    ]
+  },
+  {
+    "name_en": "Protein Supplement (Medical, Nepro Style — Kidney)",
+    "name_ar": "مكمل بروتين طبي (ستايل نيبرو — كلى)",
+    "category": "medical",
+    "serving_size_g": 237,
+    "calories": 425,
+    "protein_g": 19,
+    "carbs_g": 42,
+    "fat_g": 23,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "nepro",
+      "kidney",
+      "renal",
+      "protein",
+      "specialized"
+    ]
+  },
+  {
+    "name_en": "Glucerna (Diabetic Supplement Drink, 1 bottle)",
+    "name_ar": "جلوسيرنا (مكمل سكري، زجاجة)",
+    "category": "medical",
+    "serving_size_g": 237,
+    "calories": 200,
+    "protein_g": 10,
+    "carbs_g": 27,
+    "fat_g": 7,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "glucerna",
+      "diabetic",
+      "low_gi",
+      "specialized"
+    ]
+  },
+  {
+    "name_en": "Soft-Boiled Egg (Recovery Meal)",
+    "name_ar": "بيضة نصف مسلوقة (وجبة تعافي)",
+    "category": "medical",
+    "serving_size_g": 50,
+    "calories": 78,
+    "protein_g": 6,
+    "carbs_g": 0.5,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "egg",
+      "soft_boiled",
+      "recovery",
+      "easy_digest"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hard-boiled-egg.jpg"
+  },
+  {
+    "name_en": "Mashed Sweet Potato (Recovery, 1 cup)",
+    "name_ar": "بطاطا حلوة مهروسة (تعافي، كوب)",
+    "category": "medical",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 3,
+    "carbs_g": 42,
+    "fat_g": 0,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "sweet_potato",
+      "mashed",
+      "easy_digest",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Yogurt (Plain, Full Fat — Post-Antibiotics, 1 cup)",
+    "name_ar": "زبادي سادة كامل الدسم (بعد مضادات، كوب)",
+    "category": "medical",
+    "serving_size_g": 200,
+    "calories": 130,
+    "protein_g": 8,
+    "carbs_g": 10,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "yogurt",
+      "probiotics",
+      "gut_health",
+      "antibiotics",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Ginger Tea (Anti-Nausea, 1 cup)",
+    "name_ar": "شاي زنجبيل (ضد الغثيان، كوب)",
+    "category": "medical",
+    "serving_size_g": 240,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "ginger",
+      "anti_nausea",
+      "digestion",
+      "pregnancy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ginger.jpg"
+  },
+  {
+    "name_en": "Peppermint Tea (Digestive, 1 cup)",
+    "name_ar": "شاي نعناع (هضمي، كوب)",
+    "category": "medical",
+    "serving_size_g": 240,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "peppermint",
+      "digestion",
+      "ibs",
+      "bloating"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bell-pepper.jpg"
+  },
+  {
+    "name_en": "Fennel Tea (Digestion, 1 cup)",
+    "name_ar": "شاي شمر (هضمي، كوب)",
+    "category": "medical",
+    "serving_size_g": 240,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "medical",
+      "fennel",
+      "digestion",
+      "bloating",
+      "baby_colic"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Turmeric Golden Milk (Anti-Inflammatory, 1 cup)",
+    "name_ar": "حليب ذهبي بالكركم (مضاد التهاب، كوب)",
+    "category": "medical",
+    "serving_size_g": 250,
+    "calories": 120,
+    "protein_g": 5,
+    "carbs_g": 12,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "turmeric",
+      "golden_milk",
+      "anti_inflammatory",
+      "joints"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turmeric.jpg"
+  },
+  {
+    "name_en": "Oatmeal (Bland, No Toppings — GI Recovery, 1 cup)",
+    "name_ar": "شوفان سادة بدون إضافات (تعافي معوي، كوب)",
+    "category": "medical",
+    "serving_size_g": 250,
+    "calories": 150,
+    "protein_g": 5,
+    "carbs_g": 27,
+    "fat_g": 3,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "oatmeal",
+      "bland",
+      "easy_digest",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oatmeal.jpg"
+  },
+  {
+    "name_en": "Steamed Fish (Plain, Recovery — 150g)",
+    "name_ar": "سمك مطهو على البخار (سادة، تعافي — 150 جرام)",
+    "category": "medical",
+    "serving_size_g": 150,
+    "calories": 160,
+    "protein_g": 32,
+    "carbs_g": 0,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "fish",
+      "steamed",
+      "easy_digest",
+      "protein",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Jello / Gelatin (Clear Liquid Diet, 1 cup)",
+    "name_ar": "جيلي / جيلاتين (حمية سوائل صافية، كوب)",
+    "category": "medical",
+    "serving_size_g": 150,
+    "calories": 80,
+    "protein_g": 2,
+    "carbs_g": 18,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "jello",
+      "clear_liquid",
+      "surgery",
+      "easy_digest"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Electrolyte Water (Sports / Recovery, 500ml)",
+    "name_ar": "ماء إلكتروليت (رياضي / تعافي، 500 مل)",
+    "category": "medical",
+    "serving_size_g": 500,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "medical",
+      "electrolyte",
+      "hydration",
+      "recovery",
+      "sport"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/water.jpg"
+  }
+]

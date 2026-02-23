@@ -1,0 +1,502 @@
+[
+  {
+    "name_en": "Cauliflower Rice (1 cup)",
+    "name_ar": "أرز قرنبيط (كوب)",
+    "category": "healthy_swap",
+    "serving_size_g": 150,
+    "calories": 30,
+    "protein_g": 2,
+    "carbs_g": 5,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "cauliflower_rice",
+      "low_carb",
+      "keto",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cauliflower.jpg"
+  },
+  {
+    "name_en": "Zucchini Noodles (Zoodles, 1 cup)",
+    "name_ar": "نودلز كوسة (كوب)",
+    "category": "healthy_swap",
+    "serving_size_g": 150,
+    "calories": 25,
+    "protein_g": 2,
+    "carbs_g": 5,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "zoodles",
+      "low_carb",
+      "keto",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
+  },
+  {
+    "name_en": "Lettuce Wrap (instead of bread, 4 leaves)",
+    "name_ar": "لفة خس (بدل عيش، 4 ورقات)",
+    "category": "healthy_swap",
+    "serving_size_g": 80,
+    "calories": 12,
+    "protein_g": 1,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "lettuce_wrap",
+      "zero_carb",
+      "keto",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lettuce.jpg"
+  },
+  {
+    "name_en": "Greek Yogurt (instead of sour cream, 100g)",
+    "name_ar": "زبادي يوناني (بدل كريمة حامضة، 100 جرام)",
+    "category": "healthy_swap",
+    "serving_size_g": 100,
+    "calories": 60,
+    "protein_g": 10,
+    "carbs_g": 4,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "greek_yogurt",
+      "protein",
+      "low_fat",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
+  },
+  {
+    "name_en": "Protein Oats (Oats + Whey, no sugar)",
+    "name_ar": "شوفان بروتين (شوفان + واي، بدون سكر)",
+    "category": "healthy_swap",
+    "serving_size_g": 300,
+    "calories": 300,
+    "protein_g": 30,
+    "carbs_g": 35,
+    "fat_g": 5,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "oats",
+      "protein",
+      "breakfast",
+      "bodybuilding"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Air-Fried Chicken (instead of deep fried, 150g)",
+    "name_ar": "فراخ إير فراير (بدل قلي عميق، 150 جرام)",
+    "category": "healthy_swap",
+    "serving_size_g": 150,
+    "calories": 250,
+    "protein_g": 40,
+    "carbs_g": 5,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "air_fryer",
+      "chicken",
+      "low_fat",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Banana Nice Cream (Frozen Banana, 1 cup)",
+    "name_ar": "آيس كريم موز (موز مجمد، كوب)",
+    "category": "healthy_swap",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 2,
+    "carbs_g": 45,
+    "fat_g": 0,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "nice_cream",
+      "banana",
+      "no_sugar",
+      "dessert"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "Avocado Toast (Whole Wheat, 1 slice)",
+    "name_ar": "أفوكادو توست (قمح كامل، شريحة)",
+    "category": "healthy_swap",
+    "serving_size_g": 150,
+    "calories": 230,
+    "protein_g": 6,
+    "carbs_g": 22,
+    "fat_g": 14,
+    "fiber_g": 7,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "avocado_toast",
+      "healthy_fat",
+      "fiber",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  },
+  {
+    "name_en": "Protein Pancakes (3 small, homemade)",
+    "name_ar": "بان كيك بروتين (3 صغار، بيتي)",
+    "category": "healthy_swap",
+    "serving_size_g": 200,
+    "calories": 280,
+    "protein_g": 28,
+    "carbs_g": 28,
+    "fat_g": 6,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "protein_pancakes",
+      "breakfast",
+      "bodybuilding"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cake.jpg"
+  },
+  {
+    "name_en": "Sweet Potato Fries (Baked, 150g)",
+    "name_ar": "بطاطا حلوة مشوية (فرن، 150 جرام)",
+    "category": "healthy_swap",
+    "serving_size_g": 150,
+    "calories": 140,
+    "protein_g": 3,
+    "carbs_g": 32,
+    "fat_g": 1,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "sweet_potato",
+      "baked",
+      "fiber",
+      "low_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Turkey Burger Patty (instead of beef, 1 patty)",
+    "name_ar": "برجر ديك رومي (بدل لحم بقري، 1 قرص)",
+    "category": "healthy_swap",
+    "serving_size_g": 120,
+    "calories": 180,
+    "protein_g": 22,
+    "carbs_g": 2,
+    "fat_g": 10,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "turkey_burger",
+      "low_fat",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turkey-breast.jpg"
+  },
+  {
+    "name_en": "Homemade Granola (1/3 cup)",
+    "name_ar": "جرانولا بيتي (ثلث كوب)",
+    "category": "healthy_swap",
+    "serving_size_g": 40,
+    "calories": 180,
+    "protein_g": 5,
+    "carbs_g": 22,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "granola",
+      "oats",
+      "breakfast",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola.jpg"
+  },
+  {
+    "name_en": "Coconut Flour Pancakes (3 small)",
+    "name_ar": "بان كيك دقيق جوز هند (3 صغار)",
+    "category": "healthy_swap",
+    "serving_size_g": 180,
+    "calories": 250,
+    "protein_g": 12,
+    "carbs_g": 18,
+    "fat_g": 14,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "coconut_flour",
+      "gluten_free",
+      "keto",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Cottage Cheese Bowl with Fruits",
+    "name_ar": "بول جبنة قريش بفواكه",
+    "category": "healthy_swap",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 22,
+    "carbs_g": 20,
+    "fat_g": 3,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "healthy_swap",
+      "areesh",
+      "fruit",
+      "protein",
+      "cutting",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
+  },
+  {
+    "name_en": "Egg Muffins (3 pieces, meal prep)",
+    "name_ar": "مافين بيض (3 قطع، ميل بريب)",
+    "category": "healthy_swap",
+    "serving_size_g": 180,
+    "calories": 240,
+    "protein_g": 18,
+    "carbs_g": 4,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "egg_muffin",
+      "meal_prep",
+      "protein",
+      "quick"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Tuna Rice Cake (2 cakes with tuna)",
+    "name_ar": "كعك أرز بتونة (2 قطعة بتونة)",
+    "category": "healthy_swap",
+    "serving_size_g": 150,
+    "calories": 180,
+    "protein_g": 18,
+    "carbs_g": 16,
+    "fat_g": 4,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "rice_cake",
+      "tuna",
+      "snack",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/canned-tuna.jpg"
+  },
+  {
+    "name_en": "Baked Falafel (5 pieces, oven)",
+    "name_ar": "فلافل مشوية بالفرن (5 أقراص)",
+    "category": "healthy_swap",
+    "serving_size_g": 150,
+    "calories": 250,
+    "protein_g": 12,
+    "carbs_g": 30,
+    "fat_g": 8,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "healthy_swap",
+      "baked_falafel",
+      "no_fry",
+      "fiber",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  },
+  {
+    "name_en": "Protein Ice Cream (1 serving, Halo Top Style)",
+    "name_ar": "آيس كريم بروتين (حصة، ستايل هالو توب)",
+    "category": "healthy_swap",
+    "serving_size_g": 125,
+    "calories": 150,
+    "protein_g": 10,
+    "carbs_g": 22,
+    "fat_g": 3,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "protein_ice_cream",
+      "low_calorie",
+      "dessert",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "Whole Wheat Wrap (1 large)",
+    "name_ar": "راب قمح كامل (1 كبير)",
+    "category": "healthy_swap",
+    "serving_size_g": 60,
+    "calories": 130,
+    "protein_g": 5,
+    "carbs_g": 22,
+    "fat_g": 3,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "whole_wheat",
+      "wrap",
+      "fiber",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flour-tortilla.jpg"
+  },
+  {
+    "name_en": "Shirataki Noodles (1 pack, 200g)",
+    "name_ar": "نودلز شيراتاكي (عبوة 200 جرام)",
+    "category": "healthy_swap",
+    "serving_size_g": 200,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 3,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "shirataki",
+      "zero_calorie",
+      "noodle",
+      "keto"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/noodles.jpg"
+  },
+  {
+    "name_en": "Sparkling Water with Lemon (instead of soda)",
+    "name_ar": "مياه فوارة بليمون (بدل المياه الغازية)",
+    "category": "healthy_swap",
+    "serving_size_g": 330,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "sparkling_water",
+      "zero_calorie",
+      "hydration"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  },
+  {
+    "name_en": "Sugar-Free Jello (1 cup)",
+    "name_ar": "جيلي بدون سكر (كوب)",
+    "category": "healthy_swap",
+    "serving_size_g": 150,
+    "calories": 10,
+    "protein_g": 1,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "jello",
+      "zero_calorie",
+      "dessert",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Frozen Yogurt (1/2 cup, plain)",
+    "name_ar": "فروزن يوجرت (نصف كوب، سادة)",
+    "category": "healthy_swap",
+    "serving_size_g": 100,
+    "calories": 110,
+    "protein_g": 3,
+    "carbs_g": 22,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "frozen_yogurt",
+      "low_fat",
+      "dessert"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Energy Balls (Dates + Oats + PB, 3 pieces)",
+    "name_ar": "كرات طاقة (تمر + شوفان + زبدة فول سوداني، 3 حبات)",
+    "category": "healthy_swap",
+    "serving_size_g": 60,
+    "calories": 200,
+    "protein_g": 5,
+    "carbs_g": 28,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "energy_balls",
+      "dates",
+      "snack",
+      "pre_workout",
+      "no_bake"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/dates.jpg"
+  },
+  {
+    "name_en": "Chia Pudding (1 cup)",
+    "name_ar": "بودنج شيا (كوب)",
+    "category": "healthy_swap",
+    "serving_size_g": 200,
+    "calories": 220,
+    "protein_g": 8,
+    "carbs_g": 22,
+    "fat_g": 12,
+    "fiber_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "healthy_swap",
+      "chia_pudding",
+      "fiber",
+      "omega3",
+      "breakfast",
+      "no_cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chia-seeds.jpg"
+  }
+]

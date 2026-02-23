@@ -1,0 +1,522 @@
+[
+  {
+    "name_en": "Meal Prep — Chicken Breast + Brown Rice + Broccoli",
+    "name_ar": "ميل بريب — صدر فرخة + أرز بني + بروكلي",
+    "category": "meal_prep",
+    "serving_size_g": 450,
+    "calories": 480,
+    "protein_g": 45,
+    "carbs_g": 50,
+    "fat_g": 8,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "chicken",
+      "brown_rice",
+      "broccoli",
+      "bodybuilding_staple",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Chicken Breast + White Rice + Salad",
+    "name_ar": "ميل بريب — صدر فرخة + أرز أبيض + سلطة",
+    "category": "meal_prep",
+    "serving_size_g": 450,
+    "calories": 500,
+    "protein_g": 45,
+    "carbs_g": 55,
+    "fat_g": 8,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "chicken",
+      "white_rice",
+      "bodybuilding_staple",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Tilapia + Sweet Potato + Green Beans",
+    "name_ar": "ميل بريب — بلطي + بطاطا حلوة + فاصوليا خضرا",
+    "category": "meal_prep",
+    "serving_size_g": 450,
+    "calories": 420,
+    "protein_g": 42,
+    "carbs_g": 48,
+    "fat_g": 6,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "fish",
+      "sweet_potato",
+      "cutting",
+      "clean",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Ground Beef + Rice + Peas",
+    "name_ar": "ميل بريب — لحم مفروم + أرز + بسلة",
+    "category": "meal_prep",
+    "serving_size_g": 450,
+    "calories": 550,
+    "protein_g": 38,
+    "carbs_g": 55,
+    "fat_g": 18,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "beef",
+      "rice",
+      "peas",
+      "bulking",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Tuna Salad Bowl (Canned Tuna + Veggies)",
+    "name_ar": "ميل بريب — سلطة تونة (تونة معلبة + خضار)",
+    "category": "meal_prep",
+    "serving_size_g": 350,
+    "calories": 280,
+    "protein_g": 30,
+    "carbs_g": 15,
+    "fat_g": 12,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "tuna",
+      "salad",
+      "cutting",
+      "low_carb",
+      "quick"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/canned-tuna.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Salmon + Quinoa + Asparagus",
+    "name_ar": "ميل بريب — سالمون + كينوا + أسباراجوس",
+    "category": "meal_prep",
+    "serving_size_g": 450,
+    "calories": 520,
+    "protein_g": 40,
+    "carbs_g": 42,
+    "fat_g": 18,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "salmon",
+      "quinoa",
+      "omega3",
+      "premium",
+      "clean"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/asparagus.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Steak + Rice + Mixed Vegetables",
+    "name_ar": "ميل بريب — ستيك + أرز + خضار مشكل",
+    "category": "meal_prep",
+    "serving_size_g": 500,
+    "calories": 620,
+    "protein_g": 48,
+    "carbs_g": 55,
+    "fat_g": 22,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "steak",
+      "rice",
+      "bulking",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-steak.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Eggs (4) + Oats + Banana (Breakfast)",
+    "name_ar": "ميل بريب فطار — 4 بيض + شوفان + موز",
+    "category": "meal_prep",
+    "serving_size_g": 450,
+    "calories": 550,
+    "protein_g": 30,
+    "carbs_g": 60,
+    "fat_g": 20,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "eggs",
+      "oats",
+      "banana",
+      "breakfast",
+      "bulking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Chicken Thigh + Pasta + Sauce",
+    "name_ar": "ميل بريب — ورك فرخة + مكرونة + صلصة",
+    "category": "meal_prep",
+    "serving_size_g": 450,
+    "calories": 580,
+    "protein_g": 35,
+    "carbs_g": 55,
+    "fat_g": 22,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "chicken_thigh",
+      "pasta",
+      "bulking",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-thighs.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Turkey Meatballs + Zucchini Noodles",
+    "name_ar": "ميل بريب — كرات ديك رومي + كوسة نودلز",
+    "category": "meal_prep",
+    "serving_size_g": 400,
+    "calories": 320,
+    "protein_g": 35,
+    "carbs_g": 12,
+    "fat_g": 14,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "turkey",
+      "zucchini",
+      "low_carb",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
+  },
+  {
+    "name_en": "Bulking Shake — Oats + Banana + Whey + PB + Milk",
+    "name_ar": "شيك تضخيم — شوفان + موز + واي + زبدة فول سوداني + لبن",
+    "category": "meal_prep",
+    "serving_size_g": 500,
+    "calories": 700,
+    "protein_g": 45,
+    "carbs_g": 75,
+    "fat_g": 22,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "shake",
+      "bulking",
+      "hardgainer",
+      "mass",
+      "high_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Cutting Snack — Greek Yogurt + Berries",
+    "name_ar": "سناك كتنج — زبادي يوناني + توت",
+    "category": "meal_prep",
+    "serving_size_g": 250,
+    "calories": 180,
+    "protein_g": 18,
+    "carbs_g": 20,
+    "fat_g": 3,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "snack",
+      "greek_yogurt",
+      "berries",
+      "cutting",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
+  },
+  {
+    "name_en": "Pre-Workout Meal — Rice Cakes + Banana + Honey",
+    "name_ar": "أكل قبل التمرين — كعك أرز + موز + عسل",
+    "category": "meal_prep",
+    "serving_size_g": 200,
+    "calories": 280,
+    "protein_g": 4,
+    "carbs_g": 65,
+    "fat_g": 1,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "pre_workout",
+      "quick_carbs",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Post-Workout Meal — Whey + Banana + Dates",
+    "name_ar": "أكل بعد التمرين — واي + موز + تمر",
+    "category": "meal_prep",
+    "serving_size_g": 250,
+    "calories": 350,
+    "protein_g": 28,
+    "carbs_g": 55,
+    "fat_g": 2,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "post_workout",
+      "whey",
+      "fast_carbs",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Egyptian Bodybuilder — Foul + 4 Eggs + Bread (Breakfast)",
+    "name_ar": "فطار بيلدر مصري — فول + 4 بيض + عيش",
+    "category": "meal_prep",
+    "serving_size_g": 500,
+    "calories": 650,
+    "protein_g": 38,
+    "carbs_g": 65,
+    "fat_g": 25,
+    "fiber_g": 12,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "breakfast",
+      "foul",
+      "eggs",
+      "bulking",
+      "egyptian",
+      "cheap"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Egyptian Bodybuilder — Chicken + Rice + Molokhia",
+    "name_ar": "وجبة بيلدر مصري — فراخ + أرز + ملوخية",
+    "category": "meal_prep",
+    "serving_size_g": 600,
+    "calories": 650,
+    "protein_g": 48,
+    "carbs_g": 65,
+    "fat_g": 18,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "chicken",
+      "rice",
+      "molokhia",
+      "bulking",
+      "egyptian",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "Egyptian Bodybuilder — Kofta + Rice + Tahini + Salad",
+    "name_ar": "وجبة بيلدر مصري — كفتة + أرز + طحينة + سلطة",
+    "category": "meal_prep",
+    "serving_size_g": 600,
+    "calories": 720,
+    "protein_g": 40,
+    "carbs_g": 65,
+    "fat_g": 32,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "kofta",
+      "rice",
+      "tahini",
+      "bulking",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Budget Bulk — Koshari Double Portion",
+    "name_ar": "تضخيم رخيص — كشري حصة دبل",
+    "category": "meal_prep",
+    "serving_size_g": 600,
+    "calories": 850,
+    "protein_g": 24,
+    "carbs_g": 135,
+    "fat_g": 18,
+    "fiber_g": 12,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "koshari",
+      "bulking",
+      "cheap",
+      "high_carb",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Budget Bulk — Foul + Rice + Bread + Eggs",
+    "name_ar": "تضخيم رخيص — فول + أرز + عيش + بيض",
+    "category": "meal_prep",
+    "serving_size_g": 600,
+    "calories": 750,
+    "protein_g": 32,
+    "carbs_g": 95,
+    "fat_g": 22,
+    "fiber_g": 14,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "foul",
+      "rice",
+      "eggs",
+      "bulking",
+      "cheap",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Cutting Meal — Grilled Chicken Salad Bowl",
+    "name_ar": "وجبة كتنج — بول سلطة فراخ مشوية",
+    "category": "meal_prep",
+    "serving_size_g": 400,
+    "calories": 320,
+    "protein_g": 38,
+    "carbs_g": 15,
+    "fat_g": 12,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "chicken",
+      "salad",
+      "cutting",
+      "low_carb",
+      "high_protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Cutting Meal — Egg White Omelette + Spinach + Toast",
+    "name_ar": "وجبة كتنج — أومليت بياض بيض + سبانخ + توست",
+    "category": "meal_prep",
+    "serving_size_g": 300,
+    "calories": 220,
+    "protein_g": 22,
+    "carbs_g": 24,
+    "fat_g": 4,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "egg_white",
+      "spinach",
+      "cutting",
+      "breakfast",
+      "low_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg-white.jpg"
+  },
+  {
+    "name_en": "Night Snack — Cottage Cheese + Almonds",
+    "name_ar": "سناك ليلي — جبنة قريش + لوز",
+    "category": "meal_prep",
+    "serving_size_g": 200,
+    "calories": 250,
+    "protein_g": 24,
+    "carbs_g": 8,
+    "fat_g": 14,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "snack",
+      "night",
+      "casein",
+      "areesh",
+      "almonds",
+      "slow_release"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
+  },
+  {
+    "name_en": "Intra-Workout — BCAA + Dextrose Drink",
+    "name_ar": "أثناء التمرين — BCAA + دكستروز",
+    "category": "supplement_meal",
+    "serving_size_g": 400,
+    "calories": 100,
+    "protein_g": 5,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "intra_workout",
+      "bcaa",
+      "carbs",
+      "endurance"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Overnight Oats — PB + Banana + Whey",
+    "name_ar": "شوفان ليلي — زبدة فول سوداني + موز + واي",
+    "category": "meal_prep",
+    "serving_size_g": 350,
+    "calories": 450,
+    "protein_g": 32,
+    "carbs_g": 48,
+    "fat_g": 14,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "meal_prep",
+      "overnight_oats",
+      "breakfast",
+      "protein",
+      "no_cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Meal Prep — Chicken Shawarma Bowl + Hummus + Rice",
+    "name_ar": "ميل بريب — بول شاورما فراخ + حمص + أرز",
+    "category": "meal_prep",
+    "serving_size_g": 500,
+    "calories": 600,
+    "protein_g": 40,
+    "carbs_g": 55,
+    "fat_g": 22,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "meal_prep",
+      "shawarma",
+      "hummus",
+      "rice",
+      "bulking",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  }
+]

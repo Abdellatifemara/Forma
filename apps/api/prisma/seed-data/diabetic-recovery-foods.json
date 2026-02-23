@@ -1,0 +1,611 @@
+[
+  {
+    "name_en": "Oatmeal (Cooked, plain, 200g)",
+    "name_ar": "شوفان مطبوخ (سادة، 200 جرام)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 200,
+    "calories": 150,
+    "protein_g": 5,
+    "carbs_g": 27,
+    "fat_g": 3,
+    "fiber_g": 4,
+    "glycemic_index": "low",
+    "is_egyptian": false,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "breakfast",
+      "fiber",
+      "heart_healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oatmeal.jpg"
+  },
+  {
+    "name_en": "Molokhia Soup (No rice)",
+    "name_ar": "ملوخية (بدون أرز)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 250,
+    "calories": 80,
+    "protein_g": 4,
+    "carbs_g": 8,
+    "fat_g": 3,
+    "fiber_g": 5,
+    "glycemic_index": "low",
+    "is_egyptian": true,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "egyptian",
+      "soup",
+      "low_calorie",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "Lentil Soup (Egyptian, no bread)",
+    "name_ar": "شوربة عدس (بدون عيش)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 300,
+    "calories": 180,
+    "protein_g": 12,
+    "carbs_g": 28,
+    "fat_g": 3,
+    "fiber_g": 8,
+    "glycemic_index": "low",
+    "is_egyptian": true,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "soup",
+      "protein",
+      "fiber",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Grilled Chicken Breast with Salad",
+    "name_ar": "صدر فراخ مشوي مع سلطة",
+    "category": "diabetic_friendly",
+    "serving_size_g": 350,
+    "calories": 280,
+    "protein_g": 42,
+    "carbs_g": 8,
+    "fat_g": 10,
+    "fiber_g": 3,
+    "glycemic_index": "low",
+    "is_egyptian": true,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "high_protein",
+      "low_carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Bamia (Okra Stew, no rice)",
+    "name_ar": "بامية (بدون أرز)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 250,
+    "calories": 120,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 5,
+    "fiber_g": 4,
+    "glycemic_index": "low",
+    "is_egyptian": true,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "egyptian",
+      "stew",
+      "vegetables"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/okra.jpg"
+  },
+  {
+    "name_en": "Gibna Areesh with Tomato & Cucumber",
+    "name_ar": "قريش مع طماطم وخيار",
+    "category": "diabetic_friendly",
+    "serving_size_g": 200,
+    "calories": 110,
+    "protein_g": 16,
+    "carbs_g": 5,
+    "fat_g": 3,
+    "fiber_g": 1,
+    "glycemic_index": "low",
+    "is_egyptian": true,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "high_protein",
+      "cheese",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cucumber.jpg"
+  },
+  {
+    "name_en": "Sweet Potato (Baked, 150g)",
+    "name_ar": "بطاطا حلوة مشوية (150 جرام)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 150,
+    "calories": 135,
+    "protein_g": 3,
+    "carbs_g": 31,
+    "fat_g": 0,
+    "fiber_g": 5,
+    "glycemic_index": "medium",
+    "is_egyptian": true,
+    "tags": [
+      "diabetic",
+      "medium_gi",
+      "carbs",
+      "fiber",
+      "vitamin_a"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Cauliflower Rice (Egyptian style, 200g)",
+    "name_ar": "أرز قرنبيط (طريقة مصرية، 200 جرام)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 200,
+    "calories": 50,
+    "protein_g": 4,
+    "carbs_g": 8,
+    "fat_g": 1,
+    "fiber_g": 4,
+    "glycemic_index": "low",
+    "is_egyptian": true,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "low_carb",
+      "rice_alternative",
+      "keto"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cauliflower.jpg"
+  },
+  {
+    "name_en": "Foul Medames (Small portion, no bread)",
+    "name_ar": "فول مدمس (حصة صغيرة، بدون عيش)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 150,
+    "calories": 150,
+    "protein_g": 10,
+    "carbs_g": 22,
+    "fat_g": 3,
+    "fiber_g": 7,
+    "glycemic_index": "low",
+    "is_egyptian": true,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "fiber",
+      "protein",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Mixed Nuts (Unsalted, 30g)",
+    "name_ar": "مكسرات مشكلة (بدون ملح، 30 جرام)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 30,
+    "calories": 175,
+    "protein_g": 5,
+    "carbs_g": 6,
+    "fat_g": 16,
+    "fiber_g": 2,
+    "glycemic_index": "low",
+    "is_egyptian": false,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "healthy_fat",
+      "snack",
+      "omega3"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salt.jpg"
+  },
+  {
+    "name_en": "Avocado (Half)",
+    "name_ar": "أفوكادو (نصف حبة)",
+    "category": "diabetic_friendly",
+    "serving_size_g": 100,
+    "calories": 160,
+    "protein_g": 2,
+    "carbs_g": 9,
+    "fat_g": 15,
+    "fiber_g": 7,
+    "glycemic_index": "low",
+    "is_egyptian": false,
+    "tags": [
+      "diabetic",
+      "low_gi",
+      "healthy_fat",
+      "fiber",
+      "potassium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  },
+  {
+    "name_en": "Chicken Bone Broth (Recovery)",
+    "name_ar": "شوربة عظام فراخ (للتعافي)",
+    "category": "recovery",
+    "serving_size_g": 250,
+    "calories": 40,
+    "protein_g": 6,
+    "carbs_g": 2,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "hospital",
+      "collagen",
+      "gut_health",
+      "immune"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Rice Pudding (Hospital Style, plain)",
+    "name_ar": "أرز باللبن (بسيط، مستشفى)",
+    "category": "recovery",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "hospital",
+      "bland",
+      "easy_digest",
+      "comfort"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Toast with Jam (Sick Day)",
+    "name_ar": "توست بالمربى (أيام المرض)",
+    "category": "recovery",
+    "serving_size_g": 60,
+    "calories": 170,
+    "protein_g": 3,
+    "carbs_g": 35,
+    "fat_g": 2,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "hospital",
+      "bland",
+      "easy_digest",
+      "quick"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread-slices.jpg"
+  },
+  {
+    "name_en": "Chicken Soup (Egyptian Hospital Style)",
+    "name_ar": "شوربة فراخ (طريقة المستشفى)",
+    "category": "recovery",
+    "serving_size_g": 300,
+    "calories": 120,
+    "protein_g": 12,
+    "carbs_g": 10,
+    "fat_g": 4,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "hospital",
+      "soup",
+      "immune",
+      "comfort",
+      "sick"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Mashed Potatoes (Plain)",
+    "name_ar": "بطاطس مهروسة (سادة)",
+    "category": "recovery",
+    "serving_size_g": 200,
+    "calories": 160,
+    "protein_g": 3,
+    "carbs_g": 34,
+    "fat_g": 2,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "hospital",
+      "bland",
+      "easy_digest",
+      "comfort"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potatoes.jpg"
+  },
+  {
+    "name_en": "Banana (Recovery Snack)",
+    "name_ar": "موزة (سناك للتعافي)",
+    "category": "recovery",
+    "serving_size_g": 120,
+    "calories": 105,
+    "protein_g": 1,
+    "carbs_g": 27,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "fruit",
+      "potassium",
+      "easy_digest",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Steamed Rice (Bland, 150g)",
+    "name_ar": "أرز مسلوق (سادة، 150 جرام)",
+    "category": "recovery",
+    "serving_size_g": 150,
+    "calories": 195,
+    "protein_g": 4,
+    "carbs_g": 42,
+    "fat_g": 0.5,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "hospital",
+      "bland",
+      "brat_diet",
+      "easy_digest"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Ginger Tea (Zingebil)",
+    "name_ar": "شاي زنجبيل",
+    "category": "recovery",
+    "serving_size_g": 250,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "tea",
+      "nausea",
+      "immune",
+      "anti_inflammatory"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ginger.jpg"
+  },
+  {
+    "name_en": "Chamomile Tea (Babounej)",
+    "name_ar": "شاي بابونج",
+    "category": "recovery",
+    "serving_size_g": 250,
+    "calories": 2,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "tea",
+      "sleep",
+      "relaxation",
+      "stomach"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Anise Tea (Yansoon)",
+    "name_ar": "ينسون",
+    "category": "recovery",
+    "serving_size_g": 250,
+    "calories": 7,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "tea",
+      "digestion",
+      "stomach",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Caraway Tea (Karawya)",
+    "name_ar": "كراوية",
+    "category": "recovery",
+    "serving_size_g": 250,
+    "calories": 8,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "tea",
+      "digestion",
+      "new_mother",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Helba (Fenugreek) Drink",
+    "name_ar": "حلبة",
+    "category": "recovery",
+    "serving_size_g": 250,
+    "calories": 35,
+    "protein_g": 2,
+    "carbs_g": 6,
+    "fat_g": 1,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "traditional",
+      "new_mother",
+      "appetite",
+      "blood_sugar"
+    ]
+  },
+  {
+    "name_en": "Oral Rehydration Solution (ORS)",
+    "name_ar": "محلول معالجة الجفاف",
+    "category": "recovery",
+    "serving_size_g": 250,
+    "calories": 18,
+    "protein_g": 0,
+    "carbs_g": 4.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "dehydration",
+      "hospital",
+      "electrolytes",
+      "essential"
+    ]
+  },
+  {
+    "name_en": "Jello / Gelatin (Plain)",
+    "name_ar": "جيلي (سادة)",
+    "category": "recovery",
+    "serving_size_g": 120,
+    "calories": 80,
+    "protein_g": 2,
+    "carbs_g": 19,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "hospital",
+      "easy_digest",
+      "liquid_diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Scrambled Eggs (Soft, 2 eggs)",
+    "name_ar": "بيض مخفوق (ناعم، بيضتين)",
+    "category": "recovery",
+    "serving_size_g": 120,
+    "calories": 180,
+    "protein_g": 13,
+    "carbs_g": 2,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "protein",
+      "easy_digest",
+      "soft",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Apple Sauce (Plain, 100g)",
+    "name_ar": "صلصة تفاح (سادة، 100 جرام)",
+    "category": "recovery",
+    "serving_size_g": 100,
+    "calories": 70,
+    "protein_g": 0,
+    "carbs_g": 18,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "brat_diet",
+      "fruit",
+      "easy_digest",
+      "bland"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apple.jpg"
+  },
+  {
+    "name_en": "Yogurt (Plain, for stomach recovery)",
+    "name_ar": "زبادي سادة (لراحة المعدة)",
+    "category": "recovery",
+    "serving_size_g": 150,
+    "calories": 90,
+    "protein_g": 5,
+    "carbs_g": 10,
+    "fat_g": 3.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "probiotics",
+      "gut_health",
+      "stomach",
+      "bland"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Boiled Potato (Plain, recovery)",
+    "name_ar": "بطاطس مسلوقة (سادة، للتعافي)",
+    "category": "recovery",
+    "serving_size_g": 150,
+    "calories": 130,
+    "protein_g": 3,
+    "carbs_g": 30,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "recovery",
+      "bland",
+      "brat_diet",
+      "carbs",
+      "easy_digest"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potatoes.jpg"
+  },
+  {
+    "name_en": "Moghat (Post-birth Recovery Drink)",
+    "name_ar": "مغات (مشروب بعد الولادة)",
+    "category": "recovery",
+    "serving_size_g": 250,
+    "calories": 180,
+    "protein_g": 3,
+    "carbs_g": 28,
+    "fat_g": 7,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "recovery",
+      "traditional",
+      "new_mother",
+      "post_birth",
+      "energy"
+    ]
+  }
+]

@@ -1,0 +1,520 @@
+[
+  {
+    "name_en": "Folate-Rich Lentil Bowl (Pregnancy, 1 plate)",
+    "name_ar": "طبق عدس غني بحمض الفوليك (حمل، طبق)",
+    "category": "pregnancy",
+    "serving_size_g": 350,
+    "calories": 300,
+    "protein_g": 18,
+    "carbs_g": 48,
+    "fat_g": 4,
+    "fiber_g": 12,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "lentils",
+      "folate",
+      "iron",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Spinach & Cheese Omelette (Pregnancy Iron Boost)",
+    "name_ar": "أومليت سبانخ وجبنة (زيادة حديد حمل)",
+    "category": "pregnancy",
+    "serving_size_g": 250,
+    "calories": 280,
+    "protein_g": 18,
+    "carbs_g": 4,
+    "fat_g": 20,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "spinach",
+      "iron",
+      "eggs",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Chicken Liver with Rice (Iron-Rich, Pregnancy Safe)",
+    "name_ar": "كبدة فراخ بالأرز (غنية بالحديد، آمنة للحمل)",
+    "category": "pregnancy",
+    "serving_size_g": 350,
+    "calories": 420,
+    "protein_g": 32,
+    "carbs_g": 45,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "liver",
+      "iron",
+      "vitamin_a",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-livers.jpg"
+  },
+  {
+    "name_en": "Banana & Date Smoothie (Calcium + Energy)",
+    "name_ar": "سموذي موز وتمر (كالسيوم + طاقة)",
+    "category": "pregnancy",
+    "serving_size_g": 350,
+    "calories": 320,
+    "protein_g": 10,
+    "carbs_g": 60,
+    "fat_g": 5,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "smoothie",
+      "banana",
+      "dates",
+      "calcium",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Yogurt with Honey & Almonds (Pregnancy Snack)",
+    "name_ar": "زبادي بعسل ولوز (سناك حمل)",
+    "category": "pregnancy",
+    "serving_size_g": 200,
+    "calories": 220,
+    "protein_g": 10,
+    "carbs_g": 28,
+    "fat_g": 8,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "yogurt",
+      "honey",
+      "almonds",
+      "calcium",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Salmon & Avocado Plate (DHA + Omega-3)",
+    "name_ar": "طبق سالمون وأفوكادو (DHA + أوميجا 3)",
+    "category": "pregnancy",
+    "serving_size_g": 300,
+    "calories": 450,
+    "protein_g": 30,
+    "carbs_g": 12,
+    "fat_g": 32,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "salmon",
+      "avocado",
+      "dha",
+      "omega3",
+      "brain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  },
+  {
+    "name_en": "Breastfeeding Oats Bowl (Galactagogue)",
+    "name_ar": "طبق شوفان للرضاعة (محفز للحليب)",
+    "category": "breastfeeding",
+    "serving_size_g": 350,
+    "calories": 380,
+    "protein_g": 12,
+    "carbs_g": 55,
+    "fat_g": 12,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "breastfeeding",
+      "oats",
+      "galactagogue",
+      "lactation",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oats.jpg"
+  },
+  {
+    "name_en": "Helba (Fenugreek) Milk Booster Drink",
+    "name_ar": "حلبة لزيادة اللبن (رضاعة)",
+    "category": "breastfeeding",
+    "serving_size_g": 250,
+    "calories": 60,
+    "protein_g": 3,
+    "carbs_g": 8,
+    "fat_g": 2,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "breastfeeding",
+      "helba",
+      "fenugreek",
+      "lactation",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Moghat Drink (Postpartum Egyptian, 1 cup)",
+    "name_ar": "مغات (ما بعد الولادة، كوب)",
+    "category": "breastfeeding",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 3,
+    "carbs_g": 30,
+    "fat_g": 8,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "breastfeeding",
+      "moghat",
+      "postpartum",
+      "traditional",
+      "energy",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Sardines on Toast (Calcium + DHA)",
+    "name_ar": "سردين على توست (كالسيوم + DHA)",
+    "category": "pregnancy",
+    "serving_size_g": 200,
+    "calories": 300,
+    "protein_g": 22,
+    "carbs_g": 26,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "sardines",
+      "calcium",
+      "omega3",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sardines.jpg"
+  },
+  {
+    "name_en": "Sweet Potato & Chickpea Bowl (Pregnancy Fiber)",
+    "name_ar": "بول بطاطا حلوة وحمص (ألياف حمل)",
+    "category": "pregnancy",
+    "serving_size_g": 350,
+    "calories": 380,
+    "protein_g": 12,
+    "carbs_g": 62,
+    "fat_g": 8,
+    "fiber_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "sweet_potato",
+      "chickpeas",
+      "fiber",
+      "folate"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Full Cream Milk with Honey (Breastfeeding, 1 cup)",
+    "name_ar": "لبن كامل الدسم بعسل (رضاعة، كوب)",
+    "category": "breastfeeding",
+    "serving_size_g": 260,
+    "calories": 210,
+    "protein_g": 8,
+    "carbs_g": 28,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "breastfeeding",
+      "milk",
+      "honey",
+      "calcium",
+      "calories",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Boiled Eggs & Avocado on Toast (Pregnancy Breakfast)",
+    "name_ar": "بيض مسلوق وأفوكادو على توست (فطار حمل)",
+    "category": "pregnancy",
+    "serving_size_g": 250,
+    "calories": 380,
+    "protein_g": 18,
+    "carbs_g": 24,
+    "fat_g": 24,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "eggs",
+      "avocado",
+      "toast",
+      "choline",
+      "healthy_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hard-boiled-egg.jpg"
+  },
+  {
+    "name_en": "Grilled Chicken & Quinoa Salad (Pregnancy Lunch)",
+    "name_ar": "سلطة فراخ مشوية وكينوا (غداء حمل)",
+    "category": "pregnancy",
+    "serving_size_g": 400,
+    "calories": 420,
+    "protein_g": 35,
+    "carbs_g": 38,
+    "fat_g": 14,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "chicken",
+      "quinoa",
+      "protein",
+      "balanced"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Ginger Biscuits (Anti-Nausea, 4 pieces)",
+    "name_ar": "بسكويت زنجبيل (ضد الغثيان، 4 قطع)",
+    "category": "pregnancy",
+    "serving_size_g": 40,
+    "calories": 160,
+    "protein_g": 2,
+    "carbs_g": 28,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "ginger",
+      "nausea",
+      "morning_sickness",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Gibna Areesh with Tomato (Light Pregnancy Snack)",
+    "name_ar": "جبنة قريش بطماطم (سناك خفيف حمل)",
+    "category": "pregnancy",
+    "serving_size_g": 200,
+    "calories": 130,
+    "protein_g": 18,
+    "carbs_g": 6,
+    "fat_g": 4,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "areesh",
+      "cottage_cheese",
+      "protein",
+      "calcium",
+      "light",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
+  },
+  {
+    "name_en": "Iron-Rich Beef Stew (Pregnancy, 1 plate)",
+    "name_ar": "يخنة لحم غنية بالحديد (حمل، طبق)",
+    "category": "pregnancy",
+    "serving_size_g": 400,
+    "calories": 450,
+    "protein_g": 32,
+    "carbs_g": 30,
+    "fat_g": 22,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "beef_stew",
+      "iron",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Lactation Cookie (Oat + Flax, 2 cookies)",
+    "name_ar": "كوكيز رضاعة (شوفان + كتان، 2 حبة)",
+    "category": "breastfeeding",
+    "serving_size_g": 60,
+    "calories": 220,
+    "protein_g": 4,
+    "carbs_g": 30,
+    "fat_g": 10,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "breastfeeding",
+      "lactation_cookie",
+      "oats",
+      "flaxseed",
+      "galactagogue"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Bone Broth Soup (Pregnancy Recovery, 1 cup)",
+    "name_ar": "شوربة مرقة عظام (تعافي حمل، كوب)",
+    "category": "pregnancy",
+    "serving_size_g": 240,
+    "calories": 40,
+    "protein_g": 8,
+    "carbs_g": 0,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "bone_broth",
+      "collagen",
+      "recovery",
+      "minerals"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
+  },
+  {
+    "name_en": "Egyptian Molasses & Tahini Snack (Iron Boost)",
+    "name_ar": "عسل أسود بطحينة (زيادة حديد)",
+    "category": "pregnancy",
+    "serving_size_g": 40,
+    "calories": 180,
+    "protein_g": 3,
+    "carbs_g": 25,
+    "fat_g": 8,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "pregnancy",
+      "molasses",
+      "tahini",
+      "iron",
+      "traditional",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Fruit & Nut Mix (Pregnancy Energy Snack, 40g)",
+    "name_ar": "خليط فواكه مجففة ومكسرات (سناك طاقة حمل، 40 جرام)",
+    "category": "pregnancy",
+    "serving_size_g": 40,
+    "calories": 190,
+    "protein_g": 5,
+    "carbs_g": 20,
+    "fat_g": 10,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "trail_mix",
+      "energy",
+      "snack",
+      "iron",
+      "vitamins"
+    ]
+  },
+  {
+    "name_en": "Overnight Oats with Seeds (Pregnancy Breakfast)",
+    "name_ar": "شوفان ليلي ببذور (فطار حمل)",
+    "category": "pregnancy",
+    "serving_size_g": 300,
+    "calories": 350,
+    "protein_g": 12,
+    "carbs_g": 48,
+    "fat_g": 12,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "overnight_oats",
+      "chia",
+      "flax",
+      "omega3",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oats.jpg"
+  },
+  {
+    "name_en": "Greek Yogurt with Granola & Berries (Pregnancy Snack)",
+    "name_ar": "زبادي يوناني بجرانولا وتوت (سناك حمل)",
+    "category": "pregnancy",
+    "serving_size_g": 250,
+    "calories": 280,
+    "protein_g": 15,
+    "carbs_g": 35,
+    "fat_g": 8,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "greek_yogurt",
+      "granola",
+      "berries",
+      "calcium",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
+  },
+  {
+    "name_en": "Steamed Broccoli & Chicken (DHA-Safe Meal)",
+    "name_ar": "بروكلي وفراخ مسلوقة (وجبة آمنة DHA)",
+    "category": "pregnancy",
+    "serving_size_g": 350,
+    "calories": 300,
+    "protein_g": 38,
+    "carbs_g": 10,
+    "fat_g": 12,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "pregnancy",
+      "broccoli",
+      "chicken",
+      "folate",
+      "protein",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Molokhia with Chicken (Breastfeeding Meal)",
+    "name_ar": "ملوخية بالفراخ (وجبة رضاعة)",
+    "category": "breastfeeding",
+    "serving_size_g": 500,
+    "calories": 500,
+    "protein_g": 35,
+    "carbs_g": 45,
+    "fat_g": 18,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "breastfeeding",
+      "molokhia",
+      "chicken",
+      "iron",
+      "calories",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  }
+]

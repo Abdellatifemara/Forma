@@ -13,9 +13,15 @@
     "fiber_g": 10,
     "ingredients": "Fava beans, water, salt, cumin",
     "is_egyptian": true,
-    "available_at": ["Gad", "Street Vendors", "Home", "Zooba"],
+    "available_at": [
+      "Gad",
+      "Street Vendors",
+      "Home",
+      "Zooba"
+    ],
     "price_egp_min": 15,
-    "price_egp_max": 35
+    "price_egp_max": 35,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
   },
   {
     "id": "EGY0002",
@@ -31,9 +37,14 @@
     "fiber_g": 10,
     "ingredients": "Fava beans, vegetable oil, lemon, cumin, salt",
     "is_egyptian": true,
-    "available_at": ["Gad", "Street Vendors", "Home"],
+    "available_at": [
+      "Gad",
+      "Street Vendors",
+      "Home"
+    ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
   },
   {
     "id": "EGY0003",
@@ -49,9 +60,14 @@
     "fiber_g": 11,
     "ingredients": "Fava beans, tahini, lemon juice, garlic, cumin",
     "is_egyptian": true,
-    "available_at": ["Gad", "Zooba", "Street Vendors"],
+    "available_at": [
+      "Gad",
+      "Zooba",
+      "Street Vendors"
+    ],
     "price_egp_min": 25,
-    "price_egp_max": 55
+    "price_egp_max": 55,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
   },
   {
     "id": "EGY0004",
@@ -67,9 +83,14 @@
     "fiber_g": 10,
     "ingredients": "Fava beans, eggs, oil, cumin, salt",
     "is_egyptian": true,
-    "available_at": ["Gad", "Street Vendors", "Home"],
+    "available_at": [
+      "Gad",
+      "Street Vendors",
+      "Home"
+    ],
     "price_egp_min": 30,
-    "price_egp_max": 60
+    "price_egp_max": 60,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "id": "EGY0005",
@@ -85,9 +106,13 @@
     "fiber_g": 11,
     "ingredients": "Fava beans, tomato sauce, onion, garlic, cumin",
     "is_egyptian": true,
-    "available_at": ["Gad", "Home"],
+    "available_at": [
+      "Gad",
+      "Home"
+    ],
     "price_egp_min": 20,
-    "price_egp_max": 40
+    "price_egp_max": 40,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tomato-sauce.jpg"
   },
   {
     "id": "EGY0006",
@@ -103,9 +128,13 @@
     "fiber_g": 10,
     "ingredients": "Fava beans, tomatoes, peppers, onion, oil, spices",
     "is_egyptian": true,
-    "available_at": ["Alexandrian restaurants", "Home"],
+    "available_at": [
+      "Alexandrian restaurants",
+      "Home"
+    ],
     "price_egp_min": 25,
-    "price_egp_max": 50
+    "price_egp_max": 50,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
   },
   {
     "id": "EGY0007",
@@ -121,9 +150,13 @@
     "fiber_g": 10,
     "ingredients": "Fava beans, pastrami, oil, spices",
     "is_egyptian": true,
-    "available_at": ["Gad", "Premium restaurants"],
+    "available_at": [
+      "Gad",
+      "Premium restaurants"
+    ],
     "price_egp_min": 45,
-    "price_egp_max": 85
+    "price_egp_max": 85,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
   },
   {
     "id": "EGY0008",
@@ -139,9 +172,13 @@
     "fiber_g": 10,
     "ingredients": "Fava beans, oriental sausage, oil, spices",
     "is_egyptian": true,
-    "available_at": ["Gad", "Street Vendors"],
+    "available_at": [
+      "Gad",
+      "Street Vendors"
+    ],
     "price_egp_min": 40,
-    "price_egp_max": 75
+    "price_egp_max": 75,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
   },
   {
     "id": "EGY0009",
@@ -157,9 +194,15 @@
     "fiber_g": 6,
     "ingredients": "Fava beans, parsley, coriander, dill, onion, garlic, spices, oil",
     "is_egyptian": true,
-    "available_at": ["Gad", "Zooba", "Street Vendors", "Home"],
+    "available_at": [
+      "Gad",
+      "Zooba",
+      "Street Vendors",
+      "Home"
+    ],
     "price_egp_min": 2,
-    "price_egp_max": 5
+    "price_egp_max": 5,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
   },
   {
     "id": "EGY0010",
@@ -175,9 +218,13 @@
     "fiber_g": 6,
     "ingredients": "Fava beans, herbs, sesame seeds, spices, oil",
     "is_egyptian": true,
-    "available_at": ["Gad", "Street Vendors"],
+    "available_at": [
+      "Gad",
+      "Street Vendors"
+    ],
     "price_egp_min": 3,
-    "price_egp_max": 6
+    "price_egp_max": 6,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
   },
   {
     "id": "EGY0011",
@@ -193,9 +240,13 @@
     "fiber_g": 6,
     "ingredients": "Fava beans, herbs, spices, minimal oil",
     "is_egyptian": true,
-    "available_at": ["Zooba", "Health restaurants"],
+    "available_at": [
+      "Zooba",
+      "Health restaurants"
+    ],
     "price_egp_min": 5,
-    "price_egp_max": 10
+    "price_egp_max": 10,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
   },
   {
     "id": "EGY0012",
@@ -211,9 +262,13 @@
     "fiber_g": 0,
     "ingredients": "Eggs, ghee or oil, salt",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 15,
-    "price_egp_max": 35
+    "price_egp_max": 35,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fried-egg.jpg"
   },
   {
     "id": "EGY0013",
@@ -229,9 +284,13 @@
     "fiber_g": 0,
     "ingredients": "Eggs, butter or ghee, salt, pepper",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "id": "EGY0014",
@@ -247,9 +306,13 @@
     "fiber_g": 0,
     "ingredients": "Eggs, pastrami, ghee",
     "is_egyptian": true,
-    "available_at": ["Gad", "Restaurants"],
+    "available_at": [
+      "Gad",
+      "Restaurants"
+    ],
     "price_egp_min": 45,
-    "price_egp_max": 90
+    "price_egp_max": 90,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "id": "EGY0015",
@@ -265,9 +328,13 @@
     "fiber_g": 0,
     "ingredients": "Eggs, oriental sausage, ghee",
     "is_egyptian": true,
-    "available_at": ["Gad", "Restaurants"],
+    "available_at": [
+      "Gad",
+      "Restaurants"
+    ],
     "price_egp_min": 40,
-    "price_egp_max": 80
+    "price_egp_max": 80,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "id": "EGY0016",
@@ -283,7 +350,11 @@
     "fiber_g": 3,
     "ingredients": "Eggs, tomatoes, peppers, onion, garlic, spices, oil",
     "is_egyptian": true,
-    "available_at": ["Gad", "Home", "Restaurants"],
+    "available_at": [
+      "Gad",
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 35,
     "price_egp_max": 70
   },
@@ -301,9 +372,13 @@
     "fiber_g": 0,
     "ingredients": "Eggs, chicken liver, onion, peppers, spices",
     "is_egyptian": true,
-    "available_at": ["Restaurants", "Home"],
+    "available_at": [
+      "Restaurants",
+      "Home"
+    ],
     "price_egp_min": 40,
-    "price_egp_max": 85
+    "price_egp_max": 85,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "id": "EGY0018",
@@ -319,9 +394,13 @@
     "fiber_g": 0,
     "ingredients": "Eggs, butter, salt, pepper",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "id": "EGY0019",
@@ -337,9 +416,13 @@
     "fiber_g": 0,
     "ingredients": "Eggs, cheese, butter, salt",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 30,
-    "price_egp_max": 60
+    "price_egp_max": 60,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "id": "EGY0020",
@@ -355,9 +438,13 @@
     "fiber_g": 2,
     "ingredients": "Eggs, peppers, onion, tomato, butter",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 30,
-    "price_egp_max": 55
+    "price_egp_max": 55,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "id": "EGY0021",
@@ -373,9 +460,12 @@
     "fiber_g": 0,
     "ingredients": "Eggs",
     "is_egyptian": true,
-    "available_at": ["Everywhere"],
+    "available_at": [
+      "Everywhere"
+    ],
     "price_egp_min": 10,
-    "price_egp_max": 25
+    "price_egp_max": 25,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hard-boiled-egg.jpg"
   },
   {
     "id": "EGY0022",
@@ -391,9 +481,13 @@
     "fiber_g": 0,
     "ingredients": "Egg whites",
     "is_egyptian": true,
-    "available_at": ["Home", "Gym cafes"],
+    "available_at": [
+      "Home",
+      "Gym cafes"
+    ],
     "price_egp_min": 15,
-    "price_egp_max": 35
+    "price_egp_max": 35,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg-white.jpg"
   },
   {
     "id": "EGY0023",
@@ -409,9 +503,14 @@
     "fiber_g": 8,
     "ingredients": "Rice, macaroni, lentils, chickpeas, tomato sauce, fried onions, garlic vinegar",
     "is_egyptian": true,
-    "available_at": ["Koshary Abou Tarek", "Gad", "Street Vendors"],
+    "available_at": [
+      "Koshary Abou Tarek",
+      "Gad",
+      "Street Vendors"
+    ],
     "price_egp_min": 25,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
   },
   {
     "id": "EGY0024",
@@ -427,9 +526,14 @@
     "fiber_g": 11,
     "ingredients": "Rice, macaroni, lentils, chickpeas, tomato sauce, fried onions, garlic vinegar",
     "is_egyptian": true,
-    "available_at": ["Koshary Abou Tarek", "Gad", "Street Vendors"],
+    "available_at": [
+      "Koshary Abou Tarek",
+      "Gad",
+      "Street Vendors"
+    ],
     "price_egp_min": 35,
-    "price_egp_max": 60
+    "price_egp_max": 60,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
   },
   {
     "id": "EGY0025",
@@ -445,9 +549,14 @@
     "fiber_g": 15,
     "ingredients": "Rice, macaroni, lentils, chickpeas, tomato sauce, fried onions, garlic vinegar",
     "is_egyptian": true,
-    "available_at": ["Koshary Abou Tarek", "Gad", "Street Vendors"],
+    "available_at": [
+      "Koshary Abou Tarek",
+      "Gad",
+      "Street Vendors"
+    ],
     "price_egp_min": 50,
-    "price_egp_max": 85
+    "price_egp_max": 85,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
   },
   {
     "id": "EGY0026",
@@ -463,9 +572,13 @@
     "fiber_g": 12,
     "ingredients": "Rice, macaroni, lentils, chickpeas, extra tomato sauce, fried onions",
     "is_egyptian": true,
-    "available_at": ["Koshary Abou Tarek", "Gad"],
+    "available_at": [
+      "Koshary Abou Tarek",
+      "Gad"
+    ],
     "price_egp_min": 45,
-    "price_egp_max": 75
+    "price_egp_max": 75,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
   },
   {
     "id": "EGY0027",
@@ -481,9 +594,13 @@
     "fiber_g": 4,
     "ingredients": "Molokhia leaves, chicken broth, garlic, coriander, ghee",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 60,
-    "price_egp_max": 120
+    "price_egp_max": 120,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
   },
   {
     "id": "EGY0028",
@@ -499,9 +616,13 @@
     "fiber_g": 4,
     "ingredients": "Molokhia leaves, rabbit broth, garlic, coriander, ghee",
     "is_egyptian": true,
-    "available_at": ["Home", "Traditional restaurants"],
+    "available_at": [
+      "Home",
+      "Traditional restaurants"
+    ],
     "price_egp_min": 80,
-    "price_egp_max": 150
+    "price_egp_max": 150,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
   },
   {
     "id": "EGY0029",
@@ -517,9 +638,13 @@
     "fiber_g": 4,
     "ingredients": "Molokhia leaves, beef broth, garlic, coriander, ghee",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 70,
-    "price_egp_max": 130
+    "price_egp_max": 130,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
   },
   {
     "id": "EGY0030",
@@ -535,9 +660,12 @@
     "fiber_g": 4,
     "ingredients": "Molokhia leaves, shrimp, garlic, coriander, ghee",
     "is_egyptian": true,
-    "available_at": ["Coastal restaurants"],
+    "available_at": [
+      "Coastal restaurants"
+    ],
     "price_egp_min": 90,
-    "price_egp_max": 160
+    "price_egp_max": 160,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
   },
   {
     "id": "EGY0031",
@@ -553,9 +681,14 @@
     "fiber_g": 10,
     "ingredients": "Red lentils, onion, carrot, cumin, lemon",
     "is_egyptian": true,
-    "available_at": ["Home", "Gad", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Gad",
+      "Restaurants"
+    ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
   },
   {
     "id": "EGY0032",
@@ -571,9 +704,13 @@
     "fiber_g": 1,
     "ingredients": "Chicken broth, vegetables, noodles",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 25,
-    "price_egp_max": 55
+    "price_egp_max": 55,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
   },
   {
     "id": "EGY0033",
@@ -589,9 +726,13 @@
     "fiber_g": 2,
     "ingredients": "Orzo pasta, chicken broth, butter",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
   },
   {
     "id": "EGY0034",
@@ -607,9 +748,13 @@
     "fiber_g": 6,
     "ingredients": "Freekeh, chicken broth, spices",
     "is_egyptian": true,
-    "available_at": ["Home", "Traditional restaurants"],
+    "available_at": [
+      "Home",
+      "Traditional restaurants"
+    ],
     "price_egp_min": 30,
-    "price_egp_max": 60
+    "price_egp_max": 60,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bulgur.jpg"
   },
   {
     "id": "EGY0035",
@@ -625,9 +770,13 @@
     "fiber_g": 5,
     "ingredients": "Mixed vegetables, broth, spices",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 20,
-    "price_egp_max": 45
+    "price_egp_max": 45,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
   },
   {
     "id": "EGY0036",
@@ -643,9 +792,13 @@
     "fiber_g": 3,
     "ingredients": "Tomatoes, onion, garlic, cream",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 20,
-    "price_egp_max": 40
+    "price_egp_max": 40,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tomato.jpg"
   },
   {
     "id": "EGY0037",
@@ -661,9 +814,13 @@
     "fiber_g": 0,
     "ingredients": "Cow trotters, onion, spices, garlic",
     "is_egyptian": true,
-    "available_at": ["Traditional restaurants", "Home"],
+    "available_at": [
+      "Traditional restaurants",
+      "Home"
+    ],
     "price_egp_min": 60,
-    "price_egp_max": 120
+    "price_egp_max": 120,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
   },
   {
     "id": "EGY0038",
@@ -679,7 +836,10 @@
     "fiber_g": 4,
     "ingredients": "Bread, rice, meat, garlic vinegar sauce, tomato sauce",
     "is_egyptian": true,
-    "available_at": ["Home", "Traditional restaurants"],
+    "available_at": [
+      "Home",
+      "Traditional restaurants"
+    ],
     "price_egp_min": 80,
     "price_egp_max": 150
   },
@@ -697,9 +857,13 @@
     "fiber_g": 4,
     "ingredients": "Bread, rice, chicken, garlic vinegar sauce",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 70,
-    "price_egp_max": 130
+    "price_egp_max": 130,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
   },
   {
     "id": "EGY0040",
@@ -715,9 +879,13 @@
     "fiber_g": 5,
     "ingredients": "Zucchini, rice, tomato, onion, herbs, spices",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
-    "price_egp_max": 100
+    "price_egp_max": 100,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
   },
   {
     "id": "EGY0041",
@@ -733,9 +901,13 @@
     "fiber_g": 4,
     "ingredients": "Grape leaves, rice, tomato, herbs, lemon",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 60,
-    "price_egp_max": 120
+    "price_egp_max": 120,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
   },
   {
     "id": "EGY0042",
@@ -751,9 +923,13 @@
     "fiber_g": 5,
     "ingredients": "Bell peppers, rice, tomato, herbs, spices",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
-    "price_egp_max": 95
+    "price_egp_max": 95,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bell-pepper.jpg"
   },
   {
     "id": "EGY0043",
@@ -769,9 +945,12 @@
     "fiber_g": 4,
     "ingredients": "Onions, rice, tomato, herbs, spices",
     "is_egyptian": true,
-    "available_at": ["Home"],
+    "available_at": [
+      "Home"
+    ],
     "price_egp_min": 45,
-    "price_egp_max": 90
+    "price_egp_max": 90,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
   },
   {
     "id": "EGY0044",
@@ -787,9 +966,13 @@
     "fiber_g": 6,
     "ingredients": "Eggplant, rice, tomato, herbs, spices",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
-    "price_egp_max": 100
+    "price_egp_max": 100,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/eggplant.jpg"
   },
   {
     "id": "EGY0045",
@@ -805,9 +988,13 @@
     "fiber_g": 5,
     "ingredients": "Cabbage leaves, rice, tomato, herbs",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 40,
-    "price_egp_max": 85
+    "price_egp_max": 85,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cabbage.jpg"
   },
   {
     "id": "EGY0046",
@@ -823,9 +1010,13 @@
     "fiber_g": 8,
     "ingredients": "Assorted stuffed vegetables, rice filling",
     "is_egyptian": true,
-    "available_at": ["Home", "Restaurants"],
+    "available_at": [
+      "Home",
+      "Restaurants"
+    ],
     "price_egp_min": 80,
-    "price_egp_max": 150
+    "price_egp_max": 150,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
   },
   {
     "id": "EGY0047",
@@ -841,9 +1032,14 @@
     "fiber_g": 3,
     "ingredients": "Baladi bread, minced meat, onion, peppers, spices",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Gad", "Street Vendors"],
+    "available_at": [
+      "Bakeries",
+      "Gad",
+      "Street Vendors"
+    ],
     "price_egp_min": 35,
-    "price_egp_max": 70
+    "price_egp_max": 70,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
   },
   {
     "id": "EGY0048",
@@ -859,9 +1055,13 @@
     "fiber_g": 3,
     "ingredients": "Fino bread, minced meat, onion, peppers, tomato, spices",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Restaurants"],
+    "available_at": [
+      "Bakeries",
+      "Restaurants"
+    ],
     "price_egp_min": 40,
-    "price_egp_max": 80
+    "price_egp_max": 80,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
   },
   {
     "id": "EGY0049",
@@ -877,9 +1077,13 @@
     "fiber_g": 3,
     "ingredients": "Bread, minced meat, cheese, onion, peppers",
     "is_egyptian": true,
-    "available_at": ["Bakeries", "Restaurants"],
+    "available_at": [
+      "Bakeries",
+      "Restaurants"
+    ],
     "price_egp_min": 50,
-    "price_egp_max": 95
+    "price_egp_max": 95,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
   },
   {
     "id": "EGY0050",
@@ -895,8 +1099,13 @@
     "fiber_g": 1,
     "ingredients": "Ground beef, onion, parsley, spices",
     "is_egyptian": true,
-    "available_at": ["Abou Shakra", "El Dahan", "Restaurants"],
+    "available_at": [
+      "Abou Shakra",
+      "El Dahan",
+      "Restaurants"
+    ],
     "price_egp_min": 80,
-    "price_egp_max": 150
+    "price_egp_max": 150,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
   }
 ]

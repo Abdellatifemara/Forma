@@ -1,0 +1,759 @@
+[
+  {
+    "name_en": "Beef Tenderloin (Filet) Raw",
+    "name_ar": "فيليه لحمة بتلو (نيء)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 340,
+    "protein_g": 48,
+    "carbs_g": 0,
+    "fat_g": 16,
+    "fiber_g": 0,
+    "iron_mg": 4,
+    "is_egyptian": false,
+    "tags": [
+      "meat",
+      "beef",
+      "premium",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-tenderloin.jpg"
+  },
+  {
+    "name_en": "Beef Ribeye Steak (Grilled)",
+    "name_ar": "ريب آي ستيك (مشوي)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 500,
+    "protein_g": 44,
+    "carbs_g": 0,
+    "fat_g": 36,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "meat",
+      "steak",
+      "premium",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ribeye-steak.jpg"
+  },
+  {
+    "name_en": "Lamb Chops (Riesh Dani)",
+    "name_ar": "ريش ضاني",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 480,
+    "protein_g": 40,
+    "carbs_g": 0,
+    "fat_g": 34,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "lamb",
+      "grilled",
+      "premium",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lamb-loin-chops.jpg"
+  },
+  {
+    "name_en": "Lamb Leg (Roasted)",
+    "name_ar": "فخذة ضاني (مشوية في الفرن)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 46,
+    "carbs_g": 0,
+    "fat_g": 26,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "lamb",
+      "roasted",
+      "eid",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lamb-loin-chops.jpg"
+  },
+  {
+    "name_en": "Veal Escalope (Breaded, Fried)",
+    "name_ar": "إسكالوب بانيه بتلو",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 450,
+    "protein_g": 36,
+    "carbs_g": 20,
+    "fat_g": 24,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "veal",
+      "breaded",
+      "fried",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Chicken Pane (Breaded Chicken Breast)",
+    "name_ar": "فراخ بانيه",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 35,
+    "carbs_g": 22,
+    "fat_g": 22,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "chicken",
+      "breaded",
+      "fried",
+      "popular",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Chicken Thigh (Grilled, Skin-On)",
+    "name_ar": "ورك فراخ (مشوي بالجلد)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 380,
+    "protein_g": 40,
+    "carbs_g": 0,
+    "fat_g": 24,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "meat",
+      "chicken",
+      "thigh",
+      "grilled"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-thighs.jpg"
+  },
+  {
+    "name_en": "Chicken Thigh (Grilled, Skinless)",
+    "name_ar": "ورك فراخ (مشوي بدون جلد)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 300,
+    "protein_g": 42,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "meat",
+      "chicken",
+      "thigh",
+      "lean"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-thighs.jpg"
+  },
+  {
+    "name_en": "Chicken Wings (Fried, 6 pieces)",
+    "name_ar": "أجنحة فراخ (مقلية، 6 حبات)",
+    "category": "meat",
+    "serving_size_g": 240,
+    "calories": 550,
+    "protein_g": 36,
+    "carbs_g": 12,
+    "fat_g": 40,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "meat",
+      "chicken",
+      "wings",
+      "fried"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-wings.jpg"
+  },
+  {
+    "name_en": "Duck Breast (Batt, Roasted)",
+    "name_ar": "صدر بط (مشوي)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 350,
+    "protein_g": 46,
+    "carbs_g": 0,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "duck",
+      "premium",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Rabbit Meat (Arnab, Stewed)",
+    "name_ar": "أرنب (مطهي)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 280,
+    "protein_g": 48,
+    "carbs_g": 0,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "rabbit",
+      "lean",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Beef Burger Patty (Homemade, 150g)",
+    "name_ar": "برجر لحمة بيتي (150 جرام)",
+    "category": "meat",
+    "serving_size_g": 150,
+    "calories": 350,
+    "protein_g": 30,
+    "carbs_g": 5,
+    "fat_g": 24,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "tags": [
+      "meat",
+      "burger",
+      "beef",
+      "homemade"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Ground Turkey (Cooked)",
+    "name_ar": "ديك رومي مفروم (مطبوخ)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 340,
+    "protein_g": 46,
+    "carbs_g": 0,
+    "fat_g": 16,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "meat",
+      "turkey",
+      "lean",
+      "meal_prep"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turkey-breast.jpg"
+  },
+  {
+    "name_en": "Shrimp/Prawns (Gambari, Grilled)",
+    "name_ar": "جمبري مشوي",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 200,
+    "protein_g": 42,
+    "carbs_g": 1,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "shrimp",
+      "lean",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/shrimp.jpg"
+  },
+  {
+    "name_en": "Shrimp (Fried/Battered)",
+    "name_ar": "جمبري مقلي",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 30,
+    "carbs_g": 20,
+    "fat_g": 24,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "shrimp",
+      "fried",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/shrimp.jpg"
+  },
+  {
+    "name_en": "Calamari (Fried)",
+    "name_ar": "كاليماري (مقلي)",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 350,
+    "protein_g": 24,
+    "carbs_g": 22,
+    "fat_g": 18,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "calamari",
+      "fried",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/squid.jpg"
+  },
+  {
+    "name_en": "Calamari (Grilled)",
+    "name_ar": "كاليماري (مشوي)",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 30,
+    "carbs_g": 4,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "calamari",
+      "grilled",
+      "lean",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/squid.jpg"
+  },
+  {
+    "name_en": "Sea Bass (Qarous, Grilled)",
+    "name_ar": "قاروص مشوي",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 230,
+    "protein_g": 42,
+    "carbs_g": 0,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "sea_bass",
+      "grilled",
+      "premium",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sea-bass.jpg"
+  },
+  {
+    "name_en": "Red Mullet (Barbouni, Fried)",
+    "name_ar": "بربوني مقلي",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 320,
+    "protein_g": 35,
+    "carbs_g": 10,
+    "fat_g": 16,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "mullet",
+      "fried",
+      "alexandrian",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Sardines (Fresh, Grilled)",
+    "name_ar": "سردين (طازة، مشوي)",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 340,
+    "protein_g": 38,
+    "carbs_g": 0,
+    "fat_g": 20,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "sardines",
+      "grilled",
+      "omega3",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sardines.jpg"
+  },
+  {
+    "name_en": "Mullet (Bouri, Grilled)",
+    "name_ar": "بوري مشوي",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 260,
+    "protein_g": 40,
+    "carbs_g": 0,
+    "fat_g": 10,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "mullet",
+      "grilled",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Nile Perch (Baiass, Grilled)",
+    "name_ar": "بياض (سمك نيلي مشوي)",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 220,
+    "protein_g": 38,
+    "carbs_g": 0,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "nile_perch",
+      "grilled",
+      "lean",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Crab Meat (Cooked)",
+    "name_ar": "لحم كابوريا (مطبوخ)",
+    "category": "seafood",
+    "serving_size_g": 100,
+    "calories": 97,
+    "protein_g": 19,
+    "carbs_g": 0,
+    "fat_g": 1.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "crab",
+      "lean",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/crabmeat.jpg"
+  },
+  {
+    "name_en": "Canned Sardines in Oil",
+    "name_ar": "سردين معلب بالزيت",
+    "category": "seafood",
+    "serving_size_g": 100,
+    "calories": 208,
+    "protein_g": 24.6,
+    "carbs_g": 0,
+    "fat_g": 11.5,
+    "fiber_g": 0,
+    "calcium_mg": 382,
+    "is_egyptian": false,
+    "tags": [
+      "canned",
+      "sardines",
+      "protein",
+      "omega3",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sardines.jpg"
+  },
+  {
+    "name_en": "Smoked Salmon",
+    "name_ar": "سلمون مدخن",
+    "category": "seafood",
+    "serving_size_g": 100,
+    "calories": 117,
+    "protein_g": 18.3,
+    "carbs_g": 0,
+    "fat_g": 4.3,
+    "fiber_g": 0,
+    "sodium_mg": 780,
+    "is_egyptian": false,
+    "tags": [
+      "seafood",
+      "salmon",
+      "smoked",
+      "premium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salmon.jpg"
+  },
+  {
+    "name_en": "Fesikh (Salted Fermented Fish)",
+    "name_ar": "فسيخ",
+    "category": "seafood",
+    "serving_size_g": 100,
+    "calories": 200,
+    "protein_g": 30,
+    "carbs_g": 0,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "sodium_mg": 3500,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "traditional",
+      "sham_ennessim",
+      "fermented",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Ringa (Smoked Herring)",
+    "name_ar": "رنجة",
+    "category": "seafood",
+    "serving_size_g": 100,
+    "calories": 220,
+    "protein_g": 24,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "sodium_mg": 1500,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "traditional",
+      "sham_ennessim",
+      "smoked",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Sardines (Canned in Water)",
+    "name_ar": "سردين معلب في ماء",
+    "category": "seafood",
+    "serving_size_g": 100,
+    "calories": 142,
+    "protein_g": 25,
+    "carbs_g": 0,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "calcium_mg": 382,
+    "is_egyptian": false,
+    "tags": [
+      "canned",
+      "sardines",
+      "lean",
+      "protein",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sardines.jpg"
+  },
+  {
+    "name_en": "Beef Tongue (Lessan, Boiled)",
+    "name_ar": "لسان بتلو (مسلوق)",
+    "category": "meat",
+    "serving_size_g": 150,
+    "calories": 310,
+    "protein_g": 28,
+    "carbs_g": 0,
+    "fat_g": 22,
+    "fiber_g": 0,
+    "iron_mg": 3.5,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "offal",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Pastrami (Basterma) Sliced",
+    "name_ar": "بسطرمة شرائح",
+    "category": "meat",
+    "serving_size_g": 50,
+    "calories": 120,
+    "protein_g": 15,
+    "carbs_g": 1,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "sodium_mg": 650,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "deli",
+      "basterma",
+      "high_protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Sausage (Egyptian Beef Sogo')",
+    "name_ar": "سجق بلدي (بقري)",
+    "category": "meat",
+    "serving_size_g": 100,
+    "calories": 280,
+    "protein_g": 15,
+    "carbs_g": 3,
+    "fat_g": 23,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "sausage",
+      "traditional",
+      "street_food",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Beef Tripe (Kersha, Stewed)",
+    "name_ar": "كرشة (مطهية)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 30,
+    "carbs_g": 0,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "offal",
+      "traditional",
+      "cheap",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Beef Kidneys (Kalawi, Grilled)",
+    "name_ar": "كلاوي (مشوية)",
+    "category": "meat",
+    "serving_size_g": 150,
+    "calories": 180,
+    "protein_g": 30,
+    "carbs_g": 0,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "iron_mg": 6,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "offal",
+      "traditional",
+      "iron_rich",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Chicken Drumstick (Grilled, 2 pieces)",
+    "name_ar": "ستيك فراخ (مشوي، 2 حبة)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 340,
+    "protein_g": 38,
+    "carbs_g": 0,
+    "fat_g": 20,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "meat",
+      "chicken",
+      "drumstick",
+      "grilled"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Quail (Grilled, 2 birds)",
+    "name_ar": "سمان مشوي (2 حبة)",
+    "category": "meat",
+    "serving_size_g": 200,
+    "calories": 310,
+    "protein_g": 44,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "meat",
+      "quail",
+      "grilled",
+      "lean",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Octopus (Grilled)",
+    "name_ar": "أخطبوط مشوي",
+    "category": "seafood",
+    "serving_size_g": 200,
+    "calories": 164,
+    "protein_g": 30,
+    "carbs_g": 4.4,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "iron_mg": 9.5,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "octopus",
+      "grilled",
+      "lean",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Mussel Meat (Cooked)",
+    "name_ar": "بلح البحر (مطبوخ)",
+    "category": "seafood",
+    "serving_size_g": 100,
+    "calories": 172,
+    "protein_g": 24,
+    "carbs_g": 7.4,
+    "fat_g": 4.5,
+    "fiber_g": 0,
+    "iron_mg": 6.7,
+    "is_egyptian": false,
+    "tags": [
+      "seafood",
+      "mussels",
+      "iron_rich",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Oysters (Raw, 6 pieces)",
+    "name_ar": "محار (نيء، 6 حبات)",
+    "category": "seafood",
+    "serving_size_g": 84,
+    "calories": 57,
+    "protein_g": 6,
+    "carbs_g": 3.3,
+    "fat_g": 2.1,
+    "fiber_g": 0,
+    "zinc_mg": 32,
+    "is_egyptian": false,
+    "tags": [
+      "seafood",
+      "oysters",
+      "zinc",
+      "premium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  }
+]

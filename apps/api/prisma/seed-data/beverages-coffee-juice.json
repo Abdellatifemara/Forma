@@ -1,0 +1,764 @@
+[
+  {
+    "name_en": "Turkish Coffee (1 cup, no sugar)",
+    "name_ar": "قهوة تركي سادة فنجان",
+    "category": "OTHER",
+    "serving_size_g": 60,
+    "calories": 5,
+    "protein_g": 0.3,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "caffeine_mg": 65,
+    "is_egyptian": true,
+    "tags": [
+      "coffee",
+      "turkish",
+      "zero-calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Turkish Coffee (1 cup, medium sugar)",
+    "name_ar": "قهوة تركي مظبوط فنجان",
+    "category": "OTHER",
+    "serving_size_g": 70,
+    "calories": 45,
+    "protein_g": 0.3,
+    "carbs_g": 10,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 10,
+    "caffeine_mg": 65,
+    "is_egyptian": true,
+    "tags": [
+      "coffee",
+      "turkish",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Nescafe Classic (1 cup with sugar & creamer)",
+    "name_ar": "نسكافيه كلاسيك كوب بسكر وكريمر",
+    "category": "OTHER",
+    "serving_size_g": 200,
+    "calories": 80,
+    "protein_g": 1,
+    "carbs_g": 14,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "sugar_g": 10,
+    "caffeine_mg": 60,
+    "is_egyptian": false,
+    "brand_en": "Nescafe",
+    "brand_ar": "نسكافيه",
+    "tags": [
+      "coffee",
+      "instant",
+      "popular"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Nescafe 3-in-1 (1 sachet)",
+    "name_ar": "نسكافيه ٣ في ١ كيس",
+    "category": "OTHER",
+    "serving_size_g": 20,
+    "calories": 90,
+    "protein_g": 0.5,
+    "carbs_g": 14,
+    "fat_g": 3.5,
+    "fiber_g": 0,
+    "sugar_g": 12,
+    "caffeine_mg": 30,
+    "is_egyptian": false,
+    "brand_en": "Nescafe",
+    "brand_ar": "نسكافيه",
+    "tags": [
+      "coffee",
+      "instant",
+      "convenient"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Espresso (1 shot)",
+    "name_ar": "إسبرسو شوت",
+    "category": "OTHER",
+    "serving_size_g": 30,
+    "calories": 3,
+    "protein_g": 0.1,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "caffeine_mg": 63,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "espresso",
+      "zero-calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Americano (1 cup, black)",
+    "name_ar": "أمريكانو أسود كوب",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 5,
+    "protein_g": 0.3,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "caffeine_mg": 95,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "black",
+      "zero-calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Cappuccino (1 cup, regular milk)",
+    "name_ar": "كابتشينو كوب",
+    "category": "DAIRY",
+    "serving_size_g": 240,
+    "calories": 120,
+    "protein_g": 6,
+    "carbs_g": 10,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "caffeine_mg": 75,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "milk",
+      "hot"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Latte (1 cup, regular milk)",
+    "name_ar": "لاتيه كوب",
+    "category": "DAIRY",
+    "serving_size_g": 300,
+    "calories": 150,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "caffeine_mg": 75,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "latte",
+      "milk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Latte (oat milk, 1 cup)",
+    "name_ar": "لاتيه بحليب الشوفان كوب",
+    "category": "CARBS",
+    "serving_size_g": 300,
+    "calories": 130,
+    "protein_g": 3,
+    "carbs_g": 20,
+    "fat_g": 5,
+    "fiber_g": 1,
+    "caffeine_mg": 75,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "oat-milk",
+      "vegan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Mocha (1 cup)",
+    "name_ar": "موكا كوب",
+    "category": "DAIRY",
+    "serving_size_g": 300,
+    "calories": 250,
+    "protein_g": 8,
+    "carbs_g": 34,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "sugar_g": 28,
+    "caffeine_mg": 75,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "chocolate",
+      "hot"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Iced Latte (1 cup, regular milk)",
+    "name_ar": "آيس لاتيه كوب",
+    "category": "DAIRY",
+    "serving_size_g": 350,
+    "calories": 130,
+    "protein_g": 7,
+    "carbs_g": 12,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "caffeine_mg": 95,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "iced",
+      "cold"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Iced Americano (1 cup, black)",
+    "name_ar": "آيس أمريكانو أسود كوب",
+    "category": "OTHER",
+    "serving_size_g": 350,
+    "calories": 5,
+    "protein_g": 0.3,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "caffeine_mg": 95,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "iced",
+      "black",
+      "zero-calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Frappuccino Caramel (Starbucks, grande)",
+    "name_ar": "فرابتشينو كراميل ستاربكس جراندي",
+    "category": "DAIRY",
+    "serving_size_g": 480,
+    "calories": 380,
+    "protein_g": 5,
+    "carbs_g": 58,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "sugar_g": 52,
+    "caffeine_mg": 90,
+    "is_egyptian": false,
+    "brand_en": "Starbucks",
+    "brand_ar": "ستاربكس",
+    "tags": [
+      "coffee",
+      "blended",
+      "sweet",
+      "cold"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Hot Chocolate (1 cup)",
+    "name_ar": "هوت شوكولت كوب",
+    "category": "DAIRY",
+    "serving_size_g": 250,
+    "calories": 220,
+    "protein_g": 8,
+    "carbs_g": 30,
+    "fat_g": 8,
+    "fiber_g": 1.5,
+    "sugar_g": 24,
+    "is_egyptian": false,
+    "tags": [
+      "hot",
+      "chocolate",
+      "winter"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Sahlab (1 cup)",
+    "name_ar": "سحلب كوب",
+    "category": "DAIRY",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 6,
+    "carbs_g": 32,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "sugar_g": 20,
+    "is_egyptian": true,
+    "tags": [
+      "hot",
+      "traditional",
+      "winter",
+      "orchid"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Yansoon (Anise Tea, 1 cup)",
+    "name_ar": "ينسون كوب",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "herbal-tea",
+      "digestive",
+      "calming"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Karkadeh (Hibiscus Tea, 1 cup, sweetened)",
+    "name_ar": "كركديه كوب محلى",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 60,
+    "protein_g": 0,
+    "carbs_g": 15,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 14,
+    "is_egyptian": true,
+    "tags": [
+      "herbal-tea",
+      "hibiscus",
+      "traditional",
+      "cold-or-hot"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Karkadeh (Hibiscus Tea, 1 cup, no sugar)",
+    "name_ar": "كركديه كوب بدون سكر",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "herbal-tea",
+      "hibiscus",
+      "zero-calorie",
+      "antioxidant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Helba (Fenugreek Tea, 1 cup)",
+    "name_ar": "حلبة كوب",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 15,
+    "protein_g": 1,
+    "carbs_g": 2,
+    "fat_g": 0.3,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "herbal-tea",
+      "fenugreek",
+      "traditional",
+      "digestive"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Chamomile Tea (1 cup)",
+    "name_ar": "بابونج كوب",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 2,
+    "protein_g": 0,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "herbal-tea",
+      "calming",
+      "sleep"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Mint Tea (1 cup)",
+    "name_ar": "شاي نعناع كوب",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 2,
+    "protein_g": 0,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "herbal-tea",
+      "mint",
+      "digestive"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mint.jpg"
+  },
+  {
+    "name_en": "Green Tea (1 cup)",
+    "name_ar": "شاي أخضر كوب",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 2,
+    "protein_g": 0.5,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "caffeine_mg": 30,
+    "is_egyptian": false,
+    "tags": [
+      "tea",
+      "green",
+      "antioxidant",
+      "metabolism"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/green-tea-bags.jpg"
+  },
+  {
+    "name_en": "Black Tea with Milk (Egyptian style, 1 cup)",
+    "name_ar": "شاي بلبن كوب",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 50,
+    "protein_g": 2,
+    "carbs_g": 6,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "caffeine_mg": 47,
+    "is_egyptian": true,
+    "tags": [
+      "tea",
+      "milk",
+      "traditional",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Black Tea (Koshary, 1 cup, 2 sugar)",
+    "name_ar": "شاي كشري كوب ٢ سكر",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 32,
+    "protein_g": 0,
+    "carbs_g": 8,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 8,
+    "caffeine_mg": 47,
+    "is_egyptian": true,
+    "tags": [
+      "tea",
+      "black",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Fresh Orange Juice (1 glass)",
+    "name_ar": "عصير برتقال طازج كوب",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 110,
+    "protein_g": 2,
+    "carbs_g": 26,
+    "fat_g": 0.5,
+    "fiber_g": 0.5,
+    "sugar_g": 22,
+    "vitamin_c_mg": 124,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "fresh",
+      "vitamin-c"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Fresh Mango Juice (1 glass)",
+    "name_ar": "عصير مانجو طازج كوب",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 140,
+    "protein_g": 1,
+    "carbs_g": 34,
+    "fat_g": 0.5,
+    "fiber_g": 1,
+    "sugar_g": 30,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "mango",
+      "fresh",
+      "summer"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mango.jpg"
+  },
+  {
+    "name_en": "Fresh Guava Juice (1 glass)",
+    "name_ar": "عصير جوافة طازج كوب",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 120,
+    "protein_g": 2,
+    "carbs_g": 28,
+    "fat_g": 0.5,
+    "fiber_g": 4,
+    "vitamin_c_mg": 230,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "guava",
+      "fresh",
+      "vitamin-c"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/guava.jpg"
+  },
+  {
+    "name_en": "Fresh Strawberry Juice (1 glass)",
+    "name_ar": "عصير فراولة طازج كوب",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 100,
+    "protein_g": 1.5,
+    "carbs_g": 24,
+    "fat_g": 0.5,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "strawberry",
+      "fresh"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/strawberries.jpg"
+  },
+  {
+    "name_en": "Fresh Sugarcane Juice (1 glass)",
+    "name_ar": "عصير قصب كوب",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 180,
+    "protein_g": 0,
+    "carbs_g": 45,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 44,
+    "iron_mg": 1.5,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "sugarcane",
+      "street",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Fresh Lemon Mint Juice (1 glass)",
+    "name_ar": "عصير ليمون بالنعناع كوب",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 90,
+    "protein_g": 0.5,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 0.5,
+    "sugar_g": 20,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "lemon",
+      "mint",
+      "refreshing"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  },
+  {
+    "name_en": "Fresh Pomegranate Juice (1 glass)",
+    "name_ar": "عصير رمان طازج كوب",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 135,
+    "protein_g": 0.5,
+    "carbs_g": 33,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "sugar_g": 32,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "pomegranate",
+      "antioxidant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pomegranate.jpg"
+  },
+  {
+    "name_en": "Fresh Banana Milkshake (1 glass)",
+    "name_ar": "ميلك شيك موز كوب",
+    "category": "DAIRY",
+    "serving_size_g": 300,
+    "calories": 280,
+    "protein_g": 8,
+    "carbs_g": 42,
+    "fat_g": 10,
+    "fiber_g": 2,
+    "sugar_g": 36,
+    "potassium_mg": 500,
+    "is_egyptian": true,
+    "tags": [
+      "milkshake",
+      "banana",
+      "juice-bar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Avocado Smoothie with Honey (1 glass)",
+    "name_ar": "سموذي أفوكادو بالعسل كوب",
+    "category": "FATS",
+    "serving_size_g": 300,
+    "calories": 320,
+    "protein_g": 6,
+    "carbs_g": 30,
+    "fat_g": 20,
+    "fiber_g": 7,
+    "sugar_g": 18,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "avocado",
+      "healthy-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Mixed Fruit Cocktail (1 glass)",
+    "name_ar": "كوكتيل فواكه كوب",
+    "category": "CARBS",
+    "serving_size_g": 350,
+    "calories": 200,
+    "protein_g": 3,
+    "carbs_g": 46,
+    "fat_g": 1,
+    "fiber_g": 3,
+    "sugar_g": 40,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "cocktail",
+      "mixed-fruit"
+    ]
+  },
+  {
+    "name_en": "Asab (Sugarcane) with Lemon (1 glass)",
+    "name_ar": "عصير قصب بالليمون كوب",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 170,
+    "protein_g": 0,
+    "carbs_g": 42,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 40,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "sugarcane",
+      "lemon",
+      "street"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  },
+  {
+    "name_en": "Coconut Water (1 bottle, 330ml)",
+    "name_ar": "ماء جوز هند زجاجة",
+    "category": "OTHER",
+    "serving_size_g": 330,
+    "calories": 60,
+    "protein_g": 0,
+    "carbs_g": 15,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "potassium_mg": 600,
+    "is_egyptian": false,
+    "tags": [
+      "coconut-water",
+      "electrolytes",
+      "hydration"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut-water.jpg"
+  },
+  {
+    "name_en": "Aloe Vera Drink (1 bottle, 240ml)",
+    "name_ar": "مشروب صبار ألوفيرا زجاجة",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 60,
+    "protein_g": 0,
+    "carbs_g": 14,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 13,
+    "is_egyptian": false,
+    "tags": [
+      "aloe-vera",
+      "healthy",
+      "digestive"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Kombucha (1 bottle, 250ml)",
+    "name_ar": "كومبوتشا زجاجة",
+    "category": "OTHER",
+    "serving_size_g": 250,
+    "calories": 30,
+    "protein_g": 0,
+    "carbs_g": 7,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "fermented",
+      "probiotic",
+      "health-drink"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Apple Cider Vinegar Drink (1 tbsp in water)",
+    "name_ar": "خل تفاح بالماء",
+    "category": "OTHER",
+    "serving_size_g": 265,
+    "calories": 3,
+    "protein_g": 0,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "acv",
+      "detox",
+      "digestive",
+      "health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  }
+]

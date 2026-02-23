@@ -1,0 +1,463 @@
+[
+  {
+    "name_en": "Lentil Soup (Shorbet Ads, 1 bowl)",
+    "name_ar": "شوربة عدس (طبق)",
+    "category": "soup",
+    "serving_size_g": 300,
+    "calories": 220,
+    "protein_g": 14,
+    "carbs_g": 35,
+    "fat_g": 3,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "lentil",
+      "protein",
+      "fiber",
+      "cheap",
+      "winter",
+      "cutting",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Chicken Soup (Shorbet Feraakh, 1 bowl)",
+    "name_ar": "شوربة فراخ (طبق)",
+    "category": "soup",
+    "serving_size_g": 300,
+    "calories": 180,
+    "protein_g": 15,
+    "carbs_g": 12,
+    "fat_g": 8,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "chicken",
+      "recovery",
+      "warm",
+      "comfort",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Bone Broth (1 cup)",
+    "name_ar": "مرقة عظام (كوب)",
+    "category": "soup",
+    "serving_size_g": 240,
+    "calories": 40,
+    "protein_g": 8,
+    "carbs_g": 0,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "soup",
+      "bone_broth",
+      "collagen",
+      "recovery",
+      "joints",
+      "gut_health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
+  },
+  {
+    "name_en": "Vegetable Soup (Shorbet Khodaar, 1 bowl)",
+    "name_ar": "شوربة خضار (طبق)",
+    "category": "soup",
+    "serving_size_g": 300,
+    "calories": 120,
+    "protein_g": 4,
+    "carbs_g": 18,
+    "fat_g": 3,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "vegetable",
+      "low_calorie",
+      "cutting",
+      "vitamins",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
+  },
+  {
+    "name_en": "Mushroom Soup (Cream of, 1 bowl)",
+    "name_ar": "شوربة مشروم كريمي (طبق)",
+    "category": "soup",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 5,
+    "carbs_g": 15,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "soup",
+      "mushroom",
+      "cream",
+      "comfort"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mushrooms.jpg"
+  },
+  {
+    "name_en": "Lisan Asfour Soup (1 bowl)",
+    "name_ar": "شوربة لسان عصفور (طبق)",
+    "category": "soup",
+    "serving_size_g": 300,
+    "calories": 180,
+    "protein_g": 8,
+    "carbs_g": 28,
+    "fat_g": 4,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "lisan_asfour",
+      "pasta",
+      "warm",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
+  },
+  {
+    "name_en": "Bamia Stew with Rice (1 plate)",
+    "name_ar": "بامية بالأرز (طبق)",
+    "category": "stew",
+    "serving_size_g": 400,
+    "calories": 380,
+    "protein_g": 22,
+    "carbs_g": 45,
+    "fat_g": 12,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "stew",
+      "bamia",
+      "okra",
+      "rice",
+      "traditional",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/okra.jpg"
+  },
+  {
+    "name_en": "Fasoulya Khadra Stew with Rice",
+    "name_ar": "فاصوليا خضرا بالأرز",
+    "category": "stew",
+    "serving_size_g": 400,
+    "calories": 350,
+    "protein_g": 18,
+    "carbs_g": 48,
+    "fat_g": 8,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "stew",
+      "green_beans",
+      "rice",
+      "traditional",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Bisilla Stew with Rice",
+    "name_ar": "بسلة بالأرز",
+    "category": "stew",
+    "serving_size_g": 400,
+    "calories": 400,
+    "protein_g": 22,
+    "carbs_g": 52,
+    "fat_g": 10,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "stew",
+      "peas",
+      "rice",
+      "protein",
+      "fiber",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Sabanekh Stew with Rice (Spinach)",
+    "name_ar": "سبانخ بالأرز",
+    "category": "stew",
+    "serving_size_g": 400,
+    "calories": 340,
+    "protein_g": 16,
+    "carbs_g": 45,
+    "fat_g": 10,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "stew",
+      "spinach",
+      "rice",
+      "iron",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "White Bean Stew (Fasoulya Beyda) with Rice",
+    "name_ar": "فاصوليا بيضا بالأرز",
+    "category": "stew",
+    "serving_size_g": 400,
+    "calories": 420,
+    "protein_g": 22,
+    "carbs_g": 58,
+    "fat_g": 10,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "stew",
+      "white_beans",
+      "rice",
+      "protein",
+      "fiber",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/white-beans.jpg"
+  },
+  {
+    "name_en": "Potato Tagine with Meat",
+    "name_ar": "صينية بطاطس باللحمة",
+    "category": "stew",
+    "serving_size_g": 400,
+    "calories": 480,
+    "protein_g": 28,
+    "carbs_g": 40,
+    "fat_g": 22,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "stew",
+      "potato",
+      "meat",
+      "oven",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potatoes.jpg"
+  },
+  {
+    "name_en": "Torly (Egyptian Mixed Vegetable Bake)",
+    "name_ar": "طرلي (خضار مشكل بالفرن)",
+    "category": "stew",
+    "serving_size_g": 350,
+    "calories": 250,
+    "protein_g": 8,
+    "carbs_g": 32,
+    "fat_g": 10,
+    "fiber_g": 7,
+    "is_egyptian": true,
+    "tags": [
+      "stew",
+      "torly",
+      "vegetables",
+      "oven",
+      "low_calorie",
+      "traditional",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Egyptian Green Salad (Salata Khadra, 1 plate)",
+    "name_ar": "سلطة خضرا مصرية (طبق)",
+    "category": "salad",
+    "serving_size_g": 200,
+    "calories": 60,
+    "protein_g": 2,
+    "carbs_g": 10,
+    "fat_g": 2,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "green",
+      "low_calorie",
+      "vitamins",
+      "cutting",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Tahini Salad (1/2 cup)",
+    "name_ar": "سلطة طحينة (نصف كوب)",
+    "category": "salad",
+    "serving_size_g": 100,
+    "calories": 150,
+    "protein_g": 4,
+    "carbs_g": 8,
+    "fat_g": 12,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "tahini",
+      "dip",
+      "calcium",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Baba Ganoush (Eggplant Dip, 1/2 cup)",
+    "name_ar": "بابا غنوج (نصف كوب)",
+    "category": "salad",
+    "serving_size_g": 120,
+    "calories": 130,
+    "protein_g": 3,
+    "carbs_g": 10,
+    "fat_g": 9,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "baba_ganoush",
+      "eggplant",
+      "dip",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/eggplant.jpg"
+  },
+  {
+    "name_en": "Tabouleh Salad (1 cup)",
+    "name_ar": "سلطة تبولة (كوب)",
+    "category": "salad",
+    "serving_size_g": 150,
+    "calories": 100,
+    "protein_g": 3,
+    "carbs_g": 16,
+    "fat_g": 4,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "tabouleh",
+      "parsley",
+      "bulgur",
+      "low_calorie",
+      "vitamins"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Fattoush Salad (1 plate)",
+    "name_ar": "سلطة فتوش (طبق)",
+    "category": "salad",
+    "serving_size_g": 200,
+    "calories": 150,
+    "protein_g": 3,
+    "carbs_g": 18,
+    "fat_g": 8,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "fattoush",
+      "bread",
+      "vegetables",
+      "sumac"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Caesar Salad with Chicken (1 plate)",
+    "name_ar": "سيزر سلطة بالفراخ (طبق)",
+    "category": "salad",
+    "serving_size_g": 350,
+    "calories": 400,
+    "protein_g": 30,
+    "carbs_g": 15,
+    "fat_g": 25,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "salad",
+      "caesar",
+      "chicken",
+      "protein",
+      "restaurant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Greek Salad (1 plate)",
+    "name_ar": "سلطة يونانية (طبق)",
+    "category": "salad",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 6,
+    "carbs_g": 10,
+    "fat_g": 16,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "salad",
+      "greek",
+      "feta",
+      "olives",
+      "healthy_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Tuna Salad (No Mayo, 1 plate)",
+    "name_ar": "سلطة تونة (بدون مايونيز، طبق)",
+    "category": "salad",
+    "serving_size_g": 300,
+    "calories": 220,
+    "protein_g": 28,
+    "carbs_g": 12,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "tuna",
+      "protein",
+      "cutting",
+      "low_carb",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/canned-tuna.jpg"
+  },
+  {
+    "name_en": "Mixed Bean Salad (1 cup)",
+    "name_ar": "سلطة فاصوليا مشكل (كوب)",
+    "category": "salad",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 10,
+    "carbs_g": 30,
+    "fat_g": 3,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "salad",
+      "beans",
+      "protein",
+      "fiber",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  }
+]

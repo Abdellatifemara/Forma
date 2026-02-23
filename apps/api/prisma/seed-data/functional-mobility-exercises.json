@@ -1,0 +1,777 @@
+[
+  {
+    "id": "func-burpee",
+    "name_en": "Burpee",
+    "name_ar": "بيربي",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "CHEST",
+      "SHOULDERS",
+      "QUADS",
+      "CORE"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "intermediate",
+    "category": "CARDIO",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "cardio",
+      "full-body",
+      "no-equipment",
+      "hiit",
+      "home-training"
+    ]
+  },
+  {
+    "id": "func-high-knees",
+    "name_en": "High Knees",
+    "name_ar": "ركب عالية",
+    "primary_muscle": "QUADS",
+    "secondary_muscles": [
+      "CORE",
+      "HIP_FLEXORS",
+      "CALVES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "CARDIO",
+    "default_sets": 3,
+    "default_reps": 30,
+    "tags": [
+      "cardio",
+      "warm-up",
+      "no-equipment",
+      "home-training"
+    ]
+  },
+  {
+    "id": "func-jump-squat",
+    "name_en": "Jump Squat",
+    "name_ar": "سكوات بقفز",
+    "primary_muscle": "QUADS",
+    "secondary_muscles": [
+      "GLUTES",
+      "CALVES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "intermediate",
+    "category": "PLYOMETRICS",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "plyometric",
+      "explosive",
+      "no-equipment",
+      "home-training"
+    ]
+  },
+  {
+    "id": "func-jump-lunge",
+    "name_en": "Jump Lunge",
+    "name_ar": "لنج بقفز",
+    "primary_muscle": "QUADS",
+    "secondary_muscles": [
+      "GLUTES",
+      "HAMSTRINGS",
+      "CALVES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "advanced",
+    "category": "PLYOMETRICS",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "plyometric",
+      "explosive",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "func-bear-crawl",
+    "name_en": "Bear Crawl",
+    "name_ar": "زحف الدب",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "CORE",
+      "QUADS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "intermediate",
+    "category": "FUNCTIONAL",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "functional",
+      "crawl",
+      "no-equipment",
+      "home-training"
+    ]
+  },
+  {
+    "id": "func-turkish-getup",
+    "name_en": "Turkish Get-Up",
+    "name_ar": "تركش جت أب",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "CORE",
+      "GLUTES"
+    ],
+    "equipment": [
+      "KETTLEBELL"
+    ],
+    "difficulty": "advanced",
+    "category": "FUNCTIONAL",
+    "default_sets": 3,
+    "default_reps": 5,
+    "tags": [
+      "functional",
+      "stability",
+      "kettlebell"
+    ]
+  },
+  {
+    "id": "func-kettlebell-swing",
+    "name_en": "Kettlebell Swing",
+    "name_ar": "كيتل بل سوينج",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": [
+      "HAMSTRINGS",
+      "CORE",
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "KETTLEBELL"
+    ],
+    "difficulty": "intermediate",
+    "category": "FUNCTIONAL",
+    "default_sets": 4,
+    "default_reps": 15,
+    "tags": [
+      "kettlebell",
+      "explosive",
+      "posterior-chain"
+    ]
+  },
+  {
+    "id": "func-battle-ropes",
+    "name_en": "Battle Ropes",
+    "name_ar": "حبال المعركة",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "CORE",
+      "ARMS",
+      "BACK"
+    ],
+    "equipment": [
+      "BATTLE_ROPES"
+    ],
+    "difficulty": "intermediate",
+    "category": "CARDIO",
+    "default_sets": 4,
+    "default_reps": 30,
+    "tags": [
+      "cardio",
+      "arms",
+      "hiit"
+    ]
+  },
+  {
+    "id": "func-sled-push",
+    "name_en": "Sled Push",
+    "name_ar": "دفع الزلاجة",
+    "primary_muscle": "QUADS",
+    "secondary_muscles": [
+      "GLUTES",
+      "CALVES",
+      "CORE"
+    ],
+    "equipment": [
+      "SLED"
+    ],
+    "difficulty": "intermediate",
+    "category": "FUNCTIONAL",
+    "default_sets": 4,
+    "default_reps": 1,
+    "tags": [
+      "functional",
+      "legs",
+      "conditioning"
+    ]
+  },
+  {
+    "id": "func-wall-ball",
+    "name_en": "Wall Ball Shot",
+    "name_ar": "رمي الكرة على الحائط",
+    "primary_muscle": "QUADS",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "GLUTES",
+      "CORE"
+    ],
+    "equipment": [
+      "MEDICINE_BALL"
+    ],
+    "difficulty": "intermediate",
+    "category": "FUNCTIONAL",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "crossfit",
+      "functional",
+      "full-body"
+    ]
+  },
+  {
+    "id": "func-muscle-up",
+    "name_en": "Muscle Up",
+    "name_ar": "ماصل أب",
+    "primary_muscle": "LATS",
+    "secondary_muscles": [
+      "CHEST",
+      "TRICEPS",
+      "CORE"
+    ],
+    "equipment": [
+      "PULL_UP_BAR"
+    ],
+    "difficulty": "advanced",
+    "category": "BACK",
+    "default_sets": 3,
+    "default_reps": 3,
+    "tags": [
+      "calisthenics",
+      "advanced",
+      "compound"
+    ]
+  },
+  {
+    "id": "func-handstand-pushup",
+    "name_en": "Handstand Push-Up",
+    "name_ar": "ضغط بالوقوف على اليدين",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "TRICEPS",
+      "CORE",
+      "TRAPS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "advanced",
+    "category": "SHOULDERS",
+    "default_sets": 3,
+    "default_reps": 5,
+    "tags": [
+      "calisthenics",
+      "advanced",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "func-l-sit",
+    "name_en": "L-Sit Hold",
+    "name_ar": "وضعية الـ إل",
+    "primary_muscle": "CORE",
+    "secondary_muscles": [
+      "HIP_FLEXORS",
+      "TRICEPS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "advanced",
+    "category": "CORE",
+    "default_sets": 3,
+    "default_reps": 1,
+    "tags": [
+      "calisthenics",
+      "isometric",
+      "core"
+    ]
+  },
+  {
+    "id": "func-human-flag",
+    "name_en": "Human Flag (Progression)",
+    "name_ar": "العلم البشري",
+    "primary_muscle": "CORE",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "LATS",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "advanced",
+    "category": "CORE",
+    "default_sets": 3,
+    "default_reps": 1,
+    "tags": [
+      "calisthenics",
+      "advanced",
+      "isometric"
+    ]
+  },
+  {
+    "id": "mob-hip-flexor-stretch",
+    "name_en": "Hip Flexor Stretch",
+    "name_ar": "تمدد ثني الورك",
+    "primary_muscle": "HIP_FLEXORS",
+    "secondary_muscles": [
+      "QUADS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 1,
+    "tags": [
+      "stretch",
+      "mobility",
+      "warm-up",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-pigeon-pose",
+    "name_en": "Pigeon Pose",
+    "name_ar": "وضعية الحمامة",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": [
+      "HIP_FLEXORS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 1,
+    "tags": [
+      "stretch",
+      "yoga",
+      "hip-opener",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-90-90-stretch",
+    "name_en": "90/90 Hip Stretch",
+    "name_ar": "تمدد الورك ٩٠/٩٠",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": [
+      "HIP_FLEXORS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 1,
+    "tags": [
+      "stretch",
+      "mobility",
+      "hip",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-world-greatest-stretch",
+    "name_en": "World's Greatest Stretch",
+    "name_ar": "أعظم تمدد في العالم",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "HIP_FLEXORS",
+      "THORACIC_SPINE",
+      "HAMSTRINGS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 5,
+    "tags": [
+      "stretch",
+      "mobility",
+      "warm-up",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-cat-cow",
+    "name_en": "Cat-Cow Stretch",
+    "name_ar": "تمدد القطة والبقرة",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [
+      "CORE",
+      "NECK"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 10,
+    "tags": [
+      "stretch",
+      "yoga",
+      "spine",
+      "warm-up",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-downward-dog",
+    "name_en": "Downward Dog",
+    "name_ar": "وضعية الكلب المقلوب",
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": [
+      "CALVES",
+      "SHOULDERS",
+      "BACK"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 1,
+    "tags": [
+      "yoga",
+      "stretch",
+      "full-body",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-child-pose",
+    "name_en": "Child's Pose",
+    "name_ar": "وضعية الطفل",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "HIPS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 1,
+    "tags": [
+      "yoga",
+      "recovery",
+      "relaxation",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-cobra-stretch",
+    "name_en": "Cobra Stretch",
+    "name_ar": "تمدد الكوبرا",
+    "primary_muscle": "CORE",
+    "secondary_muscles": [
+      "CHEST",
+      "BACK"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 1,
+    "tags": [
+      "yoga",
+      "stretch",
+      "spine-extension",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-foam-roll-quads",
+    "name_en": "Foam Roll Quads",
+    "name_ar": "فوم رول فخذ أمامي",
+    "primary_muscle": "QUADS",
+    "secondary_muscles": [],
+    "equipment": [
+      "FOAM_ROLLER"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 1,
+    "default_reps": 1,
+    "tags": [
+      "foam-roll",
+      "recovery",
+      "myofascial"
+    ]
+  },
+  {
+    "id": "mob-foam-roll-back",
+    "name_en": "Foam Roll Upper Back",
+    "name_ar": "فوم رول ظهر علوي",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [
+      "THORACIC_SPINE"
+    ],
+    "equipment": [
+      "FOAM_ROLLER"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 1,
+    "default_reps": 1,
+    "tags": [
+      "foam-roll",
+      "recovery",
+      "thoracic"
+    ]
+  },
+  {
+    "id": "mob-foam-roll-it-band",
+    "name_en": "Foam Roll IT Band",
+    "name_ar": "فوم رول الشريط الحرقفي",
+    "primary_muscle": "QUADS",
+    "secondary_muscles": [
+      "GLUTES"
+    ],
+    "equipment": [
+      "FOAM_ROLLER"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 1,
+    "default_reps": 1,
+    "tags": [
+      "foam-roll",
+      "recovery",
+      "runners"
+    ]
+  },
+  {
+    "id": "mob-shoulder-dislocate",
+    "name_en": "Shoulder Dislocate (with Band/Stick)",
+    "name_ar": "تمدد الكتف بالعصا",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "CHEST",
+      "BACK"
+    ],
+    "equipment": [
+      "RESISTANCE_BAND"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 10,
+    "tags": [
+      "mobility",
+      "shoulder",
+      "warm-up"
+    ]
+  },
+  {
+    "id": "mob-thoracic-rotation",
+    "name_en": "Thoracic Spine Rotation",
+    "name_ar": "دوران العمود الفقري الصدري",
+    "primary_muscle": "BACK",
+    "secondary_muscles": [
+      "CORE",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 10,
+    "tags": [
+      "mobility",
+      "spine",
+      "warm-up",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-ankle-mobility",
+    "name_en": "Ankle Mobility Drill",
+    "name_ar": "تمرين مرونة الكاحل",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 15,
+    "tags": [
+      "mobility",
+      "ankle",
+      "squat-prep",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "mob-dead-hang",
+    "name_en": "Dead Hang",
+    "name_ar": "تعلق سلبي",
+    "primary_muscle": "FOREARMS",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "BACK"
+    ],
+    "equipment": [
+      "PULL_UP_BAR"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 3,
+    "default_reps": 1,
+    "tags": [
+      "grip",
+      "decompress",
+      "spine",
+      "recovery"
+    ]
+  },
+  {
+    "id": "mob-wall-angels",
+    "name_en": "Wall Angels",
+    "name_ar": "ملاك الحائط",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "BACK",
+      "CHEST"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "STRETCHING",
+    "default_sets": 2,
+    "default_reps": 10,
+    "tags": [
+      "mobility",
+      "posture",
+      "shoulder",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "func-plank-to-pushup",
+    "name_en": "Plank to Push-Up",
+    "name_ar": "بلانك إلى ضغط",
+    "primary_muscle": "CORE",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "TRICEPS",
+      "CHEST"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "intermediate",
+    "category": "CORE",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "core",
+      "arms",
+      "no-equipment",
+      "home-training"
+    ]
+  },
+  {
+    "id": "func-inchworm",
+    "name_en": "Inchworm",
+    "name_ar": "الدودة",
+    "primary_muscle": "CORE",
+    "secondary_muscles": [
+      "HAMSTRINGS",
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "FUNCTIONAL",
+    "default_sets": 2,
+    "default_reps": 8,
+    "tags": [
+      "warm-up",
+      "mobility",
+      "full-body",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "func-crab-walk",
+    "name_en": "Crab Walk",
+    "name_ar": "مشية السلطعون",
+    "primary_muscle": "TRICEPS",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "CORE",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "beginner",
+    "category": "FUNCTIONAL",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "functional",
+      "no-equipment",
+      "home-training"
+    ]
+  },
+  {
+    "id": "func-plyo-pushup",
+    "name_en": "Plyometric Push-Up (Clap Push-Up)",
+    "name_ar": "ضغط بالقفز (بالتصفيق)",
+    "primary_muscle": "CHEST",
+    "secondary_muscles": [
+      "TRICEPS",
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "advanced",
+    "category": "CHEST",
+    "default_sets": 3,
+    "default_reps": 8,
+    "tags": [
+      "plyometric",
+      "explosive",
+      "no-equipment",
+      "chest"
+    ]
+  }
+]

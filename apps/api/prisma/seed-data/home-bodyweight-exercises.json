@@ -1,0 +1,626 @@
+[
+  {
+    "id": "home-001",
+    "name_en": "Push-Up (Standard)",
+    "name_ar": "ضغط (عادي)",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "anterior_deltoid",
+      "core"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "chest",
+      "push",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-003",
+    "name_en": "Wide Push-Up",
+    "name_ar": "ضغط واسع",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "anterior_deltoid",
+      "triceps"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "chest",
+      "wide_grip",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-004",
+    "name_en": "Decline Push-Up (Feet Elevated)",
+    "name_ar": "ضغط منحدر (رجل مرفوعة)",
+    "primary_muscle": "upper_chest",
+    "secondary_muscles": [
+      "anterior_deltoid",
+      "triceps",
+      "core"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "upper_chest",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-005",
+    "name_en": "Pike Push-Up",
+    "name_ar": "ضغط بايك (شكل V)",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "upper_chest"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "shoulders",
+      "overhead_press_alternative",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-006",
+    "name_en": "Bodyweight Squat",
+    "name_ar": "سكوات بوزن الجسم",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 4,
+    "default_reps": 20,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "legs",
+      "squat",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-007",
+    "name_en": "Bulgarian Split Squat (Chair)",
+    "name_ar": "سبليت سكوات بلغاري (على كرسي)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "balance"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "10 each leg",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "legs",
+      "unilateral",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-008",
+    "name_en": "Bodyweight Lunge (Walking)",
+    "name_ar": "لانج بوزن الجسم (مشي)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "12 each leg",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "legs",
+      "lunge",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-010",
+    "name_en": "Single Leg Glute Bridge",
+    "name_ar": "بريدج رجل واحدة",
+    "primary_muscle": "glutes",
+    "secondary_muscles": [
+      "hamstrings",
+      "core",
+      "balance"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "12 each leg",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "glutes",
+      "unilateral",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-011",
+    "name_en": "Wall Sit",
+    "name_ar": "جلوس على الحائط",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "calves"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "45s hold",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "legs",
+      "isometric",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-012",
+    "name_en": "Calf Raise (On Step)",
+    "name_ar": "رفع السمانة (على درجة)",
+    "primary_muscle": "calves",
+    "secondary_muscles": [
+      "tibialis"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 4,
+    "default_reps": 20,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "calves",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-013",
+    "name_en": "Inverted Row (Under Table)",
+    "name_ar": "تجديف معكوس (تحت طاولة)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rhomboids",
+      "rear_deltoid"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "back",
+      "row_alternative",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-014",
+    "name_en": "Doorframe Pull-Up",
+    "name_ar": "عقلة على إطار الباب",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "forearms",
+      "rear_deltoid"
+    ],
+    "equipment": "doorframe",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 8,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "back",
+      "pull_up",
+      "minimal_equipment"
+    ]
+  },
+  {
+    "id": "home-015",
+    "name_en": "Superman Hold",
+    "name_ar": "تمرين سوبرمان",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "upper_back"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "15 (2s hold each)",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "back",
+      "posterior_chain",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-021",
+    "name_en": "Leg Raise (Lying)",
+    "name_ar": "رفع الرجلين (مستلقي)",
+    "primary_muscle": "lower_abs",
+    "secondary_muscles": [
+      "hip_flexors",
+      "core"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "abs",
+      "lower_abs",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-023",
+    "name_en": "Tricep Dip (Chair)",
+    "name_ar": "ديبس ترايسبس (على كرسي)",
+    "primary_muscle": "triceps",
+    "secondary_muscles": [
+      "chest",
+      "anterior_deltoid"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "triceps",
+      "dip_alternative",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-024",
+    "name_en": "Step-Up (Chair/Stairs)",
+    "name_ar": "ستيب أب (كرسي/سلم)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "calves"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "10 each leg",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "legs",
+      "unilateral",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-029",
+    "name_en": "Reverse Lunge",
+    "name_ar": "لانج خلفي",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "10 each leg",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "legs",
+      "lunge",
+      "knee_friendly",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-030",
+    "name_en": "Donkey Kick",
+    "name_ar": "ركلة الحمار",
+    "primary_muscle": "glutes",
+    "secondary_muscles": [
+      "hamstrings",
+      "lower_back"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "15 each leg",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "glutes",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-031",
+    "name_en": "Fire Hydrant",
+    "name_ar": "فاير هايدرنت",
+    "primary_muscle": "hip_abductors",
+    "secondary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "15 each leg",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "glutes",
+      "hip",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-032",
+    "name_en": "Towel Bicep Curl (Isometric)",
+    "name_ar": "كيرل بالمنشفة (ثابت)",
+    "primary_muscle": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": "towel",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": "10s hold x 5",
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "biceps",
+      "isometric",
+      "minimal_equipment"
+    ]
+  },
+  {
+    "id": "home-033",
+    "name_en": "Water Jug Curl",
+    "name_ar": "كيرل بجالون المية",
+    "primary_muscle": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": "water_jug",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "home_workout",
+      "biceps",
+      "improvised_weight",
+      "minimal_equipment"
+    ]
+  },
+  {
+    "id": "home-034",
+    "name_en": "Water Jug Lateral Raise",
+    "name_ar": "رفع جانبي بجالون المية",
+    "primary_muscle": "lateral_deltoid",
+    "secondary_muscles": [
+      "traps",
+      "anterior_deltoid"
+    ],
+    "equipment": "water_jug",
+    "difficulty": "beginner",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "home_workout",
+      "shoulders",
+      "improvised_weight",
+      "minimal_equipment"
+    ]
+  },
+  {
+    "id": "home-035",
+    "name_en": "Backpack Weighted Squat",
+    "name_ar": "سكوات بشنطة ضهر مليانة",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": "backpack",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 4,
+    "default_reps": 15,
+    "tags": [
+      "home_workout",
+      "legs",
+      "improvised_weight",
+      "minimal_equipment"
+    ]
+  },
+  {
+    "id": "home-036",
+    "name_en": "Backpack Weighted Push-Up",
+    "name_ar": "ضغط بشنطة ضهر مليانة",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "anterior_deltoid",
+      "core"
+    ],
+    "equipment": "backpack",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "home_workout",
+      "chest",
+      "improvised_weight",
+      "minimal_equipment"
+    ]
+  },
+  {
+    "id": "home-037",
+    "name_en": "Door Frame Row (Towel)",
+    "name_ar": "تجديف على إطار الباب (بمنشفة)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rhomboids",
+      "grip"
+    ],
+    "equipment": "towel",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "home_workout",
+      "back",
+      "improvised",
+      "minimal_equipment"
+    ]
+  },
+  {
+    "id": "home-038",
+    "name_en": "Hindu Push-Up",
+    "name_ar": "ضغط هندي",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "shoulders",
+      "triceps",
+      "core",
+      "lower_back",
+      "hip_flexors"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "chest",
+      "shoulders",
+      "flow",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-039",
+    "name_en": "Hindu Squat",
+    "name_ar": "سكوات هندي",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "calves",
+      "glutes",
+      "cardio"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "legs",
+      "cardio",
+      "no_equipment"
+    ]
+  },
+  {
+    "id": "home-040",
+    "name_en": "Sissy Squat (Bodyweight)",
+    "name_ar": "سيسي سكوات",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "hip_flexors",
+      "core"
+    ],
+    "equipment": "none",
+    "difficulty": "advanced",
+    "category": "home_workout",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "home_workout",
+      "bodyweight",
+      "legs",
+      "quad_isolation",
+      "no_equipment"
+    ]
+  }
+]

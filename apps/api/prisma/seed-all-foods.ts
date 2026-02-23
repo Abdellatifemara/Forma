@@ -35,6 +35,8 @@ interface FoodData {
   fiberG?: number;
   isEgyptian?: boolean;
   availableAt?: string[];
+  imageUrl?: string | null;
+  image_url?: string | null;
 }
 
 function normalizeFood(raw: FoodData, index: number, filePrefix?: string): any {
@@ -57,6 +59,7 @@ function normalizeFood(raw: FoodData, index: number, filePrefix?: string): any {
   const barcode = raw.barcode || null;
   const availableAt = raw.available_at || raw.availableAt || ['Egyptian Markets'];
   const tags = raw.tags || [category.toLowerCase()];
+  const imageUrl = raw.imageUrl || raw.image_url || null;
 
   return {
     externalId,
@@ -75,6 +78,7 @@ function normalizeFood(raw: FoodData, index: number, filePrefix?: string): any {
     fiberG,
     isEgyptian,
     barcode,
+    imageUrl,
     availableAt,
     tags
   };
@@ -215,6 +219,7 @@ async function main() {
               fatG: food.fatG,
               fiberG: food.fiberG,
               isEgyptian: food.isEgyptian,
+              imageUrl: food.imageUrl,
               availableAt: food.availableAt,
               tags: food.tags
             },
@@ -243,6 +248,7 @@ async function main() {
               fatG: food.fatG,
               fiberG: food.fiberG,
               isEgyptian: food.isEgyptian,
+              imageUrl: food.imageUrl,
               availableAt: food.availableAt,
               tags: food.tags
             },

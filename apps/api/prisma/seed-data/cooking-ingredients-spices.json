@@ -1,0 +1,313 @@
+[
+  {
+    "name_en": "Olive Oil (Extra Virgin, 1 tbsp)",
+    "name_ar": "زيت زيتون بكر (ملعقة كبيرة)",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "oil",
+      "healthy_fat",
+      "cooking",
+      "heart_healthy",
+      "essential"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/olive-oil.jpg"
+  },
+  {
+    "name_en": "Sunflower Oil (1 tbsp)",
+    "name_ar": "زيت عباد الشمس (ملعقة كبيرة)",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "oil",
+      "cooking",
+      "common",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vegetable-oil.jpg"
+  },
+  {
+    "name_en": "Corn Oil (1 tbsp)",
+    "name_ar": "زيت ذرة (ملعقة كبيرة)",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "oil",
+      "cooking",
+      "common"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/corn.jpg"
+  },
+  {
+    "name_en": "Egyptian Samna (Ghee, 1 tbsp)",
+    "name_ar": "سمنة مصرية (ملعقة كبيرة)",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 130,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "oil",
+      "ghee",
+      "samna",
+      "traditional",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ghee.jpg"
+  },
+  {
+    "name_en": "Peanut Butter (1 tbsp)",
+    "name_ar": "زبدة فول سوداني (ملعقة كبيرة)",
+    "category": "spread",
+    "serving_size_g": 16,
+    "calories": 95,
+    "protein_g": 4,
+    "carbs_g": 3,
+    "fat_g": 8,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "spread",
+      "peanut_butter",
+      "protein",
+      "healthy_fat",
+      "bulking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
+  },
+  {
+    "name_en": "Tahini (1 tbsp)",
+    "name_ar": "طحينة (ملعقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 90,
+    "protein_g": 3,
+    "carbs_g": 3,
+    "fat_g": 8,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "tahini",
+      "sesame",
+      "egyptian",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Honey (Pure, 1 tbsp)",
+    "name_ar": "عسل نحل (ملعقة كبيرة)",
+    "category": "sweetener",
+    "serving_size_g": 21,
+    "calories": 64,
+    "protein_g": 0,
+    "carbs_g": 17,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "sweetener",
+      "honey",
+      "natural",
+      "energy",
+      "pre_workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Black Seed (Habba Sauda, 1 tsp)",
+    "name_ar": "حبة البركة / حبة سوداء (ملعقة صغيرة)",
+    "category": "spice",
+    "serving_size_g": 5,
+    "calories": 25,
+    "protein_g": 1,
+    "carbs_g": 2,
+    "fat_g": 1.5,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "black_seed",
+      "immune",
+      "traditional",
+      "prophetic"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sesame-seeds.jpg"
+  },
+  {
+    "name_en": "Cumin (Kamoun, 1 tsp)",
+    "name_ar": "كمون (ملعقة صغيرة)",
+    "category": "spice",
+    "serving_size_g": 3,
+    "calories": 8,
+    "protein_g": 0.5,
+    "carbs_g": 1,
+    "fat_g": 0.5,
+    "fiber_g": 0.3,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "cumin",
+      "digestion",
+      "egyptian_essential"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cumin.jpg"
+  },
+  {
+    "name_en": "Turmeric (Kurkum, 1 tsp)",
+    "name_ar": "كركم (ملعقة صغيرة)",
+    "category": "spice",
+    "serving_size_g": 3,
+    "calories": 9,
+    "protein_g": 0.3,
+    "carbs_g": 2,
+    "fat_g": 0.3,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "turmeric",
+      "anti_inflammatory",
+      "superfood"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turmeric.jpg"
+  },
+  {
+    "name_en": "Cinnamon (Erfa, 1 tsp)",
+    "name_ar": "قرفة (ملعقة صغيرة)",
+    "category": "spice",
+    "serving_size_g": 3,
+    "calories": 6,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "cinnamon",
+      "blood_sugar",
+      "oats_topping"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cinnamon.jpg"
+  },
+  {
+    "name_en": "Garlic (3 cloves)",
+    "name_ar": "ثوم (3 فصوص)",
+    "category": "condiment",
+    "serving_size_g": 9,
+    "calories": 13,
+    "protein_g": 0.5,
+    "carbs_g": 3,
+    "fat_g": 0,
+    "fiber_g": 0.2,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "garlic",
+      "immune",
+      "heart_healthy",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/garlic.jpg"
+  },
+  {
+    "name_en": "Lemon Juice (1 lemon)",
+    "name_ar": "عصير ليمون (ليمونة)",
+    "category": "condiment",
+    "serving_size_g": 50,
+    "calories": 12,
+    "protein_g": 0,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "lemon",
+      "vitamin_c",
+      "dressing",
+      "zero_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  },
+  {
+    "name_en": "Dukkah Spice Mix (1 tbsp)",
+    "name_ar": "دقة (ملعقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 10,
+    "calories": 50,
+    "protein_g": 2,
+    "carbs_g": 3,
+    "fat_g": 4,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "dukkah",
+      "egyptian",
+      "nut_spice",
+      "traditional"
+    ]
+  },
+  {
+    "name_en": "Balsamic Vinegar (1 tbsp)",
+    "name_ar": "خل بلسمي (ملعقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 14,
+    "protein_g": 0,
+    "carbs_g": 3,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "vinegar",
+      "dressing",
+      "salad",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  },
+  {
+    "name_en": "Sugar (White, 1 tsp)",
+    "name_ar": "سكر أبيض (ملعقة صغيرة)",
+    "category": "sweetener",
+    "serving_size_g": 4,
+    "calories": 16,
+    "protein_g": 0,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sweetener",
+      "sugar",
+      "empty_calories"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  }
+]

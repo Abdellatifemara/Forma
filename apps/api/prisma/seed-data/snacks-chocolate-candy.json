@@ -1,0 +1,884 @@
+[
+  {
+    "name_en": "Cadbury Dairy Milk (1 bar, 45g)",
+    "name_ar": "كادبوري ديري ميلك",
+    "category": "CARBS",
+    "serving_size_g": 45,
+    "calories": 240,
+    "protein_g": 3,
+    "carbs_g": 26,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "sugar_g": 24,
+    "is_egyptian": false,
+    "brand_en": "Cadbury",
+    "brand_ar": "كادبوري",
+    "tags": [
+      "chocolate",
+      "milk",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Galaxy Smooth Milk Chocolate (1 bar, 40g)",
+    "name_ar": "جالاكسي شوكولاتة حليب",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 215,
+    "protein_g": 2.5,
+    "carbs_g": 24,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "sugar_g": 22,
+    "is_egyptian": false,
+    "brand_en": "Galaxy",
+    "brand_ar": "جالاكسي",
+    "tags": [
+      "chocolate",
+      "milk",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "KitKat (1 bar, 4-finger)",
+    "name_ar": "كيت كات",
+    "category": "CARBS",
+    "serving_size_g": 42,
+    "calories": 210,
+    "protein_g": 3,
+    "carbs_g": 26,
+    "fat_g": 11,
+    "fiber_g": 0.5,
+    "sugar_g": 20,
+    "is_egyptian": false,
+    "brand_en": "KitKat",
+    "brand_ar": "كيت كات",
+    "tags": [
+      "chocolate",
+      "wafer",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Snickers (1 bar, regular)",
+    "name_ar": "سنيكرز",
+    "category": "CARBS",
+    "serving_size_g": 52,
+    "calories": 250,
+    "protein_g": 4,
+    "carbs_g": 32,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "sugar_g": 26,
+    "is_egyptian": false,
+    "brand_en": "Snickers",
+    "brand_ar": "سنيكرز",
+    "tags": [
+      "chocolate",
+      "peanut",
+      "caramel",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Twix (1 bar, twin)",
+    "name_ar": "تويكس",
+    "category": "CARBS",
+    "serving_size_g": 50,
+    "calories": 250,
+    "protein_g": 2.5,
+    "carbs_g": 32,
+    "fat_g": 13,
+    "fiber_g": 0.5,
+    "sugar_g": 24,
+    "is_egyptian": false,
+    "brand_en": "Twix",
+    "brand_ar": "تويكس",
+    "tags": [
+      "chocolate",
+      "caramel",
+      "biscuit"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Mars Bar (1 bar)",
+    "name_ar": "مارس",
+    "category": "CARBS",
+    "serving_size_g": 51,
+    "calories": 230,
+    "protein_g": 2,
+    "carbs_g": 34,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "sugar_g": 30,
+    "is_egyptian": false,
+    "brand_en": "Mars",
+    "brand_ar": "مارس",
+    "tags": [
+      "chocolate",
+      "caramel",
+      "nougat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Bounty (1 bar, twin)",
+    "name_ar": "باونتي",
+    "category": "CARBS",
+    "serving_size_g": 57,
+    "calories": 270,
+    "protein_g": 2,
+    "carbs_g": 32,
+    "fat_g": 15,
+    "fiber_g": 2,
+    "sugar_g": 28,
+    "is_egyptian": false,
+    "brand_en": "Bounty",
+    "brand_ar": "باونتي",
+    "tags": [
+      "chocolate",
+      "coconut"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "M&M's Peanut (1 bag, 45g)",
+    "name_ar": "إم أند إمز فول سوداني",
+    "category": "CARBS",
+    "serving_size_g": 45,
+    "calories": 220,
+    "protein_g": 5,
+    "carbs_g": 26,
+    "fat_g": 11,
+    "fiber_g": 1,
+    "sugar_g": 22,
+    "is_egyptian": false,
+    "brand_en": "M&M's",
+    "brand_ar": "إم أند إمز",
+    "tags": [
+      "chocolate",
+      "peanut",
+      "candy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanuts.jpg"
+  },
+  {
+    "name_en": "Ferrero Rocher (3 pieces)",
+    "name_ar": "فيريرو روشيه ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 38,
+    "calories": 220,
+    "protein_g": 3,
+    "carbs_g": 18,
+    "fat_g": 15,
+    "fiber_g": 1,
+    "sugar_g": 14,
+    "is_egyptian": false,
+    "brand_en": "Ferrero",
+    "brand_ar": "فيريرو",
+    "tags": [
+      "chocolate",
+      "hazelnut",
+      "premium"
+    ]
+  },
+  {
+    "name_en": "Kinder Bueno (1 bar)",
+    "name_ar": "كيندر بوينو",
+    "category": "CARBS",
+    "serving_size_g": 43,
+    "calories": 240,
+    "protein_g": 4,
+    "carbs_g": 22,
+    "fat_g": 15,
+    "fiber_g": 0.5,
+    "sugar_g": 18,
+    "is_egyptian": false,
+    "brand_en": "Kinder",
+    "brand_ar": "كيندر",
+    "tags": [
+      "chocolate",
+      "hazelnut",
+      "wafer"
+    ]
+  },
+  {
+    "name_en": "Kinder Surprise Egg (1 piece)",
+    "name_ar": "كيندر سربرايز",
+    "category": "CARBS",
+    "serving_size_g": 20,
+    "calories": 110,
+    "protein_g": 2,
+    "carbs_g": 11,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "sugar_g": 10,
+    "is_egyptian": false,
+    "brand_en": "Kinder",
+    "brand_ar": "كيندر",
+    "tags": [
+      "chocolate",
+      "kids",
+      "toy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Nutella B-ready (1 bar)",
+    "name_ar": "نوتيلا بي ريدي",
+    "category": "CARBS",
+    "serving_size_g": 22,
+    "calories": 115,
+    "protein_g": 1.5,
+    "carbs_g": 13,
+    "fat_g": 6.5,
+    "fiber_g": 0.5,
+    "sugar_g": 8,
+    "is_egyptian": false,
+    "brand_en": "Nutella",
+    "brand_ar": "نوتيلا",
+    "tags": [
+      "chocolate",
+      "hazelnut",
+      "wafer"
+    ]
+  },
+  {
+    "name_en": "Ulker Chocolate Wafer (3 pieces)",
+    "name_ar": "أولكر ويفر شوكولاتة ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 200,
+    "protein_g": 2.5,
+    "carbs_g": 24,
+    "fat_g": 11,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "brand_en": "Ulker",
+    "brand_ar": "أولكر",
+    "tags": [
+      "wafer",
+      "chocolate",
+      "turkish"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Corona Chocolate Bar (1 bar)",
+    "name_ar": "كورونا شوكولاتة",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 210,
+    "protein_g": 2,
+    "carbs_g": 24,
+    "fat_g": 12,
+    "fiber_g": 0.5,
+    "sugar_g": 20,
+    "is_egyptian": true,
+    "brand_en": "Corona",
+    "brand_ar": "كورونا",
+    "tags": [
+      "chocolate",
+      "egyptian-brand"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Dark Chocolate 70% (4 squares, 30g)",
+    "name_ar": "شوكولاتة دارك ٧٠٪ ٤ مربعات",
+    "category": "CARBS",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 2.5,
+    "carbs_g": 14,
+    "fat_g": 13,
+    "fiber_g": 3,
+    "sugar_g": 8,
+    "iron_mg": 3.5,
+    "is_egyptian": false,
+    "tags": [
+      "dark-chocolate",
+      "antioxidant",
+      "healthy-snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Dark Chocolate 85% (4 squares, 30g)",
+    "name_ar": "شوكولاتة دارك ٨٥٪ ٤ مربعات",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 175,
+    "protein_g": 3,
+    "carbs_g": 10,
+    "fat_g": 15,
+    "fiber_g": 4,
+    "sugar_g": 4,
+    "iron_mg": 4,
+    "is_egyptian": false,
+    "tags": [
+      "dark-chocolate",
+      "keto",
+      "low-sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Chipsy Cheese (1 bag, 70g)",
+    "name_ar": "شيبسي جبنة كيس",
+    "category": "CARBS",
+    "serving_size_g": 70,
+    "calories": 370,
+    "protein_g": 4,
+    "carbs_g": 42,
+    "fat_g": 22,
+    "fiber_g": 3,
+    "sodium_mg": 500,
+    "is_egyptian": true,
+    "brand_en": "Chipsy",
+    "brand_ar": "شيبسي",
+    "tags": [
+      "chips",
+      "cheese",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Chipsy Chili (1 bag, 70g)",
+    "name_ar": "شيبسي شيلي كيس",
+    "category": "CARBS",
+    "serving_size_g": 70,
+    "calories": 370,
+    "protein_g": 4,
+    "carbs_g": 42,
+    "fat_g": 22,
+    "fiber_g": 3,
+    "sodium_mg": 480,
+    "is_egyptian": true,
+    "brand_en": "Chipsy",
+    "brand_ar": "شيبسي",
+    "tags": [
+      "chips",
+      "spicy",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potato-chips.jpg"
+  },
+  {
+    "name_en": "Doritos Nacho Cheese (1 bag, 70g)",
+    "name_ar": "دوريتوس ناتشو تشيز كيس",
+    "category": "CARBS",
+    "serving_size_g": 70,
+    "calories": 350,
+    "protein_g": 5,
+    "carbs_g": 40,
+    "fat_g": 20,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "brand_en": "Doritos",
+    "brand_ar": "دوريتوس",
+    "tags": [
+      "chips",
+      "corn",
+      "cheese",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Pringles Original (1/3 can, ~40g)",
+    "name_ar": "برينجلز أوريجينال",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 210,
+    "protein_g": 2,
+    "carbs_g": 24,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "brand_en": "Pringles",
+    "brand_ar": "برينجلز",
+    "tags": [
+      "chips",
+      "crispy",
+      "snack"
+    ]
+  },
+  {
+    "name_en": "Bake Rolz Cheese (1 bag, 55g)",
+    "name_ar": "بيك رولز جبنة كيس",
+    "category": "CARBS",
+    "serving_size_g": 55,
+    "calories": 260,
+    "protein_g": 5,
+    "carbs_g": 36,
+    "fat_g": 11,
+    "fiber_g": 1.5,
+    "is_egyptian": true,
+    "brand_en": "Bake Rolz",
+    "brand_ar": "بيك رولز",
+    "tags": [
+      "baked",
+      "cheese",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Bake Stix BBQ (1 bag, 55g)",
+    "name_ar": "بيك ستيكس باربكيو كيس",
+    "category": "CARBS",
+    "serving_size_g": 55,
+    "calories": 250,
+    "protein_g": 5,
+    "carbs_g": 38,
+    "fat_g": 9,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Bake Stix",
+    "brand_ar": "بيك ستيكس",
+    "tags": [
+      "baked",
+      "sticks",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bbq-sauce.jpg"
+  },
+  {
+    "name_en": "Tiger Chips Ketchup (1 bag, 70g)",
+    "name_ar": "تايجر شيبس كاتشب كيس",
+    "category": "CARBS",
+    "serving_size_g": 70,
+    "calories": 360,
+    "protein_g": 4,
+    "carbs_g": 44,
+    "fat_g": 20,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Tiger",
+    "brand_ar": "تايجر",
+    "tags": [
+      "chips",
+      "ketchup",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ketchup.jpg"
+  },
+  {
+    "name_en": "Popcorn Butter (1 cup popped)",
+    "name_ar": "فشار بالزبدة كوب",
+    "category": "CARBS",
+    "serving_size_g": 30,
+    "calories": 150,
+    "protein_g": 2,
+    "carbs_g": 16,
+    "fat_g": 9,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "popcorn",
+      "butter",
+      "snack",
+      "movie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/popcorn.jpg"
+  },
+  {
+    "name_en": "Popcorn Plain (1 cup popped)",
+    "name_ar": "فشار سادة كوب",
+    "category": "CARBS",
+    "serving_size_g": 8,
+    "calories": 31,
+    "protein_g": 1,
+    "carbs_g": 6,
+    "fat_g": 0.4,
+    "fiber_g": 1.2,
+    "is_egyptian": false,
+    "tags": [
+      "popcorn",
+      "low-calorie",
+      "healthy-snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/popcorn.jpg"
+  },
+  {
+    "name_en": "Rice Cakes Plain (2 pieces)",
+    "name_ar": "رايس كيك ٢ حبة",
+    "category": "CARBS",
+    "serving_size_g": 18,
+    "calories": 70,
+    "protein_g": 1.5,
+    "carbs_g": 15,
+    "fat_g": 0.5,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "tags": [
+      "rice-cake",
+      "diet",
+      "low-calorie",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Pretzels (1 handful, 30g)",
+    "name_ar": "بريتزل ٣٠ جرام",
+    "category": "CARBS",
+    "serving_size_g": 30,
+    "calories": 110,
+    "protein_g": 3,
+    "carbs_g": 22,
+    "fat_g": 1,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "pretzels",
+      "low-fat",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
+  },
+  {
+    "name_en": "Breadsticks Grissini (5 sticks)",
+    "name_ar": "جريسيني ٥ أصابع",
+    "category": "CARBS",
+    "serving_size_g": 30,
+    "calories": 120,
+    "protein_g": 3,
+    "carbs_g": 22,
+    "fat_g": 2,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "breadsticks",
+      "snack",
+      "appetizer"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Haribo Gummy Bears (10 pieces)",
+    "name_ar": "هاريبو جامي بيرز ١٠ حبات",
+    "category": "CARBS",
+    "serving_size_g": 30,
+    "calories": 100,
+    "protein_g": 2,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 15,
+    "is_egyptian": false,
+    "brand_en": "Haribo",
+    "brand_ar": "هاريبو",
+    "tags": [
+      "candy",
+      "gummy",
+      "sugar"
+    ]
+  },
+  {
+    "name_en": "Skittles (1 bag, 40g)",
+    "name_ar": "سكيتلز كيس",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 160,
+    "protein_g": 0,
+    "carbs_g": 36,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "sugar_g": 32,
+    "is_egyptian": false,
+    "brand_en": "Skittles",
+    "brand_ar": "سكيتلز",
+    "tags": [
+      "candy",
+      "fruity",
+      "sugar"
+    ]
+  },
+  {
+    "name_en": "Mentos Roll (1 roll)",
+    "name_ar": "مينتوس رول",
+    "category": "CARBS",
+    "serving_size_g": 38,
+    "calories": 140,
+    "protein_g": 0,
+    "carbs_g": 34,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "sugar_g": 26,
+    "is_egyptian": false,
+    "brand_en": "Mentos",
+    "brand_ar": "مينتوس",
+    "tags": [
+      "candy",
+      "chewy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Oreo Cookies (3 cookies)",
+    "name_ar": "أوريو ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 34,
+    "calories": 160,
+    "protein_g": 1.5,
+    "carbs_g": 24,
+    "fat_g": 7,
+    "fiber_g": 0.5,
+    "sugar_g": 14,
+    "is_egyptian": false,
+    "brand_en": "Oreo",
+    "brand_ar": "أوريو",
+    "tags": [
+      "cookies",
+      "chocolate",
+      "cream"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Lotus Biscoff (2 cookies)",
+    "name_ar": "لوتس بسكويت ٢ حبة",
+    "category": "CARBS",
+    "serving_size_g": 25,
+    "calories": 120,
+    "protein_g": 1,
+    "carbs_g": 18,
+    "fat_g": 5,
+    "fiber_g": 0.5,
+    "sugar_g": 8,
+    "is_egyptian": false,
+    "brand_en": "Lotus",
+    "brand_ar": "لوتس",
+    "tags": [
+      "cookies",
+      "caramelized",
+      "biscuit"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Lotus Biscoff Spread (1 tbsp)",
+    "name_ar": "لوتس سبريد ملعقة",
+    "category": "CARBS",
+    "serving_size_g": 15,
+    "calories": 85,
+    "protein_g": 0.5,
+    "carbs_g": 10,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "sugar_g": 6,
+    "is_egyptian": false,
+    "brand_en": "Lotus",
+    "brand_ar": "لوتس",
+    "tags": [
+      "spread",
+      "caramel",
+      "dessert"
+    ]
+  },
+  {
+    "name_en": "Digestive Biscuits (3 pieces)",
+    "name_ar": "بسكويت دايجستف ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 45,
+    "calories": 200,
+    "protein_g": 3,
+    "carbs_g": 28,
+    "fat_g": 8,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "biscuit",
+      "wheat",
+      "tea-time"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Abu Auf Trail Mix (30g)",
+    "name_ar": "أبو عوف ميكس مكسرات ٣٠ جرام",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 160,
+    "protein_g": 5,
+    "carbs_g": 10,
+    "fat_g": 12,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "brand_en": "Abu Auf",
+    "brand_ar": "أبو عوف",
+    "tags": [
+      "nuts",
+      "trail-mix",
+      "healthy-snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/trail-mix.jpg"
+  },
+  {
+    "name_en": "Abu Auf Protein Balls (3 pieces)",
+    "name_ar": "أبو عوف كرات بروتين ٣ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 45,
+    "calories": 180,
+    "protein_g": 8,
+    "carbs_g": 16,
+    "fat_g": 10,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "brand_en": "Abu Auf",
+    "brand_ar": "أبو عوف",
+    "tags": [
+      "protein",
+      "energy-balls",
+      "healthy-snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Dates Medjool (3 pieces)",
+    "name_ar": "تمر مجدول ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 72,
+    "calories": 200,
+    "protein_g": 1.5,
+    "carbs_g": 54,
+    "fat_g": 0,
+    "fiber_g": 5,
+    "sugar_g": 48,
+    "potassium_mg": 500,
+    "is_egyptian": false,
+    "tags": [
+      "dates",
+      "natural-sugar",
+      "energy",
+      "ramadan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/dates.jpg"
+  },
+  {
+    "name_en": "Dried Figs (4 pieces)",
+    "name_ar": "تين مجفف ٤ حبات",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 100,
+    "protein_g": 1.5,
+    "carbs_g": 26,
+    "fat_g": 0.3,
+    "fiber_g": 4,
+    "calcium_mg": 55,
+    "is_egyptian": false,
+    "tags": [
+      "dried-fruit",
+      "fiber",
+      "natural"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/figs.jpg"
+  },
+  {
+    "name_en": "Dried Cranberries (1/4 cup)",
+    "name_ar": "كرانبيري مجفف ربع كوب",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 130,
+    "protein_g": 0,
+    "carbs_g": 33,
+    "fat_g": 0.5,
+    "fiber_g": 2,
+    "sugar_g": 28,
+    "is_egyptian": false,
+    "tags": [
+      "dried-fruit",
+      "salad-topping",
+      "snack"
+    ]
+  },
+  {
+    "name_en": "Protein Bar (Quest-style, 1 bar)",
+    "name_ar": "بروتين بار نوع كويست",
+    "category": "PROTEIN",
+    "serving_size_g": 60,
+    "calories": 190,
+    "protein_g": 21,
+    "carbs_g": 22,
+    "fat_g": 7,
+    "fiber_g": 14,
+    "sugar_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "protein-bar",
+      "low-sugar",
+      "gym",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola-bar.jpg"
+  },
+  {
+    "name_en": "Protein Bar (Mars/Snickers Protein, 1 bar)",
+    "name_ar": "بروتين بار مارس/سنيكرز",
+    "category": "PROTEIN",
+    "serving_size_g": 55,
+    "calories": 200,
+    "protein_g": 18,
+    "carbs_g": 18,
+    "fat_g": 7,
+    "fiber_g": 1,
+    "sugar_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "protein-bar",
+      "gym",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola-bar.jpg"
+  },
+  {
+    "name_en": "Granola Bar (Nature Valley, 1 bar)",
+    "name_ar": "جرانولا بار ناتشر فالي",
+    "category": "CARBS",
+    "serving_size_g": 42,
+    "calories": 190,
+    "protein_g": 4,
+    "carbs_g": 28,
+    "fat_g": 7,
+    "fiber_g": 2,
+    "sugar_g": 12,
+    "is_egyptian": false,
+    "brand_en": "Nature Valley",
+    "brand_ar": "ناتشر فالي",
+    "tags": [
+      "granola-bar",
+      "oats",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola.jpg"
+  },
+  {
+    "name_en": "Peanut Butter Cups (2 pieces, Reese's)",
+    "name_ar": "ريسز بينت بتر كابس ٢ حبة",
+    "category": "CARBS",
+    "serving_size_g": 42,
+    "calories": 210,
+    "protein_g": 5,
+    "carbs_g": 22,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "sugar_g": 18,
+    "is_egyptian": false,
+    "brand_en": "Reese's",
+    "brand_ar": "ريسز",
+    "tags": [
+      "chocolate",
+      "peanut-butter",
+      "candy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
+  }
+]

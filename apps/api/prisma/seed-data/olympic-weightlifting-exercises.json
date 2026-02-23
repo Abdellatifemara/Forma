@@ -1,0 +1,138 @@
+[
+  {
+    "id": "ex-oly-001",
+    "name_en": "Clean & Jerk (Full)",
+    "name_ar": "كلين أند جيرك (كامل)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "quadriceps",
+      "shoulders",
+      "traps",
+      "glutes"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "olympic_weightlifting",
+    "default_sets": 5,
+    "default_reps": "2",
+    "tags": [
+      "olympic",
+      "clean_jerk",
+      "full_body",
+      "explosive",
+      "competition"
+    ]
+  },
+  {
+    "id": "ex-oly-002",
+    "name_en": "Snatch (Full)",
+    "name_ar": "سناتش (كامل)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "shoulders",
+      "traps",
+      "quadriceps",
+      "glutes"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "olympic_weightlifting",
+    "default_sets": 5,
+    "default_reps": "2",
+    "tags": [
+      "olympic",
+      "snatch",
+      "full_body",
+      "explosive",
+      "competition"
+    ]
+  },
+  {
+    "id": "ex-oly-009",
+    "name_en": "Front Squat (Olympic Style, High Bar)",
+    "name_ar": "فرنت سكوات (أوليمبي، هاي بار)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "upper_back",
+      "core",
+      "glutes"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "olympic_weightlifting",
+    "default_sets": 5,
+    "default_reps": "3",
+    "tags": [
+      "olympic",
+      "front_squat",
+      "quads",
+      "clean_recovery"
+    ]
+  },
+  {
+    "id": "ex-oly-013",
+    "name_en": "Power Jerk (Push Jerk)",
+    "name_ar": "باور جيرك (بوش جيرك)",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "quadriceps"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "olympic_weightlifting",
+    "default_sets": 4,
+    "default_reps": "3",
+    "tags": [
+      "olympic",
+      "power_jerk",
+      "overhead",
+      "dip_drive"
+    ]
+  },
+  {
+    "id": "ex-oly-015",
+    "name_en": "Clean & Press (Strict)",
+    "name_ar": "كلين أند بريس (ستريكت)",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "traps",
+      "triceps",
+      "full_body"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "olympic_weightlifting",
+    "default_sets": 4,
+    "default_reps": "5",
+    "tags": [
+      "olympic",
+      "clean_press",
+      "strict_press",
+      "overhead",
+      "strength"
+    ]
+  },
+  {
+    "id": "ex-oly-019",
+    "name_en": "Block Clean (from blocks at knee)",
+    "name_ar": "بلوك كلين (من بلوكس عند الركبة)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "traps",
+      "quadriceps",
+      "hamstrings"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "olympic_weightlifting",
+    "default_sets": 4,
+    "default_reps": "3",
+    "tags": [
+      "olympic",
+      "block_clean",
+      "position_work",
+      "second_pull"
+    ]
+  }
+]

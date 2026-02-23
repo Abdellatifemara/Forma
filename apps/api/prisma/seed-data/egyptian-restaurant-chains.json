@@ -1,0 +1,611 @@
+[
+  {
+    "name_en": "Zooba - Foul Bowl (Regular)",
+    "name_ar": "زوبا - طبق فول (عادي)",
+    "category": "restaurant",
+    "serving_size_g": 300,
+    "calories": 350,
+    "protein_g": 16,
+    "carbs_g": 42,
+    "fat_g": 12,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "zooba",
+      "foul",
+      "egyptian",
+      "chain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
+  },
+  {
+    "name_en": "Zooba - Haloumi & Egg Wrap",
+    "name_ar": "زوبا - راب حلومي وبيض",
+    "category": "restaurant",
+    "serving_size_g": 280,
+    "calories": 480,
+    "protein_g": 22,
+    "carbs_g": 38,
+    "fat_g": 26,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "zooba",
+      "haloumi",
+      "egg",
+      "wrap",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flour-tortilla.jpg"
+  },
+  {
+    "name_en": "Kazouza - Chicken Wrap (Classic)",
+    "name_ar": "كازوزة - راب فراخ (كلاسيك)",
+    "category": "restaurant",
+    "serving_size_g": 300,
+    "calories": 520,
+    "protein_g": 28,
+    "carbs_g": 42,
+    "fat_g": 26,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "kazouza",
+      "chicken",
+      "wrap",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Buffalo Burger - Classic Burger",
+    "name_ar": "بافلو برجر - كلاسيك برجر",
+    "category": "restaurant",
+    "serving_size_g": 350,
+    "calories": 680,
+    "protein_g": 35,
+    "carbs_g": 45,
+    "fat_g": 40,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "buffalo_burger",
+      "burger",
+      "beef",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Buffalo Burger - Grilled Chicken Sandwich",
+    "name_ar": "بافلو برجر - ساندويتش فراخ مشوية",
+    "category": "restaurant",
+    "serving_size_g": 300,
+    "calories": 520,
+    "protein_g": 32,
+    "carbs_g": 40,
+    "fat_g": 25,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "buffalo_burger",
+      "chicken",
+      "grilled",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Mo'men - Chicken Fillet Sandwich",
+    "name_ar": "مؤمن - ساندويتش فيليه فراخ",
+    "category": "restaurant",
+    "serving_size_g": 280,
+    "calories": 480,
+    "protein_g": 28,
+    "carbs_g": 42,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "momen",
+      "chicken",
+      "sandwich",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Mo'men - Beef Burger Meal (with Fries)",
+    "name_ar": "مؤمن - وجبة برجر لحمة (بالبطاطس)",
+    "category": "restaurant",
+    "serving_size_g": 500,
+    "calories": 850,
+    "protein_g": 35,
+    "carbs_g": 80,
+    "fat_g": 42,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "momen",
+      "burger",
+      "meal",
+      "fries",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "GAD - Foul & Taameya Plate",
+    "name_ar": "جاد - طبق فول وطعمية",
+    "category": "restaurant",
+    "serving_size_g": 400,
+    "calories": 550,
+    "protein_g": 20,
+    "carbs_g": 60,
+    "fat_g": 24,
+    "fiber_g": 12,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "gad",
+      "foul",
+      "taameya",
+      "breakfast",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
+  },
+  {
+    "name_en": "GAD - Shawarma Plate",
+    "name_ar": "جاد - طبق شاورما",
+    "category": "restaurant",
+    "serving_size_g": 350,
+    "calories": 600,
+    "protein_g": 30,
+    "carbs_g": 50,
+    "fat_g": 30,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "gad",
+      "shawarma",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Abou Tarek Koshari (Medium)",
+    "name_ar": "أبو طارق كشري (وسط)",
+    "category": "restaurant",
+    "serving_size_g": 450,
+    "calories": 580,
+    "protein_g": 16,
+    "carbs_g": 98,
+    "fat_g": 10,
+    "fiber_g": 7,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "abou_tarek",
+      "koshari",
+      "carbs",
+      "famous",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "El-Dahan Kofta Plate (Grilled)",
+    "name_ar": "الدهان - طبق كفتة مشوية",
+    "category": "restaurant",
+    "serving_size_g": 400,
+    "calories": 650,
+    "protein_g": 40,
+    "carbs_g": 40,
+    "fat_g": 35,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "eldahan",
+      "kofta",
+      "grilled",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
+  },
+  {
+    "name_en": "El-Dahan Kebab Plate (Grilled)",
+    "name_ar": "الدهان - طبق كباب مشوي",
+    "category": "restaurant",
+    "serving_size_g": 400,
+    "calories": 700,
+    "protein_g": 45,
+    "carbs_g": 38,
+    "fat_g": 38,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "eldahan",
+      "kebab",
+      "grilled",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Hardee's - Chargrilled Chicken Sandwich",
+    "name_ar": "هارديز - ساندويتش فراخ مشوية",
+    "category": "restaurant",
+    "serving_size_g": 250,
+    "calories": 420,
+    "protein_g": 30,
+    "carbs_g": 38,
+    "fat_g": 16,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "hardees",
+      "chicken",
+      "grilled",
+      "fast_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "KFC - 2 Piece Meal (Original, with Fries & Coleslaw)",
+    "name_ar": "كنتاكي - وجبة 2 قطعة (أوريجنال، بالبطاطس والكول سلو)",
+    "category": "restaurant",
+    "serving_size_g": 450,
+    "calories": 850,
+    "protein_g": 35,
+    "carbs_g": 75,
+    "fat_g": 45,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "kfc",
+      "fried_chicken",
+      "meal",
+      "fast_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/french-fries.jpg"
+  },
+  {
+    "name_en": "KFC - Mighty Zinger Sandwich",
+    "name_ar": "كنتاكي - ساندويتش مايتي زنجر",
+    "category": "restaurant",
+    "serving_size_g": 300,
+    "calories": 620,
+    "protein_g": 28,
+    "carbs_g": 50,
+    "fat_g": 34,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "kfc",
+      "zinger",
+      "spicy",
+      "fast_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "McDonald's - Big Mac",
+    "name_ar": "ماكدونالدز - بيج ماك",
+    "category": "restaurant",
+    "serving_size_g": 200,
+    "calories": 550,
+    "protein_g": 25,
+    "carbs_g": 45,
+    "fat_g": 30,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "mcdonalds",
+      "big_mac",
+      "burger",
+      "fast_food"
+    ]
+  },
+  {
+    "name_en": "McDonald's - McChicken",
+    "name_ar": "ماكدونالدز - ماك تشيكن",
+    "category": "restaurant",
+    "serving_size_g": 180,
+    "calories": 400,
+    "protein_g": 18,
+    "carbs_g": 40,
+    "fat_g": 20,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "mcdonalds",
+      "mcchicken",
+      "chicken",
+      "fast_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Cook Door - Chicken Shawarma Meal",
+    "name_ar": "كوك دور - وجبة شاورما فراخ",
+    "category": "restaurant",
+    "serving_size_g": 400,
+    "calories": 720,
+    "protein_g": 30,
+    "carbs_g": 65,
+    "fat_g": 38,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "cook_door",
+      "shawarma",
+      "meal",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Bazooka - Chicken Pane Meal",
+    "name_ar": "بازوكا - وجبة بانيه فراخ",
+    "category": "restaurant",
+    "serving_size_g": 400,
+    "calories": 750,
+    "protein_g": 30,
+    "carbs_g": 70,
+    "fat_g": 38,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "bazooka",
+      "panee",
+      "chicken",
+      "meal",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Bab El-Hara - Mixed Grill Plate",
+    "name_ar": "باب الحارة - طبق مشويات مشكل",
+    "category": "restaurant",
+    "serving_size_g": 500,
+    "calories": 800,
+    "protein_g": 55,
+    "carbs_g": 40,
+    "fat_g": 45,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "bab_elhara",
+      "mixed_grill",
+      "protein",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Sobhy Kaber - Kebab & Kofta Plate",
+    "name_ar": "صبحي كابر - طبق كباب وكفتة",
+    "category": "restaurant",
+    "serving_size_g": 450,
+    "calories": 750,
+    "protein_g": 50,
+    "carbs_g": 35,
+    "fat_g": 42,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "sobhy_kaber",
+      "kebab",
+      "kofta",
+      "grilled",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
+  },
+  {
+    "name_en": "Ebn El-Sham - Feteer with Cream & Honey",
+    "name_ar": "ابن الشام - فطير بقشطة وعسل",
+    "category": "restaurant",
+    "serving_size_g": 200,
+    "calories": 600,
+    "protein_g": 10,
+    "carbs_g": 55,
+    "fat_g": 38,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "ebn_elsham",
+      "feteer",
+      "cream",
+      "honey",
+      "dessert",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Koshary El-Tahrir (Large, Extra Sauce)",
+    "name_ar": "كشري التحرير (كبير، صوص زيادة)",
+    "category": "restaurant",
+    "serving_size_g": 550,
+    "calories": 720,
+    "protein_g": 20,
+    "carbs_g": 120,
+    "fat_g": 14,
+    "fiber_g": 9,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "koshary_eltahrir",
+      "koshari",
+      "carbs",
+      "famous",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Pizza Hut - Supreme Pizza (2 slices, Medium)",
+    "name_ar": "بيتزا هت - بيتزا سوبريم (2 سلايس، وسط)",
+    "category": "restaurant",
+    "serving_size_g": 250,
+    "calories": 560,
+    "protein_g": 22,
+    "carbs_g": 55,
+    "fat_g": 28,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "pizza_hut",
+      "pizza",
+      "supreme",
+      "fast_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pizza.jpg"
+  },
+  {
+    "name_en": "Domino's - Pepperoni Pizza (2 slices, Medium)",
+    "name_ar": "دومينوز - بيتزا بيبروني (2 سلايس، وسط)",
+    "category": "restaurant",
+    "serving_size_g": 230,
+    "calories": 520,
+    "protein_g": 20,
+    "carbs_g": 50,
+    "fat_g": 26,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "dominos",
+      "pizza",
+      "pepperoni",
+      "fast_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bell-pepper.jpg"
+  },
+  {
+    "name_en": "Subway - 6-inch Turkey Sub",
+    "name_ar": "صب واي - ساب ديك رومي 6 إنش",
+    "category": "restaurant",
+    "serving_size_g": 250,
+    "calories": 350,
+    "protein_g": 22,
+    "carbs_g": 42,
+    "fat_g": 8,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "subway",
+      "turkey",
+      "sub",
+      "healthy_option"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turkey-breast.jpg"
+  },
+  {
+    "name_en": "Subway - 6-inch Chicken Teriyaki Sub",
+    "name_ar": "صب واي - ساب فراخ ترياكي 6 إنش",
+    "category": "restaurant",
+    "serving_size_g": 280,
+    "calories": 420,
+    "protein_g": 26,
+    "carbs_g": 52,
+    "fat_g": 10,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "subway",
+      "chicken_teriyaki",
+      "sub"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Starbucks - Caramel Frappuccino (Grande)",
+    "name_ar": "ستاربكس - كراميل فرابوتشينو (جراندي)",
+    "category": "restaurant",
+    "serving_size_g": 480,
+    "calories": 380,
+    "protein_g": 4,
+    "carbs_g": 58,
+    "fat_g": 15,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "restaurant",
+      "starbucks",
+      "frappuccino",
+      "caramel",
+      "coffee",
+      "sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Cilantro - Iced Latte (Regular)",
+    "name_ar": "سيلانترو - آيس لاتيه (عادي)",
+    "category": "restaurant",
+    "serving_size_g": 350,
+    "calories": 180,
+    "protein_g": 6,
+    "carbs_g": 24,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "cilantro",
+      "iced_latte",
+      "coffee",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "TBS - Grilled Chicken Salad",
+    "name_ar": "تي بي إس - سلطة فراخ مشوية",
+    "category": "restaurant",
+    "serving_size_g": 350,
+    "calories": 380,
+    "protein_g": 32,
+    "carbs_g": 18,
+    "fat_g": 20,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "restaurant",
+      "tbs",
+      "salad",
+      "chicken",
+      "grilled",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  }
+]

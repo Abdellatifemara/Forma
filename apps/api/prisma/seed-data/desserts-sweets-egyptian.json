@@ -1,0 +1,602 @@
+[
+  {
+    "name_en": "Basbousa (1 piece, ~80g)",
+    "name_ar": "بسبوسة (قطعة ~80 جرام)",
+    "category": "dessert",
+    "serving_size_g": 80,
+    "calories": 320,
+    "protein_g": 4,
+    "carbs_g": 45,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "basbousa",
+      "semolina",
+      "syrup",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/semolina.jpg"
+  },
+  {
+    "name_en": "Konafa (Kunafa, 1 piece ~100g)",
+    "name_ar": "كنافة (قطعة ~100 جرام)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 400,
+    "protein_g": 6,
+    "carbs_g": 50,
+    "fat_g": 20,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "konafa",
+      "kunafa",
+      "cheese",
+      "syrup",
+      "ramadan",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
+  },
+  {
+    "name_en": "Konafa with Cream (1 piece ~100g)",
+    "name_ar": "كنافة بالقشطة (قطعة ~100 جرام)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 420,
+    "protein_g": 5,
+    "carbs_g": 52,
+    "fat_g": 22,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "konafa",
+      "cream",
+      "ramadan",
+      "high_calorie",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
+  },
+  {
+    "name_en": "Konafa with Nuts (1 piece ~100g)",
+    "name_ar": "كنافة بالمكسرات (قطعة ~100 جرام)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 440,
+    "protein_g": 8,
+    "carbs_g": 48,
+    "fat_g": 24,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "konafa",
+      "nuts",
+      "ramadan",
+      "high_calorie",
+      "premium",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
+  },
+  {
+    "name_en": "Om Ali (1 bowl ~200g)",
+    "name_ar": "أم علي (طبق ~200 جرام)",
+    "category": "dessert",
+    "serving_size_g": 200,
+    "calories": 500,
+    "protein_g": 10,
+    "carbs_g": 55,
+    "fat_g": 26,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "om_ali",
+      "milk",
+      "nuts",
+      "raisins",
+      "traditional",
+      "bulking",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Roz Bel Laban (Rice Pudding, 1 cup)",
+    "name_ar": "رز بلبن (كوب)",
+    "category": "dessert",
+    "serving_size_g": 200,
+    "calories": 250,
+    "protein_g": 6,
+    "carbs_g": 40,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "rice_pudding",
+      "roz_bel_laban",
+      "milk",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice-pudding.jpg"
+  },
+  {
+    "name_en": "Mahallabiya (Milk Pudding, 1 cup)",
+    "name_ar": "مهلبية (كوب)",
+    "category": "dessert",
+    "serving_size_g": 180,
+    "calories": 200,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "mahallabiya",
+      "pudding",
+      "milk",
+      "light",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Atayef (Qatayef, 3 pieces with nuts)",
+    "name_ar": "قطايف بالمكسرات (3 حبات)",
+    "category": "dessert",
+    "serving_size_g": 120,
+    "calories": 400,
+    "protein_g": 8,
+    "carbs_g": 45,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "qatayef",
+      "ramadan",
+      "fried",
+      "nuts",
+      "syrup",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/crepes.jpg"
+  },
+  {
+    "name_en": "Atayef with Cream (3 pieces)",
+    "name_ar": "قطايف بالقشطة (3 حبات)",
+    "category": "dessert",
+    "serving_size_g": 120,
+    "calories": 380,
+    "protein_g": 6,
+    "carbs_g": 42,
+    "fat_g": 20,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "qatayef",
+      "cream",
+      "ramadan",
+      "fried",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Baklava (2 pieces)",
+    "name_ar": "بقلاوة (2 قطعة)",
+    "category": "dessert",
+    "serving_size_g": 70,
+    "calories": 330,
+    "protein_g": 5,
+    "carbs_g": 38,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "baklava",
+      "nuts",
+      "syrup",
+      "pastry",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/phyllo-dough.jpg"
+  },
+  {
+    "name_en": "Goulash Sweet (Golash Bel Moukassarat, 2 pieces)",
+    "name_ar": "جلاش بالمكسرات (2 قطعة)",
+    "category": "dessert",
+    "serving_size_g": 80,
+    "calories": 350,
+    "protein_g": 6,
+    "carbs_g": 40,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "goulash",
+      "golash",
+      "nuts",
+      "pastry",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Zalabya (Egyptian Donuts, 5 pieces)",
+    "name_ar": "زلابية (5 حبات)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 350,
+    "protein_g": 4,
+    "carbs_g": 50,
+    "fat_g": 16,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "zalabya",
+      "donuts",
+      "fried",
+      "syrup",
+      "ramadan",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/doughnut.jpg"
+  },
+  {
+    "name_en": "Balah El Sham (5 pieces)",
+    "name_ar": "بلح الشام (5 حبات)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 380,
+    "protein_g": 4,
+    "carbs_g": 48,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "balah_el_sham",
+      "fried",
+      "syrup",
+      "ramadan",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/doughnut.jpg"
+  },
+  {
+    "name_en": "Luqaimat (Awamat, 8 pieces)",
+    "name_ar": "لقيمات / عوامات (8 حبات)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 360,
+    "protein_g": 3,
+    "carbs_g": 45,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "luqaimat",
+      "fried",
+      "syrup",
+      "ramadan",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Meshabek (1 piece)",
+    "name_ar": "مشبك (قطعة)",
+    "category": "dessert",
+    "serving_size_g": 50,
+    "calories": 200,
+    "protein_g": 2,
+    "carbs_g": 28,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "meshabek",
+      "fried",
+      "syrup",
+      "traditional",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Halawet El Mouled (Mixed, 100g)",
+    "name_ar": "حلاوة المولد مشكل (100 جرام)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 450,
+    "protein_g": 8,
+    "carbs_g": 60,
+    "fat_g": 20,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "mouled",
+      "candy",
+      "nuts",
+      "sugar",
+      "traditional",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Feteer Meshaltet with Sugar & Cream",
+    "name_ar": "فطير مشلتت بسكر وقشطة",
+    "category": "dessert",
+    "serving_size_g": 200,
+    "calories": 600,
+    "protein_g": 10,
+    "carbs_g": 65,
+    "fat_g": 34,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "feteer",
+      "cream",
+      "sugar",
+      "high_calorie",
+      "cheat_meal",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Umm Ali Ice Cream (Mandarine Koueider, 1 scoop)",
+    "name_ar": "آيس كريم أم علي (مندرين كويدر، سكوب)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 250,
+    "protein_g": 4,
+    "carbs_g": 30,
+    "fat_g": 13,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "ice_cream",
+      "um_ali",
+      "mandarine_koueider",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "Sahlab (Hot, 1 cup with nuts)",
+    "name_ar": "سحلب (ساخن بمكسرات، كوب)",
+    "category": "dessert",
+    "serving_size_g": 250,
+    "calories": 280,
+    "protein_g": 5,
+    "carbs_g": 42,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "sahlab",
+      "hot",
+      "winter",
+      "milk",
+      "nuts",
+      "traditional",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Cream Caramel (1 cup)",
+    "name_ar": "كريم كراميل (كوب)",
+    "category": "dessert",
+    "serving_size_g": 150,
+    "calories": 220,
+    "protein_g": 5,
+    "carbs_g": 35,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "cream_caramel",
+      "custard",
+      "light",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Chocolate Cake (1 slice ~100g)",
+    "name_ar": "كيك شوكولاتة (شريحة ~100 جرام)",
+    "category": "dessert",
+    "serving_size_g": 100,
+    "calories": 370,
+    "protein_g": 5,
+    "carbs_g": 48,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "cake",
+      "chocolate",
+      "high_calorie",
+      "cheat_meal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Cheesecake (1 slice ~120g)",
+    "name_ar": "تشيز كيك (شريحة ~120 جرام)",
+    "category": "dessert",
+    "serving_size_g": 120,
+    "calories": 400,
+    "protein_g": 7,
+    "carbs_g": 35,
+    "fat_g": 26,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "cheesecake",
+      "high_fat",
+      "high_calorie",
+      "cheat_meal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Brownies (1 piece ~60g)",
+    "name_ar": "براونيز (قطعة ~60 جرام)",
+    "category": "dessert",
+    "serving_size_g": 60,
+    "calories": 260,
+    "protein_g": 3,
+    "carbs_g": 35,
+    "fat_g": 13,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "brownies",
+      "chocolate",
+      "high_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brownies.jpg"
+  },
+  {
+    "name_en": "Ice Cream (Vanilla, 1 scoop ~65g)",
+    "name_ar": "آيس كريم فانيليا (سكوب ~65 جرام)",
+    "category": "dessert",
+    "serving_size_g": 65,
+    "calories": 140,
+    "protein_g": 2,
+    "carbs_g": 16,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "ice_cream",
+      "vanilla"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ice-cream.jpg"
+  },
+  {
+    "name_en": "Fruit Salad with Honey (1 cup)",
+    "name_ar": "سلطة فواكه بعسل (كوب)",
+    "category": "dessert",
+    "serving_size_g": 200,
+    "calories": 160,
+    "protein_g": 2,
+    "carbs_g": 38,
+    "fat_g": 1,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "fruit_salad",
+      "honey",
+      "healthy",
+      "light",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Dark Chocolate (70%+, 30g / 3 squares)",
+    "name_ar": "شوكولاتة داكنة (70%+، 30 جرام)",
+    "category": "dessert",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 2,
+    "carbs_g": 13,
+    "fat_g": 12,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "dark_chocolate",
+      "antioxidant",
+      "moderate",
+      "healthy_treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Waffle (1 piece with syrup)",
+    "name_ar": "وافل (قطعة بشيرة)",
+    "category": "dessert",
+    "serving_size_g": 120,
+    "calories": 380,
+    "protein_g": 6,
+    "carbs_g": 55,
+    "fat_g": 15,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "waffle",
+      "syrup",
+      "cheat_meal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/waffles.jpg"
+  },
+  {
+    "name_en": "Pancakes (3 small, with syrup)",
+    "name_ar": "بان كيك (3 صغار، بشيرة)",
+    "category": "dessert",
+    "serving_size_g": 180,
+    "calories": 420,
+    "protein_g": 8,
+    "carbs_g": 65,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "pancakes",
+      "breakfast",
+      "syrup",
+      "cheat_meal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cake.jpg"
+  },
+  {
+    "name_en": "Protein Pancakes (3 small, no syrup)",
+    "name_ar": "بان كيك بروتين (3 صغار، بدون شيرة)",
+    "category": "dessert",
+    "serving_size_g": 180,
+    "calories": 280,
+    "protein_g": 25,
+    "carbs_g": 30,
+    "fat_g": 6,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "pancakes",
+      "protein",
+      "healthy",
+      "breakfast",
+      "bodybuilding"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cake.jpg"
+  }
+]

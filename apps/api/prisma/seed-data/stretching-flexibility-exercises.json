@@ -1,0 +1,566 @@
+[
+  {
+    "id": "stretch-001",
+    "name_en": "Standing Quad Stretch",
+    "name_ar": "تمدد الكواد واقف",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each leg",
+    "tags": [
+      "stretch",
+      "quad",
+      "standing",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-002",
+    "name_en": "Standing Hamstring Stretch",
+    "name_ar": "تمدد الهامسترينج واقف",
+    "primary_muscle": "hamstrings",
+    "secondary_muscles": [
+      "calves",
+      "lower_back"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each leg",
+    "tags": [
+      "stretch",
+      "hamstring",
+      "standing",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-003",
+    "name_en": "Standing Calf Stretch (Wall)",
+    "name_ar": "تمدد السمانة على الحائط",
+    "primary_muscle": "calves",
+    "secondary_muscles": [
+      "achilles"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each leg",
+    "tags": [
+      "stretch",
+      "calf",
+      "wall",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-004",
+    "name_en": "Cross-Body Shoulder Stretch",
+    "name_ar": "تمدد الكتف عبر الجسم",
+    "primary_muscle": "rear_deltoid",
+    "secondary_muscles": [
+      "rotator_cuff"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each arm",
+    "tags": [
+      "stretch",
+      "shoulder",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-005",
+    "name_en": "Overhead Tricep Stretch",
+    "name_ar": "تمدد الترايسبس فوق الرأس",
+    "primary_muscle": "triceps",
+    "secondary_muscles": [
+      "lats"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each arm",
+    "tags": [
+      "stretch",
+      "tricep",
+      "overhead",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-006",
+    "name_en": "Chest Doorway Stretch",
+    "name_ar": "تمدد الصدر عند الباب",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "anterior_deltoid",
+      "biceps"
+    ],
+    "equipment": "doorway",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s",
+    "tags": [
+      "stretch",
+      "chest",
+      "posture",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-007",
+    "name_en": "Seated Butterfly Stretch (Groin)",
+    "name_ar": "تمدد الفراشة جالس (أربطة)",
+    "primary_muscle": "adductors",
+    "secondary_muscles": [
+      "hips",
+      "groin"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "45s",
+    "tags": [
+      "stretch",
+      "groin",
+      "hip",
+      "seated"
+    ]
+  },
+  {
+    "id": "stretch-008",
+    "name_en": "Figure Four Stretch (Glute)",
+    "name_ar": "تمدد الرقم 4 (إلية)",
+    "primary_muscle": "glutes",
+    "secondary_muscles": [
+      "piriformis",
+      "hip_external_rotators"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each side",
+    "tags": [
+      "stretch",
+      "glute",
+      "piriformis",
+      "sciatica"
+    ]
+  },
+  {
+    "id": "stretch-009",
+    "name_en": "Lying Spinal Twist",
+    "name_ar": "لفة العمود الفقري مستلقي",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "obliques",
+      "glutes"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each side",
+    "tags": [
+      "stretch",
+      "spine",
+      "twist",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-010",
+    "name_en": "Neck Side Stretch",
+    "name_ar": "تمدد الرقبة جانبي",
+    "primary_muscle": "neck",
+    "secondary_muscles": [
+      "upper_traps"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "20s each side",
+    "tags": [
+      "stretch",
+      "neck",
+      "office",
+      "tension"
+    ]
+  },
+  {
+    "id": "stretch-011",
+    "name_en": "Upper Trap Stretch",
+    "name_ar": "تمدد الترابيزيوس العلوي",
+    "primary_muscle": "upper_traps",
+    "secondary_muscles": [
+      "neck",
+      "levator_scapulae"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "20s each side",
+    "tags": [
+      "stretch",
+      "traps",
+      "neck",
+      "stress"
+    ]
+  },
+  {
+    "id": "stretch-012",
+    "name_en": "Lat Stretch (Side Bend)",
+    "name_ar": "تمدد اللاتس (انحناء جانبي)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "obliques",
+      "intercostals"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each side",
+    "tags": [
+      "stretch",
+      "lats",
+      "side",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-013",
+    "name_en": "Hip Flexor Lunge Stretch",
+    "name_ar": "تمدد الهيب فليكسور (لانج)",
+    "primary_muscle": "hip_flexors",
+    "secondary_muscles": [
+      "quadriceps",
+      "psoas"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each side",
+    "tags": [
+      "stretch",
+      "hip",
+      "lunge",
+      "sitting"
+    ]
+  },
+  {
+    "id": "stretch-015",
+    "name_en": "Scorpion Stretch (Prone)",
+    "name_ar": "تمدد العقرب",
+    "primary_muscle": "hip_flexors",
+    "secondary_muscles": [
+      "obliques",
+      "chest",
+      "lower_back"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "8 each side",
+    "tags": [
+      "stretch",
+      "dynamic",
+      "hip",
+      "thoracic"
+    ]
+  },
+  {
+    "id": "stretch-016",
+    "name_en": "Arm Circles (Dynamic)",
+    "name_ar": "دوائر الذراعين",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "rotator_cuff"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "15 each direction",
+    "tags": [
+      "stretch",
+      "dynamic",
+      "warmup",
+      "shoulders"
+    ]
+  },
+  {
+    "id": "stretch-017",
+    "name_en": "Leg Swings (Front to Back)",
+    "name_ar": "تأرجح الرجل (أمام وخلف)",
+    "primary_muscle": "hip_flexors",
+    "secondary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "15 each leg",
+    "tags": [
+      "stretch",
+      "dynamic",
+      "warmup",
+      "legs"
+    ]
+  },
+  {
+    "id": "stretch-018",
+    "name_en": "Leg Swings (Side to Side)",
+    "name_ar": "تأرجح الرجل (جانبي)",
+    "primary_muscle": "adductors",
+    "secondary_muscles": [
+      "hip_abductors",
+      "groin"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "15 each leg",
+    "tags": [
+      "stretch",
+      "dynamic",
+      "warmup",
+      "hips"
+    ]
+  },
+  {
+    "id": "stretch-019",
+    "name_en": "Inchworm Walkout",
+    "name_ar": "إنش وورم (الدودة)",
+    "primary_muscle": "hamstrings",
+    "secondary_muscles": [
+      "core",
+      "shoulders",
+      "calves"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": 8,
+    "tags": [
+      "stretch",
+      "dynamic",
+      "warmup",
+      "full_body"
+    ]
+  },
+  {
+    "id": "stretch-022",
+    "name_en": "Thread the Needle Stretch",
+    "name_ar": "تمدد إدخال الخيط",
+    "primary_muscle": "thoracic_spine",
+    "secondary_muscles": [
+      "shoulders",
+      "lats"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "8 each side",
+    "tags": [
+      "stretch",
+      "thoracic",
+      "rotation",
+      "upper_back"
+    ]
+  },
+  {
+    "id": "stretch-023",
+    "name_en": "Frog Stretch",
+    "name_ar": "تمدد الضفدع",
+    "primary_muscle": "adductors",
+    "secondary_muscles": [
+      "groin",
+      "hips"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "45s",
+    "tags": [
+      "stretch",
+      "groin",
+      "deep",
+      "hip_opener"
+    ]
+  },
+  {
+    "id": "stretch-024",
+    "name_en": "Couch Stretch (Rectus Femoris)",
+    "name_ar": "تمدد الكنبة (عضلة الفخذ الأمامية)",
+    "primary_muscle": "rectus_femoris",
+    "secondary_muscles": [
+      "hip_flexors",
+      "quadriceps"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "45s each side",
+    "tags": [
+      "stretch",
+      "quad",
+      "hip_flexor",
+      "deep"
+    ]
+  },
+  {
+    "id": "stretch-025",
+    "name_en": "Sleeper Stretch (Shoulder Internal Rotation)",
+    "name_ar": "تمدد النائم (دوران داخلي للكتف)",
+    "primary_muscle": "posterior_shoulder",
+    "secondary_muscles": [
+      "rotator_cuff"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each side",
+    "tags": [
+      "stretch",
+      "shoulder",
+      "rotator_cuff",
+      "recovery"
+    ]
+  },
+  {
+    "id": "stretch-026",
+    "name_en": "Bicep Wall Stretch",
+    "name_ar": "تمدد البايسبس على الحائط",
+    "primary_muscle": "biceps",
+    "secondary_muscles": [
+      "anterior_deltoid",
+      "chest"
+    ],
+    "equipment": "wall",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "20s each arm",
+    "tags": [
+      "stretch",
+      "bicep",
+      "wall",
+      "cooldown"
+    ]
+  },
+  {
+    "id": "stretch-027",
+    "name_en": "Behind-the-Back Shoulder Stretch",
+    "name_ar": "تمدد الكتف خلف الظهر",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "chest",
+      "biceps"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s",
+    "tags": [
+      "stretch",
+      "shoulder",
+      "chest",
+      "posture"
+    ]
+  },
+  {
+    "id": "stretch-028",
+    "name_en": "Seated Spinal Twist",
+    "name_ar": "لفة العمود الفقري جالس",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "obliques",
+      "glutes"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 2,
+    "default_reps": "30s each side",
+    "tags": [
+      "stretch",
+      "spine",
+      "twist",
+      "seated"
+    ]
+  },
+  {
+    "id": "stretch-029",
+    "name_en": "Downward Dog to Cobra Flow",
+    "name_ar": "تدفق الكلب للأسفل إلى الكوبرا",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "hamstrings",
+      "chest",
+      "shoulders",
+      "lower_back"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 3,
+    "default_reps": "5 flows",
+    "tags": [
+      "stretch",
+      "flow",
+      "dynamic",
+      "yoga_inspired"
+    ]
+  },
+  {
+    "id": "stretch-030",
+    "name_en": "Child's Pose to Upward Dog Flow",
+    "name_ar": "تدفق وضعية الطفل إلى الكلب للأعلى",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "chest",
+      "hip_flexors",
+      "shoulders"
+    ],
+    "equipment": "none",
+    "difficulty": "beginner",
+    "category": "stretching",
+    "default_sets": 3,
+    "default_reps": "5 flows",
+    "tags": [
+      "stretch",
+      "flow",
+      "spine",
+      "recovery"
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "guide-001",
+    "category": "protein_sources",
+    "title_en": "Best Protein Sources Ranked",
+    "title_ar": "أفضل مصادر البروتين مرتبة",
+    "content_en": "Per 100g, highest protein: 1. Chicken breast (31g) 2. Turkey breast (29g) 3. Tuna (26g) 4. Beef sirloin (26g) 5. Shrimp (24g) 6. Greek yogurt (10g) 7. Eggs (13g) 8. Cottage cheese/Gibna Areesh (14g) 9. Lentils cooked (9g) 10. Foul medames (8g). Egyptian tip: Gibna Areesh is the cheapest high-protein food per gram. 200g = 28g protein for ~20 LE.",
+    "content_ar": "لكل 100 جرام، أعلى بروتين: 1. صدر فراخ (31 جرام) 2. صدر ديك رومي (29 جرام) 3. تونة (26 جرام) 4. بيف سيرلوين (26 جرام) 5. جمبري (24 جرام) 6. زبادي يوناني (10 جرام) 7. بيض (13 جرام) 8. قريش (14 جرام) 9. عدس مطبوخ (9 جرام) 10. فول مدمس (8 جرام). نصيحة: القريش أرخص بروتين في مصر.",
+    "tags": ["protein", "ranking", "guide", "essential"]
+  },
+  {
+    "id": "guide-002",
+    "category": "carb_sources",
+    "title_en": "Best Carb Sources for Gym Performance",
+    "title_ar": "أفضل مصادر الكاربز لأداء الجيم",
+    "content_en": "Pre-workout carbs (fast-digesting): white rice, bananas, dates, white bread, oatmeal. Post-workout: same as pre. Daily carbs (slow-digesting): sweet potatoes, oats, brown rice, whole wheat bread, quinoa, lentils. Egyptian budget carbs: Baladi bread (8g protein too!), white rice, pasta, foul. Avoid only during cutting: sugary drinks, candy, excessive juice. Carbs are NOT the enemy — they fuel your workouts.",
+    "content_ar": "كاربز قبل التمرين (سريعة الهضم): أرز أبيض، موز، تمر، عيش أبيض، شوفان. بعد التمرين: نفس اللي قبل. كاربز يومية (بطيئة): بطاطا حلوة، شوفان، أرز أسمر، عيش أسمر، كينوا، عدس. كاربز مصرية رخيصة: عيش بلدي (8 جرام بروتين كمان!)، أرز، مكرونة، فول. الكاربز مش عدو — دي بتشغل التمرين.",
+    "tags": ["carbs", "performance", "guide", "pre_workout"]
+  },
+  {
+    "id": "guide-003",
+    "category": "fat_sources",
+    "title_en": "Healthy Fat Sources (Don't Skip Fats!)",
+    "title_ar": "مصادر الدهون الصحية (ما تلغيش الدهون!)",
+    "content_en": "Essential for hormones, brain function, and vitamin absorption. Best sources: olive oil, avocado, nuts (almonds, walnuts, cashews), seeds (chia, flax, pumpkin), fatty fish (salmon, sardines), eggs, dark chocolate (70%+). Egyptian options: Abu Auf nut butters, lob abyad (pumpkin seeds), sardines, tahini. Minimum fat intake: 0.8g per kg body weight. Going below this can crash your testosterone and energy.",
+    "content_ar": "أساسية للهرمونات والمخ وامتصاص الفيتامينات. أحسن المصادر: زيت زيتون، أفوكادو، مكسرات (لوز، عين جمل، كاشو)، بذور (شيا، كتان، قرع)، سمك دهني (سلمون، سردين)، بيض، شوكولاتة دارك (70%+). خيارات مصرية: زبدة أبو عوف، لب أبيض، سردين، طحينة. أقل دهون: 0.8 جرام لكل كيلو. أقل من كده بيخرب التستوستيرون والطاقة.",
+    "tags": ["fats", "hormones", "guide", "essential"]
+  },
+  {
+    "id": "guide-004",
+    "category": "meal_prep",
+    "title_en": "Egyptian Bodybuilder's Weekly Meal Prep Guide",
+    "title_ar": "دليل تحضير الوجبات الأسبوعي للاعب كمال الأجسام المصري",
+    "content_en": "Sunday prep (2 hours):\n1. Grill 2kg chicken breast — portion into 200g containers\n2. Cook 1kg rice — portion into 200g containers\n3. Boil 24 eggs — keep in fridge\n4. Prep salad ingredients (wash, chop lettuce/tomato/cucumber)\n5. Cook 500g lentils — portion for soups\n6. Buy: 1kg gibna areesh, 2L Greek yogurt, fruits, nuts\n\nDaily assembly takes 5 minutes. Total cost: ~300-400 LE for the week. That's cheaper than eating out every day and 10x better for your goals.",
+    "content_ar": "تحضير يوم الأحد (ساعتين):\n1. اشوي 2 كيلو صدر فراخ — قسمهم في علب 200 جرام\n2. اطبخ 1 كيلو أرز — قسمهم في علب\n3. اسلق 24 بيضة — خليهم في التلاجة\n4. حضّر مكونات السلطة\n5. اطبخ 500 جرام عدس — للشوربة\n6. اشتري: 1 كيلو قريش، 2 لتر زبادي يوناني، فاكهة، مكسرات\n\nالتجميع اليومي بياخد 5 دقايق. التكلفة: ~300-400 جنيه في الأسبوع.",
+    "tags": ["meal_prep", "budget", "practical", "egyptian", "weekly"]
+  },
+  {
+    "id": "guide-005",
+    "category": "cutting_guide",
+    "title_en": "Egyptian Cutting Diet — Sample Day (1800 cal)",
+    "title_ar": "دايت تنشيف مصري — يوم نموذجي (1800 سعرة)",
+    "content_en": "Breakfast (400 cal): 3 boiled eggs + 100g gibna areesh + 1 fino bread + tea\nSnack (200 cal): Greek yogurt 200g + 10 almonds\nLunch (600 cal): 200g chicken breast + 150g rice + mixed salad + 1 tbsp olive oil\nPost-workout shake (200 cal): 1 scoop whey + banana\nDinner (400 cal): 150g foul medames + 2 eggs + 1 small baladi bread\n\nMacros: ~1800 cal, 170g protein, 160g carbs, 55g fat\nCost: ~100-120 LE/day",
+    "content_ar": "الفطار (400 سعرة): 3 بيض مسلوق + 100 جرام قريش + فينو + شاي\nسناك (200 سعرة): زبادي يوناني 200 جرام + 10 لوزات\nالغدا (600 سعرة): 200 جرام صدر فراخ + 150 جرام أرز + سلطة + ملعقة زيت زيتون\nبعد التمرين (200 سعرة): سكوب واي + موزة\nالعشا (400 سعرة): 150 جرام فول + 2 بيضة + رغيف بلدي صغير\n\nالماكروز: ~1800 سعرة، 170 جرام بروتين، 160 جرام كاربز، 55 جرام دهون\nالتكلفة: ~100-120 جنيه/يوم",
+    "tags": ["cutting", "diet", "sample", "egyptian", "practical", "1800_cal"]
+  },
+  {
+    "id": "guide-006",
+    "category": "bulking_guide",
+    "title_en": "Egyptian Bulking Diet — Sample Day (3000 cal)",
+    "title_ar": "دايت تضخيم مصري — يوم نموذجي (3000 سعرة)",
+    "content_en": "Breakfast (600 cal): 4 eggs scrambled + foul 150g + 2 baladi bread + black honey 1 tbsp\nSnack (300 cal): Oats 80g + milk + banana + peanut butter 1 tbsp\nLunch (800 cal): 250g chicken thigh + 250g rice + molokhia + salad\nPost-workout (400 cal): 2 scoops whey + banana + 50g oats\nDinner (600 cal): 200g pasta with mince + cheese + salad\nBefore bed (300 cal): Greek yogurt 200g + honey + mixed nuts 30g\n\nMacros: ~3000 cal, 200g protein, 350g carbs, 80g fat\nCost: ~150-200 LE/day",
+    "content_ar": "الفطار (600 سعرة): 4 بيض مقلي + 150 جرام فول + 2 رغيف بلدي + ملعقة عسل أسود\nسناك (300 سعرة): 80 جرام شوفان + لبن + موزة + ملعقة زبدة فول سوداني\nالغدا (800 سعرة): 250 جرام فخذ فراخ + 250 جرام أرز + ملوخية + سلطة\nبعد التمرين (400 سعرة): 2 سكوب واي + موزة + 50 جرام شوفان\nالعشا (600 سعرة): 200 جرام مكرونة باللحمة المفرومة + جبنة + سلطة\nقبل النوم (300 سعرة): زبادي يوناني 200 جرام + عسل + 30 جرام مكسرات\n\nالماكروز: ~3000 سعرة، 200 جرام بروتين، 350 جرام كاربز، 80 جرام دهون",
+    "tags": ["bulking", "diet", "sample", "egyptian", "practical", "3000_cal"]
+  },
+  {
+    "id": "guide-007",
+    "category": "grocery_shopping",
+    "title_en": "Egyptian Gym Grocery List (Weekly, Budget)",
+    "title_ar": "قائمة مشتريات الجيم المصرية (أسبوعية، ميزانية)",
+    "content_en": "Protein: 2kg chicken breast (~140 LE), 30 eggs (~75 LE), 1kg gibna areesh (~80 LE), 2 cans tuna (~50 LE), 500g Greek yogurt (~40 LE)\nCarbs: 2kg rice (~40 LE), baladi bread daily (~10 LE/week), 1kg oats (~50 LE), 1kg pasta (~25 LE), 1kg sweet potatoes (~30 LE)\nFats: Olive oil 500ml (~70 LE), 200g mixed nuts (~60 LE)\nVegetables: Tomatoes, cucumbers, lettuce, onions (~50 LE)\nFruit: Bananas, seasonal fruit (~40 LE)\nOther: Foul 1kg (~25 LE), lentils 500g (~15 LE)\n\nTotal: ~800-900 LE/week for high-protein muscle-building diet. That's ~120 LE/day.",
+    "content_ar": "بروتين: 2 كيلو صدر فراخ (~140 جنيه)، 30 بيضة (~75 جنيه)، 1 كيلو قريش (~80 جنيه)، 2 علبة تونة (~50 جنيه)، 500 جرام زبادي يوناني (~40 جنيه)\nكاربز: 2 كيلو أرز (~40 جنيه)، عيش بلدي يومي (~10 جنيه/أسبوع)، 1 كيلو شوفان (~50 جنيه)، 1 كيلو مكرونة (~25 جنيه)، 1 كيلو بطاطا (~30 جنيه)\nدهون: زيت زيتون 500 مل (~70 جنيه)، 200 جرام مكسرات (~60 جنيه)\nخضار: طماطم، خيار، خس، بصل (~50 جنيه)\nفاكهة: موز، فاكهة موسمية (~40 جنيه)\nآخر: فول 1 كيلو (~25 جنيه)، عدس 500 جرام (~15 جنيه)\n\nالإجمالي: ~800-900 جنيه/أسبوع. يعني ~120 جنيه/يوم.",
+    "tags": ["grocery", "shopping", "budget", "egyptian", "weekly", "practical"]
+  },
+  {
+    "id": "guide-008",
+    "category": "ingredient_sourcing",
+    "title_en": "Where to Buy Supplements & Health Foods in Egypt",
+    "title_ar": "فين تشتري المكملات والأكل الصحي في مصر",
+    "content_en": "Supplements (trusted stores): Fit Zone, Muscles Center, GNC Egypt, Protein Zone, Sport Food (Alexandria). Online: iHerb.com (ships to Egypt, authentic), Amazon.eg (check seller ratings).\n\nHealth foods: Abu Auf stores (nuts, nut butters, superfoods), Imtenan (organic products), Sunny (organic supermarkets), Seoudi Market (good variety), Carrefour (bulk buying).\n\nBulk protein (cheapest): Gibna areesh from any baladi cheese shop. Eggs from Seoudi or local markets. Chicken from Metro or Carrefour.\n\nAvoid: Random Facebook/Instagram supplement sellers, supplements without hologram seals, prices that are too good to be true.",
+    "content_ar": "مكملات (محلات موثوقة): Fit Zone، Muscles Center، GNC Egypt، Protein Zone. أونلاين: iHerb.com (بيوصل مصر، أصلي)، Amazon.eg.\n\nأكل صحي: محلات أبو عوف (مكسرات، زبدة، سوبرفود)، إمتنان (منتجات عضوية)، صني، سعودي ماركت، كارفور.\n\nبروتين رخيص: قريش من أي محل جبنة بلدي. بيض من سعودي أو الأسواق المحلية. فراخ من مترو أو كارفور.\n\nتجنب: بائعين عشوائيين على فيسبوك/إنستا، مكملات بدون هولوجرام، أسعار رخيصة مريبة.",
+    "tags": ["sourcing", "where_to_buy", "supplements", "egyptian", "stores"]
+  },
+  {
+    "id": "guide-009",
+    "category": "hydration",
+    "title_en": "Hydration Guide for Athletes in Egypt",
+    "title_ar": "دليل الترطيب للرياضيين في مصر",
+    "content_en": "Egypt's heat means you need more water than average. Base: 35-40ml per kg body weight. Add 500ml for every hour of exercise. Add 500ml on hot days (30°C+).\n\nHydration schedule: 500ml upon waking, 500ml before workout, sip throughout workout, 500ml after workout, water with every meal.\n\nSigns of dehydration: dark yellow urine, headache, fatigue, cramps, dizziness. Performance drops 10-20% with just 2% dehydration.\n\nElectrolytes matter in summer: add a pinch of salt and lemon to water, or use electrolyte tablets. Sugarcane juice (عصير قصب) is a natural electrolyte drink.\n\nAvoid excessive: coffee, tea, cola — they're mild diuretics.",
+    "content_ar": "حرارة مصر يعني محتاج مية أكتر من المتوسط. الأساس: 35-40 مل لكل كيلو. أضف 500 مل لكل ساعة تمرين. أضف 500 مل في أيام الحر.\n\nجدول الترطيب: 500 مل لما تصحى، 500 مل قبل التمرين، اشرب أثناء التمرين، 500 مل بعد التمرين.\n\nعلامات الجفاف: بول أصفر غامق، صداع، تعب، شد عضلي.\n\nالأملاح مهمة في الصيف: أضف رشة ملح وليمون على المية. عصير قصب مشروب أملاح طبيعي.",
+    "tags": ["hydration", "water", "egypt", "heat", "electrolytes", "summer"]
+  },
+  {
+    "id": "guide-010",
+    "category": "supplements_guide",
+    "title_en": "Supplement Stack for Egyptian Gym-Goers (By Budget)",
+    "title_ar": "مكملات لرواد الجيم المصريين (حسب الميزانية)",
+    "content_en": "Budget Stack (200 LE/month):\n- Creatine monohydrate 500g (~350 LE, lasts 3 months = ~120/month)\n- That's it. Creatine + food is enough.\n\nMid-Range Stack (500 LE/month):\n- Creatine (120/month)\n- Whey Protein 2lb (~800 LE, lasts 1 month at 1 scoop/day)\n\nPremium Stack (1000+ LE/month):\n- Creatine (120)\n- Whey Protein (800)\n- Omega-3 (200)\n- Vitamin D (100)\n- Magnesium (100)\n\nRemember: Supplements add maybe 5% to your results. The other 95% comes from training hard, eating right, and sleeping 7-8 hours. Don't waste money on supplements if your diet isn't dialed in.",
+    "content_ar": "ميزانية محدودة (200 جنيه/شهر):\n- كرياتين مونوهيدرات 500 جرام (~350 جنيه، بيكفي 3 شهور = ~120/شهر)\n- كده كفاية. كرياتين + أكل كويس.\n\nميزانية متوسطة (500 جنيه/شهر):\n- كرياتين (120/شهر)\n- واي بروتين 2 رطل (~800 جنيه، بيكفي شهر بسكوب/يوم)\n\nميزانية عالية (1000+ جنيه/شهر):\n- كرياتين (120)\n- واي بروتين (800)\n- أوميجا 3 (200)\n- فيتامين D (100)\n- ماجنيسيوم (100)\n\nتذكر: المكملات بتضيف 5% لنتائجك بس. الـ 95% الباقيين من التمرين والأكل والنوم.",
+    "tags": ["supplements", "stack", "budget", "egyptian", "guide", "practical"]
+  }
+]

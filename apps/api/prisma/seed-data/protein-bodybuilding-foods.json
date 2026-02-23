@@ -1,0 +1,666 @@
+[
+  {
+    "name_en": "Chicken Breast (Raw, 100g)",
+    "name_ar": "صدور فراخ خام ١٠٠ جرام",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 110,
+    "protein_g": 23,
+    "carbs_g": 0,
+    "fat_g": 1.2,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "raw",
+      "chicken",
+      "lean",
+      "staple",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Chicken Thigh (Skinless, Cooked, 100g)",
+    "name_ar": "ورك فراخ بدون جلد مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 177,
+    "protein_g": 24,
+    "carbs_g": 0,
+    "fat_g": 8.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "chicken",
+      "thigh",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-thighs.jpg"
+  },
+  {
+    "name_en": "Beef Lean (Ground, 90/10, Cooked, 100g)",
+    "name_ar": "لحم مفروم قليل الدسم مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 176,
+    "protein_g": 26,
+    "carbs_g": 0,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "iron_mg": 2.9,
+    "is_egyptian": true,
+    "tags": [
+      "beef",
+      "lean",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Beef Sirloin Steak (Cooked, 100g)",
+    "name_ar": "ستيك سيرلوين مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 200,
+    "protein_g": 27,
+    "carbs_g": 0,
+    "fat_g": 10,
+    "fiber_g": 0,
+    "iron_mg": 3.2,
+    "is_egyptian": false,
+    "tags": [
+      "beef",
+      "steak",
+      "per-100g",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-steak.jpg"
+  },
+  {
+    "name_en": "Beef Tenderloin / Filet Mignon (Cooked, 100g)",
+    "name_ar": "فيليه تندرلوين مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 190,
+    "protein_g": 28,
+    "carbs_g": 0,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "beef",
+      "premium",
+      "lean",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-tenderloin.jpg"
+  },
+  {
+    "name_en": "Lamb Leg (Cooked, 100g)",
+    "name_ar": "لحم ضأن فخذ مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 230,
+    "protein_g": 25,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "iron_mg": 2.5,
+    "is_egyptian": true,
+    "tags": [
+      "lamb",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lamb-loin-chops.jpg"
+  },
+  {
+    "name_en": "Veal (Cooked, 100g)",
+    "name_ar": "لحم بتلو مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 172,
+    "protein_g": 30,
+    "carbs_g": 0,
+    "fat_g": 5.5,
+    "fiber_g": 0,
+    "iron_mg": 1.2,
+    "is_egyptian": true,
+    "tags": [
+      "veal",
+      "lean",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/veal.jpg"
+  },
+  {
+    "name_en": "Turkey Breast (Cooked, 100g)",
+    "name_ar": "صدور رومي مطبوخة",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 135,
+    "protein_g": 30,
+    "carbs_g": 0,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "turkey",
+      "lean",
+      "high-protein",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turkey-breast.jpg"
+  },
+  {
+    "name_en": "Tilapia Fillet (Cooked, 100g)",
+    "name_ar": "فيليه بلطي مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 128,
+    "protein_g": 26,
+    "carbs_g": 0,
+    "fat_g": 2.7,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "fish",
+      "lean",
+      "high-protein",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tilapia-fillets.jpg"
+  },
+  {
+    "name_en": "Salmon Fillet (Cooked, 100g)",
+    "name_ar": "فيليه سلمون مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 208,
+    "protein_g": 25,
+    "carbs_g": 0,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "fish",
+      "omega-3",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salmon.jpg"
+  },
+  {
+    "name_en": "Tuna Steak (Cooked, 100g)",
+    "name_ar": "ستيك تونة مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 144,
+    "protein_g": 30,
+    "carbs_g": 0,
+    "fat_g": 1.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "fish",
+      "lean",
+      "high-protein",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-steak.jpg"
+  },
+  {
+    "name_en": "Shrimp (Cooked, 100g)",
+    "name_ar": "جمبري مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 99,
+    "protein_g": 24,
+    "carbs_g": 0.2,
+    "fat_g": 0.3,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "ultra-lean",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/shrimp.jpg"
+  },
+  {
+    "name_en": "Crab Meat (Cooked, 100g)",
+    "name_ar": "لحم كابوريا مطبوخ",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 97,
+    "protein_g": 19,
+    "carbs_g": 0,
+    "fat_g": 1.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "seafood",
+      "lean",
+      "per-100g"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/crabmeat.jpg"
+  },
+  {
+    "name_en": "Whole Egg (1 large)",
+    "name_ar": "بيضة كاملة كبيرة",
+    "category": "PROTEIN",
+    "serving_size_g": 50,
+    "calories": 78,
+    "protein_g": 6.3,
+    "carbs_g": 0.6,
+    "fat_g": 5.3,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "egg",
+      "protein",
+      "complete",
+      "staple"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Egg White (1 large)",
+    "name_ar": "بياض بيضة كبيرة",
+    "category": "PROTEIN",
+    "serving_size_g": 33,
+    "calories": 17,
+    "protein_g": 3.6,
+    "carbs_g": 0.2,
+    "fat_g": 0.1,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "egg-white",
+      "pure-protein",
+      "low-fat",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg-white.jpg"
+  },
+  {
+    "name_en": "Egg Yolk (1 large)",
+    "name_ar": "صفار بيضة كبيرة",
+    "category": "FATS",
+    "serving_size_g": 17,
+    "calories": 55,
+    "protein_g": 2.7,
+    "carbs_g": 0.6,
+    "fat_g": 4.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "egg-yolk",
+      "fat",
+      "vitamins"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg-yolk.jpg"
+  },
+  {
+    "name_en": "Whey Protein Isolate (1 scoop)",
+    "name_ar": "واي بروتين ايزوليت سكوب",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 30,
+    "calories": 110,
+    "protein_g": 25,
+    "carbs_g": 1,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "whey",
+      "isolate",
+      "post-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Whey Protein Concentrate (1 scoop)",
+    "name_ar": "واي بروتين كونسنتريت سكوب",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 32,
+    "calories": 120,
+    "protein_g": 24,
+    "carbs_g": 3,
+    "fat_g": 1.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "whey",
+      "concentrate",
+      "post-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Casein Protein (1 scoop)",
+    "name_ar": "كازين بروتين سكوب",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 33,
+    "calories": 120,
+    "protein_g": 24,
+    "carbs_g": 3,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "casein",
+      "slow-release",
+      "before-bed"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Mass Gainer (1 scoop)",
+    "name_ar": "ماس جينر سكوب",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 150,
+    "calories": 600,
+    "protein_g": 30,
+    "carbs_g": 100,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "mass-gainer",
+      "bulking",
+      "weight-gain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Plant Protein Powder (1 scoop)",
+    "name_ar": "بروتين نباتي سكوب",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 35,
+    "calories": 130,
+    "protein_g": 22,
+    "carbs_g": 6,
+    "fat_g": 2.5,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "vegan",
+      "plant-based"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "BCAA Powder (1 serving)",
+    "name_ar": "بي سي ايه ايه جرعة",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 10,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "bcaa",
+      "recovery",
+      "intra-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Creatine Monohydrate (1 scoop, 5g)",
+    "name_ar": "كرياتين مونوهيدرات",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 5,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "creatine",
+      "strength",
+      "muscle"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Pre-Workout Powder (1 scoop)",
+    "name_ar": "بري وركاوت سكوب",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 15,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "pre-workout",
+      "energy",
+      "caffeine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Glutamine Powder (1 scoop, 5g)",
+    "name_ar": "جلوتامين",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 5,
+    "calories": 20,
+    "protein_g": 5,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "recovery",
+      "gut-health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Fish Oil (2 softgels)",
+    "name_ar": "زيت سمك كبسولتين",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 2,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "omega-3",
+      "heart-health",
+      "joints"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-oil.jpg"
+  },
+  {
+    "name_en": "Multivitamin (1 tablet)",
+    "name_ar": "فيتامينات متعددة حبة",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "vitamins",
+      "minerals",
+      "daily"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Vitamin D3 (1 softgel, 5000 IU)",
+    "name_ar": "فيتامين دي ٣",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "vitamin-d",
+      "bone-health",
+      "immune"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Zinc (1 tablet, 30mg)",
+    "name_ar": "زنك حبة",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "zinc",
+      "immune",
+      "testosterone"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Magnesium (1 tablet, 400mg)",
+    "name_ar": "ماغنسيوم حبة",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "magnesium",
+      "sleep",
+      "recovery",
+      "muscle"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Greek Yogurt 0% Fat (1 cup)",
+    "name_ar": "زبادي يوناني ٠٪ دسم كوب",
+    "category": "DAIRY",
+    "serving_size_g": 227,
+    "calories": 130,
+    "protein_g": 22,
+    "carbs_g": 9,
+    "fat_g": 0.7,
+    "fiber_g": 0,
+    "calcium_mg": 250,
+    "is_egyptian": false,
+    "tags": [
+      "yogurt",
+      "high-protein",
+      "low-fat",
+      "diet",
+      "bodybuilding"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
+  },
+  {
+    "name_en": "Skyr (Icelandic Yogurt, 1 cup)",
+    "name_ar": "سكاير (زبادي ايسلندي)",
+    "category": "DAIRY",
+    "serving_size_g": 200,
+    "calories": 130,
+    "protein_g": 23,
+    "carbs_g": 7,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "calcium_mg": 300,
+    "is_egyptian": false,
+    "tags": [
+      "yogurt",
+      "ultra-high-protein",
+      "low-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Low Fat Milk (1 cup)",
+    "name_ar": "لبن قليل الدسم كوب",
+    "category": "DAIRY",
+    "serving_size_g": 245,
+    "calories": 102,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 2.4,
+    "fiber_g": 0,
+    "calcium_mg": 305,
+    "is_egyptian": true,
+    "tags": [
+      "milk",
+      "protein",
+      "calcium",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Full Fat Milk (1 cup)",
+    "name_ar": "لبن كامل الدسم كوب",
+    "category": "DAIRY",
+    "serving_size_g": 244,
+    "calories": 149,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "calcium_mg": 276,
+    "is_egyptian": true,
+    "tags": [
+      "milk",
+      "bulking",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Skimmed Milk (1 cup)",
+    "name_ar": "لبن خالي الدسم كوب",
+    "category": "DAIRY",
+    "serving_size_g": 245,
+    "calories": 83,
+    "protein_g": 8.3,
+    "carbs_g": 12,
+    "fat_g": 0.2,
+    "fiber_g": 0,
+    "calcium_mg": 299,
+    "is_egyptian": true,
+    "tags": [
+      "milk",
+      "protein",
+      "low-fat",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  }
+]

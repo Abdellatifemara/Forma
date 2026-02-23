@@ -1,0 +1,1385 @@
+[
+  {
+    "name_en": "Rice with Vermicelli (1 cup)",
+    "name_ar": "رز بالشعرية",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 260,
+    "protein_g": 5,
+    "carbs_g": 50,
+    "fat_g": 4.5,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "rice",
+      "side-dish",
+      "home-cooking",
+      "staple"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Rice with Liver & Gizzards (Roz Bil Khalta)",
+    "name_ar": "رز بالخلطة",
+    "category": "CARBS",
+    "serving_size_g": 300,
+    "calories": 420,
+    "protein_g": 18,
+    "carbs_g": 52,
+    "fat_g": 16,
+    "fiber_g": 2,
+    "iron_mg": 5,
+    "is_egyptian": true,
+    "tags": [
+      "rice",
+      "liver",
+      "traditional",
+      "celebration"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Molokhia with Chicken (1 bowl + rice)",
+    "name_ar": "ملوخية بالفراخ مع رز",
+    "category": "PROTEIN",
+    "serving_size_g": 450,
+    "calories": 520,
+    "protein_g": 32,
+    "carbs_g": 55,
+    "fat_g": 18,
+    "fiber_g": 4,
+    "iron_mg": 4.5,
+    "is_egyptian": true,
+    "tags": [
+      "molokhia",
+      "chicken",
+      "traditional",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "Molokhia with Rabbit (1 bowl + rice)",
+    "name_ar": "ملوخية بالأرانب مع رز",
+    "category": "PROTEIN",
+    "serving_size_g": 450,
+    "calories": 480,
+    "protein_g": 35,
+    "carbs_g": 52,
+    "fat_g": 14,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "molokhia",
+      "rabbit",
+      "traditional",
+      "lean"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "Bamia with Meat (Okra Stew, 1 bowl)",
+    "name_ar": "بامية باللحمة",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 380,
+    "protein_g": 25,
+    "carbs_g": 20,
+    "fat_g": 22,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "okra",
+      "stew",
+      "traditional",
+      "meat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/okra.jpg"
+  },
+  {
+    "name_en": "Fasolia with Meat (White Bean Stew)",
+    "name_ar": "فاصوليا بيضاء باللحمة",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 400,
+    "protein_g": 26,
+    "carbs_g": 35,
+    "fat_g": 16,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "beans",
+      "stew",
+      "traditional",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/white-beans.jpg"
+  },
+  {
+    "name_en": "Kolkas with Chard (Taro Stew)",
+    "name_ar": "قلقاس بالسلق",
+    "category": "CARBS",
+    "serving_size_g": 350,
+    "calories": 320,
+    "protein_g": 12,
+    "carbs_g": 48,
+    "fat_g": 10,
+    "fiber_g": 7,
+    "is_egyptian": true,
+    "tags": [
+      "taro",
+      "traditional",
+      "winter",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Besara (Fava Bean Dip, 1 bowl)",
+    "name_ar": "بصارة",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 280,
+    "protein_g": 16,
+    "carbs_g": 38,
+    "fat_g": 8,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "fava-beans",
+      "dip",
+      "traditional",
+      "vegan",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
+  },
+  {
+    "name_en": "Koshary Large Bowl",
+    "name_ar": "كشري كبير",
+    "category": "CARBS",
+    "serving_size_g": 500,
+    "calories": 1050,
+    "protein_g": 28,
+    "carbs_g": 190,
+    "fat_g": 20,
+    "fiber_g": 15,
+    "is_egyptian": true,
+    "tags": [
+      "koshary",
+      "street-food",
+      "carbs",
+      "vegan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Macarona Bechamel (Baked Pasta, 1 piece)",
+    "name_ar": "مكرونة بشاميل قطعة",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 520,
+    "protein_g": 22,
+    "carbs_g": 48,
+    "fat_g": 28,
+    "fiber_g": 2,
+    "calcium_mg": 200,
+    "is_egyptian": true,
+    "tags": [
+      "pasta",
+      "baked",
+      "bechamel",
+      "comfort-food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pasta.jpg"
+  },
+  {
+    "name_en": "Mahshi Warak Enab (Stuffed Grape Leaves, 6 pieces)",
+    "name_ar": "محشي ورق عنب ٦ حبات",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 280,
+    "protein_g": 8,
+    "carbs_g": 38,
+    "fat_g": 12,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "mahshi",
+      "grape-leaves",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
+  },
+  {
+    "name_en": "Mahshi Filfil (Stuffed Peppers, 2 pieces)",
+    "name_ar": "محشي فلفل ٢ حبات",
+    "category": "CARBS",
+    "serving_size_g": 280,
+    "calories": 350,
+    "protein_g": 14,
+    "carbs_g": 42,
+    "fat_g": 14,
+    "fiber_g": 5,
+    "vitamin_c_mg": 80,
+    "is_egyptian": true,
+    "tags": [
+      "mahshi",
+      "peppers",
+      "traditional",
+      "vitamin-c"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bell-pepper.jpg"
+  },
+  {
+    "name_en": "Mahshi Kroumb (Stuffed Cabbage, 4 rolls)",
+    "name_ar": "محشي كرنب ٤ لفات",
+    "category": "CARBS",
+    "serving_size_g": 280,
+    "calories": 340,
+    "protein_g": 14,
+    "carbs_g": 40,
+    "fat_g": 14,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "mahshi",
+      "cabbage",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cabbage.jpg"
+  },
+  {
+    "name_en": "Fatta with Meat (Full Plate)",
+    "name_ar": "فتة باللحمة طبق كامل",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 750,
+    "protein_g": 35,
+    "carbs_g": 60,
+    "fat_g": 40,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "fatta",
+      "celebration",
+      "rice",
+      "bread",
+      "vinegar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
+  },
+  {
+    "name_en": "Fried Eggplant Slices (Moussaka, 5 pieces)",
+    "name_ar": "مسقعة باذنجان مقلي",
+    "category": "VEGETABLES",
+    "serving_size_g": 200,
+    "calories": 320,
+    "protein_g": 4,
+    "carbs_g": 18,
+    "fat_g": 26,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "eggplant",
+      "fried",
+      "side-dish"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fried-egg.jpg"
+  },
+  {
+    "name_en": "Chicken Pane (Breaded & Fried, 2 pieces)",
+    "name_ar": "بانيه فراخ ٢ قطعة",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 460,
+    "protein_g": 28,
+    "carbs_g": 28,
+    "fat_g": 26,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "chicken",
+      "breaded",
+      "fried",
+      "comfort-food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Chicken Shawerma Home-style (1 plate)",
+    "name_ar": "شاورما فراخ بيتي",
+    "category": "PROTEIN",
+    "serving_size_g": 300,
+    "calories": 420,
+    "protein_g": 35,
+    "carbs_g": 15,
+    "fat_g": 25,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "shawarma",
+      "chicken",
+      "home-cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Grilled Kofta (4 skewers)",
+    "name_ar": "كفتة مشوية ٤ أسياخ",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 440,
+    "protein_g": 32,
+    "carbs_g": 6,
+    "fat_g": 32,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "kofta",
+      "grilled",
+      "bbq",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
+  },
+  {
+    "name_en": "Grilled Kebab (4 skewers)",
+    "name_ar": "كباب مشوي ٤ أسياخ",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 380,
+    "protein_g": 36,
+    "carbs_g": 2,
+    "fat_g": 24,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "kebab",
+      "grilled",
+      "bbq",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Grilled Chicken Quarter (with skin)",
+    "name_ar": "ربع فرخة مشوية بالجلد",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 380,
+    "protein_g": 38,
+    "carbs_g": 0,
+    "fat_g": 24,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "chicken",
+      "grilled",
+      "bbq"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Grilled Chicken Breast (Skinless)",
+    "name_ar": "صدر فرخة مشوي بدون جلد",
+    "category": "PROTEIN",
+    "serving_size_g": 150,
+    "calories": 195,
+    "protein_g": 37,
+    "carbs_g": 0,
+    "fat_g": 4.3,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "chicken",
+      "grilled",
+      "lean",
+      "diet",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Roasted Whole Chicken (Farkha Mashwiya)",
+    "name_ar": "فرخة مشوية كاملة",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 760,
+    "protein_g": 72,
+    "carbs_g": 0,
+    "fat_g": 52,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "chicken",
+      "roasted",
+      "whole"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Hamam Mahshi (Stuffed Pigeon)",
+    "name_ar": "حمام محشي",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 480,
+    "protein_g": 30,
+    "carbs_g": 35,
+    "fat_g": 24,
+    "fiber_g": 2,
+    "iron_mg": 5,
+    "is_egyptian": true,
+    "tags": [
+      "pigeon",
+      "stuffed",
+      "traditional",
+      "celebration",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
+  },
+  {
+    "name_en": "Kabab Halla (Meat & Vegetable Stew)",
+    "name_ar": "كباب حلة",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 420,
+    "protein_g": 28,
+    "carbs_g": 25,
+    "fat_g": 24,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "stew",
+      "meat",
+      "traditional",
+      "slow-cooked"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Dawood Basha (Meatball Stew)",
+    "name_ar": "داوود باشا كفتة",
+    "category": "PROTEIN",
+    "serving_size_g": 300,
+    "calories": 450,
+    "protein_g": 26,
+    "carbs_g": 20,
+    "fat_g": 30,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "meatballs",
+      "stew",
+      "tomato-sauce"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Shish Tawook (6 pieces)",
+    "name_ar": "شيش طاووق ٦ قطع",
+    "category": "PROTEIN",
+    "serving_size_g": 180,
+    "calories": 280,
+    "protein_g": 35,
+    "carbs_g": 5,
+    "fat_g": 13,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "chicken",
+      "grilled",
+      "marinated",
+      "lean"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Fried Tilapia (Samak Boulti Magli)",
+    "name_ar": "سمك بلطي مقلي",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 380,
+    "protein_g": 32,
+    "carbs_g": 14,
+    "fat_g": 22,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "fish",
+      "fried",
+      "tilapia",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tilapia-fillets.jpg"
+  },
+  {
+    "name_en": "Grilled Tilapia (Samak Boulti Mashwi)",
+    "name_ar": "سمك بلطي مشوي",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 220,
+    "protein_g": 40,
+    "carbs_g": 0,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "fish",
+      "grilled",
+      "lean",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tilapia-fillets.jpg"
+  },
+  {
+    "name_en": "Sayadeya (Fish with Spiced Rice)",
+    "name_ar": "صيادية سمك بالرز",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 580,
+    "protein_g": 35,
+    "carbs_g": 55,
+    "fat_g": 22,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "fish",
+      "rice",
+      "traditional",
+      "coastal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Grilled Shrimp (Gambari Mashwi, 10 pieces)",
+    "name_ar": "جمبري مشوي ١٠ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 150,
+    "calories": 150,
+    "protein_g": 30,
+    "carbs_g": 1,
+    "fat_g": 2.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "shrimp",
+      "grilled",
+      "lean",
+      "seafood"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/shrimp.jpg"
+  },
+  {
+    "name_en": "Fried Calamari (1 plate)",
+    "name_ar": "كاليماري مقلي",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 24,
+    "carbs_g": 28,
+    "fat_g": 24,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "calamari",
+      "fried",
+      "seafood"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/squid.jpg"
+  },
+  {
+    "name_en": "Lentil Soup (1 bowl)",
+    "name_ar": "شوربة عدس",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 280,
+    "protein_g": 16,
+    "carbs_g": 40,
+    "fat_g": 6,
+    "fiber_g": 12,
+    "iron_mg": 4,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "lentils",
+      "winter",
+      "protein",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Freekeh Soup (1 bowl)",
+    "name_ar": "شوربة فريك",
+    "category": "CARBS",
+    "serving_size_g": 350,
+    "calories": 320,
+    "protein_g": 18,
+    "carbs_g": 42,
+    "fat_g": 10,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "freekeh",
+      "chicken",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bulgur.jpg"
+  },
+  {
+    "name_en": "Orzo Soup (Lissan Asfour, 1 bowl)",
+    "name_ar": "شوربة لسان عصفور",
+    "category": "CARBS",
+    "serving_size_g": 350,
+    "calories": 250,
+    "protein_g": 12,
+    "carbs_g": 38,
+    "fat_g": 6,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "orzo",
+      "chicken",
+      "comfort-food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
+  },
+  {
+    "name_en": "Vegetable Soup (1 bowl)",
+    "name_ar": "شوربة خضار",
+    "category": "VEGETABLES",
+    "serving_size_g": 350,
+    "calories": 120,
+    "protein_g": 4,
+    "carbs_g": 20,
+    "fat_g": 3,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "vegetables",
+      "diet",
+      "low-cal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Kawarea Soup (Trotters Soup, 1 bowl)",
+    "name_ar": "شوربة كوارع",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 280,
+    "protein_g": 22,
+    "carbs_g": 8,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "calcium_mg": 150,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "trotters",
+      "collagen",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Chicken Soup with Vegetables",
+    "name_ar": "شوربة فراخ بالخضار",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 180,
+    "protein_g": 18,
+    "carbs_g": 12,
+    "fat_g": 7,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "soup",
+      "chicken",
+      "vegetables",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Ful Medames with Eggs (1 plate)",
+    "name_ar": "فول بالبيض طبق",
+    "category": "PROTEIN",
+    "serving_size_g": 300,
+    "calories": 420,
+    "protein_g": 24,
+    "carbs_g": 38,
+    "fat_g": 18,
+    "fiber_g": 10,
+    "iron_mg": 4.5,
+    "is_egyptian": true,
+    "tags": [
+      "ful",
+      "eggs",
+      "breakfast",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
+  },
+  {
+    "name_en": "Ful with Tahini & Lemon (1 plate)",
+    "name_ar": "فول بالطحينة والليمون",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 380,
+    "protein_g": 18,
+    "carbs_g": 35,
+    "fat_g": 18,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "ful",
+      "tahini",
+      "breakfast",
+      "vegan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Egyptian Breakfast Plate (Ful + Ta'ameya + Egg + Salad)",
+    "name_ar": "طبق فطار مصري كامل",
+    "category": "PROTEIN",
+    "serving_size_g": 450,
+    "calories": 650,
+    "protein_g": 28,
+    "carbs_g": 62,
+    "fat_g": 32,
+    "fiber_g": 12,
+    "is_egyptian": true,
+    "tags": [
+      "breakfast",
+      "traditional",
+      "complete-meal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  },
+  {
+    "name_en": "White Cheese with Tomato & Olive Oil",
+    "name_ar": "جبنة بيضاء بالطماطم وزيت زيتون",
+    "category": "DAIRY",
+    "serving_size_g": 150,
+    "calories": 280,
+    "protein_g": 12,
+    "carbs_g": 6,
+    "fat_g": 24,
+    "fiber_g": 1,
+    "calcium_mg": 300,
+    "is_egyptian": true,
+    "tags": [
+      "cheese",
+      "breakfast",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/feta-cheese.jpg"
+  },
+  {
+    "name_en": "Eggs with Pastrami / Basturma (2 eggs)",
+    "name_ar": "بيض بالبسطرمة",
+    "category": "PROTEIN",
+    "serving_size_g": 180,
+    "calories": 350,
+    "protein_g": 24,
+    "carbs_g": 2,
+    "fat_g": 27,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "eggs",
+      "basturma",
+      "breakfast",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Eggs with Sausage (Sogo, 2 eggs)",
+    "name_ar": "بيض بالسجق",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 22,
+    "carbs_g": 4,
+    "fat_g": 35,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "eggs",
+      "sausage",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Gibna Areesh with Honey (Diet Breakfast)",
+    "name_ar": "جبنة قريش بالعسل",
+    "category": "DAIRY",
+    "serving_size_g": 150,
+    "calories": 180,
+    "protein_g": 16,
+    "carbs_g": 18,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "calcium_mg": 180,
+    "is_egyptian": true,
+    "tags": [
+      "cheese",
+      "cottage",
+      "honey",
+      "diet",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
+  },
+  {
+    "name_en": "Romy Cheese with Bread",
+    "name_ar": "جبنة رومي مع عيش",
+    "category": "DAIRY",
+    "serving_size_g": 100,
+    "calories": 330,
+    "protein_g": 18,
+    "carbs_g": 30,
+    "fat_g": 16,
+    "fiber_g": 2,
+    "calcium_mg": 400,
+    "is_egyptian": true,
+    "tags": [
+      "cheese",
+      "bread",
+      "snack",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Om Ali (Egyptian Bread Pudding, 1 bowl)",
+    "name_ar": "أم علي",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 580,
+    "protein_g": 12,
+    "carbs_g": 65,
+    "fat_g": 30,
+    "fiber_g": 2,
+    "sugar_g": 35,
+    "calcium_mg": 250,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "traditional",
+      "celebration",
+      "nuts"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Mehalabeya (Milk Pudding, 1 bowl)",
+    "name_ar": "مهلبية",
+    "category": "DAIRY",
+    "serving_size_g": 200,
+    "calories": 240,
+    "protein_g": 6,
+    "carbs_g": 38,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "sugar_g": 25,
+    "calcium_mg": 180,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "milk",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Konafa with Cream (1 piece)",
+    "name_ar": "كنافة بالقشطة",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 450,
+    "protein_g": 8,
+    "carbs_g": 52,
+    "fat_g": 24,
+    "fiber_g": 1,
+    "sugar_g": 30,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "konafa",
+      "ramadan",
+      "celebration"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
+  },
+  {
+    "name_en": "Basbousa (1 piece)",
+    "name_ar": "بسبوسة قطعة",
+    "category": "CARBS",
+    "serving_size_g": 80,
+    "calories": 280,
+    "protein_g": 3,
+    "carbs_g": 42,
+    "fat_g": 12,
+    "fiber_g": 0.5,
+    "sugar_g": 28,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "semolina",
+      "syrup",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/semolina.jpg"
+  },
+  {
+    "name_en": "Qatayef with Nuts (3 pieces)",
+    "name_ar": "قطايف بالمكسرات ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 480,
+    "protein_g": 8,
+    "carbs_g": 55,
+    "fat_g": 26,
+    "fiber_g": 2,
+    "sugar_g": 30,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "ramadan",
+      "fried",
+      "nuts"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/crepes.jpg"
+  },
+  {
+    "name_en": "Qatayef with Cream (3 pieces)",
+    "name_ar": "قطايف بالقشطة ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 420,
+    "protein_g": 7,
+    "carbs_g": 48,
+    "fat_g": 22,
+    "fiber_g": 1,
+    "sugar_g": 28,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "ramadan",
+      "cream"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Lokmet El Qadi (10 pieces)",
+    "name_ar": "لقمة القاضي ١٠ حبات",
+    "category": "CARBS",
+    "serving_size_g": 80,
+    "calories": 320,
+    "protein_g": 3,
+    "carbs_g": 40,
+    "fat_g": 16,
+    "fiber_g": 0.5,
+    "sugar_g": 20,
+    "is_egyptian": true,
+    "tags": [
+      "dessert",
+      "fried",
+      "syrup"
+    ]
+  },
+  {
+    "name_en": "Kunafa Nabulsia (1 piece)",
+    "name_ar": "كنافة نابلسية",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 500,
+    "protein_g": 10,
+    "carbs_g": 55,
+    "fat_g": 28,
+    "fiber_g": 1,
+    "sugar_g": 32,
+    "calcium_mg": 220,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "cheese",
+      "kunafa",
+      "levantine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
+  },
+  {
+    "name_en": "Goulash with Meat (1 piece)",
+    "name_ar": "جلاش باللحمة المفرومة",
+    "category": "PROTEIN",
+    "serving_size_g": 120,
+    "calories": 280,
+    "protein_g": 14,
+    "carbs_g": 22,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "meat",
+      "savory"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Goulash with Cheese (1 piece)",
+    "name_ar": "جلاش بالجبنة",
+    "category": "CARBS",
+    "serving_size_g": 100,
+    "calories": 250,
+    "protein_g": 8,
+    "carbs_g": 22,
+    "fat_g": 14,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "cheese",
+      "savory"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Sambousek Meat (3 pieces)",
+    "name_ar": "سمبوسك لحمة ٣ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 90,
+    "calories": 270,
+    "protein_g": 10,
+    "carbs_g": 22,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "meat",
+      "fried",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Sambousek Cheese (3 pieces)",
+    "name_ar": "سمبوسك جبنة ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 90,
+    "calories": 260,
+    "protein_g": 8,
+    "carbs_g": 22,
+    "fat_g": 15,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "cheese",
+      "fried",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Mombar (Stuffed Intestines, 3 pieces)",
+    "name_ar": "ممبار ٣ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 150,
+    "calories": 380,
+    "protein_g": 16,
+    "carbs_g": 30,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "offal",
+      "traditional",
+      "stuffed",
+      "celebration"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Kaware (Cow Trotters, 2 pieces)",
+    "name_ar": "كوارع ٢ حبة",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 350,
+    "protein_g": 28,
+    "carbs_g": 0,
+    "fat_g": 26,
+    "fiber_g": 0,
+    "calcium_mg": 180,
+    "is_egyptian": true,
+    "tags": [
+      "offal",
+      "trotters",
+      "collagen",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Kushk (Dried Yogurt & Wheat)",
+    "name_ar": "كشك",
+    "category": "DAIRY",
+    "serving_size_g": 250,
+    "calories": 280,
+    "protein_g": 12,
+    "carbs_g": 35,
+    "fat_g": 10,
+    "fiber_g": 3,
+    "calcium_mg": 200,
+    "is_egyptian": true,
+    "tags": [
+      "traditional",
+      "fermented",
+      "winter",
+      "rural"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Feteer Meshaltet with Honey (1 piece)",
+    "name_ar": "فطير مشلتت بالعسل",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 520,
+    "protein_g": 7,
+    "carbs_g": 55,
+    "fat_g": 30,
+    "fiber_g": 1,
+    "sugar_g": 18,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "traditional",
+      "breakfast",
+      "sweet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Feteer with Mixed Cheese (1 piece)",
+    "name_ar": "فطير بالجبنة المشكلة",
+    "category": "CARBS",
+    "serving_size_g": 180,
+    "calories": 550,
+    "protein_g": 18,
+    "carbs_g": 45,
+    "fat_g": 34,
+    "fiber_g": 1,
+    "calcium_mg": 300,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "cheese",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Hawawshi (1 sandwich)",
+    "name_ar": "حواوشي سندوتش",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 550,
+    "protein_g": 28,
+    "carbs_g": 42,
+    "fat_g": 30,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "hawawshi",
+      "meat",
+      "bread",
+      "street-food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
+  },
+  {
+    "name_en": "Liver Sandwich (Kebda Iskandarani)",
+    "name_ar": "سندوتش كبدة اسكندراني",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 26,
+    "carbs_g": 35,
+    "fat_g": 20,
+    "fiber_g": 2,
+    "iron_mg": 8,
+    "vitamin_a_iu": 15000,
+    "is_egyptian": true,
+    "tags": [
+      "liver",
+      "street-food",
+      "iron",
+      "vitamin-a"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Sausage Sandwich (Sogo Iskandarani)",
+    "name_ar": "سندوتش سجق اسكندراني",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 480,
+    "protein_g": 18,
+    "carbs_g": 35,
+    "fat_g": 30,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "sausage",
+      "street-food",
+      "spicy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Koshary with Extra Da'a Sauce",
+    "name_ar": "كشري بالدقة الزيادة",
+    "category": "CARBS",
+    "serving_size_g": 400,
+    "calories": 780,
+    "protein_g": 22,
+    "carbs_g": 140,
+    "fat_g": 16,
+    "fiber_g": 12,
+    "is_egyptian": true,
+    "tags": [
+      "koshary",
+      "street-food",
+      "vinegar",
+      "garlic"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Alexandrian Fried Liver (Plate)",
+    "name_ar": "كبدة اسكندراني طبق",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 380,
+    "protein_g": 32,
+    "carbs_g": 10,
+    "fat_g": 24,
+    "fiber_g": 2,
+    "iron_mg": 10,
+    "vitamin_a_iu": 18000,
+    "is_egyptian": true,
+    "tags": [
+      "liver",
+      "alexandrian",
+      "iron",
+      "spicy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Fiteer with Ground Meat",
+    "name_ar": "فطير باللحمة المفرومة",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 580,
+    "protein_g": 24,
+    "carbs_g": 42,
+    "fat_g": 36,
+    "fiber_g": 1.5,
+    "is_egyptian": true,
+    "tags": [
+      "fiteer",
+      "meat",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pita-bread.jpg"
+  },
+  {
+    "name_en": "Aish Baladi (1 loaf)",
+    "name_ar": "عيش بلدي رغيف",
+    "category": "CARBS",
+    "serving_size_g": 80,
+    "calories": 210,
+    "protein_g": 7,
+    "carbs_g": 42,
+    "fat_g": 1.5,
+    "fiber_g": 5,
+    "iron_mg": 2,
+    "is_egyptian": true,
+    "tags": [
+      "bread",
+      "whole-wheat",
+      "staple",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pita-bread.jpg"
+  },
+  {
+    "name_en": "Aish Fino (1 roll)",
+    "name_ar": "عيش فينو",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 175,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 3,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "bread",
+      "white",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Aish Shamsi (Sun-dried Bread, 1 loaf)",
+    "name_ar": "عيش شمسي",
+    "category": "CARBS",
+    "serving_size_g": 100,
+    "calories": 280,
+    "protein_g": 8,
+    "carbs_g": 55,
+    "fat_g": 2.5,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "bread",
+      "traditional",
+      "upper-egypt"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Aish Merahrah (Fenugreek Bread, 1 loaf)",
+    "name_ar": "عيش مرحرح",
+    "category": "CARBS",
+    "serving_size_g": 80,
+    "calories": 200,
+    "protein_g": 7,
+    "carbs_g": 38,
+    "fat_g": 2,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "bread",
+      "fenugreek",
+      "upper-egypt",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  }
+]

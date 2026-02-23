@@ -1,0 +1,714 @@
+[
+  {
+    "name_en": "Koshari (Large Plate, Regular)",
+    "name_ar": "كشري (طبق كبير، عادي)",
+    "category": "street_food",
+    "serving_size_g": 500,
+    "calories": 650,
+    "protein_g": 18,
+    "carbs_g": 110,
+    "fat_g": 12,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "koshari",
+      "carbs",
+      "egyptian",
+      "budget",
+      "vegan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Koshari (Small Plate)",
+    "name_ar": "كشري (طبق صغير)",
+    "category": "street_food",
+    "serving_size_g": 300,
+    "calories": 390,
+    "protein_g": 11,
+    "carbs_g": 66,
+    "fat_g": 7,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "koshari",
+      "carbs",
+      "egyptian",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Hawawshi (Minced Meat in Bread)",
+    "name_ar": "حواوشي (لحمة مفرومة في عيش)",
+    "category": "street_food",
+    "serving_size_g": 250,
+    "calories": 550,
+    "protein_g": 25,
+    "carbs_g": 40,
+    "fat_g": 32,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "hawawshi",
+      "beef",
+      "bread",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
+  },
+  {
+    "name_en": "Ta'ameya / Falafel Sandwich (3 pieces, bread)",
+    "name_ar": "طعمية ساندويتش (3 حبات، عيش)",
+    "category": "street_food",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 12,
+    "carbs_g": 48,
+    "fat_g": 20,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "taameya",
+      "falafel",
+      "vegan",
+      "egyptian",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  },
+  {
+    "name_en": "Kebda Iskandrani (Liver Sandwich)",
+    "name_ar": "كبدة إسكندراني (ساندويتش)",
+    "category": "street_food",
+    "serving_size_g": 200,
+    "calories": 380,
+    "protein_g": 22,
+    "carbs_g": 35,
+    "fat_g": 16,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "kebda",
+      "liver",
+      "iron",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Shawarma Sandwich (Chicken, Large)",
+    "name_ar": "شاورما فراخ ساندويتش (كبير)",
+    "category": "street_food",
+    "serving_size_g": 300,
+    "calories": 550,
+    "protein_g": 30,
+    "carbs_g": 45,
+    "fat_g": 28,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "shawarma",
+      "chicken",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Shawarma Sandwich (Beef, Large)",
+    "name_ar": "شاورما لحمة ساندويتش (كبير)",
+    "category": "street_food",
+    "serving_size_g": 300,
+    "calories": 620,
+    "protein_g": 28,
+    "carbs_g": 45,
+    "fat_g": 35,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "shawarma",
+      "beef",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Foul Cart Sandwich (Foul + Egg + Tahini)",
+    "name_ar": "ساندويتش فول عربية (فول + بيضة + طحينة)",
+    "category": "street_food",
+    "serving_size_g": 250,
+    "calories": 380,
+    "protein_g": 16,
+    "carbs_g": 45,
+    "fat_g": 15,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "foul",
+      "egg",
+      "tahini",
+      "breakfast",
+      "egyptian",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Sobia (Cold Coconut Drink, 1 glass)",
+    "name_ar": "سوبيا (كوب)",
+    "category": "street_food",
+    "serving_size_g": 300,
+    "calories": 200,
+    "protein_g": 2,
+    "carbs_g": 42,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "sobia",
+      "drink",
+      "ramadan",
+      "coconut",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Karkade (Hibiscus, Cold, Sweetened, 1 glass)",
+    "name_ar": "كركديه (بارد، محلى، كوب)",
+    "category": "street_food",
+    "serving_size_g": 300,
+    "calories": 90,
+    "protein_g": 0,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "karkade",
+      "hibiscus",
+      "drink",
+      "ramadan",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Sugarcane Juice (Aseer Asab, 1 glass)",
+    "name_ar": "عصير قصب (كوب)",
+    "category": "street_food",
+    "serving_size_g": 350,
+    "calories": 180,
+    "protein_g": 0,
+    "carbs_g": 45,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "sugarcane",
+      "juice",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Batata (Sweet Potato, Roasted, Street Cart)",
+    "name_ar": "بطاطا مشوية (عربية)",
+    "category": "street_food",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 3,
+    "carbs_g": 42,
+    "fat_g": 0,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "sweet_potato",
+      "roasted",
+      "winter",
+      "egyptian",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Halabesa (Hot Chickpea Soup, Street Style)",
+    "name_ar": "حلبسة (حمص حار، ستايل شارع)",
+    "category": "street_food",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 10,
+    "carbs_g": 30,
+    "fat_g": 5,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "halabesa",
+      "chickpeas",
+      "winter",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chickpeas.jpg"
+  },
+  {
+    "name_en": "Termis / Lupini Beans (1 cup)",
+    "name_ar": "ترمس (كوب)",
+    "category": "street_food",
+    "serving_size_g": 150,
+    "calories": 160,
+    "protein_g": 16,
+    "carbs_g": 16,
+    "fat_g": 3,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "termis",
+      "lupini",
+      "protein",
+      "snack",
+      "egyptian",
+      "healthy"
+    ]
+  },
+  {
+    "name_en": "Lob (Roasted Seeds Mix, 100g)",
+    "name_ar": "لب (خليط محمص، 100 جرام)",
+    "category": "street_food",
+    "serving_size_g": 100,
+    "calories": 500,
+    "protein_g": 20,
+    "carbs_g": 18,
+    "fat_g": 40,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "lob",
+      "seeds",
+      "snack",
+      "protein",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Fiseekh (Salted Fermented Fish, 100g)",
+    "name_ar": "فسيخ (سمك مملح مخمر، 100 جرام)",
+    "category": "street_food",
+    "serving_size_g": 100,
+    "calories": 200,
+    "protein_g": 28,
+    "carbs_g": 0,
+    "fat_g": 10,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "fiseekh",
+      "fish",
+      "fermented",
+      "sham_ennessim",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Ringa (Smoked Herring, 1 fish)",
+    "name_ar": "رنجة (سمك مدخن، سمكة)",
+    "category": "street_food",
+    "serving_size_g": 150,
+    "calories": 250,
+    "protein_g": 30,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "ringa",
+      "herring",
+      "smoked",
+      "omega3",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Baladi Bread Chips (Feteer Meshaltet Style)",
+    "name_ar": "شيبس عيش بلدي (ستايل فطير مشلتت)",
+    "category": "street_food",
+    "serving_size_g": 100,
+    "calories": 350,
+    "protein_g": 6,
+    "carbs_g": 40,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "bread_chips",
+      "snack",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pita-bread.jpg"
+  },
+  {
+    "name_en": "Feteer Meshaltet (Plain, 1 slice)",
+    "name_ar": "فطير مشلتت (سادة، قطعة)",
+    "category": "street_food",
+    "serving_size_g": 120,
+    "calories": 380,
+    "protein_g": 6,
+    "carbs_g": 38,
+    "fat_g": 22,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "feteer",
+      "pastry",
+      "butter",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Feteer with Cheese & Honey (1 slice)",
+    "name_ar": "فطير بجبنة وعسل (قطعة)",
+    "category": "street_food",
+    "serving_size_g": 150,
+    "calories": 480,
+    "protein_g": 10,
+    "carbs_g": 45,
+    "fat_g": 28,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "feteer",
+      "cheese",
+      "honey",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Sambousek (Cheese, 3 pieces)",
+    "name_ar": "سمبوسك (جبنة، 3 حبات)",
+    "category": "street_food",
+    "serving_size_g": 120,
+    "calories": 300,
+    "protein_g": 8,
+    "carbs_g": 28,
+    "fat_g": 18,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "sambousek",
+      "cheese",
+      "fried",
+      "egyptian",
+      "ramadan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Sambousek (Meat, 3 pieces)",
+    "name_ar": "سمبوسك (لحمة، 3 حبات)",
+    "category": "street_food",
+    "serving_size_g": 120,
+    "calories": 330,
+    "protein_g": 14,
+    "carbs_g": 25,
+    "fat_g": 20,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "sambousek",
+      "meat",
+      "fried",
+      "egyptian",
+      "ramadan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/dumplings.jpg"
+  },
+  {
+    "name_en": "Corn on the Cob (Grilled, Street Style)",
+    "name_ar": "ذرة مشوية (ستايل شارع)",
+    "category": "street_food",
+    "serving_size_g": 150,
+    "calories": 140,
+    "protein_g": 5,
+    "carbs_g": 30,
+    "fat_g": 2,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "corn",
+      "grilled",
+      "snack",
+      "egyptian",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/corn.jpg"
+  },
+  {
+    "name_en": "Mesaa'a (Fried Eggplant Casserole)",
+    "name_ar": "مسقعة (باذنجان مقلي)",
+    "category": "street_food",
+    "serving_size_g": 300,
+    "calories": 350,
+    "protein_g": 12,
+    "carbs_g": 25,
+    "fat_g": 24,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "mesaaa",
+      "eggplant",
+      "tomato",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fried-egg.jpg"
+  },
+  {
+    "name_en": "Dukkah-Crusted Bread (Bread + Oil + Dukkah)",
+    "name_ar": "عيش بدقة (عيش + زيت + دقة)",
+    "category": "street_food",
+    "serving_size_g": 100,
+    "calories": 280,
+    "protein_g": 6,
+    "carbs_g": 30,
+    "fat_g": 15,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "dukkah",
+      "bread",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Eish Baladi (Egyptian Flatbread, 1 piece)",
+    "name_ar": "عيش بلدي (رغيف)",
+    "category": "street_food",
+    "serving_size_g": 80,
+    "calories": 200,
+    "protein_g": 6,
+    "carbs_g": 40,
+    "fat_g": 1,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "baladi_bread",
+      "staple",
+      "egyptian",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Eish Fino (Soft Roll, 1 piece)",
+    "name_ar": "عيش فينو (رغيف)",
+    "category": "street_food",
+    "serving_size_g": 60,
+    "calories": 170,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 2,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "fino_bread",
+      "sandwich",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Fiteer Baladi (Village Style, 1 piece)",
+    "name_ar": "فطير بلدي (ريفي، قطعة)",
+    "category": "street_food",
+    "serving_size_g": 150,
+    "calories": 450,
+    "protein_g": 8,
+    "carbs_g": 50,
+    "fat_g": 24,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "fiteer",
+      "village",
+      "butter",
+      "egyptian",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pita-bread.jpg"
+  },
+  {
+    "name_en": "Sogo' (Fried Sausage Sandwich)",
+    "name_ar": "سجق (ساندويتش سجق مقلي)",
+    "category": "street_food",
+    "serving_size_g": 200,
+    "calories": 480,
+    "protein_g": 18,
+    "carbs_g": 35,
+    "fat_g": 30,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "sogo",
+      "sausage",
+      "fried",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Panee Sandwich (Breaded Chicken, Egyptian Style)",
+    "name_ar": "ساندويتش بانيه (فراخ بقسماط)",
+    "category": "street_food",
+    "serving_size_g": 250,
+    "calories": 520,
+    "protein_g": 25,
+    "carbs_g": 48,
+    "fat_g": 24,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "panee",
+      "chicken",
+      "breaded",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Alexandrian Fries (with Ketchup & Vinegar, Medium)",
+    "name_ar": "بطاطس إسكندراني (بكاتشب وخل، وسط)",
+    "category": "street_food",
+    "serving_size_g": 200,
+    "calories": 380,
+    "protein_g": 5,
+    "carbs_g": 50,
+    "fat_g": 18,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "fries",
+      "alexandrian",
+      "fried",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  },
+  {
+    "name_en": "Eskalop (Breaded Beef Cutlet, 1 piece)",
+    "name_ar": "إسكالوب (لحمة بقسماط، حبة)",
+    "category": "street_food",
+    "serving_size_g": 150,
+    "calories": 350,
+    "protein_g": 25,
+    "carbs_g": 18,
+    "fat_g": 20,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "eskalop",
+      "beef",
+      "breaded",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Molokheya Soup (1 bowl, no meat)",
+    "name_ar": "ملوخية (طبق، بدون لحم)",
+    "category": "street_food",
+    "serving_size_g": 250,
+    "calories": 80,
+    "protein_g": 5,
+    "carbs_g": 8,
+    "fat_g": 4,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "molokheya",
+      "soup",
+      "iron",
+      "egyptian",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-broth.jpg"
+  },
+  {
+    "name_en": "Taameya on Plate (5 pieces, no bread)",
+    "name_ar": "طعمية في طبق (5 حبات، بدون عيش)",
+    "category": "street_food",
+    "serving_size_g": 150,
+    "calories": 300,
+    "protein_g": 10,
+    "carbs_g": 28,
+    "fat_g": 18,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "taameya",
+      "falafel",
+      "fried",
+      "vegan",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Baba Ganoush (Smoky Eggplant Dip, 100g)",
+    "name_ar": "بابا غنوج (100 جرام)",
+    "category": "street_food",
+    "serving_size_g": 100,
+    "calories": 120,
+    "protein_g": 2,
+    "carbs_g": 8,
+    "fat_g": 9,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "street_food",
+      "baba_ganoush",
+      "eggplant",
+      "dip",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/eggplant.jpg"
+  }
+]

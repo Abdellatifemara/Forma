@@ -1,0 +1,254 @@
+[
+  {
+    "id": "faq-app-001",
+    "category": "app_usage",
+    "question_en": "How do I track my meals?",
+    "question_ar": "إزاي أتتبع أكلي؟",
+    "answer_en": "Go to the Nutrition tab and tap 'Add Meal'. You can search our database of 2000+ foods including Egyptian dishes, supplements, and restaurant meals. Enter the portion size and it'll calculate your macros automatically.",
+    "answer_ar": "روح على تاب التغذية واضغط 'أضف وجبة'. تقدر تدور في قاعدة بياناتنا اللي فيها أكتر من 2000 أكلة مصرية ومكملات وأكل مطاعم. أدخل حجم الحصة وهيحسبلك الماكروز أوتوماتيك.",
+    "tags": ["app", "nutrition", "tracking", "beginner"]
+  },
+  {
+    "id": "faq-app-002",
+    "category": "app_usage",
+    "question_en": "How do I create a custom workout?",
+    "question_ar": "إزاي أعمل تمرين مخصوص؟",
+    "answer_en": "Go to Workouts tab > Create New Workout. Search exercises by muscle group or name. Add exercises, set your sets and reps, then save. You can also use our AI coach to generate a personalized program based on your goals.",
+    "answer_ar": "روح على تاب التمارين > إنشاء تمرين جديد. دور على التمارين بمجموعة العضلات أو الاسم. أضف تمارين وحدد العدات والتكرارات وبعدين احفظ. كمان تقدر تستخدم المدرب الذكي عشان يعملك برنامج مخصص على أهدافك.",
+    "tags": ["app", "workout", "custom", "beginner"]
+  },
+  {
+    "id": "faq-app-003",
+    "category": "app_usage",
+    "question_en": "What's the difference between free and premium?",
+    "question_ar": "إيه الفرق بين المجاني والبريميوم؟",
+    "answer_en": "Free: Track meals, log workouts, view exercises, basic progress charts, limited AI chat.\nPremium: AI-generated personalized programs, unlimited AI coach chat, advanced analytics, custom meal plans, priority support, ad-free experience.",
+    "answer_ar": "مجاني: تتبع الأكل، تسجيل التمارين، عرض التمارين، رسوم بيانية أساسية، شات ذكي محدود.\nبريميوم: برامج شخصية بالذكاء الاصطناعي، شات مدرب ذكي بلا حدود، تحليلات متقدمة، خطط أكل مخصصة، دعم أولوية، بدون إعلانات.",
+    "tags": ["app", "premium", "pricing", "features"]
+  },
+  {
+    "id": "faq-app-004",
+    "category": "app_usage",
+    "question_en": "How do I change my profile photo or name?",
+    "question_ar": "إزاي أغير صورتي أو اسمي؟",
+    "answer_en": "Go to Settings > Profile. You can update your name, profile photo, bio, and fitness goals. Changes save automatically.",
+    "answer_ar": "روح على الإعدادات > الملف الشخصي. تقدر تحدث اسمك وصورتك والبايو وأهدافك. التغييرات بتتحفظ أوتوماتيك.",
+    "tags": ["app", "profile", "settings"]
+  },
+  {
+    "id": "faq-app-005",
+    "category": "app_usage",
+    "question_en": "How do I log my weight and body measurements?",
+    "question_ar": "إزاي أسجل وزني وقياسات جسمي؟",
+    "answer_en": "Go to Progress tab > Log Check-in. Enter your weight, body fat (if you know it), and optional measurements (chest, waist, arms, legs). Take progress photos for visual comparison. The app tracks your changes over time with graphs.",
+    "answer_ar": "روح على تاب التقدم > تسجيل تشيك إن. أدخل وزنك ونسبة الدهون (لو تعرفها) وقياسات اختيارية (صدر، خصر، ذراع، رجل). خد صور تقدم للمقارنة. التطبيق بيتتبع تغييراتك بالرسوم البيانية.",
+    "tags": ["app", "progress", "weight", "measurements"]
+  },
+  {
+    "id": "faq-app-006",
+    "category": "app_usage",
+    "question_en": "Can I use the app offline?",
+    "question_ar": "أقدر أستخدم التطبيق بدون نت؟",
+    "answer_en": "Yes! Core features like logging workouts, viewing saved exercises, and accessing your meal log work offline. The data syncs when you're back online. AI chat and food search require internet.",
+    "answer_ar": "أيوه! الميزات الأساسية زي تسجيل التمارين وعرض التمارين المحفوظة والوصول لسجل الأكل بتشتغل أوفلاين. البيانات بتتزامن لما ترجع أونلاين. الشات الذكي والبحث عن الأكل محتاجين إنترنت.",
+    "tags": ["app", "offline", "sync"]
+  },
+  {
+    "id": "faq-app-007",
+    "category": "app_usage",
+    "question_en": "How does the AI coach work?",
+    "question_ar": "المدرب الذكي بيشتغل إزاي؟",
+    "answer_en": "The AI coach understands your fitness goals, experience level, and preferences. Ask it anything: 'Give me a chest workout', 'What should I eat post-workout?', 'Create a 4-week bulking plan'. It responds in both English and Arabic.",
+    "answer_ar": "المدرب الذكي بيفهم أهدافك ومستواك وتفضيلاتك. اسأله أي حاجة: 'اديني تمرين صدر'، 'آكل إيه بعد التمرين؟'، 'اعملي خطة تضخيم 4 أسابيع'. بيرد بالعربي والإنجليزي.",
+    "tags": ["app", "ai", "coach", "chat"]
+  },
+  {
+    "id": "faq-app-008",
+    "category": "app_usage",
+    "question_en": "How do I find a personal trainer?",
+    "question_ar": "إزاي ألاقي مدرب شخصي؟",
+    "answer_en": "Go to Trainers tab to browse certified trainers. Filter by location, specialty (bodybuilding, weight loss, strength), language, and rating. You can chat with them, view their programs, and book sessions directly.",
+    "answer_ar": "روح على تاب المدربين وتصفح المدربين المعتمدين. فلتر بالمكان والتخصص (بناء أجسام، خسارة وزن، قوة) واللغة والتقييم. تقدر تتكلم معاهم وتشوف برامجهم وتحجز جلسات مباشرة.",
+    "tags": ["app", "trainers", "personal_training"]
+  },
+  {
+    "id": "faq-ramadan-001",
+    "category": "ramadan",
+    "question_en": "Should I train during Ramadan? When is the best time?",
+    "question_ar": "أتمرن في رمضان؟ إمتى أفضل وقت؟",
+    "answer_en": "Yes, you can train during Ramadan. Best times:\n1. Right before Iftar (30-60 min) - you break fast immediately after\n2. 2-3 hours after Iftar - fully fueled\n3. After Taraweeh prayer - late but works if you sleep late\n\nReduce volume by 20-30%, focus on maintaining strength not gaining. Stay hydrated between Iftar and Suhoor.",
+    "answer_ar": "أيوه، تقدر تتمرن في رمضان. أفضل الأوقات:\n1. قبل الإفطار بـ 30-60 دقيقة - بتفطر بعدها على طول\n2. بعد الإفطار بـ 2-3 ساعات - جسمك متغذي\n3. بعد صلاة التراويح - متأخر بس بيشتغل لو بتنام متأخر\n\nقلل الحجم 20-30%، ركز على الحفاظ على القوة مش الزيادة. اشرب مية كتير بين الإفطار والسحور.",
+    "tags": ["ramadan", "training", "fasting", "egypt", "timing"]
+  },
+  {
+    "id": "faq-ramadan-002",
+    "category": "ramadan",
+    "question_en": "What should I eat for Suhoor to stay full during fasting?",
+    "question_ar": "آكل إيه في السحور عشان أشبع طول اليوم؟",
+    "answer_en": "Best Suhoor foods for satiety:\n- Eggs (protein + fat = fullness)\n- Foul medames (slow-digesting protein & fiber)\n- Oats with milk and honey\n- Yogurt with nuts\n- Whole wheat bread with cheese\n- Dates and peanut butter\n- Drink 2-3 glasses of water\n\nAvoid: Salty foods (make you thirsty), sugary cereals (crash fast), caffeine excess.",
+    "answer_ar": "أفضل أكل سحور للشبع:\n- بيض (بروتين + دهون = شبع)\n- فول مدمس (بروتين بطيء الهضم وألياف)\n- شوفان بالحليب والعسل\n- زبادي بمكسرات\n- عيش سن بالجبنة\n- بلح بزبدة فول سوداني\n- اشرب 2-3 كوبايات مية\n\nتجنب: الأكل المالح (بيعطشك)، سيريال سكر (بيخلص بسرعة)، كافيين كتير.",
+    "tags": ["ramadan", "suhoor", "nutrition", "fasting", "egypt"]
+  },
+  {
+    "id": "faq-ramadan-003",
+    "category": "ramadan",
+    "question_en": "How do I take my supplements during Ramadan?",
+    "question_ar": "آخد المكملات إزاي في رمضان؟",
+    "answer_en": "Adjust your supplement timing:\n- Whey protein: After Iftar meal or post-workout\n- Creatine: With Suhoor (take with water)\n- BCAA: Not needed if eating enough protein at Iftar/Suhoor\n- Multivitamin: With Iftar meal\n- Pre-workout: Only if training after Iftar\n\nDon't take caffeine-heavy supps before Suhoor - you'll need sleep.",
+    "answer_ar": "عدل توقيت المكملات:\n- واي بروتين: بعد الإفطار أو بعد التمرين\n- كرياتين: مع السحور (خده بالمية)\n- BCAA: مش محتاج لو بتاكل بروتين كفاية في الإفطار/السحور\n- فيتامين: مع الإفطار\n- بري وورك أوت: بس لو بتتمرن بعد الإفطار\n\nماتخدش حاجات فيها كافيين كتير قبل السحور - محتاج تنام.",
+    "tags": ["ramadan", "supplements", "timing", "egypt"]
+  },
+  {
+    "id": "faq-egypt-001",
+    "category": "egyptian_culture",
+    "question_en": "I eat koshari every day, can I still lose weight?",
+    "question_ar": "بآكل كشري كل يوم، ممكن أخس برضه؟",
+    "answer_en": "Yes, but portion control is key. A typical koshari plate is 600-800 calories (mostly carbs). Tips:\n- Eat a small plate not large\n- Add extra lentils for protein\n- Go easy on the fried onions and oil\n- Skip the extra daa'a (tomato sauce)\n- Balance your other meals with protein-rich foods\n- You CAN eat koshari and lose weight - it's about total daily calories, not one food.",
+    "answer_ar": "أيوه، بس التحكم في الحصة هو المفتاح. طبق كشري عادي 600-800 سعرة (معظمها كاربز). نصايح:\n- كل طبق صغير مش كبير\n- زود العدس عشان البروتين\n- خفف على البصل المحمر والزيت\n- امشي على الدقة (صلصة)\n- وازن باقي الأكل بأكل غني بالبروتين\n- تقدر تأكل كشري وتخس - الموضوع في السعرات الكلية اليومية مش أكلة واحدة.",
+    "tags": ["egypt", "koshari", "weight_loss", "nutrition", "culture"]
+  },
+  {
+    "id": "faq-egypt-002",
+    "category": "egyptian_culture",
+    "question_en": "Is foul and taameya a good post-workout meal?",
+    "question_ar": "الفول والطعمية أكلة كويسة بعد التمرين؟",
+    "answer_en": "Foul (fava beans) is decent post-workout - good protein and carbs. But:\n- Add eggs for complete protein\n- Foul + eggs + bread = solid post-workout meal\n- Taameya is deep-fried = high fat, slower digestion\n- If you must have taameya, get it oven-baked or air-fried\n- Best post-workout: Foul medames with eggs and whole wheat bread",
+    "answer_ar": "الفول (مدمس) كويس بعد التمرين - فيه بروتين وكاربز. بس:\n- زود بيض عشان بروتين كامل\n- فول + بيض + عيش = أكلة ممتازة بعد التمرين\n- الطعمية مقلية = دهون عالية، هضم أبطأ\n- لو لازم طعمية، خدها في الفرن أو الـ air fryer\n- أفضل بعد التمرين: فول مدمس بالبيض وعيش سن",
+    "tags": ["egypt", "foul", "taameya", "post_workout", "nutrition"]
+  },
+  {
+    "id": "faq-egypt-003",
+    "category": "egyptian_culture",
+    "question_en": "Which Egyptian gym supplements are legit and which are fake?",
+    "question_ar": "إيه المكملات الأصلية والتقليد في مصر؟",
+    "answer_en": "Buy from trusted stores only (Sporter, iHerb, certified distributors).\nTrusted brands: ON Gold Standard, Dymatize ISO100, MuscleTech, Applied Nutrition, Myprotein, Kevin Levrone.\nRed flags:\n- No seal/hologram sticker\n- Extremely cheap prices\n- Powder color/taste seems off\n- No batch/expiry info\n- Buying from random Facebook pages\n\nTip: Scan the barcode with the manufacturer's verification app.",
+    "answer_ar": "اشتري من محلات موثوقة بس (سبورتر، آي هيرب، موزعين معتمدين).\nبراندات موثوقة: أو إن جولد ستاندرد، ديماتايز، ماسل تك، أبلايد نيوتريشن، ماي بروتين، كيفن ليفروني.\nعلامات التقليد:\n- مفيش ستيكر سيل/هولوجرام\n- السعر رخيص أوي\n- لون/طعم البودرة غريب\n- مفيش تاريخ صلاحية أو باتش\n- الشراء من صفحات فيسبوك عشوائية\n\nنصيحة: اسكان الباركود بتطبيق التحقق من الشركة.",
+    "tags": ["egypt", "supplements", "fake", "brands", "safety"]
+  },
+  {
+    "id": "faq-egypt-004",
+    "category": "egyptian_culture",
+    "question_en": "I can't afford whey protein, what are cheaper alternatives in Egypt?",
+    "question_ar": "مش قادر أجيب واي بروتين، إيه البدائل الأرخص في مصر؟",
+    "answer_en": "You don't NEED whey protein. Cheap high-protein Egyptian foods:\n- Eggs (one of the cheapest protein sources globally)\n- Foul medames (very cheap, high protein)\n- Chicken liver (kebda - incredibly cheap and nutritious)\n- Canned tuna\n- Lentils (3ads - cheapest protein source in Egypt)\n- White cheese (gibna beida)\n- Greek yogurt / zabadi\n- Cottage cheese\n\nAll of these can meet your protein needs for a fraction of the cost of supplements.",
+    "answer_ar": "مش لازم واي بروتين. أكلات مصرية رخيصة وغنية بالبروتين:\n- بيض (من أرخص مصادر البروتين في العالم)\n- فول مدمس (رخيص جداً وبروتين عالي)\n- كبدة فراخ (رخيصة ومغذية جداً)\n- تونة معلبة\n- عدس (أرخص مصدر بروتين في مصر)\n- جبنة بيضة\n- زبادي يوناني / زبادي عادي\n- جبنة قريش\n\nكل دي تقدر تغطي احتياجاتك من البروتين بجزء بسيط من تمن المكملات.",
+    "tags": ["egypt", "budget", "protein", "cheap", "alternatives"]
+  },
+  {
+    "id": "faq-egypt-005",
+    "category": "egyptian_culture",
+    "question_en": "What's the best gym split for someone who goes 6 days/week? (Egyptian style)",
+    "question_ar": "إيه أفضل تقسيمة لحد بيتمرن 6 أيام في الأسبوع؟ (ستايل مصري)",
+    "answer_en": "The most popular Egyptian 6-day split:\nDay 1: Chest\nDay 2: Back\nDay 3: Shoulders\nDay 4: Legs\nDay 5: Arms (Biceps + Triceps)\nDay 6: Weak point day (whatever needs work)\nDay 7: Rest\n\nOR the PPL (Push/Pull/Legs) x2:\nDay 1: Push (Chest/Shoulders/Triceps)\nDay 2: Pull (Back/Biceps)\nDay 3: Legs\nDay 4-6: Repeat\nDay 7: Rest\n\nBoth work great. PPL is more scientifically optimal (hitting muscles 2x/week).",
+    "answer_ar": "أشهر تقسيمة مصرية 6 أيام:\nيوم 1: صدر\nيوم 2: ظهر\nيوم 3: أكتاف\nيوم 4: أرجل\nيوم 5: ذراعين (بايسبس + ترايسبس)\nيوم 6: نقطة ضعف (أي عضلة محتاجة شغل)\nيوم 7: راحة\n\nأو الـ PPL (دفع/سحب/أرجل) x2:\nيوم 1: دفع (صدر/أكتاف/ترايسبس)\nيوم 2: سحب (ظهر/بايسبس)\nيوم 3: أرجل\nيوم 4-6: تكرار\nيوم 7: راحة\n\nالاتنين بيشتغلوا. الـ PPL أفضل علمياً (بتضرب العضلة مرتين/أسبوع).",
+    "tags": ["egypt", "split", "6_days", "bro_split", "PPL"]
+  },
+  {
+    "id": "faq-egypt-006",
+    "category": "egyptian_culture",
+    "question_en": "Is training twice a day (double split) worth it?",
+    "question_ar": "التمرين مرتين في اليوم (دبل سبليت) يستاهل؟",
+    "answer_en": "Double splits are popular in Egyptian gyms but rarely necessary. They're only worth it if:\n- You're an advanced lifter (2+ years serious training)\n- You have time for proper meals and sleep between sessions\n- You're prepping for a competition\n\nFor most people: One quality session of 60-90 minutes beats two rushed sessions. Focus on intensity and progressive overload in one session.",
+    "answer_ar": "الدبل سبليت شائع في الجيمات المصرية بس نادراً ما يكون ضروري. بيستاهل بس لو:\n- أنت متمرن متقدم (أكتر من سنتين تمرين جاد)\n- عندك وقت لأكل صحي ونوم بين الجلستين\n- بتحضر لمسابقة\n\nلمعظم الناس: جلسة واحدة نوعية 60-90 دقيقة أفضل من جلستين مستعجلين. ركز على الكثافة والتحميل التدريجي في جلسة واحدة.",
+    "tags": ["egypt", "double_split", "training", "advanced"]
+  },
+  {
+    "id": "faq-diet-001",
+    "category": "nutrition",
+    "question_en": "How do I calculate my TDEE (Total Daily Energy Expenditure)?",
+    "question_ar": "إزاي أحسب الـ TDEE (السعرات اللي بحرقها في اليوم)؟",
+    "answer_en": "Step 1: Calculate BMR (Basal Metabolic Rate)\n- Men: (10 × weight in kg) + (6.25 × height in cm) - (5 × age) + 5\n- Women: (10 × weight in kg) + (6.25 × height in cm) - (5 × age) - 161\n\nStep 2: Multiply by activity factor:\n- Sedentary (desk job): BMR × 1.2\n- Light activity (1-3 days gym): BMR × 1.375\n- Moderate (3-5 days gym): BMR × 1.55\n- Very active (6-7 days): BMR × 1.725\n- Athlete: BMR × 1.9\n\nOur app calculates this automatically in your profile!",
+    "answer_ar": "خطوة 1: احسب الـ BMR\n- رجال: (10 × الوزن بالكيلو) + (6.25 × الطول بالسنتي) - (5 × العمر) + 5\n- ستات: (10 × الوزن بالكيلو) + (6.25 × الطول بالسنتي) - (5 × العمر) - 161\n\nخطوة 2: اضرب في معامل النشاط:\n- كسلان (شغل مكتب): BMR × 1.2\n- نشاط خفيف (1-3 أيام جيم): BMR × 1.375\n- نشاط متوسط (3-5 أيام): BMR × 1.55\n- نشيط جداً (6-7 أيام): BMR × 1.725\n- رياضي: BMR × 1.9\n\nالتطبيق بيحسب ده أوتوماتيك في ملفك الشخصي!",
+    "tags": ["TDEE", "calories", "BMR", "calculation"]
+  },
+  {
+    "id": "faq-diet-002",
+    "category": "nutrition",
+    "question_en": "What are the best high-protein breakfast options in Egypt?",
+    "question_ar": "إيه أفضل فطار عالي البروتين في مصر؟",
+    "answer_en": "Top Egyptian high-protein breakfasts:\n1. Eggs (scrambled, fried, boiled) with bread - 25-30g protein\n2. Foul medames with eggs - 20-25g protein\n3. Eggs with basterma - 30g+ protein\n4. Greek yogurt with nuts and honey - 20g protein\n5. Gibna areesh (cottage cheese) with tomato - 15g protein\n6. Omelette with turkey/cheese - 25g protein\n7. Protein shake + oats + banana - 35g protein\n8. Labneh with olive oil and bread - 12g protein",
+    "answer_ar": "أفضل فطار مصري عالي البروتين:\n1. بيض (مقلي، مسلوق، أومليت) بالعيش - 25-30 جرام بروتين\n2. فول مدمس بالبيض - 20-25 جرام بروتين\n3. بيض ببسطرمة - 30+ جرام بروتين\n4. زبادي يوناني بمكسرات وعسل - 20 جرام بروتين\n5. جبنة قريش بالطماطم - 15 جرام بروتين\n6. أومليت بتركي/جبنة - 25 جرام بروتين\n7. بروتين شيك + شوفان + موز - 35 جرام بروتين\n8. لبنة بزيت زيتون وعيش - 12 جرام بروتين",
+    "tags": ["egypt", "breakfast", "protein", "meal_ideas"]
+  },
+  {
+    "id": "faq-diet-003",
+    "category": "nutrition",
+    "question_en": "Is rice or bread better for bodybuilding?",
+    "question_ar": "الأرز ولا العيش أفضل لبناء العضلات؟",
+    "answer_en": "Both are fine carb sources. Differences:\n- White rice: Easy to digest, clean carb, good for post-workout. Egyptian rice is typically medium grain.\n- Bread: More fiber (especially baladi/whole wheat), more filling. Fino bread = less nutritious.\n\nFor bodybuilding:\n- Post-workout: White rice (faster digestion)\n- Regular meals: Whole wheat bread or brown rice\n- During cutting: Bread is more filling per calorie\n- During bulking: Rice is easier to eat more of\n\nBoth work. Choose what fits your meal better.",
+    "answer_ar": "الاتنين مصادر كاربز كويسة. الفرق:\n- أرز أبيض: سهل الهضم، كارب نظيف، كويس بعد التمرين\n- عيش: ألياف أكتر (خاصة البلدي/السن)، بيشبع أكتر. العيش الفينو = أقل فايدة\n\nلبناء العضلات:\n- بعد التمرين: أرز أبيض (هضم أسرع)\n- الوجبات العادية: عيش سن أو أرز بني\n- وقت التنشيف: العيش بيشبع أكتر\n- وقت التضخيم: الأرز أسهل تاكل منه كتير\n\nالاتنين بيشتغلوا. اختار اللي يناسب أكلك.",
+    "tags": ["egypt", "rice", "bread", "carbs", "bodybuilding"]
+  },
+  {
+    "id": "faq-training-001",
+    "category": "training",
+    "question_en": "Should I do abs every day?",
+    "question_ar": "لازم أعمل بطن كل يوم؟",
+    "answer_en": "No! Your abs are muscles like any other - they need recovery.\n- Train abs 2-3x per week\n- Heavy compound exercises (squats, deadlifts) already work your core\n- Abs are 'made in the kitchen' - you need low body fat to see them\n- Train abs with variety: planks (anti-extension), rotations (obliques), leg raises (lower abs)\n- Daily ab training = overtraining, won't show faster",
+    "answer_ar": "لا! البطن عضلة زي أي عضلة - محتاجة راحة.\n- تمرن بطن 2-3 مرات/أسبوع\n- التمارين المركبة الثقيلة (سكوات، ديدليفت) بتشغل الكور أصلاً\n- البطن 'بتتعمل في المطبخ' - محتاج نسبة دهون قليلة عشان تظهر\n- تمرن البطن بتنوع: بلانك، لفات، رفع رجل\n- تمرين بطن كل يوم = أوفر ترينينج، مش هتظهر أسرع",
+    "tags": ["abs", "training", "frequency", "myth"]
+  },
+  {
+    "id": "faq-training-002",
+    "category": "training",
+    "question_en": "How long should I rest between sets?",
+    "question_ar": "أستنى قد إيه بين العدات؟",
+    "answer_en": "Depends on your goal:\n- Strength (heavy, 1-5 reps): 3-5 minutes\n- Muscle Building (6-12 reps): 60-90 seconds\n- Endurance (15+ reps): 30-60 seconds\n- Compound lifts (squat, deadlift, bench): 2-3 minutes\n- Isolation exercises (curls, raises): 60 seconds\n\nCommon mistake in Egyptian gyms: resting too long while chatting. If you need to sit on your phone for 5 mins between curls, you're wasting time.",
+    "answer_ar": "حسب هدفك:\n- قوة (ثقيل، 1-5 تكرارات): 3-5 دقائق\n- بناء عضلات (6-12 تكرار): 60-90 ثانية\n- تحمل (15+ تكرار): 30-60 ثانية\n- تمارين مركبة (سكوات، ديدليفت، بنش): 2-3 دقائق\n- تمارين عزل (كيرل، رفع جانبي): 60 ثانية\n\nغلطة شائعة في الجيمات المصرية: الراحة طويلة أوي عشان الكلام. لو قاعد على الموبايل 5 دقائق بين الكيرل، أنت بتضيع وقتك.",
+    "tags": ["rest", "training", "sets", "timing"]
+  },
+  {
+    "id": "faq-training-003",
+    "category": "training",
+    "question_en": "Should I train when I'm sore (DOMS)?",
+    "question_ar": "أتمرن وأنا عندي ألم عضلي (DOMS)؟",
+    "answer_en": "Light soreness: YES, you can train.\n- Train a different muscle group (sore chest → train legs)\n- Light movement actually helps recovery (active recovery)\n- Warm up thoroughly\n\nSevere soreness: REST or do light cardio.\n- Can't fully extend/flex the muscle\n- Pain that limits range of motion\n- Lasted more than 72 hours (might be injury)\n\nDOMS is normal, especially for beginners. It gets less over time as your body adapts.",
+    "answer_ar": "ألم خفيف: أيوه، تقدر تتمرن.\n- تمرن عضلة تانية (صدر بيوجع → تمرن رجل)\n- الحركة الخفيفة بتساعد في الاستشفاء\n- سخن كويس\n\nألم شديد: استريح أو اعمل كارديو خفيف.\n- مش قادر تمد/تثني العضلة بالكامل\n- ألم بيمنع المدى الحركي\n- مستمر أكتر من 72 ساعة (ممكن إصابة)\n\nالـ DOMS طبيعي، خاصة للمبتدئين. بيقل مع الوقت.",
+    "tags": ["DOMS", "soreness", "recovery", "training"]
+  },
+  {
+    "id": "faq-training-004",
+    "category": "training",
+    "question_en": "Is cardio in the morning on an empty stomach better for fat loss?",
+    "question_ar": "الكارديو الصبح على معدة فاضية أحسن للتخسيس؟",
+    "answer_en": "The science says: It makes very little difference.\n- Fasted cardio may burn slightly more fat DURING exercise\n- But your body compensates later in the day\n- Total daily calorie deficit matters most\n- If fasted cardio makes you feel weak or skip workouts, it's worse\n\nDo cardio whenever you'll actually DO it consistently. That's what matters most. Morning, evening, fed, fasted - pick what works for your schedule.",
+    "answer_ar": "العلم بيقول: الفرق صغير جداً.\n- الكارديو صايم ممكن يحرق دهون أكتر شوية أثناء التمرين\n- بس جسمك بيعوض بعدين في اليوم\n- العجز الكلي في السعرات هو اللي مهم\n- لو الكارديو صايم بيخليك ضعيف أو تتفوت التمرين، ده أسوأ\n\nاعمل كارديو في أي وقت هتعمله فيه بانتظام. ده اللي مهم. صباح، مساء، أكلان، صايم - اختار اللي يناسب جدولك.",
+    "tags": ["fasted_cardio", "fat_loss", "myth", "morning"]
+  },
+  {
+    "id": "faq-injury-001",
+    "category": "injury",
+    "question_en": "I hurt my shoulder bench pressing, what should I do?",
+    "question_ar": "كتفي وجعني من البنش بريس، أعمل إيه؟",
+    "answer_en": "STOP bench pressing immediately. Then:\n1. Apply ice for 15-20 min, 3x/day for first 48 hours\n2. Rest from all pressing movements for 1-2 weeks\n3. Try light shoulder rehab exercises (external rotations, band pull-aparts)\n4. When returning: start light, focus on form\n\nPrevention:\n- Warm up rotator cuff before pressing\n- Don't flare elbows to 90° (keep 45° angle)\n- Use leg drive and arch properly\n- Don't go too heavy too fast\n\nIf pain persists >2 weeks, see a physiotherapist.",
+    "answer_ar": "وقف بنش بريس فوراً. وبعدين:\n1. حط تلج 15-20 دقيقة، 3 مرات/يوم لأول 48 ساعة\n2. استريح من كل تمارين الدفع 1-2 أسبوع\n3. جرب تمارين تأهيل كتف خفيفة (دوران خارجي، باند بول أبارت)\n4. لما ترجع: ابدأ خفيف، ركز على الفورم\n\nالوقاية:\n- سخن الروتيتور كاف قبل الدفع\n- ماتفتحش الكوع 90° (خليه 45°)\n- استخدم ليج درايف وآرش صح\n- ماتتقلش أوي بسرعة\n\nلو الألم استمر أكتر من أسبوعين، روح لدكتور علاج طبيعي.",
+    "tags": ["injury", "shoulder", "bench_press", "rehab"]
+  },
+  {
+    "id": "faq-injury-002",
+    "category": "injury",
+    "question_en": "My lower back hurts after deadlifts. Is this normal?",
+    "question_ar": "ضهري بيوجعني بعد الديدليفت. ده طبيعي؟",
+    "answer_en": "Muscle fatigue in your lower back after deadlifts = NORMAL (it's a working muscle).\nSharp pain, shooting pain, or pain that won't go away = NOT NORMAL.\n\nCommon causes of deadlift back pain:\n1. Rounding your lower back (keep neutral spine)\n2. Jerking the weight up (smooth pull)\n3. Starting with hips too high (use proper hip hinge)\n4. Too much weight too soon\n5. Not bracing your core (take breath, brace before pulling)\n\nFix: Deload 30-40%, film yourself, fix form, then gradually increase.",
+    "answer_ar": "تعب عضلي في أسفل الظهر بعد الديدليفت = طبيعي (ده عضلة شغالة).\nألم حاد أو ألم مش بيروح = مش طبيعي.\n\nأسباب شائعة لألم الظهر من الديدليفت:\n1. تقوس أسفل الظهر (خلي العمود الفقري مستقيم)\n2. شد الوزن فجأة (سحب سلس)\n3. بداية والحوض عالي أوي\n4. وزن تقيل أوي بدري أوي\n5. ماتعملش bracing للكور (خد نفس واثبت قبل ما تسحب)\n\nالحل: خفف 30-40%، صور نفسك، صلح الفورم، وبعدين زود تدريجياً.",
+    "tags": ["injury", "lower_back", "deadlift", "form"]
+  },
+  {
+    "id": "faq-mental-001",
+    "category": "motivation",
+    "question_en": "I keep starting and stopping. How do I stay consistent?",
+    "question_ar": "بابدأ وبوقف. إزاي أفضل مستمر؟",
+    "answer_en": "Consistency tips that actually work:\n1. Start smaller than you think - 3 days/week, 30 minutes is enough\n2. Don't rely on motivation - build habits\n3. 'Never miss twice' rule - missed Monday? Don't miss Tuesday\n4. Find a gym buddy / accountability partner\n5. Track everything in the app - seeing progress is addicting\n6. Set process goals not outcome goals ('Go to gym 4x/week' not 'Lose 10kg')\n7. Make it convenient - choose a gym near home or work\n8. Prepare gym bag the night before\n9. Remember: something is always better than nothing",
+    "answer_ar": "نصايح الاستمرارية اللي فعلاً بتشتغل:\n1. ابدأ أصغر مما تتخيل - 3 أيام/أسبوع، 30 دقيقة كفاية\n2. ماتعتمدش على الحماس - ابني عادات\n3. قاعدة 'ماتفوتش مرتين' - فوت الاتنين؟ ماتفوتش التلات\n4. لاقي صاحب يتمرن معاك / شخص يحاسبك\n5. تتبع كل حاجة في التطبيق - إنك تشوف تقدمك ده إدمان\n6. حط أهداف عملية مش نتائج ('روح الجيم 4 مرات/أسبوع' مش 'اخس 10 كيلو')\n7. خلي الجيم قريب - قرب البيت أو الشغل\n8. جهز شنطة الجيم بالليل\n9. افتكر: أي حاجة أحسن من ولا حاجة",
+    "tags": ["motivation", "consistency", "habits", "mindset"]
+  },
+  {
+    "id": "faq-mental-002",
+    "category": "motivation",
+    "question_en": "I'm embarrassed to go to the gym as a beginner",
+    "question_ar": "أنا محرج أروح الجيم كمبتدئ",
+    "answer_en": "Everyone starts somewhere. Truth bombs:\n1. Nobody is watching you - everyone is focused on their own workout\n2. Most gym regulars RESPECT beginners for showing up\n3. Even the biggest guy in the gym was once a beginner\n4. Start with machines (they guide your form)\n5. Go during off-peak hours (early morning or late evening)\n6. Wear headphones and focus on your plan\n7. Ask the staff for a tour / basic orientation\n8. Consider a few personal training sessions to learn the basics\n\nThe hardest part is walking through the door. After that, it gets easier every time.",
+    "answer_ar": "الكل بيبدأ من مكان. حقايق:\n1. محدش بيبصلك - كل واحد مركز في تمرينه\n2. معظم الناس في الجيم بيحترموا المبتدئين لأنهم جم\n3. حتى أكبر واحد في الجيم كان مبتدئ مرة\n4. ابدأ بالماشينز (بتوجه حركتك)\n5. روح في أوقات هادية (بدري الصبح أو متأخر بالليل)\n6. حط سماعات وركز في خطتك\n7. اسأل الموظفين يعرفوك على الجيم\n8. فكر في كام جلسة مع مدرب تتعلم الأساسيات\n\nأصعب حاجة إنك تدخل من الباب. بعدها بتبقى أسهل كل مرة.",
+    "tags": ["motivation", "beginner", "gym_anxiety", "confidence"]
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "name_en": "Chicken Breast (Fried, Breaded, 200g)",
+    "name_ar": "صدور فراخ (مقلية بالبقسماط، 200 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 200,
+    "calories": 480,
+    "protein_g": 48,
+    "carbs_g": 16,
+    "fat_g": 24,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "chicken",
+      "fried",
+      "breaded",
+      "high_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Chicken Breast (Boiled, Plain, 200g)",
+    "name_ar": "صدور فراخ (مسلوقة، سادة، 200 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 200,
+    "calories": 300,
+    "protein_g": 60,
+    "carbs_g": 0,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "chicken",
+      "boiled",
+      "lean",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Egg (Fried in Oil, 1 egg)",
+    "name_ar": "بيضة (مقلية بزيت، حبة)",
+    "category": "cooking_method",
+    "serving_size_g": 60,
+    "calories": 120,
+    "protein_g": 6,
+    "carbs_g": 0,
+    "fat_g": 10,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "egg",
+      "fried",
+      "oil"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Egg (Fried in Butter, 1 egg)",
+    "name_ar": "بيضة (مقلية بزبدة، حبة)",
+    "category": "cooking_method",
+    "serving_size_g": 60,
+    "calories": 130,
+    "protein_g": 6,
+    "carbs_g": 0,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "egg",
+      "fried",
+      "butter"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Potato (Fried / French Fries, 200g)",
+    "name_ar": "بطاطس (مقلية، 200 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 200,
+    "calories": 480,
+    "protein_g": 6,
+    "carbs_g": 60,
+    "fat_g": 24,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "potato",
+      "fried",
+      "high_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/french-fries.jpg"
+  },
+  {
+    "name_en": "Potato (Baked, No Oil, 200g)",
+    "name_ar": "بطاطس (مشوية في الفرن، بدون زيت، 200 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 4,
+    "carbs_g": 42,
+    "fat_g": 0,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "potato",
+      "baked",
+      "low_fat",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potatoes.jpg"
+  },
+  {
+    "name_en": "Eggplant (Fried, 150g)",
+    "name_ar": "باذنجان (مقلي، 150 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 150,
+    "calories": 280,
+    "protein_g": 2,
+    "carbs_g": 12,
+    "fat_g": 24,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "eggplant",
+      "fried",
+      "high_fat",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/eggplant.jpg"
+  },
+  {
+    "name_en": "Eggplant (Grilled/Roasted, 150g)",
+    "name_ar": "باذنجان (مشوي، 150 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 150,
+    "calories": 52,
+    "protein_g": 2,
+    "carbs_g": 12,
+    "fat_g": 0,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "eggplant",
+      "grilled",
+      "low_calorie",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/eggplant.jpg"
+  },
+  {
+    "name_en": "Fish (Fried, Breaded, 200g)",
+    "name_ar": "سمك (مقلي بالبقسماط، 200 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 200,
+    "calories": 420,
+    "protein_g": 36,
+    "carbs_g": 20,
+    "fat_g": 22,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "fish",
+      "fried",
+      "breaded"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Fish (Grilled, No Oil, 200g)",
+    "name_ar": "سمك (مشوي، بدون زيت، 200 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 200,
+    "calories": 220,
+    "protein_g": 44,
+    "carbs_g": 0,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "fish",
+      "grilled",
+      "lean",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-fillets.jpg"
+  },
+  {
+    "name_en": "Rice (White, Cooked with Oil, 200g)",
+    "name_ar": "أرز (أبيض، مطبوخ بزيت، 200 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 200,
+    "calories": 300,
+    "protein_g": 5,
+    "carbs_g": 55,
+    "fat_g": 6,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "rice",
+      "oil",
+      "carbs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Rice (White, Cooked Plain, 200g)",
+    "name_ar": "أرز (أبيض، مسلوق سادة، 200 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 200,
+    "calories": 260,
+    "protein_g": 5,
+    "carbs_g": 56,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "rice",
+      "plain",
+      "low_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Cauliflower (Fried / Arnabeet, 150g)",
+    "name_ar": "قرنبيط (مقلي / أرنبيط، 150 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 150,
+    "calories": 250,
+    "protein_g": 4,
+    "carbs_g": 14,
+    "fat_g": 20,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "cauliflower",
+      "fried",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cauliflower.jpg"
+  },
+  {
+    "name_en": "Cauliflower (Steamed, 150g)",
+    "name_ar": "قرنبيط (مسلوق / على البخار، 150 جرام)",
+    "category": "cooking_method",
+    "serving_size_g": 150,
+    "calories": 38,
+    "protein_g": 3,
+    "carbs_g": 7,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "cauliflower",
+      "steamed",
+      "low_calorie",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cauliflower.jpg"
+  },
+  {
+    "name_en": "Falafel / Taameya (Fried, 5 pieces)",
+    "name_ar": "طعمية (مقلية، 5 حبات)",
+    "category": "cooking_method",
+    "serving_size_g": 150,
+    "calories": 300,
+    "protein_g": 10,
+    "carbs_g": 28,
+    "fat_g": 18,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "taameya",
+      "fried",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  },
+  {
+    "name_en": "Falafel / Taameya (Baked / Air-Fried, 5 pieces)",
+    "name_ar": "طعمية (مشوية / إير فراير، 5 حبات)",
+    "category": "cooking_method",
+    "serving_size_g": 150,
+    "calories": 180,
+    "protein_g": 10,
+    "carbs_g": 28,
+    "fat_g": 4,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "cooking_method",
+      "taameya",
+      "baked",
+      "air_fried",
+      "healthy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  }
+]

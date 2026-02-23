@@ -1,0 +1,227 @@
+[
+  {
+    "id": "faq-ex-001",
+    "category": "exercise_form",
+    "question_en": "What's the correct form for bench press?",
+    "question_ar": "إيه الفورم الصح للبنش برس؟",
+    "answer_en": "1. Lie flat, feet firmly on the ground. 2. Grip the bar slightly wider than shoulder-width. 3. Retract your shoulder blades (squeeze them together). 4. Unrack and lower the bar to your mid-chest/nipple line. 5. Press up in a slight arc back toward the rack. 6. Keep your butt on the bench at all times. Common mistakes: flaring elbows too wide (aim 45-75°), bouncing the bar off your chest, and lifting your butt off the bench.",
+    "answer_ar": "1. استلقي مستوي، رجلك ثابتة على الأرض. 2. امسك البار أوسع من الكتف شوية. 3. اسحب لوح الكتف لورا (اضغطهم على بعض). 4. نزّل البار لنص الصدر عند خط الحلمة. 5. ادفع لفوق في قوس خفيف. 6. خلي وسطك على البنش طول الوقت. أخطاء شائعة: فتح الكوع كتير (خليه 45-75°)، ارتداد البار من الصدر، ورفع وسطك من البنش.",
+    "tags": ["bench_press", "chest", "form", "beginner", "common_mistakes"]
+  },
+  {
+    "id": "faq-ex-002",
+    "category": "exercise_form",
+    "question_en": "How do I squat without hurting my knees?",
+    "question_ar": "إزاي أعمل سكوات من غير ما ركبي توجعني؟",
+    "answer_en": "1. Stand with feet shoulder-width apart, toes slightly out (15-30°). 2. Push your hips back FIRST, then bend knees. 3. Keep your knees tracking over your toes (don't let them cave in). 4. Go as deep as your mobility allows while keeping your back straight. 5. Drive up through your heels/midfoot. Key: if your knees hurt, try widening your stance, pointing toes more outward, or doing box squats. Weak glutes and tight ankles are the #1 cause of knee pain in squats.",
+    "answer_ar": "1. قف رجلك بعرض الكتف، صوابعك لبرا شوية (15-30°). 2. اسحب وسطك لورا الأول، بعدين اثني ركبك. 3. خلي ركبك ماشية في اتجاه صوابع رجلك (ما تخليهاش تروح لجوا). 4. انزل قد ما مرونتك تسمح وضهرك مستقيم. 5. ادفع من الكعب/نص القدم. نصيحة: لو ركبك بتوجعك، جرب توسع وقفتك أو تعمل بوكس سكوات. ضعف الإلية وقلة مرونة الكاحل أهم سبب لوجع الركبة.",
+    "tags": ["squat", "knees", "form", "injury_prevention", "beginner"]
+  },
+  {
+    "id": "faq-ex-003",
+    "category": "exercise_form",
+    "question_en": "What's the correct deadlift form?",
+    "question_ar": "إيه الطريقة الصح للديدلفت؟",
+    "answer_en": "1. Stand with feet hip-width apart, bar over mid-foot. 2. Hinge at hips, grip the bar just outside your knees. 3. Take the slack out of the bar (pull until it clicks against the plates). 4. Chest up, back flat/neutral, lats engaged. 5. Drive the floor away with your legs, then lock out hips. 6. Return by hinging at hips first. NEVER round your lower back. If you can't keep a flat back, lower the weight. Start with Romanian deadlifts to learn the hip hinge pattern.",
+    "answer_ar": "1. قف رجلك بعرض الحوض، البار فوق نص القدم. 2. انحني من الحوض، امسك البار برا ركبك. 3. اسحب الرخاوة من البار. 4. صدرك لفوق، ضهرك مستوي، لاتس مشدودة. 5. ادفع الأرض برجلك، بعدين اقفل الحوض. 6. ارجع بالانحناء من الحوض الأول. ما تلفش ضهرك أبداً! لو مش قادر تخلي ضهرك مستقيم، نزّل الوزن. ابدأ بالرومانيان ديدلفت عشان تتعلم حركة الحوض.",
+    "tags": ["deadlift", "form", "back", "technique", "injury_prevention"]
+  },
+  {
+    "id": "faq-ex-004",
+    "category": "exercise_form",
+    "question_en": "Should I use a belt for squats and deadlifts?",
+    "question_ar": "لازم ألبس حزام للسكوات والديدلفت؟",
+    "answer_en": "A belt is useful when lifting heavy (80%+ of your max). It doesn't replace core strength — it gives your abs something to brace against, increasing intra-abdominal pressure. Beginners: train without a belt for the first 6-12 months to build natural core strength. Then add a belt for heavy working sets. Don't use it for warm-ups or light sets. A 10mm leather belt is the best investment.",
+    "answer_ar": "الحزام مفيد لما بتشيل تقيل (80%+ من أقصى وزن). هو مش بديل لقوة البطن — بيدي البطن حاجة تضغط عليها. المبتدئين: تمرنوا من غير حزام أول 6-12 شهر عشان تبنوا قوة الكور. بعدين استخدمه للسيتات التقيلة بس. ما تلبسهوش في الإحماء. حزام جلد 10 مم هو أحسن استثمار.",
+    "tags": ["belt", "squat", "deadlift", "equipment", "safety"]
+  },
+  {
+    "id": "faq-ex-005",
+    "category": "exercise_form",
+    "question_en": "How should I warm up before lifting?",
+    "question_ar": "إزاي أسخن قبل ما أبدأ أشيل أوزان؟",
+    "answer_en": "1. General warm-up: 5 min light cardio (treadmill walk, bike, jumping jacks). 2. Dynamic stretches for target muscles (arm circles for chest/shoulder day, leg swings for leg day). 3. Movement-specific warm-up: Do the exercise itself with progressively heavier weight. Example for bench press with 100kg working weight: empty bar x 10, 40kg x 8, 60kg x 5, 80kg x 3, 90kg x 1, then working sets at 100kg. NEVER skip the warm-up — it prevents injuries and actually makes you stronger on working sets.",
+    "answer_ar": "1. إحماء عام: 5 دقايق كارديو خفيف (مشي، دراجة، جامبنج جاكس). 2. تمارين إطالة ديناميكية للعضلات المستهدفة. 3. إحماء للتمرين نفسه: أعمل التمرين بأوزان تصاعدية. مثال بنش 100 كيلو: بار فاضي × 10، 40 × 8، 60 × 5، 80 × 3، 90 × 1، بعدين سيتات الشغل. ما تتخطاش الإحماء أبداً!",
+    "tags": ["warm_up", "safety", "beginner", "injury_prevention", "essential"]
+  },
+  {
+    "id": "faq-ex-006",
+    "category": "exercise_form",
+    "question_en": "Is it okay if my knees go past my toes during squats?",
+    "question_ar": "هل عادي لو ركبي عدت صوابع رجلي في السكوات؟",
+    "answer_en": "YES — this is an outdated myth! Your knees WILL go past your toes in a proper deep squat, and that's perfectly fine. Forcing your knees to stay behind your toes actually increases stress on your hips and lower back. What matters is: 1. Knees track over toes (not caving inward). 2. Weight stays on midfoot/heels (not tipping forward on toes). 3. You can maintain a neutral spine. Olympic weightlifters squat with knees way past toes under massive loads — it's safe.",
+    "answer_ar": "أيوا — ده خرافة قديمة! ركبك هتعدي صوابع رجلك في السكوات العميق وده طبيعي تماماً. إنك تجبر ركبك ما تعديش بيزود الضغط على الحوض والضهر. المهم: 1. ركبك ماشية في اتجاه صوابعك (مش بتروح لجوا). 2. الوزن على نص القدم/الكعب. 3. ضهرك مستقيم. رباعين الأثقال الأولمبيين بيعملوا سكوات ركبهم بعيد عن صوابعهم وده آمن.",
+    "tags": ["squat", "knees", "myth", "form", "mobility"]
+  },
+  {
+    "id": "faq-ex-007",
+    "category": "exercise_form",
+    "question_en": "What's the difference between a Romanian deadlift and a conventional deadlift?",
+    "question_ar": "إيه الفرق بين الرومانيان ديدلفت والديدلفت العادي؟",
+    "answer_en": "Conventional deadlift: starts from the floor, uses more quads and full posterior chain. Romanian deadlift (RDL): starts from standing, you lower the bar to around shin level while keeping legs slightly bent, then drive hips forward. RDL focuses more on hamstrings and glutes. Use conventional for overall strength, RDL to specifically target hamstrings/glutes. Beginners should learn RDL first — it teaches the hip hinge pattern which is essential for conventional deadlifts.",
+    "answer_ar": "الديدلفت العادي: من الأرض، بيستخدم الكوادز والسلسلة الخلفية كلها. الرومانيان (RDL): بتبدأ واقف وتنزل البار لنص الساق مع ركبك مثنية شوية. الRDL بيركز أكتر على الهامسترينج والإلية. استخدم العادي للقوة الكاملة والRDL لاستهداف الهامسترينج. المبتدئين يتعلموا RDL الأول.",
+    "tags": ["deadlift", "romanian", "comparison", "hamstrings", "technique"]
+  },
+  {
+    "id": "faq-ex-008",
+    "category": "exercise_safety",
+    "question_en": "Should I train through pain?",
+    "question_ar": "أكمل تمرين لو في ألم؟",
+    "answer_en": "NEVER train through sharp, stabbing, or joint pain. There's a difference between: 1. Muscle burn/fatigue (good — this is the muscle working hard). 2. DOMS soreness (okay — mild soreness from previous workout). 3. Sharp/shooting pain (STOP — this indicates potential injury). If you feel pain in a joint, tendon, or a sharp pain anywhere, stop the exercise immediately. Try a different exercise for the same muscle. If pain persists after 2-3 days, see a physiotherapist. Training through injury pain makes it worse, not better.",
+    "answer_ar": "ما تتمرنش أبداً لو في ألم حاد أو في المفاصل. في فرق بين: 1. حرقان العضلة (كويس — العضلة بتشتغل). 2. ألم العضلات بعد التمرين (عادي — وجع خفيف من التمرين اللي فات). 3. ألم حاد/طاعن (وقّف فوراً — ممكن يكون إصابة). لو حسيت بألم في مفصل أو وتر، وقّف التمرين. جرب تمرين تاني لنفس العضلة. لو الألم استمر 2-3 يوم، روح لدكتور علاج طبيعي.",
+    "tags": ["pain", "injury", "safety", "when_to_stop", "important"]
+  },
+  {
+    "id": "faq-ex-009",
+    "category": "exercise_form",
+    "question_en": "How to do a proper pull-up?",
+    "question_ar": "إزاي أعمل عقلة (بول أب) صح؟",
+    "answer_en": "1. Grip the bar slightly wider than shoulders, palms facing away. 2. Start from dead hang (arms fully extended). 3. Engage your lats by pulling shoulder blades down and together. 4. Pull yourself up until chin is above the bar. 5. Lower slowly to full extension. Tips: Don't swing or kip. If you can't do one yet, start with: negative pull-ups (jump up, lower slowly), band-assisted pull-ups, or lat pulldowns. Most people need 3-6 months to get their first pull-up.",
+    "answer_ar": "1. امسك البار أوسع من الكتف شوية، إيدك بتبص لبرا. 2. ابدأ من التعلق الكامل. 3. فعّل اللاتس بسحب لوح الكتف لتحت. 4. اسحب نفسك لفوق لحد ما دقنك يعدي البار. 5. انزل ببطء لآخر نقطة. نصايح: ما تتأرجحش. لو مش قادر، ابدأ بـ: عقلة سلبية (اقفز لفوق وانزل ببطء)، عقلة بالباند، أو لات بول داون. أغلب الناس محتاجين 3-6 شهور لأول عقلة.",
+    "tags": ["pull_up", "back", "form", "beginner", "progression"]
+  },
+  {
+    "id": "faq-ex-010",
+    "category": "exercise_form",
+    "question_en": "What's the proper form for overhead press (OHP)?",
+    "question_ar": "إيه الفورم الصح للأوفرهيد برس؟",
+    "answer_en": "1. Grip the bar just outside shoulder-width. 2. Bar rests on front delts, elbows slightly in front of the bar. 3. Take a breath, brace your core. 4. Press the bar straight up, moving your head slightly back to let the bar pass. 5. Once the bar passes your forehead, push your head through (under the bar). 6. Lock out overhead with the bar directly over your shoulders/midfoot. Keep your whole body tight — squeeze your glutes and quads. Don't lean back excessively.",
+    "answer_ar": "1. امسك البار أوسع من الكتف شوية. 2. البار على الديلت الأمامي. 3. خد نفس واشد بطنك. 4. ادفع البار لفوق مستقيم، حرّك راسك لورا شوية. 5. لما البار يعدي جبهتك، ادفع راسك للأمام تحت البار. 6. اقفل فوق والبار فوق كتفك بالظبط. خلي جسمك كله مشدود — اضغط الإلية والكوادز. ما تميلش لورا كتير.",
+    "tags": ["overhead_press", "shoulder", "form", "compound", "technique"]
+  },
+  {
+    "id": "faq-ex-011",
+    "category": "exercise_form",
+    "question_en": "How do I do a proper barbell row?",
+    "question_ar": "إزاي أعمل باربل رو صح؟",
+    "answer_en": "1. Stand with feet hip-width apart, hinge forward at ~45° angle. 2. Grip the bar slightly wider than shoulder-width (overhand or underhand). 3. Keep your back flat and core tight. 4. Pull the bar to your lower chest/upper abs. 5. Squeeze your shoulder blades at the top for 1 second. 6. Lower with control. Don't use momentum to swing the weight up. If you need to jerk the weight, it's too heavy. Overhand grip targets upper back more, underhand targets lats/biceps more.",
+    "answer_ar": "1. قف رجلك بعرض الحوض، انحني لقدام 45°. 2. امسك البار أوسع من الكتف. 3. ضهرك مستقيم وبطنك مشدودة. 4. اسحب البار لنص الصدر/فوق البطن. 5. اضغط لوح الكتف في الأعلى ثانية. 6. انزل بتحكم. ما تستخدمش زخم عشان ترفع. لو لازم تعمل زخم يبقى الوزن تقيل. القبضة من فوق بتستهدف أعلى الضهر، من تحت بتستهدف اللاتس/البايسبس.",
+    "tags": ["barbell_row", "back", "form", "compound", "technique"]
+  },
+  {
+    "id": "faq-ex-012",
+    "category": "exercise_programming",
+    "question_en": "How many sets and reps should I do?",
+    "question_ar": "أعمل كام سيت وكام تكرار؟",
+    "answer_en": "Depends on your goal:\n- Strength: 3-5 sets × 3-5 reps (heavy weight, long rest 3-5 min)\n- Hypertrophy (muscle size): 3-4 sets × 8-12 reps (moderate weight, 60-90s rest)\n- Endurance: 2-3 sets × 15-20 reps (lighter weight, 30-60s rest)\nFor most people wanting to look good, 3-4 sets of 8-12 reps is the sweet spot. Total volume per muscle: aim for 10-20 hard sets per week. Beginners: start at 10 sets/week. Advanced: up to 20.",
+    "answer_ar": "حسب هدفك:\n- قوة: 3-5 سيتات × 3-5 تكرار (وزن تقيل، راحة 3-5 دقايق)\n- تضخيم: 3-4 سيتات × 8-12 تكرار (وزن متوسط، راحة 60-90 ثانية)\n- تحمل: 2-3 سيتات × 15-20 تكرار (وزن خفيف، راحة 30-60 ثانية)\nلأغلب الناس عايزين شكل حلو، 3-4 سيتات × 8-12 أحسن حاجة. إجمالي السيتات في الأسبوع: 10-20 سيت صعب لكل عضلة.",
+    "tags": ["sets", "reps", "programming", "beginner", "hypertrophy", "strength"]
+  },
+  {
+    "id": "faq-ex-013",
+    "category": "exercise_programming",
+    "question_en": "How long should I rest between sets?",
+    "question_ar": "أريح قد إيه بين السيتات؟",
+    "answer_en": "- Compound lifts (squat, bench, deadlift): 2-5 minutes for strength, 90s-2min for hypertrophy\n- Isolation exercises (curls, lateral raises): 60-90 seconds\n- Supersets: 0-30 seconds between exercises, 60-90s between rounds\n- HIIT/conditioning: 15-30 seconds\nResearch shows longer rest (2-3 min) leads to more total volume which means more growth. If you're short on time, supersets are king. Use a timer — most people rest way too long without realizing it.",
+    "answer_ar": "- تمارين مركبة (سكوات، بنش، ديدلفت): 2-5 دقايق للقوة، 90 ثانية-2 دقيقة للتضخيم\n- تمارين عزل (كيرل، رفع جانبي): 60-90 ثانية\n- سوبرسيتس: 0-30 ثانية بين التمارين، 60-90 ثانية بين الجولات\nالأبحاث بتقول راحة أطول (2-3 دقايق) بتدي حجم أكتر يعني نمو أكتر. لو وقتك قليل، السوبرسيتات ملك.",
+    "tags": ["rest", "recovery", "programming", "time_management"]
+  },
+  {
+    "id": "faq-ex-014",
+    "category": "exercise_programming",
+    "question_en": "When should I increase the weight?",
+    "question_ar": "أزود الوزن إمتى؟",
+    "answer_en": "Use double progression: 1. Pick a rep range (e.g., 8-12 reps). 2. When you can complete the TOP of the range (12 reps) with good form on ALL sets, increase weight by 2.5-5kg next session. 3. You'll likely drop to the bottom of the range (8 reps) with the new weight. 4. Build back up to 12 reps, then increase again. For upper body: increase 1-2.5kg. For lower body: increase 2.5-5kg. Never sacrifice form for more weight.",
+    "answer_ar": "استخدم التقدم المزدوج: 1. اختار نطاق تكرار (مثلاً 8-12). 2. لما تقدر تعمل أعلى رقم (12) بفورم كويس في كل السيتات، زود 2.5-5 كيلو الجلسة الجاية. 3. هتنزل لأقل رقم (8) مع الوزن الجديد. 4. ابني تاني لـ 12، بعدين زود. للجزء العلوي: زود 1-2.5 كيلو. للسفلي: 2.5-5 كيلو. ما تضحيش بالفورم عشان وزن أكتر.",
+    "tags": ["progressive_overload", "weight_increase", "programming", "beginner"]
+  },
+  {
+    "id": "faq-ex-015",
+    "category": "exercise_programming",
+    "question_en": "How often should I train each muscle group per week?",
+    "question_ar": "أتمرن كل عضلة كام مرة في الأسبوع؟",
+    "answer_en": "Research shows 2x per week per muscle group is optimal for most people. This is why PPL (Push/Pull/Legs) done 6 days and Upper/Lower done 4 days are so effective. Bro splits (1 muscle per day) work too but are slightly less optimal. What matters most is total weekly volume (10-20 hard sets per muscle). Beginners: full body 3x/week is great. Intermediate: PPL or Upper/Lower. Advanced: whatever lets you handle more volume.",
+    "answer_ar": "الأبحاث بتقول 2 مرة في الأسبوع لكل عضلة هو الأحسن لأغلب الناس. عشان كده PPL 6 أيام و Upper/Lower 4 أيام فعالين جداً. البرو سبليت (عضلة في اليوم) بيشتغل برضو بس أقل شوية. الأهم هو الإجمالي الأسبوعي (10-20 سيت صعب لكل عضلة). مبتدئين: فول بودي 3 مرات ممتاز. متوسط: PPL أو Upper/Lower.",
+    "tags": ["frequency", "split", "programming", "ppl", "upper_lower"]
+  },
+  {
+    "id": "faq-ex-016",
+    "category": "exercise_alternatives",
+    "question_en": "What's a good home alternative for bench press?",
+    "question_ar": "إيه البديل في البيت للبنش برس؟",
+    "answer_en": "Best home alternatives for bench press:\n1. Push-ups (standard) — closest movement pattern\n2. Decline push-ups (feet elevated) — targets upper chest more\n3. Diamond push-ups — more tricep focus\n4. Weighted push-ups (backpack with books) — for progressive overload\n5. Floor press with water jugs/sandbag\n6. Resistance band chest press\nTo make push-ups harder: slow the tempo (3 seconds down, 1 up), add a pause at the bottom, or use a resistance band around your back.",
+    "answer_ar": "أحسن بدايل البنش برس في البيت:\n1. ضغط عادي — أقرب حركة\n2. ضغط بالرجل مرفوعة — بيستهدف أعلى الصدر\n3. ضغط الماسة — تركيز على الترايسبس\n4. ضغط بشنطة ضهر مليانة كتب — للتحميل التصاعدي\n5. فلور برس بجوالين مية\n6. ضغط صدر بالباند\nعشان تصعّب الضغط: بطّء الحركة (3 ثواني نزول)، وقفة تحت، أو باند حوالين ضهرك.",
+    "tags": ["home_workout", "bench_press", "alternatives", "bodyweight", "no_equipment"]
+  },
+  {
+    "id": "faq-ex-017",
+    "category": "exercise_alternatives",
+    "question_en": "What can I do instead of pull-ups at home?",
+    "question_ar": "إيه البديل للعقلة في البيت؟",
+    "answer_en": "Home alternatives for pull-ups:\n1. Doorframe pull-up bar (cheap, ~150-300 LE in Egypt)\n2. Inverted rows under a sturdy table\n3. Towel rows using a door handle (wrap towel, close door, lean back and row)\n4. Resistance band pulldowns\n5. Backpack rows (fill bag, hinge forward, row)\n6. Find a playground/park — pull-up bars are everywhere in Egypt\nThe best investment for home training is a doorframe pull-up bar. Nothing replaces vertical pulling.",
+    "answer_ar": "بدايل العقلة في البيت:\n1. بار عقلة على إطار الباب (رخيص، 150-300 جنيه)\n2. رو معكوس تحت طاولة قوية\n3. رو بالمنشفة على مقبض الباب\n4. بول داون بالباند\n5. رو بشنطة ضهر مليانة\n6. روح أي ملعب/حديقة — في بار عقلة في كل حتة في مصر\nأحسن استثمار للتمرين في البيت هو بار العقلة.",
+    "tags": ["home_workout", "pull_up", "alternatives", "back", "no_equipment"]
+  },
+  {
+    "id": "faq-ex-018",
+    "category": "exercise_alternatives",
+    "question_en": "What's a home alternative for leg press?",
+    "question_ar": "إيه بديل الليج برس في البيت؟",
+    "answer_en": "Home alternatives for leg press:\n1. Bulgarian split squat (rear foot on chair) — king of single-leg exercises\n2. Pistol squat (advanced) — bodyweight only, brutal\n3. Step-ups on a high chair/step\n4. Wall sit holds (isometric, burns!)\n5. Bodyweight squats with slow tempo (5 seconds down, 3 up)\n6. Jump squats for explosive power\n7. Backpack weighted squats\nSingle-leg exercises at home can be just as challenging as heavy leg press if done with slow tempo and high reps.",
+    "answer_ar": "بدايل الليج برس في البيت:\n1. بلغاري سبليت سكوات (رجل على كرسي) — ملك التمارين الأحادية\n2. بيستول سكوات (متقدم) — بوزن الجسم بس\n3. ستيب أب على كرسي عالي\n4. جلوس على الحائط (ثابت، بيحرق!)\n5. سكوات بطيء (5 ثواني نزول)\n6. سكوات مع قفز\n7. سكوات بشنطة ضهر مليانة\nتمارين الرجل الواحدة في البيت ممكن تكون صعبة زي الليج برس لو بتمبو بطيء.",
+    "tags": ["home_workout", "leg_press", "alternatives", "legs", "bodyweight"]
+  },
+  {
+    "id": "faq-ex-019",
+    "category": "exercise_safety",
+    "question_en": "My shoulder hurts during bench press. What should I do?",
+    "question_ar": "كتفي بيوجعني في البنش برس. أعمل إيه؟",
+    "answer_en": "Common causes and fixes:\n1. Too wide grip → narrow your grip by 1-2 inches\n2. Elbows flared at 90° → tuck elbows to 45-75°\n3. Not retracting shoulder blades → squeeze them together before unracking\n4. Going too low → stop the bar 1-2 inches above chest until mobility improves\n5. Try floor press (limits range of motion at the bottom)\n6. Switch to dumbbell press (allows natural rotation)\n7. If pain persists: STOP bench pressing for 2 weeks, do shoulder rehab (band pull-aparts, face pulls, external rotations) daily. See a physiotherapist if it doesn't improve.",
+    "answer_ar": "أسباب وحلول شائعة:\n1. القبضة واسعة أوي → ضيّق شوية\n2. الكوع مفتوح 90° → خليه 45-75°\n3. مش ساحب لوح الكتف → اضغطهم على بعض قبل ما ترفع البار\n4. نازل كتير → وقّف البار 1-2 بوصة فوق الصدر\n5. جرب فلور برس (بيقلل المدى)\n6. حوّل لدامبل برس (بيسمح بدوران طبيعي)\n7. لو الألم مستمر: وقّف بنش أسبوعين، أعمل تأهيل كتف يومياً (باند بول أبارت، فيس بول، دوران خارجي). لو ما تحسنش روح لدكتور.",
+    "tags": ["shoulder_pain", "bench_press", "injury", "rehab", "fix"]
+  },
+  {
+    "id": "faq-ex-020",
+    "category": "exercise_safety",
+    "question_en": "My lower back hurts after deadlifts. Is this normal?",
+    "question_ar": "ضهري بيوجعني بعد الديدلفت. ده عادي؟",
+    "answer_en": "Some lower back FATIGUE is normal — the erector spinae muscles work hard during deadlifts. But PAIN is not normal. Common causes:\n1. Rounding your lower back → focus on keeping chest up and core braced\n2. Weight too heavy → drop 20% and fix form first\n3. Not engaging lats → pull the bar tight to your body throughout\n4. Starting with hips too low → it's a hip hinge, not a squat\n5. Jerking the weight → take the slack out of the bar first\nFix: Film yourself from the side. If your back rounds, lower the weight. Add hyperextensions and good mornings to strengthen your lower back.",
+    "answer_ar": "شوية إرهاق في أسفل الضهر عادي — عضلات الظهر بتشتغل جامد في الديدلفت. لكن الألم مش عادي. أسباب شائعة:\n1. لف الضهر → خلي صدرك لفوق وبطنك مشدودة\n2. الوزن تقيل → نزّل 20% وظبط الفورم\n3. اللاتس مش شغالة → اسحب البار قريب من جسمك\n4. الحوض واطي أوي → ده هيب هينج مش سكوات\n5. شد مفاجئ → اسحب الرخاوة من البار الأول\nالحل: صوّر نفسك من الجنب. لو ضهرك بيلف، نزّل الوزن.",
+    "tags": ["lower_back", "deadlift", "pain", "form", "fix"]
+  },
+  {
+    "id": "faq-ex-021",
+    "category": "exercise_programming",
+    "question_en": "What's better: machines or free weights?",
+    "question_ar": "إيه أحسن: الماشينات ولا الأوزان الحرة؟",
+    "answer_en": "Both have their place:\n- Free weights: build more stabilizer muscles, more functional, better for compound movements. Essential for squats, deadlifts, bench, overhead press.\n- Machines: safer for beginners, better for isolation, great for training to failure without a spotter, useful when injured.\nBest approach: Build your program around free weight compounds (squat, bench, deadlift, rows, press), then add machines for isolation work (leg extensions, cable flyes, lat pulldowns). Use machines when training alone without a spotter.",
+    "answer_ar": "الاتنين ليهم مكان:\n- أوزان حرة: بتبني عضلات ثبات أكتر، أكثر وظيفية، أحسن للتمارين المركبة. أساسية للسكوات والديدلفت والبنش.\n- ماشينات: أأمن للمبتدئين، أحسن للعزل، ممتازة للفشل العضلي بدون مساعد.\nأحسن طريقة: ابني برنامجك على تمارين مركبة بأوزان حرة، بعدين أضف ماشينات للعزل.",
+    "tags": ["machines", "free_weights", "comparison", "beginner", "programming"]
+  },
+  {
+    "id": "faq-ex-022",
+    "category": "exercise_programming",
+    "question_en": "How many exercises should I do per muscle group?",
+    "question_ar": "أعمل كام تمرين لكل عضلة؟",
+    "answer_en": "Per session: 2-4 exercises per muscle group is ideal.\n- Large muscles (chest, back, legs): 3-4 exercises\n- Small muscles (biceps, triceps, shoulders): 2-3 exercises\nStart with a compound movement (bench press, squat, row), then add 1-2 isolation exercises. Example chest day: bench press, incline dumbbell press, cable flye, push-ups. Quality over quantity — doing 3 exercises with full effort beats 6 exercises half-assed.",
+    "answer_ar": "في الجلسة: 2-4 تمارين لكل عضلة مثالي.\n- عضلات كبيرة (صدر، ضهر، رجل): 3-4 تمارين\n- عضلات صغيرة (باي، تراي، كتف): 2-3 تمارين\nابدأ بتمرين مركب (بنش، سكوات، رو) وبعدين أضف 1-2 تمارين عزل. مثال يوم صدر: بنش برس، إنكلاين دامبل، كابل فلاي، ضغط. الجودة أهم من الكمية.",
+    "tags": ["exercise_count", "programming", "volume", "beginner"]
+  },
+  {
+    "id": "faq-ex-023",
+    "category": "exercise_form",
+    "question_en": "How to properly do lateral raises?",
+    "question_ar": "إزاي أعمل لاترال ريز صح؟",
+    "answer_en": "1. Stand with dumbbells at your sides, slight bend in elbows. 2. Raise your arms out to the sides until parallel with the floor. 3. Lead with your elbows, not your hands (imagine pouring water from a jug). 4. Slight forward lean (10-15°) takes stress off the supraspinatus. 5. Control the negative (2-3 seconds down). Common mistakes: using momentum/swinging, going above shoulder height, shrugging your traps up. Use LIGHT weight — most people ego lift on lateral raises. 8-12kg dumbbells is plenty for most guys.",
+    "answer_ar": "1. قف والدامبلز جنبك، كوعك مثني شوية. 2. ارفع إيدك للجنب لحد ما توازي الأرض. 3. ابدأ الحركة من الكوع مش من إيدك (تخيل إنك بتسكب مية). 4. ميّل للأمام شوية (10-15°). 5. تحكم في النزول (2-3 ثواني). أخطاء شائعة: استخدام زخم، الرفع فوق الكتف، رفع الترابيز. استخدم وزن خفيف — أغلب الناس بتستخدم أتقل من اللازم.",
+    "tags": ["lateral_raise", "shoulder", "form", "isolation", "common_mistakes"]
+  },
+  {
+    "id": "faq-ex-024",
+    "category": "exercise_programming",
+    "question_en": "Can I work out abs every day?",
+    "question_ar": "ممكن أتمرن بطن كل يوم؟",
+    "answer_en": "You CAN, but you don't need to. Abs are muscles like any other — they need recovery. 2-3 dedicated ab sessions per week is plenty. Plus, your abs already work hard as stabilizers during squats, deadlifts, overhead press, and planks. Best ab exercises: hanging leg raises, cable crunches, ab wheel rollouts, pallof press. Skip endless crunches — they're low value. Remember: abs are built in the gym but REVEALED in the kitchen. If your body fat is above 15%, no amount of ab training will show them.",
+    "answer_ar": "ممكن، بس مش محتاج. البطن عضلة زي أي عضلة — محتاجة استشفاء. 2-3 جلسات بطن في الأسبوع كفاية. وكمان بطنك بتشتغل كمثبت في السكوات والديدلفت والأوفرهيد برس. أحسن تمارين بطن: رفع رجل معلق، كابل كرانش، عجلة البطن، بالوف برس. سيب الكرانش العادي. تذكر: البطن بتتبني في الجيم بس بتظهر في المطبخ. لو نسبة الدهون فوق 15%، مفيش تمرين بطن هيظهرها.",
+    "tags": ["abs", "frequency", "body_fat", "programming", "myth"]
+  },
+  {
+    "id": "faq-ex-025",
+    "category": "exercise_form",
+    "question_en": "Should I do full range of motion or partial reps?",
+    "question_ar": "أعمل المدى الكامل ولا نص الحركة؟",
+    "answer_en": "Full range of motion (ROM) should be your DEFAULT. Research consistently shows full ROM builds more muscle than partial reps. However, partial reps have their place as a SUPPLEMENT: lengthened partials (bottom half of the movement) are especially effective for growth. Example: doing stretch-focused RDLs or deep squats. Use full ROM for 90% of your training. Add partial reps only as a finisher or when an injury limits your ROM.",
+    "answer_ar": "المدى الكامل هو الأساس. الأبحاث بتثبت إن المدى الكامل بيبني عضلات أكتر من النص. لكن النص الحركة ليها مكان كإضافة: التكرارات الجزئية في النص السفلي (الشد) فعالة جداً للنمو. مثال: RDL عميق أو سكوات عميق. استخدم المدى الكامل لـ 90% من التمرين. أضف جزئية كفنيشر بس.",
+    "tags": ["range_of_motion", "partial_reps", "muscle_growth", "technique"]
+  }
+]

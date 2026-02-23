@@ -1,0 +1,522 @@
+[
+  {
+    "name_en": "Egyptian Mango (Alphonso, 1 medium)",
+    "name_ar": "مانجو مصري (عويسي، 1 متوسطة)",
+    "category": "fruit",
+    "serving_size_g": 200,
+    "calories": 130,
+    "protein_g": 1,
+    "carbs_g": 34,
+    "fat_g": 0.5,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "mango",
+      "egyptian",
+      "summer",
+      "vitamin_a",
+      "vitamin_c"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mango.jpg"
+  },
+  {
+    "name_en": "Dates (Medjool, 3 pieces)",
+    "name_ar": "تمر (مجدول، 3 حبات)",
+    "category": "fruit",
+    "serving_size_g": 75,
+    "calories": 200,
+    "protein_g": 2,
+    "carbs_g": 54,
+    "fat_g": 0,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "dates",
+      "energy",
+      "pre_workout",
+      "ramadan",
+      "natural_sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/dates.jpg"
+  },
+  {
+    "name_en": "Pomegranate (1 cup seeds)",
+    "name_ar": "رمان (كوب حبوب)",
+    "category": "fruit",
+    "serving_size_g": 150,
+    "calories": 125,
+    "protein_g": 2,
+    "carbs_g": 28,
+    "fat_g": 2,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "pomegranate",
+      "antioxidant",
+      "winter"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pomegranate.jpg"
+  },
+  {
+    "name_en": "Fig (Teen, 3 fresh)",
+    "name_ar": "تين (3 حبات طازجة)",
+    "category": "fruit",
+    "serving_size_g": 150,
+    "calories": 110,
+    "protein_g": 1,
+    "carbs_g": 29,
+    "fat_g": 0,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "fig",
+      "teen",
+      "summer",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/figs.jpg"
+  },
+  {
+    "name_en": "Prickly Pear (Teen Shouki, 2 pcs)",
+    "name_ar": "تين شوكي (2 حبة)",
+    "category": "fruit",
+    "serving_size_g": 150,
+    "calories": 60,
+    "protein_g": 1,
+    "carbs_g": 14,
+    "fat_g": 1,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "prickly_pear",
+      "teen_shouki",
+      "summer",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pear.jpg"
+  },
+  {
+    "name_en": "Egyptian Orange (1 large)",
+    "name_ar": "برتقال مصري (1 كبيرة)",
+    "category": "fruit",
+    "serving_size_g": 200,
+    "calories": 90,
+    "protein_g": 2,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "orange",
+      "vitamin_c",
+      "winter",
+      "immune"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange.jpg"
+  },
+  {
+    "name_en": "Watermelon (2 cups cubed)",
+    "name_ar": "بطيخ (2 كوب مكعبات)",
+    "category": "fruit",
+    "serving_size_g": 300,
+    "calories": 90,
+    "protein_g": 2,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "watermelon",
+      "summer",
+      "hydration",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/watermelon.jpg"
+  },
+  {
+    "name_en": "Cantaloupe/Shamam (1 cup)",
+    "name_ar": "شمام/كنتالوب (1 كوب)",
+    "category": "fruit",
+    "serving_size_g": 170,
+    "calories": 55,
+    "protein_g": 1,
+    "carbs_g": 13,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "cantaloupe",
+      "shamam",
+      "summer",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cantaloupe.jpg"
+  },
+  {
+    "name_en": "Apple (1 medium)",
+    "name_ar": "تفاحة (1 متوسطة)",
+    "category": "fruit",
+    "serving_size_g": 180,
+    "calories": 95,
+    "protein_g": 0.5,
+    "carbs_g": 25,
+    "fat_g": 0,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "fruit",
+      "apple",
+      "fiber",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apple.jpg"
+  },
+  {
+    "name_en": "Banana (1 medium)",
+    "name_ar": "موزة (1 متوسطة)",
+    "category": "fruit",
+    "serving_size_g": 120,
+    "calories": 105,
+    "protein_g": 1,
+    "carbs_g": 27,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "fruit",
+      "banana",
+      "potassium",
+      "pre_workout",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Dried Dates (5 pieces)",
+    "name_ar": "تمر مجفف (5 حبات)",
+    "category": "fruit",
+    "serving_size_g": 50,
+    "calories": 140,
+    "protein_g": 1,
+    "carbs_g": 37,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "dates",
+      "dried",
+      "energy",
+      "ramadan",
+      "quick_carbs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/dates.jpg"
+  },
+  {
+    "name_en": "Dried Apricots (Mishmish, 6 pcs)",
+    "name_ar": "مشمش مجفف (6 حبات)",
+    "category": "fruit",
+    "serving_size_g": 40,
+    "calories": 95,
+    "protein_g": 1,
+    "carbs_g": 25,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "fruit",
+      "apricot",
+      "dried",
+      "iron",
+      "ramadan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apricots.jpg"
+  },
+  {
+    "name_en": "Spinach (Raw, 100g)",
+    "name_ar": "سبانخ (نية، 100 جرام)",
+    "category": "vegetable",
+    "serving_size_g": 100,
+    "calories": 23,
+    "protein_g": 3,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "spinach",
+      "iron",
+      "low_calorie",
+      "salad"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "Broccoli (Steamed, 150g)",
+    "name_ar": "بروكلي (مطهو على البخار، 150 جرام)",
+    "category": "vegetable",
+    "serving_size_g": 150,
+    "calories": 50,
+    "protein_g": 4,
+    "carbs_g": 10,
+    "fat_g": 0.5,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "vegetable",
+      "broccoli",
+      "fiber",
+      "bodybuilding_staple",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Sweet Potato (Baked, 200g)",
+    "name_ar": "بطاطا حلوة مشوية (200 جرام)",
+    "category": "vegetable",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 4,
+    "carbs_g": 42,
+    "fat_g": 0,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "sweet_potato",
+      "carbs",
+      "fiber",
+      "bodybuilding"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Eggplant (Grilled, 150g)",
+    "name_ar": "باذنجان مشوي (150 جرام)",
+    "category": "vegetable",
+    "serving_size_g": 150,
+    "calories": 55,
+    "protein_g": 2,
+    "carbs_g": 10,
+    "fat_g": 1,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "eggplant",
+      "grilled",
+      "low_calorie",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/eggplant.jpg"
+  },
+  {
+    "name_en": "Okra (Bamia, 150g cooked)",
+    "name_ar": "بامية (150 جرام مطبوخة)",
+    "category": "vegetable",
+    "serving_size_g": 150,
+    "calories": 50,
+    "protein_g": 3,
+    "carbs_g": 10,
+    "fat_g": 0.5,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "okra",
+      "bamia",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/okra.jpg"
+  },
+  {
+    "name_en": "Molokhia Leaves (Cooked, 200g)",
+    "name_ar": "ملوخية (مطبوخة، 200 جرام)",
+    "category": "vegetable",
+    "serving_size_g": 200,
+    "calories": 60,
+    "protein_g": 4,
+    "carbs_g": 8,
+    "fat_g": 1,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "molokhia",
+      "egyptian",
+      "fiber",
+      "iron",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
+  },
+  {
+    "name_en": "Green Beans (Fasoulya Khadra, 150g)",
+    "name_ar": "فاصوليا خضرا (150 جرام)",
+    "category": "vegetable",
+    "serving_size_g": 150,
+    "calories": 45,
+    "protein_g": 3,
+    "carbs_g": 10,
+    "fat_g": 0,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "green_beans",
+      "fiber",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/green-beans.jpg"
+  },
+  {
+    "name_en": "Peas (Bisilla, 150g cooked)",
+    "name_ar": "بسلة (150 جرام مطبوخة)",
+    "category": "vegetable",
+    "serving_size_g": 150,
+    "calories": 125,
+    "protein_g": 8,
+    "carbs_g": 22,
+    "fat_g": 0.5,
+    "fiber_g": 7,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "peas",
+      "protein",
+      "fiber",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peas.jpg"
+  },
+  {
+    "name_en": "Zucchini (Koosa, 150g cooked)",
+    "name_ar": "كوسة (150 جرام مطبوخة)",
+    "category": "vegetable",
+    "serving_size_g": 150,
+    "calories": 25,
+    "protein_g": 2,
+    "carbs_g": 5,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "zucchini",
+      "koosa",
+      "low_calorie",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
+  },
+  {
+    "name_en": "Cabbage (Koronb, 100g shredded)",
+    "name_ar": "كرنب (100 جرام مقطع)",
+    "category": "vegetable",
+    "serving_size_g": 100,
+    "calories": 25,
+    "protein_g": 1,
+    "carbs_g": 6,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "cabbage",
+      "koronb",
+      "low_calorie",
+      "volume"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cabbage.jpg"
+  },
+  {
+    "name_en": "Tomato (1 medium)",
+    "name_ar": "طماطم (1 متوسطة)",
+    "category": "vegetable",
+    "serving_size_g": 120,
+    "calories": 22,
+    "protein_g": 1,
+    "carbs_g": 5,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "tomato",
+      "lycopene",
+      "salad",
+      "staple"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tomato.jpg"
+  },
+  {
+    "name_en": "Carrot (1 medium)",
+    "name_ar": "جزرة (1 متوسطة)",
+    "category": "vegetable",
+    "serving_size_g": 75,
+    "calories": 30,
+    "protein_g": 1,
+    "carbs_g": 7,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "carrot",
+      "vitamin_a",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/carrots.jpg"
+  },
+  {
+    "name_en": "Bell Pepper (1 medium)",
+    "name_ar": "فلفل ألوان (1 متوسط)",
+    "category": "vegetable",
+    "serving_size_g": 120,
+    "calories": 30,
+    "protein_g": 1,
+    "carbs_g": 7,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "vegetable",
+      "pepper",
+      "vitamin_c",
+      "salad"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bell-pepper.jpg"
+  },
+  {
+    "name_en": "Avocado (1 whole)",
+    "name_ar": "أفوكادو (1 كاملة)",
+    "category": "fruit",
+    "serving_size_g": 200,
+    "calories": 320,
+    "protein_g": 4,
+    "carbs_g": 17,
+    "fat_g": 29,
+    "fiber_g": 13,
+    "is_egyptian": false,
+    "tags": [
+      "fruit",
+      "avocado",
+      "healthy_fat",
+      "fiber",
+      "potassium",
+      "bulking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  }
+]

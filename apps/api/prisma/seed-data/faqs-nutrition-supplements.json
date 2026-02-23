@@ -1,0 +1,182 @@
+[
+  {
+    "id": "faq-nut-001",
+    "category": "nutrition_basics",
+    "question_en": "How do I calculate my daily calorie needs (TDEE)?",
+    "question_ar": "إزاي أحسب احتياجي اليومي من السعرات (TDEE)؟",
+    "answer_en": "Step 1: Calculate BMR (Basal Metabolic Rate) using Mifflin-St Jeor:\n- Men: (10 × weight in kg) + (6.25 × height in cm) − (5 × age) + 5\n- Women: (10 × weight in kg) + (6.25 × height in cm) − (5 × age) − 161\n\nStep 2: Multiply by activity factor:\n- Sedentary (desk job): BMR × 1.2\n- Light activity (1-3 days gym): BMR × 1.375\n- Moderate (3-5 days gym): BMR × 1.55\n- Very active (6-7 days): BMR × 1.725\n\nExample: 80kg man, 175cm, 25yo, moderate = (800 + 1094 - 125 + 5) × 1.55 = 2750 cal/day.\n\nTo lose fat: eat 300-500 cal below TDEE. To gain muscle: eat 200-300 cal above TDEE.",
+    "answer_ar": "الخطوة 1: احسب الـ BMR بمعادلة Mifflin-St Jeor:\n- رجال: (10 × الوزن بالكيلو) + (6.25 × الطول بالسنتي) − (5 × العمر) + 5\n- ستات: (10 × الوزن) + (6.25 × الطول) − (5 × العمر) − 161\n\nالخطوة 2: اضرب في معامل النشاط:\n- مكتبي: BMR × 1.2\n- نشاط خفيف (1-3 أيام جيم): × 1.375\n- متوسط (3-5 أيام): × 1.55\n- نشيط جداً (6-7 أيام): × 1.725\n\nمثال: راجل 80 كيلو، 175 سم، 25 سنة، نشاط متوسط = 2750 سعرة/يوم.\n\nللتنشيف: كل أقل 300-500 سعرة. للتضخيم: كل أكتر 200-300 سعرة.",
+    "tags": ["tdee", "calories", "bmr", "calculation", "beginner", "essential"]
+  },
+  {
+    "id": "faq-nut-002",
+    "category": "nutrition_basics",
+    "question_en": "How much protein do I need per day?",
+    "question_ar": "محتاج كام جرام بروتين في اليوم؟",
+    "answer_en": "For muscle building/retention: 1.6-2.2g per kg of body weight per day.\n- 70kg person: 112-154g protein/day\n- 80kg person: 128-176g protein/day\n- 90kg person: 144-198g protein/day\n\nIf you're overweight, calculate based on LEAN body mass or target weight, not current weight. Spread protein across 3-5 meals (30-50g per meal). Hitting protein is the #1 most important nutrition factor for body composition. Don't stress about exact timing — total daily intake matters most.",
+    "answer_ar": "لبناء/الحفاظ على العضلات: 1.6-2.2 جرام لكل كيلو من وزن الجسم يومياً.\n- 70 كيلو: 112-154 جرام بروتين/يوم\n- 80 كيلو: 128-176 جرام\n- 90 كيلو: 144-198 جرام\n\nلو وزنك زيادة، احسب على الوزن المستهدف مش الحالي. وزع البروتين على 3-5 وجبات (30-50 جرام في الوجبة). البروتين هو أهم عامل غذائي لتكوين الجسم.",
+    "tags": ["protein", "macros", "muscle", "daily_intake", "essential"]
+  },
+  {
+    "id": "faq-nut-003",
+    "category": "nutrition_basics",
+    "question_en": "What's the difference between cutting and bulking?",
+    "question_ar": "إيه الفرق بين التنشيف والتضخيم؟",
+    "answer_en": "Cutting = eating in a calorie deficit to lose fat while preserving muscle. Typically 300-500 calories below TDEE. High protein (2g/kg), moderate carbs, moderate fat. Expect to lose 0.5-1% body weight per week.\n\nBulking = eating in a calorie surplus to build muscle. Typically 200-300 calories above TDEE ('lean bulk'). High protein (1.6-2g/kg), high carbs for energy, moderate fat. Expect to gain 0.5-1kg per month.\n\nDirty bulk (eating anything) is not recommended — you'll gain too much fat. Lean bulk with controlled surplus is better.",
+    "answer_ar": "التنشيف = أكل أقل من احتياجك عشان تخس دهون وتحافظ على العضلات. عادة أقل 300-500 سعرة. بروتين عالي (2 جرام/كيلو).\n\nالتضخيم = أكل أكتر من احتياجك عشان تبني عضلات. عادة أكتر 200-300 سعرة (تضخيم نظيف). بروتين عالي، كاربز عالية.\n\nالتضخيم القذر (أكل أي حاجة) مش منصوح — هتكسب دهون كتير. التضخيم النظيف أحسن.",
+    "tags": ["cutting", "bulking", "calories", "deficit", "surplus", "beginner"]
+  },
+  {
+    "id": "faq-nut-004",
+    "category": "nutrition_egyptian",
+    "question_en": "What are the cheapest high-protein foods in Egypt?",
+    "question_ar": "إيه أرخص أكل عالي البروتين في مصر؟",
+    "answer_en": "Budget protein sources in Egypt (price per 30g protein):\n1. Eggs (بيض) — 6 eggs = 36g protein, ~30 LE → cheapest protein\n2. Foul Medames (فول) — 300g = 24g protein, ~5 LE → incredible value\n3. Lentils (عدس) — 200g cooked = 18g protein, ~5 LE\n4. Chicken thighs (أفخاذ فراخ) — 200g = 40g protein, ~40 LE\n5. Gibna Areesh (قريش) — 200g = 28g protein, ~20 LE\n6. Canned tuna (تونة) — 1 can = 25g protein, ~25 LE\n7. Greek yogurt (زبادي يوناني) — 200g = 20g protein, ~25 LE\n\nPro tip: Foul + eggs + bread = complete amino acids + cheap = Egyptian bodybuilder's best friend.",
+    "answer_ar": "مصادر بروتين رخيصة في مصر:\n1. بيض — 6 بيضات = 36 جرام بروتين، ~30 جنيه → أرخص بروتين\n2. فول — 300 جرام = 24 جرام بروتين، ~5 جنيه → قيمة لا تصدق\n3. عدس — 200 جرام مطبوخ = 18 جرام، ~5 جنيه\n4. أفخاذ فراخ — 200 جرام = 40 جرام، ~40 جنيه\n5. قريش — 200 جرام = 28 جرام، ~20 جنيه\n6. تونة معلبة — علبة = 25 جرام، ~25 جنيه\n7. زبادي يوناني — 200 جرام = 20 جرام، ~25 جنيه\n\nنصيحة: فول + بيض + عيش = أحماض أمينية كاملة + رخيص = أحسن صديق للاعب كمال الأجسام المصري.",
+    "tags": ["budget", "protein", "egyptian", "cheap", "practical"]
+  },
+  {
+    "id": "faq-nut-005",
+    "category": "supplements",
+    "question_en": "Should I take creatine? Is it safe?",
+    "question_ar": "آخد كرياتين؟ هل هو آمن؟",
+    "answer_en": "Creatine monohydrate is the MOST researched supplement in sports nutrition history. It's safe and effective.\n\nBenefits: +5-10% strength, +1-2kg lean mass in first month (water in muscles), better recovery, may help brain function.\n\nDosing: 3-5g daily, every day (including rest days). No need to load or cycle. Take it any time — with food or without.\n\nSafety: 500+ studies show it's safe for healthy adults. Does NOT damage kidneys in healthy people. May cause slight water weight gain (1-3kg) which is in the MUSCLES not under the skin.\n\nBest buy in Egypt: Optimum Nutrition Creatine or any creatine monohydrate (not HCL, not buffered — plain monohydrate is best).",
+    "answer_ar": "كرياتين مونوهيدرات هو أكتر مكمل مدروس في تاريخ التغذية الرياضية. آمن وفعال.\n\nالفوايد: +5-10% قوة، +1-2 كيلو كتلة عضلية في أول شهر (مية في العضلات)، استشفاء أحسن.\n\nالجرعة: 3-5 جرام يومياً، كل يوم. مش محتاج تحميل أو دورات.\n\nالأمان: أكتر من 500 دراسة بتثبت إنه آمن. مش بيضر الكلى في الناس الصحية. ممكن يزود وزن مية 1-3 كيلو في العضلات.\n\nأحسن شراء في مصر: Optimum Nutrition Creatine أو أي كرياتين مونوهيدرات عادي.",
+    "tags": ["creatine", "supplement", "safety", "dosing", "essential"]
+  },
+  {
+    "id": "faq-nut-006",
+    "category": "supplements",
+    "question_en": "Do I need whey protein? Which brand is best in Egypt?",
+    "question_ar": "محتاج واي بروتين؟ إيه أحسن براند في مصر؟",
+    "answer_en": "You only NEED whey if you can't hit your protein target from food. It's a convenient supplement, not magic.\n\nWhen it's useful: post-workout, as a snack, mixed in oats, or when you're busy and can't cook.\n\nBest brands available in Egypt:\n1. Optimum Nutrition Gold Standard (best overall, trusted)\n2. Dymatize ISO100 (lactose-free option)\n3. MuscleTech Nitro-Tech (good value)\n4. Rule 1 R1 Protein (clean label)\n\nAVOID: unknown brands, deals that seem too cheap (could be fake), anything without a sealed hologram. Buy from trusted stores like Fit Zone, Muscles Center, or iHerb (ships to Egypt).\n\nBudget alternative: Gibna Areesh + eggs = same protein, way cheaper.",
+    "answer_ar": "أنت محتاج واي بس لو مش قادر توصل لهدف البروتين من الأكل. هو مكمل مناسب مش سحر.\n\nلما بيفيد: بعد التمرين، كسناك، مع الشوفان، أو لما مشغول.\n\nأحسن براندات في مصر:\n1. Optimum Nutrition Gold Standard (أحسن عموماً)\n2. Dymatize ISO100 (خالي لاكتوز)\n3. MuscleTech Nitro-Tech (قيمة كويسة)\n4. Rule 1 R1 Protein (نظيف)\n\nتجنب: براندات مش معروفة، عروض رخيصة أوي (ممكن تكون مضروبة). اشتري من محلات موثوقة.\n\nبديل رخيص: قريش + بيض = نفس البروتين، أرخص بكتير.",
+    "tags": ["whey", "protein", "supplement", "brands", "egypt", "budget"]
+  },
+  {
+    "id": "faq-nut-007",
+    "category": "supplements",
+    "question_en": "Are pre-workout supplements safe? Should I use them?",
+    "question_ar": "البري ووركاوت آمن؟ لازم أستخدمه؟",
+    "answer_en": "Pre-workouts contain caffeine (150-300mg), beta-alanine (tingles), citrulline (pump), and sometimes other ingredients.\n\nSafe use: Start with HALF a scoop to assess tolerance. Don't take after 4 PM (ruins sleep). Don't exceed recommended dose. Take breaks (use it 3-4 days/week max, not every day).\n\nRisks: Caffeine tolerance builds fast, heart palpitations if sensitive, sleep disruption, dependency.\n\nBetter alternative: Black coffee 30 min before workout = 100-200mg caffeine naturally. Cheaper and simpler.\n\nIf you do use pre-workout: C4 Original, Optimum Nutrition Gold Standard Pre, or Cellucor are available in Egypt.",
+    "answer_ar": "البري ووركاوت فيه كافيين (150-300 مج)، بيتا ألانين (وخز)، سترولين (بامب).\n\nالاستخدام الآمن: ابدأ بنص سكوب. ما تاخدهوش بعد 4 المغرب (بيخرب النوم). ما تعديش الجرعة. خد بريكات (3-4 أيام/أسبوع بس).\n\nمخاطر: تحمل الكافيين بيزيد بسرعة، خفقان قلب لو حساس، اضطراب نوم.\n\nبديل أحسن: قهوة سادة قبل التمرين بنص ساعة = 100-200 مج كافيين طبيعي. أرخص وأبسط.",
+    "tags": ["pre_workout", "caffeine", "supplement", "safety", "alternatives"]
+  },
+  {
+    "id": "faq-nut-008",
+    "category": "supplements",
+    "question_en": "How do I know if supplements in Egypt are fake?",
+    "question_ar": "إزاي أعرف لو المكملات مغشوشة في مصر؟",
+    "answer_en": "Red flags for fake supplements in Egypt:\n1. Price too low (if Gold Standard Whey is 500 LE when market is 2000+, it's fake)\n2. No hologram seal or hologram looks different from official\n3. Label printing quality is poor or blurry\n4. Taste is off (too sweet, weird aftertaste, doesn't mix well)\n5. Container feels lighter than expected\n6. Sold on Facebook/Instagram random pages with no reviews\n\nSafe buying tips:\n- Buy from authorized retailers (check brand's official Egypt distributor)\n- Buy from iHerb.com (ships to Egypt, 100% authentic)\n- Check batch/lot numbers on the brand's website\n- Fit Zone, Muscles Center, and GNC Egypt are generally trusted",
+    "answer_ar": "علامات المكملات المغشوشة في مصر:\n1. السعر رخيص أوي (لو Gold Standard بـ 500 جنيه والسوق 2000+، مضروب)\n2. مفيش هولوجرام أو شكله مختلف عن الرسمي\n3. الطباعة على العلبة رديئة أو مش واضحة\n4. الطعم غريب (حلو أوي، طعم غريب بعدها، مش بيتخلط)\n5. العلبة أخف من المتوقع\n6. بيتباع على فيسبوك/إنستا صفحات عشوائية\n\nنصايح شراء آمن:\n- اشتري من موزعين معتمدين\n- iHerb.com بيوصل مصر، 100% أصلي\n- اتأكد من رقم الباتش على موقع البراند",
+    "tags": ["fake_supplements", "egypt", "safety", "buying_guide", "important"]
+  },
+  {
+    "id": "faq-nut-009",
+    "category": "nutrition_timing",
+    "question_en": "Does meal timing matter? When should I eat around workouts?",
+    "question_ar": "توقيت الأكل مهم؟ آكل إمتى حوالين التمرين؟",
+    "answer_en": "Total daily intake matters MORE than timing. But for optimization:\n\nPre-workout (1-2 hours before): Carbs + moderate protein, low fat. Example: rice + chicken, oats + protein shake, banana + PB sandwich.\n\nPost-workout (within 2 hours): Protein + carbs to start recovery. Example: protein shake + fruit, chicken + rice, foul + eggs + bread.\n\nThe 'anabolic window' of 30 minutes post-workout is mostly a MYTH. You have a much wider window (several hours). What matters: don't train completely fasted if possible, and eat protein within a few hours of training.",
+    "answer_ar": "الإجمالي اليومي أهم من التوقيت. لكن للتحسين:\n\nقبل التمرين (1-2 ساعة): كاربز + بروتين متوسط، دهون قليلة. مثال: أرز + فراخ، شوفان + شيك.\n\nبعد التمرين (خلال ساعتين): بروتين + كاربز للاستشفاء. مثال: شيك + فاكهة، فراخ + أرز، فول + بيض + عيش.\n\nالـ 'نافذة الأنابوليك' 30 دقيقة بعد التمرين خرافة في الغالب. عندك وقت أطول بكتير. المهم: ما تتمرنش على معدة فاضية لو تقدر.",
+    "tags": ["meal_timing", "pre_workout", "post_workout", "anabolic_window", "myth"]
+  },
+  {
+    "id": "faq-nut-010",
+    "category": "nutrition_ramadan",
+    "question_en": "How should I eat during Ramadan to maintain muscle?",
+    "question_ar": "آكل إزاي في رمضان عشان أحافظ على العضلات؟",
+    "answer_en": "Ramadan muscle maintenance plan:\n\nIftar (break fast): Start with dates + water, then a balanced meal with protein (chicken, meat, fish) + carbs (rice, bread) + vegetables. This is your biggest meal.\n\nPost-Tarawih snack: Protein shake or Greek yogurt + fruit\n\nSuhoor (pre-dawn): Slow-digesting foods — oats, eggs, foul medames, cheese, whole wheat bread. Add healthy fats (nuts, olive oil). This keeps you full longer.\n\nTraining: Best time is 1-2 hours after Iftar (fed state). Or 30-60 min before Iftar (you can eat immediately after).\n\nKey: Aim for 1.6g/kg protein split across Iftar, snack, and Suhoor. Drink 2-3L water between Iftar and Suhoor. Take creatine at Suhoor with water.",
+    "answer_ar": "خطة الحفاظ على العضلات في رمضان:\n\nالإفطار: ابدأ بتمر + مية، بعدين وجبة متوازنة فيها بروتين (فراخ، لحمة، سمك) + كاربز (أرز، عيش) + خضار. دي أكبر وجبة.\n\nبعد التراويح: شيك بروتين أو زبادي يوناني + فاكهة\n\nالسحور: أكل بطيء الهضم — شوفان، بيض، فول، جبنة، عيش أسمر. أضف دهون صحية (مكسرات، زيت زيتون).\n\nالتمرين: أحسن وقت 1-2 ساعة بعد الإفطار. أو 30-60 دقيقة قبل الإفطار.\n\nالمهم: استهدف 1.6 جرام/كيلو بروتين موزعين. اشرب 2-3 لتر مية بين الإفطار والسحور.",
+    "tags": ["ramadan", "fasting", "muscle", "iftar", "suhoor", "training"]
+  },
+  {
+    "id": "faq-nut-011",
+    "category": "nutrition_basics",
+    "question_en": "Is rice or bread better for bodybuilding?",
+    "question_ar": "الأرز ولا العيش أحسن للجيم؟",
+    "answer_en": "Both are fine carb sources. The difference is minimal:\n- White rice (200g cooked): 260 cal, 56g carbs, 5g protein\n- Baladi bread (1 loaf): 260 cal, 52g carbs, 8g protein\n\nRice: easier to measure portions, digests faster, less bloating for some people.\nBread: more convenient, slightly more protein, more fiber (especially baladi).\n\nFor cutting: rice is easier to portion control. For bulking: eat whichever you prefer. The best carb source is the one you enjoy and can stick to consistently. Egyptian bodybuilders have built great physiques on both.",
+    "answer_ar": "الاتنين مصادر كاربز كويسة. الفرق بسيط:\n- أرز أبيض (200 جرام مطبوخ): 260 سعرة، 56 جرام كاربز\n- عيش بلدي (رغيف): 260 سعرة، 52 جرام كاربز\n\nالأرز: أسهل في التقسيم، بيتهضم أسرع.\nالعيش: أسهل في التحضير، بروتين أكتر شوية، ألياف أكتر (خصوصاً البلدي).\n\nللتنشيف: الأرز أسهل في التحكم. للتضخيم: كل اللي بتحبه. أحسن كاربز هي اللي بتعرف تلتزم بيها. لاعبين مصريين بنوا أجسام ممتازة بالاتنين.",
+    "tags": ["rice", "bread", "carbs", "comparison", "egyptian", "bodybuilding"]
+  },
+  {
+    "id": "faq-nut-012",
+    "category": "nutrition_basics",
+    "question_en": "How much water should I drink daily?",
+    "question_ar": "أشرب كام لتر مية في اليوم؟",
+    "answer_en": "General guideline: 30-40ml per kg of body weight.\n- 70kg person: 2.1-2.8L/day\n- 80kg person: 2.4-3.2L/day\n- 90kg person: 2.7-3.6L/day\n\nAdd more for: hot weather (Egypt = +500ml), exercise days (+500ml-1L), creatine use (+500ml), high protein diet (+500ml).\n\nSigns you're not drinking enough: dark yellow urine, headaches, fatigue, cramps. Aim for light yellow/clear urine.\n\nTips: Carry a water bottle everywhere. Drink a glass upon waking. Drink 500ml during workout. Set phone reminders if needed.",
+    "answer_ar": "القاعدة العامة: 30-40 مل لكل كيلو من وزن الجسم.\n- 70 كيلو: 2.1-2.8 لتر/يوم\n- 80 كيلو: 2.4-3.2 لتر/يوم\n- 90 كيلو: 2.7-3.6 لتر/يوم\n\nزوّد لو: حر (مصر = +500 مل)، أيام تمرين (+500 مل-1 لتر)، بتاخد كرياتين (+500 مل).\n\nعلامات الجفاف: بول أصفر غامق، صداع، تعب، شد عضلي. استهدف بول أصفر فاتح/شفاف.\n\nنصايح: خد ازازة مية معاك في كل مكان. اشرب كباية لما تصحى.",
+    "tags": ["water", "hydration", "daily_intake", "health", "essential"]
+  },
+  {
+    "id": "faq-nut-013",
+    "category": "nutrition_diets",
+    "question_en": "Is intermittent fasting good for fat loss?",
+    "question_ar": "الصيام المتقطع كويس للتنشيف؟",
+    "answer_en": "Intermittent fasting (IF) works for fat loss ONLY because it helps some people eat fewer total calories. There's no magic metabolic advantage.\n\nCommon protocols:\n- 16:8 (skip breakfast, eat 12pm-8pm) — most popular\n- 20:4 (eat within 4-hour window) — more extreme\n\nPros: Simple, no calorie counting needed for some, may improve insulin sensitivity.\nCons: Hard to get enough protein in fewer meals, may affect workout performance if training fasted, not suitable during Ramadan (you're already fasting).\n\nBottom line: If it helps you eat less and you feel good, use it. If it makes you binge or feel terrible, don't.",
+    "answer_ar": "الصيام المتقطع (IF) بيشتغل للتنشيف بس لأنه بيساعد بعض الناس ياكلوا سعرات أقل. مفيش ميزة سحرية.\n\nبروتوكولات شائعة:\n- 16:8 (إلغي الفطار، كل من 12 الظهر لـ 8 المغرب)\n- 20:4 (كل في 4 ساعات بس)\n\nمميزات: بسيط، بعض الناس مش محتاجين يحسبوا سعرات.\nعيوب: صعب تاخد بروتين كفاية في وجبات أقل، ممكن يأثر على الأداء لو بتتمرن صايم.\n\nالخلاصة: لو بيساعدك تاكل أقل وحاسس كويس، استخدمه. لو بيخليك تاكل كتير بعدين، ما تستخدمهوش.",
+    "tags": ["intermittent_fasting", "fat_loss", "diet", "myth", "practical"]
+  },
+  {
+    "id": "faq-nut-014",
+    "category": "supplements",
+    "question_en": "What supplements actually work? What's a waste of money?",
+    "question_ar": "إيه المكملات اللي فعلاً بتفرق؟ وإيه اللي مضيعة فلوس؟",
+    "answer_en": "Tier 1 — PROVEN (worth the money):\n- Creatine monohydrate (5g/day) — strength + muscle\n- Whey protein (if you can't hit protein from food)\n- Caffeine (coffee or pre-workout) — performance\n- Vitamin D (if deficient, very common in Egypt)\n\nTier 2 — HELPFUL (optional):\n- Omega-3 fish oil (if you don't eat fish 2x/week)\n- Magnesium (helps sleep, common deficiency)\n- Citrulline (6-8g pre-workout for pump)\n\nTier 3 — WASTE OF MONEY:\n- BCAAs (if you eat enough protein, BCAAs are useless)\n- Testosterone boosters (don't work)\n- Fat burners (just expensive caffeine)\n- Glutamine (useless if you eat enough protein)\n- Mass gainers (just overpriced carbs + protein — eat food instead)",
+    "answer_ar": "المستوى 1 — مثبت (يستاهل الفلوس):\n- كرياتين مونوهيدرات (5 جرام/يوم) — قوة + عضلات\n- واي بروتين (لو مش قادر توصل البروتين من الأكل)\n- كافيين (قهوة أو بري ووركاوت)\n- فيتامين D (لو ناقص، شائع جداً في مصر)\n\nالمستوى 2 — مفيد (اختياري):\n- أوميجا 3 (لو مش بتاكل سمك مرتين/أسبوع)\n- ماجنيسيوم (بيساعد النوم)\n\nالمستوى 3 — مضيعة فلوس:\n- BCAAs (لو بتاكل بروتين كفاية، مالهاش لازمة)\n- رافعات تيستوستيرون (مش بتشتغل)\n- حارقات دهون (كافيين غالي)\n- جلوتامين (مالوش لازمة)\n- ماس جينر (كاربز غالية — كل أكل بدالها)",
+    "tags": ["supplements", "ranking", "waste_money", "proven", "buying_guide"]
+  },
+  {
+    "id": "faq-nut-015",
+    "category": "nutrition_egyptian",
+    "question_en": "Can I eat koshari and still lose weight?",
+    "question_ar": "ممكن آكل كشري وأخس برضو؟",
+    "answer_en": "YES — you can eat ANY food and lose weight as long as you're in a calorie deficit. Koshari is not 'bad' — it's just calorie-dense.\n\nA large plate of koshari: ~850 cal. That's a LOT for one meal when cutting at 1800-2000 cal.\n\nStrategies:\n1. Eat a SMALL plate (~500 cal) instead of large\n2. Skip the crispy fried onions (saves ~100 cal)\n3. Add extra lentils, less pasta and rice (more protein, more fiber)\n4. Count it as your main meal and eat lighter for other meals\n5. Have it on training days when you need more carbs\n\nNo food is off-limits. It's about portions and total daily calories.",
+    "answer_ar": "أيوا — ممكن تاكل أي أكل وتخس طالما في عجز سعرات. الكشري مش 'وحش' — بس فيه سعرات كتير.\n\nطبق كبير كشري: ~850 سعرة. ده كتير لو بتنشف على 1800 سعرة.\n\nاستراتيجيات:\n1. كل طبق صغير (~500 سعرة) بدل الكبير\n2. إلغي البصل المحمر (بتوفر ~100 سعرة)\n3. زوّد العدس، قلل المكرونة والأرز\n4. اعتبره الوجبة الرئيسية وكل أخف باقي اليوم\n5. كله في أيام التمرين لما محتاج كاربز\n\nمفيش أكل ممنوع. الموضوع في الكمية والإجمالي اليومي.",
+    "tags": ["koshari", "weight_loss", "egyptian", "calories", "practical", "myth"]
+  },
+  {
+    "id": "faq-nut-016",
+    "category": "nutrition_egyptian",
+    "question_en": "What should I eat for suhoor to stay full during Ramadan fasting?",
+    "question_ar": "آكل إيه في السحور عشان ما أجوعش في رمضان؟",
+    "answer_en": "Best suhoor foods to stay full:\n1. Foul Medames — slow-digesting, high fiber, high protein\n2. Eggs (boiled or scrambled) — protein + fat = satiety\n3. Oats with milk — slow-digesting carbs\n4. Whole wheat bread — more fiber than white\n5. Cheese (gibna areesh or beyda) — protein + fat\n6. Yogurt (plain, full-fat) — probiotics + protein\n7. Nuts (handful) — healthy fats, very filling\n8. Banana — potassium, prevents cramps\n9. Water + water + more water (drink 1L at suhoor minimum)\n\nAVOID at suhoor: salty foods (make you thirsty), sugary foods (crash quickly), fried foods (heavy, uncomfortable).",
+    "answer_ar": "أحسن أكل للسحور عشان ما تجوعش:\n1. فول — بطيء الهضم، ألياف عالية، بروتين\n2. بيض (مسلوق أو مقلي) — بروتين + دهون = شبع\n3. شوفان بلبن — كاربز بطيئة الهضم\n4. عيش أسمر — ألياف أكتر\n5. جبنة (قريش أو بيضا) — بروتين + دهون\n6. زبادي سادة — بروبيوتكس + بروتين\n7. مكسرات (حفنة) — دهون صحية، بتشبع جداً\n8. موزة — بوتاسيوم\n9. مية مية مية (اشرب لتر على الأقل)\n\nتجنب في السحور: أكل مالح (بيعطشك)، حلويات (بتفضى بسرعة)، مقليات.",
+    "tags": ["ramadan", "suhoor", "fasting", "satiety", "egyptian", "practical"]
+  },
+  {
+    "id": "faq-nut-017",
+    "category": "nutrition_basics",
+    "question_en": "What are macros and how do I track them?",
+    "question_ar": "إيه الماكروز وإزاي أتتبعهم؟",
+    "answer_en": "Macros = Macronutrients = the 3 energy-providing nutrients:\n- Protein: 4 cal/gram (builds/repairs muscle)\n- Carbs: 4 cal/gram (energy for training)\n- Fat: 9 cal/gram (hormones, brain, vitamins)\n\nHow to set macros:\n1. Calculate TDEE (total daily calories)\n2. Set protein: 2g per kg body weight\n3. Set fat: 0.8-1g per kg (minimum for hormones)\n4. Fill remaining calories with carbs\n\nExample (80kg, 2500 cal cutting diet):\n- Protein: 160g (640 cal)\n- Fat: 70g (630 cal)\n- Carbs: 308g (1230 cal)\n\nTracking: Use MyFitnessPal or our app's nutrition tracker. Weigh food with a kitchen scale for accuracy.",
+    "answer_ar": "الماكروز = المغذيات الكبرى = 3 عناصر بتدي طاقة:\n- بروتين: 4 سعرة/جرام (بناء العضلات)\n- كاربز: 4 سعرة/جرام (طاقة للتمرين)\n- دهون: 9 سعرة/جرام (هرمونات، مخ، فيتامينات)\n\nإزاي تحدد الماكروز:\n1. احسب TDEE\n2. بروتين: 2 جرام/كيلو\n3. دهون: 0.8-1 جرام/كيلو\n4. الباقي كاربز\n\nمثال (80 كيلو، 2500 سعرة):\n- بروتين: 160 جرام (640 سعرة)\n- دهون: 70 جرام (630 سعرة)\n- كاربز: 308 جرام (1230 سعرة)",
+    "tags": ["macros", "tracking", "calories", "protein", "carbs", "fat", "beginner"]
+  },
+  {
+    "id": "faq-nut-018",
+    "category": "nutrition_diets",
+    "question_en": "Should I try the keto diet?",
+    "question_ar": "أجرب الكيتو دايت؟",
+    "answer_en": "Keto (very low carb, high fat) works for some people but is NOT required for fat loss. It works by creating a calorie deficit, not by magic.\n\nPros: Some people find it reduces appetite, good for insulin resistance, eliminates junk food by default.\n\nCons: Hard to sustain long-term, can hurt gym performance (you need carbs for intense lifting), may cause keto flu initially, very restrictive socially (try eating keto at an Egyptian family gathering...).\n\nFor bodybuilding/gym performance: a moderate carb diet (40% carbs, 30% protein, 30% fat) is usually better. Carbs fuel your workouts.\n\nIf you want to try keto: do it for 2-4 weeks to see how you feel, but know it's not superior to regular calorie deficit for fat loss.",
+    "answer_ar": "الكيتو (كاربز قليلة جداً، دهون عالية) بيشتغل مع بعض الناس بس مش لازم للتنشيف.\n\nمميزات: بعض الناس بيقلل شهيتهم، كويس لمقاومة الإنسولين.\n\nعيوب: صعب تلتزم على المدى الطويل، ممكن يضعف أداء الجيم (محتاج كاربز للتمرين الثقيل)، مقيد اجتماعياً (تخيل كيتو في عزومة مصرية...).\n\nللجيم: دايت كاربز معتدل (40% كاربز، 30% بروتين، 30% دهون) أحسن عادة. الكاربز بتفيد التمرين.\n\nلو عايز تجرب: أسبوعين لـ 4 وشوف إحساسك.",
+    "tags": ["keto", "low_carb", "diet", "comparison", "fat_loss"]
+  },
+  {
+    "id": "faq-nut-019",
+    "category": "nutrition_basics",
+    "question_en": "Is fasted cardio better for fat loss?",
+    "question_ar": "الكارديو على معدة فاضية أحسن للتنشيف؟",
+    "answer_en": "NO — research shows fasted cardio is NOT better than fed cardio for fat loss when calories are equated. You burn the same amount of fat over 24 hours regardless.\n\nFasted cardio: may burn more fat DURING the session, but you burn more carbs later. Net effect = same.\n\nFed cardio: may allow you to train harder and longer, burning more total calories.\n\nDo whatever you PREFER and can stick to. Some people like morning fasted walks. Others perform better with food. Both work. Consistency matters more than timing.\n\nOne exception: if you're on a very low carb diet, fasted cardio may help with fat adaptation.",
+    "answer_ar": "لا — الأبحاث بتقول الكارديو صايم مش أحسن من الكارديو بعد الأكل لما السعرات متساوية. بتحرق نفس كمية الدهون على مدار 24 ساعة.\n\nكارديو صايم: ممكن يحرق دهون أكتر أثناء الجلسة، بس بتحرق كاربز أكتر بعدين. النتيجة = واحدة.\n\nكارديو بعد الأكل: ممكن يخليك تتمرن أقوى وأطول.\n\nأعمل اللي بتفضله وتقدر تلتزم بيه. الاستمرارية أهم من التوقيت.",
+    "tags": ["fasted_cardio", "fat_loss", "myth", "cardio", "timing"]
+  },
+  {
+    "id": "faq-nut-020",
+    "category": "nutrition_egyptian",
+    "question_en": "What's a good high-protein Egyptian breakfast?",
+    "question_ar": "إيه فطار مصري عالي البروتين؟",
+    "answer_en": "High-protein Egyptian breakfasts:\n\n1. The Classic (45g protein, 450 cal):\n- 3 boiled eggs + foul medames (100g) + 1 baladi bread\n\n2. The Cottage Special (40g protein, 350 cal):\n- Gibna areesh (150g) + tomato + cucumber + 1 fino bread\n\n3. The Shakshuka (35g protein, 400 cal):\n- 3 eggs scrambled with tomato + pepper + cheese\n\n4. The Builder (55g protein, 500 cal):\n- 4 boiled eggs + gibna areesh (100g) + black honey on 1 bread\n\n5. The Quick One (30g protein, 350 cal):\n- Greek yogurt (200g) + honey + nuts + banana\n\nAll of these are cheap, available everywhere in Egypt, and hit solid protein numbers.",
+    "answer_ar": "فطار مصري عالي البروتين:\n\n1. الكلاسيك (45 جرام بروتين، 450 سعرة):\n- 3 بيض مسلوق + فول (100 جرام) + رغيف بلدي\n\n2. القريش سبيشال (40 جرام، 350 سعرة):\n- قريش (150 جرام) + طماطم + خيار + فينو\n\n3. الشكشوكة (35 جرام، 400 سعرة):\n- 3 بيض مقلي مع طماطم + فلفل + جبنة\n\n4. البيلدر (55 جرام، 500 سعرة):\n- 4 بيض مسلوق + قريش (100 جرام) + عسل أسود\n\n5. السريع (30 جرام، 350 سعرة):\n- زبادي يوناني (200 جرام) + عسل + مكسرات + موزة\n\nكل دي رخيصة ومتاحة في كل حتة في مصر.",
+    "tags": ["breakfast", "egyptian", "high_protein", "practical", "budget", "meal_ideas"]
+  }
+]

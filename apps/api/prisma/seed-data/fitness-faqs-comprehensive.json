@@ -1,0 +1,218 @@
+[
+  {
+    "id": "faq-protein-intake",
+    "category": "NUTRITION",
+    "question_en": "How much protein do I need per day?",
+    "question_ar": "كم بروتين محتاج في اليوم؟",
+    "answer_en": "For muscle building: 1.6-2.2g per kg of bodyweight. For maintenance: 1.2-1.6g/kg. For fat loss: 2.0-2.4g/kg (higher to preserve muscle). Example: 80kg person building muscle needs 128-176g protein daily. Spread across 4-5 meals for best absorption.",
+    "answer_ar": "لبناء العضل: ١.٦-٢.٢ جرام لكل كيلو من وزنك. للحفاظ: ١.٢-١.٦ جرام/كجم. لحرق الدهون: ٢.٠-٢.٤ جرام/كجم (أعلى للحفاظ على العضل). مثال: شخص ٨٠ كجم بيبني عضل محتاج ١٢٨-١٧٦ جرام بروتين يومياً. وزعهم على ٤-٥ وجبات لأفضل امتصاص.",
+    "tags": ["protein", "macros", "beginner"]
+  },
+  {
+    "id": "faq-calorie-deficit",
+    "category": "NUTRITION",
+    "question_en": "How many calories should I eat to lose weight?",
+    "question_ar": "كم سعرة حرارية أكل عشان أخس؟",
+    "answer_en": "Calculate your TDEE (Total Daily Energy Expenditure) first. For safe fat loss, eat 300-500 calories below TDEE. This gives ~0.5-1kg loss per week. Never go below 1200 (women) or 1500 (men) calories. Too aggressive deficit = muscle loss and metabolic slowdown.",
+    "answer_ar": "احسب الـ TDEE (إجمالي السعرات اليومية) أولاً. لخسارة دهون آمنة، كل ٣٠٠-٥٠٠ سعرة أقل من الـ TDEE. ده بيدي ~٠.٥-١ كجم خسارة في الأسبوع. متنزلش تحت ١٢٠٠ (بنات) أو ١٥٠٠ (رجالة) سعرة. عجز عنيف = خسارة عضل وبطء أيض.",
+    "tags": ["calories", "weight-loss", "deficit"]
+  },
+  {
+    "id": "faq-meal-timing",
+    "category": "NUTRITION",
+    "question_en": "Does meal timing matter? When should I eat?",
+    "question_ar": "توقيت الأكل مهم؟ أكل إمتى؟",
+    "answer_en": "Total daily intake matters more than timing. However, eating protein every 3-5 hours optimizes muscle building. Pre-workout: eat 1-2 hours before (carbs + protein). Post-workout: eat within 1-2 hours (protein + carbs). Don't overthink it — consistency beats timing.",
+    "answer_ar": "إجمالي الأكل اليومي أهم من التوقيت. لكن أكل بروتين كل ٣-٥ ساعات بيحسن بناء العضل. قبل التمرين: كل قبلها بـ١-٢ ساعة (كاربز + بروتين). بعد التمرين: كل خلال ١-٢ ساعة (بروتين + كاربز). متعقدش الموضوع — الانتظام أهم من التوقيت.",
+    "tags": ["timing", "meals", "pre-workout", "post-workout"]
+  },
+  {
+    "id": "faq-supplements-needed",
+    "category": "SUPPLEMENTS",
+    "question_en": "What supplements do I actually need?",
+    "question_ar": "إيه المكملات اللي فعلاً محتاجها؟",
+    "answer_en": "Must-haves: 1) Whey protein (if you can't hit protein from food), 2) Creatine monohydrate (5g/day, cheapest and most effective). Nice-to-haves: Vitamin D, Omega-3. Everything else (BCAA, glutamine, fat burners) is mostly marketing. Save your money and spend on real food first.",
+    "answer_ar": "ضروري: ١) واي بروتين (لو مش قادر تاخد بروتين من الأكل)، ٢) كرياتين مونوهيدرات (٥ جرام/يوم، أرخص وأفعل مكمل). مفيد: فيتامين دي، أوميجا ٣. باقي الحاجات (BCAA، جلوتامين، حوارق) معظمها تسويق. وفر فلوسك واصرفها على أكل حقيقي الأول.",
+    "tags": ["supplements", "creatine", "whey", "beginner"]
+  },
+  {
+    "id": "faq-creatine",
+    "category": "SUPPLEMENTS",
+    "question_en": "Is creatine safe? Will it damage my kidneys?",
+    "question_ar": "الكرياتين آمن؟ هيأذي كلاوي؟",
+    "answer_en": "Creatine monohydrate is the most studied supplement in history. It's safe for healthy adults. It does NOT damage kidneys (studies with 5+ years of use show no kidney damage). It may increase creatinine levels in blood tests (this is normal, not kidney damage). Take 5g daily, no loading needed. Drink plenty of water.",
+    "answer_ar": "كرياتين مونوهيدرات أكتر مكمل متدرس في التاريخ. آمن للبالغين الأصحاء. مش بيأذي الكلاوي (دراسات ٥+ سنين استخدام مبينتش ضرر). ممكن يزود الكرياتينين في تحاليل الدم (ده طبيعي، مش ضرر كلاوي). خد ٥ جرام يومياً، مش محتاج تحميل. اشرب مية كتير.",
+    "tags": ["creatine", "safety", "kidneys", "myth"]
+  },
+  {
+    "id": "faq-whey-types",
+    "category": "SUPPLEMENTS",
+    "question_en": "What's the difference between whey concentrate, isolate, and hydrolyzed?",
+    "question_ar": "إيه الفرق بين واي كونسنتريت وأيزوليت وهيدرولايزد؟",
+    "answer_en": "Concentrate: 70-80% protein, has some fat/lactose, cheapest. Isolate: 90%+ protein, very low fat/lactose, best for lactose intolerant. Hydrolyzed: pre-digested, fastest absorbing, most expensive, marginal benefit. For most people, concentrate is fine and saves money. Isolate if you're lactose sensitive.",
+    "answer_ar": "كونسنتريت: ٧٠-٨٠٪ بروتين، فيه شوية دهون/لاكتوز، أرخص. أيزوليت: ٩٠٪+ بروتين، دهون/لاكتوز قليل جداً، أفضل للي عندهم حساسية لاكتوز. هيدرولايزد: مهضوم مسبقاً، أسرع امتصاص، أغلى، فايدة هامشية. لمعظم الناس، كونسنتريت كويس ويوفر فلوس.",
+    "tags": ["whey", "isolate", "concentrate", "comparison"]
+  },
+  {
+    "id": "faq-beginner-split",
+    "category": "TRAINING",
+    "question_en": "I'm a beginner. What workout split should I follow?",
+    "question_ar": "أنا مبتدئ. أعمل إيه سبليت؟",
+    "answer_en": "Start with Full Body 3x/week for first 3-6 months. This hits each muscle 3x/week which is optimal for beginners. Focus on compound movements (squat, bench, deadlift, row, overhead press). Once you can't recover between sessions, move to Upper/Lower 4x/week, then PPL if needed.",
+    "answer_ar": "ابدأ بتمرين كامل الجسم ٣ مرات في الأسبوع لأول ٣-٦ شهور. ده بيمرن كل عضلة ٣ مرات في الأسبوع وده المثالي للمبتدئين. ركز على التمارين المركبة (سكوات، بنش، ديدليفت، رو، أوفرهيد بريس). لما تحس مش بتستشفى بين الجلسات، انتقل لـ أبر/لوور ٤ مرات.",
+    "tags": ["beginner", "split", "program", "starting"]
+  },
+  {
+    "id": "faq-progressive-overload",
+    "category": "TRAINING",
+    "question_en": "What is progressive overload and why is it important?",
+    "question_ar": "إيه التحميل التدريجي وليه مهم؟",
+    "answer_en": "Progressive overload means gradually increasing the demand on your muscles over time. Without it, your muscles have no reason to grow. Ways to overload: add weight, add reps, add sets, slow down tempo, reduce rest time. The simplest: try to add 1-2 reps each session, or 2.5kg when you hit the top of your rep range.",
+    "answer_ar": "التحميل التدريجي يعني زيادة الضغط على العضلات تدريجياً مع الوقت. بدونه مفيش سبب العضل يكبر. طرق التحميل: زود وزن، زود عدات، زود مجموعات، بطء الإيقاع، قلل وقت الراحة. أبسط طريقة: حاول تزود ١-٢ عدة كل جلسة، أو ٢.٥ كجم لما توصل لأعلى العدات.",
+    "tags": ["progressive-overload", "growth", "fundamentals"]
+  },
+  {
+    "id": "faq-rest-between-sets",
+    "category": "TRAINING",
+    "question_en": "How long should I rest between sets?",
+    "question_ar": "أستنى كام بين المجموعات؟",
+    "answer_en": "Strength (1-5 reps): 3-5 minutes. Hypertrophy (6-12 reps): 1.5-3 minutes. Endurance (15+ reps): 30-90 seconds. For compound lifts (squat, bench, deadlift): take longer. For isolation (curls, raises): shorter rest is fine. Don't rush — recovery between sets matters for performance.",
+    "answer_ar": "قوة (١-٥ عدات): ٣-٥ دقائق. تضخيم (٦-١٢ عدة): ١.٥-٣ دقائق. تحمل (١٥+ عدة): ٣٠-٩٠ ثانية. للتمارين المركبة (سكوات، بنش، ديدليفت): خد وقت أطول. للعزل (كرل، رفع جانبي): راحة أقصر كويسة. متستعجلش — الراحة بين المجموعات مهمة للأداء.",
+    "tags": ["rest", "sets", "timing", "recovery"]
+  },
+  {
+    "id": "faq-cardio-muscle-loss",
+    "category": "TRAINING",
+    "question_en": "Will cardio make me lose muscle?",
+    "question_ar": "الكارديو هيخسرني عضل؟",
+    "answer_en": "No, unless you're doing excessive amounts or not eating enough protein. 2-4 sessions of 20-30 min moderate cardio per week is fine and actually good for health and recovery. Just eat enough protein (1.6g+/kg) and don't run a marathon every day. Walking is the best 'cardio' — it doesn't interfere with muscle building at all.",
+    "answer_ar": "لا، إلا لو بتعمل كميات مبالغ فيها أو مش بتاكل بروتين كفاية. ٢-٤ جلسات من ٢٠-٣٠ دقيقة كارديو متوسط في الأسبوع كويس وفعلاً مفيد للصحة والاستشفاء. بس كل بروتين كفاية (١.٦+ جرام/كجم) ومتجريش ماراثون كل يوم. المشي أفضل 'كارديو' — مش بيأثر على بناء العضل خالص.",
+    "tags": ["cardio", "muscle-loss", "myth", "walking"]
+  },
+  {
+    "id": "faq-soreness",
+    "category": "TRAINING",
+    "question_en": "I'm sore after working out. Is that good? Should I train?",
+    "question_ar": "حاسس بألم بعد التمرين. ده كويس؟ أتمرن؟",
+    "answer_en": "Soreness (DOMS) is normal, especially for beginners or when trying new exercises. It's NOT an indicator of a good workout. You CAN train while sore — light movement actually helps. However, if pain is sharp, in joints, or gets worse during exercise, stop and rest. Soreness decreases as your body adapts.",
+    "answer_ar": "الألم (DOMS) طبيعي، خصوصاً للمبتدئين أو لما بتجرب تمارين جديدة. مش مؤشر على تمرين كويس. تقدر تتمرن وانت حاسس بألم — الحركة الخفيفة بتساعد فعلاً. لكن لو الألم حاد، في المفاصل، أو بيزيد أثناء التمرين، وقف واسترح. الألم بيقل كل ما جسمك يتأقلم.",
+    "tags": ["soreness", "DOMS", "recovery", "beginner"]
+  },
+  {
+    "id": "faq-sleep-muscle",
+    "category": "RECOVERY",
+    "question_en": "How important is sleep for building muscle?",
+    "question_ar": "النوم مهم قد إيه لبناء العضل؟",
+    "answer_en": "Extremely important. 7-9 hours of quality sleep is when most growth hormone is released. Poor sleep: reduces testosterone, increases cortisol, impairs recovery, increases injury risk, makes you hungrier. Sleep is literally when your muscles grow. Prioritize it as much as training and nutrition.",
+    "answer_ar": "مهم جداً. ٧-٩ ساعات نوم جيد هو الوقت اللي معظم هرمون النمو بيتفرز فيه. نوم سيء: بيقلل تستوستيرون، بيزود كورتيزول، بيعطل الاستشفاء، بيزود خطر الإصابة، بيخليك جعان أكتر. النوم حرفياً هو الوقت اللي عضلاتك بتكبر فيه. اديه أولوية زي التمرين والأكل.",
+    "tags": ["sleep", "recovery", "growth-hormone", "important"]
+  },
+  {
+    "id": "faq-water-intake",
+    "category": "NUTRITION",
+    "question_en": "How much water should I drink daily?",
+    "question_ar": "أشرب كام مية في اليوم؟",
+    "answer_en": "General rule: 30-40ml per kg of bodyweight. So an 80kg person needs 2.4-3.2 liters. Increase if: you're exercising, in hot weather, or taking creatine. Simple check: your urine should be light yellow. Clear = too much, dark = not enough. Drink more around workouts.",
+    "answer_ar": "قاعدة عامة: ٣٠-٤٠ مل لكل كيلو من وزنك. يعني شخص ٨٠ كجم محتاج ٢.٤-٣.٢ لتر. زود لو: بتتمرن، الجو حر، أو بتاخد كرياتين. فحص بسيط: البول لازم يكون أصفر فاتح. شفاف = كتير، غامق = مش كفاية. اشرب أكتر حوالين التمرين.",
+    "tags": ["water", "hydration", "daily-intake"]
+  },
+  {
+    "id": "faq-body-fat-percentage",
+    "category": "BODY",
+    "question_en": "What body fat percentage should I aim for?",
+    "question_ar": "نسبة الدهون المثالية كام؟",
+    "answer_en": "Men: Athletic 10-14%, Fit 14-18%, Average 18-24%. Women: Athletic 18-22%, Fit 22-28%, Average 28-32%. Visible abs for men start around 12-15%, for women around 18-22%. Going below 8% (men) or 16% (women) is unsustainable long-term and not recommended.",
+    "answer_ar": "رجال: رياضي ١٠-١٤٪، لائق ١٤-١٨٪، متوسط ١٨-٢٤٪. نساء: رياضية ١٨-٢٢٪، لائقة ٢٢-٢٨٪، متوسطة ٢٨-٣٢٪. البطن بتبان للرجال عند ١٢-١٥٪ تقريباً، للنساء عند ١٨-٢٢٪. النزول تحت ٨٪ (رجال) أو ١٦٪ (نساء) مش مستدام على المدى الطويل ومش مُوصى بيه.",
+    "tags": ["body-fat", "goals", "abs", "percentages"]
+  },
+  {
+    "id": "faq-plateau",
+    "category": "TRAINING",
+    "question_en": "I've hit a plateau. How do I break through it?",
+    "question_ar": "وقفت عن التقدم. أعمل إيه؟",
+    "answer_en": "1) Deload: take a light week (50-60% weights). 2) Change rep ranges (if doing 8-10, try 5-6 for a cycle). 3) Add volume (1-2 more sets per muscle). 4) Check nutrition (eating enough? enough protein?). 5) Check sleep (7-9 hours?). 6) Try a new program. Plateaus are normal — they mean you need to change something.",
+    "answer_ar": "١) ديلود: خد أسبوع خفيف (٥٠-٦٠٪ أوزان). ٢) غير نطاق العدات (لو بتعمل ٨-١٠، جرب ٥-٦ لدورة). ٣) زود الحجم (١-٢ مجموعة زيادة لكل عضلة). ٤) راجع الأكل (بتاكل كفاية؟ بروتين كفاية؟). ٥) راجع النوم (٧-٩ ساعات؟). ٦) جرب برنامج جديد. الثبات طبيعي — يعني محتاج تغير حاجة.",
+    "tags": ["plateau", "stall", "progress", "deload"]
+  },
+  {
+    "id": "faq-form-vs-weight",
+    "category": "TRAINING",
+    "question_en": "Should I focus on form or lifting heavy?",
+    "question_ar": "أركز على الفورم ولا الوزن الثقيل؟",
+    "answer_en": "ALWAYS form first. Bad form = injuries, less muscle activation, ego lifting. Master the movement with light weight first, then progressively add weight while maintaining form. A controlled 60kg bench press builds more muscle than a bouncing 100kg bench press. Leave your ego at the door.",
+    "answer_ar": "دايماً الفورم أولاً. فورم غلط = إصابات، تنشيط عضلي أقل، رفع إيجو. اتقن الحركة بوزن خفيف الأول، بعدين زود الوزن تدريجياً مع الحفاظ على الفورم. بنش ٦٠ كجم بتحكم بيبني عضل أكتر من بنش ١٠٠ كجم بالطقطقة. سيب الإيجو بتاعك برة.",
+    "tags": ["form", "technique", "ego-lifting", "safety"]
+  },
+  {
+    "id": "faq-how-long-results",
+    "category": "GENERAL",
+    "question_en": "How long until I see results?",
+    "question_ar": "هاخد كام وقت عشان أشوف نتايج؟",
+    "answer_en": "Strength gains: 2-4 weeks. Visible muscle (if lean): 8-12 weeks. Significant transformation: 6-12 months. You'll feel it before you see it. Take progress photos every 4 weeks — the mirror lies because change is gradual. Stay consistent for 3 months minimum before judging.",
+    "answer_ar": "زيادة قوة: ٢-٤ أسابيع. عضل ظاهر (لو مش سمين): ٨-١٢ أسبوع. تحول كبير: ٦-١٢ شهر. هتحس قبل ما تشوف. خد صور تقدم كل ٤ أسابيع — المراية بتكدب لأن التغيير تدريجي. التزم ٣ شهور على الأقل قبل ما تحكم.",
+    "tags": ["results", "timeline", "expectations", "patience"]
+  },
+  {
+    "id": "faq-women-bulk",
+    "category": "TRAINING",
+    "question_en": "Will lifting weights make women bulky?",
+    "question_ar": "الحديد هيخلي البنات ضخمة؟",
+    "answer_en": "No. Women have 15-20x less testosterone than men, making it extremely difficult to get 'bulky'. Weight training will give women a toned, defined physique — not a bodybuilder look. Female bodybuilders train for years with specific nutrition and often supplements to achieve that look. Lift heavy and without fear!",
+    "answer_ar": "لا. البنات عندهم تستوستيرون أقل ١٥-٢٠ مرة من الرجال، وده بيخلي الضخامة صعبة جداً. تمارين الحديد هتدي البنات جسم مشدود ومحدد — مش شكل لاعبة كمال أجسام. لاعبات كمال الأجسام بيتمرنوا سنين بتغذية محددة وغالباً مكملات للوصول للشكل ده. ارفعي ثقيل ومتخافيش!",
+    "tags": ["women", "bulky", "myth", "weight-training"]
+  },
+  {
+    "id": "faq-cutting-losing-muscle",
+    "category": "NUTRITION",
+    "question_en": "How do I lose fat without losing muscle?",
+    "question_ar": "أخس دهون من غير ما أخسر عضل ازاي؟",
+    "answer_en": "1) Moderate deficit (300-500 cal, not extreme). 2) High protein (2-2.4g/kg). 3) Keep lifting heavy (maintain intensity, can reduce volume slightly). 4) Sleep well. 5) Lose slowly (0.5-1kg/week max). 6) Don't do excessive cardio. The key: give your body a reason to keep muscle (training + protein) while being in a deficit.",
+    "answer_ar": "١) عجز معتدل (٣٠٠-٥٠٠ سعرة، مش متطرف). ٢) بروتين عالي (٢-٢.٤ جرام/كجم). ٣) كمل رفع ثقيل (حافظ على الشدة، تقدر تقلل الحجم شوية). ٤) نام كويس. ٥) اخس ببطء (٠.٥-١ كجم/أسبوع ماكس). ٦) متعملش كارديو مبالغ فيه. المفتاح: اديي جسمك سبب يحتفظ بالعضل (تمرين + بروتين) وانت في عجز.",
+    "tags": ["cutting", "muscle-preservation", "fat-loss", "diet"]
+  },
+  {
+    "id": "faq-cheat-meals",
+    "category": "NUTRITION",
+    "question_en": "Are cheat meals okay?",
+    "question_ar": "يوم الشيت ميل كويس؟",
+    "answer_en": "Occasional higher-calorie meals are fine and can help mentally. But don't 'cheat' — plan a 'refeed'. A refeed is a planned higher-carb day (maintenance calories or slightly above). One meal won't ruin progress, but a full day of binge eating can undo a week of deficit. Stay mindful, enjoy food, don't guilt-trip.",
+    "answer_ar": "وجبات أعلى سعرات من وقت لآخر كويسة وبتساعد نفسياً. بس متعملش 'شيت' — خطط 'ريفيد'. الريفيد يوم مخطط كاربز أعلى (سعرات الحفاظ أو أعلى شوية). وجبة واحدة مش هتضيع التقدم، بس يوم كامل أكل عشوائي ممكن يلغي أسبوع عجز. كن واعي، استمتع بالأكل، ومتحسش بذنب.",
+    "tags": ["cheat-meal", "refeed", "diet-break", "mental"]
+  },
+  {
+    "id": "faq-alcohol-fitness",
+    "category": "NUTRITION",
+    "question_en": "How does alcohol affect my fitness goals?",
+    "question_ar": "الكحول بيأثر على أهدافي الرياضية ازاي؟",
+    "answer_en": "Alcohol: 1) Has 7 cal/gram (almost as much as fat). 2) Reduces protein synthesis by 20-37%. 3) Impairs sleep quality. 4) Increases cortisol. 5) Leads to poor food choices. Occasional moderate drinking won't destroy progress, but regular heavy drinking will significantly slow your gains.",
+    "answer_ar": "الكحول: ١) فيه ٧ سعرات/جرام (تقريباً زي الدهون). ٢) بيقلل تخليق البروتين ٢٠-٣٧٪. ٣) بيعطل جودة النوم. ٤) بيزود الكورتيزول. ٥) بيخليك تاخد قرارات أكل سيئة. شرب معتدل أحياناً مش هيدمر التقدم، بس شرب كتير منتظم هيبطء المكاسب بشكل كبير.",
+    "tags": ["alcohol", "gains", "lifestyle"]
+  },
+  {
+    "id": "faq-warm-up",
+    "category": "TRAINING",
+    "question_en": "Do I need to warm up before lifting?",
+    "question_ar": "محتاج أسخن قبل التمرين؟",
+    "answer_en": "YES. Always warm up. 5-10 minutes of light cardio (walking, cycling) to raise body temperature. Then do 2-3 warm-up sets of your first exercise with progressively heavier weight (50%, 70%, 85% of working weight). This prevents injuries and improves performance. Never jump straight into heavy weights.",
+    "answer_ar": "أيوه. دايماً سخن. ٥-١٠ دقائق كارديو خفيف (مشي، عجلة) لرفع حرارة الجسم. بعدين اعمل ٢-٣ مجموعات تسخين لأول تمرين بوزن يزيد تدريجياً (٥٠٪، ٧٠٪، ٨٥٪ من وزن التمرين). ده بيمنع الإصابات وبيحسن الأداء. متقفزش مباشرة على أوزان ثقيلة أبداً.",
+    "tags": ["warm-up", "injury-prevention", "safety"]
+  },
+  {
+    "id": "faq-premium-vs-free",
+    "category": "APP",
+    "question_en": "What's the difference between Premium and Free?",
+    "question_ar": "إيه الفرق بين بريميوم والمجاني؟",
+    "answer_en": "Free: Exercise database, basic food tracking, preset workout plans, community. Premium: AI coach (personalized plans), custom meal plans based on your goals, progress analytics, workout generation, priority support, no ads, InBody analysis integration.",
+    "answer_ar": "مجاني: قاعدة بيانات تمارين، تتبع أكل أساسي، برامج تمرين جاهزة، مجتمع. بريميوم: مدرب ذكاء اصطناعي (خطط شخصية)، خطط أكل مخصصة حسب أهدافك، تحليلات تقدم، توليد تمارين، دعم أولوية، بدون إعلانات، تكامل مع تحليل InBody.",
+    "tags": ["premium", "free", "pricing", "features"]
+  },
+  {
+    "id": "faq-injury-train",
+    "category": "RECOVERY",
+    "question_en": "I'm injured. Should I stop training completely?",
+    "question_ar": "أنا مصاب. أوقف تمرين خالص؟",
+    "answer_en": "Usually no. Unless your doctor says complete rest, you can train around the injury. Hurt shoulder? Train legs, core, other arm. Hurt knee? Train upper body. The key: avoid exercises that cause pain, don't push through joint pain, and see a physiotherapist if the injury persists more than 2 weeks.",
+    "answer_ar": "عادة لا. إلا لو الدكتور قال راحة كاملة، تقدر تتمرن حوالين الإصابة. كتفك بيوجعك؟ مرن رجل وبطن والذراع التانية. ركبتك بتوجعك؟ مرن الجزء العلوي. المفتاح: تجنب التمارين اللي بتسبب ألم، متدفعش في ألم مفاصل، وشوف علاج طبيعي لو الإصابة مستمرة أكتر من أسبوعين.",
+    "tags": ["injury", "training-around", "recovery", "physiotherapy"]
+  }
+]

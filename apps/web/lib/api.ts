@@ -1831,6 +1831,8 @@ interface Food {
   carbs: number;
   fat: number;
   fiber?: number;
+  imageUrl?: string;
+  category?: string;
 }
 
 interface MealLogData {

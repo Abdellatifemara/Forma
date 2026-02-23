@@ -1,0 +1,732 @@
+[
+  {
+    "name_en": "Juhayna Zabado Yogurt (Plain)",
+    "name_ar": "جهينة زبادو (سادة)",
+    "category": "dairy",
+    "serving_size_g": 180,
+    "calories": 100,
+    "protein_g": 5,
+    "carbs_g": 12,
+    "fat_g": 3.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "yogurt",
+      "juhayna",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Juhayna Greek Yogurt (Plain)",
+    "name_ar": "جهينة زبادي يوناني (سادة)",
+    "category": "dairy",
+    "serving_size_g": 200,
+    "calories": 130,
+    "protein_g": 12,
+    "carbs_g": 8,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "yogurt",
+      "greek",
+      "juhayna",
+      "high_protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
+  },
+  {
+    "name_en": "Dina Farms Full Cream Milk (1L)",
+    "name_ar": "دينا فارمز لبن كامل الدسم (1 لتر)",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 160,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "milk",
+      "dina_farms",
+      "full_cream"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Dina Farms Laban Rayeb",
+    "name_ar": "دينا فارمز لبن رايب",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 110,
+    "protein_g": 7,
+    "carbs_g": 10,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "laban",
+      "dina_farms",
+      "probiotics",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Labanita Flavored Yogurt (Strawberry)",
+    "name_ar": "لبنيتا زبادي بالفراولة",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 90,
+    "protein_g": 3,
+    "carbs_g": 15,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "yogurt",
+      "labanita",
+      "flavored",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/strawberries.jpg"
+  },
+  {
+    "name_en": "Domty White Cheese (Gibna Beyda)",
+    "name_ar": "دومتي جبنة بيضاء",
+    "category": "dairy",
+    "serving_size_g": 50,
+    "calories": 130,
+    "protein_g": 8,
+    "carbs_g": 1,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "cheese",
+      "domty",
+      "white_cheese",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/feta-cheese.jpg"
+  },
+  {
+    "name_en": "Domty String Cheese",
+    "name_ar": "دومتي جبنة مشلشلة",
+    "category": "dairy",
+    "serving_size_g": 28,
+    "calories": 80,
+    "protein_g": 7,
+    "carbs_g": 1,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "cheese",
+      "domty",
+      "string",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Domty Istanbuli Cheese",
+    "name_ar": "دومتي جبنة إستانبولي",
+    "category": "dairy",
+    "serving_size_g": 50,
+    "calories": 150,
+    "protein_g": 7,
+    "carbs_g": 2,
+    "fat_g": 13,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "cheese",
+      "domty",
+      "istanbuli",
+      "spicy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Gibna Rumi (Egyptian Aged Cheese)",
+    "name_ar": "جبنة رومي مصري",
+    "category": "dairy",
+    "serving_size_g": 30,
+    "calories": 110,
+    "protein_g": 7,
+    "carbs_g": 1,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "cheese",
+      "rumi",
+      "aged",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Gibna Areesh (Egyptian Cottage Cheese)",
+    "name_ar": "جبنة قريش",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 80,
+    "protein_g": 14,
+    "carbs_g": 2,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "cheese",
+      "areesh",
+      "cottage",
+      "high_protein",
+      "cutting",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
+  },
+  {
+    "name_en": "Panda Cheese Triangles (1 pc)",
+    "name_ar": "باندا مثلثات جبنة (قطعة)",
+    "category": "dairy",
+    "serving_size_g": 17,
+    "calories": 45,
+    "protein_g": 2,
+    "carbs_g": 1.5,
+    "fat_g": 3.5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "cheese",
+      "panda",
+      "triangles",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "President Camembert Cheese",
+    "name_ar": "بريزيدون جبنة كاممبير",
+    "category": "dairy",
+    "serving_size_g": 30,
+    "calories": 85,
+    "protein_g": 5,
+    "carbs_g": 0.5,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dairy",
+      "cheese",
+      "camembert",
+      "french"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Juhayna Butter (Unsalted, 1 tbsp)",
+    "name_ar": "جهينة زبدة (بدون ملح، ملعقة)",
+    "category": "dairy",
+    "serving_size_g": 14,
+    "calories": 100,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "butter",
+      "juhayna",
+      "fat",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Egyptian Ghee (Samna Baladi, 1 tbsp)",
+    "name_ar": "سمنة بلدي (ملعقة)",
+    "category": "dairy",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "ghee",
+      "samna",
+      "traditional",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Beyti Luncheon (Chicken)",
+    "name_ar": "بيتي لانشون فراخ",
+    "category": "processed_meat",
+    "serving_size_g": 50,
+    "calories": 120,
+    "protein_g": 8,
+    "carbs_g": 4,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "processed",
+      "luncheon",
+      "beyti",
+      "chicken",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Beyti Beef Sausage (2 pcs)",
+    "name_ar": "بيتي سجق بقري (قطعتين)",
+    "category": "processed_meat",
+    "serving_size_g": 80,
+    "calories": 210,
+    "protein_g": 10,
+    "carbs_g": 3,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "processed",
+      "sausage",
+      "beyti",
+      "beef"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Beyti Beef Burger Patty (1 pc)",
+    "name_ar": "بيتي قرص برجر بقري (واحد)",
+    "category": "processed_meat",
+    "serving_size_g": 100,
+    "calories": 240,
+    "protein_g": 16,
+    "carbs_g": 6,
+    "fat_g": 17,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "processed",
+      "burger",
+      "beyti",
+      "beef"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Al-Shark Halawa Tahinia (30g)",
+    "name_ar": "الشرق حلاوة طحينية (30 جرام)",
+    "category": "snack",
+    "serving_size_g": 30,
+    "calories": 145,
+    "protein_g": 3,
+    "carbs_g": 18,
+    "fat_g": 7,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "halawa",
+      "tahini",
+      "traditional",
+      "bulking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Al-Shark Tahini (1 tbsp)",
+    "name_ar": "الشرق طحينة (ملعقة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 90,
+    "protein_g": 3,
+    "carbs_g": 3,
+    "fat_g": 8,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "tahini",
+      "sesame",
+      "healthy_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Egyptian Baladi Bread (1 loaf)",
+    "name_ar": "عيش بلدي (رغيف)",
+    "category": "bread",
+    "serving_size_g": 100,
+    "calories": 260,
+    "protein_g": 8,
+    "carbs_g": 52,
+    "fat_g": 1.5,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "bread",
+      "baladi",
+      "staple",
+      "carbs",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pita-bread.jpg"
+  },
+  {
+    "name_en": "Egyptian Fino Bread (1 roll)",
+    "name_ar": "عيش فينو (واحد)",
+    "category": "bread",
+    "serving_size_g": 60,
+    "calories": 170,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 2,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "bread",
+      "fino",
+      "sandwich_bread",
+      "white"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Toast Bread (2 slices)",
+    "name_ar": "خبز توست (شريحتين)",
+    "category": "bread",
+    "serving_size_g": 60,
+    "calories": 160,
+    "protein_g": 5,
+    "carbs_g": 30,
+    "fat_g": 2,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "bread",
+      "toast",
+      "sandwich",
+      "carbs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Chipsy Cheese Chips (50g bag)",
+    "name_ar": "شيبسي بالجبنة (كيس 50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 260,
+    "protein_g": 3,
+    "carbs_g": 26,
+    "fat_g": 16,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "chips",
+      "chipsy",
+      "junk_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Tiger Cheese Puffs (50g bag)",
+    "name_ar": "تايجر باف بالجبنة (كيس 50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 250,
+    "protein_g": 3,
+    "carbs_g": 28,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "puffs",
+      "tiger",
+      "kids",
+      "junk_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Borio Chocolate Cookies (6 pcs)",
+    "name_ar": "بوريو بسكويت شوكولاتة (6 قطع)",
+    "category": "snack",
+    "serving_size_g": 66,
+    "calories": 310,
+    "protein_g": 3,
+    "carbs_g": 44,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "biscuit",
+      "borio",
+      "chocolate",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Very Coco Wafer (1 bar)",
+    "name_ar": "فيري كوكو ويفر (بار)",
+    "category": "snack",
+    "serving_size_g": 22,
+    "calories": 110,
+    "protein_g": 1,
+    "carbs_g": 14,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "wafer",
+      "coconut",
+      "chocolate"
+    ]
+  },
+  {
+    "name_en": "Molto Croissant (Chocolate)",
+    "name_ar": "مولتو كرواسون (شوكولاتة)",
+    "category": "snack",
+    "serving_size_g": 55,
+    "calories": 210,
+    "protein_g": 3,
+    "carbs_g": 28,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "croissant",
+      "molto",
+      "breakfast",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Hero Jam (Strawberry, 1 tbsp)",
+    "name_ar": "هيرو مربى (فراولة، ملعقة)",
+    "category": "condiment",
+    "serving_size_g": 20,
+    "calories": 50,
+    "protein_g": 0,
+    "carbs_g": 13,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "jam",
+      "hero",
+      "breakfast",
+      "sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/strawberries.jpg"
+  },
+  {
+    "name_en": "Egyptian Black Honey (Asal Aswad, 1 tbsp)",
+    "name_ar": "عسل أسود (ملعقة)",
+    "category": "condiment",
+    "serving_size_g": 20,
+    "calories": 55,
+    "protein_g": 0,
+    "carbs_g": 14,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "honey",
+      "molasses",
+      "iron",
+      "traditional",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Faragello Orange Juice (250ml)",
+    "name_ar": "فرجللو عصير برتقال (250 مل)",
+    "category": "beverage",
+    "serving_size_g": 250,
+    "calories": 110,
+    "protein_g": 1,
+    "carbs_g": 26,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "juice",
+      "faragello",
+      "orange"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Juhayna Apple Juice (250ml)",
+    "name_ar": "جهينة عصير تفاح (250 مل)",
+    "category": "beverage",
+    "serving_size_g": 250,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 30,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "juice",
+      "juhayna",
+      "apple"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apple.jpg"
+  },
+  {
+    "name_en": "Birell Non-Alcoholic Malt Beverage",
+    "name_ar": "بيريل مشروب شعير",
+    "category": "beverage",
+    "serving_size_g": 330,
+    "calories": 120,
+    "protein_g": 1,
+    "carbs_g": 28,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "malt",
+      "birell",
+      "non_alcoholic"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/malt-syrup.jpg"
+  },
+  {
+    "name_en": "Egyptian Rice (White, cooked, 200g)",
+    "name_ar": "أرز مصري أبيض (مطبوخ، 200 جرام)",
+    "category": "grain",
+    "serving_size_g": 200,
+    "calories": 260,
+    "protein_g": 5,
+    "carbs_g": 56,
+    "fat_g": 0.5,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "grain",
+      "rice",
+      "staple",
+      "carbs",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Egyptian Macaroni (Cooked, 200g)",
+    "name_ar": "مكرونة مصرية (مطبوخة، 200 جرام)",
+    "category": "grain",
+    "serving_size_g": 200,
+    "calories": 280,
+    "protein_g": 8,
+    "carbs_g": 52,
+    "fat_g": 4,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "grain",
+      "pasta",
+      "macaroni",
+      "staple",
+      "carbs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "Indomie Noodles (1 pack)",
+    "name_ar": "إندومي نودلز (كيس واحد)",
+    "category": "instant_food",
+    "serving_size_g": 75,
+    "calories": 350,
+    "protein_g": 7,
+    "carbs_g": 48,
+    "fat_g": 14,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "instant",
+      "noodles",
+      "indomie",
+      "quick",
+      "junk_food"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/noodles.jpg"
+  },
+  {
+    "name_en": "Kiri Cream Cheese (1 portion)",
+    "name_ar": "كيري جبنة كريمي (قطعة)",
+    "category": "dairy",
+    "serving_size_g": 20,
+    "calories": 55,
+    "protein_g": 1.5,
+    "carbs_g": 1,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dairy",
+      "cheese",
+      "kiri",
+      "cream_cheese",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cream-cheese.jpg"
+  },
+  {
+    "name_en": "Egyptian Eggs (2 boiled)",
+    "name_ar": "بيض مصري (2 مسلوق)",
+    "category": "protein",
+    "serving_size_g": 100,
+    "calories": 155,
+    "protein_g": 13,
+    "carbs_g": 1,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "protein",
+      "eggs",
+      "boiled",
+      "staple",
+      "budget",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  }
+]

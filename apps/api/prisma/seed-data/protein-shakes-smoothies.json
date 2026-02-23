@@ -1,0 +1,733 @@
+[
+  {
+    "name_en": "Classic Whey Protein Shake (Water)",
+    "name_ar": "شيك واي بروتين كلاسيك (ماء)",
+    "category": "shake",
+    "serving_size_g": 280,
+    "calories": 120,
+    "protein_g": 24,
+    "carbs_g": 3,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "shake",
+      "whey",
+      "protein",
+      "post_workout",
+      "cutting",
+      "quick"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Whey Protein Shake (Milk)",
+    "name_ar": "شيك واي بروتين (لبن)",
+    "category": "shake",
+    "serving_size_g": 330,
+    "calories": 270,
+    "protein_g": 32,
+    "carbs_g": 15,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "shake",
+      "whey",
+      "protein",
+      "post_workout",
+      "bulking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Mass Gainer Shake (Serious Mass Style)",
+    "name_ar": "شيك ماس جينر (زي سيريوس ماس)",
+    "category": "shake",
+    "serving_size_g": 500,
+    "calories": 630,
+    "protein_g": 50,
+    "carbs_g": 85,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "shake",
+      "mass_gainer",
+      "bulking",
+      "hardgainer",
+      "high_calorie"
+    ]
+  },
+  {
+    "name_en": "Banana Peanut Butter Protein Shake",
+    "name_ar": "شيك بروتين موز وزبدة فول سوداني",
+    "category": "shake",
+    "serving_size_g": 400,
+    "calories": 420,
+    "protein_g": 35,
+    "carbs_g": 40,
+    "fat_g": 14,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "shake",
+      "protein",
+      "banana",
+      "peanut_butter",
+      "bulking",
+      "post_workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
+  },
+  {
+    "name_en": "Oats & Whey Breakfast Shake",
+    "name_ar": "شيك شوفان وواي للفطار",
+    "category": "shake",
+    "serving_size_g": 400,
+    "calories": 380,
+    "protein_g": 30,
+    "carbs_g": 45,
+    "fat_g": 8,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "shake",
+      "oats",
+      "whey",
+      "breakfast",
+      "meal_replacement"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oats.jpg"
+  },
+  {
+    "name_en": "Chocolate Protein Shake (Milk + Cocoa)",
+    "name_ar": "شيك بروتين شوكولاتة (لبن + كاكاو)",
+    "category": "shake",
+    "serving_size_g": 350,
+    "calories": 300,
+    "protein_g": 33,
+    "carbs_g": 20,
+    "fat_g": 9,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "shake",
+      "chocolate",
+      "protein",
+      "post_workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Casein Shake Before Bed",
+    "name_ar": "شيك كازين قبل النوم",
+    "category": "shake",
+    "serving_size_g": 300,
+    "calories": 130,
+    "protein_g": 25,
+    "carbs_g": 4,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "shake",
+      "casein",
+      "protein",
+      "night",
+      "slow_release",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Date & Milk Shake (Egyptian Bulking)",
+    "name_ar": "شيك تمر ولبن (تضخيم مصري)",
+    "category": "shake",
+    "serving_size_g": 350,
+    "calories": 350,
+    "protein_g": 12,
+    "carbs_g": 65,
+    "fat_g": 5,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "shake",
+      "dates",
+      "milk",
+      "bulking",
+      "traditional",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Sahlab Protein Shake (Egyptian Winter)",
+    "name_ar": "شيك سحلب بروتين (شتاء مصري)",
+    "category": "shake",
+    "serving_size_g": 300,
+    "calories": 280,
+    "protein_g": 28,
+    "carbs_g": 30,
+    "fat_g": 6,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "shake",
+      "sahlab",
+      "protein",
+      "winter",
+      "egyptian",
+      "bulking"
+    ]
+  },
+  {
+    "name_en": "Mango Protein Smoothie",
+    "name_ar": "سموذي مانجو بروتين",
+    "category": "smoothie",
+    "serving_size_g": 350,
+    "calories": 280,
+    "protein_g": 26,
+    "carbs_g": 38,
+    "fat_g": 2,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "smoothie",
+      "mango",
+      "protein",
+      "summer",
+      "post_workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Green Detox Smoothie (Spinach + Apple)",
+    "name_ar": "سموذي ديتوكس أخضر (سبانخ + تفاح)",
+    "category": "smoothie",
+    "serving_size_g": 350,
+    "calories": 150,
+    "protein_g": 5,
+    "carbs_g": 30,
+    "fat_g": 1,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "green",
+      "detox",
+      "low_calorie",
+      "cutting",
+      "vitamins"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Berry Blast Smoothie",
+    "name_ar": "سموذي بيري بلاست",
+    "category": "smoothie",
+    "serving_size_g": 300,
+    "calories": 180,
+    "protein_g": 3,
+    "carbs_g": 40,
+    "fat_g": 1,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "berry",
+      "antioxidant",
+      "vitamin_c",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Avocado Protein Smoothie",
+    "name_ar": "سموذي أفوكادو بروتين",
+    "category": "smoothie",
+    "serving_size_g": 400,
+    "calories": 420,
+    "protein_g": 28,
+    "carbs_g": 25,
+    "fat_g": 22,
+    "fiber_g": 10,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "avocado",
+      "protein",
+      "healthy_fat",
+      "bulking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Guava & Yogurt Smoothie",
+    "name_ar": "سموذي جوافة وزبادي",
+    "category": "smoothie",
+    "serving_size_g": 300,
+    "calories": 180,
+    "protein_g": 8,
+    "carbs_g": 32,
+    "fat_g": 3,
+    "fiber_g": 7,
+    "is_egyptian": true,
+    "tags": [
+      "smoothie",
+      "guava",
+      "yogurt",
+      "vitamin_c",
+      "immune",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Strawberry Banana Smoothie",
+    "name_ar": "سموذي فراولة وموز",
+    "category": "smoothie",
+    "serving_size_g": 300,
+    "calories": 200,
+    "protein_g": 4,
+    "carbs_g": 45,
+    "fat_g": 1,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "strawberry",
+      "banana",
+      "pre_workout",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/strawberries.jpg"
+  },
+  {
+    "name_en": "Peanut Butter Banana Muscle Shake",
+    "name_ar": "شيك عضلات زبدة فول سوداني وموز",
+    "category": "shake",
+    "serving_size_g": 450,
+    "calories": 550,
+    "protein_g": 40,
+    "carbs_g": 55,
+    "fat_g": 18,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "shake",
+      "peanut_butter",
+      "banana",
+      "bulking",
+      "post_workout",
+      "hardgainer"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
+  },
+  {
+    "name_en": "Asab (Sugarcane) Juice — Fresh (1 cup)",
+    "name_ar": "عصير قصب طازج (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 180,
+    "protein_g": 0,
+    "carbs_g": 45,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "sugarcane",
+      "egyptian",
+      "street",
+      "energy",
+      "carbs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Fresh Orange Juice (1 cup)",
+    "name_ar": "عصير برتقال طازج (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 112,
+    "protein_g": 2,
+    "carbs_g": 26,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "orange",
+      "vitamin_c",
+      "immune",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Fresh Mango Juice (1 cup)",
+    "name_ar": "عصير مانجو طازج (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 150,
+    "protein_g": 1,
+    "carbs_g": 38,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "mango",
+      "summer",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mango.jpg"
+  },
+  {
+    "name_en": "Fresh Strawberry Juice (1 cup)",
+    "name_ar": "عصير فراولة طازج (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 100,
+    "protein_g": 1,
+    "carbs_g": 24,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "strawberry",
+      "vitamin_c",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/strawberries.jpg"
+  },
+  {
+    "name_en": "Tamarind Juice (Tamr Hindi, 1 cup)",
+    "name_ar": "عصير تمر هندي (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 140,
+    "protein_g": 0,
+    "carbs_g": 35,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "tamarind",
+      "ramadan",
+      "egyptian",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Karkade (Hibiscus) Juice — Cold (1 cup)",
+    "name_ar": "عصير كركديه بارد (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 80,
+    "protein_g": 0,
+    "carbs_g": 20,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "karkade",
+      "hibiscus",
+      "ramadan",
+      "egyptian",
+      "blood_pressure"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Sobya (Coconut Milk Drink, 1 cup)",
+    "name_ar": "سوبيا (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 200,
+    "protein_g": 2,
+    "carbs_g": 40,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "sobya",
+      "ramadan",
+      "egyptian",
+      "traditional",
+      "coconut"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Qamar El-Din (Apricot Drink, 1 cup)",
+    "name_ar": "قمر الدين (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 160,
+    "protein_g": 1,
+    "carbs_g": 40,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "qamar_el_din",
+      "apricot",
+      "ramadan",
+      "egyptian",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apricots.jpg"
+  },
+  {
+    "name_en": "Licorice Root Drink (Erq Sous, 1 cup)",
+    "name_ar": "عرق سوس (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 50,
+    "protein_g": 0,
+    "carbs_g": 12,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "licorice",
+      "erq_sous",
+      "ramadan",
+      "egyptian",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Lemon Mint Juice (1 cup)",
+    "name_ar": "عصير ليمون بالنعناع (كوب)",
+    "category": "juice",
+    "serving_size_g": 250,
+    "calories": 90,
+    "protein_g": 0,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "juice",
+      "lemon",
+      "mint",
+      "refreshing",
+      "summer",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  },
+  {
+    "name_en": "Black Coffee (No Sugar)",
+    "name_ar": "قهوة سادة (بدون سكر)",
+    "category": "beverage",
+    "serving_size_g": 240,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "beverage",
+      "coffee",
+      "zero_calorie",
+      "pre_workout",
+      "caffeine"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Turkish Coffee (Ahwa Sada, no sugar)",
+    "name_ar": "قهوة تركي سادة",
+    "category": "beverage",
+    "serving_size_g": 80,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "coffee",
+      "turkish",
+      "egyptian",
+      "zero_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Turkish Coffee (Ahwa Mazbouta, medium sugar)",
+    "name_ar": "قهوة تركي مظبوطة",
+    "category": "beverage",
+    "serving_size_g": 80,
+    "calories": 25,
+    "protein_g": 0,
+    "carbs_g": 6,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "coffee",
+      "turkish",
+      "egyptian",
+      "sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Nescafe with Milk (1 cup)",
+    "name_ar": "نسكافيه بلبن (كوب)",
+    "category": "beverage",
+    "serving_size_g": 250,
+    "calories": 80,
+    "protein_g": 3,
+    "carbs_g": 10,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "nescafe",
+      "coffee",
+      "milk",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Egyptian Tea (Shai, with sugar, 1 cup)",
+    "name_ar": "شاي مصري (بسكر، كوب)",
+    "category": "beverage",
+    "serving_size_g": 200,
+    "calories": 30,
+    "protein_g": 0,
+    "carbs_g": 8,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "tea",
+      "egyptian",
+      "sugar",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Egyptian Tea (Shai Sada, no sugar)",
+    "name_ar": "شاي سادة (بدون سكر)",
+    "category": "beverage",
+    "serving_size_g": 200,
+    "calories": 2,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "tea",
+      "egyptian",
+      "zero_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Yansoun (Anise Tea, 1 cup)",
+    "name_ar": "ينسون (كوب)",
+    "category": "beverage",
+    "serving_size_g": 240,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "anise",
+      "yansoun",
+      "digestion",
+      "egyptian",
+      "winter"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Caraway Tea (Karawya, 1 cup)",
+    "name_ar": "كراوية (كوب)",
+    "category": "beverage",
+    "serving_size_g": 240,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "caraway",
+      "digestion",
+      "egyptian",
+      "winter"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Chamomile Tea (Babounej, 1 cup)",
+    "name_ar": "بابونج (كوب)",
+    "category": "beverage",
+    "serving_size_g": 240,
+    "calories": 2,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "chamomile",
+      "relaxation",
+      "sleep",
+      "zero_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tea-bags.jpg"
+  },
+  {
+    "name_en": "Ginger Tea (Zangabeel, 1 cup)",
+    "name_ar": "زنجبيل (كوب)",
+    "category": "beverage",
+    "serving_size_g": 240,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "ginger",
+      "digestion",
+      "immune",
+      "anti_inflammatory"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ginger.jpg"
+  }
+]

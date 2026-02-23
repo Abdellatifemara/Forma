@@ -1,0 +1,394 @@
+[
+  {
+    "name_en": "Olive Oil (1 tablespoon)",
+    "name_ar": "زيت زيتون (معلقة كبيرة)",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "oil",
+      "olive_oil",
+      "healthy_fat",
+      "cooking",
+      "monounsaturated"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/olive-oil.jpg"
+  },
+  {
+    "name_en": "Coconut Oil (1 tablespoon)",
+    "name_ar": "زيت جوز هند (معلقة كبيرة)",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "oil",
+      "coconut_oil",
+      "mct",
+      "cooking",
+      "keto"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut-oil.jpg"
+  },
+  {
+    "name_en": "Sunflower Oil (1 tablespoon)",
+    "name_ar": "زيت عباد الشمس (معلقة كبيرة)",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "oil",
+      "sunflower_oil",
+      "cooking",
+      "frying",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vegetable-oil.jpg"
+  },
+  {
+    "name_en": "Tahini (1 tablespoon)",
+    "name_ar": "طحينة (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 90,
+    "protein_g": 3,
+    "carbs_g": 3,
+    "fat_g": 8,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "tahini",
+      "sesame",
+      "healthy_fat",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Honey (1 tablespoon)",
+    "name_ar": "عسل (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 21,
+    "calories": 64,
+    "protein_g": 0,
+    "carbs_g": 17,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "honey",
+      "natural_sugar",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Black Molasses / Asal Aswad (1 tablespoon)",
+    "name_ar": "عسل أسود (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 20,
+    "calories": 58,
+    "protein_g": 0,
+    "carbs_g": 15,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "molasses",
+      "iron",
+      "calcium",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/molasses.jpg"
+  },
+  {
+    "name_en": "Halawa Tahinia (1 tablespoon / 20g)",
+    "name_ar": "حلاوة طحينية (معلقة كبيرة / 20 جرام)",
+    "category": "condiment",
+    "serving_size_g": 20,
+    "calories": 100,
+    "protein_g": 2,
+    "carbs_g": 10,
+    "fat_g": 6,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "halawa",
+      "tahini",
+      "sweet",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Ketchup (1 tablespoon)",
+    "name_ar": "كاتشب (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "ketchup",
+      "sauce",
+      "low_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ketchup.jpg"
+  },
+  {
+    "name_en": "Mustard (1 tablespoon)",
+    "name_ar": "مستردة (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 10,
+    "protein_g": 1,
+    "carbs_g": 1,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "mustard",
+      "low_calorie",
+      "zero"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mustard.jpg"
+  },
+  {
+    "name_en": "Hot Sauce / Shatta (1 tablespoon)",
+    "name_ar": "شطة (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "shatta",
+      "hot_sauce",
+      "zero_calorie",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hot-sauce.jpg"
+  },
+  {
+    "name_en": "Mayonnaise (1 tablespoon)",
+    "name_ar": "مايونيز (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 14,
+    "calories": 100,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "mayonnaise",
+      "fat",
+      "sauce"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mayonnaise.jpg"
+  },
+  {
+    "name_en": "Light Mayonnaise (1 tablespoon)",
+    "name_ar": "مايونيز لايت (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 14,
+    "calories": 35,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "light_mayo",
+      "low_fat",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mayonnaise.jpg"
+  },
+  {
+    "name_en": "Soy Sauce (1 tablespoon)",
+    "name_ar": "صويا صوص (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 10,
+    "protein_g": 1,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "soy_sauce",
+      "umami",
+      "zero_calorie",
+      "asian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/soy-sauce.jpg"
+  },
+  {
+    "name_en": "Vinegar (1 tablespoon)",
+    "name_ar": "خل (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 3,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "vinegar",
+      "zero_calorie",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  },
+  {
+    "name_en": "Apple Cider Vinegar (1 tablespoon)",
+    "name_ar": "خل تفاح (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 3,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "apple_cider_vinegar",
+      "health",
+      "digestion"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  },
+  {
+    "name_en": "Dukkah Spice Mix (1 tablespoon)",
+    "name_ar": "دقة (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 10,
+    "calories": 50,
+    "protein_g": 2,
+    "carbs_g": 2,
+    "fat_g": 4,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "dukkah",
+      "spice",
+      "egyptian",
+      "traditional"
+    ]
+  },
+  {
+    "name_en": "Cumin Powder (1 teaspoon)",
+    "name_ar": "كمون (معلقة صغيرة)",
+    "category": "condiment",
+    "serving_size_g": 3,
+    "calories": 8,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "cumin",
+      "spice",
+      "digestion",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cumin.jpg"
+  },
+  {
+    "name_en": "Sugar (White, 1 teaspoon)",
+    "name_ar": "سكر أبيض (معلقة صغيرة)",
+    "category": "condiment",
+    "serving_size_g": 4,
+    "calories": 16,
+    "protein_g": 0,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "sugar",
+      "sweetener"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Salt (1 teaspoon)",
+    "name_ar": "ملح (معلقة صغيرة)",
+    "category": "condiment",
+    "serving_size_g": 6,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "salt",
+      "sodium",
+      "electrolyte"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salt.jpg"
+  },
+  {
+    "name_en": "Lemon Juice (1 tablespoon)",
+    "name_ar": "عصير ليمون (معلقة كبيرة)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 4,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "lemon",
+      "vitamin_c",
+      "zero_calorie",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  }
+]

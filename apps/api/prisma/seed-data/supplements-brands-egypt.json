@@ -1,0 +1,588 @@
+[
+  {
+    "name_en": "Optimum Nutrition Gold Standard Whey (1 scoop)",
+    "name_ar": "أوبتيموم نيوتريشن جولد ستاندرد واي سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 31,
+    "calories": 120,
+    "protein_g": 24,
+    "carbs_g": 3,
+    "fat_g": 1.5,
+    "fiber_g": 0,
+    "sugar_g": 1,
+    "is_egyptian": false,
+    "brand_en": "Optimum Nutrition",
+    "brand_ar": "أوبتيموم نيوتريشن",
+    "tags": [
+      "whey",
+      "protein",
+      "gym",
+      "ON"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Optimum Nutrition Serious Mass (1 scoop)",
+    "name_ar": "أوبتيموم نيوتريشن سيريوس ماس سكوب",
+    "category": "CARBS",
+    "serving_size_g": 167,
+    "calories": 630,
+    "protein_g": 25,
+    "carbs_g": 120,
+    "fat_g": 4,
+    "fiber_g": 3,
+    "sugar_g": 20,
+    "is_egyptian": false,
+    "brand_en": "Optimum Nutrition",
+    "brand_ar": "أوبتيموم نيوتريشن",
+    "tags": [
+      "mass-gainer",
+      "bulking",
+      "calories",
+      "ON"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "MuscleTech Nitro-Tech Whey (1 scoop)",
+    "name_ar": "مصل تك نيترو تك واي سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 46,
+    "calories": 160,
+    "protein_g": 30,
+    "carbs_g": 4,
+    "fat_g": 2.5,
+    "fiber_g": 0,
+    "sugar_g": 2,
+    "is_egyptian": false,
+    "brand_en": "MuscleTech",
+    "brand_ar": "مصل تك",
+    "tags": [
+      "whey",
+      "protein",
+      "gym",
+      "isolate"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Dymatize ISO100 (1 scoop)",
+    "name_ar": "ديماتيز أيزو ١٠٠ سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 32,
+    "calories": 120,
+    "protein_g": 25,
+    "carbs_g": 2,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "sugar_g": 1,
+    "is_egyptian": false,
+    "brand_en": "Dymatize",
+    "brand_ar": "ديماتيز",
+    "tags": [
+      "whey-isolate",
+      "protein",
+      "gym",
+      "low-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Dymatize Elite Casein (1 scoop)",
+    "name_ar": "ديماتيز إيليت كازين سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 36,
+    "calories": 130,
+    "protein_g": 25,
+    "carbs_g": 4,
+    "fat_g": 1.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "brand_en": "Dymatize",
+    "brand_ar": "ديماتيز",
+    "tags": [
+      "casein",
+      "protein",
+      "slow-release",
+      "night"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "BSN Syntha-6 (1 scoop)",
+    "name_ar": "بي إس إن سينثا ٦ سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 47,
+    "calories": 200,
+    "protein_g": 22,
+    "carbs_g": 15,
+    "fat_g": 6,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "brand_en": "BSN",
+    "brand_ar": "بي إس إن",
+    "tags": [
+      "protein-blend",
+      "tasty",
+      "gym"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Kevin Levrone Gold Whey (1 scoop)",
+    "name_ar": "كيفن ليفرون جولد واي سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 30,
+    "calories": 115,
+    "protein_g": 24,
+    "carbs_g": 2,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "brand_en": "Kevin Levrone",
+    "brand_ar": "كيفن ليفرون",
+    "tags": [
+      "whey",
+      "protein",
+      "popular-egypt"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Rule 1 Whey Isolate (1 scoop)",
+    "name_ar": "رول وان واي أيزوليت سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 33,
+    "calories": 120,
+    "protein_g": 25,
+    "carbs_g": 2,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "brand_en": "Rule 1",
+    "brand_ar": "رول وان",
+    "tags": [
+      "whey-isolate",
+      "protein",
+      "clean"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Cellucor C4 Pre-Workout (1 scoop)",
+    "name_ar": "سيلوكور سي فور بري وورك أوت سكوب",
+    "category": "OTHER",
+    "serving_size_g": 6,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "caffeine_mg": 150,
+    "is_egyptian": false,
+    "brand_en": "Cellucor",
+    "brand_ar": "سيلوكور",
+    "tags": [
+      "pre-workout",
+      "energy",
+      "caffeine",
+      "pump"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Optimum Nutrition Gold Standard Pre-Workout (1 scoop)",
+    "name_ar": "أوبتيموم نيوتريشن بري وورك أوت سكوب",
+    "category": "OTHER",
+    "serving_size_g": 10,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "caffeine_mg": 175,
+    "is_egyptian": false,
+    "brand_en": "Optimum Nutrition",
+    "brand_ar": "أوبتيموم نيوتريشن",
+    "tags": [
+      "pre-workout",
+      "energy",
+      "ON"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Creatine Monohydrate (5g, 1 scoop)",
+    "name_ar": "كرياتين مونوهيدرات ٥ جرام سكوب",
+    "category": "OTHER",
+    "serving_size_g": 5,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "creatine",
+      "supplement",
+      "strength",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "BCAA Powder (1 scoop)",
+    "name_ar": "بي سي أي أي باودر سكوب",
+    "category": "OTHER",
+    "serving_size_g": 7,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "bcaa",
+      "amino-acids",
+      "recovery",
+      "intra-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "L-Glutamine Powder (1 scoop, 5g)",
+    "name_ar": "إل-جلوتامين باودر سكوب",
+    "category": "OTHER",
+    "serving_size_g": 5,
+    "calories": 20,
+    "protein_g": 5,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "glutamine",
+      "recovery",
+      "gut-health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Fish Oil Omega-3 (2 softgels)",
+    "name_ar": "زيت سمك أوميجا ٣ كبسولتين",
+    "category": "FATS",
+    "serving_size_g": 2,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "fish-oil",
+      "omega-3",
+      "heart",
+      "joints"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-oil.jpg"
+  },
+  {
+    "name_en": "Multivitamin Daily (1 tablet)",
+    "name_ar": "ملتي فيتامين يومي حبة",
+    "category": "OTHER",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "vitamin",
+      "supplement",
+      "daily",
+      "health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Vitamin D3 5000 IU (1 capsule)",
+    "name_ar": "فيتامين دي ٣ ٥٠٠٠ وحدة كبسولة",
+    "category": "OTHER",
+    "serving_size_g": 0.5,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "vitamin-d",
+      "supplement",
+      "bone-health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Zinc 50mg (1 tablet)",
+    "name_ar": "زنك ٥٠ مجم حبة",
+    "category": "OTHER",
+    "serving_size_g": 0.5,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "zinc",
+      "supplement",
+      "immune",
+      "testosterone"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Magnesium 400mg (1 capsule)",
+    "name_ar": "ماغنيسيوم ٤٠٠ مجم كبسولة",
+    "category": "OTHER",
+    "serving_size_g": 0.5,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "magnesium",
+      "supplement",
+      "sleep",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Vitamin C 1000mg (1 tablet)",
+    "name_ar": "فيتامين سي ١٠٠٠ مجم حبة",
+    "category": "OTHER",
+    "serving_size_g": 1,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "vitamin-c",
+      "supplement",
+      "immune"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Iron Supplement (1 tablet, 65mg)",
+    "name_ar": "حبوب حديد ٦٥ مجم حبة",
+    "category": "OTHER",
+    "serving_size_g": 0.5,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "iron_mg": 65,
+    "is_egyptian": false,
+    "tags": [
+      "iron",
+      "supplement",
+      "anemia"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "CLA (Conjugated Linoleic Acid, 2 softgels)",
+    "name_ar": "سي إل أي ٢ كبسولة",
+    "category": "FATS",
+    "serving_size_g": 2,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cla",
+      "fat-burner",
+      "supplement"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-oil.jpg"
+  },
+  {
+    "name_en": "L-Carnitine Liquid (1 tbsp)",
+    "name_ar": "إل كارنيتين سائل ملعقة",
+    "category": "OTHER",
+    "serving_size_g": 15,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "l-carnitine",
+      "fat-burner",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Collagen Peptides (1 scoop, 10g)",
+    "name_ar": "كولاجين بيبتايدز سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 10,
+    "calories": 35,
+    "protein_g": 9,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "collagen",
+      "joints",
+      "skin",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Psyllium Husk Fiber (1 tbsp)",
+    "name_ar": "قشور سيليوم ألياف ملعقة",
+    "category": "OTHER",
+    "serving_size_g": 7,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 6,
+    "fat_g": 0,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "fiber",
+      "digestive",
+      "supplement"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Spirulina Powder (1 tsp)",
+    "name_ar": "سبيرولينا باودر ملعقة صغيرة",
+    "category": "OTHER",
+    "serving_size_g": 3,
+    "calories": 10,
+    "protein_g": 2,
+    "carbs_g": 0.5,
+    "fat_g": 0.2,
+    "fiber_g": 0,
+    "iron_mg": 2,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "algae",
+      "iron",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Ashwagandha (1 capsule, 600mg)",
+    "name_ar": "أشواجاندا كبسولة",
+    "category": "OTHER",
+    "serving_size_g": 0.6,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "ashwagandha",
+      "adaptogen",
+      "stress",
+      "testosterone"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Electrolyte Powder (1 sachet)",
+    "name_ar": "إلكتروليت باودر كيس",
+    "category": "OTHER",
+    "serving_size_g": 5,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sodium_mg": 500,
+    "potassium_mg": 200,
+    "is_egyptian": false,
+    "tags": [
+      "electrolytes",
+      "hydration",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "EAA (Essential Amino Acids, 1 scoop)",
+    "name_ar": "إي أي أي أحماض أمينية سكوب",
+    "category": "OTHER",
+    "serving_size_g": 10,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "eaa",
+      "amino-acids",
+      "muscle-building"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Beta-Alanine (1 scoop, 3.2g)",
+    "name_ar": "بيتا ألانين سكوب",
+    "category": "OTHER",
+    "serving_size_g": 3.2,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "beta-alanine",
+      "endurance",
+      "pre-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Citrulline Malate (1 scoop, 6g)",
+    "name_ar": "سيترولين ماليت سكوب",
+    "category": "OTHER",
+    "serving_size_g": 6,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "citrulline",
+      "pump",
+      "pre-workout",
+      "nitric-oxide"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  }
+]

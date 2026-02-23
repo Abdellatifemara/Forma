@@ -1,0 +1,854 @@
+[
+  {
+    "name_en": "Croissant Plain (1 piece)",
+    "name_ar": "كرواسون سادة",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 230,
+    "protein_g": 4,
+    "carbs_g": 26,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "bakery",
+      "pastry",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/croissants.jpg"
+  },
+  {
+    "name_en": "Croissant Chocolate (1 piece)",
+    "name_ar": "كرواسون شوكولاتة",
+    "category": "CARBS",
+    "serving_size_g": 80,
+    "calories": 320,
+    "protein_g": 5,
+    "carbs_g": 36,
+    "fat_g": 18,
+    "fiber_g": 1.5,
+    "sugar_g": 14,
+    "is_egyptian": false,
+    "tags": [
+      "bakery",
+      "pastry",
+      "chocolate"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Croissant Zaatar (1 piece)",
+    "name_ar": "كرواسون زعتر",
+    "category": "CARBS",
+    "serving_size_g": 70,
+    "calories": 260,
+    "protein_g": 5,
+    "carbs_g": 28,
+    "fat_g": 14,
+    "fiber_g": 1.5,
+    "is_egyptian": false,
+    "tags": [
+      "bakery",
+      "pastry",
+      "zaatar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/croissants.jpg"
+  },
+  {
+    "name_en": "Pain au Chocolat (1 piece)",
+    "name_ar": "بان أو شوكولا",
+    "category": "CARBS",
+    "serving_size_g": 75,
+    "calories": 290,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 16,
+    "fiber_g": 1.5,
+    "sugar_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "bakery",
+      "french",
+      "chocolate"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cola.jpg"
+  },
+  {
+    "name_en": "Danish Pastry (1 piece)",
+    "name_ar": "دانش",
+    "category": "CARBS",
+    "serving_size_g": 70,
+    "calories": 280,
+    "protein_g": 4,
+    "carbs_g": 30,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "sugar_g": 10,
+    "is_egyptian": false,
+    "tags": [
+      "bakery",
+      "pastry",
+      "sweet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/danish-pastry.jpg"
+  },
+  {
+    "name_en": "Petit Four (5 pieces)",
+    "name_ar": "بتي فور ٥ حبات",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 280,
+    "protein_g": 3,
+    "carbs_g": 30,
+    "fat_g": 16,
+    "fiber_g": 0.5,
+    "sugar_g": 14,
+    "is_egyptian": true,
+    "tags": [
+      "cookies",
+      "eid",
+      "egyptian",
+      "bakery"
+    ]
+  },
+  {
+    "name_en": "Ghurayyba (Butter Cookies, 3 pieces)",
+    "name_ar": "غريبة ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 45,
+    "calories": 210,
+    "protein_g": 2,
+    "carbs_g": 24,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "sugar_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "cookies",
+      "eid",
+      "butter",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Kahk El Eid (2 pieces)",
+    "name_ar": "كعك العيد ٢ حبة",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 280,
+    "protein_g": 3,
+    "carbs_g": 30,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "sugar_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "cookies",
+      "eid",
+      "traditional",
+      "celebrations"
+    ]
+  },
+  {
+    "name_en": "Biscuit Sha'er (Barley Cookies, 3 pieces)",
+    "name_ar": "بسكويت شعير ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 45,
+    "calories": 190,
+    "protein_g": 3,
+    "carbs_g": 26,
+    "fat_g": 8,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "cookies",
+      "barley",
+      "healthy-option"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Rusk / Baqsomaat (3 pieces)",
+    "name_ar": "بقسماط ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 45,
+    "calories": 180,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 4,
+    "fiber_g": 1.5,
+    "is_egyptian": true,
+    "tags": [
+      "rusk",
+      "dry-bread",
+      "breakfast",
+      "traditional"
+    ]
+  },
+  {
+    "name_en": "Feteer Meshaltet (1/4 piece)",
+    "name_ar": "فطير مشلتت ربع",
+    "category": "CARBS",
+    "serving_size_g": 120,
+    "calories": 450,
+    "protein_g": 6,
+    "carbs_g": 42,
+    "fat_g": 28,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "traditional",
+      "layered",
+      "buttery"
+    ]
+  },
+  {
+    "name_en": "Feteer with Cheese (1/4 piece)",
+    "name_ar": "فطير بالجبنة ربع",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 520,
+    "protein_g": 14,
+    "carbs_g": 42,
+    "fat_g": 32,
+    "fiber_g": 1,
+    "calcium_mg": 200,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "cheese",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Feteer with Honey and Cream (1/4 piece)",
+    "name_ar": "فطير بالعسل والقشطة ربع",
+    "category": "CARBS",
+    "serving_size_g": 150,
+    "calories": 560,
+    "protein_g": 6,
+    "carbs_g": 52,
+    "fat_g": 36,
+    "fiber_g": 0.5,
+    "sugar_g": 18,
+    "is_egyptian": true,
+    "tags": [
+      "pastry",
+      "sweet",
+      "honey",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Bread Fino (1 roll)",
+    "name_ar": "عيش فينو رغيف",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 170,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 2,
+    "fiber_g": 1.5,
+    "is_egyptian": true,
+    "tags": [
+      "bread",
+      "white",
+      "sandwich-bread"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Bread Toast (2 slices)",
+    "name_ar": "توست ٢ شريحة",
+    "category": "CARBS",
+    "serving_size_g": 50,
+    "calories": 130,
+    "protein_g": 4,
+    "carbs_g": 24,
+    "fat_g": 1.5,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "bread",
+      "toast",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Bread Toast Brown (2 slices)",
+    "name_ar": "توست أسمر ٢ شريحة",
+    "category": "CARBS",
+    "serving_size_g": 50,
+    "calories": 120,
+    "protein_g": 5,
+    "carbs_g": 22,
+    "fat_g": 1.5,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "bread",
+      "toast",
+      "whole-wheat",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Baguette (1/3 loaf)",
+    "name_ar": "باجيت ثلث",
+    "category": "CARBS",
+    "serving_size_g": 80,
+    "calories": 220,
+    "protein_g": 7,
+    "carbs_g": 42,
+    "fat_g": 2,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "bread",
+      "french",
+      "bakery"
+    ]
+  },
+  {
+    "name_en": "Tortilla Wrap (1 large)",
+    "name_ar": "تورتيلا ١ كبيرة",
+    "category": "CARBS",
+    "serving_size_g": 65,
+    "calories": 190,
+    "protein_g": 5,
+    "carbs_g": 32,
+    "fat_g": 4.5,
+    "fiber_g": 1.5,
+    "is_egyptian": false,
+    "tags": [
+      "wrap",
+      "tortilla",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flour-tortilla.jpg"
+  },
+  {
+    "name_en": "Tortilla Wrap Whole Wheat (1 large)",
+    "name_ar": "تورتيلا قمح كامل ١ كبيرة",
+    "category": "CARBS",
+    "serving_size_g": 65,
+    "calories": 170,
+    "protein_g": 6,
+    "carbs_g": 28,
+    "fat_g": 4,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "wrap",
+      "whole-wheat",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flour-tortilla.jpg"
+  },
+  {
+    "name_en": "Pita Bread White (1 medium)",
+    "name_ar": "خبز بيتا أبيض",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 165,
+    "protein_g": 5.5,
+    "carbs_g": 33,
+    "fat_g": 0.7,
+    "fiber_g": 1.3,
+    "is_egyptian": false,
+    "tags": [
+      "bread",
+      "pita",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Simit (Turkish Sesame Ring, 1 piece)",
+    "name_ar": "سميط حلقة سمسم",
+    "category": "CARBS",
+    "serving_size_g": 100,
+    "calories": 290,
+    "protein_g": 9,
+    "carbs_g": 50,
+    "fat_g": 6,
+    "fiber_g": 2.5,
+    "is_egyptian": false,
+    "tags": [
+      "bread",
+      "sesame",
+      "turkish",
+      "bakery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sesame-seeds.jpg"
+  },
+  {
+    "name_en": "Muffin Blueberry (1 piece)",
+    "name_ar": "مافن بلوبيري",
+    "category": "CARBS",
+    "serving_size_g": 110,
+    "calories": 380,
+    "protein_g": 5,
+    "carbs_g": 50,
+    "fat_g": 18,
+    "fiber_g": 1.5,
+    "sugar_g": 28,
+    "is_egyptian": false,
+    "tags": [
+      "bakery",
+      "muffin",
+      "sweet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/blueberries.jpg"
+  },
+  {
+    "name_en": "Muffin Chocolate Chip (1 piece)",
+    "name_ar": "مافن شوكولاتة تشيبس",
+    "category": "CARBS",
+    "serving_size_g": 110,
+    "calories": 420,
+    "protein_g": 5,
+    "carbs_g": 52,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "sugar_g": 30,
+    "is_egyptian": false,
+    "tags": [
+      "bakery",
+      "muffin",
+      "chocolate"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Brownie (1 piece)",
+    "name_ar": "براوني قطعة",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 260,
+    "protein_g": 3,
+    "carbs_g": 34,
+    "fat_g": 13,
+    "fiber_g": 1.5,
+    "sugar_g": 22,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "chocolate",
+      "bakery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brownies.jpg"
+  },
+  {
+    "name_en": "Cookie Chocolate Chip (1 large)",
+    "name_ar": "كوكيز شوكولاتة تشيبس كبيرة",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 280,
+    "protein_g": 3,
+    "carbs_g": 36,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "sugar_g": 20,
+    "is_egyptian": false,
+    "tags": [
+      "cookie",
+      "chocolate",
+      "bakery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Donut Glazed (1 piece)",
+    "name_ar": "دونات جليز",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 250,
+    "protein_g": 3,
+    "carbs_g": 30,
+    "fat_g": 14,
+    "fiber_g": 0.5,
+    "sugar_g": 14,
+    "is_egyptian": false,
+    "tags": [
+      "donut",
+      "sweet",
+      "bakery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/doughnut.jpg"
+  },
+  {
+    "name_en": "Donut Chocolate (1 piece)",
+    "name_ar": "دونات شوكولاتة",
+    "category": "CARBS",
+    "serving_size_g": 70,
+    "calories": 300,
+    "protein_g": 4,
+    "carbs_g": 36,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "sugar_g": 18,
+    "is_egyptian": false,
+    "tags": [
+      "donut",
+      "chocolate",
+      "bakery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Pancake (2 medium, homemade)",
+    "name_ar": "بان كيك ٢ حبة متوسطة",
+    "category": "CARBS",
+    "serving_size_g": 120,
+    "calories": 280,
+    "protein_g": 8,
+    "carbs_g": 38,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "breakfast",
+      "pancake",
+      "home-cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cake.jpg"
+  },
+  {
+    "name_en": "Waffle (1 Belgian style)",
+    "name_ar": "وافل بلجيكي",
+    "category": "CARBS",
+    "serving_size_g": 100,
+    "calories": 310,
+    "protein_g": 6,
+    "carbs_g": 40,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "sugar_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "breakfast",
+      "waffle",
+      "sweet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/waffles.jpg"
+  },
+  {
+    "name_en": "French Toast (2 slices)",
+    "name_ar": "فرنش توست ٢ شريحة",
+    "category": "CARBS",
+    "serving_size_g": 120,
+    "calories": 320,
+    "protein_g": 10,
+    "carbs_g": 34,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "breakfast",
+      "french-toast",
+      "eggs"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread-slices.jpg"
+  },
+  {
+    "name_en": "Oatmeal Pancakes (2 pieces)",
+    "name_ar": "بان كيك شوفان ٢ حبة",
+    "category": "CARBS",
+    "serving_size_g": 120,
+    "calories": 220,
+    "protein_g": 12,
+    "carbs_g": 30,
+    "fat_g": 6,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "breakfast",
+      "oats",
+      "healthy",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oatmeal.jpg"
+  },
+  {
+    "name_en": "Protein Pancakes (2 pieces)",
+    "name_ar": "بان كيك بروتين ٢ حبة",
+    "category": "PROTEIN",
+    "serving_size_g": 120,
+    "calories": 240,
+    "protein_g": 24,
+    "carbs_g": 22,
+    "fat_g": 6,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "breakfast",
+      "protein",
+      "healthy",
+      "gym"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cake.jpg"
+  },
+  {
+    "name_en": "Granola (1/2 cup)",
+    "name_ar": "جرانولا نصف كوب",
+    "category": "CARBS",
+    "serving_size_g": 55,
+    "calories": 260,
+    "protein_g": 6,
+    "carbs_g": 36,
+    "fat_g": 11,
+    "fiber_g": 3.5,
+    "sugar_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "cereal",
+      "breakfast",
+      "oats",
+      "nuts"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola.jpg"
+  },
+  {
+    "name_en": "Cornflakes (1 cup with milk)",
+    "name_ar": "كورن فليكس كوب بالحليب",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 210,
+    "protein_g": 6,
+    "carbs_g": 38,
+    "fat_g": 3.5,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "cereal",
+      "breakfast",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/corn-flakes.jpg"
+  },
+  {
+    "name_en": "Weetabix (2 biscuits)",
+    "name_ar": "ويتابكس ٢ حبة",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 140,
+    "protein_g": 4.5,
+    "carbs_g": 26,
+    "fat_g": 1,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "brand_en": "Weetabix",
+    "brand_ar": "ويتابكس",
+    "tags": [
+      "cereal",
+      "whole-wheat",
+      "healthy",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Coco Pops (1 cup with milk)",
+    "name_ar": "كوكو بوبس كوب بالحليب",
+    "category": "CARBS",
+    "serving_size_g": 50,
+    "calories": 230,
+    "protein_g": 5,
+    "carbs_g": 42,
+    "fat_g": 3.5,
+    "fiber_g": 1,
+    "sugar_g": 18,
+    "is_egyptian": false,
+    "brand_en": "Kellogg's",
+    "brand_ar": "كيلوجز",
+    "tags": [
+      "cereal",
+      "chocolate",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Frosties (1 cup with milk)",
+    "name_ar": "فروستيز كوب بالحليب",
+    "category": "CARBS",
+    "serving_size_g": 50,
+    "calories": 240,
+    "protein_g": 4.5,
+    "carbs_g": 44,
+    "fat_g": 3.5,
+    "fiber_g": 0.5,
+    "sugar_g": 20,
+    "is_egyptian": false,
+    "brand_en": "Kellogg's",
+    "brand_ar": "كيلوجز",
+    "tags": [
+      "cereal",
+      "kids",
+      "sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Cheerios (1 cup with milk)",
+    "name_ar": "تشيريوز كوب بالحليب",
+    "category": "CARBS",
+    "serving_size_g": 50,
+    "calories": 200,
+    "protein_g": 6,
+    "carbs_g": 36,
+    "fat_g": 4,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "brand_en": "Nestle",
+    "brand_ar": "نستله",
+    "tags": [
+      "cereal",
+      "oat",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Foul Medames Canned (Abu El Walad, 400g drained)",
+    "name_ar": "فول مدمس أبو الولد معلب",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 190,
+    "protein_g": 13,
+    "carbs_g": 30,
+    "fat_g": 1,
+    "fiber_g": 8,
+    "iron_mg": 3.5,
+    "is_egyptian": true,
+    "brand_en": "Abu El Walad",
+    "brand_ar": "أبو الولد",
+    "tags": [
+      "canned",
+      "fava-beans",
+      "breakfast",
+      "staple"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Tuna Canned in Water (1 can)",
+    "name_ar": "تونة معلبة بالماء علبة",
+    "category": "PROTEIN",
+    "serving_size_g": 160,
+    "calories": 180,
+    "protein_g": 40,
+    "carbs_g": 0,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "canned",
+      "tuna",
+      "high-protein",
+      "low-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/water.jpg"
+  },
+  {
+    "name_en": "Tuna Canned in Oil (1 can)",
+    "name_ar": "تونة معلبة بالزيت علبة",
+    "category": "PROTEIN",
+    "serving_size_g": 160,
+    "calories": 280,
+    "protein_g": 35,
+    "carbs_g": 0,
+    "fat_g": 15,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "canned",
+      "tuna",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/canned-tuna.jpg"
+  },
+  {
+    "name_en": "Sardines Canned in Oil (1 can)",
+    "name_ar": "سردين معلب بالزيت علبة",
+    "category": "PROTEIN",
+    "serving_size_g": 120,
+    "calories": 250,
+    "protein_g": 22,
+    "carbs_g": 0,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "calcium_mg": 350,
+    "is_egyptian": false,
+    "tags": [
+      "canned",
+      "sardines",
+      "omega-3",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sardines.jpg"
+  },
+  {
+    "name_en": "Corned Beef Canned (100g)",
+    "name_ar": "كورنيد بيف معلب",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 250,
+    "protein_g": 26,
+    "carbs_g": 0,
+    "fat_g": 16,
+    "fiber_g": 0,
+    "sodium_mg": 900,
+    "is_egyptian": false,
+    "tags": [
+      "canned",
+      "beef",
+      "processed"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Baked Beans Canned (1/2 can)",
+    "name_ar": "فاصوليا بصلصة الطماطم معلبة",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 200,
+    "protein_g": 10,
+    "carbs_g": 36,
+    "fat_g": 1,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "canned",
+      "beans",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Chickpeas Canned (1 cup drained)",
+    "name_ar": "حمص معلب كوب مصفى",
+    "category": "PROTEIN",
+    "serving_size_g": 240,
+    "calories": 280,
+    "protein_g": 15,
+    "carbs_g": 45,
+    "fat_g": 4.5,
+    "fiber_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "canned",
+      "chickpeas",
+      "fiber",
+      "vegan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chickpeas.jpg"
+  }
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "name_en": "Almonds (Raw, 30g / ~23 pieces)",
+    "name_ar": "لوز نيء (30 جرام / ~23 حبة)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 6,
+    "carbs_g": 6,
+    "fat_g": 15,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "almonds",
+      "healthy_fat",
+      "protein",
+      "snack",
+      "vitamin_e"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/almonds.jpg"
+  },
+  {
+    "name_en": "Walnuts (30g / ~7 halves)",
+    "name_ar": "عين جمل (30 جرام / ~7 أنصاف)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 190,
+    "protein_g": 4,
+    "carbs_g": 4,
+    "fat_g": 18,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "walnuts",
+      "omega3",
+      "brain_health",
+      "healthy_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/walnuts.jpg"
+  },
+  {
+    "name_en": "Cashews (Roasted, 30g)",
+    "name_ar": "كاجو (محمص، 30 جرام)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 160,
+    "protein_g": 5,
+    "carbs_g": 9,
+    "fat_g": 13,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "cashews",
+      "snack",
+      "magnesium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cashews.jpg"
+  },
+  {
+    "name_en": "Pistachios (Roasted, 30g / ~49 kernels)",
+    "name_ar": "فستق (محمص، 30 جرام)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 160,
+    "protein_g": 6,
+    "carbs_g": 8,
+    "fat_g": 13,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "pistachios",
+      "protein",
+      "fiber",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pistachios.jpg"
+  },
+  {
+    "name_en": "Hazelnuts (30g / ~20 pieces)",
+    "name_ar": "بندق (30 جرام / ~20 حبة)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 180,
+    "protein_g": 4,
+    "carbs_g": 5,
+    "fat_g": 17,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "hazelnuts",
+      "healthy_fat",
+      "vitamin_e"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hazelnuts.jpg"
+  },
+  {
+    "name_en": "Peanuts (Roasted, Foul Sudani, 30g)",
+    "name_ar": "فول سوداني (محمص، 30 جرام)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 7,
+    "carbs_g": 5,
+    "fat_g": 14,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "nuts",
+      "peanuts",
+      "foul_sudani",
+      "protein",
+      "cheap",
+      "egyptian",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanuts.jpg"
+  },
+  {
+    "name_en": "Macadamia Nuts (30g)",
+    "name_ar": "مكاديميا (30 جرام)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 200,
+    "protein_g": 2,
+    "carbs_g": 4,
+    "fat_g": 21,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "macadamia",
+      "keto",
+      "healthy_fat",
+      "premium"
+    ]
+  },
+  {
+    "name_en": "Brazil Nuts (30g / ~6 pieces)",
+    "name_ar": "جوز برازيلي (30 جرام / ~6 حبات)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 190,
+    "protein_g": 4,
+    "carbs_g": 3,
+    "fat_g": 19,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "brazil_nuts",
+      "selenium",
+      "healthy_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brazil-nuts.jpg"
+  },
+  {
+    "name_en": "Mixed Nuts (Abu Auf Style, 30g)",
+    "name_ar": "مكسرات مشكلة (زي أبو عوف، 30 جرام)",
+    "category": "nuts",
+    "serving_size_g": 30,
+    "calories": 175,
+    "protein_g": 5,
+    "carbs_g": 6,
+    "fat_g": 15,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "nuts",
+      "mixed",
+      "abu_auf",
+      "snack",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-nuts.jpg"
+  },
+  {
+    "name_en": "Sunflower Seeds (Lob Suri, 30g)",
+    "name_ar": "لب سوري (30 جرام)",
+    "category": "seeds",
+    "serving_size_g": 30,
+    "calories": 165,
+    "protein_g": 6,
+    "carbs_g": 6,
+    "fat_g": 14,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "sunflower",
+      "lob",
+      "vitamin_e",
+      "snack",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sunflower-seeds.jpg"
+  },
+  {
+    "name_en": "Pumpkin Seeds (Lob Abyad, 30g)",
+    "name_ar": "لب أبيض / قرع (30 جرام)",
+    "category": "seeds",
+    "serving_size_g": 30,
+    "calories": 150,
+    "protein_g": 7,
+    "carbs_g": 5,
+    "fat_g": 13,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "pumpkin",
+      "lob_abyad",
+      "zinc",
+      "protein",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Watermelon Seeds (Lob Super, 30g)",
+    "name_ar": "لب سوبر (30 جرام)",
+    "category": "seeds",
+    "serving_size_g": 30,
+    "calories": 160,
+    "protein_g": 8,
+    "carbs_g": 4,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "watermelon",
+      "lob_super",
+      "protein",
+      "snack",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/watermelon.jpg"
+  },
+  {
+    "name_en": "Flaxseeds (Ground, 2 tbsp)",
+    "name_ar": "بذور كتان (مطحونة، 2 ملعقة كبيرة)",
+    "category": "seeds",
+    "serving_size_g": 20,
+    "calories": 110,
+    "protein_g": 4,
+    "carbs_g": 6,
+    "fat_g": 9,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "seeds",
+      "flax",
+      "omega3",
+      "fiber",
+      "digestion"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flaxseed.jpg"
+  },
+  {
+    "name_en": "Hemp Seeds (2 tbsp)",
+    "name_ar": "بذور قنب (2 ملعقة كبيرة)",
+    "category": "seeds",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 10,
+    "carbs_g": 3,
+    "fat_g": 14,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "seeds",
+      "hemp",
+      "protein",
+      "omega3",
+      "complete_protein"
+    ]
+  },
+  {
+    "name_en": "Dried Raisins (Zabib, 40g)",
+    "name_ar": "زبيب (40 جرام)",
+    "category": "dried_fruit",
+    "serving_size_g": 40,
+    "calories": 120,
+    "protein_g": 1,
+    "carbs_g": 32,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "dried_fruit",
+      "raisins",
+      "energy",
+      "iron",
+      "quick_carbs",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Dried Figs (Teen Megaffaf, 3 pieces)",
+    "name_ar": "تين مجفف (3 حبات)",
+    "category": "dried_fruit",
+    "serving_size_g": 45,
+    "calories": 110,
+    "protein_g": 1,
+    "carbs_g": 28,
+    "fat_g": 0.5,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "dried_fruit",
+      "figs",
+      "fiber",
+      "calcium",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/figs.jpg"
+  },
+  {
+    "name_en": "Dried Cranberries (30g)",
+    "name_ar": "توت بري مجفف (30 جرام)",
+    "category": "dried_fruit",
+    "serving_size_g": 30,
+    "calories": 95,
+    "protein_g": 0,
+    "carbs_g": 25,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "dried_fruit",
+      "cranberry",
+      "antioxidant",
+      "snack"
+    ]
+  },
+  {
+    "name_en": "Dried Prunes (Barquq, 4 pieces)",
+    "name_ar": "برقوق مجفف (4 حبات)",
+    "category": "dried_fruit",
+    "serving_size_g": 40,
+    "calories": 95,
+    "protein_g": 1,
+    "carbs_g": 25,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "dried_fruit",
+      "prunes",
+      "fiber",
+      "digestion",
+      "iron"
+    ]
+  },
+  {
+    "name_en": "Goji Berries (Dried, 30g)",
+    "name_ar": "توت غوجي مجفف (30 جرام)",
+    "category": "dried_fruit",
+    "serving_size_g": 30,
+    "calories": 100,
+    "protein_g": 4,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "dried_fruit",
+      "goji",
+      "superfood",
+      "antioxidant",
+      "vitamin_a"
+    ]
+  },
+  {
+    "name_en": "Trail Mix — Classic (Nuts + Raisins, 40g)",
+    "name_ar": "خليط مكسرات وزبيب (40 جرام)",
+    "category": "nuts",
+    "serving_size_g": 40,
+    "calories": 200,
+    "protein_g": 5,
+    "carbs_g": 18,
+    "fat_g": 12,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "nuts",
+      "trail_mix",
+      "snack",
+      "energy",
+      "hiking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/trail-mix.jpg"
+  },
+  {
+    "name_en": "Almond Butter (1 tbsp)",
+    "name_ar": "زبدة لوز (ملعقة كبيرة)",
+    "category": "spread",
+    "serving_size_g": 16,
+    "calories": 100,
+    "protein_g": 3,
+    "carbs_g": 3,
+    "fat_g": 9,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "spread",
+      "almond_butter",
+      "healthy_fat",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Coconut Flakes (Unsweetened, 30g)",
+    "name_ar": "جوز هند مبشور (بدون سكر، 30 جرام)",
+    "category": "dried_fruit",
+    "serving_size_g": 30,
+    "calories": 100,
+    "protein_g": 1,
+    "carbs_g": 4,
+    "fat_g": 10,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "dried_fruit",
+      "coconut",
+      "keto",
+      "healthy_fat",
+      "topping"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  }
+]

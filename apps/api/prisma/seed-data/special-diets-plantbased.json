@@ -1,0 +1,406 @@
+[
+  {
+    "name_en": "Tofu Firm (100g)",
+    "name_ar": "توفو متماسك ١٠٠ جرام",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 76,
+    "protein_g": 8,
+    "carbs_g": 2,
+    "fat_g": 4.5,
+    "fiber_g": 0.5,
+    "calcium_mg": 350,
+    "is_egyptian": false,
+    "tags": [
+      "tofu",
+      "vegan",
+      "plant-protein",
+      "soy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Tempeh (100g)",
+    "name_ar": "تمبيه ١٠٠ جرام",
+    "category": "PROTEIN",
+    "serving_size_g": 100,
+    "calories": 192,
+    "protein_g": 20,
+    "carbs_g": 8,
+    "fat_g": 11,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "tempeh",
+      "vegan",
+      "fermented",
+      "soy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Beyond Meat Burger Patty (1 piece)",
+    "name_ar": "بيوند ميت برجر حبة",
+    "category": "PROTEIN",
+    "serving_size_g": 113,
+    "calories": 230,
+    "protein_g": 20,
+    "carbs_g": 5,
+    "fat_g": 14,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "brand_en": "Beyond Meat",
+    "brand_ar": "بيوند ميت",
+    "tags": [
+      "plant-based",
+      "burger",
+      "vegan"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hamburger-patties.jpg"
+  },
+  {
+    "name_en": "Soy Milk (1 cup)",
+    "name_ar": "حليب صويا كوب",
+    "category": "PROTEIN",
+    "serving_size_g": 240,
+    "calories": 80,
+    "protein_g": 7,
+    "carbs_g": 4,
+    "fat_g": 4,
+    "fiber_g": 1,
+    "calcium_mg": 300,
+    "is_egyptian": false,
+    "tags": [
+      "plant-milk",
+      "soy",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Coconut Milk Canned (1/4 cup)",
+    "name_ar": "حليب جوز هند معلب ربع كوب",
+    "category": "FATS",
+    "serving_size_g": 60,
+    "calories": 120,
+    "protein_g": 1,
+    "carbs_g": 2,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "coconut-milk",
+      "cooking",
+      "keto",
+      "thai"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut.jpg"
+  },
+  {
+    "name_en": "Nutritional Yeast (2 tbsp)",
+    "name_ar": "خميرة غذائية ٢ ملعقة",
+    "category": "OTHER",
+    "serving_size_g": 10,
+    "calories": 40,
+    "protein_g": 5,
+    "carbs_g": 3,
+    "fat_g": 0.5,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "b-vitamins",
+      "cheese-flavor"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Vegan Protein Powder (pea/rice, 1 scoop)",
+    "name_ar": "بروتين نباتي باودر سكوب",
+    "category": "PROTEIN",
+    "serving_size_g": 35,
+    "calories": 120,
+    "protein_g": 24,
+    "carbs_g": 3,
+    "fat_g": 1.5,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "protein",
+      "pea",
+      "plant-based"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Erythritol Sweetener (1 tsp)",
+    "name_ar": "إريثريتول محلي طبيعي ملعقة صغيرة",
+    "category": "OTHER",
+    "serving_size_g": 4,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sweetener",
+      "keto",
+      "sugar-free",
+      "zero-calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Monk Fruit Sweetener (1 packet)",
+    "name_ar": "محلي مونك فروت كيس",
+    "category": "OTHER",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sweetener",
+      "natural",
+      "zero-calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Sugar-Free Jelly (1 cup prepared)",
+    "name_ar": "جيلي خالي من السكر كوب",
+    "category": "OTHER",
+    "serving_size_g": 240,
+    "calories": 10,
+    "protein_g": 2,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dessert",
+      "sugar-free",
+      "diet",
+      "low-calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Shirataki Noodles (1 cup)",
+    "name_ar": "شيراتاكي نودلز كوب",
+    "category": "OTHER",
+    "serving_size_g": 200,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 3,
+    "fat_g": 0,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "noodles",
+      "zero-calorie",
+      "keto",
+      "low-carb"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-vegetables.jpg"
+  },
+  {
+    "name_en": "Lettuce Wrap (as bun replacement, 2 leaves)",
+    "name_ar": "خس بدل الخبز ٢ ورقة",
+    "category": "VEGETABLES",
+    "serving_size_g": 40,
+    "calories": 5,
+    "protein_g": 0.5,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "tags": [
+      "low-carb",
+      "keto",
+      "bread-alternative"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lettuce.jpg"
+  },
+  {
+    "name_en": "Flaxseed Meal (2 tbsp)",
+    "name_ar": "بذر كتان مطحون ٢ ملعقة",
+    "category": "FATS",
+    "serving_size_g": 14,
+    "calories": 75,
+    "protein_g": 3,
+    "carbs_g": 4,
+    "fat_g": 6,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "flaxseed",
+      "omega-3",
+      "fiber",
+      "keto"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flaxseed.jpg"
+  },
+  {
+    "name_en": "Halawa Tahinia (2 tbsp)",
+    "name_ar": "حلاوة طحينية ٢ ملعقة",
+    "category": "CARBS",
+    "serving_size_g": 30,
+    "calories": 150,
+    "protein_g": 3,
+    "carbs_g": 16,
+    "fat_g": 9,
+    "fiber_g": 1,
+    "sugar_g": 12,
+    "is_egyptian": true,
+    "tags": [
+      "halawa",
+      "sweet",
+      "traditional",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Molasses (Asal Eswid, 1 tbsp)",
+    "name_ar": "عسل أسود ملعقة",
+    "category": "CARBS",
+    "serving_size_g": 20,
+    "calories": 55,
+    "protein_g": 0,
+    "carbs_g": 14,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "iron_mg": 3.5,
+    "calcium_mg": 40,
+    "is_egyptian": true,
+    "tags": [
+      "molasses",
+      "iron-rich",
+      "traditional",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/molasses.jpg"
+  },
+  {
+    "name_en": "Tahini with Molasses (2 tbsp mix)",
+    "name_ar": "طحينة بالعسل الأسود ٢ ملعقة",
+    "category": "CARBS",
+    "serving_size_g": 35,
+    "calories": 170,
+    "protein_g": 3,
+    "carbs_g": 16,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "iron_mg": 3,
+    "calcium_mg": 80,
+    "is_egyptian": true,
+    "tags": [
+      "tahini",
+      "molasses",
+      "iron",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tahini.jpg"
+  },
+  {
+    "name_en": "Date Balls with Nuts (3 pieces, homemade)",
+    "name_ar": "كرات تمر بالمكسرات ٣ حبات",
+    "category": "CARBS",
+    "serving_size_g": 60,
+    "calories": 200,
+    "protein_g": 4,
+    "carbs_g": 30,
+    "fat_g": 8,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "dates",
+      "nuts",
+      "healthy-snack",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/dates.jpg"
+  },
+  {
+    "name_en": "Overnight Oats (1 jar)",
+    "name_ar": "شوفان ليلي برطمان",
+    "category": "CARBS",
+    "serving_size_g": 300,
+    "calories": 350,
+    "protein_g": 14,
+    "carbs_g": 48,
+    "fat_g": 12,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "oats",
+      "breakfast",
+      "healthy",
+      "meal-prep"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oats.jpg"
+  },
+  {
+    "name_en": "Smoothie Bowl (mixed berries, granola)",
+    "name_ar": "سموذي باول توت وجرانولا",
+    "category": "CARBS",
+    "serving_size_g": 350,
+    "calories": 340,
+    "protein_g": 8,
+    "carbs_g": 56,
+    "fat_g": 10,
+    "fiber_g": 7,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "bowl",
+      "berries",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Protein Smoothie (whey, berries, spinach, almond milk)",
+    "name_ar": "سموذي بروتين واي وتوت وسبانخ ولبن لوز",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 250,
+    "protein_g": 28,
+    "carbs_g": 20,
+    "fat_g": 6,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "protein",
+      "healthy",
+      "gym"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Green Smoothie (spinach, banana, apple, ginger)",
+    "name_ar": "سموذي أخضر سبانخ وموز وتفاح وزنجبيل",
+    "category": "CARBS",
+    "serving_size_g": 350,
+    "calories": 180,
+    "protein_g": 4,
+    "carbs_g": 42,
+    "fat_g": 1,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "green",
+      "detox",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  }
+]

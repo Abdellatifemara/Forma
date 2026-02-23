@@ -1,0 +1,17 @@
+[
+  {
+    "id": "faq-tip-001",
+    "question_en": "Why am I not gaining muscle despite training hard?",
+    "question_ar": "ليه مش بزيد عضلات رغم إني بتمرن بجد؟",
+    "answer_en": "Top 3 reasons: 1) Not eating enough calories/protein (need 1.6-2.2g protein per kg bodyweight). 2) Not progressively overloading (increase weight, reps, or sets over time). 3) Not sleeping enough (7-9 hours for muscle recovery). Track your food for a week — most people eat far less protein than they think.",
+    "answer_ar": "أهم 3 أسباب: 1) مش بتاكل كفاية سعرات/بروتين (محتاج 1.6-2.2 جرام بروتين لكل كيلو من وزنك). 2) مش بتزود الحمل تدريجيًا. 3) مش بتنام كفاية (7-9 ساعات). تابع أكلك لمدة أسبوع — معظم الناس بتاكل بروتين أقل بكتير مما تفتكر.",
+    "category": "training",
+    "tags": [
+      "muscle_gain",
+      "plateau",
+      "nutrition",
+      "progressive_overload",
+      "sleep"
+    ]
+  }
+]

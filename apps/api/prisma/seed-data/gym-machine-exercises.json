@@ -1,0 +1,728 @@
+[
+  {
+    "id": "machine-001",
+    "name_en": "Chest Press Machine",
+    "name_ar": "ماكينة ضغط الصدر",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "anterior_deltoid"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "machine",
+      "chest",
+      "press",
+      "beginner_friendly"
+    ]
+  },
+  {
+    "id": "machine-002",
+    "name_en": "Pec Deck / Chest Fly Machine",
+    "name_ar": "ماكينة فلاي الصدر (بيك ديك)",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "anterior_deltoid"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "machine",
+      "chest",
+      "fly",
+      "isolation"
+    ]
+  },
+  {
+    "id": "machine-003",
+    "name_en": "Lat Pulldown Machine",
+    "name_ar": "ماكينة السحب العلوي (لات)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rear_deltoid"
+    ],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": 12,
+    "tags": [
+      "machine",
+      "back",
+      "pulldown",
+      "staple"
+    ]
+  },
+  {
+    "id": "machine-005",
+    "name_en": "Leg Press Machine",
+    "name_ar": "ماكينة ليج بريس",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "leg_press",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": 12,
+    "tags": [
+      "machine",
+      "legs",
+      "press",
+      "staple"
+    ]
+  },
+  {
+    "id": "machine-006",
+    "name_en": "Hack Squat Machine",
+    "name_ar": "هاك سكوات ماكينة",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "machine",
+    "difficulty": "intermediate",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": 10,
+    "tags": [
+      "machine",
+      "legs",
+      "squat",
+      "quad_focus"
+    ]
+  },
+  {
+    "id": "machine-007",
+    "name_en": "Leg Extension Machine",
+    "name_ar": "ماكينة مد الرجل (ليج إكستنشن)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "machine",
+      "legs",
+      "isolation",
+      "quad"
+    ]
+  },
+  {
+    "id": "machine-008",
+    "name_en": "Leg Curl Machine (Lying)",
+    "name_ar": "ماكينة ثني الرجل (ليج كيرل)",
+    "primary_muscle": "hamstrings",
+    "secondary_muscles": [
+      "calves"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "machine",
+      "legs",
+      "isolation",
+      "hamstring"
+    ]
+  },
+  {
+    "id": "machine-009",
+    "name_en": "Leg Curl Machine (Seated)",
+    "name_ar": "ليج كيرل جالس",
+    "primary_muscle": "hamstrings",
+    "secondary_muscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "machine",
+      "legs",
+      "isolation",
+      "hamstring"
+    ]
+  },
+  {
+    "id": "machine-010",
+    "name_en": "Hip Adductor Machine",
+    "name_ar": "ماكينة تقريب الفخذ (أداكتور)",
+    "primary_muscle": "adductors",
+    "secondary_muscles": [
+      "inner_thigh"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "machine",
+      "legs",
+      "isolation",
+      "inner_thigh"
+    ]
+  },
+  {
+    "id": "machine-011",
+    "name_en": "Hip Abductor Machine",
+    "name_ar": "ماكينة فتح الفخذ (أبداكتور)",
+    "primary_muscle": "glute_medius",
+    "secondary_muscles": [
+      "hip_abductors"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "machine",
+      "legs",
+      "isolation",
+      "outer_thigh"
+    ]
+  },
+  {
+    "id": "machine-012",
+    "name_en": "Calf Raise Machine (Standing)",
+    "name_ar": "ماكينة رفع الكعب واقف",
+    "primary_muscle": "calves",
+    "secondary_muscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": 15,
+    "tags": [
+      "machine",
+      "calves",
+      "isolation"
+    ]
+  },
+  {
+    "id": "machine-013",
+    "name_en": "Calf Raise Machine (Seated)",
+    "name_ar": "ماكينة رفع الكعب جالس",
+    "primary_muscle": "soleus",
+    "secondary_muscles": [
+      "calves"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": 15,
+    "tags": [
+      "machine",
+      "calves",
+      "isolation",
+      "soleus"
+    ]
+  },
+  {
+    "id": "machine-014",
+    "name_en": "Shoulder Press Machine",
+    "name_ar": "ماكينة ضغط الأكتاف",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps",
+      "traps"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "machine",
+      "shoulders",
+      "press"
+    ]
+  },
+  {
+    "id": "machine-015",
+    "name_en": "Lateral Raise Machine",
+    "name_ar": "ماكينة الرفع الجانبي",
+    "primary_muscle": "lateral_deltoid",
+    "secondary_muscles": [
+      "traps"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "machine",
+      "shoulders",
+      "isolation",
+      "lateral"
+    ]
+  },
+  {
+    "id": "machine-016",
+    "name_en": "Rear Delt Fly Machine (Reverse Pec Deck)",
+    "name_ar": "ماكينة فلاي خلفي (ريفيرس بيك ديك)",
+    "primary_muscle": "rear_deltoid",
+    "secondary_muscles": [
+      "rhomboids",
+      "middle_traps"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "machine",
+      "shoulders",
+      "rear_delt",
+      "isolation"
+    ]
+  },
+  {
+    "id": "machine-017",
+    "name_en": "Cable Crossover (High to Low)",
+    "name_ar": "كابل كروس أوفر (عالي لواطي)",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "anterior_deltoid"
+    ],
+    "equipment": "cable_machine",
+    "difficulty": "intermediate",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "cable",
+      "chest",
+      "fly",
+      "lower_chest"
+    ]
+  },
+  {
+    "id": "machine-018",
+    "name_en": "Cable Crossover (Low to High)",
+    "name_ar": "كابل كروس أوفر (واطي لعالي)",
+    "primary_muscle": "upper_chest",
+    "secondary_muscles": [
+      "anterior_deltoid"
+    ],
+    "equipment": "cable_machine",
+    "difficulty": "intermediate",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "cable",
+      "chest",
+      "fly",
+      "upper_chest"
+    ]
+  },
+  {
+    "id": "machine-020",
+    "name_en": "Cable Face Pull",
+    "name_ar": "كابل فيس بول",
+    "primary_muscle": "rear_deltoid",
+    "secondary_muscles": [
+      "rotator_cuff",
+      "middle_traps"
+    ],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "cable",
+      "shoulders",
+      "face_pull",
+      "posture"
+    ]
+  },
+  {
+    "id": "machine-021",
+    "name_en": "Cable Tricep Pushdown (Bar)",
+    "name_ar": "كابل ترايسبس بوش داون (بار)",
+    "primary_muscle": "triceps",
+    "secondary_muscles": [],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "cable",
+      "triceps",
+      "isolation",
+      "staple"
+    ]
+  },
+  {
+    "id": "machine-022",
+    "name_en": "Cable Tricep Pushdown (Rope)",
+    "name_ar": "كابل ترايسبس بوش داون (حبل)",
+    "primary_muscle": "triceps",
+    "secondary_muscles": [],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "cable",
+      "triceps",
+      "rope",
+      "isolation"
+    ]
+  },
+  {
+    "id": "machine-023",
+    "name_en": "Cable Overhead Tricep Extension",
+    "name_ar": "كابل تمديد ترايسبس فوق الرأس",
+    "primary_muscle": "triceps",
+    "secondary_muscles": [],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "cable",
+      "triceps",
+      "overhead",
+      "long_head"
+    ]
+  },
+  {
+    "id": "machine-024",
+    "name_en": "Cable Bicep Curl",
+    "name_ar": "كابل بايسبس كيرل",
+    "primary_muscle": "biceps",
+    "secondary_muscles": [
+      "forearms"
+    ],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "cable",
+      "biceps",
+      "isolation",
+      "curl"
+    ]
+  },
+  {
+    "id": "machine-025",
+    "name_en": "Cable Hammer Curl (Rope)",
+    "name_ar": "كابل هامر كيرل (حبل)",
+    "primary_muscle": "brachialis",
+    "secondary_muscles": [
+      "biceps",
+      "forearms"
+    ],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "cable",
+      "biceps",
+      "hammer",
+      "brachialis"
+    ]
+  },
+  {
+    "id": "machine-027",
+    "name_en": "Cable Crunch (Kneeling)",
+    "name_ar": "كابل كرنش (ركوع)",
+    "primary_muscle": "abs",
+    "secondary_muscles": [],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "cable",
+      "abs",
+      "crunch",
+      "weighted"
+    ]
+  },
+  {
+    "id": "machine-028",
+    "name_en": "Smith Machine Squat",
+    "name_ar": "سكوات سميث ماشين",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "smith_machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": 10,
+    "tags": [
+      "machine",
+      "smith",
+      "squat",
+      "legs"
+    ]
+  },
+  {
+    "id": "machine-029",
+    "name_en": "Smith Machine Bench Press",
+    "name_ar": "بنش بريس سميث ماشين",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "anterior_deltoid"
+    ],
+    "equipment": "smith_machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": 10,
+    "tags": [
+      "machine",
+      "smith",
+      "bench",
+      "chest"
+    ]
+  },
+  {
+    "id": "machine-030",
+    "name_en": "Smith Machine Shoulder Press",
+    "name_ar": "ضغط أكتاف سميث ماشين",
+    "primary_muscle": "shoulders",
+    "secondary_muscles": [
+      "triceps"
+    ],
+    "equipment": "smith_machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "machine",
+      "smith",
+      "shoulders",
+      "press"
+    ]
+  },
+  {
+    "id": "machine-031",
+    "name_en": "Assisted Pull-Up Machine",
+    "name_ar": "ماكينة بول أب مساعدة",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rear_deltoid"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "machine",
+      "back",
+      "assisted",
+      "beginner_friendly"
+    ]
+  },
+  {
+    "id": "machine-032",
+    "name_en": "Assisted Dip Machine",
+    "name_ar": "ماكينة ديبس مساعدة",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "category": "machine",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "machine",
+      "chest",
+      "assisted",
+      "beginner_friendly"
+    ]
+  },
+  {
+    "id": "machine-033",
+    "name_en": "T-Bar Row Machine",
+    "name_ar": "تي بار رو ماكينة",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rhomboids",
+      "rear_deltoid"
+    ],
+    "equipment": "machine",
+    "difficulty": "intermediate",
+    "category": "machine",
+    "default_sets": 4,
+    "default_reps": 10,
+    "tags": [
+      "machine",
+      "back",
+      "row",
+      "thickness"
+    ]
+  },
+  {
+    "id": "machine-034",
+    "name_en": "Cable Pullthrough",
+    "name_ar": "كابل بول ثرو",
+    "primary_muscle": "glutes",
+    "secondary_muscles": [
+      "hamstrings",
+      "lower_back"
+    ],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "cable",
+      "glutes",
+      "hip_hinge",
+      "posterior"
+    ]
+  },
+  {
+    "id": "machine-035",
+    "name_en": "Cable Kickback (Glute)",
+    "name_ar": "كابل كيك باك (إلية)",
+    "primary_muscle": "glutes",
+    "secondary_muscles": [
+      "hamstrings"
+    ],
+    "equipment": "cable_machine",
+    "difficulty": "beginner",
+    "category": "cable",
+    "default_sets": 3,
+    "default_reps": "12 each leg",
+    "tags": [
+      "cable",
+      "glutes",
+      "isolation",
+      "women"
+    ]
+  },
+  {
+    "id": "machine-036",
+    "name_en": "Rowing Machine (Ergometer)",
+    "name_ar": "ماكينة التجديف (إيرجوميتر)",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "back",
+      "legs",
+      "core",
+      "arms"
+    ],
+    "equipment": "rowing_machine",
+    "difficulty": "beginner",
+    "category": "cardio_machine",
+    "default_sets": 1,
+    "default_reps": "10 min",
+    "tags": [
+      "cardio",
+      "rowing",
+      "full_body",
+      "endurance"
+    ]
+  },
+  {
+    "id": "machine-037",
+    "name_en": "Stairmaster / Stair Climber",
+    "name_ar": "ماكينة الدرج (ستير ماستر)",
+    "primary_muscle": "glutes",
+    "secondary_muscles": [
+      "quadriceps",
+      "calves",
+      "hamstrings"
+    ],
+    "equipment": "stairmaster",
+    "difficulty": "beginner",
+    "category": "cardio_machine",
+    "default_sets": 1,
+    "default_reps": "15 min",
+    "tags": [
+      "cardio",
+      "stairs",
+      "glutes",
+      "fat_burn"
+    ]
+  },
+  {
+    "id": "machine-038",
+    "name_en": "Elliptical Trainer",
+    "name_ar": "الاليبتيكال (بيضاوي)",
+    "primary_muscle": "legs",
+    "secondary_muscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": "elliptical",
+    "difficulty": "beginner",
+    "category": "cardio_machine",
+    "default_sets": 1,
+    "default_reps": "20 min",
+    "tags": [
+      "cardio",
+      "low_impact",
+      "full_body"
+    ]
+  },
+  {
+    "id": "machine-039",
+    "name_en": "Assault / Air Bike",
+    "name_ar": "أسولت بايك / إير بايك",
+    "primary_muscle": "full_body",
+    "secondary_muscles": [
+      "legs",
+      "arms",
+      "core"
+    ],
+    "equipment": "assault_bike",
+    "difficulty": "intermediate",
+    "category": "cardio_machine",
+    "default_sets": 5,
+    "default_reps": "30s max effort",
+    "tags": [
+      "cardio",
+      "HIIT",
+      "assault_bike",
+      "brutal"
+    ]
+  }
+]

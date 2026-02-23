@@ -16,9 +16,19 @@
     "price_egp_max": 5000,
     "servings_per_container": 74,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "Amazon Egypt", "Noon"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "Amazon Egypt",
+      "Noon"
+    ],
     "coach_notes": "Gold standard for muscle building. Best taken post-workout within 30 minutes.",
-    "benefits": ["Muscle Recovery", "Muscle Growth", "Fast Absorption"]
+    "benefits": [
+      "Muscle Recovery",
+      "Muscle Growth",
+      "Fast Absorption"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Optimum Nutrition Gold Standard Whey - 2lb",
@@ -37,9 +47,19 @@
     "price_egp_max": 2750,
     "servings_per_container": 29,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "Amazon Egypt", "Noon"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "Amazon Egypt",
+      "Noon"
+    ],
     "coach_notes": "Starter size. Perfect for beginners testing whey protein.",
-    "benefits": ["Muscle Recovery", "Muscle Growth", "Fast Absorption"]
+    "benefits": [
+      "Muscle Recovery",
+      "Muscle Growth",
+      "Fast Absorption"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Optimum Nutrition Gold Standard Whey - 1lb",
@@ -58,9 +78,19 @@
     "price_egp_max": 1600,
     "servings_per_container": 14,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "Amazon Egypt", "Noon"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "Amazon Egypt",
+      "Noon"
+    ],
     "coach_notes": "Trial size. Good for testing flavors before buying larger container.",
-    "benefits": ["Muscle Recovery", "Muscle Growth", "Fast Absorption"]
+    "benefits": [
+      "Muscle Recovery",
+      "Muscle Growth",
+      "Fast Absorption"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "MuscleTech Platinum Creatine Monohydrate - 400g",
@@ -79,9 +109,19 @@
     "price_egp_max": 2500,
     "servings_per_container": 80,
     "is_egyptian": false,
-    "available_at": ["House of Supplements", "iFit", "Super Supplement"],
+    "available_at": [
+      "House of Supplements",
+      "iFit",
+      "Super Supplement"
+    ],
     "coach_notes": "HPLC-tested premium creatine. Take 5g daily with water or juice. Loading phase optional.",
-    "benefits": ["Strength", "Power", "Muscle Volume", "Performance"]
+    "benefits": [
+      "Strength",
+      "Power",
+      "Muscle Volume",
+      "Performance"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Optimum Nutrition Micronized Creatine - 300g",
@@ -100,9 +140,19 @@
     "price_egp_max": 2200,
     "servings_per_container": 60,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "Amazon Egypt"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "Amazon Egypt"
+    ],
     "coach_notes": "Micronized for better absorption. Mix with post-workout shake.",
-    "benefits": ["Strength", "Power", "Muscle Volume", "Performance"]
+    "benefits": [
+      "Strength",
+      "Power",
+      "Muscle Volume",
+      "Performance"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Big Man Creatine Monohydrate",
@@ -121,9 +171,17 @@
     "price_egp_max": 500,
     "servings_per_container": 60,
     "is_egyptian": true,
-    "available_at": ["House of Supplements", "Local Gyms"],
+    "available_at": [
+      "House of Supplements",
+      "Local Gyms"
+    ],
     "coach_notes": "Budget-friendly local option. Same compound, lower price.",
-    "benefits": ["Strength", "Power", "Muscle Volume"]
+    "benefits": [
+      "Strength",
+      "Power",
+      "Muscle Volume"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Cellucor C4 Original Pre-Workout - 60 servings",
@@ -143,9 +201,20 @@
     "servings_per_container": 60,
     "caffeine_mg": 150,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "Beauty Expert", "Sporter"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "Beauty Expert",
+      "Sporter"
+    ],
     "coach_notes": "America's #1 Pre-Workout. Take 20-30 mins before training. Start with half scoop.",
-    "benefits": ["Energy", "Focus", "Pump", "Endurance"]
+    "benefits": [
+      "Energy",
+      "Focus",
+      "Pump",
+      "Endurance"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Cellucor C4 Original Pre-Workout - 30 servings",
@@ -165,9 +234,20 @@
     "servings_per_container": 30,
     "caffeine_mg": 150,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "Beauty Expert", "Sporter"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "Beauty Expert",
+      "Sporter"
+    ],
     "coach_notes": "Starter size pre-workout. Test tolerance before upgrading.",
-    "benefits": ["Energy", "Focus", "Pump", "Endurance"]
+    "benefits": [
+      "Energy",
+      "Focus",
+      "Pump",
+      "Endurance"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Dragon Pharma EAA+BCAA",
@@ -186,9 +266,17 @@
     "price_egp_max": 500,
     "servings_per_container": 30,
     "is_egyptian": true,
-    "available_at": ["Dragon Pharma Egypt", "Local Gyms"],
+    "available_at": [
+      "Dragon Pharma Egypt",
+      "Local Gyms"
+    ],
     "coach_notes": "Local brand with essential amino acids. Good value for money.",
-    "benefits": ["Recovery", "Muscle Preservation", "Reduced Soreness"]
+    "benefits": [
+      "Recovery",
+      "Muscle Preservation",
+      "Reduced Soreness"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Skeleton Nutrition EAA+BCAA",
@@ -207,9 +295,16 @@
     "price_egp_max": 1200,
     "servings_per_container": 30,
     "is_egyptian": false,
-    "available_at": ["House of Supplements"],
+    "available_at": [
+      "House of Supplements"
+    ],
     "coach_notes": "Complete amino acid profile. Take during or after workout.",
-    "benefits": ["Recovery", "Muscle Preservation", "Reduced Soreness"]
+    "benefits": [
+      "Recovery",
+      "Muscle Preservation",
+      "Reduced Soreness"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Muscle Add EAA+BCAA - 30 servings",
@@ -228,9 +323,17 @@
     "price_egp_max": 1200,
     "servings_per_container": 30,
     "is_egyptian": false,
-    "available_at": ["Amazon Egypt", "Noon"],
+    "available_at": [
+      "Amazon Egypt",
+      "Noon"
+    ],
     "coach_notes": "Sugar-free, zero carbs. Perfect for fasted training.",
-    "benefits": ["Recovery", "Muscle Growth", "No Sugar"]
+    "benefits": [
+      "Recovery",
+      "Muscle Growth",
+      "No Sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Centrum Men Multivitamin - 120 tablets",
@@ -249,9 +352,19 @@
     "price_egp_max": 500,
     "servings_per_container": 120,
     "is_egyptian": false,
-    "available_at": ["Pharmacies", "Beauty Expert", "Amazon Egypt"],
+    "available_at": [
+      "Pharmacies",
+      "Beauty Expert",
+      "Amazon Egypt"
+    ],
     "coach_notes": "Complete daily multivitamin. Take with breakfast for best absorption.",
-    "benefits": ["Overall Health", "Energy", "Immunity", "Heart Health"]
+    "benefits": [
+      "Overall Health",
+      "Energy",
+      "Immunity",
+      "Heart Health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
   },
   {
     "name_en": "Centrum Women Multivitamin",
@@ -270,9 +383,18 @@
     "price_egp_max": 150,
     "servings_per_container": 30,
     "is_egyptian": false,
-    "available_at": ["Pharmacies", "Bloom Pharmacy"],
+    "available_at": [
+      "Pharmacies",
+      "Bloom Pharmacy"
+    ],
     "coach_notes": "Formulated for women's nutritional needs including iron and calcium.",
-    "benefits": ["Overall Health", "Energy", "Immunity", "Bone Health"]
+    "benefits": [
+      "Overall Health",
+      "Energy",
+      "Immunity",
+      "Bone Health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
   },
   {
     "name_en": "LIMITLESS Omega-3 Fish Oil - 30 capsules",
@@ -294,9 +416,19 @@
     "epa_mg": 300,
     "dha_mg": 1000,
     "is_egyptian": true,
-    "available_at": ["Amazon Egypt", "Noon", "Tdawi"],
+    "available_at": [
+      "Amazon Egypt",
+      "Noon",
+      "Tdawi"
+    ],
     "coach_notes": "Local Egyptian brand. Good for heart and brain health. Take with meals.",
-    "benefits": ["Heart Health", "Brain Function", "Joint Health", "Inflammation"]
+    "benefits": [
+      "Heart Health",
+      "Brain Function",
+      "Joint Health",
+      "Inflammation"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-oil.jpg"
   },
   {
     "name_en": "NOW Foods Omega-3 Fish Oil - 100 softgels",
@@ -315,9 +447,17 @@
     "price_egp_max": 1100,
     "servings_per_container": 100,
     "is_egyptian": false,
-    "available_at": ["NOW Foods Egypt", "Noon"],
+    "available_at": [
+      "NOW Foods Egypt",
+      "Noon"
+    ],
     "coach_notes": "Premium quality fish oil. Molecularly distilled for purity.",
-    "benefits": ["Heart Health", "Brain Function", "Joint Health"]
+    "benefits": [
+      "Heart Health",
+      "Brain Function",
+      "Joint Health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-oil.jpg"
   },
   {
     "name_en": "Biotin Collagen Keratin Complex",
@@ -337,9 +477,18 @@
     "servings_per_container": 60,
     "biotin_mcg": 545000,
     "is_egyptian": false,
-    "available_at": ["Noon", "Amazon Egypt"],
+    "available_at": [
+      "Noon",
+      "Amazon Egypt"
+    ],
     "coach_notes": "For hair growth and skin health. Results typically visible after 4-6 weeks.",
-    "benefits": ["Hair Growth", "Skin Health", "Nail Strength", "Collagen Production"]
+    "benefits": [
+      "Hair Growth",
+      "Skin Health",
+      "Nail Strength",
+      "Collagen Production"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Vitamin D3 5000 IU",
@@ -358,9 +507,18 @@
     "price_egp_max": 300,
     "servings_per_container": 60,
     "is_egyptian": false,
-    "available_at": ["Pharmacies", "Supplement Stores"],
+    "available_at": [
+      "Pharmacies",
+      "Supplement Stores"
+    ],
     "coach_notes": "Essential for Egyptians despite sunny climate. Most are deficient. Take with fat.",
-    "benefits": ["Bone Health", "Immunity", "Mood", "Muscle Function"]
+    "benefits": [
+      "Bone Health",
+      "Immunity",
+      "Mood",
+      "Muscle Function"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Zinc 50mg",
@@ -379,9 +537,18 @@
     "price_egp_max": 200,
     "servings_per_container": 100,
     "is_egyptian": false,
-    "available_at": ["Pharmacies", "Supplement Stores"],
+    "available_at": [
+      "Pharmacies",
+      "Supplement Stores"
+    ],
     "coach_notes": "Supports testosterone and immunity. Take before bed on empty stomach.",
-    "benefits": ["Testosterone", "Immunity", "Recovery", "Skin Health"]
+    "benefits": [
+      "Testosterone",
+      "Immunity",
+      "Recovery",
+      "Skin Health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Magnesium Glycinate 400mg",
@@ -400,9 +567,18 @@
     "price_egp_max": 400,
     "servings_per_container": 60,
     "is_egyptian": false,
-    "available_at": ["Pharmacies", "Supplement Stores"],
+    "available_at": [
+      "Pharmacies",
+      "Supplement Stores"
+    ],
     "coach_notes": "Best form of magnesium. Helps with sleep and muscle cramps. Take before bed.",
-    "benefits": ["Sleep Quality", "Muscle Recovery", "Stress Relief", "Heart Health"]
+    "benefits": [
+      "Sleep Quality",
+      "Muscle Recovery",
+      "Stress Relief",
+      "Heart Health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Mass Gainer - Serious Mass 6lb",
@@ -421,9 +597,18 @@
     "price_egp_max": 4200,
     "servings_per_container": 8,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "Amazon Egypt"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "Amazon Egypt"
+    ],
     "coach_notes": "For hardgainers only. Very high calories. Split serving into 2 doses.",
-    "benefits": ["Weight Gain", "Muscle Building", "Calorie Surplus"]
+    "benefits": [
+      "Weight Gain",
+      "Muscle Building",
+      "Calorie Surplus"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Casein Protein - Gold Standard",
@@ -442,9 +627,17 @@
     "price_egp_max": 3800,
     "servings_per_container": 28,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement"],
+    "available_at": [
+      "iFit",
+      "Super Supplement"
+    ],
     "coach_notes": "Slow-digesting protein. Perfect before bed for overnight muscle recovery.",
-    "benefits": ["Overnight Recovery", "Muscle Preservation", "Satiety"]
+    "benefits": [
+      "Overnight Recovery",
+      "Muscle Preservation",
+      "Satiety"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "L-Glutamine 500g",
@@ -463,9 +656,18 @@
     "price_egp_max": 900,
     "servings_per_container": 100,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "House of Supplements"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "House of Supplements"
+    ],
     "coach_notes": "Supports gut health and recovery. Take 5g post-workout and 5g before bed.",
-    "benefits": ["Recovery", "Gut Health", "Immunity"]
+    "benefits": [
+      "Recovery",
+      "Gut Health",
+      "Immunity"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Platinum BCAA 8:1:1",
@@ -484,9 +686,17 @@
     "price_egp_max": 700,
     "servings_per_container": 30,
     "is_egyptian": false,
-    "available_at": ["Beauty Expert", "Super Supplement"],
+    "available_at": [
+      "Beauty Expert",
+      "Super Supplement"
+    ],
     "coach_notes": "High leucine ratio for maximum muscle protein synthesis.",
-    "benefits": ["Muscle Building", "Recovery", "Anti-Catabolic"]
+    "benefits": [
+      "Muscle Building",
+      "Recovery",
+      "Anti-Catabolic"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Citrulline Malate 200g",
@@ -505,9 +715,18 @@
     "price_egp_max": 600,
     "servings_per_container": 33,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement"],
+    "available_at": [
+      "iFit",
+      "Super Supplement"
+    ],
     "coach_notes": "For insane pumps. Take 6-8g 30 mins before workout. Stacks well with creatine.",
-    "benefits": ["Pump", "Endurance", "Nitric Oxide", "Performance"]
+    "benefits": [
+      "Pump",
+      "Endurance",
+      "Nitric Oxide",
+      "Performance"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Beta-Alanine 300g",
@@ -526,9 +745,17 @@
     "price_egp_max": 500,
     "servings_per_container": 100,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement"],
+    "available_at": [
+      "iFit",
+      "Super Supplement"
+    ],
     "coach_notes": "Tingling sensation is normal. Increases endurance for high-rep training.",
-    "benefits": ["Endurance", "Reduced Fatigue", "Performance"]
+    "benefits": [
+      "Endurance",
+      "Reduced Fatigue",
+      "Performance"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "CLA 1000mg - 90 softgels",
@@ -547,9 +774,17 @@
     "price_egp_max": 600,
     "servings_per_container": 90,
     "is_egyptian": false,
-    "available_at": ["Pharmacies", "Supplement Stores"],
+    "available_at": [
+      "Pharmacies",
+      "Supplement Stores"
+    ],
     "coach_notes": "Supports fat loss while preserving muscle. Take with meals.",
-    "benefits": ["Fat Loss", "Body Composition", "Lean Muscle"]
+    "benefits": [
+      "Fat Loss",
+      "Body Composition",
+      "Lean Muscle"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "L-Carnitine 1000mg",
@@ -568,9 +803,17 @@
     "price_egp_max": 500,
     "servings_per_container": 100,
     "is_egyptian": false,
-    "available_at": ["Pharmacies", "Supplement Stores"],
+    "available_at": [
+      "Pharmacies",
+      "Supplement Stores"
+    ],
     "coach_notes": "Helps transport fat for energy. Take 30 mins before cardio.",
-    "benefits": ["Fat Burning", "Energy", "Heart Health"]
+    "benefits": [
+      "Fat Burning",
+      "Energy",
+      "Heart Health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "ZMA - 90 capsules",
@@ -589,9 +832,19 @@
     "price_egp_max": 450,
     "servings_per_container": 30,
     "is_egyptian": false,
-    "available_at": ["iFit", "Super Supplement", "Pharmacies"],
+    "available_at": [
+      "iFit",
+      "Super Supplement",
+      "Pharmacies"
+    ],
     "coach_notes": "Zinc + Magnesium + B6. Take before bed on empty stomach for deep sleep.",
-    "benefits": ["Sleep", "Recovery", "Testosterone", "Muscle Repair"]
+    "benefits": [
+      "Sleep",
+      "Recovery",
+      "Testosterone",
+      "Muscle Repair"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   },
   {
     "name_en": "Ashwagandha KSM-66 600mg",
@@ -610,8 +863,17 @@
     "price_egp_max": 500,
     "servings_per_container": 60,
     "is_egyptian": false,
-    "available_at": ["iHerb", "Pharmacies"],
+    "available_at": [
+      "iHerb",
+      "Pharmacies"
+    ],
     "coach_notes": "Reduces cortisol and stress. Improves testosterone in men. Take daily.",
-    "benefits": ["Stress Relief", "Testosterone", "Recovery", "Sleep"]
+    "benefits": [
+      "Stress Relief",
+      "Testosterone",
+      "Recovery",
+      "Sleep"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   }
 ]

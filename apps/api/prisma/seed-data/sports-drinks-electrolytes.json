@@ -1,0 +1,299 @@
+[
+  {
+    "name_en": "Gatorade (Regular, 500ml)",
+    "name_ar": "جاتوريد (عادي، 500 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 140,
+    "protein_g": 0,
+    "carbs_g": 36,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "gatorade",
+      "electrolytes",
+      "carbs",
+      "hydration"
+    ]
+  },
+  {
+    "name_en": "Powerade (Regular, 500ml)",
+    "name_ar": "باوريد (عادي، 500 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 130,
+    "protein_g": 0,
+    "carbs_g": 34,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "powerade",
+      "electrolytes",
+      "hydration"
+    ]
+  },
+  {
+    "name_en": "Lucozade Sport (500ml)",
+    "name_ar": "لوكوزيد سبورت (500 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 140,
+    "protein_g": 0,
+    "carbs_g": 32,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "lucozade",
+      "electrolytes",
+      "endurance"
+    ]
+  },
+  {
+    "name_en": "Gatorade Zero (Sugar-Free, 500ml)",
+    "name_ar": "جاتوريد زيرو (بدون سكر، 500 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "gatorade_zero",
+      "zero_calorie",
+      "electrolytes",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Homemade Electrolyte Drink (Water + Salt + Lemon + Honey)",
+    "name_ar": "مشروب إلكتروليت بيتي (ماء + ملح + ليمون + عسل)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 70,
+    "protein_g": 0,
+    "carbs_g": 18,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "sports_drink",
+      "homemade",
+      "electrolytes",
+      "cheap",
+      "natural",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  },
+  {
+    "name_en": "BCAA Drink (Flavored, Intra-Workout, 500ml)",
+    "name_ar": "مشروب BCAA (بنكهة، أثناء التمرين، 500 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 15,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "bcaa",
+      "intra_workout",
+      "recovery",
+      "zero_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Pedialyte (Rehydration, 500ml)",
+    "name_ar": "بديالايت (إعادة ترطيب، 500 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 50,
+    "protein_g": 0,
+    "carbs_g": 12,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "pedialyte",
+      "rehydration",
+      "sick",
+      "electrolytes"
+    ]
+  },
+  {
+    "name_en": "Protein Water (Clear Whey, 500ml)",
+    "name_ar": "ماء بروتين (واي صافي، 500 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 90,
+    "protein_g": 20,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "protein_water",
+      "clear_whey",
+      "hydration",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/water.jpg"
+  },
+  {
+    "name_en": "Pre-Workout Drink (Mixed, Ready to Drink)",
+    "name_ar": "بري ووركاوت جاهز للشرب",
+    "category": "sports_drink",
+    "serving_size_g": 350,
+    "calories": 15,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "pre_workout",
+      "caffeine",
+      "energy",
+      "pump"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Amino Energy Drink (Optimum Nutrition Style, 350ml)",
+    "name_ar": "أمينو إنرجي (ستايل أوبتيمم، 350 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 350,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "amino_energy",
+      "caffeine",
+      "focus",
+      "zero_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/energy-drink.jpg"
+  },
+  {
+    "name_en": "Carb Gel (Energy Gel, 1 packet)",
+    "name_ar": "جيل طاقة كارب (عبوة)",
+    "category": "sports_drink",
+    "serving_size_g": 35,
+    "calories": 100,
+    "protein_g": 0,
+    "carbs_g": 25,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "energy_gel",
+      "carbs",
+      "endurance",
+      "running",
+      "cycling"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Electrolyte Tablets (Nuun Style, 1 tablet in water)",
+    "name_ar": "أقراص إلكتروليت (ستايل نون، قرص في ماء)",
+    "category": "sports_drink",
+    "serving_size_g": 500,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "electrolyte_tabs",
+      "zero_calorie",
+      "portable",
+      "hydration"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/water.jpg"
+  },
+  {
+    "name_en": "Coconut Water with Protein (1 bottle, 350ml)",
+    "name_ar": "ماء جوز هند ببروتين (زجاجة 350 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 350,
+    "calories": 120,
+    "protein_g": 10,
+    "carbs_g": 14,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "coconut_water",
+      "protein",
+      "hydration",
+      "natural"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut-water.jpg"
+  },
+  {
+    "name_en": "Tart Cherry Juice (Recovery, 250ml)",
+    "name_ar": "عصير كرز حامض (تعافي، 250 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 250,
+    "calories": 120,
+    "protein_g": 1,
+    "carbs_g": 28,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sports_drink",
+      "tart_cherry",
+      "recovery",
+      "anti_inflammatory",
+      "sleep"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cherries.jpg"
+  },
+  {
+    "name_en": "Beetroot Juice (Performance, 250ml)",
+    "name_ar": "عصير بنجر (أداء رياضي، 250 مل)",
+    "category": "sports_drink",
+    "serving_size_g": 250,
+    "calories": 100,
+    "protein_g": 2,
+    "carbs_g": 22,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "sports_drink",
+      "beetroot",
+      "nitric_oxide",
+      "endurance",
+      "pre_workout",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  }
+]

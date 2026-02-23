@@ -1,0 +1,567 @@
+[
+  {
+    "name_en": "Cappuccino (Regular, with Sugar)",
+    "name_ar": "كابتشينو (عادي، بسكر)",
+    "category": "cafe",
+    "serving_size_g": 240,
+    "calories": 150,
+    "protein_g": 6,
+    "carbs_g": 18,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "cappuccino",
+      "coffee",
+      "milk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Cappuccino (Regular, no Sugar)",
+    "name_ar": "كابتشينو (بدون سكر)",
+    "category": "cafe",
+    "serving_size_g": 240,
+    "calories": 90,
+    "protein_g": 6,
+    "carbs_g": 9,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "cappuccino",
+      "coffee",
+      "milk",
+      "no_sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Latte (Regular, with Sugar)",
+    "name_ar": "لاتيه (عادي، بسكر)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 200,
+    "protein_g": 8,
+    "carbs_g": 25,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "latte",
+      "coffee",
+      "milk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Latte (Regular, Skim Milk, no Sugar)",
+    "name_ar": "لاتيه (لبن خالي الدسم، بدون سكر)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 100,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "latte",
+      "skim_milk",
+      "low_calorie",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Espresso (Double Shot)",
+    "name_ar": "إسبريسو (دبل شوت)",
+    "category": "cafe",
+    "serving_size_g": 60,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "espresso",
+      "coffee",
+      "zero_calorie",
+      "pre_workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Americano (Regular)",
+    "name_ar": "أمريكانو (عادي)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "americano",
+      "coffee",
+      "zero_calorie",
+      "pre_workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Mocha (Regular, with Whipped Cream)",
+    "name_ar": "موكا (عادي، بكريمة)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 350,
+    "protein_g": 8,
+    "carbs_g": 42,
+    "fat_g": 16,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "mocha",
+      "chocolate",
+      "high_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Iced Coffee (Regular, with Milk & Sugar)",
+    "name_ar": "آيس كوفي (عادي، بلبن وسكر)",
+    "category": "cafe",
+    "serving_size_g": 400,
+    "calories": 180,
+    "protein_g": 5,
+    "carbs_g": 28,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "iced_coffee",
+      "summer"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Cold Brew (Black, no Sugar)",
+    "name_ar": "كولد برو (بدون سكر)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "cold_brew",
+      "coffee",
+      "zero_calorie",
+      "summer"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Frappuccino / Frappe (Regular)",
+    "name_ar": "فرابتشينو / فرابيه (عادي)",
+    "category": "cafe",
+    "serving_size_g": 400,
+    "calories": 380,
+    "protein_g": 5,
+    "carbs_g": 58,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "frappuccino",
+      "frappe",
+      "high_sugar",
+      "treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Matcha Latte (Regular)",
+    "name_ar": "ماتشا لاتيه (عادي)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 180,
+    "protein_g": 6,
+    "carbs_g": 28,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "matcha",
+      "green_tea",
+      "antioxidant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Chai Latte (Regular)",
+    "name_ar": "شاي لاتيه (عادي)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 200,
+    "protein_g": 5,
+    "carbs_g": 35,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "chai",
+      "spiced_tea",
+      "milk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  },
+  {
+    "name_en": "Croissant — Plain (1 piece)",
+    "name_ar": "كرواسون سادة (قطعة)",
+    "category": "cafe",
+    "serving_size_g": 65,
+    "calories": 250,
+    "protein_g": 5,
+    "carbs_g": 28,
+    "fat_g": 13,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "croissant",
+      "pastry",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/croissants.jpg"
+  },
+  {
+    "name_en": "Croissant — Za'atar & Cheese",
+    "name_ar": "كرواسون زعتر وجبنة",
+    "category": "cafe",
+    "serving_size_g": 80,
+    "calories": 300,
+    "protein_g": 8,
+    "carbs_g": 28,
+    "fat_g": 18,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "croissant",
+      "zaatar",
+      "cheese",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Blueberry Muffin (1 piece)",
+    "name_ar": "مافين بلوبيري (قطعة)",
+    "category": "cafe",
+    "serving_size_g": 110,
+    "calories": 380,
+    "protein_g": 5,
+    "carbs_g": 52,
+    "fat_g": 18,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "muffin",
+      "blueberry",
+      "pastry",
+      "high_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/blueberries.jpg"
+  },
+  {
+    "name_en": "Chocolate Chip Cookie (1 large)",
+    "name_ar": "كوكيز شوكولاتة (قطعة كبيرة)",
+    "category": "cafe",
+    "serving_size_g": 60,
+    "calories": 280,
+    "protein_g": 3,
+    "carbs_g": 38,
+    "fat_g": 13,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "cookie",
+      "chocolate",
+      "treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Banana Bread Slice",
+    "name_ar": "شريحة بنانا بريد",
+    "category": "cafe",
+    "serving_size_g": 100,
+    "calories": 300,
+    "protein_g": 4,
+    "carbs_g": 42,
+    "fat_g": 14,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "banana_bread",
+      "pastry",
+      "snack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
+  },
+  {
+    "name_en": "Avocado Toast (Cafe Style, 1 piece)",
+    "name_ar": "أفوكادو توست (كافيه ستايل، قطعة)",
+    "category": "cafe",
+    "serving_size_g": 200,
+    "calories": 320,
+    "protein_g": 8,
+    "carbs_g": 28,
+    "fat_g": 20,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "avocado_toast",
+      "healthy",
+      "trendy",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  },
+  {
+    "name_en": "Acai Bowl (Cafe Style)",
+    "name_ar": "أساي بول (كافيه ستايل)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 400,
+    "protein_g": 6,
+    "carbs_g": 65,
+    "fat_g": 14,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "acai_bowl",
+      "superfood",
+      "berries",
+      "trendy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/blueberries.jpg"
+  },
+  {
+    "name_en": "Protein Smoothie Bowl (Cafe)",
+    "name_ar": "بول سموذي بروتين (كافيه)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 350,
+    "protein_g": 25,
+    "carbs_g": 45,
+    "fat_g": 8,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "smoothie_bowl",
+      "protein",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Eggs Benedict (Cafe, 2 eggs)",
+    "name_ar": "إيجز بينيديكت (كافيه، 2 بيضة)",
+    "category": "cafe",
+    "serving_size_g": 250,
+    "calories": 450,
+    "protein_g": 22,
+    "carbs_g": 25,
+    "fat_g": 28,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "eggs_benedict",
+      "hollandaise",
+      "brunch"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
+  },
+  {
+    "name_en": "Club Sandwich (Cafe)",
+    "name_ar": "كلوب ساندويتش (كافيه)",
+    "category": "cafe",
+    "serving_size_g": 350,
+    "calories": 550,
+    "protein_g": 28,
+    "carbs_g": 40,
+    "fat_g": 30,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "club_sandwich",
+      "chicken",
+      "bacon_free"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bread.jpg"
+  },
+  {
+    "name_en": "Caesar Wrap (Cafe)",
+    "name_ar": "سيزر راب (كافيه)",
+    "category": "cafe",
+    "serving_size_g": 300,
+    "calories": 420,
+    "protein_g": 25,
+    "carbs_g": 35,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "caesar_wrap",
+      "chicken",
+      "lunch"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flour-tortilla.jpg"
+  },
+  {
+    "name_en": "Flat White (Regular)",
+    "name_ar": "فلات وايت (عادي)",
+    "category": "cafe",
+    "serving_size_g": 200,
+    "calories": 80,
+    "protein_g": 5,
+    "carbs_g": 8,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "flat_white",
+      "coffee",
+      "milk"
+    ]
+  },
+  {
+    "name_en": "Turkish Delight (Malban, 3 pieces)",
+    "name_ar": "ملبن / لقوم (3 قطع)",
+    "category": "cafe",
+    "serving_size_g": 45,
+    "calories": 150,
+    "protein_g": 0,
+    "carbs_g": 35,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "cafe",
+      "turkish_delight",
+      "malban",
+      "sugar",
+      "treat",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Kunafa Cone (Trendy, 1 piece)",
+    "name_ar": "كون كنافة (ترند، قطعة)",
+    "category": "cafe",
+    "serving_size_g": 120,
+    "calories": 380,
+    "protein_g": 6,
+    "carbs_g": 48,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "cafe",
+      "kunafa_cone",
+      "trendy",
+      "dessert",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
+  },
+  {
+    "name_en": "Nutella Crepe (1 whole)",
+    "name_ar": "كريب نوتيلا (واحد كامل)",
+    "category": "cafe",
+    "serving_size_g": 180,
+    "calories": 500,
+    "protein_g": 8,
+    "carbs_g": 60,
+    "fat_g": 26,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "crepe",
+      "nutella",
+      "dessert",
+      "high_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/crepes.jpg"
+  },
+  {
+    "name_en": "Savory Crepe (Chicken & Cheese)",
+    "name_ar": "كريب فراخ وجبنة",
+    "category": "cafe",
+    "serving_size_g": 250,
+    "calories": 420,
+    "protein_g": 24,
+    "carbs_g": 35,
+    "fat_g": 20,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "crepe",
+      "savory",
+      "chicken",
+      "cheese"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "Waffle with Nutella & Strawberry",
+    "name_ar": "وافل بنوتيلا وفراولة",
+    "category": "cafe",
+    "serving_size_g": 200,
+    "calories": 520,
+    "protein_g": 8,
+    "carbs_g": 65,
+    "fat_g": 24,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "cafe",
+      "waffle",
+      "nutella",
+      "strawberry",
+      "dessert",
+      "cheat_meal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/strawberries.jpg"
+  }
+]

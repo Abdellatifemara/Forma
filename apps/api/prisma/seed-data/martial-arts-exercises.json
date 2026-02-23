@@ -1,0 +1,1521 @@
+[
+  {
+    "id": "boxing-jab",
+    "name_en": "Jab",
+    "name_ar": "جاب",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "TRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 30,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "muay-thai",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "boxing-cross",
+    "name_en": "Cross (Straight Right)",
+    "name_ar": "كروس",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "TRICEPS",
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 30,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "muay-thai",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "boxing-hook",
+    "name_en": "Hook",
+    "name_ar": "هوك",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "ABS",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "muay-thai",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "boxing-body-hook",
+    "name_en": "Body Hook",
+    "name_ar": "هوك للجسم",
+    "primary_muscle": "OBLIQUES",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "boxing-body-uppercut",
+    "name_en": "Body Uppercut",
+    "name_ar": "أبركات للجسم",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "boxing",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "boxing-overhand",
+    "name_en": "Overhand Right",
+    "name_ar": "أوفرهاند",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "TRICEPS",
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "boxing-1-2-3-combo",
+    "name_en": "Jab-Cross-Hook Combo (1-2-3)",
+    "name_ar": "كومبو جاب كروس هوك",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "TRICEPS",
+      "ABS",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 15,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "combo",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "boxing-1-2-3-2-combo",
+    "name_en": "Jab-Cross-Hook-Cross (1-2-3-2)",
+    "name_ar": "كومبو ١-٢-٣-٢",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 12,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "combo",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "boxing-1-2-5-2-combo",
+    "name_en": "Jab-Cross-Uppercut-Cross (1-2-5-2)",
+    "name_ar": "كومبو ١-٢-٥-٢",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 12,
+    "tags": [
+      "boxing",
+      "combo",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "boxing-1-6-3-2-combo",
+    "name_en": "Jab-Body Uppercut-Hook-Cross",
+    "name_ar": "كومبو متقدم",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "ABS",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 10,
+    "tags": [
+      "boxing",
+      "combo",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "boxing-shadow-boxing-basic",
+    "name_en": "Shadow Boxing (Basic)",
+    "name_ar": "شادو بوكسينج أساسي",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "ABS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "boxing",
+      "shadow-boxing",
+      "home-training",
+      "cardio",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "boxing-shadow-boxing-advanced",
+    "name_en": "Shadow Boxing (Advanced with Footwork)",
+    "name_ar": "شادو بوكسينج متقدم مع حركة الأقدام",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "CALVES",
+      "ABS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "boxing",
+      "shadow-boxing",
+      "home-training",
+      "cardio",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "kickboxing-shadow-boxing",
+    "name_en": "Kickboxing Shadow Boxing",
+    "name_ar": "شادو كيكبوكسينج",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "GLUTES",
+      "ABS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "kickboxing",
+      "shadow-boxing",
+      "home-training",
+      "cardio",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "muaythai-shadow-boxing",
+    "name_en": "Muay Thai Shadow Boxing (Full Arsenal)",
+    "name_ar": "شادو مواي تاي بالكامل",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "QUADRICEPS",
+      "ABS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "muay-thai",
+      "shadow-boxing",
+      "home-training",
+      "cardio",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "boxing-heavy-bag-rounds",
+    "name_en": "Heavy Bag Rounds (Boxing)",
+    "name_ar": "راوند على الكيس (بوكسينج)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "ABS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "HEAVY_BAG",
+      "BOXING_GLOVES"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "boxing",
+      "heavy-bag",
+      "cardio"
+    ]
+  },
+  {
+    "id": "kickboxing-heavy-bag-rounds",
+    "name_en": "Heavy Bag Rounds (Kickboxing)",
+    "name_ar": "راوند على الكيس (كيكبوكسينج)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "SHOULDERS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "HEAVY_BAG",
+      "BOXING_GLOVES",
+      "SHIN_GUARDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "kickboxing",
+      "heavy-bag",
+      "cardio"
+    ]
+  },
+  {
+    "id": "muaythai-heavy-bag-rounds",
+    "name_en": "Heavy Bag Rounds (Muay Thai)",
+    "name_ar": "راوند على الكيس (مواي تاي)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "SHOULDERS",
+      "ABS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "HEAVY_BAG",
+      "BOXING_GLOVES",
+      "SHIN_GUARDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "muay-thai",
+      "heavy-bag",
+      "cardio"
+    ]
+  },
+  {
+    "id": "boxing-pad-work",
+    "name_en": "Pad Work (Boxing)",
+    "name_ar": "تمرين على البادز (بوكسينج)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "ABS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "PADS",
+      "BOXING_GLOVES"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "boxing",
+      "pad-work"
+    ]
+  },
+  {
+    "id": "kickboxing-pad-work",
+    "name_en": "Pad Work (Kickboxing)",
+    "name_ar": "تمرين على البادز (كيكبوكسينج)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "SHOULDERS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "PADS",
+      "BOXING_GLOVES",
+      "SHIN_GUARDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "kickboxing",
+      "pad-work"
+    ]
+  },
+  {
+    "id": "muaythai-pad-work",
+    "name_en": "Pad Work (Muay Thai)",
+    "name_ar": "تمرين على البادز (مواي تاي)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "SHOULDERS",
+      "ABS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "PADS",
+      "BOXING_GLOVES",
+      "SHIN_GUARDS"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "muay-thai",
+      "pad-work"
+    ]
+  },
+  {
+    "id": "kick-front-kick",
+    "name_en": "Front Kick (Teep/Push Kick)",
+    "name_ar": "ركلة أمامية (تيب)",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "ABS",
+      "GLUTES",
+      "CALVES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "kicks",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "kick-low-kick",
+    "name_en": "Low Kick (Leg Kick)",
+    "name_ar": "ركلة سفلية",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES",
+      "CALVES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "kicks",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "kick-body-kick",
+    "name_en": "Body Kick (Mid Roundhouse)",
+    "name_ar": "ركلة للجسم",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES",
+      "ABS",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "kicks",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "kick-head-kick",
+    "name_en": "Head Kick (High Roundhouse)",
+    "name_ar": "ركلة عالية للرأس",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES",
+      "HAMSTRINGS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "kicks",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "kick-switch-kick",
+    "name_en": "Switch Kick",
+    "name_ar": "ركلة بالتبديل",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES",
+      "CALVES",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "kicks",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "kick-spinning-back-kick",
+    "name_en": "Spinning Back Kick",
+    "name_ar": "ركلة خلفية دائرية",
+    "primary_muscle": "GLUTES",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "ABS",
+      "LOWER_BACK"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 8,
+    "tags": [
+      "kickboxing",
+      "kicks",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "kick-axe-kick",
+    "name_en": "Axe Kick",
+    "name_ar": "ركلة الفأس",
+    "primary_muscle": "HAMSTRINGS",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 10,
+    "tags": [
+      "kickboxing",
+      "kicks",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "kick-question-mark",
+    "name_en": "Question Mark Kick",
+    "name_ar": "ركلة علامة الاستفهام",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "EXPERT",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 8,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "kicks"
+    ]
+  },
+  {
+    "id": "muaythai-elbow-horizontal",
+    "name_en": "Horizontal Elbow Strike",
+    "name_ar": "ضربة كوع أفقية",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "ABS",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "muay-thai",
+      "elbows",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "muaythai-elbow-upward",
+    "name_en": "Upward Elbow (Uppercut Elbow)",
+    "name_ar": "كوع علوي",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "muay-thai",
+      "elbows",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "muaythai-elbow-downward",
+    "name_en": "Downward Elbow (12-6 Elbow)",
+    "name_ar": "كوع نازل",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "TRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "muay-thai",
+      "elbows",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "muaythai-elbow-spinning",
+    "name_en": "Spinning Elbow",
+    "name_ar": "كوع دائري",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "ABS",
+      "OBLIQUES",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 8,
+    "tags": [
+      "muay-thai",
+      "elbows",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "muaythai-elbow-diagonal",
+    "name_en": "Diagonal Elbow (Slashing Elbow)",
+    "name_ar": "كوع مائل",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "ABS",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "muay-thai",
+      "elbows",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "muaythai-knee-straight",
+    "name_en": "Straight Knee Strike",
+    "name_ar": "ركبة مستقيمة",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "muay-thai",
+      "knees",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "muaythai-knee-diagonal",
+    "name_en": "Diagonal Knee Strike",
+    "name_ar": "ركبة مائلة",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "OBLIQUES",
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "muay-thai",
+      "knees",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "muaythai-knee-curving",
+    "name_en": "Curving Knee Strike",
+    "name_ar": "ركبة منحنية",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "OBLIQUES",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "muay-thai",
+      "knees",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "muaythai-knee-flying",
+    "name_en": "Flying Knee",
+    "name_ar": "ركبة طائرة",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES",
+      "ABS",
+      "CALVES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 8,
+    "tags": [
+      "muay-thai",
+      "knees",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "muaythai-knee-skip",
+    "name_en": "Skip Knee (Step Knee)",
+    "name_ar": "ركبة بالخطوة",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "CALVES",
+      "ABS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 12,
+    "tags": [
+      "muay-thai",
+      "knees",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "muaythai-clinch-work",
+    "name_en": "Clinch Work (Plum Position)",
+    "name_ar": "تمرين الكلينش (البلوم)",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "ABS",
+      "BICEPS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 120,
+    "tags": [
+      "muay-thai",
+      "clinch"
+    ]
+  },
+  {
+    "id": "muaythai-clinch-knee-drive",
+    "name_en": "Clinch Knee Drive",
+    "name_ar": "ركبة من الكلينش",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "ABS",
+      "SHOULDERS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "muay-thai",
+      "clinch",
+      "knees"
+    ]
+  },
+  {
+    "id": "muaythai-clinch-sweep",
+    "name_en": "Clinch Sweep (Dump)",
+    "name_ar": "كنس من الكلينش",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "GLUTES",
+      "ABS",
+      "QUADRICEPS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 8,
+    "tags": [
+      "muay-thai",
+      "clinch"
+    ]
+  },
+  {
+    "id": "defense-slip",
+    "name_en": "Slip (Head Movement)",
+    "name_ar": "سليب (حركة الرأس)",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [
+      "OBLIQUES",
+      "QUADRICEPS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "defense",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "defense-parry",
+    "name_en": "Parry",
+    "name_ar": "باري (صد)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "FOREARMS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "defense",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "defense-check-kick",
+    "name_en": "Kick Check (Shin Block)",
+    "name_ar": "صد الركلة بالساق",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "defense",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "defense-pull-back",
+    "name_en": "Pull Back (Lean Back)",
+    "name_ar": "سحب للخلف",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "CALVES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 15,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "defense",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "defense-catch-kick",
+    "name_en": "Catch Kick and Sweep",
+    "name_ar": "مسك الركلة وكنس",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "ABS",
+      "SHOULDERS",
+      "GLUTES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 8,
+    "tags": [
+      "muay-thai",
+      "kickboxing",
+      "defense"
+    ]
+  },
+  {
+    "id": "defense-footwork-drill",
+    "name_en": "Footwork Drill (In-Out, Angles)",
+    "name_ar": "تمرين حركة الأقدام",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "CARDIO"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 120,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "muay-thai",
+      "defense",
+      "shadow-boxing",
+      "home-training",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "defense-pivot-drill",
+    "name_en": "Pivot Drill (Angle Changes)",
+    "name_ar": "تمرين البيفوت",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 120,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "defense",
+      "shadow-boxing",
+      "home-training",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "conditioning-jump-rope-boxing",
+    "name_en": "Jump Rope (Boxing Rhythm)",
+    "name_ar": "نط الحبل (ايقاع بوكسينج)",
+    "primary_muscle": "CALVES",
+    "secondary_muscles": [
+      "CARDIO",
+      "SHOULDERS",
+      "ABS"
+    ],
+    "equipment": [
+      "JUMP_ROPE"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "muay-thai",
+      "conditioning",
+      "cardio"
+    ]
+  },
+  {
+    "id": "conditioning-double-end-bag",
+    "name_en": "Double End Bag",
+    "name_ar": "كيس الطرفين",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "ABS",
+      "CARDIO",
+      "FOREARMS"
+    ],
+    "equipment": [
+      "HEAVY_BAG"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "boxing",
+      "conditioning"
+    ]
+  },
+  {
+    "id": "home-shadow-boxing-hiit",
+    "name_en": "Shadow Boxing HIIT (30s on/10s off)",
+    "name_ar": "شادو بوكسينج HIIT",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "CARDIO",
+      "SHOULDERS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 8,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 30,
+    "tags": [
+      "home-training",
+      "no-equipment",
+      "hiit",
+      "shadow-boxing",
+      "cardio"
+    ]
+  },
+  {
+    "id": "home-kick-shadow-drill",
+    "name_en": "Kick Shadow Drill (Alternating)",
+    "name_ar": "تمرين ركلات شادو",
+    "primary_muscle": "QUADRICEPS",
+    "secondary_muscles": [
+      "GLUTES",
+      "ABS",
+      "CALVES",
+      "CARDIO"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 4,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 120,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "home-training",
+      "no-equipment",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "home-boxing-burpee-combo",
+    "name_en": "Boxing Burpee Combo (Punch-Sprawl)",
+    "name_ar": "بوكسينج بيربي كومبو",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "CARDIO",
+      "SHOULDERS",
+      "ABS",
+      "QUADRICEPS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 4,
+    "default_reps": 10,
+    "tags": [
+      "home-training",
+      "no-equipment",
+      "hiit",
+      "conditioning"
+    ]
+  },
+  {
+    "id": "home-wall-punch-drill",
+    "name_en": "Wall Shadow Punch Drill (Distance Control)",
+    "name_ar": "تمرين لكمات على الحائط",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "TRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 120,
+    "tags": [
+      "boxing",
+      "home-training",
+      "no-equipment",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "home-mirror-defense-drill",
+    "name_en": "Mirror Defense Drill (Slip and Counter)",
+    "name_ar": "تمرين دفاع أمام المرآة",
+    "primary_muscle": "ABS",
+    "secondary_muscles": [
+      "OBLIQUES",
+      "SHOULDERS",
+      "QUADRICEPS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 1,
+    "isTimeBased": true,
+    "defaultDuration": 180,
+    "tags": [
+      "boxing",
+      "kickboxing",
+      "home-training",
+      "no-equipment",
+      "defense"
+    ]
+  },
+  {
+    "id": "home-towel-whip-drill",
+    "name_en": "Towel Whip Drill (Punch Speed)",
+    "name_ar": "تمرين المنشفة (سرعة اللكمات)",
+    "primary_muscle": "SHOULDERS",
+    "secondary_muscles": [
+      "TRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 3,
+    "default_reps": 20,
+    "tags": [
+      "boxing",
+      "home-training",
+      "no-equipment",
+      "conditioning"
+    ]
+  },
+  {
+    "id": "kickboxing-combo-jab-cross-lowkick",
+    "name_en": "Jab-Cross-Low Kick",
+    "name_ar": "جاب كروس ركلة سفلية",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "QUADRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "BEGINNER",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 15,
+    "tags": [
+      "kickboxing",
+      "combo",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "kickboxing-combo-jab-cross-hook-roundhouse",
+    "name_en": "Jab-Cross-Hook-Roundhouse",
+    "name_ar": "جاب كروس هوك ركلة دائرية",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "QUADRICEPS",
+      "ABS",
+      "OBLIQUES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 10,
+    "tags": [
+      "kickboxing",
+      "combo",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "kickboxing-combo-teep-cross-hook-lowkick",
+    "name_en": "Teep-Cross-Hook-Low Kick",
+    "name_ar": "تيب كروس هوك ركلة سفلية",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "SHOULDERS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 10,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "combo",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "muaythai-combo-jab-cross-elbow-knee",
+    "name_en": "Jab-Cross-Elbow-Knee",
+    "name_ar": "جاب كروس كوع ركبة",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "SHOULDERS",
+      "QUADRICEPS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 10,
+    "tags": [
+      "muay-thai",
+      "combo",
+      "shadow-boxing",
+      "home-training"
+    ]
+  },
+  {
+    "id": "muaythai-combo-roundhouse-elbow-knee-clinch",
+    "name_en": "Roundhouse-Elbow-Knee into Clinch",
+    "name_ar": "ركلة دائرية كوع ركبة كلينش",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "SHOULDERS",
+      "ABS"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "ADVANCED",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 8,
+    "tags": [
+      "muay-thai",
+      "combo",
+      "shadow-boxing"
+    ]
+  },
+  {
+    "id": "muaythai-combo-dutch-style",
+    "name_en": "Dutch Combo (Hook-Low Kick-Hook-Low Kick)",
+    "name_ar": "كومبو هولندي",
+    "primary_muscle": "FULL_BODY",
+    "secondary_muscles": [
+      "QUADRICEPS",
+      "OBLIQUES",
+      "ABS",
+      "CALVES"
+    ],
+    "equipment": [
+      "BODYWEIGHT"
+    ],
+    "difficulty": "INTERMEDIATE",
+    "category": "MARTIAL_ARTS",
+    "default_sets": 5,
+    "default_reps": 10,
+    "tags": [
+      "kickboxing",
+      "muay-thai",
+      "combo",
+      "shadow-boxing",
+      "home-training"
+    ]
+  }
+]

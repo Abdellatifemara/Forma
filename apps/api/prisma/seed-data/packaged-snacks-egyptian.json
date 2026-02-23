@@ -1,0 +1,378 @@
+[
+  {
+    "name_en": "Chipsy (Original, 80g bag)",
+    "name_ar": "شيبسي (أوريجنال، كيس 80 جرام)",
+    "category": "snack",
+    "serving_size_g": 80,
+    "calories": 400,
+    "protein_g": 5,
+    "carbs_g": 50,
+    "fat_g": 20,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "chipsy",
+      "chips",
+      "egyptian",
+      "junk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potato-chips.jpg"
+  },
+  {
+    "name_en": "Chipsy (Cheese, 80g bag)",
+    "name_ar": "شيبسي (جبنة، كيس 80 جرام)",
+    "category": "snack",
+    "serving_size_g": 80,
+    "calories": 420,
+    "protein_g": 5,
+    "carbs_g": 48,
+    "fat_g": 22,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "chipsy",
+      "cheese",
+      "chips",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Tiger (Cheese Puffs, 65g)",
+    "name_ar": "تايجر (باف جبنة، 65 جرام)",
+    "category": "snack",
+    "serving_size_g": 65,
+    "calories": 340,
+    "protein_g": 4,
+    "carbs_g": 38,
+    "fat_g": 20,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "tiger",
+      "cheese_puffs",
+      "egyptian",
+      "junk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Molto (Chocolate Croissant, 1 piece)",
+    "name_ar": "مولتو (كرواسون شيكولاتة، حبة)",
+    "category": "snack",
+    "serving_size_g": 55,
+    "calories": 220,
+    "protein_g": 3,
+    "carbs_g": 30,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "molto",
+      "croissant",
+      "chocolate",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Bake Rolz (Cheese, 50g)",
+    "name_ar": "بيك رولز (جبنة، 50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 240,
+    "protein_g": 4,
+    "carbs_g": 30,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "bake_rolz",
+      "cheese",
+      "baked",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Bake Stix (Tomato, 50g)",
+    "name_ar": "بيك ستيكس (طماطم، 50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 230,
+    "protein_g": 4,
+    "carbs_g": 32,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "bake_stix",
+      "tomato",
+      "baked",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tomato.jpg"
+  },
+  {
+    "name_en": "Corona Chocolate Bar (50g)",
+    "name_ar": "كورونا شيكولاتة (50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 270,
+    "protein_g": 3,
+    "carbs_g": 32,
+    "fat_g": 14,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "corona",
+      "chocolate",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Snickers Bar (Regular, 50g)",
+    "name_ar": "سنيكرز (عادي، 50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 250,
+    "protein_g": 4,
+    "carbs_g": 32,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "snickers",
+      "chocolate",
+      "peanuts",
+      "candy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Mars Bar (Regular, 51g)",
+    "name_ar": "مارس (عادي، 51 جرام)",
+    "category": "snack",
+    "serving_size_g": 51,
+    "calories": 230,
+    "protein_g": 2,
+    "carbs_g": 35,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "mars",
+      "chocolate",
+      "caramel",
+      "candy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Twix (1 bar, 50g)",
+    "name_ar": "تويكس (بار واحد، 50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 250,
+    "protein_g": 2,
+    "carbs_g": 33,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "twix",
+      "chocolate",
+      "caramel",
+      "biscuit"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Oreo Cookies (3 pieces)",
+    "name_ar": "أوريو (3 حبات)",
+    "category": "snack",
+    "serving_size_g": 34,
+    "calories": 160,
+    "protein_g": 1,
+    "carbs_g": 25,
+    "fat_g": 7,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "oreo",
+      "cookies",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Egyptian Biscuit Misr (Abu Sorour, 1 pack)",
+    "name_ar": "بسكويت مصر (أبو سرور، عبوة)",
+    "category": "snack",
+    "serving_size_g": 75,
+    "calories": 320,
+    "protein_g": 5,
+    "carbs_g": 48,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "biscuit_misr",
+      "biscuit",
+      "egyptian",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cookies.jpg"
+  },
+  {
+    "name_en": "Halawa Bar (Tahini Sesame Bar, 1 piece)",
+    "name_ar": "بار حلاوة (طحينية سمسم، حبة)",
+    "category": "snack",
+    "serving_size_g": 40,
+    "calories": 200,
+    "protein_g": 4,
+    "carbs_g": 22,
+    "fat_g": 12,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "halawa_bar",
+      "tahini",
+      "sesame",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sesame-seeds.jpg"
+  },
+  {
+    "name_en": "Nutella (1 tablespoon, 15g)",
+    "name_ar": "نوتيلا (معلقة كبيرة، 15 جرام)",
+    "category": "snack",
+    "serving_size_g": 15,
+    "calories": 80,
+    "protein_g": 1,
+    "carbs_g": 9,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "nutella",
+      "hazelnut",
+      "spread",
+      "chocolate"
+    ]
+  },
+  {
+    "name_en": "Rice Cakes (2 cakes, Plain)",
+    "name_ar": "كيك أرز (2 حبة، سادة)",
+    "category": "snack",
+    "serving_size_g": 18,
+    "calories": 70,
+    "protein_g": 1,
+    "carbs_g": 15,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "rice_cakes",
+      "low_calorie",
+      "cutting",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Popcorn (Movie Theater, Butter, Large)",
+    "name_ar": "فشار (سينما، بالزبدة، كبير)",
+    "category": "snack",
+    "serving_size_g": 150,
+    "calories": 600,
+    "protein_g": 7,
+    "carbs_g": 55,
+    "fat_g": 40,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "popcorn",
+      "movie",
+      "butter",
+      "high_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/popcorn.jpg"
+  },
+  {
+    "name_en": "Doritos (Nacho Cheese, 80g)",
+    "name_ar": "دوريتوس (ناتشو تشيز، 80 جرام)",
+    "category": "snack",
+    "serving_size_g": 80,
+    "calories": 400,
+    "protein_g": 5,
+    "carbs_g": 50,
+    "fat_g": 20,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "doritos",
+      "nacho",
+      "chips",
+      "junk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Dark Chocolate (70% Cocoa, 30g)",
+    "name_ar": "شيكولاتة غامقة (70% كاكاو، 30 جرام)",
+    "category": "snack",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 2,
+    "carbs_g": 13,
+    "fat_g": 12,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "dark_chocolate",
+      "antioxidants",
+      "healthy_treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Crackers / Ritz (6 crackers)",
+    "name_ar": "كراكرز / ريتز (6 قطع)",
+    "category": "snack",
+    "serving_size_g": 30,
+    "calories": 150,
+    "protein_g": 2,
+    "carbs_g": 18,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "crackers",
+      "ritz",
+      "biscuit"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/crackers.jpg"
+  }
+]

@@ -1,0 +1,389 @@
+[
+  {
+    "id": "ex-pl-001",
+    "name_en": "Competition Bench Press (Pause Rep)",
+    "name_ar": "بنش بريس مسابقات (توقف)",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "powerlifting",
+    "default_sets": 5,
+    "default_reps": "3",
+    "tags": [
+      "powerlifting",
+      "bench_press",
+      "competition",
+      "pause",
+      "strength"
+    ]
+  },
+  {
+    "id": "ex-pl-002",
+    "name_en": "Competition Squat (Low Bar)",
+    "name_ar": "سكوات مسابقات (لو بار)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "lower_back"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "powerlifting",
+    "default_sets": 5,
+    "default_reps": "3",
+    "tags": [
+      "powerlifting",
+      "squat",
+      "low_bar",
+      "competition",
+      "strength"
+    ]
+  },
+  {
+    "id": "ex-pl-003",
+    "name_en": "Competition Deadlift (Conventional)",
+    "name_ar": "ديدلفت مسابقات (كونفنشنال)",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings",
+      "traps"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "powerlifting",
+    "default_sets": 5,
+    "default_reps": "3",
+    "tags": [
+      "powerlifting",
+      "deadlift",
+      "conventional",
+      "competition",
+      "strength"
+    ]
+  },
+  {
+    "id": "ex-pl-005",
+    "name_en": "Board Press (2-Board)",
+    "name_ar": "بورد بريس (2 بورد)",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "5",
+    "tags": [
+      "powerlifting",
+      "board_press",
+      "lockout",
+      "overload"
+    ]
+  },
+  {
+    "id": "ex-pl-006",
+    "name_en": "Pin Squat (from safety pins)",
+    "name_ar": "بين سكوات (من البينز)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "lower_back"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "3",
+    "tags": [
+      "powerlifting",
+      "pin_squat",
+      "bottom_strength",
+      "pause"
+    ]
+  },
+  {
+    "id": "ex-pl-007",
+    "name_en": "Deficit Deadlift (Standing on Platform)",
+    "name_ar": "ديدلفت عجز (واقف على بلاتفورم)",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "5",
+    "tags": [
+      "powerlifting",
+      "deficit_deadlift",
+      "rom",
+      "strength"
+    ]
+  },
+  {
+    "id": "ex-pl-008",
+    "name_en": "Floor Press (Barbell)",
+    "name_ar": "فلور بريس (بار)",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "6",
+    "tags": [
+      "powerlifting",
+      "floor_press",
+      "lockout",
+      "triceps"
+    ]
+  },
+  {
+    "id": "ex-pl-009",
+    "name_en": "Box Squat",
+    "name_ar": "بوكس سكوات",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 5,
+    "default_reps": "5",
+    "tags": [
+      "powerlifting",
+      "box_squat",
+      "hip_drive",
+      "technique"
+    ]
+  },
+  {
+    "id": "ex-pl-010",
+    "name_en": "Rack Pull (Above Knee)",
+    "name_ar": "راك بول (فوق الركبة)",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "traps",
+      "glutes"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "5",
+    "tags": [
+      "powerlifting",
+      "rack_pull",
+      "lockout",
+      "overload",
+      "traps"
+    ]
+  },
+  {
+    "id": "ex-pl-011",
+    "name_en": "Spoto Press (1-inch Pause Above Chest)",
+    "name_ar": "سبوتو بريس (توقف 1 إنش فوق الصدر)",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "5",
+    "tags": [
+      "powerlifting",
+      "spoto_press",
+      "control",
+      "chest"
+    ]
+  },
+  {
+    "id": "ex-pl-012",
+    "name_en": "Tempo Squat (3 seconds down)",
+    "name_ar": "تمبو سكوات (3 ثواني نزول)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "5",
+    "tags": [
+      "powerlifting",
+      "tempo_squat",
+      "control",
+      "technique"
+    ]
+  },
+  {
+    "id": "ex-pl-013",
+    "name_en": "Block Deadlift (2-inch blocks)",
+    "name_ar": "بلوك ديدلفت (2 إنش بلوكس)",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "glutes",
+      "traps"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "5",
+    "tags": [
+      "powerlifting",
+      "block_deadlift",
+      "overload",
+      "lockout"
+    ]
+  },
+  {
+    "id": "ex-pl-015",
+    "name_en": "Safety Bar Squat (SSB)",
+    "name_ar": "سيفتي بار سكوات (SSB)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "upper_back",
+      "glutes"
+    ],
+    "equipment": "specialty_bar",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "6",
+    "tags": [
+      "powerlifting",
+      "ssb_squat",
+      "upper_back",
+      "variation"
+    ]
+  },
+  {
+    "id": "ex-pl-016",
+    "name_en": "Paused Deadlift (2 sec at knee)",
+    "name_ar": "ديدلفت بتوقف (2 ثانية عند الركبة)",
+    "primary_muscle": "lower_back",
+    "secondary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "4",
+    "tags": [
+      "powerlifting",
+      "paused_deadlift",
+      "sticking_point",
+      "technique"
+    ]
+  },
+  {
+    "id": "ex-pl-017",
+    "name_en": "Larsen Press (Feet Up Bench)",
+    "name_ar": "لارسن بريس (بنش رجلين مرفوعة)",
+    "primary_muscle": "chest",
+    "secondary_muscles": [
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "8",
+    "tags": [
+      "powerlifting",
+      "larsen_press",
+      "feet_up",
+      "core",
+      "stability"
+    ]
+  },
+  {
+    "id": "ex-pl-018",
+    "name_en": "Front Squat (Powerlifting Accessory)",
+    "name_ar": "فرنت سكوات (أكسسوري باورلفتنج)",
+    "primary_muscle": "quadriceps",
+    "secondary_muscles": [
+      "upper_back",
+      "core"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "6",
+    "tags": [
+      "powerlifting",
+      "front_squat",
+      "quads",
+      "upper_back",
+      "accessory"
+    ]
+  },
+  {
+    "id": "ex-pl-019",
+    "name_en": "Romanian Deadlift (Powerlifting Accessory)",
+    "name_ar": "رومانيان ديدلفت (أكسسوري باورلفتنج)",
+    "primary_muscle": "hamstrings",
+    "secondary_muscles": [
+      "glutes",
+      "lower_back"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 4,
+    "default_reps": "8",
+    "tags": [
+      "powerlifting",
+      "rdl",
+      "hamstrings",
+      "accessory"
+    ]
+  },
+  {
+    "id": "ex-pl-020",
+    "name_en": "Dumbbell Row (Heavy, Kroc Row)",
+    "name_ar": "دمبل رو ثقيل (كروك رو)",
+    "primary_muscle": "lats",
+    "secondary_muscles": [
+      "biceps",
+      "rear_delts",
+      "grip"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "category": "powerlifting",
+    "default_sets": 3,
+    "default_reps": "12-15",
+    "tags": [
+      "powerlifting",
+      "kroc_row",
+      "back",
+      "grip",
+      "accessory"
+    ]
+  }
+]

@@ -1,0 +1,496 @@
+[
+  {
+    "id": "ex-core-001",
+    "name_en": "Plank (Standard)",
+    "name_ar": "بلانك (عادي)",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "shoulders",
+      "glutes"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "30-60 sec",
+    "tags": [
+      "core",
+      "plank",
+      "isometric",
+      "bodyweight",
+      "beginner"
+    ]
+  },
+  {
+    "id": "ex-core-002",
+    "name_en": "Side Plank",
+    "name_ar": "سايد بلانك",
+    "primary_muscle": "obliques",
+    "secondary_muscles": [
+      "core",
+      "shoulders"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "30 sec each side",
+    "tags": [
+      "core",
+      "side_plank",
+      "obliques",
+      "isometric"
+    ]
+  },
+  {
+    "id": "ex-core-003",
+    "name_en": "Hanging Leg Raise",
+    "name_ar": "هانجنج ليج رايز",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors",
+      "grip"
+    ],
+    "equipment": "pull_up_bar",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "10-12",
+    "tags": [
+      "core",
+      "hanging_leg_raise",
+      "lower_abs",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ex-core-004",
+    "name_en": "Hanging Knee Raise",
+    "name_ar": "هانجنج ني رايز",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "pull_up_bar",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "12-15",
+    "tags": [
+      "core",
+      "hanging_knee_raise",
+      "lower_abs"
+    ]
+  },
+  {
+    "id": "ex-core-005",
+    "name_en": "Ab Wheel Rollout",
+    "name_ar": "أب ويل رول أوت",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "shoulders",
+      "lats"
+    ],
+    "equipment": "ab_wheel",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "8-12",
+    "tags": [
+      "core",
+      "ab_wheel",
+      "anti_extension",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ex-core-006",
+    "name_en": "Russian Twist",
+    "name_ar": "رشن تويست",
+    "primary_muscle": "obliques",
+    "secondary_muscles": [
+      "abs"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "20 total",
+    "tags": [
+      "core",
+      "russian_twist",
+      "obliques",
+      "rotational"
+    ]
+  },
+  {
+    "id": "ex-core-007",
+    "name_en": "Bicycle Crunch",
+    "name_ar": "بايسيكل كرانش",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "obliques"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "20 total",
+    "tags": [
+      "core",
+      "bicycle_crunch",
+      "abs",
+      "obliques"
+    ]
+  },
+  {
+    "id": "ex-core-008",
+    "name_en": "Dead Bug",
+    "name_ar": "ديد باج",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "10 each side",
+    "tags": [
+      "core",
+      "dead_bug",
+      "anti_extension",
+      "stability",
+      "rehab"
+    ]
+  },
+  {
+    "id": "ex-core-009",
+    "name_en": "Bird Dog",
+    "name_ar": "بيرد دوج",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "lower_back",
+      "glutes"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "10 each side",
+    "tags": [
+      "core",
+      "bird_dog",
+      "stability",
+      "lower_back",
+      "rehab"
+    ]
+  },
+  {
+    "id": "ex-core-011",
+    "name_en": "V-Up",
+    "name_ar": "في أب",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "12-15",
+    "tags": [
+      "core",
+      "v_up",
+      "abs",
+      "full_range"
+    ]
+  },
+  {
+    "id": "ex-core-012",
+    "name_en": "Toe Touch (Lying)",
+    "name_ar": "تو تاتش (نايم)",
+    "primary_muscle": "abs",
+    "secondary_muscles": [],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "15",
+    "tags": [
+      "core",
+      "toe_touch",
+      "upper_abs"
+    ]
+  },
+  {
+    "id": "ex-core-013",
+    "name_en": "Mountain Climber",
+    "name_ar": "ماونتن كلايمر",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "hip_flexors",
+      "shoulders"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "20 total",
+    "tags": [
+      "core",
+      "mountain_climber",
+      "cardio",
+      "dynamic"
+    ]
+  },
+  {
+    "id": "ex-core-014",
+    "name_en": "Reverse Crunch",
+    "name_ar": "ريفيرس كرانش",
+    "primary_muscle": "abs",
+    "secondary_muscles": [],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "15",
+    "tags": [
+      "core",
+      "reverse_crunch",
+      "lower_abs"
+    ]
+  },
+  {
+    "id": "ex-core-015",
+    "name_en": "Decline Sit-Up",
+    "name_ar": "ديكلاين سيت أب",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "bench",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "15",
+    "tags": [
+      "core",
+      "decline_situp",
+      "weighted",
+      "abs"
+    ]
+  },
+  {
+    "id": "ex-core-016",
+    "name_en": "Flutter Kicks",
+    "name_ar": "فلاتر كيكس",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "20 total",
+    "tags": [
+      "core",
+      "flutter_kicks",
+      "lower_abs"
+    ]
+  },
+  {
+    "id": "ex-core-017",
+    "name_en": "Hollow Body Hold",
+    "name_ar": "هولو بودي هولد",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "hip_flexors"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "20-30 sec",
+    "tags": [
+      "core",
+      "hollow_body",
+      "isometric",
+      "gymnastics"
+    ]
+  },
+  {
+    "id": "ex-core-018",
+    "name_en": "Pallof Press (Cable or Band)",
+    "name_ar": "بالوف بريس (كيبل أو باند)",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "obliques"
+    ],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "10 each side",
+    "tags": [
+      "core",
+      "pallof_press",
+      "anti_rotation",
+      "stability"
+    ]
+  },
+  {
+    "id": "ex-core-019",
+    "name_en": "Weighted Plank",
+    "name_ar": "بلانك بوزن",
+    "primary_muscle": "core",
+    "secondary_muscles": [
+      "shoulders",
+      "glutes"
+    ],
+    "equipment": "plate",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "30-45 sec",
+    "tags": [
+      "core",
+      "weighted_plank",
+      "isometric",
+      "overload"
+    ]
+  },
+  {
+    "id": "ex-core-020",
+    "name_en": "L-Sit (Parallel Bars or Floor)",
+    "name_ar": "إل سيت (متوازي أو أرض)",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors",
+      "triceps"
+    ],
+    "equipment": "parallel_bars",
+    "difficulty": "advanced",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "10-20 sec",
+    "tags": [
+      "core",
+      "l_sit",
+      "isometric",
+      "gymnastics",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ex-core-021",
+    "name_en": "Windshield Wipers (Hanging)",
+    "name_ar": "ويندشيلد وايبرز (معلق)",
+    "primary_muscle": "obliques",
+    "secondary_muscles": [
+      "abs",
+      "grip"
+    ],
+    "equipment": "pull_up_bar",
+    "difficulty": "advanced",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "8 each side",
+    "tags": [
+      "core",
+      "windshield_wipers",
+      "obliques",
+      "advanced"
+    ]
+  },
+  {
+    "id": "ex-core-022",
+    "name_en": "Toes to Bar",
+    "name_ar": "توز تو بار",
+    "primary_muscle": "abs",
+    "secondary_muscles": [
+      "hip_flexors",
+      "lats",
+      "grip"
+    ],
+    "equipment": "pull_up_bar",
+    "difficulty": "advanced",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "8-12",
+    "tags": [
+      "core",
+      "toes_to_bar",
+      "crossfit",
+      "hanging"
+    ]
+  },
+  {
+    "id": "ex-core-023",
+    "name_en": "Copenhagen Plank",
+    "name_ar": "كوبنهاجن بلانك",
+    "primary_muscle": "adductors",
+    "secondary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment": "bench",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "20 sec each side",
+    "tags": [
+      "core",
+      "copenhagen_plank",
+      "adductors",
+      "rehab"
+    ]
+  },
+  {
+    "id": "ex-core-024",
+    "name_en": "Suitcase Carry",
+    "name_ar": "سوتكيس كاري",
+    "primary_muscle": "obliques",
+    "secondary_muscles": [
+      "grip",
+      "core",
+      "traps"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "30 sec each side",
+    "tags": [
+      "core",
+      "suitcase_carry",
+      "anti_lateral_flexion",
+      "grip",
+      "functional"
+    ]
+  },
+  {
+    "id": "ex-core-025",
+    "name_en": "Farmer's Walk",
+    "name_ar": "فارمرز ووك",
+    "primary_muscle": "grip",
+    "secondary_muscles": [
+      "traps",
+      "core",
+      "forearms"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "category": "core",
+    "default_sets": 3,
+    "default_reps": "30-40 sec",
+    "tags": [
+      "core",
+      "farmers_walk",
+      "grip",
+      "conditioning",
+      "functional"
+    ]
+  }
+]

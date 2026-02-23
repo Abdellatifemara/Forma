@@ -1,0 +1,438 @@
+[
+  {
+    "name_en": "Zabadi Baladi (Egyptian Yogurt, 1 cup)",
+    "name_ar": "زبادي بلدي كوب",
+    "category": "DAIRY",
+    "serving_size_g": 200,
+    "calories": 120,
+    "protein_g": 6,
+    "carbs_g": 10,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "calcium_mg": 200,
+    "is_egyptian": true,
+    "tags": [
+      "yogurt",
+      "traditional",
+      "probiotic"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Zabadi Light (Low Fat Yogurt, 1 cup)",
+    "name_ar": "زبادي لايت كوب",
+    "category": "DAIRY",
+    "serving_size_g": 200,
+    "calories": 80,
+    "protein_g": 6,
+    "carbs_g": 10,
+    "fat_g": 1.5,
+    "fiber_g": 0,
+    "calcium_mg": 200,
+    "is_egyptian": true,
+    "tags": [
+      "yogurt",
+      "low-fat",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Laban Rayeb (Fermented Milk, 1 cup)",
+    "name_ar": "لبن رايب كوب",
+    "category": "DAIRY",
+    "serving_size_g": 250,
+    "calories": 105,
+    "protein_g": 7.5,
+    "carbs_g": 10,
+    "fat_g": 3.5,
+    "fiber_g": 0,
+    "calcium_mg": 250,
+    "is_egyptian": true,
+    "tags": [
+      "fermented",
+      "probiotic",
+      "digestive",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Laban Up (Drinkable Yogurt, 1 bottle)",
+    "name_ar": "لبن أب زجاجة",
+    "category": "DAIRY",
+    "serving_size_g": 200,
+    "calories": 100,
+    "protein_g": 5,
+    "carbs_g": 14,
+    "fat_g": 2.5,
+    "fiber_g": 0,
+    "sugar_g": 12,
+    "is_egyptian": true,
+    "brand_en": "Juhayna",
+    "brand_ar": "جهينة",
+    "tags": [
+      "drinkable-yogurt",
+      "on-the-go"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Gibna Beida (White Cheese, 50g)",
+    "name_ar": "جبنة بيضاء",
+    "category": "DAIRY",
+    "serving_size_g": 50,
+    "calories": 130,
+    "protein_g": 7,
+    "carbs_g": 1,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "sodium_mg": 500,
+    "calcium_mg": 250,
+    "is_egyptian": true,
+    "tags": [
+      "cheese",
+      "white",
+      "breakfast",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/feta-cheese.jpg"
+  },
+  {
+    "name_en": "Gibna Roumy (Aged Egyptian Cheese, 30g)",
+    "name_ar": "جبنة رومي",
+    "category": "DAIRY",
+    "serving_size_g": 30,
+    "calories": 110,
+    "protein_g": 7,
+    "carbs_g": 0.5,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "calcium_mg": 200,
+    "is_egyptian": true,
+    "tags": [
+      "cheese",
+      "aged",
+      "strong",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Gibna Areesh (Egyptian Cottage Cheese, 100g)",
+    "name_ar": "جبنة قريش",
+    "category": "DAIRY",
+    "serving_size_g": 100,
+    "calories": 72,
+    "protein_g": 12,
+    "carbs_g": 2,
+    "fat_g": 1.5,
+    "fiber_g": 0,
+    "calcium_mg": 60,
+    "is_egyptian": true,
+    "tags": [
+      "cheese",
+      "cottage",
+      "diet",
+      "high-protein",
+      "low-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
+  },
+  {
+    "name_en": "Gibna Mish (Aged Fermented Cheese, 30g)",
+    "name_ar": "جبنة مش",
+    "category": "DAIRY",
+    "serving_size_g": 30,
+    "calories": 70,
+    "protein_g": 5,
+    "carbs_g": 1,
+    "fat_g": 5.5,
+    "fiber_g": 0,
+    "sodium_mg": 600,
+    "is_egyptian": true,
+    "tags": [
+      "cheese",
+      "fermented",
+      "traditional",
+      "upper-egypt"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Cream Cheese Spread (Philadelphia, 2 tbsp)",
+    "name_ar": "جبنة كريمي فيلادلفيا",
+    "category": "DAIRY",
+    "serving_size_g": 30,
+    "calories": 90,
+    "protein_g": 2,
+    "carbs_g": 1.5,
+    "fat_g": 8.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "brand_en": "Philadelphia",
+    "brand_ar": "فيلادلفيا",
+    "tags": [
+      "cheese",
+      "spread",
+      "cream"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cream-cheese.jpg"
+  },
+  {
+    "name_en": "Parmesan Cheese Grated (2 tbsp)",
+    "name_ar": "جبنة بارميزان مبشورة",
+    "category": "DAIRY",
+    "serving_size_g": 10,
+    "calories": 42,
+    "protein_g": 3.8,
+    "carbs_g": 0.3,
+    "fat_g": 2.8,
+    "fiber_g": 0,
+    "calcium_mg": 110,
+    "is_egyptian": false,
+    "tags": [
+      "cheese",
+      "hard",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Eshta (Egyptian Cream, 2 tbsp)",
+    "name_ar": "قشطة",
+    "category": "DAIRY",
+    "serving_size_g": 30,
+    "calories": 90,
+    "protein_g": 1,
+    "carbs_g": 2,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "cream",
+      "dessert",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Nestle Cream (1 tbsp)",
+    "name_ar": "نستله كريمة",
+    "category": "DAIRY",
+    "serving_size_g": 15,
+    "calories": 30,
+    "protein_g": 0.5,
+    "carbs_g": 1.5,
+    "fat_g": 2.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "brand_en": "Nestle",
+    "brand_ar": "نستله",
+    "tags": [
+      "cream",
+      "cooking",
+      "dessert"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Whipping Cream (2 tbsp)",
+    "name_ar": "كريمة خفق",
+    "category": "DAIRY",
+    "serving_size_g": 30,
+    "calories": 100,
+    "protein_g": 0.6,
+    "carbs_g": 0.8,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cream",
+      "fat",
+      "dessert"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Sour Cream (2 tbsp)",
+    "name_ar": "كريمة حامضة",
+    "category": "DAIRY",
+    "serving_size_g": 30,
+    "calories": 60,
+    "protein_g": 0.7,
+    "carbs_g": 1,
+    "fat_g": 5.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "cream",
+      "condiment"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Almarai Low Fat Milk (1 cup)",
+    "name_ar": "المراعي لبن قليل الدسم",
+    "category": "DAIRY",
+    "serving_size_g": 250,
+    "calories": 115,
+    "protein_g": 8.5,
+    "carbs_g": 13,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "calcium_mg": 300,
+    "is_egyptian": false,
+    "brand_en": "Almarai",
+    "brand_ar": "المراعي",
+    "tags": [
+      "milk",
+      "low-fat",
+      "imported"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Almarai Greek Yogurt 0% Fat",
+    "name_ar": "المراعي زبادي يوناني ٠٪ دسم",
+    "category": "DAIRY",
+    "serving_size_g": 150,
+    "calories": 85,
+    "protein_g": 15,
+    "carbs_g": 5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "calcium_mg": 150,
+    "is_egyptian": false,
+    "brand_en": "Almarai",
+    "brand_ar": "المراعي",
+    "tags": [
+      "yogurt",
+      "greek",
+      "zero-fat",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
+  },
+  {
+    "name_en": "Juhayna Greek Yogurt (Full Fat)",
+    "name_ar": "جهينة زبادي يوناني كامل الدسم",
+    "category": "DAIRY",
+    "serving_size_g": 150,
+    "calories": 150,
+    "protein_g": 10,
+    "carbs_g": 6,
+    "fat_g": 10,
+    "fiber_g": 0,
+    "calcium_mg": 150,
+    "is_egyptian": true,
+    "brand_en": "Juhayna",
+    "brand_ar": "جهينة",
+    "tags": [
+      "yogurt",
+      "greek",
+      "full-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
+  },
+  {
+    "name_en": "Puck Labneh",
+    "name_ar": "بوك لبنة",
+    "category": "DAIRY",
+    "serving_size_g": 30,
+    "calories": 65,
+    "protein_g": 2,
+    "carbs_g": 2,
+    "fat_g": 5.5,
+    "fiber_g": 0,
+    "calcium_mg": 40,
+    "is_egyptian": false,
+    "brand_en": "Puck",
+    "brand_ar": "بوك",
+    "tags": [
+      "labneh",
+      "spread",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Ricotta Cheese (1/4 cup)",
+    "name_ar": "جبنة ريكوتا",
+    "category": "DAIRY",
+    "serving_size_g": 62,
+    "calories": 110,
+    "protein_g": 7,
+    "carbs_g": 2,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "calcium_mg": 130,
+    "is_egyptian": false,
+    "tags": [
+      "cheese",
+      "soft",
+      "cooking",
+      "pasta"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Halloumi Cheese (50g)",
+    "name_ar": "جبنة حلومي",
+    "category": "DAIRY",
+    "serving_size_g": 50,
+    "calories": 155,
+    "protein_g": 11,
+    "carbs_g": 1,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "calcium_mg": 350,
+    "is_egyptian": false,
+    "tags": [
+      "cheese",
+      "grillable",
+      "high-protein",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Gouda Cheese (30g)",
+    "name_ar": "جبنة جودة",
+    "category": "DAIRY",
+    "serving_size_g": 30,
+    "calories": 100,
+    "protein_g": 7,
+    "carbs_g": 0.6,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "calcium_mg": 200,
+    "is_egyptian": false,
+    "tags": [
+      "cheese",
+      "dutch",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "String Cheese (1 stick)",
+    "name_ar": "جبنة مطاطية عود",
+    "category": "DAIRY",
+    "serving_size_g": 28,
+    "calories": 80,
+    "protein_g": 7,
+    "carbs_g": 1,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "calcium_mg": 200,
+    "is_egyptian": false,
+    "tags": [
+      "cheese",
+      "snack",
+      "protein",
+      "on-the-go"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  }
+]

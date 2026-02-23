@@ -9,7 +9,8 @@
     "carbs_g": 145,
     "fat_g": 18,
     "fiber_g": 12,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
   },
   {
     "name_en": "Ful Medames",
@@ -21,7 +22,8 @@
     "carbs_g": 36,
     "fat_g": 8,
     "fiber_g": 9,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fava-beans.jpg"
   },
   {
     "name_en": "Ta'ameya (Falafel)",
@@ -33,7 +35,8 @@
     "carbs_g": 31,
     "fat_g": 18,
     "fiber_g": 6,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
   },
   {
     "name_en": "Molokhia",
@@ -45,7 +48,8 @@
     "carbs_g": 12,
     "fat_g": 12,
     "fiber_g": 6,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/spinach.jpg"
   },
   {
     "name_en": "Mahshi (Stuffed Vegetables)",
@@ -57,7 +61,8 @@
     "carbs_g": 58,
     "fat_g": 16,
     "fiber_g": 8,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
   },
   {
     "name_en": "Fattah",
@@ -69,7 +74,8 @@
     "carbs_g": 72,
     "fat_g": 28,
     "fiber_g": 4,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
   },
   {
     "name_en": "Kofta",
@@ -81,7 +87,8 @@
     "carbs_g": 4,
     "fat_g": 26,
     "fiber_g": 1,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ground-beef.jpg"
   },
   {
     "name_en": "Shawarma",
@@ -93,7 +100,8 @@
     "carbs_g": 40,
     "fat_g": 28,
     "fiber_g": 2,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
   },
   {
     "name_en": "Kebab",
@@ -105,7 +113,8 @@
     "carbs_g": 2,
     "fat_g": 25,
     "fiber_g": 0,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
   },
   {
     "name_en": "Gibna Areesh",
@@ -117,7 +126,8 @@
     "carbs_g": 4,
     "fat_g": 1,
     "fiber_g": 0,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
   },
   {
     "name_en": "Konafa",
@@ -129,7 +139,8 @@
     "carbs_g": 68,
     "fat_g": 24,
     "fiber_g": 1,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vermicelli.jpg"
   },
   {
     "name_en": "Liver (Kebda)",
@@ -141,7 +152,8 @@
     "carbs_g": 4,
     "fat_g": 10,
     "fiber_g": 0,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
   },
   {
     "name_en": "Egyptian Rice",
@@ -153,7 +165,8 @@
     "carbs_g": 56,
     "fat_g": 1,
     "fiber_g": 1,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
   },
   {
     "name_en": "Foul with Eggs",
@@ -165,7 +178,8 @@
     "carbs_g": 38,
     "fat_g": 16,
     "fiber_g": 8,
-    "is_egyptian": true
+    "is_egyptian": true,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "name_en": "Feteer Meshaltet",
@@ -189,7 +203,8 @@
     "carbs_g": 0,
     "fat_g": 9,
     "fiber_g": 0,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
   },
   {
     "name_en": "Eggs (2 whole)",
@@ -201,7 +216,8 @@
     "carbs_g": 1,
     "fat_g": 11,
     "fiber_g": 0,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg.png"
   },
   {
     "name_en": "White Rice",
@@ -213,7 +229,8 @@
     "carbs_g": 43,
     "fat_g": 0,
     "fiber_g": 1,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/white-rice.jpg"
   },
   {
     "name_en": "Banana",
@@ -225,7 +242,8 @@
     "carbs_g": 27,
     "fat_g": 0,
     "fiber_g": 3,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bananas.jpg"
   },
   {
     "name_en": "Apple",
@@ -237,7 +255,8 @@
     "carbs_g": 25,
     "fat_g": 0,
     "fiber_g": 4,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apple.jpg"
   },
   {
     "name_en": "Greek Yogurt",
@@ -249,7 +268,8 @@
     "carbs_g": 6,
     "fat_g": 1,
     "fiber_g": 0,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
   },
   {
     "name_en": "Oatmeal",
@@ -261,7 +281,8 @@
     "carbs_g": 27,
     "fat_g": 3,
     "fiber_g": 4,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/oatmeal.jpg"
   },
   {
     "name_en": "Tuna (canned)",
@@ -273,7 +294,8 @@
     "carbs_g": 0,
     "fat_g": 1,
     "fiber_g": 0,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/canned-tuna.jpg"
   },
   {
     "name_en": "Peanut Butter",
@@ -285,7 +307,8 @@
     "carbs_g": 6,
     "fat_g": 16,
     "fiber_g": 2,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
   },
   {
     "name_en": "Whey Protein",
@@ -297,6 +320,7 @@
     "carbs_g": 3,
     "fat_g": 1,
     "fiber_g": 0,
-    "is_egyptian": false
+    "is_egyptian": false,
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
   }
 ]

@@ -1,0 +1,601 @@
+[
+  {
+    "name_en": "Chipsy Chili Chips (25g)",
+    "name_ar": "شيبسي شيلي (25 جرام)",
+    "category": "snack",
+    "serving_size_g": 25,
+    "calories": 130,
+    "protein_g": 1.5,
+    "carbs_g": 13,
+    "fat_g": 8,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "chips",
+      "chipsy",
+      "kids",
+      "junk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/potato-chips.jpg"
+  },
+  {
+    "name_en": "Doritos Nacho Cheese (40g)",
+    "name_ar": "دوريتوس ناتشو تشيز (40 جرام)",
+    "category": "snack",
+    "serving_size_g": 40,
+    "calories": 200,
+    "protein_g": 2,
+    "carbs_g": 24,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "chips",
+      "doritos",
+      "junk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Crax Cheese Crackers (30g)",
+    "name_ar": "كراكس بالجبنة (30 جرام)",
+    "category": "snack",
+    "serving_size_g": 30,
+    "calories": 140,
+    "protein_g": 2,
+    "carbs_g": 18,
+    "fat_g": 7,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "crackers",
+      "crax",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Cadbury Dairy Milk (40g bar)",
+    "name_ar": "كادبوري ديري ميلك (بار 40 جرام)",
+    "category": "snack",
+    "serving_size_g": 40,
+    "calories": 210,
+    "protein_g": 3,
+    "carbs_g": 24,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "chocolate",
+      "cadbury",
+      "treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Corona Chocolate (40g bar)",
+    "name_ar": "كورونا شوكولاتة (بار 40 جرام)",
+    "category": "snack",
+    "serving_size_g": 40,
+    "calories": 200,
+    "protein_g": 2,
+    "carbs_g": 26,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "chocolate",
+      "corona",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Abu Auf Roasted Mixed Nuts (50g)",
+    "name_ar": "أبو عوف مكسرات مشكلة محمصة (50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 300,
+    "protein_g": 9,
+    "carbs_g": 10,
+    "fat_g": 26,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "nuts",
+      "abu_auf",
+      "healthy",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mixed-nuts.jpg"
+  },
+  {
+    "name_en": "Abu Auf Trail Mix (50g)",
+    "name_ar": "أبو عوف تريل مكس (50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 240,
+    "protein_g": 6,
+    "carbs_g": 22,
+    "fat_g": 15,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "nuts",
+      "dried_fruit",
+      "abu_auf",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/trail-mix.jpg"
+  },
+  {
+    "name_en": "Twix Bar",
+    "name_ar": "تويكس بار",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 250,
+    "protein_g": 3,
+    "carbs_g": 32,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "chocolate",
+      "caramel",
+      "treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Snickers Bar",
+    "name_ar": "سنيكرز بار",
+    "category": "snack",
+    "serving_size_g": 52,
+    "calories": 250,
+    "protein_g": 4,
+    "carbs_g": 32,
+    "fat_g": 12,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "chocolate",
+      "peanut",
+      "treat",
+      "pre_workout_hack"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Safi Lupini Beans / Termis (100g)",
+    "name_ar": "ترمس (100 جرام)",
+    "category": "snack",
+    "serving_size_g": 100,
+    "calories": 120,
+    "protein_g": 16,
+    "carbs_g": 10,
+    "fat_g": 3,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "termis",
+      "lupini",
+      "high_protein",
+      "traditional",
+      "street"
+    ]
+  },
+  {
+    "name_en": "Roasted Chickpeas (Hummus Sham, 100g)",
+    "name_ar": "حمص شام محمص (100 جرام)",
+    "category": "snack",
+    "serving_size_g": 100,
+    "calories": 160,
+    "protein_g": 9,
+    "carbs_g": 24,
+    "fat_g": 3,
+    "fiber_g": 7,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "chickpeas",
+      "hummus_sham",
+      "high_fiber",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chickpeas.jpg"
+  },
+  {
+    "name_en": "Roasted Pumpkin Seeds (Lob Abyad, 50g)",
+    "name_ar": "لب أبيض محمص (50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 285,
+    "protein_g": 14,
+    "carbs_g": 7,
+    "fat_g": 24,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "seeds",
+      "lob",
+      "high_protein",
+      "traditional"
+    ]
+  },
+  {
+    "name_en": "Roasted Sunflower Seeds (Lob Souri, 50g)",
+    "name_ar": "لب سوري محمص (50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 290,
+    "protein_g": 10,
+    "carbs_g": 10,
+    "fat_g": 25,
+    "fiber_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "seeds",
+      "sunflower",
+      "lob",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sunflower-seeds.jpg"
+  },
+  {
+    "name_en": "Roasted Watermelon Seeds (Lob Super, 50g)",
+    "name_ar": "لب سوبر محمص (50 جرام)",
+    "category": "snack",
+    "serving_size_g": 50,
+    "calories": 280,
+    "protein_g": 14,
+    "carbs_g": 8,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "seeds",
+      "watermelon",
+      "lob",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/watermelon.jpg"
+  },
+  {
+    "name_en": "University Canteen Koshari (Plate)",
+    "name_ar": "كشري كانتين الجامعة (طبق)",
+    "category": "meal",
+    "serving_size_g": 400,
+    "calories": 550,
+    "protein_g": 16,
+    "carbs_g": 95,
+    "fat_g": 12,
+    "fiber_g": 8,
+    "is_egyptian": true,
+    "tags": [
+      "university",
+      "canteen",
+      "koshari",
+      "budget",
+      "student"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/macaroni.jpg"
+  },
+  {
+    "name_en": "University Canteen Foul & Falafel Plate",
+    "name_ar": "كانتين الجامعة فول وفلافل (طبق)",
+    "category": "meal",
+    "serving_size_g": 300,
+    "calories": 450,
+    "protein_g": 18,
+    "carbs_g": 55,
+    "fat_g": 18,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "university",
+      "canteen",
+      "foul",
+      "falafel",
+      "budget"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  },
+  {
+    "name_en": "University Canteen Rice & Chicken (Plate)",
+    "name_ar": "كانتين الجامعة أرز وفراخ (طبق)",
+    "category": "meal",
+    "serving_size_g": 400,
+    "calories": 520,
+    "protein_g": 35,
+    "carbs_g": 60,
+    "fat_g": 14,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "university",
+      "canteen",
+      "chicken",
+      "rice",
+      "budget",
+      "high_protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/whole-chicken.jpg"
+  },
+  {
+    "name_en": "University Canteen Pasta Béchamel (Plate)",
+    "name_ar": "كانتين الجامعة مكرونة بشاميل (طبق)",
+    "category": "meal",
+    "serving_size_g": 350,
+    "calories": 480,
+    "protein_g": 18,
+    "carbs_g": 52,
+    "fat_g": 22,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "university",
+      "canteen",
+      "pasta",
+      "bechamel",
+      "comfort"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/pasta.jpg"
+  },
+  {
+    "name_en": "University Canteen Bean Stew (Fasoulya)",
+    "name_ar": "كانتين الجامعة فاصوليا",
+    "category": "meal",
+    "serving_size_g": 300,
+    "calories": 280,
+    "protein_g": 14,
+    "carbs_g": 38,
+    "fat_g": 8,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "university",
+      "canteen",
+      "beans",
+      "fasoulya",
+      "budget",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-cubes.jpg"
+  },
+  {
+    "name_en": "Street Tea with Milk (Koshk)",
+    "name_ar": "شاي بلبن (كشك)",
+    "category": "beverage",
+    "serving_size_g": 200,
+    "calories": 80,
+    "protein_g": 2,
+    "carbs_g": 14,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "tea",
+      "milk",
+      "street",
+      "kiosk",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Kiosk Nescafe (with sugar)",
+    "name_ar": "نسكافيه كشك (بسكر)",
+    "category": "beverage",
+    "serving_size_g": 200,
+    "calories": 60,
+    "protein_g": 1,
+    "carbs_g": 12,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "coffee",
+      "nescafe",
+      "kiosk",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Fresh Orange Juice (Street Stand, 300ml)",
+    "name_ar": "عصير برتقال طازج (عربية، 300 مل)",
+    "category": "beverage",
+    "serving_size_g": 300,
+    "calories": 140,
+    "protein_g": 2,
+    "carbs_g": 33,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "juice",
+      "orange",
+      "fresh",
+      "street",
+      "vitamin_c"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/orange-juice.jpg"
+  },
+  {
+    "name_en": "Fresh Strawberry Juice (300ml)",
+    "name_ar": "عصير فراولة طازج (300 مل)",
+    "category": "beverage",
+    "serving_size_g": 300,
+    "calories": 120,
+    "protein_g": 2,
+    "carbs_g": 28,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "juice",
+      "strawberry",
+      "fresh",
+      "vitamin"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/strawberries.jpg"
+  },
+  {
+    "name_en": "Fresh Mango Juice (300ml)",
+    "name_ar": "عصير مانجو طازج (300 مل)",
+    "category": "beverage",
+    "serving_size_g": 300,
+    "calories": 170,
+    "protein_g": 1,
+    "carbs_g": 42,
+    "fat_g": 0,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "juice",
+      "mango",
+      "fresh",
+      "vitamin_a"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mango.jpg"
+  },
+  {
+    "name_en": "Asab Juice (Sugarcane, 300ml)",
+    "name_ar": "عصير قصب (300 مل)",
+    "category": "beverage",
+    "serving_size_g": 300,
+    "calories": 180,
+    "protein_g": 0,
+    "carbs_g": 45,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "juice",
+      "sugarcane",
+      "asab",
+      "street",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Cocoa Drink (Hot, homemade)",
+    "name_ar": "كاكاو ساخن (بيتي)",
+    "category": "beverage",
+    "serving_size_g": 250,
+    "calories": 190,
+    "protein_g": 8,
+    "carbs_g": 26,
+    "fat_g": 6,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "beverage",
+      "cocoa",
+      "hot",
+      "comfort",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cocoa-powder.jpg"
+  },
+  {
+    "name_en": "Protein Bar (Average, 60g)",
+    "name_ar": "بروتين بار (متوسط، 60 جرام)",
+    "category": "supplement",
+    "serving_size_g": 60,
+    "calories": 230,
+    "protein_g": 20,
+    "carbs_g": 24,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "protein_bar",
+      "snack",
+      "convenient",
+      "gym"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola-bar.jpg"
+  },
+  {
+    "name_en": "Rice Cake (Plain, 2 cakes)",
+    "name_ar": "كعك أرز (سادة، 2 حبة)",
+    "category": "snack",
+    "serving_size_g": 18,
+    "calories": 70,
+    "protein_g": 1,
+    "carbs_g": 15,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "rice_cake",
+      "low_calorie",
+      "cutting",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Popcorn (Air-popped, 30g)",
+    "name_ar": "فشار (بدون زيت، 30 جرام)",
+    "category": "snack",
+    "serving_size_g": 30,
+    "calories": 110,
+    "protein_g": 3,
+    "carbs_g": 22,
+    "fat_g": 1,
+    "fiber_g": 4,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "popcorn",
+      "low_calorie",
+      "fiber",
+      "volume_eating"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/popcorn.jpg"
+  },
+  {
+    "name_en": "Dark Chocolate (70%+, 30g)",
+    "name_ar": "شوكولاتة دارك (70%+, 30 جرام)",
+    "category": "snack",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 2,
+    "carbs_g": 14,
+    "fat_g": 12,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "chocolate",
+      "dark",
+      "antioxidant",
+      "healthy_treat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  }
+]

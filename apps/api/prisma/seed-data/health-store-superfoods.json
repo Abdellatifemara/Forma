@@ -1,0 +1,883 @@
+[
+  {
+    "name_en": "Quinoa (Cooked)",
+    "name_ar": "كينوا (مطبوخة)",
+    "category": "grains",
+    "serving_size_g": 185,
+    "calories": 222,
+    "protein_g": 8.1,
+    "carbs_g": 39.4,
+    "fat_g": 3.6,
+    "fiber_g": 5.2,
+    "iron_mg": 2.8,
+    "potassium_mg": 318,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "grain",
+      "complete_protein",
+      "gluten_free"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/quinoa.jpg"
+  },
+  {
+    "name_en": "Quinoa (Raw/Dry)",
+    "name_ar": "كينوا (نية/جافة)",
+    "category": "grains",
+    "serving_size_g": 100,
+    "calories": 368,
+    "protein_g": 14.1,
+    "carbs_g": 64.2,
+    "fat_g": 6.1,
+    "fiber_g": 7,
+    "iron_mg": 4.6,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "grain",
+      "dry",
+      "bulk"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/quinoa.jpg"
+  },
+  {
+    "name_en": "Chia Seeds",
+    "name_ar": "بذور الشيا",
+    "category": "seeds",
+    "serving_size_g": 28,
+    "calories": 137,
+    "protein_g": 4.7,
+    "carbs_g": 12.3,
+    "fat_g": 8.7,
+    "fiber_g": 9.8,
+    "calcium_mg": 179,
+    "iron_mg": 2.2,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "seeds",
+      "omega3",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chia-seeds.jpg"
+  },
+  {
+    "name_en": "Flaxseed (Ground)",
+    "name_ar": "بذور الكتان (مطحونة)",
+    "category": "seeds",
+    "serving_size_g": 15,
+    "calories": 78,
+    "protein_g": 2.7,
+    "carbs_g": 4.3,
+    "fat_g": 6.3,
+    "fiber_g": 4.1,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "seeds",
+      "omega3",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/flaxseed.jpg"
+  },
+  {
+    "name_en": "Hemp Seeds (Hulled)",
+    "name_ar": "بذور القنب (مقشرة)",
+    "category": "seeds",
+    "serving_size_g": 30,
+    "calories": 166,
+    "protein_g": 9.5,
+    "carbs_g": 2.6,
+    "fat_g": 14.6,
+    "fiber_g": 1.2,
+    "iron_mg": 2.4,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "seeds",
+      "protein",
+      "omega3"
+    ]
+  },
+  {
+    "name_en": "Pumpkin Seeds (Raw)",
+    "name_ar": "بذور القرع (نية) - لب أبيض",
+    "category": "seeds",
+    "serving_size_g": 30,
+    "calories": 170,
+    "protein_g": 9,
+    "carbs_g": 3,
+    "fat_g": 14,
+    "fiber_g": 1.7,
+    "iron_mg": 2.5,
+    "zinc_mg": 2.2,
+    "magnesium_mg": 168,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "snack",
+      "lob_abyad",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Sunflower Seeds (Roasted)",
+    "name_ar": "بذور دوار الشمس (محمصة) - لب سوري",
+    "category": "seeds",
+    "serving_size_g": 30,
+    "calories": 175,
+    "protein_g": 5.5,
+    "carbs_g": 6,
+    "fat_g": 15,
+    "fiber_g": 3,
+    "vitamin_e_mg": 7.4,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "snack",
+      "lob_souri",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sunflower-seeds.jpg"
+  },
+  {
+    "name_en": "Watermelon Seeds (Roasted)",
+    "name_ar": "لب سوبر (محمص)",
+    "category": "seeds",
+    "serving_size_g": 30,
+    "calories": 165,
+    "protein_g": 8,
+    "carbs_g": 4.5,
+    "fat_g": 13.5,
+    "fiber_g": 1,
+    "iron_mg": 2.3,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "snack",
+      "lob_super",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/watermelon.jpg"
+  },
+  {
+    "name_en": "Goji Berries (Dried)",
+    "name_ar": "توت غوجي (مجفف)",
+    "category": "dried_fruit",
+    "serving_size_g": 28,
+    "calories": 98,
+    "protein_g": 4,
+    "carbs_g": 22,
+    "fat_g": 0.1,
+    "fiber_g": 3.6,
+    "vitamin_c_mg": 48,
+    "iron_mg": 1.9,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "berries",
+      "antioxidant",
+      "dried_fruit"
+    ]
+  },
+  {
+    "name_en": "Acai Berry Powder",
+    "name_ar": "بودرة أكاي بيري",
+    "category": "supplement",
+    "serving_size_g": 10,
+    "calories": 50,
+    "protein_g": 1,
+    "carbs_g": 6,
+    "fat_g": 2.5,
+    "fiber_g": 3.5,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "powder",
+      "antioxidant",
+      "smoothie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Spirulina Powder",
+    "name_ar": "سبيرولينا بودرة",
+    "category": "supplement",
+    "serving_size_g": 7,
+    "calories": 20,
+    "protein_g": 4,
+    "carbs_g": 1.7,
+    "fat_g": 0.5,
+    "fiber_g": 0.3,
+    "iron_mg": 2,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "algae",
+      "protein",
+      "detox"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Wheatgrass Powder",
+    "name_ar": "بودرة عشب القمح",
+    "category": "supplement",
+    "serving_size_g": 8,
+    "calories": 25,
+    "protein_g": 2,
+    "carbs_g": 4,
+    "fat_g": 0.2,
+    "fiber_g": 2,
+    "iron_mg": 1.5,
+    "vitamin_c_mg": 10,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "greens",
+      "detox",
+      "powder"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Maca Root Powder",
+    "name_ar": "بودرة جذور الماكا",
+    "category": "supplement",
+    "serving_size_g": 10,
+    "calories": 35,
+    "protein_g": 1,
+    "carbs_g": 7,
+    "fat_g": 0.2,
+    "fiber_g": 1,
+    "iron_mg": 1.1,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "adaptogen",
+      "energy",
+      "hormone"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Turmeric Powder (Kurkum)",
+    "name_ar": "كركم مطحون",
+    "category": "spice",
+    "serving_size_g": 5,
+    "calories": 18,
+    "protein_g": 0.5,
+    "carbs_g": 3.3,
+    "fat_g": 0.5,
+    "fiber_g": 1.1,
+    "iron_mg": 2.8,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "anti_inflammatory",
+      "curcumin",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turmeric.jpg"
+  },
+  {
+    "name_en": "Raw Cacao Powder",
+    "name_ar": "كاكاو خام بودرة",
+    "category": "superfood",
+    "serving_size_g": 15,
+    "calories": 40,
+    "protein_g": 3,
+    "carbs_g": 5,
+    "fat_g": 1.5,
+    "fiber_g": 3,
+    "iron_mg": 2.5,
+    "magnesium_mg": 80,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "cacao",
+      "antioxidant",
+      "magnesium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Bee Pollen Granules",
+    "name_ar": "حبوب لقاح النحل",
+    "category": "supplement",
+    "serving_size_g": 10,
+    "calories": 30,
+    "protein_g": 2.5,
+    "carbs_g": 4,
+    "fat_g": 0.6,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "superfood",
+      "bee_pollen",
+      "energy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Royal Jelly",
+    "name_ar": "غذاء ملكات النحل",
+    "category": "supplement",
+    "serving_size_g": 3,
+    "calories": 5,
+    "protein_g": 0.4,
+    "carbs_g": 0.5,
+    "fat_g": 0.1,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "superfood",
+      "royal_jelly",
+      "immunity",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Black Seed (Habba Sawda)",
+    "name_ar": "حبة البركة / الحبة السوداء",
+    "category": "seeds",
+    "serving_size_g": 5,
+    "calories": 25,
+    "protein_g": 1,
+    "carbs_g": 2.5,
+    "fat_g": 1.5,
+    "fiber_g": 1,
+    "is_egyptian": true,
+    "tags": [
+      "seeds",
+      "traditional",
+      "immunity",
+      "habba_sawda",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sesame-seeds.jpg"
+  },
+  {
+    "name_en": "Black Seed Oil (Habba Sawda)",
+    "name_ar": "زيت حبة البركة",
+    "category": "oil",
+    "serving_size_g": 5,
+    "calories": 45,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "oil",
+      "traditional",
+      "immunity",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sesame-seeds.jpg"
+  },
+  {
+    "name_en": "Raw Honey (Sidr)",
+    "name_ar": "عسل سدر خام",
+    "category": "sweetener",
+    "serving_size_g": 21,
+    "calories": 64,
+    "protein_g": 0.1,
+    "carbs_g": 17.3,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 17.2,
+    "is_egyptian": true,
+    "tags": [
+      "honey",
+      "premium",
+      "traditional",
+      "sidr",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Manuka Honey",
+    "name_ar": "عسل مانوكا",
+    "category": "sweetener",
+    "serving_size_g": 21,
+    "calories": 66,
+    "protein_g": 0,
+    "carbs_g": 17.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 17.5,
+    "is_egyptian": false,
+    "tags": [
+      "honey",
+      "premium",
+      "manuka",
+      "immunity"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Apple Cider Vinegar (Imtenan)",
+    "name_ar": "خل تفاح (إمتنان)",
+    "category": "condiment",
+    "serving_size_g": 15,
+    "calories": 3,
+    "protein_g": 0,
+    "carbs_g": 0.1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "brand_en": "Imtenan",
+    "brand_ar": "إمتنان",
+    "is_egyptian": true,
+    "tags": [
+      "vinegar",
+      "health",
+      "digestion",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  },
+  {
+    "name_en": "Coconut Oil (Virgin)",
+    "name_ar": "زيت جوز هند بكر",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 121,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 13.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "oil",
+      "coconut",
+      "MCT",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut-oil.jpg"
+  },
+  {
+    "name_en": "MCT Oil",
+    "name_ar": "زيت MCT",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 115,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "oil",
+      "MCT",
+      "keto",
+      "energy"
+    ]
+  },
+  {
+    "name_en": "Avocado Oil",
+    "name_ar": "زيت أفوكادو",
+    "category": "oil",
+    "serving_size_g": 14,
+    "calories": 124,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "oil",
+      "avocado",
+      "healthy_fat",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  },
+  {
+    "name_en": "Almond Butter (Abu Auf)",
+    "name_ar": "زبدة لوز (أبو عوف)",
+    "category": "nut_butter",
+    "serving_size_g": 32,
+    "calories": 196,
+    "protein_g": 6.7,
+    "carbs_g": 6,
+    "fat_g": 17.8,
+    "fiber_g": 3.3,
+    "calcium_mg": 76,
+    "brand_en": "Abu Auf",
+    "brand_ar": "أبو عوف",
+    "is_egyptian": true,
+    "tags": [
+      "nut_butter",
+      "almond",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Cashew Butter",
+    "name_ar": "زبدة كاجو",
+    "category": "nut_butter",
+    "serving_size_g": 32,
+    "calories": 188,
+    "protein_g": 5.6,
+    "carbs_g": 8.8,
+    "fat_g": 15.7,
+    "fiber_g": 0.3,
+    "iron_mg": 2,
+    "is_egyptian": false,
+    "tags": [
+      "nut_butter",
+      "cashew",
+      "healthy_fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Sunflower Seed Butter",
+    "name_ar": "زبدة بذور دوار الشمس",
+    "category": "nut_butter",
+    "serving_size_g": 32,
+    "calories": 186,
+    "protein_g": 6.2,
+    "carbs_g": 7,
+    "fat_g": 16,
+    "fiber_g": 1.5,
+    "vitamin_e_mg": 5,
+    "is_egyptian": false,
+    "tags": [
+      "nut_butter",
+      "sunflower",
+      "nut_free"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sunflower-seeds.jpg"
+  },
+  {
+    "name_en": "Matcha Powder",
+    "name_ar": "بودرة ماتشا",
+    "category": "tea",
+    "serving_size_g": 2,
+    "calories": 5,
+    "protein_g": 0.5,
+    "carbs_g": 0.5,
+    "fat_g": 0.1,
+    "fiber_g": 0.3,
+    "caffeine_mg": 70,
+    "is_egyptian": false,
+    "tags": [
+      "tea",
+      "matcha",
+      "antioxidant",
+      "energy",
+      "japanese"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Moringa Powder",
+    "name_ar": "بودرة المورينجا",
+    "category": "supplement",
+    "serving_size_g": 10,
+    "calories": 30,
+    "protein_g": 2.5,
+    "carbs_g": 4,
+    "fat_g": 0.5,
+    "fiber_g": 2,
+    "iron_mg": 4,
+    "calcium_mg": 185,
+    "vitamin_c_mg": 17,
+    "is_egyptian": true,
+    "tags": [
+      "superfood",
+      "moringa",
+      "iron_rich",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Activated Charcoal Capsules",
+    "name_ar": "كبسولات فحم نشط",
+    "category": "supplement",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "detox",
+      "charcoal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Psyllium Husk Powder",
+    "name_ar": "قشور السيليوم مطحونة",
+    "category": "supplement",
+    "serving_size_g": 7,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 6,
+    "fat_g": 0,
+    "fiber_g": 5,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "fiber",
+      "digestion",
+      "keto"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Collagen Peptides Powder",
+    "name_ar": "بودرة كولاجين ببتيد",
+    "category": "supplement",
+    "serving_size_g": 20,
+    "calories": 72,
+    "protein_g": 18,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "collagen",
+      "skin",
+      "joints",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Elderberry Syrup",
+    "name_ar": "شراب التوت البري (إلدربيري)",
+    "category": "supplement",
+    "serving_size_g": 15,
+    "calories": 40,
+    "protein_g": 0,
+    "carbs_g": 10,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "vitamin_c_mg": 50,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "immunity",
+      "elderberry",
+      "syrup"
+    ]
+  },
+  {
+    "name_en": "Dried Mulberries (Tout)",
+    "name_ar": "توت مجفف",
+    "category": "dried_fruit",
+    "serving_size_g": 30,
+    "calories": 90,
+    "protein_g": 3,
+    "carbs_g": 20,
+    "fat_g": 0.4,
+    "fiber_g": 2.5,
+    "iron_mg": 1.8,
+    "is_egyptian": true,
+    "tags": [
+      "dried_fruit",
+      "mulberry",
+      "snack",
+      "egyptian"
+    ]
+  },
+  {
+    "name_en": "Dried Cranberries",
+    "name_ar": "توت بري مجفف (كرانبيري)",
+    "category": "dried_fruit",
+    "serving_size_g": 40,
+    "calories": 130,
+    "protein_g": 0,
+    "carbs_g": 34,
+    "fat_g": 0.5,
+    "fiber_g": 2,
+    "sugar_g": 26,
+    "is_egyptian": false,
+    "tags": [
+      "dried_fruit",
+      "cranberry",
+      "antioxidant",
+      "snack"
+    ]
+  },
+  {
+    "name_en": "Mixed Trail Mix (Abu Auf)",
+    "name_ar": "خليط مكسرات وفواكه مجففة (أبو عوف)",
+    "category": "snack",
+    "serving_size_g": 40,
+    "calories": 195,
+    "protein_g": 5.5,
+    "carbs_g": 18,
+    "fat_g": 12,
+    "fiber_g": 2.5,
+    "brand_en": "Abu Auf",
+    "brand_ar": "أبو عوف",
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "trail_mix",
+      "nuts",
+      "dried_fruit",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/trail-mix.jpg"
+  },
+  {
+    "name_en": "Protein Trail Mix (Abu Auf)",
+    "name_ar": "خليط بروتين (أبو عوف)",
+    "category": "snack",
+    "serving_size_g": 40,
+    "calories": 210,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 15,
+    "fiber_g": 3,
+    "brand_en": "Abu Auf",
+    "brand_ar": "أبو عوف",
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "trail_mix",
+      "protein",
+      "nuts",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/trail-mix.jpg"
+  },
+  {
+    "name_en": "Dried Figs (Teen)",
+    "name_ar": "تين مجفف",
+    "category": "dried_fruit",
+    "serving_size_g": 40,
+    "calories": 100,
+    "protein_g": 1.3,
+    "carbs_g": 26,
+    "fat_g": 0.4,
+    "fiber_g": 3.7,
+    "calcium_mg": 65,
+    "potassium_mg": 270,
+    "is_egyptian": true,
+    "tags": [
+      "dried_fruit",
+      "fig",
+      "teen",
+      "calcium",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/figs.jpg"
+  },
+  {
+    "name_en": "Dried Apricots (Mishmish)",
+    "name_ar": "مشمش مجفف (قمر الدين)",
+    "category": "dried_fruit",
+    "serving_size_g": 40,
+    "calories": 96,
+    "protein_g": 1.4,
+    "carbs_g": 25,
+    "fat_g": 0.2,
+    "fiber_g": 3,
+    "iron_mg": 1,
+    "potassium_mg": 460,
+    "is_egyptian": true,
+    "tags": [
+      "dried_fruit",
+      "apricot",
+      "mishmish",
+      "ramadan",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apricots.jpg"
+  },
+  {
+    "name_en": "Prunes (Dried Plums)",
+    "name_ar": "برقوق مجفف",
+    "category": "dried_fruit",
+    "serving_size_g": 40,
+    "calories": 96,
+    "protein_g": 0.9,
+    "carbs_g": 25.5,
+    "fat_g": 0.2,
+    "fiber_g": 3,
+    "potassium_mg": 290,
+    "is_egyptian": false,
+    "tags": [
+      "dried_fruit",
+      "prune",
+      "digestion",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/plum.jpg"
+  },
+  {
+    "name_en": "Cacao Nibs",
+    "name_ar": "قطع كاكاو خام",
+    "category": "superfood",
+    "serving_size_g": 28,
+    "calories": 130,
+    "protein_g": 3.6,
+    "carbs_g": 10,
+    "fat_g": 12,
+    "fiber_g": 9,
+    "iron_mg": 1.5,
+    "magnesium_mg": 64,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "cacao",
+      "snack",
+      "antioxidant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cocoa-powder.jpg"
+  },
+  {
+    "name_en": "Nutritional Yeast Flakes",
+    "name_ar": "خميرة غذائية رقائق",
+    "category": "supplement",
+    "serving_size_g": 15,
+    "calories": 50,
+    "protein_g": 8,
+    "carbs_g": 5,
+    "fat_g": 0.5,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "vegan",
+      "protein",
+      "b_vitamins",
+      "cheese_alternative"
+    ]
+  },
+  {
+    "name_en": "Baobab Powder",
+    "name_ar": "بودرة باوباب",
+    "category": "supplement",
+    "serving_size_g": 10,
+    "calories": 25,
+    "protein_g": 0.2,
+    "carbs_g": 6,
+    "fat_g": 0,
+    "fiber_g": 4.5,
+    "vitamin_c_mg": 45,
+    "potassium_mg": 150,
+    "is_egyptian": false,
+    "tags": [
+      "superfood",
+      "baobab",
+      "vitamin_c",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  }
+]

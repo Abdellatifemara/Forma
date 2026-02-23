@@ -1,0 +1,617 @@
+[
+  {
+    "name_en": "Ketchup (1 tbsp)",
+    "name_ar": "كاتشب",
+    "category": "CARBS",
+    "serving_size_g": 17,
+    "calories": 20,
+    "protein_g": 0.2,
+    "carbs_g": 5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 4,
+    "sodium_mg": 170,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "sauce"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ketchup.jpg"
+  },
+  {
+    "name_en": "Mustard (1 tbsp)",
+    "name_ar": "مسطردة",
+    "category": "CARBS",
+    "serving_size_g": 15,
+    "calories": 10,
+    "protein_g": 0.6,
+    "carbs_g": 1,
+    "fat_g": 0.5,
+    "fiber_g": 0.3,
+    "sodium_mg": 120,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "sauce",
+      "low-cal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mustard.jpg"
+  },
+  {
+    "name_en": "Mayonnaise (1 tbsp)",
+    "name_ar": "مايونيز",
+    "category": "FATS",
+    "serving_size_g": 15,
+    "calories": 100,
+    "protein_g": 0.1,
+    "carbs_g": 0.1,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "sodium_mg": 90,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "sauce",
+      "high-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mayonnaise.jpg"
+  },
+  {
+    "name_en": "Light Mayonnaise (1 tbsp)",
+    "name_ar": "مايونيز لايت",
+    "category": "FATS",
+    "serving_size_g": 15,
+    "calories": 35,
+    "protein_g": 0.1,
+    "carbs_g": 2,
+    "fat_g": 3.5,
+    "fiber_g": 0,
+    "sodium_mg": 120,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "sauce",
+      "light"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mayonnaise.jpg"
+  },
+  {
+    "name_en": "Hot Sauce / Shatta (1 tbsp)",
+    "name_ar": "شطة",
+    "category": "VEGETABLES",
+    "serving_size_g": 15,
+    "calories": 5,
+    "protein_g": 0.2,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0.3,
+    "sodium_mg": 200,
+    "is_egyptian": true,
+    "tags": [
+      "condiment",
+      "spicy",
+      "zero-cal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hot-sauce.jpg"
+  },
+  {
+    "name_en": "Soy Sauce (1 tbsp)",
+    "name_ar": "صوص صويا",
+    "category": "PROTEIN",
+    "serving_size_g": 15,
+    "calories": 10,
+    "protein_g": 1,
+    "carbs_g": 1.5,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sodium_mg": 920,
+    "is_egyptian": false,
+    "tags": [
+      "condiment",
+      "asian",
+      "high-sodium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/soy-sauce.jpg"
+  },
+  {
+    "name_en": "Tomato Sauce / Salsa (1/4 cup)",
+    "name_ar": "صلصة طماطم",
+    "category": "VEGETABLES",
+    "serving_size_g": 60,
+    "calories": 20,
+    "protein_g": 1,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "sodium_mg": 250,
+    "is_egyptian": true,
+    "tags": [
+      "sauce",
+      "tomato",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tomato-sauce.jpg"
+  },
+  {
+    "name_en": "Tomato Paste (1 tbsp)",
+    "name_ar": "صلصة طماطم مركزة (معجون)",
+    "category": "VEGETABLES",
+    "serving_size_g": 16,
+    "calories": 13,
+    "protein_g": 0.7,
+    "carbs_g": 3,
+    "fat_g": 0.1,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "paste",
+      "cooking",
+      "base"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/tomato-paste.jpg"
+  },
+  {
+    "name_en": "Garlic Sauce / Toum (2 tbsp)",
+    "name_ar": "ثومية",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 120,
+    "protein_g": 0.3,
+    "carbs_g": 2,
+    "fat_g": 12,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "sauce",
+      "garlic",
+      "shawarma"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/garlic.jpg"
+  },
+  {
+    "name_en": "BBQ Sauce (1 tbsp)",
+    "name_ar": "صوص باربكيو",
+    "category": "CARBS",
+    "serving_size_g": 18,
+    "calories": 30,
+    "protein_g": 0,
+    "carbs_g": 7,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 6,
+    "sodium_mg": 200,
+    "is_egyptian": false,
+    "tags": [
+      "sauce",
+      "bbq",
+      "sweet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/bbq-sauce.jpg"
+  },
+  {
+    "name_en": "Ranch Dressing (2 tbsp)",
+    "name_ar": "صوص رانش",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 130,
+    "protein_g": 0.5,
+    "carbs_g": 2,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "sodium_mg": 260,
+    "is_egyptian": false,
+    "tags": [
+      "dressing",
+      "salad",
+      "high-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salad-dressing.jpg"
+  },
+  {
+    "name_en": "Caesar Dressing (2 tbsp)",
+    "name_ar": "صوص سيزر",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 140,
+    "protein_g": 1,
+    "carbs_g": 1,
+    "fat_g": 15,
+    "fiber_g": 0,
+    "sodium_mg": 310,
+    "is_egyptian": false,
+    "tags": [
+      "dressing",
+      "salad",
+      "high-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salad-dressing.jpg"
+  },
+  {
+    "name_en": "Balsamic Vinaigrette (2 tbsp)",
+    "name_ar": "صوص بلسميك",
+    "category": "FATS",
+    "serving_size_g": 30,
+    "calories": 90,
+    "protein_g": 0,
+    "carbs_g": 3,
+    "fat_g": 9,
+    "fiber_g": 0,
+    "sodium_mg": 180,
+    "is_egyptian": false,
+    "tags": [
+      "dressing",
+      "salad",
+      "vinegar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  },
+  {
+    "name_en": "Olive Oil Extra Virgin (1 tbsp)",
+    "name_ar": "زيت زيتون بكر",
+    "category": "FATS",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "oil",
+      "healthy-fat",
+      "cooking",
+      "monounsaturated"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/olive-oil.jpg"
+  },
+  {
+    "name_en": "Coconut Oil (1 tbsp)",
+    "name_ar": "زيت جوز الهند",
+    "category": "FATS",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "oil",
+      "cooking",
+      "saturated"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut-oil.jpg"
+  },
+  {
+    "name_en": "Butter (1 tbsp)",
+    "name_ar": "زبدة",
+    "category": "FATS",
+    "serving_size_g": 14,
+    "calories": 100,
+    "protein_g": 0.1,
+    "carbs_g": 0,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "fat",
+      "cooking",
+      "dairy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Ghee / Samna (1 tbsp)",
+    "name_ar": "سمنة",
+    "category": "FATS",
+    "serving_size_g": 14,
+    "calories": 125,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "fat",
+      "cooking",
+      "traditional"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/ghee.jpg"
+  },
+  {
+    "name_en": "Nutella (1 tbsp)",
+    "name_ar": "نوتيلا",
+    "category": "CARBS",
+    "serving_size_g": 18,
+    "calories": 100,
+    "protein_g": 1,
+    "carbs_g": 11,
+    "fat_g": 6,
+    "fiber_g": 0.5,
+    "sugar_g": 10,
+    "is_egyptian": false,
+    "brand_en": "Nutella",
+    "brand_ar": "نوتيلا",
+    "tags": [
+      "spread",
+      "chocolate",
+      "hazelnut",
+      "sweet"
+    ]
+  },
+  {
+    "name_en": "Jam (Any Flavor, 1 tbsp)",
+    "name_ar": "مربى",
+    "category": "CARBS",
+    "serving_size_g": 20,
+    "calories": 50,
+    "protein_g": 0,
+    "carbs_g": 13,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "spread",
+      "breakfast",
+      "sweet"
+    ]
+  },
+  {
+    "name_en": "White Vinegar (1 tbsp)",
+    "name_ar": "خل أبيض",
+    "category": "BEVERAGES",
+    "serving_size_g": 15,
+    "calories": 3,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "vinegar",
+      "condiment",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  },
+  {
+    "name_en": "Apple Cider Vinegar (1 tbsp)",
+    "name_ar": "خل تفاح",
+    "category": "BEVERAGES",
+    "serving_size_g": 15,
+    "calories": 3,
+    "protein_g": 0,
+    "carbs_g": 0.1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "vinegar",
+      "health",
+      "digestive"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vinegar.jpg"
+  },
+  {
+    "name_en": "Sugar (1 tsp)",
+    "name_ar": "سكر",
+    "category": "CARBS",
+    "serving_size_g": 4,
+    "calories": 16,
+    "protein_g": 0,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 4,
+    "is_egyptian": true,
+    "tags": [
+      "sweetener",
+      "sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Honey (1 tbsp)",
+    "name_ar": "عسل نحل",
+    "category": "CARBS",
+    "serving_size_g": 21,
+    "calories": 64,
+    "protein_g": 0.1,
+    "carbs_g": 17,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 17,
+    "is_egyptian": true,
+    "tags": [
+      "sweetener",
+      "natural",
+      "honey"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/honey.jpg"
+  },
+  {
+    "name_en": "Maple Syrup (1 tbsp)",
+    "name_ar": "شراب القيقب",
+    "category": "CARBS",
+    "serving_size_g": 20,
+    "calories": 52,
+    "protein_g": 0,
+    "carbs_g": 13,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "sugar_g": 12,
+    "is_egyptian": false,
+    "tags": [
+      "sweetener",
+      "natural",
+      "pancakes"
+    ]
+  },
+  {
+    "name_en": "Stevia (1 packet)",
+    "name_ar": "ستيفيا",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sweetener",
+      "zero-cal",
+      "natural",
+      "diet"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Splenda (1 packet)",
+    "name_ar": "سبلندا",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "sweetener",
+      "zero-cal",
+      "artificial"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Cumin (Ground, 1 tsp)",
+    "name_ar": "كمون مطحون",
+    "category": "VEGETABLES",
+    "serving_size_g": 2.5,
+    "calories": 8,
+    "protein_g": 0.4,
+    "carbs_g": 1,
+    "fat_g": 0.5,
+    "fiber_g": 0.3,
+    "iron_mg": 1.4,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "cooking",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cumin.jpg"
+  },
+  {
+    "name_en": "Turmeric (Ground, 1 tsp)",
+    "name_ar": "كركم مطحون",
+    "category": "VEGETABLES",
+    "serving_size_g": 3,
+    "calories": 9,
+    "protein_g": 0.3,
+    "carbs_g": 2,
+    "fat_g": 0.3,
+    "fiber_g": 0.7,
+    "iron_mg": 1.7,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "anti-inflammatory",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turmeric.jpg"
+  },
+  {
+    "name_en": "Cinnamon (Ground, 1 tsp)",
+    "name_ar": "قرفة مطحونة",
+    "category": "VEGETABLES",
+    "serving_size_g": 2.6,
+    "calories": 6,
+    "protein_g": 0.1,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 1.4,
+    "calcium_mg": 26,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "blood-sugar",
+      "baking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cinnamon.jpg"
+  },
+  {
+    "name_en": "Black Pepper (Ground, 1 tsp)",
+    "name_ar": "فلفل أسود",
+    "category": "VEGETABLES",
+    "serving_size_g": 2.3,
+    "calories": 6,
+    "protein_g": 0.2,
+    "carbs_g": 1.5,
+    "fat_g": 0.1,
+    "fiber_g": 0.6,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "cooking"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/black-pepper.jpg"
+  },
+  {
+    "name_en": "Paprika (1 tsp)",
+    "name_ar": "بابريكا",
+    "category": "VEGETABLES",
+    "serving_size_g": 2.3,
+    "calories": 6,
+    "protein_g": 0.3,
+    "carbs_g": 1.2,
+    "fat_g": 0.3,
+    "fiber_g": 0.8,
+    "vitamin_a_iu": 1300,
+    "is_egyptian": false,
+    "tags": [
+      "spice",
+      "cooking",
+      "color"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/paprika.jpg"
+  },
+  {
+    "name_en": "Mixed Spice / Baharat (1 tsp)",
+    "name_ar": "بهارات مشكلة",
+    "category": "VEGETABLES",
+    "serving_size_g": 3,
+    "calories": 8,
+    "protein_g": 0.3,
+    "carbs_g": 1.5,
+    "fat_g": 0.3,
+    "fiber_g": 0.5,
+    "is_egyptian": true,
+    "tags": [
+      "spice",
+      "cooking",
+      "middle-eastern"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Dried Mint (1 tsp)",
+    "name_ar": "نعناع مجفف",
+    "category": "VEGETABLES",
+    "serving_size_g": 1,
+    "calories": 3,
+    "protein_g": 0.2,
+    "carbs_g": 0.5,
+    "fat_g": 0,
+    "fiber_g": 0.3,
+    "is_egyptian": true,
+    "tags": [
+      "herb",
+      "cooking",
+      "soup"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mint.jpg"
+  }
+]

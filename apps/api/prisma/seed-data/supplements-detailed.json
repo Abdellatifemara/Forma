@@ -1,0 +1,482 @@
+[
+  {
+    "name_en": "Whey Protein Isolate (1 scoop, ~30g)",
+    "name_ar": "واي بروتين أيزوليت (سكوب ~30 جرام)",
+    "category": "supplement",
+    "serving_size_g": 30,
+    "calories": 110,
+    "protein_g": 25,
+    "carbs_g": 1,
+    "fat_g": 0.5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "whey",
+      "isolate",
+      "protein",
+      "post_workout",
+      "cutting"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Whey Protein Concentrate (1 scoop, ~33g)",
+    "name_ar": "واي بروتين كونسنتريت (سكوب ~33 جرام)",
+    "category": "supplement",
+    "serving_size_g": 33,
+    "calories": 130,
+    "protein_g": 24,
+    "carbs_g": 4,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "whey",
+      "concentrate",
+      "protein",
+      "post_workout",
+      "value"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Casein Protein (1 scoop, ~33g)",
+    "name_ar": "كازين بروتين (سكوب ~33 جرام)",
+    "category": "supplement",
+    "serving_size_g": 33,
+    "calories": 120,
+    "protein_g": 24,
+    "carbs_g": 3,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "casein",
+      "protein",
+      "night",
+      "slow_release"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Mass Gainer — Serious Mass (1 serving)",
+    "name_ar": "ماس جينر — سيريوس ماس (حصة)",
+    "category": "supplement",
+    "serving_size_g": 334,
+    "calories": 1250,
+    "protein_g": 50,
+    "carbs_g": 252,
+    "fat_g": 4,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "mass_gainer",
+      "bulking",
+      "hardgainer",
+      "high_calorie"
+    ]
+  },
+  {
+    "name_en": "Creatine Monohydrate (5g / 1 tsp)",
+    "name_ar": "كرياتين مونوهيدرات (5 جرام)",
+    "category": "supplement",
+    "serving_size_g": 5,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "creatine",
+      "strength",
+      "muscle",
+      "essential",
+      "zero_calorie"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "BCAA Powder (1 scoop, ~10g)",
+    "name_ar": "BCAA بودر (سكوب ~10 جرام)",
+    "category": "supplement",
+    "serving_size_g": 10,
+    "calories": 10,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "bcaa",
+      "recovery",
+      "intra_workout",
+      "muscle"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Pre-Workout (C4 Style, 1 scoop)",
+    "name_ar": "بري ووركاوت (زي C4، سكوب)",
+    "category": "supplement",
+    "serving_size_g": 10,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "pre_workout",
+      "caffeine",
+      "energy",
+      "pump"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Glutamine (5g / 1 tsp)",
+    "name_ar": "جلوتامين (5 جرام)",
+    "category": "supplement",
+    "serving_size_g": 5,
+    "calories": 0,
+    "protein_g": 5,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "glutamine",
+      "recovery",
+      "immune",
+      "gut_health"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Fish Oil / Omega-3 (2 capsules)",
+    "name_ar": "زيت سمك / أوميجا 3 (2 كبسولة)",
+    "category": "supplement",
+    "serving_size_g": 2,
+    "calories": 20,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "fish_oil",
+      "omega3",
+      "heart",
+      "joints",
+      "essential"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/fish-oil.jpg"
+  },
+  {
+    "name_en": "Vitamin D3 (2000 IU, 1 capsule)",
+    "name_ar": "فيتامين D3 (2000 وحدة، كبسولة)",
+    "category": "supplement",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "vitamin_d",
+      "bone",
+      "immune",
+      "essential"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Zinc (30mg, 1 tablet)",
+    "name_ar": "زنك (30 مجم، قرص)",
+    "category": "supplement",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "zinc",
+      "immune",
+      "testosterone",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Magnesium (400mg, 1 tablet)",
+    "name_ar": "ماغنسيوم (400 مجم، قرص)",
+    "category": "supplement",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "magnesium",
+      "sleep",
+      "muscle",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Vitamin C (1000mg, 1 tablet)",
+    "name_ar": "فيتامين سي (1000 مجم، قرص)",
+    "category": "supplement",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "vitamin_c",
+      "immune",
+      "antioxidant"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Iron Supplement (65mg, 1 tablet)",
+    "name_ar": "حديد (65 مجم، قرص)",
+    "category": "supplement",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "iron",
+      "anemia",
+      "women",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Protein Bar (Quest Style, 1 bar)",
+    "name_ar": "بروتين بار (زي كويست، 1 بار)",
+    "category": "supplement",
+    "serving_size_g": 60,
+    "calories": 190,
+    "protein_g": 21,
+    "carbs_g": 21,
+    "fat_g": 7,
+    "fiber_g": 14,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "protein_bar",
+      "snack",
+      "convenient",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola-bar.jpg"
+  },
+  {
+    "name_en": "Protein Bar (Grenade Style, 1 bar)",
+    "name_ar": "بروتين بار (زي جرينيد، 1 بار)",
+    "category": "supplement",
+    "serving_size_g": 60,
+    "calories": 220,
+    "protein_g": 20,
+    "carbs_g": 17,
+    "fat_g": 9,
+    "fiber_g": 2,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "protein_bar",
+      "snack",
+      "chocolate",
+      "convenient"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola-bar.jpg"
+  },
+  {
+    "name_en": "Collagen Peptides (1 scoop, ~10g)",
+    "name_ar": "كولاجين ببتيد (سكوب ~10 جرام)",
+    "category": "supplement",
+    "serving_size_g": 10,
+    "calories": 35,
+    "protein_g": 9,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "collagen",
+      "skin",
+      "joints",
+      "hair"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "CLA (Conjugated Linoleic Acid, 2 capsules)",
+    "name_ar": "CLA (2 كبسولة)",
+    "category": "supplement",
+    "serving_size_g": 3,
+    "calories": 18,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 2,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "cla",
+      "fat_loss",
+      "body_composition"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "L-Carnitine (1000mg liquid shot)",
+    "name_ar": "إل كارنتين (1000 مجم شوت سائل)",
+    "category": "supplement",
+    "serving_size_g": 15,
+    "calories": 5,
+    "protein_g": 0,
+    "carbs_g": 1,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "l_carnitine",
+      "fat_burning",
+      "energy",
+      "cardio"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "ZMA (Zinc + Magnesium + B6, 3 capsules)",
+    "name_ar": "ZMA (3 كبسولات)",
+    "category": "supplement",
+    "serving_size_g": 3,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "zma",
+      "sleep",
+      "recovery",
+      "testosterone"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Dextrose Powder (30g post-workout)",
+    "name_ar": "دكستروز بودر (30 جرام بعد التمرين)",
+    "category": "supplement",
+    "serving_size_g": 30,
+    "calories": 110,
+    "protein_g": 0,
+    "carbs_g": 28,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "dextrose",
+      "fast_carbs",
+      "post_workout",
+      "recovery"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sugar.jpg"
+  },
+  {
+    "name_en": "Ashwagandha (300mg, 1 capsule)",
+    "name_ar": "أشواجاندا (300 مجم، كبسولة)",
+    "category": "supplement",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "ashwagandha",
+      "stress",
+      "testosterone",
+      "adaptogen"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/vitamins.jpg"
+  },
+  {
+    "name_en": "Beta-Alanine (3g, 1 scoop)",
+    "name_ar": "بيتا ألانين (3 جرام، سكوب)",
+    "category": "supplement",
+    "serving_size_g": 3,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "beta_alanine",
+      "endurance",
+      "pre_workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/protein-powder.jpg"
+  },
+  {
+    "name_en": "Caffeine Tablet (200mg)",
+    "name_ar": "كافيين قرص (200 مجم)",
+    "category": "supplement",
+    "serving_size_g": 1,
+    "calories": 0,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "supplement",
+      "caffeine",
+      "pre_workout",
+      "energy",
+      "fat_burning"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  }
+]

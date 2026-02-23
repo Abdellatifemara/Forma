@@ -1,0 +1,779 @@
+[
+  {
+    "name_en": "Grilled Chicken Breast with Brown Rice & Broccoli",
+    "name_ar": "صدور فراخ مشوية مع رز بني وبروكلي",
+    "category": "PROTEIN",
+    "serving_size_g": 400,
+    "calories": 450,
+    "protein_g": 42,
+    "carbs_g": 48,
+    "fat_g": 8,
+    "fiber_g": 6,
+    "is_egyptian": true,
+    "tags": [
+      "meal-prep",
+      "high-protein",
+      "diet",
+      "bodybuilding"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Tuna Salad (No Mayo)",
+    "name_ar": "سلطة تونة بدون مايونيز",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 220,
+    "protein_g": 35,
+    "carbs_g": 8,
+    "fat_g": 5,
+    "fiber_g": 2,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "tuna",
+      "diet",
+      "high-protein",
+      "low-cal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/canned-tuna.jpg"
+  },
+  {
+    "name_en": "Greek Yogurt with Honey & Nuts",
+    "name_ar": "زبادي يوناني بالعسل والمكسرات",
+    "category": "DAIRY",
+    "serving_size_g": 200,
+    "calories": 280,
+    "protein_g": 18,
+    "carbs_g": 28,
+    "fat_g": 10,
+    "fiber_g": 1,
+    "calcium_mg": 200,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "protein",
+      "healthy",
+      "post-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/greek-yogurt.jpg"
+  },
+  {
+    "name_en": "Overnight Oats with Banana & Peanut Butter",
+    "name_ar": "شوفان بارد بالموز وزبدة فول سوداني",
+    "category": "CARBS",
+    "serving_size_g": 300,
+    "calories": 420,
+    "protein_g": 16,
+    "carbs_g": 55,
+    "fat_g": 16,
+    "fiber_g": 7,
+    "is_egyptian": false,
+    "tags": [
+      "breakfast",
+      "meal-prep",
+      "healthy",
+      "energy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
+  },
+  {
+    "name_en": "Protein Smoothie (Whey + Banana + Milk)",
+    "name_ar": "سموذي بروتين (واي + موز + لبن)",
+    "category": "DAIRY",
+    "serving_size_g": 400,
+    "calories": 380,
+    "protein_g": 35,
+    "carbs_g": 45,
+    "fat_g": 6,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "protein",
+      "post-workout",
+      "shake"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Egg White Omelette (4 whites + vegetables)",
+    "name_ar": "أومليت بياض بيض بالخضار",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 120,
+    "protein_g": 18,
+    "carbs_g": 4,
+    "fat_g": 2.5,
+    "fiber_g": 1.5,
+    "is_egyptian": true,
+    "tags": [
+      "eggs",
+      "diet",
+      "low-cal",
+      "high-protein",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/egg-white.jpg"
+  },
+  {
+    "name_en": "Boiled Eggs (3 whole)",
+    "name_ar": "بيض مسلوق ٣ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 150,
+    "calories": 234,
+    "protein_g": 18.6,
+    "carbs_g": 1.5,
+    "fat_g": 16,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "eggs",
+      "protein",
+      "snack",
+      "simple"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hard-boiled-egg.jpg"
+  },
+  {
+    "name_en": "Chicken Salad with Olive Oil & Lemon",
+    "name_ar": "سلطة فراخ بزيت الزيتون والليمون",
+    "category": "PROTEIN",
+    "serving_size_g": 300,
+    "calories": 320,
+    "protein_g": 35,
+    "carbs_g": 10,
+    "fat_g": 16,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "chicken",
+      "diet",
+      "healthy-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/olive-oil.jpg"
+  },
+  {
+    "name_en": "Baked Sweet Potato with Cottage Cheese",
+    "name_ar": "بطاطا حلوة مشوية بالجبنة القريش",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 250,
+    "protein_g": 16,
+    "carbs_g": 38,
+    "fat_g": 3.5,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "sweet-potato",
+      "diet",
+      "protein",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
+  },
+  {
+    "name_en": "Grilled Salmon Fillet (150g)",
+    "name_ar": "فيليه سلمون مشوي",
+    "category": "PROTEIN",
+    "serving_size_g": 150,
+    "calories": 310,
+    "protein_g": 34,
+    "carbs_g": 0,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "fish",
+      "omega-3",
+      "healthy-fat",
+      "premium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/salmon.jpg"
+  },
+  {
+    "name_en": "Quinoa Salad with Vegetables",
+    "name_ar": "سلطة كينوا بالخضار",
+    "category": "CARBS",
+    "serving_size_g": 250,
+    "calories": 280,
+    "protein_g": 10,
+    "carbs_g": 42,
+    "fat_g": 8,
+    "fiber_g": 6,
+    "is_egyptian": false,
+    "tags": [
+      "salad",
+      "quinoa",
+      "vegan",
+      "healthy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/quinoa.jpg"
+  },
+  {
+    "name_en": "Lentil Salad (Ads Eskandarani)",
+    "name_ar": "سلطة عدس اسكندراني",
+    "category": "PROTEIN",
+    "serving_size_g": 250,
+    "calories": 260,
+    "protein_g": 16,
+    "carbs_g": 38,
+    "fat_g": 5,
+    "fiber_g": 12,
+    "iron_mg": 5,
+    "is_egyptian": true,
+    "tags": [
+      "salad",
+      "lentils",
+      "protein",
+      "vegan",
+      "iron"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lentils.jpg"
+  },
+  {
+    "name_en": "Hummus (1/2 cup)",
+    "name_ar": "حمص (نصف كوب)",
+    "category": "FATS",
+    "serving_size_g": 120,
+    "calories": 210,
+    "protein_g": 8,
+    "carbs_g": 20,
+    "fat_g": 12,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "dip",
+      "chickpeas",
+      "tahini",
+      "healthy-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/hummus.jpg"
+  },
+  {
+    "name_en": "Baba Ghanoush (1/2 cup)",
+    "name_ar": "بابا غنوج (نصف كوب)",
+    "category": "VEGETABLES",
+    "serving_size_g": 120,
+    "calories": 140,
+    "protein_g": 3,
+    "carbs_g": 12,
+    "fat_g": 10,
+    "fiber_g": 3,
+    "is_egyptian": true,
+    "tags": [
+      "dip",
+      "eggplant",
+      "tahini",
+      "low-cal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/broccoli.jpg"
+  },
+  {
+    "name_en": "Labneh (Strained Yogurt, 3 tbsp)",
+    "name_ar": "لبنة",
+    "category": "DAIRY",
+    "serving_size_g": 60,
+    "calories": 80,
+    "protein_g": 4,
+    "carbs_g": 3,
+    "fat_g": 6,
+    "fiber_g": 0,
+    "calcium_mg": 80,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "spread",
+      "breakfast",
+      "protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Avocado Toast (1 slice whole wheat + 1/2 avocado)",
+    "name_ar": "توست افوكادو",
+    "category": "FATS",
+    "serving_size_g": 150,
+    "calories": 280,
+    "protein_g": 6,
+    "carbs_g": 22,
+    "fat_g": 18,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "breakfast",
+      "healthy-fat",
+      "trendy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/avocado.jpg"
+  },
+  {
+    "name_en": "Protein Pancakes (3 small)",
+    "name_ar": "بانكيك بروتين",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 320,
+    "protein_g": 28,
+    "carbs_g": 32,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "breakfast",
+      "protein",
+      "oats",
+      "bodybuilding"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cake.jpg"
+  },
+  {
+    "name_en": "Steak with Vegetables (200g)",
+    "name_ar": "ستيك لحم بالخضار",
+    "category": "PROTEIN",
+    "serving_size_g": 350,
+    "calories": 480,
+    "protein_g": 45,
+    "carbs_g": 12,
+    "fat_g": 28,
+    "fiber_g": 4,
+    "iron_mg": 5,
+    "is_egyptian": false,
+    "tags": [
+      "steak",
+      "high-protein",
+      "iron",
+      "premium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/beef-steak.jpg"
+  },
+  {
+    "name_en": "Gibna Areesh (Cottage Cheese, 1 cup)",
+    "name_ar": "جبنة قريش كوب",
+    "category": "DAIRY",
+    "serving_size_g": 225,
+    "calories": 180,
+    "protein_g": 24,
+    "carbs_g": 6,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "calcium_mg": 138,
+    "is_egyptian": true,
+    "tags": [
+      "cheese",
+      "cottage",
+      "protein",
+      "diet",
+      "low-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cottage-cheese.jpg"
+  },
+  {
+    "name_en": "Turkey Breast Slices (4 slices)",
+    "name_ar": "شرائح صدور رومي",
+    "category": "PROTEIN",
+    "serving_size_g": 80,
+    "calories": 70,
+    "protein_g": 14,
+    "carbs_g": 2,
+    "fat_g": 1,
+    "fiber_g": 0,
+    "sodium_mg": 550,
+    "is_egyptian": false,
+    "tags": [
+      "turkey",
+      "deli",
+      "lean",
+      "sandwich"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/turkey-breast.jpg"
+  },
+  {
+    "name_en": "Oat Milk (1 cup)",
+    "name_ar": "حليب شوفان",
+    "category": "DAIRY",
+    "serving_size_g": 240,
+    "calories": 120,
+    "protein_g": 3,
+    "carbs_g": 16,
+    "fat_g": 5,
+    "fiber_g": 2,
+    "calcium_mg": 350,
+    "is_egyptian": false,
+    "tags": [
+      "milk-alternative",
+      "vegan",
+      "oat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Almond Milk Unsweetened (1 cup)",
+    "name_ar": "حليب لوز بدون سكر",
+    "category": "DAIRY",
+    "serving_size_g": 240,
+    "calories": 30,
+    "protein_g": 1,
+    "carbs_g": 1,
+    "fat_g": 2.5,
+    "fiber_g": 0.5,
+    "calcium_mg": 450,
+    "is_egyptian": false,
+    "tags": [
+      "milk-alternative",
+      "vegan",
+      "low-cal"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/almonds.jpg"
+  },
+  {
+    "name_en": "Popcorn Air-Popped (3 cups)",
+    "name_ar": "فشار بدون زيت",
+    "category": "CARBS",
+    "serving_size_g": 24,
+    "calories": 93,
+    "protein_g": 3,
+    "carbs_g": 19,
+    "fat_g": 1,
+    "fiber_g": 3.5,
+    "is_egyptian": true,
+    "tags": [
+      "snack",
+      "low-cal",
+      "fiber",
+      "whole-grain"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/popcorn.jpg"
+  },
+  {
+    "name_en": "Rice Cakes (2 cakes)",
+    "name_ar": "كيك أرز",
+    "category": "CARBS",
+    "serving_size_g": 18,
+    "calories": 70,
+    "protein_g": 1.5,
+    "carbs_g": 15,
+    "fat_g": 0.5,
+    "fiber_g": 0.5,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "low-cal",
+      "diet",
+      "crispy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/rice.jpg"
+  },
+  {
+    "name_en": "Dark Chocolate 70% (2 squares)",
+    "name_ar": "شوكولاتة داكنة ٧٠٪",
+    "category": "SNACKS",
+    "serving_size_g": 20,
+    "calories": 120,
+    "protein_g": 1.5,
+    "carbs_g": 10,
+    "fat_g": 8.5,
+    "fiber_g": 2,
+    "iron_mg": 2,
+    "is_egyptian": false,
+    "tags": [
+      "chocolate",
+      "antioxidant",
+      "treat",
+      "dark"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chocolate.jpg"
+  },
+  {
+    "name_en": "Protein Bar (Average)",
+    "name_ar": "بار بروتين",
+    "category": "SUPPLEMENTS",
+    "serving_size_g": 60,
+    "calories": 220,
+    "protein_g": 20,
+    "carbs_g": 22,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "protein-bar",
+      "snack",
+      "convenient",
+      "gym"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola-bar.jpg"
+  },
+  {
+    "name_en": "Granola (1/3 cup)",
+    "name_ar": "جرانولا",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 200,
+    "protein_g": 4,
+    "carbs_g": 28,
+    "fat_g": 8,
+    "fiber_g": 3,
+    "is_egyptian": false,
+    "tags": [
+      "cereal",
+      "breakfast",
+      "oats",
+      "nuts"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/granola.jpg"
+  },
+  {
+    "name_en": "Energy Balls (2 pieces, Oat + Date + Peanut Butter)",
+    "name_ar": "كرات طاقة (شوفان + تمر + زبدة فول سوداني)",
+    "category": "CARBS",
+    "serving_size_g": 40,
+    "calories": 160,
+    "protein_g": 4,
+    "carbs_g": 22,
+    "fat_g": 7,
+    "fiber_g": 2.5,
+    "is_egyptian": false,
+    "tags": [
+      "snack",
+      "energy",
+      "pre-workout",
+      "homemade"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/peanut-butter.jpg"
+  },
+  {
+    "name_en": "Edamame (1 cup, shelled)",
+    "name_ar": "فول صويا اخضر",
+    "category": "PROTEIN",
+    "serving_size_g": 155,
+    "calories": 188,
+    "protein_g": 18,
+    "carbs_g": 14,
+    "fat_g": 8,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "soy",
+      "protein",
+      "snack",
+      "fiber"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Tofu Firm (1/2 block)",
+    "name_ar": "توفو متماسك",
+    "category": "PROTEIN",
+    "serving_size_g": 126,
+    "calories": 120,
+    "protein_g": 13,
+    "carbs_g": 3,
+    "fat_g": 7,
+    "fiber_g": 1.5,
+    "calcium_mg": 350,
+    "is_egyptian": false,
+    "tags": [
+      "soy",
+      "protein",
+      "vegan",
+      "calcium"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Acai Bowl (Medium)",
+    "name_ar": "اساي بول",
+    "category": "FRUITS",
+    "serving_size_g": 350,
+    "calories": 420,
+    "protein_g": 8,
+    "carbs_g": 65,
+    "fat_g": 14,
+    "fiber_g": 8,
+    "is_egyptian": false,
+    "tags": [
+      "acai",
+      "breakfast",
+      "antioxidant",
+      "trendy"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/apple.jpg"
+  },
+  {
+    "name_en": "Green Smoothie (Spinach + Banana + Milk)",
+    "name_ar": "سموذي أخضر (سبانخ + موز + لبن)",
+    "category": "BEVERAGES",
+    "serving_size_g": 350,
+    "calories": 200,
+    "protein_g": 8,
+    "carbs_g": 36,
+    "fat_g": 3.5,
+    "fiber_g": 5,
+    "iron_mg": 2.5,
+    "is_egyptian": false,
+    "tags": [
+      "smoothie",
+      "green",
+      "healthy",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/smoothie.jpg"
+  },
+  {
+    "name_en": "Boiled Chickpeas Snack (Hummus Sham)",
+    "name_ar": "حمص الشام",
+    "category": "PROTEIN",
+    "serving_size_g": 200,
+    "calories": 240,
+    "protein_g": 12,
+    "carbs_g": 36,
+    "fat_g": 5,
+    "fiber_g": 10,
+    "is_egyptian": true,
+    "tags": [
+      "chickpeas",
+      "street-food",
+      "snack",
+      "warm",
+      "winter"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chickpeas.jpg"
+  },
+  {
+    "name_en": "Roasted Sweet Potato (Street Vendor)",
+    "name_ar": "بطاطا مشوية (من على العربية)",
+    "category": "CARBS",
+    "serving_size_g": 200,
+    "calories": 180,
+    "protein_g": 4,
+    "carbs_g": 42,
+    "fat_g": 0.3,
+    "fiber_g": 6,
+    "vitamin_a_iu": 28600,
+    "is_egyptian": true,
+    "tags": [
+      "sweet-potato",
+      "street-food",
+      "healthy",
+      "winter"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/sweet-potato.jpg"
+  },
+  {
+    "name_en": "Lupini Beans (Termes, 1 cup)",
+    "name_ar": "ترمس",
+    "category": "PROTEIN",
+    "serving_size_g": 166,
+    "calories": 198,
+    "protein_g": 26,
+    "carbs_g": 16,
+    "fat_g": 4.9,
+    "fiber_g": 4.6,
+    "is_egyptian": true,
+    "tags": [
+      "legume",
+      "protein",
+      "snack",
+      "street-food",
+      "high-protein"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/chicken-breasts.jpg"
+  },
+  {
+    "name_en": "Baked Ta'ameya (Diet, 3 pieces)",
+    "name_ar": "طعمية مشوية (دايت) ٣ حبات",
+    "category": "PROTEIN",
+    "serving_size_g": 120,
+    "calories": 180,
+    "protein_g": 10,
+    "carbs_g": 22,
+    "fat_g": 5,
+    "fiber_g": 5,
+    "is_egyptian": true,
+    "tags": [
+      "falafel",
+      "baked",
+      "diet",
+      "low-fat"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/falafel.jpg"
+  },
+  {
+    "name_en": "Zucchini Noodles / Zoodles (1 cup)",
+    "name_ar": "شعرية كوسة",
+    "category": "VEGETABLES",
+    "serving_size_g": 130,
+    "calories": 20,
+    "protein_g": 1.5,
+    "carbs_g": 4,
+    "fat_g": 0,
+    "fiber_g": 1,
+    "is_egyptian": false,
+    "tags": [
+      "low-carb",
+      "keto",
+      "diet",
+      "pasta-alternative"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/zucchini.jpg"
+  },
+  {
+    "name_en": "Coconut Water (1 cup)",
+    "name_ar": "ماء جوز الهند",
+    "category": "BEVERAGES",
+    "serving_size_g": 240,
+    "calories": 46,
+    "protein_g": 1.7,
+    "carbs_g": 9,
+    "fat_g": 0.5,
+    "fiber_g": 2.6,
+    "potassium_mg": 600,
+    "is_egyptian": false,
+    "tags": [
+      "hydration",
+      "electrolytes",
+      "natural",
+      "post-workout"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/coconut-water.jpg"
+  },
+  {
+    "name_en": "Lemon Water (1 glass)",
+    "name_ar": "ماء بليمون",
+    "category": "BEVERAGES",
+    "serving_size_g": 250,
+    "calories": 6,
+    "protein_g": 0.1,
+    "carbs_g": 2,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "vitamin_c_mg": 10,
+    "is_egyptian": true,
+    "tags": [
+      "water",
+      "hydration",
+      "vitamin-c",
+      "morning"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/lemon.jpg"
+  },
+  {
+    "name_en": "Black Coffee (1 cup)",
+    "name_ar": "قهوة سوداء",
+    "category": "BEVERAGES",
+    "serving_size_g": 240,
+    "calories": 5,
+    "protein_g": 0.3,
+    "carbs_g": 0,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "coffee",
+      "zero-cal",
+      "pre-workout",
+      "metabolism"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/brewed-coffee.jpg"
+  }
+]

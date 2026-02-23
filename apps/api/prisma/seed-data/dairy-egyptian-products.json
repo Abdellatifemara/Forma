@@ -1,0 +1,412 @@
+[
+  {
+    "name_en": "Juhayna Full Cream Milk (250ml)",
+    "name_ar": "جهينة لبن كامل الدسم (250 مل)",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 155,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "juhayna",
+      "milk",
+      "full_cream",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Juhayna Skimmed Milk (250ml)",
+    "name_ar": "جهينة لبن خالي الدسم (250 مل)",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 90,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "juhayna",
+      "milk",
+      "skimmed",
+      "cutting",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Juhayna Zabadi (Plain Yogurt, 180g)",
+    "name_ar": "جهينة زبادي (سادة، 180 جرام)",
+    "category": "dairy",
+    "serving_size_g": 180,
+    "calories": 100,
+    "protein_g": 6,
+    "carbs_g": 8,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "juhayna",
+      "yogurt",
+      "plain",
+      "probiotic",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Domty White Cheese (100g)",
+    "name_ar": "دومتي جبنة بيضاء (100 جرام)",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 260,
+    "protein_g": 14,
+    "carbs_g": 2,
+    "fat_g": 22,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "domty",
+      "white_cheese",
+      "salty",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/feta-cheese.jpg"
+  },
+  {
+    "name_en": "Domty Istanboly Cheese (100g)",
+    "name_ar": "دومتي جبنة إسطنبولي (100 جرام)",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 250,
+    "protein_g": 12,
+    "carbs_g": 3,
+    "fat_g": 21,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "domty",
+      "istanboly",
+      "cheese",
+      "spicy",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Domty Roumy Cheese (100g)",
+    "name_ar": "دومتي جبنة رومي (100 جرام)",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 380,
+    "protein_g": 28,
+    "carbs_g": 0,
+    "fat_g": 30,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "domty",
+      "roumy",
+      "cheese",
+      "aged",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Domty Mozzarella Cheese (100g)",
+    "name_ar": "دومتي جبنة موزاريلا (100 جرام)",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 300,
+    "protein_g": 22,
+    "carbs_g": 2,
+    "fat_g": 22,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "domty",
+      "mozzarella",
+      "cheese",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mozzarella.jpg"
+  },
+  {
+    "name_en": "Greenland Halloumi Cheese (100g)",
+    "name_ar": "جرينلاند جبنة حلومي (100 جرام)",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 320,
+    "protein_g": 22,
+    "carbs_g": 2,
+    "fat_g": 25,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "greenland",
+      "halloumi",
+      "grillable",
+      "protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Nestle Rayeb (Egyptian Fermented Milk, 180ml)",
+    "name_ar": "نستله رايب (180 مل)",
+    "category": "dairy",
+    "serving_size_g": 180,
+    "calories": 90,
+    "protein_g": 5,
+    "carbs_g": 8,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "nestle",
+      "rayeb",
+      "fermented",
+      "probiotic",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Juhayna Mix Fruit Yogurt (180g)",
+    "name_ar": "جهينة زبادي ميكس فروت (180 جرام)",
+    "category": "dairy",
+    "serving_size_g": 180,
+    "calories": 150,
+    "protein_g": 5,
+    "carbs_g": 24,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "juhayna",
+      "fruit_yogurt",
+      "snack",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/yogurt.jpg"
+  },
+  {
+    "name_en": "Egyptian Butter (Zebda Baladi, 1 tbsp)",
+    "name_ar": "زبدة بلدي (معلقة كبيرة)",
+    "category": "dairy",
+    "serving_size_g": 14,
+    "calories": 100,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 11,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "butter",
+      "baladi",
+      "cooking",
+      "fat",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Samna Baladi (Ghee, 1 tbsp)",
+    "name_ar": "سمنة بلدي (معلقة كبيرة)",
+    "category": "dairy",
+    "serving_size_g": 14,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 0,
+    "fat_g": 14,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "ghee",
+      "samna",
+      "cooking",
+      "traditional",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Qeshta / Cream (Fresh, 100g)",
+    "name_ar": "قشطة طازة (100 جرام)",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 200,
+    "protein_g": 3,
+    "carbs_g": 4,
+    "fat_g": 20,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "qeshta",
+      "cream",
+      "dessert",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/heavy-cream.jpg"
+  },
+  {
+    "name_en": "Laban (Buttermilk, 1 glass / 250ml)",
+    "name_ar": "لبن رايب (كوب / 250 مل)",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 100,
+    "protein_g": 8,
+    "carbs_g": 12,
+    "fat_g": 3,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "laban",
+      "buttermilk",
+      "probiotic",
+      "digestion",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/butter.jpg"
+  },
+  {
+    "name_en": "Gibna Tallaga (Fridge Cheese, 100g)",
+    "name_ar": "جبنة تلاجة (100 جرام)",
+    "category": "dairy",
+    "serving_size_g": 100,
+    "calories": 220,
+    "protein_g": 12,
+    "carbs_g": 2,
+    "fat_g": 18,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "tallaga",
+      "fridge_cheese",
+      "breakfast",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Processed Cheese Triangle (La Vache Qui Rit, 1 piece)",
+    "name_ar": "جبنة مثلثات (البقرة الضاحكة، حبة)",
+    "category": "dairy",
+    "serving_size_g": 20,
+    "calories": 50,
+    "protein_g": 2,
+    "carbs_g": 1,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dairy",
+      "processed_cheese",
+      "triangle",
+      "snack",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cheddar-cheese.jpg"
+  },
+  {
+    "name_en": "Kiri Cream Cheese (1 piece)",
+    "name_ar": "كيري (قطعة)",
+    "category": "dairy",
+    "serving_size_g": 20,
+    "calories": 55,
+    "protein_g": 1,
+    "carbs_g": 1,
+    "fat_g": 5,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dairy",
+      "kiri",
+      "cream_cheese",
+      "snack",
+      "kids"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cream-cheese.jpg"
+  },
+  {
+    "name_en": "Puck Cream Cheese Spread (30g)",
+    "name_ar": "بوك كريم تشيز (30 جرام)",
+    "category": "dairy",
+    "serving_size_g": 30,
+    "calories": 80,
+    "protein_g": 2,
+    "carbs_g": 1,
+    "fat_g": 8,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dairy",
+      "puck",
+      "cream_cheese",
+      "spread",
+      "breakfast"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/cream-cheese.jpg"
+  },
+  {
+    "name_en": "Juhayna Protein Milk (High Protein, 250ml)",
+    "name_ar": "جهينة لبن بروتين (عالي البروتين، 250 مل)",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 140,
+    "protein_g": 16,
+    "carbs_g": 10,
+    "fat_g": 4,
+    "fiber_g": 0,
+    "is_egyptian": true,
+    "tags": [
+      "dairy",
+      "juhayna",
+      "protein_milk",
+      "high_protein",
+      "egyptian"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/milk.jpg"
+  },
+  {
+    "name_en": "Almarai Juice (Mango, 250ml)",
+    "name_ar": "المراعي عصير (مانجو، 250 مل)",
+    "category": "dairy",
+    "serving_size_g": 250,
+    "calories": 120,
+    "protein_g": 0,
+    "carbs_g": 30,
+    "fat_g": 0,
+    "fiber_g": 0,
+    "is_egyptian": false,
+    "tags": [
+      "dairy",
+      "almarai",
+      "juice",
+      "mango",
+      "sugar"
+    ],
+    "imageUrl": "https://img.spoonacular.com/ingredients_250x250/mango.jpg"
+  }
+]
