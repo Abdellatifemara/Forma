@@ -2,6 +2,7 @@
 
 import { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import {
   Calendar,
@@ -260,10 +261,10 @@ function WorkoutsContent() {
                     <div className="flex gap-2">
                       {activePlanId === plan.id ? (
                         <Button variant="outline" className="flex-1 sm:flex-none" asChild>
-                          <Link href={`/workouts/${plan.id}`}>
+                          <DynamicLink href={`/workouts/${plan.id}`}>
                             {t.workouts.browsePlans}
                             <ChevronRight className="ms-1 h-4 w-4" />
-                          </Link>
+                          </DynamicLink>
                         </Button>
                       ) : (
                         <Button
@@ -400,10 +401,10 @@ function WorkoutsContent() {
                       </div>
                     </div>
                     <Button variant="ghost" size="sm" className="rounded-xl" asChild>
-                      <Link href={`/workouts/${workout.id}`}>
+                      <DynamicLink href={`/workouts/${workout.id}`}>
                         {isAr ? 'عرض' : 'View'}
                         <ChevronRight className="ms-1 h-4 w-4" />
-                      </Link>
+                      </DynamicLink>
                     </Button>
                   </div>
                 </CardContent>

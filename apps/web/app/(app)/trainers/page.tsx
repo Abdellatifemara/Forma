@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import {
   Award,
   ChevronRight,
@@ -289,7 +290,7 @@ function TrainerCard({ trainer }: { trainer: Trainer }) {
   const clientCount = (trainer as any)._count?.clients ?? 0;
 
   return (
-    <Link href={`/trainers/${trainer.id}`} className="block group">
+    <DynamicLink href={`/trainers/${trainer.id}`} className="block group">
       <div className="relative overflow-hidden rounded-2xl border border-border/60 bg-card transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-0.5">
         {/* Background image area */}
         <div className="relative h-48 overflow-hidden">
@@ -385,6 +386,6 @@ function TrainerCard({ trainer }: { trainer: Trainer }) {
           </div>
         </div>
       </div>
-    </Link>
+    </DynamicLink>
   );
 }

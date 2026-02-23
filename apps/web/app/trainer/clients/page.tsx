@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import {
   Search,
   Filter,
@@ -372,10 +373,10 @@ export default function ClientsPage() {
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">
                           <DropdownMenuItem asChild>
-                            <Link href={`/trainer/clients/${client.clientId}`}>
+                            <DynamicLink href={`/trainer/clients/${client.clientId}`}>
                               <Eye className="me-2 h-4 w-4" />
                               {t.trainer.viewProfile}
-                            </Link>
+                            </DynamicLink>
                           </DropdownMenuItem>
                           <DropdownMenuItem asChild>
                             <Link href={`/trainer/messages?client=${client.clientId}`}>

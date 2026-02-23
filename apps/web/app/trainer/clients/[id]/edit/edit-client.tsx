@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import { useParams } from 'next/navigation';
 import {
   ArrowLeft,
@@ -26,9 +27,9 @@ export default function EditClientPage() {
       {/* Header */}
       <div className="flex items-center gap-4">
         <Button variant="ghost" size="icon" asChild>
-          <Link href={`/trainer/clients/${clientId}`}>
+          <DynamicLink href={`/trainer/clients/${clientId}`}>
             <ArrowLeft className="h-5 w-5" />
-          </Link>
+          </DynamicLink>
         </Button>
         <div>
           <h1 className="text-2xl font-bold">{isAr ? 'تعديل إعدادات العميل' : 'Edit Client Settings'}</h1>
@@ -77,10 +78,10 @@ export default function EditClientPage() {
 
             <div className="mt-8">
               <Button variant="outline" asChild>
-                <Link href={`/trainer/clients/${clientId}`}>
+                <DynamicLink href={`/trainer/clients/${clientId}`}>
                   <ArrowLeft className="me-2 h-4 w-4" />
                   {isAr ? 'رجوع للعميل' : 'Back to Client'}
-                </Link>
+                </DynamicLink>
               </Button>
             </div>
           </div>

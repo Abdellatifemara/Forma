@@ -2,6 +2,7 @@
 
 import { useState, Suspense } from 'react';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import {
   Plus,
@@ -422,10 +423,10 @@ function ProgramsPageContent() {
                       </DropdownMenuTrigger>
                       <DropdownMenuContent align="end">
                         <DropdownMenuItem asChild>
-                          <Link href={`/trainer/programs/${program.id}`}>
+                          <DynamicLink href={`/trainer/programs/${program.id}`}>
                             <Pencil className="me-2 h-4 w-4" />
                             {isAr ? 'تعديل' : 'Edit'}
-                          </Link>
+                          </DynamicLink>
                         </DropdownMenuItem>
                         <DropdownMenuItem onClick={() => handleDuplicate(program.id)} disabled={isDuplicating}>
                           <Copy className="me-2 h-4 w-4" />

@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { aiApi, usersApi, type MyTrainer } from '@/lib/api';
 import { useLanguage } from '@/lib/i18n';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import GuidedChat from '@/components/chat/guided-chat';
 import { ErrorBoundary } from '@/components/error-boundary';
 
@@ -415,20 +416,20 @@ export default function ChatPage() {
               </p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
-              <Link
+              <DynamicLink
                 href={`/trainers/${myTrainer.id}`}
                 className="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-forma-orange/10 hover:bg-forma-orange/20 text-forma-orange text-xs font-medium transition-colors"
               >
                 <UserCircle className="h-3.5 w-3.5" />
                 {isAr ? 'بروفايل' : 'Profile'}
-              </Link>
-              <Link
+              </DynamicLink>
+              <DynamicLink
                 href={`/trainers/${myTrainer.id}?chat=true`}
                 className="flex items-center gap-1 px-3 py-1.5 rounded-xl bg-forma-orange text-white text-xs font-medium hover:bg-forma-orange/90 transition-colors"
               >
                 <MessageSquare className="h-3.5 w-3.5" />
                 {isAr ? 'محادثة' : 'Chat'}
-              </Link>
+              </DynamicLink>
             </div>
           </div>
         </div>

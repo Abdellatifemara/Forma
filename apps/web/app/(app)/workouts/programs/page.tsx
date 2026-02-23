@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import { ArrowLeft, Search, Clock, Calendar, Dumbbell, Flame, Home, Target, Zap, Trophy, ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/lib/i18n';
 import { programsApi } from '@/lib/api';
@@ -155,7 +156,7 @@ export default function ProgramLibraryPage() {
               const CatIcon = catInfo.icon;
 
               return (
-                <Link
+                <DynamicLink
                   key={program.id}
                   href={`/workouts/programs/${program.id}`}
                   className="block group"
@@ -207,7 +208,7 @@ export default function ProgramLibraryPage() {
                       )} />
                     </div>
                   </div>
-                </Link>
+                </DynamicLink>
               );
             })}
           </div>

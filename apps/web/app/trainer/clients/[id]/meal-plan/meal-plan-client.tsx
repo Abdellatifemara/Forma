@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import { useParams } from 'next/navigation';
 import {
   ArrowLeft,
@@ -221,9 +222,9 @@ export default function ClientMealPlanPage() {
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <Button variant="ghost" size="icon" asChild>
-            <Link href={`/trainer/clients/${clientId}`}>
+            <DynamicLink href={`/trainer/clients/${clientId}`}>
               <ArrowLeft className="h-5 w-5" />
-            </Link>
+            </DynamicLink>
           </Button>
           <div>
             <h1 className="text-2xl font-bold">{isAr ? 'مصمم خطة الوجبات' : 'Meal Plan Builder'}</h1>

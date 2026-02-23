@@ -53,6 +53,7 @@ import {
 import { useToast } from '@/hooks/use-toast';
 import { useLanguage } from '@/lib/i18n';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 
 function formatTime(dateString: string, isAr = false) {
   const date = new Date(dateString);
@@ -528,10 +529,10 @@ function MessagesPageContent() {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                       <DropdownMenuItem asChild>
-                        <Link href={`/trainer/clients/${selectedConversation.participant?.id}`}>
+                        <DynamicLink href={`/trainer/clients/${selectedConversation.participant?.id}`}>
                           <User className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                           {isAr ? 'عرض الملف' : 'View Profile'}
-                        </Link>
+                        </DynamicLink>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
                         <Link href={`/trainer/programs?client=${selectedConversation.participant?.id}`}>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { DynamicLink } from '@/components/ui/dynamic-link';
 import Image from 'next/image';
 import {
   ChevronRight,
@@ -277,7 +278,7 @@ function WorkoutCard({ name, duration, sets, reps, href, isRTL }: {
   isRTL: boolean;
 }) {
   return (
-    <Link href={href} className="shrink-0 w-40 rounded-2xl border border-border/50 bg-muted/30 overflow-hidden">
+    <DynamicLink href={href} className="shrink-0 w-40 rounded-2xl border border-border/50 bg-muted/30 overflow-hidden">
       {/* Photo placeholder — dark gradient */}
       <div className="h-24 bg-gradient-to-br from-secondary to-secondary/80 relative">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-forma-orange/10" />
@@ -291,7 +292,7 @@ function WorkoutCard({ name, duration, sets, reps, href, isRTL }: {
           <span>{sets} {isRTL ? 'مجموعة' : 'sets'} · {reps} {isRTL ? 'تمرين' : 'ex'}</span>
         </div>
       </div>
-    </Link>
+    </DynamicLink>
   );
 }
 
