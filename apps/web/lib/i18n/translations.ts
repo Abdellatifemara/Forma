@@ -63,9 +63,9 @@ export const translations = {
         title: 'Squad Training',
         description: 'Train with friends, compete in challenges, and climb leaderboards together.',
       },
-      formChecker: {
-        title: 'Form Review',
-        description: 'Send your videos to trainers. Get personalized feedback on your technique within 24 hours.',
+      fitnessTests: {
+        title: 'Fitness Tests',
+        description: 'Measure your real capabilities — push-ups, plank hold, pull-ups — so we personalize workouts to your actual level.',
       },
       stats: {
         exercises: 'Exercises',
@@ -983,9 +983,9 @@ export const translations = {
         title: 'تمارين جماعية',
         description: 'اتمرن مع صحابك، نافس في تحديات، واطلعوا الليدربورد مع بعض.',
       },
-      formChecker: {
-        title: 'مراجعة الفورم',
-        description: 'ابعت فيديوهاتك للمدربين. احصل على ملاحظات مخصصة لتقنيتك خلال 24 ساعة.',
+      fitnessTests: {
+        title: 'اختبارات اللياقة',
+        description: 'قيس قدراتك الحقيقية — بوش أب، بلانك، عقلة — عشان نخصصلك التمرين على مستواك الفعلي.',
       },
       stats: {
         exercises: 'تمرين',

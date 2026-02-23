@@ -36,8 +36,8 @@ export function Features() {
     },
     {
       icon: Camera,
-      title: t.features.formChecker.title,
-      description: t.features.formChecker.description,
+      title: t.features.fitnessTests.title,
+      description: t.features.fitnessTests.description,
       color: 'bg-pink-500',
     },
     {

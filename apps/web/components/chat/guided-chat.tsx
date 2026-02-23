@@ -5,7 +5,7 @@ import {
   Bot, ChevronLeft, Home, Sparkles, ArrowRight, AlertTriangle,
   Loader2, CheckCircle2, XCircle, Dumbbell, Apple, Heart,
   TrendingUp, Zap, Pill, RotateCcw, Watch, Settings, BookOpen,
-  ChevronRight,
+  ChevronRight, Trash2,
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/lib/i18n';
@@ -392,7 +392,7 @@ function getContextualChips(isAr: boolean): Array<{ label: string; stateId: stri
 function getContextualPlaceholder(domain: string, isAr: boolean): string {
   const hints: Record<string, { en: string; ar: string }> = {
     root:        { en: 'Try "start workout" or "log meal" or "change my name"', ar: 'جرب "ابدأ تمرين" أو "سجل وجبة" أو "غير اسمي"' },
-    workout:     { en: 'Try "chest exercises" or "skip today" or "form check"', ar: 'جرب "تمارين صدر" أو "اسكب النهارده" أو "الفورم"' },
+    workout:     { en: 'Try "chest exercises" or "skip today" or "technique tips"', ar: 'جرب "تمارين صدر" أو "اسكب النهارده" أو "نصايح تمارين"' },
     nutrition:   { en: 'Try "log breakfast" or "high protein" or "pre workout meal"', ar: 'جرب "سجل فطار" أو "بروتين عالي" أو "أكل قبل التمرين"' },
     health:      { en: 'Try "sleep data" or "heart rate" or "log weight"', ar: 'جرب "بيانات النوم" أو "نبض القلب" أو "سجل الوزن"' },
     progress:    { en: 'Try "my progress" or "log weight" or "weekly check"', ar: 'جرب "تقدمي" أو "سجل الوزن" أو "تشيك أسبوعي"' },
@@ -854,6 +854,15 @@ export default function GuidedChat() {
               className="h-8 w-8 rounded-xl flex items-center justify-center hover:bg-muted transition-colors"
             >
               <Home className="h-4 w-4" />
+            </button>
+          )}
+          {history.length > 0 && (
+            <button
+              onClick={handleReset}
+              className="h-8 w-8 rounded-xl flex items-center justify-center hover:bg-destructive/10 hover:text-destructive transition-colors"
+              title={isAr ? 'مسح المحادثة' : 'Clear chat'}
+            >
+              <Trash2 className="h-4 w-4" />
             </button>
           )}
         </div>

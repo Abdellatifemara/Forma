@@ -683,27 +683,36 @@ function HealthDashboard() {
   const { data: dashboard, isLoading: dashboardLoading } = useQuery({
     queryKey: ['health-metrics-dashboard'],
     queryFn: () => healthMetricsApi.getDashboard(),
+    retry: 1,
   });
 
-  // Real wearable data from /health-data endpoints
+  // Real wearable data from /health-data endpoints (graceful failure — these need wearable data)
   const { data: readiness } = useQuery({
     queryKey: ['health-data-readiness'],
     queryFn: () => healthDataApi.getReadiness(),
+    retry: false,
+    staleTime: 5 * 60 * 1000,
   });
 
   const { data: strain } = useQuery({
     queryKey: ['health-data-strain'],
     queryFn: () => healthDataApi.getStrain(),
+    retry: false,
+    staleTime: 5 * 60 * 1000,
   });
 
   const { data: sleepData } = useQuery({
     queryKey: ['health-data-sleep'],
     queryFn: () => healthDataApi.getSleep(),
+    retry: false,
+    staleTime: 5 * 60 * 1000,
   });
 
   const { data: readinessTrend } = useQuery({
     queryKey: ['health-data-readiness-trend'],
     queryFn: () => healthDataApi.getReadinessTrend(7),
+    retry: false,
+    staleTime: 5 * 60 * 1000,
   });
 
   // Derive display values from real API data (fallback to defaults for empty state)

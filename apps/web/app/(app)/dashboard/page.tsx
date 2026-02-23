@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
-  Search,
   ChevronRight,
   Clock,
   Flame,
@@ -28,10 +27,6 @@ import {
   type WeeklySummary,
 } from '@/lib/api';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Cell } from 'recharts';
-
-const MUSCLE_GROUPS = ['All Type', 'Chest', 'Back', 'Arms', 'Cardio', 'Legs'];
-const MUSCLE_GROUPS_AR = ['كل الأنواع', 'الصدر', 'الظهر', 'الذراعين', 'كارديو', 'الأرجل'];
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -41,8 +36,6 @@ export default function DashboardPage() {
   const [dailyNutrition, setDailyNutrition] = useState<DailyNutritionLog | null>(null);
   const [weeklyStats, setWeeklyStats] = useState<WeeklySummary | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [activeFilter, setActiveFilter] = useState(0);
-  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     async function fetchData() {
@@ -90,7 +83,6 @@ export default function DashboardPage() {
   }
 
   const userName = user?.name || user?.firstName || (isRTL ? 'بطل' : 'Champ');
-  const filters = isRTL ? MUSCLE_GROUPS_AR : MUSCLE_GROUPS;
 
   return (
     <div className={cn('space-y-6', isRTL && 'font-cairo')}>
@@ -133,21 +125,6 @@ export default function DashboardPage() {
         </Link>
       )}
 
-      {/* Search Bar */}
-      <div className="relative">
-        <Search className={cn('absolute top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground', isRTL ? 'right-4' : 'left-4')} />
-        <input
-          type="text"
-          placeholder={isRTL ? 'ابحث عن تمارين...' : 'Search Workouts...'}
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className={cn(
-            'w-full rounded-2xl border border-border bg-muted/50 py-3 text-sm placeholder:text-muted-foreground focus:border-primary/50 focus:outline-none',
-            isRTL ? 'pr-11 pl-4' : 'pl-11 pr-4'
-          )}
-        />
-      </div>
-
       {/* Hero Banner — Gym photo with overlay */}
       <div className="relative overflow-hidden rounded-3xl bg-secondary h-48">
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent dark:from-black/90 dark:via-black/60" />
@@ -185,27 +162,9 @@ export default function DashboardPage() {
           </Link>
         </div>
 
-        {/* Filter Pills */}
-        <div className="flex gap-2 overflow-x-auto no-scrollbar pb-3">
-          {filters.map((filter, i) => (
-            <button
-              key={filter}
-              onClick={() => setActiveFilter(i)}
-              className={cn(
-                'shrink-0 rounded-full px-4 py-2 text-xs font-medium transition-colors',
-                activeFilter === i
-                  ? 'bg-foreground text-background'
-                  : 'bg-muted text-muted-foreground'
-              )}
-            >
-              {filter}
-            </button>
-          ))}
-        </div>
-
         {/* Workout Cards — Horizontal Scroll */}
         <div className="flex gap-3 overflow-x-auto no-scrollbar pb-2">
-          {todayWorkout ? (
+          {todayWorkout && !('isRestDay' in todayWorkout) ? (
             <WorkoutCard
               name={todayWorkout.name || (isRTL ? 'تمرين اليوم' : "Today's Workout")}
               duration={Math.round((todayWorkout.exercises?.length || 4) * 8)}
@@ -214,16 +173,35 @@ export default function DashboardPage() {
               href={`/workouts/${todayWorkout.id}`}
               isRTL={isRTL}
             />
-          ) : (
-            <Link
-              href="/workouts"
-              className="flex min-w-[200px] flex-col items-center justify-center rounded-2xl border-2 border-dashed border-border/50 p-6 text-center hover:border-primary/40 hover:bg-primary/5 transition-all"
-            >
-              <Dumbbell className="h-8 w-8 text-muted-foreground mb-2" />
-              <p className="text-sm font-medium">{isRTL ? 'تصفح التمارين' : 'Browse Workouts'}</p>
-              <p className="text-xs text-muted-foreground mt-1">{isRTL ? 'اختر برنامجك' : 'Pick a program'}</p>
-            </Link>
-          )}
+          ) : null}
+
+          {/* What Now — always show as option */}
+          <Link
+            href="/workouts?whatnow=true"
+            className="shrink-0 w-40 rounded-2xl border border-primary/30 bg-primary/5 overflow-hidden hover:bg-primary/10 transition-colors"
+          >
+            <div className="h-24 bg-gradient-to-br from-primary/20 to-forma-orange/20 relative flex items-center justify-center">
+              <Sparkles className="h-10 w-10 text-primary/60" />
+            </div>
+            <div className="p-3">
+              <p className="text-xs font-semibold">{isRTL ? 'إيه دلوقتي؟' : 'What Now?'}</p>
+              <p className="text-[10px] text-muted-foreground mt-0.5">{isRTL ? 'تمرين مخصصلك' : 'AI picks for you'}</p>
+            </div>
+          </Link>
+
+          {/* Browse Workouts */}
+          <Link
+            href="/workouts"
+            className="shrink-0 w-40 rounded-2xl border border-border/50 bg-muted/30 overflow-hidden hover:bg-muted/50 transition-colors"
+          >
+            <div className="h-24 bg-gradient-to-br from-secondary to-secondary/80 relative flex items-center justify-center">
+              <Dumbbell className="h-10 w-10 text-muted-foreground/40" />
+            </div>
+            <div className="p-3">
+              <p className="text-xs font-semibold">{isRTL ? 'تصفح التمارين' : 'Browse All'}</p>
+              <p className="text-[10px] text-muted-foreground mt-0.5">{isRTL ? 'اختر برنامجك' : 'Plans & exercises'}</p>
+            </div>
+          </Link>
         </div>
       </div>
 

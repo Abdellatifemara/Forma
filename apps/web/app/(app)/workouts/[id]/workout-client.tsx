@@ -117,7 +117,7 @@ export default function ActiveWorkoutPage() {
   useEffect(() => {
     if (isPlaceholder) {
       const search = window.location.search;
-      // If there are query params (whatnow, formcheck, voicecoach), redirect to /workouts with them
+      // If there are query params (whatnow, formcheck), redirect to /workouts with them
       window.location.replace('/workouts' + (search || ''));
     }
   }, [isPlaceholder]);

@@ -44,16 +44,10 @@ const faqs = [
     answerAr: 'قوله الوقت المتاح عندك ومستوى طاقتك ومكانك (جيم / بيت / برا)، وهو هيرشحلك التمرين المثالي لظروفك.',
   },
   {
-    question: 'How do I check my exercise form?',
-    questionAr: 'إزاي أتأكد إن شكلي صح في التمارين؟',
-    answer: 'Use the Form Check feature in Workouts. It uses your camera to analyze your form and provide real-time feedback on exercises like squats and push-ups.',
-    answerAr: 'استخدم خاصية فحص الشكل في التمارين. بتستخدم الكاميرا تحلل وضعيتك وتديك ملاحظات لحظية على تمارين زي السكوات والبوش أب.',
-  },
-  {
-    question: 'What is Voice Coach?',
-    questionAr: 'إيه هو المدرب الصوتي؟',
-    answer: 'Voice Coach provides hands-free workout guidance. It announces exercises, counts reps, manages rest times, and gives form reminders - all through voice.',
-    answerAr: 'المدرب الصوتي بيديك توجيه أثناء التمرين من غير ما تلمس الشاشة. بيعلن التمارين، يعد التكرارات، يدير وقت الراحة، ويفكرك بالوضعية الصح — كله بالصوت.',
+    question: 'How do Fitness Tests work?',
+    questionAr: 'اختبارات اللياقة بتشتغل إزاي؟',
+    answer: 'Fitness Tests measure your actual capabilities (push-ups, plank hold, pull-ups) so the app can personalize your workouts to your real level, not just what you say.',
+    answerAr: 'اختبارات اللياقة بتقيس قدراتك الحقيقية (بوش أب، بلانك، عقلة) عشان التطبيق يخصصلك التمرين على مستواك الفعلي، مش اللي إنت بتقوله.',
   },
   {
     question: 'How do I connect with a trainer?',
