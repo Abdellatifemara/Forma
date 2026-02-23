@@ -17,8 +17,9 @@ export class TrainersService {
     pageSize?: number;
   }) {
     try {
-      const { query, specialization, minRating, maxPrice, page = 1, pageSize: rawPageSize = 20 } = params;
-      const pageSize = Math.min(rawPageSize, 50);
+      const { query, specialization, minRating, maxPrice } = params;
+      const page = Math.max(1, parseInt(String(params.page), 10) || 1);
+      const pageSize = Math.min(parseInt(String(params.pageSize), 10) || 20, 50);
       const skip = (page - 1) * pageSize;
 
       const where: Prisma.TrainerProfileWhereInput = {
