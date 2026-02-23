@@ -561,7 +561,7 @@ export default function NewProgramPage() {
           disabled={currentStepIndex === 0}
           className="border-border/50"
         >
-          <ArrowLeft className={cn('h-4 w-4', isAr ? 'ml-2' : 'mr-2')} />
+          <ArrowLeft className={cn('h-4 w-4', isAr ? 'ms-2' : 'me-2')} />
           {isAr ? '\u0631\u062c\u0648\u0639' : 'Back'}
         </Button>
 
@@ -569,20 +569,20 @@ export default function NewProgramPage() {
           <Button onClick={handleCreate} disabled={isCreating} className="btn-primary">
             {isCreating ? (
               <>
-                <Loader2 className={cn('h-4 w-4 animate-spin', isAr ? 'ml-2' : 'mr-2')} />
+                <Loader2 className={cn('h-4 w-4 animate-spin', isAr ? 'ms-2' : 'me-2')} />
                 {isAr ? '\u062c\u0627\u0631\u064a \u0627\u0644\u0625\u0646\u0634\u0627\u0621...' : 'Creating...'}
               </>
             ) : (
               <>
                 {isAr ? '\u0625\u0646\u0634\u0627\u0621 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Create Program'}
-                <ArrowRight className={cn('h-4 w-4', isAr ? 'mr-2' : 'ml-2')} />
+                <ArrowRight className={cn('h-4 w-4', isAr ? 'me-2' : 'ms-2')} />
               </>
             )}
           </Button>
         ) : (
           <Button onClick={handleNext} disabled={!canProceed()} className="btn-primary">
             {isAr ? '\u0645\u062a\u0627\u0628\u0639\u0629' : 'Continue'}
-            <ArrowRight className={cn('h-4 w-4', isAr ? 'mr-2' : 'ml-2')} />
+            <ArrowRight className={cn('h-4 w-4', isAr ? 'me-2' : 'ms-2')} />
           </Button>
         )}
       </div>

@@ -77,7 +77,7 @@ export class LogMeasurementsDto {
 
 export class CreateProgressPhotoDto {
   @ApiProperty({ description: 'URL of the uploaded image (from /upload/image)', example: 'https://media.formaeg.com/images/abc/123.jpg' })
-  @IsUrl()
+  @IsUrl({ require_tld: false, require_protocol: true })
   imageUrl: string;
 
   @ApiPropertyOptional({ description: 'Label/angle for the photo', example: 'front' })

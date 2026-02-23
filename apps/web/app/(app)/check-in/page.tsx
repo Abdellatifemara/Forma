@@ -477,17 +477,17 @@ export default function CheckInPage() {
           >
             {saveMutation.isPending ? (
               <>
-                <Loader2 className={cn("h-4 w-4 animate-spin", isAr ? "ml-2" : "mr-2")} />
+                <Loader2 className={cn("h-4 w-4 animate-spin", isAr ? "ms-2" : "me-2")} />
                 {isAr ? 'جاري الحفظ...' : 'Saving...'}
               </>
             ) : existingCheckIn ? (
               <>
-                <Check className="mr-2 h-4 w-4" />
+                <Check className="me-2 h-4 w-4" />
                 {t.checkIn.submit}
               </>
             ) : (
               <>
-                <Check className="mr-2 h-4 w-4" />
+                <Check className="me-2 h-4 w-4" />
                 {t.checkIn.submit}
               </>
             )}

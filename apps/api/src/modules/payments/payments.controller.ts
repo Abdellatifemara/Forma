@@ -67,7 +67,7 @@ export class PaymobWebhookController {
     @Body() callback: PaymobTransactionCallback,
     @Headers('hmac') hmac: string,
   ) {
-    await this.paymentsService.handleWebhook(callback);
+    await this.paymentsService.handleWebhook(callback, hmac);
     return { received: true };
   }
 

@@ -98,7 +98,7 @@ export default function AdminAnalyticsPage() {
             variant="outline"
             onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'خاصية التصدير هتكون متاحة قريباً' : 'Export feature will be available soon' })}
           >
-            <Download className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            <Download className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
             {isAr ? 'تصدير التقرير' : 'Export Report'}
           </Button>
         </div>

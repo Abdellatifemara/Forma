@@ -263,14 +263,14 @@ export default function LogWorkoutPage() {
                 </div>
               ))}
               <Button variant="outline" size="sm" onClick={() => addSet(exercise.id)}>
-                <Plus className="mr-2 h-4 w-4" />
+                <Plus className="me-2 h-4 w-4" />
                 {isAr ? 'إضافة مجموعة' : 'Add Set'}
               </Button>
             </div>
           ))}
 
           <Button variant="outline" onClick={addExercise}>
-            <Plus className="mr-2 h-4 w-4" />
+            <Plus className="me-2 h-4 w-4" />
             {isAr ? 'إضافة تمرين' : 'Add Exercise'}
           </Button>
 
@@ -300,7 +300,7 @@ export default function LogWorkoutPage() {
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <Loader2 className="me-2 h-4 w-4 animate-spin" />
                 {isAr ? 'جاري الحفظ...' : 'Saving...'}
               </>
             ) : (

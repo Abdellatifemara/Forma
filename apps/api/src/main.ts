@@ -12,8 +12,12 @@ async function bootstrap() {
   // Security
   app.use(helmet());
 
-  // CORS - Allow Vercel, Expo, and local development
+  // CORS - Allow production, Expo, and local development
   const allowedOrigins = configService.get('CORS_ORIGINS')?.split(',') || [];
+  // Always allow production domain
+  if (!allowedOrigins.includes('https://formaeg.com')) {
+    allowedOrigins.push('https://formaeg.com');
+  }
   app.enableCors({
     origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
       // Allow requests with no origin (mobile apps, Postman, etc.)
@@ -23,11 +27,6 @@ async function bootstrap() {
 
       // Check explicit allowed origins
       if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-
-      // Allow all Vercel preview deployments
-      if (origin.endsWith('.vercel.app')) {
         return callback(null, true);
       }
 

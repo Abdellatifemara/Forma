@@ -223,7 +223,7 @@ export default function ProgressPage() {
           <p className="text-muted-foreground">{t.progress.startTracking}</p>
         </div>
         <Button variant="forma" onClick={() => setLogDialogOpen(true)}>
-          <Plus className="mr-2 h-4 w-4" />
+          <Plus className="me-2 h-4 w-4" />
           {t.progress.logWeight}
         </Button>
       </div>
@@ -264,7 +264,7 @@ export default function ProgressPage() {
               >
                 {logWeight.isPending ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Loader2 className="me-2 h-4 w-4 animate-spin" />
                     {isAr ? 'جاري الحفظ...' : 'Saving...'}
                   </>
                 ) : (
@@ -375,7 +375,7 @@ export default function ProgressPage() {
               >
                 {logMeasurements.isPending ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Loader2 className="me-2 h-4 w-4 animate-spin" />
                     {isAr ? 'جاري الحفظ...' : 'Saving...'}
                   </>
                 ) : (
@@ -683,7 +683,7 @@ export default function ProgressPage() {
                 <input type="file" accept="image/*" className="hidden" onChange={handlePhotoUpload} disabled={uploading} />
                 <Button variant="forma" size="sm" asChild disabled={uploading}>
                   <span>
-                    {uploading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Upload className="mr-2 h-4 w-4" />}
+                    {uploading ? <Loader2 className="me-2 h-4 w-4 animate-spin" /> : <Upload className="me-2 h-4 w-4" />}
                     {isAr ? 'ارفع صورة' : 'Upload Photo'}
                   </span>
                 </Button>

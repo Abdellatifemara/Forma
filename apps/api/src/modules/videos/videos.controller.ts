@@ -11,8 +11,10 @@ import {
 import { ApiTags, ApiOperation, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { VideosService } from './videos.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { RolesGuard } from '../auth/guards/roles.guard';
+import { Roles } from '../auth/decorators/roles.decorator';
 import { Public } from '../auth/decorators/public.decorator';
-import { VideoCategory } from '@prisma/client';
+import { VideoCategory, UserRole } from '@prisma/client';
 
 @ApiTags('videos')
 @Controller('videos')
@@ -74,7 +76,8 @@ export class VideosController {
   // Admin endpoints (protected)
 
   @Post()
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Create a new video (Admin)' })
   async create(
@@ -94,7 +97,8 @@ export class VideosController {
   }
 
   @Post('bulk')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Bulk create videos (Admin)' })
   async bulkCreate(
@@ -113,7 +117,8 @@ export class VideosController {
   }
 
   @Patch(':id')
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(UserRole.ADMIN)
   @ApiBearerAuth()
   @ApiOperation({ summary: 'Update video (Admin)' })
   async update(

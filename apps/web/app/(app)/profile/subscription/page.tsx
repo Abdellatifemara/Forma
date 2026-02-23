@@ -143,8 +143,8 @@ export default function SubscriptionPage() {
                   : 'bg-muted'
               }`}
             >
-              {currentTier === 'PREMIUM_PLUS' && <Crown className="h-3.5 w-3.5 mr-1" />}
-              {currentTier === 'PREMIUM' && <Zap className="h-3.5 w-3.5 mr-1" />}
+              {currentTier === 'PREMIUM_PLUS' && <Crown className="h-3.5 w-3.5 me-1" />}
+              {currentTier === 'PREMIUM' && <Zap className="h-3.5 w-3.5 me-1" />}
               {tierLabel}
             </Badge>
           </div>

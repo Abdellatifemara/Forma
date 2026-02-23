@@ -218,11 +218,11 @@ export default function UploadPDFPage() {
                       </div>
                       <div className="flex gap-3 justify-center">
                         <Button variant="outline" onClick={resetUpload}>
-                          <X className={cn("h-4 w-4", isAr ? "ml-2" : "mr-2")} />
+                          <X className={cn("h-4 w-4", isAr ? "ms-2" : "me-2")} />
                           {isAr ? 'إزالة' : 'Remove'}
                         </Button>
                         <Button onClick={handleUpload} className="btn-primary">
-                          <Sparkles className={cn("h-4 w-4", isAr ? "ml-2" : "mr-2")} />
+                          <Sparkles className={cn("h-4 w-4", isAr ? "ms-2" : "me-2")} />
                           {isAr ? 'معالجة PDF' : 'Process PDF'}
                         </Button>
                       </div>
@@ -306,7 +306,7 @@ export default function UploadPDFPage() {
                       </p>
                     </div>
                     <Badge className="bg-green-500/20 text-green-400 border-green-500/50">
-                      <Check className={cn("h-3 w-3", isAr ? "ml-1" : "mr-1")} />
+                      <Check className={cn("h-3 w-3", isAr ? "ms-1" : "me-1")} />
                       {isAr ? 'جاهز' : 'Ready'}
                     </Badge>
                   </div>
@@ -357,11 +357,11 @@ export default function UploadPDFPage() {
 
                   <div className="flex gap-3">
                     <Button variant="outline" onClick={resetUpload} className="flex-1">
-                      <X className={cn("h-4 w-4", isAr ? "ml-2" : "mr-2")} />
+                      <X className={cn("h-4 w-4", isAr ? "ms-2" : "me-2")} />
                       {isAr ? 'ابدأ من جديد' : 'Start Over'}
                     </Button>
                     <Button onClick={handleConfirm} className="btn-primary flex-1">
-                      <Check className={cn("h-4 w-4", isAr ? "ml-2" : "mr-2")} />
+                      <Check className={cn("h-4 w-4", isAr ? "ms-2" : "me-2")} />
                       {isAr ? 'حفظ البرنامج' : 'Save Program'}
                     </Button>
                   </div>

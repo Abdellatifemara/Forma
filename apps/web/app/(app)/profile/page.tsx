@@ -297,7 +297,7 @@ export default function ProfilePage() {
           <Button variant="ghost" size="sm" asChild>
             <Link href="/achievements">
               {t.achievements.viewAll}
-              <ChevronRight className="ml-1 h-4 w-4" />
+              <ChevronRight className="ms-1 h-4 w-4" />
             </Link>
           </Button>
         </CardHeader>

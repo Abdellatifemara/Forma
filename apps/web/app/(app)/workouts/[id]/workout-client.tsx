@@ -446,7 +446,7 @@ export default function ActiveWorkoutPage() {
           <h2 className="text-xl font-bold mb-2">{isAr ? 'التمرين غير متاح' : 'Workout Unavailable'}</h2>
           <p className="text-muted-foreground mb-6">{isAr ? 'التمرين ده مش موجود أو اتحذف. اختار تمرين من صفحة التمارين.' : 'This workout doesn\'t exist or has been removed. Choose a workout from the workouts page.'}</p>
           <Button className="btn-primary" onClick={() => router.push('/workouts')}>
-            <ArrowLeft className="mr-2 h-4 w-4" />
+            <ArrowLeft className="me-2 h-4 w-4" />
             {isAr ? 'اختار تمرين' : 'Browse Workouts'}
           </Button>
         </div>
@@ -499,9 +499,9 @@ export default function ActiveWorkoutPage() {
 
           <Button className="btn-primary" size="sm" onClick={handleFinishWorkout} disabled={isSaving}>
             {isSaving ? (
-              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              <Loader2 className="me-2 h-4 w-4 animate-spin" />
             ) : (
-              <Save className="mr-2 h-4 w-4" />
+              <Save className="me-2 h-4 w-4" />
             )}
             {isAr ? 'خلص' : 'Finish'}
           </Button>
@@ -823,7 +823,7 @@ export default function ActiveWorkoutPage() {
                           className="w-full border border-dashed border-border/50 hover:border-primary/50 hover:bg-primary/5"
                           onClick={() => addSet(exercise.id)}
                         >
-                          <Plus className="mr-2 h-4 w-4" />
+                          <Plus className="me-2 h-4 w-4" />
                           {isAr ? 'أضف مجموعة' : 'Add Set'}
                         </Button>
                       </div>
@@ -843,7 +843,7 @@ export default function ActiveWorkoutPage() {
                             setCurrentRestDuration(exercise.restSeconds);
                           }}
                         >
-                          <RotateCcw className="mr-2 h-4 w-4" />
+                          <RotateCcw className="me-2 h-4 w-4" />
                           {isAr ? 'ابدأ راحة' : 'Start Rest'}
                         </Button>
                       </div>
@@ -935,9 +935,9 @@ export default function ActiveWorkoutPage() {
             </Button>
             <Button className="btn-primary" onClick={confirmFinish} disabled={isSaving}>
               {isSaving ? (
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <Loader2 className="me-2 h-4 w-4 animate-spin" />
               ) : (
-                <Save className="mr-2 h-4 w-4" />
+                <Save className="me-2 h-4 w-4" />
               )}
               {isAr ? 'احفظ التمرين' : 'Save Workout'}
             </Button>

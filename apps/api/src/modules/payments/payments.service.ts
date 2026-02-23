@@ -98,11 +98,11 @@ export class PaymentsService {
   /**
    * Handle Paymob webhook callback
    */
-  async handleWebhook(callback: PaymobTransactionCallback): Promise<void> {
+  async handleWebhook(callback: PaymobTransactionCallback, receivedHmac?: string): Promise<void> {
     this.logger.log(`Received Paymob webhook: ${JSON.stringify(callback.obj.id)}`);
 
     // Verify HMAC
-    const isValid = this.verifyHmac(callback);
+    const isValid = this.verifyHmac(callback, receivedHmac);
     if (!isValid) {
       this.logger.error('Invalid HMAC signature');
       throw new BadRequestException('Invalid signature');
@@ -339,7 +339,7 @@ export class PaymentsService {
     }
   }
 
-  private verifyHmac(callback: PaymobTransactionCallback): boolean {
+  private verifyHmac(callback: PaymobTransactionCallback, receivedHmac?: string): boolean {
     const hmacSecret = this.configService.get('PAYMOB_HMAC_SECRET');
 
     if (!hmacSecret) {
@@ -347,9 +347,14 @@ export class PaymentsService {
       return true; // Skip verification in development
     }
 
+    if (!receivedHmac) {
+      this.logger.error('No HMAC header received from Paymob');
+      return false;
+    }
+
     const { obj } = callback;
 
-    // Build HMAC string in Paymob's required order
+    // Build HMAC string in Paymob's required order (alphabetical by field name)
     const hmacString = [
       obj.amount_cents,
       obj.created_at,
@@ -378,8 +383,15 @@ export class PaymentsService {
       .update(hmacString)
       .digest('hex');
 
-    // The callback should include the HMAC from Paymob for comparison
-    // In production, compare with the received HMAC header
-    return true; // Placeholder - implement full verification in production
+    // Timing-safe comparison to prevent timing attacks
+    try {
+      return crypto.timingSafeEqual(
+        Buffer.from(calculatedHmac, 'hex'),
+        Buffer.from(receivedHmac, 'hex'),
+      );
+    } catch {
+      // If buffers are different lengths, comparison fails
+      return false;
+    }
   }
 }

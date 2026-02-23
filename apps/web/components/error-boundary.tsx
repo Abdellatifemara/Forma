@@ -95,13 +95,13 @@ export function ErrorFallback({ error, onRetry, showDetails = false }: ErrorFall
           <div className="flex flex-col gap-2 sm:flex-row">
             {onRetry && (
               <Button onClick={onRetry} className="flex-1">
-                <RefreshCw className="mr-2 h-4 w-4" />
+                <RefreshCw className="me-2 h-4 w-4" />
                 Try Again
               </Button>
             )}
             <Button variant="outline" className="flex-1" asChild>
               <a href="/">
-                <Home className="mr-2 h-4 w-4" />
+                <Home className="me-2 h-4 w-4" />
                 Go Home
               </a>
             </Button>
@@ -135,7 +135,7 @@ export function NotFoundError() {
         <CardContent>
           <Button asChild>
             <a href="/">
-              <Home className="mr-2 h-4 w-4" />
+              <Home className="me-2 h-4 w-4" />
               Back to Home
             </a>
           </Button>
@@ -189,7 +189,7 @@ export function NetworkError({ onRetry }: { onRetry?: () => void }) {
         <CardContent>
           {onRetry && (
             <Button onClick={onRetry}>
-              <RefreshCw className="mr-2 h-4 w-4" />
+              <RefreshCw className="me-2 h-4 w-4" />
               Retry
             </Button>
           )}

@@ -102,7 +102,7 @@ export default function CheckoutSuccessPage() {
         >
           <Link href="/dashboard">
             {isAr ? 'روح للوحة التحكم' : 'Go to Dashboard'}
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <ArrowRight className="ms-2 h-4 w-4" />
           </Link>
         </Button>
 

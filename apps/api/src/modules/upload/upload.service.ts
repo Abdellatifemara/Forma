@@ -1,4 +1,4 @@
-import { Injectable, Inject, BadRequestException, ForbiddenException } from '@nestjs/common';
+import { Injectable, Inject, BadRequestException, ForbiddenException, InternalServerErrorException, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { S3Client, PutObjectCommand, DeleteObjectCommand } from '@aws-sdk/client-s3';
 import { randomUUID } from 'crypto';
@@ -7,6 +7,7 @@ import { R2_CLIENT } from './r2.provider';
 
 @Injectable()
 export class UploadService {
+  private readonly logger = new Logger(UploadService.name);
   private readonly bucketName: string;
   private readonly publicUrl: string;
 
@@ -178,13 +179,18 @@ export class UploadService {
       throw new BadRequestException('Storage not configured. Contact support.');
     }
 
-    await this.r2.send(
-      new PutObjectCommand({
-        Bucket: this.bucketName,
-        Key: key,
-        Body: body,
-        ContentType: contentType,
-      }),
-    );
+    try {
+      await this.r2.send(
+        new PutObjectCommand({
+          Bucket: this.bucketName,
+          Key: key,
+          Body: body,
+          ContentType: contentType,
+        }),
+      );
+    } catch (error) {
+      this.logger.error(`R2 upload failed for key ${key}: ${error}`);
+      throw new InternalServerErrorException('File upload failed. Please try again.');
+    }
   }
 }

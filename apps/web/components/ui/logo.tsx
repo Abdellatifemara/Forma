@@ -38,7 +38,7 @@ export function Logo({ className, size = 'md', iconOnly = false }: LogoProps) {
       />
       {!iconOnly && (
         <span className={cn(textSizes[size])}>
-          Forma<span className="text-muted-foreground font-normal text-[0.65em] ml-0.5">EG</span>
+          Forma<span className="text-muted-foreground font-normal text-[0.65em] ms-0.5">EG</span>
         </span>
       )}
     </span>

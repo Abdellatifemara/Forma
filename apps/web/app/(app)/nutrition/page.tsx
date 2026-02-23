@@ -257,7 +257,7 @@ export default function NutritionPage() {
         <Dialog open={logDialogOpen} onOpenChange={(open) => { setLogDialogOpen(open); if (!open) { setSelectedMealType(null); setFoodCategoryFilter(null); setSearchQuery(''); } }}>
           <DialogTrigger asChild>
             <Button className="btn-primary">
-              <Plus className="mr-2 h-4 w-4" />
+              <Plus className="me-2 h-4 w-4" />
               {t.nutrition.logMeal}
             </Button>
           </DialogTrigger>
@@ -507,7 +507,7 @@ export default function NutritionPage() {
                   caloriesRemaining > 0 ? "text-green-400" : "text-red-400"
                 )}>
                   {caloriesRemaining > 0 ? caloriesRemaining : Math.abs(caloriesRemaining - goals.calories)}
-                  <span className="text-sm font-normal text-muted-foreground ml-2">
+                  <span className="text-sm font-normal text-muted-foreground ms-2">
                     {caloriesRemaining > 0 ? (isAr ? 'متبقي' : 'remaining') : (isAr ? 'زيادة' : 'over')}
                   </span>
                 </p>
@@ -989,9 +989,9 @@ export default function NutritionPage() {
                   }}
                 >
                   {isLogging ? (
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Loader2 className="me-2 h-4 w-4 animate-spin" />
                   ) : (
-                    <Plus className="mr-2 h-4 w-4" />
+                    <Plus className="me-2 h-4 w-4" />
                   )}
                   {isAr ? 'أضف للوجبة' : 'Add to Meal'}
                 </Button>

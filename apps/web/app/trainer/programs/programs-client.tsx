@@ -170,7 +170,7 @@ function ProgramsPageContent() {
                   onClick={() => router.push(`/trainer/clients/${assignToClientId}`)}
                   disabled={isAssigning}
                 >
-                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  <ArrowLeft className="me-2 h-4 w-4" />
                   {isAr ? 'إلغاء' : 'Cancel'}
                 </Button>
               </div>
@@ -193,13 +193,13 @@ function ProgramsPageContent() {
           <div className="flex gap-2">
             <Button variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
               <Link href="/trainer/programs/upload">
-                <Upload className="mr-2 h-4 w-4" />
+                <Upload className="me-2 h-4 w-4" />
                 {isAr ? 'رفع PDF' : 'Upload PDF'}
               </Link>
             </Button>
             <Button className="btn-primary" asChild>
               <Link href="/trainer/programs/new">
-                <Plus className="mr-2 h-4 w-4" />
+                <Plus className="me-2 h-4 w-4" />
                 {isAr ? 'إنشاء برنامج' : 'Create Program'}
               </Link>
             </Button>
@@ -359,7 +359,7 @@ function ProgramsPageContent() {
             {!searchQuery && (
               <Button asChild>
                 <Link href="/trainer/programs/new">
-                  <Plus className="mr-2 h-4 w-4" />
+                  <Plus className="me-2 h-4 w-4" />
                   {isAr ? 'إنشاء برنامج' : 'Create Program'}
                 </Link>
               </Button>
@@ -405,7 +405,7 @@ function ProgramsPageContent() {
                   {isAssignMode ? (
                     canAssign ? (
                       <Badge className="bg-primary/20 text-primary border-primary/50">
-                        <Check className="h-3 w-3 mr-1" />
+                        <Check className="h-3 w-3 me-1" />
                         {isAr ? 'اضغط للتعيين' : 'Click to Assign'}
                       </Badge>
                     ) : (
@@ -423,17 +423,17 @@ function ProgramsPageContent() {
                       <DropdownMenuContent align="end">
                         <DropdownMenuItem asChild>
                           <Link href={`/trainer/programs/${program.id}`}>
-                            <Pencil className="mr-2 h-4 w-4" />
+                            <Pencil className="me-2 h-4 w-4" />
                             {isAr ? 'تعديل' : 'Edit'}
                           </Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem onClick={() => handleDuplicate(program.id)} disabled={isDuplicating}>
-                          <Copy className="mr-2 h-4 w-4" />
+                          <Copy className="me-2 h-4 w-4" />
                           {isAr ? 'نسخ' : 'Duplicate'}
                         </DropdownMenuItem>
                         <DropdownMenuSeparator />
                         <DropdownMenuItem className="text-destructive" onClick={() => handleDelete(program.id)}>
-                          <Trash2 className="mr-2 h-4 w-4" />
+                          <Trash2 className="me-2 h-4 w-4" />
                           {isAr ? 'حذف' : 'Delete'}
                         </DropdownMenuItem>
                       </DropdownMenuContent>
@@ -459,7 +459,7 @@ function ProgramsPageContent() {
                         </Badge>
                       )}
                       <Badge variant="outline" className={sourceBadge.class}>
-                        <SourceIcon className="h-3 w-3 mr-1" />
+                        <SourceIcon className="h-3 w-3 me-1" />
                         {sourceBadge.label}
                       </Badge>
                     </div>

@@ -112,7 +112,7 @@ export function Features() {
           >
             <Link href="/signup">
               {t.features.cta}
-              <ArrowRight className={cn('h-5 w-5', isRTL ? 'mr-2 rotate-180' : 'ml-2')} />
+              <ArrowRight className={cn('h-5 w-5', isRTL ? 'me-2 rotate-180' : 'ms-2')} />
             </Link>
           </Button>
         </div>

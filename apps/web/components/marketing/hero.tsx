@@ -82,7 +82,7 @@ export function Hero() {
                 {t.hero.cta}
                 <ArrowRight className={cn(
                   'h-5 w-5 transition-transform group-hover:translate-x-1',
-                  isRTL ? 'mr-2 rotate-180 group-hover:-translate-x-1' : 'ml-2'
+                  isRTL ? 'me-2 rotate-180 group-hover:-translate-x-1' : 'ms-2'
                 )} />
               </Link>
             </Button>
@@ -93,7 +93,7 @@ export function Hero() {
               asChild
             >
               <Link href="/#features" className={cn('flex items-center', isRTL && 'flex-row-reverse')}>
-                <Play className={cn('h-5 w-5', isRTL ? 'ml-2' : 'mr-2')} fill="currentColor" />
+                <Play className={cn('h-5 w-5', isRTL ? 'ms-2' : 'me-2')} fill="currentColor" />
                 {t.hero.watchDemo}
               </Link>
             </Button>

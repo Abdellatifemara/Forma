@@ -63,7 +63,7 @@ export default function ForgotPasswordPage() {
             asChild
           >
             <Link href="/login">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="me-2 h-4 w-4" />
               {t.auth.backToLogin}
             </Link>
           </Button>
@@ -104,7 +104,7 @@ export default function ForgotPasswordPage() {
           >
             {isLoading ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <Loader2 className="me-2 h-4 w-4 animate-spin" />
                 {t.auth.sending}
               </>
             ) : (
@@ -118,7 +118,7 @@ export default function ForgotPasswordPage() {
             asChild
           >
             <Link href="/login">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="me-2 h-4 w-4" />
               {t.auth.backToLogin}
             </Link>
           </Button>

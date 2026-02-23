@@ -297,7 +297,7 @@ function MessagesPageContent() {
         <Dialog open={showNewChatDialog} onOpenChange={setShowNewChatDialog}>
           <DialogTrigger asChild>
             <Button className="btn-primary">
-              <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+              <Plus className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
               {isAr ? 'محادثة جديدة' : 'New Chat'}
             </Button>
           </DialogTrigger>
@@ -414,7 +414,7 @@ function MessagesPageContent() {
                       size="sm"
                       onClick={() => setShowNewChatDialog(true)}
                     >
-                      <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                      <Plus className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                       {isAr ? 'ابدأ محادثة' : 'Start a Chat'}
                     </Button>
                   )}
@@ -529,7 +529,7 @@ function MessagesPageContent() {
                     <DropdownMenuContent align="end">
                       <DropdownMenuItem asChild>
                         <Link href={`/trainer/clients/${selectedConversation.participant?.id}`}>
-                          <User className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                          <User className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                           {isAr ? 'عرض الملف' : 'View Profile'}
                         </Link>
                       </DropdownMenuItem>

@@ -181,7 +181,7 @@ export default function TrainersMarketplacePage() {
             onClick={() => setShowFilters(!showFilters)}
             className={showFilters ? 'bg-primary text-primary-foreground' : ''}
           >
-            <Filter className="h-4 w-4 mr-2" />
+            <Filter className="h-4 w-4 me-2" />
             {t.common.filter}
           </Button>
         </div>
@@ -248,7 +248,7 @@ export default function TrainersMarketplacePage() {
                     setSortBy('rating');
                   }}
                 >
-                  <X className="h-4 w-4 mr-1" />
+                  <X className="h-4 w-4 me-1" />
                   {isAr ? 'مسح الفلاتر' : 'Reset Filters'}
                 </Button>
               </div>
@@ -358,13 +358,13 @@ function TrainerCard({ trainer, featured = false, trusted = false }: { trainer: 
                 <h3 className="font-semibold truncate">{name}</h3>
                 {isTrusted && (
                   <Badge className="bg-amber-500/20 text-amber-600 border-amber-500/50">
-                    <Award className="h-3 w-3 mr-1" />
+                    <Award className="h-3 w-3 me-1" />
                     {isAr ? 'شريك موثوق' : 'Trusted Partner'}
                   </Badge>
                 )}
                 {featured && !isTrusted && (
                   <Badge className="bg-yellow-500/20 text-yellow-600 border-yellow-500/50">
-                    <Star className="h-3 w-3 mr-1 fill-current" />
+                    <Star className="h-3 w-3 me-1 fill-current" />
                     {isAr ? 'تقييم عالي' : 'Top Rated'}
                   </Badge>
                 )}

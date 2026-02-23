@@ -78,7 +78,7 @@ export default function AdminSettingsPage() {
           </p>
         </div>
         <Button variant="forma" onClick={handleSave}>
-          <Save className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+          <Save className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
           {isAr ? 'حفظ التغييرات' : 'Save Changes'}
         </Button>
       </div>
@@ -86,19 +86,19 @@ export default function AdminSettingsPage() {
       <Tabs defaultValue="general">
         <TabsList>
           <TabsTrigger value="general">
-            <Globe className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            <Globe className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
             {isAr ? 'عام' : 'General'}
           </TabsTrigger>
           <TabsTrigger value="security">
-            <Shield className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            <Shield className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
             {isAr ? 'الأمان' : 'Security'}
           </TabsTrigger>
           <TabsTrigger value="notifications">
-            <Bell className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            <Bell className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
             {isAr ? 'الإشعارات' : 'Notifications'}
           </TabsTrigger>
           <TabsTrigger value="api">
-            <Key className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            <Key className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
             API
           </TabsTrigger>
         </TabsList>

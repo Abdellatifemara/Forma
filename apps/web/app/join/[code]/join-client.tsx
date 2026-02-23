@@ -199,7 +199,7 @@ export default function JoinPage() {
               <div className="space-y-3">
                 {authLoading ? (
                   <Button disabled className="w-full h-12">
-                    <Loader2 className="h-5 w-5 animate-spin mr-2" />
+                    <Loader2 className="h-5 w-5 animate-spin me-2" />
                     {isAr ? 'جاري التحميل...' : 'Loading...'}
                   </Button>
                 ) : user ? (
@@ -210,13 +210,13 @@ export default function JoinPage() {
                   >
                     {isRedeeming ? (
                       <>
-                        <Loader2 className="h-5 w-5 animate-spin mr-2" />
+                        <Loader2 className="h-5 w-5 animate-spin me-2" />
                         {isAr ? 'جاري الانضمام...' : 'Joining...'}
                       </>
                     ) : (
                       <>
                         {isAr ? 'انضم دلوقتي' : 'Join Now'}
-                        <ArrowRight className="h-5 w-5 ml-2" />
+                        <ArrowRight className="h-5 w-5 ms-2" />
                       </>
                     )}
                   </Button>
@@ -227,7 +227,7 @@ export default function JoinPage() {
                       className="w-full h-12 btn-primary"
                     >
                       {isAr ? 'سجل حساب وانضم' : 'Create Account & Join'}
-                      <ArrowRight className="h-5 w-5 ml-2" />
+                      <ArrowRight className="h-5 w-5 ms-2" />
                     </Button>
                     <p className="text-center text-sm text-muted-foreground">
                       {isAr ? 'عندك حساب بالفعل?' : 'Already have an account?'}{' '}

@@ -105,7 +105,7 @@ export default function TrainerDetailPage() {
         </p>
         <Button className="btn-primary" asChild>
           <Link href="/trainers">
-            <ArrowLeft className="mr-2 h-4 w-4" />
+            <ArrowLeft className="me-2 h-4 w-4" />
             {isAr ? 'تصفح المدربين' : 'Browse Trainers'}
           </Link>
         </Button>
@@ -150,7 +150,7 @@ export default function TrainerDetailPage() {
       {/* Back Button */}
       <Button variant="ghost" size="sm" asChild>
         <Link href="/trainers">
-          <ArrowLeft className="mr-2 h-4 w-4" />
+          <ArrowLeft className="me-2 h-4 w-4" />
           {isAr ? 'رجوع للمدربين' : 'Back to Trainers'}
         </Link>
       </Button>
@@ -249,7 +249,7 @@ export default function TrainerDetailPage() {
               </Button>
               <Button variant="outline" className="mt-2 w-full" asChild>
                 <Link href={`/messages?trainer=${trainer.id}`}>
-                  <MessageSquare className="mr-2 h-4 w-4" />
+                  <MessageSquare className="me-2 h-4 w-4" />
                   {t.trainers.contactTrainer}
                 </Link>
               </Button>
@@ -313,19 +313,19 @@ export default function TrainerDetailPage() {
                   <CardContent className="space-y-3">
                     {trainerSocialLinks.instagram && (
                       <Button variant="outline" className="w-full justify-start">
-                        <Instagram className="mr-2 h-4 w-4" />
+                        <Instagram className="me-2 h-4 w-4" />
                         {trainerSocialLinks.instagram}
                       </Button>
                     )}
                     {trainerSocialLinks.youtube && (
                       <Button variant="outline" className="w-full justify-start">
-                        <Youtube className="mr-2 h-4 w-4" />
+                        <Youtube className="me-2 h-4 w-4" />
                         {trainerSocialLinks.youtube}
                       </Button>
                     )}
                     {trainerSocialLinks.website && (
                       <Button variant="outline" className="w-full justify-start">
-                        <Globe className="mr-2 h-4 w-4" />
+                        <Globe className="me-2 h-4 w-4" />
                         {trainerSocialLinks.website}
                       </Button>
                     )}
@@ -402,7 +402,7 @@ export default function TrainerDetailPage() {
                     </div>
                     <Button variant="outline" className="mt-4 w-full">
                       View Program
-                      <ChevronRight className="ml-2 h-4 w-4" />
+                      <ChevronRight className="ms-2 h-4 w-4" />
                     </Button>
                   </CardContent>
                 </Card>
@@ -628,7 +628,7 @@ export default function TrainerDetailPage() {
             <Button variant="forma" asChild>
               <Link href={`/checkout?trainer=${trainer.id}&plan=${selectedPlan}&amount=${selectedPlan === 'monthly' ? trainerMonthlyRate : trainerHourlyRate}`}>
                 Continue to Payment
-                <ChevronRight className="ml-2 h-4 w-4" />
+                <ChevronRight className="ms-2 h-4 w-4" />
               </Link>
             </Button>
           </DialogFooter>

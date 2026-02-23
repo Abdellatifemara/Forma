@@ -174,7 +174,7 @@ function ResetPasswordForm() {
           >
             {isLoading ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <Loader2 className="me-2 h-4 w-4 animate-spin" />
                 {isAr ? 'جاري التغيير...' : 'Resetting...'}
               </>
             ) : (
@@ -188,7 +188,7 @@ function ResetPasswordForm() {
             asChild
           >
             <Link href="/login">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="me-2 h-4 w-4" />
               {isAr ? 'العودة لتسجيل الدخول' : 'Back to Login'}
             </Link>
           </Button>

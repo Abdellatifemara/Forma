@@ -93,7 +93,7 @@ export function TrainersSection() {
             <Button variant="forma" size="lg" asChild>
               <Link href="/trainer/apply">
                 {isAr ? 'قدم كمدرب' : 'Apply as a Trainer'}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ms-2 h-4 w-4" />
               </Link>
             </Button>
           </div>

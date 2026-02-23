@@ -338,7 +338,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
               {isAr ? 'باني البرامج الشخصي' : 'Personalized Program Builder'}
             </h1>
             <Badge className="bg-purple-500/20 text-purple-400 border-purple-500/50">
-              <Sparkles className="h-3 w-3 mr-1" />
+              <Sparkles className="h-3 w-3 me-1" />
               {isAr ? 'ذكي' : 'Smart'}
             </Badge>
           </div>
@@ -556,7 +556,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
             </Card>
 
             <Button onClick={handleGenerate} className="w-full btn-primary py-6 text-lg">
-              <Sparkles className="mr-2 h-5 w-5" />
+              <Sparkles className="me-2 h-5 w-5" />
               {isAr ? 'توليد البرنامج' : 'Generate Program'}
             </Button>
           </div>
@@ -648,7 +648,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
               <div className="flex items-start justify-between">
                 <div>
                   <Badge className="mb-2 bg-purple-500/20 text-purple-400 border-purple-500/50">
-                    <Sparkles className="h-3 w-3 mr-1" />
+                    <Sparkles className="h-3 w-3 me-1" />
                     {isAr ? 'مخصص' : 'Personalized'}
                   </Badge>
                   <CardTitle className="text-2xl">{generatedProgram.name}</CardTitle>
@@ -657,7 +657,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
                   </CardDescription>
                 </div>
                 <Button variant="outline" onClick={handleRegenerate} className="border-primary/50">
-                  <RefreshCw className="mr-2 h-4 w-4" />
+                  <RefreshCw className="me-2 h-4 w-4" />
                   {isAr ? 'إعادة التوليد' : 'Regenerate'}
                 </Button>
               </div>
@@ -750,11 +750,11 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
               onClick={() => setState('input')}
               className="flex-1 border-border/50"
             >
-              <ArrowLeft className="mr-2 h-4 w-4" />
+              <ArrowLeft className="me-2 h-4 w-4" />
               {isAr ? 'رجوع للإعدادات' : 'Back to Settings'}
             </Button>
             <Button onClick={handleSave} className="flex-1 btn-primary">
-              <Check className="mr-2 h-4 w-4" />
+              <Check className="me-2 h-4 w-4" />
               {isAr ? 'حفظ البرنامج' : 'Save Program'}
             </Button>
           </div>

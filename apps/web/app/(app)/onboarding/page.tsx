@@ -537,7 +537,7 @@ export default function OnboardingPage() {
                                 : "bg-muted/50 text-muted-foreground hover:bg-muted border border-border/50"
                             )}
                           >
-                            {isSelected && <Check className="h-3 w-3 mr-1 inline" />}
+                            {isSelected && <Check className="h-3 w-3 me-1 inline" />}
                             {eq.label}
                           </button>
                         );
@@ -557,7 +557,7 @@ export default function OnboardingPage() {
               disabled={currentStep === 0}
               className="text-muted-foreground hover:text-foreground"
             >
-              <ChevronLeft className="mr-2 h-4 w-4" />
+              <ChevronLeft className="me-2 h-4 w-4" />
               {t.common.back}
             </Button>
 
@@ -568,7 +568,7 @@ export default function OnboardingPage() {
                 className="btn-primary"
               >
                 {t.common.continue}
-                <ChevronRight className="ml-2 h-4 w-4" />
+                <ChevronRight className="ms-2 h-4 w-4" />
               </Button>
             ) : (
               <Button
@@ -578,12 +578,12 @@ export default function OnboardingPage() {
               >
                 {isLoading ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Loader2 className="me-2 h-4 w-4 animate-spin" />
                     {isAr ? 'جاري التجهيز...' : 'Setting up...'}
                   </>
                 ) : (
                   <>
-                    <Sparkles className="mr-2 h-4 w-4" />
+                    <Sparkles className="me-2 h-4 w-4" />
                     {t.onboarding.complete}
                   </>
                 )}

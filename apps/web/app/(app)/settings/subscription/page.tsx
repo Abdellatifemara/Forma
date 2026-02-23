@@ -234,7 +234,7 @@ export default function SubscriptionSettingsPage() {
                 asChild
               >
                 <Link href="/pricing">
-                  <Zap className="h-4 w-4 mr-2" />
+                  <Zap className="h-4 w-4 me-2" />
                   {isAr ? 'ترقية لبريميوم' : 'Upgrade to Premium'}
                 </Link>
               </Button>
@@ -245,7 +245,7 @@ export default function SubscriptionSettingsPage() {
                 asChild
               >
                 <Link href="/pricing?highlight=premium_plus">
-                  <Crown className="h-4 w-4 mr-2" />
+                  <Crown className="h-4 w-4 me-2" />
                   {isAr ? 'ترقية لبريميوم+' : 'Upgrade to Premium+'}
                 </Link>
               </Button>
@@ -256,9 +256,9 @@ export default function SubscriptionSettingsPage() {
                 disabled={reactivateMutation.isPending}
               >
                 {reactivateMutation.isPending ? (
-                  <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                  <Loader2 className="h-4 w-4 me-2 animate-spin" />
                 ) : (
-                  <RefreshCw className="h-4 w-4 mr-2" />
+                  <RefreshCw className="h-4 w-4 me-2" />
                 )}
                 {isAr ? 'إعادة تفعيل الاشتراك' : 'Reactivate Subscription'}
               </Button>
@@ -311,7 +311,7 @@ export default function SubscriptionSettingsPage() {
             <Button variant="ghost" className="w-full mt-4" asChild>
               <Link href="/settings/payments">
                 {isAr ? 'عرض كل المدفوعات' : 'View all payments'}
-                <ChevronRight className="h-4 w-4 ml-1" />
+                <ChevronRight className="h-4 w-4 ms-1" />
               </Link>
             </Button>
           </div>

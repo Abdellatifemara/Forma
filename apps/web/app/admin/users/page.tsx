@@ -196,7 +196,7 @@ export default function UsersPage() {
           variant="outline"
           onClick={() => toast({ title: isAr ? 'قريباً' : 'Coming Soon', description: isAr ? 'خاصية التصدير هتكون متاحة قريباً' : 'Export feature will be available soon' })}
         >
-          <Download className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+          <Download className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
           {isAr ? 'تصدير CSV' : 'Export CSV'}
         </Button>
       </div>
@@ -340,14 +340,14 @@ export default function UsersPage() {
                           setSelectedUser(user);
                           setActionDialog('premium');
                         }}>
-                          <Crown className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                          <Crown className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                           {isAr ? 'إدي بريميوم' : 'Give Premium'}
                         </DropdownMenuItem>
                         <DropdownMenuItem onClick={() => {
                           setSelectedUser(user);
                           setActionDialog('suspend');
                         }}>
-                          <Ban className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                          <Ban className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                           {isAr ? 'إيقاف المستخدم' : 'Suspend User'}
                         </DropdownMenuItem>
                         <DropdownMenuSeparator />
@@ -358,7 +358,7 @@ export default function UsersPage() {
                             setActionDialog('delete');
                           }}
                         >
-                          <Trash2 className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                          <Trash2 className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                           {isAr ? 'حذف المستخدم' : 'Delete User'}
                         </DropdownMenuItem>
                       </DropdownMenuContent>
@@ -416,7 +416,7 @@ export default function UsersPage() {
           <DialogFooter>
             <Button variant="outline" onClick={() => setActionDialog(null)}>{isAr ? 'إلغاء' : 'Cancel'}</Button>
             <Button variant="destructive" onClick={handleSuspendUser} disabled={isProcessing}>
-              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ml-2' : 'mr-2'}`} /> : null}
+              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ms-2' : 'me-2'}`} /> : null}
               {isAr ? 'إيقاف المستخدم' : 'Suspend User'}
             </Button>
           </DialogFooter>
@@ -437,7 +437,7 @@ export default function UsersPage() {
           <DialogFooter>
             <Button variant="outline" onClick={() => setActionDialog(null)}>{isAr ? 'إلغاء' : 'Cancel'}</Button>
             <Button variant="forma" onClick={handleGivePremium} disabled={isProcessing}>
-              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ml-2' : 'mr-2'}`} /> : null}
+              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ms-2' : 'me-2'}`} /> : null}
               {isAr ? 'إدي بريميوم' : 'Give Premium'}
             </Button>
           </DialogFooter>
@@ -458,7 +458,7 @@ export default function UsersPage() {
           <DialogFooter>
             <Button variant="outline" onClick={() => setActionDialog(null)}>{isAr ? 'إلغاء' : 'Cancel'}</Button>
             <Button variant="destructive" onClick={handleDeleteUser} disabled={isProcessing}>
-              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ml-2' : 'mr-2'}`} /> : null}
+              {isProcessing ? <Loader2 className={`h-4 w-4 animate-spin ${isAr ? 'ms-2' : 'me-2'}`} /> : null}
               {isAr ? 'حذف المستخدم' : 'Delete User'}
             </Button>
           </DialogFooter>

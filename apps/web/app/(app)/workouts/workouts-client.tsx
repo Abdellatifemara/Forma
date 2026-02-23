@@ -135,7 +135,7 @@ function WorkoutsContent() {
         </div>
         <Button className="bg-primary text-white hover:bg-primary/90" asChild>
           <Link href="/workouts/log">
-            <Plus className="mr-2 h-4 w-4" />
+            <Plus className="me-2 h-4 w-4" />
             {isAr ? 'سجّل تمرين' : 'Log Workout'}
           </Link>
         </Button>
@@ -196,7 +196,7 @@ function WorkoutsContent() {
                 </Button>
                 <Button className="bg-primary text-white hover:bg-primary/90" asChild>
                   <Link href="/workouts?whatnow=true">
-                    <Sparkles className="mr-2 h-4 w-4" />
+                    <Sparkles className="me-2 h-4 w-4" />
                     {isAr ? 'اختارلي' : 'Generate for Me'}
                   </Link>
                 </Button>
@@ -218,7 +218,7 @@ function WorkoutsContent() {
                         <h3 className="font-semibold text-lg">{plan.name}</h3>
                         {activePlanId === plan.id && (
                           <Badge className="bg-forma-orange/20 text-forma-orange border-forma-orange/30">
-                            <Zap className="h-3 w-3 mr-1" />
+                            <Zap className="h-3 w-3 me-1" />
                             {t.workouts.activePlan}
                           </Badge>
                         )}
@@ -246,7 +246,7 @@ function WorkoutsContent() {
                         <Button variant="outline" className="flex-1 sm:flex-none" asChild>
                           <Link href={`/workouts/${plan.id}`}>
                             {t.workouts.browsePlans}
-                            <ChevronRight className="ml-1 h-4 w-4" />
+                            <ChevronRight className="ms-1 h-4 w-4" />
                           </Link>
                         </Button>
                       ) : (
@@ -254,7 +254,7 @@ function WorkoutsContent() {
                           className="bg-primary text-white hover:bg-primary/90 flex-1 sm:flex-none"
                           onClick={() => handleStartPlan(plan.id)}
                         >
-                          <Play className="mr-2 h-4 w-4" />
+                          <Play className="me-2 h-4 w-4" />
                           {t.workouts.startPlan}
                         </Button>
                       )}
@@ -386,7 +386,7 @@ function WorkoutsContent() {
                     <Button variant="ghost" size="sm" className="rounded-xl" asChild>
                       <Link href={`/workouts/${workout.id}`}>
                         {isAr ? 'عرض' : 'View'}
-                        <ChevronRight className="ml-1 h-4 w-4" />
+                        <ChevronRight className="ms-1 h-4 w-4" />
                       </Link>
                     </Button>
                   </div>

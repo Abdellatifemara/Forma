@@ -1,4 +1,4 @@
-import { Controller, Post, Body, Logger } from '@nestjs/common';
+import { Controller, Post, Body, Logger, HttpCode, Ip } from '@nestjs/common';
 import { EmailService } from '../email/email.service';
 
 interface ErrorReport {
@@ -22,10 +22,33 @@ export class ErrorReportingController {
   private lastFlush = Date.now();
   private readonly FLUSH_INTERVAL = 5 * 60 * 1000; // 5 minutes
 
+  // Simple in-memory rate limiter: max 10 reports per IP per minute
+  private rateLimitMap: Map<string, { count: number; resetAt: number }> = new Map();
+  private readonly RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
+  private readonly RATE_LIMIT_MAX = 10;
+
   constructor(private email: EmailService) {}
 
   @Post('report')
-  async reportErrors(@Body() body: ErrorReport) {
+  @HttpCode(200)
+  async reportErrors(@Body() body: ErrorReport, @Ip() ip: string) {
+    // Rate limit check
+    const now = Date.now();
+    const limiter = this.rateLimitMap.get(ip);
+    if (limiter && now < limiter.resetAt) {
+      if (limiter.count >= this.RATE_LIMIT_MAX) {
+        return { ok: true, throttled: true };
+      }
+      limiter.count++;
+    } else {
+      this.rateLimitMap.set(ip, { count: 1, resetAt: now + this.RATE_LIMIT_WINDOW });
+    }
+    // Cleanup stale entries periodically
+    if (this.rateLimitMap.size > 1000) {
+      for (const [key, val] of this.rateLimitMap) {
+        if (now > val.resetAt) this.rateLimitMap.delete(key);
+      }
+    }
     if (!body.errors?.length) return { ok: true };
 
     // Buffer errors and deduplicate

@@ -102,7 +102,7 @@ export default function ClientDetailPage() {
         <p className="text-muted-foreground">{error?.message || (isAr ? 'العميل مش موجود' : 'Client not found')}</p>
         <Button variant="outline" className="mt-4" asChild>
           <Link href="/trainer/clients">
-            <ArrowLeft className="mr-2 h-4 w-4" />
+            <ArrowLeft className="me-2 h-4 w-4" />
             {isAr ? 'رجوع للعملاء' : 'Back to Clients'}
           </Link>
         </Button>
@@ -148,7 +148,7 @@ export default function ClientDetailPage() {
                 </Badge>
                 {clientData.premiumGifted && (
                   <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/50">
-                    <Crown className="h-3 w-3 mr-1" />
+                    <Crown className="h-3 w-3 me-1" />
                     {isAr ? 'بريميوم' : 'Premium'}
                   </Badge>
                 )}
@@ -161,12 +161,12 @@ export default function ClientDetailPage() {
         <div className="flex items-center gap-2">
           <Button variant="outline" className="border-border/50" asChild>
             <Link href={`/trainer/messages?client=${clientId}`}>
-              <MessageSquare className="mr-2 h-4 w-4" />
+              <MessageSquare className="me-2 h-4 w-4" />
               {isAr ? 'رسالة' : 'Message'}
             </Link>
           </Button>
           <Button className="btn-primary" onClick={() => router.push(`/trainer/schedule?client=${clientId}`)}>
-            <Calendar className="mr-2 h-4 w-4" />
+            <Calendar className="me-2 h-4 w-4" />
             {isAr ? 'جدول جلسة' : 'Schedule Session'}
           </Button>
           <DropdownMenu>
@@ -177,15 +177,15 @@ export default function ClientDetailPage() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
               <DropdownMenuItem onClick={() => router.push(`/trainer/clients/${clientId}/edit`)}>
-                <Edit className="mr-2 h-4 w-4" />
+                <Edit className="me-2 h-4 w-4" />
                 {isAr ? 'تعديل بيانات العميل' : 'Edit Client Info'}
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push(`/trainer/programs?assign=${clientId}`)}>
-                <Dumbbell className="mr-2 h-4 w-4" />
+                <Dumbbell className="me-2 h-4 w-4" />
                 {isAr ? 'تعيين برنامج جديد' : 'Assign New Program'}
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => router.push(`/trainer/clients/${clientId}/meal-plan`)}>
-                <Utensils className="mr-2 h-4 w-4" />
+                <Utensils className="me-2 h-4 w-4" />
                 {isAr ? 'تحديث خطة الوجبات' : 'Update Meal Plan'}
               </DropdownMenuItem>
               <DropdownMenuSeparator />
@@ -475,7 +475,7 @@ export default function ClientDetailPage() {
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold">{isAr ? 'أداء التمرين' : 'Workout Performance'}</h3>
             <Button className="btn-primary" onClick={() => router.push(`/trainer/programs?assign=${clientId}`)}>
-              <Dumbbell className="mr-2 h-4 w-4" />
+              <Dumbbell className="me-2 h-4 w-4" />
               {isAr ? 'تعيين برنامج' : 'Assign Program'}
             </Button>
           </div>
@@ -681,7 +681,7 @@ export default function ClientDetailPage() {
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold">{isAr ? 'تتبع التقدم' : 'Progress Tracking'}</h3>
             <Button variant="outline" className="border-border/50">
-              <LineChart className="mr-2 h-4 w-4" />
+              <LineChart className="me-2 h-4 w-4" />
               {isAr ? 'عرض التقرير الكامل' : 'View Full Report'}
             </Button>
           </div>

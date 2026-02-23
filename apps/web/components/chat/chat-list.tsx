@@ -216,7 +216,7 @@ export function ChatList({
                     {conversation.lastMessage.content}
                   </p>
                   {conversation.unreadCount > 0 && (
-                    <Badge variant="forma" className="ml-2 h-5 w-5 rounded-full p-0">
+                    <Badge variant="forma" className="ms-2 h-5 w-5 rounded-full p-0">
                       <span className="text-xs">{conversation.unreadCount}</span>
                     </Badge>
                   )}

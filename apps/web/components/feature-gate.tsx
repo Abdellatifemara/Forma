@@ -113,7 +113,7 @@ function UpgradeOverlay({ tier, blurred }: UpgradeOverlayProps) {
           asChild
         >
           <Link href={`/pricing?highlight=${tier.toLowerCase()}`}>
-            <Sparkles className="h-4 w-4 mr-2" />
+            <Sparkles className="h-4 w-4 me-2" />
             Upgrade Now
           </Link>
         </Button>
@@ -139,7 +139,7 @@ export function FeatureLimitBadge({ featureId, className }: FeatureLimitBadgePro
   if (!isAvailable) {
     return (
       <span className={cn('text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground', className)}>
-        <Lock className="h-3 w-3 inline mr-1" />
+        <Lock className="h-3 w-3 inline me-1" />
         Locked
       </span>
     );

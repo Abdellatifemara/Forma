@@ -231,7 +231,7 @@ export default function ClientMealPlanPage() {
           </div>
         </div>
         <Button onClick={handleSavePlan} className="btn-primary">
-          <Save className="mr-2 h-4 w-4" />
+          <Save className="me-2 h-4 w-4" />
           {isAr ? 'احفظ الخطة' : 'Save Plan'}
         </Button>
       </div>
@@ -362,7 +362,7 @@ export default function ClientMealPlanPage() {
                       setShowFoodDialog(true);
                     }}
                   >
-                    <Plus className="h-4 w-4 mr-1" />
+                    <Plus className="h-4 w-4 me-1" />
                     {isAr ? 'أضف أكل' : 'Add Food'}
                   </Button>
                 </CardHeader>

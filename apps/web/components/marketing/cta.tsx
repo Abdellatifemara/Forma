@@ -42,7 +42,7 @@ export function CTA() {
               >
                 <Link href="/signup">
                   {isAr ? 'ابدأ تجربتك المجانية' : 'Start Your Free Trial'}
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ms-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button

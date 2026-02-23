@@ -113,7 +113,7 @@ export function Navbar() {
           {isLoggedIn ? (
             <Button className="rounded-full btn-primary text-white" asChild>
               <Link href="/dashboard">
-                <LayoutDashboard className={cn('h-4 w-4', isRTL ? 'ml-2' : 'mr-2')} />
+                <LayoutDashboard className={cn('h-4 w-4', isRTL ? 'ms-2' : 'me-2')} />
                 {t.nav.dashboard}
               </Link>
             </Button>
@@ -125,7 +125,7 @@ export function Navbar() {
               <Button className="rounded-full btn-primary text-white" asChild>
                 <Link href="/signup">
                   {t.nav.signup}
-                  <ChevronRight className={cn('h-4 w-4', isRTL ? 'mr-1 rotate-180' : 'ml-1')} />
+                  <ChevronRight className={cn('h-4 w-4', isRTL ? 'me-1 rotate-180' : 'ms-1')} />
                 </Link>
               </Button>
             </>
@@ -195,7 +195,7 @@ export function Navbar() {
                 asChild
               >
                 <Link href="/dashboard">
-                  <LayoutDashboard className={cn('h-4 w-4', isRTL ? 'ml-2' : 'mr-2')} />
+                  <LayoutDashboard className={cn('h-4 w-4', isRTL ? 'ms-2' : 'me-2')} />
                   {t.nav.dashboard}
                 </Link>
               </Button>
@@ -211,7 +211,7 @@ export function Navbar() {
                 >
                   <Link href="/signup">
                     {t.nav.signup}
-                    <ChevronRight className={cn('h-4 w-4', isRTL ? 'mr-1 rotate-180' : 'ml-1')} />
+                    <ChevronRight className={cn('h-4 w-4', isRTL ? 'me-1 rotate-180' : 'ms-1')} />
                   </Link>
                 </Button>
               </>

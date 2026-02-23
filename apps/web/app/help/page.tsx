@@ -150,7 +150,7 @@ export default function HelpPage() {
                 <ChevronRight className={`h-4 w-4 text-primary flex-shrink-0 ${isAr ? 'rotate-180' : ''}`} />
                 {isAr ? faq.questionAr : faq.question}
               </h4>
-              <p className="text-sm text-muted-foreground mt-1 ml-6">
+              <p className="text-sm text-muted-foreground mt-1 ms-6">
                 {isAr ? faq.answerAr : faq.answer}
               </p>
             </div>

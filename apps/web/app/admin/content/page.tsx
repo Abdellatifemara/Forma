@@ -185,11 +185,11 @@ export default function AdminContentPage() {
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           <TabsTrigger value="exercises">
-            <Dumbbell className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            <Dumbbell className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
             {isAr ? 'التمارين' : 'Exercises'}
           </TabsTrigger>
           <TabsTrigger value="foods">
-            <Apple className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            <Apple className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
             {isAr ? 'الأطعمة' : 'Foods'}
           </TabsTrigger>
         </TabsList>
@@ -202,7 +202,7 @@ export default function AdminContentPage() {
                 <CardDescription>{isAr ? `إدارة مكتبة التمارين (${exercises.length} معروض)` : `Manage the exercise library (${exercises.length} shown)`}</CardDescription>
               </div>
               <Button variant="forma" onClick={() => handleAddItem(isAr ? 'تمرين' : 'exercise')}>
-                <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                <Plus className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                 {isAr ? 'إضافة تمرين' : 'Add Exercise'}
               </Button>
             </CardHeader>
@@ -290,7 +290,7 @@ export default function AdminContentPage() {
                 <CardDescription>{isAr ? `إدارة قاعدة بيانات الأطعمة (${foods.length} معروض)` : `Manage the food database (${foods.length} shown)`}</CardDescription>
               </div>
               <Button variant="forma" onClick={() => handleAddItem(isAr ? 'طعام' : 'food')}>
-                <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                <Plus className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                 {isAr ? 'إضافة طعام' : 'Add Food'}
               </Button>
             </CardHeader>

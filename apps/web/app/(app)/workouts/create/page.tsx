@@ -232,14 +232,14 @@ export default function CreateWorkoutPlanPage() {
                     </div>
 
                     <Button variant="outline" size="sm" onClick={() => addSetToExercise(workout.id, ex.id)}>
-                      <Plus className="mr-2 h-4 w-4" /> {isAr ? 'إضافة مجموعة' : 'Add Set'}
+                      <Plus className="me-2 h-4 w-4" /> {isAr ? 'إضافة مجموعة' : 'Add Set'}
                     </Button>
                   </div>
                 ))}
                 
                 <ExerciseSearchDialog onAddExercise={(exercise) => addExerciseToWorkout(workout.id, exercise)}>
                   <Button variant="outline" className="w-full border-dashed">
-                    <Plus className="mr-2 h-4 w-4" /> {isAr ? 'إضافة تمرين' : 'Add Exercise'}
+                    <Plus className="me-2 h-4 w-4" /> {isAr ? 'إضافة تمرين' : 'Add Exercise'}
                   </Button>
                 </ExerciseSearchDialog>
               </CardContent>
@@ -247,7 +247,7 @@ export default function CreateWorkoutPlanPage() {
           ))}
 
           <Button variant="outline" onClick={addWorkoutDay}>
-            <Plus className="mr-2 h-4 w-4" /> {isAr ? 'إضافة يوم / تمرين' : 'Add Day / Workout'}
+            <Plus className="me-2 h-4 w-4" /> {isAr ? 'إضافة يوم / تمرين' : 'Add Day / Workout'}
           </Button>
 
           {error && (
@@ -264,7 +264,7 @@ export default function CreateWorkoutPlanPage() {
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                <Loader2 className="me-2 h-4 w-4 animate-spin" />
                 {isAr ? 'جاري الحفظ...' : 'Saving...'}
               </>
             ) : (

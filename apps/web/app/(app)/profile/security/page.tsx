@@ -162,7 +162,7 @@ export default function SecurityPage() {
             onClick={handleChangePassword}
             disabled={isChanging}
           >
-            {isChanging && <Loader2 className="h-4 w-4 mr-2 animate-spin" />}
+            {isChanging && <Loader2 className="h-4 w-4 me-2 animate-spin" />}
             {isAr ? 'تغيير كلمة المرور' : 'Change Password'}
           </Button>
         </CardContent>

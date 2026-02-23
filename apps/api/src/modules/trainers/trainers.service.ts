@@ -676,7 +676,7 @@ export class TrainersService {
       code: invite.code,
       grantsPremium: invite.grantsPremium,
       expiresAt: invite.expiresAt,
-      link: `https://forma.app/join/${invite.code}`,
+      link: `https://formaeg.com/join/${invite.code}`,
     };
   }
 
@@ -811,7 +811,7 @@ export class TrainersService {
     return invites.map(invite => ({
       id: invite.id,
       code: invite.code,
-      link: `https://forma.app/join/${invite.code}`,
+      link: `https://formaeg.com/join/${invite.code}`,
       uses: invite.uses,
       maxUses: invite.maxUses,
       grantsPremium: invite.grantsPremium,

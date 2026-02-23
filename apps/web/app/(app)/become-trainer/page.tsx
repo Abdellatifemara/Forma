@@ -195,7 +195,7 @@ export default function BecomeTrainerPage() {
             </p>
             <Button variant="forma" size="lg" className="mt-6" onClick={nextStep}>
               {t.becomeTrainer.apply}
-              <ChevronRight className="ml-2 h-5 w-5" />
+              <ChevronRight className="ms-2 h-5 w-5" />
             </Button>
           </div>
         </div>
@@ -285,7 +285,7 @@ export default function BecomeTrainerPage() {
       <div className="mb-8">
         <div className="mb-4 flex items-center justify-between">
           <Button variant="ghost" onClick={prevStep}>
-            <ChevronLeft className="mr-2 h-4 w-4" />
+            <ChevronLeft className="me-2 h-4 w-4" />
             {isAr ? 'رجوع' : 'Back'}
           </Button>
           <span className="text-sm text-muted-foreground">
@@ -385,7 +385,7 @@ export default function BecomeTrainerPage() {
                     onClick={() => handleSpecializationToggle(spec.value)}
                   >
                     {formData.specializations.includes(spec.value) && (
-                      <Check className="mr-1 h-3 w-3" />
+                      <Check className="me-1 h-3 w-3" />
                     )}
                     {isAr ? spec.labelAr : spec.value}
                   </Badge>
@@ -404,7 +404,7 @@ export default function BecomeTrainerPage() {
                 }
               >
                 {t.common.continue}
-                <ChevronRight className="ml-2 h-4 w-4" />
+                <ChevronRight className="ms-2 h-4 w-4" />
               </Button>
             </div>
           </CardContent>
@@ -463,7 +463,7 @@ export default function BecomeTrainerPage() {
                     }
                   >
                     {formData.languages.includes(lang.value) && (
-                      <Check className="mr-1 h-3 w-3" />
+                      <Check className="me-1 h-3 w-3" />
                     )}
                     {isAr ? lang.labelAr : lang.value}
                   </Badge>
@@ -528,7 +528,7 @@ export default function BecomeTrainerPage() {
             <div className="flex justify-end">
               <Button variant="forma" onClick={nextStep}>
                 {t.common.continue}
-                <ChevronRight className="ml-2 h-4 w-4" />
+                <ChevronRight className="ms-2 h-4 w-4" />
               </Button>
             </div>
           </CardContent>
@@ -596,7 +596,7 @@ export default function BecomeTrainerPage() {
                 disabled={formData.certifications.length === 0}
               >
                 {t.common.continue}
-                <ChevronRight className="ml-2 h-4 w-4" />
+                <ChevronRight className="ms-2 h-4 w-4" />
               </Button>
             </div>
           </CardContent>
@@ -695,13 +695,13 @@ export default function BecomeTrainerPage() {
               >
                 {isSubmitting ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Loader2 className="me-2 h-4 w-4 animate-spin" />
                     {isAr ? 'جاري التقديم...' : 'Submitting...'}
                   </>
                 ) : (
                   t.becomeTrainer.submit
                 )}
-                <ChevronRight className="ml-2 h-4 w-4" />
+                <ChevronRight className="ms-2 h-4 w-4" />
               </Button>
             </div>
           </CardContent>

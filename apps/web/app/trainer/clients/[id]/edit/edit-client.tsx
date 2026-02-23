@@ -78,7 +78,7 @@ export default function EditClientPage() {
             <div className="mt-8">
               <Button variant="outline" asChild>
                 <Link href={`/trainer/clients/${clientId}`}>
-                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  <ArrowLeft className="me-2 h-4 w-4" />
                   {isAr ? 'رجوع للعميل' : 'Back to Client'}
                 </Link>
               </Button>

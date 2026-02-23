@@ -268,12 +268,12 @@ export default function SettingsPage() {
                 >
                   {isUploadingPhoto ? (
                     <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      <Loader2 className="me-2 h-4 w-4 animate-spin" />
                       {t.settings.profile.uploading}
                     </>
                   ) : (
                     <>
-                      <Camera className="mr-2 h-4 w-4" />
+                      <Camera className="me-2 h-4 w-4" />
                       {t.settings.profile.changePhoto}
                     </>
                   )}
@@ -310,7 +310,7 @@ export default function SettingsPage() {
               <Button variant="forma" onClick={handleSaveProfile} disabled={isSaving}>
                 {isSaving ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Loader2 className="me-2 h-4 w-4 animate-spin" />
                     {t.settings.profile.saving}
                   </>
                 ) : (
@@ -608,7 +608,7 @@ export default function SettingsPage() {
                 className="w-full text-destructive hover:text-destructive"
                 onClick={handleLogout}
               >
-                <LogOut className="mr-2 h-4 w-4" />
+                <LogOut className="me-2 h-4 w-4" />
                 {t.settings.support.signOut}
               </Button>
             </CardContent>
@@ -684,7 +684,7 @@ export default function SettingsPage() {
             >
               {isSaving ? (
                 <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  <Loader2 className="me-2 h-4 w-4 animate-spin" />
                   {lang === 'ar' ? 'جاري التغيير...' : 'Updating...'}
                 </>
               ) : (

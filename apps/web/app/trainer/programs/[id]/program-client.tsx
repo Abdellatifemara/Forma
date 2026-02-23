@@ -405,11 +405,11 @@ export default function ProgramBuilderPage() {
 
         <div className="flex items-center gap-2">
           <Button variant="outline" onClick={() => setShowSettingsDialog(true)}>
-            <Settings className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+            <Settings className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
             {isAr ? 'الإعدادات' : 'Settings'}
           </Button>
           <Button variant="forma" onClick={saveExerciseChanges} disabled={!hasChanges || isSaving}>
-            {isSaving ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Save className="mr-2 h-4 w-4" />}
+            {isSaving ? <Loader2 className="me-2 h-4 w-4 animate-spin" /> : <Save className="me-2 h-4 w-4" />}
             {hasChanges ? (isAr ? 'حفظ التغييرات' : 'Save Changes') : (isAr ? 'تم الحفظ' : 'Saved')}
           </Button>
         </div>
@@ -418,11 +418,11 @@ export default function ProgramBuilderPage() {
       {/* Program Info Bar */}
       <div className="flex flex-wrap gap-4">
         <Badge variant="outline" className="py-1.5">
-          <Calendar className="mr-1 h-3 w-3" />
+          <Calendar className="me-1 h-3 w-3" />
           {program.durationWeeks} {isAr ? 'أسابيع' : 'weeks'}
         </Badge>
         <Badge variant="outline" className="py-1.5">
-          <Dumbbell className="mr-1 h-3 w-3" />
+          <Dumbbell className="me-1 h-3 w-3" />
           {program.workoutDays.length} {isAr ? 'أيام' : 'days'}
         </Badge>
         <Badge variant="outline" className="py-1.5 capitalize">
@@ -449,11 +449,11 @@ export default function ProgramBuilderPage() {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                   <DropdownMenuItem onClick={() => addDay(false)}>
-                    <Dumbbell className="mr-2 h-4 w-4" />
+                    <Dumbbell className="me-2 h-4 w-4" />
                     {isAr ? 'إضافة يوم تمرين' : 'Add Workout Day'}
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={() => addDay(true)}>
-                    <Calendar className="mr-2 h-4 w-4" />
+                    <Calendar className="me-2 h-4 w-4" />
                     {isAr ? 'إضافة يوم راحة' : 'Add Rest Day'}
                   </DropdownMenuItem>
                 </DropdownMenuContent>
@@ -499,7 +499,7 @@ export default function ProgramBuilderPage() {
                       className="text-destructive"
                       onClick={() => removeDay(day.id)}
                     >
-                      <Trash2 className="mr-2 h-4 w-4" />
+                      <Trash2 className="me-2 h-4 w-4" />
                       {isAr ? 'حذف' : 'Delete'}
                     </DropdownMenuItem>
                   </DropdownMenuContent>
@@ -523,7 +523,7 @@ export default function ProgramBuilderPage() {
               </div>
               {currentDay && !isRestDay && (
                 <Button variant="forma" onClick={() => setShowExerciseDialog(true)}>
-                  <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                  <Plus className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                   {isAr ? 'إضافة تمرين' : 'Add Exercise'}
                 </Button>
               )}
@@ -554,7 +554,7 @@ export default function ProgramBuilderPage() {
                   className="mt-4"
                   onClick={() => setShowExerciseDialog(true)}
                 >
-                  <Plus className={isAr ? 'ml-2 h-4 w-4' : 'mr-2 h-4 w-4'} />
+                  <Plus className={isAr ? 'ms-2 h-4 w-4' : 'me-2 h-4 w-4'} />
                   {isAr ? 'أضف أول تمرين' : 'Add First Exercise'}
                 </Button>
               </div>
