@@ -83,6 +83,7 @@ async function main() {
           where: { foodId: dup.id },
           data: { foodId: keep.id },
         });
+      }
       if (logCount > 0 || plannedCount > 0) {
         console.log(`  📎 ${name}: moved ${logCount + plannedCount} refs from ${dup.externalId} → ${keep.externalId}`);
       }
