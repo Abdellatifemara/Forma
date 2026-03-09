@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException, ConflictException, BadRequestException } from '@nestjs/common';
+import { Injectable, Logger, UnauthorizedException, ConflictException, BadRequestException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
 import * as bcrypt from 'bcrypt';
@@ -24,6 +24,8 @@ export interface AuthResponse {
 
 @Injectable()
 export class AuthService {
+  private readonly logger = new Logger(AuthService.name);
+
   constructor(
     private readonly usersService: UsersService,
     private readonly jwtService: JwtService,
@@ -82,8 +84,10 @@ export class AuthService {
 
     const { passwordHash: _, ...userWithoutPassword } = user;
 
-    // Send welcome email (fire and forget)
-    this.emailService.sendWelcome(user.email, user.firstName).catch(() => {});
+    // Send welcome email (fire and forget — non-critical, log failures but don't block registration)
+    this.emailService.sendWelcome(user.email, user.firstName).catch((err: unknown) => {
+      this.logger.warn(`Welcome email failed for ${user.email}: ${err instanceof Error ? err.message : String(err)}`);
+    });
 
     return {
       user: userWithoutPassword,

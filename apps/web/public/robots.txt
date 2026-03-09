@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+Allow: /pricing
+Allow: /blog
+Allow: /help
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+Allow: /cookies
+Allow: /demo
+Disallow: /admin/
+Disallow: /join/
+
+# Protected app routes — require authentication
+Disallow: /dashboard
+Disallow: /workouts
+Disallow: /nutrition
+Disallow: /chat
+Disallow: /profile
+Disallow: /progress
+Disallow: /health
+Disallow: /settings
+Disallow: /exercises
+Disallow: /programs
+Disallow: /squads
+Disallow: /leaderboard
+Disallow: /achievements
+Disallow: /devices
+Disallow: /trainers/
+
+# Auth routes
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /verify-email
+
+# Trainer dashboard
+Disallow: /trainer/
+
+# API (handled by separate subdomain, but belt-and-suspenders)
+Disallow: /api/
+
+Sitemap: https://formaeg.com/sitemap.xml

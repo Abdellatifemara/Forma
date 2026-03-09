@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, useMemo, useCallback, ReactNode } from 'react';
 import { translations, Language, TranslationKeys } from './translations';
 
 interface LanguageContextType {
@@ -28,25 +28,31 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const setLang = (newLang: Language) => {
+  const setLang = useCallback((newLang: Language) => {
     setLangState(newLang);
     localStorage.setItem('forma-lang', newLang);
     document.documentElement.lang = newLang;
     document.body.style.fontFamily = newLang === 'ar' ? 'Cairo, sans-serif' : '';
-  };
+  }, []);
 
-  const value: LanguageContextType = {
+  // Memoized so all context subscribers only re-render when lang actually changes
+  const value = useMemo<LanguageContextType>(() => ({
     lang,
-    language: lang,  // alias for lang
+    language: lang,
     setLang,
     t: translations[lang] as unknown as TranslationKeys,
     isRTL: lang === 'ar',
-  };
+  }), [lang, setLang]);
 
-  // Prevent hydration mismatch
+  // Prevent hydration mismatch — serve English until client mount resolves saved lang
+  const preloadValue = useMemo<LanguageContextType>(() => ({
+    ...value,
+    t: translations.en as unknown as TranslationKeys,
+  }), [value]);
+
   if (!mounted) {
     return (
-      <LanguageContext.Provider value={{ ...value, t: translations.en as unknown as TranslationKeys }}>
+      <LanguageContext.Provider value={preloadValue}>
         {children}
       </LanguageContext.Provider>
     );

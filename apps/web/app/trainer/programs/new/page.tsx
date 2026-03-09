@@ -124,7 +124,7 @@ export default function NewProgramPage() {
         title: isAr ? '\u062a\u0645 \u0625\u0646\u0634\u0627\u0621 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Program created',
         description: isAr ? '\u062f\u0644\u0648\u0642\u062a\u064a \u0623\u0636\u0641 \u0623\u064a\u0627\u0645 \u0627\u0644\u062a\u0645\u0631\u064a\u0646 \u0648\u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646.' : 'Now add workout days and exercises.',
       });
-      router.push(`/trainer/programs/${program.id}`);
+      window.location.href = `/trainer/programs/${program.id}`;
     } catch (error: any) {
       toast({
         title: isAr ? '\u0641\u0634\u0644 \u0625\u0646\u0634\u0627\u0621 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062c' : 'Failed to create program',

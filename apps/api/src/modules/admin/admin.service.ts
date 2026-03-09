@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { AdminUpdateUserDto } from './dto/admin-update-user.dto';
 
 @Injectable()
 export class AdminService {
@@ -525,13 +526,10 @@ export class AdminService {
     };
   }
 
-  async updateUser(userId: string, data: Record<string, unknown>) {
-    // Filter out fields that shouldn't be updated directly
-    const { passwordHash, id, ...updateData } = data as Record<string, unknown>;
-
+  async updateUser(userId: string, data: AdminUpdateUserDto) {
     return this.prisma.user.update({
       where: { id: userId },
-      data: updateData as Record<string, unknown>,
+      data,
       select: {
         id: true,
         email: true,

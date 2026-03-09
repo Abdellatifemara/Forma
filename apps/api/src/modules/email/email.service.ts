@@ -2,6 +2,16 @@ import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { Resend } from 'resend';
 
+/** Escape user-supplied strings before embedding in HTML to prevent XSS/injection */
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;');
+}
+
 @Injectable()
 export class EmailService {
   private readonly logger = new Logger(EmailService.name);
@@ -9,12 +19,17 @@ export class EmailService {
   private readonly fromEmail = 'Forma <noreply@formaeg.com>';
   private readonly ownerEmail: string;
 
+  private readonly emailEnabled: boolean;
+
   constructor(private config: ConfigService) {
     const apiKey = this.config.get<string>('RESEND_API_KEY');
+    this.emailEnabled = !!apiKey;
     if (!apiKey) {
-      this.logger.warn('RESEND_API_KEY not set — emails will be logged only');
+      this.logger.warn('RESEND_API_KEY not set — emails disabled, will be logged only');
     }
-    this.resend = new Resend(apiKey || 'missing');
+    // Use a placeholder key when disabled so Resend client doesn't crash on init,
+    // but all send() calls are gated by emailEnabled check
+    this.resend = new Resend(apiKey || 're_placeholder_key_emails_disabled');
     this.ownerEmail = this.config.get<string>('ERROR_REPORT_EMAIL') || '';
   }
 
@@ -59,6 +74,10 @@ export class EmailService {
 
   // ─── Send Email ──────────────────────────────────────────
   async send(to: string, subject: string, html: string): Promise<boolean> {
+    if (!this.emailEnabled) {
+      this.logger.log(`[EMAIL DISABLED] Would send to ${to}: ${subject}`);
+      return false;
+    }
     try {
       const { error } = await this.resend.emails.send({
         from: this.fromEmail,
@@ -82,8 +101,9 @@ export class EmailService {
 
   // ─── Welcome / Registration ──────────────────────────────
   async sendWelcome(to: string, name: string): Promise<boolean> {
+    const safeName = escapeHtml(name);
     return this.send(to, 'Welcome to Forma! 💪', `
-      <h2 style="margin:0 0 16px;font-size:20px;color:#111827">Welcome, ${name}!</h2>
+      <h2 style="margin:0 0 16px;font-size:20px;color:#111827">Welcome, ${safeName}!</h2>
       <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.6">
         You've just joined Egypt's premier fitness platform. We're excited to have you!
       </p>
@@ -106,8 +126,9 @@ export class EmailService {
 
   // ─── Account Deleted ─────────────────────────────────────
   async sendAccountDeleted(to: string, name: string): Promise<boolean> {
+    const safeName = escapeHtml(name);
     return this.send(to, 'Your Forma account has been deleted', `
-      <h2 style="margin:0 0 16px;font-size:20px;color:#111827">Goodbye, ${name}</h2>
+      <h2 style="margin:0 0 16px;font-size:20px;color:#111827">Goodbye, ${safeName}</h2>
       <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.6">
         Your Forma account and all associated data have been permanently deleted.
       </p>
@@ -123,13 +144,16 @@ export class EmailService {
 
   // ─── Password Reset ──────────────────────────────────────
   async sendPasswordReset(to: string, name: string, resetLink: string): Promise<boolean> {
+    const safeName = escapeHtml(name);
+    // Only allow https:// links — prevent javascript: or data: URI injection
+    const safeLink = resetLink.startsWith('https://') ? resetLink : 'https://formaeg.com/reset-password';
     return this.send(to, 'Reset your Forma password', `
       <h2 style="margin:0 0 16px;font-size:20px;color:#111827">Password Reset</h2>
       <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.6">
-        Hi ${name}, we received a request to reset your password.
+        Hi ${safeName}, we received a request to reset your password.
       </p>
       <div style="text-align:center;padding:16px 0">
-        <a href="${resetLink}" style="display:inline-block;padding:12px 32px;background:#10B981;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;font-size:14px">
+        <a href="${safeLink}" style="display:inline-block;padding:12px 32px;background:#10B981;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;font-size:14px">
           Reset Password
         </a>
       </div>
@@ -142,14 +166,16 @@ export class EmailService {
   // ─── Subscription Confirmed ──────────────────────────────
   async sendSubscriptionConfirmed(to: string, name: string, tier: string, amount: string): Promise<boolean> {
     const tierLabel = tier === 'PREMIUM_PLUS' ? 'Premium+' : 'Premium';
+    const safeName = escapeHtml(name);
+    const safeAmount = escapeHtml(amount);
     return this.send(to, `Forma ${tierLabel} Activated! 🎉`, `
       <h2 style="margin:0 0 16px;font-size:20px;color:#111827">You're now ${tierLabel}!</h2>
       <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.6">
-        Hi ${name}, your ${tierLabel} subscription is now active.
+        Hi ${safeName}, your ${tierLabel} subscription is now active.
       </p>
       <div style="background:#F0FDF4;border:1px solid #BBF7D0;border-radius:8px;padding:16px;margin:16px 0">
         <p style="margin:0;font-size:14px;color:#166534"><strong>Plan:</strong> ${tierLabel}</p>
-        <p style="margin:4px 0 0;font-size:14px;color:#166534"><strong>Amount:</strong> ${amount} LE/month</p>
+        <p style="margin:4px 0 0;font-size:14px;color:#166534"><strong>Amount:</strong> ${safeAmount} LE/month</p>
       </div>
       <p style="margin:0;font-size:14px;color:#374151;line-height:1.6">
         Enjoy all your new features. Let's shape your future together!
@@ -159,10 +185,12 @@ export class EmailService {
 
   // ─── Trial Ending ────────────────────────────────────────
   async sendTrialEnding(to: string, name: string, daysLeft: number): Promise<boolean> {
-    return this.send(to, `Your Forma trial ends in ${daysLeft} day${daysLeft > 1 ? 's' : ''}`, `
+    const safeName = escapeHtml(name);
+    const safeDays = Math.max(0, Math.floor(daysLeft)); // enforce numeric, no injection possible
+    return this.send(to, `Your Forma trial ends in ${safeDays} day${safeDays > 1 ? 's' : ''}`, `
       <h2 style="margin:0 0 16px;font-size:20px;color:#111827">Trial Ending Soon</h2>
       <p style="margin:0 0 12px;font-size:14px;color:#374151;line-height:1.6">
-        Hi ${name}, your free trial ends in <strong>${daysLeft} day${daysLeft > 1 ? 's' : ''}</strong>.
+        Hi ${safeName}, your free trial ends in <strong>${safeDays} day${safeDays > 1 ? 's' : ''}</strong>.
       </p>
       <p style="margin:0 0 16px;font-size:14px;color:#374151;line-height:1.6">
         Subscribe now to keep all your data and continue your fitness journey.
@@ -186,10 +214,10 @@ export class EmailService {
   }>): Promise<boolean> {
     const errorRows = errors.map(e => `
       <tr>
-        <td style="padding:8px;border-bottom:1px solid #E5E7EB;font-size:12px;color:#EF4444;font-weight:600">${e.status || 'JS'}</td>
-        <td style="padding:8px;border-bottom:1px solid #E5E7EB;font-size:12px;color:#374151">${e.message.slice(0, 100)}</td>
-        <td style="padding:8px;border-bottom:1px solid #E5E7EB;font-size:12px;color:#6B7280">${e.url}</td>
-        <td style="padding:8px;border-bottom:1px solid #E5E7EB;font-size:12px;color:#6B7280;text-align:center">${e.count}</td>
+        <td style="padding:8px;border-bottom:1px solid #E5E7EB;font-size:12px;color:#EF4444;font-weight:600">${escapeHtml(String(e.status || 'JS'))}</td>
+        <td style="padding:8px;border-bottom:1px solid #E5E7EB;font-size:12px;color:#374151">${escapeHtml(e.message.slice(0, 100))}</td>
+        <td style="padding:8px;border-bottom:1px solid #E5E7EB;font-size:12px;color:#6B7280">${escapeHtml(e.url)}</td>
+        <td style="padding:8px;border-bottom:1px solid #E5E7EB;font-size:12px;color:#6B7280;text-align:center">${escapeHtml(String(e.count))}</td>
       </tr>
     `).join('');
 

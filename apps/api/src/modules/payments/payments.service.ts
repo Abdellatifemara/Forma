@@ -200,12 +200,17 @@ export class PaymentsService {
   /**
    * Get payment status
    */
-  async getPaymentStatus(paymentId: string) {
+  async getPaymentStatus(paymentId: string, requestingUserId: string) {
     const payment = await this.prisma.payment.findUnique({
       where: { id: paymentId },
+      include: { subscription: { select: { userId: true } } },
     });
 
     if (!payment) {
+      throw new BadRequestException('Payment not found');
+    }
+
+    if (payment.subscription.userId !== requestingUserId) {
       throw new BadRequestException('Payment not found');
     }
 
@@ -343,12 +348,12 @@ export class PaymentsService {
     const hmacSecret = this.configService.get('PAYMOB_HMAC_SECRET');
 
     if (!hmacSecret) {
-      this.logger.warn('HMAC secret not configured, skipping verification');
-      return true; // Skip verification in development
+      this.logger.error('PAYMOB_HMAC_SECRET is not configured — rejecting webhook to prevent fraud');
+      throw new InternalServerErrorException('Payment webhook misconfigured');
     }
 
     if (!receivedHmac) {
-      this.logger.error('No HMAC header received from Paymob');
+      this.logger.error('No HMAC header received from Paymob — possible spoofed webhook');
       return false;
     }
 
@@ -389,8 +394,12 @@ export class PaymentsService {
         Buffer.from(calculatedHmac, 'hex'),
         Buffer.from(receivedHmac, 'hex'),
       );
-    } catch {
-      // If buffers are different lengths, comparison fails
+    } catch (error) {
+      this.logger.error('HMAC comparison failed — possible length mismatch or invalid hex', {
+        calculatedLength: calculatedHmac.length,
+        receivedLength: receivedHmac.length,
+        error: error instanceof Error ? error.message : String(error),
+      });
       return false;
     }
   }

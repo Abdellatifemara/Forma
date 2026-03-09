@@ -156,7 +156,7 @@ export default function UploadPDFPage() {
         })),
       });
       toast({ title: isAr ? 'تم استيراد البرنامج' : 'Program imported', description: isAr ? 'راجع وعدل البرنامج المستورد.' : 'Review and edit your imported program.' });
-      router.push(`/trainer/programs/${program.id}`);
+      window.location.href = `/trainer/programs/${program.id}`;
     } catch (error: any) {
       toast({ title: isAr ? 'فشل الحفظ' : 'Failed to save', description: error?.message || (isAr ? 'حاول تاني.' : 'Please try again.'), variant: 'destructive' });
       setUploadState('review');

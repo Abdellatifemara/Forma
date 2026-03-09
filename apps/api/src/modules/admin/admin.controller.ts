@@ -5,6 +5,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { UserRole } from '@prisma/client';
+import { AdminUpdateUserDto } from './dto/admin-update-user.dto';
 
 @ApiTags('admin')
 @ApiBearerAuth()
@@ -74,7 +75,7 @@ export class AdminController {
   @Patch('users/:id')
   @ApiOperation({ summary: 'Update a user' })
   @ApiResponse({ status: 200, description: 'User updated successfully' })
-  async updateUser(@Param('id') id: string, @Body() data: Record<string, unknown>) {
+  async updateUser(@Param('id') id: string, @Body() data: AdminUpdateUserDto) {
     return this.adminService.updateUser(id, data);
   }
 

@@ -77,6 +77,33 @@ interface GeneratedProgram {
   days: GeneratedDay[];
 }
 
+// Validate that GPT output has the required shape before trusting it
+function validateGeneratedProgram(data: unknown): data is GeneratedProgram {
+  if (!data || typeof data !== 'object') return false;
+  const d = data as Record<string, unknown>;
+  if (typeof d.name !== 'string' || !d.name.trim()) return false;
+  if (typeof d.description !== 'string') return false;
+  if (typeof d.durationWeeks !== 'number' || d.durationWeeks < 1 || d.durationWeeks > 52) return false;
+  if (typeof d.frequency !== 'number' || d.frequency < 1 || d.frequency > 7) return false;
+  if (!Array.isArray(d.days) || d.days.length === 0) return false;
+  for (const day of d.days as unknown[]) {
+    if (!day || typeof day !== 'object') return false;
+    const dd = day as Record<string, unknown>;
+    if (typeof dd.name !== 'string') return false;
+    if (typeof dd.focus !== 'string') return false;
+    if (!Array.isArray(dd.exercises)) return false;
+    for (const ex of dd.exercises as unknown[]) {
+      if (!ex || typeof ex !== 'object') return false;
+      const e = ex as Record<string, unknown>;
+      if (typeof e.name !== 'string' || !e.name.trim()) return false;
+      if (typeof e.sets !== 'number' || e.sets < 1) return false;
+      if (typeof e.reps !== 'string' && typeof e.reps !== 'number') return false;
+      if (typeof e.restSeconds !== 'number' || e.restSeconds < 0) return false;
+    }
+  }
+  return true;
+}
+
 const generationStepsEn = [
   'Reviewing your requirements...',
   'Selecting exercises from library...',
@@ -133,13 +160,19 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
       try {
         // Try to parse JSON from the response
         const jsonMatch = response.response.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-          program = JSON.parse(jsonMatch[0]);
-        } else {
-          throw new Error('No JSON found');
+        if (!jsonMatch) throw new Error('No JSON found in AI response');
+        const parsed: unknown = JSON.parse(jsonMatch[0]);
+        // Validate the shape before trusting it
+        if (!validateGeneratedProgram(parsed)) throw new Error('AI response failed shape validation');
+        // Ensure reps is always a string (GPT sometimes returns a number)
+        for (const day of parsed.days) {
+          for (const ex of day.exercises) {
+            ex.reps = String(ex.reps);
+          }
         }
+        program = parsed;
       } catch {
-        // Fallback to mock if AI response isn't valid JSON
+        // Fallback to mock if AI response isn't valid JSON or fails validation
         setCurrentStep(isAr ? 'بنرتب البرنامج...' : 'Structuring program...');
         program = {
           name: `${formData.durationWeeks}-Week ${goalName} Program`,
@@ -310,7 +343,7 @@ Return ONLY valid JSON with this exact structure: {"name":"...","description":".
         title: isAr ? 'تم حفظ البرنامج' : 'Program saved',
         description: isAr ? 'برنامجك المولد بالذكاء الاصطناعي اتعمل.' : 'Your AI-generated program has been created.',
       });
-      router.push(`/trainer/programs/${program.id}`);
+      window.location.href = `/trainer/programs/${program.id}`;
     } catch (error: any) {
       toast({
         title: isAr ? 'فشل الحفظ' : 'Failed to save',

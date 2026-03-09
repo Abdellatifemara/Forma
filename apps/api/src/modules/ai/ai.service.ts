@@ -120,6 +120,8 @@ export class AiService {
       maxTokens?: number;
       temperature?: number;
       retryConfig?: Partial<RetryConfig>;
+      /** Structured conversation history — use instead of concatenating history into prompt string */
+      conversationMessages?: Array<{ role: 'user' | 'assistant'; content: string }>;
     },
   ): Promise<string> {
     if (!this.openaiApiKey) {
@@ -133,7 +135,7 @@ export class AiService {
       try {
         const url = 'https://api.openai.com/v1/chat/completions';
 
-        const messages = [];
+        const messages: Array<{ role: string; content: string }> = [];
 
         // Add system message if provided
         if (options?.systemPrompt) {
@@ -143,11 +145,16 @@ export class AiService {
           });
         }
 
-        // Add user message
-        messages.push({
-          role: 'user',
-          content: prompt,
-        });
+        if (options?.conversationMessages && options.conversationMessages.length > 0) {
+          // Use structured history — safe against prompt injection
+          messages.push(...options.conversationMessages);
+        } else {
+          // Single-turn: just the prompt
+          messages.push({
+            role: 'user',
+            content: prompt,
+          });
+        }
 
         const body = {
           model: this.openaiModel,
@@ -392,15 +399,16 @@ Respond only with valid JSON.`,
       temperature: 0.5, // Lower for more consistent output
     });
 
-    // Parse JSON response
+    // Parse and validate JSON response
     try {
       // Clean the response (remove markdown if present)
-      let cleanedResponse = response
+      const cleanedResponse = response
         .replace(/```json\n?/g, '')
         .replace(/```\n?/g, '')
         .trim();
 
-      const plan = JSON.parse(cleanedResponse) as GeneratedWorkoutPlan;
+      const parsed: unknown = JSON.parse(cleanedResponse);
+      const plan = this.validateWorkoutPlan(parsed);
       return plan;
     } catch (error) {
       this.logger.error('Failed to parse AI workout plan:', error);
@@ -487,6 +495,47 @@ Keep it 1-2 sentences. Be specific and encouraging.
     });
 
     return { message: message.trim() };
+  }
+
+  /**
+   * Validate and cast GPT output to GeneratedWorkoutPlan shape.
+   * Throws if required fields are missing or have wrong types.
+   */
+  private validateWorkoutPlan(data: unknown): GeneratedWorkoutPlan {
+    if (!data || typeof data !== 'object') {
+      throw new Error('Workout plan response is not an object');
+    }
+    const d = data as Record<string, unknown>;
+
+    if (typeof d.planName !== 'string' || !d.planName.trim()) {
+      throw new Error('Missing planName in workout plan');
+    }
+    if (typeof d.description !== 'string') {
+      throw new Error('Missing description in workout plan');
+    }
+    if (!Array.isArray(d.weeklySchedule) || d.weeklySchedule.length === 0) {
+      throw new Error('weeklySchedule must be a non-empty array');
+    }
+
+    for (const day of d.weeklySchedule as unknown[]) {
+      if (!day || typeof day !== 'object') throw new Error('Invalid day in weeklySchedule');
+      const dd = day as Record<string, unknown>;
+      if (typeof dd.dayOfWeek !== 'number') throw new Error('Missing dayOfWeek');
+      if (!Array.isArray(dd.exercises)) throw new Error('Missing exercises array in day');
+      for (const ex of dd.exercises as unknown[]) {
+        if (!ex || typeof ex !== 'object') throw new Error('Invalid exercise object');
+        const e = ex as Record<string, unknown>;
+        if (typeof e.name !== 'string' || !e.name.trim()) throw new Error('Missing exercise name');
+        if (typeof e.sets !== 'number' || e.sets < 1) throw new Error(`Invalid sets for exercise: ${e.name}`);
+        // Coerce reps to string (GPT sometimes returns a number)
+        if (e.reps !== undefined) {
+          e.reps = String(e.reps);
+        }
+        if (typeof e.restSeconds !== 'number') throw new Error(`Invalid restSeconds for exercise: ${e.name}`);
+      }
+    }
+
+    return data as GeneratedWorkoutPlan;
   }
 
   /**

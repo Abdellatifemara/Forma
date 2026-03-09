@@ -18,29 +18,32 @@ async function bootstrap() {
   if (!allowedOrigins.includes('https://formaeg.com')) {
     allowedOrigins.push('https://formaeg.com');
   }
+  const isProd = configService.get('NODE_ENV') === 'production';
+
   app.enableCors({
     origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
-      // Allow requests with no origin (mobile apps, Postman, etc.)
+      // Require an origin header — no-origin requests are not browsers and
+      // should be handled at the infrastructure level (Nginx/Cloudflare), not here.
       if (!origin) {
-        return callback(null, true);
+        return callback(new Error('Origin header required'));
       }
 
-      // Check explicit allowed origins
+      // Check explicit allowed origins (production domain + any from env)
       if (allowedOrigins.includes(origin)) {
         return callback(null, true);
       }
 
-      // Allow localhost for development
-      if (origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:')) {
-        return callback(null, true);
+      // Allow localhost and Expo only in non-production environments
+      if (!isProd) {
+        if (origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:')) {
+          return callback(null, true);
+        }
+        if (origin.startsWith('exp://')) {
+          return callback(null, true);
+        }
       }
 
-      // Allow Expo dev client
-      if (origin.startsWith('exp://')) {
-        return callback(null, true);
-      }
-
-      // Reject others
+      // Reject everything else
       callback(new Error('Not allowed by CORS'));
     },
     credentials: true,

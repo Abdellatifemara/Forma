@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
-import { APP_GUARD } from '@nestjs/core';
+import { APP_GUARD, APP_FILTER } from '@nestjs/core';
+import { GlobalExceptionFilter } from './common/filters/global-exception.filter';
 import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler';
 import { PrismaModule } from './modules/prisma/prisma.module';
@@ -107,6 +108,10 @@ import { NotificationsModule } from './modules/notifications/notifications.modul
     NotificationsModule,
   ],
   providers: [
+    {
+      provide: APP_FILTER,
+      useClass: GlobalExceptionFilter,
+    },
     {
       provide: APP_GUARD,
       useClass: ThrottlerGuard,

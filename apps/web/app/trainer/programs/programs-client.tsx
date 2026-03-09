@@ -71,7 +71,7 @@ function ProgramsPageContent() {
       setAssignSuccess(true);
       // Redirect back to client page after short delay
       setTimeout(() => {
-        router.push(`/trainer/clients/${assignToClientId}`);
+        window.location.href = `/trainer/clients/${assignToClientId}`;
       }, 1500);
     } catch (err) {
       // Error handled
@@ -168,7 +168,7 @@ function ProgramsPageContent() {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={() => router.push(`/trainer/clients/${assignToClientId}`)}
+                  onClick={() => { window.location.href = `/trainer/clients/${assignToClientId}`; }}
                   disabled={isAssigning}
                 >
                   <ArrowLeft className="me-2 h-4 w-4" />

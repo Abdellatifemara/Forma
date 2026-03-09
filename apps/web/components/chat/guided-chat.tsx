@@ -420,6 +420,24 @@ export default function GuidedChat() {
   const isAr = language === 'ar';
   const router = useRouter();
 
+  // Track all active timers so we can clear them on unmount (prevents memory leaks)
+  const pendingTimers = useRef<ReturnType<typeof setTimeout>[]>([]);
+  const safeTimeout = useCallback((fn: () => void, delay: number) => {
+    const id = setTimeout(() => {
+      pendingTimers.current = pendingTimers.current.filter(t => t !== id);
+      fn();
+    }, delay);
+    pendingTimers.current.push(id);
+    return id;
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      pendingTimers.current.forEach(clearTimeout);
+      pendingTimers.current = [];
+    };
+  }, []);
+
   // Restore session from sessionStorage (persists across in-app navigation)
   const restored = useRef(false);
   const [currentStateId, setCurrentStateId] = useState(() => {
@@ -676,7 +694,7 @@ export default function GuidedChat() {
       // Show bot response + optional tip
       if (match.response) {
         const msg = isAr ? match.response.ar : match.response.en;
-        setTimeout(() => {
+        safeTimeout(() => {
           setHistory(prev => [...prev, {
             id: `bot-${Date.now()}`, type: 'bot', text: msg,
             stateId: match.stateId, domain: 'root', timestamp: Date.now(),
@@ -684,7 +702,7 @@ export default function GuidedChat() {
           // Show contextual tip (if any) with a slight delay
           if (match.tip) {
             const tipMsg = isAr ? match.tip.ar : match.tip.en;
-            setTimeout(() => {
+            safeTimeout(() => {
               setHistory(prev => [...prev, {
                 id: `tip-${Date.now()}`, type: 'bot',
                 text: `💡 ${tipMsg}`,
@@ -742,13 +760,13 @@ export default function GuidedChat() {
 
       // Navigate if there's a route
       if (match.action?.route) {
-        setTimeout(() => router.push(match.action!.route), 600);
+        safeTimeout(() => router.push(match.action!.route), 600);
       }
 
       // Transition to matched state (with safety check)
       try {
         getState(match.stateId); // verify it exists
-        setTimeout(() => transitionTo(match.stateId), 400);
+        safeTimeout(() => transitionTo(match.stateId), 400);
       } catch {
         // State doesn't exist, just show the response
       }
@@ -764,7 +782,7 @@ export default function GuidedChat() {
           ? `مش فاهم تمام. قصدك ${dymLabels}؟`
           : `I didn't quite get that. Did you mean ${dymLabels}?`;
 
-        setTimeout(() => {
+        safeTimeout(() => {
           setHistory(prev => [...prev, {
             id: `bot-${Date.now()}`, type: 'bot',
             text: fallbackMsg,
@@ -777,7 +795,7 @@ export default function GuidedChat() {
           ? `مش فاهم تمام. ${smartHint}`
           : `I didn't quite get that. ${smartHint}`;
 
-        setTimeout(() => {
+        safeTimeout(() => {
           setHistory(prev => [...prev, {
             id: `bot-${Date.now()}`, type: 'bot',
             text: fallbackText,
@@ -1033,7 +1051,7 @@ export default function GuidedChat() {
                     getState(chip.stateId);
                     transitionTo(chip.stateId);
                   } catch {}
-                  if (chip.route) setTimeout(() => router.push(chip.route!), 300);
+                  if (chip.route) safeTimeout(() => router.push(chip.route!), 300);
                 }}
                 className="text-[12px] px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 active:scale-95 transition-all"
               >
@@ -1128,7 +1146,7 @@ export default function GuidedChat() {
                     getState(s.stateId);
                     const match = matchIntent(isAr ? s.labelAr : s.label, currentStateId);
                     if (match?.response) {
-                      setTimeout(() => {
+                      safeTimeout(() => {
                         setHistory(prev => [...prev, {
                           id: `bot-${Date.now()}`, type: 'bot',
                           text: isAr ? match.response!.ar : match.response!.en,
@@ -1137,9 +1155,9 @@ export default function GuidedChat() {
                       }, 200);
                     }
                     if (match?.action?.route) {
-                      setTimeout(() => router.push(match.action!.route), 500);
+                      safeTimeout(() => router.push(match.action!.route), 500);
                     }
-                    setTimeout(() => transitionTo(s.stateId), 300);
+                    safeTimeout(() => transitionTo(s.stateId), 300);
                   } catch {}
                 }}
                 className="text-[11px] px-2.5 py-1 rounded-full bg-primary/8 text-primary hover:bg-primary/15 transition-colors"

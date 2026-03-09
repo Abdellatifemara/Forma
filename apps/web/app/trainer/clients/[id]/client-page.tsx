@@ -176,7 +176,7 @@ export default function ClientDetailPage() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => router.push(`/trainer/clients/${clientId}/edit`)}>
+              <DropdownMenuItem onClick={() => { window.location.href = `/trainer/clients/${clientId}/edit`; }}>
                 <Edit className="me-2 h-4 w-4" />
                 {isAr ? 'تعديل بيانات العميل' : 'Edit Client Info'}
               </DropdownMenuItem>
@@ -184,7 +184,7 @@ export default function ClientDetailPage() {
                 <Dumbbell className="me-2 h-4 w-4" />
                 {isAr ? 'تعيين برنامج جديد' : 'Assign New Program'}
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => router.push(`/trainer/clients/${clientId}/meal-plan`)}>
+              <DropdownMenuItem onClick={() => { window.location.href = `/trainer/clients/${clientId}/meal-plan`; }}>
                 <Utensils className="me-2 h-4 w-4" />
                 {isAr ? 'تحديث خطة الوجبات' : 'Update Meal Plan'}
               </DropdownMenuItem>

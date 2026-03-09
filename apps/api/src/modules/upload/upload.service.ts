@@ -165,7 +165,7 @@ export class UploadService {
         }),
       );
     } catch (error) {
-      console.error('Failed to delete file from R2:', error);
+      this.logger.error('Failed to delete file from R2:', error instanceof Error ? error.message : String(error));
     }
   }
 

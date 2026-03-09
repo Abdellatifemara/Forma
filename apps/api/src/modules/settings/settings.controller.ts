@@ -7,8 +7,31 @@ import {
   UseGuards,
   Request,
 } from '@nestjs/common';
+import { IsArray, IsBoolean, IsInt, IsOptional, IsString, Max, Min } from 'class-validator';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { SettingsService } from './settings.service';
+
+class UpdatePreferencesDto {
+  @IsOptional() @IsBoolean() isVegetarian?: boolean;
+  @IsOptional() @IsBoolean() isVegan?: boolean;
+  @IsOptional() @IsBoolean() isKeto?: boolean;
+  @IsOptional() @IsBoolean() isPescatarian?: boolean;
+  @IsOptional() @IsBoolean() preferLocalFoods?: boolean;
+  @IsOptional() @IsString() budgetLevel?: string;
+  @IsOptional() @IsString() cookingSkillLevel?: string;
+  @IsOptional() @IsInt() @Min(5) @Max(180) maxCookingTime?: number;
+  @IsOptional() @IsBoolean() ramadanModeEnabled?: boolean;
+  @IsOptional() @IsString() ramadanIftarTime?: string;
+  @IsOptional() @IsString() ramadanSuhoorTime?: string;
+  @IsOptional() @IsString() ramadanWorkoutTiming?: string;
+  @IsOptional() @IsString() preferredWorkoutTime?: string;
+  @IsOptional() @IsInt() @Min(10) @Max(240) workoutDurationMins?: number;
+  @IsOptional() @IsArray() @IsString({ each: true }) allergies?: string[];
+  @IsOptional() @IsArray() @IsString({ each: true }) dislikes?: string[];
+  @IsOptional() @IsArray() @IsString({ each: true }) healthConditions?: string[];
+  @IsOptional() @IsArray() @IsString({ each: true }) injuries?: string[];
+  @IsOptional() @IsArray() @IsString({ each: true }) availableEquipment?: string[];
+}
 
 @Controller('settings')
 @UseGuards(JwtAuthGuard)
@@ -23,7 +46,7 @@ export class SettingsController {
   @Put('preferences')
   async updatePreferences(
     @Request() req: { user: { id: string } },
-    @Body() body: any,
+    @Body() body: UpdatePreferencesDto,
   ) {
     return this.settingsService.updateUserPreferences(req.user.id, body);
   }

@@ -10,11 +10,28 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { UserProfileService } from './user-profile.service';
+import {
+  UpdateEquipmentDto,
+  UpdateCapabilityDto,
+  UpdateMovementDto,
+  UpdateHealthDto,
+  AddInjuryDto,
+  UpdateInjuryDto,
+  UpdateNutritionDto,
+  UpdateLifestyleDto,
+  UpdateBodyDto,
+  LogReadinessDto,
+  LogWorkoutFeedbackDto,
+  UpdateMuscleRecoveryDto,
+  UpdateTrainingHistoryDto,
+  UpdateGoalsDto,
+  UpdateFastingDto,
+} from './dto/user-profile.dto';
 
 interface AuthRequest {
   user: { id: string };
 }
-import { UserProfileService } from './user-profile.service';
 
 @Controller('user-profile')
 @UseGuards(JwtAuthGuard)
@@ -45,7 +62,7 @@ export class UserProfileController {
   }
 
   @Put('equipment')
-  async updateEquipment(@Request() req: AuthRequest, @Body() data: any) {
+  async updateEquipment(@Request() req: AuthRequest, @Body() data: UpdateEquipmentDto) {
     return this.profileService.updateEquipmentInventory(req.user.id, data);
   }
 
@@ -59,7 +76,7 @@ export class UserProfileController {
   }
 
   @Put('capability')
-  async updateCapability(@Request() req: AuthRequest, @Body() data: any) {
+  async updateCapability(@Request() req: AuthRequest, @Body() data: UpdateCapabilityDto) {
     return this.profileService.updateExerciseCapability(req.user.id, data);
   }
 
@@ -73,7 +90,7 @@ export class UserProfileController {
   }
 
   @Put('movement')
-  async updateMovement(@Request() req: AuthRequest, @Body() data: any) {
+  async updateMovement(@Request() req: AuthRequest, @Body() data: UpdateMovementDto) {
     return this.profileService.updateMovementScreen(req.user.id, data);
   }
 
@@ -87,17 +104,17 @@ export class UserProfileController {
   }
 
   @Put('health')
-  async updateHealth(@Request() req: AuthRequest, @Body() data: any) {
+  async updateHealth(@Request() req: AuthRequest, @Body() data: UpdateHealthDto) {
     return this.profileService.updateHealthProfile(req.user.id, data);
   }
 
   @Post('health/injuries')
-  async addInjury(@Request() req: AuthRequest, @Body() data: any) {
+  async addInjury(@Request() req: AuthRequest, @Body() data: AddInjuryDto) {
     return this.profileService.addInjury(req.user.id, data);
   }
 
   @Put('health/injuries/:id')
-  async updateInjury(@Param('id') id: string, @Body() data: any) {
+  async updateInjury(@Param('id') id: string, @Body() data: UpdateInjuryDto) {
     return this.profileService.updateInjury(id, data);
   }
 
@@ -116,7 +133,7 @@ export class UserProfileController {
   }
 
   @Put('nutrition')
-  async updateNutrition(@Request() req: AuthRequest, @Body() data: any) {
+  async updateNutrition(@Request() req: AuthRequest, @Body() data: UpdateNutritionDto) {
     return this.profileService.updateNutritionProfile(req.user.id, data);
   }
 
@@ -130,7 +147,7 @@ export class UserProfileController {
   }
 
   @Put('lifestyle')
-  async updateLifestyle(@Request() req: AuthRequest, @Body() data: any) {
+  async updateLifestyle(@Request() req: AuthRequest, @Body() data: UpdateLifestyleDto) {
     return this.profileService.updateLifestyleProfile(req.user.id, data);
   }
 
@@ -144,7 +161,7 @@ export class UserProfileController {
   }
 
   @Put('body')
-  async updateBody(@Request() req: AuthRequest, @Body() data: any) {
+  async updateBody(@Request() req: AuthRequest, @Body() data: UpdateBodyDto) {
     return this.profileService.updateBodyComposition(req.user.id, data);
   }
 
@@ -163,7 +180,7 @@ export class UserProfileController {
   }
 
   @Post('readiness')
-  async logReadiness(@Request() req: AuthRequest, @Body() data: any) {
+  async logReadiness(@Request() req: AuthRequest, @Body() data: LogReadinessDto) {
     return this.profileService.logDailyReadiness(req.user.id, data);
   }
 
@@ -180,7 +197,7 @@ export class UserProfileController {
   async logWorkoutFeedback(
     @Request() req: AuthRequest,
     @Param('workoutLogId') workoutLogId: string,
-    @Body() data: any,
+    @Body() data: LogWorkoutFeedbackDto,
   ) {
     return this.profileService.logWorkoutFeedback(req.user.id, workoutLogId, data);
   }
@@ -198,7 +215,7 @@ export class UserProfileController {
   async updateMuscleRecovery(
     @Request() req: AuthRequest,
     @Param('muscleGroup') muscleGroup: string,
-    @Body() data: any,
+    @Body() data: UpdateMuscleRecoveryDto,
   ) {
     return this.profileService.updateMuscleRecovery(req.user.id, muscleGroup, data);
   }
@@ -213,7 +230,7 @@ export class UserProfileController {
   }
 
   @Put('training')
-  async updateTrainingHistory(@Request() req: AuthRequest, @Body() data: any) {
+  async updateTrainingHistory(@Request() req: AuthRequest, @Body() data: UpdateTrainingHistoryDto) {
     return this.profileService.updateTrainingHistory(req.user.id, data);
   }
 
@@ -227,7 +244,7 @@ export class UserProfileController {
   }
 
   @Put('goals')
-  async updateGoals(@Request() req: AuthRequest, @Body() data: any) {
+  async updateGoals(@Request() req: AuthRequest, @Body() data: UpdateGoalsDto) {
     return this.profileService.updateGoalsProfile(req.user.id, data);
   }
 
@@ -241,7 +258,7 @@ export class UserProfileController {
   }
 
   @Put('fasting')
-  async updateFasting(@Request() req: AuthRequest, @Body() data: any) {
+  async updateFasting(@Request() req: AuthRequest, @Body() data: UpdateFastingDto) {
     return this.profileService.updateFastingProfile(req.user.id, data);
   }
 }

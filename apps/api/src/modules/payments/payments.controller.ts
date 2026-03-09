@@ -42,11 +42,14 @@ export class PaymentsController {
   }
 
   /**
-   * Get payment status
+   * Get payment status — scoped to the requesting user only
    */
   @Get(':paymentId/status')
-  async getPaymentStatus(@Param('paymentId') paymentId: string) {
-    return this.paymentsService.getPaymentStatus(paymentId);
+  async getPaymentStatus(
+    @Request() req: { user: { id: string } },
+    @Param('paymentId') paymentId: string,
+  ) {
+    return this.paymentsService.getPaymentStatus(paymentId, req.user.id);
   }
 }
 
@@ -76,7 +79,7 @@ export class PaymobWebhookController {
    * User is redirected here after payment
    */
   @Post('response')
-  async handleResponseCallback(@Body() body: any) {
+  async handleResponseCallback(@Body() _body: Record<string, unknown>) {
     // This is the redirect endpoint - just acknowledge
     // The actual processing happens in the transaction callback
     return { received: true };
