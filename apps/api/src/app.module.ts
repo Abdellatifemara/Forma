@@ -39,6 +39,7 @@ import { EmailModule } from './modules/email/email.module';
 import { ErrorReportingModule } from './modules/error-reporting/error-reporting.module';
 import { DevicesModule } from './modules/devices/devices.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
+import { CrossfitModule } from './modules/crossfit/crossfit.module';
 
 @Module({
   imports: [
@@ -106,6 +107,7 @@ import { NotificationsModule } from './modules/notifications/notifications.modul
     ErrorReportingModule,
     DevicesModule,
     NotificationsModule,
+    CrossfitModule,
   ],
   providers: [
     {

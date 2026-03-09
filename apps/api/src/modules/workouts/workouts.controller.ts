@@ -1,13 +1,13 @@
 import { Controller, Get, Post, Put, Param, Body, Query, UseGuards } from '@nestjs/common';
 import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
-import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
+import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { WorkoutsService } from './workouts.service';
 import { WorkoutGeneratorService, DurationType, EnergyLevel, LocationType, GeneratedWorkout } from './workout-generator.service';
 import { AchievementsService } from '../achievements/achievements.service';
 import { AiService } from '../ai/ai.service';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
-import { User } from '@prisma/client';
+import { User, ActivityType } from '@prisma/client';
 import { CreateWorkoutPlanDto } from './dto/create-workout-plan.dto';
 import { LogWorkoutDto } from './dto/log-workout.dto';
 
@@ -368,5 +368,52 @@ Rules: max 100 tokens. Temperature 0. Be specific to THIS user's data. If workou
     // Check achievements in background
     this.achievementsService.checkAndUpdateAchievements(user.id).catch(() => {});
     return result;
+  }
+
+  // ── Activity Logging (Rest Days, Light Activity) ─────────────
+
+  @Post('activity')
+  @ApiOperation({ summary: 'Log an activity (rest day, walk, yoga, etc.)' })
+  @ApiResponse({ status: 201, description: 'Activity logged' })
+  async logActivity(
+    @CurrentUser() user: User,
+    @Body() data: {
+      activityType: ActivityType;
+      durationMinutes?: number;
+      caloriesBurned?: number;
+      reason?: string;
+      notes?: string;
+    },
+  ) {
+    return this.workoutsService.logActivity(user.id, data);
+  }
+
+  @Get('activity/today')
+  @ApiOperation({ summary: 'Get today\'s activities' })
+  async getActivityToday(@CurrentUser() user: User) {
+    return this.workoutsService.getActivityToday(user.id);
+  }
+
+  @Get('activity/history')
+  @ApiOperation({ summary: 'Get activity history' })
+  @ApiQuery({ name: 'days', required: false, type: Number })
+  async getActivityHistory(
+    @CurrentUser() user: User,
+    @Query('days') daysStr?: string,
+  ) {
+    const days = daysStr ? parseInt(daysStr, 10) : 7;
+    return this.workoutsService.getActivityHistory(user.id, isNaN(days) ? 7 : days);
+  }
+
+  // ── Workout Rating (standalone) ──────────────────────────────
+
+  @Put('logs/:logId/rate')
+  @ApiOperation({ summary: 'Rate a completed workout' })
+  async rateWorkout(
+    @CurrentUser() user: User,
+    @Param('logId') logId: string,
+    @Body() data: { rating: number; notes?: string },
+  ) {
+    return this.workoutsService.rateWorkout(user.id, logId, data.rating, data.notes);
   }
 }

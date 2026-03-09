@@ -183,8 +183,6 @@ export const nutritionStates: ChatState[] = [
       en: 'Based on what you\'ve eaten today, here\'s what you need:',
       ar: 'بناءً على اللي أكلته النهارده، ده اللي محتاجه:',
     },
-    dynamic: true,
-    onEnter: { type: 'fetch', endpoint: '/nutrition/suggest' },
     back: 'NT_TODAY',
     options: [
       { id: 'nts1', label: { en: 'High protein meals', ar: 'وجبات عالية بروتين' }, icon: '🥩', nextState: 'NT_HIGH_PROTEIN' },
@@ -406,7 +404,6 @@ export const nutritionStates: ChatState[] = [
     domain: 'nutrition',
     text: { en: 'Water Today', ar: 'مية النهارده' },
     botMessage: { en: 'Here\'s your water intake today:', ar: 'ده اللي شربته النهارده:' },
-    dynamic: true,
     onEnter: { type: 'fetch', endpoint: '/nutrition/water-today' },
     back: 'NT_WATER',
     options: [

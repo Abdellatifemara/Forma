@@ -28,6 +28,8 @@ export const workoutStates: ChatState[] = [
         condition: { type: 'tier', tier: 'PREMIUM_PLUS' } },
       { id: 'wk_ai2', label: { en: 'AI Post-Workout Review', ar: 'مراجعة AI بعد التمرين' }, icon: '🧠', nextState: 'WK_AI_POSTWORKOUT',
         condition: { type: 'tier', tier: 'PREMIUM_PLUS' } },
+      { id: 'wk_pp1', label: { en: 'Custom Exercises', ar: 'تمارين مخصصة' }, icon: '✏️', nextState: 'WK_CUSTOM_EXERCISE',
+        condition: { type: 'tier', tier: 'PREMIUM_PLUS' } },
       { id: 'wk8', label: { en: 'Back to Menu', ar: 'رجوع للقائمة' }, icon: '🔙', nextState: 'ROOT' },
     ],
   },
@@ -925,7 +927,6 @@ export const workoutStates: ChatState[] = [
       en: '📅 Here\'s your WOD for today! Choose a format:',
       ar: '📅 ده تمرين النهارده! اختار النوع:',
     },
-    dynamic: true,
     onEnter: { type: 'fetch', endpoint: '/crossfit/wod-of-day' },
     back: 'WK_CROSSFIT',
     options: [
@@ -943,12 +944,11 @@ export const workoutStates: ChatState[] = [
     id: 'WK_CF_RANDOM_GIRL',
     domain: 'workout',
     text: { en: 'Girl WOD', ar: 'جيرل WOD' },
-    dynamic: true,
-    onEnter: { type: 'fetch', endpoint: '/crossfit/random-wod?type=girl' },
     botMessage: {
       en: '👧 Here\'s a Girl WOD! These are the classic CrossFit benchmarks. Record your time and compare next month.',
       ar: '👧 ده جيرل WOD! دي البنشماركات الكلاسيكية في كروس فت. سجّل وقتك وقارن الشهر الجاي.',
     },
+    onEnter: { type: 'fetch', endpoint: '/crossfit/random-wod?type=girl' },
     back: 'WK_CF_WOD',
     options: [
       { id: 'wkcfg1', label: { en: 'Start WOD', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_CF_LOG_START',
@@ -963,12 +963,11 @@ export const workoutStates: ChatState[] = [
     id: 'WK_CF_RANDOM_HERO',
     domain: 'workout',
     text: { en: 'Hero WOD', ar: 'هيرو WOD' },
-    dynamic: true,
-    onEnter: { type: 'fetch', endpoint: '/crossfit/random-wod?type=hero' },
     botMessage: {
       en: '🦸 Hero WODs honor fallen heroes. These are HARD — scale as needed but give max effort. It\'s about heart, not RX.',
       ar: '🦸 هيرو WODs بتكرّم الأبطال. دي صعبة — عدّل على حسب مستواك بس ادّي أقصى مجهود. الموضوع عن القلب، مش RX.',
     },
+    onEnter: { type: 'fetch', endpoint: '/crossfit/random-wod?type=hero' },
     back: 'WK_CF_WOD',
     options: [
       { id: 'wkcfh1', label: { en: 'Start WOD', ar: 'ابدأ التمرين' }, icon: '▶️', nextState: 'WK_CF_LOG_START',
@@ -1153,12 +1152,11 @@ export const workoutStates: ChatState[] = [
     id: 'WK_CF_BENCHMARK_HISTORY',
     domain: 'workout',
     text: { en: 'Benchmark History', ar: 'تاريخ البنشماركات' },
-    dynamic: true,
-    onEnter: { type: 'fetch', endpoint: '/crossfit/benchmark-history' },
     botMessage: {
       en: '📈 Your benchmark WOD history and progress over time. See how you\'re improving!',
       ar: '📈 تاريخ بنشماركاتك وتقدمك مع الوقت. شوف ازاي بتتحسن!',
     },
+    onEnter: { type: 'fetch', endpoint: '/crossfit/benchmark-history' },
     back: 'WK_CF_BENCHMARK',
     options: [
       { id: 'wkcfbh1', label: { en: 'Retest a benchmark', ar: 'أعد اختبار بنشمارك' }, icon: '🔄', nextState: 'WK_CF_BENCHMARK' },
@@ -1253,7 +1251,6 @@ export const workoutStates: ChatState[] = [
     id: 'WK_CF_PR',
     domain: 'workout',
     text: { en: 'PR Board', ar: 'لوحة الأرقام القياسية' },
-    dynamic: true,
     onEnter: { type: 'fetch', endpoint: '/crossfit/pr-board' },
     botMessage: {
       en: '📊 Your CrossFit PR Board — Track everything:\n\n🏋️ Lifting PRs: Snatch, C&J, Back Squat, Front Squat, Deadlift, Strict Press\n⏱️ Benchmark Times: Fran, Grace, Isabel, Diane, Helen, Murph\n🔄 Gymnastics: Max Pull-Ups, Muscle-Ups, HSPU, T2B\n🚣 Cardio: 500m Row, 2k Row, 1mi Run, Assault Bike Cal\n\nYour numbers tell your story. Keep pushing!',
@@ -1366,8 +1363,6 @@ export const workoutStates: ChatState[] = [
     id: 'WK_CF_MY_CHALLENGES',
     domain: 'workout',
     text: { en: 'My Challenges', ar: 'تحدياتي' },
-    dynamic: true,
-    onEnter: { type: 'fetch', endpoint: '/challenges/my-challenges?type=crossfit' },
     botMessage: {
       en: '📊 Your active CrossFit challenges and progress. Keep pushing — consistency beats intensity.',
       ar: '📊 تحديات كروس فت النشطة وتقدمك. كمّل — الانتظام أهم من الشدة.',

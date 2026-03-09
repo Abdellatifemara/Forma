@@ -154,4 +154,38 @@ export class NutritionController {
   async getWeeklySummary(@CurrentUser() user: User) {
     return this.nutritionService.getWeeklySummary(user.id);
   }
+
+  // ── Water Tracking ──────────────────────────────────────────
+
+  @UseGuards(JwtAuthGuard)
+  @Post('water')
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Log water intake' })
+  async logWater(
+    @CurrentUser() user: User,
+    @Body() data: { ml: number },
+  ) {
+    return this.nutritionService.logWater(user.id, data.ml);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Get('water/today')
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Get today\'s water intake' })
+  async getWaterToday(@CurrentUser() user: User) {
+    return this.nutritionService.getWaterToday(user.id);
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Get('water/history')
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Get water intake history' })
+  @ApiQuery({ name: 'days', required: false, type: Number })
+  async getWaterHistory(
+    @CurrentUser() user: User,
+    @Query('days') daysStr?: string,
+  ) {
+    const days = daysStr ? parseInt(daysStr, 10) : 7;
+    return this.nutritionService.getWaterHistory(user.id, isNaN(days) ? 7 : days);
+  }
 }

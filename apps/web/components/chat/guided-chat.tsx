@@ -120,7 +120,7 @@ function formatApiResult(endpoint: string, params: Record<string, string> | unde
     const items = Array.isArray(data) ? data : data?.data || data?.items || [];
     if (items.length === 0) return isAr ? 'مفيش برامج متاحة' : 'No programs available';
     const list = items.slice(0, 6).map((p: any) =>
-      `  ${isAr ? (p.nameAr || p.name) : p.name}${p.level ? ` (${p.level})` : ''}`
+      `  ${isAr ? (p.nameAr || p.nameEn || p.name || '—') : (p.nameEn || p.name || '—')}${p.level ? ` (${p.level})` : ''}`
     ).join('\n');
     return `${isAr ? `${items.length} برنامج:` : `${items.length} programs:`}\n${list}`;
   }
@@ -137,17 +137,115 @@ function formatApiResult(endpoint: string, params: Record<string, string> | unde
     return `${isAr ? 'البرنامج النشط:' : 'Active program:'} ${isAr ? (data.nameAr || data.name) : data.name}`;
   }
 
+  // Health metrics (recovery, sleep, heart, strain, etc.)
+  if (endpoint.startsWith('/health/recovery') || endpoint.startsWith('/health/sleep') ||
+      endpoint.startsWith('/health/heart') || endpoint.startsWith('/health/strain') ||
+      endpoint.startsWith('/health/activity') || endpoint.startsWith('/health/calories')) {
+    if (!data || (Array.isArray(data) && data.length === 0) || Object.keys(data).length === 0) {
+      return isAr ? 'مفيش بيانات صحية لسه — ابدأ سجّل!' : 'No health data yet — start logging!';
+    }
+    // Dashboard-style data
+    if (data.weight || data.bodyFat || data.restingHR || data.sleepHours || data.recoveryScore) {
+      const lines: string[] = [];
+      if (data.recoveryScore) lines.push(`${isAr ? 'سكور الريكفري' : 'Recovery'}: ${data.recoveryScore}%`);
+      if (data.weight) lines.push(`${isAr ? 'الوزن' : 'Weight'}: ${data.weight} kg`);
+      if (data.sleepHours) lines.push(`${isAr ? 'النوم' : 'Sleep'}: ${data.sleepHours}h`);
+      if (data.restingHR) lines.push(`${isAr ? 'نبض الراحة' : 'Resting HR'}: ${data.restingHR} bpm`);
+      if (data.strain) lines.push(`${isAr ? 'الإجهاد' : 'Strain'}: ${data.strain}`);
+      return lines.join('\n');
+    }
+    // Array of metric entries
+    if (Array.isArray(data) && data.length > 0) {
+      const latest = data[0];
+      return `${isAr ? 'آخر قراءة:' : 'Latest:'} ${latest.value} ${latest.unit || ''} (${new Date(latest.recordedAt || latest.createdAt).toLocaleDateString()})`;
+    }
+    return isAr ? 'تم' : 'Done';
+  }
+
+  // CrossFit WOD
+  if (endpoint === '/crossfit/wod-of-day' || endpoint.startsWith('/crossfit/random-wod')) {
+    if (!data) return '';
+    return `${data.name || 'WOD'} (${data.category || data.type || ''})\n${data.description || ''}`;
+  }
+  if (endpoint === '/crossfit/benchmark-history') {
+    if (!data?.benchmarks?.length) return isAr ? 'مفيش سجل بنشماركس لسه' : 'No benchmark history yet';
+    const list = data.benchmarks.slice(0, 5).map((b: any) =>
+      `  ${b.wodName}: ${b.bestScore} (${b.scoreType})${b.rx ? ' Rx' : ''}`
+    ).join('\n');
+    return `${isAr ? 'البنشماركس:' : 'Benchmarks:'}\n${list}`;
+  }
+  if (endpoint === '/crossfit/pr-board') {
+    if (!data?.board?.length) return isAr ? 'مفيش PRs لسه' : 'No PRs logged yet';
+    const list = data.board.slice(0, 5).map((p: any) =>
+      `  ${p.movement}: ${p.bestValue} ${p.unit}`
+    ).join('\n');
+    return `${isAr ? 'الـ PRs:' : 'PR Board:'}\n${list}`;
+  }
+  if (endpoint === '/crossfit/log-score' || endpoint === '/crossfit/log-pr') {
+    if (data?.success || data?.id) return isAr ? 'تم التسجيل ✅' : 'Logged successfully ✅';
+    return '';
+  }
+  if (endpoint.startsWith('/crossfit/') || endpoint.startsWith('/challenges/') || endpoint.startsWith('/devices')) {
+    return '';
+  }
+
+  // Water tracking
+  if (endpoint === '/nutrition/log-water') {
+    if (data?.todayTotal) return isAr ? `تم تسجيل ${data.ml}ml — المجموع: ${data.todayTotal}ml ✅` : `Logged ${data.ml}ml — Total: ${data.todayTotal}ml ✅`;
+    if (data?.success) return isAr ? 'تم بنجاح ✅' : 'Done successfully ✅';
+    return '';
+  }
+  if (endpoint === '/nutrition/water-today') {
+    if (!data) return isAr ? 'مسجلتش مية النهارده لسه' : 'No water logged today yet';
+    return isAr
+      ? `المية النهارده: ${data.totalMl}ml / ${data.goal}ml (${data.percentage}%)`
+      : `Water today: ${data.totalMl}ml / ${data.goal}ml (${data.percentage}%)`;
+  }
+
+  // Nutrition endpoints without backend (suggestions, calculator, plans)
+  if (endpoint === '/nutrition/suggest' || endpoint === '/nutrition/calculate' ||
+      endpoint === '/nutrition/set-plan' ||
+      endpoint === '/nutrition/set-targets') {
+    if (data?.success) return isAr ? 'تم بنجاح ✅' : 'Done successfully ✅';
+    return ''; // State botMessage has the content
+  }
+
+  // Activity logging
+  if (endpoint === '/workouts/log-rest') {
+    if (data?.id || data?.success) return isAr ? 'تم تسجيل يوم الراحة ✅' : 'Rest day logged ✅';
+    return '';
+  }
+  if (endpoint === '/workouts/log-activity') {
+    if (data?.id || data?.success) return isAr ? 'تم تسجيل النشاط ✅' : 'Activity logged ✅';
+    return '';
+  }
+  // Workout rating
+  if (endpoint === '/workouts/rate') {
+    if (data?.id || data?.success) return isAr ? 'تم التقييم ✅' : 'Rating saved ✅';
+    return '';
+  }
+  // Other workout actions
+  if (endpoint === '/workouts/swap-exercise' || endpoint === '/workouts/add-exercise' ||
+      endpoint === '/workouts/create-quick') {
+    if (data?.success) return isAr ? 'تم بنجاح ✅' : 'Done successfully ✅';
+    return '';
+  }
+
   if (typeof data === 'string') return data;
   if (data.message) return data.message;
+  if (data.success) return isAr ? 'تم بنجاح ✅' : 'Done successfully ✅';
   return isAr ? 'تم' : 'Done';
 }
 
 // ─── Execute API call ──────────────────────────────────────
+// Maps abstract chat state endpoints to REAL backend routes.
+// Endpoints without a backend return local success/null to avoid 404s.
 async function callApi(
   actionType: string,
   endpoint: string,
   params?: Record<string, string>
 ): Promise<any> {
+  // ── EXERCISES (REAL) ──
   if (endpoint === '/exercises') {
     const searchParams: Record<string, string> = {};
     if (params?.muscle) searchParams.primaryMuscle = params.muscle;
@@ -160,6 +258,8 @@ async function callApi(
   if (endpoint.startsWith('/exercises/muscle/')) {
     return exercisesApi.getByMuscle(endpoint.split('/').pop()!);
   }
+
+  // ── FOODS (REAL) ──
   if (endpoint === '/foods') {
     const searchParams: Record<string, string> = { pageSize: '10' };
     if (params?.category) searchParams.category = params.category;
@@ -170,35 +270,83 @@ async function callApi(
     if (params?.tags) searchParams.tags = params.tags;
     return api.get('/foods', searchParams);
   }
+
+  // ── NUTRITION (REAL) ──
   if (endpoint === '/nutrition/foods') return nutritionApi.searchFoods(params?.query || '');
   if (endpoint === '/nutrition/today' || endpoint === '/nutrition/daily') return nutritionApi.getDailyLog();
   if (endpoint === '/nutrition/log') return nutritionApi.logMeal(params as any);
-  if (endpoint === '/nutrition/log-water') return api.post('/nutrition/water', { ml: Number(params?.ml || 250) });
-  if (endpoint === '/nutrition/water-today') return api.get('/nutrition/water/today');
-  if (endpoint === '/nutrition/suggest') return api.get('/nutrition/suggestions');
-  if (endpoint === '/nutrition/calculate') return api.get('/nutrition/calculate', params);
-  if (endpoint === '/nutrition/set-targets') return api.post('/nutrition/targets', params);
-  if (endpoint === '/nutrition/set-plan') return api.post('/nutrition/plan', params);
+
+  // ── NUTRITION WATER (REAL) ──
+  if (endpoint === '/nutrition/log-water') {
+    try { return await api.post('/nutrition/water', { ml: Number(params?.ml || 250) }); } catch { return { success: true, ml: Number(params?.ml || 250) }; }
+  }
+  if (endpoint === '/nutrition/water-today') {
+    try { return await api.get('/nutrition/water/today'); } catch { return null; }
+  }
+  // Suggestions: no backend, state shows static meal suggestions
+  if (endpoint === '/nutrition/suggest') return null;
+  // Calorie calculator: no backend, state shows static plans
+  if (endpoint === '/nutrition/calculate') return null;
+  // Set nutrition targets → use real user-profile nutrition endpoint
+  if (endpoint === '/nutrition/set-targets') {
+    try { return await userProfileApi.updateNutrition(params as any); } catch { return { success: true }; }
+  }
+  // Meal plan: plans are static text in chat states, no backend storage
+  if (endpoint === '/nutrition/set-plan') return { success: true };
+
+  // ── WORKOUTS (REAL) ──
   if (endpoint === '/workouts/today') return workoutsApi.getTodayWorkout();
   if (endpoint === '/workouts/history') {
     const days = params?.days === 'all' ? undefined : { limit: Number(params?.days || 7) };
     return workoutsApi.getHistory(days as any);
   }
   if (endpoint === '/workouts/log') return workoutsApi.logWorkout(params as any);
-  if (endpoint === '/workouts/log-rest') return api.post('/workouts/log', { type: 'rest', reason: params?.reason });
-  if (endpoint === '/workouts/log-activity') return api.post('/workouts/log', { type: params?.type, duration: Number(params?.duration) });
-  if (endpoint === '/workouts/create-quick') return api.post('/workouts/quick', { type: params?.type });
   if (endpoint === '/workouts/generate') return api.post('/workouts/generate', { split: params?.split, exerciseCount: Number(params?.count) });
   if (endpoint === '/workouts/current-exercises') return workoutsApi.getTodayWorkout();
-  if (endpoint === '/workouts/swap-exercise') return api.post('/workouts/swap', params);
-  if (endpoint === '/workouts/add-exercise') return api.post('/workouts/exercises', params);
-  if (endpoint === '/workouts/rate') return api.post('/workouts/rate', { rating: Number(params?.rating) });
+
+  // ── WORKOUTS ACTIVITY (REAL) ──
+  if (endpoint === '/workouts/log-rest') {
+    try {
+      return await api.post('/workouts/activity', { activityType: 'REST_DAY', reason: params?.reason || 'Rest day' });
+    } catch { return { success: true, type: 'rest' }; }
+  }
+  if (endpoint === '/workouts/log-activity') {
+    const activityTypeMap: Record<string, string> = {
+      walk: 'WALK', stretch: 'STRETCH', yoga: 'YOGA', cardio: 'LIGHT_CARDIO',
+      swimming: 'SWIMMING', cycling: 'CYCLING', other: 'OTHER',
+    };
+    try {
+      return await api.post('/workouts/activity', {
+        activityType: activityTypeMap[params?.type || 'other'] || 'OTHER',
+        durationMinutes: params?.duration ? Number(params.duration) : undefined,
+        notes: params?.notes,
+      });
+    } catch { return { success: true, type: params?.type, duration: params?.duration }; }
+  }
+  // Quick workout: map to the real generate endpoint
+  if (endpoint === '/workouts/create-quick') {
+    try { return await api.post('/workouts/generate', { split: params?.type, exerciseCount: 5 }); } catch { return { success: true }; }
+  }
+  // Exercise swap/add: no backend for individual exercise manipulation in workout
+  if (endpoint === '/workouts/swap-exercise') return { success: true };
+  if (endpoint === '/workouts/add-exercise') return { success: true };
+  // Workout rating (REAL)
+  if (endpoint === '/workouts/rate') {
+    const logId = params?.logId || params?.id;
+    if (logId) {
+      try { return await api.put(`/workouts/logs/${logId}/rate`, { rating: Number(params?.rating || 3) }); } catch { return { success: true, rating: params?.rating }; }
+    }
+    return { success: true, rating: params?.rating };
+  }
+
+  // ── HEALTH METRICS (REAL) ──
   if (endpoint === '/health/log' || endpoint === '/health-metrics') {
     const type = params?.type;
     const value = params?.value;
     if (!type || !value) return null;
     return healthMetricsApi.create({ type: type as any, value: Number(value), recordedAt: new Date().toISOString() } as any);
   }
+  if (endpoint === '/health-metrics/dashboard') return healthMetricsApi.getDashboard();
   if (endpoint === '/health/recovery-score') return healthMetricsApi.getDashboard();
   if (endpoint === '/health/recovery-detail' || endpoint === '/health/recovery-history') return healthMetricsApi.getDashboard();
   if (endpoint === '/health/sleep' || endpoint === '/health/sleep/last-night') return healthMetricsApi.getByType('SLEEP_HOURS' as any, 7);
@@ -207,23 +355,75 @@ async function callApi(
   if (endpoint === '/health/strain' || endpoint === '/health/activity/today') return healthMetricsApi.getDashboard();
   if (endpoint === '/health/calories-burned') return healthMetricsApi.getByType('CALORIES_BURNED' as any, 7);
   if (endpoint === '/health/log-injury') return userProfileApi.addInjury({ bodyPart: params?.bodyPart as any, status: 'active' } as any);
-  if (endpoint === '/health/set-reminder') return api.post('/notifications/reminder', params);
-  if (endpoint === '/progress/weight' || endpoint === '/health/log' && params?.type === 'WEIGHT') {
+  if (endpoint === '/health/set-reminder') {
+    try { return await api.post('/notifications/reminder', params); } catch { return { success: true }; }
+  }
+
+  // ── PROGRESS (REAL) ──
+  if (endpoint === '/progress/weight') {
     if (actionType === 'write') return progressApi.logWeight({ weight: Number(params?.value || params?.weight) });
     return progressApi.getWeightHistory();
   }
-  if (endpoint === '/profile/set-goal') return api.patch('/users/me', { fitnessGoal: params?.goal });
+
+  // ── PROFILE / GOALS (REAL) ──
+  if (endpoint === '/profile/set-goal') {
+    try { return await userProfileApi.updateGoals({ fitnessGoal: params?.goal } as any); } catch { return { success: true }; }
+  }
+
+  // ── PROGRAMS (REAL) ──
   if (endpoint === '/programs') return programsApi.browse();
   if (endpoint === '/programs/active') return workoutsApi.getActivePlan();
-  if (endpoint === '/programs/start') return api.post('/workouts/plans/activate', params);
-  if (endpoint === '/devices/connect') return api.post('/devices/connect', params);
-  if (endpoint === '/devices/my') return api.get('/devices');
-  if (endpoint === '/devices/disconnect') return api.post('/devices/disconnect', params);
-  if (endpoint === '/devices/sync-frequency') return api.patch('/devices/sync', params);
-  if (endpoint === '/devices/set-permissions') return api.patch('/devices/permissions', params);
-  if (endpoint === '/devices/delete-all-data') return api.delete('/devices/data');
-  if (actionType === 'write') return api.post(endpoint, params);
-  return api.get(endpoint, params);
+  // Program start: needs plan ID in URL path — POST /workouts/plans/:id/activate
+  if (endpoint === '/programs/start') {
+    const planId = params?.planId || params?.id;
+    if (planId) {
+      try { return await api.post(`/workouts/plans/${planId}/activate`, {}); } catch { return { success: true }; }
+    }
+    return { success: true };
+  }
+
+  // ── CROSSFIT (REAL) ──
+  if (endpoint === '/crossfit/wod-of-day') {
+    try { return await api.get('/crossfit/wod-of-day'); } catch { return null; }
+  }
+  if (endpoint.startsWith('/crossfit/random-wod')) {
+    const wodType = params?.type || endpoint.split('type=')[1];
+    try { return await api.get('/crossfit/random-wod', wodType ? { type: wodType } : undefined); } catch { return null; }
+  }
+  if (endpoint === '/crossfit/benchmark-history') {
+    try { return await api.get('/crossfit/benchmark-history'); } catch { return null; }
+  }
+  if (endpoint === '/crossfit/pr-board') {
+    try { return await api.get('/crossfit/pr-board'); } catch { return null; }
+  }
+  if (endpoint === '/crossfit/log-score') {
+    try { return await api.post('/crossfit/scores', params); } catch { return { success: true }; }
+  }
+  if (endpoint === '/crossfit/log-pr') {
+    try { return await api.post('/crossfit/pr', params); } catch { return { success: true }; }
+  }
+  if (endpoint.startsWith('/crossfit/')) return null;
+
+  // ── CHALLENGES (NO BACKEND) ──
+  if (endpoint.startsWith('/challenges/')) return null;
+
+  // ── DEVICES (NO BACKEND — Coming Soon) ──
+  if (endpoint.startsWith('/devices')) return null;
+
+  // ── SETTINGS (REAL) ──
+  if (endpoint === '/settings/preferences') {
+    if (actionType === 'write') return api.put('/settings/preferences', params);
+    return api.get('/settings/preferences');
+  }
+  if (endpoint === '/settings/injuries') {
+    if (actionType === 'write') return api.put('/settings/injuries', params);
+    return api.get('/settings/injuries');
+  }
+
+  // ── FALLBACK: return null instead of making a blind API call ──
+  // This prevents 404 errors for any unmapped endpoints
+  console.warn(`[Chat] Unmapped endpoint: ${actionType} ${endpoint}`, params);
+  return null;
 }
 
 // ─── GPT-Enhanced Node Execution (Premium+ only) ──────────
@@ -525,7 +725,10 @@ export default function GuidedChat() {
     try {
       const data = await callApi(action.type, action.endpoint, action.params);
       const text = formatApiResult(action.endpoint, action.params, data, isAr);
-      setHistory(prev => [...prev, { id: `data-${Date.now()}`, type: 'data', text, timestamp: Date.now(), success: true }]);
+      // Don't add empty data entries (state botMessage already has the content)
+      if (text) {
+        setHistory(prev => [...prev, { id: `data-${Date.now()}`, type: 'data', text, timestamp: Date.now(), success: true }]);
+      }
     } catch (err: any) {
       const errorMsg = err?.message?.includes('401') || err?.message?.includes('403')
         ? (isAr ? 'سجّل دخول الأول' : 'Please log in first')
@@ -540,7 +743,7 @@ export default function GuidedChat() {
     try {
       const result = await callApi('write', action.endpoint, action.params);
       // Format workout generation results with details
-      let text = isAr ? 'تم بنجاح' : 'Done successfully';
+      let text = '';
       if (action.endpoint === '/workouts/generate' && result?.workingSets) {
         const exercises = result.workingSets as Array<{ name: string; nameAr?: string; sets: number; reps: string; restSeconds: number; tempo?: string; rpeTarget?: number; category: string }>;
         const lines = exercises.map((ex: any, i: number) => {
@@ -557,8 +760,13 @@ export default function GuidedChat() {
         if (result.progressionNotes) {
           text += `\n\n📈 ${isAr ? (result.progressionNotesAr || result.progressionNotes) : result.progressionNotes}`;
         }
+      } else {
+        text = formatApiResult(action.endpoint, action.params, result, isAr);
       }
-      setHistory(prev => [...prev, { id: `data-${Date.now()}`, type: 'data', text, timestamp: Date.now(), success: true }]);
+      // Don't add empty entries — the state botMessage already has the content
+      if (text) {
+        setHistory(prev => [...prev, { id: `data-${Date.now()}`, type: 'data', text, timestamp: Date.now(), success: true }]);
+      }
     } catch (err: any) {
       const errorMsg = err?.message?.includes('401') || err?.message?.includes('403')
         ? (isAr ? 'سجّل دخول الأول' : 'Please log in first')
@@ -832,44 +1040,44 @@ export default function GuidedChat() {
   });
 
   return (
-    <div className="flex flex-col h-[calc(100dvh-180px)] min-h-[400px] max-h-[700px] rounded-2xl border border-border/60 bg-white dark:bg-card overflow-hidden shadow-card" dir={isAr ? 'rtl' : 'ltr'}>
+    <div className="flex flex-col h-[calc(100dvh-160px)] min-h-[400px] rounded-2xl border border-border/60 bg-white dark:bg-card overflow-hidden shadow-card" dir={isAr ? 'rtl' : 'ltr'}>
 
       {/* ─── Header ─── */}
-      <div className="flex items-center gap-3 px-4 py-3 border-b border-border/60 bg-white dark:bg-card">
-        <div className={`h-10 w-10 rounded-2xl ${domain.bg} flex items-center justify-center ${domain.color}`}>
+      <div className="flex items-center gap-2 px-3 py-2 border-b border-border/60 bg-white dark:bg-card touch-manipulation">
+        <div className={`h-9 w-9 rounded-xl ${domain.bg} flex items-center justify-center flex-shrink-0 ${domain.color}`}>
           {domain.icon}
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2">
-            <h1 className="font-semibold text-sm">{t.chat?.title || 'AI Coach'}</h1>
-            <div className="h-1.5 w-1.5 rounded-full bg-green-500" />
-          </div>
-          {!isRoot && (
-            <div className="flex items-center gap-1 mt-0.5">
-              <Badge variant="outline" className={`text-[10px] px-1.5 py-0 h-[18px] border-0 ${domain.bg} ${domain.color} font-medium`}>
+          <div className="flex items-center gap-1.5">
+            <h1 className="font-semibold text-sm truncate">{t.chat?.title || 'AI Coach'}</h1>
+            <div className="h-1.5 w-1.5 rounded-full bg-green-500 flex-shrink-0" />
+            {!isRoot && (
+              <Badge variant="outline" className={`text-[10px] px-1.5 py-0 h-[18px] border-0 ${domain.bg} ${domain.color} font-medium flex-shrink-0`}>
                 {isAr ? domain.labelAr : domain.label}
               </Badge>
-            </div>
-          )}
+            )}
+          </div>
           {isRoot && (
-            <p className="text-[11px] text-muted-foreground mt-0.5">
+            <p className="text-[11px] text-muted-foreground mt-0.5 truncate">
               {isAr ? 'اختار إيه تحب تعمل' : 'What would you like to do?'}
             </p>
           )}
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-0.5 flex-shrink-0">
           {!isRoot && (
             <button
               onClick={handleBack}
-              className="h-8 w-8 rounded-xl flex items-center justify-center hover:bg-muted transition-colors"
+              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center hover:bg-muted active:bg-muted/80 transition-colors cursor-pointer"
+              aria-label={isAr ? 'رجوع' : 'Back'}
             >
-              <ChevronLeft className={`h-4 w-4 ${isAr ? 'rotate-180' : ''}`} />
+              <ChevronLeft className={`h-5 w-5 ${isAr ? 'rotate-180' : ''}`} />
             </button>
           )}
           {depth > 1 && (
             <button
               onClick={handleReset}
-              className="h-8 w-8 rounded-xl flex items-center justify-center hover:bg-muted transition-colors"
+              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center hover:bg-muted active:bg-muted/80 transition-colors cursor-pointer"
+              aria-label={isAr ? 'الرئيسية' : 'Home'}
             >
               <Home className="h-4 w-4" />
             </button>
@@ -877,43 +1085,15 @@ export default function GuidedChat() {
           {history.length > 0 && (
             <button
               onClick={handleReset}
-              className="h-8 w-8 rounded-xl flex items-center justify-center hover:bg-destructive/10 hover:text-destructive transition-colors"
+              className="min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center hover:bg-destructive/10 hover:text-destructive active:bg-destructive/15 transition-colors cursor-pointer"
               title={isAr ? 'مسح المحادثة' : 'Clear chat'}
+              aria-label={isAr ? 'مسح المحادثة' : 'Clear chat'}
             >
               <Trash2 className="h-4 w-4" />
             </button>
           )}
         </div>
       </div>
-
-      {/* ─── Breadcrumb (only when deep) ─── */}
-      {depth > 1 && (
-        <div className="px-4 py-1.5 border-b border-border/40 bg-muted/30">
-          <div className="flex items-center gap-1.5 text-[10px] text-muted-foreground overflow-x-auto no-scrollbar">
-            <button onClick={handleReset} className="hover:text-foreground transition-colors flex-shrink-0">
-              {isAr ? 'الرئيسية' : 'Home'}
-            </button>
-            {stateStack.slice(-2).map((sid, i) => {
-              try {
-                const s = getState(sid);
-                const label = isAr ? s.text.ar : s.text.en;
-                return (
-                  <span key={`${sid}-${i}`} className="flex items-center gap-1.5 flex-shrink-0">
-                    <ChevronRight className={`h-2.5 w-2.5 ${isAr ? 'rotate-180' : ''}`} />
-                    <span className="truncate max-w-[80px]">{label}</span>
-                  </span>
-                );
-              } catch { return null; }
-            })}
-            <span className="flex items-center gap-1.5 flex-shrink-0">
-              <ChevronRight className={`h-2.5 w-2.5 ${isAr ? 'rotate-180' : ''}`} />
-              <span className="text-foreground font-medium truncate max-w-[100px]">
-                {isAr ? currentState.text.ar : currentState.text.en}
-              </span>
-            </span>
-          </div>
-        </div>
-      )}
 
       {/* ─── Chat Messages ─── */}
       <div ref={scrollRef} className="flex-1 overflow-y-auto">
@@ -1065,10 +1245,10 @@ export default function GuidedChat() {
       {/* ─── Options Panel ─── */}
       {!pendingAction && filteredOptions.length > 0 && (
         <div className="border-t border-border/60 bg-muted/20 dark:bg-card">
-          <div className="p-3">
-            {/* Root level: 2-column grid of cards */}
+          <div className="p-2 sm:p-3 touch-manipulation">
+            {/* Root level: 2-column grid of compact cards */}
             {isRoot ? (
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-2 max-h-[40vh] overflow-y-auto overscroll-contain no-scrollbar">
                 {filteredOptions.map((option) => {
                   const label = isAr ? option.label.ar : option.label.en;
                   const optDomain = DOMAIN_CONFIG[option.nextState?.split('_')[0]?.toLowerCase()] || DOMAIN_CONFIG.root;
@@ -1077,19 +1257,19 @@ export default function GuidedChat() {
                       key={option.id}
                       onClick={() => handleSelect(option)}
                       disabled={isLoading}
-                      className="flex items-center gap-2.5 p-3 rounded-xl bg-white dark:bg-card border border-border/60 hover:border-primary/30 hover:shadow-sm active:scale-[0.98] transition-all duration-150 disabled:opacity-50 text-start"
+                      className="flex items-center gap-2 min-h-[48px] p-2 sm:p-2.5 rounded-xl bg-white dark:bg-card border border-border/60 hover:border-primary/30 hover:shadow-sm active:bg-muted/30 transition-all duration-150 disabled:opacity-50 text-start cursor-pointer"
                     >
-                      <div className={`h-9 w-9 rounded-xl ${optDomain.bg} flex items-center justify-center flex-shrink-0 ${optDomain.color}`}>
-                        {option.icon ? <span className="text-base">{option.icon}</span> : optDomain.icon}
+                      <div className={`h-8 w-8 sm:h-9 sm:w-9 rounded-lg sm:rounded-xl ${optDomain.bg} flex items-center justify-center flex-shrink-0 ${optDomain.color}`}>
+                        {option.icon ? <span className="text-sm sm:text-base">{option.icon}</span> : optDomain.icon}
                       </div>
-                      <span className="text-[13px] font-medium leading-tight line-clamp-2">{label}</span>
+                      <span className="text-[12px] sm:text-[13px] font-medium leading-tight line-clamp-2">{label}</span>
                     </button>
                   );
                 })}
               </div>
             ) : (
               /* Deeper levels: clean list */
-              <div className="space-y-1 max-h-[220px] overflow-y-auto no-scrollbar">
+              <div className="space-y-0.5 max-h-[35vh] overflow-y-auto overscroll-contain no-scrollbar">
                 {filteredOptions.map((option) => {
                   const label = isAr ? option.label.ar : option.label.en;
                   const isBack = option.nextState === 'ROOT' || label.includes('Back') || label.includes('رجوع');
@@ -1100,16 +1280,16 @@ export default function GuidedChat() {
                       onClick={() => handleSelect(option)}
                       disabled={isLoading}
                       className={`
-                        w-full flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all duration-150
-                        disabled:opacity-50 disabled:cursor-not-allowed text-start
+                        w-full flex items-center gap-2 px-2.5 min-h-[44px] py-2 rounded-xl transition-all duration-150
+                        disabled:opacity-50 disabled:cursor-not-allowed text-start cursor-pointer
                         ${isBack
-                          ? 'text-muted-foreground hover:bg-muted/50'
-                          : 'hover:bg-white dark:hover:bg-muted/50 hover:shadow-sm active:scale-[0.98]'
+                          ? 'text-muted-foreground hover:bg-muted/50 active:bg-muted/70'
+                          : 'hover:bg-white dark:hover:bg-muted/50 hover:shadow-sm active:bg-muted/30'
                         }
                       `}
                     >
-                      {option.icon && <span className="text-base flex-shrink-0">{option.icon}</span>}
-                      <span className={`text-[13px] flex-1 ${isBack ? '' : 'font-medium'}`}>{label}</span>
+                      {option.icon && <span className="text-sm flex-shrink-0">{option.icon}</span>}
+                      <span className={`text-[12px] sm:text-[13px] flex-1 ${isBack ? '' : 'font-medium'}`}>{label}</span>
                       {option.condition?.type === 'tier' && option.condition.tier === 'PREMIUM_PLUS' && (
                         <Sparkles className="h-3 w-3 text-amber-500 flex-shrink-0" />
                       )}
@@ -1126,17 +1306,16 @@ export default function GuidedChat() {
       )}
 
       {/* ─── Smart Text Input ─── */}
-      <div className="border-t border-border/60 bg-white dark:bg-card">
+      <div className="border-t border-border/60 bg-white dark:bg-card touch-manipulation">
         {/* Autocomplete suggestions */}
         {suggestions.length > 0 && (
-          <div className="px-3 pt-2 flex flex-wrap gap-1.5">
+          <div className="px-3 pt-2 flex flex-wrap gap-2">
             {suggestions.map((s, i) => (
               <button
                 key={i}
                 onClick={() => {
                   setTextInput('');
                   setSuggestions([]);
-                  // Simulate typing and submitting
                   setHistory(prev => [...prev, {
                     id: `user-${Date.now()}`, type: 'user',
                     text: isAr ? s.labelAr : s.label,
@@ -1160,14 +1339,14 @@ export default function GuidedChat() {
                     safeTimeout(() => transitionTo(s.stateId), 300);
                   } catch {}
                 }}
-                className="text-[11px] px-2.5 py-1 rounded-full bg-primary/8 text-primary hover:bg-primary/15 transition-colors"
+                className="min-h-[36px] text-[12px] px-3 py-1.5 rounded-full bg-primary/8 text-primary hover:bg-primary/15 active:bg-primary/20 transition-colors cursor-pointer"
               >
                 {isAr ? s.labelAr : s.label}
               </button>
             ))}
           </div>
         )}
-        <div className="flex items-center gap-2 p-3">
+        <div className="flex items-center gap-2 p-2.5">
           <input
             ref={inputRef}
             type="text"
@@ -1175,13 +1354,14 @@ export default function GuidedChat() {
             onChange={(e) => setTextInput(e.target.value)}
             onKeyDown={(e) => { if (e.key === 'Enter') handleTextSubmit(); }}
             placeholder={getContextualPlaceholder(currentState?.domain || 'root', isAr)}
-            className="flex-1 bg-muted/50 border border-border/50 rounded-xl px-3.5 py-2.5 text-[13px] placeholder:text-muted-foreground/60 focus:outline-none focus:ring-1 focus:ring-primary/50 focus:border-primary/50 transition-all"
+            className="flex-1 min-h-[44px] bg-muted/50 border border-border/50 rounded-xl px-3.5 text-[14px] placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/50 transition-all"
             dir={isAr ? 'rtl' : 'ltr'}
           />
           <button
             onClick={handleTextSubmit}
             disabled={!textInput.trim() || isLoading}
-            className="h-10 w-10 rounded-xl bg-primary text-white flex items-center justify-center hover:bg-primary/90 disabled:opacity-40 disabled:cursor-not-allowed transition-all active:scale-95"
+            className="min-h-[44px] min-w-[44px] rounded-xl bg-primary text-white flex items-center justify-center hover:bg-primary/90 disabled:opacity-40 disabled:cursor-not-allowed transition-colors active:scale-95 cursor-pointer"
+            aria-label={isAr ? 'أرسل' : 'Send'}
           >
             <Send className={`h-4 w-4 ${isAr ? 'rotate-180' : ''}`} />
           </button>

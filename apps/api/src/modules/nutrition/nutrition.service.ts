@@ -380,6 +380,100 @@ export class NutritionService {
     };
   }
 
+  // ── Water Tracking ──────────────────────────────────────────
+
+  async logWater(userId: string, ml: number) {
+    const entry = await this.prisma.waterLog.create({
+      data: { userId, ml },
+    });
+
+    // Return today's total alongside the new entry
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const endOfDay = new Date(today);
+    endOfDay.setHours(23, 59, 59, 999);
+
+    const todayLogs = await this.prisma.waterLog.findMany({
+      where: { userId, createdAt: { gte: today, lte: endOfDay } },
+    });
+
+    const totalMl = todayLogs.reduce((sum, l) => sum + l.ml, 0);
+
+    return {
+      id: entry.id,
+      ml: entry.ml,
+      createdAt: entry.createdAt,
+      todayTotal: totalMl,
+      goal: 3000, // Default 3L goal
+    };
+  }
+
+  async getWaterToday(userId: string) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const endOfDay = new Date(today);
+    endOfDay.setHours(23, 59, 59, 999);
+
+    const logs = await this.prisma.waterLog.findMany({
+      where: { userId, createdAt: { gte: today, lte: endOfDay } },
+      orderBy: { createdAt: 'asc' },
+    });
+
+    const totalMl = logs.reduce((sum, l) => sum + l.ml, 0);
+
+    return {
+      date: today.toISOString().split('T')[0],
+      totalMl,
+      goal: 3000,
+      percentage: Math.min(Math.round((totalMl / 3000) * 100), 100),
+      entries: logs.map(l => ({
+        id: l.id,
+        ml: l.ml,
+        time: l.createdAt.toISOString(),
+      })),
+    };
+  }
+
+  async getWaterHistory(userId: string, days: number) {
+    const endDate = new Date();
+    endDate.setHours(23, 59, 59, 999);
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() - days);
+    startDate.setHours(0, 0, 0, 0);
+
+    const logs = await this.prisma.waterLog.findMany({
+      where: { userId, createdAt: { gte: startDate, lte: endDate } },
+      orderBy: { createdAt: 'asc' },
+    });
+
+    // Group by day
+    const dailyTotals: Record<string, number> = {};
+    logs.forEach(l => {
+      const day = l.createdAt.toISOString().split('T')[0];
+      dailyTotals[day] = (dailyTotals[day] || 0) + l.ml;
+    });
+
+    // Fill missing days with 0
+    const result: { date: string; totalMl: number; goal: number }[] = [];
+    for (let i = 0; i < days; i++) {
+      const d = new Date();
+      d.setDate(d.getDate() - i);
+      const dateStr = d.toISOString().split('T')[0];
+      result.push({
+        date: dateStr,
+        totalMl: dailyTotals[dateStr] || 0,
+        goal: 3000,
+      });
+    }
+
+    return {
+      days: result.reverse(),
+      avgDaily: result.length > 0
+        ? Math.round(result.reduce((s, d) => s + d.totalMl, 0) / result.length)
+        : 0,
+    };
+  }
+
   // Get weekly nutrition summary
   async getWeeklySummary(userId: string) {
     const today = new Date();

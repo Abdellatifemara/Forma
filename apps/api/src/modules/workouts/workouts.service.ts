@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { WorkoutPlan, Workout, WorkoutLog, WorkoutStatus, Prisma, MuscleGroup } from '@prisma/client';
+import { WorkoutPlan, Workout, WorkoutLog, WorkoutStatus, Prisma, MuscleGroup, ActivityType } from '@prisma/client';
 import { CreateWorkoutPlanDto } from './dto/create-workout-plan.dto';
 import { LogWorkoutDto } from './dto/log-workout.dto';
 
@@ -699,6 +699,98 @@ export class WorkoutsService {
       return `لم تتمرن منذ فترة. هذا التمرين للـ${muscleStr} مثالي للعودة!`;
     }
     return `لم تتدرب على ${muscleStr} في الأيام السبعة الماضية. حان وقت الاهتمام بها!`;
+  }
+
+  // ── Activity Logging ──────────────────────────────────────────
+
+  async logActivity(
+    userId: string,
+    data: {
+      activityType: ActivityType;
+      durationMinutes?: number;
+      caloriesBurned?: number;
+      reason?: string;
+      notes?: string;
+    },
+  ) {
+    return this.prisma.activityLog.create({
+      data: {
+        userId,
+        activityType: data.activityType,
+        durationMinutes: data.durationMinutes,
+        caloriesBurned: data.caloriesBurned,
+        reason: data.reason,
+        notes: data.notes,
+      },
+    });
+  }
+
+  async getActivityToday(userId: string) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const endOfDay = new Date(today);
+    endOfDay.setHours(23, 59, 59, 999);
+
+    const logs = await this.prisma.activityLog.findMany({
+      where: { userId, createdAt: { gte: today, lte: endOfDay } },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    return {
+      date: today.toISOString().split('T')[0],
+      activities: logs,
+      isRestDay: logs.some(l => l.activityType === 'REST_DAY'),
+    };
+  }
+
+  async getActivityHistory(userId: string, days: number) {
+    const endDate = new Date();
+    endDate.setHours(23, 59, 59, 999);
+    const startDate = new Date();
+    startDate.setDate(startDate.getDate() - days);
+    startDate.setHours(0, 0, 0, 0);
+
+    const logs = await this.prisma.activityLog.findMany({
+      where: { userId, createdAt: { gte: startDate, lte: endDate } },
+      orderBy: { createdAt: 'desc' },
+    });
+
+    // Group by day
+    const byDay: Record<string, typeof logs> = {};
+    logs.forEach(l => {
+      const day = l.createdAt.toISOString().split('T')[0];
+      if (!byDay[day]) byDay[day] = [];
+      byDay[day].push(l);
+    });
+
+    return {
+      days: Object.entries(byDay).map(([date, activities]) => ({
+        date,
+        activities,
+        isRestDay: activities.some(a => a.activityType === 'REST_DAY'),
+      })),
+      totalActivities: logs.length,
+    };
+  }
+
+  // ── Workout Rating (standalone) ──────────────────────────────
+
+  async rateWorkout(userId: string, logId: string, rating: number, notes?: string) {
+    const log = await this.prisma.workoutLog.findFirst({
+      where: { id: logId, userId },
+    });
+
+    if (!log) {
+      throw new NotFoundException('Workout log not found');
+    }
+
+    return this.prisma.workoutLog.update({
+      where: { id: logId },
+      data: {
+        rating: Math.min(Math.max(Math.round(rating), 1), 5),
+        ...(notes ? { notes } : {}),
+      },
+    });
   }
 
   // Log Manual Workout
