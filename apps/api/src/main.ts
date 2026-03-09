@@ -22,10 +22,10 @@ async function bootstrap() {
 
   app.enableCors({
     origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
-      // Require an origin header — no-origin requests are not browsers and
-      // should be handled at the infrastructure level (Nginx/Cloudflare), not here.
+      // No-origin = server-to-server, health checks, curl, mobile apps.
+      // These are NOT cross-origin browser requests, so allow them through.
       if (!origin) {
-        return callback(new Error('Origin header required'));
+        return callback(null, true);
       }
 
       // Check explicit allowed origins (production domain + any from env)
