@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Delete, Param, Query, Body, UseGuards, UseInterceptors } from '@nestjs/common';
-import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
+import { CacheInterceptor, CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiQuery } from '@nestjs/swagger';
 import { NutritionService } from './nutrition.service';
 import { AchievementsService } from '../achievements/achievements.service';
@@ -61,6 +61,7 @@ export class NutritionController {
   @Public()
   @Get('foods/:id')
   @ApiOperation({ summary: 'Get food by ID' })
+  @UseInterceptors(CacheInterceptor)
   @CacheKey('get_food_by_id_')
   @CacheTTL(3600)
   async getFoodById(@Param('id') id: string) {
@@ -70,6 +71,7 @@ export class NutritionController {
   @Public()
   @Get('foods/barcode/:barcode')
   @ApiOperation({ summary: 'Get food by barcode' })
+  @UseInterceptors(CacheInterceptor)
   @CacheKey('get_food_by_barcode_')
   @CacheTTL(3600)
   async getFoodByBarcode(@Param('barcode') barcode: string) {

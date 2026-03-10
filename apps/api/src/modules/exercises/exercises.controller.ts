@@ -1,5 +1,5 @@
 import { Controller, Get, Param, Query, UseGuards, UseInterceptors } from '@nestjs/common';
-import { CacheKey, CacheTTL } from '@nestjs/cache-manager';
+import { CacheInterceptor, CacheKey, CacheTTL } from '@nestjs/cache-manager';
 import { ApiTags, ApiOperation, ApiResponse, ApiBearerAuth, ApiParam } from '@nestjs/swagger';
 import { ExercisesService } from './exercises.service';
 import { SearchExercisesDto } from './dto/search-exercises.dto';
@@ -11,6 +11,7 @@ import { HttpCacheTTL, CacheControlInterceptor } from '../../common/interceptors
 
 @ApiTags('exercises')
 @Controller('exercises')
+@UseInterceptors(CacheInterceptor)
 export class ExercisesController {
   constructor(private readonly exercisesService: ExercisesService) {}
 

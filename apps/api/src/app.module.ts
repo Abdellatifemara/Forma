@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
 import { APP_GUARD, APP_FILTER } from '@nestjs/core';
 import { GlobalExceptionFilter } from './common/filters/global-exception.filter';
-import { ConfigModule } from '@nestjs/config';
+import { ConfigModule, ConfigService } from '@nestjs/config';
+import { CacheModule } from '@nestjs/cache-manager';
 import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler';
 import { PrismaModule } from './modules/prisma/prisma.module';
 import { AuthModule } from './modules/auth/auth.module';
@@ -67,6 +68,26 @@ import { CrossfitModule } from './modules/crossfit/crossfit.module';
         limit: 300,
       },
     ]),
+
+    // Redis Cache (global)
+    CacheModule.registerAsync({
+      isGlobal: true,
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: async (config: ConfigService) => {
+        const redisUrl = config.get<string>('REDIS_URL');
+        if (redisUrl) {
+          const { redisStore } = await import('cache-manager-redis-yet');
+          return {
+            store: redisStore,
+            url: redisUrl,
+            ttl: 300_000, // 5 min default TTL (ms)
+          };
+        }
+        // Fallback: in-memory cache (dev/local)
+        return { ttl: 300_000 };
+      },
+    }),
 
     // Core
     PrismaModule,
