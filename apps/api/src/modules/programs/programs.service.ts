@@ -41,6 +41,45 @@ export class ProgramsService {
   }
 
   /**
+   * Get a public template program by ID (any user can view)
+   */
+  async findPublicProgramById(programId: string) {
+    const program = await this.prisma.trainerProgram.findFirst({
+      where: {
+        id: programId,
+        isTemplate: true,
+        status: 'ACTIVE',
+      },
+      include: {
+        workoutDays: {
+          include: {
+            exercises: {
+              include: {
+                exercise: {
+                  select: {
+                    id: true,
+                    nameEn: true,
+                    nameAr: true,
+                    primaryMuscle: true,
+                  },
+                },
+              },
+              orderBy: { order: 'asc' },
+            },
+          },
+          orderBy: { dayNumber: 'asc' },
+        },
+      },
+    });
+
+    if (!program) {
+      throw new NotFoundException('Program not found');
+    }
+
+    return program;
+  }
+
+  /**
    * Get trainer profile ID for a user
    */
   private async getTrainerProfileId(userId: string): Promise<string> {

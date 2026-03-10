@@ -28,6 +28,14 @@ export class ProgramsController {
   }
 
   /**
+   * Get a public template program by ID (any authenticated user)
+   */
+  @Get('browse/:id')
+  async browseOne(@Param('id') id: string) {
+    return this.programsService.findPublicProgramById(id);
+  }
+
+  /**
    * Create a new program
    */
   @UseGuards(JwtAuthGuard)

@@ -40,6 +40,42 @@ interface RequestConfig extends RequestInit {
 // Request deduplication cache for GET requests
 const pendingRequests = new Map<string, Promise<unknown>>();
 
+// Token refresh state — prevent multiple simultaneous refresh attempts
+let refreshPromise: Promise<boolean> | null = null;
+
+async function tryRefreshToken(): Promise<boolean> {
+  if (refreshPromise) return refreshPromise;
+
+  refreshPromise = (async () => {
+    try {
+      const refreshToken = getRefreshCookie();
+      if (!refreshToken) return false;
+
+      const response = await fetch(`${API_BASE_URL}/auth/refresh`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ refreshToken }),
+      });
+
+      if (!response.ok) return false;
+
+      const data = await response.json();
+      if (data.accessToken) {
+        setAuthCookie(data.accessToken);
+        if (data.refreshToken) setRefreshCookie(data.refreshToken);
+        return true;
+      }
+      return false;
+    } catch {
+      return false;
+    } finally {
+      refreshPromise = null;
+    }
+  })();
+
+  return refreshPromise;
+}
+
 class ApiClient {
   private baseUrl: string;
 
@@ -52,7 +88,7 @@ class ApiClient {
     return `GET:${endpoint}:${paramsStr}`;
   }
 
-  private async executeRequest<T>(endpoint: string, config: RequestConfig = {}): Promise<T> {
+  private async executeRequest<T>(endpoint: string, config: RequestConfig = {}, isRetry = false): Promise<T> {
     const { params, ...init } = config;
 
     let url = `${this.baseUrl}${endpoint}`;
@@ -93,6 +129,19 @@ class ApiClient {
         endpoint: `${init.method || 'GET'} ${endpoint}`,
       });
       throw networkError;
+    }
+
+    // Auto-refresh on 401 and retry once
+    if (response.status === 401 && !isRetry) {
+      const refreshed = await tryRefreshToken();
+      if (refreshed) {
+        return this.executeRequest<T>(endpoint, config, true);
+      }
+      // Refresh failed — clear stale cookies and redirect to login
+      removeAuthCookie();
+      if (typeof window !== 'undefined' && !window.location.pathname.startsWith('/login')) {
+        window.location.href = '/login?redirect=' + encodeURIComponent(window.location.pathname);
+      }
     }
 
     if (!response.ok) {
@@ -795,8 +844,11 @@ export const programsApi = {
   // Get all programs for current trainer
   getAll: () => api.get<TrainerProgramSummary[]>('/programs'),
 
-  // Get single program with full details
+  // Get single program with full details (trainer-owned)
   getById: (id: string) => api.get<TrainerProgramFull>(`/programs/${id}`),
+
+  // Get public template program by ID (any user)
+  getBrowseById: (id: string) => api.get<TrainerProgramFull>(`/programs/browse/${id}`),
 
   // Create a new program
   create: (data: CreateProgramData) => api.post<TrainerProgramFull>('/programs', data),
