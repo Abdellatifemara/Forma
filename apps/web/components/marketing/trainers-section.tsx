@@ -11,8 +11,8 @@ const benefits = [
     icon: Users,
     title: 'Reach More Clients',
     titleAr: 'وصّل لعملاء أكتر',
-    description: 'Access thousands of fitness enthusiasts across Egypt looking for professional guidance.',
-    descriptionAr: 'وصّل لآلاف عشاق اللياقة في مصر اللي بيدوروا على توجيه احترافي.',
+    description: 'Connect with fitness enthusiasts across Egypt looking for professional guidance.',
+    descriptionAr: 'وصّل لعشاق اللياقة في مصر اللي بيدوروا على توجيه احترافي.',
   },
   {
     icon: Shield,
@@ -61,8 +61,8 @@ export function TrainersSection() {
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               {isAr
-                ? 'انضم لمجتمع المدربين المعتمدين في مصر. ابني شغلك في التدريب أونلاين مع أدوات فورما القوية ووصّل لعملاء في كل مكان.'
-                : "Join Egypt's growing community of certified trainers. Build your online coaching business with Forma's powerful tools and reach clients nationwide."}
+                ? 'انضم كمدرب معتمد في فورما. ابني شغلك في التدريب أونلاين مع أدواتنا القوية ووصّل لعملاء في كل مكان.'
+                : "Join Forma as a certified trainer. Build your online coaching business with our powerful tools and reach clients nationwide."}
             </p>
           </motion.div>
 
