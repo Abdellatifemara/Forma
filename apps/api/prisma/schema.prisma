@@ -82,6 +82,10 @@ model User {
   workoutLogs           WorkoutLog[]
   workoutPlans          WorkoutPlan[]
   receivedMessages      Message[]                 @relation("ReceivedMessages")
+  waterLogs             WaterLog[]
+  activityLogs          ActivityLog[]
+  crossfitScores        CrossfitScore[]
+  crossfitPRs           CrossfitPR[]
 
   @@index([email])
   @@index([phone])
@@ -2108,4 +2112,106 @@ model NotificationReminder {
 
   @@unique([userId, type])
   @@index([userId])
+}
+
+// ═══════════════════════════════════════════════════════════════
+// WATER TRACKING
+// ═══════════════════════════════════════════════════════════════
+model WaterLog {
+  id        String   @id @default(cuid())
+  userId    String
+  ml        Int
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([userId, createdAt])
+}
+
+// ═══════════════════════════════════════════════════════════════
+// ACTIVITY LOG (rest days, walks, stretching, light cardio)
+// ═══════════════════════════════════════════════════════════════
+model ActivityLog {
+  id              String       @id @default(cuid())
+  userId          String
+  activityType    ActivityType
+  durationMinutes Int?
+  caloriesBurned  Int?
+  reason          String?      // e.g. "tired", "injured", "busy"
+  notes           String?
+  createdAt       DateTime     @default(now())
+  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([userId, createdAt])
+}
+
+enum ActivityType {
+  REST_DAY
+  WALK
+  STRETCH
+  YOGA
+  LIGHT_CARDIO
+  SWIMMING
+  CYCLING
+  OTHER
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CROSSFIT SCORES & PRs
+// ═══════════════════════════════════════════════════════════════
+model CrossfitScore {
+  id         String            @id @default(cuid())
+  userId     String
+  wodName    String            // e.g. "Fran", "Murph", or custom name
+  wodType    CrossfitWodType
+  scoreType  CrossfitScoreType
+  scoreValue Float             // time in seconds, rounds, reps, or weight in kg
+  rx         Boolean           @default(false)
+  scaled     Boolean           @default(false)
+  notes      String?
+  createdAt  DateTime          @default(now())
+  user       User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([wodName])
+  @@index([userId, wodName])
+  @@index([createdAt])
+}
+
+model CrossfitPR {
+  id        String   @id @default(cuid())
+  userId    String
+  movement  String   // e.g. "Back Squat", "Snatch", "Clean & Jerk"
+  value     Float    // weight in kg, reps, or time in seconds
+  unit      String   // "kg", "reps", "seconds"
+  notes     String?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([movement])
+  @@index([userId, movement])
+  @@index([createdAt])
+}
+
+enum CrossfitWodType {
+  GIRL
+  HERO
+  BENCHMARK
+  CUSTOM
+  AMRAP
+  FOR_TIME
+  EMOM
+  CHIPPER
+}
+
+enum CrossfitScoreType {
+  TIME        // seconds
+  ROUNDS_REPS // e.g. 5+12
+  REPS        // total reps
+  WEIGHT      // kg
+  CALORIES
 }
